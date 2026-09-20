@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v1";
+const CACHE_NAME = "oposicion-cache-v2";
 const APP_SHELL = [
   "./test-oficial-conocimiento.html",
   "./test-oficial-ingles.html",
@@ -27,6 +27,25 @@ self.addEventListener("fetch", event => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
+
+  const isHtml = event.request.mode === "navigate" || url.pathname.endsWith(".html");
+
+  if (isHtml) {
+    // Red primero para HTML: siempre intenta traer la última versión;
+    // si no hay red (offline), sirve la copia cacheada.
+    event.respondWith(
+      fetch(event.request)
+        .then(response => {
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
 
   event.respondWith(
     caches.match(event.request).then(cached => {
