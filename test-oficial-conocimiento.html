@@ -155,8 +155,8 @@ function seleccionar(e){const t=testActivo,q=t.preguntas[t.idx],wrap=document.ge
 const ok=e===q.correcta,yaRespondida=!!t.detalle[t.idx],altPrevia=t.altSel?t.altSel[t.idx]:null,tiempoMs=qStartTime?Date.now()-qStartTime:null;
 t.detalle[t.idx]={preguntaId:q.id,temaId:q.temaId,seleccion:e,correcta:q.correcta,esCorrecta:ok,pregunta:q.pregunta,opciones:q.opciones,explicacion:q.explicacion,ref:q.ref,altSeleccion:null!=altPrevia?altPrevia:null,tiempoMs};
 if(!yaRespondida)actualizarQStats(q.id,ok,tiempoMs);saveState();
-const els=document.querySelectorAll(".q-opt");
-t.inmediata?(els.forEach((el,i)=>{i===q.correcta?el.classList.add("correcta"):i===e||ok||el.classList.add("incorrecta")}),document.getElementById("explic-wrap").innerHTML=explicBoxHTML(q,ok)):els[e].classList.add("sel");
+const els=wrap.querySelectorAll(".q-opt");
+t.inmediata?(els.forEach((el,i)=>{i===q.correcta?el.classList.add("correcta"):i===e&&!ok&&el.classList.add("incorrecta")}),document.getElementById("explic-wrap").innerHTML=explicBoxHTML(q,ok)):els[e].classList.add("sel");
 botonSiguienteTest();actualizarNavTest()}
 function pintarFlashcard(t,q){const L=["A","B","C","D","E","F"],prev=t.detalle[t.idx],revelado=!!prev;document.getElementById("q-wrap").innerHTML=`
     <div class="q-tema-row">
