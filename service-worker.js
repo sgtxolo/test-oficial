@@ -1,6 +1,7 @@
 const CACHE_NAME = "oposicion-cache-v1";
 const APP_SHELL = [
   "./test-oficial-conocimiento.html",
+  "./test-oficial-ingles.html",
   "./manifest.json",
   "./icon-192.png",
   "./icon-512.png"
