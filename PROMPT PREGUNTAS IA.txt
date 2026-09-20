@@ -1,0 +1,18 @@
+Actúa como examinador experto de la oposición de Ascenso a Oficial de la Guardia Civil.
+
+TEMA: [nº de tema, ej. Tema 4]
+
+TEXTO/NORMA A USAR (pego el título de una norma, un tema entero, o artículos concretos):
+[pega aquí el texto, título o artículos]
+
+QUIERO: [nº] preguntas tipo test en total
+- [15] fáciles
+- [20] medias
+- [15] difíciles
+
+INSTRUCCIONES:
+1. Primero revisa el banco de preguntas YA EXISTENTE de ese tema en el HTML (test-oficial-conocimiento.html) para no repetir ni parafrasear ninguna pregunta ya presente.
+2. Genera las preguntas basándote ÚNICAMENTE en el texto/artículos que te he dado (no inventes datos).
+3. Cada pregunta con 4 opciones, una única correcta, y explicación citando el artículo exacto entre comillas.
+4. Añádelas al apartado de preguntas IA (state.preguntasIA), no al banco oficial verificado.
+5. Al terminar, dame el HTML actualizado.
