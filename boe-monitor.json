@@ -1,0 +1,30 @@
+{
+  "_readme": "Catálogo de normas del temario a vigilar en el BOE (texto consolidado). Cada entrada: tema (nº), nombre de la norma, id BOE (formato BOE-A-AAAA-NNNNN, verificado contra https://www.boe.es/buscar/act.php?id=<boe_id>) y ultima_fecha_conocida (fecha 'Última actualización publicada el' que muestra esa página, formato DD/MM/AAAA, o null si nunca ha tenido actualizaciones posteriores). La tarea programada diaria vuelve a consultar esa misma URL para cada norma y compara la fecha que informa el BOE hoy contra ultima_fecha_conocida; si es distinta/más reciente, hay un cambio real que avisar, y hay que actualizar este campo. Esta lista está incompleta a propósito: quedan por catalogar los temas listados en 'temas_pendientes_de_catalogar' (hay que investigar en boe.es, o revisando el contenido del temario ya adjuntado en la app, qué norma(s) concretas cubre cada uno, verificar el boe_id real como se hizo con los ya cargados, y añadirlos aquí) hasta tener cobertura completa de los 27 temas.",
+  "normas": [
+    {
+      "tema": 20,
+      "nombre": "Real Decreto de 14 de septiembre de 1882, de promulgación de la Ley de Enjuiciamiento Criminal (LECrim)",
+      "boe_id": "BOE-A-1882-6036",
+      "ultima_fecha_conocida": "09/04/2026"
+    },
+    {
+      "tema": 23,
+      "nombre": "Ley 5/2014, de 4 de abril, de Seguridad Privada",
+      "boe_id": "BOE-A-2014-3649",
+      "ultima_fecha_conocida": "27/05/2021"
+    },
+    {
+      "tema": 26,
+      "nombre": "Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia Civil",
+      "boe_id": "BOE-A-2007-18391",
+      "ultima_fecha_conocida": "29/07/2015"
+    },
+    {
+      "tema": 26,
+      "nombre": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+      "boe_id": "BOE-A-2007-18392",
+      "ultima_fecha_conocida": "05/12/2014"
+    }
+  ],
+  "temas_pendientes_de_catalogar": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,24,25,27]
+}
