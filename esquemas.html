@@ -903,15 +903,70 @@ const esquemas = temasPrograma.map((tema, i) => ({
 
     + bloqueTitulo("CAPÍTULO V — De los Tribunales de Instancia y del Tribunal Central de Instancia")
 
-    + articulo("Artículo 84.1 y 84.2 — El Tribunal de Instancia", `
+    + articulo("Artículo 84.1, 84.2, 84.3 y 84.4 — El Tribunal de Instancia", `
       <p><b>1.</b> Habrá un <mark class="m-autoridad">Tribunal de Instancia</mark> en cada <mark class="m-destacable">partido judicial</mark>, con sede en su capital, de la que tomará su nombre.</p>
       <p><b>2.</b> Estará integrado por una <mark class="m-destacable">Sección Única, de Civil y de Instrucción</mark> (o, en los casos previstos, por una Sección Civil y otra de Instrucción), y podrá además contar con Secciones de <mark class="m-personalizado">Familia, Mercantil, Violencia sobre la Mujer, Violencia contra la Infancia, Penal, Menores, Vigilancia Penitenciaria, Contencioso-Administrativo y Social</mark>.</p>
+      <p><b>3.</b> Cada Tribunal de Instancia contará con una <mark class="m-destacable">Presidencia</mark>. Las Secciones tendrán <mark class="m-personalizado">Presidencia de Sección</mark> cuando haya dos o más Secciones, la Sección tenga <mark class="m-plazo">ocho o más plazas judiciales</mark> y el total del Tribunal sea igual o superior a <mark class="m-plazo">doce plazas</mark>.</p>
+      <p><b>4.</b> El ejercicio de la <mark class="m-destacable">función jurisdiccional</mark> corresponde a quienes estén destinados en las Secciones; su adscripción será <mark class="m-personalizado">funcional</mark>, pudiendo conocer de asuntos de otras Secciones del mismo orden por acuerdo del <mark class="m-autoridad">CGPJ</mark>.</p>
     `)
 
-    + articulo("Artículo 87.3 y 87.4 — Secciones de lo Mercantil (jurisdicción extendida)", `
-      <p><b>3.</b> Cuando una provincia tenga <mark class="m-plazo">población inferior a 500.000 habitantes</mark>, el <mark class="m-autoridad">Gobierno</mark>, por <mark class="m-destacable">real decreto</mark>, a propuesta del <mark class="m-autoridad">CGPJ</mark> con informe favorable de la <mark class="m-autoridad">CC.AA.</mark> (o a propuesta de ésta oído el CGPJ), podrá <mark class="m-accion">extender</mark> la jurisdicción de la Sección de lo Mercantil a otra provincia limítrofe de la misma CC.AA.</p>
-      <p><b>4.</b> Cuando un partido judicial cuente con <mark class="m-plazo">más de 250.000 habitantes</mark> y no sea limítrofe con el de su capital, el Gobierno podrá <mark class="m-accion">crear</mark> una Sección de lo Mercantil en ese partido judicial.</p>
+    + articulo("Artículo 85 — Secciones Civiles o Civiles y de Instrucción", `
+      <p>Con carácter general, extenderán su jurisdicción a un <mark class="m-destacable">partido judicial</mark>. Conocerán, en el orden civil: en <mark class="m-personalizado">primera instancia</mark>, de los juicios no atribuidos a otros órganos; de los actos de <mark class="m-destacable">jurisdicción voluntaria</mark>; de los recursos contra resoluciones de los <mark class="m-autoridad">jueces de paz</mark> del partido y de las cuestiones de competencia entre éstos; y de las solicitudes de <mark class="m-destacable">reconocimiento y ejecución</mark> de sentencias y laudos extranjeros.</p>
     `, true)
+
+    + articulo("Artículo 86.1, 86.2, 86.4 y 86.5 — Sección de Familia, Infancia y Capacidad", `
+      <p><b>1.</b> Cuando se estime conveniente, en función de la <mark class="m-destacable">carga de trabajo</mark>, se creará una <mark class="m-autoridad">Sección de Familia, Infancia y Capacidad</mark>, que extenderá su jurisdicción a todo el partido judicial.</p>
+      <p><b>2.</b> El <mark class="m-autoridad">Gobierno</mark> podrá establecer por <mark class="m-destacable">real decreto</mark>, a propuesta del <mark class="m-autoridad">CGPJ</mark> y, en su caso, con informe favorable de la CC.AA., Secciones que extiendan su jurisdicción a <mark class="m-personalizado">dos o más partidos</mark> dentro de la misma provincia.</p>
+      <p><b>4.</b> En partidos con Tribunal de Instancia de <mark class="m-destacable">Sección Única</mark> integrada por una sola plaza, el juez o jueza que la ocupe asumirá los asuntos de familia si no se hubiere creado la Sección.</p>
+      <p><b>5.</b> Su jurisdicción será <u class="m-clave">exclusiva y excluyente</u> en materias como matrimonio, guarda y custodia, alimentos, filiación, adopción, medidas de apoyo a personas con discapacidad y protección del menor.</p>
+    `)
+
+    + articulo("Artículo 87.1, 87.2, 87.3, 87.4 y 87.5 — La Sección de lo Mercantil", `
+      <p><b>1.</b> Con carácter general, en el Tribunal de Instancia con sede en la <mark class="m-destacable">capital de cada provincia</mark> existirá una Sección de lo Mercantil con jurisdicción en toda ella.</p>
+      <p><b>2.</b> Donde, por la carga de trabajo, no se constituya, el conocimiento corresponderá a un juez o jueza de la <mark class="m-personalizado">Sección Civil</mark> de la capital.</p>
+      <p><b>3.</b> Cuando una provincia tenga <mark class="m-plazo">población inferior a 500.000 habitantes</mark>, el <mark class="m-autoridad">Gobierno</mark>, por <mark class="m-destacable">real decreto</mark>, a propuesta del <mark class="m-autoridad">CGPJ</mark> con informe favorable de la CC.AA. (o a propuesta de ésta oído el CGPJ), podrá <mark class="m-accion">extender</mark> la jurisdicción de la Sección a otra provincia limítrofe.</p>
+      <p><b>4.</b> Cuando un partido judicial cuente con <mark class="m-plazo">más de 250.000 habitantes</mark> y no sea limítrofe con el de su capital, el Gobierno podrá <mark class="m-accion">crear</mark> una Sección de lo Mercantil en ese partido.</p>
+      <p><b>5.</b> Cuando haya <mark class="m-plazo">más de un juez y menos de cinco</mark> en la Sección de lo Mercantil, las solicitudes de <mark class="m-destacable">concurso de acreedores</mark> de persona natural se repartirán a uno solo; si son más de cinco, a dos o más determinados.</p>
+    `, true)
+
+    + articulo("Artículo 88 — Las Secciones de Instrucción", `
+      <p>Con carácter general extenderán su jurisdicción a un <mark class="m-destacable">partido judicial</mark>. Conocerán, en el orden penal: de la <mark class="m-personalizado">instrucción</mark> de las causas cuyo enjuiciamiento corresponda a las Audiencias Provinciales y Secciones de lo Penal; del <mark class="m-destacable">conocimiento y fallo</mark> de los juicios por delito leve; de los procedimientos de <mark class="m-destacable">habeas corpus</mark>; de los recursos contra resoluciones de los <mark class="m-autoridad">jueces de paz</mark>; y de la <mark class="m-personalizado">emisión y ejecución</mark> de instrumentos de reconocimiento mutuo de resoluciones penales en la UE.</p>
+    `)
+
+    + articulo("Artículo 89.1 a 89.7 — La Sección de Violencia sobre la Mujer", `
+      <p><b>1.</b> El <mark class="m-autoridad">CGPJ</mark> podrá acordar que, donde no hubiere Sección, el conocimiento corresponda a un juez o jueza de <mark class="m-personalizado">Instrucción</mark> del partido judicial.</p>
+      <p><b>2.</b> Cuando se estime conveniente por la <mark class="m-destacable">carga de trabajo</mark>, se creará una Sección que extienda su jurisdicción a todo el partido judicial.</p>
+      <p><b>3.</b> El <mark class="m-autoridad">Gobierno</mark>, por real decreto, podrá extender su jurisdicción a <mark class="m-personalizado">dos o más partidos</mark> de la misma provincia.</p>
+      <p><b>4.</b> En partidos con Sección Única de una sola plaza, ese juez o jueza asumirá estos asuntos si ninguna Sección extiende su jurisdicción al partido.</p>
+      <p><b>5.</b> Conocerán, en el orden penal, de la <mark class="m-destacable">instrucción</mark> de delitos como homicidio, lesiones, libertad e indemnidad sexual y otros cometidos con violencia sobre quien sea o haya sido pareja del autor, o sobre descendientes y menores a su cargo, cuando concurra un acto de <mark class="m-destacable">violencia de género</mark>.</p>
+      <p><b>6.</b> Podrán conocer también en el orden <mark class="m-destacable">civil</mark> (matrimonio, guarda y custodia, filiación, medidas de protección del menor), conforme a la Ley de Enjuiciamiento Civil.</p>
+      <p><b>7.</b> Tendrán competencia <u class="m-clave">exclusiva y excluyente</u> en el orden civil cuando concurran simultáneamente los requisitos de víctima de violencia de género, parte imputada como autor y actuaciones penales iniciadas o medida de protección adoptada.</p>
+    `)
+
+    + articulo("Artículo 89 bis.1 a 89 bis.5 — La Sección de Violencia contra la Infancia y la Adolescencia", `
+      <p><b>1.</b> El <mark class="m-autoridad">CGPJ</mark> podrá acordar que, donde no hubiere Sección, el conocimiento corresponda a un juez o jueza de <mark class="m-personalizado">Instrucción</mark>.</p>
+      <p><b>2.</b> Cuando se estime conveniente por la <mark class="m-destacable">carga de trabajo</mark>, se creará una Sección que extienda su jurisdicción a todo el partido judicial.</p>
+      <p><b>3.</b> El <mark class="m-autoridad">Gobierno</mark> podrá, por real decreto, extender su jurisdicción a <mark class="m-personalizado">dos o más partidos</mark> de la misma provincia.</p>
+      <p><b>4.</b> En partidos con Sección Única de un solo juez, éste asumirá los asuntos si ninguna Sección extiende su jurisdicción al partido.</p>
+      <p><b>5.</b> Conocerán, en el orden penal, de la <mark class="m-destacable">instrucción</mark> de delitos como homicidio, lesiones, libertad e indemnidad sexual, trata de seres humanos y quebrantamiento, cuando la víctima sea <mark class="m-destacable">niño, niña o adolescente</mark>.</p>
+    `)
+
+    + articulo("Artículo 90.3 y 90.4 — Las Secciones de lo Penal", `
+      <p><b>3.</b> Las Secciones de lo Penal <mark class="m-accion">enjuiciarán</mark> las causas por delito que la ley determine; deberán <mark class="m-personalizado">especializarse</mark> una o varias plazas para facilitar el conocimiento de los asuntos instruidos por las Secciones de Violencia sobre la Mujer y contra la Infancia.</p>
+      <p><b>4.</b> Corresponde también la <mark class="m-destacable">ejecución de las sentencias</mark> dictadas en causas por delito grave o menos grave por las Secciones de Instrucción, de Violencia sobre la Mujer y de Violencia contra la Infancia y la Adolescencia.</p>
+    `)
+
+    + articulo("Artículo 92.3 — Determinación del número de Secciones de Vigilancia Penitenciaria", `
+      <p><b>3.</b> El <mark class="m-destacable">número</mark> de Tribunales de Instancia con Secciones de Vigilancia Penitenciaria, su ámbito territorial y número de magistrados se <mark class="m-accion">determinará</mark> en la <mark class="m-autoridad">Ley de Demarcación y Planta Judicial</mark>, atendiendo principalmente a los <mark class="m-personalizado">establecimientos penitenciarios</mark> existentes.</p>
+    `, true)
+
+    + articulo("Artículo 95 — Secciones del Tribunal Central de Instancia", `
+      <p>En Madrid, con jurisdicción en todo el territorio nacional, existirá un <mark class="m-autoridad">Tribunal Central de Instancia</mark>, con las Secciones: a) <mark class="m-destacable">Instrucción</mark>; b) <mark class="m-destacable">lo Penal</mark>; c) <mark class="m-destacable">Menores</mark>; d) <mark class="m-destacable">Vigilancia Penitenciaria</mark>; e) <mark class="m-destacable">lo Contencioso-Administrativo</mark>.</p>
+    `)
+
+    + articulo("Artículo 96.2 — Especialización de plazas en Secciones de lo Mercantil", `
+      <p><b>2.</b> El <mark class="m-autoridad">CGPJ</mark>, oída la <mark class="m-autoridad">Sala de Gobierno del TSJ</mark> y con informe favorable de las Administraciones competentes, podrá acordar que en provincias con <mark class="m-plazo">más de cinco plazas</mark> en las Secciones de lo Mercantil, uno o varios jueces asuman con carácter <mark class="m-personalizado">exclusivo</mark> el conocimiento de determinadas clases de asuntos.</p>
+    `)
 
     + articulo("Artículo 87.10 — Tribunal de Marca de la Unión Europea (Alicante, primera instancia)", `
       <p>La Sección de lo Mercantil del Tribunal de Instancia de <mark class="m-destacable">Alicante</mark> tendrá <mark class="m-personalizado">competencia exclusiva</mark> para conocer en <mark class="m-destacable">primera instancia</mark>, con jurisdicción en todo el territorio nacional, de las acciones sobre <mark class="m-destacable">marca de la Unión Europea</mark> y <mark class="m-destacable">dibujos y modelos comunitarios</mark>, denominándose a estos efectos <mark class="m-destacable">Tribunal de Marca de la Unión Europea</mark>.</p>
@@ -920,6 +975,8 @@ const esquemas = temasPrograma.map((tema, i) => ({
     + articulo("Artículo 92.2 — Sede de las Secciones de Vigilancia Penitenciaria", `
       <p>El <mark class="m-autoridad">Gobierno</mark> establecerá la <mark class="m-destacable">sede</mark> de estas Secciones, previa <mark class="m-personalizado">audiencia</mark> de la comunidad autónoma afectada y del <mark class="m-autoridad">CGPJ</mark>.</p>
     `)
+
+    + bloqueTitulo("CAPÍTULO VI — De los Jueces y las Juezas de Paz")
 
     + articulo("Artículo 101 — Nombramiento de los Jueces de Paz", `
       <p><b>1.</b> Los <mark class="m-autoridad">Jueces de Paz</mark> y sus sustitutos serán <mark class="m-accion">nombrados</mark> para un periodo de <mark class="m-plazo">cuatro años</mark> por la <mark class="m-autoridad">Sala de Gobierno del Tribunal Superior de Justicia</mark> correspondiente, recayendo en las personas elegidas por el <mark class="m-autoridad">Ayuntamiento</mark>.</p>
