@@ -76,11 +76,25 @@ p{margin:0}
 
 .placeholder{text-align:center;color:var(--texto-gris);padding:60px 20px;font-size:14.5px}
 
+.btn-pdf{display:flex;align-items:center;gap:6px;border:1.5px solid var(--verde-med);background:transparent;color:var(--verde-med);border-radius:20px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap}
+.btn-pdf:hover{background:var(--verde-suave)}
+
 @media (max-width:720px){
   .layout{flex-direction:column}
   .sidebar{width:100%;position:static;display:flex;flex-wrap:wrap;gap:6px}
   .sidebar h3{width:100%}
   .tema-nav-item{margin-bottom:0}
+  .topbar{flex-wrap:wrap}
+}
+
+@media print{
+  body,html{background:#fff}
+  .topbar,.sidebar,.btn-pdf{display:none!important}
+  .layout{display:block}
+  .content{width:100%}
+  .esquema{display:none!important;box-shadow:none;border-radius:0;padding:0}
+  .esquema.active{display:block!important}
+  .examen{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 </style>
 </head>
@@ -88,9 +102,12 @@ p{margin:0}
 <div id="app">
   <div class="topbar">
     <h1>📚 Esquemas de Estudio</h1>
-    <div class="theme-toggle">
-      <button class="theme-btn" data-theme-btn="light">Claro</button>
-      <button class="theme-btn" data-theme-btn="dark">Oscuro</button>
+    <div style="display:flex;align-items:center;gap:10px">
+      <button class="btn-pdf" id="btn-exportar-pdf">⬇️ PDF</button>
+      <div class="theme-toggle">
+        <button class="theme-btn" data-theme-btn="light">Claro</button>
+        <button class="theme-btn" data-theme-btn="dark">Oscuro</button>
+      </div>
     </div>
   </div>
 
@@ -216,6 +233,12 @@ document.querySelectorAll('.theme-btn').forEach(b => b.addEventListener('click',
 let saved = 'light';
 try{ saved = localStorage.getItem('esquemas-theme') || 'light'; }catch(e){}
 setTheme(saved);
+
+// ---- EXPORTAR A PDF ----
+// Usa el diálogo de impresión del navegador (elegir "Guardar como PDF") solo sobre el esquema activo.
+document.getElementById('btn-exportar-pdf').addEventListener('click', () => {
+  window.print();
+});
 
 render();
 </script>
