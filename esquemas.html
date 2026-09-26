@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Esquemas de Estudio</title>
+<meta name="theme-color" content="#1c4d3c">
+<style>
+:root{
+  --fondo:#f5f4ee;
+  --panel:#ffffff;
+  --panel-alt:#eeece3;
+  --texto:#1f2a24;
+  --texto-gris:#767a70;
+  --borde:#e2e0d5;
+  --verde-osc:#163f30;
+  --verde:#1c4d3c;
+  --verde-med:#2f6b52;
+  --verde-suave:#e7efe8;
+  --examen-bg:#fff4d6;
+  --examen-borde:#e0a800;
+  --examen-txt:#7a5b00;
+  --radio:18px;
+  --radio-sm:12px;
+  font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;
+}
+[data-theme="dark"]{
+  --fondo:#141917;
+  --panel:#1e2523;
+  --panel-alt:#262f2b;
+  --texto:#eef1ee;
+  --texto-gris:#9aa39c;
+  --borde:#333d37;
+  --verde-osc:#7fd9ac;
+  --verde:#3f8a68;
+  --verde-med:#57a683;
+  --verde-suave:#16332a;
+  --examen-bg:#3a2f12;
+  --examen-borde:#e0a800;
+  --examen-txt:#f0c95a;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body,html{margin:0;padding:0;background:var(--fondo);color:var(--texto)}
+#app{max-width:820px;margin:0 auto;min-height:100vh;padding:18px 18px 60px}
+h1,h2,h3{margin:0;color:var(--verde-osc);font-family:Georgia,'Times New Roman',serif}
+p{margin:0}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px;position:sticky;top:0;background:var(--fondo);padding:10px 0;z-index:10}
+.topbar h1{font-size:22px}
+.theme-toggle{display:flex;background:var(--panel-alt);border-radius:20px;padding:4px;gap:2px}
+.theme-btn{border:none;background:transparent;padding:8px 14px;border-radius:16px;font-size:13px;font-weight:700;color:var(--texto-gris);cursor:pointer;font-family:inherit}
+.theme-btn.active{background:var(--panel);color:var(--verde-osc)}
+
+.layout{display:flex;gap:20px;align-items:flex-start}
+.sidebar{width:220px;flex:none;background:var(--panel);border-radius:var(--radio);padding:14px;position:sticky;top:78px}
+.sidebar h3{font-size:12px;letter-spacing:1px;color:var(--texto-gris);text-transform:uppercase;margin-bottom:10px}
+.tema-nav-item{display:block;padding:10px 12px;border-radius:var(--radio-sm);font-size:14px;font-weight:600;color:var(--texto);cursor:pointer;margin-bottom:4px}
+.tema-nav-item:hover{background:var(--panel-alt)}
+.tema-nav-item.active{background:var(--verde-suave);color:var(--verde-osc)}
+
+.content{flex:1;min-width:0}
+.esquema{background:var(--panel);border-radius:var(--radio);padding:24px;margin-bottom:18px;display:none}
+.esquema.active{display:block}
+.esquema-head{margin-bottom:16px;border-bottom:1px solid var(--borde);padding-bottom:14px}
+.esquema-head .eyebrow{font-size:11px;letter-spacing:1.5px;color:var(--texto-gris);font-weight:700;text-transform:uppercase;margin-bottom:4px}
+.esquema-head h2{font-size:24px}
+
+.bloque{margin-bottom:18px}
+.bloque h3{font-size:16px;color:var(--verde-med);margin-bottom:8px}
+.bloque ul{margin:0;padding-left:20px}
+.bloque li{font-size:14.5px;line-height:1.6;color:var(--texto);margin-bottom:6px}
+
+.examen{background:var(--examen-bg);border-left:4px solid var(--examen-borde);border-radius:10px;padding:10px 14px;margin:8px 0;display:flex;align-items:flex-start;gap:8px}
+.examen::before{content:"📌";flex:none;font-size:14px;line-height:1.6}
+.examen-txt{font-size:14.5px;line-height:1.6;color:var(--examen-txt);font-weight:600}
+
+.placeholder{text-align:center;color:var(--texto-gris);padding:60px 20px;font-size:14.5px}
+
+@media (max-width:720px){
+  .layout{flex-direction:column}
+  .sidebar{width:100%;position:static;display:flex;flex-wrap:wrap;gap:6px}
+  .sidebar h3{width:100%}
+  .tema-nav-item{margin-bottom:0}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="topbar">
+    <h1>📚 Esquemas de Estudio</h1>
+    <div class="theme-toggle">
+      <button class="theme-btn" data-theme-btn="light">Claro</button>
+      <button class="theme-btn" data-theme-btn="dark">Oscuro</button>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="sidebar" id="nav-temas">
+      <h3>Temas</h3>
+      <!-- Los temas se listan aquí automáticamente -->
+    </div>
+
+    <div class="content" id="lista-esquemas">
+      <!-- Los esquemas se insertan aquí -->
+    </div>
+  </div>
+</div>
+
+<script>
+// ---- PLANTILLA DE EJEMPLO ----
+// Cada esquema es un objeto: { id, tema, titulo, bloques: [{ titulo, puntos: [{texto, examen:true/false}] }] }
+const esquemas = [
+  {
+    id: "ejemplo-1",
+    tema: "Tema de ejemplo",
+    titulo: "Título del esquema (artículo o punto concreto)",
+    bloques: [
+      {
+        titulo: "Idea general",
+        puntos: [
+          { texto: "Aquí va un punto normal del esquema, breve y directo." },
+          { texto: "Este otro punto se marca como posible pregunta de examen.", examen: true }
+        ]
+      },
+      {
+        titulo: "Artículos / referencias clave",
+        puntos: [
+          { texto: "Art. X — resumen del contenido del artículo." },
+          { texto: "Art. Y — dato muy preguntado en exámenes anteriores.", examen: true }
+        ]
+      }
+    ]
+  }
+];
+
+function render(){
+  const nav = document.getElementById('nav-temas');
+  const lista = document.getElementById('lista-esquemas');
+  nav.innerHTML = '<h3>Temas</h3>';
+  lista.innerHTML = '';
+
+  if(!esquemas.length){
+    lista.innerHTML = '<div class="placeholder">Todavía no hay esquemas. Dime el tema, los artículos o puntos y los voy añadiendo aquí.</div>';
+    return;
+  }
+
+  esquemas.forEach((es, i) => {
+    const navItem = document.createElement('div');
+    navItem.className = 'tema-nav-item' + (i===0 ? ' active' : '');
+    navItem.textContent = es.tema;
+    navItem.onclick = () => mostrar(es.id);
+    navItem.dataset.target = es.id;
+    nav.appendChild(navItem);
+
+    const bloquesHtml = es.bloques.map(b => `
+      <div class="bloque">
+        <h3>${b.titulo}</h3>
+        <ul>
+          ${b.puntos.map(p => p.examen
+            ? `<li><div class="examen"><span class="examen-txt">${p.texto}</span></div></li>`
+            : `<li>${p.texto}</li>`
+          ).join('')}
+        </ul>
+      </div>
+    `).join('');
+
+    const div = document.createElement('div');
+    div.className = 'esquema' + (i===0 ? ' active' : '');
+    div.id = es.id;
+    div.innerHTML = `
+      <div class="esquema-head">
+        <div class="eyebrow">${es.tema}</div>
+        <h2>${es.titulo}</h2>
+      </div>
+      ${bloquesHtml}
+    `;
+    lista.appendChild(div);
+  });
+}
+
+function mostrar(id){
+  document.querySelectorAll('.esquema').forEach(e => e.classList.toggle('active', e.id === id));
+  document.querySelectorAll('.tema-nav-item').forEach(n => n.classList.toggle('active', n.dataset.target === id));
+}
+
+// ---- TEMA CLARO / OSCURO ----
+function setTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  document.querySelectorAll('.theme-btn').forEach(b => b.classList.toggle('active', b.dataset.themeBtn === t));
+  try{ localStorage.setItem('esquemas-theme', t); }catch(e){}
+}
+document.querySelectorAll('.theme-btn').forEach(b => b.addEventListener('click', () => setTheme(b.dataset.themeBtn)));
+
+let saved = 'light';
+try{ saved = localStorage.getItem('esquemas-theme') || 'light'; }catch(e){}
+setTheme(saved);
+
+render();
+</script>
+</body>
+</html>
