@@ -978,6 +978,15 @@ const esquemas = temasPrograma.map((tema, i) => ({
 
     + bloqueTitulo("CAPÍTULO VI — De los Jueces y las Juezas de Paz")
 
+    + articulo("Artículo 99 — Existencia del Juzgado de Paz", `
+      <p>En cada <mark class="m-destacable">municipio</mark> donde <u class="m-clave">no exista</u> Tribunal de Instancia, y con jurisdicción en el término correspondiente, habrá un <mark class="m-autoridad">juez o una jueza de paz</mark>.</p>
+    `)
+
+    + articulo("Artículo 100.1 y 100.2 — Competencias del Juzgado de Paz", `
+      <p><b>1.</b> En el orden <mark class="m-destacable">civil</mark>: <mark class="m-accion">sustanciación</mark> en primera instancia, <mark class="m-destacable">fallo y ejecución</mark> de los procesos que la ley determine, y demás funciones que la ley les atribuya.</p>
+      <p><b>2.</b> En el orden <mark class="m-destacable">penal</mark>: conocerán en primera instancia de los procesos por <mark class="m-personalizado">delito leve</mark> que les atribuya la ley; podrán intervenir también en <mark class="m-destacable">actuaciones penales de prevención</mark> o por delegación.</p>
+    `)
+
     + articulo("Artículo 101 — Nombramiento de los Jueces de Paz", `
       <p><b>1.</b> Los <mark class="m-autoridad">Jueces de Paz</mark> y sus sustitutos serán <mark class="m-accion">nombrados</mark> para un periodo de <mark class="m-plazo">cuatro años</mark> por la <mark class="m-autoridad">Sala de Gobierno del Tribunal Superior de Justicia</mark> correspondiente, recayendo en las personas elegidas por el <mark class="m-autoridad">Ayuntamiento</mark>.</p>
       <p><b>2.</b> Serán <mark class="m-accion">elegidos</mark> por el <mark class="m-autoridad">Pleno del Ayuntamiento</mark>, con el voto favorable de la <mark class="m-destacable">mayoría absoluta</mark>; si no hubiere solicitante, el pleno elegirá libremente.</p>
@@ -986,6 +995,30 @@ const esquemas = temasPrograma.map((tema, i) => ({
     `)
 
     + bloqueTitulo("LIBRO IV — De la independencia judicial y la responsabilidad de Jueces y Magistrados")
+
+    + articulo("Artículo 378 — Inamovilidad", `
+      <p><b>1.</b> Gozarán de <mark class="m-destacable">inamovilidad</mark> los Jueces y Magistrados que desempeñen cargos judiciales.</p>
+      <p><b>2.</b> Los nombrados por <mark class="m-personalizado">plazo determinado</mark> gozarán de inamovilidad solo por ese tiempo.</p>
+      <p><b>3.</b> Los casos de <mark class="m-destacable">renuncia, excedencia, traslado y promoción</mark> se rigen por sus normas específicas.</p>
+    `)
+
+    + articulo("Artículo 379.1 y 379.2 — Pérdida de la condición de Juez o Magistrado", `
+      <p><b>1.</b> Se perderá por: a) <mark class="m-destacable">renuncia</mark> a la Carrera Judicial; b) <mark class="m-destacable">pérdida de la nacionalidad española</mark>; c) <mark class="m-destacable">sanción disciplinaria</mark> de separación; d) <mark class="m-destacable">condena a pena privativa de libertad</mark> por delito doloso; e) <mark class="m-destacable">incapacidad</mark>, salvo que proceda su jubilación; f) <mark class="m-destacable">jubilación</mark>.</p>
+      <p><b>2.</b> La separación en los casos b), c), d) y e) se <mark class="m-accion">acordará</mark> previo expediente, con intervención del <mark class="m-autoridad">Ministerio Fiscal</mark>.</p>
+    `)
+
+    + articulo("Artículo 381 — Rehabilitación", `
+      <p><b>1.</b> La <mark class="m-destacable">rehabilitación</mark> se concederá por el <mark class="m-autoridad">CGPJ</mark> cuando se acredite el <mark class="m-personalizado">cese definitivo o la inexistencia</mark> de la causa que dio lugar a la separación.</p>
+      <p><b>2.</b> Si se deniega, <u class="m-clave">no podrá iniciarse</u> nuevo procedimiento en los <mark class="m-plazo">tres años siguientes</mark>.</p>
+    `)
+
+    + articulo("Artículo 383 — Suspensión de Jueces y Magistrados", `
+      <p>Solo tendrá lugar: 1.º cuando se haya declarado <mark class="m-destacable">haber lugar a proceder</mark> por delitos en el ejercicio de sus funciones; 2.º cuando por otro delito doloso se dicte <mark class="m-destacable">auto de prisión, libertad bajo fianza o procesamiento</mark>; 3.º cuando se decrete en <mark class="m-destacable">expediente disciplinario o de incapacidad</mark>; 4.º por <mark class="m-destacable">sentencia firme condenatoria</mark> que imponga la suspensión, cuando no proceda la separación.</p>
+    `)
+
+    + articulo("Artículo 385 — Causas de jubilación", `
+      <p>Los Jueces y Magistrados solo podrán ser jubilados: 1.º por <mark class="m-destacable">edad</mark>; 2.º por <mark class="m-destacable">incapacidad permanente</mark> para el ejercicio de sus funciones.</p>
+    `)
 
     + articulo("Artículo 386.1 y 386.2 — Jubilación por edad", `
       <p><b>1.</b> La <mark class="m-destacable">jubilación por edad</mark> es <mark class="m-personalizado">forzosa</mark> al cumplir <mark class="m-plazo">setenta años</mark>. Podrán solicitar, con <mark class="m-plazo">dos meses de antelación</mark>, la <mark class="m-accion">prolongación</mark> del servicio activo hasta un máximo de <mark class="m-plazo">setenta y dos años</mark>.</p>
@@ -1001,9 +1034,30 @@ const esquemas = temasPrograma.map((tema, i) => ({
       <p>Los procedimientos de <mark class="m-destacable">separación, traslado, jubilación por incapacidad y rehabilitación</mark> se formarán con <mark class="m-personalizado">audiencia del interesado</mark>, informe del <mark class="m-autoridad">Ministerio Fiscal</mark> y de la <mark class="m-autoridad">Sala de Gobierno</mark> respectiva, y se <mark class="m-accion">resolverán</mark> por el <mark class="m-autoridad">CGPJ</mark>.</p>
     `)
 
+    + articulo("Artículo 389 — Incompatibilidades del cargo de Juez o Magistrado", `
+      <p>Es <u class="m-clave">incompatible</u>: 1.º con el ejercicio de <mark class="m-destacable">cualquier otra jurisdicción</mark> ajena al Poder Judicial; 2.º con <mark class="m-destacable">cargo de elección popular o designación política</mark>; 3.º con empleos retribuidos por Administraciones Públicas; 4.º con empleos en Tribunales y Juzgados de cualquier orden; 5.º con todo <mark class="m-destacable">empleo o profesión retribuida</mark> (salvo docencia/investigación jurídica y creación literaria); 6.º con el <mark class="m-destacable">ejercicio de la Abogacía y Procuraduría</mark>; 7.º con todo <mark class="m-destacable">asesoramiento jurídico</mark>; 8.º con <mark class="m-destacable">actividad mercantil</mark>; 9.º con funciones de <mark class="m-destacable">Director, Gerente, Administrador o Consejero</mark> de sociedades mercantiles.</p>
+    `)
+
     + articulo("Artículo 390.1 — Incompatibilidad: plazo de opción", `
       <p><b>1.</b> Quien ejerciendo un empleo, cargo o profesión incompatible sea nombrado Juez o Magistrado deberá <mark class="m-accion">optar</mark>, en el plazo de <mark class="m-plazo">ocho días</mark>, por uno u otro cargo, o <mark class="m-destacable">cesar</mark> en la actividad incompatible.</p>
     `, true)
+
+    + articulo("Artículo 391 — Prohibición por vínculo familiar en la misma Sala", `
+      <p><u class="m-clave">No podrán pertenecer</u> a una misma Sala de Justicia o Audiencia Provincial Magistrados unidos por <mark class="m-destacable">vínculo matrimonial</mark> o situación de hecho equivalente, o con <mark class="m-personalizado">parentesco</mark> dentro del segundo grado de consanguinidad o afinidad. Tampoco podrán pertenecer a una misma <mark class="m-destacable">Sala de Gobierno</mark>.</p>
+    `)
+
+    + articulo("Artículo 392.1 (letras a y b) y 392.2 — Incompatibilidades funcionales", `
+      <p><b>1.</b> Además de la obligación de abstención, son incompatibles: a) los <mark class="m-autoridad">Jueces de Instrucción</mark> con los Jueces unipersonales de lo Penal que hayan de conocer en juicio oral de lo instruido por ellos; b) los <mark class="m-autoridad">Magistrados</mark> de cualquier Sala que conozca de recursos respecto de un órgano jurisdiccional, con los Jueces o Magistrados de dicho órgano (se exceptúan las Salas del <mark class="m-destacable">Tribunal Supremo</mark>).</p>
+      <p><b>2.</b> También serán incompatibles, por vínculo familiar, los <mark class="m-autoridad">Presidentes y Magistrados</mark> respecto de los miembros del <mark class="m-autoridad">Ministerio Fiscal</mark> de la misma Fiscalía, y respecto del personal al servicio de la Administración de Justicia que dependa de ellos.</p>
+    `)
+
+    + articulo("Artículo 393 — Incompatibilidad territorial por vínculo o ejercicio previo", `
+      <p><u class="m-clave">No podrán</u> desempeñar su cargo: 1. en los Tribunales donde ejerzan como <mark class="m-destacable">abogado, procurador</mark>, su cónyuge o pariente de segundo grado; 2. en una Audiencia o Tribunal donde tengan <mark class="m-personalizado">intereses económicos con arraigo</mark>; 3. en la plaza donde hayan ejercido la <mark class="m-destacable">abogacía o procuraduría</mark> en los <mark class="m-plazo">dos años anteriores</mark> a su nombramiento.</p>
+    `)
+
+    + articulo("Artículo 395 — Prohibiciones políticas y de asociación", `
+      <p><u class="m-clave">No podrán</u> los Jueces o Magistrados pertenecer a <mark class="m-destacable">partidos políticos o sindicatos</mark> ni tener empleo a su servicio, y les está prohibido: 1.º <mark class="m-accion">dirigir</mark> felicitaciones o censuras a poderes y autoridades públicas, ni concurrir a actos o reuniones públicos que no tengan carácter judicial; 2.º <mark class="m-accion">tomar parte</mark> en elecciones legislativas o locales más allá de <mark class="m-personalizado">emitir su voto personal</mark>.</p>
+    `)
 
     + articulo("Artículo 398 — Inmunidad judicial: detención", `
       <p><b>1.</b> Los Jueces y Magistrados en servicio activo solo podrán ser <mark class="m-accion">detenidos</mark> por orden de <mark class="m-autoridad">Juez competente</mark> o en caso de <mark class="m-destacable">delito flagrante</mark>; en este caso se entregará inmediatamente el detenido al <mark class="m-autoridad">Juez de Instrucción más próximo</mark>.</p>
@@ -1013,6 +1067,10 @@ const esquemas = temasPrograma.map((tema, i) => ({
     + articulo("Artículo 399.1 y 399.2 — Relaciones con autoridades civiles y militares", `
       <p><b>1.</b> Cuando una <mark class="m-autoridad">Autoridad civil o militar</mark> precise datos o declaraciones de un Juez o Magistrado que <u class="m-clave">no se refieran a su cargo</u>, se <mark class="m-accion">solicitarán por escrito</mark> o se recibirán en el <mark class="m-destacable">despacho oficial</mark>, previo aviso.</p>
       <p><b>2.</b> Cuando se trate de auxilio por razón del cargo, se <mark class="m-accion">prestará sin tardanza</mark>, salvo que el acto no esté legalmente permitido.</p>
+    `)
+
+    + articulo("Artículo 400 — Declaración de un Juez o Magistrado en causa penal", `
+      <p>Cuando fuere necesaria la <mark class="m-destacable">declaración</mark> de un Juez o Magistrado en una causa penal, y ésta pudiera prestarse legalmente, <u class="m-clave">no podrá excusarse</u> de hacerlo. Si la autoridad judicial que hubiera de recibirla fuere de <mark class="m-personalizado">categoría inferior</mark>, acudirá al <mark class="m-destacable">despacho oficial</mark> del Juez o Magistrado, previo aviso, señalándose día y hora.</p>
     `)
 
     + articulo("Artículo 406 — Incoación de responsabilidad penal", `
