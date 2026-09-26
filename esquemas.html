@@ -805,6 +805,40 @@ const esquemas = temasPrograma.map((tema, i) => ({
       <p>La <mark class="m-autoridad">Sala de Gobierno</mark>, a <mark class="m-personalizado">propuesta</mark> del Presidente del Tribunal Supremo, <mark class="m-accion">aprobará</mark> las <mark class="m-destacable">normas de funcionamiento</mark> del Gabinete Técnico.</p>
     `)
 
+    + bloqueTitulo("CAPÍTULO II — De la Audiencia Nacional")
+
+    + articulo("Artículo 63.1 y 63.2 — Composición de la Audiencia Nacional", `
+      <p><b>1.</b> La <mark class="m-autoridad">Audiencia Nacional</mark> se compondrá de su <mark class="m-autoridad">Presidente</mark>, los <mark class="m-autoridad">Presidentes de Sala</mark> y los <mark class="m-autoridad">Magistrados</mark> que determine la ley para cada una de sus Salas y Secciones.</p>
+      <p><b>2.</b> El <mark class="m-autoridad">Presidente de la Audiencia Nacional</mark>, que tendrá la consideración de <mark class="m-destacable">Presidente de Sala del Tribunal Supremo</mark>, es el <mark class="m-personalizado">Presidente nato</mark> de todas sus Salas.</p>
+    `)
+
+    + articulo("Artículo 64.1 y 64.2 — Salas de la Audiencia Nacional", `
+      <p><b>1.</b> La Audiencia Nacional estará integrada por las Salas: <mark class="m-destacable">de Apelación</mark>, <mark class="m-destacable">de lo Penal</mark>, <mark class="m-destacable">de lo Contencioso-Administrativo</mark> y <mark class="m-destacable">de lo Social</mark>.</p>
+      <p><b>2.</b> Cuando el número de asuntos lo aconseje, podrán <mark class="m-accion">crearse</mark> dos o más <mark class="m-personalizado">Secciones</mark> dentro de una Sala.</p>
+    `)
+
+    + articulo("Artículo 64 bis.1 — Sala de Apelación", `
+      <p><b>1.</b> La <mark class="m-destacable">Sala de Apelación</mark> de la Audiencia Nacional conocerá de los <mark class="m-personalizado">recursos de esta clase</mark> que establezca la ley contra las resoluciones de la <mark class="m-autoridad">Sala de lo Penal</mark>.</p>
+    `)
+
+    + articulo("Artículo 65 — Sala de lo Penal de la Audiencia Nacional", `
+      <p><b>1.º</b> Del <mark class="m-destacable">enjuiciamiento</mark> de causas por delitos como los cometidos contra el <mark class="m-autoridad">titular de la Corona</mark>, <mark class="m-destacable">falsificación de moneda</mark> por organizaciones criminales, <mark class="m-destacable">defraudaciones</mark> de repercusión nacional, <mark class="m-destacable">tráfico de drogas</mark> por bandas organizadas, delitos cometidos <mark class="m-personalizado">fuera del territorio nacional</mark> atribuidos a Tribunales españoles, delitos atribuidos a la <mark class="m-autoridad">Fiscalía Europea</mark> y de <mark class="m-destacable">contrabando de material de defensa</mark>.</p>
+      <p><b>3.º</b> De las <mark class="m-destacable">cuestiones de cesión de jurisdicción</mark> en materia penal derivadas del cumplimiento de tratados internacionales en los que España sea parte.</p>
+      <p><b>4.º</b> De los <mark class="m-destacable">recursos</mark> respecto a los instrumentos de reconocimiento mutuo de resoluciones penales en la UE, y de la <mark class="m-personalizado">extradición pasiva</mark>.</p>
+      <p><b>5.º</b> De los recursos contra sentencias y resoluciones de la <mark class="m-autoridad">Sección de lo Penal</mark>, de <mark class="m-destacable">Instrucción</mark> (incluidas funciones de Jueces de garantías) y de <mark class="m-destacable">Menores</mark> del Tribunal Central de Instancia.</p>
+      <p><b>6.º</b> De los recursos contra resoluciones de la <mark class="m-destacable">Sección de Vigilancia Penitenciaria</mark> del Tribunal Central de Instancia.</p>
+      <p><b>7.º</b> De los <mark class="m-destacable">procedimientos de decomiso autónomo</mark> por los delitos para cuyo conocimiento sean competentes.</p>
+      <p><b>8.º</b> De <u class="m-clave">cualquier otro</u> asunto que le atribuyan las leyes.</p>
+    `, true)
+
+    + articulo("Artículo 66 — Sala de lo Contencioso-Administrativo de la Audiencia Nacional", `
+      <p>Conocerá, en <mark class="m-destacable">única instancia</mark>, de los recursos contra disposiciones y actos de <mark class="m-autoridad">Ministros y Secretarios de Estado</mark> no atribuidos al Tribunal Central de Instancia, contra actos de la <mark class="m-autoridad">Comisión de Vigilancia de Actividades de Financiación del Terrorismo</mark>, y de los recursos no atribuidos a los <mark class="m-autoridad">Tribunales Superiores de Justicia</mark> sobre convenios entre Administraciones y resoluciones del <mark class="m-destacable">Tribunal Económico-Administrativo Central</mark>.</p>
+    `)
+
+    + articulo("Artículo 67.1 — Sala de lo Social de la Audiencia Nacional", `
+      <p><b>1.º</b> De los <mark class="m-destacable">procesos especiales de impugnación de convenios colectivos</mark> cuyo ámbito territorial sea <mark class="m-personalizado">superior al de una Comunidad Autónoma</mark>.</p>
+    `, true)
+
     + articulo("Artículo 69 — Recusaciones en la Audiencia Nacional", `
       <p>Una <mark class="m-destacable">Sala</mark> formada por el <mark class="m-autoridad">Presidente de la Audiencia Nacional</mark>, los <mark class="m-autoridad">Presidentes de Sala</mark> y el <mark class="m-destacable">Magistrado más antiguo y el más moderno</mark> de cada una conocerá de los <mark class="m-personalizado">incidentes de recusación</mark> del Presidente, de los Presidentes de Sala o de más de dos Magistrados de una Sala.</p>
     `)
@@ -815,9 +849,48 @@ const esquemas = temasPrograma.map((tema, i) => ({
 
     + trampa("Trampa de examen — quién preside cada Sala de recusaciones", "TS: preside el Presidente del TS, con el Magistrado más antiguo Y el más moderno de cada Sala. TSJ (art. 77): solo el Magistrado más MODERNO de cada una, no el más antiguo. No mezclar ambas composiciones.")
 
+    + bloqueTitulo("CAPÍTULO III — De los Tribunales Superiores de Justicia")
+
+    + articulo("Artículo 70 — El Tribunal Superior de Justicia", `
+      <p>El <mark class="m-autoridad">Tribunal Superior de Justicia</mark> de la Comunidad Autónoma <mark class="m-accion">culminará</mark> la <mark class="m-destacable">organización judicial</mark> en el ámbito territorial de aquélla, sin perjuicio de la jurisdicción que corresponde al <mark class="m-autoridad">Tribunal Supremo</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 71 — Nombre y jurisdicción del TSJ", `
+      <p>El Tribunal Superior de Justicia <mark class="m-accion">tomará el nombre</mark> de la <mark class="m-destacable">Comunidad Autónoma</mark> y extenderá su jurisdicción al <mark class="m-personalizado">ámbito territorial</mark> de ésta.</p>
+    `, true)
+
+    + articulo("Artículo 72.1 y 72.2 — Composición del Tribunal Superior de Justicia", `
+      <p><b>1.</b> Estará integrado por las Salas: <mark class="m-destacable">de lo Civil y Penal</mark>, <mark class="m-destacable">de lo Contencioso-Administrativo</mark> y <mark class="m-destacable">de lo Social</mark>.</p>
+      <p><b>2.</b> Se compondrá de un <mark class="m-autoridad">Presidente</mark>, que lo será también de su Sala de lo Civil y Penal y tendrá la consideración de <mark class="m-destacable">Magistrado del Tribunal Supremo</mark> mientras desempeñe el cargo; de los <mark class="m-autoridad">Presidentes de Sala</mark> y de los <mark class="m-autoridad">Magistrados</mark> que determine la ley.</p>
+    `, true)
+
+    + articulo("Artículo 73 — Sala de lo Civil y Penal del Tribunal Superior de Justicia", `
+      <p>Como Sala de lo <mark class="m-destacable">Civil</mark>: conoce del <mark class="m-personalizado">recurso de casación</mark> y del <mark class="m-personalizado">recurso extraordinario de revisión</mark> por infracción de normas de <mark class="m-destacable">derecho civil, foral o especial</mark> propio de la comunidad, y de las funciones de <mark class="m-destacable">apoyo y control del arbitraje</mark>. También, en única instancia, de la responsabilidad civil del <mark class="m-autoridad">Presidente y miembros del Consejo de Gobierno</mark> autonómico y de <mark class="m-autoridad">magistrados de la Audiencia Provincial</mark>.</p>
+      <p>Como Sala de lo <mark class="m-destacable">Penal</mark>: conoce de las causas penales que los <mark class="m-personalizado">Estatutos de Autonomía</mark> le reservan, de la <mark class="m-destacable">instrucción y fallo</mark> de causas contra jueces, magistrados y miembros del Ministerio Fiscal por delitos cometidos en el ejercicio de su cargo en la comunidad autónoma, de los <mark class="m-personalizado">recursos de apelación</mark> contra resoluciones de las Audiencias Provinciales, y de las <mark class="m-destacable">cuestiones de competencia</mark> entre órganos del orden penal con sede en la comunidad autónoma sin otro superior común.</p>
+    `, true)
+
+    + articulo("Artículo 75 — Sala de lo Social del Tribunal Superior de Justicia", `
+      <p><b>1.º</b> En <mark class="m-destacable">única instancia</mark>, de los procesos que la ley establezca sobre controversias que afecten a intereses de trabajadores y empresarios en ámbito <mark class="m-personalizado">superior al de una Sección de lo Social</mark> del Tribunal de Instancia y <u class="m-clave">no superior</u> al de la comunidad autónoma.</p>
+      <p><b>2.º</b> De los <mark class="m-destacable">recursos</mark> contra resoluciones de las Secciones de lo Social y de lo Mercantil (en materia laboral) de los Tribunales de Instancia de la comunidad autónoma.</p>
+      <p><b>3.º</b> De las <mark class="m-destacable">cuestiones de competencia</mark> que se susciten entre las Secciones de lo Social de los Tribunales de Instancia de la comunidad autónoma.</p>
+    `)
+
+    + bloqueTitulo("CAPÍTULO IV — De las Audiencias Provinciales")
+
+    + articulo("Artículo 80.1 y 80.2 — Sede y Secciones de la Audiencia Provincial", `
+      <p><b>1.</b> Las <mark class="m-autoridad">Audiencias Provinciales</mark> tendrán su sede en la <mark class="m-destacable">capital de la provincia</mark>, de la que tomarán su nombre, extendiendo su jurisdicción a toda ella.</p>
+      <p><b>2.</b> Podrán <mark class="m-accion">crearse</mark> Secciones de la Audiencia Provincial <mark class="m-personalizado">fuera de la capital</mark> de la provincia, a las que quedarán adscritos uno o varios partidos judiciales.</p>
+    `)
+
     + articulo("Artículo 81.1 y 81.4 — Composición de las Audiencias Provinciales", `
       <p><b>1.</b> Las Audiencias Provinciales se compondrán de un <mark class="m-autoridad">Presidente</mark> y <mark class="m-plazo">dos o más Magistrados</mark>. También podrán estar integradas por <mark class="m-plazo">dos o más Secciones</mark> de la misma composición, en cuyo caso el Presidente de la Audiencia presidirá una de las Secciones.</p>
       <p><b>4.</b> La <mark class="m-destacable">adscripción</mark> de los magistrados a las distintas secciones tendrá carácter <mark class="m-personalizado">funcional</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 82 — Competencias de las Audiencias Provinciales", `
+      <p>En el orden <mark class="m-destacable">penal</mark>: de las causas por <mark class="m-personalizado">delito</mark> (salvo las atribuidas a otros Tribunales), de los recursos contra resoluciones de las Secciones de Instrucción y de lo Penal, de los recursos contra resoluciones de <mark class="m-destacable">Violencia sobre la Mujer</mark> y contra la <mark class="m-destacable">Infancia y Adolescencia</mark>, y de los recursos contra resoluciones de las Secciones de <mark class="m-destacable">Menores</mark> y de <mark class="m-destacable">Vigilancia Penitenciaria</mark>.</p>
+      <p>En el orden <mark class="m-destacable">civil</mark>: de los recursos contra resoluciones de primera instancia de las Secciones Civiles, de <mark class="m-destacable">Familia, Infancia y Capacidad</mark> y de lo <mark class="m-destacable">Mercantil</mark> de los Tribunales de Instancia de la provincia.</p>
+      <p>Corresponde igualmente: las <mark class="m-destacable">cuestiones de competencia</mark> civiles y penales entre jueces de un mismo o distinto Tribunal de Instancia de la provincia, y las <mark class="m-destacable">recusaciones</mark> de sus magistrados cuando no correspondan a la Sala especial del TSJ.</p>
     `)
 
     + articulo("Artículo 82.3 — Tribunales de Marca de la Unión Europea", `
@@ -826,6 +899,13 @@ const esquemas = temasPrograma.map((tema, i) => ({
 
     + articulo("Artículo 83 — Juicio del Jurado", `
       <p><b>1.</b> El <mark class="m-destacable">juicio del Jurado</mark> se celebrará en el ámbito de la <mark class="m-autoridad">Audiencia Provincial u otros Tribunales</mark> y en la forma que establezca la ley.</p>
+    `)
+
+    + bloqueTitulo("CAPÍTULO V — De los Tribunales de Instancia y del Tribunal Central de Instancia")
+
+    + articulo("Artículo 84.1 y 84.2 — El Tribunal de Instancia", `
+      <p><b>1.</b> Habrá un <mark class="m-autoridad">Tribunal de Instancia</mark> en cada <mark class="m-destacable">partido judicial</mark>, con sede en su capital, de la que tomará su nombre.</p>
+      <p><b>2.</b> Estará integrado por una <mark class="m-destacable">Sección Única, de Civil y de Instrucción</mark> (o, en los casos previstos, por una Sección Civil y otra de Instrucción), y podrá además contar con Secciones de <mark class="m-personalizado">Familia, Mercantil, Violencia sobre la Mujer, Violencia contra la Infancia, Penal, Menores, Vigilancia Penitenciaria, Contencioso-Administrativo y Social</mark>.</p>
     `)
 
     + articulo("Artículo 87.3 y 87.4 — Secciones de lo Mercantil (jurisdicción extendida)", `
