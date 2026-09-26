@@ -237,56 +237,80 @@ const esquemas = temasPrograma.map((tema, i) => ({
   html: leyenda() + `<div class="placeholder">Dicta los artículos y puntos de este tema para generar el esquema rápido en el estilo Método Prefortia.</div>`
 }));
 
-// ---- TEMA 7 (relleno completo, estilo Método Prefortia) ----
+// ---- TEMA 7 (relleno con los artículos y puntos dictados, texto legal real) ----
 (function(){
   const t7 = esquemas[6];
   t7.titulo = "7.1 y 7.2 — Resumen esquemático";
   t7.html = leyenda()
 
-    + bloqueTitulo("TÍTULO PRIMERO. DEL TRIBUNAL CONSTITUCIONAL — CAPÍTULO I: Organización y atribuciones")
+    + bloqueTitulo("LEY ORGÁNICA 2/1979, DEL TRIBUNAL CONSTITUCIONAL — TÍTULO I, CAPÍTULO I: Organización y atribuciones")
 
     + articulo("Artículo 2 — Competencias del Tribunal Constitucional", `
-      <p><b>1.</b> <mark class="m-accion">El TC conocerá</mark>: recurso y cuestión de <mark class="m-destacable">inconstitucionalidad</mark>; recurso de <mark class="m-destacable">amparo</mark> por violación de derechos del art. 53.2 CE (protección de los derechos y libertades fundamentales); <mark class="m-destacable">conflictos de competencia</mark> Estado/CC.AA. o entre CC.AA.; <mark class="m-destacable">conflictos entre órganos constitucionales</mark> del Estado; conflictos en defensa de la autonomía local; declaración sobre <mark class="m-destacable">constitucionalidad de Tratados Internacionales</mark>; control previo de inconstitucionalidad (art. 79 LOTC — control previo de Tratados internacionales); impugnaciones del art. 161.2 CE (suspensión de disposiciones y resoluciones de las CC.AA. impugnadas por el Gobierno); <u class="m-clave">verificación de nombramientos</u> de <mark class="m-autoridad">Magistrados del TC</mark>; demás materias atribuidas por la Constitución y LLOO.</p>
-      <p><b>2.</b> El TC <mark class="m-accion">podrá dictar</mark> <mark class="m-destacable">reglamentos</mark> sobre su propio funcionamiento, organización y personal, aprobados en <mark class="m-autoridad">Pleno</mark> y publicados en el BOE autorizados por su <mark class="m-autoridad">Presidente</mark>.</p>
+      <p><b>1.</b> <mark class="m-accion">El Tribunal Constitucional conocerá</mark> en los casos y en la forma que esta Ley determina:</p>
+      <p>a) Del recurso y de la cuestión de <mark class="m-destacable">inconstitucionalidad</mark> contra Leyes, disposiciones normativas o actos con fuerza de Ley.</p>
+      <p><mark class="m-personalizado">b) Del recurso de amparo</mark> por violación de los derechos y libertades públicos relacionados en el art. 53.2 CE (protección de los derechos y libertades fundamentales).</p>
+      <p>c) De los <mark class="m-destacable">conflictos constitucionales de competencia</mark> entre el Estado y las CC.AA. o de los de éstas entre sí.</p>
+      <p>d) De los conflictos entre los <mark class="m-destacable">órganos constitucionales</mark> del Estado. d bis) De los conflictos en defensa de la autonomía local.</p>
+      <p>e) De la declaración sobre la <mark class="m-destacable">constitucionalidad de los tratados internacionales</mark>. e bis) Del control previo de inconstitucionalidad del art. 79 LOTC (control previo de Tratados internacionales).</p>
+      <p>f) De las impugnaciones previstas en el art. 161.2 CE (suspensión de disposiciones y resoluciones de las CC.AA. impugnadas por el Gobierno).</p>
+      <p><mark class="m-personalizado">g) De la verificación de los nombramientos de los Magistrados</mark> del Tribunal Constitucional, para juzgar si reúnen los requisitos exigidos por la Constitución y esta Ley.</p>
+      <p>h) De las demás materias que le atribuyen la Constitución y las Leyes orgánicas.</p>
+      <p><b>2.</b> El TC <mark class="m-accion">podrá dictar</mark> <mark class="m-destacable">reglamentos</mark> sobre su propio funcionamiento y organización, así como sobre el régimen de su personal y servicios. Estos reglamentos deberán ser aprobados por el Tribunal en <mark class="m-autoridad">Pleno</mark> y se publicarán en el BOE, autorizados por su <mark class="m-autoridad">Presidente</mark>.</p>
     `)
 
     + articulo("Artículo 3 — Competencia sobre cuestiones prejudiciales", `
-      <p><mark class="m-destacable">La competencia</mark> del <mark class="m-autoridad">TC</mark> se extiende al <mark class="m-accion">conocimiento y decisión</mark> de cuestiones prejudiciales e incidentales <u class="m-clave">no</u> pertenecientes al orden constitucional, directamente relacionadas con la materia que conoce, a los solos efectos del <mark class="m-personalizado">enjuiciamiento constitucional</mark> de ésta.</p>
+      <p><mark class="m-destacable">La competencia</mark> del <mark class="m-autoridad">Tribunal Constitucional</mark> se extiende al <mark class="m-accion">conocimiento y decisión</mark> de las cuestiones prejudiciales e incidentales <u class="m-clave">no</u> pertenecientes al orden constitucional, directamente relacionadas con la materia de que conoce, a los solos efectos del <mark class="m-personalizado">enjuiciamiento constitucional</mark> de ésta.</p>
     `)
 
-    + articulo("Artículo 4.1 y 4.2 — Delimitación de jurisdicción", `
-      <p><b>1.</b> <u class="m-clave">No</u> cabe promover cuestión de jurisdicción o competencia al TC. El propio TC <mark class="m-accion">delimita</mark> el ámbito de su jurisdicción, adoptando medidas necesarias para preservarla (incluida la nulidad de actos que la menoscaben), y puede apreciar de oficio o a instancia de parte su competencia o incompetencia.</p>
-      <p><b>2.</b> Las resoluciones del TC no podrán ser <mark class="m-accion">enjuiciadas</mark> por ningún órgano jurisdiccional del Estado.</p>
+    + articulo("Artículo 4.1, 4.2 y 4.3 — Delimitación de jurisdicción", `
+      <p><b>1.</b> En <u class="m-clave">ningún caso</u> se podrá promover cuestión de jurisdicción o competencia al TC. El TC <mark class="m-accion">delimitará</mark> el ámbito de su jurisdicción y adoptará cuantas medidas sean necesarias para preservarla, incluyendo la declaración de nulidad de aquellos actos o resoluciones que la menoscaben; asimismo podrá apreciar de oficio o a instancia de parte su competencia o incompetencia.</p>
+      <p><b>2.</b> Las resoluciones del TC <u class="m-clave">no podrán ser enjuiciadas</u> por ningún órgano jurisdiccional del Estado.</p>
+      <p><b>3.</b> Cuando el TC <mark class="m-accion">anule</mark> un acto o resolución que contravenga lo anterior, lo hará <mark class="m-destacable">motivadamente</mark> y previa audiencia al <mark class="m-autoridad">Ministerio Fiscal</mark> y al órgano autor del acto o resolución.</p>
     `)
 
     + articulo("Artículo 5 — Composición del Tribunal", `
       <p>El Tribunal Constitucional <mark class="m-accion">está integrado</mark> por <mark class="m-plazo">doce</mark> miembros, con el título de <mark class="m-autoridad">Magistrados del Tribunal Constitucional</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 6 — El Pleno", `
-      <p><b>1.</b> El TC <mark class="m-accion">actúa</mark> en <u class="m-clave">Pleno</u>, en <u class="m-clave">Sala</u> o en <u class="m-clave">Sección</u>.</p>
-      <p><b>2.</b> El <mark class="m-autoridad">PLENO</mark> <mark class="m-accion">está integrado</mark> por todos los Magistrados. Lo preside el <mark class="m-autoridad">Presidente</mark> del Tribunal; en su defecto, el <mark class="m-autoridad">Vicepresidente</mark>; a falta de ambos, el Magistrado más antiguo en el cargo y, en caso de igual antigüedad, el de mayor edad.</p>
     `)
 
-    + articulo("Artículo 7 — Las Salas", `
+    + articulo("Artículo 6.2 — El Pleno", `
+      <p><b>2.</b> El <mark class="m-autoridad">Pleno</mark> <mark class="m-accion">está integrado</mark> por todos los Magistrados del Tribunal. Lo preside el <mark class="m-autoridad">Presidente</mark> del Tribunal y, en su defecto, el <mark class="m-autoridad">Vicepresidente</mark> y, a falta de ambos, el Magistrado más antiguo en el cargo y, en caso de igual antigüedad, el de mayor edad.</p>
+    `)
+
+    + articulo("Artículo 7.1, 7.2 y 7.3 — Las Salas", `
       <p><b>1.</b> El TC consta de <mark class="m-plazo">dos Salas</mark>. Cada Sala está compuesta por <mark class="m-plazo">seis Magistrados</mark> nombrados por el Tribunal en Pleno.</p>
-      <p><b>2.</b> El <mark class="m-autoridad">Presidente</mark> del Tribunal lo es también de la <mark class="m-destacable">Sala Primera</mark>, que presidirá; en su defecto, el Magistrado más antiguo (a igual antigüedad, el de mayor edad).</p>
-      <p><b>3.</b> El <mark class="m-autoridad">Vicepresidente</mark> del Tribunal presidirá la <mark class="m-destacable">Sala Segunda</mark>, con la misma regla de suplencia.</p>
+      <p><b>2.</b> El <mark class="m-autoridad">Presidente</mark> del Tribunal lo es también de la <mark class="m-destacable">Sala Primera</mark>, que presidirá; en su defecto, el Magistrado más antiguo y, en caso de igual antigüedad, el de mayor edad.</p>
+      <p><b>3.</b> El <mark class="m-autoridad">Vicepresidente</mark> del Tribunal presidirá la <mark class="m-destacable">Sala Segunda</mark> y, en su defecto, el Magistrado más antiguo y, en caso de igual antigüedad, el de mayor edad.</p>
     `)
 
-    + trampa("Trampa de examen", "Presidente → preside Pleno y Sala Primera. Vicepresidente → preside Sala Segunda. No confundir quién preside cada Sala.")
+    + articulo("Artículo 8.1, 8.2 y 8.3 — Las Secciones", `
+      <p><b>1.</b> Para el despacho ordinario y la decisión o propuesta sobre admisibilidad de procesos constitucionales, el <mark class="m-autoridad">Pleno</mark> y las <mark class="m-autoridad">Salas</mark> constituirán <mark class="m-destacable">Secciones</mark> compuestas por el respectivo Presidente (o quien le sustituya) y <mark class="m-plazo">dos Magistrados</mark>.</p>
+      <p><b>2.</b> Se dará cuenta al Pleno de las propuestas de admisión o inadmisión de asuntos de su competencia; en caso de admisión, el Pleno podrá <mark class="m-accion">deferir</mark> a la Sala que corresponda el conocimiento del asunto.</p>
+      <p><b>3.</b> Podrá corresponder también a las Secciones el conocimiento y resolución de los asuntos de amparo que la Sala correspondiente les <mark class="m-accion">defiera</mark>.</p>
+    `)
 
-    + articulo("Artículo 9 — Elección de Presidente y Vicepresidente", `
-      <p><b>1.</b> El <mark class="m-autoridad">Tribunal en Pleno</mark> <mark class="m-accion">elige</mark> de entre sus miembros, por <mark class="m-destacable">votación secreta</mark>, a su Presidente y propone al Rey su nombramiento.</p>
-      <p><b>2.</b> En primera votación se requiere <mark class="m-destacable">mayoría absoluta</mark>. Si no se alcanza, segunda votación: elegido quien obtenga mayor número de votos. En caso de empate, última votación; si se repite, se propone al de mayor antigüedad en el cargo y, en igualdad, al de mayor edad.</p>
-      <p><b>3.</b> El nombre del elegido se eleva al <mark class="m-autoridad">Rey</mark> para su nombramiento por un período de <mark class="m-plazo">tres años</mark>, pudiendo ser reelegido <u class="m-clave">una sola vez</u>.</p>
-      <p><b>4.</b> El <mark class="m-autoridad">Pleno</mark> elige entre sus miembros, por el mismo procedimiento y por el mismo período de <mark class="m-plazo">tres años</mark>, un <mark class="m-autoridad">Vicepresidente</mark>, que sustituye al Presidente (vacante, ausencia u otro motivo legal) y preside la Sala Segunda.</p>
+    + articulo("Artículo 11.1 y 11.2 — Competencia de las Salas", `
+      <p><b>1.</b> Las <mark class="m-autoridad">Salas</mark> del Tribunal Constitucional <mark class="m-accion">conocerán</mark> de los asuntos que, atribuidos a la justicia constitucional, <u class="m-clave">no</u> sean competencia del Pleno.</p>
+      <p><b>2.</b> También conocerán las Salas de aquellas cuestiones que, habiendo sido atribuidas a las Secciones, entiendan que por su importancia deba resolver la propia Sala.</p>
+    `)
+
+    + articulo("Artículo 9.1, 9.2, 9.3 y 9.4 — Elección de Presidente y Vicepresidente", `
+      <p><b>1.</b> El Tribunal en <mark class="m-autoridad">Pleno</mark> <mark class="m-accion">elige</mark> de entre sus miembros, por <mark class="m-destacable">votación secreta</mark>, a su Presidente y propone al Rey su nombramiento.</p>
+      <p><b>2.</b> En primera votación se requerirá <mark class="m-destacable">mayoría absoluta</mark>. Si no se alcanza, segunda votación: elegido quien obtenga mayor número de votos. En caso de empate, última votación; si se repite, se propone al de mayor antigüedad en el cargo y, en igualdad, al de mayor edad.</p>
+      <p><b>3.</b> El nombre del elegido se elevará al <mark class="m-autoridad">Rey</mark> para su nombramiento por un período de <mark class="m-plazo">tres años</mark>, expirado el cual podrá ser reelegido <u class="m-clave">por una sola vez</u>.</p>
+      <p><b>4.</b> El Pleno elegirá entre sus miembros, por el mismo procedimiento y por el mismo período de <mark class="m-plazo">tres años</mark>, un <mark class="m-autoridad">Vicepresidente</mark>, al que incumbe sustituir al Presidente (vacante, ausencia u otro motivo legal) y presidir la Sala Segunda.</p>
     `)
 
     + articulo("Artículo 10 — Competencias del Pleno", `
-      <p><b>1.</b> El <mark class="m-autoridad">Pleno</mark> <mark class="m-accion">conoce</mark>, entre otros: constitucionalidad de tratados internacionales; recursos de inconstitucionalidad (salvo mera aplicación de doctrina, atribuibles a Salas); cuestiones de inconstitucionalidad que reserve para sí; conflictos de competencia Estado/CC.AA.; recursos previos de inconstitucionalidad contra Estatutos de Autonomía; impugnaciones del art. 161.2 CE (suspensión de disposiciones autonómicas impugnadas por el Gobierno); conflictos en defensa de la autonomía local; conflictos entre órganos constitucionales; anulaciones en defensa de la jurisdicción (art. 4.3 LOTC — el TC delimita su propia jurisdicción); verificación de requisitos para nombramiento de Magistrados; nombramiento de Magistrados de cada Sala; recusación de Magistrados; cese de Magistrados (art. 23 LOTC — causas de cese de los Magistrados del TC); aprobación y modificación de reglamentos del Tribunal.</p>
-      <p><b>2.</b> En los casos d), e) y f) del apartado anterior, en el trámite de admisión la decisión de fondo puede atribuirse a la Sala correspondiente según turno objetivo, comunicándose a las partes.</p>
-      <p><b>3.</b> El <mark class="m-autoridad">Pleno</mark>, en ejercicio de su autonomía como órgano constitucional, <mark class="m-accion">elabora</mark> su <mark class="m-destacable">presupuesto</mark>, integrado como sección independiente de los Presupuestos Generales del Estado.</p>
+      <p><b>1.</b> El Tribunal en Pleno conoce de los siguientes asuntos (mención importante):</p>
+      <p><mark class="m-personalizado">b) De los recursos de inconstitucionalidad</mark> contra las leyes y demás disposiciones con valor de ley, excepto los de mera aplicación de doctrina (atribuibles a las Salas en el trámite de admisión).</p>
+      <p><mark class="m-personalizado">c) De las cuestiones de constitucionalidad</mark> que reserve para sí; las demás deberán deferirse a las Salas según un turno objetivo.</p>
+      <p><mark class="m-personalizado">d) De los conflictos constitucionales de competencia</mark> entre el Estado y las CC.AA. o de los de éstas entre sí.</p>
+      <p><mark class="m-personalizado">f) De los conflictos en defensa de la autonomía local</mark>.</p>
+      <p><mark class="m-personalizado">n) De cualquier otro asunto</mark> que sea competencia del Tribunal pero recabe para sí el Pleno, a propuesta del Presidente o de tres Magistrados, así como de los demás asuntos que le puedan ser atribuidos expresamente por una ley orgánica.</p>
+    `)
+
+    + articulo("Artículo 10.3 — Presupuesto del Tribunal", `
+      <p><b>3.</b> El Tribunal en Pleno, en ejercicio de su <mark class="m-destacable">autonomía como órgano constitucional</mark>, <mark class="m-accion">elabora</mark> su <mark class="m-destacable">presupuesto</mark>, que se integra como una sección independiente dentro de los Presupuestos Generales del Estado.</p>
     `)
 
     + articulo("Artículo 12 — Distribución de asuntos entre Salas", `
@@ -294,85 +318,97 @@ const esquemas = temasPrograma.map((tema, i) => ({
     `)
 
     + articulo("Artículo 14 — Quórum de acuerdos", `
-      <p>El Pleno adopta acuerdos con la presencia de, al menos, <mark class="m-plazo">dos tercios</mark> de sus miembros. Las Salas requieren igualmente la presencia de <mark class="m-plazo">dos tercios</mark> de sus miembros. En las Secciones se requiere la presencia de <mark class="m-plazo">dos miembros</mark>, salvo discrepancia, en cuyo caso se requieren los <mark class="m-plazo">tres miembros</mark>.</p>
-    `, true)
+      <p>El Tribunal en Pleno puede adoptar acuerdos cuando estén presentes, al menos, <mark class="m-plazo">dos tercios</mark> de los miembros que en cada momento lo compongan. Los acuerdos de las Salas requerirán asimismo la presencia de <mark class="m-plazo">dos tercios</mark> de sus miembros. En las Secciones se requerirá la presencia de <mark class="m-plazo">dos miembros</mark>, salvo que haya discrepancia, requiriéndose entonces la de sus <mark class="m-plazo">tres miembros</mark>.</p>
+    `)
 
     + articulo("Artículo 15 — Funciones del Presidente", `
-      <p>El <mark class="m-autoridad">Presidente del Tribunal Constitucional</mark>: ejerce la <mark class="m-destacable">representación</mark> del Tribunal; convoca y preside el Pleno y convoca las Salas; adopta las medidas precisas para el funcionamiento del Tribunal, Salas y Secciones; comunica a las Cámaras, al Gobierno o al CGPJ las vacantes; nombra a los letrados; convoca los concursos de personal; ejerce potestades administrativas sobre el personal del Tribunal.</p>
+      <p>El <mark class="m-autoridad">Presidente del Tribunal Constitucional</mark> ejerce la <mark class="m-destacable">representación</mark> del Tribunal, convoca y preside el Tribunal en Pleno y convoca las Salas; adopta las medidas precisas para el funcionamiento del Tribunal, de las Salas y de las Secciones; comunica a las Cámaras, al Gobierno o al CGPJ las vacantes; nombra a los letrados, convoca los concursos para cubrir plazas de funcionarios y puestos de personal laboral, y ejerce las potestades administrativas sobre el personal del Tribunal.</p>
     `)
 
-    + bloqueTitulo("TÍTULO II. DE LOS PROCEDIMIENTOS DE DECLARACIÓN DE INCONSTITUCIONALIDAD — CAPÍTULO II: El recurso de inconstitucionalidad")
+    + bloqueTitulo("TÍTULO II. DE LOS PROCEDIMIENTOS DE DECLARACIÓN DE INCONSTITUCIONALIDAD — CAPÍTULO I: Disposiciones generales")
+
+    + articulo("Artículo 27 — Objeto de los procedimientos de inconstitucionalidad", `
+      <p><b>1.</b> Mediante estos procedimientos, el TC <mark class="m-accion">garantiza</mark> la <mark class="m-destacable">primacía de la Constitución</mark> y enjuicia la conformidad o disconformidad con ella de las Leyes, disposiciones o actos impugnados.</p>
+      <p><b>2.</b> Son susceptibles de declaración de inconstitucionalidad: a) los <mark class="m-destacable">Estatutos de Autonomía</mark> y demás Leyes orgánicas; b) las demás Leyes, disposiciones normativas y actos del Estado con fuerza de Ley; c) los <mark class="m-destacable">Tratados Internacionales</mark>; d) los Reglamentos de las Cámaras y de las Cortes Generales; e) las Leyes, actos y disposiciones con fuerza de ley de las CC.AA.; f) los Reglamentos de las Asambleas legislativas de las CC.AA.</p>
+    `)
+
+    + articulo("Artículo 29 — Vías para promover la declaración de inconstitucionalidad", `
+      <p><b>1.</b> La declaración de inconstitucionalidad podrá <mark class="m-accion">promoverse</mark> mediante: a) el <mark class="m-destacable">recurso de inconstitucionalidad</mark>; b) la <mark class="m-destacable">cuestión de inconstitucionalidad</mark> promovida por Jueces o Tribunales.</p>
+      <p><b>2.</b> La desestimación, por razones de forma, de un recurso de inconstitucionalidad <u class="m-clave">no será obstáculo</u> para que la misma Ley, disposición o acto puedan ser objeto de una cuestión de inconstitucionalidad con ocasión de su aplicación en otro proceso.</p>
+    `)
+
+    + bloqueTitulo("CAPÍTULO II. Del recurso de inconstitucionalidad")
 
     + articulo("Artículo 31 — Momento de interposición", `
-      <p>El <mark class="m-destacable">recurso de inconstitucionalidad</mark> contra Leyes, disposiciones normativas o actos con fuerza de Ley <mark class="m-accion">podrá promoverse</mark> a partir de su publicación oficial.</p>
+      <p>El <mark class="m-destacable">recurso de inconstitucionalidad</mark> contra las Leyes, disposiciones normativas o actos con fuerza de Ley <mark class="m-accion">podrá promoverse</mark> a partir de su publicación oficial.</p>
     `)
 
-    + articulo("Artículo 32 — Legitimación activa", `
-      <p><b>1.</b> Legitimados: <mark class="m-autoridad">Presidente del Gobierno</mark>, <mark class="m-autoridad">Defensor del Pueblo</mark>, <mark class="m-plazo">50 Diputados</mark>, <mark class="m-plazo">50 Senadores</mark> — frente a Estatutos de Autonomía, LLOO y demás Leyes del Estado, disposiciones y actos con fuerza de Ley, Tratados Internacionales y Reglamentos de las Cámaras.</p>
-      <p><b>2.</b> Contra Leyes/disposiciones/actos con fuerza de Ley del Estado que <mark class="m-destacable">afecten a su propio ámbito de autonomía</mark>, también están <mark class="m-accion">legitimados</mark> los órganos colegiados ejecutivos y las Asambleas de las CC.AA., previo acuerdo.</p>
+    + articulo("Artículo 32.1 y 32.2 — Legitimación activa", `
+      <p><b>1.</b> Están legitimados: a) el <mark class="m-autoridad">Presidente del Gobierno</mark>; b) el <mark class="m-autoridad">Defensor del Pueblo</mark>; c) <mark class="m-plazo">cincuenta Diputados</mark>; d) <mark class="m-plazo">cincuenta Senadores</mark> — frente a Estatutos de Autonomía, demás Leyes del Estado, disposiciones y actos con fuerza de ley, Tratados Internacionales y Reglamentos de las Cámaras.</p>
+      <p><b>2.</b> Contra Leyes, disposiciones o actos con fuerza de Ley del Estado que puedan <mark class="m-destacable">afectar a su propio ámbito de autonomía</mark>, están también <mark class="m-accion">legitimados</mark> los órganos colegiados ejecutivos y las Asambleas de las CC.AA., previo acuerdo adoptado al efecto.</p>
     `)
-
-    + trampa("Trampa de examen", "Legitimación genérica (art. 32.1): Presidente del Gobierno, Defensor del Pueblo, 50 Diputados, 50 Senadores. No confundir con la legitimación específica de CC.AA. (art. 32.2), limitada a su propio ámbito de autonomía.")
 
     + articulo("Artículo 33.1 y 33.2 — Plazos del recurso de inconstitucionalidad", `
-      <p><b>1.</b> Plazo general: <mark class="m-plazo">tres meses</mark> a partir de la publicación de la Ley, disposición o acto con fuerza de Ley impugnado, mediante demanda ante el TC.</p>
-      <p><b>2.</b> Plazo ampliado: <mark class="m-plazo">nueve meses</mark> para el Presidente del Gobierno y los órganos colegiados ejecutivos de CC.AA., si concurren: a) reunión de la Comisión Bilateral de Cooperación; b) acuerdo de iniciación de negociaciones dentro de dicha Comisión; c) comunicación del acuerdo al TC dentro de los <mark class="m-plazo">tres meses</mark> siguientes a la publicación e inserción en el BOE y el Diario Oficial de la CC.AA.</p>
-    `, true)
-
-    + trampa("Trampa de examen", "Plazo ordinario: 3 meses. Plazo especial (con Comisión Bilateral): 9 meses, pero el acuerdo debe comunicarse al TC dentro de esos mismos 3 meses iniciales. No confundir ambos plazos de «tres meses».")
-
-    + articulo("Artículo 34.1 y 34.2 — Traslado y plazos de alegación", `
-      <p><b>1.</b> Admitida a trámite la demanda, el TC dará traslado al Congreso y al Senado (por sus Presidentes), al Gobierno (por el Ministerio de Justicia) y, si procede, a los órganos legislativo y ejecutivo de la CC.AA., para personarse y formular alegaciones.</p>
-      <p><b>2.</b> Personación y alegaciones: <mark class="m-plazo">quince días</mark>. Después, el Tribunal dicta sentencia en <mark class="m-plazo">diez días</mark>, salvo resolución motivada que amplíe el plazo, que en ningún caso excederá de <mark class="m-plazo">treinta días</mark>.</p>
+      <p><b>1.</b> El recurso se formulará dentro del plazo de <mark class="m-plazo">tres meses</mark> a partir de la publicación de la Ley, disposición o acto con fuerza de Ley impugnado, mediante demanda ante el TC.</p>
+      <p><b>2.</b> No obstante, el Presidente del Gobierno y los órganos colegiados ejecutivos de las CC.AA. podrán interponer el recurso en el plazo de <mark class="m-plazo">nueve meses</mark> si concurren: a) reunión de la Comisión Bilateral de Cooperación; b) acuerdo de iniciación de negociaciones dentro de dicha Comisión; c) comunicación del acuerdo al TC dentro de los <mark class="m-plazo">tres meses</mark> siguientes a la publicación, insertándose en el BOE y en el Diario Oficial de la CC.AA.</p>
     `)
 
-    + bloqueTitulo("CAPÍTULO III. La cuestión de inconstitucionalidad promovida por Jueces o Tribunales")
+    + articulo("Artículo 34 — Traslado y plazos de alegación", `
+      <p><b>1.</b> Admitida a trámite la demanda, el TC dará traslado al Congreso y al Senado (por sus Presidentes), al Gobierno (por el Ministerio de Justicia) y, en su caso, a los órganos legislativo y ejecutivo de la CC.AA., para personarse y formular alegaciones.</p>
+      <p><b>2.</b> Personación y alegaciones: <mark class="m-plazo">quince días</mark>. Transcurrido éste, el Tribunal dictará sentencia en el de <mark class="m-plazo">diez días</mark>, salvo que, mediante resolución motivada, estime necesario un plazo más amplio que en ningún caso podrá exceder de <mark class="m-plazo">treinta días</mark>.</p>
+    `)
 
-    + articulo("Artículo 35.1 y 35.2 — Planteamiento de la cuestión", `
-      <p><b>1.</b> Cuando un <mark class="m-autoridad">Juez o Tribunal</mark>, de oficio o a instancia de parte, considere que una norma con rango de Ley aplicable al caso pueda ser contraria a la Constitución, <mark class="m-accion">planteará</mark> la cuestión al TC.</p>
-      <p><b>2.</b> Solo puede plantearla una vez concluso el procedimiento y dentro del plazo para dictar sentencia. Debe concretar la norma, el precepto infringido y justificar la dependencia del fallo. Antes de resolver, oirá a las partes y al Ministerio Fiscal en plazo común e improrrogable de <mark class="m-plazo">10 días</mark>; después, el juez resuelve en <mark class="m-plazo">tres días</mark> mediante auto no susceptible de recurso.</p>
+    + bloqueTitulo("CAPÍTULO III. De la cuestión de inconstitucionalidad promovida por Jueces o Tribunales")
+
+    + articulo("Artículo 35.1, 35.2 y 35.3 — Planteamiento de la cuestión", `
+      <p><b>1.</b> Cuando un <mark class="m-autoridad">Juez o Tribunal</mark>, de oficio o a instancia de parte, considere que una norma con rango de Ley aplicable al caso y de cuya validez dependa el fallo pueda ser contraria a la Constitución, <mark class="m-accion">planteará</mark> la cuestión al TC.</p>
+      <p><b>2.</b> Solo podrá plantearla una vez concluso el procedimiento y dentro del plazo para dictar sentencia. Debe concretar la norma, el precepto infringido y justificar la dependencia del fallo. Antes de resolver, oirá a las partes y al Ministerio Fiscal en plazo común e improrrogable de <mark class="m-plazo">10 días</mark>; después, el juez resolverá en el plazo de <mark class="m-plazo">tres días</mark> mediante auto no susceptible de recurso.</p>
+      <p><b>3.</b> El planteamiento de la cuestión originará la <mark class="m-accion">suspensión provisional</mark> de las actuaciones en el proceso judicial hasta que el TC se pronuncie sobre su admisión; producida ésta, el proceso permanecerá suspendido hasta que el TC resuelva definitivamente.</p>
     `)
 
     + articulo("Artículo 37.1, 37.2 y 37.3 — Admisión y tramitación de la cuestión", `
-      <p><b>1.</b> El Tribunal puede rechazar en trámite de admisión, mediante auto motivado y con audiencia solo del <mark class="m-autoridad">Fiscal General del Estado</mark>, la cuestión cuando falten condiciones procesales o sea notoriamente infundada.</p>
-      <p><b>2.</b> Publicada la admisión en el BOE, quienes sean parte pueden personarse ante el TC en <mark class="m-plazo">15 días</mark> siguientes, para alegar en otros <mark class="m-plazo">15 días</mark>.</p>
-      <p><b>3.</b> El TC da traslado al Congreso, Senado, Fiscal General del Estado, Gobierno y, en su caso, órganos de la CC.AA., que pueden personarse y alegar en plazo común improrrogable de <mark class="m-plazo">15 días</mark>. Concluido éste, sentencia en <mark class="m-plazo">15 días</mark>, ampliable motivadamente hasta un máximo de <mark class="m-plazo">30 días</mark>.</p>
+      <p><b>1.</b> El Tribunal podrá rechazar en trámite de admisión, mediante auto y con audiencia solo del <mark class="m-autoridad">Fiscal General del Estado</mark>, la cuestión cuando falten condiciones procesales o sea notoriamente infundada.</p>
+      <p><b>2.</b> Publicada en el BOE la admisión, quienes sean parte podrán personarse ante el TC dentro de los <mark class="m-plazo">15 días</mark> siguientes, para formular alegaciones en el plazo de otros <mark class="m-plazo">15 días</mark>.</p>
+      <p><b>3.</b> El TC dará traslado al Congreso, Senado, Fiscal General del Estado, Gobierno y, en su caso, órganos de la CC.AA., que podrán personarse y alegar en plazo común improrrogable de <mark class="m-plazo">quince días</mark>. Concluido éste, el Tribunal dictará sentencia en el plazo de <mark class="m-plazo">quince días</mark>, salvo que estime necesario un plazo más amplio que no podrá exceder de <mark class="m-plazo">treinta días</mark>.</p>
     `)
 
     + bloqueTitulo("CAPÍTULO IV. De la sentencia en procedimientos de inconstitucionalidad y de sus efectos")
 
     + articulo("Artículo 38.1, 38.2 y 38.3 — Efectos de la sentencia", `
-      <p><b>1.</b> Las sentencias en procedimientos de inconstitucionalidad tienen valor de <u class="m-clave">cosa juzgada</u>, vinculan a todos los Poderes Públicos y producen efectos generales desde su <mark class="m-destacable">publicación en el BOE</mark>.</p>
-      <p><b>2.</b> Las sentencias desestimatorias en recursos de inconstitucionalidad y conflictos en defensa de la autonomía local impiden un planteamiento ulterior por cualquiera de ambas vías, fundado en la misma infracción de idéntico precepto.</p>
-      <p><b>3.</b> En cuestiones de inconstitucionalidad, el TC lo comunica de inmediato al órgano judicial competente, que notifica a las partes. El Juez queda vinculado desde que conoce la sentencia; las partes, desde que son notificadas.</p>
+      <p><b>1.</b> Las sentencias recaídas en procedimientos de inconstitucionalidad tendrán valor de <u class="m-clave">cosa juzgada</u>, vincularán a todos los Poderes Públicos y producirán efectos generales desde su <mark class="m-destacable">publicación en el BOE</mark>.</p>
+      <p><b>2.</b> Las sentencias desestimatorias en recursos de inconstitucionalidad y conflictos en defensa de la autonomía local impedirán un planteamiento ulterior por cualquiera de las dos vías, fundado en la misma infracción de idéntico precepto.</p>
+      <p><b>3.</b> En cuestiones de inconstitucionalidad, el TC lo comunicará de inmediato al órgano judicial competente, que notificará la sentencia a las partes. El Juez quedará vinculado desde que conozca la sentencia; las partes, desde que sean notificadas.</p>
     `)
 
     + articulo("Artículo 39 — Alcance de la declaración de inconstitucionalidad", `
-      <p><b>1.</b> Cuando declare la inconstitucionalidad, declarará igualmente la <mark class="m-destacable">nulidad</mark> de los preceptos impugnados, y de aquellos otros de la misma Ley a los que deba extenderse por <u class="m-clave">conexión o consecuencia</u>.</p>
-      <p><b>2.</b> El TC puede fundar la declaración de inconstitucionalidad en la infracción de cualquier precepto constitucional, haya sido o no invocado en el proceso.</p>
+      <p><b>1.</b> Cuando la sentencia declare la inconstitucionalidad, declarará igualmente la <mark class="m-destacable">nulidad</mark> de los preceptos impugnados, así como, en su caso, la de aquellos otros a los que deba extenderse por <u class="m-clave">conexión o consecuencia</u>.</p>
+      <p><b>2.</b> El TC podrá fundar la declaración de inconstitucionalidad en la infracción de cualquier precepto constitucional, haya o no sido invocado en el curso del proceso.</p>
     `)
 
     + bloqueTitulo("TÍTULO III. DEL RECURSO DE AMPARO CONSTITUCIONAL — CAPÍTULO I: Procedencia e interposición")
 
-    + articulo("Artículo 42 — Amparo frente a actos de las Cortes/Asambleas", `
-      <p>Las decisiones o actos sin valor de Ley de las Cortes, sus órganos, o de las Asambleas legislativas de las CC.AA. y sus órganos, que <mark class="m-destacable">violen derechos y libertades</mark> susceptibles de amparo, podrán ser recurridos dentro del plazo de <mark class="m-plazo">tres meses</mark> desde que, con arreglo a las normas internas de las Cámaras o Asambleas, sean firmes.</p>
+    + articulo("Artículo 41.1 — Derechos susceptibles de amparo", `
+      <p><b>1.</b> Los <mark class="m-destacable">derechos y libertades</mark> reconocidos en los arts. 14 a 29 CE serán susceptibles de amparo constitucional, sin perjuicio de su tutela general encomendada a los Tribunales de Justicia. Igual protección será aplicable a la <mark class="m-destacable">objeción de conciencia</mark> reconocida en el art. 30 CE.</p>
     `)
 
-    + articulo("Artículo 43.1, 43.2 y 43.3 — Amparo frente al Gobierno y ejecutivos autonómicos", `
-      <p><b>1.</b> Las violaciones originadas por el <mark class="m-autoridad">Gobierno</mark> o sus autoridades/funcionarios, o los órganos ejecutivos colegiados de las CC.AA. o sus autoridades/funcionarios/agentes, dan lugar al amparo una vez agotada la vía judicial procedente.</p>
-      <p><b>2.</b> Plazo: <mark class="m-plazo">veinte días</mark> siguientes a la notificación de la resolución recaída en el previo proceso judicial.</p>
-      <p><b>3.</b> El recurso solo puede fundarse en la infracción, por una resolución firme, de los preceptos constitucionales que reconocen los derechos o libertades susceptibles de amparo.</p>
+    + articulo("Artículo 42 — Amparo frente a actos de las Cortes/Asambleas", `
+      <p>Las decisiones o actos sin valor de Ley de las Cortes, sus órganos, o de las Asambleas legislativas de las CC.AA. y sus órganos, que <mark class="m-destacable">violen derechos y libertades</mark> susceptibles de amparo, podrán ser recurridos dentro del plazo de <mark class="m-plazo">tres meses</mark> desde que, con arreglo a las normas internas de las Cámaras o Asambleas, sean firmes.</p>
     `, true)
 
-    + articulo("Artículo 44.1 (párrafo) y 44.2 — Amparo frente a actos judiciales", `
-      <p><b>1.</b> Las violaciones de derechos y libertades susceptibles de amparo que tengan su origen inmediato y directo en un acto u omisión de un <mark class="m-autoridad">órgano judicial</mark> podrán dar lugar a este recurso siempre que se cumplan los requisitos que fija la ley.</p>
+    + articulo("Artículo 43.1, 43.2 y 43.3 — Amparo frente al Gobierno y ejecutivos autonómicos", `
+      <p><b>1.</b> Las violaciones originadas por el <mark class="m-autoridad">Gobierno</mark> o sus autoridades/funcionarios, o los órganos ejecutivos colegiados de las CC.AA. o sus autoridades/funcionarios/agentes, podrán dar lugar al amparo una vez agotada la vía judicial procedente.</p>
+      <p><b>2.</b> Plazo: <mark class="m-plazo">veinte días</mark> siguientes a la notificación de la resolución recaída en el previo proceso judicial.</p>
+      <p><b>3.</b> El recurso solo podrá fundarse en la infracción, por una resolución firme, de los preceptos constitucionales que reconocen los derechos o libertades susceptibles de amparo.</p>
+    `, true)
+
+    + articulo("Artículo 44 — Amparo frente a actos judiciales", `
+      <p><b>1.</b> Las violaciones de derechos y libertades que tengan su origen inmediato y directo en un acto u omisión de un <mark class="m-autoridad">órgano judicial</mark> podrán dar lugar a este recurso si: a) se han agotado todos los medios de impugnación previstos; b) la violación es imputable de modo inmediato y directo al órgano judicial; c) se ha denunciado formalmente en el proceso la vulneración tan pronto como fue conocida.</p>
       <p><b>2.</b> Plazo: <mark class="m-plazo">30 días</mark>, a partir de la notificación de la resolución recaída en el proceso judicial.</p>
     `)
 
-    + trampa("Trampa de examen — plazos del recurso de amparo (arts. 42/43/44)", "Art. 42 (actos de Cortes/Asambleas): 3 meses. Art. 43 (Gobierno/ejecutivos autonómicos): 20 días. Art. 44 (órgano judicial): 30 días. Es la trampa clásica de la oposición: memorizar «3 meses / 20 días / 30 días» en ese orden.")
-
-    + articulo("Artículo 46.1 — Legitimación activa en el amparo", `
-      <p><b>1.</b> Están legitimados: a) en los casos de los arts. 42 y 45, la persona directamente afectada, el <mark class="m-autoridad">Defensor del Pueblo</mark> y el <mark class="m-autoridad">Ministerio Fiscal</mark>; b) en los casos de los arts. 43 y 44, quienes hayan sido parte en el proceso judicial correspondiente, el Defensor del Pueblo y el Ministerio Fiscal.</p>
+    + articulo("Artículo 46.1 y 46.2 — Legitimación activa en el amparo", `
+      <p><b>1.</b> Están legitimados: a) en los casos de los arts. 42 y 45 (derogado), la persona directamente afectada, el <mark class="m-autoridad">Defensor del Pueblo</mark> y el <mark class="m-autoridad">Ministerio Fiscal</mark>; b) en los casos de los arts. 43 y 44, quienes hayan sido parte en el proceso judicial correspondiente, el Defensor del Pueblo y el Ministerio Fiscal.</p>
+      <p><b>2.</b> Si el recurso se promueve por el Defensor del Pueblo o el Ministerio Fiscal, la Sala lo comunicará a los posibles agraviados conocidos y ordenará anunciar la interposición en el BOE, con carácter preferente.</p>
     `)
 
     + bloqueTitulo("CAPÍTULO II. De la tramitación de los recursos de amparo")
@@ -382,88 +418,96 @@ const esquemas = temasPrograma.map((tema, i) => ({
     `)
 
     + articulo("Artículo 49.1, 49.3 y 49.4 — Iniciación de la demanda de amparo", `
-      <p><b>1.</b> El recurso se inicia mediante demanda en la que se exponen los hechos, se citan los preceptos infringidos y se fija con precisión el amparo solicitado. La demanda debe justificar la <mark class="m-destacable">especial trascendencia constitucional</mark> del recurso.</p>
-      <p><b>3.</b> Se acompañan tantas copias literales de la demanda y documentos como partes hubiere en el previo proceso, y una más para el Ministerio Fiscal.</p>
-      <p><b>4.</b> Si se incumple algún requisito, las Secretarías de Justicia lo pondrán de manifiesto al interesado en <mark class="m-plazo">10 días</mark>, con apercibimiento de inadmisión si no se subsana.</p>
+      <p><b>1.</b> El recurso se iniciará mediante demanda en la que se expondrán los hechos, se citarán los preceptos infringidos y se fijará con precisión el amparo solicitado. La demanda debe justificar la <mark class="m-destacable">especial trascendencia constitucional</mark> del recurso.</p>
+      <p><b>3.</b> Se acompañarán tantas copias literales de la demanda y documentos como partes hubiere en el previo proceso, y una más para el Ministerio Fiscal.</p>
+      <p><b>4.</b> De incumplirse algún requisito, las Secretarías de Justicia lo pondrán de manifiesto al interesado en <mark class="m-plazo">10 días</mark>, con apercibimiento de inadmisión si no se subsana.</p>
+    `, true)
+
+    + articulo("Artículo 50.1, 50.2 y 50.3 — Decisión de admisión a trámite", `
+      <p><b>1.</b> La Sección, por <u class="m-clave">unanimidad</u>, acordará mediante providencia la admisión solo cuando concurran todos los requisitos: a) que la demanda cumpla lo dispuesto en los arts. 41 a 46 y 49; b) que el contenido justifique una decisión sobre el fondo por su <mark class="m-destacable">especial trascendencia constitucional</mark>.</p>
+      <p><b>2.</b> Cuando la admisión, aun obteniendo mayoría, no alcance la unanimidad, la Sección trasladará la decisión a la Sala respectiva.</p>
+      <p><b>3.</b> Las providencias de inadmisión especificarán el requisito incumplido y se notificarán al demandante y al Ministerio Fiscal. Solo podrán recurrirse en súplica por el Ministerio Fiscal en el plazo de <mark class="m-plazo">tres días</mark>, resolviéndose mediante auto no susceptible de impugnación.</p>
+    `, true)
+
+    + articulo("Artículo 50.4 — Subsanación de defectos", `
+      <p><b>4.</b> Cuando en la demanda concurran defectos subsanables, se procederá conforme al art. 49.4 (plazo de 10 días para subsanar); de no producirse la subsanación, la Sección acordará la inadmisión mediante providencia, sin recurso posible.</p>
     `)
 
-    + articulo("Artículo 50 — Decisión de admisión a trámite", `
-      <p><b>1.</b> El recurso solamente se admite cuando concurran todos los requisitos: a) que la demanda cumpla lo dispuesto en los arts. 41, 46 y 49; b) que el contenido justifique una decisión sobre el fondo por su <mark class="m-destacable">especial trascendencia constitucional</mark>.</p>
-      <p><b>3.</b> Las providencias de inadmisión se notifican al demandante y al Ministerio Fiscal; solo pueden recurrirse en súplica por el Ministerio Fiscal en <mark class="m-plazo">tres días</mark>, resolviéndose por auto no susceptible de impugnación.</p>
+    + articulo("Artículo 51.1 y 51.2 — Requerimiento de actuaciones", `
+      <p><b>1.</b> Admitida la demanda, la Sala requerirá con carácter urgente al órgano, autoridad, Juez o Tribunal que conoció del procedimiento precedente para que, en plazo no superior a <mark class="m-plazo">diez días</mark>, remita las actuaciones o testimonio de ellas.</p>
+      <p><b>2.</b> El órgano, autoridad, Juez o Tribunal acusará inmediato recibo y emplazará a quienes fueron parte para que puedan comparecer en el plazo de <mark class="m-plazo">diez días</mark>.</p>
     `)
 
-    + articulo("Artículo 51.1 — Requerimiento de actuaciones", `
-      <p>Admitida la demanda, la Sala requerirá con carácter urgente al órgano, autoridad, Juez o Tribunal que conoció del procedimiento precedente para que, en plazo no superior a <mark class="m-plazo">diez días</mark>, remita las actuaciones o testimonio de ellas.</p>
-    `)
-
-    + articulo("Artículo 52 — Vista y alegaciones", `
-      <p><b>1.</b> Recibidas las actuaciones, la Sala da vista a quien promovió el amparo, a los personados, al Abogado del Estado y al Ministerio Fiscal, por plazo común no superior a <mark class="m-plazo">veinte días</mark>, para presentar alegaciones.</p>
+    + articulo("Artículo 52.1 y 52.3 — Vista y alegaciones", `
+      <p><b>1.</b> Recibidas las actuaciones, la Sala dará vista a quien promovió el amparo, a los personados, al Abogado del Estado y al Ministerio Fiscal, por plazo común no superior a <mark class="m-plazo">veinte días</mark>, para presentar alegaciones.</p>
+      <p><b>3.</b> La Sala, o en su caso la Sección, pronunciará la sentencia en el plazo de <mark class="m-plazo">10 días</mark> a partir del día señalado para la vista o deliberación.</p>
     `)
 
     + bloqueTitulo("CAPÍTULO III. De la resolución de los recursos de amparo y sus efectos")
 
     + articulo("Artículo 53 — Fallo de la sentencia de amparo", `
-      <p>La Sala o Sección, al conocer del fondo, pronunciará alguno de estos fallos: a) <u class="m-clave">otorgamiento de amparo</u>; b) <u class="m-clave">denegación de amparo</u>.</p>
+      <p>La Sala o Sección, al conocer del fondo del asunto, pronunciará en su sentencia alguno de estos fallos: a) <u class="m-clave">otorgamiento de amparo</u>; b) <u class="m-clave">denegación de amparo</u>.</p>
+    `, true)
+
+    + articulo("Artículo 55.1 — Contenido de la sentencia estimatoria", `
+      <p><b>1.</b> La sentencia que otorgue el amparo contendrá alguno de estos pronunciamientos: a) <mark class="m-destacable">declaración de nulidad</mark> de la decisión, acto o resolución impugnados; b) <mark class="m-destacable">reconocimiento del derecho o libertad</mark> pública; c) <mark class="m-destacable">restablecimiento</mark> del recurrente en la integridad de su derecho o libertad.</p>
     `)
 
     + articulo("Artículo 56.1, 56.4 y 56.6 — Suspensión y medidas cautelares", `
-      <p><b>1.</b> La interposición del recurso de amparo <u class="m-clave">no suspende</u> los efectos del acto o sentencia impugnados.</p>
-      <p><b>4.</b> La suspensión u otra medida cautelar puede pedirse en cualquier momento antes de la sentencia, con audiencia de las partes y del Ministerio Fiscal, por plazo común no superior a <mark class="m-plazo">tres días</mark>.</p>
-      <p><b>6.</b> En supuestos de urgencia excepcional, puede impugnarse en <mark class="m-plazo">cinco días</mark> desde su notificación; se resuelve por auto no susceptible de recurso.</p>
+      <p><b>1.</b> La interposición del recurso de amparo <u class="m-clave">no suspenderá</u> los efectos del acto o sentencia impugnados.</p>
+      <p><b>4.</b> La suspensión u otra medida cautelar podrá pedirse en cualquier momento antes de la sentencia. El incidente se sustanciará con audiencia de las partes y del Ministerio Fiscal, por plazo común no superior a <mark class="m-plazo">tres días</mark>.</p>
+      <p><b>6.</b> En supuestos de urgencia excepcional, la suspensión y medidas cautelares podrán adoptarse en la propia resolución de admisión a trámite; podrá impugnarse en <mark class="m-plazo">cinco días</mark> desde su notificación; se resolverá por auto no susceptible de recurso.</p>
     `)
 
-    + articulo("Artículo 57 — Modificación de la suspensión", `
-      <p>La suspensión o su denegación puede ser <mark class="m-accion">modificada</mark> durante el juicio de amparo, de oficio o a instancia de parte, por circunstancias sobrevenidas o no conocidas al tiempo de sustanciarse el incidente de suspensión.</p>
-    `)
-
-    + articulo("Artículo 58 — Indemnización por la suspensión", `
-      <p><b>1.</b> Son competentes para resolver sobre las peticiones de indemnización los <mark class="m-autoridad">Jueces o Tribunales</mark>, a cuya disposición se ponen las fianzas constituidas.</p>
-      <p><b>2.</b> Las peticiones se sustancian por el trámite de los incidentes y deben presentarse dentro del plazo de <mark class="m-plazo">un año</mark> a partir de la publicación de la sentencia del TC.</p>
+    + articulo("Artículo 58.1 y 58.2 — Indemnización por la suspensión", `
+      <p><b>1.</b> Serán competentes para resolver sobre las peticiones de indemnización los <mark class="m-autoridad">Jueces o Tribunales</mark>, a cuya disposición se pondrán las fianzas constituidas.</p>
+      <p><b>2.</b> Las peticiones se sustanciarán por el trámite de los incidentes y deberán presentarse dentro del plazo de <mark class="m-plazo">un año</mark> a partir de la publicación de la sentencia del TC.</p>
     `)
 
     + bloqueTitulo("7.2 — LEY ORGÁNICA 1/1982, DE PROTECCIÓN CIVIL DEL DERECHO AL HONOR, INTIMIDAD Y PROPIA IMAGEN — CAPÍTULO I: Disposiciones generales")
 
-    + articulo("Artículo 1 — Objeto y naturaleza del derecho", `
-      <p><b>1.</b> El derecho fundamental al <mark class="m-destacable">honor</mark>, a la <mark class="m-destacable">intimidad personal y familiar</mark> y a la <mark class="m-destacable">propia imagen</mark>, garantizado en el art. 18 CE (derecho al honor, intimidad y propia imagen), será protegido civilmente frente a todo género de intromisiones ilegítimas.</p>
-      <p><b>3.</b> Este derecho es <u class="m-clave">irrenunciable, inalienable e imprescriptible</u>. La renuncia a la protección será nula, salvo los supuestos de autorización o consentimiento del art. 2 (autorización legal o consentimiento expreso del titular).</p>
+    + articulo("Artículo 1.1, 1.2 y 1.3 — Objeto y naturaleza del derecho", `
+      <p><b>1.</b> El derecho fundamental al <mark class="m-destacable">honor</mark>, a la <mark class="m-destacable">intimidad personal y familiar</mark> y a la <mark class="m-destacable">propia imagen</mark>, garantizado en el art. 18 CE, será protegido civilmente frente a todo género de intromisiones ilegítimas.</p>
+      <p><b>2.</b> El carácter delictivo de la intromisión no impedirá el recurso al procedimiento de tutela judicial del art. 9 de esta Ley. En todo caso, serán aplicables los criterios de esta Ley para la responsabilidad civil derivada de delito.</p>
+      <p><b>3.</b> Este derecho es <u class="m-clave">irrenunciable, inalienable e imprescriptible</u>. La renuncia a la protección será nula, sin perjuicio de los supuestos de autorización o consentimiento del art. 2.</p>
     `, true)
 
-    + articulo("Artículo 2.2 y 2.3 — Autorización y consentimiento", `
-      <p><b>2.</b> No hay intromisión ilegítima cuando esté expresamente <mark class="m-destacable">autorizada por Ley</mark> o cuando el titular haya dado su <mark class="m-destacable">consentimiento expreso</mark>; tampoco cuando, por el art. 71 CE (inviolabilidad de Diputados y Senadores por las opiniones manifestadas en el ejercicio de sus funciones), se trate de opiniones de Diputados o Senadores en el ejercicio de sus funciones.</p>
-      <p><b>3.</b> El consentimiento es <mark class="m-accion">revocable</mark> en cualquier momento, pero deben indemnizarse los daños y perjuicios causados, incluidas las expectativas justificadas.</p>
+    + articulo("Artículo 2.1, 2.2 y 2.3 — Delimitación, autorización y consentimiento", `
+      <p><b>1.</b> La protección civil del honor, de la intimidad y de la propia imagen quedará <mark class="m-accion">delimitada</mark> por las <mark class="m-destacable">leyes y los usos sociales</mark>, atendiendo al ámbito que, por sus propios actos, mantenga cada persona reservado para sí o su familia.</p>
+      <p><b>2.</b> No se apreciará intromisión ilegítima cuando esté expresamente <mark class="m-destacable">autorizada por Ley</mark> o cuando el titular haya otorgado su <mark class="m-destacable">consentimiento expreso</mark>; tampoco cuando, por el art. 71 CE (inviolabilidad de Diputados y Senadores por sus opiniones en el ejercicio de sus funciones), se trate de opiniones de Diputados o Senadores en el ejercicio de sus funciones. Iniciado un proceso civil en aplicación de esta Ley, <u class="m-clave">no podrá seguirse</u> contra un Diputado o Senador sin la <mark class="m-destacable">previa autorización</mark> del Congreso o del Senado, tramitada por el procedimiento previsto para los <mark class="m-personalizado">suplicatorios</mark>.</p>
+      <p><b>3.</b> El consentimiento será <mark class="m-accion">revocable</mark> en cualquier momento, pero habrán de indemnizarse los daños y perjuicios causados, incluidas las expectativas justificadas.</p>
     `)
 
-    + articulo("Artículo 3 — Consentimiento de menores e incapaces", `
-      <p><b>1.</b> El consentimiento de los menores e incapaces debe prestarse por ellos mismos si sus <mark class="m-destacable">condiciones de madurez</mark> lo permiten, según la legislación civil.</p>
-      <p><b>2.</b> En los demás casos, el consentimiento se otorga por escrito por el <mark class="m-autoridad">representante legal</mark>, que debe ponerlo en conocimiento previo del <mark class="m-autoridad">Ministerio Fiscal</mark>. Si en <mark class="m-plazo">8 días</mark> el Fiscal se opone, resuelve el juez.</p>
-    `)
+    + articulo("Artículo 3.1 y 3.2 — Consentimiento de menores e incapaces", `
+      <p><b>1.</b> El consentimiento de los menores e incapaces deberá prestarse por ellos mismos si sus <mark class="m-destacable">condiciones de madurez</mark> lo permiten, de acuerdo con la legislación civil.</p>
+      <p><b>2.</b> En los demás casos, el consentimiento se otorgará por escrito por el <mark class="m-autoridad">representante legal</mark>, quien deberá ponerlo en conocimiento previo del <mark class="m-autoridad">Ministerio Fiscal</mark>. Si en el plazo de <mark class="m-plazo">ocho días</mark> el Fiscal se opusiere, resolverá el Juez.</p>
+    `, true)
 
-    + articulo("Artículo 4.1 y 4.3 — Legitimación tras el fallecimiento", `
-      <p><b>1.</b> El ejercicio de las acciones de protección civil del honor, intimidad o imagen de una persona fallecida corresponde a quien ésta haya designado en su testamento (puede ser persona jurídica).</p>
-      <p><b>3.</b> A falta de designación o representante, corresponde al <mark class="m-autoridad">Ministerio Fiscal</mark>, de oficio o a instancia de interesado, siempre que no hayan transcurrido más de <mark class="m-plazo">ochenta años</mark> desde el fallecimiento.</p>
-    `)
-
-    + trampa("Trampa de examen — orden de legitimación tras el fallecimiento", "Orden: 1º persona designada en testamento (art. 4.1) → 2º cónyuge, descendientes, ascendientes y hermanos vivos (art. 4.2) → 3º Ministerio Fiscal, límite de 80 años desde el fallecimiento (art. 4.3). No confundir con el plazo de caducidad general de acciones del art. 9.5 (4 años).")
+    + articulo("Artículo 4.1, 4.2, 4.3 y 4.4 — Legitimación tras el fallecimiento y víctimas de delito", `
+      <p><b>1.</b> El ejercicio de las acciones de protección civil del honor, intimidad o imagen de una persona fallecida corresponde a quien ésta haya designado a tal efecto en su testamento. La designación puede recaer en una <mark class="m-destacable">persona jurídica</mark>.</p>
+      <p><b>2.</b> No existiendo designación, estarán legitimados el <mark class="m-autoridad">cónyuge</mark>, los descendientes, ascendientes y hermanos de la persona afectada que viviesen al tiempo del fallecimiento.</p>
+      <p><b>3.</b> A falta de todos ellos, corresponderá al <mark class="m-autoridad">Ministerio Fiscal</mark>, de oficio o a instancia de interesado, siempre que no hayan transcurrido más de <mark class="m-plazo">ochenta años</mark> desde el fallecimiento. Igual plazo si actúa una persona jurídica designada en testamento.</p>
+      <p><b>4.</b> En los supuestos de intromisión ilegítima en los derechos de las <mark class="m-destacable">víctimas de un delito</mark> (art. 7.8 — utilización del delito por el condenado para notoriedad o provecho económico), estará legitimado el <mark class="m-autoridad">ofendido o perjudicado</mark> por el delito, haya o no ejercido la acción penal o civil, y en todo caso también el <mark class="m-autoridad">Ministerio Fiscal</mark>.</p>
+    `, true)
 
     + bloqueTitulo("CAPÍTULO II. De la protección civil del honor, de la intimidad y de la propia imagen")
 
     + articulo("Artículo 7 — Intromisiones ilegítimas", `
-      <p>Tienen la consideración de intromisiones ilegítimas en el ámbito del art. 2:</p>
-      <p>1. Emplazar aparatos de escucha, filmación o dispositivos ópticos aptos para grabar la vida íntima. 2. Utilizar dichos aparatos para conocer la vida íntima, manifestaciones o cartas privadas. 3. <mark class="m-accion">Divulgar</mark> hechos de la vida privada que afecten a la <mark class="m-destacable">reputación</mark>. 4. Revelar datos privados conocidos por actividad profesional u oficial. 5. Captar, reproducir o publicar la imagen de una persona en su vida privada. 6. <mark class="m-accion">Utilizar</mark> el nombre, voz o imagen con fines <mark class="m-destacable">publicitarios o comerciales</mark>. 7. Imputar hechos o juicios de valor que lesionen la dignidad. 8. Utilizar el delito por el condenado para notoriedad o provecho económico.</p>
-    `)
+      <p>Tendrán la consideración de <mark class="m-destacable">intromisiones ilegítimas</mark> en el ámbito del art. 2 de esta Ley:</p>
+      <p>1. El emplazamiento de aparatos de escucha, filmación o dispositivos ópticos aptos para grabar la vida íntima. 2. La utilización de dichos aparatos para conocer la vida íntima, manifestaciones o cartas privadas, así como su grabación, registro o reproducción. 3. La <mark class="m-accion">divulgación</mark> de hechos de la vida privada que afecten a la <mark class="m-destacable">reputación y buen nombre</mark>, o la revelación de cartas, memorias o escritos íntimos. 4. La revelación de datos privados conocidos por actividad profesional u oficial. 5. La captación, reproducción o publicación de la imagen de una persona en su vida privada (salvo art. 8.2). 6. La <mark class="m-accion">utilización</mark> del nombre, voz o imagen con fines <mark class="m-destacable">publicitarios, comerciales</mark> o análogos. 7. La imputación de hechos o juicios de valor que lesionen la dignidad de otra persona. 8. La utilización del delito por el condenado en sentencia firme para notoriedad pública o provecho económico, o la divulgación de datos falsos que menoscaben la dignidad de las víctimas.</p>
+    `, true)
 
-    + articulo("Artículo 8 — Excepciones: intromisiones no ilegítimas", `
-      <p><b>1.</b> No son intromisiones ilegítimas las actuaciones autorizadas por <mark class="m-autoridad">Autoridad competente</mark>, ni cuando predomine un <mark class="m-destacable">interés histórico, científico o cultural</mark> relevante.</p>
-      <p><b>2.</b> El derecho a la propia imagen no impide: a) captación de personas con <mark class="m-destacable">cargo público o proyección pública</mark> en acto público; b) la utilización de la caricatura; c) información gráfica de un suceso público con aparición meramente accesoria. Las excepciones a) y b) no se aplican a quienes requieran el <u class="m-clave">anonimato</u>.</p>
+    + articulo("Artículo 8.1 y 8.2 — Excepciones: intromisiones no ilegítimas", `
+      <p><b>1.</b> No se reputarán, con carácter general, intromisiones ilegítimas las actuaciones autorizadas o acordadas por la <mark class="m-autoridad">Autoridad competente</mark> de acuerdo con la ley, ni cuando predomine un <mark class="m-destacable">interés histórico, científico o cultural</mark> relevante.</p>
+      <p><b>2.</b> El derecho a la propia imagen no impedirá: a) su captación o publicación de personas con <mark class="m-destacable">cargo público o proyección pública</mark> captada en acto público o lugar abierto al público; b) la utilización de la caricatura según el uso social; c) información gráfica de un suceso público en que la persona aparezca de forma meramente accesoria. Estas excepciones no se aplican a quienes desempeñen funciones que requieran el <u class="m-clave">anonimato</u>.</p>
     `)
 
     + articulo("Artículo 9.1, 9.2, 9.3 y 9.5 — Tutela judicial e indemnización", `
-      <p><b>1.</b> La tutela judicial frente a intromisiones ilegítimas se recaba por las vías procesales ordinarias o por el procedimiento del art. 53.2 CE; también cabe el <mark class="m-destacable">recurso de amparo</mark> ante el TC.</p>
-      <p><b>3.</b> La existencia de perjuicio <mark class="m-accion">se presume</mark> siempre que se acredite la intromisión ilegítima. La indemnización se extiende al <mark class="m-destacable">daño moral</mark>.</p>
-      <p><b>5.</b> Las acciones de protección frente a intromisiones ilegítimas <mark class="m-accion">caducan</mark> transcurridos <mark class="m-plazo">cuatro años</mark> desde que el legitimado pudo ejercitarlas.</p>
-    `, true)
-
-    + trampa("Trampa de examen", "No confundir plazos de la LO 1/1982: 8 días (oposición del Fiscal al consentimiento de menores, art. 3.2), 80 años (legitimación del Fiscal tras el fallecimiento, art. 4.3) y 4 años (caducidad de las acciones de protección, art. 9.5).")
+      <p><b>1.</b> La tutela judicial frente a intromisiones ilegítimas podrá recabarse por las vías procesales ordinarias o por el procedimiento del art. 53.2 CE. También podrá acudirse al <mark class="m-destacable">recurso de amparo</mark> ante el TC.</p>
+      <p><b>2.</b> La tutela judicial comprenderá: a) <mark class="m-accion">restablecimiento</mark> del perjudicado (declaración de la intromisión, cese inmediato, reposición; en el honor, incluye la publicación de la sentencia condenatoria); b) prevenir intromisiones inminentes o ulteriores; c) indemnización de daños y perjuicios; d) apropiación por el perjudicado del lucro obtenido con la intromisión.</p>
+      <p><b>3.</b> La existencia de perjuicio <mark class="m-accion">se presumirá</mark> siempre que se acredite la intromisión ilegítima. La indemnización se extenderá al <mark class="m-destacable">daño moral</mark>, valorado según las circunstancias y la gravedad de la lesión.</p>
+      <p><b>5.</b> Las acciones de protección frente a intromisiones ilegítimas <mark class="m-accion">caducarán</mark> transcurridos <mark class="m-plazo">cuatro años</mark> desde que el legitimado pudo ejercitarlas.</p>
+    `)
 
     + recuerda([
       "LOTC: En ningún caso se podrá promover cuestión de jurisdicción o competencia al Tribunal Constitucional.",
