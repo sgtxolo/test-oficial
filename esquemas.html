@@ -677,6 +677,15 @@ const esquemas = temasPrograma.map((tema, i) => ({
 
     + bloqueTitulo("TÍTULO II — De la planta y organización territorial")
 
+    + articulo("Artículo 26 — Los Tribunales", `
+      <p>Los Tribunales a los que se atribuye el ejercicio de la potestad jurisdiccional son: a) <mark class="m-autoridad">Jueces y juezas de paz</mark>; b) <mark class="m-autoridad">Tribunales de Instancia</mark>; c) <mark class="m-autoridad">Audiencias Provinciales</mark>; d) <mark class="m-autoridad">Tribunales Superiores de Justicia</mark>; e) <mark class="m-autoridad">Tribunal Central de Instancia</mark>; f) <mark class="m-autoridad">Audiencia Nacional</mark>; g) <mark class="m-autoridad">Tribunal Supremo</mark>.</p>
+    `)
+
+    + articulo("Artículo 27.1 y 27.2 — Numeración de Salas y plazas", `
+      <p><b>1.</b> Cuando las <mark class="m-destacable">Salas</mark> de los Tribunales se dividan en <mark class="m-destacable">Secciones</mark> y hubiere dos o más, se <mark class="m-accion">designarán</mark> por <mark class="m-personalizado">numeración ordinal</mark>.</p>
+      <p><b>2.</b> Las <mark class="m-destacable">plazas judiciales</mark> que integran los Tribunales de Instancia y el Tribunal Central de Instancia se designarán por <mark class="m-personalizado">numeración cardinal</mark> dentro de la misma Sección.</p>
+    `)
+
     + articulo("Artículo 29.1 y 29.2 — Planta de los tribunales", `
       <p><b>1.</b> La <mark class="m-destacable">planta de los tribunales</mark> se establecerá por <mark class="m-autoridad">ley</mark>. Será <mark class="m-accion">revisada</mark>, al menos, cada <mark class="m-plazo">cinco años</mark>, previo informe del <mark class="m-autoridad">Consejo General del Poder Judicial</mark>.</p>
       <p><b>2.</b> La revisión podrá ser <mark class="m-accion">instada</mark> por las <mark class="m-autoridad">Comunidades Autónomas</mark> con competencia en materia de Justicia.</p>
@@ -686,12 +695,18 @@ const esquemas = temasPrograma.map((tema, i) => ({
       <p>El <mark class="m-autoridad">Estado</mark> se <mark class="m-accion">organiza territorialmente</mark>, a efectos judiciales, en <mark class="m-destacable">Municipios, Partidos, Provincias y Comunidades Autónomas</mark>.</p>
     `)
 
-    + articulo("Artículo 35 — Demarcación judicial", `
-      <p><b>1.</b> La <mark class="m-destacable">demarcación judicial</mark> se establecerá por <mark class="m-autoridad">ley</mark> o, en los casos previstos, por <mark class="m-destacable">real decreto</mark>.</p>
-      <p><b>2 y 3.</b> Las <mark class="m-autoridad">CC.AA.</mark> remitirán al <mark class="m-autoridad">Gobierno</mark> una <mark class="m-personalizado">propuesta</mark>; el <mark class="m-autoridad">Ministerio de Justicia</mark> redactará la disposición normativa, que será <mark class="m-accion">informada</mark> por el <mark class="m-autoridad">CGPJ</mark> en el plazo de <mark class="m-plazo">dos meses</mark>.</p>
-      <p><b>5.</b> Será <mark class="m-accion">revisada</mark> cada <mark class="m-plazo">cinco años</mark> o antes si las circunstancias lo aconsejan.</p>
-      <p><b>6.</b> Las CC.AA., previo informe del CGPJ, determinarán por ley la <mark class="m-destacable">capitalidad de los partidos judiciales</mark>.</p>
+    + articulo("Artículo 32.1 y 32.2 — El partido judicial", `
+      <p><b>1.</b> El <mark class="m-destacable">partido</mark> es la <mark class="m-personalizado">unidad territorial</mark> integrada por uno o más <mark class="m-destacable">municipios limítrofes</mark>, pertenecientes a una misma provincia.</p>
+      <p><b>2.</b> La <mark class="m-destacable">modificación</mark> de partidos se realizará en función del número de asuntos, características de la población, medios de comunicación y comarcas naturales.</p>
     `)
+
+    + articulo("Artículo 35.1, 35.2, 35.3, 35.5 y 35.6 — Demarcación judicial", `
+      <p><b>1.</b> La <mark class="m-destacable">demarcación judicial</mark> se establecerá por <mark class="m-autoridad">ley</mark> o, en los casos previstos, por <mark class="m-destacable">real decreto</mark>.</p>
+      <p><b>2.</b> Las <mark class="m-autoridad">Comunidades Autónomas</mark> participarán en la organización de la demarcación judicial de sus territorios, remitiendo al <mark class="m-autoridad">Gobierno</mark>, a solicitud de éste, una <mark class="m-personalizado">propuesta</mark> en la que fijarán los partidos judiciales.</p>
+      <p><b>3.</b> El <mark class="m-autoridad">Ministerio de Justicia</mark>, vistas las propuestas de las CC.AA., redactará la disposición normativa, que será <mark class="m-accion">informada</mark> por el <mark class="m-autoridad">CGPJ</mark> en el plazo de <mark class="m-plazo">dos meses</mark>.</p>
+      <p><b>5.</b> Será <mark class="m-accion">revisada</mark> cada <mark class="m-plazo">cinco años</mark> o antes si las circunstancias lo aconsejan, mediante ley.</p>
+      <p><b>6.</b> Las CC.AA., previo informe del CGPJ, determinarán por ley la <mark class="m-destacable">capitalidad de los partidos judiciales</mark>.</p>
+    `, true)
 
     + articulo("Artículo 36 — Creación de Secciones", `
       <p>La <mark class="m-destacable">creación</mark> de las Secciones y de plazas judiciales, siempre que <u class="m-clave">no suponga alteración</u> de la demarcación judicial, corresponderá al <mark class="m-autoridad">Gobierno</mark>, oídos preceptivamente la <mark class="m-autoridad">comunidad autónoma</mark> afectada y el <mark class="m-autoridad">CGPJ</mark>.</p>
@@ -714,6 +729,10 @@ const esquemas = temasPrograma.map((tema, i) => ({
       <p>Se resolverán por una <mark class="m-destacable">Sala especial del Tribunal Supremo</mark>, presidida por el <mark class="m-autoridad">Presidente</mark> y compuesta por <mark class="m-plazo">dos Magistrados</mark>, uno por cada orden jurisdiccional en conflicto, designados <mark class="m-plazo">anualmente</mark> por la Sala de Gobierno.</p>
     `)
 
+    + articulo("Artículo 44 — Preferencia del orden penal", `
+      <p>El orden jurisdiccional <mark class="m-destacable">penal</mark> es <u class="m-clave">siempre preferente</u>. <u class="m-clave">Ningún</u> Juez o Tribunal podrá <mark class="m-accion">plantear conflicto de competencia</mark> a los órganos de dicho orden jurisdiccional.</p>
+    `)
+
     + articulo("Artículo 51 y 52 — Cuestiones de competencia del mismo orden", `
       <p><b>51.1.</b> Las cuestiones de competencia entre Juzgados y Tribunales de un <mark class="m-destacable">mismo orden jurisdiccional</mark> se resolverán por el <mark class="m-autoridad">órgano inmediato superior común</mark>.</p>
       <p><b>52.</b> <u class="m-clave">No podrán suscitarse</u> cuestiones de competencia entre Jueces y Tribunales <mark class="m-personalizado">subordinados entre sí</mark>.</p>
@@ -721,19 +740,69 @@ const esquemas = temasPrograma.map((tema, i) => ({
 
     + bloqueTitulo("TÍTULO IV — De la composición y atribuciones de los órganos jurisdiccionales")
 
+    + articulo("Artículo 53 — El Tribunal Supremo", `
+      <p>El <mark class="m-autoridad">Tribunal Supremo</mark>, con sede en la villa de <mark class="m-destacable">Madrid</mark>, es el <mark class="m-personalizado">órgano jurisdiccional superior</mark> en todos los órdenes, salvo lo dispuesto en materia de <mark class="m-destacable">garantías Constitucionales</mark>. Tendrá jurisdicción en <u class="m-clave">toda España</u> y ningún otro podrá tener el título de <mark class="m-destacable">Supremo</mark>.</p>
+    `)
+
+    + articulo("Artículo 54 — Composición del Tribunal Supremo", `
+      <p>El Tribunal Supremo se compondrá de su <mark class="m-autoridad">Presidente</mark>, de los <mark class="m-autoridad">Presidentes de Sala</mark> y los <mark class="m-autoridad">Magistrados</mark> que determine la ley para cada una de las Salas y, en su caso, Secciones.</p>
+    `)
+
+    + articulo("Artículo 55 — Las Salas del Tribunal Supremo", `
+      <p>El Tribunal Supremo estará integrado por las Salas: <mark class="m-destacable">Primera</mark> (de lo Civil), <mark class="m-destacable">Segunda</mark> (de lo Penal), <mark class="m-destacable">Tercera</mark> (de lo Contencioso-Administrativo), <mark class="m-destacable">Cuarta</mark> (de lo Social) y <mark class="m-destacable">Quinta</mark> (de lo Militar, que se rige por su legislación específica y supletoriamente por esta Ley).</p>
+    `)
+
+    + articulo("Artículo 55 bis — Acciones contra la Familia Real", `
+      <p>Las Salas de lo <mark class="m-destacable">Civil</mark> y de lo <mark class="m-destacable">Penal</mark> del Tribunal Supremo conocerán de la tramitación y enjuiciamiento de las acciones civiles y penales dirigidas contra la <mark class="m-autoridad">Reina consorte</mark> o el consorte de la Reina, la <mark class="m-autoridad">Princesa o Príncipe de Asturias</mark> y su consorte, así como contra el <mark class="m-autoridad">Rey o Reina que hubiere abdicado</mark> y su consorte.</p>
+    `)
+
+    + articulo("Artículo 57.1 (números 1.º, 2.º y 3.º) — Sala de lo Penal del Tribunal Supremo", `
+      <p><b>1.º</b> De los <mark class="m-destacable">recursos de casación, revisión</mark> y otros extraordinarios en materia penal.</p>
+      <p><b>2.º</b> De la <mark class="m-destacable">instrucción y enjuiciamiento</mark> de las causas contra el <mark class="m-autoridad">Presidente del Gobierno</mark>, Presidentes del Congreso y del Senado, Presidente del TS y del CGPJ, Presidente del TC, miembros del Gobierno, Diputados y Senadores, Vocales del CGPJ, Magistrados del TC y del TS, Presidente de la Audiencia Nacional, Fiscal General del Estado y demás altos cargos que señala el precepto.</p>
+      <p><b>3.º</b> De la <mark class="m-destacable">instrucción y enjuiciamiento</mark> de las causas contra Magistrados de la Audiencia Nacional, de un TSJ o de los Fiscales europeos delegados.</p>
+    `)
+
+    + articulo("Artículo 58 — Sala de lo Contencioso-Administrativo del Tribunal Supremo", `
+      <p>Conocerá, en <mark class="m-destacable">única instancia</mark>, de los recursos contra actos y disposiciones del <mark class="m-autoridad">Consejo de Ministros</mark>, de las Comisiones Delegadas del Gobierno y del <mark class="m-autoridad">CGPJ</mark>, y contra actos de órganos competentes del <mark class="m-autoridad">Congreso, Senado, Tribunal Constitucional, Tribunal de Cuentas y Defensor del Pueblo</mark>; también de los <mark class="m-destacable">recursos de casación y revisión</mark>.</p>
+    `)
+
+    + articulo("Artículo 59 — Sala de lo Social del Tribunal Supremo", `
+      <p>Conocerá de los <mark class="m-destacable">recursos de casación y revisión</mark> y otros extraordinarios en materias propias de este orden jurisdiccional.</p>
+    `)
+
+    + articulo("Artículo 60.1 y 60.2 — Recusaciones y cuestiones de competencia en el TS", `
+      <p><b>1.</b> Cada Sala del TS conocerá de las <mark class="m-destacable">recusaciones</mark> que se interpusieren contra sus Magistrados, y de las <mark class="m-destacable">cuestiones de competencia</mark> entre Juzgados o Tribunales del propio orden que no tengan otro superior común.</p>
+      <p><b>2.</b> Los Magistrados recusados <u class="m-clave">no formarán parte</u> de la Sala.</p>
+    `)
+
+    + articulo("Artículo 61 — Sala especial de recusaciones e incidentes del Tribunal Supremo", `
+      <p>Conjunto de reglas que fija los asuntos de que conoce la <mark class="m-destacable">Sala especial del art. 61</mark>: recursos de revisión, incidentes de recusación, demandas de responsabilidad civil e instrucción de causas contra Presidentes de Sala o Magistrados del TS, error judicial y disolución de partidos políticos.</p>
+    `, true)
+
     + articulo("Artículo 61.1 — Sala especial del Tribunal Supremo", `
       <p>Una <mark class="m-destacable">Sala</mark> formada por el <mark class="m-autoridad">Presidente del Tribunal Supremo</mark>, los <mark class="m-autoridad">Presidentes de Sala</mark> y el <mark class="m-destacable">Magistrado más antiguo y el más moderno</mark> de cada una conocerá, entre otros, de los <mark class="m-personalizado">incidentes de recusación</mark> del Presidente, de los Presidentes de Sala o de más de dos Magistrados de una Sala.</p>
-    `)
+    `, true)
 
     + articulo("Artículo 61.3 — Recurso de casación para unificación de doctrina", `
       <p>Una <mark class="m-destacable">Sección</mark>, formada por el <mark class="m-autoridad">Presidente del TS</mark>, el de la Sala de lo Contencioso-Administrativo y <mark class="m-plazo">cinco Magistrados</mark> de esta Sala (los <mark class="m-plazo">dos más antiguos</mark> y los <mark class="m-plazo">tres más modernos</mark>), conocerá del recurso de casación para la <mark class="m-destacable">unificación de doctrina</mark> cuando la contradicción se produzca entre sentencias dictadas por Secciones distintas de dicha Sala.</p>
+    `, true)
+
+    + articulo("Artículo 61 bis.1, 61 bis.4 y 61 bis.5 — Gabinete Técnico del Tribunal Supremo", `
+      <p><b>1.</b> El <mark class="m-destacable">Gabinete Técnico</mark> <mark class="m-accion">asistirá</mark> a la Presidencia y a las Salas en los <mark class="m-personalizado">procesos de admisión</mark> de los asuntos, mediante estudios e informes; también prestará apoyo a las Salas especiales.</p>
+      <p><b>4.</b> En cada <mark class="m-destacable">área</mark> habrá uno o varios <mark class="m-autoridad">Letrados</mark> coordinadores, designados por el <mark class="m-autoridad">Presidente del TS</mark>, preferentemente de la Carrera Judicial, con antigüedad mínima de <mark class="m-plazo">diez años</mark> en su profesión.</p>
+      <p><b>5.</b> El <mark class="m-autoridad">Ministerio de Justicia</mark>, oída la Sala de Gobierno del TS y previo informe del <mark class="m-autoridad">CGPJ</mark> e informe favorable del <mark class="m-autoridad">Ministerio de Hacienda</mark>, determinará la <mark class="m-destacable">composición y plantilla</mark> del Gabinete Técnico; excepcionalmente podrá adscribir temporalmente miembros adicionales con el límite máximo de <mark class="m-plazo">un año</mark>.</p>
     `)
 
-    + articulo("Artículo 61 bis a 61 sexies — Gabinete Técnico del Tribunal Supremo", `
-      <p>El <mark class="m-destacable">Gabinete Técnico</mark> <mark class="m-accion">asistirá</mark> a la Presidencia y a las Salas en los <mark class="m-personalizado">procesos de admisión</mark> y mediante estudios e informes. Estará integrado por un <mark class="m-autoridad">Director</mark> y <mark class="m-autoridad">Letrados</mark> (miembros de la Carrera Judicial u otros juristas). Habrá tantas <mark class="m-destacable">áreas</mark> como órdenes jurisdiccionales, cada una con una sección de <mark class="m-personalizado">Admisión</mark> y otra de <mark class="m-personalizado">Estudios e Informes</mark>; en la Sala de lo Militar podrá haber un Letrado del Gabinete.</p>
-      <p>La <mark class="m-destacable">composición y plantilla</mark> las determinará el <mark class="m-autoridad">Ministerio de Justicia</mark>, oída la Sala de Gobierno del TS, previo informe del <mark class="m-autoridad">CGPJ</mark> e informe favorable del <mark class="m-autoridad">Ministerio de Hacienda</mark>; las adscripciones temporales tendrán un límite máximo de <mark class="m-plazo">un año</mark>.</p>
-      <p>La <mark class="m-destacable">superior dirección</mark> corresponde al <mark class="m-autoridad">Presidente del TS</mark>. El <mark class="m-autoridad">Pleno del CGPJ</mark> nombra al <mark class="m-autoridad">Director del Gabinete Técnico</mark> a <mark class="m-destacable">propuesta vinculante</mark> del Presidente del TS.</p>
-      <p>Los <mark class="m-autoridad">Letrados</mark> serán nombrados por <mark class="m-plazo">un año</mark>, pudiendo ser <mark class="m-accion">prorrogados</mark> por el Presidente del TS por periodos de <mark class="m-plazo">tres años</mark>. La <mark class="m-destacable">Sala de Gobierno</mark>, a propuesta del Presidente del TS, aprobará las <mark class="m-personalizado">normas de funcionamiento</mark> del Gabinete Técnico.</p>
+    + articulo("Artículo 61 quáter.1 — Nombramiento del Director del Gabinete Técnico", `
+      <p><b>1.</b> El <mark class="m-autoridad">Pleno del CGPJ</mark> <mark class="m-accion">nombrará</mark> al <mark class="m-autoridad">Director del Gabinete Técnico</mark>, a <mark class="m-destacable">propuesta vinculante</mark> del Presidente del TS, debiendo acreditar los requisitos para acceder a la categoría de <mark class="m-destacable">Magistrado del Tribunal Supremo</mark>.</p>
+    `)
+
+    + articulo("Artículo 61 quinquies.1 — Nombramiento y prórroga de los Letrados", `
+      <p><b>1.</b> Los <mark class="m-autoridad">Letrados</mark> seleccionados serán <mark class="m-accion">nombrados</mark> por <mark class="m-plazo">un año</mark>. Cumplido ese plazo, el <mark class="m-autoridad">Presidente del TS</mark> podrá <mark class="m-accion">proponer</mark> la <mark class="m-destacable">prórroga</mark> en la plaza; podrán prorrogarse por sucesivos periodos de <mark class="m-plazo">tres años</mark>. Podrán ser <mark class="m-accion">cesados</mark> por el Presidente del TS por incumplimiento grave de sus deberes.</p>
+    `)
+
+    + articulo("CAPÍTULO IV: Artículo 61 sexies — Normas de funcionamiento del Gabinete Técnico", `
+      <p>La <mark class="m-autoridad">Sala de Gobierno</mark>, a <mark class="m-personalizado">propuesta</mark> del Presidente del Tribunal Supremo, <mark class="m-accion">aprobará</mark> las <mark class="m-destacable">normas de funcionamiento</mark> del Gabinete Técnico.</p>
     `)
 
     + articulo("Artículo 69 — Recusaciones en la Audiencia Nacional", `
