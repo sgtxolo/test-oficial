@@ -107,31 +107,53 @@ p{margin:0}
 </div>
 
 <script>
-// ---- PLANTILLA DE EJEMPLO ----
+// ---- ESQUEMAS ----
 // Cada esquema es un objeto: { id, tema, titulo, bloques: [{ titulo, puntos: [{texto, examen:true/false}] }] }
-const esquemas = [
-  {
-    id: "ejemplo-1",
-    tema: "Tema de ejemplo",
-    titulo: "Título del esquema (artículo o punto concreto)",
-    bloques: [
-      {
-        titulo: "Idea general",
-        puntos: [
-          { texto: "Aquí va un punto normal del esquema, breve y directo." },
-          { texto: "Este otro punto se marca como posible pregunta de examen.", examen: true }
-        ]
-      },
-      {
-        titulo: "Artículos / referencias clave",
-        puntos: [
-          { texto: "Art. X — resumen del contenido del artículo." },
-          { texto: "Art. Y — dato muy preguntado en exámenes anteriores.", examen: true }
-        ]
-      }
-    ]
-  }
+// Los 27 temas del programa (Materias Profesionales) están precargados como pendientes.
+// Se van rellenando uno a uno con los artículos/puntos que se vayan indicando.
+const temasPrograma = [
+  "TEMA 1.- DERECHOS HUMANOS",
+  "TEMA 2.- TERRORISMO Y DELINCUENCIA TRANSNACIONAL",
+  "TEMA 3.- TRATADOS DE LA UNIÓN EUROPEA",
+  "TEMA 4.- LA GESTIÓN DE LAS FRONTERAS DE LA UNIÓN EUROPEA",
+  "TEMA 5.- BASES DE DATOS EUROPEAS",
+  "TEMA 6.- ENTRADA Y PERMANENCIA DE EXTRANJEROS EN ESPAÑA",
+  "TEMA 7.- DERECHOS Y DEBERES FUNDAMENTALES EN LA CE Y SU PROTECCIÓN",
+  "TEMA 8.- PODER JUDICIAL",
+  "TEMA 9.- DEFENSA NACIONAL",
+  "TEMA 10.- DERECHO CIVIL",
+  "TEMA 11.- DERECHO ADMINISTRATIVO",
+  "TEMA 12.- GOBIERNO Y ADMINISTRACIÓN",
+  "TEMA 13.- JURISDICCIÓN CONTENCIOSO-ADMINISTRATIVA",
+  "TEMA 14.- EL DEFENSOR DEL PUEBLO",
+  "TEMA 15.- PROTECCIÓN INTEGRAL CONTRA LA VIOLENCIA DE GÉNERO",
+  "TEMA 16.- IGUALDAD EFECTIVA Y ACOSO SEXUAL/POR RAZÓN DE SEXO",
+  "TEMA 17.- RESPONSABILIDAD PENAL DE LOS MENORES",
+  "TEMA 18.- DERECHO PENAL. PARTE GENERAL",
+  "TEMA 19.- DERECHO PENAL. PARTE ESPECIAL",
+  "TEMA 20.- DERECHO PROCESAL PENAL (I)",
+  "TEMA 21.- DERECHO PROCESAL PENAL (II) - NORMAS COMPLEMENTARIAS",
+  "TEMA 22.- SEGURIDAD CIUDADANA",
+  "TEMA 23.- SEGURIDAD PRIVADA",
+  "TEMA 24.- ESTRUCTURAS ORGÁNICAS BÁSICAS",
+  "TEMA 25.- COORDINACIÓN Y COOPERACIÓN POLICIAL",
+  "TEMA 26.- ESTATUTO DEL PERSONAL DE LA GUARDIA CIVIL",
+  "TEMA 27.- DEONTOLOGÍA PROFESIONAL"
 ];
+
+const esquemas = temasPrograma.map((tema, i) => ({
+  id: "tema-" + (i + 1),
+  tema: tema,
+  titulo: "Pendiente de rellenar",
+  bloques: [
+    {
+      titulo: "Sin contenido todavía",
+      puntos: [
+        { texto: "Dicta los artículos y puntos de este tema para generar el esquema rápido." }
+      ]
+    }
+  ]
+}));
 
 function render(){
   const nav = document.getElementById('nav-temas');
