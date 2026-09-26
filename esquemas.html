@@ -1137,6 +1137,595 @@ const esquemas = temasPrograma.map((tema, i) => ({
 })();
 
 
+
+// ---- TEMA 1 (Derechos Humanos) ----
+(function(){
+  const t1 = esquemas[0];
+  t1.titulo = "1.1 a 1.6 — Resumen esquemático";
+  t1.html = leyenda()
+
+    + bloqueTitulo("1.1 — LEY ORGÁNICA 18/2003, DE COOPERACIÓN CON LA CORTE PENAL INTERNACIONAL")
+
+    + articulo("Artículo 1 — Objeto y fuentes jurídicas", `
+      <p><mark class="m-destacable">Objeto</mark>: <mark class="m-accion">regular</mark> las <mark class="m-destacable">relaciones de cooperación</mark> entre el <mark class="m-autoridad">Estado español</mark> y la <mark class="m-autoridad">Corte Penal Internacional</mark>, mediante <mark class="m-personalizado">atribución de competencias</mark> a órganos estatales y <mark class="m-personalizado">establecimiento de procedimientos internos</mark>. Con carácter <u class="m-clave">supletorio</u> se aplicarán las normas orgánicas y procesales de aplicación general.</p>
+    `)
+
+    + articulo("Artículo 2 — De la cooperación pasiva", `
+      <p><mark class="m-autoridad">España</mark> prestará <mark class="m-destacable">plena cooperación</mark> a la Corte, de conformidad con el Estatuto (en especial art. 86 — obligación general de cooperar con la Corte).</p>
+    `)
+
+    + articulo("Artículo 3 — De la cooperación activa", `
+      <p>Los <mark class="m-autoridad">órganos judiciales</mark> y el <mark class="m-autoridad">Ministerio Fiscal</mark> podrán <mark class="m-accion">dirigir</mark>, por conducto del <mark class="m-autoridad">Ministerio de Justicia</mark>, <mark class="m-destacable">solicitudes de cooperación</mark> a la Corte (art. 93.10 del Estatuto — otras formas de asistencia).</p>
+    `)
+
+    + articulo("Artículo 4 — De las autoridades competentes", `
+      <p><mark class="m-destacable">Autoridades competentes</mark> para la aplicación de esta ley: a) el <mark class="m-autoridad">Gobierno</mark>; b) el <mark class="m-autoridad">Ministerio de Justicia</mark>; c) el <mark class="m-autoridad">Ministerio de Asuntos Exteriores</mark>, en los casos previstos y, en todo caso, cuando intervinieran <mark class="m-personalizado">factores de política exterior</mark>; d) el <mark class="m-autoridad">Ministerio de Defensa</mark> y el <mark class="m-autoridad">Ministerio del Interior</mark>, cuando el acto afecte a sus competencias; e) los <mark class="m-autoridad">órganos judiciales de la jurisdicción ordinaria</mark>, en particular la <mark class="m-destacable">Audiencia Nacional</mark>; f) los <mark class="m-autoridad">órganos judiciales militares</mark>, en particular el <mark class="m-destacable">Tribunal Militar Central</mark>; g) el <mark class="m-autoridad">Ministerio Fiscal</mark>.</p>
+    `)
+
+    + trampa("Trampa de examen", "Son 7 autoridades competentes (art. 4) — no confundir con el listado de «órganos de relación y consulta» del art. 6, mucho más reducido (solo el Ministerio de Justicia).")
+
+    + articulo("Artículo 5 — De la representación y defensa procesal", `
+      <p><b>1.</b> La <mark class="m-destacable">representación y defensa</mark> de España ante los órganos de la Corte corresponde a los <mark class="m-autoridad">Abogados del Estado</mark> integrados en la Abogacía General del Estado, según instrucciones conjuntas del <mark class="m-autoridad">Ministerio de Justicia</mark> y el <mark class="m-autoridad">Ministerio de Asuntos Exteriores</mark>.</p>
+      <p><b>2.</b> El <mark class="m-autoridad">Gobierno</mark>, por motivos excepcionales y oído el Abogado General del Estado, podrá <mark class="m-accion">acordar</mark> que una persona especialmente designada actúe como <mark class="m-destacable">agente de España</mark> en un procedimiento.</p>
+    `)
+
+    + articulo("Artículo 6 — De los órganos de relación y consulta con la Corte", `
+      <p><b>1.</b> El <mark class="m-autoridad">Ministerio de Justicia</mark> es el <mark class="m-destacable">único órgano de relación</mark> entre la Corte y los órganos judiciales/Ministerio Fiscal, sin perjuicio de las competencias del Ministerio de Asuntos Exteriores.</p>
+      <p><b>2.</b> El Ministerio de Justicia es también el <mark class="m-destacable">órgano de consulta</mark> con la Corte, debiendo informar previamente de cada consulta al Ministerio de Asuntos Exteriores; si afecta a Interior o Defensa, recabará su informe.</p>
+    `)
+
+    + trampa("Trampa de examen", "Ministerio de Justicia = órgano de relación (art. 6.1) y órgano de consulta (art. 6.2). Son dos funciones distintas del mismo órgano — pregunta clásica.")
+
+    + articulo("Artículo 7.1 — Solicitud para iniciar una investigación por el Fiscal de la Corte", `
+      <p>Corresponde <u class="m-clave">exclusivamente</u> al <mark class="m-autoridad">Gobierno</mark>, mediante <mark class="m-destacable">Acuerdo del Consejo de Ministros</mark>, a propuesta conjunta del <mark class="m-autoridad">Ministro de Asuntos Exteriores</mark> y del <mark class="m-autoridad">Ministro de Justicia</mark>, <mark class="m-accion">decidir</mark> la presentación de la denuncia de una situación ante el Fiscal de la Corte (arts. 13.a y 14 del Estatuto — remisión de situaciones); en su caso, para instar que el Fiscal reconsidere su decisión de no iniciar actuaciones.</p>
+    `, true)
+
+    + articulo("Artículo 8.2 — Requerimiento de inhibición al Fiscal de la Corte", `
+      <p>Cuando conste que se ha ejercido jurisdicción en España, los <mark class="m-autoridad">Ministros de Justicia y de Asuntos Exteriores</mark>, en plazo que <u class="m-clave">no podrá rebasar</u> los <mark class="m-plazo">20 días</mark> desde la notificación del Fiscal, elevarán propuesta conjunta al <mark class="m-autoridad">Consejo de Ministros</mark> para sostener la competencia española o pedir la <mark class="m-destacable">inhibición</mark> al Fiscal de la Corte.</p>
+    `)
+
+    + articulo("Artículo 9 — Impugnación de la competencia de la Corte o de la admisibilidad de la causa", `
+      <p><b>1.</b> Corresponde <u class="m-clave">exclusivamente</u> al <mark class="m-autoridad">Gobierno</mark>, mediante <mark class="m-destacable">Acuerdo del Consejo de Ministros</mark>, a propuesta conjunta de Justicia y Exteriores, <mark class="m-accion">acordar</mark> la impugnación.</p>
+      <p><b>2.</b> La impugnación se formalizará <u class="m-clave">antes del inicio del juicio</mark>, y excepcionalmente después, fundándose en este caso en haberse producido ya <mark class="m-personalizado">cosa juzgada en España</mark>.</p>
+    `)
+
+    + trampa("Trampa de examen", "El procedimiento del art. 9.1 es igual que el del art. 7.1 (denuncia de situación): Acuerdo del Consejo de Ministros a propuesta conjunta de Justicia y Exteriores.")
+
+    + articulo("Artículo 11 — De la detención", `
+      <p>Detenida una persona en cumplimiento de orden de la Corte, se comunicará <mark class="m-personalizado">inmediatamente</mark> al <mark class="m-autoridad">Ministerio de Justicia</mark> y al <mark class="m-autoridad">Juez Central de Instrucción de la Audiencia Nacional</mark>, debiendo ser puesta a su disposición sin demora y, en todo caso, dentro del plazo de <mark class="m-plazo">72 horas</mark> siguientes a la detención.</p>
+    `)
+
+    + trampa("Trampa de examen", "El plazo del art. 11.1 es de 72 horas (no 24 ni 48h) — coincide con el límite constitucional general de detención.")
+
+    + articulo("Artículo 12 — De la libertad provisional", `
+      <p><b>1.</b> El <mark class="m-autoridad">Juez Central de Instrucción</mark> remitirá la solicitud de libertad provisional a la Corte, con indicación del plazo para recomendaciones, que <u class="m-clave">no será inferior</u> a <mark class="m-plazo">20 días</mark>.</p>
+      <p><b>3.</b> Si la Corte no remite la documentación para la entrega, el Juez podrá acordar la <mark class="m-destacable">libertad provisional</mark> y medidas cautelares, que se mantendrán por un tiempo <mark class="m-plazo">máximo de 180 días</mark>.</p>
+      <p><b>4.</b> Si se acuerda, se informará a la <mark class="m-autoridad">Sala de Cuestiones Preliminares</mark>, y posteriormente cuantas veces ésta lo solicite.</p>
+    `)
+
+    + trampa("Trampa de examen — plazos del art. 12", "Mínimo para recomendaciones de la Corte → 20 días. Máximo de mantenimiento de libertad provisional/medidas cautelares sin documentación → 180 días.")
+
+    + articulo("Artículo 14 — Orden de comparecencia de un imputado ante la Corte", `
+      <p>Cuando la Corte dicte una <mark class="m-destacable">orden de comparecencia</mark> (en lugar de detención), el Ministerio de Justicia remitirá la solicitud al <mark class="m-autoridad">Juez de Instrucción del domicilio o residencia</mark> de la persona buscada, que adoptará medidas de aseguramiento <u class="m-clave">con exclusión de las privativas de libertad</u>.</p>
+    `)
+
+    + trampa("Trampa de examen", "Distinguir el órgano competente según el tipo de orden: detención/entrega → Juez Central de Instrucción (Audiencia Nacional); comparecencia → Juez de Instrucción del domicilio o residencia de la persona buscada (juzgado ordinario).")
+
+    + articulo("Artículo 15 — De la entrega a la Corte", `
+      <p><b>1.</b> No habiéndose accedido a la entrega simplificada, se convocará una <mark class="m-destacable">audiencia</mark> en plazo máximo de <mark class="m-plazo">10 días</mark>.</p>
+      <p><b>3.</b> Concluida la vista, el <mark class="m-autoridad">Juzgado Central de Instrucción</mark> resolverá sobre la entrega por medio de <mark class="m-destacable">auto</mark>, en el plazo de <mark class="m-plazo">3 días</mark>.</p>
+      <p><b>5 y 6.</b> Si es <mark class="m-personalizado">estimatoria y firme</mark>, se notificará al Ministerio de Justicia, que dará traslado a la Corte; si es <mark class="m-personalizado">denegatoria y firme</mark>, se pondrá urgentemente en libertad al detenido.</p>
+    `)
+
+    + trampa("Trampa de examen — plazos del art. 15", "Audiencia → 10 días. Resolución mediante auto → 3 días desde la vista.")
+
+    + articulo("Artículo 17 — De los recursos", `
+      <p><b>1.</b> Contra resoluciones del Juez Central de Instrucción sobre la situación personal del reclamado cabe <mark class="m-destacable">recurso de apelación</mark> ante la <mark class="m-autoridad">Sala de lo Penal de la Audiencia Nacional</mark>, resuelto por auto en plazo de <mark class="m-plazo">5 días</mark>.</p>
+      <p><b>2.</b> Contra el auto sobre la entrega cabe apelación ante la misma Sala; solo cabrán alegaciones sobre <mark class="m-personalizado">quebrantamiento de normas y garantías procesales</mark>.</p>
+    `)
+
+    + articulo("Artículo 22 — De la ejecución de las penas en España", `
+      <p><b>22.1.</b> El Ministerio de Justicia transmitirá al <mark class="m-autoridad">Ministerio del Interior</mark> la información para el traslado, comunicándose la llegada del recluso al <mark class="m-autoridad">juez de vigilancia penitenciaria</mark> en plazo de <mark class="m-plazo">24 horas</mark>.</p>
+      <p><b>22.6.</b> En caso de <mark class="m-destacable">evasión del condenado</mark>, el Ministerio de Justicia informará con urgencia al <mark class="m-autoridad">Secretario de la Corte</mark>.</p>
+      <p><b>22.7.</b> Si la petición se refiere a multa u orden de decomiso, se transmitirá al <mark class="m-autoridad">Fiscal General del Estado</mark> para que inste la ejecución.</p>
+    `)
+
+    + trampa("Trampa de examen", "El plazo de comunicación de la llegada del recluso al juez de vigilancia penitenciaria es de 24 horas — no confundir con las 72h de detención (art. 11) ni los 20/180 días de libertad provisional (art. 12).")
+
+    + articulo("Artículo 25 — Celebración del juicio y otras actuaciones procesales en España", `
+      <p>Si la Corte propusiere celebrar el juicio en España, el <mark class="m-autoridad">Ministerio de Justicia</mark>, previa consulta con Exteriores e Interior, <mark class="m-accion">comunicará</mark> a la Corte la decisión. Los aspectos no jurisdiccionales se someterán al <mark class="m-destacable">acuerdo específico</mark> que se celebre con la Corte.</p>
+    `, true)
+
+    + recuerda([
+      "(1.1) Único órgano de relación y de consulta con la Corte → Ministerio de Justicia (art. 6).",
+      "(1.1) Denunciar situación (art. 7) e impugnar competencia/admisibilidad (art. 9): misma vía, Acuerdo del Consejo de Ministros a propuesta conjunta de Justicia y Exteriores.",
+      "(1.1) Plazos clave: detención 72h (art. 11) · libertad provisional ≥20 días y máximo 180 días de medidas cautelares (art. 12) · audiencia de entrega 10 días / auto 3 días (art. 15) · recurso de apelación 5 días (art. 17) · inhibición Justicia/Exteriores ≤20 días (art. 8.2) · comunicación llegada recluso 24h (art. 22.1).",
+      "(1.1) Órgano competente para detención → Juez Central de Instrucción (Audiencia Nacional); para comparecencia → Juez de Instrucción del domicilio/residencia (art. 14)."
+    ])
+
+    + bloqueTitulo("1.2 — CARTA DE LOS DERECHOS FUNDAMENTALES DE LA UNIÓN EUROPEA")
+
+    + articulo("Ficha de la Carta", `
+      <p>Instrumento de creación: Carta de 7 de diciembre de 2000. <mark class="m-plazo">Adoptada</mark>: 12 de diciembre de 2007, en <mark class="m-destacable">Estrasburgo</mark>. Órgano emisor: <mark class="m-autoridad">Parlamento Europeo, Consejo y Comisión</mark>. Publicación: DOCE de 14 de diciembre de 2007. Se estructura en <mark class="m-plazo">7 Títulos</mark>: I Dignidad, II Libertades, III Igualdad, IV Solidaridad, V Ciudadanía, VI Justicia, VII Disposiciones generales.</p>
+    `)
+
+    + articulo("Artículo 1 — Dignidad humana", `
+      <p>La <mark class="m-destacable">dignidad humana</mark> es <u class="m-clave">inviolable</u>. Será respetada y protegida.</p>
+    `)
+
+    + articulo("Artículo 3.2 — Derecho a la integridad de la persona", `
+      <p>En el marco de la <mark class="m-destacable">medicina y la biología</mark> se respetarán: a) el <mark class="m-personalizado">consentimiento libre e informado</mark>; b) la <mark class="m-destacable">prohibición de las prácticas eugenésicas</mark>; c) la prohibición de que el cuerpo humano sea <mark class="m-personalizado">objeto de lucro</mark>; d) la <mark class="m-destacable">prohibición de la clonación reproductora</mark> de seres humanos.</p>
+    `)
+
+    + articulo("Artículo 8.2 y 8.3 — Protección de datos de carácter personal", `
+      <p><b>2.</b> Los datos se tratarán de modo <mark class="m-personalizado">leal, para fines concretos</mark> y sobre la base del consentimiento. Toda persona tiene <mark class="m-destacable">derecho a acceder a los datos</mark> y a obtener su rectificación.</p>
+      <p><b>3.</b> El respeto de estas normas estará sujeto al control de una <mark class="m-autoridad">autoridad independiente</mark>.</p>
+    `)
+
+    + articulo("Artículo 10 — Libertad de pensamiento, de conciencia y de religión", `
+      <p><b>1.</b> Toda persona tiene derecho a la <mark class="m-destacable">libertad de pensamiento, de conciencia y de religión</mark>, con libertad de manifestarlas individual o colectivamente.</p>
+      <p><b>2.</b> Se reconoce el <mark class="m-destacable">derecho a la objeción de conciencia</mark>, según las leyes nacionales.</p>
+    `)
+
+    + articulo("Artículo 11 — Libertad de expresión y de información", `
+      <p><b>1.</b> Toda persona tiene derecho a la <mark class="m-destacable">libertad de expresión</mark>: opinión y libertad de recibir o comunicar informaciones <u class="m-clave">sin injerencia</u> de autoridades públicas y sin consideración de fronteras.</p>
+      <p><b>2.</b> Se respetan la <mark class="m-personalizado">libertad de los medios de comunicación y su pluralismo</mark>.</p>
+    `)
+
+    + articulo("Artículo 14 — Derecho a la educación", `
+      <p><b>1.</b> Toda persona tiene derecho a la <mark class="m-destacable">educación</mark> y al acceso a la formación profesional.</p>
+      <p><b>2.</b> Incluye la facultad de recibir <mark class="m-personalizado">gratuitamente</mark> la enseñanza obligatoria.</p>
+      <p><b>3.</b> Se respetan la libertad de creación de centros docentes y el derecho de los padres según sus <mark class="m-personalizado">convicciones religiosas, filosóficas y pedagógicas</mark>.</p>
+    `)
+
+    + articulo("Artículo 22 — Diversidad cultural, religiosa y lingüística", `
+      <p>La <mark class="m-autoridad">Unión</mark> respeta la <mark class="m-destacable">diversidad cultural, religiosa y lingüística</mark>.</p>
+    `)
+
+    + articulo("Artículo 23 — Igualdad entre mujeres y hombres", `
+      <p>La <mark class="m-destacable">igualdad entre mujeres y hombres</mark> deberá garantizarse en todos los ámbitos. El principio de igualdad <u class="m-clave">no impide</u> medidas de <mark class="m-personalizado">acción positiva</mark> a favor del sexo menos representado.</p>
+    `)
+
+    + articulo("Artículo 24 — Derechos del niño", `
+      <p><b>1.</b> Los niños tienen derecho a la <mark class="m-destacable">protección y cuidados</mark>; podrán expresar su opinión según su <mark class="m-personalizado">edad y madurez</mark>.</p>
+      <p><b>2.</b> El <mark class="m-destacable">interés superior del niño</mark> será consideración primordial.</p>
+      <p><b>3.</b> Derecho a mantener relaciones con ambos progenitores, <u class="m-clave">salvo</u> que sea contrario a sus intereses.</p>
+    `, true)
+
+    + articulo("Artículo 28 — Derecho de negociación y de acción colectiva", `
+      <p>Trabajadores y empresarios tienen derecho a <mark class="m-destacable">negociar y celebrar convenios colectivos</mark> y, en conflicto, a emprender <mark class="m-personalizado">acciones colectivas, incluida la huelga</mark>.</p>
+    `)
+
+    + articulo("Artículo 31.1 — Condiciones de trabajo justas y equitativas", `
+      <p>Todo trabajador tiene derecho a trabajar en condiciones que respeten su <mark class="m-destacable">salud, seguridad y dignidad</mark>.</p>
+    `)
+
+    + articulo("Artículo 32 — Prohibición del trabajo infantil", `
+      <p>Se prohíbe el <mark class="m-destacable">trabajo infantil</mark>. La edad mínima <u class="m-clave">no podrá ser inferior</u> a la edad de fin de la <mark class="m-personalizado">escolaridad obligatoria</mark>.</p>
+    `)
+
+    + articulo("Artículo 33.1, 35 y 37 — Familia, salud y medio ambiente", `
+      <p><b>33.1.</b> Se garantiza la <mark class="m-destacable">protección de la familia</mark> en los planos jurídico, económico y social.</p>
+      <p><b>35.</b> Toda persona tiene derecho a acceder a la <mark class="m-personalizado">prevención sanitaria</mark>; se garantizará un nivel elevado de <mark class="m-destacable">protección de la salud humana</mark>.</p>
+      <p><b>37.</b> Se garantizará, conforme al <mark class="m-personalizado">principio de desarrollo sostenible</mark>, un nivel elevado de <mark class="m-destacable">protección del medio ambiente</mark>.</p>
+    `)
+
+    + articulo("Artículo 39 — Sufragio activo y pasivo al Parlamento Europeo", `
+      <p><b>1.</b> Todo <mark class="m-autoridad">ciudadano de la Unión</mark> tiene sufragio activo y pasivo en el Estado miembro donde resida.</p>
+      <p><b>2.</b> Los diputados serán elegidos por <mark class="m-destacable">sufragio universal libre, directo y secreto</mark>.</p>
+    `)
+
+    + articulo("Artículo 43 y 44 — Defensor del Pueblo Europeo y derecho de petición", `
+      <p><b>43.</b> Derecho a someter al <mark class="m-autoridad">Defensor del Pueblo Europeo</mark> los casos de <mark class="m-destacable">mala administración</mark>, con <u class="m-clave">exclusión</u> del <mark class="m-autoridad">Tribunal de Justicia de la UE</mark> en funciones jurisdiccionales.</p>
+      <p><b>44.</b> Derecho de <mark class="m-destacable">petición</mark> ante el <mark class="m-autoridad">Parlamento Europeo</mark>.</p>
+    `)
+
+    + articulo("Artículo 45 — Libertad de circulación y de residencia", `
+      <p><b>1.</b> Todo ciudadano de la Unión tiene derecho a <mark class="m-destacable">circular y residir libremente</mark>.</p>
+      <p><b>2.</b> <mark class="m-personalizado">Podrá concederse</mark> a nacionales de terceros países que residan legalmente.</p>
+    `)
+
+    + trampa("Trampa de examen", "El art. 45.1 reconoce el derecho a ciudadanos de la Unión de forma directa; el art. 45.2, para nacionales de terceros países, es una facultad («podrá concederse»), no un derecho automático.")
+
+    + articulo("Artículo 47 — Derecho a la tutela judicial efectiva", `
+      <p>Toda persona tiene derecho a la <mark class="m-destacable">tutela judicial efectiva</mark> y a que su causa sea oída <mark class="m-personalizado">equitativa y públicamente</mark>, dentro de un <mark class="m-plazo">plazo razonable</mark>, por un juez independiente e imparcial. Se prestará <mark class="m-destacable">asistencia jurídica gratuita</mark> a quienes carezcan de recursos.</p>
+    `)
+
+    + articulo("Artículo 51 — Ámbito de aplicación", `
+      <p><b>1.</b> Las disposiciones de la Carta están dirigidas a las <mark class="m-autoridad">instituciones, órganos y organismos de la Unión</mark>, y a los Estados miembros <u class="m-clave">únicamente cuando apliquen el Derecho de la Unión</mark>.</p>
+      <p><b>2.</b> La Carta <u class="m-clave">no amplía</u> el ámbito de aplicación del Derecho de la Unión ni crea <mark class="m-personalizado">nuevas competencias</mark> para la Unión.</p>
+    `, true)
+
+    + trampa("Trampa de examen", "La Carta obliga a los Estados miembros solo cuando aplican Derecho de la Unión, no en cualquier actuación interna — es la pregunta más recurrente sobre este artículo.")
+
+    + recuerda([
+      "(1.2) 7 Títulos de la Carta: I Dignidad · II Libertades · III Igualdad · IV Solidaridad · V Ciudadanía · VI Justicia · VII Disposiciones generales.",
+      "(1.2) Órgano emisor: Parlamento Europeo, Consejo y Comisión · adoptada en Estrasburgo el 12/12/2007 · DOCE 14/12/2007.",
+      "(1.2) Ámbito de aplicación (art. 51): la Carta vincula a los Estados miembros solo al aplicar Derecho de la Unión; no crea nuevas competencias para la Unión.",
+      "(1.2) Derecho de petición → Parlamento Europeo (art. 44); mala administración → Defensor del Pueblo Europeo, con exclusión del TJUE en funciones jurisdiccionales (art. 43).",
+      "(1.2) Trabajo infantil: edad mínima no inferior al fin de la escolaridad obligatoria (art. 32)."
+    ])
+
+    + bloqueTitulo("1.3 — ESTATUTO DEL CONSEJO DE EUROPA (Londres, 5 de mayo de 1949)")
+
+    + articulo("Ficha", `
+      <p>Hecho en <mark class="m-destacable">Londres</mark> el 5 de mayo de 1949. España depositó su <mark class="m-destacable">Instrumento de Adhesión</mark> el <mark class="m-plazo">24 de noviembre de 1977</mark>, fecha desde la que es miembro de pleno derecho (art. 4). Órganos (art. 10): <mark class="m-autoridad">Comité de Ministros</mark> y <mark class="m-autoridad">Asamblea Consultiva</mark>, asistidos por la <mark class="m-autoridad">Secretaría</mark>.</p>
+    `)
+
+    + articulo("Artículo 1.a y 1.c — Finalidad del Consejo de Europa", `
+      <p><b>a)</b> La finalidad consiste en <mark class="m-accion">realizar</mark> una <mark class="m-destacable">unión más estrecha</mark> entre sus miembros para salvaguardar y promover los ideales y principios de su <mark class="m-personalizado">patrimonio común</mark>.</p>
+      <p><b>c)</b> La participación de los Miembros <u class="m-clave">no debe alterar</u> su contribución a la obra de las <mark class="m-autoridad">Naciones Unidas</mark>.</p>
+    `)
+
+    + articulo("Artículo 3 — Compromiso de los Miembros", `
+      <p>Cada Miembro reconoce el <mark class="m-destacable">principio del imperio del Derecho</mark> y que cualquier persona bajo su jurisdicción ha de gozar de los <mark class="m-destacable">derechos humanos y libertades fundamentales</mark>, comprometiéndose a <mark class="m-accion">colaborar sincera y activamente</mark>.</p>
+    `)
+
+    + articulo("Artículo 4 — Adhesión de nuevos Miembros", `
+      <p>Cualquier <mark class="m-destacable">Estado europeo</mark> capaz de cumplir el art. 3 podrá ser <mark class="m-accion">invitado</mark> por el <mark class="m-autoridad">Comité de Ministros</mark>. Tendrá la calidad de Miembro tan pronto remita al <mark class="m-autoridad">Secretario General</mark> su instrumento de adhesión.</p>
+    `)
+
+    + articulo("Artículo 7 — Retirada de un Miembro", `
+      <p>Cualquier Miembro podrá <mark class="m-accion">retirarse</mark> notificando su decisión al Secretario General. Efecto: al concluir el <mark class="m-plazo">año financiero en curso</mark> si la notificación fue en los primeros <mark class="m-plazo">nueve meses</mark>, o al finalizar el año financiero siguiente si fue en los <mark class="m-plazo">tres últimos meses</mark>.</p>
+    `)
+
+    + trampa("Trampa de examen", "Retirada en los primeros 9 meses del año financiero → efecto al final de ese mismo año financiero. Retirada en los 3 últimos meses → efecto al final del año financiero siguiente.")
+
+    + articulo("Artículo 10 — Órganos del Consejo de Europa", `
+      <p>Los órganos son: i) el <mark class="m-autoridad">Comité de Ministros</mark>; ii) la <mark class="m-autoridad">Asamblea Consultiva</mark>. Ambos serán asistidos por la <mark class="m-autoridad">Secretaría</mark>.</p>
+    `)
+
+    + articulo("Artículo 14 — Composición del Comité de Ministros", `
+      <p>Cada Miembro tendrá <mark class="m-plazo">un representante</mark> con <mark class="m-plazo">un voto</mark>. Los representantes son los <mark class="m-autoridad">Ministros de Asuntos Exteriores</mark>; cabe designar un suplente si no pueden asistir.</p>
+    `)
+
+    + articulo("Artículo 16 — Competencias del Comité de Ministros", `
+      <p>Sin perjuicio de los poderes de la Asamblea Consultiva, el Comité de Ministros <mark class="m-accion">resolverá</mark>, con carácter <u class="m-clave">obligatorio</u>, cualquier cuestión sobre organización y régimen interior, adoptando los <mark class="m-personalizado">reglamentos financieros y administrativos</mark> necesarios.</p>
+    `)
+
+    + articulo("Artículo 18 — Reglamento interno del Comité de Ministros", `
+      <p>Determinará especialmente: a) el <mark class="m-destacable">quórum</mark>; b) la designación del <mark class="m-autoridad">Presidente</mark> y duración de sus funciones; c) el procedimiento para incluir temas en el orden del día; d) las condiciones para notificar la designación de <mark class="m-personalizado">suplentes</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 21 — Reuniones del Comité de Ministros", `
+      <p>Salvo acuerdo en contrario, sus reuniones se celebrarán: i) a <mark class="m-personalizado">puerta cerrada</mark>; ii) en la <mark class="m-destacable">sede del Consejo</mark>. Se reunirá <u class="m-clave">obligatoriamente</u> antes y al comienzo de las reuniones de la Asamblea Consultiva.</p>
+    `)
+
+    + articulo("Artículo 22 — La Asamblea Consultiva", `
+      <p>Es el <mark class="m-destacable">órgano deliberante</mark> del Consejo de Europa; transmitirá sus conclusiones al Comité de Ministros bajo forma de <mark class="m-personalizado">recomendaciones</mark>.</p>
+    `)
+
+    + articulo("Artículo 28.a y 28.b — Presidencia de la Asamblea Consultiva", `
+      <p><b>a)</b> La Asamblea elegirá a su <mark class="m-autoridad">Presidente</mark>, que permanecerá hasta la siguiente <mark class="m-plazo">reunión ordinaria</mark>.</p>
+      <p><b>b)</b> El Presidente dirigirá las deliberaciones, pero <u class="m-clave">no participará</u> en los debates ni en la votación.</p>
+    `)
+
+    + articulo("Artículo 29 — Mayoría de las resoluciones de la Asamblea", `
+      <p>Todas las resoluciones se tomarán por <mark class="m-destacable">mayoría de dos tercios</mark> de los votos emitidos.</p>
+    `)
+
+    + articulo("Artículo 33 — Sede de las sesiones ordinarias", `
+      <p>Se celebrarán en la <mark class="m-destacable">sede del Consejo</mark>, salvo decisión en contrario de la Asamblea y el Comité de Ministros.</p>
+    `)
+
+    + articulo("Artículo 36.a y 36.b — Composición de la Secretaría", `
+      <p><b>a)</b> Compuesta por un <mark class="m-autoridad">Secretario General</mark>, un <mark class="m-autoridad">Secretario General Adjunto</mark> y el personal necesario.</p>
+      <p><b>b)</b> Ambos serán <mark class="m-accion">nombrados</mark> por la <mark class="m-autoridad">Asamblea Consultiva</mark>, por recomendación del Comité de Ministros.</p>
+    `)
+
+    + trampa("Trampa de examen", "El Secretario General lo nombra la Asamblea Consultiva (no el Comité de Ministros), aunque sea por recomendación de éste — pregunta clásica de confusión de órganos.")
+
+    + articulo("Artículo 39 — Contribuciones", `
+      <p>El Secretario General notificará anualmente la contribución de cada Miembro; se abonarán al Secretario General en plazo máximo de <mark class="m-plazo">seis meses</mark>.</p>
+    `)
+
+    + articulo("Artículo 41.c y 41.d — Enmiendas al Estatuto", `
+      <p><b>c)</b> Los Protocolos de enmienda entrarán en vigor una vez ratificados por las <mark class="m-plazo">dos terceras partes</mark> de los Miembros.</p>
+      <p><b>d)</b> Las enmiendas a los arts. 23-35, 38 y 39 entrarán en vigor tras el acta ad hoc del Secretario, aplicable a partir del final de la <mark class="m-plazo">segunda sesión ordinaria</mark> de la Asamblea.</p>
+    `)
+
+    + articulo("Artículo 42.b — Entrada en vigor del Estatuto", `
+      <p>Estará en vigor una vez depositados <mark class="m-plazo">siete instrumentos</mark> de ratificación. El <mark class="m-autoridad">Gobierno del Reino Unido</mark> notificará a los demás Gobiernos signatarios.</p>
+    `)
+
+    + recuerda([
+      "(1.3) Órganos: Comité de Ministros (representantes = Ministros de Asuntos Exteriores, art. 14) y Asamblea Consultiva (órgano deliberante, art. 22), asistidos por la Secretaría (art. 10).",
+      "(1.3) Secretario General → nombrado por la Asamblea Consultiva, por recomendación del Comité de Ministros (art. 36).",
+      "(1.3) Mayoría de 2/3 de los votos emitidos para todas las resoluciones de la Asamblea Consultiva (art. 29) y para los Protocolos de enmienda, que requieren ratificación de 2/3 de los Miembros (art. 41.c).",
+      "(1.3) Plazos: retirada de un Miembro según los 9 primeros o 3 últimos meses del año financiero (art. 7) · contribuciones exigibles y abonables en 6 meses (art. 39) · Estatuto en vigor con 7 instrumentos de ratificación (art. 42.b).",
+      "(1.3) Reuniones del Comité de Ministros → a puerta cerrada, en la sede del Consejo, salvo acuerdo en contrario (art. 21)."
+    ])
+
+    + bloqueTitulo("1.4 — CONVENIO PARA LA PROTECCIÓN DE LOS DERECHOS HUMANOS Y DE LAS LIBERTADES FUNDAMENTALES (Roma, 4-11-1950)")
+
+    + articulo("Artículo 2 — Derecho a la vida", `
+      <p><b>1.</b> El derecho a la vida está <mark class="m-destacable">protegido por la Ley</mark>. Nadie será privado de ella intencionadamente, salvo en ejecución de una <mark class="m-personalizado">condena que imponga pena capital</mark> dictada por un tribunal.</p>
+      <p><b>2.</b> No se considera infracción la muerte por <mark class="m-destacable">recurso a la fuerza absolutamente necesario</mark> para: a) defensa contra agresión ilegítima; b) detener conforme a derecho o impedir evasión; c) reprimir revuelta o insurrección.</p>
+    `)
+
+    + articulo("Artículo 4 — Prohibición de la esclavitud y del trabajo forzado", `
+      <p><b>1 y 2.</b> Nadie podrá ser sometido a <mark class="m-destacable">esclavitud o servidumbre</mark>, ni ser constreñido a <mark class="m-destacable">trabajo forzado u obligatorio</mark>.</p>
+      <p><b>3.</b> <u class="m-clave">No</u> se considera trabajo forzado: a) el exigido a un preso; b) el servicio militar u objeción de conciencia; c) el exigido por <mark class="m-personalizado">emergencia o calamidad</mark>; d) las obligaciones cívicas normales.</p>
+    `, true)
+
+    + articulo("Artículo 5.1 (d,e,f), 5.2 y 5.3 — Derecho a la libertad y a la seguridad", `
+      <p>Nadie puede ser privado de libertad salvo: d) <mark class="m-destacable">internamiento de un menor</mark> por orden legal de vigilancia educativa; e) internamiento de persona con <mark class="m-destacable">enfermedad contagiosa</mark>, enajenado, alcohólico o vagabundo; f) detención para impedir <mark class="m-destacable">entrada ilegal, expulsión o extradición</mark>.</p>
+      <p><b>2.</b> Debe ser informada, en el <mark class="m-plazo">más breve plazo</mark>, de los motivos de la detención.</p>
+      <p><b>3.</b> Debe ser conducida <u class="m-clave">sin dilación</u> ante un juez, con derecho a ser juzgada en <mark class="m-plazo">plazo razonable</mark> o puesta en libertad.</p>
+    `)
+
+    + trampa("Trampa de examen", "El art. 5.2 exige informar «en el más breve plazo», no «en el momento de la detención» — matiz muy preguntado.")
+
+    + articulo("Artículo 6.1 — Derecho a un proceso equitativo", `
+      <p>Toda persona tiene derecho a que su causa sea oída <mark class="m-personalizado">equitativa, públicamente y en plazo razonable</mark> por un Tribunal independiente e imparcial. El acceso a la Sala puede <mark class="m-accion">prohibirse</mark> a la prensa por razones de moralidad, orden público, seguridad nacional o protección de menores.</p>
+    `, true)
+
+    + articulo("Artículo 13 — Derecho a un recurso efectivo", `
+      <p>Toda persona cuyos derechos hayan sido violados tiene derecho a un <mark class="m-destacable">recurso efectivo</mark> ante una instancia nacional, incluso si la violación fue cometida por <mark class="m-personalizado">funciones oficiales</mark>.</p>
+    `)
+
+    + articulo("Artículo 21 — Condiciones de ejercicio de los Jueces del TEDH", `
+      <p>Los Jueces deberán gozar de <mark class="m-destacable">alta consideración moral</mark>, ser <mark class="m-plazo">menores de 65 años</mark> al recibirse la lista, actuar a título individual y <u class="m-clave">no ejercer</u> actividad incompatible.</p>
+    `)
+
+    + articulo("Artículo 22 — Elección de los Jueces", `
+      <p>Los Jueces serán <mark class="m-accion">elegidos</mark> por la <mark class="m-autoridad">Asamblea Parlamentaria</mark>, por <mark class="m-destacable">mayoría absoluta</mark>, de una lista de <mark class="m-plazo">tres candidatos</mark>.</p>
+    `)
+
+    + articulo("Artículo 23 — Duración del mandato", `
+      <p><b>1.</b> Mandato de <mark class="m-plazo">nueve años</mark>, <u class="m-clave">no reelegibles</u>.</p>
+      <p><b>3.</b> Un juez solo podrá ser relevado si los demás deciden, por <mark class="m-destacable">mayoría de dos tercios</mark>, que ha dejado de reunir las condiciones.</p>
+    `)
+
+    + articulo("Artículo 25 — Pleno del Tribunal", `
+      <p>El Tribunal, en pleno, elegirá por <mark class="m-plazo">tres años</mark> a su <mark class="m-autoridad">Presidente</mark> y Vicepresidentes, constituirá Salas, elegirá al <mark class="m-autoridad">Secretario</mark> y aprobará su reglamento.</p>
+    `)
+
+    + articulo("Artículo 26.1 y 26.5 — Formación del Tribunal", `
+      <p><b>1.</b> El Tribunal actuará en: <mark class="m-plazo">juez único</mark>, <mark class="m-plazo">Comités de 3 jueces</mark>, <mark class="m-plazo">Salas de 7 jueces</mark> y <mark class="m-plazo">Gran Sala de 17 jueces</mark>.</p>
+    `)
+
+    + trampa("Trampa de examen — composición", "Juez único = 1 · comité = 3 · sala = 7 · Gran Sala = 17. Números muy preguntados y fáciles de confundir entre sí.")
+
+    + articulo("Artículo 35.1 — Condiciones de admisibilidad", `
+      <p>Solo cabe recurrir al Tribunal <u class="m-clave">tras agotar</u> las vías internas, y en plazo de <mark class="m-plazo">cuatro meses</mark> desde la resolución interna definitiva.</p>
+    `)
+
+    + articulo("Artículo 43 — Remisión ante la Gran Sala", `
+      <p><b>1.</b> En plazo de <mark class="m-plazo">tres meses</mark> desde la sentencia de una Sala, cualquier parte podrá pedir la remisión a la <mark class="m-autoridad">Gran Sala</mark>.</p>
+      <p><b>2.</b> Un colegio de <mark class="m-plazo">cinco Jueces</mark> aceptará si el asunto plantea una cuestión grave.</p>
+    `)
+
+    + articulo("Artículo 44 — Sentencias definitivas", `
+      <p>La de la Gran Sala es <u class="m-clave">siempre definitiva</u>. La de una Sala lo es cuando: a) las partes no piden remisión; b) no se pide en <mark class="m-plazo">tres meses</mark>; c) el colegio rechaza la demanda.</p>
+    `)
+
+    + articulo("Artículo 46.2 — Fuerza obligatoria y ejecución de las sentencias", `
+      <p>La sentencia definitiva será transmitida al <mark class="m-autoridad">Comité de Ministros</mark>, que <mark class="m-accion">velará</mark> por su ejecución.</p>
+    `, true)
+
+    + trampa("Trampa de examen", "Es el Comité de Ministros (no la Asamblea Consultiva/Parlamentaria) quien supervisa la ejecución de las sentencias — confusión típica de órganos.")
+
+    + articulo("Protocolos 6, 12 y 13 — Pena de muerte y discriminación", `
+      <p><b>Protocolo 6, art. 2:</b> Un Estado podrá prever la <mark class="m-destacable">pena de muerte en tiempo de guerra</mark> o peligro inminente.</p>
+      <p><b>Protocolo 12, art. 5:</b> Prohibición general de la discriminación; entra en vigor tras <mark class="m-plazo">tres meses</mark> desde que <mark class="m-plazo">diez Estados</mark> hayan consentido.</p>
+      <p><b>Protocolo 13, art. 7:</b> Abolición de la pena de muerte en <u class="m-clave">todas las circunstancias</u>; misma regla de entrada en vigor (10 Estados + 3 meses).</p>
+    `)
+
+    + recuerda([
+      "(1.4) Composición del Tribunal en formación: juez único (1) · comité (3) · Sala (7) · Gran Sala (17) (art. 26).",
+      "(1.4) Jueces: elegidos por la Asamblea Parlamentaria (mayoría absoluta, lista de 3 candidatos), mandato de 9 años, no reelegibles, menores de 65 años al presentarse la lista (arts. 21-23).",
+      "(1.4) Ejecución de sentencias definitivas → supervisa el Comité de Ministros (art. 46.2), no la Asamblea.",
+      "(1.4) Plazos clave: agotar vías internas + 4 meses para recurrir al Tribunal (art. 35) · 3 meses para pedir remisión a la Gran Sala tras sentencia de Sala (arts. 43-44).",
+      "(1.4) Protocolo 6 → abolición pena de muerte salvo en guerra; Protocolo 13 → abolición en todas las circunstancias; Protocolo 12 → prohibición general de discriminación."
+    ])
+
+    + bloqueTitulo("1.5 — ESTATUTO DE ROMA DE LA CORTE PENAL INTERNACIONAL")
+
+    + trampa("Aviso", "El artículo 51 (Reglas de Procedimiento y Prueba) no está reproducido en este esquema — el temario salta directamente del artículo 21 a la Parte V (artículo 53), sin incluir los artículos 22 a 52 (Composición y Administración de la Corte).")
+
+    + bloqueTitulo("PARTE II. DE LA COMPETENCIA, LA ADMISIBILIDAD Y EL DERECHO APLICABLE")
+
+    + articulo("Artículo 5 — Crímenes de la competencia de la Corte", `
+      <p>La competencia de la Corte se limitará a los crímenes más graves de trascendencia para la <mark class="m-destacable">comunidad internacional</mark>: a) <mark class="m-destacable">genocidio</mark>; b) <mark class="m-destacable">lesa humanidad</mark>; c) <mark class="m-destacable">crímenes de guerra</mark>; d) <mark class="m-destacable">crimen de agresión</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 6 — Genocidio", `
+      <p>Cualquiera de los actos perpetrados con la <mark class="m-personalizado">intención de destruir</mark> total o parcialmente a un grupo nacional, étnico, racial o religioso: matanza, lesión grave, sometimiento a condiciones de destrucción física, medidas para <mark class="m-destacable">impedir nacimientos</mark>, traslado forzoso de niños.</p>
+    `)
+
+    + articulo("Artículo 7.1 y 7.2 — Crímenes de lesa humanidad", `
+      <p><b>1.</b> Actos cometidos como parte de un <mark class="m-personalizado">ataque generalizado o sistemático</mark> contra población civil: asesinato, exterminio, esclavitud, deportación, tortura, violencia sexual, desaparición forzada, apartheid.</p>
+      <p><b>2.</b> Se define especialmente la <mark class="m-destacable">tortura</mark> (dolor o sufrimientos graves a persona bajo custodia, salvo sanciones lícitas).</p>
+    `)
+
+    + articulo("Artículo 8.1 — Crímenes de guerra", `
+      <p>Competencia respecto de crímenes de guerra en particular cuando se cometan como parte de un <mark class="m-personalizado">plan o política</mark> o de la comisión en <mark class="m-destacable">gran escala</mark>.</p>
+    `)
+
+    + articulo("Artículo 8 bis.1 y 8 bis.2 — Crimen de agresión", `
+      <p><b>1.</b> Comete el crimen quien, pudiendo <mark class="m-personalizado">controlar o dirigir</mark> la acción política o militar de un Estado, planifica un <mark class="m-destacable">acto de agresión</mark> que viole manifiestamente la Carta de la ONU.</p>
+      <p><b>2.</b> «Acto de agresión»: uso de la <mark class="m-destacable">fuerza armada</mark> contra la soberanía, integridad territorial o independencia política de otro Estado.</p>
+    `, true)
+
+    + articulo("Artículo 9.2 — Elementos de los crímenes", `
+      <p>Podrán proponer enmiendas: a) cualquier <mark class="m-autoridad">Estado Parte</mark>; b) los <mark class="m-autoridad">magistrados</mark>, por mayoría absoluta; c) el <mark class="m-autoridad">Fiscal</mark>.</p>
+    `)
+
+    + articulo("Artículo 11.1 — Competencia temporal", `
+      <p>La Corte tendrá competencia <u class="m-clave">únicamente</u> respecto de crímenes cometidos después de la <mark class="m-destacable">entrada en vigor</mark> del Estatuto.</p>
+    `)
+
+    + articulo("Artículo 15.1, 15.3, 15.4 y 15.5 — El Fiscal", `
+      <p><b>1.</b> El Fiscal podrá <mark class="m-accion">iniciar de oficio</mark> una investigación.</p>
+      <p><b>3 y 4.</b> Si hay fundamento suficiente, presentará a la <mark class="m-autoridad">Sala de Cuestiones Preliminares</mark> petición de autorización; si ésta la considera suficiente, <mark class="m-accion">autorizará</mark> el inicio.</p>
+      <p><b>5.</b> La negativa <u class="m-clave">no impedirá</u> presentar ulteriormente otra petición con nuevos hechos.</p>
+    `, true)
+
+    + articulo("Artículo 15 bis.2, 15 bis.4 y 15 bis.8 — Crimen de agresión (remisión de un Estado)", `
+      <p><b>2.</b> Solo se podrá ejercer competencia respecto de agresión <mark class="m-plazo">un año</mark> después de la ratificación por <mark class="m-plazo">treinta Estados Partes</mark>.</p>
+      <p><b>4.</b> Salvo declaración de no aceptación; la retirada será considerada en <mark class="m-plazo">tres años</mark>.</p>
+      <p><b>8.</b> Si el Consejo de Seguridad no decide en <mark class="m-plazo">seis meses</mark>, el Fiscal podrá iniciar la investigación con autorización de la Sala.</p>
+    `)
+
+    + articulo("Artículo 15 ter.2 — Crimen de agresión (remisión del Consejo de Seguridad)", `
+      <p>Solo se podrá ejercer competencia <mark class="m-plazo">un año</mark> después de la ratificación por <mark class="m-plazo">treinta Estados Partes</mark>.</p>
+    `)
+
+    + articulo("Artículo 16 — Suspensión de la investigación o el enjuiciamiento", `
+      <p>Si el <mark class="m-autoridad">Consejo de Seguridad</mark>, con arreglo al Capítulo VII de la Carta de la ONU, pide que no se inicie o se suspenda por un plazo de <mark class="m-plazo">doce meses</mark>, la Corte procederá a la suspensión; renovable en las mismas condiciones.</p>
+    `)
+
+    + articulo("Artículo 18.3 — Decisiones preliminares sobre admisibilidad", `
+      <p>El Fiscal podrá reexaminar la inhibición al cabo de <mark class="m-plazo">seis meses</mark> desde la fecha de inhibición, o ante un cambio significativo de circunstancias.</p>
+    `)
+
+    + articulo("Artículo 19.6 — Impugnación de la competencia o admisibilidad", `
+      <p><u class="m-clave">Antes</u> de confirmados los cargos: <mark class="m-autoridad">Sala de Cuestiones Preliminares</mark>; <u class="m-clave">después</u>: <mark class="m-autoridad">Sala de Primera Instancia</mark>. Recurribles ante la <mark class="m-autoridad">Sala de Apelaciones</mark>.</p>
+    `)
+
+    + articulo("Artículo 21.1 — Derecho aplicable", `
+      <p>La Corte aplicará: a) en primer lugar, el <mark class="m-destacable">Estatuto, Elementos de los crímenes y Reglas de Procedimiento y Prueba</mark>; b) en segundo lugar, tratados y principios del derecho internacional; c) en su defecto, principios generales del derecho.</p>
+    `)
+
+    + bloqueTitulo("PARTE V. DE LA INVESTIGACIÓN Y EL ENJUICIAMIENTO")
+
+    + articulo("Artículo 53.1 y 53.3 — Inicio de una investigación", `
+      <p><b>1.</b> El Fiscal iniciará investigación salvo que no exista <mark class="m-personalizado">fundamento razonable</mark>.</p>
+      <p><b>3.</b> A petición del Estado o del Consejo de Seguridad, la Sala de Cuestiones Preliminares podrá examinar y pedir reconsideración de la decisión de no proceder.</p>
+    `)
+
+    + articulo("Artículo 54.1 — Funciones del Fiscal en la investigación", `
+      <p>El Fiscal <mark class="m-accion">ampliará</mark> la investigación a todos los hechos, tanto <mark class="m-personalizado">incriminantes como eximentes</mark>, y respetará los intereses de <mark class="m-destacable">víctimas y testigos</mark>.</p>
+    `)
+
+    + articulo("Artículo 57.1, 57.2 y 57.3 — Sala de Cuestiones Preliminares", `
+      <p>Podrá: a) dictar providencias a petición del Fiscal; b) dictar órdenes a petición del detenido; c) asegurar la protección de la <mark class="m-personalizado">intimidad de víctimas y testigos</mark>.</p>
+    `)
+
+    + articulo("Artículo 58.1 y 58.7 — Orden de detención o comparecencia", `
+      <p><b>1.</b> La Sala dictará, a solicitud del Fiscal, una <mark class="m-destacable">orden de detención</mark>.</p>
+      <p><b>7.</b> El Fiscal podrá pedir una <mark class="m-destacable">orden de comparecencia</mark> en su lugar, con nombre, fecha, crimen y descripción de los hechos.</p>
+    `)
+
+    + articulo("Artículo 59.2, 59.4 y 59.7 — Detención en el Estado requerido", `
+      <p><b>2.</b> Llevado <u class="m-clave">sin demora</u> ante la autoridad judicial competente.</p>
+      <p><b>4.</b> Se examinará si hay circunstancias urgentes y excepcionales para la <mark class="m-destacable">libertad provisional</mark>.</p>
+      <p><b>7.</b> Ordenada la entrega, el detenido será puesto a disposición de la Corte tan pronto sea posible.</p>
+    `)
+
+    + articulo("Artículo 61.1, 61.2, 61.5, 61.6, 61.7 y 61.9 — Confirmación de los cargos", `
+      <p><b>1.</b> Dentro de un <mark class="m-plazo">plazo razonable</mark>, audiencia para confirmar los cargos.</p>
+      <p><b>5.</b> El Fiscal presentará pruebas suficientes de <mark class="m-personalizado">motivos fundados</mark>.</p>
+      <p><b>7.</b> La Sala: a) confirmará y remitirá a Sala de Primera Instancia; b) no confirmará; c) levantará la audiencia.</p>
+      <p><b>9.</b> Confirmados los cargos, el Fiscal podrá modificarlos con autorización de la Sala.</p>
+    `)
+
+    + bloqueTitulo("PARTE IX. DE LA COOPERACIÓN INTERNACIONAL Y LA ASISTENCIA JUDICIAL")
+
+    + articulo("Artículo 89.3 — Entrega de personas a la Corte", `
+      <p><b>a.</b> El Estado autorizará el <mark class="m-destacable">tránsito</mark> de una persona entregada a la Corte.</p>
+      <p><b>e.</b> En aterrizaje imprevisto, la detención <u class="m-clave">no podrá prolongarse</u> más de <mark class="m-plazo">96 horas</mark>.</p>
+    `)
+
+    + trampa("Trampa de examen", "Las 96 horas del art. 89.3.e) son para el tránsito con aterrizaje imprevisto — no confundir con otros plazos del Estatuto.")
+
+    + articulo("Artículo 91.1, 91.2 y 91.3 — Contenido de la solicitud de detención y entrega", `
+      <p><b>1.</b> Deberá formularse <mark class="m-personalizado">por escrito</mark>.</p>
+      <p><b>2 y 3.</b> Deberá contener información de identificación, copia de la orden de detención y, si ya está condenada, la sentencia y pena pendiente.</p>
+    `)
+
+    + articulo("Artículo 93.4 — Otras formas de cooperación", `
+      <p>El Estado podrá negar asistencia únicamente si afecta a su <mark class="m-destacable">seguridad nacional</mark> (art. 72).</p>
+    `)
+
+    + articulo("Artículo 94.1 — Aplazamiento de la ejecución de una solicitud", `
+      <p>Si interfiere una investigación en curso, el Estado podrá <mark class="m-accion">aplazar</mark> la ejecución por el tiempo acordado con la Corte.</p>
+    `)
+
+    + articulo("Artículo 100.1 y 100.2 — Gastos", `
+      <p>Los <mark class="m-destacable">gastos ordinarios</mark> corren a cargo del Estado requerido, salvo excepciones (viajes de testigos, magistrados...) que corren a cargo de la <mark class="m-autoridad">Corte</mark>.</p>
+    `)
+
+    + articulo("Artículo 101.1 — Principio de la especialidad", `
+      <p>Quien haya sido entregado a la Corte <u class="m-clave">no será procesado</u> por conducta anterior a su entrega, salvo que sea la base del delito por el que fue entregado.</p>
+    `)
+
+    + articulo("Artículo 102 — Términos empleados", `
+      <p>a) <mark class="m-destacable">«Entrega»</mark>: de un Estado a la Corte; b) <mark class="m-destacable">«Extradición»</mark>: de un Estado a otro Estado.</p>
+    `)
+
+    + recuerda([
+      "(1.5) 4 crímenes de competencia de la Corte: genocidio, lesa humanidad, guerra, agresión (art. 5).",
+      "(1.5) Fiscal: puede iniciar de oficio, pero necesita autorización de la Sala de Cuestiones Preliminares para abrir investigación (art. 15); negativa de la Sala no impide reintentarlo con hechos nuevos.",
+      "(1.5) Crimen de agresión: competencia de la Corte solo 1 año después de ratificación/aceptación por 30 Estados Partes (arts. 15 bis/15 ter); Consejo de Seguridad puede suspender investigación/enjuiciamiento por 12 meses, renovables (art. 16).",
+      "(1.5) «Entrega» = Estado→Corte; «extradición» = Estado→Estado (art. 102), distinción muy preguntada.",
+      "(1.5) Plazos: 96h en tránsito con aterrizaje imprevisto (art. 89.3.e) · 6 meses para reexaminar inhibición (art. 18.3) y para determinación del Consejo de Seguridad (art. 15 bis.8) · 3 años para retirar declaración de no aceptación de competencia (art. 15 bis.4).",
+      "(1.5) Confirmación de cargos: antes → Sala de Cuestiones Preliminares; después de confirmados → Sala de Primera Instancia (art. 19.6)."
+    ])
+
+    + bloqueTitulo("1.6 — ACUERDO SOBRE PRIVILEGIOS E INMUNIDADES DE LA CORTE PENAL INTERNACIONAL (Nueva York, 2002)")
+
+    + articulo("Artículo 2 — Personalidad jurídica de la Corte", `
+      <p>La Corte tendrá <mark class="m-destacable">personalidad jurídica internacional</mark> y capacidad para celebrar contratos, adquirir bienes y participar en procedimientos judiciales.</p>
+    `)
+
+    + articulo("Artículo 4 y 6 — Inviolabilidad e inmunidad", `
+      <p><b>4.</b> Los <mark class="m-destacable">locales de la Corte</mark> serán <u class="m-clave">inviolables</u>.</p>
+      <p><b>6.</b> La Corte y sus bienes gozarán de <mark class="m-destacable">inmunidad de jurisdicción</mark> en todas sus formas, salvo renuncia expresa que <u class="m-clave">nunca</u> alcanzará a medidas de ejecución.</p>
+    `)
+
+    + articulo("Artículo 8 — Exención de impuestos y aduanas", `
+      <p>La Corte estará <mark class="m-destacable">exenta de todos los impuestos directos</mark> y de <mark class="m-personalizado">derechos de aduana</mark> para su uso oficial.</p>
+    `)
+
+    + articulo("Artículo 10.1 — Exención de restricciones monetarias", `
+      <p>La Corte <u class="m-clave">no quedará sometida</u> a controles financieros; podrá tener fondos en cualquier moneda y transferirlos libremente, con trato <mark class="m-personalizado">no menos favorable</mark> que a otra organización intergubernamental.</p>
+    `, true)
+
+    + articulo("Artículo 11.2 y 11.5 — Facilidades de comunicaciones", `
+      <p>La correspondencia oficial <u class="m-clave">no</u> será sometida a censura; podrá operar equipos de telecomunicaciones en las frecuencias asignadas.</p>
+    `)
+
+    + articulo("Artículo 15.1, 15.6 y 15.7 — Magistrados, Fiscal y Secretario", `
+      <p><b>1.</b> Gozarán de los mismos privilegios que los <mark class="m-autoridad">jefes de misiones diplomáticas</mark>.</p>
+      <p><b>6.</b> Sus <mark class="m-destacable">sueldos estarán exentos de impuestos</mark>.</p>
+      <p><b>7.</b> Los Estados <u class="m-clave">no estarán obligados</u> a exonerar las pensiones tras el cese.</p>
+    `)
+
+    + articulo("Artículo 26.2 — Renuncia a los privilegios e inmunidades", `
+      <p>a) Magistrado/Fiscal → <mark class="m-destacable">mayoría absoluta de Magistrados</mark>; b) Secretario → la <mark class="m-autoridad">Presidencia</mark>; c) Fiscales Adjuntos → el <mark class="m-autoridad">Fiscal</mark>; d) Secretario Adjunto → el <mark class="m-autoridad">Secretario</mark>.</p>
+    `)
+
+    + articulo("Artículo 28 — Notificación", `
+      <p>El <mark class="m-autoridad">Secretario</mark> comunicará <mark class="m-personalizado">periódicamente</mark> a los Estados Partes los nombres de los sujetos con privilegios y cualquier cambio.</p>
+    `)
+
+    + articulo("Artículo 32 — Arreglo de diferencias", `
+      <p><b>1 y 2.</b> Primero consultas/negociación; si no se resuelve en <mark class="m-plazo">tres meses</mark>, se somete a un <mark class="m-destacable">Tribunal Arbitral</mark>.</p>
+      <p><b>3.</b> Compuesto de <mark class="m-plazo">tres árbitros</mark>: uno por cada parte y el tercero (presidente) elegido por los otros dos.</p>
+      <p><b>5.</b> El laudo será <u class="m-clave">definitivo y obligatorio</u>.</p>
+    `)
+
+    + trampa("Trampa de examen", "Plazo de 3 meses para intentar resolver la diferencia antes de acudir al Tribunal Arbitral, compuesto por 3 árbitros (1+1+presidente elegido por los otros dos).")
+
+    + articulo("Artículo 35.1 y 35.2 — Entrada en vigor", `
+      <p>El Acuerdo entrará en vigor <mark class="m-plazo">treinta días</mark> después del depósito del <mark class="m-destacable">décimo instrumento</mark> de ratificación.</p>
+    `)
+
+    + articulo("Artículo 37 — Denuncia", `
+      <p>Un Estado Parte podrá denunciar el Acuerdo; la denuncia surtirá efecto <mark class="m-plazo">un año</mark> después de la notificación al Secretario General.</p>
+    `)
+
+    + recuerda([
+      "(1.6) La Corte tiene personalidad jurídica internacional propia (art. 2); sus locales y bienes son inviolables e inmunes, salvo renuncia expresa que nunca alcanza a medidas de ejecución (arts. 4 y 6).",
+      "(1.6) Magistrados, Fiscal, Fiscales Adjuntos y Secretario → privilegios equiparados a jefes de misión diplomática (art. 15); sueldos exentos de impuestos, pero no necesariamente las pensiones tras el cese.",
+      "(1.6) Renuncia a privilegios: Magistrados/Fiscal → mayoría absoluta de Magistrados; Secretario → Presidencia (art. 26).",
+      "(1.6) Diferencias entre Estados Partes o con la Corte: primero consultas/negociación; si no se resuelven en 3 meses, Tribunal Arbitral de 3 árbitros, laudo definitivo y obligatorio (art. 32).",
+      "(1.6) Entrada en vigor: 30 días tras el décimo instrumento de ratificación (art. 35). Denuncia: efecto al año de la notificación (art. 37)."
+    ]);
+})();
+
 function render(){
   const nav = document.getElementById('nav-temas');
   const lista = document.getElementById('lista-esquemas');
