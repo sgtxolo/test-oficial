@@ -507,6 +507,26 @@ function renderProgresoTemas(){
 }
 
 function toggleAcc(id){document.getElementById(id).classList.toggle('open')}
+// Checklist manual del día: independiente de fase1/fase2/fase3 (esos siguen siendo la única fuente real de
+// "qué se ha estudiado" para no reintroducir el bug original). Esto es solo una marca de "ya lo hice hoy"
+// para dar sensación de progreso diario en "Estudio para hoy", igual que el viejo check por día, pero
+// aplicada al contenido dinámico (recordatorios reales) en vez de a un plan fijo de fechas.
+function hoyHechoKey(){return 'estudioHoyHecho'}
+function hoyHechoGet(){try{return JSON.parse(localStorage.getItem(hoyHechoKey())||'{}')}catch(e){return{}}}
+function hoyHechoSet(o){localStorage.setItem(hoyHechoKey(), JSON.stringify(o))}
+function hoyHechoEsta(itemId){const o=hoyHechoGet();const d=todayStr();return !!(o[d] && o[d][itemId])}
+function hoyHechoToggle(itemId){
+  const o=hoyHechoGet();
+  const d=todayStr();
+  o[d]=o[d]||{};
+  o[d][itemId]=!o[d][itemId];
+  hoyHechoSet(o);
+  renderEstudioHoy();
+}
+function hoyCheckHTML(itemId){
+  const on=hoyHechoEsta(itemId);
+  return '<div class="ed-check'+(on?' on':'')+'" onclick="hoyHechoToggle(\''+itemId+'\')">'+(on?'<svg stroke-width="3" viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>':'')+'</div>';
+}
 function renderEstudioHoy(){
   const body = document.getElementById('hoy-tbody-wrap');
   const todosPendientes = temasParaRepasar();
@@ -537,30 +557,41 @@ function renderEstudioHoy(){
     if(r.dias>=REPASO_MAX_DIAS) etiquetas.push('urgente, riesgo de olvido');
     if(r.corto) etiquetas.push('tema corto');
     const etiqueta = etiquetas.length ? ' ('+etiquetas.join(' · ')+')' : '';
+    const itemId='repaso-'+temaId;
+    const hecho=hoyHechoEsta(itemId);
     rows += '<tr>'+
-      '<td>Tema '+temaId+' - '+nombre+' <span style="color:var(--texto-gris);font-size:12px">— '+r.dias+' días sin repasar'+etiqueta+'</span></td>'+
-      '<td><div class="prog-fc f'+(faseKey==='fase3'?3:2)+(t.fases[faseKey].completada?' on':'')+'" onclick="pgToggleFase(\''+temaId+'\',\''+faseKey+'\')"></div></td>'+
-      '<td>'+(t.paginas||0)+'</td>'+
-      '<td><span class="prog-edit" onclick="pgEditarTema(\''+temaId+'\',\''+faseKey+'\')">✎</span></td>'+
+      '<td style="width:34px">'+hoyCheckHTML(itemId)+'</td>'+
+      '<td'+(hecho?' style="opacity:.55;text-decoration:line-through"':'')+'>Tema '+temaId+' - '+nombre+' <span style="color:var(--texto-gris);font-size:12px">— '+r.dias+' días sin repasar'+etiqueta+'</span></td>'+
+      '<td style="text-align:right;white-space:nowrap"><div class="prog-fc f'+(faseKey==='fase3'?3:2)+(t.fases[faseKey].completada?' on':'')+'" style="display:inline-flex" onclick="pgToggleFase(\''+temaId+'\',\''+faseKey+'\')"></div> <span class="prog-edit" onclick="pgEditarTema(\''+temaId+'\',\''+faseKey+'\')">✎</span></td>'+
       '</tr>';
   });
   if(testId!==null){
     const nombre = PG_TEMAS[testId] || ('Tema '+testId);
-    rows += '<tr><td>📝 Test de conocimientos sugerido hoy: Tema '+testId+' - '+nombre+'</td><td colspan="3" style="text-align:right"><span class="prog-edit" onclick="goScreen(\'temas\')">Ir a Temas</span></td></tr>';
+    const itemId='test-'+testId;
+    const hecho=hoyHechoEsta(itemId);
+    rows += '<tr><td style="width:34px">'+hoyCheckHTML(itemId)+'</td><td'+(hecho?' style="opacity:.55;text-decoration:line-through"':'')+'>📝 Test de conocimientos sugerido hoy: Tema '+testId+' - '+nombre+'</td><td style="text-align:right"><span class="prog-edit" onclick="goScreen(\'temas\')">Ir a Temas</span></td></tr>';
   }
   if(tocaEstudioIngles){
-    rows += '<tr><td>📘 Hoy toca: Estudio de Inglés</td><td colspan="3" style="text-align:right"><span class="prog-edit" onclick="window.location=\'test-oficial-ingles.html\'">Abrir Inglés</span></td></tr>';
+    const itemId='ingles-estudio';
+    const hecho=hoyHechoEsta(itemId);
+    rows += '<tr><td style="width:34px">'+hoyCheckHTML(itemId)+'</td><td'+(hecho?' style="opacity:.55;text-decoration:line-through"':'')+'>📘 Hoy toca: Estudio de Inglés</td><td style="text-align:right"><span class="prog-edit" onclick="window.location=\'test-oficial-ingles.html\'">Abrir Inglés</span></td></tr>';
   }
   if(tocaEstudioPsico){
-    rows += '<tr><td>🧩 Hoy toca: Estudio de Psicotécnicos</td><td colspan="3"></td></tr>';
+    const itemId='psico-estudio';
+    const hecho=hoyHechoEsta(itemId);
+    rows += '<tr><td style="width:34px">'+hoyCheckHTML(itemId)+'</td><td'+(hecho?' style="opacity:.55;text-decoration:line-through"':'')+'>🧩 Hoy toca: Estudio de Psicotécnicos</td><td></td></tr>';
   }
   if(tocaTestIngles){
-    rows += '<tr><td>📝 Test de Inglés sugerido hoy (mín. 3 días/semana)</td><td colspan="3" style="text-align:right"><span class="prog-edit" onclick="window.location=\'test-oficial-ingles.html\'">Abrir Inglés</span></td></tr>';
+    const itemId='ingles-test';
+    const hecho=hoyHechoEsta(itemId);
+    rows += '<tr><td style="width:34px">'+hoyCheckHTML(itemId)+'</td><td'+(hecho?' style="opacity:.55;text-decoration:line-through"':'')+'>📝 Test de Inglés sugerido hoy (mín. 3 días/semana)</td><td style="text-align:right"><span class="prog-edit" onclick="window.location=\'test-oficial-ingles.html\'">Abrir Inglés</span></td></tr>';
   }
   if(tocaTestPsico){
-    rows += '<tr><td>📝 Test de Psicotécnicos sugerido hoy (mín. 1 día/semana)</td><td colspan="3"></td></tr>';
+    const itemId='psico-test';
+    const hecho=hoyHechoEsta(itemId);
+    rows += '<tr><td style="width:34px">'+hoyCheckHTML(itemId)+'</td><td'+(hecho?' style="opacity:.55;text-decoration:line-through"':'')+'>📝 Test de Psicotécnicos sugerido hoy (mín. 1 día/semana)</td><td></td></tr>';
   }
-  body.innerHTML = '<table class="prog-table"><thead><tr><th>Tema</th><th>Fase</th><th>Páginas</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>';
+  body.innerHTML = '<table class="prog-table"><thead><tr><th></th><th>Sugerencia de hoy (toca el círculo cuando lo hagas)</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>';
 }
 
 /* ==================== MODO VOZ (lectura de preguntas + respuesta hablada) ==================== */
