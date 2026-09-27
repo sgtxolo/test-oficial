@@ -351,7 +351,9 @@ function temasParaRepasar(){
   }).filter(x=>x.dias>=REPASO_MIN_DIAS).sort((a,b)=>b.dias-a.dias);
 }
 function temaTestParaFecha(dateObj){
-  const estudiados=Object.keys(PG_TEMAS).map(Number).filter(temaEstudiado);
+  // Usa temas ya cubiertos según la proyección del plan (no solo los confirmados de verdad), para que el
+  // test diario rotativo tenga contenido desde el primer día del curso, igual que el resto de la tarjeta.
+  const estudiados=temasCubiertosHasta(todayStr(dateObj));
   if(!estudiados.length) return null;
   const dayIdx=Math.floor(dateObj.getTime()/864e5);
   return estudiados[dayIdx % estudiados.length];
@@ -404,9 +406,16 @@ function temasProyectadosParaFecha(fechaStr){
 // temas pueda tener ya el registro (estudioGuiadoRegistro): siempre reparte los 27 temas completos empezando
 // hoy como si fuera el primer día del plan.
 function esDiaEstudioNormal(d){return !esDiaDescanso(d) && !tocaEstudioIngles(d) && !tocaEstudioPsico(d)}
-function planEstudioNuevoMapa(){
+let _planEstudioNuevoCache=null;
+// Devuelve {mapaDia: fecha->temaId, finBloque: temaId->última fecha de su bloque}. Se cachea en memoria
+// durante el mismo render (el plan solo cambia si cambia la fecha del sistema, no en cada llamada) para no
+// recalcular el bucle completo de días varias veces por cada celda del calendario.
+function planEstudioNuevo(){
+  const hoyKey=todayStr();
+  if(_planEstudioNuevoCache && _planEstudioNuevoCache.hoyKey===hoyKey) return _planEstudioNuevoCache;
   const temas=Object.keys(PG_TEMAS).map(Number).sort((a,b)=>a-b);
-  if(!temas.length) return {};
+  const resultadoVacio={mapaDia:{}, finBloque:{}, hoyKey};
+  if(!temas.length){ _planEstudioNuevoCache=resultadoVacio; return resultadoVacio; }
   const totalPaginas=temas.reduce((s,id)=>s+(PG_PAGINAS_INIT[id-1]||1),0) || temas.length;
   // El reparto SIEMPRE ancla en la fecha real de inicio de curso (1 de septiembre), nunca en "hoy": así la
   // curva del olvido se calcula sobre cuánto se lleva estudiado desde el principio real del curso, y "hoy"
@@ -418,7 +427,7 @@ function planEstudioNuevoMapa(){
     if(esDiaEstudioNormal(d)) diasEstudio.push(todayStr(d));
   }
   const totalDias=diasEstudio.length;
-  if(!totalDias) return {};
+  if(!totalDias){ _planEstudioNuevoCache=resultadoVacio; return resultadoVacio; }
   // Días asignados a cada tema, proporcional a sus páginas frente al total, mínimo 1 día por tema.
   const asignacion=temas.map(id=>{
     const pag=PG_PAGINAS_INIT[id-1]||1;
@@ -434,19 +443,37 @@ function planEstudioNuevoMapa(){
   }else if(suma<totalDias){
     asignacion[asignacion.length-1].dias += (totalDias-suma);
   }
-  const mapa={};
+  const mapaDia={}, finBloque={};
   let idx=0;
   for(const a of asignacion){
+    const inicioIdx=idx;
     for(let k=0; k<a.dias && idx<totalDias; k++, idx++){
-      mapa[diasEstudio[idx]]=a.id;
+      mapaDia[diasEstudio[idx]]=a.id;
     }
+    if(idx>inicioIdx) finBloque[a.id]=diasEstudio[idx-1];
     if(idx>=totalDias) break;
   }
-  return mapa;
+  const resultado={mapaDia, finBloque, hoyKey};
+  _planEstudioNuevoCache=resultado;
+  return resultado;
 }
 function temaEstudioNuevoParaFecha(fechaStr){
-  const mapa=planEstudioNuevoMapa();
-  return Object.prototype.hasOwnProperty.call(mapa,fechaStr) ? mapa[fechaStr] : null;
+  const p=planEstudioNuevo();
+  return Object.prototype.hasOwnProperty.call(p.mapaDia,fechaStr) ? p.mapaDia[fechaStr] : null;
+}
+// true solo el último día del bloque de días consecutivos que le tocan a ese tema en el plan de estudio nuevo.
+function esUltimoDiaBloqueEstudio(fechaStr,temaId){
+  return planEstudioNuevo().finBloque[temaId]===fechaStr;
+}
+// Temas que, según la proyección del plan de estudio nuevo, ya se habrían terminado de estudiar en o antes de
+// fechaStr (su bloque completo ya pasó), más los que ya constan realmente confirmados en el registro. Esto
+// es lo que alimenta el test diario rotativo, para que haya sugerencia de test desde el primer día del curso
+// en vez de esperar a que el usuario confirme manualmente cada tema.
+function temasCubiertosHasta(fechaStr){
+  const p=planEstudioNuevo();
+  const proyectados=Object.keys(p.finBloque).map(Number).filter(id=>p.finBloque[id]<=fechaStr);
+  const confirmados=Object.keys(PG_TEMAS).map(Number).filter(temaEstudiado);
+  return Array.from(new Set([...proyectados, ...confirmados])).sort((a,b)=>a-b);
 }
 // Contenido PROYECTADO (dinámico, no un plan fijo) para un día sin datos reales todavía: descanso semanal,
 // bloque de Inglés/Psicotécnicos, el tema nuevo que tocaría empezar (1ª fase) y/o los repasos/test que
@@ -469,6 +496,11 @@ function celdaContenidoParaFecha(d,fechaStr){
   if(nuevoId!==null){
     lineas.push('Tema '+nuevoId+' - '+(PG_TEMAS[nuevoId]||'')+' (1ª vez)');
     entradas.push({temaId:nuevoId, tipo:'estudio'});
+    // El aviso de "recordatorio" de cierre solo se muestra el ÚLTIMO día del bloque de días de ese tema
+    // (si el tema ocupa varios días seguidos por ser largo), no en todos los días del bloque.
+    if(esUltimoDiaBloqueEstudio(fechaStr,nuevoId)){
+      lineas.push('🔄 Recordatorio: repasa T'+nuevoId+' dentro de 20-30 días');
+    }
   }
   if(repasos.length){
     lineas.push(repasos.map(e=>'T'+e.temaId+' '+(PG_TEMAS[e.temaId]||'')).join(', '));
