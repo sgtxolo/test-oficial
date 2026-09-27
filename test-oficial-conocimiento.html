@@ -242,7 +242,7 @@ function guardarYSalir(){if(!testActivo)return;pararCronometro();guardarTestPend
 function confirmarApp(msg,onYes,txtYes,txtNo){var ov=document.createElement("div");ov.className="app-confirm";ov.innerHTML='<div class="app-confirm-box"><p></p><div class="app-confirm-btns"><button type="button" class="ac-no"></button><button type="button" class="ac-si"></button></div></div>';ov.querySelector("p").textContent=msg;ov.querySelector(".ac-no").textContent=txtNo||"Cancelar";ov.querySelector(".ac-si").textContent=txtYes||"Salir";function cerrar(){ov.remove()}ov.querySelector(".ac-no").onclick=cerrar;ov.querySelector(".ac-si").onclick=function(){cerrar();onYes()};ov.onclick=function(e){if(e.target===ov)cerrar()};document.body.appendChild(ov)}function salirTest(){if(!testActivo)return;confirmarApp("¿Salir del test? Se perderá el progreso no guardado. Usa el icono de guardar si quieres continuarlo más tarde.",function(){testActivo=null;closeModal("modal-test");renderInicio()},"Salir","Seguir")}
 function cerrarTestConfirm(){salirTest()}
 
-const EP_TAGS = {"estudio": ["1ª Fase: Estudio", "#6fb7e0"], "repaso": ["2ª Fase: Repaso", "#a8c968"], "repaso_rapido": ["3ª Fase: Repaso rápido/ultrarrápido", "#f0d24a"], "otro": ["Sin estudio", "#e2e0d5"]};
+const EP_TAGS = {"estudio": ["1ª Fase: Estudio", "#6fb7e0"], "repaso": ["2ª Fase: Repaso", "#a8c968"], "repaso_rapido": ["3ª Fase: Repaso rápido", "#f0d24a"], "ultra": ["Repaso ultrarrápido (recta final)", "#f6a75a"], "otro": ["Sin estudio", "#e2e0d5"]};
 const CURSO_INICIO = new Date(2026,8,1);
 const CURSO_FIN = new Date(2027,5,20);
 const REPASO_MIN_DIAS = 20;
@@ -265,11 +265,16 @@ function diasEstudioReal(){
   });
   return map;
 }
+const TEMA_CORTO_PAGINAS = 30;
+function temaEsCorto(id){const t=pgGetTema(id);return (t.paginas||0)>0 && (t.paginas||0)<=TEMA_CORTO_PAGINAS}
 function temasParaRepasar(){
+  // Cada tema tiene su propio contador independiente de días desde su último estudio/repaso real;
+  // no hay cola secuencial 1->2->...->27: el orden es puramente por urgencia (más días vencidos primero),
+  // y no hay límite de repeticiones por tema a lo largo del curso (se recalcula en cada render).
   return Object.keys(PG_TEMAS).map(Number).filter(temaEstudiado).map(id=>{
     const fecha=temaUltimaFecha(id);
     const dias=fecha===null?9999:diasDesde(fecha);
-    return {temaId:id, dias};
+    return {temaId:id, dias, corto:temaEsCorto(id)};
   }).filter(x=>x.dias>=REPASO_MIN_DIAS).sort((a,b)=>b.dias-a.dias);
 }
 function temaTestHoy(){
@@ -300,6 +305,9 @@ function renderEstudio(){
       texto=entradas.map(e=>'T'+e.temaId+' '+(PG_TEMAS[e.temaId]||'')+' ('+nombresFase[e.fase]+')').join('\n');
       const ultimaFase=entradas[entradas.length-1].fase;
       tipo = ultimaFase==='fase1' ? 'estudio' : (ultimaFase==='fase3' ? 'repaso_rapido' : 'repaso');
+      // En la recta final del curso (último mes antes de CURSO_FIN), cualquier repaso real (fase2/fase3)
+      // se pinta con el 4º color "ultra" (repaso ultrarrápido), distinto del amarillo normal de fase3.
+      if(tipo!=='estudio' && (CURSO_FIN.getTime()-d.getTime())<=30*864e5) tipo='ultra';
     } else if(key===hoyKey){
       texto='Hoy: revisa los recordatorios de repaso más abajo ↓';
     }
@@ -463,7 +471,13 @@ function renderProgresoTemas(){
 function toggleAcc(id){document.getElementById(id).classList.toggle('open')}
 function renderEstudioHoy(){
   const body = document.getElementById('hoy-tbody-wrap');
-  const repasos = temasParaRepasar().slice(0,3);
+  const todosPendientes = temasParaRepasar();
+  // No hay límite fijo de "1 tema por día": se muestran hasta 2 temas vencidos por urgencia, y se amplía
+  // a 3-4 cuando los siguientes pendientes son temas cortos (pocas páginas), para poder agruparlos el mismo
+  // día como hace Prefortia con temas cortos (p.ej. T7/T9), en vez de forzar un único tema por recordatorio.
+  let cap = Math.min(2, todosPendientes.length);
+  while(cap < todosPendientes.length && cap < 4 && todosPendientes[cap].corto) cap++;
+  const repasos = todosPendientes.slice(0, cap);
   const testId = temaTestHoy();
   if(!repasos.length && testId===null){
     body.innerHTML = '<p class="hoy-empty">Todavía no tienes ningún tema marcado como estudiado. Marca la 1ª fase (Estudio) de un tema en "Mi Progreso" para empezar a recibir recordatorios de repaso.</p>';
@@ -476,7 +490,11 @@ function renderEstudioHoy(){
     const nombre = PG_TEMAS[temaId] || ('Tema '+temaId);
     const enFaseFinal = diasDesde(temaUltimaFecha(temaId))!==null && (CURSO_FIN.getTime()-Date.now())<=30*864e5;
     const faseKey = t.fases.fase2.completada ? 'fase3' : 'fase2';
-    const etiqueta = enFaseFinal ? ' (repaso ultrarrápido, ~1h)' : (r.dias>=REPASO_MAX_DIAS ? ' (urgente, riesgo de olvido)' : '');
+    const etiquetas=[];
+    if(enFaseFinal) etiquetas.push('repaso ultrarrápido, ~1h');
+    if(r.dias>=REPASO_MAX_DIAS) etiquetas.push('urgente, riesgo de olvido');
+    if(r.corto) etiquetas.push('tema corto');
+    const etiqueta = etiquetas.length ? ' ('+etiquetas.join(' · ')+')' : '';
     rows += '<tr>'+
       '<td>Tema '+temaId+' - '+nombre+' <span style="color:var(--texto-gris);font-size:12px">— '+r.dias+' días sin repasar'+etiqueta+'</span></td>'+
       '<td><div class="prog-fc f'+(faseKey==='fase3'?3:2)+(t.fases[faseKey].completada?' on':'')+'" onclick="pgToggleFase(\''+temaId+'\',\''+faseKey+'\')"></div></td>'+
