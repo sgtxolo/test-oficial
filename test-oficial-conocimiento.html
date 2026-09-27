@@ -256,7 +256,7 @@ function guardarYSalir(){if(!testActivo)return;pararCronometro();guardarTestPend
 function confirmarApp(msg,onYes,txtYes,txtNo){var ov=document.createElement("div");ov.className="app-confirm";ov.innerHTML='<div class="app-confirm-box"><p></p><div class="app-confirm-btns"><button type="button" class="ac-no"></button><button type="button" class="ac-si"></button></div></div>';ov.querySelector("p").textContent=msg;ov.querySelector(".ac-no").textContent=txtNo||"Cancelar";ov.querySelector(".ac-si").textContent=txtYes||"Salir";function cerrar(){ov.remove()}ov.querySelector(".ac-no").onclick=cerrar;ov.querySelector(".ac-si").onclick=function(){cerrar();onYes()};ov.onclick=function(e){if(e.target===ov)cerrar()};document.body.appendChild(ov)}function salirTest(){if(!testActivo)return;confirmarApp("¿Salir del test? Se perderá el progreso no guardado. Usa el icono de guardar si quieres continuarlo más tarde.",function(){testActivo=null;closeModal("modal-test");renderInicio()},"Salir","Seguir")}
 function cerrarTestConfirm(){salirTest()}
 
-const EP_TAGS = {"estudio": ["1ª Fase: Estudio", "#6fb7e0"], "repaso": ["2ª Fase: Repaso", "#a8c968"], "repaso_rapido": ["3ª Fase: Repaso rápido", "#f0d24a"], "ultra": ["Repaso ultrarrápido (recta final)", "#f6a75a"], "ingles": ["Inglés / Psicotécnicos", "#f4a98c"], "test": ["Test sugerido", "#a9d8e8"], "simulacro": ["Simulacro de examen", "#c9a0dc"], "descanso": ["Descanso", "#e2e0d5"], "otro": ["Sin estudio previsto", "#e2e0d5"]};
+const EP_TAGS = {"estudio": ["1ª Fase: Estudio", "#f6a75a"], "repaso": ["2ª Fase: Repaso", "#a8c968"], "repaso_rapido": ["3ª Fase: Repaso rápido", "#f0d24a"], "ultra": ["Vuelta relámpago (recta final)", "#6fb7e0"], "ingles": ["Inglés / Psicotécnicos", "#f4a98c"], "test": ["Test sugerido", "#a9d8e8"], "simulacro": ["Simulacro de examen", "#c9a0dc"], "descanso": ["Descanso", "#e2e0d5"], "otro": ["Sin estudio previsto", "#e2e0d5"]};
 const SIMULACRO_INTERVALO_DIAS = 20;
 // Un simulacro cada 20 días de calendario desde CURSO_INICIO (o desde el simulacro anterior), evitando
 // aterrizar en descanso/Inglés-Psicotécnicos igual que los repasos, para que nunca desaparezca esa fecha.
@@ -273,7 +273,7 @@ const CURSO_INICIO = new Date(2026,8,1);
 const CURSO_FIN = new Date(2027,5,30);
 const REPASO_MIN_DIAS = 20;
 const REPASO_MAX_DIAS = 30;
-const DESCANSO_DIA_SEMANA = 1; // Lunes: un día de descanso semanal fijo (criterio simple)
+const DESCANSO_DIA_SEMANA = 0; // Domingo: día de descanso semanal fijo
 let edMes = new Date(2026,8,1);
 function edClampMes(d){const min=new Date(CURSO_INICIO.getFullYear(),CURSO_INICIO.getMonth(),1),max=new Date(CURSO_FIN.getFullYear(),CURSO_FIN.getMonth(),1);return d<min?min:(d>max?max:d)}
 function edMoveMonth(delta){edMes=edClampMes(new Date(edMes.getFullYear(),edMes.getMonth()+delta,1));renderEstudio()}
@@ -361,7 +361,7 @@ function temaTestHoy(){return temaTestParaFecha(new Date())}
 // progreso detallado de cada uno: recordatorios genéricos fijados por día de la semana (0=Domingo..6=Sábado).
 // Versión parametrizable por fecha (para poder proyectar cualquier día del calendario, no solo "hoy").
 function diaSemanaDe(d){return (d||new Date()).getDay()}
-function tocaEstudioIngles(d){return diaSemanaDe(d)===3}
+function tocaEstudioIngles(d){return diaSemanaDe(d)===6}
 function tocaEstudioPsico(d){return diaSemanaDe(d)===6}
 function tocaTestIngles(d){return [1,3,5].includes(diaSemanaDe(d))}
 function tocaTestPsico(d){return diaSemanaDe(d)===0}
