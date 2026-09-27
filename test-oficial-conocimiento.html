@@ -396,8 +396,11 @@ function planEstudioNuevoMapa(){
   const temas=Object.keys(PG_TEMAS).map(Number).sort((a,b)=>a-b);
   if(!temas.length) return {};
   const totalPaginas=temas.reduce((s,id)=>s+(PG_PAGINAS_INIT[id-1]||1),0) || temas.length;
-  const hoy=new Date(); hoy.setHours(0,0,0,0);
-  const inicio = hoy<CURSO_INICIO ? new Date(CURSO_INICIO) : hoy;
+  // El reparto SIEMPRE ancla en la fecha real de inicio de curso (1 de septiembre), nunca en "hoy": así la
+  // curva del olvido se calcula sobre cuánto se lleva estudiado desde el principio real del curso, y "hoy"
+  // cae en el punto del reparto que le corresponda (pudiendo tocarle ya un 2º o 3er repaso de un tema si
+  // ha pasado suficiente tiempo desde el 1 de septiembre), en vez de reiniciar el plan cada día.
+  const inicio = new Date(CURSO_INICIO);
   const diasEstudio=[];
   for(let d=new Date(inicio); d<=CURSO_FIN; d.setDate(d.getDate()+1)){
     if(esDiaEstudioNormal(d)) diasEstudio.push(todayStr(d));
