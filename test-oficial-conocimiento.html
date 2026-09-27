@@ -309,14 +309,17 @@ function renderEstudio(){
     const nombresFase={fase1:'Estudio',fase2:'Repaso',fase3:'Repaso rápido'};
     let texto='—', tipo='otro';
     if(isDone){
+      // Prioridad SIEMPRE a la lista real de temas con fecha=ese día (incluida hoy): el aviso de
+      // recordatorios es un añadido informativo, nunca un sustituto de los datos reales.
       texto=entradas.map(e=>'T'+e.temaId+' '+(PG_TEMAS[e.temaId]||'')+' ('+nombresFase[e.fase]+')').join('\n');
       const ultimaFase=entradas[entradas.length-1].fase;
       tipo = ultimaFase==='fase1' ? 'estudio' : (ultimaFase==='fase3' ? 'repaso_rapido' : 'repaso');
       // En la recta final del curso (último mes antes de CURSO_FIN), cualquier repaso real (fase2/fase3)
       // se pinta con el 4º color "ultra" (repaso ultrarrápido), distinto del amarillo normal de fase3.
       if(tipo!=='estudio' && (CURSO_FIN.getTime()-d.getTime())<=30*864e5) tipo='ultra';
+      if(key===hoyKey) texto += '\n(Hoy — revisa también los recordatorios de abajo ↓)';
     } else if(key===hoyKey){
-      texto='Hoy: revisa los recordatorios de repaso más abajo ↓';
+      texto='Hoy no tienes ningún estudio registrado todavía. Revisa los recordatorios de repaso más abajo ↓';
     }
     const tag=EP_TAGS[tipo]||EP_TAGS.otro;
     html+='<div class="estudio-day'+(isDone?' done':'')+'" style="border-left-color:'+tag[1]+'">';
