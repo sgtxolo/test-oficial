@@ -342,6 +342,29 @@ const PG_FASE_COLOR = ['#6fb7e0','#a8c968','#f0d24a'];
 function pgStateKey(){return 'zonaEstudioTemas_v2'}
 function pgGetState(){try{return JSON.parse(localStorage.getItem(pgStateKey())||'{}')}catch(e){return{}}}
 function pgSetState(o){localStorage.setItem(pgStateKey(), JSON.stringify(o))}
+// Migración retroactiva: antes de este fix, marcar una fase como completada (con el círculo rápido de "Mi
+// Progreso") no guardaba ninguna fecha. Esos temas quedaban con completada:true y fecha:'' para siempre, así
+// que el calendario real (que solo lee fechas) los ignoraba por completo aunque el usuario sí los hubiera
+// estudiado de verdad. Se ejecuta una única vez: a cualquier fase completada sin fecha se le asigna hoy como
+// fecha de referencia y se persiste, para que el progreso ya guardado aparezca sin tener que re-tocar nada.
+function migrarFechasFaltantes(){
+  const MIG_KEY='zonaEstudioMigracionFechas_v1';
+  try{ if(localStorage.getItem(MIG_KEY)==='1') return; }catch(e){}
+  const s=pgGetState();
+  let cambiado=false;
+  const hoy=todayStr();
+  Object.keys(s).forEach(id=>{
+    const tema=s[id];
+    if(!tema || !tema.fases) return;
+    ['fase1','fase2','fase3'].forEach(k=>{
+      const f=tema.fases[k];
+      if(f && f.completada && !f.fecha){ f.fecha=hoy; cambiado=true; }
+    });
+  });
+  if(cambiado) pgSetState(s);
+  try{ localStorage.setItem(MIG_KEY,'1'); }catch(e){}
+}
+migrarFechasFaltantes();
 
 const PG_FASE_MIN_FACTOR = {fase1:10, fase2:6, fase3:3};
 const PG_FASE_LABELS = {fase1:'Estudio', fase2:'Repaso', fase3:'Repaso rápido'};
