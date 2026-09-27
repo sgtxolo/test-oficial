@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v3";
+const CACHE_NAME = "oposicion-cache-v4";
 const APP_SHELL = [
   "./test-oficial-conocimiento.html",
   "./test-oficial-ingles.html",
@@ -34,7 +34,7 @@ self.addEventListener("fetch", event => {
     // Red primero para HTML: siempre intenta traer la última versión;
     // si no hay red (offline), sirve la copia cacheada.
     event.respondWith(
-      fetch(event.request)
+      fetch(event.request, { cache: "no-store" })
         .then(response => {
           if (response && response.status === 200) {
             const clone = response.clone();
