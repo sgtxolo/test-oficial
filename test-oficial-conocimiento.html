@@ -275,7 +275,8 @@ function esDiaSimulacro(d){
   return false;
 }
 const CURSO_INICIO = new Date(2026,8,1);
-const CURSO_FIN = new Date(2027,5,30);
+const CURSO_FIN = new Date(2027,6,1);
+const PAGINAS_POR_DIA_ESTUDIO = 85; // Ritmo real confirmado por el usuario (rango 70-100 pág/día, 3-5h/día)
 const REPASO_MIN_DIAS = 20;
 const REPASO_MAX_DIAS = 30;
 const DESCANSO_DIA_SEMANA = 0; // Domingo: día de descanso semanal fijo
@@ -421,7 +422,6 @@ function planEstudioNuevo(){
   const temas=Object.keys(PG_TEMAS).map(Number).sort((a,b)=>a-b);
   const resultadoVacio={mapaDia:{}, finBloque:{}, hoyKey};
   if(!temas.length){ _planEstudioNuevoCache=resultadoVacio; return resultadoVacio; }
-  const totalPaginas=temas.reduce((s,id)=>s+(PG_PAGINAS_INIT[id-1]||1),0) || temas.length;
   // El reparto SIEMPRE ancla en la fecha real de inicio de curso (1 de septiembre), nunca en "hoy": así la
   // curva del olvido se calcula sobre cuánto se lleva estudiado desde el principio real del curso, y "hoy"
   // cae en el punto del reparto que le corresponda (pudiendo tocarle ya un 2º o 3er repaso de un tema si
@@ -433,21 +433,14 @@ function planEstudioNuevo(){
   }
   const totalDias=diasEstudio.length;
   if(!totalDias){ _planEstudioNuevoCache=resultadoVacio; return resultadoVacio; }
-  // Días asignados a cada tema, proporcional a sus páginas frente al total, mínimo 1 día por tema.
+  // Días asignados a cada tema según un ritmo REAL fijo de páginas/día (PAGINAS_POR_DIA_ESTUDIO), no repartido
+  // proporcionalmente sobre todos los días disponibles del curso. Esto permite terminar la primera vuelta del
+  // temario en bastante menos de un curso completo, dejando margen real para repetirlo varias veces más antes
+  // del examen (que es justo lo que se busca con la curva del olvido).
   const asignacion=temas.map(id=>{
     const pag=PG_PAGINAS_INIT[id-1]||1;
-    return {id, dias:Math.max(1, Math.round(pag/totalPaginas*totalDias))};
+    return {id, dias:Math.max(1, Math.round(pag/PAGINAS_POR_DIA_ESTUDIO))};
   });
-  let suma=asignacion.reduce((s,a)=>s+a.dias,0);
-  if(suma>totalDias){
-    let exceso=suma-totalDias, i=asignacion.length-1, vueltas=0;
-    while(exceso>0 && vueltas<asignacion.length*3){
-      if(asignacion[i].dias>1){ asignacion[i].dias--; exceso--; }
-      i--; if(i<0){ i=asignacion.length-1; vueltas++; }
-    }
-  }else if(suma<totalDias){
-    asignacion[asignacion.length-1].dias += (totalDias-suma);
-  }
   const mapaDia={}, finBloque={};
   let idx=0;
   for(const a of asignacion){
