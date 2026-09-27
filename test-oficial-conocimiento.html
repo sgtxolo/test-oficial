@@ -258,7 +258,7 @@ function cerrarTestConfirm(){salirTest()}
 
 const EP_TAGS = {"estudio": ["1ª Fase: Estudio", "#6fb7e0"], "repaso": ["2ª Fase: Repaso", "#a8c968"], "repaso_rapido": ["3ª Fase: Repaso rápido", "#f0d24a"], "ultra": ["Repaso ultrarrápido (recta final)", "#f6a75a"], "ingles": ["Inglés / Psicotécnicos", "#f4a98c"], "test": ["Test sugerido", "#c9a0dc"], "descanso": ["Descanso", "#e2e0d5"], "otro": ["Sin estudio previsto", "#e2e0d5"]};
 const CURSO_INICIO = new Date(2026,8,1);
-const CURSO_FIN = new Date(2027,5,20);
+const CURSO_FIN = new Date(2027,5,30);
 const REPASO_MIN_DIAS = 20;
 const REPASO_MAX_DIAS = 30;
 const DESCANSO_DIA_SEMANA = 1; // Lunes: un día de descanso semanal fijo (criterio simple)
@@ -383,25 +383,84 @@ function temasProyectadosParaFecha(fechaStr){
   while(cap<candidatos.length && cap<4 && candidatos[cap].corto) cap++;
   return candidatos.slice(0,cap).map(c=>({temaId:c.temaId, tipo:'repaso'}));
 }
+// ===================== Generador del plan de ESTUDIO NUEVO (1ª fase, azul) =====================
+// Reparte los 27 temas (ponderado por páginas, PG_PAGINAS_INIT) entre los días de estudio disponibles desde
+// HOY hasta CURSO_FIN (excluyendo descanso/Inglés-Psicotécnicos), en orden de temario (1..27). Se recalcula
+// siempre a partir de "hoy" en cada llamada (no es una lista fija guardada), así que si el usuario confirma
+// temas más rápido o más lento, o usa el "+" para estudiar algo fuera de orden, el reparto de los días que
+// quedan se ajusta solo en el próximo render. Por indicación explícita del usuario, el reparto ignora qué
+// temas pueda tener ya el registro (estudioGuiadoRegistro): siempre reparte los 27 temas completos empezando
+// hoy como si fuera el primer día del plan.
+function esDiaEstudioNormal(d){return !esDiaDescanso(d) && !tocaEstudioIngles(d) && !tocaEstudioPsico(d)}
+function planEstudioNuevoMapa(){
+  const temas=Object.keys(PG_TEMAS).map(Number).sort((a,b)=>a-b);
+  if(!temas.length) return {};
+  const totalPaginas=temas.reduce((s,id)=>s+(PG_PAGINAS_INIT[id-1]||1),0) || temas.length;
+  const hoy=new Date(); hoy.setHours(0,0,0,0);
+  const inicio = hoy<CURSO_INICIO ? new Date(CURSO_INICIO) : hoy;
+  const diasEstudio=[];
+  for(let d=new Date(inicio); d<=CURSO_FIN; d.setDate(d.getDate()+1)){
+    if(esDiaEstudioNormal(d)) diasEstudio.push(todayStr(d));
+  }
+  const totalDias=diasEstudio.length;
+  if(!totalDias) return {};
+  // Días asignados a cada tema, proporcional a sus páginas frente al total, mínimo 1 día por tema.
+  const asignacion=temas.map(id=>{
+    const pag=PG_PAGINAS_INIT[id-1]||1;
+    return {id, dias:Math.max(1, Math.round(pag/totalPaginas*totalDias))};
+  });
+  let suma=asignacion.reduce((s,a)=>s+a.dias,0);
+  if(suma>totalDias){
+    let exceso=suma-totalDias, i=asignacion.length-1, vueltas=0;
+    while(exceso>0 && vueltas<asignacion.length*3){
+      if(asignacion[i].dias>1){ asignacion[i].dias--; exceso--; }
+      i--; if(i<0){ i=asignacion.length-1; vueltas++; }
+    }
+  }else if(suma<totalDias){
+    asignacion[asignacion.length-1].dias += (totalDias-suma);
+  }
+  const mapa={};
+  let idx=0;
+  for(const a of asignacion){
+    for(let k=0; k<a.dias && idx<totalDias; k++, idx++){
+      mapa[diasEstudio[idx]]=a.id;
+    }
+    if(idx>=totalDias) break;
+  }
+  return mapa;
+}
+function temaEstudioNuevoParaFecha(fechaStr){
+  const mapa=planEstudioNuevoMapa();
+  return Object.prototype.hasOwnProperty.call(mapa,fechaStr) ? mapa[fechaStr] : null;
+}
 // Contenido PROYECTADO (dinámico, no un plan fijo) para un día sin datos reales todavía: descanso semanal,
-// bloque de Inglés/Psicotécnicos, o los repasos/test que tocarían ese día según la curva del olvido real.
+// bloque de Inglés/Psicotécnicos, el tema nuevo que tocaría empezar (1ª fase) y/o los repasos/test que
+// tocarían ese día según la curva del olvido real.
 function celdaContenidoParaFecha(d,fechaStr){
   if(esDiaDescanso(d)) return {tipo:'descanso', texto:'Descanso', entradas:[{temaId:0,tipo:'descanso'}]};
   if(tocaEstudioIngles(d) || tocaEstudioPsico(d)) return {tipo:'ingles', texto:'INGLÉS Y PSICOTÉCNICOS', entradas:[{temaId:0,tipo:'ingles'}]};
+  const nuevoId=temaEstudioNuevoParaFecha(fechaStr);
   const repasos=temasProyectadosParaFecha(fechaStr);
   const testId=temaTestParaFecha(d);
-  let texto='';
+  const lineas=[];
+  let entradas=[];
+  if(nuevoId!==null){
+    lineas.push('Tema '+nuevoId+' - '+(PG_TEMAS[nuevoId]||'')+' (1ª vez)');
+    entradas.push({temaId:nuevoId, tipo:'estudio'});
+  }
   if(repasos.length){
-    texto=repasos.map(e=>'T'+e.temaId+' '+(PG_TEMAS[e.temaId]||'')).join(', ')+'\n🔄 Recordatorio: '+repasos.map(e=>'T'+e.temaId).join('/');
+    lineas.push(repasos.map(e=>'T'+e.temaId+' '+(PG_TEMAS[e.temaId]||'')).join(', '));
+    lineas.push('🔄 Recordatorio: '+repasos.map(e=>'T'+e.temaId).join('/'));
+    entradas=entradas.concat(repasos);
   }
   if(testId!==null){
     const pag=PG_PAGINAS_INIT[testId-1]||0;
-    texto += (texto?'\n':'')+'📝 TEST: T'+testId+' ('+pag+'p)';
+    lineas.push('📝 TEST: T'+testId+' ('+pag+'p)');
   }
-  let tipo = repasos.length ? 'repaso' : (testId!==null ? 'test' : 'otro');
+  let tipo = nuevoId!==null ? 'estudio' : (repasos.length ? 'repaso' : (testId!==null ? 'test' : 'otro'));
   if(tipo==='repaso' && (CURSO_FIN.getTime()-d.getTime())<=30*864e5) tipo='ultra';
-  if(!texto) texto='—';
-  return {tipo, texto, entradas:repasos};
+  const texto = lineas.length ? lineas.join('\n') : '—';
+  return {tipo, texto, entradas};
 }
 // Confirmar/desconfirmar un día directamente desde el círculo del calendario: si el día no tiene datos
 // reales todavía, registra en el almacén lo que estaba proyectado (así el check "de verdad" refleja lo hecho,
