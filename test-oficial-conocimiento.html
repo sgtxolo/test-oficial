@@ -5,14 +5,14 @@
 .estudio-nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
 .estudio-nav b{font-size:20px;color:var(--verde-osc);font-family:Georgia,'Times New Roman',serif}
 .estudio-nav .icon-btn{background:var(--card-alt);border-radius:12px}
-.estudio-day{background:var(--card);border-radius:var(--radio-sm);padding:14px 16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.04);display:flex;gap:14px;align-items:flex-start;border-left:6px solid var(--borde)}
-.estudio-day.done{opacity:.55}
-.estudio-day .ed-date{flex:none;width:52px;text-align:center}
+.estudio-day{border-radius:var(--radio-sm);padding:14px 16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;gap:14px;align-items:flex-start;border-left:6px solid var(--borde);color:#2c3a33}
+.estudio-day.done{box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.estudio-day .ed-date{flex:none;width:52px;text-align:center;color:#2c3a33}
 .estudio-day .ed-date b{display:block;font-size:22px;color:var(--texto)}
 .estudio-day .ed-date span{font-size:10.5px;color:var(--texto-gris);font-weight:700;text-transform:uppercase}
 .estudio-day .ed-body{flex:1;min-width:0}
-.estudio-day .ed-tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.5px;padding:3px 9px;border-radius:20px;margin-bottom:6px;color:#3a4a41;background:var(--card-alt)}
-.estudio-day .ed-txt{font-size:13.5px;color:var(--texto);line-height:1.5;white-space:pre-line}
+.estudio-day .ed-tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.5px;padding:3px 9px;border-radius:20px;margin-bottom:6px;color:#2c3a33;background:rgba(255,255,255,.6)}
+.estudio-day .ed-txt{font-size:13.5px;color:#2c3a33;line-height:1.5;white-space:pre-line;font-weight:500}
 .estudio-day .ed-check{flex:none;width:26px;height:26px;border-radius:50%;border:2px solid var(--borde);cursor:pointer;display:flex;align-items:center;justify-content:center}
 .ed-add-btn{flex:none;width:26px;height:26px;border-radius:50%;border:2px solid var(--verde-med);color:var(--verde-med);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;line-height:1}
 .estudio-day .ed-check.on{background:var(--verde);border-color:var(--verde)}
@@ -256,7 +256,19 @@ function guardarYSalir(){if(!testActivo)return;pararCronometro();guardarTestPend
 function confirmarApp(msg,onYes,txtYes,txtNo){var ov=document.createElement("div");ov.className="app-confirm";ov.innerHTML='<div class="app-confirm-box"><p></p><div class="app-confirm-btns"><button type="button" class="ac-no"></button><button type="button" class="ac-si"></button></div></div>';ov.querySelector("p").textContent=msg;ov.querySelector(".ac-no").textContent=txtNo||"Cancelar";ov.querySelector(".ac-si").textContent=txtYes||"Salir";function cerrar(){ov.remove()}ov.querySelector(".ac-no").onclick=cerrar;ov.querySelector(".ac-si").onclick=function(){cerrar();onYes()};ov.onclick=function(e){if(e.target===ov)cerrar()};document.body.appendChild(ov)}function salirTest(){if(!testActivo)return;confirmarApp("¿Salir del test? Se perderá el progreso no guardado. Usa el icono de guardar si quieres continuarlo más tarde.",function(){testActivo=null;closeModal("modal-test");renderInicio()},"Salir","Seguir")}
 function cerrarTestConfirm(){salirTest()}
 
-const EP_TAGS = {"estudio": ["1ª Fase: Estudio", "#6fb7e0"], "repaso": ["2ª Fase: Repaso", "#a8c968"], "repaso_rapido": ["3ª Fase: Repaso rápido", "#f0d24a"], "ultra": ["Repaso ultrarrápido (recta final)", "#f6a75a"], "ingles": ["Inglés / Psicotécnicos", "#f4a98c"], "test": ["Test sugerido", "#c9a0dc"], "descanso": ["Descanso", "#e2e0d5"], "otro": ["Sin estudio previsto", "#e2e0d5"]};
+const EP_TAGS = {"estudio": ["1ª Fase: Estudio", "#6fb7e0"], "repaso": ["2ª Fase: Repaso", "#a8c968"], "repaso_rapido": ["3ª Fase: Repaso rápido", "#f0d24a"], "ultra": ["Repaso ultrarrápido (recta final)", "#f6a75a"], "ingles": ["Inglés / Psicotécnicos", "#f4a98c"], "test": ["Test sugerido", "#a9d8e8"], "simulacro": ["Simulacro de examen", "#c9a0dc"], "descanso": ["Descanso", "#e2e0d5"], "otro": ["Sin estudio previsto", "#e2e0d5"]};
+const SIMULACRO_INTERVALO_DIAS = 20;
+// Un simulacro cada 20 días de calendario desde CURSO_INICIO (o desde el simulacro anterior), evitando
+// aterrizar en descanso/Inglés-Psicotécnicos igual que los repasos, para que nunca desaparezca esa fecha.
+function esDiaSimulacro(d){
+  const key=todayStr(d);
+  for(let candidato=new Date(CURSO_INICIO); candidato<=CURSO_FIN; candidato.setDate(candidato.getDate()+SIMULACRO_INTERVALO_DIAS)){
+    const cand=new Date(candidato);
+    while(esDiaDescanso(cand) || tocaEstudioIngles(cand) || tocaEstudioPsico(cand)) cand.setDate(cand.getDate()+1);
+    if(todayStr(cand)===key) return true;
+  }
+  return false;
+}
 const CURSO_INICIO = new Date(2026,8,1);
 const CURSO_FIN = new Date(2027,5,30);
 const REPASO_MIN_DIAS = 20;
@@ -442,6 +454,13 @@ function temaEstudioNuevoParaFecha(fechaStr){
 function celdaContenidoParaFecha(d,fechaStr){
   if(esDiaDescanso(d)) return {tipo:'descanso', texto:'Descanso', entradas:[{temaId:0,tipo:'descanso'}]};
   if(tocaEstudioIngles(d) || tocaEstudioPsico(d)) return {tipo:'ingles', texto:'INGLÉS Y PSICOTÉCNICOS', entradas:[{temaId:0,tipo:'ingles'}]};
+  if(esDiaSimulacro(d)){
+    const estudiados=Object.keys(PG_TEMAS).map(Number).filter(temaEstudiado).sort((a,b)=>a-b);
+    const texto = estudiados.length
+      ? 'SIMULACRO DE EXAMEN\n(Acumulado: '+estudiados.map(id=>'T'+id).join(', ')+')'
+      : 'SIMULACRO DE EXAMEN\n(Todavía no hay temas estudiados que incluir)';
+    return {tipo:'simulacro', texto, entradas:[{temaId:0,tipo:'simulacro'}]};
+  }
   const nuevoId=temaEstudioNuevoParaFecha(fechaStr);
   const repasos=temasProyectadosParaFecha(fechaStr);
   const testId=temaTestParaFecha(d);
@@ -502,24 +521,30 @@ function renderEstudio(){
     let texto, tipo;
     if(isDone){
       // Prioridad SIEMPRE a lo que el usuario confirmó de verdad ese día (real), nunca a la proyección.
+      const nombresMarcador={descanso:'Descanso', ingles:'INGLÉS Y PSICOTÉCNICOS', simulacro:'SIMULACRO DE EXAMEN'};
       texto=entradas.map(e=>{
-        if(e.temaId===0) return e.tipo==='descanso' ? 'Descanso' : 'INGLÉS Y PSICOTÉCNICOS';
+        if(e.temaId===0) return nombresMarcador[e.tipo]||e.tipo;
         return 'T'+e.temaId+' '+(PG_TEMAS[e.temaId]||'')+' ('+(nombresTipo[e.tipo]||e.tipo)+')';
       }).join('\n');
       tipo=entradas[entradas.length-1].tipo;
-      if(tipo!=='estudio' && tipo!=='descanso' && tipo!=='ingles' && (CURSO_FIN.getTime()-d.getTime())<=30*864e5) tipo='ultra';
+      if(tipo!=='estudio' && tipo!=='descanso' && tipo!=='ingles' && tipo!=='simulacro' && (CURSO_FIN.getTime()-d.getTime())<=30*864e5) tipo='ultra';
       if(key===hoyKey) texto += '\n(Hoy — revisa también los recordatorios de abajo ↓)';
     }else{
       // Sin confirmar todavía: se muestra la previsión calculada dinámicamente (curva del olvido, test
-      // rotativo, descanso semanal, Inglés/Psicotécnicos) — nunca un plan fijo hardcodeado.
+      // rotativo, simulacro acumulado, descanso semanal, Inglés/Psicotécnicos) — nunca un plan fijo.
       const proy=celdaContenidoParaFecha(d,key);
       texto=proy.texto; tipo=proy.tipo;
       if(key===hoyKey) texto += (texto==='—'?'':'\n')+'(Toca el círculo cuando lo completes ↓ o añade algo extra con el +)';
     }
     const tag=EP_TAGS[tipo]||EP_TAGS.otro;
-    html+='<div class="estudio-day'+(isDone?' done':'')+'" style="border-left-color:'+tag[1]+'">';
+    // Tarjeta con el FONDO completo coloreado según el tipo de día (estilo Prefortia), no solo un borde o
+    // una etiqueta pequeña: mucho más visual y fácil de distinguir de un vistazo en el calendario.
+    // Confirmado (isDone): color sólido y sombra más marcada. Todavía sin confirmar: mismo color pero más
+    // suave (previsión), para distinguir de un vistazo lo ya hecho de lo que solo está proyectado.
+    const fondoCelda = isDone ? tag[1] : (tag[1]+'99');
+    html+='<div class="estudio-day'+(isDone?' done':'')+'" style="background:'+fondoCelda+';border-left-color:'+tag[1]+'">';
     html+='<div class="ed-date"><b>'+d.getDate()+'</b><span>'+edFmtDow(new Date(d))+'</span></div>';
-    html+='<div class="ed-body"><div class="ed-tag" style="background:'+tag[1]+'22">'+tag[0]+'</div><div class="ed-txt">'+texto+'</div></div>';
+    html+='<div class="ed-body"><div class="ed-tag">'+tag[0]+'</div><div class="ed-txt">'+texto+'</div></div>';
     html+='<div class="ed-check'+(isDone?' on':'')+'" onclick="egrConfirmarDia(\''+key+'\')" title="Marcar como hecho / deshacer">'+(isDone?'<svg stroke-width="3" viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>':'')+'</div>';
     html+='<div class="ed-add-btn" onclick="event.stopPropagation();egrAbrirDia(\''+key+'\')" title="Añadir algo extra este día (además de lo previsto)">+</div>';
     html+='</div>';
