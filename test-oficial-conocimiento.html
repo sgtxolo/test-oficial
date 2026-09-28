@@ -316,6 +316,15 @@ function egrUltimaFecha(temaId){
   Object.keys(o).forEach(fecha=>{ if(o[fecha].some(e=>e.temaId===temaId)){ if(!ultima||fecha>ultima) ultima=fecha; } });
   return ultima;
 }
+// Última fecha REAL en la que se confirmó el tipo "estudio" (1ª vez) de un tema concreto — a diferencia de
+// egrUltimaFecha() (que mira cualquier tipo), esto es lo que usa el plan dinámico para saber si un tema ya
+// quedó completado de verdad y en qué fecha real, para recolocar los temas pendientes a partir de ahí.
+function egrUltimaFechaEstudioNuevo(temaId){
+  const o=egrGet(); temaId=Number(temaId);
+  let ultima=null;
+  Object.keys(o).forEach(fecha=>{ if(o[fecha].some(e=>e.temaId===temaId && e.tipo==='estudio')){ if(!ultima||fecha>ultima) ultima=fecha; } });
+  return ultima;
+}
 // Migración única: si "Mi Progreso" (pgGetTema) tenía fases completadas con fecha de antes de este cambio,
 // se copian una sola vez a este registro propio. "Mi Progreso" no se toca ni se usa desde aquí en adelante.
 function migrarProgresoAEgrUnaVez(){
@@ -413,45 +422,63 @@ function temasProyectadosParaFecha(fechaStr){
 // hoy como si fuera el primer día del plan.
 function esDiaEstudioNormal(d){return !esDiaDescanso(d) && !tocaEstudioIngles(d) && !tocaEstudioPsico(d)}
 let _planEstudioNuevoCache=null;
-// Devuelve {mapaDia: fecha->temaId, finBloque: temaId->última fecha de su bloque}. Se cachea en memoria
-// durante el mismo render (el plan solo cambia si cambia la fecha del sistema, no en cada llamada) para no
-// recalcular el bucle completo de días varias veces por cada celda del calendario.
+// Avanza una fecha hasta el próximo día de estudio normal (salta descanso/Inglés-Psicotécnicos). Devuelve
+// null si se sale del curso.
+function _proximoDiaEstudioValido(d){
+  while(d<=CURSO_FIN && !esDiaEstudioNormal(d)) d.setDate(d.getDate()+1);
+  return d<=CURSO_FIN ? d : null;
+}
+// Devuelve {mapaDia: fecha->temaId, finBloque: temaId->última fecha de su bloque}.
+//
+// Plan DINÁMICO por ritmo real: los temas ya confirmados como estudiados (con entrada real tipo:"estudio" en
+// estudioGuiadoRegistro) conservan su fecha real tal cual — eso es historia, no se recalcula. Los temas
+// TODAVÍA no estudiados se colocan en cascada a partir de un cursor que avanza según cuándo terminó realmente
+// el tema anterior: si el usuario completa un tema antes de lo previsto, el cursor se adelanta y el siguiente
+// tema arranca antes; si tarda más (o el tema sigue sin confirmar más allá de su bloque teórico), el cursor se
+// atrasa y todo lo pendiente se desplaza detrás. Por eso el resultado depende del estado real de
+// estudioGuiadoRegistro, no solo de la fecha del sistema: se cachea por (hoy + contenido del registro) para
+// no recalcular el bucle completo en cada celda del calendario, pero se invalida solo en cuanto algo cambia.
 function planEstudioNuevo(){
   const hoyKey=todayStr();
-  if(_planEstudioNuevoCache && _planEstudioNuevoCache.hoyKey===hoyKey) return _planEstudioNuevoCache;
+  const regKey=JSON.stringify(egrGet());
+  if(_planEstudioNuevoCache && _planEstudioNuevoCache.hoyKey===hoyKey && _planEstudioNuevoCache.regKey===regKey) return _planEstudioNuevoCache;
   const temas=Object.keys(PG_TEMAS).map(Number).sort((a,b)=>a-b);
-  const resultadoVacio={mapaDia:{}, finBloque:{}, hoyKey};
+  const resultadoVacio={mapaDia:{}, finBloque:{}, hoyKey, regKey};
   if(!temas.length){ _planEstudioNuevoCache=resultadoVacio; return resultadoVacio; }
-  // El reparto SIEMPRE ancla en la fecha real de inicio de curso (1 de septiembre), nunca en "hoy": así la
-  // curva del olvido se calcula sobre cuánto se lleva estudiado desde el principio real del curso, y "hoy"
-  // cae en el punto del reparto que le corresponda (pudiendo tocarle ya un 2º o 3er repaso de un tema si
-  // ha pasado suficiente tiempo desde el 1 de septiembre), en vez de reiniciar el plan cada día.
-  const inicio = new Date(CURSO_INICIO);
-  const diasEstudio=[];
-  for(let d=new Date(inicio); d<=CURSO_FIN; d.setDate(d.getDate()+1)){
-    if(esDiaEstudioNormal(d)) diasEstudio.push(todayStr(d));
-  }
-  const totalDias=diasEstudio.length;
-  if(!totalDias){ _planEstudioNuevoCache=resultadoVacio; return resultadoVacio; }
-  // Días asignados a cada tema según un ritmo REAL fijo de páginas/día (PAGINAS_POR_DIA_ESTUDIO), no repartido
-  // proporcionalmente sobre todos los días disponibles del curso. Esto permite terminar la primera vuelta del
-  // temario en bastante menos de un curso completo, dejando margen real para repetirlo varias veces más antes
-  // del examen (que es justo lo que se busca con la curva del olvido).
-  const asignacion=temas.map(id=>{
-    const pag=PG_PAGINAS_INIT[id-1]||1;
-    return {id, dias:Math.max(1, Math.round(pag/PAGINAS_POR_DIA_ESTUDIO))};
-  });
   const mapaDia={}, finBloque={};
-  let idx=0;
-  for(const a of asignacion){
-    const inicioIdx=idx;
-    for(let k=0; k<a.dias && idx<totalDias; k++, idx++){
-      mapaDia[diasEstudio[idx]]=a.id;
+  // El cursor arranca SIEMPRE en la fecha real de inicio de curso (1 de septiembre), nunca en "hoy": el punto
+  // de partida del reparto es fijo, y solo se mueve a partir de ahí según el ritmo real de cada tema.
+  let cursor=_proximoDiaEstudioValido(new Date(CURSO_INICIO));
+  for(const id of temas){
+    if(cursor===null) break;
+    const fechaRealFin=egrUltimaFechaEstudioNuevo(id);
+    if(fechaRealFin){
+      // Tema ya confirmado de verdad: su fecha real es historia fija. El cursor pasa a "el día después de esa
+      // fecha real" (o se queda donde estaba si esa fecha ya quedó por detrás del cursor actual).
+      finBloque[id]=fechaRealFin;
+      const siguiente=new Date(fechaRealFin+'T00:00:00');
+      siguiente.setDate(siguiente.getDate()+1);
+      if(siguiente>cursor) cursor=_proximoDiaEstudioValido(siguiente);
+      continue;
     }
-    if(idx>inicioIdx) finBloque[a.id]=diasEstudio[idx-1];
-    if(idx>=totalDias) break;
+    // Tema pendiente: se proyecta su bloque completo a partir del cursor actual (que puede ir adelantado o
+    // atrasado respecto al reparto teórico original, según cómo haya ido el ritmo real hasta aquí).
+    const pag=PG_PAGINAS_INIT[id-1]||1;
+    const diasNecesarios=Math.max(1, Math.round(pag/PAGINAS_POR_DIA_ESTUDIO));
+    let asignados=0, ultimaFechaBloque=null, d=new Date(cursor);
+    while(asignados<diasNecesarios && d<=CURSO_FIN){
+      if(esDiaEstudioNormal(d)){
+        const key=todayStr(d);
+        mapaDia[key]=id;
+        ultimaFechaBloque=key;
+        asignados++;
+      }
+      d.setDate(d.getDate()+1);
+    }
+    if(ultimaFechaBloque) finBloque[id]=ultimaFechaBloque;
+    cursor=_proximoDiaEstudioValido(d);
   }
-  const resultado={mapaDia, finBloque, hoyKey};
+  const resultado={mapaDia, finBloque, hoyKey, regKey};
   _planEstudioNuevoCache=resultado;
   return resultado;
 }
