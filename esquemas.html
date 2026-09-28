@@ -1712,6 +1712,215 @@ const esquemas = temasPrograma.map((tema, i) => ({
     ]);
 })();
 
+// ---- TEMA 9 (Defensa Nacional — LO 5/2005 + Directiva de Defensa Nacional 2020) ----
+(function(){
+  const t9 = esquemas[8];
+  t9.titulo = "9.1 y 9.2 — LO 5/2005 de la Defensa Nacional y Directiva de Defensa Nacional 2020";
+  t9.html = leyenda()
+
+    + bloqueTitulo("9.1 — LEY ORGÁNICA 5/2005, DE 17 DE NOVIEMBRE, DE LA DEFENSA NACIONAL")
+    + bloqueTitulo("TÍTULO PRELIMINAR — Objeto")
+
+    + articulo("Artículo 1 — Objeto de la Ley", `
+      <p>Esta <mark class="m-destacable">Ley Orgánica</mark> <mark class="m-accion">regula</mark> la <mark class="m-destacable">defensa nacional</mark> y <mark class="m-accion">establece</mark> las <mark class="m-destacable">bases de la organización militar</mark> conforme a los <mark class="m-personalizado">principios establecidos en la Constitución</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 2 — Finalidad de la política de defensa", `
+      <p>La <mark class="m-destacable">política de defensa</mark> tiene por finalidad la <mark class="m-accion">protección</mark> del conjunto de la <mark class="m-personalizado">sociedad española</mark>, de su <mark class="m-destacable">Constitución</mark>, de los <mark class="m-destacable">valores superiores, principios e instituciones</mark> que en ésta se consagran, del <mark class="m-destacable">Estado social y democrático de derecho</mark>, del pleno ejercicio de los <mark class="m-destacable">derechos y libertades</mark>, y de la <mark class="m-destacable">garantía, independencia e integridad territorial de España</mark>. Asimismo, tiene por objetivo <mark class="m-accion">contribuir</mark> a la <mark class="m-personalizado">preservación de la paz y seguridad internacionales</mark>.</p>
+    `)
+
+    + bloqueTitulo("TÍTULO I — De las atribuciones de los poderes del Estado")
+
+    + articulo("Artículo 3 — La Corona", `
+      <p>Corresponden al <mark class="m-autoridad">Rey</mark> el <mark class="m-destacable">mando supremo de las Fuerzas Armadas</mark> y las demás funciones que en materia de defensa le confiere la <mark class="m-destacable">Constitución</mark> y el resto del ordenamiento jurídico.</p>
+    `, true)
+
+    + articulo("Artículo 4 — Las Cortes Generales", `
+      <p><b>1.</b> A las <mark class="m-autoridad">Cortes Generales</mark> les corresponde: <mark class="m-accion">otorgar</mark> las <mark class="m-destacable">autorizaciones previas</mark> para obligarse por <mark class="m-destacable">tratados y convenios internacionales</mark> (art. 94.1.b CE); <mark class="m-accion">aprobar</mark> las <mark class="m-destacable">leyes de defensa</mark> y los <mark class="m-plazo">créditos presupuestarios</mark>; <mark class="m-accion">debatir</mark> las <mark class="m-destacable">líneas generales de la política de defensa</mark> (el <mark class="m-autoridad">Gobierno</mark> presentará las iniciativas); <mark class="m-accion">controlar</mark> la <mark class="m-destacable">acción del Gobierno</mark> en materia de defensa; <mark class="m-accion">acordar</mark> la <mark class="m-destacable">autorización</mark> del art. 63.3 CE (declaración de guerra por el Rey).</p>
+      <p><b>2.</b> En particular, al <mark class="m-autoridad">Congreso de los Diputados</mark> le corresponde <mark class="m-accion">autorizar</mark>, con <u class="m-clave">carácter previo</u>, la <mark class="m-destacable">participación de las Fuerzas Armadas en misiones fuera del territorio nacional</mark>.</p>
+    `, true)
+
+    + trampa("Trampa de examen", "No confundir: la autorización para <b>declarar la guerra</b> (art. 63.3 CE) la acuerdan las <b>Cortes Generales</b> en pleno; la autorización previa para que las FAS participen en <b>misiones fuera de territorio nacional</b> corresponde específicamente al <b>Congreso de los Diputados</b>, no a las Cortes Generales en conjunto.")
+
+    + articulo("Artículo 5 — El Gobierno", `
+      <p>Corresponde al <mark class="m-autoridad">Gobierno</mark> <mark class="m-accion">determinar</mark> la <mark class="m-destacable">política de defensa</mark> y <mark class="m-accion">asegurar</mark> su ejecución, así como <mark class="m-accion">dirigir</mark> la <mark class="m-destacable">Administración militar</mark> y <mark class="m-accion">acordar</mark> la <mark class="m-destacable">participación de las Fuerzas Armadas</mark> en misiones fuera del territorio nacional.</p>
+    `)
+
+    + articulo("Artículo 6 — El Presidente del Gobierno", `
+      <p><b>1-2.</b> Corresponde al <mark class="m-autoridad">Presidente del Gobierno</mark> la <mark class="m-destacable">dirección de la política de defensa</mark> y determinación de sus objetivos, la <mark class="m-destacable">gestión de las situaciones de crisis</mark> que afecten a la defensa y la <mark class="m-destacable">dirección estratégica de las operaciones militares</mark> en caso de uso de la fuerza. <mark class="m-accion">Ejerce</mark> su autoridad para <mark class="m-accion">ordenar, coordinar y dirigir</mark> la actuación de las Fuerzas Armadas y disponer su empleo.</p>
+      <p><b>3.</b> En el marco de la política de defensa, le corresponde de forma específica: <mark class="m-accion">formular</mark> la <mark class="m-destacable">Directiva de Defensa Nacional</mark> (líneas generales y directrices); <mark class="m-accion">definir y aprobar</mark> los <mark class="m-destacable">grandes objetivos y planteamientos estratégicos</mark> y las directivas para negociaciones exteriores; <mark class="m-accion">determinar</mark> objetivos y líneas básicas de actuación de las FAS, tanto en el ámbito nacional como internacional; <mark class="m-accion">ordenar</mark> las <mark class="m-destacable">misiones</mark> de las Fuerzas Armadas; y las <mark class="m-personalizado">demás funciones</mark> que le atribuyan las disposiciones legales y reglamentarias.</p>
+    `, true)
+
+    + articulo("Artículo 7 — El Ministro de Defensa", `
+      <p>Corresponde al <mark class="m-autoridad">Ministro de Defensa</mark> el <mark class="m-destacable">desarrollo y la ejecución</mark> de la política de defensa. De forma específica: <mark class="m-accion">asistir</mark> al Presidente del Gobierno en la <mark class="m-destacable">dirección estratégica de las operaciones militares</mark>; <mark class="m-accion">dirigir</mark> la actuación de las Fuerzas Armadas bajo la autoridad del Presidente del Gobierno; <mark class="m-accion">determinar y ejecutar</mark> la <mark class="m-destacable">política militar</mark>; <mark class="m-accion">dirigir</mark>, como miembro del Gobierno, la <mark class="m-destacable">Administración militar</mark> y desarrollar las directrices que adopte el <mark class="m-autoridad">Consejo de Ministros</mark>.</p>
+    `)
+
+    + articulo("Artículo 8.1 a 8.4 — Consejo de Defensa Nacional: naturaleza y funciones", `
+      <p><b>1.</b> El <mark class="m-autoridad">Consejo de Defensa Nacional</mark> es el <mark class="m-destacable">órgano colegiado, coordinador, asesor y consultivo</mark> del <mark class="m-autoridad">Presidente del Gobierno</mark> en materia de defensa. A <mark class="m-personalizado">iniciativa del Presidente del Gobierno</mark>, podrá funcionar en <mark class="m-destacable">pleno</mark> y como <mark class="m-destacable">consejo ejecutivo</mark>.</p>
+      <p><b>2.</b> El Consejo en pleno <mark class="m-accion">informará</mark> al <mark class="m-autoridad">Rey</mark>, a propuesta del Presidente del Gobierno. <u class="m-clave">Cuando</u> el Rey asista a las reuniones, <mark class="m-accion">lo presidirá</mark>.</p>
+      <p><b>3-4.</b> <mark class="m-accion">Asistirá</mark> al Presidente del Gobierno en la <mark class="m-destacable">dirección de conflictos armados</mark> y gestión de crisis; <mark class="m-accion">emitirá informe</mark> sobre las grandes directrices de la política de defensa y <mark class="m-accion">ofrecerá propuestas</mark> sobre asuntos que, afectando a varios Ministerios, exijan una <mark class="m-personalizado">propuesta conjunta</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 8.5 y 8.6 — Composición del Pleno y del Consejo Ejecutivo", `
+      <p><b>5. PLENO:</b> <mark class="m-autoridad">Presidente del Gobierno</mark> (preside); <mark class="m-autoridad">Vicepresidentes del Gobierno</mark>; <mark class="m-autoridad">Ministros de Defensa, Interior, Asuntos Exteriores y Cooperación, y Economía y Hacienda</mark>; <mark class="m-autoridad">Jefe de Estado Mayor de la Defensa</mark>; <mark class="m-autoridad">Jefes de Estado Mayor del Ejército de Tierra, Armada y Ejército del Aire</mark>; <mark class="m-autoridad">Secretario de Estado Director del CNI</mark>; <mark class="m-autoridad">Director del Gabinete de la Presidencia del Gobierno</mark>.</p>
+      <p><b>6. CONSEJO EJECUTIVO</b> (composición <u class="m-clave">más reducida</u>, sin Vicepresidentes ni Ministros de Economía): <mark class="m-autoridad">Presidente del Gobierno</mark> (preside); <mark class="m-autoridad">Ministros de Defensa, Interior y Asuntos Exteriores y Cooperación</mark>; <mark class="m-autoridad">Jefe de Estado Mayor de la Defensa</mark>; <mark class="m-autoridad">Secretario de Estado Director del CNI</mark>; <mark class="m-autoridad">Director del Gabinete de la Presidencia del Gobierno</mark>.</p>
+    `, true)
+
+    + trampa("Trampa de examen", "El <b>Consejo Ejecutivo NO incluye</b> a los Vicepresidentes del Gobierno, ni al Ministro de Economía y Hacienda, ni a los Jefes de Estado Mayor de los tres Ejércitos (sólo al Jefe de Estado Mayor de la Defensa) — esa es la diferencia clave frente al Pleno.")
+
+    + articulo("Artículo 8.7 a 8.10 — Convocados, órgano de trabajo y desarrollo reglamentario", `
+      <p><b>7-8.</b> Podrán ser <mark class="m-personalizado">convocados</mark> el resto de miembros del <mark class="m-autoridad">Gobierno</mark> y otros miembros del Pleno al Consejo Ejecutivo, así como otras <mark class="m-autoridad">autoridades o cargos de la AGE</mark>. Las autoridades de <mark class="m-autoridad">CCAA y Ciudades con Estatuto de Autonomía</mark> <u class="m-clave">deberán</u> ser convocadas cuando se estime oportuno; las de <mark class="m-autoridad">gobiernos locales</mark>, podrán serlo.</p>
+      <p><b>9.</b> Contará como <mark class="m-destacable">órgano de trabajo permanente</mark> con la <mark class="m-autoridad">Comisión Interministerial de Defensa</mark>, adscrita al <mark class="m-autoridad">Ministerio de Defensa</mark>.</p>
+      <p><b>10.</b> El <mark class="m-destacable">régimen de funcionamiento</mark> del Consejo y de la Comisión Interministerial se <mark class="m-accion">determinará reglamentariamente</mark>.</p>
+    `)
+
+    + bloqueTitulo("TÍTULO II — Organización")
+
+    + articulo("Artículo 9 — Ministerio de Defensa", `
+      <p>El <mark class="m-autoridad">Ministerio de Defensa</mark> es el <mark class="m-destacable">departamento de la Administración General del Estado</mark> al que corresponde la <mark class="m-accion">preparación, desarrollo y ejecución</mark> de la política de defensa determinada por el Gobierno y la <mark class="m-accion">obtención y gestión</mark> de los recursos humanos y materiales para ello. En él se <mark class="m-accion">integran</mark> las <mark class="m-destacable">Fuerzas Armadas</mark>.</p>
+    `)
+
+    + articulo("Artículo 10 — Fuerzas Armadas", `
+      <p><b>1.</b> Las <mark class="m-autoridad">Fuerzas Armadas</mark> son el <mark class="m-destacable">elemento esencial de la defensa</mark> y constituyen una <mark class="m-destacable">entidad única</mark> que se concibe como conjunto integrador de las formas de acción específicas de sus componentes: <mark class="m-autoridad">Ejército de Tierra, Armada y Ejército del Aire</mark>.</p>
+      <p><b>2.</b> Su organización debe posibilitar el cumplimiento de las misiones en el marco <mark class="m-personalizado">específico, conjunto y combinado</mark>, asegurando la <mark class="m-destacable">eficacia de las operaciones militares</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 11 — Organización básica", `
+      <p><b>1.</b> Las Fuerzas Armadas se organizan en <u class="m-clave">dos</u> estructuras: la <mark class="m-destacable">orgánica</mark> (preparación de la fuerza) y la <mark class="m-destacable">operativa</mark> (empleo en las misiones).</p>
+      <p><b>2-3.</b> La estructura orgánica se establece con <mark class="m-personalizado">criterios de funcionalidad</mark> y organización homogénea; la operativa, con arreglo al <mark class="m-destacable">principio de unidad de mando</mark> y la máxima <mark class="m-destacable">capacidad operativa</mark>.</p>
+      <p><b>4.</b> Con criterios de <mark class="m-destacable">eficacia y economía de medios</mark>, se <mark class="m-accion">unificarán</mark> los servicios no exclusivos de un Ejército y se organizará de forma centralizada la <mark class="m-destacable">logística común</mark> y la adquisición de recursos.</p>
+    `)
+
+    + articulo("Artículo 12 — El Estado Mayor de la Defensa", `
+      <p><b>1-2.</b> Constituye el <mark class="m-destacable">órgano auxiliar de mando y apoyo</mark> al <mark class="m-autoridad">Jefe de Estado Mayor de la Defensa</mark>, quien ejercerá su mando y contará con un <mark class="m-destacable">Cuartel General</mark> y un <mark class="m-destacable">Mando de Operaciones subordinado</mark>. Le <mark class="m-accion">sustituirá</mark>, con carácter accidental, el <mark class="m-autoridad">Jefe de Estado Mayor más antiguo</mark> de los tres Ejércitos.</p>
+      <p><b>3.</b> Le corresponde: <mark class="m-accion">asesoramiento militar</mark> al Presidente del Gobierno y al Ministro de Defensa; <mark class="m-accion">ejercer</mark>, bajo dependencia del Ministro de Defensa, el <mark class="m-destacable">mando de la estructura operativa</mark> y la <mark class="m-destacable">conducción estratégica</mark>; <mark class="m-accion">asegurar</mark> la <mark class="m-destacable">eficacia operativa</mark>; <mark class="m-accion">proponer</mark> capacidades militares; <mark class="m-accion">elaborar</mark> la <mark class="m-destacable">estrategia militar</mark>; <mark class="m-accion">establecer</mark> normas de acción conjunta; por <mark class="m-personalizado">delegación</mark> del Ministro de Defensa, la <mark class="m-destacable">representación militar nacional</mark> ante organismos internacionales.</p>
+    `, true)
+
+    + articulo("Artículo 13 — El Ejército de Tierra, la Armada y el Ejército del Aire", `
+      <p><b>1.</b> Componen la <mark class="m-destacable">estructura orgánica</mark> de las FAS. Cada uno se compone de: <mark class="m-destacable">Cuartel General</mark> (asiste al Jefe de Estado Mayor); <mark class="m-destacable">la Fuerza</mark> (adiestramiento, preparación y evaluación de unidades); <mark class="m-destacable">Apoyo a la Fuerza</mark> (dirección, gestión y control de recursos, apoyo logístico).</p>
+      <p><b>2.</b> Los <mark class="m-autoridad">Jefes de Estado Mayor</mark> de cada Ejército ejercen su mando bajo la autoridad del <mark class="m-autoridad">Ministro de Defensa</mark>. Les sustituye, con carácter accidental, el <mark class="m-autoridad">Oficial General más antiguo</mark> subordinado en su estructura orgánica.</p>
+      <p><b>3.</b> Les corresponde: instruir, adiestrar y velar por la <mark class="m-personalizado">motivación, disciplina y bienestar</mark> de su Ejército; ejecutar misiones permanentes de paz; garantizar la preparación de la Fuerza; asesorar al Jefe de Estado Mayor de la Defensa; velar por los <mark class="m-destacable">intereses generales del personal militar</mark> bajo su mando.</p>
+    `)
+
+    + articulo("Artículo 14 — Jurisdicción militar", `
+      <p>Los órganos de la <mark class="m-destacable">jurisdicción militar</mark>, <mark class="m-personalizado">integrante del Poder Judicial del Estado</mark>, basan su organización y funcionamiento en el <mark class="m-destacable">principio de unidad jurisdiccional</mark> y administran justicia en el <mark class="m-personalizado">ámbito estrictamente castrense</mark> y, en su caso, en las materias que establezca la declaración del <mark class="m-destacable">estado de sitio</mark>.</p>
+    `, true)
+
+    + bloqueTitulo("TÍTULO III — Misiones de las Fuerzas Armadas y su control parlamentario")
+
+    + articulo("Artículo 15 — Misiones", `
+      <p><b>1.</b> Las FAS, conforme al <mark class="m-destacable">art. 8.1 CE</mark>, tienen la misión de <mark class="m-accion">garantizar</mark> la <mark class="m-destacable">soberanía e independencia de España</mark>, defender su <mark class="m-destacable">integridad territorial y el ordenamiento constitucional</mark>.</p>
+      <p><b>2-4.</b> Contribuyen militarmente a la <mark class="m-destacable">seguridad y defensa</mark> de España y aliados, al <mark class="m-destacable">mantenimiento de la paz, estabilidad y ayuda humanitaria</mark>; junto a las <mark class="m-autoridad">Instituciones del Estado y Administraciones públicas</mark> preservan la seguridad en supuestos de <mark class="m-destacable">grave riesgo, catástrofe o calamidad pública</mark>; pueden llevar a cabo <mark class="m-destacable">misiones de evacuación</mark> de residentes españoles en el extranjero cuya vida o intereses corran <mark class="m-personalizado">grave riesgo</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 16 — Tipos de operaciones", `
+      <p>Contribución complementaria o subsidiaria de <mark class="m-destacable">interés público</mark>: acciones de <mark class="m-destacable">prevención de conflictos o disuasión</mark>, de <mark class="m-destacable">mantenimiento de la paz</mark>, actuaciones en <mark class="m-destacable">situaciones de crisis</mark> y, en su caso, de <mark class="m-destacable">respuesta a la agresión</mark>. Incluye: vigilancia de espacios marítimo/aéreo; colaboración en misiones internacionales de paz; apoyo a las <mark class="m-autoridad">FCSE</mark> contra el terrorismo y en búsqueda y salvamento; respuesta militar contra agresiones con aeronaves con fines terroristas; colaboración con Administraciones en catástrofes.</p>
+    `)
+
+    + articulo("Artículo 17 — Autorización del Congreso de los Diputados", `
+      <p><b>1.</b> Para operaciones en el exterior <u class="m-clave">no</u> directamente relacionadas con la defensa de España o el interés nacional, el <mark class="m-autoridad">Gobierno</mark> realizará <mark class="m-destacable">consulta previa</mark> y recabará <mark class="m-accion">autorización</mark> del <mark class="m-autoridad">Congreso de los Diputados</mark>.</p>
+      <p><b>2.</b> Cuando se requiera <mark class="m-personalizado">respuesta rápida e inmediata</mark>, los trámites se realizarán mediante <mark class="m-destacable">procedimientos de urgencia</mark>.</p>
+      <p><b>3.</b> Si por <mark class="m-personalizado">máxima urgencia</mark> <u class="m-clave">no</u> fuera posible la consulta previa, el Gobierno someterá la decisión adoptada al Congreso para su <mark class="m-destacable">ratificación</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 18 — Seguimiento de las operaciones", `
+      <p>El <mark class="m-autoridad">Gobierno</mark> <mark class="m-accion">informará</mark> periódicamente, en un <mark class="m-plazo">plazo no superior a un año</mark>, al <mark class="m-autoridad">Congreso de los Diputados</mark> sobre el desarrollo de las <mark class="m-destacable">operaciones en el exterior</mark>.</p>
+    `)
+
+    + articulo("Artículo 19 — Condiciones de las misiones en el exterior", `
+      <p>Para misiones no directamente relacionadas con la defensa de España o el interés nacional: <u class="m-clave">petición expresa</u> del Gobierno del Estado en cuyo territorio se desarrollen (o autorizadas por <mark class="m-autoridad">Resoluciones del Consejo de Seguridad de la ONU</mark>, <mark class="m-autoridad">UE</mark> u <mark class="m-autoridad">OTAN</mark>); que cumplan <mark class="m-destacable">fines defensivos, humanitarios, de estabilización o mantenimiento de la paz</mark>; que sean conformes con la <mark class="m-destacable">Carta de Naciones Unidas</mark> y no vulneren el <mark class="m-destacable">derecho internacional</mark> (art. 96.1 CE).</p>
+    `)
+
+    + bloqueTitulo("TÍTULO IV — De las reglas esenciales del comportamiento de los militares")
+
+    + articulo("Artículo 20 — Reglas esenciales del comportamiento de los militares", `
+      <p><b>1.</b> Mediante <mark class="m-destacable">ley</mark>, de acuerdo con la Constitución, se establecerán las reglas esenciales que definen el comportamiento de los militares, en especial la <mark class="m-destacable">disciplina, jerarquía, límites de la obediencia</mark> y el <mark class="m-destacable">ejercicio del mando</mark>.</p>
+      <p><b>2.</b> El <mark class="m-autoridad">Gobierno</mark>, mediante <mark class="m-destacable">Real Decreto</mark>, desarrollará estas reglas en las <mark class="m-destacable">Reales Ordenanzas para las Fuerzas Armadas</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 21 — Régimen disciplinario", `
+      <p><b>1.</b> Tiene por objeto <mark class="m-accion">garantizar</mark> la <mark class="m-destacable">observancia de las reglas esenciales</mark>. La potestad disciplinaria corresponde a las <mark class="m-autoridad">autoridades y mandos</mark> de la LO del Régimen Disciplinario de las FAS.</p>
+      <p><b>2.</b> Quedan <u class="m-clave">prohibidos</u> los <mark class="m-destacable">Tribunales de Honor</mark> en el ámbito militar.</p>
+    `, true)
+
+    + bloqueTitulo("TÍTULO V — Contribución a la Defensa")
+
+    + articulo("Artículo 22 — Disposición permanente de los recursos", `
+      <p><b>1.</b> El <mark class="m-autoridad">Gobierno</mark> establecerá la <mark class="m-destacable">preparación y disponibilidad</mark> de los recursos humanos y materiales <mark class="m-personalizado">no propiamente militares</mark> para la defensa nacional en <mark class="m-destacable">situaciones de grave amenaza o crisis</mark>, con mecanismos de <mark class="m-destacable">cooperación y coordinación</mark> entre poderes públicos.</p>
+      <p><b>2.</b> En <mark class="m-destacable">conflicto armado</mark> o vigencia del <mark class="m-destacable">estado de sitio</mark>, la disponibilidad de recursos será <mark class="m-accion">coordinada</mark> por el <mark class="m-autoridad">Consejo de Defensa Nacional</mark>.</p>
+    `)
+
+    + articulo("Artículo 23 y 24 — Guardia Civil y sus misiones de carácter militar", `
+      <p><b>23.</b> La <mark class="m-autoridad">Guardia Civil</mark> es un <mark class="m-destacable">Instituto armado de naturaleza militar</mark>, dependiente del <mark class="m-autoridad">Ministro del Interior</mark> en las funciones de la <mark class="m-destacable">LO 2/1986 de Fuerzas y Cuerpos de Seguridad</mark>, y del <mark class="m-autoridad">Ministro de Defensa</mark> en el cumplimiento de <mark class="m-destacable">misiones de carácter militar</mark>.</p>
+      <p><b>24.</b> El <mark class="m-autoridad">Gobierno</mark>, mediante <mark class="m-destacable">Real Decreto</mark>, regulará esas misiones de carácter militar.</p>
+    `, true)
+
+    + articulo("Artículo 25 — Coordinación de actuaciones", `
+      <p>En <mark class="m-destacable">tiempo de conflicto bélico</mark> y vigencia del <mark class="m-destacable">estado de sitio</mark>, las actuaciones de la <mark class="m-autoridad">Guardia Civil</mark> serán <mark class="m-accion">coordinadas</mark> por el <mark class="m-autoridad">Consejo de Defensa Nacional</mark>, dependiendo directamente del <mark class="m-autoridad">Ministro de Defensa</mark>, en los términos que determine el <mark class="m-autoridad">Presidente del Gobierno</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 26 — Centro Nacional de Inteligencia", `
+      <p>El <mark class="m-autoridad">CNI</mark> <mark class="m-accion">contribuirá</mark> a la <mark class="m-destacable">obtención, evaluación e interpretación de la información</mark> necesaria para <mark class="m-accion">prevenir y evitar</mark> riesgos o amenazas que afecten a la <mark class="m-destacable">independencia e integridad de España</mark>, intereses nacionales y estabilidad del Estado.</p>
+    `)
+
+    + articulo("Artículo 27 — Cuerpo Nacional de Policía", `
+      <p>En los supuestos del art. 25 (conflicto bélico/estado de sitio), el <mark class="m-autoridad">Cuerpo Nacional de Policía</mark> será <mark class="m-accion">coordinado</mark> por el <mark class="m-autoridad">Consejo de Defensa Nacional</mark>, dependiendo del <mark class="m-autoridad">Ministro del Interior</mark> con el alcance que determine el <mark class="m-autoridad">Presidente del Gobierno</mark>.</p>
+    `)
+
+    + trampa("Trampa de examen", "En estado de sitio/conflicto bélico: la <b>Guardia Civil</b> pasa a depender del <b>Ministro de Defensa</b> (art. 25), mientras que la <b>Policía Nacional</b> sigue dependiendo del <b>Ministro del Interior</b> (art. 27) — ambas coordinadas por el Consejo de Defensa Nacional, pero sin cambiar de Ministerio la Policía.")
+
+    + articulo("Artículo 28 — Sistema de cooperación en materia de Protección Civil", `
+      <p>En conflicto bélico y estado de sitio, el <mark class="m-autoridad">Consejo de Defensa Nacional</mark> <mark class="m-accion">coordinará</mark> las actuaciones del sistema de <mark class="m-destacable">cooperación en materia de Protección Civil</mark>.</p>
+    `)
+
+    + articulo("Artículo 29 — Aportación de otros recursos", `
+      <p>De acuerdo con el <mark class="m-destacable">derecho y deber de defender a España</mark> (art. 30 CE), la incorporación de ciudadanos se apoyará en el <mark class="m-destacable">principio de contribución gradual y proporcionada</mark> a la amenaza, mediante la incorporación a las Fuerzas Armadas de los <mark class="m-autoridad">reservistas</mark>. La contribución de recursos materiales se hará a través del <mark class="m-destacable">órgano interministerial competente</mark>.</p>
+    `, true)
+
+    + articulo("Artículo 30 — Zonas de interés para la defensa", `
+      <p>En las <mark class="m-destacable">zonas del territorio nacional de interés para la defensa</mark> (zonas de seguridad de instalaciones militares o civiles de interés militar), podrán <mark class="m-accion">limitarse</mark> los <mark class="m-destacable">derechos sobre bienes</mark> de nacionales y extranjeros situados en ellas, de acuerdo con la ley.</p>
+    `)
+
+    + articulo("Artículo 31 — Cultura de Defensa", `
+      <p>El <mark class="m-autoridad">Ministerio de Defensa</mark> <mark class="m-accion">promoverá</mark> la <mark class="m-destacable">cultura de defensa</mark> para que la sociedad española <mark class="m-personalizado">conozca, valore y se identifique</mark> con su historia y con el <mark class="m-destacable">esfuerzo solidario y efectivo</mark> de las Fuerzas Armadas.</p>
+    `)
+
+    + articulo("Disposición final segunda — Título competencial y preceptos con carácter de Ley ordinaria", `
+      <p><b>1.</b> Esta LO se dicta en virtud de la <mark class="m-destacable">competencia exclusiva del Estado</mark> en materia de Defensa y Fuerzas Armadas (art. <mark class="m-plazo">149.1.4ª CE</mark>, en relación con los arts. <mark class="m-plazo">8.2 y 97 CE</mark>).</p>
+      <p><b>2.</b> Tienen carácter de <u class="m-clave">Ley ordinaria</u> el <mark class="m-destacable">Título III completo</mark> y los <mark class="m-destacable">artículos 20.2, 22 y del 24 al 31</mark> — el resto de la Ley tiene carácter de <mark class="m-destacable">Ley Orgánica</mark>.</p>
+    `, true)
+
+    + bloqueTitulo("9.2 — DIRECTIVA DE DEFENSA NACIONAL 2020 (11 de junio de 2020)")
+
+    + articulo("Alianza Atlántica (OTAN)", `
+      <p><mark class="m-accion">Complementar y reforzar</mark> la <mark class="m-destacable">Alianza Atlántica</mark>: una <mark class="m-destacable">OTAN sólida</mark>, con un componente europeo más cohesionado. La OTAN es <mark class="m-personalizado">vínculo fundamental</mark> para la colaboración en defensa de los <mark class="m-destacable">intereses de paz y seguridad</mark> compartidos a ambos lados del Atlántico. Con <mark class="m-plazo">70 años de historia</mark>, constituye un fundamento de nuestra <mark class="m-destacable">defensa colectiva</mark>; en su debate político se defenderá una combinación de <mark class="m-destacable">disuasión y diálogo</mark>, buscando el <mark class="m-personalizado">consenso y control político</mark> en las actuaciones aliadas.</p>
+    `)
+
+    + articulo("Líneas generales y primer objetivo de la política de defensa", `
+      <p>El <u class="m-clave">primer objetivo</u> es <mark class="m-accion">proteger</mark> a la <mark class="m-personalizado">sociedad española</mark>, su <mark class="m-destacable">Constitución</mark> y los valores, principios e instituciones que consagra, para el pleno ejercicio de <mark class="m-destacable">derechos y libertades</mark>, así como <mark class="m-accion">garantizar</mark> la <mark class="m-destacable">soberanía, independencia e integridad de España</mark> y el ordenamiento constitucional.</p>
+    `, true)
+
+    + articulo("Actuación exterior en marcos multinacionales", `
+      <p>Fuera de nuestras fronteras, la actuación habitual será en <mark class="m-destacable">marcos multinacionales concertados</mark>, preferentemente <mark class="m-autoridad">Naciones Unidas</mark>, <mark class="m-destacable">Política Común de Seguridad y Defensa de la UE</mark> u <mark class="m-autoridad">OTAN</mark> — también en <mark class="m-personalizado">coaliciones internacionales ad-hoc</mark> que respalden la <mark class="m-destacable">legalidad internacional</mark> y las resoluciones del <mark class="m-autoridad">Consejo de Seguridad de Naciones Unidas</mark>. Finalidad: <mark class="m-accion">contribuir a la paz</mark> y consolidar a España como <mark class="m-personalizado">socio y aliado de referencia</mark>.</p>
+    `)
+
+    + articulo("Equilibrio en misiones y despliegues prioritarios", `
+      <p>Se buscará un <mark class="m-destacable">equilibrio</mark> en la contribución de las Fuerzas Armadas a las misiones y operaciones de las principales organizaciones internacionales (<mark class="m-autoridad">UE, OTAN, ONU</mark>), apostando por la concentración de esfuerzo en los despliegues con especial atención al <mark class="m-personalizado">entorno europeo cercano, Mediterráneo, Sahel Occidental y Océano Atlántico</mark>.</p>
+    `)
+
+    + recuerda([
+      "El Rey tiene el mando supremo de las FAS (art. 3); el Congreso de los Diputados (no las Cortes Generales en general) autoriza previamente la participación de las FAS en misiones fuera del territorio nacional (art. 4.2).",
+      "El Presidente del Gobierno formula la Directiva de Defensa Nacional (art. 6.3.a); el Ministro de Defensa desarrolla y ejecuta la política de defensa (art. 7).",
+      "Consejo de Defensa Nacional: órgano asesor/coordinador del Presidente del Gobierno. Pleno = Presidente + Vicepresidentes + Ministros de Defensa/Interior/Ext.-Coop./Economía + JEMAD + los 3 JEME + Secretario Estado CNI + Director Gabinete Presidencia. Consejo Ejecutivo = igual pero sin Vicepresidentes, sin Economía y sin los 3 JEME (solo JEMAD).",
+      "Las FAS son una entidad única (Ejército de Tierra, Armada, Ejército del Aire) organizada en estructura orgánica (preparación) y estructura operativa (empleo, principio de unidad de mando), mandada esta última por el JEMAD.",
+      "Autorización del Congreso (art. 17) solo hace falta para operaciones en el exterior NO relacionadas con la defensa de España o el interés nacional; en máxima urgencia sin consulta previa, se somete a ratificación posterior. El Gobierno informa al Congreso al menos una vez al año (art. 18).",
+      "Quedan prohibidos los Tribunales de Honor en el ámbito militar (art. 21.2).",
+      "Guardia Civil: depende del Ministro del Interior (funciones LO 2/86 FCSE) y del Ministro de Defensa (misiones de carácter militar). En conflicto bélico/estado de sitio pasa a depender directamente del Ministro de Defensa (art. 25), mientras la Policía Nacional sigue bajo el Ministro del Interior (art. 27) — ambas coordinadas por el Consejo de Defensa Nacional.",
+      "Tienen carácter de Ley ordinaria (no orgánica) el Título III completo y los arts. 20.2, 22 y 24 a 31 (Disposición final segunda).",
+      "Directiva de Defensa Nacional 2020: primer objetivo = proteger a la sociedad española y su Constitución, garantizando soberanía, independencia e integridad territorial; actuación exterior preferentemente en marcos ONU/UE/OTAN."
+    ]);
+})();
+
 function render(){
   const nav = document.getElementById('nav-temas');
   const lista = document.getElementById('lista-esquemas');
