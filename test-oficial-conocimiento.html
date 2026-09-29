@@ -1152,4 +1152,49 @@ function toggleModoVoz(){
 })();
 /* ==================== FIN NOTIFICACIONES DE ACTUALIZACIÓN DEL TEMARIO ==================== */
 </script>
+<script>
+/* ==================== PROGRESO A PRUEBA DE ACTUALIZACIONES ==================== */
+(function(){
+  var SNAP_KEY='oficialSnapshot_v1', DB='oficialBackupDB', ST='snap';
+  function idb(){return new Promise(function(res,rej){try{var r=indexedDB.open(DB,1);r.onupgradeneeded=function(){r.result.createObjectStore(ST)};r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)}}catch(e){rej(e)}})}
+  function idbPut(v){return idb().then(function(d){return new Promise(function(res,rej){var t=d.transaction(ST,'readwrite');t.objectStore(ST).put(v,SNAP_KEY);t.oncomplete=res;t.onerror=function(){rej(t.error)}})})}
+  function idbGet(){return idb().then(function(d){return new Promise(function(res,rej){var q=d.transaction(ST).objectStore(ST).get(SNAP_KEY);q.onsuccess=function(){res(q.result)};q.onerror=function(){rej(q.error)}})})}
+  function todo(){var o={};try{for(var i=0;i<localStorage.length;i++){var k=localStorage.key(i);o[k]=localStorage.getItem(k)}}catch(e){}return o}
+  function histLen(o){try{return (JSON.parse(o[STORAGE_KEY]||'{}').history||[]).length}catch(e){return 0}}
+  var t=null;
+  function programar(){clearTimeout(t);t=setTimeout(function(){var d=todo();if(!d[STORAGE_KEY])return;idbPut({fecha:Date.now(),datos:d}).catch(function(){})},800)}
+  var orig=Storage.prototype.setItem;
+  Storage.prototype.setItem=function(k,v){orig.call(this,k,v);if(this===localStorage)programar()};
+  try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(e){}
+  // Restaurar si el navegador borró el almacenamiento local
+  idbGet().then(function(s){
+    if(!s||!s.datos)return;
+    var act=todo();
+    if(!act[STORAGE_KEY]||histLen(s.datos)>histLen(act)){
+      try{if(sessionStorage.getItem('oficialRestaurado'))return;sessionStorage.setItem('oficialRestaurado','1')}catch(e){}
+      Object.keys(s.datos).forEach(function(k){if(!(k in act)||k===STORAGE_KEY)orig.call(localStorage,k,s.datos[k])});
+      location.reload();
+    } else programar();
+  }).catch(function(){});
+  // Copia de seguridad completa (incluye estudio guiado, zona de estudio, etc.)
+  window.exportarProgreso=function(){
+    var d=todo();delete d.deviceMode;
+    try{var s=JSON.parse(d[STORAGE_KEY]||'{}');delete s.iaApiKey;d[STORAGE_KEY]=JSON.stringify(s)}catch(e){}
+    var b=new Blob([JSON.stringify({tipo:'oficial-backup-completo',fecha:new Date().toISOString(),datos:d},null,2)],{type:'application/json'});
+    var u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='progreso-test-oficial-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(u);
+  };
+  window.importarProgreso=function(input){
+    var f=input.files&&input.files[0];if(!f)return;var r=new FileReader();
+    r.onload=function(e){try{
+      var j=JSON.parse(e.target.result);if(!j||typeof j!=='object')throw new Error('formato inválido');
+      if(!confirm('Esto reemplazará tu progreso actual por el del archivo importado. ¿Continuar?'))return;
+      if(j.tipo==='oficial-backup-completo'&&j.datos){var key=localStorage.getItem(STORAGE_KEY),api='';try{api=JSON.parse(key||'{}').iaApiKey||''}catch(x){}
+        Object.keys(j.datos).forEach(function(k){var v=j.datos[k];if(k===STORAGE_KEY){try{var s=JSON.parse(v);if(api)s.iaApiKey=api;v=JSON.stringify(s)}catch(x){}}orig.call(localStorage,k,v)});
+      } else {state=Object.assign(defaultState(),j);saveState()}
+      alert('Progreso importado correctamente.');location.reload();
+    }catch(err){alert('No se pudo importar el archivo: '+err.message)}};
+    r.readAsText(f);input.value='';
+  };
+})();
+</script>
 </body></html>
