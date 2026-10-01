@@ -1,0 +1,40 @@
+# Prompt: esquema de un tema a partir de las preguntas de test (Método Prefortia)
+
+Uso: en una conversación nueva escribe `/esquema-tema N` (comando del proyecto) o pega este texto, y adjunta el PDF del tema (y la actualización, si la hay). Opcional: el resumen de un compañero (.docx).
+
+---
+
+Vamos a hacer el esquema del **Tema N** en `esquemas.html` (proyecto `C:\Users\ruben\OneDrive\Desktop\HTML OFICIAL`, repo `sgtxolo/test-oficial`, rama `main`). Modelo a imitar: **Tema 1 y Tema 4** ya hechos en ese archivo (estilo, colores y densidad de subrayado).
+
+## Idea
+El esquema se basa **ÚNICAMENTE en lo que preguntan los tests del Tema N** de la app `test-oficial-conocimiento.html` (preguntas oficiales + IA), porque eso es lo que creo que va a caer. El texto legal se saca del **PDF del temario** que te adjunto (y de la actualización, si hay). Nada de completar de memoria.
+
+## Pasos
+1. **Extraer las preguntas del tema** (objetos `{"id":"N-..."}`):
+   `node prompts/herramientas/extraer-preguntas.js test-oficial-conocimiento.html N <scratchpad>/tN.json`
+   Agrúpalas por **norma y artículo** (usa `ref-norma` / `ref-concepto` de la explicación y la respuesta correcta). Para ver preguntas concretas: `node prompts/herramientas/show.js <tN.json> N-12 N-40`.
+2. **Extraer el texto del PDF**: `pdftotext -enc UTF-8 -layout "<pdf>" <scratchpad>/tema.txt` (también el de la actualización). Mira el índice: qué normas entran en el tema y qué añade la actualización.
+3. **Construir el esquema**:
+   - **Un artículo = una ficha.** Si varias preguntas tocan el mismo artículo/apartado, se juntan; **nunca duplicar**.
+   - Solo los apartados/datos que preguntan los tests, con el **texto literal del PDF** (no resúmenes inventados).
+   - Orden: el del índice del temario (N.1, N.2…), con `bloqueTitulo()` por norma y por título/capítulo.
+   - Sello `EX` (tercer argumento `true`) en los artículos más preguntados o con preguntas oficiales.
+   - `trampa()` justo debajo del artículo al que corresponde (cifras que se confunden, versiones antiguas, «no» vs «sí»…).
+   - Si un artículo remite a otro («conforme al art. 6.7»), explicar entre paréntesis de qué trata.
+   - Un único `recuerda([...])` al **final** con los plazos, mayorías y órganos clave del tema.
+   - Si hay **resumen de un compañero**, leerlo (`unzip` del .docx → `word/document.xml`) y añadir lo que falte en su artículo.
+   - Normas preguntadas que **no estén en el temario**: en un bloque «ANEXO» al final, con aviso de que no se han podido cotejar con el PDF.
+   - Código en `esquemas.html`: objeto `TN = {}` con un bloque por norma (`/* TN_XXX */ TN.xxx = bloqueTitulo(...) + articulo(...) ...`) y al final `/* TN_RECUERDA + ensamblaje */` que hace `esquemas[N-1].titulo = ...; esquemas[N-1].html = leyenda() + ... + recuerda([...])`, colocado **justo antes de `render();`**.
+4. **Subrayado Método Prefortia EXHAUSTIVO** (como Tema 1 y Tema 4 — casi cada palabra con contenido coloreada; solo quedan en plano nexos y relleno):
+   - `m-autoridad` **verde**: órganos, autoridades, Estados, Agencia, Comisión, director ejecutivo…
+   - `m-plazo` **azul**: plazos, fechas, cifras, porcentajes, «anualmente», «24/7»…
+   - `m-accion` **morado**: verbos de acción (notificará, decide, suprime, vincula…).
+   - `m-destacable` **naranja**: conceptos jurídicos y sustantivos clave.
+   - `m-personalizado` **amarillo**: calificativos y matices (efectiva, motivada, técnicamente imposible…).
+   - `<u class="m-clave">` **rojo subrayado, sin fondo**: no, salvo, únicamente, cuando, si, podrá, deberá, al menos, a más tardar, cualquier… (cerrar siempre con `</u>`, nunca con `</mark>`).
+   - Tras redactar, pasar el densificador y **revisar visualmente**:
+     `node prompts/herramientas/densify.js esquemas.html N` (solo colorea texto que aún esté en plano; añadir a sus listas los términos propios del tema si hace falta).
+5. **Corregir las preguntas que contradigan el temario**, a la vez que se hace el esquema: respuesta mal marcada, cifra de una versión antigua, ninguna opción correcta… Verificar **siempre en el PDF** y corregir en `test-oficial-conocimiento.html` (`correcta`, texto de la opción si hace falta y `explicacion` citando el artículo literal) con la plantilla `prompts/herramientas/fix.js`. Si algo no se puede verificar en el PDF, no tocarlo y avisarme.
+6. **Comprobaciones**: balance `<mark>`/`</mark>` y `<u>`/`</u>`; sintaxis de los `<script>` (`new Function` con Node); abrir `esquemas.html` en el navegador, tema N, sin errores de consola, captura de pantalla; móvil incluido.
+7. **Commit y push** a `origin/main` de cada cambio (esquema y preguntas por separado), sin esperar a que lo pida.
+8. **Informe final corto**: nº de preguntas usadas, normas cubiertas, preguntas corregidas (id → cambio y artículo), normas fuera del temario, cosas no verificables y estimación de páginas/tiempo de estudio.

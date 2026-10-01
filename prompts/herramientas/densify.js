@@ -1,0 +1,71 @@
+// Densifica el subrayado Método Prefortia del Tema 4 en esquemas.html
+const fs=require('fs');
+// Uso: node densify.js esquemas.html 5   (procesa la región /* T5_... */ hasta /* T5_RECUERDA */)
+const FILE=process.argv[2];const N=process.argv[3]||'4';
+let s=fs.readFileSync(FILE,'utf8');
+const A=s.indexOf('/* T'+N+'_'), Z=s.indexOf('/* T'+N+'_RECUERDA');if(A<0||Z<0)throw new Error('Marcadores /* T'+N+'_... */ y /* T'+N+'_RECUERDA */ no encontrados');
+let region=s.slice(A,Z);
+
+const W='(?<![\\p{L}\\p{N}])', E='(?![\\p{L}\\p{N}])';
+const alt=a=>a.sort((x,y)=>y.length-x.length).map(x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|');
+
+const NUM='(?:\\d+(?:[.,]\\d+)?|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|catorce|quince|dieciséis|dieciocho|veinte|veintiún|veintiuno|veinticuatro|treinta|cuarenta|cuarenta y cinco|sesenta|noventa|cien)';
+const UNIT='(?:horas?|días?(?: hábiles| naturales| laborables)?|semanas?|meses|mes|años?)';
+const MESES='(?:enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)';
+const plazo=[
+  `${NUM}(?:\\s+(?:o|y)\\s+${NUM})?\\s+${UNIT}(?:\\s+(?:más|adicionales|siguientes|anteriores))?`,
+  `\\d{1,2} de ${MESES}(?: de(?: cada año)? ?\\d{4})?(?: de cada año)?`,
+  `\\d+(?:[.,]\\d+)? ?%`,
+  '24 ?/ ?7','anual(?:es|mente)?','trimestralmente','cada año','en tiempo real','sin demora','de inmediato','inmediatamente','periódicamente','tan pronto como sea posible','una vez al año','dos veces al año','una sola vez'
+];
+const autoridad=['Comisión','Consejo','Parlamento Europeo','PE','Agencia','la Agencia','director ejecutivo','directores ejecutivos adjuntos','consejo de administración','junta ejecutiva','Estado miembro de acogida','Estado miembro de origen','Estados miembros participantes','Estado miembro emisor','Estado miembro responsable','Estado miembro requirente','Estado miembro requerido','Estado de acogida','Estado de origen','Estados miembros','Estado miembro','Estados','Parte Contratante','Partes Contratantes','Partes','Parte requerida','guardia de fronteras','guardias de fronteras','centro nacional de coordinación','centros nacionales de coordinación','centro de coordinación internacional','centros internacionales de coordinación','Europol','Eurojust','eu-LISA','SEPD','Supervisor Europeo de Protección de Datos','Tribunal de Justicia','autoridades nacionales','autoridad competente','autoridades competentes','punto de contacto nacional','puntos de contacto','punto de contacto','Comité de Ministros','foro consultivo','agente de derechos fundamentales','observador de derechos fundamentales','observadores de derechos fundamentales','oficina Sirene','oficinas Sirene','Autoridad de Gestión','propietario','propietarios','originador','originadores','Consejo de Acreditación','responsable de seguridad de la Agencia','presidente','vicepresidente','supervisor del retorno forzoso','supervisores del retorno forzoso','agentes de coordinación','funcionarios de enlace','funcionario de enlace','equipos','miembros de los equipos','personal estatutario','personal operativo','agentes','escoltas','asesores','Gobierno de Alemania','Secretaría General del Consejo','FRA','AESM','AECP','MAOC-N','OMS','Interpol','usuario final','solicitante','solicitantes','nacionales de terceros países','nacional de un tercer país','apátridas','retornado','titular','titulares','menores','víctimas','Presidencia del Consejo','autoridades públicas','autoridades de protección de datos independientes','Defensor del Pueblo Europeo','Centro de Coordinación de Salvamento Marítimo'];
+const clave=['no','ni','sin','salvo','excepto','únicamente','solo','sólo','solamente','exclusivamente','cuando','si','siempre que','a más tardar','como máximo','como mínimo','al menos','máximo','mínimo','en todo caso','cualquier','cualquiera','todo','toda','todos','todas','podrá','podrán','deberá','deberán','debe','deben','y/o','asimismo','además','nunca','en particular','obligatorio','obligatoriamente','potestativo','previa','previo','sin perjuicio','a reserva de','en lugar de','salvo que','a menos que','antes','después','prevalece','prevalecerá'];
+const verbos=['aplica','aplican','decide','deciden','notifica','notifican','adopta','adoptan','vincula','informa','informan','gestiona','gestionan','coordina','coordinan','establece','establecen','crea','crean','mantiene','mantienen','emite','presenta','presentan','transmite','transmiten','comunica','comunican','suprime','suprimen','se suprimen','se suprime','conserva','conservan','designa','designan','nombra','elige','eligen','responde','autoriza','deniega','recurrir','cruzar','cruzan','accede','acceden','consulta','consultan','compara','comprueba','incluye','incluyen','contienen','contiene','exige','exigen','requiere','prohibir','limitar','impedir','detectar','atajar','contribuir','apoyar','evaluar','evalúa','aprueba','aprobar','supervisa','asume','sufraga','paga','pagan','entregan','entregar','reembolsa','reembolsar','indemniza','responde','actúan','actúa','siguen','sigue','llevan','lleva','usan','utilizar','introducir','introduce','modifica','modificar','consultar','registran','se registran','almacenar','prorrogar','prorrogable','prorrogables','restablecer','renovable','cerrar','proseguir','residan','residir','retornar','expulsar','internar','declarar','poseer','llevar','solicitar','pedir','pide','piden','fija','fijan','prepara','realiza','realizan','controla','asigna','atribuyen','archiva','archivar','notificar','informar','vela','garantiza','garantizan','garantizar','asegurar','facilitar','cooperar','intercambiar','evitar','obtener','analizar','identificar','prestar','enviar','envía','desplegar','despliegue','financia','cofinancia','retirar','poner fin','pone','ponen','delega','delegar','se adhiere','se adherirá','surte efecto','entra en vigor','deroga','sustituye','cede','rige','se rige','se rigen','dispensa','computa','vence','vencen','reconocerse','reconoce','marcados','bloquea','bloquear','cancelan','se cancelan','supresión','prohíbe'];
+const destac=['filas','fila','documento','documentos','terceros países','tercer país','Derecho interno','derecho interno','Derecho nacional','libre circulación','beneficiarios','personas','persona','territorio','fronteras','frontera','buques','buque','vuelos','vuelo','aeronaves','pasaporte','pasajeros','lengua','estadísticas','situación','objetivo','fin','fines','motivos','casos concretos','delito','delitos','terrorismo','perfiles','huellas','material genético','funcionamiento','sistema','sistemas','red','actividades','tareas','usuarios','competencias','instrucciones','presencia','territorio','Unión','UE','Schengen','controles fronterizos','control fronterizo','fronteras interiores','fronteras exteriores','frontera exterior','frontera interior','pasos fronterizos','paso fronterizo','denegación de entrada','descripción','descripciones','datos personales','datos de carácter personal','datos','notificación','notificaciones','mapa de situación','mapas de situación','plan operativo','planes operativos','operación conjunta','operaciones conjuntas','intervención fronteriza rápida','intervenciones fronterizas rápidas','intervención de retorno rápida','visado','visados','documento de viaje','documentos de viaje','permiso de residencia','información','evaluación','evaluaciones','informe','informes','recomendación','dictamen','decisión','decisiones','solicitud','solicitudes','perfiles de ADN','perfil de ADN','índices de referencia','registro','registros','sello','sellos','inspección','inspecciones','vigilancia','retorno','retornos','expulsión','internamiento','salida voluntaria','protección internacional','asilo','estancia','entrada','salida','residencia','sanciones','responsabilidad','responsabilidad civil','responsabilidad penal','seguridad','orden público','seguridad interior','seguridad nacional','amenaza','amenaza grave','prórroga','prórrogas','restablecimiento','supresión','conservación','acreditación','presupuesto','mandato','mayoría','unanimidad','análisis de riesgos','nivel de impacto','niveles de impacto','incidente','incidentes','hecho','hechos','indicadores','EUROSUR','SIS','VIS','SES','ETIAS','FADO','cuerpo permanente','reserva de reacción rápida','equipamiento técnico','armas','armas de servicio','uso de la fuerza','uniforme','brazalete azul','derechos fundamentales','código de conducta','acuerdo','acuerdos','tratado','Tratado','convenio','Convenio','Reglamento','Directiva','Decisión marco','anexo','Anexo','consulta','consultas','concordancia','transmisión','huellas abiertas','datos dactiloscópicos','vehículos','matrícula','acontecimientos importantes','grandes eventos','atentados terroristas','delincuencia transfronteriza','inmigración ilegal','migración ilegal','búsqueda y salvamento','zona prefronteriza','punto crítico','listas de alerta rápida','lista de alerta rápida','solicitud de información','nivel de confianza','subnivel','componente europeo','componentes nacionales','componente nacional','componente externo','situación de crisis','crisis','emergencia de salud pública a gran escala','medidas','medida','plazo','plazos','votos','voto','candidatos','lista','sede','personalidad jurídica','gastos','formación','dignidad humana','personas vulnerables','medios de subsistencia','huellas dactilares','datos biométricos','fotografía','expediente','expedientes','recurso','efectos suspensivos','efecto suspensivo','resolución motivada','autorización','autorización previa','consentimiento','bloqueo','marcado','depositario','denuncia','instrumento','ratificación','entrada en vigor','DOUE','Diario Oficial de la Unión Europea'];
+
+const cats=[
+  ['m-plazo',new RegExp(W+'(?:'+plazo.join('|')+')'+E,'giu')],
+  ['m-autoridad',new RegExp(W+'(?:'+alt(autoridad)+')'+E,'gu')],
+  ['clave',new RegExp(W+'(?:'+alt(clave)+')'+E,'giu')],
+  ['m-accion',new RegExp(W+'(?:'+alt(verbos)+'|[\\p{L}]{3,}(?:ará|erá|irá|arán|erán|irán))'+E,'giu')],
+  ['m-destacable',new RegExp(W+'(?:'+alt(destac)+'|[\\p{L}]{4,}(?:ción|ciones|miento|mientos|dad|dades|ncia|ncias|aje|ajes|ismo|ismos))'+E,'giu')],
+  ['m-personalizado',new RegExp(W+'(?!(?:durante|mediante|ante|antes|delante|cada|todo|toda|dado|lado|Estado|Estados|mandato)'+E+')(?:[\\p{L}]{3,}(?:al|ales|ivo|iva|ivos|ivas|ble|bles|ado|ada|ados|adas|ido|ida|idos|idas|ico|ica|icos|icas|ario|aria|arios|arias|oso|osa|osos|osas|ente|entes|ante|antes))(?:\\s+(?:y|o|e)\\s+[\\p{L}]{3,}(?:al|ales|ivo|iva|ivos|ivas|ble|bles|ado|ada|ados|adas|ido|ida|idos|idas|ico|ica|icos|icas|ente|entes))?'+E,'giu')],
+];
+
+function densifyText(t){
+  // encuentra coincidencias de todas las categorías, sin solaparse (prioridad por orden y longitud)
+  const found=[];
+  cats.forEach(([c,re],pri)=>{re.lastIndex=0;let m;while((m=re.exec(t))){if(m[0].trim())found.push({a:m.index,b:m.index+m[0].length,c,pri})}});
+  found.sort((x,y)=>x.a-y.a||(y.b-y.a)-(x.b-x.a)||x.pri-y.pri);
+  const pick=[];let end=-1;
+  // resolver solapes: preferir prioridad alta si empiezan igual, si no el primero
+  for(const f of found){if(f.a>=end){pick.push(f);end=f.b}}
+  let out='',p=0;
+  for(const f of pick){
+    out+=t.slice(p,f.a);
+    const w=t.slice(f.a,f.b);
+    out+= f.c==='clave'?`<u class="m-clave">${w}</u>`:`<mark class="${f.c}">${w}</mark>`;
+    p=f.b;
+  }
+  return out+t.slice(p);
+}
+
+function densifyHTML(h){
+  const parts=h.split(/(<[^>]+>)/);
+  let depth=0,res='';
+  for(const part of parts){
+    if(part.startsWith('<')){
+      if(/^<(mark|u|b)\b/.test(part))depth++;
+      else if(/^<\/(mark|u|b)>/.test(part))depth--;
+      res+=part;
+    } else res+= depth>0?part:densifyText(part);
+  }
+  return res;
+}
+
+// Solo dentro del cuerpo de articulo(...) : segundo argumento, template literal
+let count=0;
+region=region.replace(/(articulo\("[^"]*",\s*`)([\s\S]*?)(`)/g,(m,a,body,c)=>{count++;return a+densifyHTML(body)+c});
+s=s.slice(0,A)+region+s.slice(Z);
+fs.writeFileSync(FILE,s);
+console.log('articulos procesados',count);
