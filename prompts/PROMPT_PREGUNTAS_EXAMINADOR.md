@@ -41,7 +41,8 @@ Generar **50 preguntas tipo test** sobre ese texto que tengan la **máxima proba
 2. Basarte **únicamente** en el texto dado: la respuesta correcta debe ser **literal o casi literal** del artículo. Nada de memoria.
 3. **Verifica cada pregunta contra el texto** antes de darla por buena (respuesta correcta presente literalmente; los tres distractores falsos según el texto). Si un dato no se puede verificar, descarta la pregunta.
 4. Reparte la letra correcta de forma equilibrada (A, B, C y D ≈ 12-13 cada una) y no pongas siempre la respuesta más larga como correcta.
-5. Cubre el texto de forma repartida (no concentrar 10 preguntas en un mismo artículo), dando más peso a los artículos con más plazos, órganos y enumeraciones.
+5. Si al revisar el banco existente ves alguna pregunta (oficial o IA) que **contradice el texto**, corrígela (`correcta`, opción y `explicacion` con la cita literal) con `prompts/herramientas/fix.js`: **el temario es el que manda**. Las preguntas **oficiales nunca se eliminan**, solo se corrigen. Avísame de cada corrección.
+6. Cubre el texto de forma repartida (no concentrar 10 preguntas en un mismo artículo), dando más peso a los artículos con más plazos, órganos y enumeraciones.
 
 ## Formato (el mismo que usa la app)
 Cada pregunta es un objeto:
