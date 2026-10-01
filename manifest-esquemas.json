@@ -1,0 +1,12 @@
+{
+  "name": "Esquemas de Estudio - Oficial GC",
+  "short_name": "Esquemas",
+  "start_url": "esquemas.html",
+  "display": "standalone",
+  "background_color": "#f5f4ee",
+  "theme_color": "#1c4d3c",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
