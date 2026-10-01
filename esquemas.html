@@ -41,7 +41,8 @@
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body,html{margin:0;padding:0;background:var(--fondo);color:var(--texto)}
-#app{max-width:820px;margin:0 auto;min-height:100vh;padding:18px 18px 60px}
+#app{max-width:none;width:100%;margin:0 auto;min-height:100vh;padding:18px 28px 60px}
+.btn-volver{display:none}
 h1,h2,h3{margin:0;color:var(--verde-osc);font-family:Georgia,'Times New Roman',serif}
 p{margin:0}
 
@@ -121,17 +122,22 @@ u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoratio
 .btn-pdf:hover{background:var(--verde-suave)}
 
 @media (max-width:720px){
+  #app{max-width:820px;padding:18px 18px 60px}
   .layout{flex-direction:column}
-  .sidebar{width:100%;position:static;display:flex;flex-wrap:wrap;gap:6px}
+  .sidebar{width:100%;position:static;max-height:none}
   .sidebar h3{width:100%}
-  .tema-nav-item{margin-bottom:0}
   .topbar{flex-wrap:wrap}
+  .content{width:100%;display:none}
+  body.ver-esquema .content{display:block}
+  body.ver-esquema .sidebar{display:none}
+  .btn-volver{display:block;position:sticky;top:64px;z-index:9;margin:0 0 12px;border:none;background:var(--verde);color:#fff;border-radius:20px;padding:9px 16px;font-size:13px;font-weight:700;font-family:inherit;cursor:pointer}
 }
 
 @media print{
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important}
   body,html{background:#fff}
-  .topbar,.sidebar,.btn-pdf{display:none!important}
+  .topbar,.sidebar,.btn-pdf,.btn-volver{display:none!important}
+  .content{display:block!important}
   .layout{display:block}
   .content{width:100%}
   .esquema{display:none!important;box-shadow:none;border-radius:0;padding:0}
@@ -160,8 +166,11 @@ u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoratio
       <!-- Los temas se listan aquí automáticamente -->
     </div>
 
-    <div class="content" id="lista-esquemas">
-      <!-- Los esquemas se insertan aquí -->
+    <div class="content">
+      <button class="btn-volver" id="btn-volver">← Temas</button>
+      <div id="lista-esquemas">
+        <!-- Los esquemas se insertan aquí -->
+      </div>
     </div>
   </div>
 </div>
@@ -1957,7 +1966,10 @@ function render(){
 function mostrar(id){
   document.querySelectorAll('.esquema').forEach(e => e.classList.toggle('active', e.id === id));
   document.querySelectorAll('.tema-nav-item').forEach(n => n.classList.toggle('active', n.dataset.target === id));
+  document.body.classList.add('ver-esquema');
+  window.scrollTo(0,0);
 }
+document.getElementById('btn-volver').onclick = () => { document.body.classList.remove('ver-esquema'); window.scrollTo(0,0); };
 
 // ---- TEMA 2 (Terrorismo y Delincuencia Transnacional) ----
 (function(){
