@@ -2576,16 +2576,21 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
   cargarVoces();
   synth.onvoiceschanged = cargarVoces;
 
-  // Trocea un texto largo en frases de <= 220 caracteres (Chrome corta locuciones largas)
+  // Trocea un texto largo en trozos de <= 110 caracteres (los móviles fallan o cortan con locuciones largas)
   function trocear(t){
-    const frases = t.match(/[^.;:!?]+[.;:!?]*\s*/g) || [t];
-    const out = []; let cur = '';
-    frases.forEach(f => {
-      if((cur + f).length > 220 && cur){ out.push(cur.trim()); cur = ''; }
-      cur += f;
+    const MAX = 110, out = [];
+    (t.match(/.+?(?:[.;:!?]+(?=s|$)|$)s*/g) || [t]).forEach(f => {
+      f = f.trim();
+      while(f.length > MAX){
+        let cut = f.lastIndexOf(',', MAX); if(cut < 40) cut = f.lastIndexOf(' ', MAX); if(cut < 1) cut = MAX;
+        out.push(f.slice(0, cut + 1).trim()); f = f.slice(cut + 1).trim();
+      }
+      if(f) out.push(f);
     });
-    if(cur.trim()) out.push(cur.trim());
-    return out;
+    // junta trozos muy cortos con el siguiente
+    const res = [];
+    out.forEach(c => { if(res.length && res[res.length-1].length + c.length < 90) res[res.length-1] += ' ' + c; else res.push(c); });
+    return res;
   }
   function limpiar(t){
     return t.replace(/⚠|🎯|✔|→|•/g,' ').replace(/\bEX\b/g,'').replace(/\barts\.\s*/gi,'artículos ').replace(/\bart\.\s*/gi,'artículo ').replace(/\s+/g,' ').trim();
@@ -2624,7 +2629,7 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
     if(v){ u.voice = v; u.lang = v.lang; } else u.lang = 'es-ES';
     u.rate = parseFloat($('voz-vel').value) || 1;
     u.onend = () => { if(mi !== token || estado !== 'leyendo') return; pos++; hablar(); };
-    u.onerror = e => { if(mi !== token) return; if(e.error === 'interrupted' || e.error === 'canceled') return; pos++; hablar(); };
+    u.onerror = e => { if(mi !== token) return; if(e.error === 'interrupted' || e.error === 'canceled') return; $('voz-info').textContent = 'Error de voz: ' + e.error; pos++; hablar(); };
     marcar(cola[pos].el);
     $('voz-info').textContent = `Fragmento ${pos+1} de ${cola.length}`;
     synth.speak(u);
