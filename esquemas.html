@@ -166,6 +166,17 @@ u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoratio
   .articulo{break-inside:avoid}
   .trampa,.recuerda{break-inside:avoid}
 }
+/* ---- LECTOR DE VOZ ---- */
+.voz-bar{display:none}
+body.ver-esquema .voz-bar{display:flex}
+.voz-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--panel);border-top:1.5px solid var(--borde);box-shadow:0 -4px 14px rgba(0,0,0,.12)}
+.voz-bar button{border:none;background:var(--verde);color:#fff;border-radius:50%;width:48px;height:48px;font-size:20px;cursor:pointer;font-family:inherit}
+.voz-bar button.sec{background:var(--verde-suave);color:var(--verde-osc);width:42px;height:42px;font-size:17px}
+.voz-bar select{border:1.5px solid var(--borde);background:var(--panel-alt);color:var(--texto);border-radius:12px;padding:8px;font-size:13px;font-family:inherit;max-width:44vw}
+.voz-info{width:100%;text-align:center;font-size:12px;color:var(--texto-gris);margin-top:-2px}
+body.ver-esquema #app{padding-bottom:130px}
+.leyendo{outline:3px solid var(--examen-borde);outline-offset:3px;border-radius:6px;background:var(--examen-bg)}
+@media print{.voz-bar{display:none!important}}
 </style>
 </head>
 <body>
@@ -196,6 +207,16 @@ u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoratio
   </div>
 </div>
 
+<div class="voz-bar" id="voz-bar">
+  <button class="sec" id="voz-ant" title="Anterior">⏮</button>
+  <button id="voz-play" title="Escuchar / pausar">▶</button>
+  <button class="sec" id="voz-sig" title="Siguiente">⏭</button>
+  <button class="sec" id="voz-stop" title="Parar">⏹</button>
+  <select id="voz-modo" title="Qué leer"><option value="todo">Todo el esquema</option><option value="resumen">Solo respuestas y resumen</option></select>
+  <select id="voz-vel" title="Velocidad"><option value="0.85">0,85×</option><option value="1" selected>1×</option><option value="1.15">1,15×</option><option value="1.3">1,3×</option><option value="1.5">1,5×</option></select>
+  <select id="voz-voz" title="Voz"></select>
+  <div class="voz-info" id="voz-info"></div>
+</div>
 <script>
 // ---- ESQUEMAS ----
 // Cada esquema es un objeto: { id, tema, titulo, bloques: [{ titulo, puntos: [{texto, examen:true/false}] }] }
@@ -2534,6 +2555,128 @@ T3.html = bloqueTitulo("3.1 — TRATADO DE LA UNIÓN EUROPEA (Maastricht, 7-2-19
 
 render();
 if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").catch(function(){});});}
+// ---- LECTOR DE VOZ (Web Speech API) ----
+(function(){
+  const bar = document.getElementById('voz-bar');
+  if(!('speechSynthesis' in window)){ bar.remove(); return; }
+  const synth = window.speechSynthesis;
+  const $ = id => document.getElementById(id);
+  let cola = [], pos = 0, estado = 'parado', marcado = null, token = 0;
+
+  function cargarVoces(){
+    const sel = $('voz-voz');
+    const voces = synth.getVoices().filter(v => /^es/i.test(v.lang));
+    if(!voces.length) return;
+    const prev = sel.value;
+    sel.innerHTML = voces.map(v => `<option value="${v.name}">${v.name.replace(/Microsoft |Google /,'')} (${v.lang})</option>`).join('');
+    let guardada = ''; try{ guardada = localStorage.getItem('esquemas-voz') || ''; }catch(e){}
+    const elegida = [prev, guardada].find(n => n && voces.some(v => v.name === n)) || (voces.find(v => /es-ES/i.test(v.lang)) || voces[0]).name;
+    sel.value = elegida;
+  }
+  cargarVoces();
+  synth.onvoiceschanged = cargarVoces;
+
+  // Trocea un texto largo en frases de <= 220 caracteres (Chrome corta locuciones largas)
+  function trocear(t){
+    const frases = t.match(/[^.;:!?]+[.;:!?]*\s*/g) || [t];
+    const out = []; let cur = '';
+    frases.forEach(f => {
+      if((cur + f).length > 220 && cur){ out.push(cur.trim()); cur = ''; }
+      cur += f;
+    });
+    if(cur.trim()) out.push(cur.trim());
+    return out;
+  }
+  function limpiar(t){
+    return t.replace(/⚠|🎯|✔|→|•/g,' ').replace(/\bEX\b/g,'').replace(/\barts\.\s*/gi,'artículos ').replace(/\bart\.\s*/gi,'artículo ').replace(/\s+/g,' ').trim();
+  }
+  function construirCola(){
+    const act = document.querySelector('.esquema.active');
+    cola = []; pos = 0;
+    if(!act) return;
+    const resumen = $('voz-modo').value === 'resumen';
+    const sel = resumen
+      ? '.esquema-head h2, .articulo-head, .resp-strip, .trampa, .recuerda li'
+      : '.esquema-head h2, .bloque-titulo, .articulo-head, .resp-strip, .txt, .trampa, .recuerda li';
+    act.querySelectorAll(sel).forEach(el => {
+      let bloques = [el];
+      if(el.classList.contains('txt')){
+        const ps = Array.from(el.querySelectorAll('p,li')).filter(n => !n.querySelector('p,li'));
+        if(ps.length) bloques = ps;
+      }
+      bloques.forEach(b => {
+        const texto = limpiar(b.innerText || b.textContent);
+        if(texto.length < 2) return;
+        trocear(texto).forEach(c => cola.push({texto:c, el:b}));
+      });
+    });
+  }
+  function marcar(el){
+    if(marcado) marcado.classList.remove('leyendo');
+    marcado = el;
+    if(el){ el.classList.add('leyendo'); el.scrollIntoView({block:'center', behavior:'smooth'}); }
+  }
+  function hablar(){
+    if(pos >= cola.length){ parar(); return; }
+    const mi = ++token;
+    const u = new SpeechSynthesisUtterance(cola[pos].texto);
+    const v = synth.getVoices().find(x => x.name === $('voz-voz').value);
+    if(v){ u.voice = v; u.lang = v.lang; } else u.lang = 'es-ES';
+    u.rate = parseFloat($('voz-vel').value) || 1;
+    u.onend = () => { if(mi !== token || estado !== 'leyendo') return; pos++; hablar(); };
+    u.onerror = e => { if(mi !== token) return; if(e.error === 'interrupted' || e.error === 'canceled') return; pos++; hablar(); };
+    marcar(cola[pos].el);
+    $('voz-info').textContent = `Fragmento ${pos+1} de ${cola.length}`;
+    synth.speak(u);
+  }
+  function actualizarBoton(){ $('voz-play').textContent = estado === 'leyendo' ? '⏸' : '▶'; }
+  function reproducir(){
+    if(estado === 'pausado'){ estado = 'leyendo'; synth.resume(); actualizarBoton(); return; }
+    synth.cancel(); construirCola(); if(!cola.length) return;
+    estado = 'leyendo'; actualizarBoton(); hablar();
+  }
+  function pausar(){ estado = 'pausado'; synth.pause(); actualizarBoton(); }
+  function parar(){
+    estado = 'parado'; token++; synth.cancel(); marcar(null);
+    $('voz-info').textContent = ''; actualizarBoton();
+  }
+  function saltar(d){
+    if(estado === 'parado'){ reproducir(); return; }
+    let i = pos; const el = cola[pos] && cola[pos].el;
+    if(d > 0){ while(i < cola.length && cola[i].el === el) i++; }
+    else { i = Math.max(0, pos - 1); const e2 = cola[i].el; while(i > 0 && cola[i-1].el === e2) i--; }
+    pos = Math.min(Math.max(i, 0), cola.length - 1);
+    token++; synth.cancel(); estado = 'leyendo'; actualizarBoton(); hablar();
+  }
+  function reiniciarSiLeyendo(){
+    if(estado === 'parado') return;
+    token++; synth.cancel(); construirCola();
+    if(cola.length){ estado = 'leyendo'; actualizarBoton(); hablar(); }
+  }
+
+  $('voz-play').onclick = () => estado === 'leyendo' ? pausar() : reproducir();
+  $('voz-stop').onclick = parar;
+  $('voz-sig').onclick = () => saltar(1);
+  $('voz-ant').onclick = () => saltar(-1);
+  $('voz-vel').onchange = () => { if(estado === 'leyendo'){ token++; synth.cancel(); hablar(); } };
+  $('voz-voz').onchange = () => { try{ localStorage.setItem('esquemas-voz', $('voz-voz').value); }catch(e){} if(estado === 'leyendo'){ token++; synth.cancel(); hablar(); } };
+  $('voz-modo').onchange = reiniciarSiLeyendo;
+
+  // Al cambiar de tema o volver al listado, se detiene la lectura
+  document.getElementById('btn-volver').addEventListener('click', parar);
+  document.getElementById('nav-temas').addEventListener('click', parar);
+  window.addEventListener('beforeunload', () => synth.cancel());
+
+  // Controles de pantalla de bloqueo / volante (si el navegador lo permite)
+  if('mediaSession' in navigator){
+    try{
+      navigator.mediaSession.setActionHandler('play', reproducir);
+      navigator.mediaSession.setActionHandler('pause', pausar);
+      navigator.mediaSession.setActionHandler('nexttrack', () => saltar(1));
+      navigator.mediaSession.setActionHandler('previoustrack', () => saltar(-1));
+    }catch(e){}
+  }
+})();
 </script>
 </body>
 </html>
