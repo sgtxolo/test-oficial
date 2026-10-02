@@ -1,18 +1,54 @@
-Actúa como examinador experto de la oposición de Ascenso a Oficial de la Guardia Civil.
+Actúa como **examinador experto del tribunal de la oposición de Ascenso a Oficial de la Guardia Civil**, con años redactando y corrigiendo exámenes tipo test. Conoces cómo se construyen las preguntas reales: qué datos se preguntan siempre, las **coletillas**, las **trampas** habituales, los **plazos**, las **autoridades** y las **mayorías**.
 
-TEMA: [nº de tema, ej. Tema 4]
+**Tema:** N
+**Texto base:** el que te adjunto/pego (PDF del temario, una norma completa o artículos concretos).
+**App:** `test-oficial-conocimiento.html` (proyecto `C:\Users\ruben\OneDrive\Desktop\HTML OFICIAL`, repo `sgtxolo/test-oficial`, rama `main`).
 
-TEXTO/NORMA A USAR (pego el título de una norma, un tema entero, o artículos concretos):
-[pega aquí el texto, título o artículos]
+## Objetivo
+Generar **50 preguntas tipo test** sobre ese texto que tengan la **máxima probabilidad de caer en el examen**, para estudiar y para que luego sirvan de base al esquema del tema (`/esquema-tema N`).
+- **10 fáciles** · **25 medias** · **15 difíciles**.
 
-QUIERO: [nº] preguntas tipo test en total
-- [15] fáciles
-- [20] medias
-- [15] difíciles
+## Qué preguntar (prioridad de examinador)
+1. **Plazos y cifras**: días (hábiles/naturales), semanas, meses, años, horas, porcentajes, números de miembros, fechas de entrada en vigor y aplicación.
+2. **Autoridades y órganos**: quién propone, quién decide, quién aprueba, quién informa a quién, quién nombra, ante quién se recurre.
+3. **Mayorías y votaciones**: simple, absoluta, cualificada, dos tercios, unanimidad.
+4. **Coletillas literales**: «sin perjuicio de», «en todo caso», «como máximo / al menos», «salvo que», «únicamente», «podrá» vs «deberá», «previa consulta» vs «previo acuerdo», «de oficio o a instancia de parte».
+5. **Definiciones** y **enumeraciones** (requisitos, supuestos, funciones, excepciones).
+6. **Excepciones y supuestos de no aplicación** («no se aplicará a…», «no tendrá efecto suspensivo»).
+7. **Objeto, ámbito, derogaciones y entrada en vigor**.
 
-INSTRUCCIONES:
-1. Primero revisa el banco de preguntas YA EXISTENTE de ese tema en el HTML (test-oficial-conocimiento.html) para no repetir ni parafrasear ninguna pregunta ya presente.
-2. Genera las preguntas basándote ÚNICAMENTE en el texto/artículos que te he dado (no inventes datos).
-3. Cada pregunta con 4 opciones, una única correcta, y explicación citando el artículo exacto entre comillas.
-4. Añádelas al apartado de preguntas IA (state.preguntasIA), no al banco oficial verificado.
-5. Al terminar, dame el HTML actualizado.
+## Cómo construir las trampas (distractores)
+- Cambiar **un solo dato** respecto al texto literal: plazo (3 por 5, hábiles por naturales), órgano (Consejo por Comisión), mayoría, «podrá» por «deberá», «sin» por «con», «previa» por «posterior».
+- **Invertir el sentido** («impedir el cruce no autorizado» → «autorizado»).
+- Mezclar con un **artículo o norma parecida** del mismo tema (dato real pero de otro sitio).
+- Enumeraciones con **un elemento intruso** («señale la INCORRECTA»).
+- «Todas son correctas / A y B son correctas» solo cuando el texto lo justifique de verdad.
+- Distractores **verosímiles** y **claramente falsos según el texto**; nunca ambiguos ni con dos respuestas defendibles.
+
+## Niveles
+- **Fácil (10)**: dato literal directo y muy conocido.
+- **Media (25)**: dato literal con distractores cercanos, definiciones, enumeraciones.
+- **Difícil (15)**: coletillas, excepciones, «señale la incorrecta», comparación entre artículos, datos poco llamativos pero literales.
+
+## Reglas de calidad (obligatorias)
+1. Antes de escribir, extrae las preguntas ya existentes del tema (`node prompts/herramientas/extraer-preguntas.js test-oficial-conocimiento.html N <scratchpad>/tN.json`) y **no repitas ni parafrasees** ninguna. Prioriza los artículos y datos que **todavía no tienen pregunta**.
+2. Basarte **únicamente** en el texto dado: la respuesta correcta debe ser **literal o casi literal**. Nada de memoria.
+3. **Verifica cada pregunta contra el texto** antes de darla por buena; si un dato no se puede verificar, descártala.
+4. Reparte la letra correcta (A, B, C y D ≈ 12-13 cada una) y no pongas siempre la opción más larga como correcta.
+5. Cubre el texto de forma repartida, con más peso a los artículos con más plazos, órganos y enumeraciones.
+
+## Formato (el mismo que usa la app)
+{"id":"N-ia-XXX","pregunta":"<Norma abreviada>, art. X.Y. <enunciado>","opciones":["A…","B…","C…","D…"],"correcta":0,"explicacion":"<span class=\"ex-resp\">Respuesta correcta: <b>A</b> · <mark class=\"ex-key\">opción correcta</mark></span>El <span class=\"ref-norma\">art. X.Y del <norma></span> dispone: <span class=\"ref-concepto\">\"cita literal\"</span>. Por qué fallan las otras: …","apartado":"<mismo apartado que ya usan las preguntas de esa norma>"}
+- El enunciado empieza siempre con **norma y artículo** (así el esquema las agrupa por artículo).
+- `id`: continuar desde el `N-ia-` más alto del tema.
+
+## Inserción en la app
+- Como **bloque semilla de preguntas IA**, copiando la estructura de los bloques existentes (`state.preguntasIA[N]`), junto a los demás. **No** tocar el banco oficial.
+- Comprobar JSON válido, 50 ids nuevos sin duplicados y sintaxis de los `<script>` correcta.
+- **Commit y push** a `origin/main` sin esperar a que lo pida.
+
+## Al terminar, dime
+- Artículos cubiertos y preguntas por artículo.
+- Reparto por dificultad y por letra correcta.
+- Las 5-10 **trampas** más peligrosas del texto (para el esquema).
+- Artículos que siguen sin ninguna pregunta en la app.
