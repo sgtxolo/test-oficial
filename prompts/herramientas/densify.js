@@ -66,6 +66,9 @@ function densifyHTML(h){
 // Solo dentro del cuerpo de articulo(...) : segundo argumento, template literal
 let count=0;
 region=region.replace(/(articulo\("[^"]*",\s*`)([\s\S]*?)(`)/g,(m,a,body,c)=>{count++;return a+densifyHTML(body)+c});
+// También articuloResp("cab", ["resp", ...], "cuerpo como cadena JSON", ex)
+const JS='"(?:[^"\\\\]|\\\\.)*"';
+region=region.replace(new RegExp('(articuloResp\\('+JS+',\\s*\\[(?:'+JS+'(?:,\\s*)?)*\\],\\s*)('+JS+')','g'),(m,a,body)=>{count++;return a+JSON.stringify(densifyHTML(JSON.parse(body)))});
 s=s.slice(0,A)+region+s.slice(Z);
 fs.writeFileSync(FILE,s);
 console.log('articulos procesados',count);
