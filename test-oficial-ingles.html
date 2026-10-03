@@ -177,6 +177,9 @@ strong{font-weight:700}
 .pk{font-weight:800;color:var(--navy)}.pe{font-style:italic}
 @media(max-width:520px){.pr{grid-template-columns:.9fr 1.1fr}.pr .pe{grid-column:1/-1;padding-bottom:2px}.pr.ph span:nth-child(3){display:none}.tg{min-width:70px}}
 .tp{font-size:12.5px;line-height:1.6;margin:0;color:var(--text)}.tcard i{color:#1d6fd6;font-style:italic}[data-theme="dark"] .tcard i{color:#8ec3ff}
+/* Vista móvil también en PC: columna centrada con ancho de teléfono (salvo que se elija 🖥️ en Perfil) */
+body:not(.desktop-mode) .content,body:not(.desktop-mode) .hdr-inner,body:not(.desktop-mode) .nav-inner{max-width:480px}
+body:not(.desktop-mode) .g2{grid-template-columns:1fr}body:not(.desktop-mode) .g3{grid-template-columns:repeat(2,1fr)}
 </style></head><body>
 <header><div class="hdr-inner"><button class="profile-btn-en" onclick='showPanel("perfil")' title="Perfil">👤</button><div class="hdr-logo">🇬🇧</div><div class="hdr-text"><div class="badge">Escala de Oficiales · GC · 2026</div><h1>Gramática Inglesa</h1><p>41 temas · Teoría + Test + Simulacros · 100% temario</p></div><div class="score-pill" onclick='showPanel("test")'>🏆 <span id="glScore">0/0</span></div></div></header>
 <div class="nav-wrap"><div class="nav-inner" id="mainNav"><button class="ntab active" onclick='showPanel("inicio")'>🏠 Inicio</button> <button class="ntab" onclick='showPanel("teoria")'>📖 Teoría</button> <button class="ntab" onclick='showPanel("test")'>✏️ Test</button> <button class="ntab" onclick='showPanel("tablas")'>📊 Tablas</button></div></div>
