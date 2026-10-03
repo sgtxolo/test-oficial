@@ -305,905 +305,6 @@ const esquemas = temasPrograma.map((tema, i) => ({
   html: leyenda() + `<div class="placeholder">Dicta los artículos y puntos de este tema para generar el esquema rápido en el estilo Método Prefortia.</div>`
 }));
 
-// ---- TEMA 7 (relleno con los artículos y puntos dictados, texto legal real) ----
-(function(){
-  const t7 = esquemas[6];
-  t7.titulo = "7.1 y 7.2 — Resumen esquemático";
-  t7.html = leyenda()
-
-    + bloqueTitulo("LEY ORGÁNICA 2/1979, DEL TRIBUNAL CONSTITUCIONAL — TÍTULO I, CAPÍTULO I: Organización y atribuciones")
-
-    + articulo("Artículo 2 — Competencias del Tribunal Constitucional", `
-      <p><b>1.</b> <mark class="m-accion">El Tribunal Constitucional conocerá</mark> en los <mark class="m-destacable">casos y en la forma</mark> que esta Ley determina:</p>
-      <p>a) Del <mark class="m-destacable">recurso y de la cuestión de inconstitucionalidad</mark> contra <mark class="m-personalizado">Leyes, disposiciones normativas o actos con fuerza de Ley</mark>.</p>
-      <p><mark class="m-personalizado">b) Del recurso de amparo</mark> por <mark class="m-accion">violación</mark> de los <mark class="m-destacable">derechos y libertades públicos</mark> relacionados en el art. 53.2 CE (protección de los derechos y libertades fundamentales).</p>
-      <p>c) De los <mark class="m-destacable">conflictos constitucionales de competencia</mark> entre el <mark class="m-autoridad">Estado</mark> y las <mark class="m-autoridad">CC.AA.</mark> o de los de éstas entre sí.</p>
-      <p>d) De los <mark class="m-destacable">conflictos entre los órganos constitucionales</mark> del Estado. d bis) De los <mark class="m-destacable">conflictos en defensa de la autonomía local</mark>.</p>
-      <p>e) De la <mark class="m-destacable">declaración sobre la constitucionalidad de los tratados internacionales</mark>. e bis) Del <mark class="m-destacable">control previo de inconstitucionalidad</mark> del art. 79 LOTC (control previo de Tratados internacionales).</p>
-      <p>f) De las <mark class="m-destacable">impugnaciones</mark> previstas en el art. 161.2 CE (suspensión de disposiciones y resoluciones de las CC.AA. impugnadas por el Gobierno).</p>
-      <p><mark class="m-personalizado">g) De la verificación de los nombramientos</mark> de los <mark class="m-autoridad">Magistrados del Tribunal Constitucional</mark>, para <mark class="m-accion">juzgar</mark> si reúnen los <mark class="m-destacable">requisitos</mark> exigidos por la Constitución y esta Ley.</p>
-      <p>h) De las <mark class="m-destacable">demás materias</mark> que le atribuyen la <mark class="m-autoridad">Constitución</mark> y las <mark class="m-autoridad">Leyes orgánicas</mark>.</p>
-      <p><b>2.</b> El <mark class="m-autoridad">TC</mark> <mark class="m-accion">podrá dictar</mark> <mark class="m-destacable">reglamentos</mark> sobre su propio funcionamiento y organización, <u class="m-clave">así como</u> sobre el <mark class="m-destacable">régimen de su personal y servicios</mark>. Estos reglamentos deberán ser <mark class="m-accion">aprobados</mark> por el Tribunal en <mark class="m-autoridad">Pleno</mark> y se <mark class="m-accion">publicarán</mark> en el <mark class="m-destacable">BOE</mark>, autorizados por su <mark class="m-autoridad">Presidente</mark>.</p>
-    `)
-
-    + articulo("Artículo 3 — Competencia sobre cuestiones prejudiciales", `
-      <p><mark class="m-destacable">La competencia</mark> del <mark class="m-autoridad">Tribunal Constitucional</mark> <mark class="m-accion">se extiende</mark> al <mark class="m-accion">conocimiento y decisión</mark> de las <mark class="m-destacable">cuestiones prejudiciales e incidentales</mark> <u class="m-clave">no</u> pertenecientes al <mark class="m-destacable">orden constitucional</mark>, <mark class="m-personalizado">directamente relacionadas</mark> con la materia de que conoce, a los <mark class="m-personalizado">solos efectos</mark> del <mark class="m-personalizado">enjuiciamiento constitucional</mark> de ésta.</p>
-    `)
-
-    + articulo("Artículo 4.1, 4.2 y 4.3 — Delimitación de jurisdicción", `
-      <p><b>1.</b> En <u class="m-clave">ningún caso</u> se podrá <mark class="m-accion">promover</mark> <mark class="m-destacable">cuestión de jurisdicción o competencia</mark> al TC. El TC <mark class="m-accion">delimitará</mark> el <mark class="m-destacable">ámbito de su jurisdicción</mark> y <mark class="m-accion">adoptará</mark> cuantas <mark class="m-destacable">medidas</mark> sean necesarias para preservarla, incluyendo la <mark class="m-destacable">declaración de nulidad</mark> de aquellos actos o resoluciones que la menoscaben; <mark class="m-personalizado">asimismo</mark> podrá <mark class="m-accion">apreciar</mark> de <u class="m-clave">oficio o a instancia de parte</u> su <mark class="m-destacable">competencia o incompetencia</mark>.</p>
-      <p><b>2.</b> Las <mark class="m-destacable">resoluciones</mark> del TC <u class="m-clave">no podrán ser enjuiciadas</u> por <u class="m-clave">ningún</u> órgano jurisdiccional del Estado.</p>
-      <p><b>3.</b> Cuando el TC <mark class="m-accion">anule</mark> un acto o resolución que contravenga lo anterior, lo hará <mark class="m-destacable">motivadamente</mark> y <mark class="m-personalizado">previa audiencia</mark> al <mark class="m-autoridad">Ministerio Fiscal</mark> y al <mark class="m-autoridad">órgano autor del acto</mark> o resolución.</p>
-    `)
-
-    + articulo("Artículo 5 — Composición del Tribunal", `
-      <p>El <mark class="m-autoridad">Tribunal Constitucional</mark> <mark class="m-accion">está integrado</mark> por <mark class="m-plazo">doce</mark> miembros, con el título de <mark class="m-autoridad">Magistrados del Tribunal Constitucional</mark>.</p>
-    `)
-
-    + articulo("Artículo 6.2 — El Pleno", `
-      <p><b>2.</b> El <mark class="m-autoridad">Pleno</mark> <mark class="m-accion">está integrado</mark> por <u class="m-clave">todos</u> los <mark class="m-autoridad">Magistrados</mark> del Tribunal. Lo <mark class="m-accion">preside</mark> el <mark class="m-autoridad">Presidente</mark> del Tribunal y, en su defecto, el <mark class="m-autoridad">Vicepresidente</mark> y, a falta de ambos, el <mark class="m-destacable">Magistrado más antiguo</mark> en el cargo y, en caso de igual antigüedad, el de <mark class="m-destacable">mayor edad</mark>.</p>
-    `)
-
-    + articulo("Artículo 7.1, 7.2 y 7.3 — Las Salas", `
-      <p><b>1.</b> El TC <mark class="m-accion">consta</mark> de <mark class="m-plazo">dos Salas</mark>. Cada Sala está compuesta por <mark class="m-plazo">seis Magistrados</mark> <mark class="m-accion">nombrados</mark> por el Tribunal en Pleno.</p>
-      <p><b>2.</b> El <mark class="m-autoridad">Presidente</mark> del Tribunal lo es también de la <mark class="m-destacable">Sala Primera</mark>, que <mark class="m-accion">presidirá</mark>; en su defecto, el <mark class="m-destacable">Magistrado más antiguo</mark> y, en caso de igual antigüedad, el de <mark class="m-destacable">mayor edad</mark>.</p>
-      <p><b>3.</b> El <mark class="m-autoridad">Vicepresidente</mark> del Tribunal <mark class="m-accion">presidirá</mark> la <mark class="m-destacable">Sala Segunda</mark> y, en su defecto, el <mark class="m-destacable">Magistrado más antiguo</mark> y, en caso de igual antigüedad, el de <mark class="m-destacable">mayor edad</mark>.</p>
-    `)
-
-    + trampa("Trampa de examen", "Presidente → preside el Pleno y la Sala Primera. Vicepresidente → preside la Sala Segunda. Es la confusión más típica: no intercambiar qué Sala preside cada uno.")
-
-    + articulo("Artículo 8.1, 8.2 y 8.3 — Las Secciones", `
-      <p><b>1.</b> Para el <mark class="m-destacable">despacho ordinario</mark> y la <mark class="m-destacable">decisión o propuesta sobre admisibilidad</mark> de procesos constitucionales, el <mark class="m-autoridad">Pleno</mark> y las <mark class="m-autoridad">Salas</mark> <mark class="m-accion">constituirán</mark> <mark class="m-destacable">Secciones</mark> compuestas por el respectivo <mark class="m-autoridad">Presidente</mark> (o quien le sustituya) y <mark class="m-plazo">dos Magistrados</mark>.</p>
-      <p><b>2.</b> Se <mark class="m-accion">dará cuenta</mark> al Pleno de las <mark class="m-destacable">propuestas de admisión o inadmisión</mark> de asuntos de su competencia; en caso de admisión, el Pleno podrá <mark class="m-accion">deferir</mark> a la Sala que corresponda el <mark class="m-destacable">conocimiento del asunto</mark>.</p>
-      <p><b>3.</b> Podrá corresponder también a las Secciones el <mark class="m-destacable">conocimiento y resolución</mark> de los <mark class="m-destacable">asuntos de amparo</mark> que la Sala correspondiente les <mark class="m-accion">defiera</mark>.</p>
-    `)
-
-    + articulo("Artículo 11.1 y 11.2 — Competencia de las Salas", `
-      <p><b>1.</b> Las <mark class="m-autoridad">Salas</mark> del Tribunal Constitucional <mark class="m-accion">conocerán</mark> de los asuntos que, atribuidos a la <mark class="m-destacable">justicia constitucional</mark>, <u class="m-clave">no</u> sean <mark class="m-destacable">competencia del Pleno</mark>.</p>
-      <p><b>2.</b> También <mark class="m-accion">conocerán</mark> las Salas de aquellas cuestiones que, habiendo sido atribuidas a las Secciones, <mark class="m-personalizado">entiendan</mark> que por su <mark class="m-destacable">importancia</mark> deba resolver la propia Sala.</p>
-    `)
-
-    + articulo("Artículo 9.1, 9.2, 9.3 y 9.4 — Elección de Presidente y Vicepresidente", `
-      <p><b>1.</b> El Tribunal en <mark class="m-autoridad">Pleno</mark> <mark class="m-accion">elige</mark> de entre sus miembros, por <mark class="m-destacable">votación secreta</mark>, a su <mark class="m-autoridad">Presidente</mark> y <mark class="m-accion">propone</mark> al <mark class="m-autoridad">Rey</mark> su nombramiento.</p>
-      <p><b>2.</b> En <mark class="m-destacable">primera votación</mark> se requerirá <mark class="m-destacable">mayoría absoluta</mark>. Si no se alcanza, <mark class="m-destacable">segunda votación</mark>: elegido quien obtenga <mark class="m-destacable">mayor número de votos</mark>. En caso de <mark class="m-destacable">empate</mark>, <mark class="m-destacable">última votación</mark>; si se repite, se propone al de <mark class="m-destacable">mayor antigüedad</mark> en el cargo y, en igualdad, al de <mark class="m-destacable">mayor edad</mark>.</p>
-      <p><b>3.</b> El nombre del elegido se <mark class="m-accion">elevará</mark> al <mark class="m-autoridad">Rey</mark> para su <mark class="m-destacable">nombramiento</mark> por un período de <mark class="m-plazo">tres años</mark>, expirado el cual podrá ser <mark class="m-accion">reelegido</mark> <u class="m-clave">por una sola vez</u>.</p>
-      <p><b>4.</b> El Pleno <mark class="m-accion">elegirá</mark> entre sus miembros, por el mismo procedimiento y por el mismo período de <mark class="m-plazo">tres años</mark>, un <mark class="m-autoridad">Vicepresidente</mark>, al que incumbe <mark class="m-destacable">sustituir al Presidente</mark> (vacante, ausencia u otro motivo legal) y <mark class="m-destacable">presidir la Sala Segunda</mark>.</p>
-    `)
-
-    + articulo("Artículo 10 — Competencias del Pleno", `
-      <p><b>1.</b> El <mark class="m-autoridad">Tribunal en Pleno</mark> <mark class="m-accion">conoce</mark> de los siguientes asuntos (mención importante):</p>
-      <p><mark class="m-personalizado">b) De los recursos de inconstitucionalidad</mark> contra las <mark class="m-destacable">leyes y demás disposiciones con valor de ley</mark>, <u class="m-clave">excepto</u> los de <mark class="m-destacable">mera aplicación de doctrina</mark> (atribuibles a las Salas en el trámite de admisión).</p>
-      <p><mark class="m-personalizado">c) De las cuestiones de constitucionalidad</mark> que <mark class="m-accion">reserve para sí</mark>; las demás deberán <mark class="m-accion">deferirse</mark> a las Salas según un <mark class="m-destacable">turno objetivo</mark>.</p>
-      <p><mark class="m-personalizado">d) De los conflictos constitucionales de competencia</mark> entre el <mark class="m-autoridad">Estado</mark> y las <mark class="m-autoridad">CC.AA.</mark> o de los de éstas entre sí.</p>
-      <p><mark class="m-personalizado">f) De los conflictos en defensa de la autonomía local</mark>.</p>
-      <p><mark class="m-personalizado">n) De cualquier otro asunto</mark> que sea <mark class="m-destacable">competencia del Tribunal</mark> pero <mark class="m-accion">recabe para sí</mark> el Pleno, a propuesta del <mark class="m-autoridad">Presidente</mark> o de <mark class="m-plazo">tres Magistrados</mark>, <u class="m-clave">así como</u> de los demás asuntos que le puedan ser <mark class="m-accion">atribuidos</mark> expresamente por una <mark class="m-autoridad">ley orgánica</mark>.</p>
-    `)
-
-    + articulo("Artículo 10.3 — Presupuesto del Tribunal", `
-      <p><b>3.</b> El Tribunal en Pleno, en ejercicio de su <mark class="m-destacable">autonomía como órgano constitucional</mark>, <mark class="m-accion">elabora</mark> su <mark class="m-destacable">presupuesto</mark>, que se <mark class="m-accion">integra</mark> como una <mark class="m-destacable">sección independiente</mark> dentro de los <mark class="m-autoridad">Presupuestos Generales del Estado</mark>.</p>
-    `)
-
-    + articulo("Artículo 12 — Distribución de asuntos entre Salas", `
-      <p>La <mark class="m-destacable">distribución de asuntos</mark> entre las Salas del Tribunal <mark class="m-accion">se efectuará</mark> según un <u class="m-clave">turno establecido por el Pleno</u> a <mark class="m-personalizado">propuesta</mark> de su Presidente.</p>
-    `)
-
-    + articulo("Artículo 14 — Quórum de acuerdos", `
-      <p>El Tribunal en Pleno puede <mark class="m-accion">adoptar acuerdos</mark> cuando estén presentes, al menos, <mark class="m-plazo">dos tercios</mark> de los miembros que en cada momento lo compongan. Los acuerdos de las Salas requerirán asimismo la presencia de <mark class="m-plazo">dos tercios</mark> de sus miembros. En las Secciones se requerirá la presencia de <mark class="m-plazo">dos miembros</mark>, salvo que haya <mark class="m-destacable">discrepancia</mark>, requiriéndose entonces la de sus <mark class="m-plazo">tres miembros</mark>.</p>
-    `)
-
-    + articulo("Artículo 15 — Funciones del Presidente", `
-      <p>El <mark class="m-autoridad">Presidente del Tribunal Constitucional</mark> <mark class="m-accion">ejerce</mark> la <mark class="m-destacable">representación</mark> del Tribunal, <mark class="m-accion">convoca y preside</mark> el Tribunal en Pleno y <mark class="m-accion">convoca</mark> las Salas; <mark class="m-accion">adopta</mark> las <mark class="m-destacable">medidas precisas</mark> para el funcionamiento del Tribunal, de las Salas y de las Secciones; <mark class="m-accion">comunica</mark> a las <mark class="m-autoridad">Cámaras</mark>, al <mark class="m-autoridad">Gobierno</mark> o al <mark class="m-autoridad">CGPJ</mark> las <mark class="m-destacable">vacantes</mark>; <mark class="m-accion">nombra</mark> a los <mark class="m-destacable">letrados</mark>, <mark class="m-accion">convoca</mark> los <mark class="m-destacable">concursos</mark> para cubrir plazas de funcionarios y puestos de personal laboral, y <mark class="m-accion">ejerce</mark> las <mark class="m-destacable">potestades administrativas</mark> sobre el personal del Tribunal.</p>
-    `)
-
-    + bloqueTitulo("TÍTULO II. DE LOS PROCEDIMIENTOS DE DECLARACIÓN DE INCONSTITUCIONALIDAD — CAPÍTULO I: Disposiciones generales")
-
-    + articulo("Artículo 27 — Objeto de los procedimientos de inconstitucionalidad", `
-      <p><b>1.</b> Mediante estos procedimientos, el TC <mark class="m-accion">garantiza</mark> la <mark class="m-destacable">primacía de la Constitución</mark> y <mark class="m-accion">enjuicia</mark> la <mark class="m-destacable">conformidad o disconformidad</mark> con ella de las Leyes, disposiciones o actos impugnados.</p>
-      <p><b>2.</b> Son <mark class="m-destacable">susceptibles de declaración de inconstitucionalidad</mark>: a) los <mark class="m-destacable">Estatutos de Autonomía</mark> y demás <mark class="m-destacable">Leyes orgánicas</mark>; b) las demás <mark class="m-destacable">Leyes, disposiciones normativas y actos del Estado con fuerza de Ley</mark>; c) los <mark class="m-destacable">Tratados Internacionales</mark>; d) los <mark class="m-destacable">Reglamentos de las Cámaras y de las Cortes Generales</mark>; e) las <mark class="m-destacable">Leyes, actos y disposiciones con fuerza de ley de las CC.AA.</mark>; f) los <mark class="m-destacable">Reglamentos de las Asambleas legislativas de las CC.AA.</mark></p>
-    `)
-
-    + articulo("Artículo 29 — Vías para promover la declaración de inconstitucionalidad", `
-      <p><b>1.</b> La declaración de inconstitucionalidad podrá <mark class="m-accion">promoverse</mark> mediante: a) el <mark class="m-destacable">recurso de inconstitucionalidad</mark>; b) la <mark class="m-destacable">cuestión de inconstitucionalidad</mark> promovida por <mark class="m-autoridad">Jueces o Tribunales</mark>.</p>
-      <p><b>2.</b> La <mark class="m-destacable">desestimación</mark>, por <mark class="m-personalizado">razones de forma</mark>, de un recurso de inconstitucionalidad <u class="m-clave">no será obstáculo</u> para que la misma Ley, disposición o acto puedan ser objeto de una cuestión de inconstitucionalidad con ocasión de su aplicación en otro proceso.</p>
-    `)
-
-    + bloqueTitulo("CAPÍTULO II. Del recurso de inconstitucionalidad")
-
-    + articulo("Artículo 31 — Momento de interposición", `
-      <p>El <mark class="m-destacable">recurso de inconstitucionalidad</mark> contra las <mark class="m-personalizado">Leyes, disposiciones normativas o actos con fuerza de Ley</mark> <mark class="m-accion">podrá promoverse</mark> a partir de su <mark class="m-destacable">publicación oficial</mark>.</p>
-    `)
-
-    + articulo("Artículo 32.1 y 32.2 — Legitimación activa", `
-      <p><b>1.</b> <mark class="m-destacable">Están legitimados</mark>: a) el <mark class="m-autoridad">Presidente del Gobierno</mark>; b) el <mark class="m-autoridad">Defensor del Pueblo</mark>; c) <mark class="m-plazo">cincuenta Diputados</mark>; d) <mark class="m-plazo">cincuenta Senadores</mark> — frente a <mark class="m-personalizado">Estatutos de Autonomía, demás Leyes del Estado, disposiciones y actos con fuerza de ley, Tratados Internacionales y Reglamentos de las Cámaras</mark>.</p>
-      <p><b>2.</b> Contra Leyes, disposiciones o actos con fuerza de Ley del Estado que puedan <mark class="m-destacable">afectar a su propio ámbito de autonomía</mark>, están también <mark class="m-accion">legitimados</mark> los <mark class="m-autoridad">órganos colegiados ejecutivos y las Asambleas de las CC.AA.</mark>, previo <mark class="m-destacable">acuerdo</mark> adoptado al efecto.</p>
-    `)
-
-    + trampa("Trampa de examen", "Legitimación genérica (32.1): Presidente del Gobierno, Defensor del Pueblo, 50 Diputados, 50 Senadores — frente a cualquier Ley del Estado. Legitimación específica de las CC.AA. (32.2): solo cuando la norma impugnada afecte a su propio ámbito de autonomía. No mezclar ambos supuestos.")
-
-    + articulo("Artículo 33.1 y 33.2 — Plazos del recurso de inconstitucionalidad", `
-      <p><b>1.</b> El recurso se <mark class="m-accion">formulará</mark> dentro del plazo de <mark class="m-plazo">tres meses</mark> a partir de la publicación de la Ley, disposición o acto con fuerza de Ley impugnado, mediante <mark class="m-destacable">demanda</mark> ante el TC.</p>
-      <p><b>2.</b> No obstante, el <mark class="m-autoridad">Presidente del Gobierno</mark> y los <mark class="m-autoridad">órganos colegiados ejecutivos de las CC.AA.</mark> podrán interponer el recurso en el plazo de <mark class="m-plazo">nueve meses</mark> si concurren: a) <mark class="m-destacable">reunión de la Comisión Bilateral de Cooperación</mark>; b) <mark class="m-destacable">acuerdo de iniciación de negociaciones</mark> dentro de dicha Comisión; c) <mark class="m-destacable">comunicación del acuerdo</mark> al TC dentro de los <mark class="m-plazo">tres meses</mark> siguientes a la publicación, insertándose en el BOE y en el Diario Oficial de la CC.AA.</p>
-    `)
-
-    + trampa("Trampa de examen", "Plazo ordinario del recurso de inconstitucionalidad: 3 meses. Plazo especial (Presidente del Gobierno / CC.AA. con Comisión Bilateral): 9 meses, pero el acuerdo debe comunicarse al TC dentro de esos mismos 3 meses iniciales. Cuidado: aparecen dos «tres meses» distintos en el mismo artículo.")
-
-    + articulo("Artículo 34 — Traslado y plazos de alegación", `
-      <p><b>1.</b> <mark class="m-accion">Admitida a trámite</mark> la demanda, el TC <mark class="m-accion">dará traslado</mark> al <mark class="m-autoridad">Congreso y al Senado</mark> (por sus Presidentes), al <mark class="m-autoridad">Gobierno</mark> (por el Ministerio de Justicia) y, <mark class="m-personalizado">en su caso</mark>, a los <mark class="m-autoridad">órganos legislativo y ejecutivo de la CC.AA.</mark>, para <mark class="m-personalizado">personarse y formular alegaciones</mark>.</p>
-      <p><b>2.</b> <mark class="m-destacable">Personación y alegaciones</mark>: <mark class="m-plazo">quince días</mark>. <mark class="m-personalizado">Transcurrido éste</mark>, el Tribunal <mark class="m-accion">dictará sentencia</mark> en el de <mark class="m-plazo">diez días</mark>, <u class="m-clave">salvo que</u>, mediante <mark class="m-destacable">resolución motivada</mark>, <mark class="m-accion">estime</mark> necesario un plazo más amplio que en <u class="m-clave">ningún caso</u> podrá <mark class="m-accion">exceder</mark> de <mark class="m-plazo">treinta días</mark>.</p>
-    `)
-
-    + bloqueTitulo("CAPÍTULO III. La cuestión de inconstitucionalidad promovida por Jueces o Tribunales")
-
-    + articulo("Artículo 35.1, 35.2 y 35.3 — Planteamiento de la cuestión", `
-      <p><b>1.</b> Cuando un <mark class="m-autoridad">Juez o Tribunal</mark>, <u class="m-clave">de oficio o a instancia de parte</u>, considere que una <mark class="m-destacable">norma con rango de Ley aplicable al caso</mark> y de cuya validez dependa el fallo pueda ser <mark class="m-destacable">contraria a la Constitución</mark>, <mark class="m-accion">planteará</mark> la cuestión al TC.</p>
-      <p><b>2.</b> Solo podrá plantearla una vez <mark class="m-destacable">concluso el procedimiento</mark> y dentro del plazo para dictar sentencia. Debe <mark class="m-accion">concretar</mark> la norma, el precepto infringido y <mark class="m-accion">justificar</mark> la dependencia del fallo. Antes de resolver, <mark class="m-accion">oirá</mark> a las partes y al <mark class="m-autoridad">Ministerio Fiscal</mark> en plazo común e improrrogable de <mark class="m-plazo">10 días</mark>; después, el juez <mark class="m-accion">resolverá</mark> en el plazo de <mark class="m-plazo">tres días</mark> mediante <mark class="m-destacable">auto no susceptible de recurso</mark>.</p>
-      <p><b>3.</b> El planteamiento de la cuestión <mark class="m-accion">originará</mark> la <mark class="m-accion">suspensión provisional</mark> de las actuaciones en el proceso judicial hasta que el TC se pronuncie sobre su admisión; producida ésta, el proceso permanecerá <mark class="m-destacable">suspendido</mark> hasta que el TC resuelva definitivamente.</p>
-    `)
-
-    + articulo("Artículo 37.1, 37.2 y 37.3 — Admisión y tramitación de la cuestión", `
-      <p><b>1.</b> El Tribunal podrá <mark class="m-accion">rechazar</mark> en trámite de admisión, mediante <mark class="m-destacable">auto</mark> y con audiencia solo del <mark class="m-autoridad">Fiscal General del Estado</mark>, la cuestión cuando <mark class="m-destacable">falten condiciones procesales</mark> o sea <mark class="m-destacable">notoriamente infundada</mark>.</p>
-      <p><b>2.</b> Publicada en el BOE la admisión, quienes sean parte podrán <mark class="m-accion">personarse</mark> ante el TC dentro de los <mark class="m-plazo">15 días</mark> siguientes, para formular alegaciones en el plazo de otros <mark class="m-plazo">15 días</mark>.</p>
-      <p><b>3.</b> El TC <mark class="m-accion">dará traslado</mark> al <mark class="m-autoridad">Congreso, Senado, Fiscal General del Estado, Gobierno</mark> y, <mark class="m-personalizado">en su caso</mark>, órganos de la CC.AA., que <mark class="m-accion">podrán personarse y alegar</mark> en <mark class="m-destacable">plazo común improrrogable</mark> de <mark class="m-plazo">quince días</mark>. <mark class="m-personalizado">Concluido éste</mark>, el Tribunal <mark class="m-accion">dictará sentencia</mark> en el plazo de <mark class="m-plazo">quince días</mark>, <mark class="m-personalizado">ampliable</mark> hasta un máximo de <mark class="m-plazo">treinta días</mark>.</p>
-    `)
-
-    + bloqueTitulo("CAPÍTULO IV. De la sentencia en procedimientos de inconstitucionalidad y de sus efectos")
-
-    + articulo("Artículo 38.1, 38.2 y 38.3 — Efectos de la sentencia", `
-      <p><b>1.</b> Las <mark class="m-destacable">sentencias</mark> recaídas en procedimientos de inconstitucionalidad tendrán valor de <u class="m-clave">cosa juzgada</u>, <mark class="m-accion">vincularán</mark> a <mark class="m-destacable">todos los Poderes Públicos</mark> y <mark class="m-accion">producirán</mark> efectos generales desde su <mark class="m-destacable">publicación en el BOE</mark>.</p>
-      <p><b>2.</b> Las <mark class="m-destacable">sentencias desestimatorias</mark> en recursos de inconstitucionalidad y conflictos en defensa de la autonomía local <mark class="m-accion">impedirán</mark> un <mark class="m-destacable">planteamiento ulterior</mark> por cualquiera de las dos vías, fundado en la <mark class="m-personalizado">misma infracción de idéntico precepto</mark>.</p>
-      <p><b>3.</b> En cuestiones de inconstitucionalidad, el TC lo <mark class="m-accion">comunicará</mark> de inmediato al <mark class="m-autoridad">órgano judicial competente</mark>, que <mark class="m-accion">notificará</mark> la sentencia a las partes. El Juez quedará <mark class="m-destacable">vinculado</mark> desde que conozca la sentencia; las partes, desde que sean notificadas.</p>
-    `)
-
-    + articulo("Artículo 39 — Alcance de la declaración de inconstitucionalidad", `
-      <p><b>1.</b> Cuando la sentencia declare la inconstitucionalidad, <mark class="m-accion">declarará</mark> igualmente la <mark class="m-destacable">nulidad</mark> de los preceptos impugnados, <u class="m-clave">así como</u>, <mark class="m-personalizado">en su caso</mark>, la de aquellos otros a los que deba extenderse por <u class="m-clave">conexión o consecuencia</u>.</p>
-      <p><b>2.</b> El TC podrá <mark class="m-accion">fundar</mark> la declaración de inconstitucionalidad en la infracción de <mark class="m-destacable">cualquier precepto constitucional</mark>, haya o no sido invocado en el curso del proceso.</p>
-    `)
-
-    + bloqueTitulo("TÍTULO III. DEL RECURSO DE AMPARO CONSTITUCIONAL — CAPÍTULO I: Procedencia e interposición")
-
-    + articulo("Artículo 41.1 — Derechos susceptibles de amparo", `
-      <p><b>1.</b> Los <mark class="m-destacable">derechos y libertades</mark> reconocidos en los arts. 14 a 29 CE serán <mark class="m-destacable">susceptibles de amparo constitucional</mark>, sin perjuicio de su <mark class="m-personalizado">tutela general</mark> encomendada a los Tribunales de Justicia. Igual protección será aplicable a la <mark class="m-destacable">objeción de conciencia</mark> reconocida en el art. 30 CE.</p>
-    `)
-
-    + articulo("Artículo 42 — Amparo frente a actos de las Cortes/Asambleas", `
-      <p>Las <mark class="m-destacable">decisiones o actos sin valor de Ley</mark> de las Cortes, sus órganos, o de las <mark class="m-autoridad">Asambleas legislativas de las CC.AA.</mark> y sus órganos, que <mark class="m-destacable">violen derechos y libertades</mark> susceptibles de amparo, podrán ser <mark class="m-accion">recurridos</mark> dentro del plazo de <mark class="m-plazo">tres meses</mark> desde que, con arreglo a las normas internas de las Cámaras o Asambleas, sean <mark class="m-destacable">firmes</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 43.1, 43.2 y 43.3 — Amparo frente al Gobierno y ejecutivos autonómicos", `
-      <p><b>1.</b> Las <mark class="m-destacable">violaciones</mark> originadas por el <mark class="m-autoridad">Gobierno</mark> o sus autoridades/funcionarios, o los <mark class="m-autoridad">órganos ejecutivos colegiados de las CC.AA.</mark> o sus autoridades/funcionarios/agentes, podrán <mark class="m-accion">dar lugar al amparo</mark> una vez <mark class="m-destacable">agotada la vía judicial procedente</mark>.</p>
-      <p><b>2.</b> Plazo: <mark class="m-plazo">veinte días</mark> siguientes a la <mark class="m-destacable">notificación de la resolución</mark> recaída en el previo proceso judicial.</p>
-      <p><b>3.</b> El recurso solo podrá <mark class="m-accion">fundarse</mark> en la <mark class="m-destacable">infracción</mark>, por una <mark class="m-destacable">resolución firme</mark>, de los <mark class="m-destacable">preceptos constitucionales</mark> que reconocen los derechos o libertades susceptibles de amparo.</p>
-    `, true)
-
-    + articulo("Artículo 44 — Amparo frente a actos judiciales", `
-      <p><b>1.</b> Las <mark class="m-destacable">violaciones de derechos y libertades</mark> que tengan su <mark class="m-personalizado">origen inmediato y directo</mark> en un acto u omisión de un <mark class="m-autoridad">órgano judicial</mark> podrán dar lugar a este recurso si: a) se han <mark class="m-accion">agotado</mark> todos los <mark class="m-destacable">medios de impugnación</mark> previstos; b) la violación es <mark class="m-destacable">imputable de modo inmediato y directo</mark> al órgano judicial; c) se ha <mark class="m-accion">denunciado formalmente</mark> en el proceso la vulneración tan pronto como fue conocida.</p>
-      <p><b>2.</b> Plazo: <mark class="m-plazo">30 días</mark>, a partir de la notificación de la resolución recaída en el proceso judicial.</p>
-    `)
-
-    + trampa("Trampa de examen — plazos del recurso de amparo (arts. 42/43/44)", "Art. 42 (actos de Cortes/Asambleas): 3 meses. Art. 43 (Gobierno/ejecutivos autonómicos): 20 días. Art. 44 (órgano judicial): 30 días. Truco mnemotécnico: memorizar en ese orden «3 meses / 20 días / 30 días».")
-
-    + articulo("Artículo 46.1 y 46.2 — Legitimación activa en el amparo", `
-      <p><b>1.</b> <mark class="m-destacable">Están legitimados</mark>: a) en los casos de los arts. 42 y 45 (derogado), la <mark class="m-autoridad">persona directamente afectada</mark>, el <mark class="m-autoridad">Defensor del Pueblo</mark> y el <mark class="m-autoridad">Ministerio Fiscal</mark>; b) en los casos de los arts. 43 y 44, quienes hayan sido <mark class="m-autoridad">parte en el proceso judicial correspondiente</mark>, el <mark class="m-autoridad">Defensor del Pueblo</mark> y el <mark class="m-autoridad">Ministerio Fiscal</mark>.</p>
-      <p><b>2.</b> Si el recurso se <mark class="m-accion">promueve</mark> por el <mark class="m-autoridad">Defensor del Pueblo</mark> o el <mark class="m-autoridad">Ministerio Fiscal</mark>, la <mark class="m-autoridad">Sala</mark> lo <mark class="m-accion">comunicará</mark> a los <mark class="m-destacable">posibles agraviados conocidos</mark> y <mark class="m-accion">ordenará anunciar</mark> la <mark class="m-destacable">interposición</mark> en el BOE, con carácter <mark class="m-personalizado">preferente</mark>.</p>
-    `)
-
-    + bloqueTitulo("CAPÍTULO II. De la tramitación de los recursos de amparo")
-
-    + articulo("Artículo 48 — Órgano competente", `
-      <p>El <mark class="m-destacable">conocimiento</mark> de los <mark class="m-destacable">recursos de amparo</mark> <mark class="m-accion">corresponde</mark> a las <mark class="m-autoridad">Salas</mark> del Tribunal Constitucional y, <mark class="m-personalizado">en su caso</mark>, a las <mark class="m-autoridad">Secciones</mark>.</p>
-    `)
-
-    + articulo("Artículo 49.1, 49.3 y 49.4 — Iniciación de la demanda de amparo", `
-      <p><b>1.</b> El recurso se <mark class="m-accion">iniciará</mark> mediante <mark class="m-destacable">demanda</mark> en la que se <mark class="m-accion">expondrán</mark> los hechos, se <mark class="m-accion">citarán</mark> los <mark class="m-destacable">preceptos infringidos</mark> y se <mark class="m-accion">fijará con precisión</mark> el amparo solicitado. La demanda debe <mark class="m-accion">justificar</mark> la <mark class="m-destacable">especial trascendencia constitucional</mark> del recurso.</p>
-      <p><b>3.</b> Se <mark class="m-accion">acompañarán</mark> tantas <mark class="m-destacable">copias literales</mark> de la demanda y documentos como partes hubiere en el previo proceso, y <mark class="m-personalizado">una más para el Ministerio Fiscal</mark>.</p>
-      <p><b>4.</b> De <mark class="m-destacable">incumplirse</mark> algún requisito, las <mark class="m-autoridad">Secretarías de Justicia</mark> lo <mark class="m-accion">pondrán de manifiesto</mark> al interesado en <mark class="m-plazo">10 días</mark>, con <mark class="m-destacable">apercibimiento de inadmisión</mark> si no se subsana.</p>
-    `, true)
-
-    + articulo("Artículo 50.1, 50.2 y 50.3 — Decisión de admisión a trámite", `
-      <p><b>1.</b> La <mark class="m-autoridad">Sección</mark>, por <u class="m-clave">unanimidad</u>, <mark class="m-accion">acordará</mark> mediante <mark class="m-destacable">providencia</mark> la admisión solo cuando <mark class="m-destacable">concurran todos los requisitos</mark>: a) que la demanda cumpla lo dispuesto en los arts. 41 a 46 y 49; b) que el contenido <mark class="m-accion">justifique</mark> una decisión sobre el fondo por su <mark class="m-destacable">especial trascendencia constitucional</mark>.</p>
-      <p><b>2.</b> Cuando la admisión, aun obteniendo <mark class="m-destacable">mayoría</mark>, <u class="m-clave">no alcance</u> la unanimidad, la Sección <mark class="m-accion">trasladará</mark> la decisión a la <mark class="m-autoridad">Sala respectiva</mark>.</p>
-      <p><b>3.</b> Las <mark class="m-destacable">providencias de inadmisión</mark> <mark class="m-accion">especificarán</mark> el <mark class="m-destacable">requisito incumplido</mark> y se <mark class="m-accion">notificarán</mark> al demandante y al <mark class="m-autoridad">Ministerio Fiscal</mark>. Solo podrán <mark class="m-accion">recurrirse en súplica</mark> por el Ministerio Fiscal en el plazo de <mark class="m-plazo">tres días</mark>, resolviéndose mediante <mark class="m-destacable">auto no susceptible de impugnación</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 50.4 — Subsanación de defectos", `
-      <p><b>4.</b> Cuando en la demanda concurran <mark class="m-destacable">defectos subsanables</mark>, se procederá conforme al art. 49.4 (plazo de 10 días para subsanar); de <u class="m-clave">no producirse</u> la subsanación, la Sección <mark class="m-accion">acordará la inadmisión</mark> mediante providencia, <mark class="m-destacable">sin recurso posible</mark>.</p>
-    `)
-
-    + articulo("Artículo 51.1 y 51.2 — Requerimiento de actuaciones", `
-      <p><b>1.</b> Admitida la demanda, la <mark class="m-autoridad">Sala</mark> <mark class="m-accion">requerirá</mark> con <mark class="m-personalizado">carácter urgente</mark> al <mark class="m-autoridad">órgano, autoridad, Juez o Tribunal</mark> que <mark class="m-accion">conoció</mark> del procedimiento precedente para que, en plazo no superior a <mark class="m-plazo">diez días</mark>, <mark class="m-accion">remita</mark> las <mark class="m-destacable">actuaciones o testimonio</mark> de ellas.</p>
-      <p><b>2.</b> El <mark class="m-autoridad">órgano, autoridad, Juez o Tribunal</mark> <mark class="m-accion">acusará inmediato recibo</mark> y <mark class="m-accion">emplazará</mark> a quienes fueron parte para que puedan <mark class="m-accion">comparecer</mark> en el plazo de <mark class="m-plazo">diez días</mark>.</p>
-    `)
-
-    + articulo("Artículo 52.1 y 52.3 — Vista y alegaciones", `
-      <p><b>1.</b> <mark class="m-destacable">Recibidas las actuaciones</mark>, la <mark class="m-autoridad">Sala</mark> <mark class="m-accion">dará vista</mark> a quien promovió el amparo, a los <mark class="m-destacable">personados</mark>, al <mark class="m-autoridad">Abogado del Estado</mark> y al <mark class="m-autoridad">Ministerio Fiscal</mark>, por plazo común no superior a <mark class="m-plazo">veinte días</mark>, para <mark class="m-accion">presentar alegaciones</mark>.</p>
-      <p><b>3.</b> La Sala, o <mark class="m-personalizado">en su caso</mark> la Sección, <mark class="m-accion">pronunciará</mark> la <mark class="m-destacable">sentencia</mark> en el plazo de <mark class="m-plazo">10 días</mark> a partir del día señalado para la <mark class="m-personalizado">vista o deliberación</mark>.</p>
-    `)
-
-    + bloqueTitulo("CAPÍTULO III. De la resolución de los recursos de amparo y sus efectos")
-
-    + articulo("Artículo 53 — Fallo de la sentencia de amparo", `
-      <p>La <mark class="m-autoridad">Sala o Sección</mark>, al <mark class="m-accion">conocer del fondo del asunto</mark>, <mark class="m-accion">pronunciará</mark> en su sentencia alguno de estos fallos: a) <u class="m-clave">otorgamiento de amparo</u>; b) <u class="m-clave">denegación de amparo</u>.</p>
-    `, true)
-
-    + articulo("Artículo 55.1 — Contenido de la sentencia estimatoria", `
-      <p><b>1.</b> La sentencia que <mark class="m-accion">otorgue</mark> el amparo <mark class="m-accion">contendrá</mark> alguno de estos pronunciamientos: a) <mark class="m-destacable">declaración de nulidad</mark> de la decisión, acto o resolución impugnados; b) <mark class="m-destacable">reconocimiento del derecho o libertad</mark> pública; c) <mark class="m-destacable">restablecimiento del recurrente</mark> en la <mark class="m-personalizado">integridad de su derecho o libertad</mark>.</p>
-    `)
-
-    + articulo("Artículo 56.1, 56.4 y 56.6 — Suspensión y medidas cautelares", `
-      <p><b>1.</b> La <mark class="m-destacable">interposición</mark> del recurso de amparo <u class="m-clave">no suspenderá</u> los <mark class="m-destacable">efectos del acto o sentencia impugnados</mark>.</p>
-      <p><b>4.</b> La <mark class="m-destacable">suspensión u otra medida cautelar</mark> podrá <mark class="m-accion">pedirse</mark> en <mark class="m-personalizado">cualquier momento</mark> <u class="m-clave">antes de</u> la sentencia. El <mark class="m-destacable">incidente</mark> se <mark class="m-accion">sustanciará</mark> con <mark class="m-personalizado">audiencia de las partes y del Ministerio Fiscal</mark>, por <mark class="m-destacable">plazo común</mark> no superior a <mark class="m-plazo">tres días</mark>.</p>
-      <p><b>6.</b> En supuestos de <mark class="m-destacable">urgencia excepcional</mark>, la suspensión y medidas cautelares podrán <mark class="m-accion">adoptarse</mark> en la propia resolución de admisión a trámite; podrá <mark class="m-accion">impugnarse</mark> en <mark class="m-plazo">cinco días</mark> desde su notificación; se resolverá por <mark class="m-destacable">auto no susceptible de recurso</mark>.</p>
-    `)
-
-    + articulo("Artículo 58.1 y 58.2 — Indemnización por la suspensión", `
-      <p><b>1.</b> Serán <mark class="m-destacable">competentes</mark> para resolver sobre las <mark class="m-destacable">peticiones de indemnización</mark> los <mark class="m-autoridad">Jueces o Tribunales</mark>, a cuya disposición se <mark class="m-accion">pondrán</mark> las <mark class="m-destacable">fianzas constituidas</mark>.</p>
-      <p><b>2.</b> Las peticiones se <mark class="m-accion">sustanciarán</mark> por el <mark class="m-destacable">trámite de los incidentes</mark> y deberán <mark class="m-accion">presentarse</mark> dentro del plazo de <mark class="m-plazo">un año</mark> a partir de la publicación de la sentencia del TC.</p>
-    `)
-
-    + bloqueTitulo("7.2 — LEY ORGÁNICA 1/1982, DE PROTECCIÓN CIVIL DEL DERECHO AL HONOR, INTIMIDAD Y PROPIA IMAGEN — CAPÍTULO I: Disposiciones generales")
-
-    + articulo("Artículo 1.1, 1.2 y 1.3 — Objeto y naturaleza del derecho", `
-      <p><b>1.</b> El <mark class="m-destacable">derecho fundamental</mark> al <mark class="m-destacable">honor</mark>, a la <mark class="m-destacable">intimidad personal y familiar</mark> y a la <mark class="m-destacable">propia imagen</mark>, <mark class="m-personalizado">garantizado en el art. 18 CE</mark>, será <mark class="m-accion">protegido civilmente</mark> frente a todo género de <mark class="m-destacable">intromisiones ilegítimas</mark>.</p>
-      <p><b>2.</b> El <mark class="m-destacable">carácter delictivo</mark> de la intromisión <u class="m-clave">no impedirá</u> el recurso al procedimiento de <mark class="m-destacable">tutela judicial</mark> del art. 9 de esta Ley. En todo caso, serán <mark class="m-accion">aplicables</mark> los <mark class="m-personalizado">criterios de esta Ley</mark> para la <mark class="m-destacable">responsabilidad civil derivada de delito</mark>.</p>
-      <p><b>3.</b> Este derecho es <u class="m-clave">irrenunciable, inalienable e imprescriptible</u>. La <mark class="m-destacable">renuncia</mark> a la protección será <mark class="m-destacable">nula</mark>, sin perjuicio de los <mark class="m-personalizado">supuestos de autorización o consentimiento</mark> del art. 2.</p>
-    `, true)
-
-    + articulo("Artículo 2.1, 2.2 y 2.3 — Delimitación, autorización y consentimiento", `
-      <p><b>1.</b> La <mark class="m-destacable">protección civil del honor, de la intimidad y de la propia imagen</mark> quedará <mark class="m-accion">delimitada</mark> por las <mark class="m-destacable">leyes y los usos sociales</mark>, <mark class="m-personalizado">atendiendo al ámbito</mark> que, por sus propios actos, mantenga cada persona <mark class="m-personalizado">reservado para sí</mark> o su familia.</p>
-      <p><b>2.</b> <u class="m-clave">No</u> se <mark class="m-accion">apreciará</mark> intromisión ilegítima <u class="m-clave">cuando</u> esté expresamente <mark class="m-destacable">autorizada por Ley</mark> o <u class="m-clave">cuando</u> el titular haya <mark class="m-accion">otorgado</mark> su <mark class="m-destacable">consentimiento expreso</mark>; <u class="m-clave">tampoco cuando</u>, por el art. 71 CE (inviolabilidad de Diputados y Senadores por sus opiniones en el ejercicio de sus funciones), se trate de <mark class="m-destacable">opiniones de Diputados o Senadores</mark> en el ejercicio de sus funciones. <mark class="m-personalizado">Iniciado un proceso civil</mark> en aplicación de esta Ley, <u class="m-clave">no podrá seguirse</u> contra un Diputado o Senador sin la <mark class="m-destacable">previa autorización</mark> del Congreso o del Senado, <mark class="m-accion">tramitada</mark> por el procedimiento previsto para los <mark class="m-personalizado">suplicatorios</mark>.</p>
-      <p><b>3.</b> El consentimiento será <mark class="m-accion">revocable</mark> en cualquier momento, pero habrán de <mark class="m-accion">indemnizarse</mark> los <mark class="m-destacable">daños y perjuicios causados</mark>, incluidas las <mark class="m-destacable">expectativas justificadas</mark>.</p>
-    `)
-
-    + articulo("Artículo 3.1 y 3.2 — Consentimiento de menores e incapaces", `
-      <p><b>1.</b> El consentimiento de los <mark class="m-destacable">menores e incapaces</mark> deberá <mark class="m-accion">prestarse por ellos mismos</mark> si sus <mark class="m-destacable">condiciones de madurez</mark> lo permiten, de acuerdo con la <mark class="m-personalizado">legislación civil</mark>.</p>
-      <p><b>2.</b> En los demás casos, el consentimiento se <mark class="m-accion">otorgará por escrito</mark> por el <mark class="m-autoridad">representante legal</mark>, quien deberá <mark class="m-accion">ponerlo en conocimiento previo</mark> del <mark class="m-autoridad">Ministerio Fiscal</mark>. Si en el plazo de <mark class="m-plazo">ocho días</mark> el Fiscal <mark class="m-accion">se opusiere</mark>, <mark class="m-accion">resolverá el Juez</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 4.1, 4.2, 4.3 y 4.4 — Legitimación tras el fallecimiento y víctimas de delito", `
-      <p><b>1.</b> El <mark class="m-destacable">ejercicio de las acciones</mark> de protección civil del honor, intimidad o imagen de una persona fallecida corresponde a quien ésta haya <mark class="m-accion">designado</mark> a tal efecto en su testamento. La designación puede recaer en una <mark class="m-destacable">persona jurídica</mark>.</p>
-      <p><b>2.</b> No existiendo designación, estarán <mark class="m-destacable">legitimados</mark> el <mark class="m-autoridad">cónyuge</mark>, los <mark class="m-autoridad">descendientes, ascendientes y hermanos</mark> de la persona afectada que viviesen al tiempo del fallecimiento.</p>
-      <p><b>3.</b> A falta de <u class="m-clave">todos</u> ellos, <mark class="m-accion">corresponderá</mark> al <mark class="m-autoridad">Ministerio Fiscal</mark>, <mark class="m-personalizado">de oficio o a instancia de interesado</mark>, <u class="m-clave">siempre que no</u> hayan <mark class="m-accion">transcurrido</mark> más de <mark class="m-plazo">ochenta años</mark> desde el fallecimiento. <mark class="m-personalizado">Igual plazo</mark> si <mark class="m-accion">actúa</mark> una <mark class="m-destacable">persona jurídica</mark> designada en testamento.</p>
-      <p><b>4.</b> En los supuestos de intromisión ilegítima en los derechos de las <mark class="m-destacable">víctimas de un delito</mark> (art. 7.8 — utilización del delito por el condenado para notoriedad o provecho económico), estará <mark class="m-destacable">legitimado</mark> el <mark class="m-autoridad">ofendido o perjudicado</mark> por el delito, haya o no ejercido la acción penal o civil, y en todo caso también el <mark class="m-autoridad">Ministerio Fiscal</mark>.</p>
-    `, true)
-
-    + trampa("Trampa de examen — orden de legitimación tras el fallecimiento", "Orden correcto: 1º persona designada en testamento (art. 4.1) → 2º cónyuge, descendientes, ascendientes y hermanos vivos (art. 4.2) → 3º Ministerio Fiscal, con el límite de 80 años desde el fallecimiento (art. 4.3). No confundir con el plazo de caducidad general de las acciones del art. 9.5 (4 años).")
-
-    + bloqueTitulo("CAPÍTULO II. De la protección civil del honor, de la intimidad y de la propia imagen")
-
-    + articulo("Artículo 7 — Intromisiones ilegítimas", `
-      <p>Tendrán la consideración de <mark class="m-destacable">intromisiones ilegítimas</mark> en el ámbito del art. 2 de esta Ley:</p>
-      <p>1. El <mark class="m-accion">emplazamiento</mark> de <mark class="m-destacable">aparatos de escucha, filmación o dispositivos ópticos</mark> aptos para <mark class="m-personalizado">grabar la vida íntima</mark>. 2. La <mark class="m-accion">utilización</mark> de dichos aparatos para <mark class="m-personalizado">conocer la vida íntima, manifestaciones o cartas privadas</mark>, así como su <mark class="m-destacable">grabación, registro o reproducción</mark>. 3. La <mark class="m-accion">divulgación</mark> de hechos de la vida privada que afecten a la <mark class="m-destacable">reputación y buen nombre</mark>, o la <mark class="m-accion">revelación</mark> de cartas, memorias o escritos íntimos. 4. La <mark class="m-accion">revelación</mark> de <mark class="m-destacable">datos privados</mark> conocidos por actividad profesional u oficial. 5. La <mark class="m-accion">captación, reproducción o publicación</mark> de la imagen de una persona en su vida privada (salvo art. 8.2). 6. La <mark class="m-accion">utilización</mark> del nombre, voz o imagen con fines <mark class="m-destacable">publicitarios, comerciales</mark> o análogos. 7. La <mark class="m-accion">imputación</mark> de hechos o juicios de valor que lesionen la <mark class="m-destacable">dignidad</mark> de otra persona. 8. La <mark class="m-accion">utilización</mark> del delito por el condenado en sentencia firme para <mark class="m-destacable">notoriedad pública o provecho económico</mark>, o la <mark class="m-accion">divulgación</mark> de datos falsos que menoscaben la dignidad de las víctimas.</p>
-    `, true)
-
-    + articulo("Artículo 8.1 y 8.2 — Excepciones: intromisiones no ilegítimas", `
-      <p><b>1.</b> No se <mark class="m-accion">reputarán</mark>, con carácter general, intromisiones ilegítimas las actuaciones <mark class="m-accion">autorizadas o acordadas</mark> por la <mark class="m-autoridad">Autoridad competente</mark> de acuerdo con la ley, ni cuando <mark class="m-personalizado">predomine</mark> un <mark class="m-destacable">interés histórico, científico o cultural</mark> relevante.</p>
-      <p><b>2.</b> El derecho a la propia imagen <u class="m-clave">no impedirá</u>: a) su <mark class="m-accion">captación o publicación</mark> de personas con <mark class="m-destacable">cargo público o proyección pública</mark> captada en <mark class="m-personalizado">acto público o lugar abierto al público</mark>; b) la <mark class="m-accion">utilización</mark> de la <mark class="m-destacable">caricatura</mark> según el <mark class="m-personalizado">uso social</mark>; c) <mark class="m-destacable">información gráfica</mark> de un <mark class="m-destacable">suceso público</mark> en que la persona aparezca de forma <mark class="m-personalizado">meramente accesoria</mark>. Estas excepciones <u class="m-clave">no se aplican</u> a quienes desempeñen funciones que requieran el <u class="m-clave">anonimato</u>.</p>
-    `)
-
-    + articulo("Artículo 9.1, 9.2, 9.3 y 9.5 — Tutela judicial e indemnización", `
-      <p><b>1.</b> La <mark class="m-destacable">tutela judicial</mark> frente a intromisiones ilegítimas podrá <mark class="m-accion">recabarse</mark> por las <mark class="m-personalizado">vías procesales ordinarias</mark> o por el procedimiento del art. 53.2 CE. También podrá <mark class="m-accion">acudirse</mark> al <mark class="m-destacable">recurso de amparo</mark> ante el TC.</p>
-      <p><b>2.</b> La tutela judicial <mark class="m-accion">comprenderá</mark>: a) <mark class="m-accion">restablecimiento</mark> del perjudicado (<mark class="m-destacable">declaración de la intromisión, cese inmediato, reposición</mark>; en el honor, incluye la <mark class="m-destacable">publicación de la sentencia condenatoria</mark>); b) <mark class="m-accion">prevenir</mark> intromisiones inminentes o ulteriores; c) <mark class="m-accion">indemnización</mark> de daños y perjuicios; d) <mark class="m-accion">apropiación</mark> por el perjudicado del <mark class="m-destacable">lucro obtenido</mark> con la intromisión.</p>
-      <p><b>3.</b> La existencia de <mark class="m-destacable">perjuicio</mark> <mark class="m-accion">se presumirá</mark> siempre que se <mark class="m-personalizado">acredite la intromisión ilegítima</mark>. La indemnización se <mark class="m-accion">extenderá</mark> al <mark class="m-destacable">daño moral</mark>, valorado según las <mark class="m-personalizado">circunstancias y la gravedad de la lesión</mark>.</p>
-      <p><b>5.</b> Las acciones de protección frente a intromisiones ilegítimas <mark class="m-accion">caducarán</mark> transcurridos <mark class="m-plazo">cuatro años</mark> desde que el legitimado pudo ejercitarlas.</p>
-    `)
-
-    + trampa("Trampa de examen — plazos de la LO 1/1982", "No confundir: 8 días (oposición del Ministerio Fiscal al consentimiento de menores, art. 3.2), 80 años (legitimación del Fiscal tras el fallecimiento, art. 4.3) y 4 años (caducidad de las acciones de protección, art. 9.5).")
-
-    + recuerda([
-      "LOTC: En ningún caso se podrá promover cuestión de jurisdicción o competencia al Tribunal Constitucional.",
-      "LOTC: El TC está integrado por doce Magistrados.",
-      "LOTC: El TC actúa en Pleno, Sala o Sección.",
-      "LOTC: La distribución de asuntos entre Salas se hace según un turno establecido por el Pleno a propuesta de su Presidente.",
-      "LOTC: Plazo del recurso de amparo del art. 43: veinte días siguientes a la notificación de la resolución judicial.",
-      "LOTC: El conocimiento del amparo corresponde a las Salas y, en su caso, a las Secciones.",
-      "LOTC: La sentencia de amparo pronuncia otorgamiento o denegación de amparo.",
-      "LOTC: La interposición del amparo no suspende los efectos del acto o sentencia impugnados.",
-      "LOTC: Las peticiones de indemnización se presentan dentro del plazo de un año a partir de la publicación de la sentencia del TC.",
-      "LO 1/1982: El derecho al honor, intimidad y propia imagen es irrenunciable, inalienable e imprescriptible.",
-      "LO 1/1982: El consentimiento de menores e incapaces se presta por ellos mismos si sus condiciones de madurez lo permiten.",
-      "LO 1/1982: No son intromisiones ilegítimas las actuaciones autorizadas por Autoridad competente, ni cuando predomine un interés histórico, científico o cultural relevante.",
-      "LO 1/1982: Se presume siempre la existencia de perjuicio cuando se acredita la intromisión ilegítima."
-    ]);
-})();
-
-// ---- TEMA 8 (Poder Judicial, LOPJ 6/1985 — comparado con el esquema del compañero) ----
-(function(){
-  const t8 = esquemas[7];
-  t8.titulo = "8.1 — Ley Orgánica del Poder Judicial: resumen esquemático";
-  t8.html = leyenda()
-
-    + bloqueTitulo("TÍTULO PRELIMINAR — Del Poder Judicial y del ejercicio de la potestad jurisdiccional")
-
-    + articulo("Artículo 1 — Principio de justicia", `
-      <p>La <mark class="m-destacable">justicia</mark> <mark class="m-accion">emana</mark> del <mark class="m-personalizado">pueblo</mark> y se <mark class="m-accion">administra</mark> en <mark class="m-destacable">nombre del Rey</mark> por <mark class="m-autoridad">Jueces y Magistrados</mark> integrantes del Poder Judicial, <mark class="m-destacable">independientes, inamovibles, responsables</mark> y sometidos únicamente a la <mark class="m-autoridad">Constitución</mark> y al <mark class="m-destacable">imperio de la ley</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 2.1 — Ejercicio de la potestad jurisdiccional", `
-      <p><b>1.</b> El <mark class="m-destacable">ejercicio de la potestad jurisdiccional</mark>, <mark class="m-accion">juzgando y haciendo ejecutar lo juzgado</mark>, <mark class="m-accion">corresponde</mark> <mark class="m-personalizado">exclusivamente</mark> a los jueces, las juezas y los <mark class="m-autoridad">Tribunales</mark> <mark class="m-accion">determinados</mark> en las leyes y en los <mark class="m-destacable">tratados internacionales</mark>.</p>
-    `)
-
-    + articulo("Artículo 3 — Unidad jurisdiccional", `
-      <p><b>1.</b> La <mark class="m-destacable">jurisdicción</mark> es <u class="m-clave">única</u> y se <mark class="m-accion">ejerce</mark> por los jueces, las juezas y los Tribunales <mark class="m-personalizado">previstos</mark> en esta ley orgánica, <u class="m-clave">sin perjuicio de</u> las <mark class="m-personalizado">potestades jurisdiccionales</mark> <mark class="m-accion">reconocidas</mark> por la Constitución a otros órganos.</p>
-      <p><b>2.</b> Los órganos de la <mark class="m-destacable">jurisdicción militar</mark>, integrante del Poder Judicial del Estado, basan su organización y funcionamiento en el <mark class="m-destacable">principio de unidad jurisdiccional</mark> y <mark class="m-accion">administran</mark> justicia en el <mark class="m-personalizado">ámbito estrictamente castrense</mark> y, <mark class="m-personalizado">en su caso</mark>, en las materias que <mark class="m-accion">establezca</mark> la <mark class="m-destacable">declaración del estado de sitio</mark>.</p>
-    `)
-
-    + articulo("Artículo 4 — Extensión de la jurisdicción", `
-      <p>La <mark class="m-destacable">jurisdicción</mark> se <mark class="m-accion">extiende</mark> a <u class="m-clave">todas</u> las personas, a <u class="m-clave">todas</u> las materias y a <mark class="m-destacable">todo el territorio español</mark>, en la forma <mark class="m-accion">establecida</mark> en la Constitución y en las leyes.</p>
-    `)
-
-    + articulo("Artículo 4 bis.1 y 4 bis.2 — Derecho de la Unión Europea", `
-      <p><b>1.</b> Los <mark class="m-autoridad">Jueces y Tribunales</mark> <mark class="m-accion">aplicarán</mark> el <mark class="m-destacable">Derecho de la Unión Europea</mark> <mark class="m-personalizado">de conformidad con</mark> la <mark class="m-personalizado">jurisprudencia del Tribunal de Justicia de la Unión Europea</mark>.</p>
-      <p><b>2.</b> Cuando <mark class="m-accion">decidan</mark> <mark class="m-accion">plantear</mark> una <mark class="m-destacable">cuestión prejudicial europea</mark> lo <mark class="m-accion">harán</mark> conforme a dicha jurisprudencia y, <u class="m-clave">en todo caso</u>, mediante <mark class="m-destacable">auto</mark>, previa <mark class="m-personalizado">audiencia de las partes</mark>.</p>
-    `)
-
-    + articulo("Artículo 5.4 — Recurso de casación por infracción constitucional", `
-      <p><b>4.</b> En <u class="m-clave">todos</u> los casos en que <mark class="m-accion">proceda</mark> <mark class="m-destacable">recurso de casación</mark>, será <mark class="m-personalizado">suficiente</mark> para fundamentarlo la <mark class="m-accion">infracción</mark> de <mark class="m-destacable">precepto constitucional</mark>. La <mark class="m-destacable">competencia</mark> para decidir el recurso <mark class="m-accion">corresponderá</mark> <u class="m-clave">siempre</u> al <mark class="m-autoridad">Tribunal Supremo</mark>, <mark class="m-personalizado">cualesquiera que sean</mark> la materia, el derecho aplicable y el orden jurisdiccional.</p>
-    `)
-
-    + articulo("Artículo 5 bis — Recurso de revisión ante el TEDH", `
-      <p>Se podrá <mark class="m-accion">interponer</mark> recurso de revisión ante el <mark class="m-autoridad">Tribunal Supremo</mark> contra una <mark class="m-destacable">resolución judicial firme</mark> cuando el <mark class="m-autoridad">Tribunal Europeo de Derechos Humanos</mark> haya <mark class="m-accion">declarado</mark> que dicha resolución fue <mark class="m-accion">dictada</mark> en <mark class="m-destacable">violación</mark> de derechos del Convenio Europeo, <u class="m-clave">siempre que</u> la violación, por su <mark class="m-personalizado">naturaleza y gravedad</mark>, <mark class="m-accion">entrañe</mark> efectos que <mark class="m-personalizado">persistan</mark> y <u class="m-clave">no</u> puedan <mark class="m-accion">cesar</mark> de otro modo.</p>
-    `)
-
-    + articulo("Artículo 6 — Jerarquía normativa", `
-      <p>Los <mark class="m-autoridad">Jueces y Tribunales</mark> <u class="m-clave">no aplicarán</u> los <mark class="m-destacable">reglamentos</mark> o cualquier otra disposición contrarios a la Constitución, a la ley o al <mark class="m-destacable">principio de jerarquía normativa</mark>.</p>
-    `)
-
-    + articulo("Artículo 9.1 y 9.2 — Ejercicio de la jurisdicción y orden civil", `
-      <p><b>1.</b> Los jueces y juezas, <mark class="m-personalizado">así como</mark> los <mark class="m-autoridad">Tribunales</mark>, <mark class="m-accion">ejercerán</mark> su jurisdicción <mark class="m-personalizado">exclusivamente</mark> en aquellos casos en que les venga <mark class="m-destacable">atribuida por esta u otra ley</mark>.</p>
-      <p><b>2.</b> Los del orden <mark class="m-destacable">civil</mark> <mark class="m-accion">conocerán</mark>, además de las materias que les son propias, de <u class="m-clave">todas aquellas</u> que <mark class="m-personalizado">no estén atribuidas</mark> a otro orden jurisdiccional.</p>
-    `)
-
-    + articulo("Artículo 9.3, 9.4, 9.5 y 9.6 — Órdenes jurisdiccionales", `
-      <p><b>3.</b> Los del orden <mark class="m-destacable">penal</mark> <mark class="m-accion">tendrán atribuido</mark> el conocimiento de las <mark class="m-destacable">causas y juicios criminales</mark>, con <u class="m-clave">excepción</u> de los que <mark class="m-accion">correspondan</mark> a la <mark class="m-autoridad">jurisdicción militar</mark>.</p>
-      <p><b>4.</b> Los del orden <mark class="m-destacable">contencioso-administrativo</mark> conocerán de la actuación de las <mark class="m-autoridad">Administraciones públicas</mark> sujeta al derecho administrativo, con las <mark class="m-personalizado">disposiciones generales de rango inferior a la ley</mark> y los <mark class="m-personalizado">reales decretos legislativos</mark>. También de los recursos contra la <mark class="m-accion">inactividad de la Administración</mark> y actuaciones que <mark class="m-accion">constituyan</mark> <mark class="m-destacable">vía de hecho</mark>. Quedan <u class="m-clave">excluidos</u> los recursos contra las Normas Forales fiscales de <mark class="m-personalizado">Álava, Guipúzcoa y Vizcaya</mark>, que <mark class="m-accion">corresponden</mark> <u class="m-clave">en exclusiva</u> al <mark class="m-autoridad">Tribunal Constitucional</mark>. También <mark class="m-accion">conocerán</mark> de la <mark class="m-destacable">responsabilidad patrimonial</mark> de las Administraciones públicas y del personal a su servicio.</p>
-      <p><b>5.</b> Los del orden <mark class="m-destacable">social</mark> <mark class="m-accion">conocerán</mark> de las pretensiones de la <mark class="m-personalizado">rama social del derecho</mark>, tanto en conflictos individuales como colectivos, <mark class="m-personalizado">así como</mark> reclamaciones de <mark class="m-destacable">Seguridad Social</mark> o contra el Estado cuando le <mark class="m-accion">atribuya</mark> responsabilidad la legislación laboral.</p>
-      <p><b>6.</b> La jurisdicción es <u class="m-clave">improrrogable</u>. Los órganos judiciales <mark class="m-accion">apreciarán de oficio</mark> la falta de jurisdicción y <mark class="m-accion">resolverán</mark> con <mark class="m-personalizado">audiencia de las partes y del Ministerio Fiscal</mark>; la resolución será <u class="m-clave">siempre</u> <mark class="m-destacable">fundada</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 10.2 — Cuestión prejudicial penal", `
-      <p><b>2.</b> La existencia de una <mark class="m-destacable">cuestión prejudicial penal</mark> de la que <u class="m-clave">no</u> pueda <mark class="m-accion">prescindirse</mark> para la debida decisión, o que <mark class="m-personalizado">condicione directamente</mark> el contenido de ésta, <mark class="m-accion">determinará</mark> la <mark class="m-destacable">suspensión del procedimiento</mark> mientras aquélla <u class="m-clave">no</u> sea <mark class="m-accion">resuelta</mark> por los órganos penales a quienes <mark class="m-accion">corresponda</mark>, <u class="m-clave">salvo</u> las excepciones que la ley <mark class="m-accion">establezca</mark>.</p>
-    `)
-
-    + articulo("Artículo 14.2 — Defensa de la independencia judicial", `
-      <p><b>2.</b> El <mark class="m-autoridad">Ministerio Fiscal</mark>, por sí o a petición de los Jueces o Magistrados, <mark class="m-accion">promoverá</mark> las <mark class="m-destacable">acciones pertinentes</mark> en defensa de la <mark class="m-personalizado">independencia judicial</mark>.</p>
-    `)
-
-    + articulo("Artículo 15 — Inamovilidad", `
-      <p>Los <mark class="m-autoridad">Jueces y Magistrados</mark> <u class="m-clave">no podrán ser</u> <mark class="m-destacable">separados, suspendidos, trasladados ni jubilados</mark> sino por alguna de las causas y con las garantías previstas en esta Ley.</p>
-    `)
-
-    + articulo("Artículo 16.1 y 16.2 — Responsabilidad y prohibición de Tribunales de Honor", `
-      <p><b>1.</b> Los <mark class="m-autoridad">Jueces y Magistrados</mark> <mark class="m-accion">responderán</mark> penal y civilmente en los casos y forma determinados en las leyes, y <mark class="m-destacable">disciplinariamente</mark> conforme a lo establecido en esta Ley.</p>
-      <p><b>2.</b> Se <mark class="m-accion">prohíben</mark> los <mark class="m-destacable">Tribunales de Honor</mark> en la Administración de Justicia.</p>
-    `)
-
-    + articulo("Artículo 18.2 y 18.3 — Ejecución de sentencias y derecho de gracia", `
-      <p><b>2.</b> Las <mark class="m-destacable">sentencias</mark> se <mark class="m-accion">ejecutarán</mark> en sus propios términos. Si la ejecución resultare imposible, el <mark class="m-autoridad">Juez o Tribunal</mark> adoptará las medidas necesarias y fijará la <mark class="m-destacable">indemnización</mark> procedente. Solo por <mark class="m-personalizado">causa de utilidad pública o interés social</mark>, declarada por el <mark class="m-autoridad">Gobierno</mark>, podrán <mark class="m-accion">expropiarse</mark> los derechos reconocidos frente a la Administración en una sentencia firme, antes de su ejecución.</p>
-      <p><b>3.</b> Lo dispuesto se entiende sin perjuicio del <mark class="m-destacable">derecho de gracia</mark>, cuyo ejercicio corresponde al <mark class="m-autoridad">Rey</mark>.</p>
-    `)
-
-    + articulo("Artículo 19.1 y 19.2 — Acción popular y participación ciudadana", `
-      <p><b>1.</b> Los ciudadanos de <mark class="m-destacable">nacionalidad española</mark> podrán ejercer la <mark class="m-destacable">acción popular</mark>, en los casos y formas establecidos en la ley.</p>
-      <p><b>2.</b> Asimismo, podrán <mark class="m-accion">participar</mark> en la Administración de Justicia: mediante la institución del <mark class="m-destacable">Jurado</mark>, en procesos penales que la ley determine; en los <mark class="m-personalizado">Tribunales consuetudinarios y tradicionales</mark> y en los demás casos previstos en esta Ley.</p>
-    `)
-
-    + articulo("Artículo 19.3, 19.4, 19.5 y 19.6 — Tribunales consuetudinarios y tradicionales", `
-      <p>Tienen este carácter: el <mark class="m-destacable">Tribunal de las Aguas de la Vega Valenciana</mark>, el <mark class="m-destacable">Consejo de Hombres Buenos de Murcia</mark>, el <mark class="m-destacable">Juzgado Privativo de Aguas de Orihuela y Pueblos de su Marco</mark> y el <mark class="m-destacable">Tribunal del Comuner del Rollet de Gràcia de l'Horta d'Aldaia</mark>.</p>
-    `)
-
-    + articulo("Artículo 21.1 y 21.2 — Tribunales civiles españoles", `
-      <p><b>1.</b> Los <mark class="m-autoridad">Tribunales civiles españoles</mark> conocerán de las pretensiones en <mark class="m-personalizado">territorio español</mark> con arreglo a los <mark class="m-destacable">tratados y convenios internacionales</mark> en que España sea parte, a las <mark class="m-destacable">normas de la Unión Europea</mark> y a las <mark class="m-destacable">leyes españolas</mark>.</p>
-      <p><b>2.</b> <u class="m-clave">No obstante</u>, <u class="m-clave">no conocerán</u> de las pretensiones formuladas respecto de sujetos o bienes que gocen de <mark class="m-destacable">inmunidad de jurisdicción y de ejecución</mark> conforme a la legislación española y las normas de <mark class="m-personalizado">Derecho Internacional Público</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 22 — Competencia exclusiva de los Tribunales españoles", `
-      <p>Con carácter <u class="m-clave">exclusivo</u>, los Tribunales españoles serán competentes en todo caso y con preferencia de cualquier otro para: a) <mark class="m-destacable">derechos reales y arrendamientos</mark> de inmuebles en España; b) <mark class="m-destacable">constitución, validez, nulidad o disolución</mark> de sociedades o personas jurídicas con domicilio en España; c) <mark class="m-destacable">validez o nulidad de inscripciones</mark> en un registro español; d) <mark class="m-destacable">patentes, marcas, diseños o dibujos y modelos</mark> depositados o registrados en España; e) <mark class="m-destacable">reconocimiento y ejecución</mark> en España de sentencias, decisiones arbitrales y acuerdos de mediación dictados en el extranjero.</p>
-    `)
-
-    + articulo("Artículo 22 bis.1 y 22 bis.2 — Sumisión expresa o tácita", `
-      <p><b>1.</b> Cuando una norma lo permita, los Tribunales españoles serán <mark class="m-destacable">competentes</mark> cuando <mark class="m-personalizado">las partes</mark>, con independencia de su domicilio, se hayan <mark class="m-accion">sometido</mark> <u class="m-clave">expresa o tácitamente</u> a ellos.</p>
-      <p><b>2.</b> Se entenderá por <mark class="m-destacable">acuerdo de sumisión expresa</mark> aquel pacto por el que las partes deciden <mark class="m-accion">atribuir</mark> a los Tribunales españoles el conocimiento de controversias respecto de una <mark class="m-personalizado">relación jurídica, contractual o no contractual</mark>. Deberá <mark class="m-accion">constar</mark> por <u class="m-clave">escrito</u>, o verbalmente con <mark class="m-destacable">confirmación escrita</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 22 quáter — Foros de competencia en defecto de los criterios anteriores", `
-      <p>a) <mark class="m-destacable">Ausencia o fallecimiento</mark>, si el desaparecido tuvo su último domicilio o nacionalidad española. b) <mark class="m-destacable">Capacidad de las personas</mark> y medidas de protección, si residen habitualmente en España. c) <mark class="m-destacable">Relaciones entre cónyuges, nulidad, separación y divorcio</mark>, según los criterios de residencia habitual que fija la ley. d) <mark class="m-destacable">Filiación, relaciones paterno-filiales y protección de menores</mark>. e) <mark class="m-destacable">Adopción internacional</mark>. f) <mark class="m-destacable">Alimentos</mark>, si el acreedor o demandado reside en España. g) <mark class="m-destacable">Sucesiones</mark>, si el causante tuvo su última residencia habitual en España o los bienes están en España siendo español el causante.</p>
-    `)
-
-    + articulo("Artículo 22 octies.3 — Declinación de competencia", `
-      <p><b>3.</b> Los Tribunales españoles se <mark class="m-accion">declararán incompetentes</mark> si su competencia <u class="m-clave">no estuviera fundada</u> en las leyes españolas. <u class="m-clave">No podrán abstenerse</u> o declinar su competencia cuando el supuesto litigioso presente <mark class="m-personalizado">vinculación con España</mark> y los Tribunales de los distintos Estados conectados hayan declinado la suya, ni tampoco cuando se trate del <mark class="m-destacable">reconocimiento y ejecución</mark> de resoluciones judiciales, decisiones arbitrales y acuerdos de mediación extranjeros.</p>
-    `)
-
-    + articulo("Artículo 23.1 — Jurisdicción penal por hechos en territorio español", `
-      <p><b>1.</b> En el orden penal corresponderá a la <mark class="m-destacable">jurisdicción española</mark> el conocimiento de las causas por delitos y faltas cometidos en <mark class="m-personalizado">territorio español</mark> o a bordo de <mark class="m-destacable">buques o aeronaves españoles</mark>, sin perjuicio de los tratados internacionales.</p>
-    `)
-
-    + articulo("Artículo 23.2 — Jurisdicción por nacionalidad del responsable", `
-      <p><b>2.</b> También conocerá de delitos cometidos <u class="m-clave">fuera del territorio nacional</u> por españoles o extranjeros que hayan adquirido la nacionalidad después del hecho, si: a) el hecho es <mark class="m-destacable">punible en el lugar de ejecución</mark>; b) el agraviado o el <mark class="m-autoridad">Ministerio Fiscal</mark> interponen <mark class="m-destacable">querella</mark>; c) el delincuente <u class="m-clave">no</u> ha sido absuelto, indultado o penado en el extranjero (o no ha cumplido íntegramente la condena).</p>
-    `)
-
-    + articulo("Artículo 23.3 — Delitos contra el Estado y sus instituciones", `
-      <p><b>3.</b> Conocerá también de hechos cometidos fuera de España cuando sean: a) <mark class="m-destacable">traición</mark> contra la paz o independencia del Estado; b) contra el <mark class="m-autoridad">titular de la Corona</mark>, su Consorte, Sucesor o Regente; c) <mark class="m-destacable">rebelión y sedición</mark>; d) <mark class="m-destacable">falsificación</mark> de firma o sello reales/del Estado; e) <mark class="m-destacable">falsificación de moneda española</mark>; f) otras <mark class="m-destacable">falsificaciones</mark> que perjudiquen al crédito del Estado; g) <mark class="m-destacable">atentado</mark> contra autoridades o funcionarios públicos españoles; h) delitos de funcionarios españoles en el extranjero o contra la Administración Pública española; i) delitos relativos al <mark class="m-destacable">control de cambios</mark>.</p>
-    `)
-
-    + articulo("Artículo 23.4 — Delitos de persecución universal (letras a-p)", `
-      <p>a) <mark class="m-destacable">Genocidio, lesa humanidad</mark> o contra personas y bienes protegidos en conflicto armado. b) <mark class="m-destacable">Tortura</mark> y contra la integridad moral. c) <mark class="m-destacable">Desaparición forzada</mark>. d) <mark class="m-destacable">Piratería, terrorismo, tráfico de drogas, trata de seres humanos</mark> y contra la seguridad de la navegación marítima. e) <mark class="m-destacable">Terrorismo</mark>. f) Apoderamiento ilícito de aeronaves (<mark class="m-destacable">Convenio de La Haya</mark>). g) Actos contra la seguridad de la aviación civil (<mark class="m-destacable">Convenio de Montreal</mark>). h) Protección física de <mark class="m-destacable">materiales nucleares</mark>. i) <mark class="m-destacable">Tráfico ilegal de drogas</mark>. j) Constitución/financiación de <mark class="m-destacable">grupo u organización criminal</mark>. k) Delitos contra la <mark class="m-destacable">libertad e indemnidad sexual</mark> de menores. l) Violencia contra las mujeres y <mark class="m-destacable">violencia doméstica</mark> (Convenio de Estambul). m) <mark class="m-destacable">Trata de seres humanos</mark>. n) <mark class="m-destacable">Corrupción</mark> entre particulares o internacional. o) <mark class="m-destacable">Falsificación de productos médicos</mark> y amenaza a la salud pública. p) Cualquier otro delito cuya persecución imponga con carácter obligatorio un <mark class="m-destacable">Tratado</mark> vigente para España.</p>
-    `)
-
-    + articulo("Artículo 23.6 — Requisito de querella", `
-      <p><b>6.</b> Los delitos a que se refieren los apartados 3 y 4 solamente serán <mark class="m-personalizado">perseguibles en España</mark> previa <mark class="m-accion">interposición de querella</mark> por el <mark class="m-destacable">agraviado</mark> o por el <mark class="m-autoridad">Ministerio Fiscal</mark>.</p>
-    `)
-
-    + articulo("Artículo 24 — Jurisdicción contencioso-administrativa", `
-      <p>En el orden contencioso-administrativo será <mark class="m-personalizado">competente, en todo caso,</mark> la <mark class="m-destacable">jurisdicción española</mark> cuando la pretensión se refiera a <mark class="m-destacable">disposiciones de carácter general</mark> o a <mark class="m-destacable">actos de las Administraciones Públicas españolas</mark>. Asimismo conocerá de las relativas a actos de los <mark class="m-autoridad">poderes públicos españoles</mark>.</p>
-    `)
-
-    + articulo("Artículo 25 — Jurisdicción del orden social", `
-      <p>Los jueces, juezas y Tribunales españoles serán competentes en el orden social: 1.º en materia de <mark class="m-destacable">derechos y obligaciones del contrato de trabajo</mark>, cuando los servicios se presten o el contrato se celebre en España, o cuando demandado y trabajador/empresario tengan <mark class="m-personalizado">nacionalidad española</mark>; 2.º en <mark class="m-destacable">control de legalidad de convenios colectivos</mark> celebrados en España y conflictos colectivos promovidos en territorio español; 3.º en <mark class="m-destacable">pretensiones de Seguridad Social</mark> frente a entidades españolas o con representación en España.</p>
-    `, true)
-
-    + bloqueTitulo("TÍTULO II — De la planta y organización territorial")
-
-    + articulo("Artículo 26 — Los Tribunales", `
-      <p>Los Tribunales a los que se atribuye el ejercicio de la potestad jurisdiccional son: a) <mark class="m-autoridad">Jueces y juezas de paz</mark>; b) <mark class="m-autoridad">Tribunales de Instancia</mark>; c) <mark class="m-autoridad">Audiencias Provinciales</mark>; d) <mark class="m-autoridad">Tribunales Superiores de Justicia</mark>; e) <mark class="m-autoridad">Tribunal Central de Instancia</mark>; f) <mark class="m-autoridad">Audiencia Nacional</mark>; g) <mark class="m-autoridad">Tribunal Supremo</mark>.</p>
-    `)
-
-    + articulo("Artículo 27.1 y 27.2 — Numeración de Salas y plazas", `
-      <p><b>1.</b> Cuando las <mark class="m-destacable">Salas</mark> de los Tribunales se dividan en <mark class="m-destacable">Secciones</mark> y hubiere dos o más, se <mark class="m-accion">designarán</mark> por <mark class="m-personalizado">numeración ordinal</mark>.</p>
-      <p><b>2.</b> Las <mark class="m-destacable">plazas judiciales</mark> que integran los Tribunales de Instancia y el Tribunal Central de Instancia se designarán por <mark class="m-personalizado">numeración cardinal</mark> dentro de la misma Sección.</p>
-    `)
-
-    + articulo("Artículo 29.1 y 29.2 — Planta de los tribunales", `
-      <p><b>1.</b> La <mark class="m-destacable">planta de los tribunales</mark> se establecerá por <mark class="m-autoridad">ley</mark>. Será <mark class="m-accion">revisada</mark>, al menos, cada <mark class="m-plazo">cinco años</mark>, previo informe del <mark class="m-autoridad">Consejo General del Poder Judicial</mark>.</p>
-      <p><b>2.</b> La revisión podrá ser <mark class="m-accion">instada</mark> por las <mark class="m-autoridad">Comunidades Autónomas</mark> con competencia en materia de Justicia.</p>
-    `)
-
-    + articulo("Artículo 30 — División territorial", `
-      <p>El <mark class="m-autoridad">Estado</mark> se <mark class="m-accion">organiza territorialmente</mark>, a efectos judiciales, en <mark class="m-destacable">Municipios, Partidos, Provincias y Comunidades Autónomas</mark>.</p>
-    `)
-
-    + articulo("Artículo 32.1 y 32.2 — El partido judicial", `
-      <p><b>1.</b> El <mark class="m-destacable">partido</mark> es la <mark class="m-personalizado">unidad territorial</mark> integrada por uno o más <mark class="m-destacable">municipios limítrofes</mark>, pertenecientes a una misma provincia.</p>
-      <p><b>2.</b> La <mark class="m-destacable">modificación</mark> de partidos se realizará en función del número de asuntos, características de la población, medios de comunicación y comarcas naturales.</p>
-    `)
-
-    + articulo("Artículo 35.1, 35.2, 35.3, 35.5 y 35.6 — Demarcación judicial", `
-      <p><b>1.</b> La <mark class="m-destacable">demarcación judicial</mark> se establecerá por <mark class="m-autoridad">ley</mark> o, en los casos previstos, por <mark class="m-destacable">real decreto</mark>.</p>
-      <p><b>2.</b> Las <mark class="m-autoridad">Comunidades Autónomas</mark> participarán en la organización de la demarcación judicial de sus territorios, remitiendo al <mark class="m-autoridad">Gobierno</mark>, a solicitud de éste, una <mark class="m-personalizado">propuesta</mark> en la que fijarán los partidos judiciales.</p>
-      <p><b>3.</b> El <mark class="m-autoridad">Ministerio de Justicia</mark>, vistas las propuestas de las CC.AA., redactará la disposición normativa, que será <mark class="m-accion">informada</mark> por el <mark class="m-autoridad">CGPJ</mark> en el plazo de <mark class="m-plazo">dos meses</mark>.</p>
-      <p><b>5.</b> Será <mark class="m-accion">revisada</mark> cada <mark class="m-plazo">cinco años</mark> o antes si las circunstancias lo aconsejan, mediante ley.</p>
-      <p><b>6.</b> Las CC.AA., previo informe del CGPJ, determinarán por ley la <mark class="m-destacable">capitalidad de los partidos judiciales</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 36 — Creación de Secciones", `
-      <p>La <mark class="m-destacable">creación</mark> de las Secciones y de plazas judiciales, siempre que <u class="m-clave">no suponga alteración</u> de la demarcación judicial, corresponderá al <mark class="m-autoridad">Gobierno</mark>, oídos preceptivamente la <mark class="m-autoridad">comunidad autónoma</mark> afectada y el <mark class="m-autoridad">CGPJ</mark>.</p>
-    `)
-
-    + bloqueTitulo("TÍTULO III — De los conflictos de jurisdicción y de los conflictos y cuestiones de competencia")
-
-    + articulo("Artículo 38 — Conflictos de jurisdicción con la Administración", `
-      <p><b>1.</b> Se resolverán por un <mark class="m-destacable">órgano colegiado</mark> constituido por el <mark class="m-autoridad">Presidente del Tribunal Supremo</mark>, que lo presidirá, y por <mark class="m-plazo">cinco vocales</mark>: <mark class="m-plazo">dos Magistrados</mark> de la Sala de lo Contencioso-Administrativo del TS (designados por el Pleno del CGPJ) y <mark class="m-plazo">tres Consejeros Permanentes de Estado</mark>, actuando como Secretario el de Gobierno del TS.</p>
-      <p><b>2.</b> El Presidente tendrá siempre <mark class="m-destacable">voto de calidad</mark> en caso de empate.</p>
-    `, true)
-
-    + articulo("Artículo 39 — Conflictos de jurisdicción con órganos militares", `
-      <p><b>1.</b> Se resolverán por la <mark class="m-destacable">Sala de Conflictos de Jurisdicción</mark>, compuesta por el <mark class="m-autoridad">Presidente del TS</mark> (que la presidirá), <mark class="m-plazo">dos Magistrados</mark> de la Sala del orden en conflicto y <mark class="m-plazo">dos Magistrados</mark> de la Sala de lo Militar, designados por el Pleno del CGPJ.</p>
-    `, true)
-
-    + trampa("Trampa de examen — conflictos de jurisdicción", "Art. 38 (Juzgados/Tribunales vs. Administración): órgano colegiado con 5 vocales (2 Magistrados de lo Contencioso-Administrativo + 3 Consejeros Permanentes de Estado). Art. 39 (jurisdicción ordinaria vs. militar): Sala de Conflictos de Jurisdicción con 2+2 Magistrados. No confundir composición ni nombre del órgano.")
-
-    + articulo("Artículo 42 — Conflictos de competencia entre órdenes jurisdiccionales", `
-      <p>Se resolverán por una <mark class="m-destacable">Sala especial del Tribunal Supremo</mark>, presidida por el <mark class="m-autoridad">Presidente</mark> y compuesta por <mark class="m-plazo">dos Magistrados</mark>, uno por cada orden jurisdiccional en conflicto, designados <mark class="m-plazo">anualmente</mark> por la Sala de Gobierno.</p>
-    `)
-
-    + articulo("Artículo 44 — Preferencia del orden penal", `
-      <p>El orden jurisdiccional <mark class="m-destacable">penal</mark> es <u class="m-clave">siempre preferente</u>. <u class="m-clave">Ningún</u> Juez o Tribunal podrá <mark class="m-accion">plantear conflicto de competencia</mark> a los órganos de dicho orden jurisdiccional.</p>
-    `)
-
-    + articulo("Artículo 51 y 52 — Cuestiones de competencia del mismo orden", `
-      <p><b>51.1.</b> Las cuestiones de competencia entre Juzgados y Tribunales de un <mark class="m-destacable">mismo orden jurisdiccional</mark> se resolverán por el <mark class="m-autoridad">órgano inmediato superior común</mark>.</p>
-      <p><b>52.</b> <u class="m-clave">No podrán suscitarse</u> cuestiones de competencia entre Jueces y Tribunales <mark class="m-personalizado">subordinados entre sí</mark>.</p>
-    `)
-
-    + bloqueTitulo("TÍTULO IV — De la composición y atribuciones de los órganos jurisdiccionales")
-
-    + articulo("Artículo 53 — El Tribunal Supremo", `
-      <p>El <mark class="m-autoridad">Tribunal Supremo</mark>, con sede en la villa de <mark class="m-destacable">Madrid</mark>, es el <mark class="m-personalizado">órgano jurisdiccional superior</mark> en todos los órdenes, salvo lo dispuesto en materia de <mark class="m-destacable">garantías Constitucionales</mark>. Tendrá jurisdicción en <u class="m-clave">toda España</u> y ningún otro podrá tener el título de <mark class="m-destacable">Supremo</mark>.</p>
-    `)
-
-    + articulo("Artículo 54 — Composición del Tribunal Supremo", `
-      <p>El Tribunal Supremo se <mark class="m-accion">compondrá</mark> de su <mark class="m-autoridad">Presidente</mark>, de los <mark class="m-autoridad">Presidentes de Sala</mark> y los <mark class="m-autoridad">Magistrados</mark> que <mark class="m-accion">determine</mark> la ley para cada una de las Salas y, <mark class="m-personalizado">en su caso</mark>, Secciones.</p>
-    `)
-
-    + articulo("Artículo 55 — Las Salas del Tribunal Supremo", `
-      <p>El Tribunal Supremo <mark class="m-accion">estará integrado</mark> por las Salas: <mark class="m-destacable">Primera</mark> (de lo Civil), <mark class="m-destacable">Segunda</mark> (de lo Penal), <mark class="m-destacable">Tercera</mark> (de lo Contencioso-Administrativo), <mark class="m-destacable">Cuarta</mark> (de lo Social) y <mark class="m-destacable">Quinta</mark> (de lo Militar, que se <mark class="m-accion">rige</mark> por su legislación específica y <mark class="m-personalizado">supletoriamente</mark> por esta Ley).</p>
-    `)
-
-    + articulo("Artículo 55 bis — Acciones contra la Familia Real", `
-      <p>Las Salas de lo <mark class="m-destacable">Civil</mark> y de lo <mark class="m-destacable">Penal</mark> del Tribunal Supremo <mark class="m-accion">conocerán</mark> de la <mark class="m-destacable">tramitación y enjuiciamiento</mark> de las acciones civiles y penales <mark class="m-personalizado">dirigidas</mark> contra la <mark class="m-autoridad">Reina consorte</mark> o el consorte de la Reina, la <mark class="m-autoridad">Princesa o Príncipe de Asturias</mark> y su consorte, <mark class="m-personalizado">así como</mark> contra el <mark class="m-autoridad">Rey o Reina que hubiere abdicado</mark> y su consorte.</p>
-    `)
-
-    + articulo("Artículo 57.1 (números 1.º, 2.º y 3.º) — Sala de lo Penal del Tribunal Supremo", `
-      <p><b>1.º</b> De los <mark class="m-destacable">recursos de casación, revisión</mark> y otros extraordinarios en materia penal.</p>
-      <p><b>2.º</b> De la <mark class="m-destacable">instrucción y enjuiciamiento</mark> de las causas contra el <mark class="m-autoridad">Presidente del Gobierno</mark>, Presidentes del Congreso y del Senado, Presidente del TS y del CGPJ, Presidente del TC, miembros del Gobierno, Diputados y Senadores, Vocales del CGPJ, Magistrados del TC y del TS, Presidente de la Audiencia Nacional, Fiscal General del Estado y demás altos cargos que señala el precepto.</p>
-      <p><b>3.º</b> De la <mark class="m-destacable">instrucción y enjuiciamiento</mark> de las causas contra Magistrados de la Audiencia Nacional, de un TSJ o de los Fiscales europeos delegados.</p>
-    `)
-
-    + articulo("Artículo 58 — Sala de lo Contencioso-Administrativo del Tribunal Supremo", `
-      <p><mark class="m-accion">Conocerá</mark>, en <mark class="m-destacable">única instancia</mark>, de los recursos contra actos y disposiciones del <mark class="m-autoridad">Consejo de Ministros</mark>, de las Comisiones Delegadas del Gobierno y del <mark class="m-autoridad">CGPJ</mark>, y contra actos de órganos competentes del <mark class="m-autoridad">Congreso, Senado, Tribunal Constitucional, Tribunal de Cuentas y Defensor del Pueblo</mark>; también de los <mark class="m-destacable">recursos de casación y revisión</mark>.</p>
-    `)
-
-    + articulo("Artículo 59 — Sala de lo Social del Tribunal Supremo", `
-      <p><mark class="m-accion">Conocerá</mark> de los <mark class="m-destacable">recursos de casación y revisión</mark> y otros extraordinarios en materias propias de este orden jurisdiccional.</p>
-    `)
-
-    + articulo("Artículo 60.1 y 60.2 — Recusaciones y cuestiones de competencia en el TS", `
-      <p><b>1.</b> Cada Sala del TS <mark class="m-accion">conocerá</mark> de las <mark class="m-destacable">recusaciones</mark> que se <mark class="m-accion">interpusieren</mark> contra sus Magistrados, y de las <mark class="m-destacable">cuestiones de competencia</mark> entre Juzgados o Tribunales del propio orden que <u class="m-clave">no</u> tengan otro superior común.</p>
-      <p><b>2.</b> Los Magistrados recusados <u class="m-clave">no formarán parte</u> de la Sala.</p>
-    `)
-
-    + articulo("Artículo 61 — Sala especial de recusaciones e incidentes del Tribunal Supremo", `
-      <p>Conjunto de reglas que fija los asuntos de que conoce la <mark class="m-destacable">Sala especial del art. 61</mark>: recursos de revisión, incidentes de recusación, demandas de responsabilidad civil e instrucción de causas contra Presidentes de Sala o Magistrados del TS, error judicial y disolución de partidos políticos.</p>
-    `, true)
-
-    + articulo("Artículo 61.1 — Sala especial del Tribunal Supremo", `
-      <p>Una <mark class="m-destacable">Sala</mark> formada por el <mark class="m-autoridad">Presidente del Tribunal Supremo</mark>, los <mark class="m-autoridad">Presidentes de Sala</mark> y el <mark class="m-destacable">Magistrado más antiguo y el más moderno</mark> de cada una conocerá, entre otros, de los <mark class="m-personalizado">incidentes de recusación</mark> del Presidente, de los Presidentes de Sala o de más de dos Magistrados de una Sala.</p>
-    `, true)
-
-    + articulo("Artículo 61.3 — Recurso de casación para unificación de doctrina", `
-      <p>Una <mark class="m-destacable">Sección</mark>, formada por el <mark class="m-autoridad">Presidente del TS</mark>, el de la Sala de lo Contencioso-Administrativo y <mark class="m-plazo">cinco Magistrados</mark> de esta Sala (los <mark class="m-plazo">dos más antiguos</mark> y los <mark class="m-plazo">tres más modernos</mark>), conocerá del recurso de casación para la <mark class="m-destacable">unificación de doctrina</mark> cuando la contradicción se produzca entre sentencias dictadas por Secciones distintas de dicha Sala.</p>
-    `, true)
-
-    + articulo("Artículo 61 bis.1, 61 bis.4 y 61 bis.5 — Gabinete Técnico del Tribunal Supremo", `
-      <p><b>1.</b> El <mark class="m-destacable">Gabinete Técnico</mark> <mark class="m-accion">asistirá</mark> a la Presidencia y a las Salas en los <mark class="m-personalizado">procesos de admisión</mark> de los asuntos, mediante estudios e informes; también prestará apoyo a las Salas especiales.</p>
-      <p><b>4.</b> En cada <mark class="m-destacable">área</mark> habrá uno o varios <mark class="m-autoridad">Letrados</mark> coordinadores, designados por el <mark class="m-autoridad">Presidente del TS</mark>, preferentemente de la Carrera Judicial, con antigüedad mínima de <mark class="m-plazo">diez años</mark> en su profesión.</p>
-      <p><b>5.</b> El <mark class="m-autoridad">Ministerio de Justicia</mark>, oída la Sala de Gobierno del TS y previo informe del <mark class="m-autoridad">CGPJ</mark> e informe favorable del <mark class="m-autoridad">Ministerio de Hacienda</mark>, determinará la <mark class="m-destacable">composición y plantilla</mark> del Gabinete Técnico; excepcionalmente podrá adscribir temporalmente miembros adicionales con el límite máximo de <mark class="m-plazo">un año</mark>.</p>
-    `)
-
-    + articulo("Artículo 61 quáter.1 — Nombramiento del Director del Gabinete Técnico", `
-      <p><b>1.</b> El <mark class="m-autoridad">Pleno del CGPJ</mark> <mark class="m-accion">nombrará</mark> al <mark class="m-autoridad">Director del Gabinete Técnico</mark>, a <mark class="m-destacable">propuesta vinculante</mark> del Presidente del TS, debiendo acreditar los requisitos para acceder a la categoría de <mark class="m-destacable">Magistrado del Tribunal Supremo</mark>.</p>
-    `)
-
-    + articulo("Artículo 61 quinquies.1 — Nombramiento y prórroga de los Letrados", `
-      <p><b>1.</b> Los <mark class="m-autoridad">Letrados</mark> seleccionados serán <mark class="m-accion">nombrados</mark> por <mark class="m-plazo">un año</mark>. Cumplido ese plazo, el <mark class="m-autoridad">Presidente del TS</mark> podrá <mark class="m-accion">proponer</mark> la <mark class="m-destacable">prórroga</mark> en la plaza; podrán prorrogarse por sucesivos periodos de <mark class="m-plazo">tres años</mark>. Podrán ser <mark class="m-accion">cesados</mark> por el Presidente del TS por incumplimiento grave de sus deberes.</p>
-    `)
-
-    + articulo("CAPÍTULO IV: Artículo 61 sexies — Normas de funcionamiento del Gabinete Técnico", `
-      <p>La <mark class="m-autoridad">Sala de Gobierno</mark>, a <mark class="m-personalizado">propuesta</mark> del Presidente del Tribunal Supremo, <mark class="m-accion">aprobará</mark> las <mark class="m-destacable">normas de funcionamiento</mark> del Gabinete Técnico.</p>
-    `)
-
-    + bloqueTitulo("CAPÍTULO II — De la Audiencia Nacional")
-
-    + articulo("Artículo 63.1 y 63.2 — Composición de la Audiencia Nacional", `
-      <p><b>1.</b> La <mark class="m-autoridad">Audiencia Nacional</mark> se <mark class="m-accion">compondrá</mark> de su <mark class="m-autoridad">Presidente</mark>, los <mark class="m-autoridad">Presidentes de Sala</mark> y los <mark class="m-autoridad">Magistrados</mark> que <mark class="m-accion">determine</mark> la ley para cada una de sus Salas y Secciones.</p>
-      <p><b>2.</b> El <mark class="m-autoridad">Presidente de la Audiencia Nacional</mark>, que tendrá la consideración de <mark class="m-destacable">Presidente de Sala del Tribunal Supremo</mark>, es el <mark class="m-personalizado">Presidente nato</mark> de todas sus Salas.</p>
-    `)
-
-    + articulo("Artículo 64.1 y 64.2 — Salas de la Audiencia Nacional", `
-      <p><b>1.</b> La Audiencia Nacional estará integrada por las Salas: <mark class="m-destacable">de Apelación</mark>, <mark class="m-destacable">de lo Penal</mark>, <mark class="m-destacable">de lo Contencioso-Administrativo</mark> y <mark class="m-destacable">de lo Social</mark>.</p>
-      <p><b>2.</b> Cuando el número de asuntos lo aconseje, podrán <mark class="m-accion">crearse</mark> dos o más <mark class="m-personalizado">Secciones</mark> dentro de una Sala.</p>
-    `)
-
-    + articulo("Artículo 64 bis.1 — Sala de Apelación", `
-      <p><b>1.</b> La <mark class="m-destacable">Sala de Apelación</mark> de la Audiencia Nacional conocerá de los <mark class="m-personalizado">recursos de esta clase</mark> que establezca la ley contra las resoluciones de la <mark class="m-autoridad">Sala de lo Penal</mark>.</p>
-    `)
-
-    + articulo("Artículo 65 — Sala de lo Penal de la Audiencia Nacional", `
-      <p><b>1.º</b> Del <mark class="m-destacable">enjuiciamiento</mark> de causas por delitos como los cometidos contra el <mark class="m-autoridad">titular de la Corona</mark>, <mark class="m-destacable">falsificación de moneda</mark> por organizaciones criminales, <mark class="m-destacable">defraudaciones</mark> de repercusión nacional, <mark class="m-destacable">tráfico de drogas</mark> por bandas organizadas, delitos cometidos <mark class="m-personalizado">fuera del territorio nacional</mark> atribuidos a Tribunales españoles, delitos atribuidos a la <mark class="m-autoridad">Fiscalía Europea</mark> y de <mark class="m-destacable">contrabando de material de defensa</mark>.</p>
-      <p><b>3.º</b> De las <mark class="m-destacable">cuestiones de cesión de jurisdicción</mark> en materia penal derivadas del cumplimiento de tratados internacionales en los que España sea parte.</p>
-      <p><b>4.º</b> De los <mark class="m-destacable">recursos</mark> respecto a los instrumentos de reconocimiento mutuo de resoluciones penales en la UE, y de la <mark class="m-personalizado">extradición pasiva</mark>.</p>
-      <p><b>5.º</b> De los recursos contra sentencias y resoluciones de la <mark class="m-autoridad">Sección de lo Penal</mark>, de <mark class="m-destacable">Instrucción</mark> (incluidas funciones de Jueces de garantías) y de <mark class="m-destacable">Menores</mark> del Tribunal Central de Instancia.</p>
-      <p><b>6.º</b> De los recursos contra resoluciones de la <mark class="m-destacable">Sección de Vigilancia Penitenciaria</mark> del Tribunal Central de Instancia.</p>
-      <p><b>7.º</b> De los <mark class="m-destacable">procedimientos de decomiso autónomo</mark> por los delitos para cuyo conocimiento sean competentes.</p>
-      <p><b>8.º</b> De <u class="m-clave">cualquier otro</u> asunto que le atribuyan las leyes.</p>
-    `, true)
-
-    + articulo("Artículo 66 — Sala de lo Contencioso-Administrativo de la Audiencia Nacional", `
-      <p>Conocerá, en <mark class="m-destacable">única instancia</mark>, de los recursos contra disposiciones y actos de <mark class="m-autoridad">Ministros y Secretarios de Estado</mark> no atribuidos al Tribunal Central de Instancia, contra actos de la <mark class="m-autoridad">Comisión de Vigilancia de Actividades de Financiación del Terrorismo</mark>, y de los recursos no atribuidos a los <mark class="m-autoridad">Tribunales Superiores de Justicia</mark> sobre convenios entre Administraciones y resoluciones del <mark class="m-destacable">Tribunal Económico-Administrativo Central</mark>.</p>
-    `)
-
-    + articulo("Artículo 67.1 — Sala de lo Social de la Audiencia Nacional", `
-      <p><b>1.º</b> De los <mark class="m-destacable">procesos especiales de impugnación de convenios colectivos</mark> cuyo ámbito territorial sea <mark class="m-personalizado">superior al de una Comunidad Autónoma</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 69 — Recusaciones en la Audiencia Nacional", `
-      <p>Una <mark class="m-destacable">Sala</mark> formada por el <mark class="m-autoridad">Presidente de la Audiencia Nacional</mark>, los <mark class="m-autoridad">Presidentes de Sala</mark> y el <mark class="m-destacable">Magistrado más antiguo y el más moderno</mark> de cada una conocerá de los <mark class="m-personalizado">incidentes de recusación</mark> del Presidente, de los Presidentes de Sala o de más de dos Magistrados de una Sala.</p>
-    `)
-
-    + articulo("Artículo 77 — Recusaciones en el Tribunal Superior de Justicia", `
-      <p><b>1.</b> Una Sala constituida por el <mark class="m-autoridad">Presidente del TSJ</mark>, los <mark class="m-autoridad">Presidentes de Sala</mark> y el <mark class="m-destacable">Magistrado más moderno</mark> de cada una conocerá de las recusaciones contra el Presidente, los Presidentes de Sala o de Audiencias Provinciales, o de dos o más Magistrados de una Sala, Sección o Audiencia Provincial.</p>
-    `)
-
-    + trampa("Trampa de examen — quién preside cada Sala de recusaciones", "TS: preside el Presidente del TS, con el Magistrado más antiguo Y el más moderno de cada Sala. TSJ (art. 77): solo el Magistrado más MODERNO de cada una, no el más antiguo. No mezclar ambas composiciones.")
-
-    + bloqueTitulo("CAPÍTULO III — De los Tribunales Superiores de Justicia")
-
-    + articulo("Artículo 70 — El Tribunal Superior de Justicia", `
-      <p>El <mark class="m-autoridad">Tribunal Superior de Justicia</mark> de la Comunidad Autónoma <mark class="m-accion">culminará</mark> la <mark class="m-destacable">organización judicial</mark> en el ámbito territorial de aquélla, sin perjuicio de la jurisdicción que corresponde al <mark class="m-autoridad">Tribunal Supremo</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 71 — Nombre y jurisdicción del TSJ", `
-      <p>El Tribunal Superior de Justicia <mark class="m-accion">tomará el nombre</mark> de la <mark class="m-destacable">Comunidad Autónoma</mark> y extenderá su jurisdicción al <mark class="m-personalizado">ámbito territorial</mark> de ésta.</p>
-    `, true)
-
-    + articulo("Artículo 72.1 y 72.2 — Composición del Tribunal Superior de Justicia", `
-      <p><b>1.</b> <mark class="m-accion">Estará integrado</mark> por las Salas: <mark class="m-destacable">de lo Civil y Penal</mark>, <mark class="m-destacable">de lo Contencioso-Administrativo</mark> y <mark class="m-destacable">de lo Social</mark>.</p>
-      <p><b>2.</b> Se <mark class="m-accion">compondrá</mark> de un <mark class="m-autoridad">Presidente</mark>, que lo será también de su Sala de lo Civil y Penal y <mark class="m-accion">tendrá</mark> la consideración de <mark class="m-destacable">Magistrado del Tribunal Supremo</mark> mientras <mark class="m-personalizado">desempeñe el cargo</mark>; de los <mark class="m-autoridad">Presidentes de Sala</mark> y de los <mark class="m-autoridad">Magistrados</mark> que <mark class="m-accion">determine</mark> la ley.</p>
-    `, true)
-
-    + articulo("Artículo 73 — Sala de lo Civil y Penal del Tribunal Superior de Justicia", `
-      <p>Como Sala de lo <mark class="m-destacable">Civil</mark>: conoce del <mark class="m-personalizado">recurso de casación</mark> y del <mark class="m-personalizado">recurso extraordinario de revisión</mark> por infracción de normas de <mark class="m-destacable">derecho civil, foral o especial</mark> propio de la comunidad, y de las funciones de <mark class="m-destacable">apoyo y control del arbitraje</mark>. También, en única instancia, de la responsabilidad civil del <mark class="m-autoridad">Presidente y miembros del Consejo de Gobierno</mark> autonómico y de <mark class="m-autoridad">magistrados de la Audiencia Provincial</mark>.</p>
-      <p>Como Sala de lo <mark class="m-destacable">Penal</mark>: conoce de las causas penales que los <mark class="m-personalizado">Estatutos de Autonomía</mark> le reservan, de la <mark class="m-destacable">instrucción y fallo</mark> de causas contra jueces, magistrados y miembros del Ministerio Fiscal por delitos cometidos en el ejercicio de su cargo en la comunidad autónoma, de los <mark class="m-personalizado">recursos de apelación</mark> contra resoluciones de las Audiencias Provinciales, y de las <mark class="m-destacable">cuestiones de competencia</mark> entre órganos del orden penal con sede en la comunidad autónoma sin otro superior común.</p>
-    `, true)
-
-    + articulo("Artículo 75 — Sala de lo Social del Tribunal Superior de Justicia", `
-      <p><b>1.º</b> En <mark class="m-destacable">única instancia</mark>, de los procesos que la ley establezca sobre controversias que afecten a intereses de trabajadores y empresarios en ámbito <mark class="m-personalizado">superior al de una Sección de lo Social</mark> del Tribunal de Instancia y <u class="m-clave">no superior</u> al de la comunidad autónoma.</p>
-      <p><b>2.º</b> De los <mark class="m-destacable">recursos</mark> contra resoluciones de las Secciones de lo Social y de lo Mercantil (en materia laboral) de los Tribunales de Instancia de la comunidad autónoma.</p>
-      <p><b>3.º</b> De las <mark class="m-destacable">cuestiones de competencia</mark> que se susciten entre las Secciones de lo Social de los Tribunales de Instancia de la comunidad autónoma.</p>
-    `)
-
-    + bloqueTitulo("CAPÍTULO IV — De las Audiencias Provinciales")
-
-    + articulo("Artículo 80.1 y 80.2 — Sede y Secciones de la Audiencia Provincial", `
-      <p><b>1.</b> Las <mark class="m-autoridad">Audiencias Provinciales</mark> tendrán su sede en la <mark class="m-destacable">capital de la provincia</mark>, de la que tomarán su nombre, extendiendo su jurisdicción a toda ella.</p>
-      <p><b>2.</b> Podrán <mark class="m-accion">crearse</mark> Secciones de la Audiencia Provincial <mark class="m-personalizado">fuera de la capital</mark> de la provincia, a las que quedarán adscritos uno o varios partidos judiciales.</p>
-    `)
-
-    + articulo("Artículo 81.1 y 81.4 — Composición de las Audiencias Provinciales", `
-      <p><b>1.</b> Las Audiencias Provinciales se compondrán de un <mark class="m-autoridad">Presidente</mark> y <mark class="m-plazo">dos o más Magistrados</mark>. También podrán estar integradas por <mark class="m-plazo">dos o más Secciones</mark> de la misma composición, en cuyo caso el Presidente de la Audiencia presidirá una de las Secciones.</p>
-      <p><b>4.</b> La <mark class="m-destacable">adscripción</mark> de los magistrados a las distintas secciones tendrá carácter <mark class="m-personalizado">funcional</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 82 — Competencias de las Audiencias Provinciales", `
-      <p>En el orden <mark class="m-destacable">penal</mark>: de las causas por <mark class="m-personalizado">delito</mark> (salvo las atribuidas a otros Tribunales), de los recursos contra resoluciones de las Secciones de Instrucción y de lo Penal, de los recursos contra resoluciones de <mark class="m-destacable">Violencia sobre la Mujer</mark> y contra la <mark class="m-destacable">Infancia y Adolescencia</mark>, y de los recursos contra resoluciones de las Secciones de <mark class="m-destacable">Menores</mark> y de <mark class="m-destacable">Vigilancia Penitenciaria</mark>.</p>
-      <p>En el orden <mark class="m-destacable">civil</mark>: de los recursos contra resoluciones de primera instancia de las Secciones Civiles, de <mark class="m-destacable">Familia, Infancia y Capacidad</mark> y de lo <mark class="m-destacable">Mercantil</mark> de los Tribunales de Instancia de la provincia.</p>
-      <p>Corresponde igualmente: las <mark class="m-destacable">cuestiones de competencia</mark> civiles y penales entre jueces de un mismo o distinto Tribunal de Instancia de la provincia, y las <mark class="m-destacable">recusaciones</mark> de sus magistrados cuando no correspondan a la Sala especial del TSJ.</p>
-    `)
-
-    + articulo("Artículo 82.3 — Tribunales de Marca de la Unión Europea", `
-      <p>La Sección o Secciones de la <mark class="m-destacable">Audiencia Provincial de Alicante</mark> especializadas en materia mercantil conocerán, en <mark class="m-personalizado">segunda instancia</mark> y de forma exclusiva, de los recursos sobre <mark class="m-destacable">dibujos y modelos comunitarios</mark> y marca de la Unión, extendiendo su jurisdicción a <mark class="m-personalizado">todo el territorio nacional</mark>, denominándose a estos efectos <mark class="m-destacable">Tribunales de Marca de la Unión Europea</mark>.</p>
-    `)
-
-    + articulo("Artículo 83 — Juicio del Jurado", `
-      <p><b>1.</b> El <mark class="m-destacable">juicio del Jurado</mark> se celebrará en el ámbito de la <mark class="m-autoridad">Audiencia Provincial u otros Tribunales</mark> y en la forma que establezca la ley.</p>
-    `)
-
-    + bloqueTitulo("CAPÍTULO V — De los Tribunales de Instancia y del Tribunal Central de Instancia")
-
-    + articulo("Artículo 84.1, 84.2, 84.3 y 84.4 — El Tribunal de Instancia", `
-      <p><b>1.</b> Habrá un <mark class="m-autoridad">Tribunal de Instancia</mark> en cada <mark class="m-destacable">partido judicial</mark>, con sede en su capital, de la que tomará su nombre.</p>
-      <p><b>2.</b> Estará integrado por una <mark class="m-destacable">Sección Única, de Civil y de Instrucción</mark> (o, en los casos previstos, por una Sección Civil y otra de Instrucción), y podrá además contar con Secciones de <mark class="m-personalizado">Familia, Mercantil, Violencia sobre la Mujer, Violencia contra la Infancia, Penal, Menores, Vigilancia Penitenciaria, Contencioso-Administrativo y Social</mark>.</p>
-      <p><b>3.</b> Cada Tribunal de Instancia contará con una <mark class="m-destacable">Presidencia</mark>. Las Secciones tendrán <mark class="m-personalizado">Presidencia de Sección</mark> cuando haya dos o más Secciones, la Sección tenga <mark class="m-plazo">ocho o más plazas judiciales</mark> y el total del Tribunal sea igual o superior a <mark class="m-plazo">doce plazas</mark>.</p>
-      <p><b>4.</b> El ejercicio de la <mark class="m-destacable">función jurisdiccional</mark> corresponde a quienes estén destinados en las Secciones; su adscripción será <mark class="m-personalizado">funcional</mark>, pudiendo conocer de asuntos de otras Secciones del mismo orden por acuerdo del <mark class="m-autoridad">CGPJ</mark>.</p>
-    `)
-
-    + articulo("Artículo 85 — Secciones Civiles o Civiles y de Instrucción", `
-      <p><mark class="m-personalizado">Con carácter general</mark>, <mark class="m-accion">extenderán</mark> su jurisdicción a un <mark class="m-destacable">partido judicial</mark>. <mark class="m-accion">Conocerán</mark>, en el orden civil: en <mark class="m-personalizado">primera instancia</mark>, de los juicios <u class="m-clave">no</u> atribuidos a otros órganos; de los actos de <mark class="m-destacable">jurisdicción voluntaria</mark>; de los recursos contra resoluciones de los <mark class="m-autoridad">jueces de paz</mark> del partido y de las cuestiones de competencia entre éstos; y de las solicitudes de <mark class="m-destacable">reconocimiento y ejecución</mark> de sentencias y laudos extranjeros.</p>
-    `, true)
-
-    + articulo("Artículo 86.1, 86.2, 86.4 y 86.5 — Sección de Familia, Infancia y Capacidad", `
-      <p><b>1.</b> Cuando se estime conveniente, en función de la <mark class="m-destacable">carga de trabajo</mark>, se creará una <mark class="m-autoridad">Sección de Familia, Infancia y Capacidad</mark>, que extenderá su jurisdicción a todo el partido judicial.</p>
-      <p><b>2.</b> El <mark class="m-autoridad">Gobierno</mark> podrá establecer por <mark class="m-destacable">real decreto</mark>, a propuesta del <mark class="m-autoridad">CGPJ</mark> y, en su caso, con informe favorable de la CC.AA., Secciones que extiendan su jurisdicción a <mark class="m-personalizado">dos o más partidos</mark> dentro de la misma provincia.</p>
-      <p><b>4.</b> En partidos con Tribunal de Instancia de <mark class="m-destacable">Sección Única</mark> integrada por una sola plaza, el juez o jueza que la ocupe asumirá los asuntos de familia si no se hubiere creado la Sección.</p>
-      <p><b>5.</b> Su jurisdicción será <u class="m-clave">exclusiva y excluyente</u> en materias como matrimonio, guarda y custodia, alimentos, filiación, adopción, medidas de apoyo a personas con discapacidad y protección del menor.</p>
-    `)
-
-    + articulo("Artículo 87.1, 87.2, 87.3, 87.4 y 87.5 — La Sección de lo Mercantil", `
-      <p><b>1.</b> Con carácter general, en el Tribunal de Instancia con sede en la <mark class="m-destacable">capital de cada provincia</mark> existirá una Sección de lo Mercantil con jurisdicción en toda ella.</p>
-      <p><b>2.</b> Donde, por la carga de trabajo, no se constituya, el conocimiento corresponderá a un juez o jueza de la <mark class="m-personalizado">Sección Civil</mark> de la capital.</p>
-      <p><b>3.</b> Cuando una provincia tenga <mark class="m-plazo">población inferior a 500.000 habitantes</mark>, el <mark class="m-autoridad">Gobierno</mark>, por <mark class="m-destacable">real decreto</mark>, a propuesta del <mark class="m-autoridad">CGPJ</mark> con informe favorable de la CC.AA. (o a propuesta de ésta oído el CGPJ), podrá <mark class="m-accion">extender</mark> la jurisdicción de la Sección a otra provincia limítrofe.</p>
-      <p><b>4.</b> Cuando un partido judicial cuente con <mark class="m-plazo">más de 250.000 habitantes</mark> y no sea limítrofe con el de su capital, el Gobierno podrá <mark class="m-accion">crear</mark> una Sección de lo Mercantil en ese partido.</p>
-      <p><b>5.</b> Cuando haya <mark class="m-plazo">más de un juez y menos de cinco</mark> en la Sección de lo Mercantil, las solicitudes de <mark class="m-destacable">concurso de acreedores</mark> de persona natural se repartirán a uno solo; si son más de cinco, a dos o más determinados.</p>
-    `, true)
-
-    + articulo("Artículo 88 — Las Secciones de Instrucción", `
-      <p><mark class="m-personalizado">Con carácter general</mark> <mark class="m-accion">extenderán</mark> su jurisdicción a un <mark class="m-destacable">partido judicial</mark>. <mark class="m-accion">Conocerán</mark>, en el orden penal: de la <mark class="m-personalizado">instrucción</mark> de las causas cuyo enjuiciamiento <mark class="m-accion">corresponda</mark> a las Audiencias Provinciales y Secciones de lo Penal; del <mark class="m-destacable">conocimiento y fallo</mark> de los juicios por delito leve; de los procedimientos de <mark class="m-destacable">habeas corpus</mark>; de los recursos contra resoluciones de los <mark class="m-autoridad">jueces de paz</mark>; y de la <mark class="m-personalizado">emisión y ejecución</mark> de instrumentos de reconocimiento mutuo de resoluciones penales en la UE.</p>
-    `)
-
-    + articulo("Artículo 89.1 a 89.7 — La Sección de Violencia sobre la Mujer", `
-      <p><b>1.</b> El <mark class="m-autoridad">CGPJ</mark> <mark class="m-accion">podrá acordar</mark> que, donde <u class="m-clave">no</u> hubiere Sección, el conocimiento <mark class="m-accion">corresponda</mark> a un juez o jueza de <mark class="m-personalizado">Instrucción</mark> del partido judicial.</p>
-      <p><b>2.</b> Cuando se <mark class="m-personalizado">estime conveniente</mark> por la <mark class="m-destacable">carga de trabajo</mark>, se <mark class="m-accion">creará</mark> una Sección que <mark class="m-accion">extienda</mark> su jurisdicción a todo el partido judicial.</p>
-      <p><b>3.</b> El <mark class="m-autoridad">Gobierno</mark>, por real decreto, <mark class="m-accion">podrá extender</mark> su jurisdicción a <mark class="m-personalizado">dos o más partidos</mark> de la misma provincia.</p>
-      <p><b>4.</b> En partidos con Sección Única de una sola plaza, ese juez o jueza asumirá estos asuntos si ninguna Sección extiende su jurisdicción al partido.</p>
-      <p><b>5.</b> Conocerán, en el orden penal, de la <mark class="m-destacable">instrucción</mark> de delitos como homicidio, lesiones, libertad e indemnidad sexual y otros cometidos con violencia sobre quien sea o haya sido pareja del autor, o sobre descendientes y menores a su cargo, cuando concurra un acto de <mark class="m-destacable">violencia de género</mark>.</p>
-      <p><b>6.</b> Podrán conocer también en el orden <mark class="m-destacable">civil</mark> (matrimonio, guarda y custodia, filiación, medidas de protección del menor), conforme a la Ley de Enjuiciamiento Civil.</p>
-      <p><b>7.</b> Tendrán competencia <u class="m-clave">exclusiva y excluyente</u> en el orden civil cuando concurran simultáneamente los requisitos de víctima de violencia de género, parte imputada como autor y actuaciones penales iniciadas o medida de protección adoptada.</p>
-    `)
-
-    + articulo("Artículo 89 bis.1 a 89 bis.5 — La Sección de Violencia contra la Infancia y la Adolescencia", `
-      <p><b>1.</b> El <mark class="m-autoridad">CGPJ</mark> podrá acordar que, donde no hubiere Sección, el conocimiento corresponda a un juez o jueza de <mark class="m-personalizado">Instrucción</mark>.</p>
-      <p><b>2.</b> Cuando se estime conveniente por la <mark class="m-destacable">carga de trabajo</mark>, se creará una Sección que extienda su jurisdicción a todo el partido judicial.</p>
-      <p><b>3.</b> El <mark class="m-autoridad">Gobierno</mark> podrá, por real decreto, extender su jurisdicción a <mark class="m-personalizado">dos o más partidos</mark> de la misma provincia.</p>
-      <p><b>4.</b> En partidos con Sección Única de un solo juez, éste asumirá los asuntos si ninguna Sección extiende su jurisdicción al partido.</p>
-      <p><b>5.</b> Conocerán, en el orden penal, de la <mark class="m-destacable">instrucción</mark> de delitos como homicidio, lesiones, libertad e indemnidad sexual, trata de seres humanos y quebrantamiento, cuando la víctima sea <mark class="m-destacable">niño, niña o adolescente</mark>.</p>
-    `)
-
-    + articulo("Artículo 90.3 y 90.4 — Las Secciones de lo Penal", `
-      <p><b>3.</b> Las Secciones de lo Penal <mark class="m-accion">enjuiciarán</mark> las causas por delito que la ley determine; deberán <mark class="m-personalizado">especializarse</mark> una o varias plazas para facilitar el conocimiento de los asuntos instruidos por las Secciones de Violencia sobre la Mujer y contra la Infancia.</p>
-      <p><b>4.</b> Corresponde también la <mark class="m-destacable">ejecución de las sentencias</mark> dictadas en causas por delito grave o menos grave por las Secciones de Instrucción, de Violencia sobre la Mujer y de Violencia contra la Infancia y la Adolescencia.</p>
-    `)
-
-    + articulo("Artículo 92.3 — Determinación del número de Secciones de Vigilancia Penitenciaria", `
-      <p><b>3.</b> El <mark class="m-destacable">número</mark> de Tribunales de Instancia con Secciones de Vigilancia Penitenciaria, su ámbito territorial y número de magistrados se <mark class="m-accion">determinará</mark> en la <mark class="m-autoridad">Ley de Demarcación y Planta Judicial</mark>, atendiendo principalmente a los <mark class="m-personalizado">establecimientos penitenciarios</mark> existentes.</p>
-    `, true)
-
-    + articulo("Artículo 95 — Secciones del Tribunal Central de Instancia", `
-      <p>En Madrid, con jurisdicción en todo el territorio nacional, existirá un <mark class="m-autoridad">Tribunal Central de Instancia</mark>, con las Secciones: a) <mark class="m-destacable">Instrucción</mark>; b) <mark class="m-destacable">lo Penal</mark>; c) <mark class="m-destacable">Menores</mark>; d) <mark class="m-destacable">Vigilancia Penitenciaria</mark>; e) <mark class="m-destacable">lo Contencioso-Administrativo</mark>.</p>
-    `)
-
-    + articulo("Artículo 96.2 — Especialización de plazas en Secciones de lo Mercantil", `
-      <p><b>2.</b> El <mark class="m-autoridad">CGPJ</mark>, oída la <mark class="m-autoridad">Sala de Gobierno del TSJ</mark> y con informe favorable de las Administraciones competentes, podrá acordar que en provincias con <mark class="m-plazo">más de cinco plazas</mark> en las Secciones de lo Mercantil, uno o varios jueces asuman con carácter <mark class="m-personalizado">exclusivo</mark> el conocimiento de determinadas clases de asuntos.</p>
-    `)
-
-    + articulo("Artículo 87.10 — Tribunal de Marca de la Unión Europea (Alicante, primera instancia)", `
-      <p>La Sección de lo Mercantil del Tribunal de Instancia de <mark class="m-destacable">Alicante</mark> tendrá <mark class="m-personalizado">competencia exclusiva</mark> para conocer en <mark class="m-destacable">primera instancia</mark>, con jurisdicción en todo el territorio nacional, de las acciones sobre <mark class="m-destacable">marca de la Unión Europea</mark> y <mark class="m-destacable">dibujos y modelos comunitarios</mark>, denominándose a estos efectos <mark class="m-destacable">Tribunal de Marca de la Unión Europea</mark>.</p>
-    `)
-
-    + articulo("Artículo 92.2 — Sede de las Secciones de Vigilancia Penitenciaria", `
-      <p>El <mark class="m-autoridad">Gobierno</mark> establecerá la <mark class="m-destacable">sede</mark> de estas Secciones, previa <mark class="m-personalizado">audiencia</mark> de la comunidad autónoma afectada y del <mark class="m-autoridad">CGPJ</mark>.</p>
-    `)
-
-    + bloqueTitulo("CAPÍTULO VI — De los Jueces y las Juezas de Paz")
-
-    + articulo("Artículo 99 — Existencia del Juzgado de Paz", `
-      <p>En cada <mark class="m-destacable">municipio</mark> donde <u class="m-clave">no exista</u> Tribunal de Instancia, y con jurisdicción en el término correspondiente, habrá un <mark class="m-autoridad">juez o una jueza de paz</mark>.</p>
-    `)
-
-    + articulo("Artículo 100.1 y 100.2 — Competencias del Juzgado de Paz", `
-      <p><b>1.</b> En el orden <mark class="m-destacable">civil</mark>: <mark class="m-accion">sustanciación</mark> en primera instancia, <mark class="m-destacable">fallo y ejecución</mark> de los procesos que la ley determine, y demás funciones que la ley les atribuya.</p>
-      <p><b>2.</b> En el orden <mark class="m-destacable">penal</mark>: conocerán en primera instancia de los procesos por <mark class="m-personalizado">delito leve</mark> que les atribuya la ley; podrán intervenir también en <mark class="m-destacable">actuaciones penales de prevención</mark> o por delegación.</p>
-    `)
-
-    + articulo("Artículo 101 — Nombramiento de los Jueces de Paz", `
-      <p><b>1.</b> Los <mark class="m-autoridad">Jueces de Paz</mark> y sus sustitutos serán <mark class="m-accion">nombrados</mark> para un periodo de <mark class="m-plazo">cuatro años</mark> por la <mark class="m-autoridad">Sala de Gobierno del Tribunal Superior de Justicia</mark> correspondiente, recayendo en las personas elegidas por el <mark class="m-autoridad">Ayuntamiento</mark>.</p>
-      <p><b>2.</b> Serán <mark class="m-accion">elegidos</mark> por el <mark class="m-autoridad">Pleno del Ayuntamiento</mark>, con el voto favorable de la <mark class="m-destacable">mayoría absoluta</mark>; si no hubiere solicitante, el pleno elegirá libremente.</p>
-      <p><b>3.</b> Aprobado el acuerdo, será <mark class="m-accion">remitido</mark> al <mark class="m-autoridad">Juez de Primera Instancia e Instrucción</mark>, quien lo elevará a la Sala de Gobierno.</p>
-      <p><b>4.</b> Si en el plazo de <mark class="m-plazo">tres meses</mark> desde la vacante el Ayuntamiento no efectuase la propuesta, la <mark class="m-autoridad">Sala de Gobierno del TSJ</mark> <mark class="m-accion">designará</mark> al Juez de Paz.</p>
-    `)
-
-    + bloqueTitulo("LIBRO IV — De la independencia judicial y la responsabilidad de Jueces y Magistrados")
-
-    + articulo("Artículo 378 — Inamovilidad", `
-      <p><b>1.</b> Gozarán de <mark class="m-destacable">inamovilidad</mark> los Jueces y Magistrados que desempeñen cargos judiciales.</p>
-      <p><b>2.</b> Los nombrados por <mark class="m-personalizado">plazo determinado</mark> gozarán de inamovilidad solo por ese tiempo.</p>
-      <p><b>3.</b> Los casos de <mark class="m-destacable">renuncia, excedencia, traslado y promoción</mark> se rigen por sus normas específicas.</p>
-    `)
-
-    + articulo("Artículo 379.1 y 379.2 — Pérdida de la condición de Juez o Magistrado", `
-      <p><b>1.</b> Se perderá por: a) <mark class="m-destacable">renuncia</mark> a la Carrera Judicial; b) <mark class="m-destacable">pérdida de la nacionalidad española</mark>; c) <mark class="m-destacable">sanción disciplinaria</mark> de separación; d) <mark class="m-destacable">condena a pena privativa de libertad</mark> por delito doloso; e) <mark class="m-destacable">incapacidad</mark>, salvo que proceda su jubilación; f) <mark class="m-destacable">jubilación</mark>.</p>
-      <p><b>2.</b> La separación en los casos b), c), d) y e) se <mark class="m-accion">acordará</mark> previo expediente, con intervención del <mark class="m-autoridad">Ministerio Fiscal</mark>.</p>
-    `)
-
-    + articulo("Artículo 381 — Rehabilitación", `
-      <p><b>1.</b> La <mark class="m-destacable">rehabilitación</mark> se concederá por el <mark class="m-autoridad">CGPJ</mark> cuando se acredite el <mark class="m-personalizado">cese definitivo o la inexistencia</mark> de la causa que dio lugar a la separación.</p>
-      <p><b>2.</b> Si se deniega, <u class="m-clave">no podrá iniciarse</u> nuevo procedimiento en los <mark class="m-plazo">tres años siguientes</mark>.</p>
-    `)
-
-    + articulo("Artículo 383 — Suspensión de Jueces y Magistrados", `
-      <p>Solo tendrá lugar: 1.º cuando se haya declarado <mark class="m-destacable">haber lugar a proceder</mark> por delitos en el ejercicio de sus funciones; 2.º cuando por otro delito doloso se dicte <mark class="m-destacable">auto de prisión, libertad bajo fianza o procesamiento</mark>; 3.º cuando se decrete en <mark class="m-destacable">expediente disciplinario o de incapacidad</mark>; 4.º por <mark class="m-destacable">sentencia firme condenatoria</mark> que imponga la suspensión, cuando no proceda la separación.</p>
-    `)
-
-    + articulo("Artículo 385 — Causas de jubilación", `
-      <p>Los Jueces y Magistrados solo podrán ser jubilados: 1.º por <mark class="m-destacable">edad</mark>; 2.º por <mark class="m-destacable">incapacidad permanente</mark> para el ejercicio de sus funciones.</p>
-    `)
-
-    + articulo("Artículo 386.1 y 386.2 — Jubilación por edad", `
-      <p><b>1.</b> La <mark class="m-destacable">jubilación por edad</mark> es <mark class="m-personalizado">forzosa</mark> al cumplir <mark class="m-plazo">setenta años</mark>. Podrán solicitar, con <mark class="m-plazo">dos meses de antelación</mark>, la <mark class="m-accion">prolongación</mark> del servicio activo hasta un máximo de <mark class="m-plazo">setenta y dos años</mark>.</p>
-      <p><b>2.</b> También podrán <mark class="m-accion">jubilarse</mark> a partir de los <mark class="m-plazo">sesenta y cinco años</mark> si lo hubieren manifestado al CGPJ con <mark class="m-plazo">seis meses de antelación</mark>.</p>
-    `, true)
-
-    + articulo("Artículo 387 — Jubilación por incapacidad permanente", `
-      <p><b>1 y 2.</b> El expediente de <mark class="m-destacable">jubilación por incapacidad permanente</mark> podrá ser iniciado por la Sala de Gobierno, a instancia del interesado o del <mark class="m-autoridad">Ministerio Fiscal</mark>, o de <u class="m-clave">oficio</u> por el <mark class="m-autoridad">CGPJ</mark>.</p>
-      <p><b>3.</b> Los jubilados por incapacidad permanente podrán ser <mark class="m-accion">rehabilitados</mark> si se acredita que ha <mark class="m-personalizado">desaparecido la causa</mark>.</p>
-    `)
-
-    + articulo("Artículo 388 — Procedimientos de separación, traslado y jubilación", `
-      <p>Los procedimientos de <mark class="m-destacable">separación, traslado, jubilación por incapacidad y rehabilitación</mark> se formarán con <mark class="m-personalizado">audiencia del interesado</mark>, informe del <mark class="m-autoridad">Ministerio Fiscal</mark> y de la <mark class="m-autoridad">Sala de Gobierno</mark> respectiva, y se <mark class="m-accion">resolverán</mark> por el <mark class="m-autoridad">CGPJ</mark>.</p>
-    `)
-
-    + articulo("Artículo 389 — Incompatibilidades del cargo de Juez o Magistrado", `
-      <p>Es <u class="m-clave">incompatible</u>: 1.º con el ejercicio de <mark class="m-destacable">cualquier otra jurisdicción</mark> ajena al Poder Judicial; 2.º con <mark class="m-destacable">cargo de elección popular o designación política</mark>; 3.º con empleos retribuidos por Administraciones Públicas; 4.º con empleos en Tribunales y Juzgados de cualquier orden; 5.º con todo <mark class="m-destacable">empleo o profesión retribuida</mark> (salvo docencia/investigación jurídica y creación literaria); 6.º con el <mark class="m-destacable">ejercicio de la Abogacía y Procuraduría</mark>; 7.º con todo <mark class="m-destacable">asesoramiento jurídico</mark>; 8.º con <mark class="m-destacable">actividad mercantil</mark>; 9.º con funciones de <mark class="m-destacable">Director, Gerente, Administrador o Consejero</mark> de sociedades mercantiles.</p>
-    `)
-
-    + articulo("Artículo 390.1 — Incompatibilidad: plazo de opción", `
-      <p><b>1.</b> Quien ejerciendo un empleo, cargo o profesión incompatible sea nombrado Juez o Magistrado deberá <mark class="m-accion">optar</mark>, en el plazo de <mark class="m-plazo">ocho días</mark>, por uno u otro cargo, o <mark class="m-destacable">cesar</mark> en la actividad incompatible.</p>
-    `, true)
-
-    + articulo("Artículo 391 — Prohibición por vínculo familiar en la misma Sala", `
-      <p><u class="m-clave">No podrán pertenecer</u> a una misma Sala de Justicia o Audiencia Provincial Magistrados unidos por <mark class="m-destacable">vínculo matrimonial</mark> o situación de hecho equivalente, o con <mark class="m-personalizado">parentesco</mark> dentro del segundo grado de consanguinidad o afinidad. Tampoco podrán pertenecer a una misma <mark class="m-destacable">Sala de Gobierno</mark>.</p>
-    `)
-
-    + articulo("Artículo 392.1 (letras a y b) y 392.2 — Incompatibilidades funcionales", `
-      <p><b>1.</b> Además de la obligación de abstención, son incompatibles: a) los <mark class="m-autoridad">Jueces de Instrucción</mark> con los Jueces unipersonales de lo Penal que hayan de conocer en juicio oral de lo instruido por ellos; b) los <mark class="m-autoridad">Magistrados</mark> de cualquier Sala que conozca de recursos respecto de un órgano jurisdiccional, con los Jueces o Magistrados de dicho órgano (se exceptúan las Salas del <mark class="m-destacable">Tribunal Supremo</mark>).</p>
-      <p><b>2.</b> También serán incompatibles, por vínculo familiar, los <mark class="m-autoridad">Presidentes y Magistrados</mark> respecto de los miembros del <mark class="m-autoridad">Ministerio Fiscal</mark> de la misma Fiscalía, y respecto del personal al servicio de la Administración de Justicia que dependa de ellos.</p>
-    `)
-
-    + articulo("Artículo 393 — Incompatibilidad territorial por vínculo o ejercicio previo", `
-      <p><u class="m-clave">No podrán</u> desempeñar su cargo: 1. en los Tribunales donde ejerzan como <mark class="m-destacable">abogado, procurador</mark>, su cónyuge o pariente de segundo grado; 2. en una Audiencia o Tribunal donde tengan <mark class="m-personalizado">intereses económicos con arraigo</mark>; 3. en la plaza donde hayan ejercido la <mark class="m-destacable">abogacía o procuraduría</mark> en los <mark class="m-plazo">dos años anteriores</mark> a su nombramiento.</p>
-    `)
-
-    + articulo("Artículo 395 — Prohibiciones políticas y de asociación", `
-      <p><u class="m-clave">No podrán</u> los Jueces o Magistrados pertenecer a <mark class="m-destacable">partidos políticos o sindicatos</mark> ni tener empleo a su servicio, y les está prohibido: 1.º <mark class="m-accion">dirigir</mark> felicitaciones o censuras a poderes y autoridades públicas, ni concurrir a actos o reuniones públicos que no tengan carácter judicial; 2.º <mark class="m-accion">tomar parte</mark> en elecciones legislativas o locales más allá de <mark class="m-personalizado">emitir su voto personal</mark>.</p>
-    `)
-
-    + articulo("Artículo 398 — Inmunidad judicial: detención", `
-      <p><b>1.</b> Los Jueces y Magistrados en servicio activo solo podrán ser <mark class="m-accion">detenidos</mark> por orden de <mark class="m-autoridad">Juez competente</mark> o en caso de <mark class="m-destacable">delito flagrante</mark>; en este caso se entregará inmediatamente el detenido al <mark class="m-autoridad">Juez de Instrucción más próximo</mark>.</p>
-      <p><b>2.</b> De toda detención se <mark class="m-accion">dará cuenta</mark>, por el medio más rápido, al <mark class="m-autoridad">Presidente del Tribunal o de la Audiencia</mark> de quien dependa.</p>
-    `)
-
-    + articulo("Artículo 399.1 y 399.2 — Relaciones con autoridades civiles y militares", `
-      <p><b>1.</b> Cuando una <mark class="m-autoridad">Autoridad civil o militar</mark> precise datos o declaraciones de un Juez o Magistrado que <u class="m-clave">no se refieran a su cargo</u>, se <mark class="m-accion">solicitarán por escrito</mark> o se recibirán en el <mark class="m-destacable">despacho oficial</mark>, previo aviso.</p>
-      <p><b>2.</b> Cuando se trate de auxilio por razón del cargo, se <mark class="m-accion">prestará sin tardanza</mark>, salvo que el acto no esté legalmente permitido.</p>
-    `)
-
-    + articulo("Artículo 400 — Declaración de un Juez o Magistrado en causa penal", `
-      <p>Cuando fuere necesaria la <mark class="m-destacable">declaración</mark> de un Juez o Magistrado en una causa penal, y ésta pudiera prestarse legalmente, <u class="m-clave">no podrá excusarse</u> de hacerlo. Si la autoridad judicial que hubiera de recibirla fuere de <mark class="m-personalizado">categoría inferior</mark>, acudirá al <mark class="m-destacable">despacho oficial</mark> del Juez o Magistrado, previo aviso, señalándose día y hora.</p>
-    `)
-
-    + articulo("Artículo 406 — Incoación de responsabilidad penal", `
-      <p>El juicio de <mark class="m-destacable">responsabilidad penal</mark> contra Jueces y Magistrados podrá <mark class="m-accion">incoarse</mark> por <mark class="m-personalizado">providencia del Tribunal competente</mark> o en virtud de <mark class="m-destacable">querella</mark> del <mark class="m-autoridad">Ministerio Fiscal</mark>, del perjudicado u ofendido, o mediante el ejercicio de la <mark class="m-destacable">acción popular</mark>.</p>
-    `)
-
-    + bloqueTitulo("LIBRO VII — Ministerio Fiscal, Abogados/Procuradores y Policía Judicial")
-
-    + articulo("Artículo 541.1 — Misión del Ministerio Fiscal", `
-      <p>El <mark class="m-autoridad">Ministerio Fiscal</mark> tiene por misión <mark class="m-accion">promover la acción de la Justicia</mark> en defensa de la <mark class="m-destacable">legalidad</mark>, de los <mark class="m-destacable">derechos de los ciudadanos</mark> y del <mark class="m-destacable">interés público</mark> tutelado por la ley, de oficio o a petición de los interesados, así como <mark class="m-accion">velar</mark> por la <mark class="m-destacable">independencia de los tribunales</mark>.</p>
-    `)
-
-    + articulo("Artículo 542.1 y 542.2 — El Abogado", `
-      <p><b>1.</b> Corresponde en exclusiva la denominación y función de <mark class="m-destacable">abogado</mark> al licenciado en Derecho que ejerza la <mark class="m-personalizado">dirección y defensa de las partes</mark> y el <mark class="m-personalizado">asesoramiento y consejo jurídico</mark>.</p>
-      <p><b>2.</b> Son <mark class="m-destacable">libres e independientes</mark>, se sujetarán al <mark class="m-personalizado">principio de buena fe</mark> y serán amparados en su <mark class="m-destacable">libertad de expresión y defensa</mark>.</p>
-    `)
-
-    + articulo("Artículo 543.1 y 543.2 — El Procurador", `
-      <p><b>1.</b> Corresponde exclusivamente a los <mark class="m-autoridad">procuradores</mark> la <mark class="m-destacable">representación de las partes</mark> en todo tipo de procesos.</p>
-      <p><b>2.</b> Podrán realizar <mark class="m-accion">actos de comunicación</mark> a las partes y, por delegación, actos del proceso de ejecución. Podrán ser <mark class="m-accion">sustituidos</mark> por <mark class="m-destacable">oficial habilitado</mark>.</p>
-    `)
-
-    + articulo("Artículo 544.1 y 544.2 — Juramento y colegiación", `
-      <p><b>1.</b> Los <mark class="m-autoridad">Abogados, Procuradores y Graduados Sociales</mark>, antes de iniciar su ejercicio profesional, <mark class="m-accion">prestarán juramento o promesa</mark> de acatamiento a la Constitución y al resto del ordenamiento jurídico.</p>
-      <p><b>2.</b> La <mark class="m-destacable">colegiación</mark> será <u class="m-clave">obligatoria</u> para actuar ante Juzgados y Tribunales, salvo que actúen al servicio de las Administraciones públicas.</p>
-    `)
-
-    + articulo("Artículo 546.3 — Responsabilidad disciplinaria", `
-      <p>La <mark class="m-destacable">responsabilidad disciplinaria</mark> por su conducta profesional compete <mark class="m-accion">declararla</mark> a los correspondientes <mark class="m-autoridad">Colegios y Consejos</mark> conforme a sus estatutos.</p>
-    `)
-
-    + articulo("Artículo 548.1 — Dependencia funcional de la Policía Judicial", `
-      <p>Las unidades de <mark class="m-autoridad">Policía Judicial</mark> <mark class="m-accion">dependerán funcionalmente</mark> de las <mark class="m-destacable">autoridades judiciales y del Ministerio Fiscal</mark> en el desempeño de las actuaciones que aquéllas les encomienden.</p>
-    `)
-
-    + articulo("Artículo 550.1 — Dirección de la investigación penal", `
-      <p>En las <mark class="m-destacable">funciones de investigación penal</mark>, la Policía Judicial <mark class="m-accion">actuará bajo la dirección</mark> de los <mark class="m-autoridad">Juzgados y Tribunales</mark> y del <mark class="m-autoridad">Ministerio Fiscal</mark>.</p>
-    `)
-
-    + recuerda([
-      "El ejercicio de la potestad jurisdiccional, juzgando y haciendo ejecutar lo juzgado, corresponde exclusivamente a los Juzgados y Tribunales determinados en las Leyes y en los tratados internacionales.",
-      "Cuando los Tribunales decidan plantear una cuestión prejudicial europea lo harán de conformidad con la jurisprudencia del TJUE, en todo caso mediante auto, previa audiencia de las partes.",
-      "Los Jueces y Tribunales no aplicarán los reglamentos o cualquier otra disposición contrarios a la Constitución, a la ley o al principio de jerarquía normativa.",
-      "La jurisdicción es improrrogable.",
-      "Se prohíben los Tribunales de Honor en la Administración de Justicia.",
-      "En materias en que una norma expresamente lo permita, los Tribunales españoles serán competentes cuando las partes, con independencia de su domicilio, se hayan sometido expresa o tácitamente a ellos.",
-      "En el orden contencioso-administrativo será competente, en todo caso, la jurisdicción española cuando la pretensión se refiera a disposiciones de carácter general o a actos de las Administraciones Públicas españolas.",
-      "El Estado se organiza territorialmente, a efectos judiciales, en municipios, partidos, provincias y Comunidades Autónomas.",
-      "La creación de Secciones y Juzgados corresponderá al Gobierno cuando no suponga alteración de la demarcación judicial, oídos preceptivamente la Comunidad Autónoma afectada y el CGPJ.",
-      "Cada Sala del Tribunal Supremo conocerá de las recusaciones contra sus Magistrados y de las cuestiones de competencia entre Juzgados o Tribunales del propio orden jurisdiccional que no tengan otro superior común.",
-      "La superior dirección del Gabinete Técnico será ejercida por el Presidente del Tribunal Supremo o, en caso de delegación, por el Vicepresidente del Tribunal Supremo.",
-      "El Presidente de la Audiencia Nacional, que tendrá la consideración de Presidente de Sala del Tribunal Supremo, es el Presidente nato de todas sus Salas.",
-      "El Tribunal Superior de Justicia se compondrá de un Presidente (que lo será también de su Sala de lo Civil y Penal, con consideración de Magistrado del Tribunal Supremo mientras desempeñe el cargo), de los Presidentes de Sala y de los Magistrados que determine la ley.",
-      "El juicio del Jurado se celebrará en el ámbito de la Audiencia Provincial u otros Tribunales, en la forma que establezca la ley.",
-      "El Gobierno, a propuesta del CGPJ, oída en su caso la Comunidad Autónoma con competencias en Justicia, podrá establecer que los Juzgados de Violencia sobre la Mujer que se determinen extiendan su jurisdicción a dos o más partidos dentro de la misma provincia.",
-      "El Gobierno establecerá la sede de los Juzgados de Vigilancia Penitenciaria, previa audiencia de la Comunidad Autónoma afectada y del CGPJ.",
-      "Los Jueces de Paz y sus sustitutos serán nombrados para un periodo de cuatro años por la Sala de Gobierno del Tribunal Superior de Justicia correspondiente.",
-      "Los Jueces y Magistrados solo podrán ser jubilados por edad o por incapacidad permanente para el ejercicio de sus funciones.",
-      "Los Jueces y Magistrados en servicio activo solo podrán ser detenidos por orden de Juez competente o en caso de delito flagrante.",
-      "El juicio de responsabilidad penal contra Jueces y Magistrados podrá incoarse por providencia del Tribunal competente o en virtud de querella del Ministerio Fiscal, del perjudicado u ofendido, o mediante el ejercicio de la acción popular.",
-      "Los Abogados, Procuradores y Graduados Sociales están sujetos en el ejercicio de su profesión a responsabilidad civil, penal y disciplinaria, según proceda.",
-      "En las funciones de investigación penal, la Policía Judicial actuará bajo la dirección de los Juzgados y Tribunales y del Ministerio Fiscal."
-    ]);
-})();
-
-
-
 // ---- TEMA 9 (Defensa Nacional — LO 5/2005 + Directiva de Defensa Nacional 2020) ----
 (function(){
   const t9 = esquemas[8];
@@ -2437,6 +1538,116 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
       navigator.mediaSession.setActionHandler('previoustrack', () => saltar(-1));
     }catch(e){}
   }
+})();
+</script>
+<!-- guia-app -->
+<script>window.GUIA_APP={
+titulo:"Guía de Esquemas",
+intro:"Cómo están hechos los esquemas, qué significa cada color y qué puedes hacer con ellos.",
+abierta:0,
+secciones:[
+{ic:"🧭",t:"Cómo usar los esquemas",corto:"Empieza aquí",
+ tip:"<b>Cómo están hechos</b>: es el <b>texto literal del temario</b>, pero solo los apartados que se preguntan en los tests de la app de Conocimientos. Lo que está <mark class='m-resp'>en rojo con marco dorado</mark> es la respuesta de alguna pregunta.<ol><li>Lee primero la tira <b>🎯 Respuestas</b> de cada artículo.</li><li>Lee el artículo fijándote en lo marcado en rojo.</li><li>Termina cada bloque con el <b>✔ Recuerda</b> y las <b>⚠ Trampas</b>.</li><li>Después, haz el test de ese tema en la app de Conocimientos.</li></ol>",
+ items:[["❓","Esta guía","Siempre en el botón ❓ de arriba.",""]]},
+{ic:"📚",t:"Navegar por los temas",corto:"Temas",
+ items:[["📑","Lista de temas","Los 27 temas. Toca uno para abrir su esquema.","Columna de la izquierda (en el móvil, la pantalla inicial)"],
+ ["←","Temas","Vuelve a la lista de temas.","Arriba del esquema"],
+ ["⏳","Pendiente de rellenar","Ese tema todavía no tiene esquema.",""]]},
+{ic:"🎨",t:"Leyenda de colores",corto:"Colores",
+ ley:[["<mark class='m-resp'>texto</mark>","Respuesta de una pregunta del test (lo que más importa)"],["<mark class='m-destacable'>texto</mark>","Palabras destacables"],["<mark class='m-autoridad'>texto</mark>","Autoridades y cargos públicos"],["<mark class='m-plazo'>texto</mark>","Plazos, cifras y mayorías"],["<mark class='m-accion'>texto</mark>","Acciones (verbos: qué se hace)"],["<mark class='m-personalizado'>texto</mark>","Personalizado (otros datos útiles)"],["<u class='m-clave'>no</u>","Palabras clave pequeñas que cambian el sentido (no, solo, salvo…)"],["(…)","Texto del artículo que no se pregunta"]],
+ items:[]},
+{ic:"🧱",t:"Partes de cada esquema",corto:"Partes",
+ items:[["⚠","Cómo está hecho este esquema","Explica de dónde sale el texto y cuántas preguntas cubre.","Al principio de cada tema"],
+ ["▬","Título de bloque","Cada norma o apartado del temario (por ejemplo, 1.5 Estatuto de Roma).",""],
+ ["🎯","Respuestas","Resumen de las respuestas de los tests de ese artículo. Léelo primero.","Encima de cada artículo"],
+ ["EX","Sello EX","El artículo tiene preguntas de exámenes oficiales.","Junto al título del artículo"],
+ ["✔","Recuerda","Resumen conceptual y puntos clave de examen.","Al final de los bloques"],
+ ["⚠","Trampa de examen","Errores típicos que intentan colarte.",""],
+ ["🆕","Nuevo","Cambio reciente del temario o de la ley (con fecha).",""],
+ ["📎","Anexo","Preguntas que salen en los tests pero no están en el temario (por ejemplo, historia general).","Final de algunos temas"]]},
+{ic:"🔊",t:"Escuchar el esquema",corto:"Voz",donde:"Barra de voz, al abrir un tema",
+ items:[["▶","Escuchar / pausar","Lee el esquema en voz alta.",""],
+ ["⏮⏭","Anterior / siguiente","Salta al trozo anterior o siguiente.",""],
+ ["⏹","Parar","Detiene la lectura.",""],
+ ["📋","Qué leer","«Todo el esquema» o «Solo respuestas y resumen» (para repasar rápido).",""],
+ ["⏩","Velocidad","De 0,85× a 1,5×.",""],
+ ["🗣️","Voz","Elige la voz en español que más te guste.",""]]},
+{ic:"⚙️",t:"Arriba: PDF y tema",corto:"Ajustes",
+ items:[["⬇️","PDF","Abre la impresión del navegador: elige «Guardar como PDF» para tenerlo en un archivo, o imprímelo.","Arriba a la derecha"],
+ ["🌗","Claro / Oscuro","Cambia el modo de color.","Arriba a la derecha"],
+ ["❓","Guía","Esta guía.","Arriba a la derecha"]]}
+],
+colocar:function(){
+  var pdf=document.getElementById("btn-exportar-pdf");
+  if(pdf&&!document.getElementById("guia-btn-es")){var b=document.createElement("button");b.id="guia-btn-es";b.className="btn-pdf guia-btn-top";b.title="Guía";b.textContent="❓ Guía";b.onclick=function(){guiaAbrir()};pdf.parentNode.insertBefore(b,pdf)}
+}
+};</script>
+<style>
+/* ---- Guía de la app (qué puedo hacer y dónde está) ---- */
+.guia-ov{--g-bg:var(--crema,var(--bg,var(--fondo,#f5f4ee)));--g-card:var(--card,var(--panel,#fff));--g-alt:var(--card-alt,var(--panel-alt,#eeece3));--g-tx:var(--texto,var(--text,#1f2a24));--g-mu:var(--texto-gris,var(--muted,#767a70));--g-bd:var(--borde,var(--border,#e2e0d5));--g-ac:var(--verde-osc,var(--navy,#163f30));--g-go:#c9962c;
+position:fixed;inset:0;z-index:9000;background:rgba(10,20,15,.55);display:none;align-items:stretch;justify-content:center;font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
+.guia-ov.show{display:flex}
+.guia-box{background:var(--g-bg);color:var(--g-tx);width:100%;max-width:640px;display:flex;flex-direction:column;box-shadow:0 0 40px rgba(0,0,0,.3)}
+.guia-top{background:var(--g-card);border-bottom:1px solid var(--g-bd);padding:14px 16px 10px}
+.guia-top-row{display:flex;align-items:center;gap:10px}
+.guia-top h2{flex:1;margin:0;font-family:Georgia,serif;font-size:20px;color:var(--g-ac);font-style:italic}
+.guia-x{border:1.5px solid var(--g-bd);background:var(--g-card);color:var(--g-tx);border-radius:12px;width:38px;height:38px;font-size:16px;cursor:pointer}
+.guia-intro{font-size:13px;color:var(--g-mu);margin:6px 0 10px;line-height:1.5}
+.guia-q{width:100%;box-sizing:border-box;border:1.5px solid var(--g-bd);border-radius:20px;padding:10px 14px;font-size:14px;background:var(--g-bg);color:var(--g-tx);outline:none}
+.guia-chips{display:flex;gap:6px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
+.guia-chip{flex:none;border:1px solid var(--g-bd);background:var(--g-alt);color:var(--g-tx);border-radius:16px;padding:5px 11px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+.guia-body{flex:1;overflow:auto;padding:12px 16px 30px}
+.guia-sec{background:var(--g-card);border:1px solid var(--g-bd);border-radius:14px;margin-bottom:10px;overflow:hidden;scroll-margin-top:8px}
+.guia-sec-h{display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer}
+.guia-sec-h .ic{font-size:20px;width:28px;text-align:center}
+.guia-sec-h b{flex:1;font-size:14.5px;color:var(--g-ac)}
+.guia-sec-h .n{font-size:11px;font-weight:800;color:var(--g-mu);background:var(--g-alt);border-radius:10px;padding:2px 8px}
+.guia-sec-h .ch{color:var(--g-mu);transition:transform .15s}
+.guia-sec.open .guia-sec-h .ch{transform:rotate(180deg)}
+.guia-sec-b{display:none;padding:0 14px 12px}
+.guia-sec.open .guia-sec-b{display:block}
+.guia-donde{font-size:11.5px;color:var(--g-mu);margin:-4px 0 8px;padding-left:38px}
+.guia-it{display:flex;gap:10px;padding:9px 0;border-top:1px dashed var(--g-bd)}
+.guia-it .ii{flex:none;width:28px;text-align:center;font-size:16px}
+.guia-it .tt{flex:1;min-width:0}
+.guia-it .tt b{display:block;font-size:13.5px;color:var(--g-tx)}
+.guia-it .tt span{display:block;font-size:12.5px;color:var(--g-mu);line-height:1.5;margin-top:1px}
+.guia-it .tt em{font-style:normal;font-weight:700;color:var(--g-go)}
+.guia-ley{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;font-size:12.5px;align-items:center}
+.guia-ley .s{font-weight:800;text-align:center;min-width:28px}
+.guia-tip{background:var(--g-alt);border-left:4px solid var(--g-go);border-radius:10px;padding:10px 12px;font-size:12.8px;line-height:1.6;margin:4px 0 10px}
+.guia-tip ol{margin:4px 0 0;padding-left:20px}
+.guia-nada{text-align:center;color:var(--g-mu);font-size:13px;padding:30px 0}
+.guia-btn-top{cursor:pointer}
+@media print{.guia-ov{display:none!important}}
+mark.guia-hit{background:#ffe27a;color:#1f2a24;border-radius:3px;padding:0 1px}
+</style>
+<div class="guia-ov" id="guia-ov" onclick="if(event.target===this)guiaCerrar()"><div class="guia-box" role="dialog" aria-label="Guía de la app"><div class="guia-top"><div class="guia-top-row"><h2 id="guia-tit">Guía de la app</h2><button class="guia-x" onclick="guiaCerrar()" aria-label="Cerrar">✕</button></div><div class="guia-intro" id="guia-intro"></div><input class="guia-q" id="guia-q" type="search" placeholder="🔍 ¿Qué quieres hacer? (ej: simulacro, dudas, voz, copia…)" oninput="guiaBuscar(this.value)"><div class="guia-chips" id="guia-chips"></div></div><div class="guia-body" id="guia-body"></div></div></div>
+<script>
+(function(){
+var G=window.GUIA_APP;if(!G)return;
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+document.getElementById("guia-tit").textContent=G.titulo;
+document.getElementById("guia-intro").innerHTML=G.intro;
+function pintar(q){
+  q=(q||"").trim().toLowerCase();var norm=function(s){return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")},nq=norm(q),h="",tot=0;
+  G.secciones.forEach(function(s,si){
+    var its=s.items.filter(function(it){return!nq||norm(it.join(" ")+" "+s.t).indexOf(nq)>=0});
+    if(nq&&!its.length&&!(s.tip&&norm(s.tip).indexOf(nq)>=0))return;tot++;
+    h+='<div class="guia-sec'+(nq||G.abierta===si?' open':'')+'" id="guia-s'+si+'"><div class="guia-sec-h" onclick="this.parentNode.classList.toggle(\'open\')"><span class="ic">'+s.ic+'</span><b>'+esc(s.t)+'</b>'+(s.items.length?'<span class="n">'+s.items.length+'</span>':'')+'<span class="ch">▾</span></div><div class="guia-sec-b">'+(s.donde?'<div class="guia-donde">📍 '+s.donde+'</div>':'')+(s.tip?'<div class="guia-tip">'+s.tip+'</div>':'')
+     +(s.ley?'<div class="guia-ley">'+s.ley.map(function(l){return'<span class="s">'+l[0]+'</span><span>'+l[1]+'</span>'}).join("")+'</div>':'')
+     +its.map(function(it){return'<div class="guia-it"><span class="ii">'+it[0]+'</span><div class="tt"><b>'+it[1]+'</b><span>'+it[2]+(it[3]?' <em>→ '+it[3]+'</em>':'')+'</span></div></div>'}).join("")+'</div></div>';
+  });
+  document.getElementById("guia-body").innerHTML=h||'<div class="guia-nada">No encuentro nada con «'+esc(q)+'».</div>';
+  if(q){var re=new RegExp(q.replace(/[.*+?^${}()|[]\]/g,"\$&"),"gi");document.querySelectorAll("#guia-body .tt").forEach(function(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),n,ns=[];while(n=w.nextNode())ns.push(n);ns.forEach(function(tn){var t=tn.nodeValue;re.lastIndex=0;if(!re.test(t))return;re.lastIndex=0;var f=document.createDocumentFragment(),li=0,m;while(m=re.exec(t)){f.appendChild(document.createTextNode(t.slice(li,m.index)));var k=document.createElement("mark");k.className="guia-hit";k.textContent=m[0];f.appendChild(k);li=m.index+m[0].length}f.appendChild(document.createTextNode(t.slice(li)));tn.parentNode.replaceChild(f,tn)})})}
+}
+document.getElementById("guia-chips").innerHTML=G.secciones.map(function(s,i){return'<span class="guia-chip" onclick="guiaIr('+i+')">'+s.ic+' '+esc(s.corto||s.t)+'</span>'}).join("");
+window.guiaIr=function(i){var q=document.getElementById("guia-q");if(q.value){q.value="";pintar("")}var s=document.getElementById("guia-s"+i);if(!s)return;s.classList.add("open");s.scrollIntoView({behavior:"smooth",block:"start"})};
+window.guiaBuscar=pintar;
+window.guiaAbrir=function(sec){pintar("");document.getElementById("guia-q").value="";document.getElementById("guia-ov").classList.add("show");document.body.style.overflow="hidden";if(sec!=null)setTimeout(function(){guiaIr(sec)},30)};
+window.guiaCerrar=function(){document.getElementById("guia-ov").classList.remove("show");document.body.style.overflow=""};
+document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()});
+(G.colocar||function(){})();
 })();
 </script>
 </body>
