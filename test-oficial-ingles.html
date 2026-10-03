@@ -802,7 +802,7 @@ window.actualizarQStatsEN=function(qid,ok,ms){
   var media=mediaGlobalMs();actOrig(qid,ok,ms);
   var s=stateEN.qStats[qid];if(!s)return;
   var lento=typeof ms==="number"&&media&&ms>Math.max(2*media,15000);
-  var dudo=ctx.duda||(stateEN.dudas||[]).indexOf(qid)>=0,hoy=todayStrEN();
+  var dudo=ctx.duda||window.__dudaExt||(stateEN.dudas||[]).indexOf(qid)>=0,hoy=todayStrEN();
   if(!ok||dudo||lento){s.dr=0;s.dd=null;s.dm=!ok?"fallo":dudo?"duda":"lento"}
   else if(s.dd!==hoy){s.dr=(s.dr||0)+1;s.dd=hoy;s.dm=null}
   ctx.duda=false;saveStateEN();
@@ -895,6 +895,164 @@ window.startTestDelDiaEN=function(){
 var riOrig=window.renderInicioEN;
 window.renderInicioEN=function(){riOrig();try{renderPredictorEN()}catch(e){console.error(e)}};
 renderPredictorEN();
+})();
+</script>
+<!-- exam-engine -->
+<style>
+/* ---- Modo examen real y modo cero fallos ---- */
+.exm-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
+@media(max-width:420px){.exm-cards{grid-template-columns:1fr}}
+.exm-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radio-sm);padding:14px 16px;cursor:pointer;border-left:5px solid var(--gold)}
+.exm-card.cf{border-left-color:var(--red)}
+.exm-card b{display:block;font-size:15px;color:var(--navy);margin:2px 0}
+.exm-card .nlabel{font-size:11.5px}
+#exm-ov{position:fixed;inset:0;z-index:450;background:var(--bg);display:none;flex-direction:column}
+#exm-ov.show{display:flex}
+.exm-top{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--card);border-bottom:1px solid var(--border)}
+.exm-top b{flex:1;color:var(--navy);font-size:14px}
+.exm-timer{font-family:Georgia,serif;font-weight:800;font-size:18px;color:var(--navy);min-width:64px;text-align:right}
+.exm-timer.low{color:var(--red)}
+.exm-body{flex:1;overflow:auto;padding:16px;max-width:640px;width:100%;margin:0 auto;box-sizing:border-box}
+.exm-q{font-size:16px;font-weight:700;color:var(--text);margin:8px 0 14px;line-height:1.5}
+.exm-op{display:flex;gap:10px;align-items:center;width:100%;text-align:left;border:1.5px solid var(--border);background:var(--card);color:var(--text);border-radius:12px;padding:12px 14px;margin-bottom:8px;font-size:14px;cursor:pointer}
+.exm-op .l{font-weight:800;color:var(--muted);min-width:18px}
+.exm-op.sel{border-color:var(--navy);background:var(--verde-suave);font-weight:700}
+.exm-op.ok{border-color:var(--green);background:#dff3e6}.exm-op.ko{border-color:var(--red);background:#fde3e0}
+[data-theme="dark"] .exm-op.ok{background:#153a2b}[data-theme="dark"] .exm-op.ko{background:#3a201d}
+.exm-grid{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 4px}
+.exm-g{width:34px;height:34px;border-radius:9px;border:1.5px solid var(--border);background:var(--card);color:var(--text);font-weight:800;font-size:12.5px;cursor:pointer}
+.exm-g.ans{background:var(--navy);border-color:var(--navy);color:#fff}
+[data-theme="dark"] .exm-g.ans{color:#10201a}
+.exm-g.cur{outline:3px solid var(--gold);outline-offset:1px}
+.exm-g.flag{border-color:var(--gold);border-width:3px}
+.exm-foot{display:flex;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--border)}
+.exm-foot .teo-btn{min-width:0}
+.exm-big{font-size:46px;font-weight:800;color:var(--navy);font-family:Georgia,serif;text-align:center;line-height:1.1}
+.exm-sub{text-align:center;color:var(--muted);font-size:13px;margin-bottom:12px}
+.exm-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed var(--border);font-size:13px}
+.exm-sel{border:1.5px solid var(--border);border-radius:10px;padding:8px 10px;background:var(--card);color:var(--text);font-size:14px}
+.exm-fallo{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--red);border-radius:10px;padding:10px 12px;margin-bottom:8px;font-size:13px}
+.exm-fallo .ok{color:var(--green);font-weight:700}.exm-fallo .ko{color:var(--red)}
+.exm-streak{font-size:64px;font-weight:800;text-align:center;color:var(--navy);font-family:Georgia,serif;line-height:1}
+.exm-dots{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin:8px 0 14px}
+.exm-dots i{width:11px;height:11px;border-radius:50%;background:var(--card-alt);border:1px solid var(--border)}
+.exm-dots i.on{background:var(--green);border-color:var(--green)}
+</style>
+<div id="exm-ov"><div class="exm-top"><button class="teo-btn" style="flex:none;min-width:0;padding:8px 12px" onclick="exmSalir()">✕</button><b id="exm-tit">Examen</b><span class="exm-timer" id="exm-timer"></span></div><div class="exm-body" id="exm-body"></div><div class="exm-foot" id="exm-foot"></div></div>
+<script>
+(function(){
+var L="ABCDE",ov=document.getElementById("exm-ov"),body=document.getElementById("exm-body"),foot=document.getElementById("exm-foot"),tEl=document.getElementById("exm-timer");
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+function st(){stateEN.examenCfg=stateEN.examenCfg||{min:20,pen:false};stateEN.examenesEN=stateEN.examenesEN||[];return stateEN}
+function pesos(){return window.PESO_TEMA_EN||{}}
+function temaAlAzar(){var P=pesos(),ks=Object.keys(P),r=Math.random(),acc=0;for(var i=0;i<ks.length;i++){acc+=P[ks[i]];if(r<=acc)return+ks[i]}return+ks[ks.length-1]}
+function preguntaDe(t,usadas,preferirNoDom){
+  var qs=preguntasDeTemaEN(t).filter(function(q){return!usadas[q.qid]});
+  if(preferirNoDom&&window.esDominadaEN){var nd=qs.filter(function(q){return!esDominadaEN(q.qid)});if(nd.length&&Math.random()<.75)qs=nd}
+  return qs.length?qs[Math.floor(Math.random()*qs.length)]:null;
+}
+function sortear(n,noDom){var u={},r=[],guard=0;while(r.length<n&&guard++<500){var q=preguntaDe(temaAlAzar(),u,noDom);if(q){u[q.qid]=1;r.push(q)}}return r}
+function fmtT(s){s=Math.max(0,Math.round(s));return Math.floor(s/60)+":"+("0"+s%60).slice(-2)}
+function abrir(t){document.getElementById("exm-tit").textContent=t;ov.classList.add("show");document.body.style.overflow="hidden"}
+function cerrar(){ov.classList.remove("show");document.body.style.overflow="";clearInterval(ex.timer);tEl.textContent="";try{renderInicioEN()}catch(e){}}
+window.exmSalir=function(){if(ex.activo&&!confirm("¿Salir? Se perderá este intento."))return;ex.activo=false;cerrar()};
+
+/* =================== MODO EXAMEN REAL =================== */
+var ex={};
+window.exmPortada=function(){
+  var s=st(),c=s.examenCfg,h=s.examenesEN.slice(-5).reverse();
+  abrir("📝 Modo examen real");tEl.textContent="";ex={activo:false};
+  body.innerHTML='<div class="pred-card" style="margin-bottom:14px"><b style="color:var(--navy);font-size:15px">Así funciona</b><ul style="margin:8px 0 0;padding-left:18px;font-size:13px;line-height:1.6"><li><b>20 preguntas</b> repartidas por temas igual que en los exámenes reales (más de T41, T12, T22…).</li><li><b>Cronómetro</b> con cuenta atrás. Al llegar a 0 se entrega solo.</li><li><b>Sin corrección</b> hasta el final. Puedes saltar, volver atrás, cambiar respuestas y marcar con 🚩 las que quieras revisar.</li><li>Al final: nota, temas fallados, preguntas en las que tardaste y en las que cambiaste la respuesta.</li></ul></div>'
+   +'<div class="exm-row"><span>Tiempo</span><select class="exm-sel" id="exm-min">'+[15,20,25,30,40].map(function(m){return'<option'+(m===c.min?' selected':'')+'>'+m+'</option>'}).join("")+'</select></div>'
+   +'<div class="exm-row"><span>Restar fallos (3 fallos = −1 acierto)</span><input type="checkbox" id="exm-pen"'+(c.pen?' checked':'')+' style="width:20px;height:20px"></div>'
+   +'<div class="nlabel" style="margin:6px 0 14px">Ajusta el tiempo y la penalización a lo que diga tu convocatoria.</div>'
+   +(h.length?'<b style="color:var(--navy);font-size:13px">Tus últimos exámenes</b>'+h.map(function(e){return'<div class="exm-row"><span>'+e.fecha+' · '+e.min+' min</span><b>'+String(e.nota).replace(".",",")+' / 20</b></div>'}).join(""):'');
+  foot.innerHTML='<button class="teo-btn pri" style="flex:1" onclick="exmEmpezar()">▶ Empezar examen</button>';
+};
+window.exmEmpezar=function(){
+  var s=st();s.examenCfg={min:+document.getElementById("exm-min").value,pen:document.getElementById("exm-pen").checked};saveStateEN();
+  var qs=sortear(20,false);if(qs.length<20){alert("No hay suficientes preguntas cargadas.");return}
+  ex={activo:true,qs:qs,resp:qs.map(function(){return null}),cambios:qs.map(function(){return 0}),flag:qs.map(function(){return false}),ms:qs.map(function(){return 0}),i:0,ini:Date.now(),lim:s.examenCfg.min*60,pen:s.examenCfg.pen,min:s.examenCfg.min,tq:Date.now()};
+  abrir("📝 Examen · 20 preguntas");ex.timer=setInterval(tick,500);tick();pintar();
+};
+function tick(){if(!ex.activo)return;var r=ex.lim-(Date.now()-ex.ini)/1000;tEl.textContent="⏱ "+fmtT(r);tEl.classList.toggle("low",r<120);if(r<=0)entregar(true)}
+function acumula(){ex.ms[ex.i]+=Date.now()-ex.tq;ex.tq=Date.now()}
+function pintar(){
+  var q=ex.qs[ex.i],r=ex.resp[ex.i];
+  body.innerHTML='<div class="nlabel">Pregunta '+(ex.i+1)+' de 20</div><div class="exm-q">'+q.q+'</div>'+q.opts.map(function(o,k){return'<button class="exm-op'+(r===k?' sel':'')+'" onclick="exmResp('+k+')"><span class="l">'+L[k]+'</span><span>'+o+'</span></button>'}).join("")
+   +'<button class="teo-btn" style="margin-top:6px'+(ex.flag[ex.i]?';background:var(--gold);color:#fff;border-color:var(--gold)':'')+'" onclick="exmFlag()">🚩 '+(ex.flag[ex.i]?'Marcada para revisar':'Marcar para revisar')+'</button>'
+   +'<div class="exm-grid">'+ex.qs.map(function(_,j){return'<button class="exm-g'+(ex.resp[j]!=null?' ans':'')+(j===ex.i?' cur':'')+(ex.flag[j]?' flag':'')+'" onclick="exmIr('+j+')">'+(j+1)+'</button>'}).join("")+'</div><div class="nlabel">Contestadas: '+ex.resp.filter(function(x){return x!=null}).length+'/20 · 🚩 '+ex.flag.filter(Boolean).length+'</div>';
+  foot.innerHTML='<button class="teo-btn" onclick="exmIr('+(ex.i-1)+')"'+(ex.i?'':' disabled')+'>← Anterior</button>'+(ex.i<19?'<button class="teo-btn pri" onclick="exmIr('+(ex.i+1)+')">Siguiente →</button>':'')+'<button class="teo-btn" style="border-color:var(--gold);color:var(--gold)" onclick="exmEntregar()">Entregar</button>';
+}
+window.exmResp=function(k){if(ex.resp[ex.i]!=null&&ex.resp[ex.i]!==k)ex.cambios[ex.i]++;ex.resp[ex.i]=ex.resp[ex.i]===k?null:k;pintar()};
+window.exmFlag=function(){ex.flag[ex.i]=!ex.flag[ex.i];pintar()};
+window.exmIr=function(j){if(j<0||j>19)return;acumula();ex.i=j;pintar();body.scrollTop=0};
+window.exmEntregar=function(){var b=ex.resp.filter(function(x){return x==null}).length,f=ex.flag.filter(Boolean).length;if(!confirm("¿Entregar el examen?"+(b?"\nTe quedan "+b+" sin contestar.":"")+(f?"\nTienes "+f+" marcadas para revisar.":"")))return;entregar(false)};
+function entregar(auto){
+  if(!ex.activo)return;acumula();ex.activo=false;clearInterval(ex.timer);
+  var ok=0,ko=0,bl=0,porTema={},media=0;ex.ms.forEach(function(m){media+=m});media/=20;
+  ex.qs.forEach(function(q,j){var r=ex.resp[j],t=q.t;porTema[t]=porTema[t]||{ok:0,n:0};porTema[t].n++;
+    if(r==null){bl++;return}var b=r===q.a;b?(ok++,porTema[t].ok++):ko++;
+    window.__dudaExt=ex.cambios[j]>0;actualizarQStatsEN(q.qid,b,ex.ms[j]);window.__dudaExt=false});
+  var nota=ex.pen?Math.max(0,ok-ko/3):ok;nota=Math.round(nota*100)/100;var seg=Math.round((Date.now()-ex.ini)/1000);
+  var s=st();s.examenesEN.push({fecha:todayStrEN(),ok:ok,ko:ko,bl:bl,nota:nota,seg:seg,min:ex.min,pen:ex.pen});s.examenesEN.length>60&&s.examenesEN.shift();
+  s.history.push({fecha:todayStrEN(),total:20,aciertos:ok,modo:"examen"});saveStateEN();
+  var temas=Object.keys(porTema).map(Number).sort(function(a,b){return(porTema[a].ok/porTema[a].n)-(porTema[b].ok/porTema[b].n)});
+  var lentas=ex.qs.map(function(q,j){return j}).filter(function(j){return ex.ms[j]>Math.max(2*media,45000)});
+  var cambiadas=ex.qs.map(function(q,j){return j}).filter(function(j){return ex.cambios[j]>0});
+  function item(j){var q=ex.qs[j],r=ex.resp[j],idx=QUESTIONS.indexOf(q);return'<div class="exm-fallo"'+(r===q.a?' style="border-left-color:var(--green)"':'')+'><div class="nlabel">'+esc(topicLabel(q.t))+' · '+Math.round(ex.ms[j]/1000)+' s'+(ex.cambios[j]?' · cambiaste la respuesta':'')+'</div><b>'+q.q+'</b><br>'+(r==null?'<span class="ko">Sin contestar</span>':r===q.a?'<span class="ok">✓ '+q.opts[q.a]+'</span>':'<span class="ko">✗ Tu respuesta: '+q.opts[r]+'</span><br><span class="ok">✓ Correcta: '+q.opts[q.a]+'</span>')+'<div class="nlabel" style="margin-top:4px">'+(q.fb||"")+'</div><button class="teo-link" onclick="exmRegla('+idx+')">📖 Ver la regla</button></div>'}
+  abrir("📝 Resultado del examen");tEl.textContent="";
+  body.innerHTML=(auto?'<div class="pred-msg">⏰ Se acabó el tiempo y el examen se entregó automáticamente.</div>':'')
+   +'<div class="exm-big">'+String(nota).replace(".",",")+'<span style="font-size:20px;color:var(--muted)"> / 20</span></div><div class="exm-sub">'+ok+' aciertos · '+ko+' fallos · '+bl+' en blanco'+(ex.pen?' · con penalización':'')+' · '+fmtT(seg)+' de '+ex.min+':00</div>'
+   +'<b style="color:var(--navy);font-size:13px">Por temas (de peor a mejor)</b>'+temas.map(function(t){var p=porTema[t];return'<div class="exm-row"><span>'+esc(topicLabel(t))+'</span><b style="color:var(--'+(p.ok===p.n?'green':'red')+')">'+p.ok+'/'+p.n+'</b></div>'}).join("")
+   +((ko+bl)?'<h4 style="margin:16px 0 8px;color:var(--navy)">❌ Fallos y en blanco</h4>'+ex.qs.map(function(q,j){return j}).filter(function(j){return ex.resp[j]!==ex.qs[j].a}).map(item).join(""):'<div class="pred-msg">🏆 ¡20 de 20!</div>')
+   +(cambiadas.length?'<h4 style="margin:16px 0 8px;color:var(--navy)">🔁 Cambiaste la respuesta ('+cambiadas.length+')</h4><div class="nlabel" style="margin-bottom:6px">Estas no cuentan como dominadas aunque las acertaras.</div>'+cambiadas.map(item).join(""):'')
+   +(lentas.length?'<h4 style="margin:16px 0 8px;color:var(--navy)">🐢 En las que más tardaste ('+lentas.length+')</h4>'+lentas.map(item).join(""):'');
+  foot.innerHTML='<button class="teo-btn" onclick="exmSalir()">Cerrar</button><button class="teo-btn pri" onclick="exmPortada()">🔁 Otro examen</button>';
+  body.scrollTop=0;
+}
+window.exmRegla=function(idx){cerrar();teoVerRegla(idx)};
+
+/* =================== MODO CERO FALLOS =================== */
+var cf={};
+window.cfPortada=function(){
+  var s=st();abrir("🔥 Cero fallos");tEl.textContent="";cf={activo:false};
+  body.innerHTML='<div class="exm-sub" style="margin-top:10px">Tu récord</div><div class="exm-streak">'+(s.ceroRecordEN||0)+'</div><div class="exm-sub">aciertos seguidos</div>'
+   +'<div class="pred-card"><ul style="margin:0;padding-left:18px;font-size:13px;line-height:1.6"><li>Preguntas una a una de todos los temas, con más peso en lo que más cae y en lo que aún no dominas.</li><li>El test <b>se corta en el primer fallo</b>.</li><li>El objetivo es encadenar <b>20</b>, como un examen perfecto.</li></ul></div>';
+  foot.innerHTML='<button class="teo-btn pri" style="flex:1" onclick="cfEmpezar()">▶ Empezar</button>';
+};
+window.cfEmpezar=function(){cf={activo:true,n:0,usadas:{},tq:Date.now()};abrir("🔥 Cero fallos");tEl.textContent="🔥 0";cfSiguiente()};
+function cfSiguiente(){
+  var q=preguntaDe(temaAlAzar(),cf.usadas,true);if(!q){q=sortear(1,true)[0]}
+  cf.q=q;cf.usadas[q.qid]=1;cf.tq=Date.now();cf.resp=null;
+  body.innerHTML='<div class="exm-dots">'+Array.from({length:20},function(_,k){return'<i'+(k<cf.n?' class="on"':'')+'></i>'}).join("")+'</div><div class="nlabel">'+esc(topicLabel(q.t))+' · Pregunta '+(cf.n+1)+'</div><div class="exm-q">'+q.q+'</div>'+q.opts.map(function(o,k){return'<button class="exm-op" onclick="cfResp('+k+')"><span class="l">'+L[k]+'</span><span>'+o+'</span></button>'}).join("")+'<div id="cf-fb"></div>';
+  foot.innerHTML='<div class="nlabel" style="flex:1;align-self:center">Racha actual: <b>'+cf.n+'</b> · Récord: <b>'+(st().ceroRecordEN||0)+'</b></div>';
+}
+window.cfResp=function(k){
+  if(!cf.activo||cf.resp!=null)return;cf.resp=k;var q=cf.q,b=k===q.a,bs=body.querySelectorAll(".exm-op");
+  bs[q.a].classList.add("ok");b||bs[k].classList.add("ko");actualizarQStatsEN(q.qid,b,Date.now()-cf.tq);
+  if(b){cf.n++;tEl.textContent="🔥 "+cf.n;
+    var s=st();if(cf.n>(s.ceroRecordEN||0)){s.ceroRecordEN=cf.n;saveStateEN()}
+    document.getElementById("cf-fb").innerHTML='<div class="pred-msg">✓ ¡Correcto!'+(cf.n===20?' 🏆 <b>¡20 seguidas! Examen perfecto.</b> Sigue para batir tu récord.':'')+'</div>';
+    foot.innerHTML='<button class="teo-btn pri" style="flex:1" onclick="cfNext()">Siguiente →</button>';
+  }else{
+    cf.activo=false;var s=st(),rec=s.ceroRecordEN||0,idx=QUESTIONS.indexOf(q);s.history.push({fecha:todayStrEN(),total:cf.n+1,aciertos:cf.n,modo:"cero-fallos"});saveStateEN();
+    document.getElementById("cf-fb").innerHTML='<div class="exm-fallo"><b class="ko">✗ Fallo.</b> Correcta: <span class="ok">'+q.opts[q.a]+'</span><div class="nlabel" style="margin-top:4px">'+(q.fb||"")+'</div><button class="teo-link" onclick="exmRegla('+idx+')">📖 Ver la regla</button></div><div class="exm-sub" style="margin-top:10px">Has encadenado</div><div class="exm-streak">'+cf.n+'</div><div class="exm-sub">'+(cf.n>=rec&&cf.n>0?'🏆 ¡Nuevo récord!':'Récord: '+rec)+'</div>';
+    foot.innerHTML='<button class="teo-btn" onclick="exmSalir()">Cerrar</button><button class="teo-btn pri" onclick="cfEmpezar()">🔁 Otra vez</button>';
+  }
+};
+window.cfNext=function(){cfSiguiente();body.scrollTop=0};
+
+/* =================== Accesos =================== */
+function insertarTarjetas(){
+  var lista=document.getElementById("test-lista-en");if(!lista||document.getElementById("exm-cards"))return;
+  var d=document.createElement("div");d.id="exm-cards";d.className="exm-cards";
+  d.innerHTML='<div class="exm-card" onclick="exmPortada()"><div class="ctitle" style="margin:0">📝 MODO EXAMEN REAL</div><b>20 preguntas con tiempo</b><span class="nlabel">Sin corrección hasta el final · reparto real por temas</span></div><div class="exm-card cf" onclick="cfPortada()"><div class="ctitle" style="margin:0">🔥 CERO FALLOS</div><b>Encadena 20 seguidas</b><span class="nlabel" id="cf-rec-lbl">Se corta en el primer fallo</span></div>';
+  var ref=lista.querySelector(".card.purple");ref?ref.parentNode.insertBefore(d,ref):lista.insertBefore(d,lista.firstChild);
+}
+insertarTarjetas();
+var rp=window.renderPredictorEN;
+if(rp){window.renderPredictorEN=function(){rp();var c=document.getElementById("pred-card-en");if(!c)return;var b=c.querySelector(".teo-btns");b&&!b.querySelector(".exm-ac")&&b.insertAdjacentHTML("beforeend",'<button class="teo-btn exm-ac" onclick="exmPortada()">📝 Examen real</button><button class="teo-btn exm-ac" onclick="cfPortada()">🔥 Cero fallos ('+(st().ceroRecordEN||0)+')</button>')};try{renderPredictorEN()}catch(e){}}
 })();
 </script>
 <script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").catch(function(){});});}</script>
