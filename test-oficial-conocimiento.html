@@ -1411,4 +1411,59 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
 (G.colocar||function(){})();
 })();
 </script>
+<script id="esq-temas">window.ESQ_TEMAS=[1,2,3,4,5,9,12,13];</script>
+<style id="estilo-enlace-esquemas">
+.btn-ver-esquema{display:inline-flex;align-items:center;gap:6px;margin:10px 0 2px;border:1.5px solid #2f6b52;background:transparent;color:#2f6b52;border-radius:18px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.btn-ver-esquema:hover{background:rgba(47,107,82,.1)}
+.esq-ov{position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,.55);display:flex;flex-direction:column;padding:env(safe-area-inset-top) 0 0}
+.esq-ov-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#1c4d3c;color:#fff;padding:10px 14px;font-weight:700;font-size:14px;font-family:inherit}
+.esq-ov-bar button{border:none;background:#fff;color:#1c4d3c;border-radius:16px;padding:7px 14px;font-weight:800;font-size:13px;cursor:pointer;font-family:inherit}
+.esq-ov iframe{flex:1;width:100%;border:0;background:#f5f4ee}
+</style>
+<script id="script-enlace-esquemas">
+/* ==================== TEST ↔ ESQUEMAS ====================
+   - test-oficial-conocimiento.html#repasar=5-12,5-ia-3 -> abre un test con esas preguntas (llega desde los esquemas).
+   - Botón «📘 Ver en el esquema» en la explicación de cada pregunta de un tema con esquema (window.ESQ_TEMAS):
+     abre el esquema encima del test, en el párrafo de la respuesta, sin perder el test en curso. */
+(function(){
+  function buscarPregunta(id){
+    const t = parseInt(id, 10); if (!t || typeof todasPreguntasDe !== 'function') return null;
+    const q = todasPreguntasDe(t).find(x => x.id === id);
+    return q ? Object.assign({temaId: t}, q) : null;
+  }
+  function repasarDesdeHash(){
+    const m = location.hash.match(/repasar=([^&]+)/); if (!m) return;
+    const ids = decodeURIComponent(m[1]).split(',').filter(Boolean);
+    try { history.replaceState(null, '', location.pathname + location.search); } catch(e){}
+    const qs = ids.map(buscarPregunta).filter(Boolean);
+    if (!qs.length) return;
+    setTimeout(() => { try { iniciarTest(qs, true); } catch(e){ console.error(e); } }, 350);
+  }
+  window.addEventListener('load', repasarDesdeHash);
+  window.addEventListener('hashchange', repasarDesdeHash);
+
+  window.verEnEsquema = function(id){
+    const ov = document.createElement('div'); ov.className = 'esq-ov';
+    ov.innerHTML = '<div class="esq-ov-bar"><span>📘 Esquema · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Esquema" src="esquemas.html?embed=1#q=' + encodeURIComponent(id) + '"></iframe>';
+    ov.querySelector('button').onclick = () => { ov.remove(); document.body.style.overflow = prevOverflow; };
+    const prevOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
+    document.body.appendChild(ov);
+  };
+
+  if (typeof window.explicBoxHTML === 'function'){
+    const original = window.explicBoxHTML;
+    window.explicBoxHTML = function(e, a){
+      let h = original.apply(this, arguments);
+      try {
+        const id = e && e.id ? String(e.id) : '';
+        const t = (e && e.temaId) || parseInt(id, 10);
+        if (id && Array.isArray(window.ESQ_TEMAS) && window.ESQ_TEMAS.includes(+t))
+          h += '<button type="button" class="btn-ver-esquema" onclick="verEnEsquema(\'' + id.replace(/'/g, '') + '\')">📘 Ver en el esquema</button>';
+      } catch(err){}
+      return h;
+    };
+  }
+})();
+</script>
+
 </body></html>
