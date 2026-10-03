@@ -1628,7 +1628,7 @@ mark.guia-hit{background:#ffe27a;color:#1f2a24;border-radius:3px;padding:0 1px}
 var G=window.GUIA_APP;if(!G)return;
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
 document.getElementById("guia-tit").textContent=G.titulo;
-document.getElementById("guia-intro").innerHTML=G.intro;
+document.getElementById("guia-intro").innerHTML=G.intro;document.getElementById("guia-q").placeholder="🔍 ¿Qué buscas? (ej: colores, voz, PDF, EX…)";
 function pintar(q){
   q=(q||"").trim().toLowerCase();var norm=function(s){return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")},nq=norm(q),h="",tot=0;
   G.secciones.forEach(function(s,si){

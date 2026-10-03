@@ -1056,4 +1056,160 @@ if(rp){window.renderPredictorEN=function(){rp();var c=document.getElementById("p
 })();
 </script>
 <script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").catch(function(){});});}</script>
+<!-- guia-app -->
+<script>window.GUIA_APP={
+titulo:"Guía de la app de Inglés",
+intro:"Todo lo que puedes hacer y dónde está. Toca una sección o escribe lo que buscas.",
+abierta:0,
+secciones:[
+{ic:"🧭",t:"Empieza aquí: cómo estudiar con la app",corto:"Empieza aquí",
+ tip:"<b>Rutina recomendada para el 20/20</b><ol><li><b>Teoría</b>: estudia un tema y pulsa «Marcar como estudiado».</li><li>Al final del tema, haz el <b>«Comprueba»</b> y <b>«Practicar este tema»</b>.</li><li>Cada día: <b>Test del día</b> (Inicio) y las <b>Fichas de repaso</b> que te tocan.</li><li>Cuando falles, pulsa <b>«📖 Ver la regla»</b>.</li><li>Una vez por semana: <b>Modo examen real</b> y mira cómo sube tu nota en <b>Rumbo al 20/20</b>.</li><li>La semana antes del examen: <b>Repaso rápido</b> de la teoría y <b>Cero fallos</b>.</li></ol>",
+ items:[["❓","Esta guía","Siempre está en el botón ❓ de arriba y en Perfil.","Arriba a la derecha"],
+ ["🧭","Barra de abajo","Inicio · Teoría · Test · Tablas. El 👤 de arriba a la izquierda abre tu Perfil.",""]]},
+{ic:"🏠",t:"Inicio",donde:"Barra de abajo → 🏠 Inicio",
+ items:[["📅","Días para el examen","Toca la tarjeta verde para fijar la fecha de tu examen.","Inicio"],
+ ["🔥","Racha","Días seguidos que has practicado.",""],
+ ["▶️","Test del día","30 preguntas que priorizan los temas que más caen y lo que no dominas.","Inicio → Empezar hoy"],
+ ["🎯","Meta de hoy","Preguntas que llevas hoy frente a tu objetivo diario (se cambia en Perfil).",""],
+ ["📈","Rumbo al 20/20","Tu nota esperada, probabilidad de 20/20, preguntas dominadas y los temas que más te separan del 20. Ver sección «Rumbo al 20/20».","Inicio"],
+ ["🕘","Últimos tests","Tus últimos resultados.",""]]},
+{ic:"📖",t:"Teoría",donde:"Barra de abajo → 📖 Teoría",
+ items:[["🔍","Buscador","Busca en los 41 temas; si también aparece en Trampas o Tablas te pone el enlace.","Arriba de Teoría"],
+ ["▶","Continuar","Vuelve al último tema que abriste.","Panel de arriba"],
+ ["⚡","Repaso rápido","Abre los 41 temas y oculta los ejemplos: solo reglas, fórmulas, cajas clave y trampas. Ideal el día antes.","Panel de arriba"],
+ ["🗂️","Fichas de repaso","Las reglas de los temas que has marcado como estudiados, con repetición espaciada: la que fallas vuelve antes.","Panel de arriba"],
+ ["⭐","Resumen general","Versión combinada para aprobar en 45 minutos.","Primer apartado"],
+ ["📊","% en cada tema","En la cabecera de cada tema: tu acierto (verde ≥80 %, ámbar ≥60 %, rojo <60 %) y ✅ si está estudiado.",""],
+ ["🎯","Lo que más fallas","Al abrir un tema, arriba salen tus 3 preguntas más falladas de ese tema.",""],
+ ["✍️","Comprueba que lo has entendido","3 preguntas al final de cada tema, corregidas al momento.","Final de cada tema"],
+ ["✏️","Practicar este tema / Mis fallos","Lanza un test solo de ese tema, o solo de lo que has fallado en él.","Final de cada tema"],
+ ["⬜","Marcar como estudiado","Cuenta en el «X/41 temas estudiados» y activa sus fichas en el repaso diario.","Final de cada tema"],
+ ["←→","Tema anterior / siguiente","Para ir de uno en uno.","Final de cada tema"],
+ ["⚠️","Trampas","Las 20 trampas más frecuentes.","Arriba de Teoría"]]},
+{ic:"✏️",t:"Test: practicar",donde:"Barra de abajo → ✏️ Test",
+ items:[["📝","Modo examen real","20 preguntas repartidas como en el examen, con cuenta atrás y sin corrección hasta el final.","Test → arriba"],
+ ["🔥","Cero fallos","Encadena aciertos; se corta en el primer fallo. Objetivo: 20.","Test → arriba"],
+ ["⚙️","Personalizado","Eliges modalidad, tema, nº de preguntas, origen (oficiales / IA / todas), corrección inmediata o al final y modo flashcards.","Test → Personalizado"],
+ ["1️⃣","Un tema","Test de un solo punto gramatical.","Personalizado → modalidad"],
+ ["🌐","Todos los temas","Mezcla de todo.","Personalizado → modalidad"],
+ ["🔁","Repasar fallos","Solo las que has fallado alguna vez.","Personalizado → modalidad"],
+ ["🧠","Repaso inteligente","Las que te tocan hoy por repetición espaciada (1, 3, 7, 15, 30, 60 días).","Personalizado → modalidad"],
+ ["📉","Lo que no domino","Preguntas con menos del 70 % de acierto.","Personalizado → modalidad"],
+ ["🗂️","Modo flashcards","Ves la pregunta, la giras y dices si la sabías.","Personalizado"],
+ ["🧩","Bloques y grupos de temas","Tests por bloques afines (tiempos verbales, condicionales, modales…).","Test → listas de abajo"],
+ ["💾","💾 Guardar y salir","Deja un test a medias y retómalo desde Perfil.","Dentro del test"]]},
+{ic:"🎯",t:"Rumbo al 20/20",corto:"20/20",donde:"Inicio → tarjeta «Rumbo al 20/20»",
+ items:[["📊","Nota esperada","Tu nota sobre 20 según tu acierto en cada tema y lo que pesa cada tema en el examen real. Los temas sin practicar cuentan como 60 % hasta que haya datos.",""],
+ ["🏆","Probabilidad de 20/20 y de ≥18","Lo que de verdad importa para la nota.",""],
+ ["✅","Preguntas dominadas","Solo cuenta como dominada tras 3 aciertos seguros en días distintos. Si dudas, cambias la respuesta o tardas más del doble de tu media, no cuenta.",""],
+ ["⬆️","Lo que te separa del 20/20","Los temas que más nota te darían si los dominas («cae X/examen» = preguntas por examen). Tócalos para practicar.",""],
+ ["📈","Evolución semanal","Cómo ha ido subiendo tu nota esperada.",""],
+ ["🎯","Practicar lo que me separa del 20/20","20 preguntas no dominadas de tus 3 temas más rentables.",""]]},
+{ic:"📝",t:"Simulacros",donde:"Test → 📝 Simulacros",
+ items:[["🥇","Tests generales ORO / PLATA","Exámenes de convocatorias y academias, con cronómetro.",""],
+ ["🎲","Simulacro aleatorio","20 preguntas al azar de todos los tests; cada vez distinto.",""],
+ ["📦","Bloques de repaso","Más preguntas agrupadas de 20 en 20.",""],
+ ["📊","Cuentan en tus estadísticas","Lo que respondes en los simulacros también suma al predictor.",""]]},
+{ic:"📊",t:"Tablas y Trampas",corto:"Tablas",
+ items:[["📊","Tablas","Tablas de consulta rápida: reported speech, comparativos irregulares, pronombres y más.","Barra de abajo → 📊 Tablas"],
+ ["⚠️","Trampas","Los errores típicos del examen.","Teoría → tarjeta Trampas"]]},
+{ic:"👆",t:"Durante una pregunta",corto:"En el test",
+ items:[["👆","Tocar una opción","Es tu respuesta.",""],
+ ["✋","Mantener pulsada otra opción","La marca como «dudaba con esta». No cambia tu respuesta, pero esa pregunta no contará como dominada.",""],
+ ["🤔","Marcar duda","La guarda en tu lista de dudas (Perfil).",""],
+ ["🚩","Reportar error","Si crees que la pregunta está mal.",""],
+ ["📖","Ver la regla en la teoría","Tras fallar, te lleva a la sección exacta del tema; luego «← Volver al test».",""],
+ ["🤖","Pídele más detalle a la IA","En la revisión final, explicación ampliada (necesita tu clave de Gemini en Perfil).",""],
+ ["🔊","Modo voz","Lee las preguntas en voz alta.","Dentro del test"]]},
+{ic:"👤",t:"Perfil y ajustes",corto:"Perfil",donde:"Botón 👤 arriba a la izquierda",
+ items:[["❓","Guía de la app","Esta misma guía.",""],
+ ["📱","Vista móvil / 💻 PC","Cómo se ve la app; la de PC ocupa toda la pantalla.",""],
+ ["🌙","Modo oscuro","Activar o desactivar.",""],
+ ["📅","Fecha de examen y meta diaria","Para la cuenta atrás y la «Meta de hoy».",""],
+ ["▶️","Test del día","También se puede lanzar desde aquí.",""],
+ ["⏸️","Tests sin terminar","Reanuda o borra los tests guardados.",""],
+ ["🤔","Dudas y 🚩 reportadas","Tus preguntas marcadas.",""],
+ ["✨","Generador de preguntas IA","Crea preguntas nuevas de un tema (con tu clave de Gemini) y gestiónalas.",""],
+ ["💾","Copia de seguridad","Exporta o importa todo tu progreso (para pasarlo a otro dispositivo).",""]]},
+{ic:"🎨",t:"Leyenda: símbolos y colores",corto:"Leyenda",
+ ley:[["🟨","Subrayado amarillo = palabra clave"],["<span style='color:#d1342a'>Rojo</span>","Excepción, trampa o forma incorrecta"],["<span style='color:#1f8a4c'>Verde</span>","Forma correcta"],["<span style='color:#1d6fd6'>Azul</span>","Ejemplo"],["✔ / ✘","Afirmativa / negativa"],["★","Ojo, caso especial"],["T12","Número de tema"],["%","Acierto: verde ≥80 · ámbar ≥60 · rojo <60"],["✅","Tema estudiado / pregunta dominada"],["🔥","Racha o Cero fallos"],["⚠️","Trampa frecuente"],["IA","Pregunta generada con IA (no oficial)"]],
+ items:[]}
+],
+colocar:function(){
+  var h=document.querySelector(".hdr-inner");
+  if(h&&!document.getElementById("guia-btn-en")){var b=document.createElement("button");b.id="guia-btn-en";b.className="profile-btn-en guia-btn-top";b.title="Guía de la app";b.textContent="❓";b.onclick=function(){guiaAbrir()};var sp=h.querySelector(".score-pill");h.insertBefore(b,sp)}
+  var p=document.getElementById("panel-perfil");
+  if(p&&!document.getElementById("guia-row-en")){var c=document.createElement("div");c.id="guia-row-en";c.className="card";c.style.cssText="cursor:pointer;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;border-left:5px solid var(--gold)";c.onclick=function(){guiaAbrir()};c.innerHTML='<div><div class="ctitle" style="margin-bottom:2px">❓ GUÍA DE LA APP</div><b style="font-size:15px;color:var(--navy)">Todo lo que puedes hacer y dónde está</b></div><span style="font-size:22px">→</span>';p.insertBefore(c,p.firstChild)}
+}
+};</script>
+<style>
+/* ---- Guía de la app (qué puedo hacer y dónde está) ---- */
+.guia-ov{--g-bg:var(--crema,var(--bg,var(--fondo,#f5f4ee)));--g-card:var(--card,var(--panel,#fff));--g-alt:var(--card-alt,var(--panel-alt,#eeece3));--g-tx:var(--texto,var(--text,#1f2a24));--g-mu:var(--texto-gris,var(--muted,#767a70));--g-bd:var(--borde,var(--border,#e2e0d5));--g-ac:var(--verde-osc,var(--navy,#163f30));--g-go:#c9962c;
+position:fixed;inset:0;z-index:9000;background:rgba(10,20,15,.55);display:none;align-items:stretch;justify-content:center;font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
+.guia-ov.show{display:flex}
+.guia-box{background:var(--g-bg);color:var(--g-tx);width:100%;max-width:640px;display:flex;flex-direction:column;box-shadow:0 0 40px rgba(0,0,0,.3)}
+.guia-top{background:var(--g-card);border-bottom:1px solid var(--g-bd);padding:14px 16px 10px}
+.guia-top-row{display:flex;align-items:center;gap:10px}
+.guia-top h2{flex:1;margin:0;font-family:Georgia,serif;font-size:20px;color:var(--g-ac);font-style:italic}
+.guia-x{border:1.5px solid var(--g-bd);background:var(--g-card);color:var(--g-tx);border-radius:12px;width:38px;height:38px;font-size:16px;cursor:pointer}
+.guia-intro{font-size:13px;color:var(--g-mu);margin:6px 0 10px;line-height:1.5}
+.guia-q{width:100%;box-sizing:border-box;border:1.5px solid var(--g-bd);border-radius:20px;padding:10px 14px;font-size:14px;background:var(--g-bg);color:var(--g-tx);outline:none}
+.guia-chips{display:flex;gap:6px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
+.guia-chip{flex:none;border:1px solid var(--g-bd);background:var(--g-alt);color:var(--g-tx);border-radius:16px;padding:5px 11px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+.guia-body{flex:1;overflow:auto;padding:12px 16px 30px}
+.guia-sec{background:var(--g-card);border:1px solid var(--g-bd);border-radius:14px;margin-bottom:10px;overflow:hidden;scroll-margin-top:8px}
+.guia-sec-h{display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer}
+.guia-sec-h .ic{font-size:20px;width:28px;text-align:center}
+.guia-sec-h b{flex:1;font-size:14.5px;color:var(--g-ac)}
+.guia-sec-h .n{font-size:11px;font-weight:800;color:var(--g-mu);background:var(--g-alt);border-radius:10px;padding:2px 8px}
+.guia-sec-h .ch{color:var(--g-mu);transition:transform .15s}
+.guia-sec.open .guia-sec-h .ch{transform:rotate(180deg)}
+.guia-sec-b{display:none;padding:0 14px 12px}
+.guia-sec.open .guia-sec-b{display:block}
+.guia-donde{font-size:11.5px;color:var(--g-mu);margin:-4px 0 8px;padding-left:38px}
+.guia-it{display:flex;gap:10px;padding:9px 0;border-top:1px dashed var(--g-bd)}
+.guia-it .ii{flex:none;width:28px;text-align:center;font-size:16px}
+.guia-it .tt{flex:1;min-width:0}
+.guia-it .tt b{display:block;font-size:13.5px;color:var(--g-tx)}
+.guia-it .tt span{display:block;font-size:12.5px;color:var(--g-mu);line-height:1.5;margin-top:1px}
+.guia-it .tt em{font-style:normal;font-weight:700;color:var(--g-go)}
+.guia-ley{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;font-size:12.5px;align-items:center}
+.guia-ley .s{font-weight:800;text-align:center;min-width:28px}
+.guia-tip{background:var(--g-alt);border-left:4px solid var(--g-go);border-radius:10px;padding:10px 12px;font-size:12.8px;line-height:1.6;margin:4px 0 10px}
+.guia-tip ol{margin:4px 0 0;padding-left:20px}
+.guia-nada{text-align:center;color:var(--g-mu);font-size:13px;padding:30px 0}
+.guia-btn-top{cursor:pointer}
+@media print{.guia-ov{display:none!important}}
+#guia-btn-en{width:38px;height:38px;font-size:17px}
+@media(max-width:420px){.hdr-inner .hdr-logo{display:none}}
+mark.guia-hit{background:#ffe27a;color:#1f2a24;border-radius:3px;padding:0 1px}
+</style>
+<div class="guia-ov" id="guia-ov" onclick="if(event.target===this)guiaCerrar()"><div class="guia-box" role="dialog" aria-label="Guía de la app"><div class="guia-top"><div class="guia-top-row"><h2 id="guia-tit">Guía de la app</h2><button class="guia-x" onclick="guiaCerrar()" aria-label="Cerrar">✕</button></div><div class="guia-intro" id="guia-intro"></div><input class="guia-q" id="guia-q" type="search" placeholder="🔍 ¿Qué quieres hacer? (ej: simulacro, dudas, voz, copia…)" oninput="guiaBuscar(this.value)"><div class="guia-chips" id="guia-chips"></div></div><div class="guia-body" id="guia-body"></div></div></div>
+<script>
+(function(){
+var G=window.GUIA_APP;if(!G)return;
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+document.getElementById("guia-tit").textContent=G.titulo;
+document.getElementById("guia-intro").innerHTML=G.intro;document.getElementById("guia-q").placeholder="🔍 ¿Qué buscas? (ej: examen, fichas, dudas, voz, copia…)";
+function pintar(q){
+  q=(q||"").trim().toLowerCase();var norm=function(s){return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")},nq=norm(q),h="",tot=0;
+  G.secciones.forEach(function(s,si){
+    var its=s.items.filter(function(it){return!nq||norm(it.join(" ")+" "+s.t).indexOf(nq)>=0});
+    if(nq&&!its.length&&!(s.tip&&norm(s.tip).indexOf(nq)>=0))return;tot++;
+    h+='<div class="guia-sec'+(nq||G.abierta===si?' open':'')+'" id="guia-s'+si+'"><div class="guia-sec-h" onclick="this.parentNode.classList.toggle(\'open\')"><span class="ic">'+s.ic+'</span><b>'+esc(s.t)+'</b>'+(s.items.length?'<span class="n">'+s.items.length+'</span>':'')+'<span class="ch">▾</span></div><div class="guia-sec-b">'+(s.donde?'<div class="guia-donde">📍 '+s.donde+'</div>':'')+(s.tip?'<div class="guia-tip">'+s.tip+'</div>':'')
+     +(s.ley?'<div class="guia-ley">'+s.ley.map(function(l){return'<span class="s">'+l[0]+'</span><span>'+l[1]+'</span>'}).join("")+'</div>':'')
+     +its.map(function(it){return'<div class="guia-it"><span class="ii">'+it[0]+'</span><div class="tt"><b>'+it[1]+'</b><span>'+it[2]+(it[3]?' <em>→ '+it[3]+'</em>':'')+'</span></div></div>'}).join("")+'</div></div>';
+  });
+  document.getElementById("guia-body").innerHTML=h||'<div class="guia-nada">No encuentro nada con «'+esc(q)+'».</div>';
+  if(q){var re=new RegExp(q.replace(/[.*+?^${}()|[]\]/g,"\$&"),"gi");document.querySelectorAll("#guia-body .tt").forEach(function(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),n,ns=[];while(n=w.nextNode())ns.push(n);ns.forEach(function(tn){var t=tn.nodeValue;re.lastIndex=0;if(!re.test(t))return;re.lastIndex=0;var f=document.createDocumentFragment(),li=0,m;while(m=re.exec(t)){f.appendChild(document.createTextNode(t.slice(li,m.index)));var k=document.createElement("mark");k.className="guia-hit";k.textContent=m[0];f.appendChild(k);li=m.index+m[0].length}f.appendChild(document.createTextNode(t.slice(li)));tn.parentNode.replaceChild(f,tn)})})}
+}
+document.getElementById("guia-chips").innerHTML=G.secciones.map(function(s,i){return'<span class="guia-chip" onclick="guiaIr('+i+')">'+s.ic+' '+esc(s.corto||s.t)+'</span>'}).join("");
+window.guiaIr=function(i){var q=document.getElementById("guia-q");if(q.value){q.value="";pintar("")}var s=document.getElementById("guia-s"+i);if(!s)return;s.classList.add("open");s.scrollIntoView({behavior:"smooth",block:"start"})};
+window.guiaBuscar=pintar;
+window.guiaAbrir=function(sec){pintar("");document.getElementById("guia-q").value="";document.getElementById("guia-ov").classList.add("show");document.body.style.overflow="hidden";if(sec!=null)setTimeout(function(){guiaIr(sec)},30)};
+window.guiaCerrar=function(){document.getElementById("guia-ov").classList.remove("show");document.body.style.overflow=""};
+document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()});
+(G.colocar||function(){})();
+})();
+</script>
 </body></html>
