@@ -191,7 +191,7 @@ strong{font-weight:700}
 </div>
 <div id="inicio-week-strip-en" style="display:flex;gap:8px;justify-content:space-between;margin-bottom:22px"></div>
 <div class="card" style="cursor:pointer;margin-bottom:22px;display:flex;align-items:center;justify-content:space-between" onclick="startTestDelDiaEN()">
-<div><div class="ctitle" style="margin-bottom:2px">EMPEZAR HOY</div><b style="font-size:17px;color:var(--navy)">Test del día</b><div class="nlabel">30 preguntas · aleatorias</div></div>
+<div><div class="ctitle" style="margin-bottom:2px">EMPEZAR HOY</div><b style="font-size:17px;color:var(--navy)">Test del día</b><div class="nlabel">30 preguntas · prioriza lo que más cae</div></div>
 <span style="font-size:26px">→</span>
 </div>
 <div class="ctitle" style="font-size:17px;margin-bottom:10px">Meta de hoy</div>
@@ -589,7 +589,7 @@ function pieHtml(t){
   var st=teoStatsTema(t),est=teoSt().estudiado[t],i=TEO_IDS.indexOf(t),prev=TEO_IDS[i-1],next=TEO_IDS[i+1];
   var nf=preguntasDeTemaEN(t).filter(function(q){return statsDeEN(q.qid).ultimaCorrecta===false}).length;
   var nfc=fichasDe(t).length;
-  var h='<h4>📈 Tu progreso en este tema</h4><div class="teo-prog">'+(st.pct==null?'Aún no has respondido preguntas de este tema ('+st.total+' disponibles).':'Has acertado el <b>'+st.pct+' %</b> · '+st.vistas+' de '+st.total+' preguntas vistas'+(nf?' · <b style="color:var(--red)">'+nf+(nf===1?' fallada pendiente</b>':' falladas pendientes</b>'):''))+'</div>';
+  var h='<h4>📈 Tu progreso en este tema</h4><div class="teo-prog">'+(st.pct==null?'Aún no has respondido preguntas de este tema ('+st.total+' disponibles).':'Has acertado el <b>'+st.pct+' %</b> · '+st.vistas+' de '+st.total+' preguntas vistas'+(window.dominioTemaEN?' · dominadas <b>'+dominioTemaEN(t).dom+'</b>':'')+(nf?' · <b style="color:var(--red)">'+nf+(nf===1?' fallada pendiente</b>':' falladas pendientes</b>'):''))+'</div>';
   h+='<div class="teo-bar"><i style="width:'+(st.total?Math.round(st.vistas/st.total*100):0)+'%"></i></div>';
   h+='<h4>✍️ Comprueba que lo has entendido</h4><div id="teo-qz-'+t+'"></div>';
   h+='<div class="teo-btns"><button class="teo-btn pri" onclick="teoPracticar('+t+')">✏️ Practicar este tema</button>'+(nf?'<button class="teo-btn" onclick="teoPracticar('+t+',\'fallos\')">🔁 Mis fallos ('+nf+')</button>':'')+(nfc?'<button class="teo-btn" onclick="teoFcAbrir('+t+')">🗂️ Fichas ('+nfc+')</button>':'')+'<button class="teo-btn'+(est?' on':'')+'" onclick="teoToggleEstudiado('+t+')">'+(est?'✅ Estudiado':'⬜ Marcar como estudiado')+'</button></div>';
@@ -760,6 +760,141 @@ window.teoIrBusq=function(p){
 };
 
 teoRefresh();
+})();
+</script>
+<!-- pred-engine -->
+<style>
+/* ---- Rumbo al 20/20: dominio real, peso de temas y predictor de nota ---- */
+.pred-card{background:var(--card);border-radius:var(--radio-sm);padding:16px 18px;margin-bottom:22px;border:1px solid var(--border)}
+.pred-top{display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap}
+.pred-big{font-size:38px;font-weight:800;color:var(--navy);font-family:Georgia,serif;line-height:1}
+.pred-big small{font-size:16px;color:var(--muted);font-weight:700}
+.pred-kpi{flex:1;min-width:120px}
+.pred-kpi b{display:block;font-size:20px;color:var(--navy);font-family:Georgia,serif}
+.pred-lbl{font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.pred-bar{height:8px;border-radius:6px;background:var(--card-alt);overflow:hidden;margin:6px 0 2px}
+.pred-bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--sky),var(--gold));border-radius:6px}
+.pred-gap{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px dashed var(--border);font-size:12.5px;cursor:pointer}
+.pred-gap:last-child{border-bottom:none}
+.pred-gap .w{font-size:10.5px;font-weight:800;border-radius:8px;padding:2px 7px;background:#fff0c9;color:#8a5a00;white-space:nowrap}
+[data-theme="dark"] .pred-gap .w{background:#3d3010;color:#ffd77a}
+.pred-gap .up{margin-left:auto;font-weight:800;color:var(--green);white-space:nowrap}
+.pred-msg{background:var(--verde-suave);border-radius:10px;padding:9px 12px;font-size:12.8px;margin:10px 0 4px;color:var(--text)}
+.pred-spark{display:flex;align-items:flex-end;gap:4px;height:48px;margin-top:6px}
+.pred-spark>div{flex:1;background:var(--sky);border-radius:4px 4px 0 0;position:relative;min-height:2px;opacity:.85}
+.pred-spark>div span{position:absolute;top:-15px;left:50%;transform:translateX(-50%);font-size:9.5px;font-weight:800;color:var(--muted);white-space:nowrap}
+.pred-weeks{display:flex;gap:4px;font-size:9.5px;color:var(--muted);font-weight:700}.pred-weeks>div{flex:1;text-align:center}
+</style>
+<script>
+(function(){
+/* ---------- Peso de cada tema en los exámenes reales (tests generales ORO/PLATA y fase final) ---------- */
+var CNT={},TOT=0;
+Object.keys(SIM_TEMAS_EN).forEach(function(k){if(!/General|Global/.test(k))return;SIM_TEMAS_EN[k].forEach(function(t){if(t){CNT[t]=(CNT[t]||0)+1;TOT++}})});
+var IDS=Object.keys(TOPIC_NAMES).map(Number),PESO={},S=0;
+IDS.forEach(function(t){PESO[t]=(CNT[t]||0)+.5;S+=PESO[t]});IDS.forEach(function(t){PESO[t]/=S});
+window.PESO_TEMA_EN=PESO;window.FRECUENCIA_TEMA_EN={cnt:CNT,total:TOT};
+
+/* ---------- Dominio real: 3 aciertos seguros seguidos en días distintos ---------- */
+var DOM_N=3,ctx={duda:false};
+function mediaGlobalMs(){var t=0,c=0;Object.keys(stateEN.qStats).forEach(function(k){var s=stateEN.qStats[k];if(s.tiempoCount){t+=s.tiempoTotalMs;c+=s.tiempoCount}});return c>=20?t/c:null}
+var actOrig=window.actualizarQStatsEN;
+window.actualizarQStatsEN=function(qid,ok,ms){
+  var media=mediaGlobalMs();actOrig(qid,ok,ms);
+  var s=stateEN.qStats[qid];if(!s)return;
+  var lento=typeof ms==="number"&&media&&ms>Math.max(2*media,15000);
+  var dudo=ctx.duda||(stateEN.dudas||[]).indexOf(qid)>=0,hoy=todayStrEN();
+  if(!ok||dudo||lento){s.dr=0;s.dd=null;s.dm=!ok?"fallo":dudo?"duda":"lento"}
+  else if(s.dd!==hoy){s.dr=(s.dr||0)+1;s.dd=hoy;s.dm=null}
+  ctx.duda=false;saveStateEN();
+};
+window.esDominadaEN=function(qid){var s=stateEN.qStats[qid];return!!(s&&(s.dr||0)>=DOM_N)};
+var ansOrig=window.answer;
+window.answer=function(e,a,t){ctx.duda=altSeleccionTmpEN[t]!=null&&!answered.includes(t);ansOrig(e,a,t);ctx.duda=false};
+// Los simulacros también cuentan en las estadísticas
+var agOrig=window.answerGeneral;
+window.answerGeneral=function(e,a,t){
+  var ya=simAnswered.includes(t);agOrig(e,a,t);if(ya)return;
+  var key=currentSimName,i=t;
+  if(key===RANDOM_KEY){var obj=randomPool[t];key=null;[GENERAL_TESTS,EXTRA_TESTS].some(function(G){return Object.keys(G).some(function(k){var j=G[k].indexOf(obj);if(j>=0){key=k;i=j;return true}})})}
+  if(!key)return;var qid="S|"+key+"|"+i;
+  QUESTIONS.some(function(q){return q.qid===qid})&&actualizarQStatsEN(qid,e===a,null);
+};
+function bancoBase(){return QUESTIONS.filter(function(q){return!q.sim})}
+window.dominioTemaEN=function(t){var qs=preguntasDeTemaEN(t),d=qs.filter(function(q){return esDominadaEN(q.qid)}).length;return{dom:d,total:qs.length}};
+
+/* ---------- Probabilidad de acierto por tema y predictor ---------- */
+function pTema(t){
+  var vistas=0,ok=0,dom=0;
+  QUESTIONS.forEach(function(q){if(q.t!==t)return;var s=stateEN.qStats[q.qid];if(!s||!s.vistas)return;vistas++;s.ultimaCorrecta&&ok++;(s.dr||0)>=DOM_N&&dom++});
+  // Último resultado de cada pregunta vista, con un poco de peso extra a las dominadas y una prior de 0,6 para lo no visto
+  return{p:(ok+dom*.5+1.2)/(vistas+dom*.5+2),vistas:vistas};
+}
+window.prediccionEN=function(){
+  var P={},V={},esp=0;IDS.forEach(function(t){var x=pTema(t);P[t]=x.p;V[t]=x.vistas;esp+=PESO[t]*P[t]});
+  var gaps=IDS.map(function(t){return{t:t,gain:20*PESO[t]*(.97-P[t]),p:P[t],v:V[t]}}).filter(function(g){return g.gain>.02}).sort(function(a,b){return b.gain-a.gain});
+  return{nota:20*esp,p20:Math.pow(esp,20),p18:probAlMenos(esp,18),P:P,gaps:gaps};
+};
+function probAlMenos(p,k){var r=0;for(var x=k;x<=20;x++)r+=comb(20,x)*Math.pow(p,x)*Math.pow(1-p,20-x);return r}
+function comb(n,k){var r=1;for(var i=1;i<=k;i++)r=r*(n-k+i)/i;return r}
+function guardarHistorico(nota){
+  stateEN.predHist=stateEN.predHist||{};var h=todayStrEN();stateEN.predHist[h]=Math.round(nota*100)/100;
+  var ks=Object.keys(stateEN.predHist).sort();ks.length>120&&ks.slice(0,ks.length-120).forEach(function(k){delete stateEN.predHist[k]});saveStateEN();
+}
+function semanas(){
+  var H=stateEN.predHist||{},out=[],now=new Date;
+  for(var w=7;w>=0;w--){
+    var fin=new Date(now);fin.setDate(now.getDate()-7*w);var ini=new Date(fin);ini.setDate(fin.getDate()-6);
+    var a=todayStrEN(ini),b=todayStrEN(fin),v=null;Object.keys(H).sort().forEach(function(k){k>=a&&k<=b&&(v=H[k])});
+    out.push({v:v,lbl:w===0?"hoy":"-"+w+"s"});
+  }
+  return out;
+}
+function fmt(n,d){return n.toFixed(d==null?1:d).replace(".",",")}
+function pct(x){return x<.001?"<0,1 %":fmt(x*100,x<.1?1:0)+" %"}
+
+/* ---------- Tarjeta en Inicio ---------- */
+window.renderPredictorEN=function(){
+  var ref=document.getElementById("inicio-ultimos-en");if(!ref)return;
+  var c=document.getElementById("pred-card-en");
+  if(!c){var tit=document.createElement("div");tit.className="ctitle";tit.style.cssText="font-size:17px;margin-bottom:10px";tit.textContent="🎯 Rumbo al 20/20";c=document.createElement("div");c.id="pred-card-en";c.className="pred-card";var anchor=ref.previousElementSibling;anchor.parentNode.insertBefore(tit,anchor);anchor.parentNode.insertBefore(c,anchor)}
+  var pr=prediccionEN();guardarHistorico(pr.nota);
+  var base=bancoBase(),nd=base.filter(function(q){return esDominadaEN(q.qid)}).length;
+  var top=pr.gaps.slice(0,2),sube=pr.nota+top.reduce(function(s,g){return s+g.gain},0);
+  var sem=semanas(),max=20,min=Math.min.apply(null,sem.filter(function(s){return s.v!=null}).map(function(s){return s.v}).concat([pr.nota]))-1;min=Math.max(0,Math.floor(min));
+  var h='<div class="pred-top"><div><div class="pred-lbl">Nota esperada</div><div class="pred-big">'+fmt(pr.nota)+'<small> / 20</small></div></div>'
+   +'<div class="pred-kpi"><div class="pred-lbl">Prob. de 20/20</div><b>'+pct(pr.p20)+'</b></div><div class="pred-kpi"><div class="pred-lbl">Prob. de ≥18</div><b>'+pct(pr.p18)+'</b></div></div>'
+   +'<div style="margin-top:12px"><div class="pred-lbl">Preguntas dominadas (3 aciertos seguros en días distintos)</div><div class="pred-bar"><i style="width:'+(base.length?nd/base.length*100:0)+'%"></i></div><div style="font-size:12.5px"><b>'+nd.toLocaleString("es-ES")+'</b> / '+base.length.toLocaleString("es-ES")+'</div></div>';
+  if(top.length)h+='<div class="pred-msg">Si dominas <b>'+top.map(function(g){return"T"+g.t}).join(" y ")+'</b> subes de <b>'+fmt(pr.nota)+'</b> a <b>'+fmt(Math.min(20,sube))+'</b>.</div>';
+  h+='<div class="pred-lbl" style="margin-top:12px">Lo que te separa del 20/20</div>'+pr.gaps.slice(0,5).map(function(g){var d=dominioTemaEN(g.t);return'<div class="pred-gap" onclick="practicarGapEN(['+g.t+'])"><span style="flex:1"><b>'+topicLabel(g.t)+'</b><br><span class="nlabel">'+(g.v?'Aciertas ~'+Math.round(g.p*100)+' %':'Sin datos aún')+' · dominadas '+d.dom+'/'+d.total+'</span></span><span class="w">cae '+fmt(PESO[g.t]*20)+'/examen</span><span class="up">+'+fmt(g.gain,2)+'</span></div>'}).join("");
+  h+='<div class="pred-lbl" style="margin-top:14px">Evolución semanal de la nota esperada</div><div class="nlabel">Los temas sin practicar cuentan como un 60 % de acierto hasta que tengas datos.</div><div class="pred-spark">'+sem.map(function(s){return s.v==null?'<div style="height:2px;opacity:.25"></div>':'<div style="height:'+Math.max(4,(s.v-min)/(max-min)*100)+'%"><span>'+fmt(s.v)+'</span></div>'}).join("")+'</div><div class="pred-weeks">'+sem.map(function(s){return"<div>"+s.lbl+"</div>"}).join("")+'</div>';
+  h+='<div class="teo-btns" style="margin-top:12px"><button class="teo-btn pri" onclick="practicarGapEN()">🎯 Practicar lo que me separa del 20/20</button></div>';
+  c.innerHTML=h;
+};
+window.practicarGapEN=function(temas){
+  var pr=prediccionEN();temas=temas||pr.gaps.slice(0,3).map(function(g){return g.t});
+  if(!temas.length){alert("¡No hay temas pendientes! Haz un simulacro para comprobarlo.");return}
+  var banco=[];temas.forEach(function(t){banco=banco.concat(preguntasDeTemaEN(t).filter(function(q){return!esDominadaEN(q.qid)}))});
+  if(!banco.length){alert("Ya tienes dominadas todas las preguntas de "+temas.map(function(t){return"T"+t}).join(", ")+".");return}
+  showPanel("test");iniciarTestPersonalizadoEN(seleccionarPreguntasInteligenteEN(banco,20),false,true,"🎯 Rumbo al 20/20 · "+temas.map(function(t){return"T"+t}).join(", "));
+};
+
+/* ---------- Test del día: más peso a lo que más cae y a lo que no dominas ---------- */
+window.startTestDelDiaEN=function(){
+  showPanel("test");
+  var N=30,pr=prediccionEN(),sc={},tot=0;
+  IDS.forEach(function(t){var d=dominioTemaEN(t);if(!d.total)return;sc[t]=PESO[t]*Math.max(.15,1-pr.P[t])*(d.dom<d.total?1:.2);tot+=sc[t]});
+  if(!tot){alert("Todavía no hay preguntas cargadas.");return}
+  var cuota={},rest=N,fr=[];
+  Object.keys(sc).forEach(function(t){var x=sc[t]/tot*N;cuota[t]=Math.floor(x);rest-=cuota[t];fr.push([t,x-cuota[t]])});
+  fr.sort(function(a,b){return b[1]-a[1]}).slice(0,rest).forEach(function(f){cuota[f[0]]++});
+  var sel=[];Object.keys(cuota).forEach(function(t){if(!cuota[t])return;var qs=preguntasDeTemaEN(+t),nd=qs.filter(function(q){return!esDominadaEN(q.qid)});sel=sel.concat(seleccionarPreguntasInteligenteEN(nd.length>=cuota[t]?nd:qs,cuota[t]))});
+  sel=shuffleArr(sel);iniciarTestPersonalizadoEN(sel);
+  document.getElementById("test-titulo-en").textContent="Test del día · "+sel.length+" preguntas · prioriza lo que más cae";
+};
+
+var riOrig=window.renderInicioEN;
+window.renderInicioEN=function(){riOrig();try{renderPredictorEN()}catch(e){console.error(e)}};
+renderPredictorEN();
 })();
 </script>
 <script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").catch(function(){});});}</script>
