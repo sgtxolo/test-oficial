@@ -102,11 +102,11 @@ function puntuar(q, u) {
 
 // ---------- 6. Ejecutar ----------
 const esquemas = cargarEsquemas();
-const MAPA = {}; const temas = [];
+const MAPA = {}; const temas = []; const TOTAL = {};
 esquemas.forEach((e, i) => {
   const tema = i + 1; if (!e.html || !e.html.includes('class="articulo"')) return;
   temas.push(tema);
-  const us = unidades(e, tema); const qs = cargarPreguntas(tema);
+  const us = unidades(e, tema); const qs = cargarPreguntas(tema); TOTAL[tema] = qs.length;
   let ok = 0, flojas = [], sin = [], conMarca = 0;
   for (const q of qs) {
     let best = null, bs = -1, bf = null;
@@ -120,7 +120,7 @@ esquemas.forEach((e, i) => {
 });
 
 // ---------- 7. Escribir ----------
-const bloqueMapa = `<script id="mapa-preguntas">window.MAPA_PREG=${JSON.stringify(MAPA)};</script>`;
+const bloqueMapa = `<script id="mapa-preguntas">window.MAPA_PREG=${JSON.stringify(MAPA)};window.TOTAL_PREG=${JSON.stringify(TOTAL)};</script>`;
 let h = fs.readFileSync(ESQ, 'utf8');
 h = /<script id="mapa-preguntas">[\s\S]*?<\/script>/.test(h) ? h.replace(/<script id="mapa-preguntas">[\s\S]*?<\/script>/, () => bloqueMapa) : h.replace('<script>\n// ---- ESQUEMAS ----', () => bloqueMapa + '\n<script>\n// ---- ESQUEMAS ----');
 fs.writeFileSync(ESQ, h);
