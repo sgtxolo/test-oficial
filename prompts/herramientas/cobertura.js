@@ -11,6 +11,7 @@ const PDFS = {
   3: ['TEMA 3/2025-09-09-TEMA 3 COMPLETO.pdf'],
   4: ['TEMA 4/2025-09-19-TEMA 4 COMPLETO.pdf'],
   5: ['TEMA 5/TEMA 5 - Bases de Datos Europeas (Normativa completa).pdf'],
+  6: ['TEMA 6/Ley Orgánica 4-2000, de 11 de enero, sobre derechos y libertades de los extranjeros en España.pdf', 'TEMA 6/BOE-A-2009-17242-consolidado.pdf'],
   9: ['TEMA 9 - Defensa Nacional (LO 5-2005 + Directiva Defensa Nacional 2020).pdf'],
   12: ['TEMA 12 - Gobierno y Administracion (Ley 50-1997 - Extracto oficial).pdf'],
   13: ['TEMA 13 - Jurisdiccion Contencioso-Administrativa (Extracto oficial).pdf'],
