@@ -76,7 +76,7 @@ function puntuar(q, u) {
   const correcta = q.opciones[q.correcta] || '';
   const generica = GENERICA.test(norm(correcta));
   // «Señale la INCORRECTA»: la opción marcada es la falsa; las verdaderas son las demás
-  const inversa = /incorrect|no es correct|no es cierto|falsa|no corresponde|no sera|no podra|no figura|no se encuentra|no es una|no es un |no enviara/i.test(q.pregunta || '');
+  const inversa = /incorrect|no es correct|no es cierto|falsa|no corresponde|no sera|no podra|no figura|no se encuentra|no es una|no es un |no enviara|no se mencion|no se recoge|no se incluye|no aparece|no forma parte|no se contempla|no se prev|no es propio|no es funcion|no es competencia/i.test(q.pregunta || '');
   const variantes = [generica ? q.opciones.filter(o => !GENERICA.test(norm(o))).join(' ') : correcta];
   if (inversa) variantes.push(q.opciones.filter((o, i) => i !== q.correcta && !GENERICA.test(norm(o))).join(' '));
   const st = [...new Set(toks(q.pregunta))];
@@ -102,7 +102,7 @@ function puntuar(q, u) {
 
 // ---------- 6. Ejecutar ----------
 const esquemas = cargarEsquemas();
-const MAPA = {}; const temas = []; const TOTAL = {};
+const MAPA = {}; const EXTRA = {}; const temas = []; const TOTAL = {};
 esquemas.forEach((e, i) => {
   const tema = i + 1; if (!e.html || !e.html.includes('class="articulo"')) return;
   temas.push(tema);
@@ -116,11 +116,34 @@ esquemas.forEach((e, i) => {
     if (bs < 2.2) flojas.push(q.id);
     if (VER == tema) console.log(q.id.padEnd(9), best.pid.padEnd(9), bs.toFixed(2), '| Q:', norm(q.pregunta).slice(-70), '| A:', norm(q.opciones[q.correcta]).slice(0, 50), '| P:', best.T.slice(0, 90));
   }
+  // Segunda pasada: marcas de respuesta que ninguna pregunta ha reclamado -> la pregunta que mejor casa con ESA marca
+  // (una pregunta puede ser la de varias marcas, p. ej. a) genocidio; b) lesa humanidad; c) guerra; d) agresión)
+  const cubiertas = new Set(Object.values(MAPA).filter(v => v.startsWith(tema + '-')));
+  let extras = 0;
+  for (const u of us) {
+    u.marks.forEach((mk, i) => {
+      if (cubiertas.has(u.pid + '-' + i)) return;
+      const mt = [...new Set(toks(mk))]; if (mt.length < 1) return;
+      let mejor = null, ms = 0;
+      for (const q of qs) {
+        const r = puntuar(q, u); if ((r.fR + r.fT) < 0.5) continue;
+        const correcta = q.opciones[q.correcta] || ''; const generica = GENERICA.test(norm(correcta));
+        const vs = [generica ? q.opciones.filter(o => !GENERICA.test(norm(o))).join(' ') : correcta];
+        if (/incorrect|no es correct|falsa|no figura|no se menciona|no corresponde/i.test(q.pregunta || '')) vs.push(q.opciones.filter((o, k) => k !== q.correcta).join(' '));
+        let f = 0; for (const v of vs) { const at = [...new Set(toks(v))]; if (!at.length) continue;
+          const c = at.filter(w => mk.includes(' ' + w + ' ') || (w.length > 5 && mk.includes(' ' + w.slice(0, w.length - 2)))).length;
+          f = Math.max(f, c / at.length, c / mt.length * 0.9); }
+        const sc = f + 0.3 * (r.fR + r.fT);
+        if (f >= 0.6 && sc > ms) { ms = sc; mejor = q.id; }
+      }
+      if (mejor) { EXTRA[u.pid + '-' + i] = [mejor]; extras++; }
+    });
+  }
   console.log(`Tema ${tema}: ${qs.length} preguntas · ${ok} situadas · ${sin.length} sin sitio${sin.length ? ' (' + sin.slice(0, 12).join(', ') + (sin.length > 12 ? '…' : '') + ')' : ''} · ${conMarca} en su respuesta marcada · ${flojas.length} con coincidencia floja`);
 });
 
 // ---------- 7. Escribir ----------
-const bloqueMapa = `<script id="mapa-preguntas">window.MAPA_PREG=${JSON.stringify(MAPA)};window.TOTAL_PREG=${JSON.stringify(TOTAL)};</script>`;
+const bloqueMapa = `<script id="mapa-preguntas">window.MAPA_PREG=${JSON.stringify(MAPA)};window.TOTAL_PREG=${JSON.stringify(TOTAL)};window.MAPA_EXTRA=${JSON.stringify(EXTRA)};</script>`;
 let h = fs.readFileSync(ESQ, 'utf8');
 h = /<script id="mapa-preguntas">[\s\S]*?<\/script>/.test(h) ? h.replace(/<script id="mapa-preguntas">[\s\S]*?<\/script>/, () => bloqueMapa) : h.replace('<script>\n// ---- ESQUEMAS ----', () => bloqueMapa + '\n<script>\n// ---- ESQUEMAS ----');
 fs.writeFileSync(ESQ, h);
@@ -128,4 +151,5 @@ const bloqueTemas = `<script id="esq-temas">window.ESQ_TEMAS=${JSON.stringify(te
 let t = fs.readFileSync(TEST, 'utf8');
 t = /<script id="esq-temas">[\s\S]*?<\/script>/.test(t) ? t.replace(/<script id="esq-temas">[\s\S]*?<\/script>/, () => bloqueTemas) : t.replace(/<\/body>(?![\s\S]*<\/body>)/, () => bloqueTemas + '\n</body>');
 fs.writeFileSync(TEST, t);
+console.log('Marcas con pregunta propia añadidas:', Object.keys(EXTRA).length);
 console.log('Mapa escrito:', Object.keys(MAPA).length, 'preguntas situadas · temas con esquema:', temas.join(', '));
