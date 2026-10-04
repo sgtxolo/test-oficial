@@ -190,6 +190,7 @@ body.voz-abierta .voz-bar{display:flex}
   <div class="topbar">
     <h1>📚 Esquemas de Estudio</h1>
     <div style="display:flex;align-items:center;gap:10px">
+      <span class="vista-of" id="vista-of" title="Todo: preguntas oficiales y de IA. Solo oficiales: únicamente lo que ha salido en exámenes de la academia (esquema mucho más corto)"><button type="button" data-v="todo" class="on">📚 Todo</button><button type="button" data-v="of">⭐ Solo oficiales</button></span>
       <button class="btn-pdf" id="btn-marcas" type="button" title="Mostrar u ocultar las herramientas de marcas">🖍 Marcas</button>
       <button class="btn-pdf" id="btn-voz-menu" type="button" title="Leer el esquema en voz alta">🔊 Voz</button>
       <button class="btn-pdf" id="btn-exportar-pdf">⬇️ PDF</button>
@@ -1830,11 +1831,11 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
 </script>
 <style id="estilo-enlaces">
 /* Respuestas enlazadas con las preguntas de la app de test */
-mark.m-resp.r-ia{background:transparent;color:#166534;font-weight:700;box-shadow:none;padding:0 1px;text-decoration:underline dotted #4ade80;text-decoration-thickness:2px;text-underline-offset:3px}
-[data-theme="dark"] mark.m-resp.r-ia{background:transparent;color:#86efac;box-shadow:none}
+mark.m-resp.r-ia{background:transparent;color:#b3001b;font-weight:700;box-shadow:none;padding:0 1px;text-decoration:underline dotted #e8737f;text-decoration-thickness:2px;text-underline-offset:3px}
+[data-theme="dark"] mark.m-resp.r-ia{background:transparent;color:#ff8a80;box-shadow:none}
 mark.m-resp[data-q]{cursor:pointer}
 mark.m-resp[data-q]:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
-.leyenda i.lc-resp-ia{background:none;border:none;color:#166534;text-decoration:underline dotted #4ade80;font-style:normal;font-weight:900;width:auto;height:auto;font-size:12px}
+.leyenda i.lc-resp-ia{background:none;border:none;color:#b3001b;text-decoration:underline dotted #e8737f;font-style:normal;font-weight:900;width:auto;height:auto;font-size:12px}
 .ex-p::before{content:'EX'}
 .st-chip::before{content:attr(data-t)}
 .ex-p{display:inline-flex;align-items:center;justify-content:center;border:2px solid #d1332a;color:#d1332a;border-radius:50%;width:26px;height:26px;font-size:10.5px;font-weight:900;transform:rotate(-8deg);margin-right:6px;vertical-align:middle;flex:none;font-family:inherit;background:transparent}
@@ -2409,6 +2410,47 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
   bm.onclick=()=>{ const on=document.body.classList.toggle('pm-on'); bm.classList.toggle('on',on); if(!on){ setTool(null); pop.classList.remove('on'); edit=null; } };
   setTimeout(applyAll,0);
   document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&st.tool) setTool(null); });
+})();
+</script>
+<style>
+.vista-of{display:inline-flex;border:1.5px solid var(--verde-med);border-radius:20px;overflow:hidden}
+.vista-of button{border:0;background:transparent;color:var(--verde-med);padding:8px 12px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap}
+.vista-of button.on{background:var(--verde,#1c4d3c);color:#fff}
+body.solo-of .sin-of{display:none!important}
+body.solo-of mark.m-resp.r-ia{background:transparent;color:inherit;font-weight:inherit;text-decoration:none}
+body.solo-of .resp-strip{display:none}
+</style>
+<script id="script-solo-oficiales">
+(function(){
+  const KEY='esquemas_vista_oficiales';
+  const btns=[...document.querySelectorAll('#vista-of button')];
+  function marcar(){
+    document.querySelectorAll('.esquema').forEach(esq=>{
+      esq.querySelectorAll('.articulo').forEach(art=>{
+        const hay=!!art.querySelector('.ex-p');
+        art.classList.toggle('sin-of',!hay);
+        art.querySelectorAll('.txt p').forEach(p=>p.classList.toggle('sin-of',hay&&!p.querySelector(':scope > .ex-p')));
+      });
+      esq.querySelectorAll('.trampa').forEach(t=>{
+        let a=t.previousElementSibling; while(a&&!a.classList.contains('articulo')&&!a.classList.contains('bloque-titulo')) a=a.previousElementSibling;
+        t.classList.toggle('sin-of',!(a&&a.classList.contains('articulo')&&!a.classList.contains('sin-of')));
+      });
+      esq.querySelectorAll('.bloque-titulo').forEach(b=>{
+        let n=b.nextElementSibling,vis=false;
+        while(n&&!n.classList.contains('bloque-titulo')){ if(n.classList.contains('articulo')&&!n.classList.contains('sin-of')){vis=true;break;} n=n.nextElementSibling; }
+        b.classList.toggle('sin-of',!vis);
+      });
+    });
+  }
+  function poner(v,guardar){
+    if(v==='of') marcar();
+    document.body.classList.toggle('solo-of',v==='of');
+    btns.forEach(b=>b.classList.toggle('on',b.dataset.v===v));
+    if(guardar){ try{localStorage.setItem(KEY,v);}catch(e){} }
+  }
+  btns.forEach(b=>b.addEventListener('click',()=>poner(b.dataset.v,true)));
+  let v='todo'; try{v=localStorage.getItem(KEY)||'todo';}catch(e){}
+  if(v==='of') window.addEventListener('load',()=>setTimeout(()=>poner('of',false),0));
 })();
 </script>
 </body>
