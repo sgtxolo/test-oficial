@@ -1419,6 +1419,8 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
 .esq-ov-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#1c4d3c;color:#fff;padding:10px 14px;font-weight:700;font-size:14px;font-family:inherit}
 .esq-ov-bar button{border:none;background:#fff;color:#1c4d3c;border-radius:16px;padding:7px 14px;font-weight:800;font-size:13px;cursor:pointer;font-family:inherit}
 .esq-ov iframe{flex:1;width:100%;border:0;background:#f5f4ee}
+#barra-volver-esq{display:none;flex:0 0 auto;align-items:center;background:#1c4d3c;padding:calc(env(safe-area-inset-top,0px) + 6px) 14px 6px}
+#barra-volver-esq button{border:none;background:#fff;color:#1c4d3c;border-radius:16px;padding:7px 14px;font-weight:800;font-size:13px;cursor:pointer;font-family:inherit}
 </style>
 <script id="script-enlace-esquemas">
 /* ==================== TEST ↔ ESQUEMAS ====================
@@ -1437,7 +1439,20 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
     try { history.replaceState(null, '', location.pathname + location.search); } catch(e){}
     const qs = ids.map(buscarPregunta).filter(Boolean);
     if (!qs.length) return;
-    setTimeout(() => { try { iniciarTest(qs, true); } catch(e){ console.error(e); } }, 350);
+    setTimeout(() => { try { iniciarTest(qs, true); mostrarVolverEsquemas('esquemas.html#q=' + encodeURIComponent(qs[0].id)); } catch(e){ console.error(e); } }, 350);
+  }
+  // Franja «← Volver a esquemas» sobre el test (solo cuando se llega desde un esquema; útil en la PWA del iPhone, sin botón atrás)
+  function mostrarVolverEsquemas(destino){
+    const modal = document.getElementById('modal-test'); if (!modal) return;
+    let barra = document.getElementById('barra-volver-esq');
+    if (!barra){
+      barra = document.createElement('div'); barra.id = 'barra-volver-esq';
+      barra.innerHTML = '<button type="button">← Volver a esquemas</button>';
+      modal.insertBefore(barra, modal.firstChild);
+      new MutationObserver(() => { if (modal.classList.contains('hidden')) barra.style.display = 'none'; }).observe(modal, {attributes: true, attributeFilter: ['class']});
+    }
+    barra.firstChild.onclick = () => { location.href = destino; };
+    barra.style.display = 'flex';
   }
   window.addEventListener('load', repasarDesdeHash);
   window.addEventListener('hashchange', repasarDesdeHash);
