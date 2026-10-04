@@ -1,5 +1,5 @@
 ---
-description: Examinador experto - genera 50 preguntas IA (10 fáciles, 25 medias, 15 difíciles) de un tema a partir del texto legal y las añade a la app de conocimientos
+description: Examinador experto - genera 50 preguntas IA (10 fáciles, 25 medias, 15 difíciles) de un tema a partir del texto legal, las añade a la app y después hace el esquema del tema con subrayado ~70 %
 argument-hint: <número de tema> (adjunta o pega el texto legal)
 ---
 

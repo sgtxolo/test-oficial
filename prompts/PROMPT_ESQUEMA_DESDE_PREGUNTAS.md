@@ -26,14 +26,15 @@ El esquema se basa **ÚNICAMENTE en lo que preguntan los tests del Tema N** de l
    - Si hay **resumen de un compañero**, leerlo (`unzip` del .docx → `word/document.xml`) y añadir lo que falte en su artículo.
    - Normas preguntadas que **no estén en el temario**: en un bloque «ANEXO» al final, con aviso de que no se han podido cotejar con el PDF.
    - Código en `esquemas.html`: objeto `TN = {}` con un bloque por norma (`/* TN_XXX */ TN.xxx = bloqueTitulo(...) + articulo(...) ...`) y al final `/* TN_RECUERDA + ensamblaje */` que hace `esquemas[N-1].titulo = ...; esquemas[N-1].html = leyenda() + ... + recuerda([...])`, colocado **justo antes de `render();`**.
-5. **Subrayado Método Prefortia EXHAUSTIVO** (como Tema 1 y Tema 4 — casi cada palabra con contenido coloreada; solo quedan en plano nexos y relleno):
+5. **Subrayado Método Prefortia ≈ 70 %** (como los temas 1, 4 y 5: casi cada palabra con contenido coloreada; solo quedan en plano artículos, preposiciones, conjunciones y nexos). **Es un requisito medible**: al terminar ejecuta `node prompts/herramientas/densidad.js N`; debe dar **≥ 70 % de los caracteres** subrayados (temas 1, 4 y 5: 68-73 %). Si da menos, subraya más antes de seguir. Un esquema con poco color (20-30 %) se considera mal hecho:
    - `m-autoridad` **verde**: órganos, autoridades, Estados, Agencia, Comisión, director ejecutivo…
    - `m-plazo` **azul**: plazos, fechas, cifras, porcentajes, «anualmente», «24/7»…
    - `m-accion` **morado**: verbos de acción (notificará, decide, suprime, vincula…).
    - `m-destacable` **naranja**: conceptos jurídicos y sustantivos clave.
    - `m-personalizado` **amarillo**: calificativos y matices (efectiva, motivada, técnicamente imposible…).
    - `<u class="m-clave">` **rojo subrayado, sin fondo**: no, salvo, únicamente, cuando, si, podrá, deberá, al menos, a más tardar, cualquier… (cerrar siempre con `</u>`, nunca con `</mark>`).
-   - Tras redactar, pasar el densificador y **revisar visualmente**:
+   - Poco amarillo: cada palabra con su color por categoría (verbos → morado, órganos → verde, cifras y plazos → azul, conceptos y sustantivos → naranja); el amarillo solo para matices.
+   - Tras redactar, pasar el densificador, **medir con `densidad.js`** y **revisar visualmente**:
      `node prompts/herramientas/densify.js esquemas.html N` (solo colorea texto que aún esté en plano; añadir a sus listas los términos propios del tema si hace falta).
 6. **Corregir las preguntas que contradigan el temario**, a la vez que se hace el esquema: respuesta mal marcada, cifra de una versión antigua, ninguna opción correcta… Verificar **siempre en el PDF** y corregir en `test-oficial-conocimiento.html` (`correcta`, texto de la opción si hace falta y `explicacion` citando el artículo literal) con la plantilla `prompts/herramientas/fix.js`. Si algo no se puede verificar en el PDF, no tocarlo y avisarme. **Esto vale también para las preguntas OFICIALES: el temario es el que manda, así que se corrigen si lo contradicen; pero NUNCA se elimina ninguna pregunta oficial.**
 7. **Comprobaciones**: balance `<mark>`/`</mark>` y `<u>`/`</u>`; sintaxis de los `<script>` (`new Function` con Node); abrir `esquemas.html` en el navegador, tema N, sin errores de consola, captura de pantalla; móvil incluido.
