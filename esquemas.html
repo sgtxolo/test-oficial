@@ -2580,5 +2580,101 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   (function init(){ if(!document.querySelector('.esquema .articulo .txt')&&intentos++<40) return setTimeout(init,100); aplicar(); sync(); })();
 })();
 </script>
+<script id="script-sync-marcas">
+/* Sincronización de las marcas de los esquemas entre dispositivos (ordenador ↔ iPhone) con el repositorio privado de GitHub
+   que ya usa la app de tests (misma configuración: localStorage "oficialGhCfg"). Fichero: backups/esquemas-marcas.json.
+   Se mezcla por tema: gana la versión más reciente de cada tema. No toca el progreso de los tests. */
+(function(){
+  const K1='esquemas-marcas-v1', K2='esquemas-cats-v1', TS='esquemas-sync-ts', CFG='oficialGhCfg', PATH='backups/esquemas-marcas.json';
+  const origSet=Storage.prototype.setItem;
+  const rd=k=>{ try{ return JSON.parse(localStorage.getItem(k)||'{}')||{}; }catch(e){ return {}; } };
+  const wr=(k,v)=>origSet.call(localStorage,k,JSON.stringify(v));
+  const cfg=()=>rd(CFG);
+  const hayCfg=()=>{ const c=cfg(); return !!(c.repo&&c.token); };
+  const b64=s=>btoa(unescape(encodeURIComponent(s))), unb64=s=>decodeURIComponent(escape(atob(s.replace(/\s/g,''))));
+  function actual(){ const a=rd(K1), b=rd(K2), o={}; new Set([...Object.keys(a),...Object.keys(b)]).forEach(id=>{ o[id]={m:a[id]||null,c:b[id]||null}; }); return o; }
+  let snap={}; (function(){ const o=actual(); Object.keys(o).forEach(id=>snap[id]=JSON.stringify(o[id])); })();
+  (function(){ const ts=rd(TS), o=actual(); let c=false; Object.keys(o).forEach(id=>{ const v=o[id]; const hay=(v.m&&((v.m.t&&v.m.t.length)||(v.m.f&&v.m.f.length)))||(v.c&&(Object.keys(v.c.e||{}).length||(v.c.a||[]).length)); if(hay&&!ts[id]){ ts[id]=1; c=true; } }); if(c) wr(TS,ts); })();
+  let ignorar=false, pendiente=false, ocupado=false, timer=0;
+
+  /* ---------- indicador ---------- */
+  let badge=null;
+  function estado(txt,cls,titulo){
+    if(!badge){
+      const ref=document.getElementById('btn-marcas'); if(!ref||!ref.parentNode) return;
+      badge=document.createElement('span'); badge.id='sync-st'; badge.style.cssText='font-size:12px;font-weight:700;padding:4px 8px;border-radius:12px;cursor:pointer;white-space:nowrap;border:1px solid var(--borde,#ccc)';
+      badge.onclick=()=>{ if(!hayCfg()) alert('Para sincronizar tus marcas entre dispositivos hace falta la copia de GitHub de la app de tests: en el test, Perfil → «Copia automática en GitHub» (repositorio privado y token). Hazlo una vez en cada dispositivo y las marcas se sincronizarán solas.'); else sincronizar(); };
+      ref.parentNode.insertBefore(badge,ref);
+    }
+    badge.textContent=txt; badge.title=titulo||''; badge.style.color=cls==='mal'?'#c0392b':cls==='ok'?'var(--verde-med,#2e7d5b)':'inherit';
+  }
+
+  /* ---------- API de GitHub ---------- */
+  async function api(opt){
+    const c=cfg(); opt=opt||{};
+    opt.headers=Object.assign({Authorization:'Bearer '+c.token,Accept:'application/vnd.github+json'},opt.headers||{});
+    return fetch('https://api.github.com/repos/'+c.repo+'/contents/'+PATH,opt);
+  }
+  async function leer(){
+    const r=await api({cache:'no-store'});
+    if(r.status===404) return {sha:null,datos:{}};
+    if(!r.ok) throw new Error('GitHub respondió '+r.status);
+    const j=await r.json(); let datos={}; try{ datos=JSON.parse(unb64(j.content))||{}; }catch(e){}
+    return {sha:j.sha,datos};
+  }
+
+  /* ---------- mezcla ---------- */
+  async function sincronizar(){
+    if(!hayCfg()){ estado('☁ sin sincronizar','mal','Pulsa para ver cómo activarlo'); return; }
+    if(ocupado){ pendiente=true; return; }
+    ocupado=true; estado('☁ sincronizando…','','');
+    try{
+      for(let intento=0;intento<2;intento++){
+        const rem=await leer(), ts=rd(TS), loc=actual();
+        let aplicado=false, subir=false; const out=Object.assign({},rem.datos);
+        Object.keys(rem.datos).forEach(id=>{                       // lo más nuevo del remoto -> local
+          const r=rem.datos[id]; if((r.ts||0)>(ts[id]||0)){
+            const a=rd(K1), b=rd(K2);
+            if(r.m) a[id]=r.m; else delete a[id]; if(r.c) b[id]=r.c; else delete b[id];
+            ignorar=true; wr(K1,a); wr(K2,b); ignorar=false; ts[id]=r.ts; aplicado=true; snap[id]=JSON.stringify({m:r.m||null,c:r.c||null});
+          }
+        });
+        Object.keys(ts).forEach(id=>{                              // lo más nuevo del local -> remoto
+          const r=rem.datos[id]; if(!r||ts[id]>(r.ts||0)){ const l=loc[id]||{m:null,c:null}; out[id]={ts:ts[id],m:l.m,c:l.c}; subir=true; }
+        });
+        wr(TS,ts);
+        if(subir){
+          const body={message:'Marcas de esquemas '+new Date().toISOString(),content:b64(JSON.stringify(out))}; if(rem.sha) body.sha=rem.sha;
+          const r=await api({method:'PUT',body:JSON.stringify(body)});
+          if(r.status===409||r.status===422){ if(intento===0) continue; }
+          if(!r.ok) throw new Error('GitHub respondió '+r.status+(r.status===401?' (token no válido)':r.status===404?' (repositorio o token incorrectos)':''));
+        }
+        if(aplicado && !sessionStorage.getItem('esq-sync-recarga')){ sessionStorage.setItem('esq-sync-recarga','1'); location.reload(); return; }
+        break;
+      }
+      sessionStorage.removeItem('esq-sync-recarga');
+      estado('☁ ✓','ok','Marcas sincronizadas · '+new Date().toLocaleTimeString());
+    }catch(e){ estado('☁ ⚠','mal','No se pudo sincronizar: '+e.message+' (pulsa para reintentar)'); }
+    ocupado=false;
+    if(pendiente){ pendiente=false; programar(1500); }
+  }
+  const programar=ms=>{ clearTimeout(timer); timer=setTimeout(sincronizar,ms); };
+
+  /* ---------- detectar cambios locales ---------- */
+  Storage.prototype.setItem=function(k,v){
+    origSet.call(this,k,v);
+    if(this===localStorage&&(k===K1||k===K2)&&!ignorar){
+      const o=actual(), ts=rd(TS); let cambio=false;
+      Object.keys(o).forEach(id=>{ const s=JSON.stringify(o[id]); if(snap[id]!==s){ snap[id]=s; ts[id]=Date.now(); cambio=true; } });
+      if(cambio){ wr(TS,ts); programar(4000); }
+    }
+  };
+
+  window.esqSync=sincronizar;
+  document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible') programar(500); });
+  addEventListener('online',()=>programar(500));
+  let n=0; (function init(){ if(!document.getElementById('btn-marcas')&&n++<40) return setTimeout(init,100); estado(hayCfg()?'☁ …':'☁ sin sincronizar',hayCfg()?'':'mal',''); if(hayCfg()) programar(800); })();
+})();
+</script>
 </body>
 </html>
