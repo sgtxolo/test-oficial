@@ -1,0 +1,811 @@
+REGLAMENTO (CE) No 767/2008 DEL PARLAMENTO EUROPEO Y DEL CONSEJO
+de 9 de julio de 2008
+sobre el Sistema de Información de Visados (VIS) y el intercambio de datos sobre visados de corta duración entre los Estados miembros (Reglamento VIS)
+
+EL PARLAMENTO EUROPEO Y EL CONSEJO DE LA UNIÓN EUROPEA,
+Visto el Tratado constitutivo de la Comunidad Europea y, en particular, su artículo 62, apartado 2, letra b), inciso ii), y su artículo 66,
+
+A largo plazo, y tras una evaluación de impacto que contenga un análisis material de las alternativas desde el punto de vista financiero, operativo y organizativo, y de las propuestas legislativas de la Comisión, debe crearse una autoridad de gestión permanente con responsabilidades para estos cometidos. El período transitorio debe ser como máximo de cinco años a partir de la fecha de entrada en vigor del presente Reglamento.
+
+Vista la propuesta de la Comisión,
+De conformidad con el procedimiento establecido en el artículo 251 del Tratado (1),
+(1) Basándose en las conclusiones del Consejo de 20 de septiembre de 2001 y las conclusiones de los Consejos Europeos de Laeken de diciembre de 2001, Sevilla de junio de 2002, Salónica de junio de 2003 y Bruselas de marzo de 2004, el establecimiento del Sistema de Información de Visados (VIS) constituye una de las iniciativas clave de las políticas de la Unión Europea dirigidas a crear un espacio de libertad, seguridad y justicia.
+(2) La Decisión 2004/512/CE del Consejo, de 8 de junio de 2004, por la que se establece el Sistema de Información de Visados (VIS) (2) ha establecido un sistema de intercambio de datos sobre visados entre los Estados miembros.
+(3) Actualmente, es necesario definir el objetivo, las funcionalidades y responsabilidades del VIS y establecer las condiciones y los procedimientos de intercambio de datos sobre visados entre los Estados miembros, a fin de facilitar el examen de las solicitudes de visado y las decisiones correspondientes, habida cuenta de las recomendaciones sobre el desarrollo del VIS que el Consejo adoptó el 19 de febrero de 2004, así como otorgar a la Comisión un mandato para crear el VIS.
+
+(5) El VIS debe tener por objetivo mejorar la aplicación de la política común de visados, la cooperación consular y las consultas entre las autoridades centrales competentes en materia de visados al facilitar el intercambio de datos entre los Estados miembros sobre las solicitudes y las decisiones correspondientes, a fin de facilitar el procedimiento de solicitud de visado, impedir la búsqueda de un visado de conveniencia, facilitar la lucha contra el fraude y facilitar los controles en los puntos de paso de las fronteras exteriores y en el territorio de los Estados miembros. El VIS debe asimismo prestar asistencia en la identificación de cualquier persona que no cumpla o haya dejado de cumplir las condiciones de entrada, estancia o residencia en el territorio de los Estados miembros y facilitar la aplicación del Reglamento (CE) no 343/2003 del Consejo, de 18 de febrero de 2003, por el que se establecen los criterios y mecanismos de determinación del Estado miembro responsable del examen de una solicitud de asilo presentada en uno de los Estados miembros por un nacional de un tercer país (3), así como contribuir a la prevención de amenazas contra la seguridad interior de cualquier Estado miembro.
+(6) El presente Reglamento se basa en el acervo de la política común de visados. Los datos que deben tratarse en el VIS deben determinarse en función de los datos suministrados mediante el formulario normalizado de solicitud de visado establecido por la Decisión 2002/354/CE del Consejo, de 25 de abril de 2002, relativa a la adaptación de la parte III y a la creación de un anexo 16 de la Instrucción Consular Común (4), y de la información sobre la etiqueta adhesiva de visado prevista en el Reglamento (CE) no 1683/95 del Consejo, de 29 de mayo de 1995, por el que se establece un modelo uniforme de visado (5).
+
+(4) Durante un período transitorio, la Comisión debe encargarse de la gestión operativa del VIS central, de las interfaces nacionales y de determinados aspectos de la infraestructura de comunicación entre el VIS central y las interfaces nacionales.
+(1) Dictamen del Parlamento Europeo de 7 de junio de 2007 (DO C 125 E de 22.5.2008, p. 118) y Decisión del Consejo de 23 de junio de 2008.
+(2) DO L 213 de 15.6.2004, p. 5.
+
+(7) El VIS debe conectarse a los sistemas nacionales de los Estados miembros para que las autoridades competentes de los Estados miembros puedan tratar los datos sobre solicitudes de visado y sobre los visados expedidos, denegados, anulados, retirados o prorrogados.
+(3) DO L 50 de 25.2.2003, p. 1. (4) DO L 123 de 9.5.2002, p. 50. (5) DO L 164 de 14.7.1995, p. 1. Reglamento modificado en último
+lugar por el Reglamento (CE) no 1791/2006 (DO L 363 de 20.12.2006, p. 1).
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/61
+
+(8) Las condiciones y los procedimientos de acceso, modificación, supresión y consulta de datos del VIS deben tener en cuenta los procedimientos establecidos en la Instrucción Consular Común dirigida a las misiones diplomáticas y oficinas consulares de carrera (1) («la Instrucción Consular Común»).
+(9) Las funcionalidades técnicas de la red de consulta de las autoridades centrales competentes en materia de visados tal como se establece en el artículo 17, apartado 2, del Convenio de aplicación del Acuerdo de Schengen de 14 de junio de 1985 entre los Gobiernos de los Estados de la Unión Económica Benelux, de la República Federal de Alemania y de la República Francesa, relativo a la supresión gradual de los controles en las fronteras comunes (2) («el Convenio de Schengen») deben integrarse en el VIS.
+(10) Para garantizar una verificación e identificación fiables de los solicitantes de visado, es necesario tratar datos biométricos en el VIS.
+(11) Es necesario determinar el personal debidamente autorizado de las autoridades de los Estados miembros que tendrá acceso al sistema para introducir, modificar, suprimir o consultar datos para los fines específicos del VIS, de conformidad con el presente Reglamento, en la medida necesaria para el desempeño de sus funciones.
+(12) Todo tratamiento de los datos del VIS debe ser proporcionado con respecto a los objetivos que se trata de lograr y necesario para que las autoridades competentes desempeñen sus cometidos. A la hora de utilizar el VIS, las autoridades competentes deben velar por que se respeten la dignidad humana y la integridad de las personas cuyos datos se solicitan y deben abstenerse de discriminar a las personas por motivos de sexo, origen racial o étnico, religión o convicciones, discapacidad, edad u orientación sexual.
+(13) El presente Reglamento debe completarse mediante un instrumento jurídico aparte, adoptado con arreglo a lo dispuesto en el título VI del Tratado de la Unión Europea, relativo al acceso para consultar los datos del VIS por parte de las autoridades encargadas de la seguridad interior.
+
+momento, hayan podido solicitar un visado. Un período de tiempo inferior al mencionado no bastaría para estos fines. Los datos deben suprimirse transcurrido un período de cinco años, si no median razones para suprimirlos antes.
+(15) Deben establecerse normas detalladas relativas a las responsabilidades en relación con el establecimiento y funcionamiento del VIS y las responsabilidades de los Estados miembros en relación con los sistemas nacionales y el acceso a los datos por parte de las autoridades nacionales.
+(16) Deben establecerse normas sobre la responsabilidad de los Estados miembros por los daños causados en caso de infracción del presente Reglamento. La responsabilidad de la Comisión por dichos daños se rige por lo dispuesto en el párrafo segundo del artículo 288 del Tratado.
+(17) La Directiva 95/46/CE del Parlamento Europeo y del Consejo, de 24 de octubre de 1995, relativa a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos (3), se aplica al tratamiento de datos personales por los Estados miembros en aplicación del presente Reglamento. No obstante, es preciso aclarar determinados puntos relativos a la responsabilidad derivada del tratamiento de los datos, a la protección de los derechos de los interesados y al control de la protección de los datos.
+(18) El Reglamento (CE) no 45/2001 del Parlamento Europeo y del Consejo, de 18 de diciembre de 2000, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales por las instituciones y los organismos comunitarios y a la libre circulación de estos datos (4) se aplica a las actividades de las instituciones y organismos comunitarios cuando llevan a cabo sus cometidos como responsables de la gestión operativa del VIS. No obstante, es preciso aclarar determinados puntos relacionados con la responsabilidad derivada del tratamiento de los datos y con el control de la protección de los datos.
+
+(14) Los datos personales almacenados en el VIS no deben conservarse más tiempo del necesario para los fines del VIS. Es conveniente mantener los datos durante un período máximo de cinco años, para poder tener en cuenta, al evaluar las solicitudes de visado, los datos sobre solicitudes anteriores, incluida la buena fe de los solicitantes, y la documentación de los inmigrantes ilegales que, en algún
+(1) DO C 326 de 22.12.2005, p. 1. Instrucción modificada en último lugar por la Decisión 2006/684/CE del Consejo (DO L 280 de 12.10.2006, p. 29).
+(2) DO L 239 de 22.9.2000, p. 19. Convenio modificado en último lugar por el Reglamento (CE) no 1987/2006 del Parlamento Europeo y del Consejo (DO L 381 de 28.12.2006, p. 4).
+
+(19) Las autoridades nacionales de control creadas de conformidad con el artículo 28 de la Directiva 95/46/CE deben controlar la legalidad del tratamiento de los datos personales por los Estados miembros, mientras que el Supervisor Europeo de Protección de Datos establecido por el Reglamento (CE) no 45/2001, debe controlar las actividades de las instituciones y organismos comunitarios relativas al tratamiento de datos personales, teniendo en cuenta la limitación de los cometidos de las instituciones y organismos en relación con los propios datos.
+(3) DO L 281 de 23.11.1995, p. 31. Directiva modificada por el Reglamento (CE) no 1882/2003 (DO L 284 de 31.10.2003, p. 1).
+(4) DO L 8 de 12.1.2001, p. 1.
+
+L 218/62
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+(20) El Supervisor Europeo de Protección de Datos y las autoridades nacionales de supervisión deben cooperar estrechamente entre sí.
+(21) El control eficaz de la aplicación del presente Reglamento requiere la realización de evaluaciones periódicas.
+
+Schengen en el sentido del Acuerdo celebrado por el Consejo de la Unión Europea con la República de Islandia y el Reino de Noruega sobre la asociación de estos dos Estados a la ejecución, aplicación y desarrollo del acervo de Schengen (2), que entra dentro del ámbito a que se refiere el artículo 1, letra B, de la Decisión 1999/437/CE del Consejo (3), relativa a determinadas normas de desarrollo de dicho Acuerdo.
+
+(22) Los Estados miembros deben establecer las normas sobre las sanciones aplicables a las infracciones de las disposiciones del presente Reglamento y adoptar todas las medidas necesarias para asegurar la aplicación de dichas normas.
+(23) Procede aprobar las medidas necesarias para la aplicación del presente Reglamento con arreglo a la Decisión 1999/ 468/CE del Consejo, de 28 de junio de 1999, por la que se establecen los procedimientos para el ejercicio de las competencias de ejecución atribuidas a la Comisión (1).
+
+(28) Debe celebrarse un acuerdo para permitir que los
+representantes de Islandia y Noruega se asocien a los trabajos de los comités que asisten a la Comisión en el ejercicio de sus competencias de ejecución. Tal acuerdo está previsto en el Acuerdo en forma de Canje de Notas entre el Consejo de la Unión Europea y la República de Islandia y el Reino de Noruega sobre los comités que asisten a la Comisión Europea en el ejercicio de sus competencias de ejecución (4), anejo al Acuerdo al que se hace referencia en el considerando 27.
+
+(24) El presente Reglamento respeta los derechos fundamentales y observa los principios reconocidos, en particular, por la Carta de Derechos Fundamentales de la Unión Europea.
+(25) Dado que los objetivos del presente Reglamento, a saber, el establecimiento del VIS y la creación de obligaciones, condiciones y procedimientos comunes para el intercambio de datos sobre visados entre los Estados miembros no pueden ser alcanzados de manera suficiente por los Estados miembros y, por consiguiente, debido al alcance e impacto de la acción, pueden lograrse mejor a nivel comunitario, la Comunidad puede adoptar medidas de acuerdo con el principio de subsidiariedad consagrado en el artículo 5 del Tratado. De conformidad con el principio de proporcionalidad, enunciado en dicho artículo, el presente Reglamento no excede de lo necesario para alcanzar dichos objetivos.
+(26) De conformidad con los artículos 1 y 2 del Protocolo sobre la posición de Dinamarca, anejo al Tratado de la Unión Europea y al Tratado constitutivo de la Comunidad Europea, Dinamarca no participa en la adopción del presente Reglamento y, por tanto, no está vinculada por él ni sujeta a su aplicación. Dado que el presente Reglamento desarrolla el acervo de Schengen en virtud del título IV de la tercera parte del Tratado constitutivo de la Comunidad Europea, Dinamarca, de conformidad con el artículo 5 de dicho Protocolo, y dentro de un período de seis meses desde la adopción del presente Reglamento, debe decidir si lo incorpora a su legislación nacional.
+(27) En lo que respecta a Islandia y Noruega, el presente Reglamento desarrolla las disposiciones del acervo
+(1) DO L 184 de 17.7.1999, p. 23. Decisión modificada por la Decisión 2006/512/CE (DO L 200 de 22.7.2006, p. 11).
+
+(29) El presente Reglamento desarrolla las disposiciones del acervo de Schengen sin la participación del Reino Unido, de conformidad con la Decisión 2000/365/CE del Consejo, de 29 de mayo de 2000, sobre la solicitud del Reino Unido de Gran Bretaña e Irlanda del Norte de participar en algunas de las disposiciones del acervo de Schengen (5), y la posterior Decisión del Consejo, de 22 de diciembre de 2004, sobre la ejecución de partes del acervo de Schengen por el Reino Unido de Gran Bretaña e Irlanda del Norte (6). Por consiguiente, el Reino Unido no participa en la adopción del presente Reglamento y, por tanto, no está vinculado por él ni sujeto a su aplicación.
+(30) El presente Reglamento desarrolla disposiciones del acervo de Schengen en que Irlanda no participa, de conformidad con la Decisión 2002/192/CE del Consejo, de 28 de febrero de 2002, sobre la solicitud de Irlanda de participar en algunas de las disposiciones del acervo de Schengen (7). Por consiguiente, Irlanda no participa en la adopción del presente Reglamento y, por tanto, no está vinculada por él ni sujeta a su aplicación.
+(31) En lo que respecta a Suiza, el presente Reglamento desarrolla disposiciones del acervo de Schengen, en el sentido del Acuerdo firmado por la Unión Europea, la Comunidad Europea y la Confederación Suiza sobre la asociación de la Confederación Suiza a la ejecución, aplicación y desarrollo del acervo de Schengen, que entran
+(2) DO L 176 de 10.7.1999, p. 36. (3) DO L 176 de 10.7.1999, p. 31. (4) DO L 176 de 10.7.1999, p. 53. (5) DO L 131 de 1.6.2000, p. 43. (6) DO L 395 de 31.12.2004, p. 70. (7) DO L 64 de 7.3.2002, p. 20.
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/63
+
+en el ámbito previsto en el artículo 1, letra B, de la Decisión
+1999/437/CE en relación con el artículo 4, apartado 1, de la Decisión 2004/860/CE del Consejo (1).
+
+d) facilitar los controles en los puntos de paso de las fronteras exteriores y en el territorio de los Estados miembros;
+
+(32) Debe celebrarse un acuerdo para permitir que los representantes de Suiza se asocien a los trabajos de los comités que asisten a la Comisión en el ejercicio de sus competencias de ejecución. Tal acuerdo está previsto en el Canje de Notas entre la Comunidad y Suiza, anejo al Acuerdo al que se hace referencia en el considerando 31.
+(33) El presente Reglamento constituye un acto que desarrolla el acervo de Schengen o está relacionado con él en el sentido del artículo 3, apartado 2, del Acta de adhesión de 2003, y el artículo 4, apartado 2, del Acta de adhesión de 2005.
+HAN ADOPTADO EL PRESENTE REGLAMENTO:
+CAPÍTULO I
+DISPOSICIONES GENERALES
+Artículo 1
+Objeto y ámbito de aplicación
+El presente Reglamento define el objetivo, las funcionalidades y las responsabilidades relacionadas con el Sistema de Información de Visados (VIS) establecido en el artículo 1 de la Decisión 2004/ 512/CE. Establece las condiciones y los procedimientos de intercambio de datos entre los Estados miembros sobre las solicitudes de visados para estancia de corta duración y sobre las decisiones correspondientes, incluidas las decisiones de anulación, retirada o ampliación de visados, a fin de facilitar el examen de dichas solicitudes y las decisiones relativas a las mismas.
+Artículo 2
+Objetivo
+El VIS tendrá por objetivo mejorar la aplicación de la política común de visados, la cooperación consular y las consultas entre las autoridades centrales de visados, facilitando el intercambio de datos entre los Estados miembros sobre las solicitudes y sobre las decisiones relativas a las mismas, a fin de:
+a) facilitar el procedimiento de solicitud de visado;
+b) impedir que se incumplan los criterios para determinar el Estado miembro responsable del examen de la solicitud;
+c) facilitar la lucha contra el fraude;
+(1) Decisión 2004/860/CE, de 25 de octubre de 2004, relativa a la firma, en nombre de la Comunidad Europea, y a la aplicación provisional de determinadas disposiciones del Acuerdo entre la Unión Europea, la Comunidad Europea y de la Confederación Suiza sobre la asociación de este Estado a la ejecución, aplicación y desarrollo del acervo de Schengen (DO L 370 de 17.12.2004, p. 78).
+
+e) prestar asistencia en la identificación de cualquier persona que no cumpla o haya dejado de cumplir las condiciones de entrada, estancia o residencia en el territorio de los Estados miembros;
+f) facilitar la aplicación del Reglamento (CE) no 343/2003;
+g) contribuir a la prevención de amenazas contra la seguridad interior de cualquier Estado miembro.
+Artículo 3
+Disponibilidad de los datos para la prevención, detección e investigación de delitos de terrorismo y otros delitos graves
+1. Las autoridades designadas de los Estados miembros podrán solicitar acceso para consultar los datos almacenados en el VIS a los que se hace referencia en los artículos 9 a 14 en un caso concreto y previa solicitud escrita o electrónica debidamente motivada si existen motivos razonables para considerar que la consulta de los datos del VIS puede contribuir sustancialmente a la prevención, detección o investigación de delitos de terrorismo y de otros delitos graves. Europol podrá acceder al VIS en el marco de su mandato y, siempre que sea necesario, para cumplir sus cometidos.
+2. La consulta mencionada en el apartado 1 se llevará a cabo a través de uno o varios puntos centrales de acceso que serán responsables de garantizar el cumplimiento estricto de las condiciones de acceso y de los procedimientos establecidos en la Decisión 2008/633/JAI del Consejo, de 23 de junio de 2008, sobre el acceso para consultar el Sistema de Información de Visados (VIS) por las autoridades designadas de los Estados miembros y por Europol, con fines de prevención, detección e investigación de delitos de terrorismo y otros delitos graves (2). Los Estados miembros podrán designar varios puntos centrales de acceso para reflejar su estructura organizativa y administrativa en cumplimiento de su marco constitucional y jurídico. En un caso excepcional de urgencia, los puntos centrales de acceso podrán recibir solicitudes por escrito, electrónicas o verbales y verificar a posteriori únicamente si se cumplen todas las condiciones de acceso, incluida la existencia de un caso excepcional de urgencia. La verificación a posteriori se llevará a cabo sin retrasos indebidos tras la tramitación de la solicitud.
+3. Los datos obtenidos del VIS en virtud de la Decisión mencionada en el apartado 2 no se transmitirán ni se pondrán a disposición de un tercer país u organización internacional. No obstante, en un caso excepcional de urgencia, estos datos podrán
+(2) Véase la página 129 del presente Diario Oficial.
+
+L 218/64
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+transmitirse o ponerse a disposición de un tercer país o de una organización internacional solamente con vistas a la prevención y detección de los delitos de terrorismo y otros delitos graves y teniendo en cuenta las condiciones fijadas en dicha Decisión. De conformidad con su legislación nacional, los Estados miembros velarán por que se conserven registros de estas transferencias y que se pongan a disposición de las autoridades nacionales en cargadas de la protección de datos, previa solicitud. La transferencia de los datos por parte del Estado miembro que introdujo la información en el VIS deberá ajustarse a la legislación nacional de dicho Estado miembro.
+4. El presente Reglamento se entiende sin perjuicio de las obligaciones impuestas por legislación nacional aplicable de transmitir información sobre cualquier actividad delictiva a las autoridades indicadas en el artículo 4 en el desempeño de sus obligaciones a efectos de prevenir, investigar y perseguir los delitos.
+Artículo 4
+Definiciones
+A los efectos del presente Reglamento, se entenderá por:
+1) «visado»:
+a) «visado para estancia de corta duración», el definido en el artículo 11, apartado 1, letra a), del Convenio de Schengen;
+b) «visado de tránsito», el definido en el artículo 11, apartado 1, letra b), del Convenio de Schengen;
+c) «visado de tránsito aeroportuario», el definido en el punto 2.1.1 de la parte I de la Instrucción Consular Común;
+d) «visado de validez territorial limitada», el definido en el artículo 11, apartado 2, y en los artículos 14 y 16 del Convenio de Schengen;
+e) «visado nacional por estancia de larga duración con valor concomitante de visado para estancia de corta duración», el definido en el artículo 18 del Convenio de Schengen;
+2) «etiqueta adhesiva de visado», el modelo uniforme de visado definido en el Reglamento (CE) no 1683/95;
+3) «autoridades competentes en materia de visados», las autoridades que en cada Estado miembro son competentes para examinar las solicitudes de visado y adoptar decisiones sobre ellas, o que son competentes de las decisiones de anular, retirar y prorrogar visados, incluidas las autoridades centrales competentes en materia de visados y las autoridades competentes para expedir visados en la frontera de conformidad con el Reglamento (CE) no 415/2003 del
+
+Consejo, de 27 de febrero de 2003, sobre expedición de visados en frontera, incluidos los de marinos en tránsito (1);
+4) «formulario de solicitud», el formulario de solicitud de visado uniforme del anexo 16 de la Instrucción Consular Común;
+5) «solicitante», toda persona sujeta a la obligación de poseer un visado tal como dispone el Reglamento (CE) no 539/ 2001 del Consejo, de 15 de marzo de 2001, por el que se establecen la lista de terceros países cuyos nacionales están sometidos a la obligación de visado para cruzar las fronteras exteriores y la lista de terceros países cuyos nacionales están exentos de esa obligación (2), que ha presentado una solicitud de visado;
+6) «miembros del grupo», los solicitantes obligados por razones jurídicas a entrar juntos en el territorio de un Estado miembro y a salir juntos de él;
+7) «documento de viaje», un pasaporte o cualquier otro documento equivalente que permite a su titular cruzar las fronteras exteriores y en el que puede insertarse el visado;
+8) «Estado miembro responsable», el Estado miembro que ha introducido datos en el VIS;
+9) «verificación», el proceso de comparación de series de datos para establecer la validez de una identidad declarada (control por comparación de dos muestras);
+10) «identificación», el proceso de determinación de la identidad de una persona por comparación entre varias series de datos de una base de datos (control por comparación de varias muestras);
+11) «datos alfanuméricos», los datos representados por letras, dígitos, caracteres especiales, espacios y signos de puntuación.
+Artículo 5
+Categorías de datos
+1. En el VIS solo se registrarán las categorías de datos siguientes:
+a) los datos alfanuméricos sobre el solicitante y sobre los visados solicitados, expedidos, denegados, anulados, retirados o ampliados, a que se refieren el artículo 9, apartados 1 a 4, y los artículos 10 a 14;
+(1) DO L 64 de 7.3.2003, p. 1. (2) DO L 81 de 21.3.2001, p. 1. Reglamento modificado en último
+lugar por el Reglamento (CE) no 1932/2006 (DO L 405 de 30.12.2006, p. 23).
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/65
+
+b) las fotografías a que se refiere el artículo 9, apartado 5;
+c) las impresiones dactilares a que se refiere el artículo 9, apartado 6;
+d) los vínculos con otras solicitudes a que se refiere el artículo 8, apartados 3 y 4.
+2. Los mensajes transmitidos por la infraestructura del VIS a que se refieren el artículo 16, el artículo 24, apartado 2, y el artículo 25, apartado 2, no se registrarán en el VIS, sin perjuicio del registro de las operaciones de tratamiento de datos conforme al artículo 34.
+Artículo 6
+Acceso al VIS para introducir, modificar, suprimir y consultar datos
+1. El acceso al VIS para introducir, modificar o suprimir los datos a que se refiere el artículo 5, apartado 1, de conformidad con el presente Reglamento, estará reservado exclusivamente al personal debidamente autorizado de las autoridades competentes en materia de visados.
+2. El acceso al VIS para consultar los datos estará reservado exclusivamente al personal debidamente autorizado de las autoridades de cada Estado miembro que sean competentes a los fines establecidos en los artículos 15 a 22, en la medida en que los datos sean necesarios para realizar sus tareas con arreglo a dichos fines y proporcionados con respecto a los objetivos perseguidos.
+3. Cada Estado miembro designará a las autoridades competentes cuyo personal debidamente autorizado tendrá acceso al VIS para introducir, modificar, suprimir o consultar datos. Cada Estado miembro comunicará sin demora a la Comisión una lista de dichas autoridades, incluidas las mencionadas en el artículo 41, apartado 4, así como las posibles modificaciones de la misma. La lista especificará para qué fin podrá tratar cada autoridad los datos del VIS.
+En un plazo de tres meses a partir del momento en que el VIS haya entrado en funcionamiento de conformidad con el artículo 48, apartado 1, la Comisión publicará una lista consolidada en el Diario Oficial de la Unión Europea. Cuando se produzcan modificaciones en dicha lista, la Comisión publicará una vez al año una lista consolidada actualizada.
+Artículo 7
+Principios generales
+1. Toda autoridad competente autorizada para acceder al VIS de conformidad con el presente Reglamento garantizará que la utilización del VIS es necesaria, apropiada y proporcionada para cumplir los cometidos de las autoridades competentes.
+2. Toda autoridad competente garantizará que al utilizar el VIS no discriminará a los solicitantes o titulares de visado por
+
+motivos de sexo, origen racial o étnico, religión o convicciones, discapacidad, edad u orientación sexual y que respetará plenamente la dignidad humana y la integridad del solicitante o titular de visado.
+CAPÍTULO II
+INTRODUCCIÓN Y UTILIZACIÓN DE LOS DATOS POR LAS AUTORIDADES COMPETENTES EN MATERIA DE VISADOS
+Artículo 8
+Procedimientos de introducción de datos al recibirse la solicitud
+1. Al recibir la solicitud, la autoridad competente en materia de visados creará sin demora el expediente de solicitud, introduciendo en el VIS los datos mencionados en el artículo 9, siempre y cuando sea obligatorio que el solicitante los presente.
+2. Al crear el expediente de solicitud, la autoridad competente en materia de visados comprobará si, de conformidad con el artículo 15, algún Estado miembro ha registrado en el VIS una solicitud anterior del mismo solicitante.
+3. Si se hubiere registrado una solicitud anterior, la autoridad competente en materia de visados vinculará cada nuevo expediente de solicitud con el expediente de solicitud anterior del mismo solicitante.
+4. Si el solicitante viaja en grupo con otros solicitantes o con su cónyuge y sus hijos, la autoridad competente en materia de visados creará un expediente de solicitud para cada solicitante y vinculará los expedientes de solicitud de las personas que viajan juntas.
+5. Cuando no sea obligatorio proporcionar datos concretos por motivos jurídicas o de hecho, en el campo o campos relativos a datos específicos se indicará «no procede». En el caso de impresiones dactilares, el sistema deberá permitir, a efectos del artículo 17, que se distinga entre los casos en que dichas impresiones dactilares no se exigen por motivos jurídicos y aquellos en que estas no pueden facilitarse de hecho. Transcurridos cuatro años esta función expirará si no se confirma mediante una decisión de la Comisión basada en la evaluación a la que se hace referencia en el artículo 50, apartado 4.
+Artículo 9
+Datos que se introducirán al presentarse la solicitud
+La autoridad competente en materia de visados introducirá en el expediente de solicitud los datos siguientes:
+1) número de expediente;
+2) información sobre la situación del expediente, con la indicación de que se ha solicitado el visado;
+
+L 218/66
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+3) autoridad ante la que se ha presentado la solicitud, incluida su ubicación, indicando si la solicitud se ha presentado ante dicha autoridad en representación de otro Estado miembro;
+
+6) impresiones dactilares del solicitante, de conformidad con las disposiciones pertinentes de la Instrucción Consular Común.
+
+4) los datos siguientes extraídos del formulario de solicitud:
+a) apellidos, apellidos de nacimiento [apellido(s) anterior(es)]; nombre(s); sexo; fecha, lugar y país de nacimiento;
+b) nacionalidad actual y nacionalidad de nacimiento;
+c) tipo y número de documento de viaje, autoridad que lo expidió y fechas de expedición y de expiración;
+d) lugar y fecha de la solicitud;
+e) tipo de visado solicitado;
+f) información detallada sobre la persona que ha cursado una invitación o que puede sufragar los gastos de mantenimiento del solicitante durante la estancia:
+
+Artículo 10
+Datos que se añadirán tras la expedición del visado
+1. Una vez adoptada una decisión de expedición de visado, la autoridad competente en materia de visados añadirá en el expediente de solicitud los datos siguientes:
+a) información sobre la situación del expediente, con la indicación de que se ha expedido el visado;
+b) autoridad que expidió el visado, incluida su ubicación, indicando si dicha autoridad lo expidió en nombre de otro Estado miembro;
+c) lugar y fecha de la decisión de expedir el visado;
+d) tipo de visado;
+
+i) si es una persona física, apellidos, nombre y dirección,
+ii) si es una empresa u otra organización, nombre y dirección de la empresa u otra organización, y apellidos y nombre de la persona de contacto en la empresa u organización;
+g) destino principal y duración de la estancia prevista;
+h) motivo del viaje;
+i) fechas de llegada y de salida previstas;
+j) primera frontera de entrada o itinerario de tránsito previstos;
+k) residencia;
+l) ocupación actual y nombre del empleador; para los estudiantes: nombre del centro de enseñanza;
+m) en el caso de menores, apellidos y nombre(s) del padre y de la madre del solicitante;
+5) una fotografía del solicitante, de conformidad con el Reglamento (CE) no 1683/95;
+
+e) número de la etiqueta adhesiva de visado;
+f) territorio en el que puede viajar el titular del visado, de conformidad con las disposiciones pertinentes de la Instrucción Consular Común;
+g) fechas de inicio y expiración del período de validez del visado;
+h) número de entradas que autoriza el visado en el territorio donde es válido;
+i) duración de la estancia autorizada por el visado;
+j) si procede, la indicación de que el visado se ha expedido en una hoja aparte, de conformidad con el Reglamento (CE) no 333/2002 del Consejo, de 18 de febrero de 2002, sobre un modelo uniforme de impreso para la colocación del visado expedido por los Estados miembros a titulares de un documento de viaje no reconocido por el Estado miembro que expide el impreso (1).
+2. Si un solicitante retira o no prosigue su solicitud antes de que se haya adoptado una decisión sobre si se expide el visado, la autoridad competente en materia de visados ante la que se haya presentado la solicitud indicará que dicho expediente de solicitud se ha cerrado por esos motivos y la fecha en que se cerró.
+(1) DO L 53 de 23.2.2002, p. 4.
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/67
+
+Artículo 11
+Datos que se añadirán en caso de interrupción del examen de la solicitud
+En circunstancias en que la autoridad competente en materia de visados que represente a otro Estado miembro se vea obligada a interrumpir el examen de la solicitud, añadirá al expediente de solicitud los datos siguientes:
+1) información sobre la situación del expediente, con la indicación de que el examen de la solicitud se ha interrumpido;
+2) autoridad que interrumpió el examen de la solicitud, incluida su ubicación;
+3) lugar y fecha de la decisión de interrumpir el examen de la solicitud;
+4) Estado miembro competente para examinar la solicitud.
+Artículo 12
+Datos que se añadirán tras la denegación del visado
+1. Una vez adoptada la decisión de denegación del visado, la autoridad competente en materia de visados que denegó el visado añadirá en el expediente de solicitud los datos siguientes:
+a) información sobre la situación del expediente, con la indicación de que se ha denegado el visado;
+b) autoridad que denegó el visado, incluida su ubicación;
+c) lugar y fecha de la decisión de denegar el visado.
+
+e) carece de medios de subsistencia suficientes en relación con el período y modalidades de su estancia, así como para regresar al país de origen o de tránsito;
+f) se trata de una persona que esté incluida en la lista de no admisibles en el Sistema de Información de Schengen (SIS) o en el registro nacional;
+g) se considera que constituye una amenaza para el orden público, la seguridad interior o las relaciones internacionales de cualquiera de los Estados miembros, o para la salud pública en el sentido del artículo 2, punto 19, del Reglamento (CE) no 562/2006 del Parlamento Europeo y del Consejo, de 15 de marzo de 2006, por el que se establece un Código comunitario de normas para el cruce de personas por las fronteras (Código de fronteras Schengen) (1).
+Artículo 13
+Datos que se añadirán tras la anulación, retirada o reducción del período de validez del visado
+1. Una vez adoptada la decisión de anulación, retirada o reducción del período de validez del visado, la autoridad competente en materia de visados que haya adoptado dicha decisión añadirá en el expediente de solicitud los datos siguientes:
+a) información sobre la situación del expediente, con la indicación de que el visado ha sido anulado, retirado o se ha reducido su período de validez;
+b) autoridad que anuló, retiró o redujo el período de validez del visado, incluida su ubicación;
+c) lugar y fecha de la decisión;
+
+2. El expediente de solicitud también indicará el motivo o los motivos de denegación del visado, que podrá ser uno o varios de los siguientes. El solicitante:
+a) carece de documento de viaje válido;
+b) está en posesión de un documento de viaje falso, falsificado o alterado;
+c) no justifica el propósito y las condiciones de su estancia y, en particular, se considera que constituye un riesgo específico de inmigración ilegal, de conformidad con la parte V de la Instrucción Consular Común;
+d) ya ha residido durante tres meses, en el curso de un período de seis meses, en el territorio de los Estados miembros;
+
+d) nueva fecha de expiración del período de validez del visado, si procede;
+e) número de la etiqueta adhesiva de visado, si la reducción del período de validez requiere una nueva etiqueta adhesiva de visado.
+2. En el expediente de solicitud se indicarán también el motivo o los motivos de anulación, retirada o reducción del período de validez del visado, que serán:
+a) en caso de anulación o retirada, uno o varios de los motivos enumerados en el artículo 12, apartado 2;
+(1) DO L 105 de 13.4.2006, p. 1. Reglamento modificado por el Reglamento (CE) no 296/2008 (DO L 97 de 9.4.2008, p. 60).
+
+L 218/68
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+b) en caso de decisión de reducir el período de validez del visado, uno o varios de los motivos siguientes:
+i) a efectos de la expulsión del titular del visado,
+ii) falta de medios de subsistencia adecuados para el período de duración de la estancia prevista.
+Artículo 14
+Datos que se añadirán tras la prórroga del visado
+1. Una vez adoptada la decisión de prorrogar el visado, la autoridad competente en materia de visados que haya expedido el visado añadirá en el expediente de solicitud los datos siguientes:
+a) información sobre la situación del expediente, con la indicación de que se ha prorrogado el visado;
+b) autoridad que prorrogó el visado, incluida su ubicación;
+c) lugar y fecha de la decisión;
+d) número de la etiqueta adhesiva de visado, si la prórroga del visado toma la forma de un nuevo visado;
+e) fechas de inicio y expiración del período ampliado;
+f) período de prórroga de la duración autorizada de la estancia;
+g) territorio en el que puede viajar el titular del visado, de conformidad con las disposiciones pertinentes de la Instrucción Consular Común;
+h) tipo de visado prorrogado.
+2. En el expediente de solicitud también se indicarán los motivos de prórroga del visado, que podrán ser uno o varios de los siguientes:
+a) fuerza mayor;
+b) motivos humanitarios;
+c) razones profesionales graves;
+d) razones personales graves.
+Artículo 15
+Utilización del VIS para el examen de las solicitudes
+1. La autoridad competente en materia de visados correspondiente consultará el VIS a efectos de examinar las solicitudes y las decisiones relativas a las mismas, incluida la decisión sobre si se anula, retira, prorroga o reduce la validez del visado de conformidad con las disposiciones pertinentes.
+
+2. A los efectos mencionados en el apartado 1, la autoridad competente en materia de visados correspondiente podrá efectuar búsquedas con uno o más datos de los siguientes:
+a) número de expediente;
+b) los datos a que se refiere el artículo 9, apartado 4, letra a);
+c) los datos del documento de viaje a que se refiere el artículo 9, apartado 4, letra c);
+d) apellidos, nombre y dirección de la persona física o nombre y dirección de la empresa u otra organización a que se refiere el artículo 9, apartado 4, letra f);
+e) impresiones dactilares;
+f) números de las etiquetas adhesivas de visado y fecha de expedición de los visados que expedidos previamente.
+3. Si la búsqueda con uno o varios de los datos enumerados en el apartado 2 indica que los datos sobre el solicitante están registrados en el VIS, la autoridad competente en materia de visados correspondiente podrá consultar el expediente o los expedientes de solicitud, así como el expediente o los expedientes vinculados con el mismo o los mismos, de conformidad con el artículo 8, apartados 3 y 4, únicamente a los efectos mencionados en el apartado 1.
+Artículo 16
+Utilización del VIS en las consultas y solicitudes de documentos
+1. En lo que respecta a las consultas sobre solicitudes entre las autoridades competentes en materia de visados, de conformidad con el artículo 17, apartado 2, del Convenio de Schengen, las peticiones de consulta y las respuestas a las mismas se transmitirán con arreglo a lo dispuesto en el apartado 2 del presente artículo.
+2. El Estado miembro responsable del examen de la solicitud transmitirá al VIS la petición de consulta con el número de solicitud, indicando el Estado miembro o los Estados miembros que deberán ser consultados.
+El VIS transmitirá la petición al Estado miembro o a los Estados miembros indicados.
+El Estado miembro o los Estados miembros consultados transmitirán la respuesta al VIS, que transmitirá dicha respuesta al Estado miembro que inició las consultas.
+3. El procedimiento establecido en el apartado 2 también podrá aplicarse a la transmisión de información sobre la expedición de visados de validez territorial limitada y otros mensajes relacionados con la cooperación consular, así como a la
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/69
+
+transmisión a la autoridad competente en materia de visados correspondiente de solicitudes de envío de copias de los documentos de viaje y de otros documentos justificativos de la solicitud, y a la transmisión de copias electrónicas de dichos documentos. Las autoridades competentes en materia de visados responderán a dicha solicitud sin demora.
+4. Los datos personales transmitidos en virtud del presente artículo solo se utilizarán para consultas con las autoridades centrales competentes en materia de visados y la cooperación consular.
+Artículo 17
+Utilización de datos para la presentación de informes y estadísticas
+Las autoridades competentes en materia de visados podrán acceder a la consulta de los siguientes datos, únicamente a efectos de la presentación de informes y estadísticas, sin que les esté permitida la identificación de solicitantes individuales:
+1) información sobre la situación del expediente;
+2) autoridad competente en materia de visados, incluida su ubicación;
+3) nacionalidad actual del solicitante;
+4) primera frontera de entrada;
+5) lugar y fecha de la solicitud o de la decisión relativa al visado;
+6) tipo de visado solicitado o expedido;
+7) tipo de documento de viaje;
+8) motivos indicados de cualquier decisión sobre el visado o la solicitud de visado;
+9) autoridad competente en materia de visados, incluida su ubicación, que denegó la solicitud de visado, así como la fecha de la denegación;
+10) casos en que la misma persona solicitó un visado a varias autoridades competentes en materia de visados, con indicación de dichas autoridades, su ubicación y las fechas de las denegaciones;
+11) motivo del viaje;
+12) casos en que no pudieron facilitarse de hecho los datos mencionados en el artículo 9, apartado 6, de conformidad con el artículo 8, apartado 5, segunda frase;
+13) casos en los que, por razones jurídicas, no sea necesario facilitar los datos mencionados en el artículo 9, apartado 6,
+
+de conformidad con el artículo 8, apartado 5, segunda frase;
+14) casos en que se denegó el visado a una persona que no pudo facilitar de hecho los datos mencionados en el artículo 9, apartado 6, de conformidad con el artículo 8, apartado 5, segunda frase.
+CAPÍTULO III
+ACCESO A LOS DATOS POR OTRAS AUTORIDADES
+Artículo 18
+Acceso a los datos para verificación en puntos de paso de las fronteras exteriores
+1. Únicamente a efectos de comprobar la identidad del titular del visado, la autenticidad del visado o el cumplimiento de las condiciones de entrada en el territorio de los Estados miembros de conformidad con el artículo 5 del Código de fronteras Schengen, las autoridades responsables de los controles en los puntos de paso de las fronteras exteriores de conformidad con el Código de fronteras Schengen podrán, teniendo en cuenta los apartados 2 y 3, acceder a la consulta utilizando el número de la etiqueta adhesiva de visado en combinación con las impresiones dactilares del titular del visado.
+2. Durante un plazo máximo de tres años tras el inicio de las operaciones del VIS, la consulta podrá realizarse utilizando solamente el número de la etiqueta adhesiva de visado. Transcurrido un año tras el inicio de las operaciones, el plazo de tres años podrá reducirse en caso de fronteras aéreas de conformidad con el procedimiento recogido en el artículo 49, apartado 3.
+3. Para los titulares de visado cuyas impresiones dactilares no puedan utilizarse, la consulta se limitará al número de la etiqueta adhesiva de visado.
+4. Si la búsqueda con los datos enumerados en el apartado 1 indica que los datos sobre el titular del visado están registrados en el VIS, la autoridad de control fronterizo competente podrá consultar los datos siguientes del expediente de solicitud, así como del expediente o los expedientes vinculados con el mismo de conformidad con el artículo 8, apartado 4, únicamente a los efectos mencionados en el apartado 1:
+a) información sobre la situación del expediente y los datos extraídos del formulario de solicitud, mencionados en el artículo 9, apartados 2 y 4;
+b) fotografías;
+c) los datos introducidos en relación con visados expedidos, anulados, retirados o cuya validez se haya prorrogado o reducido, mencionados en los artículos 10, 13 y 14.
+
+L 218/70
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+5. En circunstancias en que la verificación del titular del visado o del visado sea infructuosa, o existan dudas en cuanto a la identidad del titular del visado, la autenticidad del visado o el documento de viaje, el personal debidamente autorizado de dichas autoridades competentes tendrá acceso a los datos de conformidad con el artículo 20, apartados 1 y 2.
+Artículo 19
+Acceso a los datos para verificaciones sobre visados en el territorio de los Estados miembros
+1. Únicamente a efectos de comprobar la identidad del titular del visado, la autenticidad del visado o el cumplimiento de las condiciones de entrada, estancia o residencia en el territorio de los Estados miembros, las autoridades responsables de controlar en el territorio de los Estados miembros el cumplimiento de las condiciones de entrada, estancia o residencia en el territorio de los Estados miembros podrán acceder a la consulta con el número de la etiqueta adhesiva de visado en combinación con las impresiones dactilares del titular del visado, o el número de la etiqueta adhesiva de visado.
+Para los titulares de visado cuyas impresiones dactilares no puedan utilizarse, la consulta se limitará al número de la etiqueta adhesiva de visado.
+
+autoridades responsables de los controles en los puntos de paso de las fronteras exteriores de conformidad con el Código de fronteras Schengen o de controlar en el territorio de los Estados miembros el cumplimiento de las condiciones de entrada, estancia o residencia en el territorio de los Estados miembros, tendrán acceso a la búsqueda con las impresiones dactilares de la persona.
+Si no pueden utilizarse las impresiones dactilares de dicha persona o la búsqueda con las impresiones dactilares es infructuosa, la búsqueda se llevará a cabo mediante los datos a que se refiere el artículo 9, apartado 4, letras a) o c). Dicha búsqueda podrá llevarse a cabo en combinación con los datos a que se refiere el artículo 9, apartado 4, letra b).
+2. Si la búsqueda con los datos enumerados en el apartado 1 indica que los datos sobre el solicitante están registrados en el VIS, la autoridad competente podrá consultar los datos siguientes del expediente de solicitud, así como del expediente o los expedientes vinculados con el mismo de conformidad con el artículo 8, apartados 3 y 4, únicamente a los efectos mencionados en el apartado 1:
+a) número de solicitud, información sobre la situación del expediente y autoridad ante la que se presentó la solicitud;
+
+2. Si la búsqueda con los datos enumerados en el apartado 1 indica que los datos sobre el titular del visado están registrados en el VIS, la autoridad de control fronterizo competente podrá consultar los datos siguientes del expediente de solicitud, así como del expediente o los expedientes vinculados con el mismo de conformidad con el artículo 8, apartado 4, únicamente a los efectos mencionados en el apartado 1:
+a) información sobre la situación del expediente y los datos extraídos del formulario de solicitud, mencionados en el artículo 9, apartados 2 y 4;
+b) fotografías;
+c) los datos introducidos en relación con visados expedidos, anulados, retirados o cuya validez se haya prorrogado o reducido, mencionados en los artículos 10, 13 y 14.
+3. En circunstancias en que la verificación del titular del visado o del visado sea infructuosa, o existan dudas en cuanto a la identidad del titular del visado, la autenticidad del visado o el documento de viaje, el personal debidamente autorizado de dichas autoridades competentes tendrá acceso a los datos de conformidad con el artículo 20, apartados 1 y 2.
+Artículo 20
+Acceso a los datos con fines de identificación
+1. Únicamente a efectos de identificar a cualquier persona que no cumpla o haya dejado de cumplir las condiciones la entrada, estancia o residencia en el territorio de los Estados miembros, las
+
+b) los datos extraídos del formulario de solicitud, mencionados en el artículo 9, apartado 4;
+c) fotografías;
+d) los datos incluidos respecto de cualquier visado expedido, denegado, anulado, retirado o cuya validez se haya prorrogado o reducido, o de solicitudes cuyo examen se haya interrumpido, mencionados en los artículos 10 a 14.
+3. Cuando la persona es titular de un visado, las autoridades competentes solo accederán al VIS de acuerdo con los artículos 18 o 19.
+Artículo 21
+Acceso a los datos para determinar la responsabilidad en materia de solicitudes de asilo
+1. Únicamente a efectos de determinar cuál es el Estado miembro responsable de examinar una solicitud de asilo con arreglo a los artículos 9 y 21 del Reglamento (CE) no 343/2003, las autoridades competentes en materia de asilo podrán efectuar búsquedas con las impresiones dactilares del solicitante de asilo.
+Si no pueden utilizarse las impresiones dactilares de esa persona o la búsqueda con las impresiones dactilares es infructuosa, la búsqueda se llevará a cabo mediante los datos a que se refiere el artículo 9, apartado 4, letras a) y c). Dicha búsqueda podrá llevarse a cabo en combinación con los datos a que se refiere el artículo 9, apartado 4, letra b).
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/71
+
+2. Si la búsqueda con los datos enumerados en el apartado 1 indica que se ha registrado en el VIS un visado expedido con una fecha de expiración como máximo seis meses anterior a la fecha de solicitud de asilo, o un visado ampliado hasta una fecha de expiración como máximo seis meses anterior a la fecha de solicitud de asilo, la autoridad competente en materia de asilo podrá acceder a la consulta de los datos siguientes de dicho expediente de solicitud, y por lo que respecta a los datos enumerados en la letra g) relativos al cónyuge y los hijos, con arreglo a lo dispuesto en el artículo 8, apartado 4, únicamente a los efectos mencionados en el apartado 1:
+a) número de solicitud y autoridad que expidió el visado, indicando si dicha autoridad lo expidió en nombre de otro Estado miembro;
+b) los datos extraídos del formulario de solicitud, mencionados en el artículo 9, apartado 4, letras a) y b);
+c) tipo de visado;
+d) período de validez del visado;
+
+datos siguientes del expediente de solicitud, así como del expediente o expedientes vinculados con el mismo del solicitante de conformidad con el artículo 8, apartado 3, y, por lo que respecta a los datos enumerados en la letra e), del cónyuge y los hijos de conformidad con el artículo 8, apartado 4, únicamente a los efectos mencionados en el apartado 1:
+a) número del expediente de solicitud;
+b) los datos extraídos del formulario de solicitud mencionados en el artículo 6, apartado 4, letras a), b) y c);
+c) fotografías;
+d) los datos introducidos en relación con otro visado expedido, anulado, retirado o cuya validez se haya prorrogado o reducido, mencionados en los artículos 10, 13 y 14;
+e) los datos a que se refiere el artículo 6, apartado 4, letras a) y b), del expediente o los expedientes de solicitud vinculados con el mismo relativos al cónyuge y a los hijos.
+
+e) duración de la estancia prevista;
+f) fotografías;
+g) los datos a que se refiere el artículo 9, apartado 4, letras a) y b), de los expedientes de solicitud vinculados con el mismo relativos al cónyuge y a los hijos.
+3. La consulta del VIS de conformidad con los apartados 1 y 2 del presente artículo se llevará a cabo únicamente por las autoridades nacionales designadas a que se refiere el artículo 21, apartado 6, del Reglamento (CE) no 343/2003.
+Artículo 22
+Acceso a los datos en el examen de la solicitud de asilo
+1. Únicamente a efectos de examinar una solicitud de asilo, las autoridades competentes en materia de asilo tendrán acceso con arreglo al artículo 21 del Reglamento (CE) no 343/2003 a la búsqueda con las impresiones dactilares del solicitante de asilo.
+Si no pueden utilizarse las impresiones dactilares de esa persona o la búsqueda con las impresiones dactilares es infructuosa, la búsqueda se llevará a cabo mediante los datos a que se refiere el artículo 9, apartado 4, letras a) y c). Dicha búsqueda podrá llevarse a cabo en combinación con los datos a que se refiere el artículo 6, apartado 4, letra b).
+
+3. La consulta del VIS de conformidad con los apartados 1 y 2 del presente artículo se llevará a cabo únicamente por las autoridades nacionales designadas a que se refiere el artículo 21, apartado 6, del Reglamento (CE) no 343/2003.
+CAPÍTULO IV
+CONSERVACIÓN Y MODIFICACIÓN DE LOS DATOS
+Artículo 23
+Período de conservación de los datos almacenados
+1. Cada expediente de solicitud se almacenará en el VIS durante cinco años como máximo, sin perjuicio de la supresión a que se refieren los artículos 24 y 25 y de los registros a que se refiere el artículo 34.
+Dicho período comenzará:
+a) en la fecha de expiración del visado, cuando se haya expedido un visado;
+b) en la nueva fecha de expiración del visado, cuando se haya prorrogado un visado;
+c) en la fecha de creación del expediente de solicitud en el VIS, en caso de que la solicitud se haya retirado, cerrado o interrumpido;
+
+2. Si la búsqueda con los datos enumerados en el apartado 1 indica que se ha registrado en el VIS la expedición de un visado, la autoridad competente en materia de asilo podrá consultar los
+
+d) en la fecha de la decisión de la autoridad competente en materia de visados en caso de que un visado haya sido denegado, anulado, reducido o retirado.
+
+L 218/72
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+2. Al expirar el período mencionado en el apartado 1, el VIS suprimirá automáticamente el expediente de solicitud y el vínculo o los vínculos con el mismo mencionados en el artículo 8, apartados 3 y 4.
+Artículo 24
+Modificación de datos
+1. Solo el Estado miembro responsable tendrá derecho a modificar los datos que ha transmitido al VIS mediante la corrección o supresión de dichos datos.
+2. Cuando un Estado miembro tenga pruebas que indiquen que los datos tratados en el VIS son inexactos o que su tratamiento en el VIS es contrario al presente Reglamento, informará inmediatamente de ello al Estado miembro responsable. Este mensaje podrá transmitirse a través de la infraestructura del VIS.
+3. El Estado miembro responsable comprobará los datos en cuestión y, si es necesario, procederá inmediatamente a corregirlos o suprimirlos.
+Artículo 25
+Supresión anticipada de datos
+1. Cuando antes de expirar el período previsto en el artículo 23, apartado 1, un solicitante haya adquirido la nacionalidad de un Estado miembro, los expedientes de solicitud y los vínculos mencionados en el artículo 8, apartados 3 y 4, relativos a la persona de que se trate, serán suprimidos inmediatamente del VIS por el Estado miembro que creó el respectivo expediente de solicitud y los vínculos.
+2. Cada Estado miembro informará inmediatamente al Estado o Estados miembros responsables de que el solicitante ha adquirido su nacionalidad. Este mensaje podrá transmitirse a través de la infraestructura del VIS.
+3. Si la denegación de un visado ha sido anulada por un tribunal o un órgano de recurso, el Estado miembro que denegó el visado suprimirá inmediatamente los datos a que se refiere el artículo 12 en cuanto haya pasado a ser definitiva la decisión de anular la denegación del visado.
+
+VIS central y de las interfaces nacionales. La Autoridad de Gestión, en cooperación con los Estados miembros, garantizará que, dependiendo de un análisis coste/beneficio, se utilice en todo momento la mejor tecnología disponible para el VIS central y las interfaces nacionales.
+2. La Autoridad de Gestión será asimismo responsable de las siguientes funciones relacionadas con la infraestructura de comunicación entre el VIS central y las interfaces nacionales:
+a) supervisión;
+b) seguridad;
+c) coordinación de las relaciones entre los Estados miembros y el proveedor.
+3. La Comisión será responsable de todas las demás funciones relacionadas con la infraestructura de comunicación entre el VIS central y las interfaces nacionales, en particular:
+a) funciones relativas a la ejecución del presupuesto;
+b) adquisición y renovación;
+c) cuestiones contractuales.
+4. Durante un período transitorio anterior a la asunción de sus responsabilidades por parte de la Autoridad de Gestión, la Comisión será responsable de la gestión operativa del VIS. La Comisión podrá delegar esta función y las funciones relativas a la ejecución del presupuesto, de conformidad con el Reglamento (CE, Euratom) no 1605/2002 del Consejo, de 25 de junio de 2002, por el que se aprueba el Reglamento financiero aplicable al presupuesto general de las Comunidades Europeas (1), a organismos nacionales del sector público, en dos Estados miembros diferentes.
+5. Cada organismo nacional del sector público a que se refiere el apartado 4 deberá cumplir, en particular, los siguientes criterios de selección:
+a) deberá demostrar que cuenta con amplia experiencia en el manejo de sistemas de información de gran magnitud;
+
+CAPÍTULO V
+FUNCIONAMIENTO Y RESPONSABILIDADES
+Artículo 26
+Gestión operativa
+1. Tras un período transitorio, una autoridad de gestión («la Autoridad de Gestión»), financiada con cargo al presupuesto de la Unión Europea, será responsable de la gestión operativa del
+
+b) deberá poseer una pericia prolongada en cuanto a las necesidades de servicio y seguridad de sistemas de información de gran magnitud;
+c) deberá contar con personal suficiente y experimentado, con pericia profesional y aptitudes lingüísticas adecuadas, para trabajar en un entorno de cooperación internacional como el que exige el VIS;
+(1) DO L 248 de 16.9.2002, p. 1. Reglamento modificado un último lugar por el Reglamento (CE) no 1525/2007 (DO L 343 de 27.12.2007, p. 9).
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/73
+
+d) deberá disponer de una infraestructura de instalaciones segura y hecha a la medida, que sea capaz, en particular, de respaldar y garantizar un funcionamiento ininterrumpido de sistemas informáticos de gran magnitud, y
+e) su entorno administrativo debe permitirle desempeñar adecuadamente sus funciones y evitar todo conflicto de intereses.
+6. Antes de proceder a toda delegación, tal como se menciona en el apartado 4, y posteriormente de forma periódica, la Comisión informará al Parlamento Europeo y al Consejo de las condiciones de la delegación, de su alcance exacto y de los organismos en los que se han delegado funciones.
+7. En caso de que, durante el período transitorio, la Comisión delegase sus responsabilidades con arreglo al apartado 4, se asegurará de que la delegación respete plenamente los límites impuestos por el sistema institucional establecido en el Tratado. Garantizará, en particular, que la delegación no afecte negativamente a ningún mecanismo de control efectivo previsto en el Derecho comunitario, ya corresponda este al Tribunal de Justicia, al Tribunal de Cuentas o al Supervisor Europeo de Protección de Datos.
+8. La gestión operativa del VIS consistirá en todas las funciones necesarias para mantener el sistema en funcionamiento durante las 24 horas del día, 7 días a la semana, de conformidad con el presente Reglamento, y, en particular, en el trabajo de mantenimiento y de desarrollo técnico necesario para garantizar que el sistema funciona a un nivel suficiente de calidad operativa, en particular en lo que se refiere al tiempo necesario para que las oficinas consulares interroguen a la base central de datos, que debería ser el más breve posible.
+9. Sin perjuicio de lo dispuesto en el artículo 17 del Estatuto de los funcionarios de las Comunidades Europeas establecido en el Reglamento (CEE, Euratom, CECA) no 259/68 (1), la Autoridad de Gestión aplicará, a todo miembro de su personal que deba trabajar con datos del VIS, normas adecuadas sobre secreto profesional u otras obligaciones equivalentes de confidencialidad. Esta obligación seguirá siendo aplicable después de que dichos miembros del personal hayan cesado en el cargo o el empleo, o tras la terminación de sus actividades.
+Artículo 27
+Ubicación del Sistema de Información de Visados central
+El VIS central principal, encargado de la supervisión técnica y de la administración, estará situado en Estrasburgo (Francia), y habrá una copia de seguridad del VIS central, capaz de realizar todas las funciones del VIS central en caso de fallo del sistema, en Sankt Johann im Pongau (Austria).
+(1) DO L 56 de 4.3.1968, p. 1. Reglamento modificado en último lugar por el Reglamento (CE, Euratom) no 337/2007 (DO L 90 de 30.3.2007, p. 1).
+
+Artículo 28
+Relación con los sistemas nacionales
+1. El VIS estará conectado a los sistemas nacionales de los Estados miembros a través de la interfaz nacional de cada Estado miembro.
+2. Cada Estado miembro designará a la autoridad nacional que permitirá acceder al VIS a las autoridades competentes a que se refiere el artículo 6, apartados 1 y 2, y conectará a dicha autoridad nacional con la interfaz nacional.
+3. Los Estados miembros aplicarán procedimientos automatizados de tratamiento de datos.
+4. Los Estados miembros serán responsables:
+a) del desarrollo del sistema nacional o de su adaptación al VIS, con arreglo al artículo 2, apartado 2, de la Decisión 2004/512/CE;
+b) de la organización, gestión, funcionamiento y mantenimiento de su sistema nacional;
+c) de la gestión y las disposiciones oportunas para el acceso al VIS del personal debidamente autorizado de las autoridades competentes nacionales, de conformidad con el presente Reglamento, y de establecer y actualizar periódicamente la lista de dicho personal y sus cualificaciones profesionales;
+d) de sufragar los costes de los sistemas nacionales y los costes de su conexión a la interfaz nacional, incluidos los costes de funcionamiento e inversión de la infraestructura de comunicación entre la interfaz nacional y el sistema nacional.
+5. Antes de quedar autorizado a tratar los datos almacenados en el VIS, el personal de las autoridades que tengan derecho de acceso al VIS recibirá la formación adecuada sobre normas de seguridad y protección de datos y será informado de los delitos y sanciones penales pertinentes.
+Artículo 29
+Responsabilidades en materia de utilización de datos
+1. Los Estados miembros velarán por que los datos se traten con las adecuadas garantías jurídicas y, en particular, por que solo el personal debidamente autorizado tenga acceso a los datos tratados en el VIS para el desempeño de sus tareas con arreglo al presente Reglamento. Cada Estado miembro responsable garantizará, en particular:
+a) la legalidad de la recogida de datos;
+
+L 218/74
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+b) la legalidad de la transmisión de datos al VIS;
+c) la exactitud y actualización de los datos que se transmiten al VIS.
+2. La Autoridad de Gestión garantizará que el VIS funcione de conformidad con el presente Reglamento y sus normas de aplicación a que se refiere el artículo 45, apartado 2. En particular, la Autoridad de Gestión:
+a) adoptará las medidas necesarias para garantizar la seguridad del VIS central y la infraestructura de comunicación entre el VIS central y las interfaces nacionales, sin perjuicio de las responsabilidades de cada Estado miembro;
+b) garantizará que solo el personal debidamente autorizado tenga acceso a los datos tratados en el VIS para el desempeño de las tareas de la Autoridad de Gestión previstas en el presente Reglamento.
+3. La Autoridad de Gestión informará al Parlamento Europeo, al Consejo y a la Comisión de las medidas que adopte de conformidad con el apartado 2.
+
+de nacionales de terceros países, también con fines de devolución, exclusivamente cuando se cumplan las condiciones siguientes:
+a) adopción por la Comisión de una decisión sobre la protección adecuada de los datos personales en ese tercer país de conformidad con el artículo 25, apartado 6, de la Directiva 95/46/CE, vigencia de un acuerdo de readmisión entre la Comunidad y dicho tercer país, o aplicación de las disposiciones del artículo 26, apartado 1, letra d), de la Directiva 95/46/CE;
+b) acuerdo del tercer país o la organización internacional con la utilización de los datos solo para el fin para el que se han transmitido;
+c) transmisión o puesta a disposición de los datos de conformidad con las disposiciones en la materia de la legislación comunitaria, en particular acuerdos de readmisión, y del Derecho nacional del Estado miembro que ha transmitido o puesto a disposición los datos, incluidas las disposiciones jurídicas en materia de seguridad y de protección de los datos;
+
+Artículo 30
+Registro de datos del VIS en archivos nacionales
+1. Los datos extraídos del VIS podrán registrarse en archivos nacionales solo cuando sea necesario y en casos concretos, de conformidad con el objetivo del VIS y de acuerdo con las disposiciones legales pertinentes, incluidas las relativas a la protección de datos, y solo durante el período de tiempo que sea necesaria en ese caso concreto.
+2. El apartado 1 se entenderá sin perjuicio del derecho de un Estado miembro a registrar en sus archivos nacionales datos que ese mismo Estado ha introducido en el VIS.
+3. Toda utilización de datos que no se ajuste a lo dispuesto en los apartados 1 y 2 será considerada un abuso en la legislación de cada Estado miembro.
+Artículo 31
+Transmisión de datos a terceros países u organizaciones internacionales
+1. Los datos tratados en el VIS de conformidad con el presente Reglamento no se transmitirán ni se pondrán a disposición de un tercer país u organización internacional.
+2. No obstante lo dispuesto en el apartado 1, los datos mencionados en el artículo 9, apartado 4, letras a), b), c), k) y m), podrán transmitirse o ponerse a disposición de un tercer país o de una organización internacional mencionada en el anexo si se considera necesario, en casos concretos, para probar la identidad
+
+d) consentimiento por parte del Estado o Estados miembros que han registrado los datos en el VIS.
+3. Estas transmisiones de datos personales a terceros países u organizaciones internacionales no afectarán a los derechos de los refugiados y de las personas que solicitan una protección a nivel internacional, en particular en relación con el principio de no expulsión.
+Artículo 32
+Seguridad de los datos
+1. El Estado miembro responsable garantizará la seguridad de los datos antes y durante su transmisión a la interfaz nacional. Cada Estado miembro garantizará la seguridad de los datos que reciba del VIS.
+2. Los Estados miembros adoptarán, en relación con su sistema nacional, las medidas necesarias incluido un plan de seguridad para:
+a) proteger los datos físicamente, entre otras cosas mediante la elaboración de planes de emergencia para la protección de infraestructuras críticas;
+b) impedir el acceso de las personas no autorizadas a las instalaciones nacionales en que el Estado miembro lleva a cabo operaciones relacionadas con el VIS (controles de entrada a la instalación);
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/75
+
+c) impedir que los soportes de datos puedan ser leídos, copiados, modificados o suprimidos por personas no autorizadas (control de soporte de datos);
+d) impedir el tratamiento no autorizado de datos cualquier modificación o supresión no autorizada de los datos personales almacenados (control de almacenamiento);
+e) impedir el tratamiento no autorizado de datos en el VIS y cualquier modificación o supresión no autorizada de los datos tratados en el VIS (control de introducción de datos);
+f) garantizar que las personas autorizadas a acceder al VIS tienen acceso únicamente a los datos cubiertos por su autorización de acceso, mediante identidades de usuario individuales y únicas y modos confidenciales de acceso (control de acceso a los datos);
+g) garantizar que todas las autoridades con derecho de acceso al VIS creen perfiles que describan las funciones y responsabilidades de las personas autorizadas al acceso, el registro, la actualización, la supresión y la búsqueda de datos y pongan a disposición de las autoridades nacionales de supervisión mencionadas en el artículo 41 dichos perfiles sin demora a petición de aquellas (perfiles del personal);
+h) garantizar que es posible comprobar y establecer a qué organismos pueden transmitirse datos personales utilizando el equipo de comunicación de datos (control de comunicación);
+i) garantizar la posibilidad de comprobar y determinar qué datos han sido tratados en el VIS, en qué momento, por quién y con qué fin (control del registro de datos);
+j) impedir la lectura, copia, modificación o supresión no autorizadas de datos personales durante la transmisión de datos personales al VIS o desde el VIS o durante el transporte de soportes de datos en particular mediante técnicas adecuadas de criptografiado (control de transporte);
+k) controlar la eficacia de las medidas de seguridad mencionadas en el presente apartado y adoptar las medidas necesarias de organización relativas al control interno para garantizar el cumplimiento del presente Reglamento (control interno).
+3. La Autoridad de Gestión adoptará las medidas necesarias para alcanzar los objetivos fijados en el apartado 2 en relación con el funcionamiento de VIS, incluida la adopción de un plan de seguridad.
+
+Artículo 33
+Responsabilidad
+1. Cualquier persona o Estado miembro que haya sufrido un daño como consecuencia de una operación de tratamiento ilegal o de un acto incompatible con el presente Reglamento tendrá derecho a recibir una indemnización del Estado miembro responsable del daño sufrido. Dicho Estado miembro quedará exento de su responsabilidad, total o parcialmente, si demuestra que no es responsable del acontecimiento que originó el daño.
+2. Si el incumplimiento por un Estado miembro de las obligaciones que le impone el presente Reglamento causa daños al VIS, dicho Estado miembro será considerado responsable de los daños, a no ser que la Autoridad de Gestión u otro Estado miembro no haya adoptado las medidas adecuadas para impedir que se produjeran dichos daños o para atenuar sus efectos.
+3. Las reclamaciones contra un Estado miembro por los daños mencionados en los apartados 1 y 2 estarán sujetas a las disposiciones del Derecho nacional del Estado miembro demandado.
+Artículo 34
+Registros
+1. Los Estados miembros y la Autoridad de Gestión conservarán registros de todas las operaciones de tratamiento de datos del VIS. Dichos registros indicarán los motivos de acceso a que se refieren el artículo 6, apartado 1, y los artículos 15 a 22, la fecha y la hora, los tipos de datos transmitidos de conformidad con los artículos 9 a 14, los tipos de datos utilizados en los interrogatorios de conformidad con el artículo 15, apartado 2, el artículo 17, el artículo 18, apartados 1 a 3, el artículo 19, apartado 1, el artículo 20, apartado 1, el artículo 21, apartado 1, y el artículo 22, apartado 1, y el nombre de la autoridad que introduce o retira los datos. Además, cada Estado miembro llevará un registro del personal debidamente autorizado para introducir o retirar datos.
+2. Tales registros solo se podrán utilizar para el control de la admisibilidad del tratamiento de datos a efectos de la protección de datos, así como para garantizar la seguridad de los datos. Los registros se protegerán con medidas adecuadas contra el acceso no autorizado, y se suprimirán transcurrido un período de un año desde la expiración del período de conservación a que se refiere el artículo 23, apartado 1, siempre que no sean necesarios para procedimientos de control ya iniciados.
+Artículo 35
+Autocontrol
+Los Estados miembros velarán por que toda autoridad habilitada para acceder a los datos del VIS tome las medidas necesarias para garantizar el cumplimiento del presente Reglamento y coopere, en caso necesario, con la autoridad nacional de control.
+
+L 218/76
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+Artículo 36
+Sanciones
+Los Estados miembros adoptarán las medidas necesarias para garantizar que todo abuso de los datos registrados en el VIS sea objeto de sanciones, incluidas las administrativas y penales de conformidad con el Derecho nacional, que serán efectivas, proporcionadas y disuasorias.
+CAPÍTULO VI
+DERECHOS Y SUPERVISIÓN DE LA PROTECCIÓN DE DATOS
+Artículo 37
+Derecho de información
+1. El Estado miembro responsable informará de lo siguiente a los solicitantes y a las personas a que se refiere el artículo 9, apartado 4, letra f):
+a) identidad de la autoridad responsable del control a que se refiere el artículo 41, apartado 4, incluidos sus datos de contacto;
+b) fines para los cuales se tratarán los datos en el VIS;
+c) categorías de destinatarios de los datos, incluidas las autoridades mencionadas en el artículo 3;
+d) período de conservación de los datos;
+e) obligatoriedad de la recogida de datos para el examen de la solicitud;
+f) existencia del derecho de acceso a los datos relacionados con ellos y del derecho a solicitar que los datos inexactos que les afecten se corrijan, o que datos tratados de forma ilegal que les afecten se supriman, incluido el derecho a la información sobre los procedimientos para el ejercicio de tales derechos y sobre los datos de contacto de las autoridades nacionales de supervisión a que se refiere el artículo 41, apartado 1, que atenderán las reclamaciones relativas a la protección de datos personales.
+
+A falta de tales declaraciones firmadas por dichas personas, la información se suministrará de conformidad con el artículo 11 de la Directiva 95/46/CE.
+Artículo 38
+Derecho de acceso, corrección y supresión
+1. Sin perjuicio de la obligación de suministrar otros datos de conformidad con el artículo 12, letra a), de la Directiva 95/46/ CE, cualquier persona tendrá derecho a que se le comuniquen los datos sobre ella registrados en el VIS, así como los relativos al Estado miembro que los transmitió al VIS. Dicho acceso a los datos únicamente podrá ser facilitado por un Estado miembro. Cada Estado miembro registrará toda solicitud de dicho acceso.
+2. Cualquier persona podrá solicitar la corrección de los datos inexactos y la supresión de los datos obtenidos ilegalmente sobre ella. El Estado miembro responsable procederá sin demora a la corrección y supresión, de conformidad con sus leyes, reglamentos y procedimientos.
+3. Si la solicitud contemplada en el apartado 2 se presenta a un Estado miembro distinto del Estado miembro responsable, las autoridades del Estado miembro al que se presentó la solicitud se pondrán en contacto con las autoridades del Estado miembro responsable dentro de un plazo de 14 días. El Estado miembro responsable controlará la exactitud de los datos y la legalidad de su tratamiento en el VIS en el plazo de un mes.
+4. Si resultase que los datos registrados en el VIS son inexactos o se registraron ilegalmente, el Estado miembro responsable corregirá o suprimirá los datos de conformidad con el artículo 24, apartado 3. El Estado miembro confirmará por escrito a la persona interesada, sin demora, que ha tomado las medidas para corregir o suprimir los datos sobre ella.
+5. Si el Estado miembro responsable no reconoce que los datos registrados en el VIS son inexactos o que se obtuvieron ilegalmente, explicará por escrito a la persona interesada, sin demora, las razones para no corregir o suprimir los datos sobre ella.
+
+2. La información mencionada en el apartado 1 se comunicará al solicitante por escrito una vez recogidos los datos del formulario de solicitud, la fotografía y las impresiones dactilares a que se refiere el artículo 9, apartados 4, 5 y 6.
+3. La información mencionada en el apartado 1 se suministrará a las personas a que se refiere el artículo 9, apartado 4, letra f), en las declaraciones de invitación, toma a cargo y alojamiento que deberán firmar dichas personas.
+
+6. El Estado miembro responsable también informará a la persona interesada de las medidas que podrá tomar en caso de no aceptar la explicación facilitada. Esto incluirá información acerca del modo de interponer una acción judicial o presentar una reclamación ante las autoridades u órganos jurisdiccionales competentes de dicho Estado miembro, así como sobre la ayuda que podrá recibir, entre otras de las autoridades de control mencionadas en el artículo 41, apartado 1, de conformidad con las leyes, reglamentos y procedimientos de dicho Estado miembro.
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/77
+
+Artículo 39
+Cooperación para garantizar los derechos relativos a la protección de datos
+1. Los Estados miembros cooperarán activamente para garantizar el respeto de los derechos establecidos en el artículo 38, apartados 2, 3 y 4.
+2. En cada Estado miembro, la autoridad nacional de control, previa petición, prestará asistencia y asesorará a la persona interesada en el ejercicio de su derecho a corregir o suprimir los datos sobre ella, de conformidad con el artículo 28, apartado 4, de la Directiva 95/46/CE.
+3. La autoridad nacional de control del Estado miembro responsable que transmitió los datos y las autoridades nacionales de control de los Estados miembros ante los que se presentó la solicitud cooperarán para ello.
+Artículo 40
+Vías de recurso
+1. En cada Estado miembro, cualquier persona a la que se le niegue el derecho de acceso o el derecho de corrección o supresión de datos sobre ella establecidos en el artículo 38, apartados 1 y 2, tendrá derecho a interponer una acción judicial o a presentar una reclamación ante las autoridades o los órganos jurisdiccionales competentes del Estado miembro que le niegue dicho derecho.
+2. La asistencia de las autoridades nacionales de control a que se refiere el artículo 39, apartado 2, se mantendrá durante todo el procedimiento.
+Artículo 41
+Control por parte de la autoridad nacional de control
+1. La autoridad o autoridades designadas en cada Estado miembro e investidas de las atribuciones a que se refiere el artículo 28 de la Directiva 95/46/CE (autoridad nacional de control) controlarán independientemente la legalidad del tratamiento, por el Estado miembro de que se trate, de los datos personales mencionados en el artículo 5, apartado 1, así como su transmisión al VIS y desde el VIS.
+2. La autoridad nacional de control velará por que se lleve a cabo una auditoría de las operaciones de tratamiento de datos en el sistema nacional conforme a las normas internacionales de auditoría, al menos cada cuatro años.
+3. Los Estados miembros velarán por que la autoridad nacional de control disponga de medios suficientes para desempeñar las funciones que les encomienda el presente Reglamento.
+4. En lo que respecta al tratamiento de datos personales en el VIS, cada Estado miembro designará la autoridad que habrá de considerarse responsable del control de conformidad con el artículo 2, letra d), de la Directiva 95/46/CE y en la cual recaerá la
+
+responsabilidad central del tratamiento de los datos por dicho Estado miembro. Cada Estado miembro comunicará el nombre de dicha autoridad a la Comisión.
+5. Cada Estado miembro proporcionará cualquier información que le soliciten las autoridades nacionales de control y, en particular, les proporcionará información relativa a las actividades realizadas de conformidad con el artículo 28 y el artículo 29, apartado 1, les dará acceso a las listas mencionadas en el artículo 28, apartado 4, letra c), y a los registros mencionados en el artículo 34 y les permitirá acceder a todos sus locales en todo momento.
+Artículo 42
+Control a cargo del Supervisor Europeo de Protección de Datos
+1. El Supervisor Europeo de Protección de Datos controlará que las actividades de tratamiento de datos personales por parte de la Autoridad de Gestión se llevan a cabo de conformidad con el presente Reglamento. Serán de aplicación, en consecuencia, los deberes y atribuciones mencionados en los artículos 46 y 47 del Reglamento (CE) no 45/2001.
+2. El Supervisor Europeo de Protección de Datos velará por que se lleve a cabo una auditoría de las actividades de tratamiento de datos personales de la Autoridad de Gestión conforme a normas internacionales de auditoría, al menos cada cuatro años. El informe de esa auditoría se enviará al Parlamento Europeo, al Consejo, a la Autoridad de Gestión, a la Comisión y a las autoridades nacionales de control. Deberá darse a la Autoridad de Gestión la oportunidad de formular observaciones antes de que se adopte el informe.
+3. La Autoridad de Gestión proporcionará la información solicitada por el Supervisor Europeo de Protección de Datos, al que dará acceso a todos los documentos y a los registros mencionados en el artículo 28, apartado 1, y permitirá acceder a sus locales en todo momento.
+Artículo 43
+Cooperación entre las autoridades nacionales de control y el Supervisor Europeo de Protección de Datos
+1. Las autoridades nacionales de control y el Supervisor Europeo de Protección de Datos, cada uno dentro del ámbito de sus competencias respectivas, cooperarán activamente en el marco de sus responsabilidades y garantizarán una supervisión coordinada del VIS y de los sistemas nacionales.
+2. Cada uno dentro del ámbito de sus competencias respectivas, intercambiarán la información pertinente, se asistirán mutuamente en la realización de inspecciones y auditorías, estudiarán las dificultades de interpretación y aplicación del presente Reglamento, examinarán los problemas que se planteen en el ejercicio del control independiente o en el ejercicio de los derechos de los interesados, elaborarán propuestas armonizadas
+
+L 218/78
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+para hallar soluciones comunes a los problemas y fomentarán el conocimiento de los derechos en materia de protección de datos, en la medida necesaria.
+3. Las autoridades nacionales de control y el Supervisor Europeo de Protección de Datos se reunirán con este objeto al menos dos veces al año. Los gastos y la organización de las reuniones correrán a cargo del Supervisor Europeo de Protección de Datos. El reglamento interno se adoptará en la primera reunión. Los métodos de trabajo se irán desarrollando conjuntamente y en función de las necesidades.
+4. Cada dos años se remitirá al Parlamento Europeo, al Consejo, a la Comisión y a la Autoridad de Gestión un informe conjunto sobre las actividades realizadas. Dicho informe incluirá un capítulo referente a cada Estado miembro redactado por la autoridad nacional de control de dicho Estado miembro.
+Artículo 44
+Protección de datos durante el período transitorio
+En caso de que, durante el período transitorio, la Comisión delegue sus responsabilidades en otro organismo u organismos de conformidad con el artículo 26, apartado 4, del presente Reglamento, se asegurará de que el Supervisor Europeo de Protección de Datos tenga el derecho y la posibilidad de desempeñar plenamente sus funciones, incluida la posibilidad de realizar comprobaciones in situ, o de ejercer cualesquiera otras competencias que se le hayan conferido en virtud del artículo 47 del Reglamento (CE) no 45/2001.
+CAPÍTULO VII
+DISPOSICIONES FINALES
+Artículo 45
+Aplicación por parte de la Comisión
+1. El VIS central, las interfaces nacionales en cada Estado miembro y la infraestructura de comunicación entre el VIS central y las interfaces nacionales serán establecidos por la Comisión lo antes posible una vez haya entrado en vigor el presente Reglamento, incluidas las funcionalidades necesarias para tratar los datos biométricos a que se refiere el artículo 5, apartado 1, letra c).
+2. Las medidas necesarias para la aplicación técnica del VIS central, las interfaces nacionales de cada Estado miembro y la infraestructura de comunicación entre el VIS central y las interfaces nacionales se adoptarán con arreglo al procedimiento contemplado en el artículo 49, apartado 2, en particular:
+a) para introducir los datos y las solicitudes vinculados entre sí de conformidad con el artículo 8;
+b) para acceder a los datos de conformidad con el artículo 15 y con los artículos 17 a 22;
+
+c) para modificar, suprimir y suprimir anticipadamente datos de conformidad con los artículos 23 a 25;
+d) para conservar registros y acceder a ellos de conformidad con el artículo 34;
+e) para el mecanismo de consulta y los procedimientos a que se refiere el artículo 16.
+Artículo 46
+Integración de las funcionalidades técnicas de la red de consulta de Schengen
+El mecanismo de consulta mencionado en el artículo 16 sustituirá a la red de consulta de Schengen a partir de la fecha que se determine de acuerdo con el procedimiento contemplado en el artículo 49, apartado 3, cuando todos aquellos Estados miembros que utilicen dicha red en la fecha de entrada en vigor del presente Reglamento hayan notificado las disposiciones legales y técnicas relativas a la utilización del VIS con fines de consulta entre las autoridades centrales encargadas de los visados sobre las solicitudes de visado de conformidad con el artículo 17, apartado 2, del Convenio de Schengen.
+Artículo 47
+Inicio de la transmisión
+Cada Estado miembro notificará a la Comisión que ha adoptado las medidas técnicas y jurídicas necesarias para transmitir al VIS central, a través de la interfaz nacional, los datos mencionados en el artículo 5, apartado 1.
+Artículo 48
+Inicio de las operaciones
+1. La Comisión determinará la fecha en que iniciará las operaciones el VIS cuando:
+a) se hayan adoptado las medidas mencionadas en el artículo 45, apartado 2;
+b) la Comisión haya declarado que se ha llevado a cabo con éxito un ensayo general del VIS junto con los Estados miembros;
+c) previa validación de los procedimientos técnicos, los Estados miembros hayan notificado a la Comisión que han adoptado las medidas técnicas y legales necesarias para recoger y transmitir al VIS los datos mencionados en el artículo 5, apartado 1, respecto de todas las solicitudes en la primera región determinada con arreglo a lo dispuesto en el apartado 4, lo que comprende las medidas para la recogida y la transmisión de los datos en nombre de otro Estado miembro.
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+L 218/79
+
+2. La Comisión informará al Parlamento Europeo de los resultados del ensayo llevado a cabo de conformidad con el apartado 1, letra b).
+3. En cada una de las demás regiones, la Comisión determinará la fecha a partir de la cual será obligatorio transmitir los datos mencionados en el artículo 5, apartado 1, una vez que los Estados miembros hayan notificado a la Comisión que han adoptado las medidas técnicas y legales necesarias para recoger y transmitir al VIS los datos mencionados en el artículo 5, apartado 1, respecto de todas las solicitudes en la región de que se trate, lo que comprende las medidas para la recogida o la transmisión de los datos en nombre de otro Estado miembro. Antes de esa fecha, cada Estado miembro podrá iniciar las operaciones en cualquiera de dichas regiones tan pronto como haya notificado a la Comisión que ha adoptado las medidas técnicas y legales necesarias para recoger y transmitir al VIS como mínimo los datos mencionados en el artículo 5, apartado 1, letras a) y b).
+
+El plazo contemplado en el artículo 5, apartado 6, de la Decisión 1999/468/CE queda fijado en dos meses.
+Artículo 50
+Supervisión y evaluación
+1. La Autoridad de Gestión garantizará el establecimiento de procedimientos para supervisar el funcionamiento del VIS en relación con los objetivos, en lo que atañe a los resultados, la rentabilidad, la seguridad y la calidad del servicio.
+2. A efectos de mantenimiento técnico, la Autoridad de Gestión tendrá acceso a la información necesaria relacionada con las operaciones de tratamiento que se realizan en el VIS.
+
+4. Las regiones a que se refieren los apartados 1 y 3 se determinarán de acuerdo con el procedimiento contemplado en el artículo 49, apartado 3. Los criterios para determinar esas regiones serán el riesgo de inmigración ilegal, las amenazas a la seguridad interna de los Estados miembros y la viabilidad de recoger datos biométricos de todas las localidades de esa región.
+
+3. Dos años después de que inicie sus operaciones el VIS y posteriormente cada dos años, la Autoridad de Gestión presentará al Parlamento Europeo, al Consejo y a la Comisión un informe sobre el funcionamiento técnico del VIS y de la infraestructura de comunicación, incluida la seguridad.
+
+5. La Comisión publicará en el Diario Oficial de la Unión Europea las fechas de inicio de las operaciones en cada región.
+6. Los Estados miembros no podrán consultar los datos transmitidos al VIS por otro Estado miembro si antes él u otro Estado miembro que lo represente no han empezado a introducir los datos de conformidad con los apartados 1 y 3.
+Artículo 49
+Comité
+1. La Comisión estará asistida por el comité establecido por el artículo 51, apartado 1, del Reglamento (CE) no 1987/2006 del Parlamento Europeo y del Consejo, de 20 de diciembre de 2006, relativo al establecimiento, funcionamiento y utilización del Sistema de Información de Schengen de segunda generación (SIS II) (1).
+2. En los casos en que se haga referencia al presente apartado, serán de aplicación los artículos 4 y 7 de la Decisión 1999/ 468/CE.
+El plazo contemplado en el artículo 4, apartado 3, de la Decisión 1999/468/CE queda fijado en dos meses.
+3. En los casos en que se haga referencia al presente apartado, serán de aplicación los artículos 5 y 7 de la Decisión 1999/ 468/CE.
+(1) DO L 381 de 28.12.2006, p. 4.
+
+4. Tres años después de que inicie sus operaciones el VIS y posteriormente cada cuatro años, la Comisión realizará una evaluación global del VIS. En dicha evaluación global se examinarán los resultados obtenidos en relación con los objetivos y se evaluará la vigencia de los fundamentos del sistema, la aplicación del presente Reglamento con respecto al VIS, la seguridad del VIS, la utilización llevada a cabo de las disposiciones recogidas en el artículo 31 y las posibles consecuencias de las operaciones futuras. La Comisión remitirá la evaluación al Parlamento Europeo y al Consejo.
+5. Antes de que finalicen los plazos recogidos en el artículo 18, apartado 2, la Comisión presentará un informe sobre los progresos técnicos realizados en relación con la utilización de las impresiones dactilares en las fronteras exteriores y sus implicaciones sobre la duración de las investigaciones mediante la utilización del número sobre la etiqueta adhesiva de visado en combinación con la verificación de las impresiones dactilares de la persona a la que se haya expedido el visado, incluida la posibilidad de que la duración prevista de esta investigación suponga un tiempo de espera excesivo en los pasos fronterizos. La Comisión transmitirá la evaluación al Parlamento Europeo y al Consejo. Basándose en esta evaluación, el Parlamento Europeo o el Consejo podrán solicitar a la Comisión que proponga, si procede, enmiendas adecuadas al presente Reglamento.
+6. Los Estados miembros facilitarán a la Autoridad de Gestión y a la Comisión la información necesaria para redactar los informes a que se refieren los apartados 3, 4 y 5.
+7. La Autoridad de Gestión facilitará a la Comisión la información necesaria para realizar las evaluaciones globales a que se refiere el apartado 4.
+
+L 218/80
+
+ES
+
+Diario Oficial de la Unión Europea
+
+13.8.2008
+
+8. Durante un período transitorio antes de que la Autoridad de Gestión asuma sus funciones, la Comisión será responsable de elaborar y presentar los informes a que se refiere el apartado 3.
+Artículo 51
+Entrada en vigor y aplicación
+1. El presente Reglamento entrará en vigor a los veinte días de su publicación en el Diario Oficial de la Unión Europea.
+
+2. Será aplicable a partir de la fecha a que se refiere el artículo 48, apartado 1.
+3. Los artículos 26, 27, 32 y 45, el artículo 48, apartados 1, 2 y 4, y el artículo 49 serán de aplicación a partir del 2 de septiembre de 2008.
+4. Durante el período transitorio a que se refiere el artículo 26, apartado 4, las referencias hechas en el presente Reglamento a la Autoridad de Gestión se entenderán como referencias a la Comisión.
+
+El presente Reglamento será obligatorio en todos sus elementos y directamente aplicable en cada Estado miembro, de conformidad con el Tratado constitutivo de la Comunidad Europea.
+
+Hecho en Estrasburgo, el 9 de julio de 2008.
+Por el Parlamento Europeo El Presidente
+H.-G. PÖTTERING
+
+Por el Consejo El Presidente
+J.-P. JOUYET
+
+13.8.2008
+
+ES
+
+Diario Oficial de la Unión Europea
+
+ANEXO Lista de organizaciones internacionales a que se refiere el artículo 31, apartado 2
+
+1. Órganos de las Naciones Unidas (como ACNUR). 2. La Organización Internacional para las Migraciones (OIM). 3. El Comité Internacional de la Cruz Roja.
+
+L 218/81
+
+15.9.2009
+
+ES
+
+Diario Oficial de la Unión Europea
+
+I
+(Actos adoptados en aplicación de los Tratados CE/Euratom cuya publicación es obligatoria)
+
+L 243/1
+
+REGLAMENTOS
+
