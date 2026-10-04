@@ -64,8 +64,11 @@ function unidades(esq, tema) {
       if (lead) { const a = articulosDe('art. ' + lead[1]); if (a.size) artActual = [...a]; }
       const marks = [...p.matchAll(/<mark class="m-resp">([\s\S]*?)<\/mark>/g)].map(x => ' ' + norm(x[1]) + ' ');
       const resp = marks.join(' ');
+      const txt0 = p.replace(/<[^>]+>/g, '').replace(/&[a-z]+;/g, ' ');
+      const lead0 = { num: (txt0.match(/^\s*(?:Art(?:\.|[ií]culos?)\s*\d+(?:\s*[a-z]+)?\.\s*)?(\d+)\.\s/i) || txt0.match(/^\s*\d+\.(\d+)\.\s/) || [])[1] || null,
+        letra: (txt0.match(/^\s*([a-zñ])\)/) || [])[1] || null };
       out.push({ pid: `${tema}-${k}-${ps.length ? j : 'x'}`, cab: norm(cab), bloque, normas: normasDe(bloque + ' ' + cab),
-        arts: new Set(artActual.length ? artActual : [...artsCab]), T: ' ' + norm(p) + ' ', R: ' ' + resp + ' ', marks });
+        arts: new Set(artActual.length ? artActual : [...artsCab]), lead: lead0, T: ' ' + norm(p) + ' ', R: ' ' + resp + ' ', marks });
     });
   }
   return out;
@@ -91,6 +94,11 @@ function puntuar(q, u) {
   let s = 3 * fR + 2 * fT + 1.5 * fS;
   const qa = articulosDe(q.pregunta + ' ' + (q.explicacion || ''));
   if (qa.size && [...u.arts].some(a => qa.has(a))) s += 1.2;
+  const cit = (q.pregunta || '').match(/art(?:[ií]culos?|s?\.)\s*(\d+(?:\s+(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)(?:\.(\d+))?(?:\.?\s*([a-z])\))?/i);
+  if (cit && u.lead && [...u.arts].some(x => x === cit[1].toLowerCase().replace(/\s+/g, ' '))) {
+    if (cit[2] && u.lead.num) s += (u.lead.num === cit[2]) ? 1.5 : -0.8;
+    if (cit[3] && u.lead.letra) s += (u.lead.letra === cit[3].toLowerCase()) ? 1.5 : -0.5;
+  }
   const qn = normasDe(q.pregunta + ' ' + (q.explicacion || '') + ' ' + (q.apartado || ''));
   if (qn.size && u.normas.size) s += [...qn].some(n => u.normas.has(n)) ? 0.8 : -0.8;
   // respuesta marcada concreta (índice del <mark class="m-resp"> dentro del párrafo) que mejor casa
@@ -102,6 +110,7 @@ function puntuar(q, u) {
 
 // ---------- 6. Ejecutar ----------
 const esquemas = cargarEsquemas();
+const MANUAL = (() => { try { return JSON.parse(fs.readFileSync('prompts/herramientas/mapa-manual.json', 'utf8')).map(x => ({ ...x, marca: norm(x.marca) })); } catch (e) { return []; } })();
 const MAPA = {}; const EXTRA = {}; const temas = []; const TOTAL = {};
 esquemas.forEach((e, i) => {
   const tema = i + 1; if (!e.html || !e.html.includes('class="articulo"')) return;
@@ -123,18 +132,32 @@ esquemas.forEach((e, i) => {
   for (const u of us) {
     u.marks.forEach((mk, i) => {
       if (cubiertas.has(u.pid + '-' + i)) return;
+      // enlaces manuales (prompts/herramientas/mapa-manual.json): marca cuyo texto empieza así -> preguntas que ya la cubren
+      const man = MANUAL.find(x => x.tema === tema && mk.trim().startsWith(norm(x.marca)));
+      if (man) { const ids = man.preguntas.filter(id => qs.some(q => q.id === id)); if (ids.length) { EXTRA[u.pid + '-' + i] = ids; extras++; return; } }
       const mt = [...new Set(toks(mk))]; if (mt.length < 1) return;
       let mejor = null, ms = 0;
       for (const q of qs) {
-        const r = puntuar(q, u); if ((r.fR + r.fT) < 0.5) continue;
+        const r = puntuar(q, u);
+        // vía enunciado: la pregunta cita ESTE artículo/apartado y su enunciado contiene el texto de la marca
+        // (p. ej. «art. 10.1.j) … Ley de Defensa de la Competencia»: la respuesta está en la frase introductoria, el apartado en j))
+        const cit = (q.pregunta || '').match(/art(?:[ií]culos?|s?\.)\s*(\d+(?:\s+(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)(?:\.(\d+))?(?:\.?\s*([a-z])\))?/i);
+        const artOk = cit && [...u.arts].some(x => x === cit[1].toLowerCase().replace(/\s+/g, ' '));
+        const stemT = new Set(toks(q.pregunta));
+        const fq = mt.filter(w => stemT.has(w)).length / mt.length;
+        let viaEnun = !!((artOk && mt.length >= 2 && fq >= 0.75) || (mt.length >= 3 && fq >= 0.85));
+        if (viaEnun && artOk && cit[3] && u.lead && u.lead.letra && u.lead.letra !== cit[3].toLowerCase()) viaEnun = false;
+        if (viaEnun && artOk && cit[2] && u.lead && u.lead.num && u.lead.num !== cit[2]) viaEnun = false;
+        if ((r.fR + r.fT) < 0.5 && !viaEnun) continue;
         const correcta = q.opciones[q.correcta] || ''; const generica = GENERICA.test(norm(correcta));
         const vs = [generica ? q.opciones.filter(o => !GENERICA.test(norm(o))).join(' ') : correcta];
         if (/incorrect|no es correct|falsa|no figura|no se menciona|no corresponde/i.test(q.pregunta || '')) vs.push(q.opciones.filter((o, k) => k !== q.correcta).join(' '));
         let f = 0; for (const v of vs) { const at = [...new Set(toks(v))]; if (!at.length) continue;
           const c = at.filter(w => mk.includes(' ' + w + ' ') || (w.length > 5 && mk.includes(' ' + w.slice(0, w.length - 2)))).length;
           f = Math.max(f, c / at.length, c / mt.length * 0.9); }
-        const sc = f + 0.3 * (r.fR + r.fT);
-        if (f >= 0.6 && sc > ms) { ms = sc; mejor = q.id; }
+        const sc = Math.max(f >= 0.6 && (r.fR + r.fT) >= 0.5 ? f + 0.3 * (r.fR + r.fT) : 0,
+          viaEnun ? fq * 0.9 + (artOk && cit[3] && u.lead && u.lead.letra ? 0.4 : 0) + (artOk && cit[2] && u.lead && u.lead.num ? 0.4 : 0) : 0);
+        if (sc > 0 && sc > ms) { ms = sc; mejor = q.id; }
       }
       if (mejor) { EXTRA[u.pid + '-' + i] = [mejor]; extras++; }
     });
