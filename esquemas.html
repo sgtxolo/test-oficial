@@ -190,6 +190,7 @@ body.voz-abierta .voz-bar{display:flex}
   <div class="topbar">
     <h1>📚 Esquemas de Estudio</h1>
     <div style="display:flex;align-items:center;gap:10px">
+      <button class="btn-pdf" id="btn-marcas" type="button" title="Mostrar u ocultar las herramientas de marcas">🖍 Marcas</button>
       <button class="btn-pdf" id="btn-voz-menu" type="button" title="Leer el esquema en voz alta">🔊 Voz</button>
       <button class="btn-pdf" id="btn-exportar-pdf">⬇️ PDF</button>
       <div class="theme-toggle">
@@ -2156,8 +2157,11 @@ body.embed #app{padding-top:4px}
 </script>
 
 <style id="pm-style">
-#pm-ui{position:fixed;left:8px;top:110px;max-height:calc(100vh - 130px);overflow-y:auto;z-index:9000;display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px;border-radius:12px;background:var(--panel,#fff);border:1px solid var(--borde,#ddd);box-shadow:0 6px 22px rgba(0,0,0,.2);user-select:none;-webkit-user-select:none;touch-action:manipulation}
-body:not(.ver-esquema) #pm-ui{display:none}
+#pm-ui{position:fixed;left:8px;top:110px;max-height:calc(100vh - 130px);overflow-y:auto;z-index:9000;display:none;flex-direction:column;align-items:center;gap:4px;padding:6px;border-radius:12px;background:var(--panel,#fff);border:1px solid var(--borde,#ddd);box-shadow:0 6px 22px rgba(0,0,0,.2);user-select:none;-webkit-user-select:none;touch-action:manipulation}
+body.ver-esquema.pm-on #pm-ui{display:flex}
+#btn-marcas.on{background:var(--verde,#1c4d3c);color:#fff}
+.pm-svg *{pointer-events:stroke}
+.pm{cursor:pointer}
 #pm-ui button.pm-b{width:38px;height:38px;border:0;border-radius:9px;background:transparent;color:var(--texto,#222);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
 #pm-ui button.pm-b:hover{background:var(--panel-alt,#eee)}
 #pm-ui button.pm-b.on{background:var(--verde,#1c4d3c);color:#fff}
@@ -2198,7 +2202,9 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
   const TOOLS=[['hl','🖍','Resaltar'],['ul','U','Subrayar'],['st','S','Tachar'],['line','╱','Línea'],['arrow','➜','Flecha'],['rect','▭','Rectángulo'],['oval','◯','Círculo'],['free','✎','Mano alzada'],['er','⌫','Borrar una marca']];
   const TXT={hl:1,ul:1,st:1}, SHP={line:1,arrow:1,rect:1,oval:1,free:1};
   let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
-  const st={tool:null,color:'#ffc400',op:45,w:4,open:true};
+  const st={tool:null,color:'#ffc400',op:45,w:4,c:null};
+  Object.defineProperty(st,'c',{get(){return st.color;}});
+  Object.defineProperty(st,'o',{get(){return st.op;}});
   const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
   const bucket=id=>(data[id]=data[id]||{t:[],f:[],n:0});
   const $=(s,r)=>(r||document).querySelector(s);
@@ -2210,12 +2216,10 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
   function buildUI(){
     ui.innerHTML='';
     const mk=(html,title,fn,cls)=>{ const b=document.createElement('button'); b.type='button'; b.className='pm-b'+(cls?' '+cls:''); b.innerHTML=html; b.title=title; b.onclick=fn; ui.appendChild(b); return b; };
-    mk(st.open?'✕':'🖊','Marcas: resaltar, subrayar, dibujar',()=>{ st.open=!st.open; if(!st.open) setTool(null); else buildUI(); });
-    if(!st.open) return;
     mk('🖱','Normal (sin marcar)',()=>setTool(null),st.tool?'':'on');
     TOOLS.forEach(([k,ic,t])=>{ const b=mk(ic,t,()=>setTool(st.tool===k?null:k),st.tool===k?'on':''); if(k==='ul') b.style.textDecoration='underline'; if(k==='st') b.style.textDecoration='line-through'; });
     const sep=document.createElement('div'); sep.className='pm-sep'; ui.appendChild(sep);
-    const c=mk('<span class="pm-dot" style="background:'+rgba(st.color,st.op)+';border-color:'+st.color+'"></span>','Color, opacidad y grosor',e=>{ e.stopPropagation(); togglePop(c); });
+    const c=mk('<span class="pm-dot" style="background:'+rgba(st.color,st.op)+';border-color:'+st.color+'"></span>','Color, opacidad y grosor',e=>{ e.stopPropagation(); togglePop(c,null); });
     mk('↶','Deshacer la última marca de este tema',undo);
     mk('🗑','Borrar todas las marcas de este tema',clearAll);
   }
@@ -2225,22 +2229,31 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     document.body.classList.toggle('pm-er',k==='er');
     pop.classList.remove('on'); buildUI();
   }
-  function togglePop(anchor){
-    if(pop.classList.contains('on')){ pop.classList.remove('on'); return; }
-    const sw=PAL.map(c=>'<button type="button" class="pm-sw'+(c===st.color?' on':'')+'" data-c="'+c+'" data-w="'+(c==='#ffffff'||c==='#fff176'?1:0)+'" style="background:'+c+'"></button>').join('');
-    pop.innerHTML='<b>Color</b><div class="pm-grid">'+sw+'</div>'
-      +'<div class="pm-row"><span>Opacidad</span><input type="range" id="pm-op" min="10" max="100" step="5" value="'+st.op+'"><span id="pm-opv">'+st.op+'%</span></div>'
-      +'<div class="pm-w">'+[2,4,6,9].map(w=>'<button type="button" data-w="'+w+'" class="'+(w===st.w?'on':'')+'" title="Grosor '+w+'"><i style="height:'+Math.max(2,w-1)+'px"></i></button>').join('')+'</div>';
+  let edit=null;
+  function togglePop(anchor,target,pt){
+    if(!target&&pop.classList.contains('on')&&!edit){ pop.classList.remove('on'); return; }
+    edit=target||null;
+    const cc=edit?edit.get():st;
+    const sw=PAL.map(c=>'<button type="button" class="pm-sw'+(c===cc.c?' on':'')+'" data-c="'+c+'" data-w="'+(c==='#ffffff'||c==='#fff176'?1:0)+'" style="background:'+c+'"></button>').join('');
+    pop.innerHTML='<b>'+(edit?'Cambiar esta marca':'Color')+'</b><div class="pm-grid">'+sw+'</div>'
+      +'<div class="pm-row"><span>Opacidad</span><input type="range" id="pm-op" min="10" max="100" step="5" value="'+cc.o+'"><span id="pm-opv">'+cc.o+'%</span></div>'
+      +'<div class="pm-w">'+[2,4,6,9].map(w=>'<button type="button" data-w="'+w+'" class="'+(w===cc.w?'on':'')+'" title="Grosor '+w+'"><i style="height:'+Math.max(2,w-1)+'px"></i></button>').join('')+'</div>'+(edit?'<div class="pm-row"><button type="button" id="pm-del" style="flex:1;height:30px;border:1px solid #c33;color:#c33;background:transparent;border-radius:7px;cursor:pointer">Eliminar esta marca</button></div>':'');
+    if(edit&&edit.kind==='t') pop.querySelector('.pm-w').style.display='none';
     pop.classList.add('on');
-    const r=anchor.getBoundingClientRect();
+    const r=anchor?anchor.getBoundingClientRect():{right:pt[0],top:pt[1]+30};
     pop.style.left=Math.max(8,Math.min(r.right+8,innerWidth-pop.offsetWidth-8))+'px';
     pop.style.top=Math.max(8,Math.min(r.top-40,innerHeight-pop.offsetHeight-8))+'px';
-    pop.querySelectorAll('.pm-sw').forEach(b=>b.onclick=()=>{ st.color=b.dataset.c; pop.querySelectorAll('.pm-sw').forEach(x=>x.classList.toggle('on',x===b)); refreshDot(); });
-    $('#pm-op',pop).oninput=e=>{ st.op=+e.target.value; $('#pm-opv',pop).textContent=st.op+'%'; refreshDot(); };
-    pop.querySelectorAll('.pm-w button').forEach(b=>b.onclick=()=>{ st.w=+b.dataset.w; pop.querySelectorAll('.pm-w button').forEach(x=>x.classList.toggle('on',x===b)); });
+    pop.querySelectorAll('.pm-sw').forEach(b=>b.onclick=()=>{ setProp('c',b.dataset.c); pop.querySelectorAll('.pm-sw').forEach(x=>x.classList.toggle('on',x===b)); });
+    if(edit) $('#pm-del',pop).onclick=()=>{ edit.del(); pop.classList.remove('on'); edit=null; };
+    $('#pm-op',pop).oninput=e=>{ setProp('o',+e.target.value); $('#pm-opv',pop).textContent=e.target.value+'%'; };
+    pop.querySelectorAll('.pm-w button').forEach(b=>b.onclick=()=>{ setProp('w',+b.dataset.w); pop.querySelectorAll('.pm-w button').forEach(x=>x.classList.toggle('on',x===b)); });
+  }
+  function setProp(k,v){
+    if(!edit){ ({c:'color',o:'op',w:'w'}[k]&&(st[{c:'color',o:'op',w:'w'}[k]]=v)); refreshDot(); return; }
+    edit.set(k,v);
   }
   function refreshDot(){ const d=$('.pm-dot',ui); if(d){ d.style.background=rgba(st.color,st.op); d.style.borderColor=st.color; } }
-  document.addEventListener('pointerdown',e=>{ if(pop.classList.contains('on')&&!pop.contains(e.target)&&!ui.contains(e.target)) pop.classList.remove('on'); },true);
+  document.addEventListener('pointerdown',e=>{ if(pop.classList.contains('on')&&!pop.contains(e.target)&&!ui.contains(e.target)){ pop.classList.remove('on'); edit=null; } },true);
 
   /* ---------- texto: posiciones ---------- */
   const SKIP='.hueco-txt,svg,#pm-ui,#pm-pop,script,style';
@@ -2343,6 +2356,20 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     svg.addEventListener('pointerup',end); svg.addEventListener('pointercancel',end);
   }
 
+  /* ---------- editar una marca existente ---------- */
+  document.addEventListener('click',e=>{
+    if(st.tool==='er'||SHP[st.tool]) return;
+    const sel=getSelection(); if(sel&&!sel.isCollapsed) return;
+    const sh=e.target.closest&&e.target.closest('[data-pf]'), sp=!sh&&e.target.closest&&e.target.closest('.pm');
+    const hit=sh||sp, esq=hit&&hit.closest('.esquema'); if(!esq) return;
+    const bk=bucket(esq.id), n=+(sh?sh.dataset.pf:sp.dataset.pm);
+    const m=(sh?bk.f:bk.t).find(x=>x.n===n); if(!m) return;
+    e.preventDefault(); e.stopPropagation();
+    togglePop(null,{kind:sh?'f':'t',get:()=>m,
+      set:(k,v)=>{ m[k]=v; if(sh) renderShapes(esq); else esq.querySelectorAll('.pm[data-pm="'+n+'"]').forEach(x=>x.style.setProperty('--pmc',rgba(m.c,m.o))); save(); },
+      del:()=>{ if(sh){ bk.f=bk.f.filter(x=>x.n!==n); renderShapes(esq); } else { bk.t=bk.t.filter(x=>x.n!==n); unwrap(esq,n); } save(); }},[e.clientX,e.clientY]);
+  },true);
+
   /* ---------- borrar ---------- */
   document.addEventListener('click',e=>{
     if(st.tool!=='er') return;
@@ -2376,6 +2403,8 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     });
   }
   buildUI();
+  const bm=document.getElementById('btn-marcas');
+  bm.onclick=()=>{ const on=document.body.classList.toggle('pm-on'); bm.classList.toggle('on',on); if(!on){ setTool(null); pop.classList.remove('on'); edit=null; } };
   setTimeout(applyAll,0);
   document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&st.tool) setTool(null); });
 })();
