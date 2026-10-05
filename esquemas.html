@@ -3105,7 +3105,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   if(!content||!lista) return;
   // estilos del filtro de color
   const st=document.createElement('style');
-  st.textContent=COLORES.filter(c=>c[0]).map(c=>'body[data-fc="'+c[0]+'"] .articulo mark:not(.'+c[0]+'){background:transparent!important;color:inherit!important;opacity:.4;font-weight:400!important}').join('');
+  st.textContent='';
   document.head.appendChild(st);
   // barra
   const bar=document.createElement('div'); bar.className='barra-estudio';
@@ -3150,7 +3150,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     document.querySelectorAll('.articulo').forEach(a=>{
       const v=data[clave(a)]||''; let ver=true;
       if(vista==='pend') ver=v!=='ok'; else if(vista==='rep') ver=v==='rep';
-      if(ver&&color) ver=!!a.querySelector('mark.'+color);
+      if(ver&&color) ver=!!a.querySelector('mark.'+color)&&!!a.querySelector('mark.m-resp');
       a.classList.toggle('oculta-fil',!ver);
     });
   }
