@@ -2956,6 +2956,12 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     const s=svgOf(esq); s.querySelectorAll('[data-pf]').forEach(e=>e.remove());
     ((data[esq.id]&&data[esq.id].f)||[]).forEach(f=>s.appendChild(shapeEl(esq,f)));
   }
+  /* forma rápida alrededor de una palabra subrayada (cuadrado, círculo o flecha) desde el menú «Cambiar este subrayado» */
+  window.pmAddShape=function(esq,k,rc){
+    const r=esq.getBoundingClientRect(), X=x=>(x-r.left)/r.width, Y=y=>y-r.top, pad=3;
+    const p=k==='arrow'?[[X(rc.left-55),Y(rc.bottom+36)],[X(rc.left+4),Y(rc.bottom+3)]]:[[X(rc.left-pad),Y(rc.top-pad)],[X(rc.right+pad),Y(rc.bottom+pad)]];
+    const bk=bucket(esq.id); bk.f.push({k:k,c:'#e5383b',o:90,w:Math.min(st.w,2),n:++bk.n,p:p}); save(); renderShapes(esq);
+  };
   function wireDraw(esq,svg){
     let cur=null,tmp=null,pts=null;
     const pos=e=>{ const r=esq.getBoundingClientRect(); return [(e.clientX-r.left)/r.width,e.clientY-r.top]; };
@@ -3138,6 +3144,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   let cur=null;   // {esq, el} para editar una marca · {esq, range} para marcar una selección
   function abrir(titulo,sel,x,y,conQuitar){
     pop.innerHTML='<b class="cat-t">'+titulo+'</b><div class="cat-g">'+CATS.map(([k,n])=>'<button type="button" data-c="'+k+'"'+(sel===k?' class="on"':'')+'>'+(k==='clave'?'<u class="m-clave">'+n+'</u>':'<mark class="m-'+k+'">'+n+'</mark>')+'</button>').join('')+'</div>'
+      +(conQuitar?'<div class="cat-g" style="margin-top:8px"><button type="button" data-a="shp" data-k="rect" title="Cuadrado alrededor">▭ Cuadrado</button><button type="button" data-a="shp" data-k="oval" title="Círculo alrededor">◯ Círculo</button><button type="button" data-a="shp" data-k="arrow" title="Flecha hacia la palabra">➜ Flecha</button></div>':'')
       +(conQuitar?'<button type="button" class="cat-b cat-del" data-a="del">Quitar este subrayado</button>':'')
       +'<button type="button" class="cat-b cat-rst" data-a="rst">↺ Restaurar el subrayado original de este tema</button>';
     pop.classList.add('on');
@@ -3175,6 +3182,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     const b=e.target.closest('button'); if(!b||!cur) return;
     const esq=cur.esq, bk=bucket(esq.id);
     if(b.dataset.a==='rst'){ if(confirm('¿Restaurar el subrayado original de este tema? Se perderán tus cambios sobre el subrayado automático.')){ delete data[esq.id]; save(); location.reload(); } return; }
+    if(b.dataset.a==='shp'){ if(cur.el&&window.pmAddShape) window.pmAddShape(esq,b.dataset.k,cur.el.getBoundingClientRect()); cerrar(); return; }
     if(cur.el){
       let el=cur.el;
       if(el.dataset.add){                                   // subrayado añadido por ti
