@@ -2823,7 +2823,7 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
   const TOOLS=[['hl','🖍','Resaltar'],['ul','U','Subrayar'],['st','S','Tachar'],['line','╱','Línea'],['arrow','➜','Flecha'],['rect','▭','Rectángulo'],['oval','◯','Círculo'],['free','✎','Mano alzada'],['er','⌫','Borrar una marca']];
   const TXT={hl:1,ul:1,st:1}, SHP={line:1,arrow:1,rect:1,oval:1,free:1};
   let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
-  const st={tool:null,color:'#ffc400',op:45,w:4,c:null};
+  const st={tool:null,color:'#ffc400',op:45,w:2,c:null};
   Object.defineProperty(st,'c',{get(){return st.color;}});
   Object.defineProperty(st,'o',{get(){return st.op;}});
   const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
@@ -2858,7 +2858,7 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     const sw=PAL.map(c=>'<button type="button" class="pm-sw'+(c===cc.c?' on':'')+'" data-c="'+c+'" data-w="'+(c==='#ffffff'||c==='#fff176'?1:0)+'" style="background:'+c+'"></button>').join('');
     pop.innerHTML='<b>'+(edit?'Cambiar esta marca':'Color')+'</b><div class="pm-grid">'+sw+'</div>'
       +'<div class="pm-row"><span>Opacidad</span><input type="range" id="pm-op" min="10" max="100" step="5" value="'+cc.o+'"><span id="pm-opv">'+cc.o+'%</span></div>'
-      +'<div class="pm-w">'+[2,4,6,9].map(w=>'<button type="button" data-w="'+w+'" class="'+(w===cc.w?'on':'')+'" title="Grosor '+w+'"><i style="height:'+Math.max(2,w-1)+'px"></i></button>').join('')+'</div>'+(edit?'<div class="pm-row"><button type="button" id="pm-del" style="flex:1;height:30px;border:1px solid #c33;color:#c33;background:transparent;border-radius:7px;cursor:pointer">Eliminar esta marca</button></div>':'');
+      +'<div class="pm-row pm-w"><span>Grosor</span><input type="range" id="pm-wr" min="1" max="12" step="0.5" value="'+cc.w+'"><span id="pm-wv">'+cc.w+' px</span></div>'+(edit?'<div class="pm-row"><button type="button" id="pm-del" style="flex:1;height:30px;border:1px solid #c33;color:#c33;background:transparent;border-radius:7px;cursor:pointer">Eliminar esta marca</button></div>':'');
     if(edit&&edit.kind==='t') pop.querySelector('.pm-w').style.display='none';
     pop.classList.add('on');
     const r=anchor?anchor.getBoundingClientRect():{right:pt[0],top:pt[1]+30};
@@ -2867,7 +2867,7 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     pop.querySelectorAll('.pm-sw').forEach(b=>b.onclick=()=>{ setProp('c',b.dataset.c); pop.querySelectorAll('.pm-sw').forEach(x=>x.classList.toggle('on',x===b)); });
     if(edit) $('#pm-del',pop).onclick=()=>{ edit.del(); pop.classList.remove('on'); edit=null; };
     $('#pm-op',pop).oninput=e=>{ setProp('o',+e.target.value); $('#pm-opv',pop).textContent=e.target.value+'%'; };
-    pop.querySelectorAll('.pm-w button').forEach(b=>b.onclick=()=>{ setProp('w',+b.dataset.w); pop.querySelectorAll('.pm-w button').forEach(x=>x.classList.toggle('on',x===b)); });
+    $('#pm-wr',pop).oninput=e=>{ setProp('w',+e.target.value); $('#pm-wv',pop).textContent=e.target.value+' px'; };
   }
   function setProp(k,v){
     if(!edit){ ({c:'color',o:'op',w:'w'}[k]&&(st[{c:'color',o:'op',w:'w'}[k]]=v)); refreshDot(); return; }
