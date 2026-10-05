@@ -15,6 +15,7 @@ const PDFS = {
   7: ['TEMA 7 - Derechos y Deberes Fundamentales (Normativa).pdf'],
   8: ['TEMA 8- Poder Judicial (LOPJ 6-1985 - Extracto oficial).pdf'],
   10: ['TEMA 10 - Derecho Civil (Codigo Civil - Extracto oficial).pdf'],
+  11: ['TEMA 11 - Derecho Administrativo (Extracto oficial).pdf'],
   9: ['TEMA 9 - Defensa Nacional (LO 5-2005 + Directiva Defensa Nacional 2020).pdf'],
   12: ['TEMA 12 - Gobierno y Administracion (Ley 50-1997 - Extracto oficial).pdf'],
   13: ['TEMA 13 - Jurisdiccion Contencioso-Administrativa (Extracto oficial).pdf'],
