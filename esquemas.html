@@ -3081,8 +3081,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
 .barra-estudio .cc{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
 .fab-tapar{position:fixed;left:14px;bottom:14px;z-index:9000;width:46px;height:46px;border-radius:50%;border:none;background:var(--verde);color:#fff;font-size:21px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 .fab-tapar.on{background:#d64545}
-body.tapar .articulo mark:not(.visto){color:transparent!important;text-shadow:none!important;cursor:pointer}
-body.tapar .articulo mark.visto{outline:2px solid rgba(47,107,82,.55)}
+body.tapar .articulo mark.m-resp:not(.visto){color:transparent!important;text-shadow:none!important;cursor:pointer}
+body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
 .mk-btn{float:right;margin-left:8px;border:1.5px solid var(--borde);background:var(--panel);color:var(--texto-gris);border-radius:10px;padding:1px 9px;font-size:11.5px;font-weight:800;cursor:pointer;font-family:inherit}
 .articulo.mk-ok{border-left:6px solid #2f9e62}
 .articulo.mk-ok .mk-btn{background:#dff3e6;color:#1d6b3d;border-color:#2f9e62}
@@ -3092,7 +3092,7 @@ body.tapar .articulo mark.visto{outline:2px solid rgba(47,107,82,.55)}
 </style>
 <script id="script-estudio">
 /* ==================== MODO ESTUDIO: tapar · dominada/repasar · filtro por color ====================
-   - 🙈 Tapar: oculta el texto subrayado (se ve el hueco de color); tocar un subrayado lo destapa.
+   - 🙈 Tapar: oculta solo las respuestas de preguntas (oficiales e IA; se ve el hueco); tocar un subrayado lo destapa.
    - Cada ficha (artículo): botón ○ / ✅ dominada / 🔁 repasar, guardado en localStorage 'esquemas-fichas'. Vista «solo las que no domino».
    - Filtro por color: atenúa el resto de subrayados y oculta las fichas que no tienen ese color. */
 (function(){
@@ -3128,7 +3128,7 @@ body.tapar .articulo mark.visto{outline:2px solid rgba(47,107,82,.55)}
   // tocar un subrayado tapado lo destapa (antes que cualquier otra acción de la marca)
   document.addEventListener('click',ev=>{
     if(!document.body.classList.contains('tapar')) return;
-    const m=ev.target.closest&&ev.target.closest('.articulo mark'); if(!m||m.classList.contains('visto')) return;
+    const m=ev.target.closest&&ev.target.closest('.articulo mark.m-resp'); if(!m||m.classList.contains('visto')) return;
     ev.preventDefault(); ev.stopPropagation(); m.classList.add('visto');
   },true);
   // botón por ficha
