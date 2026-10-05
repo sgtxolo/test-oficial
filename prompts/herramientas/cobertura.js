@@ -12,6 +12,7 @@ const PDFS = {
   4: ['TEMA 4/2025-09-19-TEMA 4 COMPLETO.pdf'],
   5: ['TEMA 5/TEMA 5 - Bases de Datos Europeas (Normativa completa).pdf'],
   6: ['TEMA 6/Ley Orgánica 4-2000, de 11 de enero, sobre derechos y libertades de los extranjeros en España.pdf', 'TEMA 6/BOE-A-2009-17242-consolidado.pdf'],
+  7: ['TEMA 7 - Derechos y Deberes Fundamentales (Normativa).pdf'],
   8: ['TEMA 8- Poder Judicial (LOPJ 6-1985 - Extracto oficial).pdf'],
   10: ['TEMA 10 - Derecho Civil (Codigo Civil - Extracto oficial).pdf'],
   9: ['TEMA 9 - Defensa Nacional (LO 5-2005 + Directiva Defensa Nacional 2020).pdf'],
@@ -22,6 +23,17 @@ const SUF = 'bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies|undeci
 
 // Artículos del temario: títulos «Artículo N.» del PDF; cada vez que la numeración vuelve atrás empieza otra norma.
 // Las tandas de menos de 5 artículos se descartan (suelen ser artículos citados por normas que modifican a otras).
+
+// Números en letra («Artículo primero», «treinta y uno») del BOE antiguo (p. ej. LO 2/1979 y LO 1/1982)
+const ORD = { primero:1, segundo:2, tercero:3, cuarto:4, quinto:5, sexto:6, séptimo:7, octavo:8, noveno:9, décimo:10 };
+const UNI = { uno:1, dos:2, tres:3, cuatro:4, cinco:5, seis:6, siete:7, ocho:8, nueve:9, diez:10, once:11, doce:12, trece:13, catorce:14, quince:15, dieciséis:16, diecisiete:17, dieciocho:18, diecinueve:19, veinte:20, veintiuno:21, veintidós:22, veintitrés:23, veinticuatro:24, veinticinco:25, veintiséis:26, veintisiete:27, veintiocho:28, veintinueve:29 };
+const DEC = { treinta:30, cuarenta:40, cincuenta:50, sesenta:60, setenta:70, ochenta:80, noventa:90, cien:100 };
+function numLetra(s) {
+  s = s.toLowerCase().trim();
+  if (ORD[s]) return ORD[s]; if (UNI[s]) return UNI[s];
+  const m = s.match(/^([a-záéíóú]+)(?: y ([a-záéíóú]+))?$/); if (!m || !DEC[m[1]]) return 0;
+  return DEC[m[1]] + (m[2] ? (UNI[m[2]] || 0) : 0);
+}
 function articulosTemario(n) {
   let total = 0;
   for (const rel of PDFS[n] || []) {
@@ -33,6 +45,8 @@ function articulosTemario(n) {
       // «ARTÍCULO 58 …» en mayúsculas, o «Artículo 10. Título» / «Artículo 10» solo en la línea (no las citas «artículo 5 del…»)
       const m = l.match(new RegExp('^\\s*ART[ÍI]CULO\\s+(\\d{1,3})\\s*(' + SUF.toUpperCase() + ')?(?![\\dº])', '')) ||
                 l.match(new RegExp('^\\s*Art[íi]culo\\s+(\\d{1,3})\\s*(' + SUF + ')?\\s*(?:\\.|$|\\s+[A-ZÁÉÍÓÚ«])', ''));
+      const ml = !m && l.match(/^\s*Art[íi]culo\s+([a-záéíóú]+(?: y [a-záéíóú]+)?)\s*(?:\.|$)/i);
+      if (ml && numLetra(ml[1])) { seq.push(String(numLetra(ml[1]))); continue; }
       if (m) seq.push(m[1] + (m[2] ? ' ' + m[2].toLowerCase() : ''));
     }
     const tandas = []; let cur = null, prev = 0;
