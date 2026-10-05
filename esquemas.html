@@ -2946,5 +2946,131 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   let n=0; (function init(){ if(!document.getElementById('btn-marcas')&&n++<40) return setTimeout(init,100); estado(hayCfg()?'☁ …':'☁ sin sincronizar',hayCfg()?'':'mal',''); if(hayCfg()) programar(800); })();
 })();
 </script>
+<style id="estilo-repaso">
+.btn-campana{position:relative;display:flex;align-items:center;gap:6px;border:1.5px solid var(--verde-med);background:transparent;color:var(--verde-med);border-radius:20px;padding:8px 14px;font-size:15px;cursor:pointer;font-family:inherit}
+.btn-campana .bdg{position:absolute;top:-7px;right:-7px;min-width:19px;height:19px;border-radius:10px;background:#d64545;color:#fff;font-size:11px;font-weight:800;display:none;align-items:center;justify-content:center;padding:0 5px}
+.btn-campana.hay .bdg{display:flex}
+.btn-campana.hay{animation:campana 2.4s ease-in-out infinite;transform-origin:50% 0}
+@keyframes campana{0%,88%,100%{transform:rotate(0)}91%{transform:rotate(14deg)}94%{transform:rotate(-12deg)}97%{transform:rotate(8deg)}}
+.rep-ov{position:fixed;inset:0;z-index:99990;background:rgba(0,0,0,.45);display:none;align-items:flex-start;justify-content:center;padding:70px 14px 20px;overflow:auto}
+.rep-ov.on{display:flex}
+.rep-box{background:var(--panel);color:var(--texto);border:1px solid var(--borde);border-radius:var(--radio);width:100%;max-width:560px;padding:18px 18px 14px;box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.rep-box h2{margin:0 0 4px;font-size:20px}
+.rep-box .sub{margin:0 0 12px;font-size:12.5px;color:var(--texto-gris);line-height:1.4}
+.rep-box h3{margin:14px 0 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--texto-gris)}
+.rep-fila{display:flex;align-items:center;gap:8px;border:1px solid var(--borde);background:var(--panel-alt);border-radius:12px;padding:9px 12px;margin-bottom:6px}
+.rep-fila .t{flex:1;font-size:14px;font-weight:600;cursor:pointer}
+.rep-fila .t small{display:block;font-weight:400;color:var(--texto-gris);font-size:12px;margin-top:1px}
+.rep-fila.tarde{border-color:#d64545}
+.rep-fila.hoy{border-color:#e0a800}
+.rep-fila button,.rep-cierra{border:none;border-radius:16px;padding:6px 11px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit}
+.rep-fila .ok{background:var(--verde);color:#fff}
+.rep-fila .no{background:transparent;color:var(--texto-gris);border:1px solid var(--borde)}
+.rep-cierra{margin-top:10px;background:var(--panel-alt);color:var(--texto);width:100%;padding:9px}
+.rep-vacio{font-size:13.5px;color:var(--texto-gris);padding:6px 2px}
+.rep-ficha{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0 0}
+.rep-ficha button{border:1.5px solid var(--verde-med);background:transparent;color:var(--verde-med);border-radius:18px;padding:6px 13px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.rep-ficha button.sec{border-color:var(--borde);color:var(--texto-gris)}
+.rep-ficha .est{font-size:12.5px;color:var(--texto-gris)}
+.rep-ficha .est.tarde{color:#d64545;font-weight:700}
+.tema-nav-item .rep-punto{display:inline-block;width:9px;height:9px;border-radius:50%;margin-left:6px;vertical-align:middle}
+</style>
+<script id="script-repaso">
+/* ==================== REPASO ESPACIADO (curva del olvido, máximo 20 días) ====================
+   Cada tema guarda {last: fecha del último estudio/repaso, st: escalón}. Siguiente repaso = last + INTERVALOS[st]
+   (1, 3, 7, 14 y 20 días; a partir de ahí, cada 20 días: nunca más de 20 días sin repasar un tema).
+   Botón «🔔» arriba = temas que tocan hoy o van con retraso. En cada tema: «✅ Estudiado / repasado hoy» y «😵 Lo olvidé». */
+(function(){
+  const KEY='esquemas-repaso', INTERVALOS=[1,3,7,14,20], MAX=20, DIA=86400000;
+  let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
+  const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
+  const hoyN=()=>{ const d=new Date(); return Math.floor((Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()))/DIA); };
+  const aN=s=>{ const p=s.split('-'); return Math.floor(Date.UTC(+p[0],+p[1]-1,+p[2])/DIA); };
+  const aS=n=>{ const d=new Date(n*DIA); return d.getUTCFullYear()+'-'+String(d.getUTCMonth()+1).padStart(2,'0')+'-'+String(d.getUTCDate()).padStart(2,'0'); };
+  const fmt=n=>{ const d=new Date(n*DIA); return d.getUTCDate()+'/'+(d.getUTCMonth()+1); };
+  const intervalo=st=>Math.min(INTERVALOS[Math.min(st,INTERVALOS.length-1)],MAX);
+  const temas=()=>[...document.querySelectorAll('.tema-nav-item')].map(n=>({id:n.dataset.target,nombre:n.textContent.trim().replace(/\s+/g,' '),nav:n}));
+  function estado(id){
+    const r=data[id]; if(!r) return null;
+    const prox=aN(r.last)+intervalo(r.st||0), dif=prox-hoyN();
+    return {prox,dif};   // dif<0 retraso, 0 hoy, >0 faltan
+  }
+  function marcar(id,olvido){
+    const r=data[id], e=estado(id), h=aS(hoyN());
+    if(olvido) data[id]={last:h,st:0};
+    else if(!r) data[id]={last:h,st:0};
+    else data[id]={last:h,st:(e&&e.dif<=0)?(r.st||0)+1:(r.st||0)};   // si tocaba repasar, sube de escalón; si es antes de tiempo, lo mantiene
+    save(); refrescar();
+  }
+  function texto(id){
+    const e=estado(id); if(!e) return 'Aún sin estudiar';
+    if(e.dif<0) return 'Repaso atrasado '+(-e.dif)+(e.dif===-1?' día':' días')+' (tocaba el '+fmt(e.prox)+')';
+    if(e.dif===0) return 'Toca repasar HOY';
+    return 'Próximo repaso: '+fmt(e.prox)+' (en '+e.dif+(e.dif===1?' día':' días')+')';
+  }
+  // ---- campana ----
+  const top=document.querySelector('.topbar > div'), ref=document.getElementById('btn-marcas');
+  const bell=document.createElement('button'); bell.type='button'; bell.className='btn-campana'; bell.title='Temas que te toca repasar (curva del olvido)';
+  bell.innerHTML='🔔<span class="bdg">0</span>';
+  if(top) top.insertBefore(bell, ref||top.firstChild);
+  const ov=document.createElement('div'); ov.className='rep-ov'; ov.innerHTML='<div class="rep-box" id="rep-box"></div>';
+  document.body.appendChild(ov);
+  ov.addEventListener('click',ev=>{ if(ev.target===ov) ov.classList.remove('on'); });
+  bell.onclick=()=>{ pintarPanel(); ov.classList.add('on'); };
+  function fila(t,cls){
+    return '<div class="rep-fila '+cls+'"><div class="t" data-ir="'+t.id+'">'+t.nombre+'<small>'+texto(t.id)+'</small></div>'
+      +'<button class="ok" data-ok="'+t.id+'">✅ Repasado</button><button class="no" data-ol="'+t.id+'" title="Lo he olvidado: vuelve a empezar la curva">😵</button></div>';
+  }
+  function pintarPanel(){
+    const L=temas().map(t=>Object.assign(t,{e:estado(t.id)}));
+    const tarde=L.filter(t=>t.e&&t.e.dif<0).sort((a,b)=>a.e.dif-b.e.dif), hoy=L.filter(t=>t.e&&t.e.dif===0);
+    const prox=L.filter(t=>t.e&&t.e.dif>0).sort((a,b)=>a.e.dif-b.e.dif), nuevo=L.filter(t=>!t.e);
+    let h='<h2>🔔 Qué repasar hoy</h2><p class="sub">Curva del olvido: tras estudiar un tema se repasa a 1, 3, 7, 14 y 20 días, y desde ahí cada 20 días como máximo. Si lo repasas a tiempo, el hueco crece; si lo olvidas, vuelves a empezar.</p>';
+    if(tarde.length) h+='<h3>⚠️ Atrasados</h3>'+tarde.map(t=>fila(t,'tarde')).join('');
+    if(hoy.length) h+='<h3>📌 Toca hoy</h3>'+hoy.map(t=>fila(t,'hoy')).join('');
+    if(!tarde.length&&!hoy.length) h+='<div class="rep-vacio">'+(prox.length?'✅ Hoy no te toca repasar nada. ¡Bien!':'Aún no has marcado ningún tema como estudiado. Abre un tema y pulsa «✅ Estudiado / repasado hoy».')+'</div>';
+    if(prox.length) h+='<h3>Próximos</h3>'+prox.slice(0,6).map(t=>'<div class="rep-fila"><div class="t" data-ir="'+t.id+'">'+t.nombre+'<small>'+texto(t.id)+'</small></div></div>').join('');
+    if(nuevo.length) h+='<h3>Sin empezar</h3><div class="rep-vacio">'+nuevo.map(t=>t.nombre).join(' · ')+'</div>';
+    h+='<button class="rep-cierra" type="button">Cerrar</button>';
+    document.getElementById('rep-box').innerHTML=h;
+  }
+  ov.addEventListener('click',ev=>{
+    const b=ev.target.closest('button,[data-ir]'); if(!b) return;
+    if(b.classList.contains('rep-cierra')) ov.classList.remove('on');
+    else if(b.dataset.ok){ marcar(b.dataset.ok,false); pintarPanel(); }
+    else if(b.dataset.ol){ marcar(b.dataset.ol,true); pintarPanel(); }
+    else if(b.dataset.ir){ ov.classList.remove('on'); if(typeof mostrar==='function') mostrar(b.dataset.ir); }
+  });
+  // ---- botones dentro de cada tema ----
+  function fichas(){
+    document.querySelectorAll('.esquema').forEach(es=>{
+      const head=es.querySelector('.esquema-head'); if(!head) return;
+      let w=head.querySelector('.rep-ficha');
+      if(!w){
+        w=document.createElement('div'); w.className='rep-ficha';
+        w.innerHTML='<button type="button" data-a="ok">✅ Estudiado / repasado hoy</button><button type="button" class="sec" data-a="ol" title="Vuelve a empezar la curva de este tema">😵 Lo olvidé</button><span class="est"></span>';
+        w.addEventListener('click',ev=>{ const a=ev.target.dataset.a; if(a) marcar(es.id,a==='ol'); });
+        head.appendChild(w);
+      }
+      const e=estado(es.id), s=w.querySelector('.est'); s.textContent=texto(es.id); s.className='est'+(e&&e.dif<0?' tarde':'');
+    });
+  }
+  function refrescar(){
+    const L=temas(); let n=0;
+    L.forEach(t=>{
+      const e=estado(t.id); if(e&&e.dif<=0) n++;
+      let p=t.nav.querySelector('.rep-punto');
+      if(!e){ if(p) p.remove(); return; }
+      if(!p){ p=document.createElement('span'); p.className='rep-punto'; t.nav.appendChild(p); }
+      p.style.background=e.dif<0?'#d64545':e.dif===0?'#e0a800':'#4fa57f';
+      p.title=texto(t.id);
+    });
+    bell.classList.toggle('hay',n>0); bell.querySelector('.bdg').textContent=n;
+    fichas();
+  }
+  refrescar();
+  document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible') refrescar(); });
+})();
+</script>
 </body>
 </html>
