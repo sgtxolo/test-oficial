@@ -3072,5 +3072,90 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible') refrescar(); });
 })();
 </script>
+<style id="estilo-estudio">
+.barra-estudio{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:0 0 14px;padding:9px 12px;background:var(--panel);border:1px solid var(--borde);border-radius:var(--radio-sm);font-size:12.5px;color:var(--texto-gris)}
+.barra-estudio .grp{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.barra-estudio b{font-size:11px;letter-spacing:.05em;text-transform:uppercase}
+.barra-estudio button{border:1.5px solid var(--borde);background:transparent;color:var(--texto);border-radius:16px;padding:5px 11px;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit}
+.barra-estudio button.on{background:var(--verde);border-color:var(--verde);color:#fff}
+.barra-estudio .cc{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.fab-tapar{position:fixed;left:14px;bottom:14px;z-index:9000;width:46px;height:46px;border-radius:50%;border:none;background:var(--verde);color:#fff;font-size:21px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.fab-tapar.on{background:#d64545}
+body.tapar .articulo mark:not(.visto){color:transparent!important;text-shadow:none!important;cursor:pointer}
+body.tapar .articulo mark.visto{outline:2px solid rgba(47,107,82,.55)}
+.mk-btn{float:right;margin-left:8px;border:1.5px solid var(--borde);background:var(--panel);color:var(--texto-gris);border-radius:10px;padding:1px 9px;font-size:11.5px;font-weight:800;cursor:pointer;font-family:inherit}
+.articulo.mk-ok{border-left:6px solid #2f9e62}
+.articulo.mk-ok .mk-btn{background:#dff3e6;color:#1d6b3d;border-color:#2f9e62}
+.articulo.mk-rep{border-left:6px solid #d64545;background:rgba(214,69,69,.06)}
+.articulo.mk-rep .mk-btn{background:#fde0dd;color:#9b1c13;border-color:#d64545}
+.articulo.oculta-fil{display:none}
+</style>
+<script id="script-estudio">
+/* ==================== MODO ESTUDIO: tapar · dominada/repasar · filtro por color ====================
+   - 🙈 Tapar: oculta el texto subrayado (se ve el hueco de color); tocar un subrayado lo destapa.
+   - Cada ficha (artículo): botón ○ / ✅ dominada / 🔁 repasar, guardado en localStorage 'esquemas-fichas'. Vista «solo las que no domino».
+   - Filtro por color: atenúa el resto de subrayados y oculta las fichas que no tienen ese color. */
+(function(){
+  const KEY='esquemas-fichas';
+  let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
+  const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
+  const COLORES=[['','Todos',''],['m-autoridad','Autoridades','#bfe3c4'],['m-plazo','Plazos','#a9d3ea'],['m-accion','Acciones','#c9b7e0'],['m-destacable','Destacables','#f7c9a8'],['m-personalizado','Amarillo','#f7e79a']];
+  let vista='todas', color='';
+  const content=document.querySelector('.content'), lista=document.getElementById('lista-esquemas');
+  if(!content||!lista) return;
+  // estilos del filtro de color
+  const st=document.createElement('style');
+  st.textContent=COLORES.filter(c=>c[0]).map(c=>'body[data-fc="'+c[0]+'"] .articulo mark:not(.'+c[0]+'){background:transparent!important;color:inherit!important;opacity:.4;font-weight:400!important}').join('');
+  document.head.appendChild(st);
+  // barra
+  const bar=document.createElement('div'); bar.className='barra-estudio';
+  bar.innerHTML='<div class="grp"><b>Fichas</b><button data-v="todas" class="on">Todas</button><button data-v="pend">Las que no domino</button><button data-v="rep">🔁 Solo repasar</button></div>'
+    +'<div class="grp"><b>Color</b>'+COLORES.map((c,i)=>'<button data-c="'+c[0]+'"'+(i?'':' class="on"')+'>'+(c[2]?'<span class="cc" style="background:'+c[2]+'"></span>':'')+c[1]+'</button>').join('')+'</div>'
+    +'<div class="grp"><b>Tapar</b><button data-t="1">🙈 Modo tapar</button></div>';
+  content.insertBefore(bar,lista);
+  const fab=document.createElement('button'); fab.type='button'; fab.className='fab-tapar'; fab.textContent='🙈'; fab.title='Tapar / destapar lo subrayado (modo recitar)';
+  document.body.appendChild(fab);
+  function tapar(on){ document.body.classList.toggle('tapar',on); fab.classList.toggle('on',on); fab.textContent=on?'👁':'🙈';
+    bar.querySelector('[data-t]').classList.toggle('on',on); bar.querySelector('[data-t]').textContent=on?'👁 Destapar todo':'🙈 Modo tapar';
+    document.querySelectorAll('mark.visto').forEach(m=>m.classList.remove('visto')); }
+  fab.onclick=()=>tapar(!document.body.classList.contains('tapar'));
+  bar.addEventListener('click',ev=>{
+    const b=ev.target.closest('button'); if(!b) return;
+    if(b.dataset.t) tapar(!document.body.classList.contains('tapar'));
+    else if(b.dataset.v!==undefined){ vista=b.dataset.v; bar.querySelectorAll('[data-v]').forEach(x=>x.classList.toggle('on',x===b)); aplicar(); }
+    else if(b.dataset.c!==undefined){ color=b.dataset.c; bar.querySelectorAll('[data-c]').forEach(x=>x.classList.toggle('on',x===b)); if(color) document.body.dataset.fc=color; else delete document.body.dataset.fc; aplicar(); }
+  });
+  // tocar un subrayado tapado lo destapa (antes que cualquier otra acción de la marca)
+  document.addEventListener('click',ev=>{
+    if(!document.body.classList.contains('tapar')) return;
+    const m=ev.target.closest&&ev.target.closest('.articulo mark'); if(!m||m.classList.contains('visto')) return;
+    ev.preventDefault(); ev.stopPropagation(); m.classList.add('visto');
+  },true);
+  // botón por ficha
+  const clave=a=>{ const es=a.closest('.esquema'), h=a.querySelector('.articulo-head'); return (es?es.id:'')+'|'+(h&&h.firstChild?h.firstChild.textContent.trim():''); };
+  const ETQ={'':'○ sin marcar',ok:'✅ dominada',rep:'🔁 repasar'};
+  function pintar(a){
+    const v=data[clave(a)]||'';
+    a.classList.toggle('mk-ok',v==='ok'); a.classList.toggle('mk-rep',v==='rep');
+    const b=a.querySelector('.mk-btn'); if(b) b.textContent=ETQ[v];
+  }
+  document.querySelectorAll('.articulo').forEach(a=>{
+    const h=a.querySelector('.articulo-head'); if(!h) return;
+    const b=document.createElement('button'); b.type='button'; b.className='mk-btn'; b.title='Marca esta ficha: sin marcar → dominada → repasar';
+    b.onclick=ev=>{ ev.stopPropagation(); const k=clave(a), v=data[k]||''; const n=v===''?'ok':v==='ok'?'rep':''; if(n) data[k]=n; else delete data[k]; save(); pintar(a); aplicar(); };
+    h.insertBefore(b,h.querySelector('.st-chip'));
+    pintar(a);
+  });
+  function aplicar(){
+    document.querySelectorAll('.articulo').forEach(a=>{
+      const v=data[clave(a)]||''; let ver=true;
+      if(vista==='pend') ver=v!=='ok'; else if(vista==='rep') ver=v==='rep';
+      if(ver&&color) ver=!!a.querySelector('mark.'+color);
+      a.classList.toggle('oculta-fil',!ver);
+    });
+  }
+  aplicar();
+})();
+</script>
 </body>
 </html>
