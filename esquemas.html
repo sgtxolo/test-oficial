@@ -3099,7 +3099,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   const KEY='esquemas-fichas';
   let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
   const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
-  const COLORES=[['','Todos',''],['m-autoridad','Autoridades','#bfe3c4'],['m-plazo','Plazos','#a9d3ea'],['m-accion','Acciones','#c9b7e0'],['m-destacable','Destacables','#f7c9a8'],['m-personalizado','Amarillo','#f7e79a']];
+  const COLORES=[['','Todos',''],['m-autoridad','Autoridades','#bfe3c4'],['m-plazo','Plazos','#a9d3ea']];
   let vista='todas', color='';
   const content=document.querySelector('.content'), lista=document.getElementById('lista-esquemas');
   if(!content||!lista) return;
