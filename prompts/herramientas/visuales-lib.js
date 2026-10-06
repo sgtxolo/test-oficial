@@ -19,6 +19,14 @@ const flujo = (titulo, pasos) => `<div class="vis"><div class="vis-t"><i>➜</i>
 const cols = (titulo, columnas, medio) => `<div class="vis"><div class="vis-t"><i>⇄</i>${titulo}</div><div class="vis-comp${medio ? ' med' : ''}" style="--n:${columnas.length}">${columnas.map((c, i) => `<div class="vis-col"><h5>${X(c.t)}</h5><ul>${c.l.map(x => `<li>${X(x)}</li>`).join('')}</ul></div>${medio && i === 0 ? `<div class="vis-mid">${medio}</div>` : ''}`).join('')}</div></div>`;
 const plazos = (titulo, items) => `<div class="vis"><div class="vis-t"><i>⏱</i>${titulo}</div><div class="vis-plazos">${items.map(([n, t]) => `<div class="vis-plazo"><span class="n">${n}</span>${X(t)}</div>`).join('')}</div></div>`;
 
+// Tabla jerárquica (objeto → subobjeto → plazo y cómputo), como las tablas del temario.
+// nodos = [{l:'etiqueta', c:'o|v|c', h:[nodos…]} | {p:'2 meses', c:'o|v|n', t:'texto'}]
+const tabla = (titulo, cab, nodos) => {
+  const hoja = h => `<div class="vt-hoja"><span class="vt-p ${h.c || ''}">${h.p}</span><div class="vt-t">${X(h.t)}</div></div>`;
+  const nodo = n => n.p ? hoja(n) : `<div class="vt-nodo"><div class="vt-et ${n.c || ''}">${X(n.l)}</div><div class="vt-hijos">${n.h.map(nodo).join('')}</div></div>`;
+  return `<div class="vis"><div class="vis-t"><i>▦</i>${titulo}</div><div class="vis-tabla"><div class="vt-cab"><span>${cab[0]}</span><span>${cab[1]}</span></div>${nodos.map(nodo).join('')}</div></div>`;
+};
+
 // Inserta los diagramas V=[[cabecera de la ficha tras la que van, html]] en el esquema del tema N de esquemas.html.
 function inserta(N, V, F = 'esquemas.html') {
   let s = fs.readFileSync(F, 'utf8');
@@ -57,4 +65,4 @@ function inserta(N, V, F = 'esquemas.html') {
   fs.writeFileSync(F, out.join('\n'));
   console.log(`Tema ${N}: diagramas ${V.length}, colocados ${usados.size}`);
 }
-module.exports = { R, P, D, Y, K, X, arbol, flujo, cols, plazos, inserta };
+module.exports = { R, P, D, Y, K, X, arbol, flujo, cols, plazos, tabla, inserta };

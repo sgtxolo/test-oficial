@@ -1,6 +1,6 @@
 // Esquemas visuales del Tema 13 (Ley 29/1998 LJCA). Uso: node prompts/herramientas/visuales-t13.js
 const L = require('./visuales-lib.js');
-const { R, P, D, Y, K, arbol, flujo, cols, plazos } = L;
+const { R, P, D, Y, K, arbol, flujo, cols, plazos, tabla } = L;
 const V = []; const v = (despues, html) => V.push([despues, html]);
 
 v('Artículo 1 — Ámbito', arbol('Qué controla el orden contencioso-administrativo (art. 1)', `${D('Orden contencioso-administrativo')}`, [
@@ -76,16 +76,35 @@ v('Artículo 45 — Escrito de interposición', flujo('Interposición del recurs
   { et: '2', t: `Documentos: representación (${R('salvo si figurase unido a otro recurso pendiente ante el mismo Juzgado o Tribunal')}); copia de la disposición o acto; si hay inactividad o vía de hecho, ${R('se mencionará el órgano o dependencia al que se atribuya')}` },
   { et: '3', t: `El Secretario judicial examina la validez; si faltan documentos, requiere subsanación en ${R('diez días')}; si no, archivo` },
   { bif: [{ et: 'Lesividad', t: `Se inicia ${R('por demanda formulada con arreglo al artículo 56.1')}, con la declaración de lesividad y el expediente` }, { et: 'Sin terceros', t: `El recurso contra disposición, acto, inactividad o vía de hecho sin terceros interesados ${R('podrá iniciarse también mediante demanda')}` }] }]));
-v('Artículo 46 — Plazos para interponer', plazos('Plazos de interposición del recurso (art. 46)', [
-  ['2 meses', `${R('Contados desde el día siguiente al de la publicación de la disposición o de la notificación o publicación del acto que ponga fin a la vía administrativa, si fuera expreso')}`],
-  ['6 meses', `Acto presunto: ${R('para el solicitante y otros posibles interesados, a partir del día siguiente a aquel en que se produzca el acto presunto')}. Nota (TC): en el silencio negativo la vía queda abierta ${D('sine die')} mientras no resuelva expresamente`],
-  ['2 meses', `Inactividad (art. 29): ${R('a partir del día siguiente al vencimiento de los plazos señalados')} · reclamación previa de 3 meses · solicitud de ejecución de 1 mes`],
-  ['10 días', `Vía de hecho con requerimiento: ${R('diez días')} desde el día siguiente a la terminación del plazo del art. 30`],
-  ['20 días', `Vía de hecho sin requerimiento: ${R('veinte días desde el día en que se inició la actuación')}`],
-  ['2 meses / 6 meses', `Reposición: ${R('desde el día siguiente a aquel en que se notifique la resolución expresa del recurso potestativo')} (2 meses) o en que deba entenderse presuntamente desestimado (6 meses)`],
-  ['2 meses', `Lesividad: ${R('dos meses')} desde el día siguiente a la declaración de lesividad`],
-  ['2 meses', `Litigios entre Administraciones: ${R('dos meses, salvo que por Ley se establezca otra cosa')}`],
-  ['2 meses', `Con requerimiento previo: ${R('desde el día siguiente a aquel en que se reciba la comunicación del acuerdo expreso o se entienda presuntamente rechazado')} (1 mes sin contestación)`]]));
+v('Artículo 46 — Plazos para interponer', tabla('Recurso contencioso-administrativo: plazos de interposición y cómputo (arts. 45 y 46 · EX)', ['Objeto del recurso', 'Plazo de interposición y cómputo'], [
+  { l: 'DISPOSICIÓN GENERAL', h: [
+    { p: '2 meses', t: `${R('Contados desde el día siguiente al de la publicación de la disposición')} impugnada` }] },
+  { l: 'ACTO', h: [
+    { l: 'EXPRESO', c: 'o', h: [
+      { p: '2 meses', t: `${R('Contados desde el día siguiente al de la notificación o publicación del acto que ponga fin a la vía administrativa')}, si fuera expreso` }] },
+    { l: 'PRESUNTO', c: 'o', h: [
+      { p: '6 meses*', c: 'o', t: `El artículo 46.1 LJCA dispone que el plazo es de ${P('6 meses')}, ${R('a partir del día siguiente a aquel en que, de acuerdo con la normativa específica, se produzca el acto presunto')}` },
+      { p: 'NOTA', c: 'n', t: `Sin embargo, el <mark class="m-autoridad">Tribunal Constitucional</mark> ha interpretado que el plazo de caducidad de 6 meses ${K('no')} resulta aplicable a los supuestos de silencio negativo: queda abierta (${D('sine die')}) la vía de recurso mientras la Administración ${K('no')} resuelva expresamente` }] },
+    { l: 'Si se utilizó recurso potestativo de reposición (actos que causan estado)', c: 'o', h: [
+      { p: '2 meses', t: `${R('Desde el día siguiente a aquel en que se notifique la resolución expresa del recurso potestativo de reposición')}` },
+      { p: '6 meses', c: 'o', t: `Desde el día siguiente a aquel en que el recurso deba entenderse ${R('presuntamente desestimado')}` }] }] },
+  { l: 'VÍA DE HECHO', h: [
+    { l: 'Con requerimiento previo de cesación', c: 'v', h: [
+      { p: '10 días', c: 'v', t: `${R('Diez días')} desde el día siguiente a la terminación del plazo para atender el requerimiento (que es de ${P('10 días')})` }] },
+    { l: `Sin requerimiento previo de cesación`, c: 'v', h: [
+      { p: '20 días', c: 'v', t: `${R('Veinte días desde el día en que se inició la actuación')} administrativa en vía de hecho` }] }] },
+  { l: 'INACTIVIDAD DE LA ADMINISTRACIÓN (obligación de realizar una prestación · inejecución de actos firmes)', h: [
+    { l: 'Reclamación previa (3 meses)', c: 'c', h: [
+      { p: '2 meses', t: `${R('A partir del día siguiente al vencimiento de los plazos señalados')}: transcurso del plazo de ${P('3 meses')} sin que la Administración atendiese la reclamación o no hubiera llegado a un acuerdo con los interesados` }] },
+    { l: 'Solicitud de ejecución (1 mes)', c: 'c', h: [
+      { p: '2 meses', t: `Desde el día siguiente al transcurso del plazo de ${P('1 mes')} sin que la Administración ejecute sus actos firmes. Tramitación por el procedimiento abreviado` }] }] },
+  { l: 'RECURSO DE LESIVIDAD (demanda)', h: [
+    { p: '2 meses', t: `${R('Dos meses')} desde el día siguiente a la fecha de la declaración de lesividad` }] },
+  { l: 'LITIGIOS ENTRE ADMINISTRACIONES PÚBLICAS (no cabe interponer recurso en vía administrativa)', h: [
+    { l: 'Sin requerimiento previo', c: 'v', h: [
+      { p: '2 meses', t: `${R('Dos meses, salvo que por Ley se establezca otra cosa')}` }] },
+    { l: 'Con requerimiento previo', c: 'v', h: [
+      { p: '2 meses', t: `${R('Desde el día siguiente a aquel en que se reciba la comunicación del acuerdo expreso o se entienda presuntamente rechazado')} (transcurso de ${P('1 mes')} sin contestación al requerimiento)` }] }] }]));
 v('Artículo 47 — Anuncio', flujo('Anuncio y expediente administrativo (arts. 47 y 48)', [
   { et: '47', t: `El letrado de la Administración de Justicia, ${R('en el siguiente día hábil')}, acuerda anunciar la interposición si lo solicita el recurrente` },
   { et: '48.1', t: `Requiere a la Administración el expediente: se reclama al ${R('órgano autor de la disposición o acto impugnado o a aquél al que se impute la inactividad o vía de hecho')}` },
