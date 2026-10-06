@@ -3904,8 +3904,8 @@ body.solo-of .resp-strip{display:none}
 #cat-pop .cat-b{display:block;width:100%;margin-top:8px;height:30px;border-radius:7px;cursor:pointer;background:transparent;font:inherit}
 #cat-pop .cat-del{border:1px solid #c33;color:#c33}
 #cat-pop .cat-rst{border:1px solid var(--borde,#ccc);color:var(--texto,#222);font-size:12px}
-body.pm-on.cat-normal .txt mark:not(.m-resp),body.pm-on.cat-normal .txt u.m-clave{cursor:pointer}
-body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.m-clave:hover{outline:2px solid rgba(0,0,0,.35);outline-offset:1px}
+body.pm-on.cat-normal .txt mark:not(.m-resp),body.pm-on.cat-normal .txt u.m-clave,body.pm-on.cat-normal .vis mark:not(.m-resp),body.pm-on.cat-normal .vis u.m-clave{cursor:pointer}
+body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.m-clave:hover,body.pm-on.cat-normal .vis mark:not(.m-resp):hover,body.pm-on.cat-normal .vis u.m-clave:hover{outline:2px solid rgba(0,0,0,.35);outline-offset:1px}
 @media print{#cat-pop{display:none!important}}
 </style>
 <div id="cat-pop"></div>
@@ -3925,7 +3925,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   const mkEl=cat=>{ const el=document.createElement(cat==='clave'?'u':'mark'); el.className='m-'+cat; return el; };
   function textNodes(root){
     const out=[], w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
-    for(let n;(n=w.nextNode());){ const p=n.parentElement; if(!p||p.closest(SKIP)||!p.closest('.articulo .txt')) continue; out.push(n); }
+    const enVis=root.classList&&root.classList.contains('vis');   // los cuadros visuales (árboles, flujos…) se marcan dentro de su propio bloque
+    for(let n;(n=w.nextNode());){ const p=n.parentElement; if(!p||p.closest(SKIP)||!(enVis||p.closest('.articulo .txt'))) continue; out.push(n); }
     return out;
   }
   function offsetOf(root,c,o){
@@ -3941,12 +3942,14 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   }
   function wrapAdd(esq,a){
     let acc=0; const jobs=[];
-    for(const t of textNodes(esq)){ const s=acc, e=acc+t.length; acc=e; const from=Math.max(a.s,s)-s, to=Math.min(a.e,e)-s; if(to>from&&t.nodeValue.slice(from,to).trim()!=='') jobs.push([t,from,to]); }
+    const raiz=a.vi!=null?esq.querySelectorAll('.vis')[a.vi]:esq; if(!raiz) return;
+    for(const t of textNodes(raiz)){ const s=acc, e=acc+t.length; acc=e; const from=Math.max(a.s,s)-s, to=Math.min(a.e,e)-s; if(to>from&&t.nodeValue.slice(from,to).trim()!=='') jobs.push([t,from,to]); }
     jobs.forEach(([t,from,to])=>{ let mid=t; if(from>0) mid=t.splitText(from); if(to-from<mid.length) mid.splitText(to-from); const el=mkEl(a.c); el.dataset.add=a.n; mid.parentNode.replaceChild(el,mid); el.appendChild(mid); });
   }
   function aplicar(){
     document.querySelectorAll('.esquema').forEach(esq=>{
-      const orig=[...esq.querySelectorAll('.articulo .txt mark, .articulo .txt u.m-clave')].filter(esAuto);
+      /* primero los del articulado (índices históricos intactos) y después los de los cuadros visuales */
+      const orig=[...esq.querySelectorAll('.articulo .txt mark, .articulo .txt u.m-clave'),...esq.querySelectorAll('.vis mark, .vis u.m-clave')].filter(esAuto);
       orig.forEach((el,i)=>{ el.dataset.sid=i; });
       const b=data[esq.id]; if(!b) return;
       Object.keys(b.e).forEach(k=>{
@@ -3977,7 +3980,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     if(!document.body.classList.contains('pm-on')||!normal()){ cerrar(); return; }
     const el=e.target.closest&&e.target.closest('mark,u');
     const sel=getSelection(), haySel=sel&&!sel.isCollapsed;
-    if(!el||!esAuto(el)||!el.closest('.articulo .txt')||haySel){ if(!haySel) cerrar(); return; }
+    if(!el||!esAuto(el)||!el.closest('.articulo .txt, .vis')||haySel){ if(!haySel) cerrar(); return; }
     e.preventDefault(); e.stopPropagation();
     cur={esq:el.closest('.esquema'),el};
     abrir('Cambiar este subrayado',catDe(el),e.clientX,e.clientY,true);
@@ -3988,7 +3991,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       const sel=getSelection(); if(!sel||sel.isCollapsed||!sel.rangeCount) return;
       const rg=sel.getRangeAt(0), esq=document.querySelector('.esquema.active');
       const anc=rg.commonAncestorContainer.nodeType===1?rg.commonAncestorContainer:rg.commonAncestorContainer.parentElement;
-      if(!esq||!esq.contains(anc)||!anc.closest('.articulo .txt')) return;
+      if(!esq||!esq.contains(anc)||!anc.closest('.articulo .txt, .vis')) return;
       cur={esq,range:rg.cloneRange()};
       abrir('Subrayar la selección como…',null,e.clientX,e.clientY,false);
     },30);
@@ -4022,8 +4025,9 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
         else { recolor(el,b.dataset.c); bk.e[sid]={t,c:b.dataset.c}; }
       }
     } else if(cur.range){
-      const rg=cur.range, s=offsetOf(esq,rg.startContainer,rg.startOffset), en=offsetOf(esq,rg.endContainer,rg.endOffset);
-      if(en>s){ const a={n:++bk.n,s,e:en,c:b.dataset.c}; bk.a.push(a); wrapAdd(esq,a); }
+      const rg=cur.range, ac=rg.commonAncestorContainer, vis=(ac.nodeType===1?ac:ac.parentElement).closest('.vis');
+      const raiz=vis||esq, s=offsetOf(raiz,rg.startContainer,rg.startOffset), en=offsetOf(raiz,rg.endContainer,rg.endOffset);
+      if(en>s){ const a={n:++bk.n,s,e:en,c:b.dataset.c}; if(vis) a.vi=[...esq.querySelectorAll('.vis')].indexOf(vis); bk.a.push(a); wrapAdd(esq,a); }
       getSelection().removeAllRanges();
     }
     save(); cerrar();
