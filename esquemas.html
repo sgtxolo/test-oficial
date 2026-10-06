@@ -4229,7 +4229,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   }
   let snap={}; (function(){ const o=actual(); Object.keys(o).forEach(id=>snap[id]=JSON.stringify(o[id])); })();
   (function(){ const ts=rd(TS), o=actual(); let c=false; Object.keys(o).forEach(id=>{ const v=o[id]; const hay=(v.m&&((v.m.t&&v.m.t.length)||(v.m.f&&v.m.f.length)))||(v.c&&(Object.keys(v.c.e||{}).length||(v.c.a||[]).length))||v.f||v.r||v.u; if(hay&&!ts[id]){ ts[id]=1; c=true; } }); if(c) wr(TS,ts); })();
-  let ignorar=false, pendiente=false, ocupado=false, timer=0, agendado=false;
+  let ultimoError='', ignorar=false, pendiente=false, ocupado=false, timer=0, agendado=false;
 
   /* ---------- indicador ---------- */
   let badge=null;
@@ -4238,12 +4238,16 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       const ref=document.getElementById('btn-marcas'); if(!ref||!ref.parentNode) return;
       badge=document.createElement('span'); badge.id='sync-st'; badge.style.cssText='font-size:12px;font-weight:700;padding:4px 8px;border-radius:12px;cursor:pointer;white-space:nowrap;border:1px solid var(--borde,#ccc)';
       badge.onclick=()=>{
-        if(hayCfg()){ sincronizar(); return; }
+        if(hayCfg()){
+          if(!ultimoError){ sincronizar(); return; }
+          if(!confirm('No se pudo sincronizar:\n'+ultimoError+'\n\n¿Quieres volver a escribir el repositorio y el token?\n(Aceptar = cambiarlos · Cancelar = reintentar con los actuales)')){ sincronizar(); return; }
+        }
         const c=cfg();
         const repo=prompt('Repositorio privado de GitHub donde se guardan tus marcas (usuario/repositorio):',c.repo||'sgtxolo/copia-seguridad-conocimientos'); if(!repo) return;
-        const token=prompt('Pega tu token de GitHub (con permiso Contents: Read and write sobre ese repositorio). Se guarda solo en este dispositivo:'); if(!token) return;
-        c.repo=repo.trim(); c.token=token.trim(); origSet.call(localStorage,CFG,JSON.stringify(c));
-        sincronizar();
+        let token=prompt('Pega el token de GitHub (empieza por github_pat_… y necesita permiso Contents: Read and write sobre ese repositorio). Se guarda solo en este dispositivo:'); if(!token) return;
+        token=token.replace(/[\s"'`]/g,'');
+        c.repo=repo.trim().replace(/^https?:\/\/github\.com\//,'').replace(/\.git$/,'').replace(/\/+$/,''); c.token=token; origSet.call(localStorage,CFG,JSON.stringify(c));
+        ultimoError=''; sincronizar();
       };
       ref.parentNode.insertBefore(badge,ref);
     }
@@ -4259,7 +4263,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   async function leer(){
     const r=await api({cache:'no-store'});
     if(r.status===404) return {sha:null,datos:{}};
-    if(!r.ok) throw new Error('GitHub respondió '+r.status);
+    if(!r.ok) throw new Error('GitHub respondió '+r.status+(r.status===401?' (token no válido o caducado)':r.status===403?' (el token no tiene permiso Contents: Read and write)':''));
     const j=await r.json(); let datos={}; try{ datos=JSON.parse(unb64(j.content))||{}; }catch(e){}
     return {sha:j.sha,datos};
   }
@@ -4297,8 +4301,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
         break;
       }
       sessionStorage.removeItem('esq-sync-recarga');
-      estado('☁ ✓','ok','Marcas sincronizadas · '+new Date().toLocaleTimeString());
-    }catch(e){ estado('☁ ⚠','mal','No se pudo sincronizar: '+e.message+' (pulsa para reintentar)'); }
+      ultimoError=''; estado('☁ ✓','ok','Marcas sincronizadas · '+new Date().toLocaleTimeString());
+    }catch(e){ ultimoError=e.message==='Failed to fetch'?'Sin conexión o bloqueado por la red':e.message; estado('☁ ⚠','mal','No se pudo sincronizar: '+ultimoError+' (pulsa para reintentar o cambiar el token)'); }
     ocupado=false;
     if(pendiente){ pendiente=false; programar(1500); }
   }
