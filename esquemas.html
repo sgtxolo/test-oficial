@@ -615,7 +615,7 @@ setTheme(saved);
 // ---- EXPORTAR A PDF ----
 // Usa el diálogo de impresión del navegador (elegir "Guardar como PDF") solo sobre el esquema activo.
 document.getElementById('btn-exportar-pdf').addEventListener('click', () => {
-  window.print();
+  if (window.esqPdfMenu) window.esqPdfMenu(); else window.print();
 });
 
 // ---- TEMA 4 (Gestión de las fronteras de la UE) ----
@@ -3766,10 +3766,12 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     if(f.n!=null) el.dataset.pf=f.n;
     return el;
   }
-  function renderShapes(esq){
+  function renderShapes(esq,id){
+    id=id||esq.id;
     const s=svgOf(esq); s.querySelectorAll('[data-pf]').forEach(e=>e.remove());
-    ((data[esq.id]&&data[esq.id].f)||[]).forEach(f=>s.appendChild(shapeEl(esq,f)));
+    ((data[id]&&data[id].f)||[]).forEach(f=>s.appendChild(shapeEl(esq,f)));
   }
+  window.pmRenderShapes=renderShapes;   // lo usa el PDF/impresión para recolocar las formas sobre la copia a ancho fijo
   /* forma rápida alrededor de una palabra subrayada (cuadrado, círculo o flecha) desde el menú «Cambiar este subrayado» */
   window.pmAddShape=function(esq,k,rc){
     const r=esq.getBoundingClientRect(), X=x=>(x-r.left)/r.width, Y=y=>y-r.top, pad=3;
@@ -4132,6 +4134,55 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible') programar(500); });
   addEventListener('online',()=>programar(500));
   let n=0; (function init(){ if(!document.getElementById('btn-marcas')&&n++<40) return setTimeout(init,100); estado(hayCfg()?'☁ …':'☁ sin sincronizar',hayCfg()?'':'mal',''); if(hayCfg()) programar(800); })();
+})();
+</script>
+<style id="estilo-pdf">
+#print-host{position:fixed;left:-10000px;top:0;width:716px;background:#fff;color:#000}
+#print-host .esquema{display:block!important;padding:0!important;margin:0!important;max-width:none!important;width:716px!important;box-shadow:none!important;border-radius:0!important}
+#pdf-menu{position:fixed;z-index:99995;background:var(--panel,#fff);color:var(--texto,#222);border:1.5px solid var(--borde,#ccc);border-radius:14px;padding:10px;box-shadow:0 10px 30px rgba(0,0,0,.25);width:min(300px,calc(100vw - 24px));display:none}
+#pdf-menu.on{display:block}
+#pdf-menu button{display:block;width:100%;text-align:left;border:1.5px solid var(--verde-med,#2e7d5b);background:transparent;color:var(--verde-med,#2e7d5b);border-radius:12px;padding:9px 12px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit;margin-bottom:6px}
+#pdf-menu button:hover{background:var(--verde-suave,#e7efe8)}
+#pdf-menu small{display:block;font-size:12px;line-height:1.4;color:var(--texto-gris,#666)}
+@page{size:A4;margin:10mm}
+@media print{
+  body.imp-fijo>*:not(#print-host){display:none!important}
+  body.imp-fijo #print-host{position:static;left:auto;width:716px;margin:0}
+  #pdf-menu{display:none!important}
+}
+</style>
+<script id="script-pdf">
+/* PDF / impresión con TODAS tus marcas: se imprime una copia del esquema a ancho fijo (A4) y las flechas, cuadrados y
+   dibujos se recolocan sobre ese ancho, para que queden exactamente sobre las palabras que marcaste. */
+(function(){
+  let menu=null;
+  function imprimir(){
+    const esq=document.querySelector('.esquema.active'); if(!esq){ window.print(); return; }
+    const host=document.createElement('div'); host.id='print-host';
+    const cl=esq.cloneNode(true); cl.removeAttribute('id');
+    host.appendChild(cl); document.body.appendChild(host);
+    void cl.offsetHeight;                                    // maqueta la copia a 716 px
+    if(window.pmRenderShapes) window.pmRenderShapes(cl,esq.id);
+    document.body.classList.add('imp-fijo');
+    const fin=()=>{ document.body.classList.remove('imp-fijo'); host.remove(); removeEventListener('afterprint',fin); };
+    addEventListener('afterprint',fin);
+    setTimeout(()=>window.print(),150);
+  }
+  window.esqImprimir=imprimir;
+  window.esqPdfMenu=function(){
+    const b=document.getElementById('btn-exportar-pdf');
+    if(!menu){
+      menu=document.createElement('div'); menu.id='pdf-menu';
+      menu.innerHTML='<button type="button" data-a="dl">⬇️ Descargar PDF</button><button type="button" data-a="pr">🖨 Imprimir</button>'
+        +'<small>Incluye todas tus marcas (subrayados, flechas, cuadrados y dibujos). Al descargar, en «Destino» elige <b>Guardar como PDF</b> y pulsa Guardar.</small>';
+      menu.onclick=e=>{ const x=e.target.closest('button'); if(!x) return; menu.classList.remove('on'); imprimir(); };
+      document.body.appendChild(menu);
+      document.addEventListener('pointerdown',e=>{ if(menu.classList.contains('on')&&!menu.contains(e.target)&&!b.contains(e.target)) menu.classList.remove('on'); },true);
+    }
+    if(menu.classList.contains('on')){ menu.classList.remove('on'); return; }
+    const r=b.getBoundingClientRect(); menu.classList.add('on');
+    menu.style.top=(r.bottom+8)+'px'; menu.style.left=Math.max(12,Math.min(r.right-menu.offsetWidth,innerWidth-menu.offsetWidth-12))+'px';
+  };
 })();
 </script>
 <style id="estilo-repaso">
