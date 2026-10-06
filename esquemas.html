@@ -242,6 +242,7 @@ body.voz-abierta .voz-bar{display:flex}
     <h1>📚 Esquemas de Estudio</h1>
     <div style="display:flex;align-items:center;gap:10px">
       <span class="vista-of" id="vista-of" title="Todo: preguntas oficiales y de IA. Solo oficiales: únicamente lo que ha salido en exámenes de la academia (esquema mucho más corto)"><button type="button" data-v="todo" class="on">📚 Todo</button><button type="button" data-v="of">⭐ Solo oficiales</button></span>
+      <button class="btn-pdf" id="btn-resumen" type="button" title="Mostrar solo los artículos que has marcado con R (resumen)">R Resumen</button>
       <button class="btn-pdf" id="btn-marcas" type="button" title="Mostrar u ocultar las herramientas de marcas">🖍 Marcas</button>
       <button class="btn-pdf" id="btn-voz-menu" type="button" title="Leer el esquema en voz alta">🔊 Voz</button>
       <button class="btn-pdf" id="btn-exportar-pdf">⬇️ PDF</button>
@@ -3875,6 +3876,65 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
 @media print{#pm-ui,#pm-pop{display:none!important}}
 </style>
 <div id="pm-ui"></div><div id="pm-pop"></div>
+<style id="estilo-resumen">
+.btn-res{float:right;margin-left:8px;border:1.5px solid var(--verde-med,#2f6b53);background:transparent;color:var(--verde-med,#2f6b53);border-radius:8px;min-width:28px;height:24px;font-weight:800;font-size:12px;font-family:inherit;cursor:pointer;padding:0 8px;line-height:20px}
+.btn-res::before{content:"R"}
+.btn-res.on{background:var(--verde,#1c4d3c);border-color:var(--verde,#1c4d3c);color:#fff}
+#btn-resumen.on{background:var(--verde,#1c4d3c);color:#fff}
+body.solo-res .sin-res{display:none!important}
+@media print{.btn-res{display:none!important}}
+</style>
+<script id="script-resumen">
+/* Marca R (resumen) por artículo + botón superior «R Resumen» que deja solo los artículos marcados. No modifica el contenido del esquema. */
+(function(){
+  const KEY='esquemas-resumen-v1', VISTA='esquemas-resumen-vista';
+  let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
+  const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
+  const clave=art=>{ const h=art.querySelector('.articulo-head'); const n=h&&[...h.childNodes].find(x=>x.nodeType===3&&x.textContent.trim()); return n?n.textContent.trim():''; };
+  const marcado=(esq,art)=>(data[esq.id]||[]).includes(clave(art));
+  function filtrar(){
+    const on=document.body.classList.contains('solo-res');
+    document.querySelectorAll('.esquema').forEach(esq=>{
+      esq.querySelectorAll('.articulo').forEach(a=>a.classList.toggle('sin-res',on&&!marcado(esq,a)));
+      esq.querySelectorAll('.trampa').forEach(t=>{
+        let a=t.previousElementSibling; while(a&&!a.classList.contains('articulo')&&!a.classList.contains('bloque-titulo')) a=a.previousElementSibling;
+        t.classList.toggle('sin-res',on&&!(a&&a.classList.contains('articulo')&&!a.classList.contains('sin-res')));
+      });
+      esq.querySelectorAll('.bloque-titulo').forEach(b=>{
+        let n=b.nextElementSibling,vis=false;
+        while(n&&!n.classList.contains('bloque-titulo')){ if(n.classList.contains('articulo')&&!n.classList.contains('sin-res')){vis=true;break;} n=n.nextElementSibling; }
+        b.classList.toggle('sin-res',on&&!vis);
+      });
+    });
+  }
+  function montar(){
+    document.querySelectorAll('.esquema').forEach(esq=>{
+      esq.querySelectorAll('.articulo').forEach(art=>{
+        const h=art.querySelector('.articulo-head'); if(!h||h.querySelector('.btn-res')) return;
+        const b=document.createElement('button'); b.type='button'; b.className='btn-res'+(marcado(esq,art)?' on':'');
+        b.title='Marcar este artículo como parte del resumen (R)';
+        h.prepend(b);
+      });
+    });
+  }
+  document.addEventListener('click',e=>{
+    const b=e.target.closest&&e.target.closest('.btn-res'); if(!b) return;
+    e.preventDefault(); e.stopPropagation();
+    const art=b.closest('.articulo'), esq=art.closest('.esquema'), k=clave(art), l=data[esq.id]=data[esq.id]||[];
+    const i=l.indexOf(k); if(i<0) l.push(k); else l.splice(i,1);
+    b.classList.toggle('on',i<0); save(); filtrar();
+  },true);
+  function init(){
+    montar();
+    const bt=document.getElementById('btn-resumen');
+    const poner=(on,g)=>{ document.body.classList.toggle('solo-res',on); bt&&bt.classList.toggle('on',on); filtrar(); if(g){ try{localStorage.setItem(VISTA,on?'1':'0');}catch(e){} } };
+    if(bt) bt.addEventListener('click',()=>poner(!document.body.classList.contains('solo-res'),true));
+    let v='0'; try{v=localStorage.getItem(VISTA)||'0';}catch(e){}
+    if(v==='1') poner(true,false);
+  }
+  let n=0;(function w(){ if(!document.querySelector('.esquema .articulo')&&n++<60) return setTimeout(w,100); init(); })();
+})();
+</script>
 <script id="script-marcas">
 /* Marcas de estudio: resaltar, subrayar, tachar, línea, flecha, rectángulo, óvalo y mano alzada sobre cada esquema (guardadas en localStorage) */
 (function(){
