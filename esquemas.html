@@ -3580,6 +3580,31 @@ body.embed #app{padding-top:4px}
     });
   }
 
+  // ---------- Cuadros visuales (árboles, flujos…): sus respuestas apuntan a las preguntas de la respuesta del articulado que más se les parece ----------
+  function enlazarVis(){
+    const STOP = new Set(['de','la','el','los','las','en','a','y','o','que','se','del','al','un','una','por','con','para','su','sus','lo','es','no']);
+    const toks = t => new Set((t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^a-z0-9]+/).filter(w => w && !STOP.has(w)));
+    document.querySelectorAll('.esquema').forEach(esq => {
+      const cand = [...esq.querySelectorAll('.articulo mark.m-resp[data-q]')].map(m => ({m, t: toks(m.textContent)}));
+      if (!cand.length) return;
+      esq.querySelectorAll('.vis mark.m-resp').forEach(v => {
+        if (v.dataset.q) return;
+        const tv = toks(v.textContent); if (!tv.size) return;
+        let best = null, bs = 0;
+        cand.forEach(c => {
+          let k = 0; tv.forEach(w => { if (c.t.has(w)) k++; });
+          const sc = k / Math.min(tv.size, Math.max(c.t.size, 1)) * (k / tv.size * 0.5 + 0.5);
+          if (sc > bs){ bs = sc; best = c; }
+        });
+        if (best && bs >= 0.6){
+          v.dataset.q = best.m.dataset.q;
+          v.title = 'Pulsa para repasar las preguntas de esta respuesta';
+          v.classList.remove('r-ia');
+        }
+      });
+    });
+  }
+
   // ---------- Colores según los resultados de los tests ----------
   function leerStats(){ try { return (JSON.parse(localStorage.getItem('oficialAppState_v1') || '{}').qStats) || {}; } catch(e){ return {}; } }
   function colorear(){
@@ -3733,7 +3758,7 @@ body.embed #app{padding-top:4px}
   function iniciar(){
     if (/[?&]embed=1/.test(location.search)) document.body.classList.add('embed');
     pintarCobertura();
-    enlazar(); colorear(); montarBuscador(); montarVozMenu(); desdeHash();
+    enlazar(); enlazarVis(); colorear(); montarBuscador(); montarVozMenu(); desdeHash();
     window.addEventListener('hashchange', desdeHash);
     document.addEventListener('visibilitychange', () => { if (!document.hidden) colorear(); });
     window.addEventListener('pageshow', colorear);
