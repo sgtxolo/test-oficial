@@ -18,7 +18,12 @@ function parsea(html) {
     const s = m[0];
     if (m[2]) {
       const cls = (/class=["']?([\w-]+)/.exec(m[3]) || [])[1] || '';
-      if (m[2] === 'span' && !/^m-(caja|circulo)$/.test(cls)) { piezas.push({ t: 'tag', s }); if (m[1]) { /* cierre de span ajeno */ } continue; }
+      if (m[2] === 'span') {
+        if (m[1]) { const top = pila.pop(); if (top && top.ajeno) piezas.push({ t: 'tag', s }); continue; }
+        if (/^m-(caja|circulo)$/.test(cls)) pila.push({ tag: 'span', cls });
+        else { pila.push({ tag: 'span', ajeno: true }); piezas.push({ t: 'tag', s }); }
+        continue;
+      }
       if (m[1]) pila.pop(); else pila.push({ tag: m[2], cls });
       continue;
     }
