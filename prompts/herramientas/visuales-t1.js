@@ -13,7 +13,6 @@ const CSS = `/* VISUALES: árboles, flujos, comparaciones y plazos (esquemas con
 .vis-t i{font-style:normal;margin-right:6px}
 .vis-arbol{display:flex;align-items:center;gap:0;flex-wrap:nowrap}
 .vis-raiz{flex:0 0 auto;max-width:34%;background:var(--verde);color:#fff;font-weight:800;border-radius:12px;padding:10px 12px;text-align:center;font-size:.92rem;line-height:1.25}
-.vis-raiz mark,.vis-raiz u{color:inherit}
 .vis-ramas{flex:1 1 auto;display:flex;flex-direction:column;gap:7px;margin-left:26px;position:relative}
 .vis-ramas:before{content:"";position:absolute;left:-14px;top:14px;bottom:14px;border-left:2.5px solid var(--verde-med)}
 .vis-rama{position:relative;background:var(--panel-alt);border:1.5px solid var(--borde);border-radius:10px;padding:7px 10px;font-size:.88rem;line-height:1.35}
