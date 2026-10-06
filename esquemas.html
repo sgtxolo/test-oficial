@@ -4237,21 +4237,40 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     if(!badge){
       const ref=document.getElementById('btn-marcas'); if(!ref||!ref.parentNode) return;
       badge=document.createElement('span'); badge.id='sync-st'; badge.style.cssText='font-size:12px;font-weight:700;padding:4px 8px;border-radius:12px;cursor:pointer;white-space:nowrap;border:1px solid var(--borde,#ccc)';
-      badge.onclick=()=>{
-        if(hayCfg()){
-          if(!ultimoError){ sincronizar(); return; }
-          if(!confirm('No se pudo sincronizar:\n'+ultimoError+'\n\n¿Quieres volver a escribir el repositorio y el token?\n(Aceptar = cambiarlos · Cancelar = reintentar con los actuales)')){ sincronizar(); return; }
-        }
-        const c=cfg();
-        const repo=prompt('Repositorio privado de GitHub donde se guardan tus marcas (usuario/repositorio):',c.repo||'sgtxolo/copia-seguridad-conocimientos'); if(!repo) return;
-        let token=prompt('Pega el token de GitHub (empieza por github_pat_… y necesita permiso Contents: Read and write sobre ese repositorio). Se guarda solo en este dispositivo:'); if(!token) return;
-        token=token.replace(/[\s"'`]/g,'');
-        c.repo=repo.trim().replace(/^https?:\/\/github\.com\//,'').replace(/\.git$/,'').replace(/\/+$/,''); c.token=token; origSet.call(localStorage,CFG,JSON.stringify(c));
-        ultimoError=''; sincronizar();
-      };
+      badge.onclick=()=>abrirPanel();
       ref.parentNode.insertBefore(badge,ref);
     }
     badge.textContent=txt; badge.title=titulo||''; badge.style.color=cls==='mal'?'#c0392b':cls==='ok'?'var(--verde-med,#2e7d5b)':'inherit';
+  }
+
+
+  /* ---------- panel para escribir/cambiar repositorio y token (sin prompt/confirm, que en iPhone fallan) ---------- */
+  const VER_SYNC="sync v3";
+  function abrirPanel(){
+    let ov=document.getElementById("sync-panel"); if(ov) ov.remove();
+    const c=cfg(); ov=document.createElement("div"); ov.id="sync-panel";
+    ov.style.cssText="position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,.5);display:flex;align-items:flex-start;justify-content:center;padding:60px 14px;overflow:auto";
+    const esc=t=>String(t||"").replace(/[&<>\"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[m]));
+    ov.innerHTML='<div style="background:var(--panel,#fff);color:var(--texto,#222);border-radius:16px;padding:18px;width:100%;max-width:460px;font-family:inherit">'
+     +'<h3 style="margin:0 0 8px">☁ Sincronización</h3>'
+     +'<div style="font-size:13px;margin-bottom:10px;color:'+(ultimoError?"#c0392b":"inherit")+'">'+(ultimoError?"⚠ "+esc(ultimoError):(hayCfg()?"Configurada. Pulsa «Sincronizar ahora».":"Sin configurar."))+'</div>'
+     +'<label style="font-size:12px">Repositorio (usuario/repositorio)</label>'
+     +'<input id="sp-repo" autocapitalize="off" autocorrect="off" spellcheck="false" style="width:100%;box-sizing:border-box;font-size:16px;padding:8px;margin:4px 0 10px;border:1px solid #999;border-radius:8px" value="'+esc(c.repo||"sgtxolo/copia-seguridad-conocimientos")+'">'
+     +'<label style="font-size:12px">Token (github_pat_…) — déjalo vacío para conservar el actual</label>'
+     +'<input id="sp-tok" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="'+(c.token?"guardado: …"+esc(c.token.slice(-4)):"pega aquí el token")+'" style="width:100%;box-sizing:border-box;font-size:16px;padding:8px;margin:4px 0 12px;border:1px solid #999;border-radius:8px">'
+     +'<div style="display:flex;gap:8px;flex-wrap:wrap"><button id="sp-ok" style="flex:1;padding:10px;border-radius:10px;border:0;background:#1c4d3c;color:#fff;font-weight:700;font-size:15px">Guardar y sincronizar</button>'
+     +'<button id="sp-no" style="padding:10px 14px;border-radius:10px;border:1px solid #999;background:transparent;color:inherit;font-size:15px">Cerrar</button></div>'
+     +'<div style="font-size:11px;opacity:.6;margin-top:10px">'+VER_SYNC+'</div></div>';
+    document.body.appendChild(ov);
+    ov.addEventListener("click",e=>{ if(e.target===ov) ov.remove(); });
+    ov.querySelector("#sp-no").onclick=()=>ov.remove();
+    ov.querySelector("#sp-ok").onclick=()=>{
+      const n=cfg(); const repo=ov.querySelector("#sp-repo").value.trim().replace(/^https?:\/\/github\.com\//,"").replace(/\.git$/,"").replace(/\/+$/,"");
+      const tok=ov.querySelector("#sp-tok").value.replace(/[\s"'`]/g,"");
+      if(!repo||(!tok&&!n.token)){ alert("Falta el repositorio o el token"); return; }
+      n.repo=repo; if(tok) n.token=tok; origSet.call(localStorage,CFG,JSON.stringify(n));
+      ultimoError=""; ov.remove(); sincronizar();
+    };
   }
 
   /* ---------- API de GitHub ---------- */
