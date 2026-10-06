@@ -5,4 +5,4 @@ argument-hint: <número de tema> (adjunta o pega el texto legal)
 
 Tema: **$ARGUMENTS**
 
-Lee y sigue al pie de la letra `prompts/PROMPT_PREGUNTAS_EXAMINADOR.md` (sustituyendo N por el número de tema indicado arriba). Usa como texto base lo que el usuario adjunte o pegue en este mensaje; si no hay nada, pídele el PDF o los artículos antes de empezar.
+Lee y sigue al pie de la letra `prompts/PROMPT_PREGUNTAS_EXAMINADOR.md` (sustituyendo N por el número de tema indicado arriba). Usa como texto base lo que el usuario adjunte o pegue en este mensaje; si no hay nada, pídele el PDF o los artículos antes de empezar. Si adjunta **dos** documentos: el temario OFICIAL es la única fuente del texto y de los datos, y el segundo (su temario SUBRAYADO a mano) solo se usa para leer el subrayado y recrearlo en el esquema (sección «Dos fuentes» del prompt). Si no queda claro cuál es cuál, pregúntaselo.

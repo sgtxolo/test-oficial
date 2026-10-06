@@ -10,6 +10,13 @@ Actúa como **examinador experto del tribunal de la oposición de Ascenso a Ofic
 **Texto base:** el que te adjunto/pego (PDF del temario, una norma completa o artículos concretos).  
 **App:** `test-oficial-conocimiento.html` (proyecto `C:\Users\ruben\OneDrive\Desktop\HTML OFICIAL`, repo `sgtxolo/test-oficial`, rama `main`).
 
+## Dos fuentes: temario oficial + MI temario subrayado (si lo adjunto)
+Puedo darte **dos documentos del mismo tema**, y cada uno vale para una cosa distinta:
+1. **Temario OFICIAL** (PDF limpio o el escaneado oficial de `OFICIAL 2026-27\TEMARIO ESCANEADO 2026-27\`): es **la única fuente del texto y de los datos**. De aquí salen las 50 preguntas, el texto literal de las fichas y todas las verificaciones.
+2. **Mi temario SUBRAYADO** (escaneo con mis subrayados a mano): **solo te fijas en el subrayado** (colores del fosforito, trazo rojo, cuadros y círculos). **Nunca copies texto de este documento ni lo uses para verificar un dato**: puede tener erratas, versiones antiguas o fallos de OCR. Si el texto de los dos documentos se contradice, **gana siempre el oficial** y me avisas de la discrepancia.
+   - Úsalo para (a) decidir qué artículos y datos tengo yo por importantes (tenlo en cuenta al repartir las preguntas: más peso donde tengo mucho subrayado) y (b) **recrear mi subrayado exacto en el esquema** (ver «Después de las preguntas»).
+   - Si no te adjunto el segundo documento, el esquema se subraya con el método Prefortia habitual (≈ 70 %, por categorías).
+
 ## Objetivo
 Generar **50 preguntas tipo test** sobre ese texto que tengan la **máxima probabilidad de caer en el examen**, para estudiar y para que luego sirvan de base al esquema del tema (`/esquema-tema N`).
 - **10 fáciles** · **25 medias** · **15 difíciles**.
@@ -67,8 +74,15 @@ Cada pregunta es un objeto:
 
 ## Después de las preguntas: el esquema del tema (obligatorio)
 Cuando las 50 preguntas estén insertadas, comprobadas y subidas, **haz sin que te lo pida el esquema del tema N** en `esquemas.html` siguiendo al pie de la letra `prompts/PROMPT_ESQUEMA_DESDE_PREGUNTAS.md` (se basa en TODAS las preguntas del tema, oficiales + IA, y en el texto legal que te he dado).
-- **Subrayado Método Prefortia ≈ 70 %, bien repartido, como en los temas 1, 2 y 3 (y 4, 5)** — NO pintes todo de naranja/salmón: casi todas las palabras con contenido van coloreadas con su color de la leyenda (verde = autoridades, azul = plazos y cifras, morado = acciones, naranja = conceptos, amarillo = matices, naranja solo para conceptos clave (≈ 5-12 %), rojo subrayado = no/salvo/podrá/deberá…). Solo quedan en plano artículos, preposiciones, conjunciones y nexos.
-- **Mídelo y no des el esquema por terminado hasta llegar al 70 %**: `node prompts/herramientas/densidad.js N` (cuenta qué porcentaje de los caracteres del tema va en `<mark>`/`<u>`; objetivo ≥ 70 %). Si queda por debajo, subraya más y vuelve a medir.
+- **Si te di MI temario subrayado: recrea mi subrayado** (en vez del subrayado automático por categorías), con las herramientas que ya usamos en los temas 1, 12 y 13:
+  1. Lee el subrayado del PDF escaneado: `py prompts/herramientas/subrayado-pdf.py "<pdf subrayado>" <scratchpad>/subrayado.json` (pasa solo las páginas del tema si el PDF trae varios).
+  2. Primero construye el esquema con el **texto literal del temario OFICIAL** (fichas por artículo, sin colorear aún lo que no se pueda emparejar).
+  3. Alinea y aplica: `node prompts/herramientas/aplicar-subrayado-pdf.js <subrayado.json> esquemas.html <marca_inicio> <marca_fin> "<TN_NORMA:págs,…>" --dry` primero (revisa cuántas palabras se emparejan) y luego sin `--dry`. Solo se copian los **colores**; el texto sigue siendo el oficial. Las palabras que no se puedan emparejar con seguridad se dejan sin color y me las listas (no inventes).
+  4. Reglas de color encima del subrayado (ya incluidas en el script): futuros en lila, órganos y autoridades en verde. Después `node prompts/herramientas/unir-subrayados.js`.
+  5. Revisa a ojo 3-4 fichas contra mi PDF (captura de pantalla de cada una) y repórtame las diferencias. **No fuerces el 70 %**: mi subrayado manda; mide con `densidad.js` solo para informarme del porcentaje que tengo yo.
+  6. Lo que yo no subrayé pero tiene pregunta en los tests sí queda marcado como respuesta (`m-resp`), que es independiente de mi subrayado.
+- **Si NO te di mi temario subrayado: Subrayado Método Prefortia ≈ 70 %, bien repartido, como en los temas 1, 2 y 3 (y 4, 5)** — NO pintes todo de naranja/salmón: casi todas las palabras con contenido van coloreadas con su color de la leyenda (verde = autoridades, azul = plazos y cifras, morado = acciones, naranja = conceptos, amarillo = matices, naranja solo para conceptos clave (≈ 5-12 %), rojo subrayado = no/salvo/podrá/deberá…). Solo quedan en plano artículos, preposiciones, conjunciones y nexos.
+- **(Solo en el caso sin mi subrayado)** **Mídelo y no des el esquema por terminado hasta llegar al 70 %**: `node prompts/herramientas/densidad.js N` (cuenta qué porcentaje de los caracteres del tema va en `<mark>`/`<u>`; objetivo ≥ 70 %). Si queda por debajo, subraya más y vuelve a medir.
 - Después regenera el mapa pregunta ↔ esquema, la cobertura y los «(…)» desplegables (`mapa-preguntas.js`, `cobertura.js`, `huecos.js`), comprueba el tema en el navegador y haz commit y push.
 
 ## Al terminar, dime
@@ -77,3 +91,4 @@ Cuando las 50 preguntas estén insertadas, comprobadas y subidas, **haz sin que 
 - Las 5-10 **trampas** más peligrosas que has detectado en el texto (para añadirlas luego al esquema).
 - Artículos que siguen sin ninguna pregunta en la app.
 - El esquema del tema: nº de fichas, % de subrayado medido con `densidad.js`, preguntas corregidas y estimación de tiempo de estudio.
+- Si usaste mi temario subrayado: palabras emparejadas / sin emparejar, discrepancias entre el texto del temario oficial y el mío (erratas, versiones distintas) y fichas revisadas a ojo contra mi PDF.
