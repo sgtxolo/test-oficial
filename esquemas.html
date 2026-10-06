@@ -3996,7 +3996,18 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     const b=e.target.closest('button'); if(!b||!cur) return;
     const esq=cur.esq, bk=bucket(esq.id);
     if(b.dataset.a==='rst'){ if(confirm('¿Restaurar el subrayado original de este tema? Se perderán tus cambios sobre el subrayado automático.')){ delete data[esq.id]; save(); location.reload(); } return; }
-    if(b.dataset.a==='shp'){ if(cur.el&&window.pmAddShape) window.pmAddShape(esq,b.dataset.k,cur.el.getBoundingClientRect()); cerrar(); return; }
+    if(b.dataset.a==='shp'){
+      /* la forma SUSTITUYE al subrayado: se mide la palabra, se quita el subrayado y se dibuja la forma en su sitio */
+      if(cur.el&&window.pmAddShape){
+        const el=cur.el, rc=el.getBoundingClientRect();
+        if(el.dataset.add){
+          const a=bk.a.find(x=>String(x.n)===el.dataset.add);
+          esq.querySelectorAll('[data-add="'+el.dataset.add+'"]').forEach(unwrap); bk.a=bk.a.filter(x=>x!==a);
+        } else { const sid=el.dataset.sid, t=el.textContent; unwrap(el); bk.e[sid]={t,c:null}; }
+        save(); window.pmAddShape(esq,b.dataset.k,rc);
+      }
+      cerrar(); return;
+    }
     if(cur.el){
       let el=cur.el;
       if(el.dataset.add){                                   // subrayado añadido por ti
