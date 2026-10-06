@@ -4476,5 +4476,139 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   let n=0; (function init(){ if(!activo()&&n++<40) return setTimeout(init,150); vigila(); })();
 })();
 </script>
+<style id="estilo-xref">
+.xref{border-bottom:2px dotted var(--verde-med,#2e7d5b);cursor:help}
+.xref:hover,.xref.on{background:rgba(46,125,91,.18);border-radius:3px}
+#xref-pop{position:fixed;z-index:9700;display:none;width:min(440px,calc(100vw - 20px));max-height:58vh;overflow:auto;background:var(--panel,#fff);color:var(--texto,#222);border:1.5px solid var(--verde-med,#2e7d5b);border-radius:14px;padding:12px 14px;box-shadow:0 12px 36px rgba(0,0,0,.32);font-size:.9rem;line-height:1.45}
+#xref-pop.on{display:block}
+#xref-pop .xr-t{font-weight:800;font-size:.8rem;letter-spacing:.03em;color:var(--verde-med,#2e7d5b);margin:0 0 6px}
+#xref-pop .xr-b{margin:0 0 8px}
+#xref-pop .xr-b+.xr-t{margin-top:10px;padding-top:8px;border-top:1px dashed var(--borde,#ccc)}
+#xref-pop .xr-n{font-size:.78rem;color:var(--texto-gris,#666);margin:-4px 0 8px}
+#xref-pop .xr-a{display:flex;gap:8px;position:sticky;bottom:-12px;background:var(--panel,#fff);padding-top:4px}
+#xref-pop button{border:1.5px solid var(--verde-med,#2e7d5b);background:transparent;color:var(--verde-med,#2e7d5b);border-radius:14px;padding:5px 12px;font-size:12.5px;font-weight:800;cursor:pointer;font-family:inherit}
+.articulo.xr-flash{outline:3px solid var(--verde-med,#2e7d5b);outline-offset:3px;transition:outline-color .6s}
+@media print{#xref-pop{display:none!important}.xref{border-bottom:0}}
+</style>
+<script id="script-xref">
+/* ==================== REFERENCIAS ENTRE ARTÍCULOS ====================
+   Cuando una ficha dice «artículo 45.3», «arts. 45 y 46»…, esa mención se subraya con puntos. Al pasar el ratón (o tocar con el dedo)
+   sale un resumen del artículo mencionado, sacado de su propia ficha del esquema (con el apartado citado si está), y un botón para ir a ella.
+   No sale si la referencia es a OTRA norma («art. 5 de la Ley 39/2015»…) ni en modo Marcas. */
+(function(){
+  const RE=/\b[Aa]rt(?:[íi]culos?|s?\.)\s*(\d+)(?:\s*(?:bis|ter|quater|quinquies))?(?:\.(\d+))?((?:\s*(?:,|y|e|a)\s*\d+(?:\.\d+)?)*)/g;
+  const OTRA=/^\s*(?:,?\s*(?:apartados?|párrafos?|letras?)\s+[\w.)]+\s*)?(?:de|del)\s+(?:la\s+|el\s+|los\s+|las\s+)?(?:Ley|L\.?\s?O\.?\b|LO\b|Real\s+Decreto|R\.?\s?D\.?\b|Reglamento|Constituci|C[óo]digo|Tratado|TUE|TFUE|Estatuto\s+de|Convenio|Decisi|Directiva|Carta|Acuerdo|Protocolo|Tribunal|CE\b|CEDH)/i;
+  const SKIP='svg,script,style,.hueco-txt';
+  const $=(s,r)=>(r||document).querySelector(s);
+  const pop=document.createElement('div'); pop.id='xref-pop'; document.body.appendChild(pop);
+
+  /* --- marcar las menciones --- */
+  function procesar(es){
+    if(es.dataset.xref) return; es.dataset.xref='1';
+    es.querySelectorAll('.articulo .txt').forEach(txt=>{
+      const nodes=[], w=document.createTreeWalker(txt,NodeFilter.SHOW_TEXT);
+      for(let n;(n=w.nextNode());){ if(n.parentElement&&n.parentElement.closest(SKIP)) continue; nodes.push(n); }
+      let full=''; const ini=[]; nodes.forEach(n=>{ ini.push(full.length); full+=n.nodeValue; });
+      const hits=[]; RE.lastIndex=0;
+      for(let m;(m=RE.exec(full));){
+        if(OTRA.test(full.slice(m.index+m[0].length,m.index+m[0].length+60))) continue;
+        const refs=[[m[1],m[2]||null]]; (m[3]||'').replace(/(\d+)(?:\.(\d+))?/g,(x,a,b)=>{ refs.push([a,b||null]); });
+        hits.push({s:m.index,e:m.index+m[0].length,refs:refs});
+      }
+      for(let h=hits.length-1;h>=0;h--){            // de atrás adelante para no descuadrar los índices
+        const x=hits[h], jobs=[];
+        nodes.forEach((n,i)=>{ const a=ini[i], b=a+n.nodeValue.length, f=Math.max(x.s,a)-a, t=Math.min(x.e,b)-a; if(t>f&&n.parentNode) jobs.push([n,f,t]); });
+        jobs.forEach(([n,f,t])=>{
+          let mid=n; if(f>0) mid=n.splitText(f); if(t-f<mid.nodeValue.length) mid.splitText(t-f);
+          const sp=document.createElement('span'); sp.className='xref'; sp.dataset.xr=JSON.stringify(x.refs);
+          mid.parentNode.replaceChild(sp,mid); sp.appendChild(mid);
+        });
+        // los nodos de texto se han partido: recalcula la lista para las menciones anteriores
+        if(h>0){ nodes.length=0; ini.length=0; full=''; const w2=document.createTreeWalker(txt,NodeFilter.SHOW_TEXT); for(let n;(n=w2.nextNode());){ if(n.parentElement&&n.parentElement.closest(SKIP)) continue; nodes.push(n); ini.push(full.length); full+=n.nodeValue; } }
+      }
+    });
+  }
+
+  /* --- encontrar la ficha de un artículo --- */
+  const cabeza=a=>{ const h=a.querySelector('.articulo-head'); return h&&h.firstChild?h.firstChild.textContent.trim():''; };
+  function numsDe(cab){
+    const m=/^\s*Art(?:ículos?|s?\.)\s*([^—–·]+)/i.exec(cab); if(!m) return [];
+    const t=m[1], out=new Set(); let ult=null, rango=false;
+    t.replace(/(\d+)|\b(a)\b|,|\by\b/gi,(x,n,a)=>{
+      if(n){ const v=+n; if(rango&&ult!=null&&v>ult&&v-ult<80){ for(let k=ult;k<=v;k++) out.add(k); } else out.add(v); ult=v; rango=false; }
+      else if(a) rango=true; else rango=false;
+    });
+    return [...out];
+  }
+  function fichas(es){ if(!es._f) es._f=[...es.querySelectorAll('.articulo')].map(a=>({a:a,n:numsDe(cabeza(a))})); return es._f; }
+  function buscar(es,desde,num){
+    const L=fichas(es), i0=L.findIndex(f=>f.a===desde); let best=null,bd=1e9;
+    L.forEach((f,i)=>{ if(f.a!==desde&&f.n.indexOf(+num)>=0){ const d=Math.abs(i-i0); if(d<bd){ bd=d; best=f; } } });
+    return best&&best.a;
+  }
+  function recorta(el,max){
+    let n=0, cut=false; const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT), t=[]; for(let x;(x=w.nextNode());) t.push(x);
+    t.forEach(x=>{ if(cut){ x.remove(); return; } if(n+x.nodeValue.length>max){ x.nodeValue=x.nodeValue.slice(0,Math.max(0,max-n)).replace(/\s+\S*$/,'')+'…'; cut=true; } else n+=x.nodeValue.length; });
+    el.querySelectorAll('*').forEach(e=>{ if(!e.textContent.trim()&&!e.querySelector('svg,img')) e.remove(); });
+  }
+  function resumen(a,ap){
+    const txt=a.querySelector('.txt'); if(!txt) return {html:'',nota:''};
+    const ps=[...txt.querySelectorAll('p')]; let p=null, nota='';
+    if(ap){ p=ps.find(x=>{ const b=x.querySelector('b'); return b&&new RegExp('^\\s*'+ap+'\\s*[.)]?\\s*$').test(b.textContent); }); if(!p) nota='El apartado '+ap+' no está literal en la ficha; se muestra el comienzo.'; }
+    const trozos=p?[p]:ps.slice(0,2);
+    const cont=document.createElement('div'); trozos.forEach(x=>{ const c=x.cloneNode(true); c.querySelectorAll('.xref').forEach(y=>y.replaceWith(...y.childNodes)); cont.appendChild(c); });
+    recorta(cont,p?520:380);
+    cont.querySelectorAll('p').forEach(x=>{ x.style.margin='0 0 6px'; });
+    return {html:cont.innerHTML,nota:nota};
+  }
+
+  /* --- ventana --- */
+  let cur=null, pin=false, tIn=0, tOut=0;
+  function cerrar(){ pop.classList.remove('on'); if(cur) cur.classList.remove('on'); cur=null; pin=false; clearTimeout(tIn); clearTimeout(tOut); }
+  function abrir(sp){
+    const es=sp.closest('.esquema'), desde=sp.closest('.articulo'); if(!es) return;
+    let refs; try{ refs=JSON.parse(sp.dataset.xr); }catch(e){ return; }
+    let html='', irA=null, n=0;
+    refs.slice(0,3).forEach(([num,ap])=>{
+      const a=buscar(es,desde,num); if(!a) return; n++; if(!irA) irA=a;
+      const r=resumen(a,ap);
+      html+='<div class="xr-t">'+cabeza(a).replace(/</g,'&lt;')+(ap?' · apartado '+ap:'')+'</div>'+(r.nota?'<div class="xr-n">'+r.nota+'</div>':'')+'<div class="xr-b">'+r.html+'</div>';
+    });
+    if(!n){ cerrar(); return; }
+    if(cur&&cur!==sp) cur.classList.remove('on'); cur=sp; sp.classList.add('on');
+    pop.innerHTML=html+'<div class="xr-a"><button type="button" data-a="ir">Ir a la ficha ➜</button><button type="button" data-a="x">✕ Cerrar</button></div>';
+    pop._ir=irA; pop.classList.add('on');
+    const r=sp.getBoundingClientRect(), pw=pop.offsetWidth, ph=pop.offsetHeight;
+    pop.style.left=Math.max(10,Math.min(r.left,innerWidth-pw-10))+'px';
+    pop.style.top=(r.bottom+8+ph>innerHeight&&r.top-8-ph>10?r.top-8-ph:Math.min(r.bottom+8,innerHeight-ph-10))+'px';
+  }
+  const bloqueado=()=>document.body.classList.contains('pm-on');
+  document.addEventListener('pointerover',e=>{
+    if(e.pointerType!=='mouse'||bloqueado()) return;
+    const sp=e.target.closest&&e.target.closest('.xref'); if(!sp) return;
+    clearTimeout(tOut); if(sp===cur) return; clearTimeout(tIn); tIn=setTimeout(()=>{ if(!pin) abrir(sp); },220);
+  });
+  document.addEventListener('pointerout',e=>{
+    if(e.pointerType!=='mouse'||pin) return;
+    const d=e.target.closest&&(e.target.closest('.xref')||e.target.closest('#xref-pop')); if(!d) return;
+    clearTimeout(tIn); clearTimeout(tOut); tOut=setTimeout(()=>{ if(!pin&&!pop.matches(':hover')&&!(cur&&cur.matches(':hover'))) cerrar(); },280);
+  });
+  document.addEventListener('click',e=>{
+    const b=e.target.closest&&e.target.closest('#xref-pop button');
+    if(b){ if(b.dataset.a==='ir'&&pop._ir){ const a=pop._ir; cerrar(); a.style.scrollMarginTop='90px'; a.scrollIntoView({behavior:'smooth',block:'start'}); a.classList.add('xr-flash'); setTimeout(()=>a.classList.remove('xr-flash'),1800); } else cerrar(); return; }
+    if(e.target.closest&&e.target.closest('#xref-pop')) return;
+    const sp=e.target.closest&&e.target.closest('.xref');
+    if(sp&&!bloqueado()){ e.preventDefault(); if(sp===cur&&pin){ cerrar(); return; } pin=true; abrir(sp); return; }
+    if(pop.classList.contains('on')) cerrar();
+  },true);
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') cerrar(); });
+  addEventListener('scroll',()=>{ if(pop.classList.contains('on')&&!pin) cerrar(); },{passive:true,capture:true});
+
+  /* --- arranque: cada esquema se procesa cuando se abre --- */
+  function vigila(){ const es=document.querySelector('.esquema.active'); if(es&&!es.dataset.xref){ procesar(es); } }
+  new MutationObserver(vigila).observe(document.body,{attributes:true,subtree:true,attributeFilter:['class']});
+  let n=0; (function init(){ if(!document.querySelector('.esquema.active')&&n++<40) return setTimeout(init,150); vigila(); })();
+})();
+</script>
 </body>
 </html>
