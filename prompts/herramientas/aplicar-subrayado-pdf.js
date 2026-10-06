@@ -179,6 +179,9 @@ if (process.env.ORIG) {
   if (ol.length === fichas.length) fichas.forEach((f, i) => { if (f.nuevo == null && f.norma in rangos) f.nuevo = ol[i]; });
   else console.error('ORIG no coincide en nº de fichas', ol.length, fichas.length);
 }
+// reglas de color del método (futuros en lila, autoridades en verde) sobre todas las fichas
+{ const { aplica } = require('./reglas-color.js');
+  for (const f of fichas) { const base = f.nuevo ? new Function('return ' + f.nuevo)() : f.html; f.nuevo = JSON.stringify(aplica(base)); } }
 if (!dry) {
   let out = '', pos = 0;
   for (const f of fichas) { if (!f.nuevo) continue; out += bloque.slice(pos, f.ini) + f.nuevo; pos = f.fin; }
