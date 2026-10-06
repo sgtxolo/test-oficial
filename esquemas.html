@@ -4043,7 +4043,14 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     if(!badge){
       const ref=document.getElementById('btn-marcas'); if(!ref||!ref.parentNode) return;
       badge=document.createElement('span'); badge.id='sync-st'; badge.style.cssText='font-size:12px;font-weight:700;padding:4px 8px;border-radius:12px;cursor:pointer;white-space:nowrap;border:1px solid var(--borde,#ccc)';
-      badge.onclick=()=>{ if(!hayCfg()) alert('Para sincronizar tus marcas entre dispositivos hace falta la copia de GitHub de la app de tests: en el test, Perfil → «Copia automática en GitHub» (repositorio privado y token). Hazlo una vez en cada dispositivo y las marcas se sincronizarán solas.'); else sincronizar(); };
+      badge.onclick=()=>{
+        if(hayCfg()){ sincronizar(); return; }
+        const c=cfg();
+        const repo=prompt('Repositorio privado de GitHub donde se guardan tus marcas (usuario/repositorio):',c.repo||'sgtxolo/copia-seguridad-conocimientos'); if(!repo) return;
+        const token=prompt('Pega tu token de GitHub (con permiso Contents: Read and write sobre ese repositorio). Se guarda solo en este dispositivo:'); if(!token) return;
+        c.repo=repo.trim(); c.token=token.trim(); origSet.call(localStorage,CFG,JSON.stringify(c));
+        sincronizar();
+      };
       ref.parentNode.insertBefore(badge,ref);
     }
     badge.textContent=txt; badge.title=titulo||''; badge.style.color=cls==='mal'?'#c0392b':cls==='ok'?'var(--verde-med,#2e7d5b)':'inherit';
