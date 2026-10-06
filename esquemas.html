@@ -3589,7 +3589,7 @@ body.embed #app{padding-top:4px}
           if (ofic.length && !p.querySelector(':scope > .ex-p')){
             const b = document.createElement('span'); b.className = 'ex-p'; b.setAttribute('aria-hidden', 'true');
             b.title = ofic.length === 1 ? '1 pregunta oficial de examen en este párrafo' : ofic.length + ' preguntas oficiales de examen en este párrafo';
-            p.insertBefore(b, p.firstChild); hayEx = true;
+            const rb = p.querySelector(':scope > .btn-res'); p.insertBefore(b, rb ? rb.nextSibling : p.firstChild); hayEx = true;
           }
           idsParrafo.forEach(id => { fichaDe[id] = art; });
           idsFicha.push(...idsParrafo);
@@ -3958,25 +3958,29 @@ body.solo-res .sin-res{display:none!important}
       });
     });
   }
+  /* R delante de cada apartado y también delante de cada párrafo con EX (R y EX seguidas); todas las R de un apartado se marcan a la vez */
+  function ponerR(esq,art,g,p){
+    if(p.querySelector(':scope > .btn-res')) return;
+    const b=document.createElement('button'); b.type='button'; b.className='btn-res'+(marcado(esq,art,g)?' on':'');
+    b.title='Incluir este apartado en el resumen (R)'; b._g=g;
+    const ex=p.querySelector(':scope > .ex-p'); p.insertBefore(b,ex||p.firstChild);
+  }
   function montar(){
     document.querySelectorAll('.esquema').forEach(esq=>{
       esq.querySelectorAll('.articulo').forEach(art=>{
         const old=art.querySelector('.articulo-head .btn-res'); if(old) old.remove();
-        if(art.querySelector('.txt .btn-res')) return;
-        const gs=art._gs=grupos(art); migrar(esq,art,gs);
-        gs.forEach(g=>{
-          const p=g.ps[0], b=document.createElement('button'); b.type='button'; b.className='btn-res'+(marcado(esq,art,g)?' on':'');
-          b.title='Incluir este apartado en el resumen (R)'; b._g=g; p.insertBefore(b,p.firstChild);
-        });
+        let gs=art._gs; if(!gs){ gs=art._gs=grupos(art); migrar(esq,art,gs); }
+        gs.forEach(g=>g.ps.forEach((p,i)=>{ if(i===0||p.querySelector(':scope > .ex-p')) ponerR(esq,art,g,p); }));
       });
     });
   }
+  new MutationObserver(ms=>{ if(ms.some(m=>[...m.addedNodes].some(n=>n.nodeType===1&&(n.classList.contains('ex-p')||(n.querySelector&&n.querySelector('.ex-p')))))) montar(); }).observe(document.body,{childList:true,subtree:true});
   document.addEventListener('click',e=>{
     const b=e.target.closest&&e.target.closest('.btn-res'); if(!b) return;
     e.preventDefault(); e.stopPropagation();
     const art=b.closest('.articulo'), esq=art.closest('.esquema'), k=claveG(art,b._g), l=data[esq.id]=data[esq.id]||[];
     const i=l.indexOf(k); if(i<0) l.push(k); else l.splice(i,1);
-    b.classList.toggle('on',i<0); save(); filtrar();
+    art.querySelectorAll('.btn-res').forEach(x=>{ if(x._g===b._g) x.classList.toggle('on',i<0); }); save(); filtrar();
   },true);
   function init(){
     montar();
