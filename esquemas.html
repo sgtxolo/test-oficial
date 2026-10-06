@@ -3935,7 +3935,8 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     const s=offsetOf(esq,range.startContainer,range.startOffset), e=offsetOf(esq,range.endContainer,range.endOffset);
     if(e<=s) return;
     const bk=bucket(esq.id), m={n:++bk.n,k:k,s:s,e:e,c:st.color,o:st.op};
-    bk.t.push(m); wrap(esq,m); save();
+    bk.t.push(m); wrap(esq,m); save(); renderShapes(esq);
+    window.pmPush(esq.id,()=>{ bk.t=bk.t.filter(x=>x.n!==m.n); unwrap(esq,m.n); renderShapes(esq); save(); });
   }
   let down=false, timer=0;
   function trySel(){
@@ -3957,8 +3958,57 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     return s;
   }
   const px=(esq,p)=>[p[0]*esq.clientWidth,p[1]];
-  function shapeEl(esq,f,tmpPts){
-    const P=(tmpPts||f.p).map(p=>px(esq,p)), a=P[0], b=P[P.length-1];
+  /* historial único (todas las acciones de marcas y de subrayado, en orden) para el botón ↶ */
+  const hist=[];
+  window.pmPush=(id,fn)=>{ hist.push({id:id,fn:fn}); if(hist.length>300) hist.shift(); };
+  /* anclaje de las formas al texto: cada forma recuerda el carácter junto al que se dibujó y se recoloca respecto a él */
+  function charPos(esq,list,off){
+    let acc=0; const er=esq.getBoundingClientRect();
+    for(const t of list){
+      const n=t.length;
+      if(off<acc+n){
+        const r=document.createRange(); r.setStart(t,off-acc); r.setEnd(t,off-acc+1);
+        const b=r.getClientRects()[0]; if(!b||(!b.width&&!b.height)) return null;
+        return [b.left-er.left,b.top-er.top];
+      }
+      acc+=n;
+    }
+    return null;
+  }
+  function anchorAt(esq,x,y){      // x,y en px respecto al esquema → offset de texto
+    const sv=svgOf(esq), dsp=sv.style.display; sv.style.display='none';
+    let c=null,o=0; const er=esq.getBoundingClientRect(), cx=er.left+x, cy=er.top+y;
+    try{
+      if(document.caretPositionFromPoint){ const q=document.caretPositionFromPoint(cx,cy); if(q){ c=q.offsetNode; o=q.offset; } }
+      else if(document.caretRangeFromPoint){ const q=document.caretRangeFromPoint(cx,cy); if(q){ c=q.startContainer; o=q.startOffset; } }
+    }catch(e){}
+    sv.style.display=dsp;
+    if(!c||c.nodeType!==3||!esq.contains(c)) return null;
+    const list=textNodes(esq); let acc=0, ok=false;
+    for(const t of list){ if(t===c){ ok=true; break; } acc+=t.length; }
+    if(!ok) return null;
+    const txt=c.nodeValue; let i=Math.min(o,txt.length-1);
+    while(i<txt.length-1&&/\s/.test(txt[i])) i++;
+    while(i>0&&/\s/.test(txt[i])) i--;
+    if(/\s/.test(txt[i])) return null;
+    return acc+i;
+  }
+  function anchorShape(esq,f){
+    if(!esq.clientWidth||esq.offsetParent===null) return false;
+    const P=f.p.map(p=>px(esq,p)); let x,y;
+    if(f.k==='arrow'||f.k==='line'){ x=P[P.length-1][0]; y=P[P.length-1][1]; }
+    else { const xs=P.map(p=>p[0]), ys=P.map(p=>p[1]); x=(Math.min(...xs)+Math.max(...xs))/2; y=(Math.min(...ys)+Math.max(...ys))/2; }
+    const o=anchorAt(esq,x,y); if(o==null) return false;
+    const c=charPos(esq,textNodes(esq),o); if(!c) return false;
+    f.a={o:o,d:P.map(p=>[p[0]-c[0],p[1]-c[1]])}; return true;
+  }
+  function ptsOf(esq,f,tmpPts,list){
+    if(tmpPts) return tmpPts.map(p=>px(esq,p));
+    if(f.a){ const c=charPos(esq,list||textNodes(esq),f.a.o); if(c) return f.a.d.map(d=>[c[0]+d[0],c[1]+d[1]]); }
+    return f.p.map(p=>px(esq,p));
+  }
+  function shapeEl(esq,f,tmpPts,list){
+    const P=ptsOf(esq,f,tmpPts,list), a=P[0], b=P[P.length-1];
     const col=rgba(f.c,f.o); let el;
     const mk=(t,at)=>{ const e=document.createElementNS(SVGNS,t); for(const k in at) e.setAttribute(k,at[k]); return e; };
     const base={stroke:col,'stroke-width':f.w,fill:'none','stroke-linecap':'round','stroke-linejoin':'round'};
@@ -3977,14 +4027,17 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
   function renderShapes(esq,id){
     id=id||esq.id;
     const s=svgOf(esq); s.querySelectorAll('[data-pf]').forEach(e=>e.remove());
-    ((data[id]&&data[id].f)||[]).forEach(f=>s.appendChild(shapeEl(esq,f)));
+    const fs=(data[id]&&data[id].f)||[], list=textNodes(esq); let ch=false;
+    fs.forEach(f=>{ if(!f.a&&esq.id===id&&anchorShape(esq,f)) ch=true; s.appendChild(shapeEl(esq,f,null,list)); });
+    if(ch) save();
   }
-  window.pmRenderShapes=renderShapes;   // lo usa el PDF/impresión para recolocar las formas sobre la copia a ancho fijo
+  window.pmRenderShapes=renderShapes;
+  window.pmDelShape=(esq,n)=>{ const bk=bucket(esq.id); bk.f=bk.f.filter(x=>x.n!==n); renderShapes(esq); save(); };   // lo usa el PDF/impresión para recolocar las formas sobre la copia a ancho fijo
   /* forma rápida alrededor de una palabra subrayada (cuadrado, círculo o flecha) desde el menú «Cambiar este subrayado» */
   window.pmAddShape=function(esq,k,rc){
     const r=esq.getBoundingClientRect(), X=x=>(x-r.left)/r.width, Y=y=>y-r.top, pad=3;
     const p=k==='arrow'?[[X(rc.left-55),Y(rc.bottom+36)],[X(rc.left+4),Y(rc.bottom+3)]]:[[X(rc.left-pad),Y(rc.top-pad)],[X(rc.right+pad),Y(rc.bottom+pad)]];
-    const bk=bucket(esq.id); bk.f.push({k:k,c:'#e5383b',o:100,w:2,n:++bk.n,p:p}); save(); renderShapes(esq);
+    const bk=bucket(esq.id), f={k:k,c:'#e5383b',o:100,w:2,n:++bk.n,p:p}; bk.f.push(f); anchorShape(esq,f); save(); renderShapes(esq); return f.n;
   };
   function wireDraw(esq,svg){
     let cur=null,tmp=null,pts=null;
@@ -4002,7 +4055,7 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     const end=()=>{
       if(!cur) return; const f=cur; cur=null; if(tmp) tmp.remove(); tmp=null;
       const moved=pts.length>1&&Math.hypot((pts[pts.length-1][0]-pts[0][0])*esq.clientWidth,pts[pts.length-1][1]-pts[0][1])>4;
-      if(moved){ const bk=bucket(esq.id); f.n=++bk.n; f.p=f.k==='free'?pts:[pts[0],pts[pts.length-1]]; bk.f.push(f); save(); renderShapes(esq); }
+      if(moved){ const bk=bucket(esq.id); f.n=++bk.n; f.p=f.k==='free'?pts:[pts[0],pts[pts.length-1]]; bk.f.push(f); anchorShape(esq,f); const n=f.n; window.pmPush(esq.id,()=>window.pmDelShape(esq,n)); save(); renderShapes(esq); }
     };
     svg.addEventListener('pointerup',end); svg.addEventListener('pointercancel',end);
   }
@@ -4017,8 +4070,11 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     const m=(sh?bk.f:bk.t).find(x=>x.n===n); if(!m) return;
     e.preventDefault(); e.stopPropagation();
     togglePop(null,{kind:sh?'f':'t',get:()=>m,
-      set:(k,v)=>{ m[k]=v; if(sh) renderShapes(esq); else esq.querySelectorAll('.pm[data-pm="'+n+'"]').forEach(x=>x.style.setProperty('--pmc',rgba(m.c,m.o))); save(); },
-      del:()=>{ if(sh){ bk.f=bk.f.filter(x=>x.n!==n); renderShapes(esq); } else { bk.t=bk.t.filter(x=>x.n!==n); unwrap(esq,n); } save(); }},[e.clientX,e.clientY]);
+      set:(k,v)=>{
+        const top=hist[hist.length-1];
+        if(!(top&&top.m===m&&top.k===k)){ const old=m[k]; hist.push({id:esq.id,m:m,k:k,fn:()=>{ m[k]=old; if(sh) renderShapes(esq); else esq.querySelectorAll('.pm[data-pm="'+n+'"]').forEach(x=>x.style.setProperty('--pmc',rgba(m.c,m.o))); save(); }}); }
+        m[k]=v; if(sh) renderShapes(esq); else esq.querySelectorAll('.pm[data-pm="'+n+'"]').forEach(x=>x.style.setProperty('--pmc',rgba(m.c,m.o))); save(); },
+      del:()=>{ delMark(esq,bk,!!sh,n,m); }},[e.clientX,e.clientY]);
   },true);
 
   /* ---------- borrar ---------- */
@@ -4027,12 +4083,19 @@ body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
     const sh=e.target.closest&&e.target.closest('[data-pf]'), sp=!sh&&e.target.closest&&e.target.closest('.pm');
     const hit=sh||sp, esq=hit&&hit.closest('.esquema'); if(!esq) return;
     const bk=bucket(esq.id);
-    if(sh){ bk.f=bk.f.filter(f=>f.n!=sh.dataset.pf); renderShapes(esq); }
-    else { const n=+sp.dataset.pm; bk.t=bk.t.filter(m=>m.n!==n); unwrap(esq,n); }
-    save(); e.preventDefault(); e.stopPropagation();
+    const n=+(sh?sh.dataset.pf:sp.dataset.pm), m=(sh?bk.f:bk.t).find(x=>x.n===n);
+    if(m) delMark(esq,bk,!!sh,n,m);
+    e.preventDefault(); e.stopPropagation();
   },true);
+  function delMark(esq,bk,isShape,n,m){
+    if(isShape){ bk.f=bk.f.filter(x=>x.n!==n); renderShapes(esq); } else { bk.t=bk.t.filter(x=>x.n!==n); unwrap(esq,n); renderShapes(esq); }
+    save();
+    window.pmPush(esq.id,()=>{ if(isShape){ bk.f.push(m); renderShapes(esq); } else { bk.t.push(m); wrap(esq,m); renderShapes(esq); } save(); });
+  }
   function undo(){
-    const esq=actEsq(); if(!esq) return; const bk=bucket(esq.id);
+    const esq=actEsq(); if(!esq) return;
+    for(let i=hist.length-1;i>=0;i--) if(hist[i].id===esq.id){ const h=hist.splice(i,1)[0]; h.fn(); return; }
+    const bk=bucket(esq.id);
     const lt=bk.t[bk.t.length-1], lf=bk.f[bk.f.length-1];
     if(lt&&(!lf||lt.n>lf.n)){ bk.t.pop(); unwrap(esq,lt.n); } else if(lf){ bk.f.pop(); renderShapes(esq); } else return;
     save();
@@ -4148,6 +4211,21 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     const n=mkEl(cat); [...el.attributes].forEach(a=>{ if(a.name!=='class') n.setAttribute(a.name,a.value); });
     while(el.firstChild) n.appendChild(el.firstChild); el.parentNode.replaceChild(n,el); return n;
   }
+  const H=(esq,fn)=>{ if(window.pmPush) window.pmPush(esq.id,()=>{ fn(); if(window.pmRenderShapes) window.pmRenderShapes(esq); }); };
+  const reshape=esq=>{ if(window.pmRenderShapes) window.pmRenderShapes(esq); };
+  /* guarda cómo volver a poner un subrayado antes de quitarlo (para deshacer) */
+  function snapUnder(esq,el){
+    const bk=bucket(esq.id), cat=catDe(el), vis=el.closest('.vis'), raiz=vis||esq;
+    const s=offsetOf(raiz,el,0), e=s+el.textContent.length, vi=vis?[...esq.querySelectorAll('.vis')].indexOf(vis):null;
+    const add=el.dataset.add, sid=el.dataset.sid, prevE=sid!=null?bk.e[sid]:undefined, a=add?bk.a.find(x=>String(x.n)===add):null;
+    return ()=>{
+      if(add){ if(a){ bk.a.push(a); wrapAdd(esq,a); } return; }
+      if(prevE===undefined) delete bk.e[sid]; else bk.e[sid]=prevE;
+      const tmp={n:'u'+sid,s:s,e:e,c:cat}; if(vi!=null) tmp.vi=vi;
+      wrapAdd(esq,tmp);
+      esq.querySelectorAll('[data-add="u'+sid+'"]').forEach(x=>{ x.removeAttribute('data-add'); x.dataset.sid=sid; });
+    };
+  }
   function wrapAdd(esq,a){
     let acc=0; const jobs=[];
     const raiz=a.vi!=null?esq.querySelectorAll('.vis')[a.vi]:esq; if(!raiz) return;
@@ -4212,30 +4290,34 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     if(b.dataset.a==='shp'){
       /* la forma SUSTITUYE al subrayado: se mide la palabra, se quita el subrayado y se dibuja la forma en su sitio */
       if(cur.el&&window.pmAddShape){
-        const el=cur.el, rc=el.getBoundingClientRect();
+        const el=cur.el, rc=el.getBoundingClientRect(), restore=snapUnder(esq,el);
         if(el.dataset.add){
           const a=bk.a.find(x=>String(x.n)===el.dataset.add);
           esq.querySelectorAll('[data-add="'+el.dataset.add+'"]').forEach(unwrap); bk.a=bk.a.filter(x=>x!==a);
         } else { const sid=el.dataset.sid, t=el.textContent; unwrap(el); bk.e[sid]={t,c:null}; }
-        save(); window.pmAddShape(esq,b.dataset.k,rc);
+        save(); const nsh=window.pmAddShape(esq,b.dataset.k,rc);
+        H(esq,()=>{ restore(); save(); if(nsh!=null&&window.pmDelShape) window.pmDelShape(esq,nsh); });
       }
       cerrar(); return;
     }
     if(cur.el){
-      let el=cur.el;
+      let el=cur.el; const restore=snapUnder(esq,el), oldCat=catDe(el), isDel=b.dataset.a==='del';
       if(el.dataset.add){                                   // subrayado añadido por ti
-        const a=bk.a.find(x=>String(x.n)===el.dataset.add);
-        if(b.dataset.a==='del'){ unwrap(el); bk.a=bk.a.filter(x=>x!==a); }
-        else { el=recolor(el,b.dataset.c); if(a) a.c=b.dataset.c; }
+        const a=bk.a.find(x=>String(x.n)===el.dataset.add), an=el.dataset.add;
+        if(isDel){ unwrap(el); bk.a=bk.a.filter(x=>x!==a); H(esq,()=>{ restore(); save(); }); }
+        else { el=recolor(el,b.dataset.c); if(a) a.c=b.dataset.c; H(esq,()=>{ esq.querySelectorAll('[data-add="'+an+'"]').forEach(x=>recolor(x,oldCat)); if(a) a.c=oldCat; save(); }); }
       } else {
-        const sid=el.dataset.sid, t=el.textContent;
-        if(b.dataset.a==='del'){ unwrap(el); bk.e[sid]={t,c:null}; }
-        else { recolor(el,b.dataset.c); bk.e[sid]={t,c:b.dataset.c}; }
+        const sid=el.dataset.sid, t=el.textContent, prevE=bk.e[sid];
+        if(isDel){ unwrap(el); bk.e[sid]={t,c:null}; H(esq,()=>{ restore(); save(); }); }
+        else { recolor(el,b.dataset.c); bk.e[sid]={t,c:b.dataset.c};
+          H(esq,()=>{ esq.querySelectorAll('[data-sid="'+sid+'"]').forEach(x=>recolor(x,oldCat)); if(prevE===undefined) delete bk.e[sid]; else bk.e[sid]=prevE; save(); }); }
       }
+      reshape(esq);
     } else if(cur.range){
       const rg=cur.range, ac=rg.commonAncestorContainer, vis=(ac.nodeType===1?ac:ac.parentElement).closest('.vis');
       const raiz=vis||esq, s=offsetOf(raiz,rg.startContainer,rg.startOffset), en=offsetOf(raiz,rg.endContainer,rg.endOffset);
-      if(en>s){ const a={n:++bk.n,s,e:en,c:b.dataset.c}; if(vis) a.vi=[...esq.querySelectorAll('.vis')].indexOf(vis); bk.a.push(a); wrapAdd(esq,a); }
+      if(en>s){ const a={n:++bk.n,s,e:en,c:b.dataset.c}; if(vis) a.vi=[...esq.querySelectorAll('.vis')].indexOf(vis); bk.a.push(a); wrapAdd(esq,a);
+        H(esq,()=>{ esq.querySelectorAll('[data-add="'+a.n+'"]').forEach(unwrap); bk.a=bk.a.filter(x=>x!==a); save(); }); reshape(esq); }
       getSelection().removeAllRanges();
     }
     save(); cerrar();
