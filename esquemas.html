@@ -4061,10 +4061,19 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   const cfg=()=>rd(CFG);
   const hayCfg=()=>{ const c=cfg(); return !!(c.repo&&c.token); };
   const b64=s=>btoa(unescape(encodeURIComponent(s))), unb64=s=>decodeURIComponent(escape(atob(s.replace(/\s/g,''))));
-  function actual(){ const a=rd(K1), b=rd(K2), o={}; new Set([...Object.keys(a),...Object.keys(b)]).forEach(id=>{ o[id]={m:a[id]||null,c:b[id]||null}; }); return o; }
+  /* Por tema se sincronizan: marcas (m), categorías de color (c), fichas dominada/repasar (f), repaso espaciado (r) y la última ficha vista (u) */
+  const KF='esquemas-fichas', KR='esquemas-repaso', KU='esquemas-ultima';
+  const VACIO={m:null,c:null,f:null,r:null,u:null};
+  const idDeFicha=k=>{ const i=k.indexOf('|'); return i<0?k:k.slice(0,i); };
+  function fichasDe(id){ const f=rd(KF), o={}, p=id+'|'; Object.keys(f).forEach(k=>{ if(k.indexOf(p)===0) o[k.slice(p.length)]=f[k]; }); return Object.keys(o).length?o:null; }
+  function actual(){
+    const a=rd(K1), b=rd(K2), r=rd(KR), u=rd(KU), f=rd(KF), o={};
+    new Set([...Object.keys(a),...Object.keys(b),...Object.keys(r),...Object.keys(u),...Object.keys(f).map(idDeFicha)]).forEach(id=>{ o[id]={m:a[id]||null,c:b[id]||null,f:fichasDe(id),r:r[id]||null,u:u[id]||null}; });
+    return o;
+  }
   let snap={}; (function(){ const o=actual(); Object.keys(o).forEach(id=>snap[id]=JSON.stringify(o[id])); })();
-  (function(){ const ts=rd(TS), o=actual(); let c=false; Object.keys(o).forEach(id=>{ const v=o[id]; const hay=(v.m&&((v.m.t&&v.m.t.length)||(v.m.f&&v.m.f.length)))||(v.c&&(Object.keys(v.c.e||{}).length||(v.c.a||[]).length)); if(hay&&!ts[id]){ ts[id]=1; c=true; } }); if(c) wr(TS,ts); })();
-  let ignorar=false, pendiente=false, ocupado=false, timer=0;
+  (function(){ const ts=rd(TS), o=actual(); let c=false; Object.keys(o).forEach(id=>{ const v=o[id]; const hay=(v.m&&((v.m.t&&v.m.t.length)||(v.m.f&&v.m.f.length)))||(v.c&&(Object.keys(v.c.e||{}).length||(v.c.a||[]).length))||v.f||v.r||v.u; if(hay&&!ts[id]){ ts[id]=1; c=true; } }); if(c) wr(TS,ts); })();
+  let ignorar=false, pendiente=false, ocupado=false, timer=0, agendado=false;
 
   /* ---------- indicador ---------- */
   let badge=null;
@@ -4110,13 +4119,16 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
         let aplicado=false, subir=false; const out=Object.assign({},rem.datos);
         Object.keys(rem.datos).forEach(id=>{                       // lo más nuevo del remoto -> local
           const r=rem.datos[id]; if((r.ts||0)>(ts[id]||0)){
-            const a=rd(K1), b=rd(K2);
+            const a=rd(K1), b=rd(K2), rp=rd(KR), ul=rd(KU), fi=rd(KF);
             if(r.m) a[id]=r.m; else delete a[id]; if(r.c) b[id]=r.c; else delete b[id];
-            ignorar=true; wr(K1,a); wr(K2,b); ignorar=false; ts[id]=r.ts; aplicado=true; snap[id]=JSON.stringify({m:r.m||null,c:r.c||null});
+            if('r' in r){ if(r.r) rp[id]=r.r; else delete rp[id]; }         // (una copia antigua sin estos campos no borra lo local)
+            if('u' in r){ if(r.u) ul[id]=r.u; else delete ul[id]; }
+            if('f' in r){ Object.keys(fi).forEach(k=>{ if(k.indexOf(id+'|')===0) delete fi[k]; }); if(r.f) Object.keys(r.f).forEach(h=>{ fi[id+'|'+h]=r.f[h]; }); }
+            ignorar=true; wr(K1,a); wr(K2,b); wr(KR,rp); wr(KU,ul); wr(KF,fi); ignorar=false; ts[id]=r.ts; aplicado=true; snap[id]=JSON.stringify(actual()[id]||VACIO);
           }
         });
         Object.keys(ts).forEach(id=>{                              // lo más nuevo del local -> remoto
-          const r=rem.datos[id]; if(!r||ts[id]>(r.ts||0)){ const l=loc[id]||{m:null,c:null}; out[id]={ts:ts[id],m:l.m,c:l.c}; subir=true; }
+          const r=rem.datos[id]; if(!r||ts[id]>(r.ts||0)){ const l=loc[id]||VACIO; out[id]={ts:ts[id],m:l.m,c:l.c,f:l.f,r:l.r,u:l.u}; subir=true; }
         });
         wr(TS,ts);
         if(subir){
@@ -4134,15 +4146,15 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     ocupado=false;
     if(pendiente){ pendiente=false; programar(1500); }
   }
-  const programar=ms=>{ clearTimeout(timer); timer=setTimeout(sincronizar,ms); };
+  const programar=ms=>{ clearTimeout(timer); agendado=true; timer=setTimeout(()=>{ agendado=false; sincronizar(); },ms); };
 
   /* ---------- detectar cambios locales ---------- */
   Storage.prototype.setItem=function(k,v){
     origSet.call(this,k,v);
-    if(this===localStorage&&(k===K1||k===K2)&&!ignorar){
+    if(this===localStorage&&(k===K1||k===K2||k===KF||k===KR||k===KU)&&!ignorar){
       const o=actual(), ts=rd(TS); let cambio=false;
-      Object.keys(o).forEach(id=>{ const s=JSON.stringify(o[id]); if(snap[id]!==s){ snap[id]=s; ts[id]=Date.now(); cambio=true; } });
-      if(cambio){ wr(TS,ts); programar(4000); }
+      new Set([...Object.keys(o),...Object.keys(snap)]).forEach(id=>{ const s=JSON.stringify(o[id]||VACIO); if(snap[id]!==s){ snap[id]=s; ts[id]=Date.now(); cambio=true; } });
+      if(cambio){ wr(TS,ts); if(k===KU){ if(!agendado) programar(45000); } else programar(4000); }   // la «última ficha vista» cambia mucho: se sube con calma para no llenar el repositorio de copias
     }
   };
 
@@ -4410,6 +4422,58 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     });
   }
   aplicar();
+})();
+</script>
+<style id="estilo-ultima">
+#ultima-chip{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:9500;display:none;align-items:center;gap:8px;max-width:min(560px,calc(100vw - 24px));padding:9px 12px;border-radius:24px;background:var(--verde,#1c4d3c);color:#fff;font-size:13px;box-shadow:0 8px 26px rgba(0,0,0,.35)}
+#ultima-chip.on{display:flex}
+#ultima-chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+#ultima-chip button{border:0;border-radius:14px;padding:5px 11px;font-size:12.5px;font-weight:800;cursor:pointer;font-family:inherit;flex:none}
+#ultima-chip .ir{background:#fff;color:var(--verde,#1c4d3c)}
+#ultima-chip .x{background:transparent;color:#fff;padding:5px 7px}
+@media print{#ultima-chip{display:none!important}}
+</style>
+<script id="script-ultima">
+/* ==================== MARCADOR: por dónde ibas ====================
+   Guarda la última ficha que viste en cada tema ('esquemas-ultima', se sincroniza con el resto de dispositivos).
+   Al abrir un tema aparece «📍 Seguir por: …» con un botón para ir directo a esa ficha. */
+(function(){
+  const KEY='esquemas-ultima';
+  let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
+  const rec=()=>{ try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){} };
+  const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
+  const clave=a=>{ const h=a.querySelector('.articulo-head'); return h&&h.firstChild?h.firstChild.textContent.trim():''; };
+  const activo=()=>document.querySelector('.esquema.active');
+  const chip=document.createElement('div'); chip.id='ultima-chip';
+  chip.innerHTML='<span></span><button type="button" class="ir">Ir</button><button type="button" class="x" title="Cerrar">✕</button>';
+  document.body.appendChild(chip);
+  let objetivo=null, tHide=0;
+  const ocultar=()=>{ chip.classList.remove('on'); clearTimeout(tHide); };
+  chip.querySelector('.x').onclick=ocultar;
+  chip.querySelector('.ir').onclick=()=>{ if(objetivo){ objetivo.style.scrollMarginTop='90px'; objetivo.scrollIntoView({behavior:'smooth',block:'start'}); } ocultar(); };
+  function ofrecer(){
+    const es=activo(); ocultar(); if(!es) return;
+    rec(); const u=data[es.id]; if(!u||!u.k) return;
+    const a=[...es.querySelectorAll('.articulo')].find(x=>clave(x)===u.k); if(!a) return;
+    if(a.getBoundingClientRect().top<innerHeight*0.6&&a.getBoundingClientRect().bottom>0) return;   // ya lo tienes a la vista
+    objetivo=a; chip.querySelector('span').textContent='📍 Seguir por: '+u.k.replace(/\s+/g,' ').slice(0,70);
+    chip.classList.add('on'); tHide=setTimeout(ocultar,20000);
+  }
+  function guardar(){
+    const es=activo(); if(!es) return;
+    const arts=[...es.querySelectorAll('.articulo')]; if(arts.length<2) return;
+    if(arts[0].getBoundingClientRect().top>-300) return;            // arriba del todo: no pisar el marcador guardado
+    const a=arts.find(x=>x.getBoundingClientRect().bottom>140); if(!a) return;
+    const k=clave(a); if(!k) return;
+    rec(); if(data[es.id]&&data[es.id].k===k) return;
+    data[es.id]={k:k,t:Date.now()}; save();
+  }
+  let t=0;
+  addEventListener('scroll',()=>{ clearTimeout(t); t=setTimeout(guardar,1500); },{passive:true,capture:true});
+  let ult=null;
+  const vigila=()=>{ const es=activo(), id=es&&es.id; if(id!==ult){ ult=id; if(id) setTimeout(ofrecer,400); } };
+  new MutationObserver(vigila).observe(document.body,{attributes:true,subtree:true,attributeFilter:['class']});
+  let n=0; (function init(){ if(!activo()&&n++<40) return setTimeout(init,150); vigila(); })();
 })();
 </script>
 </body>
