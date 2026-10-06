@@ -22,8 +22,8 @@ const plazos = (titulo, items) => `<div class="vis"><div class="vis-t"><i>⏱</i
 // Tabla jerárquica (objeto → subobjeto → plazo y cómputo), como las tablas del temario.
 // nodos = [{l:'etiqueta', c:'o|v|c', h:[nodos…]} | {p:'2 meses', c:'o|v|n', t:'texto'}]
 const tabla = (titulo, cab, nodos) => {
-  const hoja = h => `<div class="vt-hoja"><span class="vt-p ${h.c || ''}">${h.p}</span><div class="vt-t">${X(h.t)}</div></div>`;
-  const nodo = n => n.p ? hoja(n) : `<div class="vt-nodo"><div class="vt-et ${n.c || ''}">${X(n.l)}</div><div class="vt-hijos">${n.h.map(nodo).join('')}</div></div>`;
+  const hoja = h => h.p ? `<div class="vt-hoja"><span class="vt-p ${h.c || ''}">${h.p}</span><div class="vt-t">${X(h.t)}</div></div>` : `<div class="vt-hoja sp"><div class="vt-t">${X(h.t)}</div></div>`;
+  const nodo = n => !n.h ? hoja(n) : `<div class="vt-nodo"><div class="vt-et ${n.c || ''}">${X(n.l)}</div><div class="vt-hijos">${n.h.map(nodo).join('')}</div></div>`;
   return `<div class="vis"><div class="vis-t"><i>▦</i>${titulo}</div><div class="vis-tabla"><div class="vt-cab"><span>${cab[0]}</span><span>${cab[1]}</span></div>${nodos.map(nodo).join('')}</div></div>`;
 };
 

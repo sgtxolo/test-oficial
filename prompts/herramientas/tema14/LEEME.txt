@@ -1,0 +1,1 @@
+﻿Scripts usados para el Tema 14 (referencia para otros temas): parse14.py (texto oficial -> artículos), build14.py (esquema + respuestas marcadas), assemble14.py (inserta en esquemas.html), gen14.py/check14.py/inserta14.py (50 preguntas IA con cita literal comprobada). Todos reciben como argumento la carpeta de trabajo con of14.txt, t14d.json, etc.

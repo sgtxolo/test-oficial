@@ -166,8 +166,9 @@ for (const [nm, fl] of Object.entries(porNorma)) {
     total += sg.length; ok += sg.filter(p => p.g >= 0).length;
     const pgs = [...new Set(sg.filter(p => p.g >= 0).map(p => G[p.g].pag))];
     if (process.env.DBG) console.error((100 * q).toFixed(0).padStart(4), 'p' + pgs[0] + '-' + pgs[pgs.length - 1], f.cab.slice(0, 55));
-    if (q < 0.3) mal++;
-    f.nuevo = q < 0.3 ? null : JSON.stringify(pinta(f.piezas, G));
+    const UMB = +(process.env.UMBRAL || 0.3);   // umbral de fiabilidad del alineado (UMBRAL=0.15 acepta fichas con OCR muy roto)
+    if (q < UMB) mal++;
+    f.nuevo = q < UMB ? null : JSON.stringify(pinta(f.piezas, G));
   }
 }
 console.error(`fichas: ${fichas.length}  poco fiables(<30 %): ${mal}  palabras: ${total}  alineadas: ${ok} (${(100 * ok / total).toFixed(1)} %)`);

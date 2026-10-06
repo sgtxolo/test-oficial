@@ -19,6 +19,7 @@ const PDFS = {
   9: ['TEMA 9 - Defensa Nacional (LO 5-2005 + Directiva Defensa Nacional 2020).pdf'],
   12: ['TEMA 12 - Gobierno y Administracion (Ley 50-1997 - Extracto oficial).pdf'],
   13: ['TEMA 13 - Jurisdiccion Contencioso-Administrativa (Extracto oficial).pdf'],
+  14: ['TEMA 14 - El Defensor del Pueblo (Extracto oficial).pdf'],
 };
 const SUF = 'bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies|undecies|duodecies|terdecies|quaterdecies|quindecies|sexdecies|septdecies|octodecies|novodecies|vicies';
 
