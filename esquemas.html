@@ -99,7 +99,7 @@ mark.m-resp{background:#dbeafe;color:#1e3a8a;font-weight:800;padding:0 3px;borde
 [data-theme="dark"] .tag-nuevo{background:#3b6fe0}
 .resp-strip{background:#fff8e6;border-bottom:1px dashed #d4a017;padding:8px 14px;font-size:12.5px;line-height:1.8;color:#5a4300}
 .resp-strip b{color:#b3001b;margin-right:4px}
-.resp-strip span{display:inline-block;background:#fff;border:1px solid #e6c46a;border-radius:10px;padding:0 8px;margin:2px 4px 2px 0;color:#7a1010;font-weight:700}
+.resp-strip span{cursor:pointer;display:inline-block;background:#fff;border:1px solid #e6c46a;border-radius:10px;padding:0 8px;margin:2px 4px 2px 0;color:#7a1010;font-weight:700}
 [data-theme="dark"] .resp-strip{background:#2e2610;color:#f0d890}
 [data-theme="dark"] .resp-strip span{background:#3d2a05;border-color:#806020;color:#ffb4a8}
 
@@ -3616,6 +3616,21 @@ body.embed #app{padding-top:4px}
     ev.preventDefault();
     if (window.top !== window.self) return;   // abierto desde un test: no se sale del test en curso
     location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(m.dataset.q);
+  });
+
+  // ---------- Pulsar una ficha de la franja «Respuestas» -> repasar sus preguntas ----------
+  document.addEventListener('click', ev => {
+    const sp = ev.target.closest && ev.target.closest('.resp-strip span'); if (!sp) return;
+    const art = sp.closest('.articulo'); if (!art) return;
+    const nr = t => (t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/^incorrecta:\s*/, '').replace(/…$/, '').replace(/[^a-z0-9]+/g, ' ').trim();
+    const chips = [...sp.parentNode.querySelectorAll('span')], idx = chips.indexOf(sp), t = nr(sp.textContent);
+    const marks = [...art.querySelectorAll('mark.m-resp[data-q]')];
+    let m = t.length > 3 ? marks.find(x => nr(x.textContent).startsWith(t) || (t.length > 12 && nr(x.textContent).includes(t))) : null;
+    let ids = m ? m.dataset.q : ((art.dataset.qs || '').split(',').filter(Boolean).join(','));
+    if (!ids) return;
+    ev.preventDefault();
+    if (window.top !== window.self) return;
+    location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(ids);
   });
 
   // ---------- Ir a una pregunta: esquemas.html#q=5-12 ----------
