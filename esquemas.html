@@ -4072,23 +4072,26 @@ body.solo-res .sin-res{display:none!important}
     }
     return null;
   }
-  function anchorAt(esq,x,y){      // x,y en px respecto al esquema → offset de texto
-    const sv=svgOf(esq), dsp=sv.style.display; sv.style.display='none';
-    let c=null,o=0; const er=esq.getBoundingClientRect(), cx=er.left+x, cy=er.top+y;
-    try{
-      if(document.caretPositionFromPoint){ const q=document.caretPositionFromPoint(cx,cy); if(q){ c=q.offsetNode; o=q.offset; } }
-      else if(document.caretRangeFromPoint){ const q=document.caretRangeFromPoint(cx,cy); if(q){ c=q.startContainer; o=q.startOffset; } }
-    }catch(e){}
-    sv.style.display=dsp;
-    if(!c||c.nodeType!==3||!esq.contains(c)) return null;
-    const list=textNodes(esq); let acc=0, ok=false;
-    for(const t of list){ if(t===c){ ok=true; break; } acc+=t.length; }
-    if(!ok) return null;
-    const txt=c.nodeValue; let i=Math.min(o,txt.length-1);
-    while(i<txt.length-1&&/\s/.test(txt[i])) i++;
-    while(i>0&&/\s/.test(txt[i])) i--;
-    if(/\s/.test(txt[i])) return null;
-    return acc+i;
+  function anchorAt(esq,x,y){      // x,y en px respecto al esquema → offset de texto (carácter más cercano; no depende de lo que se vea en pantalla)
+    const er=esq.getBoundingClientRect(), qx=er.left+x, qy=er.top+y, list=textNodes(esq);
+    const dist=rc=>{ const dy=qy<rc.top?rc.top-qy:(qy>rc.bottom?qy-rc.bottom:0), dx=qx<rc.left?rc.left-qx:(qx>rc.right?qx-rc.right:0); return dy*3+dx; };
+    let best=-1,bn=null,bd=1e9,acc=0;
+    for(let i=0;i<list.length;i++){
+      const t=list[i], n=t.length, pe=t.parentElement; const base=acc; acc+=n;
+      if(!n||!t.nodeValue.trim()) continue;
+      const pr=pe.getBoundingClientRect(); if(qy<pr.top-30||qy>pr.bottom+30) continue;
+      const r=document.createRange(); r.selectNodeContents(t);
+      for(const rc of r.getClientRects()){ if(!rc.width&&!rc.height) continue; const d=dist(rc); if(d<bd){ bd=d; bn=t; best=base; } }
+    }
+    if(!bn||bd>60) return null;
+    const txt=bn.nodeValue; let bi=-1; bd=1e9;
+    for(let i=0;i<txt.length;i++){
+      if(/\s/.test(txt[i])) continue;
+      const r=document.createRange(); r.setStart(bn,i); r.setEnd(bn,i+1);
+      const rc=r.getClientRects()[0]; if(!rc||(!rc.width&&!rc.height)) continue;
+      const d=dist(rc); if(d<bd){ bd=d; bi=i; }
+    }
+    return bi<0?null:best+bi;
   }
   function anchorShape(esq,f){
     if(!esq.clientWidth||esq.offsetParent===null) return false;
@@ -4097,11 +4100,21 @@ body.solo-res .sin-res{display:none!important}
     else { const xs=P.map(p=>p[0]), ys=P.map(p=>p[1]); x=(Math.min(...xs)+Math.max(...xs))/2; y=(Math.min(...ys)+Math.max(...ys))/2; }
     const o=anchorAt(esq,x,y); if(o==null) return false;
     const c=charPos(esq,textNodes(esq),o); if(!c) return false;
-    f.a={o:o,d:P.map(p=>[p[0]-c[0],p[1]-c[1]])}; return true;
+    const list=textNodes(esq), tx=textOf(list), i0=Math.max(0,o-10);
+    f.a={o:o,cx:tx.slice(i0,o+11),d:P.map(p=>[p[0]-c[0],p[1]-c[1]])}; return true;
+  }
+  /* texto completo del esquema (se guarda en la lista) y búsqueda del carácter ancla por su contexto: si cambia el texto de otras partes, se vuelve a encontrar */
+  function textOf(list){ return list._t!=null?list._t:(list._t=list.map(n=>n.nodeValue).join('')); }
+  function resolveOff(a,list){
+    if(!a||!a.cx) return null;
+    const tx=textOf(list), i0=Math.max(0,a.o-10), k=a.o-i0;
+    if(tx.slice(i0,i0+a.cx.length)===a.cx) return a.o;
+    let best=-1,bd=1e9,j=-1; while((j=tx.indexOf(a.cx,j+1))>=0){ const d=Math.abs(j-i0); if(d<bd){bd=d;best=j;} }
+    return best<0?null:best+k;
   }
   function ptsOf(esq,f,tmpPts,list){
     if(tmpPts) return tmpPts.map(p=>px(esq,p));
-    if(f.a){ const c=charPos(esq,list||textNodes(esq),f.a.o); if(c) return f.a.d.map(d=>[c[0]+d[0],c[1]+d[1]]); }
+    if(f.a){ list=list||textNodes(esq); const o=resolveOff(f.a,list); const c=o==null?null:charPos(esq,list,o); if(c) return f.a.d.map(d=>[c[0]+d[0],c[1]+d[1]]); }
     return f.p.map(p=>px(esq,p));
   }
   function shapeEl(esq,f,tmpPts,list){
@@ -4125,7 +4138,7 @@ body.solo-res .sin-res{display:none!important}
     id=id||esq.id;
     const s=svgOf(esq); s.querySelectorAll('[data-pf]').forEach(e=>e.remove());
     const fs=(data[id]&&data[id].f)||[], list=textNodes(esq); let ch=false;
-    fs.forEach(f=>{ if(!f.a&&esq.id===id&&anchorShape(esq,f)) ch=true; s.appendChild(shapeEl(esq,f,null,list)); });
+    fs.forEach(f=>{ if(f.a&&!f.a.cx&&esq.id===id){ delete f.a; ch=true; } if(!f.a&&esq.id===id&&anchorShape(esq,f)) ch=true; s.appendChild(shapeEl(esq,f,null,list)); });
     if(ch) save();
   }
   window.pmRenderShapes=renderShapes;
