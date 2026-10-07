@@ -210,6 +210,19 @@ u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoratio
   .btn-volver{display:block;position:sticky;top:6px;z-index:9;margin:0 0 10px;border:none;background:var(--verde);color:#fff;border-radius:20px;padding:8px 16px;font-size:13px;font-weight:700;font-family:inherit;cursor:pointer}
 }
 
+/* Menú de temas plegable (tablet/ordenador): oculto por defecto, se abre con el botón ☰ Temas */
+.btn-menu-temas{display:none}
+@media (min-width:721px) and (min-height:541px){
+  .btn-menu-temas{display:flex}
+  .layout{display:block}
+  .content{width:100%}
+  .sidebar{position:fixed;top:0;left:0;bottom:0;max-height:none;width:min(320px,86vw);z-index:99990;border-radius:0 var(--radio) var(--radio) 0;padding:16px;box-shadow:0 10px 40px rgba(0,0,0,.35);transform:translateX(-105%);transition:transform .22s ease;visibility:hidden}
+  body.menu-temas .sidebar{transform:none;visibility:visible}
+  .menu-fondo{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:99985}
+  body.menu-temas .menu-fondo{display:block}
+}
+@media print{.btn-menu-temas,.menu-fondo{display:none!important}}
+
 @media print{
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important}
   body,html{background:#fff}
@@ -240,7 +253,7 @@ body.voz-abierta .voz-bar{display:flex}
 <body>
 <div id="app">
   <div class="topbar">
-    <h1>📚 Esquemas de Estudio</h1>
+    <div style="display:flex;align-items:center;gap:12px"><button class="btn-pdf btn-menu-temas" id="btn-menu-temas" type="button" title="Mostrar u ocultar la lista de temas">☰ Temas</button><h1>📚 Esquemas de Estudio</h1></div>
     <div style="display:flex;align-items:center;gap:10px">
       <span class="vista-of" id="vista-of" title="Todo: preguntas oficiales y de IA. Solo oficiales: únicamente lo que ha salido en exámenes de la academia (esquema mucho más corto)"><button type="button" data-v="todo" class="on">📚 Todo</button><button type="button" data-v="of">⭐ Solo oficiales</button></span>
       <button class="btn-pdf" id="btn-resumen" type="button" title="Mostrar solo los artículos que has marcado con R (resumen)">R Resumen</button>
@@ -254,6 +267,7 @@ body.voz-abierta .voz-bar{display:flex}
     </div>
   </div>
 
+  <div class="menu-fondo" id="menu-fondo"></div>
   <div class="layout">
     <div class="sidebar" id="nav-temas">
       <h3>Temas</h3>
@@ -614,6 +628,11 @@ function mostrar(id){
   document.body.classList.add('ver-esquema');
   window.scrollTo(0,0);
 }
+(function(){const b=document.getElementById('btn-menu-temas'),f=document.getElementById('menu-fondo');
+  const cerrar=()=>document.body.classList.remove('menu-temas');
+  b.onclick=()=>document.body.classList.toggle('menu-temas'); f.onclick=cerrar;
+  document.getElementById('nav-temas').addEventListener('click',e=>{ if(e.target.closest('.tema-nav-item')) cerrar(); });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') cerrar(); });})();
 document.getElementById('btn-volver').onclick = () => { document.body.classList.remove('ver-esquema'); window.scrollTo(0,0); };
 
 // ---- TEMA CLARO / OSCURO ----
@@ -3918,7 +3937,7 @@ body.solo-res .sin-res{display:none!important}
   const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
   const nrm=t=>(t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
   const clave=art=>{ const h=art.querySelector('.articulo-head'); const n=h&&[...h.childNodes].find(x=>x.nodeType===3&&x.textContent.trim()); return n?n.textContent.trim():''; };
-  const NUM=/^\s*\d+\s*[\.\)º]/;
+  const NUM=/^\s*(?:\(…\)\s*)?\d+\s*[\.\)º]/;   // también «(…) 3.» al inicio
   const txtOf=p=>p.textContent.replace(/^\s*R\s*/,'').trim();
   /* apartados de un artículo: cada párrafo numerado («1.», «2.»…) abre uno y le siguen sus letras a), b)… y los (…); sin numeración, cada párrafo es un apartado */
   function grupos(art){
