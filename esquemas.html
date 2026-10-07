@@ -5035,6 +5035,9 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
 <style id="estilo-ultima">
 #ultima-chip{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:9500;display:none;align-items:center;gap:8px;max-width:min(560px,calc(100vw - 24px));padding:9px 12px;border-radius:24px;background:var(--verde,#1c4d3c);color:#fff;font-size:13px;box-shadow:0 8px 26px rgba(0,0,0,.35)}
 #ultima-chip.on{display:flex}
+.pt-btn{border:1px solid var(--borde,#bbb);background:transparent;color:inherit;border-radius:12px;padding:2px 8px;font-size:12px;cursor:pointer;font-family:inherit;margin-left:6px}
+.articulo.pt-marca{outline:3px solid #e0a800;outline-offset:2px;border-radius:6px}
+.articulo.pt-marca .pt-btn{background:#e0a800;color:#000;font-weight:800;border-color:#e0a800}
 #ultima-chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 #ultima-chip button{border:0;border-radius:14px;padding:5px 11px;font-size:12.5px;font-weight:800;cursor:pointer;font-family:inherit;flex:none}
 #ultima-chip .ir{background:#fff;color:var(--verde,#1c4d3c)}
@@ -5064,8 +5067,8 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     rec(); const u=data[es.id]; if(!u||!u.k) return;
     const a=[...es.querySelectorAll('.articulo')].find(x=>clave(x)===u.k); if(!a) return;
     if(a.getBoundingClientRect().top<innerHeight*0.6&&a.getBoundingClientRect().bottom>0) return;   // ya lo tienes a la vista
-    objetivo=a; chip.querySelector('span').textContent='📍 Seguir por: '+u.k.replace(/\s+/g,' ').slice(0,70);
-    chip.classList.add('on'); tHide=setTimeout(ocultar,20000);
+    objetivo=a; chip.querySelector('span').textContent=(u.man?'📍 Aquí te quedaste: ':'📍 Seguir por: ')+u.k.replace(/\s+/g,' ').slice(0,70);
+    chip.classList.add('on'); if(!u.man) tHide=setTimeout(ocultar,20000);
   }
   function guardar(){
     const es=activo(); if(!es) return;
@@ -5073,9 +5076,15 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     if(arts[0].getBoundingClientRect().top>-300) return;            // arriba del todo: no pisar el marcador guardado
     const a=arts.find(x=>x.getBoundingClientRect().bottom>140); if(!a) return;
     const k=clave(a); if(!k) return;
-    rec(); if(data[es.id]&&data[es.id].k===k) return;
+    rec(); if(data[es.id]&&(data[es.id].man||data[es.id].k===k)) return;   // un marcador manual no se pisa solo
     data[es.id]={k:k,t:Date.now()}; save();
   }
+  /* Marcador manual: botón 📍 en cada ficha. Queda fijo hasta que lo quites o marques otra ficha en ese tema. */
+  function pintaMarca(es){ rec(); const u=data[es.id]; es.querySelectorAll('.articulo').forEach(a=>{ const on=!!(u&&u.man&&clave(a)===u.k); a.classList.toggle('pt-marca',on); const b=a.querySelector('.pt-btn'); if(b) b.textContent=on?'📍 Aquí me quedé':'📍'; }); }
+  function botones(es){ es.querySelectorAll('.articulo').forEach(a=>{ const h=a.querySelector('.articulo-head'); if(!h||h.querySelector('.pt-btn')) return; const b=document.createElement('button'); b.type='button'; b.className='pt-btn'; b.title='Marcar aquí por dónde vas: la próxima vez te llevo a esta ficha';
+    b.onclick=ev=>{ ev.stopPropagation(); const k=clave(a); if(!k) return; rec(); if(data[es.id]&&data[es.id].man&&data[es.id].k===k) delete data[es.id]; else data[es.id]={k:k,t:Date.now(),man:1}; save(); pintaMarca(es); };
+    h.insertBefore(b,h.querySelector('.st-chip')); }); pintaMarca(es); }
+  document.querySelectorAll('.esquema').forEach(botones);
   let t=0;
   addEventListener('scroll',()=>{ clearTimeout(t); t=setTimeout(guardar,1500); },{passive:true,capture:true});
   let ult=null;
