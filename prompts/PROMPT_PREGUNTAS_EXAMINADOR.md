@@ -24,19 +24,22 @@ Puedo darte **dos documentos del mismo tema**, y cada uno vale para una cosa dis
      5. Al final entrégame una tabla: artículo → nº de preguntas → «% subrayado mío» de ese artículo, para ver que el peso va donde yo subrayé.
    - Si no te adjunto el segundo documento, el esquema se subraya con el método Prefortia habitual (≈ 70 %, por categorías).
 
-## Marcas de examen que yo pongo a mano en mi temario subrayado (OBLIGATORIO)
-En mi temario subrayado marco los artículos que han caído o caerán en examen. **Cada una de estas marcas obliga a que ese artículo esté en el esquema del tema y a que tenga preguntas en el banco**:
-- **Círculo a bolígrafo (normalmente azul) con «EX»** (a veces «Ex», «EX*», «ESQ»): examen. Va en el margen, junto al apartado concreto.
-- **Círculo a bolígrafo con «EXOF»** (en minúscula a veces: «exof»): **examen oficial**; es lo más importante de todo.
-- **Sello impreso «PREGUNTA EXAMEN 2020»** en el borde izquierdo (a veces con un icono «B» + número): salió en el examen oficial de 2020.
-- Un **círculo con R** (resumen), un **✱ rojo** o una **flecha** señalan importancia, pero **no** son EX: no sustituyen a las marcas de arriba.
+## Marcas de examen que yo pongo a mano: EX, EXOF y EXAMEN 2020 (OBLIGATORIO, se hace todo sin que te lo pida)
+Con este prompt y los dos temarios (el oficial y el mío subrayado) **tienes que hacerlo todo de principio a fin**: las 50 preguntas IA, el esquema con mi subrayado, los cuadros y todo lo de esta sección. No me preguntes cada paso.
 
-Qué hay que hacer con ellas:
-1. Al leer el subrayado (paso 1) **recorre TODAS las páginas del PDF una a una y haz una lista**: norma → artículo → apartado → tipo de marca (EX / EXOF / EXAMEN 2020) → página. No te fíes solo del OCR de `subrayado-pdf.py`: los círculos de bolígrafo hay que mirarlos en la imagen (renderiza las páginas con PyMuPDF a 90-100 dpi y revísalas).
-2. **Cada artículo con una de estas marcas debe estar en el esquema**, aunque ninguna pregunta del banco lo toque. Compara tu lista con los artículos de `esquemas.html` y **añade los que falten** con su texto literal del temario oficial y mi subrayado (herramienta: `prompts/herramientas/anadir-ex-t11.js`, plantilla del Tema 11: lee el texto de `prompts/temario-limpio/temaN/`, pinta con mi subrayado y los coloca en su sitio por orden con el atributo `data-ex="1"`, que hace aparecer el círculo EX en ese párrafo).
-3. **Cada apartado marcado debe tener al menos una pregunta** entre las 50 (las marcas EXOF y EXAMEN 2020 primero). Si ya hay preguntas, no las repitas.
-4. Los **cuadros, tablas y esquemas** del temario subrayado también son preguntas de examen: recréalos todos con `visuales-lib.js` (ver paso 6 de «Después de las preguntas»), incluidos los que llevan círculo EX.
-5. En el informe final dame la lista de marcas EX/EXOF/EXAMEN encontradas, cuáles ya estaban en el esquema y cuáles has añadido.
+En mi temario subrayado marco a mano lo que ha caído o caerá en examen:
+- **Círculo a bolígrafo (normalmente azul) con «EX»** (a veces «Ex», «EX*», «ESQ»): examen. Va en el margen, junto al apartado concreto.
+- **Círculo a bolígrafo con «EXOF»** (a veces en minúscula, «exof»): **examen oficial**, lo más importante.
+- **Sello impreso «PREGUNTA EXAMEN 2020»** en el borde izquierdo (a veces con un icono «B» y un número): salió en el examen oficial de 2020.
+- Un círculo con R (resumen), un ✱ rojo o una flecha señalan importancia, pero **no** son EX.
+
+Qué haces con cada marca (todo, y en este orden):
+1. **Localízalas todas.** Recorre **todas las páginas** del PDF subrayado una a una (renderiza cada página con PyMuPDF a 90-100 dpi y míralas; no te fíes del OCR de `subrayado-pdf.py`, que no ve los círculos de bolígrafo). Haz una lista: norma → artículo → apartado → tipo de marca (EX / EXOF / EXAMEN 2020) → página. Anota también cada **cuadro, tabla o esquema** del temario.
+2. **Cada artículo con marca tiene que estar en el esquema** (`esquemas.html`), aunque ninguna pregunta del test lo toque. Compara tu lista con los artículos del esquema y **añade los que falten** con texto literal del temario oficial y mi subrayado, con el círculo EX en su párrafo: `node prompts/herramientas/anadir-ex-t11.js <subrayado.json>` es la plantilla (ajusta su lista NUEVOS, las normas y los rangos de páginas al tema N). Mantén el orden del temario.
+3. **Cada apartado marcado debe tener pregunta OFICIAL en el test de conocimientos** (`test-oficial-conocimiento.html`, banco oficial, ids `N-<número siguiente>`, **no** `N-ia-`). Para cada artículo marcado cuenta con `extraer-preguntas.js` cuántas preguntas **oficiales** lo tratan (busca «art. X»/«artículo X» en enunciado y explicación, dentro de la norma). **Si no hay ninguna, redacta tú una pregunta como si fuera de examen real** (enunciado «<Norma>. <Materia>. …», 4 opciones, una sola correcta, distractores verosímiles cambiando un dato: plazo, órgano, mayoría, «podrá»/«deberá», «sin»/«con»; también «señale la INCORRECTA» cuando encaje), con **cita literal del temario oficial** en la explicación, y la añades al banco oficial detrás de la última pregunta oficial del tema. Plantilla: `prompts/herramientas/preguntas-ex-t11.js` (tema 11: 64 preguntas, ids 11-174 a 11-237). Prioriza EXOF y EXAMEN 2020, luego EX. Reparte la letra correcta de forma equilibrada. Si ya hay pregunta oficial de ese artículo, no la dupliques.
+4. **Los cuadros, tablas y esquemas** del temario subrayado también son preguntas de examen: recréalos **todos** con `visuales-lib.js` (ver paso 6 de «Después de las preguntas»); la plantilla es `prompts/herramientas/visuales-t11.js`. Los cuadros que llevan círculo EX son prioritarios.
+5. Después: sintaxis de los `<script>`, `mapa-preguntas.js` y `cobertura.js`, subir el `CACHE_NAME` de `service-worker.js`, commit y push.
+6. **Informe final** con: nº de marcas EX / EXOF / EXAMEN encontradas, cuántas ya tenían pregunta oficial, cuántas preguntas oficiales nuevas has redactado (por tipo de marca), artículos añadidos al esquema, cuadros recreados, y lo que no hayas podido leer o verificar.
 
 ## Objetivo
 Generar **50 preguntas tipo test** sobre ese texto que tengan la **máxima probabilidad de caer en el examen**, para estudiar y para que luego sirvan de base al esquema del tema (`/esquema-tema N`).
