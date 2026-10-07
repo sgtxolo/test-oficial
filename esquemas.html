@@ -4866,11 +4866,13 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   const intervalo=st=>Math.min(INTERVALOS[Math.min(st,INTERVALOS.length-1)],MAX);
   const temas=()=>[...document.querySelectorAll('.tema-nav-item')].map(n=>({id:n.dataset.target,nombre:n.textContent.trim().replace(/\s+/g,' '),nav:n}));
   function estado(id){
+    try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
     const r=data[id]; if(!r) return null;
     const prox=aN(r.last)+intervalo(r.st||0), dif=prox-hoyN();
     return {prox,dif};   // dif<0 retraso, 0 hoy, >0 faltan
   }
   function marcar(id,olvido){
+    try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
     const r=data[id], e=estado(id), h=aS(hoyN());
     if(olvido) data[id]={last:h,st:0};
     else if(!r) data[id]={last:h,st:0};
@@ -5246,6 +5248,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
 .pn-fila .t{flex:1;font-weight:600}.pn-fila small{display:block;font-weight:400;color:var(--texto-gris);font-size:12px}
 .pn-barra{height:8px;border-radius:4px;background:var(--borde);overflow:hidden;min-width:90px;flex:none;width:30%}
 .pn-barra i{display:block;height:100%;background:var(--verde-med)}
+.pn-fila{flex-wrap:wrap}.pn-ed{width:100%;display:flex;gap:8px;align-items:center;font-size:12px;color:var(--texto-gris)}.pn-ed input{font-size:13px;padding:2px 6px;border-radius:6px;border:1px solid var(--borde);background:var(--panel);color:var(--texto)}.pn-ed button{border:1px solid var(--borde);background:transparent;color:var(--texto-gris);border-radius:12px;padding:2px 9px;font-size:12px;cursor:pointer;font-family:inherit}
 .pn-pl{display:flex;gap:8px;border-bottom:1px solid var(--borde);padding:6px 2px;font-size:13.5px;cursor:pointer}
 .pn-pl b{flex:none;min-width:34%;color:var(--verde-med)}
 .pn-pl span{color:var(--texto-gris)}
@@ -5284,7 +5287,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
       const es=document.getElementById(t.id), arts=es?[...es.querySelectorAll('.articulo')]:[];
       let ok=0,rp=0; arts.forEach(a=>{ const v=fich[t.id+'|'+clave(a)]; if(v==='ok') ok++; else if(v==='rep') rp++; });
       const r=rep[t.id]; let dif=null; if(r) dif=aN(r.last)+INT[Math.min(r.st||0,INT.length-1)]-h;
-      return {id:t.id,nombre:t.nombre,total:arts.length,ok:ok,rp:rp,dif:dif,empezado:!!r,ult:ult[t.id]};
+      return {last:r&&r.last||'',id:t.id,nombre:t.nombre,total:arts.length,ok:ok,rp:rp,dif:dif,empezado:!!r,ult:ult[t.id]};
     });
   }
   function pestanaHoy(D){
@@ -5308,10 +5311,10 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     return o;
   }
   function pestanaTemas(D){
-    let o='<h2>Estado de los temas</h2><p class="pn-sub">Barra = fichas dominadas. Toca un tema para abrirlo.</p>';
+    let o='<h2>Estado de los temas</h2><p class="pn-sub">Barra = fichas dominadas. Toca un tema para abrirlo. Abajo de cada tema puedes poner o corregir la fecha en que lo estudiaste (el repaso se calcula desde ahí) o quitarlo.</p>';
     D.forEach(t=>{ const p=t.total?Math.round(100*t.ok/t.total):0;
       const rs=t.dif===null?'sin empezar':t.dif<0?'repaso atrasado':t.dif===0?'repasar hoy':'repaso en '+t.dif+' d';
-      o+='<div class="pn-fila '+(t.dif!==null&&t.dif<0?'tarde':t.dif===0?'hoy':'')+'" data-ir="'+t.id+'"><div class="t">'+esc(t.nombre)+'<small>'+t.ok+'/'+t.total+' dominadas · '+t.rp+' a repasar · '+rs+'</small></div><div class="pn-barra"><i style="width:'+p+'%"></i></div><b>'+p+'%</b></div>'; });
+      o+='<div class="pn-fila '+(t.dif!==null&&t.dif<0?'tarde':t.dif===0?'hoy':'')+'" data-ir="'+t.id+'"><div class="t">'+esc(t.nombre)+'<small>'+t.ok+'/'+t.total+' dominadas · '+t.rp+' a repasar · '+rs+'</small></div><div class="pn-barra"><i style="width:'+p+'%"></i></div><b>'+p+'%</b><div class="pn-ed"><label>Estudiado el <input type="date" class="pn-d" data-id="'+t.id+'" value="'+esc(t.last)+'"></label><button type="button" data-q="'+t.id+'">Quitar</button></div></div>'; });
     return o;
   }
   const RX=/(\d+|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|doce|quince|veinte|treinta|cuarenta|sesenta|noventa)\s+(d[ií]as?|meses|mes|a[ñn]os?|horas?|semanas?)|mayor[ií]a|\b\d+\s*%|dos\s+tercios|tres\s+quintos|\b\d\/\d\b|silencio|caduc|prescri|plazo/i;
@@ -5339,15 +5342,19 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     if(i!==undefined) setTimeout(()=>{ const a=document.getElementById(id).querySelectorAll('.articulo')[i]; if(a){ a.style.scrollMarginTop='90px'; a.scrollIntoView({behavior:'smooth',block:'start'}); } },150);
   }
   ov.addEventListener('click',ev=>{
-    const b=ev.target.closest('[data-tab],[data-l],[data-x],[data-ir],.pn-pl'); if(!b) return;
-    if(b.dataset.tab){ tab=b.dataset.tab; pintar(); }
+    if(ev.target.closest('.pn-ed')&&!ev.target.dataset.q) return;
+    const b=ev.target.closest('[data-tab],[data-l],[data-x],[data-ir],.pn-pl,[data-q]'); if(!b) return;
+    if(b.dataset.q){ const r=rd('esquemas-repaso',{}); delete r[b.dataset.q]; wr('esquemas-repaso',r); refresca(); }
+    else if(b.dataset.tab){ tab=b.dataset.tab; pintar(); }
     else if(b.dataset.l){ letra+=+b.dataset.l; aplicaLetra(); }
     else if(b.dataset.x) ov.classList.remove('on');
     else if(b.dataset.ir) ir(b.dataset.ir);
     else if(b.classList.contains('pn-pl')) ir(b.dataset.t,+b.dataset.i);
   });
+  function refresca(){ pintar(); document.dispatchEvent(new Event('visibilitychange')); }
   ov.addEventListener('change',ev=>{
-    if(ev.target.id==='pn-fecha'){ wr('esquemas-examen',ev.target.value); pintar(); }
+    if(ev.target.classList.contains('pn-d')){ const r=rd('esquemas-repaso',{}), id=ev.target.dataset.id; if(ev.target.value) r[id]={last:ev.target.value,st:0}; else delete r[id]; wr('esquemas-repaso',r); refresca(); }
+    else if(ev.target.id==='pn-fecha'){ wr('esquemas-examen',ev.target.value); pintar(); }
     else if(ev.target.id==='pn-tp'){ temaPl=ev.target.value; pintar(); }
   });
   addEventListener('keydown',ev=>{
