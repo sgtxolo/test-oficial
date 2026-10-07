@@ -4853,10 +4853,10 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
 <script id="script-repaso">
 /* ==================== REPASO ESPACIADO (curva del olvido, máximo 20 días) ====================
    Cada tema guarda {last: fecha del último estudio/repaso, st: escalón}. Siguiente repaso = last + INTERVALOS[st]
-   (1, 3, 7, 14 y 20 días; a partir de ahí, cada 20 días: nunca más de 20 días sin repasar un tema).
+   (7 y 20 días; a partir de ahí, cada 20 días: nunca más de 20 días sin repasar un tema).
    Botón «🔔» arriba = temas que tocan hoy o van con retraso. En cada tema: «✅ Estudiado / repasado hoy» y «😵 Lo olvidé». */
 (function(){
-  const KEY='esquemas-repaso', INTERVALOS=[1,3,7,14,20], MAX=20, DIA=86400000;
+  const KEY='esquemas-repaso', INTERVALOS=[7,20], MAX=20, DIA=86400000;
   let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
   const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
   const hoyN=()=>{ const d=new Date(); return Math.floor((Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()))/DIA); };
@@ -4902,7 +4902,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     const L=temas().map(t=>Object.assign(t,{e:estado(t.id)}));
     const tarde=L.filter(t=>t.e&&t.e.dif<0).sort((a,b)=>a.e.dif-b.e.dif), hoy=L.filter(t=>t.e&&t.e.dif===0);
     const prox=L.filter(t=>t.e&&t.e.dif>0).sort((a,b)=>a.e.dif-b.e.dif), nuevo=L.filter(t=>!t.e);
-    let h='<h2>🔔 Qué repasar hoy</h2><p class="sub">Curva del olvido: tras estudiar un tema se repasa a 1, 3, 7, 14 y 20 días, y desde ahí cada 20 días como máximo. Si lo repasas a tiempo, el hueco crece; si lo olvidas, vuelves a empezar.</p>';
+    let h='<h2>🔔 Qué repasar hoy</h2><p class="sub">Tras estudiar un tema se repasa a los 7 días y después cada 20 días (el temario es largo, así que no se amontonan repasos). Si lo repasas a tiempo, el hueco crece; si lo olvidas, vuelves a empezar.</p>';
     if(tarde.length) h+='<h3>⚠️ Atrasados</h3>'+tarde.map(t=>fila(t,'tarde')).join('');
     if(hoy.length) h+='<h3>📌 Toca hoy</h3>'+hoy.map(t=>fila(t,'hoy')).join('');
     if(!tarde.length&&!hoy.length) h+='<div class="rep-vacio">'+(prox.length?'✅ Hoy no te toca repasar nada. ¡Bien!':'Aún no has marcado ningún tema como estudiado. Abre un tema y pulsa «✅ Estudiado / repasado hoy».')+'</div>';
@@ -5267,7 +5267,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   const hoyN=()=>{ const d=new Date(); return Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/DIA); };
   const aN=s=>{ const p=s.split('-'); return Math.floor(Date.UTC(+p[0],+p[1]-1,+p[2])/DIA); };
   const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  const INT=[1,3,7,14,20];
+  const INT=[7,20];
   const temas=()=>[...document.querySelectorAll('.tema-nav-item')].map(n=>({id:n.dataset.target,nombre:n.textContent.trim().replace(/\s+/g,' ')}));
   const clave=a=>{ const h=a.querySelector('.articulo-head'); return h&&h.firstChild?h.firstChild.textContent.trim():''; };
   const st=document.createElement('style'); document.head.appendChild(st);
