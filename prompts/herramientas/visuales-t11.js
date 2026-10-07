@@ -249,4 +249,34 @@ v('Artículo 55 — Estructura de la Administración General del Estado', arbol(
   'Organización territorial: Delegaciones y Subdelegaciones del Gobierno (territorial → Delegaciones en las CCAA)',
   'Administración General del Estado en el exterior: Misiones diplomáticas, etc.']));
 
+
+// ───────── Cuadros añadidos 07/10/2026 (2.ª tanda) ─────────
+v('Artículo 41 — Condiciones generales', tabla('Condiciones generales para la práctica de las notificaciones (art. 41 · cuadro del temario)', ['Concepto', 'Contenido'], [
+  { l: 'Práctica', c: 'o', h: [
+    { t: `Por ${D('medios electrónicos')}: preferentemente y, ${K('en todo caso')}, cuando el interesado resulte obligado a recibirlas por esta vía.` },
+    { t: `${K('No obstante')}, podrán practicarse por medios ${K('no')} electrónicos cuando: la notificación se realice por comparecencia espontánea del interesado o su representante en las oficinas de asistencia en materia de registro y solicite la comunicación o notificación personal en ese momento · para asegurar la eficacia de la actuación administrativa resulte necesario practicarla por entrega directa de un empleado público de la Administración notificante.` }] },
+  { l: 'Validez', c: 'v', h: [{ t: `${K('Siempre que')} permitan tener constancia de: su envío o puesta a disposición · recepción o acceso por el interesado o su representante · sus fechas y horas · contenido íntegro · identidad fidedigna del remitente y destinatario.` }] },
+  { l: 'Prohibiciones', c: 'c', h: [{ t: `${K('En ningún caso')} se efectuarán por medios electrónicos: cuando el acto a notificar vaya acompañado de elementos que ${K('no')} sean susceptibles de conversión en formato electrónico · las que contengan medios de pago a favor de los obligados (por ejemplo, cheques).` }] },
+  { l: 'Según procedimiento', c: 'o', h: [
+    { l: 'Iniciado a solicitud del interesado', c: 'v', h: [{ t: `Se practica en el medio señalado por el interesado · será electrónica cuando resulte obligado · si ${K('no')} fuera posible conforme a lo señalado, se practicará en cualquier lugar adecuado y por cualquier medio que permita tener constancia de la recepción, fecha, identidad y contenido.` }] },
+    { l: 'Iniciado de oficio', c: 'v', h: [{ t: `Las Administraciones podrán recabar, mediante consulta a las bases de datos del ${D('Instituto Nacional de Estadística')}, los datos sobre el domicilio del interesado recogidos en el Padrón Municipal, remitidos por las Entidades Locales.` }] }] }]));
+v('Artículo 55 — Estructura de la Administración General del Estado', arbol('Organización central de la AGE: órganos superiores y directivos (art. 55.3 · cuadro del temario)', `${D('Organización central')}: son órganos superiores y órganos directivos`, [
+  { t: 'Órganos superiores', sub: ['Los Ministros', 'Los Secretarios de Estado'] },
+  { t: 'Órganos directivos', sub: ['Los Subsecretarios y Secretarios generales', 'Los Secretarios generales técnicos y Directores generales', 'Los Subdirectores generales'] },
+  { t: 'Organización territorial (55.4): son órganos directivos los Delegados del Gobierno en las CCAA (rango de Subsecretario) y los Subdelegados del Gobierno en las provincias (nivel de Subdirector general)', sub: [] },
+  { t: 'En el exterior (55.5): órganos directivos los embajadores y representantes permanentes ante Organizaciones internacionales', sub: [] },
+  { t: `Alto cargo (55.6): los órganos superiores y directivos, ${K('excepto')} los Subdirectores generales`, sub: [] }]));
+v('Artículo 60 — Ordenación jerárquica', flujo('Ordenación jerárquica de los órganos ministeriales (art. 60 · cuadro del temario)', [
+  { et: 'Ministros', t: `${D('Jefes superiores del Departamento')} y superiores jerárquicos ${R('directos')} de los Secretarios de Estado y Subsecretarios` },
+  { et: 'Órganos directivos', t: `Dependen de alguno de los anteriores y se ordenan jerárquicamente entre sí: ${P('Subsecretario → Director general → Subdirector general')}` },
+  { et: 'Categorías', t: `Los ${D('Secretarios generales')} tienen categoría de ${R('Subsecretario')} · los ${D('Secretarios generales técnicos')} tienen categoría de ${R('Director general')}` }]));
+v('Artículo 32 — Prescripción', cols('Prescripción de infracciones y sanciones (art. 32 Ley 19/2013 · cuadro del temario)', [
+  { t: 'Muy graves', l: [`Infracciones: ${P('5 años')}`, `Sanciones: ${P('5 años')}`] },
+  { t: 'Graves', l: [`Infracciones: ${P('3 años')}`, `Sanciones: ${P('3 años')}`] },
+  { t: 'Leves', l: [`Infracciones: ${P('1 año')}`, `Sanciones: ${P('1 año')}`] }]));
+v('Artículo 31 — Órgano competente y procedimiento', arbol('Competencia para imponer sanciones (art. 31.4 Ley 19/2013 · cuadro del temario)', `${D('Competencia')} para la imposición de sanciones`, [
+  'Consejo de Ministros: cuando el alto cargo tenga la condición de miembro del Gobierno o Secretario de Estado',
+  'Ministro de Hacienda y Administraciones Públicas: cuando el responsable sea un alto cargo de la Administración General del Estado',
+  'Altos cargos de las CCAA y Entidades Locales: los órganos que tengan atribuidas estas funciones en aplicación del régimen disciplinario propio, en su caso el Consejo de Gobierno de la Comunidad Autónoma o el Pleno de la Junta de Gobierno de la Entidad Local']));
+
 L.inserta(11, V);
