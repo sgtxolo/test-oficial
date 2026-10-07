@@ -221,7 +221,13 @@ u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoratio
   .menu-fondo{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:99985}
   body.menu-temas .menu-fondo{display:block}
 }
-@media print{.btn-menu-temas,.menu-fondo{display:none!important}}
+/* Menú desplegable con todos los botones de la barra superior */
+.topbar{position:sticky}
+@media (orientation:landscape) and (max-height:540px){.topbar{position:relative}}
+#barra-acciones{display:none!important;position:absolute;top:100%;right:0;left:auto;z-index:99980;flex-wrap:wrap!important;justify-content:flex-start;align-items:center;gap:8px!important;padding:12px;width:max-content;max-width:min(620px,calc(100vw - 20px));background:var(--panel);border:1.5px solid var(--borde,#ccc);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.28)}
+body.menu-acc #barra-acciones{display:flex!important}
+@media (max-width:720px){#barra-acciones{right:0;left:0;width:auto;max-width:none}}
+@media print{.btn-menu-temas,.menu-fondo,#btn-menu-acc{display:none!important}}
 
 @media print{
   *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important}
@@ -253,8 +259,8 @@ body.voz-abierta .voz-bar{display:flex}
 <body>
 <div id="app">
   <div class="topbar">
-    <div style="display:flex;align-items:center;gap:12px"><button class="btn-pdf btn-menu-temas" id="btn-menu-temas" type="button" title="Mostrar u ocultar la lista de temas">☰ Temas</button><h1>📚 Esquemas de Estudio</h1></div>
-    <div style="display:flex;align-items:center;gap:10px">
+    <div style="display:flex;align-items:center;gap:12px"><button class="btn-pdf btn-menu-temas" id="btn-menu-temas" type="button" title="Mostrar u ocultar la lista de temas">☰ Temas</button><button class="btn-pdf" id="btn-menu-acc" type="button" title="Todos los botones: vista, resumen, marcas, voz, PDF, sincronización, avisos, guía y modo claro/oscuro">⋯ Menú</button><h1>📚 Esquemas de Estudio</h1></div>
+    <div id="barra-acciones" style="display:flex;align-items:center;gap:10px">
       <span class="vista-of" id="vista-of" title="Todo: preguntas oficiales y de IA. Solo oficiales: únicamente lo que ha salido en exámenes de la academia (esquema mucho más corto)"><button type="button" data-v="todo" class="on">📚 Todo</button><button type="button" data-v="of">⭐ Solo oficiales</button></span>
       <button class="btn-pdf" id="btn-resumen" type="button" title="Mostrar solo los artículos que has marcado con R (resumen)">R Resumen</button>
       <button class="btn-pdf" id="btn-marcas" type="button" title="Mostrar u ocultar las herramientas de marcas">🖍 Marcas</button>
@@ -632,7 +638,12 @@ function mostrar(id){
   const cerrar=()=>document.body.classList.remove('menu-temas');
   b.onclick=()=>document.body.classList.toggle('menu-temas'); f.onclick=cerrar;
   document.getElementById('nav-temas').addEventListener('click',e=>{ if(e.target.closest('.tema-nav-item')) cerrar(); });
-  document.addEventListener('keydown',e=>{ if(e.key==='Escape') cerrar(); });})();
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ cerrar(); document.body.classList.remove('menu-acc'); } });
+  const ba=document.getElementById('btn-menu-acc'), pa=document.getElementById('barra-acciones');
+  ba.onclick=()=>document.body.classList.toggle('menu-acc');
+  document.addEventListener('pointerdown',e=>{ if(!document.body.classList.contains('menu-acc')) return;
+    if(pa.contains(e.target)||ba.contains(e.target)||e.target.closest('#pdf-menu,.guia-ov,.rep-ov,#sync-panel')) return;
+    document.body.classList.remove('menu-acc'); },true);})();
 document.getElementById('btn-volver').onclick = () => { document.body.classList.remove('ver-esquema'); window.scrollTo(0,0); };
 
 // ---- TEMA CLARO / OSCURO ----
@@ -4769,7 +4780,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     return 'Próximo repaso: '+fmt(e.prox)+' (en '+e.dif+(e.dif===1?' día':' días')+')';
   }
   // ---- campana ----
-  const top=document.querySelector('.topbar > div'), ref=document.getElementById('btn-marcas');
+  const top=document.getElementById('barra-acciones'), ref=document.getElementById('btn-marcas');
   const bell=document.createElement('button'); bell.type='button'; bell.className='btn-campana'; bell.title='Temas que te toca repasar (curva del olvido)';
   bell.innerHTML='🔔<span class="bdg">0</span>';
   if(top) top.insertBefore(bell, ref||top.firstChild);
