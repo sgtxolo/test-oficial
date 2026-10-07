@@ -4867,9 +4867,13 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   const temas=()=>[...document.querySelectorAll('.tema-nav-item')].map(n=>({id:n.dataset.target,nombre:n.textContent.trim().replace(/\s+/g,' '),nav:n}));
   function estado(id){
     try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
-    const r=data[id]; if(!r) return null;
+    const r=data[id]; if(!r||r.est) return null;   // «estudiando»: aún no corre el plazo de repaso
     const prox=aN(r.last)+intervalo(r.st||0), dif=prox-hoyN();
     return {prox,dif};   // dif<0 retraso, 0 hoy, >0 faltan
+  }
+  function estudiando(id){
+    try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
+    data[id]={est:1,desde:aS(hoyN())}; save(); refrescar();
   }
   function marcar(id,olvido){
     try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
@@ -4880,7 +4884,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     save(); refrescar();
   }
   function texto(id){
-    const e=estado(id); if(!e) return 'Aún sin estudiar';
+    const e=estado(id); const rr=data[id]; if(rr&&rr.est) return '📖 Estudiando desde el '+fmt(aN(rr.desde)); if(!e) return 'Aún sin estudiar';
     if(e.dif<0) return 'Repaso atrasado '+(-e.dif)+(e.dif===-1?' día':' días')+' (tocaba el '+fmt(e.prox)+')';
     if(e.dif===0) return 'Toca repasar HOY';
     return 'Próximo repaso: '+fmt(e.prox)+' (en '+e.dif+(e.dif===1?' día':' días')+')';
@@ -4901,8 +4905,9 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   function pintarPanel(){
     const L=temas().map(t=>Object.assign(t,{e:estado(t.id)}));
     const tarde=L.filter(t=>t.e&&t.e.dif<0).sort((a,b)=>a.e.dif-b.e.dif), hoy=L.filter(t=>t.e&&t.e.dif===0);
-    const prox=L.filter(t=>t.e&&t.e.dif>0).sort((a,b)=>a.e.dif-b.e.dif), nuevo=L.filter(t=>!t.e);
+    const prox=L.filter(t=>t.e&&t.e.dif>0).sort((a,b)=>a.e.dif-b.e.dif), nuevo=L.filter(t=>!t.e&&!(data[t.id]&&data[t.id].est)), estu=L.filter(t=>data[t.id]&&data[t.id].est);
     let h='<h2>🔔 Qué repasar hoy</h2><p class="sub">Tras estudiar un tema se repasa a los 7 días y después cada 20 días (el temario es largo, así que no se amontonan repasos). Si lo repasas a tiempo, el hueco crece; si lo olvidas, vuelves a empezar.</p>';
+    if(estu.length) h+='<h3>📖 Estudiando</h3>'+estu.map(t=>'<div class="rep-fila"><div class="t" data-ir="'+t.id+'">'+t.nombre+'<small>'+texto(t.id)+'</small></div><button class="ok" data-ok="'+t.id+'">✅ Terminado</button></div>').join('');
     if(tarde.length) h+='<h3>⚠️ Atrasados</h3>'+tarde.map(t=>fila(t,'tarde')).join('');
     if(hoy.length) h+='<h3>📌 Toca hoy</h3>'+hoy.map(t=>fila(t,'hoy')).join('');
     if(!tarde.length&&!hoy.length) h+='<div class="rep-vacio">'+(prox.length?'✅ Hoy no te toca repasar nada. ¡Bien!':'Aún no has marcado ningún tema como estudiado. Abre un tema y pulsa «✅ Estudiado / repasado hoy».')+'</div>';
@@ -4925,8 +4930,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       let w=head.querySelector('.rep-ficha');
       if(!w){
         w=document.createElement('div'); w.className='rep-ficha';
-        w.innerHTML='<button type="button" data-a="ok">✅ Estudiado / repasado hoy</button><button type="button" class="sec" data-a="ol" title="Vuelve a empezar la curva de este tema">😵 Lo olvidé</button><span class="est"></span>';
-        w.addEventListener('click',ev=>{ const a=ev.target.dataset.a; if(a) marcar(es.id,a==='ol'); });
+        w.innerHTML='<button type="button" data-a="es" title="Lo estás estudiando y te lleva más de un día: todavía no empieza la cuenta de repasos">📖 Estudiando</button><button type="button" data-a="ok" title="Terminado de estudiar (o repasado): desde hoy cuentan los 7 días hasta el repaso">✅ Estudiado / repasado hoy</button><button type="button" class="sec" data-a="ol" title="Vuelve a empezar la curva de este tema">😵 Lo olvidé</button><span class="est"></span>';
+        w.addEventListener('click',ev=>{ const a=ev.target.dataset.a; if(a==='es') estudiando(es.id); else if(a) marcar(es.id,a==='ol'); });
         head.appendChild(w);
       }
       const e=estado(es.id), s=w.querySelector('.est'); s.textContent=texto(es.id); s.className='est'+(e&&e.dif<0?' tarde':'');
@@ -4937,6 +4942,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     L.forEach(t=>{
       const e=estado(t.id); if(e&&e.dif<=0) n++;
       let p=t.nav.querySelector('.rep-punto');
+      const rr=data[t.id];
+      if(rr&&rr.est){ if(!p){ p=document.createElement('span'); p.className='rep-punto'; t.nav.appendChild(p); } p.style.background='#3b82c4'; p.title=texto(t.id); return; }
       if(!e){ if(p) p.remove(); return; }
       if(!p){ p=document.createElement('span'); p.className='rep-punto'; t.nav.appendChild(p); }
       p.style.background=e.dif<0?'#d64545':e.dif===0?'#e0a800':'#4fa57f';
@@ -5286,20 +5293,21 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     return temas().map(t=>{
       const es=document.getElementById(t.id), arts=es?[...es.querySelectorAll('.articulo')]:[];
       let ok=0,rp=0; arts.forEach(a=>{ const v=fich[t.id+'|'+clave(a)]; if(v==='ok') ok++; else if(v==='rep') rp++; });
-      const r=rep[t.id]; let dif=null; if(r) dif=aN(r.last)+INT[Math.min(r.st||0,INT.length-1)]-h;
-      return {last:r&&r.last||'',id:t.id,nombre:t.nombre,total:arts.length,ok:ok,rp:rp,dif:dif,empezado:!!r,ult:ult[t.id]};
+      const r=rep[t.id]; let dif=null; if(r&&!r.est) dif=aN(r.last)+INT[Math.min(r.st||0,INT.length-1)]-h;
+      return {last:r&&r.last||'',est:!!(r&&r.est),desde:r&&r.desde||'',id:t.id,nombre:t.nombre,total:arts.length,ok:ok,rp:rp,dif:dif,empezado:!!r,ult:ult[t.id]};
     });
   }
   function pestanaHoy(D){
     const ex=rd('esquemas-examen',''), h=hoyN();
     const dias=ex?aN(ex)-h:null;
     const cuenta='<div class="pn-cuenta"><div><div class="n">'+(dias===null?'—':Math.max(dias,0))+'</div><small>días para el examen</small></div><div><label class="pn-sub">Fecha del examen<br><input type="date" id="pn-fecha" value="'+esc(ex)+'"></label></div></div>';
-    const tarde=D.filter(t=>t.dif!==null&&t.dif<0).sort((a,b)=>a.dif-b.dif), hoy=D.filter(t=>t.dif===0), nuevos=D.filter(t=>!t.empezado&&t.total);
+    const tarde=D.filter(t=>t.dif!==null&&t.dif<0).sort((a,b)=>a.dif-b.dif), hoy=D.filter(t=>t.dif===0), nuevos=D.filter(t=>!t.empezado&&t.total), estu=D.filter(t=>t.est);
     const fichasRep=D.reduce((s,t)=>s+t.rp,0), pend=D.reduce((s,t)=>s+(t.total-t.ok),0);
     let plan='';
     if(dias!==null&&dias>0&&nuevos.length){ const libres=Math.max(1,dias-Math.ceil(dias*0.25)), por=Math.ceil(nuevos.length/libres); plan='<p class="pn-sub">Para ver todo el temario y dejar un 25 % del tiempo para repasar: <b>'+por+(por===1?' tema nuevo':' temas nuevos')+' al día</b> ('+nuevos.length+' sin empezar).</p>'; }
     const fila=(t,c,m)=>'<div class="pn-fila '+c+'" data-ir="'+t.id+'"><div class="t">'+esc(t.nombre)+'<small>'+m+'</small></div></div>';
     let o='<h2>Hoy toca</h2>'+cuenta+plan;
+    if(estu.length) o+='<h3>📖 Estudiando ahora</h3>'+estu.map(t=>fila(t,'','Desde el '+esc(t.desde.split('-').reverse().join('/'))+' · cuando acabes, pulsa «✅ Estudiado» dentro del tema')).join('');
     if(tarde.length) o+='<h3>⚠️ Repasos atrasados</h3>'+tarde.map(t=>fila(t,'tarde','Atrasado '+(-t.dif)+' d')).join('');
     if(hoy.length) o+='<h3>📌 Repaso de hoy</h3>'+hoy.map(t=>fila(t,'hoy','Toca hoy')).join('');
     if(fichasRep) o+='<h3>🔁 Fichas marcadas para repasar</h3><p class="pn-sub">'+fichasRep+' fichas en total. En cada tema, usa «🔁 Solo repasar».</p>';
@@ -5313,7 +5321,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   function pestanaTemas(D){
     let o='<h2>Estado de los temas</h2><p class="pn-sub">Barra = fichas dominadas. Toca un tema para abrirlo. Abajo de cada tema puedes poner o corregir la fecha en que lo estudiaste (el repaso se calcula desde ahí) o quitarlo.</p>';
     D.forEach(t=>{ const p=t.total?Math.round(100*t.ok/t.total):0;
-      const rs=t.dif===null?'sin empezar':t.dif<0?'repaso atrasado':t.dif===0?'repasar hoy':'repaso en '+t.dif+' d';
+      const rs=t.est?'estudiando':t.dif===null?'sin empezar':t.dif<0?'repaso atrasado':t.dif===0?'repasar hoy':'repaso en '+t.dif+' d';
       o+='<div class="pn-fila '+(t.dif!==null&&t.dif<0?'tarde':t.dif===0?'hoy':'')+'" data-ir="'+t.id+'"><div class="t">'+esc(t.nombre)+'<small>'+t.ok+'/'+t.total+' dominadas · '+t.rp+' a repasar · '+rs+'</small></div><div class="pn-barra"><i style="width:'+p+'%"></i></div><b>'+p+'%</b><div class="pn-ed"><label>Estudiado el <input type="date" class="pn-d" data-id="'+t.id+'" value="'+esc(t.last)+'"></label><button type="button" data-q="'+t.id+'">Quitar</button></div></div>'; });
     return o;
   }
