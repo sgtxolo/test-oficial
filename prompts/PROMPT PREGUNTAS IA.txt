@@ -54,3 +54,5 @@ Generar **50 preguntas tipo test** sobre ese texto que tengan la **máxima proba
 - Artículos que siguen sin ninguna pregunta en la app.
 
 ESTILO EXAMEN OFICIAL: opciones de longitud y estructura parecidas (±20 %); la correcta NO puede ser la más larga en más de ~30 % de las preguntas. Varía el formato (supuestos, incorrecta, combinaciones, completar) como en un examen real.
+
+PROHIBIDO que la correcta sea la más larga: escribe primero los 3 distractores con el mismo detalle y longitud (±15 %) que la correcta; en 1 de cada 3 la correcta debe ser la más corta o media. Antes de insertar, mide con `node prompts/herramientas/sesgo-longitud.js <preguntas.json>` y no insertes si dice NO CUMPLE (> 35 % más larga).
