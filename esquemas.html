@@ -4693,14 +4693,15 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   const hayCfg=()=>{ const c=cfg(); return !!(c.repo&&c.token); };
   const b64=s=>btoa(unescape(encodeURIComponent(s))), unb64=s=>decodeURIComponent(escape(atob(s.replace(/\s/g,''))));
   /* Por tema se sincronizan: marcas (m), categorías de color (c), fichas dominada/repasar (f), repaso espaciado (r) y la última ficha vista (u) */
-  const KF='esquemas-fichas', KR='esquemas-repaso', KU='esquemas-ultima', KX='esquemas-resumen-v1';
-  const VACIO={m:null,c:null,f:null,r:null,u:null,x:null};
+  const KF='esquemas-fichas', KR='esquemas-repaso', KU='esquemas-ultima', KX='esquemas-resumen-v1', KS='esquemas-sellos-v1';
+  const VACIO={m:null,c:null,f:null,r:null,u:null,x:null,s:null};
   const xDe=(x,id)=>(x[id]&&x[id].length)?x[id]:null;   // artículos marcados con R (resumen)
   const idDeFicha=k=>{ const i=k.indexOf('|'); return i<0?k:k.slice(0,i); };
   function fichasDe(id){ const f=rd(KF), o={}, p=id+'|'; Object.keys(f).forEach(k=>{ if(k.indexOf(p)===0) o[k.slice(p.length)]=f[k]; }); return Object.keys(o).length?o:null; }
+  function sellosDe(id){ const f=rd(KS), o={}, p=id+'|'; Object.keys(f).forEach(k=>{ if(k.indexOf(p)===0) o[k.slice(p.length)]=f[k]; }); return Object.keys(o).length?o:null; }   // sellos EX/EXOF puestos a mano
   function actual(){
-    const a=rd(K1), b=rd(K2), r=rd(KR), u=rd(KU), f=rd(KF), x=rd(KX), o={};
-    new Set([...Object.keys(x),...Object.keys(a),...Object.keys(b),...Object.keys(r),...Object.keys(u),...Object.keys(f).map(idDeFicha)]).forEach(id=>{ o[id]={m:a[id]||null,c:b[id]||null,f:fichasDe(id),r:r[id]||null,u:u[id]||null,x:xDe(x,id)}; });
+    const a=rd(K1), b=rd(K2), r=rd(KR), u=rd(KU), f=rd(KF), x=rd(KX), sl=rd(KS), o={};
+    new Set([...Object.keys(x),...Object.keys(a),...Object.keys(b),...Object.keys(r),...Object.keys(u),...Object.keys(f).map(idDeFicha),...Object.keys(sl).map(idDeFicha)]).forEach(id=>{ o[id]={m:a[id]||null,c:b[id]||null,f:fichasDe(id),r:r[id]||null,u:u[id]||null,x:xDe(x,id),s:sellosDe(id)}; });
     return o;
   }
   let snap={}; (function(){ const o=actual(); Object.keys(o).forEach(id=>snap[id]=JSON.stringify(o[id])); })();
@@ -4774,17 +4775,18 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
         let aplicado=false, subir=false; const out=Object.assign({},rem.datos);
         Object.keys(rem.datos).forEach(id=>{                       // lo más nuevo del remoto -> local
           const r=rem.datos[id]; if((r.ts||0)>(ts[id]||0)){
-            const a=rd(K1), b=rd(K2), rp=rd(KR), ul=rd(KU), fi=rd(KF), xr=rd(KX);
+            const a=rd(K1), b=rd(K2), rp=rd(KR), ul=rd(KU), fi=rd(KF), xr=rd(KX), se=rd(KS);
             if(r.m) a[id]=r.m; else delete a[id]; if(r.c) b[id]=r.c; else delete b[id];
             if('r' in r){ if(r.r) rp[id]=r.r; else delete rp[id]; }         // (una copia antigua sin estos campos no borra lo local)
             if('x' in r){ if(r.x) xr[id]=r.x; else delete xr[id]; }
             if('u' in r){ if(r.u) ul[id]=r.u; else delete ul[id]; }
             if('f' in r){ Object.keys(fi).forEach(k=>{ if(k.indexOf(id+'|')===0) delete fi[k]; }); if(r.f) Object.keys(r.f).forEach(h=>{ fi[id+'|'+h]=r.f[h]; }); }
-            ignorar=true; wr(K1,a); wr(K2,b); wr(KR,rp); wr(KU,ul); wr(KF,fi); wr(KX,xr); ignorar=false; ts[id]=r.ts; aplicado=true; snap[id]=JSON.stringify(actual()[id]||VACIO);
+            if('s' in r){ Object.keys(se).forEach(k=>{ if(k.indexOf(id+'|')===0) delete se[k]; }); if(r.s) Object.keys(r.s).forEach(h=>{ se[id+'|'+h]=r.s[h]; }); }
+            ignorar=true; wr(KS,se); wr(K1,a); wr(K2,b); wr(KR,rp); wr(KU,ul); wr(KF,fi); wr(KX,xr); ignorar=false; ts[id]=r.ts; aplicado=true; snap[id]=JSON.stringify(actual()[id]||VACIO);
           }
         });
         Object.keys(ts).forEach(id=>{                              // lo más nuevo del local -> remoto
-          const r=rem.datos[id]; if(!r||ts[id]>(r.ts||0)){ const l=loc[id]||VACIO; out[id]={ts:ts[id],m:l.m,c:l.c,f:l.f,r:l.r,u:l.u,x:l.x}; subir=true; }
+          const r=rem.datos[id]; if(!r||ts[id]>(r.ts||0)){ const l=loc[id]||VACIO; out[id]={ts:ts[id],m:l.m,c:l.c,f:l.f,r:l.r,u:l.u,x:l.x,s:l.s}; subir=true; }
         });
         wr(TS,ts);
         if(subir){
@@ -4807,7 +4809,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   /* ---------- detectar cambios locales ---------- */
   Storage.prototype.setItem=function(k,v){
     origSet.call(this,k,v);
-    if(this===localStorage&&(k===K1||k===K2||k===KF||k===KR||k===KU||k===KX)&&!ignorar){
+    if(this===localStorage&&(k===K1||k===K2||k===KF||k===KR||k===KU||k===KX||k===KS)&&!ignorar){
       const o=actual(), ts=rd(TS); let cambio=false;
       new Set([...Object.keys(o),...Object.keys(snap)]).forEach(id=>{ const s=JSON.stringify(o[id]||VACIO); if(snap[id]!==s){ snap[id]=s; ts[id]=Date.now(); cambio=true; } });
       if(cambio){ wr(TS,ts); if(k===KU){ if(!agendado) programar(45000); } else programar(4000); }   // la «última ficha vista» cambia mucho: se sube con calma para no llenar el repositorio de copias
