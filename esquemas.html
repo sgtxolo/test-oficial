@@ -4853,10 +4853,10 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
 <script id="script-repaso">
 /* ==================== REPASO ESPACIADO (curva del olvido, máximo 20 días) ====================
    Cada tema guarda {last: fecha del último estudio/repaso, st: escalón}. Siguiente repaso = last + INTERVALOS[st]
-   (7 y 20 días; a partir de ahí, cada 20 días: nunca más de 20 días sin repasar un tema).
+   (15, 30 y a partir de ahí cada 45 días; el último mes antes del examen, repasos relámpago de ~1 h).
    Botón «🔔» arriba = temas que tocan hoy o van con retraso. En cada tema: «✅ Estudiado / repasado hoy» y «😵 Lo olvidé». */
 (function(){
-  const KEY='esquemas-repaso', INTERVALOS=[7,20], MAX=20, DIA=86400000;
+  const KEY='esquemas-repaso', INTERVALOS=[15,30,45], MAX=45, DIA=86400000;
   let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
   const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
   const hoyN=()=>{ const d=new Date(); return Math.floor((Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()))/DIA); };
@@ -5274,7 +5274,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   const hoyN=()=>{ const d=new Date(); return Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/DIA); };
   const aN=s=>{ const p=s.split('-'); return Math.floor(Date.UTC(+p[0],+p[1]-1,+p[2])/DIA); };
   const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  const INT=[7,20];
+  const INT=[15,30,45];
   const temas=()=>[...document.querySelectorAll('.tema-nav-item')].map(n=>({id:n.dataset.target,nombre:n.textContent.trim().replace(/\s+/g,' ')}));
   const clave=a=>{ const h=a.querySelector('.articulo-head'); return h&&h.firstChild?h.firstChild.textContent.trim():''; };
   const st=document.createElement('style'); document.head.appendChild(st);
