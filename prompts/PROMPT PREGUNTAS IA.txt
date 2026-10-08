@@ -52,3 +52,5 @@ Generar **50 preguntas tipo test** sobre ese texto que tengan la **máxima proba
 - Reparto por dificultad y por letra correcta.
 - Las 5-10 **trampas** más peligrosas del texto (para el esquema).
 - Artículos que siguen sin ninguna pregunta en la app.
+
+ESTILO EXAMEN OFICIAL: opciones de longitud y estructura parecidas (±20 %); la correcta NO puede ser la más larga en más de ~30 % de las preguntas. Varía el formato (supuestos, incorrecta, combinaciones, completar) como en un examen real.
