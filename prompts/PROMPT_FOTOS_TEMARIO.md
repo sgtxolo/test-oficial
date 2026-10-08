@@ -19,10 +19,15 @@ Te voy a pasar **fotos de mi temario en papel** (Prefortia, Tomo 2, Ascenso a Of
 6. **Anotaciones a mano** («OP», «15 días siguiente adopción», «No sustitución», «sanidad / higiene o seguridad», coletillas y siglas mnemotécnicas): ponlas como nota corta junto al texto al que acompañan. Si no se lee bien, transcribe lo que veas y márcalo con «(?)».
 7. **Sello «PREGUNTA EXAMEN»**: si lo lleva el artículo o el apartado, déjalo señalado (etiqueta o marca) para que se vea que ha caído en examen.
 
+## Orden de trabajo: este prompt va DESPUÉS del examinador
+El tema ya pasó por el prompt del examinador: banco de preguntas verificado y esquema base con las respuestas de los tests marcadas (`m-resp`, enlazadas a sus preguntas). Estas fotos son el **paso de acabado**: dejan el esquema exactamente como mi temario en papel.
+
 ## Dónde y cómo
-- Busca el artículo en `esquemas.html` (Tema que te indique, con `articuloResp("Artículo N — …")`). Si ya existe, **complétalo/corrígelo en el sitio** sin duplicarlo ni tocar los demás apartados; si falta, créalo en su orden.
-- Respeta el estilo del esquema (ver `PROMPT_ESQUEMAS.md`) y no toques las respuestas de test (`m-resp`).
-- Si el artículo tiene preguntas oficiales en la app, no las borres ni las cambies.
+- **Parte siempre del esquema que ya existe** en `esquemas.html` (`articuloResp("Artículo N — …")`). **No reescribas el artículo desde cero**: aplica sobre el texto existente mi subrayado, cuadrados, círculos, flechas, cajitas y anotaciones de la foto. Conserva **todas las respuestas de test (`m-resp`) y su enlace con las preguntas**, la lista de respuestas del `articuloResp` y los huecos «(…)» que ya estén bien.
+- **Si la foto y el esquema discrepan:** la foto manda en colores y marcas; el texto sigue siendo el oficial ya verificado. Si el texto difiere de verdad (palabra distinta, apartado que falta), no lo cambies en silencio: anótalo en el resumen final.
+- **Si el artículo o apartado no está en el esquema** (p. ej. un punto que faltaba), créalo desde la foto en su orden, sin duplicar ni tocar los demás apartados.
+- Respeta el estilo del esquema (ver `PROMPT_ESQUEMAS.md`).
+- No borres ni cambies preguntas oficiales ni de IA de la app; si ves una incoherencia con la foto, avísame.
 
 ## Cómo trabajar (por fases: NO hagas nada hasta que yo te lo diga)
 **Fase 1 — Recepción.** Te mandaré las fotos por tandas (hasta 19 a la vez), puede que un tema de 100 páginas o más. Mientras tanto **no toques `esquemas.html`, no hagas commit ni push y no empieces el esquema**. En cada tanda solo:
