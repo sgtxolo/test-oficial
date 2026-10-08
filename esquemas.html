@@ -5297,6 +5297,19 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
       return {last:r&&r.last||'',est:!!(r&&r.est),desde:r&&r.desde||'',id:t.id,nombre:t.nombre,total:arts.length,ok:ok,rp:rp,dif:dif,empezado:!!r,ult:ult[t.id]};
     });
   }
+  /* Fase final (como Prefortia en mayo): desde el 1 de mayo del año del examen ya no hay repasos espaciados.
+     Vuelta 1 = todo el temario en 14 días (~2 temas/día). Después, vueltas del esquema completo cada 3 días (~9 temas/día), las que quepan hasta el examen. */
+  function vueltaDeHoy(D,ex,h){
+    const n=D.length; if(!n) return '';
+    const anio=ex?+ex.slice(0,4):2027, ini=aN(anio+'-05-01'), i=h-ini;
+    if(i<0||(ex&&h>aN(ex))) return '';
+    let v,lote;
+    if(i<14){ v=1; const p=Math.ceil(n/14); lote=D.slice(i*p,i*p+p); }
+    else { const j=i-14; v=2+Math.floor(j/3); const p=Math.ceil(n/3), k=j%3; lote=D.slice(k*p,k*p+p); }
+    if(!lote.length) lote=D.slice(0,Math.ceil(n/3));
+    const fila=t=>'<div class="pn-fila" data-ir="'+t.id+'"><div class="t">'+esc(t.nombre)+'<small>Repaso rápido del esquema</small></div></div>';
+    return '<h3>🔄 Fase final · Vuelta '+v+(v===1?' al temario (14 días)':' del esquema (cada 3 días)')+'</h3><p class="pn-sub">Mayo y junio: ya no hay repasos espaciados ni temas nuevos. Hoy toca repasar estos '+lote.length+' temas, sin pararte en detalles.</p>'+lote.map(fila).join('');
+  }
   function pestanaHoy(D){
     const ex=rd('esquemas-examen',''), h=hoyN();
     const dias=ex?aN(ex)-h:null;
@@ -5307,6 +5320,8 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     if(dias!==null&&dias>0&&nuevos.length){ const libres=Math.max(1,dias-Math.ceil(dias*0.25)), por=Math.ceil(nuevos.length/libres); plan='<p class="pn-sub">Para ver todo el temario y dejar un 25 % del tiempo para repasar: <b>'+por+(por===1?' tema nuevo':' temas nuevos')+' al día</b> ('+nuevos.length+' sin empezar).</p>'; }
     const fila=(t,c,m)=>'<div class="pn-fila '+c+'" data-ir="'+t.id+'"><div class="t">'+esc(t.nombre)+'<small>'+m+'</small></div></div>';
     let o='<h2>Hoy toca</h2>'+cuenta+plan;
+    const vu=vueltaDeHoy(D,ex,h);
+    if(vu){ o+=vu; const u0=D.filter(t=>t.ult).sort((x,y)=>y.ult.t-x.ult.t)[0]; if(u0) o+='<h3>📍 Donde lo dejaste</h3>'+fila(u0,'',esc(u0.ult.k.replace(/s+/g,' ').slice(0,80))); return o; }
     if(estu.length) o+='<h3>📖 Estudiando ahora</h3>'+estu.map(t=>fila(t,'','Desde el '+esc(t.desde.split('-').reverse().join('/'))+' · cuando acabes, pulsa «✅ Estudiado» dentro del tema')).join('');
     if(tarde.length) o+='<h3>⚠️ Repasos atrasados</h3>'+tarde.map(t=>fila(t,'tarde','Atrasado '+(-t.dif)+' d')).join('');
     if(hoy.length) o+='<h3>📌 Repaso de hoy</h3>'+hoy.map(t=>fila(t,'hoy','Toca hoy')).join('');
