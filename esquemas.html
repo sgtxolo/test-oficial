@@ -5279,7 +5279,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   const clave=a=>{ const h=a.querySelector('.articulo-head'); return h&&h.firstChild?h.firstChild.textContent.trim():''; };
   const st=document.createElement('style'); document.head.appendChild(st);
   let letra=rd('esquemas-letra',100);
-  const aplicaLetra=()=>{ letra=Math.max(80,Math.min(160,letra)); st.textContent='.content .esquema{font-size:'+letra+'%}'; wr('esquemas-letra',letra); const s=document.getElementById('pn-lv'); if(s) s.textContent=letra+'%'; };
+  const aplicaLetra=()=>{ letra=Math.max(80,Math.min(160,letra)); st.textContent='.content .esquema{zoom:'+(letra/100)+'}'; wr('esquemas-letra',letra); const s=document.getElementById('pn-lv'); if(s) s.textContent=letra+'%'; };
   aplicaLetra();
   const top=document.getElementById('barra-acciones'), ref=document.getElementById('btn-marcas');
   const btn=document.createElement('button'); btn.type='button'; btn.className='btn-panel'; btn.textContent='🎯 Panel'; btn.title='Hoy toca, cuenta atrás, estado de los temas y tabla de plazos';
