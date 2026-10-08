@@ -5381,7 +5381,7 @@ p.rf{border-left:5px solid var(--c);background:var(--panel-alt);border-radius:10
 .rf-n{background:var(--c);color:#fff;font-weight:900;border-radius:8px;padding:1px 9px;margin-right:6px}
 .rf-law{color:var(--c);font-weight:800;font-style:italic;background:rgba(128,128,128,.14);border-radius:6px;padding:0 7px;margin-right:4px}
 .rf-arrow{color:var(--c);font-weight:900;font-size:1.25em;padding:0 3px}
-.rf-ans{font-weight:800;box-shadow:inset 0 -3px 0 var(--c);border-radius:3px}
+.rf-ans{font-weight:800}
 @media print{.rc-li,p.rf{break-inside:avoid}}
 </style>
 <script id="script-colorido">
@@ -5427,11 +5427,11 @@ p.rf{border-left:5px solid var(--c);background:var(--panel-alt);border-radius:10
   }
   function fichasR(art){
     if(art.dataset.cz) return; const h=art.querySelector('.articulo-head'); if(!h||!/RECUERDA del temario/i.test(h.textContent)) return; art.dataset.cz='1';
-    const col=PAL[ci++%PAL.length]; art.classList.add('rf-art'); art.style.setProperty('--c',col); const leyes={};
+    const col=PAL[ci++%PAL.length]; art.classList.add('rf-art'); art.style.setProperty('--c',col); const leyes={}, LEY=['#7c4dff','#c33fc8','#e07b00','#d1332a','#0f9aa8','#8a6d00','#2e9d5b'];
     art.querySelectorAll('.txt > p').forEach(p=>{
       const txt=p.textContent, m=/^\s*(R\d+)\s·\s([^.]{2,140}?\.)\s/.exec(txt); if(!m) return;
       const nIni=txt.indexOf(m[1]), nFin=nIni+m[1].length, lIni=txt.indexOf(m[2],nFin), lFin=lIni+m[2].length;
-      const fl=txt.indexOf(' → ',lFin); const c=leyes[m[2]]||(leyes[m[2]]=PAL[(Object.keys(leyes).length+1)%PAL.length]);
+      const fl=txt.indexOf(' → ',lFin); const c=leyes[m[2]]||(leyes[m[2]]=LEY[Object.keys(leyes).length%LEY.length]);
       p.classList.add('rf'); p.style.setProperty('--c',c);
       if(fl>0){ colorear(p,lFin,fl); envolver(p,fl+1,fl+2,'rf-arrow'); envolver(p,fl+3,p.textContent.length,'rf-ans'); }
       envolver(p,lIni,lFin,'rf-law'); envolver(p,nIni,nFin,'rf-n');
