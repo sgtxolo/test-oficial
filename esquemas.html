@@ -4139,8 +4139,8 @@ body.solo-res .sin-res{display:none!important}
   const PAL=['#1473e6','#1b9e4b','#ffc400','#ff7a00','#e5383b','#c33fc8','#7c4dff',
              '#36e0f0','#a8e660','#fff176','#ffa27a','#ff6b6b','#ff80e8','#d0a0ff',
              '#ffffff','#d0d0d0','#a0a0a0','#707070','#444444','#222222','#000000'];
-  const TOOLS=[['hl','🖍','Resaltar'],['ul','U','Subrayar'],['st','S','Tachar'],['line','╱','Línea'],['arrow','➜','Flecha'],['rect','▭','Rectángulo'],['oval','◯','Círculo'],['free','✎','Mano alzada'],['er','⌫','Borrar una marca']];
-  const TXT={hl:1,ul:1,st:1}, SHP={line:1,arrow:1,rect:1,oval:1,free:1};
+  const TOOLS=[['hl','🖍','Resaltar'],['ul','U','Subrayar'],['st','S','Tachar'],['sq','▭A','Cuadrado alrededor del texto que selecciones'],['ci','◯A','Círculo alrededor del texto que selecciones'],['line','╱','Línea'],['arrow','➜','Flecha'],['rect','▭','Rectángulo'],['oval','◯','Círculo'],['free','✎','Mano alzada'],['er','⌫','Borrar una marca']];
+  const TXT={hl:1,ul:1,st:1,sq:1,ci:1}, SHP={line:1,arrow:1,rect:1,oval:1,free:1};
   let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
   const st={tool:null,color:'#e5383b',op:100,w:2,c:null};   // al abrir siempre: rojo, opacidad 100 % y grosor 2 px (luego se puede cambiar)
   Object.defineProperty(st,'c',{get(){return st.color;}});
@@ -4235,6 +4235,7 @@ body.solo-res .sin-res{display:none!important}
   function addText(esq,k,range){
     const s=offsetOf(esq,range.startContainer,range.startOffset), e=offsetOf(esq,range.endContainer,range.endOffset);
     if(e<=s) return;
+    if(k==='sq'||k==='ci'){ const rc=range.getBoundingClientRect(), n=window.pmAddShape(esq,k==='sq'?'rect':'oval',rc,{c:st.color,o:st.op,w:st.w,pad:k==='ci'?8:3}); window.pmPush(esq.id,()=>window.pmDelShape(esq,n)); return; }
     const bk=bucket(esq.id), m={n:++bk.n,k:k,s:s,e:e,c:st.color,o:st.op};
     bk.t.push(m); wrap(esq,m); save(); renderShapes(esq);
     window.pmPush(esq.id,()=>{ bk.t=bk.t.filter(x=>x.n!==m.n); unwrap(esq,m.n); renderShapes(esq); save(); });
@@ -4298,6 +4299,8 @@ body.solo-res .sin-res{display:none!important}
     return s;
   }
   const px=(esq,p)=>[p[0]*esq.clientWidth,p[1]];
+  /* el tamaño de letra usa CSS zoom en el esquema: los rectángulos del navegador vienen ya ampliados y el SVG trabaja en px sin ampliar → se divide por el zoom */
+  const Z=esq=>parseFloat(getComputedStyle(esq).zoom)||1;
   /* historial único (todas las acciones de marcas y de subrayado, en orden) para el botón ↶ */
   const hist=[];
   window.pmPush=(id,fn)=>{ hist.push({id:id,fn:fn}); if(hist.length>300) hist.shift(); };
@@ -4309,14 +4312,14 @@ body.solo-res .sin-res{display:none!important}
       if(off<acc+n){
         const r=document.createRange(); r.setStart(t,off-acc); r.setEnd(t,off-acc+1);
         const b=r.getClientRects()[0]; if(!b||(!b.width&&!b.height)) return null;
-        return [b.left-er.left,b.top-er.top];
+        const z=Z(esq); return [(b.left-er.left)/z,(b.top-er.top)/z];
       }
       acc+=n;
     }
     return null;
   }
   function anchorAt(esq,x,y){      // x,y en px respecto al esquema → offset de texto (carácter más cercano; no depende de lo que se vea en pantalla)
-    const er=esq.getBoundingClientRect(), qx=er.left+x, qy=er.top+y, list=textNodes(esq);
+    const er=esq.getBoundingClientRect(), z=Z(esq), qx=er.left+x*z, qy=er.top+y*z, list=textNodes(esq);
     const dist=rc=>{ const dy=qy<rc.top?rc.top-qy:(qy>rc.bottom?qy-rc.bottom:0), dx=qx<rc.left?rc.left-qx:(qx>rc.right?qx-rc.right:0); return dy*3+dx; };
     let best=-1,bn=null,bd=1e9,acc=0;
     for(let i=0;i<list.length;i++){
@@ -4344,7 +4347,14 @@ body.solo-res .sin-res{display:none!important}
     const o=anchorAt(esq,x,y); if(o==null) return false;
     const c=charPos(esq,textNodes(esq),o); if(!c) return false;
     const list=textNodes(esq), tx=textOf(list), i0=Math.max(0,o-10);
-    f.a={o:o,cx:tx.slice(i0,o+11),d:P.map(p=>[p[0]-c[0],p[1]-c[1]])}; return true;
+    f.a={o:o,cx:tx.slice(i0,o+11),d:P.map(p=>[p[0]-c[0],p[1]-c[1]])};
+    anclarExtremos(esq,f,P,list); return true;
+  }
+  /* cuadrado, círculo, línea y flecha: cada extremo se ancla a su propia palabra, así la figura sigue a las palabras aunque el texto se recoloque (otra tablet, otro tamaño de letra, otra orientación) */
+  function anclarExtremos(esq,f,P,list){
+    if(!/^(rect|oval|line|arrow)$/.test(f.k)||P.length<2) return;
+    const tx=textOf(list), un=pt=>{ const o=anchorAt(esq,pt[0],pt[1]); if(o==null) return null; const c=charPos(esq,list,o); if(!c) return null; const i0=Math.max(0,o-10); return {o:o,cx:tx.slice(i0,o+11),d:[pt[0]-c[0],pt[1]-c[1]]}; };
+    const A=un(P[0]), B=un(P[P.length-1]); if(A&&B) f.a2=[A,B]; else delete f.a2;
   }
   /* texto completo del esquema (se guarda en la lista) y búsqueda del carácter ancla por su contexto: si cambia el texto de otras partes, se vuelve a encontrar */
   function textOf(list){ return list._t!=null?list._t:(list._t=list.map(n=>n.nodeValue).join('')); }
@@ -4357,6 +4367,7 @@ body.solo-res .sin-res{display:none!important}
   }
   function ptsOf(esq,f,tmpPts,list){
     if(tmpPts) return tmpPts.map(p=>px(esq,p));
+    if(f.a2){ list=list||textNodes(esq); const q=f.a2.map(a=>{ const o=resolveOff(a,list), c=o==null?null:charPos(esq,list,o); return c?[c[0]+a.d[0],c[1]+a.d[1]]:null; }); if(q[0]&&q[1]) return q; }
     if(f.a){ list=list||textNodes(esq); const o=resolveOff(f.a,list); const c=o==null?null:charPos(esq,list,o); if(c) return f.a.d.map(d=>[c[0]+d[0],c[1]+d[1]]); }
     return f.p.map(p=>px(esq,p));
   }
@@ -4381,20 +4392,20 @@ body.solo-res .sin-res{display:none!important}
     id=id||esq.id;
     const s=svgOf(esq); s.querySelectorAll('[data-pf]').forEach(e=>e.remove());
     const fs=(data[id]&&data[id].f)||[], list=textNodes(esq); let ch=false;
-    fs.forEach(f=>{ if(f.a&&!f.a.cx&&esq.id===id){ delete f.a; ch=true; } if(!f.a&&esq.id===id&&anchorShape(esq,f)) ch=true; s.appendChild(shapeEl(esq,f,null,list)); });
+    fs.forEach(f=>{ if(f.a&&!f.a.cx&&esq.id===id){ delete f.a; ch=true; } if(f.a&&!f.a2&&esq.id===id&&esq.offsetParent!==null&&/^(rect|oval|line|arrow)$/.test(f.k)){ const P=ptsOf(esq,f,null,list); anclarExtremos(esq,f,[P[0],P[P.length-1]],list); if(f.a2) ch=true; } if(!f.a&&esq.id===id&&anchorShape(esq,f)) ch=true; s.appendChild(shapeEl(esq,f,null,list)); });
     if(ch) save();
   }
   window.pmRenderShapes=renderShapes;
   window.pmDelShape=(esq,n)=>{ const bk=bucket(esq.id); bk.f=bk.f.filter(x=>x.n!==n); renderShapes(esq); save(); };   // lo usa el PDF/impresión para recolocar las formas sobre la copia a ancho fijo
   /* forma rápida alrededor de una palabra subrayada (cuadrado, círculo o flecha) desde el menú «Cambiar este subrayado» */
-  window.pmAddShape=function(esq,k,rc){
-    const r=esq.getBoundingClientRect(), X=x=>(x-r.left)/r.width, Y=y=>y-r.top, pad=3;
+  window.pmAddShape=function(esq,k,rc,opt){
+    const r=esq.getBoundingClientRect(), z=Z(esq), X=x=>(x-r.left)/r.width, Y=y=>(y-r.top)/z, pad=(opt&&opt.pad)||3;
     const p=k==='arrow'?[[X(rc.left-55),Y(rc.bottom+36)],[X(rc.left+4),Y(rc.bottom+3)]]:[[X(rc.left-pad),Y(rc.top-pad)],[X(rc.right+pad),Y(rc.bottom+pad)]];
-    const bk=bucket(esq.id), f={k:k,c:'#e5383b',o:100,w:2,n:++bk.n,p:p}; bk.f.push(f); anchorShape(esq,f); save(); renderShapes(esq); return f.n;
+    const bk=bucket(esq.id), f={k:k,c:(opt&&opt.c)||'#e5383b',o:(opt&&opt.o)||100,w:(opt&&opt.w)||2,n:++bk.n,p:p}; bk.f.push(f); anchorShape(esq,f); save(); renderShapes(esq); return f.n;
   };
   function wireDraw(esq,svg){
     let cur=null,tmp=null,pts=null;
-    const pos=e=>{ const r=esq.getBoundingClientRect(); return [(e.clientX-r.left)/r.width,e.clientY-r.top]; };
+    const pos=e=>{ const r=esq.getBoundingClientRect(); return [(e.clientX-r.left)/r.width,(e.clientY-r.top)/Z(esq)]; };
     svg.addEventListener('pointerdown',e=>{
       if(!SHP[st.tool]) return; e.preventDefault(); svg.setPointerCapture(e.pointerId);
       pts=[pos(e)]; cur={k:st.tool,c:st.color,o:st.op,w:st.w};
