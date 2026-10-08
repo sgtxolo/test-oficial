@@ -5360,6 +5360,92 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   todo();
 })();
 </script>
+<style id="estilo-colorido">
+/* RECUERDA (resumen) y fichas R del temario a todo color, con los colores del método: azul plazos/cifras, verde órganos, morado verbos de acción, amarillo matices */
+.recuerda ul{padding-left:0!important;list-style:none}
+.rc-li{list-style:none;margin:0 0 10px!important;padding:10px 12px;border-radius:12px;background:var(--panel);border:1px solid var(--borde);border-left:6px solid var(--c,#2e9d5b);line-height:1.9!important}
+.rc-t{display:inline-block;background:var(--c,#2e9d5b);color:#fff;font-weight:800;border-radius:8px;padding:1px 10px;margin:0 8px 4px 0}
+.rc-t strong,.rc-t b{color:#fff!important}
+.rc-it{display:inline-block;margin:2px 6px 2px 0;padding:1px 9px;border-radius:9px;background:var(--panel-alt);border:1px solid var(--borde)}
+.rc-sep{display:none}
+.cz-pl{background:#a9d3ea;color:#0f2c3d;border-radius:4px;padding:0 3px;font-weight:800}
+.cz-or{background:#bfe3c4;color:#173a1e;border-radius:4px;padding:0 3px;font-weight:700}
+.cz-ac{background:#c9b7e0;color:#2c1c40;border-radius:4px;padding:0 3px;font-weight:700}
+.cz-am{background:#f7e79a;color:#463a04;border-radius:4px;padding:0 3px;font-weight:700}
+[data-theme="dark"] .cz-pl{background:#1f4a63;color:#d6efff}
+[data-theme="dark"] .cz-or{background:#265331;color:#c9f0cf}
+[data-theme="dark"] .cz-ac{background:#44305f;color:#e6dcf5}
+[data-theme="dark"] .cz-am{background:#5a4a12;color:#fbe9a6}
+.articulo.rf-art{border-left:6px solid var(--c,#555)}
+p.rf{border-left:5px solid var(--c);background:var(--panel-alt);border-radius:10px;padding:7px 12px!important;margin:7px 0!important;line-height:1.75!important}
+.rf-n{background:var(--c);color:#fff;font-weight:900;border-radius:8px;padding:1px 9px;margin-right:6px}
+.rf-law{color:var(--c);font-weight:800;font-style:italic;background:rgba(128,128,128,.14);border-radius:6px;padding:0 7px;margin-right:4px}
+.rf-arrow{color:var(--c);font-weight:900;font-size:1.25em;padding:0 3px}
+.rf-ans{font-weight:800;box-shadow:inset 0 -3px 0 var(--c);border-radius:3px}
+@media print{.rc-li,p.rf{break-inside:avoid}}
+</style>
+<script id="script-colorido">
+/* Solo envuelve el texto existente en <span> (no cambia ni una letra), así que las marcas guardadas, las R y los sellos siguen en su sitio. */
+(function(){
+  const PAL=['#2e9d5b','#1473e6','#e07b00','#7c4dff','#c33fc8','#d1332a','#0f9aa8','#8a6d00'];
+  const NUMW='(?:\\d+(?:[.,]\\d+)*|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|doce|quince|veinte|treinta|cuarenta|cincuenta|sesenta|setenta)';
+  const REG=[
+    ['cz-pl',new RegExp('(?:'+NUMW+'\\s+(?:d[ií]as?(?:\\s+(?:h[áa]biles|naturales))?|mes(?:es)?|a[ñn]os?|horas?|semanas?|euros?)(?:\\s+(?:consecutivos|naturales|h[áa]biles))?|\\d+(?:[.,]\\d+)*\\s*(?:€|h\\b|%)|\\d+\\s*\\/\\s*\\d+|[≤≥<>]\\s*\\d[\\d.]*\\s*€?)','gi')],
+    ['cz-or',/\b(?:AEPD|CTBG|DPD|ENAC|BOE|Agencia Española de Protección de Datos|Consejo de Ministros|Consejo Consultivo|Consejo de Transparencia y Buen Gobierno|Ministerio de [A-ZÁÉÍÓÚ]\w+|Audiencia Nacional|Tribunal de Cuentas|Presidente|Presidencia|Gobierno|Congreso|Senado|Defensor del Pueblo|Delegado de protección de datos|Subsecretario|Subdirector general|Comisión de Justicia|Administración|Administraciones Públicas|responsable|encargado)\b/g],
+    ['cz-ac',/\b(?:podrán?|deberán?|no podrá|no podrán|no cabrá|prohibid[oa]s?|obligad[oa]s?|obligatori[oa]s?|únicamente|solo|salvo|excepto|sin perjuicio)\b/gi],
+    ['cz-am',/\b(?:h[áa]biles|naturales|mitad|mayoría absoluta|renovable|no renovable|desestimatorio|estimatorio|vinculante)\b/gi]
+  ];
+  function nodos(root){ const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT), o=[]; for(let n;(n=w.nextNode());){ if(n.parentElement&&n.parentElement.closest('svg,.btn-res')) continue; o.push(n); } return o; }
+  function envolver(root,s,e,cls){
+    if(e<=s) return; let acc=0; const trabajos=[];
+    nodos(root).forEach(t=>{ const a=acc, b=acc+t.length; acc=b; const f=Math.max(s,a)-a, h=Math.min(e,b)-a; if(h>f&&t.nodeValue.slice(f,h).trim()!=='') trabajos.push([t,f,h]); });
+    trabajos.forEach(([t,f,h])=>{ let m=t; if(f>0) m=t.splitText(f); if(h-f<m.length) m.splitText(h-f); const sp=document.createElement('span'); sp.className=cls; m.parentNode.replaceChild(sp,m); sp.appendChild(m); });
+  }
+  function colorear(root,desde,hasta){
+    const txt=root.textContent, hits=[];
+    REG.forEach(([cls,re])=>{ re.lastIndex=0; for(let m;(m=re.exec(txt));){ if(!m[0]){ re.lastIndex++; continue; } const s=m.index,e=s+m[0].length; if(e<=desde||s>=hasta) continue; if(!hits.some(x=>s<x[1]&&e>x[0])) hits.push([Math.max(s,desde),Math.min(e,hasta),cls]); } });
+    hits.sort((a,b)=>b[0]-a[0]).forEach(h=>envolver(root,h[0],h[1],h[2]));
+  }
+  /* caja que agrupa un tramo aunque cruce varios nodos (texto + <strong>…): se extrae el tramo y se mete en un solo <span> */
+  function posDe(root,off){ let acc=0,ult=null; for(const t of nodos(root)){ if(off<=acc+t.length&&(off<acc+t.length||!ult||true)){ if(off<acc+t.length||t===nodos(root).slice(-1)[0]) return [t,off-acc]; } acc+=t.length; ult=t; } return ult?[ult,ult.length]:null; }
+  function caja(root,s,e,cls){
+    const a=posDe(root,s), b=posDe(root,e); if(!a||!b) return;
+    const r=document.createRange(); r.setStart(a[0],a[1]); r.setEnd(b[0],b[1]); if(r.collapsed) return;
+    const sp=document.createElement('span'); sp.className=cls; sp.appendChild(r.extractContents()); r.insertNode(sp);
+  }
+  let ci=0;
+  function recuerda(li){
+    if(li.dataset.cz) return; li.dataset.cz='1'; li.classList.add('rc-li'); li.style.setProperty('--c',PAL[ci++%PAL.length]);
+    const txt=li.textContent; let ini=0;
+    const t=/^[^:]{3,120}:\s/.exec(txt);
+    if(t&&li.firstElementChild&&/^(STRONG|B)$/.test(li.firstElementChild.tagName)) ini=t[0].length;
+    const cortes=[]; const re=/\s·\s/g; for(let m;(m=re.exec(txt));) if(m.index>=ini) cortes.push([m.index,m.index+m[0].length]);
+    const tramos=[]; let p=ini; cortes.forEach(c=>{ tramos.push([p,c[0]]); p=c[1]; }); tramos.push([p,txt.length]);
+    const marcas=[]; if(ini){ marcas.push([0,ini-2,'rc-t']); marcas.push([ini-2,ini,'rc-sep']); } cortes.forEach(c=>marcas.push([c[0],c[1],'rc-sep'])); tramos.forEach(r=>{ if(r[1]>r[0]) marcas.push([r[0],r[1],'rc-it']); });
+    marcas.sort((a,b)=>b[0]-a[0]).forEach(m=>caja(li,m[0],m[1],m[2]));
+    colorear(li,ini,txt.length);
+  }
+  function fichasR(art){
+    if(art.dataset.cz) return; const h=art.querySelector('.articulo-head'); if(!h||!/RECUERDA del temario/i.test(h.textContent)) return; art.dataset.cz='1';
+    const col=PAL[ci++%PAL.length]; art.classList.add('rf-art'); art.style.setProperty('--c',col); const leyes={};
+    art.querySelectorAll('.txt > p').forEach(p=>{
+      const txt=p.textContent, m=/^\s*(R\d+)\s·\s([^.]{2,140}?\.)\s/.exec(txt); if(!m) return;
+      const nIni=txt.indexOf(m[1]), nFin=nIni+m[1].length, lIni=txt.indexOf(m[2],nFin), lFin=lIni+m[2].length;
+      const fl=txt.indexOf(' → ',lFin); const c=leyes[m[2]]||(leyes[m[2]]=PAL[(Object.keys(leyes).length+1)%PAL.length]);
+      p.classList.add('rf'); p.style.setProperty('--c',c);
+      if(fl>0){ colorear(p,lFin,fl); envolver(p,fl+1,fl+2,'rf-arrow'); envolver(p,fl+3,p.textContent.length,'rf-ans'); }
+      envolver(p,lIni,lFin,'rf-law'); envolver(p,nIni,nFin,'rf-n');
+    });
+  }
+  function procesar(esq){
+    if(esq.dataset.czok) return; esq.dataset.czok='1';
+    esq.querySelectorAll('.recuerda li').forEach(recuerda); esq.querySelectorAll('.articulo').forEach(fichasR);
+  }
+  function vigila(){ const es=document.querySelector('.esquema.active'); if(es&&!es.dataset.czok) procesar(es); }
+  new MutationObserver(vigila).observe(document.body,{attributes:true,subtree:true,attributeFilter:['class']});
+  let n=0; (function init(){ if(!document.querySelector('.esquema.active .articulo')&&n++<40) return setTimeout(init,150); vigila(); })();
+})();
+</script>
 <style id="estilo-sellos">
 .sello-b,.ex-u{cursor:pointer;-webkit-user-select:none;user-select:none}
 .sello-b{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-right:6px;vertical-align:middle;border:1.5px dashed #b9b9b9;color:#b9b9b9;border-radius:50%;font-size:12px;font-weight:900;line-height:1;opacity:.45;padding:0;background:transparent;font-family:inherit}
