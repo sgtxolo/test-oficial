@@ -4629,7 +4629,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   let cur=null;   // {esq, el} para editar una marca · {esq, range} para marcar una selección
   function abrir(titulo,sel,x,y,conQuitar){
     pop.innerHTML='<b class="cat-t">'+titulo+'</b><div class="cat-g">'+CATS.map(([k,n])=>'<button type="button" data-c="'+k+'"'+(sel===k?' class="on"':'')+'>'+(k==='clave'?'<u class="m-clave">'+n+'</u>':'<mark class="m-'+k+'">'+n+'</mark>')+'</button>').join('')+'</div>'
-      +(conQuitar?'<div class="cat-g" style="margin-top:8px"><button type="button" data-a="shp" data-k="rect" title="Cuadrado alrededor">▭ Cuadrado</button><button type="button" data-a="shp" data-k="oval" title="Círculo alrededor">◯ Círculo</button><button type="button" data-a="shp" data-k="arrow" title="Flecha hacia la palabra">➜ Flecha</button></div>':'')
+      +('<div class="cat-g" style="margin-top:8px"><button type="button" data-a="shp" data-k="rect" title="Cuadrado alrededor">▭ Cuadrado</button><button type="button" data-a="shp" data-k="oval" title="Círculo alrededor">◯ Círculo</button><button type="button" data-a="shp" data-k="arrow" title="Flecha hacia la palabra">➜ Flecha</button></div>')
       +(conQuitar?'<button type="button" class="cat-b cat-del" data-a="del">Quitar este subrayado</button>':'')
       +'<button type="button" class="cat-b cat-rst" data-a="rst">↺ Restaurar el subrayado original de este tema</button>';
     pop.classList.add('on');
@@ -4667,6 +4667,11 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     const b=e.target.closest('button'); if(!b||!cur) return;
     const esq=cur.esq, bk=bucket(esq.id);
     if(b.dataset.a==='rst'){ if(confirm('¿Restaurar el subrayado original de este tema? Se perderán tus cambios sobre el subrayado automático.')){ delete data[esq.id]; save(); location.reload(); } return; }
+    if(b.dataset.a==='shp'&&cur.range&&window.pmAddShape){        // subrayado nuevo: la figura se dibuja alrededor de la selección
+      const rc=cur.range.getBoundingClientRect(), k=b.dataset.k, n=window.pmAddShape(esq,k,rc,{pad:k==='oval'?8:3});
+      if(n!=null&&window.pmPush&&window.pmDelShape) window.pmPush(esq.id,()=>window.pmDelShape(esq,n));
+      getSelection().removeAllRanges(); cerrar(); return;
+    }
     if(b.dataset.a==='shp'){
       /* la forma SUSTITUYE al subrayado: se mide la palabra, se quita el subrayado y se dibuja la forma en su sitio */
       if(cur.el&&window.pmAddShape){
