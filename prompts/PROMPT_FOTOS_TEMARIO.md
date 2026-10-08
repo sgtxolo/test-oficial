@@ -24,8 +24,14 @@ Te voy a pasar **fotos de mi temario en papel** (Prefortia, Tomo 2, Ascenso a Of
 - Respeta el estilo del esquema (ver `PROMPT_ESQUEMAS.md`) y no toques las respuestas de test (`m-resp`).
 - Si el artículo tiene preguntas oficiales en la app, no las borres ni las cambies.
 
-## Cómo trabajar
-- Puedo mandarte hasta **19 fotos a la vez**. Hazlas una a una, en orden.
-- Si una foto no se lee bien (borrosa, sombra, color dudoso, marca ambigua), **no adivines**: dime cuál es y qué falta, y sigue con las demás.
-- Al terminar cada tanda: haz **commit y push** a origin y dame un **resumen en español** con los artículos añadidos o corregidos, las dudas, y las flechas o anotaciones que has dejado fuera.
-- Responde siempre en español.
+## Cómo trabajar (por fases: NO hagas nada hasta que yo te lo diga)
+**Fase 1 — Recepción.** Te mandaré las fotos por tandas (hasta 19 a la vez), puede que un tema de 100 páginas o más. Mientras tanto **no toques `esquemas.html`, no hagas commit ni push y no empieces el esquema**. En cada tanda solo:
+- guarda las fotos en una carpeta del proyecto (p. ej. `prompts/temario-fotos/TemaN/`, numeradas en el orden en que llegan) para no perderlas;
+- responde en una línea: «Recibidas X fotos (total Y)», y avisa solo si alguna no se lee bien (borrosa, sombra, marca ambigua) para que la repita;
+- no transcribas ni resumas todavía.
+
+**Fase 2 — Esquema.** Solo cuando yo escriba algo como «ya he terminado el temario, hazme el esquema», procesa **todas** las fotos en orden, una a una, con las reglas de arriba, y deja el tema completo en `esquemas.html`.
+
+**Al terminar la fase 2:** haz **commit y push** a origin y dame un **resumen en español** con los artículos añadidos o corregidos, las dudas, y las flechas o anotaciones que has dejado fuera. Si una foto sigue sin leerse bien, no adivines: dime cuál es.
+
+Responde siempre en español.
