@@ -4,6 +4,14 @@ const L = require('./visuales-lib.js');
 const { R, P, D, Y, K, arbol, flujo, cols, plazos, tabla } = L;
 const V = []; const v = (despues, html) => V.push([despues, html]);
 const A = x => `<b>${x}</b>`; // cita del artículo, como las etiquetas verdes del cuadro
+const G = x => `<mark class="m-autoridad">${x}</mark>`;      // órganos/autoridades (verde)
+const U = x => `<u class="m-lapiz">${x}</u>`;                // subrayado a lápiz
+const CA = x => `<span class="m-caja">${x}</span>`;          // cuadrado azul
+const CR = x => `<span class="m-caja ro">${x}</span>`;       // cuadrado rojo
+const OA = x => `<span class="m-circulo az">${x}</span>`;    // círculo azul
+const O = x => `<span class="m-circulo">${x}</span>`;        // círculo rojo
+const F = '<span class="m-flecha"></span>';                  // flecha ➜ (se dibuja por CSS, sin texto)
+const AS = '<span class="m-ast"></span>';                    // asterisco rojo ✱
 
 // ───────── Ley 39/2015 · art. 96 · tramitación simplificada (cuadro de la pág. 3) ─────────
 v('Artículo 96 — Tramitación simplificada', tabla('Tramitación simplificada del procedimiento administrativo común (art. 96 · cuadro del temario)', ['Concepto', 'Contenido'], [
@@ -185,9 +193,24 @@ v('Artículo 45 — Publicación', tabla('Publicación (art. 45 · cuadro del te
   { l: 'Contenido', c: 'c', h: [{ t: `Texto íntegro de la resolución (indicando si pone fin o no a la vía administrativa) y recursos que procedan.` }] },
   { l: 'Lugar', c: 'o', h: [{ t: `En el ${D('diario oficial')} que corresponda según cuál sea la Administración de la que proceda el acto a notificar.` }] }]));
 v('Artículo 47 — Nulidad de pleno derecho', cols('Nulidad y anulabilidad (arts. 47 y 48 · «MUY IMPORTANTE» en el temario)', [
-  { t: 'NULIDAD DE PLENO DERECHO (actos)', l: [`Lesionen derechos y libertades susceptibles de amparo constitucional.`, `Dictados por órgano ${R('manifiestamente incompetente')} por razón de la materia o del territorio.`, `Tengan un contenido imposible.`, `Sean constitutivos de infracción penal o se dicten como consecuencia de ésta.`, `Dictados prescindiendo total y absolutamente del procedimiento legalmente establecido o de las normas esenciales de formación de la voluntad de los órganos colegiados.`, `Actos expresos o presuntos contrarios al ordenamiento por los que se adquieren facultades o derechos ${K('cuando')} se carezca de los requisitos esenciales.`, `Cualquier otro que se establezca expresamente en una disposición con rango de ley.`] },
-  { t: 'NULIDAD DE PLENO DERECHO (disposiciones)', l: [`Vulneren la Constitución, las leyes u otras disposiciones administrativas de rango superior.`, `Las que regulen materias reservadas a la Ley.`, `Las que establezcan la retroactividad de disposiciones sancionadoras ${K('no')} favorables o restrictivas de derechos individuales.`] },
-  { t: 'ANULABILIDAD', l: [`Actos que incurran en cualquier infracción del ordenamiento jurídico, incluso la ${R('desviación de poder')}.`, `El defecto de forma determina la anulabilidad ${K('solo')} cuando el acto carezca de los requisitos formales indispensables para alcanzar su fin o dé lugar a indefensión de los interesados.`, `Actuaciones fuera del tiempo establecido: anulabilidad ${K('solo')} si así lo impone la naturaleza del término o plazo.`] }]));
+  { t: 'NULIDAD DE PLENO DERECHO (actos)', l: [
+    `Serán ${D('NULOS DE PLENO DERECHO')} los siguientes ${U(D('ACTOS'))} de las ${G('Administraciones Públicas')}:`,
+    `${U(D('Lesionen derechos y libertades'))} ${Y('susceptibles de amparo constitucional')}.`,
+    `Dictados por órgano ${R('manifiestamente incompetente')} ${U(Y('por razón'))}${AS} ${U('de la materia o del territorio')}.`,
+    `Tengan un ${D('contenido imposible')}.`,
+    `Sean constitutivos de ${D('infracción penal')} o se dicten como consecuencia de ésta.`,
+    `${D('Dictados prescindiendo')} ${CA(U(Y('total y absolutamente')))} del procedimiento ${Y('legalmente establecido')} o de las normas que contienen las ${CA('reglas esenciales')} para la ${Y('formación')} de la voluntad de los ${U(Y('órganos colegiados'))}.`,
+    `Actos expresos o presuntos contrarios al ordenamiento jurídico por los que se ${D('adquieren facultades o derechos')} ${OA('cuando')} ${U(Y('se carezca de los requisitos esenciales'))} para su adquisición.`,
+    `Cualquier otro que ${Y('se establezca')} ${CA('expresamente')} en una ${D('disposición')} con ${OA('rango de ley')}.`] },
+  { t: 'NULIDAD DE PLENO DERECHO (disposiciones)', l: [
+    `Serán ${D('NULAS DE PLENO DERECHO')} las ${U(D('DISPOSICIONES ADMINISTRATIVAS'))} que:`,
+    `${U(G('Vulneren'))}: la ${Y('Constitución')}, las ${Y('leyes')} u ${D('otras disposiciones administrativas')} de ${CA('rango superior')}.`,
+    `Las que regulen ${Y('materias reservadas')} a la Ley.`,
+    `Las que establezcan la ${D('retroactividad de disposiciones sancionadoras')} ${O('no')} favorables ${O('o')} ${D('restrictivas de derechos individuales')}.`] },
+  { t: 'ANULABILIDAD', l: [
+    `Son ${D('ANULABLES')}: los ${D('actos')} de la Administración ${Y('que incurran en cualquier infracción del ordenamiento jurídico')}, ${O('incluso')} ${F}${CA(R('la desviación de poder'))}.`,
+    `${Y('No obstante')}, el ${D('defecto de forma')} ${O('solo')} determinará la ${Y('anulabilidad')} ${CA('cuando')} el ${OA('acto')} carezca de los ${Y('requisitos formales indispensables')} para alcanzar su fin o dé lugar a ${Y('indefensión de los interesados')}.`,
+    `La realización de ${G('actuaciones administrativas fuera del tiempo')} establecido para ellas implicará la ${D('anulabilidad')} del acto ${CR('cuando así lo')} ${Y('imponga la naturaleza del término o plazo')}.`] }]));
 v('Artículo 52 — Convalidación', cols('Subsanación de actos viciados: conversión, conservación y convalidación (arts. 50-52 · cuadro del temario)', [
   { t: 'Conversión (art. 50)', l: [`Los actos nulos o anulables que contengan los elementos constitutivos de otro distinto producirán los efectos de éste.`] },
   { t: 'Conservación (art. 51)', l: [`El órgano que declare la nulidad o anule actuaciones dispondrá siempre la ${D('conservación')} de actos y trámites cuyo contenido se hubiera mantenido igual de no haberse cometido la infracción.`] },
