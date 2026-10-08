@@ -3731,6 +3731,22 @@ body.embed #app{padding-top:4px}
         art.dataset.qs = [...new Set(idsFicha)].join(',');
         if (hayEx){ const s = art.querySelector('.sello-examen'); if (s) s.remove(); }
       });
+      // respuestas azules que el mapa no ubica (cuadros del temario .vis, apartados sueltos…): enlazan con las preguntas de su ficha (la del propio artículo, o la anterior/siguiente al cuadro)
+      const qsDe = a => (a && a.dataset.qs) ? a.dataset.qs.split(',').filter(Boolean) : [];
+      esq.querySelectorAll('mark.m-resp:not([data-q])').forEach(m => {
+        if (m.closest('.leyenda')) return;
+        let a = m.closest('.articulo'), ids = qsDe(a);
+        if (!ids.length){
+          let n = (m.closest('.vis, .trampa, .recuerda') || m).previousElementSibling;
+          while (n && !n.classList.contains('articulo')) n = n.previousElementSibling;
+          ids = qsDe(n);
+          if (!ids.length){ n = (m.closest('.vis, .trampa, .recuerda') || m).nextElementSibling; while (n && !n.classList.contains('articulo')) n = n.nextElementSibling; ids = qsDe(n); }
+        }
+        if (!ids.length) return;
+        m.dataset.q = ids.join(',');
+        m.title = ids.length === 1 ? 'Pulsa para repasar la pregunta ' + ids[0] : 'Pulsa para repasar ' + ids.length + ' preguntas de esta ficha';
+        m.classList.toggle('r-ia', ids.every(esIA));
+      });
       const ley = esq.querySelector('.leyenda');
       if (ley && !ley.querySelector('.lc-resp-ia')){
         const r = ley.querySelector('.lc-resp'); if (r) r.parentNode.lastChild.textContent = 'Respuesta de pregunta oficial (púlsala)';
