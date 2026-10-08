@@ -118,3 +118,7 @@ Cuando las 50 preguntas estén insertadas, comprobadas y subidas, **haz sin que 
 - Artículos que siguen sin ninguna pregunta en la app.
 - El esquema del tema: nº de fichas, % de subrayado medido con `densidad.js`, preguntas corregidas y estimación de tiempo de estudio.
 - Si usaste mi temario subrayado: cuántas de las 50 preguntas caen en fragmentos que yo tengo subrayado (objetivo ≥ 35), la tabla artículo → preguntas → % subrayado mío, lista de los cuadros/esquemas del temario que has recreado (página → ficha donde quedó) y cuáles propios has añadido, además de palabras emparejadas / sin emparejar, discrepancias entre el texto del temario oficial y el mío (erratas, versiones distintas) y fichas revisadas a ojo contra mi PDF.
+
+
+## Cajas de trampas y trucos del esquema (obligatorio, formato nuevo)
+Al hacer el esquema, las cajas de ayuda **no son una lista de cifras sueltas**: cada cifra o plazo importante lleva su tarjeta «Cifras que se confunden» con el formato exacto `trampa("Cifras que se confunden", "<em>¿de qué es?</em><strong>2 meses</strong> — no 1 mes · no 3 meses · no 4 meses")` (cifra corta con su unidad, sin repetir la frase entera; hábiles/naturales cuando importe). Además, cajas variadas: «Trampa de examen», «Ojo a la redacción», «Truco para recordarlo» (regla mnemotécnica corta basada solo en el texto) y «Ten en cuenta». Detalle en `prompts/PROMPT_ESQUEMA_DESDE_PREGUNTAS.md`.

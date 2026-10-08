@@ -5297,6 +5297,53 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   let n=0; (function init(){ if(!document.querySelector('.esquema.active')&&n++<40) return setTimeout(init,150); vigila(); })();
 })();
 </script>
+<style id="estilo-cifras">
+.trampa.cifra{background:var(--panel-alt,#f3f1e6);border:1.5px solid var(--examen-borde,#e0a800);border-left-width:6px;border-style:solid;padding:12px 16px}
+.trampa.cifra>b{color:var(--examen-txt);font-size:12.5px;letter-spacing:.02em;margin-bottom:8px}
+.cf-ok{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.cf-ok i{font-style:normal;background:#2e9d5b;color:#fff;border-radius:50%;width:22px;height:22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex:none}
+.cf-ok strong{font-size:19px;font-weight:900;color:var(--texto);background:rgba(46,157,91,.18);border-radius:8px;padding:2px 10px}
+.cf-no{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.cf-no>span{font-size:12px;font-weight:800;color:#c0392b;margin-right:2px}
+.cf-no s{font-size:13.5px;font-weight:700;color:#b3001b;background:rgba(214,69,69,.12);border-radius:7px;padding:2px 8px;text-decoration-thickness:2px;text-decoration-color:rgba(179,0,27,.55)}
+.cf-marco{margin-top:8px;font-size:12.5px;color:var(--texto-gris);font-style:italic}
+.cf-dif{background:#ffe27a;color:#1f2a24;border-radius:4px;padding:0 3px;font-style:normal;font-weight:800}
+</style>
+<script id="script-cifras">
+/* Las cajas «Cifras que se confunden» se redibujan como tarjeta: qué cifra es (plazo/cuantía), a qué artículo se refiere, la correcta en grande y las trampas tachadas.
+   Si todas las opciones comparten el principio o el final, eso se saca como «marco» y los chips solo llevan lo que cambia. */
+(function(){
+  const esc=t=>String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+  const pal=t=>t.trim().split(/\s+/);
+  function comun(listas){ let i=0; while(listas.every(l=>l.length>i+1&&l[i]===listas[0][i])) i++; return i; }
+  function comunFin(listas){ let i=0; while(listas.every(l=>l.length>i+1&&l[l.length-1-i]===listas[0][listas[0].length-1-i])) i++; return i; }
+  function tipo(t){ return /€|euros?\b/i.test(t)?['💶','Cuantía']:/\b(horas?|d[ií]as?|mes(?:es)?|a[ñn]os?|semanas?)\b/i.test(t)?['⏱','Plazo']:['🔢','Cifra']; }
+  function tarjeta(t){
+    if(t.dataset.cifra) return; t.dataset.cifra='1';
+    const b=t.querySelector(':scope > b'), pp=t.querySelector(':scope > p'); if(!b||!pp||!/Cifras que se confunden/i.test(b.textContent)) return;
+    const m=/^(?:\s*<em>([\s\S]*?)<\/em>\s*)?<strong>([\s\S]*?)<\/strong>\s*—\s*([\s\S]*)$/.exec(pp.innerHTML.trim()); if(!m) return;
+    const ok=m[2].trim(), no=m[3].split(/\s·\s/).map(x=>x.replace(/^\s*no\s+/i,'').trim()).filter(Boolean); if(!no.length) return;
+    let marco='', cOk=ok, cNo=no;
+    const L=[ok,...no].map(pal);
+    if(L.every(l=>l.length>=4)){
+      const pre=comun(L); let fin=Math.max(0,comunFin(L));
+      while(fin>0&&/^(d[ií]as?|mes(?:es)?|a[ñn]os?|horas?|semanas?|euros?|h[áa]biles|naturales|últimos?)$/i.test(L[0][L[0].length-fin])) fin--;
+      if(pre+fin>=2){ const cut=l=>l.slice(pre,l.length-fin).join(' '); const mid=L.map(cut); if(mid.every(Boolean)){ cOk=mid[0]; cNo=mid.slice(1); marco=[L[0].slice(0,pre).join(' '),'…',L[0].slice(L[0].length-fin).join(' ')].join(' ').replace(/\s+/g,' ').trim(); } }
+    }
+    let art=''; if(m[1]) art=m[1]; else { let a=t.previousElementSibling; while(a&&!a.classList.contains('articulo')&&!a.classList.contains('bloque-titulo')) a=a.previousElementSibling; const h=a&&a.querySelector&&a.querySelector('.articulo-head'); const n=h&&[...h.childNodes].find(x=>x.nodeType===3&&x.textContent.trim()); art=n?n.textContent.trim():''; }
+    const [ic,nom]=tipo(ok+' '+no.join(' '));
+    const dif=x=>esc(x).replace(/\b(h[áa]biles|naturales)\b/gi,'<em class="cf-dif">$1</em>');
+    t.classList.add('cifra');
+    t.innerHTML='<b>'+ic+' '+nom+' que se confunde'+(art?' · '+esc(art):'')+'</b>'
+      +'<div class="cf-ok"><i>✔</i><strong>'+dif(cOk)+'</strong></div>'
+      +'<div class="cf-no"><span>NO es</span>'+cNo.map(x=>'<s>'+dif(x)+'</s>').join('')+'</div>'
+      +(marco?'<div class="cf-marco">'+esc(marco)+'</div>':'');
+  }
+  const todo=()=>document.querySelectorAll('.trampa:not([data-cifra])').forEach(tarjeta);
+  new MutationObserver(todo).observe(document.body,{childList:true,subtree:true});
+  todo();
+})();
+</script>
 <style id="estilo-sellos">
 .sello-b,.ex-u{cursor:pointer;-webkit-user-select:none;user-select:none}
 .sello-b{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-right:6px;vertical-align:middle;border:1.5px dashed #b9b9b9;color:#b9b9b9;border-radius:50%;font-size:12px;font-weight:900;line-height:1;opacity:.45;padding:0;background:transparent;font-family:inherit}
@@ -5328,7 +5375,7 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
   function procesar(es){
     if(es.dataset.sellos) return; es.dataset.sellos='1';
     es.querySelectorAll('.articulo .txt > p').forEach(p=>{
-      if(p.querySelector(':scope > .ex-p')||/^s*(Rs*)?(…)s*$/.test(p.textContent)) return;
+      if(p.querySelector(':scope > .ex-p')||/^\s*(R\s*)?\(…\)\s*$/.test(p.textContent)) return;
       const k=clave(p); if(!k) return; p._k=k; poner(p,data[k]||null);
     });
   }
