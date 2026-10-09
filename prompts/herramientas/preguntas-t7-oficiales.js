@@ -1,6 +1,7 @@
-// Preguntas OFICIALES nuevas del Tema 7 (LOTC + LO 1/1982) para que todos los artículos del esquema tengan pregunta.
+// Preguntas IA nuevas del Tema 7 (ids 7-ia-51 en adelante, bloque seed de IA; NO van al banco oficial)
+// (antes: Preguntas OFICIALES nuevas del Tema 7 (LOTC + LO 1/1982) para que todos los artículos del esquema tengan pregunta.
 // Objetivo por artículo: A = 4, B = 3, C = 2 (LOTC 45 derogado: 1). Texto literal de prompts/temario-limpio/tema7.
-// Uso: node prompts/herramientas/preguntas-t7-oficiales.js [--dry <salida.json>]   (idempotente; inserta tras 7-140)
+// Uso: node prompts/herramientas/preguntas-t7-oficiales.js [--dry <salida.json>]   (idempotente; inserta al final del seed IA del tema 7; si hubiera 7-141..7-189 en el banco oficial, las quita)
 const fs = require('fs');
 const F = 'test-oficial-conocimiento.html';
 const TC = 'Ley Orgánica 2/1979, de 3 de octubre, del Tribunal Constitucional';
@@ -13,7 +14,7 @@ function obj(s, id) {
   return { i, j };
 }
 const o100 = obj(s0, '7-100'); const HON = JSON.parse(s0.slice(o100.i, o100.j + 1)).apartado;
-const N = { tc: ['LOTC', TC, TC], lo: ['LO 1/1982', HON, HON] };
+const N = {};
 // [norma, art, materia, enunciado, correcta, [3 distractores], cita literal, (neg: por qué la opción marcada es la incorrecta)]
 const Q = [
 // ---- Artículos sin ninguna pregunta ----
@@ -70,25 +71,41 @@ const Q = [
 ['lo','5','Pluralidad de legitimados','La regla de que cualquiera podrá ejercer las acciones se aplica también cuando hayan sido varias las personas designadas en el testamento, salvo:','Disposición en contrario del fallecido.',['Oposición del Ministerio Fiscal.','Resolución judicial en contrario.','Acuerdo mayoritario de los designados.'],'La misma regla se aplicará, salvo disposición en contrario del fallecido, cuando hayan sido varias las personas designadas en su testamento.']
 ];
 const L = 'ABCD';
+// apartado de las preguntas IA de la LO 1/1982 (se toma de una ya existente)
+let HONIA = HON;
+for (let i = s0.indexOf('{"id":"7-ia-'); i >= 0; i = s0.indexOf('{"id":"7-ia-', i + 1)) {
+  const e = obj(s0, s0.slice(i + 7, s0.indexOf('"', i + 8))); const q = JSON.parse(s0.slice(e.i, e.j + 1));
+  if (q.pregunta.includes('1/1982')) { HONIA = q.apartado; break; }
+}
+const AP = { tc: TC, lo: HONIA };
+const REF = { tc: 'LO 2/1979 (Tribunal Constitucional)', lo: 'LO 1/1982 (honor, intimidad e imagen)' };
+const NOM = { tc: TC, lo: JSON.parse(s0.slice(o100.i, o100.j + 1)).pregunta.split('. ')[0] };
 const out = Q.map((q, i) => {
   const [n, art, mat, enun, ok, ds, cita, neg] = q;
-  const pos = (i * 3 + 2) % 4;                    // reparto de la letra correcta (la correcta nunca fija en la misma posición)
+  const pos = (i * 3 + 2) % 4;                    // reparto de la letra correcta
   const ops = ds.slice(); ops.splice(pos, 0, ok);
   const letra = L[pos];
-  const refn = `art. ${art} de la ${N[n][0]}`;
   const porque = neg ? `La opción ${letra} es la incorrecta porque ${neg}` : `Las demás opciones no se ajustan al texto del precepto.`;
+  const dificultad = neg ? 'dificil' : (ok.length < 45 ? 'facil' : 'media');
   return {
-    id: '7-' + (141 + i),
-    pregunta: `${N[n][1]}. ${mat}. ${enun}`,
+    id: '7-ia-' + (51 + i),
+    pregunta: `${NOM[n]}, art. ${art}. ${enun}`,
     opciones: ops, correcta: pos,
-    explicacion: `<span class="ex-resp">Respuesta correcta: <b>${letra}</b> · <mark class="ex-key">${ok}</mark></span> El <span class="ref-norma">${refn}</span> dispone: <span class="ref-concepto">"${cita}"</span>. ${porque}`,
-    apartado: N[n][2] };
+    explicacion: `<span class="ex-resp">Respuesta correcta: <b>${letra}</b> · <mark class="ex-key">${ok.replace(/\.$/, '')}</mark></span>El <span class="ref-norma">art. ${art} de la ${REF[n]}</span> dispone: <span class="ref-concepto">"${cita}"</span>. ${porque}`,
+    apartado: AP[n], dificultad };
 });
 if (process.argv[2] === '--dry') { fs.writeFileSync(process.argv[3], JSON.stringify(out)); console.log('dry', out.length); process.exit(0); }
-const nuevos = out.filter(o => !s0.includes(`"id":"${o.id}"`));
-if (!nuevos.length) { console.log('nada que añadir'); process.exit(0); }
-const o140 = obj(s0, '7-140'); if (!o140) throw new Error('7-140 no encontrado');
-const ins = nuevos.map(o => ',' + JSON.stringify(o)).join('');
-fs.writeFileSync(F, s0.slice(0, o140.j + 1) + ins + s0.slice(o140.j + 1));
+let s = s0;
+// 1) quitar del banco oficial las 7-141..7-189 (si están)
+let quitadas = 0;
+for (let k = 141; k <= 189; k++) {
+  const e = obj(s, '7-' + k); if (!e) continue;
+  s = s.slice(0, e.i - 1) + s.slice(e.j + 1); quitadas++;       // e.i-1 = la coma anterior
+}
+// 2) añadir al final del seed IA del tema 7
+const nuevos = out.filter(o => !s.includes(`"id":"${o.id}"`));
+const ult = obj(s, '7-ia-50'); if (!ult) throw new Error('7-ia-50 no encontrado');
+s = s.slice(0, ult.j + 1) + nuevos.map(o => ',' + JSON.stringify(o)).join('') + s.slice(ult.j + 1);
+fs.writeFileSync(F, s);
 const cnt = {}; out.forEach(o => cnt[L[o.correcta]] = (cnt[L[o.correcta]] || 0) + 1);
-console.log('añadidas', nuevos.length, 'ids', nuevos[0].id, '→', nuevos[nuevos.length - 1].id, 'letras', cnt);
+console.log('quitadas del oficial', quitadas, '· añadidas IA', nuevos.length, nuevos[0] && nuevos[0].id, '→', nuevos.length && nuevos[nuevos.length - 1].id, cnt);
