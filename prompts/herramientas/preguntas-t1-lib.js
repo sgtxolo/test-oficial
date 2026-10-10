@@ -5,16 +5,17 @@
 const fs = require('fs');
 const F = 'test-oficial-conocimiento.html', L = 'ABCD', BS = String.fromCharCode(92);
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-exports.run = function ({ AP, ini, Q, OF = [], CITAS = {}, corta, arg = process.argv.slice(2) }) {
-  const norma = a => `${a} de ${corta}`;
-  const expl = (letra, ok, a, t, p, ia) => `<span class="ex-resp">Respuesta correcta: <b>${letra}</b> · <mark class="ex-key">${esc(ok.replace(/\.$/, ''))}</mark></span>El <span class="ref-norma">${norma(a)}</span> dispone: <span class="ref-concepto">"${esc(t)}"</span>. ${esc(p)}${ia ? ' <em style="color:var(--texto-gris)">(Pregunta generada por IA)</em>' : ''}`;
+exports.run = function ({ AP, pref, ini, Q, OF = [], CITAS = {}, corta, arg = process.argv.slice(2) }) {
+  pref = pref || AP;
+  const norma = (a, n) => n || `${a} de ${corta}`;
+  const expl = (letra, ok, a, t, p, ia, n) => `<span class="ex-resp">Respuesta correcta: <b>${letra}</b> · <mark class="ex-key">${esc(ok.replace(/\.$/, ''))}</mark></span>El <span class="ref-norma">${norma(a, n)}</span> dispone: <span class="ref-concepto">"${esc(t)}"</span>. ${esc(p)}${ia ? ' <em style="color:var(--texto-gris)">(Pregunta generada por IA)</em>' : ''}`;
   const uso = [0, 0, 0, 0]; Q.forEach(q => { if (q.c !== null && q.c !== undefined) uso[q.c]++; });
   const ia = Q.map((q, i) => {
     let ops = q.o.slice(), c = q.c;
     if (c === null || c === undefined) { const ok = ops.shift(); c = [0, 1, 2, 3].sort((a, b) => uso[a] - uso[b] || ((a + i) % 4) - ((b + i) % 4))[0]; ops.splice(c, 0, ok); uso[c]++; }
-    return { id: '1-ia-' + (ini + i), pregunta: `${AP}. ${q.r}. ${q.e}`, opciones: ops, correcta: c, dificultad: 'media', explicacion: expl(L[c], ops[c], q.a, q.t, q.p, true), apartado: AP };
+    return { id: '1-ia-' + (ini + i), pregunta: `${pref}. ${q.r}. ${q.e}`, opciones: ops, correcta: c, dificultad: 'media', explicacion: expl(L[c], ops[c], q.a, q.t, q.p, true, q.n), apartado: AP };
   });
-  const of = OF.map(q => ({ id: q.id, pregunta: `${AP}. ${q.r}. ${q.e}`, opciones: q.o, correcta: q.c, explicacion: expl(L[q.c], q.o[q.c], q.a, q.t, q.p, false), apartado: AP, _after: q.after }));
+  const of = OF.map(q => ({ id: q.id, pregunta: `${pref}. ${q.r}. ${q.e}`, opciones: q.o, correcta: q.c, explicacion: expl(L[q.c], q.o[q.c], q.a, q.t, q.p, false, q.n), apartado: AP, _after: q.after }));
   if (arg[0] === '--json') { fs.writeFileSync(arg[1], JSON.stringify(ia, null, 1)); fs.writeFileSync(arg[1].replace(/\.json$/, '-of.json'), JSON.stringify(of, null, 1)); console.log(ia.length, 'IA +', of.length, 'oficiales · letras', JSON.stringify(uso)); return; }
   let s = fs.readFileSync(F, 'utf8');
   const rango = id => { const k = '{"id":"' + id + '"'; const i = s.indexOf(k); if (i < 0) return null; let d = 0, inS = false, e = false, j = i; for (; j < s.length; j++) { const ch = s[j]; if (inS) { if (e) e = false; else if (ch === BS) e = true; else if (ch === '"') inS = false; continue; } if (ch === '"') inS = true; else if (ch === '{') d++; else if (ch === '}') { d--; if (d === 0) break; } } return [i, j + 1]; };
