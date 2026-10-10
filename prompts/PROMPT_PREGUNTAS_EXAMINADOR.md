@@ -22,6 +22,7 @@ Puedo darte **dos documentos del mismo tema**, y cada uno vale para una cosa dis
      3. **El texto de cada pregunta, de la respuesta correcta y de la cita de la explicación sale SIEMPRE del temario oficial, nunca de mi PDF subrayado.** De mi PDF solo sabes *qué* he marcado, no *qué dice*. Si una palabra subrayada no se puede localizar con seguridad en el oficial (OCR dudoso), no la uses como base: pregunta por ese artículo con el texto oficial o descártala y dímelo.
      4. Verifica cada pregunta contra el oficial como siempre. Si mi subrayado apunta a un dato que el oficial dice distinto (errata o versión antigua mía), **la pregunta sigue el oficial** y me lo señalas en el informe.
      5. Al final entrégame una tabla: artículo → nº de preguntas → «% subrayado mío» de ese artículo, para ver que el peso va donde yo subrayé.
+   - **Páginas que solo están en mi PDF subrayado (autorizado 10/10/2026):** si mi temario subrayado trae texto que el oficial no tiene (otra edición, informes explicativos, reservas…), **también se hacen preguntas IA de esas páginas** (5 por página), con la cita sacada de mi PDF y avisándome de que no está en el oficial.
    - Si no te adjunto el segundo documento, el esquema se subraya con el método Prefortia habitual (≈ 70 %, por categorías).
 
 ## Marcas de examen que yo pongo a mano: EX, EXOF y EXAMEN 2020 (OBLIGATORIO, se hace todo sin que te lo pida)
