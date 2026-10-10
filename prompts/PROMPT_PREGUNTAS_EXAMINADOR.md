@@ -47,15 +47,21 @@ Qué haces con cada marca (todo, y en este orden):
 
 **Cómo trabaja el examinador en cada bloque:**
 1. Lee las 10 páginas enteras como lo haría el tribunal preparando el examen.
-2. Elige **los puntos de esas páginas que un examinador real preguntaría**: los datos más «examinables» (plazos, órganos, mayorías, definiciones, enumeraciones, coletillas, excepciones). Lo que yo tengo subrayado o marcado con EX/EXOF/EXAMEN 2020 va primero. No repitas un dato que ya tenga pregunta en la app (ver reglas de calidad).
-3. Cada pregunta, **limpia y profesional**, como las del examen oficial: enunciado claro y sin rodeos, cuatro opciones homogéneas, una sola correcta indiscutible.
-4. Dificultad **asequible (fácil-media)**: el dato es literal del temario y se acierta si se ha estudiado; la dificultad la ponen los distractores verosímiles, no un enunciado retorcido. Nada de preguntas rebuscadas sobre detalles marginales.
-5. Reparte las 50 por todo el bloque (no concentrar muchas en un mismo artículo), con más peso en los artículos con más plazos, órganos y enumeraciones.
+2. Elige **los puntos de esas páginas que un examinador real preguntaría**: los datos más «examinables» (plazos, órganos, mayorías, definiciones, enumeraciones, coletillas, excepciones). Lo que yo tengo subrayado o marcado con EX/EXOF/EXAMEN 2020 va primero.
+3. Cada pregunta, **limpia y profesional**, como las del examen oficial: cuatro opciones, una sola correcta indiscutible.
+4. Reparte las 50 por todo el bloque (no concentrar muchas en un mismo artículo), con más peso en los artículos con más plazos, órganos y enumeraciones.
 
-**Formatos de examen real (en cada bloque de 50):**
-- **Directa** (la mayoría, ≈ 35): «¿Cuál es el plazo…?», «¿Qué órgano…?», «Según el art. X, …», completar el hueco.
-- **«Señale la respuesta INCORRECTA»** (≈ 10): enumeración del artículo con un elemento intruso o un dato cambiado.
-- **Combinadas** («A y B son correctas», «A y B son incorrectas», «todas son correctas», «ninguna es correcta»): **pocas, ≈ 5 y solo cuando el texto lo justifique de verdad**. Deben ser unas veces la respuesta correcta y otras un distractor (no siempre la correcta).
+## ESTILO OBLIGATORIO: como las preguntas OFICIALES del examen (pautas del usuario, 10/10/2026)
+Antes de redactar, **lee 20-30 preguntas oficiales del banco** (`extraer-preguntas.js`, ids sin `-ia-`) y copia su forma. Lo que el usuario ha pedido expresamente:
+1. **Enunciados LARGOS, como los oficiales**, no frases cortitas. Forma oficial: `«<Norma con su nombre completo>. <Rúbrica o materia del artículo>. <enunciado que reproduce casi literal el artículo hasta el dato que se pregunta>:»`. Ej.: «Ley Orgánica 18/2003, de 10 de diciembre, de Cooperación con la Corte Penal Internacional. De la libertad provisional. Si el detenido solicitara, en la comparecencia prevista en el artículo anterior, su libertad provisional, el Juez Central de Instrucción acordará remitir dicha solicitud a la Corte, a través del Ministerio de Justicia, con indicación del plazo para recibir sus recomendaciones, que:». Alguna corta puede haber, pero **casi todas largas**.
+2. **Opciones LARGAS y MUY PARECIDAS entre sí**: las cuatro reproducen la frase del artículo y **solo cambia una palabra o un dato** (podrá / deberá, únicamente / exclusivamente / en todo caso, previa / posterior, con / sin, Ministerio de Justicia / de Asuntos Exteriores, veinte / diez días, hábiles / naturales, primordial / subsidiaria…). Así hay que conocer la palabra exacta y no se adivina.
+3. **La más larga NO debe ser la verdadera.** En examen oficial difícil es raro que la larga sea la buena: la correcta será la más corta o de longitud media en la mayoría; como mucho la más larga en ~1 de cada 4. Se mide con `sesgo-longitud.js` y si no cumple se reescribe.
+4. **Completar el hueco** (muchas): el enunciado es el párrafo literal con `__________` en el dato y las opciones son las palabras que lo rellenan («…serán aprobadas por una mayoría __________ de los miembros de la Asamblea de los Estados Partes.»).
+5. **«Señale la INCORRECTA»** (muchas): las cuatro opciones son **párrafos o apartados literales del artículo** y en uno se ha cambiado una pequeña cosa (una palabra, un plazo, un órgano); esa es la incorrecta.
+6. **PROHIBIDO preguntar números de artículos o remisiones** («¿conforme a qué artículo del Estatuto…?», «¿qué artículo de la LECrim…?», «art. 91.2 o 3»): en el examen no se pregunta eso. Se pregunta el contenido (plazo, órgano, coletilla, requisito), nunca a qué precepto remite.
+7. Dificultad de examen real: dato literal y relevante, sin rebuscar detalles marginales; la dificultad la ponen las opciones casi iguales.
+
+**Formatos en cada bloque de 50 (orientativo):** ≈ 20 directas largas (enunciado casi literal + 4 finales parecidos) · ≈ 12 de completar el hueco · ≈ 12 de «señale la INCORRECTA» con párrafos literales · ≈ 6 combinadas («A y B son correctas», «A y B son incorrectas», «todas son correctas»), unas veces correctas y otras distractor y solo cuando el texto lo justifique.
 
 ## Qué preguntar (prioridad de examinador)
 1. **Plazos y cifras**: días (hábiles/naturales), semanas, meses, años, horas, porcentajes, números de miembros, fechas de entrada en vigor y aplicación.
@@ -74,8 +80,8 @@ Qué haces con cada marca (todo, y en este orden):
 - «Todas son correctas / A y B son correctas» solo cuando el texto lo justifique de verdad.
 - Los distractores deben ser **verosímiles** y **claramente falsos según el texto**; nunca ambiguos ni con dos respuestas defendibles.
 
-## Nivel
-- Todas **fácil-media**: dato literal y relevante, con distractores cercanos (plazo/órgano/mayoría cambiados). Nada de preguntas «difíciles» por rebuscadas.
+## Preguntas IA antiguas del tema
+Si las preguntas IA que ya había en el tema son **muy sencillas, están mal redactadas, preguntan números de artículo o la correcta es casi siempre la más larga**, se **eliminan todas** y se rehacen con este prompt (5 por página). Al borrarlas del HTML, añade la purga de `localStorage` para que desaparezcan también del móvil (bloque `purga IA tema N` tras su bloque semilla).
 
 ## Reglas de calidad (obligatorias)
 1. **Antes de escribir**, extrae las preguntas ya existentes del tema (`node prompts/herramientas/extraer-preguntas.js test-oficial-conocimiento.html N <scratchpad>/tN.json`) y **no repitas ni parafrasees** ninguna. Prioriza los artículos y datos que **todavía no tienen pregunta**.
@@ -96,19 +102,21 @@ Cada pregunta es un objeto:
  "explicacion":"<span class=\"ex-resp\">Respuesta correcta: <b>A</b> · <mark class=\"ex-key\">texto de la opción correcta</mark></span>El <span class=\"ref-norma\">art. X.Y del <norma></span> dispone: <span class=\"ref-concepto\">\"cita literal\"</span>. Por qué fallan las otras: …",
  "apartado":"<mismo nombre de apartado que ya usan las preguntas de esa norma en el tema>"}
 ```
-- El **enunciado empieza siempre con la norma y el artículo** («Reglamento (UE) 2016/399, art. 25 bis.4. …»): así el esquema posterior las agrupa por artículo.
+- **Corrección SIEMPRE con este formato (lo pidió el usuario, 10/10/2026), en IA y en oficiales:** respuesta correcta resaltada → artículo en morado (`ref-norma`) → **texto literal del articulado en rojo** (`ref-concepto`, copiado del temario oficial) → explicación propia de la IA en texto normal («Por qué fallan las otras: …»). Si al revisar un tema ves preguntas (oficiales o IA) cuya corrección no lleva la cita literal en rojo, **complétala con la cita del temario oficial** (con `fix.js`); si el dato no está en el temario oficial (p. ej. historia general), déjala y avísame.
+- El **enunciado empieza con la norma y la rúbrica del artículo**, como las oficiales (ver «Estilo obligatorio»).
 - `id`: continuar la numeración `N-ia-` desde el número más alto que ya exista en el tema.
 - `apartado`: reutilizar exactamente el nombre que ya tengan las preguntas de esa norma; si es una norma nueva, uno claro con número y título corto.
 
 ## Inserción en la app
 - Añadirlas como **bloque semilla de preguntas IA**, copiando la estructura de los bloques existentes:
-  `(function(){const seed=[...];state.preguntasIA=state.preguntasIA||{};state.preguntasIA[N]=state.preguntasIA[N]||[];const ya=new Set(state.preguntasIA[N].map(q=>q.id));let add=0;seed.forEach(q=>{if(!ya.has(q.id)){state.preguntasIA[N].push(q);add++}});add>0&&saveState()})();`
+  `(function(){const seed=[...];syncSeedIA(N,seed)})();` (plantilla: `prompts/herramientas/preguntas-t1-bloque1.js`)
   colocado junto a los demás bloques semilla. **No** tocar el banco oficial.
 - Comprobar: JSON válido, ids nuevos sin duplicados (50 por bloque de 10 páginas), sintaxis de todos los `<script>` correcta (`new Function` con Node).
 - **Commit y push** a `origin/main` sin esperar a que lo pida (mensaje tipo «Tema N: 50 preguntas IA nuevas (págs. X-Y; <norma>)»).
 
 ## Después de las preguntas: el esquema del tema (obligatorio)
 Cuando las preguntas estén insertadas, comprobadas y subidas, **haz sin que te lo pida el esquema del tema N** en `esquemas.html` siguiendo al pie de la letra `prompts/PROMPT_ESQUEMA_DESDE_PREGUNTAS.md` (se basa en TODAS las preguntas del tema, oficiales + IA, y en el texto legal que te he dado).
+- **El esquema se basa al 100 % en MI PDF subrayado, sin fotos (pauta del usuario, 10/10/2026):** hay temarios de 100, 200 o 300 páginas y no se pueden mandar fotos. Lee directamente el PDF escaneado (colores con `subrayado-pdf.py` y, para las marcas a bolígrafo, cada página renderizada como imagen con PyMuPDF), compáralo con el texto del temario oficial y reproduce en el esquema **todo** lo que tengo: los colores del fosforito y **también los cuadrados, círculos, flechas, asteriscos y subrayados a lápiz/bolígrafo**, en las mismas palabras. El texto sigue siendo el del oficial; de mi PDF solo se copian colores y marcas.
 - **Si te di MI temario subrayado: recrea mi subrayado** (en vez del subrayado automático por categorías), con las herramientas que ya usamos en los temas 1, 12 y 13:
   1. Lee el subrayado del PDF escaneado: `py prompts/herramientas/subrayado-pdf.py "<pdf subrayado>" <scratchpad>/subrayado.json` (pasa solo las páginas del tema si el PDF trae varios).
   2. Primero construye el esquema con el **texto literal del temario OFICIAL** (fichas por artículo, sin colorear aún lo que no se pueda emparejar).
