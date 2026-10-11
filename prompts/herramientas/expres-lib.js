@@ -64,8 +64,59 @@ module.exports = function (T) {
   const preguntasDe = (k0, k1) => Object.entries(MAPA).filter(([id, p]) => { const [t, k] = p.split('-'); return +t === T && +k >= k0 && +k <= k1; }).map(([id]) => id);
 
   // Escribe el exprés del tema en esquemas.html (<script id="expres-datos">) y devuelve la cobertura
+  // ---------- Subrayado de los esquemas = el MISMO que el usuario tiene en el esquema completo ----------
+  // Diccionario expresión → color sacado de las marcas de todas las fichas del tema; se aplica al texto de los
+  // esquemas visuales (no a las fichas literales, que ya llevan su subrayado original).
+  const COLORES = ['m-destacable', 'm-personalizado', 'm-autoridad', 'm-accion', 'm-plazo'];
+  const limpia = t => t.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+  const VACIAS = new Set('por de la el los las del al y e o u en que se a un una con su sus lo es le les como para sin más este esta estos estas ese esa otro otra otros otras sobre entre cada todo toda todos todas así'.split(' '));
+  const dicc = (() => {
+    const cuenta = {}; const suma = (frase, cls) => { const k = frase.toLowerCase(); if (!k || k.length < 2 || (cls !== 'm-clave' && k.split(/\s+/).every(w => VACIAS.has(w))) || (cls === 'm-clave' && k.split(/\s+/).every(w => VACIAS.has(w)) && !/^(no|ni|sin|solo|sólo)$/.test(k)) || /^[\W\d]+$/.test(k) && cls !== 'm-plazo') return; (cuenta[k] = cuenta[k] || {})[cls] = (cuenta[k][cls] || 0) + 1; };
+    fichas.forEach(f => f.ps.forEach(p => {
+      for (const m of p.h.matchAll(/<mark class="(m-[a-z]+)">((?:(?!<\/?mark)[\s\S])*?)<\/mark>/g)) if (COLORES.includes(m[1])) suma(limpia(m[2]).replace(/^[,.;:(…)\s]+|[,.;:(…)\s]+$/g, ''), m[1]);
+      for (const m of p.h.matchAll(/<u class="m-clave">([\s\S]*?)<\/u>/g)) suma(limpia(m[1]).replace(/^[,.;:\s]+|[,.;:\s]+$/g, ''), 'm-clave');
+    }));
+    const marcas = [], claves = [];
+    Object.entries(cuenta).forEach(([k, c]) => { const cls = Object.entries(c).sort((a, b) => b[1] - a[1])[0][0]; (cls === 'm-clave' ? claves : marcas).push([k, cls]); });
+    const rx = l => l.length ? new RegExp('(?<![\\p{L}\\p{N}])(' + l.sort((a, b) => b[0].length - a[0].length).map(([k]) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+')).join('|') + ')(?![\\p{L}\\p{N}])', 'giu') : null;
+    return { marcas: rx(marcas), claves: rx(claves), cls: Object.fromEntries(marcas), ncls: marcas.length + claves.length };
+  })();
+  // Recorre el HTML y aplica fn() solo al texto «libre» (fuera de marcas, títulos, cabeceras y <b>)
+  function sobreTexto(html, fn, saltaMarcas) {
+    const pila = []; let out = '';
+    for (const tok of html.split(/(<[^>]+>)/)) {
+      if (!tok) continue;
+      if (tok[0] === '<') {
+        const cierre = /^<\//.test(tok), auto = /\/>$|^<br/i.test(tok);
+        if (cierre) pila.pop(); else if (!auto) pila.push(tok);
+        out += tok; continue;
+      }
+      const bloqueado = pila.some(t => /^<(b|h5|small)\b/i.test(t) || /class="(vis-t|ex-th|ex-fh|ex-sello)/.test(t) || /^<mark class="m-resp/.test(t) || /^<u\b/.test(t) || (saltaMarcas && /^<mark/.test(t)));
+      out += bloqueado ? tok : fn(tok);
+    }
+    return out;
+  }
+  function subraya(html) {
+    // 1) fuera los colores puestos a mano / por reglas en los esquemas (se conservan respuestas, plazos y claves puestos a propósito)
+    html = html.replace(/<mark class="m-(destacable|personalizado|autoridad|accion)">((?:(?!<\/?mark)[\s\S])*?)<\/mark>/g, '$2');
+    // 2) colores del esquema del usuario
+    if (dicc.marcas) html = sobreTexto(html, t => t.replace(dicc.marcas, w => `<mark class="${dicc.cls[w.toLowerCase().replace(/\s+/g, ' ')] || 'm-personalizado'}">${w}</mark>`), true);
+    if (dicc.claves) html = sobreTexto(html, t => t.replace(dicc.claves, w => `<u class="m-clave">${w}</u>`), false);
+    return html;
+  }
+  // Aplica subraya() a todo menos a las fichas literales
+  const subrayaEsquemas = html => html.split(/(<div class="ex-ficha[\s\S]*?<div class="ex-fb">[\s\S]*?<\/div><\/div>)/).map((part, i) => i % 2 ? part : subraya(part)).join('');
+  // % de caracteres subrayados (como densidad.js) del texto de los esquemas
+  function densidad(html) {
+    let col = 0, tot = 0;
+    sobreTexto(html.replace(/<div class="ex-ficha[\s\S]*?<div class="ex-fb">[\s\S]*?<\/div><\/div>/g, ''), t => { tot += t.trim().length; return t; }, true);
+    for (const m of html.replace(/<div class="ex-ficha[\s\S]*?<div class="ex-fb">[\s\S]*?<\/div><\/div>/g, '').matchAll(/<(mark|u)\b[^>]*>((?:(?!<\/?(?:mark|u)\b)[\s\S])*?)<\/\1>/g)) col += limpia(m[2]).length;
+    return Math.round(100 * col / Math.max(1, col + tot));
+  }
+
   function publica(htmlExpres, bloques) {
-    htmlExpres = restaura(htmlExpres);
+    htmlExpres = restaura(subrayaEsquemas(htmlExpres));
+    console.log(`Subrayado de los esquemas copiado del tuyo: ${dicc.ncls} expresiones · ≈${densidad(htmlExpres)} % del texto de los esquemas coloreado`);
     const cob = bloques.map(b => { const ids = preguntasDe(b.k0, b.k1); const ok = ids.filter(i => usados.has(i));
       const peso = a => a.reduce((s, i) => s + (esIA(i) ? 1 : 3), 0);
       return { nombre: b.nombre, total: ids.length, ok: ok.length, pct: Math.round(100 * peso(ok) / Math.max(1, peso(ids))), faltan: ids.filter(i => !usados.has(i)) }; });
