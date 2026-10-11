@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v66";
+const CACHE_NAME = "oposicion-cache-v67";
 const APP_SHELL = [
   "./test-oficial-conocimiento.html",
   "./test-oficial-ingles.html",
