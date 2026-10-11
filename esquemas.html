@@ -271,7 +271,7 @@ body.voz-abierta .voz-bar{display:flex}
   <div class="topbar">
     <div style="display:flex;align-items:center;gap:12px"><button class="btn-pdf btn-menu-temas" id="btn-menu-temas" type="button" title="Mostrar u ocultar la lista de temas">☰ Temas</button><button class="btn-pdf" id="btn-menu-acc" type="button" title="Todos los botones: vista, resumen, marcas, voz, PDF, sincronización, avisos, guía y modo claro/oscuro">⋯ Menú</button><h1>📚 Esquemas de Estudio</h1></div>
     <div id="barra-acciones" style="display:flex;align-items:center;gap:10px">
-      <span class="vista-of" id="vista-of" title="Todo: preguntas oficiales y de IA. Solo oficiales: únicamente lo que ha salido en exámenes de la academia (esquema mucho más corto)"><button type="button" data-v="todo" class="on">📚 Todo</button><button type="button" data-v="of">⭐ Solo oficiales</button></span>
+      <span class="vista-of" id="vista-of" title="Todo: preguntas oficiales y de IA. Solo oficiales: únicamente lo que ha salido en exámenes de la academia (esquema mucho más corto)"><button type="button" data-v="todo" class="on">📚 Todo</button><button type="button" data-v="of">⭐ Solo oficiales</button><button type="button" data-v="ex" title="Exprés: solo las frases con la respuesta de las preguntas, ordenadas por importancia (~17 págs/tema, para estudiar en 1 hora)">⚡ Exprés</button></span>
       <button class="btn-pdf" id="btn-resumen" type="button" title="Mostrar solo los artículos que has marcado con R (resumen)">R Resumen</button>
       <button class="btn-pdf" id="btn-marcas" type="button" title="Mostrar u ocultar las herramientas de marcas">🖍 Marcas</button>
       <button class="btn-pdf" id="btn-voz-menu" type="button" title="Leer el esquema en voz alta">🔊 Voz</button>
@@ -4577,6 +4577,126 @@ body.solo-of .resp-strip{display:none}
   btns.forEach(b=>b.addEventListener('click',()=>poner(b.dataset.v,true)));
   let v='todo'; try{v=localStorage.getItem(KEY)||'todo';}catch(e){}
   if(v==='of') window.addEventListener('load',()=>setTimeout(()=>poner('of',false),0));
+})();
+</script>
+<style id="expres-style">
+.ex-clone,.ex-bar{display:none}
+body.expres .ex-bar{display:flex}
+body.expres .txt p.ex-orig{display:none!important}
+body.expres .esquema.ex-listo .articulo:not([data-ex-todo]) .txt p:not(.ex-clone){display:none!important}
+body.expres .esquema.ex-listo .resp-strip,body.expres .esquema.ex-listo .vis{display:none!important}
+body.expres .txt p.ex-clone{display:block}
+body.expres .esquema.ex-listo .articulo.sin-ex,body.expres .esquema.ex-listo .bloque-titulo.sin-ex,body.expres .esquema.ex-listo .trampa.sin-ex,body.expres .esquema.ex-listo .vis.sin-ex{display:none!important}
+body.expres .ex-seg.nivB{display:none}
+body.expres.ex-anexo .ex-seg.nivB{display:inline;opacity:.72;border-bottom:2px dotted var(--dorado,#c9962c)}
+body.expres:not(.ex-anexo) .ex-gap.soloB{display:none}
+.ex-gap{color:var(--texto-gris,#767a70);font-weight:700}
+.ex-bar{flex-wrap:wrap;gap:6px 14px;align-items:center;margin:10px 0 14px;padding:10px 14px;border-radius:12px;border:1.5px solid var(--dorado,#c9962c);background:var(--card,#fff);font-size:13px;font-weight:600}
+.ex-bar label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.ex-bar .ex-n{color:var(--verde-med,#2f6b52);font-weight:800}
+@media print{.ex-bar input,.ex-bar label{display:none}}
+</style>
+<script id="script-expres">
+/* Modo Exprés: muestra solo las frases donde está la respuesta de las preguntas (mapa pregunta→esquema), por orden de importancia
+   hasta ~17 págs A4 (nivel A). Nivel B (+5 págs) = anexo activable. Lo demás sigue en el esquema completo. */
+(function(){
+  const PAG=3000, PAG_A=17, PAG_B=5, CTX=220;
+  const esIA=id=>/-ia-/.test(id), pesoId=id=>esIA(id)?1:3;
+  const btn=document.querySelector('#vista-of button[data-v="ex"]'); if(!btn) return;
+  const lim=(i,a,b)=>Math.max(a,Math.min(b,i));
+  function textoPlano(p){ // nodos de texto del párrafo, sin botones ni sellos
+    const nodos=[],tw=document.createTreeWalker(p,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement&&n.parentElement.closest('.btn-res,.ex-p')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+    let n,pos=0; while((n=tw.nextNode())){ nodos.push({n,ini:pos}); pos+=n.data.length; }
+    return {nodos,len:pos,txt:nodos.map(o=>o.n.data).join('')};
+  }
+  function offset(P,node,off){ const o=P.nodos.find(x=>x.n===node); return o?o.ini+off:null; }
+  function punto(P,nodeIdx,at){ const o=P.nodos[nodeIdx]; return o?{node:o.n,off:at-o.ini}:null; }
+  function loc(P,at){ // posición global -> {node,off}
+    for(let i=P.nodos.length-1;i>=0;i--) if(at>=P.nodos[i].ini) return {node:P.nodos[i].n,off:Math.min(P.nodos[i].n.data.length,at-P.nodos[i].ini)};
+    return null;
+  }
+  function ventana(P,a,b){ // amplía a límites de frase (. ; :) con tope de contexto
+    const t=P.txt; let s=a,e=b;
+    for(let i=a-1;i>=Math.max(0,a-CTX);i--){ if(/[.;:]/.test(t[i])&&/\s/.test(t[i+1]||' ')){ s=i+2; break; } s=i; }
+    if(a-s>=CTX){ const sp=t.indexOf(' ',s); if(sp>=0&&sp<a) s=sp+1; }
+    for(let i=b;i<Math.min(t.length,b+CTX);i++){ e=i+1; if(/[.;]/.test(t[i])&&/\s|^$/.test(t[i+1]||' ')) break; }
+    if(e-b>=CTX){ const sp=t.lastIndexOf(' ',e); if(sp>b) e=sp; }
+    s=lim(s,0,a); e=lim(e,b,t.length); if(t.length-e<=25) e=t.length; if(s<=25) s=0;
+    return [s,e];
+  }
+  function construir(esq){
+    if(esq.dataset.exHecho) return; esq.dataset.exHecho='1';
+    const segs=[]; const sinP=new Set(); let totalPesoIds={};
+    esq.querySelectorAll('.articulo').forEach(art=>{
+      const ps=[...art.querySelectorAll('.txt p')]; if(!ps.length){ art.dataset.exTodo='1'; return; }
+      ps.forEach(p=>{
+        const P=textoPlano(p); if(!P.len) return;
+        const marks=[...p.querySelectorAll('mark.m-resp')]; const ini=[];
+        marks.forEach(m=>{
+          const tw=document.createTreeWalker(m,NodeFilter.SHOW_TEXT); let a=null,b=null,n;
+          while((n=tw.nextNode())){ const o=P.nodos.find(x=>x.n===n); if(!o) continue; if(a===null) a=o.ini; b=o.ini+n.data.length; }
+          if(a===null) return;
+          const ids=(m.dataset.q||'').split(',').filter(Boolean);
+          ids.forEach(id=>totalPesoIds[id]=pesoId(id));
+          ini.push({a,b,ids,w:ids.length?ids.reduce((s,i)=>s+pesoId(i),0):0.3});
+        });
+        let ws=[];
+        if(P.len<=260&&marks.length) ws=[{s:0,e:P.len,ids:[...new Set(ini.flatMap(x=>x.ids))],w:ini.reduce((s,x)=>s+x.w,0)}];
+        else ini.forEach(x=>{ const [s,e]=ventana(P,x.a,x.b); ws.push({s,e,ids:x.ids.slice(),w:x.w}); });
+        if(!marks.length&&(p.dataset.ex||p.querySelector(':scope > .ex-p'))) ws=[{s:0,e:Math.min(P.len,600),ids:[],w:2}];
+        ws.sort((x,y)=>x.s-y.s); const fus=[];
+        ws.forEach(x=>{ const l=fus[fus.length-1]; if(l&&x.s<=l.e+15){ l.e=Math.max(l.e,x.e); l.w+=x.w; l.ids.push(...x.ids);} else fus.push(x); });
+        fus.forEach(x=>{ x.p=p; x.P=P; x.art=art; x.len=x.e-x.s; x.ids=[...new Set(x.ids)]; segs.push(x); });
+      });
+    });
+    const orden=segs.slice().sort((x,y)=>y.w/Math.max(80,y.len)-x.w/Math.max(80,x.len));
+    // el tope de págs cuenta TODO lo visible: frases + cabeceras + trampas + «Recuerda» (se resta ese gasto fijo)
+    const fijoRecuerda=[...esq.querySelectorAll('.recuerda')].reduce((a,x)=>a+x.textContent.length,0);
+    const gasto=(f)=>{ const fa=new Set(); let t=fijoRecuerda; segs.forEach(s=>{ if(s.nivel&&(!f||f(s))&&!fa.has(s.art)){ fa.add(s.art); t+=s.art.querySelector('.articulo-head').textContent.length+30; let n=s.art.nextElementSibling; while(n&&!n.classList.contains('articulo')&&!n.classList.contains('bloque-titulo')){ if(n.classList.contains('trampa')) t+=n.textContent.length; n=n.nextElementSibling; } } }); return t; };
+    let fijo=0;
+    for(let it=0;it<4;it++){
+      let acc=0; const tA=Math.max(PAG*5,PAG*PAG_A-fijo), tB=Math.max(PAG*6,PAG*(PAG_A+PAG_B)-fijo);
+      orden.forEach(s=>{ if(s.w<=0){ s.nivel=null; return; } if(acc<tA){ s.nivel='A'; acc+=s.len; } else if(acc<tB){ s.nivel='B'; acc+=s.len; } else s.nivel=null; });
+      fijo=gasto();
+    }
+    // clones por párrafo
+    const porP=new Map(); segs.forEach(s=>{ if(!s.nivel) return; if(!porP.has(s.p)) porP.set(s.p,[]); porP.get(s.p).push(s); });
+    let lenA=0,lenAB=0; const cubA=new Set(),cubAB=new Set();
+    porP.forEach((lista,p)=>{
+      lista.sort((x,y)=>x.s-y.s);
+      const c=document.createElement(p.tagName); c.className=p.className.replace(/\bex-orig\b/,'')+' ex-clone'; if(p.getAttribute('style')) c.setAttribute('style',p.getAttribute('style'));
+      let previo=0;
+      lista.forEach((s,i)=>{
+        const gap=document.createElement('span'); gap.className='ex-gap'+(s.nivel==='B'&&(i===0||lista[i-1].nivel==='B')?' soloB':''); gap.textContent=(s.s>0&&(i===0||s.s>previo)?'… ':' '); if(s.s>0||i>0) c.appendChild(gap);
+        const r=document.createRange(); const a=loc(s.P,s.s),b=loc(s.P,s.e); if(!a||!b) return; r.setStart(a.node,a.off); r.setEnd(b.node,b.off);
+        const sp=document.createElement('span'); sp.className='ex-seg niv'+s.nivel; sp.appendChild(r.cloneContents());
+        sp.querySelectorAll('.btn-res,.ex-p').forEach(x=>x.remove()); c.appendChild(sp); previo=s.e;
+        if(s.e<s.P.len&&i===lista.length-1){ const g2=document.createElement('span'); g2.className='ex-gap'+(s.nivel==='B'?' soloB':''); g2.textContent=' …'; c.appendChild(g2); }
+        lenAB+=s.len; s.ids.forEach(id=>cubAB.add(id)); if(s.nivel==='A'){ lenA+=s.len; s.ids.forEach(id=>cubA.add(id)); }
+      });
+      p.classList.add('ex-orig'); p.parentNode.insertBefore(c,p.nextSibling);
+    });
+    // fichas: visibles si tienen algún segmento (o no tienen <p>)
+    const visibles=new Set(); porP.forEach((l,p)=>visibles.add(p.closest('.articulo')));
+    esq.querySelectorAll('.articulo').forEach(a=>{ if(!visibles.has(a)&&!a.dataset.exTodo) a.classList.add('sin-ex'); });
+    esq.querySelectorAll('.bloque-titulo').forEach(b=>{ let n=b.nextElementSibling,v=false; while(n&&!n.classList.contains('bloque-titulo')){ if(n.classList.contains('articulo')&&!n.classList.contains('sin-ex')){v=true;break;} n=n.nextElementSibling; } if(!v) b.classList.add('sin-ex'); });
+    esq.querySelectorAll('.trampa,.vis').forEach(t=>{ let a=t.previousElementSibling; while(a&&!a.classList.contains('articulo')&&!a.classList.contains('bloque-titulo')) a=a.previousElementSibling; if(!(a&&a.classList.contains('articulo')&&!a.classList.contains('sin-ex'))) t.classList.add('sin-ex'); });
+    const tot=Object.values(totalPesoIds).reduce((s,x)=>s+x,0)||1, pes=set=>[...set].reduce((s,id)=>s+pesoId(id),0);
+    const bar=document.createElement('div'); bar.className='ex-bar';
+    const pagA=((lenA+gasto(s=>s.nivel==='A'))/PAG).toFixed(1), pagAB=((lenAB+gasto())/PAG).toFixed(1);
+    bar.innerHTML='<span>⚡ <b>Exprés</b>: <span class="ex-n">~'+pagA+' págs</span> · responde el <span class="ex-n">'+Math.round(100*pes(cubA)/tot)+' %</span> de las preguntas (oficiales pesan ×3)</span>'
+      +'<label><input type="checkbox" class="ex-anx"> ＋ Anexo: hasta ~'+pagAB+' págs · '+Math.round(100*pes(cubAB)/tot)+' %</label>'
+      +'<span style="color:var(--texto-gris,#767a70);font-weight:500">El resto está en el esquema completo (botón 📚 Todo).</span>';
+    bar.querySelector('.ex-anx').addEventListener('change',e=>document.body.classList.toggle('ex-anexo',e.target.checked));
+    const cab=esq.querySelector('.esquema-head'); (cab?cab.nextSibling:esq.firstChild)&&esq.insertBefore(bar,cab?cab.nextSibling:esq.firstChild);
+    esq.classList.add('ex-listo');
+    window.EXPRES_STATS=window.EXPRES_STATS||{}; window.EXPRES_STATS[esq.id]={pagA:+pagA,pagAB:+pagAB,cobA:Math.round(100*pes(cubA)/tot),cobAB:Math.round(100*pes(cubAB)/tot),segs:segs.length};
+  }
+  function activo(){ const e=document.querySelector('.esquema.active'); if(e) construir(e); }
+  function poner(on){ document.body.classList.toggle('expres',on); if(on) activo(); }
+  document.querySelectorAll('#vista-of button').forEach(b=>b.addEventListener('click',()=>poner(b.dataset.v==='ex')));
+  const mAnt=window.mostrar; if(typeof mAnt==='function') window.mostrar=function(id){ const r=mAnt.apply(this,arguments); if(document.body.classList.contains('expres')) activo(); return r; };
+  window.expresActivar=poner;
 })();
 </script>
 <style id="cat-style">
