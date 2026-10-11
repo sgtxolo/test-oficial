@@ -131,5 +131,5 @@ module.exports = function (T) {
     const chars = htmlExpres.replace(/<[^>]+>/g, '').replace(/&[a-z]+;/g, ' ').length;
     console.log(`Texto del exprés: ${chars} caracteres ≈ ${(chars / 3000).toFixed(1)} págs A4`);
   }
-  return { ...VL, Rq, literal, parrafo, cuadro, datos, ex, bloque, trampa, publica, fichas };
+  return { ...VL, final: h => restaura(subraya(h)), Rq, literal, parrafo, cuadro, datos, ex, bloque, trampa, publica, fichas };
 };

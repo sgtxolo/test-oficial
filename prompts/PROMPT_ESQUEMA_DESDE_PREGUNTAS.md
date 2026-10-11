@@ -38,9 +38,26 @@ El esquema se basa **ÚNICAMENTE en lo que preguntan los tests del Tema N** de l
    - Poco amarillo: cada palabra con su color por categoría (verbos → morado, órganos → verde, cifras y plazos → azul, conceptos y sustantivos → naranja); el amarillo solo para matices.
    - Tras redactar, pasar el densificador, **medir con `densidad.js`** y **revisar visualmente**:
      `node prompts/herramientas/densify.js esquemas.html N` (solo colorea texto que aún esté en plano; añadir a sus listas los términos propios del tema si hace falta).
+5 bis. **ESQUEMAS VISUALES OBLIGATORIOS debajo de los artículos (pauta del usuario, 11/10/2026: «no me hagas solo texto, texto y texto»).** El texto literal se queda SIEMPRE; debajo de cada ficha que tenga alguno de estos contenidos va su esquema (con `visuales-lib.js` / `expres-lib.js`):
+   | Si el artículo tiene… | Esquema |
+   |---|---|
+   | Lista (requisitos, supuestos, sectores, a) b) c)…) | `arbol`: caja central + ramas |
+   | Órganos / competencias (quién propone, quién decide, quién instruye) | `cuadro`: tabla de competencias |
+   | Plazos o cifras | `cuadro` / `plazos`: tabla de plazos |
+   | Procedimiento o pasos | `flujo` con flechas |
+   | Dos cosas parecidas (residentes/no residentes, previsible/imprevisible) | `cols` comparativas («espejo») |
+   | Clasificaciones (muy graves / graves / leves) | `cols` |
+   - Cada caja lleva la **idea completa** (no frases cortadas) y el texto sale del articulado verificado.
+   - **Colores = los del esquema completo del usuario**: no se colorea a mano; `expres-lib.js` copia el subrayado de las fichas del tema (cada expresión con el color que el usuario le dio). Las respuestas con `Rq(texto, [ids])` → enlazadas a sus preguntas.
+   - Comprobar con `node prompts/herramientas/sin-esquema.js N` que **no queda ninguna ficha de esos tipos sin esquema**.
+5 ter. **ESQUEMA ⚡ EXPRÉS del tema (obligatorio, a la vez que el esquema completo).** Resumen de 1 hora para los dos últimos meses: **17-20 págs A4** (3-4 min/pág).
+   - Script `prompts/herramientas/expres-tN.js` (plantilla: `expres-t2.js`), con `expres-lib.js`: mezcla **fichas literales** (`literal(k,[párrafos])`, párrafos ENTEROS con su subrayado; para lo EX y lo más preguntado) + **esquemas visuales** (los de 5 bis) + trampas. **Prohibido recortar frases con «…»** (el usuario lo rechazó).
+   - Cada esquema del Exprés se registra con `pon('cabecera de la ficha', esquema)` y **se adjunta también debajo de esa ficha en el esquema normal**: `visuales-tN.js` hace `require('./expres-tN.js').visuales().forEach(([c, h]) => v(c, h))` (mismo esquema en los dos sitios, sin duplicar trabajo).
+   - Ejecutar `node prompts/herramientas/expres-tN.js` (escribe el Exprés y da cobertura y págs) y `node prompts/herramientas/visuales-tN.js` (adjunta los esquemas al esquema normal). Objetivo: **≥ 90 % de las preguntas del tema enlazadas en el Exprés** dentro de 17-20 págs; si se pasa, más esquemas y menos literal; si sobra, más literal.
+   - Se ve con el botón **⚡ Exprés** (⋯ Menú). La barra dorada muestra págs, minutos y preguntas enlazadas por bloque.
 6. **Corregir las preguntas que contradigan el temario**, a la vez que se hace el esquema: respuesta mal marcada, cifra de una versión antigua, ninguna opción correcta… Verificar **siempre en el PDF** y corregir en `test-oficial-conocimiento.html` (`correcta`, texto de la opción si hace falta y `explicacion` citando el artículo literal) con la plantilla `prompts/herramientas/fix.js`. Si algo no se puede verificar en el PDF, no tocarlo y avisarme. **Esto vale también para las preguntas OFICIALES: el temario es el que manda, así que se corrigen si lo contradicen; pero Si una pregunta (oficial o IA) es dudosa de verdad o está corrupta de verdad y no se puede dejar bien con seguridad contra el temario oficial, se ELIMINA (autorizado el 06/10/2026) con `borrar-preguntas.js` y se me avisa de cuáles y por qué; lo que se pueda arreglar (respuesta mal marcada, cifra antigua) se corrige.**
 7. **Comprobaciones**: balance `<mark>`/`</mark>` y `<u>`/`</u>`; sintaxis de los `<script>` (`new Function` con Node); abrir `esquemas.html` en el navegador, tema N, sin errores de consola, captura de pantalla; móvil incluido.
 7 bis. **Regenerar el mapa pregunta ↔ esquema y la cobertura** (enlaza cada respuesta marcada con sus preguntas: dorado = oficial, rojo = IA, EX en el párrafo exacto, colores por artículo y botón «📘 Ver en el esquema» del test):
    `node prompts/herramientas/mapa-preguntas.js` y `node prompts/herramientas/cobertura.js` (añadir antes el PDF de texto del tema a su lista PDFS) (con `--ver N` lista las asignaciones del tema N para revisarlas). Repetirlo también cuando se añadan o corrijan preguntas.
 8. **Commit y push** a `origin/main` de cada cambio (esquema y preguntas por separado), sin esperar a que lo pida.
-9. **Informe final corto**: nº de preguntas usadas, normas cubiertas, preguntas corregidas (id → cambio y artículo), normas fuera del temario, cosas no verificables y estimación de páginas/tiempo de estudio.
+9. **Informe final corto**: Exprés (págs, minutos, % de preguntas enlazadas por bloque), nº de esquemas visuales añadidos y salida de `sin-esquema.js`, nº de preguntas usadas, normas cubiertas, preguntas corregidas (id → cambio y artículo), normas fuera del temario, cosas no verificables y estimación de páginas/tiempo de estudio.

@@ -7,40 +7,8 @@ const L = require('./visuales-lib.js');
 const { R, P, D, Y, K, arbol, flujo, cols, plazos } = L;
 const V = []; const v = (despues, html) => V.push([despues, html]);
 
-// ---------- 2.1 LEY 19/2003 ----------
-v('Artículo 2 — Definiciones de residencia', cols('Residentes / No residentes (art. 2 · cuadro del temario)',
-  [{ t: 'RESIDENTES', l: [
-      'Personas físicas que residan habitualmente en España (salvo lo dispuesto para «No residentes», letra b)',
-      `${R('Diplomáticos ESPAÑOLES acreditados en el extranjero')} y personal español de embajadas, consulados y organizaciones internacionales en el extranjero`,
-      `${R('Sucursales y establecimientos permanentes en territorio ESPAÑOL')} de personas físicas o jurídicas residentes en el extranjero`,
-      `${R('Personas jurídicas con domicilio social en España')}`,
-      'Otros que se determinen reglamentariamente en casos análogos'] },
-   { t: 'NO RESIDENTES', l: [
-      'Personas físicas que tengan su residencia habitual en territorio extranjero (salvo lo dispuesto para «Residentes», letra b)',
-      `${R('Diplomáticos EXTRANJEROS acreditados ante el Gobierno español')} y personal extranjero de embajadas, consulados y organizaciones internacionales en España`,
-      `${R('Sucursales y establecimientos permanentes en el EXTRANJERO')} de personas físicas o jurídicas residentes en España`,
-      `${R('Personas jurídicas con domicilio social en el extranjero')}`,
-      'Otros que se determinen reglamentariamente en casos análogos'] }],
-  `${K('espejo')}`));
-
-v('Artículos 9 y 10 — Sanciones y graduación', cols('Infracciones y sanciones de la Ley 19/2003 (arts. 8 y 9 · M-G-L del temario)',
-  [{ t: 'MUY GRAVES (art. 8.2)', l: [
-      `Actos prohibidos por medidas de los arts. 4 y 5 · operaciones ${K('sin solicitar autorización')} cuando sea preceptiva (arts. 6, 7 y 7 bis), antes de concederla o incumpliendo sus condiciones · falta de veracidad en solicitudes de autorización ${R('si es especialmente relevante')}`,
-      `Multa hasta ${P('el tanto')} del contenido económico de la operación, ${P('no inferior a 30.000 €')}`,
-      'Amonestación pública o privada (simultánea)'] },
-   { t: 'GRAVES (art. 8.3)', l: [
-      `${R('Falta de declaración')} de operaciones que ${P('superen 6.000.000 €')} · falta de veracidad, omisión o inexactitud en sus datos · incumplimiento de requerimientos expresos y por escrito`,
-      `Multa hasta ${P('la mitad')} del contenido económico, ${P('no inferior a 6.000 €')}`,
-      'Amonestación pública o privada (simultánea)'] },
-   { t: 'LEVES (art. 8.4)', l: [
-      `Declaraciones ${R('fuera de los plazos')} reglamentarios · operaciones que ${K('no superen')} ${P('6.000.000 €')} (falta de declaración o datos inexactos)`,
-      `Multa hasta ${P('un cuarto')} del contenido económico, ${P('no inferior a 3.000 €')}`,
-      `${K('Amonestación privada')}`,
-      `Declaración fuera de plazo sin requerimiento previo: ${P('≤ 6 meses: 150-300 €')} · ${P('> 6 meses: 300-600 €')}`] }]));
-
-v('Artículos 11 y 12 — Prescripción', cols('Prescripción (art. 11 · cuadros del temario)',
-  [{ t: 'INFRACCIONES', l: [`${P('MUY GRAVES: 5 años')}`, `${P('GRAVES: 3 años')}`, `${P('LEVES: 1 año')}`, 'El plazo se cuenta desde la fecha en que se cometió la infracción'] },
-   { t: 'SANCIONES (resolución firme)', l: [`${P('MUY GRAVES: 5 años')}`, `${P('GRAVES: 4 años')}`, `${P('LEVES: 3 años')}`] }]));
+// ---------- 2.1 LEY 19/2003: esquemas generados por expres-t2.js (los mismos del ⚡ Exprés, con tu subrayado y enlazados a las preguntas) ----------
+require('./expres-t2.js').visuales().forEach(([cab, html]) => v(cab, html));
 
 // ---------- 2.2 CONVENIO DE VARSOVIA ----------
 v('Artículos 5, 6 y 7 — Provocación pública', arbol('Arts. 5, 6 y 7: los tres delitos del Convenio (cuadro del temario)', `Cada Parte ${D('adoptará medidas')} para ${D('tipificar como delito')}, conforme a su derecho interno, cuando se cometa ${R('ilegal e intencionadamente')}`, [
