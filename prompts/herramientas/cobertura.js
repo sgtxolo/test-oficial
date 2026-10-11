@@ -4,7 +4,7 @@
 // Uso (desde la carpeta del proyecto): node prompts/herramientas/cobertura.js
 // Al hacer un tema nuevo, añadir su PDF de TEXTO (no escaneado) a PDFS y volver a ejecutarlo.
 const fs = require('fs'), { execFileSync } = require('child_process'), os = require('os'), path = require('path');
-const BASE = 'C:/Users/ruben/OneDrive/Desktop/OFICIAL 2026-27/ACTUALIZACIONES/TEMARIO COMPLETO PDF 2026/';
+const BASE = 'C:/Users/ruben/Desktop/OFICIAL 2026-27/ACTUALIZACIONES/TEMARIO COMPLETO PDF 2026/';
 const PDFS = {
   1: ['TEMA 1/2025-09-09-TEMA 1 COMPLETO.pdf'],
   2: ['TEMA 2/2025-09-09-TEMA 2 COMPLETO.pdf'],
@@ -40,7 +40,9 @@ function articulosTemario(n) {
   let total = 0;
   for (const rel of PDFS[n] || []) {
     const out = path.join(os.tmpdir(), 'cob-' + n + '.txt');
-    execFileSync('pdftotext', ['-enc', 'UTF-8', BASE + rel, out]);
+    // el PDF puede estar en la carpeta nueva (Escritorio), en su raíz, o solo en la antigua de OneDrive
+    const cand = [BASE + rel, BASE + path.basename(rel), BASE.replace('/Desktop/', '/OneDrive/Desktop/') + rel].find(p => fs.existsSync(p));
+    execFileSync('pdftotext', ['-enc', 'UTF-8', cand || BASE + rel, out]);
     const seq = [];
     for (const l0 of fs.readFileSync(out, 'utf8').split('\n')) {
       const l = l0.replace(/\r/g, '');
