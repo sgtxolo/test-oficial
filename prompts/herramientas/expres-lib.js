@@ -33,8 +33,11 @@ module.exports = function (T) {
   const Rq = (txt, ids) => { const m = `<mark class="m-resp${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>`; REG.push({ t: txt.replace(/<[^>]+>/g, ''), m }); return m + txt + '</mark>'; };
   // el coloreado automático (visuales-lib → reglas-color) reescribe las marcas sin atributos: se les devuelve su data-q
   // (en orden: la 1.ª aparición de un texto usa su 1.er registro, la 2.ª el 2.º…, para que dos respuestas iguales no se crucen)
-  const restaura = html => { const usadas = new Set(); return html.replace(/<mark class="m-resp">([\s\S]*?)<\/mark>/g, (all, t) => {
+  // Recorre TODAS las respuestas en orden: las que conservan su data-q (no pasaron por el coloreado) consumen su registro,
+  // y las que lo perdieron toman el siguiente registro libre con su mismo texto.
+  const restaura = html => { const usadas = new Set(); return html.replace(/(<mark class="m-resp[^"]*"[^>]*>)([\s\S]*?)<\/mark>/g, (all, open, t) => {
     const tt = t.replace(/<[^>]+>/g, '');
+    if (open !== '<mark class="m-resp">') { const i = REG.findIndex((x, n) => !usadas.has(n) && x.m === open && x.t === tt); if (i >= 0) usadas.add(i); return all; }
     let k = REG.findIndex((x, i) => !usadas.has(i) && x.t === tt);
     if (k < 0) k = REG.findIndex((x, i) => !usadas.has(i) && (x.t.includes(tt) || tt.includes(x.t)));
     if (k < 0) k = REG.findIndex(x => x.t === tt);
@@ -193,6 +196,9 @@ module.exports = function (T) {
     s = m ? s.replace(m[0], () => tag) : s.replace('<style id="expres-style">', () => tag + '\n<style id="expres-style">');
     fs.writeFileSync(ESQ, s);
     cob.forEach(c => console.log(`${c.nombre}: ${c.ok}/${c.total} preguntas enlazadas (${c.pct} % ponderado)${c.faltan.length ? ' · faltan: ' + c.faltan.join(', ') : ''}`));
+    // respuestas fundidas por el coloreado (dos Rq seguidas separadas solo por un espacio): sus ids se pierden
+    const perdidas = REG.filter(x => !htmlExpres.includes(x.m));
+    if (perdidas.length) console.error(`AVISO: ${perdidas.length} respuestas se han fundido con la de al lado y han perdido su enlace (pon « · » u otra palabra entre dos Rq seguidas): ${perdidas.map(x => '«' + x.t.slice(0, 40) + '»').join(', ')}`);
     // comprobación final contra TODAS las preguntas del tema en la app (no solo las que el mapa sitúa)
     const test = fs.readFileSync(path.join(RAIZ, 'test-oficial-conocimiento.html'), 'utf8');
     const todas = [...new Set([...test.matchAll(new RegExp(`\\{"id":"(${T}-(?:ia-)?\\d+)"`, 'g'))].map(m => m[1]))];
