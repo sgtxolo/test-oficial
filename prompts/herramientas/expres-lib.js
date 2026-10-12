@@ -32,7 +32,13 @@ module.exports = function (T) {
   const REG = [];
   const Rq = (txt, ids) => { const m = `<mark class="m-resp${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>`; REG.push({ t: txt.replace(/<[^>]+>/g, ''), m }); return m + txt + '</mark>'; };
   // el coloreado automático (visuales-lib → reglas-color) reescribe las marcas sin atributos: se les devuelve su data-q
-  const restaura = html => html.replace(/<mark class="m-resp">([\s\S]*?)<\/mark>/g, (all, t) => { const tt = t.replace(/<[^>]+>/g, ''); const r = REG.find(x => x.t === tt) || REG.find(x => x.t.includes(tt) || tt.includes(x.t)); return r ? r.m + t + '</mark>' : all; });
+  // (en orden: la 1.ª aparición de un texto usa su 1.er registro, la 2.ª el 2.º…, para que dos respuestas iguales no se crucen)
+  const restaura = html => { const usadas = new Set(); return html.replace(/<mark class="m-resp">([\s\S]*?)<\/mark>/g, (all, t) => {
+    const tt = t.replace(/<[^>]+>/g, '');
+    let k = REG.findIndex((x, i) => !usadas.has(i) && x.t === tt);
+    if (k < 0) k = REG.findIndex((x, i) => !usadas.has(i) && (x.t.includes(tt) || tt.includes(x.t)));
+    if (k < 0) k = REG.findIndex(x => x.t === tt);
+    if (k < 0) return all; usadas.add(k); return REG[k].m + t + '</mark>'; }); };
 
   // Párrafo literal j de la ficha k, con sus marcas de respuesta enlazadas como en el esquema completo
   function parrafo(k, j) {
@@ -54,7 +60,7 @@ module.exports = function (T) {
     return `<div class="ex-ficha${f.ex ? ' ex-of' : ''}"><div class="ex-fh">${cab || f.cab}${f.ex ? '<span class="ex-sello">EX</span>' : ''}</div><div class="ex-fb">${js.map(j => parrafo(k, j)).join('')}</div></div>`;
   };
   // Tabla de competencias / comparativa sencilla: filas [etiqueta, celda1, celda2…]
-  const cuadro = (titulo, cab, filas) => `<div class="vis"><div class="vis-t"><i>▦</i>${titulo}</div><div class="ex-tab" style="--n:${cab.length}">${cab.map(c => `<div class="ex-th">${c}</div>`).join('')}${filas.map(f => f.map((c, i) => `<div class="${i ? 'ex-td' : 'ex-tl'}">${c}</div>`).join('')).join('')}</div></div>`;
+  const cuadro = (titulo, cab, filas) => `<div class="vis"><div class="vis-t"><i>▦</i>${titulo}</div><div class="ex-tab" style="--n:${cab.length}">${cab.map(c => `<div class="ex-th">${c}</div>`).join('')}${filas.map(f => f.map((c, i) => `<div class="${i ? 'ex-td' + (c.replace(/<[^>]+>/g, '').length <= 14 ? ' num' : '') : 'ex-tl'}">${c}</div>`).join('')).join('')}</div></div>`;
   const datos = (titulo, items) => `<div class="vis ex-datos"><div class="vis-t"><i>•</i>${titulo}</div><ul>${items.map(x => `<li>${x}</li>`).join('')}</ul></div>`;
   const ex = t => `<span class="ex-sello">EX</span>`;
   const bloque = t => `<div class="bloque-titulo">${t}</div>`;
@@ -91,7 +97,7 @@ module.exports = function (T) {
         if (cierre) pila.pop(); else if (!auto) pila.push(tok);
         out += tok; continue;
       }
-      const bloqueado = pila.some(t => /^<(b|h5|small)\b/i.test(t) || /class="(vis-t|ex-th|ex-fh|ex-sello)/.test(t) || /^<mark class="m-resp/.test(t) || /^<u\b/.test(t) || (saltaMarcas && /^<mark/.test(t)));
+      const bloqueado = pila.some(t => /^<(b|h5|small)\b/i.test(t) || /class="(vis-t|ex-th|ex-fh|ex-sello|et")/.test(t) || /^<mark class="m-resp/.test(t) || /^<u\b/.test(t) || (saltaMarcas && /^<mark/.test(t)));
       out += bloqueado ? tok : fn(tok);
     }
     return out;
