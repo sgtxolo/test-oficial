@@ -141,4 +141,6 @@ v('Disposiciones adicionales', arbol('Disposiciones adicionales', `${D('Disposic
   `DA 2.ª · ${R('Consejo de Estado')}: ${R('supremo órgano consultivo del Gobierno')}`,
   `DA 3.ª · sesiones a distancia: lo decide ${R('motivadamente')} el ${R('Presidente del Gobierno')} · válidas: ${R('audioconferencias y videoconferencias')}`]));
 
-L.inserta(12, V);
+// Exportado para el ⚡ Exprés (expres-t12.js); ejecutado directamente, inserta los cuadros en el esquema normal
+module.exports = V;
+if (require.main === module) L.inserta(12, V);

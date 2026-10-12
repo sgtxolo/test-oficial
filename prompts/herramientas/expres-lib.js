@@ -44,15 +44,18 @@ module.exports = function (T) {
   function parrafo(k, j) {
     const f = fichas[k]; const p = f.ps[j]; const base = `${T}-${k}-${j}`;
     const sueltas = porSitio[base] || [];
-    let i = -1;
+    let i = -1; const puestas = new Set();
     const marks = [...p.h.matchAll(/<mark class="m-resp">/g)].map((_, n) => porSitio[`${base}-${n}`] || EXTRA[`${base}-${n}`] || sueltas);
     const out = p.h.replace(/<mark class="m-resp">/g, () => {
       i++; let ids = marks[i];
       for (let d = 1; !ids.length && d < marks.length; d++) ids = (marks[i - d] && marks[i - d].length) ? marks[i - d] : (marks[i + d] || []);
+      ids.forEach(x => puestas.add(x));
       return ids.length ? `<mark class="m-resp${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>` : '<mark class="m-resp r-ia">';
     });
-    sueltas.forEach(x => usados.add(x));
-    return `<p${p.at}>${out}</p>`;
+    // preguntas del párrafo que ninguna marca recoge (párrafo sin respuesta marcada): botón 🎯 al final que las abre
+    const resto = sueltas.filter(x => !puestas.has(x));
+    const boton = resto.length ? ` <mark class="m-resp ex-q${resto.every(esIA) ? ' r-ia' : ''}"${q(resto)}>🎯 ${resto.length === 1 ? '1 pregunta' : resto.length + ' preguntas'}</mark>` : '';
+    return `<p${p.at}>${out}${boton}</p>`;
   }
   // Ficha literal: cabecera original (o la que se indique) + párrafos elegidos ENTEROS
   const literal = (k, js, cab) => {
@@ -65,6 +68,42 @@ module.exports = function (T) {
   const ex = t => `<span class="ex-sello">EX</span>`;
   const bloque = t => `<div class="bloque-titulo">${t}</div>`;
   const trampa = t => `<div class="trampa"><b>⚠ Trampa de examen</b><p>${t}</p></div>`;
+
+  // ---------- Exprés AUTOMÁTICO (temas cortos que ya tienen cuadros): párrafos literales con pregunta + cuadros del esquema ----------
+  // V = [[cabecera de ficha, html del cuadro], …] tal como lo exporta visuales-tN.js. Recorre el esquema completo en orden y,
+  // para cada ficha, pone sus párrafos ENTEROS que tienen pregunta (o marca EX) y debajo sus cuadros (con el subrayado del
+  // usuario y las respuestas enlazadas a las preguntas de esa ficha). Los títulos de bloque solo salen si su bloque tiene algo.
+  const conPreg = new Set(); Object.values(MAPA).concat(Object.keys(EXTRA)).forEach(p => { const [t, k, j] = p.split('-'); if (+t === T) conPreg.add(k + '-' + j); });
+  const tok = t => new Set(limpia(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').split(/[^a-z0-9]+/).filter(w => w.length > 2 && !VACIAS.has(w)));
+  function enlazaCuadro(h, k) {
+    const f = fichas[k]; const cand = [];
+    f.ps.forEach((p, j) => { const base = `${T}-${k}-${j}`; const sueltas = porSitio[base] || [];
+      [...p.h.matchAll(/<mark class="m-resp">([\s\S]*?)<\/mark>/g)].forEach((m, n) => { const ids = porSitio[`${base}-${n}`] || EXTRA[`${base}-${n}`] || sueltas; if (ids.length) cand.push({ t: tok(m[1]), ids }); }); });
+    const todas = [...new Set(cand.flatMap(c => c.ids))];
+    return h.replace(/<mark class="m-resp">([\s\S]*?)<\/mark>/g, (all, t) => {
+      const tv = tok(t); let best = null, bs = 0;
+      cand.forEach(c => { let n = 0; tv.forEach(w => { if (c.t.has(w)) n++; }); const sc = tv.size ? n / Math.min(tv.size, Math.max(c.t.size, 1)) * (n / tv.size * 0.5 + 0.5) : 0; if (sc > bs) { bs = sc; best = c; } });
+      const ids = best && bs >= 0.5 ? best.ids : todas;
+      return ids.length ? `<mark class="m-resp${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>${t}</mark>` : all;
+    });
+  }
+  function automatico(V) {
+    const re = /<div class="bloque-titulo">([\s\S]*?)<\/div>|<div class="articulo">[\s\S]*?<div class="txt">[\s\S]*?<\/div>\s*(?:<div class="sello-examen">EX<\/div>)?\s*<\/div>\s*<\/div>/g;
+    const puestos = new Set(); let m, k = -1, out = '', titulo = '';
+    while ((m = re.exec(html))) {
+      if (m[1] !== undefined) { titulo = bloque(m[1]); continue; }
+      k++; const f = fichas[k]; const cab = limpia(f.cab);
+      const js = f.ps.map((p, j) => j).filter(j => conPreg.has(k + '-' + j) || /data-ex|class="ex-p"/.test(f.ps[j].at + f.ps[j].h));
+      const cs = V.map((x, i) => [x, i]).filter(([[c], i]) => !puestos.has(i) && (cab.startsWith(c) || cab.includes(c)));
+      if (!js.length && !cs.length) continue;
+      if (titulo) { out += titulo; titulo = ''; }
+      if (js.length) out += literal(k, js);
+      cs.forEach(([[, h], i]) => { puestos.add(i); out += enlazaCuadro(subraya(h), k); });
+    }
+    const sin = V.filter((x, i) => !puestos.has(i)).map(([c]) => c);
+    if (sin.length) console.error('Cuadros sin ficha en el Exprés:', sin.join(' | '));
+    return out;
+  }
 
   // Preguntas que el mapa sitúa en las fichas [k0..k1] (para medir la cobertura de un bloque)
   const preguntasDe = (k0, k1) => Object.entries(MAPA).filter(([id, p]) => { const [t, k] = p.split('-'); return +t === T && +k >= k0 && +k <= k1; }).map(([id]) => id);
@@ -134,8 +173,14 @@ module.exports = function (T) {
     s = m ? s.replace(m[0], () => tag) : s.replace('<style id="expres-style">', () => tag + '\n<style id="expres-style">');
     fs.writeFileSync(ESQ, s);
     cob.forEach(c => console.log(`${c.nombre}: ${c.ok}/${c.total} preguntas enlazadas (${c.pct} % ponderado)${c.faltan.length ? ' · faltan: ' + c.faltan.join(', ') : ''}`));
+    // comprobación final contra TODAS las preguntas del tema en la app (no solo las que el mapa sitúa)
+    const test = fs.readFileSync(path.join(RAIZ, 'test-oficial-conocimiento.html'), 'utf8');
+    const todas = [...new Set([...test.matchAll(new RegExp(`\\{"id":"(${T}-(?:ia-)?\\d+)"`, 'g'))].map(m => m[1]))];
+    const enlazadas = new Set([...htmlExpres.matchAll(/data-q="([^"]+)"/g)].flatMap(m => m[1].split(',')));
+    const fuera = todas.filter(i => !enlazadas.has(i));
+    console.log(`PREGUNTAS DEL TEMA EN LA APP CON ENLACE EN EL EXPRÉS: ${todas.length - fuera.length}/${todas.length}${fuera.length ? ' · sin enlace (añádelas con Rq): ' + fuera.join(', ') : ' ✔'}`);
     const chars = htmlExpres.replace(/<[^>]+>/g, '').replace(/&[a-z]+;/g, ' ').length;
     console.log(`Texto del exprés: ${chars} caracteres ≈ ${(chars / 3000).toFixed(1)} págs A4`);
   }
-  return { ...VL, final: h => restaura(subraya(h)), Rq, literal, parrafo, cuadro, datos, ex, bloque, trampa, publica, fichas };
+  return { ...VL, final: h => restaura(subraya(h)), automatico, Rq, literal, parrafo, cuadro, datos, ex, bloque, trampa, publica, fichas };
 };
