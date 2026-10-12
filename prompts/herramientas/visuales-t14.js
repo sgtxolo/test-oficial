@@ -135,4 +135,6 @@ v('Artículo 42 — Contratación', plazos('Plazos del Reglamento (resumen)', [
   ['2 meses · 6 meses · 1 año', 'Prescripción de las faltas leves · graves · muy graves, y mismos plazos para las sanciones (art. 36.3)'],
   ['6 meses a 6 años', 'Sanción de las faltas muy graves (art. 37.1.c) · graves: hasta 6 meses · leves: 1 a 10 días']]));
 
-L.inserta(14, V);
+// Exportado para el ⚡ Exprés (expres-t14.js); ejecutado directamente, inserta los cuadros en el esquema normal
+module.exports = V;
+if (require.main === module) L.inserta(14, V);

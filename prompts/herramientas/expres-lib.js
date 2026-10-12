@@ -58,9 +58,12 @@ module.exports = function (T) {
     return `<p${p.at}>${out}${boton}</p>`;
   }
   // Ficha literal: cabecera original (o la que se indique) + párrafos elegidos ENTEROS
-  const literal = (k, js, cab) => {
+  // extra = ids de preguntas que el mapa no sitúa pero son de esta ficha → botón «🎯 n preguntas más» al final
+  const botonQ = (ids, txt) => `<mark class="m-resp ex-q${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>🎯 ${txt || (ids.length === 1 ? '1 pregunta' : ids.length + ' preguntas')}</mark>`;
+  const literal = (k, js, cab, extra) => {
     const f = fichas[k];
-    return `<div class="ex-ficha${f.ex ? ' ex-of' : ''}"><div class="ex-fh">${cab || f.cab}${f.ex ? '<span class="ex-sello">EX</span>' : ''}</div><div class="ex-fb">${js.map(j => parrafo(k, j)).join('')}</div></div>`;
+    const mas = extra && extra.length ? `<p class="ex-mas">${botonQ(extra, extra.length === 1 ? '1 pregunta más de este artículo' : extra.length + ' preguntas más de este artículo')}</p>` : '';
+    return `<div class="ex-ficha${f.ex ? ' ex-of' : ''}"><div class="ex-fh">${cab || f.cab}${f.ex ? '<span class="ex-sello">EX</span>' : ''}</div><div class="ex-fb">${js.map(j => parrafo(k, j)).join('')}${mas}</div></div>`;
   };
   // Tabla de competencias / comparativa sencilla: filas [etiqueta, celda1, celda2…]
   const cuadro = (titulo, cab, filas) => `<div class="vis"><div class="vis-t"><i>▦</i>${titulo}</div><div class="ex-tab" style="--n:${cab.length}">${cab.map(c => `<div class="ex-th">${c}</div>`).join('')}${filas.map(f => f.map((c, i) => `<div class="${i ? 'ex-td' + (c.replace(/<[^>]+>/g, '').length <= 14 ? ' num' : '') : 'ex-tl'}">${c}</div>`).join('')).join('')}</div></div>`;
@@ -75,6 +78,7 @@ module.exports = function (T) {
   // usuario y las respuestas enlazadas a las preguntas de esa ficha). Los títulos de bloque solo salen si su bloque tiene algo.
   const conPreg = new Set(); Object.values(MAPA).concat(Object.keys(EXTRA)).forEach(p => { const [t, k, j] = p.split('-'); if (+t === T) conPreg.add(k + '-' + j); });
   const tok = t => new Set(limpia(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').split(/[^a-z0-9]+/).filter(w => w.length > 2 && !VACIAS.has(w)));
+  const recogidas = new Set();   // ids cuya respuesta casa de verdad con una caja de un cuadro (no por defecto)
   function enlazaCuadro(h, k) {
     const f = fichas[k]; const cand = [];
     f.ps.forEach((p, j) => { const base = `${T}-${k}-${j}`; const sueltas = porSitio[base] || [];
@@ -84,21 +88,37 @@ module.exports = function (T) {
       const tv = tok(t); let best = null, bs = 0;
       cand.forEach(c => { let n = 0; tv.forEach(w => { if (c.t.has(w)) n++; }); const sc = tv.size ? n / Math.min(tv.size, Math.max(c.t.size, 1)) * (n / tv.size * 0.5 + 0.5) : 0; if (sc > bs) { bs = sc; best = c; } });
       const ids = best && bs >= 0.5 ? best.ids : todas;
+      if (best && bs >= 0.5) best.ids.forEach(x => recogidas.add(x));
       return ids.length ? `<mark class="m-resp${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>${t}</mark>` : all;
     });
   }
-  function automatico(V) {
+  // extras = { k: [ids] } → preguntas que el mapa no sitúa, asignadas a mano a la ficha k (botón «🎯 … más de este artículo»)
+  // omitir = Set de k cuyos párrafos NO se ponen (los condensa un esquema propio), y/o 'conCuadro' = en las fichas con
+  //          cuadro se quitan los párrafos cuyas preguntas ya responde el cuadro. Combinables: { fichas: Set, conCuadro: true }
+  //          (para que un tema largo quepa en 17-20 págs); las preguntas de esos párrafos que el cuadro no recoja van a un 🎯
+  const idsFicha = k => Object.entries(MAPA).filter(([, p]) => p.startsWith(`${T}-${k}-`)).map(([id]) => id);
+  function automatico(V, extras = {}, omitir = new Set()) {
     const re = /<div class="bloque-titulo">([\s\S]*?)<\/div>|<div class="articulo">[\s\S]*?<div class="txt">[\s\S]*?<\/div>\s*(?:<div class="sello-examen">EX<\/div>)?\s*<\/div>\s*<\/div>/g;
     const puestos = new Set(); let m, k = -1, out = '', titulo = '';
     while ((m = re.exec(html))) {
       if (m[1] !== undefined) { titulo = bloque(m[1]); continue; }
       k++; const f = fichas[k]; const cab = limpia(f.cab);
-      const js = f.ps.map((p, j) => j).filter(j => conPreg.has(k + '-' + j) || /data-ex|class="ex-p"/.test(f.ps[j].at + f.ps[j].h));
-      const cs = V.map((x, i) => [x, i]).filter(([[c], i]) => !puestos.has(i) && (cab.startsWith(c) || cab.includes(c)));
-      if (!js.length && !cs.length) continue;
+      let cs = V.map((x, i) => [x, i]).filter(([[c], i]) => !puestos.has(i) && (cab.startsWith(c) || cab.includes(c)));
+      const conCuadro = omitir === 'conCuadro' || !!(omitir && omitir.conCuadro);
+      // el esquema condensado ('condensa') sustituye en el Exprés a los demás cuadros de su ficha
+      if (cs.some(([x]) => x[2] === 'condensa')) { cs.filter(([x]) => x[2] !== 'condensa').forEach(([, i]) => puestos.add(i)); cs = cs.filter(([x]) => x[2] === 'condensa'); }
+      const fuera = (omitir instanceof Set ? omitir : (omitir && omitir.fichas) || new Set()).has(k);
+      let js = fuera ? [] : f.ps.map((p, j) => j).filter(j => conPreg.has(k + '-' + j) || /data-ex|class="ex-p"/.test(f.ps[j].at + f.ps[j].h));
+      if (!js.length && !cs.length && !extras[k]) continue;
       if (titulo) { out += titulo; titulo = ''; }
-      if (js.length) out += literal(k, js);
-      cs.forEach(([[, h], i]) => { puestos.add(i); out += enlazaCuadro(subraya(h), k); });
+      const hc = cs.map(([[, h], i]) => { puestos.add(i); return enlazaCuadro(subraya(h), k); }).join('');
+      // 'conCuadro': fuera los párrafos cuyas preguntas YA responde el cuadro (casan con una de sus cajas); se quedan los demás
+      if (conCuadro && cs.length) js = js.filter(j => { const ids = Object.entries(MAPA).filter(([, p]) => p === `${T}-${k}-${j}` || p.startsWith(`${T}-${k}-${j}-`)).map(([id]) => id); return !ids.length || ids.some(id => !recogidas.has(id)) || /data-ex|class="ex-p"/.test(f.ps[j].at); });
+      let extra = extras[k] || [];
+      if (fuera) { const enC = new Set([...hc.matchAll(/data-q="([^"]+)"/g)].flatMap(x => x[1].split(','))); extra = [...new Set(extra.concat(idsFicha(k).filter(id => !enC.has(id))))]; }
+      if (js.length) out += literal(k, js, null, extra);
+      out += hc;
+      if (!js.length && extra.length) out += `<div class="ex-linea">${limpia(f.cab)}: ${botonQ(extra, extra.length === 1 ? '1 pregunta más de este artículo' : extra.length + ' preguntas más de este artículo')}</div>`;
     }
     const sin = V.filter((x, i) => !puestos.has(i)).map(([c]) => c);
     if (sin.length) console.error('Cuadros sin ficha en el Exprés:', sin.join(' | '));

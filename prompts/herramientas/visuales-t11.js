@@ -302,4 +302,6 @@ v('Artículo 31 — Órgano competente y procedimiento', arbol('Competencia para
   'Ministro de Hacienda y Administraciones Públicas: cuando el responsable sea un alto cargo de la Administración General del Estado',
   'Altos cargos de las CCAA y Entidades Locales: los órganos que tengan atribuidas estas funciones en aplicación del régimen disciplinario propio, en su caso el Consejo de Gobierno de la Comunidad Autónoma o el Pleno de la Junta de Gobierno de la Entidad Local']));
 
-L.inserta(11, V);
+// Exportado para el ⚡ Exprés (expres-t11.js); ejecutado directamente, inserta los cuadros en el esquema normal
+module.exports = V;
+if (require.main === module) L.inserta(11, V);

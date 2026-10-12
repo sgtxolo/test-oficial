@@ -188,4 +188,9 @@ v('Artículo 122 ter', plazos('Plazos del Tema 13 (resumen)', [
   ['8 días', 'Demanda y alegaciones en el amparo judicial (arts. 118 y 119)'], ['48 horas', 'Recurso contra la prohibición de reuniones (art. 122) · expediente tardío en amparo (art. 116.5)'],
   ['24 h / 2 días', 'Autorización judicial del art. 122 bis'], ['5 días', 'Sentencia de amparo (art. 121) · desistimiento (art. 74) · expediente (art. 116)']]));
 
-L.inserta(13, V);
+// Esquemas nuevos (condensan los artículos largos; también los usa el ⚡ Exprés)
+require('./esquemas-t13-nuevos.js')().forEach(([c, h]) => V.push([c, h, 'condensa']));   // 'condensa': en el Exprés sustituye a los demás cuadros de su ficha
+
+// Exportado para el ⚡ Exprés (expres-t13.js); ejecutado directamente, inserta los cuadros en el esquema normal
+module.exports = V;
+if (require.main === module) L.inserta(13, V);

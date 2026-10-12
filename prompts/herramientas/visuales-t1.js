@@ -382,6 +382,9 @@ v('Generaciones y características', arbol('Características de los derechos hum
   `${R('Universalidad')}: para todos y en todos los lugares`, `${R('Inalienabilidad')}: no se puede disponer de ellos, ni total ni parcialmente`, `${R('Irrenunciabilidad')}: nadie puede desprenderse de ellos, ni por su voluntad`,
   `${R('Inviolabilidad')}: no pueden ser lesionados en su goce`, `${R('Progresividad')}: no pueden ser disminuidos`, `${K('No')} son absolutos`]));
 
+// Exportado para el ⚡ Exprés (expres-t1.js); solo si se ejecuta directamente inserta los cuadros en el esquema normal
+module.exports = V;
+if (require.main !== module) return;
 // ---------------------------------------------------------------------------------------------
 let s = fs.readFileSync(F, 'utf8');
 // 1) limpiar versión anterior (CSS, helpers JS, definiciones y líneas insertadas)
