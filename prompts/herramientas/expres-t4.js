@@ -4,7 +4,7 @@
 // Uso: node prompts/herramientas/expres-t4.js
 const X = require('./expres-lib.js')(4);
 let V = []; try { V = require('./visuales-t4.js'); } catch (e) {}
-Object.assign(X.opciones, { recorte: 'ventana', cabeza: 3, antes: 2, umbral: 45, sinRespPliega: true, soloOficial: true, iaEnEX: true });
+Object.assign(X.opciones, { recorte: 'ventana', cabeza: 2, antes: 2, umbral: 35, sinRespPliega: true });
 
 const EXTRAS = {};
 const H0 = X.automatico(V, EXTRAS, { uno: 0.8 });
