@@ -1,0 +1,561 @@
+
+#### 5.1 — REGLAMENTO (UE) 2018/1861, DE 28 DE NOVIEMBRE DE 2018, RELATIVO AL SISTEMA DE INFORMACIÓN DE SCHENGEN (SIS) EN EL ÁMBITO DE LAS INSPECCIONES FRONTERIZAS
+
+## Considerandos 1 y 5 — Qué es el SIS y su base jurídica
+(1) El Sistema de Información de Schengen (SIS) constituye un instrumento esencial para la aplicación de las disposiciones del acervo de Schengen integrado en el marco de la Unión Europea. (…)
+(5) El hecho de que la base jurídica del SIS consista en dos instrumentos separados no afecta al principio de que el SIS constituye un único sistema de información que debe funcionar como tal. (…)
+
+
+## Artículo 1 — Finalidad general del SIS
+El SIS tiene por finalidad garantizar un alto nivel de seguridad en el espacio de libertad, seguridad y justicia de la Unión, con inclusión del mantenimiento de la seguridad y el orden públicos y la salvaguardia de la seguridad en el territorio de los Estados miembros, y garantizar la aplicación de las disposiciones (…) relativas a la circulación de personas en sus territorios, con la ayuda de la información transmitida a través de este sistema.
+
+
+## Artículo 2 — Objeto
+1. El presente Reglamento establece las condiciones y los procedimientos para la introducción en el SIS y el tratamiento de las descripciones sobre nacionales de terceros países, y para el intercambio de información complementaria y datos adicionales a efectos de la denegación de entrada y estancia en el territorio de los Estados miembros.
+2. (…) también disposiciones sobre la arquitectura técnica del SIS, las responsabilidades de los Estados miembros y de la Agencia (…) (eu-LISA), el tratamiento general de los datos, los derechos de los interesados y la responsabilidad.
+
+
+## Artículo 3 — Definiciones
+2) «información complementaria»: información que no forma parte de los datos de una descripción almacenada en el SIS, pero que está relacionada con descripciones del SIS y se intercambiará a través de las oficinas Sirene: a) a fin de que los Estados miembros puedan consultarse o informarse entre sí al introducir una descripción; b) tras la obtención de una respuesta positiva, a fin de poder adoptar la medida adecuada; c) cuando no pueda ejecutarse la medida requerida; d) al tratar de la calidad de los datos del SIS; e) al tratar de la compatibilidad y prioridad de las descripciones; f) al tratar del ejercicio del derecho de acceso.
+7) «coincidencia»: la realización de los siguientes pasos: a) un usuario final ha realizado una consulta en el SIS; b) la consulta ha arrojado como resultado la existencia de una descripción introducida en el SIS por otro Estado miembro; y c) los datos relativos a la descripción en el SIS coinciden con los datos utilizados para la consulta.
+8) «respuesta positiva»: toda coincidencia que cumpla los siguientes criterios: a) haber sido confirmada por: i) el usuario final; o ii) la autoridad competente (…), cuando la coincidencia en cuestión estuviese basada en la comparación de datos biométricos; y b) requerir la adopción de medidas.
+9) «Estado miembro emisor»: el Estado miembro que ha introducido la descripción en el SIS.
+10) «Estado miembro de concesión»: el Estado miembro que está considerando conceder o prorrogar un permiso de residencia o un visado para estancia de larga duración o que los ha concedido o prorrogado (…).
+11) «Estado miembro de ejecución»: el Estado miembro que adopta o ha adoptado las medidas requeridas a raíz de una respuesta positiva.
+15) «imagen facial»: las imágenes digitales del rostro con una resolución de imagen y calidad suficientes para ser utilizadas en el sistema de correspondencias biométricas automatizadas.
+
+
+## Artículo 4 — Arquitectura técnica
+1. El SIS se compondrá de: a) un sistema central (SIS Central) compuesto por: i) una unidad de apoyo técnico («CS-SIS») que contendrá una base de datos («base de datos del SIS») y que incluirá una copia de seguridad de la CS-SIS; ii) una interfaz nacional uniforme («NI-SIS»); b) un sistema nacional (N.SIS) en cada Estado miembro, compuesto por los sistemas de datos nacionales que se comunican con el SIS Central, y que incluirá al menos un N.SIS de respaldo nacional o compartido; y c) una infraestructura de comunicación entre la CS-SIS, la copia de seguridad de la CS-SIS y la NI-SIS (…) que proporcione una red virtual codificada dedicada a los datos del SIS y al intercambio de datos entre las oficinas Sirene (…).
+(…) Dos o más Estados miembros podrán establecer en uno de sus N.SIS una copia compartida (…). La copia compartida se considerará la copia nacional de cada uno de esos Estados miembros. (…)
+3. La CS-SIS realizará funciones de supervisión y gestión técnicas y conservará una copia de seguridad (…). La CS-SIS y la copia de seguridad de la CS-SIS deberán estar situadas en los dos emplazamientos técnicos de eu-LISA.
+4. (…) eu-LISA preparará, a más tardar el 28 de diciembre de 2019, un estudio sobre las opciones en lo que respecta a las soluciones técnicas (…).
+
+
+## Artículo 5 — Costes
+1. Los costes de funcionamiento, mantenimiento y ulterior desarrollo del SIS Central y de la infraestructura de comunicación correrán a cargo del presupuesto general de la Unión. (…)
+2. La financiación necesaria para sufragar los costes de la aplicación del presente Reglamento se asignará con cargo a la dotación de 791 millones de euros prevista en el artículo 5, apartado 5, letra b), del Reglamento (UE) n.º 515/2014.
+5. Los costes de creación, funcionamiento, mantenimiento y ulterior desarrollo de cada N.SIS correrán a cargo del Estado miembro correspondiente.
+
+
+## Artículos 7 y 8 — Oficina N.SIS, oficina Sirene e información complementaria
+Art. 7.1. Cada Estado miembro designará una autoridad (denominada «oficina N.SIS») que asumirá la responsabilidad central respecto de su N.SIS. (…)
+Art. 7.2. Cada Estado miembro designará una autoridad nacional (denominada «oficina Sirene»), operativa las veinticuatro horas del día y los siete días de la semana, que se encargará de garantizar el intercambio y la disponibilidad de toda la información complementaria, de conformidad con el Manual Sirene. (…)
+Art. 8.2. La información complementaria se utilizará únicamente para el fin para el que haya sido transmitida (…), a menos que se haya obtenido el consentimiento previo del Estado miembro emisor para utilizarla con otro fin.
+Art. 8.3. Las oficinas Sirene llevarán a cabo sus cometidos de manera rápida y eficiente, en particular respondiendo a las solicitudes de información complementaria lo antes posible, y como máximo doce horas después de su recepción. Las solicitudes (…) de máxima prioridad deberán marcarse con el calificativo «URGENTE» (…).
+
+
+## Artículos 10 y 11 — Seguridad y confidencialidad (Estados miembros)
+Art. 10.1. Cada Estado miembro adoptará, en lo referente a su N.SIS, las medidas adecuadas, incluido un plan de seguridad, un plan de continuidad de las actividades y un plan de recuperación en caso de catástrofe, a fin de: a) proteger los datos físicamente (…); b) impedir el acceso de personas no autorizadas a las instalaciones (…); c) impedir que los soportes de datos puedan ser leídos, copiados, modificados o suprimidos por personas no autorizadas (control de los soportes de datos); (…)
+Art. 11.3. No se encomendará a empresas u organizaciones privadas la gestión operativa del N.SIS o de cualesquiera copias técnicas.
+
+
+## Artículos 12 y 18 — Registros nacionales y centrales
+Art. 12.1. Los Estados miembros velarán por que todo acceso a datos personales y todos los intercambios de los mismos en la CS-SIS queden registrados en su N.SIS, con el fin de que se pueda controlar la legalidad de la consulta y del tratamiento de datos, se proceda a un control interno y se garantice el correcto funcionamiento del N.SIS, así como para la integridad y seguridad de los datos. (…)
+2. Los registros contendrán, en particular, el historial de la descripción, la fecha y hora de la actividad de tratamiento de los datos, los datos utilizados para realizar una consulta, una referencia a los datos tratados y los identificadores de usuario personales e intransferibles (…).
+3. (…) si la consulta se realiza con datos dactiloscópicos o imágenes faciales (…), los registros mostrarán el tipo de datos utilizados para efectuar la consulta en lugar de los datos reales.
+4. Los registros solo se utilizarán para los fines mencionados en el apartado 1 y se suprimirán en un plazo de tres años a partir de su creación. (…)
+Art. 18 (registros centrales). Eu-LISA garantizará que todo acceso (…) en la CS-SIS quede registrado (…). Mismo contenido y mismo plazo de tres años.
+
+
+## Artículo 14 — Formación del personal
+1. Antes de ser autorizado a tratar datos almacenados en el SIS y periódicamente (…), el personal de las autoridades con derecho de acceso al SIS recibirá la formación adecuada sobre seguridad de los datos, derechos fundamentales, incluida la protección de datos, y sobre las normas y procedimientos del Manual Sirene (…).
+3. Se organizarán cursos de formación comunes a escala de la Unión al menos una vez al año para reforzar la cooperación entre las oficinas Sirene.
+
+
+#### Capítulo V — Categorías de datos e introducción de descripciones
+
+## Artículos 20 y 22 — Categorías de datos y datos mínimos
+Art. 20.2. Las descripciones del SIS que incluyan información sobre personas contendrán solo los datos siguientes: a) apellidos; b) nombres; c) nombres y apellidos de nacimiento; d) nombres y apellidos usados con anterioridad y alias; e) rasgos físicos particulares, objetivos e inalterables; f) lugar de nacimiento; g) fecha de nacimiento; h) sexo; i) nacionalidad o nacionalidades; j) indicación de si la persona afectada: i) va armada; ii) es violenta; iii) está fugada o se ha evadido; iv) presenta un riesgo de suicidio; v) es una amenaza para la salud pública; o vi) está implicada en (…) terrorismo; k) motivo de la descripción; (…) m) referencia a la decisión (…); n) medidas que deben tomarse en caso de respuesta positiva; (…) q) indicación de si la decisión de denegación (…) se basa en (…); (…) w) fotografías e imágenes faciales; x) datos dactiloscópicos; (…)
+Art. 22.1. Los datos mínimos necesarios para introducir una descripción en el SIS serán los previstos en el artículo 20, apartado 2, letras a), g), k), m), n) y q). Los demás datos (…) se introducirán en el SIS si se dispone de ellos.
+Art. 22.2. Los datos a que se refiere el artículo 20, apartado 2, letra e) [rasgos físicos], solo se introducirán cuando sea estrictamente necesario para la identificación del nacional de un tercer país. (…)
+
+
+## Artículo 21 — Proporcionalidad
+1. Antes de introducir una descripción y al prorrogar el período de validez de una descripción, los Estados miembros determinarán si el caso es adecuado, pertinente e importante como para justificar una descripción en el SIS.
+2. Cuando la decisión de denegación de entrada y estancia (…) esté relacionada con un delito de terrorismo, el caso se considerará adecuado, pertinente y suficientemente importante como para justificar una descripción en el SIS. Con carácter excepcional, los Estados miembros podrán abstenerse, por motivos de seguridad pública o nacional, de introducir una descripción, cuando sea probable que obstaculice indagaciones, investigaciones o procedimientos (…).
+
+
+## Artículo 23 — Compatibilidad de las descripciones
+2. Cada Estado miembro podrá introducir en el SIS una única descripción por persona. En caso necesario, otros Estados miembros podrán introducir nuevas descripciones sobre la misma persona (…).
+4. (…) En caso de que una persona sea objeto de descripciones múltiples introducidas por distintos Estados miembros, se dará prioridad a las descripciones para la detención introducidas de conformidad con el artículo 26 del Reglamento (UE) 2018/1862, a reserva de lo dispuesto en el artículo 25 de dicho Reglamento.
+
+
+## Artículo 24 — Descripciones para la denegación de entrada y estancia
+1. Los Estados miembros introducirán una descripción para la denegación de entrada y estancia cuando se cumpla alguna de las condiciones siguientes: a) que el Estado miembro haya determinado, sobre la base de una evaluación individual (…), que la presencia de ese nacional de un tercer país en su territorio represente una amenaza para el orden público, la seguridad pública o la seguridad nacional en su territorio y que, por consiguiente, el Estado miembro haya adoptado una decisión judicial o administrativa (…), o b) que el Estado miembro haya emitido una prohibición de entrada de conformidad con procedimientos que cumplen la Directiva 2008/115/CE (…).
+2. Serán consideradas situaciones recogidas en el apartado 1, letra a), las siguientes: a) cuando el nacional de un tercer país haya sido condenado en un Estado miembro por un delito sancionado con una pena privativa de libertad de un año como mínimo; b) cuando existan motivos fundados para creer que (…) ha cometido un delito grave, en particular un delito de terrorismo, o indicios claros de su intención de cometerlo (…); o c) cuando (…) haya eludido o intentado eludir la normativa nacional o de la Unión en materia de entrada y estancia (…).
+4. Las personas objeto de una decisión de denegación de entrada y estancia (…) tendrán derecho a recurrir dicha decisión (…).
+
+
+## Artículo 25 — Nacionales de terceros países sujetos a medidas restrictivas
+2. Las descripciones serán introducidas, actualizadas y suprimidas por la autoridad competente del Estado miembro que ejerza la Presidencia del Consejo de la Unión Europea en el momento de la adopción de la medida. Si dicho Estado miembro no tuviera acceso al SIS (…), asumirá la responsabilidad el Estado miembro que ejerza la siguiente Presidencia (…).
+
+
+## Artículos 27 y 28 — Consultas entre Estados (permiso de residencia / visado de larga duración)
+Art. 27. (…) a) el Estado miembro de concesión consultará al Estado miembro emisor antes de conceder o prorrogar el permiso de residencia o el visado para estancia de larga duración; b) el Estado miembro emisor contestará a la consulta en un plazo de diez días naturales; c) la falta de respuesta dentro del plazo (…) significará que el Estado miembro emisor no se opone (…). La decisión definitiva (…) compete al Estado miembro de concesión.
+Art. 28.e) en el plazo de catorce días naturales a partir de la recepción de la solicitud de consulta, el Estado miembro de concesión informará de su decisión (…) o, cuando haya sido imposible (…), presentará una solicitud motivada para prorrogar excepcionalmente el plazo de respuesta hasta un máximo de doce días naturales más.
+
+
+#### Capítulo VI — Datos biométricos
+
+## Artículos 32 y 33 — Datos dactiloscópicos
+Art. 32.2. Los datos dactiloscópicos introducidos en el SIS podrán consistir en una a diez impresiones dactilares planas y en una a diez impresiones dactilares rodadas. También podrán consistir en hasta dos impresiones palmares.
+Art. 33.2. Los datos dactiloscópicos podrán consultarse en todos los casos para identificar a una persona. Ahora bien, los datos dactiloscópicos se consultarán para identificar a una persona cuando su identidad no pueda determinarse por otros medios. (…)
+
+
+#### Capítulo VII — Derecho de acceso, revisión y supresión de descripciones
+
+## Artículo 34 — Autoridades nacionales con acceso al SIS
+1. Las autoridades nacionales competentes responsables de la identificación de los nacionales de terceros países tendrán acceso a los datos introducidos en el SIS (…) con los siguientes fines: a) los controles fronterizos (…); b) los controles policiales y aduaneros (…); c) la prevención, la detección, la investigación o el enjuiciamiento de delitos de terrorismo u otros delitos graves (…); d) el examen de las condiciones de entrada y estancia (…); e) (…) inspecciones de seguridad a solicitantes de protección internacional (…); f) el examen de las solicitudes de visado (…).
+3. (…) el derecho de acceso (…) podrán ser ejercidos asimismo por las autoridades judiciales nacionales (…).
+
+
+## Artículo 35 — Acceso de Europol
+1. (…) Europol (…) tendrá derecho, cuando sea necesario para cumplir su mandato, a acceder a los datos del SIS y a consultarlos. Europol también podrá intercambiar y solicitar información complementaria de conformidad con lo dispuesto en el Manual Sirene.
+3. Europol podrá tratar la información complementaria que le proporcionen los Estados miembros para cotejarla con sus bases de datos y proyectos de análisis operativos, con el fin de detectar conexiones u otros vínculos pertinentes (…).
+4. El uso por parte de Europol de la información obtenida como consecuencia de una consulta del SIS o del tratamiento de información complementaria estará sujeto al consentimiento del Estado miembro emisor. (…)
+5.b) (…) suprimir la información complementaria que contenga datos personales a más tardar un año después de que la descripción correspondiente haya sido suprimida. (…)
+6. Europol solo podrá copiar datos del SIS con fines técnicos cuando la copia sea necesaria para la consulta directa por el personal autorizado de Europol. (…) Una vez que los datos hayan sido consultados, se suprimirán. (…) Europol no podrá copiar datos de las descripciones ni datos adicionales emitidos por Estados miembros o procedentes de la CS-SIS en otros sistemas de Europol.
+8. Los Estados miembros informarán a Europol mediante el intercambio de información complementaria de cualquier respuesta positiva para descripciones relacionadas con delitos de terrorismo. (…)
+
+
+## Artículos 36 y 37 — Guardia Europea de Fronteras y Costas y evaluación
+Art. 36.3. (…) los miembros de los equipos solo actuarán en respuesta a una descripción del SIS siguiendo las instrucciones de los guardias de fronteras del Estado miembro de acogida (…) y, como norma general, en su presencia. (…)
+Art. 37.1. La Comisión llevará a cabo al menos cada cinco años una evaluación del funcionamiento y la utilización del SIS por parte de Europol y de los equipos mencionados en el artículo 36 (…).
+
+
+## Artículo 39 — Plazo de revisión de las descripciones
+1. Las descripciones se conservarán solo durante el tiempo necesario para alcanzar los fines para los que hayan sido introducidas.
+2. El Estado miembro emisor revisará la necesidad de conservar una descripción en el SIS en un plazo máximo de tres años a partir de su introducción. No obstante, si la decisión nacional sobre la que se basa la descripción tiene un período de validez superior a tres años, la descripción se revisará a los cinco años.
+3. Cada Estado miembro fijará, cuando corresponda, plazos de revisión más cortos con arreglo al Derecho nacional.
+4. Durante el plazo de revisión, el Estado miembro emisor podrá decidir, tras una evaluación completa del caso concreto, de la que deberá quedar constancia, que se conserve la descripción durante un período de tiempo más largo (…). Toda prórroga será comunicada a la CS-SIS.
+5. Las descripciones se suprimirán automáticamente una vez que expire el plazo de revisión (…), excepto cuando el Estado miembro emisor haya comunicado la prórroga a la CS-SIS (…). La CS-SIS informará automáticamente al Estado miembro emisor acerca de la supresión programada de los datos, con una antelación de cuatro meses.
+7. Desde el momento en que una oficina Sirene tenga constancia de que una descripción ha cumplido su objetivo y (…) debe suprimirse, lo notificará inmediatamente a la autoridad que haya creado la descripción. La autoridad dispondrá de quince días naturales desde la recepción de esa notificación para indicar que la descripción se ha suprimido o se suprimirá, o para justificar su conservación. Si no se recibiese ninguna respuesta (…), la oficina Sirene se asegurará de que se suprima la descripción. (…)
+
+
+## Artículo 40 — Supresión de descripciones
+1. Las descripciones para la denegación de entrada y estancia (…) se suprimirán: a) cuando la decisión sobre cuya base se introdujo la descripción haya sido revocada o anulada por la autoridad competente; (…)
+3. Las descripciones sobre personas que hayan adquirido la nacionalidad de un Estado miembro o de cualquier Estado cuyos nacionales disfruten del derecho de libre circulación con arreglo al Derecho de la Unión se suprimirán en cuanto el Estado miembro emisor tenga conocimiento (…).
+4. Las descripciones se suprimirán una vez que alcancen su fecha de expiración de acuerdo con el artículo 39.
+
+
+#### Capítulo VIII — Normas generales de tratamiento de datos
+
+## Artículos 41 y 42 — Tratamiento y ficheros nacionales
+Art. 41.2. Los datos solo podrán copiarse con fines técnicos, cuando sea necesario para la consulta directa por las autoridades competentes (…). Los Estados miembros no podrán copiar los datos de una descripción o datos adicionales introducidos por otro Estado miembro desde su N.SIS o la CS-SIS en otros ficheros de datos nacionales.
+Art. 41.3. Las copias técnicas (…) que den lugar a bases de datos fuera de línea solo podrán conservarse durante 48 horas como máximo. No obstante (…), no se permitirán las copias técnicas que den lugar a bases de datos fuera de línea para uso de las autoridades responsables de la expedición de visados, salvo las copias que se hagan con el único fin de utilizarlas en situaciones de emergencia ante la imposibilidad de acceder a la red durante más de 24 horas. (…)
+Art. 42.1. (…) Dichos datos se conservarán en los ficheros nacionales durante un período máximo de tres años, salvo si la normativa nacional contiene disposiciones específicas que prevean un plazo de conservación más largo.
+
+
+## Artículo 44 — Calidad de los datos del SIS
+1. El Estado miembro emisor será responsable de la exactitud y actualidad de los datos y de la legalidad de su introducción y almacenamiento en el SIS.
+3. El Estado miembro emisor será el único autorizado para modificar, completar, rectificar, actualizar o suprimir los datos que haya introducido en el SIS.
+5. Si un Estado miembro distinto del Estado miembro emisor dispone de indicios que permitan presumir que un dato contiene errores de hecho o que ha sido almacenado ilegalmente, informará (…) al Estado miembro emisor en cuanto sea posible y, a más tardar, dos días laborables después de haber tenido conocimiento de dichos indicios. (…)
+6. Si los Estados miembros no pudieran llegar a un acuerdo en el plazo de dos meses (…), el Estado miembro que no ha introducido la descripción someterá el asunto a las autoridades de control competentes y al Supervisor Europeo de Protección de Datos para que adopten una decisión (…).
+
+
+## Artículos 45 a 48 — Incidentes, personas similares, usurpación de identidad y conexiones
+Art. 45.6. La Comisión informará de inmediato al Parlamento Europeo y al Consejo sobre los incidentes graves. (…)
+Art. 46.1. Cuando, al introducirse una nueva descripción, se ponga de manifiesto que ya existe una descripción en el SIS sobre una persona con las mismas características identificativas, la oficina Sirene se pondrá en contacto, en un plazo de doce horas, con el Estado miembro emisor (…).
+Art. 47.1. En caso de que pueda surgir confusión entre la persona a la que realmente se refiere una descripción y otra persona cuya identidad haya sido usurpada, el Estado miembro emisor deberá añadir, con el consentimiento expreso de esta última, datos sobre ella a la descripción (…).
+Art. 48.1. Los Estados miembros podrán crear conexiones entre las descripciones que introduzcan en el SIS. (…)
+Art. 48.4. Los Estados miembros crearán una conexión entre descripciones cuando exista una necesidad operativa.
+Art. 48.6. La Comisión adoptará actos de ejecución a fin de establecer y desarrollar las normas técnicas necesarias para la conexión entre descripciones. (…)
+
+
+## Artículos 49 y 50 — Información complementaria y terceros
+Art. 49.2. Los datos personales conservados en ficheros por la oficina Sirene como resultado de un intercambio de información (…) se suprimirán a más tardar un año después de que se haya suprimido del SIS la descripción correspondiente.
+Art. 50. Los datos tratados en el SIS y la correspondiente información complementaria (…) no se transmitirán ni se pondrán a disposición de terceros países ni de organizaciones internacionales.
+
+
+#### Capítulos IX y X — Protección de datos, responsabilidad y sanciones
+
+## Artículo 51 — Legislación aplicable
+2. El Reglamento (UE) 2016/679 será aplicable al tratamiento de datos personales realizado (…) por las autoridades competentes (…), excepto el tratamiento para fines de prevención, detección, investigación o enjuiciamiento de delitos (…), cuando sea de aplicación la Directiva (UE) 2016/680.
+
+
+## Artículos 55 a 57 — Supervisión
+Art. 55.1. Los Estados miembros velarán por que las autoridades de control independientes (…) supervisen la legalidad del tratamiento de datos personales del SIS en su territorio (…).
+Art. 55.2. Las autoridades de control velarán por que se lleve a cabo una auditoría de las operaciones de tratamiento de datos en los N.SIS de acuerdo con las normas internacionales de auditoría, al menos cada cuatro años. (…)
+Art. 56.2. Al menos cada cuatro años, el Supervisor Europeo de Protección de Datos llevará a cabo una auditoría del tratamiento de datos personales por parte de eu-LISA (…).
+Art. 57.3. (…) las autoridades de control y el Supervisor Europeo de Protección de Datos se reunirán al menos dos veces al año en el marco del Comité Europeo de Protección de Datos. (…)
+Art. 57.4. El Comité Europeo de Protección de Datos enviará anualmente al Parlamento Europeo, al Consejo y a la Comisión un informe conjunto de actividades (…).
+
+
+## Artículos 58 y 59 — Responsabilidad y sanciones
+Art. 58.3. Las reclamaciones de indemnización contra un Estado miembro (…) se regirán por el Derecho nacional de dicho Estado miembro. (…)
+Art. 59. Los Estados miembros garantizarán que toda utilización indebida de los datos del SIS (…) se sancionen con arreglo al Derecho nacional. Las sanciones así establecidas serán efectivas, proporcionadas y disuasorias.
+
+
+## Artículo 60 — Seguimiento y estadísticas
+3. Eu-LISA elaborará estadísticas diarias, mensuales y anuales que muestren el número de inscripciones por categoría de descripción (…). El informe estadístico anual se publicará.
+
+
+
+#### 5.2 — REGLAMENTO (CE) N.º 767/2008, DE 9 DE JULIO DE 2008, SOBRE EL SISTEMA DE INFORMACIÓN DE VISADOS (VIS) Y EL INTERCAMBIO DE DATOS SOBRE VISADOS DE CORTA DURACIÓN (REGLAMENTO VIS) — texto del temario con las reformas posteriores
+
+## Artículos 1 y 2 — Objeto y objetivo del VIS
+Art. 1. El presente Reglamento define el objetivo, las funcionalidades y las responsabilidades relacionadas con el Sistema de Información de Visados (VIS) (…). Establece las condiciones y los procedimientos de intercambio de datos entre los Estados miembros sobre las solicitudes de visados para estancia de corta duración y sobre las decisiones correspondientes, incluidas las decisiones de anulación, retirada o ampliación de visados (…).
+Art. 2. El VIS tendrá por objetivo mejorar la aplicación de la política común de visados, la cooperación consular y las consultas entre las autoridades centrales de visados, facilitando el intercambio de datos entre los Estados miembros sobre las solicitudes y sobre las decisiones relativas a las mismas, a fin de: a) facilitar el procedimiento de solicitud de visado; b) impedir que se incumplan los criterios para determinar el Estado miembro responsable del examen de la solicitud; c) facilitar la lucha contra el fraude; d) facilitar los controles en los puntos de paso de las fronteras exteriores y en el territorio de los Estados miembros; e) prestar asistencia en la identificación de cualquier persona que no cumpla o haya dejado de cumplir las condiciones de entrada, estancia o residencia (…); f) (…); g) contribuir a la prevención de amenazas contra la seguridad interior de cualquier Estado miembro.
+
+
+## Artículo 3 — Acceso con fines de prevención del terrorismo y delitos graves
+1. Las autoridades designadas de los Estados miembros podrán solicitar acceso para consultar los datos almacenados en el VIS (…) en un caso concreto y previa solicitud escrita o electrónica debidamente motivada (…). Europol podrá acceder al VIS en el marco de su mandato y, siempre que sea necesario, para cumplir sus cometidos.
+2. La consulta (…) se llevará a cabo a través de uno o varios puntos centrales de acceso que serán responsables de garantizar el cumplimiento estricto de las condiciones de acceso y de los procedimientos establecidos en la Decisión 2008/633/JAI (…). En un caso excepcional de urgencia, los puntos centrales de acceso podrán recibir solicitudes por escrito, electrónicas o verbales y verificar a posteriori únicamente si se cumplen todas las condiciones de acceso (…).
+3. Los datos obtenidos del VIS (…) no se transmitirán ni se pondrán a disposición de un tercer país u organización internacional. No obstante, en un caso excepcional de urgencia, estos datos podrán transmitirse (…) solamente con vistas a la prevención y detección de los delitos de terrorismo y otros delitos graves (…).
+
+
+## Artículo 4 — Definiciones
+2) «etiqueta adhesiva de visado», el modelo uniforme de visado definido en el Reglamento (CE) n.º 1683/95;
+6) «miembros del grupo», los solicitantes obligados por razones jurídicas a entrar juntos en el territorio de un Estado miembro y a salir juntos de él;
+7) «documento de viaje», un pasaporte o cualquier otro documento equivalente que permite a su titular cruzar las fronteras exteriores y en el que puede insertarse el visado;
+8) «Estado miembro responsable», el Estado miembro que ha introducido datos en el VIS;
+9) «verificación», el proceso de comparación de series de datos para establecer la validez de una identidad declarada (control por comparación de dos muestras);
+10) «identificación», el proceso de determinación de la identidad de una persona por comparación entre varias series de datos de una base de datos (control por comparación de varias muestras);
+11) «datos alfanuméricos», los datos representados por letras, dígitos, caracteres especiales, espacios y signos de puntuación.
+
+
+## Artículos 5 y 6 — Categorías de datos y acceso
+Art. 5.1. En el VIS solo se registrarán las categorías de datos siguientes: a) los datos alfanuméricos sobre el solicitante y sobre los visados (…); b) las fotografías (…); c) las impresiones dactilares (…); d) los vínculos con otras solicitudes (…).
+Art. 5.2. Los mensajes transmitidos por la infraestructura del VIS a que se refieren el artículo 16, el artículo 24, apartado 2, y el artículo 25, apartado 2, no se registrarán en el VIS, sin perjuicio del registro de las operaciones de tratamiento de datos conforme al artículo 34.
+Art. 6.1. El acceso al VIS para introducir, modificar o suprimir los datos (…) estará reservado exclusivamente al personal debidamente autorizado de las autoridades competentes en materia de visados.
+Art. 6.3. (…) En un plazo de tres meses a partir del momento en que el VIS haya entrado en funcionamiento (…), la Comisión publicará una lista consolidada en el Diario Oficial de la Unión Europea. (…)
+
+
+## Artículo 6 (apartados 2 sexies y 2 septies) — Límite de acceso a datos de permisos de residencia
+(…) las autoridades designadas de los Estados miembros y Europol no tendrán acceso a los datos del VIS relativos a las personas que hayan sido titulares de permisos de residencia válidos registrados en el VIS (…) durante un período ininterrumpido igual o superior a diez años.
+2 septies. (…) los miembros de los equipos de la Guardia Europea de Fronteras y Costas, excepto los equipos de gestión de fronteras, no tendrán acceso a los datos del VIS relativos a las personas que hayan sido titulares de permisos de residencia válidos registrados en el VIS (…) durante un período ininterrumpido igual o superior a diez años.
+
+
+## Artículo 7 — Principios generales
+1. Toda autoridad competente autorizada para acceder al VIS (…) garantizará que la utilización del VIS es necesaria, apropiada y proporcionada para cumplir los cometidos de las autoridades competentes.
+2. Toda autoridad competente garantizará que al utilizar el VIS no discriminará a los solicitantes o titulares de visado por motivos de sexo, origen racial o étnico, religión o convicciones, discapacidad, edad u orientación sexual y que respetará plenamente la dignidad humana y la integridad del solicitante o titular de visado.
+
+
+#### Capítulo II — Introducción y utilización de los datos por las autoridades de visados
+
+## Artículo 8 — Introducción de datos al recibirse la solicitud
+2. Al crear el expediente de solicitud, la autoridad competente en materia de visados comprobará si, de conformidad con el artículo 15, algún Estado miembro ha registrado en el VIS una solicitud anterior del mismo solicitante.
+3. Si se hubiere registrado una solicitud anterior, la autoridad competente en materia de visados vinculará cada nuevo expediente de solicitud con el expediente de solicitud anterior del mismo solicitante.
+4. Si el solicitante viaja en grupo con otros solicitantes o con su cónyuge y sus hijos, la autoridad competente en materia de visados creará un expediente de solicitud para cada solicitante y vinculará los expedientes de solicitud de las personas que viajan juntas.
+5. Cuando no sea obligatorio proporcionar datos concretos por motivos jurídicos o de hecho, en el campo o campos relativos a datos específicos se indicará «no procede». En el caso de impresiones dactilares, el sistema deberá permitir (…) que se distinga entre los casos en que dichas impresiones dactilares no se exigen por motivos jurídicos y aquellos en que estas no pueden facilitarse de hecho. Transcurridos cuatro años esta función expirará si no se confirma mediante una decisión de la Comisión (…).
+
+
+## Artículos 9 a 14 — Datos del expediente
+Art. 9. La autoridad competente en materia de visados introducirá en el expediente de solicitud los datos siguientes: 1) número de expediente; (…) 4) los datos siguientes extraídos del formulario de solicitud: a) apellidos (…); nombre(s); sexo; fecha, lugar y país de nacimiento; b) nacionalidad actual y nacionalidad de nacimiento; c) tipo y número de documento de viaje (…); d) lugar y fecha de la solicitud; e) tipo de visado solicitado; f) información detallada sobre la persona que ha cursado una invitación o que puede sufragar los gastos de mantenimiento (…); g) destino principal y duración de la estancia prevista; h) motivo del viaje; i) fechas de llegada y de salida previstas; j) primera frontera de entrada o itinerario de tránsito previstos; k) residencia; l) ocupación actual (…); m) en el caso de menores, apellidos y nombre(s) del padre y de la madre (…); 5) una fotografía del solicitante, de conformidad con el Reglamento (CE) n.º 1683/95; 6) impresiones dactilares del solicitante (…).
+Art. 10.1.j) si procede, la indicación de que el visado se ha expedido en una hoja aparte, de conformidad con el Reglamento (CE) n.º 333/2002 (…).
+Art. 10.2. Si un solicitante retira o no prosigue su solicitud antes de que se haya adoptado una decisión (…), la autoridad competente (…) indicará que dicho expediente de solicitud se ha cerrado por esos motivos y la fecha en que se cerró.
+Art. 11.4) (interrupción del examen por la autoridad que representa a otro Estado) Estado miembro competente para examinar la solicitud.
+Art. 12.1. Una vez adoptada la decisión de denegación del visado, la autoridad competente (…) que denegó el visado añadirá en el expediente de solicitud los datos siguientes: a) información sobre la situación del expediente, con la indicación de que se ha denegado el visado; b) autoridad que denegó el visado, incluida su ubicación; c) lugar y fecha de la decisión de denegar el visado.
+Art. 13.2.b) en caso de decisión de reducir el período de validez del visado: i) a efectos de la expulsión del titular del visado, ii) falta de medios de subsistencia adecuados para el período de duración de la estancia prevista.
+Art. 14.2. En el expediente de solicitud también se indicarán los motivos de prórroga del visado, que podrán ser uno o varios de los siguientes: a) fuerza mayor; b) motivos humanitarios; c) razones profesionales graves; d) razones personales graves.
+
+
+## Artículo 22 bis — Visados de larga duración y permisos de residencia (capítulo III bis)
+(…) i) en el caso de menores, nombre y apellidos del titular de la patria potestad o la tutela legal; j) imagen facial del solicitante (…); k) impresiones dactilares del solicitante.
+
+
+## Artículos 15 a 17 — Consulta del VIS por las autoridades de visados
+Art. 15.1. La autoridad competente en materia de visados correspondiente consultará el VIS a efectos de examinar las solicitudes y las decisiones relativas a las mismas (…).
+Art. 15.2. (…) podrá efectuar búsquedas con uno o más datos de los siguientes: a) número de expediente; b) los datos del artículo 9.4.a) [apellidos, nombre, sexo, fecha, lugar y país de nacimiento]; c) los datos del documento de viaje (…); d) apellidos, nombre y dirección de la persona física o nombre y dirección de la empresa (…) [que invita o sufraga los gastos]; e) impresiones dactilares; f) números de las etiquetas adhesivas de visado y fecha de expedición de los visados expedidos previamente.
+Art. 16.2. (…) el Estado miembro responsable del examen de la solicitud transmitirá al VIS la petición de consulta con el número de solicitud, indicando el Estado o los Estados miembros que deberán ser consultados.
+Art. 17. Las autoridades competentes en materia de visados podrán acceder a la consulta de los siguientes datos, únicamente a efectos de la presentación de informes y estadísticas, sin que les esté permitida la identificación de solicitantes individuales (…).
+
+
+#### Capítulo III — Acceso a los datos por otras autoridades
+
+## Artículos 18 a 21 — Fronteras, territorio, identificación y asilo
+Art. 18.1. Únicamente a efectos de comprobar la identidad del titular del visado, la autenticidad del visado o el cumplimiento de las condiciones de entrada (…), las autoridades responsables de los controles en los puntos de paso de las fronteras exteriores (…) podrán (…) acceder a la consulta utilizando el número de la etiqueta adhesiva de visado en combinación con las impresiones dactilares del titular del visado.
+Art. 18.2. Durante un plazo máximo de tres años tras el inicio de las operaciones del VIS, la consulta podrá realizarse utilizando solamente el número de la etiqueta adhesiva de visado. (…)
+Art. 18.3. Para los titulares de visado cuyas impresiones dactilares no puedan utilizarse, la consulta se limitará al número de la etiqueta adhesiva de visado.
+Art. 19.1. Únicamente a efectos de comprobar la identidad del titular del visado, la autenticidad del visado o el cumplimiento de las condiciones de entrada, estancia o residencia en el territorio de los Estados miembros, las autoridades responsables de controlar en el territorio de los Estados miembros (…) podrán acceder a la consulta con el número de la etiqueta adhesiva de visado en combinación con las impresiones dactilares del titular del visado, o el número de la etiqueta adhesiva de visado.
+Art. 20.3. Cuando la persona es titular de un visado, las autoridades competentes solo accederán al VIS de acuerdo con los artículos 18 o 19.
+Art. 21.2. Si la búsqueda (…) indica que se ha registrado en el VIS un visado expedido con una fecha de expiración como máximo seis meses anterior a la fecha de solicitud de asilo (…), la autoridad competente en materia de asilo podrá acceder a la consulta de los datos siguientes (…).
+
+
+#### Capítulo IV — Conservación y modificación de los datos
+
+## Artículo 23 — Período de conservación
+1. Cada expediente de solicitud se almacenará en el VIS durante cinco años como máximo (…). Dicho período comenzará: a) en la fecha de expiración del visado, cuando se haya expedido un visado; b) en la nueva fecha de expiración del visado, cuando se haya prorrogado un visado; c) en la fecha de creación del expediente de solicitud en el VIS, en caso de que la solicitud se haya retirado, cerrado o interrumpido; d) en la fecha de la decisión de la autoridad competente en materia de visados en caso de que un visado haya sido denegado, anulado o retirado.
+2. Al expirar el período mencionado en el apartado 1, el VIS suprimirá automáticamente el expediente de solicitud y el vínculo o los vínculos con el mismo (…).
+
+
+## Artículos 24 y 25 — Modificación y supresión anticipada
+Art. 24.1. Solo el Estado miembro responsable tendrá derecho a modificar los datos que ha transmitido al VIS mediante la corrección o supresión de dichos datos.
+Art. 25.1. Cuando antes de expirar el período previsto en el artículo 23, apartado 1, un solicitante haya adquirido la nacionalidad de un Estado miembro, los expedientes de solicitud y los vínculos (…) serán suprimidos inmediatamente del VIS por el Estado miembro que creó el respectivo expediente de solicitud y los vínculos.
+Art. 25.3. Si la denegación de un visado ha sido anulada por un tribunal o un órgano de recurso, el Estado miembro que denegó el visado suprimirá inmediatamente los datos a que se refiere el artículo 12 en cuanto haya pasado a ser definitiva la decisión de anular la denegación del visado.
+
+
+#### Capítulo V — Funcionamiento y responsabilidades
+
+## Artículos 26 y 27 — Gestión operativa y ubicación
+Art. 26.1. Tras un período transitorio, una autoridad de gestión («la Autoridad de Gestión»), financiada con cargo al presupuesto de la Unión Europea, será responsable de la gestión operativa del VIS central y de las interfaces nacionales. (…)
+Art. 26.4. Durante un período transitorio (…), la Comisión será responsable de la gestión operativa del VIS. La Comisión podrá delegar esta función (…) a organismos nacionales del sector público, en dos Estados miembros diferentes.
+Art. 26.5.e) su entorno administrativo debe permitirle desempeñar adecuadamente sus funciones y evitar todo conflicto de intereses.
+Art. 26.6. Antes de proceder a toda delegación (…), la Comisión informará al Parlamento Europeo y al Consejo de las condiciones de la delegación, de su alcance exacto y de los organismos en los que se han delegado funciones.
+Art. 26.8. La gestión operativa del VIS consistirá en todas las funciones necesarias para mantener el sistema en funcionamiento durante las 24 horas del día, 7 días a la semana (…), y, en particular, en el trabajo de mantenimiento y de desarrollo técnico necesario para garantizar que el sistema funciona a un nivel suficiente de calidad operativa (…).
+Art. 27. El VIS central principal (…) estará situado en Estrasburgo (Francia), y habrá una copia de seguridad del VIS central (…) en Sankt Johann im Pongau (Austria).
+
+
+## Artículos 28 y 29 — Relación con los sistemas nacionales y responsabilidades
+Art. 28.4. Los Estados miembros serán responsables: a) del desarrollo del sistema nacional o de su adaptación al VIS (…); b) de la organización, gestión, funcionamiento y mantenimiento de su sistema nacional; c) de la gestión y las disposiciones oportunas para el acceso al VIS del personal debidamente autorizado (…); d) de sufragar los costes de los sistemas nacionales y los costes de su conexión a la interfaz nacional (…).
+Art. 28.5. Antes de quedar autorizado a tratar los datos almacenados en el VIS, el personal (…) recibirá la formación adecuada sobre normas de seguridad y protección de datos y será informado de los delitos y sanciones penales pertinentes.
+Art. 29.2. La Autoridad de Gestión (…): a) adoptará las medidas necesarias para garantizar la seguridad del VIS central y la infraestructura de comunicación (…); b) garantizará que solo el personal debidamente autorizado tenga acceso a los datos tratados en el VIS para el desempeño de las tareas de la Autoridad de Gestión (…).
+
+
+## Artículos 30 y 31 — Archivos nacionales y terceros países
+Art. 30.1. Los datos extraídos del VIS podrán registrarse en archivos nacionales solo cuando sea necesario y en casos concretos, de conformidad con el objetivo del VIS y de acuerdo con las disposiciones legales pertinentes (…).
+Art. 31.2. (…) podrán transmitirse (…) a un tercer país o a una organización internacional (…) para probar la identidad de nacionales de terceros países, también con fines de devolución, exclusivamente cuando se cumplan las condiciones siguientes: (…) d) consentimiento por parte del Estado o Estados miembros que han registrado los datos en el VIS.
+Art. 31.3. Estas transmisiones (…) no afectarán a los derechos de los refugiados y de las personas que solicitan una protección a nivel internacional, en particular en relación con el principio de no expulsión.
+
+
+## Artículos 32 a 36 — Seguridad, responsabilidad, registros y sanciones
+Art. 32.1. El Estado miembro responsable garantizará la seguridad de los datos antes y durante su transmisión a la interfaz nacional. Cada Estado miembro garantizará la seguridad de los datos que reciba del VIS.
+Art. 33.2. Si el incumplimiento por un Estado miembro de las obligaciones que le impone el presente Reglamento causa daños al VIS, dicho Estado miembro será considerado responsable de los daños, a no ser que la Autoridad de Gestión u otro Estado miembro no haya adoptado las medidas adecuadas para impedir que se produjeran dichos daños o para atenuar sus efectos.
+Art. 34.2. (…) se suprimirán transcurrido un período de un año desde la expiración del período de conservación a que se refiere el artículo 23, apartado 1, siempre que no sean necesarios para procedimientos de control ya iniciados.
+Art. 36. Los Estados miembros adoptarán las medidas necesarias para garantizar que todo abuso de los datos registrados en el VIS sea objeto de sanciones, incluidas las administrativas y penales (…), que serán efectivas, proporcionadas y disuasorias.
+
+
+#### Capítulo VI — Derechos y supervisión de la protección de datos
+
+## Artículos 37 y 38 — Información y derechos de acceso, corrección y supresión
+Art. 37.3. La información (…) se suministrará a las personas a que se refiere el artículo 9, apartado 4, letra f) [quien invita o sufraga los gastos], en las declaraciones de invitación, toma a cargo y alojamiento que deberán firmar dichas personas.
+Art. 38.3. Si la solicitud (…) se presenta a un Estado miembro distinto del Estado miembro responsable, las autoridades del Estado miembro al que se presentó la solicitud se pondrán en contacto con las autoridades del Estado miembro responsable dentro de un plazo de 14 días. El Estado miembro responsable controlará la exactitud de los datos y la legalidad de su tratamiento en el VIS en el plazo de un mes.
+
+
+## Artículos 42 y 43 — Supervisor Europeo de Protección de Datos
+Art. 42.2. El Supervisor Europeo de Protección de Datos velará por que se lleve a cabo una auditoría de las actividades de tratamiento de datos personales de la Autoridad de Gestión (…) al menos cada cuatro años. (…)
+Art. 43.4. Cada dos años se remitirá al Parlamento Europeo, al Consejo, a la Comisión y a la Autoridad de Gestión un informe conjunto sobre las actividades realizadas. (…)
+
+
+#### Consejos del VIS (reforma de 2021) y disposiciones finales
+
+## Artículos 9 duodecies y 9 terdecies — Consejo de Detección y Consejo de Orientación sobre Derechos Fundamentales del VIS
+Art. 9 duodecies.1. Se crea un Consejo de Detección del VIS con funciones consultivas en la Agencia Europea de la Guardia de Fronteras y Costas. Estará integrado por un representante de la autoridad central competente en materia de visados de cada Estado miembro, de la Agencia Europea de la Guardia de Fronteras y Costas y de Europol.
+2. La unidad central del SEIAV consultará al Consejo de Detección del VIS en lo que se refiere a la definición, el establecimiento, la evaluación inicial, la aplicación, la evaluación posterior, la revisión y la supresión de los indicadores de riesgo específicos (…).
+4. El Consejo de Detección del VIS se reunirá cuando sea necesario y al menos dos veces al año. Los gastos y la organización de las reuniones correrán a cargo de la Agencia Europea de la Guardia de Fronteras y Costas.
+6. El Consejo de Detección del VIS adoptará su reglamento interno en su primera reunión por mayoría simple de sus miembros.
+Art. 9 terdecies. Se crea un Consejo de Orientación sobre Derechos Fundamentales del VIS independiente con funciones consultivas y de evaluación. (…) Se reunirá cuando sea necesario y al menos dos veces al año. (…)
+
+
+## Artículos 48 a 51 — Inicio de operaciones, evaluación y aplicación
+Art. 48.4. (…) Los criterios para determinar esas regiones serán el riesgo de inmigración ilegal, las amenazas a la seguridad interna de los Estados miembros y la viabilidad de recoger datos biométricos de todas las localidades de esa región.
+Art. 48.6. Los Estados miembros no podrán consultar los datos transmitidos al VIS por otro Estado miembro si antes él u otro Estado miembro que lo represente no han empezado a introducir los datos (…).
+Art. 49.2. (…) El plazo contemplado en el artículo 4, apartado 3, de la Decisión 1999/468/CE queda fijado en dos meses.
+Art. 50.3. Cada dos años, eu-LISA presentará al Parlamento Europeo, al Consejo y a la Comisión un informe sobre el funcionamiento técnico del VIS, con inclusión de su seguridad y costes. (…)
+Art. 50.4. (…) la Comisión realizará una evaluación global del VIS tres años después de que inicie sus operaciones el VIS y posteriormente cada cuatro años (…).
+Art. 51.3. Los artículos 26, 27, 32 y 45, el artículo 48, apartados 1, 2 y 4, y el artículo 49 serán de aplicación a partir del 2 de septiembre de 2008.
+
+
+
+#### 5.3 — REGLAMENTO (CE) N.º 810/2009, DE 13 DE JULIO DE 2009, POR EL QUE SE ESTABLECE UN CÓDIGO COMUNITARIO SOBRE VISADOS (CÓDIGO DE VISADOS) — con las reformas del Rgto. (UE) 2019/1155 y del Rgto. Delegado (UE) 2024/1415 (tasas)
+
+## Artículo 1 — Objeto y ámbito de aplicación
+1. El presente Reglamento establece los procedimientos y las condiciones para la expedición de visados para las estancias previstas en el territorio de los Estados miembros no superiores a noventa días en cualquier período de 180 días.
+
+
+## Reglamento (UE) 2019/1155, considerando 5 — El procedimiento de solicitud
+(5) El procedimiento de solicitud debe ser lo más sencillo posible para los solicitantes. Debe quedar claro qué Estado miembro es competente para examinar la solicitud, en particular cuando el solicitante pretende viajar a varios Estados miembros. (…)
+
+
+## Artículo 2 — Definiciones
+3) «visado uniforme»: el visado válido para todo el territorio de los Estados miembros;
+4) «visado de validez territorial limitada»: el visado válido para el territorio de uno o más Estados miembros, pero no todos;
+5) «visado de tránsito aeroportuario»: el visado válido para transitar por las zonas internacionales de tránsito de uno o varios aeropuertos de los Estados miembros;
+11) «intermediario comercial»: gestoría privada, empresa de transporte o agencia de viaje (operador turístico o minorista del sector turístico);
+12) «marino»: toda persona que esté empleada o que trabaje en cualquier puesto a bordo de un buque de navegación marítima o de un buque que navegue en aguas interiores internacionales.
+
+
+## Artículo 3.5 — Exentos del visado de tránsito aeroportuario
+Las siguientes categorías de personas estarán exentas del requisito de posesión del visado de tránsito aeroportuario (…): a) los titulares de un visado uniforme válido, de un visado nacional de larga duración o de un permiso de residencia expedido por un Estado miembro; (…) e) los titulares de pasaportes diplomáticos; f) los miembros de las tripulaciones de vuelo que sean nacionales de una Parte contratante del Convenio de Chicago sobre Aviación Civil Internacional.
+
+
+## Artículos 4 y 5 — Quién examina y qué Estado es competente
+Art. 4.1. Corresponderá a los consulados examinar las solicitudes y decidir al respecto.
+Art. 5.1. El Estado miembro competente para examinar y decidir sobre una solicitud de visado uniforme será: a) el Estado miembro cuyo territorio sea el único destino de la visita o visitas; b) si la visita incluye más de un destino (…), el Estado miembro cuyo territorio sea, por la duración de la estancia, contabilizada en días, o por su finalidad, el destino principal (…), o c) si no puede determinarse un destino principal, el Estado miembro cuya frontera exterior se proponga cruzar el solicitante para entrar en el territorio de los Estados miembros.
+Art. 5.2. El Estado miembro competente para (…) una solicitud de visado uniforme con fines de tránsito será: a) en caso de tránsito a través de un único Estado miembro, el Estado miembro de que se trate, o b) en caso de tránsito a través de varios Estados miembros, el Estado miembro cuya frontera exterior se proponga cruzar el solicitante para iniciar el tránsito.
+
+
+## Artículo 8 — Acuerdos de representación
+7. El Estado miembro representado notificará a la Comisión los acuerdos de representación o la terminación de dichos acuerdos a más tardar veinte días naturales antes de su entrada en vigor o de su terminación, excepto en casos de fuerza mayor.
+
+
+#### Capítulo II — La solicitud
+
+## Artículo 9 — Modalidades prácticas para la presentación de una solicitud
+1. Las solicitudes no se presentarán más de seis meses antes, y para los marinos en el ejercicio de sus funciones, no más de nueve meses antes, del inicio de la visita prevista y, como norma, no menos de quince días naturales antes del comienzo de dicha visita. En casos individuales urgentes y justificados, los consulados o las autoridades centrales podrán permitir la presentación de solicitudes menos de quince días hábiles antes del comienzo de la visita prevista.
+2. Se podrá exigir a los solicitantes que obtengan una cita para la presentación de una solicitud. La cita tendrá lugar, por regla general, en un plazo de dos semanas a partir de la fecha en que se haya solicitado la cita.
+3. En casos de urgencia justificados, el consulado podrá permitir que los solicitantes presenten su solicitud sin cita previa, o bien se concertará una cita inmediatamente.
+
+
+## Artículos 11 y 12 — Impreso de solicitud y documento de viaje
+Art. 11. El impreso estará disponible, como mínimo, en las lenguas siguientes: en la lengua o lenguas oficiales del Estado miembro para el que se solicite el visado o del Estado miembro de representación, y en la lengua o lenguas oficiales del país de acogida. (…)
+Art. 12. El solicitante presentará un documento de viaje válido que responda a los criterios siguientes: a) será válido al menos hasta tres meses después de la fecha prevista de salida del territorio de los Estados miembros (…); b) contendrá al menos dos páginas en blanco; c) deberá haberse expedido en los diez años anteriores.
+
+
+## Artículo 13 — Identificadores biométricos
+1. Los Estados miembros tomarán identificadores biométricos del solicitante, que comprenderán una fotografía y diez impresiones dactilares de este (…).
+2. En el momento de la presentación de la primera solicitud, el solicitante deberá presentarse personalmente. En ese momento se tomarán del solicitante los siguientes identificadores biométricos: — una fotografía, escaneada o tomada en el momento de la solicitud, y — sus diez impresiones dactilares, tomadas planas y recogidas digitalmente.
+3. Cuando las impresiones dactilares tomadas de un solicitante como parte de una solicitud anterior se hayan introducido por primera vez en el VIS menos de 59 meses antes de la fecha de la nueva solicitud, se copiarán en la solicitud posterior. (…)
+
+
+## Artículo 15 — Seguro médico de viaje
+3. El seguro deberá ser válido en el territorio de los Estados miembros y cubrir todo el período de estancia o tránsito que la persona haya previsto. La cobertura mínima será de 30 000 EUR. (…)
+7. Los titulares de pasaportes diplomáticos estarán exentos del requisito de poseer un seguro médico de viaje.
+
+
+## Artículo 16 — Tasas de visado (reforma de 2024)
+1. Los solicitantes pagarán una tasa de visado de 90 EUR.
+2. Las tasas de visado para los niños de entre seis y doce años serán de 45 EUR.
+2 bis. Se aplicará una tasa de visado de 135 EUR o 180 EUR si el Consejo adopta una decisión de ejecución (…). Esta disposición no se aplicará a los niños menores de 12 años.
+4. Quedarán exentos del pago de las tasas de visado los solicitantes que pertenezcan a alguna de las siguientes categorías: a) niños menores de seis años; b) estudiantes de los distintos ciclos, incluido el postgrado, que efectúen estancias con fines educativos o de formación, y profesores acompañantes; c) investigadores (…) que se desplacen con fines de investigación científica o que participen en conferencias o seminarios científicos; d) representantes de organizaciones sin ánimo de lucro que no sean mayores de veinticinco años y que vayan a participar en seminarios, conferencias o acontecimientos deportivos, culturales o educativos, organizados por organizaciones sin ánimo de lucro.
+6. En determinados casos, el importe de las tasas de visado podrá reducirse o suprimirse cuando ello sirva para fomentar intereses culturales o deportivos, intereses en el ámbito de la política exterior, la política de desarrollo y otros ámbitos de interés público esencial, o por razones humanitarias o debido a obligaciones internacionales.
+
+
+#### Capítulos III y IV — Examen, decisión y expedición
+
+## Artículos 22 y 23 — Consulta previa y plazo de decisión
+Art. 22.1. Por motivos de amenaza para el orden público, la seguridad interior, las relaciones internacionales o la salud pública, los Estados miembros podrán requerir a las autoridades centrales de otros Estados miembros que consulten a sus autoridades centrales durante el examen de las solicitudes (…). Esta consulta no se efectuará en el caso de las solicitudes de visado de tránsito aeroportuario.
+Art. 23.1. La decisión sobre las solicitudes se tomará en el plazo de 15 días naturales a partir de la fecha de presentación de una solicitud que sea admisible (…).
+Art. 23.2. Este plazo podrá ampliarse a un máximo de cuarenta y cinco días naturales en casos concretos (…).
+
+
+## Artículo 24 — Expedición de un visado uniforme
+1. (…) Un visado podrá expedirse para una, dos o múltiples entradas. El período de validez no será superior a cinco años. (…)
+2. Siempre que el solicitante cumpla las condiciones de entrada (…), los visados para entradas múltiples de larga validez se expedirán para los períodos de validez siguientes (…): a) por un período de validez de un año, siempre que el solicitante haya obtenido y utilizado legalmente tres visados en los dos años anteriores; b) por un período de validez de dos años, siempre que el solicitante haya obtenido y utilizado legalmente un visado para entradas múltiples con una validez de un año en los dos años anteriores; c) por un período de validez de cinco años, siempre que el solicitante haya obtenido y utilizado legalmente un visado para entradas múltiples con una validez de dos años en los tres años anteriores.
+
+
+## Artículo 27 — Cumplimentación de la etiqueta de visado
+2. Los Estados miembros podrán añadir anotaciones nacionales en la sección de «observaciones» de la etiqueta de visado. Esas anotaciones no duplicarán las anotaciones obligatorias (…).
+
+
+## Artículos 33 y 34 — Prórroga y anulación
+Art. 33.1. El período de validez de un visado ya expedido o la duración de la estancia autorizada por este se prorrogará si la autoridad competente (…) considera que el titular del visado ha demostrado la existencia de razones humanitarias o de fuerza mayor (…). Las prórrogas que obedezcan a estos motivos se concederán gratuitamente.
+Art. 33.5. Los Estados miembros notificarán a la Comisión quiénes son las autoridades competentes para realizar la prórroga de visados.
+Art. 34.1. El visado se anulará si se pone de manifiesto que, en el momento en que se expidió, no se cumplían las condiciones necesarias para su expedición, especialmente si existen motivos fundados para creer que el visado se obtuvo de forma fraudulenta. (…)
+
+
+#### Título IV — Gestión administrativa y organización
+
+## Artículos 37 a 39 — Archivo, recursos y conducta del personal
+Art. 37.3. Los expedientes de solicitud se conservarán durante un mínimo de un año a partir de la fecha de la decisión sobre la solicitud (…) o, en caso de recurso, hasta el final del procedimiento de recurso, si esta fecha es posterior. (…)
+Art. 39.1. Los consulados de los Estados miembros asegurarán que los solicitantes sean recibidos con cortesía.
+Art. 39.2. El personal de los consulados y de las autoridades centrales, en el ejercicio de sus funciones, respetará plenamente la dignidad humana. Cualesquiera medidas que se adopten serán proporcionadas a los objetivos perseguidos por estas.
+Art. 39.3. En la realización de sus tareas, el personal de los consulados y de las autoridades centrales no discriminará a las personas por razones de sexo, raza u origen étnico, religión o creencia, discapacidad, edad u orientación sexual.
+
+
+## Artículos 43 y 45 — Proveedores de servicios externos e intermediarios comerciales
+Art. 43.4. El examen de las solicitudes, las entrevistas que procedan, la decisión sobre las solicitudes y la impresión y fijación de las etiquetas de visado serán competencia exclusiva del consulado.
+Art. 43.5. Los proveedores de servicios externos no tendrán acceso al VIS en ningún caso. (…)
+Art. 43.6. Un proveedor de servicios externo podrá estar facultado para realizar una o más de las siguientes tareas: a) proporcionar información general sobre los requisitos en materia de visados (…); b) informar al solicitante de los documentos justificativos necesarios, a partir de una lista; c) recoger datos y solicitudes (incluida la recogida de los identificadores biométricos) y transmitir la solicitud al consulado o a las autoridades centrales; d) cobrar las tasas de visado; e) gestionar las citas con el solicitante (…); f) recoger del consulado o de las autoridades centrales los documentos de viaje (…) y devolverlos al solicitante.
+Art. 45. (…) Los intermediarios comerciales acreditados serán objeto de inspecciones aleatorias regulares mediante entrevistas personales o telefónicas con los solicitantes, la comprobación de viajes y alojamientos y, cuando se considere necesario, la comprobación de los documentos relativos al regreso del grupo.
+
+
+## Artículo 57 — Seguimiento y evaluación
+1. La Comisión presentará una evaluación de la aplicación del presente Reglamento a los dos años de la aplicación de todas sus disposiciones. (…)
+
+
+
+#### 5.4 — REGLAMENTO (UE) N.º 977/2011 DE LA COMISIÓN, DE 3 DE OCTUBRE DE 2011, QUE MODIFICA EL CÓDIGO DE VISADOS
+
+## Artículos 1 y 2 — Menciones «VIS» y «VIS 0» y entrada en vigor
+Art. 1. En el punto 9, letra a), del anexo VII del Reglamento (CE) n.º 810/2009, se añaden los guiones siguientes: «— si todos los datos contemplados en el artículo 5, apartado 1, del Reglamento VIS están registrados en el Sistema de Información de Visados, se añadirá la mención siguiente: “VIS”, — si solo los datos contemplados en el artículo 5, apartado 1, letras a) y b), del Reglamento VIS están registrados (…), pero los datos contemplados en la letra c) de dicho apartado [impresiones dactilares] no han sido recogidos por no ser obligatoria la obtención de las impresiones dactilares en la región correspondiente, se añadirá la mención siguiente: “VIS 0”».
+Art. 2. El presente Reglamento entrará en vigor el día de su publicación en el Diario Oficial de la Unión Europea. Será aplicable a partir de la fecha indicada en el artículo 48, apartado 1, del Reglamento (CE) n.º 767/2008.
+
+
+
+#### 5.5 — REGLAMENTO (UE) 2024/1358, DE 14 DE MAYO DE 2024, SOBRE LA CREACIÓN DEL SISTEMA «EURODAC» PARA LA COMPARACIÓN DE DATOS BIOMÉTRICOS (NUEVO en la convocatoria 2026: deroga el Rgto. 603/2013)
+
+## Artículo 1 — Finalidad de «Eurodac»
+1. Se crea un sistema denominado «Eurodac». Su finalidad es: a) apoyar el sistema de asilo, inclusive ayudando a determinar el Estado miembro responsable (…) del examen de las solicitudes de protección internacional (…); (…) c) prestar asistencia en relación con el control de la inmigración irregular a la Unión (…); d) prestar asistencia en la protección de los menores (…); e) establecer las condiciones en las que las autoridades designadas de los Estados miembros y la autoridad designada de Europol podrán solicitar la comparación de datos biométricos o alfanuméricos con los conservados en Eurodac a efectos de aplicación de la ley para la prevención, detección o investigación de los delitos de terrorismo u otros delitos graves; (…)
+
+
+## Artículos 2 y 3 — Definiciones y arquitectura
+Art. 2.1.k) «Punto de Acceso Nacional»: el sistema nacional designado que se comunica con Eurodac.
+Art. 3.1. Eurodac constará de: a) un Sistema Central integrado por: i) una Unidad Central, ii) un plan y un sistema de continuidad operativa; b) una infraestructura de comunicación (…) que proveerá un canal de comunicación seguro y cifrado (…) («Infraestructura de Comunicación»); c) el RCDI; (…)
+Art. 3.4. Cada Estado miembro dispondrá de un único Punto de Acceso Nacional. Europol dispondrá de un único punto de acceso (…).
+
+
+## Artículo 4 — Gestión operativa
+1. eu-LISA será responsable de la gestión operativa de Eurodac. La gestión operativa de Eurodac consistirá en todas las funciones necesarias para mantener Eurodac en funcionamiento durante las 24 horas del día, siete días a la semana (…).
+3. La Agencia eu-LISA será responsable de las siguientes funciones relacionadas con la Infraestructura de Comunicación: a) supervisión; b) seguridad; c) coordinación de las relaciones entre los Estados miembros y el proveedor.
+4. La Comisión será responsable de todas las funciones relacionadas con la Infraestructura de Comunicación distintas de las mencionadas en el apartado 3, en particular: a) ejecución del presupuesto; b) adquisición y renovación; c) cuestiones contractuales.
+
+
+## Artículos 5 y 7 — Autoridades designadas y Europol
+Art. 5.1. Los Estados miembros designarán (…) a las autoridades que estarán autorizadas a solicitar comparaciones con los datos de Eurodac (…). Las autoridades designadas serán autoridades de los Estados miembros responsables de la prevención, detección o investigación de los delitos de terrorismo o de otros delitos graves.
+Art. 7.2. Europol designará (…) una unidad especializada con agentes de Europol debidamente habilitados para actuar como su autoridad verificadora. (…) La autoridad verificadora de Europol será totalmente independiente de la autoridad designada de Europol (…).
+
+
+#### Recogida de los datos biométricos
+
+## Artículos 13 a 15 — Toma y transmisión de los datos biométricos
+Art. 13.2. Los Estados miembros respetarán la dignidad y la integridad física de la persona durante el proceso de toma de impresiones dactilares y la captación de la imagen facial.
+Art. 15.1. Los Estados miembros tomarán (…) los datos biométricos de cada solicitante de protección internacional de al menos seis años de edad: a) en el momento en el que se registre la solicitud de protección internacional (…) y los transmitirán cuanto antes y, a más tardar, en las 72 horas a partir de dicho registro (…). (…) Cuando el estado de las yemas de los dedos no permita tomar impresiones dactilares de calidad (…), el Estado miembro de origen volverá a tomar las impresiones dactilares del solicitante y las volverá a transmitir cuanto antes y, a más tardar, 48 horas después de que se tomen de nuevo correctamente.
+Art. 15.2. (…) cuando no sea posible tomar los datos biométricos de un solicitante de protección internacional debido a las medidas adoptadas para proteger su salud o la salud pública, los Estados miembros tomarán y transmitirán dichos datos biométricos a la mayor brevedad posible, y a más tardar, 48 horas después de que dejen de darse esas razones de salud. En caso de problemas técnicos graves, los Estados miembros podrán ampliar el plazo de 72 horas (…) en un máximo de 48 horas (…).
+
+
+## Artículo 22 — Personas aprehendidas al cruzar irregularmente una frontera exterior
+1. Cada Estado miembro tomará sin demora (…) los datos biométricos de todos los nacionales de terceros países o apátridas que tengan, como mínimo, seis años de edad y que hayan sido aprehendidos por las autoridades competentes de control con ocasión del cruce irregular de fronteras terrestres, marítimas o aéreas de dicho Estado miembro desde un tercer país (…).
+2. El Estado miembro de que se trate transmitirá lo antes posible, y a más tardar, antes de que transcurran 72 horas desde la fecha de aprehensión (…).
+
+
+#### Conservación, comparación y registros
+
+## Artículo 29 — Conservación de datos
+1. (…) cada conjunto de datos con respecto a un solicitante de protección internacional registrado de conformidad con el artículo 17 se conservará en Eurodac durante diez años a partir de la fecha en que se hayan transmitido los datos biométricos.
+5. (…) [irregulares en un Estado miembro] (…) se conservará en Eurodac durante cinco años a partir de la fecha en que se hayan transmitido los datos biométricos.
+6. (…) [aprehendidos en el cruce irregular, art. 22] (…) durante cinco años (…).
+10. Los datos de los interesados se suprimirán automáticamente de Eurodac al vencer los períodos de conservación (…).
+
+
+## Artículo 31 — Marcado de datos
+1. (…) el Estado miembro de origen que haya concedido protección internacional a una persona cuyos datos hubieran sido registrados previamente en Eurodac con arreglo al artículo 17 marcará los datos correspondientes de conformidad con los requisitos de comunicación electrónica con Eurodac establecidos por eu-LISA. (…) Eurodac informará, lo antes posible y en un plazo máximo de 72 horas, a todos los Estados miembros de origen acerca del marcado (…).
+
+
+## Artículos 33 y 34 — Acceso de las autoridades designadas y de Europol
+Art. 33.1. Las autoridades designadas (…) únicamente podrán presentar una solicitud electrónica motivada de comparación de datos biométricos o alfanuméricos (…) si se han cumplido todas las condiciones siguientes: a) se ha efectuado una comprobación previa en: i) las bases de datos nacionales, y ii) los sistemas automatizados de identificación dactilar de todos los demás Estados miembros en virtud de la Decisión 2008/615/JAI (…); b) la comparación sea necesaria a efectos de prevención, detección o investigación de delitos de terrorismo o de otros delitos graves (…); c) la comparación sea necesaria en un caso concreto para personas concretas, y d) existan motivos razonables para considerar que la comparación contribuirá sustancialmente a la prevención, detección o investigación de cualquiera de los delitos (…).
+Art. 34.1. (…) la autoridad designada de Europol únicamente podrá presentar una solicitud electrónica motivada de comparación de datos biométricos o alfanuméricos (…) dentro del mandato de Europol (…).
+Art. 34.3. Las solicitudes de comparación con los datos de Eurodac a efectos de aplicación de la ley se llevarán a cabo con datos biométricos o alfanuméricos.
+Art. 34.4. El tratamiento de la información obtenida por Europol a partir de comparaciones con los datos de Eurodac estará sujeto a la autorización del Estado miembro de origen. (…)
+
+
+## Artículos 38 y 41 — Comparación y registros
+Art. 38.2. Eurodac llevará a cabo las comparaciones siguiendo el orden de recepción de las solicitudes. Toda solicitud se tramitará en un plazo de 24 horas a partir de su recepción. Los Estados miembros, basándose en razones de Derecho nacional, podrán exigir que se realice una comparación particularmente urgente en el plazo de una hora. (…)
+Art. 38.6. Cuando la identificación final (…) revele que el resultado de la comparación recibido de Eurodac no corresponde a los datos biométricos enviados (…), los Estados miembros suprimirán inmediatamente el resultado de la comparación y comunicarán este hecho lo antes posible, en un plazo máximo de tres días laborables tras la recepción del resultado, a eu-LISA (…).
+Art. 41.4. (…) se suprimirán transcurrido un plazo de un año desde el vencimiento del período de conservación a que se refiere el artículo 29.
+
+
+#### Protección de datos, seguridad y responsabilidad
+
+## Artículos 45 y 46 — Supervisión y auditorías
+Art. 45.2. El Supervisor Europeo de Protección de Datos se asegurará de que, al menos cada tres años, se lleve a cabo una auditoría de las actividades de tratamiento de datos personales de eu-LISA siguiendo normas de auditoría internacionales. El informe de las auditorías se enviará al Parlamento Europeo, al Consejo, a la Comisión, a eu-LISA y a las autoridades de control nacionales. (…)
+Art. 46.2. Los Estados miembros garantizarán que se lleve a cabo anualmente una auditoría del tratamiento de datos personales a efectos de aplicación de la ley por parte de un organismo independiente (…).
+
+
+## Artículo 48 — Seguridad de los datos
+2. Los Estados miembros adoptarán, en relación con todos los datos tratados por sus autoridades competentes (…), las medidas necesarias, incluido un plan de seguridad de los datos, para: (…) n) controlar la eficacia de las medidas de seguridad (…) y detectar automáticamente en el plazo de 24 horas cualquier acontecimiento relevante (…) que pueda indicar que se ha producido un incidente de seguridad.
+3. Los Estados miembros y Europol informarán a eu-LISA de los incidentes de seguridad relativos a Eurodac detectados en sus sistemas (…).
+
+
+## Artículos 52, 55 y 59 — Responsabilidad, costes y sanciones
+Art. 52.1. Toda persona o Estado miembro que haya sufrido un perjuicio material o inmaterial como consecuencia de una operación de tratamiento ilegal o un acto incompatible con el presente Reglamento tendrá derecho a indemnización por parte del Estado miembro responsable del perjuicio sufrido, o por parte de eu-LISA si es responsable (…).
+Art. 55.1. El presupuesto general de la Unión sufragará los costes de creación y de funcionamiento de Eurodac y de la Infraestructura de Comunicación.
+Art. 59. Los Estados miembros adoptarán todas las medidas necesarias para garantizar que cualquier tratamiento de los datos registrados en Eurodac que sea contrario a la finalidad de Eurodac (…) sea objeto de sanciones, incluidas las administrativas o penales, o ambas (…), que serán efectivas, proporcionadas y disuasorias.
+
+
+
+#### 5.6 — ORDEN AEC/240/2011, DE 4 DE ENERO, POR LA QUE SE CREA EL FICHERO VIS-NACIONAL Y LA AUTORIDAD NACIONAL DEL SISTEMA DE INFORMACIÓN DE VISADOS
+
+## Artículo 2 — Titular del órgano gestor del fichero VIS-Nacional
+El titular del órgano gestor del fichero señalado en el anexo, bajo la dependencia directa de la Subsecretaría del Ministerio de Asuntos Exteriores y Cooperación, velará por que se tomen las medidas técnicas y organizativas necesarias para proteger la seguridad, integridad y confidencialidad de los datos de carácter personal (…).
+
+
+## Artículo 4 — Creación de la Autoridad Nacional del VIS
+De acuerdo con lo previsto en el artículo 28 del Reglamento VIS, se crea la Autoridad Nacional del VIS, cuya titularidad recaerá en el Director General de Asuntos Consulares y Migratorios, estando su ubicación en la sede de la Dirección General de Asuntos Consulares y Migratorios. Las competencias de la Autoridad Nacional serán las siguientes:
+a) Designación previa (y posterior autorización) de las Autoridades Competentes que, según el Reglamento VIS, tendrán acceso al VIS.
+b) Determinación de las Autoridades Designadas que, según la Decisión 2008/633/JAI del Consejo, de 23 de junio de 2008, siendo responsables de la prevención, detección e investigación de delitos de terrorismo y otros delitos graves, tendrán acceso al VIS.
+c) Designación de los puntos centrales a través de los cuales se facilitará el acceso al VIS.
+d) Verificación de la correcta conexión de dichas Autoridades con el Interfaz Nacional, ubicado en el Ministerio de Asuntos Exteriores y de Cooperación, que asegura la comunicación con la base de datos central del VIS en Estrasburgo.
+e) Supervisión del VIS de acuerdo con los artículos 35 del Reglamento VIS y 11 de la Decisión 2008/633/JAI (…), salvo todo aquello que se refiera a la protección de datos, función esta última encomendada a la Agencia de Protección de Datos.
+
