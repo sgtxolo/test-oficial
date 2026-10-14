@@ -1442,10 +1442,11 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
   function repasarDesdeHash(){
     const m = location.hash.match(/repasar=([^&]+)/); if (!m) return;
     const ids = decodeURIComponent(m[1]).split(',').filter(Boolean);
+    const ex = /[#&]ex=1(?:&|$)/.test(location.hash) ? '&ex=1' : '';   // se llegó desde el ⚡ Exprés: se vuelve a él
     try { history.replaceState(null, '', location.pathname + location.search); } catch(e){}
     const qs = ids.map(buscarPregunta).filter(Boolean);
     if (!qs.length) return;
-    setTimeout(() => { try { iniciarTest(qs, true); mostrarVolverEsquemas('esquemas.html#q=' + encodeURIComponent(qs[0].id)); } catch(e){ console.error(e); } }, 350);
+    setTimeout(() => { try { iniciarTest(qs, true); mostrarVolverEsquemas('esquemas.html#q=' + encodeURIComponent(qs[0].id) + ex); } catch(e){ console.error(e); } }, 350);
   }
   // Franja «← Volver a esquemas» sobre el test (solo cuando se llega desde un esquema; útil en la PWA del iPhone, sin botón atrás)
   function mostrarVolverEsquemas(destino){

@@ -3983,7 +3983,7 @@ body.embed #app{padding-top:4px}
     const m = ev.target.closest && ev.target.closest('mark.m-resp[data-q]'); if (!m) return;
     ev.preventDefault();
     if (window.top !== window.self) return;   // abierto desde un test: no se sale del test en curso
-    location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(m.dataset.q);
+    location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(m.dataset.q) + (document.body.classList.contains('expres') ? '&ex=1' : '');
   });
 
   // ---------- Pulsar una ficha de la franja «Respuestas» -> repasar sus preguntas ----------
@@ -3998,7 +3998,7 @@ body.embed #app{padding-top:4px}
     if (!ids) return;
     ev.preventDefault();
     if (window.top !== window.self) return;
-    location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(ids);
+    location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(ids) + (document.body.classList.contains('expres') ? '&ex=1' : '');
   });
 
   // ---------- Ir a una pregunta: esquemas.html#q=5-12 ----------
@@ -4015,7 +4015,21 @@ body.embed #app{padding-top:4px}
     if (j !== 'x'){ const p = art.querySelectorAll('.txt p')[+j]; if (p){ el = p; if (i !== undefined){ const m = p.querySelectorAll('mark.m-resp')[+i]; if (m) el = m; } } }
     irA(el, 'tema-' + t); return true;
   }
-  function desdeHash(){ const m = location.hash.match(/[#&]q=([^&]+)/); if (m) irAPregunta(decodeURIComponent(m[1])); }
+  // vuelta desde el test al ⚡ Exprés (esquemas.html#q=1-12&ex=1): se abre el Exprés del tema en la respuesta de esa pregunta
+  function irAPreguntaExpres(id){
+    const t = parseInt(id, 10); if (!t || !document.getElementById('tema-' + t) || typeof window.expresActivar !== 'function') return irAPregunta(id);
+    mostrar('tema-' + t); window.expresActivar(true);
+    const cont = document.querySelector('#tema-' + t + ' > .ex-cont'); if (!cont) return irAPregunta(id);
+    const el = [...cont.querySelectorAll('mark.m-resp[data-q]')].find(x => x.dataset.q.split(',').includes(id));
+    if (el){ const plg = el.closest('.ex-plg'); if (plg) plg.classList.add('on'); }
+    // se repite: al cargar, otros arranques de la página vuelven arriba (scrollTo(0,0)) después del primer salto
+    const ir = () => { const x = el || cont; x.scrollIntoView({block: el ? 'center' : 'start'}); };
+    [60, 400, 1000].forEach(ms => setTimeout(ir, ms));
+    if (el) setTimeout(() => { el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); }, 1000);
+    return true;
+  }
+  function desdeHash(){ const m = location.hash.match(/[#&]q=([^&]+)/); if (!m) return; const id = decodeURIComponent(m[1]);
+    if (/[#&]ex=1(?:&|$)/.test(location.hash)) setTimeout(() => irAPreguntaExpres(id), 0); else irAPregunta(id); }
   window.irAPregunta = irAPregunta;
 
   // ---------- Buscador ----------
