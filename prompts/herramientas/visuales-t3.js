@@ -63,4 +63,5 @@ v('Artículo 15 — Consejo Europeo', cols('Parlamento Europeo frente a Consejo 
   { t: 'PARLAMENTO EUROPEO', l: ['Representantes de los ciudadanos', P('750') + ' + Presidente · mín. ' + P('6') + ' / máx. ' + P('96') + ' por Estado', 'Sufragio universal directo · ' + P('5 años'), 'Funciones: legislativa y presupuestaria (con el Consejo), control político y consultivas · elige al Presidente de la Comisión'] },
   { t: 'CONSEJO EUROPEO', l: ['Jefes de Estado o de Gobierno + Presidente del CE + Presidente de la Comisión (el Alto Representante participa)', P('2 veces por semestre'), 'Consenso (salvo disposición contraria)', 'Impulsos y orientaciones políticas · ' + K('sin función legislativa')] }], true));
 
-L.inserta(3, V);
+module.exports = V;
+if (require.main === module) L.inserta(3, V);
