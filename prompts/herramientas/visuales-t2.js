@@ -7,8 +7,8 @@ const L = require('./visuales-lib.js');
 const { R, P, D, Y, K, arbol, flujo, cols, plazos } = L;
 const V = []; const v = (despues, html) => V.push([despues, html]);
 
-// ---------- 2.1 LEY 19/2003: esquemas generados por expres-t2.js (los mismos del ⚡ Exprés, con tu subrayado y enlazados a las preguntas) ----------
-require('./expres-t2.js').visuales().forEach(([cab, html]) => v(cab, html));
+// ---------- 2.1 LEY 19/2003: esquemas generados por esquemas-t2.js (los mismos del ⚡ Exprés, con tu subrayado y enlazados a las preguntas) ----------
+require('./esquemas-t2.js').visuales().forEach(([cab, html]) => v(cab, html));
 
 // ---------- 2.2 CONVENIO DE VARSOVIA ----------
 v('Artículos 5, 6 y 7 — Provocación pública', arbol('Arts. 5, 6 y 7: los tres delitos del Convenio (cuadro del temario)', `Cada Parte ${D('adoptará medidas')} para ${D('tipificar como delito')}, conforme a su derecho interno, cuando se cometa ${R('ilegal e intencionadamente')}`, [
@@ -112,4 +112,5 @@ v('Artículos 1 y 2 — Relación con la Convención', arbol('Finalidad del Prot
   `${R('Proteger y ayudar a las víctimas')} de dicha trata, respetando plenamente sus derechos humanos`,
   `${R('Promover la cooperación')} entre los Estados Parte para lograr esos fines`]));
 
-L.inserta(2, V);
+module.exports = V;
+if (require.main === module) L.inserta(2, V);
