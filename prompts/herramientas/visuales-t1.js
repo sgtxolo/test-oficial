@@ -366,6 +366,22 @@ v('Artículos 34 y 35', flujo('Firma y entrada en vigor del Acuerdo (arts. 34 y 
   { et: 'depósito', t: 'Ratificación, aceptación o aprobación en poder del Secretario General de la ONU · abierto a la adhesión' },
   { et: 'vigor', t: `${R('Treinta días después de la fecha en que se deposite el décimo instrumento')}` }]));
 
+/* ============ ANEXO: historia y teoría general ============ */
+v('Antecedentes y declaraciones históricas', flujo('Línea del tiempo de los derechos humanos', [
+  { et: 'Antigüedad', t: `Primer antecedente directo: ${R('Cilindro de Ciro')}` }, { et: '1215', t: `Primer documento moderno de defensa de los derechos humanos: ${R('Carta Magna de 1215')}` },
+  { et: '1776', t: `Primera manifestación moderna: ${R('Declaración de Independencia de los EE. UU.')}` }, { et: '1789', t: `Declaración de los Derechos del Hombre y del Ciudadano: ${R('Francia, 1789')} (Revolución francesa)` },
+  { et: 'Siglo XIX', t: `Surge el concepto de «derechos humanos»: ${R('siglo XIX')}` }, { et: '1935', t: `La SDN consintió que Italia bombardease con gases a ${R('Etiopía')}` },
+  { et: '1945', t: `Carta de las Naciones Unidas: ${R('26 de junio de 1945')} (San Francisco)` }, { et: '1948', t: `DUDH: ${R('10 de diciembre de 1948')} · resolución ${R('217 A (III)')}` },
+  { et: '1966/76', t: `Pactos Internacionales: aprobados en ${R('1966')}, en vigor en ${R('1976')}` }]));
+v('Declaración Universal de Derechos Humanos', arbol('Carta Internacional de Derechos Humanos', `${D('Carta Internacional')}`, [
+  `${R('DUDH')} (1948): declaración, no vinculante (soft law)`, 'Pacto Internacional de Derechos Civiles y Políticos (PIDCP): vinculante', 'Pacto Internacional de Derechos Económicos, Sociales y Culturales (PIDESC)', 'Protocolos facultativos', `Los dos Pactos: aprobados ${P('1966')}, en vigor ${P('1976')}`]));
+v('Generaciones y características', arbol('Las tres generaciones (Karel Vasak)', `${R('Karel Vasak')}`, [
+  `1.ª · ${R('derechos civiles y políticos')}: ${R('el derecho del hombre frente al Estado')}`, `2.ª · ${R('derechos económicos, sociales y culturales')} y colectivos (educación, trabajo)`,
+  `3.ª · ${R('paz, solidaridad, medio ambiente sano')}: ${R('no tiene carácter vinculante')}`]));
+v('Generaciones y características', arbol('Características de los derechos humanos', `${D('Derecho humano')}: facultades inherentes a la condición humana`, [
+  `${R('Universalidad')}: para todos y en todos los lugares`, `${R('Inalienabilidad')}: no se puede disponer de ellos, ni total ni parcialmente`, `${R('Irrenunciabilidad')}: nadie puede desprenderse de ellos, ni por su voluntad`,
+  `${R('Inviolabilidad')}: no pueden ser lesionados en su goce`, `${R('Progresividad')}: no pueden ser disminuidos`, `${K('No')} son absolutos`]));
+
 // Exportado para el ⚡ Exprés (expres-t1.js); solo si se ejecuta directamente inserta los cuadros en el esquema normal
 module.exports = V;
 if (require.main !== module) return;
