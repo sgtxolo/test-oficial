@@ -32,7 +32,7 @@ module.exports = function (T) {
       ps: [...m[2].matchAll(/<p([^>]*)>([\s\S]*?)<\/p>/g)].map(x => ({ at: x[1], h: x[2] })) }));
   const usados = new Set();               // ids de preguntas enlazadas en el exprés
   const esIA = id => /-ia-/.test(id);
-  const q = (ids) => { ids.forEach(i => usados.add(i)); return ` data-q="${ids.join(',')}"${ids.every(esIA) ? ' title="Pulsa para repasar sus preguntas"' : ' title="Pulsa para repasar sus preguntas (hay oficiales)"'}`; };
+  const q = (ids) => { ids.forEach(i => usados.add(i)); return ` data-q="${ids.join(',')}"${ids.every(esIA) ? ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas"' : ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas (hay oficiales)"'}`; };
 
   // Respuesta enlazada a sus preguntas
   const REG = [];
