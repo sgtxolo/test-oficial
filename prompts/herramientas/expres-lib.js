@@ -174,14 +174,13 @@ module.exports = function (T) {
   // texto visible (sin lo plegado) para medir páginas
   const sinOcultos = html => { let i; while ((i = html.indexOf('<span class="ex-plg-t">')) >= 0) html = html.slice(0, i) + html.slice(cierre(html, i)[1]); return html; };
   const OPC = { recorte: false };
-  const CSS_PLG = `/* (…) plegable del Exprés: frases del artículo sin pregunta; al pulsarlo despliega el literal en gris */
+  const CSS_PLG = `/* (…) plegable del Exprés: frases del artículo sin pregunta; al pulsarlo despliega el literal con su color y se puede subrayar y editar */
 .ex-plg{cursor:pointer}
 .ex-plg::before{content:"(…)";color:var(--verde-med,#2f6b52);font-weight:800;padding:0 2px;border-radius:4px}
 .ex-plg:hover::before,.ex-plg:focus::before{background:var(--panel-alt,#eee)}
 .ex-plg>.ex-plg-t{display:none}
 .ex-plg.on::before{content:"(−)"}
-.ex-plg.on>.ex-plg-t{display:inline;color:#7a7a7a}
-.ex-plg.on>.ex-plg-t mark{opacity:.75}
+.ex-plg.on>.ex-plg-t{display:inline;background:rgba(127,127,127,.09);border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 `;
   // Ficha literal: cabecera original (o la que se indique) + párrafos elegidos ENTEROS
   // extra = ids de preguntas que el mapa no sitúa pero son de esta ficha → botón «🎯 n preguntas más» al final
