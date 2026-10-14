@@ -30,6 +30,9 @@ module.exports = function (T) {
   const fichas = [...html.matchAll(/<div class="articulo">([\s\S]*?<div class="txt">([\s\S]*?)<\/div>\s*(?:<div class="sello-examen">EX<\/div>)?\s*<\/div>\s*<\/div>)/g)]
     .map(m => ({ cab: (m[1].match(/<div class="articulo-head">([\s\S]*?)<\/div>/) || [])[1] || '', ex: /sello-examen/.test(m[0]),
       ps: [...m[2].matchAll(/<p([^>]*)>([\s\S]*?)<\/p>/g)].map(x => ({ at: x[1], h: x[2] })) }));
+  // título del bloque (norma) de cada ficha, en el mismo orden que `fichas` (para asignar preguntas sueltas a su artículo)
+  const fichaBloque = (() => { const out = []; let tit = ''; const re = /<div class="bloque-titulo">([\s\S]*?)<\/div>|<div class="articulo">[\s\S]*?<div class="txt">[\s\S]*?<\/div>\s*(?:<div class="sello-examen">EX<\/div>)?\s*<\/div>\s*<\/div>/g; let m;
+    while ((m = re.exec(html))) { if (m[1] !== undefined) tit = m[1].replace(/<[^>]+>/g, ''); else out.push(tit); } return out; })();
   const usados = new Set();               // ids de preguntas enlazadas en el exprés
   const esIA = id => /-ia-/.test(id);
   const q = (ids) => { ids.forEach(i => usados.add(i)); return ` data-q="${ids.join(',')}"${ids.every(esIA) ? ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas"' : ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas (hay oficiales)"'}`; };
@@ -263,6 +266,25 @@ module.exports = function (T) {
     return out;
   }
 
+  // ---------- Preguntas sueltas (que ni el mapa ni las marcas sitúan): se asignan solas a su artículo ----------
+  // Las preguntas empiezan «Norma. Título del artículo. Enunciado…»: si el título coincide con el de una ficha del bloque de esa norma
+  // → EXTRAS de esa ficha (botón «🎯 … más de este artículo»); si no hay coincidencia segura → grupo «Norma · Título» al final del
+  // Exprés con su botón 🎯 (nunca se pone una pregunta en un artículo que no es). htmlExpres = el HTML ya generado.
+  function asignaSueltas(htmlExpres) {
+    const enl = new Set([...htmlExpres.matchAll(/data-q="([^"]+)"/g)].flatMap(m => m[1].split(',')));
+    // título del artículo de cada ficha (sin «Artículo N —» ni lo que va tras «·»), normalizado; solo vale si lo lleva UNA ficha
+    const cabs = fichas.map(f => norm(limpia(f.cab).replace(/·.*$/, '').replace(/^.*?—\s*/, '')));
+    const extras = {}, grupos = {};
+    PA.preguntas(T).filter(x => !FUERA.has(x.id) && !enl.has(x.id)).forEach(x => {
+      const segs = x.pregunta.split(/\.\s+/); const norma = segs[0], titulo = (segs[1] || '').trim(), nt = norm(titulo);
+      const cand = nt.trim().split(' ').length >= 2 ? fichas.map((f, k) => k).filter(k => cabs[k] === nt) : [];
+      if (cand.length === 1) (extras[cand[0]] = extras[cand[0]] || []).push(x.id);
+      else { const g = norma.replace(/,\s*de\s.*$/, '') + ' · ' + (titulo || 'varias'); (grupos[g] = grupos[g] || []).push(x.id); }
+    });
+    const html = Object.keys(grupos).length ? bloque('Preguntas que no se pueden situar en un artículo concreto') + Object.entries(grupos).map(([g, ids]) => `<div class="ex-linea">${g}: ${botonQ(ids, ids.length === 1 ? '1 pregunta' : ids.length + ' preguntas')}</div>`).join('') : '';
+    return { extras, html, n: Object.values(extras).flat().length, g: Object.values(grupos).flat().length };
+  }
+
   // Preguntas que el mapa sitúa en las fichas [k0..k1] (para medir la cobertura de un bloque)
   const preguntasDe = (k0, k1) => Object.entries(MAPA).filter(([id, p]) => { const [t, k] = p.split('-'); return +t === T && +k >= k0 && +k <= k1; }).map(([id]) => id);
 
@@ -345,5 +367,5 @@ module.exports = function (T) {
     const chars = sinOcultos(htmlExpres).replace(/<[^>]+>/g, '').replace(/&[a-z]+;/g, ' ').length;
     console.log(`Texto del exprés: ${chars} caracteres ≈ ${(chars / 3000).toFixed(1)} págs A4`);
   }
-  return { ...VL, opciones: OPC, final: h => restaura(subraya(h)), automatico, Rq, literal, parrafo, cuadro, datos, ex, bloque, trampa, publica, fichas };
+  return { ...VL, fichaBloque, asignaSueltas, botonQ, opciones: OPC, final: h => restaura(subraya(h)), automatico, Rq, literal, parrafo, cuadro, datos, ex, bloque, trampa, publica, fichas };
 };
