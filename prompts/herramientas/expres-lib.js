@@ -100,12 +100,14 @@ module.exports = function (T) {
   //          cuadro se quitan los párrafos cuyas preguntas ya responde el cuadro. Combinables: { fichas: Set, conCuadro: true }
   //          (para que un tema largo quepa en 17-20 págs); las preguntas de esos párrafos que el cuadro no recoja van a un 🎯
   const idsFicha = k => Object.entries(MAPA).filter(([, p]) => p.startsWith(`${T}-${k}-`)).map(([id]) => id);
-  function automatico(V, extras = {}, omitir = new Set()) {
+  // rango = [k0, k1] → solo esas fichas (para hacer en literal una parte de un tema redactado)
+  function automatico(V, extras = {}, omitir = new Set(), rango) {
     const re = /<div class="bloque-titulo">([\s\S]*?)<\/div>|<div class="articulo">[\s\S]*?<div class="txt">[\s\S]*?<\/div>\s*(?:<div class="sello-examen">EX<\/div>)?\s*<\/div>\s*<\/div>/g;
     const puestos = new Set(); let m, k = -1, out = '', titulo = '';
     while ((m = re.exec(html))) {
       if (m[1] !== undefined) { titulo = bloque(m[1]); continue; }
       k++; const f = fichas[k]; const cab = limpia(f.cab);
+      if (rango && (k < rango[0] || k > rango[1])) { titulo = ''; continue; }
       let cs = V.map((x, i) => [x, i]).filter(([[c], i]) => !puestos.has(i) && (cab.startsWith(c) || cab.includes(c)));
       const conCuadro = omitir === 'conCuadro' || !!(omitir && omitir.conCuadro);
       // el esquema condensado ('condensa') sustituye en el Exprés a los demás cuadros de su ficha
