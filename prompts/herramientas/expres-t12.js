@@ -1,10 +1,12 @@
-// ⚡ EXPRÉS del Tema 12 (Ley 50/1997, del Gobierno). Tema corto (≈ 12,7 págs de articulado, 9 con preguntas) y con
-// 25 cuadros ya hechos en visuales-t12.js → Exprés AUTOMÁTICO: párrafos literales ENTEROS con pregunta + esos cuadros.
+// ⚡ EXPRÉS del Tema 12 (Ley 50/1997, del Gobierno). Formato LITERAL + CUADROS (reglas del 14/10/2026), máx. 25 págs: por artículo, O el literal O el cuadro
+// (nunca los dos; el cuadro solo si recoge la respuesta de ≥ 80 % de las preguntas del artículo). Tema corto → SIN recorte (párrafos
+// literales enteros con pregunta); fuera las preguntas cuya respuesta es solo «el artículo X» (preguntas-articulo.js).
 // Uso: node prompts/herramientas/expres-t12.js
 const X = require('./expres-lib.js')(12);
 const V = require('./visuales-t12.js');
 
-const H = X.automatico(V);
+Object.assign(X.opciones, { recorte: false });   // tema corto: párrafos literales enteros
+const H = X.automatico(V, {}, { uno: 0.8 });
 
 module.exports = { visuales: () => [] };   // los cuadros ya están en el esquema normal (visuales-t12.js)
 if (require.main === module) X.publica(H, [

@@ -238,7 +238,7 @@ module.exports = function (T) {
       let fuera = (omitir instanceof Set ? omitir : (omitir && omitir.fichas) || new Set()).has(k);
       // 'uno' (pauta 14/10/2026): O el literal O el cuadro, nunca los dos. Cuadro si contiene la respuesta de casi todas las
       // preguntas del artículo (≥ omitir.uno, p. ej. 0.8); si no, literal y el cuadro no sale
-      if (omitir && omitir.uno && cs.length) {
+      if (omitir && omitir.uno && cs.length && !fuera) {
         const ids = idsFicha(k); const txt = norm(cs.map(([x]) => x[1]).join(' '));
         const dentro = ids.filter(id => { const x = PREG[id]; if (!x) return true; const w = norm(x.opciones[x.correcta]).split(' ').filter(p => p.length > 2); return !w.length || w.filter(p => txt.includes(p)).length / w.length >= 0.8; });
         if (ids.length && dentro.length / ids.length >= omitir.uno) fuera = true;

@@ -1,7 +1,8 @@
-// ⚡ EXPRÉS del Tema 13 (Ley 29/1998, LJCA). Caso MIXTO: automático (párrafos literales con pregunta + cuadros de
-// visuales-t13.js) salvo en los 8 artículos más largos, cuyo literal se sustituye por los esquemas condensados de
-// esquemas-t13-nuevos.js (que visuales-t13.js ya incluye en V), para quedar en 17-20 págs.
+// ⚡ EXPRÉS del Tema 13 (Ley 29/1998, LJCA). Formato LITERAL + CUADROS (reglas del 14/10/2026), máx. 25 págs: por artículo, O el literal O el cuadro
+// (nunca los dos; el cuadro solo si recoge la respuesta de ≥ 80 % de las preguntas del artículo). Tema corto → SIN recorte (párrafos
+// literales enteros con pregunta); fuera las preguntas cuya respuesta es solo «el artículo X» (preguntas-articulo.js).
 // Uso: node prompts/herramientas/expres-t13.js
+// Los 13 artículos más largos (CONDENSADAS) salen como su esquema condensado de esquemas-t13-nuevos.js (V ya lo incluye con 'condensa').
 const X = require('./expres-lib.js')(13);
 const V = require('./visuales-t13.js');
 
@@ -20,7 +21,8 @@ const EXTRAS = {
   62: ['13-ia-41'],   // art. 122 ter.7 — cuestión prejudicial de validez ante el TJUE
 };
 
-const H = X.automatico(V, EXTRAS, { fichas: CONDENSADAS, conCuadro: true });
+Object.assign(X.opciones, { recorte: false });   // cabe sin recorte: párrafos literales enteros
+const H = X.automatico(V, EXTRAS, { fichas: CONDENSADAS, uno: 0.8 });
 
 module.exports = { visuales: () => [] };   // los cuadros (también los nuevos) los inserta visuales-t13.js
 if (require.main === module) X.publica(H, [{ nombre: 'Tema 13', k0: 0, k1: 999 }]);
