@@ -33,10 +33,10 @@ function clave(a) {
   let m = /^considerandos?\s+(\d+)/i.exec(a); if (m) return { sec: 0, base: +m[1], suf: 0, ap: [], etiq: 'Considerando ' + m[1], cons: +m[1] };
   if (/^disp/i.test(a)) return { sec: 2, base: 0, suf: 0, ap: [], etiq: 'Disposición final única' };
   if (/^anexo/i.test(a)) return { sec: 3, base: 0, suf: 0, ap: [], etiq: 'Anexo I' };
-  m = new RegExp('^arts?\\.?\\s*(\\d+)(?:\\s+(' + SUF.join('|') + ')(?:\\s+(bis|ter))?)?(?:[.\\s]+(.*))?$', 'i').exec(a);
+  m = new RegExp('^arts?\\.?\\s*(\\d+)(?:\\s+(' + SUF.join('|') + ')(?:\\s+(bis|ter))?)?(?:[.,\\s]+(.*))?$', 'i').exec(a);
   if (!m) return { sec: 1, base: 999, suf: 0, ap: [a], etiq: a };
   const s1 = m[2] ? SUF.indexOf(m[2].toLowerCase()) + 2 : 0, s2 = m[3] ? SUF.indexOf(m[3].toLowerCase()) + 2 : 0;
-  const ap = (m[4] || '').split(/[.\s]+/).filter(Boolean);
+  const ap = (m[4] || '').replace(/^apartados?\s*/i, '').split(/[.,\s]+|\by\b/).filter(Boolean);
   return { sec: 1, base: +m[1], suf: s1 * 10 + s2, ap, etiq: m[1] + (m[2] ? ' ' + m[2].toLowerCase() : '') + (m[3] ? ' ' + m[3].toLowerCase() : ''), ap0: ap.join('.') };
 }
 const cmpAp = (x, y) => { for (let i = 0; i < Math.max(x.length, y.length); i++) { const a = x[i], b = y[i]; if (a === undefined) return -1; if (b === undefined) return 1; const na = /^\d+$/.test(a), nb = /^\d+$/.test(b); if (na && nb) { if (+a !== +b) return +a - +b; } else if (a !== b) return a < b ? -1 : 1; } return 0; };
@@ -56,7 +56,7 @@ const viejo = JSON.parse(fs.readFileSync(path.join(ROOT, 'prompts', 'temario-lim
 // ---- 5. utilidades de texto ----
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ ]/g, ' ').replace(/\s+/g, ' ').trim();
-function limpiaCita(t) { return t.replace(/cve: BOE-A-[\d-]+ BOLETÍN OFICIAL DEL ESTADO Núm\.?(?: \d+)?/g, ' ').replace(/\s+/g, ' ').replace(/^["“]+|["”]+$/g, '').trim(); }
+function limpiaCita(t) { return t.replace(/­\s*/g, '').replace(/cve: BOE-A-[\d-]+ BOLETÍN OFICIAL DEL ESTADO Núm\.?(?: \d+)?/g, ' ').replace(/\s+/g, ' ').replace(/^["“]+|["”]+$/g, '').trim(); }
 function parrafo(it, texto) {
   let t = limpiaCita(texto); const sinInicio = /^[a-záéíóúñ]/.test(t) && !/^[a-z]\)/.test(t), sinFin = !/[.;:)»"]$/.test(t);
   return (sinInicio ? '(…) ' : '') + t + (sinFin ? ' (…)' : '');
@@ -117,7 +117,10 @@ for (const [k, mk] of Object.entries(NORMAS)) {
     const tit = Object.entries(f.titulos).sort((a, b) => b[1] - a[1])[0];
     const base = f.c.sec === 1 ? 'Artículo ' + f.c.etiq : f.c.etiq + (f.cons ? ' ' + f.cons.join(', ') : '');
     const clv = f.c.sec === 1 ? f.c.etiq.toLowerCase() : '';
-    const titulo = tit ? tit[0] : (viejo[mk + '|' + clv] || '');
+    const TIT = { 'vis|5': 'Categorías de datos', 'vis|9': 'Datos que se introducirán con motivo de la solicitud', 'vis|12': 'Datos que se añadirán en caso de denegación del visado', 'vis|27': 'Ubicación del Sistema de Información de Visados central', 'cv|11': 'Impreso de solicitud', 'cv|39': 'Conducta del personal', 'cv|43': 'Cooperación con proveedores de servicios externos', 'cv|45': 'Cooperación de los Estados miembros con los intermediarios comerciales', 'eur|17': 'Registro de datos de los solicitantes de protección internacional', 'r977|1': 'Menciones «VIS» y «VIS 0» en la etiqueta de visado', 'r977|2': 'Entrada en vigor, aplicación y expiración' };
+    let titulo = (k === 'r977' && TIT[k + '|' + clv]) || (tit ? tit[0] : (TIT[k + '|' + clv] || viejo[mk + '|' + clv] || ''));
+    if (titulo.startsWith(base)) titulo = titulo.slice(base.length).replace(/^[.\s—-]+/, '');
+    if (k === 'aec' && f.c.sec === 3) titulo = 'Fichero VIS-Nacional (finalidad, datos, cesiones, responsable y seguridad)';
     const cab = titulo ? base + ' — ' + titulo : base;
     const ps = []; const resps = []; let ex = false; const side = [];
     for (const l of lista) {
