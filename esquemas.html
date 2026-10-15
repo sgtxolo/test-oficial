@@ -5737,7 +5737,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   chip.querySelector('.ir').onclick=()=>{ if(objetivo){ objetivo.style.scrollMarginTop='90px'; objetivo.scrollIntoView({behavior:'smooth',block:'start'}); } ocultar(); };
   function ofrecer(){
     const es=activo(); ocultar(); if(!es) return;
-    rec(); const u=data[es.id]; if(!u||!u.k) return;
+    if(document.body.classList.contains('expres')) return; rec(); const u=data[es.id]; if(!u||!u.k) return;
     const a=[...es.querySelectorAll('.articulo')].find(x=>clave(x)===u.k); if(!a) return;
     if(a.getBoundingClientRect().top<innerHeight*0.6&&a.getBoundingClientRect().bottom>0) return;   // ya lo tienes a la vista
     objetivo=a; chip.querySelector('span').textContent=(u.man?'📍 Aquí te quedaste: ':'📍 Seguir por: ')+u.k.replace(/\s+/g,' ').slice(0,70);
@@ -5764,6 +5764,86 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   const vigila=()=>{ const es=activo(), id=es&&es.id; if(id!==ult){ ult=id; if(id) setTimeout(ofrecer,400); } };
   new MutationObserver(vigila).observe(document.body,{attributes:true,subtree:true,attributeFilter:['class']});
   let n=0; (function init(){ if(!activo()&&n++<40) return setTimeout(init,150); vigila(); })();
+})();
+</script>
+<style id="estilo-ultima-ex">
+.ex-cont .ex-fh .pt-btn{float:right;margin-top:-1px}
+.ex-cont .bloque-titulo .pt-btn{margin-left:10px;vertical-align:middle}
+.ex-cont .pt-marca{outline:3px solid #e0a800;outline-offset:2px;border-radius:6px}
+.ex-cont .pt-marca .pt-btn{background:#e0a800;color:#000;font-weight:800;border-color:#e0a800}
+.ex-cont .pt-ult{box-shadow:-5px 0 0 #e0a800}
+@media print{.ex-cont .pt-btn{display:none!important}}
+</style>
+<script id="script-ultima-ex">
+/* ==================== MARCADOR DEL ⚡ EXPRÉS: por dónde ibas ====================
+   Igual que en el esquema completo pero para el Exprés (que tiene fichas, cuadros y títulos, no «artículos»).
+   - Automático: guarda la última ficha/cuadro que viste al ir leyendo (clave 'esquemas-ultima' con id «tema-N-ex»; se sincroniza con el resto).
+   - Manual: botón 📍 en cada ficha y título; queda fijo («Aquí me quedé») hasta que lo quites o marques otro sitio.
+   Al abrir el Exprés aparece «📍 Seguir por: … (pág. 20 de 30)» con un botón para ir directo. */
+(function(){
+  const KEY='esquemas-ultima', CHARS_PAG=3000;
+  let data={}; const rec=()=>{ try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){} };
+  const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
+  const enEx=()=>document.body.classList.contains('expres');
+  const cont=()=>{ const e=document.querySelector('.esquema.active'); return e&&enEx()?e.querySelector(':scope > .ex-cont'):null; };
+  const unidades=c=>[...c.children].filter(x=>!x.classList.contains('ex-bar')&&x.nodeType===1);
+  const firma=u=>{ const h=u.querySelector('.ex-fh'); return ((h||u).textContent||'').replace(/\s*📍.*$/,'').replace(/\s+/g,' ').trim().slice(0,70); };
+  function buscar(c,u){                       // por texto (el más cercano al índice guardado); si no, por posición
+    const us=unidades(c); let best=null,bd=1e9;
+    us.forEach((x,i)=>{ if(firma(x)===u.k){ const d=Math.abs(i-(u.i||0)); if(d<bd){ bd=d; best=x; } } });
+    return best||(u.k&&us[u.i]&&!firma(us[u.i])?us[u.i]:null);
+  }
+  function pagina(c,u){                       // «pág. X de Y» aproximada (3.000 caracteres por página A4, como la barra del Exprés)
+    try{ const r=document.createRange(); r.setStart(c,0); r.setEndBefore(u); const tot=c.textContent.length, pags=Math.max(1,Math.ceil(c.innerText.length/CHARS_PAG));   // total como en la barra (texto visible); la posición, en proporción
+      return 'pág. '+Math.min(pags,Math.max(1,Math.ceil(r.toString().length/tot*pags)))+' de '+pags; }catch(e){ return ''; }
+  }
+  const chip=document.createElement('div'); chip.id='ultima-chip'; chip.className='ultima-ex';
+  chip.innerHTML='<span></span><button type="button" class="ir">Ir</button><button type="button" class="x" title="Cerrar">✕</button>';
+  document.body.appendChild(chip);
+  let objetivo=null, tHide=0;
+  const ocultar=()=>{ chip.classList.remove('on'); clearTimeout(tHide); };
+  chip.querySelector('.x').onclick=ocultar;
+  chip.querySelector('.ir').onclick=()=>{ if(objetivo){ objetivo.style.scrollMarginTop='90px'; objetivo.scrollIntoView({behavior:'smooth',block:'start'}); } ocultar(); };
+  function pinta(c){
+    rec(); const u=data[c.id]; unidades(c).forEach(x=>{ x.classList.remove('pt-marca','pt-ult'); const b=x.querySelector(':scope .pt-btn'); if(b) b.textContent='📍'; });
+    if(!u) return; const x=buscar(c,u); if(!x) return;
+    x.classList.add(u.man?'pt-marca':'pt-ult'); if(u.man){ const b=x.querySelector('.pt-btn'); if(b) b.textContent='📍 Aquí me quedé'; }
+  }
+  function botones(c){
+    unidades(c).forEach(x=>{
+      const h=x.querySelector('.ex-fh')||(x.classList.contains('bloque-titulo')?x:null); if(!h||h.querySelector('.pt-btn')) return;
+      const b=document.createElement('button'); b.type='button'; b.className='pt-btn'; b.textContent='📍'; b.title='Marcar aquí por dónde vas: la próxima vez te lo recuerdo y puedes ir directo';
+      b.onclick=ev=>{ ev.stopPropagation(); const k=firma(x); if(!k) return; rec(); const i=unidades(c).indexOf(x);
+        if(data[c.id]&&data[c.id].man&&data[c.id].k===k&&data[c.id].i===i) delete data[c.id]; else data[c.id]={k:k,i:i,t:Date.now(),man:1};
+        save(); pinta(c); };
+      h.appendChild(b);
+    });
+  }
+  function ofrecer(c){
+    ocultar(); rec(); const u=data[c.id]; if(!u||!u.k) return;
+    const x=buscar(c,u); if(!x) return;
+    const r=x.getBoundingClientRect(); if(r.top<innerHeight*0.6&&r.bottom>0) return;      // ya lo tienes a la vista
+    objetivo=x; chip.querySelector('span').textContent=(u.man?'📍 Aquí te quedaste: ':'📍 Seguir por: ')+u.k.slice(0,60)+' ('+pagina(c,x)+')';
+    chip.classList.add('on'); if(!u.man) tHide=setTimeout(ocultar,20000);
+  }
+  function guardar(){
+    const c=cont(); if(!c) return; const us=unidades(c); if(us.length<2) return;
+    if(us[0].getBoundingClientRect().top>-300) return;                      // arriba del todo: no pisar el marcador guardado
+    const i=us.findIndex(x=>x.getBoundingClientRect().bottom>140); if(i<0) return;
+    const k=firma(us[i]); if(!k) return;
+    rec(); const u=data[c.id]; if(u&&(u.man||(u.k===k&&u.i===i))) return;    // un marcador manual no se pisa solo
+    data[c.id]={k:k,i:i,t:Date.now()}; save(); pinta(c);
+  }
+  let t=0; addEventListener('scroll',()=>{ if(!enEx()) return; clearTimeout(t); t=setTimeout(guardar,1500); },{passive:true,capture:true});
+  let ultima='', pend=0;
+  function revisa(){
+    pend=0; const c=cont();
+    if(!c){ if(ultima){ ultima=''; ocultar(); } return; }
+    if(c.id===ultima && c.dataset.mk) return;
+    ultima=c.id; c.dataset.mk='1'; botones(c); pinta(c); setTimeout(()=>ofrecer(c),500);
+  }
+  new MutationObserver(()=>{ if(!pend) pend=setTimeout(revisa,120); }).observe(document.body,{attributes:true,subtree:true,attributeFilter:['class'],childList:true});
+  setTimeout(revisa,300);
 })();
 </script>
 <style id="estilo-xref">
