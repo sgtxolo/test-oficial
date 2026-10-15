@@ -74,7 +74,7 @@ module.exports = function (T) {
     let resto = [...new Set(sueltas.concat(perdidas))].filter(x => !enMarcas.has(x) && !FUERA.has(x));
     // la respuesta correcta de esas preguntas se busca en el texto y se marca (en vez de dejarla solo en el 🎯)
     resto = resto.filter(id => { const r = marcaRespuesta(h2, id); if (r) { h2 = r; return false; } return true; });
-    if (OPC.recorte) h2 = recorta(h2);
+    if (OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
     const boton = resto.length ? ` <mark class="m-resp ex-q${resto.every(esIA) ? ' r-ia' : ''}"${q(resto)}>🎯 ${resto.length === 1 ? '1 pregunta' : resto.length + ' preguntas'}</mark>` : '';
     return `<p${p.at}>${h2}${boton}</p>`;
   }
@@ -161,9 +161,27 @@ module.exports = function (T) {
   let fichaEX = false, tieneCuadro = false;   // iaEnEX: las IA se ven en artículos EX sin cuadro (con cuadro, ya las recoge el cuadro)
   const RX_TODAS = /<mark class="m-resp(?![^"]*r-vec)[^"]*" data-q=|data-ex|class="ex-p"/, RX_OF = /<mark class="m-resp(?![^"]*(?:r-vec|r-ia))[^"]*" data-q=|data-ex|class="ex-p"/;
   const esVale = s => (OPC.soloOficial && !(OPC.iaEnEX && fichaEX && !(OPC.iaEnEX === 'sinCuadro' && tieneCuadro)) ? RX_OF : RX_TODAS).test(s);
-  function recorta(html) {
+  // 'frases' (pauta 15/10/2026): frase con pregunta OFICIAL o párrafo con marca del usuario (data-ex) → ENTERA; frase solo con
+  // preguntas IA → ventana con OPC.media {cabeza, antes, umbral}; frases sin pregunta → (…) plegado
+  function ventanaMedia(s) {
+    const m = OPC.media || {}, g = { cabeza: OPC.cabeza, antes: OPC.antes };
+    if (limpia(s).length < (m.umbral || 160)) return s;
+    OPC.cabeza = m.cabeza || 10; OPC.antes = m.antes || 8; const r = ventana(s); OPC.cabeza = g.cabeza; OPC.antes = g.antes; return r;
+  }
+  function recorta(html, marcado) {
     const segs = trocea(html, CORTE);
     const vale = esVale;
+    if (OPC.recorte === 'frases') {
+      if (!segs.some(vale)) return marcado ? html : ventana(html);
+      let out = '', oculto = [];
+      const suelta = () => { if (!oculto.length) return; let t = oculto.join(' '); oculto = [];
+        const cab = t.match(/^\s*<b>[^<]*<\/b>\s*/); if (cab) { out += cab[0]; t = t.slice(cab[0].length); }
+        if (limpia(t).length < 60) { out += t + ' '; return; }
+        out += plegable(t) + ' '; };
+      segs.forEach(s => { if (vale(s)) { suelta(); out += (marcado || RX_OF.test(s) ? s : ventanaMedia(s)) + ' '; } else oculto.push(s); });
+      suelta();
+      return out.replace(/\s+$/, '');
+    }
     if (!segs.some(vale) && !OPC.soloOficial) return OPC.recorte === 'ventana' && OPC.sinRespPliega ? ventana(html) : html;
     let out = '', oculto = [];
     const suelta = () => { if (!oculto.length) return; let t = oculto.join(' '); oculto = [];
@@ -236,7 +254,10 @@ module.exports = function (T) {
       const c = limpia(fichas[k].cab).replace(/\s*·\s*R\d.*$/, '').replace(/^Artículos?\s+/, m => /s\s/.test(m) ? 'Arts. ' : 'Art. ');
       if (/^🆕/.test(c)) continue;
       const p = pesoFicha(k); const n = [p.of && `${p.of} oficial${p.of > 1 ? 'es' : ''}`, p.ia && `${p.ia} IA`].filter(Boolean).join(' · ');
-      items.push(`<b>${c}</b>${p.ex ? ' <span class="ex-sello">EX</span>' : ''}${n ? ` <small>(${n})</small>` : ' <small>(sin preguntas)</small>'}`); }
+      // marcas del temario del usuario en los párrafos de la ficha (data-ex): EXOF / EX («1» en temas antiguos) / ✱
+      const mx = new Set(fichas[k].ps.flatMap(x => ((x.at.match(/data-ex="([^"]*)"/) || [])[1] || '').split(',')).map(x => x === '1' ? 'EX' : x).filter(Boolean));
+      const sellos = [mx.has('EXOF') && 'EXOF', (mx.has('EX') || p.ex) && 'EX', mx.has('*') && '✱'].filter(Boolean).map(t => ` <span class="ex-sello">${t}</span>`).join('');
+      items.push(`<b>${c}</b>${sellos}${n ? ` <small>(${n})</small>` : ' <small>(sin preguntas)</small>'}`); }
     return items.length ? `<div class="vis ex-datos ex-mapa"><div class="vis-t"><i>🗺</i>Mapa: artículos de esta norma y lo que se pregunta de cada uno</div><ul>${items.map(x => `<li>${x}</li>`).join('')}</ul></div>` : '';
   }
   // rango = [k0, k1] → solo esas fichas (para hacer en literal una parte de un tema redactado)

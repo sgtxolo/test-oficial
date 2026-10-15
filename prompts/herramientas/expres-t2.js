@@ -10,21 +10,24 @@ const V = require('./visuales-t2.js');
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
 
 // preguntas que el mapa no sitúa en un párrafo: { k: [ids] } → botón «🎯 … más de este artículo» en su ficha
-const EXTRAS = { 8: ['2-ia-78'], 11: ['2-17'], 26: ['2-45'] };
-// NIVELES (pauta 15/10/2026: «leyendo solo sale la pregunta del examen y no te enteras de nada», pero 1 h-1 h 30 min):
-//   · muy preguntado (≥ 4 oficiales o peso 3·oficiales + IA + 4 si EX ≥ 15) → frases con pregunta ENTERAS;
-//   · poco (sin oficiales ni EX y ≤ 4 IA) → solo el título del artículo y su 🎯;
+const EXTRAS = { 8: ['2-ia-78'], 12: ['2-17'], 27: ['2-45'] };   // (índices de ficha a 15/10/2026, tras añadir las fichas marcadas)
+// NIVELES (pautas 15/10/2026: «leyendo solo sale la pregunta del examen y no te enteras de nada», pero 1 h-1 h 30 min;
+// y lo importante = preguntas OFICIALES de la app + sus marcas del temario EXOF / EXAMEN / EX / asterisco):
+//   · artículo con alguna pregunta oficial o con alguna marca suya (data-ex) → frases con pregunta ENTERAS;
+//   · muy preguntado por IA (peso 3·oficiales + IA ≥ 15) → también enteras;
+//   · poco (sin oficiales ni marcas y ≤ 4 IA) → solo el título del artículo y su 🎯;
 //   · el resto → ventana amplia (arranque de la frase + unas palabras antes de la respuesta).
 // Y al abrir cada norma, un MAPA con sus artículos y lo que se pregunta de cada uno.
-const N = { ALTO: +(process.env.ALTO || 15), ALTO_OF: +(process.env.ALTO_OF || 4), BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 10), ANT: +(process.env.ANT || 8), EXW: +(process.env.EXW || 4) };
-const nivel = (k, p) => { const peso = 3 * p.of + p.ia + (p.ex ? N.EXW : 0);
-  if (p.of >= N.ALTO_OF || peso >= N.ALTO) return { recorte: false };
-  if (!p.of && !p.ex && p.ia <= N.BAJO) return 'boton';
+const N = { ALTO: +(process.env.ALTO || 15), BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 10), ANT: +(process.env.ANT || 8) };
+const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=/.test(x.at)), peso = 3 * p.of + p.ia;
+  if (p.of || marca || peso >= N.ALTO) return { recorte: 'frases', media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
+  if (p.ia <= N.BAJO) return 'boton';
   return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
 const H = X.automatico(V, EXTRAS, { uno: 0.8, nivel, mapa: true });
 
 module.exports = { visuales: () => [] };   // el esquema normal ya tiene sus cuadros (visuales-t2.js)
-if (require.main === module) X.publica(H, [
-  { nombre: '2.1 Ley 19/2003', k0: 0, k1: 9 }, { nombre: '2.2 Convenio 196', k0: 10, k1: 24 }, { nombre: '2.3 Ley 10/2010', k0: 25, k1: 48 },
-  { nombre: '2.4 Palermo', k0: 49, k1: 61 }, { nombre: '2.5 Trata', k0: 62, k1: 70 }, { nombre: '2.6 Migrantes', k0: 71, k1: 77 },
-  { nombre: '2.7 Armas', k0: 78, k1: 83 }, { nombre: 'RECUERDA R1-R39', k0: 84, k1: 90 }]);
+// rangos de fichas de cada norma, sacados de los títulos de bloque (no a mano: cambian al añadir fichas)
+const ini = re => X.fichaBloque.findIndex(t => re.test(t));
+const CORTES = [['2.1 Ley 19/2003', /RÉGIMEN GENERAL DE LOS MOVIMIENTOS/], ['2.2 Convenio 196', /^2\.2/], ['2.3 Ley 10/2010', /^2\.3|^CAPÍTULO I\. DISPOSICIONES GENERALES/],
+  ['2.4 Palermo', /^2\.4/], ['2.5 Trata', /^2\.5/], ['2.6 Migrantes', /^2\.6/], ['2.7 Armas', /^2\.7/], ['RECUERDA R1-R39', /^RECUERDA/]].map(([n, re]) => [n, ini(re)]);
+if (require.main === module) X.publica(H, CORTES.map(([nombre, k0], i) => ({ nombre, k0, k1: (CORTES[i + 1] ? CORTES[i + 1][1] : X.fichas.length) - 1 })));

@@ -1,0 +1,2789 @@
+[
+ {
+  "pg": 9,
+  "desc": "Ley 19/2003 art 3.2",
+  "marca": "EXOF (círculo azul)",
+  "n": "Ley 19/2003",
+  "art": "3",
+  "ap": "2",
+  "tipo": "EXOF",
+  "sitios": [
+   "2-1",
+   "2-2"
+  ],
+  "of": [
+   "2-29"
+  ],
+  "ia": [
+   "2-ia-3",
+   "2-ia-67"
+  ]
+ },
+ {
+  "pg": 12,
+  "desc": "Ley 19/2003 art 7 bis.6",
+  "marca": "EXOF (círculo azul)",
+  "n": "Ley 19/2003",
+  "art": "7 bis",
+  "ap": "6",
+  "tipo": "EXOF",
+  "sitios": [
+   "6-5"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-84",
+   "2-ia-96"
+  ]
+ },
+ {
+  "pg": 13,
+  "desc": "Ley 19/2003 art 8.3 (graves)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Ley 19/2003",
+  "art": "8",
+  "ap": "3",
+  "tipo": "EXOF",
+  "sitios": [
+   "7-2"
+  ],
+  "of": [
+   "2-1",
+   "2-72"
+  ],
+  "ia": [
+   "2-ia-62",
+   "2-ia-74"
+  ]
+ },
+ {
+  "pg": 13,
+  "desc": "Ley 19/2003 art 9.2 (sanciones muy graves)",
+  "marca": "EX° (círculo azul)",
+  "n": "Ley 19/2003",
+  "art": "9",
+  "ap": "2",
+  "tipo": "EX",
+  "sitios": [
+   "8-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-7",
+   "2-ia-63",
+   "2-ia-75",
+   "2-ia-76",
+   "2-ia-90",
+   "2-ia-98"
+  ]
+ },
+ {
+  "pg": 14,
+  "desc": "Ley 19/2003 art 9.5 (multa ≤6 meses / >6 meses)",
+  "marca": "* azul (en la nota manuscrita)",
+  "n": "Ley 19/2003",
+  "art": "9",
+  "ap": "5",
+  "tipo": "*",
+  "sitios": [
+   "8-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-77"
+  ]
+ },
+ {
+  "pg": 14,
+  "desc": "Ley 19/2003 art 10 b-c",
+  "marca": "EX° (círculo azul)",
+  "n": "Ley 19/2003",
+  "art": "10",
+  "ap": "",
+  "tipo": "EX",
+  "sitios": [
+   "8-2"
+  ],
+  "of": [
+   "2-22"
+  ],
+  "ia": [
+   "2-ia-94"
+  ]
+ },
+ {
+  "pg": 14,
+  "desc": "Ley 19/2003 art 10 d) capacidad económica",
+  "marca": "* rojo",
+  "n": "Ley 19/2003",
+  "art": "10",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "8-2"
+  ],
+  "of": [
+   "2-22"
+  ],
+  "ia": [
+   "2-ia-94"
+  ]
+ },
+ {
+  "pg": 14,
+  "desc": "Ley 19/2003 art 10 e) conducta anterior",
+  "marca": "* azul + «5 AÑOS» + EXO (círculo azul)",
+  "n": "Ley 19/2003",
+  "art": "10",
+  "ap": "",
+  "tipo": "EXOF",
+  "sitios": [
+   "8-2"
+  ],
+  "of": [
+   "2-22"
+  ],
+  "ia": [
+   "2-ia-94"
+  ]
+ },
+ {
+  "pg": 15,
+  "desc": "Ley 19/2003 art 12.2 d) (leves: Dirección General del Tesoro)",
+  "marca": "* azul",
+  "n": "Ley 19/2003",
+  "art": "12",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "9-1",
+   "9-2",
+   "9-3",
+   "9-4"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-80",
+   "2-ia-85",
+   "2-ia-92",
+   "2-ia-99",
+   "2-ia-81",
+   "2-ia-82",
+   "2-ia-93",
+   "2-ia-83"
+  ]
+ },
+ {
+  "pg": 17,
+  "desc": "Ley 19/2003 DA 1.ª (art. 3.4 b Ley 19/1993: medios de pago 80.500 €)",
+  "marca": "ET/EX? (círculo azul)",
+  "n": "Ley 19/2003",
+  "art": "da",
+  "ap": "",
+  "tipo": "EX",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 26,
+  "desc": "Convenio 196 art 3.2 (a intercambio info, b protección física, c planes de formación y coordinación para crisis)",
+  "marca": "* rojo + sello PREGUNTA EXAMEN",
+  "n": "Convenio 196",
+  "art": "3",
+  "ap": "2",
+  "tipo": "EXAMEN",
+  "sitios": [
+   "11-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-345"
+  ]
+ },
+ {
+  "pg": 27,
+  "desc": "Convenio 196 art 5 (provocación pública)",
+  "marca": "* rojo + sello PREGUNTA EXAMEN",
+  "n": "Convenio 196",
+  "art": "5",
+  "ap": "",
+  "tipo": "EXAMEN",
+  "sitios": [
+   "12-0"
+  ],
+  "of": [
+   "2-6",
+   "2-77",
+   "2-79"
+  ],
+  "ia": [
+   "2-ia-10"
+  ]
+ },
+ {
+  "pg": 27,
+  "desc": "Convenio 196 art 6 (reclutamiento)",
+  "marca": "* rojo",
+  "n": "Convenio 196",
+  "art": "6",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "12-1"
+  ],
+  "of": [
+   "2-8"
+  ],
+  "ia": [
+   "2-ia-11"
+  ]
+ },
+ {
+  "pg": 27,
+  "desc": "Convenio 196 art 7 (adiestramiento)",
+  "marca": "* rojo",
+  "n": "Convenio 196",
+  "art": "7",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "12-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-12"
+  ]
+ },
+ {
+  "pg": 28,
+  "desc": "Convenio 196 art 8 (irrelevancia del resultado)",
+  "marca": "EX° (círculo azul)",
+  "n": "Convenio 196",
+  "art": "8",
+  "ap": "",
+  "tipo": "EX",
+  "sitios": [
+   "13-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-13"
+  ]
+ },
+ {
+  "pg": 28,
+  "desc": "Convenio 196 art 9.1 c) (contribución, grupo, deliberada)",
+  "marca": "EX° (círculo azul) + * rojo",
+  "n": "Convenio 196",
+  "art": "9",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [
+   "13-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-105",
+   "2-ia-113"
+  ]
+ },
+ {
+  "pg": 28,
+  "desc": "Convenio 196 art 10.2 (penal, civil o administrativa)",
+  "marca": "EX (círculo rojo)",
+  "n": "Convenio 196",
+  "art": "10",
+  "ap": "2",
+  "tipo": "EX",
+  "sitios": [
+   "14-0"
+  ],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 29,
+  "desc": "Convenio 196 art 11.1 (penas efectivas, proporcionadas y disuasorias)",
+  "marca": "* azul",
+  "n": "Convenio 196",
+  "art": "11",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "14-1"
+  ],
+  "of": [
+   "2-32"
+  ],
+  "ia": [
+   "2-ia-15",
+   "2-ia-128",
+   "2-ia-136"
+  ]
+ },
+ {
+  "pg": 29,
+  "desc": "Convenio 196 art 12.1 (libertad de expresión, asociación, religión)",
+  "marca": "* rojo",
+  "n": "Convenio 196",
+  "art": "12",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "15-0"
+  ],
+  "of": [
+   "2-86"
+  ],
+  "ia": [
+   "2-ia-109"
+  ]
+ },
+ {
+  "pg": 29,
+  "desc": "Convenio 196 art 13 (víctimas y familiares próximos)",
+  "marca": "* azul",
+  "n": "Convenio 196",
+  "art": "13",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "15-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-103"
+  ]
+ },
+ {
+  "pg": 29,
+  "desc": "Convenio 196 art 14 (competencia)",
+  "marca": "EX rojo grande (dudoso: «E» con flecha)",
+  "n": "Convenio 196",
+  "art": "14",
+  "ap": "",
+  "tipo": "EX",
+  "sitios": [
+   "16-0",
+   "16-1",
+   "16-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-112",
+   "2-ia-142",
+   "2-ia-114"
+  ]
+ },
+ {
+  "pg": 30,
+  "desc": "Convenio 196 art 14.2 (podrá adoptar: a-e)",
+  "marca": "EX? (círculo azul, cortado)",
+  "n": "Convenio 196",
+  "art": "14",
+  "ap": "2",
+  "tipo": "EX",
+  "sitios": [
+   "16-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-142"
+  ]
+ },
+ {
+  "pg": 31,
+  "desc": "Convenio 196 art 18.1 (extradición o iniciación de actuaciones)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Convenio 196",
+  "art": "18",
+  "ap": "1",
+  "tipo": "EXOF",
+  "sitios": [
+   "18-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-119",
+   "2-ia-139"
+  ]
+ },
+ {
+  "pg": 33,
+  "desc": "Convenio 196 art 20.6 (12 meses antes; 3 meses; 6 meses prorrogada)",
+  "marca": "* azul «12 meses antes»",
+  "n": "Convenio 196",
+  "art": "20",
+  "ap": "6",
+  "tipo": "*",
+  "sitios": [
+   "19-4"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-108",
+   "2-ia-130"
+  ]
+ },
+ {
+  "pg": 33,
+  "desc": "Convenio 196 cuadro «Reserva de no aplicar la cláusula de excepción política»",
+  "marca": "* rojo",
+  "n": "Convenio 196",
+  "art": "",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 34,
+  "desc": "Convenio 196 art 23.1 (firma: miembros CdE, UE y no miembros que participaron)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Convenio 196",
+  "art": "23",
+  "ap": "1",
+  "tipo": "EXOF",
+  "sitios": [
+   "21-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-104",
+   "2-ia-121"
+  ]
+ },
+ {
+  "pg": 35,
+  "desc": "Convenio 196 art 23.3 (entrada en vigor: 6 signatarios, 4 miembros CdE)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Convenio 196",
+  "art": "23",
+  "ap": "3",
+  "tipo": "EXOF",
+  "sitios": [
+   "21-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-104",
+   "2-ia-121"
+  ]
+ },
+ {
+  "pg": 35,
+  "desc": "Convenio 196 art 24.1 (adhesión: Comité de Ministros, mayoría art 20.d, unanimidad)",
+  "marca": "EXOF? (círculo azul)",
+  "n": "Convenio 196",
+  "art": "24",
+  "ap": "1",
+  "tipo": "EXOF",
+  "sitios": [
+   "21-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-122"
+  ]
+ },
+ {
+  "pg": 35,
+  "desc": "Convenio 196 art 25.2 (aplicación territorial ampliar)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Convenio 196",
+  "art": "25",
+  "ap": "2",
+  "tipo": "EXOF",
+  "sitios": [
+   "21-2"
+  ],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 37,
+  "desc": "Convenio 196 art 27 cuadro «Se propondrán enmiendas por: Partes, Comité de Ministros, Consulta»",
+  "marca": "EXOF (círculo azul)",
+  "n": "Convenio 196",
+  "art": "27",
+  "ap": "",
+  "tipo": "EXOF",
+  "sitios": [
+   "23-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-124",
+   "2-ia-135"
+  ]
+ },
+ {
+  "pg": 38,
+  "desc": "Convenio 196 art 30.1 e) (opinión sobre aplicación, intercambio de información)",
+  "marca": "* rojo (pequeño)",
+  "n": "Convenio 196",
+  "art": "30",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "24-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-126"
+  ]
+ },
+ {
+  "pg": 39,
+  "desc": "Convenio 196 art 31.1 (denuncia: notificación al Secretario General)",
+  "marca": "* azul + P (círculo azul)",
+  "n": "Convenio 196",
+  "art": "31",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "24-2",
+   "24-3"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-127"
+  ]
+ },
+ {
+  "pg": 39,
+  "desc": "Convenio 196 art 31.2 (efecto: 1.er día del mes tras 3 meses)",
+  "marca": "* azul",
+  "n": "Convenio 196",
+  "art": "31",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "24-2",
+   "24-3"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-127"
+  ]
+ },
+ {
+  "pg": 44,
+  "desc": "Ley 10/2010 art 2.1 d) (sociedades gestoras de IIC)",
+  "marca": "EXOF? (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "2",
+  "ap": "1",
+  "tipo": "EXOF",
+  "sitios": [
+   "27-0",
+   "27-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-19",
+   "2-ia-146"
+  ]
+ },
+ {
+  "pg": 45,
+  "desc": "Ley 10/2010 art 2.1 l) (promotores inmobiliarios: 120.000 € / 10.000 € mensual)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "2",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "27-0",
+   "27-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-19",
+   "2-ia-146"
+  ]
+ },
+ {
+  "pg": 49,
+  "desc": "Ley 10/2010 art 4 bis.1 (conservar 10 años desde el cese)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "4 bis",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 49,
+  "desc": "Ley 10/2010 art 4 bis.3 b) (Consejo de Administración, secretario sea o no consejero)",
+  "marca": "EX (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "4 bis",
+  "ap": "3",
+  "tipo": "EX",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 51,
+  "desc": "Ley 10/2010 art 7.1 (aplicación medidas de diligencia debida)",
+  "marca": "sello PREGUNTA EXAMEN 2020",
+  "n": "Ley 10/2010",
+  "art": "7",
+  "ap": "1",
+  "tipo": "EXAMEN",
+  "sitios": [
+   "29-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-22",
+   "2-ia-156",
+   "2-ia-157"
+  ]
+ },
+ {
+  "pg": 52,
+  "desc": "Ley 10/2010 art 7.5 (casinos de juego)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "7",
+  "ap": "5",
+  "tipo": "EXOF",
+  "sitios": [
+   "29-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-22",
+   "2-ia-156",
+   "2-ia-157"
+  ]
+ },
+ {
+  "pg": 52,
+  "desc": "Ley 10/2010 art 7.6 (operadores de juego electrónicos, 2.000 €)",
+  "marca": "EXOF ×2 (círculos azules)",
+  "n": "Ley 10/2010",
+  "art": "7",
+  "ap": "6",
+  "tipo": "EXOF",
+  "sitios": [
+   "29-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-22",
+   "2-ia-156",
+   "2-ia-157"
+  ]
+ },
+ {
+  "pg": 52,
+  "desc": "Ley 10/2010 art 7.7 (reglamentariamente no aplicación… umbral cuantitativo)",
+  "marca": "EXOF? (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "7",
+  "ap": "7",
+  "tipo": "EXOF",
+  "sitios": [
+   "29-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-22",
+   "2-ia-156",
+   "2-ia-157"
+  ]
+ },
+ {
+  "pg": 61,
+  "desc": "Ley 10/2010 art 18.3 (comunicación por indicio: soporte y formato)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "18",
+  "ap": "3",
+  "tipo": "*",
+  "sitios": [
+   "33-1"
+  ],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 63,
+  "desc": "Ley 10/2010 art 24.3 (intenten disuadir… no constituirá revelación)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "24",
+  "ap": "3",
+  "tipo": "*",
+  "sitios": [
+   "34-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-158"
+  ]
+ },
+ {
+  "pg": 63,
+  "desc": "Ley 10/2010 art 25.1 (conservación 10 años; 5 años solo accesible)",
+  "marca": "EXOF? (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "25",
+  "ap": "1",
+  "tipo": "EXOF",
+  "sitios": [
+   "35-0"
+  ],
+  "of": [
+   "2-68"
+  ],
+  "ia": [
+   "2-ia-145",
+   "2-ia-159"
+  ]
+ },
+ {
+  "pg": 67,
+  "desc": "Ley 10/2010 art 26 ter.5 (recursos materiales, humanos y técnicos)",
+  "marca": "* azul (dudoso)",
+  "n": "Ley 10/2010",
+  "art": "26 ter",
+  "ap": "5",
+  "tipo": "*",
+  "sitios": [
+   "36-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-152"
+  ]
+ },
+ {
+  "pg": 68,
+  "desc": "Ley 10/2010 art 28.1 (examen anual por experto externo)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "28",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "36-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-160",
+   "2-ia-186"
+  ]
+ },
+ {
+  "pg": 68,
+  "desc": "Ley 10/2010 art 28.1 (informe en 3 meses al Consejo de Administración / órgano directivo)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "28",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "36-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-160",
+   "2-ia-186"
+  ]
+ },
+ {
+  "pg": 70,
+  "desc": "Ley 10/2010 art 31.2 (informar en 7 días tras identificar tercer país)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "31",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 73,
+  "desc": "Ley 10/2010 art 32 ter.1 (comunicar a la Comisión al menos 60 días antes)",
+  "marca": "* azul (pequeño)",
+  "n": "Ley 10/2010",
+  "art": "32 ter",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 78,
+  "desc": "Ley 10/2010 art 34.1 a) (salida o entrada ≥10.000 €)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "34",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "37-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-148"
+  ]
+ },
+ {
+  "pg": 78,
+  "desc": "Ley 10/2010 art 34.1 «Se exceptúan» (transporte profesional inscrito en Mº Interior)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "34",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "37-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-148"
+  ]
+ },
+ {
+  "pg": 80,
+  "desc": "Ley 10/2010 art 35.2 c) (declaración incorrecta: >10 % o 3.000 €)",
+  "marca": "EXOF? (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "35",
+  "ap": "2",
+  "tipo": "EXOF",
+  "sitios": [
+   "37-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-161"
+  ]
+ },
+ {
+  "pg": 80,
+  "desc": "Ley 10/2010 art 35.2 (intervención provisional 30 días, ampliable hasta 90)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "35",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "37-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-161"
+  ]
+ },
+ {
+  "pg": 81,
+  "desc": "Ley 10/2010 art 35.5 (reclamación en 15 días hábiles)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "35",
+  "ap": "5",
+  "tipo": "*",
+  "sitios": [
+   "37-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-161"
+  ]
+ },
+ {
+  "pg": 82,
+  "desc": "Ley 10/2010 art 38 (comercio de bienes: cobros >10.000 €)",
+  "marca": "EXOF (recuadro) + * azul",
+  "n": "Ley 10/2010",
+  "art": "38",
+  "ap": "",
+  "tipo": "EXOF",
+  "sitios": [
+   "38-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-189"
+  ]
+ },
+ {
+  "pg": 82,
+  "desc": "Ley 10/2010 art 39 (Protectorado y Patronato; 10 años)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "39",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "38-1"
+  ],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 84,
+  "desc": "Ley 10/2010 art 43.2 (Fichero de Titularidades Financieras: Secretaría de Estado de Economía; encargado SEPBLAC)",
+  "marca": "EXO (círculo azul) + * azul",
+  "n": "Ley 10/2010",
+  "art": "43",
+  "ap": "2",
+  "tipo": "EXOF",
+  "sitios": [
+   "39-1"
+  ],
+  "of": [
+   "2-2",
+   "2-73"
+  ],
+  "ia": [
+   "2-ia-147"
+  ]
+ },
+ {
+  "pg": 88,
+  "desc": "Ley 10/2010 art 43.2 (Fichero de Titularidades Financieras)",
+  "marca": "sello PREGUNTA EXAMEN",
+  "n": "Ley 10/2010",
+  "art": "43",
+  "ap": "2",
+  "tipo": "EXAMEN",
+  "sitios": [
+   "39-1"
+  ],
+  "of": [
+   "2-2",
+   "2-73"
+  ],
+  "ia": [
+   "2-ia-147"
+  ]
+ },
+ {
+  "pg": 90,
+  "desc": "Ley 10/2010 art 43.2 (Fichero: responsable Secretaría de Estado de Economía; encargado Servicio Ejecutivo)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "43",
+  "ap": "2",
+  "tipo": "EXOF",
+  "sitios": [
+   "39-1"
+  ],
+  "of": [
+   "2-2",
+   "2-73"
+  ],
+  "ia": [
+   "2-ia-147"
+  ]
+ },
+ {
+  "pg": 90,
+  "desc": "Ley 10/2010 art 43.3 (organismos de recuperación de activos; ORGA)",
+  "marca": "EX (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "43",
+  "ap": "3",
+  "tipo": "EX",
+  "sitios": [
+   "39-2"
+  ],
+  "of": [
+   "2-16"
+  ],
+  "ia": [
+   "2-ia-187"
+  ]
+ },
+ {
+  "pg": 90,
+  "desc": "Ley 10/2010 art 43.3 (Agencia Estatal de Administración Tributaria)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "43",
+  "ap": "3",
+  "tipo": "*",
+  "sitios": [
+   "39-2"
+  ],
+  "of": [
+   "2-16"
+  ],
+  "ia": [
+   "2-ia-187"
+  ]
+ },
+ {
+  "pg": 92,
+  "desc": "Ley 10/2010 art 45 (Órganos de apoyo de la Comisión)",
+  "marca": "sello PREGUNTA EXAMEN",
+  "n": "Ley 10/2010",
+  "art": "45",
+  "ap": "",
+  "tipo": "EXAMEN",
+  "sitios": [
+   "41-0",
+   "41-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-324"
+  ]
+ },
+ {
+  "pg": 93,
+  "desc": "Ley 10/2010 art 43.3 e) (AEAT accede al Fichero)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "43",
+  "ap": "3",
+  "tipo": "*",
+  "sitios": [
+   "39-2"
+  ],
+  "of": [
+   "2-16"
+  ],
+  "ia": [
+   "2-ia-187"
+  ]
+ },
+ {
+  "pg": 94,
+  "desc": "Ley 10/2010 art 44.1 (impulso y coordinación: Comisión, dependiente de la Secretaría de Estado de Economía)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "44",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "40-0"
+  ],
+  "of": [
+   "2-51"
+  ],
+  "ia": [
+   "2-ia-166"
+  ]
+ },
+ {
+  "pg": 94,
+  "desc": "Ley 10/2010 art 44.2 e) (aprobar presupuesto del Servicio Ejecutivo, previa consulta Banco de España)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "44",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "40-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-184"
+  ]
+ },
+ {
+  "pg": 94,
+  "desc": "Ley 10/2010 art 44.2 f) (orientar la actuación del Servicio Ejecutivo)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "44",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "40-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-184"
+  ]
+ },
+ {
+  "pg": 94,
+  "desc": "Ley 10/2010 art 44.2 g) (aprobar Plan Anual de Inspección)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "44",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "40-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-184"
+  ]
+ },
+ {
+  "pg": 95,
+  "desc": "Ley 10/2010 art 44.2 n) (estadísticas anuales a la Comisión Europea)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "44",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "40-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-184"
+  ]
+ },
+ {
+  "pg": 95,
+  "desc": "Ley 10/2010 art 44.2 ñ) (análisis nacional de riesgos)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "44",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "40-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-184"
+  ]
+ },
+ {
+  "pg": 95,
+  "desc": "Ley 10/2010 art 44.3 (presidida por el Secretario de Estado de Economía)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "44",
+  "ap": "3",
+  "tipo": "*",
+  "sitios": [
+   "40-2"
+  ],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 96,
+  "desc": "Ley 10/2010 art 45 (órganos de apoyo)",
+  "marca": "sello PREGUNTA EXAMEN 2020",
+  "n": "Ley 10/2010",
+  "art": "45",
+  "ap": "",
+  "tipo": "EXAMEN",
+  "sitios": [
+   "41-0",
+   "41-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-324"
+  ]
+ },
+ {
+  "pg": 96,
+  "desc": "Ley 10/2010 art 45.2 (Secretaría: subdirección general; Secretario de la Comisión)",
+  "marca": "EX (círculo rosa)",
+  "n": "Ley 10/2010",
+  "art": "45",
+  "ap": "2",
+  "tipo": "EX",
+  "sitios": [
+   "41-0",
+   "41-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-324"
+  ]
+ },
+ {
+  "pg": 96,
+  "desc": "Ley 10/2010 art 45.2 (Secretaría instruye procedimientos sancionadores)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "45",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "41-0",
+   "41-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-324"
+  ]
+ },
+ {
+  "pg": 96,
+  "desc": "Ley 10/2010 art 45.3 (Servicio Ejecutivo: competencias ejercidas por el Banco de España)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "45",
+  "ap": "3",
+  "tipo": "EXOF",
+  "sitios": [
+   "41-0",
+   "41-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-324"
+  ]
+ },
+ {
+  "pg": 97,
+  "desc": "Ley 10/2010 art 46.1 (Servicio Ejecutivo analizará la información)",
+  "marca": "* azul (X)",
+  "n": "Ley 10/2010",
+  "art": "46",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "41-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-185"
+  ]
+ },
+ {
+  "pg": 97,
+  "desc": "Ley 10/2010 art 46.1 (informes de inteligencia financiera sin valor probatorio)",
+  "marca": "* azul + * rojo",
+  "n": "Ley 10/2010",
+  "art": "46",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "41-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-185"
+  ]
+ },
+ {
+  "pg": 99,
+  "desc": "Ley 10/2010 art 47.6 (informes de inspección: valor probatorio)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "47",
+  "ap": "6",
+  "tipo": "*",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 101,
+  "desc": "Ley 10/2010 art 48 bis.6 (suspensión de transacción: máximo un mes)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "48 bis",
+  "ap": "6",
+  "tipo": "*",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 105,
+  "desc": "Ley 10/2010 art 52.1 k) (graves: colaboración art 21 sin requerimiento escrito)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "52",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "44-0",
+   "44-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-149",
+   "2-ia-165",
+   "2-ia-178",
+   "2-ia-336",
+   "2-ia-337",
+   "2-ia-342"
+  ]
+ },
+ {
+  "pg": 105,
+  "desc": "Ley 10/2010 art 52.1 n) (graves: comunicar nombramiento del representante)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "52",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "44-0",
+   "44-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-149",
+   "2-ia-165",
+   "2-ia-178",
+   "2-ia-336",
+   "2-ia-337",
+   "2-ia-342"
+  ]
+ },
+ {
+  "pg": 105,
+  "desc": "Ley 10/2010 art 52.1 w) (graves: medidas correctoras sin voluntad rebelde)",
+  "marca": "* rojo",
+  "n": "Ley 10/2010",
+  "art": "52",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "44-0",
+   "44-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-149",
+   "2-ia-165",
+   "2-ia-178",
+   "2-ia-336",
+   "2-ia-337",
+   "2-ia-342"
+  ]
+ },
+ {
+  "pg": 107,
+  "desc": "Ley 10/2010 art 56.1 (amonestación pública obligatoria + b o c)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "56",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "45-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-155",
+   "2-ia-179"
+  ]
+ },
+ {
+  "pg": 109,
+  "desc": "Ley 10/2010 art 57.3 a) (medios de pago: multa mínimo 600 €, máximo 50 %)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "57",
+  "ap": "3",
+  "tipo": "*",
+  "sitios": [
+   "45-1"
+  ],
+  "of": [
+   "2-39"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 110,
+  "desc": "Ley 10/2010 art 59.1 (graduación de las sanciones)",
+  "marca": "EXOF? (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "59",
+  "ap": "1",
+  "tipo": "EXOF",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 110,
+  "desc": "Ley 10/2010 art 59.1 d) (sanciones firmes últimos cinco años)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "59",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 111,
+  "desc": "Ley 10/2010 art 60.1 (prescripción infracciones: MG y G 5 años, L 2 años)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "60",
+  "ap": "1",
+  "tipo": "EXOF",
+  "sitios": [
+   "46-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-176",
+   "2-ia-177"
+  ]
+ },
+ {
+  "pg": 111,
+  "desc": "Ley 10/2010 art 60.2 (prescripción sanciones: MG 3, G 2, L 1 año)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Ley 10/2010",
+  "art": "60",
+  "ap": "2",
+  "tipo": "EXOF",
+  "sitios": [
+   "46-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-176",
+   "2-ia-177"
+  ]
+ },
+ {
+  "pg": 118,
+  "desc": "Ley 10/2010 DA 3.ª.1 (Registro de Titularidades Reales en el Ministerio de Justicia, central y único)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "da",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "48-0"
+  ],
+  "of": [
+   "2-37"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 119,
+  "desc": "Ley 10/2010 DA 4.ª.1 (acceso al Registro de Titularidades Reales: Ministerio de Justicia)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "da",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "48-0"
+  ],
+  "of": [
+   "2-37"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 119,
+  "desc": "Ley 10/2010 DA 4.ª.4 (DG Seguridad Jurídica y Fe Pública encargada; alzada)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "da",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "48-0"
+  ],
+  "of": [
+   "2-37"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 120,
+  "desc": "Ley 10/2010 DA 5.ª (declaración en el Fichero de Titularidades Financieras: 12 meses)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "da",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "48-0"
+  ],
+  "of": [
+   "2-37"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 120,
+  "desc": "Ley 10/2010 DA 6.ª (creación del Registro de Titularidades Reales: 6 meses)",
+  "marca": "* azul",
+  "n": "Ley 10/2010",
+  "art": "da",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "48-0"
+  ],
+  "of": [
+   "2-37"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 127,
+  "desc": "Palermo art 2 b) (delito grave: privación de libertad máxima de al menos 4 años)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "2",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "49-1"
+  ],
+  "of": [
+   "2-65"
+  ],
+  "ia": [
+   "2-ia-27",
+   "2-ia-28",
+   "2-ia-194",
+   "2-ia-199"
+  ]
+ },
+ {
+  "pg": 128,
+  "desc": "Palermo art 3.2 (carácter transnacional: cuadro)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "3",
+  "ap": "2",
+  "tipo": "EX",
+  "sitios": [
+   "50-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-29",
+   "2-ia-200"
+  ]
+ },
+ {
+  "pg": 128,
+  "desc": "Palermo art 6.1 a) (blanqueo: conversión o transferencia)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "6",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [
+   "52-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-31"
+  ]
+ },
+ {
+  "pg": 129,
+  "desc": "Palermo art 6.1 b) (adquisición, participación…)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "6",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [
+   "52-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-31"
+  ]
+ },
+ {
+  "pg": 129,
+  "desc": "Palermo art 8.1 (penalización de la corrupción: adoptará)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "8",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [
+   "53-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-33",
+   "2-ia-198"
+  ]
+ },
+ {
+  "pg": 130,
+  "desc": "Palermo art 15 (jurisdicción)",
+  "marca": "EX? (círculo azul junto al título)",
+  "n": "Palermo",
+  "art": "15",
+  "ap": "",
+  "tipo": "EX",
+  "sitios": [
+   "55-0",
+   "55-1",
+   "55-2"
+  ],
+  "of": [
+   "2-67"
+  ],
+  "ia": [
+   "2-ia-208",
+   "2-ia-221"
+  ]
+ },
+ {
+  "pg": 130,
+  "desc": "Palermo art 15.2 b) (delito cometido por nacional o apátrida residente)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "15",
+  "ap": "2",
+  "tipo": "EX",
+  "sitios": [
+   "55-1"
+  ],
+  "of": [
+   "2-67"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 131,
+  "desc": "Palermo art 18.8 (no invocar secreto bancario)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "8",
+  "tipo": "*",
+  "sitios": [
+   "57-1"
+  ],
+  "of": [
+   "2-70"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 131,
+  "desc": "Palermo art 18.10 (traslado de personas detenidas para identificación/testimonio)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "10",
+  "tipo": "EX",
+  "sitios": [
+   "57-0",
+   "57-1",
+   "57-2",
+   "57-3",
+   "57-4",
+   "57-5",
+   "57-6",
+   "57-7"
+  ],
+  "of": [
+   "2-70",
+   "2-14",
+   "2-84"
+  ],
+  "ia": [
+   "2-ia-224",
+   "2-ia-225",
+   "2-ia-223",
+   "2-ia-211",
+   "2-ia-212",
+   "2-ia-233"
+  ]
+ },
+ {
+  "pg": 131,
+  "desc": "Palermo art 18.11 (condiciones del traslado; cómputo de la pena)",
+  "marca": "EX (círculo)",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "11",
+  "tipo": "EX",
+  "sitios": [
+   "57-0",
+   "57-1",
+   "57-2",
+   "57-3",
+   "57-4",
+   "57-5",
+   "57-6",
+   "57-7"
+  ],
+  "of": [
+   "2-70",
+   "2-14",
+   "2-84"
+  ],
+  "ia": [
+   "2-ia-224",
+   "2-ia-225",
+   "2-ia-223",
+   "2-ia-211",
+   "2-ia-212",
+   "2-ia-233"
+  ]
+ },
+ {
+  "pg": 132,
+  "desc": "Palermo art 18.13 (autoridad central; INTERPOL en circunstancias urgentes)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "13",
+  "tipo": "*",
+  "sitios": [
+   "57-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-225"
+  ]
+ },
+ {
+  "pg": 132,
+  "desc": "Palermo art 18.21 (denegación de asistencia judicial)",
+  "marca": "EX? (círculo azul)",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "21",
+  "tipo": "EX",
+  "sitios": [
+   "57-0",
+   "57-1",
+   "57-2",
+   "57-3",
+   "57-4",
+   "57-5",
+   "57-6",
+   "57-7"
+  ],
+  "of": [
+   "2-70",
+   "2-14",
+   "2-84"
+  ],
+  "ia": [
+   "2-ia-224",
+   "2-ia-225",
+   "2-ia-223",
+   "2-ia-211",
+   "2-ia-212",
+   "2-ia-233"
+  ]
+ },
+ {
+  "pg": 132,
+  "desc": "Palermo art 19 (investigaciones conjuntas)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "19",
+  "ap": "",
+  "tipo": "EX",
+  "sitios": [
+   "58-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-213"
+  ]
+ },
+ {
+  "pg": 133,
+  "desc": "Palermo art 29.1 (capacitación y asistencia técnica)",
+  "marca": "EX (círculo azul) ×2",
+  "n": "Palermo",
+  "art": "29",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 133,
+  "desc": "Palermo art 31.2 a) (prevención: cooperación organismos/ministerio público)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "31",
+  "ap": "2",
+  "tipo": "EX",
+  "sitios": [
+   "60-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-218"
+  ]
+ },
+ {
+  "pg": 133,
+  "desc": "Palermo art 32.2 (Conferencia de las Partes: a más tardar un año)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "32",
+  "ap": "2",
+  "tipo": "EX",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 133,
+  "desc": "Palermo art 35.1 (controversias: negociación)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "35",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [
+   "60-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-232"
+  ]
+ },
+ {
+  "pg": 136,
+  "desc": "Palermo art 39.1 (enmienda: 5 años; dos tercios)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "39",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [
+   "61-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-228",
+   "2-ia-229"
+  ]
+ },
+ {
+  "pg": 137,
+  "desc": "Palermo art 2 b) (delito grave ≥4 años)",
+  "marca": "* rojo",
+  "n": "Palermo",
+  "art": "2",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "49-1"
+  ],
+  "of": [
+   "2-65"
+  ],
+  "ia": [
+   "2-ia-27",
+   "2-ia-28",
+   "2-ia-194",
+   "2-ia-199"
+  ]
+ },
+ {
+  "pg": 138,
+  "desc": "Palermo art 3.2 d) (efectos sustanciales en otro Estado)",
+  "marca": "* rojo",
+  "n": "Palermo",
+  "art": "3",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "50-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-29",
+   "2-ia-200"
+  ]
+ },
+ {
+  "pg": 140,
+  "desc": "Palermo art 6.1 a) (blanqueo)",
+  "marca": "EX (círculo azul)",
+  "n": "Palermo",
+  "art": "6",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [
+   "52-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-31"
+  ]
+ },
+ {
+  "pg": 148,
+  "desc": "Palermo art 16.12 (extradición denegada por ser nacional: cumplir la condena)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Palermo",
+  "art": "16",
+  "ap": "12",
+  "tipo": "EXOF",
+  "sitios": [
+   "56-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-222"
+  ]
+ },
+ {
+  "pg": 148,
+  "desc": "Palermo art 16.14 (no obligación de extraditar si persecución por sexo, raza, religión…)",
+  "marca": "* rojo",
+  "n": "Palermo",
+  "art": "16",
+  "ap": "14",
+  "tipo": "*",
+  "sitios": [
+   "56-2"
+  ],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 150,
+  "desc": "Palermo art 18.8 (no invocar secreto bancario)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "8",
+  "tipo": "*",
+  "sitios": [
+   "57-1"
+  ],
+  "of": [
+   "2-70"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 150,
+  "desc": "Palermo art 18.10 b) (autoridades de ambos Estados de acuerdo)",
+  "marca": "* rojo",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "10",
+  "tipo": "*",
+  "sitios": [
+   "57-0",
+   "57-1",
+   "57-2",
+   "57-3",
+   "57-4",
+   "57-5",
+   "57-6",
+   "57-7"
+  ],
+  "of": [
+   "2-70",
+   "2-14",
+   "2-84"
+  ],
+  "ia": [
+   "2-ia-224",
+   "2-ia-225",
+   "2-ia-223",
+   "2-ia-211",
+   "2-ia-212",
+   "2-ia-233"
+  ]
+ },
+ {
+  "pg": 150,
+  "desc": "Palermo art 18.11 (traslado de personas detenidas)",
+  "marca": "sello PREGUNTA EXAMEN 2020",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "11",
+  "tipo": "EXAMEN",
+  "sitios": [
+   "57-0",
+   "57-1",
+   "57-2",
+   "57-3",
+   "57-4",
+   "57-5",
+   "57-6",
+   "57-7"
+  ],
+  "of": [
+   "2-70",
+   "2-14",
+   "2-84"
+  ],
+  "ia": [
+   "2-ia-224",
+   "2-ia-225",
+   "2-ia-223",
+   "2-ia-211",
+   "2-ia-212",
+   "2-ia-233"
+  ]
+ },
+ {
+  "pg": 150,
+  "desc": "Palermo art 18.11 b) (devolver bajo custodia sin dilación)",
+  "marca": "* rosa",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "11",
+  "tipo": "*",
+  "sitios": [
+   "57-0",
+   "57-1",
+   "57-2",
+   "57-3",
+   "57-4",
+   "57-5",
+   "57-6",
+   "57-7"
+  ],
+  "of": [
+   "2-70",
+   "2-14",
+   "2-84"
+  ],
+  "ia": [
+   "2-ia-224",
+   "2-ia-225",
+   "2-ia-223",
+   "2-ia-211",
+   "2-ia-212",
+   "2-ia-233"
+  ]
+ },
+ {
+  "pg": 151,
+  "desc": "Palermo art 18.13 (vía diplomática; INTERPOL en urgencia)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "13",
+  "tipo": "*",
+  "sitios": [
+   "57-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-225"
+  ]
+ },
+ {
+  "pg": 151,
+  "desc": "Palermo art 18.15 (contenido de la solicitud)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "15",
+  "tipo": "EXOF",
+  "sitios": [
+   "57-3"
+  ],
+  "of": [
+   "2-14",
+   "2-84"
+  ],
+  "ia": []
+ },
+ {
+  "pg": 152,
+  "desc": "Palermo art 18.21 b) (denegación por soberanía, seguridad, orden público)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "21",
+  "tipo": "*",
+  "sitios": [
+   "57-0",
+   "57-1",
+   "57-2",
+   "57-3",
+   "57-4",
+   "57-5",
+   "57-6",
+   "57-7"
+  ],
+  "of": [
+   "2-70",
+   "2-14",
+   "2-84"
+  ],
+  "ia": [
+   "2-ia-224",
+   "2-ia-225",
+   "2-ia-223",
+   "2-ia-211",
+   "2-ia-212",
+   "2-ia-233"
+  ]
+ },
+ {
+  "pg": 152,
+  "desc": "Palermo art 18.21 c) (prohibición derecho interno)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "21",
+  "tipo": "EXOF",
+  "sitios": [
+   "57-0",
+   "57-1",
+   "57-2",
+   "57-3",
+   "57-4",
+   "57-5",
+   "57-6",
+   "57-7"
+  ],
+  "of": [
+   "2-70",
+   "2-14",
+   "2-84"
+  ],
+  "ia": [
+   "2-ia-224",
+   "2-ia-225",
+   "2-ia-223",
+   "2-ia-211",
+   "2-ia-212",
+   "2-ia-233"
+  ]
+ },
+ {
+  "pg": 152,
+  "desc": "Palermo art 18.22 (no denegar por asuntos fiscales)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "22",
+  "tipo": "*",
+  "sitios": [
+   "57-4"
+  ],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 153,
+  "desc": "Palermo art 18.27 (salvoconducto: 15 días consecutivos)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "18",
+  "ap": "27",
+  "tipo": "*",
+  "sitios": [
+   "57-6"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-211",
+   "2-ia-212"
+  ]
+ },
+ {
+  "pg": 153,
+  "desc": "Palermo art 19 (investigaciones conjuntas; soberanía)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "19",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "58-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-213"
+  ]
+ },
+ {
+  "pg": 154,
+  "desc": "Palermo art 20.2 (técnicas especiales: igualdad soberana)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "20",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "58-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-214"
+  ]
+ },
+ {
+  "pg": 160,
+  "desc": "Palermo art 31.4 (evaluar periódicamente instrumentos jurídicos)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "31",
+  "ap": "4",
+  "tipo": "*",
+  "sitios": [
+   "60-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-218"
+  ]
+ },
+ {
+  "pg": 162,
+  "desc": "Palermo art 36.1 (firma: Palermo 12-15 dic 2000; Nueva York hasta 12-12-2002)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "36",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "61-0"
+  ],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 162,
+  "desc": "Palermo art 38.1 (entrada en vigor: 90.º día tras el 40.º instrumento)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "38",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "61-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-226",
+   "2-ia-227"
+  ]
+ },
+ {
+  "pg": 163,
+  "desc": "Palermo art 41.1 (Secretario General depositario)",
+  "marca": "* azul",
+  "n": "Palermo",
+  "art": "41",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "61-4"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-110",
+   "2-ia-197",
+   "2-ia-231"
+  ]
+ },
+ {
+  "pg": 166,
+  "desc": "Trata art 2 cuadro (finalidad del Protocolo)",
+  "marca": "* azul + ESQ",
+  "n": "Trata",
+  "art": "2",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "62-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-235",
+   "2-ia-262"
+  ]
+ },
+ {
+  "pg": 167,
+  "desc": "Trata art 3 d) (niño: menor de 18 años)",
+  "marca": "sin marca EX",
+  "n": "Trata",
+  "art": "3",
+  "ap": "",
+  "tipo": "EX",
+  "sitios": [
+   "63-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-236",
+   "2-ia-237",
+   "2-ia-239",
+   "2-ia-240",
+   "2-ia-248"
+  ]
+ },
+ {
+  "pg": 168,
+  "desc": "Trata art 6.3 (recuperación física, psicológica y social)",
+  "marca": "* rojo",
+  "n": "Trata",
+  "art": "6",
+  "ap": "3",
+  "tipo": "*",
+  "sitios": [
+   "65-1"
+  ],
+  "of": [
+   "2-31"
+  ],
+  "ia": [
+   "2-ia-241"
+  ]
+ },
+ {
+  "pg": 168,
+  "desc": "Trata art 6.3 a-d (alojamiento, asesoramiento, asistencia, oportunidades)",
+  "marca": "EXOF (círculo azul) + * azul",
+  "n": "Trata",
+  "art": "6",
+  "ap": "3",
+  "tipo": "EXOF",
+  "sitios": [
+   "65-1"
+  ],
+  "of": [
+   "2-31"
+  ],
+  "ia": [
+   "2-ia-241"
+  ]
+ },
+ {
+  "pg": 169,
+  "desc": "Trata art 8.2 (repatriación preferentemente voluntaria)",
+  "marca": "* rojo",
+  "n": "Trata",
+  "art": "8",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "66-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-253"
+  ]
+ },
+ {
+  "pg": 170,
+  "desc": "Trata art 9.1 (políticas: prevenir y combatir; proteger)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "9",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "67-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-40",
+   "2-ia-260"
+  ]
+ },
+ {
+  "pg": 170,
+  "desc": "Trata art 9.4 (pobreza, subdesarrollo, falta de oportunidades)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "9",
+  "ap": "4",
+  "tipo": "*",
+  "sitios": [
+   "67-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-40",
+   "2-ia-260"
+  ]
+ },
+ {
+  "pg": 170,
+  "desc": "Trata art 9.5 (medidas educativas, sociales y culturales)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "9",
+  "ap": "5",
+  "tipo": "*",
+  "sitios": [
+   "67-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-40",
+   "2-ia-260"
+  ]
+ },
+ {
+  "pg": 170,
+  "desc": "Trata art 10.1 a) (cruzan frontera con documentos de terceros)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "10",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "67-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-255",
+   "2-ia-272"
+  ]
+ },
+ {
+  "pg": 171,
+  "desc": "Trata art 11.1 (medidas fronterizas)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "11",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "68-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-41",
+   "2-ia-242",
+   "2-ia-254",
+   "2-ia-256"
+  ]
+ },
+ {
+  "pg": 171,
+  "desc": "Trata art 12 (seguridad de documentos)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "12",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "68-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-244"
+  ]
+ },
+ {
+  "pg": 171,
+  "desc": "Trata art 13 (legitimidad y validez de documentos)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "13",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "68-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-257",
+   "2-ia-277"
+  ]
+ },
+ {
+  "pg": 172,
+  "desc": "Trata art 14.1 (cláusula de salvaguardia: non-refoulement)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "14",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "69-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-245"
+  ]
+ },
+ {
+  "pg": 172,
+  "desc": "Trata art 15.2 (controversias: 6 meses, arbitraje, CIJ)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "15",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "69-1",
+   "69-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-258",
+   "2-ia-259",
+   "2-ia-273",
+   "2-ia-274"
+  ]
+ },
+ {
+  "pg": 173,
+  "desc": "Trata art 17.1 (entrada en vigor: 90.º día tras 40.º instrumento)",
+  "marca": "* azul",
+  "n": "Trata",
+  "art": "17",
+  "ap": "1",
+  "tipo": "*",
+  "sitios": [
+   "70-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-267"
+  ]
+ },
+ {
+  "pg": 178,
+  "desc": "Migrantes art 3 a) (tráfico ilícito de migrantes: definición)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Migrantes",
+  "art": "3",
+  "ap": "",
+  "tipo": "EXOF",
+  "sitios": [
+   "71-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-42",
+   "2-ia-278",
+   "2-ia-281",
+   "2-ia-286"
+  ]
+ },
+ {
+  "pg": 178,
+  "desc": "Migrantes art 3 d) («buque»: excluidos buques de guerra)",
+  "marca": "* azul (negrita)",
+  "n": "Migrantes",
+  "art": "3",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "71-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-42",
+   "2-ia-278",
+   "2-ia-281",
+   "2-ia-286"
+  ]
+ },
+ {
+  "pg": 180,
+  "desc": "Migrantes art 8.2 c) (pruebas: adoptar medidas apropiadas)",
+  "marca": "o/o (círculo azul) + * azul",
+  "n": "Migrantes",
+  "art": "8",
+  "ap": "2",
+  "tipo": "*",
+  "sitios": [
+   "73-1"
+  ],
+  "of": [
+   "2-18",
+   "2-87"
+  ],
+  "ia": [
+   "2-ia-45"
+  ]
+ },
+ {
+  "pg": 181,
+  "desc": "Migrantes art 8.7 (motivos razonables: visitar y registrar el buque)",
+  "marca": "* azul (pequeño)",
+  "n": "Migrantes",
+  "art": "8",
+  "ap": "7",
+  "tipo": "*",
+  "sitios": [
+   "73-5"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-284"
+  ]
+ },
+ {
+  "pg": 181,
+  "desc": "Migrantes art 9.4 (medidas en el mar solo por buques de guerra o aeronaves militares)",
+  "marca": "EX (círculo azul) + * azul",
+  "n": "Migrantes",
+  "art": "9",
+  "ap": "4",
+  "tipo": "EX",
+  "sitios": [
+   "74-3"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-317"
+  ]
+ },
+ {
+  "pg": 193,
+  "desc": "Armas art 2 (finalidad: promover, facilitar y reforzar la cooperación)",
+  "marca": "EXOF (círculo azul) + * azul",
+  "n": "Armas",
+  "art": "2",
+  "ap": "",
+  "tipo": "EXOF",
+  "sitios": [
+   "78-1"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-279"
+  ]
+ },
+ {
+  "pg": 193,
+  "desc": "Armas art 3 (definiciones)",
+  "marca": "* rojo",
+  "n": "Armas",
+  "art": "3",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "78-2"
+  ],
+  "of": [
+   "2-25"
+  ],
+  "ia": [
+   "2-ia-47",
+   "2-ia-280",
+   "2-ia-290",
+   "2-ia-292",
+   "2-ia-296"
+  ]
+ },
+ {
+  "pg": 193,
+  "desc": "Armas art 3 d) («fabricación ilícita»)",
+  "marca": "sello PREGUNTA EXAMEN + * rojo",
+  "n": "Armas",
+  "art": "3",
+  "ap": "",
+  "tipo": "EXAMEN",
+  "sitios": [
+   "78-2"
+  ],
+  "of": [
+   "2-25"
+  ],
+  "ia": [
+   "2-ia-47",
+   "2-ia-280",
+   "2-ia-290",
+   "2-ia-292",
+   "2-ia-296"
+  ]
+ },
+ {
+  "pg": 194,
+  "desc": "Armas art 5.1 (penalización a-c: se cometan intencionalmente)",
+  "marca": "EX (círculo azul) + * azul",
+  "n": "Armas",
+  "art": "5",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [
+   "79-0"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-48",
+   "2-ia-306"
+  ]
+ },
+ {
+  "pg": 195,
+  "desc": "Armas art 7 (registros: no inferior a diez años)",
+  "marca": "EXOF (círculo azul)",
+  "n": "Armas",
+  "art": "7",
+  "ap": "",
+  "tipo": "EXOF",
+  "sitios": [
+   "80-0"
+  ],
+  "of": [
+   "2-24"
+  ],
+  "ia": [
+   "2-ia-50"
+  ]
+ },
+ {
+  "pg": 196,
+  "desc": "Armas art 9 b) (desactivación: disposiciones)",
+  "marca": "* azul",
+  "n": "Armas",
+  "art": "9",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [
+   "80-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-303"
+  ]
+ },
+ {
+  "pg": 198,
+  "desc": "Armas art 14 (capacitación y asistencia técnica)",
+  "marca": "* azul",
+  "n": "Armas",
+  "art": "14",
+  "ap": "",
+  "tipo": "*",
+  "sitios": [],
+  "of": [],
+  "ia": []
+ },
+ {
+  "pg": 198,
+  "desc": "Armas art 15.1 (corretaje: inscripción, licencia, nombre de corredores)",
+  "marca": "EX? (círculo azul) + * rojo",
+  "n": "Armas",
+  "art": "15",
+  "ap": "1",
+  "tipo": "EX",
+  "sitios": [
+   "82-2"
+  ],
+  "of": [],
+  "ia": [
+   "2-ia-302"
+  ]
+ }
+]
