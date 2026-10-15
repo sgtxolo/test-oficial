@@ -206,10 +206,14 @@ module.exports = function (T) {
   // Ficha literal: cabecera original (o la que se indique) + párrafos elegidos ENTEROS
   // extra = ids de preguntas que el mapa no sitúa pero son de esta ficha → botón «🎯 n preguntas más» al final
   const botonQ = (ids, txt) => `<mark class="m-resp ex-q${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>🎯 ${txt || (ids.length === 1 ? '1 pregunta' : ids.length + ' preguntas')}</mark>`;
+  // sellos de la ficha k: marcas del temario del usuario en sus párrafos (data-ex: EXOF / EX o «1» / *) + EX de la ficha (f.ex)
+  const sellosFicha = k => { const f = fichas[k];
+    const mx = new Set(f.ps.flatMap(x => ((x.at.match(/data-ex="([^"]*)"/) || [])[1] || '').split(',')).map(x => x === '1' ? 'EX' : x).filter(Boolean));
+    return [mx.has('EXOF') && 'EXOF', (mx.has('EX') || f.ex) && 'EX', mx.has('*') && '✱'].filter(Boolean).map(t => ` <span class="ex-sello">${t}</span>`).join(''); };
   const literal = (k, js, cab, extra) => {
     const f = fichas[k];
     const mas = extra && extra.length ? `<p class="ex-mas">${botonQ(extra, extra.length === 1 ? '1 pregunta más de este artículo' : extra.length + ' preguntas más de este artículo')}</p>` : '';
-    return `<div class="ex-ficha${f.ex ? ' ex-of' : ''}"><div class="ex-fh">${cab || f.cab}${f.ex ? '<span class="ex-sello">EX</span>' : ''}</div><div class="ex-fb">${js.map(j => parrafo(k, j)).join('')}${mas}</div></div>`;
+    return `<div class="ex-ficha${f.ex ? ' ex-of' : ''}"><div class="ex-fh">${cab || f.cab}${sellosFicha(k)}</div><div class="ex-fb">${js.map(j => parrafo(k, j)).join('')}${mas}</div></div>`;
   };
   // Tabla de competencias / comparativa sencilla: filas [etiqueta, celda1, celda2…]
   const cuadro = (titulo, cab, filas) => `<div class="vis"><div class="vis-t"><i>▦</i>${titulo}</div><div class="ex-tab" style="--n:${cab.length}">${cab.map(c => `<div class="ex-th">${c}</div>`).join('')}${filas.map(f => f.map((c, i) => `<div class="${i ? 'ex-td' + (c.replace(/<[^>]+>/g, '').length <= 14 ? ' num' : '') : 'ex-tl'}">${c}</div>`).join('')).join('')}</div></div>`;
@@ -255,9 +259,7 @@ module.exports = function (T) {
       if (/^🆕/.test(c)) continue;
       const p = pesoFicha(k); const n = [p.of && `${p.of} oficial${p.of > 1 ? 'es' : ''}`, p.ia && `${p.ia} IA`].filter(Boolean).join(' · ');
       // marcas del temario del usuario en los párrafos de la ficha (data-ex): EXOF / EX («1» en temas antiguos) / ✱
-      const mx = new Set(fichas[k].ps.flatMap(x => ((x.at.match(/data-ex="([^"]*)"/) || [])[1] || '').split(',')).map(x => x === '1' ? 'EX' : x).filter(Boolean));
-      const sellos = [mx.has('EXOF') && 'EXOF', (mx.has('EX') || p.ex) && 'EX', mx.has('*') && '✱'].filter(Boolean).map(t => ` <span class="ex-sello">${t}</span>`).join('');
-      items.push(`<b>${c}</b>${sellos}${n ? ` <small>(${n})</small>` : ' <small>(sin preguntas)</small>'}`); }
+      items.push(`<b>${c}</b>${sellosFicha(k)}${n ? ` <small>(${n})</small>` : ' <small>(sin preguntas)</small>'}`); }
     return items.length ? `<div class="vis ex-datos ex-mapa"><div class="vis-t"><i>🗺</i>Mapa: artículos de esta norma y lo que se pregunta de cada uno</div><ul>${items.map(x => `<li>${x}</li>`).join('')}</ul></div>` : '';
   }
   // rango = [k0, k1] → solo esas fichas (para hacer en literal una parte de un tema redactado)
@@ -297,7 +299,7 @@ module.exports = function (T) {
       if (js.length) { const g = Object.assign({}, OPC); if (nv) Object.assign(OPC, nv); out += literal(k, js, null, extra); Object.keys(OPC).forEach(x => delete OPC[x]); Object.assign(OPC, g); }
       tieneCuadro = false;
       out += hc;
-      if (!js.length && extra.length) out += `<div class="ex-linea">${limpia(f.cab)}: ${botonQ(extra, extra.length === 1 ? '1 pregunta más de este artículo' : extra.length + ' preguntas más de este artículo')}</div>`;
+      if (!js.length && extra.length) out += `<div class="ex-linea">${limpia(f.cab)}${sellosFicha(k)}: ${botonQ(extra, extra.length === 1 ? '1 pregunta más de este artículo' : extra.length + ' preguntas más de este artículo')}</div>`;
     }
     const sin = V.filter((x, i) => !puestos.has(i)).map(([c]) => c);
     if (sin.length) console.error('Cuadros sin ficha en el Exprés:', sin.join(' | '));
