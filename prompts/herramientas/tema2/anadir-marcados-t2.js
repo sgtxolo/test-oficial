@@ -45,6 +45,25 @@ const N = [
     ['EX', 'Art. 32. ' + lit('2. El Secretario General de las Naciones Unidas convocará la Conferencia de las Partes a más tardar un', 'después de la entrada en vigor de la presente Convención.')]] },
   { m: 'T2N_ARM', antes: '  + articuloResp("Artículos 16 a 18', cab: 'Artículo 14 — Capacitación y asistencia técnica', ps: [
     ['*', lit('Los Estados Parte cooperarán entre sí y con las organizaciones internacionales pertinentes, según proceda, a fin de que', 'municiones')]] },
+  // apartados de las fichas RECUERDA que no estaban en el articulado (pauta 15/10/2026: la R va en su artículo, no al final);
+  // tercer elemento = data-r (la app y el Exprés ponen el sello «R n»)
+  { m: 'T2N_L10', antes: '  + articuloResp("Artículo 43 —', cab: 'Artículo 42 — Sanciones y contramedidas financieras internacionales', ps: [
+    ['', lit('2. S in perjuicio del efecto directo de los reglamentos comunitarios', 'armas de destrucción masiva.'), 'R16']] },
+  { m: 'T2N_L10', antes: '  + articuloResp("Artículos 50 y 51', cab: 'Artículo 49 — Deber de secreto (testimonio de los órganos judiciales)', ps: [
+    ['', lit('3. L os órganos judiciales, de oficio o a instancia del Ministerio Fiscal, remitirán testimonio a la Secretaría', 'que no sean constitutivos de delito.'), 'R18']] },
+  { m: 'T2N_L10', antes: '  + articuloResp("Artículos 62 y 63', cab: 'Artículo 61 — Ejecución de las resoluciones sancionadoras', ps: [
+    ['', lit('5. L a ejecución de las resoluciones sancionadoras firmes', 'corresponderá a la Secretaría de la Comisión.'), 'R22']] },
+  { m: 'T2N_PAL', antes: '  + articuloResp("Artículos 8, 10 y 11', cab: 'Artículo 7 — Medidas para combatir el blanqueo de dinero (cooperación)', ps: [
+    ['', lit('4. Los Estados Parte se esforzarán por establecer y promover la cooperación a escala mundial', 'a fin de combatir el blanqueo de dinero.'), 'R24']] },
+  { m: 'T2N_PAL', antes: '  + articuloResp("Artículo 18 — Asistencia', cab: 'Artículo 17 — Traslado de personas condenadas a cumplir una pena', ps: [
+    ['', lit('Los Estados Parte podrán considerar la posibilidad de celebrar acuerdos o arreglos bilaterales o multilaterales sobre el traslado', 'a fin de que complete allí su condena.'), 'R25']] },
+  { m: 'T2N_PAL', antes: '  + articuloResp("Artículos 36, 38', cab: 'Artículos 31 y 33 — Prevención (evaluación de instrumentos) y Secretaría', ps: [
+    ['*', 'Art. 31. ' + lit('4. Los Estados Parte procurarán evaluar periódicamente los instrumentos', 'utilizados indebidamente por grupos delictivos organizados.'), 'R28'],
+    ['', 'Art. 33. ' + lit('1. El Secretario General de las Naciones Unidas prestará los servicios de secretaría', 'ferencia de las Partes en la Convención.'), 'R29']] },
+  { m: 'T2N_TRA', antes: ';\n/* T2_MIGRANTES */', cab: 'Artículo 20 — Depositario e idiomas', ps: [
+    ['', lit('2. El original del presente Protocolo, cuyos textos en árabe', 'se depositará en poder del Secretario General de las Naciones Unidas.'), 'R35']] },
+  { m: 'T2N_ARM', antes: '  + articuloResp("Artículos 10 y 11 — Licencias', cab: 'Artículo 10 — Requisitos generales para sistemas de licencias o autorizaciones', ps: [
+    ['', lit('1. Cada Estado Parte establecerá o mantendrá un sistema eficaz de licencias', 'sus piezas y componentes y municiones.'), 'R38']] },
 ];
 const esc = s => s.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
 let s = fs.readFileSync(F, 'utf8');
@@ -57,13 +76,13 @@ if (pend.length) {
   pend.forEach(x => { if (x.m !== cur) { tmp += (cur ? ';\n' : '') + `/* ${x.m} */ X = `; cur = x.m; } else tmp += '\n + ';
     tmp += `articuloResp("${esc(x.cab)}", [], "${esc(x.ps.map(([, t]) => par(t)).join(''))}", false)`; });
   tmp += ';\n/* T2N_FIN */\n'; fs.writeFileSync(tmpF, tmp);
-  cp.execSync(`node "${path.join(__dirname, '..', 'aplicar-subrayado-pdf.js')}" "${SUB}" "${tmpF}" "/* ${pend[0].m} */" "/* T2N_FIN */" "T2N_L19:15-20,T2N_L10:41-124,T2N_PAL:125-164,T2N_ARM:191-202"`, { stdio: 'inherit', env: { ...process.env, UMBRAL: '0.15' } });
+  cp.execSync(`node "${path.join(__dirname, '..', 'aplicar-subrayado-pdf.js')}" "${SUB}" "${tmpF}" "/* ${pend[0].m} */" "/* T2N_FIN */" "T2N_L19:15-20,T2N_L10:41-124,T2N_PAL:125-164,T2N_TRA:165-176,T2N_ARM:191-202"`, { stdio: 'inherit', env: { ...process.env, UMBRAL: '0.15' } });
   const pintado = fs.readFileSync(tmpF, 'utf8');
   const fichas = {}; for (const m of pintado.matchAll(/articuloResp\("((?:[^"\\\n]|\\.)*)", \[\], "((?:[^"\\\n]|\\.)*)", false\)/g)) fichas[new Function('return "' + m[1] + '"')()] = m[2];
   // 2) insertar con data-ex en cada párrafo
   for (const x of pend) {
     let h = fichas[x.cab]; if (!h) throw new Error('sin ficha pintada: ' + x.cab);
-    let n = 0; h = h.replace(/<p>/g, () => { const t = x.ps[n++][0]; return t ? `<p data-ex=\\"${t}\\">` : '<p>'; });
+    let n = 0; h = h.replace(/<p>/g, () => { const [t, , r] = x.ps[n++]; return '<p' + (t ? ` data-ex=\\"${t}\\"` : '') + (r ? ` data-r=\\"${r}\\"` : '') + '>'; });
     const ficha = `  + articuloResp("${esc(x.cab)}", [], "${h}", false)\n`;
     const a = s.indexOf('/* T2_LEY19 */'), b = s.indexOf('/* T2_REC */'); const i = s.indexOf(x.antes, a);
     if (i < 0 || i > b) throw new Error('no encuentro dónde insertar ' + x.cab);

@@ -23,11 +23,16 @@ const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=/.test(x.at))
   if (p.of || marca || peso >= N.ALTO) return { recorte: 'frases', media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
   if (p.ia <= N.BAJO) return 'boton';
   return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
-const H = X.automatico(V, EXTRAS, { uno: 0.8, nivel, mapa: true });
+// Sin la parte final RECUERDA (pauta 15/10/2026: las R ya están en el articulado): cada R lleva su sello «R n» en el párrafo de su
+// apartado (data-r) y las preguntas que el mapa colgaba de las fichas RECUERDA pasan a ese párrafo (r-articulado-t2.js).
+const R = require('./tema2/r-articulado-t2.js')(X);
+R.mover.forEach(m => X.mueve(m.id, m.k, m.j));
+if (R.falta.length) console.error('R o preguntas sin párrafo en el articulado:', R.falta.join(' '));
+const H = X.automatico(V, EXTRAS, { uno: 0.8, nivel }, [0, R.k0 - 1]);   // sin mapas de las leyes (no le interesan, 15/10/2026)
 
 module.exports = { visuales: () => [] };   // el esquema normal ya tiene sus cuadros (visuales-t2.js)
 // rangos de fichas de cada norma, sacados de los títulos de bloque (no a mano: cambian al añadir fichas)
 const ini = re => X.fichaBloque.findIndex(t => re.test(t));
 const CORTES = [['2.1 Ley 19/2003', /RÉGIMEN GENERAL DE LOS MOVIMIENTOS/], ['2.2 Convenio 196', /^2\.2/], ['2.3 Ley 10/2010', /^2\.3|^CAPÍTULO I\. DISPOSICIONES GENERALES/],
-  ['2.4 Palermo', /^2\.4/], ['2.5 Trata', /^2\.5/], ['2.6 Migrantes', /^2\.6/], ['2.7 Armas', /^2\.7/], ['RECUERDA R1-R39', /^RECUERDA/]].map(([n, re]) => [n, ini(re)]);
-if (require.main === module) X.publica(H, CORTES.map(([nombre, k0], i) => ({ nombre, k0, k1: (CORTES[i + 1] ? CORTES[i + 1][1] : X.fichas.length) - 1 })));
+  ['2.4 Palermo', /^2\.4/], ['2.5 Trata', /^2\.5/], ['2.6 Migrantes', /^2\.6/], ['2.7 Armas', /^2\.7/]].map(([n, re]) => [n, ini(re)]);
+if (require.main === module) X.publica(H, CORTES.map(([nombre, k0], i) => ({ nombre, k0, k1: (CORTES[i + 1] ? CORTES[i + 1][1] : R.k0) - 1 })));

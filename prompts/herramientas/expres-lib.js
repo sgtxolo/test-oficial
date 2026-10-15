@@ -76,7 +76,9 @@ module.exports = function (T) {
     resto = resto.filter(id => { const r = marcaRespuesta(h2, id); if (r) { h2 = r; return false; } return true; });
     if (OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
     const boton = resto.length ? ` <mark class="m-resp ex-q${resto.every(esIA) ? ' r-ia' : ''}"${q(resto)}>🎯 ${resto.length === 1 ? '1 pregunta' : resto.length + ' preguntas'}</mark>` : '';
-    return `<p${p.at}>${h2}${boton}</p>`;
+    // ficha RECUERDA del temario cuyo apartado es este párrafo (data-r): sello «R n» al principio
+    const rr = ((p.at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').filter(Boolean).map(r => `<span class="ex-sello ex-sello-r">${r}</span> `).join('');
+    return `<p${p.at}>${rr}${h2}${boton}</p>`;
   }
   // posición del cierre de la etiqueta que se abre en i (cuenta anidadas del mismo nombre)
   function cierre(html, i) {
@@ -209,7 +211,9 @@ module.exports = function (T) {
   // sellos de la ficha k: marcas del temario del usuario en sus párrafos (data-ex: EXOF / EX o «1» / *) + EX de la ficha (f.ex)
   const sellosFicha = k => { const f = fichas[k];
     const mx = new Set(f.ps.flatMap(x => ((x.at.match(/data-ex="([^"]*)"/) || [])[1] || '').split(',')).map(x => x === '1' ? 'EX' : x).filter(Boolean));
-    return [mx.has('EXOF') && 'EXOF', (mx.has('EX') || f.ex) && 'EX', mx.has('*') && '✱'].filter(Boolean).map(t => ` <span class="ex-sello">${t}</span>`).join(''); };
+    const rs = [...new Set(f.ps.flatMap(x => ((x.at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',')).filter(Boolean))].sort((a, b) => +a.slice(1) - +b.slice(1));
+    return [mx.has('EXOF') && 'EXOF', (mx.has('EX') || f.ex) && 'EX', mx.has('*') && '✱'].filter(Boolean).map(t => ` <span class="ex-sello">${t}</span>`).join('')
+      + rs.map(r => ` <span class="ex-sello ex-sello-r">${r}</span>`).join(''); };
   const literal = (k, js, cab, extra) => {
     const f = fichas[k];
     const mas = extra && extra.length ? `<p class="ex-mas">${botonQ(extra, extra.length === 1 ? '1 pregunta más de este artículo' : extra.length + ' preguntas más de este artículo')}</p>` : '';
@@ -227,6 +231,11 @@ module.exports = function (T) {
   // para cada ficha, pone sus párrafos ENTEROS que tienen pregunta (o marca EX) y debajo sus cuadros (con el subrayado del
   // usuario y las respuestas enlazadas a las preguntas de esa ficha). Los títulos de bloque solo salen si su bloque tiene algo.
   const conPreg = new Set(); Object.values(MAPA).concat(Object.keys(EXTRA)).forEach(p => { const [t, k, j] = p.split('-'); if (+t === T) conPreg.add(k + '-' + j); });
+  // recoloca una pregunta en el párrafo j de la ficha k (p. ej. las de las fichas RECUERDA, a su artículo) solo para el Exprés
+  function mueve(id, k, j) {
+    const old = MAPA[id]; if (old) Object.keys(porSitio).forEach(s => { if (s === old || s.startsWith(old + '-') || old.startsWith(s + '-') || s === old.split('-').slice(0, 3).join('-')) porSitio[s] = porSitio[s].filter(x => x !== id); });
+    MAPA[id] = `${T}-${k}-${j}`; (porSitio[MAPA[id]] = porSitio[MAPA[id]] || []).push(id); conPreg.add(k + '-' + j);
+  }
   const tok = t => new Set(limpia(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').split(/[^a-z0-9]+/).filter(w => w.length > 2 && !VACIAS.has(w)));
   const recogidas = new Set();   // ids cuya respuesta casa de verdad con una caja de un cuadro (no por defecto)
   function enlazaCuadro(h, k) {
@@ -387,6 +396,7 @@ module.exports = function (T) {
       return { nombre: b.nombre, total: ids.length, ok: ok.length, pct: Math.round(100 * peso(ok) / Math.max(1, peso(ids))), faltan: ids.filter(i => !usados.has(i)) }; });
     let s = fs.readFileSync(ESQ, 'utf8');
     if (!s.includes('.ex-plg{')) s = s.replace('<style id="expres-style">', () => '<style id="expres-style">\n' + CSS_PLG);
+    if (!s.includes('.ex-sello-r{')) s = s.replace('<style id="expres-style">', () => '<style id="expres-style">\n.ex-sello-r{border-radius:10px!important;color:#1d6b4f!important;border-color:#1d6b4f!important;transform:none!important}\n[data-theme="dark"] .ex-sello-r{color:#7fd6ad!important;border-color:#7fd6ad!important}\n');
     const m = s.match(/<script id="expres-datos">window\.EXPRES_T=(\{[\s\S]*?\});<\/script>/);
     const D = m ? JSON.parse(m[1]) : {};
     D[T] = { html: htmlExpres, cob: cob.map(({ nombre, total, ok, pct }) => ({ nombre, total, ok, pct })) };
@@ -407,5 +417,5 @@ module.exports = function (T) {
     const chars = sinOcultos(htmlExpres).replace(/<[^>]+>/g, '').replace(/&[a-z]+;/g, ' ').length;
     console.log(`Texto del exprés: ${chars} caracteres ≈ ${(chars / 3000).toFixed(1)} págs A4`);
   }
-  return { ...VL, fichaBloque, asignaSueltas, botonQ, opciones: OPC, final: h => restaura(subraya(h)), automatico, Rq, literal, parrafo, cuadro, datos, ex, bloque, trampa, publica, fichas };
+  return { ...VL, fichaBloque, mueve, asignaSueltas, botonQ, opciones: OPC, final: h => restaura(subraya(h)), automatico, Rq, literal, parrafo, cuadro, datos, ex, bloque, trampa, publica, fichas };
 };
