@@ -146,7 +146,7 @@ while ((mm = reLit.exec(bloque))) {
 }
 const porNorma = {};
 for (const f of fichas) (porNorma[f.norma] = porNorma[f.norma] || []).push(f);
-let total = 0, ok = 0, mal = 0;
+let total = 0, ok = 0, mal = 0; const REP = [];
 for (const [nm, fl] of Object.entries(porNorma)) {
   const rg = rangos[nm];
   if (!rg) { console.error('norma sin rango, se deja igual:', nm, fl.length, 'fichas'); continue; }
@@ -169,8 +169,15 @@ for (const [nm, fl] of Object.entries(porNorma)) {
     const UMB = +(process.env.UMBRAL || 0.3);   // umbral de fiabilidad del alineado (UMBRAL=0.15 acepta fichas con OCR muy roto)
     if (q < UMB) mal++;
     f.nuevo = q < UMB ? null : JSON.stringify(pinta(f.piezas, G));
+    if (process.env.REPORT) { // métricas por párrafo (palabras, alineadas, subrayadas) para podar lo que no está subrayado
+      if (q < UMB) pinta(f.piezas, G);
+      const paras = []; let cur = null;
+      for (const p of f.piezas) { if (p.t === 'tag' && /^<p[ >]/.test(p.s)) { cur = { w: 0, al: 0, col: 0 }; paras.push(cur); }
+        if (p.t === 'w' && p.n && p.n !== '…' && cur) { cur.w++; if (p.g >= 0) cur.al++; if (p.col || p.ru || p.forma) cur.col++; } }
+      REP.push({ norma: nm, cab: f.cab, q, paras }); }
   }
 }
+if (process.env.REPORT) fs.writeFileSync(process.env.REPORT, JSON.stringify(REP));
 console.error(`fichas: ${fichas.length}  poco fiables(<30 %): ${mal}  palabras: ${total}  alineadas: ${ok} (${(100 * ok / total).toFixed(1)} %)`);
 // fichas poco fiables: se restauran del esquema original (variable ORIG = ruta del html antes de re-subrayar)
 if (process.env.ORIG) {
