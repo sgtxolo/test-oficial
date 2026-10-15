@@ -28,7 +28,7 @@ exports.run = function ({ bloque, Q, texto = ['prompts/temario-limpio/tema5/ofic
     let ops = q.o.slice(), c = q.c;
     if (c === null || c === undefined) { const ok = ops.shift(); c = [0, 1, 2, 3].sort((a, b) => uso[a] - uso[b] || ((a + i) % 4) - ((b + i) % 4))[0]; ops.splice(c, 0, ok); uso[c]++; }
     const [nom, corta, apt] = NORMAS[q.k];
-    const ref = `${q.a} de ${corta}`;
+    const ref = `${q.a} ${corta.startsWith("el ") ? "del " + corta.slice(3) : "de " + corta}`;
     const explicacion = `<span class="ex-resp">Respuesta correcta: <b>${L[c]}</b> · <mark class="ex-key">${esc(ops[c].replace(/\.$/, ''))}</mark></span>El <span class="ref-norma">${ref}</span> dispone: <span class="ref-concepto">"${esc(q.t)}"</span>. ${esc(q.p)} <em style="color:var(--texto-gris)">(Pregunta generada por IA)</em>`;
     return { id: '5-ia-' + (ini + i), pregunta: `${PREF[q.k] || nom}. ${q.r}. ${q.e}`, opciones: ops, correcta: c, dificultad: 'media', explicacion, apartado: apt };
   });
