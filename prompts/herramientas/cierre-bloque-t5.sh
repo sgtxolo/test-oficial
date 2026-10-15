@@ -6,6 +6,6 @@ node -e "const s=require('fs').readFileSync('test-oficial-conocimiento.html','ut
 git add test-oficial-conocimiento.html prompts/herramientas/preguntas-t5-$1.js prompts/herramientas/preguntas-t5-lib.js prompts/herramientas/cierre-bloque-t5.sh prompts/herramientas/largas.js prompts/temario-limpio/tema5/transcrito.txt
 git commit -q -m "$2
 
-Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>"
 git push -q origin main
 git log --oneline -1
