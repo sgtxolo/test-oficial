@@ -11,7 +11,17 @@ Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80,
 
 // preguntas que el mapa no sitúa en un párrafo: { k: [ids] } → botón «🎯 … más de este artículo» en su ficha
 const EXTRAS = { 8: ['2-ia-78'], 11: ['2-17'], 26: ['2-45'] };
-const H = X.automatico(V, EXTRAS, { uno: 0.8 });
+// NIVELES (pauta 15/10/2026: «leyendo solo sale la pregunta del examen y no te enteras de nada», pero 1 h-1 h 30 min):
+//   · muy preguntado (≥ 4 oficiales o peso 3·oficiales + IA + 4 si EX ≥ 15) → frases con pregunta ENTERAS;
+//   · poco (sin oficiales ni EX y ≤ 4 IA) → solo el título del artículo y su 🎯;
+//   · el resto → ventana amplia (arranque de la frase + unas palabras antes de la respuesta).
+// Y al abrir cada norma, un MAPA con sus artículos y lo que se pregunta de cada uno.
+const N = { ALTO: +(process.env.ALTO || 15), ALTO_OF: +(process.env.ALTO_OF || 4), BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 10), ANT: +(process.env.ANT || 8), EXW: +(process.env.EXW || 4) };
+const nivel = (k, p) => { const peso = 3 * p.of + p.ia + (p.ex ? N.EXW : 0);
+  if (p.of >= N.ALTO_OF || peso >= N.ALTO) return { recorte: false };
+  if (!p.of && !p.ex && p.ia <= N.BAJO) return 'boton';
+  return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
+const H = X.automatico(V, EXTRAS, { uno: 0.8, nivel, mapa: true });
 
 module.exports = { visuales: () => [] };   // el esquema normal ya tiene sus cuadros (visuales-t2.js)
 if (require.main === module) X.publica(H, [

@@ -226,12 +226,25 @@ module.exports = function (T) {
   //          (para que un tema largo quepa en 17-20 págs); las preguntas de esos párrafos que el cuadro no recoja van a un 🎯
   const norm = t => ' ' + limpia(String(t)).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ]+/g, ' ').trim() + ' ';
   const idsFicha = k =>Object.entries(MAPA).filter(([, p]) => p.startsWith(`${T}-${k}-`)).map(([id]) => id);
+  // preguntas de la ficha k (mapa + marcas extra) y su peso: oficiales, IA, EX
+  const todasFicha = k => [...new Set(idsFicha(k).concat(Object.entries(EXTRA).filter(([p, v]) => p.startsWith(`${T}-${k}-`) && Array.isArray(v)).flatMap(([, v]) => v)))].filter(id => !FUERA.has(id));
+  const pesoFicha = k => { const ids = todasFicha(k); return { of: ids.filter(i => !esIA(i)).length, ia: ids.filter(esIA).length, ex: fichas[k].ex }; };
+  // MAPA DE LA LEY: al abrir cada norma, índice de sus artículos con lo que se pregunta de cada uno (orienta antes de leer)
+  function mapaLey(k0, o) {
+    const tit = fichaBloque[k0]; if (tit === undefined || /RECUERDA/i.test(tit)) return '';
+    const items = []; for (let k = k0; k < fichas.length && fichaBloque[k] === tit; k++) {
+      const c = limpia(fichas[k].cab).replace(/\s*·\s*R\d.*$/, '').replace(/^Artículos?\s+/, m => /s\s/.test(m) ? 'Arts. ' : 'Art. ');
+      if (/^🆕/.test(c)) continue;
+      const p = pesoFicha(k); const n = [p.of && `${p.of} oficial${p.of > 1 ? 'es' : ''}`, p.ia && `${p.ia} IA`].filter(Boolean).join(' · ');
+      items.push(`<b>${c}</b>${p.ex ? ' <span class="ex-sello">EX</span>' : ''}${n ? ` <small>(${n})</small>` : ' <small>(sin preguntas)</small>'}`); }
+    return items.length ? `<div class="vis ex-datos ex-mapa"><div class="vis-t"><i>🗺</i>Mapa: artículos de esta norma y lo que se pregunta de cada uno</div><ul>${items.map(x => `<li>${x}</li>`).join('')}</ul></div>` : '';
+  }
   // rango = [k0, k1] → solo esas fichas (para hacer en literal una parte de un tema redactado)
   function automatico(V, extras = {}, omitir = new Set(), rango) {
     const re = /<div class="bloque-titulo">([\s\S]*?)<\/div>|<div class="articulo">[\s\S]*?<div class="txt">[\s\S]*?<\/div>\s*(?:<div class="sello-examen">EX<\/div>)?\s*<\/div>\s*<\/div>/g;
     const puestos = new Set(); let m, k = -1, out = '', titulo = '';
     while ((m = re.exec(html))) {
-      if (m[1] !== undefined) { titulo = bloque(m[1]); continue; }
+      if (m[1] !== undefined) { titulo = bloque(m[1]) + (omitir && omitir.mapa ? mapaLey(k + 1, omitir) : ''); continue; }
       k++; const f = fichas[k]; const cab = limpia(f.cab);
       if (rango && (k < rango[0] || k > rango[1])) { titulo = ''; continue; }
       let cs = V.map((x, i) => [x, i]).filter(([[c], i]) => !puestos.has(i) && (cab.startsWith(c) || cab.includes(c)));
@@ -248,6 +261,10 @@ module.exports = function (T) {
         else { cs.forEach(([, i]) => puestos.add(i)); cs = []; }
       }
       let js = fuera ? [] : f.ps.map((p, j) => j).filter(j => conPreg.has(k + '-' + j) || /data-ex|class="ex-p"/.test(f.ps[j].at + f.ps[j].h));
+      // 'nivel' (pauta 15/10/2026): cuánto se ve de cada artículo según lo preguntado → 'boton' (solo título + 🎯) u opciones de recorte
+      let nv = null;
+      if (omitir && omitir.nivel && js.length) { nv = omitir.nivel(k, pesoFicha(k), f);
+        if (nv === 'boton') { extras = Object.assign({}, extras, { [k]: [...new Set((extras[k] || []).concat(todasFicha(k)))] }); js = []; nv = null; } }
       if (!js.length && !cs.length && !extras[k]) continue;
       if (titulo) { out += titulo; titulo = ''; }
       const hc = cs.map(([[, h], i]) => { puestos.add(i); return enlazaCuadro(subraya(h), k); }).join('');
@@ -256,7 +273,7 @@ module.exports = function (T) {
       let extra = extras[k] || [];
       if (fuera) { const enC = new Set([...hc.matchAll(/data-q="([^"]+)"/g)].flatMap(x => x[1].split(','))); extra = [...new Set(extra.concat(idsFicha(k).filter(id => !enC.has(id))))]; }
       tieneCuadro = cs.length > 0;
-      if (js.length) out += literal(k, js, null, extra);
+      if (js.length) { const g = Object.assign({}, OPC); if (nv) Object.assign(OPC, nv); out += literal(k, js, null, extra); Object.keys(OPC).forEach(x => delete OPC[x]); Object.assign(OPC, g); }
       tieneCuadro = false;
       out += hc;
       if (!js.length && extra.length) out += `<div class="ex-linea">${limpia(f.cab)}: ${botonQ(extra, extra.length === 1 ? '1 pregunta más de este artículo' : extra.length + ' preguntas más de este artículo')}</div>`;
