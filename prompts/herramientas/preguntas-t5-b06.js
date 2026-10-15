@@ -154,6 +154,6 @@ const Q = [
  t: 'Eu-LISA también elaborará informes anuales que muestren el número de respuestas positivas anuales por categoría de descripción, el número de ocasiones en que se ha consultado el SIS', p: 'Respuestas positivas por categoría y número de consultas y accesos.'},
 {k, r: EV, a: 'art. 66.5.c', e: 'En relación con la aplicación escalonada del Reglamento (UE) 2018/1861, determinadas modificaciones del Reglamento (CE) n.º 1987/2006 serán aplicables:',
  o: ['a partir del 28 de diciembre de 2020.', 'a partir del 28 de diciembre de 2021.', 'a partir del 27 de diciembre de 2018.', 'a partir del 28 de diciembre de 2019.'],
- t: 'el artículo 63, punto 7, será aplicable a partir del 28 de diciembre de 2020', p: 'El 28 de diciembre de 2020 (un año después de la entrada en vigor más un año).'},
+ t: 'el artículo 63, punto 7, será aplicable a partir del 28 de diciembre de 2020', p: 'Esas modificaciones se aplican desde el 28 de diciembre de 2020; la decisión sobre la entrada en funcionamiento, a más tardar el 28 de diciembre de 2021.'},
 ];
 require('./preguntas-t5-lib.js').run({ bloque: 6, Q });
