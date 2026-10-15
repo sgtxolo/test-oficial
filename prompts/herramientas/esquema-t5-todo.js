@@ -19,3 +19,6 @@ const cur = fs.readFileSync('esquemas.html', 'utf8').replace(/\r\n/g, '\n');
 const X = 'const T5 = {};', Y = '/* T5_RECUERDA';
 fs.writeFileSync('esquemas.html', head.slice(0, head.indexOf(X)) + cur.slice(cur.indexOf(X), cur.indexOf(Y)) + head.slice(head.indexOf(Y)));
 console.log('esquema del Tema 5 reconstruido');
+console.log(execSync('node prompts/herramientas/recuerda-fichas-t5.js').toString().trim());
+console.log(execSync('node prompts/herramientas/visuales-t5.js').toString().trim());
+console.log(execSync('node prompts/herramientas/recuerda-t5.js').toString().trim());

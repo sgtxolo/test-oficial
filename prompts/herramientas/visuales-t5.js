@@ -146,6 +146,7 @@ v('Artículo 4 — Creación de la Autoridad Nacional del VIS', arbol('Autoridad
   `e) supervisión del VIS, ${K('salvo')} la protección de datos (${R('Agencia de Protección de Datos')})`]));
 
 require('./visuales-t5-extra.js')(v, L);
+require('./visuales-t5-trampas.js')(v);
 
 module.exports = V;
 if (require.main === module) L.inserta(5, V);
