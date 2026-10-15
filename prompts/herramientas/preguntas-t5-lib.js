@@ -19,7 +19,7 @@ const NORMAS = {
 const PREF = {};
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const nrm = s => s.replace(/=====PAG \d+=====/g, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/-\s*\n\s*/g, '').replace(/[^a-z0-9ñ]/g, '');
-exports.run = function ({ bloque, Q, texto = ['prompts/temario-limpio/tema5/oficial-paginas.txt', 'prompts/temario-limpio/tema5/escaneado-paginas.txt', 'prompts/temario-limpio/tema5/consolidado.txt'], arg = process.argv.slice(2) }) {
+exports.run = function ({ bloque, Q, texto = ['prompts/temario-limpio/tema5/oficial-paginas.txt', 'prompts/temario-limpio/tema5/escaneado-paginas.txt', 'prompts/temario-limpio/tema5/consolidado.txt', 'prompts/temario-limpio/tema5/transcrito.txt'], arg = process.argv.slice(2) }) {
   const ini = 1001 + 50 * (bloque - 1);
   const uso = [0, 0, 0, 0]; Q.forEach(q => { if (q.c !== null && q.c !== undefined) uso[q.c]++; });
   const ia = Q.map((q, i) => {
