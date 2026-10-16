@@ -1,0 +1,176 @@
+# norma	art	ap	tipo	pagPDF	nota   (lectura a 120 dpi por mitades; «EX?» = círculo ilegible, se trata como EX)
+TUE	1	2	EXOF	5	
+TUE	2	0	EXOF	5	círculo junto al cuadro de valores (R1, R2)
+TUE	3	1	*	6	
+TUE	3	2	*	6	+ círculo ilegible
+TUE	3	3	EX?	6	círculo «Ex» ; * en «fomentará» y «respetará»
+TUE	4	3	*	6	
+TUE	5	0	EXAMEN	7	sello PREGUNTA EXAMEN 2020 junto al título del art. 5 (R3, R4)
+TUE	5	0	EXOF	7	círculo «Exof» en el título
+TUE	5	2	EXOF	7	círculo «Exof»
+TUE	5	3	EXOF	7	círculo «Exof»
+TUE	5	4	EXOF	8	círculo «Exof» en 5.4
+TUE	6	3	EXOF	8	círculo «Exof» en «principios generales»
+TUE	7	1	EXOF	8	círculo «Exof» ; nota «El Consejo 4/5 · Proponen 1/3»
+TUE	7	2	EXOF	9	círculo «Exof» ; nota «Consejo Europeo unanimidad · propuesta 1/3»
+TUE	8	1	*	10	
+TUE	9	0	EXOF	11	tres círculos «Exof» (igualdad de ciudadanos, instituciones, ciudadano de la Unión)
+TUE	10	0	EXOF	11	círculo «Exof» junto al título (R5)
+TUE	10	1	EXOF	11	círculo «Exof»
+TUE	10	2	EXOF	11	círculos «Exof» (directamente representados) ; * 
+TUE	10	3	EXOF	11	círculo «Exof» (forma más abierta y próxima)
+TUE	10	4	EXOF	11	círculo «Exof»
+TUE	11	1	*	11	
+TUE	11	2	EXOF	11	círculo «Exof» + *
+TUE	11	4	*	12	
+TUE	12	0	*	12	* en 12.c
+TUE	13	0	EXAMEN	13	sello PREGUNTA EXAMEN 2020 en el título del art. 13
+TUE	13	1	EXOF	13	círculo «Exof» (13.1) y otro junto a la lista de instituciones
+TUE	13	4	EXOF	13	círculo «Exof» + R6
+TUE	14	0	EXAMEN	13	sello PREGUNTA EXAMEN en 14.1
+TUE	14	2	EXOF	13	círculo «Exof» (750 + Presidente; 6 y 96)
+TUE	14	3	EXOF	13	círculo «Exof» (mandato 5 años)
+TUE	15	0	EXAMEN	14	sello PREGUNTA EXAMEN 2020 en el título del art. 15
+TUE	15	1	EXOF	14	círculo «Exof» 
+TUE	15	4	EXOF	14	círculo «Exof» (consenso)
+TUE	15	5	EXAMEN	15	sello PREGUNTA EXAMEN 2020 
+TUE	15	5	EXOF	15	círculo «Exof» arriba
+TUE	16	6	EXOF	17	círculo «Exof» (Consejo de Asuntos Generales)
+TUE	16	7	*	17	
+TUE	17	0	EXOF	18	«IMP» en el título
+TUE	17	1	EXOF	18	círculo «Exof»
+TUE	17	6	*	19	
+TUE	17	7	EXOF	19	dos círculos «Exof» (Consejo Europeo propondrá candidato) + *
+TUE	18	1	*	19	* en 18.4 (Alto Representante, Vicepresidente)
+TUE	19	2	*	20	* en 19.2 (un juez por Estado; Tribunal General al menos uno)
+TUE	19	3	EXOF	20	círculo «Exof» en la nota manuscrita de plazos (PE 5, Comisión 5, Pte CEu 2,5, jueces 6)
+TUE	21	1	EXOF	22	círculo «Exof» (organizaciones internacionales, regionales o mundiales)
+TUE	21	2	EXOF	22	círculo «Exof» (alto grado de cooperación) + *
+TUE	22	0	EXAMEN	23	sello PREGUNTA EXAMEN + «IMP» en el título
+TUE	22	1	EXOF	23	círculo «Exof» (Consejo Europeo determinará intereses y objetivos) + círculo «Exof» en 22.1 párr.3 (R11)
+TUE	24	0	*	25	* azul junto al art. 24.2
+TUE	25	0	*	26	
+TUE	26	1	*	26	* en 26.1 (Consejo Europeo determinará intereses; reunión extraordinaria)
+TUE	26	2	*	26	* en 26.2 y en 26.3
+TUE	27	1	*	26	* en 27.1, 27.2 y 27.3 (SEAE)
+TUE	30	2	*	25	nota manuscrita «48 h · necesidad absoluta: plazo más breve»
+TUE	31	2	EXOF	26	círculo «Exof» (motivos vitales y explícitos de política nacional: no se procederá a la votación)
+TUE	32	0	*	26	* azul al final
+TUE	34	1	*	27	* azul al final de 34.1
+TUE	36	0	*	28	* azul («Dos veces al año»)
+TUE	38	0	EXOF	28	círculo «Exof» en el Comité Político y de Seguridad (control político y dirección estratégica de las operaciones de gestión de crisis)
+TUE	41	3	*	29	* en 41.3 b)
+TUE	42	1	*	30	* azul
+TUE	42	2	*	30	flecha azul en «unanimidad»
+TUE	42	3	*	30	* en 42.3
+TUE	42	4	*	30	* en 42.4
+TUE	42	5	*	30	* en 42.5
+TUE	43	2	EXOF	31	círculo «Exof» (Consejo adoptará decisiones; Alto Representante bajo autoridad del Consejo, contacto con el CPS) + *
+TUE	44	2	*	32	
+TUE	45	1	EXOF	32	círculo «Exof» en 45.1 (Agencia Europea de Defensa, misión) y otro en 45.1 a)
+TUE	46	1	*	33	* azul
+# TFUE (PDF 35 en adelante)
+TFUE	45	2	EXOF	36	círculo «Exof» + R15 (abolición de toda discriminación por razón de la nacionalidad)
+TFUE	45	3	*	36	* en 45.3 c)
+TFUE	45	4	*	36	* en 45.4 (administración pública)
+TFUE	46	0	*	37	* + «M2»
+TFUE	48	0	*	38	* ; nota «4 meses»
+TFUE	54	2	*	39	* azul (sociedades: Derecho civil o mercantil… sin fin lucrativo)
+TFUE	56	0	*	39	* azul
+TFUE	57	0	*	39	* azul
+TFUE	57	1	EXOF	39	círculo «Exof» junto a la lista a)-d) de servicios (R16)
+TFUE	59	1	EXOF	40	círculo «Exof» (el Parlamento Europeo y el Consejo decidirán mediante directivas)
+TFUE	64	3	*	41	flecha roja (unanimidad)
+TFUE	66	0	*	42	* + nota «No superior 6 meses · medidas de salvaguardia»
+TFUE	67	0	EXOF	42	círculo «Exof» junto al título del art. 67
+TFUE	67	1	*	42	* en 67.1
+TFUE	67	3	EXOF	42	círculo «Exof» + flecha («si es necesario, aproximación de las legislaciones penales»)
+TFUE	68	0	EXOF	42	círculo «Exof» (Consejo Europeo definirá las orientaciones estratégicas)
+TFUE	71	0	*	43	* azul (comité permanente)
+TFUE	76	0	*	43	nota «1/4 EM»
+TFUE	77	1	EXOF	44	círculos «Exof/EXT» junto a 77.1 a), b), c) (INT / EXT / EXT) 
+TFUE	77	2	EXOF	44	círculo «Exof» grande + nota «Que no se mezclen» en 77.2 a-e (INT/EXT en cada letra); nota «Sinval. 1-c»
+TFUE	78	1	EXOF	44	círculo «Exof» (política común de asilo, protección subsidiaria y temporal; non-refoulement)
+TFUE	79	1	*	45	* azul
+TFUE	79	3	*	45	* azul (79.3 readmisión), 79.4 y 79.5 flecha azul
+TFUE	80	0	*	46	(R18)
+TFUE	81	1	*	46	* en 81.1
+TFUE	81	2	*	46	* en 81.2 h)
+TFUE	81	3	*	46	nota «Documentación, pasaporte…» ; flecha
+TFUE	82	1	*	47	* azul en 82.1 b)
+TFUE	82	2	*	48	flecha azul 82.2 c) ; 82.3 nota «4 meses» «al menos 9 (4 meses)»
+TFUE	83	1	*	48	* azul (lista de ámbitos delictivos) ; nota «Normas mínimas · Directivas · Ordinario»
+TFUE	83	2	*	48	* azul («ordinario o especial»)
+TFUE	83	3	*	49	nota «4 meses», «al menos 9 (4 meses)»
+TFUE	84	0	*	49	* (R19) ; nota «Ordinario»
+TFUE	85	1	*	49	* ; nota «Reglamentos · ordinario»
+TFUE	86	1	*	50	* en 86.1 («unanimidad», «al menos nueve») ; nota «Reglamentos · especial»
+TFUE	86	2	EXOF	51	círculo «Exof» pequeño junto a «Europol» en 86.2 + * ; «NR» en 86.3 y 86.4
+TFUE	87	1	*	50	* en 87.1
+TFUE	87	3	*	51	flecha roja (procedimiento especial, unanimidad; Schengen)
+TFUE	88	2	*	51	* en 88.2 («determinarán»)
+TFUE	88	3	EXOF	51	círculo «Exof» al final de 88.3 (medidas coercitivas: exclusivamente autoridades nacionales) + R20
+TFUE	89	0	*	51	flecha roja (procedimiento especial)
+TFUE	223	2	*	52	* + nota «especial» (R21)
+TFUE	224	0	*	52	* + nota «ordinario»
+TFUE	226	1	*	53	* + flecha roja (cuarta parte; comisión temporal de investigación)
+TFUE	228	1	EXAMEN	53	sello PREGUNTA EXAMEN en el art. 228.1 (Defensor del Pueblo)
+TFUE	228	1	EXOF	53	círculo «Exof» en 228.1 («con exclusión del Tribunal de Justicia…»)
+TFUE	228	1	*	54	* («cada año»; tres meses)
+TFUE	228	2	*	54	* + nota «Toda la legislatura · renovable» (R)
+TFUE	228	3	*	54	(R) ; círculos azules en «no solicitará ni admitirá instrucciones»
+TFUE	229	0	*	54	* en lista de quien puede pedir sesiones extraordinarias (R22)
+TFUE	231	0	*	55	* azul
+TFUE	232	0	*	55	* azul
+TFUE	233	0	*	55	* azul
+TFUE	234	0	EXOF	55	círculo «Exof» (moción de censura, tres días) ; nota «3 días y votación pública»
+TFUE	234	1	*	56	* (dos tercios + mayoría de los miembros; dimisión colectiva) ; nota «2/3» «Dimiten: Miembros de la Comisión · Alto representante»
+TFUE	235	1	EXOF	56	círculo «Exof» (Presidente del Consejo Europeo y de la Comisión no participan en votaciones) + * 
+TFUE	235	3	*	56	* (mayoría simple en cuestiones de procedimiento)
+TFUE	236	0	*	56	* ; notas «Generales y Exteriores», «solo Exteriores»
+TFUE	237	0	*	56	(R23)
+TFUE	238	2	EXOF	56	círculo ① y notas «Mín 72 % miembros Consejo · Mín 65 % pueblo» (cuando NO actúe a propuesta de la Comisión)
+TFUE	238	3	EXOF	56	cuadro ① «Mín 55 % participantes · 65 % pueblo · minoría de bloqueo: ≥ 35 % +1 miembro · no actúe igual punto ①»
+TFUE	238	4	*	57	
+TFUE	240	2	*	57	flechas rojas
+TFUE	242	0	EXOF	57	círculo «Exof» (por mayoría simple, estatutos de los Comités)
+TFUE	244	0	*	57	nota azul «dos / uno» en 244 a)
+TFUE	245	0	*	58	
+TFUE	246	0	*	58	* (dimisión voluntaria o cese)
+TFUE	247	0	EXOF	58	círculo «Exof» (cesado por el Tribunal de Justicia a instancia del Consejo, mayoría simple, o de la Comisión) (R24)
+TFUE	249	2	*	59	* azul (informe general anual; al menos un mes antes)
+TFUE	250	0	*	59	nota roja «Impone: Tribunal · indica importe: Comisión»
+TFUE	252	0	*	59	* («ocho abogados generales») ; nota «8 abogados generales · podrá aumentar: Consejo, unanimidad»
+TFUE	253	0	*	60	* ; notas «6 años jueces y abogados», «3 años renovación parcial», «Presidente 3 años renovable»
+TFUE	253	6	EXOF	60	círculo «Exof» en el Reglamento de Procedimiento (requerirá la aprobación del Consejo)
+TFUE	254	0	*	60	* ; notas «Tribunal Gen: 6 años · 3 años renovación parcial · Presidente 3 años renovable» ; «Más de uno» ; «DIF 253»
+TFUE	255	0	*	61	* ; nota «7 personalidades / comité»
+TFUE	256	1	*	61	* azul
+TFUE	256	2	*	61	* azul
+TFUE	257	0	*	62	* azul
+TFUE	257	4	EXOF	62	círculo «Exof» (miembros de los tribunales especializados designados por el Consejo por unanimidad) ; nota «No pone Altos»
+TFUE	259	1	*	62	* en «deberá someter el asunto a la Comisión»
+TFUE	260	2	*	62	notas rojas «Impone: Tribunal · Indicar importe: Comisión» (suma a tanto alzado o multa coercitiva)
+TFUE	261	0	*	63	(R25)
+TFUE	262	0	*	63	nota «especial» (unanimidad, procedimiento legislativo especial)
+TFUE	263	0	*	63	flechas azules ; nota «Recursos 2 meses según casos»
+TFUE	265	0	*	63	nota «Requerido 2 meses + 2 meses»
+TFUE	267	0	EXOF	64	círculo «Exof» junto a R26 (interpretación de los Tratados; validez e interpretación de los actos)
+TFUE	269	0	*	64	nota roja «1 mes»
+TFUE	270	0	*	64	* azul
+TFUE	271	0	EXOF	65	nota «Exof · pone Europeo» en el encabezado del art. 271 (litigios relativos a…)
+TFUE	271	2	EX	65	círculo «EX» junto a 271 b) (acuerdos del Consejo de Gobernadores del Banco)
+TFUE	273	0	EXOF	66	círculo «Exof» (controversia entre Estados miembros sometida en virtud de compromiso)
+TFUE	275	0	*	66	flecha azul y círculo en «no será competente… política exterior y de seguridad común»
+TFUE	276	0	*	67	flecha azul («no será competente… policía»)
+TFUE	278	0	*	67	flecha (R27)
+TFUE	300	1	EXOF	68	círculo «Exof» en 300.1 + * en el título del art. 300
+TFUE	300	2	EXOF	68	círculo «Exof» en 300.2 (composición del CES)
+TFUE	300	4	EXOF	68	círculo «Exof» en 300.4 (no mandato imperativo, plena independencia)
+TFUE	301	0	*	68	nota «Miembros: no excederá 350» (R28)
+TFUE	302	1	*	68	nota «Límite nombrados: 5 años renovable»
+TFUE	303	0	*	69	nota «2,5 años» + flecha roja (Presidente y Mesa dos años y medio)
+TFUE	304	0	*	69	nota «no inferior a 1 mes (dictamen)» 
+TFUE	305	0	*	69	(R29) nota «350» ; «5 años · renovable» ; círculo «EX» tachado
+TFUE	306	0	*	69	nota «2,5 años»
+TFUE	307	0	EXOF	70	círculo «Exof» en 307 (Comité de las Regiones consultado por el PE, el Consejo o la Comisión) ; «Di» rojo dudoso ; nota «Igual» (plazo no inferior a un mes)
