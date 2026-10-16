@@ -74,7 +74,10 @@ module.exports = function (T) {
     let resto = [...new Set(sueltas.concat(perdidas))].filter(x => !enMarcas.has(x) && !FUERA.has(x));
     // la respuesta correcta de esas preguntas se busca en el texto y se marca (en vez de dejarla solo en el 🎯)
     resto = resto.filter(id => { const r = marcaRespuesta(h2, id); if (r) { h2 = r; return false; } return true; });
-    if (OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
+    // pauta 16/10/2026: párrafo con pregunta OFICIAL, marca del usuario o R, y sus apartados vecinos (OPC.vecinas) → ENTEROS, sin (…)
+    const enteroPar = OPC.entero && (esOfPar(k, j) || (OPC.vecinas && OPC.vecinas.has(j)));
+    if (enteroPar) h2 = abreHuecos(h2);
+    else if (OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
     const boton = resto.length ? ` <mark class="m-resp ex-q${resto.every(esIA) ? ' r-ia' : ''}"${q(resto)}>🎯 ${resto.length === 1 ? '1 pregunta' : resto.length + ' preguntas'}</mark>` : '';
     // ficha RECUERDA del temario cuyo apartado es este párrafo (data-r): sello «R n» al principio
     const rr = ((p.at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').filter(Boolean).map(r => `<span class="ex-sello ex-sello-r">${r}</span> `).join('');
@@ -120,7 +123,9 @@ module.exports = function (T) {
     }
     return segs;
   }
-  const plegable = t => `<span class="ex-plg" tabindex="0" title="Pulsa para ver el texto omitido" onclick="if(event.target===this)this.classList.toggle('on')"><span class="ex-plg-t">${t}</span></span>`;
+  // plazos, cantidades e importes NUNCA se pliegan (pauta 16/10/2026): «5 años», «10.000 euros», «dos tercios», «plazo máximo»…
+  const RX_CANT = /\d[\d.,]*\s*(?:%|€|por\s+ciento|euros?|años?|meses|días|horas|semanas|millones?|mil\b|miembros|votos)|\b(?:un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|doce|quince|veinte|treinta|cuarenta|sesenta|noventa|cien|ciento|mil|tercio|tercios|mitad)\b[^.;]{0,30}\b(?:años?|meses|días|horas|euros|por\s+ciento|tercios|miembros|votos|partes)\b|\b(?:plazos?|multas?|importes?|cuantía|unanimidad|mayoría)\b/i;
+  const plegable = t => RX_CANT.test(t.replace(/<[^>]+>/g, '')) ? t : `<span class="ex-plg" tabindex="0" title="Pulsa para ver el texto omitido" onclick="if(event.target===this)this.classList.toggle('on')"><span class="ex-plg-t">${t}</span></span>`;
   // frase larga: se queda el arranque (quién/qué) y los incisos con respuesta; los demás incisos, plegados
   // 'ventana': de cada frase con respuesta se ve el arranque (OPC.cabeza palabras) y cada respuesta con OPC.antes palabras
   // delante; lo demás, plegado. Las marcas (subrayado, respuestas) nunca se parten.
@@ -205,6 +210,32 @@ module.exports = function (T) {
 .ex-plg.on::before{content:"(−)"}
 .ex-plg.on>.ex-plg-t{display:inline;background:rgba(127,127,127,.09);border-radius:4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 `;
+  // Los «(…)» del propio temario (huecos del esquema, window.HUECOS del tema) se sustituyen por su texto literal en gris (clase hueco-txt,
+  // la misma del esquema): en los apartados con pregunta oficial / R no debe quedar ningún (…) con texto conocido (pauta 16/10/2026)
+  const HUECOS = (() => { try { return JSON.parse(h.match(/window\.HUECOS=(\{[\s\S]*?\})<\/script>/)[1])[T] || {}; } catch (e) { return {}; } })();
+  const claveH = t => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ]/g, '');
+  // texto de pie de página del PDF que se coló en los huecos. Los huecos cortos o con plazos / cantidades se escriben en gris dentro del
+  // texto; los largos quedan en un (…) verde que se despliega al pulsarlo (en el Exprés no hay mecanismo de huecos como en el esquema)
+  const HUECO_MAX = +process.env.HUECO_MAX || 400;
+  const limpiaHueco = g => g.replace(/TEMARIO DE ASCENSO A OFICIAL/g, ' ').replace(/Todos los derechos reservados\.[^|]*\|\s*\d+\s*TOMO \d+ T\d+ [A-ZÁÉÍÓÚÑ ]+?TEMARIO DE ASCENSO A OFICIAL/g, ' ').replace(/\bT\d+ [A-ZÁÉÍÓÚÑ ]{12,}(?=\s+[a-zñ(])/g, ' ').replace(/\bE l\b/g, 'El').replace(/\s{2,}/g, ' ').trim();
+  function abreHuecos(html) {
+    if (!html.includes('(…)')) return html;
+    const plano = html.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    const partes = plano.split('(…)'); let k = 0, out = '';
+    for (const tk of html.split(/(<[^>]+>)/)) {
+      if (!tk || tk[0] === '<' || !tk.includes('(…)')) { out += tk; continue; }
+      const tr = tk.split('(…)');
+      tr.forEach((x, i) => { out += x; if (i < tr.length - 1) {
+        const key = claveH(partes[k]).slice(-40) + '|' + claveH(partes[k + 1]).slice(0, 40); k++;
+        const g = HUECOS[key] && limpiaHueco(HUECOS[key]);
+        if (!g) { out += '(…)'; return; }
+        const ge = g.replace(/&/g, '&amp;').replace(/</g, '&lt;'), sp = /^[.,;:)]/.test(g) || /\s$/.test(x) || !x ? '' : ' ';
+        out += sp + (g.length <= HUECO_MAX || RX_CANT.test(g) ? '<span class="hueco-txt">' + ge + '</span>' : plegable(ge)); } });
+    }
+    return out;
+  }
+  // ¿el párrafo j de la ficha k tiene pregunta oficial, marca del usuario (data-ex) o ficha R (data-r)?
+  const esOfPar = (k, j) => /data-ex=|data-r=|class="ex-p"/.test(fichas[k].ps[j].at) || Object.entries(MAPA).some(([id, p]) => !esIA(id) && !FUERA.has(id) && (p === `${T}-${k}-${j}` || p.startsWith(`${T}-${k}-${j}-`)));
   // Ficha literal: cabecera original (o la que se indique) + párrafos elegidos ENTEROS
   // extra = ids de preguntas que el mapa no sitúa pero son de esta ficha → botón «🎯 n preguntas más» al final
   const botonQ = (ids, txt) => `<mark class="m-resp ex-q${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>🎯 ${txt || (ids.length === 1 ? '1 pregunta' : ids.length + ' preguntas')}</mark>`;
@@ -283,6 +314,8 @@ module.exports = function (T) {
       const conCuadro = omitir === 'conCuadro' || !!(omitir && omitir.conCuadro);
       // el esquema condensado ('condensa') sustituye en el Exprés a los demás cuadros de su ficha
       if (cs.some(([x]) => x[2] === 'condensa')) { cs.filter(([x]) => x[2] !== 'condensa').forEach(([, i]) => puestos.add(i)); cs = cs.filter(([x]) => x[2] === 'condensa'); }
+      // sinCuadro (pauta 16/10/2026: «o el articulado o el esquema, no las dos cosas»): en estas fichas el cuadro no sale, solo el literal
+      if (omitir && omitir.sinCuadro && omitir.sinCuadro.has(k)) { cs.forEach(([, i]) => puestos.add(i)); cs = []; }
       let fuera = (omitir instanceof Set ? omitir : (omitir && omitir.fichas) || new Set()).has(k);
       // 'uno' (pauta 14/10/2026): O el literal O el cuadro, nunca los dos. Cuadro si contiene la respuesta de casi todas las
       // preguntas del artículo (≥ omitir.uno, p. ej. 0.8); si no, literal y el cuadro no sale
@@ -296,7 +329,12 @@ module.exports = function (T) {
       // 'nivel' (pauta 15/10/2026): cuánto se ve de cada artículo según lo preguntado → 'boton' (solo título + 🎯) u opciones de recorte
       let nv = null;
       if (omitir && omitir.nivel && js.length) { nv = omitir.nivel(k, pesoFicha(k), f);
-        if (nv === 'boton') { extras = Object.assign({}, extras, { [k]: [...new Set((extras[k] || []).concat(todasFicha(k)))] }); js = []; nv = null; } }
+        if (nv === 'boton') { extras = Object.assign({}, extras, { [k]: [...new Set((extras[k] || []).concat(todasFicha(k)))] }); js = []; nv = null; }
+        // nv.entero: junto a cada apartado con pregunta oficial / marca / R se ponen también el anterior y el posterior (pauta 16/10/2026:
+        // la pregunta puede cambiar al apartado de al lado), todos enteros
+        else if (nv && nv.entero) { const of = js.filter(j => esOfPar(k, j)), vec = new Set();
+          of.forEach(j => [j - 1, j + 1].forEach(v => { if (v >= 0 && v < f.ps.length) vec.add(v); }));
+          js = [...new Set(js.concat([...vec]))].sort((a, b) => a - b); nv = Object.assign({}, nv, { vecinas: vec }); } }
       if (!js.length && !cs.length && !extras[k]) continue;
       if (titulo) { out += titulo; titulo = ''; }
       const hc = cs.map(([[, h], i]) => { puestos.add(i); return enlazaCuadro(subraya(h), k); }).join('');

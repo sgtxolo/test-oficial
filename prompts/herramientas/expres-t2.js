@@ -20,7 +20,8 @@ const EXTRAS = { 8: ['2-ia-78'], 12: ['2-17'], 27: ['2-45'] };   // (índices de
 // Y al abrir cada norma, un MAPA con sus artículos y lo que se pregunta de cada uno.
 const N = { ALTO: +(process.env.ALTO || 15), BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 10), ANT: +(process.env.ANT || 8) };
 const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=/.test(x.at)), peso = 3 * p.of + p.ia;
-  if (p.of || marca || peso >= N.ALTO) return { recorte: 'frases', media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
+  if (p.of || marca) return { recorte: 'frases', entero: true, media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };   // 16/10/2026: apartados con oficial/marca/R y sus vecinos, ENTEROS
+  if (peso >= N.ALTO) return { recorte: 'frases', media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
   if (p.ia <= N.BAJO) return 'boton';
   return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
 // Sin la parte final RECUERDA (pauta 15/10/2026: las R ya están en el articulado): cada R lleva su sello «R n» en el párrafo de su
@@ -28,7 +29,9 @@ const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=/.test(x.at))
 const R = require('./tema2/r-articulado-t2.js')(X);
 R.mover.forEach(m => X.mueve(m.id, m.k, m.j));
 if (R.falta.length) console.error('R o preguntas sin párrafo en el articulado:', R.falta.join(' '));
-const H = X.automatico(V, EXTRAS, { uno: 0.8, nivel }, [0, R.k0 - 1]);   // sin mapas de las leyes (no le interesan, 15/10/2026)
+// o el articulado o el esquema, no los dos: el cuadro «Arts. 50 a 52» no sale junto al literal de los arts. 50-52 (pauta 16/10/2026)
+const SIN_CUADRO = new Set(X.fichas.map((f, k) => /Artículos 52 y 55/.test(f.cab) ? k : -1).filter(k => k >= 0));
+const H = X.automatico(V, EXTRAS, { uno: 0.8, nivel, sinCuadro: SIN_CUADRO }, [0, R.k0 - 1]);   // sin mapas de las leyes (no le interesan, 15/10/2026)
 
 module.exports = { visuales: () => [] };   // el esquema normal ya tiene sus cuadros (visuales-t2.js)
 // rangos de fichas de cada norma, sacados de los títulos de bloque (no a mano: cambian al añadir fichas)

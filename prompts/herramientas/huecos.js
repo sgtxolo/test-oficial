@@ -28,7 +28,8 @@ const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', nbsp: ' ', laquo: '«', raq
 const textoPlano = h => h.replace(/<[^>]+>/g, '').replace(/&(#\d+|[a-z]+);/g, (m, e) => e[0] === '#' ? String.fromCharCode(+e.slice(1)) : (ENT[e] || m));
 
 // ---------- Texto limpio: quitar cabeceras de página del DOUE, guiones de corte y unir líneas partidas ----------
-const BASURA = /^(ES|Diario Oficial de la Unión Europea|L \d+\/\d+|\d{1,2}\.\d{1,2}\.\d{4}|\d+)$/;
+// + pie de página de los temarios de Prefortia (si no, un (…) que cruza el salto de página sale cortado o con el pie dentro)
+const BASURA = /^(ES|Diario Oficial de la Unión Europea|L \d+\/\d+|\d{1,2}\.\d{1,2}\.\d{4}|\d+|(\d+ \| )?Todos los derechos reservados\..*|TOMO \d+|T\d+ [A-ZÁÉÍÓÚÑ ,.]{8,}|TEMARIO DE ASCENSO|A OFICIAL)$/;
 const INICIO = /^(Artículo \d|CAPÍTULO|SECCIÓN|TÍTULO|ANEXO|\(\d+\)|\d+\.\s|\d+\s*bis\.|[a-z]\)\s|[ivx]+\)\s|—|–|-\s|•)/;
 function cargarFuente(tema, nombres) {
   const d = path.join(DIR, 'tema' + tema); if (!fs.existsSync(d)) return null;
