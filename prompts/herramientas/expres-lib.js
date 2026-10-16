@@ -73,11 +73,15 @@ module.exports = function (T) {
     const enMarcas = new Set([...h2.matchAll(/data-q="([^"]+)"/g)].flatMap(x => x[1].split(',')));
     let resto = [...new Set(sueltas.concat(perdidas))].filter(x => !enMarcas.has(x) && !FUERA.has(x));
     // la respuesta correcta de esas preguntas se busca en el texto y se marca (en vez de dejarla solo en el 🎯)
-    resto = resto.filter(id => { const r = marcaRespuesta(h2, id); if (r) { h2 = r; return false; } return true; });
+    // si la respuesta de una pregunta OFICIAL no está en el texto del esquema pero sí en un (…) del temario, ese hueco se abre y se marca
+    // (pauta 16/10/2026: «una pregunta oficial no puede quedar cortada así»)
+    const ofRes = resto.filter(id => !esIA(id)).map(id => PREG[id] && claveH(limpia(PREG[id].opciones[PREG[id].correcta]).replace(/[.;,:]+$/, ''))).filter(x => x && x.length >= 4);
     // pauta 16/10/2026: párrafo con pregunta OFICIAL, marca del usuario o R, y sus apartados vecinos (OPC.vecinas) → ENTEROS, sin (…)
     const enteroPar = OPC.entero && (esOfPar(k, j) || (OPC.vecinas && OPC.vecinas.has(j))) && limpia(h2).length <= ENTERO_MAX;
-    if (enteroPar) h2 = abreHuecos(h2);
-    else if (OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
+    if (enteroPar) h2 = abreHuecos(h2, ofRes);
+    else if (ofRes.length) h2 = abreHuecos(h2, ofRes, true);
+    resto = resto.filter(id => { const r = marcaRespuesta(h2, id); if (r) { h2 = r; return false; } return true; });
+    if (!enteroPar && OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
     const boton = resto.length ? ` <mark class="m-resp ex-q${resto.every(esIA) ? ' r-ia' : ''}"${q(resto)}>🎯 ${resto.length === 1 ? '1 pregunta' : resto.length + ' preguntas'}</mark>` : '';
     // ficha RECUERDA del temario cuyo apartado es este párrafo (data-r): sello «R n» al principio
     const rr = ((p.at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').filter(Boolean).map(r => `<span class="ex-sello ex-sello-r">${r}</span> `).join('');
@@ -220,7 +224,7 @@ module.exports = function (T) {
   const VEC_MAX = process.env.VEC_MAX !== undefined ? +process.env.VEC_MAX : 100000;
   const HUECO_MAX = +process.env.HUECO_MAX || 400;
   const limpiaHueco = g => g.replace(/TEMARIO DE ASCENSO A OFICIAL/g, ' ').replace(/Todos los derechos reservados\.[^|]*\|\s*\d+\s*TOMO \d+ T\d+ [A-ZÁÉÍÓÚÑ ]+?TEMARIO DE ASCENSO A OFICIAL/g, ' ').replace(/\bT\d+ [A-ZÁÉÍÓÚÑ ]{12,}(?=\s+[a-zñ(])/g, ' ').replace(/\bE l\b/g, 'El').replace(/\s{2,}/g, ' ').trim();
-  function abreHuecos(html) {
+  function abreHuecos(html, forzar, solo) {
     if (!html.includes('(…)')) return html;
     const plano = html.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
     const partes = plano.split('(…)'); let k = 0, out = '';
@@ -231,8 +235,10 @@ module.exports = function (T) {
         const key = claveH(partes[k]).slice(-40) + '|' + claveH(partes[k + 1]).slice(0, 40); k++;
         const g = HUECOS[key] && limpiaHueco(HUECOS[key]);
         if (!g) { out += '(…)'; return; }
+        const forz = forzar && forzar.some(a => claveH(g).includes(a));
+        if (solo && !forz) { out += '(…)'; return; }
         const ge = g.replace(/&/g, '&amp;').replace(/</g, '&lt;'), sp = /^[.,;:)]/.test(g) || /\s$/.test(x) || !x ? '' : ' ';
-        out += sp + (g.length <= HUECO_MAX || RX_CANT.test(g) ? '<span class="hueco-txt">' + ge + '</span>' : plegable(ge)); } });
+        out += sp + (forz || g.length <= HUECO_MAX || RX_CANT.test(g) ? '<span class="hueco-txt">' + ge + '</span>' : plegable(ge)); } });
     }
     return out;
   }
