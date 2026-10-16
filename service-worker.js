@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v130";
+﻿const CACHE_NAME = "oposicion-cache-v131";
 const APP_SHELL = [
   "./test-oficial-conocimiento.html",
   "./test-oficial-ingles.html",
@@ -33,7 +33,7 @@ self.addEventListener("fetch", event => {
   const isHtml = event.request.mode === "navigate" || url.pathname.endsWith(".html");
 
   if (isHtml) {
-    // Red primero para HTML: siempre intenta traer la última versión;
+    // Red primero para HTML: siempre intenta traer la Ãºltima versiÃ³n;
     // si no hay red (offline), sirve la copia cacheada.
     event.respondWith(
       fetch(event.request, { cache: "no-store" })
