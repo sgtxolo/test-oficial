@@ -132,6 +132,7 @@ module.exports = function (T) {
     return segs;
   }
   // plazos, cantidades e importes NUNCA se pliegan (pauta 16/10/2026): «5 años», «10.000 euros», «dos tercios», «plazo máximo»…
+  const RX_CIFRA = /\d[\d.,]*\s*(?:%|€|por\s+ciento|euros?|años?|meses|días|horas|semanas|millones?|mil\b|miembros|votos)|\b(?:un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|doce|quince|veinte|treinta|cuarenta|sesenta|noventa|cien|ciento|mil|tercio|tercios|mitad)\b[^.;]{0,30}\b(?:años?|meses|días|horas|euros|por\s+ciento|tercios|miembros|votos|partes)\b/i;
   const RX_CANT = /\d[\d.,]*\s*(?:%|€|por\s+ciento|euros?|años?|meses|días|horas|semanas|millones?|mil\b|miembros|votos)|\b(?:un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|doce|quince|veinte|treinta|cuarenta|sesenta|noventa|cien|ciento|mil|tercio|tercios|mitad)\b[^.;]{0,30}\b(?:años?|meses|días|horas|euros|por\s+ciento|tercios|miembros|votos|partes)\b|\b(?:plazos?|multas?|importes?|cuantía|unanimidad|mayoría)\b/i;
   const plegable = t => !process.env.PLIEGA_CANT && RX_CANT.test(t.replace(/<[^>]+>/g, '')) ? t : `<span class="ex-plg" tabindex="0" title="Pulsa para ver el texto omitido" onclick="if(event.target===this)this.classList.toggle('on')"><span class="ex-plg-t">${t}</span></span>`;
   // frase larga: se queda el arranque (quién/qué) y los incisos con respuesta; los demás incisos, plegados
@@ -270,7 +271,13 @@ module.exports = function (T) {
         const forz = forzar && forzar.some(a => claveH(g).includes(a));
         if (solo && !forz) { out += '(…)'; return; }
         const ge = g.replace(/&/g, '&amp;').replace(/</g, '&lt;'), sp = /^[.,;:)]/.test(g) || /\s$/.test(x) || !x ? '' : ' ';
-        out += sp + (forz || g.length <= HUECO_MAX || RX_CANT.test(g) ? '<span class="hueco-txt">' + ge + '</span>' : plegable(ge)); } });
+        // GRIS_PLIEGA (16/10/2026, «sigue habiendo parrafadas en gris»): los grises largos abiertos solo por llevar «plazo»/cifra se pliegan
+        // en «(…)» SIN salir de .hueco-txt (las marcas del usuario no cuentan ese texto: no se desplazan). 'cifra' = salvo los que llevan
+        // número + unidad (5 años, 2.000 euros); 'todo' = todos. Los que tienen la respuesta de una oficial (forz) siguen a la vista.
+        const gris = '<span class="hueco-txt">' + ge + '</span>', GP = process.env.GRIS_PLIEGA;
+        const pliegaGris = GP && !forz && g.length > HUECO_MAX && RX_CANT.test(g) && (GP === 'todo' || !RX_CIFRA.test(g));
+        out += sp + (pliegaGris ? `<span class="ex-plg" tabindex="0" title="Pulsa para ver el texto omitido" onclick="if(event.target===this)this.classList.toggle('on')"><span class="ex-plg-t">${gris}</span></span>`
+          : forz || g.length <= HUECO_MAX || RX_CANT.test(g) ? gris : plegable(ge)); } });
     }
     return out;
   }

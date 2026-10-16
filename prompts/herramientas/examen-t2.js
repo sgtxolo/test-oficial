@@ -5,7 +5,7 @@
 //   · Cada sesión (≈ SES págs, cortando entre artículos) termina con «📝 Test de la sesión» con sus preguntas; arriba, test de todo.
 // Se guarda en esquemas.html (script examen-datos, window.EXAMEN_T) y se ve con el botón «🎯 Para examen».
 // Uso: node prompts/herramientas/examen-t2.js        (ENSAYO=1 → solo mide)
-const DEF = { VEC_MAX: 0, HUECO_MAX: 1, UNO: 2, RUN_MIN: 90, SES: 8 };
+const DEF = { VEC_MAX: 0, HUECO_MAX: 1, UNO: 2, RUN_MIN: 90, GRIS_PLIEGA: 'cifra', SES: 8 };
 Object.entries(DEF).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(2);
 // sin el asterisco (pauta 16/10/2026, noche: «déjamelo sin asterisco»): la marca ✱ no cuenta para entrar en Para examen; los apartados
