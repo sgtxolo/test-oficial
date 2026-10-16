@@ -10,8 +10,9 @@ const X = require('./expres-lib.js')(3);
 const V = require('./visuales-t3.js');
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 10, antes: 8, umbral: 160, sinRespPliega: true });
 const N = { ALTO: +(process.env.ALTO || 15), BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 10), ANT: +(process.env.ANT || 8) };
-const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=/.test(x.at)), peso = 3 * p.of + p.ia;
-  if (p.of || marca || peso >= N.ALTO) return { recorte: 'frases', media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
+// (Tema 3: tiene 400 oficiales y casi todo artículo tiene alguna → «frases» solo con ≥ 2 oficiales, marca EXOF o peso alto, para no pasar de 25 págs)
+const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=\\?"EXOF/.test(x.at)), peso = 3 * p.of + p.ia;
+  if (p.of >= 2 || marca || peso >= N.ALTO) return { recorte: 'frases', media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
   if (p.ia <= N.BAJO) return 'boton';
   return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
 
