@@ -272,7 +272,6 @@ body.voz-abierta .voz-bar{display:flex}
     <div style="display:flex;align-items:center;gap:12px"><button class="btn-pdf btn-menu-temas" id="btn-menu-temas" type="button" title="Mostrar u ocultar la lista de temas">☰ Temas</button><button class="btn-pdf" id="btn-menu-acc" type="button" title="Todos los botones: vista, resumen, marcas, voz, PDF, sincronización, avisos, guía y modo claro/oscuro">⋯ Menú</button><h1>📚 Esquemas de Estudio</h1></div>
     <div id="barra-acciones" style="display:flex;align-items:center;gap:10px">
       <span class="vista-of" id="vista-of" title="📚 Temario entero: el esquema completo · ⚡ Exprés: resumen literal del tema"><button type="button" data-v="todo" class="on">📚 Temario entero</button><button type="button" data-v="ex" title="Exprés: resumen literal del tema (oficiales, tus marcas y R enteros; lo demás en (…) que se abre)">⚡ Exprés</button></span>
-      <button class="btn-pdf" id="btn-resumen" type="button" title="Mostrar solo los artículos que has marcado con R (resumen)">R Resumen</button>
       <button class="btn-pdf" id="btn-marcas" type="button" title="Mostrar u ocultar las herramientas de marcas">🖍 Marcas</button>
       <button class="btn-pdf" id="btn-voz-menu" type="button" title="Leer el esquema en voz alta">🔊 Voz</button>
       <button class="btn-pdf" id="btn-exportar-pdf">⬇️ PDF</button>
@@ -4843,98 +4842,6 @@ html{overflow-x:hidden}body{max-width:100%}
 
 </style>
 <div id="pm-ui"></div><div id="pm-pop"></div>
-<style id="estilo-resumen">
-.btn-res{display:inline-block;vertical-align:baseline;margin:0 5px 0 0;border:1px solid var(--verde-med,#2f6b53);background:transparent;color:var(--verde-med,#2f6b53);border-radius:5px;min-width:16px;height:15px;font-weight:800;font-size:9px;font-family:inherit;cursor:pointer;padding:0 3px;line-height:13px;opacity:.55}
-.btn-res::before{content:"R"}
-.btn-res:hover{opacity:1}
-.btn-res.on{background:var(--verde,#1c4d3c);border-color:var(--verde,#1c4d3c);color:#fff;opacity:1}
-#btn-resumen.on{background:var(--verde,#1c4d3c);color:#fff}
-body.solo-res .sin-res{display:none!important}
-@media print{.btn-res{display:none!important}}
-</style>
-<script id="script-resumen">
-/* Marca R (resumen) por apartado dentro de cada artículo + botón superior «R Resumen» que deja solo los apartados marcados. No modifica el contenido del esquema. */
-(function(){
-  const KEY='esquemas-resumen-v1', VISTA='esquemas-resumen-vista';
-  let data={}; try{ data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){}
-  const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(data)); }catch(e){} };
-  const nrm=t=>(t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
-  const clave=art=>{ const h=art.querySelector('.articulo-head'); const n=h&&[...h.childNodes].find(x=>x.nodeType===3&&x.textContent.trim()); return n?n.textContent.trim():''; };
-  const NUM=/^\s*(?:\(…\)\s*)?\d+\s*[\.\)º]/;   // también «(…) 3.» al inicio
-  const txtOf=p=>p.textContent.replace(/^\s*R\s*/,'').trim();
-  /* apartados de un artículo: cada párrafo numerado («1.», «2.»…) abre uno y le siguen sus letras a), b)… y los (…); sin numeración, cada párrafo es un apartado */
-  function grupos(art){
-    const ps=[...art.querySelectorAll('.txt > p')]; if(!ps.length) return [];
-    const hayNum=ps.some(p=>NUM.test(txtOf(p))), gs=[];
-    ps.forEach(p=>{
-      const t=txtOf(p), esGap=/^\(…\)$/.test(t);
-      if(esGap&&gs.length){ gs[gs.length-1].ps.push(p); return; }
-      const abre=hayNum?NUM.test(t):true;
-      if(abre||!gs.length) gs.push({ps:[p],k:nrm(t).slice(0,40)}); else gs[gs.length-1].ps.push(p);
-    });
-    return gs;
-  }
-  const claveG=(art,g)=>clave(art)+'|'+g.k;
-  const marcado=(esq,art,g)=>(data[esq.id]||[]).includes(claveG(art,g));
-  function migrar(esq,art,gs){          // marcas antiguas por artículo entero → todos sus apartados
-    const l=data[esq.id]; if(!l) return; const k=clave(art), i=l.indexOf(k);
-    if(i<0) return; l.splice(i,1); gs.forEach(g=>{ const c=claveG(art,g); if(!l.includes(c)) l.push(c); }); save();
-  }
-  function filtrar(){
-    const on=document.body.classList.contains('solo-res');
-    document.querySelectorAll('.esquema').forEach(esq=>{
-      esq.querySelectorAll('.articulo').forEach(art=>{
-        const gs=art._gs||(art._gs=grupos(art));
-        let alguno=false;
-        gs.forEach(g=>{ const m=marcado(esq,art,g); if(m) alguno=true; g.ps.forEach(p=>p.classList.toggle('sin-res',on&&!m)); });
-        art.classList.toggle('sin-res',on&&!alguno);
-      });
-      esq.querySelectorAll('.trampa, .vis').forEach(t=>{
-        let a=t.previousElementSibling; while(a&&!a.classList.contains('articulo')&&!a.classList.contains('bloque-titulo')) a=a.previousElementSibling;
-        t.classList.toggle('sin-res',on&&!(a&&a.classList.contains('articulo')&&!a.classList.contains('sin-res')));
-      });
-      esq.querySelectorAll('.bloque-titulo').forEach(b=>{
-        let n=b.nextElementSibling,vis=false;
-        while(n&&!n.classList.contains('bloque-titulo')){ if(n.classList.contains('articulo')&&!n.classList.contains('sin-res')){vis=true;break;} n=n.nextElementSibling; }
-        b.classList.toggle('sin-res',on&&!vis);
-      });
-    });
-  }
-  /* R delante de cada apartado y también delante de cada párrafo con EX (R y EX seguidas); todas las R de un apartado se marcan a la vez */
-  function ponerR(esq,art,g,p){
-    if(p.querySelector(':scope > .btn-res')) return;
-    const b=document.createElement('button'); b.type='button'; b.className='btn-res'+(marcado(esq,art,g)?' on':'');
-    b.title='Incluir este apartado en el resumen (R)'; b._g=g;
-    const ex=p.querySelector(':scope > .ex-p'); p.insertBefore(b,ex||p.firstChild);
-  }
-  function montar(){
-    document.querySelectorAll('.esquema').forEach(esq=>{
-      esq.querySelectorAll('.articulo').forEach(art=>{
-        const old=art.querySelector('.articulo-head .btn-res'); if(old) old.remove();
-        let gs=art._gs; if(!gs){ gs=art._gs=grupos(art); migrar(esq,art,gs); }
-        gs.forEach(g=>g.ps.forEach((p,i)=>{ if(i===0||p.querySelector(':scope > .ex-p')) ponerR(esq,art,g,p); }));
-      });
-    });
-  }
-  new MutationObserver(ms=>{ if(ms.some(m=>[...m.addedNodes].some(n=>n.nodeType===1&&(n.classList.contains('ex-p')||(n.querySelector&&n.querySelector('.ex-p')))))) montar(); }).observe(document.body,{childList:true,subtree:true});
-  document.addEventListener('click',e=>{
-    const b=e.target.closest&&e.target.closest('.btn-res'); if(!b) return;
-    e.preventDefault(); e.stopPropagation();
-    const art=b.closest('.articulo'), esq=art.closest('.esquema'), k=claveG(art,b._g), l=data[esq.id]=data[esq.id]||[];
-    const i=l.indexOf(k); if(i<0) l.push(k); else l.splice(i,1);
-    art.querySelectorAll('.btn-res').forEach(x=>{ if(x._g===b._g) x.classList.toggle('on',i<0); }); save(); filtrar();
-  },true);
-  function init(){
-    montar();
-    const bt=document.getElementById('btn-resumen');
-    const poner=(on,g)=>{ document.body.classList.toggle('solo-res',on); bt&&bt.classList.toggle('on',on); filtrar(); if(g){ try{localStorage.setItem(VISTA,on?'1':'0');}catch(e){} } };
-    if(bt) bt.addEventListener('click',()=>poner(!document.body.classList.contains('solo-res'),true));
-    let v='0'; try{v=localStorage.getItem(VISTA)||'0';}catch(e){}
-    if(v==='1') poner(true,false);
-  }
-  let n=0;(function w(){ if(!document.querySelector('.esquema .articulo')&&n++<60) return setTimeout(w,100); init(); })();
-})();
-</script>
 <script id="script-marcas">
 /* Marcas de estudio: resaltar, subrayar, tachar, línea, flecha, rectángulo, óvalo y mano alzada sobre cada esquema (guardadas en localStorage) */
 (function(){
