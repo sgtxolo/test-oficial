@@ -6,9 +6,18 @@
 //     con unas palabras delante; lo demás queda en un (…) que se despliega con el texto literal;
 //   · fuera las preguntas cuya respuesta es solo «el artículo X» (preguntas-articulo.js).
 // Uso: node prompts/herramientas/expres-t1.js
+// configuración vigente = la del Tema 2 (16/10/2026, formato definitivo): oficial / marca suya (EXAMEN, EXOF, EX, ✱) / R → apartado
+// ENTERO; lo que solo tiene IA → recortado con (…); poco preguntado por IA (≤ BAJO) → solo título + 🎯; parrafadas sin subrayar y
+// grises largos en (…); cuadro solo si recoge ≥ 80 % de las respuestas; sin vecinos
+Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0.8, RUN_MIN: 90, GRIS_PLIEGA: 'cifra' }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(1);
 const V = require('./visuales-t1.js');
-Object.assign(X.opciones, { recorte: 'ventana', cabeza: 4, antes: 3, umbral: 80, sinRespPliega: true });
+Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
+const N = { BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 6), ANT: +(process.env.ANT || 5) };
+const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=/.test(x.at));
+  if (p.of || marca) return { recorte: 'frases', entero: true, media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
+  if (p.ia <= N.BAJO) return 'boton';
+  return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
 
 // rangos y fichas por su cabecera (no por índice: cambian al añadir fichas marcadas)
 const cab = k => X.fichas[k].cab.replace(/<[^>]+>/g, '');
@@ -19,7 +28,7 @@ const EXT = [[/^Artículos 7 y 8 —/, ['1-148']], [/^Artículos 15 y 15 bis/, [
   [/^Artículo 21 — De las personas sujetas/, ['1-ia-1052']], [/^Artículo 45 — Libertad de circulación/, ['1-ia-1155']], [/^Artículos 2, 4 y 5 — Vida/, ['1-ia-1309']],
   [/^Protocolo n.º 7 /, ['1-ia-1422', '1-ia-1430', '1-ia-1432']], [/^Artículo 19 — Testigos/, ['1-ia-1744']], [/^Artículo 23 — Nacionales y residentes/, ['1-ia-1753']]];
 const EXTRAS = {}; EXT.forEach(([re, ids]) => { const k = ini(re); if (k >= 0) EXTRAS[k] = (EXTRAS[k] || []).concat(ids); else console.error('sin ficha para', re); });
-const H = X.automatico(V, EXTRAS, { uno: 0.8 });
+const H = X.automatico(V, EXTRAS, { uno: +process.env.UNO, nivel });
 
 module.exports = { visuales: () => [] };   // el esquema normal ya tiene sus 71 cuadros (visuales-t1.js)
 const CORTES = [['1.5 Estatuto de Roma', /^Artículos 5 y 6 — Crímenes/], ['1.1 LO 18/2003', /^Exposición de motivos/], ['1.2 Carta UE', /^Datos y estructura de la Carta/],
