@@ -1,23 +1,21 @@
-// 🎯 PARA EXAMEN del Tema 2: repaso del último mes, en SESIONES de ≈ 30 min y test al final de cada una (pauta 16/10/2026).
-//   · Sale la respuesta de TODAS las preguntas del tema (oficiales e IA), literal, con un par de palabras delante para situarla;
-//     el resto del artículo queda en «(…)» que se despliega (nunca frases redactadas por mí: solo el texto del temario).
-//   · Si una pregunta no tiene su respuesta marcada en el texto, su apartado va entero (sin parrafadas sin subrayar: RUN_MIN).
-//   · Sin cuadros (ocupan más que las respuestas sueltas): UNO=2.
-//   · Cada sesión (≈ SES págs, cortando por normas / bloques) termina con «📝 Test de la sesión» con sus preguntas; arriba, test del tema.
+// 🎯 PARA EXAMEN del Tema 2: repaso del último mes, en SESIONES de ≈ 30 min y test al final de cada una (pautas 16/10/2026).
+//   · SOLO lo oficial: apartados con pregunta OFICIAL, marca del usuario (EXAMEN / EXOF / EX / ✱) o ficha R, ENTEROS y legibles
+//     (como el Exprés); fuera los artículos y apartados que solo tienen preguntas de IA («no se entiende» la versión recortada).
+//   · Las parrafadas sin subrayar se pliegan en «(…)» (RUN_MIN); plazos y cantidades nunca. Sin cuadros (UNO=2).
+//   · Cada sesión (≈ SES págs, cortando entre artículos) termina con «📝 Test de la sesión» con sus preguntas; arriba, test de todo.
 // Se guarda en esquemas.html (script examen-datos, window.EXAMEN_T) y se ve con el botón «🎯 Para examen».
 // Uso: node prompts/herramientas/examen-t2.js        (ENSAYO=1 → solo mide)
-const DEF = { CAB: 2, ANT: 2, UMB: 40, UNO: 2, RUN_MIN: 90, PLIEGA_CANT: 1, SES: 8 };
+const DEF = { VEC_MAX: 0, HUECO_MAX: 1, UNO: 2, RUN_MIN: 90, SES: 8 };
 Object.entries(DEF).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(2);
 const V = require('./visuales-t2.js');
-const N = { CAB: +process.env.CAB, ANT: +process.env.ANT, UMB: +process.env.UMB };
-const op = { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: N.UMB, sinRespPliega: true, restoEntero: true };
-Object.assign(X.opciones, op);
+const op = { recorte: 'frases', entero: true, media: { cabeza: 6, antes: 5, umbral: 160 } };
+Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
 const EXTRAS = { 8: ['2-ia-78'], 12: ['2-17'], 27: ['2-45'] };
 const R = require('./tema2/r-articulado-t2.js')(X);
 R.mover.forEach(m => X.mueve(m.id, m.k, m.j));
 const SIN_CUADRO = new Set(X.fichas.map((f, k) => /Artículos 52 y 55/.test(f.cab) ? k : -1).filter(k => k >= 0));
-const H = X.automatico(V, EXTRAS, { uno: +process.env.UNO, nivel: () => op, sinCuadro: SIN_CUADRO }, [0, R.k0 - 1]);
+const H = X.automatico(V, EXTRAS, { uno: +process.env.UNO, nivel: () => op, sinCuadro: SIN_CUADRO, soloOf: true }, [0, R.k0 - 1]);
 
 // ---- sesiones de ≈ SES págs (3.000 caracteres visibles = 1 pág), cortando solo en los títulos de bloque ----
 const visible = h => { let i; while ((i = h.indexOf('<span class="ex-plg-t">')) >= 0) { const re = /<(\/?)span\b[^>]*>/g; re.lastIndex = i; let d = 0, m;

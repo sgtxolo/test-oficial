@@ -228,11 +228,12 @@ module.exports = function (T) {
       const ws = run.map((u, i) => [u, i]).filter(([u]) => /\S/.test(u.h)).map(([, i]) => i);
       const corte = alFinal || ws.length <= RUN_ANT ? run.length : ws[ws.length - RUN_ANT];
       const pl = run.slice(0, corte).map(u => u.h).join(''), vis = run.slice(corte).map(u => u.h).join('');
-      const lead = (pl.match(/^\s*/) || [''])[0];
-      out += lead + plegable(pl.trim()) + ' ' + vis.replace(/^\s+/, ''); run = []; };
+      // sin tocar ni un espacio: las marcas del usuario en el Exprés (subrayado, cuadros, flechas) se guardan por posición de carácter
+      const [, lead, mid, tail] = pl.match(/^(\s*)([\s\S]*?)(\s*)$/);
+      out += lead + plegable(mid) + tail + vis; run = []; };
     us.forEach(u => { if (u.t) { suelta(false); out += u.h; } else run.push(u); });
     suelta(true);
-    return out.replace(/\s{2,}/g, ' ');
+    return out;
   }
   // texto visible (sin lo plegado) para medir páginas
   const sinOcultos = html => { let i; while ((i = html.indexOf('<span class="ex-plg-t">')) >= 0) html = html.slice(0, i) + html.slice(cierre(html, i)[1]); return html; };
@@ -274,7 +275,9 @@ module.exports = function (T) {
     return out;
   }
   // ¿el párrafo j de la ficha k tiene pregunta oficial, marca del usuario (data-ex) o ficha R (data-r)?
-  const esOfPar = (k, j) => /data-ex=|data-r=|class="ex-p"/.test(fichas[k].ps[j].at) || Object.entries(MAPA).some(([id, p]) => !esIA(id) && !FUERA.has(id) && (p === `${T}-${k}-${j}` || p.startsWith(`${T}-${k}-${j}-`)));
+  let ofExtra = false;   // solo en 🎯 Para examen (soloOf): también cuentan las oficiales de MAPA_EXTRA (en el Exprés no, para no mover las marcas del usuario)
+  const esOfPar = (k, j) => /data-ex=|data-r=|class="ex-p"/.test(fichas[k].ps[j].at) || Object.entries(MAPA).some(([id, p]) => !esIA(id) && !FUERA.has(id) && (p === `${T}-${k}-${j}` || p.startsWith(`${T}-${k}-${j}-`)))
+    || ofExtra && Object.entries(EXTRA).some(([s, ids]) => Array.isArray(ids) && s.startsWith(`${T}-${k}-${j}-`) && ids.some(id => !esIA(id) && !FUERA.has(id)));
   // Ficha literal: cabecera original (o la que se indique) + párrafos elegidos ENTEROS
   // extra = ids de preguntas que el mapa no sitúa pero son de esta ficha → botón «🎯 n preguntas más» al final
   const botonQ = (ids, txt) => `<mark class="m-resp ex-q${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>🎯 ${txt || (ids.length === 1 ? '1 pregunta' : ids.length + ' preguntas')}</mark>`;
@@ -343,6 +346,7 @@ module.exports = function (T) {
   }
   // rango = [k0, k1] → solo esas fichas (para hacer en literal una parte de un tema redactado)
   function automatico(V, extras = {}, omitir = new Set(), rango) {
+    ofExtra = !!(omitir && omitir.soloOf);
     const re = /<div class="bloque-titulo">([\s\S]*?)<\/div>|<div class="articulo">[\s\S]*?<div class="txt">[\s\S]*?<\/div>\s*(?:<div class="sello-examen">EX<\/div>)?\s*<\/div>\s*<\/div>/g;
     const puestos = new Set(); let m, k = -1, out = '', titulo = '';
     while ((m = re.exec(html))) {
@@ -374,6 +378,10 @@ module.exports = function (T) {
         else if (nv && nv.entero) { const of = js.filter(j => esOfPar(k, j)), vec = new Set();
           of.forEach(j => [j - 1, j + 1].forEach(v => { if (v >= 0 && v < f.ps.length && limpia(f.ps[v].h).length <= VEC_MAX) vec.add(v); }));
           js = [...new Set(js.concat([...vec]))].sort((a, b) => a - b); nv = Object.assign({}, nv, { vecinas: vec }); } }
+      // soloOf (🎯 Para examen, 16/10/2026): solo apartados con pregunta OFICIAL, marca del usuario (EXAMEN/EXOF/EX/✱) o R; sin cuadros
+      // y sin las preguntas de IA que no estén en esos apartados
+      if (omitir && omitir.soloOf) { js = js.filter(j => esOfPar(k, j)); cs = [];
+        const ex = (extras[k] || []).filter(id => !esIA(id)); extras = Object.assign({}, extras); if (ex.length) extras[k] = ex; else delete extras[k]; }
       if (!js.length && !cs.length && !extras[k]) continue;
       if (titulo) { out += titulo; titulo = ''; }
       const hc = cs.map(([[, h], i]) => { puestos.add(i); return enlazaCuadro(subraya(h), k); }).join('');
