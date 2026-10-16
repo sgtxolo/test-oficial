@@ -1,5 +1,5 @@
 // 🎯 PARA EXAMEN del Tema 2: repaso del último mes, en SESIONES de ≈ 30 min y test al final de cada una (pautas 16/10/2026).
-//   · SOLO lo oficial: apartados con pregunta OFICIAL, marca del usuario (EXAMEN / EXOF / EX / ✱) o ficha R, ENTEROS y legibles
+//   · SOLO lo oficial: apartados con pregunta OFICIAL, marca del usuario (EXAMEN / EXOF / EX, sin el ✱) o ficha R, ENTEROS y legibles
 //     (como el Exprés); fuera los artículos y apartados que solo tienen preguntas de IA («no se entiende» la versión recortada).
 //   · Las parrafadas sin subrayar se pliegan en «(…)» (RUN_MIN); plazos y cantidades nunca. Sin cuadros (UNO=2).
 //   · Cada sesión (≈ SES págs, cortando entre artículos) termina con «📝 Test de la sesión» con sus preguntas; arriba, test de todo.
@@ -8,6 +8,10 @@
 const DEF = { VEC_MAX: 0, HUECO_MAX: 1, UNO: 2, RUN_MIN: 90, SES: 8 };
 Object.entries(DEF).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(2);
+// sin el asterisco (pauta 16/10/2026, noche: «déjamelo sin asterisco»): la marca ✱ no cuenta para entrar en Para examen; los apartados
+// que solo tenían ✱ se quedan fuera (los que además tienen oficial, EX, EXOF o R siguen). Solo aquí: el Exprés no se toca.
+X.fichas.forEach(f => f.ps.forEach(p => { const m = p.at.match(/data-ex="([^"]*)"/); if (!m) return;
+  const l = m[1].split(',').filter(x => x !== '*'); p.at = p.at.replace(m[0], l.length ? `data-ex="${l.join(',')}"` : ''); }));
 const V = require('./visuales-t2.js');
 const op = { recorte: 'frases', entero: true, media: { cabeza: 6, antes: 5, umbral: 160 } };
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
