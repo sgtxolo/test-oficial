@@ -81,7 +81,11 @@ module.exports = function (T) {
     if (enteroPar) h2 = abreHuecos(h2, ofRes);
     else if (ofRes.length) h2 = abreHuecos(h2, ofRes, true);
     resto = resto.filter(id => { const r = marcaRespuesta(h2, id); if (r) { h2 = r; return false; } return true; });
-    if (!enteroPar && OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
+    // restoEntero (🎯 Para examen): si alguna pregunta del apartado no tiene su respuesta marcada, el apartado va entero (si no, no se ve)
+    const entero2 = enteroPar || (OPC.restoEntero && resto.length);
+    if (!entero2 && OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
+    // pauta 16/10/2026 (tarde): en los apartados enteros, las parrafadas SIN subrayar ni marca (texto plano largo) se pliegan en «(…)»
+    else if (entero2 && RUN_MIN) h2 = pliegaPlano(h2);
     const boton = resto.length ? ` <mark class="m-resp ex-q${resto.every(esIA) ? ' r-ia' : ''}"${q(resto)}>🎯 ${resto.length === 1 ? '1 pregunta' : resto.length + ' preguntas'}</mark>` : '';
     // ficha RECUERDA del temario cuyo apartado es este párrafo (data-r): sello «R n» al principio
     const rr = ((p.at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').filter(Boolean).map(r => `<span class="ex-sello ex-sello-r">${r}</span> `).join('');
@@ -129,7 +133,7 @@ module.exports = function (T) {
   }
   // plazos, cantidades e importes NUNCA se pliegan (pauta 16/10/2026): «5 años», «10.000 euros», «dos tercios», «plazo máximo»…
   const RX_CANT = /\d[\d.,]*\s*(?:%|€|por\s+ciento|euros?|años?|meses|días|horas|semanas|millones?|mil\b|miembros|votos)|\b(?:un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|doce|quince|veinte|treinta|cuarenta|sesenta|noventa|cien|ciento|mil|tercio|tercios|mitad)\b[^.;]{0,30}\b(?:años?|meses|días|horas|euros|por\s+ciento|tercios|miembros|votos|partes)\b|\b(?:plazos?|multas?|importes?|cuantía|unanimidad|mayoría)\b/i;
-  const plegable = t => RX_CANT.test(t.replace(/<[^>]+>/g, '')) ? t : `<span class="ex-plg" tabindex="0" title="Pulsa para ver el texto omitido" onclick="if(event.target===this)this.classList.toggle('on')"><span class="ex-plg-t">${t}</span></span>`;
+  const plegable = t => !process.env.PLIEGA_CANT && RX_CANT.test(t.replace(/<[^>]+>/g, '')) ? t : `<span class="ex-plg" tabindex="0" title="Pulsa para ver el texto omitido" onclick="if(event.target===this)this.classList.toggle('on')"><span class="ex-plg-t">${t}</span></span>`;
   // frase larga: se queda el arranque (quién/qué) y los incisos con respuesta; los demás incisos, plegados
   // 'ventana': de cada frase con respuesta se ve el arranque (OPC.cabeza palabras) y cada respuesta con OPC.antes palabras
   // delante; lo demás, plegado. Las marcas (subrayado, respuestas) nunca se parten.
@@ -202,6 +206,33 @@ module.exports = function (T) {
     segs.forEach(s => { if (vale(s)) { suelta(); out += recortaFrase(s) + ' '; } else oculto.push(s); });
     suelta();
     return out.replace(/\s+$/, '');
+  }
+  // tramos de texto plano (sin subrayado, marca, respuesta ni hueco) de ≥ RUN_MIN caracteres → «(…)»; se dejan a la vista las
+  // RUN_ANT palabras previas a la siguiente marca (contexto) y nunca se pliegan plazos ni cantidades (plegable los respeta)
+  const RUN_MIN = process.env.RUN_MIN !== undefined ? +process.env.RUN_MIN : 0, RUN_ANT = +(process.env.RUN_ANT || 3);
+  function pliegaPlano(html) {
+    const us = []; let d = 0, cur = null;
+    for (const tok of html.split(/(<[^>]+>)/)) {
+      if (!tok) continue;
+      if (tok[0] === '<') { const cierra = /^<\//.test(tok), auto = /\/>$|^<br/i.test(tok);
+        if (!cierra && !auto && d === 0) { cur = { h: '', t: true }; us.push(cur); }
+        if (cur) cur.h += tok; else us.push({ h: tok, t: true });
+        if (cierra) { d--; if (d === 0) cur = null; } else if (!auto) d++;
+        continue; }
+      if (d > 0) { cur.h += tok; continue; }
+      for (const w of tok.split(/(\s+)/)) if (w) us.push({ h: w, t: false });
+    }
+    let out = '', run = [];
+    const suelta = (alFinal) => { if (!run.length) return; const txt = run.map(u => u.h).join('');
+      if (limpia(txt).length < RUN_MIN) { out += txt; run = []; return; }
+      const ws = run.map((u, i) => [u, i]).filter(([u]) => /\S/.test(u.h)).map(([, i]) => i);
+      const corte = alFinal || ws.length <= RUN_ANT ? run.length : ws[ws.length - RUN_ANT];
+      const pl = run.slice(0, corte).map(u => u.h).join(''), vis = run.slice(corte).map(u => u.h).join('');
+      const lead = (pl.match(/^\s*/) || [''])[0];
+      out += lead + plegable(pl.trim()) + ' ' + vis.replace(/^\s+/, ''); run = []; };
+    us.forEach(u => { if (u.t) { suelta(false); out += u.h; } else run.push(u); });
+    suelta(true);
+    return out.replace(/\s{2,}/g, ' ');
   }
   // texto visible (sin lo plegado) para medir páginas
   const sinOcultos = html => { let i; while ((i = html.indexOf('<span class="ex-plg-t">')) >= 0) html = html.slice(0, i) + html.slice(cierre(html, i)[1]); return html; };
@@ -434,7 +465,9 @@ module.exports = function (T) {
     return Math.round(100 * col / Math.max(1, col + tot));
   }
 
-  function publica(htmlExpres, bloques) {
+  // o.dest: 'EXPRES_T' (⚡ Exprés, por defecto) o 'EXAMEN_T' (🎯 Para examen, script examen-datos); env ENSAYO=1 → mide sin escribir
+  function publica(htmlExpres, bloques, o = {}) {
+    const DEST = o.dest || 'EXPRES_T', SID = DEST === 'EXPRES_T' ? 'expres-datos' : 'examen-datos';
     htmlExpres = restaura(subrayaEsquemas(htmlExpres));
     console.log(`Subrayado de los esquemas copiado del tuyo: ${dicc.ncls} expresiones · ≈${densidad(htmlExpres)} % del texto de los esquemas coloreado`);
     const cob = bloques.map(b => { const ids = preguntasDe(b.k0, b.k1); const ok = ids.filter(i => usados.has(i));
@@ -443,12 +476,12 @@ module.exports = function (T) {
     let s = fs.readFileSync(ESQ, 'utf8');
     if (!s.includes('.ex-plg{')) s = s.replace('<style id="expres-style">', () => '<style id="expres-style">\n' + CSS_PLG);
     if (!s.includes('.ex-sello-r{')) s = s.replace('<style id="expres-style">', () => '<style id="expres-style">\n.ex-sello-r{border-radius:10px!important;color:#1d6b4f!important;border-color:#1d6b4f!important;transform:none!important}\n[data-theme="dark"] .ex-sello-r{color:#7fd6ad!important;border-color:#7fd6ad!important}\n');
-    const m = s.match(/<script id="expres-datos">window\.EXPRES_T=(\{[\s\S]*?\});<\/script>/);
+    const m = s.match(new RegExp(`<script id="${SID}">window\\.${DEST}=(\\{[\\s\\S]*?\\});<\\/script>`));
     const D = m ? JSON.parse(m[1]) : {};
     D[T] = { html: htmlExpres, cob: cob.map(({ nombre, total, ok, pct }) => ({ nombre, total, ok, pct })) };
-    const tag = `<script id="expres-datos">window.EXPRES_T=${JSON.stringify(D)};</script>`;
+    const tag = `<script id="${SID}">window.${DEST}=${JSON.stringify(D)};</script>`;
     s = m ? s.replace(m[0], () => tag) : s.replace('<style id="expres-style">', () => tag + '\n<style id="expres-style">');
-    fs.writeFileSync(ESQ, s);
+    if (!process.env.ENSAYO) fs.writeFileSync(ESQ, s); else if (process.env.VOLCADO) fs.writeFileSync(process.env.VOLCADO, htmlExpres);
     cob.forEach(c => console.log(`${c.nombre}: ${c.ok}/${c.total} preguntas enlazadas (${c.pct} % ponderado)${c.faltan.length ? ' · faltan: ' + c.faltan.join(', ') : ''}`));
     // respuestas fundidas por el coloreado (dos Rq seguidas separadas solo por un espacio): sus ids se pierden
     const perdidas = REG.filter(x => !htmlExpres.includes(x.m));

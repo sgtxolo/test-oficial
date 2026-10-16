@@ -1474,7 +1474,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
   function repasarDesdeHash(){
     const m = location.hash.match(/repasar=([^&]+)/); if (!m) return;
     const ids = decodeURIComponent(m[1]).split(',').filter(Boolean);
-    const ex = /[#&]ex=1(?:&|$)/.test(location.hash) ? '&ex=1' : '';   // se llegó desde el ⚡ Exprés: se vuelve a él
+    const mx = location.hash.match(/[#&]ex=([12])(?:&|$)/), ex = mx ? '&ex=' + mx[1] : '';   // se llegó desde el ⚡ Exprés (1) o 🎯 Para examen (2): se vuelve a él
     try { history.replaceState(null, '', location.pathname + location.search); } catch(e){}
     const qs = ids.map(buscarPregunta).filter(Boolean);
     if (!qs.length) return;

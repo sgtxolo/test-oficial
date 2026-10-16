@@ -5,6 +5,8 @@
 //   · fuera las preguntas cuya respuesta es solo «el artículo X» (preguntas-articulo.js).
 // Los cuadros son los de visuales-t2.js (los mismos que el esquema normal; los de la Ley 19/2003, Ley 10/2010, Palermo y Protocolos
 // salen de esquemas-t2.js). Uso: node prompts/herramientas/expres-t2.js
+// configuración vigente (16/10/2026, tarde: nivel 2 de expres-presupuesto + parrafadas sin subrayar plegadas en «(…)»)
+Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0.8, RUN_MIN: 90 }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(2);
 const V = require('./visuales-t2.js');
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
