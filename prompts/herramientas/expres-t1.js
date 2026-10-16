@@ -8,14 +8,21 @@
 // Uso: node prompts/herramientas/expres-t1.js
 const X = require('./expres-lib.js')(1);
 const V = require('./visuales-t1.js');
-Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
+Object.assign(X.opciones, { recorte: 'ventana', cabeza: 4, antes: 3, umbral: 80, sinRespPliega: true });
 
-// preguntas que el mapa no sitúa en un párrafo: botón «🎯 … más de este artículo» en su ficha
-const H = X.automatico(V, { 1: ['1-148'], 4: ['1-ia-1550'], 7: ['1-ia-1565'], 11: ['1-153'], 16: ['1-ia-1668'], 17: ['1-ia-1678', '1-ia-1679', '1-ia-1681', '1-ia-1684'],
-  31: ['1-ia-1032'], 40: ['1-ia-1052'], 61: ['1-ia-1155'], 79: ['1-ia-1309'], 97: ['1-ia-1422', '1-ia-1430', '1-ia-1432'], 107: ['1-ia-1744'] }, { uno: 0.8 });
+// rangos y fichas por su cabecera (no por índice: cambian al añadir fichas marcadas)
+const cab = k => X.fichas[k].cab.replace(/<[^>]+>/g, '');
+const ini = re => X.fichas.findIndex((f, k) => re.test(cab(k)));
+// preguntas que el mapa no sitúa en un párrafo: { cabecera de la ficha: [ids] } → botón «🎯 … más de este artículo» en su ficha
+const EXT = [[/^Artículos 7 y 8 —/, ['1-148']], [/^Artículos 15 y 15 bis/, ['1-ia-1550']], [/^Artículo 19 — Impugnación/, ['1-ia-1565']], [/^Artículos 58 y 59/, ['1-153']],
+  [/^Artículos 91 y 92/, ['1-ia-1668']], [/^Artículo 93 —/, ['1-ia-1678', '1-ia-1679', '1-ia-1681', '1-ia-1684']], [/^Artículo 12 — De la libertad provisional/, ['1-ia-1032']],
+  [/^Artículo 21 — De las personas sujetas/, ['1-ia-1052']], [/^Artículo 45 — Libertad de circulación/, ['1-ia-1155']], [/^Artículos 2, 4 y 5 — Vida/, ['1-ia-1309']],
+  [/^Protocolo n.º 7 /, ['1-ia-1422', '1-ia-1430', '1-ia-1432']], [/^Artículo 19 — Testigos/, ['1-ia-1744']], [/^Artículo 23 — Nacionales y residentes/, ['1-ia-1753']]];
+const EXTRAS = {}; EXT.forEach(([re, ids]) => { const k = ini(re); if (k >= 0) EXTRAS[k] = (EXTRAS[k] || []).concat(ids); else console.error('sin ficha para', re); });
+const H = X.automatico(V, EXTRAS, { uno: 0.8 });
 
 module.exports = { visuales: () => [] };   // el esquema normal ya tiene sus 71 cuadros (visuales-t1.js)
-if (require.main === module) X.publica(H, [
-  { nombre: '1.5 Estatuto de Roma', k0: 0, k1: 18 }, { nombre: '1.1 LO 18/2003', k0: 19, k1: 45 }, { nombre: '1.2 Carta UE', k0: 46, k1: 64 },
-  { nombre: '1.3 Consejo de Europa', k0: 65, k1: 78 }, { nombre: '1.4 CEDH', k0: 79, k1: 99 }, { nombre: '1.6 Acuerdo de Privilegios', k0: 100, k1: 115 },
-  { nombre: 'Anexo historia', k0: 116, k1: 119 }]);
+const CORTES = [['1.5 Estatuto de Roma', /^Artículos 5 y 6 — Crímenes/], ['1.1 LO 18/2003', /^Exposición de motivos/], ['1.2 Carta UE', /^Datos y estructura de la Carta/],
+  ['1.3 Consejo de Europa', /^Preámbulo del Estatuto del Consejo|^Artículo 1 — Finalidad/], ['1.4 CEDH', /^Artículos 2, 4 y 5 — Vida/], ['1.6 Acuerdo de Privilegios', /^Artículos 1, 2, 4, 5, 6 y 7 — Términos/],
+  ['Anexo historia', /^Antecedentes y declaraciones/]].map(([n, re]) => [n, ini(re)]);
+if (require.main === module) X.publica(H, CORTES.map(([nombre, k0], i) => ({ nombre, k0, k1: (CORTES[i + 1] ? CORTES[i + 1][1] : X.fichas.length) - 1 })));

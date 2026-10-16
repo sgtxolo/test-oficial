@@ -5,7 +5,12 @@ const X = require('../expres-lib.js')(1);
 const h = fs.readFileSync(path.join(__dirname, '..', '..', '..', 'esquemas.html'), 'utf8');
 const MAPA = JSON.parse(h.match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
 const limpia = s => s.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
-const RANGO = { ER: [0, 18], LO: [19, 45], CARTA: [46, 64], COE: [65, 78], CEDH: [79, 99], ACUERDO: [100, 115] };
+// rangos de fichas de cada norma: se calculan por la primera ficha de cada una (cambian al añadir fichas)
+const cabDe = k => limpia(X.fichas[k].cab);
+const primera = re => X.fichas.findIndex((f, k) => re.test(cabDe(k)));
+const INI = [['ER', /^Artículos 5 y 6 — Crímenes/], ['LO', /^Exposición de motivos/], ['CARTA', /^Datos y estructura de la Carta/], ['COE', /^Preámbulo del Estatuto del Consejo|^Artículo 1 — Finalidad/],
+  ['CEDH', /^Artículos 2, 4 y 5 — Vida/], ['ACUERDO', /^Artículos 1, 2, 4, 5, 6 y 7 — Términos/], ['HIST', /^Antecedentes y declaraciones/]].map(([n, re]) => [n, primera(re)]);
+const RANGO = Object.fromEntries(INI.slice(0, 6).map(([n, a], i) => [n, [a, INI[i + 1][1] - 1]]));
 const normaDe = d => /^ER\b/.test(d) ? 'ER' : /^LO 18/.test(d) ? 'LO' : /^Carta/.test(d) ? 'CARTA' : /^Estatuto CdE/.test(d) ? 'COE' : /^(CEDH|Prot)/.test(d) ? 'CEDH' : /^Acuerdo/.test(d) ? 'ACUERDO' : null;
 const ROM = /^(?:[ivx]{1,5})\)/i;
 // párrafos con norma, artículo, apartado y letra
@@ -26,7 +31,8 @@ X.fichas.forEach((f, k) => {
 });
 const tipoDe = m => /PREGUNTA EXAMEN/.test(m) ? 'EXAMEN' : /EXOF|EXO\b/.test(m) ? 'EXOF' : /\bEX\b|EX°|EX\?/.test(m) ? 'EX' : /\*/.test(m) ? '*' : 'otra';
 const lee = f => fs.readFileSync(path.join(__dirname, f), 'utf8').split('\n').filter(l => l && !l.startsWith('#'));
-// override manual: 'pg|desc' → 'k-j'
+// override manual: 'pg|desc' → 'cabecera de la ficha (inicio)#j' (varios separados por «;»); no por índice, que cambia al añadir fichas
+const dePos = x => { const [c, j] = x.split('#'); const k = X.fichas.findIndex((f, i) => cabDe(i).startsWith(c)); return P.find(p => p.k === k && p.j === +j); };
 const OVR = fs.existsSync(path.join(__dirname, 'ovr-t1.json')) ? JSON.parse(fs.readFileSync(path.join(__dirname, 'ovr-t1.json'), 'utf8')) : {};
 function busca(desc) {
   const n = normaDe(desc); if (!n) return [];
@@ -41,7 +47,7 @@ function busca(desc) {
   return [C[0]];
 }
 const marcas = lee('marcas-t1.txt').map(l => { const [pg, imp, desc, marca, nota] = l.split('|').map(s => s.trim()); const tipo = tipoDe(marca);
-  const o = OVR[pg + '|' + desc]; const ps = o ? o.split(',').map(s => { const [k, j] = s.split('-').map(Number); return P.find(p => p.k === k && p.j === j); }).filter(Boolean) : busca(desc);
+  const o = OVR[pg + '|' + desc]; const ps = o ? o.split(';').map(dePos).filter(Boolean) : busca(desc);
   const ids = [...new Set(ps.flatMap(p => p.ids))];
   return { pg: +pg, desc, marca, tipo, sitios: ps.map(p => `${p.k}-${p.j}`), of: ids.filter(i => !/-ia-/.test(i)), ia: ids.filter(i => /-ia-/.test(i)) }; }).filter(m => m.tipo !== 'otra');
 // fichas R: pins numerados «Rn (pin)» de marcas-t1.txt → párrafo
