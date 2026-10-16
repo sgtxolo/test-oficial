@@ -165,6 +165,8 @@ esquemas.forEach((e, i) => {
   console.log(`Tema ${tema}: ${qs.length} preguntas · ${ok} situadas · ${sin.length} sin sitio${sin.length ? ' (' + sin.slice(0, 12).join(', ') + (sin.length > 12 ? '…' : '') + ')' : ''} · ${conMarca} en su respuesta marcada · ${flojas.length} con coincidencia floja`);
 });
 
+// preguntas nuevas del Tema 1 ancladas a su párrafo marcado (tema1/mapa-fijo-t1.json: id → 'k-j'; se genera con tema1/mapa-fijo-gen.js)
+try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema1/mapa-fijo-t1.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '1-' + kj; }); } catch (e) {}
 // ---------- 7. Escribir ----------
 const bloqueMapa = `<script id="mapa-preguntas">window.MAPA_PREG=${JSON.stringify(MAPA)};window.TOTAL_PREG=${JSON.stringify(TOTAL)};window.MAPA_EXTRA=${JSON.stringify(EXTRA)};</script>`;
 let h = fs.readFileSync(ESQ, 'utf8');
