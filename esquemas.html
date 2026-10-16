@@ -5139,6 +5139,23 @@ mark.m-resp.ex-q{font-size:.75em;font-weight:800;white-space:nowrap;border-radiu
     ex:{datos:()=>window.EXPRES_T,falta:'⚡ El Exprés de este tema todavía no está hecho.',
       bar:(d,cob)=>'<span>⚡ <b>Exprés</b>: <span class="ex-n ex-pags">…</span> · lectura ≈ <span class="ex-n ex-min">…</span></span><span>'+cob+'</span><small>Doble clic en una respuesta para hacer sus preguntas · lo completo sigue en 📚 Temario entero</small>'}
   };
+  /* Sellos EXOF / EX / ✱ / R al principio de cada apartado del Exprés (como en el temario entero). Son círculos CSS sin texto: no mueven las marcas del usuario. */
+  function sellarParrafos(c){
+    const esIA=id=>/-ia-/.test(id);
+    c.querySelectorAll('.ex-fb p').forEach(p=>{
+      if(p.querySelector(':scope > .ex-p')) return;
+      const mx=(p.dataset.ex||'').split(',').filter(Boolean);
+      const ids=[...p.querySelectorAll('[data-q]')].flatMap(m=>(m.dataset.q||'').split(',')).filter(Boolean);
+      const ofic=ids.some(id=>!esIA(id));
+      const s=[];
+      if(mx.includes('EXOF')) s.push(['EXOF','ex-p ex-of','EXOF / PREGUNTA EXAMEN en tu temario: ha salido en examen oficial']);
+      if(!mx.includes('EXOF')&&(mx.includes('EX')||mx.includes('1')||ofic)) s.push(['EX','ex-p',mx.includes('EX')||mx.includes('1')?'Marcado EX en tu temario subrayado':'Preguntas oficiales de examen']);
+      if(mx.includes('*')) s.push(['✱','ex-p ex-ast','Asterisco en tu temario: pregunta de la academia, susceptible de salir']);
+      if(p.dataset.r&&!p.querySelector('.ex-sello-r')) p.dataset.r.split(',').filter(Boolean).forEach(r=>s.push([r,'ex-p ex-r','Ficha RECUERDA '+r+' del temario (pregunta oficial)']));
+      const ref=p.firstChild;
+      s.forEach(([t,k,ti])=>{ const b=document.createElement('span'); b.className=k; b.dataset.t=t; b.title=ti; b.setAttribute('aria-hidden','true'); p.insertBefore(b,ref); });
+    });
+  }
   let modo=null;
   function montar(){
     const esq=document.querySelector('.esquema.active'); if(!esq||!modo) return;
@@ -5152,6 +5169,7 @@ mark.m-resp.ex-q{font-size:.75em;font-weight:800;white-space:nowrap;border-radiu
     }
     c.id=esq.id+'-'+modo;   // las marcas y el subrayado de cada modo se guardan con este id (aparte de los del esquema grande)
     const head=esq.querySelector('.esquema-head'); if(head) head.after(c); else esq.prepend(c);
+    sellarParrafos(c);
     try{ if(window.catsMontar) window.catsMontar(c); if(window.pmMontar) window.pmMontar(c); }catch(e){ console.error(e); }
     setTimeout(()=>{ const t=c.innerText.length, p=t/3000; const a=c.querySelector('.ex-pags'), m=c.querySelector('.ex-min');
       if(a) a.textContent='~'+p.toFixed(1)+' págs A4'; if(m) m.textContent=Math.round(p*3.5)+' min'; },50);
