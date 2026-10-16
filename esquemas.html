@@ -627,18 +627,41 @@ function render(){
     const div = document.createElement('div');
     div.className = 'esquema' + (i===0 ? ' active' : '');
     div.id = es.id;
-    div.innerHTML = `
+    /* Carga rápida: al abrir solo se monta el contenido del primer tema; los demás quedan con su cabecera y se montan
+       al abrirlos o en segundo plano (prepararTema), con el mismo HTML y las mismas pasadas de los scripts → mismo resultado. */
+    if(i===0) div.innerHTML = `
       <div class="esquema-head">
         <div class="eyebrow">${es.tema}</div>
         <h2>${es.titulo}</h2>
       </div>
       ${es.html}
     `;
+    else { div.innerHTML = `
+      <div class="esquema-head">
+        <div class="eyebrow">${es.tema}</div>
+        <h2>${es.titulo}</h2>
+      </div>
+      `; div.dataset.lazy = '1'; }
     lista.appendChild(div);
   });
 }
 
+/* Cada script que trabaja tema a tema se apunta con alPrepararTema(orden, fn): al montar un tema se ejecutan en el mismo
+   orden en que corren al abrir la página (subrayado 20 · estudio 30 · marcador 40 · cifras 50 · enlaces 60 · huecos 70 · marcas 90). */
+const hooksTema = [];
+window.alPrepararTema = (orden, fn) => { hooksTema.push({orden, fn}); hooksTema.sort((a, b) => a.orden - b.orden); };
+function prepararTema(id){
+  const div = document.getElementById(id); if(!div || !div.dataset.lazy) return div;
+  const es = esquemas.find(e => e.id === id); delete div.dataset.lazy;
+  div.insertAdjacentHTML('beforeend', es.html + '\n    ');
+  hooksTema.forEach(h => { try{ h.fn(div); }catch(e){ console.error(e); } });
+  return div;
+}
+function prepararTodos(){ esquemas.forEach(es => prepararTema(es.id)); }
+window.prepararTema = prepararTema; window.prepararTodos = prepararTodos;
+
 function mostrar(id){
+  prepararTema(id);
   document.querySelectorAll('.esquema').forEach(e => e.classList.toggle('active', e.id === id));
   document.querySelectorAll('.tema-nav-item').forEach(n => n.classList.toggle('active', n.dataset.target === id));
   document.body.classList.add('ver-esquema');
@@ -3927,6 +3950,12 @@ const T14 = {};
 })();
 /* ==== TEMA 14 FIN ==== */
 render();
+/* los temas que faltan se montan de uno en uno cuando el navegador está libre, empezando un poco después de abrir */
+(function(){
+  const ric = window.requestIdleCallback ? f => requestIdleCallback(f, {timeout: 2000}) : f => setTimeout(f, 150);
+  const paso = () => { const es = esquemas.find(e => { const d = document.getElementById(e.id); return d && d.dataset.lazy; }); if(!es) return; prepararTema(es.id); ric(paso); };
+  window.addEventListener('load', () => setTimeout(() => ric(paso), 1500));
+})();
 if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").catch(function(){});});}
 // ---- LECTOR DE VOZ (Web Speech API) ----
 (function(){
@@ -4422,8 +4451,9 @@ body.embed #app{padding-top:4px}
   Object.keys(MAPA).forEach(id => { (porSitio[MAPA[id]] = porSitio[MAPA[id]] || []).push(id); });
   const fichaDe = {};                          // id pregunta -> elemento .articulo
 
-  function enlazar(){
-    document.querySelectorAll('.esquema').forEach(esq => {
+  const temasDe = solo => solo && solo.nodeType === 1 ? [solo] : document.querySelectorAll('.esquema');   // un tema (al montarlo) o todos
+  function enlazar(solo){
+    temasDe(solo).forEach(esq => {
       const t = esq.id.replace('tema-', '');
       esq.querySelectorAll('.articulo').forEach((art, k) => {
         const ps = art.querySelectorAll('.txt p');
@@ -4515,10 +4545,10 @@ body.embed #app{padding-top:4px}
   }
 
   // ---------- Cuadros visuales (árboles, flujos…): sus respuestas apuntan a las preguntas de la respuesta del articulado que más se les parece ----------
-  function enlazarVis(){
+  function enlazarVis(solo){
     const STOP = new Set(['de','la','el','los','las','en','a','y','o','que','se','del','al','un','una','por','con','para','su','sus','lo','es','no']);
     const toks = t => new Set((t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^a-z0-9]+/).filter(w => w && !STOP.has(w)));
-    document.querySelectorAll('.esquema').forEach(esq => {
+    temasDe(solo).forEach(esq => {
       const cand = [...esq.querySelectorAll('.articulo mark.m-resp[data-q]')].map(m => ({m, t: toks(m.textContent)}));
       if (!cand.length) return;
       esq.querySelectorAll('.vis mark.m-resp').forEach(v => {
@@ -4541,9 +4571,9 @@ body.embed #app{padding-top:4px}
 
   // ---------- Colores según los resultados de los tests ----------
   function leerStats(){ try { return (JSON.parse(localStorage.getItem('oficialAppState_v1') || '{}').qStats) || {}; } catch(e){ return {}; } }
-  function colorear(){
+  function colorear(solo){
     const st = leerStats();
-    document.querySelectorAll('.esquema').forEach(esq => {
+    temasDe(solo).forEach(esq => {
       const cuenta = {ok:0, dud:0, mal:0, nuevo:0};
       esq.querySelectorAll('.articulo').forEach(art => {
         art.classList.remove('st-ok','st-dud','st-mal','st-nuevo');
@@ -4608,6 +4638,7 @@ body.embed #app{padding-top:4px}
   function irAPregunta(id){
     const sitio = MAPA[id]; if (!sitio) { const t = parseInt(id, 10); if (t && document.getElementById('tema-' + t)) mostrar('tema-' + t); return false; }
     const [t, k, j, i] = sitio.split('-');
+    if (window.prepararTema) window.prepararTema('tema-' + t);
     const esq = document.getElementById('tema-' + t); if (!esq) return false;
     const art = esq.querySelectorAll('.articulo')[+k]; if (!art) return false;
     let el = art;
@@ -4652,7 +4683,7 @@ body.embed #app{padding-top:4px}
   function buscar(q){
     const box = document.getElementById('bus-res'); const nq = nrm(q.trim());
     if (nq.length < 3){ box.classList.remove('show'); box.innerHTML = ''; return; }
-    if (!indice) construirIndice();
+    if (!indice){ if (window.prepararTodos) window.prepararTodos(); construirIndice(); }
     const palabras = nq.split(/\s+/).filter(Boolean);
     const res = indice.filter(x => palabras.every(w => x.n.includes(w))).slice(0, 60);
     box.innerHTML = res.length ? res.map((r, i) => {
@@ -4721,6 +4752,7 @@ body.embed #app{padding-top:4px}
     window.addEventListener('pageshow', colorear);
     window.addEventListener('storage', e => { if (e.key === 'oficialAppState_v1') colorear(); });
   }
+  if (window.alPrepararTema) window.alPrepararTema(60, esq => { enlazar(esq); enlazarVis(esq); colorear(esq); });
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', iniciar); else iniciar();
 })();
 </script>
@@ -4759,8 +4791,8 @@ body.embed #app{padding-top:4px}
     s.textContent = (/^[.,;:)]/.test(h) ? '' : ' ') + h + (sg && sg.nodeType === 3 && !/^[\s.,;:)]/.test(sg.nodeValue) ? ' ' : '');
     el.after(s); el.classList.add('abierto'); el.setAttribute('aria-expanded', 'true');
   }
-  function montar(){
-    document.querySelectorAll('.esquema').forEach(esq => {
+  function montar(solo){
+    (solo && solo.nodeType === 1 ? [solo] : document.querySelectorAll('.esquema')).forEach(esq => {
       const t = esq.id.replace('tema-', ''), tabla = H[t]; if (!tabla) return;
       esq.querySelectorAll('.txt p, .txt li').forEach(el => {
         if (!el.textContent.includes(ELIP) || el.querySelector('p, li')) return;      // solo el elemento más interno
@@ -4792,6 +4824,7 @@ body.embed #app{padding-top:4px}
   document.addEventListener('mouseover', e => { const el = e.target.closest && e.target.closest('.hueco'); if (el && !el.classList.contains('abierto') && matchMedia('(hover:hover)').matches) mostrarTip(el); });
   document.addEventListener('mouseout', e => { if (e.target.closest && e.target.closest('.hueco')) ocultarTip(); });
   window.addEventListener('scroll', ocultarTip, true);
+  if (window.alPrepararTema) window.alPrepararTema(70, montar);
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', montar); else montar();
 })();
 </script>
@@ -5190,7 +5223,7 @@ html{overflow-x:hidden}body{max-width:100%}
 
   /* ---------- arranque ---------- */
   function applyAll(){
-    document.querySelectorAll('.esquema').forEach(esq=>{
+    document.querySelectorAll('.esquema:not([data-lazy])').forEach(esq=>{
       const bk=data[esq.id]; svgOf(esq);
       if(bk) bk.t.slice().sort((a,b)=>a.n-b.n).forEach(m=>wrap(esq,m));
       renderShapes(esq);
@@ -5199,6 +5232,7 @@ html{overflow-x:hidden}body{max-width:100%}
   }
   /* el Exprés se monta al pulsar ⚡: se le ponen entonces sus marcas */
   window.pmMontar=root=>{ svgOf(root); const bk=data[root.id]; if(bk) bk.t.slice().sort((a,b)=>a.n-b.n).forEach(m=>wrap(root,m)); renderShapes(root); if('ResizeObserver' in window) new ResizeObserver(()=>renderShapes(root)).observe(root); };
+  if(window.alPrepararTema) window.alPrepararTema(90,esq=>window.pmMontar(esq));   // al final: las marcas se crearon con el tema completo (botones, cobertura…) y sus posiciones cuentan ese texto
   buildUI();
   const bm=document.getElementById('btn-marcas');
   bm.onclick=()=>{ const on=document.body.classList.toggle('pm-on'); bm.classList.toggle('on',on); if(!on){ setTool(null); pop.classList.remove('on'); edit=null; } };
@@ -5408,8 +5442,9 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     for(const t of textNodes(rz)){ const s=acc, e=acc+t.length; acc=e; const from=Math.max(a.s,s)-s, to=Math.min(a.e,e)-s; if(to>from&&t.nodeValue.slice(from,to).trim()!=='') jobs.push([t,from,to]); }
     jobs.forEach(([t,from,to])=>{ let mid=t; if(from>0) mid=t.splitText(from); if(to-from<mid.length) mid.splitText(to-from); const el=mkEl(a.c); el.dataset.add=a.n; mid.parentNode.replaceChild(el,mid); el.appendChild(mid); });
   }
-  function aplicar(){ document.querySelectorAll('.esquema').forEach(aplicarRaiz); }
+  function aplicar(){ document.querySelectorAll('.esquema:not([data-lazy])').forEach(aplicarRaiz); }
   window.catsMontar=r=>aplicarRaiz(r);
+  if(window.alPrepararTema) window.alPrepararTema(20,aplicarRaiz);
   function aplicarRaiz(esq){
     {
       /* primero los del articulado (índices históricos intactos) y después los de los cuadros visuales */
@@ -5904,13 +5939,15 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     a.classList.toggle('mk-ok',v==='ok'); a.classList.toggle('mk-rep',v==='rep');
     const b=a.querySelector('.mk-btn'); if(b) b.textContent=ETQ[v];
   }
-  document.querySelectorAll('.articulo').forEach(a=>{
+  const botonFicha=a=>{
     const h=a.querySelector('.articulo-head'); if(!h) return;
     const b=document.createElement('button'); b.type='button'; b.className='mk-btn'; b.title='Marca esta ficha: sin marcar → dominada → repasar';
     b.onclick=ev=>{ ev.stopPropagation(); const k=clave(a), v=data[k]||''; const n=v===''?'ok':v==='ok'?'rep':''; if(n) data[k]=n; else delete data[k]; save(); pintar(a); aplicar(); };
     h.insertBefore(b,h.querySelector('.st-chip'));
     pintar(a);
-  });
+  };
+  document.querySelectorAll('.articulo').forEach(botonFicha);
+  if(window.alPrepararTema) window.alPrepararTema(30,esq=>{ esq.querySelectorAll('.articulo').forEach(botonFicha); aplicar(); });
   function aplicar(){
     document.querySelectorAll('.articulo').forEach(a=>{
       const v=data[clave(a)]||''; let ver=true;
@@ -5975,6 +6012,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     b.onclick=ev=>{ ev.stopPropagation(); const k=clave(a); if(!k) return; rec(); if(data[es.id]&&data[es.id].man&&data[es.id].k===k) delete data[es.id]; else data[es.id]={k:k,t:Date.now(),man:1}; save(); pintaMarca(es); };
     h.insertBefore(b,h.querySelector('.st-chip')); }); pintaMarca(es); }
   document.querySelectorAll('.esquema').forEach(botones);
+  if(window.alPrepararTema) window.alPrepararTema(40,botones);
   let t=0;
   addEventListener('scroll',()=>{ clearTimeout(t); t=setTimeout(guardar,1500); },{passive:true,capture:true});
   let ult=null;
@@ -6242,6 +6280,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   const todo=()=>document.querySelectorAll('.trampa:not([data-cifra])').forEach(tarjeta);
   new MutationObserver(todo).observe(document.body,{childList:true,subtree:true});
   todo();
+  if(window.alPrepararTema) window.alPrepararTema(50,todo);
 })();
 </script>
 <style id="estilo-colorido">
@@ -6429,7 +6468,7 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
   const ov=document.createElement('div'); ov.className='pn-ov'; ov.innerHTML='<div class="pn-box" id="pn-box"></div>'; document.body.appendChild(ov);
   let tab='hoy', temaPl='';
   ov.addEventListener('click',ev=>{ if(ev.target===ov) ov.classList.remove('on'); });
-  btn.onclick=()=>{ pintar(); ov.classList.add('on'); };
+  btn.onclick=()=>{ if(window.prepararTodos) window.prepararTodos(); pintar(); ov.classList.add('on'); };
   function datos(){
     const rep=rd('esquemas-repaso',{}), fich=rd('esquemas-fichas',{}), ult=rd('esquemas-ultima',{}), h=hoyN();
     return temas().map(t=>{
