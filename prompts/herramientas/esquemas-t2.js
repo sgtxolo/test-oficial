@@ -58,13 +58,13 @@ H += pon('Artículo 7 — Suspensión del régimen', flujo('Arts. 6 y 7 — Auto
 
 // Art. 7 bis — inversiones extranjeras directas: árbol
 H += pon('Artículo 7 bis', arbol('Art. 7 bis — Inversiones extranjeras directas (IED) en España', `Se ${D('SUSPENDE la liberalización')} de las IED → necesitan ${D('AUTORIZACIÓN previa')}`, [
-  `<b>¿Qué es IED?</b> pasar a tener una participación ${Rq('igual o superior al 10 %', ['2-ia-5', '2-ia-58'])} del capital social de una sociedad española, o adquirir su control (art. 7 Ley 15/2007, de Defensa de la Competencia)`,
+  `<b>¿Qué es IED?</b> pasar a tener una participación ${Rq('igual o superior al 10 por 100', ['2-ia-5', '2-ia-58'])} del capital social de una sociedad española, o adquirir su control (art. 7 Ley 15/2007, de Defensa de la Competencia)`,
   `<b>¿Por quién?</b> a) residentes de países ${K('fuera')} de la UE y de la AELC · b) residentes de la UE/AELC cuya titularidad real sea de fuera: poseen o controlan ${P('más del 25 %')} del capital o de los derechos de voto`,
   `<b>Sectores (7 bis.2):</b> a) infraestructuras críticas (${Rq('Ley 8/2011', ['2-ia-59'])}) · b) tecnologías críticas y de doble uso: telecomunicaciones, ${Rq('inteligencia artificial, robótica, semiconductores, ciberseguridad', ['2-ia-60'])}, aeroespacial, defensa, energía, cuántica, nuclear, nanotecnologías, ${Rq('biotecnologías', ['2-ia-60'])} · c) insumos fundamentales (energía, seguridad alimentaria) · d) ${Rq('acceso a información sensible', ['2-ia-71'])} (datos personales, LO 3/2018) · e) medios de comunicación (lo audiovisual, por la ${Rq('Ley 7/2010, General de la Comunicación Audiovisual', ['2-ia-72'])})`,
   `<b>Por el inversor (7 bis.3):</b> a) controlado por el gobierno de un tercer país (criterios del ${Rq('art. 7.2 de la Ley de Defensa de la Competencia', ['2-ia-61'])}) · b) ya ha actuado en sectores de seguridad, orden o salud pública de otro Estado miembro · c) riesgo grave de actividades delictivas o ilegales`,
   `<b>Otros sectores (7 bis.4):</b> el Gobierno puede suspender también, por el procedimiento del art. 7`,
-  `<b>Sin autorización (7 bis.5):</b> ${Rq('carecen de validez y efectos jurídicos', ['2-ia-73', '2-ia-95'])}, en tanto no se legalicen`,
-  `<b>7 bis.6:</b> el Gobierno fija reglamentariamente las ${Rq('categorías de operación e importes', ['2-ia-96'])} por debajo de los que quedan exentas · normas de ejecución: ${Rq('Ministra de Industria, Comercio y Turismo', ['2-ia-84'])}`]));
+  `<b>Sin autorización (7 bis.5):</b> ${Rq('carecen de validez y efectos jurídicos', ['2-ia-73', '2-ia-95'])}, ${Rq('mientras no se produzca su legalización', ['2-ia-73'])} (y se considera una infracción muy grave: art. 8)`,
+  `<b>7 bis.6:</b> ${Rq('el artículo 7 bis.6 faculta al Gobierno para establecer reglamentariamente estas categorías de operación e importes', ['2-ia-96'])} por debajo de los cuales quedan exentas de autorización previa · normas de ejecución: ${Rq('la Ministra de Industria, Comercio y Turismo', ['2-90', '2-ia-84'])} (al Ministro)`]));
 
 // Arts. 8 y 9 — infracciones y sanciones (EX): columnas M/G/L
 H += pon('Artículos 9 y 10 — Sanciones', cols('⭐ EX · Arts. 8 y 9 — Infracciones y sanciones', [
@@ -96,12 +96,12 @@ H += pon('Artículos 9 y 10 — Sanciones', arbol('Art. 10 — Graduación de la
 
 // Art. 11 — prescripción (EX): tabla
 H += pon('Artículos 11 y 12 — Prescripción', cuadro('⭐ EX · Art. 11 — Prescripción', ['', 'MUY GRAVES', 'GRAVES', 'LEVES'], [
-  ['<b>Infracciones</b><br><small>desde que se ' + Rq('cometió', ['2-ia-91']) + '</small>', P('5 años'), Rq('3 años', ['2-ia-64']), P('1 año')],
-  ['<b>Sanciones</b><br><small>resolución firme</small>', P('5 años'), Rq('4 años', ['2-ia-8', '2-ia-79']), P('3 años')]]));
+  ['<b>Infracciones</b><br><small>' + Rq('desde la fecha en que la infracción fue cometida', ['2-ia-91']) + '</small>', P('cinco años'), Rq('tres años', ['2-ia-64']), P('al año')],
+  ['<b>Sanciones</b><br><small>resolución firme</small>', P('cinco años'), Rq('cuatro años', ['2-ia-8', '2-ia-79']), P('tres años')]]));
 
 // Art. 12 — competencias (EX): tabla general / inversiones extranjeras
 H += pon('Artículos 11 y 12 — Prescripción', cuadro('⭐ EX · Art. 12 — ¿Quién incoa y quién sanciona?', ['', 'EN GENERAL', 'INVERSIONES EXTRANJERAS DIRECTAS'], [
-  ['<b>Incoa e instruye</b>', Rq('Secretaría de la Comisión de Prevención del Blanqueo de Capitales e Infracciones Monetarias', ['2-ia-80', '2-ia-92']), `${Rq('Salvo IED', ['2-ia-85', '2-ia-99'])}: el órgano que designe el titular de la DG de Comercio Internacional e Inversiones`],
+  ['<b>Incoa e instruye</b>', Rq('Secretaría de la Comisión de Prevención del Blanqueo de Capitales e Infracciones Monetarias', ['2-ia-80', '2-ia-92']), `Salvo ${Rq('en materia de inversiones extranjeras directas en España', ['2-ia-85', '2-ia-99'])}: el órgano que designe el titular de la DG de Comercio Internacional e Inversiones`],
   ['<b>Muy graves</b>', `${Rq('Consejo de Ministros', ['2-ia-81'])}, a propuesta del Ministerio de Asuntos Económicos y Transformación Digital`, `Consejo de Ministros, a propuesta del ${Rq('Ministerio de Industria, Comercio y Turismo', ['2-ia-81'])}`],
   ['<b>Graves</b>', 'Ministerio de Asuntos Económicos y Transformación Digital (propone la Secretaría de Estado de Economía)', `${Rq('Ministerio de Industria, Comercio y Turismo', ['2-ia-82', '2-ia-93'])} (propone la Secretaría de Estado de Comercio)`],
   ['<b>Leves</b>', 'DG del Tesoro y Política Financiera (propone el instructor)', Rq('DG de Comercio Internacional e Inversiones', ['2-ia-83'])],

@@ -18,10 +18,10 @@ const EXTRAS = { 8: ['2-ia-78'], 12: ['2-17'], 27: ['2-45'] };   // (índices de
 //   · poco (sin oficiales ni marcas y ≤ 4 IA) → solo el título del artículo y su 🎯;
 //   · el resto → ventana amplia (arranque de la frase + unas palabras antes de la respuesta).
 // Y al abrir cada norma, un MAPA con sus artículos y lo que se pregunta de cada uno.
-const N = { ALTO: +(process.env.ALTO || 15), BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 10), ANT: +(process.env.ANT || 8) };
+const N = { ALTO: +(process.env.ALTO || 15), BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 6), ANT: +(process.env.ANT || 5) };
 const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=/.test(x.at)), peso = 3 * p.of + p.ia;
   if (p.of || marca) return { recorte: 'frases', entero: true, media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };   // 16/10/2026: apartados con oficial/marca/R y sus vecinos, ENTEROS
-  if (peso >= N.ALTO) return { recorte: 'frases', media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
+  // 16/10/2026 (usuario): lo que solo tiene preguntas de IA se recorta con (…), aunque sea muy preguntado; lo oficial / marca / R, entero (arriba)
   if (p.ia <= N.BAJO) return 'boton';
   return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
 // Sin la parte final RECUERDA (pauta 15/10/2026: las R ya están en el articulado): cada R lleva su sello «R n» en el párrafo de su
