@@ -12,7 +12,8 @@ Object.assign(X.opciones, { recorte: 'ventana', cabeza: 10, antes: 8, umbral: 16
 const N = { ALTO: +(process.env.ALTO || 15), BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 10), ANT: +(process.env.ANT || 8) };
 // (Tema 3: tiene 400 oficiales y casi todo artículo tiene alguna → «frases» solo con ≥ 2 oficiales, marca EXOF o peso alto, para no pasar de 25 págs)
 const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=\\?"EXOF/.test(x.at)), peso = 3 * p.of + p.ia;
-  if (p.of >= 2 || marca || peso >= N.ALTO) return { recorte: 'frases', media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
+  if (p.of >= 1 || marca) return { recorte: 'frases', entero: true, media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };   // 16/10/2026 (pautas T2): oficial/R/marca y vecinos ENTEROS
+  if (peso >= N.ALTO) return { recorte: 'frases', media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
   if (p.ia <= N.BAJO) return 'boton';
   return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
 
