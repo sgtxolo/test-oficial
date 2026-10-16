@@ -32,6 +32,18 @@ self.addEventListener("fetch", event => {
 
   const isHtml = event.request.mode === "navigate" || url.pathname.endsWith(".html");
 
+  if (url.pathname.endsWith("/esquemas.html")) {
+    // Esquemas (10 MB): se abre al instante desde la copia guardada y se actualiza en segundo plano.
+    event.respondWith(
+      caches.open(CACHE_NAME).then(cache => cache.match(event.request).then(cached => {
+        const red = fetch(event.request, { cache: "no-store" }).then(r => { if (r && r.status === 200) cache.put(event.request, r.clone()); return r; });
+        if (cached) { event.waitUntil(red.catch(() => {})); return cached; }
+        return red;
+      }))
+    );
+    return;
+  }
+
   if (isHtml) {
     // Red primero para HTML: siempre intenta traer la Ãºltima versiÃ³n;
     // si no hay red (offline), sirve la copia cacheada.

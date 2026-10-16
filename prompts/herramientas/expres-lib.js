@@ -491,10 +491,10 @@ module.exports = function (T) {
     let s = fs.readFileSync(ESQ, 'utf8');
     if (!s.includes('.ex-plg{')) s = s.replace('<style id="expres-style">', () => '<style id="expres-style">\n' + CSS_PLG);
     if (!s.includes('.ex-sello-r{')) s = s.replace('<style id="expres-style">', () => '<style id="expres-style">\n.ex-sello-r{border-radius:10px!important;color:#1d6b4f!important;border-color:#1d6b4f!important;transform:none!important}\n[data-theme="dark"] .ex-sello-r{color:#7fd6ad!important;border-color:#7fd6ad!important}\n');
-    const m = s.match(new RegExp(`<script id="${SID}">window\\.${DEST}=(\\{[\\s\\S]*?\\});<\\/script>`));
+    const m = s.match(new RegExp(`<script id="${SID}"(?: type="text/plain")?>window\\.${DEST}=(\\{[\\s\\S]*?\\});<\\/script>`));
     const D = m ? JSON.parse(m[1]) : {};
     D[T] = { html: htmlExpres, cob: cob.map(({ nombre, total, ok, pct }) => ({ nombre, total, ok, pct })) };
-    const tag = `<script id="${SID}">window.${DEST}=${JSON.stringify(D)};</script>`;
+    const tag = `<script id="${SID}"${DEST === 'EXPRES_T' ? ' type="text/plain"' : ''}>window.${DEST}=${JSON.stringify(D)};</script>`;
     s = m ? s.replace(m[0], () => tag) : s.replace('<style id="expres-style">', () => tag + '\n<style id="expres-style">');
     if (!process.env.ENSAYO) fs.writeFileSync(ESQ, s); else if (process.env.VOLCADO) fs.writeFileSync(process.env.VOLCADO, htmlExpres);
     cob.forEach(c => console.log(`${c.nombre}: ${c.ok}/${c.total} preguntas enlazadas (${c.pct} % ponderado)${c.faltan.length ? ' · faltan: ' + c.faltan.join(', ') : ''}`));
