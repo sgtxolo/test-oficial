@@ -15,7 +15,7 @@ const cab = k => X.fichas[k].cab.replace(/<[^>]+>/g, '');
 const ini = re => X.fichas.findIndex((f, k) => re.test(cab(k)));
 // preguntas que el mapa no sitúa en un párrafo: { cabecera de la ficha: [ids] } → botón «🎯 … más de este artículo» en su ficha
 const EXT = [[/^Artículos 7 y 8 —/, ['1-148']], [/^Artículos 15 y 15 bis/, ['1-ia-1550']], [/^Artículo 19 — Impugnación/, ['1-ia-1565']], [/^Artículos 58 y 59/, ['1-153']],
-  [/^Artículos 91 y 92/, ['1-ia-1668']], [/^Artículo 93 —/, ['1-ia-1678', '1-ia-1679', '1-ia-1681', '1-ia-1684']], [/^Artículo 12 — De la libertad provisional/, ['1-ia-1032']],
+  [/^Artículos 91 y 92/, ['1-ia-1668', '1-228']], [/^Artículo 93 —/, ['1-ia-1678', '1-ia-1679', '1-ia-1681', '1-ia-1684']], [/^Artículo 12 — De la libertad provisional/, ['1-ia-1032']],
   [/^Artículo 21 — De las personas sujetas/, ['1-ia-1052']], [/^Artículo 45 — Libertad de circulación/, ['1-ia-1155']], [/^Artículos 2, 4 y 5 — Vida/, ['1-ia-1309']],
   [/^Protocolo n.º 7 /, ['1-ia-1422', '1-ia-1430', '1-ia-1432']], [/^Artículo 19 — Testigos/, ['1-ia-1744']], [/^Artículo 23 — Nacionales y residentes/, ['1-ia-1753']]];
 const EXTRAS = {}; EXT.forEach(([re, ids]) => { const k = ini(re); if (k >= 0) EXTRAS[k] = (EXTRAS[k] || []).concat(ids); else console.error('sin ficha para', re); });
