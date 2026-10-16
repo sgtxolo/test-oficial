@@ -167,6 +167,8 @@ esquemas.forEach((e, i) => {
 
 // preguntas nuevas del Tema 1 ancladas a su párrafo marcado (tema1/mapa-fijo-t1.json: id → 'k-j'; se genera con tema1/mapa-fijo-gen.js)
 try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema1/mapa-fijo-t1.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '1-' + kj; }); } catch (e) {}
+// preguntas nuevas del Tema 4 ancladas a su párrafo marcado (tema4/mapa-fijo-t4.json: id → 'k-j'; ojo: los índices cambian si se añaden fichas)
+try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema4/mapa-fijo-t4.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '4-' + kj; }); } catch (e) {}
 // preguntas nuevas del Tema 3 ancladas a su párrafo marcado (tema3/mapa-fijo-t3.json: id → 'k-j')
 try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema3/mapa-fijo-t3.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '3-' + kj; }); } catch (e) {}
 // ---------- 7. Escribir ----------

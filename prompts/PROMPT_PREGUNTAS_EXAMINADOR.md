@@ -257,7 +257,7 @@ Pautas del usuario: «déjalo como estaba antes, con los puntitos que se abren, 
 - **Cuidado al leer el escaneado**: confirma el nº de ARTÍCULO por el contenido (en el T4 anoté «7.3» lo que era el art. 8.3). Y tras añadir fichas cambian los índices: **vuelve a ejecutar `mapa-preguntas.js`** (si no, medio centenar de preguntas aparecen como «sin situar» al final del Exprés).
 - Exprés T4 = **49,6 págs** (784/784), con tope pedido por el usuario de 40-50 págs: oficial / EXOF / EX / EXAMEN / ficha R → apartado entero; **solo ✱ → recortado en «ventana»** con su sello (si no, 54-60 págs); solo IA → título + 🎯 (`BAJO` alto); `ENTERO_MAX=1500`, `GRIS_PLIEGA=todo`, `RUN_MIN=60`. El T4 no tiene cuadros (`visuales-t4.js` no existe), por eso no sirve `UNO`.
 - El usuario autorizó borrar preguntas IA propias si hacía falta para el tope; no hizo falta (las IA quedan accesibles desde su 🎯).
-- Fase 2 (preguntas para las marcas sin oficial: 4 EXAMEN, 19 EX, 236 ✱ → 259 apartados) pendiente: si se crean oficiales para los ✱ esos apartados pasan a salir ENTEROS y el Exprés se sale del tope.
+- Fase 2 hecha solo para EXAMEN (4 oficiales 4-241…244) y EX (19 IA 4-ia-553…571) en `tema4/lotes/lote1.js` (`preguntas-marcas-t4.js`, ancladas con `mapa-fijo-t4.json`); los 236 ✱ sin pregunta oficial se dejan (si se crearan, saldrían enteros y el Exprés pasaría de 50 págs). Exprés T4 = 49,9 págs, 807/807.
 
 ### Modos del esquema
 Botones: **📚 Temario entero · ⚡ Exprés**. El ⭐ Solo oficiales y el 🎯 Para examen se QUITARON (16/10/2026: «es una tontería, va a hacer tipo test todo el rato y ocupa espacio»). No los vuelvas a crear.
