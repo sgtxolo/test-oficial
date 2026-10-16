@@ -31,7 +31,7 @@ R.mover.forEach(m => X.mueve(m.id, m.k, m.j));
 if (R.falta.length) console.error('R o preguntas sin párrafo en el articulado:', R.falta.join(' '));
 // o el articulado o el esquema, no los dos: el cuadro «Arts. 50 a 52» no sale junto al literal de los arts. 50-52 (pauta 16/10/2026)
 const SIN_CUADRO = new Set(X.fichas.map((f, k) => /Artículos 52 y 55/.test(f.cab) ? k : -1).filter(k => k >= 0));
-const H = X.automatico(V, EXTRAS, { uno: 0.8, nivel, sinCuadro: SIN_CUADRO }, [0, R.k0 - 1]);   // sin mapas de las leyes (no le interesan, 15/10/2026)
+const H = X.automatico(V, EXTRAS, { uno: +(process.env.UNO || 0.8), nivel, sinCuadro: SIN_CUADRO }, [0, R.k0 - 1]);   // sin mapas de las leyes (no le interesan, 15/10/2026)
 
 module.exports = { visuales: () => [] };   // el esquema normal ya tiene sus cuadros (visuales-t2.js)
 // rangos de fichas de cada norma, sacados de los títulos de bloque (no a mano: cambian al añadir fichas)

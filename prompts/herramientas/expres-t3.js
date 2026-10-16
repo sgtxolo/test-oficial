@@ -19,9 +19,9 @@ const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=\\?"EXOF/.tes
 
 // 1.ª pasada → qué preguntas quedan sueltas; 2.ª: las que tienen artículo seguro van a su ficha (EXTRAS) y las demás a un grupo final
 const EXTRAS = {};
-const H0 = X.automatico(V, EXTRAS, { uno: 0.8, nivel });
+const H0 = X.automatico(V, EXTRAS, { uno: +(process.env.UNO || 0.8), nivel });
 const S = X.asignaSueltas(H0);
-const H = X.automatico(V, Object.assign(EXTRAS, S.extras), { uno: 0.8, nivel }) + S.html;
+const H = X.automatico(V, Object.assign(EXTRAS, S.extras), { uno: +(process.env.UNO || 0.8), nivel }) + S.html;
 console.log(`Preguntas sueltas: ${S.n} asignadas a su artículo · ${S.g} en grupos al final`);
 
 module.exports = { visuales: () => [] };   // los cuadros ya están en el esquema normal (visuales-t3.js)

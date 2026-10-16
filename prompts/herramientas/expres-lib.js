@@ -75,7 +75,7 @@ module.exports = function (T) {
     // la respuesta correcta de esas preguntas se busca en el texto y se marca (en vez de dejarla solo en el 🎯)
     resto = resto.filter(id => { const r = marcaRespuesta(h2, id); if (r) { h2 = r; return false; } return true; });
     // pauta 16/10/2026: párrafo con pregunta OFICIAL, marca del usuario o R, y sus apartados vecinos (OPC.vecinas) → ENTEROS, sin (…)
-    const enteroPar = OPC.entero && (esOfPar(k, j) || (OPC.vecinas && OPC.vecinas.has(j)));
+    const enteroPar = OPC.entero && (esOfPar(k, j) || (OPC.vecinas && OPC.vecinas.has(j))) && limpia(h2).length <= ENTERO_MAX;
     if (enteroPar) h2 = abreHuecos(h2);
     else if (OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
     const boton = resto.length ? ` <mark class="m-resp ex-q${resto.every(esIA) ? ' r-ia' : ''}"${q(resto)}>🎯 ${resto.length === 1 ? '1 pregunta' : resto.length + ' preguntas'}</mark>` : '';
@@ -216,6 +216,8 @@ module.exports = function (T) {
   const claveH = t => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ]/g, '');
   // texto de pie de página del PDF que se coló en los huecos. Los huecos cortos o con plazos / cantidades se escriben en gris dentro del
   // texto; los largos quedan en un (…) verde que se despliega al pulsarlo (en el Exprés no hay mecanismo de huecos como en el esquema)
+  const ENTERO_MAX = process.env.ENTERO_MAX !== undefined ? +process.env.ENTERO_MAX : 100000;   // párrafo más largo: solo sus frases con pregunta enteras
+  const VEC_MAX = process.env.VEC_MAX !== undefined ? +process.env.VEC_MAX : 100000;
   const HUECO_MAX = +process.env.HUECO_MAX || 400;
   const limpiaHueco = g => g.replace(/TEMARIO DE ASCENSO A OFICIAL/g, ' ').replace(/Todos los derechos reservados\.[^|]*\|\s*\d+\s*TOMO \d+ T\d+ [A-ZÁÉÍÓÚÑ ]+?TEMARIO DE ASCENSO A OFICIAL/g, ' ').replace(/\bT\d+ [A-ZÁÉÍÓÚÑ ]{12,}(?=\s+[a-zñ(])/g, ' ').replace(/\bE l\b/g, 'El').replace(/\s{2,}/g, ' ').trim();
   function abreHuecos(html) {
@@ -333,7 +335,7 @@ module.exports = function (T) {
         // nv.entero: junto a cada apartado con pregunta oficial / marca / R se ponen también el anterior y el posterior (pauta 16/10/2026:
         // la pregunta puede cambiar al apartado de al lado), todos enteros
         else if (nv && nv.entero) { const of = js.filter(j => esOfPar(k, j)), vec = new Set();
-          of.forEach(j => [j - 1, j + 1].forEach(v => { if (v >= 0 && v < f.ps.length) vec.add(v); }));
+          of.forEach(j => [j - 1, j + 1].forEach(v => { if (v >= 0 && v < f.ps.length && limpia(f.ps[v].h).length <= VEC_MAX) vec.add(v); }));
           js = [...new Set(js.concat([...vec]))].sort((a, b) => a - b); nv = Object.assign({}, nv, { vecinas: vec }); } }
       if (!js.length && !cs.length && !extras[k]) continue;
       if (titulo) { out += titulo; titulo = ''; }
