@@ -90,8 +90,11 @@ mark.m-autoridad{background:#bfe3c4;color:#173a1e;padding:1px 3px;border-radius:
 mark.m-plazo{background:#a9d3ea;color:#0f2c3d;padding:1px 3px;border-radius:3px}
 mark.m-accion{background:#c9b7e0;color:#2c1c40;padding:1px 3px;border-radius:3px}
 mark.m-personalizado{background:#f7e79a;color:#463a04;padding:1px 3px;border-radius:3px}
-mark.m-resp{background:#dbeafe;color:#1e3a8a;font-weight:800;padding:0 3px;border-radius:4px;box-shadow:none}
-[data-theme="dark"] mark.m-resp{background:#1e3a5f;color:#bfdbfe;box-shadow:none}
+mark.m-resp{background:transparent;color:inherit;font-weight:inherit;padding:0 1px;border-radius:0;box-shadow:none;text-decoration:underline solid #2563eb;text-decoration-thickness:2px;text-underline-offset:3px}
+mark.m-resp::before,mark.m-resp::after{font-weight:800;color:#2563eb}
+mark.m-resp::before{content:"["}mark.m-resp::after{content:"]"}
+[data-theme="dark"] mark.m-resp{background:transparent;color:inherit;box-shadow:none;text-decoration-color:#60a5fa}
+[data-theme="dark"] mark.m-resp::before,[data-theme="dark"] mark.m-resp::after{color:#60a5fa}
 .leyenda i.lc-resp{background:#dbeafe;border:2px solid #1e3a8a}
 .p-nuevo{border-left:4px solid #2563eb;background:#eef4ff;padding:6px 10px;border-radius:6px}
 .tag-nuevo{display:inline-block;background:#2563eb;color:#fff;font-size:11px;font-weight:800;border-radius:8px;padding:1px 7px;margin-right:6px;white-space:nowrap}
@@ -4443,8 +4446,10 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
 </script>
 <style id="estilo-enlaces">
 /* Respuestas enlazadas con las preguntas de la app de test */
-mark.m-resp.r-ia{background:transparent;color:#b3001b;font-weight:700;box-shadow:none;padding:0 1px;text-decoration:underline dotted #e8737f;text-decoration-thickness:2px;text-underline-offset:3px}
-[data-theme="dark"] mark.m-resp.r-ia{background:transparent;color:#ff8a80;box-shadow:none}
+mark.m-resp.r-ia{background:transparent;color:inherit;font-weight:inherit;box-shadow:none;padding:0 1px;text-decoration:underline dotted #e8737f;text-decoration-thickness:2px;text-underline-offset:3px}
+mark.m-resp.r-ia::before,mark.m-resp.r-ia::after{color:#b3001b}
+[data-theme="dark"] mark.m-resp.r-ia{background:transparent;color:inherit;box-shadow:none;text-decoration-color:#ff8a80}
+[data-theme="dark"] mark.m-resp.r-ia::before,[data-theme="dark"] mark.m-resp.r-ia::after{color:#ff8a80}
 mark.m-resp[data-q]{cursor:pointer;touch-action:manipulation}
 mark.m-resp[data-q]:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
 .leyenda i.lc-resp-ia{background:none;border:none;color:#b3001b;text-decoration:underline dotted #e8737f;font-style:normal;font-weight:900;width:auto;height:auto;font-size:12px}
@@ -5360,7 +5365,7 @@ body.expres .esquema.active>:not(.esquema-head):not(.ex-cont){display:none!impor
 .ex-tab{display:grid;grid-template-columns:minmax(96px,20%) repeat(calc(var(--n) - 1),1fr);gap:6px}
 .ex-th{font-weight:800;font-size:.76rem;letter-spacing:.05em;text-transform:uppercase;color:var(--verde-med);padding:2px 6px}
 .ex-tl{background:var(--verde);color:#fff;border-radius:8px;padding:7px 9px;font-size:.86rem;line-height:1.3}
-.ex-tl small{opacity:.92}.ex-tl mark,.ex-tl mark.m-resp.r-ia{color:#fff!important;background:transparent!important;text-decoration:underline dotted #ffd27a!important;font-weight:800}
+.ex-tl small{opacity:.92}.ex-tl mark.m-resp::before,.ex-tl mark.m-resp::after{color:#ffd27a!important}.ex-tl mark,.ex-tl mark.m-resp.r-ia{color:#fff!important;background:transparent!important;text-decoration:underline dotted #ffd27a!important;font-weight:800}
 .ex-td.num{text-align:center;font-weight:800;font-size:1rem;display:flex;align-items:center;justify-content:center}
 .ex-td{background:var(--panel-alt);border:1.5px solid var(--borde);border-radius:8px;padding:7px 9px;font-size:.88rem;line-height:1.4}
 mark.m-resp.ex-q{font-size:.75em;font-weight:800;white-space:nowrap;border-radius:8px;padding:0 6px;text-decoration:none}
