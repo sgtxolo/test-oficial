@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v143";
+const CACHE_NAME = "oposicion-cache-v144";
 const APP_SHELL = [
   "./test-oficial-conocimiento.html",
   "./test-oficial-ingles.html",
@@ -6,7 +6,10 @@ const APP_SHELL = [
   "./manifest-esquemas.json",
   "./manifest.json",
   "./icon-192.png",
-  "./icon-512.png"
+  "./icon-512.png",
+  "./icon-ingles-180.png",
+  "./icon-conocimiento-180.png",
+  "./icon-esquemas-180.png"
 ];
 
 self.addEventListener("install", event => {

@@ -6,7 +6,7 @@
   "background_color": "#f5f4ee",
   "theme_color": "#1c4d3c",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "icon-esquemas-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-esquemas-512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }
