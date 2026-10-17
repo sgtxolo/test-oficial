@@ -4038,10 +4038,13 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
       });
     });
   }
+  let abiertos = [];
   function marcar(el){
     if(marcado) marcado.classList.remove('leyendo');
+    abiertos.forEach(p => p.classList.remove('on')); abiertos = [];
     marcado = el;
     if(el){ el.classList.add('leyendo');
+      if(document.body.classList.contains('coche-on')) abiertos = Array.from(el.querySelectorAll('.ex-plg:not(.on)')).map(p => (p.classList.add('on'), p));   // 🚗 despliega en pantalla los (…) que se están leyendo
       if(document.body.classList.contains('coche-pag')) el.scrollIntoView({block:'start', behavior:'smooth'});   // vista temario: el párrafo arriba, la barra queda debajo
       else el.scrollIntoView({block:'center', behavior:'smooth'}); }
   }
