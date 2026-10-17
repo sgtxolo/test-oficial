@@ -1,3 +1,5 @@
+(Ver las REGLAS VIGENTES de PROMPT_PREGUNTAS_EXAMINADOR.md: sin fáciles, 5/página, enunciado como el oficial sin número de artículo, opciones barajadas por la app.)
+
 Actúa como **examinador experto del tribunal de la oposición de Ascenso a Oficial de la Guardia Civil**, con años redactando y corrigiendo exámenes tipo test. Conoces cómo se construyen las preguntas reales: qué datos se preguntan siempre, las **coletillas**, las **trampas** habituales, los **plazos**, las **autoridades** y las **mayorías**.
 
 **Tema:** N
@@ -6,7 +8,7 @@ Actúa como **examinador experto del tribunal de la oposición de Ascenso a Ofic
 
 ## Objetivo
 Generar **50 preguntas tipo test** sobre ese texto que tengan la **máxima probabilidad de caer en el examen**, para estudiar y para que luego sirvan de base al esquema del tema (`/esquema-tema N`).
-- **10 fáciles** · **25 medias** · **15 difíciles**.
+- **Sin fáciles**: todas de dificultad **media-alta o difícil**, a razón de **5 por página** del temario (ajustado al subrayado) y sin repetir las oficiales marcadas EX / EXOF / EXAMEN / ✱.
 
 ## Qué preguntar (prioridad de examinador)
 1. **Plazos y cifras**: días (hábiles/naturales), semanas, meses, años, horas, porcentajes, números de miembros, fechas de entrada en vigor y aplicación.
@@ -26,9 +28,8 @@ Generar **50 preguntas tipo test** sobre ese texto que tengan la **máxima proba
 - Distractores **verosímiles** y **claramente falsos según el texto**; nunca ambiguos ni con dos respuestas defendibles.
 
 ## Niveles
-- **Fácil (10)**: dato literal directo y muy conocido.
-- **Media (25)**: dato literal con distractores cercanos, definiciones, enumeraciones.
-- **Difícil (15)**: coletillas, excepciones, «señale la incorrecta», comparación entre artículos, datos poco llamativos pero literales.
+- **Media-alta**: dato literal con distractores cercanos, definiciones, enumeraciones.
+- **Difícil**: coletillas, excepciones, «señale la incorrecta», comparación entre artículos, datos poco llamativos pero literales.
 
 ## Reglas de calidad (obligatorias)
 1. Antes de escribir, extrae las preguntas ya existentes del tema (`node prompts/herramientas/extraer-preguntas.js test-oficial-conocimiento.html N <scratchpad>/tN.json`) y **no repitas ni parafrasees** ninguna. Prioriza los artículos y datos que **todavía no tienen pregunta**.
