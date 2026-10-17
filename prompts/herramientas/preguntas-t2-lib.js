@@ -46,11 +46,11 @@ exports.run = function ({ bloque, Q, arg = process.argv.slice(2) }) {
     const ok = nrm(ia[i].opciones[ia[i].correcta].replace(/\.$/, ''));
     if (!/incorrecta|todas|correctas|incorrectas|ninguna/i.test(q.e + ia[i].opciones.join(' ')) && of && !nrm(q.t).includes(ok)) sinOk.push(ia[i].id + ' · ' + ia[i].opciones[ia[i].correcta].slice(0, 70));
     const len = ia[i].opciones.map(x => x.length), mx = Math.max(...len);
-    if (len[ia[i].correcta] === mx && len.filter(x => x === mx).length === 1) may++;
+    const otras = len.filter((x, j) => j !== ia[i].correcta); if (len[ia[i].correcta] > Math.max(...otras) * 1.15) may++;
   });
   if (arg[0] === '--json') {
     fs.writeFileSync(arg[1], JSON.stringify(ia, null, 1));
-    console.log(ia.length, 'preguntas · letras', JSON.stringify(uso), '· ids', ia[0].id, '→', ia[ia.length - 1].id, '· correcta más larga en', Math.round(100 * may / ia.length) + ' % (máx. 35)');
+    console.log(ia.length, 'preguntas · letras', JSON.stringify(uso), '· ids', ia[0].id, '→', ia[ia.length - 1].id, '· correcta >15 % más larga que cualquier otra en', Math.round(100 * may / ia.length) + ' % (máx. 35)');
     if (!of) console.log('(sin texto oficial para verificar citas)');
     if (malas.length) console.log('✗ CITAS QUE NO ESTÁN LITERALES EN EL OFICIAL:\n  ' + malas.join('\n  '));
     if (dup.size) console.log('✗ opciones repetidas en', [...dup].join(', '));
