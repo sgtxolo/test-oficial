@@ -171,6 +171,8 @@ try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema1/mapa-fijo
 try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema4/mapa-fijo-t4.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '4-' + kj; }); } catch (e) {}
 // preguntas nuevas del Tema 3 ancladas a su párrafo marcado (tema3/mapa-fijo-t3.json: id → 'k-j')
 try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema3/mapa-fijo-t3.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '3-' + kj; }); } catch (e) {}
+// Tema 5: preguntas nuevas de las marcas y las de las fichas R, ancladas a su párrafo marcado (tema5/mapa-fijo-t5.json; tema5/mapa-fijo-gen.js)
+try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema5/mapa-fijo-t5.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '5-' + kj; }); } catch (e) {}
 // ---------- 7. Escribir ----------
 const bloqueMapa = `<script id="mapa-preguntas">window.MAPA_PREG=${JSON.stringify(MAPA)};window.TOTAL_PREG=${JSON.stringify(TOTAL)};window.MAPA_EXTRA=${JSON.stringify(EXTRA)};</script>`;
 let h = fs.readFileSync(ESQ, 'utf8');
