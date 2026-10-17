@@ -4450,6 +4450,14 @@ mark.m-resp.r-ia{background:transparent;color:inherit;font-weight:inherit;box-sh
 mark.m-resp.r-ia::before,mark.m-resp.r-ia::after{color:#b3001b}
 [data-theme="dark"] mark.m-resp.r-ia{background:transparent;color:inherit;box-shadow:none;text-decoration-color:#ff8a80}
 [data-theme="dark"] mark.m-resp.r-ia::before,[data-theme="dark"] mark.m-resp.r-ia::after{color:#ff8a80}
+
+/* marcas de pregunta: más visibles */
+mark.m-resp{background:rgba(37,99,235,.13);border-radius:3px;text-decoration-thickness:3px;text-underline-offset:4px}
+mark.m-resp::before,mark.m-resp::after{font-size:1.35em;font-weight:900;line-height:1}
+mark.m-resp::before{margin-right:2px}mark.m-resp::after{margin-left:2px}
+mark.m-resp.r-ia{background:rgba(220,38,38,.10);text-decoration-thickness:3px}
+[data-theme="dark"] mark.m-resp{background:rgba(96,165,250,.20)}
+[data-theme="dark"] mark.m-resp.r-ia{background:rgba(255,138,128,.18)}
 mark.m-resp[data-q]{cursor:pointer;touch-action:manipulation}
 mark.m-resp[data-q]:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
 .leyenda i.lc-resp-ia{background:none;border:none;color:#b3001b;text-decoration:underline dotted #e8737f;font-style:normal;font-weight:900;width:auto;height:auto;font-size:12px}
