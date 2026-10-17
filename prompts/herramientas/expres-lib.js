@@ -35,9 +35,9 @@ module.exports = function (T) {
     while ((m = re.exec(html))) { if (m[1] !== undefined) tit = m[1].replace(/<[^>]+>/g, ''); else out.push(tit); } return out; })();
   const usados = new Set();               // ids de preguntas enlazadas en el exprés
   const esIA = id => /-ia-/.test(id);
-  // T2 (17/10/2026): sus IA viejas (2-ia-1…999) se borraron al rehacer el banco: no se enlazan ids que ya no existen
-  const VIVAS2 = T === 2 ? new Set([...fs.readFileSync(path.join(__dirname, '..', '..', 'test-oficial-conocimiento.html'), 'utf8').matchAll(/"id":"(2-ia-d+)"/g)].map(m => m[1])) : null;
-  const vivos = ids => VIVAS2 ? ids.filter(i => !/^2-ia-d{1,3}$/.test(i) || VIVAS2.has(i)) : ids;
+  // (17/10/2026) T1 y T2 rehechos: no se enlazan ids de IA que ya no existen en la app
+  const VIVAS = (T === 1 || T === 2) ? new Set([...fs.readFileSync(path.join(__dirname, '..', '..', 'test-oficial-conocimiento.html'), 'utf8').matchAll(new RegExp('"id":"(' + T + '-ia-\\d+)"', 'g'))].map(m => m[1])) : null;
+  const vivos = ids => VIVAS ? ids.filter(i => !new RegExp('^' + T + '-ia-\\d+$').test(i) || VIVAS.has(i)) : ids;
   const q = (ids) => { ids = vivos(ids); ids.forEach(i => usados.add(i)); return ` data-q="${ids.join(',')}"${ids.every(esIA) ? ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas"' : ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas (hay oficiales)"'}`; };
 
   // Respuesta enlazada a sus preguntas
