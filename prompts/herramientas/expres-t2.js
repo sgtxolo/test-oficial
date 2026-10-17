@@ -12,7 +12,7 @@ const V = require('./visuales-t2.js');
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
 
 // preguntas que el mapa no sitúa en un párrafo: { k: [ids] } → botón «🎯 … más de este artículo» en su ficha
-const EXTRAS = { 8: ['2-ia-78'], 12: ['2-17'], 27: ['2-45'] };   // (índices de ficha a 15/10/2026, tras añadir las fichas marcadas)
+const EXTRAS = { 12: ['2-17'], 27: ['2-45'] };   // (índices de ficha a 15/10/2026, tras añadir las fichas marcadas)
 // NIVELES (pautas 15/10/2026: «leyendo solo sale la pregunta del examen y no te enteras de nada», pero 1 h-1 h 30 min;
 // y lo importante = preguntas OFICIALES de la app + sus marcas del temario EXOF / EXAMEN / EX / asterisco):
 //   · artículo con alguna pregunta oficial o con alguna marca suya (data-ex) → frases con pregunta ENTERAS;

@@ -35,11 +35,14 @@ module.exports = function (T) {
     while ((m = re.exec(html))) { if (m[1] !== undefined) tit = m[1].replace(/<[^>]+>/g, ''); else out.push(tit); } return out; })();
   const usados = new Set();               // ids de preguntas enlazadas en el exprés
   const esIA = id => /-ia-/.test(id);
-  const q = (ids) => { ids.forEach(i => usados.add(i)); return ` data-q="${ids.join(',')}"${ids.every(esIA) ? ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas"' : ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas (hay oficiales)"'}`; };
+  // T2 (17/10/2026): sus IA viejas (2-ia-1…999) se borraron al rehacer el banco: no se enlazan ids que ya no existen
+  const VIVAS2 = T === 2 ? new Set([...fs.readFileSync(path.join(__dirname, '..', '..', 'test-oficial-conocimiento.html'), 'utf8').matchAll(/"id":"(2-ia-d+)"/g)].map(m => m[1])) : null;
+  const vivos = ids => VIVAS2 ? ids.filter(i => !/^2-ia-d{1,3}$/.test(i) || VIVAS2.has(i)) : ids;
+  const q = (ids) => { ids = vivos(ids); ids.forEach(i => usados.add(i)); return ` data-q="${ids.join(',')}"${ids.every(esIA) ? ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas"' : ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas (hay oficiales)"'}`; };
 
   // Respuesta enlazada a sus preguntas
   const REG = [];
-  const Rq = (txt, ids) => { const m = `<mark class="m-resp${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>`; REG.push({ t: txt.replace(/<[^>]+>/g, ''), m }); return m + txt + '</mark>'; };
+  const Rq = (txt, ids) => { ids = vivos(ids); if (!ids.length) return txt; const m = `<mark class="m-resp${ids.every(esIA) ? ' r-ia' : ''}"${q(ids)}>`; REG.push({ t: txt.replace(/<[^>]+>/g, ''), m }); return m + txt + '</mark>'; };
   // el coloreado automático (visuales-lib → reglas-color) reescribe las marcas sin atributos: se les devuelve su data-q
   // (en orden: la 1.ª aparición de un texto usa su 1.er registro, la 2.ª el 2.º…, para que dos respuestas iguales no se crucen)
   // Recorre TODAS las respuestas en orden: las que conservan su data-q (no pasaron por el coloreado) consumen su registro,
