@@ -4177,11 +4177,18 @@ body.coche-on .pt-btn{display:none!important}
 /* botón para plegar la barra de abajo (vista temario): plegada queda solo una píldora con ▶ y ▴ en un lado */
 #coche .c-plegar{display:none}
 #coche.c-pagina .c-plegar{display:block;position:absolute;right:12px;top:-38px;width:auto;min-width:64px;height:36px;padding:0 14px;border-radius:14px 14px 0 0;background:#2e9d5b;color:#fff;font-size:16px}
-#coche.c-pagina.c-plegado{left:auto;right:12px;bottom:max(12px,env(safe-area-inset-bottom));padding:6px;gap:6px;flex-direction:row;align-items:center;border:2px solid #2e9d5b;border-radius:40px;box-shadow:0 6px 20px rgba(0,0,0,.45)}
+#coche.c-pagina.c-plegado{left:auto;right:14px;bottom:max(9px,env(safe-area-inset-bottom));padding:3px;gap:4px;flex-direction:row;align-items:center;border:2px solid #2e9d5b;border-radius:40px;box-shadow:0 4px 14px rgba(0,0,0,.3)}
 #coche.c-pagina.c-plegado .c-info,#coche.c-pagina.c-plegado .c-peq,#coche.c-pagina.c-plegado [data-a="ant"],#coche.c-pagina.c-plegado [data-a="sig"]{display:none!important}
-#coche.c-pagina.c-plegado .c-fila .c-play{flex:none;width:64px;min-height:64px;height:64px;border-radius:50%;font-size:28px;padding:0}
-#coche.c-pagina.c-plegado .c-plegar{position:static;width:52px;min-width:0;height:52px;padding:0;border-radius:50%;background:#222;font-size:20px}
+#coche.c-pagina.c-plegado .c-fila .c-play{flex:none;width:46px;min-height:46px;height:46px;border-radius:50%;font-size:20px;padding:0}
+#coche.c-pagina.c-plegado .c-plegar{position:static;width:46px;min-width:0;height:46px;padding:0;border-radius:50%;background:#222;font-size:16px}
 body.coche-pag.coche-plegado{padding-bottom:40vh}
+/* móvil: el temario del modo coche usa todo el ancho de la pantalla (sin los márgenes de la app, del tema y de la ficha) */
+@media (max-width:720px){
+  body.coche-pag #app{padding-left:6px;padding-right:6px}
+  body.coche-pag .esquema.active{padding-left:0;padding-right:0}
+  body.coche-pag .ex-fb{padding-left:10px;padding-right:10px}
+  body.coche-pag .ex-fh{padding-left:10px;padding-right:10px}
+}
 /* iPhone en horizontal (poca altura) */
 @media (orientation:landscape) and (max-height:520px){
   #coche{gap:8px;padding:8px max(16px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
@@ -4221,7 +4228,7 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
   <div class="c-texto" aria-live="off"></div>
   <div class="c-info"></div>
   <div class="c-ctrl">
-    <div class="c-fila"><button type="button" data-a="ant" aria-label="Apartado anterior">⏮</button><button type="button" data-a="play" class="c-play" aria-label="Reproducir o pausar">▶</button><button type="button" data-a="sig" aria-label="Apartado siguiente">⏭</button></div>
+    <div class="c-fila"><button type="button" data-a="ant" aria-label="Apartado anterior">⏮</button><button type="button" data-a="play" class="c-play" aria-label="Reproducir o pausar">▶&#xFE0E;</button><button type="button" data-a="sig" aria-label="Apartado siguiente">⏭</button></div>
     <div class="c-fila c-peq" style="margin-top:12px"><button type="button" data-a="vmenos">− Más lento</button><span class="c-vel"></span><button type="button" data-a="vmas">Más rápido +</button></div>
     <div class="c-fila c-peq" style="margin-top:12px"><button type="button" data-a="inicio">⏮ Empezar el tema</button><button type="button" data-a="negro">🌑 Pantalla negra</button><button type="button" data-a="vista" class="c-vista">📖 Ver el temario</button><button type="button" data-a="salir" class="c-solo-pag">✕ Salir</button></div>
   </div>
@@ -4285,7 +4292,7 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
   function velPaso(d){ const v=document.getElementById('voz-vel'), i=Math.min(Math.max(v.selectedIndex+d,0),v.options.length-1); v.selectedIndex=i; v.dispatchEvent(new Event('change')); velTxt(); }
   window.vozHook=function(texto,pos,total){
     const A=api(); if(!A) return;
-    const play=q('[data-a="play"]'); play.textContent=A.estado()==='leyendo'?'⏸':'▶';
+    const play=q('[data-a="play"]'); play.textContent=A.estado()==='leyendo'?'⏸︎':'▶︎';   // ︎: en iPhone como símbolo, no como emoji azul
     if(texto==null) return;
     q('.c-texto').textContent=texto; q('.c-info').textContent=`Fragmento ${pos+1} de ${total}`;
     q('.c-tema').textContent='⚡ '+nombre(actual());
