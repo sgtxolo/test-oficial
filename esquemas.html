@@ -176,6 +176,8 @@ u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoratio
 
 /* ---- Título de artículo ---- */
 .articulo{margin-bottom:16px;border:1px solid var(--borde);border-radius:var(--radio-sm);overflow:hidden}
+.articulo{content-visibility:auto;contain-intrinsic-size:auto 420px}
+@media print{.articulo{content-visibility:visible}}
 .articulo-head{background:var(--panel-alt);padding:8px 14px;font-weight:800;font-size:14px;color:var(--verde-osc)}
 .articulo-body{padding:12px 14px;display:flex;gap:10px;align-items:flex-start}
 .articulo-body .txt{flex:1;font-size:14px;line-height:1.7}
@@ -3957,7 +3959,9 @@ render();
 (function(){
   const ric = window.requestIdleCallback ? f => requestIdleCallback(f, {timeout: 2000}) : f => setTimeout(f, 150);
   const paso = () => { const es = esquemas.find(e => { const d = document.getElementById(e.id); return d && d.dataset.lazy; }); if(!es) return; prepararTema(es.id); ric(paso); };
-  window.addEventListener('load', () => setTimeout(() => ric(paso), 1500));
+  /* en móvil/tablet no se montan por adelantado: cada tema se monta al abrirlo */
+  const tactil = matchMedia('(pointer:coarse)').matches || Math.min(screen.width, screen.height) < 900;
+  if(!tactil) window.addEventListener('load', () => setTimeout(() => ric(paso), 1500));
 })();
 if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").catch(function(){});});}
 // ---- LECTOR DE VOZ (Web Speech API) ----
