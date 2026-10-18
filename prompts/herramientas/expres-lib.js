@@ -36,7 +36,7 @@ module.exports = function (T) {
   const usados = new Set();               // ids de preguntas enlazadas en el exprés
   const esIA = id => /-ia-/.test(id);
   // (17/10/2026) T1 y T2 rehechos: no se enlazan ids de IA que ya no existen en la app
-  const VIVAS = (T === 1 || T === 2) ? new Set([...fs.readFileSync(path.join(__dirname, '..', '..', 'test-oficial-conocimiento.html'), 'utf8').matchAll(new RegExp('"id":"(' + T + '-ia-\\d+)"', 'g'))].map(m => m[1])) : null;
+  const VIVAS = (T === 1 || T === 2 || T === 3) ? new Set([...fs.readFileSync(path.join(__dirname, '..', '..', 'test-oficial-conocimiento.html'), 'utf8').matchAll(new RegExp('"id":"(' + T + '-ia-\\d+)"', 'g'))].map(m => m[1])) : null;
   const vivos = ids => VIVAS ? ids.filter(i => !new RegExp('^' + T + '-ia-\\d+$').test(i) || VIVAS.has(i)) : ids;
   const q = (ids) => { ids = vivos(ids); ids.forEach(i => usados.add(i)); return ` data-q="${ids.join(',')}"${ids.every(esIA) ? ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas"' : ' title="Doble clic (doble toque en el móvil) para repasar sus preguntas (hay oficiales)"'}`; };
 
