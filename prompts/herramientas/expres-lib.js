@@ -494,11 +494,23 @@ module.exports = function (T) {
     let s = fs.readFileSync(ESQ, 'utf8');
     if (!s.includes('.ex-plg{')) s = s.replace('<style id="expres-style">', () => '<style id="expres-style">\n' + CSS_PLG);
     if (!s.includes('.ex-sello-r{')) s = s.replace('<style id="expres-style">', () => '<style id="expres-style">\n.ex-sello-r{border-radius:10px!important;color:#1d6b4f!important;border-color:#1d6b4f!important;transform:none!important}\n[data-theme="dark"] .ex-sello-r{color:#7fd6ad!important;border-color:#7fd6ad!important}\n');
-    const m = s.match(new RegExp(`<script id="${SID}"(?: type="text/plain")?>window\\.${DEST}=(\\{[\\s\\S]*?\\});<\\/script>`));
-    const D = m ? JSON.parse(m[1]) : {};
-    D[T] = { html: htmlExpres, cob: cob.map(({ nombre, total, ok, pct }) => ({ nombre, total, ok, pct })) };
-    const tag = `<script id="${SID}"${DEST === 'EXPRES_T' ? ' type="text/plain"' : ''}>window.${DEST}=${JSON.stringify(D)};</script>`;
-    s = m ? s.replace(m[0], () => tag) : s.replace('<style id="expres-style">', () => tag + '\n<style id="expres-style">');
+    const ficha = { html: htmlExpres, cob: cob.map(({ nombre, total, ok, pct }) => ({ nombre, total, ok, pct })) };
+    if (DEST === 'EXPRES_T') {
+      // El Exprés vive en un archivo por tema (expres/tN.js); esquemas.html solo guarda la lista de temas (EXPRES_TEMAS)
+      if (!process.env.ENSAYO) {
+        fs.mkdirSync(path.join(RAIZ, 'expres'), { recursive: true });
+        fs.writeFileSync(path.join(RAIZ, 'expres', 't' + T + '.js'), '(window.EXPRES_T=window.EXPRES_T||{})[' + T + ']=' + JSON.stringify(ficha) + ';' + String.fromCharCode(10));
+        const lt = s.match(/window\.EXPRES_TEMAS=(\[[^\]]*\])/);
+        const lista = [...new Set([...(lt ? JSON.parse(lt[1]) : []), T])].sort((x, y) => x - y);
+        if (lt) s = s.replace(lt[0], () => 'window.EXPRES_TEMAS=' + JSON.stringify(lista));
+      }
+    } else {
+      const m = s.match(new RegExp(`<script id="${SID}"(?: type="text/plain")?>window\\.${DEST}=(\\{[\\s\\S]*?\\});<\\/script>`));
+      const D = m ? JSON.parse(m[1]) : {};
+      D[T] = ficha;
+      const tag = `<script id="${SID}">window.${DEST}=${JSON.stringify(D)};</script>`;
+      s = m ? s.replace(m[0], () => tag) : s.replace('<style id="expres-style">', () => tag + '\n<style id="expres-style">');
+    }
     if (!process.env.ENSAYO) fs.writeFileSync(ESQ, s); else if (process.env.VOLCADO) fs.writeFileSync(process.env.VOLCADO, htmlExpres);
     cob.forEach(c => console.log(`${c.nombre}: ${c.ok}/${c.total} preguntas enlazadas (${c.pct} % ponderado)${c.faltan.length ? ' · faltan: ' + c.faltan.join(', ') : ''}`));
     // respuestas fundidas por el coloreado (dos Rq seguidas separadas solo por un espacio): sus ids se pierden

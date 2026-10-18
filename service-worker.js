@@ -1,8 +1,18 @@
-const CACHE_NAME = "oposicion-cache-v146";
+const CACHE_NAME = "oposicion-cache-v147";
 const APP_SHELL = [
   "./test-oficial-conocimiento.html",
   "./test-oficial-ingles.html",
   "./esquemas.html",
+  "./expres/t1.js",
+  "./expres/t11.js",
+  "./expres/t12.js",
+  "./expres/t13.js",
+  "./expres/t14.js",
+  "./expres/t2.js",
+  "./expres/t3.js",
+  "./expres/t4.js",
+  "./expres/t5.js",
+  "./expres/t7.js",
   "./manifest-esquemas.json",
   "./manifest.json",
   "./icon-192.png",
@@ -33,7 +43,7 @@ self.addEventListener("fetch", event => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
-  const isHtml = event.request.mode === "navigate" || url.pathname.endsWith(".html");
+  const isHtml = event.request.mode === "navigate" || url.pathname.endsWith(".html") || url.pathname.includes("/expres/");
 
   if (url.pathname.endsWith("/esquemas.html")) {
     // Esquemas (10 MB): se abre al instante desde la copia guardada y se actualiza en segundo plano.
