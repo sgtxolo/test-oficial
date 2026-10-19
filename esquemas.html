@@ -4884,11 +4884,11 @@ body.embed #app{padding-top:4px}
   function montar(solo){
     (solo && solo.nodeType === 1 ? [solo] : document.querySelectorAll('.esquema')).forEach(esq => {
       const t = esq.id.replace('tema-', ''), tabla = H[t]; if (!tabla) return;
-      esq.querySelectorAll('.txt p, .txt li').forEach(el => {
+      esq.querySelectorAll('.txt p, .txt li, .ex-cont .ex-fb p').forEach(el => {
         if (!el.textContent.includes(ELIP) || el.querySelector('p, li')) return;      // solo el elemento más interno
         // nodos de texto con (…) y el texto «antes»/«después» de cada uno (segmentos entre (…), como en la herramienta)
         const nodos = []; const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
-        for (let n; (n = w.nextNode());) if (!n.parentNode.closest('.hueco-txt, .ex-p')) nodos.push(n);
+        for (let n; (n = w.nextNode());) if (!n.parentNode.closest('.hueco, .hueco-txt, .ex-p')) nodos.push(n);
         const partes = nodos.map(n => n.nodeValue).join('').split(ELIP);
         let k = 0;                                                                   // índice del (…) en el elemento
         nodos.forEach(n => {
@@ -4927,6 +4927,8 @@ body.embed #app{padding-top:4px}
       return acc + (h ? ' ' + h + ' ' : ELIP) + p;
     }, '');
   };
+  /* Exprés: sus (…) se abren igual; el contenedor .ex-cont se monta después, así que se vigila */
+  new MutationObserver(ms => { const vistos = new Set(); ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1 && (n.classList.contains('ex-cont') || n.querySelector('.ex-cont'))) { const e = n.closest('.esquema'); if (e && !vistos.has(e)) { vistos.add(e); montar(e); } } })); }).observe(document.body, {childList: true, subtree: true});
   if (window.alPrepararTema) window.alPrepararTema(70, montar);
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', montar); else montar();
 })();
@@ -6683,6 +6685,62 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
     const dest=arts[Math.max(0,Math.min(arts.length-1,dir>0?i:i-2))];
     if(dest){ ev.preventDefault(); dest.style.scrollMarginTop='90px'; dest.scrollIntoView({behavior:'smooth',block:'start'}); }
   });
+})();
+</script>
+
+<style id="style-ex-extra">
+/* Tipo de letra del temario oficial de Prefortia: sans condensada, justificada, títulos de artículo en rojo */
+.ex-fb,.txt,.articulo-head,.ex-fh{font-family:"Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif;letter-spacing:-.005em}
+.ex-fb p,.txt p,.txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
+.ex-fh,.articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
+.ex-fh{cursor:pointer}.ex-fh:hover{text-decoration:underline}
+.ex-fb .ex-p{cursor:pointer}
+.ex-rec-b{display:inline-block;margin:6px 0 4px;padding:5px 12px;border:1.5px solid #c8102e;color:#c8102e;background:transparent;border-radius:16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.ex-rec-b.on{background:#c8102e;color:#fff}
+.ex-rec{margin:4px 0 8px;padding:8px 12px;border-left:4px solid #c8102e;background:rgba(200,16,46,.06);border-radius:6px;font-size:14px;line-height:1.45}
+.ex-rec ul{margin:4px 0 0 18px;padding:0}.ex-rec li{margin:3px 0}.ex-rec b.k{color:#c8102e}
+.ex-rec small{display:block;opacity:.6;margin-top:4px}
+</style>
+<script id="script-ex-extra">
+(function(){
+  const qs=(r,s)=>[...r.querySelectorAll(s)];
+  const norm=t=>(t||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+  const cab=h=>norm(h.firstChild&&h.firstChild.textContent||h.textContent);
+  /* 1) Pulsar el título de un artículo del Exprés -> se abre ese artículo en 📚 Temario entero */
+  document.addEventListener('click',e=>{
+    const h=e.target.closest&&e.target.closest('.ex-fh'); if(!h||e.target.closest('button')) return;
+    const cont=h.closest('.ex-cont'), esq=h.closest('.esquema'); if(!cont||!esq) return;
+    const k=cab(h), nth=qs(cont,'.ex-fh').filter(x=>cab(x)===k).indexOf(h);
+    window.expresActivar&&window.expresActivar('todo');
+    setTimeout(()=>{ const a=qs(esq,'.articulo').filter(x=>{const hh=x.querySelector('.articulo-head');return hh&&norm(hh.firstChild.textContent)===k;})[nth]||null;
+      if(!a) return; a.scrollIntoView({block:'start'}); a.classList.remove('flash'); void a.offsetWidth; a.classList.add('flash'); },120);
+  });
+  /* 2) Pulsar el sello EX / EXOF -> solo la pregunta oficial de ese apartado */
+  document.addEventListener('click',e=>{
+    const sp=e.target.closest&&e.target.closest('.ex-fb .ex-p'); if(!sp||sp.classList.contains('ex-r')||sp.classList.contains('ex-ast')) return;
+    const p=sp.closest('p'); if(!p) return;
+    let ids=qs(p,'[data-q]').flatMap(m=>m.dataset.q.split(',')).filter(i=>i&&!/-ia-/.test(i));
+    if(!ids.length){ const f=sp.closest('.ex-ficha'); ids=qs(f,'[data-q]').flatMap(m=>m.dataset.q.split(',')).filter(i=>i&&!/-ia-/.test(i)); }
+    ids=[...new Set(ids)]; if(!ids.length){ return; }
+    e.preventDefault(); e.stopPropagation();
+    location.href='test-oficial-conocimiento.html#repasar='+encodeURIComponent(ids.join(','))+'&ex=1';
+  },true);
+  /* 3) Recordatorio al final de cada artículo: plazos, mayorías, cifras, excepciones y autoridades del propio texto */
+  const RX=/plazo|d[ií]as?|mes(?:es)?|a[ñn]os?|horas?|mayor[ií]a|unanimidad|por ciento|%|dos tercios|tres quintos|tres cuartos|mayor[ií]a absoluta|m[ií]nimo|m[aá]ximo|euros?|€|votos|miembros|en ning[uú]n caso|salvo|excepto|no podr[aá]n?|sin perjuicio|[uú]nicamente|exclusivamente/i;
+  function recordatorio(fb){
+    if(fb.querySelector('.ex-rec-b')) return;
+    const bul=[]; qs(fb,'p').forEach(p=>{ const t=p.textContent.replace(/\s+/g,' ').replace(/(EXOF|EX)\s/g,' ').trim();
+      (t.match(/[^.;:]+[.;:]?/g)||[]).forEach(fr=>{ fr=fr.trim(); if(fr.length>25&&RX.test(fr)&&bul.length<7) bul.push(fr.length>230?fr.slice(0,227)+'…':fr); }); });
+    const aut=[...new Set(qs(fb,'mark.m-autoridad').map(m=>m.textContent.replace(/\s+/g,' ').trim()).filter(x=>x.length>3))].slice(0,8);
+    if(!bul.length&&!aut.length) return;
+    const b=document.createElement('button'); b.type='button'; b.className='ex-rec-b'; b.textContent='💡 Recordatorio / trampas';
+    const d=document.createElement('div'); d.className='ex-rec'; d.style.display='none';
+    const esc=x=>x.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+    d.innerHTML=(bul.length?'<b class="k">Fíjate en:</b><ul>'+bul.map(x=>'<li>'+esc(x).replace(RX,m=>'<b class="k">'+m+'</b>')+'</li>').join('')+'</ul>':'')+(aut.length?'<div style="margin-top:6px"><b class="k">Quién:</b> '+aut.map(esc).join(' · ')+'</div>':'')+'<small>Resumen automático del propio artículo (plazos, mayorías, cifras y excepciones).</small>';
+    b.onclick=()=>{ const on=d.style.display==='none'; d.style.display=on?'':'none'; b.classList.toggle('on',on); };
+    fb.append(b,d);
+  }
+  new MutationObserver(ms=>{ const v=new Set(); ms.forEach(m=>m.addedNodes.forEach(n=>{ if(n.nodeType!==1) return; const c=n.classList.contains('ex-cont')?n:(n.querySelector&&n.querySelector('.ex-cont')); if(c&&!v.has(c)){ v.add(c); setTimeout(()=>qs(c,'.ex-fb').forEach(recordatorio),80); } })); }).observe(document.body,{childList:true,subtree:true});
 })();
 </script>
 </body>
