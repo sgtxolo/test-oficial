@@ -16,7 +16,7 @@ const limpia = t => t.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/\
 const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const reEsc = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const SUF = { bis: 'bis', ter: 'ter', quater: 'quáter', quinquies: 'quinquies', sexies: 'sexies', septies: 'septies', octies: 'octies', nonies: 'nonies' };
-const RE_ART = /^(Artículo (\d+(?: (?:bis|ter|quáter|quinquies|sexies|septies|octies|nonies))?)|Disposición (?:adicional|transitoria|derogatoria|final) [a-zéáíóú]+)\.\s*(.*)$/;
+const RE_ART = /^((?:Artículo|Apartado) (\d+(?: (?:bis|ter|quáter|quinquies|sexies|septies|octies|nonies))?)|Disposición (?:adicional|transitoria|derogatoria|final) [a-zéáíóú]+)\.\s*(.*)$/;
 
 // texto limpio: artículos y sus unidades (apartados / letras), una por línea; las líneas con varias letras se parten
 function fuente(rel, tituloEnLinea) {
@@ -62,7 +62,7 @@ module.exports = function (C) {
   }
   const sitios = [], fallos = [];
   for (const x of MARCAS) { if (/^R/.test(x.tipo)) continue; const r = busca(x.norma, x.spec, x.txt); if (!r) fallos.push(`${x.linea} ${x.norma} ${x.spec}${x.txt ? '~' + x.txt : ''}:${x.tipo}`); else sitios.push({ ...r, norma: x.norma, tipo: x.tipo }); }
-  for (const r of C.RS) { const x = busca(r[1], '', r[4]); if (!x) fallos.push('R ' + r[0]); else sitios.push({ ...x, norma: r[1], tipo: r[0] }); }
+  for (const r of C.RS) { if (!r[4]) continue; const x = busca(r[1], '', r[4]); if (!x) fallos.push('R ' + r[0]); else sitios.push({ ...x, norma: r[1], tipo: r[0] }); }
   console.log(`marcas: ${MARCAS.filter(m => !/^R/.test(m.tipo)).length} · situadas ${sitios.length} (con ${C.RS.length} R) · no encontradas: ${fallos.join(' | ') || 'ninguna'}`);
 
   let s = fs.readFileSync(F, 'utf8');
