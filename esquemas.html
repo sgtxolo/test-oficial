@@ -5825,7 +5825,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   function imprimir(){
     const esq=document.querySelector('.esquema.active'); if(!esq){ window.print(); return; }
     const host=document.createElement('div'); host.id='print-host';
-    const cl=esq.cloneNode(true); if(['tema-1','tema-2'].includes(esq.id)) cl.dataset.fuente='1'; cl.removeAttribute('id');
+    const cl=esq.cloneNode(true); if(["tema-1","tema-2","tema-3"].includes(esq.id)) cl.dataset.fuente='1'; cl.removeAttribute('id');
     host.appendChild(cl); document.body.appendChild(host);
     void cl.offsetHeight;                                    // maqueta la copia a 716 px
     if(window.pmRenderShapes) window.pmRenderShapes(cl,esq.id);
@@ -6689,13 +6689,13 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
 </script>
 
 <style id="style-ex-extra">
-/* Tipo de letra del temario oficial (PRUEBA en los temas 1 y 2; para otro tema, copiar sus reglas con su #tema-N) */
-:is(#tema-1,#tema-2) .ex-fb,:is(#tema-1,#tema-2) .txt,:is(#tema-1,#tema-2) .articulo-head,:is(#tema-1,#tema-2) .ex-fh{font-family:"Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif;letter-spacing:-.005em}
-:is(#tema-1,#tema-2) .ex-fb p,:is(#tema-1,#tema-2) .txt p,:is(#tema-1,#tema-2) .txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
-:is(#tema-1,#tema-2) .ex-fh,:is(#tema-1,#tema-2) .articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
+/* Tipo de letra del temario oficial (PRUEBA en los temas 1, 2 y 3; para otro tema, copiar sus reglas con su #tema-N) */
+:is(#tema-1,#tema-2,#tema-3) .ex-fb,:is(#tema-1,#tema-2,#tema-3) .txt,:is(#tema-1,#tema-2,#tema-3) .articulo-head,:is(#tema-1,#tema-2,#tema-3) .ex-fh{font-family:"Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif;letter-spacing:-.005em}
+:is(#tema-1,#tema-2,#tema-3) .ex-fb p,:is(#tema-1,#tema-2,#tema-3) .txt p,:is(#tema-1,#tema-2,#tema-3) .txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
+:is(#tema-1,#tema-2,#tema-3) .ex-fh,:is(#tema-1,#tema-2,#tema-3) .articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
 .ex-fh{cursor:pointer}.ex-fh:hover{text-decoration:underline}
 .ex-fb .ex-p{cursor:pointer}
-@media (max-width:700px){:is(#tema-1,#tema-2) .ex-fb p,:is(#tema-1,#tema-2) .txt p,:is(#tema-1,#tema-2) .txt li{font-size:16px}}
+@media (max-width:700px){:is(#tema-1,#tema-2,#tema-3) .ex-fb p,:is(#tema-1,#tema-2,#tema-3) .txt p,:is(#tema-1,#tema-2,#tema-3) .txt li{font-size:16px}}
 .ex-rec-b{display:inline-block;margin:6px 0 4px;padding:5px 12px;border:1.5px solid #c8102e;color:#c8102e;background:transparent;border-radius:16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .ex-rec-b.on{background:#c8102e;color:#fff}
 .ex-rec{margin:4px 0 8px;padding:8px 12px;border-left:4px solid #c8102e;background:rgba(200,16,46,.06);border-radius:6px;font-size:14px;line-height:1.45}
