@@ -274,3 +274,17 @@ Pautas del usuario: «déjalo como estaba antes, con los puntitos que se abren, 
 
 ### Modos del esquema
 Botones: **📚 Temario entero · ⚡ Exprés**. El ⭐ Solo oficiales y el 🎯 Para examen se QUITARON (16/10/2026: «es una tontería, va a hacer tipo test todo el rato y ocupa espacio»). No los vuelvas a crear.
+
+## Cambios del 19/10/2026 (noche; hechos y probados en los Temas 1 y 2, activados en 3, 4, 5, 7 y 11-14: aplícalos igual en cada tema nuevo)
+
+Son reglas de la APP (código general en `esquemas.html`, bloques `script-huecos` y `script-ex-extra`, y `test-oficial-conocimiento.html`). Un tema nuevo con Exprés las recibe solo; solo hay que comprobar lo siguiente.
+
+1. **Simulacro sin tiempo** (app de conocimientos): modalidad `simulacroLibre`, mismo banco y distribución que el simulacro (105 preguntas), sin cronómetro; los tests guardados conservan `esSimulacro`.
+2. **«(…)» del Exprés desplegables**: se abren igual que en el temario entero. Texto de `window.HUECOS` por clave antes|después; si no está (recortes que crea el propio Exprés), se busca en el temario entero del mismo tema (`rescatar`). Un Exprés sin «(…)» (T7, T13, T14) no necesita tabla. Tras cambiar un esquema, volver a ejecutar `prompts/herramientas/huecos.js`.
+3. **Título de artículo del Exprés → artículo completo**: pulsar el `.ex-fh` cambia a 📚 Temario entero y salta a ese artículo (se emparejan por el texto del título; el título debe ser idéntico en el Exprés y en el temario entero).
+4. **Sello EX / EXOF → su pregunta**: pulsarlo abre el test SOLO con la pregunta oficial de ese apartado (`#repasar=<id>&ex=1`). Por eso cada apartado con sello debe tener su pregunta oficial enlazada (`data-q`). ✱ y R no navegan.
+5. **Botón «💡 Recordatorio / trampas»** al final de cada artículo del Exprés: resumen AUTOMÁTICO del propio artículo (frases con plazos, mayorías, cifras, excepciones y autoridades). No es una ficha a mano; para artículos clave (mayoría cualificada, plazos…) se pueden escribir fichas propias aparte. No sale en el PDF.
+6. **Tipografía del temario oficial** (Myriad Condensed; en su defecto Arial Narrow / Roboto Condensed): justificada, 15 px en pantalla (16 px en móvil), títulos de artículo en rojo y mayúsculas. PDF a 13 px, interlineado 1,28 (Tema 2: 34 → 26 págs con 12,5 px). Se activa por tema en el CSS (`:is(#tema-1,#tema-2,…)`) y en `data-fuente` de la copia de impresión; añadir el tema nuevo en ambos sitios.
+7. **Comprobación al terminar cada tema** (en el navegador): letra, nº de «(…)» que se abren / no se abren, título → artículo, un sello EX → una sola pregunta, recordatorios presentes. Subir la versión de caché del service worker.
+
+Pendientes: temas 6, 8, 9, 10, 15 y 16 sin Exprés (empezar por el 6; hacen falta su temario subrayado y el oficial); probar el simulacro sin tiempo y la letra en el móvil.
