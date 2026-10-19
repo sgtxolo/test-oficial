@@ -5825,7 +5825,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   function imprimir(){
     const esq=document.querySelector('.esquema.active'); if(!esq){ window.print(); return; }
     const host=document.createElement('div'); host.id='print-host';
-    const cl=esq.cloneNode(true); cl.removeAttribute('id');
+    const cl=esq.cloneNode(true); if(esq.id==='tema-2') cl.dataset.fuente='1'; cl.removeAttribute('id');
     host.appendChild(cl); document.body.appendChild(host);
     void cl.offsetHeight;                                    // maqueta la copia a 716 px
     if(window.pmRenderShapes) window.pmRenderShapes(cl,esq.id);
@@ -6689,22 +6689,24 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
 </script>
 
 <style id="style-ex-extra">
-/* Tipo de letra del temario oficial de Prefortia: sans condensada, justificada, títulos de artículo en rojo */
-.ex-fb,.txt,.articulo-head,.ex-fh{font-family:"Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif;letter-spacing:-.005em}
-.ex-fb p,.txt p,.txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
-.ex-fh,.articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
+/* Tipo de letra del temario oficial (PRUEBA solo en el Tema 2; para otro tema, copiar sus reglas con su #tema-N) */
+#tema-2 .ex-fb,#tema-2 .txt,#tema-2 .articulo-head,#tema-2 .ex-fh{font-family:"Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif;letter-spacing:-.005em}
+#tema-2 .ex-fb p,#tema-2 .txt p,#tema-2 .txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
+#tema-2 .ex-fh,#tema-2 .articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
 .ex-fh{cursor:pointer}.ex-fh:hover{text-decoration:underline}
 .ex-fb .ex-p{cursor:pointer}
-@media (max-width:700px){.ex-fb p,.txt p,.txt li{font-size:16px}}
+@media (max-width:700px){#tema-2 .ex-fb p,#tema-2 .txt p,#tema-2 .txt li{font-size:16px}}
 .ex-rec-b{display:inline-block;margin:6px 0 4px;padding:5px 12px;border:1.5px solid #c8102e;color:#c8102e;background:transparent;border-radius:16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .ex-rec-b.on{background:#c8102e;color:#fff}
 .ex-rec{margin:4px 0 8px;padding:8px 12px;border-left:4px solid #c8102e;background:rgba(200,16,46,.06);border-radius:6px;font-size:14px;line-height:1.45}
 .ex-rec ul{margin:4px 0 0 18px;padding:0}.ex-rec li{margin:3px 0}.ex-rec b.k{color:#c8102e}
 .ex-rec small{display:block;opacity:.6;margin-top:4px}
 /* PDF: letra más pequeña e interlineado corto (como el temario oficial) para que salgan menos folios */
-#print-host .ex-fb p,#print-host .txt p,#print-host .txt li{font-size:13px!important;line-height:1.28!important;margin:2px 0!important}
-#print-host .ex-fb{padding:3px 8px 4px!important;line-height:1.28!important}
-#print-host .ex-fh,#print-host .articulo-head{font-size:13px!important;padding:4px 8px!important}
+#print-host [data-fuente] .ex-fb,#print-host [data-fuente] .txt,#print-host [data-fuente] .articulo-head,#print-host [data-fuente] .ex-fh{font-family:"Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif!important;text-align:justify}
+#print-host [data-fuente] .ex-fh,#print-host [data-fuente] .articulo-head{color:#c8102e;text-transform:uppercase}
+#print-host [data-fuente] .ex-fb p,#print-host [data-fuente] .txt p,#print-host [data-fuente] .txt li{font-size:13px!important;line-height:1.28!important;margin:2px 0!important}
+#print-host [data-fuente] .ex-fb{padding:3px 8px 4px!important;line-height:1.28!important}
+#print-host [data-fuente] .ex-fh,#print-host [data-fuente] .articulo-head{font-size:13px!important;padding:4px 8px!important}
 #print-host .ex-rec-b,#print-host .ex-rec{display:none!important}
 </style>
 <script id="script-ex-extra">
