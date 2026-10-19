@@ -1,0 +1,35 @@
+// Tema 8 (LOPJ) · marcas a mano del temario escaneado 08-08-2026 (marcas-t8.txt) + fichas RECUERDA R1-R22 (págs. 105-108).
+// Uso: node prompts/herramientas/tema8/marcas-t8.js [--dry]
+const N = 'LOPJ';
+require('../marcas-lib.js')({
+  T: 8,
+  normas: { LOPJ: { txt: 'tema8/lopj.txt', bloque: 'T8_LOPJ', nombre: 'LO del Poder Judicial' } },
+  marcas: 'tema8/marcas-t8.txt',
+  RS: [
+    ['R1', N, 'El ejercicio de la potestad jurisdiccional, juzgando y haciendo ejecutar lo juzgado, corresponde:', 'exclusivamente a los Juzgados y Tribunales determinados en las Leyes y en los tratados internacionales.', 'El ejercicio de la potestad jurisdiccional, juzgando y haciendo ejecutar lo juzgado'],
+    ['R2', N, 'Cuando los Tribunales decidan plantear una cuestión prejudicial europea lo harán de conformidad con la jurisprudencia del Tribunal de Justicia de la Unión Europea y, en todo caso:', 'mediante auto, previa audiencia de las partes.', 'Cuando los Tribunales decidan plantear una cuestión prejudicial europea'],
+    ['R3', N, 'Los Jueces y Tribunales no aplicarán los reglamentos o cualquier otra disposición contrarios:', 'a la Constitución, a la ley o al principio de jerarquía normativa.', 'no aplicarán los reglamentos o cualquier otra disposición contrarios'],
+    ['R4', N, 'La jurisdicción es:', 'improrrogable.', 'La jurisdicción es improrrogable'],
+    ['R5', N, 'Se prohíben:', 'los Tribunales de Honor en la Administración de Justicia.', 'Se prohíben los Tribunales de Honor'],
+    ['R6', N, 'En aquellas materias en que una norma expresamente lo permita, los Tribunales españoles serán competentes cuando las partes, con independencia de su domicilio, se hayan sometido:', 'expresa o tácitamente a ellos.', 'En aquellas materias en que una norma expresamente lo permita, los Tribunales españoles serán competentes'],
+    ['R7', N, 'En el orden contencioso-administrativo será competente, en todo caso, la jurisdicción española cuando la pretensión que se deduzca se refiera a:', 'disposiciones de carácter general o a actos de las Administraciones Públicas españolas.', 'En el orden contencioso-administrativo será competente, en todo caso, la jurisdicción española'],
+    ['R8', N, 'El Estado se organiza territorialmente, a efectos judiciales, en:', 'municipios, partidos, provincias y Comunidades Autónomas.', 'El Estado se organiza territorialmente, a efectos judiciales'],
+    ['R9', N, 'La creación de Secciones y Juzgados corresponderá al Gobierno cuando no suponga alteración de la demarcación judicial, oídos preceptivamente:', 'la Comunidad Autónoma afectada y el Consejo General del Poder Judicial.', 'no suponga alteración de la demarcación judicial'],
+    ['R10', N, 'Conocerá además cada una de las Salas del Tribunal Supremo de las recusaciones que se interpusieren contra los Magistrados que las compongan, y de las cuestiones de competencia entre Juzgados o Tribunales:', 'del propio orden jurisdiccional que no tengan otro superior común.', 'que no tengan otro superior común'],
+    ['R11', N, 'La superior dirección del Gabinete Técnico será ejercida por:', 'el Presidente del Tribunal Supremo o, en caso de delegación de éste, por el Vicepresidente del Tribunal Supremo.', 'superior dirección del Gabinete Técnico'],
+    ['R12', N, 'El Presidente de la Audiencia Nacional, que tendrá la consideración de Presidente de Sala del Tribunal Supremo, es:', 'el Presidente nato de todas sus Salas.', 'Presidente nato de todas sus Salas'],
+    ['R13', N, 'El Tribunal Superior de Justicia se compondrá de:', 'un Presidente, que lo será también de su Sala de lo Civil y Penal, y tendrá la consideración de Magistrado del Tribunal Supremo mientras desempeñe el cargo; de los Presidentes de Sala y de los Magistrados que determine la ley para cada una de las Salas y, en su caso, de las Secciones que puedan dentro de ellas crearse.', 'tendrá la consideración de Magistrado del Tribunal Supremo mientras desempeñe el cargo'],
+    ['R14', N, 'El juicio del Jurado se celebrará en el ámbito de:', 'la Audiencia Provincial u otros Tribunales y en la forma que establezca la ley.', 'El juicio del Jurado se celebrará'],
+    ['R15', N, 'Sin perjuicio de lo previsto en la legislación vigente sobre demarcación y planta judicial el Gobierno, a propuesta del Consejo General del Poder Judicial y en su caso, con informe de la Comunidad Autónoma con competencias en materia de Justicia, podrá establecer mediante real decreto que:', 'los Juzgados de Violencia sobre la Mujer que se determinen extiendan su jurisdicción a dos o más partidos dentro de la misma provincia.', 'Secciones de Violencia sobre la Mujer que extiendan su jurisdicción a dos o más partidos'],
+    ['R16', N, 'El Gobierno establecerá la sede de los Juzgados de Vigilancia Penitenciaria, previa audiencia:', 'de la Comunidad Autónoma afectada y del Consejo General del Poder Judicial.', 'establecerá la sede de estas Secciones, previa audiencia'],
+    ['R17', N, 'Los Jueces de Paz y sus sustitutos serán nombrados:', 'para un período de cuatro años por la Sala de Gobierno del Tribunal Superior de Justicia correspondiente.', 'Los Jueces de Paz y sus sustitutos serán nombrados'],
+    ['R18', N, 'Los Jueces y Magistrados sólo podrán ser jubilados:', 'por edad o por incapacidad permanente para el ejercicio de sus funciones.', 'Los Jueces y Magistrados sólo podrán ser jubilados'],
+    ['R19', N, 'Los Jueces y Magistrados en servicio activo sólo podrán ser detenidos:', 'por orden de Juez competente o en caso de flagrante delito.', 'en servicio activo sólo podrán ser detenidos'],
+    ['R20', N, 'El juicio de responsabilidad penal contra Jueces y Magistrados podrá incoarse por:', 'providencia del Tribunal competente o en virtud de querella del Ministerio Fiscal, o del perjudicado u ofendido, o mediante el ejercicio de la acción popular.', 'El juicio de responsabilidad penal contra Jueces y Magistrados'],
+    ['R21', N, 'Los Abogados, Procuradores y Graduados Sociales están sujetos en el ejercicio de su profesión a responsabilidad:', 'civil, penal y disciplinaria, según proceda.', 'están sujetos en el ejercicio de su profesión a responsabilidad'],
+    ['R22', N, 'En las funciones de investigación penal, la Policía Judicial actuará bajo la dirección de:', 'los juzgados y tribunales y del Ministerio Fiscal.', 'En las funciones de investigación penal, la Policía Judicial actuará'],
+  ],
+  recTitulo: 'RECUERDA DEL TEMARIO — fichas R1 a R22 (pregunta → respuesta), tal como vienen en las últimas páginas de tu temario',
+  grupos: [['LO 6/1985 del Poder Judicial — R1 a R22', () => true]],
+  ensamblaje: ['    + T8.lopj\n', '    + T8.lopj + T8.rec\n'],
+});
