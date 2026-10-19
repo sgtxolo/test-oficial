@@ -4881,6 +4881,15 @@ body.embed #app{padding-top:4px}
     s.textContent = (/^[.,;:)]/.test(h) ? '' : ' ') + h + (sg && sg.nodeType === 3 && !/^[\s.,;:)]/.test(sg.nodeValue) ? ' ' : '');
     el.after(s); el.classList.add('abierto'); el.setAttribute('aria-expanded', 'true');
   }
+  /* (…) que el propio Exprés crea al recortar un apartado: su texto se busca en el temario entero del mismo tema */
+  function rescatar(esq, a, d){
+    if (a.length < 12) return null;
+    if (!esq._hx){ esq._hx = []; esq.querySelectorAll('.txt p, .txt li').forEach(p => { let t = ''; const w = document.createTreeWalker(p, NodeFilter.SHOW_TEXT); for (let n; (n = w.nextNode());) if (!n.parentNode.closest('.hueco-txt')) t += n.nodeValue; let norm = '', map = []; for (let i = 0; i < t.length; i++) for (const ch of clave(t[i])){ norm += ch; map.push(i); } esq._hx.push({t, norm, map}); }); }
+    for (const x of esq._hx){ const i = x.norm.indexOf(a); if (i < 0) continue; const ini = x.map[i + a.length - 1] + 1; let fin = x.t.length;
+      if (d.length >= 8){ const j = x.norm.indexOf(d, i + a.length); if (j < 0) continue; fin = x.map[j]; }
+      const r = x.t.slice(ini, fin).trim(); return (r.length > 1 && r.length < 1500 && r !== ELIP) ? r : null; }
+    return null;
+  }
   function montar(solo){
     (solo && solo.nodeType === 1 ? [solo] : document.querySelectorAll('.esquema')).forEach(esq => {
       const t = esq.id.replace('tema-', ''), tabla = H[t]; if (!tabla) return;
@@ -4898,8 +4907,9 @@ body.embed #app{padding-top:4px}
             if (tr) frag.appendChild(document.createTextNode(tr));
             if (i < trozos.length - 1){
               const key = clave(partes[k]).slice(-40) + '|' + clave(partes[k + 1]).slice(0, 40); k++;
-              if (tabla[key]){
-                const s = document.createElement('span'); s.className = 'hueco'; s.textContent = ELIP; s.dataset.h = tabla[key];
+              const fbk = tabla[key] ? null : (el.closest('.ex-cont') ? rescatar(esq, clave(partes[k - 1]).slice(-40), clave(partes[k]).slice(0, 40)) : null);
+              if (tabla[key] || fbk){
+                const s = document.createElement('span'); s.className = 'hueco'; s.textContent = ELIP; s.dataset.h = tabla[key] || fbk;
                 s.tabIndex = 0; s.setAttribute('role', 'button'); s.setAttribute('aria-expanded', 'false'); frag.appendChild(s);
               } else frag.appendChild(document.createTextNode(ELIP));
             }
@@ -5825,7 +5835,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   function imprimir(){
     const esq=document.querySelector('.esquema.active'); if(!esq){ window.print(); return; }
     const host=document.createElement('div'); host.id='print-host';
-    const cl=esq.cloneNode(true); if(["tema-1","tema-2","tema-3"].includes(esq.id)) cl.dataset.fuente='1'; cl.removeAttribute('id');
+    const cl=esq.cloneNode(true); if(["tema-1","tema-2","tema-3","tema-4","tema-5","tema-7","tema-11","tema-12","tema-13","tema-14"].includes(esq.id)) cl.dataset.fuente='1'; cl.removeAttribute('id');
     host.appendChild(cl); document.body.appendChild(host);
     void cl.offsetHeight;                                    // maqueta la copia a 716 px
     if(window.pmRenderShapes) window.pmRenderShapes(cl,esq.id);
@@ -6690,12 +6700,12 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
 
 <style id="style-ex-extra">
 /* Tipo de letra del temario oficial (PRUEBA en los temas 1, 2 y 3; para otro tema, copiar sus reglas con su #tema-N) */
-:is(#tema-1,#tema-2,#tema-3) .ex-fb,:is(#tema-1,#tema-2,#tema-3) .txt,:is(#tema-1,#tema-2,#tema-3) .articulo-head,:is(#tema-1,#tema-2,#tema-3) .ex-fh{font-family:"Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif;letter-spacing:-.005em}
-:is(#tema-1,#tema-2,#tema-3) .ex-fb p,:is(#tema-1,#tema-2,#tema-3) .txt p,:is(#tema-1,#tema-2,#tema-3) .txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
-:is(#tema-1,#tema-2,#tema-3) .ex-fh,:is(#tema-1,#tema-2,#tema-3) .articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
+:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fb,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .txt,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .articulo-head,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fh{font-family:"Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif;letter-spacing:-.005em}
+:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fb p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .txt p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
+:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fh,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
 .ex-fh{cursor:pointer}.ex-fh:hover{text-decoration:underline}
 .ex-fb .ex-p{cursor:pointer}
-@media (max-width:700px){:is(#tema-1,#tema-2,#tema-3) .ex-fb p,:is(#tema-1,#tema-2,#tema-3) .txt p,:is(#tema-1,#tema-2,#tema-3) .txt li{font-size:16px}}
+@media (max-width:700px){:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fb p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .txt p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-7,#tema-11,#tema-12,#tema-13,#tema-14) .txt li{font-size:16px}}
 .ex-rec-b{display:inline-block;margin:6px 0 4px;padding:5px 12px;border:1.5px solid #c8102e;color:#c8102e;background:transparent;border-radius:16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .ex-rec-b.on{background:#c8102e;color:#fff}
 .ex-rec{margin:4px 0 8px;padding:8px 12px;border-left:4px solid #c8102e;background:rgba(200,16,46,.06);border-radius:6px;font-size:14px;line-height:1.45}
