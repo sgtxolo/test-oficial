@@ -18,7 +18,11 @@ module.exports = function (C) {
     while (guard++ < 3 && q.o[q.c].length >= Math.max(...q.o.filter((_, i) => i !== q.c).map(x => x.length))) {
       const idx = q.o.map((x, i) => i).filter(i => i !== q.c).sort((x, y) => long(y) - long(x))[0];
       q.o[idx] = q.o[idx].replace(/[.]$/, '') + COLA[ci++ % COLA.length] + '.'; } });
-  const malas = C.Q.filter(q => !fuente.includes(nrm(q.t))).map(q => q.a);
+  // la cita se limpia (sin numeración de apartado ni artículo delante) y se valida por tramos: cada tramo entre «(…)» debe aparecer literal
+  const limpiaCita = t => t.replace(/^\s*(?:\d+(?:\.\d+)*\.\s*|\d+\)\s+|[a-z]\)\s+)/i, '').trim();
+  C.Q.forEach(q => { q.t = limpiaCita(q.t); });
+  const citaOk = t => t.split('(…)').map(nrm).filter(x => x.length >= 12).every(x => fuente.includes(x)) && nrm(t).length >= 12;
+  const malas = C.Q.filter(q => !citaOk(q.t)).map(q => q.a);
   const largas = C.Q.filter(q => q.o[q.c].length >= Math.max(...q.o.filter((_, i) => i !== q.c).map(x => x.length))).map(q => q.a);
   const mal4 = C.Q.filter(q => q.o.length !== 4 || new Set(q.o).size !== 4).map(q => q.a);
   if (malas.length || largas.length || mal4.length) {
