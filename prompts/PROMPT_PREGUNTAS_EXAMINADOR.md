@@ -288,3 +288,8 @@ Son reglas de la APP (código general en `esquemas.html`, bloques `script-huecos
 7. **Comprobación al terminar cada tema** (en el navegador): letra, nº de «(…)» que se abren / no se abren, título → artículo, un sello EX → una sola pregunta, recordatorios presentes. Subir la versión de caché del service worker.
 
 Pendientes: temas 6, 8, 9, 10, 15 y 16 sin Exprés (empezar por el 6; hacen falta su temario subrayado y el oficial); probar el simulacro sin tiempo y la letra en el móvil.
+
+### Fase 2 de las marcas con librerías (20/10/2026, hecho en T6, T8 y T9)
+1. `node prompts/herramientas/cobertura-marcas.js N` → lista (%TEMP%/faltaN.json) los párrafos con marca suya sin pregunta oficial (EX sola → basta una IA).
+2. Redactar las preguntas en `prompts/herramientas/temaN/preguntas-marcas-tN.js` con `preguntas-marcas-lib.js`: cita literal comprobada contra el temario limpio, correcta nunca la más larga (la librería alarga una incorrecta con una coletilla si hace falta), letra A/B/C/D rotada; EXOF / ✱ / R → oficial (N-…), solo EX → IA (N-ia-…). Párrafos «cabecera» (acaban en «:») → preguntar por uno de sus apartados.
+3. Repetir cobertura hasta 0; luego `mapa-preguntas.js` (≈10 min, no lanzar dos a la vez ni tocar esquemas.html mientras corre), `expres-tN.js`, `huecos.js`, subir caché.
