@@ -4659,7 +4659,7 @@ body.pm-er .pm{cursor:not-allowed;outline:1px dashed rgba(200,0,0,.5)}
 .pm-svg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:5}
 body.pm-draw .esquema.active .pm-svg{pointer-events:auto;touch-action:none;cursor:crosshair}
 body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
-@media (max-width:640px){#pm-fab{display:none;position:fixed;left:14px;bottom:68px;z-index:9000;width:46px;height:46px;border-radius:50%;border:none;background:var(--verde,#1c4d3c);color:#fff;font-size:21px;box-shadow:0 4px 14px rgba(0,0,0,.3)}body.ver-esquema.pm-on #pm-fab{display:block}body.pm-on:not(.pm-open) #pm-ui{display:none!important}#pm-ui{top:auto;bottom:122px;max-height:calc(100vh - 190px);left:4px;padding:4px}#pm-ui button.pm-b{width:34px;height:34px;font-size:16px}#pm-ui .pm-col2{top:auto;bottom:122px;left:52px;padding:4px}}
+@media (max-width:640px){#pm-fab{display:none;position:fixed;left:14px;bottom:68px;z-index:9000;width:46px;height:46px;border-radius:50%;border:none;background:var(--verde,#1c4d3c);color:#fff;font-size:21px;box-shadow:0 4px 14px rgba(0,0,0,.3)}body.ver-esquema #pm-fab{display:block}body.pm-open #pm-fab{background:#d64545}body.pm-on:not(.pm-open) #pm-ui{display:none!important}#pm-ui{top:auto;bottom:122px;max-height:calc(100vh - 190px);left:4px;padding:4px}#pm-ui button.pm-b{width:34px;height:34px;font-size:16px}#pm-ui .pm-col2{top:auto;bottom:122px;left:52px;padding:4px}}
 @media print{#pm-ui,#pm-pop{display:none!important}}
 /* tablet en vertical: nada puede ensanchar la página más que la pantalla (el texto se cortaba por el lado derecho) */
 html{overflow-x:hidden}body{max-width:100%}
@@ -4691,7 +4691,7 @@ html{overflow-x:hidden}body{max-width:100%}
   const actEsq=()=>{ const e=$('.esquema.active'); if(e&&document.body.classList.contains('expres')){ const x=e.querySelector(':scope > .ex-cont'); if(x) return x; } return e; };
   const raiz=el=>el.closest('.ex-cont')||el.closest('.esquema');
   window.pmTool=()=>st.tool;
-  document.getElementById("pm-fab").onclick=()=>{ const o=document.body.classList.toggle("pm-open"); if(!o){ colsOpen=false; ui.classList.remove("cols-open"); } };
+  document.getElementById("pm-fab").onclick=()=>{ if(!document.body.classList.contains("pm-on")) document.getElementById("btn-marcas").click(); const o=document.body.classList.toggle("pm-open"); if(!o){ colsOpen=false; ui.classList.remove("cols-open"); } };
 
   /* ---------- barra ---------- */
   let colsOpen=false;
