@@ -1,0 +1,7 @@
+// Tema 3 · fase 2: apartado marcado sin pregunta (TFUE art. 79.3, ✱). 20/10/2026.
+const N = ['Tratado de Funcionamiento de la Unión Europea', 'TFUE', 'Del Tratado de Funcionamiento de la Unión Europea'];
+require('../preguntas-marcas-lib.js')({ T: 3, fuentes: ['tema3/temario.txt'], desdeOf: 410, desdeIA: 3654, Q: [
+  { n: N, a: 'art. 79.3', r: 'Espacio de libertad, seguridad y justicia: política de inmigración', e: 'La Unión podrá celebrar con terceros países acuerdos para la readmisión, en sus países de origen o de procedencia, de nacionales de terceros países que:', c: 1,
+    o: ['Hayan solicitado protección internacional en el territorio de uno de los Estados miembros y les haya sido denegada.', 'No cumplan o que hayan dejado de cumplir las condiciones de entrada, presencia o residencia en el territorio de uno de los Estados miembros.', 'No cumplan las condiciones de entrada en el territorio de la Unión, con exclusión de los que hayan dejado de cumplir las de residencia.', 'Hayan cometido un delito grave en el territorio de uno de los Estados miembros y sean expulsados por resolución judicial firme.'],
+    t: '3. La Unión podrá celebrar con terceros países acuerdos para la readmisión, en sus países de origen o de procedencia, de nacionales de terceros países que no cumplan o que hayan dejado de cumplir las condiciones de entrada, presencia o residencia en el territorio de uno de los Estados miembros.', p: '' },
+] });
