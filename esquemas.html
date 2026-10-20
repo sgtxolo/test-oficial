@@ -4659,7 +4659,7 @@ body.pm-er .pm{cursor:not-allowed;outline:1px dashed rgba(200,0,0,.5)}
 .pm-svg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:5}
 body.pm-draw .esquema.active .pm-svg{pointer-events:auto;touch-action:none;cursor:crosshair}
 body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
-@media (max-width:640px){#pm-fab{display:none;position:fixed;left:14px;bottom:68px;z-index:9000;width:46px;height:46px;border-radius:50%;border:none;background:var(--verde,#1c4d3c);color:#fff;font-size:21px;box-shadow:0 4px 14px rgba(0,0,0,.3)}body.ver-esquema #pm-fab{display:block}body.pm-open #pm-fab{background:#d64545}body.pm-on:not(.pm-open) #pm-ui{display:none!important}#pm-ui{top:auto;bottom:122px;max-height:calc(100vh - 190px);left:4px;padding:4px}#pm-ui button.pm-b{width:34px;height:34px;font-size:16px}#pm-ui .pm-col2{top:auto;bottom:122px;left:52px;padding:4px}}
+@media (max-width:640px){#pm-fab{display:none;position:fixed;left:14px;bottom:68px;z-index:9000;width:46px;height:46px;border-radius:50%;border:none;background:var(--verde,#1c4d3c);color:#fff;font-size:21px;box-shadow:0 4px 14px rgba(0,0,0,.3)}body.ver-esquema #pm-fab{display:block}body.pm-on #pm-fab{background:#d64545}body.pm-on #pm-ui{display:none!important}#pm-ui{top:auto;bottom:122px;max-height:calc(100vh - 190px);left:4px;padding:4px}#pm-ui button.pm-b{width:34px;height:34px;font-size:16px}#pm-ui .pm-col2{top:auto;bottom:122px;left:52px;padding:4px}}
 @media print{#pm-ui,#pm-pop{display:none!important}}
 /* tablet en vertical: nada puede ensanchar la página más que la pantalla (el texto se cortaba por el lado derecho) */
 html{overflow-x:hidden}body{max-width:100%}
@@ -4691,7 +4691,7 @@ html{overflow-x:hidden}body{max-width:100%}
   const actEsq=()=>{ const e=$('.esquema.active'); if(e&&document.body.classList.contains('expres')){ const x=e.querySelector(':scope > .ex-cont'); if(x) return x; } return e; };
   const raiz=el=>el.closest('.ex-cont')||el.closest('.esquema');
   window.pmTool=()=>st.tool;
-  document.getElementById("pm-fab").onclick=()=>{ if(!document.body.classList.contains("pm-on")) document.getElementById("btn-marcas").click(); const o=document.body.classList.toggle("pm-open"); if(!o){ colsOpen=false; ui.classList.remove("cols-open"); } };
+  document.getElementById("pm-fab").onclick=()=>document.getElementById("btn-marcas").click();
 
   /* ---------- barra ---------- */
   let colsOpen=false;
@@ -5300,7 +5300,43 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       abrir('Subrayar la selección como…',null,e.clientX,e.clientY,false);
     },30);
   });
-  pop.addEventListener('mousedown',e=>e.preventDefault());
+  /* táctil: arrastrar el dedo en horizontal selecciona; al soltar salen las opciones (igual que con el ratón) */
+  (function(){
+    const zona=el=>el&&el.closest&&el.closest(".articulo .txt, .vis, .ex-fb");
+    const punto=(x,y)=>{ if(document.caretRangeFromPoint) return document.caretRangeFromPoint(x,y); if(document.caretPositionFromPoint){ const p=document.caretPositionFromPoint(x,y); if(!p) return null; const r=document.createRange(); r.setStart(p.offsetNode,p.offset); r.collapse(true); return r; } return null; };
+    let ini=null, drag=false, t0=null;
+    const activo=()=>document.body.classList.contains("pm-on")&&normal();
+    document.addEventListener("touchstart",e=>{ drag=false; ini=null; if(!activo()||e.touches.length!==1||pop.contains(e.target)) return; const t=e.touches[0]; if(!zona(e.target)) return; t0=t; ini=punto(t.clientX,t.clientY); },{passive:true,capture:true});
+    document.addEventListener("touchmove",e=>{
+      if(!ini||!t0||!activo()) return; const t=e.touches[0];
+      if(!drag){ const dx=Math.abs(t.clientX-t0.clientX), dy=Math.abs(t.clientY-t0.clientY); if(dx<8&&dy<8) return; if(dy>dx){ ini=null; return; } drag=true; cerrar(); }
+      e.preventDefault();
+      const f=punto(t.clientX,t.clientY); if(!f) return;
+      const r=document.createRange(); const a=ini.compareBoundaryPoints(Range.START_TO_START,f)<=0;
+      try{ if(a){ r.setStart(ini.startContainer,ini.startOffset); r.setEnd(f.startContainer,f.startOffset); } else { r.setStart(f.startContainer,f.startOffset); r.setEnd(ini.startContainer,ini.startOffset); } }catch(_){ return; }
+      const sel=getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    },{passive:false,capture:true});
+    document.addEventListener("touchend",e=>{
+      if(!drag) return; drag=false; const t=e.changedTouches[0];
+      setTimeout(()=>{
+        const sel=getSelection(); if(!sel||sel.isCollapsed||!sel.rangeCount) return;
+        const rg=sel.getRangeAt(0), esq=activa();
+        const anc=rg.commonAncestorContainer.nodeType===1?rg.commonAncestorContainer:rg.commonAncestorContainer.parentElement;
+        if(!esq||!esq.contains(anc)||!zona(anc)) return;
+        cur={esq,range:rg.cloneRange()};
+        abrir("Subrayar la selección como…",null,t.clientX,t.clientY,false);
+      },30);
+    },{capture:true});
+    /* selección nativa (pulsación larga + asas): también abre las opciones */
+    let tm=0; document.addEventListener("selectionchange",()=>{ clearTimeout(tm); if(drag||!activo()||!matchMedia("(pointer:coarse)").matches) return; tm=setTimeout(()=>{
+      const sel=getSelection(); if(!sel||sel.isCollapsed||!sel.rangeCount||pop.classList.contains("on")) return;
+      const rg=sel.getRangeAt(0), esq=activa(); if(!esq) return;
+      const anc=rg.commonAncestorContainer.nodeType===1?rg.commonAncestorContainer:rg.commonAncestorContainer.parentElement;
+      if(!esq.contains(anc)||!zona(anc)) return;
+      const b=rg.getBoundingClientRect(); cur={esq,range:rg.cloneRange()}; abrir("Subrayar la selección como…",null,b.left,b.bottom,false);
+    },700); });
+  })();
+  pop.addEventListener("mousedown",e=>e.preventDefault());
   pop.addEventListener('click',e=>{
     const b=e.target.closest('button'); if(!b||!cur) return;
     const esq=cur.esq, bk=bucket(esq.id);

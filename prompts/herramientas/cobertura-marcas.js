@@ -32,7 +32,10 @@ X.fichas.forEach((f, k) => {
     if (!ex && !r) return;
     const pn = n(p.h);
     let cub = (en[k + '-' + j] || []).length > 0;
-    const cubre = q => { const a = n(q.opciones[q.correcta]); return a.length >= 14 && pn.includes(a.slice(0, 60)); };
+    const cubre = q => { const a = n(q.opciones[q.correcta]); if (a.length >= 14 && pn.includes(a.slice(0, 60))) return true;
+      // o la cita literal de su explicación (ref-concepto) cae dentro de este párrafo o lo contiene
+      const c = ((q.explicacion || '').match(/ref-concepto">"([^<]*)/) || [])[1]; const cn = c ? n(c) : '';
+      return cn.length >= 25 && (pn.includes(cn.slice(0, 50)) || cn.includes(pn.slice(0, 50))); };
     if (!cub) cub = Q.some(cubre);
     // solo EX → basta con que la cubra una IA
     if (!cub && ex === 'EX' && !r) cub = IA.some(cubre);
