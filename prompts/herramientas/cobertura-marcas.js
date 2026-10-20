@@ -37,8 +37,7 @@ X.fichas.forEach((f, k) => {
       const c = ((q.explicacion || '').match(/ref-concepto">"([^<]*)/) || [])[1]; const cn = c ? n(c) : '';
       return cn.length >= 20 && (pn.includes(cn.slice(0, 50)) || cn.includes(pn.slice(0, 50))); };
     if (!cub) cub = Q.some(cubre);
-    // solo EX → basta con que la cubra una IA
-    if (!cub && ex === 'EX' && !r) cub = IA.some(cubre);
+    // EX, EXOF y ✱ → siempre pregunta OFICIAL (pauta 21/10/2026): una IA ya no cubre un EX
     if (!cub) out.push({ k, j, marca: [ex, r].filter(Boolean).join(' '), cab: lim(f.cab), t: lim(p.h) });
   });
 });
