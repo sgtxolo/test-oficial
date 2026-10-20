@@ -17,6 +17,7 @@ const NORMAS = {
   eur: ['Reglamento (UE) 2024/1358, de 14 de mayo de 2024, sobre la creación del sistema «Eurodac» para la comparación de datos biométricos', 'el Reglamento (UE) 2024/1358', 'Reglamento (UE) 2024/1358 (Sistema EURODAC)'],
   aec: ['Orden AEC/240/2011, de 4 de enero, por la que se crea el fichero de datos de carácter personal del Sistema de Información de Visados y la Autoridad Nacional del Sistema de Información de Visados', 'la Orden AEC/240/2011', 'Orden AEC/240/2011, por la que se crea el fichero de datos de carácter personal del Sistema de información de'] };
 const PREF = {};
+const COLA = [', en los términos que establezca el propio Reglamento', ', salvo que el Estado miembro afectado disponga otra cosa', ', conforme al procedimiento que se establezca reglamentariamente', ', sin perjuicio de lo dispuesto en el Derecho nacional'];
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const nrm = s => s.replace(/=====PAG \d+=====/g, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/-\s*\n\s*/g, '').replace(/[^a-z0-9ñ]/g, '');
 exports.run = function ({ bloque, Q, texto = ['prompts/temario-limpio/tema5/oficial-paginas.txt', 'prompts/temario-limpio/tema5/escaneado-paginas.txt', 'prompts/temario-limpio/tema5/consolidado.txt', 'prompts/temario-limpio/tema5/transcrito.txt'], arg = process.argv.slice(2) }) {
@@ -27,9 +28,12 @@ exports.run = function ({ bloque, Q, texto = ['prompts/temario-limpio/tema5/ofic
     if (!q.o || q.o.length !== 4) throw new Error('la pregunta ' + i + ' no tiene 4 opciones');
     let ops = q.o.slice(), c = q.c;
     if (c === null || c === undefined) { const ok = ops.shift(); c = [0, 1, 2, 3].sort((a, b) => uso[a] - uso[b] || ((a + i) % 4) - ((b + i) % 4))[0]; ops.splice(c, 0, ok); uso[c]++; }
+    // la correcta nunca la más larga: se alarga la incorrecta más larga con una coletilla verosímil
+    for (let g = 0; g < 3 && ops[c].length >= Math.max(...ops.filter((x, j) => j !== c).map(x => x.length)); g++) { const j = [0, 1, 2, 3].filter(x => x !== c).sort((x, y) => ops[y].length - ops[x].length)[0]; ops[j] = ops[j].replace(/[.]$/, '') + COLA[(i + g) % COLA.length] + '.'; }
     const [nom, corta, apt] = NORMAS[q.k];
     const ref = `${q.a} ${corta.startsWith("el ") ? "del " + corta.slice(3) : "de " + corta}`;
     const explicacion = `<span class="ex-resp">Respuesta correcta: <b>${L[c]}</b> · <mark class="ex-key">${esc(ops[c].replace(/\.$/, ''))}</mark></span>El <span class="ref-norma">${ref}</span> dispone: <span class="ref-concepto">"${esc(q.t)}"</span>. ${esc(q.p)} <em style="color:var(--texto-gris)">(Pregunta generada por IA)</em>`;
+    if (/art[íi]culos*d|art.s*d|apartados*d/i.test(q.e)) console.log('✗ ART en enunciado', '5-ia-' + (ini + i), q.e.slice(0, 90));
     return { id: '5-ia-' + (ini + i), pregunta: `${PREF[q.k] || nom}. ${q.r}. ${q.e}`, opciones: ops, correcta: c, dificultad: 'media', explicacion, apartado: apt };
   });
   if (ia.length > 50) throw new Error('más de 50 preguntas en el bloque');
