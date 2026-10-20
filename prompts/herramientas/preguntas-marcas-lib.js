@@ -11,6 +11,13 @@ const nrm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replac
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 module.exports = function (C) {
   const fuente = nrm(C.fuentes.map(f => fs.readFileSync(path.join(RAIZ, 'prompts', 'temario-limpio', f), 'utf8')).join('\n'));
+  // la correcta nunca la más larga: si lo es, se alarga la incorrecta MÁS larga con una coletilla verosímil (solo en opciones incorrectas)
+  const COLA = [', sin perjuicio de lo que establezcan los tratados internacionales', ', en los términos que determine la ley orgánica correspondiente', ', salvo que el órgano competente acuerde otra cosa de forma motivada', ', conforme al procedimiento que reglamentariamente se establezca'];
+  let ci = 0;
+  C.Q.forEach(q => { const long = i => q.o[i].length; let guard = 0;
+    while (guard++ < 3 && q.o[q.c].length >= Math.max(...q.o.filter((_, i) => i !== q.c).map(x => x.length))) {
+      const idx = q.o.map((x, i) => i).filter(i => i !== q.c).sort((x, y) => long(y) - long(x))[0];
+      q.o[idx] = q.o[idx].replace(/[.]$/, '') + COLA[ci++ % COLA.length] + '.'; } });
   const malas = C.Q.filter(q => !fuente.includes(nrm(q.t))).map(q => q.a);
   const largas = C.Q.filter(q => q.o[q.c].length >= Math.max(...q.o.filter((_, i) => i !== q.c).map(x => x.length))).map(q => q.a);
   const mal4 = C.Q.filter(q => q.o.length !== 4 || new Set(q.o).size !== 4).map(q => q.a);
