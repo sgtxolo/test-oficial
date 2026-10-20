@@ -4633,6 +4633,8 @@ body.ver-esquema.pm-on #pm-ui{display:flex}
 #pm-ui .pm-dot{width:20px;height:20px;border-radius:50%;border:2px solid #999;display:block}
 /* 2.ª columna: color (abre la paleta) + colores del subrayado por categoría + deshacer/borrar */
 #pm-ui .pm-col2{position:fixed;display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px;border-radius:12px;background:var(--panel,#fff);border:1px solid var(--borde,#ddd);box-shadow:0 6px 22px rgba(0,0,0,.2);left:64px;top:110px}
+#pm-ui .pm-col2{display:none}#pm-ui.cols-open .pm-col2{display:flex}
+#pm-fab{display:none}
 #pm-ui .pm-dot.pm-cat{width:24px;height:24px;border:1.5px solid rgba(0,0,0,.28);border-radius:6px}
 #pm-ui .pm-col2 button.pm-b.on{background:var(--verde,#1c4d3c)}
 .ex-cont{position:relative}
@@ -4657,7 +4659,7 @@ body.pm-er .pm{cursor:not-allowed;outline:1px dashed rgba(200,0,0,.5)}
 .pm-svg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:5}
 body.pm-draw .esquema.active .pm-svg{pointer-events:auto;touch-action:none;cursor:crosshair}
 body.pm-er .pm-svg *{pointer-events:stroke;cursor:not-allowed}
-@media (max-width:640px){#pm-ui{top:auto;bottom:70px;left:4px;padding:4px}#pm-ui button.pm-b{width:34px;height:34px;font-size:16px}#pm-ui .pm-col2{top:auto;bottom:70px;left:52px;padding:4px}}
+@media (max-width:640px){#pm-fab{display:none;position:fixed;left:14px;bottom:68px;z-index:9000;width:46px;height:46px;border-radius:50%;border:none;background:var(--verde,#1c4d3c);color:#fff;font-size:21px;box-shadow:0 4px 14px rgba(0,0,0,.3)}body.ver-esquema.pm-on #pm-fab{display:block}body.pm-on:not(.pm-open) #pm-ui{display:none!important}#pm-ui{top:auto;bottom:122px;max-height:calc(100vh - 190px);left:4px;padding:4px}#pm-ui button.pm-b{width:34px;height:34px;font-size:16px}#pm-ui .pm-col2{top:auto;bottom:122px;left:52px;padding:4px}}
 @media print{#pm-ui,#pm-pop{display:none!important}}
 /* tablet en vertical: nada puede ensanchar la página más que la pantalla (el texto se cortaba por el lado derecho) */
 html{overflow-x:hidden}body{max-width:100%}
@@ -4665,7 +4667,7 @@ html{overflow-x:hidden}body{max-width:100%}
 .esquema table,.esquema img{max-width:100%}
 
 </style>
-<div id="pm-ui"></div><div id="pm-pop"></div>
+<button id="pm-fab" type="button" title="Herramientas de marcas">🖍</button><div id="pm-ui"></div><div id="pm-pop"></div>
 <script id="script-marcas">
 /* Marcas de estudio: resaltar, subrayar, tachar, línea, flecha, rectángulo, óvalo y mano alzada sobre cada esquema (guardadas en localStorage) */
 (function(){
@@ -4689,22 +4691,24 @@ html{overflow-x:hidden}body{max-width:100%}
   const actEsq=()=>{ const e=$('.esquema.active'); if(e&&document.body.classList.contains('expres')){ const x=e.querySelector(':scope > .ex-cont'); if(x) return x; } return e; };
   const raiz=el=>el.closest('.ex-cont')||el.closest('.esquema');
   window.pmTool=()=>st.tool;
+  document.getElementById("pm-fab").onclick=()=>{ const o=document.body.classList.toggle("pm-open"); if(!o){ colsOpen=false; ui.classList.remove("cols-open"); } };
 
   /* ---------- barra ---------- */
+  let colsOpen=false;
   function buildUI(){
-    ui.innerHTML='';
+    ui.innerHTML=''; ui.classList.toggle("cols-open",colsOpen);
     const mk=(html,title,fn,cls)=>{ const b=document.createElement('button'); b.type='button'; b.className='pm-b'+(cls?' '+cls:''); b.innerHTML=html; b.title=title; b.onclick=fn; ui.appendChild(b); return b; };
     mk('🖱','Normal (sin marcar)',()=>setTool(null),st.tool?'':'on');
     TOOLS.forEach(([k,ic,t])=>{ const b=mk(ic,t,()=>setTool(st.tool===k?null:k),st.tool===k?'on':''); if(k==='ul') b.style.textDecoration='underline'; if(k==='st') b.style.textDecoration='line-through'; });
     /* barra principal: como al principio — círculo de color (abre la paleta completa), deshacer y borrar */
     const sep=document.createElement('div'); sep.className='pm-sep'; ui.appendChild(sep);
-    const c=mk('<span class="pm-dot" style="background:'+rgba(st.color,st.op)+';border-color:'+st.color+'"></span>','Color, opacidad y grosor',e=>{ e.stopPropagation(); togglePop(c,null); });
+    const c=mk('<span class="pm-dot" style="background:'+rgba(st.color,st.op)+';border-color:'+st.color+'"></span>','Color, opacidad y grosor',e=>{ e.stopPropagation(); colsOpen=!colsOpen; ui.classList.toggle("cols-open",colsOpen); });
     mk('↶','Deshacer la última marca de este tema',undo);
     mk('🗑','Borrar todas las marcas de este tema',clearAll);
     /* 2.ª columna: solo los colores del subrayado del esquema (mismo tono); eligen color y, si no hay herramienta de texto, ponen «Resaltar» */
     const col2=document.createElement('div'); col2.className='pm-col2';
     const ui0=ui; ui=col2;
-    CATCOL.forEach(([col,t])=>{ const b=mk('<span class="pm-dot pm-cat" style="background:'+col+'"></span>',t,()=>{ st.color=col; st.op=100; refreshDot(); if(!TXT[st.tool]) setTool('hl'); }); b.dataset.col=col; });
+    CATCOL.forEach(([col,t])=>{ const b=mk('<span class="pm-dot pm-cat" style="background:'+col+'"></span>',t,()=>{ st.color=col; st.op=100; refreshDot(); colsOpen=false; if(!TXT[st.tool]) setTool('hl'); else buildUI(); }); b.dataset.col=col; });
     ui=ui0; ui.appendChild(col2); markCat();
   }
   function markCat(){ ui.querySelectorAll('.pm-cat').forEach(d=>d.parentNode.classList.toggle('on',st.op===100&&d.parentNode.dataset.col===st.color)); }
