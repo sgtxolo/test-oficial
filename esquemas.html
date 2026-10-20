@@ -3696,7 +3696,7 @@ if("serviceWorker" in navigator){var __hadSW=!!navigator.serviceWorker.controlle
     const act = document.querySelector('.esquema.active');
     cola = []; pos = 0;
     if(!act) return;
-    const entero = document.body.classList.contains('coche-on'), tema = act.id.replace('tema-', '');
+    const entero = document.body.classList.contains('coche-on') && window.cocheElip !== false, tema = act.id.replace('tema-', '');
     const exc = document.body.classList.contains('expres') ? act.querySelector(':scope > .ex-cont') : null;
     if(exc && exc.querySelector('.ex-fb, .ex-linea')){
       exc.querySelectorAll('.bloque-titulo, .ex-fh, .ex-fb p, .ex-linea, .vis').forEach(b => {
@@ -3729,7 +3729,7 @@ if("serviceWorker" in navigator){var __hadSW=!!navigator.serviceWorker.controlle
     abiertos.forEach(p => p.classList.remove('on')); abiertos = [];
     marcado = el;
     if(el){ el.classList.add('leyendo');
-      if(document.body.classList.contains('coche-on')) abiertos = Array.from(el.querySelectorAll('.ex-plg:not(.on)')).map(p => (p.classList.add('on'), p));   // 🚗 despliega en pantalla los (…) que se están leyendo
+      if(document.body.classList.contains('coche-on') && window.cocheElip !== false) abiertos = Array.from(el.querySelectorAll('.ex-plg:not(.on)')).map(p => (p.classList.add('on'), p));   // 🚗 despliega en pantalla los (…) que se están leyendo
       if(document.body.classList.contains('coche-pag')) el.scrollIntoView({block:'start', behavior:'smooth'});   // vista temario: el párrafo arriba, la barra queda debajo
       else el.scrollIntoView({block:'center', behavior:'smooth'}); }
   }
@@ -3908,6 +3908,8 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
   <div class="c-inicio">
     <button type="button" data-a="seguir"></button>
     <button type="button" data-a="empezar"></button>
+    <button type="button" data-a="modo"></button>
+    <button type="button" data-a="elip"></button>
     <select id="coche-tema" aria-label="Tema del Exprés"></select>
   </div>
   <div class="c-texto" aria-live="off"></div>
@@ -3932,9 +3934,17 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
   let wake=null;
   async function pantalla(on){ try{ if(on&&'wakeLock' in navigator){ wake=await navigator.wakeLock.request('screen'); } else if(wake){ wake.release(); wake=null; } }catch(e){} }
   document.addEventListener('visibilitychange',()=>{ if(!document.hidden&&document.body.classList.contains('coche-on')&&!wake) pantalla(true); });
+  const MK='esquemas-coche-modo', EK='esquemas-coche-elip';
+  const modoCoche=()=>{ try{ return localStorage.getItem(MK)==='todo'?'todo':'ex'; }catch(e){ return 'ex'; } };
+  window.cocheElip=(()=>{ try{ return localStorage.getItem(EK)!=='0'; }catch(e){ return true; } })();
+  function etiquetas(){
+    const m=q('[data-a="modo"]'), e=q('[data-a="elip"]');
+    if(m) m.innerHTML=modoCoche()==='todo'?'📚 Esquema completo<small>toca para pasar a ⚡ Exprés</small>':'⚡ Esquema Exprés<small>toca para pasar a 📚 completo</small>';
+    if(e) e.innerHTML=window.cocheElip?'(…) Con puntos suspensivos desplegados<small>lee el texto oculto · toca para quitarlo</small>':'(…) Sin desplegar los puntos suspensivos<small>solo lee lo que se ve · toca para leerlos</small>';
+  }
   function irATema(n){
     if(typeof window.mostrar==='function') window.mostrar('tema-'+n);
-    if(window.expresActivar) window.expresActivar('ex');
+    if(window.expresActivar) window.expresActivar(modoCoche()==='todo'?'todo':'ex');
   }
   function pintarInicio(){
     const sel=q('#coche-tema'), ts=temas(), g=leer(), cur=actual();
@@ -3944,7 +3954,7 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
     if(g&&g.ex&&ts.includes(g.n)){ bs.style.display=''; bs.innerHTML='▶ Seguir donde me quedé<small>'+nombre(g.n)+' — «'+(g.x||'').replace(/</g,'&lt;')+'…»</small>'; }
     else bs.style.display='none';
     q('[data-a="empezar"]').innerHTML='⏮ Empezar el tema elegido desde el principio<small>el que marca la lista de abajo</small>';
-    q('.c-tema').textContent='🚗 Modo coche · ⚡ Exprés';
+    q('.c-tema').textContent='🚗 Modo coche · '+(modoCoche()==='todo'?'📚 Completo':'⚡ Exprés'); etiquetas();
     q('.c-texto').textContent=''; q('.c-info').textContent='';
   }
   function abrir(){
@@ -3980,7 +3990,7 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
     const play=q('[data-a="play"]'); play.textContent=A.estado()==='leyendo'?'⏸︎':'▶︎';   // ︎: en iPhone como símbolo, no como emoji azul
     if(texto==null) return;
     q('.c-texto').textContent=texto; q('.c-info').textContent=`Fragmento ${pos+1} de ${total}`;
-    q('.c-tema').textContent='⚡ '+nombre(actual());
+    q('.c-tema').textContent=(modoCoche()==='todo'?'📚 ':'⚡ ')+nombre(actual());
   };
   /* al acabar un tema, sigue con el siguiente Exprés */
   window.vozFin=function(){
@@ -3993,6 +4003,8 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
     const b=e.target.closest('button'); if(!b) return;
     if(b.classList.contains('c-x')) return cerrar();
     const a=b.dataset.a, A=api(); if(!a||!A) return;
+    if(a==='modo'){ try{ localStorage.setItem(MK,modoCoche()==='todo'?'ex':'todo'); }catch(x){} etiquetas(); return; }
+    if(a==='elip'){ window.cocheElip=!window.cocheElip; try{ localStorage.setItem(EK,window.cocheElip?'1':'0'); }catch(x){} etiquetas(); return; }
     if(a==='seguir'){ const g=leer(); if(g) empezar(g.n,g.i); }
     else if(a==='empezar') empezar(+q('#coche-tema').value,0);
     else if(a==='play') A.estado()==='leyendo'?A.pausar():A.reproducir();
@@ -5662,6 +5674,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     const esq=document.querySelector('.esquema.active'); if(!esq){ window.print(); return; }
     const host=document.createElement('div'); host.id='print-host';
     const cl=esq.cloneNode(true); if(["tema-1","tema-2","tema-3","tema-4","tema-5","tema-6","tema-7","tema-8","tema-9","tema-11","tema-12","tema-13","tema-14"].includes(esq.id)) cl.dataset.fuente='1'; cl.removeAttribute('id');
+    cl.querySelectorAll('.ex-plg:not(.on)').forEach(n=>n.classList.add('on'));          // (…) del Exprés desplegados
+    cl.querySelectorAll('.hueco:not(.abierto)').forEach(el=>{ const h=el.dataset.h; if(!h) return; const sg=el.nextSibling, t=document.createElement('span'); t.className='hueco-txt'; t.textContent=(/^[.,;:)]/.test(h)?'':' ')+h+(sg&&sg.nodeType===3&&!/^[\s.,;:)]/.test(sg.nodeValue)?' ':''); el.after(t); el.classList.add('abierto'); });   // (…) del temario desplegados
     host.appendChild(cl); document.body.appendChild(host);
     void cl.offsetHeight;                                    // maqueta la copia a 716 px
     if(window.pmRenderShapes) window.pmRenderShapes(cl,esq.id);
@@ -6530,6 +6544,8 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
 :is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fb p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .txt p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
 :is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fh,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
 .ex-fh{cursor:pointer}.ex-fh:hover{text-decoration:underline}
+.ex-cont .ex-fh::after{content:"📖 Art. completo";float:right;margin:0 6px 0 8px;padding:2px 9px;border:1.5px solid #c8102e;border-radius:12px;font-size:11px;font-weight:700;color:#c8102e;text-transform:none;white-space:nowrap}
+#print-host .ex-fh::after{display:none}
 .ex-fb .ex-p{cursor:pointer}
 @media (max-width:700px){:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fb p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .txt p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .txt li{font-size:16px}}
 .ex-rec-b{display:inline-block;margin:6px 0 4px;padding:5px 12px;border:1.5px solid #c8102e;color:#c8102e;background:transparent;border-radius:16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
