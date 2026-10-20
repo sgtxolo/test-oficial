@@ -5673,7 +5673,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   function imprimir(){
     const esq=document.querySelector('.esquema.active'); if(!esq){ window.print(); return; }
     const host=document.createElement('div'); host.id='print-host';
-    const cl=esq.cloneNode(true); if(["tema-1","tema-2","tema-3","tema-4","tema-5","tema-6","tema-7","tema-8","tema-9","tema-11","tema-12","tema-13","tema-14"].includes(esq.id)) cl.dataset.fuente='1'; cl.removeAttribute('id');
+    const cl=esq.cloneNode(true); cl.dataset.fuente='1'; cl.removeAttribute('id');
     cl.querySelectorAll('.ex-plg:not(.on)').forEach(n=>n.classList.add('on'));          // (…) del Exprés desplegados
     cl.querySelectorAll('.hueco:not(.abierto)').forEach(el=>{ const h=el.dataset.h; if(!h) return; const sg=el.nextSibling, t=document.createElement('span'); t.className='hueco-txt'; t.textContent=(/^[.,;:)]/.test(h)?'':' ')+h+(sg&&sg.nodeType===3&&!/^[\s.,;:)]/.test(sg.nodeValue)?' ':''); el.after(t); el.classList.add('abierto'); });   // (…) del temario desplegados
     host.appendChild(cl); document.body.appendChild(host);
@@ -6540,14 +6540,14 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
 
 <style id="style-ex-extra">
 /* Tipo de letra del temario oficial (PRUEBA en los temas 1, 2 y 3; para otro tema, copiar sus reglas con su #tema-N) */
-:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fb,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .txt,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .articulo-head,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fh{font-family:"Fira Sans Condensed","Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif;letter-spacing:-.005em}
-:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fb p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .txt p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
-:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fh,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
+.esquema .ex-fb,.esquema .txt,.esquema .articulo-head,.esquema .ex-fh{font-family:"Fira Sans Condensed","Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif;letter-spacing:-.005em}
+.esquema .ex-fb p,.esquema .txt p,.esquema .txt li{text-align:justify;hyphens:auto;font-size:15px;line-height:1.5}
+.esquema .ex-fh,.esquema .articulo-head{color:#c8102e;text-transform:uppercase;font-weight:800;font-size:15px;letter-spacing:0}
 .ex-fh{cursor:pointer}.ex-fh:hover{text-decoration:underline}
 .ex-cont .ex-fh::after{content:"📖 Art. completo";float:right;margin:0 6px 0 8px;padding:2px 9px;border:1.5px solid #c8102e;border-radius:12px;font-size:11px;font-weight:700;color:#c8102e;text-transform:none;white-space:nowrap}
 #print-host .ex-fh::after{display:none}
 .ex-fb .ex-p{cursor:pointer}
-@media (max-width:700px){:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .ex-fb p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .txt p,:is(#tema-1,#tema-2,#tema-3,#tema-4,#tema-5,#tema-6,#tema-7,#tema-8,#tema-9,#tema-11,#tema-12,#tema-13,#tema-14) .txt li{font-size:16px}}
+@media (max-width:700px){.esquema .ex-fb p,.esquema .txt p,.esquema .txt li{font-size:16px}}
 .ex-rec-b{display:inline-block;margin:6px 0 4px;padding:5px 12px;border:1.5px solid #c8102e;color:#c8102e;background:transparent;border-radius:16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .ex-rec-b.on{background:#c8102e;color:#fff}
 .ex-rec{margin:4px 0 8px;padding:8px 12px;border-left:4px solid #c8102e;background:rgba(200,16,46,.06);border-radius:6px;font-size:14px;line-height:1.45}
