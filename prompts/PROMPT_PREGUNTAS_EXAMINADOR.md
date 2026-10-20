@@ -10,6 +10,24 @@ Actúa como **examinador experto del tribunal de la oposición de Ascenso a Ofic
 **Texto base:** el que te adjunto/pego (PDF del temario, una norma completa o artículos concretos).  
 **App:** `test-oficial-conocimiento.html` (proyecto `C:\Users\ruben\OneDrive\Desktop\HTML OFICIAL`, repo `sgtxolo/test-oficial`, rama `main`).
 
+## ⭐ PLAN MAESTRO: cómo se hace un tema (nivel Tema 1 y Tema 2; pauta del usuario 20/10/2026 — manda sobre todo lo demás)
+Quiero **todos** los temas exactamente como están el **Tema 1 y el Tema 2**: con su banco de preguntas completo, su **esquema normal** (📚 Temario entero) y su **esquema Exprés** (⚡). Un tema NO está terminado hasta cumplir los 12 puntos; al acabar me das el informe con cada punto en ✔ o ✘.
+
+1. **Fuentes.** Texto y datos = temario OFICIAL (PDF limpio de ; si no hay, lo generas tú en PDF y lo guardas allí). Colores y marcas = MI temario subrayado escaneado (); lo lees tú entero, sin pedirme fotos. Si se contradicen manda el oficial y me avisas. Texto limpio en .
+2. **Preguntas oficiales** (ids , son de mi academia): revisarlas TODAS contra el oficial; se **corrigen, nunca se borran**; cita literal en rojo en la corrección; la correcta nunca la más larga.
+3. **Preguntas de IA** (ids ): se **rehacen desde cero** (borrar las antiguas + purga de localStorage): 5 por página de temario, nada fáciles, estilo oficial largo («Norma completa. Rúbrica. texto casi literal…:»), opciones casi iguales, muchos «completa el hueco» (con hueco visible) y «señale la INCORRECTA», sin números de artículo, correcta nunca la más larga, cita literal verificada, letras A/B/C/D repartidas. Por bloques de 10 páginas con commit + push por bloque.
+4. **Esquema normal** = texto LITERAL del oficial con **MI subrayado real** ( →  → ), «(…)» desplegables (), cajas de trampas, bloque RECUERDA conceptual y **todos mis cuadros/tablas/flechas/círculos recreados como esquemas visuales** () más los propios que ayuden a estudiar ( = 0). Los artículos con pregunta oficial van marcados.
+5. **Marcas a mano** (leer TODAS las páginas como imagen): sello «PREGUNTA EXAMEN» y círculo **EXOF** → oficial; **EX** → IA importante; **✱** (todos los colores) → oficial de la academia; **R1…Rn** (fichas RECUERDA) → oficiales. Se ponen en el párrafo exacto ( / , librería , plantilla ); si el apartado marcado no estaba en el esquema se añade literal; se transcriben también mis notas manuscritas importantes. Se genera el bloque RECUERDA con las R.
+6. **Fase 2 de las marcas:**  hasta **0** párrafos marcados sin pregunta (EXOF/✱/R → oficial; EX → IA) con  (plantilla ).
+7. **Mapa y huecos:**  (≈10 min, solo uno a la vez) y ; ninguna pregunta del tema sin sitio salvo las que yo apruebe.
+8. **Esquema Exprés** (⚡,  copiado de T2/T3/T7): oficial / marca mía / R → apartado ENTERO; solo IA → recortado con «(…)»; poco preguntado → título + 🎯; parrafadas sin subrayar plegadas; cuadro solo si recoge ≥ 80 % de las respuestas; sin RECUERDA final; **100 % de las preguntas del tema enlazadas**; tope de páginas por tramos (100 págs→20-25, 150→30-35, 200→35, >200→35-40).
+9. **App:** añadir el tema a la letra del temario oficial (CSS  y  del PDF) y comprobar título → artículo completo, sello EX/EXOF → su pregunta, botón 💡 recordatorio, «(…)» que se abren.
+10. **Comprobación en el navegador** (servidor local en 8766): letra, nº de «(…)», título, sello, recordatorios, 3-4 fichas contra mi PDF;  solo informativo.
+11. **Subida:** subir  del service worker, commit + push a  tras cada bloque y al final, y actualizar la memoria del proyecto.
+12. **Informe final:** cuántas oficiales corregidas, IA nuevas (por bloque), marcas leídas, preguntas de fase 2, cuadros, páginas del Exprés y % enlazado, qué ha quedado sin hacer y por qué.
+
+---
+
 ## REGLAS VIGENTES (pauta del usuario, 17/10/2026; mandan sobre cualquier otra línea de este prompt)
 1. **Nada de preguntas fáciles.** Todas las preguntas son de dificultad **media-alta o difícil** (la dificultad la ponen las opciones casi iguales, las coletillas, los plazos, las excepciones y los «señale la INCORRECTA»). Si hay un campo de dificultad, usa solo «media» (media-alta) o «difícil»; nunca «fácil». Ya no hay reparto 10/25/15.
 2. **5 preguntas por página del temario oficial** (50 por bloque de 10 páginas), bloque a bloque, con commit + push por bloque.
