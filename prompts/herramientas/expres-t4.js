@@ -4,7 +4,7 @@
 // cuadro en lugar del literal solo si recoge ≥ 80 % de las respuestas. Tope del usuario para este tema: ENTRE 40 Y 50 págs como máximo
 // (autorizó quitar preguntas IA propias si hace falta). Mandos por entorno: ASTERISCO=entero|ventana (por defecto ventana: el ✱ sale recortado con su sello), BAJO, ENTERO_MAX, UNO…
 // Uso: node prompts/herramientas/expres-t4.js
-Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0.8, RUN_MIN: 60, GRIS_PLIEGA: 'todo', ENTERO_MAX: 1500 }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
+Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0.8, RUN_MIN: 60, GRIS_PLIEGA: 'todo', ENTERO_MAX: 1500, OF_VENT: 1 }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(4);
 let V = []; try { V = require('./visuales-t4.js'); } catch (e) {}
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
@@ -14,6 +14,7 @@ const N = { BAJO: +(process.env.BAJO || 1e6), CAB: +(process.env.CAB || 6), ANT:
 const nivel = (k, p, f) => {
   const fuerte = f.ps.some(x => /data-ex=\?"[^"]*(?:EXOF|EX)/.test(x.at)) || /·s*Rd+/.test(f.cab);
   const ast = f.ps.some(x => /data-ex=/.test(x.at));
+  if (process.env.OF_VENT && p.of && !fuerte) return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 };
   if (p.of || fuerte || N.AST === 'entero' && ast) return { recorte: 'frases', entero: true, media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
   if (ast && N.AST === 'ventana') return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 };
   if (p.ia <= N.BAJO) return 'boton';
