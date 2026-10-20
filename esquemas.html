@@ -5675,7 +5675,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     const host=document.createElement('div'); host.id='print-host';
     const cl=esq.cloneNode(true); cl.dataset.fuente='1'; cl.removeAttribute('id');
     cl.querySelectorAll('.ex-plg:not(.on)').forEach(n=>n.classList.add('on'));          // (…) del Exprés desplegados
-    cl.querySelectorAll('.hueco:not(.abierto)').forEach(el=>{ const h=el.dataset.h; if(!h) return; const sg=el.nextSibling, t=document.createElement('span'); t.className='hueco-txt'; t.textContent=(/^[.,;:)]/.test(h)?'':' ')+h+(sg&&sg.nodeType===3&&!/^[\s.,;:)]/.test(sg.nodeValue)?' ':''); el.after(t); el.classList.add('abierto'); });   // (…) del temario desplegados
+    cl.querySelectorAll('.hueco-txt').forEach(n=>n.remove()); cl.querySelectorAll('.hueco.abierto').forEach(n=>n.classList.remove('abierto'));   // (…) grises del temario: se quedan cerrados
     host.appendChild(cl); document.body.appendChild(host);
     void cl.offsetHeight;                                    // maqueta la copia a 716 px
     if(window.pmRenderShapes) window.pmRenderShapes(cl,esq.id);
@@ -6546,6 +6546,7 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
 .ex-fh{cursor:pointer}.ex-fh:hover{text-decoration:underline}
 .ex-cont .ex-fh::after{content:"📖 Art. completo";float:right;margin:0 6px 0 8px;padding:2px 9px;border:1.5px solid #c8102e;border-radius:12px;font-size:11px;font-weight:700;color:#c8102e;text-transform:none;white-space:nowrap}
 #print-host .ex-fh::after{display:none}
+#print-host .ex-plg.on::before{content:"";padding:0}
 .ex-fb .ex-p{cursor:pointer}
 @media (max-width:700px){.esquema .ex-fb p,.esquema .txt p,.esquema .txt li{font-size:16px}}
 .ex-rec-b{display:inline-block;margin:6px 0 4px;padding:5px 12px;border:1.5px solid #c8102e;color:#c8102e;background:transparent;border-radius:16px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
