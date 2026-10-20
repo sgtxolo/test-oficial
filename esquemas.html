@@ -6394,6 +6394,19 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
 #print-host [data-fuente] .ex-fb{padding:3px 8px 4px!important;line-height:1.28!important}
 #print-host [data-fuente] .ex-fh,#print-host [data-fuente] .articulo-head{font-size:13px!important;padding:4px 8px!important}
 #print-host .ex-rec-b,#print-host .ex-rec{display:none!important}
+/* Móvil: aprovechar todo el ancho de la pantalla */
+@media (max-width:720px){
+  #app{max-width:none!important;padding:10px 4px 60px!important}
+  .esquema{padding:12px 4px!important;border-radius:12px}
+  .esquema-head{padding-left:8px;padding-right:8px}
+  .articulo{border-radius:8px}
+  .articulo-head{padding:8px 8px}
+  .articulo-body{padding:10px 8px}
+  .ex-fh{padding-left:8px!important;padding-right:8px!important}
+  .ex-fb{padding-left:8px!important;padding-right:8px!important}
+  .vis{padding:10px 8px}
+  .resp-strip{padding:8px 8px}
+}
 </style>
 <script id="script-ex-extra">
 (function(){
