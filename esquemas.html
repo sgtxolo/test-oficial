@@ -4778,12 +4778,40 @@ html{overflow-x:hidden}body{max-width:100%}
   function unwrap(root,n){
     root.querySelectorAll('.pm[data-pm="'+n+'"]').forEach(s=>{ const p=s.parentNode; while(s.firstChild) p.insertBefore(s.firstChild,s); p.removeChild(s); p.normalize(); });
   }
+  /* espejo Exprés ↔ esquema grande para resaltar/subrayar/tachar y su borrador (mismo texto + contexto; si no lo encuentra, no toca nada) */
+  const PQK='esquemas-espejo-pm-v1';
+  const pqLeer=()=>{ try{ return JSON.parse(localStorage.getItem(PQK)||'{}')||{}; }catch(e){ return {}; } };
+  const pqGuardar=q=>{ try{ localStorage.setItem(PQK,JSON.stringify(q)); }catch(e){} };
+  function pmAplicar(dest,o){
+    try{
+      const L=window.espejoLib; if(!L) return false;
+      const r=L.localizar(dest,o.d,textNodes); if(!r) return false;
+      const bk=bucket(dest.id);
+      if(o.k==='add'){ const m={n:++bk.n,k:o.m.k,s:r[0],e:r[1],c:o.m.c,o:o.m.o}; bk.t.push(m); wrap(dest,m); }
+      else { const ms=bk.t.filter(x=>x.k===o.m.k&&x.s<r[1]&&x.e>r[0]); if(!ms.length) return false; ms.forEach(x=>unwrap(dest,x.n)); bk.t=bk.t.filter(x=>ms.indexOf(x)<0); }
+      save(); if(dest.offsetParent!==null) renderShapes(dest);
+      return true;
+    }catch(err){ console.error('espejo pm',err); return false; }
+  }
+  function pmEspejo(esq,k,m){
+    try{
+      const L=window.espejoLib; if(!L) return;
+      const d=L.describir(esq,m.s,m.e,textNodes); if(!d) return;
+      const o={k:k,d:d,m:{k:m.k,c:m.c,o:m.o}}, dest=L.otraRaiz(esq), id=L.otroId(esq.id);
+      if(dest&&dest.id===id){ L.aviso(pmAplicar(dest,o)?'↔ Copiado también al '+(id.endsWith('-ex')?'Exprés':'esquema completo'):'↔ Ese cambio no se pudo copiar al '+(id.endsWith('-ex')?'Exprés':'esquema completo')+' (el texto no es igual allí)'); return; }
+      if(!dest&&/-ex$/.test(id)){ const q=pqLeer(); (q[id]=q[id]||[]).push(o); if(q[id].length>200) q[id].shift(); pqGuardar(q); }
+    }catch(err){ console.error('espejo pm',err); }
+  }
+  function pmVaciarCola(root){
+    try{ const q=pqLeer(), l=q[root.id]; if(!l||!l.length) return; delete q[root.id]; pqGuardar(q); l.forEach(o=>pmAplicar(root,o)); }catch(err){ console.error('espejo pm',err); }
+  }
   function addText(esq,k,range){
     const s=offsetOf(esq,range.startContainer,range.startOffset), e=offsetOf(esq,range.endContainer,range.endOffset);
     if(e<=s) return;
     if(k==='sq'||k==='ci'){ const rc=range.getBoundingClientRect(), n=window.pmAddShape(esq,k==='sq'?'rect':'oval',rc,{c:st.color,o:st.op,w:st.w,pad:k==='ci'?8:3}); window.pmPush(esq.id,()=>window.pmDelShape(esq,n)); return; }
     const bk=bucket(esq.id), m={n:++bk.n,k:k,s:s,e:e,c:st.color,o:st.op};
     bk.t.push(m); wrap(esq,m); save(); renderShapes(esq);
+    pmEspejo(esq,'add',m);
     window.pmPush(esq.id,()=>{ bk.t=bk.t.filter(x=>x.n!==m.n); unwrap(esq,m.n); renderShapes(esq); save(); });
   }
   let down=false, timer=0, ptr='mouse', penDrag=false;
@@ -4998,6 +5026,7 @@ html{overflow-x:hidden}body{max-width:100%}
     e.preventDefault(); e.stopPropagation();
   },true);
   function delMark(esq,bk,isShape,n,m){
+    if(!isShape) pmEspejo(esq,'del',m);
     if(isShape){ bk.f=bk.f.filter(x=>x.n!==n); renderShapes(esq); } else { bk.t=bk.t.filter(x=>x.n!==n); unwrap(esq,n); renderShapes(esq); }
     save();
     window.pmPush(esq.id,()=>{ if(isShape){ bk.f.push(m); renderShapes(esq); } else { bk.t.push(m); wrap(esq,m); renderShapes(esq); } save(); });
@@ -5027,7 +5056,7 @@ html{overflow-x:hidden}body{max-width:100%}
     });
   }
   /* el Exprés se monta al pulsar ⚡: se le ponen entonces sus marcas */
-  window.pmMontar=root=>{ svgOf(root); const bk=data[root.id]; if(bk) bk.t.slice().sort((a,b)=>a.n-b.n).forEach(m=>wrap(root,m)); renderShapes(root); if('ResizeObserver' in window) new ResizeObserver(()=>renderShapes(root)).observe(root); };
+  window.pmMontar=root=>{ svgOf(root); const bk=data[root.id]; if(bk) bk.t.slice().sort((a,b)=>a.n-b.n).forEach(m=>wrap(root,m)); if(root.classList.contains('ex-cont')) pmVaciarCola(root); renderShapes(root); if('ResizeObserver' in window) new ResizeObserver(()=>renderShapes(root)).observe(root); };
   if(window.alPrepararTema) window.alPrepararTema(90,esq=>window.pmMontar(esq));   // al final: las marcas se crearon con el tema completo (botones, cobertura…) y sus posiciones cuentan ese texto
   buildUI();
   const bm=document.getElementById('btn-marcas');
@@ -5259,8 +5288,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   const colaGuardar=q=>{ try{ localStorage.setItem(QK,JSON.stringify(q)); }catch(e){} };
   const otroId=id=>/-ex$/.test(id)?id.replace(/-ex$/,''):id+'-ex';
   const otraRaiz=esq=>{ const e=esq.classList.contains('ex-cont')?esq.closest('.esquema'):esq; if(!e) return null; return esq.classList.contains('ex-cont')?e:e.querySelector(':scope > .ex-cont'); };
-  function normTexto(root){
-    const raw=textNodes(root).map(n=>n.nodeValue).join(''), map=[]; let str='', sp=true;
+  function normTexto(root,tn){
+    const raw=(tn||textNodes)(root).map(n=>n.nodeValue).join(''), map=[]; let str='', sp=true;
     for(let i=0;i<raw.length;i++){ if(/\s/.test(raw[i])){ if(!sp){ str+=' '; map.push(i); sp=true; } } else { str+=raw[i]; map.push(i); sp=false; } }
     return {str,map};
   }
@@ -5268,14 +5297,14 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   const sufComun=(a,b)=>{ let i=0; while(i<a.length&&i<b.length&&a[a.length-1-i]===b[b.length-1-i]) i++; return i; };
   const preComun=(a,b)=>{ let i=0; while(i<a.length&&i<b.length&&a[i]===b[i]) i++; return i; };
   /* descriptor del texto cambiado: su texto normalizado y 40 caracteres de contexto a cada lado */
-  function describir(root,s,e){
-    const T=normTexto(root); let i0=T.map.findIndex(m=>m>=s); if(i0<0) return null; let i1=T.map.length-1; while(i1>=0&&T.map[i1]>=e) i1--; if(i1<i0) return null;
+  function describir(root,s,e,tn){
+    const T=normTexto(root,tn); let i0=T.map.findIndex(m=>m>=s); if(i0<0) return null; let i1=T.map.length-1; while(i1>=0&&T.map[i1]>=e) i1--; if(i1<i0) return null;
     return {t:T.str.slice(i0,i1+1),b:T.str.slice(Math.max(0,i0-40),i0),a:T.str.slice(i1+1,i1+41)};
   }
   /* busca el descriptor en otra raíz: devuelve [inicio,fin) en desplazamientos del texto sin normalizar, o null si no hay un sitio claro */
-  function localizar(root,d){
+  function localizar(root,d,tn){
     if(!d||!d.t||d.t.length<3) return null;
-    const T=normTexto(root); let best=null, bs=-1, empate=false, j=-1;
+    const T=normTexto(root,tn); let best=null, bs=-1, empate=false, j=-1;
     while((j=T.str.indexOf(d.t,j+1))>=0){
       const sc=sufComun(T.str.slice(Math.max(0,j-40),j),d.b)+preComun(T.str.slice(j+d.t.length,j+d.t.length+40),d.a);
       if(sc>bs){ bs=sc; best=j; empate=false; } else if(sc===bs) empate=true;
@@ -5285,6 +5314,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     return [T.map[best],T.map[best+d.t.length-1]+1];
   }
   function aviso(txt){ let t=document.getElementById('cat-toast'); if(!t){ t=document.createElement('div'); t.id='cat-toast'; t.style.cssText='position:fixed;left:50%;bottom:76px;transform:translateX(-50%);z-index:9100;background:#222;color:#fff;padding:8px 14px;border-radius:10px;font-size:13px;max-width:86vw;opacity:0;transition:opacity .2s;pointer-events:none'; document.body.appendChild(t); } t.textContent=txt; t.style.opacity='1'; clearTimeout(t._h); t._h=setTimeout(()=>{ t.style.opacity='0'; },2600); }
+  window.espejoLib={describir,localizar,otraRaiz,otroId,aviso};   // lo usa también el script de marcas (resaltar/subrayar/tachar)
   /* aplica en `dest` (ya montado) una orden {k:'add'|'rec'|'del', d:descriptor, c:categoría}; devuelve true si la aplicó */
   function aplicarOrden(dest,o){
     try{
