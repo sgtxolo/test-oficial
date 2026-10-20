@@ -5325,7 +5325,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       let n=0; l.forEach(o=>{ if(aplicarOrden(esq,o)) n++; });
     }catch(err){ console.error('espejo',err); }
   }
-  function aplicarRaiz(esq){
+  function aplicarRaiz(esq){ aplicarRaiz0(esq); if(esq.classList.contains('ex-cont')) vaciarCola(esq); }
+  function aplicarRaiz0(esq){
     {
       /* primero los del articulado (índices históricos intactos) y después los de los cuadros visuales */
       const vm=visDe(esq).flatMap(v=>[...v.querySelectorAll('mark, u.m-clave')]);
@@ -5437,6 +5438,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     }
     if(cur.el){
       let el=cur.el; const restore=snapUnder(esq,el), oldCat=catDe(el), isDel=b.dataset.a==='del';
+      if(!el.closest('.vis')){ try{ const s0=offsetOf(esq,el,0), d0=describir(esq,s0,s0+el.textContent.length); if(d0) espejo(esq,{k:isDel?'del':'rec',d:d0,c:b.dataset.c}); }catch(err){ console.error('espejo',err); } }
       if(el.dataset.add){                                   // subrayado añadido por ti
         const a=bk.a.find(x=>String(x.n)===el.dataset.add), an=el.dataset.add;
         if(isDel){ unwrap(el); bk.a=bk.a.filter(x=>x!==a); H(esq,()=>{ restore(); save(); }); }
@@ -5452,6 +5454,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       const rg=cur.range, ac=rg.commonAncestorContainer, vis=(ac.nodeType===1?ac:ac.parentElement).closest('.vis');
       const raiz=vis||esq, s=offsetOf(raiz,rg.startContainer,rg.startOffset), en=offsetOf(raiz,rg.endContainer,rg.endOffset);
       if(en>s){ const a={n:++bk.n,s,e:en,c:b.dataset.c}; if(vis) a.vi=visDe(esq).indexOf(vis); bk.a.push(a); wrapAdd(esq,a);
+        if(!vis){ try{ const d0=describir(esq,s,en); if(d0) espejo(esq,{k:'add',d:d0,c:b.dataset.c}); }catch(err){ console.error('espejo',err); } }
         H(esq,()=>{ esq.querySelectorAll('[data-add="'+a.n+'"]').forEach(unwrap); bk.a=bk.a.filter(x=>x!==a); save(); }); reshape(esq); }
       getSelection().removeAllRanges();
     }
