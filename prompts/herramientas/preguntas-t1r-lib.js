@@ -24,6 +24,7 @@ const NORMAS = {
   p13: ['Protocolo n.º 13 al Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales, relativo a la abolición de la pena de muerte en todas las circunstancias (Vilna, 3 de mayo de 2002)', 'el Protocolo n.º 13 al Convenio Europeo de Derechos Humanos', 'Protocolo n.º 13 al Convenio Europeo de Derechos Humanos'],
   er: ['Estatuto de Roma de la Corte Penal Internacional, hecho en Roma el 17 de julio de 1998', 'el Estatuto de Roma', 'Estatuto de Roma de la Corte Penal Internacional'],
   ac: ['Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional', 'el Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional', 'Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional'] };
+const COLA = [', en los términos que establezca la propia norma', ', salvo que se disponga otra cosa en la normativa aplicable', ', conforme al procedimiento que se establezca reglamentariamente', ', sin perjuicio de lo dispuesto en otras disposiciones'];
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const nrm = s => s.replace(/=====PAG \d+=====/g, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/-\s*\n\s*/g, '').replace(/[^a-z0-9ñ]/g, '');
 exports.run = function ({ bloque, Q, arg = process.argv.slice(2) }) {
@@ -39,6 +40,8 @@ exports.run = function ({ bloque, Q, arg = process.argv.slice(2) }) {
     const [nom, corta, pref] = NORMAS[q.k];
     const ref = `${q.a} de ${corta}`;
     const explicacion = `<span class="ex-resp">Respuesta correcta: <b>${L[c]}</b> · <mark class="ex-key">${esc(ops[c].replace(/\.$/, ''))}</mark></span>El <span class="ref-norma">${ref}</span> dispone: <span class="ref-concepto">"${esc(q.t)}"</span>. ${esc(q.p)} <em style="color:var(--texto-gris)">(Pregunta generada por IA)</em>`;
+    // la correcta nunca la más larga: se alarga la incorrecta más larga con una coletilla verosímil
+    for (let g = 0; g < 3 && ops[c].length >= Math.max(...ops.filter((x, j) => j !== c).map(x => x.length)); g++) { const j = [0, 1, 2, 3].filter(x => x !== c).sort((x, y) => ops[y].length - ops[x].length)[0]; ops[j] = ops[j].replace(/[.]$/, '') + COLA[(i + g) % COLA.length] + '.'; }
     return { id: '1-ia-' + (ini + i), pregunta: `${nom}. ${q.r ? q.r + '. ' : ''}${q.e}`, opciones: ops, correcta: c, dificultad: q.d === 'dificil' ? 'dificil' : 'media', explicacion, apartado: pref };
   });
   // verificación de citas contra el texto oficial extraído (pdftotext)

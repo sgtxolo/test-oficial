@@ -17,6 +17,7 @@ const NORMAS = {
   rd: ['Real Decreto 179/2005, sobre prevención de riesgos laborales en la Guardia Civil', 'el RD 179/2005'] };
 // Nombre del enunciado (como las oficiales) para el RD
 const PREF = { rd: 'Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil' };
+const COLA = [', en los términos que establezca la propia norma', ', salvo que se disponga otra cosa en la normativa aplicable', ', conforme al procedimiento que se establezca reglamentariamente', ', sin perjuicio de lo dispuesto en otras disposiciones'];
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const nrm = s => s.replace(/=====PAG \d+=====/g, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/-\s*\n\s*/g, '').replace(/[^a-z0-9ñ]/g, '');
 exports.run = function ({ bloque, Q, texto = 'prompts/temario-limpio/tema11/oficial-paginas.txt', arg = process.argv.slice(2) }) {
@@ -30,6 +31,8 @@ exports.run = function ({ bloque, Q, texto = 'prompts/temario-limpio/tema11/ofic
     const [nom, corta] = NORMAS[q.k];
     const ref = `${q.a} de ${corta}`;
     const explicacion = `<span class="ex-resp">Respuesta correcta: <b>${L[c]}</b> · <mark class="ex-key">${esc(ops[c].replace(/\.$/, ''))}</mark></span>El <span class="ref-norma">${ref}</span> dispone: <span class="ref-concepto">"${esc(q.t)}"</span>. ${esc(q.p)} <em style="color:var(--texto-gris)">(Pregunta generada por IA)</em>`;
+    // la correcta nunca la más larga: se alarga la incorrecta más larga con una coletilla verosímil
+    for (let g = 0; g < 3 && ops[c].length >= Math.max(...ops.filter((x, j) => j !== c).map(x => x.length)); g++) { const j = [0, 1, 2, 3].filter(x => x !== c).sort((x, y) => ops[y].length - ops[x].length)[0]; ops[j] = ops[j].replace(/[.]$/, '') + COLA[(i + g) % COLA.length] + '.'; }
     return { id: '11-ia-' + (ini + i), pregunta: `${PREF[q.k] || nom}. ${q.r}. ${q.e}`, opciones: ops, correcta: c, dificultad: 'media', explicacion, apartado: nom };
   });
   if (ia.length > 50) throw new Error('más de 50 preguntas en el bloque');
