@@ -7,7 +7,7 @@
 const fs = require('fs'), path = require('path');
 const RAIZ = path.join(__dirname, '..', '..'), F = path.join(RAIZ, 'test-oficial-conocimiento.html');
 const BS = String.fromCharCode(92), L = 'ABCD';
-const nrm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ]/g, '');
+const nrm = s => s.replace(/=====PAG \d+=====/g, '').replace(/[­-]\s*\n\s*/g, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ]/g, '');
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 module.exports = function (C) {
   const fuente = nrm(C.fuentes.map(f => fs.readFileSync(path.join(RAIZ, 'prompts', 'temario-limpio', f), 'utf8')).join('\n'));
