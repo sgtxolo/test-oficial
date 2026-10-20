@@ -3639,7 +3639,7 @@ render();
   const tactil = matchMedia('(pointer:coarse)').matches || Math.min(screen.width, screen.height) < 900;
   if(!tactil) window.addEventListener('load', () => setTimeout(() => ric(paso), 1500));
 })();
-if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").catch(function(){});});}
+if("serviceWorker" in navigator){var __hadSW=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener("controllerchange",function(){if(__hadSW&&!sessionStorage.getItem("sw-recarga")){try{sessionStorage.setItem("sw-recarga","1");}catch(e){}location.reload();}});window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").then(function(r){try{r.update();}catch(e){}}).catch(function(){});});}
 // ---- LECTOR DE VOZ (Web Speech API) ----
 (function(){
   const bar = document.getElementById('voz-bar');
