@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <title>Esquemas de Estudio</title>
@@ -3647,7 +3647,8 @@ render();
   const tactil = matchMedia('(pointer:coarse)').matches || Math.min(screen.width, screen.height) < 900;
   if(!tactil) window.addEventListener('load', () => setTimeout(() => ric(paso), 1500));
 })();
-if("serviceWorker" in navigator){var __hadSW=!!navigator.serviceWorker.controller;navigator.serviceWorker.addEventListener("controllerchange",function(){if(__hadSW&&!sessionStorage.getItem("sw-recarga")){try{sessionStorage.setItem("sw-recarga","1");}catch(e){}location.reload();}});window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").then(function(r){try{r.update();}catch(e){}}).catch(function(){});});}
+/* El service worker ya sirve la versión nueva al abrir (pregunta al servidor si ha cambiado), así que no hace falta recargar la página cuando se actualiza: antes se veía la versión antigua y luego se recargaba sola. */
+if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js").then(function(r){try{r.update();}catch(e){}}).catch(function(){});});}
 // ---- LECTOR DE VOZ (Web Speech API) ----
 (function(){
   const bar = document.getElementById('voz-bar');
