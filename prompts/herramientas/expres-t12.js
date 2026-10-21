@@ -1,8 +1,8 @@
 // ⚡ EXPRÉS del Tema 12 (Ley 50/1997, del Gobierno). Mismo formato que los Temas 3 y 9 (16/10/2026 y plan maestro 21/10/2026):
 // oficial / marca suya (EXAMEN, EXOF, EX, ✱) / R → apartado ENTERO; solo IA → recortado con (…); poco preguntado por IA → título + 🎯;
-// por artículo o el literal o el cuadro (los cuadros de tema12/visuales-t12.js, UNO=0); sin RECUERDA final; fuera las preguntas de «solo artículo».
+// por artículo o el literal o el cuadro (los cuadros de tema12/visuales-t12.js; UNO=0,6: con 0,8 solo entraban 5 de 14 y con 0 salían cuadro y literal a la vez); sin RECUERDA final; fuera las preguntas de «solo artículo».
 // Uso: node prompts/herramientas/expres-t12.js     (ajustables: BAJO, CAB, ANT, UNO y los de expres-lib)
-Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0, RUN_MIN: 90, GRIS_PLIEGA: 'cifra' }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
+Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0.6, RUN_MIN: 90, GRIS_PLIEGA: 'cifra' }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(12);
 const V = require('./tema12/visuales-t12.js');
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
