@@ -1,5 +1,7 @@
 // Tema 12 (Ley 50/1997, del Gobierno) · marcas a mano del temario escaneado 08-08-2026 (marcas-t12.txt) + fichas RECUERDA R1-R10 (págs. 31-32 del PDF).
 // Uso: node prompts/herramientas/tema12/marcas-t12.js [--dry]
+// ⚠ NO volver a ejecutar sobre el esquema ya subrayado: marcas-lib no reconoce algunas cabeceras con <mark> y DUPLICA fichas (21/10/2026).
+//   Marcas nuevas → ponerlas a mano en data-ex (como se hizo con la «E» roja = EX de los arts. 2.2 y 4.1).
 require('../marcas-lib.js')({
   T: 12,
   normas: { L50: { txt: 'tema12/ley50.txt', bloque: 'T12_LEY50', nombre: 'Ley del Gobierno', tituloEnLinea: true } },

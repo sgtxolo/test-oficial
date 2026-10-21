@@ -94,7 +94,7 @@ En mi temario subrayado marco a mano lo que ha caído o caerá en examen:
 - **Círculo a bolígrafo con «EXOF»** (a veces en minúscula, «exof»): **examen oficial**, lo más importante.
 - **Sello impreso «PREGUNTA EXAMEN 2020»** en el borde izquierdo (a veces con un icono «B» y un número): salió en el examen oficial de 2020.
 - **Asteriscos ✱** (azules, rojos y dorados): preguntas de la academia Prefortia, importantes y con opción a salir → **cuentan como marca de examen y sus preguntas van al banco OFICIAL** (pauta del usuario, 16/10/2026).
-- **Círculo con R** (resumen) = ficha R (ver «Cambios del 15/10/2026»). **No son marcas de examen:** «o/o» (ojo), «ESQ» (esquema), «P», «!!», y el «E» rojo grande con flecha (significado sin confirmar: pregúntame si aparece).
+- **Círculo con R** (resumen) = ficha R (ver «Cambios del 15/10/2026»). **No son marcas de examen:** «o/o» (ojo), «ESQ» (esquema), «P», «!!». **La «E» roja grande con flecha SÍ es marca de examen = EX → banco OFICIAL** (aclarado por el usuario el 21/10/2026).
 
 Qué haces con cada marca (todo, y en este orden):
 1. **Localízalas todas.** Recorre **todas las páginas** del PDF subrayado una a una (renderiza cada página con PyMuPDF a 90-100 dpi y míralas; no te fíes del OCR de `subrayado-pdf.py`, que no ve los círculos de bolígrafo). Haz una lista: norma → artículo → apartado → tipo de marca (EX / EXOF / EXAMEN 2020) → página. Anota también cada **cuadro, tabla o esquema** del temario.
