@@ -1,15 +1,23 @@
-// ⚡ EXPRÉS del Tema 12 (Ley 50/1997, del Gobierno). Formato LITERAL + CUADROS (reglas del 14/10/2026), máx. 25 págs: por artículo, O el literal O el cuadro
-// (nunca los dos; el cuadro solo si recoge la respuesta de ≥ 80 % de las preguntas del artículo). Tema corto → SIN recorte (párrafos
-// literales enteros con pregunta); fuera las preguntas cuya respuesta es solo «el artículo X» (preguntas-articulo.js).
-// Uso: node prompts/herramientas/expres-t12.js
+// ⚡ EXPRÉS del Tema 12 (Ley 50/1997, del Gobierno). Mismo formato que los Temas 3 y 9 (16/10/2026 y plan maestro 21/10/2026):
+// oficial / marca suya (EXAMEN, EXOF, EX, ✱) / R → apartado ENTERO; solo IA → recortado con (…); poco preguntado por IA → título + 🎯;
+// por artículo o el literal o el cuadro (los cuadros de tema12/visuales-t12.js, UNO=0); sin RECUERDA final; fuera las preguntas de «solo artículo».
+// Uso: node prompts/herramientas/expres-t12.js     (ajustables: BAJO, CAB, ANT, UNO y los de expres-lib)
+Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0, RUN_MIN: 90, GRIS_PLIEGA: 'cifra' }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(12);
-const V = require('./visuales-t12.js');
+const V = require('./tema12/visuales-t12.js');
+Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
+const N = { BAJO: +(process.env.BAJO || 2), CAB: +(process.env.CAB || 6), ANT: +(process.env.ANT || 5) };
+const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-(ex|r)=/.test(x.at));
+  if (p.of || marca) return { recorte: 'frases', entero: true, media: { cabeza: N.CAB, antes: N.ANT, umbral: 160 } };
+  if (p.ia <= N.BAJO) return 'boton';
+  return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
 
-Object.assign(X.opciones, { recorte: false });   // tema corto: párrafos literales enteros
-const H = X.automatico(V, {}, { uno: 0.8 });
+const EXTRAS = {};
+const H0 = X.automatico(V, EXTRAS, { uno: +process.env.UNO, nivel });
+const S = X.asignaSueltas(H0);
+const H = X.automatico(V, Object.assign(EXTRAS, S.extras), { uno: +process.env.UNO, nivel }) + S.html;
+console.log(`Preguntas sueltas: ${S.n} asignadas a su artículo · ${S.g} en grupos al final`);
 
-module.exports = { visuales: () => [] };   // los cuadros ya están en el esquema normal (visuales-t12.js)
-if (require.main === module) X.publica(H, [
-  { nombre: 'Título I (Gobierno y órganos)', k0: 0, k1: 10 }, { nombre: 'Título II (estatuto)', k0: 11, k1: 16 },
-  { nombre: 'Títulos III y IV (funcionamiento y en funciones)', k0: 17, k1: 20 },
-  { nombre: 'Título V (iniciativa legislativa y potestad reglamentaria)', k0: 21, k1: 26 }, { nombre: 'Título VI (control)', k0: 27, k1: 28 }]);
+module.exports = { visuales: () => [] };   // los cuadros ya están en el esquema normal (tema12/visuales-t12.js)
+const k1 = X.fichaBloque.findIndex(t => /^RECUERDA/.test(t));
+if (require.main === module) X.publica(H, [{ nombre: 'Tema 12', k0: 0, k1: (k1 > 0 ? k1 : X.fichas.length) - 1 }]);
