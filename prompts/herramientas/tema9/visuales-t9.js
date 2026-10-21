@@ -71,6 +71,8 @@ v('Artículo 23', cols('La Guardia Civil depende de… (cuadro del temario · ar
   { t: 'MINISTERIO DEL INTERIOR', l: [`En el desempeño de las funciones que se le atribuyen por la ${P('LO 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad')}.`] },
   { t: 'MINISTERIO DE DEFENSA', l: [`En el cumplimiento de las ${R('misiones de carácter militar')} que se le encomienden.`] }]));
 
+module.exports = V;
+if (require.main !== module) return;   // al importarlo desde expres-t9.js solo se exportan los cuadros
 // ───────── inserción en T9.lo de esquemas.html ─────────
 const F = 'esquemas.html';
 const s = fs.readFileSync(F, 'utf8').split('\n');
