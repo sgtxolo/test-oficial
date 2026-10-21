@@ -1,4 +1,8 @@
-const CACHE_NAME = "oposicion-cache-v179";
+const CACHE_NAME = "oposicion-cache-v181";
+// La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
+// Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
+// versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
+const DATOS = "oposicion-datos";
 const APP_SHELL = [
   "./test-oficial-conocimiento.html",
   "./test-oficial-ingles.html",
@@ -24,71 +28,80 @@ const APP_SHELL = [
   "./icon-conocimiento-180.png",
   "./icon-esquemas-180.png"
 ];
+// Sin respuesta de la red en este tiempo se abre la copia guardada (red muy lenta o sin cobertura).
+const ESPERA_RED = 4000;
 
 self.addEventListener("install", event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL))
-  );
   self.skipWaiting();
+  // Solo se bajan los ficheros que aún no estén guardados (primera instalación).
+  event.waitUntil(
+    caches.open(DATOS).then(async cache => {
+      await migrarCacheAntigua(cache);
+      for (const f of APP_SHELL) {
+        if (await cache.match(f)) continue;
+        try { const r = await fetch(f, { cache: "no-cache" }); if (r.ok) await cache.put(f, r); } catch (e) {}
+      }
+    })
+  );
 });
 
 self.addEventListener("activate", event => {
   event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
-    )
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(k => k !== DATOS).map(k => caches.delete(k))))
+      .then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
+
+// Copia lo que tenía la caché por versiones (oposicion-cache-vNNN) para no volver a descargarlo.
+async function migrarCacheAntigua(cache) {
+  if ((await cache.keys()).length) return;
+  const viejas = (await caches.keys()).filter(k => k.indexOf("oposicion-cache-") === 0);
+  for (const k of viejas) {
+    const c = await caches.open(k);
+    for (const req of await c.keys()) {
+      if (await cache.match(req)) continue;
+      const r = await c.match(req);
+      if (r) await cache.put(req, r);
+    }
+  }
+}
 
 self.addEventListener("fetch", event => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
-  const isHtml = event.request.mode === "navigate" || url.pathname.endsWith(".html") || url.pathname.includes("/expres/");
+  const esPagina = event.request.mode === "navigate" || url.pathname.endsWith(".html") || url.pathname.includes("/expres/");
 
-  if (url.pathname.endsWith("/esquemas.html")) {
-    // Esquemas (10 MB): se abre al instante desde la copia guardada y se actualiza en segundo plano.
-    event.respondWith(
-      caches.open(CACHE_NAME).then(cache => cache.match(event.request).then(cached => {
-        const red = fetch(event.request, { cache: "no-store" }).then(r => { if (r && r.status === 200) cache.put(event.request, r.clone()); return r; });
-        if (cached) { event.waitUntil(red.catch(() => {})); return cached; }
-        return red;
-      }))
-    );
+  if (esPagina) {
+    // Red primero, pero preguntando "¿ha cambiado?" (no-cache): si no ha cambiado, el servidor
+    // contesta 304 y no se baja nada. Así la app se abre UNA sola vez y ya en la versión buena,
+    // sin enseñar primero la antigua y recargar después.
+    event.respondWith(caches.open(DATOS).then(async cache => {
+      const clave = url.origin + url.pathname;
+      const red = fetch(event.request, { cache: "no-cache" }).then(r => {
+        if (r && r.status === 200) cache.put(clave, r.clone());
+        return r;
+      });
+      const guardada = await cache.match(clave);
+      if (!guardada) return red;
+      event.waitUntil(red.catch(() => {}));
+      const plazo = new Promise(ok => setTimeout(() => ok(null), ESPERA_RED));
+      const r = await Promise.race([red.catch(() => null), plazo]);
+      return (r && r.ok) ? r : guardada;
+    }));
     return;
   }
 
-  if (isHtml) {
-    // Red primero para HTML: siempre intenta traer la Ãºltima versiÃ³n;
-    // si no hay red (offline), sirve la copia cacheada.
-    event.respondWith(
-      fetch(event.request, { cache: "no-store" })
-        .then(response => {
-          if (response && response.status === 200) {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-          }
-          return response;
-        })
-        .catch(() => caches.match(event.request))
-    );
-    return;
-  }
-
-  event.respondWith(
-    caches.match(event.request).then(cached => {
-      const fetchPromise = fetch(event.request)
-        .then(response => {
-          if (response && response.status === 200) {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-          }
-          return response;
-        })
-        .catch(() => cached);
-      return cached || fetchPromise;
-    })
-  );
+  // Iconos y manifiestos: copia guardada al instante y se actualiza en segundo plano.
+  event.respondWith(caches.open(DATOS).then(async cache => {
+    const guardada = await cache.match(event.request);
+    const red = fetch(event.request).then(r => {
+      if (r && r.status === 200) cache.put(event.request, r.clone());
+      return r;
+    });
+    if (guardada) { event.waitUntil(red.catch(() => {})); return guardada; }
+    return red;
+  }));
 });
