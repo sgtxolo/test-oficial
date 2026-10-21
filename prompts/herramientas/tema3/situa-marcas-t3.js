@@ -38,7 +38,7 @@ function parrafo(m) {
 }
 const res = marcas.map(m => { const s = parrafo(m); const ids = s ? Object.entries(MAPA).filter(([, v]) => v === `3-${s.k}-${s.j}` || v.startsWith(`3-${s.k}-${s.j}-`)).map(([id]) => id) : [];
   return { ...m, t: tipoN(m.tipo), sitio: s && `${s.k}-${s.j}`, of: ids.filter(i => !/-ia-/.test(i)), ia: ids.filter(i => /-ia-/.test(i)) }; });
-module.exports = { res, marcas, fichasDe };
+module.exports = { res, marcas, fichasDe, parrafo };
 if (require.main === module) {
   if (process.argv.includes('--json')) fs.writeFileSync(path.join(__dirname, 'marcas-situadas-t3.json'), JSON.stringify(res, null, 1));
   const sin = process.argv.includes('--sin');

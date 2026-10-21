@@ -9,7 +9,7 @@
 // configuración vigente = la del Tema 2 (16/10/2026, formato definitivo): oficial / marca suya (EXAMEN, EXOF, EX, ✱) / R → apartado
 // ENTERO; lo que solo tiene IA → recortado con (…); poco preguntado por IA (≤ BAJO) → solo título + 🎯; parrafadas sin subrayar y
 // grises largos en (…); cuadro solo si recoge ≥ 80 % de las respuestas; sin vecinos
-Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0.8, RUN_MIN: 90, GRIS_PLIEGA: 'cifra' }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
+Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0, RUN_MIN: 90, GRIS_PLIEGA: 'cifra' }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(3);
 const V = require('./visuales-t3.js');
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
