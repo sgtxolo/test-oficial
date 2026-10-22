@@ -250,7 +250,7 @@ v('Disposición adicional primera — Plazo máximo para resolución de expedien
   [P('15 días naturales'), 'Visados de tránsito o estancia (normativa comunitaria).'],
   [P('3 meses'), `Prórroga de residencia, renovación del trabajo y residencia de larga duración: silencio ${Y('positivo')}.`],
   [P('1 mes'), `Modificación de la limitación territorial o de ocupación de las autorizaciones iniciales: silencio ${Y('positivo')}.`]]));
-v('Disposición adicional cuarta — ', arbol('D.A. 4.ª · Inadmisión a trámite de las solicitudes', 'La autoridad competente para resolver inadmitirá a trámite:', [
+v('Disposición adicional cuarta —', arbol('D.A. 4.ª · Inadmisión a trámite de las solicitudes', 'La autoridad competente para resolver inadmitirá a trámite:', [
   'a) Falta de legitimación del solicitante, o insuficiente acreditación de la representación.',
   'b) Presentación de la solicitud fuera del plazo legalmente establecido.',
   'c) Reiteración de una solicitud ya denegada, siempre que las circunstancias no hayan variado.',

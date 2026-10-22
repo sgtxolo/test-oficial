@@ -58,6 +58,9 @@ exports.run = function ({ bloque, Q, arg = process.argv.slice(2) }) {
     return;
   }
   if (malas.length || dup.size) throw new Error('hay citas no literales u opciones repetidas: ejecuta con --json');
+  // IA retiradas por no tener sitio en el esquema (apartados que el esquema omite): tema6/mapa-fijo-gen.js las lista
+  const QUITADAS = new Set(JSON.parse(fs.readFileSync('prompts/herramientas/tema6/ia-quitadas-t6.json', 'utf8')));
+  for (let i = ia.length - 1; i >= 0; i--) if (QUITADAS.has(ia[i].id)) ia.splice(i, 1);
   let s = fs.readFileSync(F, 'utf8');
   const rango = id => { const k = '{"id":"' + id + '"'; const i = s.indexOf(k); if (i < 0) return null; let d = 0, inS = false, e = false, j = i; for (; j < s.length; j++) { const ch = s[j]; if (inS) { if (e) e = false; else if (ch === BS) e = true; else if (ch === '"') inS = false; continue; } if (ch === '"') inS = true; else if (ch === '{') d++; else if (ch === '}') { d--; if (d === 0) break; } } return [i, j + 1]; };
   const PURGA = '(function(){/* purga IA tema 6 */const S=window.__seedIdsIA||{};const P=(state.preguntasIA||{})[6];if(!P)return;const n=P.length;state.preguntasIA[6]=P.filter(q=>!(q&&/^6-ia-\\d+$/.test(q.id)&&!S[q.id]));state.preguntasIA[6].length!==n&&saveState()})();';
