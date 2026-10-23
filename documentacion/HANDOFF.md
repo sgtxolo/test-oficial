@@ -54,3 +54,23 @@ Seguir con el **Tema 9 (Defensa Nacional)** o el tema que el usuario indique, re
 
 ## Recordatorio de memoria del proyecto (pinned)
 Cualquier cambio en este repo se commitea y pushea a `origin/main` inmediatamente, porque la PWA se sirve desde la versión desplegada en GitHub al móvil del usuario vía service worker (ver memoria `auto-commit-push-on-change.md`).
+
+## Cambios del 22/10/2026 (esquemas.html) — leer antes de tocar marcas, Exprés o sincronización
+- **Posiciones de las marcas** (subrayado de colores `script-cats` y marcas `script-marcas`): se guardan como posiciones de texto.
+  Desde ahora NO cuenta el texto de la interfaz (`window.ESQ_UI`: botones, `.rep-ficha`, `.cobertura`, `.estado-resumen`,
+  `.ex-clave`, `.ex-rq`, `[data-ui]`…). Todo lo que la app inserte dentro de un esquema tiene que ser `<button>` o llevar
+  `data-ui` (o una de esas clases); si no, las marcas de detrás se corren. Las buckets nuevas llevan `v:2`; las antiguas se
+  recolocan una sola vez con `esqMigrar` (`script-marcas-lib`). Los espacios entre bloques SÍ cuentan: para volver a montar
+  un tema usar `esqRemontar`, que lo deja idéntico.
+- **Cuadros/círculos alrededor de texto** (▭A ◯A y los del menú de subrayado): son marcas de texto `k:'bx'|'ov'` y se dibujan
+  un recuadro por renglón (`cajas` en `script-marcas`). Los cuadrados antiguos de una línea se convierten solos.
+- **Exprés ↔ esquema completo**: todo cambio va a una cola (`esquemas-espejo-v1` y `esquemas-espejo-pm-v1`) y se copia al
+  sincronizar (`espejoSincronizar`) o al montar el otro esquema (`espejoAplicar`). Poner un subrayado quita lo que hubiera
+  debajo («un solo subrayado»: `limpiar` en cats y en pm).
+- **Sincronización** (`script-sync-marcas`): ya no sube a cada cambio. Botón «☁ Sincronizar · N», sola cada 10 min si hay
+  cambios y al salir de la app. Al abrir solo baja; lo bajado se aplica con `esqAplicarRemoto` (sin `location.reload`).
+  Campo nuevo por tema: `p` = apartados añadidos al Exprés con «⚡+» (`esquemas-expres-extra`).
+- **Exprés**: «📌 Lo clave» bajo cada artículo y «✔ RECUERDA — preguntas rápidas» al final (`script-mejoras-2210`). Usan
+  `expres/qN.js`, generado con `node prompts/herramientas/preguntas-rapidas.js` → **volver a ejecutarlo cada vez que se
+  regenere un `expres/tN.js` o se añadan preguntas al test**.
+- Repaso espaciado: siempre a los 20 días.
