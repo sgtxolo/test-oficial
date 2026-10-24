@@ -307,7 +307,7 @@ Son reglas de la APP (código general en `esquemas.html`, bloques `script-huecos
 6. **Tipografía del temario oficial** (Myriad Condensed; en su defecto Arial Narrow / Roboto Condensed): justificada, 15 px en pantalla (16 px en móvil), títulos de artículo en rojo y mayúsculas. PDF a 13 px, interlineado 1,28 (Tema 2: 34 → 26 págs con 12,5 px). Se activa por tema en el CSS (`:is(#tema-1,#tema-2,…)`) y en `data-fuente` de la copia de impresión; añadir el tema nuevo en ambos sitios.
 7. **Comprobación al terminar cada tema** (en el navegador): letra, nº de «(…)» que se abren / no se abren, título → artículo, un sello EX → una sola pregunta, recordatorios presentes. Subir la versión de caché del service worker.
 
-Pendientes: temas 6, 8, 9, 10, 15 y 16 sin Exprés (empezar por el 6; hacen falta su temario subrayado y el oficial); probar el simulacro sin tiempo y la letra en el móvil.
+Pendientes: temas 15 y 16 sin Exprés (el T10 se hizo el 24/10/2026: 516 IA, 107 oficiales de marcas, 26 cuadros y Exprés 30,9 págs) (empezar por el 6; hacen falta su temario subrayado y el oficial); probar el simulacro sin tiempo y la letra en el móvil.
 
 ### Fase 2 de las marcas con librerías (20/10/2026, hecho en T6, T8 y T9)
 1. `node prompts/herramientas/cobertura-marcas.js N` → lista (%TEMP%/faltaN.json) los párrafos con marca suya sin pregunta oficial (también las EX necesitan pregunta OFICIAL; una IA no basta).
