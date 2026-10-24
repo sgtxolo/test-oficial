@@ -5937,6 +5937,10 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   body.imp-fijo>*:not(#print-host){display:none!important}
   body.imp-fijo #print-host{position:static;left:auto;width:716px;margin:0}
   #pdf-menu{display:none!important}
+  /* cuadros, flechas y tablas: sin barras de desplazamiento y sin partirse entre dos folios */
+  #print-host .vis,#print-host .vis-comp,#print-host .vis-plazos,#print-host .ex-tab,#print-host .vis-tabla{overflow:visible!important;max-width:none!important}
+  #print-host .vis,#print-host .vis-col,#print-host .vis-paso,#print-host .vis-rama,#print-host .vis-plazo,#print-host .vis-raiz,#print-host .trampa,#print-host .recuerda,#print-host .ex-tab tr,#print-host .ex-rq,#print-host .ex-clave{break-inside:avoid;page-break-inside:avoid}
+  #print-host .ex-fh,#print-host .articulo-head,#print-host .vis-t{break-after:avoid;page-break-after:avoid}
 }
 </style>
 <script id="script-pdf">
