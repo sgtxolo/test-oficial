@@ -7222,7 +7222,10 @@ body.rq-ocultas .ex-rq .rq-r:not(.ver){color:transparent;text-shadow:0 0 9px rgb
   /* índice, dentro de las hojas del artículo crudo, del párrafo del Exprés (null si no se reconoce) */
   function indiceCrudo(rn,p){
     const pn=norm(textoDe(p)); if(pn.length<8) return null;
-    const i=rn.findIndex(r=>r.length>=8&&(pn.includes(r.slice(0,24))||pn.includes(r.slice(Math.floor(r.length/2),Math.floor(r.length/2)+24))||(pn.length>=16&&r.includes(pn.slice(0,24)))));
+    /* por pasadas, de la más fiable a la más laxa: un apartado corto («a) el Estado, o») no debe confundirse con otro que lo contiene a mitad de frase */
+    let i=rn.findIndex(r=>r.length>=8&&pn.includes(r.slice(0,24)));
+    if(i<0) i=rn.findIndex(r=>r.length>=8&&pn.length>=16&&r.includes(pn.slice(0,24)));
+    if(i<0) i=rn.findIndex(r=>r.length>=48&&pn.includes(r.slice(Math.floor(r.length/2),Math.floor(r.length/2)+24)));
     return i<0?null:i;
   }
   function colocar(f,w,x,esq){
