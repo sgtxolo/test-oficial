@@ -21,10 +21,11 @@ exports.run = function ({ bloque, Q, arg = process.argv.slice(2) }) {
   if (Q.length > 150) throw new Error('más de 150 preguntas en el bloque');
   const uso = [0, 0, 0, 0]; Q.forEach(q => { if (q.c !== null && q.c !== undefined) uso[q.c]++; });
   // la correcta nunca la más larga: si lo es (con la correcta en o[0]), se alarga la incorrecta más larga con una coletilla verosímil
-  const COLA = [', en los términos que establezca el propio Reglamento', ', salvo que el Estado miembro afectado disponga otra cosa', ', conforme al procedimiento que se establezca reglamentariamente', ', sin perjuicio de lo dispuesto en el Derecho nacional'];
+  const COLA = [', salvo que la autoridad judicial disponga otra cosa', ', sin perjuicio de lo dispuesto en la legislación especial', ', previa audiencia del Ministerio Fiscal', ', conforme a lo establecido en el propio Código', ', salvo pacto en contrario', ', con las excepciones que prevea la ley'];
   let ci = 0;
   Q.forEach(q => { if (!q.o || q.o.length !== 4 || (q.c !== null && q.c !== undefined)) return; let g = 0;
-    while (g++ < 3 && q.o[0].length >= Math.max(...q.o.slice(1).map(x => x.length))) { const j = [1, 2, 3].sort((x, y) => q.o[y].length - q.o[x].length)[0]; q.o[j] = q.o[j].replace(/[.]$/, '') + COLA[ci++ % COLA.length] + '.'; } });
+    const media = () => q.o.slice(1).reduce((a, x) => a + x.length, 0) / 3;
+    while (g++ < 4 && (q.o[0].length >= Math.max(...q.o.slice(1).map(x => x.length)) || q.o[0].length > 1.2 * media())) { const j = [1, 2, 3].sort((x, y) => (q.o[0].length >= Math.max(...q.o.slice(1).map(x => x.length)) ? q.o[y].length - q.o[x].length : q.o[x].length - q.o[y].length))[0]; q.o[j] = q.o[j].replace(/[.]$/, '') + COLA[ci++ % COLA.length] + '.'; } });
   const ia = Q.map((q, i) => {
     if (!NORMAS[q.k]) throw new Error('norma desconocida ' + q.k + ' en ' + i);
     if (!q.o || q.o.length !== 4) throw new Error('la pregunta ' + i + ' no tiene 4 opciones');
