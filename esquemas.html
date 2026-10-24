@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="fonts/fira-sans-condensed.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <title>Esquemas de Estudio</title>
@@ -4607,12 +4607,13 @@ body.embed #app{padding-top:4px}
     c.querySelectorAll('.ex-ficha:not(.borrado)').forEach(f => {
       const fb = f.querySelector('.ex-fb'); if (!fb) return;
       if (!fb.querySelector('.hueco:not(.abierto), .ex-plg:not(.on)')) return;
-      let t = ''; const w = document.createTreeWalker(fb, NodeFilter.SHOW_TEXT);
-      for (let n; (n = w.nextNode());) if (!n.parentNode.closest('.ex-plg-t, .hueco-txt, .hueco, .ex-anadido-x, button, [data-ui]')) t += n.nodeValue;
-      t = t.replace(/\(…\)/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
-      if (t.length >= 80) return;
-      fb.querySelectorAll('.ex-plg:not(.on)').forEach(x => x.classList.add('on'));
-      fb.querySelectorAll('.hueco:not(.abierto)').forEach(x => alternar(x));
+      const visible = el => { let t = ''; const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+        for (let n; (n = w.nextNode());) if (!n.parentNode.closest('.ex-plg-t, .hueco-txt, .hueco, .ex-anadido-x, button, [data-ui]')) t += n.nodeValue;
+        return t.replace(/\(…\)/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim(); };
+      const abre = el => { el.querySelectorAll('.ex-plg:not(.on)').forEach(x => x.classList.add('on')); el.querySelectorAll('.hueco:not(.abierto)').forEach(x => alternar(x)); };
+      if (visible(fb).length < 80) { abre(fb); return; }
+      /* un apartado que se queda en cuatro palabras y un (…) también se muestra entero */
+      [...fb.querySelectorAll('p, li')].filter(p => !p.querySelector('p, li') && !p.closest('.ex-anadido.borrado, .ex-quitado')).forEach(p => { if (visible(p).length < 60) abre(p); });
     });
   };
   /* Exprés: sus (…) se abren igual; el contenedor .ex-cont se monta después, así que se vigila */
