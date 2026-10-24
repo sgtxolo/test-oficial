@@ -256,6 +256,7 @@ body.menu-acc #barra-acciones{display:flex!important}
 /* ☰ Temas y ⋯ Menú siempre a mano: al bajar se quedan fijos arriba a la izquierda, pequeños */
 body.btns-fijos #btn-menu-temas,body.btns-fijos #btn-menu-acc{position:fixed;top:6px;z-index:99995;padding:3px 10px;font-size:12px;height:auto;min-height:0;box-shadow:0 2px 8px rgba(0,0,0,.25);background:var(--panel,#fff)}
 body.btns-fijos #btn-menu-temas{left:8px}
+body.btns-fijos .btn-volver{position:fixed;top:6px;z-index:99995;margin:0;padding:3px 10px;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
 body.btns-fijos #barra-acciones{position:fixed;top:40px;left:8px;right:auto;max-height:calc(100vh - 56px);overflow:auto}
 @media (max-width:720px){body.btns-fijos #barra-acciones{left:8px;right:8px;width:auto}}
 @media print{.btn-menu-temas,.menu-fondo,#btn-menu-acc{display:none!important}}
@@ -512,8 +513,8 @@ function mostrar(id){
   document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ cerrar(); document.body.classList.remove('menu-acc'); } });
   const ba=document.getElementById('btn-menu-acc'), pa=document.getElementById('barra-acciones');
   (function(){ const tp=document.querySelector('.topbar'); let on=false;
-    function pos(){ const w=b.offsetParent!==null?b.offsetWidth+16:8; ba.style.left=w+'px'; }
-    function act(){ const f=window.scrollY>(tp?tp.offsetHeight:80); if(f===on) return; on=f; document.body.classList.toggle('btns-fijos',f); if(f) pos(); else ba.style.left=''; }
+    function pos(){ const w=b.offsetParent!==null?b.offsetWidth+16:8; ba.style.left=w+'px'; const v=document.getElementById('btn-volver'); if(v) v.style.left=(w+ba.offsetWidth+6)+'px'; }
+    function act(){ const f=window.scrollY>(tp?tp.offsetHeight:80); if(f===on) return; on=f; document.body.classList.toggle('btns-fijos',f); if(f) pos(); else { ba.style.left=''; const v=document.getElementById('btn-volver'); if(v) v.style.left=''; } }
     addEventListener('scroll',act,{passive:true}); addEventListener('resize',()=>{ if(on) pos(); }); })();
   ba.onclick=()=>document.body.classList.toggle('menu-acc');
   document.addEventListener('pointerdown',e=>{ if(!document.body.classList.contains('menu-acc')) return;
