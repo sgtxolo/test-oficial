@@ -18,7 +18,7 @@ function cargarEsquemas() {
   const src = [...h.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1]).find(s => s.includes('temasPrograma'));
   const code = src.slice(0, src.search(/\nrender\(\);/)) + ';return esquemas;';
   const fake = () => new Proxy(function () {}, { get: (t, k) => k === Symbol.toPrimitive ? (() => '') : fake(), apply: () => fake(), set: () => true, construct: () => fake() });
-  return new Function('document', 'window', 'localStorage', 'speechSynthesis', code)(fake(), fake(), fake(), fake());
+  return new Function('document', 'window', 'localStorage', 'speechSynthesis', 'location', 'matchMedia', 'addEventListener', 'removeEventListener', code)(fake(), fake(), fake(), fake(), fake(), fake(), fake(), fake());
 }
 
 // ---------- 2. Cargar las preguntas (oficiales + IA) ----------

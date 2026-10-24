@@ -8,7 +8,7 @@ const h = fs.readFileSync(path.join(__dirname, '..', '..', 'esquemas.html'), 'ut
 const src = [...h.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1]).find(s => s.includes('temasPrograma'));
 const code = src.slice(0, src.search(/\nrender\(\);/)) + ';return esquemas;';
 const fake = () => new Proxy(function () {}, { get: (t, k) => k === Symbol.toPrimitive ? (() => '') : fake(), apply: () => fake(), set: () => true, construct: () => fake() });
-const html = new Function('document', 'window', 'localStorage', 'speechSynthesis', code)(fake(), fake(), fake(), fake())[N - 1].html;
+const html = new Function('document', 'window', 'localStorage', 'speechSynthesis', 'location', 'matchMedia', 'addEventListener', 'removeEventListener', code)(fake(), fake(), fake(), fake(), fake(), fake(), fake(), fake())[N - 1].html;
 // trocear en fichas y lo que va detrás de cada una hasta la siguiente ficha o bloque
 const piezas = html.split(/(?=<div class="articulo">|<div class="bloque-titulo">)/);
 // artículos que cubre cada esquema visual, por bloque de norma (título «Arts. 5 a 11 …», «Art. 13 …», «Arts. 8 y 9 …»)
