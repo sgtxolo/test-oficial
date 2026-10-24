@@ -51,10 +51,17 @@ function tema(T) {
     Q[q.id] = [pr, r, (/-ia-/.test(q.id) ? 0 : 1) | (esNeg ? 2 : 0)];
     n++; if (esNeg) neg++;
   }
+  // Reescritas a mano en forma de pregunta → respuesta (¿Quién…? ¿Cuándo…? ¿Qué…?): rapidas-reescritas/tN-*.json, {id: [pregunta, respuesta]}
+  let reesc = 0;
+  const dirR = path.join(__dirname, 'rapidas-reescritas');
+  if (fs.existsSync(dirR)) for (const fr of fs.readdirSync(dirR).filter(x => new RegExp('^t' + T + '-.*\\.json$').test(x))) {
+    const R = JSON.parse(fs.readFileSync(path.join(dirR, fr), 'utf8'));
+    for (const id in R) if (Q[id]) { Q[id][0] = R[id][0]; Q[id][1] = R[id][1]; reesc++; }
+  }
   const out = '/* Preguntas rápidas del Exprés del tema ' + T + ' (generado con prompts/herramientas/preguntas-rapidas.js; no editar a mano).\n   id → [pregunta corta, respuesta correcta, banderas: 1 = oficial, 2 = pregunta en negativo («señale la incorrecta»)] */\n'
     + '(window.EXPRES_Q=window.EXPRES_Q||{})[' + T + ']=' + JSON.stringify(Q) + ';\n';
   fs.writeFileSync(path.join(RAIZ, 'expres', 'q' + T + '.js'), out);
-  return { T, enlazadas: ids.size, con_texto: n, negativas: neg, kb: Math.round(out.length / 1024) };
+  return { T, enlazadas: ids.size, con_texto: n, negativas: neg, reescritas: reesc, kb: Math.round(out.length / 1024) };
 }
 
 const pedidos = process.argv.slice(2).map(Number).filter(Boolean);
