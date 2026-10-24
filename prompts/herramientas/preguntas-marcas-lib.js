@@ -12,7 +12,7 @@ const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 module.exports = function (C) {
   const fuente = nrm(C.fuentes.map(f => fs.readFileSync(path.join(RAIZ, 'prompts', 'temario-limpio', f), 'utf8')).join('\n'));
   // la correcta nunca la más larga: si lo es, se alarga la incorrecta MÁS larga con una coletilla verosímil (solo en opciones incorrectas)
-  const COLA = [', sin perjuicio de lo que establezcan los tratados internacionales', ', en los términos que determine la ley orgánica correspondiente', ', salvo que el órgano competente acuerde otra cosa de forma motivada', ', conforme al procedimiento que reglamentariamente se establezca'];
+  const COLA = C.cola || [', sin perjuicio de lo que establezcan los tratados internacionales', ', en los términos que determine la ley orgánica correspondiente', ', salvo que el órgano competente acuerde otra cosa de forma motivada', ', conforme al procedimiento que reglamentariamente se establezca'];
   let ci = 0;
   C.Q.forEach(q => { const long = i => q.o[i].length; let guard = 0;
     while (guard++ < 3 && q.o[q.c].length >= Math.max(...q.o.filter((_, i) => i !== q.c).map(x => x.length))) {
