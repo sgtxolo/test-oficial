@@ -79,7 +79,8 @@ exports.run = function ({ bloque, Q, arg = process.argv.slice(2) }) {
     if (primero < 0) anc = s.indexOf('(function(){/* purga IA tema 7 */'); if (sinPurga) s = s.slice(0, anc) + PURGA + s.slice(anc);
   }
   // 2) insertar el bloque nuevo justo antes de la purga (o sustituirlo si ya estaba)
-  const blk = '(function(){const seed=' + JSON.stringify(ia) + ';syncSeedIA(10,seed)})();';
+  const EXCLUIR = ['10-ia-10463', '10-ia-10762', '10-ia-11099'];   // sin sitio en el esquema tras el mapa (24/10/2026): se quitan, no se reinsertan
+  const blk = '(function(){const seed=' + JSON.stringify(ia.filter(x => !EXCLUIR.includes(x.id))) + ';syncSeedIA(10,seed)})();';
   const yaIni = s.indexOf('{"id":"' + ia[0].id + '"');
   if (yaIni >= 0) { const a = s.lastIndexOf('(function(){const seed=[', yaIni); const b = s.indexOf(';syncSeedIA(10,seed)})();', yaIni) + ';syncSeedIA(10,seed)})();'.length; s = s.slice(0, a) + blk + s.slice(b); }
   else { const p = s.indexOf('(function(){/* purga IA tema 10 */'); s = s.slice(0, p) + blk + s.slice(p); }
