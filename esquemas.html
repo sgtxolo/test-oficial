@@ -495,6 +495,8 @@ function mostrar(id){
 }
 (function(){const b=document.getElementById('btn-menu-temas'),f=document.getElementById('menu-fondo');
   const cerrar=()=>document.body.classList.remove('menu-temas');
+  /* al abrir en ordenador/tablet: se ve la lista de TEMAS (pantalla principal), no el tema 1 directamente */
+  if(!location.hash&&matchMedia('(min-width:721px) and (min-height:541px)').matches) document.body.classList.add('menu-temas');
   b.onclick=()=>document.body.classList.toggle('menu-temas'); f.onclick=cerrar;
   document.getElementById('nav-temas').addEventListener('click',e=>{ if(e.target.closest('.tema-nav-item')) cerrar(); });
   document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ cerrar(); document.body.classList.remove('menu-acc'); } });
@@ -3695,7 +3697,9 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
     if(cola.length){ estado = 'leyendo'; actualizarBoton(); hablar(); }
   }
 
-  window.vozApi = {reproducir, pausar, parar, saltar, estado: () => estado};
+  /* índice del primer fragmento cuyo bloque cumple la condición (para empezar a leer desde un artículo/ficha concreto) */
+  function indiceDe(fn){ if(estado === 'parado') construirCola(); return cola.findIndex(c => fn(c.el)); }
+  window.vozApi = {reproducir, pausar, parar, saltar, indiceDe, estado: () => estado};
   $('voz-play').onclick = () => estado === 'leyendo' ? pausar() : reproducir();
   $('voz-stop').onclick = parar;
   $('voz-sig').onclick = () => saltar(1);
@@ -3804,6 +3808,7 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
   <div class="c-tema"></div>
   <div class="c-inicio">
     <button type="button" data-a="seguir"></button>
+    <button type="button" data-a="estudio"></button>
     <button type="button" data-a="empezar"></button>
     <button type="button" data-a="modo"></button>
     <button type="button" data-a="elip"></button>
@@ -3848,12 +3853,35 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
     sel.innerHTML=ts.map(n=>`<option value="${n}">${nombre(n)}</option>`).join('');
     sel.value=String(ts.includes(cur)?cur:(g&&ts.includes(g.n)?g.n:ts[0]));
     const bs=q('[data-a="seguir"]');
-    if(g&&g.ex&&ts.includes(g.n)){ bs.style.display=''; bs.innerHTML='▶ Seguir donde me quedé<small>'+nombre(g.n)+' — «'+(g.x||'').replace(/</g,'&lt;')+'…»</small>'; }
+    if(g&&ts.includes(g.n)){ bs.style.display=''; bs.innerHTML='▶ 1 · Seguir donde me quedé ESCUCHANDO<small>'+(g.ex?'⚡ ':'📚 ')+nombre(g.n)+' — «'+(g.x||'').replace(/</g,'&lt;')+'…»</small>'; }
     else bs.style.display='none';
-    q('[data-a="empezar"]').innerHTML='⏮ Empezar el tema elegido desde el principio<small>el que marca la lista de abajo</small>';
-    q('.c-tema').textContent='🚗 Modo coche · '+(modoCoche()==='todo'?'📚 Completo':'⚡ Exprés'); etiquetas();
+    q('[data-a="empezar"]').innerHTML='⏮ 3 · Empezar el tema elegido desde el principio<small>el que marca la lista de abajo</small>';
+    q('.c-tema').textContent='🚗 Modo coche · '+(modoCoche()==='todo'?'📚 Completo':'⚡ Exprés'); etiquetas(); pintarEstudio();
     q('.c-texto').textContent=''; q('.c-info').textContent='';
   }
+  /* 2 · desde donde me quedé ESTUDIANDO (el 📍 del temario o del Exprés), aparte de dónde me quedé escuchando */
+  const esc=t=>String(t==null?'':t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const U=m=>window.ultimaApi&&window.ultimaApi[(m||modoCoche())==='todo'?'todo':'ex'];
+  /* el 📍 de estudio del modo elegido; si solo lo tienes marcado en el otro esquema (⚡/📚), se ofrece ese */
+  function pintarEstudio(){
+    const b=q('[data-a="estudio"]'), sel=q('#coche-tema'); if(!b||!sel) return;
+    const n=+sel.value, m1=modoCoche(), m2=m1==='todo'?'ex':'todo';
+    let m=m1, d=U(m1)&&U(m1).dato(n); if(!d){ m=m2; d=U(m2)&&U(m2).dato(n); }
+    if(!d||!d.k){ b.style.display='none'; return; }
+    b.dataset.m=m; b.style.display=''; b.innerHTML='📍 2 · Desde donde me quedé ESTUDIANDO<small>'+(m==='todo'?'📚 ':'⚡ ')+esc(nombre(n))+' — «'+esc(String(d.k).replace(/\s+/g,' ').slice(0,60))+'»</small>';
+  }
+  q('#coche-tema').addEventListener('change',pintarEstudio);
+  function empezarEstudio(n,modo){
+    if(modo){ try{ localStorage.setItem(MK,modo); }catch(e){} }
+    $c.classList.add('c-jugando'); irATema(n); vista(vistaGuardada());
+    const A=U(), d=A&&A.dato(n); let intentos=0;
+    (function esp(){
+      const el=d&&A.elemento(n);
+      if(d&&!el&&intentos++<40) return setTimeout(esp,150);              // el Exprés se descarga y se monta: se espera a que esté
+      setTimeout(()=>{ const idx=el?api().indiceDe(x=>x===el||el.contains(x)):0; api().reproducir(Math.max(0,idx)); },150);
+    })();
+  }
+  window.cocheDesde=function(n,modo){ abrir(); velTxt(); empezarEstudio(n,modo); };
   function abrir(){
     document.body.classList.add('coche-on'); $c.classList.remove('c-jugando','c-negro','c-pagina'); document.body.classList.remove('coche-pag');
     document.body.classList.remove('voz-abierta'); pintarInicio(); pantalla(true);
@@ -3878,7 +3906,8 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
   plegar(plegadoGuardado());
   function empezar(n,idx){
     $c.classList.add('c-jugando'); irATema(n); vista(vistaGuardada());
-    setTimeout(()=>{ api().reproducir(idx||0); },60);
+    let intentos=0;                                                      // en Exprés se espera a que se descargue y monte
+    (function esp(){ const e=document.querySelector('.esquema.active > .ex-cont .ex-fb'); if(modoCoche()==='ex'&&!e&&intentos++<40) return setTimeout(esp,150); setTimeout(()=>{ api().reproducir(idx||0); },60); })();
   }
   function velTxt(){ const v=document.getElementById('voz-vel'); q('.c-vel').textContent=(+v.value).toString().replace('.',',')+'×'; }
   function velPaso(d){ const v=document.getElementById('voz-vel'), i=Math.min(Math.max(v.selectedIndex+d,0),v.options.length-1); v.selectedIndex=i; v.dispatchEvent(new Event('change')); velTxt(); }
@@ -3900,9 +3929,10 @@ body.coche-pag.coche-plegado{padding-bottom:40vh}
     const b=e.target.closest('button'); if(!b) return;
     if(b.classList.contains('c-x')) return cerrar();
     const a=b.dataset.a, A=api(); if(!a||!A) return;
-    if(a==='modo'){ try{ localStorage.setItem(MK,modoCoche()==='todo'?'ex':'todo'); }catch(x){} etiquetas(); return; }
+    if(a==='modo'){ try{ localStorage.setItem(MK,modoCoche()==='todo'?'ex':'todo'); }catch(x){} etiquetas(); q('.c-tema').textContent='🚗 Modo coche · '+(modoCoche()==='todo'?'📚 Completo':'⚡ Exprés'); pintarEstudio(); return; }
+    if(a==='estudio'){ empezarEstudio(+q('#coche-tema').value,b.dataset.m); return; }
     if(a==='elip'){ window.cocheElip=!window.cocheElip; try{ localStorage.setItem(EK,window.cocheElip?'1':'0'); }catch(x){} etiquetas(); return; }
-    if(a==='seguir'){ const g=leer(); if(g) empezar(g.n,g.i); }
+    if(a==='seguir'){ const g=leer(); if(g){ try{ localStorage.setItem(MK,g.ex?'ex':'todo'); }catch(x){} empezar(g.n,g.i); } }
     else if(a==='empezar') empezar(+q('#coche-tema').value,0);
     else if(a==='play') A.estado()==='leyendo'?A.pausar():A.reproducir();
     else if(a==='ant') A.saltar(-1);
@@ -4280,11 +4310,44 @@ body.embed #app{padding-top:4px}
   /* DOBLE clic (doble toque en móvil/tablet) en una respuesta -> abre sus preguntas; un solo clic o arrastrar NO sale, así el
      texto de la respuesta se puede seleccionar, subrayar y editar como el resto. El botón 🎯 sigue abriendo con un clic.
      Va en fase de captura (antes que las marcas) y al abrir quita la selección que deja el doble clic sobre la palabra. */
+  /* Al volver del test se regresa EXACTAMENTE al sitio donde pulsaste la pregunta (mismo tema, mismo esquema ⚡/📚 y misma altura en pantalla) */
+  const KVUELTA = 'esquemas-vuelta';
+  function guardarVuelta(el){
+    try {
+      const esq = el.closest('.esquema'); if (!esq) return;
+      const exc = el.closest('.ex-cont'), root = exc || esq;
+      const modo = exc ? (document.body.classList.contains('examen') ? 'xm' : 'ex') : 'todo';
+      const q = el.dataset && el.dataset.q; let idx = -1;
+      if (q) idx = [...root.querySelectorAll('mark.m-resp[data-q]')].filter(x => x.dataset.q === q).indexOf(el);
+      const cab = el.closest('.articulo, .ex-ficha'), h = cab && cab.querySelector('.articulo-head, .ex-fh');
+      localStorage.setItem(KVUELTA, JSON.stringify({t: Date.now(), tema: esq.id, modo, q: q || '', idx,
+        cab: h ? h.textContent.replace(/\s+/g, ' ').trim().slice(0, 60) : '', top: el.getBoundingClientRect().top, y: window.scrollY}));
+    } catch(e){}
+  }
+  function leerVuelta(id){
+    try { const v = JSON.parse(localStorage.getItem(KVUELTA) || 'null'); if (!v || Date.now() - v.t > 6 * 3600e3) return null; return v.tema === 'tema-' + parseInt(id, 10) ? v : null; } catch(e){ return null; }
+  }
+  function volverExacto(v){
+    mostrar(v.tema); if (typeof window.expresActivar === 'function') window.expresActivar(v.modo === 'todo' ? 'todo' : v.modo);
+    const esq = document.getElementById(v.tema); let hecho = 0;
+    const ir = () => {
+      const root = v.modo === 'todo' ? esq : esq.querySelector(':scope > .ex-cont'); if (!root) return;
+      let el = null;
+      if (v.q) { const l = [...root.querySelectorAll('mark.m-resp[data-q]')].filter(x => x.dataset.q === v.q); el = l[v.idx] || l[0] || null; }
+      if (!el && v.cab) { const h = [...root.querySelectorAll('.articulo-head, .ex-fh')].find(x => x.textContent.replace(/\s+/g, ' ').trim().slice(0, 60) === v.cab); el = h || null; }
+      if (!el) return;
+      const plg = el.closest('.ex-plg'); if (plg) plg.classList.add('on');
+      window.scrollTo(0, Math.max(0, window.scrollY + el.getBoundingClientRect().top - v.top));
+      if (!hecho++) { el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); }
+    };
+    [60, 400, 1000, 2200].forEach(ms => setTimeout(ir, ms));
+    setTimeout(() => { try { localStorage.removeItem(KVUELTA); } catch(e){} }, 2600);
+  }
   let ultimoClic = {el: null, t: 0};
   document.addEventListener('click', ev => {
     const m = ev.target.closest && ev.target.closest('mark.m-resp[data-q]'); if (!m) return;
     if (window.top !== window.self) { ev.preventDefault(); return; }   // abierto desde un test: no se sale del test en curso
-    const ir = () => { ev.preventDefault(); ultimoClic = {el: null, t: 0}; try { getSelection().removeAllRanges(); } catch(e){}
+    const ir = () => { ev.preventDefault(); ultimoClic = {el: null, t: 0}; try { getSelection().removeAllRanges(); } catch(e){} guardarVuelta(m);
       location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(m.dataset.q) + (document.body.classList.contains('expres') ? (document.body.classList.contains('examen') ? '&ex=2' : '&ex=1') : ''); };
     if (m.classList.contains('ex-q')) return ir();
     const ahora = Date.now();
@@ -4304,6 +4367,7 @@ body.embed #app{padding-top:4px}
     if (!ids) return;
     ev.preventDefault();
     if (window.top !== window.self) return;
+    guardarVuelta(m || sp);
     location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(ids) + (document.body.classList.contains('expres') ? (document.body.classList.contains('examen') ? '&ex=2' : '&ex=1') : '');
   });
 
@@ -4337,6 +4401,7 @@ body.embed #app{padding-top:4px}
   }
   function desdeHash(){ const m = location.hash.match(/[#&]q=([^&]+)/); if (!m) return; const id = decodeURIComponent(m[1]);
     const mx = location.hash.match(/[#&]ex=([12])(?:&|$)/);
+    const v = leerVuelta(id); if (v && (v.modo === 'todo') === !mx) { setTimeout(() => volverExacto(v), 0); return; }
     if (mx) setTimeout(() => irAPreguntaExpres(id, mx[1] === '2'), 0); else irAPregunta(id); }
   window.irAPregunta = irAPregunta;
 
@@ -4689,6 +4754,19 @@ body.ver-esquema.pm-on #pm-ui{display:flex}
 .pm-hl{background:var(--pmc)}
 .pm-ul{text-decoration:underline;text-decoration-color:var(--pmc);text-decoration-thickness:2px;text-underline-offset:2px}
 .pm-st{text-decoration:line-through;text-decoration-color:var(--pmc);text-decoration-thickness:2px}
+/* cuadrado, círculo y flecha PEGADOS A LA PALABRA (24/10/2026): se dibujan con el propio texto (bordes del <span>, no un dibujo encima),
+   así van siempre con sus palabras: al cambiar de pantalla, de letra, al desplegar un (…), al imprimir o guardar en PDF. */
+.pm.pm-bx,.pm.pm-ov{-webkit-box-decoration-break:slice;box-decoration-break:slice;border-top:var(--pmw,2px) solid var(--pmc);border-bottom:var(--pmw,2px) solid var(--pmc);padding-top:1px;padding-bottom:1px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pm.pm-bx.pm-f,.pm.pm-ov.pm-f{border-left:var(--pmw,2px) solid var(--pmc);padding-left:2px;margin-left:calc(-2px - var(--pmw,2px))}
+.pm.pm-bx.pm-l,.pm.pm-ov.pm-l{border-right:var(--pmw,2px) solid var(--pmc);padding-right:2px;margin-right:calc(-2px - var(--pmw,2px))}
+.pm.pm-bx.pm-f{border-top-left-radius:3px;border-bottom-left-radius:3px}
+.pm.pm-bx.pm-l{border-top-right-radius:3px;border-bottom-right-radius:3px}
+.pm.pm-ov.pm-f{border-top-left-radius:999px;border-bottom-left-radius:999px;padding-left:6px;margin-left:calc(-6px - var(--pmw,2px))}
+.pm.pm-ov.pm-l{border-top-right-radius:999px;border-bottom-right-radius:999px;padding-right:6px;margin-right:calc(-6px - var(--pmw,2px))}
+.pm.pm-ar.pm-f{position:relative}
+.pm.pm-ar.pm-f::after{content:"";position:absolute;left:-46px;top:100%;margin-top:-4px;width:52px;height:34px;pointer-events:none;background:var(--pmc);-webkit-print-color-adjust:exact;print-color-adjust:exact;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 34'%3E%3Cpath d='M2 32L46 5M46 5L36 6M46 5L42 14' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/100% 100%;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 34'%3E%3Cpath d='M2 32L46 5M46 5L36 6M46 5L42 14' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
 body.pm-er .pm{cursor:not-allowed;outline:1px dashed rgba(200,0,0,.5)}
 .esquema{position:relative}
 .pm-svg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:5}
@@ -4795,10 +4873,10 @@ html{overflow-x:hidden}body{max-width:100%}
       const from=Math.max(m.s,a)-a, to=Math.min(m.e,b)-a;
       if(to>from && t.nodeValue.slice(from,to).trim()!=='') jobs.push([t,from,to]);
     }
-    jobs.forEach(([t,from,to])=>{
+    jobs.forEach(([t,from,to],ji)=>{
       let mid=t; if(from>0) mid=t.splitText(from); if(to-from<mid.length) mid.splitText(to-from);
-      const s=document.createElement('span'); s.className='pm pm-'+m.k; s.dataset.pm=m.n;
-      s.style.setProperty('--pmc',rgba(m.c,m.o));
+      const s=document.createElement('span'); s.className='pm pm-'+m.k+(ji===0?' pm-f':'')+(ji===jobs.length-1?' pm-l':''); s.dataset.pm=m.n;
+      s.style.setProperty('--pmc',rgba(m.c,m.o)); s.style.setProperty('--pmw',(m.w||2)+'px');
       mid.parentNode.replaceChild(s,mid); s.appendChild(mid);
     });
   }
@@ -5019,6 +5097,7 @@ html{overflow-x:hidden}body{max-width:100%}
   }
   /* cuadros/óvalos pegados al texto (bx/ov): un recuadro por renglón, medido sobre las palabras → siguen a su texto en cualquier pantalla y en el PDF */
   function cajas(esq,id,s){
+    return;   // (24/10/2026) ya no se dibujan encima: cuadro y óvalo son bordes del propio texto (ver .pm-bx / .pm-ov)
     const ts=((data[id]&&data[id].t)||[]).filter(m=>m.k==='bx'||m.k==='ov'); if(!ts.length) return;
     const er=esq.getBoundingClientRect(), z=Z(esq);
     ts.forEach(m=>{
@@ -5113,8 +5192,8 @@ html{overflow-x:hidden}body{max-width:100%}
     togglePop(null,{kind:sh?'f':'t',get:()=>m,
       set:(k,v)=>{
         const top=hist[hist.length-1];
-        if(!(top&&top.m===m&&top.k===k)){ const old=m[k]; hist.push({id:esq.id,m:m,k:k,fn:()=>{ m[k]=old; if(sh||m.k==='bx'||m.k==='ov') renderShapes(esq); else esq.querySelectorAll('.pm[data-pm="'+n+'"]').forEach(x=>x.style.setProperty('--pmc',rgba(m.c,m.o))); save(); }}); }
-        m[k]=v; if(sh||m.k==='bx'||m.k==='ov') renderShapes(esq); else esq.querySelectorAll('.pm[data-pm="'+n+'"]').forEach(x=>x.style.setProperty('--pmc',rgba(m.c,m.o))); save(); },
+        if(!(top&&top.m===m&&top.k===k)){ const old=m[k]; hist.push({id:esq.id,m:m,k:k,fn:()=>{ m[k]=old; if(sh) renderShapes(esq); else esq.querySelectorAll('.pm[data-pm="'+n+'"]').forEach(x=>{ x.style.setProperty('--pmc',rgba(m.c,m.o)); x.style.setProperty('--pmw',(m.w||2)+'px'); }); save(); }}); }
+        m[k]=v; if(sh) renderShapes(esq); else esq.querySelectorAll('.pm[data-pm="'+n+'"]').forEach(x=>{ x.style.setProperty('--pmc',rgba(m.c,m.o)); x.style.setProperty('--pmw',(m.w||2)+'px'); }); save(); },
       del:()=>{ delMark(esq,bk,!!sh,n,m); }},[e.clientX,e.clientY]);
   },true);
 
@@ -5312,7 +5391,7 @@ const __migraT2=function(){
       if((window.EXPRES_Q||{})[n]) window.exMontarClave(c); else q.then(()=>window.exMontarClave(c)); }
     /* páginas y minutos: se cuentan los caracteres visibles sin pedir innerText (obligaba a maquetar todo el Exprés: ~1,5 s en el móvil) */
     setTimeout(()=>{ try{ if(d&&window.exAbrirVacias) window.exAbrirVacias(c); }catch(e){ console.error(e); } },0);
-    setTimeout(()=>{ const t=window.esqTextos(c,'.ex-bar,.ex-clave,.ex-rq,.ex-plg-t,.hueco-txt,.borrado,button,svg,script,style').reduce((s,x)=>s+x.nodeValue.replace(/\s+/g,' ').length,0), p=t/3000; const a=c.querySelector('.ex-pags'), m=c.querySelector('.ex-min');
+    setTimeout(()=>{ const t=window.esqTextos(c,'.ex-bar,.ex-clave,.ex-rq,.ex-plg-t,.hueco-txt,.borrado,.ex-quitado,button,svg,script,style').reduce((s,x)=>s+x.nodeValue.replace(/\s+/g,' ').length,0), p=t/3000; const a=c.querySelector('.ex-pags'), m=c.querySelector('.ex-min');
       if(a) a.textContent='~'+p.toFixed(1)+' págs A4'; if(m) m.textContent=Math.round(p*3.5)+' min'; },50);
   }
   // v: 'todo' | 'ex' | 'xm' (true = 'ex', false = 'todo', por compatibilidad)
@@ -5340,7 +5419,7 @@ const __migraT2=function(){
 #cat-pop .cat-b{display:block;width:100%;margin-top:8px;height:30px;border-radius:7px;cursor:pointer;background:transparent;font:inherit}
 #cat-pop .cat-del{border:1px solid #c33;color:#c33}
 #cat-pop .cat-rst{border:1px solid var(--borde,#ccc);color:var(--texto,#222);font-size:12px}
-body.pm-on.cat-normal .txt mark:not(.m-resp),body.pm-on.cat-normal .txt u.m-clave,body.pm-on.cat-normal .ex-fb mark:not(.m-resp),body.pm-on.cat-normal .ex-fb u.m-clave,body.pm-on.cat-normal .vis mark:not(.m-resp),body.pm-on.cat-normal .vis u.m-clave{cursor:pointer}
+body.pm-on.cat-normal .articulo-head mark:not(.m-resp),body.pm-on.cat-normal .txt mark:not(.m-resp),body.pm-on.cat-normal .txt u.m-clave,body.pm-on.cat-normal .ex-fb mark:not(.m-resp),body.pm-on.cat-normal .ex-fb u.m-clave,body.pm-on.cat-normal .vis mark:not(.m-resp),body.pm-on.cat-normal .vis u.m-clave{cursor:pointer}
 body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.m-clave:hover,body.pm-on.cat-normal .vis mark:not(.m-resp):hover,body.pm-on.cat-normal .vis u.m-clave:hover{outline:2px solid rgba(0,0,0,.35);outline-offset:1px}
 @media print{#cat-pop{display:none!important}}
 </style>
@@ -5362,7 +5441,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   const mkEl=cat=>{ const el=document.createElement(cat==='clave'?'u':'mark'); el.className='m-'+cat; return el; };
   function textNodes(root){
     const out=[];
-    const enVis=root.classList&&root.classList.contains('vis');   // los cuadros visuales (árboles, flujos…) se marcan dentro de su propio bloque
+    const enVis=root.classList&&(root.classList.contains('vis')||root.classList.contains('articulo-head')||root.classList.contains('ex-fh'));   // también los TÍTULOS de artículo (cada uno con sus propias posiciones)   // los cuadros visuales (árboles, flujos…) se marcan dentro de su propio bloque
     const enEx=root.classList&&root.classList.contains('ex-cont');   // ⚡ Exprés: su propio texto (fichas .ex-fb), aparte del esquema grande
     for(const n of window.esqTextos(root,(enVis||enEx)?SKIP:SKIP+',.ex-cont')){ const p=n.parentElement; if(!p||!(enVis||(enEx?p.closest('.ex-fb'):p.closest('.articulo .txt')))) continue; out.push(n); }
     return window.esqOrdenar(root,out);
@@ -5375,14 +5454,15 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     while(el.firstChild) n.appendChild(el.firstChild); el.parentNode.replaceChild(n,el); return n;
   }
   /* cuadros visuales de una raíz (el esquema grande no cuenta los del Exprés, y al revés) */
-  const visDe=r=>[...r.querySelectorAll('.vis')].filter(v=>r.classList.contains('ex-cont')||!v.closest('.ex-cont'));
+  /* zonas con posiciones propias: primero los cuadros .vis (índices de siempre) y después los títulos de artículo */
+  const visDe=r=>{ const ex=r.classList.contains('ex-cont'); return [...[...r.querySelectorAll('.vis')].filter(v=>ex||!v.closest('.ex-cont')),...[...r.querySelectorAll(ex?'.ex-fh':'.articulo-head')].filter(h=>ex||!h.closest('.ex-cont'))]; };
   const raiz=el=>el.closest('.ex-cont')||el.closest('.esquema');
   const activa=()=>{ const e=document.querySelector('.esquema.active'); if(e&&document.body.classList.contains('expres')){ const x=e.querySelector(':scope > .ex-cont'); if(x) return x; } return e; };
   const H=(esq,fn)=>{ if(window.pmPush) window.pmPush(esq.id,()=>{ fn(); if(window.pmRenderShapes) window.pmRenderShapes(esq); }); };
   const reshape=esq=>{ if(window.pmRenderShapes) window.pmRenderShapes(esq); };
   /* guarda cómo volver a poner un subrayado antes de quitarlo (para deshacer) */
   function snapUnder(esq,el){
-    const bk=bucket(esq.id), cat=catDe(el), vis=el.closest('.vis'), raiz=vis||esq;
+    const bk=bucket(esq.id), cat=catDe(el), vis=el.closest('.vis, .articulo-head, .ex-fh'), raiz=vis||esq;
     const s=offsetOf(raiz,el,0), e=s+el.textContent.length, vi=vis?visDe(esq).indexOf(vis):null;
     const add=el.dataset.add, sid=el.dataset.sid, prevE=sid!=null?bk.e[sid]:undefined, a=add?bk.a.find(x=>String(x.n)===add):null;
     return ()=>{
@@ -5449,13 +5529,38 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       if(a.e>e){ const b={n:++bk.n,s:e,e:a.e,c:a.c}; bk.a.push(b); wrapAdd(esq,b); }
     });
     const ex=esq.classList.contains('ex-cont');
-    [...esq.querySelectorAll(ex?'.ex-fb mark, .ex-fb u.m-clave':'.articulo .txt mark, .articulo .txt u.m-clave')]
-      .filter(el=>esAuto(el)&&el.dataset.sid!=null&&!el.closest('.vis')&&(ex||!el.closest('.ex-cont'))).forEach(el=>{
+    /* posición de cada subrayado calculada UNA vez (antes se recorría todo el tema por cada uno: con miles de marcas tardaba decenas de segundos) */
+    const ini=new Map(); { let acc=0; for(const t of textNodes(esq)){ ini.set(t,acc); acc+=t.length; } }
+    const pos0=el=>{ const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); for(let t;(t=w.nextNode());) if(ini.has(t)) return ini.get(t); return null; };
+    const cand=[...esq.querySelectorAll(ex?'.ex-fb mark, .ex-fb u.m-clave':'.articulo .txt mark, .articulo .txt u.m-clave')]
+      .filter(el=>esAuto(el)&&el.dataset.sid!=null&&!el.closest('.vis')&&(ex||!el.closest('.ex-cont')))
+      .map(el=>{ const p=pos0(el); return p==null?null:[el,p,p+el.textContent.length]; }).filter(x=>x&&x[2]>s&&x[1]<e);
+    cand.forEach(([el,a0,a1])=>{
         if(!el.isConnected) return;
-        const a0=offsetOf(esq,el,0), a1=a0+el.textContent.length; if(a1<=s||a0>=e) return;
         const cat=catDe(el), sid=el.dataset.sid; bk.e[sid]={t:el.textContent,c:null}; unwrap(el); n++;
         if(a0<s){ const b={n:++bk.n,s:a0,e:s,c:cat}; bk.a.push(b); wrapAdd(esq,b); }
         if(a1>e){ const b={n:++bk.n,s:e,e:a1,c:cat}; bk.a.push(b); wrapAdd(esq,b); }
+      });
+    return n;
+  }
+  /* lo mismo que limpiar() pero dentro de un cuadro visual o de un TÍTULO de artículo (posiciones propias de esa zona) */
+  function limpiarZona(esq,zona,s,e){
+    if(!(e>s)) return 0;
+    const bk=bucket(esq.id), vi=visDe(esq).indexOf(zona); let n=0; if(vi<0) return 0;
+    bk.a.slice().forEach(a=>{ if(a.vi!==vi||a.e<=s||a.s>=e) return;
+      zona.querySelectorAll('[data-add="'+a.n+'"]').forEach(unwrap); bk.a=bk.a.filter(x=>x!==a); n++;
+      if(a.s<s){ const b={n:++bk.n,s:a.s,e:s,c:a.c,vi}; bk.a.push(b); wrapAdd(esq,b); }
+      if(a.e>e){ const b={n:++bk.n,s:e,e:a.e,c:a.c,vi}; bk.a.push(b); wrapAdd(esq,b); }
+    });
+    const ini=new Map(); { let acc=0; for(const t of textNodes(zona)){ ini.set(t,acc); acc+=t.length; } }
+    const pos0=el=>{ const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); for(let t;(t=w.nextNode());) if(ini.has(t)) return ini.get(t); return null; };
+    [...zona.querySelectorAll('mark, u.m-clave')].filter(el=>esAuto(el)&&el.dataset.sid!=null)
+      .map(el=>{ const p=pos0(el); return p==null?null:[el,p,p+el.textContent.length]; }).filter(x=>x&&x[2]>s&&x[1]<e)
+      .forEach(([el,a0,a1])=>{
+        if(!el.isConnected) return;
+        const cat=catDe(el), sid=el.dataset.sid; bk.e[sid]={t:el.textContent,c:null}; unwrap(el); n++;
+        if(a0<s){ const b={n:++bk.n,s:a0,e:s,c:cat,vi}; bk.a.push(b); wrapAdd(esq,b); }
+        if(a1>e){ const b={n:++bk.n,s:e,e:a1,c:cat,vi}; bk.a.push(b); wrapAdd(esq,b); }
       });
     return n;
   }
@@ -5521,7 +5626,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     if(!document.body.classList.contains('pm-on')||!normal()){ cerrar(); return; }
     const el=e.target.closest&&e.target.closest('mark,u');
     const sel=getSelection(), haySel=sel&&!sel.isCollapsed;
-    if(!el||!esAuto(el)||!el.closest('.articulo .txt, .vis, .ex-fb')||haySel){ if(!haySel) cerrar(); return; }
+    if(!el||!esAuto(el)||!el.closest('.articulo .txt, .vis, .ex-fb, .articulo-head, .ex-fh')||haySel){ if(!haySel) cerrar(); return; }
     e.preventDefault(); e.stopPropagation();
     cur={esq:raiz(el),el};
     abrir('Cambiar este subrayado',catDe(el),e.clientX,e.clientY,true);
@@ -5532,14 +5637,14 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       const sel=getSelection(); if(!sel||sel.isCollapsed||!sel.rangeCount) return;
       const rg=sel.getRangeAt(0), esq=activa();
       const anc=rg.commonAncestorContainer.nodeType===1?rg.commonAncestorContainer:rg.commonAncestorContainer.parentElement;
-      if(!esq||!esq.contains(anc)||!anc.closest('.articulo .txt, .vis, .ex-fb')) return;
+      if(!esq||!esq.contains(anc)||!anc.closest('.articulo .txt, .vis, .ex-fb, .articulo-head, .ex-fh')) return;
       cur={esq,range:rg.cloneRange()};
       abrir('Subrayar la selección como…',null,e.clientX,e.clientY,false);
     },30);
   });
   /* táctil: arrastrar el dedo en horizontal selecciona; al soltar salen las opciones (igual que con el ratón) */
   (function(){
-    const zona=el=>el&&el.closest&&el.closest(".articulo .txt, .vis, .ex-fb");
+    const zona=el=>el&&el.closest&&el.closest(".articulo .txt, .vis, .ex-fb, .articulo-head, .ex-fh");
     const punto=(x,y)=>{ if(document.caretRangeFromPoint) return document.caretRangeFromPoint(x,y); if(document.caretPositionFromPoint){ const p=document.caretPositionFromPoint(x,y); if(!p) return null; const r=document.createRange(); r.setStart(p.offsetNode,p.offset); r.collapse(true); return r; } return null; };
     let ini=null, drag=false, t0=null;
     const activo=()=>document.body.classList.contains("pm-on")&&normal();
@@ -5580,7 +5685,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     if(b.dataset.a==='rst'){ if(confirm('¿Restaurar el subrayado original de este tema? Se perderán tus cambios sobre el subrayado automático.')){ delete data[esq.id]; save(); cerrar(); if(window.esqRemontar) window.esqRemontar(esq); else location.reload(); } return; }
     if(b.dataset.a==='shp'&&cur.range&&window.pmAddShape){        // subrayado nuevo: la figura se dibuja alrededor de la selección
       const k=b.dataset.k;
-      if(k!=='arrow'&&window.pmApi){ window.pmApi.caja(esq,cur.range,k==='oval'?'ov':'bx'); getSelection().removeAllRanges(); cerrar(); return; }   // cuadro/círculo pegado al texto: uno por renglón
+      if(window.pmApi){ window.pmApi.caja(esq,cur.range,k==='oval'?'ov':k==='arrow'?'ar':'bx'); getSelection().removeAllRanges(); cerrar(); return; }   // cuadro/círculo pegado al texto: uno por renglón
       const rc=cur.range.getBoundingClientRect(), n=window.pmAddShape(esq,k,rc,{pad:k==='oval'?8:3});
       if(n!=null&&window.pmPush&&window.pmDelShape) window.pmPush(esq.id,()=>window.pmDelShape(esq,n));
       getSelection().removeAllRanges(); cerrar(); return;
@@ -5589,13 +5694,13 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       /* la forma SUSTITUYE al subrayado: se mide la palabra, se quita el subrayado y se dibuja la forma en su sitio */
       if(cur.el&&window.pmAddShape){
         const el=cur.el, rc=el.getBoundingClientRect(), restore=snapUnder(esq,el);
-        const k=b.dataset.k, P=window.pmApi, rg2=(k!=='arrow'&&P)?document.createRange():null; if(rg2){ rg2.setStartBefore(el); rg2.setEndAfter(el); }
+        const k=b.dataset.k, P=window.pmApi, rg2=P?document.createRange():null; if(rg2){ rg2.setStartBefore(el); rg2.setEndAfter(el); }
         if(el.dataset.add){
           const a=bk.a.find(x=>String(x.n)===el.dataset.add);
           esq.querySelectorAll('[data-add="'+el.dataset.add+'"]').forEach(unwrap); bk.a=bk.a.filter(x=>x!==a);
         } else { const sid=el.dataset.sid, t=el.textContent; unwrap(el); bk.e[sid]={t,c:null}; }
         save();
-        if(rg2){ const nb=P.caja(esq,rg2,k==='oval'?'ov':'bx',true); H(esq,()=>{ restore(); save(); if(nb!=null) P.quitar(esq,nb); }); cerrar(); return; }   // cuadro/círculo pegado a las palabras
+        if(rg2){ const nb=P.caja(esq,rg2,k==='oval'?'ov':k==='arrow'?'ar':'bx',true); H(esq,()=>{ restore(); save(); if(nb!=null) P.quitar(esq,nb); }); cerrar(); return; }   // cuadro/círculo pegado a las palabras
         const nsh=window.pmAddShape(esq,b.dataset.k,rc);
         H(esq,()=>{ restore(); save(); if(nsh!=null&&window.pmDelShape) window.pmDelShape(esq,nsh); });
       }
@@ -5603,7 +5708,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     }
     if(cur.el){
       let el=cur.el; const restore=snapUnder(esq,el), oldCat=catDe(el), isDel=b.dataset.a==='del';
-      if(!el.closest('.vis')){ try{ const s0=offsetOf(esq,el,0), d0=describir(esq,s0,s0+el.textContent.length); if(d0) espejo(esq,{k:isDel?'del':'rec',d:d0,c:b.dataset.c}); }catch(err){ console.error('espejo',err); } }
+      if(!el.closest('.vis, .articulo-head, .ex-fh')){ try{ const s0=offsetOf(esq,el,0), d0=describir(esq,s0,s0+el.textContent.length); if(d0) espejo(esq,{k:isDel?'del':'rec',d:d0,c:b.dataset.c}); }catch(err){ console.error('espejo',err); } }
       if(el.dataset.add){                                   // subrayado añadido por ti
         const a=bk.a.find(x=>String(x.n)===el.dataset.add), an=el.dataset.add;
         if(isDel){ unwrap(el); bk.a=bk.a.filter(x=>x!==a); H(esq,()=>{ restore(); save(); }); }
@@ -5616,13 +5721,13 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       }
       reshape(esq);
     } else if(cur.range){
-      const rg=cur.range, ac=rg.commonAncestorContainer, vis=(ac.nodeType===1?ac:ac.parentElement).closest('.vis');
+      const rg=cur.range, ac=rg.commonAncestorContainer, vis=(ac.nodeType===1?ac:ac.parentElement).closest('.vis, .articulo-head, .ex-fh');
       const raiz=vis||esq, s=offsetOf(raiz,rg.startContainer,rg.startOffset), en=offsetOf(raiz,rg.endContainer,rg.endOffset);
       if(en>s){
         /* un solo subrayado: lo que hubiera debajo (subrayado de color o resaltado) se quita y queda solo el tuyo */
-        const snap=vis?null:instantanea(esq), P=window.pmApi;
+        const snap=instantanea(esq), P=window.pmApi;
         const pr=(!vis&&P)?[P.offsetOf(esq,rg.startContainer,rg.startOffset),P.offsetOf(esq,rg.endContainer,rg.endOffset)]:null;
-        const quitados=vis?0:limpiar(esq,s,en)+(pr?P.limpiar(esq,pr[0],pr[1]):0);
+        const quitados=vis?limpiarZona(esq,vis,s,en):limpiar(esq,s,en)+(pr?P.limpiar(esq,pr[0],pr[1]):0);
         const a={n:++bk.n,s,e:en,c:b.dataset.c}; if(vis) a.vi=visDe(esq).indexOf(vis); bk.a.push(a); wrapAdd(esq,a);
         let tq=null; if(!vis){ try{ const d0=describir(esq,s,en); if(d0) tq=espejo(esq,{k:'add',d:d0,c:b.dataset.c}); }catch(err){ console.error('espejo',err); } }
         const qu=()=>{ if(tq!=null&&window.espejoQuitar) window.espejoQuitar(tq); };   // al deshacer, tampoco se copia al otro esquema
@@ -5647,7 +5752,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
    que ya usa la app de tests (misma configuración: localStorage "oficialGhCfg"). Fichero: backups/esquemas-marcas.json.
    Se mezcla por tema: gana la versión más reciente de cada tema. No toca el progreso de los tests.
    CUÁNDO (22/10/2026): ya NO se sube a cada subrayado. Los cambios se acumulan («☁ Sincronizar · N») y se sincroniza:
-   al pulsar el botón, sola cada 10 minutos si hay cambios y al salir de la app. Al abrir solo se BAJA lo nuevo y se aplica
+   al pulsar el botón y al cerrar la pestaña (23/10/2026: ya no sola cada 10 min ni al cambiar de app). Al abrir solo se BAJA lo nuevo y se aplica
    sin recargar la página (antes recargaba: por eso se veía «una versión antigua y luego la buena»).
    Al sincronizar también se copian al otro esquema (Exprés ↔ completo) los subrayados y marcas que estaban en cola. */
 (function(){
@@ -5674,7 +5779,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   let snap={}; (function(){ const o=actual(); Object.keys(o).forEach(id=>snap[id]=JSON.stringify(o[id])); })();
   (function(){ const ts=rd(TS), o=actual(); let c=false; Object.keys(o).forEach(id=>{ const v=o[id]; const hay=(v.m&&((v.m.t&&v.m.t.length)||(v.m.f&&v.m.f.length)))||(v.c&&(Object.keys(v.c.e||{}).length||(v.c.a||[]).length))||v.f||v.r||v.u||v.x; if(hay&&!ts[id]){ ts[id]=1; c=true; } }); if(c) wr(TS,ts); })();
   let ultimoError='', ignorar=false, pendiente=false, ocupado=false, timer=0, agendado=false, ultimaVez=0;
-  const nPend=()=>{ let k=+(localStorage.getItem(KN)||0)||0; try{ const q1=rd('esquemas-espejo-v1'), q2=rd('esquemas-espejo-pm-v1'); [q1,q2].forEach(q=>Object.values(q).forEach(l=>{ k+=(l&&l.length)||0; })); }catch(e){} return k; };
+  /* solo cuenta los cambios sin subir (KN). Antes se sumaban también las órdenes de copia Exprés↔completo que esperan a que se abra el otro esquema: no se vaciaban y el contador se quedaba en «2» aunque estuviera sincronizado */
+  const nPend=()=>+(localStorage.getItem(KN)||0)||0;
 
   /* ---------- indicador ---------- */
   let badge=null, ultEstado=['','',''];
@@ -5687,7 +5793,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       const cfgB=document.createElement('span'); cfgB.textContent='⚙'; cfgB.title='Repositorio y token de la sincronización'; cfgB.style.cssText='cursor:pointer;font-size:13px;padding:4px 2px;opacity:.7'; cfgB.onclick=()=>abrirPanel();
       ref.parentNode.insertBefore(badge,ref); ref.parentNode.insertBefore(cfgB,ref);
     }
-    const k=nPend(); if(k&&cls!=='mal'&&!/sincronizando/.test(txt)){ txt='☁ Sincronizar · '+k; cls=''; titulo=k+' cambio'+(k===1?'':'s')+' sin sincronizar (se sincroniza solo cada 10 min y al salir). Pulsa para hacerlo ya.'; }
+    const k=nPend(); if(k&&cls!=='mal'&&!/sincronizando/.test(txt)){ txt='☁ Sincronizar · '+k; cls=''; titulo=k+' cambio'+(k===1?'':'s')+' sin sincronizar (solo se sincroniza al pulsar este botón o al salir de la app). Pulsa para hacerlo ya.'; }
     badge.textContent=txt; badge.title=titulo||''; badge.style.color=cls==='mal'?'#c0392b':cls==='ok'?'var(--verde-med,#2e7d5b)':'inherit';
   }
   window.esqPendientes=()=>estado(ultEstado[0]||'☁ ✓',ultEstado[1],ultEstado[2]);
@@ -5799,9 +5905,9 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
 
   window.esqSync=sincronizar;
   /* sola: cada 10 minutos si hay algo pendiente, y al salir de la app (pasar a otra app, bloquear o cerrar la pestaña) */
-  setInterval(()=>{ if(!document.hidden&&nPend()>0&&Date.now()-ultimaVez>=DIEZ) sincronizar(); },60000);
+  /* (ya no hay sincronización automática cada 10 minutos: solo con el botón, al salir y al abrir para bajar lo nuevo) */
   const alSalir=()=>{ if(nPend()>0&&!ocupado) sincronizar(); };
-  document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='hidden') alSalir(); else if(Date.now()-ultimaVez>=DIEZ) programar(800); });   // al volver tras un rato: bajar lo nuevo
+  document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible'&&Date.now()-ultimaVez>=DIEZ&&!nPend()) programar(800); });   // al volver tras un rato: solo BAJAR lo nuevo (si hay cambios tuyos pendientes no se toca nada: se sincroniza con el botón)
   addEventListener('pagehide',alSalir);
   addEventListener('online',()=>{ if(nPend()>0) programar(1500); });
   let n=0; (function init(){ if(!document.getElementById('btn-marcas')&&n++<40) return setTimeout(init,100); estado(hayCfg()?'☁ …':'☁ sin sincronizar',hayCfg()?'':'mal',''); if(hayCfg()) programar(2500); })();   // al abrir: bajar lo nuevo de los otros dispositivos (sin recargar)
@@ -6089,6 +6195,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
 #ultima-chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 #ultima-chip button{border:0;border-radius:14px;padding:5px 11px;font-size:12.5px;font-weight:800;cursor:pointer;font-family:inherit;flex:none}
 #ultima-chip .ir{background:#fff;color:var(--verde,#1c4d3c)}
+#ultima-chip .coche{background:#fff;color:var(--verde,#1c4d3c);padding:5px 9px}
 #ultima-chip .x{background:transparent;color:#fff;padding:5px 7px}
 @media print{#ultima-chip{display:none!important}}
 </style>
@@ -6104,7 +6211,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   const clave=a=>{ const h=a.querySelector('.articulo-head'); return h&&h.firstChild?h.firstChild.textContent.trim():''; };
   const activo=()=>document.querySelector('.esquema.active');
   const chip=document.createElement('div'); chip.id='ultima-chip';
-  chip.innerHTML='<span></span><button type="button" class="ir">Ir</button><button type="button" class="x" title="Cerrar">✕</button>';
+  chip.innerHTML='<span></span><button type="button" class="ir">Ir</button><button type="button" class="coche" title="Escuchar en modo coche desde aquí">🚗</button><button type="button" class="x" title="Cerrar">✕</button>';
   document.body.appendChild(chip);
   let objetivo=null, tHide=0;
   const ocultar=()=>{ chip.classList.remove('on'); clearTimeout(tHide); };
@@ -6128,12 +6235,18 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
     data[es.id]={k:k,t:Date.now()}; save();
   }
   /* Marcador manual: botón 📍 en cada ficha. Queda fijo hasta que lo quites o marques otra ficha en ese tema. */
-  function pintaMarca(es){ rec(); const u=data[es.id]; es.querySelectorAll('.articulo').forEach(a=>{ const on=!!(u&&u.man&&clave(a)===u.k); a.classList.toggle('pt-marca',on); const b=a.querySelector('.pt-btn'); if(b) b.textContent=on?'📍 Aquí me quedé':'📍'; }); }
+  function pintaMarca(es){ rec(); const u=data[es.id]; es.querySelectorAll('.articulo').forEach(a=>{ const on=!!(u&&u.man&&clave(a)===u.k); a.classList.toggle('pt-marca',on); const b=a.querySelector('.pt-btn'); if(b) b.textContent=on?'📍 Aquí me quedé':'📍';
+    let c=a.querySelector('.pt-coche'); if(on&&b&&!c){ c=document.createElement('button'); c.type='button'; c.className='pt-coche'; c.dataset.ui='1'; c.textContent='🚗'; c.title='Escuchar en modo coche desde aquí'; c.onclick=ev=>{ ev.stopPropagation(); if(window.cocheDesde) window.cocheDesde(+es.id.replace(/\D+/g,''),'todo'); }; b.after(c); } else if(!on&&c) c.remove(); }); }
   function botones(es){ es.querySelectorAll('.articulo').forEach(a=>{ const h=a.querySelector('.articulo-head'); if(!h||h.querySelector('.pt-btn')) return; const b=document.createElement('button'); b.type='button'; b.className='pt-btn'; b.title='Marcar aquí por dónde vas: la próxima vez te llevo a esta ficha';
     b.onclick=ev=>{ ev.stopPropagation(); const k=clave(a); if(!k) return; rec(); if(data[es.id]&&data[es.id].man&&data[es.id].k===k) delete data[es.id]; else data[es.id]={k:k,t:Date.now(),man:1}; save(); pintaMarca(es); };
     h.insertBefore(b,h.querySelector('.st-chip')); }); pintaMarca(es); }
   document.querySelectorAll('.esquema').forEach(botones);
   if(window.alPrepararTema) window.alPrepararTema(40,botones);
+  /* el modo coche lee desde aquí: «desde donde me quedé estudiando» (datos y elemento del 📍 del temario entero) */
+  window.ultimaApi=window.ultimaApi||{};
+  window.ultimaApi.todo={ dato:n=>{ rec(); const u=data['tema-'+n]; return u&&u.k?u:null; },
+    elemento:n=>{ const es=document.getElementById('tema-'+n); rec(); const u=data['tema-'+n]; if(!es||!u) return null; const a=[...es.querySelectorAll('.articulo')].find(x=>clave(x)===u.k); return a?(a.querySelector('.articulo-head')||a):null; } };
+  chip.querySelector('.coche').onclick=()=>{ const es=activo(); if(!es||!window.cocheDesde) return; ocultar(); window.cocheDesde(+es.id.replace(/\D+/g,''),'todo'); };
   let t=0;
   addEventListener('scroll',()=>{ clearTimeout(t); t=setTimeout(guardar,1500); },{passive:true,capture:true});
   let ult=null;
@@ -6144,6 +6257,9 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
 </script>
 <style id="estilo-ultima-ex">
 .ex-cont .ex-fh .pt-btn{float:right;margin-top:-1px}
+.pt-coche{border:1px solid var(--borde,#bbb);background:transparent;color:inherit;border-radius:12px;padding:2px 8px;font-size:12px;cursor:pointer;margin-left:6px}
+.ex-cont .ex-fh .pt-coche{float:right;margin-top:-1px}
+@media print{.pt-coche{display:none!important}}
 .ex-cont .bloque-titulo .pt-btn{margin-left:10px;vertical-align:middle}
 .ex-cont .pt-marca{outline:3px solid #e0a800;outline-offset:2px;border-radius:6px}
 .ex-cont .pt-marca .pt-btn{background:#e0a800;color:#000;font-weight:800;border-color:#e0a800}
@@ -6174,16 +6290,21 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
       return 'pág. '+Math.min(pags,Math.max(1,Math.ceil(r.toString().length/tot*pags)))+' de '+pags; }catch(e){ return ''; }
   }
   const chip=document.createElement('div'); chip.id='ultima-chip'; chip.className='ultima-ex';
-  chip.innerHTML='<span></span><button type="button" class="ir">Ir</button><button type="button" class="x" title="Cerrar">✕</button>';
+  chip.innerHTML='<span></span><button type="button" class="ir">Ir</button><button type="button" class="coche" title="Escuchar en modo coche desde aquí">🚗</button><button type="button" class="x" title="Cerrar">✕</button>';
   document.body.appendChild(chip);
   let objetivo=null, tHide=0;
   const ocultar=()=>{ chip.classList.remove('on'); clearTimeout(tHide); };
   chip.querySelector('.x').onclick=ocultar;
   chip.querySelector('.ir').onclick=()=>{ if(objetivo){ objetivo.style.scrollMarginTop='90px'; objetivo.scrollIntoView({behavior:'smooth',block:'start'}); } ocultar(); };
+  chip.querySelector('.coche').onclick=()=>{ const c=cont(); if(!c||!window.cocheDesde) return; ocultar(); window.cocheDesde(+c.id.replace(/\D+/g,''),'ex'); };
+  window.ultimaApi=window.ultimaApi||{};
+  window.ultimaApi.ex={ dato:n=>{ rec(); const u=data['tema-'+n+'-ex']; return u&&u.k?u:null; },
+    elemento:n=>{ const e=document.getElementById('tema-'+n), c=e&&e.querySelector(':scope > .ex-cont'); rec(); const u=data['tema-'+n+'-ex']; return c&&u&&c.querySelector('.ex-fb')?buscar(c,u):null; } };
   function pinta(c){
-    rec(); const u=data[c.id]; unidades(c).forEach(x=>{ x.classList.remove('pt-marca','pt-ult'); const b=x.querySelector(':scope .pt-btn'); if(b) b.textContent='📍'; });
+    rec(); const u=data[c.id]; unidades(c).forEach(x=>{ x.classList.remove('pt-marca','pt-ult'); const b=x.querySelector(':scope .pt-btn'); if(b) b.textContent='📍'; const k=x.querySelector('.pt-coche'); if(k) k.remove(); });
     if(!u) return; const x=buscar(c,u); if(!x) return;
-    x.classList.add(u.man?'pt-marca':'pt-ult'); if(u.man){ const b=x.querySelector('.pt-btn'); if(b) b.textContent='📍 Aquí me quedé'; }
+    x.classList.add(u.man?'pt-marca':'pt-ult'); if(u.man){ const b=x.querySelector('.pt-btn'); if(b){ b.textContent='📍 Aquí me quedé';
+      if(!x.querySelector('.pt-coche')){ const k=document.createElement('button'); k.type='button'; k.className='pt-coche'; k.dataset.ui='1'; k.textContent='🚗'; k.title='Escuchar en modo coche desde aquí'; k.onclick=ev=>{ ev.stopPropagation(); if(window.cocheDesde) window.cocheDesde(+c.id.replace(/\D+/g,''),'ex'); }; b.after(k); } } }
   }
   function botones(c){
     unidades(c).forEach(x=>{
@@ -6763,7 +6884,10 @@ p:has(> .ex-p:not(.ex-u)) > .sello-b{display:none}
 <style id="estilo-mejoras-2210">
 /* Misma letra en TODO el esquema (también los cuadros, árboles, trampas y recuerdas), como el temario */
 .esquema .vis,.esquema .vis *,.esquema .trampa,.esquema .trampa *,.esquema .recuerda,.esquema .recuerda *,.esquema .bloque-titulo,.esquema .leyenda,.esquema .resp-strip,.ex-clave,.ex-clave *,.ex-rq,.ex-rq *,.ex-bar{font-family:"Fira Sans Condensed","Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif}
-.esquema .vis-rama,.esquema .vis-paso,.esquema .vis-col,.esquema .vis-plazo,.esquema .vt-hoja,.esquema .ex-td{font-size:.95rem}
+.esquema .vis-rama,.esquema .vis-paso,.esquema .vis-col,.esquema .vis-plazo,.esquema .vt-hoja,.esquema .ex-td{font-size:15px}
+/* 24/10/2026: los cuadros/esquemas con EXACTAMENTE la letra del artículo (Fira Sans Condensed 15 px, mismo espaciado) en el Exprés y en el esquema general */
+.esquema .vis *,.esquema .trampa *,.esquema .recuerda *,.esquema .ex-tl,.esquema .ex-td,.esquema .ex-tl *,.esquema .ex-td *{font-family:"Fira Sans Condensed","Myriad Pro Condensed","Myriad Pro","Arial Narrow","Roboto Condensed","Segoe UI",Arial,sans-serif!important;letter-spacing:-.005em}
+.esquema .vis-rama,.esquema .vis-rama *,.esquema .vis-paso *,.esquema .vis-col *,.esquema .vis-plazo,.esquema .vt-hoja,.esquema .trampa p,.esquema .recuerda li{font-size:15px}
 /* móvil: nada se sale por los lados (la fila de sellos R de la cabecera se partía fuera de la pantalla) */
 .head-sellos{flex-wrap:wrap;max-width:100%}
 .esquema-head h2,.ex-fh,.articulo-head{overflow-wrap:anywhere}
@@ -6830,7 +6954,10 @@ body.rq-ocultas .ex-rq .rq-r:not(.ver){color:transparent;text-shadow:0 0 9px rgb
 /* ⚡+ apartados añadidos al Exprés desde el temario entero */
 .ex-anadido{border-left:3px solid #2563eb;padding-left:6px;margin:4px 0;background:rgba(37,99,235,.05);border-radius:4px}
 .ex-ficha.ex-anadido{padding-left:0;background:transparent}
-.ex-anadido.borrado{display:none}
+.ex-anadido.borrado,.ex-quitado{display:none!important}
+.ex-fh .ex-menos{float:right;margin-left:8px;border:1.5px solid #c0392b;background:transparent;color:#c0392b;border-radius:10px;padding:0 8px;font:inherit;font-size:11.5px;font-weight:800;cursor:pointer;opacity:.75}
+.ex-fh .ex-menos:hover{opacity:1;background:rgba(192,57,43,.08)}
+@media print{.ex-menos{display:none!important}}
 .ex-anadido-x{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;color:#2563eb;margin:2px 0}
 .ex-anadido-x button{border:1.5px solid #c0392b;background:transparent;color:#c0392b;border-radius:8px;font:inherit;font-size:12px;font-weight:800;padding:1px 8px;cursor:pointer}
 .articulo-head .xp-b{float:right;margin-left:6px;border:1.5px solid #2563eb;background:transparent;color:#2563eb;border-radius:10px;padding:1px 8px;font-size:11.5px;font-weight:800;cursor:pointer;font-family:inherit;text-transform:none}
@@ -7039,19 +7166,84 @@ body.rq-ocultas .ex-rq .rq-r:not(.ver){color:transparent;text-shadow:0 0 9px rgb
     };
   }
   /* al montar el Exprés: mete los apartados añadidos en su artículo (o una ficha nueva tras el artículo anterior) */
+  /* Lo que añades con ⚡+ se coloca en SU ORDEN dentro del artículo (el del temario entero). Las posiciones de tus marcas no cambian de sitio:
+     el texto añadido cuenta siempre al final y en el orden en que se añadió (esqOrdenar), esté donde esté en pantalla.
+     Lo que quitas del Exprés con ⚡− se guarda en la misma lista (entradas {rm:1,k,a}) y se sincroniza igual. */
+  const hojas=a=>$$('.txt p, .txt li',a).filter(x=>!x.querySelector('p,li'));
+  const hojasEx=fb=>$$('p, li',fb).filter(x=>!x.querySelector('p,li'));
+  const limpioH=x=>{ const c=x.cloneNode(true); c.querySelectorAll('[data-sid],[data-add]').forEach(y=>{ y.removeAttribute('data-sid'); y.removeAttribute('data-add'); }); return c.outerHTML; };
+  const claveP=p=>norm(textoDe(p)).slice(0,100);
+  function crudoArt(esq,cab){
+    const k=norm(cab), arts=$$('.articulo',crudo(esq));
+    return arts.find(a=>{ const h=$('.articulo-head',a); return h&&norm(cabTxt(h))===k; })||arts.find(a=>{ const h=$('.articulo-head',a), t=h?norm(cabTxt(h)):''; return t&&(t.startsWith(k.slice(0,40))||k.startsWith(t.slice(0,40))); })||null;
+  }
+  /* índice, dentro de las hojas del artículo crudo, del párrafo del Exprés (null si no se reconoce) */
+  function indiceCrudo(rn,p){
+    const pn=norm(textoDe(p)); if(pn.length<8) return null;
+    const i=rn.findIndex(r=>r.length>=8&&(pn.includes(r.slice(0,24))||pn.includes(r.slice(Math.floor(r.length/2),Math.floor(r.length/2)+24))||(pn.length>=16&&r.includes(pn.slice(0,24)))));
+    return i<0?null:i;
+  }
+  function colocar(f,w,x,esq){
+    const fb=$('.ex-fb',f)||f, ra=crudoArt(esq,x.a); if(!ra){ fb.appendChild(w); return; }
+    const lr=hojas(ra), j=lr.findIndex(r=>limpioH(r)===x.h); if(j<0){ fb.appendChild(w); return; }
+    w._ri=j; const rn=lr.map(r=>norm(r.textContent));
+    let mejor=null, mi=1e9;
+    [...hojasEx(fb)].forEach(p=>{
+      const aw=p.closest('.ex-anadido'); let ri=aw&&aw._ri!=null?aw._ri:(aw?null:indiceCrudo(rn,p));
+      if(ri!=null&&ri>j&&ri<mi){ mi=ri; mejor=aw||p; }
+    });
+    if(!mejor){ fb.appendChild(w); return; }
+    let el=mejor; while(el.parentNode!==fb&&el.parentNode) el=el.parentNode;
+    if(el.parentNode===fb) fb.insertBefore(w,el); else fb.appendChild(w);
+  }
   window.exAnadidos=function(c,n){
-    const id='tema-'+n, l=(rd(KP,{})[id]||[]).slice().sort((a,b)=>a.xn-b.xn); if(!l.length) return;
+    const id='tema-'+n, todo=(rd(KP,{})[id]||[]).slice().sort((a,b)=>a.xn-b.xn), esq=document.getElementById(id);
+    const l=todo.filter(x=>!x.rm), nuevas={};
     l.forEach(x=>{
       const w=document.createElement('div'); w.className='ex-anadido'+(x.del?' borrado':''); w.dataset.xn=x.xn;
       w.innerHTML='<span class="ex-anadido-x" data-ui>⚡+ añadido por ti <button type="button" data-xn="'+x.xn+'">✕ quitar</button></span>'+x.h;
-      let f=fichaDe(c,x.a);
-      if(f){ ($('.ex-fb',f)||f).appendChild(w); return; }
+      let f=fichaDe(c,x.a)||nuevas[norm(x.a)];
+      if(f){ if(!x.del&&f.classList.contains('ex-anadido')) f.classList.remove('borrado'); colocar(f,w,x,esq); return; }
       const nf=document.createElement('div'); nf.className='ex-ficha ex-anadido'+(x.del?' borrado':''); nf.dataset.xn=x.xn;
       nf.innerHTML='<div class="ex-fh">'+esc(x.a)+'</div><div class="ex-fb"></div>'; w.className='ex-anadido-in'; $('.ex-fb',nf).appendChild(w);
       let ref=null; for(const a of (x.ant||[])){ ref=fichaDe(c,a); if(ref) break; }
       if(ref) ref.after(nf); else c.appendChild(nf);
+      nuevas[norm(x.a)]=nf; if(!x.del) nf.classList.remove('borrado');
     });
+    /* lo quitado con ⚡−: se oculta (el texto sigue en su sitio, así no se corre ninguna marca) */
+    todo.filter(x=>x.rm&&!x.del).forEach(x=>{ const f=fichaDe(c,x.a); if(!f) return; hojasEx($('.ex-fb',f)||f).forEach(p=>{ if(!p.closest('.ex-anadido')&&claveP(p)===x.k) p.classList.add('ex-quitado'); }); });
+    /* botón ⚡− en la cabecera de cada artículo del Exprés */
+    $$('.ex-ficha',c).forEach(f=>{ const h=$('.ex-fh',f); if(!h||$('.ex-menos',h)||f.classList.contains('ex-anadido')&&!$('.ex-fb p, .ex-fb li',f)) return;
+      const b=document.createElement('button'); b.type='button'; b.className='ex-menos'; b.dataset.ui='1'; b.dataset.nuevo='1'; b.title='⚡− Quitar apartados de este artículo del Exprés (sigue en el temario entero)'; b.textContent='⚡−'; h.appendChild(b); });
   };
+  /* ⚡− panel: lista los apartados del artículo en el Exprés; marcas lo que quieres QUITAR (lo ya quitado sale marcado: desmárcalo para volver a ponerlo) */
+  function panelQuitar(f,c){
+    const esq=c.closest('.esquema'), id=esq.id, cab=cabTxt($('.ex-fh',f)), fb=$('.ex-fb',f); if(!fb) return;
+    const ps=hojasEx(fb).filter(p=>textoDe(p).length>3);
+    if(!ps.length){ aviso('Este artículo no tiene apartados que quitar'); return; }
+    const all=rd(KP,{}), l=all[id]||[];
+    const info=ps.map(p=>{ const aw=p.closest('.ex-anadido');
+      if(aw){ const x=l.find(y=>String(y.xn)===aw.dataset.xn); return {p,x,anad:true,q:!!(x&&x.del)}; }
+      const k=claveP(p), x=l.find(y=>y.rm&&y.k===k); return {p,x,k,q:p.classList.contains('ex-quitado')}; });
+    const ov=document.createElement('div'); ov.id='xp-panel';
+    ov.innerHTML='<div class="xp-box"><h3>⚡− Quitar del Exprés</h3><div class="xp-sub">'+esc(cab)+' · marca lo que NO quieres en el Exprés (en el temario entero se queda). Desmarca para volver a ponerlo.</div>'
+      +info.map((o,j)=>'<label class="'+(o.q?'ya':'')+'"><input type="checkbox" data-j="'+j+'"'+(o.q?' checked':'')+'><span>'+esc(textoDe(o.p).slice(0,320))+(textoDe(o.p).length>320?'…':'')+(o.anad?' <span class="ya-t">añadido con ⚡+</span>':'')+'</span></label>').join('')
+      +'<div class="xp-bt"><button type="button" class="no">Cancelar</button><button type="button" class="si">Aplicar</button></div></div>';
+    document.body.appendChild(ov);
+    ov.addEventListener('click',ev=>{ if(ev.target===ov||ev.target.closest('.no')) ov.remove(); });
+    $('.si',ov).onclick=()=>{
+      const a2=rd(KP,{}), l2=a2[id]=a2[id]||[]; let xn=l2.reduce((m,y)=>Math.max(m,y.xn||0),0), ch=0;
+      info.forEach((o,j)=>{ const quiere=$('input[data-j="'+j+'"]',ov).checked; if(quiere===o.q) return; ch++;
+        if(o.anad){ const x=l2.find(y=>String(y.xn)===(o.p.closest('.ex-anadido')||{dataset:{}}).dataset.xn); if(x) x.del=quiere?1:0; }
+        else { const x=l2.find(y=>y.rm&&y.k===o.k); if(x) x.del=quiere?0:1; else if(quiere) l2.push({xn:++xn,rm:1,k:o.k,a:cab,t:Date.now()}); } });
+      ov.remove(); if(!ch) return; wr(KP,a2);
+      window.esqRemontar(c); aviso('⚡ Exprés actualizado: '+ch+(ch===1?' cambio':' cambios'));
+    };
+  }
+  document.addEventListener('click',e=>{
+    const b=e.target.closest&&e.target.closest('.ex-menos'); if(!b) return;
+    e.preventDefault(); e.stopPropagation(); panelQuitar(b.closest('.ex-ficha'),b.closest('.ex-cont'));
+  },true);
   document.addEventListener('click',e=>{
     const b=e.target.closest&&e.target.closest('.ex-anadido-x button'); if(!b) return;
     e.preventDefault(); e.stopPropagation();
@@ -7084,7 +7276,7 @@ body.rq-ocultas .ex-rq .rq-r:not(.ver){color:transparent;text-shadow:0 0 9px rgb
   function claveFicha(f,Q){
     $$(':scope > .ex-clave',f).forEach(x=>x.remove());
     const fb=$('.ex-fb',f); if(!fb) return;
-    const ps=$$('p',fb).filter(p=>!p.closest('.ex-anadido.borrado'));
+    const ps=$$('p',fb).filter(p=>!p.closest('.ex-anadido.borrado, .ex-quitado'));
     const filas=[];
     // 🎯 lo que preguntan en el examen (pregunta corta → respuesta)
     const qs=qsDe(fb,Q), bue=escogerQ(qs,3), vn=new Set(), neg=qs.filter(([,q])=>{ if(!(q[2]&2)) return false; const k=norm(q[1]); if(vn.has(k)) return false; vn.add(k); return true; }).slice(0,2);

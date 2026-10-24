@@ -8,7 +8,17 @@ const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').repla
 const AUT = new Set(['corte', 'tribunal', 'tribunales', 'comite', 'ministros', 'ministerio', 'ministerios', 'asamblea', 'consejo',
   'secretaria', 'secretario', 'gobierno', 'fiscal', 'fiscales', 'fiscalia', 'juez', 'jueces', 'magistrado', 'magistrados', 'sala', 'salas',
   'presidencia', 'presidente', 'comision', 'parlamento', 'audiencia', 'juzgado', 'abogado', 'abogados', 'registrador', 'defensor',
-  'organo', 'organos', 'autoridad', 'autoridades', 'delegado', 'delegados', 'interpol', 'europol', 'oficina']);
+  'organo', 'organos', 'autoridad', 'autoridades', 'delegado', 'delegados', 'interpol', 'europol', 'oficina',
+  // personas a las que se refiere la norma (verde, 24/10/2026)
+  'persona', 'personas', 'extranjero', 'extranjeros', 'extranjera', 'extranjeras', 'menor', 'menores']);
+// «autoridades competentes», «órgano competente»: el adjetivo también va en verde
+const COMPETENTE = new Set(['competente', 'competentes']);
+// lila ampliado (24/10/2026): «no podrá» (negación + futuro) y «será concedido» (ser/estar/haber + participio)
+const NEGA = new Set(['no', 'ni', 'nunca', 'tampoco', 'jamas']);
+const AUX = new Set(['sera', 'seran', 'estara', 'estaran', 'habra', 'habran']);
+const PART_IRR = new Set(['hecho', 'hechos', 'dicho', 'dichos', 'puesto', 'puestos', 'impuesto', 'impuestos', 'prevista', 'previsto', 'previstas', 'previstos',
+  'resuelto', 'resuelta', 'resueltos', 'resueltas', 'dispuesto', 'dispuesta', 'dispuestos', 'compuesto', 'compuesta', 'compuestos', 'compuestas', 'expuesto', 'abierto', 'cubierto', 'escrito', 'devuelto']);
+const esPart = s => { const n = norm(s); return /^[a-zñ]{3,}(ado|ada|ados|adas|ido|ida|idos|idas)$/.test(n) || PART_IRR.has(n); };
 const ENLACE = new Set(['de', 'del', 'la', 'las', 'el', 'los', 'y', 'e', 'o', 'u', 'para', 'en']);
 const FUT = /^[a-záéíóúüñ]{2,}r(á|án)$/i;
 function parsea(html) {
@@ -42,9 +52,18 @@ function aplica(html) {
   ws.forEach((p, k) => {
     if (p.cls === 'm-resp') return;
     const limpia = p.s.replace(/&[a-z]+;/g, '').replace(/^[«"“(¿¡]+|[.,;:)»"”?!]+$/g, '');
-    if (FUT.test(limpia)) { p.cls = 'm-accion'; p.ru = false; return; }
+    if (FUT.test(limpia)) {
+      p.cls = 'm-accion'; p.ru = false;
+      const lila = q => { if (q && q.cls !== 'm-resp') { q.cls = 'm-accion'; q.ru = false; } };
+      const pr = ws[k - 1]; if (pr && NEGA.has(norm(pr.s.replace(/&[a-z]+;/g, '')))) lila(pr);                          // «no podrá», «ni será»
+      let sg = ws[k + 1];
+      if (sg && AUX.has(norm(limpia)) && esPart(sg.s.replace(/[.,;:)»"”?!]+$/g, ''))) lila(sg);                          // «será concedido»
+      else if (sg && norm(sg.s) === 'ser' && ws[k + 2] && esPart(ws[k + 2].s.replace(/[.,;:)»"”?!]+$/g, ''))) { lila(sg); lila(ws[k + 2]); }   // «podrá ser concedido»
+      return;
+    }
     const n = norm(limpia), cap = /^[A-ZÁÉÍÓÚÑ]/.test(limpia);
     let aut = AUT.has(n);
+    if (COMPETENTE.has(n) && ws[k - 1] && AUT.has(norm(ws[k - 1].s.replace(/[.,;:)»"”?!]+$/g, '')))) aut = true;
     if ((n === 'estado' || n === 'estados') && cap) aut = true;
     if (n === 'partes' && cap && ws[k - 1] && /^estados?$/i.test(norm(ws[k - 1].s))) aut = true;
     if (aut && !p.cls) { p.cls = 'm-autoridad'; return; }
