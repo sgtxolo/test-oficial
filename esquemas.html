@@ -6290,6 +6290,15 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
 #ultima-chip .x{background:transparent;color:#fff;padding:5px 7px}
 @media print{#ultima-chip{display:none!important}}
 </style>
+<script id="script-ir-ficha">
+/* Salto al marcador: instantáneo (el suave se perdía en distancias largas) y se repite unos instantes porque el alto de lo que hay encima
+   puede cambiar al cargarse (fuentes, cuadros, fichas); se para en cuanto tocas la pantalla. */
+window.irAFicha=function(el){
+  el.style.scrollMarginTop='90px'; let n=0, t=0; const parar=()=>{ clearTimeout(t); ['wheel','touchstart','keydown','mousedown'].forEach(e=>removeEventListener(e,parar,true)); };
+  ['wheel','touchstart','keydown','mousedown'].forEach(e=>addEventListener(e,parar,{capture:true,passive:true}));
+  const go=()=>{ if(!el.isConnected) return parar(); el.scrollIntoView({block:'start',behavior:'instant'}); if(++n<8) t=setTimeout(go,250); else parar(); }; go();
+};
+</script>
 <script id="script-ultima">
 /* ==================== MARCADOR: por dónde ibas ====================
    Guarda la última ficha que viste en cada tema ('esquemas-ultima', se sincroniza con el resto de dispositivos).
@@ -6307,7 +6316,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   let objetivo=null, tHide=0;
   const ocultar=()=>{ chip.classList.remove('on'); clearTimeout(tHide); };
   chip.querySelector('.x').onclick=ocultar;
-  chip.querySelector('.ir').onclick=()=>{ if(objetivo){ objetivo.style.scrollMarginTop='90px'; objetivo.scrollIntoView({behavior:'smooth',block:'start'}); } ocultar(); };
+  chip.querySelector('.ir').onclick=()=>{ if(objetivo) window.irAFicha(objetivo); ocultar(); };
   function ofrecer(){
     const es=activo(); ocultar(); if(!es) return;
     if(document.body.classList.contains('expres')) return; rec(); const u=data[es.id]; if(!u||!u.k) return;
@@ -6386,7 +6395,7 @@ body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
   let objetivo=null, tHide=0;
   const ocultar=()=>{ chip.classList.remove('on'); clearTimeout(tHide); };
   chip.querySelector('.x').onclick=ocultar;
-  chip.querySelector('.ir').onclick=()=>{ if(objetivo){ objetivo.style.scrollMarginTop='90px'; objetivo.scrollIntoView({behavior:'smooth',block:'start'}); } ocultar(); };
+  chip.querySelector('.ir').onclick=()=>{ if(objetivo) window.irAFicha(objetivo); ocultar(); };
   chip.querySelector('.coche').onclick=()=>{ const c=cont(); if(!c||!window.cocheDesde) return; ocultar(); window.cocheDesde(+c.id.replace(/\D+/g,''),'ex'); };
   window.ultimaApi=window.ultimaApi||{};
   window.ultimaApi.ex={ dato:n=>{ rec(); const u=data['tema-'+n+'-ex']; return u&&u.k?u:null; },
