@@ -232,7 +232,11 @@ u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoratio
   .content{width:100%;display:none}
   body.ver-esquema .content{display:block}
   body.ver-esquema .sidebar{display:none}
-  body.ver-esquema .topbar{display:none}
+  /* el menú sigue accesible aunque se oculte la barra: ← Temas y ⋯ Menú fijos y pequeños arriba a la izquierda */
+  body.ver-esquema .topbar{height:0;margin:0;padding:0;border:0;overflow:visible;visibility:hidden}
+  body.ver-esquema .btn-volver,body.ver-esquema #btn-menu-acc{position:fixed;top:6px;z-index:99995;margin:0;padding:3px 10px;font-size:12px;height:auto;min-height:0;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+  body.ver-esquema .btn-volver{left:8px}
+  body.ver-esquema #btn-menu-acc{left:100px;visibility:visible;background:var(--panel,#fff)}
   .btn-volver{display:block;position:sticky;top:6px;z-index:9;margin:0 0 10px;border:none;background:var(--verde);color:#fff;border-radius:20px;padding:8px 16px;font-size:13px;font-weight:700;font-family:inherit;cursor:pointer}
 }
 
@@ -513,8 +517,8 @@ function mostrar(id){
   document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ cerrar(); document.body.classList.remove('menu-acc'); } });
   const ba=document.getElementById('btn-menu-acc'), pa=document.getElementById('barra-acciones');
   (function(){ const tp=document.querySelector('.topbar'); let on=false;
-    function pos(){ const w=b.offsetParent!==null?b.offsetWidth+16:8; ba.style.left=w+'px'; const v=document.getElementById('btn-volver'); if(v) v.style.left=(w+ba.offsetWidth+6)+'px'; }
-    function act(){ const f=window.scrollY>(tp?tp.offsetHeight:80); if(f===on) return; on=f; document.body.classList.toggle('btns-fijos',f); if(f) pos(); else { ba.style.left=''; const v=document.getElementById('btn-volver'); if(v) v.style.left=''; } }
+    function pos(){ const v=document.getElementById('btn-volver'); let x=8; [b,v,ba].forEach(e=>{ if(!e||!e.offsetWidth) return; e.style.left=x+'px'; x+=e.offsetWidth+6; }); }
+    function act(){ const f=window.scrollY>(tp?tp.offsetHeight:80); if(f===on){ if(on) pos(); return; } on=f; document.body.classList.toggle('btns-fijos',f); if(f) pos(); else [b,document.getElementById('btn-volver'),ba].forEach(e=>{ if(e) e.style.left=''; }); }
     addEventListener('scroll',act,{passive:true}); addEventListener('resize',()=>{ if(on) pos(); }); })();
   ba.onclick=()=>document.body.classList.toggle('menu-acc');
   document.addEventListener('pointerdown',e=>{ if(!document.body.classList.contains('menu-acc')) return;
