@@ -4,7 +4,7 @@
 // Uso: node prompts/herramientas/expres-t8.js     (ajustables: BAJO, CAB, ANT y los de expres-lib)
 Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, UNO: 0.8, RUN_MIN: 90, GRIS_PLIEGA: 'cifra' }).forEach(([k, v]) => { if (process.env[k] === undefined) process.env[k] = String(v); });
 const X = require('./expres-lib.js')(8);
-const V = [];   // sin cuadros propios todavía
+let V = []; try { V = require('./tema8/visuales-t8.js'); } catch (e) { console.log('sin cuadros:', e.message); }
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
 const N = { BAJO: +(process.env.BAJO || 4), CAB: +(process.env.CAB || 6), ANT: +(process.env.ANT || 5) };
 const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=/.test(x.at));
