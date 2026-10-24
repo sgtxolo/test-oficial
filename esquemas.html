@@ -243,6 +243,11 @@ u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoratio
 #barra-acciones{display:none!important;position:absolute;top:100%;right:0;left:auto;z-index:99980;flex-wrap:wrap!important;justify-content:flex-start;align-items:center;gap:8px!important;padding:12px;width:max-content;max-width:min(620px,calc(100vw - 20px));background:var(--panel);border:1.5px solid var(--borde,#ccc);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.28)}
 body.menu-acc #barra-acciones{display:flex!important}
 @media (max-width:720px){#barra-acciones{right:0;left:0;width:auto;max-width:none}}
+/* ☰ Temas y ⋯ Menú siempre a mano: al bajar se quedan fijos arriba a la izquierda, pequeños */
+body.btns-fijos #btn-menu-temas,body.btns-fijos #btn-menu-acc{position:fixed;top:6px;z-index:99995;padding:3px 10px;font-size:12px;height:auto;min-height:0;box-shadow:0 2px 8px rgba(0,0,0,.25);background:var(--panel,#fff)}
+body.btns-fijos #btn-menu-temas{left:8px}
+body.btns-fijos #barra-acciones{position:fixed;top:40px;left:8px;right:auto;max-height:calc(100vh - 56px);overflow:auto}
+@media (max-width:720px){body.btns-fijos #barra-acciones{left:8px;right:8px;width:auto}}
 @media print{.btn-menu-temas,.menu-fondo,#btn-menu-acc{display:none!important}}
 
 @media print{
@@ -494,6 +499,10 @@ function mostrar(id){
   document.getElementById('nav-temas').addEventListener('click',e=>{ if(e.target.closest('.tema-nav-item')) cerrar(); });
   document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ cerrar(); document.body.classList.remove('menu-acc'); } });
   const ba=document.getElementById('btn-menu-acc'), pa=document.getElementById('barra-acciones');
+  (function(){ const tp=document.querySelector('.topbar'); let on=false;
+    function pos(){ const w=b.offsetParent!==null?b.offsetWidth+16:8; ba.style.left=w+'px'; }
+    function act(){ const f=window.scrollY>(tp?tp.offsetHeight:80); if(f===on) return; on=f; document.body.classList.toggle('btns-fijos',f); if(f) pos(); else ba.style.left=''; }
+    addEventListener('scroll',act,{passive:true}); addEventListener('resize',()=>{ if(on) pos(); }); })();
   ba.onclick=()=>document.body.classList.toggle('menu-acc');
   document.addEventListener('pointerdown',e=>{ if(!document.body.classList.contains('menu-acc')) return;
     if(pa.contains(e.target)||ba.contains(e.target)||e.target.closest('#pdf-menu,.guia-ov,.rep-ov,#sync-panel')) return;
@@ -4428,6 +4437,7 @@ body.embed #app{padding-top:4px}
 /* (…) desplegables: el texto literal del temario que se omite en el esquema */
 .hueco{cursor:pointer;border-bottom:1.5px dotted #8a8f98;border-radius:3px;padding:0 1px;transition:background .15s}
 .hueco:hover,.hueco:focus-visible,.hueco.abierto{background:rgba(120,126,136,.18);outline:none}
+.hueco.hz-v::before{content:"(…)"}
 .hueco-txt{color:#7a808a;font-style:italic;background:rgba(120,126,136,.12);border-radius:4px;padding:0 3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 [data-theme="dark"] .hueco-txt{color:#a3a9b3;background:rgba(160,166,176,.14)}
 [data-theme="dark"] .hueco{border-bottom-color:#a3a9b3}
@@ -4514,6 +4524,31 @@ body.embed #app{padding-top:4px}
       if (!h && a.length >= 12){ const x = ks.find(y => y.split('|')[0] === a); if (x) h = tabla[x]; }
       return acc + (h ? ' ' + h + ' ' : ELIP) + p;
     }, '');
+  };
+  /* Exprés: algunos apartados traen el texto gris de un (…) ya desplegado y sin su (…) (quedó cocido al generar el HTML). Se vuelven a cerrar:
+     el texto pasa a un (…) pulsable (span.hueco vacío: el (…) lo pinta el CSS, así que las posiciones de las marcas no cambian). */
+  window.exHuecosCerrar = function(c){
+    c.querySelectorAll('.hueco-txt').forEach(s => {
+      if (s.closest('.ex-plg-t')) return;
+      const ant = s.previousSibling;
+      if (ant && ant.nodeType === 1 && ant.classList.contains('hueco') && ant.classList.contains('abierto')) return;
+      const h = s.textContent.trim(); if (!h){ s.remove(); return; }
+      const e = document.createElement('span'); e.className = 'hueco hz-v'; e.dataset.h = h; e.tabIndex = 0; e.setAttribute('role', 'button'); e.setAttribute('aria-expanded', 'false');
+      s.replaceWith(e);
+    });
+  };
+  /* Exprés: una ficha que se queda casi sin texto visible (solo «(…)») se muestra con sus (…) ya desplegados, para que no quede vacía */
+  window.exAbrirVacias = function(c){
+    c.querySelectorAll('.ex-ficha:not(.borrado)').forEach(f => {
+      const fb = f.querySelector('.ex-fb'); if (!fb) return;
+      if (!fb.querySelector('.hueco:not(.abierto), .ex-plg:not(.on)')) return;
+      let t = ''; const w = document.createTreeWalker(fb, NodeFilter.SHOW_TEXT);
+      for (let n; (n = w.nextNode());) if (!n.parentNode.closest('.ex-plg-t, .hueco-txt, .hueco, .ex-anadido-x, button, [data-ui]')) t += n.nodeValue;
+      t = t.replace(/\(…\)/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+      if (t.length >= 80) return;
+      fb.querySelectorAll('.ex-plg:not(.on)').forEach(x => x.classList.add('on'));
+      fb.querySelectorAll('.hueco:not(.abierto)').forEach(x => alternar(x));
+    });
   };
   /* Exprés: sus (…) se abren igual; el contenedor .ex-cont se monta después, así que se vigila */
   new MutationObserver(ms => { const vistos = new Set(); ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1 && (n.classList.contains('ex-cont') || n.querySelector('.ex-cont'))) { const e = n.closest('.esquema'); if (e && !vistos.has(e)) { vistos.add(e); montar(e); } } })); }).observe(document.body, {childList: true, subtree: true});
@@ -5270,11 +5305,13 @@ const __migraT2=function(){
     }
     c.id=esq.id+'-'+modo;   // las marcas y el subrayado de cada modo se guardan con este id (aparte de los del esquema grande)
     const head=esq.querySelector('.esquema-head'); if(head) head.after(c); else esq.prepend(c);
+    try{ if(window.exHuecosCerrar) window.exHuecosCerrar(c); }catch(e){ console.error(e); }
     sellarParrafos(c);
     try{ if(window.catsMontar) window.catsMontar(c); if(window.pmMontar) window.pmMontar(c); }catch(e){ console.error(e); }
     if(d&&window.exMontarClave){ const q=window.cargarExpresQ?window.cargarExpresQ(n):Promise.resolve();      // «📌 Lo clave» y RECUERDA, una sola vez y con las preguntas ya cargadas
       if((window.EXPRES_Q||{})[n]) window.exMontarClave(c); else q.then(()=>window.exMontarClave(c)); }
     /* páginas y minutos: se cuentan los caracteres visibles sin pedir innerText (obligaba a maquetar todo el Exprés: ~1,5 s en el móvil) */
+    setTimeout(()=>{ try{ if(d&&window.exAbrirVacias) window.exAbrirVacias(c); }catch(e){ console.error(e); } },0);
     setTimeout(()=>{ const t=window.esqTextos(c,'.ex-bar,.ex-clave,.ex-rq,.ex-plg-t,.hueco-txt,.borrado,button,svg,script,style').reduce((s,x)=>s+x.nodeValue.replace(/\s+/g,' ').length,0), p=t/3000; const a=c.querySelector('.ex-pags'), m=c.querySelector('.ex-min');
       if(a) a.textContent='~'+p.toFixed(1)+' págs A4'; if(m) m.textContent=Math.round(p*3.5)+' min'; },50);
   }
@@ -6795,7 +6832,7 @@ body.rq-ocultas .ex-rq .rq-r:not(.ver){color:transparent;text-shadow:0 0 9px rgb
 .ex-ficha.ex-anadido{padding-left:0;background:transparent}
 .ex-anadido.borrado{display:none}
 .ex-anadido-x{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;color:#2563eb;margin:2px 0}
-.ex-anadido-x button{border:1px solid #2563eb;background:transparent;color:#2563eb;border-radius:8px;font:inherit;font-size:11px;padding:0 6px;cursor:pointer}
+.ex-anadido-x button{border:1.5px solid #c0392b;background:transparent;color:#c0392b;border-radius:8px;font:inherit;font-size:12px;font-weight:800;padding:1px 8px;cursor:pointer}
 .articulo-head .xp-b{float:right;margin-left:6px;border:1.5px solid #2563eb;background:transparent;color:#2563eb;border-radius:10px;padding:1px 8px;font-size:11.5px;font-weight:800;cursor:pointer;font-family:inherit;text-transform:none}
 .articulo-head .xp-b:hover{background:#eef4ff}
 @media print{.articulo-head .xp-b,.ex-anadido-x,#volver-pill,.ex-clave .ck-h button,.ex-rq .rq-h button,.ex-bar .ck-tog{display:none!important}}
