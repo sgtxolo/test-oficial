@@ -175,6 +175,8 @@ try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema3/mapa-fijo
 try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema12/mapa-fijo-t12.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '12-' + kj; }); } catch (e) {}
 // Tema 5: preguntas nuevas de las marcas y las de las fichas R, ancladas a su párrafo marcado (tema5/mapa-fijo-t5.json; tema5/mapa-fijo-gen.js)
 try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema5/mapa-fijo-t5.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '5-' + kj; }); } catch (e) {}
+// Tema 8: oficiales sin sitio ancladas a su ficha (tema8/mapa-fijo-t8.json; tema8/mapa-fijo-gen.js)
+try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema8/mapa-fijo-t8.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '8-' + kj; }); } catch (e) {}
 // Tema 6: oficiales e IA que el mapa dejaba sin sitio, ancladas a su párrafo (tema6/mapa-fijo-t6.json; tema6/mapa-fijo-gen.js)
 try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema6/mapa-fijo-t6.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '6-' + kj; }); } catch (e) {}
 // ---------- 7. Escribir ----------
