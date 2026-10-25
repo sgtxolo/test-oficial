@@ -46,6 +46,7 @@ function articulosTemario(n) {
     const seq = [];
     for (const l0 of fs.readFileSync(out, 'utf8').split('\n')) {
       const l = l0.replace(/\r/g, '');
+      if (/(\. ){3,}|\.{5,}/.test(l)) continue;   // líneas de índice con puntos guía: no son artículos (la LO 1/1982 contaba 9 de más; 25/10/2026)
       // «ARTÍCULO 58 …» en mayúsculas, o «Artículo 10. Título» / «Artículo 10» solo en la línea (no las citas «artículo 5 del…»)
       const m = l.match(new RegExp('^\\s*ART[ÍI]CULO\\s+(\\d{1,3})\\s*(' + SUF.toUpperCase() + ')?(?![\\dº])', '')) ||
                 l.match(new RegExp('^\\s*Art[íi]culo\\s+(\\d{1,3})\\s*(' + SUF + ')?\\s*(?:\\.|$|\\s+[A-ZÁÉÍÓÚ«])', ''));
@@ -88,7 +89,7 @@ function articulosEsquema(html) {
 const h0 = fs.readFileSync('esquemas.html', 'utf8');
 const src = [...h0.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1]).find(s => s.includes('temasPrograma'));
 const fake = () => new Proxy(function () {}, { get: (t, k) => k === Symbol.toPrimitive ? (() => '') : fake(), apply: () => fake(), set: () => true, construct: () => fake() });
-const esquemas = new Function('document', 'window', 'localStorage', 'speechSynthesis', src.slice(0, src.search(/\nrender\(\);/)) + ';return esquemas;')(fake(), fake(), fake(), fake());
+const esquemas = new Function('document', 'window', 'localStorage', 'speechSynthesis', 'location', 'matchMedia', 'addEventListener', 'requestAnimationFrame', 'removeEventListener', 'getComputedStyle', src.slice(0, src.search(/\nrender\(\);/)) + ';return esquemas;')(fake(), fake(), fake(), fake(), fake(), fake(), fake(), fake(), fake(), fake());
 const COB = {};
 esquemas.forEach((e, i) => {
   const n = i + 1; if (!e.html || !e.html.includes('class="articulo"') || !PDFS[n]) return;
