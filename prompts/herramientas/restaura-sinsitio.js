@@ -77,22 +77,40 @@ if (process.argv.includes('--plan') || process.argv.includes('--aplicar')) fase2
 function partirAp(t) {
   const m0 = t.match(/^(\d{1,2})\.\s/); let exp = m0 ? +m0[1] + 1 : null; const cortes = [0]; const re = /\s(?=(\d{1,2})\.\s+[A-ZÁÉÍÓÚ«])/g; let m;
   while ((m = re.exec(t))) { const n = +m[1]; if (exp === null ? n <= 2 : n === exp) { cortes.push(m.index + 1); exp = n + 1; } }
+  if (cortes.length <= 1) { // definiciones numeradas «1) … 2) …»
+    const m1 = t.match(/^(\d{1,2})\)\s/); let e2 = m1 ? +m1[1] + 1 : null; const re2 = /\s(?=(\d{1,2})\)\s+[A-ZÁÉÍÓÚ«"“(])/g; let mm;
+    while ((mm = re2.exec(t))) { const n = +mm[1]; if (e2 === null ? n <= 2 : n === e2) { cortes.push(mm.index + 1); e2 = n + 1; } }
+  }
   return cortes.map((c, i) => t.slice(c, cortes[i + 1] === undefined ? undefined : cortes[i + 1] - 1).trim()).filter(Boolean);
 }
 function fase2() {
   const cp = require('child_process');
   let s = fs.readFileSync(ESQ, 'utf8');
-  const marcas = [...s.matchAll(/\/\* (T\d+_[A-Z0-9]+) \*\/ T\d+\.\w+ = bloqueTitulo\("([^"]*)"/g)].filter(m => m[1].startsWith('T' + N + '_')).map(m => ({ k: m[1], tit: m[2], i: m.index }));
-  if (!marcas.length) throw new Error('sin marcadores T' + N + '_*');
-  const sigT = s.indexOf('/* T' + (N + 1) + '_', marcas[0].i); const finT = sigT >= 0 ? sigT : s.length;
-  marcas.forEach((m, i) => { m.fin = i + 1 < marcas.length ? marcas[i + 1].i : finT; });
+  // bloques (normas) del tema en el estado actual de s: con marcadores «/* TN_XXX */ TN.xxx = bloqueTitulo(…)» o, si el tema es una sola
+  // expresión (p. ej. el T4: «TN.html = bloqueTitulo("4.1 — …")  + bloqueTitulo("4.2 — …")…»), por los títulos «N.x — …»
+  const bloques = () => {
+    let ms = [...s.matchAll(/\/\* (T\d+_[A-Z0-9]+) \*\/ T\d+\.\w+ = bloqueTitulo\("([^"]*)"/g)].filter(m => m[1].startsWith('T' + N + '_')).map(m => ({ k: m[1], tit: m[2], i: m.index }));
+    let finT;
+    if (ms.length) { const sigT = s.indexOf('/* T' + (N + 1) + '_', ms[0].i); finT = sigT >= 0 ? sigT : s.length; }
+    else {
+      ms = [...s.matchAll(new RegExp('(?:T' + N + '\\.html = |\\n  \\+ )bloqueTitulo\\("(' + N + '\\.\\d+) — ([^"]*)"', 'g'))].map(m => ({ k: 'T' + N + '_' + m[1].replace('.', ''), tit: m[1] + ' — ' + m[2], i: m.index + (m[0].startsWith('\n') ? 1 : 0) }));
+      if (!ms.length) throw new Error('sin bloques de T' + N);
+      const l = s.split('\n'); let pos = 0, fin = s.length, dentro = false;   // fin = primera línea tras el último bloque que no empieza por «  +»
+      for (const ln of l) { const st = pos; pos += ln.length + 1; if (st < ms[ms.length - 1].i) continue; if (st === ms[ms.length - 1].i || /^  \+ /.test(ln)) { dentro = true; continue; } if (dentro) { fin = st; break; } }
+      finT = fin;
+    }
+    ms.forEach((m, i) => { m.fin = i + 1 < ms.length ? ms[i + 1].i : finT; });
+    return ms;
+  };
+  const marcas = bloques();
+  if (!marcas.length) throw new Error('sin bloques de T' + N);
   const norm2 = x => fold(x).replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
   const bloqueDe = q => {
     const t = new Set(norm2(q.pregunta.slice(0, 200)).split(' ').filter(w => w.length > 3)); let best = null, bs = -1;
     for (const m of marcas) { if (/RECUERDA/.test(m.tit)) continue; const w = norm2(m.tit).split(' ').filter(x => x.length > 3); const sc = w.filter(x => t.has(x)).length / Math.max(1, w.length); if (sc > bs) { bs = sc; best = m; } }
     return best;
   };
-  const HDR = [...RAW.matchAll(/\n[ \t]*(ARTÍCULO\s+(\d+(?:\s*(?:BIS|TER|QUATER|QUINQUIES|SEXIES|SEPTIES|OCTIES|NONIES|DECIES))?)\b[.\s]*([^\n]*)|DISPOSICIÓN\s+(?:ADICIONAL|TRANSITORIA|FINAL|DEROGATORIA)[^\n]*|(\d{1,3}(?:\s*(?:BIS|TER))?)\.\s+([A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ ,;()\-–]{5,}\.)[ \t]*(?=\n))/g)]   // última alternativa: «34. OBLIGACIÓN DE DECLARAR.» (el OCR pierde la palabra ARTÍCULO)
+  const HDR = [...RAW.matchAll(/\n[ \t]*(ARTÍCULO\s+(\d+(?:\s*(?:BIS|TER|QUATER|QUINQUIES|SEXIES|SEPTIES|OCTIES|NONIES|DECIES))?)\b[.\s]*([^\n]*)|DISPOSICIÓN\s+(?:ADICIONAL|TRANSITORIA|FINAL|DEROGATORIA)[^\n]*|ANEXO\s+[IVXLC0-9]+[^\n]*|CONSIDERANDOS?\b[^\n]*|PRE[ÁA]MBULO\b[^\n]*|(\d{1,3}(?:\s*(?:BIS|TER))?)\.\s+([A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ ,;()\-–]{5,}\.)[ \t]*(?=\n))/g)]   // última alternativa: «34. OBLIGACIÓN DE DECLARAR.» (el OCR pierde la palabra ARTÍCULO)
     .map(m => ({ i: m.index + 1, num: (m[2] || m[4] || '').toLowerCase().replace(/\s+/g, ' '), tit: (m[3] || m[5] || m[1]).trim(), esDA: !(m[2] || m[4]) }));
   const cabDe = pos => { let a = -1; for (let i = 0; i < HDR.length; i++) if (HDR[i].i <= pos) a = i; else break; return a; };
   const cap = t => { t = t.replace(/\.\s*$/, '').toLowerCase(); return t.charAt(0).toUpperCase() + t.slice(1); };
@@ -101,15 +119,24 @@ function fase2() {
   for (const r of items) {
     const q = qs.find(x => x.id === r.id); const bl = bloqueDe(q); const hi = cabDe(r.raw0); if (hi < 0) { r.estado = 'sin-cabecera'; continue; }
     const h = HDR[hi], h2 = HDR[hi + 1]; const a0 = h.i, a1 = h2 ? h2.i : RAW.length; const art = RAW.slice(a0, a1);
+    // control: el título del artículo que cita la pregunta («Norma. Título. Enunciado…») debe parecerse al de la cabecera hallada; si no, el
+    // localizador se ha ido a otro sitio (respuestas cortas que coinciden por azar) y NO se toca nada: revisión a mano
+    if (!h.esDA) { const tq = (q.pregunta || '').split(/\.\s+/)[1] || ''; const wq = norm2(tq).split(' ').filter(w => w.length > 3); const wh = norm2(h.tit).split(' ').filter(w => w.length > 3);
+      const sc = wq.length && wh.length ? wq.filter(w => wh.some(x => x.startsWith(w.slice(0, 5)) || w.startsWith(x.slice(0, 5)))).length / wq.length : 1;
+      if (sc < 0.3 || art.length > 30000) { r.estado = 'localizacion-dudosa'; r.nota = h.num + ' ' + h.tit.slice(0, 40); continue; } }
     const mk = [...art.matchAll(/(?:^|\n)[ \t]*(\d{1,2})\.[ \t]+(?=\S)/g)].map(m => ({ n: +m[1], i: m.index + (m[0].startsWith('\n') ? 1 : 0) }));
     { const l1 = art.indexOf('\n'); const m1 = (l1 < 0 ? art : art.slice(0, l1)).match(/\s(1)\.[ \t]+(?=\S)/); if (m1 && !h.esDA) mk.unshift({ n: 1, i: m1.index + 1 }); }
     let ap0 = 0, ap1 = art.length, apN = null;
     const rel = r.raw0 - a0; const prev = mk.filter(m => m.i <= rel);
     if (!h.esDA && mk.length > 1 && prev.length) { const p = prev[prev.length - 1]; ap0 = p.i; apN = p.n; const nx = mk.find(m => m.i > p.i); ap1 = nx ? nx.i : art.length; }
-    const clave = bl.k + '|' + (h.esDA ? h.tit : h.num) + '|' + (apN || 0);
-    (plan[clave] = plan[clave] || { bl, hi, h, apN, ap0, ap1, art, a0, ids: [] }).ids.push(r.id);
+    let frag = false;
+    if (h.esDA && art.length > 6000 && apN == null) { // anexos / considerandos largos: solo el bloque numerado que contiene la respuesta
+      const mk2 = [...art.matchAll(/(?:^|\n)[ \t]*(?:\((\d{1,3})\)|(\d{1,3})[.)])[ \t]+(?=\S)/g)].map(m => ({ n: +(m[1] || m[2]), i: m.index + (m[0].startsWith('\n') ? 1 : 0) }));
+      const prev2 = mk2.filter(m => m.i <= rel); if (prev2.length) { const p = prev2[prev2.length - 1]; ap0 = p.i; apN = -1; const nx = mk2.find(m => m.i > p.i); ap1 = nx ? nx.i : art.length; frag = true; } }
+    const clave = bl.k + '|' + (h.esDA ? h.tit : h.num) + '|' + (frag ? 'f' + ap0 : (apN || 0));
+    (plan[clave] = plan[clave] || { bl, hi, h, apN, ap0, ap1, art, a0, frag, ids: [] }).ids.push(r.id);
   }
-  const fichasDe = bl => { const lines = []; const seg = s.slice(bl.i, bl.fin); const re = /^  \+ articuloResp\("((?:[^"\\\n]|\\.)*)"/gm; let m; while ((m = re.exec(seg))) lines.push({ cab: m[1], ini: bl.i + m.index }); return lines; };
+  const fichasDe = bl0 => { const bl = bloques().find(m => m.k === bl0.k) || bl0; const lines = []; const seg = s.slice(bl.i, bl.fin); const re = /^  \+ articuloResp\("((?:[^"\\\n]|\\.)*)"/gm; let m; while ((m = re.exec(seg))) lines.push({ cab: m[1], ini: bl.i + m.index }); return lines; };
   const nums = cab => {
     if (!/^Art[íi]culos?\s/i.test(cab)) return []; // «Preámbulo de la Ley 10/2010», «Disposición adicional…» no son artículos
     const h = cab.split(' — ')[0]; const res = []; const t = h.replace(/Art[íi]culos?/i, '').replace(/·.*/, '');
@@ -118,12 +145,14 @@ function fase2() {
     return res;
   };
   let pl = Object.values(plan);
+  { const fr = {}; pl.forEach(g => { if (!g.frag) return; const k = g.bl.k + '|' + g.h.tit; if (!fr[k]) { fr[k] = g; g.frags = []; } fr[k].frags.push({ ap0: g.ap0, ap1: g.ap1 }); if (fr[k] !== g) { fr[k].ids.push(...g.ids); g.vacio = true; } });
+    pl.forEach(g => { if (g.frags) g.frags.sort((a, b) => a.ap0 - b.ap0); }); pl = pl.filter(g => !g.vacio); }
   { // sin ficha del artículo en el esquema → se añade el artículo ENTERO una sola vez
     const uno = {};
-    pl.forEach(g => { const fich = !g.h.esDA && fichasDe(g.bl).find(f => nums(f.cab).includes(g.h.num)); if (fich) return; g.apN = null; const k = g.bl.k + '|' + (g.h.esDA ? g.h.tit : g.h.num); if (uno[k]) { uno[k].ids.push(...g.ids); g.vacio = true; } else uno[k] = g; });
+    pl.forEach(g => { const fich = !g.h.esDA && fichasDe(g.bl).find(f => nums(f.cab).includes(g.h.num)); if (fich || g.frag) return; g.apN = null; const k = g.bl.k + '|' + (g.h.esDA ? g.h.tit : g.h.num); if (uno[k]) { uno[k].ids.push(...g.ids); g.vacio = true; } else uno[k] = g; });
     pl = pl.filter(g => !g.vacio);
   }
-  const nuevoTexto = g => { const full = g.apN == null; let raw = full ? g.art : g.art.slice(g.ap0, g.ap1); if (full && !g.h.esDA) { // quita el encabezado «ARTÍCULO N. TÍTULO EN MAYÚSCULAS.» (el texto puede empezar en la misma línea)
+  const nuevoTexto = g => { if (g.frags) return g.frags.map(f => arregla(g.art.slice(f.ap0, f.ap1))).join(' '); const full = g.apN == null; let raw = full ? g.art : g.art.slice(g.ap0, g.ap1); if (full && !g.h.esDA) { // quita el encabezado «ARTÍCULO N. TÍTULO EN MAYÚSCULAS.» (el texto puede empezar en la misma línea)
       const tk = [...raw.matchAll(/\S+/g)]; let cut = 0;
       for (let i = 2; i < tk.length; i++) { const w = tk[i][0]; if (/[a-záéíóúñ]/.test(w) || (/^\d{1,2}\.$/.test(w) && /\.$/.test(tk[i - 1][0]))) { cut = tk[i].index; break; } }
       raw = raw.slice(cut);
@@ -181,6 +210,7 @@ function fase2() {
     console.log(`${g.dup ? (g.gaps && g.gaps.length ? 'GAP ' : g.cola ? 'COLA' : 'DUP?') : ''}  ${g.bl.k} · ${g.h.esDA ? g.h.tit.slice(0, 40) : 'art. ' + key}${g.apN ? '.' + g.apN : ' (entero)'} → ${fich ? 'añadir a «' + fich.cab.slice(0, 50) + '»' : 'FICHA NUEVA'} · ${g.ids.join(',')}`);
   }
   pl.filter(g => g.gaps && g.gaps.length).forEach(g => g.gaps.forEach(h => console.log(`     hueco ${g.h.num}.${g.apN || ''} #${h.n}: ${h.izq ? '(…) ' : ''}${h.fillMin.slice(0, 200)}${h.fillMin.length > 200 ? '… (' + h.fillMin.length + ')' : ''}${h.dcha ? ' (…)' : ''}`)));
+  out.filter(r => r.estado === 'localizacion-dudosa').forEach(r => console.log('  DUDOSA (no se toca):', r.id, '→', r.nota));
   out.filter(r => r.estado === 'sin-cabecera').forEach(r => console.log('  sin cabecera:', r.id));
   if (!process.argv.includes('--aplicar')) return;
   const SUB = process.argv[process.argv.indexOf('--aplicar') + 1]; if (!SUB || !SUB.endsWith('.json')) throw new Error('falta el json del subrayado');
@@ -192,7 +222,7 @@ function fase2() {
   };
   const dirT = path.join(process.env.TEMP || '/tmp', 'rs' + N); fs.mkdirSync(dirT, { recursive: true }); const tmpF = path.join(dirT, 'nuevos.html');
   // un <p> por apartado numerado (un párrafo gigante atrae a las preguntas de otros artículos en el mapa)
-  pl.forEach((g, i) => { g.id = 'RS' + i; g.html = (g.apN == null ? partirAp(nuevoTexto(g)) : [nuevoTexto(g)]).map(t => fmt(g, t)).join('</p><p>'); });
+  pl.forEach((g, i) => { g.id = 'RS' + i; g.html = (g.frags ? g.frags.flatMap(f => arregla(g.art.slice(f.ap0, f.ap1)).split(/\s(?=\d+\.\d+(?:\.\d+)*\.\s+[A-ZÁÉÍÓÚ«])/)) : g.apN == null ? partirAp(nuevoTexto(g)) : [nuevoTexto(g)]).map(t => g.frags ? t.replace(/^\(?(\d{1,3})[.)]+\s+/, (m, a) => `<b>${a}.</b> `) : fmt(g, t)).join('</p><p>'); });
   const sPlano = () => fold(s.replace(/<[^>]+>/g, '').replace(/\\"/g, '"')).replace(/[^a-z0-9]/g, '');
   const sp0 = sPlano();
   const conGap = pl.filter(g => g.gaps && g.gaps.length);
@@ -213,7 +243,7 @@ function fase2() {
   for (const m of pint.matchAll(/articuloResp\("((?:[^"\\\n]|\\.)*)", \[\], "((?:[^"\\\n]|\\.)*)", false\)/g)) P[m[1]] = m[2].replace(/^<p>/, '').replace(/<\/p>$/, '');
   const firmas = () => unidades(cargarEsquemas()[N - 1], N).map(u => ({ pid: u.pid, T: u.T.trim().slice(0, 45) }));
   const antes = firmas();
-  const limites = k => { const mi = marcas.findIndex(m => m.k === k); const ini = s.indexOf('/* ' + k + ' */'); const nxt = marcas[mi + 1] ? s.indexOf('/* ' + marcas[mi + 1].k + ' */', ini) : s.indexOf('/* T' + (N + 1) + '_', ini); return [ini, nxt < 0 ? s.length : nxt]; };
+  const limites = k => { const b = bloques().find(m => m.k === k); return [b.i, b.fin]; };
   for (const g of conCola) { // frase de la respuesta al final del párrafo, tras «(…)»
     const [ini, fin] = limites(g.bl.k); const seg = s.slice(ini, fin); const cab = fichasDe(g.bl).find(f => nums(f.cab).includes(g.h.num)).cab;
     const pos = seg.indexOf('  + articuloResp("' + cab + '"'); const e = seg.indexOf('\n', pos); let L = seg.slice(pos, e);
@@ -240,9 +270,7 @@ function fase2() {
   for (const g of hacer) {
     const ph = P[g.id]; if (!ph) throw new Error('sin pintar ' + g.id);
     // límites del bloque en el estado actual de s
-    const mi = marcas.findIndex(m => m.k === g.bl.k);
-    const ini = s.indexOf('/* ' + g.bl.k + ' */'); const nxt = marcas[mi + 1] ? s.indexOf('/* ' + marcas[mi + 1].k + ' */', ini) : s.indexOf('/* T' + (N + 1) + '_', ini);
-    const fin = nxt < 0 ? s.length : nxt; const seg = s.slice(ini, fin);
+    const [ini, fin] = limites(g.bl.k); const seg = s.slice(ini, fin);
     if (g.dest.tipo === 'append') {
       const pos = seg.indexOf('  + articuloResp("' + g.dest.cab + '"'); if (pos < 0) throw new Error('ficha no encontrada ' + g.dest.cab);
       const e = seg.indexOf('\n', pos); let L = seg.slice(pos, e);
@@ -269,9 +297,11 @@ function fase2() {
   const FIJO = path.join(__dirname, 'tema' + N, 'mapa-fijo-t' + N + '.json');
   if (fs.existsSync(FIJO)) {
     const despues = firmas(); const mp = {}; let ptr = 0;
-    antes.forEach(a => { let f = -1; for (let n = ptr; n < despues.length; n++) if (despues[n].T === a.T) { f = n; break; } if (f < 0) throw new Error('párrafo perdido ' + a.pid); mp[a.pid] = despues[f].pid; ptr = f + 1; });
+    antes.forEach(a => { let f = -1;
+      for (const L_ of [45, 24, 14]) { for (let n = ptr; n < despues.length && n < ptr + 400; n++) if (despues[n].T.slice(0, L_) === a.T.slice(0, L_)) { f = n; break; } if (f >= 0) break; }   // (un hueco rellenado al inicio del párrafo cambia su arranque)
+      if (f < 0) throw new Error('párrafo perdido ' + a.pid); mp[a.pid] = despues[f].pid; ptr = f + 1; });
     const fj = JSON.parse(fs.readFileSync(FIJO, 'utf8')); const nuevo = {};
-    Object.entries(fj).forEach(([id, kj]) => { const np = mp[N + '-' + kj]; if (!np) throw new Error('sin realineo ' + id); nuevo[id] = np.replace(new RegExp('^' + N + '-'), ''); });
+    Object.entries(fj).forEach(([id, kj]) => { const np = mp[N + '-' + kj]; if (!np) { console.warn('ancla ya rota antes de empezar (se deja igual): ' + id + ' → ' + kj); nuevo[id] = kj; return; } nuevo[id] = np.replace(new RegExp('^' + N + '-'), ''); });
     fs.writeFileSync(FIJO, JSON.stringify(nuevo)); console.log('mapa-fijo realineado');
   }
 }
