@@ -189,6 +189,42 @@ v('Artículo 122 ter', plazos('Plazos del Tema 13 (resumen)', [
   ['24 h / 2 días', 'Autorización judicial del art. 122 bis'], ['5 días', 'Sentencia de amparo (art. 121) · desistimiento (art. 74) · expediente (art. 116)']]));
 
 // Esquemas nuevos (condensan los artículos largos; también los usa el ⚡ Exprés)
+// 25/10/2026: cuadros de plazos de las fichas que no tenían (sin-esquema.js 13)
+v('Artículo 5 — Improrrogabilidad', plazos('Falta de jurisdicción (art. 5)', [
+  ['de oficio', 'Los órganos apreciarán de oficio la falta de jurisdicción y resolverán, previa audiencia de las partes y del Ministerio Fiscal por plazo común de ' + P('diez días')],
+  ['1 mes', 'Si la nueva demanda se presenta ante el órgano competente en el plazo de ' + P('un mes') + ' desde la notificación, se entenderá presentada en la fecha en que se inició el plazo para interponer el recurso']]));
+v('Artículo 7 — Incidencias', plazos('Competencia e incompetencia (art. 7)', [
+  ['10 días', 'La competencia no será prorrogable y se apreciará de oficio previa audiencia de las partes y del Ministerio Fiscal por plazo común de ' + P('diez días')],
+  ['auto', 'La declaración de incompetencia adoptará la forma de ' + R('auto') + ' y se efectuará ' + R('antes de la sentencia') + ', con emplazamiento de las partes por ' + P('diez días')]]));
+v('Artículo 10 — Salas de los Tribunales', arbol('Salas de los TSJ (art. 10)', `${D('Salas de lo Contencioso-administrativo de los TSJ')}`, [
+  { t: 'Única instancia (10.1)', sub: ['actos de las Entidades locales no atribuidos a los Juzgados', 'disposiciones generales de las CC. AA. y Entidades locales', 'Tribunales Económico-Administrativos Regionales y Locales', 'Juntas Electorales Provinciales y de CC. AA.', 'convenios entre Administraciones de la misma Comunidad Autónoma', 'autoridades independientes autonómicas'] },
+  { t: 'Segunda instancia (10.2)', sub: ['apelaciones contra sentencias y autos de los Juzgados', 'recursos de queja'] },
+  `${R('Revisión')} contra sentencias firmes de los Juzgados · cuestiones de competencia entre Juzgados de la Comunidad`,
+  `Recursos de casación para la unificación de doctrina e ${R('interés de la ley')}`]));
+v('Artículo 29 — Inactividad', plazos('Inactividad de la Administración (art. 29)', [
+  ['3 meses', 'Prestación concreta: reclamación a la Administración; si en el plazo de ' + P('tres meses') + ' no da cumplimiento ni llega a acuerdo, recurso contencioso'],
+  ['1 mes', 'Actos firmes: si no se ejecutan en el plazo de ' + P('un mes') + ' desde la petición, recurso (procedimiento abreviado)']]));
+v('Artículo 67 — Plazo de la sentencia', plazos('Sentencia (art. 67)', [
+  ['10 días', 'La sentencia se dictará en el plazo de ' + P('diez días') + ' desde que el pleito haya sido declarado concluso y decidirá todas las cuestiones controvertidas'],
+  ['fecha', 'Si no puede dictarse dentro del plazo, se razonará y se señalará fecha posterior concreta, notificándolo a las partes']]));
+v('Artículo 75 — Allanamiento', plazos('Allanamiento (art. 75)', [
+  ['10 días', 'Producido el allanamiento, el Juez o Tribunal, sin más trámites, dictará sentencia de conformidad; si no, oirá a las partes por plazo común de ' + P('diez días')]]));
+v('Artículo 76 — Reconocimiento total', plazos('Reconocimiento total en vía administrativa (art. 76)', [
+  ['5 días', 'El letrado de la Administración de Justicia mandará oír a las partes por plazo común de ' + P('cinco días') + '; el Juez dictará auto de terminación y archivo si el reconocimiento no infringe manifiestamente el ordenamiento']]));
+v('Artículo 107 — Anulación', plazos('Anulación de actos y disposiciones (art. 107)', [
+  ['10 días', 'Publicación del fallo en diario oficial: el Secretario judicial la ordenará en el plazo de ' + P('diez días') + ' desde la firmeza de la sentencia']]));
+v('Artículo 115 — Plazo', plazos('Plazo de interposición del amparo (art. 115)', [
+  ['10 días', 'El plazo para interponer el recurso será de ' + P('diez días') + ', computados según los casos'],
+  ['20 días', 'Si hubo inactividad o vía de hecho, el plazo se inicia a los ' + P('veinte días') + ' desde la reclamación, presentación del recurso o inicio de la actuación']]));
+v('Artículo 117 — Admisión', plazos('Admisión o inadmisión (art. 117)', [
+  ['5 días', 'Posibles motivos de inadmisión: comparecencia de las partes antes de transcurrir ' + P('cinco días')],
+  ['1 día', 'En el día siguiente el órgano jurisdiccional dictará auto mandando proseguir las actuaciones o acordando la inadmisión']]));
+v('Artículo 120 — Prueba', plazos('Prueba en el amparo (art. 120)', [
+  ['1 día', 'El órgano jurisdiccional decidirá en el día siguiente sobre el recibimiento a prueba'],
+  ['20 días', 'El período probatorio no será en ningún caso superior a ' + P('veinte días comunes') + ' para su proposición y práctica']]));
+v('Artículo 121 — Sentencia', plazos('Sentencia en el amparo (art. 121)', [
+  ['5 días', 'Conclusas las actuaciones, el órgano jurisdiccional dictará sentencia en el plazo de ' + P('cinco días')],
+  ['1 efecto', 'Contra las sentencias de los Juzgados procederá siempre apelación en un solo efecto']]));
 require('./esquemas-t13-nuevos.js')().forEach(([c, h]) => V.push([c, h, 'condensa']));   // 'condensa': en el Exprés sustituye a los demás cuadros de su ficha
 
 // Exportado para el ⚡ Exprés (expres-t13.js); ejecutado directamente, inserta los cuadros en el esquema normal
