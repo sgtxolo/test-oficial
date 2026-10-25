@@ -95,6 +95,7 @@ esquemas.forEach((e, i) => {
   const n = i + 1; if (!e.html || !e.html.includes('class="articulo"') || !PDFS[n]) return;
   const temario = articulosTemario(n), bruto = articulosEsquema(e.html), esquema = Math.min(bruto, temario); if (bruto > temario) console.log(`  (aviso: el esquema cuenta ${bruto} artículos, más que el PDF; revisar el PDF del tema ${n})`);
   COB[n] = { temario, esquema }; if (bruto > temario) COB[n].aviso = 1;
+  if (n === 1) { const r = JSON.parse(execFileSync('node', ['prompts/herramientas/tema1/cobertura-literal-t1.js', '--json']).toString()); COB[1] = { temario: r.tot, esquema: r.tot - r.falt }; delete COB[1].aviso; }   // T1: cobertura por texto literal (los protocolos no se pueden contar por «Artículo N»)
   console.log(`Tema ${n}: ${esquema} de ${temario} artículos del temario en el esquema (${Math.round(esquema / temario * 100)} %)`);
 });
 const bloque = `<script id="cobertura-temario">window.COBERTURA=${JSON.stringify(COB)};</script>`;
