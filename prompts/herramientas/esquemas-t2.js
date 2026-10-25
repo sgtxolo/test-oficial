@@ -125,7 +125,7 @@ H += pon('Artículos 3 y 4 — Políticas', arbol('⭐ EX · Arts. 3 y 4 — Pol
   + trampa('El art. 3 NO menciona la «ciberseguridad activa contra ataques estatales» ni crear un «cuerpo policial conjunto de intervención».');
 
 // Arts. 5, 6 y 7 (EX): los tres delitos, literal
-H += literal(12, [0, 1, 2]);
+H += literal(14, [0, 1, 2]);
 
 H += pon('Artículos 8 y 9 — Irrelevancia', arbol('Arts. 8 y 9 — Irrelevancia del resultado y delitos accesorios', `Arts. 5 a 7: ${Rq('no es necesario que el delito terrorista se haya cometido efectivamente', ['2-ia-13'])} (art. 8)`, [
   'Tipificar también (9.1): a) la participación como cómplice',
