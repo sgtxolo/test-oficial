@@ -135,6 +135,64 @@ v('Artículo 42 — Contratación', plazos('Plazos del Reglamento (resumen)', [
   ['2 meses · 6 meses · 1 año', 'Prescripción de las faltas leves · graves · muy graves, y mismos plazos para las sanciones (art. 36.3)'],
   ['6 meses a 6 años', 'Sanción de las faltas muy graves (art. 37.1.c) · graves: hasta 6 meses · leves: 1 a 10 días']]));
 
+// ---------------------------------------------------------------- Esquemas de las listas y plazos del Reglamento (25/10/2026: sin-esquema.js 14 = 0)
+v('Artículo 8 — Competencias del Defensor del Pueblo', arbol('Competencias del Defensor del Pueblo (art. 8) · además de las básicas de la Ley Orgánica', `${D('Defensor del Pueblo')}`, [
+  { t: 'Representación y relaciones', sub: [`${R('Representar')} a la Institución`, `${R('Proponer a los Adjuntos')} (conformidad previa de la Comisión Mixta Congreso-Senado para nombramiento y cese)`, 'Relación directa con las Cortes Generales (Presidente del Congreso; ambas Cámaras: sus Presidentes)', 'Relación directa con el Presidente y Vicepresidentes del Gobierno, Ministros y Secretarios de Estado, Delegados del Gobierno en las CCAA', 'Relación directa con el Tribunal Constitucional y el CGPJ (a través de sus Presidentes) y con el Fiscal General del Estado', 'Relación directa con los Presidentes de los Consejos Ejecutivos de las CCAA y con los órganos similares al Defensor'] },
+  { t: 'Mecanismo Nacional de Prevención y Junta', sub: [`${D('Designar')} al Presidente del Consejo Asesor, de entre sus Adjuntos, y a los Vocales`, `${D('Convocar y fijar el orden del día')} de la Junta de Coordinación y Régimen Interior y dirigir sus deliberaciones`] },
+  { t: 'Personal y presupuesto', sub: ['Establecer la plantilla y proceder al nombramiento y cese del Secretario General y del personal', `${D('Aprobar')} el proyecto de presupuesto (de acuerdo con las directrices de las Mesas del Congreso y del Senado) y acordar su remisión al Presidente del Congreso`, `${D('Fijar')} las directrices para la ejecución del presupuesto`, `${R('Ejercer la potestad disciplinaria')}`, 'Aprobar las bases de selección de personal y de contratación de obras y suministros (arts. 31 y 42)', 'Aprobar las instrucciones de orden interno y supervisar el funcionamiento de la Institución'] }]));
+
+v('Artículo 12 — Competencias de los Adjuntos', arbol('Competencias de los Adjuntos (art. 12.1)', `${D('Adjuntos')} del Defensor del Pueblo`, [
+  `${R('Ejercitar')} las funciones del Defensor en los casos de ${R('delegación y sustitución')} previstos en la Ley Orgánica`,
+  `${R('Dirigir la tramitación, comprobación e investigación')} de las quejas y de las actuaciones de oficio (admisión a trámite o rechazo y resoluciones)`,
+  `${D('Colaborar')} con el Defensor en las relaciones con las Cortes Generales y la Comisión Mixta y en la coordinación con los órganos similares de las CCAA`,
+  `${D('Colaborar')} con el Defensor en el ejercicio de sus funciones como Mecanismo Nacional de Prevención`,
+  `${D('Preparar y proponer')} el borrador del informe anual y de los demás informes que deban elevarse a las Cortes Generales y al Subcomité para la Prevención de la Tortura`,
+  'Asumir las restantes funciones que se les encomienden en las leyes y disposiciones reglamentarias']));
+
+v('Artículo 16 — Cese de los Adjuntos', arbol('Causas de cese de los Adjuntos (art. 16.1)', `${D('Los Adjuntos cesarán')} por`, [
+  `${R('Renuncia')}`, `${R('Expiración del plazo')} de su nombramiento`, `${R('Muerte')} o ${R('incapacidad sobrevenida')}`,
+  `${R('Notoria negligencia')} en el cumplimiento de sus obligaciones y deberes (propuesta razonada del Defensor, aprobada por la Comisión Mixta Congreso-Senado con el mismo procedimiento y mayoría que para otorgar la conformidad previa, con audiencia del interesado)`,
+  `Haber sido ${R('condenado')}, mediante sentencia firme, por ${R('delito doloso')}`,
+  `El cese se publica en el ${D('BOE')} y en los diarios de sesiones de ambas Cámaras (art. 16.2)`]));
+
+v('Artículo 18 — Competencias de la Junta', arbol('Competencias de la Junta de Coordinación y Régimen Interior (art. 18.1)', `${D('Junta de Coordinación y Régimen Interior')}`, [
+  { t: 'Informa', sub: ['Plantilla y nombramiento y cese del personal (a)', 'Candidaturas a Vocales del Consejo Asesor del MNP (i)', 'Proyecto de reforma del Reglamento (j)', `Asuntos de elaboración del proyecto de presupuesto, su ejecución y su liquidación, antes de remitirlo a las Cortes (c)`] },
+  { t: 'Conoce', sub: ['Posible interposición de recursos de amparo e inconstitucionalidad (b)', 'Proyectos de informes que deban elevarse a las Cortes y al Subcomité (g)', 'Nombramiento y cese del Secretario General (h)'] },
+  { t: 'Delibera, asiste y coopera', sub: ['Propuestas de obras, servicios y suministros (d)', 'Asiste al Defensor en sus competencias de personal y económico-financieras (e)', 'Coopera con el Defensor en la coordinación de las distintas áreas (f)', 'Asesora al Defensor sobre las cuestiones que someta a su consideración (k)'] },
+  `Sesiones (18.2): pueden asistir, debidamente convocados, ${R('los responsables de área')} y otras personas que el Defensor considere oportunas · el orden del día se comunica a todos los componentes (18.3)`]));
+
+v('Artículo 23 — Competencias del Secretario General', arbol('Competencias del Secretario General (art. 23.1)', `${D('Secretario General')}`, [
+  `${R('Gobierno y régimen disciplinario')} de todo el personal (salvo lo atribuido al Defensor, los Adjuntos o la Junta)`,
+  `${D('Dirigir')} los servicios dependientes de la Secretaría General`,
+  `${D('Preparar y presentar')} a la Junta las propuestas de selección de los Asesores y demás personal`,
+  `${D('Preparar y elevar')} a la Junta el ${R('anteproyecto de presupuesto')}`,
+  `${D('Administrar')} los créditos para gastos del Presupuesto del Defensor del Pueblo`,
+  `${D('Redactar')} las actas y notificar los acuerdos de la Junta`,
+  `${D('Convocar')}, por indicación del Presidente, el Consejo Asesor del MNP y levantar acta de sus reuniones`,
+  `En caso de vacante, ausencia o enfermedad: sustituido interinamente por el ${R('Director que designe el Defensor')}, oída la Junta (23.2)`]));
+
+v('Artículo 25 — Servicio de Régimen Económico', arbol('Servicio de Régimen Económico (art. 25)', `${D('Servicio de Régimen Económico')}: tres unidades`, [
+  `${R('Sección de Asuntos Económicos y Contabilidad')}`, `${R('Sección de Habilitación')}`, `${R('Sección de Personal y Asuntos Generales')}`]));
+
+v('Artículo 19 — Consejo Asesor del MNP', arbol('Composición del Consejo Asesor del MNP (art. 19)', `${D('Consejo Asesor')}: órgano de ${R('cooperación técnica y jurídica')} del Mecanismo Nacional de Prevención`, [
+  `${R('Los Adjuntos')} del Defensor del Pueblo, como ${R('miembros natos')}`, `Además, un ${R('máximo de 10 Vocales')} (mayores de edad, en pleno disfrute de sus derechos civiles y políticos, con reconocida trayectoria en la defensa de los Derechos Humanos)`,
+  { t: 'Designación de los Vocales (19.5)', sub: ['Un Vocal a propuesta del Consejo General de la Abogacía de España', 'Un Vocal a propuesta de la Organización Médica Colegial', 'Un Vocal a propuesta del Consejo General de Colegios Oficiales de Psicólogos de España', `${R('Hasta dos')} Vocales a propuesta conjunta de los organismos con convenios de colaboración con el Defensor (no más de un representante por entidad)`, `${R('Cinco')} Vocales elegidos de entre las candidaturas presentadas al Defensor del Pueblo (a título personal o en representación de la sociedad civil)`] },
+  `El Adjunto en el que el Defensor delegue las funciones del MNP ${D('asume la presidencia')} (sustituido por el otro Adjunto en caso de ausencia o vacante) · actúa como secretario el ${D('Secretario General')}`]));
+
+v('Artículo 20 — Designación de los Vocales', plazos('Plazos del Consejo Asesor (art. 20)', [
+  ['4 años', `Mandato de los Vocales, ${R('renovados por mitades cada dos')}`],
+  ['15 días naturales', `Para presentar candidaturas desde la publicación de la convocatoria pública`],
+  ['Hasta la designación', 'Los Vocales cesantes continúan ejerciendo sus funciones hasta que se designe a los nuevos']]));
+
+v('Artículo 36 — Faltas y prescripción', plazos('Prescripción de las faltas y de las sanciones (art. 36)', [
+  ['2 meses', `${R('Faltas leves')}`], ['6 meses', `${R('Faltas graves')}`], ['1 año', `${R('Faltas muy graves')}`],
+  ['Cómputo', 'Las faltas, desde que se cometieron; las sanciones, desde el día en que adquirió firmeza la resolución o se quebrantó su cumplimiento']]));
+
+v('Artículo 37 — Sanciones', plazos('Sanciones por faltas del personal (art. 37.1)', [
+  ['1 a 10 días', `${R('Falta leve')}: apercibimiento o suspensión de empleo y remuneración`],
+  ['Hasta 6 meses', `${R('Falta grave')}: suspensión de empleo y remuneración`],
+  ['6 meses a 6 años', `${R('Falta muy grave')}: suspensión de empleo y remuneración o separación del servicio`]]));
+
 // Exportado para el ⚡ Exprés (expres-t14.js); ejecutado directamente, inserta los cuadros en el esquema normal
 module.exports = V;
 if (require.main === module) L.inserta(14, V);

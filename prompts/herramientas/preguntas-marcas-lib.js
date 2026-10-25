@@ -49,7 +49,7 @@ module.exports = function (C) {
     for (const o of objs.filter(x => /-ia-/.test(x.id) === (tipo === 'ia'))) {
       const r = rango(o.id);
       if (r) s = s.slice(0, r[0]) + JSON.stringify(o) + s.slice(r[1]);
-      else { const p = rango(prev); if (!p) throw new Error('no encuentro ' + prev); s = s.slice(0, p[1]) + ',' + JSON.stringify(o) + s.slice(p[1]); n++; }
+      else { let p = rango(prev); if (!p && /-ia-\d+$/.test(prev)) { let k = +prev.split('-ia-')[1]; while (!p && k-- > 0) p = rango(C.T + '-ia-' + k); } if (!p) throw new Error('no encuentro ' + prev); s = s.slice(0, p[1]) + ',' + JSON.stringify(o) + s.slice(p[1]); n++; }
       prev = o.id;
     }
   }

@@ -33,7 +33,7 @@ function inserta(N, V, F = 'esquemas.html') {
   const ini0 = `const T${N} = {};`, fin0 = `/* T${N}_RECUERDA`;
   const nom = `VIS_T${N}`;
   // 1) limpiar versión anterior
-  s = s.replace(new RegExp(`^const ${nom} = \\{[\\s\\S]*?\\n\\};\\n`, 'm'), '');
+  s = s.replace(new RegExp(`^const ${nom} = \\{[\\s\\S]*?\\r?\\n\\};\\r?\\n`, 'm'), '');   // (con CRLF el bloque anterior no se quitaba y quedaba duplicado: 25/10/2026)
   { const keep = []; let dentro = false;
     for (const l of s.split('\n')) {
       if (l.startsWith(ini0)) dentro = true; if (l.startsWith(fin0)) dentro = false;
