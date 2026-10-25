@@ -7,8 +7,10 @@ const SUB = process.argv.find(a => a.endsWith('.json')); if (!SUB) throw new Err
 const b = t => `<b>${t}</b>`;
 const L = fs.readFileSync(path.join(RAIZ, 'prompts/temario-limpio/tema2/temario.txt'), 'utf8').replace(/\r\n?/g, '\n').replace(/[ -​   　\u0007\u0000]/g, ' ').replace(/­/g, '').split('\n');
 const arregla = t => t.replace(/-\s+(?=[a-zñáéíóú])/g, '').replace(/(^|[\s(«])([B-DF-NP-TV-XZÁÉÍÓÚÑ]) (?=[a-záéíóúñ])/g, '$1$2').replace(/(^|[\s(«])E (?=[a-záéíóúñ])/g, '$1E').replace(/\s{2,}/g, ' ').replace(/\s+([,.;:])/g, '$1').trim();
+L.forEach((l, i) => { L[i] = l.replace(/^\s*000\d{3}\s+/, ''); });   // «000655 ARTÍCULO 34.»: nº de 6 cifras del OCR
 // Preámbulo de la Ley 10/2010: líneas 993-1000 del temario (cada línea es un párrafo)
-const preambulo = L.slice(990, 1000).map(arregla).filter(Boolean);
+const preambulo = L.slice(990, 1000).filter(l => !/derechos reservados|^TEMARIO DE|^TOMO \d|^T\d+ [A-ZÁÉÍÓÚ]|^A OFICIAL$|^ASCENSO$/i.test(l.trim())).map(arregla).filter(Boolean)
+  .flatMap(p => { const fr = p.split(/(?<=\.)\s+(?=[A-ZÁÉÍÓÚ«])/); const out = []; let cur = ''; for (const f of fr) { if (cur && (cur + ' ' + f).length > 650) { out.push(cur); cur = f; } else cur = cur ? cur + ' ' + f : f; } if (cur) out.push(cur); return out; });   // trozos de ~650 caracteres: un párrafo enorme atrae a preguntas de otros artículos
 // artículo n de la Ley 10/2010 (desde la línea 990): lista de apartados ya limpios
 const PIE = /derechos reservados|^TEMARIO DE|^TOMO \d|^T\d+ [A-ZÁÉÍÓÚ]|^\d+ \|/i;
 function apartados(n) {
@@ -16,7 +18,8 @@ function apartados(n) {
   let j = i + 1; while (j < L.length && !/^ARTÍCULO \d/.test(L[j])) j++;
   let t = L.slice(i, j).filter(l => l.trim() && !PIE.test(l.trim())).join(' ');
   t = t.replace(/^ARTÍCULO \d+(?: [A-Z]+)?\.\s+(?:[^a-z]*?\.\s+)(?=\d{1,2}\.\s)/, '');
-  return t.split(/\s(?=\d{1,2}\.\s+[A-ZÁÉÍÓÚ«])/).map(x => arregla(x));
+  { const m0 = t.match(/^(\d{1,2})\.\s/); let exp = m0 ? +m0[1] + 1 : null; const cortes = [0]; const re = /\s(?=(\d{1,2})\.\s+[A-ZÁÉÍÓÚ«])/g; let m; while ((m = re.exec(t))) { const n = +m[1]; if (exp === null ? n <= 2 : n === exp) { cortes.push(m.index + 1); exp = n + 1; } }
+    return cortes.map((c, i) => arregla(t.slice(c, cortes[i + 1] === undefined ? undefined : cortes[i + 1] - 1))).filter(Boolean); }
 }
 const fmtAp = (x, pref) => (pref || '') + x.replace(/^(\d{1,2})\.\s+/, (m, a) => b(a + '.') + ' ');
 const art32 = apartados(32).map((x, k) => fmtAp(x, k === 0 ? b('Art. 32.') + ' ' : ''));

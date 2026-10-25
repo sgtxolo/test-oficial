@@ -17,6 +17,7 @@ const dir = `prompts/temario-limpio/tema${N}`;
 const FILES = fs.readdirSync(dir).filter(f => f === 'temario.txt' || /^upd.*\.txt$/.test(f) || (!fs.existsSync(path.join(dir, 'temario.txt')) && f.endsWith('.txt')));
 let RAW = '';
 for (const f of FILES) RAW += '\n' + fs.readFileSync(path.join(dir, f), 'utf8').replace(/\r\n?/g, '\n').replace(/[\u0007\u0000]/g, '').replace(/[ -​   　]/g, ' ').replace(/­/g, '');
+RAW = RAW.replace(/(^|\n)[ \t]*000\d{3}[ \t]+/g, '$1');   // el OCR antepone un nº de 6 cifras («000655 ARTÍCULO 34.»)
 const PIE = /derechos reservados|^TEMARIO DE|^TOMO \d|^T\d+ [A-ZÁÉÍÓÚ]|^A OFICIAL$|^ASCENSO$|^\d+ \|/i;
 RAW = RAW.split('\n').filter(l => !PIE.test(l.trim())).join('\n');
 RAW = RAW.replace(/-\n(?=[a-zñáéíóú])/g, '');            // guion de fin de línea
@@ -72,6 +73,12 @@ module.exports = { out, RAW, NS, NM, nz, arregla };
 // Rangos de páginas del PDF por norma: prompts/herramientas/temaN/rangos-pdf.json = {"T2_LEY19":[15,20],...}
 // =====================================================================================================================
 if (process.argv.includes('--plan') || process.argv.includes('--aplicar')) fase2();
+// parte un texto en apartados «1. … 2. …» exigiendo numeración consecutiva (no corta en «artículo 53. El procedimiento…»)
+function partirAp(t) {
+  const m0 = t.match(/^(\d{1,2})\.\s/); let exp = m0 ? +m0[1] + 1 : null; const cortes = [0]; const re = /\s(?=(\d{1,2})\.\s+[A-ZÁÉÍÓÚ«])/g; let m;
+  while ((m = re.exec(t))) { const n = +m[1]; if (exp === null ? n <= 2 : n === exp) { cortes.push(m.index + 1); exp = n + 1; } }
+  return cortes.map((c, i) => t.slice(c, cortes[i + 1] === undefined ? undefined : cortes[i + 1] - 1).trim()).filter(Boolean);
+}
 function fase2() {
   const cp = require('child_process');
   let s = fs.readFileSync(ESQ, 'utf8');
@@ -85,8 +92,8 @@ function fase2() {
     for (const m of marcas) { if (/RECUERDA/.test(m.tit)) continue; const w = norm2(m.tit).split(' ').filter(x => x.length > 3); const sc = w.filter(x => t.has(x)).length / Math.max(1, w.length); if (sc > bs) { bs = sc; best = m; } }
     return best;
   };
-  const HDR = [...RAW.matchAll(/\n[ \t]*(ARTÍCULO\s+(\d+(?:\s*(?:BIS|TER|QUATER|QUINQUIES|SEXIES|SEPTIES|OCTIES|NONIES|DECIES))?)\b[.\s]*([^\n]*)|DISPOSICIÓN\s+(?:ADICIONAL|TRANSITORIA|FINAL|DEROGATORIA)[^\n]*)/g)]
-    .map(m => ({ i: m.index + 1, num: (m[2] || '').toLowerCase().replace(/\s+/g, ' '), tit: (m[3] || m[1]).trim(), esDA: !m[2] }));
+  const HDR = [...RAW.matchAll(/\n[ \t]*(ARTÍCULO\s+(\d+(?:\s*(?:BIS|TER|QUATER|QUINQUIES|SEXIES|SEPTIES|OCTIES|NONIES|DECIES))?)\b[.\s]*([^\n]*)|DISPOSICIÓN\s+(?:ADICIONAL|TRANSITORIA|FINAL|DEROGATORIA)[^\n]*|(\d{1,3}(?:\s*(?:BIS|TER))?)\.\s+([A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ ,;()\-–]{5,}\.)[ \t]*(?=\n))/g)]   // última alternativa: «34. OBLIGACIÓN DE DECLARAR.» (el OCR pierde la palabra ARTÍCULO)
+    .map(m => ({ i: m.index + 1, num: (m[2] || m[4] || '').toLowerCase().replace(/\s+/g, ' '), tit: (m[3] || m[5] || m[1]).trim(), esDA: !(m[2] || m[4]) }));
   const cabDe = pos => { let a = -1; for (let i = 0; i < HDR.length; i++) if (HDR[i].i <= pos) a = i; else break; return a; };
   const cap = t => { t = t.replace(/\.\s*$/, '').toLowerCase(); return t.charAt(0).toUpperCase() + t.slice(1); };
   const items = out.filter(r => r.estado === 'sin-lead' || r.estado === 'lead-presente');
@@ -184,7 +191,8 @@ function fase2() {
     return g.apN != null ? `<b>Art. ${g.h.num}.</b> ${t}` : t;
   };
   const dirT = path.join(process.env.TEMP || '/tmp', 'rs' + N); fs.mkdirSync(dirT, { recursive: true }); const tmpF = path.join(dirT, 'nuevos.html');
-  pl.forEach((g, i) => { g.id = 'RS' + i; g.html = fmt(g, nuevoTexto(g)); });
+  // un <p> por apartado numerado (un párrafo gigante atrae a las preguntas de otros artículos en el mapa)
+  pl.forEach((g, i) => { g.id = 'RS' + i; g.html = (g.apN == null ? partirAp(nuevoTexto(g)) : [nuevoTexto(g)]).map(t => fmt(g, t)).join('</p><p>'); });
   const sPlano = () => fold(s.replace(/<[^>]+>/g, '').replace(/\\"/g, '"')).replace(/[^a-z0-9]/g, '');
   const sp0 = sPlano();
   const conGap = pl.filter(g => g.gaps && g.gaps.length);

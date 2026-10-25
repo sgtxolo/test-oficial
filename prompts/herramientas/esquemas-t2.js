@@ -520,4 +520,11 @@ H += pon('Artículos 16 a 18', cuadro('Arts. 12 a 18 — Cooperación, corredore
   ['<b>Firma y vigor (17 y 18)</b>', `Nueva York, desde el día 30 tras su aprobación hasta el 12-12-2002 · vigor: ${Rq('día 90 tras el 40.º instrumento, nunca antes que la Convención', ['2-ia-315'])} · depositario: SG de la ONU`]]))
   + trampa('Cláusulas finales: Convenio 196 = 3 meses tras 6 signatarios (4 del Consejo de Europa), depositario el SG del Consejo de Europa · Palermo y sus Protocolos = día 90 tras el 40.º instrumento (los Protocolos nunca antes que la Convención), depositario el SG de la ONU · controversias: negociación → arbitraje → 6 meses → CIJ (Convenio 196: arbitraje o TIJ de común acuerdo).');
 
-module.exports = { visuales: () => VIS.map(([c, v]) => [c, X.final(v)]) };
+// Cuadros «pregunta → respuesta» automáticos (25/10/2026): los genera tema2/genera-cuadros-auto.js para recortar el ⚡ Exprés
+try {
+  const AUTO = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'tema2', 'cuadros-auto.json'), 'utf8'));
+  AUTO.forEach(a => VIS.push([a.prefijo, cuadro(a.adicional ? '🎯 Más preguntas de este artículo · pregunta → respuesta' : '🎯 Preguntas de este artículo · pregunta → respuesta', ['Pregunta', 'Respuesta'],
+    a.rows.map(r => [`<small>${r.q}</small>`, Rq(r.a, [r.id])])), true]));
+} catch (e) { if (e.code !== 'ENOENT') throw e; }
+
+module.exports = { visuales: () => VIS.map(([c, v, auto]) => [c, X.final(v), auto]) };
