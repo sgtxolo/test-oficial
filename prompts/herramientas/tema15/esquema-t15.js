@@ -1,11 +1,12 @@
 // Tema 15 · esquema LITERAL (26/10/2026) a partir del temario oficial limpio (prompts/temario-limpio/tema15/oficial.txt):
 //   15.1 LO 1/2004 (Títulos Preliminar, I, II y III) · 15.3 Instr. 1/2025 · 15.4 Instr. 5/2021 (Protocolo Cero) · 15.5 Protocolo telemático (Anexo).
-// Las normas que solo están en MI PDF (Resolución 2005, Acuerdo CGPJ, NTF-2/2025, Instr. 12/2018) se añaden aparte (tema15/esquema-t15-mio.js).
+// Las normas que solo están en MI PDF (Resolución 2005, Acuerdo CGPJ, NTF-2/2025, Instr. 12/2018) vienen de esquema-t15-mio-lib.js (transcritas de las imágenes).
 // Deja cada norma como /* T15_X */ T15.x = "…" (una línea) para marcas-lib.js, aplicar-subrayado-pdf.js y el Exprés.
 // Uso: node prompts/herramientas/tema15/esquema-t15.js
 const fs = require('fs'), path = require('path');
 const RAIZ = path.join(__dirname, '..', '..', '..'), F = path.join(RAIZ, 'esquemas.html'), D = path.join(RAIZ, 'prompts', 'temario-limpio', 'tema15');
 const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const MIO = require('./esquema-t15-mio-lib.js');
 const lineas = fs.readFileSync(path.join(D, 'oficial.txt'), 'utf8').replace(/\r/g, '').split('\n');
 const trozo = (a, b) => lineas.slice(a - 1, b - 1);
 
@@ -86,12 +87,15 @@ const T15 = {};
 /* T15_I125 */ T15.i125 = ${JSON.stringify(B.i125)};
 /* T15_PC */ T15.pc = ${JSON.stringify(B.pc)};
 /* T15_PUL */ T15.pul = ${JSON.stringify(B.pul)};
+/* T15_RS */ T15.rs = ${JSON.stringify(MIO.rs)};
+/* T15_NTF */ T15.ntf = ${JSON.stringify(MIO.ntf)};
+/* T15_I1218 */ T15.i1218 = ${JSON.stringify(MIO.i1218)};
 (function(){
   const t = esquemas[14];
   t.titulo = "15 — Protección Integral contra la Violencia de Género: LO 1/2004, Instrucciones 1/2025 y 5/2021 (Protocolo Cero) y seguimiento telemático";
   t.html = leyenda()
     + trampa("Cómo está hecho este esquema", "Texto LITERAL de tu temario 2026 (oficial limpio). Las marcas EXOF / EX / ✱ y las fichas R son las de tu temario subrayado; tus colores, los de tu PDF.")
-    + T15.lo + T15.i125 + T15.pc + T15.pul;
+    + T15.lo + T15.rs + T15.i125 + T15.pc + T15.pul + T15.ntf + T15.i1218;
 })();
 ${fin}
 `;
