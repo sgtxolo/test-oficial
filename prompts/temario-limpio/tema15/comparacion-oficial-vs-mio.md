@@ -22,3 +22,5 @@ El extracto oficial avisa de que NO trae: Instrucción 12/2018 SES, Resolución 
 
 Total preguntas esperadas con la regla 5/página sobre MI PDF: ~168 págs ⇒ ≈ 840 IA (se descuentan hojas en blanco/portadas al medir).
 Banco actual: 240 oficiales (`15-…`), 0 IA.
+
+**Decisión 26/10/2026:** el T15 se basa solo en mi PDF subrayado; Código Penal y LECrim quedan fuera (tienen sus propios temas).
