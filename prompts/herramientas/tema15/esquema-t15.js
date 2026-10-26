@@ -90,12 +90,13 @@ const T15 = {};
 /* T15_RS */ T15.rs = ${JSON.stringify(MIO.rs)};
 /* T15_NTF */ T15.ntf = ${JSON.stringify(MIO.ntf)};
 /* T15_I1218 */ T15.i1218 = ${JSON.stringify(MIO.i1218)};
+/* T15_REC */ T15.rec = "";
 (function(){
   const t = esquemas[14];
   t.titulo = "15 — Protección Integral contra la Violencia de Género: LO 1/2004, Instrucciones 1/2025 y 5/2021 (Protocolo Cero) y seguimiento telemático";
   t.html = leyenda()
     + trampa("Cómo está hecho este esquema", "Texto LITERAL de tu temario 2026 (oficial limpio). Las marcas EXOF / EX / ✱ y las fichas R son las de tu temario subrayado; tus colores, los de tu PDF.")
-    + T15.lo + T15.rs + T15.i125 + T15.pc + T15.pul + T15.ntf + T15.i1218;
+    + T15.lo + T15.rs + T15.i125 + T15.pc + T15.pul + T15.ntf + T15.i1218 + T15.rec;
 })();
 ${fin}
 `;

@@ -1,0 +1,41 @@
+# Marcas del Tema 15 (PDF 08-08-2026). Sello PREGUNTA EXAMEN / EXAMEN = EXOF; círculo "EX" = EX; ✱ = *. Las R1-R23 van en RS de marcas-t15.js.
+# Las "ℛ" manuscritas, los "o/o" y las notas a mano no cuentan como marca. Págs 11-12,17-18,21,23 de la LO = texto antiguo tachado: NO cuentan.
+p5: lo 1.1:* lo 1.2:EX lo 1.3:EX
+p6: lo 2.c:EXOF lo 2.a:* lo 2.g:*
+p7: lo 3.1:* lo 3.2:* lo 3.3:* lo 4.1:EX
+p8: lo 4.2:EX lo 4.4:EX lo 4.6:EX lo 7.1:*
+p9: lo 12.1:EXOF
+p10: lo 14.2:EXOF lo 14.1:* lo 15.2:* lo 16.1:EX
+p11: lo 16.2:* lo 16.3:EX
+p13: lo 17.2:EXOF
+p14: lo 19.1:* lo 19.2:*
+p15: lo 20.1:EXOF lo 21.1:EX
+p16: lo 21.5:* lo 23.1:EXOF lo 23.3:*
+p18: lo 27.1:* lo 27.4:EXOF
+p19: lo 28:EXOF
+p20: lo 29.1:EXOF
+p22: lo 30.3:*
+p25: lo 32.1:*
+p27: rs ~"Este Protocolo fue aprobado por la Comisión de Seguimiento":*
+p28: rs ~"Por su relevancia para establecer las medidas policiales y judiciales":* rs ~"Una vez valorados los hechos y la situación de riesgo existente":EX rs ~"Se facilitarán a la víctima mecanismos o dispositivos técnicos":*
+p30: rs ~"Cuando el órgano judicial determine el contenido concreto de la prohibición de aproximación":EXOF rs ~"En caso de incumplimiento doloso por el imputado":EXOF
+p32: rs ~"Se estudiará el desarrollo de un sistema telemático de intercambio de documentos":* rs ~"La conexión entre las redes telemáticas de la Administración de Justicia":*
+p33: rs ~"Como criterio general, cuando se trate de hechos relacionados con la violencia de género":* rs ~"La Policía Judicial mantendrá informada, en todo momento":* rs ~"La Autoridad Judicial comunicará a las Fuerzas y Cuerpos de Seguridad territorialmente competentes":*
+p34: rs ~"El órgano judicial podrá encomendar al Equipo Forense":* rs ~"Asimismo, el órgano judicial valorará la posible emisión de informes":* rs ~"En todo caso, pondrá en conocimiento de la unidad policial la efectiva notificación":*
+p35: rs ~"La Unidad policial que reciba la comunicación dará traslado de ella":EX
+p36: rs ~"El Fiscal de Sala contra la Violencia sobre la Mujer será el encargado":EX rs ~"Las Unidades Policiales, el Consejo General del Poder Judicial y la Fiscalía General del Estado se comprometen":EXOF
+p37: rs ~"En otro caso, se le ofrecerá la posibilidad de ser trasladada":*
+p38: rs ~"Situación laboral de la víctima.":* rs ~"Situación económica de la víctima.":* rs ~"Lugares que frecuenta la víctima o víctimas":* rs ~"Vehículos propiedad de la víctima":*
+p39: rs ~"Conocimiento de otros supuestos similares ocurridos con anterioridad":*
+p44: rs ~"Igualmente constituirá objeto del servicio de guardia la adopción de medidas cautelares":*
+p45: rs ~"Las asignaciones de fecha y hora para celebración de los juicios orales":EX rs ~"A este fin, se establecerá un turno de señalamientos entre los Juzgados de lo Penal":*
+p63: i125 ~"Aquellos que, en algún momento a lo largo del último año":EX i125 ~"Para todos los casos, excepto Especial Relevancia":EX
+p95: pc ~"La relación víctima-agresor, actual o pasada":EX pc ~"Los antecedentes y circunstancias de todo tipo referidas al agresor":EX pc ~"Las circunstancias psicosociales y económicas de la víctima":EX
+p105: pc ~"RECUERDE QUE EL PROTOCOLO CERO PRESTA ESPECIAL ATENCIÓN A DOS ACCIONES":EX pc ~"Pueden existir otros indicadores o circunstancias que ayudan en la predicción":* pc ~"No abandone el lugar sin informar a la víctima de los teléfonos y recursos":*
+p117: pul ~"1.3. DURACIÓN":*
+p119: pul ~"2.2.2":*
+p132: ntf ~"Los Equipos VIOGEN llevarán a cabo los cometidos asignados":*
+p135: ntf ~"Se recabará la información necesaria de todos los actores que puedan proporcionarla":*
+p142: ntf ~"Se actuará conforme a los Procedimientos SIGO número 1883":*
+p153: ntf ~"Las víctimas de violencia de género tienen derecho a la reparación":*
+p154: ntf ~"Las ausencias o faltas de puntualidad al trabajo, motivadas por la situación física":*
