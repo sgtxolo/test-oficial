@@ -8,7 +8,7 @@ p9: lo 12.1:EXOF
 p10: lo 14.2:EXOF lo 14.1:* lo 15.2:* lo 16.1:EX
 p11: lo 16.2:* lo 16.3:EX
 p13: lo 17.2:EXOF
-p14: lo 19.1:* lo 19.2:*
+p14: lo 19.1:* lo 19.2a:*
 p15: lo 20.1:EXOF lo 21.1:EX
 p16: lo 21.5:* lo 23.1:EXOF lo 23.3:*
 p18: lo 27.1:* lo 27.4:EXOF
@@ -32,8 +32,8 @@ p45: rs ~"Las asignaciones de fecha y hora para celebración de los juicios oral
 p63: i125 ~"Aquellos que, en algún momento a lo largo del último año":EX i125 ~"Para todos los casos, excepto Especial Relevancia":EX
 p95: pc ~"La relación víctima-agresor, actual o pasada":EX pc ~"Los antecedentes y circunstancias de todo tipo referidas al agresor":EX pc ~"Las circunstancias psicosociales y económicas de la víctima":EX
 p105: pc ~"RECUERDE QUE EL PROTOCOLO CERO PRESTA ESPECIAL ATENCIÓN A DOS ACCIONES":EX pc ~"Pueden existir otros indicadores o circunstancias que ayudan en la predicción":* pc ~"No abandone el lugar sin informar a la víctima de los teléfonos y recursos":*
-p117: pul ~"1.3. DURACIÓN":*
-p119: pul ~"2.2.2":*
+p117: pul ~"En los supuestos en que la instalación se haya acordado para el control de las medidas o penas de prohibición":*
+p119: pul ~"Cometa comunicará con el investigado, encausado o condenado cuando la aproximación":*
 p132: ntf ~"Los Equipos VIOGEN llevarán a cabo los cometidos asignados":*
 p135: ntf ~"Se recabará la información necesaria de todos los actores que puedan proporcionarla":*
 p142: ntf ~"Se actuará conforme a los Procedimientos SIGO número 1883":*
