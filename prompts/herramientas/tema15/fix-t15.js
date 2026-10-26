@@ -60,6 +60,7 @@ const F = [
   ['15-260', q => { O(q, 0, 'Se procurará facilitar el DLV a la usuaria con carácter posterior a la instalación del dispositivo para el investigado.'); q.correcta = 0; return [PREV, 'El DLV se facilita con carácter previo (no posterior); la entrega preferente es en el domicilio de la víctima.']; }],
   ['15-279', q => { q.correcta = 0; return ['La Oficina Judicial comunicará la Resolución, con carácter inmediato y dentro del plazo máximo de 24 horas, a las FFCCS territorialmente competentes', 'El plazo máximo es de 24 horas.']; }],
   ...require('./fix-t15-nuevas.js')({ O, ex }),
+  ...require('./fix-t15-lote2.js')({ O, ex }),
 ];
 // ---------- aplicación ----------
 let s = fs.readFileSync(FILE, 'utf8'), n = 0; const malas = [], imgs = [];
