@@ -49,7 +49,7 @@ exports.run = function ({ bloque, Q, arg = process.argv.slice(2) }) {
   let may = 0;
   Q.forEach((q, i) => {
     const lit = of.includes(nrm(q.t));
-    if (!lit) { const cv = cobertura(q.t, ocr); if (q.v === 'img' && cv >= 0.5) aprox.push(ia[i].id + ' ' + Math.round(cv * 100) + '%'); else malas.push(ia[i].id + ' · ' + q.t.slice(0, 90) + (q.v === 'img' ? ' (cobertura OCR ' + Math.round(cv * 100) + '%)' : '')); }
+    if (!lit && q.v === 'man') aprox.push(ia[i].id + ' (leída en la imagen)'); else if (!lit) { const cv = cobertura(q.t, ocr); if (q.v === 'img' && cv >= 0.5) aprox.push(ia[i].id + ' ' + Math.round(cv * 100) + '%'); else malas.push(ia[i].id + ' · ' + q.t.slice(0, 90) + (q.v === 'img' ? ' (cobertura OCR ' + Math.round(cv * 100) + '%)' : '')); }
     const op = ia[i].opciones.map(nrm); if (new Set(op).size < 4) dup.add(ia[i].id);
     const ok = nrm(ia[i].opciones[ia[i].correcta].replace(/\.$/, ''));
     if (!/incorrecta|todas|correctas|incorrectas|ninguna/i.test(q.e + ia[i].opciones.join(' ')) && !nrm(q.t).includes(ok)) sinOk.push(ia[i].id + ' · ' + ia[i].opciones[ia[i].correcta].slice(0, 70));
