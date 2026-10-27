@@ -3453,12 +3453,14 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
 
   function cargarVoces(){
     const sel = $('voz-voz');
-    const voces = synth.getVoices().filter(v => /^es/i.test(v.lang));
+    /* la más natural primero: neuronal/natural/premium/mejorada > Google/Siri > el resto; las «compactas» al final */
+    const punt = v => (/natural|neural|premium|enhanced|mejorada|online/i.test(v.name) ? 40 : 0) + (/google|siri|paulina|monica|m.nica|jorge|diego|alvaro|elvira|helena|laura/i.test(v.name) ? 15 : 0) - (/compact/i.test(v.name) ? 30 : 0) + (/es-ES/i.test(v.lang) ? 5 : 0) + (v.localService === false ? 3 : 0);
+    const voces = synth.getVoices().filter(v => /^es/i.test(v.lang)).sort((a, b) => punt(b) - punt(a));
     if(!voces.length) return;
     const prev = sel.value;
-    sel.innerHTML = voces.map(v => `<option value="${v.name}">${v.name.replace(/Microsoft |Google /,'')} (${v.lang})</option>`).join('');
+    sel.innerHTML = voces.map(v => `<option value="${v.name}">${(punt(v) >= 40 ? '★ ' : '') + v.name.replace(/Microsoft |Google /,'')} (${v.lang})</option>`).join('');
     let guardada = ''; try{ guardada = localStorage.getItem('esquemas-voz') || ''; }catch(e){}
-    const elegida = [prev, guardada].find(n => n && voces.some(v => v.name === n)) || (voces.find(v => /es-ES/i.test(v.lang)) || voces[0]).name;
+    const elegida = [prev, guardada].find(n => n && voces.some(v => v.name === n)) || voces[0].name;
     sel.value = elegida;
   }
   cargarVoces();
@@ -3541,7 +3543,7 @@ if("serviceWorker" in navigator){window.addEventListener("load",function(){navig
     const v = synth.getVoices().find(x => x.name === $('voz-voz').value);
     if(v){ u.voice = v; u.lang = v.lang; } else u.lang = 'es-ES';
     u.rate = parseFloat($('voz-vel').value) || 1;
-    u.onend = () => { if(mi !== token || estado !== 'leyendo') return; pos++; hablar(); };
+    u.onend = () => { if(mi !== token || estado !== 'leyendo') return; const fin = /[.;:!?»)]s*$/.test(cola[pos].texto); pos++; if(fin) setTimeout(() => { if(mi === token && estado === 'leyendo') hablar(); }, 280); else hablar(); };   // pausa de respiración al acabar frase, como un audiolibro
     u.onerror = e => { if(mi !== token) return; if(e.error === 'interrupted' || e.error === 'canceled') return; $('voz-info').textContent = 'Error de voz: ' + e.error; pos++; hablar(); };
     marcar(cola[pos].el);
     $('voz-info').textContent = `Fragmento ${pos+1} de ${cola.length}`;
