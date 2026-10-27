@@ -4413,6 +4413,8 @@ body.embed #app{padding-top:4px}
 .hm-clave{font-style:normal;text-decoration:underline;text-decoration-color:#d1332a;text-decoration-thickness:2px;text-underline-offset:2px}
 .hm-bx{font-style:normal;border:2px solid #d1332a;border-radius:3px;padding:0 2px}
 .hm-ov{font-style:normal;border:2px solid #d1332a;border-radius:999px;padding:0 6px}
+.hm-un{text-decoration:underline;text-decoration-color:#d1332a;text-decoration-thickness:2px}
+.hm-ar2::before{content:"➘ ";color:#d1332a;font-weight:800}.hm-ar3::before{content:"➚ ";color:#d1332a;font-weight:800}.hm-ar4::before{content:"➙ ";color:#d1332a;font-weight:800}
 .hm-ar::before{content:"➜ ";color:#d1332a;font-weight:800;font-style:normal}
 [data-theme="dark"] .hm-destacable{background:#6b3d1f;color:#ffd9b8}[data-theme="dark"] .hm-autoridad{background:#265331;color:#c9f0cf}[data-theme="dark"] .hm-plazo{background:#1f4a63;color:#c8e9fb}[data-theme="dark"] .hm-accion{background:#4a3768;color:#e6d9fa}[data-theme="dark"] .hm-personalizado{background:#5a4a12;color:#fff0b0}
 .hueco-txt{color:#7a808a;font-style:italic;background:rgba(120,126,136,.12);border-radius:4px;padding:0 3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
@@ -4681,6 +4683,15 @@ body.ver-esquema.pm-on #pm-ui{display:flex}
 .pm.pm-ar.pm-f::after{content:"";position:absolute;left:-46px;top:100%;margin-top:-4px;width:52px;height:34px;pointer-events:none;background:var(--pmc);-webkit-print-color-adjust:exact;print-color-adjust:exact;
   -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 34'%3E%3Cpath d='M2 32L46 5M46 5L36 6M46 5L42 14' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/100% 100%;
   mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 34'%3E%3Cpath d='M2 32L46 5M46 5L36 6M46 5L42 14' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+/* subrayado rojo encima (sin quitar el color) y flechas desde las otras tres esquinas */
+.pm.pm-un{text-decoration:underline;text-decoration-color:var(--pmc);text-decoration-thickness:var(--pmw,2px);text-underline-offset:2px}
+.pm.pm-ar2.pm-f,.pm.pm-ar3.pm-l,.pm.pm-ar4.pm-l{position:relative}
+.pm.pm-ar2.pm-f::after,.pm.pm-ar3.pm-l::after,.pm.pm-ar4.pm-l::after{content:"";position:absolute;width:52px;height:34px;pointer-events:none;background:var(--pmc);-webkit-print-color-adjust:exact;print-color-adjust:exact;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 34'%3E%3Cpath d='M2 32L46 5M46 5L36 6M46 5L42 14' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/100% 100%;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 34'%3E%3Cpath d='M2 32L46 5M46 5L36 6M46 5L42 14' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+.pm.pm-ar2.pm-f::after{left:-46px;bottom:100%;margin-bottom:-4px;transform:scaleY(-1)}
+.pm.pm-ar3.pm-l::after{right:-46px;bottom:100%;margin-bottom:-4px;transform:scale(-1,-1)}
+.pm.pm-ar4.pm-l::after{right:-46px;top:100%;margin-top:-4px;transform:scaleX(-1)}
 body.pm-er .pm{cursor:not-allowed;outline:1px dashed rgba(200,0,0,.5)}
 .esquema{position:relative}
 .pm-svg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:5}
@@ -5135,6 +5146,7 @@ html{overflow-x:hidden}body{max-width:100%}
     if(lt&&(!lf||lt.n>lf.n)){ bk.t.pop(); unwrap(esq,lt.n); renderShapes(esq); } else if(lf){ bk.f.pop(); renderShapes(esq); } else return;
     save();
   }
+  window.pmUndo=undo;
   function clearAll(){
     const esq=actEsq(); if(!esq) return; const bk=bucket(esq.id);
     if(!bk.t.length&&!bk.f.length) return;
@@ -5523,9 +5535,9 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   let cur=null;   // {esq, el} para editar una marca · {esq, range} para marcar una selección
   function abrir(titulo,sel,x,y,conQuitar){
     pop.innerHTML='<b class="cat-t">'+titulo+'</b><div class="cat-g">'+CATS.map(([k,n])=>'<button type="button" data-c="'+k+'"'+(sel===k?' class="on"':'')+'>'+(k==='clave'?'<u class="m-clave">'+n+'</u>':'<mark class="m-'+k+'">'+n+'</mark>')+'</button>').join('')+'</div>'
-      +('<div class="cat-g" style="margin-top:8px"><button type="button" data-a="shp" data-k="rect" title="Cuadrado alrededor">▭ Cuadrado</button><button type="button" data-a="shp" data-k="oval" title="Círculo alrededor">◯ Círculo</button><button type="button" data-a="shp" data-k="arrow" title="Flecha hacia la palabra">➜ Flecha</button></div>')
+      +('<div class="cat-g" style="margin-top:8px"><button type="button" data-a="shp" data-k="under" title="Subrayado rojo encima (no quita el color)"><u style="text-decoration-color:#d1332a;text-decoration-thickness:2px">Subrayado</u></button><button type="button" data-a="shp" data-k="rect" title="Cuadrado alrededor">▭ Cuadrado</button><button type="button" data-a="shp" data-k="oval" title="Círculo alrededor">◯ Círculo</button></div><div class="cat-g" style="margin-top:6px"><button type="button" data-a="shp" data-k="arrow" title="Flecha desde abajo a la izquierda">↗ Flecha</button><button type="button" data-a="shp" data-k="ar2" title="Flecha desde arriba a la izquierda">↘ Flecha</button><button type="button" data-a="shp" data-k="ar3" title="Flecha desde arriba a la derecha">↙ Flecha</button><button type="button" data-a="shp" data-k="ar4" title="Flecha desde abajo a la derecha">↖ Flecha</button></div>')
       +(conQuitar?'<button type="button" class="cat-b cat-del" data-a="del">Quitar este subrayado</button>':'')
-      +'<button type="button" class="cat-b cat-rst" data-a="rst">↺ Restaurar el subrayado original de este tema</button>';
+      +'<button type="button" class="cat-b cat-rst" data-a="und">↶ Deshacer el último cambio</button>';
     pop.classList.add('on');
     pop.style.left=Math.max(8,Math.min(x,innerWidth-pop.offsetWidth-8))+'px';
     pop.style.top=Math.max(8,Math.min(y+14,innerHeight-pop.offsetHeight-8))+'px';
@@ -5596,7 +5608,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
      Ese texto no cuenta en las posiciones del subrayado (aparece y desaparece), así que sus marcas se guardan aparte:
      bucket.h[clave del (…)] = [{s,e,c}] con posiciones dentro del propio texto gris; se vuelven a poner cada vez que se abre. */
   const hNorm=t=>(t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,' ').trim().slice(0,60);
-  const HCLS={rect:'bx',oval:'ov',arrow:'ar'};
+  const HCLS={rect:'bx',oval:'ov',arrow:'ar',under:'un',ar2:'ar2',ar3:'ar3',ar4:'ar4'};
   function hKey(btn){ const r=raiz(btn); if(!r) return null; const b=hNorm(btn.dataset.h), mismos=[...r.querySelectorAll('.hueco')].filter(x=>raiz(x)===r&&hNorm(x.dataset.h)===b); return {r,k:b+'#'+Math.max(0,mismos.indexOf(btn))}; }
   function hPintar(span,lista){
     span.querySelectorAll('.hm').forEach(m=>{ const pa=m.parentNode; while(m.firstChild) pa.insertBefore(m.firstChild,m); pa.removeChild(m); }); span.normalize();
@@ -5621,7 +5633,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     const rec=((data[k.r.id]||{}).h||{})[k.k]||[]; abrir('Cambiar este subrayado',(rec[+m.dataset.hi]||{}).c,e.clientX,e.clientY,true);
   },true);
   pop.addEventListener('click',e=>{
-    const b=e.target.closest('button'); if(!b||!cur||b.dataset.a==='rst') return;
+    const b=e.target.closest('button'); if(!b||!cur||b.dataset.a==='rst'||b.dataset.a==='und') return;
     const c=b.dataset.a==='shp'?HCLS[b.dataset.k]:b.dataset.c, del=b.dataset.a==='del';
     if(cur.hm){ const {span,i}=cur.hm; if(!c&&!del) return; e.stopImmediatePropagation(); hGuardar(span,l=>{ if(del) l.splice(i,1); else if(l[i]) l[i].c=c; }); cerrar(); return; }
     if(cur.range&&c){ const sp=huecoDe(cur.range); if(!sp) return; e.stopImmediatePropagation();
@@ -5634,10 +5646,11 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   pop.addEventListener('click',e=>{
     const b=e.target.closest('button'); if(!b||!cur) return;
     const esq=cur.esq, bk=bucket(esq.id);
+    if(b.dataset.a==='und'){ cerrar(); if(window.pmUndo) window.pmUndo(); return; }
     if(b.dataset.a==='rst'){ if(confirm('¿Restaurar el subrayado original de este tema? Se perderán tus cambios sobre el subrayado automático.')){ delete data[esq.id]; save(); cerrar(); if(window.esqRemontar) window.esqRemontar(esq); else location.reload(); } return; }
     if(b.dataset.a==='shp'&&cur.range&&window.pmAddShape){        // subrayado nuevo: la figura se dibuja alrededor de la selección
       const k=b.dataset.k;
-      if(window.pmApi){ window.pmApi.caja(esq,cur.range,k==='oval'?'ov':k==='arrow'?'ar':'bx'); getSelection().removeAllRanges(); cerrar(); return; }   // cuadro/círculo pegado al texto: uno por renglón
+      if(window.pmApi){ window.pmApi.caja(esq,cur.range,HCLS[k]||'bx'); getSelection().removeAllRanges(); cerrar(); return; }   // cuadro/círculo pegado al texto: uno por renglón
       const rc=cur.range.getBoundingClientRect(), n=window.pmAddShape(esq,k,rc,{pad:k==='oval'?8:3});
       if(n!=null&&window.pmPush&&window.pmDelShape) window.pmPush(esq.id,()=>window.pmDelShape(esq,n));
       getSelection().removeAllRanges(); cerrar(); return;
@@ -5652,7 +5665,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
           esq.querySelectorAll('[data-add="'+el.dataset.add+'"]').forEach(unwrap); bk.a=bk.a.filter(x=>x!==a);
         } else { const sid=el.dataset.sid, t=el.textContent; unwrap(el); bk.e[sid]={t,c:null}; }
         save();
-        if(rg2){ const nb=P.caja(esq,rg2,k==='oval'?'ov':k==='arrow'?'ar':'bx',true); H(esq,()=>{ restore(); save(); if(nb!=null) P.quitar(esq,nb); }); cerrar(); return; }   // cuadro/círculo pegado a las palabras
+        if(rg2){ const nb=P.caja(esq,rg2,HCLS[k]||'bx',true); H(esq,()=>{ restore(); save(); if(nb!=null) P.quitar(esq,nb); }); cerrar(); return; }   // cuadro/círculo pegado a las palabras
         const nsh=window.pmAddShape(esq,b.dataset.k,rc);
         H(esq,()=>{ restore(); save(); if(nsh!=null&&window.pmDelShape) window.pmDelShape(esq,nsh); });
       }
