@@ -1,0 +1,209 @@
+<style id="estilo-mejoras-2810">
+/* ===== 28/10/2026 · 10 mejoras de la app de esquemas (menú 🛠) ===== */
+#mj-fab{position:fixed;right:14px;bottom:96px;z-index:9000;width:46px;height:46px;border-radius:50%;border:0;background:#163f30;color:#fff;font-size:21px;box-shadow:0 3px 10px rgba(0,0,0,.35);cursor:pointer}
+#mj-menu{position:fixed;right:14px;bottom:150px;z-index:9001;background:var(--panel,#fff);color:var(--texto,#1f2a24);border:1px solid var(--borde,#d8d6c8);border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,.3);padding:8px;display:none;max-height:70vh;overflow:auto;width:min(330px,92vw)}
+#mj-menu.on{display:block}
+#mj-menu button{display:flex;gap:8px;align-items:flex-start;width:100%;text-align:left;border:0;background:transparent;color:inherit;padding:8px 9px;border-radius:9px;font:600 14px/1.25 inherit;cursor:pointer}
+#mj-menu button:hover{background:rgba(22,63,48,.1)}
+#mj-menu button small{display:block;font-weight:400;opacity:.7;font-size:12px}
+#mj-menu button.act{background:rgba(201,162,39,.25)}
+.mj-ov{position:fixed;inset:0;z-index:9500;background:rgba(0,0,0,.55);display:flex;justify-content:center;align-items:flex-start;padding:3vh 2vw;overflow:auto}
+.mj-ov>div{background:var(--panel,#fff);color:var(--texto,#1f2a24);border-radius:14px;width:min(980px,100%);padding:14px 16px 18px;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+.mj-ov.lado{justify-content:flex-end}.mj-ov.lado>div{width:min(430px,100%);min-height:94vh}
+.mj-ov h3{margin:0 40px 10px 0;font-size:17px}.mj-x{float:right;border:0;background:#8b1e2d;color:#fff;border-radius:8px;padding:5px 11px;font-size:15px;cursor:pointer}
+.mj-ov input[type=text],.mj-ov select{width:100%;padding:8px 10px;border:1.5px solid var(--borde,#ccc);border-radius:9px;background:var(--panel,#fff);color:inherit;font-size:14px;box-sizing:border-box}
+.mj-b{display:inline-block;margin:3px 4px 3px 0;padding:6px 11px;border:1.5px solid #163f30;border-radius:9px;background:#fff;color:#163f30;font:600 13px inherit;cursor:pointer}
+.mj-b.p{background:#163f30;color:#fff}
+.mj-it{padding:8px 10px;border:1px solid var(--borde,#ddd);border-radius:10px;margin:6px 0}.mj-it .t{font-size:12px;opacity:.7}
+.mj-ind a{display:flex;gap:8px;padding:5px 6px;border-radius:7px;cursor:pointer;font-size:14px;line-height:1.25}.mj-ind a:hover{background:rgba(22,63,48,.1)}
+.mj-ind a.vis-i{padding-left:22px;font-style:italic}.mj-ind a i{width:18px;flex:none;font-style:normal;color:#2e7d32;font-weight:700}
+.mj-bar{height:8px;background:#ddd;border-radius:6px;overflow:hidden;margin:4px 0 8px}.mj-bar>b{display:block;height:100%;background:#2e7d32}
+.mj-2c{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mj-2c>div{border:1px solid var(--borde,#ddd);border-radius:10px;padding:8px 10px;font-size:14px;line-height:1.45}
+@media(max-width:720px){.mj-2c{grid-template-columns:1fr}}
+ins.mj-d{background:#ffd9a8;text-decoration:none;border-bottom:2px solid #d9534f;font-weight:600}
+.mj-r{color:#c62828;font-weight:700}
+#mj-bus{position:absolute;left:0;right:0;top:100%;z-index:9100;background:var(--panel,#fff);color:var(--texto,#1f2a24);border:1px solid var(--borde,#ccc);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.3);padding:6px;display:none;max-height:60vh;overflow:auto}
+#mj-bus.on{display:block}
+#mj-voz{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;z-index:9600;width:min(560px,94vw);background:#163f30;color:#fff;border-radius:16px;padding:12px 14px;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+#mj-voz .tx{font-size:16px;line-height:1.35;margin:6px 0;min-height:44px}#mj-voz .mj-b{background:#fff}
+/* notas propias: no añaden texto al DOM (no desplazan tus marcas); salen también en el PDF */
+[data-nota]::after{content:"✎ " attr(data-nota);display:block;white-space:pre-wrap;font:italic 600 15px/1.35 "Segoe Print","Comic Sans MS",cursive;color:#1b4fb3;border-left:3px solid #1b4fb3;margin:5px 0 2px 4px;padding-left:8px;background:rgba(27,79,179,.07)}
+body.mj-notas .esquema .txt p:hover,body.mj-notas .esquema .vis:hover{outline:2px dashed #1b4fb3;cursor:pointer}
+[data-conf]::before{content:attr(data-conf);display:inline-block;font:700 11px/1.2 sans-serif;background:#fff3cd;color:#8a5a00;border:1px solid #e0b64d;border-radius:8px;padding:1px 6px;margin-right:6px;vertical-align:middle}
+[data-mj="nuevo"]::before,[data-mj="cambiado"]::before{display:inline-block;font:700 11px/1.2 sans-serif;border-radius:8px;padding:1px 6px;margin-right:6px;vertical-align:middle}
+[data-mj="nuevo"]::before{content:"🆕 NUEVO";background:#d4f5dc;color:#17632b;border:1px solid #6cc283}
+[data-mj="cambiado"]::before{content:"✏ CAMBIADO";background:#ffe1d6;color:#9a3412;border:1px solid #f0a38a}
+[data-conf][data-mj]::before{content:attr(data-conf)}
+/* solo lo marcado por ti (Exprés) */
+body.mj-solomarcas .esquema .sm-fuera,body.mj-solomarcas .esquema .ex-clave,body.mj-solomarcas .esquema .ex-rq,body.mj-solomarcas .esquema.active .vis{display:none!important}
+@media print{#mj-fab,#mj-menu,#mj-voz,.mj-ov:not(#mj-minimo){display:none!important}
+body.mj-imprime-min>*:not(#mj-minimo){display:none!important}body.mj-imprime-min #mj-minimo{position:static;background:none;padding:0;display:block}
+body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none}}
+</style>
+<script id="script-mejoras-2810">
+(function(){
+  'use strict';
+  const $=(s,r)=>(r||document).querySelector(s), $$=(s,r)=>[...(r||document).querySelectorAll(s)];
+  const rd=(k,d)=>{ try{ const v=JSON.parse(localStorage.getItem(k)||'null'); return v==null?d:v; }catch(e){ return d; } };
+  const wr=(k,v)=>{ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} };
+  const esc=t=>String(t==null?'':t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const norm=t=>(t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9ñ]+/g,' ').trim();
+  const activa=()=>$('.esquema.active');
+  const idTema=e=>e?e.id:'';
+  const enEx=()=>document.body.classList.contains('expres');
+  const vis=e=>e&&e.offsetParent!==null;
+  const nTema=id=>+String(id).replace(/\D+/g,'');
+  const aviso=t=>{ const d=document.createElement('div'); d.textContent=t; d.style.cssText='position:fixed;left:50%;top:14px;transform:translateX(-50%);z-index:99999;background:#163f30;color:#fff;padding:9px 16px;border-radius:10px;font-size:14px'; document.body.appendChild(d); setTimeout(()=>d.remove(),2600); };
+  const ht=el=>el.textContent.replace(/(?:⚡|📍)\+?/g,'').replace(/\s+/g,' ').trim();
+  const todos=()=>{ if(window.prepararTodos) window.prepararTodos(); };
+  const irA=el=>{ if(!el) return; const t=el.getBoundingClientRect().top; scrollTo({top:Math.max(0,scrollY+t-90),behavior:'smooth'}); el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); };
+  const irAArt=(el,tema)=>{ if(window.mostrar) window.mostrar(tema); if(enEx()&&window.expresActivar) window.expresActivar('todo'); setTimeout(()=>irA(el),120); };
+
+  /* ---------- overlay genérico ---------- */
+  function ov(titulo,html,cls,id){ const o=document.createElement('div'); o.className='mj-ov '+(cls||''); if(id) o.id=id;
+    o.innerHTML='<div><button class="mj-x" type="button">✕</button><h3>'+titulo+'</h3><div class="mj-c">'+html+'</div></div>'; document.body.appendChild(o);
+    const cerrar=()=>{ o.remove(); document.body.classList.remove('mj-imprime-min'); }; o.querySelector('.mj-x').onclick=cerrar; o.addEventListener('mousedown',e=>{ if(e.target===o) cerrar(); }); o._cerrar=cerrar; return o; }
+
+  /* ============ MENÚ ============ */
+  const fab=document.createElement('button'); fab.id='mj-fab'; fab.type='button'; fab.title='Herramientas de estudio'; fab.textContent='🛠'; document.body.appendChild(fab);
+  const menu=document.createElement('div'); menu.id='mj-menu'; document.body.appendChild(menu);
+  const ITEMS=[
+    ['voz','🎧','Repaso por voz de 1 minuto','fichas R, preguntas y respuestas, plazos y cuadros'],
+    ['art','🔎','Buscar artículo','escribe «art. 62 LO 3/2007» en la lupa de arriba'],
+    ['cmp','⚖','Comparar artículos parecidos','dos columnas con las diferencias'],
+    ['ind','📑','Índice con progreso','con ✓ en lo que ya has leído'],
+    ['conf','⚠','Alertas de confusión','cifras distintas en textos casi iguales'],
+    ['solo','🎯','Solo lo marcado por ti','en el Exprés: EXOF, EX, ✱ y fichas R'],
+    ['min','📄','Esquema mínimo (última semana)','solo cuadros, plazos y fichas R'],
+    ['nota','✎','Notas propias','activa el modo y toca un párrafo o cuadro'],
+    ['ver','🆕','Cambios del temario','qué es nuevo o ha cambiado'],
+    ['copia','💾','Copia de seguridad','exportar / importar tus marcas y progreso']];
+  function pintarMenu(){ menu.innerHTML=ITEMS.map(i=>'<button type="button" data-a="'+i[0]+'" class="'+((i[0]==='solo'&&document.body.classList.contains('mj-solomarcas'))||(i[0]==='nota'&&document.body.classList.contains('mj-notas'))?'act':'')+'"><span>'+i[1]+'</span><span>'+i[2]+'<small>'+i[3]+'</small></span></button>').join(''); }
+  fab.onclick=()=>{ pintarMenu(); menu.classList.toggle('on'); };
+  menu.addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; menu.classList.remove('on'); ({voz:abrirVoz,art:()=>{ const q=$('#bus-q'); if(q){ q.focus(); q.value='art. '; } },cmp:abrirCmp,ind:abrirInd,conf:abrirConf,solo:alternarSolo,min:abrirMin,nota:alternarNotas,ver:abrirVer,copia:abrirCopia})[b.dataset.a](); });
+  document.addEventListener('mousedown',e=>{ if(!e.target.closest('#mj-menu,#mj-fab')) menu.classList.remove('on'); });
+
+  /* ============ 1) BUSCAR ARTÍCULO: «art. 62 LO 3/2007» ============ */
+  const ALIAS={lo:'ley organica',rd:'real decreto',rdl:'real decreto legislativo',cp:'codigo penal',lec:'enjuiciamiento criminal',tue:'union europea',tfue:'funcionamiento'};
+  const RX_ART=/^\s*(?:art(?:iculo)?s?\.?|apdo\.?|apartado|punto)\s*(\d+(?:\.\d+)*)\s*(.*)$/i;
+  function listaArts(){ todos(); const r=[]; $$('.esquema').forEach(es=>{ $$('.articulo',es).forEach((a,k)=>{ const h=$('.articulo-head',a); if(!h) return; let b=a.previousElementSibling,bt='',ctxAll=''; while(b){ if(b.classList&&b.classList.contains('bloque-titulo')){ if(!bt) bt=b.textContent; ctxAll+=' '+b.textContent; if(/^\s*\d+\.\d+\s*—/.test(b.textContent)) break; } b=b.previousElementSibling; }
+      r.push({es,a,k,head:ht(h),bt:bt.trim(),ctx:ctxAll,n:norm(ht(h))}); }); }); return r; }
+  function preguntasDe(es,k){ const M=window.MAPA_PREG||{}, t=nTema(es.id), out=[]; for(const id in M){ const p=M[id].split('-'); if(+p[0]===t&&+p[1]===k) out.push(id); } return out; }
+  function buscarArt(q){ const m=q.match(RX_ART); if(!m) return null; const num=norm(m[1]); let rest=norm(m[2]).split(' ').filter(Boolean).map(w=>ALIAS[w]||w).join(' ').split(' ').filter(Boolean);
+    return listaArts().filter(x=>{ const hn=' '+x.n+' '; if(!(hn.includes(' articulo '+num+' ')||hn.includes(' '+num+' '))) return false; const ctx=' '+norm(x.es.querySelector('.eyebrow').textContent+' '+x.ctx+' '+x.head)+' '; return rest.every(w=>ctx.includes(' '+w)||ctx.includes(w)); }).slice(0,14); }
+  function montarBus(){ const inp=$('#bus-q'); if(!inp||$('#mj-bus')) return; const box=document.createElement('div'); box.id='mj-bus'; inp.parentNode.appendChild(box);
+    const pinta=res=>{ box.innerHTML=res.length?res.map((r,i)=>{ const ids=preguntasDe(r.es,r.k); return '<div class="mj-it"><div class="t">'+esc($('.eyebrow',r.es).textContent)+(r.bt?' · '+esc(r.bt.slice(0,70)):'')+'</div><b>'+esc(r.head)+'</b><div><button class="mj-b p" data-i="'+i+'" data-a="e">📖 Ir al artículo</button>'+(ids.length?'<button class="mj-b" data-i="'+i+'" data-a="q">❓ '+ids.length+' preguntas</button>':'')+'</div></div>'; }).join(''):'<div class="mj-it">No encuentro ese artículo. Prueba «art. 62 LO 3/2007».</div>'; box.classList.add('on');
+      box.onclick=e=>{ const b=e.target.closest('button'); if(!b) return; const r=res[+b.dataset.i]; box.classList.remove('on'); if(b.dataset.a==='e') irAArt(r.a,r.es.id); else { const ids=preguntasDe(r.es,r.k); window.open('test-oficial-conocimiento.html#repasar='+encodeURIComponent(ids[0]),'_blank'); } }; box._res=res; };
+    inp.addEventListener('input',e=>{ const q=inp.value; if(!RX_ART.test(q)||!/\d/.test(q)){ box.classList.remove('on'); return; } e.stopImmediatePropagation(); const r=buscarArt(q); const rb=$('#bus-res'); if(rb){ rb.classList.remove('show'); } pinta(r||[]); },true);
+    inp.addEventListener('keydown',e=>{ if(e.key==='Enter'&&box.classList.contains('on')&&box._res&&box._res[0]){ const r=box._res[0]; box.classList.remove('on'); irAArt(r.a,r.es.id); } });
+    document.addEventListener('mousedown',e=>{ if(!e.target.closest('#mj-bus,#bus-q')) box.classList.remove('on'); }); }
+
+  /* ============ 2) ÍNDICE con progreso ============ */
+  const K_LEIDOS='esquemas-leidos';
+  const itemsInd=es=>$$('.articulo-head,.ex-fh,.vis-t',es).filter(vis);
+  const claveInd=(es,el)=>es.id+'|'+norm(el.textContent).slice(0,80);
+  let tLeido=0; function marcarLeidos(){ const es=activa(); if(!es) return; const L=rd(K_LEIDOS,{}); let ch=false; const lim=innerHeight*0.45; itemsInd(es).forEach(el=>{ const r=el.getBoundingClientRect(); if(r.top<lim){ const k=claveInd(es,el); if(!L[k]){ L[k]=1; ch=true; } } }); if(ch) wr(K_LEIDOS,L); }
+  addEventListener('scroll',()=>{ clearTimeout(tLeido); tLeido=setTimeout(marcarLeidos,500); },{passive:true});
+  function abrirInd(){ const es=activa(); if(!es){ aviso('Abre un tema primero'); return; } const L=rd(K_LEIDOS,{}); const its=itemsInd(es); const hechos=its.filter(el=>L[claveInd(es,el)]).length;
+    const o=ov('📑 Índice · '+esc($('.eyebrow',es).textContent),'<div class="mj-bar"><b style="width:'+(its.length?Math.round(100*hechos/its.length):0)+'%"></b></div><div>'+hechos+' de '+its.length+' leídos</div><div class="mj-ind">'+its.map((el,i)=>'<a data-i="'+i+'" class="'+(el.classList.contains('vis-t')?'vis-i':'')+'"><i>'+(L[claveInd(es,el)]?'✓':'')+'</i><span>'+esc(ht(el).replace(/^[^\wÁ-ú]+/,'').slice(0,90))+'</span></a>').join('')+'</div><p><button class="mj-b" id="mj-reini" type="button">Reiniciar progreso de este tema</button></p>','lado');
+    o.querySelector('.mj-ind').onclick=e=>{ const a=e.target.closest('a'); if(!a) return; irA(its[+a.dataset.i]); o._cerrar(); };
+    o.querySelector('#mj-reini').onclick=()=>{ const L2=rd(K_LEIDOS,{}); Object.keys(L2).forEach(k=>{ if(k.indexOf(es.id+'|')===0) delete L2[k]; }); wr(K_LEIDOS,L2); o._cerrar(); abrirInd(); }; }
+
+  /* ============ 3) COPIA DE SEGURIDAD ============ */
+  function abrirCopia(){ const o=ov('💾 Copia de seguridad','<p>Guarda en un archivo todo lo tuyo de esta app (subrayados, marcas, notas, marcadores, progreso y ajustes) y recupéralo en este u otro dispositivo.</p><p><button class="mj-b p" id="mj-exp" type="button">⬇ Exportar copia</button> <button class="mj-b" id="mj-imp" type="button">⬆ Importar copia</button><input type="file" id="mj-file" accept=".json,application/json" style="display:none"></p><p style="font-size:13px;opacity:.75">Al importar, lo del archivo sustituye a lo que tengas con el mismo nombre; el resto se conserva.</p>');
+    o.querySelector('#mj-exp').onclick=()=>{ const d={app:'esquemas',fecha:new Date().toISOString(),datos:{}}; for(let i=0;i<localStorage.length;i++){ const k=localStorage.key(i); if(k&&k.indexOf('esquemas-')===0) d.datos[k]=localStorage.getItem(k); } const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([JSON.stringify(d)],{type:'application/json'})); a.download='esquemas-copia-'+new Date().toISOString().slice(0,10)+'.json'; a.click(); aviso('Copia exportada ('+Object.keys(d.datos).length+' elementos)'); };
+    o.querySelector('#mj-imp').onclick=()=>o.querySelector('#mj-file').click();
+    o.querySelector('#mj-file').onchange=e=>{ const f=e.target.files[0]; if(!f) return; f.text().then(t=>{ const d=JSON.parse(t); if(!d||d.app!=='esquemas'||!d.datos) throw 0; if(!confirm('Importar '+Object.keys(d.datos).length+' elementos de la copia del '+(d.fecha||'').slice(0,10)+'?')) return; Object.keys(d.datos).forEach(k=>{ try{ localStorage.setItem(k,d.datos[k]); }catch(_){} }); aviso('Copia importada: recargando…'); setTimeout(()=>location.reload(),900); }).catch(()=>aviso('Ese archivo no es una copia de esquemas')); }; }
+
+  /* ============ 4) NOTAS PROPIAS por párrafo / cuadro ============ */
+  const K_NOTAS='esquemas-notas';
+  const hash=s=>{ let h=2166136261; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return (h>>>0).toString(36); };
+  const claveNota=(es,el)=>es.id+'|'+hash(norm(el.textContent.replace(/✎.*$/,'')).slice(0,90));
+  function aplicarNotas(es){ const N=rd(K_NOTAS,{}); if(!es||!Object.keys(N).length) return; $$('.txt p,.vis,.ex-fb p',es).forEach(el=>{ const t=N[claveNota(es,el)]; if(t) el.setAttribute('data-nota',t); }); }
+  function alternarNotas(){ const on=document.body.classList.toggle('mj-notas'); aviso(on?'✎ Modo notas: toca un párrafo o cuadro para escribir (vacío = borrar)':'Modo notas desactivado'); }
+  document.addEventListener('click',e=>{ if(!document.body.classList.contains('mj-notas')) return; const el=e.target.closest('.esquema .txt p,.esquema .vis,.esquema .ex-fb p'); if(!el||e.target.closest('#mj-menu')) return; e.preventDefault(); e.stopPropagation(); const es=el.closest('.esquema'); const k=claveNota(es,el); const N=rd(K_NOTAS,{}); const t=prompt('Tu nota para este '+(el.classList.contains('vis')?'cuadro':'párrafo')+' (vacío = borrar):',N[k]||''); if(t===null) return; if(t.trim()){ N[k]=t.trim(); el.setAttribute('data-nota',N[k]); } else { delete N[k]; el.removeAttribute('data-nota'); } wr(K_NOTAS,N); },true);
+
+  /* ============ 5) REPASO POR VOZ DE 1 MINUTO ============ */
+  let vozEstado=null;
+  function textoFila(p){ return p.textContent.replace(/\s+/g,' ').replace(/^\s*R\d+\s*·\s*/,'').trim(); }
+  async function juntarVoz(n){ const id='tema-'+n; if(window.prepararTema) window.prepararTema(id); const es=document.getElementById(id); const L=[];
+    $$('.txt p[data-r]',es).forEach(p=>{ const t=textoFila(p); if(t.includes('→')){ const [q,a]=t.split('→'); L.push({q:'Ficha. '+q.replace(/^[^.]*\.\s*/,'').trim(),a:a.trim()}); } });
+    try{ if(window.cargarExpresQ) await window.cargarExpresQ(n); }catch(e){}
+    const Q=(window.EXPRES_Q||{})[n]||{}; Object.keys(Q).forEach(k=>{ const v=Q[k]; if(!v||/____|^…/.test(v[0])) return; L.push({q:v[0],a:v[1]}); });
+    $$('.vis-plazo',es).forEach(p=>{ const t=p.textContent.replace(/\s+/g,' ').trim(); L.push({q:null,a:'Plazo. '+t}); });
+    $$('.vis',es).slice(0,40).forEach(v=>{ const t=v.textContent.replace(/\s+/g,' ').trim(); if(t.length>40) L.push({q:null,a:'Cuadro. '+t.slice(0,380)}); });
+    for(let i=L.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [L[i],L[j]]=[L[j],L[i]]; } return L; }
+  function hablar(t,fin){ if(!window.speechSynthesis){ fin(); return; } const u=new SpeechSynthesisUtterance(t); u.lang='es-ES'; const v=speechSynthesis.getVoices().filter(x=>/^es/i.test(x.lang)); const pref=v.find(x=>/natural|online|google/i.test(x.name))||v[0]; if(pref) u.voice=pref; u.rate=1.02; u.onend=fin; u.onerror=fin; speechSynthesis.speak(u); }
+  function abrirVoz(){ const ts=(window.EXPRES_TEMAS||[]).slice().sort((a,b)=>a-b); const cur=activa()?nTema(activa().id):ts[0];
+    const o=ov('🎧 Repaso por voz de 1 minuto','<p>Lee en voz alta fichas R, preguntas con su respuesta, plazos y cuadros del tema, en orden aleatorio. Funciona con la pantalla apagada en el móvil si el sistema lo permite.</p><select id="mj-vt">'+ts.map(n=>'<option value="'+n+'"'+(n===cur?' selected':'')+'>Tema '+n+'</option>').join('')+'</select><p><button class="mj-b p" id="mj-vgo" type="button">▶ Empezar 1 minuto</button></p>');
+    o.querySelector('#mj-vgo').onclick=async()=>{ const n=+o.querySelector('#mj-vt').value; o._cerrar(); iniciarVoz(n); }; }
+  async function iniciarVoz(n){ pararVoz(); const L=await juntarVoz(n); if(!L.length){ aviso('Ese tema aún no tiene fichas ni preguntas para leer'); return; }
+    const p=document.createElement('div'); p.id='mj-voz'; p.innerHTML='<div><b>🎧 Tema '+n+'</b> · <span class="seg">60</span> s</div><div class="tx"></div><div><button class="mj-b" data-a="sig" type="button">⏭ Siguiente</button> <button class="mj-b" data-a="otro" type="button" style="display:none">🔁 Otro minuto</button> <button class="mj-b" data-a="stop" type="button">⏹ Cerrar</button></div>'; document.body.appendChild(p);
+    const st=vozEstado={L,i:0,fin:Date.now()+60000,vivo:true,p,tm:null}; const tx=p.querySelector('.tx'), seg=p.querySelector('.seg');
+    st.tick=setInterval(()=>{ const s=Math.max(0,Math.round((st.fin-Date.now())/1000)); seg.textContent=s; },500);
+    const paso=()=>{ if(!st.vivo) return; if(Date.now()>=st.fin){ tx.textContent='Fin del minuto. ¡Buen repaso!'; hablar('Fin del minuto.',()=>{}); p.querySelector('[data-a=otro]').style.display=''; clearInterval(st.tick); return; }
+      const it=st.L[st.i++%st.L.length]; if(it.q){ tx.innerHTML='<b>'+esc(it.q)+'</b>'; hablar(it.q,()=>{ if(!st.vivo) return; st.tm=setTimeout(()=>{ tx.innerHTML+='<br>➜ '+esc(it.a); hablar('Respuesta. '+it.a,()=>{ st.tm=setTimeout(paso,700); }); },2600); }); }
+      else { tx.textContent=it.a; hablar(it.a,()=>{ st.tm=setTimeout(paso,900); }); } }; st.paso=paso; paso();
+    p.onclick=e=>{ const b=e.target.closest('button'); if(!b) return; if(b.dataset.a==='stop') pararVoz(); else if(b.dataset.a==='sig'){ speechSynthesis.cancel(); clearTimeout(st.tm); setTimeout(paso,80); } else { pararVoz(); iniciarVoz(n); } }; }
+  function pararVoz(){ const s=vozEstado; if(!s) return; s.vivo=false; clearInterval(s.tick); clearTimeout(s.tm); try{ speechSynthesis.cancel(); }catch(e){} s.p.remove(); vozEstado=null; }
+
+  /* ============ 6) SOLO LO MARCADO POR TI (en el Exprés actual) ============ */
+  function aplicarSolo(es){ $$('.ex-ficha',es).forEach(f=>{ f.classList.remove('sm-fuera'); $$('.ex-fb p',f).forEach(p=>p.classList.remove('sm-fuera')); if(!document.body.classList.contains('mj-solomarcas')) return;
+      if(!$('[data-ex],[data-r]',f)){ f.classList.add('sm-fuera'); return; } $$('.ex-fb p',f).forEach(p=>{ if(!p.hasAttribute('data-ex')&&!p.hasAttribute('data-r')) p.classList.add('sm-fuera'); }); }); }
+  function alternarSolo(){ if(!enEx()){ aviso('Pulsa antes ⚡ Exprés: este modo deja solo tus marcas dentro del Exprés'); return; } const on=document.body.classList.toggle('mj-solomarcas'); $$('.esquema:not([data-lazy])').forEach(aplicarSolo); const n=$$('.esquema.active .ex-ficha:not(.sm-fuera) [data-ex],.esquema.active .ex-ficha:not(.sm-fuera) [data-r]').length; aviso(on?'🎯 Solo tus marcas ('+n+' párrafos con EXOF / EX / ✱ / R en este tema)':'Exprés completo otra vez'); }
+
+  /* ============ 7) ESQUEMA MÍNIMO de la última semana ============ */
+  function abrirMin(){ const es=activa(); if(!es){ aviso('Abre un tema primero'); return; } const vistos=new Set(); let h='';
+    $$('.vis',es).forEach(v=>{ const t=($('.vis-t',v)||v).textContent.trim(); if(vistos.has(t)) return; vistos.add(t); const c=v.cloneNode(true); c.removeAttribute('data-nota'); h+=c.outerHTML; });
+    let pl=''; $$('.articulo',es).forEach(a=>{ const hd=$('.articulo-head',a); if(!hd) return; const fr=[]; $$('.txt p',a).forEach(p=>{ if(!$('.m-plazo',p)) return; (p.innerHTML.split(/(?<=[.;:])\s+/)).forEach(s=>{ if(s.includes('m-plazo')) fr.push(s.replace(/<span class="ex-p[^>]*>.*?<\/span>/g,'')); }); }); if(fr.length) pl+='<div class="mj-it"><b>'+esc(hd.textContent.trim().slice(0,110))+'</b><br>'+fr.slice(0,4).join('<br>')+'</div>'; });
+    let r=''; $$('.txt p[data-r]',es).forEach(p=>{ r+='<div class="mj-it">'+p.innerHTML+'</div>'; });
+    const o=ov('📄 Esquema mínimo · '+esc($('.eyebrow',es).textContent),'<p><button class="mj-b p" id="mj-pm" type="button">🖨 Imprimir / PDF</button> <span style="font-size:13px;opacity:.7">Solo cuadros, plazos y cifras y fichas R: sin el literal.</span></p>'+(h?'<h4>Cuadros</h4>'+h:'')+(pl?'<h4>Plazos y cifras por artículo</h4>'+pl:'')+(r?'<h4>Fichas R</h4>'+r:''),'', 'mj-minimo');
+    o.querySelector('#mj-pm').onclick=()=>{ document.body.classList.add('mj-imprime-min'); setTimeout(()=>{ print(); },100); }; addEventListener('afterprint',()=>document.body.classList.remove('mj-imprime-min'),{once:true}); }
+
+  /* ============ 8) COMPARADOR de artículos parecidos ============ */
+  const palabras=t=>norm(t).split(' ').filter(Boolean);
+  function difPalabras(a,b){ const A=a.slice(0,700),B=b.slice(0,700),n=A.length,m=B.length; const L=Array.from({length:n+1},()=>new Uint16Array(m+1)); for(let i=n-1;i>=0;i--) for(let j=m-1;j>=0;j--) L[i][j]=A[i]===B[j]?L[i+1][j+1]+1:Math.max(L[i+1][j],L[i][j+1]);
+    const ra=new Set(),rb=new Set(); let i=0,j=0; while(i<n&&j<m){ if(A[i]===B[j]){ ra.add(i); rb.add(j); i++; j++; } else if(L[i+1][j]>=L[i][j+1]) i++; else j++; } return [ra,rb]; }
+  const pintaDif=(txt,set)=>{ const ws=txt.replace(/\s+/g,' ').trim().split(' ').slice(0,700); const na=ws.map(w=>norm(w)); let k=0; return ws.map((w,idx)=>{ const nw=norm(w); if(!nw) return esc(w); const ok=set.has(palabrasIdx[idx]); return ok?esc(w):'<ins class="mj-d">'+esc(w)+'</ins>'; }).join(' '); };
+  let palabrasIdx=[];
+  function comparar(x,y,box){ const wa=x.text.replace(/\s+/g,' ').trim().split(' ').filter(w=>norm(w)).slice(0,700), wb=y.text.replace(/\s+/g,' ').trim().split(' ').filter(w=>norm(w)).slice(0,700); const na=wa.map(norm),nb=wb.map(norm); const [ra,rb]=difPalabras(na,nb);
+    const f=(ws,set)=>ws.map((w,i)=>set.has(i)?esc(w):'<ins class="mj-d">'+esc(w)+'</ins>').join(' '); box.innerHTML='<div class="mj-2c"><div><b>'+esc(x.head)+'</b><br><span class="t">'+esc(x.tema)+'</span><hr>'+f(wa,ra)+'</div><div><b>'+esc(y.head)+'</b><br><span class="t">'+esc(y.tema)+'</span><hr>'+f(wb,rb)+'</div></div><p style="font-size:12px;opacity:.7">En naranja, lo que solo está en uno de los dos textos.</p>'; }
+  const artObjs=()=>listaArts().map(x=>({head:x.head,tema:$('.eyebrow',x.es).textContent.trim()+(x.bt?' · '+x.bt.slice(0,50):''),el:x.a,es:x.es,text:($('.txt',x.a)||x.a).textContent,n:x.n}));
+  function abrirCmp(){ const L=artObjs(); const sel=[null,null]; const o=ov('⚖ Comparar artículos parecidos','<div class="mj-2c"><div><input type="text" id="mj-c0" placeholder="Artículo 1: escribe «66» o «4.3» o palabras…"><div id="mj-l0"></div></div><div><input type="text" id="mj-c1" placeholder="Artículo 2…"><div id="mj-l1"></div></div></div><div id="mj-cres" style="margin-top:10px"></div><h4>Pares parecidos del tema abierto</h4><div id="mj-sug">Calculando…</div>');
+    const res=o.querySelector('#mj-cres'); const intenta=()=>{ if(sel[0]&&sel[1]) comparar(sel[0],sel[1],res); };
+    [0,1].forEach(i=>{ const inp=o.querySelector('#mj-c'+i), l=o.querySelector('#mj-l'+i); inp.oninput=()=>{ const q=norm(inp.value); if(q.length<1){ l.innerHTML=''; return; } const ws=q.split(' '); const r=L.filter(x=>ws.every(w=>(x.n+' '+norm(x.tema)).includes(w))).slice(0,12); l.innerHTML=r.map((x,k)=>'<div class="mj-it" style="cursor:pointer" data-k="'+k+'"><b>'+esc(x.head.slice(0,90))+'</b><div class="t">'+esc(x.tema.slice(0,80))+'</div></div>').join(''); l._r=r; };
+      l.onclick=e=>{ const it=e.target.closest('.mj-it'); if(!it) return; sel[i]=l._r[+it.dataset.k]; inp.value=sel[i].head.slice(0,70); l.innerHTML=''; intenta(); }; });
+    setTimeout(()=>{ const es=activa(); const A=es?L.filter(x=>x.es===es):[]; const W=A.map(x=>new Set(palabras(x.text))); const par=[]; for(let i=0;i<A.length;i++){ if(W[i].size<18) continue; for(let j=i+1;j<A.length;j++){ if(W[j].size<18) continue; let c=0; W[i].forEach(w=>{ if(W[j].has(w)) c++; }); const s=c/(W[i].size+W[j].size-c); if(s>=0.38&&s<0.97) par.push([s,i,j]); } } par.sort((a,b)=>b[0]-a[0]);
+      const box=o.querySelector('#mj-sug'); box.innerHTML=par.slice(0,12).map((p,k)=>'<div class="mj-it" style="cursor:pointer" data-k="'+k+'"><b>'+esc(A[p[1]].head.slice(0,70))+'</b> ⇄ <b>'+esc(A[p[2]].head.slice(0,70))+'</b> <span class="t">('+Math.round(p[0]*100)+' % parecidos)</span></div>').join('')||'No hay pares muy parecidos en este tema (usa los buscadores de arriba).'; box.onclick=e=>{ const it=e.target.closest('.mj-it'); if(!it) return; const p=par[+it.dataset.k]; sel[0]=A[p[1]]; sel[1]=A[p[2]]; o.querySelector('#mj-c0').value=sel[0].head.slice(0,70); o.querySelector('#mj-c1').value=sel[1].head.slice(0,70); intenta(); res.scrollIntoView({behavior:'smooth'}); }; },60); }
+
+  /* ============ 9) ALERTAS DE CONFUSIÓN ============ */
+  const RX_CIF=/(\d+(?:[.,]\d+)?\s*(?:%|horas?|dias?|meses|mes|anos?|semanas?|euros)|\b(?:un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|quince|veinte|treinta|cuarenta|sesenta|noventa|cien)\s+(?:horas?|dias?|meses|mes|anos?|semanas?)|mayoria\s+(?:simple|absoluta|cualificada)|dos tercios|tres quintos|unanimidad)/g;
+  const cifras=t=>{ const s=new Set(); (norm(t).replace(/ n /g,'ñ').match(RX_CIF)||[]).forEach(x=>s.add(x.replace(/\s+/g,' '))); return s; };
+  let confCache=null;
+  function calcConf(){ if(confCache) return confCache; todos(); const P=[]; $$('.esquema .articulo').forEach(a=>{ const es=a.closest('.esquema'); const hd=$('.articulo-head',a); $$('.txt p',a).forEach(p=>{ if(p.hasAttribute('data-r')&&p.closest('.articulo')&&/RECUERDA/i.test(hd?hd.textContent:'')) return; const w=palabras(p.textContent); if(w.length>=12) P.push({p,es,hd:hd?hd.textContent.trim():'',w,c:cifras(p.textContent)}); }); });
+    const idx=new Map(); P.forEach((x,i)=>{ for(let k=0;k+5<=x.w.length;k+=1){ const s=x.w.slice(k,k+5).join(' '); let l=idx.get(s); if(!l) idx.set(s,l=[]); if(l.length<7) l.push(i); } });
+    const cnt=new Map(); idx.forEach(l=>{ if(l.length<2||l.length>6) return; for(let a=0;a<l.length;a++) for(let b=a+1;b<l.length;b++){ const k=l[a]*100000+l[b]; cnt.set(k,(cnt.get(k)||0)+1); } });
+    const out=[]; cnt.forEach((n,k)=>{ if(n<5) return; const i=Math.floor(k/100000),j=k%100000,A=P[i],B=P[j]; if(A.p.closest('.articulo')===B.p.closest('.articulo')) return; if(!A.c.size||!B.c.size) return; const da=[...A.c].filter(x=>!B.c.has(x)), db=[...B.c].filter(x=>!A.c.has(x)); if(!da.length||!db.length) return; out.push({n,A,B,da,db}); });
+    out.sort((a,b)=>b.n-a.n); confCache=out.slice(0,120); confCache.forEach(c=>{ const m='⚠ '+c.da.slice(0,2).join(', ')+' ≠ '+c.db.slice(0,2).join(', '); c.A.p.setAttribute('data-conf',m); c.B.p.setAttribute('data-conf','⚠ '+c.db.slice(0,2).join(', ')+' ≠ '+c.da.slice(0,2).join(', ')); }); return confCache; }
+  function abrirConf(){ const o=ov('⚠ Alertas de confusión','<p>Buscando textos casi iguales con cifras distintas en todos los temas…</p>'); setTimeout(()=>{ const C=calcConf(); const c=o.querySelector('.mj-c'); const nm=x=>$('.eyebrow',x.es).textContent.trim().slice(0,36)+' · '+x.hd.slice(0,70); c.innerHTML='<p>'+C.length+' pares. Cada uno también queda señalado con ⚠ en su párrafo.</p>'+C.slice(0,60).map((x,i)=>'<div class="mj-it"><div class="t">'+esc(nm(x.A))+'</div>'+esc(x.A.p.textContent.replace(/\s+/g,' ').slice(0,170))+'… <span class="mj-r">'+esc(x.da.join(', '))+'</span><br><button class="mj-b" data-i="'+i+'" data-w="A" type="button">Ir</button><hr><div class="t">'+esc(nm(x.B))+'</div>'+esc(x.B.p.textContent.replace(/\s+/g,' ').slice(0,170))+'… <span class="mj-r">'+esc(x.db.join(', '))+'</span><br><button class="mj-b" data-i="'+i+'" data-w="B" type="button">Ir</button></div>').join(''); c.onclick=e=>{ const b=e.target.closest('button'); if(!b) return; const x=C[+b.dataset.i][b.dataset.w]; o._cerrar(); irAArt(x.p,x.es.id); }; },80); }
+
+  /* ============ 10) CONTROL DE VERSIÓN del temario ============ */
+  const K_VER='esquemas-version';
+  function claveVer(es){ return es.id; }
+  function hashesTema(es){ const H={}; $$('.articulo',es).forEach(a=>{ const hd=$('.articulo-head',a); const hn=norm(hd?hd.textContent:'').slice(0,40); $$('.txt p',a).forEach((p,i)=>{ H[hn+'#'+i]=hash(norm(p.textContent.replace(/✎.*$/,''))); }); }); return H; }
+  const cambios={};
+  function revisarTema(es){ if(!es||es.dataset.lazy) return; const V=rd(K_VER,{}); const act=hashesTema(es); const ant=V[claveVer(es)]; if(!ant){ V[claveVer(es)]={ts:Date.now(),h:act}; wr(K_VER,V); cambios[es.id]=[]; return; }
+    const lst=[]; $$('.articulo',es).forEach(a=>{ const hd=$('.articulo-head',a); const hn=norm(hd?hd.textContent:'').slice(0,40); $$('.txt p',a).forEach((p,i)=>{ const k=hn+'#'+i; const h=act[k]; if(!(k in ant.h)){ p.setAttribute('data-mj','nuevo'); lst.push({p,t:'nuevo'}); } else if(ant.h[k]!==h){ p.setAttribute('data-mj','cambiado'); lst.push({p,t:'cambiado'}); } }); }); cambios[es.id]=lst; }
+  function abrirVer(){ const ids=Object.keys(cambios).filter(k=>cambios[k].length); const V=rd(K_VER,{});
+    const o=ov('🆕 Cambios del temario','<p>La app guarda la versión de cada tema la primera vez que lo abres. Si el texto cambia después (una actualización), aquí verás qué párrafos son nuevos o han cambiado, hasta que los marques como vistos.</p>'+(ids.length?ids.map(id=>{ const l=cambios[id]; const es=document.getElementById(id); return '<div class="mj-it"><b>'+esc($('.eyebrow',es).textContent)+'</b>: '+l.filter(x=>x.t==='nuevo').length+' nuevos · '+l.filter(x=>x.t==='cambiado').length+' cambiados<br><button class="mj-b" data-a="ir" data-id="'+id+'" type="button">Ir al primero</button> <button class="mj-b p" data-a="ok" data-id="'+id+'" type="button">✔ Marcar como visto</button></div>'; }).join(''):'<div class="mj-it">✔ Ningún tema de los que has abierto ha cambiado desde tu última versión ('+Object.keys(V).length+' temas con versión guardada).</div>'));
+    o.onclick=e=>{ const b=e.target.closest('button[data-a]'); if(!b) return; const id=b.dataset.id, es=document.getElementById(id); if(b.dataset.a==='ir'){ const p=cambios[id][0].p; o._cerrar(); irAArt(p,id); } else { const V2=rd(K_VER,{}); V2[id]={ts:Date.now(),h:hashesTema(es)}; wr(K_VER,V2); $$('[data-mj]',es).forEach(x=>x.removeAttribute('data-mj')); cambios[id]=[]; o._cerrar(); abrirVer(); } }; }
+
+  /* ---------- enganche con el montaje de temas ---------- */
+  function alMontar(es){ try{ aplicarNotas(es); }catch(e){ console.error(e); } try{ revisarTema(es); }catch(e){ console.error(e); } try{ aplicarSolo(es); }catch(e){ console.error(e); } }
+  if(window.alPrepararTema) window.alPrepararTema(96,alMontar);
+  $$('.esquema').forEach(es=>{ if(!es.dataset.lazy) alMontar(es); });
+  montarBus();
+  addEventListener('pagehide',pararVoz);
+  window.mejoras2810={abrirVoz,abrirInd,abrirCmp,abrirConf,abrirMin,abrirVer,abrirCopia,alternarSolo,alternarNotas,buscarArt};
+})();
+</script>
