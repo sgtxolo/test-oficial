@@ -10,6 +10,8 @@ const G = x => `<mark class="m-autoridad">${x}</mark>`;
 const U = x => `<u class="m-lapiz">${x}</u>`;
 const CA = x => `<span class="m-caja">${x}</span>`;
 const O = x => `<span class="m-circulo">${x}</span>`;
+const AC = x => `<mark class="m-accion">${x}</mark>`;
+const B = x => `<mark class="m-plazo">${x}</mark>`;
 const AS = '<span class="m-ast"></span>';
 const pie = t => `<p class="nota-manuscrita" style="font-style:italic;opacity:.85;margin:6px 4px 0">✎ ${t}</p>`;
 const V = []; const v = (norma, loc, html) => V.push([norma, loc, html]);
@@ -57,20 +59,20 @@ v('lo', 'Cuando se trate de los hechos previstos en el apartado 2 del artículo 
     `La duración máxima de la medida será de ${P('seis años')}; o, en sus respectivos casos, de:`, `${P('doscientas horas')} de ${Y('prestaciones en beneficio de la comunidad')}`, `o permanencia de ${P('dieciséis fines de semana')}.`] },
 ], false) + `<div class="vis-nota" style="margin:6px 4px">En este supuesto, cuando el hecho revista ${K('extrema gravedad')}, el ${G('Juez')} ${D('deberá imponer')} una medida de ${Y('internamiento en régimen cerrado')} de ${P('uno a seis años')}, ${Y('complementada sucesivamente')} con otra medida de ${Y('libertad vigilada')} con asistencia educativa ${P('hasta un máximo de cinco años')}. ${K('Sólo')} podrá hacerse uso de lo dispuesto en los arts. 13 (${Y('modificación')}) y 51.1 (${Y('sustitución')}) ${P('una vez transcurrido el primer año')} de cumplimiento efectivo de la medida de internamiento. Se entenderán ${K('siempre')} supuestos de extrema gravedad aquellos en los que se apreciara ${Y('reincidencia')}.</div>` + pie('Notas tuyas: +1 año · +50 h · +4 fines de semana al pasar de 14-15 a 16-17 · 16 + 5 años en extrema gravedad.'));
 
-// ───────── p15 · art. 10.2 RESUMEN (NUEVO) ─────────
+// ───────── p15 · art. 10.2 RESUMEN (NUEVO) · colores leídos a 140 ppp: rosa = cabeceras, naranja = 14-15 y «1 a 5 / hasta 3», verde = 16-17 y «1 a 8 / hasta 5», lila = «Sólo podrá hacerse», amarillo = «13, 40 y 51.1…», cian = «la mitad» ─────────
 v('lo', 'Cuando el hecho sea constitutivo de alguno de los delitos tipificados en los artículos 138', tabla('RESUMEN · art. 10.2 (cuadro del temario, versión «NUEVO»)', ['Si al tiempo de cometer los hechos…', 'Medida'], [
-  { l: 'MENOR TUVIERE 14 Ó 15 AÑOS DE EDAD', c: 'o', h: [{ p: 'De 1 a 5 años', c: 'n', t: `${Y('INTERNAMIENTO EN RÉGIMEN CERRADO')}` }, { p: 'Hasta 3 años', c: 'v', t: `${Y('LIBERTAD VIGILADA')}` }] },
-  { l: 'MENOR TUVIERE 16 Ó 17 AÑOS DE EDAD', c: 'o', h: [{ p: 'De 1 a 8 años', c: 'n', t: `${Y('INTERNAMIENTO EN RÉGIMEN CERRADO')}` }, { p: 'Hasta 5 años', c: 'v', t: `${Y('LIBERTAD VIGILADA')} (con asistencia educativa)` }] },
-  { l: 'FACULTADES DE MODIFICACIÓN, SUSPENSIÓN O SUSTITUCIÓN', c: 'c', h: [{ t: `${K('Sólo')} podrá hacerse uso de la ${Y('modificación, suspensión o sustitución')} de la medida impuesta (arts. 13, 40 y 51.1) ${P('cuando haya transcurrido al menos la mitad')} de la duración de la medida de internamiento impuesta.` }] },
-  { l: `NUEVO · DELITOS DE LOS ARTS. 178 A 183 CP`, c: 'v', h: [{ t: `Las medidas previstas en los dos apartados anteriores ${D('deberán acompañarse')} de una medida de ${Y('educación sexual y educación para la igualdad')}.` }] },
-]) + pie('Resumen: 138 (homicidio), 139 (asesinato), 179 (violación), 180 (agravados) y 571 a 580 (terrorismo), o cualquier otro delito con pena de prisión igual o superior a quince años.'));
+  { l: `${D('Menor tuviere 14 o 15 años de edad')}`, c: 'o', h: [{ p: 'De 1 a 5 años', c: 'n', t: `${D('Medida de INTERNAMIENTO EN RÉGIMEN CERRADO')}: ${D('De 1 a 5 años')}` }, { p: 'Hasta 3 años', c: 'v', t: `${D('LIBERTAD VIGILADA')}: ${D('Hasta 3 años')}` }] },
+  { l: `${G('Menor tuviere 16 o 17 años de edad')}`, c: 'o', h: [{ p: 'De 1 a 8 años', c: 'n', t: `${D('Medida de INTERNAMIENTO EN RÉGIMEN CERRADO')}: ${G('De 1 a 8 años')}` }, { p: 'Hasta 5 años', c: 'v', t: `${D('LIBERTAD VIGILADA')}: ${G('Hasta 5 años (con asistencia educativa)')}` }] },
+  { l: 'FACULTADES', c: 'c', h: [{ t: `${AC('Sólo podrá hacerse')} uso de las facultades de ${B('modificación, suspensión o sustitución')} de la medida impuesta a las que se refieren los artículos ${Y('13, 40 y 51.1')} de esta Ley Orgánica, ${Y('cuando haya transcurrido')} al menos, ${P('la mitad')} de la duración de la medida de internamiento impuesta.` }] },
+  { l: 'NUEVO', c: 'v', h: [{ t: `Cuando el delito cometido lo sea de los tipificados en los artículos 178 a 183 del Código Penal, las medidas previstas en los ${Y('dos apartados')} anteriores ${AC('deberán acompañarse')} de una ${D('medida de educación sexual y educación para la igualdad')}.` }] },
+]) + pie('«Nuevo» (nota tuya a bolígrafo). Resumen: 138 (homicidio), 139 (asesinato), 179 (violación), 180 (agravados) y 571 a 580 (terrorismo), o cualquier otro delito con pena de prisión igual o superior a quince años.'));
 
-// ───────── p20 · art. 15 prescripción ─────────
+// ───────── p20 · art. 15 PRESCRIPCIÓN · colores leídos a 140 ppp: naranja = cabeceras «HECHOS DELICTIVOS / MEDIDAS», cian = fila de plazos, amarillo = conceptos, rojo subrayado = «superior» / «igual o superior» ─────────
 v('lo', 'Los hechos delictivos cometidos por los menores prescriben', plazos('PRESCRIPCIÓN (cuadro del temario · art. 15)', [
-  ['CP', `${Y('HECHOS DELICTIVOS')} con arreglo a las normas contenidas en el CP: ${Y('Homicidio')} (138 CP) · ${Y('Asesinato')} (139 CP) · ${Y('Agresiones sexuales')} (179, 180 CP) · ${Y('Terrorismo')} (571 a 580 CP) · cualquier otro sancionado en el CP o leyes penales especiales con pena de prisión ${P('igual o superior a quince años')}.`],
-  ['5 años', `${Y('Delito grave')} sancionado en el Código Penal con pena ${K('superior')} a ${P('diez años')}.`],
-  ['3 años', `Cualquier ${Y('otro delito grave')}.`], ['1 año', `Delitos ${Y('menos graves')}.`], ['3 meses', `Cuando se trate de una ${Y('falta')}.`],
-  ['MEDIDAS · 3 años', `Duración ${K('superior')} a los ${P('dos años')}.`], ['MEDIDAS · 2 años', `${Y('Las restantes medidas')}.`],
+  ['HECHOS DELICTIVOS', `${P('Con arreglo a las normas contenidas en el CP')}: Homicidio (138 CP) · Asesinato (139 CP) · Agresiones sexuales (179, 180 CP) · Terrorismo (571 a 580 CP) · ${Y('Cualquier otro sancionado en el Código Penal o en las leyes penales especiales con pena de prisión')} ${K('igual o superior')} ${Y('a quince años')}. ${O('EXAMEN')}`],
+  ['5 años', `${Y('Delito grave')} sancionado en el Código Penal con ${Y('pena')} ${K('superior')} ${Y('a diez años')}.`],
+  ['3 años', `${Y('Cualquier otro delito grave')}.`], ['1 año', `${Y('Delito menos grave')}.`], ['3 meses', `Cuando se trate de ${Y('una falta')}.`],
+  ['MEDIDAS · 3 años', `${Y('Duración')} ${K('superior')} ${Y('a los dos años')}.`], ['MEDIDAS · 2 años', `${Y('Las restantes medidas')}.`],
   ['MEDIDAS · 1 año', `${Y('Amonestación')}. Las ${Y('prestaciones en beneficio de la comunidad')}. La ${Y('permanencia de fin de semana')}.`],
 ]));
 
