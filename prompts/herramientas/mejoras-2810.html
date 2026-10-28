@@ -1,5 +1,8 @@
 <style id="estilo-mejoras-2810">
 /* ===== 28/10/2026 · 10 mejoras de la app de esquemas (menú 🛠) ===== */
+#mj-herr{background:#163f30;color:#fff;border:0;border-radius:20px;padding:7px 14px;font:700 13px inherit;cursor:pointer;white-space:nowrap}
+#mj-herr.on{background:#c9a227;color:#1f2a24}
+#mj-menu.mj-integrado:not(.on){display:none}
 #mj-menu.mj-integrado{display:flex;flex-wrap:wrap;gap:4px;width:100%;flex-basis:100%;border-top:1px solid var(--borde,#d8d6c8);margin-top:6px;padding-top:6px}
 #mj-menu.mj-integrado::before{content:"🛠 Herramientas de estudio";flex-basis:100%;font:700 12px sans-serif;opacity:.7}
 #mj-menu.mj-integrado button{width:auto;flex:1 1 200px;border:1px solid var(--borde,#d8d6c8)}
@@ -80,7 +83,11 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
     ['copia','💾','Copia de seguridad','exportar / importar tus marcas y progreso']];
   function pintarMenu(){ menu.innerHTML=ITEMS.map(i=>'<button type="button" data-a="'+i[0]+'" class="'+((i[0]==='solo'&&document.body.classList.contains('mj-solomarcas'))||(i[0]==='nota'&&document.body.classList.contains('mj-notas'))?'act':'')+'"><span>'+i[1]+'</span><span>'+i[2]+'<small>'+i[3]+'</small></span></button>').join(''); }
   pintarMenu(); const bm=document.getElementById('btn-menu-acc'); if(bm) bm.addEventListener('click',pintarMenu);
-  menu.addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; document.body.classList.remove('menu-acc'); setTimeout(pintarMenu,50);({voz:abrirVoz,art:()=>{ const q=$('#bus-q'); if(q){ q.focus(); q.value='art. '; } },cmp:abrirCmp,ind:abrirInd,conf:abrirConf,solo:alternarSolo,min:abrirMin,nota:alternarNotas,ver:abrirVer,copia:abrirCopia})[b.dataset.a](); });
+  /* botón verde «🛠 Herramientas» junto a Claro/Oscuro: al pulsarlo se despliega la lista */
+  const bh=document.createElement('button'); bh.id='mj-herr'; bh.type='button'; bh.textContent='🛠 Herramientas';
+  bh.onclick=e=>{ e.stopPropagation(); const on=menu.classList.toggle('on'); bh.classList.toggle('on',on); pintarMenu(); if(on) setTimeout(()=>menu.scrollIntoView({block:'nearest'}),50); };
+  (function(){ const ob=$$('#barra-acciones button').find(b=>/oscuro/i.test(b.textContent)); const cont=ob?(ob.parentElement&&ob.parentElement!==barra?ob.parentElement:ob):null; if(cont&&cont.parentNode) cont.parentNode.insertBefore(bh,cont.nextSibling); else if(barra) barra.insertBefore(bh,menu); })();
+  menu.addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; document.body.classList.remove('menu-acc'); menu.classList.remove('on'); bh.classList.remove('on'); setTimeout(pintarMenu,50);({voz:abrirVoz,art:()=>{ const q=$('#bus-q'); if(q){ q.focus(); q.value='art. '; } },cmp:abrirCmp,ind:abrirInd,conf:abrirConf,solo:alternarSolo,min:abrirMin,nota:alternarNotas,ver:abrirVer,copia:abrirCopia})[b.dataset.a](); });
 
   /* ============ 1) BUSCAR ARTÍCULO: «art. 62 LO 3/2007» ============ */
   const ALIAS={lo:'ley organica',rd:'real decreto',rdl:'real decreto legislativo',cp:'codigo penal',lec:'enjuiciamiento criminal',tue:'union europea',tfue:'funcionamiento'};
