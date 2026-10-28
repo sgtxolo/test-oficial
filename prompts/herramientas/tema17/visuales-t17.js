@@ -123,17 +123,17 @@ v('lo', 'podrá mantenerse hasta que recaiga sentencia firme', cols('MEDIDA CAUT
   { t: 'DURACIÓN', l: [`${P('TIEMPO MÁXIMO: 6 MESES')}`, `Que podrá ${D('prorrogarse')}. Requisitos: a instancia del ${G('Ministerio Fiscal')} · previa audiencia del ${G('letrado del menor')} · mediante ${Y('auto motivado')}`, `${P('DURACIÓN PRÓRROGA: 3 MESES COMO MÁXIMO')}`] },
 ], false));
 
-// ───────── p34 · arts. 61 a 63 responsabilidad civil ─────────
-v('lo', 'La acción para exigir la responsabilidad civil en el procedimiento regulado en esta Ley', tabla('RESPONSABILIDAD CIVIL: REGLAS GENERALES (cuadro del temario · art. 61)', ['Regla', 'Contenido'], [
+// ───────── p34 · art. 61 responsabilidad civil · colores leídos a 140 ppp: naranja = «acción para exigir», «responsabilidad civil», RENUNCIE / EJERCITE / SE RESERVE y SALVO; lila = «ejercitará por»; verde = MINISTERIO FISCAL y «Ante el orden jurisdiccional civil»; cian = «Plazo: 1 mes»; amarillo = «Conforme», «Código Civil», «Ley de Enjuiciamiento Civil» ─────────
+v('lo', 'La acción para exigir la responsabilidad civil en el procedimiento regulado en esta Ley', tabla('RESPONSABILIDAD CIVIL: REGLAS GENERALES (cuadro del temario · art. 61 · nota tuya: «Art. 61 del 1 al 3»)', ['Regla', 'Contenido'], [
   { l: '1. ACCIÓN', c: 'o', h: [
-    { t: `La ${Y('acción para exigir la responsabilidad civil')} en el procedimiento regulado en esta Ley ${D('se ejercitará')} por el ${G('MINISTERIO FISCAL')}, ${K('SALVO')} que el perjudicado:` },
-    { p: 'RENUNCIE', c: 'n', t: `${D('Renuncie')} a ejercitar la acción.` },
-    { p: 'EJERCITE', c: 'v', t: `${D('Ejercite')} la acción por sí mismo en un plazo de ${P('1 mes')} (desde que se le notifique la apertura de la pieza separada de responsabilidad civil).` },
-    { p: 'SE RESERVE', c: 'c', t: `${D('Se reserve')} la acción para ejercitarla ante el ${G('orden jurisdiccional civil')}, conforme a los preceptos del ${Y('Código Civil')} y de la ${Y('Ley de Enjuiciamiento Civil')}.` }] },
-  { l: '2. TRAMITACIÓN', c: 'v', h: [{ t: `Una ${Y('PIEZA SEPARADA')} de responsabilidad civil por ${Y('cada uno de los hechos imputados')}.` }] },
+    { t: `La ${D('acción para exigir')} la ${D('responsabilidad civil')} en el procedimiento regulado en esta Ley ${AC('se ejercitará por')}: ${G('MINISTERIO FISCAL')} · ${D('SALVO')} que:` },
+    { p: 'RENUNCIE', c: 'n', t: `El perjudicado ${D('RENUNCIE')} a ejercitar la acción.` },
+    { p: 'EJERCITE', c: 'v', t: `El perjudicado ${D('EJERCITE')} la acción por sí mismo en un: ${B('Plazo: 1 mes')} (desde que se le notifique la apertura de la pieza separada de responsabilidad civil).` },
+    { p: 'SE RESERVE', c: 'c', t: `El perjudicado ${D('se RESERVE')} la acción para ejercitarla: ${G('Ante el orden jurisdiccional civil')} · ${Y('Conforme')} a los preceptos del: ${Y('Código Civil')}, y ${Y('Ley de Enjuiciamiento Civil')}.` }] },
+  { l: '2. TRAMITACIÓN', c: 'v', h: [{ t: `Una pieza separada de responsabilidad civil por cada uno de los hechos imputados.` }] },
   { l: '3. RESPONSABLES', c: 'c', h: [
-    { t: `Cuando el responsable de los hechos cometidos sea un ${P('menor de 18 años')} habrá ${Y('RESPONSABILIDAD SOLIDARIA')} entre el menor y, ${K('por este orden')}: ${Y('1. Padres')} · ${Y('2. Tutores')} · ${Y('3. Acogedores')} · ${Y('4. Guardadores legales o de hecho')}.` },
-    { t: `La responsabilidad de éstos ${D('podrá ser moderada')} por el ${G('Juez')} cuando ${K('no hubieren favorecido')} la conducta del menor con ${Y('dolo o negligencia grave')}.` }] },
+    { t: `Cuando el responsable de los hechos cometidos sea un menor de 18 años, responderán solidariamente con él, por este orden: 1. Padres · 2. Tutores · 3. Acogedores · 4. Guardadores legales o de hecho.` },
+    { t: `Cuando éstos no hubieren favorecido la conducta del menor con dolo o negligencia grave, su responsabilidad podrá ser moderada por el Juez.` }] },
 ]));
 
 // ───────── p36-38 · PLAZOS del temario ─────────
