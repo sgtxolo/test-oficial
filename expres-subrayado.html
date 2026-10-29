@@ -125,6 +125,7 @@ body.marcando.forma svg.ovc{pointer-events:auto;touch-action:none;cursor:crossha
 body.marcando.forma.mano svg.ovc{pointer-events:none;touch-action:auto}
 body.marcando .esqs .vis{-webkit-user-select:text;user-select:text}
 body.marcando [data-cm],body.marcando .pm{cursor:pointer}
+pm-m{display:inline}
 .pm{border-radius:3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .pm-hl{background:var(--pmc)}
 .pm-ul{text-decoration:underline;text-decoration-color:var(--pmc);text-decoration-thickness:2.5px;text-underline-offset:2px}
@@ -597,7 +598,9 @@ const finDib = e => {
   if (!dib) return; const d = dib; dib = null; if (d.borra) return; d.tmp.remove();
   if (!d.mov) { const i = golpe(d.vk, d.a); if (i >= 0) abrePop(d.vk, i, e.clientX, e.clientY); return; }   // un toque sobre una marca tuya: «Cambiar este subrayado»
   const m = construye(herr, d.a, d.b, d.pts); if (!m) return; m.i = uid();
-  (st.marks[d.vk] = st.marks[d.vk] || []).push(m); hist.push({t: 'add', vk: d.vk, i: m.i}); guarda(); refresca(d.vk);
+  (st.marks[d.vk] = st.marks[d.vk] || []).push(m); hist.push({t: 'add', vk: d.vk, i: m.i});
+  if (d.s.classList.contains('ovc')) { st.vbh = st.vbh || {}; st.vbh[d.vk] = d.s.viewBox.baseVal.height; }   // proporción del cuadro, para imprimir las formas en su sitio
+  guarda(); refresca(d.vk);
 };
 $('#m').addEventListener('pointerup', finDib); $('#m').addEventListener('pointercancel', () => { if (dib) { if (dib.tmp) dib.tmp.remove(); dib = null; } });
 function deshaz() {
@@ -677,12 +680,13 @@ const CM_SEL = 'mark.m-destacable,mark.m-autoridad,mark.m-plazo,mark.m-accion,ma
 const snap = (store, key) => hist.push({t: 'snap', store, key, prev: st[store][key] ? JSON.parse(JSON.stringify(st[store][key])) : undefined});
 const recarga2 = () => { guarda(); const y = scrollY; verTema(); scrollTo(0, y); };
 function textosDe(root) { const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {acceptNode: n => n.parentElement.closest('svg') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT}), o = []; for (let n; (n = w.nextNode());) o.push(n); return o; }
+// Las marcas son elementos <pm-m> (no <span>): los cuadros dan estilo de «globo blanco» a cualquier span que haya dentro.
 function envuelve(vis, s, e, k, c, idx, fl) {
   let acc = 0;
   for (const t of textosDe(vis)) {
     const L = t.length, ini = acc; acc += L; const a = Math.max(s, ini), b = Math.min(e, ini + L); if (b <= a) continue;
     const r = document.createRange(); r.setStart(t, a - ini); r.setEnd(t, b - ini);
-    const sp = document.createElement('span'); sp.className = 'pm pm-' + k; sp.dataset.tm = idx; sp.style.setProperty('--pmc', c); if (fl) sp.dataset.fl = fl; r.surroundContents(sp);
+    const sp = document.createElement('pm-m'); sp.className = 'pm pm-' + k; sp.dataset.tm = idx; sp.style.setProperty('--pmc', c); if (fl) sp.dataset.fl = fl; r.surroundContents(sp);
   }
 }
 function aplicaCM(vis, key) {
@@ -693,7 +697,7 @@ function aplicaCM(vis, key) {
     let n;
     if (/^c\d$/.test(t)) { n = document.createElement('mark'); n.className = CAT_CLS[+t[1]]; }
     else if (t === 'clave') { n = document.createElement('u'); n.className = 'm-clave'; }
-    else { n = document.createElement('span'); n.className = 'pm pm-' + ({sub: 'ul', box: 'sq', circ: 'ci'}[t] || 'fl'); n.style.setProperty('--pmc', t === 'sub' ? '#1f2a24' : '#e53935'); if (FL[t]) n.dataset.fl = FL[t]; }
+    else { n = document.createElement('pm-m'); n.className = 'pm pm-' + ({sub: 'ul', box: 'sq', circ: 'ci'}[t] || 'fl'); n.style.setProperty('--pmc', t === 'sub' ? '#1f2a24' : '#e53935'); if (FL[t]) n.dataset.fl = FL[t]; }
     n.dataset.cm = i; n.append(...el.childNodes); el.replaceWith(n);
   });
 }
