@@ -445,7 +445,9 @@ function lista() {
       + (p.extra ? '<span class="tag extra">fuera del Exprés</span>' : '') + (est ? '<span class="stc ' + est.c + '">' + est.txt + '</span>' : '') + '</div>'
       + '<div class="acc"><button class="sb' + (st.vis[k] ? ' on' : '') + '" data-a="vis">' + (st.vis[k] ? '✓ Visto' : '○ Marcar visto') + '</button>'
       + '<button class="sb dif' + (st.dif[k] ? ' on' : '') + '" data-a="dif">' + (st.dif[k] ? '★' : '☆') + ' Difícil</button>'
-      + (p.imgr && st.vista !== 'completo' ? '<button class="sb' + (ent ? ' on' : '') + '" data-a="ent">' + (ent ? '▴ Ver Exprés' : '▾ Artículo entero') + '</button>' : '<button class="sb" data-a="info" title="No hay versión recortada de este artículo">✓ Ya es el artículo entero</button>')
+      + (p.imgr && st.vista !== 'completo' ? '<button class="sb' + (ent ? ' on' : '') + '" data-a="ent">' + (ent ? '▴ Ver Exprés' : '▾ Artículo entero') + '</button>'
+        : p.imgr ? '<button class="sb on" data-a="vista" title="Ahora ves todos los artículos enteros">⚡ Volver a la versión Exprés</button>'
+        : '<button class="sb" data-a="info" title="Todavía no hay versión recortada de este artículo">✓ Sin versión recortada: ya es el artículo entero</button>')
       + (cu.length ? '<button class="sb' + (abreEsq ? ' on' : '') + '" data-a="esq">🧩 Esquema' + (cu.length > 1 ? ' (' + cu.length + ')' : '') + '</button>' : '')
       + '<button class="sb' + (st.pin[t] === p.id ? ' on' : '') + '" data-a="pin" title="Marca aquí dónde te quedas">📍</button>'
       + '<button class="sb' + (st.nota[k] ? ' on' : '') + '" data-a="nota">📝 Nota</button>'
@@ -494,7 +496,8 @@ $('#m').addEventListener('click', e => {
   const card = e.target.closest('.card'); if (!card) return; const id = card.dataset.id, k = key(tema, id), a = e.target.dataset.a;
   const recarga = () => { guarda(); const y = scrollY; verTema(); scrollTo(0, y); };
   if (e.target.dataset.z) return visor(id);
-  if (a === 'info') return aviso('Este artículo ya se ve entero: no hay una versión recortada.');
+  if (a === 'info') return aviso(D[tema].piezas.some(x => x.imgr) ? 'Este artículo se ve entero: todavía no tiene versión recortada.' : 'En este tema todavía no hay versiones recortadas: todos los artículos se ven enteros.');
+  if (a === 'vista') { st.vista = 'expres'; recarga(); return; }
   if (a === 'vis') { st.vis[k] = st.vis[k] ? 0 : 1; recarga(); }
   if (a === 'dif') { st.dif[k] = st.dif[k] ? 0 : 1; recarga(); }
   if (a === 'ent') { st.ent[k] = st.ent[k] ? 0 : 1; if (dest === id) destAp = null; recarga(); }
