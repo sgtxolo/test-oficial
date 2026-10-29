@@ -11,7 +11,7 @@ body.embed header{display:none}.diana{outline:3px solid var(--ac)}
 main{max-width:860px;margin:0 auto;padding:12px 16px 60px}
 .p{background:var(--card);border-radius:10px;margin:0 0 16px;box-shadow:0 1px 4px #0003;overflow:hidden}
 .p h2{margin:0;padding:8px 12px;font-size:14px;color:var(--ac);display:flex;justify-content:space-between;gap:8px}
-.p img{width:100%;display:block;height:auto}
+.p img{width:100%;display:block;height:auto;min-height:40px}
 .vis{opacity:.45}
 .n{color:var(--mut);font-size:13px}
 </style></head><body>
@@ -22,16 +22,19 @@ main{max-width:860px;margin:0 auto;padding:12px 16px 60px}
 const D=window.EXSUB,sel=document.getElementById('sel'),m=document.getElementById('m');
 let vis={};try{vis=JSON.parse(localStorage.getItem('exsub-vis')||'{}')}catch(e){}
 Object.keys(D).forEach(k=>sel.add(new Option('Tema '+k,k)));
+let dest=null; // recorte al que se llega desde una pregunta (aunque no esté en el Exprés)
 function pinta(){const t=D[sel.value];document.getElementById('t').textContent=t.titulo;m.innerHTML='';
- t.piezas.forEach(p=>{const k=sel.value+'/'+p.id,d=document.createElement('div');d.className='p'+(vis[k]?' vis':'');
-  d.innerHTML='<h2><span>'+p.nombre+'</span><button>'+(vis[k]?'↺':'✓ visto')+'</button></h2><img loading="lazy" src="'+t.dir+p.img+'" alt="'+p.nombre+'">';
-  d.querySelector('button').onclick=()=>{vis[k]=!vis[k];try{localStorage.setItem('exsub-vis',JSON.stringify(vis))}catch(e){}pinta()};m.appendChild(d)});
- document.getElementById('c').textContent=t.piezas.filter(p=>vis[sel.value+'/'+p.id]).length+'/'+t.piezas.length}
-sel.onchange=pinta;pinta();
-// Enlace desde el test: #q=7-120 -> salta al recorte del artículo que contiene esa pregunta
-(function(){const m=location.hash.match(/[#&]q=([^&]+)/);if(!m)return;const q=decodeURIComponent(m[1]),t=parseInt(q,10);
- const pm=location.hash.match(/[#&]p=([^&]+)/),pz=pm?decodeURIComponent(pm[1]):(D[t]&&D[t].preg[q]);
- if(!D[t]||!pz)return;sel.value=t;pinta();const i=D[t].piezas.findIndex(p=>p.id===pz),el=m2=document.querySelectorAll(".p")[i];
- if(el){el.classList.add("diana");el.scrollIntoView();}})();
-if(/[?&]embed=1/.test(location.search))document.body.classList.add("embed");
+ t.piezas.forEach(p=>{if(p.extra&&p.id!==dest)return;const k=sel.value+'/'+p.id,d=document.createElement('div');d.className='p'+(vis[k]?' vis':'')+(p.id===dest?' diana':'');d.dataset.id=p.id;
+  d.innerHTML='<h2><span>'+p.nombre+(p.extra?' (fuera del Exprés)':'')+'</span><button>'+(vis[k]?'↺':'✓ visto')+'</button></h2><img src="'+t.dir+p.img+'" alt="'+p.nombre+'">';
+  d.querySelector('button').onclick=()=>{vis[k]=!vis[k];try{localStorage.setItem('exsub-vis',JSON.stringify(vis))}catch(e){}pinta();irA()};m.appendChild(d)});
+ document.getElementById('c').textContent=t.piezas.filter(p=>vis[sel.value+'/'+p.id]).length+'/'+t.piezas.filter(p=>!p.extra).length}
+function irA(){const el=dest&&m.querySelector('[data-id="'+dest+'"]');if(el)el.scrollIntoView()}
+sel.onchange=()=>{dest=null;pinta()};
+// Enlace desde el test: #q=7-120&p=a-47 -> salta al recorte (p) o, si no viene, al de la pregunta
+(function(){const mq=location.hash.match(/[#&]q=([^&]+)/);if(mq){const q=decodeURIComponent(mq[1]),t=parseInt(q,10),mp=location.hash.match(/[#&]p=([^&]+)/);
+ if(D[t]){sel.value=t;dest=mp?decodeURIComponent(mp[1]):D[t].preg[q]||null}}
+ pinta();irA();
+ // las imágenes cambian la altura al cargar: se recoloca cuando están todas
+ const ims=[...m.querySelectorAll('img')];let n=ims.length;ims.forEach(i=>{const f=()=>{if(--n<=0)irA()};i.complete?f():(i.onload=i.onerror=f)})})();
+if(/[?&]embed=1/.test(location.search))document.body.classList.add('embed');
 </script></body></html>
