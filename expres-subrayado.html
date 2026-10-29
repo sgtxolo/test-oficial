@@ -30,7 +30,8 @@ function pinta(){const t=D[sel.value];document.getElementById('t').textContent=t
 sel.onchange=pinta;pinta();
 // Enlace desde el test: #q=7-120 -> salta al recorte del artículo que contiene esa pregunta
 (function(){const m=location.hash.match(/[#&]q=([^&]+)/);if(!m)return;const q=decodeURIComponent(m[1]),t=parseInt(q,10);
- if(!D[t]||!D[t].preg[q])return;sel.value=t;pinta();const i=D[t].piezas.findIndex(p=>p.id===D[t].preg[q]),el=m2=document.querySelectorAll(".p")[i];
+ const pm=location.hash.match(/[#&]p=([^&]+)/),pz=pm?decodeURIComponent(pm[1]):(D[t]&&D[t].preg[q]);
+ if(!D[t]||!pz)return;sel.value=t;pinta();const i=D[t].piezas.findIndex(p=>p.id===pz),el=m2=document.querySelectorAll(".p")[i];
  if(el){el.classList.add("diana");el.scrollIntoView();}})();
 if(/[?&]embed=1/.test(location.search))document.body.classList.add("embed");
 </script></body></html>

@@ -1509,9 +1509,9 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
   };
 
   // Temario subrayado del usuario (recortes de su PDF): solo los temas con datos en window.EXSUB
-  window.verEnSubrayado = function(id){
+  window.verEnSubrayado = function(id, pieza){
     const ov = document.createElement('div'); ov.className = 'esq-ov';
-    ov.innerHTML = '<div class="esq-ov-bar"><span>📑 Temario subrayado · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Temario subrayado" src="expres-subrayado.html?embed=1#q=' + encodeURIComponent(id) + '"></iframe>';
+    ov.innerHTML = '<div class="esq-ov-bar"><span>📑 Temario subrayado · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Temario subrayado" src="expres-subrayado.html?embed=1#q=' + encodeURIComponent(id) + (pieza ? '&p=' + encodeURIComponent(pieza) : '') + '"></iframe>';
     ov.querySelector('button').onclick = () => { ov.remove(); document.body.style.overflow = prevOverflow; };
     const prevOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
     document.body.appendChild(ov);
@@ -1526,8 +1526,15 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
         const t = (e && e.temaId) || parseInt(id, 10);
         if (id && Array.isArray(window.ESQ_TEMAS) && window.ESQ_TEMAS.includes(+t))
           h += '<button type="button" class="btn-ver-esquema" onclick="verEnEsquema(\'' + id.replace(/'/g, '') + '\')">📘 Ver en el esquema</button>';
-        if (id && window.EXSUB && window.EXSUB[+t] && window.EXSUB[+t].preg[id])
-          h += '<button type="button" class="btn-ver-esquema" onclick="verEnSubrayado(\'' + id.replace(/'/g, '') + '\')">📑 Ver en mi temario subrayado</button>';
+        const S = window.EXSUB && window.EXSUB[+t];
+        if (id && S){
+          let pz = S.preg[id];
+          if (!pz){   // pregunta no anclada en el Exprés: se deduce del «art. N de …» de su explicación
+            const x = String(e.explicacion || '').replace(/<[^>]+>/g, '').match(/art(?:ículo|\.)\s*(\d+)(?:\.\d+)?\s+de\s+(?:la\s+)?(LOTC|LO 2\/1979|LO 1\/1982)/i);
+            if (x){ const c = (x[2].toUpperCase() === 'LO 1/1982' ? 'c-' : 'a-') + x[1]; if (S.piezas.some(p => p.id === c)) pz = c; }
+          }
+          if (pz) h += '<button type="button" class="btn-ver-esquema" onclick="verEnSubrayado(\'' + id.replace(/'/g, '') + '\',\'' + pz + '\')">📑 Ver en mi temario subrayado</button>';
+        }
       } catch(err){}
       return h;
     };
