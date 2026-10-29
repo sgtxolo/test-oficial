@@ -19,14 +19,16 @@ function numeros(t) {
   return [...out];
 }
 global.window = {}; require('../../expres/t' + T + '.js'); const h = window.EXPRES_T[T].html;
-const ids = new Set(ix.map(p => p.id)), preg = {}, enEx = new Set(), marcas = {}, fichas = []; let cur = null, ixCur = -1;
+const ids = new Set(ix.map(p => p.id)), preg = {}, enEx = new Set(), marcas = {}, fichas = []; let cur = null, ixCur = -1, fi = -1; const fx = {};
 const limpia = t => t.replace(/\s*(EXOF|EX|✱|R\d+)(?![\wÁ-ú])/g, '').replace(/\s*[·.]\s*$/, '').replace(/\s+/g, ' ').trim();
 const trozos = h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha">)/);
 for (const f of trozos) {
   const t = ((f.match(/(?:ex-fh|bloque-titulo)">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, '');
   if (/^ANEXO/.test(t)) break;
   const k = inst.findIndex((i, j) => j > ixCur && i.inicio && new RegExp(i.inicio).test(t)); if (k >= 0) { ixCur = k; cur = inst[k].id; }
-  if (!f.startsWith('<div class="ex-ficha">') || !cur) continue;
+  if (!f.startsWith('<div class="ex-ficha">')) continue;
+  fi++;                                   // nº de ficha dentro del Exprés (para sacar su texto al imprimir)
+  if (!cur) continue;
   const num = numeros(t); fichas.push({ t: limpia(t), cur, num });
   if (!/^Art[íi]culos?\s+\d/i.test(t)) continue;
   const piezas = num.map(n => cur + '-' + n).filter(p => ids.has(p)); piezas.forEach(p => enEx.add(p));
@@ -44,10 +46,11 @@ for (const f of trozos) {
     ((at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').forEach(r => { const n = +(r.match(/\d+/) || [0])[0]; if (n) rs.push(n); });
   }
   if (rs.length) mk.r = [...new Set(rs)].sort((a, b) => a - b);
-  piezas.forEach(p => { marcas[p] = mk; });
+  piezas.forEach(p => { marcas[p] = mk; fx[p] = fi; });
   for (const m of f.matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (!preg[q]) preg[q] = piezas[0]; });
 }
 ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) p.extra = 1; if (marcas[p.id] && Object.keys(marcas[p.id]).length) p.m = marcas[p.id]; });
+ix.forEach(p => { if (fx[p.id] !== undefined) p.fx = fx[p.id]; });
 // primera pregunta de cada artículo: sirve para saltar desde aquí a la ficha de Esquemas (esquemas.html#q=<id>&ex=1)
 const primera = {}; for (const q in preg) if (!primera[preg[q]]) primera[preg[q]] = q; ix.forEach(p => { if (primera[p.id]) p.q1 = primera[p.id]; });
 // ---- cuadros (esquemas visuales) de visuales-tN.js, tomados ya montados de esquemas.html ----

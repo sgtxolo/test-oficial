@@ -3,9 +3,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Exprés subrayado</title>
 <link rel="stylesheet" href="expres-subrayado/esquema.css">
+<link rel="stylesheet" href="expres-subrayado/exprestyle.css">
 <style>
-:root{--fondo:#f5f4ee;--panel:#fff;--panel-alt:#eeece3;--texto:#1f2a24;--gris:#767a70;--texto-gris:#767a70;--borde:#e2e0d5;--verde-osc:#163f30;--verde:#1c4d3c;--verde-med:#2f6b52;--verde-suave:#e7efe8;--ambar:#e0a800;--ambar-bg:#fff4d6;--rojo:#c0392b;--ok:#2f9e6e;--dud:#e0a800;--mal:#d1554a;--radio:18px;--radio-sm:12px;--ancho:980px;--sombra:0 1px 3px rgba(20,40,30,.12),0 6px 18px rgba(20,40,30,.06);font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
-:root[data-theme="dark"]{--fondo:#141917;--panel:#1e2523;--panel-alt:#262f2b;--texto:#eef1ee;--gris:#9aa39c;--texto-gris:#9aa39c;--borde:#333d37;--verde-osc:#7fd9ac;--verde:#3f8a68;--verde-med:#57a683;--verde-suave:#16332a;--ambar:#e0a800;--ambar-bg:#3a2f12;--rojo:#ef7a6c;--sombra:0 1px 3px rgba(0,0,0,.4)}
+:root{--fondo:#f5f4ee;--panel:#fff;--panel-alt:#eeece3;--texto:#1f2a24;--gris:#767a70;--texto-gris:#767a70;--borde:#e2e0d5;--verde-osc:#163f30;--verde:#1c4d3c;--verde-med:#2f6b52;--verde-suave:#e7efe8;--ambar:#e0a800;--ambar-bg:#fff4d6;--rojo:#c0392b;--ok:#2f9e6e;--dud:#e0a800;--mal:#d1554a;--card:#fff;--card-alt:#eeece3;--examen-bg:#fff4d6;--examen-borde:#e0a800;--examen-txt:#7a5b00;--radio:18px;--radio-sm:12px;--ancho:980px;--sombra:0 1px 3px rgba(20,40,30,.12),0 6px 18px rgba(20,40,30,.06);font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
+:root[data-theme="dark"]{--card:#1e2523;--card-alt:#262f2b;--examen-bg:#3a2f12;--examen-txt:#f0c95a;--fondo:#141917;--panel:#1e2523;--panel-alt:#262f2b;--texto:#eef1ee;--gris:#9aa39c;--texto-gris:#9aa39c;--borde:#333d37;--verde-osc:#7fd9ac;--verde:#3f8a68;--verde-med:#57a683;--verde-suave:#16332a;--ambar:#e0a800;--ambar-bg:#3a2f12;--rojo:#ef7a6c;--sombra:0 1px 3px rgba(0,0,0,.4)}
 *{box-sizing:border-box}html,body{margin:0;background:var(--fondo);color:var(--texto)}
 button{font:inherit;color:inherit;cursor:pointer}
 .oculto{display:none!important}
@@ -131,6 +132,29 @@ body.marcando [data-cm],body.marcando .pm{cursor:pointer}
 .pm-sq{box-shadow:0 0 0 2px var(--pmc);background:transparent}
 .pm-ci{box-shadow:0 0 0 2px var(--pmc);border-radius:99px;padding:0 3px}
 .pm-fl::after{content:attr(data-fl);color:var(--pmc);font-weight:900;margin-left:3px}
+/* preparar impresión */
+.imp-fila{border:1px solid var(--borde);border-radius:12px;padding:8px 10px;margin-top:6px;background:var(--panel)}
+.imp-fila .imp-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.imp-fila .imp-n{flex:1;min-width:160px;font-weight:700;font-size:14px}
+.imp-fila .imp-n small{display:block;color:var(--gris);font-weight:500;font-size:11.5px}
+.imp-fila .chip{padding:4px 10px;font-size:12.5px}.imp-fila .chip:disabled{opacity:.35;cursor:default}
+.imp-prev{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}.imp-prev>div{background:var(--fondo);border-radius:10px;padding:6px;max-height:380px;overflow:auto}.imp-prev img{width:100%;background:#fff;border-radius:6px}
+.imp-prev h6{margin:0 0 4px;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--gris)}
+.imp-prev .ex-ficha{font-size:12px}
+.imp-bar{position:sticky;bottom:-18px;background:var(--panel);padding:10px 0 4px;margin-top:10px;border-top:1px solid var(--borde);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.imp-bar .res{flex:1;min-width:180px;font-size:13px;color:var(--gris)}
+.imp-rango{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:13px}.imp-rango input{width:64px;font:inherit;border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:8px;padding:5px 8px}
+#zonaImp{display:none}
+@media print{
+  @page{size:A4;margin:10mm}
+  body>*:not(#zonaImp){display:none!important}
+  body{background:#fff!important;color:#000}
+  #zonaImp{display:block!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  #zonaImp.bn{filter:grayscale(1)}
+  #zonaImp .pieza{break-inside:avoid-page;margin:0 0 5mm}
+  #zonaImp .imgw img{width:100%;display:block;cursor:auto}
+  #zonaImp .ex-ficha{box-shadow:none;margin:0}
+  #zonaImp .vis{break-inside:avoid;margin:0 0 4mm}
+}
 body.marcando .imgw img{cursor:crosshair}
 #tb{position:fixed;left:8px;top:90px;z-index:45;background:var(--panel);border:1.5px solid var(--borde);border-radius:22px;padding:8px 6px;display:flex;flex-direction:column;gap:4px;box-shadow:0 8px 28px rgba(0,0,0,.3);max-height:calc(100vh - 110px);overflow:auto}
 #tb button{width:42px;height:40px;border:0;border-radius:12px;background:transparent;font-size:17px;font-weight:700;color:var(--texto);display:flex;align-items:center;justify-content:center;padding:0}
@@ -151,6 +175,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
   <h1 id="tit">Exprés · Temario subrayado</h1>
   <button class="ib" id="b-panel" title="Panel de estudio">🎯 <span class="txt-b">Panel</span></button>
   <button class="ib" id="b-marcas" title="Subrayar y dibujar sobre tu temario">✏️ <span class="txt-b">Marcas</span></button>
+  <button class="ib" id="b-imp" title="Preparar impresión (elige qué versión de cada artículo)">🖨</button>
   <button class="ib" id="b-herr" title="Herramientas">🛠</button>
   <button class="ib" id="b-tema" title="Modo oscuro">🌙</button>
   <button class="ib" id="b-menu" title="Más opciones">⋮</button>
@@ -162,11 +187,14 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <div id="mod" class="oculto"></div>
 <div id="tb" class="oculto"></div>
 <div id="pop" class="oculto"></div>
+<div id="zonaImp"></div>
 <div id="vis" class="oculto"></div>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
 <script src="expres-subrayado/cuadros-t1.js"></script>
 <script src="expres-subrayado/cuadros-t7.js"></script>
+<script src="expres/t1.js"></script>
+<script src="expres/t7.js"></script>
 <script>
 "use strict";
 const D = window.EXSUB || {}, C = window.EXSUB_C || {}, LS = 'exsub2', $ = s => document.querySelector(s), emb = /[?&]embed=1/.test(location.search);
@@ -222,7 +250,7 @@ function accionMenu(a) {
   if (!a) return; $('#menu').classList.add('oculto');
   if (a === 'vista') { st.vista = st.vista === 'expres' ? 'completo' : 'expres'; guarda(); render(); aviso(st.vista === 'expres' ? 'Versión Exprés' : 'Artículos enteros'); }
   if (a === 'extras') { st.extras = !st.extras; guarda(); render(); }
-  if (a === 'print') window.print();
+  if (a === 'print') imprimirPanel();
   if (a === 'exp') { const b = new Blob([JSON.stringify(st)], {type: 'application/json'}), u = document.createElement('a'); u.href = URL.createObjectURL(b); u.download = 'progreso-expres-subrayado.json'; u.click(); }
   if (a === 'imp') { const f = document.createElement('input'); f.type = 'file'; f.accept = '.json'; f.onchange = () => f.files[0].text().then(tx => { try { const n = JSON.parse(tx); for (const k of ['vis', 'dif', 'nota', 'ent', 'esq', 'pin', 'ult', 'temas', 'marks', 'tm', 'cm']) st[k] = Object.assign({}, st[k], n[k] || {}); if (n.plazos) st.plazos = n.plazos; if (n.examen) st.examen = n.examen; guarda(); render(); aviso('Progreso importado'); } catch (er) { aviso('Archivo no válido'); } }); f.click(); }
   if (a === 'reset' && confirm('¿Borrar los vistos, difíciles, notas y el control de temas de este dispositivo?')) { st = Object.assign(st, {vis: {}, dif: {}, nota: {}, ent: {}, esq: {}, pin: {}, ult: {}, temas: {}, plazos: [], marks: {}, tm: {}, cm: {}}); guarda(); render(); }
@@ -669,17 +697,18 @@ function aplicaCM(vis, key) {
     n.dataset.cm = i; n.append(...el.childNodes); el.replaceWith(n);
   });
 }
+st.vbh = st.vbh || {};   // alto (en unidades de 1000 de ancho) de cada cuadro con formas dibujadas: se usa al imprimir
+function montaVis(vis, key) {
+  vis.dataset.k = key; aplicaCM(vis, key);
+  (st.tm[key] || []).forEach((m, i) => envuelve(vis, m.s, m.e, m.k, m.c, i, m.d ? FL[m.d] : null));
+  const w = vis.clientWidth, h = vis.clientHeight, vb = Math.max(40, w ? Math.round(1000 * h / w) : (st.vbh[key] || 400));
+  if (w && (st.marks[key] || []).length && st.vbh[key] !== vb) { st.vbh[key] = vb; guarda(); }
+  const svg = document.createElementNS(SVGNS, 'svg');
+  svg.setAttribute('class', 'ovc'); svg.setAttribute('viewBox', '0 0 1000 ' + vb); svg.setAttribute('preserveAspectRatio', 'none'); svg.dataset.mk = key;
+  svg.innerHTML = (st.marks[key] || []).map(mHTML).join(''); vis.appendChild(svg);
+}
 function montaEsqs() {
-  document.querySelectorAll('.card').forEach(card => {
-    const id = card.dataset.id;
-    card.querySelectorAll('.esqs > .vis').forEach((vis, n) => {
-      const key = tema + '/' + id + '/c' + n; vis.dataset.k = key; aplicaCM(vis, key);
-      (st.tm[key] || []).forEach((m, i) => envuelve(vis, m.s, m.e, m.k, m.c, i, m.d ? FL[m.d] : null));
-      const w = vis.clientWidth || 800, h = vis.clientHeight || 200, svg = document.createElementNS(SVGNS, 'svg');
-      svg.setAttribute('class', 'ovc'); svg.setAttribute('viewBox', '0 0 1000 ' + Math.max(40, Math.round(1000 * h / w))); svg.setAttribute('preserveAspectRatio', 'none'); svg.dataset.mk = key;
-      svg.innerHTML = (st.marks[key] || []).map(mHTML).join(''); vis.appendChild(svg);
-    });
-  });
+  document.querySelectorAll('.card').forEach(card => { const id = card.dataset.id; card.querySelectorAll('.esqs > .vis').forEach((vis, n) => montaVis(vis, tema + '/' + id + '/c' + n)); });
 }
 // marcar el texto seleccionado dentro de un cuadro
 function aplicaSel() {
@@ -720,6 +749,100 @@ function cambiaTexto(a) {
     else { const m = arr[P.i]; delete m.d; if (/^c\d$/.test(a)) { m.k = 'hl'; m.c = CATS[+a[1]][1]; } else if (a === 'clave') { m.k = 'ul'; m.c = '#d32f2f'; } else if (a === 'sub') { m.k = 'ul'; m.c = '#1f2a24'; } else if (a === 'box') { m.k = 'sq'; m.c = TRAZOS[0]; } else if (a === 'circ') { m.k = 'ci'; m.c = TRAZOS[0]; } else { m.k = 'fl'; m.c = TRAZOS[0]; m.d = a; } }
   } else (st.cm[P.key] = st.cm[P.key] || {})[P.i] = {t: a};
   cierraPop(); recarga2();
+}
+// ---------- IMPRESIÓN HÍBRIDA: por cada artículo eliges qué versión sale en el papel ----------
+// 📑 tu subrayado (la captura, con tus marcas) · ⚡ el artículo del Exprés de Esquemas (con sus sellos) · 🧩 los cuadros de esquema. Se pueden mezclar artículo a artículo.
+st.imp = st.imp || {}; st.impOp = st.impOp || {bn: false, ent: false};
+const EXH = {};
+function fichaExpres(t, p) {
+  if (p.fx === undefined || !window.EXPRES_T || !window.EXPRES_T[t]) return null;
+  const c = EXH[t] || (EXH[t] = window.EXPRES_T[t].html.split('<div class="ex-ficha">')), s = c[p.fx + 1]; if (s === undefined) return null;
+  let d = 1, m; const re = /<div\b|<\/div>/g;
+  while ((m = re.exec(s))) { if (m[0] === '</div>') { d--; if (!d) return '<div class="ex-ficha">' + s.slice(0, m.index) + '</div>'; } else d++; }
+  return '<div class="ex-ficha">' + s + '</div>';
+}
+function fichaNodo(t, p) {
+  const html = fichaExpres(t, p); if (!html) return null;
+  const d = document.createElement('div'); d.innerHTML = html; const f = d.firstChild, hd = f.querySelector('.ex-fh'), mk = (txt, cl) => { const b = document.createElement('span'); b.className = cl; b.dataset.t = txt; return b; };
+  if (hd) { hd.querySelectorAll('.ex-sello').forEach(x => x.remove()); const m = p.m || {}, hs = document.createElement('span'); hs.className = 'head-sellos';
+    if (m.exof) hs.appendChild(mk('EXOF', 'ex-p ex-of')); if (m.ex) hs.appendChild(mk('EX', 'ex-p')); if (m.ast) hs.appendChild(mk('✱', 'ex-p ex-ast')); (m.r || []).forEach(r => hs.appendChild(mk('R' + r, 'ex-p ex-r'))); hd.appendChild(hs); }
+  f.querySelectorAll('.ex-fb p').forEach(pp => {   // sellos de cada párrafo, con la misma regla que Esquemas
+    pp.querySelectorAll(':scope > .ex-sello').forEach(x => x.remove());
+    const mx = (pp.dataset.ex || '').split(',').filter(Boolean), ofic = [...pp.querySelectorAll('[data-q]')].flatMap(m => (m.dataset.q || '').split(',')).filter(Boolean).some(id => !/-ia-/.test(id)), sel = [];
+    if (mx.includes('EXOF')) sel.push(['EXOF', 'ex-p ex-of']); if (!mx.includes('EXOF') && (mx.includes('EX') || mx.includes('1') || ofic)) sel.push(['EX', 'ex-p']); if (mx.includes('*')) sel.push(['✱', 'ex-p ex-ast']);
+    (pp.dataset.r || '').split(',').filter(Boolean).forEach(r => sel.push([r, 'ex-p ex-r']));
+    sel.reverse().forEach(([x, c]) => pp.insertBefore(mk(x, c), pp.firstChild));
+  });
+  return f;
+}
+const recortada = (t, p) => !!p.imgr && !st.impOp.ent && !st.ent[key(t, p.id)] && st.vista !== 'completo';
+function estPag(t, p, s) {
+  let mm = 0;
+  if (s.s) { const wh = recortada(t, p) ? p.whr : p.wh; if (wh) mm += wh[1] / wh[0] * 190; }
+  if (s.x) { const f = fichaExpres(t, p); if (f) mm += f.replace(/<[^>]+>/g, '').length * .087; }
+  if (s.e) mm += ((C[t] || {})[p.id] || []).length * 90;
+  return mm / 270;
+}
+function resumenImp() {
+  const t = tema, sel = st.imp[t] || {}; let n = 0, pg = 0; D[t].piezas.forEach(p => { const s = sel[p.id]; if (s && (s.s || s.x || s.e)) { n++; pg += estPag(t, p, s); } });
+  const el = $('#imp-res'); if (el) el.textContent = n ? n + ' artículos elegidos · ≈ ' + Math.max(1, Math.round(pg)) + ' página' + (Math.round(pg) > 1 ? 's' : '') + ' (cálculo aproximado)' : 'Todavía no has elegido nada';
+}
+function filaImp(t, p, s) {
+  const k = key(t, p.id), cu = ((C[t] || {})[p.id] || []).length, m = p.m || {};
+  const tags = (m.exof ? '<span class="mk exof" style="height:22px;min-width:24px;font-size:9px">EXOF</span> ' : '') + (m.ex ? '<span class="mk ex" style="height:22px;min-width:24px;font-size:10px">EX</span> ' : '') + (m.ast ? '<span class="mk ast" style="height:22px;min-width:24px;font-size:13px">✱</span> ' : '');
+  return '<div class="imp-fila" data-ip="' + p.id + '"><div class="imp-top"><div class="imp-n">' + tags + esc(p.nombre.replace(/^.* · /, '')) + '<small>' + esc(instDe(t, p).nombre || '') + (p.imgr ? ' · tu subrayado: ' + (recortada(t, p) ? 'versión recortada' : 'artículo entero') : '') + '</small></div>'
+    + '<button class="chip' + (s.s ? ' on' : '') + '" data-imp-t="s">📑 Mi subrayado</button>'
+    + '<button class="chip' + (s.x ? ' on' : '') + '" data-imp-t="x"' + (p.fx === undefined ? ' disabled title="Este artículo no está como ficha en el Exprés"' : '') + '>⚡ Exprés</button>'
+    + '<button class="chip' + (s.e ? ' on' : '') + '" data-imp-t="e"' + (cu ? '' : ' disabled title="Este artículo no tiene esquema"') + '>🧩 Esquema' + (cu > 1 ? ' (' + cu + ')' : '') + '</button>'
+    + '<button class="chip" data-imp-v="1" title="Ver las versiones una al lado de la otra">👁</button></div><div class="imp-prev oculto"></div></div>';
+}
+function imprimirPanel() {
+  if (!tema) return aviso('Abre un tema y elige qué versión de cada artículo quieres imprimir');
+  const t = tema, sel = st.imp[t] = st.imp[t] || {}, op = st.impOp, ps = D[t].piezas.filter(p => !p.extra), ns = (D[t].cit || []).filter(c => c.nombre && ps.some(p => p.id.startsWith(c.p + '-'))), y = ($('#mod .caja') || {}).scrollTop || 0;
+  let h = '<h2 style="margin:0 0 4px">🖨 Preparar impresión · Tema ' + t + '</h2><p style="color:var(--gris);font-size:13.5px;margin:0 0 10px">Elige, artículo por artículo, qué sale en el papel: tu subrayado, el Exprés de Esquemas o el esquema. Puedes marcar varias versiones del mismo artículo, y mezclar.</p>'
+    + '<div class="chips" style="margin:0 0 10px">' + [['s', '📑 Todo con mi subrayado'], ['x', '⚡ Todo con el Exprés de Esquemas'], ['e', '🧩 Solo los esquemas'], ['m', '🏷 Solo lo marcado (EXOF/EX/✱/R)'], ['n', '✕ Quitar todo']].map(a => '<button class="chip" data-imp-a="' + a[0] + '">' + a[1] + '</button>').join('') + '</div>'
+    + '<div class="imp-rango"><b>Por rango:</b> ' + (ns.length > 1 ? '<select class="f" id="imp-n">' + ns.map(c => '<option value="' + c.p + '">' + esc(c.nombre) + '</option>').join('') + '</select>' : '<input type="hidden" id="imp-n" value="' + (ns[0] ? ns[0].p : '') + '">') + ' artículos del <input id="imp-de" type="number" min="1" placeholder="1"> al <input id="imp-aa" type="number" min="1" placeholder="9"> →'
+    + '<select class="f" id="imp-v"><option value="s">Mi subrayado</option><option value="x">Exprés de Esquemas</option><option value="e">Esquema</option><option value="0">No imprimir</option></select><button class="chip on" data-imp-a="r">Aplicar</button></div>'
+    + '<div style="display:flex;gap:16px;flex-wrap:wrap;margin:10px 0;font-size:13.5px"><label><input type="checkbox" id="imp-bn"' + (op.bn ? ' checked' : '') + '> Imprimir en blanco y negro (grises)</label><label><input type="checkbox" id="imp-ent"' + (op.ent ? ' checked' : '') + '> Mi subrayado siempre con el artículo entero</label></div>'
+    + '<div id="imp-lista">' + ps.map(p => filaImp(t, p, sel[p.id] || {})).join('') + '</div>'
+    + '<div class="imp-bar"><span class="res" id="imp-res"></span><button class="ebtn" data-cerrar="1">Cerrar</button><button class="ebtn on" data-imp-go="1">🖨 Imprimir lo elegido</button></div>';
+  modal(h, true); resumenImp(); const c = $('#mod .caja'); if (c) c.scrollTop = y;
+}
+$('#b-imp').onclick = imprimirPanel;
+$('#mod').addEventListener('click', e => {
+  const t = tema; if (t === null) return;
+  const chip = e.target.closest('[data-imp-t]'), a = e.target.closest('[data-imp-a]'), v = e.target.closest('[data-imp-v]'), go = e.target.closest('[data-imp-go]');
+  if (chip && !chip.disabled) { const id = chip.closest('[data-ip]').dataset.ip, k = chip.dataset.impT, s = (st.imp[t][id] = st.imp[t][id] || {}); s[k] = s[k] ? 0 : 1; chip.classList.toggle('on', !!s[k]); guarda(); resumenImp(); return; }
+  if (v) { const fila = v.closest('[data-ip]'), pv = fila.querySelector('.imp-prev'), p = D[t].piezas.find(x => x.id === fila.dataset.ip);
+    if (!pv.classList.contains('oculto')) return pv.classList.add('oculto');
+    const rec = recortada(t, p), f = fichaNodo(t, p);
+    pv.innerHTML = '<div><h6>📑 Mi subrayado</h6><img src="' + D[t].dir + (rec ? p.imgr : p.img) + '"></div><div><h6>⚡ Exprés de Esquemas</h6>' + (f ? f.outerHTML : '<i style="font-size:12px;color:var(--gris)">Este artículo no está como ficha en el Exprés</i>') + '</div>'; pv.classList.remove('oculto'); return; }
+  if (go) return lanzaImp();
+  if (a) {
+    const sel = st.imp[t], ps = D[t].piezas.filter(p => !p.extra), k = a.dataset.impA;
+    if (k === 'n') ps.forEach(p => delete sel[p.id]);
+    else if (k === 'm') ps.forEach(p => { if (p.m && (p.m.exof || p.m.ex || p.m.ast || (p.m.r || []).length)) sel[p.id] = {s: 1}; else delete sel[p.id]; });
+    else if (k === 'r') { const n = $('#imp-n').value, de = +$('#imp-de').value || 0, aa = +$('#imp-aa').value || 1e9, ver = $('#imp-v').value;
+      ps.forEach(p => { const [l, num] = p.id.split('-'); if (l !== n || !(+num >= de && +num <= aa)) return; if (ver === '0') delete sel[p.id]; else sel[p.id] = {[ver]: 1}; }); }
+    else ps.forEach(p => { if (k === 'x' && p.fx === undefined) return delete sel[p.id]; if (k === 'e' && !((C[t] || {})[p.id] || []).length) return delete sel[p.id]; sel[p.id] = {[k]: 1}; });
+    guarda(); imprimirPanel();
+  }
+});
+$('#mod').addEventListener('change', e => { if (e.target.id === 'imp-bn') { st.impOp.bn = e.target.checked; guarda(); } if (e.target.id === 'imp-ent') { st.impOp.ent = e.target.checked; guarda(); imprimirPanel(); } });
+async function lanzaImp() {
+  const t = tema, sel = st.imp[t] || {}, op = st.impOp, z = $('#zonaImp'); z.innerHTML = ''; z.className = op.bn ? 'bn' : ''; const hechas = new Set(); let n = 0;
+  for (const p of D[t].piezas) {
+    const s = sel[p.id]; if (!s || !(s.s || s.x || s.e)) continue; const div = document.createElement('div'); div.className = 'pieza';
+    if (s.s) { const k = key(t, p.id), rec = recortada(t, p), w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = '<img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh); div.appendChild(w); n++; }
+    if (s.x && p.fx !== undefined && !hechas.has(p.fx)) { const f = fichaNodo(t, p); if (f) { hechas.add(p.fx); div.appendChild(f); n++; } }
+    if (s.e) ((C[t] || {})[p.id] || []).forEach((cu, i) => { const e = document.createElement('div'); e.className = 'esqs imp-esq'; e.style.cssText = 'border:0;padding:0;background:none'; e.innerHTML = cu.h; div.appendChild(e); montaVis(e.firstChild, t + '/' + p.id + '/c' + i); n++; });
+    z.appendChild(div);
+  }
+  if (!n) { aviso('No has elegido nada para imprimir'); return; }
+  await Promise.all([...z.querySelectorAll('img')].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
+  const tema0 = document.documentElement.dataset.theme; document.documentElement.dataset.theme = 'light';
+  let hecho = false; const fin = () => { if (hecho) return; hecho = true; document.documentElement.dataset.theme = tema0; z.innerHTML = ''; removeEventListener('afterprint', fin); };
+  addEventListener('afterprint', fin); cierra(); setTimeout(() => { window.print(); fin(); }, 150);
 }
 entra();
 </script></body></html>
