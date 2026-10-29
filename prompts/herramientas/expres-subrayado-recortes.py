@@ -1,6 +1,9 @@
 # Recorta del PDF subrayado del usuario los articulos que lleva el Expres de un tema.
 # Uso: python expres-subrayado-recortes.py <pdf> <salida_dir> <config.json>
-# config: {"leyes":[{"nombre","paginas":[a,b],"arts":[n,...]}],"manual":[{"id","nombre","piezas":[[pag,f0,f1]]}],"paginas":[{"id","nombre","pag"}]}
+# config: {"leyes":[{"id","nombre","paginas":[a,b],"arts":[n,...]}],
+#          "manual":[{"id","nombre","piezas":[[pag,f0,f1]]}],      (f0,f1 = fraccion de la altura de la pagina)
+#          "paginas":[{"id","nombre","pag"}]}
+# Los encabezados «ARTICULO N» se detectan por el OCR (en mayusculas, aunque salga «�T�CULO»); «15 bis» y «15 ter» quedan dentro del 15.
 import sys, re, json, pymupdf
 from PIL import Image
 pdf, out, cfg = sys.argv[1], sys.argv[2], json.load(open(sys.argv[3], encoding='utf-8'))
@@ -16,32 +19,38 @@ def pila(ims):
 def guarda(id, ims, nombre, res):
     f = f'{id}.jpg'; pila(ims).save(f'{out}/{f}', quality=78, optimize=True)
     res.append({'id': id, 'nombre': nombre, 'img': f})
+def es_art(t):
+    # encabezado «ARTICULO» aunque el OCR lo estropee («�T�CULO», «LRT�CULO», «mcULO»…); el «artículo» de un texto corrido va en minúsculas
+    return len(t) <= 14 and re.search(r'(CULO|cULO)[^A-Za-z]*$', t) is not None
+def encabezados(a, b):
+    H = []
+    for pn in range(a, b + 1):
+        W = d[pn].get_text('words')
+        for w in W:
+            if es_art(w[4]):
+                sig = sorted([x for x in W if abs(x[1] - w[1]) < 4 and x[0] > w[0]], key=lambda x: x[0])
+                if sig:
+                    m = re.match(r'^(\d+)', re.sub(r'^\W+', '', sig[0][4]))
+                    if m: H.append((int(m.group(1)), pn, w[1]))
+    H2 = []; ult = None
+    for k, h in enumerate(H):
+        if ult is not None and h[0] == ult: continue          # «15 bis», «15 ter»: dentro del 15
+        if ult is None or h[0] > ult: H2.append(h); ult = h[0]; continue
+        sig = next((x for x in H[k + 1:] if x[0] > ult), None)   # número mal leído (p. ej. «1.» en vez de «13.»): se deduce por el hueco
+        if sig and sig[0] - ult >= 2: H2.append((ult + 1, h[1], h[2])); ult += 1
+    return H2
 res = []
 for ley in cfg['leyes']:
-    a, b = ley['paginas']; H = []
-    for pn in range(a, b + 1):
-        for w in d[pn].get_text('words'):
-            if w[4].startswith('ART') and w[4].isupper() or re.match(r'^ART.CULO$', w[4]):
-                if w[4] == w[4].upper():
-                    sig = [x for x in d[pn].get_text('words') if abs(x[1] - w[1]) < 4 and x[0] > w[0]]
-                    sig.sort(key=lambda x: x[0])
-                    if sig and re.match(r'^\d+$', re.sub(r'\D', '', sig[0][4]) or 'x'):
-                        n = int(re.sub(r'\D', '', sig[0][4]))
-                        H.append((n, pn, w[1]))
-    # monotono
-    H2 = []; ult = None
-    for h in H:
-        if ult is None or (h[0] >= ult and h[0] - ult <= 12): H2.append(h); ult = h[0]
+    a, b = ley['paginas']; H2 = encabezados(a, b)
     print(ley['nombre'], [h[0] for h in H2])
     for n in ley['arts']:
         k = next((i for i, h in enumerate(H2) if h[0] == n), None)
         if k is None: print('  FALTA art', n); continue
         _, pn, y = H2[k]; fin = H2[k + 1] if k + 1 < len(H2) else None
-        ims = []; p = d[pn]; top = p.rect.height * .09; bot = p.rect.height * .93
+        ims = []; p = d[pn]; bot = p.rect.height * .93
         if fin and fin[1] == pn: ims.append(img(p, y - 5, fin[2] - 4))
         else:
-            ims.append(img(p, y - 5, bot))
-            q = pn + 1
+            ims.append(img(p, y - 5, bot)); q = pn + 1
             while q <= b:
                 pq = d[q]; tq = pq.rect.height * .09
                 if fin and fin[1] == q:

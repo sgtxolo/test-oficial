@@ -17,6 +17,7 @@ main{max-width:860px;margin:0 auto;padding:12px 16px 60px}
 </style></head><body>
 <header><h1 id="t">Exprés con tu subrayado</h1><select id="sel"></select><span class="n" id="c"></span></header>
 <main id="m"></main>
+<script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
 <script>
 const D=window.EXSUB,sel=document.getElementById('sel'),m=document.getElementById('m');
@@ -24,8 +25,9 @@ let vis={};try{vis=JSON.parse(localStorage.getItem('exsub-vis')||'{}')}catch(e){
 Object.keys(D).forEach(k=>sel.add(new Option('Tema '+k,k)));
 let dest=null; // recorte al que se llega desde una pregunta (aunque no esté en el Exprés)
 function pinta(){const t=D[sel.value];document.getElementById('t').textContent=t.titulo;m.innerHTML='';
- t.piezas.forEach(p=>{if(p.extra&&p.id!==dest)return;const k=sel.value+'/'+p.id,d=document.createElement('div');d.className='p'+(vis[k]?' vis':'')+(p.id===dest?' diana':'');d.dataset.id=p.id;
-  d.innerHTML='<h2><span>'+p.nombre+(p.extra?' (fuera del Exprés)':'')+'</span><button>'+(vis[k]?'↺':'✓ visto')+'</button></h2><img src="'+t.dir+p.img+'" alt="'+p.nombre+'">';
+ const vis_=t.piezas.filter(p=>!p.extra||p.id===dest);const ixDest=vis_.findIndex(p=>p.id===dest);
+ vis_.forEach((p,i)=>{const k=sel.value+'/'+p.id,d=document.createElement('div');d.className='p'+(vis[k]?' vis':'')+(p.id===dest?' diana':'');d.dataset.id=p.id;
+  d.innerHTML='<h2><span>'+p.nombre+(p.extra?' (fuera del Exprés)':'')+'</span><button>'+(vis[k]?'↺':'✓ visto')+'</button></h2><img '+(i<=ixDest?'':'loading="lazy" ')+'src="'+t.dir+p.img+'" alt="'+p.nombre+'">';
   d.querySelector('button').onclick=()=>{vis[k]=!vis[k];try{localStorage.setItem('exsub-vis',JSON.stringify(vis))}catch(e){}pinta();irA()};m.appendChild(d)});
  document.getElementById('c').textContent=t.piezas.filter(p=>vis[sel.value+'/'+p.id]).length+'/'+t.piezas.filter(p=>!p.extra).length}
 function irA(){const el=dest&&m.querySelector('[data-id="'+dest+'"]');if(el)el.scrollIntoView()}
@@ -35,6 +37,6 @@ sel.onchange=()=>{dest=null;pinta()};
  if(D[t]){sel.value=t;dest=mp?decodeURIComponent(mp[1]):D[t].preg[q]||null}}
  pinta();irA();
  // las imágenes cambian la altura al cargar: se recoloca cuando están todas
- const ims=[...m.querySelectorAll('img')];let n=ims.length;ims.forEach(i=>{const f=()=>{if(--n<=0)irA()};i.complete?f():(i.onload=i.onerror=f)})})();
+ const ims=[...m.querySelectorAll('img:not([loading])')];let n=ims.length;ims.forEach(i=>{const f=()=>{if(--n<=0)irA()};i.complete?f():(i.onload=i.onerror=f)})})();
 if(/[?&]embed=1/.test(location.search))document.body.classList.add('embed');
 </script></body></html>

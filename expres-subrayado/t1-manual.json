@@ -1,0 +1,18 @@
+{"manual":[
+ {"id":"e-9","nombre":"Estatuto de Roma · Artículo 9","piezas":[[10,0.805,0.93],[11,0.085,0.325]]},
+ {"id":"l-7","nombre":"LO 18/2003 · Artículo 7","piezas":[[39,0.345,0.68]]},
+ {"id":"k-5","nombre":"Carta de la UE · Artículo 5","piezas":[[53,0.435,0.58]]},
+ {"id":"n-3","nombre":"Estatuto del Consejo de Europa · Artículo 3","piezas":[[65,0.648,0.765]]},
+ {"id":"n-35","nombre":"Estatuto del Consejo de Europa · Artículo 35","piezas":[[72,0.485,0.6]]},
+ {"id":"p-29","nombre":"Acuerdo de privilegios CPI · Artículo 29","piezas":[[131,0.32,0.445]]},
+ {"id":"l-pre","nombre":"LO 18/2003 · Exposición de motivos","expres":1,"piezas":[[36,0.17,0.93],[37,0.06,0.93],[38,0.06,0.115]]},
+ {"id":"l-fin","nombre":"LO 18/2003 · Disposiciones adicionales y finales","expres":1,"piezas":[[47,0.06,0.93],[48,0.06,0.93]]},
+ {"id":"k-datos","nombre":"Carta de la UE · Datos y estructura","expres":1,"piezas":[[50,0.06,0.93],[51,0.06,0.93]]},
+ {"id":"k-pre","nombre":"Carta de la UE · Preámbulo","expres":1,"piezas":[[52,0.06,0.77]]},
+ {"id":"n-pre","nombre":"Estatuto del Consejo de Europa · Preámbulo","expres":1,"piezas":[[64,0.06,0.93],[65,0.06,0.13]]},
+ {"id":"q-ad","nombre":"Protocolo Adicional (París, 1952)","expres":1,"piezas":[[97,0.06,0.93],[98,0.06,0.93]]},
+ {"id":"q-6","nombre":"Protocolo n.º 6 — Abolición de la pena de muerte","expres":1,"piezas":[[100,0.06,0.93],[101,0.06,0.93]]},
+ {"id":"q-7","nombre":"Protocolo n.º 7 — Expulsión de extranjeros y doble instancia penal","expres":1,"piezas":[[102,0.06,0.93],[103,0.06,0.93]]},
+ {"id":"q-12","nombre":"Protocolo n.º 12 — Prohibición de discriminación (memoria explicativa)","expres":1,"piezas":[[107,0.06,0.93],[108,0.06,0.93],[109,0.06,0.93],[110,0.06,0.93],[111,0.06,0.93],[112,0.06,0.93],[113,0.06,0.93],[114,0.06,0.93],[115,0.06,0.93]]},
+ {"id":"q-13","nombre":"Protocolo n.º 13 — Abolición de la pena de muerte en todas las circunstancias","expres":1,"piezas":[[116,0.06,0.93],[117,0.06,0.93],[118,0.06,0.93]]}
+],"paginas":[]}
