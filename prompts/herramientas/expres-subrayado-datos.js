@@ -32,8 +32,18 @@ for (const f of trozos) {
   const piezas = num.map(n => cur + '-' + n).filter(p => ids.has(p)); piezas.forEach(p => enEx.add(p));
   if (!piezas.length) continue;
   // marcas del temario: EXOF (examen oficial), EX (examen), ✱ (asterisco de la academia), R<n> (ficha «Recuerda»)
-  const mk = {}; if (/\bEXOF\b/.test(t)) mk.exof = 1; if (/(^|[^A-Z])EX(?![A-Z])/.test(t)) mk.ex = 1; if (/✱/.test(t)) mk.ast = 1;
-  const rs = [...t.matchAll(/\bR(\d+)\b/g)].map(m => +m[1]); if (rs.length) mk.r = [...new Set(rs)];
+  // Misma regla que Esquemas, párrafo a párrafo: EXOF = data-ex EXOF; EX = data-ex EX (o «1») o el párrafo lleva una pregunta oficial de la app (id sin «-ia-») y no es EXOF;
+  // ✱ = data-ex «*»; R<n> = data-r del párrafo o del título. La ficha enseña la unión de los sellos de sus párrafos.
+  const mk = {}, rs = [...t.matchAll(/\bR(\d+)\b/g)].map(m => +m[1]);
+  if (/\bEXOF\b/.test(t)) mk.exof = 1; if (/✱/.test(t)) mk.ast = 1;
+  for (const pm of f.matchAll(/<p((?:\s[^>]*)?)>([\s\S]*?)<\/p>/g)) {
+    const at = pm[1], mx = ((at.match(/data-ex="([^"]*)"/) || [])[1] || '').split(',').filter(Boolean);
+    const ofic = [...pm[2].matchAll(/data-q="([^"]+)"/g)].flatMap(x => x[1].split(/[ ,;|]+/)).some(q => q && !/-ia-/.test(q));
+    if (mx.includes('EXOF')) mk.exof = 1; else if (mx.includes('EX') || mx.includes('1') || ofic) mk.ex = 1;
+    if (mx.includes('*')) mk.ast = 1;
+    ((at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').forEach(r => { const n = +(r.match(/\d+/) || [0])[0]; if (n) rs.push(n); });
+  }
+  if (rs.length) mk.r = [...new Set(rs)].sort((a, b) => a - b);
   piezas.forEach(p => { marcas[p] = mk; });
   for (const m of f.matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (!preg[q]) preg[q] = piezas[0]; });
 }
