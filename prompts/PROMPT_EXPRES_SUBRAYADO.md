@@ -48,6 +48,7 @@ URL publicada: https://sgtxolo.github.io/test-oficial/expres-subrayado.html
 - Versión Exprés = mismos artículos y apartados que el Exprés de Esquemas; «Artículo entero» y «Esquema» como botones; los artículos fuera del Exprés solo se ven al llegar desde una pregunta (etiqueta «fuera del Exprés»).
 - Al llegar desde una pregunta que cita un apartado que el recorte no lleva, se abre el artículo entero.
 - Impresión: 4 versiones por artículo (recortado, entero, Exprés, Exprés con (…) abiertos en gris) + esquema; letra del Exprés 12 px por defecto (Source Sans 3 incluida en `fuente.css`) para casar con el tamaño de la captura; opción de grises; el Exprés sale **por artículo** aunque la ficha sea de varios.
+- Móvil: tarjetas compactas (botones solo con icono, el texto va en `<span class="lb">`) y **modo lectura a pantalla completa** (botón ⛶ de cada artículo o tocar la captura): pestañas Subrayado (captura sin márgenes en blanco, con zoom y tus marcas) / Exprés (texto grande como en Esquemas, A−/A+, (…) abiertos) / Esquema; se cambia de artículo con ← → o deslizando. Solo se toca `expres-subrayado.html`: Esquemas y el test se dejan como están.
 - Sincronizar usa la misma configuración de GitHub que Esquemas/test (`oficialGhCfg`) y su propio archivo `backups/expres-subrayado.json`, con mezcla de tres vías.
 
 ## Pendiente / ideas

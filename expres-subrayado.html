@@ -102,10 +102,28 @@ input[type=date],input[type=text].f,select.f{font:inherit;border:1.5px solid var
 @media(max-width:560px){.herr-grid{grid-template-columns:1fr}.hero h2{font-size:19px}.htema{font-size:20px}}
 .cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cmp img{width:100%;background:#fff;border-radius:8px}
 /* visor */
-#vis{position:fixed;inset:0;z-index:50;background:rgba(10,15,12,.94);display:flex;flex-direction:column}
-#vis .bar{display:flex;gap:8px;align-items:center;padding:8px 12px;color:#fff}#vis .bar b{flex:1;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-#vis .bar .ib{background:#ffffff1c;border-color:#ffffff30;color:#fff}
-#vis .lienzo{flex:1;overflow:auto;text-align:center;-webkit-overflow-scrolling:touch}#vis img{background:#fff;max-width:none}
+/* modo lectura a pantalla completa (móvil y ordenador): tres pestañas — tu subrayado, el Exprés (texto grande, como en Esquemas) y el esquema */
+#vis{position:fixed;inset:0;z-index:50;background:var(--fondo);color:var(--texto);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top)}
+#vis .bar{display:flex;gap:6px;align-items:center;padding:6px 8px;border-bottom:1px solid var(--borde)}#vis .bar.abajo{border-top:1px solid var(--borde);border-bottom:0;padding-bottom:max(6px,env(safe-area-inset-bottom))}
+#vis .bar b{flex:1;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--verde-osc)}
+#vis .ptabs{display:flex;gap:6px;padding:6px 8px;border-bottom:1px solid var(--borde);overflow-x:auto}#vis .ptabs .chip{flex:none}
+#vis .lienzo{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;padding:0}
+#vis .lbox{overflow:hidden;background:#fff}#vis .lbox .imgw img{width:100%;display:block;max-width:none}
+#vis .lect{padding:6px 10px 40px;font-family:"Source Sans 3","Segoe UI",Arial,sans-serif;text-align:justify;hyphens:auto}
+#vis .lect .ex-ficha{margin:0 0 10px}#vis .lect .ex-fb p{font-size:var(--fzl,17px)!important;line-height:1.42!important;margin:5px 0!important}
+#vis .lect .ex-fh{font-size:calc(var(--fzl,17px) - 1px)!important;color:var(--rojo);text-transform:uppercase}
+#vis .lect .ex-plg.on>.ex-plg-t{background:#e3e5e8!important;border-radius:3px}
+#vis .lesq{padding:8px 8px 40px;display:flex;flex-direction:column;gap:12px}
+/* móvil: barra superior y tarjetas más compactas, botones solo con icono */
+@media(max-width:600px){
+  #top{padding:6px 8px 4px}#top .fila{gap:5px}#top h1{font-size:14px}.txt-b{display:none}.ib{min-width:34px;height:34px;padding:0 6px}
+  main{padding:8px 6px 100px}.card{border-radius:12px;margin-bottom:10px;border-left-width:5px}
+  .card .cab{padding:8px 8px 4px}.card .cab .nom{font-size:13.5px;min-width:0}.stc{font-size:11px}
+  .card .acc{padding:2px 8px 8px;gap:5px}.sb{padding:5px 9px;font-size:13px}.sb .lb{display:none}.sb.sinrec{display:none}
+  .sb[data-a=ent] .lb{display:inline}
+  .hero{padding:16px 14px}.stats{grid-template-columns:repeat(2,1fr)}
+  #herr{position:static}#herr .chips{flex-wrap:nowrap;overflow-x:auto}.chip{flex:none}
+}
 /* aviso «aquí te quedaste» */
 #pill{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:40;background:var(--verde-osc);color:#fff;border-radius:99px;padding:10px 12px 10px 18px;display:flex;align-items:center;gap:10px;box-shadow:0 8px 24px rgba(0,0,0,.35);max-width:min(720px,calc(100vw - 20px))}
 :root[data-theme="dark"] #pill{color:#10201a}
@@ -447,16 +465,18 @@ function lista() {
     if (g !== gAnt) { h += '<div class="grupo">' + esc(g) + '</div>'; gAnt = g; }
     h += '<div class="card' + (est && est.c !== 'nuevo' ? ' st-' + est.c : '') + (st.vis[k] ? ' visto' : '') + (p.id === dest ? ' diana' : '') + '" id="c-' + p.id + '" data-id="' + p.id + '"><div class="cab">' + marcasHTML(p) + '<div class="nom">' + esc(p.nombre.replace(/^.* · /, '')) + '<small>' + esc(g) + (p.ap && !ent ? ' · apartados ' + p.ap.join(', ') : '') + '</small></div>'
       + (p.extra ? '<span class="tag extra">fuera del Exprés</span>' : '') + (est ? '<span class="stc ' + est.c + '">' + est.txt + '</span>' : '') + '</div>'
-      + '<div class="acc"><button class="sb' + (st.vis[k] ? ' on' : '') + '" data-a="vis">' + (st.vis[k] ? '✓ Visto' : '○ Marcar visto') + '</button>'
-      + '<button class="sb dif' + (st.dif[k] ? ' on' : '') + '" data-a="dif">' + (st.dif[k] ? '★' : '☆') + ' Difícil</button>'
-      + (p.imgr && st.vista !== 'completo' ? '<button class="sb' + (ent ? ' on' : '') + '" data-a="ent">' + (ent ? '▴ Ver Exprés' : '▾ Artículo entero') + '</button>'
-        : p.imgr ? '<button class="sb on" data-a="vista" title="Ahora ves todos los artículos enteros">⚡ Volver a la versión Exprés</button>'
-        : '<button class="sb" data-a="info" title="Todavía no hay versión recortada de este artículo">✓ Sin versión recortada: ya es el artículo entero</button>')
-      + (cu.length ? '<button class="sb' + (abreEsq ? ' on' : '') + '" data-a="esq">🧩 Esquema' + (cu.length > 1 ? ' (' + cu.length + ')' : '') + '</button>' : '')
+      // En el móvil los botones quedan solo con su icono (el texto va en <span class="lb">, que se oculta); «Leer» abre el modo lectura a pantalla completa
+      + '<div class="acc"><button class="sb leer" data-a="leer" title="Leer este artículo a pantalla completa">⛶<span class="lb"> Leer</span></button>'
+      + '<button class="sb' + (st.vis[k] ? ' on' : '') + '" data-a="vis" title="Marcar como visto">' + (st.vis[k] ? '✓<span class="lb"> Visto</span>' : '○<span class="lb"> Marcar visto</span>') + '</button>'
+      + '<button class="sb dif' + (st.dif[k] ? ' on' : '') + '" data-a="dif" title="Difícil">' + (st.dif[k] ? '★' : '☆') + '<span class="lb"> Difícil</span></button>'
+      + (p.imgr && st.vista !== 'completo' ? '<button class="sb' + (ent ? ' on' : '') + '" data-a="ent">' + (ent ? '▴ Ver Exprés' : '▾ <span class="lb">Artículo </span>entero') + '</button>'
+        : p.imgr ? '<button class="sb on" data-a="vista" title="Ahora ves todos los artículos enteros">⚡<span class="lb"> Volver a la versión Exprés</span></button>'
+        : '<button class="sb sinrec" data-a="info" title="Todavía no hay versión recortada de este artículo">✓ Sin versión recortada: ya es el artículo entero</button>')
+      + (cu.length ? '<button class="sb' + (abreEsq ? ' on' : '') + '" data-a="esq" title="Esquema">🧩<span class="lb"> Esquema</span>' + (cu.length > 1 ? ' (' + cu.length + ')' : '') + '</button>' : '')
       + '<button class="sb' + (st.pin[t] === p.id ? ' on' : '') + '" data-a="pin" title="Marca aquí dónde te quedas">📍</button>'
-      + '<button class="sb' + (st.nota[k] ? ' on' : '') + '" data-a="nota">📝 Nota</button>'
-      + (qs.length && !emb ? '<button class="sb" data-a="prac">🎯 Practicar (' + qs.length + ')</button>' : '')
-      + (p.q1 ? '<a class="sb" target="_top" href="esquemas.html#q=' + encodeURIComponent(p.q1) + '&ex=1" title="Ver este artículo en el Exprés de Esquemas">⚡ En Esquemas</a>' : '') + '</div>'
+      + '<button class="sb' + (st.nota[k] ? ' on' : '') + '" data-a="nota" title="Nota">📝<span class="lb"> Nota</span></button>'
+      + (qs.length && !emb ? '<button class="sb" data-a="prac" title="Practicar las preguntas de este artículo">🎯<span class="lb"> Practicar</span> (' + qs.length + ')</button>' : '')
+      + (p.q1 ? '<a class="sb" target="_top" href="esquemas.html#q=' + encodeURIComponent(p.q1) + '&ex=1" title="Ver este artículo en el Exprés de Esquemas">⚡<span class="lb"> En Esquemas</span></a>' : '') + '</div>'
       + (st.notaAb === k ? '<textarea class="nota" data-n="' + k + '" placeholder="Tu nota sobre este artículo…">' + esc(st.nota[k] || '') + '</textarea>' : (st.nota[k] ? '<div class="nota" style="min-height:0;white-space:pre-wrap">' + esc(st.nota[k]) + '</div>' : ''))
       + (st.modoEsq && cu.length ? '' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + '</div>')
       + (abreEsq && cu.length ? '<div class="esqs"><div class="esq-t">🧩 Esquema de este artículo</div>' + cu.map(x => x.h).join('') + '</div>' : '') + '</div>'; });
@@ -499,7 +519,7 @@ $('#m').addEventListener('click', e => {
   }
   const card = e.target.closest('.card'); if (!card) return; const id = card.dataset.id, k = key(tema, id), a = e.target.dataset.a;
   const recarga = () => { guarda(); const y = scrollY; verTema(); scrollTo(0, y); };
-  if (e.target.dataset.z) return visor(id);
+  if (e.target.dataset.z || a === 'leer') return visor(id);
   if (a === 'info') return aviso(D[tema].piezas.some(x => x.imgr) ? 'Este artículo se ve entero: todavía no tiene versión recortada.' : 'En este tema todavía no hay versiones recortadas: todos los artículos se ven enteros.');
   if (a === 'vista') { st.vista = 'expres'; recarga(); return; }
   if (a === 'vis') { st.vis[k] = st.vis[k] ? 0 : 1; recarga(); }
@@ -517,21 +537,67 @@ let tmr; addEventListener('scroll', () => { if (tema === null) return; clearTime
 let vlista = [], vi = 0, zoom = 1;
 function visor(id) { vlista = [...document.querySelectorAll('.card')].map(c => c.dataset.id); vi = Math.max(0, vlista.indexOf(id)); pintaVisor(); }
 function repaso() { vlista = [...document.querySelectorAll('.card')].map(c => c.dataset.id); if (!vlista.length) return aviso('No hay nada que repasar'); vi = 0; pintaVisor(); }
+// Modo lectura: pestañas «Subrayado» (tu captura, sin los márgenes en blanco para que se lea más grande, con tus marcas), «Exprés» (el texto del Exprés
+// de Esquemas, grande y con tamaño ajustable; los (…) se pueden abrir) y «Esquema» (los cuadros). Se cambia de artículo con las flechas o deslizando.
+const RB = {};   // límites del texto de cada captura (para quitar los márgenes en blanco)
+function recorteBlanco(img, caja) {
+  const aplica = b => { const w = Math.max(.35, b[1] - b[0]); caja.style.width = (100 / w) + '%'; caja.style.marginLeft = (-b[0] / w * 100) + '%'; };
+  if (RB[img.src]) return aplica(RB[img.src]);
+  try {
+    const W = 360, H = Math.max(1, Math.round(img.naturalHeight * W / img.naturalWidth)), c = document.createElement('canvas'); c.width = W; c.height = H;
+    const cx = c.getContext('2d', {willReadFrequently: true}); cx.drawImage(img, 0, 0, W, H); const d = cx.getImageData(0, 0, W, H).data, col = new Array(W).fill(0);
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { const i = (y * W + x) * 4; if (d[i] < 150 && d[i + 1] < 150 && d[i + 2] < 150) col[x]++; }
+    let a = 0, b = W - 1; const u = Math.max(2, H * .012); while (a < W && col[a] < u) a++; while (b > a && col[b] < u) b--;
+    const pad = .02, fr = [Math.max(0, a / W - pad), Math.min(1, (b + 1) / W + pad)]; if (fr[1] - fr[0] < .5 || fr[1] - fr[0] > .98) return; RB[img.src] = fr; aplica(fr);
+  } catch (e) { /* imagen de otro origen o sin datos: se deja entera */ }
+}
+function modoLect(p) { const hay = {s: true, x: p.fx !== undefined, e: !!((C[tema] || {})[p.id] || []).length}; return hay[st.vmodo] ? st.vmodo : 's'; }
 function pintaVisor() {
-  const id = vlista[vi], p = D[tema].piezas.find(x => x.id === id), k = key(tema, id), ent = entera(p) || st.vizEnt, v = $('#vis'); v.classList.remove('oculto'); document.body.style.overflow = 'hidden';
-  v.innerHTML = '<div class="bar"><b>' + esc(p.nombre) + ' · ' + (vi + 1) + '/' + vlista.length + '</b>' + (p.imgr ? '<button class="ib" data-v="ent">' + (ent ? 'Exprés' : 'Entero') + '</button>' : '') + '<button class="ib" data-v="z-">−</button><button class="ib" data-v="z+">+</button><button class="ib" data-v="x">✕</button></div>'
-    + '<div class="lienzo"><img style="width:' + (zoom * 100) + '%" src="' + D[tema].dir + (ent || !p.imgr ? p.img : p.imgr) + '"></div>'
-    + '<div class="bar"><button class="ib" data-v="<">← Anterior</button><button class="ib' + (st.vis[k] ? ' on' : '') + '" data-v="vis" style="flex:1">' + (st.vis[k] ? '✓ Visto' : '○ Marcar visto') + '</button><button class="ib" data-v=">">Siguiente →</button></div>';
+  const id = vlista[vi], p = D[tema].piezas.find(x => x.id === id), k = key(tema, id), v = $('#vis'), modo = modoLect(p), cu = (C[tema] || {})[id] || [];
+  v.classList.remove('oculto'); document.body.style.overflow = 'hidden'; v.style.setProperty('--fzl', (st.fzl || (innerWidth < 600 ? 17 : 16)) + 'px');
+  const ent = entera(p) || st.vizEnt, plg = modo === 'x' && tienePlg(tema, p);
+  const tabs = [['s', '📑 Subrayado', true], ['x', '⚡ Exprés', p.fx !== undefined], ['e', '🧩 Esquema' + (cu.length > 1 ? ' (' + cu.length + ')' : ''), cu.length > 0]].filter(x => x[2]).map(x => '<button class="chip' + (modo === x[0] ? ' on' : '') + '" data-v="m' + x[0] + '">' + x[1] + '</button>').join('');
+  v.innerHTML = '<div class="bar"><button class="ib" data-v="x" title="Cerrar">✕</button><b>' + esc(p.nombre.replace(/^.* · /, '')) + ' · ' + (vi + 1) + '/' + vlista.length + '</b>'
+    + (modo === 's' && p.imgr ? '<button class="ib" data-v="ent">' + (ent ? 'Exprés' : 'Entero') + '</button>' : '')
+    + (modo === 's' ? '<button class="ib" data-v="z-">−</button><button class="ib" data-v="z+">+</button>' : '')
+    + (modo === 'x' ? '<button class="ib" data-v="f-">A−</button><button class="ib" data-v="f+">A+</button>' + (plg ? '<button class="ib' + (st.vdesp ? ' on' : '') + '" data-v="desp" title="Abrir los (…)">(…)</button>' : '') : '')
+    + (document.fullscreenEnabled ? '<button class="ib" data-v="fs" title="Pantalla completa del navegador">⛶</button>' : '') + '</div>'
+    + '<div class="ptabs">' + tabs + '</div><div class="lienzo" id="lienzo"></div>'
+    + '<div class="bar abajo"><button class="ib" data-v="<">←</button><button class="ib' + (st.vis[k] ? ' on' : '') + '" data-v="vis" style="flex:1">' + (st.vis[k] ? '✓ Visto' : '○ Marcar visto') + '</button><button class="ib' + (st.dif[k] ? ' on' : '') + '" data-v="dif">' + (st.dif[k] ? '★' : '☆') + '</button><button class="ib" data-v=">">→</button></div>';
+  const L = $('#lienzo');
+  if (modo === 's') {
+    const rec = !(ent || !p.imgr), box = document.createElement('div'); box.className = 'lbox'; if (zoom > 1) box.style.overflowX = 'auto';   // ampliada: se desplaza de lado
+    const caja = document.createElement('div'); caja.className = 'imgw'; caja.style.width = (zoom * 100) + '%'; box.appendChild(caja);
+    caja.innerHTML = '<img src="' + D[tema].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(key(tema, id) + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh);
+    L.appendChild(box); const im = caja.querySelector('img'); const ajusta = () => { if (zoom === 1) recorteBlanco(im, caja); }; im.complete ? ajusta() : im.addEventListener('load', ajusta);
+  } else if (modo === 'x') {
+    const w = document.createElement('div'); w.className = 'lect'; const f = fichaNodo(tema, p, !!st.vdesp); if (f) w.appendChild(f); L.appendChild(w);
+  } else {
+    const w = document.createElement('div'); w.className = 'lesq'; L.appendChild(w);
+    cu.forEach((x, i) => { const e = document.createElement('div'); e.className = 'esqs'; e.style.cssText = 'border:0;padding:0;background:none'; e.innerHTML = x.h; w.appendChild(e); montaVis(e.firstChild, tema + '/' + id + '/c' + i); });
+  }
 }
 $('#vis').onclick = e => {
-  const a = e.target.dataset.v; if (!a) return;
-  if (a === 'x') { $('#vis').classList.add('oculto'); document.body.style.overflow = ''; st.vizEnt = false; verTema(); return; }
-  if (a === '<' && vi > 0) vi--; if (a === '>' && vi < vlista.length - 1) vi++;
-  if (a === 'z+') zoom = Math.min(3, zoom + .5); if (a === 'z-') zoom = Math.max(1, zoom - .5);
-  if (a === 'vis') { const k = key(tema, vlista[vi]); st.vis[k] = st.vis[k] ? 0 : 1; guarda(); }
-  if (a === 'ent') st.vizEnt = !st.vizEnt;
+  const a = e.target.closest('[data-v]'); if (!a) return; const x = a.dataset.v;
+  if (x === 'x') { $('#vis').classList.add('oculto'); document.body.style.overflow = ''; st.vizEnt = false; try { if (document.fullscreenElement) document.exitFullscreen(); } catch (er) {} verTema(); return; }
+  if (x === 'fs') { try { document.fullscreenElement ? document.exitFullscreen() : $('#vis').requestFullscreen(); } catch (er) {} return; }
+  if (x === '<' && vi > 0) { vi--; zoom = 1; } if (x === '>' && vi < vlista.length - 1) { vi++; zoom = 1; }
+  if (x === 'z+') zoom = Math.min(3, zoom + .5); if (x === 'z-') zoom = Math.max(1, zoom - .5);
+  if (x === 'vis') { const k = key(tema, vlista[vi]); st.vis[k] = st.vis[k] ? 0 : 1; guarda(); }
+  if (x === 'dif') { const k = key(tema, vlista[vi]); st.dif[k] = st.dif[k] ? 0 : 1; guarda(); }
+  if (x === 'ent') st.vizEnt = !st.vizEnt;
+  if (x === 'f+') { st.fzl = Math.min(26, (st.fzl || (innerWidth < 600 ? 17 : 16)) + 1); guarda(); } if (x === 'f-') { st.fzl = Math.max(11, (st.fzl || (innerWidth < 600 ? 17 : 16)) - 1); guarda(); }
+  if (x === 'desp') { st.vdesp = !st.vdesp; guarda(); }
+  if (/^m[sxe]$/.test(x)) { st.vmodo = x[1]; guarda(); zoom = 1; }
   pintaVisor();
 };
+// deslizar a izquierda/derecha para cambiar de artículo (si no se está ampliando la captura)
+let tx = 0, ty = 0;
+$('#vis').addEventListener('touchstart', e => { const t = e.touches[0]; tx = t.clientX; ty = t.clientY; }, {passive: true});
+$('#vis').addEventListener('touchend', e => {
+  const t = e.changedTouches[0], dx = t.clientX - tx, dy = t.clientY - ty; if (Math.abs(dx) < 80 || Math.abs(dx) < Math.abs(dy) * 2 || zoom > 1 || e.target.closest('.ptabs, .bar')) return;
+  if (dx < 0 && vi < vlista.length - 1) { vi++; zoom = 1; pintaVisor(); } else if (dx > 0 && vi > 0) { vi--; zoom = 1; pintaVisor(); }
+}, {passive: true});
 addEventListener('keydown', e => { if ($('#vis').classList.contains('oculto')) return; if (e.key === 'ArrowRight' && vi < vlista.length - 1) { vi++; pintaVisor(); } if (e.key === 'ArrowLeft' && vi > 0) { vi--; pintaVisor(); } if (e.key === 'Escape') $('#vis [data-v="x"]').click(); });
 // ---------- navegación por enlace ----------
 function irA() {
