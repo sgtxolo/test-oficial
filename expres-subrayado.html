@@ -24,7 +24,7 @@ let vis={};try{vis=JSON.parse(localStorage.getItem('exsub-vis')||'{}')}catch(e){
 Object.keys(D).forEach(k=>sel.add(new Option('Tema '+k,k)));
 function pinta(){const t=D[sel.value];document.getElementById('t').textContent=t.titulo;m.innerHTML='';
  t.piezas.forEach(p=>{const k=sel.value+'/'+p.id,d=document.createElement('div');d.className='p'+(vis[k]?' vis':'');
-  d.innerHTML='<h2><span>'+p.nombre+'</span><button>'+(vis[k]?'↺':'✓ visto')+'</button></h2><img loading="lazy" src="expres-subrayado/'+t.dir+p.img+'" alt="'+p.nombre+'">';
+  d.innerHTML='<h2><span>'+p.nombre+'</span><button>'+(vis[k]?'↺':'✓ visto')+'</button></h2><img loading="lazy" src="'+t.dir+p.img+'" alt="'+p.nombre+'">';
   d.querySelector('button').onclick=()=>{vis[k]=!vis[k];try{localStorage.setItem('exsub-vis',JSON.stringify(vis))}catch(e){}pinta()};m.appendChild(d)});
  document.getElementById('c').textContent=t.piezas.filter(p=>vis[sel.value+'/'+p.id]).length+'/'+t.piezas.length}
 sel.onchange=pinta;pinta();
