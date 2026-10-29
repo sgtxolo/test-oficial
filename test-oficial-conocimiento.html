@@ -1533,6 +1533,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
             const x = String(e.explicacion || '').replace(/<[^>]+>/g, '').match(/art(?:ículo|\.)\s*(\d+)[\w.]*(?:\s*\([^)]*\))?\s+de\s+(?:la\s+)?(LOTC|LO 2\/1979|LO 1\/1982)/i);
             if (x){ const c = (x[2].toUpperCase() === 'LO 1/1982' ? 'c-' : 'a-') + x[1]; if (S.piezas.some(p => p.id === c)) pz = c; }
           }
+          if (!pz && S.piezas.some(p => p.id === 'c-pre') && /pre[áa]mbulo de (?:la )?LO 1\/1982|62\/1978/i.test(String(e.explicacion || ''))) pz = 'c-pre';
           if (!pz) pz = S.preg[id];
           if (pz) h += '<button type="button" class="btn-ver-esquema" onclick="verEnSubrayado(\'' + id.replace(/'/g, '') + '\',\'' + pz + '\')">📑 Ver en mi temario subrayado</button>';
         }
