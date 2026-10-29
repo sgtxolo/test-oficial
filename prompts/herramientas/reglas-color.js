@@ -14,7 +14,10 @@ const AUT = new Set(['corte', 'tribunal', 'tribunales', 'comite', 'ministros', '
 // «autoridades competentes», «órgano competente»: el adjetivo también va en verde
 const COMPETENTE = new Set(['competente', 'competentes']);
 // lila ampliado (24/10/2026): «no podrá» (negación + futuro) y «será concedido» (ser/estar/haber + participio)
-const NEGA = new Set(['no', 'ni', 'nunca', 'tampoco', 'jamas']);
+// 29/10/2026: también «se» («no se podrá», «se comunicará») y el verbo que sigue («podrán comunicar», «deberá tener que»)
+const NEGA = new Set(['no', 'se', 'ni', 'nunca', 'tampoco', 'jamas']);
+const INF_NO = new Set(['cualquier', 'mujer', 'lugar', 'militar', 'taller', 'hogar', 'particular', 'regular', 'singular', 'similar', 'popular', 'familiar', 'titular', 'secular', 'consular', 'ejemplar', 'caracter', 'cancer', 'martir', 'mar', 'par', 'pilar', 'azucar']);
+const esInf = s => { const n = norm(s); return /^[a-zñ]{2,}(ar|er|ir)(se|le|les|lo|los|la|las|me|nos|te)?$/.test(n) && !INF_NO.has(n); };
 const AUX = new Set(['sera', 'seran', 'estara', 'estaran', 'habra', 'habran']);
 const PART_IRR = new Set(['hecho', 'hechos', 'dicho', 'dichos', 'puesto', 'puestos', 'impuesto', 'impuestos', 'prevista', 'previsto', 'previstas', 'previstos',
   'resuelto', 'resuelta', 'resueltos', 'resueltas', 'dispuesto', 'dispuesta', 'dispuestos', 'compuesto', 'compuesta', 'compuestos', 'compuestas', 'expuesto', 'abierto', 'cubierto', 'escrito', 'devuelto']);
@@ -55,10 +58,14 @@ function aplica(html) {
     if (FUT.test(limpia)) {
       p.cls = 'm-accion'; p.ru = false;
       const lila = q => { if (q && q.cls !== 'm-resp') { q.cls = 'm-accion'; q.ru = false; } };
-      const pr = ws[k - 1]; if (pr && NEGA.has(norm(pr.s.replace(/&[a-z]+;/g, '')))) lila(pr);                          // «no podrá», «ni será»
+      for (let b = k - 1; b >= Math.max(0, k - 2); b--) { const pr = ws[b]; if (pr && NEGA.has(norm(pr.s.replace(/&[a-z]+;/g, ''))) && !/[.,;:]$/.test(pr.s)) lila(pr); else break; }   // «no podrá», «no se podrá», «ni será»
       let sg = ws[k + 1];
       if (sg && AUX.has(norm(limpia)) && esPart(sg.s.replace(/[.,;:)»"”?!]+$/g, ''))) lila(sg);                          // «será concedido»
       else if (sg && norm(sg.s) === 'ser' && ws[k + 2] && esPart(ws[k + 2].s.replace(/[.,;:)»"”?!]+$/g, ''))) { lila(sg); lila(ws[k + 2]); }   // «podrá ser concedido»
+      else if (sg && p.s === limpia) {                                                                                  // «podrán comunicar», «tendrá que comunicar»
+        const j = norm(sg.s) === 'que' ? k + 2 : k + 1, vb = ws[j];
+        if (vb && esInf(vb.s.replace(/[.,;:)»"”?!]+$/g, ''))) { for (let q = k + 1; q <= j; q++) lila(ws[q]); }
+      }
       return;
     }
     const n = norm(limpia), cap = /^[A-ZÁÉÍÓÚÑ]/.test(limpia);
