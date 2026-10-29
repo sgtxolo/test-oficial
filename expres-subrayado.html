@@ -141,6 +141,9 @@ pm-m{display:inline}
 .imp-fila .imp-n small{display:block;color:var(--gris);font-weight:500;font-size:11.5px}
 .imp-fila .chip{padding:4px 10px;font-size:12.5px}.imp-fila .chip:disabled{opacity:.35;cursor:default}
 .imp-prev{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}.imp-prev>div{background:var(--fondo);border-radius:10px;padding:6px;max-height:380px;overflow:auto}.imp-prev img{width:100%;background:#fff;border-radius:6px}
+.imp-prev{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}.imp-prev .ancho{grid-column:1/-1;max-height:560px}
+.imp-prev .ex-fb p{font-size:var(--fz,12px)!important;line-height:1.3!important;margin:2px 0!important;text-align:justify}.imp-prev .ex-fh{font-size:var(--fz,12px)!important;color:#c8102e;text-transform:uppercase;padding:4px 8px!important}
+.imp-prev .ex-plg.on>.ex-plg-t{background:#e3e5e8!important;border-radius:3px}
 .imp-prev h6{margin:0 0 4px;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--gris)}
 .imp-prev .ex-ficha{font-size:12px}
 .imp-bar{position:sticky;bottom:-18px;background:var(--panel);padding:10px 0 4px;margin-top:10px;border-top:1px solid var(--borde);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
@@ -817,6 +820,22 @@ function resumenImp() {
   const t = tema, sel = st.imp[t] || {}; let n = 0, pg = 0; D[t].piezas.forEach(p => { const s = sel[p.id]; if (hayAlgo(s)) { n++; pg += estPag(t, p, s); } });
   const el = $('#imp-res'); if (el) el.textContent = n ? n + ' artículos elegidos · ≈ ' + Math.max(1, Math.round(pg)) + ' página' + (Math.round(pg) > 1 ? 's' : '') + ' (cálculo aproximado)' : 'Todavía no has elegido nada';
 }
+const PLGC = {};   // ¿tiene este artículo algún (…) que se pueda abrir en el Exprés?
+function tienePlg(t, p) { const k = t + '/' + p.id; if (PLGC[k] === undefined) { const f = p.fx === undefined ? null : fichaNodo(t, p); PLGC[k] = !!(f && f.querySelector('.ex-plg')); } return PLGC[k]; }
+// Vista previa de cómo saldrá cada versión (con el mismo tamaño de letra que al imprimir)
+function previaImp(pv, t, p) {
+  pv.innerHTML = ''; pv.style.setProperty('--fz', (st.impOp.fz || 12) + 'px');
+  const col = (tit, cls) => { const d = document.createElement('div'); if (cls) d.className = cls; d.innerHTML = '<h6>' + tit + '</h6>'; pv.appendChild(d); return d; };
+  const rec = recImp(p), c1 = col('📑 Mi subrayado' + (rec ? ' (recortado)' : ''));
+  c1.insertAdjacentHTML('beforeend', '<img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">');
+  if (rec) c1.insertAdjacentHTML('beforeend', '<h6 style="margin-top:8px">📑 Mi subrayado entero</h6><img src="' + D[t].dir + p.img + '">');
+  const f = fichaNodo(t, p), c2 = col('⚡ Exprés de Esquemas');
+  if (f) c2.appendChild(f); else c2.insertAdjacentHTML('beforeend', '<i style="font-size:12px;color:var(--gris)">Este artículo no está como ficha en el Exprés</i>');
+  if (f) { if (tienePlg(t, p)) col('⚡ Exprés con (…) abiertos').appendChild(fichaNodo(t, p, true)); else c2.insertAdjacentHTML('beforeend', '<p style="font-size:11.5px;color:var(--gris);margin:6px 0 0">Este artículo no tiene (…) que abrir: el Exprés normal y el «con (…) abiertos» son iguales.</p>'); }
+  const cu = (C[t] || {})[p.id] || [];
+  if (cu.length) { const c4 = col('🧩 Esquema · así saldrá', 'ancho'); cu.forEach((x, i) => { const e = document.createElement('div'); e.className = 'esqs'; e.style.cssText = 'border:0;padding:0;background:none'; e.innerHTML = x.h; c4.appendChild(e); montaVis(e.firstChild, t + '/' + p.id + '/c' + i); }); }
+  else col('🧩 Esquema').insertAdjacentHTML('beforeend', '<i style="font-size:12px;color:var(--gris)">Este artículo no tiene esquema</i>');
+}
 function filaImp(t, p, s) {
   const k = key(t, p.id), cu = ((C[t] || {})[p.id] || []).length, m = p.m || {};
   const tags = (m.exof ? '<span class="mk exof" style="height:22px;min-width:24px;font-size:9px">EXOF</span> ' : '') + (m.ex ? '<span class="mk ex" style="height:22px;min-width:24px;font-size:10px">EX</span> ' : '') + (m.ast ? '<span class="mk ast" style="height:22px;min-width:24px;font-size:13px">✱</span> ' : '');
@@ -824,7 +843,7 @@ function filaImp(t, p, s) {
     + '<button class="chip' + (s.s ? ' on' : '') + '" data-imp-t="s">📑 ' + (p.imgr ? 'Mi subrayado recortado' : 'Mi subrayado') + '</button>'
     + (p.imgr ? '<button class="chip' + (s.n ? ' on' : '') + '" data-imp-t="n">📑 Mi subrayado entero</button>' : '')
     + '<button class="chip' + (s.x ? ' on' : '') + '" data-imp-t="x"' + (p.fx === undefined ? ' disabled title="Este artículo no está como ficha en el Exprés"' : '') + '>⚡ Exprés</button>'
-    + '<button class="chip' + (s.d ? ' on' : '') + '" data-imp-t="d"' + (p.fx === undefined ? ' disabled title="Este artículo no está como ficha en el Exprés"' : ' title="El Exprés con los (…) abiertos: el texto omitido sale en gris"') + '>⚡ Exprés con (…) abiertos</button>'
+    + '<button class="chip' + (s.d ? ' on' : '') + '" data-imp-t="d"' + (p.fx === undefined ? ' disabled title="Este artículo no está como ficha en el Exprés"' : !tienePlg(t, p) ? ' disabled title="Este artículo no tiene (…) que abrir: es igual que el Exprés normal"' : ' title="El Exprés con los (…) abiertos: el texto omitido sale en gris"') + '>⚡ Exprés con (…) abiertos</button>'
     + '<button class="chip' + (s.e ? ' on' : '') + '" data-imp-t="e"' + (cu ? '' : ' disabled title="Este artículo no tiene esquema"') + '>🧩 Esquema' + (cu > 1 ? ' (' + cu + ')' : '') + '</button>'
     + '<button class="chip" data-imp-v="1" title="Ver las versiones una al lado de la otra">👁</button></div><div class="imp-prev oculto"></div></div>';
 }
@@ -847,8 +866,7 @@ $('#mod').addEventListener('click', e => {
   if (chip && !chip.disabled) { const id = chip.closest('[data-ip]').dataset.ip, k = chip.dataset.impT, s = (st.imp[t][id] = st.imp[t][id] || {}); s[k] = s[k] ? 0 : 1; chip.classList.toggle('on', !!s[k]); guarda(); resumenImp(); return; }
   if (v) { const fila = v.closest('[data-ip]'), pv = fila.querySelector('.imp-prev'), p = D[t].piezas.find(x => x.id === fila.dataset.ip);
     if (!pv.classList.contains('oculto')) return pv.classList.add('oculto');
-    const rec = recImp(p), f = fichaNodo(t, p);
-    pv.innerHTML = '<div><h6>📑 Mi subrayado' + (rec ? ' (recortado)' : '') + '</h6><img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">' + (rec ? '<h6 style="margin-top:8px">📑 Mi subrayado entero</h6><img src="' + D[t].dir + p.img + '">' : '') + '</div><div><h6>⚡ Exprés de Esquemas</h6>' + (f ? f.outerHTML : '<i style="font-size:12px;color:var(--gris)">Este artículo no está como ficha en el Exprés</i>') + '</div>'; pv.classList.remove('oculto'); return; }
+    previaImp(pv, t, p); pv.classList.remove('oculto'); return; }
   if (go) return lanzaImp();
   if (a) {
     const sel = st.imp[t], ps = D[t].piezas.filter(p => !p.extra), k = a.dataset.impA;
