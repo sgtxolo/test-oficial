@@ -112,6 +112,23 @@ input[type=date],input[type=text].f,select.f{font:inherit;border:1.5px solid var
 .toast{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);background:var(--verde-osc);color:#fff;padding:10px 18px;border-radius:99px;z-index:80;font-size:14px}
 :root[data-theme="dark"] .toast{color:#10201a}
 @media(max-height:759px){#herr{position:static}}
+/* marcas propias: dibujo encima de cada captura */
+.imgw{position:relative;line-height:0}.imgw img{display:block}
+svg.ov{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+body.marcando svg.ov{pointer-events:auto;touch-action:none;cursor:crosshair}
+body.marcando.mano svg.ov{pointer-events:none;touch-action:auto}
+body.marcando .imgw img{cursor:crosshair}
+#tb{position:fixed;left:8px;top:90px;z-index:45;background:var(--panel);border:1.5px solid var(--borde);border-radius:22px;padding:8px 6px;display:flex;flex-direction:column;gap:4px;box-shadow:0 8px 28px rgba(0,0,0,.3);max-height:calc(100vh - 110px);overflow:auto}
+#tb button{width:42px;height:40px;border:0;border-radius:12px;background:transparent;font-size:17px;font-weight:700;color:var(--texto);display:flex;align-items:center;justify-content:center;padding:0}
+#tb button:hover{background:var(--panel-alt)}#tb button.on{background:var(--verde);color:#fff}
+#tb hr{border:0;border-top:1px solid var(--borde);margin:4px 6px}#tb .col{display:block;width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1.5px var(--borde)}
+#pop{position:fixed;z-index:90;background:var(--panel);color:var(--texto);border-radius:18px;box-shadow:0 12px 40px rgba(0,0,0,.4);padding:14px;width:min(360px,calc(100vw - 20px))}
+#pop h5{margin:0 0 10px;font-size:15px}#pop .pcs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+#pop .pc{border:2px solid transparent;border-radius:8px;padding:5px 12px;font-size:14px;font-weight:600;background:var(--panel-alt);color:#1f2a24}#pop .pc.on{border-color:var(--verde)}
+#pop .pb{display:block;width:100%;border-radius:12px;border:1.5px solid var(--borde);background:var(--panel);padding:10px;margin-top:8px;font-size:14px}
+#pop .pb.rojo{border-color:#d1554a;color:#d1554a}
+@media(max-width:560px){#tb{top:auto;bottom:70px;left:50%;transform:translateX(-50%);flex-direction:row;border-radius:20px;padding:6px;max-width:calc(100vw - 12px);overflow-x:auto;max-height:none}#tb hr{display:none}#tb button{flex:none}}
+body.marcando #pill{display:none}
 body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:none}
 @media print{#top,#herr,#info,.acc,.nota,.toast,#vis,#pill,#mod{display:none!important}.card{box-shadow:none;break-inside:avoid;border:0;opacity:1!important}.card .cab{padding:2px 0}.card img{cursor:auto}body{background:#fff}}
 </style></head><body>
@@ -119,6 +136,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
   <button class="ib oculto" id="b-atras" title="Inicio">←</button>
   <h1 id="tit">Exprés · Temario subrayado</h1>
   <button class="ib" id="b-panel" title="Panel de estudio">🎯 <span class="txt-b">Panel</span></button>
+  <button class="ib" id="b-marcas" title="Subrayar y dibujar sobre tu temario">✏️ <span class="txt-b">Marcas</span></button>
   <button class="ib" id="b-herr" title="Herramientas">🛠</button>
   <button class="ib" id="b-tema" title="Modo oscuro">🌙</button>
   <button class="ib" id="b-menu" title="Más opciones">⋮</button>
@@ -128,6 +146,8 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <main><div id="info"></div><div id="m"></div></main>
 <div id="pill" class="oculto"></div>
 <div id="mod" class="oculto"></div>
+<div id="tb" class="oculto"></div>
+<div id="pop" class="oculto"></div>
 <div id="vis" class="oculto"></div>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
@@ -190,8 +210,8 @@ function accionMenu(a) {
   if (a === 'extras') { st.extras = !st.extras; guarda(); render(); }
   if (a === 'print') window.print();
   if (a === 'exp') { const b = new Blob([JSON.stringify(st)], {type: 'application/json'}), u = document.createElement('a'); u.href = URL.createObjectURL(b); u.download = 'progreso-expres-subrayado.json'; u.click(); }
-  if (a === 'imp') { const f = document.createElement('input'); f.type = 'file'; f.accept = '.json'; f.onchange = () => f.files[0].text().then(tx => { try { const n = JSON.parse(tx); for (const k of ['vis', 'dif', 'nota', 'ent', 'esq', 'pin', 'ult', 'temas']) st[k] = Object.assign({}, st[k], n[k] || {}); if (n.plazos) st.plazos = n.plazos; if (n.examen) st.examen = n.examen; guarda(); render(); aviso('Progreso importado'); } catch (er) { aviso('Archivo no válido'); } }); f.click(); }
-  if (a === 'reset' && confirm('¿Borrar los vistos, difíciles, notas y el control de temas de este dispositivo?')) { st = Object.assign(st, {vis: {}, dif: {}, nota: {}, ent: {}, esq: {}, pin: {}, ult: {}, temas: {}, plazos: []}); guarda(); render(); }
+  if (a === 'imp') { const f = document.createElement('input'); f.type = 'file'; f.accept = '.json'; f.onchange = () => f.files[0].text().then(tx => { try { const n = JSON.parse(tx); for (const k of ['vis', 'dif', 'nota', 'ent', 'esq', 'pin', 'ult', 'temas', 'marks']) st[k] = Object.assign({}, st[k], n[k] || {}); if (n.plazos) st.plazos = n.plazos; if (n.examen) st.examen = n.examen; guarda(); render(); aviso('Progreso importado'); } catch (er) { aviso('Archivo no válido'); } }); f.click(); }
+  if (a === 'reset' && confirm('¿Borrar los vistos, difíciles, notas y el control de temas de este dispositivo?')) { st = Object.assign(st, {vis: {}, dif: {}, nota: {}, ent: {}, esq: {}, pin: {}, ult: {}, temas: {}, plazos: [], marks: {}}); guarda(); render(); }
 }
 // ---------- ventanas ----------
 function modal(html, ancha) { const m = $('#mod'); m.innerHTML = '<div class="caja' + (ancha ? ' ancha' : '') + '">' + html + '</div>'; m.classList.remove('oculto'); document.body.style.overflow = 'hidden'; }
@@ -221,6 +241,7 @@ function panel(tab) {
     h += '<h2 style="margin:4px 0 8px">Mis temas</h2><p style="color:var(--gris);font-size:13px;margin:0 0 8px">Marca cómo vas en cada tema. Los de color tienen recortes de tu temario en esta app.</p>';
     todos.forEach(n => { const e = est(n), tt = st.temas[n] || {}, v = D[n] ? visibles(D[n] ? n : 0) : [], pc = D[n] && v.length ? Math.round(hechos(n) * 100 / v.length) : null;
       h += '<div class="fila-t" style="cursor:default;flex-wrap:wrap"><b' + (D[n] ? ' data-ir-tema="' + n + '" style="cursor:pointer"' : '') + '>' + esc(nomTema(n)) + '<small>' + ({estudiando: '📖 Estudiando desde el ' + fmtF(tt.desde), estudiado: '✅ Estudiado · próximo repaso ' + fmtF(tt.prox), olvidado: '😵 Lo olvidé · repasar'}[e] || 'Sin empezar') + (pc !== null ? ' · ' + pc + ' % de artículos vistos' : '') + '</small></b>'
+        + (e ? '<label style="font-size:12px;color:var(--gris);display:flex;flex-direction:column;gap:2px">' + ({estudiando: 'Empezado el', estudiado: 'Terminado el', olvidado: 'Olvidado el'}[e]) + '<input type="date" data-fecha="' + n + '" value="' + ({estudiando: tt.desde, estudiado: tt.ultimo, olvidado: tt.olvido}[e] || '') + '" max="' + hoyISO() + '"></label>' : '')
         + '<select class="f" data-set-est="' + n + '"><option value="">Sin empezar</option><option value="estudiando"' + (e === 'estudiando' ? ' selected' : '') + '>Estudiando</option><option value="estudiado"' + (e === 'estudiado' ? ' selected' : '') + '>Estudiado</option><option value="olvidado"' + (e === 'olvidado' ? ' selected' : '') + '>Lo olvidé</option></select></div>'; });
   }
   if (tabPanel === 'plazos') {
@@ -276,16 +297,27 @@ $('#mod').addEventListener('click', e => {
 $('#mod').addEventListener('change', e => {
   if (e.target.id === 'p-ex') { st.examen = e.target.value || st.examen; guarda(); panel(); }
   if (e.target.dataset.setEst !== undefined) { ponEstado(e.target.dataset.setEst, e.target.value); panel(); }
+  if (e.target.dataset.fecha !== undefined) { ponFecha(e.target.dataset.fecha, e.target.value); panel(); aviso('Fecha guardada'); }
   if (e.target.id === 'cm-a' || e.target.id === 'cm-b') comparar($('#cm-a').value, $('#cm-b').value);
 });
 // ---------- control de estudio de cada tema (como en Esquemas: estudiando / estudiado / lo olvidé) ----------
 const PASOS = [1, 3, 7, 15, 30, 60];
-function ponEstado(n, e) {
-  const t = st.temas[n] = st.temas[n] || {}, hoy = hoyISO();
+// f = fecha (AAAA-MM-DD) en la que de verdad terminaste de estudiar o repasar el tema; si no se da, hoy.
+const masDias = (iso, n) => { const d = new Date(iso + 'T00:00:00'); d.setDate(d.getDate() + n); return hoyISO(d); };
+function ponEstado(n, e, f) {
+  const t = st.temas[n] = st.temas[n] || {}, hoy = f || hoyISO();
   if (!e) { delete st.temas[n]; }
-  else if (e === 'estudiando') { t.e = 'estudiando'; t.desde = t.desde || hoy; }
-  else if (e === 'estudiado') { t.n = (t.n || 0) + (t.e === 'estudiado' ? 1 : 0); t.e = 'estudiado'; t.ultimo = hoy; const d = new Date(); d.setDate(d.getDate() + PASOS[Math.min(t.n || 0, PASOS.length - 1)]); t.prox = hoyISO(d); }
-  else if (e === 'olvidado') { t.e = 'olvidado'; t.n = 0; const d = new Date(); d.setDate(d.getDate() + 1); t.prox = hoyISO(d); }
+  else if (e === 'estudiando') { t.e = 'estudiando'; t.desde = f || t.desde || hoy; }
+  else if (e === 'estudiado') { t.n = (t.n || 0) + (t.e === 'estudiado' ? 1 : 0); t.e = 'estudiado'; t.ultimo = hoy; t.prox = masDias(hoy, PASOS[Math.min(t.n || 0, PASOS.length - 1)]); }
+  else if (e === 'olvidado') { t.e = 'olvidado'; t.n = 0; t.olvido = hoy; t.prox = masDias(hoy, 1); }
+  guarda();
+}
+// cambiar solo la fecha (sin tocar cuántas veces lo has repasado): recalcula el próximo repaso desde esa fecha
+function ponFecha(n, f) {
+  const t = st.temas[n]; if (!t || !f) return;
+  if (t.e === 'estudiado') { t.ultimo = f; t.prox = masDias(f, PASOS[Math.min(t.n || 0, PASOS.length - 1)]); }
+  else if (t.e === 'estudiando') t.desde = f;
+  else if (t.e === 'olvidado') { t.olvido = f; t.prox = masDias(f, 1); }
   guarda();
 }
 // ---------- dashboard ----------
@@ -315,7 +347,7 @@ function infoTema() {
   const co = D[t].cob || {q: 0, e: 0}, pcq = co.q ? Math.round(co.e * 100 / co.q) : 0, nv = visibles(t).length, ne = ps.length - nv, nc = Object.values(C[t] || {}).reduce((s, a) => s + a.length, 0);
   const prox = tt.prox ? ' <small>Próximo repaso: ' + fmtF(tt.prox) + ' (' + (diasHasta(tt.prox) <= 0 ? 'hoy' : 'en ' + diasHasta(tt.prox) + ' días') + ')</small>' : '';
   $('#info').innerHTML = '<div class="ttema">Tema ' + t + '.- ' + esc((NOMBRES[t - 1] || '').toUpperCase()) + '</div><h2 class="htema">' + esc(D[t].titulo.replace(/^Tema \d+ · /, '')) + ': tu temario subrayado en versión Exprés</h2>'
-    + '<div class="est"><button class="ebtn' + (tt.e === 'estudiando' ? ' on' : '') + '" data-est="estudiando">📖 Estudiando</button><button class="ebtn' + (tt.e === 'estudiado' ? ' on' : '') + '" data-est="estudiado">✅ Estudiado / repasado hoy</button><button class="ebtn' + (tt.e === 'olvidado' ? ' on' : '') + '" data-est="olvidado">😵 Lo olvidé</button>' + prox + '</div>'
+    + '<div class="est"><button class="ebtn' + (tt.e === 'estudiando' ? ' on' : '') + '" data-est="estudiando">📖 Estudiando</button><button class="ebtn' + (tt.e === 'estudiado' ? ' on' : '') + '" data-est="estudiado">✅ Estudiado / repasado hoy</button><button class="ebtn' + (tt.e === 'olvidado' ? ' on' : '') + '" data-est="olvidado">😵 Lo olvidé</button>' + (tt.e ? ' <label style="font-size:13px;color:var(--gris)">' + ({estudiando: 'Empezado el', estudiado: 'Terminado el', olvidado: 'Olvidado el'}[tt.e]) + ' <input type="date" data-fecha-t="1" value="' + ({estudiando: tt.desde, estudiado: tt.ultimo, olvidado: tt.olvido}[tt.e] || '') + '" max="' + hoyISO() + '"></label>' : '') + prox + '</div>'
     + '<div class="cnts"><span class="cnt">🟢 ' + c.ok + ' dominados</span><span class="cnt">🟡 ' + c.dud + ' a medias</span><span class="cnt">🔴 ' + c.mal + ' con fallos</span><span class="cnt">○ ' + c.nuevo + ' sin practicar</span></div>'
     + '<div class="cob"><b class="t">📊 Cobertura de este tema</b><div class="bar2"><i style="width:' + pcq + '%"></i></div><p><b>' + pcq + ' %</b> de las preguntas del banco tienen su artículo en tu temario subrayado (' + co.e + ' de ' + co.q + '). Hay <b>' + nv + '</b> artículos en el Exprés, <b>' + ne + '</b> más fuera del Exprés (solo se ven al llegar desde una pregunta) y <b>' + nc + '</b> cuadros de esquema.</p><small>Las preguntas de teoría general (historia, generaciones…) no tienen artículo y no cuentan.</small></div>'
     + '<div class="ley"><span class="mk exof">EXOF</span> pregunta de examen oficial <span class="mk ex">EX</span> sello EXAMEN <span class="mk ast">✱</span> asterisco de tu temario <span class="mk r">R1</span> ficha RECUERDA</div>';
@@ -365,7 +397,7 @@ function lista() {
       + (qs.length && !emb ? '<button class="sb" data-a="prac">🎯 Practicar (' + qs.length + ')</button>' : '')
       + (p.q1 ? '<a class="sb" target="_top" href="esquemas.html#q=' + encodeURIComponent(p.q1) + '&ex=1" title="Ver este artículo en el Exprés de Esquemas">⚡ En Esquemas</a>' : '') + '</div>'
       + (st.notaAb === k ? '<textarea class="nota" data-n="' + k + '" placeholder="Tu nota sobre este artículo…">' + esc(st.nota[k] || '') + '</textarea>' : (st.nota[k] ? '<div class="nota" style="min-height:0;white-space:pre-wrap">' + esc(st.nota[k]) + '</div>' : ''))
-      + (st.modoEsq && cu.length ? '' : '<img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">')
+      + (st.modoEsq && cu.length ? '' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + '</div>')
       + (abreEsq && cu.length ? '<div class="esqs"><div class="esq-t">🧩 Esquema de este artículo</div>' + cu.map(x => x.h).join('') + '</div>' : '') + '</div>'; });
   return h;
 }
@@ -385,6 +417,7 @@ $('#pill').onclick = e => {
 // ---------- eventos ----------
 $('#b-atras').onclick = () => { tema = null; dest = null; destAp = null; busca = ''; filtro = 'todos'; inst = 'todas'; marca = null; history.replaceState(null, '', location.pathname + location.search); render(); };
 $('#info').addEventListener('click', e => { const b = e.target.closest('[data-est]'); if (!b) return; const antes = (st.temas[tema] || {}).e; ponEstado(tema, antes === b.dataset.est && b.dataset.est !== 'estudiado' ? '' : b.dataset.est); aviso(b.dataset.est === 'estudiado' ? 'Repaso anotado' : 'Estado guardado'); infoTema(); });
+$('#info').addEventListener('change', e => { if (e.target.dataset.fechaT) { ponFecha(tema, e.target.value); infoTema(); aviso('Fecha guardada'); } });
 $('#herr').addEventListener('click', e => {
   const c = e.target.closest('[data-f],[data-i],[data-marca-quita],#b-rep,#b-vista,#b-esq'); if (!c) return;
   if (c.dataset.f) filtro = c.dataset.f; if (c.dataset.i) inst = c.dataset.i; if (c.dataset.marcaQuita) marca = null;
@@ -451,5 +484,140 @@ function entra() {
   try { history.scrollRestoration = 'manual'; } catch (e) {}
   pintaTema(); if (emb) document.body.classList.add('embed'); render(); irA(); addEventListener('load', irA); if (tema) { pill(); if (dest) { st.pin[tema] = st.pin[tema]; } }
 }
+// ---------- MARCAS: tus propios subrayados y dibujos encima de las capturas ----------
+// Las capturas son imágenes: se dibuja una capa (SVG) encima de cada una. Solo se editan tus marcas nuevas, nunca el subrayado que ya trae tu temario.
+st.marks = st.marks || {};
+const CATS = [['Destacable', '#f4a261'], ['Autoridad', '#8fcf9d'], ['Plazo/cifra', '#78bfe8'], ['Acción', '#b99be8'], ['Otro dato', '#f3dc62']];
+const TRAZOS = ['#e53935', '#1e66d0', '#1f2a24', '#1f9d55'];
+const HERR = [['sub', '🖍', 'Subrayador: arrastra sobre el texto'], ['pen', '✒️', 'Lápiz'], ['u', 'U', 'Subrayado'], ['s', 'S', 'Tachado'], ['boxA', '▭A', 'Rodear con un cuadro'], ['circA', '◯A', 'Rodear con un círculo'], ['line', '╱', 'Línea'], ['arrow', '➜', 'Flecha'], ['rect', '▭', 'Rectángulo'], ['circ', '◯', 'Círculo'], ['mkr', '🖊', 'Rotulador ancho'], ['borra', '⌫', 'Goma: toca o pasa por encima de una marca'], ['mano', '✋', 'Mover la página sin dibujar']];
+let marcando = false, herr = 'sub', color = CATS[4][1], hist = [], dib = null, popM = null;
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+const bbM = m => {
+  if (m.p) { const xs = m.p.map(a => a[0]), ys = m.p.map(a => a[1]); return [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)]; }
+  if (m.x1 !== undefined) return [Math.min(m.x1, m.x2), Math.min(m.y1, m.y2), Math.max(m.x1, m.x2), Math.max(m.y1, m.y2)];
+  return [m.x, m.y, m.x + m.w, m.y + m.h];
+};
+function mHTML(m) {
+  const c = m.c, w = m.t || 5;
+  if (m.k === 'hl') return '<rect x="' + m.x + '" y="' + m.y + '" width="' + m.w + '" height="' + m.h + '" rx="5" fill="' + c + '" fill-opacity=".55" style="mix-blend-mode:multiply"/>';
+  if (m.k === 'box') return '<rect x="' + m.x + '" y="' + m.y + '" width="' + m.w + '" height="' + m.h + '" rx="4" fill="none" stroke="' + c + '" stroke-width="' + w + '"/>';
+  if (m.k === 'circ') return '<ellipse cx="' + (m.x + m.w / 2) + '" cy="' + (m.y + m.h / 2) + '" rx="' + m.w / 2 + '" ry="' + m.h / 2 + '" fill="none" stroke="' + c + '" stroke-width="' + w + '"/>';
+  if (m.k === 'u' || m.k === 's' || m.k === 'line') return '<line x1="' + m.x1 + '" y1="' + m.y1 + '" x2="' + m.x2 + '" y2="' + m.y2 + '" stroke="' + c + '" stroke-width="' + w + '" stroke-linecap="round"/>';
+  if (m.k === 'arrow') {
+    const a = Math.atan2(m.y2 - m.y1, m.x2 - m.x1), L = 26, p1 = [m.x2 - L * Math.cos(a - .42), m.y2 - L * Math.sin(a - .42)], p2 = [m.x2 - L * Math.cos(a + .42), m.y2 - L * Math.sin(a + .42)];
+    return '<line x1="' + m.x1 + '" y1="' + m.y1 + '" x2="' + m.x2 + '" y2="' + m.y2 + '" stroke="' + c + '" stroke-width="' + w + '" stroke-linecap="round"/><polygon points="' + m.x2 + ',' + m.y2 + ' ' + p1.join(',') + ' ' + p2.join(',') + '" fill="' + c + '"/>';
+  }
+  if (m.k === 'pen') return '<polyline points="' + m.p.map(a => a.join(',')).join(' ') + '" fill="none" stroke="' + c + '" stroke-width="' + w + '" stroke-linecap="round" stroke-linejoin="round"/>';
+  if (m.k === 'mkr') return '<polyline points="' + m.p.map(a => a.join(',')).join(' ') + '" fill="none" stroke="' + c + '" stroke-opacity=".45" stroke-width="' + w + '" stroke-linecap="round" stroke-linejoin="round" style="mix-blend-mode:multiply"/>';
+  return '';
+}
+function capaMarcas(vk, wh) { const W = wh ? wh[0] : 1075, H = wh ? wh[1] : 600; return '<svg class="ov" data-mk="' + vk + '" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none">' + (st.marks[vk] || []).map(mHTML).join('') + '</svg>'; }
+function refresca(vk) { const s = document.querySelector('svg.ov[data-mk="' + vk + '"]'); if (s) s.innerHTML = (st.marks[vk] || []).map(mHTML).join(''); }
+const ptSvg = (e, s) => { const r = s.getBoundingClientRect(), v = s.viewBox.baseVal; return [(e.clientX - r.left) * v.width / r.width, (e.clientY - r.top) * v.height / r.height]; };
+function construye(h, a, b, pts) {
+  const x0 = a[0], y0 = a[1], x1 = b[0], y1 = b[1], X = Math.min(x0, x1), Y = Math.min(y0, y1), Wd = Math.abs(x1 - x0), Hd = Math.abs(y1 - y0), my = (y0 + y1) / 2;
+  const esCat = CATS.some(c => c[1] === color), trazo = esCat ? TRAZOS[0] : color;
+  if (h === 'sub') { if (Wd < 6 && Hd < 6) return null; return Hd < 30 ? {k: 'hl', c: color, x: X, y: my - 14, w: Math.max(Wd, 10), h: 28} : {k: 'hl', c: color, x: X, y: Y, w: Wd, h: Hd}; }
+  if (h === 'u') return Wd < 8 ? null : {k: 'u', c: trazo, t: 5, x1: x0, y1: my + 12, x2: x1, y2: my + 12};
+  if (h === 's') return Wd < 8 ? null : {k: 's', c: trazo, t: 4, x1: x0, y1: my, x2: x1, y2: my};
+  if (h === 'boxA' || h === 'rect') { if (Wd < 8 || Hd < 8) return null; const p = h === 'boxA' ? 5 : 0; return {k: 'box', c: trazo, t: 4, x: X - p, y: Y - p, w: Wd + 2 * p, h: Hd + 2 * p}; }
+  if (h === 'circA' || h === 'circ') { if (Wd < 8 || Hd < 8) return null; const p = h === 'circA' ? 8 : 0; return {k: 'circ', c: trazo, t: 4, x: X - p, y: Y - p, w: Wd + 2 * p, h: Hd + 2 * p}; }
+  if (h === 'line') return Wd + Hd < 10 ? null : {k: 'line', c: trazo, t: 5, x1: x0, y1: y0, x2: x1, y2: y1};
+  if (h === 'arrow') return Wd + Hd < 14 ? null : {k: 'arrow', c: trazo, t: 5, x1: x0, y1: y0, x2: x1, y2: y1};
+  if (h === 'pen') return pts.length < 2 ? null : {k: 'pen', c: trazo, t: 5, p: pts};
+  if (h === 'mkr') return pts.length < 2 ? null : {k: 'mkr', c: esCat ? color : trazo, t: 28, p: pts};
+  return null;
+}
+function golpe(vk, p) {
+  const arr = st.marks[vk] || [];
+  for (let i = arr.length - 1; i >= 0; i--) { const b = bbM(arr[i]), g = 10; if (p[0] >= b[0] - g && p[0] <= b[2] + g && p[1] >= b[1] - g && p[1] <= b[3] + g) return i; }
+  return -1;
+}
+function borra(vk, p) {
+  const arr = st.marks[vk] || [], i = golpe(vk, p); if (i < 0) return;
+  hist.push({t: 'del', vk, m: arr[i], ix: i}); arr.splice(i, 1); guarda(); refresca(vk);
+}
+$('#m').addEventListener('pointerdown', e => {
+  const s = e.target.closest && e.target.closest('svg.ov'); if (!marcando || !s || herr === 'mano') return;
+  e.preventDefault(); cierraPop(); const vk = s.dataset.mk, a = ptSvg(e, s); s.setPointerCapture(e.pointerId);
+  if (herr === 'borra') { dib = {s, vk, borra: true}; borra(vk, a); return; }
+  dib = {s, vk, a, b: a, pts: [a], mov: false}; dib.tmp = document.createElementNS('http://www.w3.org/2000/svg', 'g'); s.appendChild(dib.tmp);
+});
+$('#m').addEventListener('pointermove', e => {
+  if (!dib) return; const p = ptSvg(e, dib.s);
+  if (dib.borra) return borra(dib.vk, p);
+  dib.b = p; const u = dib.pts[dib.pts.length - 1]; if (Math.hypot(p[0] - u[0], p[1] - u[1]) > 3) dib.pts.push(p);
+  if (Math.hypot(p[0] - dib.a[0], p[1] - dib.a[1]) > 7) dib.mov = true;
+  const m = dib.mov ? construye(herr, dib.a, dib.b, dib.pts) : null; dib.tmp.innerHTML = m ? mHTML(m) : '';
+});
+const finDib = e => {
+  if (!dib) return; const d = dib; dib = null; if (d.borra) return; d.tmp.remove();
+  if (!d.mov) { const i = golpe(d.vk, d.a); if (i >= 0) abrePop(d.vk, i, e.clientX, e.clientY); return; }   // un toque sobre una marca tuya: «Cambiar este subrayado»
+  const m = construye(herr, d.a, d.b, d.pts); if (!m) return; m.i = uid();
+  (st.marks[d.vk] = st.marks[d.vk] || []).push(m); hist.push({t: 'add', vk: d.vk, i: m.i}); guarda(); refresca(d.vk);
+};
+$('#m').addEventListener('pointerup', finDib); $('#m').addEventListener('pointercancel', () => { if (dib) { if (dib.tmp) dib.tmp.remove(); dib = null; } });
+function deshaz() {
+  const h = hist.pop(); if (!h) return aviso('No hay nada que deshacer'); const arr = st.marks[h.vk] = st.marks[h.vk] || [];
+  if (h.t === 'add') { const i = arr.findIndex(m => m.i === h.i); if (i >= 0) arr.splice(i, 1); }
+  if (h.t === 'del') arr.splice(Math.min(h.ix, arr.length), 0, h.m);
+  if (h.t === 'chg') { const i = arr.findIndex(m => m.i === h.i); if (i >= 0) arr[i] = h.prev; }
+  guarda(); refresca(h.vk);
+}
+// ---- menú «Cambiar este subrayado» (solo para tus marcas) ----
+function cierraPop() { $('#pop').classList.add('oculto'); popM = null; }
+function abrePop(vk, i, cx, cy) {
+  popM = {vk, i}; const m = st.marks[vk][i];
+  const cats = CATS.map((c, n) => '<button class="pc' + (m.k === 'hl' && m.c === c[1] ? ' on' : '') + '" style="background:' + c[1] + '" data-pa="c' + n + '">' + c[0] + '</button>').join('');
+  const otros = [['clave', '<span style="color:#d32f2f;text-decoration:underline;text-decoration-thickness:3px">Clave (subrayado)</span>'], ['sub', '<span style="text-decoration:underline">Subrayado</span>'], ['box', '▭ Cuadrado'], ['circ', '◯ Círculo']].map(o => '<button class="pc" data-pa="' + o[0] + '">' + o[1] + '</button>').join('');
+  const fl = [['ne', '↗ Flecha'], ['se', '↘ Flecha'], ['sw', '↙ Flecha'], ['nw', '↖ Flecha']].map(o => '<button class="pc" data-pa="' + o[0] + '">' + o[1] + '</button>').join('');
+  const p = $('#pop'); p.innerHTML = '<h5>Cambiar este subrayado</h5><div class="pcs">' + cats + '</div><div class="pcs">' + otros + '</div><div class="pcs">' + fl + '</div><button class="pb rojo" data-pa="del">Quitar este subrayado</button><button class="pb" data-pa="undo">↶ Deshacer el último cambio</button>';
+  p.classList.remove('oculto'); const w = p.offsetWidth, h = p.offsetHeight;
+  p.style.left = Math.max(8, Math.min(cx - w / 2, innerWidth - w - 8)) + 'px'; p.style.top = Math.max(8, Math.min(cy + 14, innerHeight - h - 8)) + 'px';
+}
+function cambia(tipo) {
+  if (!popM) return; const arr = st.marks[popM.vk], m = arr[popM.i]; if (!m) return; const b = bbM(m), prev = JSON.parse(JSON.stringify(m));
+  let X = b[0], Y = b[1], W = Math.max(b[2] - b[0], 14), H = b[3] - b[1]; if (H < 26) { Y = (b[1] + b[3]) / 2 - 14; H = 28; }
+  let n;
+  if (/^c\d$/.test(tipo)) n = {k: 'hl', c: CATS[+tipo[1]][1], x: X, y: Y, w: W, h: H};
+  else if (tipo === 'clave') n = {k: 'u', c: '#d32f2f', t: 6, x1: X, y1: Y + H - 3, x2: X + W, y2: Y + H - 3};
+  else if (tipo === 'sub') n = {k: 'u', c: '#1f2a24', t: 3.5, x1: X, y1: Y + H - 3, x2: X + W, y2: Y + H - 3};
+  else if (tipo === 'box') n = {k: 'box', c: TRAZOS[0], t: 4, x: X, y: Y, w: W, h: H};
+  else if (tipo === 'circ') n = {k: 'circ', c: TRAZOS[0], t: 4, x: X, y: Y, w: W, h: H};
+  else { const x0 = X, x1 = X + W, y0 = Y, y1 = Y + H; const par = {ne: [x0, y1, x1, y0], se: [x0, y0, x1, y1], sw: [x1, y0, x0, y1], nw: [x1, y1, x0, y0]}[tipo]; n = {k: 'arrow', c: TRAZOS[0], t: 5, x1: par[0], y1: par[1], x2: par[2], y2: par[3]}; }
+  n.i = m.i; hist.push({t: 'chg', vk: popM.vk, i: m.i, prev}); arr[popM.i] = n; guarda(); refresca(popM.vk); cierraPop();
+}
+$('#pop').addEventListener('click', e => {
+  const a = e.target.dataset.pa; if (!a) return;
+  if (a === 'del') { const arr = st.marks[popM.vk], i = popM.i; hist.push({t: 'del', vk: popM.vk, m: arr[i], ix: i}); arr.splice(i, 1); guarda(); refresca(popM.vk); return cierraPop(); }
+  if (a === 'undo') { cierraPop(); return deshaz(); }
+  cambia(a);
+});
+// ---- barra de herramientas ----
+function pintaTB() {
+  $('#tb').innerHTML = HERR.map(h => '<button data-h="' + h[0] + '" title="' + h[2] + '" class="' + (herr === h[0] || (h[0] === 'mano' && document.body.classList.contains('mano')) ? 'on' : '') + '">' + h[1] + '</button>').join('')
+    + '<hr><button data-h="color" title="Color"><span class="col" style="background:' + color + '"></span></button><button data-h="undo" title="Deshacer">↶</button><button data-h="trash" title="Borrar mis marcas de este tema">🗑</button><button data-h="x" title="Salir de Marcas">✕</button>';
+}
+function salirMarcas() { marcando = false; document.body.classList.remove('marcando', 'mano'); $('#b-marcas').classList.remove('on'); $('#tb').classList.add('oculto'); cierraPop(); }
+$('#b-marcas').onclick = () => {
+  if (marcando) return salirMarcas();
+  if (emb) return;
+  marcando = true; document.body.classList.add('marcando'); $('#b-marcas').classList.add('on'); $('#tb').classList.remove('oculto'); pintaTB();
+  if (tema === null) aviso('Abre un tema para subrayar sobre sus artículos'); else aviso('Marcas: arrastra sobre el texto. Toca una marca tuya para cambiarla');
+};
+$('#tb').addEventListener('click', e => {
+  const b = e.target.closest('[data-h]'); if (!b) return; const h = b.dataset.h; cierraPop();
+  if (h === 'x') return salirMarcas();
+  if (h === 'undo') return deshaz();
+  if (h === 'trash') { if (tema && confirm('¿Borrar TODAS tus marcas de este tema? (el subrayado que ya trae tu temario no se toca)')) { Object.keys(st.marks).filter(k => k.startsWith(tema + '/')).forEach(k => { delete st.marks[k]; refresca(k); }); guarda(); hist = []; aviso('Marcas borradas'); } return; }
+  if (h === 'color') {
+    const p = $('#pop'); p.innerHTML = '<h5>Color</h5><div class="pcs">' + CATS.map(c => '<button class="pc' + (color === c[1] ? ' on' : '') + '" style="background:' + c[1] + '" data-col="' + c[1] + '">' + c[0] + '</button>').join('') + '</div><div class="pcs">' + TRAZOS.map(c => '<button class="pc' + (color === c ? ' on' : '') + '" style="background:' + c + ';color:#fff;min-width:44px" data-col="' + c + '">●</button>').join('') + '</div>';
+    p.classList.remove('oculto'); const r = b.getBoundingClientRect(); p.style.left = Math.min(r.right + 10, innerWidth - p.offsetWidth - 8) + 'px'; p.style.top = Math.max(8, Math.min(r.top, innerHeight - p.offsetHeight - 8)) + 'px'; popM = null; return;
+  }
+  if (h === 'mano') document.body.classList.toggle('mano'); else { herr = h; document.body.classList.remove('mano'); }
+  pintaTB();
+});
+$('#pop').addEventListener('click', e => { const c = e.target.dataset.col; if (c) { color = c; cierraPop(); pintaTB(); } });
+addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#pop').classList.contains('oculto')) cierraPop(); });
 entra();
 </script></body></html>
