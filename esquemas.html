@@ -5982,7 +5982,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     if(this===localStorage&&(k===K1||k===K2||k===KF||k===KR||k===KU||k===KX||k===KS||k===KP)&&!ignorar){
       const o=actual(), ts=rd(TS); let cambio=false;
       new Set([...Object.keys(o),...Object.keys(snap)]).forEach(id=>{ const s=JSON.stringify(o[id]||VACIO); if(snap[id]!==s){ snap[id]=s; const c=sinU(o[id]); if(snapC[id]!==c){ snapC[id]=c; ts[id]=Date.now(); cambio=true; } } });
-      if(cambio){ wr(TS,ts); if(k!==KU){ origSet.call(localStorage,KN,String((+(localStorage.getItem(KN)||0)||0)+1)); window.esqPendientes(); } }   // no se sube ya: se cuenta y se espera al botón / 10 min / salir
+      if(cambio){ wr(TS,ts); if(k!==KU){ origSet.call(localStorage,KN,String((+(localStorage.getItem(KN)||0)||0)+1)); window.esqPendientes(); if(hayCfg()) programar(25000); } }   // 29/10: se sube sola 25 s después de tu último subrayado (la mezcla ya suma, no pisa) · antes: no se sube ya: se cuenta y se espera al botón / 10 min / salir
     }
   };
 
@@ -5990,7 +5990,8 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   /* sola: cada 10 minutos si hay algo pendiente, y al salir de la app (pasar a otra app, bloquear o cerrar la pestaña) */
   /* (ya no hay sincronización automática cada 10 minutos: solo con el botón, al salir y al abrir para bajar lo nuevo) */
   const alSalir=()=>{ if(nPend()>0&&!ocupado) sincronizar(); };
-  document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible'&&Date.now()-ultimaVez>=DIEZ&&!nPend()) programar(800); });   // al volver tras un rato: solo BAJAR lo nuevo (si hay cambios tuyos pendientes no se toca nada: se sincroniza con el botón)
+  document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='visible'){ if(hayCfg()) programar(800); } else if(nPend()>0&&!ocupado) sincronizar(); });   // al volver a la app: baja y sube lo pendiente; al salir: sube
+  setInterval(()=>{ if(document.visibilityState==='visible'&&hayCfg()&&!ocupado&&!agendado) sincronizar(); },3*60*1000);   // y cada 3 min con la app abierta: así lo subrayado en el móvil aparece solo en el PC   // al volver tras un rato: solo BAJAR lo nuevo (si hay cambios tuyos pendientes no se toca nada: se sincroniza con el botón)
   addEventListener('pagehide',alSalir);
   addEventListener('online',()=>{ if(nPend()>0) programar(1500); });
   let n=0; (function init(){ if(!document.getElementById('btn-marcas')&&n++<40) return setTimeout(init,100); estado(hayCfg()?'☁ …':'☁ sin sincronizar',hayCfg()?'':'mal',''); if(hayCfg()) programar(2500); })();   // al abrir: bajar lo nuevo de los otros dispositivos (sin recargar)
