@@ -7,6 +7,7 @@
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px system-ui,sans-serif}
 header{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 16px;border-bottom:1px solid #8884;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 h1{font-size:17px;margin:0;flex:1 1 200px}select,button{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid #8886;background:var(--card);color:var(--tx)}
+body.embed header{display:none}.diana{outline:3px solid var(--ac)}
 main{max-width:860px;margin:0 auto;padding:12px 16px 60px}
 .p{background:var(--card);border-radius:10px;margin:0 0 16px;box-shadow:0 1px 4px #0003;overflow:hidden}
 .p h2{margin:0;padding:8px 12px;font-size:14px;color:var(--ac);display:flex;justify-content:space-between;gap:8px}
@@ -27,4 +28,9 @@ function pinta(){const t=D[sel.value];document.getElementById('t').textContent=t
   d.querySelector('button').onclick=()=>{vis[k]=!vis[k];try{localStorage.setItem('exsub-vis',JSON.stringify(vis))}catch(e){}pinta()};m.appendChild(d)});
  document.getElementById('c').textContent=t.piezas.filter(p=>vis[sel.value+'/'+p.id]).length+'/'+t.piezas.length}
 sel.onchange=pinta;pinta();
+// Enlace desde el test: #q=7-120 -> salta al recorte del artículo que contiene esa pregunta
+(function(){const m=location.hash.match(/[#&]q=([^&]+)/);if(!m)return;const q=decodeURIComponent(m[1]),t=parseInt(q,10);
+ if(!D[t]||!D[t].preg[q])return;sel.value=t;pinta();const i=D[t].piezas.findIndex(p=>p.id===D[t].preg[q]),el=m2=document.querySelectorAll(".p")[i];
+ if(el){el.classList.add("diana");el.scrollIntoView();}})();
+if(/[?&]embed=1/.test(location.search))document.body.classList.add("embed");
 </script></body></html>
