@@ -5783,6 +5783,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
   /* Por tema se sincronizan: marcas (m), categorías de color (c), fichas dominada/repasar (f), repaso espaciado (r) y la última ficha vista (u) */
   const KF='esquemas-fichas', KR='esquemas-repaso', KU='esquemas-ultima', KX='esquemas-resumen-v1', KS='esquemas-sellos-v1', KP='esquemas-expres-extra';
   const VACIO={m:null,c:null,f:null,r:null,u:null,x:null,s:null,p:null};
+  const KY='esquemas-sync-base';   // por tema: marca de tiempo de la última vez que local y nube estuvieron iguales (para detectar cambios en AMBOS lados)
   const KN='esquemas-sync-n', DIEZ=10*60*1000;          // nº de cambios sin sincronizar · cada cuánto se sincroniza sola
   const xDe=(x,id)=>(x[id]&&x[id].length)?x[id]:null;   // artículos marcados con R (resumen)
   const idDeFicha=k=>{ const i=k.indexOf('|'); return i<0?k:k.slice(0,i); };
@@ -5793,7 +5794,26 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     new Set([...Object.keys(x),...Object.keys(a),...Object.keys(b),...Object.keys(r),...Object.keys(u),...Object.keys(p),...Object.keys(f).map(idDeFicha),...Object.keys(sl).map(idDeFicha)]).forEach(id=>{ o[id]={m:a[id]||null,c:b[id]||null,f:fichasDe(id),r:r[id]||null,u:u[id]||null,x:xDe(x,id),s:sellosDe(id),p:xDe(p,id)}; });
     return o;
   }
-  let snap={}; (function(){ const o=actual(); Object.keys(o).forEach(id=>snap[id]=JSON.stringify(o[id])); })();
+  const sinU=v=>JSON.stringify(Object.assign({},v||VACIO,{u:null}));   // la «última ficha vista» no cuenta como cambio de contenido (si no, el PC se creía más nuevo que el móvil y le machacaba el subrayado)
+  const cont=v=>JSON.stringify([v.m||null,v.c||null,v.f||null,v.x||null,v.s||null,v.p||null]);
+  const hayCont=v=>!!(v&&((v.m&&((v.m.t&&v.m.t.length)||(v.m.f&&v.m.f.length)))||(v.c&&(Object.keys(v.c.e||{}).length||(v.c.a||[]).length))||v.f||v.r||v.x||v.s||v.p));
+  const uni=(a,b)=>{ const s=new Set(), o=[]; (a||[]).concat(b||[]).forEach(x=>{ const k=JSON.stringify(x); if(!s.has(k)){ s.add(k); o.push(x); } }); return o; };
+  /* mezcla de un tema cambiado en los DOS sitios: se suman los subrayados (nunca se pierde trabajo de ninguno) */
+  function unirTema(l,r){
+    const o=JSON.parse(JSON.stringify(l)), rm=r.m||{}, lm=o.m||{t:[],f:[],n:0,v:1}; o.m=lm;
+    let n=Math.max(+lm.n||0,+rm.n||0,...(lm.t||[]).map(x=>+x.n||0),...(lm.f||[]).map(x=>+x.n||0),...(rm.t||[]).map(x=>+x.n||0),...(rm.f||[]).map(x=>+x.n||0));
+    ['t','f'].forEach(k=>{
+      const ya=new Set((lm[k]||[]).map(x=>{ const y=Object.assign({},x); delete y.n; return JSON.stringify(y); })); lm[k]=lm[k]||[];
+      (rm[k]||[]).forEach(x=>{ const y=Object.assign({},x); delete y.n; const kk=JSON.stringify(y); if(!ya.has(kk)){ ya.add(kk); y.n=++n; lm[k].push(y); } });
+    });
+    lm.n=n;
+    const lc=o.c||{e:{},a:[]}, rc=r.c||{}; o.c=Object.assign({},rc,lc,{e:Object.assign({},rc.e||{},lc.e||{}),a:uni(lc.a,rc.a)});
+    o.f=(o.f||r.f)?Object.assign({},r.f||{},o.f||{}):null; o.s=(o.s||r.s)?Object.assign({},r.s||{},o.s||{}):null;
+    o.x=uni(o.x,r.x); if(!o.x.length) o.x=null; o.p=uni(o.p,r.p); if(!o.p.length) o.p=null;
+    if(!o.r) o.r=r.r||null; if(!o.u) o.u=r.u||null;
+    return o;
+  }
+  let snap={}, snapC={}; (function(){ const o=actual(); Object.keys(o).forEach(id=>{ snap[id]=JSON.stringify(o[id]); snapC[id]=sinU(o[id]); }); })();
   (function(){ const ts=rd(TS), o=actual(); let c=false; Object.keys(o).forEach(id=>{ const v=o[id]; const hay=(v.m&&((v.m.t&&v.m.t.length)||(v.m.f&&v.m.f.length)))||(v.c&&(Object.keys(v.c.e||{}).length||(v.c.a||[]).length))||v.f||v.r||v.u||v.x; if(hay&&!ts[id]){ ts[id]=1; c=true; } }); if(c) wr(TS,ts); })();
   let ultimoError='', ignorar=false, pendiente=false, ocupado=false, timer=0, agendado=false, ultimaVez=0;
   /* solo cuenta los cambios sin subir (KN). Antes se sumaban también las órdenes de copia Exprés↔completo que esperan a que se abra el otro esquema: no se vaciaban y el contador se quedaba en «2» aunque estuviera sincronizado */
@@ -5833,10 +5853,42 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
      +'<input id="sp-tok" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="'+(c.token?"guardado: …"+esc(c.token.slice(-4)):"pega aquí el token")+'" style="width:100%;box-sizing:border-box;font-size:16px;padding:8px;margin:4px 0 12px;border:1px solid #999;border-radius:8px">'
      +'<div style="display:flex;gap:8px;flex-wrap:wrap"><button id="sp-ok" style="flex:1;padding:10px;border-radius:10px;border:0;background:#1c4d3c;color:#fff;font-weight:700;font-size:15px">Guardar y sincronizar</button>'
      +'<button id="sp-no" style="padding:10px 14px;border-radius:10px;border:1px solid #999;background:transparent;color:inherit;font-size:15px">Cerrar</button></div>'
+     +'<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><button id="sp-exp" style="flex:1;padding:9px;border-radius:10px;border:1px solid #999;background:transparent;color:inherit;font-size:14px">⬇ Guardar mi subrayado en un archivo</button>'
+     +'<button id="sp-imp" style="flex:1;padding:9px;border-radius:10px;border:1px solid #999;background:transparent;color:inherit;font-size:14px">⬆ Cargar subrayado de un archivo</button></div>'
+     +'<div style="font-size:11px;opacity:.7;margin-top:6px">Para pasar el subrayado del temario OFFLINE al online: aquí en el offline «Guardar», y en el online «Cargar» (se SUMA a lo que ya tengas, sin borrar nada; entra en el temario completo y en el Exprés). Luego pulsa ☁ Sincronizar.</div>'
      +'<div style="font-size:11px;opacity:.6;margin-top:10px">'+VER_SYNC+'</div></div>';
     document.body.appendChild(ov);
     ov.addEventListener("click",e=>{ if(e.target===ov) ov.remove(); });
     ov.querySelector("#sp-no").onclick=()=>ov.remove();
+    ov.querySelector("#sp-exp").onclick=()=>{
+      const o=actual(), ts=rd(TS), d={}; Object.keys(o).forEach(id=>{ if(hayCont(o[id])) d[id]=Object.assign({ts:ts[id]||Date.now()},o[id]); });
+      const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([JSON.stringify({esquemasSubrayado:1,datos:d})],{type:"application/json"}));
+      a.download="mi-subrayado-"+new Date().toISOString().slice(0,10)+".json"; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); },3000);
+      aviso("⬇ Guardados "+Object.keys(d).length+" temas con subrayado");
+    };
+    ov.querySelector("#sp-imp").onclick=()=>{
+      const inp=document.createElement("input"); inp.type="file"; inp.accept=".json,application/json";
+      inp.onchange=()=>{ const fl=inp.files&&inp.files[0]; if(!fl) return; const rdr=new FileReader(); rdr.onload=()=>{
+        let j; try{ j=JSON.parse(rdr.result); }catch(e){ alert("Ese archivo no es válido"); return; }
+        const d=(j&&j.datos)||null; if(!d){ alert("Ese archivo no es una copia de subrayado"); return; }
+        const ts=rd(TS), cambiados=new Set(); let n=0;
+        Object.keys(d).forEach(id=>{
+          const r=d[id], l=actual()[id]; if(!hayCont(r)) return;
+          const u=hayCont(l)?unirTema(l,r):r;
+          if(hayCont(l)&&cont(l)===cont(u)) return;
+          const a=rd(K1), b=rd(K2), fi=rd(KF), xr=rd(KX), se=rd(KS), xp=rd(KP);
+          if(u.m) a[id]=u.m; if(u.c) b[id]=u.c; if(u.x) xr[id]=u.x; if(u.p) xp[id]=u.p;
+          Object.keys(fi).forEach(k=>{ if(k.indexOf(id+'|')===0) delete fi[k]; }); if(u.f) Object.keys(u.f).forEach(h=>{ fi[id+'|'+h]=u.f[h]; });
+          Object.keys(se).forEach(k=>{ if(k.indexOf(id+'|')===0) delete se[k]; }); if(u.s) Object.keys(u.s).forEach(h=>{ se[id+'|'+h]=u.s[h]; });
+          ignorar=true; wr(K1,a); wr(K2,b); wr(KF,fi); wr(KX,xr); wr(KS,se); wr(KP,xp); ignorar=false;
+          ts[id]=Date.now(); snap[id]=JSON.stringify(actual()[id]||VACIO); snapC[id]=sinU(actual()[id]); cambiados.add(id); n++;
+        });
+        wr(TS,ts);
+        if(n){ origSet.call(localStorage,KN,String((+(localStorage.getItem(KN)||0)||0)+n)); window.esqPendientes(); if(window.esqAplicarRemoto) try{ window.esqAplicarRemoto([...cambiados]); }catch(e){ console.error(e); } }
+        ov.remove(); aviso(n?("⬆ Subrayado cargado en "+n+" temas · pulsa ☁ Sincronizar para subirlo a la nube"):"Nada nuevo que cargar (ya estaba todo)");
+      }; rdr.readAsText(fl); };
+      inp.click();
+    };
     ov.querySelector("#sp-ok").onclick=()=>{
       const n=cfg(); const repo=ov.querySelector("#sp-repo").value.trim().replace(/^https?:\/\/github\.com\//,"").replace(/\.git$/,"").replace(/\/+$/,"");
       const tok=ov.querySelector("#sp-tok").value.replace(/[\s"'`]/g,"");
@@ -5872,8 +5924,19 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
       for(let intento=0;intento<2;intento++){
         const rem=await leer(), ts=rd(TS), loc=actual();
         let aplicado=false, subir=false; const out=Object.assign({},rem.datos);
-        Object.keys(rem.datos).forEach(id=>{                       // lo más nuevo del remoto -> local
-          const r=rem.datos[id]; if((r.ts||0)>(ts[id]||0)){
+        const sy=rd(KY);
+        Object.keys(rem.datos).forEach(id=>{                       // tema cambiado en los DOS sitios desde la última sincronización -> se SUMAN los subrayados
+          const r=rem.datos[id], l0=loc[id], base=sy[id]||0;
+          if(l0&&hayCont(l0)&&(ts[id]||0)>base&&(r.ts||0)>base&&(r.ts||0)!==(ts[id]||0)&&cont(l0)!==cont(r)){
+            const u=unirTema(l0,r), a=rd(K1), b=rd(K2), fi=rd(KF), xr=rd(KX), se=rd(KS), xp=rd(KP);
+            if(u.m) a[id]=u.m; if(u.c) b[id]=u.c; if(u.x) xr[id]=u.x; else delete xr[id]; if(u.p) xp[id]=u.p; else delete xp[id];
+            Object.keys(fi).forEach(k=>{ if(k.indexOf(id+'|')===0) delete fi[k]; }); if(u.f) Object.keys(u.f).forEach(h=>{ fi[id+'|'+h]=u.f[h]; });
+            Object.keys(se).forEach(k=>{ if(k.indexOf(id+'|')===0) delete se[k]; }); if(u.s) Object.keys(u.s).forEach(h=>{ se[id+'|'+h]=u.s[h]; });
+            ignorar=true; wr(K1,a); wr(K2,b); wr(KF,fi); wr(KX,xr); wr(KS,se); wr(KP,xp); ignorar=false;
+            ts[id]=Math.max(Date.now(),(r.ts||0)+1); snap[id]=JSON.stringify(actual()[id]||VACIO); snapC[id]=sinU(actual()[id]); aplicado=true; cambiados.add(id);
+            return;
+          }
+          if((r.ts||0)>(ts[id]||0)){
             const a=rd(K1), b=rd(K2), rp=rd(KR), ul=rd(KU), fi=rd(KF), xr=rd(KX), se=rd(KS);
             if(r.m) a[id]=r.m; else delete a[id]; if(r.c) b[id]=r.c; else delete b[id];
             if('r' in r){ if(r.r) rp[id]=r.r; else delete rp[id]; }         // (una copia antigua sin estos campos no borra lo local)
@@ -5883,20 +5946,23 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
             if('s' in r){ Object.keys(se).forEach(k=>{ if(k.indexOf(id+'|')===0) delete se[k]; }); if(r.s) Object.keys(r.s).forEach(h=>{ se[id+'|'+h]=r.s[h]; }); }
             const xp=rd(KP); if('p' in r){ if(r.p) xp[id]=r.p; else delete xp[id]; }
             const antes=JSON.stringify(loc[id]||VACIO);
-            ignorar=true; wr(KS,se); wr(K1,a); wr(K2,b); wr(KR,rp); wr(KU,ul); wr(KF,fi); wr(KX,xr); wr(KP,xp); ignorar=false; ts[id]=r.ts; aplicado=true; snap[id]=JSON.stringify(actual()[id]||VACIO);
+            ignorar=true; wr(KS,se); wr(K1,a); wr(K2,b); wr(KR,rp); wr(KU,ul); wr(KF,fi); wr(KX,xr); wr(KP,xp); ignorar=false; ts[id]=r.ts; aplicado=true; snap[id]=JSON.stringify(actual()[id]||VACIO); snapC[id]=sinU(actual()[id]);
             const l=actual()[id]||VACIO, lo=JSON.parse(antes); if(JSON.stringify([l.m,l.c,l.x,l.s,l.p])!==JSON.stringify([lo.m,lo.c,lo.x,lo.s,lo.p])) cambiados.add(id);   // la «última ficha vista» sola no obliga a volver a montar
           }
         });
+        const loc2=actual();
         Object.keys(ts).forEach(id=>{                              // lo más nuevo del local -> remoto
-          const r=rem.datos[id]; if(!r||ts[id]>(r.ts||0)){ const l=loc[id]||VACIO; out[id]={ts:ts[id],m:l.m,c:l.c,f:l.f,r:l.r,u:l.u,x:l.x,s:l.s,p:l.p}; subir=true; }
+          const r=rem.datos[id]; if(!r||ts[id]>(r.ts||0)){ const l=loc2[id]||VACIO; out[id]={ts:ts[id],m:l.m,c:l.c,f:l.f,r:l.r,u:l.u,x:l.x,s:l.s,p:l.p}; subir=true; }
         });
         wr(TS,ts);
+        const subido=()=>{ const y=rd(KY); Object.keys(ts).forEach(id=>{ y[id]=ts[id]; }); wr(KY,y); };
         if(subir){
           const body={message:'Marcas de esquemas '+new Date().toISOString(),content:b64(JSON.stringify(out))}; if(rem.sha) body.sha=rem.sha;
           const r=await api({method:'PUT',body:JSON.stringify(body)});
           if(r.status===409||r.status===422){ if(intento===0) continue; }
           if(!r.ok) throw new Error('GitHub respondió '+r.status+(r.status===401?' (token no válido)':r.status===404?' (repositorio o token incorrectos)':''));
         }
+        subido();
         break;
       }
       /* lo bajado de otro dispositivo se aplica aquí mismo: se vuelve a montar solo el tema afectado (sin recargar la página) */
@@ -5915,7 +5981,7 @@ body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.
     origSet.call(this,k,v);
     if(this===localStorage&&(k===K1||k===K2||k===KF||k===KR||k===KU||k===KX||k===KS||k===KP)&&!ignorar){
       const o=actual(), ts=rd(TS); let cambio=false;
-      new Set([...Object.keys(o),...Object.keys(snap)]).forEach(id=>{ const s=JSON.stringify(o[id]||VACIO); if(snap[id]!==s){ snap[id]=s; ts[id]=Date.now(); cambio=true; } });
+      new Set([...Object.keys(o),...Object.keys(snap)]).forEach(id=>{ const s=JSON.stringify(o[id]||VACIO); if(snap[id]!==s){ snap[id]=s; const c=sinU(o[id]); if(snapC[id]!==c){ snapC[id]=c; ts[id]=Date.now(); cambio=true; } } });
       if(cambio){ wr(TS,ts); if(k!==KU){ origSet.call(localStorage,KN,String((+(localStorage.getItem(KN)||0)||0)+1)); window.esqPendientes(); } }   // no se sube ya: se cuenta y se espera al botón / 10 min / salir
     }
   };
