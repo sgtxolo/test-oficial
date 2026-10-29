@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exprés subrayado</title>
+<style>
+:root{--bg:#f4f1ea;--tx:#1d1d1b;--card:#fff;--ac:#1f6f4a;--mut:#6b6b66}
+@media(prefers-color-scheme:dark){:root{--bg:#161616;--tx:#eee;--card:#222;--ac:#5fc79a;--mut:#999}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px system-ui,sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 16px;border-bottom:1px solid #8884;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+h1{font-size:17px;margin:0;flex:1 1 200px}select,button{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid #8886;background:var(--card);color:var(--tx)}
+main{max-width:860px;margin:0 auto;padding:12px 16px 60px}
+.p{background:var(--card);border-radius:10px;margin:0 0 16px;box-shadow:0 1px 4px #0003;overflow:hidden}
+.p h2{margin:0;padding:8px 12px;font-size:14px;color:var(--ac);display:flex;justify-content:space-between;gap:8px}
+.p img{width:100%;display:block;height:auto}
+.vis{opacity:.45}
+.n{color:var(--mut);font-size:13px}
+</style></head><body>
+<header><h1 id="t">Exprés con tu subrayado</h1><select id="sel"></select><span class="n" id="c"></span></header>
+<main id="m"></main>
+<script src="expres-subrayado/datos-t7.js"></script>
+<script>
+const D=window.EXSUB,sel=document.getElementById('sel'),m=document.getElementById('m');
+let vis={};try{vis=JSON.parse(localStorage.getItem('exsub-vis')||'{}')}catch(e){}
+Object.keys(D).forEach(k=>sel.add(new Option('Tema '+k,k)));
+function pinta(){const t=D[sel.value];document.getElementById('t').textContent=t.titulo;m.innerHTML='';
+ t.piezas.forEach(p=>{const k=sel.value+'/'+p.id,d=document.createElement('div');d.className='p'+(vis[k]?' vis':'');
+  d.innerHTML='<h2><span>'+p.nombre+'</span><button>'+(vis[k]?'↺':'✓ visto')+'</button></h2><img loading="lazy" src="expres-subrayado/'+t.dir+p.img+'" alt="'+p.nombre+'">';
+  d.querySelector('button').onclick=()=>{vis[k]=!vis[k];try{localStorage.setItem('exsub-vis',JSON.stringify(vis))}catch(e){}pinta()};m.appendChild(d)});
+ document.getElementById('c').textContent=t.piezas.filter(p=>vis[sel.value+'/'+p.id]).length+'/'+t.piezas.length}
+sel.onchange=pinta;pinta();
+</script></body></html>
