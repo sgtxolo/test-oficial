@@ -1530,7 +1530,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
         if (id && S){
           let pz = null;
           {   // artículo citado en la explicación («art. N de …»); si no hay recorte, el del Exprés
-            const x = String(e.explicacion || '').replace(/<[^>]+>/g, '').match(/art(?:ículo|\.)\s*(\d+)(?:\.\d+)?\s+de\s+(?:la\s+)?(LOTC|LO 2\/1979|LO 1\/1982)/i);
+            const x = String(e.explicacion || '').replace(/<[^>]+>/g, '').match(/art(?:ículo|\.)\s*(\d+)[\w.]*(?:\s*\([^)]*\))?\s+de\s+(?:la\s+)?(LOTC|LO 2\/1979|LO 1\/1982)/i);
             if (x){ const c = (x[2].toUpperCase() === 'LO 1/1982' ? 'c-' : 'a-') + x[1]; if (S.piezas.some(p => p.id === c)) pz = c; }
           }
           if (!pz) pz = S.preg[id];
