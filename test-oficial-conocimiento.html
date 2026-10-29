@@ -1480,13 +1480,14 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
     const m = location.hash.match(/repasar=([^&]+)/); if (!m) return;
     const ids = decodeURIComponent(m[1]).split(',').filter(Boolean);
     const mx = location.hash.match(/[#&]ex=([12])(?:&|$)/), ex = mx ? '&ex=' + mx[1] : '';   // se llegó desde el ⚡ Exprés (1) o 🎯 Para examen (2): se vuelve a él
+    const mv = location.hash.match(/[#&]v=([^&]+)/), hashV = mv ? decodeURIComponent(mv[1]) : '';   // se llegó desde el temario subrayado: se vuelve a él (no a esquemas)
     try { history.replaceState(null, '', location.pathname + location.search); } catch(e){}
     const qs = ids.map(buscarPregunta).filter(Boolean);
     if (!qs.length) return;
-    setTimeout(() => { try { iniciarTest(qs, true); mostrarVolverEsquemas('esquemas.html#q=' + encodeURIComponent(qs[0].id) + ex); } catch(e){ console.error(e); } }, 350);
+    setTimeout(() => { try { iniciarTest(qs, true); mostrarVolverEsquemas(hashV || ('esquemas.html#q=' + encodeURIComponent(qs[0].id) + ex), hashV ? '← Volver al temario subrayado' : ''); } catch(e){ console.error(e); } }, 350);
   }
   // Franja «← Volver a esquemas» sobre el test (solo cuando se llega desde un esquema; útil en la PWA del iPhone, sin botón atrás)
-  function mostrarVolverEsquemas(destino){
+  function mostrarVolverEsquemas(destino, etiqueta){
     const modal = document.getElementById('modal-test'); if (!modal) return;
     let barra = document.getElementById('barra-volver-esq');
     if (!barra){
@@ -1495,6 +1496,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
       modal.insertBefore(barra, modal.firstChild);
       new MutationObserver(() => { if (modal.classList.contains('hidden')) barra.style.display = 'none'; }).observe(modal, {attributes: true, attributeFilter: ['class']});
     }
+    barra.firstChild.textContent = etiqueta || '← Volver a esquemas';
     barra.firstChild.onclick = () => { location.href = destino; };
     barra.style.display = 'flex';
   }
@@ -1510,9 +1512,13 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
   };
 
   // Temario subrayado del usuario (recortes de su PDF): solo los temas con datos en window.EXSUB
-  window.verEnSubrayado = function(id, pieza){
+  // apartado concreto que cita la explicación («art. 56.5 de …» → 5): el visor abre el artículo entero si el Exprés no lleva ese apartado
+  window.apartadoCitado = function(expl){
+    const m = String(expl || '').replace(/<[^>]+>/g, '').match(/art(?:ículo|\.)\s*\d+\.(\d+)/i); return m ? +m[1] : null;
+  };
+  window.verEnSubrayado = function(id, pieza, ap){
     const ov = document.createElement('div'); ov.className = 'esq-ov';
-    ov.innerHTML = '<div class="esq-ov-bar"><span>📑 Temario subrayado · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Temario subrayado" src="expres-subrayado.html?embed=1#q=' + encodeURIComponent(id) + (pieza ? '&p=' + encodeURIComponent(pieza) : '') + '"></iframe>';
+    ov.innerHTML = '<div class="esq-ov-bar"><span>📑 Temario subrayado · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Temario subrayado" src="expres-subrayado.html?embed=1#q=' + encodeURIComponent(id) + (pieza ? '&p=' + encodeURIComponent(pieza) : '') + (ap ? '&ap=' + ap : '') + '"></iframe>';
     ov.querySelector('button').onclick = () => { ov.remove(); document.body.style.overflow = prevOverflow; };
     const prevOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
     document.body.appendChild(ov);
@@ -1557,7 +1563,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
         const S = window.EXSUB && window.EXSUB[+t];
         if (id && S){
           const pz = window.piezaSubrayado(S, id, e.explicacion);
-          if (pz) h += '<button type="button" class="btn-ver-esquema" onclick="verEnSubrayado(\'' + id.replace(/'/g, '') + '\',\'' + pz + '\')">📑 Ver en mi temario subrayado</button>';
+          if (pz) h += '<button type="button" class="btn-ver-esquema" onclick="verEnSubrayado(\'' + id.replace(/'/g, '') + '\',\'' + pz + '\',' + (window.apartadoCitado(e.explicacion) || 0) + ')">📑 Ver en mi temario subrayado</button>';
         }
       } catch(err){}
       return h;

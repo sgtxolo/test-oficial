@@ -30,6 +30,6 @@ for (const f of trozos) {
   for (const m of f.matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (!preg[q]) preg[q] = piezas[0]; });
 }
 ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) p.extra = 1; });   // fuera del Exprés: solo se ve al llegar desde una pregunta
-const cit = inst.map(i => ({ p: i.id, re: i.cit, pre: i.pre || null, pre_re: i.pre_re || null, proto: i.proto ? 1 : 0 }));
+const cit = inst.map(i => ({ p: i.id, nombre: i.nombre, re: i.cit, pre: i.pre || null, pre_re: i.pre_re || null, proto: i.proto ? 1 : 0 }));
 fs.writeFileSync(`expres-subrayado/datos-t${T}.js`, `(window.EXSUB=window.EXSUB||{})[${T}]=` + JSON.stringify({ titulo, dir, piezas: ix, preg, cit }) + ';');
 console.log(ix.length, 'recortes (' + ix.filter(p => p.extra).length + ' fuera del Exprés),', Object.keys(preg).length, 'preguntas enlazadas');

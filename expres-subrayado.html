@@ -1,42 +1,256 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Exprés subrayado</title>
 <style>
-:root{--bg:#f4f1ea;--tx:#1d1d1b;--card:#fff;--ac:#1f6f4a;--mut:#6b6b66}
-@media(prefers-color-scheme:dark){:root{--bg:#161616;--tx:#eee;--card:#222;--ac:#5fc79a;--mut:#999}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px system-ui,sans-serif}
-header{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 16px;border-bottom:1px solid #8884;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-h1{font-size:17px;margin:0;flex:1 1 200px}select,button{font:inherit;padding:6px 10px;border-radius:8px;border:1px solid #8886;background:var(--card);color:var(--tx)}
-body.embed header{display:none}.diana{outline:3px solid var(--ac)}
-main{max-width:860px;margin:0 auto;padding:12px 16px 60px}
-.p{background:var(--card);border-radius:10px;margin:0 0 16px;box-shadow:0 1px 4px #0003;overflow:hidden}
-.p h2{margin:0;padding:8px 12px;font-size:14px;color:var(--ac);display:flex;justify-content:space-between;gap:8px}
-.p img{width:100%;display:block;height:auto;min-height:40px}
-.vis{opacity:.45}
-.n{color:var(--mut);font-size:13px}
+:root{--fondo:#f5f4ee;--panel:#fff;--panel-alt:#eeece3;--texto:#1f2a24;--gris:#767a70;--borde:#e2e0d5;--verde-osc:#163f30;--verde:#1c4d3c;--verde-med:#2f6b52;--verde-suave:#e7efe8;--ambar:#e0a800;--ambar-bg:#fff4d6;--rojo:#c0392b;--radio:18px;--radio-sm:12px;--sombra:0 1px 3px rgba(20,40,30,.12),0 6px 18px rgba(20,40,30,.06);font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
+:root[data-theme="dark"]{--fondo:#141917;--panel:#1e2523;--panel-alt:#262f2b;--texto:#eef1ee;--gris:#9aa39c;--borde:#333d37;--verde-osc:#7fd9ac;--verde:#3f8a68;--verde-med:#57a683;--verde-suave:#16332a;--ambar:#e0a800;--ambar-bg:#3a2f12;--rojo:#ef7a6c;--sombra:0 1px 3px rgba(0,0,0,.4)}
+*{box-sizing:border-box}html,body{margin:0;background:var(--fondo);color:var(--texto)}
+button{font:inherit;color:inherit;cursor:pointer}
+.oculto{display:none!important}
+/* barra superior */
+#top{position:sticky;top:0;z-index:20;background:var(--fondo);border-bottom:1px solid var(--borde);padding:10px max(16px,env(safe-area-inset-left)) 8px}
+#top .fila{display:flex;align-items:center;gap:8px;max-width:980px;margin:0 auto}
+#top h1{font-size:17px;margin:0;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--verde-osc)}
+.ib{border:1.5px solid var(--borde);background:var(--panel);border-radius:12px;min-width:38px;height:38px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:14px;font-weight:600}
+.ib:hover{background:var(--panel-alt)}
+.ib.on{background:var(--verde);color:#fff;border-color:var(--verde)}
+.menu{position:absolute;right:16px;top:54px;background:var(--panel);border:1.5px solid var(--borde);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.28);padding:8px;min-width:250px;z-index:30}
+.menu button,.menu a{display:block;width:100%;text-align:left;border:0;background:none;padding:10px 12px;border-radius:10px;font-size:14px;color:var(--texto);text-decoration:none}
+.menu button:hover,.menu a:hover{background:var(--panel-alt)}
+.menu hr{border:0;border-top:1px solid var(--borde);margin:6px 0}
+main{max-width:980px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-left)) 90px}
+/* dashboard */
+.hero{background:linear-gradient(135deg,var(--verde-osc),var(--verde-med));color:#fff;border-radius:var(--radio);padding:22px 22px 18px;box-shadow:var(--sombra)}
+:root[data-theme="dark"] .hero{background:linear-gradient(135deg,#1c4d3c,#2f6b52)}
+.hero h2{margin:0 0 4px;font-size:22px}.hero p{margin:0;opacity:.88;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:16px}
+.stat{background:rgba(255,255,255,.14);border-radius:var(--radio-sm);padding:10px 12px}
+.stat b{display:block;font-size:22px}.stat span{font-size:12px;opacity:.85}
+.barra{height:8px;border-radius:99px;background:rgba(127,127,127,.25);overflow:hidden;margin-top:12px}
+.barra i{display:block;height:100%;background:var(--ambar);border-radius:99px;transition:width .3s}
+.cont{display:flex;align-items:center;gap:12px;background:var(--ambar-bg);border:1.5px solid var(--ambar);border-radius:var(--radio);padding:12px 16px;margin-top:14px}
+.cont b{display:block}.cont span{font-size:13px;color:var(--gris)}
+.cont button{margin-left:auto;background:var(--verde);color:#fff;border:0;border-radius:12px;padding:9px 16px;font-weight:700}
+h3.sec{font-size:15px;margin:22px 4px 10px;color:var(--gris);text-transform:uppercase;letter-spacing:.06em}
+.temas{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.tema{background:var(--panel);border:1.5px solid var(--borde);border-radius:var(--radio);padding:16px;box-shadow:var(--sombra);cursor:pointer;display:flex;flex-direction:column;gap:8px}
+.tema:hover{border-color:var(--verde-med)}
+.tema .num{display:inline-block;background:var(--verde-suave);color:var(--verde-osc);font-weight:800;border-radius:10px;padding:2px 10px;font-size:13px;align-self:flex-start}
+.tema h4{margin:0;font-size:16px;line-height:1.3}
+.tema .meta{font-size:12.5px;color:var(--gris);display:flex;gap:10px;flex-wrap:wrap}
+.tema .barra{background:var(--panel-alt);margin-top:2px}.tema .barra i{background:var(--verde-med)}
+.apps{display:flex;gap:10px;flex-wrap:wrap}.apps a{flex:1;min-width:160px;text-align:center;text-decoration:none;color:var(--verde-osc);background:var(--panel);border:1.5px solid var(--borde);border-radius:var(--radio-sm);padding:12px;font-weight:700}
+/* vista de tema */
+#herr{position:sticky;top:59px;z-index:15;background:var(--fondo);border-bottom:1px solid var(--borde);padding:8px 0 10px}
+#herr .in{max-width:980px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left))}
+.buscar{width:100%;border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:12px;padding:9px 12px;font:inherit}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.chip{border:1.5px solid var(--borde);background:var(--panel);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:600;white-space:nowrap}
+.chip.on{background:var(--verde);border-color:var(--verde);color:#fff}
+.prog{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:12.5px;color:var(--gris)}
+.prog .barra{flex:1;margin:0;background:var(--panel-alt)}.prog .barra i{background:var(--verde-med)}
+.grupo{margin:20px 2px 8px;font-size:13px;font-weight:800;color:var(--verde-med);text-transform:uppercase;letter-spacing:.05em}
+.card{background:var(--panel);border:1.5px solid var(--borde);border-radius:var(--radio);margin:0 0 14px;box-shadow:var(--sombra);overflow:hidden;scroll-margin-top:210px}
+.card.visto{opacity:.55}.card.diana{outline:3px solid var(--verde-med)}
+.card .cab{display:flex;align-items:center;gap:8px;padding:10px 12px;flex-wrap:wrap}
+.card .cab .nom{flex:1;min-width:150px;font-weight:700;font-size:14.5px;color:var(--verde-osc)}
+.card .cab .nom small{display:block;font-weight:500;color:var(--gris);font-size:12px}
+.tag{font-size:11px;font-weight:700;border-radius:99px;padding:2px 8px;background:var(--verde-suave);color:var(--verde-osc)}
+.tag.extra{background:var(--ambar-bg);color:var(--ambar)}
+.card .acc{display:flex;gap:6px;flex-wrap:wrap;padding:0 12px 10px}
+.sb{border:1.5px solid var(--borde);background:var(--panel);border-radius:10px;padding:5px 11px;font-size:13px;font-weight:600;text-decoration:none;color:var(--texto);display:inline-flex;align-items:center;gap:5px}
+.sb:hover{background:var(--panel-alt)}.sb.on{background:var(--verde-suave);border-color:var(--verde-med);color:var(--verde-osc)}
+.sb.dif.on{background:var(--ambar-bg);border-color:var(--ambar);color:var(--ambar)}
+.card img{display:block;width:100%;height:auto;min-height:48px;background:#fff;cursor:zoom-in}
+.nota{display:block;width:calc(100% - 24px);margin:0 12px 12px;border:1.5px solid var(--borde);background:var(--panel-alt);color:var(--texto);border-radius:10px;padding:8px 10px;font:inherit;font-size:14px;min-height:60px;resize:vertical}
+.vacio{text-align:center;color:var(--gris);padding:40px 10px}
+/* visor */
+#vis{position:fixed;inset:0;z-index:50;background:rgba(10,15,12,.94);display:flex;flex-direction:column}
+#vis .bar{display:flex;gap:8px;align-items:center;padding:8px 12px;color:#fff}
+#vis .bar b{flex:1;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#vis .bar .ib{background:#ffffff1c;border-color:#ffffff30;color:#fff}
+#vis .lienzo{flex:1;overflow:auto;text-align:center;-webkit-overflow-scrolling:touch}
+#vis img{background:#fff;max-width:none}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--verde-osc);color:#fff;padding:10px 18px;border-radius:99px;z-index:60;font-size:14px}
+:root[data-theme="dark"] .toast{color:#10201a}
+body.embed #top{display:none}body.embed #herr{top:0}
+@media print{#top,#herr,.acc,.nota,.toast,#vis{display:none!important}.card{box-shadow:none;break-inside:avoid;border:0;opacity:1!important}.card .cab{padding:2px 0}.card img{cursor:auto}body{background:#fff}}
+@media(max-width:560px){.hero h2{font-size:19px}main{padding-top:12px}}
 </style></head><body>
-<header><h1 id="t">Exprés con tu subrayado</h1><select id="sel"></select><span class="n" id="c"></span></header>
+<div id="top"><div class="fila">
+  <button class="ib oculto" id="b-atras" title="Inicio">←</button>
+  <h1 id="tit">Exprés · Temario subrayado</h1>
+  <button class="ib" id="b-tema" title="Modo oscuro">🌙</button>
+  <button class="ib" id="b-menu" title="Más opciones">⋮</button>
+</div>
+<div class="menu oculto" id="menu"></div></div>
+<div id="herr" class="oculto"><div class="in"></div></div>
 <main id="m"></main>
+<div id="vis" class="oculto"></div>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
 <script>
-const D=window.EXSUB,sel=document.getElementById('sel'),m=document.getElementById('m');
-let vis={};try{vis=JSON.parse(localStorage.getItem('exsub-vis')||'{}')}catch(e){}
-Object.keys(D).forEach(k=>sel.add(new Option('Tema '+k,k)));
-let dest=null; // recorte al que se llega desde una pregunta (aunque no esté en el Exprés)
-function pinta(){const t=D[sel.value];document.getElementById('t').textContent=t.titulo;m.innerHTML='';
- const vis_=t.piezas.filter(p=>!p.extra||p.id===dest);const ixDest=vis_.findIndex(p=>p.id===dest);
- vis_.forEach((p,i)=>{const k=sel.value+'/'+p.id,d=document.createElement('div');d.className='p'+(vis[k]?' vis':'')+(p.id===dest?' diana':'');d.dataset.id=p.id;
-  d.innerHTML='<h2><span>'+p.nombre+(p.extra?' (fuera del Exprés)':'')+'</span><button>'+(vis[k]?'↺':'✓ visto')+'</button></h2><img '+(i<=ixDest?'':'loading="lazy" ')+'src="'+t.dir+p.img+'" alt="'+p.nombre+'">';
-  d.querySelector('button').onclick=()=>{vis[k]=!vis[k];try{localStorage.setItem('exsub-vis',JSON.stringify(vis))}catch(e){}pinta();irA()};m.appendChild(d)});
- document.getElementById('c').textContent=t.piezas.filter(p=>vis[sel.value+'/'+p.id]).length+'/'+t.piezas.filter(p=>!p.extra).length}
-function irA(){const el=dest&&m.querySelector('[data-id="'+dest+'"]');if(el)el.scrollIntoView()}
-sel.onchange=()=>{dest=null;pinta()};
-// Enlace desde el test: #q=7-120&p=a-47 -> salta al recorte (p) o, si no viene, al de la pregunta
-(function(){const mq=location.hash.match(/[#&]q=([^&]+)/);if(mq){const q=decodeURIComponent(mq[1]),t=parseInt(q,10),mp=location.hash.match(/[#&]p=([^&]+)/);
- if(D[t]){sel.value=t;dest=mp?decodeURIComponent(mp[1]):D[t].preg[q]||null}}
- pinta();irA();
- // las imágenes cambian la altura al cargar: se recoloca cuando están todas
- const ims=[...m.querySelectorAll('img:not([loading])')];let n=ims.length;ims.forEach(i=>{const f=()=>{if(--n<=0)irA()};i.complete?f():(i.onload=i.onerror=f)})})();
-if(/[?&]embed=1/.test(location.search))document.body.classList.add('embed');
+"use strict";
+const D = window.EXSUB || {}, LS = 'exsub2', $ = s => document.querySelector(s), emb = /[?&]embed=1/.test(location.search);
+let st = {vis: {}, dif: {}, nota: {}, ent: {}, ult: {}, vista: 'expres', extras: false};
+try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || '{}')); const v0 = JSON.parse(localStorage.getItem('exsub-vis') || '{}'); for (const k in v0) if (v0[k] && st.vis[k] === undefined) st.vis[k] = 1; } catch (e) {}
+const guarda = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) {} };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+let tema = null, filtro = 'todos', inst = 'todas', busca = '', dest = null, destAp = null;
+const key = (t, id) => t + '/' + id;
+// ---------- datos derivados ----------
+const inv = {};   // tema -> pieza -> [preguntas enlazadas]
+for (const t in D) { inv[t] = {}; for (const q in D[t].preg) (inv[t][D[t].preg[q]] = inv[t][D[t].preg[q]] || []).push(q); }
+const visibles = t => D[t].piezas.filter(p => !p.extra);
+const hechos = t => visibles(t).filter(p => st.vis[key(t, p.id)]).length;
+const instDe = (t, p) => { const l = p.id.split('-')[0]; return (D[t].cit || []).find(c => c.p === l) || {}; };
+// ---------- tema claro / oscuro ----------
+function pintaTema() { const d = st.oscuro === undefined ? matchMedia('(prefers-color-scheme:dark)').matches : st.oscuro; document.documentElement.dataset.theme = d ? 'dark' : 'light'; $('#b-tema').textContent = d ? '☀️' : '🌙'; }
+$('#b-tema').onclick = () => { st.oscuro = document.documentElement.dataset.theme !== 'dark'; guarda(); pintaTema(); };
+// ---------- menú ----------
+function menu() {
+  $('#menu').innerHTML = '<button data-a="vista">' + (st.vista === 'expres' ? '📄 Ver siempre artículos enteros' : '⚡ Ver versión Exprés (recortada)') + '</button>'
+    + '<button data-a="extras">' + (st.extras ? '🙈 Ocultar artículos fuera del Exprés' : '👁️ Mostrar artículos fuera del Exprés') + '</button><hr>'
+    + '<button data-a="print">🖨️ Imprimir / guardar PDF</button><button data-a="exp">⬇️ Exportar mi progreso</button><button data-a="imp">⬆️ Importar progreso</button><hr>'
+    + '<a href="esquemas.html">📘 Ir a Esquemas</a><a href="test-oficial-conocimiento.html">📝 Ir al Test de conocimiento</a><hr>'
+    + '<button data-a="reset">🗑️ Borrar mi progreso</button>';
+}
+$('#b-menu').onclick = e => { e.stopPropagation(); menu(); $('#menu').classList.toggle('oculto'); };
+document.addEventListener('click', e => { if (!e.target.closest('#menu') && e.target.id !== 'b-menu') $('#menu').classList.add('oculto'); });
+$('#menu').onclick = e => {
+  const a = e.target.dataset.a; if (!a) return; $('#menu').classList.add('oculto');
+  if (a === 'vista') { st.vista = st.vista === 'expres' ? 'completo' : 'expres'; guarda(); render(); aviso(st.vista === 'expres' ? 'Versión Exprés' : 'Artículos enteros'); }
+  if (a === 'extras') { st.extras = !st.extras; guarda(); render(); }
+  if (a === 'print') window.print();
+  if (a === 'exp') { const b = new Blob([JSON.stringify(st)], {type: 'application/json'}), u = document.createElement('a'); u.href = URL.createObjectURL(b); u.download = 'progreso-expres-subrayado.json'; u.click(); }
+  if (a === 'imp') { const f = document.createElement('input'); f.type = 'file'; f.accept = '.json'; f.onchange = () => f.files[0].text().then(tx => { try { const n = JSON.parse(tx); for (const k of ['vis', 'dif', 'nota', 'ent', 'ult']) st[k] = Object.assign({}, st[k], n[k] || {}); guarda(); render(); aviso('Progreso importado'); } catch (er) { aviso('Archivo no válido'); } }); f.click(); }
+  if (a === 'reset' && confirm('¿Borrar los vistos, difíciles y notas de este dispositivo?')) { st.vis = {}; st.dif = {}; st.nota = {}; st.ent = {}; st.ult = {}; guarda(); render(); }
+};
+function aviso(t) { const e = document.createElement('div'); e.className = 'toast'; e.textContent = t; document.body.appendChild(e); setTimeout(() => e.remove(), 1800); }
+// ---------- dashboard ----------
+function dash() {
+  tema = null; $('#herr').classList.add('oculto'); $('#b-atras').classList.add('oculto'); $('#tit').textContent = 'Exprés · Temario subrayado';
+  const ts = Object.keys(D).sort((a, b) => a - b);
+  let tot = 0, ok = 0, pq = 0; ts.forEach(t => { tot += visibles(t).length; ok += hechos(t); pq += Object.keys(D[t].preg).length; });
+  const pct = tot ? Math.round(ok * 100 / tot) : 0;
+  const ult = ts.map(t => [t, st.ult[t]]).filter(x => x[1] && D[x[0]].piezas.some(p => p.id === x[1]))[0];
+  let h = '<div class="hero"><h2>Tu temario subrayado, en versión Exprés</h2><p>Los mismos artículos y apartados que el Exprés de esquemas, pero con tu subrayado de verdad.</p>'
+    + '<div class="stats"><div class="stat"><b>' + pct + '%</b><span>estudiado</span></div><div class="stat"><b>' + ok + '/' + tot + '</b><span>artículos vistos</span></div><div class="stat"><b>' + ts.length + '</b><span>temas disponibles</span></div><div class="stat"><b>' + pq + '</b><span>preguntas enlazadas</span></div></div>'
+    + '<div class="barra"><i style="width:' + pct + '%"></i></div></div>';
+  if (ult) { const p = D[ult[0]].piezas.find(x => x.id === ult[1]); h += '<div class="cont"><div><b>Continuar donde lo dejaste</b><span>Tema ' + ult[0] + ' · ' + esc(p.nombre) + '</span></div><button data-ir="' + ult[0] + '|' + p.id + '">Continuar →</button></div>'; }
+  h += '<h3 class="sec">Temas</h3><div class="temas">';
+  ts.forEach(t => { const v = visibles(t), n = hechos(t), pc = v.length ? Math.round(n * 100 / v.length) : 0, dif = Object.keys(st.dif).filter(k => k.startsWith(t + '/') && st.dif[k]).length;
+    h += '<div class="tema" data-t="' + t + '"><span class="num">Tema ' + t + '</span><h4>' + esc(D[t].titulo.replace(/^Tema \d+ · /, '')) + '</h4><div class="meta"><span>📄 ' + v.length + ' artículos</span><span>🎯 ' + Object.keys(D[t].preg).length + ' preguntas</span>' + (dif ? '<span>⭐ ' + dif + '</span>' : '') + '</div><div class="barra"><i style="width:' + pc + '%"></i></div><div class="meta"><span>' + n + ' vistos · ' + pc + '%</span></div></div>'; });
+  h += '</div><h3 class="sec">Otras apps</h3><div class="apps"><a href="esquemas.html">📘 Esquemas</a><a href="test-oficial-conocimiento.html">📝 Test de conocimiento</a></div>';
+  $('#m').innerHTML = h; scrollTo(0, 0);
+}
+// ---------- vista de un tema ----------
+function cabTema() {
+  const t = tema, ns = []; (D[t].cit || []).forEach(c => { if (c.nombre && D[t].piezas.some(p => p.id.startsWith(c.p + '-'))) ns.push(c); });
+  const v = visibles(t), n = hechos(t), pc = v.length ? Math.round(n * 100 / v.length) : 0;
+  let h = '<input class="buscar" id="q" type="search" placeholder="Buscar artículo o norma (p. ej. 90, Roma, preámbulo)…" value="' + esc(busca) + '"><div class="chips">'
+    + [['todos', 'Todos'], ['pend', 'Pendientes'], ['vistos', 'Vistos'], ['dif', '⭐ Difíciles'], ['preg', '🎯 Con preguntas']].map(f => '<button class="chip' + (filtro === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>').join('') + '</div>';
+  if (ns.length > 1) h += '<div class="chips"><button class="chip' + (inst === 'todas' ? ' on' : '') + '" data-i="todas">Todas las normas</button>' + ns.map(c => '<button class="chip' + (inst === c.p ? ' on' : '') + '" data-i="' + c.p + '">' + esc(c.nombre) + '</button>').join('') + '</div>';
+  h += '<div class="chips"><button class="chip" id="b-rep">▶ Repasar la lista</button><button class="chip' + (st.vista === 'completo' ? ' on' : '') + '" id="b-vista">' + (st.vista === 'completo' ? '📄 Artículos enteros' : '⚡ Versión Exprés') + '</button></div>'
+    + '<div class="prog"><span>' + n + '/' + v.length + ' vistos</span><div class="barra"><i style="width:' + pc + '%"></i></div><span>' + pc + '%</span></div>';
+  $('#herr .in').innerHTML = h; $('#herr').classList.remove('oculto');
+}
+function entera(p) {
+  if (!p.imgr || st.vista === 'completo') return true;
+  if (st.ent[key(tema, p.id)]) return true;
+  if (p.id === dest && destAp && p.ap && !p.ap.includes(destAp)) return true;   // la pregunta trata un apartado que el Exprés no lleva: se abre el artículo entero
+  return false;
+}
+function lista() {
+  const t = tema, q = busca.trim().toLowerCase(); let ps = D[t].piezas.filter(p => !p.extra || st.extras || p.id === dest);
+  ps = ps.filter(p => {
+    const k = key(t, p.id);
+    if (filtro === 'pend' && st.vis[k]) return false; if (filtro === 'vistos' && !st.vis[k]) return false; if (filtro === 'dif' && !st.dif[k]) return false;
+    if (filtro === 'preg' && !(inv[t][p.id] || []).length) return false;
+    if (inst !== 'todas' && p.id.split('-')[0] !== inst) return false;
+    if (q && !(' ' + p.nombre.toLowerCase()).includes(q) && p.id.toLowerCase() !== q) return false; return true; });
+  if (!ps.length) return '<div class="vacio">No hay nada con ese filtro.</div>';
+  const ixD = ps.findIndex(p => p.id === dest); let h = '', gAnt = null;
+  ps.forEach((p, i) => {
+    const k = key(t, p.id), g = instDe(t, p).nombre || '', ent = entera(p), qs = inv[t][p.id] || [], src = D[t].dir + (ent || !p.imgr ? p.img : p.imgr), lazy = i <= ixD ? '' : ' loading="lazy"';
+    if (g !== gAnt) { h += '<div class="grupo">' + esc(g) + '</div>'; gAnt = g; }
+    h += '<div class="card' + (st.vis[k] ? ' visto' : '') + (p.id === dest ? ' diana' : '') + '" id="c-' + p.id + '" data-id="' + p.id + '"><div class="cab"><div class="nom">' + esc(p.nombre.replace(/^.* · /, '')) + '<small>' + esc(g) + (p.ap && !ent ? ' · apartados ' + p.ap.join(', ') : '') + '</small></div>'
+      + (p.extra ? '<span class="tag extra">fuera del Exprés</span>' : '') + (qs.length ? '<span class="tag">🎯 ' + qs.length + '</span>' : '') + '</div>'
+      + '<div class="acc"><button class="sb' + (st.vis[k] ? ' on' : '') + '" data-a="vis">' + (st.vis[k] ? '✓ Visto' : '○ Marcar visto') + '</button>'
+      + '<button class="sb dif' + (st.dif[k] ? ' on' : '') + '" data-a="dif">' + (st.dif[k] ? '★' : '☆') + ' Difícil</button>'
+      + (p.imgr && st.vista !== 'completo' ? '<button class="sb' + (ent ? ' on' : '') + '" data-a="ent">' + (ent ? '▴ Ver recortado' : '▾ Artículo entero') + '</button>' : '')
+      + '<button class="sb' + (st.nota[k] ? ' on' : '') + '" data-a="nota">📝 Nota</button>'
+      + (qs.length && !emb ? '<button class="sb" data-a="prac">🎯 Practicar</button>' : '') + '</div>'
+      + (st.notaAb === k ? '<textarea class="nota" data-n="' + k + '" placeholder="Tu nota sobre este artículo…">' + esc(st.nota[k] || '') + '</textarea>' : (st.nota[k] ? '<div class="nota" style="min-height:0;white-space:pre-wrap">' + esc(st.nota[k]) + '</div>' : ''))
+      + '<img' + lazy + ' src="' + src + '"' + ((ent || !p.imgr ? p.wh : p.whr) ? ' style="aspect-ratio:' + (ent || !p.imgr ? p.wh : p.whr).join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1"></div>'; });
+  return h;
+}
+function render() { if (tema === null) dash(); else verTema(); }
+function verTema() { $('#b-atras').classList.remove('oculto'); $('#tit').textContent = D[tema].titulo; cabTema(); $('#m').innerHTML = lista(); }
+// ---------- eventos ----------
+$('#b-atras').onclick = () => { tema = null; dest = null; destAp = null; busca = ''; filtro = 'todos'; inst = 'todas'; history.replaceState(null, '', location.pathname + location.search); render(); };
+$('#herr').addEventListener('click', e => {
+  const c = e.target.closest('[data-f],[data-i],#b-rep,#b-vista'); if (!c) return;
+  if (c.dataset.f) filtro = c.dataset.f; if (c.dataset.i) inst = c.dataset.i;
+  if (c.id === 'b-rep') return repaso();
+  if (c.id === 'b-vista') { st.vista = st.vista === 'expres' ? 'completo' : 'expres'; guarda(); }
+  verTema();
+});
+$('#herr').addEventListener('input', e => { if (e.target.id === 'q') { busca = e.target.value; $('#m').innerHTML = lista(); } });
+$('#m').addEventListener('click', e => {
+  if (tema === null) {
+    const d = e.target.closest('[data-t],[data-ir]'); if (!d) return;
+    if (d.dataset.t) { tema = d.dataset.t; verTema(); scrollTo(0, 0); }
+    else { const [t, id] = d.dataset.ir.split('|'); tema = t; dest = id; destAp = null; verTema(); irA(); }
+    return;
+  }
+  const card = e.target.closest('.card'); if (!card) return; const id = card.dataset.id, k = key(tema, id), a = e.target.dataset.a;
+  const recarga = () => { guarda(); const y = scrollY; verTema(); scrollTo(0, y); };
+  if (e.target.dataset.z) return visor(id);
+  if (a === 'vis') { st.vis[k] = st.vis[k] ? 0 : 1; recarga(); }
+  if (a === 'dif') { st.dif[k] = st.dif[k] ? 0 : 1; recarga(); }
+  if (a === 'ent') { st.ent[k] = st.ent[k] ? 0 : 1; if (dest === id) destAp = null; recarga(); }
+  if (a === 'nota') { st.notaAb = st.notaAb === k ? null : k; if (st.nota[k] === undefined) st.nota[k] = ''; recarga(); const ta = document.querySelector('[data-n="' + k + '"]'); if (ta) ta.focus(); }
+  if (a === 'prac') { const qs = (inv[tema][id] || []).slice(0, 60).join(','), v = location.pathname.split('/').pop() + '#t=' + tema + '&p=' + id; location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(qs) + '&v=' + encodeURIComponent(v); }
+});
+$('#m').addEventListener('input', e => { if (e.target.dataset.n) { st.nota[e.target.dataset.n] = e.target.value; guarda(); } });
+// última posición del tema
+let tmr; addEventListener('scroll', () => { if (tema === null) return; clearTimeout(tmr); tmr = setTimeout(() => { const c = [...document.querySelectorAll('.card')].find(x => x.getBoundingClientRect().top > 160); if (c) { st.ult[tema] = c.dataset.id; guarda(); } }, 400); }, {passive: true});
+// ---------- visor / repaso ----------
+let vlista = [], vi = 0, zoom = 1;
+function visor(id) { vlista = [...document.querySelectorAll('.card')].map(c => c.dataset.id); vi = Math.max(0, vlista.indexOf(id)); pintaVisor(); }
+function repaso() { vlista = [...document.querySelectorAll('.card')].map(c => c.dataset.id); if (!vlista.length) return aviso('No hay nada que repasar'); vi = 0; pintaVisor(); }
+function pintaVisor() {
+  const id = vlista[vi], p = D[tema].piezas.find(x => x.id === id), k = key(tema, id), ent = entera(p) || st.vizEnt;
+  const v = $('#vis'); v.classList.remove('oculto'); document.body.style.overflow = 'hidden';
+  v.innerHTML = '<div class="bar"><b>' + esc(p.nombre) + ' · ' + (vi + 1) + '/' + vlista.length + '</b>' + (p.imgr ? '<button class="ib" data-v="ent">' + (ent ? 'Recortado' : 'Entero') + '</button>' : '') + '<button class="ib" data-v="z-">−</button><button class="ib" data-v="z+">+</button><button class="ib" data-v="x">✕</button></div>'
+    + '<div class="lienzo"><img style="width:' + (zoom * 100) + '%" src="' + D[tema].dir + (ent || !p.imgr ? p.img : p.imgr) + '"></div>'
+    + '<div class="bar"><button class="ib" data-v="<">← Anterior</button><button class="ib' + (st.vis[k] ? ' on' : '') + '" data-v="vis" style="flex:1">' + (st.vis[k] ? '✓ Visto' : '○ Marcar visto') + '</button><button class="ib" data-v=">">Siguiente →</button></div>';
+}
+$('#vis').onclick = e => {
+  const a = e.target.dataset.v; if (!a) return;
+  if (a === 'x') { $('#vis').classList.add('oculto'); document.body.style.overflow = ''; st.vizEnt = false; verTema(); return; }
+  if (a === '<' && vi > 0) vi--; if (a === '>' && vi < vlista.length - 1) vi++;
+  if (a === 'z+') zoom = Math.min(3, zoom + .5); if (a === 'z-') zoom = Math.max(1, zoom - .5);
+  if (a === 'vis') { const k = key(tema, vlista[vi]); st.vis[k] = st.vis[k] ? 0 : 1; guarda(); }
+  if (a === 'ent') st.vizEnt = !st.vizEnt;
+  pintaVisor();
+};
+addEventListener('keydown', e => { if ($('#vis').classList.contains('oculto')) return; if (e.key === 'ArrowRight' && vi < vlista.length - 1) { vi++; pintaVisor(); } if (e.key === 'ArrowLeft' && vi > 0) { vi--; pintaVisor(); } if (e.key === 'Escape') $('#vis [data-v="x"]').click(); });
+// ---------- navegación por enlace ----------
+function irA() {
+  const el = dest && document.getElementById('c-' + dest); if (!el) return; el.scrollIntoView();
+  const ims = [...document.querySelectorAll('.card img:not([loading])')]; let n = ims.length;
+  ims.forEach(i => { const f = () => { if (--n <= 0) el.scrollIntoView(); }; i.complete ? f() : (i.onload = i.onerror = f); });
+}
+function entra() {
+  const h = location.hash, mq = h.match(/[#&]q=([^&]+)/), mp = h.match(/[#&]p=([^&]+)/), mt = h.match(/[#&]t=(\d+)/), ma = h.match(/[#&]ap=(\d+)/);
+  if (mq) { const q = decodeURIComponent(mq[1]), t = String(parseInt(q, 10)); if (D[t]) { tema = t; dest = mp ? decodeURIComponent(mp[1]) : (D[t].preg[q] || null); destAp = ma ? +ma[1] : null; } }
+  else if (mt && D[mt[1]]) { tema = mt[1]; dest = mp ? decodeURIComponent(mp[1]) : null; }
+  else if (emb) tema = Object.keys(D).sort((a, b) => a - b)[0];
+  try { history.scrollRestoration = 'manual'; } catch (e) {}
+  pintaTema(); if (emb) document.body.classList.add('embed'); render(); irA(); addEventListener('load', irA);
+}
+entra();
 </script></body></html>
