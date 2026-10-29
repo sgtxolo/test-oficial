@@ -1,0 +1,7 @@
+[
+ {"id":"d","nombre":"LO 3/2018","paginas":[20,105],"inicio":"^TÍTULO I — Disposiciones generales$","cit":"LOPDGDD|LO 3/2018|Ley Orgánica 3/2018","pre":"d-pre"},
+ {"id":"a","nombre":"Ley 39/2015","paginas":[106,199],"inicio":"^TÍTULO PRELIMINAR — Disposiciones generales$","cit":"LPAC|Ley 39/2015"},
+ {"id":"b","nombre":"Ley 40/2015","paginas":[200,265],"inicio":"^TÍTULO PRELIMINAR — Disposiciones generales, principios","cit":"LRJSP|Ley 40/2015"},
+ {"id":"t","nombre":"Ley 19/2013","paginas":[266,301],"inicio":"^TÍTULO I — Transparencia de la actividad","cit":"Ley 19/2013|Ley de Transparencia"},
+ {"id":"r","nombre":"RD 179/2005","paginas":[302,315],"inicio":"^CAPÍTULO I — Objeto y ámbito","cit":"Real Decreto 179/2005|RD 179/2005"}
+]

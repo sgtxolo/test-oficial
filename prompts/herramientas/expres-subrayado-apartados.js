@@ -11,11 +11,11 @@ function numeros(t) {
   return [...out];
 }
 const res = {}; let cur = null, ixCur = -1;
-for (const f of h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha">)/)) {
+for (const f of h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha(?: ex-of)?">)/)) {
   const t = ((f.match(/(?:ex-fh|bloque-titulo)">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, '');
   if (/^ANEXO/.test(t)) break;
   const k = inst.findIndex((i, j) => j > ixCur && i.inicio && new RegExp(i.inicio).test(t)); if (k >= 0) { ixCur = k; cur = inst[k].id; }
-  if (!f.startsWith('<div class="ex-ficha">') || !cur || !/^Art[íi]culos?\s+\d/i.test(t)) continue;
+  if (!/^<div class="ex-ficha(?: ex-of)?">/.test(f) || !cur || !/^Art[íi]culos?\s+\d/i.test(t)) continue;
   const ns = numeros(t); const ap = [...new Set([...f.matchAll(/<b>(\d+)\.<\/b>/g)].map(m => +m[1]))].sort((a, b) => a - b);
   for (const n of ns) res[cur + '-' + n] = ns.length === 1 ? ap : [];   // fichas de varios artículos: sin recorte por apartados
 }

@@ -31,3 +31,5 @@ const man = `expres-subrayado/t${T}-manual.json`;   // recortes a mano (artícul
 if (fs.existsSync(man)) { const m = JSON.parse(fs.readFileSync(man, 'utf8')); cfg.manual = m.manual || []; cfg.paginas = m.paginas || []; }
 fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg));
 cfg.leyes.forEach(l => console.log(l.id, l.nombre, l.paginas.join('-'), l.arts.length, 'arts'));
+const apa = `expres-subrayado/t${T}-apartados.json`;   // apartados que lleva el Exprés (node expres-subrayado-apartados.js N > …); se añaden al config ya escrito
+if (fs.existsSync(apa)) { cfg.apartados = JSON.parse(fs.readFileSync(apa, 'utf8')); fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg)); }

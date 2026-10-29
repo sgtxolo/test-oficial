@@ -21,12 +21,12 @@ function numeros(t) {
 global.window = {}; require('../../expres/t' + T + '.js'); const h = window.EXPRES_T[T].html;
 const ids = new Set(ix.map(p => p.id)), preg = {}, enEx = new Set(), marcas = {}, fichas = []; let cur = null, ixCur = -1, fi = -1; const fx = {};
 const limpia = t => t.replace(/\s*(EXOF|EX|✱|R\d+)(?![\wÁ-ú])/g, '').replace(/\s*[·.]\s*$/, '').replace(/\s+/g, ' ').trim();
-const trozos = h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha">)/);
+const trozos = h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha(?: ex-of)?">)/);
 for (const f of trozos) {
   const t = ((f.match(/(?:ex-fh|bloque-titulo)">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, '');
   if (/^ANEXO/.test(t)) break;
   const k = inst.findIndex((i, j) => j > ixCur && i.inicio && new RegExp(i.inicio).test(t)); if (k >= 0) { ixCur = k; cur = inst[k].id; }
-  if (!f.startsWith('<div class="ex-ficha">')) continue;
+  if (!/^<div class="ex-ficha(?: ex-of)?">/.test(f)) continue;
   fi++;                                   // nº de ficha dentro del Exprés (para sacar su texto al imprimir)
   if (!cur) continue;
   const num = numeros(t); fichas.push({ t: limpia(t), cur, num });

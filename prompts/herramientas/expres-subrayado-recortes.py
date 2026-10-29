@@ -99,6 +99,7 @@ for ley in cfg['leyes']:
             elif len(mk) < max(quiere): avisos.append(f'{pid}: el OCR solo encuentra {len(mk)} apartados y el Exprés usa {quiere}; se deja entero')
         res.append(ent)
 for m in cfg.get('manual', []):
+    res[:] = [e for e in res if e['id'] != m['id']]      # un recorte a mano sustituye al detectado
     guarda(m['id'], [img(d[p], d[p].rect.height * f0, d[p].rect.height * f1) for p, f0, f1 in m['piezas']])
     ent = {'id': m['id'], 'nombre': m['nombre'], 'img': f"{m['id']}.jpg"}
     if m.get('recorte'):
