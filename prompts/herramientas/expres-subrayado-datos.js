@@ -1,4 +1,5 @@
-// Genera expres-subrayado/datos-tN.js: lista de recortes + mapa pregunta -> recorte (desde las marcas data-q del Exprés) + reglas de cita.
+// Genera expres-subrayado/datos-tN.js (recortes, mapa pregunta→recorte, reglas de cita, marcas EXOF/EX/✱/R)
+// y expres-subrayado/cuadros-tN.js (los cuadros/esquemas visuales de Esquemas asociados a cada artículo).
 // Uso: node prompts/herramientas/expres-subrayado-datos.js 7 "Tema 7 · Derechos y deberes fundamentales"
 const fs = require('fs'); const T = process.argv[2], titulo = process.argv[3];
 const dir = `expres-subrayado/img/t${T}/`; const ix = JSON.parse(fs.readFileSync(dir + 'indice.json', 'utf8'));
@@ -18,18 +19,65 @@ function numeros(t) {
   return [...out];
 }
 global.window = {}; require('../../expres/t' + T + '.js'); const h = window.EXPRES_T[T].html;
-const ids = new Set(ix.map(p => p.id)), preg = {}, enEx = new Set(); let cur = null, ixCur = -1;
+const ids = new Set(ix.map(p => p.id)), preg = {}, enEx = new Set(), marcas = {}, fichas = []; let cur = null, ixCur = -1;
+const limpia = t => t.replace(/\s*(EXOF|EX|✱|R\d+)(?![\wÁ-ú])/g, '').replace(/\s*[·.]\s*$/, '').replace(/\s+/g, ' ').trim();
 const trozos = h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha">)/);
 for (const f of trozos) {
   const t = ((f.match(/(?:ex-fh|bloque-titulo)">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, '');
   if (/^ANEXO/.test(t)) break;
   const k = inst.findIndex((i, j) => j > ixCur && i.inicio && new RegExp(i.inicio).test(t)); if (k >= 0) { ixCur = k; cur = inst[k].id; }
-  if (!f.startsWith('<div class="ex-ficha">') || !cur || !/^Art[íi]culos?\s+\d/i.test(t)) continue;
-  const piezas = numeros(t).map(n => cur + '-' + n).filter(p => ids.has(p)); piezas.forEach(p => enEx.add(p));
+  if (!f.startsWith('<div class="ex-ficha">') || !cur) continue;
+  const num = numeros(t); fichas.push({ t: limpia(t), cur, num });
+  if (!/^Art[íi]culos?\s+\d/i.test(t)) continue;
+  const piezas = num.map(n => cur + '-' + n).filter(p => ids.has(p)); piezas.forEach(p => enEx.add(p));
   if (!piezas.length) continue;
+  // marcas del temario: EXOF (examen oficial), EX (examen), ✱ (asterisco de la academia), R<n> (ficha «Recuerda»)
+  const mk = {}; if (/\bEXOF\b/.test(t)) mk.exof = 1; if (/(^|[^A-Z])EX(?![A-Z])/.test(t)) mk.ex = 1; if (/✱/.test(t)) mk.ast = 1;
+  const rs = [...t.matchAll(/\bR(\d+)\b/g)].map(m => +m[1]); if (rs.length) mk.r = [...new Set(rs)];
+  piezas.forEach(p => { marcas[p] = mk; });
   for (const m of f.matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (!preg[q]) preg[q] = piezas[0]; });
 }
-ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) p.extra = 1; });   // fuera del Exprés: solo se ve al llegar desde una pregunta
+ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) p.extra = 1; if (marcas[p.id] && Object.keys(marcas[p.id]).length) p.m = marcas[p.id]; });
+// primera pregunta de cada artículo: sirve para saltar desde aquí a la ficha de Esquemas (esquemas.html#q=<id>&ex=1)
+const primera = {}; for (const q in preg) if (!primera[preg[q]]) primera[preg[q]] = q; ix.forEach(p => { if (primera[p.id]) p.q1 = primera[p.id]; });
+// ---- cuadros (esquemas visuales) de visuales-tN.js, tomados ya montados de esquemas.html ----
+const cuadros = {}, sinPieza = [];
+const mapP = `expres-subrayado/t${T}-cuadros-map.json`; const cmap = fs.existsSync(mapP) ? JSON.parse(fs.readFileSync(mapP, 'utf8')) : {};   // {«despues» o «título del cuadro»: pieza} para los que no se deducen solos
+const visP = `prompts/herramientas/visuales-t${T}.js`;
+if (fs.existsSync(visP)) {
+  const src = fs.readFileSync(visP, 'utf8'), esq = fs.readFileSync('esquemas.html', 'utf8');
+  const rx = /^\s*v\('((?:[^'\\]|\\.)*)',\s*\w+\('((?:[^'\\]|\\.)*)'/gm;
+  for (const m of src.matchAll(rx)) {
+    const despues = m[1].replace(/\\'/g, "'"), tit = m[2].replace(/\\'/g, "'");
+    const esc = s => s.replace(/"/g, '\\"');
+    const pos = esq.indexOf('</i>' + esc(tit)); if (pos < 0) { sinPieza.push('NO ENCONTRADO en esquemas.html: ' + tit); continue; }
+    const ini = esq.lastIndexOf('<div class=\\"vis\\">', pos); let d = 0, i = ini, fin = -1;
+    while (ini >= 0 && i < esq.length) { const a = esq.indexOf('<div', i), b = esq.indexOf('</div>', i); if (b < 0) break; if (a >= 0 && a < b) { d++; i = a + 4; } else { d--; i = b + 6; if (d === 0) { fin = i; break; } } }
+    if (ini < 0 || fin < 0) { sinPieza.push('BLOQUE SIN CERRAR: ' + tit); continue; }
+    const html = new Function('return "' + esq.slice(ini, fin) + '"')();
+    // a qué artículo va: la ficha del Exprés cuyo título coincide con «despues»; si no está en el Exprés, por el número y la norma
+    const dl = despues.replace(/\s+/g, ' ').trim(); const f = fichas.find(x => x.t === dl) || fichas.find(x => x.t.startsWith(dl)) || fichas.find(x => dl.startsWith(x.t) && x.t.length > 12);
+    let pid = cmap[despues] || cmap[tit] || null;
+    if (pid) {} else if (f) pid = f.cur + '-' + f.num[0];
+    else { const n = (dl.match(/^Art[íi]culo\s+(\d+)/i) || [])[1]; const lg = inst.find(i => i.ley_re && new RegExp(i.ley_re, 'i').test(dl + ' ' + tit)) || inst.find(i => !i.ley_re && ids.has(i.id + '-' + n)); if (n && lg) pid = lg.id + '-' + n; }
+    if (!pid || !ids.has(pid)) { sinPieza.push(`SIN ARTÍCULO (${pid || '?'}) «${despues}» → ${tit}`); continue; }
+    (cuadros[pid] = cuadros[pid] || []).push({ t: tit, h: html });
+  }
+}
+ix.forEach(p => { if (cuadros[p.id]) p.cu = cuadros[p.id].length; });
+// cobertura: cuántas preguntas del banco del tema tendrán botón «Ver en mi temario subrayado»
+let cob = { q: 0, e: 0 };
+try {
+  const th = fs.readFileSync('test-oficial-conocimiento.html', 'utf8'), i0 = th.indexOf('window.piezaSubrayado = function'), i1 = th.indexOf('\n  };\n', i0);
+  const S = { piezas: ix, preg, cit: inst.map(i => ({ p: i.id, nombre: i.nombre, re: i.cit, pre: i.pre || null, pre_re: i.pre_re || null, proto: i.proto ? 1 : 0 })) };
+  const hw = {}; new Function('window', th.slice(i0, i1 + 5))(hw);
+  const RQ = new RegExp('\\{"id":"(' + T + '-[^"]+)","pregunta":"((?:[^"\\\\]|\\\\.)*)","opciones"[\\s\\S]{0,3000}?"explicacion":"((?:[^"\\\\]|\\\\.)*)"', 'g');
+  const seen = {}; for (const m of th.matchAll(RQ)) seen[m[1]] = m[3].replace(/\\"/g, '"');
+  for (const [id, e] of Object.entries(seen)) { cob.q++; if (hw.piezaSubrayado(S, id, e)) cob.e++; }
+} catch (er) { console.log('  (sin cobertura de preguntas:', er.message + ')'); }
 const cit = inst.map(i => ({ p: i.id, nombre: i.nombre, re: i.cit, pre: i.pre || null, pre_re: i.pre_re || null, proto: i.proto ? 1 : 0 }));
-fs.writeFileSync(`expres-subrayado/datos-t${T}.js`, `(window.EXSUB=window.EXSUB||{})[${T}]=` + JSON.stringify({ titulo, dir, piezas: ix, preg, cit }) + ';');
-console.log(ix.length, 'recortes (' + ix.filter(p => p.extra).length + ' fuera del Exprés),', Object.keys(preg).length, 'preguntas enlazadas');
+fs.writeFileSync(`expres-subrayado/datos-t${T}.js`, `(window.EXSUB=window.EXSUB||{})[${T}]=` + JSON.stringify({ titulo, dir, piezas: ix, preg, cit, cob }) + ';');
+fs.writeFileSync(`expres-subrayado/cuadros-t${T}.js`, `(window.EXSUB_C=window.EXSUB_C||{})[${T}]=` + JSON.stringify(cuadros) + ';');
+console.log('preguntas con botón:', cob.e + '/' + cob.q);
+console.log(ix.length, 'recortes (' + ix.filter(p => p.extra).length + ' fuera del Exprés),', Object.keys(preg).length, 'preguntas enlazadas,', ix.filter(p => p.m).length, 'con marcas,', Object.values(cuadros).reduce((s, a) => s + a.length, 0), 'cuadros en', Object.keys(cuadros).length, 'artículos');
+sinPieza.forEach(s => console.log('  ⚠', s));

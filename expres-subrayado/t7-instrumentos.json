@@ -1,4 +1,4 @@
 [
  {"id":"a","nombre":"LO 2/1979 TC","inicio":"^T[ÍI]TULO I — Del","cit":"LOTC|LO 2/1979|Ley Orgánica 2/1979"},
- {"id":"c","nombre":"LO 1/1982","inicio":"^PRE[ÁA]MBULO · CAP","cit":"LO 1/1982|Ley Orgánica 1/1982","pre":"c-pre","pre_re":"62/1978|pre[áa]mbulo de (?:la )?LO 1/1982"}
+ {"id":"c","nombre":"LO 1/1982","inicio":"^PRE[ÁA]MBULO · CAP","cit":"LO 1/1982|Ley Orgánica 1/1982","ley_re":"intromisi|consentimiento|persona fallecida|tutela judicial frente|honor","pre":"c-pre","pre_re":"62/1978|pre[áa]mbulo de (?:la )?LO 1/1982"}
 ]

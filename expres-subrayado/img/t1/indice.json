@@ -108,6 +108,24 @@
   ]
  },
  {
+  "id": "e-20",
+  "nombre": "Estatuto de Roma · Artículo 20",
+  "img": "e-20.jpg",
+  "wh": [
+   1075,
+   438
+  ]
+ },
+ {
+  "id": "e-21",
+  "nombre": "Estatuto de Roma · Artículo 21",
+  "img": "e-21.jpg",
+  "wh": [
+   1075,
+   871
+  ]
+ },
+ {
   "id": "e-53",
   "nombre": "Estatuto de Roma · Artículo 53",
   "img": "e-53.jpg",
@@ -933,6 +951,15 @@
   "wh": [
    1075,
    312
+  ]
+ },
+ {
+  "id": "n-10",
+  "nombre": "Estatuto del Consejo de Europa · Artículo 10",
+  "img": "n-10.jpg",
+  "wh": [
+   1075,
+   186
   ]
  },
  {
