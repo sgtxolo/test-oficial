@@ -4,6 +4,7 @@
 <title>Exprés subrayado</title>
 <link rel="stylesheet" href="expres-subrayado/esquema.css">
 <link rel="stylesheet" href="expres-subrayado/exprestyle.css">
+<link rel="stylesheet" href="expres-subrayado/fuente.css">
 <style>
 :root{--fondo:#f5f4ee;--panel:#fff;--panel-alt:#eeece3;--texto:#1f2a24;--gris:#767a70;--texto-gris:#767a70;--borde:#e2e0d5;--verde-osc:#163f30;--verde:#1c4d3c;--verde-med:#2f6b52;--verde-suave:#e7efe8;--ambar:#e0a800;--ambar-bg:#fff4d6;--rojo:#c0392b;--ok:#2f9e6e;--dud:#e0a800;--mal:#d1554a;--card:#fff;--card-alt:#eeece3;--examen-bg:#fff4d6;--examen-borde:#e0a800;--examen-txt:#7a5b00;--radio:18px;--radio-sm:12px;--ancho:980px;--sombra:0 1px 3px rgba(20,40,30,.12),0 6px 18px rgba(20,40,30,.06);font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif}
 :root[data-theme="dark"]{--card:#1e2523;--card-alt:#262f2b;--examen-bg:#3a2f12;--examen-txt:#f0c95a;--fondo:#141917;--panel:#1e2523;--panel-alt:#262f2b;--texto:#eef1ee;--gris:#9aa39c;--texto-gris:#9aa39c;--borde:#333d37;--verde-osc:#7fd9ac;--verde:#3f8a68;--verde-med:#57a683;--verde-suave:#16332a;--ambar:#e0a800;--ambar-bg:#3a2f12;--rojo:#ef7a6c;--sombra:0 1px 3px rgba(0,0,0,.4)}
@@ -133,6 +134,7 @@ pm-m{display:inline}
 .pm-sq{box-shadow:0 0 0 2px var(--pmc);background:transparent}
 .pm-ci{box-shadow:0 0 0 2px var(--pmc);border-radius:99px;padding:0 3px}
 .pm-fl::after{content:attr(data-fl);color:var(--pmc);font-weight:900;margin-left:3px}
+.head-sellos .ex-p.ex-r,.head-sellos .ex-p.ex-of{width:auto;min-width:24px;padding:0 6px;white-space:nowrap}
 /* preparar impresión */
 .imp-fila{border:1px solid var(--borde);border-radius:12px;padding:8px 10px;margin-top:6px;background:var(--panel)}
 .imp-fila .imp-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.imp-fila .imp-n{flex:1;min-width:160px;font-weight:700;font-size:14px}
@@ -153,7 +155,15 @@ pm-m{display:inline}
   #zonaImp.bn{filter:grayscale(1)}
   #zonaImp .pieza{break-inside:avoid-page;margin:0 0 5mm}
   #zonaImp .imgw img{width:100%;display:block;cursor:auto}
-  #zonaImp .ex-ficha{box-shadow:none;margin:0}
+  /* mismo tamaño de letra que el PDF de Esquemas (equivale al temario oficial): letra Source Sans 3 de 14 px, interlineado corto y títulos en rojo */
+  #zonaImp{font-family:"Source Sans 3","Myriad Pro","Segoe UI",Arial,sans-serif;text-align:justify}
+  #zonaImp .ex-ficha{box-shadow:none;margin:0 0 3mm}
+  #zonaImp .ex-fb p{font-size:14px!important;line-height:1.3!important;margin:2px 0!important}
+  #zonaImp .ex-fb{padding:3px 8px 4px!important;line-height:1.28!important}
+  #zonaImp .ex-fh{font-size:14px!important;padding:4px 8px!important;color:#c8102e;text-transform:uppercase;break-after:avoid;page-break-after:avoid}
+  #zonaImp .ex-fh .ex-ir,#zonaImp .ex-rec-b,#zonaImp .ex-rec,#zonaImp .xp-vis,#zonaImp .ex-menos{display:none!important}
+  #zonaImp .ex-plg.on>.ex-plg-t{background:#e3e5e8!important;border-radius:3px}
+  #zonaImp .vis-t{break-after:avoid;page-break-after:avoid}
   #zonaImp .vis{break-inside:avoid;margin:0 0 4mm}
 }
 body.marcando .imgw img{cursor:crosshair}
@@ -176,6 +186,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
   <h1 id="tit">Exprés · Temario subrayado</h1>
   <button class="ib" id="b-panel" title="Panel de estudio">🎯 <span class="txt-b">Panel</span></button>
   <button class="ib" id="b-marcas" title="Subrayar y dibujar sobre tu temario">✏️ <span class="txt-b">Marcas</span></button>
+  <button class="ib" id="b-sync" title="Sincronizar con tus otros dispositivos">☁</button>
   <button class="ib" id="b-imp" title="Preparar impresión (elige qué versión de cada artículo)">🖨</button>
   <button class="ib" id="b-herr" title="Herramientas">🛠</button>
   <button class="ib" id="b-tema" title="Modo oscuro">🌙</button>
@@ -203,7 +214,7 @@ const NOMBRES = ['Derechos humanos', 'Terrorismo internacional', 'Tratados de la
 const nomTema = n => 'Tema ' + n + '.- ' + (NOMBRES[n - 1] || '');
 let st = {vis: {}, dif: {}, nota: {}, ent: {}, esq: {}, pin: {}, ult: {}, temas: {}, plazos: [], examen: '2027-07-01', escala: 100, vista: 'expres', extras: false, modoEsq: false};
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || '{}')); const v0 = JSON.parse(localStorage.getItem('exsub-vis') || '{}'); for (const k in v0) if (v0[k] && st.vis[k] === undefined) st.vis[k] = 1; } catch (e) {}
-const guarda = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) {} };
+const guarda = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) {} if (window.syncMarca) window.syncMarca(); };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
 let tema = null, filtro = 'todos', inst = 'todas', marca = null, busca = '', dest = null, destAp = null;
 const key = (t, id) => t + '/' + id;
@@ -241,7 +252,7 @@ function aviso(t) { const e = document.createElement('div'); e.className = 'toas
 function menu() {
   $('#menu').innerHTML = '<button data-a="vista">' + (st.vista === 'expres' ? '📄 Ver siempre artículos enteros' : '⚡ Ver versión Exprés (recortada)') + '</button>'
     + '<button data-a="extras">' + (st.extras ? '🙈 Ocultar artículos fuera del Exprés' : '👁️ Mostrar artículos fuera del Exprés') + '</button><hr>'
-    + '<button data-a="print">🖨️ Imprimir / guardar PDF</button><button data-a="exp">⬇️ Exportar mi progreso</button><button data-a="imp">⬆️ Importar progreso</button><hr>'
+    + '<button data-a="sync">☁ Sincronizar con mis otros dispositivos</button><button data-a="print">🖨️ Imprimir / guardar PDF</button><button data-a="exp">⬇️ Exportar mi progreso</button><button data-a="imp">⬆️ Importar progreso</button><hr>'
     + '<a href="esquemas.html">📘 Ir a Esquemas</a><a href="test-oficial-conocimiento.html">📝 Ir al Test de conocimiento</a><hr><button data-a="reset">🗑️ Borrar mi progreso</button>';
 }
 $('#b-menu').onclick = e => { e.stopPropagation(); menu(); $('#menu').classList.toggle('oculto'); };
@@ -252,6 +263,7 @@ function accionMenu(a) {
   if (a === 'vista') { st.vista = st.vista === 'expres' ? 'completo' : 'expres'; guarda(); render(); aviso(st.vista === 'expres' ? 'Versión Exprés' : 'Artículos enteros'); }
   if (a === 'extras') { st.extras = !st.extras; guarda(); render(); }
   if (a === 'print') imprimirPanel();
+  if (a === 'sync') sincronizar(true);
   if (a === 'exp') { const b = new Blob([JSON.stringify(st)], {type: 'application/json'}), u = document.createElement('a'); u.href = URL.createObjectURL(b); u.download = 'progreso-expres-subrayado.json'; u.click(); }
   if (a === 'imp') { const f = document.createElement('input'); f.type = 'file'; f.accept = '.json'; f.onchange = () => f.files[0].text().then(tx => { try { const n = JSON.parse(tx); for (const k of ['vis', 'dif', 'nota', 'ent', 'esq', 'pin', 'ult', 'temas', 'marks', 'tm', 'cm']) st[k] = Object.assign({}, st[k], n[k] || {}); if (n.plazos) st.plazos = n.plazos; if (n.examen) st.examen = n.examen; guarda(); render(); aviso('Progreso importado'); } catch (er) { aviso('Archivo no válido'); } }); f.click(); }
   if (a === 'reset' && confirm('¿Borrar los vistos, difíciles, notas y el control de temas de este dispositivo?')) { st = Object.assign(st, {vis: {}, dif: {}, nota: {}, ent: {}, esq: {}, pin: {}, ult: {}, temas: {}, plazos: [], marks: {}, tm: {}, cm: {}}); guarda(); render(); }
@@ -768,6 +780,13 @@ function fichaExpres(t, p) {
 function fichaNodo(t, p) {
   const html = fichaExpres(t, p); if (!html) return null;
   const d = document.createElement('div'); d.innerHTML = html; const f = d.firstChild, hd = f.querySelector('.ex-fh'), mk = (txt, cl) => { const b = document.createElement('span'); b.className = cl; b.dataset.t = txt; return b; };
+  // ficha de varios artículos («Artículos 11, 12 y 13»): se queda solo con los párrafos del artículo de esta pieza
+  const n = +p.id.split('-')[1];
+  if (hd && /^Art[íi]culos\s/i.test(hd.textContent)) {
+    let art = null; const arts = new Set(), ps = [...f.querySelectorAll('.ex-fb > p')];
+    ps.forEach(pp => { const m = pp.innerHTML.match(/^\s*(?:<span[^>]*>[^<]*<\/span>\s*)*<b>Art\.\s*(\d+)/); if (m) art = +m[1]; pp.dataset.art = art === null ? '' : art; if (art !== null) arts.add(art); });
+    if (arts.size >= 2 && arts.has(n)) { ps.forEach(pp => { if (pp.dataset.art !== '' && +pp.dataset.art !== n) pp.remove(); }); f.dataset.sub = '1'; hd.innerHTML = hd.innerHTML.replace(/^Art[íi]culos\s+[^—]*—/, 'Artículo ' + n + ' —'); }
+  }
   if (hd) { hd.querySelectorAll('.ex-sello').forEach(x => x.remove()); const m = p.m || {}, hs = document.createElement('span'); hs.className = 'head-sellos';
     if (m.exof) hs.appendChild(mk('EXOF', 'ex-p ex-of')); if (m.ex) hs.appendChild(mk('EX', 'ex-p')); if (m.ast) hs.appendChild(mk('✱', 'ex-p ex-ast')); (m.r || []).forEach(r => hs.appendChild(mk('R' + r, 'ex-p ex-r'))); hd.appendChild(hs); }
   f.querySelectorAll('.ex-fb p').forEach(pp => {   // sellos de cada párrafo, con la misma regla que Esquemas
@@ -838,7 +857,7 @@ async function lanzaImp() {
   for (const p of D[t].piezas) {
     const s = sel[p.id]; if (!s || !(s.s || s.x || s.e)) continue; const div = document.createElement('div'); div.className = 'pieza';
     if (s.s) { const k = key(t, p.id), rec = recortada(t, p), w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = '<img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh); div.appendChild(w); n++; }
-    if (s.x && p.fx !== undefined && !hechas.has(p.fx)) { const f = fichaNodo(t, p); if (f) { hechas.add(p.fx); div.appendChild(f); n++; } }
+    if (s.x && p.fx !== undefined) { const f = fichaNodo(t, p), clave = p.fx + (f && f.dataset.sub ? '-' + p.id : ''); if (f && !hechas.has(clave)) { hechas.add(clave); div.appendChild(f); n++; } }
     if (s.e) ((C[t] || {})[p.id] || []).forEach((cu, i) => { const e = document.createElement('div'); e.className = 'esqs imp-esq'; e.style.cssText = 'border:0;padding:0;background:none'; e.innerHTML = cu.h; div.appendChild(e); montaVis(e.firstChild, t + '/' + p.id + '/c' + i); n++; });
     z.appendChild(div);
   }
@@ -848,5 +867,86 @@ async function lanzaImp() {
   let hecho = false; const fin = () => { if (hecho) return; hecho = true; document.documentElement.dataset.theme = tema0; z.innerHTML = ''; removeEventListener('afterprint', fin); };
   addEventListener('afterprint', fin); cierra(); setTimeout(() => { window.print(); fin(); }, 150);
 }
+// ---------- SINCRONIZAR entre dispositivos ----------
+// Usa el MISMO repositorio privado de GitHub y el mismo token que Esquemas y el test (localStorage «oficialGhCfg»), pero su propio fichero:
+// backups/expres-subrayado.json. Mezcla de tres vías (lo que había en la última sincronización, lo de este dispositivo y lo de la nube):
+// lo que cambia solo en un sitio se queda; si cambia en los dos, se suman las marcas y gana este dispositivo en lo demás. Nunca borra trabajo de otro dispositivo.
+const GH_CFG = 'oficialGhCfg', GH_PATH = 'backups/expres-subrayado.json', GH_BASE = 'exsub-sync-base';
+const MAPAS = ['vis', 'dif', 'nota', 'ent', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp'];
+const lsObj = k => { try { return JSON.parse(localStorage.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
+const ghCfg = () => lsObj(GH_CFG), hayGh = () => { const c = ghCfg(); return !!(c.repo && c.token); };
+const b64 = s => btoa(unescape(encodeURIComponent(s))), unb64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
+const JJ = v => JSON.stringify(v === undefined ? null : v);
+function estadoSync() { const o = {}; MAPAS.forEach(k => { o[k] = st[k] || {}; }); o.plazos = st.plazos || []; o.examen = st.examen; return o; }
+function unirItem(k, l, r) {
+  if (k === 'nota') return l === r ? l : l + '\n— (otro dispositivo) —\n' + r;
+  if (Array.isArray(l) && Array.isArray(r)) { const vistos = new Set(), o = []; l.concat(r).forEach(x => { const id = x && x.i !== undefined ? 'i' + x.i : JJ(x); if (!vistos.has(id)) { vistos.add(id); o.push(x); } }); return o; }
+  return l;   // en lo demás gana este dispositivo
+}
+function mezcla3(base, loc, rem) {
+  const out = {};
+  MAPAS.forEach(k => {
+    const B = base[k] || {}, L = loc[k] || {}, R = rem[k] || {}, o = {};
+    new Set([...Object.keys(B), ...Object.keys(L), ...Object.keys(R)]).forEach(i => {
+      const b = JJ(B[i]), l = JJ(L[i]), r = JJ(R[i]); let v;
+      if (l === r) v = L[i]; else if (l === b) v = R[i]; else if (r === b) v = L[i]; else v = unirItem(k, L[i], R[i]);
+      if (v !== undefined && v !== null) o[i] = v;
+    });
+    out[k] = o;
+  });
+  const pl = new Set(), plazos = []; (loc.plazos || []).concat(rem.plazos || []).forEach(p => { const id = JJ(p); if (!pl.has(id)) { pl.add(id); plazos.push(p); } });
+  out.plazos = plazos; out.examen = JJ(loc.examen) !== JJ(base.examen) ? loc.examen : (rem.examen || loc.examen);
+  return out;
+}
+let syncOcupado = false, syncTmr = 0;
+function pintaSync(txt, tit, clase) { const b = $('#b-sync'); b.textContent = txt; b.title = tit || 'Sincronizar con tus otros dispositivos'; b.classList.toggle('on', clase === 'on'); b.style.borderColor = clase === 'mal' ? '#c0392b' : ''; }
+window.syncMarca = () => {   // ¿hay cambios sin subir? (se comprueba con calma, no a cada guardado)
+  clearTimeout(syncTmr); syncTmr = setTimeout(() => { if (syncOcupado) return; const sucio = JJ(estadoSync()) !== localStorage.getItem(GH_BASE + '-s'); pintaSync(sucio ? '☁ •' : '☁', sucio ? 'Hay cambios sin sincronizar' : 'Todo sincronizado', sucio ? 'on' : ''); }, 600);
+};
+async function ghApi(opt) { const c = ghCfg(); opt = opt || {}; opt.headers = Object.assign({Authorization: 'Bearer ' + c.token, Accept: 'application/vnd.github+json'}, opt.headers || {}); return fetch('https://api.github.com/repos/' + c.repo + '/contents/' + GH_PATH, opt); }
+async function ghLeer() {
+  const r = await ghApi({cache: 'no-store'}); if (r.status === 404) return {sha: null, estado: {}};
+  if (!r.ok) throw new Error('GitHub respondió ' + r.status + (r.status === 401 ? ' (token no válido o caducado)' : r.status === 403 ? ' (el token no tiene permiso Contents: Read and write)' : ''));
+  const j = await r.json(); let d = {}; try { d = JSON.parse(unb64(j.content)) || {}; } catch (e) {} return {sha: j.sha, estado: d.estado || {}};
+}
+async function sincronizar(manual, soloBajar) {
+  if (!hayGh()) { if (manual) panelGh(); return; }
+  if (syncOcupado) return; syncOcupado = true; pintaSync('☁ …', 'Sincronizando…', 'on');
+  try {
+    for (let intento = 0; intento < 2; intento++) {
+      const rem = await ghLeer(), base = lsObj(GH_BASE), loc = estadoSync(), mez = mezcla3(base, loc, rem.estado);
+      const cambia = JJ(mez) !== JJ(loc);
+      if (cambia) { MAPAS.forEach(k => { st[k] = mez[k]; }); st.plazos = mez.plazos; st.examen = mez.examen; try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) {} }
+      if (!soloBajar && JJ(mez) !== JJ(rem.estado)) {
+        const body = {message: 'Exprés subrayado: sincronización ' + new Date().toISOString().slice(0, 16).replace('T', ' '), content: b64(JSON.stringify({v: 1, ts: Date.now(), estado: mez}))};
+        if (rem.sha) body.sha = rem.sha;
+        const r = await ghApi({method: 'PUT', body: JSON.stringify(body)});
+        if (r.status === 409 || r.status === 422) continue;   // otro dispositivo subió justo ahora: se vuelve a mezclar
+        if (!r.ok) throw new Error('GitHub respondió ' + r.status + ' al subir');
+      }
+      try { localStorage.setItem(GH_BASE, JSON.stringify(mez)); localStorage.setItem(GH_BASE + '-s', JJ(estadoSync())); } catch (e) {}
+      if (cambia) render();
+      pintaSync('☁ ✓', 'Sincronizado ' + new Date().toLocaleTimeString().slice(0, 5), '');
+      if (manual) aviso(cambia ? 'Sincronizado: se han traído cambios de la nube' : 'Sincronizado');
+      break;
+    }
+  } catch (e) { pintaSync('☁ ⚠', String(e.message || e), 'mal'); if (manual) aviso('No se pudo sincronizar: ' + (e.message || e)); }
+  finally { syncOcupado = false; }
+}
+function panelGh() {
+  const c = ghCfg();
+  modal('<h2 style="margin:0 0 8px">☁ Sincronización</h2><p style="font-size:13.5px;color:var(--gris);margin:0 0 10px">Usa el <b>mismo repositorio privado y el mismo token</b> que Esquemas y el Test. Si ya los pusiste allí en este navegador, no hace falta repetirlos: pulsa ☁ otra vez.</p>'
+    + '<label style="font-size:12px">Repositorio (usuario/repositorio)</label><input class="f" id="gh-repo" style="width:100%;margin:4px 0 10px" value="' + esc(c.repo || '') + '">'
+    + '<label style="font-size:12px">Token de GitHub (permiso «Contents: Read and write»)</label><input class="f" id="gh-tok" type="password" style="width:100%;margin:4px 0 10px" placeholder="' + (c.token ? 'ya hay uno guardado; déjalo en blanco para conservarlo' : 'github_pat_…') + '">'
+    + '<p style="font-size:12px;color:var(--gris)">No lo pegues en un ordenador que no sea tuyo. Se guarda solo en este navegador.</p><button class="ebtn on" style="width:100%" id="gh-ok">Guardar y sincronizar</button><button class="ebtn" style="width:100%;margin-top:8px" data-cerrar="1">Cancelar</button>');
+}
+$('#mod').addEventListener('click', e => {
+  if (e.target.id !== 'gh-ok') return; const c = ghCfg(), repo = $('#gh-repo').value.trim().replace(/^https?:\/\/github\.com\//, '').replace(/\.git$/, '').replace(/\/+$/, ''), tok = $('#gh-tok').value.replace(/[\s"'`]/g, '');
+  if (!repo || (!tok && !c.token)) return aviso('Falta el repositorio o el token'); c.repo = repo; if (tok) c.token = tok;
+  try { localStorage.setItem(GH_CFG, JSON.stringify(c)); } catch (er) {} cierra(); sincronizar(true);
+});
+$('#b-sync').onclick = () => sincronizar(true);
+window.syncMarca();
+if (hayGh() && !emb) setTimeout(() => sincronizar(false, true), 1500);   // al abrir solo se BAJA lo nuevo
 entra();
 </script></body></html>

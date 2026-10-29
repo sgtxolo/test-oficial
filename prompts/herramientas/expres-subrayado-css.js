@@ -10,4 +10,6 @@ const cuadros = R.filter(([s, b]) => (s.startsWith('@media') ? /\.(vis|m-)/.test
 const ficha = R.filter(([s]) => !s.startsWith('@') && /\.ex-(ficha|fh|fb|p\b|of|ast|r\b|sello|linea|plg)|\.head-sellos|\.bloque-titulo/.test(s) && !/^(mark|span|u)\./.test(s));
 fs.writeFileSync('expres-subrayado/esquema.css', cuadros.map(([s, b]) => s + b).join('\n'));
 fs.writeFileSync('expres-subrayado/exprestyle.css', ficha.map(([s, b]) => s + b).join('\n'));
+// la letra del temario oficial (Source Sans 3), incluida en esquemas.html
+const fi = h.indexOf('id="fuente-fira"'); fs.writeFileSync('expres-subrayado/fuente.css', h.slice(h.indexOf('>', fi) + 1, h.indexOf('</style>', fi)));
 console.log('cuadros', cuadros.length, 'reglas · fichas', ficha.length, 'reglas');

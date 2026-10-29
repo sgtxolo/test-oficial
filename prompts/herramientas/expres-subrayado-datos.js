@@ -36,17 +36,30 @@ for (const f of trozos) {
   // marcas del temario: EXOF (examen oficial), EX (examen), ✱ (asterisco de la academia), R<n> (ficha «Recuerda»)
   // Misma regla que Esquemas, párrafo a párrafo: EXOF = data-ex EXOF; EX = data-ex EX (o «1») o el párrafo lleva una pregunta oficial de la app (id sin «-ia-») y no es EXOF;
   // ✱ = data-ex «*»; R<n> = data-r del párrafo o del título. La ficha enseña la unión de los sellos de sus párrafos.
-  const mk = {}, rs = [...t.matchAll(/\bR(\d+)\b/g)].map(m => +m[1]);
-  if (/\bEXOF\b/.test(t)) mk.exof = 1; if (/✱/.test(t)) mk.ast = 1;
-  for (const pm of f.matchAll(/<p((?:\s[^>]*)?)>([\s\S]*?)<\/p>/g)) {
-    const at = pm[1], mx = ((at.match(/data-ex="([^"]*)"/) || [])[1] || '').split(',').filter(Boolean);
-    const ofic = [...pm[2].matchAll(/data-q="([^"]+)"/g)].flatMap(x => x[1].split(/[ ,;|]+/)).some(q => q && !/-ia-/.test(q));
-    if (mx.includes('EXOF')) mk.exof = 1; else if (mx.includes('EX') || mx.includes('1') || ofic) mk.ex = 1;
-    if (mx.includes('*')) mk.ast = 1;
-    ((at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').forEach(r => { const n = +(r.match(/\d+/) || [0])[0]; if (n) rs.push(n); });
-  }
-  if (rs.length) mk.r = [...new Set(rs)].sort((a, b) => a - b);
-  piezas.forEach(p => { marcas[p] = mk; fx[p] = fi; });
+  // Fichas con VARIOS artículos («Artículos 11, 12 y 13»): cada párrafo pertenece al artículo de su último «Art. N»; así cada pieza lleva solo lo suyo
+  // (sus marcas y sus preguntas) y al imprimir el Exprés sale solo su parte.
+  let art = null; const pars = [...f.matchAll(/<p((?:\s[^>]*)?)>([\s\S]*?)<\/p>/g)].map(pm => { const m = pm[2].match(/^\s*(?:<span[^>]*>[^<]*<\/span>\s*)*<b>Art\.\s*(\d+)/); if (m) art = +m[1]; return {pm, art}; });
+  const porArt = {}; pars.forEach(x => { if (x.art !== null) (porArt[x.art] = porArt[x.art] || []).push(x.pm); });
+  const hayPorArt = num.length > 1 && num.filter(n => porArt[n]).length >= 2;
+  const marcasDe = (lista, conTitulo) => {
+    const mk = {}, rs = conTitulo ? [...t.matchAll(/\bR(\d+)\b/g)].map(m => +m[1]) : [];
+    if (conTitulo) { if (/\bEXOF\b/.test(t)) mk.exof = 1; if (/✱/.test(t)) mk.ast = 1; }
+    for (const pm of lista) {
+      const at = pm[1], mx = ((at.match(/data-ex="([^"]*)"/) || [])[1] || '').split(',').filter(Boolean);
+      const ofic = [...pm[2].matchAll(/data-q="([^"]+)"/g)].flatMap(x => x[1].split(/[ ,;|]+/)).some(q => q && !/-ia-/.test(q));
+      if (mx.includes('EXOF')) mk.exof = 1; else if (mx.includes('EX') || mx.includes('1') || ofic) mk.ex = 1;
+      if (mx.includes('*')) mk.ast = 1;
+      ((at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').forEach(r => { const n = +(r.match(/\d+/) || [0])[0]; if (n) rs.push(n); });
+    }
+    if (rs.length) mk.r = [...new Set(rs)].sort((a, b) => a - b);
+    return mk;
+  };
+  const rsTit = [...t.matchAll(/\bR(\d+)\b/g)].map(m => +m[1]), hayRp = pars.some(x => /data-r=/.test(x.pm[1]));
+  piezas.forEach(p => {
+    const n = +p.split('-')[1], propia = hayPorArt && porArt[n]; marcas[p] = marcasDe(propia ? propia : pars.map(x => x.pm), !propia); fx[p] = fi;
+    if (propia && !hayRp && p === piezas[0] && rsTit.length) marcas[p].r = [...new Set([...(marcas[p].r || []), ...rsTit])].sort((a, b) => a - b);   // ficha R del título sin párrafo concreto: va al primer artículo
+  });
+  if (hayPorArt) pars.forEach(x => { const pz = x.art !== null && piezas.includes(cur + '-' + x.art) ? cur + '-' + x.art : null; if (pz) for (const m of x.pm[2].matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (q && !preg[q]) preg[q] = pz; }); });
   for (const m of f.matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (!preg[q]) preg[q] = piezas[0]; });
 }
 ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) p.extra = 1; if (marcas[p.id] && Object.keys(marcas[p.id]).length) p.m = marcas[p.id]; });
