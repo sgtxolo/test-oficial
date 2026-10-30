@@ -891,6 +891,27 @@ function resumenImp() {
 }
 const PLGC = {};   // ¿tiene este artículo algún (…) que se pueda abrir en el Exprés?
 function tienePlg(t, p) { const k = t + '/' + p.id; if (PLGC[k] === undefined) { const f = p.fx === undefined ? null : fichaNodo(t, p); PLGC[k] = !!(f && f.querySelector('.ex-plg')); } return PLGC[k]; }
+// Marcas propias sobre el «Exprés con (…) abiertos» (se guardan en st.tm con clave tema/id/d y salen también al imprimir)
+function marcasFicha(f, key) { const vis = f.querySelector('.ex-fb'); if (!vis) return; vis.dataset.k = key; (st.tm[key] || []).forEach((m, i) => envuelve(vis, m.s, m.e, m.k, m.c, i, null)); }
+function fichaEditable(c, t, p) {
+  const key = t + '/' + p.id + '/d'; let tool = 'ul:#1f2a24';
+  const barra = document.createElement('div'); barra.style.cssText = 'display:flex;flex-wrap:wrap;gap:4px;margin:0 0 6px';
+  const bt = [['ul:#1f2a24', 'Subrayar', 'text-decoration:underline'], ['ul:#d32f2f', 'Clave', 'color:#d32f2f;text-decoration:underline'], ['st:#1f2a24', 'Tachar', 'text-decoration:line-through']].concat(CATS.map(x => ['hl:' + x[1], x[0], 'background:' + x[1]])).concat([['del', 'Quitar marca', 'color:#b3261e']]);
+  const cuerpo = document.createElement('div');
+  const pinta = () => { cuerpo.innerHTML = ''; const f = fichaNodo(t, p, true); cuerpo.appendChild(f); marcasFicha(f, key); };
+  bt.forEach(b => { const x = document.createElement('button'); x.className = 'chip'; x.style.cssText = 'padding:2px 8px;font-size:11.5px;' + b[2]; x.textContent = b[1]; x.onclick = () => { tool = b[0]; barra.querySelectorAll('button').forEach(y => y.classList.toggle('on', y === x)); }; if (b[0] === tool) x.classList.add('on'); barra.appendChild(x); });
+  const des = document.createElement('button'); des.className = 'chip'; des.style.cssText = 'padding:2px 8px;font-size:11.5px'; des.textContent = '↶ Deshacer'; des.onclick = () => { (st.tm[key] || []).pop(); guarda(); pinta(); }; barra.appendChild(des);
+  const ayuda = document.createElement('div'); ayuda.style.cssText = 'font-size:11px;color:var(--gris);margin:0 0 6px'; ayuda.textContent = 'Elige una herramienta y selecciona texto para marcarlo. Se imprime así.';
+  cuerpo.addEventListener('click', e => { if (tool !== 'del') return; const m = e.target.closest('.pm'); if (!m) return; (st.tm[key] || []).splice(+m.dataset.tm, 1); guarda(); pinta(); });
+  cuerpo.addEventListener('pointerup', () => setTimeout(() => {
+    if (tool === 'del') return; const sel = getSelection(); if (!sel || sel.isCollapsed || !sel.rangeCount) return;
+    const vis = cuerpo.querySelector('.ex-fb'), r = sel.getRangeAt(0); if (!vis || !vis.contains(r.startContainer) || !vis.contains(r.endContainer)) return;
+    const off = (n, o) => { const q = document.createRange(); q.selectNodeContents(vis); q.setEnd(n, o); return q.toString().length; };
+    const a = off(r.startContainer, r.startOffset), b = off(r.endContainer, r.endOffset); if (b - a < 1) return;
+    const [k, col] = tool.split(':'); (st.tm[key] = st.tm[key] || []).push({s: a, e: b, k, c: col}); sel.removeAllRanges(); guarda(); pinta();
+  }, 30));
+  c.appendChild(barra); c.appendChild(ayuda); c.appendChild(cuerpo); pinta();
+}
 // Vista previa de cómo saldrá cada versión (con el mismo tamaño de letra que al imprimir)
 function previaImp(pv, t, p) {
   pv.innerHTML = ''; pv.style.setProperty('--fz', (st.impOp.fz || 12) + 'px');
@@ -900,7 +921,7 @@ function previaImp(pv, t, p) {
   if (rec) c1.insertAdjacentHTML('beforeend', '<h6 style="margin-top:8px">📑 Mi subrayado entero</h6><img src="' + D[t].dir + p.img + '">');
   const f = fichaNodo(t, p), c2 = col('⚡ Exprés de Esquemas');
   if (f) c2.appendChild(f); else c2.insertAdjacentHTML('beforeend', '<i style="font-size:12px;color:var(--gris)">Este artículo no está como ficha en el Exprés</i>');
-  if (f) { if (tienePlg(t, p)) col('⚡ Exprés con (…) abiertos').appendChild(fichaNodo(t, p, true)); else c2.insertAdjacentHTML('beforeend', '<p style="font-size:11.5px;color:var(--gris);margin:6px 0 0">Este artículo no tiene (…) que abrir: el Exprés normal y el «con (…) abiertos» son iguales.</p>'); }
+  if (f) { if (tienePlg(t, p)) fichaEditable(col('⚡ Exprés con (…) abiertos'), t, p); else c2.insertAdjacentHTML('beforeend', '<p style="font-size:11.5px;color:var(--gris);margin:6px 0 0">Este artículo no tiene (…) que abrir: el Exprés normal y el «con (…) abiertos» son iguales.</p>'); }
   const cu = (C[t] || {})[p.id] || [];
   if (cu.length) { const c4 = col('🧩 Esquema · así saldrá', 'ancho'); cu.forEach((x, i) => { const e = document.createElement('div'); e.className = 'esqs'; e.style.cssText = 'border:0;padding:0;background:none'; e.innerHTML = x.h; c4.appendChild(e); montaVis(e.firstChild, t + '/' + p.id + '/c' + i); }); }
   else col('🧩 Esquema').insertAdjacentHTML('beforeend', '<i style="font-size:12px;color:var(--gris)">Este artículo no tiene esquema</i>');
@@ -964,7 +985,7 @@ async function lanzaImp() {
     const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = '<img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh); div.appendChild(w); n++; };
     if (s.s) imagen(recImp(p));
     if (s.n && p.imgr) imagen(false);
-    [['x', false], ['d', true]].forEach(([fl, desp]) => { if (!s[fl] || p.fx === undefined) return; const f = fichaNodo(t, p, desp), clave = fl + p.fx + (f && f.dataset.sub ? '-' + p.id : ''); if (f && !hechas.has(clave)) { hechas.add(clave); div.appendChild(f); n++; } });
+    [['x', false], ['d', true]].forEach(([fl, desp]) => { if (!s[fl] || p.fx === undefined) return; const f = fichaNodo(t, p, desp), clave = fl + p.fx + (f && f.dataset.sub ? '-' + p.id : ''); if (f && !hechas.has(clave)) { hechas.add(clave); if (desp) marcasFicha(f, t + '/' + p.id + '/d'); div.appendChild(f); n++; } });
     if (s.e) ((C[t] || {})[p.id] || []).forEach((cu, i) => { const e = document.createElement('div'); e.className = 'esqs imp-esq'; e.style.cssText = 'border:0;padding:0;background:none'; e.innerHTML = cu.h; div.appendChild(e); montaVis(e.firstChild, t + '/' + p.id + '/c' + i); n++; });
     z.appendChild(div);
   }
