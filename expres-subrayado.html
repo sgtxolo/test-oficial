@@ -169,12 +169,13 @@ pm-m{display:inline}
 .imp-rango{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:13px}.imp-rango input{width:64px;font:inherit;border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:8px;padding:5px 8px}
 #zonaImp{display:none}
 @media print{
-  @page{size:A4;margin:10mm}
+  @page{size:A4;margin:7mm}
   body>*:not(#zonaImp){display:none!important}
   body{background:#fff!important;color:#000}
   #zonaImp{display:block!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   #zonaImp.bn{filter:grayscale(1)}
   #zonaImp .pieza{break-inside:avoid-page;margin:0 0 5mm}
+  #zonaImp .pbox{overflow:hidden;background:#fff}
   #zonaImp .imgw img{width:100%;display:block;cursor:auto}
   /* mismo tamaño de letra que el PDF de Esquemas (equivale al temario oficial): letra Source Sans 3 de 14 px, interlineado corto y títulos en rojo */
   #zonaImp{font-family:"Source Sans 3","Myriad Pro","Segoe UI",Arial,sans-serif;text-align:justify}
@@ -983,7 +984,7 @@ async function lanzaImp() {
   const t = tema, sel = st.imp[t] || {}, op = st.impOp, z = $('#zonaImp'); z.innerHTML = ''; z.className = op.bn ? 'bn' : ''; z.style.setProperty('--fz', (op.fz || 12) + 'px'); const hechas = new Set(); let n = 0;
   for (const p of D[t].piezas) {
     const s = sel[p.id]; if (!hayAlgo(s)) continue; const div = document.createElement('div'); div.className = 'pieza';
-    const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = '<img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh); div.appendChild(w); n++; };
+    const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = '<img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh); const pb = document.createElement('div'); pb.className = 'pbox'; pb.appendChild(w); div.appendChild(pb); n++; };
     if (s.s) imagen(recImp(p));
     if (s.n && p.imgr) imagen(false);
     [['x', false], ['d', true]].forEach(([fl, desp]) => { if (!s[fl] || p.fx === undefined) return; const f = fichaNodo(t, p, desp), clave = fl + p.fx + (f && f.dataset.sub ? '-' + p.id : ''); if (f && !hechas.has(clave)) { hechas.add(clave); div.appendChild(f); n++; } });
@@ -992,6 +993,7 @@ async function lanzaImp() {
   }
   if (!n) { aviso('No has elegido nada para imprimir'); return; }
   await Promise.all([...z.querySelectorAll('img')].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
+  z.querySelectorAll('.pbox .imgw').forEach(c => { const im = c.querySelector('img'); if (im && im.naturalWidth) recorteBlanco(im, c); });   // quita el margen blanco de los lados: la letra sale más grande
   const tema0 = document.documentElement.dataset.theme; document.documentElement.dataset.theme = 'light';
   let hecho = false; const fin = () => { if (hecho) return; hecho = true; document.documentElement.dataset.theme = tema0; z.innerHTML = ''; removeEventListener('afterprint', fin); };
   addEventListener('afterprint', fin); cierra(); setTimeout(() => { window.print(); fin(); }, 150);
