@@ -33,3 +33,5 @@ fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg));
 cfg.leyes.forEach(l => console.log(l.id, l.nombre, l.paginas.join('-'), l.arts.length, 'arts'));
 const apa = `expres-subrayado/t${T}-apartados.json`;   // apartados que lleva el Exprés (node expres-subrayado-apartados.js N > …); se añaden al config ya escrito
 if (fs.existsSync(apa)) { cfg.apartados = JSON.parse(fs.readFileSync(apa, 'utf8')); fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg)); }
+const irp = `expres-subrayado/t${T}-img-recorte.json`;   // recortes a mano sobre la imagen entera: {"id":{"ap":[..],"rangos":[[y0,y1],..]}} (píxeles de «<id>.jpg»)
+if (fs.existsSync(irp)) { cfg.img_recorte = JSON.parse(fs.readFileSync(irp, 'utf8')); fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg)); }
