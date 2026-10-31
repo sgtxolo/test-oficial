@@ -15,3 +15,9 @@ Nota: algunos scripts tienen el tema (11) y rutas escritas dentro: cambiarlos pa
 3. `TEMA=N py aplicar-propuesta.py N '{"id":{"ap":[..],"rangos":[[..]]},"otro":null}'` — pasa a `tN-img-recorte.json` las propuestas con < 85 % de la altura (más las correcciones a mano; `null` = entero), calcula `ap` y escribe `revision-tN.js`.
 4. `TEMA=N bash reconstruir.sh` — aplica recortes, datos, bloques, cortes y da las páginas.
 5. `cobertura-todas.py` — cobertura de palabras Exprés/foto de todas las piezas sin recorte.
+
+## Herramientas añadidas el 31/10/2026 (T3, T9, T12)
+- `auditar-recortes.py` — `TEMA=N py …` compara cada recorte con el Exprés (recall = lo del Exprés que sí está en el recorte; precisión = lo del recorte que el Exprés lleva). En fichas de varios artículos («Artículos 78 a 80») la métrica engaña porque cada pieza hereda todos los párrafos.
+- `quitar-titulos-finales.py` — quita los últimos rangos que son solo MAYÚSCULAS (títulos de capítulo/sección que se cuelan).
+- `tN-zonas.json` (`{"a-7":[[y0,y1],…]}`) — rangos que `propuesta-lineas.py` ignora (cuadros impresos del PDF que repiten el texto del artículo) y `tN-cola.json` (`{"a-8":1175}`) — recorta por abajo la imagen entera y el OCR de más abajo no cuenta.
+- OJO: `aplicar-propuesta.py` vuelve a añadir cualquier pieza con < 85 %: pasa siempre `null` para los RECUERDA y las piezas manuales en cada llamada.
