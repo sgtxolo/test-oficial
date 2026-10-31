@@ -1543,12 +1543,21 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
       if (/Protocolo/i.test(m[2])){ const q = proto(m[2]); if (q) return q; }
       else { const c = norma(m[2]); if (c && hay(c.p + '-' + m[1])) return c.p + '-' + m[1]; }
     }
-    m = tx.match(/(?:pre[áa]mbulo|exposici[óo]n de motivos)\s+(?:de|del)\s+(?:la |el )?(.{3,110}?)\s+dispone/i);
+    m = tx.match(/(?:pre[áa]mbulo|exposici[óo]n de motivos)(?:\s*\([^)]*\))?\s+(?:de|del)\s+(?:la |el )?(.{3,110}?)\s+dispone/i);   // admite «preámbulo (apartado V) de la LO 3/2018 dispone»
     if (m){
       if (/Protocolo/i.test(m[1])){ const q = proto(m[1]); if (q) return q; }
       else { const c = norma(m[1]); if (c && c.pre && hay(c.pre)) return c.pre; }
     }
+    // «disposición adicional/transitoria/final/derogatoria … de <norma>»: pieza del bloque de disposiciones de esa norma (p. ej. d-da, a-df)
+    m = tx.match(/disposici[óo]n(?:es)?\s+(adicional|transitoria|final|derogatoria)(?:es)?[^.:"]{0,60}?\s+(?:de|del)\s+(?:la |el )?(.{3,110}?)\s+(?:dispone|establece|señala|regula|prev[ée])/i);
+    if (m){ const c = norma(m[2]); const t = {adicional: 'da', transitoria: 'dt', final: 'df', derogatoria: 'dd'}[m[1].toLowerCase()]; if (c && t && hay(c.p + '-' + t)) return c.p + '-' + t; }
     const e = cit.find(c => c.pre_re && c.pre && new RegExp(c.pre_re, 'i').test(tx)); if (e && hay(e.pre)) return e.pre;
+    // último recurso: la norma aparece en algún sitio de la explicación y el artículo / la disposición, en otro
+    { const c = cit.find(c => !c.proto && new RegExp(c.re, 'i').test(tx));
+      if (c){
+        const ar = tx.match(/art(?:ículo|\.)\s*(\d+)/i); if (ar && hay(c.p + '-' + ar[1])) return c.p + '-' + ar[1];
+        const di = tx.match(/disposici[óo]n(?:es)?\s+(adicional|transitoria|final|derogatoria)/i); const t = di && {adicional: 'da', transitoria: 'dt', final: 'df', derogatoria: 'dd'}[di[1].toLowerCase()]; if (t && hay(c.p + '-' + t)) return c.p + '-' + t;
+      } }
     return S.preg[id] || null;
   };
 

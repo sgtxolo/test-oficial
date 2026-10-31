@@ -4712,5 +4712,131 @@
    1075,
    163
   ]
+ },
+ {
+  "id": "d-pre",
+  "nombre": "LO 3/2018 · Preámbulo",
+  "img": "d-pre.jpg",
+  "wh": [
+   1075,
+   10218
+  ]
+ },
+ {
+  "id": "d-da",
+  "nombre": "LO 3/2018 · Disposiciones adicionales",
+  "img": "d-da.jpg",
+  "wh": [
+   1075,
+   11510
+  ]
+ },
+ {
+  "id": "d-dt",
+  "nombre": "LO 3/2018 · Disposiciones transitorias",
+  "img": "d-dt.jpg",
+  "wh": [
+   1075,
+   2131
+  ]
+ },
+ {
+  "id": "d-dd",
+  "nombre": "LO 3/2018 · Disposición derogatoria",
+  "img": "d-dd.jpg",
+  "wh": [
+   1075,
+   434
+  ]
+ },
+ {
+  "id": "d-df",
+  "nombre": "LO 3/2018 · Disposiciones finales",
+  "img": "d-df.jpg",
+  "wh": [
+   1075,
+   11446
+  ]
+ },
+ {
+  "id": "a-da",
+  "nombre": "Ley 39/2015 · Disposiciones adicionales",
+  "img": "a-da.jpg",
+  "wh": [
+   1075,
+   3149
+  ]
+ },
+ {
+  "id": "a-dt",
+  "nombre": "Ley 39/2015 · Disposiciones transitorias",
+  "img": "a-dt.jpg",
+  "wh": [
+   1075,
+   1825
+  ]
+ },
+ {
+  "id": "a-dd",
+  "nombre": "Ley 39/2015 · Disposición derogatoria",
+  "img": "a-dd.jpg",
+  "wh": [
+   1075,
+   1008
+  ]
+ },
+ {
+  "id": "a-df",
+  "nombre": "Ley 39/2015 · Disposiciones finales",
+  "img": "a-df.jpg",
+  "wh": [
+   1075,
+   7348
+  ]
+ },
+ {
+  "id": "t-da",
+  "nombre": "Ley 19/2013 · Disposiciones adicionales",
+  "img": "t-da.jpg",
+  "wh": [
+   1075,
+   2734
+  ]
+ },
+ {
+  "id": "t-df",
+  "nombre": "Ley 19/2013 · Disposiciones finales",
+  "img": "t-df.jpg",
+  "wh": [
+   1075,
+   8265
+  ]
+ },
+ {
+  "id": "r-da",
+  "nombre": "RD 179/2005 · Disposiciones adicionales",
+  "img": "r-da.jpg",
+  "wh": [
+   1075,
+   1947
+  ]
+ },
+ {
+  "id": "r-dd",
+  "nombre": "RD 179/2005 · Disposición derogatoria",
+  "img": "r-dd.jpg",
+  "wh": [
+   1075,
+   196
+  ]
+ },
+ {
+  "id": "r-df",
+  "nombre": "RD 179/2005 · Disposiciones finales",
+  "img": "r-df.jpg",
+  "wh": [
+   1075,
+   366
+  ]
  }
 ]

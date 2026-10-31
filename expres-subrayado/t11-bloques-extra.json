@@ -1,0 +1,16 @@
+[
+{"id":"d-pre","nombre":"LO 3/2018 · Preámbulo","ini":[20,88],"fin":[28,84]},
+{"id":"d-da","nombre":"LO 3/2018 · Disposiciones adicionales","ini":[86,96],"fin":[95,100]},
+{"id":"d-dt","nombre":"LO 3/2018 · Disposiciones transitorias","ini":[95,100],"fin":[96,572]},
+{"id":"d-dd","nombre":"LO 3/2018 · Disposición derogatoria","ini":[96,572],"fin":[97,104]},
+{"id":"d-df","nombre":"LO 3/2018 · Disposiciones finales","ini":[97,104],"fin":[105,780]},
+{"id":"a-da","nombre":"Ley 39/2015 · Disposiciones adicionales","ini":[188,108],"fin":[190,436]},
+{"id":"a-dt","nombre":"Ley 39/2015 · Disposiciones transitorias","ini":[192,98],"fin":[193,400]},
+{"id":"a-dd","nombre":"Ley 39/2015 · Disposición derogatoria","ini":[193,400],"fin":[194,250]},
+{"id":"a-df","nombre":"Ley 39/2015 · Disposiciones finales","ini":[194,250],"fin":[199,780]},
+{"id":"t-da","nombre":"Ley 19/2013 · Disposiciones adicionales","ini":[292,352],"fin":[294,450]},
+{"id":"t-df","nombre":"Ley 19/2013 · Disposiciones finales","ini":[294,450],"fin":[300,780]},
+{"id":"r-da","nombre":"RD 179/2005 · Disposiciones adicionales","ini":[314,100],"fin":[315,470]},
+{"id":"r-dd","nombre":"RD 179/2005 · Disposición derogatoria","ini":[315,470],"fin":[315,578]},
+{"id":"r-df","nombre":"RD 179/2005 · Disposiciones finales","ini":[315,578],"fin":[315,780]}
+]
