@@ -7812,14 +7812,15 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
   }
   function pintaAdd(b){
     var pz = piezaBtn(b), e = pz ? estadoSub(b._t, pz) : 'sin';
-    b.hidden = e === 'dentro';
-    b.classList.toggle('on', e === 'anadido');
-    b.textContent = e === 'anadido' ? '📑✓ En mi subrayado' : '📑➕ Añadir a mi subrayado';
+    b.hidden = false;
+    b.classList.toggle('on', e === 'anadido' || e === 'dentro');
+    b.textContent = e === 'dentro' ? '📑✓ Ya está en mi subrayado' : e === 'anadido' ? '📑✓ En mi subrayado' : '📑➕ Añadir a mi subrayado';
     b.title = e === 'anadido' ? 'Este artículo ya lo añadiste a Mi subrayado. Toca para quitarlo otra vez.' : 'Añade este artículo a tu temario subrayado (expres-subrayado.html), en su sitio entre los demás.';
   }
   function clicAdd(b){
     var t = b._t, pz = piezaBtn(b);
     if (!pz){ avisoX('Este artículo todavía no tiene foto en Mi subrayado (tema ' + t + ').'); return; }
+    if (estadoSub(t, pz) === 'dentro'){ location.href = 'expres-subrayado.html#q=' + encodeURIComponent(b._ids[0]); return; }
     var s = leeX(), k = t + '/' + pz.id, e = estadoSub(t, pz); s.inc = s.inc || {}; s.quit = s.quit || {};
     if (e === 'anadido'){ delete s.inc[k]; avisoX('↩️ Quitado de Mi subrayado: ' + pz.nombre); }
     else { if (esExtra(t, pz)) s.inc[k] = 1; s.quit[k] = 0; avisoX('📑 Añadido a Mi subrayado: ' + pz.nombre); }
