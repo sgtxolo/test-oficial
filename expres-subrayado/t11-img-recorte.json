@@ -127,5 +127,9 @@
 "a-27":{"ap":[],"rangos":[[1715,2160]],"nombre":"Ley 39/2015 · Artículo 27 (esquema)"},
 "a-45":{"ap":[],"rangos":[[855,1275]],"nombre":"Ley 39/2015 · Artículo 45 (esquema)"},
 "a-52":{"ap":[],"rangos":[[318,865]],"nombre":"Ley 39/2015 · Artículos 50 a 52 (esquema)"},
-"a-104":{"ap":[],"rangos":[[770,1425]],"nombre":"Ley 39/2015 · Artículos 100 a 104 (esquema)"}
+"a-104":{"ap":[],"rangos":[[770,1425]],"nombre":"Ley 39/2015 · Artículos 100 a 104 (esquema)"},
+"t-29":{"ap":[],"rangos":[[0,45],[525,578],[632,748],[752,808],[848,1218],[1285,1417]]},
+"a-83":{"ap":[],"rangos":[[0,42],[163,235]]},
+"r-2":{"ap":[],"rangos":[[575,1215]],"nombre":"RD 179/2005 · Artículo 2 (esquema)"},
+"a-22":{"ap":[],"rangos":[[0,40],[430,552]]}
 }
