@@ -8,7 +8,7 @@ from difflib import SequenceMatcher
 from PIL import Image, ImageDraw, ImageFont
 T = os.environ.get('TEMA', '11'); S = os.environ.get('SCRATCH', 'C:/Users/ruben/AppData/Local/Temp/')
 B = 'C:/Users/ruben/Desktop/HTML OFICIAL/'
-PDF = {'1': 'TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf', '9': 'TEMA 9 DERECHO CIVIL-08-08-2026.pdf', '12': 'TEMA 12 - GOBIERNO Y ADMINISTRACION-2026-08-08.pdf', '7': 'TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf', '11': 'TEMA 11 DERECHO ADEMINISTRATIVO-08-08-2026.pdf'}
+PDF = {'1': 'TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf', '3': 'TEMA 3 TRATADOS DE LA UNION EUROPEA-08-08-2026.pdf', '9': 'TEMA 9 DERECHO CIVIL-08-08-2026.pdf', '12': 'TEMA 12 - GOBIERNO Y ADMINISTRACION-2026-08-08.pdf', '7': 'TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf', '11': 'TEMA 11 DERECHO ADEMINISTRATIVO-08-08-2026.pdf'}
 d = pymupdf.open('C:/Users/ruben/Desktop/OFICIAL 2026-27/TEMARIO ESCANEADO 2026-27/' + PDF[T]); DPI = 130; K = DPI / 72
 cfg = json.load(open(B + f'expres-subrayado/t{T}-config.json', encoding='utf-8'))
 ind = {e['id']: e for e in json.load(open(B + f'expres-subrayado/img/t{T}/indice.json', encoding='utf-8'))}
@@ -16,6 +16,8 @@ EX = json.loads(subprocess.run(['node', 'prompts/herramientas/subrayado-revision
 src = open(B + 'prompts/herramientas/expres-subrayado-recortes.py', encoding='utf-8').read(); ns = {'d': d, 're': re, 'pymupdf': pymupdf, 'DPI': DPI, 'K': K}
 for fn in ('es_art', 'encabezados', 'segmentos'):
     m = re.search(r'^def ' + fn + r'\(.*?(?=^def |^res = )', src, flags=re.S | re.M); exec(m.group(0), ns)
+ZON = json.load(open(B + f'expres-subrayado/t{T}-zonas.json', encoding='utf-8')) if os.path.exists(B + f'expres-subrayado/t{T}-zonas.json') else {}
+COLA = json.load(open(B + f'expres-subrayado/t{T}-cola.json', encoding='utf-8')) if os.path.exists(B + f'expres-subrayado/t{T}-cola.json') else {}
 segs = {}
 for ley in cfg['leyes']:
     a, b = ley['paginas']; H2 = ns['encabezados'](a, b)
@@ -36,7 +38,9 @@ def lineas(pid):
         for ws in L.values():
             ws.sort(key=lambda w: w[0]); out.append([off + (min(w[1] for w in ws) - y0) * K, off + (max(w[3] for w in ws) - y0) * K, ' '.join(w[4] for w in ws)])
         off += round((y1 - y0) * K)
-    out.sort(); return out
+    out.sort()
+    zon = ZON.get(pid, []); cola = COLA.get(pid)   # zonas (cuadros impresos, tN-zonas.json) y cola (títulos al final, tN-cola.json): el OCR de ahí no cuenta
+    return [l for l in out if not any(a <= (l[0] + l[1]) / 2 <= b for a, b in zon) and not (cola and l[0] >= cola - 4)]
 def propone(pid):
     tramos = []
     for p in EX[pid]:

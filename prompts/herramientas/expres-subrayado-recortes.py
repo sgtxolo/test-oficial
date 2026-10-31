@@ -30,13 +30,15 @@ def encabezados(a, b):
         W = d[pn].get_text('words')
         for w in W:
             if es_art(w[4]):
-                sig = sorted([x for x in W if abs(x[1] - w[1]) < 4 and x[0] > w[0]], key=lambda x: x[0])
+                if any(es_art(x[4]) and abs(x[1] - w[1]) < 4 and x[0] < w[0] - 2 for x in W): continue   # «(ANTIGUO ARTÍCULO 190 TCE)»: el segundo «ARTÍCULO» de la línea no es cabecera
+                sig =sorted([x for x in W if abs(x[1] - w[1]) < 4 and x[0] > w[0]], key=lambda x: x[0])
                 if sig:
                     m = re.match(r'^(\d+)', re.sub(r'^\W+', '', sig[0][4]))
                     if m: H.append((int(m.group(1)), pn, w[1]))
     H2 = []; ult = None
     for k, h in enumerate(H):
         if ult is not None and h[0] == ult: continue          # «15 bis», «15 ter»: dentro del 15
+        if ult is not None and h[0] > ult + 30 and any(ult < x[0] < h[0] for x in H[k + 1:]): continue   # número suelto de una cita («ARTÍCULO 294» dentro del texto): detrás vienen otros más bajos y seguidos
         if ult is None or h[0] > ult: H2.append(h); ult = h[0]; continue
         sig = next((x for x in H[k + 1:] if x[0] > ult), None)   # número mal leído (p. ej. «1.» en vez de «13.»): se deduce por el hueco
         if sig and sig[0] - ult >= 2: H2.append((ult + 1, h[1], h[2])); ult += 1
