@@ -109,6 +109,11 @@ for m in cfg.get('manual', []):
 for m in cfg.get('paginas', []):
     guarda(m['id'], [img(d[m['pag']], 0, d[m['pag']].rect.height)])
     res.append({'id': m['id'], 'nombre': m['nombre'], 'img': f"{m['id']}.jpg"})
+# «cola»: {"id": y} recorta por abajo la imagen entera (títulos de capítulo, pie de página o el siguiente artículo que se cuelan al final)
+for pid, y in cfg.get('cola', {}).items():
+    ent = next((e for e in res if e['id'] == pid), None)
+    if not ent: continue
+    f = Image.open(f"{out}/{ent['img']}").convert('RGB'); f.crop((0, 0, f.width, min(y, f.height))).save(f"{out}/{ent['img']}", quality=78, optimize=True)
 # recortes a mano sobre la imagen entera ya generada: {"id":{"ap":[..],"rangos":[[y0,y1],..]}} (píxeles de «<id>.jpg»)
 for pid, r in cfg.get('img_recorte', {}).items():
     ent = next((e for e in res if e['id'] == pid), None)

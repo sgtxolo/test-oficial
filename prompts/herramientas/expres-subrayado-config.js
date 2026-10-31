@@ -35,3 +35,6 @@ const apa = `expres-subrayado/t${T}-apartados.json`;   // apartados que lleva el
 if (fs.existsSync(apa)) { cfg.apartados = JSON.parse(fs.readFileSync(apa, 'utf8')); fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg)); }
 const irp = `expres-subrayado/t${T}-img-recorte.json`;   // recortes a mano sobre la imagen entera: {"id":{"ap":[..],"rangos":[[y0,y1],..]}} (píxeles de «<id>.jpg»)
 if (fs.existsSync(irp)) { cfg.img_recorte = JSON.parse(fs.readFileSync(irp, 'utf8')); fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg)); }
+
+const cola = `expres-subrayado/t${T}-cola.json`;   // {"id": y}: recorta por abajo la imagen entera (títulos que se cuelan al final)
+if (fs.existsSync(cola)) { cfg.cola = JSON.parse(fs.readFileSync(cola, "utf8")); fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg)); }
