@@ -2242,20 +2242,17 @@
  },
  {
   "id": "a-122",
-  "nombre": "Ley 39/2015 · Artículo 122",
+  "nombre": "Ley 39/2015 · Artículos 121 y 122 (esquema)",
   "img": "a-122.jpg",
   "imgr": "a-122-r.jpg",
-  "ap": [
-   2,
-   3
-  ],
+  "ap": [],
   "wh": [
    1075,
    2049
   ],
   "whr": [
    1075,
-   320
+   1190
   ]
  },
  {
@@ -2269,20 +2266,17 @@
  },
  {
   "id": "a-124",
-  "nombre": "Ley 39/2015 · Artículo 124",
+  "nombre": "Ley 39/2015 · Artículos 123 y 124 (esquema)",
   "img": "a-124.jpg",
   "imgr": "a-124-r.jpg",
-  "ap": [
-   1,
-   2
-  ],
+  "ap": [],
   "wh": [
    1075,
    1100
   ],
   "whr": [
    1075,
-   238
+   600
   ]
  },
  {
@@ -2304,21 +2298,17 @@
  },
  {
   "id": "a-126",
-  "nombre": "Ley 39/2015 · Artículo 126",
+  "nombre": "Ley 39/2015 · Artículos 125 y 126 (esquema)",
   "img": "a-126.jpg",
   "imgr": "a-126-r.jpg",
-  "ap": [
-   1,
-   2,
-   3
-  ],
+  "ap": [],
   "wh": [
    1075,
    2002
   ],
   "whr": [
    1075,
-   345
+   1225
   ]
  },
  {
