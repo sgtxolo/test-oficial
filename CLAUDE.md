@@ -45,3 +45,6 @@ Idioma: responde SIEMPRE en español. Carpeta de trabajo real: `Escritorio\HTML 
 ## Verificación
 - Sintaxis JS: `node --check` sobre los `.js` (y el `<script>` extraído de los HTML).
 - Subir `CACHE` en `service-worker.js` en cada cambio visible.
+
+## Paso 7 del flujo por tema: Exprés subrayado
+Al cerrar un tema, pasarlo a `expres-subrayado.html` (recortes de las fotos del PDF subrayado del usuario iguales al Exprés, ESQ solo con esquema, páginas tachadas/MOD/raya fuera, impresión continua). Guía completa: sección «FLUJO ACTUALIZADO (31/10/2026)» en `prompts/PROMPT_EXPRES_SUBRAYADO.md`; reglas del usuario en la memoria (`subrayado-reglas-esq-y-mod`). Estado: T1, T7 y T11 hechos (T11 el más completo).

@@ -56,3 +56,32 @@ URL publicada: https://sgtxolo.github.io/test-oficial/expres-subrayado.html
 - Revisar a ojo todos los recortes de cada tema (solo se ha muestreado).
 - El PDF del Tema 1 no trae el texto del Protocolo n.º 4 (solo el Adicional y una lista de Estados): sus preguntas no llevan botón.
 - Probar en móvil: táctil, selección de texto en cuadros, zoom, impresión.
+
+---
+
+# FLUJO ACTUALIZADO (31/10/2026, hecho en el Tema 11): pasar un tema del Exprés al «Exprés subrayado»
+
+Úsalo cuando el tema ya está terminado en Esquemas (preguntas, esquema, marcas y Exprés `expres/tN.js`). Objetivo del usuario: un **temario normal pero resumido**, que se estudie bloque por bloque y se imprima (un temario de ~300 páginas → ~70-100), con **sus propios subrayados** (capturas del PDF escaneado). Cobertura: **todas las preguntas del tema deben poder abrir su artículo** en el subrayado (o, si no está allí, en Esquemas).
+
+## Reglas del usuario (obligatorias)
+1. **El recorte debe ser igual que el Exprés**: las mismas frases/apartados/letras, con «(…)» entre tramos. No vale recortar por apartados enteros si el Exprés corta dentro de un apartado.
+2. **Artículos «ESQ»** (círculo a mano con «ESQ»/«Esq» junto al título): el texto del artículo NO está subrayado porque el usuario lo tiene en un esquema (cuadro). En el subrayado se **quita el texto y se deja solo el cuadro** de la foto (que sí está subrayado). Si el cuadro está en la foto de otro artículo vecino (p. ej. «121 y 122»), se pone ahí y los otros quedan ocultos («está en el esquema»). Detectarlos con hojas de contacto de la franja del título (no con automatismos).
+3. **Páginas tachadas con X o «MOD»/modificado, o con una raya en diagonal / «derogado» / «no está»**: no se añaden; se busca la actualización más adelante en el PDF. Los artículos con raya no entran (lista `tachado`).
+4. **No bajar la letra**: la escala de impresión se deja al usuario (opción «Tamaño de las fotos»: Grande/Media/Pequeña; **Media ≈ tamaño del temario oficial**). Objetivo: acercarse a las páginas del Exprés, pasarse unas pocas es aceptable. Imprimir seguido, sin huecos en blanco, sin cortar renglones.
+5. **Botón por artículo** «Artículo entero / Ver Exprés» (ya hecho en la app) y botón «➕ Añadir a mi subrayado» (suma apartados/trozos que el Exprés no lleva).
+6. No hace falta pedirle capturas al usuario para los cuadros: se leen de las fotos. Si algo no se ve claro, avisarle.
+7. Responder siempre en español; verificar en el navegador y **no dar nada por terminado sin decir qué no se ha probado** (impresión real, móvil).
+
+## Pasos
+1. **Base**: seguir «Pasos para un tema nuevo» de arriba (config, `expres-subrayado-recortes.py`, `datos.js`, integrar scripts en `expres-subrayado.html`, `esquemas.html` (TEMAS), `service-worker.js`, subir CACHE). Esto da recortes por apartados numerados.
+2. **Auditoría de apartados** (rápida): comparar los apartados numerados del Exprés con los del recorte (script de la sesión: `aud2.js`; lógica = números `N.` al inicio de los `<p>` del Exprés vs `ap` del índice). Corregir los que no coinciden.
+3. **Piezas que se ven enteras y el Exprés solo lleva una parte** (el caso grande: ~50 % de las piezas sin recorte en el T11): calcular cobertura de palabras Exprés/foto (script `sinrec.py`, umbral < 60 %) y revisar a ojo cada una.
+4. **Revisión a ojo**: generar imágenes comprimidas con coordenadas originales (`ov2.py`/`stack.py`: quitan blancos y rotulan la `y` real), leer el Exprés del artículo (`dump.js`) y escribir los rangos en píxeles en `expres-subrayado/tN-img-recorte.json` (`{"a-77":{"ap":[2],"rangos":[[0,45],[135,288]],"nombre":"opcional"}}`). Incluir siempre la cabecera del artículo. Las fotos a veces traen artículos vecinos o cuadros; no incluirlos.
+5. **Aplicar**: `py prompts/herramientas/expres-subrayado-aplicar.py N id,id,…` (genera `<id>-r.jpg` con franja «(…)»; **ajusta los cortes a los huecos entre renglones** para no cortar líneas). Luego `expres-subrayado-datos.js`, `expres-subrayado-bloques.py` (→ `tN-bloques.json` + `bloques-tN.js` para «Añadir a mi subrayado»), `expres-subrayado-cortes.py` (→ `cortes-tN.js`: tiras de impresión entre renglones) y `revision-tN.js` (`todos`, `hechos`, `esq`, `tachado`).
+6. **ESQ y tachados**: añadir ids a `revision-tN.js` (`esq`: ocultos; `tachado`: no entran) y poner el recorte del cuadro con `rangos` + `nombre` («… Artículos 121 y 122 (esquema)»).
+7. **Cobertura de preguntas**: `node prompts/herramientas/expres-subrayado-sinboton.js N` (lista las que no abren el subrayado y qué citan). Para preámbulos y disposiciones adicionales/transitorias/finales que citan las preguntas: añadir piezas (marcadas `extra` = fuera del Exprés, no se imprimen por defecto) recortadas del PDF, y ampliar `piezaSubrayado()` en `test-oficial-conocimiento.html` si hace falta reconocer la cita. Comprobar también que la pregunta tiene sitio en Esquemas (`window.MAPA_PREG`): **no siempre lo tiene**.
+8. **Verificar**: cargar la página, 0 imágenes rotas, tarjetas = piezas del Exprés, sin errores de consola, sintaxis de los `.js` (`node --check`), botón por artículo, «Añadir a mi subrayado», vista previa de impresión. Pedir al usuario una **impresión real** y las páginas que salen (en el T11: 105 págs con «Grande»; calibrado en `estPag`).
+9. **Cerrar**: subir CACHE, commit + push, actualizar la memoria del tema, y decir honestamente qué no se probó.
+
+## Herramientas (prompts/herramientas/)
+`expres-subrayado-recortes.py` · `-config.js` · `-datos.js` · `-apartados.js` · `-aplicar.py` · `-bloques.py` · `-cortes.py` · `-esq.py` (orientativo) · `-auditoria.py` · `-sinboton.js`. Los scripts de revisión visual están en `prompts/herramientas/subrayado-revision/` (ver su LEEME.md).
