@@ -254,6 +254,9 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres-subrayado/cortes-t1.js"></script>
 <script src="expres-subrayado/revision-t1.js"></script>
 <script src="expres-subrayado/bloques-t7.js"></script>
+<script src="expres-subrayado/bloques-t9.js"></script>
+<script src="expres-subrayado/cortes-t9.js"></script>
+<script src="expres-subrayado/revision-t9.js"></script>
 <script src="expres-subrayado/bloques-t12.js"></script>
 <script src="expres-subrayado/cortes-t12.js"></script>
 <script src="expres-subrayado/revision-t12.js"></script>
@@ -261,20 +264,24 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres-subrayado/revision-t7.js"></script>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
+<script src="expres-subrayado/datos-t9.js"></script>
 <script src="expres-subrayado/datos-t12.js"></script>
 <script src="expres-subrayado/datos-t11.js"></script>
 <script src="expres-subrayado/tapa-t1.js"></script>
 <script src="expres-subrayado/tapa-t7.js"></script>
+<script src="expres-subrayado/tapa-t9.js"></script>
 <script src="expres-subrayado/tapa-t12.js"></script>
 <script src="expres-subrayado/tapa-t11.js"></script>
 <script src="expres-subrayado/mejoras.js"></script>
 <script src="expres-subrayado/mejoras2.js"></script>
 <script src="expres-subrayado/cuadros-t1.js"></script>
 <script src="expres-subrayado/cuadros-t7.js"></script>
+<script src="expres-subrayado/cuadros-t9.js"></script>
 <script src="expres-subrayado/cuadros-t12.js"></script>
 <script src="expres-subrayado/cuadros-t11.js"></script>
 <script src="expres/t1.js"></script>
 <script src="expres/t7.js"></script>
+<script src="expres/t9.js"></script>
 <script src="expres/t12.js"></script>
 <script src="expres/t11.js"></script>
 <script>
@@ -294,13 +301,18 @@ const guarda = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } cat
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
 let tema = null, filtro = 'todos', inst = 'todas', marca = null, busca = '', dest = null, destAp = null;
 const key = (t, id) => t + '/' + id;
+// Esquemas (otra pestaña o este mismo marco) añade o devuelve artículos: se recoge al momento
+addEventListener('storage', e => { if (e.key !== LS || !e.newValue) return; try { const n = JSON.parse(e.newValue); st.inc = n.inc || {}; st.quit = n.quit || {}; if (tema !== null) verTema(); } catch (er) {} });
 const hoyISO = (d = new Date()) => new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10);
 const fmtF = iso => iso ? iso.split('-').reverse().join('/') : '';
 const diasHasta = iso => Math.round((new Date(iso + 'T00:00:00') - new Date(hoyISO() + 'T00:00:00')) / 864e5);
 // ---------- datos derivados ----------
 const inv = {}; for (const t in D) { inv[t] = {}; for (const q in D[t].preg) (inv[t][D[t].preg[q]] = inv[t][D[t].preg[q]] || []).push(q); }
 const quitado = (t, id) => !!(st.quit || {})[key(t, id)];   // artículos que has quitado de tu temario (se pueden devolver)
-const visibles = t => D[t].piezas.filter(p => !p.extra && !quitado(t, p.id));
+// «📑➕ Añadir a mi subrayado» (desde Esquemas, completo o Exprés): mete en tu temario un artículo que estaba fuera (ESQ, tachado, fuera del Exprés)
+const anadidoP = (t, p) => !!p.extra && !!(st.inc || {})[key(t, p.id)];
+const fueraP = (t, p) => !!p.extra && !anadidoP(t, p);
+const visibles = t => D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id));
 const hechos = t => visibles(t).filter(p => st.vis[key(t, p.id)]).length;
 const instDe = (t, p) => { const l = p.id.split('-')[0]; return (D[t].cit || []).find(c => c.p === l) || {}; };
 const leerStats = () => { try { return (JSON.parse(localStorage.getItem('oficialAppState_v1') || '{}').qStats) || {}; } catch (e) { return {}; } };
@@ -405,7 +417,7 @@ function usaTool(t) {
 }
 function indice() {
   const t = tema; let h = '<h2 style="margin:0 0 8px">📑 Índice con progreso</h2>', g = null;
-  D[t].piezas.filter(p => !p.extra).forEach(p => { const gn = instDe(t, p).nombre || ''; if (gn !== g) { h += '<div class="grupo">' + esc(gn) + '</div>'; g = gn; }
+  D[t].piezas.filter(p => !fueraP(t, p)).forEach(p => { const gn = instDe(t, p).nombre || ''; if (gn !== g) { h += '<div class="grupo">' + esc(gn) + '</div>'; g = gn; }
     h += '<div class="fila-t" data-salta="' + p.id + '"><span>' + (st.vis[key(t, p.id)] ? '✅' : '○') + '</span><b>' + esc(p.nombre.replace(/^.* · /, '')) + '</b></div>'; });
   modal(h + '<button class="ebtn" style="width:100%;margin-top:14px" data-cerrar="1">Cerrar</button>', true);
 }
@@ -476,7 +488,7 @@ function dash() {
 // ---------- vista de un tema ----------
 function infoTema() {
   const t = tema, tt = st.temas[t] || {}, S = leerStats(), ps = D[t].piezas, c = {ok: 0, dud: 0, mal: 0, nuevo: 0};
-  ps.filter(p => !p.extra).forEach(p => { const e = estadoDe(t, p, S); if (e) c[e.c]++; });
+  ps.filter(p => !fueraP(t, p)).forEach(p => { const e = estadoDe(t, p, S); if (e) c[e.c]++; });
   const co = D[t].cob || {q: 0, e: 0}, pcq = co.q ? Math.round(co.e * 100 / co.q) : 0, nv = visibles(t).length, ne = ps.length - nv, nc = Object.values(C[t] || {}).reduce((s, a) => s + a.length, 0);
   const prox = tt.prox ? ' <small>Próximo repaso: ' + fmtF(tt.prox) + ' (' + (diasHasta(tt.prox) <= 0 ? 'hoy' : 'en ' + diasHasta(tt.prox) + ' días') + ')</small>' : '';
   $('#info').innerHTML = '<div class="ttema">Tema ' + t + '.- ' + esc((NOMBRES[t - 1] || '').toUpperCase()) + '</div><h2 class="htema">' + esc(D[t].titulo.replace(/^Tema \d+ · /, '')) + ': tu temario subrayado en versión Exprés</h2>'
@@ -504,7 +516,7 @@ function entera(p) {
 }
 function pasaFiltro(p) {
   const t = tema, k = key(t, p.id), q = busca.trim().toLowerCase(), m = p.m || {};
-  if (p.extra && !st.extras && p.id !== dest) return false;
+  if (fueraP(t, p) && !st.extras && p.id !== dest) return false;
   if (p.id !== dest && (st.verQuit ? !quitado(t, p.id) : quitado(t, p.id))) return false;
   if (filtro === 'pend' && st.vis[k]) return false; if (filtro === 'vistos' && !st.vis[k]) return false; if (filtro === 'dif' && !st.dif[k]) return false;
   if (filtro === 'nota' && !st.nota[k]) return false; if (filtro === 'preg' && !(inv[t][p.id] || []).length) return false; if (filtro === 'esq' && !(C[t] || {})[p.id]) return false;
@@ -570,7 +582,7 @@ function lista() {
     const src = D[t].dir + (ent || !p.imgr ? p.img : p.imgr), wh = ent || !p.imgr ? p.wh : p.whr, abreEsq = st.esq[k] || st.modoEsq;
     if (g !== gAnt) { h += '<div class="grupo">' + esc(g) + '</div>'; gAnt = g; }
     h += '<div class="card' + (est && est.c !== 'nuevo' ? ' st-' + est.c : '') + (st.vis[k] ? ' visto' : '') + (p.id === dest ? ' diana' : '') + '" id="c-' + p.id + '" data-id="' + p.id + '"><div class="cab">' + marcasHTML(p) + '<div class="nom">' + esc(p.nombre.replace(/^.* · /, '')) + '<small>' + esc(g) + (p.ap && !ent ? ' · apartados ' + p.ap.join(', ') : '') + '</small></div>'
-      + (p.extra ? '<span class="tag extra">' + (p.tachado ? 'tachado en tu temario: no entra' : p.esq ? 'está en el esquema' : 'fuera del Exprés') + '</span>' : '')
+      + (anadidoP(t, p) ? '<span class="tag" title="Lo añadiste tú desde Esquemas; con 🗑️ Quitar artículo vuelve a quedar fuera">➕ añadido por ti</span>' : p.extra ? '<span class="tag extra">' + (p.tachado ? 'tachado en tu temario: no entra' : p.esq ? 'está en el esquema' : 'fuera del Exprés') + '</span>' : '')
       + ((((window.EXSUB_REV || {})[t] || {}).todos || []).includes(p.id) && p.imgr ? (((window.EXSUB_REV[t].hechos || []).includes(p.id)) ? '<span class="tag revok" title="El recorte coincide con lo que lleva el Exprés">✓ Recorte revisado</span>' : '<span class="tag revpend" title="Este recorte todavía no se ha ajustado a las frases exactas del Exprés">⏳ Falta revisar el recorte</span>') : '') + (est ? '<span class="stc ' + est.c + '">' + est.txt + '</span>' : '') + '</div>'
       // En el móvil los botones quedan solo con su icono (el texto va en <span class="lb">, que se oculta); «Leer» abre el modo lectura a pantalla completa
       + '<div class="acc"><button class="sb leer" data-a="leer" title="Leer este artículo a pantalla completa">⛶<span class="lb"> Leer</span></button>'
@@ -644,7 +656,7 @@ $('#m').addEventListener('click', e => {
   if (a === 'hfij') { const i = +(e.target.closest('[data-h]').dataset.h), l = ((st.fij = st.fij || {})[k] = st.fij[k] || []), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); return; }
   if (a === 'addx') { st.add[k] = []; recarga(); }
   if (a === 'esq') { st.esq[k] = st.esq[k] ? 0 : 1; recarga(); }
-  if (a === 'quit') { st.quit = st.quit || {}; if (st.quit[k]) { st.quit[k] = 0; aviso('↩️ Artículo devuelto'); } else { st.quit[k] = 1; aviso('🗑️ Artículo quitado (lo encuentras en «Quitados»)'); } if (!D[tema].piezas.some(x => quitado(tema, x.id))) st.verQuit = false; recarga(); return; }
+  if (a === 'quit') { const pz0 = D[tema].piezas.find(x => x.id === id); if (pz0 && anadidoP(tema, pz0)) { delete st.inc[k]; aviso('↩️ Artículo fuera otra vez de tu subrayado'); recarga(); return; } st.quit = st.quit || {}; if (st.quit[k]) { st.quit[k] = 0; aviso('↩️ Artículo devuelto'); } else { st.quit[k] = 1; aviso('🗑️ Artículo quitado (lo encuentras en «Quitados»)'); } if (!D[tema].piezas.some(x => quitado(tema, x.id))) st.verQuit = false; recarga(); return; }
   if (a === 'pin') { st.pin[tema] = st.pin[tema] === id ? null : id; aviso(st.pin[tema] ? '📍 Te quedarás aquí' : 'Marca quitada'); recarga(); botonPin(); }
   if (a === 'nota') { st.notaAb = st.notaAb === k ? null : k; if (st.nota[k] === undefined) st.nota[k] = ''; recarga(); const ta = document.querySelector('[data-n="' + k + '"]'); if (ta) ta.focus(); }
   if (a === 'prac') { const qs = (inv[tema][id] || []).slice(0, 60).join(','), v = location.pathname.split('/').pop() + '#t=' + tema + '&p=' + id; location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(qs) + '&v=' + encodeURIComponent(v); }
@@ -1068,7 +1080,7 @@ function filaImp(t, p, s) {
 }
 function imprimirPanel() {
   if (!tema) return aviso('Abre un tema y elige qué versión de cada artículo quieres imprimir');
-  const t = tema, sel = st.imp[t] = st.imp[t] || {}, op = st.impOp, ps = D[t].piezas.filter(p => !p.extra), ns = (D[t].cit || []).filter(c => c.nombre && ps.some(p => p.id.startsWith(c.p + '-'))), y = ($('#mod .caja') || {}).scrollTop || 0;
+  const t = tema, sel = st.imp[t] = st.imp[t] || {}, op = st.impOp, ps = D[t].piezas.filter(p => !fueraP(t, p)), ns = (D[t].cit || []).filter(c => c.nombre && ps.some(p => p.id.startsWith(c.p + '-'))), y = ($('#mod .caja') || {}).scrollTop || 0;
   let h = '<h2 style="margin:0 0 4px">🖨 Preparar impresión · Tema ' + t + '</h2><p style="color:var(--gris);font-size:13.5px;margin:0 0 10px">Elige, artículo por artículo, qué sale en el papel: tu subrayado, el Exprés de Esquemas o el esquema. Puedes marcar varias versiones del mismo artículo, y mezclar.</p>'
     + '<div class="chips" style="margin:0 0 10px">' + [['s', '📑 Todo con mi subrayado (recortado)'], ['n', '📑 Todo con mi subrayado entero'], ['x', '⚡ Todo con el Exprés'], ['d', '⚡ Todo con el Exprés (…) abiertos'], ['e', '🧩 Solo los esquemas'], ['m', '🏷 Solo lo marcado (EXOF/EX/✱/R)'], ['n', '✕ Quitar todo']].map(a => '<button class="chip" data-imp-a="' + a[0] + '">' + a[1] + '</button>').join('') + '</div>'
     + '<div class="imp-rango"><b>Por rango:</b> ' + (ns.length > 1 ? '<select class="f" id="imp-n">' + ns.map(c => '<option value="' + c.p + '">' + esc(c.nombre) + '</option>').join('') + '</select>' : '<input type="hidden" id="imp-n" value="' + (ns[0] ? ns[0].p : '') + '">') + ' artículos del <input id="imp-de" type="number" min="1" placeholder="1"> al <input id="imp-aa" type="number" min="1" placeholder="9"> →'
@@ -1088,7 +1100,7 @@ $('#mod').addEventListener('click', e => {
     previaImp(pv, t, p); pv.classList.remove('oculto'); return; }
   if (go) return lanzaImp();
   if (a) {
-    const sel = st.imp[t], ps = D[t].piezas.filter(p => !p.extra), k = a.dataset.impA;
+    const sel = st.imp[t], ps = D[t].piezas.filter(p => !fueraP(t, p)), k = a.dataset.impA;
     if (k === 'n') ps.forEach(p => delete sel[p.id]);
     else if (k === 'm') ps.forEach(p => { if (p.m && (p.m.exof || p.m.ex || p.m.ast || (p.m.r || []).length)) sel[p.id] = {s: 1}; else delete sel[p.id]; });
     else {
@@ -1157,7 +1169,7 @@ async function lanzaImp() {
 // backups/expres-subrayado.json. Mezcla de tres vías (lo que había en la última sincronización, lo de este dispositivo y lo de la nube):
 // lo que cambia solo en un sitio se queda; si cambia en los dos, se suman las marcas y gana este dispositivo en lo demás. Nunca borra trabajo de otro dispositivo.
 const GH_CFG = 'oficialGhCfg', GH_REPO = 'sgtxolo/copia-seguridad-conocimientos', GH_PATH = 'backups/expres-subrayado.json', GH_BASE = 'exsub-sync-base';
-const MAPAS = ['quit', 'vis', 'dif', 'nota', 'ent', 'ver', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp'];
+const MAPAS = ['inc', 'quit', 'vis', 'dif', 'nota', 'ent', 'ver', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp'];
 const lsObj = k => { try { return JSON.parse(localStorage.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
 const ghCfg = () => lsObj(GH_CFG), hayGh = () => { const c = ghCfg(); return !!(c.repo && c.token); };
 const b64 = s => btoa(unescape(encodeURIComponent(s))), unb64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
