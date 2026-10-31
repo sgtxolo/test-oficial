@@ -134,6 +134,7 @@ input[type=date],input[type=text].f,select.f{font:inherit;border:1.5px solid var
 @media(max-height:759px){#herr{position:static}}
 /* marcas propias: dibujo encima de cada captura */
 .imgw{position:relative;line-height:0}.imgw img{display:block}
+.tag.revok{background:#e1f2e7;color:#1f6b45;border:1px solid #57a683}.tag.revpend{background:#fff1dc;color:#9a5a10;border:1px solid #d9a35a}
 .cmpb{width:100%;background-repeat:no-repeat;background-size:100% auto}.gapb{line-height:1;text-align:center;color:#7a808a;font-weight:700;padding:3px 0;background:rgba(120,126,136,.1);font-size:13px}
 .addp{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0;font-size:12.5px}.addp b{font-weight:700}.addp .chip.on{background:#2f6b52;color:#fff}.addn{font-size:12px;color:#7a808a;margin:2px 0 6px}
 svg.ov{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
@@ -228,6 +229,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <div id="vis" class="oculto"></div>
 <script src="expres-subrayado/recortes.js"></script>
 <script src="expres-subrayado/bloques-t11.js"></script>
+<script src="expres-subrayado/revision-t11.js"></script>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
 <script src="expres-subrayado/datos-t11.js"></script>
@@ -490,7 +492,8 @@ function lista() {
     const src = D[t].dir + (ent || !p.imgr ? p.img : p.imgr), wh = ent || !p.imgr ? p.wh : p.whr, abreEsq = st.esq[k] || st.modoEsq;
     if (g !== gAnt) { h += '<div class="grupo">' + esc(g) + '</div>'; gAnt = g; }
     h += '<div class="card' + (est && est.c !== 'nuevo' ? ' st-' + est.c : '') + (st.vis[k] ? ' visto' : '') + (p.id === dest ? ' diana' : '') + '" id="c-' + p.id + '" data-id="' + p.id + '"><div class="cab">' + marcasHTML(p) + '<div class="nom">' + esc(p.nombre.replace(/^.* · /, '')) + '<small>' + esc(g) + (p.ap && !ent ? ' · apartados ' + p.ap.join(', ') : '') + '</small></div>'
-      + (p.extra ? '<span class="tag extra">fuera del Exprés</span>' : '') + (est ? '<span class="stc ' + est.c + '">' + est.txt + '</span>' : '') + '</div>'
+      + (p.extra ? '<span class="tag extra">fuera del Exprés</span>' : '')
+      + ((((window.EXSUB_REV || {})[t] || {}).todos || []).includes(p.id) && p.imgr ? (((window.EXSUB_REV[t].hechos || []).includes(p.id)) ? '<span class="tag revok" title="El recorte coincide con lo que lleva el Exprés">✓ Recorte revisado</span>' : '<span class="tag revpend" title="Este recorte todavía no se ha ajustado a las frases exactas del Exprés">⏳ Falta revisar el recorte</span>') : '') + (est ? '<span class="stc ' + est.c + '">' + est.txt + '</span>' : '') + '</div>'
       // En el móvil los botones quedan solo con su icono (el texto va en <span class="lb">, que se oculta); «Leer» abre el modo lectura a pantalla completa
       + '<div class="acc"><button class="sb leer" data-a="leer" title="Leer este artículo a pantalla completa">⛶<span class="lb"> Leer</span></button>'
       + '<button class="sb' + (st.vis[k] ? ' on' : '') + '" data-a="vis" title="Marcar como visto">' + (st.vis[k] ? '✓<span class="lb"> Visto</span>' : '○<span class="lb"> Marcar visto</span>') + '</button>'

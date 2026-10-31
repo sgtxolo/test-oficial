@@ -39,7 +39,7 @@ for pid, bl in res.items():
 try: rec = json.load(open(B + f'expres-subrayado/t{T}-img-recorte.json', encoding='utf-8'))
 except Exception: rec = {}
 for pid, r in rec.items():                                   # recortes hechos a mano en píxeles: lo que sobra entre ellos son los «trozos omitidos»
-    if pid in fin or pid not in indice or not indice[pid].get('imgr'): continue
+    if pid not in indice or not indice[pid].get("imgr"): continue
     tot = indice[pid]['wh'][1]; out = []; y = 0; g = 0
     for y0, y1 in sorted(r['rangos']):
         y1 = min(y1, tot)
