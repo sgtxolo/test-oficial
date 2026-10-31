@@ -228,6 +228,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
   <button class="ib" id="b-panel" title="Panel de estudio">🎯 <span class="txt-b">Panel</span></button>
   <button class="ib" id="b-marcas" title="Subrayar y dibujar sobre tu temario">✏️ <span class="txt-b">Marcas</span></button>
   <button class="ib" id="b-sync" title="Sincronizar con tus otros dispositivos">☁</button>
+  <button class="ib" id="b-gh" title="Repositorio y token de la sincronización">⚙</button>
   <button class="ib" id="b-imp" title="Preparar impresión (elige qué versión de cada artículo)">🖨</button>
   <button class="ib" id="b-herr" title="Herramientas">🛠</button>
   <button class="ib" id="b-tema" title="Modo oscuro">🌙</button>
@@ -317,7 +318,7 @@ function aviso(t) { const e = document.createElement('div'); e.className = 'toas
 function menu() {
   $('#menu').innerHTML = '<button data-a="vista">' + (st.vista === 'expres' ? '📄 Ver siempre artículos enteros' : '⚡ Ver versión Exprés (recortada)') + '</button>'
     + '<button data-a="extras">' + (st.extras ? '🙈 Ocultar artículos fuera del Exprés' : '👁️ Mostrar artículos fuera del Exprés') + '</button><hr>'
-    + '<button data-a="sync">☁ Sincronizar con mis otros dispositivos</button><button data-a="print">🖨️ Imprimir / guardar PDF</button><button data-a="exp">⬇️ Exportar mi progreso</button><button data-a="imp">⬆️ Importar progreso</button><hr>'
+    + '<button data-a="sync">☁ Sincronizar con mis otros dispositivos</button><button data-a="gh">⚙ Repositorio y token de la sincronización</button><button data-a="print">🖨️ Imprimir / guardar PDF</button><button data-a="exp">⬇️ Exportar mi progreso</button><button data-a="imp">⬆️ Importar progreso</button><hr>'
     + '<a href="esquemas.html">📘 Ir a Esquemas</a><a href="test-oficial-conocimiento.html">📝 Ir al Test de conocimiento</a><hr><button data-a="reset">🗑️ Borrar mi progreso</button>';
 }
 $('#b-menu').onclick = e => { e.stopPropagation(); menu(); $('#menu').classList.toggle('oculto'); };
@@ -329,6 +330,7 @@ function accionMenu(a) {
   if (a === 'extras') { st.extras = !st.extras; guarda(); render(); }
   if (a === 'print') imprimirPanel();
   if (a === 'sync') sincronizar(true);
+  if (a === 'gh') panelGh();
   if (a === 'exp') { const b = new Blob([JSON.stringify(st)], {type: 'application/json'}), u = document.createElement('a'); u.href = URL.createObjectURL(b); u.download = 'progreso-expres-subrayado.json'; u.click(); }
   if (a === 'imp') { const f = document.createElement('input'); f.type = 'file'; f.accept = '.json'; f.onchange = () => f.files[0].text().then(tx => { try { const n = JSON.parse(tx); for (const k of ['vis', 'dif', 'nota', 'ent', 'esq', 'pin', 'ult', 'temas', 'marks', 'tm', 'cm']) st[k] = Object.assign({}, st[k], n[k] || {}); if (n.plazos) st.plazos = n.plazos; if (n.examen) st.examen = n.examen; guarda(); render(); aviso('Progreso importado'); } catch (er) { aviso('Archivo no válido'); } }); f.click(); }
   if (a === 'reset' && confirm('¿Borrar los vistos, difíciles, notas y el control de temas de este dispositivo?')) { st = Object.assign(st, {vis: {}, dif: {}, nota: {}, ent: {}, esq: {}, pin: {}, ult: {}, temas: {}, plazos: [], marks: {}, tm: {}, cm: {}}); guarda(); render(); }
@@ -1123,7 +1125,7 @@ async function lanzaImp() {
 // Usa el MISMO repositorio privado de GitHub y el mismo token que Esquemas y el test (localStorage «oficialGhCfg»), pero su propio fichero:
 // backups/expres-subrayado.json. Mezcla de tres vías (lo que había en la última sincronización, lo de este dispositivo y lo de la nube):
 // lo que cambia solo en un sitio se queda; si cambia en los dos, se suman las marcas y gana este dispositivo en lo demás. Nunca borra trabajo de otro dispositivo.
-const GH_CFG = 'oficialGhCfg', GH_PATH = 'backups/expres-subrayado.json', GH_BASE = 'exsub-sync-base';
+const GH_CFG = 'oficialGhCfg', GH_REPO = 'sgtxolo/copia-seguridad-conocimientos', GH_PATH = 'backups/expres-subrayado.json', GH_BASE = 'exsub-sync-base';
 const MAPAS = ['vis', 'dif', 'nota', 'ent', 'ver', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp'];
 const lsObj = k => { try { return JSON.parse(localStorage.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
 const ghCfg = () => lsObj(GH_CFG), hayGh = () => { const c = ghCfg(); return !!(c.repo && c.token); };
@@ -1188,7 +1190,7 @@ async function sincronizar(manual, soloBajar) {
 function panelGh() {
   const c = ghCfg();
   modal('<h2 style="margin:0 0 8px">☁ Sincronización</h2><p style="font-size:13.5px;color:var(--gris);margin:0 0 10px">Usa el <b>mismo repositorio privado y el mismo token</b> que Esquemas y el Test. Si ya los pusiste allí en este navegador, no hace falta repetirlos: pulsa ☁ otra vez.</p>'
-    + '<label style="font-size:12px">Repositorio (usuario/repositorio)</label><input class="f" id="gh-repo" style="width:100%;margin:4px 0 10px" value="' + esc(c.repo || '') + '">'
+    + '<label style="font-size:12px">Repositorio (usuario/repositorio)</label><input class="f" id="gh-repo" style="width:100%;margin:4px 0 10px" value="' + esc(c.repo || GH_REPO) + '">'
     + '<label style="font-size:12px">Token de GitHub (permiso «Contents: Read and write»)</label><input class="f" id="gh-tok" type="password" style="width:100%;margin:4px 0 10px" placeholder="' + (c.token ? 'ya hay uno guardado; déjalo en blanco para conservarlo' : 'github_pat_…') + '">'
     + '<p style="font-size:12px;color:var(--gris)">No lo pegues en un ordenador que no sea tuyo. Se guarda solo en este navegador.</p><button class="ebtn on" style="width:100%" id="gh-ok">Guardar y sincronizar</button><button class="ebtn" style="width:100%;margin-top:8px" data-cerrar="1">Cancelar</button>');
 }
@@ -1198,6 +1200,7 @@ $('#mod').addEventListener('click', e => {
   try { localStorage.setItem(GH_CFG, JSON.stringify(c)); } catch (er) {} cierra(); sincronizar(true);
 });
 $('#b-sync').onclick = () => sincronizar(true);
+$('#b-gh').onclick = () => panelGh();
 window.syncMarca();
 if (hayGh() && !emb) setTimeout(() => sincronizar(false, true), 1500);   // al abrir solo se BAJA lo nuevo
 if (window.MEJORAS) window.MEJORAS();
