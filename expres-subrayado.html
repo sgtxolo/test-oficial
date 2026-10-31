@@ -255,6 +255,10 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
 <script src="expres-subrayado/datos-t11.js"></script>
+<script src="expres-subrayado/tapa-t1.js"></script>
+<script src="expres-subrayado/tapa-t7.js"></script>
+<script src="expres-subrayado/tapa-t11.js"></script>
+<script src="expres-subrayado/mejoras.js"></script>
 <script src="expres-subrayado/cuadros-t1.js"></script>
 <script src="expres-subrayado/cuadros-t7.js"></script>
 <script src="expres-subrayado/cuadros-t11.js"></script>
@@ -1195,5 +1199,6 @@ $('#mod').addEventListener('click', e => {
 $('#b-sync').onclick = () => sincronizar(true);
 window.syncMarca();
 if (hayGh() && !emb) setTimeout(() => sincronizar(false, true), 1500);   // al abrir solo se BAJA lo nuevo
+if (window.MEJORAS) window.MEJORAS();
 entra();
 </script></body></html>
