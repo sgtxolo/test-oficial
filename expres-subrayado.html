@@ -1003,7 +1003,7 @@ st.imp = st.imp || {}; st.impOp = st.impOp || {bn: false, ent: false};
 const EXH = {};
 function fichaExpres(t, p) {
   if (p.fx === undefined || !window.EXPRES_T || !window.EXPRES_T[t]) return null;
-  const c = EXH[t] || (EXH[t] = window.EXPRES_T[t].html.split('<div class="ex-ficha">')), s = c[p.fx + 1]; if (s === undefined) return null;
+  const c = EXH[t] || (EXH[t] = window.EXPRES_T[t].html.split(/<div class="ex-ficha(?: ex-of)?">/)), s = c[p.fx + 1]; if (s === undefined) return null;
   let d = 1, m; const re = /<div\b|<\/div>/g;
   while ((m = re.exec(s))) { if (m[0] === '</div>') { d--; if (!d) return '<div class="ex-ficha">' + s.slice(0, m.index) + '</div>'; } else d++; }
   return '<div class="ex-ficha">' + s + '</div>';

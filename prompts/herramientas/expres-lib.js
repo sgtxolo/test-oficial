@@ -392,6 +392,9 @@ module.exports = function (T) {
       // y sin las preguntas de IA que no estén en esos apartados
       if (omitir && omitir.soloOf) { js = js.filter(j => esOfPar(k, j)); cs = [];
         const ex = (extras[k] || []).filter(id => !esIA(id)); extras = Object.assign({}, extras); if (ex.length) extras[k] = ex; else delete extras[k]; }
+      // sello EXAMEN del temario del usuario en el artículo, pero ninguna pregunta ni marca de párrafo y sin cuadro: entra entero
+      // (31/10/2026: «Artículo 11 — Principios técnicos» de la Ley 19/2013 se quedaba fuera del Exprés)
+      if (!js.length && !cs.length && !fuera && f.ex && !(omitir && omitir.soloOf)) js = f.ps.map((p, j) => j).filter(j => limpia(f.ps[j].h));
       if (!js.length && !cs.length && !extras[k]) continue;
       if (titulo) { out += titulo; titulo = ''; }
       const hc = cs.map(([[, h], i]) => { puestos.add(i); return enlazaCuadro(subraya(h), k); }).join('');
