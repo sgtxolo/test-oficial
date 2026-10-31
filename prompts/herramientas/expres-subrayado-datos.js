@@ -8,7 +8,9 @@ const manP = `expres-subrayado/t${T}-manual.json`; const man = fs.existsSync(man
 const manEx = new Set((man.manual || []).filter(m => m.expres).map(m => m.id));
 const orden = id => {
   const [l, n] = id.split('-'); const i = inst.findIndex(x => x.id === l);
-  const r = n === 'datos' ? -2 : n === 'pre' ? -1 : n === 'ad' ? 0 : n === 'fin' ? 1e6 : (+n || 0);
+  if (n === 'rec') return 98e7 + (i < 0 ? 99 : i);   // «RECUERDA del temario»: al final de todo, detrás de todas las normas
+  const dis = /^(da|dt|dd|df)(\d*)$/.exec(n);        // disposiciones adicionales/transitorias/derogatoria/finales: al final de su norma, en ese orden
+  const r = n === 'datos' ? -2 : n === 'pre' ? -1 : n === 'ad' ? 0 : n === 'fin' ? 1e6 : dis ? 1e6 + {da: 100, dt: 200, dd: 300, df: 400}[dis[1]] + (+dis[2] || 0) : (+n || 0);
   return (i < 0 ? 99 : i) * 1e7 + r;
 };
 ix.sort((x, y) => orden(x.id) - orden(y.id));
