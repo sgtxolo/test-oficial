@@ -226,6 +226,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
   <button class="ib oculto" id="b-atras" title="Inicio">←</button>
   <h1 id="tit">Exprés · Temario subrayado</h1>
   <button class="ib oculto" id="b-pin" title="Llevarme al artículo donde pusiste la chincheta 📍">📍 <span class="txt-b">Donde me quedé</span></button>
+  <button class="ib oculto" id="b-cut" title="Quitar trozos del artículo que estás viendo">✂️ <span class="txt-b">Quitar trozos</span></button>
   <button class="ib" id="b-panel" title="Panel de estudio">🎯 <span class="txt-b">Panel</span></button>
   <button class="ib" id="b-marcas" title="Subrayar y dibujar sobre tu temario">✏️ <span class="txt-b">Marcas</span></button>
   <button class="ib" id="b-sync" title="Sincronizar con tus otros dispositivos">☁</button>
@@ -318,7 +319,7 @@ function aviso(t) { const e = document.createElement('div'); e.className = 'toas
 // ---------- menú ----------
 function menu() {
   $('#menu').innerHTML = '<button data-a="vista">' + (st.vista === 'expres' ? '📄 Ver siempre artículos enteros' : '⚡ Ver versión Exprés (recortada)') + '</button>'
-    + '<button data-a="extras">' + (st.extras ? '🙈 Ocultar artículos fuera del Exprés' : '👁️ Mostrar artículos fuera del Exprés') + '</button><hr>'
+    + (tema ? '<button data-px2="cutv">✂️ Quitar trozos del artículo que veo</button><button data-px2="restv">↩️ Restaurar los recortes del artículo que veo</button>' : '') + '<button data-a="extras">' + (st.extras ? '🙈 Ocultar artículos fuera del Exprés' : '👁️ Mostrar artículos fuera del Exprés') + '</button><hr>'
     + '<button data-a="sync">☁ Sincronizar con mis otros dispositivos</button><button data-a="gh">⚙ Repositorio y token de la sincronización</button><button data-a="print">🖨️ Imprimir / guardar PDF</button><button data-a="exp">⬇️ Exportar mi progreso</button><button data-a="imp">⬆️ Importar progreso</button><hr>'
     + '<a href="esquemas.html">📘 Ir a Esquemas</a><a href="test-oficial-conocimiento.html">📝 Ir al Test de conocimiento</a><hr><button data-a="reset">🗑️ Borrar mi progreso</button>';
 }
@@ -445,7 +446,7 @@ function ponFecha(n, f) {
 }
 // ---------- dashboard ----------
 function dash() {
-  tema = null; $('#b-pin').classList.add('oculto'); $('#herr').classList.add('oculto'); $('#info').innerHTML = ''; $('#pill').classList.add('oculto'); $('#b-atras').classList.add('oculto'); $('#tit').textContent = 'Exprés · Temario subrayado';
+  tema = null; $('#b-pin').classList.add('oculto'); $('#b-cut').classList.add('oculto'); $('#herr').classList.add('oculto'); $('#info').innerHTML = ''; $('#pill').classList.add('oculto'); $('#b-atras').classList.add('oculto'); $('#tit').textContent = 'Exprés · Temario subrayado';
   const ts = Object.keys(D).sort((a, b) => a - b);
   let tot = 0, ok = 0, pq = 0, qq = 0; ts.forEach(t => { tot += visibles(t).length; ok += hechos(t); pq += D[t].cob ? D[t].cob.e : 0; qq += D[t].cob ? D[t].cob.q : 0; });
   const pct = tot ? Math.round(ok * 100 / tot) : 0, dEx = diasHasta(st.examen), S = leerStats();
@@ -580,7 +581,7 @@ function lista() {
 }
 function render() { if (tema === null) dash(); else verTema(); }
 function pintaLista() { $('#m').innerHTML = lista(); montaEsqs(); }
-function verTema() { $('#b-atras').classList.remove('oculto'); botonPin(); $('#tit').textContent = nomTema(tema); infoTema(); cabTema(); pintaLista(); }
+function verTema() { $('#b-atras').classList.remove('oculto'); $('#b-cut').classList.remove('oculto'); botonPin(); $('#tit').textContent = nomTema(tema); infoTema(); cabTema(); pintaLista(); }
 // ---------- «aquí te quedaste» ----------
 function pill() {
   const p = $('#pill'), id = st.pin[tema] || st.ult[tema];

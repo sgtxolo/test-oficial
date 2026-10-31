@@ -59,9 +59,11 @@ window.MEJORAS2 = function () {
         const e = acc.querySelector('[data-a="esq"]'); if (e) e.remove();
         const nc = cortesDe(tema, claveCorte(p)).length;
         acc.insertAdjacentHTML('beforeend', (cu ? '<span class="seg sbs" title="Qué ver de este artículo: el artículo, solo su esquema, o los dos">' + [['a', '📑', ' Artículo'], ['e', '🧩', ' Solo esquema'], ['ae', '📑🧩', ' Ambos']].map(x => '<button class="' + (vm === x[0] ? 'on' : '') + '" data-px2="vm" data-v="' + x[0] + '">' + x[1] + '<span class="lb">' + x[2] + '</span></button>').join('') + '</span>' : '')
+          + (nc && window.CUT_ED !== p.id ? '<button class="sb" data-px2="rest" title="Devolver al artículo todo lo que habías quitado">↩️<span class="lb"> Restaurar recortes</span></button>' : '')
           + '<button class="sb' + (nc || window.CUT_ED === p.id ? ' on' : '') + '" data-px2="cut" title="Dibuja un cuadro sobre lo que no te interesa, aquí mismo, y se quita">✂️<span class="lb"> ' + (window.CUT_ED === p.id ? 'Terminar de quitar' : 'Quitar trozos') + '</span>' + (nc ? ' (' + nc + ')' : '') + '</button>');
       }
       if (window.CUT_ED === p.id && vm !== 'e') cortarEnLinea(c, p);
+      const bc = $('#b-cut'); if (bc) bc.classList.toggle('on', !!window.CUT_ED);
       if (vm === 'e') c.querySelectorAll(':scope > .imgw, :scope > .slcs, :scope > .trib').forEach(x => { x.style.display = 'none'; });
     });
   };
@@ -131,10 +133,16 @@ window.MEJORAS2 = function () {
     pinta();
   }
 
+  // artículo que estás viendo: el que está en edición o el primero que asoma bajo la barra de arriba
+  const cardVista = () => { if (window.CUT_ED) return window.CUT_ED; const y = ($('#top') || {offsetHeight: 0}).offsetHeight + 8, cs = [...document.querySelectorAll('#m .card')]; const c = cs.find(q => q.getBoundingClientRect().bottom > y + 40); return c ? c.dataset.id : null; };
+  function restaura(id) { const p = D[tema].piezas.find(x => x.id === id); if (!p) return; const K = claveCorte(p); if (!(st.cort[tema + '/' + K] || []).length) { aviso('Este artículo no tiene recortes'); return; } delete st.cort[tema + '/' + K]; guarda(); aviso('↩️ Recortes devueltos'); refresco(); }
+  $('#b-cut').onclick = () => { if (window.CUT_ED) { window.CUT_ED = null; refresco(); return; } const v = cardVista(); if (!v) return; window.CUT_ED = v; refresco(); const el = document.getElementById('c-' + v); el && el.scrollIntoView({block: 'start'}); };
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-px2]'); if (!b) return; const x = b.dataset.px2, c = b.closest('.card');
     if (x === 'vm' && c) { const id = c.dataset.id, k = key(tema, id), v = b.dataset.v; st.vm[k] = v; st.esq[k] = v === 'a' ? 0 : 1; if (st.modoEsq && v !== 'e') st.modoEsq = false; guarda(); refresco(); }
     if (x === 'cut' && c) { window.CUT_ED = window.CUT_ED === c.dataset.id ? null : c.dataset.id; refresco(); }
+    if (x === 'rest' && c) restaura(c.dataset.id);
+    if (x === 'cutv' || x === 'restv') { $('#menu').classList.add('oculto'); const v = cardVista(); if (!v) return; if (x === 'cutv') { window.CUT_ED = v; refresco(); const el = document.getElementById('c-' + v); el && el.scrollIntoView({block: 'start'}); } else restaura(v); }
   });
 
   // ---------- visor: botón de cortar y menú plegable en horizontal ----------
