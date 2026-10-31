@@ -134,6 +134,8 @@ input[type=date],input[type=text].f,select.f{font:inherit;border:1.5px solid var
 @media(max-height:759px){#herr{position:static}}
 /* marcas propias: dibujo encima de cada captura */
 .imgw{position:relative;line-height:0}.imgw img{display:block}
+.cmpb{width:100%;background-repeat:no-repeat;background-size:100% auto}.gapb{line-height:1;text-align:center;color:#7a808a;font-weight:700;padding:3px 0;background:rgba(120,126,136,.1);font-size:13px}
+.addp{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0;font-size:12.5px}.addp b{font-weight:700}.addp .chip.on{background:#2f6b52;color:#fff}.addn{font-size:12px;color:#7a808a;margin:2px 0 6px}
 svg.ov{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
 body.marcando svg.ov{pointer-events:auto;touch-action:none;cursor:crosshair}
 body.marcando.mano svg.ov{pointer-events:none;touch-action:auto}
@@ -225,6 +227,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <div id="zonaImp"></div>
 <div id="vis" class="oculto"></div>
 <script src="expres-subrayado/recortes.js"></script>
+<script src="expres-subrayado/bloques-t11.js"></script>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
 <script src="expres-subrayado/datos-t11.js"></script>
@@ -460,6 +463,24 @@ function pasaFiltro(p) {
     if (num && q.replace(/art(?:[íi]culos?|\.)?|\s|\d|[.,]/g, '') === '') { if (nn !== num) return false; } else if (!(' ' + nom).includes(q) && !(' ' + nom + ' ' + (instDe(t, p).nombre || '').toLowerCase()).includes(q)) { if (num && nn === num && (instDe(t, p).nombre || '').toLowerCase().split(/\s+/).some(w => w.length > 2 && q.includes(w))) return true; return false; } }
   return true;
 }
+const BL = () => (window.EXSUB_B || {})[tema] || {};
+const anade = k => ((st.add = st.add || {})[k] = st.add[k] || []);
+// Recorte a medida: lo que lleva el Exprés + los trozos (apartados) que has añadido; todo sale de la captura entera
+function compuesto(p) {
+  const b = BL()[p.id], ad = (st.add || {})[key(tema, p.id)] || []; if (!b || !ad.length) return null;
+  const W = p.wh[0], tot = p.wh[1], src = D[tema].dir + p.img; let h = '', ult = -2;
+  b.forEach((x, i) => { if (!(x[3] || ad.includes(i))) return; const hh = x[1] - x[0]; if (hh < 2) return;
+    if (ult >= 0 && i !== ult + 1) h += '<div class="gapb">(…)</div>';
+    h += '<div class="cmpb" style="aspect-ratio:' + W + '/' + hh + ';background-image:url(&quot;' + src + '&quot;);background-position:0 ' + (tot > hh ? x[0] / (tot - hh) * 100 : 0) + '%"></div>'; ult = i; });
+  return h;
+}
+function selector(p, k) {
+  const b = BL()[p.id]; if (!b || st.addAb !== k) return ''; const ad = (st.add || {})[k] || [];
+  const on = b.map((x, i) => x[3] ? i : -1).filter(i => i >= 0), a0 = Math.min(...on), a1 = Math.max(...on);
+  const opc = b.map((x, i) => [x, i]).filter(([x]) => !x[3]);
+  if (!opc.length) return '<div class="addp">Este recorte ya lleva todo el artículo.</div>';
+  return '<div class="addp"><b>Añadir a mi subrayado:</b>' + opc.map(([x, i]) => '<button class="chip' + (ad.includes(i) ? ' on' : '') + '" data-a="addb" data-i="' + i + '">' + (ad.includes(i) ? '✓ ' : '+ ') + esc(x[2]) + (/^Trozo/.test(x[2]) ? (i < a0 ? ' (antes)' : i > a1 ? ' (después)' : ' (en medio)') : '') + '</button>').join('') + (ad.length ? '<button class="chip" data-a="addx">Quitar lo añadido</button>' : '') + '</div><div class="addn">El recorte a medida se ve sin tus marcas de dibujo; «Artículo entero» sí las lleva.</div>';
+}
 function lista() {
   const t = tema, S = leerStats(); const ps = D[t].piezas.filter(pasaFiltro);
   if (!ps.length) return '<div class="vacio">No hay nada con ese filtro.</div>';
@@ -477,13 +498,15 @@ function lista() {
       + (p.imgr && st.vista !== 'completo' ? '<button class="sb' + (ent ? ' on' : '') + '" data-a="ent">' + (ent ? '▴ Ver Exprés' : '▾ <span class="lb">Artículo </span>entero') + '</button>'
         : p.imgr ? '<button class="sb on" data-a="vista" title="Ahora ves todos los artículos enteros">⚡<span class="lb"> Volver a la versión Exprés</span></button>'
         : '<button class="sb sinrec" data-a="info" title="Todavía no hay versión recortada de este artículo">✓ Sin versión recortada: ya es el artículo entero</button>')
+      + (p.imgr && !ent && BL()[p.id] ? '<button class="sb' + (((st.add || {})[k] || []).length ? ' on' : '') + '" data-a="add" title="Sumar a este recorte un apartado que el Exprés no lleva">➕<span class="lb"> Añadir a mi subrayado</span>' + (((st.add || {})[k] || []).length ? ' (' + st.add[k].length + ')' : '') + '</button>' : '')
       + (cu.length ? '<button class="sb' + (abreEsq ? ' on' : '') + '" data-a="esq" title="Esquema">🧩<span class="lb"> Esquema</span>' + (cu.length > 1 ? ' (' + cu.length + ')' : '') + '</button>' : '')
       + '<button class="sb' + (st.pin[t] === p.id ? ' on' : '') + '" data-a="pin" title="Marca aquí dónde te quedas">📍</button>'
       + '<button class="sb' + (st.nota[k] ? ' on' : '') + '" data-a="nota" title="Nota">📝<span class="lb"> Nota</span></button>'
       + (qs.length && !emb ? '<button class="sb" data-a="prac" title="Practicar las preguntas de este artículo">🎯<span class="lb"> Practicar</span> (' + qs.length + ')</button>' : '')
       + (p.q1 ? '<a class="sb" target="_top" href="esquemas.html#q=' + encodeURIComponent(p.q1) + '&ex=1" title="Ver este artículo en el Exprés de Esquemas">⚡<span class="lb"> En Esquemas</span></a>' : '') + '</div>'
+      + selector(p, k)
       + (st.notaAb === k ? '<textarea class="nota" data-n="' + k + '" placeholder="Tu nota sobre este artículo…">' + esc(st.nota[k] || '') + '</textarea>' : (st.nota[k] ? '<div class="nota" style="min-height:0;white-space:pre-wrap">' + esc(st.nota[k]) + '</div>' : ''))
-      + (st.modoEsq && cu.length ? '' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + '</div>')
+      + (st.modoEsq && cu.length ? '' : (!ent && p.imgr && compuesto(p)) ? '<div class="imgw">' + compuesto(p) + '</div>' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + '</div>')
       + (abreEsq && cu.length ? '<div class="esqs"><div class="esq-t">🧩 Esquema de este artículo</div>' + cu.map(x => x.h).join('') + '</div>' : '') + '</div>'; });
   return h;
 }
@@ -530,6 +553,9 @@ $('#m').addEventListener('click', e => {
   if (a === 'vis') { st.vis[k] = st.vis[k] ? 0 : 1; recarga(); }
   if (a === 'dif') { st.dif[k] = st.dif[k] ? 0 : 1; recarga(); }
   if (a === 'ent') { st.ent[k] = st.ent[k] ? 0 : 1; if (dest === id) destAp = null; recarga(); }
+  if (a === 'add') { st.addAb = st.addAb === k ? null : k; recarga(); }
+  if (a === 'addb') { const i = +e.target.dataset.i, l = anade(k), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); }
+  if (a === 'addx') { st.add[k] = []; recarga(); }
   if (a === 'esq') { st.esq[k] = st.esq[k] ? 0 : 1; recarga(); }
   if (a === 'pin') { st.pin[tema] = st.pin[tema] === id ? null : id; aviso(st.pin[tema] ? '📍 Te quedarás aquí' : 'Marca quitada'); recarga(); }
   if (a === 'nota') { st.notaAb = st.notaAb === k ? null : k; if (st.nota[k] === undefined) st.nota[k] = ''; recarga(); const ta = document.querySelector('[data-n="' + k + '"]'); if (ta) ta.focus(); }
