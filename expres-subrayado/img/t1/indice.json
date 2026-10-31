@@ -3,54 +3,105 @@
   "id": "e-5",
   "nombre": "Estatuto de Roma · Artículo 5",
   "img": "e-5.jpg",
+  "imgr": "e-5-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    344
+  ],
+  "whr": [
+   1075,
+   302
   ]
  },
  {
   "id": "e-6",
   "nombre": "Estatuto de Roma · Artículo 6",
   "img": "e-6.jpg",
+  "imgr": "e-6-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    497
+  ],
+  "whr": [
+   1075,
+   364
   ]
  },
  {
   "id": "e-7",
   "nombre": "Estatuto de Roma · Artículo 7",
   "img": "e-7.jpg",
+  "imgr": "e-7-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
   "wh": [
    1075,
    1787
+  ],
+  "whr": [
+   1075,
+   1528
   ]
  },
  {
   "id": "e-8",
   "nombre": "Estatuto de Roma · Artículo 8",
   "img": "e-8.jpg",
+  "imgr": "e-8-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    6199
+  ],
+  "whr": [
+   1075,
+   2757
   ]
  },
  {
   "id": "e-11",
   "nombre": "Estatuto de Roma · Artículo 11",
   "img": "e-11.jpg",
+  "imgr": "e-11-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    218
+  ],
+  "whr": [
+   1075,
+   210
   ]
  },
  {
   "id": "e-12",
   "nombre": "Estatuto de Roma · Artículo 12",
   "img": "e-12.jpg",
+  "imgr": "e-12-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
   "wh": [
    1075,
    627
+  ],
+  "whr": [
+   1075,
+   352
   ]
  },
  {
@@ -66,9 +117,17 @@
   "id": "e-15",
   "nombre": "Estatuto de Roma · Artículo 15",
   "img": "e-15.jpg",
+  "imgr": "e-15-r.jpg",
+  "ap": [
+   2
+  ],
   "wh": [
    1075,
    2306
+  ],
+  "whr": [
+   1075,
+   313
   ]
  },
  {
@@ -84,9 +143,18 @@
   "id": "e-17",
   "nombre": "Estatuto de Roma · Artículo 17",
   "img": "e-17.jpg",
+  "imgr": "e-17-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
   "wh": [
    1075,
    936
+  ],
+  "whr": [
+   1075,
+   749
   ]
  },
  {
@@ -102,9 +170,22 @@
   "id": "e-19",
   "nombre": "Estatuto de Roma · Artículo 19",
   "img": "e-19.jpg",
+  "imgr": "e-19-r.jpg",
+  "ap": [
+   1,
+   2,
+   4,
+   7,
+   9,
+   10
+  ],
   "wh": [
    1075,
    1807
+  ],
+  "whr": [
+   1075,
+   1454
   ]
  },
  {
@@ -129,9 +210,18 @@
   "id": "e-53",
   "nombre": "Estatuto de Roma · Artículo 53",
   "img": "e-53.jpg",
+  "imgr": "e-53-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
   "wh": [
    1075,
    1014
+  ],
+  "whr": [
+   1075,
+   812
   ]
  },
  {
@@ -147,9 +237,17 @@
   "id": "e-55",
   "nombre": "Estatuto de Roma · Artículo 55",
   "img": "e-55.jpg",
+  "imgr": "e-55-r.jpg",
+  "ap": [
+   2
+  ],
   "wh": [
    1075,
    816
+  ],
+  "whr": [
+   1075,
+   356
   ]
  },
  {
@@ -165,144 +263,305 @@
   "id": "e-57",
   "nombre": "Estatuto de Roma · Artículo 57",
   "img": "e-57.jpg",
+  "imgr": "e-57-r.jpg",
+  "ap": [
+   2
+  ],
   "wh": [
    1075,
    1078
+  ],
+  "whr": [
+   1075,
+   417
   ]
  },
  {
   "id": "e-58",
   "nombre": "Estatuto de Roma · Artículo 58",
   "img": "e-58.jpg",
+  "imgr": "e-58-r.jpg",
+  "ap": [
+   1,
+   4,
+   5,
+   6,
+   7
+  ],
   "wh": [
    1075,
    1575
+  ],
+  "whr": [
+   1075,
+   874
   ]
  },
  {
   "id": "e-59",
   "nombre": "Estatuto de Roma · Artículo 59",
   "img": "e-59.jpg",
+  "imgr": "e-59-r.jpg",
+  "ap": [
+   1,
+   4,
+   5,
+   6,
+   7
+  ],
   "wh": [
    1075,
    869
+  ],
+  "whr": [
+   1075,
+   697
   ]
  },
  {
   "id": "e-60",
   "nombre": "Estatuto de Roma · Artículo 60",
   "img": "e-60.jpg",
+  "imgr": "e-60-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
   "wh": [
    1075,
    546
+  ],
+  "whr": [
+   1075,
+   266
   ]
  },
  {
   "id": "e-61",
   "nombre": "Estatuto de Roma · Artículo 61",
   "img": "e-61.jpg",
+  "imgr": "e-61-r.jpg",
+  "ap": [
+   1,
+   2,
+   4,
+   5,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
   "wh": [
    1075,
    2164
+  ],
+  "whr": [
+   1075,
+   1232
   ]
  },
  {
   "id": "e-86",
   "nombre": "Estatuto de Roma · Artículo 86",
   "img": "e-86.jpg",
+  "imgr": "e-86-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    119
+  ],
+  "whr": [
+   1075,
+   42
   ]
  },
  {
   "id": "e-87",
   "nombre": "Estatuto de Roma · Artículo 87",
   "img": "e-87.jpg",
+  "imgr": "e-87-r.jpg",
+  "ap": [
+   2,
+   3,
+   4,
+   6
+  ],
   "wh": [
    1075,
    1287
+  ],
+  "whr": [
+   1075,
+   912
   ]
  },
  {
   "id": "e-89",
   "nombre": "Estatuto de Roma · Artículo 89",
   "img": "e-89.jpg",
+  "imgr": "e-89-r.jpg",
+  "ap": [
+   2,
+   3
+  ],
   "wh": [
    1075,
    1030
+  ],
+  "whr": [
+   1075,
+   683
   ]
  },
  {
   "id": "e-90",
   "nombre": "Estatuto de Roma · Artículo 90",
   "img": "e-90.jpg",
+  "imgr": "e-90-r.jpg",
+  "ap": [
+   1,
+   4,
+   8
+  ],
   "wh": [
    1075,
    1472
+  ],
+  "whr": [
+   1075,
+   396
   ]
  },
  {
   "id": "e-91",
   "nombre": "Estatuto de Roma · Artículo 91",
   "img": "e-91.jpg",
+  "imgr": "e-91-r.jpg",
+  "ap": [
+   1,
+   2,
+   4
+  ],
   "wh": [
    1075,
    879
+  ],
+  "whr": [
+   1075,
+   506
   ]
  },
  {
   "id": "e-92",
   "nombre": "Estatuto de Roma · Artículo 92",
   "img": "e-92.jpg",
+  "imgr": "e-92-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    668
+  ],
+  "whr": [
+   1075,
+   435
   ]
  },
  {
   "id": "e-93",
   "nombre": "Estatuto de Roma · Artículo 93",
   "img": "e-93.jpg",
+  "imgr": "e-93-r.jpg",
+  "ap": [
+   2,
+   3,
+   4,
+   6
+  ],
   "wh": [
    1075,
    2797
+  ],
+  "whr": [
+   1075,
+   1183
   ]
  },
  {
   "id": "e-94",
   "nombre": "Estatuto de Roma · Artículo 94",
   "img": "e-94.jpg",
+  "imgr": "e-94-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    436
+  ],
+  "whr": [
+   1075,
+   268
   ]
  },
  {
   "id": "e-98",
   "nombre": "Estatuto de Roma · Artículo 98",
   "img": "e-98.jpg",
+  "imgr": "e-98-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    340
+  ],
+  "whr": [
+   1075,
+   316
   ]
  },
  {
   "id": "e-99",
   "nombre": "Estatuto de Roma · Artículo 99",
   "img": "e-99.jpg",
+  "imgr": "e-99-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4
+  ],
   "wh": [
    1075,
    860
+  ],
+  "whr": [
+   1075,
+   672
   ]
  },
  {
   "id": "e-100",
   "nombre": "Estatuto de Roma · Artículo 100",
   "img": "e-100.jpg",
+  "imgr": "e-100-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    504
+  ],
+  "whr": [
+   1075,
+   111
   ]
  },
  {
@@ -318,9 +577,15 @@
   "id": "e-102",
   "nombre": "Estatuto de Roma · Artículo 102",
   "img": "e-102.jpg",
+  "imgr": "e-102-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    371
+  ],
+  "whr": [
+   1075,
+   209
   ]
  },
  {
@@ -345,27 +610,57 @@
   "id": "l-5",
   "nombre": "LO 18/2003 · Artículo 5",
   "img": "l-5.jpg",
+  "imgr": "l-5-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    396
+  ],
+  "whr": [
+   1075,
+   333
   ]
  },
  {
   "id": "l-6",
   "nombre": "LO 18/2003 · Artículo 6",
   "img": "l-6.jpg",
+  "imgr": "l-6-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    816
+  ],
+  "whr": [
+   1075,
+   326
   ]
  },
  {
   "id": "l-8",
   "nombre": "LO 18/2003 · Artículo 8",
   "img": "l-8.jpg",
+  "imgr": "l-8-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
   "wh": [
    1075,
    804
+  ],
+  "whr": [
+   1075,
+   556
   ]
  },
  {
@@ -381,9 +676,19 @@
   "id": "l-11",
   "nombre": "LO 18/2003 · Artículo 11",
   "img": "l-11.jpg",
+  "imgr": "l-11-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    573
+  ],
+  "whr": [
+   1075,
+   393
   ]
  },
  {
@@ -399,9 +704,19 @@
   "id": "l-13",
   "nombre": "LO 18/2003 · Artículo 13",
   "img": "l-13.jpg",
+  "imgr": "l-13-r.jpg",
+  "ap": [
+   1,
+   3,
+   4
+  ],
   "wh": [
    1075,
    602
+  ],
+  "whr": [
+   1075,
+   482
   ]
  },
  {
@@ -417,54 +732,118 @@
   "id": "l-15",
   "nombre": "LO 18/2003 · Artículo 15",
   "img": "l-15.jpg",
+  "imgr": "l-15-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   5,
+   6
+  ],
   "wh": [
    1075,
    1033
+  ],
+  "whr": [
+   1075,
+   792
   ]
  },
  {
   "id": "l-16",
   "nombre": "LO 18/2003 · Artículo 16",
   "img": "l-16.jpg",
+  "imgr": "l-16-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    340
+  ],
+  "whr": [
+   1075,
+   286
   ]
  },
  {
   "id": "l-19",
   "nombre": "LO 18/2003 · Artículo 19",
   "img": "l-19.jpg",
+  "imgr": "l-19-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    446
+  ],
+  "whr": [
+   1075,
+   375
   ]
  },
  {
   "id": "l-20",
   "nombre": "LO 18/2003 · Artículo 20",
   "img": "l-20.jpg",
+  "imgr": "l-20-r.jpg",
+  "ap": [
+   1,
+   2,
+   5
+  ],
   "wh": [
    1075,
    669
+  ],
+  "whr": [
+   1075,
+   617
   ]
  },
  {
   "id": "l-21",
   "nombre": "LO 18/2003 · Artículo 21",
   "img": "l-21.jpg",
+  "imgr": "l-21-r.jpg",
+  "ap": [
+   1,
+   3,
+   5
+  ],
   "wh": [
    1075,
    813
+  ],
+  "whr": [
+   1075,
+   750
   ]
  },
  {
   "id": "l-22",
   "nombre": "LO 18/2003 · Artículo 22",
   "img": "l-22.jpg",
+  "imgr": "l-22-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
   "wh": [
    1075,
    991
+  ],
+  "whr": [
+   1075,
+   929
   ]
  },
  {
@@ -480,9 +859,15 @@
   "id": "l-25",
   "nombre": "LO 18/2003 · Artículo 25",
   "img": "l-25.jpg",
+  "imgr": "l-25-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3255
+  ],
+  "whr": [
+   1075,
+   2318
   ]
  },
  {
@@ -498,9 +883,19 @@
   "id": "k-2",
   "nombre": "Carta de la UE · Artículo 2",
   "img": "k-2.jpg",
+  "imgr": "k-2-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    192
+  ],
+  "whr": [
+   1075,
+   119
   ]
  },
  {
@@ -516,9 +911,19 @@
   "id": "k-4",
   "nombre": "Carta de la UE · Artículo 4",
   "img": "k-4.jpg",
+  "imgr": "k-4-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    422
+  ],
+  "whr": [
+   1075,
+   177
   ]
  },
  {
@@ -543,18 +948,34 @@
   "id": "k-8",
   "nombre": "Carta de la UE · Artículo 8",
   "img": "k-8.jpg",
+  "imgr": "k-8-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    291
+  ],
+  "whr": [
+   1075,
+   205
   ]
  },
  {
   "id": "k-9",
   "nombre": "Carta de la UE · Artículo 9",
   "img": "k-9.jpg",
+  "imgr": "k-9-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    151
+  ],
+  "whr": [
+   1075,
+   134
   ]
  },
  {
@@ -570,36 +991,68 @@
   "id": "k-12",
   "nombre": "Carta de la UE · Artículo 12",
   "img": "k-12.jpg",
+  "imgr": "k-12-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    244
+  ],
+  "whr": [
+   1075,
+   218
   ]
  },
  {
   "id": "k-13",
   "nombre": "Carta de la UE · Artículo 13",
   "img": "k-13.jpg",
+  "imgr": "k-13-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    109
+  ],
+  "whr": [
+   1075,
+   93
   ]
  },
  {
   "id": "k-14",
   "nombre": "Carta de la UE · Artículo 14",
   "img": "k-14.jpg",
+  "imgr": "k-14-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    323
+  ],
+  "whr": [
+   1075,
+   147
   ]
  },
  {
   "id": "k-15",
   "nombre": "Carta de la UE · Artículo 15",
   "img": "k-15.jpg",
+  "imgr": "k-15-r.jpg",
+  "ap": [
+   3
+  ],
   "wh": [
    1075,
    232
+  ],
+  "whr": [
+   1075,
+   148
   ]
  },
  {
@@ -615,18 +1068,32 @@
   "id": "k-18",
   "nombre": "Carta de la UE · Artículo 18",
   "img": "k-18.jpg",
+  "imgr": "k-18-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    157
+  ],
+  "whr": [
+   1075,
+   106
   ]
  },
  {
   "id": "k-19",
   "nombre": "Carta de la UE · Artículo 19",
   "img": "k-19.jpg",
+  "imgr": "k-19-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    304
+  ],
+  "whr": [
+   1075,
+   108
   ]
  },
  {
@@ -678,9 +1145,15 @@
   "id": "k-27",
   "nombre": "Carta de la UE · Artículo 27",
   "img": "k-27.jpg",
+  "imgr": "k-27-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    236
+  ],
+  "whr": [
+   1075,
+   161
   ]
  },
  {
@@ -705,27 +1178,49 @@
   "id": "k-32",
   "nombre": "Carta de la UE · Artículo 32",
   "img": "k-32.jpg",
+  "imgr": "k-32-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    281
+  ],
+  "whr": [
+   1075,
+   160
   ]
  },
  {
   "id": "k-33",
   "nombre": "Carta de la UE · Artículo 33",
   "img": "k-33.jpg",
+  "imgr": "k-33-r.jpg",
+  "ap": [
+   2
+  ],
   "wh": [
    1075,
    213
+  ],
+  "whr": [
+   1075,
+   171
   ]
  },
  {
   "id": "k-34",
   "nombre": "Carta de la UE · Artículo 34",
   "img": "k-34.jpg",
+  "imgr": "k-34-r.jpg",
+  "ap": [
+   3
+  ],
   "wh": [
    1075,
    446
+  ],
+  "whr": [
+   1075,
+   131
   ]
  },
  {
@@ -768,18 +1263,33 @@
   "id": "k-39",
   "nombre": "Carta de la UE · Artículo 39",
   "img": "k-39.jpg",
+  "imgr": "k-39-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    212
+  ],
+  "whr": [
+   1075,
+   199
   ]
  },
  {
   "id": "k-40",
   "nombre": "Carta de la UE · Artículo 40",
   "img": "k-40.jpg",
+  "imgr": "k-40-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    201
+  ],
+  "whr": [
+   1075,
+   131
   ]
  },
  {
@@ -822,18 +1332,30 @@
   "id": "k-46",
   "nombre": "Carta de la UE · Artículo 46",
   "img": "k-46.jpg",
+  "imgr": "k-46-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    356
+  ],
+  "whr": [
+   1075,
+   274
   ]
  },
  {
   "id": "k-47",
   "nombre": "Carta de la UE · Artículo 47",
   "img": "k-47.jpg",
+  "imgr": "k-47-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    302
+  ],
+  "whr": [
+   1075,
+   327
   ]
  },
  {
@@ -849,18 +1371,35 @@
   "id": "k-49",
   "nombre": "Carta de la UE · Artículo 49",
   "img": "k-49.jpg",
+  "imgr": "k-49-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
   "wh": [
    1075,
    340
+  ],
+  "whr": [
+   1075,
+   271
   ]
  },
  {
   "id": "k-50",
   "nombre": "Carta de la UE · Artículo 50",
   "img": "k-50.jpg",
+  "imgr": "k-50-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    539
+  ],
+  "whr": [
+   1075,
+   132
   ]
  },
  {
@@ -876,18 +1415,35 @@
   "id": "k-52",
   "nombre": "Carta de la UE · Artículo 52",
   "img": "k-52.jpg",
+  "imgr": "k-52-r.jpg",
+  "ap": [
+   1,
+   3,
+   4,
+   5
+  ],
   "wh": [
    1075,
    847
+  ],
+  "whr": [
+   1075,
+   510
   ]
  },
  {
   "id": "n-1",
   "nombre": "Estatuto del Consejo de Europa · Artículo 1",
   "img": "n-1.jpg",
+  "imgr": "n-1-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    580
+  ],
+  "whr": [
+   1075,
+   352
   ]
  },
  {
@@ -912,18 +1468,30 @@
   "id": "n-5",
   "nombre": "Estatuto del Consejo de Europa · Artículo 5",
   "img": "n-5.jpg",
+  "imgr": "n-5-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    352
+  ],
+  "whr": [
+   1075,
+   304
   ]
  },
  {
   "id": "n-6",
   "nombre": "Estatuto del Consejo de Europa · Artículo 6",
   "img": "n-6.jpg",
+  "imgr": "n-6-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    125
+  ],
+  "whr": [
+   1075,
+   86
   ]
  },
  {
@@ -948,9 +1516,15 @@
   "id": "n-9",
   "nombre": "Estatuto del Consejo de Europa · Artículo 9",
   "img": "n-9.jpg",
+  "imgr": "n-9-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    312
+  ],
+  "whr": [
+   1075,
+   128
   ]
  },
  {
@@ -993,18 +1567,30 @@
   "id": "n-14",
   "nombre": "Estatuto del Consejo de Europa · Artículo 14",
   "img": "n-14.jpg",
+  "imgr": "n-14-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    188
+  ],
+  "whr": [
+   1075,
+   181
   ]
  },
  {
   "id": "n-15",
   "nombre": "Estatuto del Consejo de Europa · Artículo 15",
   "img": "n-15.jpg",
+  "imgr": "n-15-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    292
+  ],
+  "whr": [
+   1075,
+   284
   ]
  },
  {
@@ -1020,9 +1606,15 @@
   "id": "n-17",
   "nombre": "Estatuto del Consejo de Europa · Artículo 17",
   "img": "n-17.jpg",
+  "imgr": "n-17-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    189
+  ],
+  "whr": [
+   1075,
+   108
   ]
  },
  {
@@ -1056,45 +1648,75 @@
   "id": "n-25",
   "nombre": "Estatuto del Consejo de Europa · Artículo 25",
   "img": "n-25.jpg",
+  "imgr": "n-25-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    597
+  ],
+  "whr": [
+   1075,
+   524
   ]
  },
  {
   "id": "n-26",
   "nombre": "Estatuto del Consejo de Europa · Artículo 26",
   "img": "n-26.jpg",
+  "imgr": "n-26-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    689
+  ],
+  "whr": [
+   1075,
+   539
   ]
  },
  {
   "id": "n-28",
   "nombre": "Estatuto del Consejo de Europa · Artículo 28",
   "img": "n-28.jpg",
+  "imgr": "n-28-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    436
+  ],
+  "whr": [
+   1075,
+   277
   ]
  },
  {
   "id": "n-29",
   "nombre": "Estatuto del Consejo de Europa · Artículo 29",
   "img": "n-29.jpg",
+  "imgr": "n-29-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    343
+  ],
+  "whr": [
+   1075,
+   315
   ]
  },
  {
   "id": "n-30",
   "nombre": "Estatuto del Consejo de Europa · Artículo 30",
   "img": "n-30.jpg",
+  "imgr": "n-30-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    354
+  ],
+  "whr": [
+   1075,
+   151
   ]
  },
  {
@@ -1128,45 +1750,75 @@
   "id": "n-34",
   "nombre": "Estatuto del Consejo de Europa · Artículo 34",
   "img": "n-34.jpg",
+  "imgr": "n-34-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    398
+  ],
+  "whr": [
+   1075,
+   176
   ]
  },
  {
   "id": "n-36",
   "nombre": "Estatuto del Consejo de Europa · Artículo 36",
   "img": "n-36.jpg",
+  "imgr": "n-36-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    919
+  ],
+  "whr": [
+   1075,
+   609
   ]
  },
  {
   "id": "n-37",
   "nombre": "Estatuto del Consejo de Europa · Artículo 37",
   "img": "n-37.jpg",
+  "imgr": "n-37-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    342
+  ],
+  "whr": [
+   1075,
+   244
   ]
  },
  {
   "id": "n-38",
   "nombre": "Estatuto del Consejo de Europa · Artículo 38",
   "img": "n-38.jpg",
+  "imgr": "n-38-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    605
+  ],
+  "whr": [
+   1075,
+   572
   ]
  },
  {
   "id": "n-39",
   "nombre": "Estatuto del Consejo de Europa · Artículo 39",
   "img": "n-39.jpg",
+  "imgr": "n-39-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    286
+  ],
+  "whr": [
+   1075,
+   128
   ]
  },
  {
@@ -1182,18 +1834,30 @@
   "id": "n-41",
   "nombre": "Estatuto del Consejo de Europa · Artículo 41",
   "img": "n-41.jpg",
+  "imgr": "n-41-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    559
+  ],
+  "whr": [
+   1075,
+   347
   ]
  },
  {
   "id": "n-42",
   "nombre": "Estatuto del Consejo de Europa · Artículo 42",
   "img": "n-42.jpg",
+  "imgr": "n-42-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1089
+  ],
+  "whr": [
+   1075,
+   244
   ]
  },
  {
@@ -1236,9 +1900,19 @@
   "id": "h-6",
   "nombre": "CEDH · Artículo 6",
   "img": "h-6.jpg",
+  "imgr": "h-6-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    841
+  ],
+  "whr": [
+   1075,
+   378
   ]
  },
  {
@@ -1272,9 +1946,15 @@
   "id": "h-12",
   "nombre": "CEDH · Artículo 12",
   "img": "h-12.jpg",
+  "imgr": "h-12-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    122
+  ],
+  "whr": [
+   1075,
+   129
   ]
  },
  {
@@ -1299,9 +1979,19 @@
   "id": "h-15",
   "nombre": "CEDH · Artículo 15",
   "img": "h-15.jpg",
+  "imgr": "h-15-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    460
+  ],
+  "whr": [
+   1075,
+   333
   ]
  },
  {
@@ -1353,9 +2043,19 @@
   "id": "h-21",
   "nombre": "CEDH · Artículo 21",
   "img": "h-21.jpg",
+  "imgr": "h-21-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    361
+  ],
+  "whr": [
+   1075,
+   214
   ]
  },
  {
@@ -1371,9 +2071,19 @@
   "id": "h-23",
   "nombre": "CEDH · Artículo 23",
   "img": "h-23.jpg",
+  "imgr": "h-23-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    786
+  ],
+  "whr": [
+   1075,
+   140
   ]
  },
  {
@@ -1389,27 +2099,53 @@
   "id": "h-26",
   "nombre": "CEDH · Artículo 26",
   "img": "h-26.jpg",
+  "imgr": "h-26-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   5
+  ],
   "wh": [
    1075,
    1022
+  ],
+  "whr": [
+   1075,
+   914
   ]
  },
  {
   "id": "h-27",
   "nombre": "CEDH · Artículo 27",
   "img": "h-27.jpg",
+  "imgr": "h-27-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    238
+  ],
+  "whr": [
+   1075,
+   126
   ]
  },
  {
   "id": "h-28",
   "nombre": "CEDH · Artículo 28",
   "img": "h-28.jpg",
+  "imgr": "h-28-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    900
+  ],
+  "whr": [
+   1075,
+   423
   ]
  },
  {
@@ -1425,9 +2161,15 @@
   "id": "h-31",
   "nombre": "CEDH · Artículo 31",
   "img": "h-31.jpg",
+  "imgr": "h-31-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    568
+  ],
+  "whr": [
+   1075,
+   213
   ]
  },
  {
@@ -1443,9 +2185,20 @@
   "id": "h-35",
   "nombre": "CEDH · Artículo 35",
   "img": "h-35.jpg",
+  "imgr": "h-35-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4
+  ],
   "wh": [
    1075,
    1432
+  ],
+  "whr": [
+   1075,
+   748
   ]
  },
  {
@@ -1461,9 +2214,19 @@
   "id": "h-39",
   "nombre": "CEDH · Artículo 39",
   "img": "h-39.jpg",
+  "imgr": "h-39-r.jpg",
+  "ap": [
+   1,
+   2,
+   4
+  ],
   "wh": [
    1075,
    300
+  ],
+  "whr": [
+   1075,
+   272
   ]
  },
  {
@@ -1506,9 +2269,19 @@
   "id": "h-46",
   "nombre": "CEDH · Artículo 46",
   "img": "h-46.jpg",
+  "imgr": "h-46-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    570
+  ],
+  "whr": [
+   1075,
+   333
   ]
  },
  {
@@ -1578,9 +2351,15 @@
   "id": "h-55",
   "nombre": "CEDH · Artículo 55",
   "img": "h-55.jpg",
+  "imgr": "h-55-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    264
+  ],
+  "whr": [
+   1075,
+   157
   ]
  },
  {
@@ -1614,18 +2393,38 @@
   "id": "h-59",
   "nombre": "CEDH · Artículo 59",
   "img": "h-59.jpg",
+  "imgr": "h-59-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    180
+  ],
+  "whr": [
+   1075,
+   148
   ]
  },
  {
   "id": "p-1",
   "nombre": "Acuerdo de privilegios CPI · Artículo 1",
   "img": "p-1.jpg",
+  "imgr": "p-1-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    1035
+  ],
+  "whr": [
+   1075,
+   834
   ]
  },
  {
@@ -1668,18 +2467,34 @@
   "id": "p-6",
   "nombre": "Acuerdo de privilegios CPI · Artículo 6",
   "img": "p-6.jpg",
+  "imgr": "p-6-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    438
+  ],
+  "whr": [
+   1075,
+   328
   ]
  },
  {
   "id": "p-7",
   "nombre": "Acuerdo de privilegios CPI · Artículo 7",
   "img": "p-7.jpg",
+  "imgr": "p-7-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    200
+  ],
+  "whr": [
+   1075,
+   131
   ]
  },
  {
@@ -1695,18 +2510,36 @@
   "id": "p-9",
   "nombre": "Acuerdo de privilegios CPI · Artículo 9",
   "img": "p-9.jpg",
+  "imgr": "p-9-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    576
+  ],
+  "whr": [
+   1075,
+   300
   ]
  },
  {
   "id": "p-10",
   "nombre": "Acuerdo de privilegios CPI · Artículo 10",
   "img": "p-10.jpg",
+  "imgr": "p-10-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    449
+  ],
+  "whr": [
+   1075,
+   318
   ]
  },
  {
@@ -1731,9 +2564,19 @@
   "id": "p-13",
   "nombre": "Acuerdo de privilegios CPI · Artículo 13",
   "img": "p-13.jpg",
+  "imgr": "p-13-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    1102
+  ],
+  "whr": [
+   1075,
+   818
   ]
  },
  {
@@ -1749,63 +2592,126 @@
   "id": "p-15",
   "nombre": "Acuerdo de privilegios CPI · Artículo 15",
   "img": "p-15.jpg",
+  "imgr": "p-15-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   5,
+   6,
+   7
+  ],
   "wh": [
    1075,
    944
+  ],
+  "whr": [
+   1075,
+   781
   ]
  },
  {
   "id": "p-16",
   "nombre": "Acuerdo de privilegios CPI · Artículo 16",
   "img": "p-16.jpg",
+  "imgr": "p-16-r.jpg",
+  "ap": [
+   2
+  ],
   "wh": [
    1075,
    1111
+  ],
+  "whr": [
+   1075,
+   156
   ]
  },
  {
   "id": "p-18",
   "nombre": "Acuerdo de privilegios CPI · Artículo 18",
   "img": "p-18.jpg",
+  "imgr": "p-18-r.jpg",
+  "ap": [
+   1,
+   2,
+   4
+  ],
   "wh": [
    1075,
    1023
+  ],
+  "whr": [
+   1075,
+   464
   ]
  },
  {
   "id": "p-20",
   "nombre": "Acuerdo de privilegios CPI · Artículo 20",
   "img": "p-20.jpg",
+  "imgr": "p-20-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    529
+  ],
+  "whr": [
+   1075,
+   390
   ]
  },
  {
   "id": "p-22",
   "nombre": "Acuerdo de privilegios CPI · Artículo 22",
   "img": "p-22.jpg",
+  "imgr": "p-22-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    287
+  ],
+  "whr": [
+   1075,
+   171
   ]
  },
  {
   "id": "p-23",
   "nombre": "Acuerdo de privilegios CPI · Artículo 23",
   "img": "p-23.jpg",
+  "imgr": "p-23-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    883
+  ],
+  "whr": [
+   1075,
+   155
   ]
  },
  {
   "id": "p-24",
   "nombre": "Acuerdo de privilegios CPI · Artículo 24",
   "img": "p-24.jpg",
+  "imgr": "p-24-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    267
+  ],
+  "whr": [
+   1075,
+   241
   ]
  },
  {
@@ -1821,9 +2727,18 @@
   "id": "p-26",
   "nombre": "Acuerdo de privilegios CPI · Artículo 26",
   "img": "p-26.jpg",
+  "imgr": "p-26-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    690
+  ],
+  "whr": [
+   1075,
+   490
   ]
  },
  {
@@ -1845,39 +2760,55 @@
   ]
  },
  {
-  "id": "p-29",
-  "nombre": "Acuerdo de privilegios CPI · Artículo 29",
-  "img": "p-29.jpg",
-  "wh": [
-   1075,
-   191
-  ]
- },
- {
   "id": "p-30",
   "nombre": "Acuerdo de privilegios CPI · Artículo 30",
   "img": "p-30.jpg",
+  "imgr": "p-30-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    175
+  ],
+  "whr": [
+   1075,
+   177
   ]
  },
  {
   "id": "p-32",
   "nombre": "Acuerdo de privilegios CPI · Artículo 32",
   "img": "p-32.jpg",
+  "imgr": "p-32-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   5
+  ],
   "wh": [
    1075,
    913
+  ],
+  "whr": [
+   1075,
+   796
   ]
  },
  {
   "id": "p-34",
   "nombre": "Acuerdo de privilegios CPI · Artículo 34",
   "img": "p-34.jpg",
+  "imgr": "p-34-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    263
+  ],
+  "whr": [
+   1075,
+   109
   ]
  },
  {
@@ -1893,9 +2824,19 @@
   "id": "p-36",
   "nombre": "Acuerdo de privilegios CPI · Artículo 36",
   "img": "p-36.jpg",
+  "imgr": "p-36-r.jpg",
+  "ap": [
+   2,
+   3,
+   5
+  ],
   "wh": [
    1075,
    922
+  ],
+  "whr": [
+   1075,
+   628
   ]
  },
  {
@@ -1917,30 +2858,68 @@
   ]
  },
  {
+  "id": "h-pre",
+  "nombre": "CEDH · Preámbulo",
+  "img": "h-pre.jpg",
+  "wh": [
+   1075,
+   761
+  ]
+ },
+ {
   "id": "e-9",
   "nombre": "Estatuto de Roma · Artículo 9",
   "img": "e-9.jpg",
+  "imgr": "e-9-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    556
+  ],
+  "whr": [
+   1075,
+   483
   ]
  },
  {
   "id": "l-7",
   "nombre": "LO 18/2003 · Artículo 7",
   "img": "l-7.jpg",
+  "imgr": "l-7-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    510
+  ],
+  "whr": [
+   1075,
+   436
   ]
  },
  {
   "id": "k-5",
   "nombre": "Carta de la UE · Artículo 5",
   "img": "k-5.jpg",
+  "imgr": "k-5-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    221
+  ],
+  "whr": [
+   1075,
+   158
   ]
  },
  {
@@ -1956,99 +2935,177 @@
   "id": "n-35",
   "nombre": "Estatuto del Consejo de Europa · Artículo 35",
   "img": "n-35.jpg",
+  "imgr": "n-35-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    175
+  ],
+  "whr": [
+   1075,
+   84
   ]
  },
  {
   "id": "p-29",
   "nombre": "Acuerdo de privilegios CPI · Artículo 29",
   "img": "p-29.jpg",
+  "imgr": "p-29-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    191
+  ],
+  "whr": [
+   1075,
+   46
   ]
  },
  {
   "id": "l-pre",
   "nombre": "LO 18/2003 · Exposición de motivos",
   "img": "l-pre.jpg",
+  "imgr": "l-pre-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2563
+  ],
+  "whr": [
+   1075,
+   1417
   ]
  },
  {
   "id": "l-fin",
   "nombre": "LO 18/2003 · Disposiciones adicionales y finales",
   "img": "l-fin.jpg",
+  "imgr": "l-fin-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
   "wh": [
    1075,
    2646
+  ],
+  "whr": [
+   1075,
+   867
   ]
  },
  {
   "id": "k-datos",
   "nombre": "Carta de la UE · Datos y estructura",
   "img": "k-datos.jpg",
+  "imgr": "k-datos-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2646
+  ],
+  "whr": [
+   1075,
+   2241
   ]
  },
  {
   "id": "k-pre",
   "nombre": "Carta de la UE · Preámbulo",
   "img": "k-pre.jpg",
+  "imgr": "k-pre-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1080
+  ],
+  "whr": [
+   1075,
+   759
   ]
  },
  {
   "id": "n-pre",
   "nombre": "Estatuto del Consejo de Europa · Preámbulo",
   "img": "n-pre.jpg",
+  "imgr": "n-pre-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1430
+  ],
+  "whr": [
+   1075,
+   475
   ]
  },
  {
   "id": "q-ad",
   "nombre": "Protocolo Adicional (París, 1952)",
   "img": "q-ad.jpg",
+  "imgr": "q-ad-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    2646
+  ],
+  "whr": [
+   1075,
+   1034
   ]
  },
  {
   "id": "q-6",
   "nombre": "Protocolo n.º 6 — Abolición de la pena de muerte",
   "img": "q-6.jpg",
+  "imgr": "q-6-r.jpg",
+  "ap": [
+   1
+  ],
   "wh": [
    1075,
    2646
+  ],
+  "whr": [
+   1075,
+   2139
   ]
  },
  {
   "id": "q-7",
   "nombre": "Protocolo n.º 7 — Expulsión de extranjeros y doble instancia penal",
   "img": "q-7.jpg",
+  "imgr": "q-7-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
   "wh": [
    1075,
    2646
+  ],
+  "whr": [
+   1075,
+   2320
   ]
  },
  {
   "id": "q-12",
   "nombre": "Protocolo n.º 12 — Prohibición de discriminación (memoria explicativa)",
   "img": "q-12.jpg",
+  "imgr": "q-12-r.jpg",
+  "ap": [
+   18
+  ],
   "wh": [
    1075,
    11907
+  ],
+  "whr": [
+   1075,
+   632
   ]
  },
  {

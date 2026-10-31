@@ -1,3 +1,5 @@
+import os as _os
+T=_os.environ.get('TEMA','11')
 import os
 import sys, json, subprocess
 from PIL import Image, ImageDraw, ImageFont

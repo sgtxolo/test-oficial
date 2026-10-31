@@ -1550,13 +1550,14 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
     }
     // «disposición adicional/transitoria/final/derogatoria … de <norma>»: pieza del bloque de disposiciones de esa norma (p. ej. d-da, a-df)
     m = tx.match(/disposici[óo]n(?:es)?\s+(adicional|transitoria|final|derogatoria)(?:es)?[^.:"]{0,60}?\s+(?:de|del)\s+(?:la |el )?(.{3,110}?)\s+(?:dispone|establece|señala|regula|prev[ée])/i);
-    if (m){ const c = norma(m[2]); const t = {adicional: 'da', transitoria: 'dt', final: 'df', derogatoria: 'dd'}[m[1].toLowerCase()]; if (c && t && hay(c.p + '-' + t)) return c.p + '-' + t; }
+    if (m){ const c = norma(m[2]); const t = {adicional: 'da', transitoria: 'dt', final: 'df', derogatoria: 'dd'}[m[1].toLowerCase()]; if (c && t && hay(c.p + '-' + t)) return c.p + '-' + t; if (c && t && hay(c.p + '-fin')) return c.p + '-fin'; }   // «-fin»: todas las disposiciones en una pieza (Tema 1)
     const e = cit.find(c => c.pre_re && c.pre && new RegExp(c.pre_re, 'i').test(tx)); if (e && hay(e.pre)) return e.pre;
     // último recurso: la norma aparece en algún sitio de la explicación y el artículo / la disposición, en otro
     { const c = cit.find(c => !c.proto && new RegExp(c.re, 'i').test(tx));
       if (c){
         const ar = tx.match(/art(?:ículo|\.)\s*(\d+)/i); if (ar && hay(c.p + '-' + ar[1])) return c.p + '-' + ar[1];
-        const di = tx.match(/disposici[óo]n(?:es)?\s+(adicional|transitoria|final|derogatoria)/i); const t = di && {adicional: 'da', transitoria: 'dt', final: 'df', derogatoria: 'dd'}[di[1].toLowerCase()]; if (t && hay(c.p + '-' + t)) return c.p + '-' + t;
+        const di = tx.match(/disposici[óo]n(?:es)?\s+(adicional|transitoria|final|derogatoria)/i); const t = di && {adicional: 'da', transitoria: 'dt', final: 'df', derogatoria: 'dd'}[di[1].toLowerCase()]; if (t && hay(c.p + '-' + t)) return c.p + '-' + t; if (t && hay(c.p + '-fin')) return c.p + '-fin';
+        if (/pre[áa]mbulo|exposici[óo]n de motivos/i.test(tx) && c.pre && hay(c.pre)) return c.pre;
       } }
     return S.preg[id] || null;
   };

@@ -63,6 +63,9 @@ for (const f of trozos) {
   for (const m of f.matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (!preg[q]) preg[q] = piezas[0]; });
 }
 ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) p.extra = 1; if (marcas[p.id] && Object.keys(marcas[p.id]).length) p.m = marcas[p.id]; });
+// piezas a mano (preámbulos, protocolos…) con «ficha»: regex del título de su ficha del Exprés → también tienen versión Exprés
+{ const cab = h.split('<div class="ex-ficha">').slice(1).map(f => ((f.match(/class="ex-fh">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, ''));
+  (man.manual || []).filter(m => m.ficha).forEach(m => { const k = cab.findIndex(t => new RegExp(m.ficha).test(t)); if (k >= 0) fx[m.id] = k; else console.log('  ⚠ ficha no encontrada', m.id, m.ficha); }); }
 ix.forEach(p => { if (fx[p.id] !== undefined) p.fx = fx[p.id]; });
 // primera pregunta de cada artículo: sirve para saltar desde aquí a la ficha de Esquemas (esquemas.html#q=<id>&ex=1)
 const primera = {}; for (const q in preg) if (!primera[preg[q]]) primera[preg[q]] = q; ix.forEach(p => { if (primera[p.id]) p.q1 = primera[p.id]; });

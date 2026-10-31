@@ -4,6 +4,6 @@
  {"id":"k","nombre":"Carta de la UE","paginas":[50,62],"inicio":"^1\\.2 —","cit":"Carta de los Derechos Fundamentales|Carta de la UE","pre":"k-pre"},
  {"id":"n","nombre":"Estatuto del Consejo de Europa","paginas":[64,75],"inicio":"^CAP[ÍI]TULO I\\. FINALIDAD DEL CONSEJO","cit":"Estatuto del Consejo de Europa","pre":"n-pre"},
  {"id":"q","nombre":"Protocolos al CEDH","cit":"Protocolo","proto":true},
- {"id":"h","nombre":"CEDH","paginas":[76,92],"inicio":"^T[ÍI]TULO I\\. DERECHOS Y LIBERTADES","cit":"Convenio Europeo de Derechos Humanos|CEDH"},
+ {"id":"h","nombre":"CEDH","paginas":[76,92],"inicio":"^T[ÍI]TULO I\\. DERECHOS Y LIBERTADES","cit":"Convenio Europeo de Derechos Humanos|CEDH","pre":"h-pre"},
  {"id":"p","nombre":"Acuerdo de privilegios CPI","paginas":[120,133],"inicio":"^1\\.6 —","cit":"Acuerdo sobre (?:los )?[Pp]rivilegios"}
 ]

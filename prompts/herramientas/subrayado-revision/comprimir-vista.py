@@ -1,3 +1,5 @@
+import os as _os
+T=_os.environ.get('TEMA','11')
 import os
 import sys, json
 import numpy as np
@@ -5,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 S=os.environ.get('SCRATCH','C:/Users/ruben/AppData/Local/Temp/')
 f=ImageFont.truetype('arial.ttf',17)
 for pid in sys.argv[1:]:
-    im=Image.open(f'expres-subrayado/img/t11/{pid}.jpg').convert('RGB'); a=np.asarray(im.convert('L')).astype(int)
+    im=Image.open(f'expres-subrayado/img/t{T}/{pid}.jpg').convert('RGB'); a=np.asarray(im.convert('L')).astype(int)
     blank=(a<235).mean(axis=1)<0.003; segs=[]; y=0; H=im.height
     while y<H:
         if blank[y]:

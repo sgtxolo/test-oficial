@@ -1,6 +1,6 @@
-global.window={};require('../../../expres/t11.js');const fs=require('fs');const h=window.EXPRES_T[11].html;
-const ix=Object.fromEntries(JSON.parse(fs.readFileSync('expres-subrayado/img/t11/indice.json','utf8')).map(e=>[e.id,e]));
-const inst=JSON.parse(fs.readFileSync('expres-subrayado/t11-instrumentos.json','utf8'));
+const T=process.env.TEMA||'11';global.window={};require('../../../expres/t'+T+'.js');const fs=require('fs');const h=window.EXPRES_T[T].html;
+const ix=Object.fromEntries(JSON.parse(fs.readFileSync('expres-subrayado/img/t'+T+'/indice.json','utf8')).map(e=>[e.id,e]));
+const inst=JSON.parse(fs.readFileSync('expres-subrayado/t'+T+'-instrumentos.json','utf8'));
 let cur=null,k0=-1;const bad=[];let n=0;
 for(const f of h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha(?: ex-of)?">)/)){
  const t=((f.match(/(?:ex-fh|bloque-titulo)">(.*?)<\/div>/)||[])[1]||'').replace(/<[^>]+>/g,'');
