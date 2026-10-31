@@ -2,7 +2,7 @@
 // Lo omitido con (…) (span .ex-plg) se quita. Uso: TEMA=1 node texto-pieza.js [--json] [id id…]
 const T = process.env.TEMA || '11'; const fs = require('fs');
 global.window = {}; require('../../../expres/t' + T + '.js'); require('../../../expres-subrayado/datos-t' + T + '.js');
-const h = window.EXPRES_T[T].html, D = window.EXSUB[T], fichas = h.split('<div class="ex-ficha">');
+const h = window.EXPRES_T[T].html, D = window.EXSUB[T], fichas = h.split(/<div class="ex-ficha(?: ex-of)?">/);
 function ficha(fx) {
   const s = fichas[fx + 1]; if (s === undefined) return ''; let d = 1, m; const re = /<div\b|<\/div>/g;
   while ((m = re.exec(s))) { if (m[0] === '</div>') { d--; if (!d) return s.slice(0, m.index); } else d++; }

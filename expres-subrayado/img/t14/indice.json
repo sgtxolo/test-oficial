@@ -1,0 +1,779 @@
+[
+ {
+  "id": "a-1",
+  "nombre": "LO 3/1981 · Artículo 1",
+  "img": "a-1.jpg",
+  "wh": [
+   1075,
+   162
+  ]
+ },
+ {
+  "id": "a-2",
+  "nombre": "LO 3/1981 · Artículo 2",
+  "img": "a-2.jpg",
+  "wh": [
+   1075,
+   610
+  ]
+ },
+ {
+  "id": "a-3",
+  "nombre": "LO 3/1981 · Artículo 3",
+  "img": "a-3.jpg",
+  "wh": [
+   1075,
+   114
+  ]
+ },
+ {
+  "id": "a-4",
+  "nombre": "LO 3/1981 · Artículo 4",
+  "img": "a-4.jpg",
+  "wh": [
+   1075,
+   201
+  ]
+ },
+ {
+  "id": "a-5",
+  "nombre": "LO 3/1981 · Artículo 5",
+  "img": "a-5.jpg",
+  "imgr": "a-5-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "wh": [
+   1075,
+   583
+  ],
+  "whr": [
+   1075,
+   497
+  ],
+  "tr": [
+   [
+    0,
+    95
+   ],
+   [
+    192,
+    380
+   ],
+   [
+    410,
+    448
+   ],
+   [
+    477,
+    563
+   ]
+  ]
+ },
+ {
+  "id": "a-6",
+  "nombre": "LO 3/1981 · Artículo 6",
+  "img": "a-6.jpg",
+  "wh": [
+   1075,
+   387
+  ]
+ },
+ {
+  "id": "a-7",
+  "nombre": "LO 3/1981 · Artículo 7",
+  "img": "a-7.jpg",
+  "wh": [
+   1075,
+   382
+  ]
+ },
+ {
+  "id": "a-8",
+  "nombre": "LO 3/1981 · Artículo 8",
+  "img": "a-8.jpg",
+  "wh": [
+   1075,
+   336
+  ]
+ },
+ {
+  "id": "a-9",
+  "nombre": "LO 3/1981 · Artículo 9",
+  "img": "a-9.jpg",
+  "wh": [
+   1075,
+   179
+  ]
+ },
+ {
+  "id": "a-10",
+  "nombre": "LO 3/1981 · Artículo 10",
+  "img": "a-10.jpg",
+  "wh": [
+   1075,
+   458
+  ]
+ },
+ {
+  "id": "a-11",
+  "nombre": "LO 3/1981 · Artículo 11",
+  "img": "a-11.jpg",
+  "wh": [
+   1075,
+   285
+  ]
+ },
+ {
+  "id": "a-12",
+  "nombre": "LO 3/1981 · Artículo 12",
+  "img": "a-12.jpg",
+  "wh": [
+   1075,
+   181
+  ]
+ },
+ {
+  "id": "a-13",
+  "nombre": "LO 3/1981 · Artículo 13",
+  "img": "a-13.jpg",
+  "wh": [
+   1075,
+   184
+  ]
+ },
+ {
+  "id": "a-14",
+  "nombre": "LO 3/1981 · Artículo 14",
+  "img": "a-14.jpg",
+  "wh": [
+   1075,
+   151
+  ]
+ },
+ {
+  "id": "a-15",
+  "nombre": "LO 3/1981 · Artículo 15",
+  "img": "a-15.jpg",
+  "wh": [
+   1075,
+   201
+  ]
+ },
+ {
+  "id": "a-16",
+  "nombre": "LO 3/1981 · Artículo 16",
+  "img": "a-16.jpg",
+  "wh": [
+   1075,
+   200
+  ]
+ },
+ {
+  "id": "a-17",
+  "nombre": "LO 3/1981 · Artículo 17",
+  "img": "a-17.jpg",
+  "wh": [
+   1075,
+   432
+  ]
+ },
+ {
+  "id": "a-18",
+  "nombre": "LO 3/1981 · Artículo 18",
+  "img": "a-18.jpg",
+  "wh": [
+   1075,
+   462
+  ]
+ },
+ {
+  "id": "a-19",
+  "nombre": "LO 3/1981 · Artículo 19",
+  "img": "a-19.jpg",
+  "wh": [
+   1075,
+   342
+  ]
+ },
+ {
+  "id": "a-20",
+  "nombre": "LO 3/1981 · Artículo 20",
+  "img": "a-20.jpg",
+  "wh": [
+   1075,
+   411
+  ]
+ },
+ {
+  "id": "a-21",
+  "nombre": "LO 3/1981 · Artículo 21",
+  "img": "a-21.jpg",
+  "wh": [
+   1075,
+   178
+  ]
+ },
+ {
+  "id": "a-22",
+  "nombre": "LO 3/1981 · Artículo 22",
+  "img": "a-22.jpg",
+  "wh": [
+   1075,
+   456
+  ]
+ },
+ {
+  "id": "a-23",
+  "nombre": "LO 3/1981 · Artículo 23",
+  "img": "a-23.jpg",
+  "wh": [
+   1075,
+   162
+  ]
+ },
+ {
+  "id": "a-24",
+  "nombre": "LO 3/1981 · Artículo 24",
+  "img": "a-24.jpg",
+  "wh": [
+   1075,
+   205
+  ]
+ },
+ {
+  "id": "a-25",
+  "nombre": "LO 3/1981 · Artículo 25",
+  "img": "a-25.jpg",
+  "wh": [
+   1075,
+   330
+  ]
+ },
+ {
+  "id": "a-26",
+  "nombre": "LO 3/1981 · Artículo 26",
+  "img": "a-26.jpg",
+  "wh": [
+   1075,
+   156
+  ]
+ },
+ {
+  "id": "a-27",
+  "nombre": "LO 3/1981 · Artículo 27",
+  "img": "a-27.jpg",
+  "wh": [
+   1075,
+   156
+  ]
+ },
+ {
+  "id": "a-28",
+  "nombre": "LO 3/1981 · Artículo 28",
+  "img": "a-28.jpg",
+  "wh": [
+   1075,
+   320
+  ]
+ },
+ {
+  "id": "a-29",
+  "nombre": "LO 3/1981 · Artículo 29",
+  "img": "a-29.jpg",
+  "wh": [
+   1075,
+   114
+  ]
+ },
+ {
+  "id": "a-30",
+  "nombre": "LO 3/1981 · Artículo 30",
+  "img": "a-30.jpg",
+  "wh": [
+   1075,
+   412
+  ]
+ },
+ {
+  "id": "a-31",
+  "nombre": "LO 3/1981 · Artículo 31",
+  "img": "a-31.jpg",
+  "wh": [
+   1075,
+   355
+  ]
+ },
+ {
+  "id": "a-32",
+  "nombre": "LO 3/1981 · Artículo 32",
+  "img": "a-32.jpg",
+  "wh": [
+   1075,
+   249
+  ]
+ },
+ {
+  "id": "a-33",
+  "nombre": "LO 3/1981 · Artículo 33",
+  "img": "a-33.jpg",
+  "wh": [
+   1075,
+   370
+  ]
+ },
+ {
+  "id": "a-34",
+  "nombre": "LO 3/1981 · Artículo 34",
+  "img": "a-34.jpg",
+  "wh": [
+   1075,
+   114
+  ]
+ },
+ {
+  "id": "a-35",
+  "nombre": "LO 3/1981 · Artículo 35",
+  "img": "a-35.jpg",
+  "wh": [
+   1075,
+   206
+  ]
+ },
+ {
+  "id": "a-36",
+  "nombre": "LO 3/1981 · Artículo 36",
+  "img": "a-36.jpg",
+  "wh": [
+   1075,
+   131
+  ]
+ },
+ {
+  "id": "a-37",
+  "nombre": "LO 3/1981 · Artículo 37",
+  "img": "a-37.jpg",
+  "wh": [
+   1075,
+   131
+  ]
+ },
+ {
+  "id": "b-1",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 1",
+  "img": "b-1.jpg",
+  "wh": [
+   1075,
+   386
+  ]
+ },
+ {
+  "id": "b-2",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 2",
+  "img": "b-2.jpg",
+  "wh": [
+   1075,
+   461
+  ]
+ },
+ {
+  "id": "b-3",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 3",
+  "img": "b-3.jpg",
+  "wh": [
+   1075,
+   159
+  ]
+ },
+ {
+  "id": "b-5",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 5",
+  "img": "b-5.jpg",
+  "wh": [
+   1075,
+   181
+  ]
+ },
+ {
+  "id": "b-6",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 6",
+  "img": "b-6.jpg",
+  "wh": [
+   1075,
+   115
+  ]
+ },
+ {
+  "id": "b-7",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 7",
+  "img": "b-7.jpg",
+  "wh": [
+   1075,
+   223
+  ]
+ },
+ {
+  "id": "b-8",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 8",
+  "img": "b-8.jpg",
+  "wh": [
+   1075,
+   1170
+  ]
+ },
+ {
+  "id": "b-10",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 10",
+  "img": "b-10.jpg",
+  "wh": [
+   1075,
+   273
+  ]
+ },
+ {
+  "id": "b-11",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 11",
+  "img": "b-11.jpg",
+  "wh": [
+   1075,
+   407
+  ]
+ },
+ {
+  "id": "b-12",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 12",
+  "img": "b-12.jpg",
+  "imgr": "b-12-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "wh": [
+   1075,
+   1049
+  ],
+  "whr": [
+   1075,
+   598
+  ],
+  "tr": [
+   [
+    0,
+    92
+   ],
+   [
+    160,
+    258
+   ],
+   [
+    612,
+    690
+   ],
+   [
+    828,
+    880
+   ],
+   [
+    895,
+    945
+   ],
+   [
+    962,
+    1040
+   ]
+  ]
+ },
+ {
+  "id": "b-13",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 13",
+  "img": "b-13.jpg",
+  "wh": [
+   1075,
+   275
+  ]
+ },
+ {
+  "id": "b-14",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 14",
+  "img": "b-14.jpg",
+  "wh": [
+   1075,
+   152
+  ]
+ },
+ {
+  "id": "b-15",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 15",
+  "img": "b-15.jpg",
+  "wh": [
+   1075,
+   206
+  ]
+ },
+ {
+  "id": "b-16",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 16",
+  "img": "b-16.jpg",
+  "wh": [
+   1075,
+   466
+  ]
+ },
+ {
+  "id": "b-17",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 17",
+  "img": "b-17.jpg",
+  "wh": [
+   1075,
+   233
+  ]
+ },
+ {
+  "id": "b-18",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 18",
+  "img": "b-18.jpg",
+  "imgr": "b-18-r.jpg",
+  "ap": [
+   2
+  ],
+  "wh": [
+   1075,
+   1059
+  ],
+  "whr": [
+   1075,
+   304
+  ],
+  "tr": [
+   [
+    0,
+    41
+   ],
+   [
+    118,
+    172
+   ],
+   [
+    243,
+    305
+   ],
+   [
+    838,
+    895
+   ]
+  ]
+ },
+ {
+  "id": "b-19",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 19",
+  "img": "b-19.jpg",
+  "wh": [
+   1075,
+   1000
+  ]
+ },
+ {
+  "id": "b-20",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 20",
+  "img": "b-20.jpg",
+  "wh": [
+   1075,
+   469
+  ]
+ },
+ {
+  "id": "b-21",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 21",
+  "img": "b-21.jpg",
+  "wh": [
+   1075,
+   277
+  ]
+ },
+ {
+  "id": "b-22",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 22",
+  "img": "b-22.jpg",
+  "wh": [
+   1075,
+   438
+  ]
+ },
+ {
+  "id": "b-24",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 24",
+  "img": "b-24.jpg",
+  "wh": [
+   1075,
+   260
+  ]
+ },
+ {
+  "id": "b-26",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 26",
+  "img": "b-26.jpg",
+  "wh": [
+   1075,
+   722
+  ]
+ },
+ {
+  "id": "b-27",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 27",
+  "img": "b-27.jpg",
+  "wh": [
+   1075,
+   229
+  ]
+ },
+ {
+  "id": "b-28",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 28",
+  "img": "b-28.jpg",
+  "wh": [
+   1075,
+   342
+  ]
+ },
+ {
+  "id": "b-29",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 29",
+  "img": "b-29.jpg",
+  "wh": [
+   1075,
+   370
+  ]
+ },
+ {
+  "id": "b-30",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 30",
+  "img": "b-30.jpg",
+  "wh": [
+   1075,
+   427
+  ]
+ },
+ {
+  "id": "b-31",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 31",
+  "img": "b-31.jpg",
+  "wh": [
+   1075,
+   340
+  ]
+ },
+ {
+  "id": "b-32",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 32",
+  "img": "b-32.jpg",
+  "wh": [
+   1075,
+   295
+  ]
+ },
+ {
+  "id": "b-34",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 34",
+  "img": "b-34.jpg",
+  "wh": [
+   1075,
+   138
+  ]
+ },
+ {
+  "id": "b-35",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 35",
+  "img": "b-35.jpg",
+  "wh": [
+   1075,
+   434
+  ]
+ },
+ {
+  "id": "b-36",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 36",
+  "img": "b-36.jpg",
+  "wh": [
+   1075,
+   793
+  ]
+ },
+ {
+  "id": "b-37",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 37",
+  "img": "b-37.jpg",
+  "wh": [
+   1075,
+   391
+  ]
+ },
+ {
+  "id": "b-38",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 38",
+  "img": "b-38.jpg",
+  "wh": [
+   1075,
+   756
+  ]
+ },
+ {
+  "id": "b-39",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 39",
+  "img": "b-39.jpg",
+  "wh": [
+   1075,
+   248
+  ]
+ },
+ {
+  "id": "b-40",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 40",
+  "img": "b-40.jpg",
+  "wh": [
+   1075,
+   243
+  ]
+ },
+ {
+  "id": "b-41",
+  "nombre": "Reglamento del Defensor del Pueblo · Artículo 41",
+  "img": "b-41.jpg",
+  "wh": [
+   1075,
+   169
+  ]
+ },
+ {
+  "id": "b-da",
+  "nombre": "Reglamento · Disposición adicional",
+  "img": "b-da.jpg",
+  "wh": [
+   1075,
+   137
+  ]
+ },
+ {
+  "id": "b-dt",
+  "nombre": "Reglamento · Disposición transitoria",
+  "img": "b-dt.jpg",
+  "wh": [
+   1075,
+   145
+  ]
+ },
+ {
+  "id": "b-df",
+  "nombre": "Reglamento · Disposición final",
+  "img": "b-df.jpg",
+  "wh": [
+   1075,
+   93
+  ]
+ }
+]

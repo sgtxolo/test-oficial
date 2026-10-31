@@ -7743,7 +7743,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
 /* Enlace «📑 Mi subrayado» en cada ficha del Exprés: lleva a ese mismo artículo en expres-subrayado.html (temas con recortes: 1 y 7).
    Usa la primera pregunta de la ficha (data-q) para que la otra app encuentre el artículo. */
 (function(){
-  var TEMAS = [1, 3, 7, 9, 11, 12], cargados = {};
+  var TEMAS = [1, 3, 7, 9, 11, 12, 14], cargados = {};
   function carga(t, cb){ if (window.EXSUB && window.EXSUB[t]) return cb(); if (cargados[t]){ cargados[t].push(cb); return; } cargados[t] = [cb];
     var s = document.createElement('script'); s.src = 'expres-subrayado/datos-t' + t + '.js'; s.onload = function(){ cargados[t].forEach(function(f){ f(); }); }; document.head.appendChild(s); }
   var st = document.createElement('style');

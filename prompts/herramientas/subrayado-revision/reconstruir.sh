@@ -4,6 +4,7 @@ T=${TEMA:-11}
 case $T in
  1) TIT="Tema 1 · Derechos humanos"; PDF="TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf";;
  7) TIT="Tema 7 · Constitución Española"; PDF="TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf";;
+ 14) TIT="Tema 14 · El Defensor del Pueblo"; PDF="TEMA 14 DEFENSOR DEL PUEBLO-2026-08-08.pdf";;
  3) TIT="Tema 3 · Tratados de la Unión Europea"; PDF="TEMA 3 TRATADOS DE LA UNION EUROPEA-08-08-2026.pdf";;
  9) TIT="Tema 9 · Defensa Nacional"; PDF="TEMA 9 DERECHO CIVIL-08-08-2026.pdf";;
  12) TIT="Tema 12 · Gobierno y Administración"; PDF="TEMA 12 - GOBIERNO Y ADMINISTRACION-2026-08-08.pdf";;
