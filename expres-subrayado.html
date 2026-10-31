@@ -224,6 +224,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <div id="pop" class="oculto"></div>
 <div id="zonaImp"></div>
 <div id="vis" class="oculto"></div>
+<script src="expres-subrayado/recortes.js"></script>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
 <script src="expres-subrayado/datos-t11.js"></script>
@@ -547,6 +548,7 @@ const RB = {};   // límites del texto de cada captura (para quitar los márgene
 function recorteBlanco(img, caja) {
   const aplica = b => { const w = Math.max(.35, b[1] - b[0]); caja.style.width = (100 / w) + '%'; caja.style.marginLeft = (-b[0] / w * 100) + '%'; };
   if (RB[img.src]) return aplica(RB[img.src]);
+  const pre = (window.RBPRE || {})[decodeURI(img.src).split('/img/').pop().replace('.jpg', '')]; if (pre) return aplica(RB[img.src] = pre);   // calculado de antemano: en file:// el canvas no deja leer los píxeles
   try {
     const W = 360, H = Math.max(1, Math.round(img.naturalHeight * W / img.naturalWidth)), c = document.createElement('canvas'); c.width = W; c.height = H;
     const cx = c.getContext('2d', {willReadFrequently: true}); cx.drawImage(img, 0, 0, W, H); const d = cx.getImageData(0, 0, W, H).data, col = new Array(W).fill(0);
@@ -614,6 +616,7 @@ function entra() {
   if (mq) { const q = decodeURIComponent(mq[1]), t = String(parseInt(q, 10)); if (D[t]) { tema = t; dest = mp ? decodeURIComponent(mp[1]) : (D[t].preg[q] || null); destAp = ma ? +ma[1] : null; } }
   else if (mt && D[mt[1]]) { tema = mt[1]; dest = mp ? decodeURIComponent(mp[1]) : null; }
   else if (emb) tema = Object.keys(D).sort((a, b) => a - b)[0];
+  if (/[#&]entero=1/.test(h) && tema && dest) { st.ent = st.ent || {}; st.ent[key(tema, dest)] = 1; destAp = null; }   // «➕ Resto en Mi subrayado» del Exprés: se abre el artículo entero
   try { history.scrollRestoration = 'manual'; } catch (e) {}
   pintaTema(); if (emb) document.body.classList.add('embed'); render(); irA(); addEventListener('load', irA); if (tema) { pill(); if (dest) { st.pin[tema] = st.pin[tema]; } }
 }

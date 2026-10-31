@@ -4343,14 +4343,25 @@ body.embed #app{padding-top:4px}
   // vuelta desde el test al ⚡ Exprés (esquemas.html#q=1-12&ex=1): se abre el Exprés del tema en la respuesta de esa pregunta
   function irAPreguntaExpres(id, xm){
     const t = parseInt(id, 10); if (!t || !document.getElementById('tema-' + t) || typeof window.expresActivar !== 'function') return irAPregunta(id);
+    // el restaurador de posición del Exprés (restaurarPos) lleva a este destino en vez de a la posición guardada (que era el principio)
+    window._exDestino = c => { const l = [...c.querySelectorAll('[data-q]')].filter(x => x.dataset.q.split(',').includes(id)); const m = l.find(x => x.matches('mark.m-resp')) || l[0]; return m ? (m.closest('.ex-ficha') || m) : null; };
     mostrar('tema-' + t); window.expresActivar(xm ? 'xm' : 'ex');
     const cont = document.querySelector('#tema-' + t + ' > .ex-cont'); if (!cont) return irAPregunta(id);
-    const el = [...cont.querySelectorAll('mark.m-resp[data-q]')].find(x => x.dataset.q.split(',').includes(id));
-    if (el){ const plg = el.closest('.ex-plg'); if (plg) plg.classList.add('on'); }
-    // se repite: al cargar, otros arranques de la página vuelven arriba (scrollTo(0,0)) después del primer salto
-    const ir = () => { const x = el || cont; x.scrollIntoView({block: el ? 'center' : 'start'}); };
-    [60, 400, 1000].forEach(ms => setTimeout(ir, ms));
-    if (el) setTimeout(() => { el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); }, 1000);
+    const busca = () => { const l = [...cont.querySelectorAll('[data-q]')].filter(x => x.dataset.q.split(',').includes(id)); return l.find(x => x.matches('mark.m-resp')) || l[0]; };
+    const ir = el => { el.scrollIntoView({block: 'center'}); };
+    // el Exprés se monta poco a poco: se espera a que exista la respuesta de esa pregunta (antes saltaba al principio del Exprés)
+    let el = busca(), intentos = 0;
+    const llegar = () => {
+      el = el || busca();
+      if (!el){ if (++intentos < 80) return setTimeout(llegar, 250); return cont.scrollIntoView({block: 'start'}); }
+      const plg = el.closest('.ex-plg'); if (plg) plg.classList.add('on');
+      // al cargar, otros arranques de la página vuelven arriba más tarde: se vuelve a colocar hasta que tú muevas la página
+      ir(el); let n = 0; const iv = setInterval(() => { if (++n > 40) stop(); else ir(el); }, 250);
+      const stop = () => { clearInterval(iv); ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(ev => removeEventListener(ev, stop, true)); };
+      ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(ev => addEventListener(ev, stop, {capture: true, passive: true}));
+      setTimeout(() => { el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); }, 1000);
+    };
+    llegar();
     return true;
   }
   function desdeHash(){ const m = location.hash.match(/[#&]q=([^&]+)/); if (!m) return; const id = decodeURIComponent(m[1]);
@@ -4527,9 +4538,11 @@ body.embed #app{padding-top:4px}
             if (tr) frag.appendChild(document.createTextNode(tr));
             if (i < trozos.length - 1){
               const key = clave(partes[k]).slice(-40) + '|' + clave(partes[k + 1]).slice(0, 40); k++;
+              const util = h => !!h && h.replace(/[\s.,;:()…]/g, '').length > 0;   // un (…) cuyo texto es solo otro (…) no esconde nada: se queda como (…) normal
               const fbk = tabla[key] ? null : (el.closest('.ex-cont') ? rescatar(esq, clave(partes[k - 1]).slice(-40), clave(partes[k]).slice(0, 40)) : null);
-              if (tabla[key] || fbk){
-                const s = document.createElement('span'); s.className = 'hueco'; s.textContent = ELIP; s.dataset.h = tabla[key] || fbk;
+              const hh = util(tabla[key]) ? tabla[key] : (util(fbk) ? fbk : null);
+              if (hh){
+                const s = document.createElement('span'); s.className = 'hueco'; s.textContent = ELIP; s.dataset.h = hh;
                 s.tabIndex = 0; s.setAttribute('role', 'button'); s.setAttribute('aria-expanded', 'false'); frag.appendChild(s);
               } else frag.appendChild(document.createTextNode(ELIP));
             }
@@ -7734,19 +7747,39 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
   function carga(t, cb){ if (window.EXSUB && window.EXSUB[t]) return cb(); if (cargados[t]){ cargados[t].push(cb); return; } cargados[t] = [cb];
     var s = document.createElement('script'); s.src = 'expres-subrayado/datos-t' + t + '.js'; s.onload = function(){ cargados[t].forEach(function(f){ f(); }); }; document.head.appendChild(s); }
   var st = document.createElement('style');
-  st.textContent = '.sub-link{display:inline-block;margin-left:10px;border:1.5px solid #2f6b52;border-radius:99px;padding:1px 10px;font-size:12px;font-weight:700;color:#2f6b52;text-decoration:none;background:#fff;white-space:nowrap}.sub-link:hover{background:#e7efe8}[data-theme="dark"] .sub-link{background:#1e2523;color:#7fd9ac;border-color:#57a683}';
+  st.textContent = '.sub-link{display:inline-block;margin-left:10px;border:1.5px solid #2f6b52;border-radius:99px;padding:1px 10px;font-size:12px;font-weight:700;color:#2f6b52;text-decoration:none;background:#fff;white-space:nowrap}.sub-link:hover{background:#e7efe8}[data-theme="dark"] .sub-link{background:#1e2523;color:#7fd9ac;border-color:#57a683}'
+    + '.sub-resto{border-color:#b9651a;color:#b9651a;background:#fff6ea}.sub-resto:hover{background:#fde8cc}[data-theme="dark"] .sub-resto{background:#2b2218;color:#f2b36b;border-color:#c98a46}'
+    + '.imp-btn{display:inline-block;margin-left:10px;border:1.5px solid #c8102e;border-radius:99px;padding:1px 10px;font:inherit;font-size:12px;font-weight:700;color:#c8102e;background:#fff;cursor:pointer;white-space:nowrap;text-transform:none}.imp-btn.on{background:#c8102e;color:#fff}[data-theme="dark"] .imp-btn{background:#241c1e;color:#ff8a98;border-color:#d4505f}[data-theme="dark"] .imp-btn.on{background:#c8102e;color:#fff}'
+    + '.ex-ficha.imp{box-shadow:inset 5px 0 0 #c8102e}#print-host .imp-btn,#print-host .sub-resto{display:none}';
   document.head.appendChild(st);
   function pon(){
     document.querySelectorAll('.ex-fh:not([data-sub])').forEach(function(h){
       h.setAttribute('data-sub', '1');
-      var f = h.closest('.ex-ficha'); if (!f) return; var m = f.querySelector('[data-q]'); if (!m) return;
+      var f = h.closest('.ex-ficha'); if (!f) return; ponImp(h, f);
+      var m = f.querySelector('[data-q]'); if (!m) return;
       var q = m.getAttribute('data-q').split(/[ ,;|]+/)[0], t = parseInt(q, 10); if (TEMAS.indexOf(t) < 0) return;
       carga(t, function(){
         var D = window.EXSUB && window.EXSUB[t]; if (!D || !D.preg[q]) return;
         var a = document.createElement('a'); a.className = 'sub-link'; a.href = 'expres-subrayado.html#q=' + encodeURIComponent(q); a.title = 'Ver este artículo en tu temario subrayado'; a.textContent = '📑 Mi subrayado';
         h.appendChild(a);
+        var pz = D.piezas.filter(function(x){ return x.id === D.preg[q]; })[0];
+        if (pz && pz.imgr){   // el Exprés lleva solo parte del artículo: avisa de que el resto está en Mi subrayado
+          var r = document.createElement('a'); r.className = 'sub-link sub-resto'; r.dataset.ui = '1'; r.href = a.href + '&entero=1';
+          r.title = 'El Exprés solo trae ' + (pz.ap && pz.ap.length ? (pz.ap.length > 1 ? 'los apartados ' : 'el apartado ') + pz.ap.join(', ') : 'parte') + ' de este artículo. El resto está en Mi subrayado (se abre entero).';
+          r.textContent = '➕ Resto en Mi subrayado'; h.appendChild(r);
+        }
       });
     });
+  }
+  /* «⭐ Imprescindible»: marca que ese artículo cae sí o sí en el examen (se guarda en este dispositivo) */
+  var K_IMP = 'esquemas-imprescindibles', imp = {};
+  try { imp = JSON.parse(localStorage.getItem(K_IMP) || '{}') || {}; } catch (e) {}
+  function claveImp(h, f){ var e = h.closest('.esquema'), t = ''; for (var i = 0; i < h.childNodes.length; i++) if (h.childNodes[i].nodeType === 3) t += h.childNodes[i].nodeValue; return (e ? e.id : '') + '|' + t.replace(/\s+/g, ' ').trim().slice(0, 80); }
+  function ponImp(h, f){
+    var k = claveImp(h, f), b = document.createElement('button'); b.type = 'button'; b.className = 'imp-btn'; b.dataset.ui = '1';
+    var pinta = function(){ b.classList.toggle('on', !!imp[k]); f.classList.toggle('imp', !!imp[k]); b.textContent = imp[k] ? '⭐ Imprescindible' : '☆ Imprescindible'; b.title = 'Marca los artículos que caen sí o sí en el examen'; };
+    b.onclick = function(ev){ ev.preventDefault(); ev.stopPropagation(); if (imp[k]) delete imp[k]; else imp[k] = 1; try { localStorage.setItem(K_IMP, JSON.stringify(imp)); } catch (e) {} pinta(); };
+    pinta(); h.appendChild(b);
   }
   new MutationObserver(function(){ clearTimeout(pon._t); pon._t = setTimeout(pon, 250); }).observe(document.body, {childList: true, subtree: true});
   pon();
