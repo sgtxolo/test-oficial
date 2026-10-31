@@ -225,6 +225,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <div id="top"><div class="fila">
   <button class="ib oculto" id="b-atras" title="Inicio">←</button>
   <h1 id="tit">Exprés · Temario subrayado</h1>
+  <button class="ib oculto" id="b-pin" title="Llevarme al artículo donde pusiste la chincheta 📍">📍 <span class="txt-b">Donde me quedé</span></button>
   <button class="ib" id="b-panel" title="Panel de estudio">🎯 <span class="txt-b">Panel</span></button>
   <button class="ib" id="b-marcas" title="Subrayar y dibujar sobre tu temario">✏️ <span class="txt-b">Marcas</span></button>
   <button class="ib" id="b-sync" title="Sincronizar con tus otros dispositivos">☁</button>
@@ -444,7 +445,7 @@ function ponFecha(n, f) {
 }
 // ---------- dashboard ----------
 function dash() {
-  tema = null; $('#herr').classList.add('oculto'); $('#info').innerHTML = ''; $('#pill').classList.add('oculto'); $('#b-atras').classList.add('oculto'); $('#tit').textContent = 'Exprés · Temario subrayado';
+  tema = null; $('#b-pin').classList.add('oculto'); $('#herr').classList.add('oculto'); $('#info').innerHTML = ''; $('#pill').classList.add('oculto'); $('#b-atras').classList.add('oculto'); $('#tit').textContent = 'Exprés · Temario subrayado';
   const ts = Object.keys(D).sort((a, b) => a - b);
   let tot = 0, ok = 0, pq = 0, qq = 0; ts.forEach(t => { tot += visibles(t).length; ok += hechos(t); pq += D[t].cob ? D[t].cob.e : 0; qq += D[t].cob ? D[t].cob.q : 0; });
   const pct = tot ? Math.round(ok * 100 / tot) : 0, dEx = diasHasta(st.examen), S = leerStats();
@@ -579,7 +580,7 @@ function lista() {
 }
 function render() { if (tema === null) dash(); else verTema(); }
 function pintaLista() { $('#m').innerHTML = lista(); montaEsqs(); }
-function verTema() { $('#b-atras').classList.remove('oculto'); $('#tit').textContent = nomTema(tema); infoTema(); cabTema(); pintaLista(); }
+function verTema() { $('#b-atras').classList.remove('oculto'); botonPin(); $('#tit').textContent = nomTema(tema); infoTema(); cabTema(); pintaLista(); }
 // ---------- «aquí te quedaste» ----------
 function pill() {
   const p = $('#pill'), id = st.pin[tema] || st.ult[tema];
@@ -587,6 +588,10 @@ function pill() {
   const pz = D[tema].piezas.find(x => x.id === id); if (!pz) return p.classList.add('oculto');
   p.innerHTML = '<span>📍 Aquí te quedaste: ' + esc(pz.nombre.replace(/^.* · /, '')) + '</span><button data-pir="' + id + '">Ir</button><button class="x" data-pcierra="1">✕</button>'; p.classList.remove('oculto');
 }
+// Botón de arriba: salta a la chincheta (o al último artículo visto) sin salir del tema
+const idPin = () => { const id = tema && (st.pin[tema] || st.ult[tema]); return id && D[tema].piezas.some(x => x.id === id) ? id : null; };
+function botonPin() { $('#b-pin').classList.toggle('oculto', !idPin()); }
+$('#b-pin').onclick = () => { const id = idPin(); if (!id) return aviso('Aún no has puesto ninguna chincheta 📍'); $('#pill').classList.add('oculto'); filtro = 'todos'; inst = 'todas'; marca = null; busca = ''; dest = id; destAp = null; verTema(); irA(); dest = null; };
 $('#pill').onclick = e => {
   if (e.target.dataset.pcierra) return $('#pill').classList.add('oculto');
   if (e.target.dataset.pir) { $('#pill').classList.add('oculto'); filtro = 'todos'; inst = 'todas'; marca = null; busca = ''; dest = e.target.dataset.pir; destAp = null; verTema(); irA(); dest = null; }
@@ -625,7 +630,7 @@ $('#m').addEventListener('click', e => {
   if (a === 'hfij') { const i = +(e.target.closest('[data-h]').dataset.h), l = ((st.fij = st.fij || {})[k] = st.fij[k] || []), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); return; }
   if (a === 'addx') { st.add[k] = []; recarga(); }
   if (a === 'esq') { st.esq[k] = st.esq[k] ? 0 : 1; recarga(); }
-  if (a === 'pin') { st.pin[tema] = st.pin[tema] === id ? null : id; aviso(st.pin[tema] ? '📍 Te quedarás aquí' : 'Marca quitada'); recarga(); }
+  if (a === 'pin') { st.pin[tema] = st.pin[tema] === id ? null : id; aviso(st.pin[tema] ? '📍 Te quedarás aquí' : 'Marca quitada'); recarga(); botonPin(); }
   if (a === 'nota') { st.notaAb = st.notaAb === k ? null : k; if (st.nota[k] === undefined) st.nota[k] = ''; recarga(); const ta = document.querySelector('[data-n="' + k + '"]'); if (ta) ta.focus(); }
   if (a === 'prac') { const qs = (inv[tema][id] || []).slice(0, 60).join(','), v = location.pathname.split('/').pop() + '#t=' + tema + '&p=' + id; location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(qs) + '&v=' + encodeURIComponent(v); }
 });
