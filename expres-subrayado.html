@@ -177,7 +177,9 @@ pm-m{display:inline}
   body{background:#fff!important;color:#000}
   #zonaImp{display:block!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   #zonaImp.bn{filter:grayscale(1)}
-  #zonaImp .pieza{break-inside:avoid-page;margin:0 0 5mm}
+  #zonaImp .pieza{break-inside:auto;margin:0 0 2.5mm}   /* continuo, como un temario: las fotos se parten entre renglones (ver .sl), sin dejar medias páginas en blanco */
+  #zonaImp .sl{overflow:hidden;position:relative;break-inside:avoid;page-break-inside:avoid}
+  #zonaImp .sl:first-child{break-after:avoid;page-break-after:avoid}
   #zonaImp .pbox{overflow:hidden;background:#fff}
   #zonaImp .imgw img{width:100%;display:block;cursor:auto}
   /* mismo tamaño de letra que el PDF de Esquemas (equivale al temario oficial): letra Source Sans 3 de 14 px, interlineado corto y títulos en rojo */
@@ -229,6 +231,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <div id="vis" class="oculto"></div>
 <script src="expres-subrayado/recortes.js"></script>
 <script src="expres-subrayado/bloques-t11.js"></script>
+<script src="expres-subrayado/cortes-t11.js"></script>
 <script src="expres-subrayado/revision-t11.js"></script>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
@@ -1012,11 +1015,25 @@ $('#mod').addEventListener('click', e => {
   }
 });
 $('#mod').addEventListener('change', e => { if (e.target.id === 'imp-bn') { st.impOp.bn = e.target.checked; guarda(); } if (e.target.id === 'imp-fz') { st.impOp.fz = +e.target.value; guarda(); resumenImp(); } });
+// Parte cada foto en tiras que acaban entre renglones (cortes-tN.js): así una foto larga ocupa justo el hueco de la página y no se corta ninguna línea
+function rebanar(z, t) {
+  const X = (window.EXSUB_X || {})[t] || {};
+  z.querySelectorAll('.pbox[data-cx]').forEach(pb => {
+    const cuts = X[pb.dataset.cx] || [], caja = pb.querySelector('.imgw'), im = caja && caja.querySelector('img'); if (!cuts.length || !im || !im.naturalWidth) return;
+    const W = im.naturalWidth, Hh = im.naturalHeight, wp = parseFloat(caja.style.width) || 100, pts = [0, ...cuts, Hh];
+    pb.innerHTML = '';
+    for (let i = 0; i < pts.length - 1; i++) {
+      const y0 = pts[i], y1 = pts[i + 1], sl = document.createElement('div'), c = caja.cloneNode(true);
+      sl.className = 'sl'; sl.style.aspectRatio = W + ' / ' + ((y1 - y0) * wp / 100); c.style.marginTop = (-(y0 / W) * wp) + '%';
+      sl.appendChild(c); pb.appendChild(sl);
+    }
+  });
+}
 async function lanzaImp() {
   const t = tema, sel = st.imp[t] || {}, op = st.impOp, z = $('#zonaImp'); z.innerHTML = ''; z.className = op.bn ? 'bn' : ''; z.style.setProperty('--fz', (op.fz || 12) + 'px'); const hechas = new Set(); let n = 0;
   for (const p of D[t].piezas) {
     const s = sel[p.id]; if (!hayAlgo(s)) continue; const div = document.createElement('div'); div.className = 'pieza';
-    const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = '<img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh); const pb = document.createElement('div'); pb.className = 'pbox'; pb.appendChild(w); div.appendChild(pb); n++; };
+    const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = '<img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh); const pb = document.createElement('div'); pb.className = 'pbox'; pb.dataset.cx = (rec ? p.imgr : p.img).replace('.jpg', ''); pb.appendChild(w); div.appendChild(pb); n++; };
     if (s.s) imagen(recImp(p));
     if (s.n && p.imgr) imagen(false);
     [['x', false], ['d', true]].forEach(([fl, desp]) => { if (!s[fl] || p.fx === undefined) return; const f = fichaNodo(t, p, desp), clave = fl + p.fx + (f && f.dataset.sub ? '-' + p.id : ''); if (f && !hechas.has(clave)) { hechas.add(clave); div.appendChild(f); n++; } });
@@ -1026,6 +1043,7 @@ async function lanzaImp() {
   if (!n) { aviso('No has elegido nada para imprimir'); return; }
   await Promise.all([...z.querySelectorAll('img')].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
   z.querySelectorAll('.pbox .imgw').forEach(c => { const im = c.querySelector('img'); if (im && im.naturalWidth) recorteBlanco(im, c); });   // quita el margen blanco de los lados: la letra sale más grande
+  rebanar(z, t);
   const tema0 = document.documentElement.dataset.theme; document.documentElement.dataset.theme = 'light';
   let hecho = false; const fin = () => { if (hecho) return; hecho = true; document.documentElement.dataset.theme = tema0; z.innerHTML = ''; removeEventListener('afterprint', fin); };
   addEventListener('afterprint', fin); cierra(); setTimeout(() => { window.print(); fin(); }, 150);
