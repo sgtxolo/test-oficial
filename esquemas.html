@@ -7829,6 +7829,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
   }
   function ponAnadir(){
     var sels = [['.ex-fh:not([data-sub2])', function(h){ var f = h.closest('.ex-ficha'); return f ? [].map.call(f.querySelectorAll('[data-q]'), function(m){ return m.getAttribute('data-q'); }) : null; }],
+                ['.ex-cont .ex-linea:not([data-sub2])', function(h){ if (!/^Art[íi]culo/.test(h.textContent.trim())) return null; var m = [].map.call(h.querySelectorAll('[data-q]'), function(x){ return x.getAttribute('data-q'); }); return m.length ? m : null; }],
                 ['.esquema .articulo-head:not([data-sub2])', function(h){ if (h.closest('.ex-cont, #print-host')) return null; var a = h.closest('.articulo'); return a && a.dataset.qs ? [a.dataset.qs] : null; }]];
     sels.forEach(function(sl){
       document.querySelectorAll(sl[0]).forEach(function(h){
