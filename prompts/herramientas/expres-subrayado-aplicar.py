@@ -37,7 +37,7 @@ for pid in ids:
         ps.append(full.crop((0, y0, full.width, y1))); ant = y1
     o = Image.new('RGB', (full.width, sum(p.height for p in ps)), 'white'); y = 0
     for p in ps: o.paste(p, (0, y)); y += p.height
-    o.save(f"{OUT}/{pid}-r.jpg", quality=78, optimize=True); e['imgr'] = f'{pid}-r.jpg'; e['ap'] = r['ap']; e['whr'] = list(o.size)
+    o.save(f"{OUT}/{pid}-r.jpg", quality=78, optimize=True); e['imgr'] = f'{pid}-r.jpg'; e['ap'] = r['ap']; e['whr'] = list(o.size); e['tr'] = [[int(a), int(min(b, full.height))] for a, b in rg]   # tramos (px de la imagen entera): el visor los usa para el «(…)» tocable
     if r.get('nombre'): e['nombre'] = r['nombre']
     print(pid, o.size)
 json.dump(ind, open(OUT + '/indice.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

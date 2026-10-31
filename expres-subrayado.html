@@ -140,6 +140,9 @@ input[type=date],input[type=text].f,select.f{font:inherit;border:1.5px solid var
 /* marcas propias: dibujo encima de cada captura */
 .imgw{position:relative;line-height:0}.imgw img{display:block}
 .tag.revok{background:#e1f2e7;color:#1f6b45;border:1px solid #57a683}.tag.revpend{background:#fff1dc;color:#9a5a10;border:1px solid #d9a35a}
+.hsg{position:absolute;left:0;right:0;z-index:3;border:0;background:rgba(47,107,82,.0);cursor:pointer;padding:0;font-size:0}.hsg:hover,.hsg:focus-visible{background:rgba(47,107,82,.22);outline:2px dashed #2f6b52}
+.gapb.tg{cursor:pointer;border:0;width:100%;font-family:inherit}.gapb.tg:hover{background:rgba(47,107,82,.22);color:#2f6b52}
+.cmpb.fj{opacity:.62;outline:2px dashed #2f6b52;outline-offset:-2px;cursor:pointer}.fjn{font-size:12px;color:#2f6b52;margin:2px 0 6px}
 .cmpb{width:100%;background-repeat:no-repeat;background-size:100% auto}.gapb{line-height:1;text-align:center;color:#7a808a;font-weight:700;padding:3px 0;background:rgba(120,126,136,.1);font-size:13px}
 .addp{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0;font-size:12.5px}.addp b{font-weight:700}.addp .chip.on{background:#2f6b52;color:#fff}.addn{font-size:12px;color:#7a808a;margin:2px 0 6px}
 svg.ov{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
@@ -503,6 +506,23 @@ function compuesto(p) {
     h += '<div class="cmpb" style="aspect-ratio:' + W + '/' + hh + ';background-image:url(&quot;' + src + '&quot;);background-position:0 ' + (tot > hh ? x[0] / (tot - hh) * 100 : 0) + '%"></div>'; ult = i; });
   return h;
 }
+// «(…)» tocable: p.tr = tramos del recorte (px de la captura entera); el hueco i queda entre el tramo i y el i+1 (solo si el recorte le puso franja «(…)»)
+const huecos = p => { const o = []; (p.tr || []).forEach((x, i, a) => { if (i && x[0] - a[i - 1][1] > 8) o.push({i: i - 1, a: a[i - 1][1], b: x[0]}); }); return o; };
+const fijados = k => (((st.fij || {})[k]) || []);
+function compuestoFij(p) {   // recorte con los huecos que has fijado abiertos (atenuados) y el resto con su «(…)» tocable
+  const k = key(tema, p.id), fj = fijados(k); if (!p.tr || !fj.length) return null;
+  const W = p.wh[0], tot = p.wh[1], src = D[tema].dir + p.img, hs = huecos(p); let h = '';
+  const bloque = (a, b, cl, i) => { const hh = b - a; return hh < 2 ? '' : '<div class="cmpb' + cl + '"' + (i !== undefined ? ' data-a="hfij" data-h="' + i + '" title="Toca para quitar este trozo de tu subrayado"' : '') + ' style="aspect-ratio:' + W + '/' + hh + ';background-image:url(&quot;' + src + '&quot;);background-position:0 ' + (tot > hh ? a / (tot - hh) * 100 : 0) + '%"></div>'; };
+  p.tr.forEach((x, i) => { h += bloque(x[0], x[1], '');
+    const g = hs.find(y => y.i === i); if (!g) return;
+    h += fj.includes(g.i) ? bloque(g.a, g.b, ' fj', g.i) : '<button class="gapb tg" data-a="hfij" data-h="' + g.i + '" title="Toca para ver este trozo y fijarlo en tu subrayado">(…)</button>'; });
+  return h;
+}
+function puntosHueco(p, wh) {   // zonas tocables sobre las franjas «(…)» de la imagen recortada
+  const hs = huecos(p); if (!hs.length || !wh) return ''; let y = 0, h = ''; const tot = wh[1];
+  p.tr.forEach((x, i, a) => { y += x[1] - x[0]; const g = hs.find(q => q.i === i); if (g) { h += '<button class="hsg" data-a="hfij" data-h="' + g.i + '" title="Toca para ver este trozo y fijarlo en tu subrayado" style="top:' + (y / tot * 100) + '%;height:' + (30 / tot * 100) + '%">(…)</button>'; y += 30; } });
+  return h;
+}
 function selector(p, k) {
   const b = BL()[p.id]; if (!b || st.addAb !== k) return ''; const ad = (st.add || {})[k] || [];
   const on = b.map((x, i) => x[3] ? i : -1).filter(i => i >= 0), a0 = Math.min(...on), a1 = Math.max(...on);
@@ -535,7 +555,7 @@ function lista() {
       + (p.q1 ? '<a class="sb" target="_top" href="esquemas.html#q=' + encodeURIComponent(p.q1) + '&ex=1" title="Ver este artículo en el Exprés de Esquemas">⚡<span class="lb"> En Esquemas</span></a>' : '') + '</div>'
       + selector(p, k)
       + (st.notaAb === k ? '<textarea class="nota" data-n="' + k + '" placeholder="Tu nota sobre este artículo…">' + esc(st.nota[k] || '') + '</textarea>' : (st.nota[k] ? '<div class="nota" style="min-height:0;white-space:pre-wrap">' + esc(st.nota[k]) + '</div>' : ''))
-      + (st.modoEsq && cu.length ? '' : (!ent && p.imgr && compuesto(p)) ? '<div class="imgw">' + compuesto(p) + '</div>' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + '</div>')
+      + (st.modoEsq && cu.length ? '' : (!ent && p.imgr && compuesto(p)) ? '<div class="imgw">' + compuesto(p) + '</div>' : (!ent && p.imgr && compuestoFij(p)) ? '<div class="imgw">' + compuestoFij(p) + '</div><div class="fjn">Lo atenuado con borde verde es lo que has fijado: tócalo para quitarlo. Se ve sin tus marcas de dibujo.</div>' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + (!ent && p.imgr ? puntosHueco(p, wh) : '') + '</div>')
       + (abreEsq && cu.length ? '<div class="esqs"><div class="esq-t">🧩 Esquema de este artículo</div>' + cu.map(x => x.h).join('') + '</div>' : '') + '</div>'; });
   return h;
 }
@@ -584,6 +604,7 @@ $('#m').addEventListener('click', e => {
   if (a === 'ent') { const v = e.target.closest('[data-v]').dataset.v, pz = D[tema].piezas.find(x => x.id === id); if (pz && entera(pz) === (v === 'f')) return; st.ver = st.ver || {}; st.ver[k] = v; st.ent[k] = 0; if (dest === id) destAp = null; recarga(); }
   if (a === 'add') { st.addAb = st.addAb === k ? null : k; recarga(); }
   if (a === 'addb') { const i = +e.target.dataset.i, l = anade(k), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); }
+  if (a === 'hfij') { const i = +(e.target.closest('[data-h]').dataset.h), l = ((st.fij = st.fij || {})[k] = st.fij[k] || []), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); return; }
   if (a === 'addx') { st.add[k] = []; recarga(); }
   if (a === 'esq') { st.esq[k] = st.esq[k] ? 0 : 1; recarga(); }
   if (a === 'pin') { st.pin[tema] = st.pin[tema] === id ? null : id; aviso(st.pin[tema] ? '📍 Te quedarás aquí' : 'Marca quitada'); recarga(); }
@@ -1062,11 +1083,23 @@ function rebanar(z, t) {
     }
   });
 }
+// Imagen del recorte con los huecos fijados abiertos (para imprimir): se dibuja en un lienzo a partir de la captura entera
+async function imgFij(p) {
+  try {
+    const im = new Image(); im.src = D[tema].dir + p.img; await new Promise((ok, ko) => { im.onload = ok; im.onerror = ko; });
+    const fj = fijados(key(tema, p.id)), hs = huecos(p), W = im.naturalWidth, f = W / p.wh[0], partes = [];
+    p.tr.forEach((x, i) => { partes.push([x[0], x[1], 0]); const g = hs.find(q => q.i === i); if (g) partes.push(fj.includes(g.i) ? [g.a, g.b, 0] : [0, 0, 30]); });
+    const H = partes.reduce((a, q) => a + (q[2] ? 30 : Math.round((q[1] - q[0]) * f)), 0), c = document.createElement('canvas'); c.width = W; c.height = H; const cx = c.getContext('2d'); cx.fillStyle = '#fff'; cx.fillRect(0, 0, W, H); let y = 0;
+    partes.forEach(q => { if (q[2]) { cx.fillStyle = '#6e747e'; cx.font = 'bold ' + Math.round(20 * f) + 'px sans-serif'; cx.textAlign = 'center'; cx.fillText('(…)', W / 2, y + 22 * f); y += 30; } else { const h = Math.round((q[1] - q[0]) * f); cx.drawImage(im, 0, Math.round(q[0] * f), W, h, 0, y, W, h); y += h; } });
+    return c.toDataURL('image/jpeg', .85);
+  } catch (e) { return null; }
+}
 async function lanzaImp() {
   const t = tema, sel = st.imp[t] || {}, op = st.impOp, z = $('#zonaImp'); z.innerHTML = ''; z.className = op.bn ? 'bn' : ''; z.style.setProperty('--fz', (op.fz || 12) + 'px'); z.style.setProperty('--zoom', op.zoom || 85); const hechas = new Set(); let n = 0;
   for (const p of D[t].piezas) {
     const s = sel[p.id]; if (!hayAlgo(s)) continue; const div = document.createElement('div'); div.className = 'pieza';
-    const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = '<img src="' + D[t].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh); const pb = document.createElement('div'); pb.className = 'pbox'; pb.dataset.cx = (rec ? p.imgr : p.img).replace('.jpg', ''); pb.appendChild(w); div.appendChild(pb); n++; };
+    const fj = s.s && recImp(p) && p.tr && fijados(key(t, p.id)).length ? await imgFij(p) : null;   // recorte con los «(…)» que has fijado abiertos
+    const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; const usaFj = rec && fj; w.innerHTML = '<img src="' + (usaFj ? fj : D[t].dir + (rec ? p.imgr : p.img)) + '">' + (usaFj ? '' : capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh)); const pb = document.createElement('div'); pb.className = 'pbox'; if (!usaFj) pb.dataset.cx = (rec ? p.imgr : p.img).replace('.jpg', ''); pb.appendChild(w); div.appendChild(pb); n++; };
     if (s.s) imagen(recImp(p));
     if (s.n && p.imgr) imagen(false);
     [['x', false], ['d', true]].forEach(([fl, desp]) => { if (!s[fl] || p.fx === undefined) return; const f = fichaNodo(t, p, desp), clave = fl + p.fx + (f && f.dataset.sub ? '-' + p.id : ''); if (f && !hechas.has(clave)) { hechas.add(clave); div.appendChild(f); n++; } });
