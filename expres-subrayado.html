@@ -63,6 +63,8 @@ h3.sec{font-size:15px;margin:22px 4px 10px;color:var(--gris);text-transform:uppe
 .prog{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:12.5px;color:var(--gris)}
 .prog .barra{flex:1;margin:0;background:var(--panel-alt)}.prog .barra i{background:var(--verde-med)}
 .grupo{margin:20px 2px 8px;font-size:13px;font-weight:800;color:var(--verde-med);text-transform:uppercase;letter-spacing:.05em}
+.grupo.ley{margin:34px 0 12px;padding:14px 16px;border-radius:14px;background:var(--verde-osc);color:#fff;text-transform:none;letter-spacing:0;font-size:17px;line-height:1.25;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.grupo.ley small{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.75;margin-bottom:3px}
 /* tarjeta de artículo */
 .card{background:var(--panel);border:1.5px solid var(--borde);border-left:6px solid var(--borde);border-radius:var(--radio);margin:0 0 14px;box-shadow:var(--sombra);overflow:hidden;scroll-margin-top:210px}
 .card.st-ok{border-left-color:var(--ok)}.card.st-dud{border-left-color:var(--dud)}.card.st-mal{border-left-color:var(--mal)}
@@ -335,6 +337,8 @@ const anadidoP = (t, p) => !!p.extra && !!(st.inc || {})[key(t, p.id)];
 const fueraP = (t, p) => !!p.extra && !anadidoP(t, p);
 const visibles = t => D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id));
 const hechos = t => visibles(t).filter(p => st.vis[key(t, p.id)]).length;
+const LEYES_TIT = {"Estatuto de Roma":"Estatuto de Roma de la Corte Penal Internacional","LO 18/2003":"Ley Orgánica 18/2003, de Cooperación con la Corte Penal Internacional","Carta de la UE":"Carta de los Derechos Fundamentales de la Unión Europea","Estatuto del Consejo de Europa":"Estatuto del Consejo de Europa","Protocolos al CEDH":"Protocolos adicionales al Convenio Europeo de Derechos Humanos","CEDH":"Convenio Europeo para la Protección de los Derechos Humanos (CEDH)","Acuerdo de privilegios CPI":"Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional","LO 3/2018":"Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales","Ley 39/2015":"Ley 39/2015, del Procedimiento Administrativo Común de las Administraciones Públicas","Ley 40/2015":"Ley 40/2015, de Régimen Jurídico del Sector Público","Ley 19/2013":"Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno","RD 179/2005":"Real Decreto 179/2005, sobre prevención de riesgos laborales en la Guardia Civil","Ley 50/1997":"Ley 50/1997, del Gobierno","LO 3/1981":"Ley Orgánica 3/1981, del Defensor del Pueblo","Reglamento del Defensor del Pueblo":"Reglamento de Organización y Funcionamiento del Defensor del Pueblo","TUE":"Tratado de la Unión Europea (TUE)","TFUE":"Tratado de Funcionamiento de la Unión Europea (TFUE)","LO 2/1979 TC":"Ley Orgánica 2/1979, del Tribunal Constitucional","LO 1/1982":"Ley Orgánica 1/1982, de protección civil del derecho al honor, a la intimidad personal y familiar y a la propia imagen","LO 6/1985":"Ley Orgánica 6/1985, del Poder Judicial","LO 5/2005":"Ley Orgánica 5/2005, de la Defensa Nacional","Directiva de Defensa Nacional 2020":"Directiva de Defensa Nacional 2020"};
+const grupoHTML = n => '<div class="grupo ley"><small>Norma</small>' + esc(LEYES_TIT[n] || n) + '</div>';
 const instDe = (t, p) => { const l = p.id.split('-')[0]; return (D[t].cit || []).find(c => c.p === l) || {}; };
 const leerStats = () => { try { return (JSON.parse(localStorage.getItem('oficialAppState_v1') || '{}').qStats) || {}; } catch (e) { return {}; } };
 // estado del artículo según los tests (como en Esquemas): 🟢 dominado · 🟡 a medias · 🔴 con fallos · ○ sin practicar
@@ -438,7 +442,7 @@ function usaTool(t) {
 }
 function indice() {
   const t = tema; let h = '<h2 style="margin:0 0 8px">📑 Índice con progreso</h2>', g = null;
-  D[t].piezas.filter(p => !fueraP(t, p)).forEach(p => { const gn = instDe(t, p).nombre || ''; if (gn !== g) { h += '<div class="grupo">' + esc(gn) + '</div>'; g = gn; }
+  D[t].piezas.filter(p => !fueraP(t, p)).forEach(p => { const gn = instDe(t, p).nombre || ''; if (gn !== g) { h += grupoHTML(gn); g = gn; }
     h += '<div class="fila-t" data-salta="' + p.id + '"><span>' + (st.vis[key(t, p.id)] ? '✅' : '○') + '</span><b>' + esc(p.nombre.replace(/^.* · /, '')) + '</b></div>'; });
   modal(h + '<button class="ebtn" style="width:100%;margin-top:14px" data-cerrar="1">Cerrar</button>', true);
 }
@@ -601,7 +605,7 @@ function lista() {
   ps.forEach((p, i) => {
     const k = key(t, p.id), g = instDe(t, p).nombre || '', ent = entera(p), qs = inv[t][p.id] || [], cu = (C[t] || {})[p.id] || [], lazy = i <= ixD ? '' : ' loading="lazy"', est = estadoDe(t, p, S);
     const src = D[t].dir + (ent || !p.imgr ? p.img : p.imgr), wh = ent || !p.imgr ? p.wh : p.whr, abreEsq = st.esq[k] || st.modoEsq;
-    if (g !== gAnt) { h += '<div class="grupo">' + esc(g) + '</div>'; gAnt = g; }
+    if (g !== gAnt) { h += grupoHTML(g); gAnt = g; }
     h += '<div class="card' + (est && est.c !== 'nuevo' ? ' st-' + est.c : '') + (st.vis[k] ? ' visto' : '') + (p.id === dest ? ' diana' : '') + '" id="c-' + p.id + '" data-id="' + p.id + '"><div class="cab">' + marcasHTML(p) + '<div class="nom">' + esc(p.nombre.replace(/^.* · /, '')) + '<small>' + esc(g) + (p.ap && !ent ? ' · apartados ' + p.ap.join(', ') : '') + '</small></div>'
       + (anadidoP(t, p) ? '<span class="tag" title="Lo añadiste tú desde Esquemas; con 🗑️ Quitar artículo vuelve a quedar fuera">➕ añadido por ti</span>' : p.extra ? '<span class="tag extra">' + (p.tachado ? 'tachado en tu temario: no entra' : p.esq ? 'está en el esquema' : 'fuera del Exprés') + '</span>' : '')
       + ((((window.EXSUB_REV || {})[t] || {}).todos || []).includes(p.id) && p.imgr ? (((window.EXSUB_REV[t].hechos || []).includes(p.id)) ? '<span class="tag revok" title="El recorte coincide con lo que lleva el Exprés">✓ Recorte revisado</span>' : '<span class="tag revpend" title="Este recorte todavía no se ha ajustado a las frases exactas del Exprés">⏳ Falta revisar el recorte</span>') : '') + (est ? '<span class="stc ' + est.c + '">' + est.txt + '</span>' : '') + '</div>'
