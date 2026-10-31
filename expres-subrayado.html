@@ -78,6 +78,11 @@ h3.sec{font-size:15px;margin:22px 4px 10px;color:var(--gris);text-transform:uppe
 .card .acc{display:flex;gap:6px;flex-wrap:wrap;padding:4px 12px 10px}
 .sb{border:1.5px solid var(--borde);background:var(--panel);border-radius:10px;padding:5px 11px;font-size:13px;font-weight:600;text-decoration:none;color:var(--texto);display:inline-flex;align-items:center;gap:5px}
 .sb:hover{background:var(--panel-alt)}.sb.on{background:var(--verde-suave);border-color:var(--verde-med);color:var(--verde-osc)}
+/* Interruptor de dos opciones (⚡ Exprés | 📄 Entero): la opción rellena es la que se está viendo */
+.seg{display:inline-flex;border:1.5px solid var(--borde);background:var(--panel);border-radius:99px;overflow:hidden;flex:none}
+.seg button{border:0;background:none;padding:5px 12px;font-size:13px;font-weight:600;color:var(--texto);white-space:nowrap;display:inline-flex;align-items:center;gap:4px}
+.seg button+button{border-left:1.5px solid var(--borde)}.seg button:not(.on):hover{background:var(--panel-alt)}
+.seg button.on{background:var(--verde);color:#fff;cursor:default}.seg.sbs{border-radius:10px}.seg.sbs button{padding:5px 10px}
 .sb.dif.on{background:var(--ambar-bg);border-color:var(--ambar);color:var(--ambar)}.sb.fijo{opacity:.65;cursor:default}
 .card img{display:block;width:100%;height:auto;background:#fff;cursor:zoom-in}
 .esqs{padding:10px 12px 12px;display:flex;flex-direction:column;gap:12px;border-top:1px dashed var(--borde);background:var(--fondo)}
@@ -465,7 +470,7 @@ function cabTema() {
   let h = '<input class="buscar" id="q" type="search" placeholder="Buscar artículo o norma (p. ej. art. 90, Roma, preámbulo)…" value="' + esc(busca) + '"><div class="chips">'
     + [['todos', 'Todos'], ['pend', 'Pendientes'], ['vistos', 'Vistos'], ['dif', '⭐ Difíciles'], ['nota', '📝 Con nota'], ['preg', '🎯 Con preguntas'], ['esq', '🧩 Con esquema']].map(f => '<button class="chip' + (filtro === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>').join('') + (marca ? '<button class="chip on" data-marca-quita="1">🏷 ' + esc(marca) + ' ✕</button>' : '') + '</div>';
   if (ns.length > 1) h += '<div class="chips"><button class="chip' + (inst === 'todas' ? ' on' : '') + '" data-i="todas">Todas las normas</button>' + ns.map(c => '<button class="chip' + (inst === c.p ? ' on' : '') + '" data-i="' + c.p + '">' + esc(c.nombre) + '</button>').join('') + '</div>';
-  h += '<div class="chips"><button class="chip" id="b-rep">▶ Repasar la lista</button><button class="chip' + (st.vista === 'completo' ? ' on' : '') + '" id="b-vista">' + (st.vista === 'completo' ? '📄 Artículos enteros' : '⚡ Versión Exprés') + '</button><button class="chip' + (st.modoEsq ? ' on' : '') + '" id="b-esq">🧩 Solo esquemas</button></div>'
+  h += '<div class="chips"><button class="chip" id="b-rep">▶ Repasar la lista</button><span class="seg" title="Cómo se ven todos los artículos: lo relleno es lo que estás viendo"><button class="' + (st.vista === 'completo' ? '' : 'on') + '" id="b-vx">⚡ Exprés</button><button class="' + (st.vista === 'completo' ? 'on' : '') + '" id="b-ve">📄 Artículos enteros</button></span><button class="chip' + (st.modoEsq ? ' on' : '') + '" id="b-esq">🧩 Solo esquemas</button></div>'
     + '<div class="prog"><span>' + n + '/' + v.length + ' vistos</span><div class="barra"><i style="width:' + pc + '%"></i></div><span>' + pc + '%</span></div>';
   $('#herr .in').innerHTML = h; $('#herr').classList.remove('oculto');
 }
@@ -520,7 +525,7 @@ function lista() {
       + '<div class="acc"><button class="sb leer" data-a="leer" title="Leer este artículo a pantalla completa">⛶<span class="lb"> Leer</span></button>'
       + '<button class="sb' + (st.vis[k] ? ' on' : '') + '" data-a="vis" title="Marcar como visto">' + (st.vis[k] ? '✓<span class="lb"> Visto</span>' : '○<span class="lb"> Marcar visto</span>') + '</button>'
       + '<button class="sb dif' + (st.dif[k] ? ' on' : '') + '" data-a="dif" title="Difícil">' + (st.dif[k] ? '★' : '☆') + '<span class="lb"> Difícil</span></button>'
-      + (p.imgr ? '<button class="sb' + (ent ? ' on' : '') + '" data-a="ent" title="Cambia solo este artículo entre la versión Exprés y el artículo entero">' + (ent ? '⚡<span class="lb"> Ver</span> Exprés' : '📄 <span class="lb">Artículo </span>entero') + '</button>'
+      + (p.imgr ? '<span class="seg sbs" title="Solo este artículo: lo relleno es lo que estás viendo"><button class="' + (ent ? '' : 'on') + '" data-a="ent" data-v="e">⚡<span class="lb"> Exprés</span></button><button class="' + (ent ? 'on' : '') + '" data-a="ent" data-v="f">📄<span class="lb"> Entero</span></button></span>'
         : '<button class="sb sinrec" data-a="info" title="Todavía no hay versión recortada de este artículo">✓ Sin versión recortada: ya es el artículo entero</button>')
       + (p.imgr && !ent && BL()[p.id] ? '<button class="sb' + (((st.add || {})[k] || []).length ? ' on' : '') + '" data-a="add" title="Sumar a este recorte un apartado que el Exprés no lleva">➕<span class="lb"> Añadir a mi subrayado</span>' + (((st.add || {})[k] || []).length ? ' (' + st.add[k].length + ')' : '') + '</button>' : '')
       + (cu.length ? '<button class="sb' + (abreEsq ? ' on' : '') + '" data-a="esq" title="Esquema">🧩<span class="lb"> Esquema</span>' + (cu.length > 1 ? ' (' + cu.length + ')' : '') + '</button>' : '')
@@ -553,10 +558,10 @@ $('#b-atras').onclick = () => { tema = null; dest = null; destAp = null; busca =
 $('#info').addEventListener('click', e => { const b = e.target.closest('[data-est]'); if (!b) return; const antes = (st.temas[tema] || {}).e; ponEstado(tema, antes === b.dataset.est && b.dataset.est !== 'estudiado' ? '' : b.dataset.est); aviso(b.dataset.est === 'estudiado' ? 'Repaso anotado' : 'Estado guardado'); infoTema(); });
 $('#info').addEventListener('change', e => { if (e.target.dataset.fechaT) { ponFecha(tema, e.target.value); infoTema(); aviso('Fecha guardada'); } });
 $('#herr').addEventListener('click', e => {
-  const c = e.target.closest('[data-f],[data-i],[data-marca-quita],#b-rep,#b-vista,#b-esq'); if (!c) return;
+  const c = e.target.closest('[data-f],[data-i],[data-marca-quita],#b-rep,#b-vx,#b-ve,#b-esq'); if (!c) return;
   if (c.dataset.f) filtro = c.dataset.f; if (c.dataset.i) inst = c.dataset.i; if (c.dataset.marcaQuita) marca = null;
   if (c.id === 'b-rep') return repaso();
-  if (c.id === 'b-vista') { st.vista = st.vista === 'expres' ? 'completo' : 'expres'; guarda(); }
+  if (c.id === 'b-vx' || c.id === 'b-ve') { const v = c.id === 'b-vx' ? 'expres' : 'completo'; if (st.vista === v) return; st.vista = v; st.ver = {}; guarda(); aviso(v === 'expres' ? 'Todos en versión Exprés' : 'Todos los artículos enteros'); }
   if (c.id === 'b-esq') { st.modoEsq = !st.modoEsq; guarda(); }
   cabTema(); pintaLista();
 });
@@ -569,14 +574,14 @@ $('#m').addEventListener('click', e => {
     else { const [t, id] = d.dataset.ir.split('|'); tema = t; dest = id; destAp = null; verTema(); irA(); dest = null; }
     return;
   }
-  const card = e.target.closest('.card'); if (!card) return; const id = card.dataset.id, k = key(tema, id), a = e.target.dataset.a;
+  const card = e.target.closest('.card'); if (!card) return; const id = card.dataset.id, k = key(tema, id), a = (e.target.closest('[data-a]') || e.target).dataset.a;
   const recarga = () => { guarda(); const y = scrollY; verTema(); scrollTo(0, y); };
   if (e.target.dataset.z || a === 'leer') return visor(id);
   if (a === 'info') return aviso(D[tema].piezas.some(x => x.imgr) ? 'Este artículo se ve entero: todavía no tiene versión recortada.' : 'En este tema todavía no hay versiones recortadas: todos los artículos se ven enteros.');
   if (a === 'vista') { st.vista = 'expres'; recarga(); return; }
   if (a === 'vis') { st.vis[k] = st.vis[k] ? 0 : 1; recarga(); }
   if (a === 'dif') { st.dif[k] = st.dif[k] ? 0 : 1; recarga(); }
-  if (a === 'ent') { const pz = D[tema].piezas.find(x => x.id === id); st.ver = st.ver || {}; st.ver[k] = pz && entera(pz) ? 'e' : 'f'; st.ent[k] = 0; if (dest === id) destAp = null; recarga(); }
+  if (a === 'ent') { const v = e.target.closest('[data-v]').dataset.v, pz = D[tema].piezas.find(x => x.id === id); if (pz && entera(pz) === (v === 'f')) return; st.ver = st.ver || {}; st.ver[k] = v; st.ent[k] = 0; if (dest === id) destAp = null; recarga(); }
   if (a === 'add') { st.addAb = st.addAb === k ? null : k; recarga(); }
   if (a === 'addb') { const i = +e.target.dataset.i, l = anade(k), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); }
   if (a === 'addx') { st.add[k] = []; recarga(); }
