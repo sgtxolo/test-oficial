@@ -1176,7 +1176,10 @@ async function lanzaImp() {
     const fj = s.s && recImp(p) && p.tr && fijados(key(t, p.id)).length ? await imgFij(p) : null;   // recorte con los «(…)» que has fijado abiertos
     const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; const usaFj = rec && fj; w.innerHTML = '<img src="' + (usaFj ? fj : D[t].dir + (rec ? p.imgr : p.img)) + '">' + (usaFj ? '' : capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh)); const pb = document.createElement('div'); pb.className = 'pbox'; if (!usaFj) pb.dataset.cx = (rec ? p.imgr : p.img).replace('.jpg', ''); pb.appendChild(w); div.appendChild(pb); n++; };
     const nCort = nom => (((st.cort || {})[t + '/' + nom.replace('.jpg', '')]) || []).length;   // tus ✂️ se guardan con la foto sobre la que los dibujaste (entera o recortada)
-    if (s.s) imagen(recImp(p) && !(!nCort(p.imgr) && nCort(p.img)));
+    const cmp = s.s && recImp(p) ? (compuesto(p) || compuestoFij(p)) : null;   // recorte a medida (Exprés + trozos añadidos + huecos abiertos), con tus ✂️, tal como lo ves en pantalla
+    if (cmp) { await new Promise(r => { const i = new Image(); i.onload = i.onerror = r; i.src = D[t].dir + p.img; });   // la foto va de fondo: que esté cargada antes de imprimir
+      const w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = cmp.replace(/cmpb fj/g, 'cmpb').replace(/ data-a="hfij"/g, ''); const pb = document.createElement('div'); pb.className = 'pbox'; pb.appendChild(w); div.appendChild(pb); n++; }
+    else if (s.s) imagen(recImp(p) && !(!nCort(p.imgr) && nCort(p.img)));
     if (s.n && p.imgr) imagen(false);
     [['x', false], ['d', true]].forEach(([fl, desp]) => { if (!s[fl] || p.fx === undefined) return; const f = fichaNodo(t, p, desp), clave = fl + p.fx + (f && f.dataset.sub ? '-' + p.id : ''); if (f && !hechas.has(clave)) { hechas.add(clave); div.appendChild(f); n++; } });
     if (s.e) ((C[t] || {})[p.id] || []).forEach((cu, i) => { const e = document.createElement('div'); e.className = 'esqs imp-esq'; e.style.cssText = 'border:0;padding:0;background:none'; e.innerHTML = cu.h; div.appendChild(e); montaVis(e.firstChild, t + '/' + p.id + '/c' + i); n++; });
