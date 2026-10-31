@@ -4,7 +4,7 @@ import sys, json, os
 import numpy as np
 from PIL import Image
 T = sys.argv[1]; B = 'C:/Users/ruben/Desktop/HTML OFICIAL/'; D = B + f'expres-subrayado/img/t{T}'
-OBJ, MIN, MAX = 330, 190, 470
+OBJ, MIN, MAX = 170, 100, 250
 res = {}
 for f in sorted(os.listdir(D)):
     if not f.endswith('.jpg'): continue
