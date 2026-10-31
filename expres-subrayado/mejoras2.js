@@ -16,6 +16,8 @@ window.MEJORAS2 = function () {
     + '#vis.compacto #vis-mb{display:block}'
     + '#cutEd{position:fixed;inset:0;z-index:120;background:var(--fondo);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top)}#cutEd .bar{display:flex;gap:6px;align-items:center;padding:6px 8px;border-bottom:1px solid var(--borde);flex-wrap:wrap}#cutEd .bar b{flex:1;font-size:14px;color:var(--verde-osc);min-width:120px}'
     + '#cutEd .ce-s{flex:1;overflow:auto;-webkit-overflow-scrolling:touch}#cutEd .ce-b{position:relative;line-height:0;background:#fff}#cutEd .ce-b img{width:100%;display:block}#cutEd svg{position:absolute;left:0;top:0;width:100%;height:100%;touch-action:none;cursor:crosshair}#cutEd.mano svg{touch-action:auto;pointer-events:none}'
+    + '.cutsv{position:absolute;left:0;top:0;width:100%;height:100%;z-index:6;touch-action:none;cursor:crosshair}.cutmano .cutsv{touch-action:auto;pointer-events:none}'
+    + '.cutbar{position:sticky;top:0;z-index:8;display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:6px 8px;background:var(--fondo);border:1px solid var(--borde);border-radius:8px;margin:4px 0}.cutbar small{flex-basis:100%;color:var(--gris);font-size:12px;line-height:1.3}'
     + '#cutEd small{padding:6px 10px;color:var(--gris);font-size:12.5px;border-top:1px solid var(--borde)}'
     + '#prevImp{position:fixed;inset:0;z-index:110;background:#8a8f8c;overflow:auto;padding:12px 8px 40px}#prevImp .hoja{background:#fff;color:#000;width:min(820px,100%);margin:0 auto;padding:14px 16px;box-shadow:0 8px 30px rgba(0,0,0,.45);font-family:"Source Sans 3","Segoe UI",Arial,sans-serif;text-align:justify}'
     + '#prevImp .pbox{overflow:hidden;width:calc(var(--zoom,100) * 1%);margin-left:auto;margin-right:auto}#prevImp .pieza{margin:0 0 10px}#prevImp svg.tp{display:none}#prevImp .ex-fb p{font-size:var(--fz,12px)!important;line-height:1.3!important;margin:2px 0!important}#prevImp .ex-fh{color:#c8102e;text-transform:uppercase}'
@@ -51,17 +53,55 @@ window.MEJORAS2 = function () {
     document.querySelectorAll('#m .card').forEach(c => {
       const p = D[tema].piezas.find(x => x.id === c.dataset.id); if (!p) return; const k = key(tema, p.id), cu = ((C[tema] || {})[p.id] || []).length;
       const w = c.querySelector(':scope > .imgw'), sv = w && w.querySelector('svg[data-mk]');
-      if (sv) { const md = sv.dataset.mk.split('/').pop(), nom = nomFoto(p, md); if (nom) trocear(w, tema, nom.replace('.jpg', ''), md === 'r' ? p.whr : p.wh, 1); }
+      if (sv) { const md = sv.dataset.mk.split('/').pop(), nom = nomFoto(p, md); if (nom && window.CUT_ED !== p.id) trocear(w, tema, nom.replace('.jpg', ''), md === 'r' ? p.whr : p.wh, 1); }
       const acc = c.querySelector('.acc'), vm = vmDe(tema, p);
       if (acc) {
         const e = acc.querySelector('[data-a="esq"]'); if (e) e.remove();
-        const nc = (() => { const f = (md => { const e2 = entera(p) ? p.img : (p.imgr || p.img); return e2.replace('.jpg', ''); })(); return cortesDe(tema, f).length; })();
+        const nc = cortesDe(tema, claveCorte(p)).length;
         acc.insertAdjacentHTML('beforeend', (cu ? '<span class="seg sbs" title="Qué ver de este artículo: el artículo, solo su esquema, o los dos">' + [['a', '📑', ' Artículo'], ['e', '🧩', ' Solo esquema'], ['ae', '📑🧩', ' Ambos']].map(x => '<button class="' + (vm === x[0] ? 'on' : '') + '" data-px2="vm" data-v="' + x[0] + '">' + x[1] + '<span class="lb">' + x[2] + '</span></button>').join('') + '</span>' : '')
-          + '<button class="sb' + (nc ? ' on' : '') + '" data-px2="cut" title="Dibuja un cuadro sobre lo que no te interesa y se quita">✂️<span class="lb"> Quitar trozos</span>' + (nc ? ' (' + nc + ')' : '') + '</button>');
+          + '<button class="sb' + (nc || window.CUT_ED === p.id ? ' on' : '') + '" data-px2="cut" title="Dibuja un cuadro sobre lo que no te interesa, aquí mismo, y se quita">✂️<span class="lb"> ' + (window.CUT_ED === p.id ? 'Terminar de quitar' : 'Quitar trozos') + '</span>' + (nc ? ' (' + nc + ')' : '') + '</button>');
       }
+      if (window.CUT_ED === p.id && vm !== 'e') cortarEnLinea(c, p);
       if (vm === 'e') c.querySelectorAll(':scope > .imgw, :scope > .slcs, :scope > .trib').forEach(x => { x.style.display = 'none'; });
     });
   };
+
+  // ---------- quitar trozos aquí mismo, sobre lo que ves (recorte del Exprés, con lo añadido, o artículo entero) ----------
+  // Foto de la que salen los cortes: la entera si lo que ves la lleva (artículo entero o recorte a medida), la recortada si no
+  const compDe = p => !entera(p) && p.imgr && !!(compuesto(p) || compuestoFij(p));
+  const claveCorte = p => ((entera(p) || !p.imgr || compDe(p)) ? p.img : p.imgr).replace('.jpg', '');
+  function cortarEnLinea(c, p) {
+    const w = c.querySelector(':scope > .imgw'); if (!w) return;
+    const comp = compDe(p), K = tema + '/' + claveCorte(p), W = ((comp || entera(p) || !p.imgr) ? p.wh : p.whr)[0], H0 = ((comp || entera(p) || !p.imgr) ? p.wh : p.whr)[1], NS = 'http://www.w3.org/2000/svg';
+    st.cort[K] = st.cort[K] || []; const pintas = [];
+    const fusiona = () => { const o = st.cort[K].slice().sort((a, b) => a[0] - b[0]), r = []; o.forEach(b => { const u = r[r.length - 1]; if (u && b[0] <= u[1] + 2) u[1] = Math.max(u[1], b[1]); else r.push(b.slice()); }); st.cort[K] = r; };
+    const bar = document.createElement('div'); bar.className = 'cutbar';
+    bar.innerHTML = '<button class="ib on" data-cl="ok">✓ Listo</button><button class="ib" data-cl="mano" title="Mover la página con el dedo sin dibujar">✋</button><button class="ib" data-cl="undo" title="Deshacer el último corte">↶</button><button class="ib" data-cl="todo" title="Devolver todo lo quitado">Restaurar todo</button>'
+      + '<small>Arrastra un cuadro sobre lo que no quieres, directamente en el artículo (también en los trozos que has añadido). Toca una franja roja para devolverla.</small>';
+    w.parentNode.insertBefore(bar, w);
+    const capa = (el, a, b) => {
+      const H = b - a, svg = document.createElementNS(NS, 'svg'); let dib = null;
+      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); svg.setAttribute('preserveAspectRatio', 'none'); svg.setAttribute('class', 'cutsv'); el.style.position = 'relative'; el.appendChild(svg);
+      const pinta = () => { svg.innerHTML = st.cort[K].map(([c0, c1]) => { const y0 = Math.max(c0, a) - a, y1 = Math.min(c1, b) - a; return y1 - y0 > 0 ? '<rect x="0" y="' + y0 + '" width="' + W + '" height="' + (y1 - y0) + '" fill="rgba(210,40,40,.38)" stroke="#c0392b" stroke-width="3" stroke-dasharray="14 8"/>' : ''; }).join('')
+        + (dib ? '<rect x="' + dib[0] + '" y="' + Math.min(dib[1], dib[3]) + '" width="' + Math.abs(dib[2] - dib[0]) + '" height="' + Math.abs(dib[3] - dib[1]) + '" fill="rgba(30,102,208,.25)" stroke="#1e66d0" stroke-width="3"/>' : ''); };
+      svg.addEventListener('pointerdown', e => { if (c.classList.contains('cutmano')) return; const q = ptSvg(e, svg); dib = [q[0], q[1], q[0], q[1]]; svg.setPointerCapture(e.pointerId); e.preventDefault(); pinta(); });
+      svg.addEventListener('pointermove', e => { if (!dib) return; const q = ptSvg(e, svg); dib[2] = q[0]; dib[3] = q[1]; pinta(); });
+      svg.addEventListener('pointerup', e => {
+        if (!dib) return; const q = ptSvg(e, svg), y0 = Math.round(Math.max(0, Math.min(dib[1], q[1]))), y1 = Math.round(Math.min(H, Math.max(dib[1], q[1]))), mov = Math.abs(q[0] - dib[0]) + (y1 - y0); dib = null;
+        if (mov < 14) { const i = st.cort[K].findIndex(x => a + q[1] >= x[0] && a + q[1] <= x[1]); if (i >= 0) st.cort[K].splice(i, 1); } else if (y1 - y0 >= 8) { st.cort[K].push([a + y0, a + y1]); fusiona(); }
+        guarda(); pintas.forEach(f => f());
+      });
+      pintas.push(pinta); pinta();
+    };
+    if (comp) w.querySelectorAll('.cmpb[data-ya]').forEach(el => capa(el, +el.dataset.ya, +el.dataset.yb)); else capa(w, 0, H0);
+    bar.addEventListener('click', e => {
+      const b = e.target.closest('[data-cl]'); if (!b) return; const x = b.dataset.cl;
+      if (x === 'mano') { c.classList.toggle('cutmano'); b.classList.toggle('on', c.classList.contains('cutmano')); }
+      if (x === 'undo') { st.cort[K].pop(); guarda(); pintas.forEach(f => f()); }
+      if (x === 'todo') { st.cort[K] = []; guarda(); pintas.forEach(f => f()); }
+      if (x === 'ok') { if (!st.cort[K].length) delete st.cort[K]; window.CUT_ED = null; guarda(); refresco(); }
+    });
+  }
 
   // ---------- editor de cortes: arrastra un cuadro sobre lo que quieres quitar ----------
   function editorCorte(t, id) {
@@ -94,7 +134,7 @@ window.MEJORAS2 = function () {
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-px2]'); if (!b) return; const x = b.dataset.px2, c = b.closest('.card');
     if (x === 'vm' && c) { const id = c.dataset.id, k = key(tema, id), v = b.dataset.v; st.vm[k] = v; st.esq[k] = v === 'a' ? 0 : 1; if (st.modoEsq && v !== 'e') st.modoEsq = false; guarda(); refresco(); }
-    if (x === 'cut' && c) editorCorte(tema, c.dataset.id);
+    if (x === 'cut' && c) { window.CUT_ED = window.CUT_ED === c.dataset.id ? null : c.dataset.id; refresco(); }
   });
 
   // ---------- visor: botón de cortar y menú plegable en horizontal ----------

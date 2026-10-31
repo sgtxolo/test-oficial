@@ -505,12 +505,24 @@ function pasaFiltro(p) {
 const BL = () => (window.EXSUB_B || {})[tema] || {};
 const anade = k => ((st.add = st.add || {})[k] = st.add[k] || []);
 // Recorte a medida: lo que lleva el Exprés + los trozos (apartados) que has añadido; todo sale de la captura entera
+const cortesFull = p => ((st.cort || {})[tema + '/' + p.img.replace(/.jpg$/, '')]) || [];
+// Tramo [a,b] de la captura entera menos las franjas que quitaste a mano (mientras las editas se ven enteras)
+function partes(p, a, b) {
+  if (window.CUT_ED === p.id) return [[a, b]];
+  let r = [[a, b]];
+  cortesFull(p).forEach(([c0, c1]) => { const n = []; r.forEach(([x, y]) => { if (c1 <= x || c0 >= y) { n.push([x, y]); return; } if (c0 - x >= 2) n.push([x, c0]); if (y - c1 >= 2) n.push([c1, y]); }); r = n; });
+  return r;
+}
+function cmpDiv(p, a, b, cl, i) {
+  const W = p.wh[0], tot = p.wh[1], src = D[tema].dir + p.img;
+  return partes(p, a, b).map(([y0, y1]) => { const hh = y1 - y0; return hh < 2 ? '' : '<div class="cmpb' + cl + '"' + (i !== undefined ? ' data-a="hfij" data-h="' + i + '" title="Toca para quitar este trozo de tu subrayado"' : '') + ' data-ya="' + y0 + '" data-yb="' + y1 + '" style="aspect-ratio:' + W + '/' + hh + ';background-image:url(&quot;' + src + '&quot;);background-position:0 ' + (tot > hh ? y0 / (tot - hh) * 100 : 0) + '%"></div>'; }).join('');
+}
 function compuesto(p) {
   const b = BL()[p.id], ad = (st.add || {})[key(tema, p.id)] || []; if (!b || !ad.length) return null;
-  const W = p.wh[0], tot = p.wh[1], src = D[tema].dir + p.img; let h = '', ult = -2;
-  b.forEach((x, i) => { if (!(x[3] || ad.includes(i))) return; const hh = x[1] - x[0]; if (hh < 2) return;
+  let h = '', ult = -2;
+  b.forEach((x, i) => { if (!(x[3] || ad.includes(i))) return; if (x[1] - x[0] < 2) return;
     if (ult >= 0 && i !== ult + 1) h += '<div class="gapb">(…)</div>';
-    h += '<div class="cmpb" style="aspect-ratio:' + W + '/' + hh + ';background-image:url(&quot;' + src + '&quot;);background-position:0 ' + (tot > hh ? x[0] / (tot - hh) * 100 : 0) + '%"></div>'; ult = i; });
+    h += cmpDiv(p, x[0], x[1], '', undefined); ult = i; });
   return h;
 }
 // «(…)» tocable: p.tr = tramos del recorte (px de la captura entera); el hueco i queda entre el tramo i y el i+1 (solo si el recorte le puso franja «(…)»)
@@ -518,11 +530,10 @@ const huecos = p => { const o = []; (p.tr || []).forEach((x, i, a) => { if (i &&
 const fijados = k => (((st.fij || {})[k]) || []);
 function compuestoFij(p) {   // recorte con los huecos que has fijado abiertos (atenuados) y el resto con su «(…)» tocable
   const k = key(tema, p.id), fj = fijados(k); if (!p.tr || !fj.length) return null;
-  const W = p.wh[0], tot = p.wh[1], src = D[tema].dir + p.img, hs = huecos(p); let h = '';
-  const bloque = (a, b, cl, i) => { const hh = b - a; return hh < 2 ? '' : '<div class="cmpb' + cl + '"' + (i !== undefined ? ' data-a="hfij" data-h="' + i + '" title="Toca para quitar este trozo de tu subrayado"' : '') + ' style="aspect-ratio:' + W + '/' + hh + ';background-image:url(&quot;' + src + '&quot;);background-position:0 ' + (tot > hh ? a / (tot - hh) * 100 : 0) + '%"></div>'; };
-  p.tr.forEach((x, i) => { h += bloque(x[0], x[1], '');
+  const hs = huecos(p); let h = '';
+  p.tr.forEach((x, i) => { h += cmpDiv(p, x[0], x[1], '', undefined);
     const g = hs.find(y => y.i === i); if (!g) return;
-    h += fj.includes(g.i) ? bloque(g.a, g.b, ' fj', g.i) : '<button class="gapb tg" data-a="hfij" data-h="' + g.i + '" title="Toca para ver este trozo y fijarlo en tu subrayado">(…)</button>'; });
+    h += fj.includes(g.i) ? cmpDiv(p, g.a, g.b, ' fj', g.i) : '<button class="gapb tg" data-a="hfij" data-h="' + g.i + '" title="Toca para ver este trozo y fijarlo en tu subrayado">(…)</button>'; });
   return h;
 }
 function puntosHueco(p, wh) {   // zonas tocables sobre las franjas «(…)» de la imagen recortada
