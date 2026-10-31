@@ -291,7 +291,8 @@ const fmtF = iso => iso ? iso.split('-').reverse().join('/') : '';
 const diasHasta = iso => Math.round((new Date(iso + 'T00:00:00') - new Date(hoyISO() + 'T00:00:00')) / 864e5);
 // ---------- datos derivados ----------
 const inv = {}; for (const t in D) { inv[t] = {}; for (const q in D[t].preg) (inv[t][D[t].preg[q]] = inv[t][D[t].preg[q]] || []).push(q); }
-const visibles = t => D[t].piezas.filter(p => !p.extra);
+const quitado = (t, id) => !!(st.quit || {})[key(t, id)];   // artículos que has quitado de tu temario (se pueden devolver)
+const visibles = t => D[t].piezas.filter(p => !p.extra && !quitado(t, p.id));
 const hechos = t => visibles(t).filter(p => st.vis[key(t, p.id)]).length;
 const instDe = (t, p) => { const l = p.id.split('-')[0]; return (D[t].cit || []).find(c => c.p === l) || {}; };
 const leerStats = () => { try { return (JSON.parse(localStorage.getItem('oficialAppState_v1') || '{}').qStats) || {}; } catch (e) { return {}; } };
@@ -482,7 +483,7 @@ function cabTema() {
   let h = '<input class="buscar" id="q" type="search" placeholder="Buscar artículo o norma (p. ej. art. 90, Roma, preámbulo)…" value="' + esc(busca) + '"><div class="chips">'
     + [['todos', 'Todos'], ['pend', 'Pendientes'], ['vistos', 'Vistos'], ['dif', '⭐ Difíciles'], ['nota', '📝 Con nota'], ['preg', '🎯 Con preguntas'], ['esq', '🧩 Con esquema']].map(f => '<button class="chip' + (filtro === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>').join('') + (marca ? '<button class="chip on" data-marca-quita="1">🏷 ' + esc(marca) + ' ✕</button>' : '') + '</div>';
   if (ns.length > 1) h += '<div class="chips"><button class="chip' + (inst === 'todas' ? ' on' : '') + '" data-i="todas">Todas las normas</button>' + ns.map(c => '<button class="chip' + (inst === c.p ? ' on' : '') + '" data-i="' + c.p + '">' + esc(c.nombre) + '</button>').join('') + '</div>';
-  h += '<div class="chips"><button class="chip" id="b-rep">▶ Repasar la lista</button><span class="seg" title="Cómo se ven todos los artículos: lo relleno es lo que estás viendo"><button class="' + (st.vista === 'completo' ? '' : 'on') + '" id="b-vx">⚡ Exprés</button><button class="' + (st.vista === 'completo' ? 'on' : '') + '" id="b-ve">📄 Artículos enteros</button></span><button class="chip' + (st.modoEsq ? ' on' : '') + '" id="b-esq">🧩 Solo esquemas</button></div>'
+  h += '<div class="chips"><button class="chip" id="b-rep">▶ Repasar la lista</button>' + (D[t].piezas.some(x => quitado(t, x.id)) ? '<button class="chip' + (st.verQuit ? ' on' : '') + '" id="b-quit" title="Ver los artículos que has quitado para devolverlos">🗑️ Quitados (' + D[t].piezas.filter(x => quitado(t, x.id)).length + ')</button>' : '') + '<span class="seg" title="Cómo se ven todos los artículos: lo relleno es lo que estás viendo"><button class="' + (st.vista === 'completo' ? '' : 'on') + '" id="b-vx">⚡ Exprés</button><button class="' + (st.vista === 'completo' ? 'on' : '') + '" id="b-ve">📄 Artículos enteros</button></span><button class="chip' + (st.modoEsq ? ' on' : '') + '" id="b-esq">🧩 Solo esquemas</button></div>'
     + '<div class="prog"><span>' + n + '/' + v.length + ' vistos</span><div class="barra"><i style="width:' + pc + '%"></i></div><span>' + pc + '%</span></div>';
   $('#herr .in').innerHTML = h; $('#herr').classList.remove('oculto');
 }
@@ -496,6 +497,7 @@ function entera(p) {
 function pasaFiltro(p) {
   const t = tema, k = key(t, p.id), q = busca.trim().toLowerCase(), m = p.m || {};
   if (p.extra && !st.extras && p.id !== dest) return false;
+  if (p.id !== dest && (st.verQuit ? !quitado(t, p.id) : quitado(t, p.id))) return false;
   if (filtro === 'pend' && st.vis[k]) return false; if (filtro === 'vistos' && !st.vis[k]) return false; if (filtro === 'dif' && !st.dif[k]) return false;
   if (filtro === 'nota' && !st.nota[k]) return false; if (filtro === 'preg' && !(inv[t][p.id] || []).length) return false; if (filtro === 'esq' && !(C[t] || {})[p.id]) return false;
   if (inst !== 'todas' && p.id.split('-')[0] !== inst) return false;
@@ -569,6 +571,7 @@ function lista() {
         : '<button class="sb sinrec" data-a="info" title="Todavía no hay versión recortada de este artículo">✓ Sin versión recortada: ya es el artículo entero</button>')
       + (p.imgr && !ent && BL()[p.id] ? '<button class="sb' + (((st.add || {})[k] || []).length ? ' on' : '') + '" data-a="add" title="Sumar a este recorte un apartado que el Exprés no lleva">➕<span class="lb"> Añadir a mi subrayado</span>' + (((st.add || {})[k] || []).length ? ' (' + st.add[k].length + ')' : '') + '</button>' : '')
       + (cu.length ? '<button class="sb' + (abreEsq ? ' on' : '') + '" data-a="esq" title="Esquema">🧩<span class="lb"> Esquema</span>' + (cu.length > 1 ? ' (' + cu.length + ')' : '') + '</button>' : '')
+      + '<button class="sb" data-a="quit" title="' + (quitado(t, p.id) ? 'Devolver este artículo a tu temario' : 'Quitar este artículo: no es importante o no entra en examen (puedes devolverlo)') + '">' + (quitado(t, p.id) ? '↩️<span class="lb"> Devolver artículo</span>' : '🗑️<span class="lb"> Quitar artículo</span>') + '</button>'
       + '<button class="sb' + (st.pin[t] === p.id ? ' on' : '') + '" data-a="pin" title="Marca aquí dónde te quedas">📍</button>'
       + '<button class="sb' + (st.nota[k] ? ' on' : '') + '" data-a="nota" title="Nota">📝<span class="lb"> Nota</span></button>'
       + (qs.length && !emb ? '<button class="sb" data-a="prac" title="Practicar las preguntas de este artículo">🎯<span class="lb"> Practicar</span> (' + qs.length + ')</button>' : '')
@@ -602,9 +605,10 @@ $('#b-atras').onclick = () => { tema = null; dest = null; destAp = null; busca =
 $('#info').addEventListener('click', e => { const b = e.target.closest('[data-est]'); if (!b) return; const antes = (st.temas[tema] || {}).e; ponEstado(tema, antes === b.dataset.est && b.dataset.est !== 'estudiado' ? '' : b.dataset.est); aviso(b.dataset.est === 'estudiado' ? 'Repaso anotado' : 'Estado guardado'); infoTema(); });
 $('#info').addEventListener('change', e => { if (e.target.dataset.fechaT) { ponFecha(tema, e.target.value); infoTema(); aviso('Fecha guardada'); } });
 $('#herr').addEventListener('click', e => {
-  const c = e.target.closest('[data-f],[data-i],[data-marca-quita],#b-rep,#b-vx,#b-ve,#b-esq'); if (!c) return;
+  const c = e.target.closest('[data-f],[data-i],[data-marca-quita],#b-rep,#b-quit,#b-vx,#b-ve,#b-esq'); if (!c) return;
   if (c.dataset.f) filtro = c.dataset.f; if (c.dataset.i) inst = c.dataset.i; if (c.dataset.marcaQuita) marca = null;
   if (c.id === 'b-rep') return repaso();
+  if (c.id === 'b-quit') { st.verQuit = !st.verQuit; guarda(); return verTema(); }
   if (c.id === 'b-vx' || c.id === 'b-ve') { const v = c.id === 'b-vx' ? 'expres' : 'completo'; if (st.vista === v) return; st.vista = v; st.ver = {}; guarda(); aviso(v === 'expres' ? 'Todos en versión Exprés' : 'Todos los artículos enteros'); }
   if (c.id === 'b-esq') { st.modoEsq = !st.modoEsq; guarda(); }
   cabTema(); pintaLista();
@@ -631,6 +635,7 @@ $('#m').addEventListener('click', e => {
   if (a === 'hfij') { const i = +(e.target.closest('[data-h]').dataset.h), l = ((st.fij = st.fij || {})[k] = st.fij[k] || []), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); return; }
   if (a === 'addx') { st.add[k] = []; recarga(); }
   if (a === 'esq') { st.esq[k] = st.esq[k] ? 0 : 1; recarga(); }
+  if (a === 'quit') { st.quit = st.quit || {}; if (st.quit[k]) { st.quit[k] = 0; aviso('↩️ Artículo devuelto'); } else { st.quit[k] = 1; aviso('🗑️ Artículo quitado (lo encuentras en «Quitados»)'); } if (!D[tema].piezas.some(x => quitado(tema, x.id))) st.verQuit = false; recarga(); return; }
   if (a === 'pin') { st.pin[tema] = st.pin[tema] === id ? null : id; aviso(st.pin[tema] ? '📍 Te quedarás aquí' : 'Marca quitada'); recarga(); botonPin(); }
   if (a === 'nota') { st.notaAb = st.notaAb === k ? null : k; if (st.nota[k] === undefined) st.nota[k] = ''; recarga(); const ta = document.querySelector('[data-n="' + k + '"]'); if (ta) ta.focus(); }
   if (a === 'prac') { const qs = (inv[tema][id] || []).slice(0, 60).join(','), v = location.pathname.split('/').pop() + '#t=' + tema + '&p=' + id; location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(qs) + '&v=' + encodeURIComponent(v); }
@@ -1143,7 +1148,7 @@ async function lanzaImp() {
 // backups/expres-subrayado.json. Mezcla de tres vías (lo que había en la última sincronización, lo de este dispositivo y lo de la nube):
 // lo que cambia solo en un sitio se queda; si cambia en los dos, se suman las marcas y gana este dispositivo en lo demás. Nunca borra trabajo de otro dispositivo.
 const GH_CFG = 'oficialGhCfg', GH_REPO = 'sgtxolo/copia-seguridad-conocimientos', GH_PATH = 'backups/expres-subrayado.json', GH_BASE = 'exsub-sync-base';
-const MAPAS = ['vis', 'dif', 'nota', 'ent', 'ver', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp'];
+const MAPAS = ['quit', 'vis', 'dif', 'nota', 'ent', 'ver', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp'];
 const lsObj = k => { try { return JSON.parse(localStorage.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
 const ghCfg = () => lsObj(GH_CFG), hayGh = () => { const c = ghCfg(); return !!(c.repo && c.token); };
 const b64 = s => btoa(unescape(encodeURIComponent(s))), unb64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
