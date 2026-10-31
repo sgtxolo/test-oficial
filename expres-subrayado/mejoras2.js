@@ -53,7 +53,7 @@ window.MEJORAS2 = function () {
     document.querySelectorAll('#m .card').forEach(c => {
       const p = D[tema].piezas.find(x => x.id === c.dataset.id); if (!p) return; const k = key(tema, p.id), cu = ((C[tema] || {})[p.id] || []).length;
       const w = c.querySelector(':scope > .imgw'), sv = w && w.querySelector('svg[data-mk]');
-      if (sv) { const md = sv.dataset.mk.split('/').pop(), nom = nomFoto(p, md); if (nom && window.CUT_ED !== p.id) trocear(w, tema, nom.replace('.jpg', ''), md === 'r' ? p.whr : p.wh, 1); }
+      if (sv && !w.querySelector('.cmpb')) { const md = sv.dataset.mk.split('/').pop(), nom = nomFoto(p, md); if (nom && window.CUT_ED !== p.id) trocear(w, tema, nom.replace('.jpg', ''), md === 'r' ? p.whr : p.wh, 1); }
       const acc = c.querySelector('.acc'), vm = vmDe(tema, p);
       if (acc) {
         const e = acc.querySelector('[data-a="esq"]'); if (e) e.remove();

@@ -143,8 +143,9 @@ input[type=date],input[type=text].f,select.f{font:inherit;border:1.5px solid var
 .hsg{position:absolute;left:0;right:0;z-index:3;border:0;background:rgba(47,107,82,.0);cursor:pointer;padding:0;font-size:0}.hsg:hover,.hsg:focus-visible{background:rgba(47,107,82,.22);outline:2px dashed #2f6b52}
 .gapb.tg{cursor:pointer;border:0;width:100%;font-family:inherit}.gapb.tg:hover{background:rgba(47,107,82,.22);color:#2f6b52}
 .cmpb.fj{opacity:.62;outline:2px dashed #2f6b52;outline-offset:-2px;cursor:pointer}.fjn{font-size:12px;color:#2f6b52;margin:2px 0 6px}
-.cmpb{width:100%;background-repeat:no-repeat;background-size:100% auto}.gapb{line-height:1;text-align:center;color:#7a808a;font-weight:700;padding:3px 0;background:rgba(120,126,136,.1);font-size:13px}
+.cmpb{position:relative;width:100%;background-repeat:no-repeat;background-size:100% auto}.gapb{line-height:1;text-align:center;color:#7a808a;font-weight:700;padding:3px 0;background:rgba(120,126,136,.1);font-size:13px}
 .addp{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0;font-size:12.5px}.addp b{font-weight:700}.addp .chip.on{background:#2f6b52;color:#fff}.addn{font-size:12px;color:#7a808a;margin:2px 0 6px}
+.cmpb svg.ov{overflow:hidden}
 svg.ov{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
 body.marcando svg.ov{pointer-events:auto;touch-action:none;cursor:crosshair}
 body.marcando.mano svg.ov{pointer-events:none;touch-action:auto}
@@ -253,21 +254,28 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres-subrayado/cortes-t1.js"></script>
 <script src="expres-subrayado/revision-t1.js"></script>
 <script src="expres-subrayado/bloques-t7.js"></script>
+<script src="expres-subrayado/bloques-t12.js"></script>
+<script src="expres-subrayado/cortes-t12.js"></script>
+<script src="expres-subrayado/revision-t12.js"></script>
 <script src="expres-subrayado/cortes-t7.js"></script>
 <script src="expres-subrayado/revision-t7.js"></script>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
+<script src="expres-subrayado/datos-t12.js"></script>
 <script src="expres-subrayado/datos-t11.js"></script>
 <script src="expres-subrayado/tapa-t1.js"></script>
 <script src="expres-subrayado/tapa-t7.js"></script>
+<script src="expres-subrayado/tapa-t12.js"></script>
 <script src="expres-subrayado/tapa-t11.js"></script>
 <script src="expres-subrayado/mejoras.js"></script>
 <script src="expres-subrayado/mejoras2.js"></script>
 <script src="expres-subrayado/cuadros-t1.js"></script>
 <script src="expres-subrayado/cuadros-t7.js"></script>
+<script src="expres-subrayado/cuadros-t12.js"></script>
 <script src="expres-subrayado/cuadros-t11.js"></script>
 <script src="expres/t1.js"></script>
 <script src="expres/t7.js"></script>
+<script src="expres/t12.js"></script>
 <script src="expres/t11.js"></script>
 <script>
 "use strict";
@@ -519,8 +527,9 @@ function partes(p, a, b) {
 }
 function cmpDiv(p, a, b, cl, i) {
   const W = p.wh[0], tot = p.wh[1], src = D[tema].dir + p.img;
-  return partes(p, a, b).map(([y0, y1]) => { const hh = y1 - y0; return hh < 2 ? '' : '<div class="cmpb' + cl + '"' + (i !== undefined ? ' data-a="hfij" data-h="' + i + '" title="Toca para quitar este trozo de tu subrayado"' : '') + ' data-ya="' + y0 + '" data-yb="' + y1 + '" style="aspect-ratio:' + W + '/' + hh + ';background-image:url(&quot;' + src + '&quot;);background-position:0 ' + (tot > hh ? y0 / (tot - hh) * 100 : 0) + '%"></div>'; }).join('');
+  return partes(p, a, b).map(([y0, y1]) => { const hh = y1 - y0; return hh < 2 ? '' : '<div class="cmpb' + cl + '"' + (i !== undefined ? ' data-a="hfij" data-h="' + i + '" title="Toca para quitar este trozo de tu subrayado"' : '') + ' data-ya="' + y0 + '" data-yb="' + y1 + '" style="aspect-ratio:' + W + '/' + hh + ';background-image:url(&quot;' + src + '&quot;);background-position:0 ' + (tot > hh ? y0 / (tot - hh) * 100 : 0) + '%">' + capaTrozo(p, y0, y1) + '</div>'; }).join('');
 }
+function capaTrozo(p, y0, y1) { const vk = key(tema, p.id) + '/e'; return '<svg class="ov" data-mk="' + vk + '" viewBox="0 ' + y0 + ' ' + p.wh[0] + ' ' + (y1 - y0) + '" preserveAspectRatio="none">' + (st.marks[vk] || []).map(mHTML).join('') + '</svg>'; }
 function compuesto(p) {
   const b = BL()[p.id], ad = (st.add || {})[key(tema, p.id)] || []; if (!b || !ad.length) return null;
   let h = '', ult = -2;
@@ -550,7 +559,7 @@ function selector(p, k) {
   const on = b.map((x, i) => x[3] ? i : -1).filter(i => i >= 0), a0 = Math.min(...on), a1 = Math.max(...on);
   const opc = b.map((x, i) => [x, i]).filter(([x]) => !x[3]);
   if (!opc.length) return '<div class="addp">Este recorte ya lleva todo el artículo.</div>';
-  return '<div class="addp"><b>Añadir a mi subrayado:</b>' + opc.map(([x, i]) => '<button class="chip' + (ad.includes(i) ? ' on' : '') + '" data-a="addb" data-i="' + i + '">' + (ad.includes(i) ? '✓ ' : '+ ') + esc(x[2]) + (/^Trozo/.test(x[2]) ? (i < a0 ? ' (antes)' : i > a1 ? ' (después)' : ' (en medio)') : '') + '</button>').join('') + (ad.length ? '<button class="chip" data-a="addx">Quitar lo añadido</button>' : '') + '</div><div class="addn">El recorte a medida se ve sin tus marcas de dibujo; «Artículo entero» sí las lleva.</div>';
+  return '<div class="addp"><b>Añadir a mi subrayado:</b>' + opc.map(([x, i]) => '<button class="chip' + (ad.includes(i) ? ' on' : '') + '" data-a="addb" data-i="' + i + '">' + (ad.includes(i) ? '✓ ' : '+ ') + esc(x[2]) + (/^Trozo/.test(x[2]) ? (i < a0 ? ' (antes)' : i > a1 ? ' (después)' : ' (en medio)') : '') + '</button>').join('') + (ad.length ? '<button class="chip" data-a="addx">Quitar lo añadido</button>' : '') + '</div><div class="addn">Las marcas que hagas en el recorte a medida se guardan en el artículo entero.</div>';
 }
 function lista() {
   const t = tema, S = leerStats(); const ps = D[t].piezas.filter(pasaFiltro);
@@ -578,7 +587,7 @@ function lista() {
       + (p.q1 ? '<a class="sb" target="_top" href="esquemas.html#q=' + encodeURIComponent(p.q1) + '&ex=1" title="Ver este artículo en el Exprés de Esquemas">⚡<span class="lb"> En Esquemas</span></a>' : '') + '</div>'
       + selector(p, k)
       + (st.notaAb === k ? '<textarea class="nota" data-n="' + k + '" placeholder="Tu nota sobre este artículo…">' + esc(st.nota[k] || '') + '</textarea>' : (st.nota[k] ? '<div class="nota" style="min-height:0;white-space:pre-wrap">' + esc(st.nota[k]) + '</div>' : ''))
-      + (st.modoEsq && cu.length ? '' : (!ent && p.imgr && compuesto(p)) ? '<div class="imgw">' + compuesto(p) + '</div>' : (!ent && p.imgr && compuestoFij(p)) ? '<div class="imgw">' + compuestoFij(p) + '</div><div class="fjn">Lo atenuado con borde verde es lo que has fijado: tócalo para quitarlo. Se ve sin tus marcas de dibujo.</div>' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + (!ent && p.imgr ? puntosHueco(p, wh) : '') + '</div>')
+      + (st.modoEsq && cu.length ? '' : (!ent && p.imgr && compuesto(p)) ? '<div class="imgw">' + compuesto(p) + '</div>' : (!ent && p.imgr && compuestoFij(p)) ? '<div class="imgw">' + compuestoFij(p) + '</div><div class="fjn">Lo atenuado con borde verde es lo que has fijado: tócalo para quitarlo. Tus marcas se guardan en el artículo entero.</div>' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + (!ent && p.imgr ? puntosHueco(p, wh) : '') + '</div>')
       + (abreEsq && cu.length ? '<div class="esqs"><div class="esq-t">🧩 Esquema de este artículo</div>' + cu.map(x => x.h).join('') + '</div>' : '') + '</div>'; });
   return h;
 }
@@ -753,8 +762,8 @@ function mHTML(m) {
   return '';
 }
 function capaMarcas(vk, wh) { const W = wh ? wh[0] : 1075, H = wh ? wh[1] : 600; return '<svg class="ov" data-mk="' + vk + '" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none">' + (st.marks[vk] || []).map(mHTML).join('') + '</svg>'; }
-function refresca(vk) { const s = document.querySelector('svg[data-mk="' + vk + '"]'); if (s) s.innerHTML = (st.marks[vk] || []).map(mHTML).join(''); }
-const ptSvg = (e, s) => { const r = s.getBoundingClientRect(), v = s.viewBox.baseVal; return [(e.clientX - r.left) * v.width / r.width, (e.clientY - r.top) * v.height / r.height]; };
+function refresca(vk) { document.querySelectorAll('svg[data-mk="' + vk + '"]').forEach(s => { s.innerHTML = (st.marks[vk] || []).map(mHTML).join(''); }); }
+const ptSvg = (e, s) => { const r = s.getBoundingClientRect(), v = s.viewBox.baseVal; return [v.x + (e.clientX - r.left) * v.width / r.width, v.y + (e.clientY - r.top) * v.height / r.height]; };
 function construye(h, a, b, pts) {
   const x0 = a[0], y0 = a[1], x1 = b[0], y1 = b[1], X = Math.min(x0, x1), Y = Math.min(y0, y1), Wd = Math.abs(x1 - x0), Hd = Math.abs(y1 - y0), my = (y0 + y1) / 2;
   const esCat = CATS.some(c => c[1] === color), trazo = esCat ? TRAZOS[0] : color;
