@@ -453,7 +453,9 @@ function cabTema() {
   $('#herr .in').innerHTML = h; $('#herr').classList.remove('oculto');
 }
 function entera(p) {
-  if (!p.imgr || st.vista === 'completo') return true; if (st.ent[key(tema, p.id)]) return true;
+  if (!p.imgr) return true; const v = (st.ver || {})[key(tema, p.id)];   // botón propio de cada artículo: manda sobre el botón general de arriba
+  if (v === 'e') return false; if (v === 'f') return true;
+  if (st.vista === 'completo') return true; if (st.ent[key(tema, p.id)]) return true;
   if (p.id === dest && destAp && p.ap && !p.ap.includes(destAp)) return true;   // la pregunta trata un apartado que el Exprés no lleva: se abre el artículo entero
   return false;
 }
@@ -501,8 +503,7 @@ function lista() {
       + '<div class="acc"><button class="sb leer" data-a="leer" title="Leer este artículo a pantalla completa">⛶<span class="lb"> Leer</span></button>'
       + '<button class="sb' + (st.vis[k] ? ' on' : '') + '" data-a="vis" title="Marcar como visto">' + (st.vis[k] ? '✓<span class="lb"> Visto</span>' : '○<span class="lb"> Marcar visto</span>') + '</button>'
       + '<button class="sb dif' + (st.dif[k] ? ' on' : '') + '" data-a="dif" title="Difícil">' + (st.dif[k] ? '★' : '☆') + '<span class="lb"> Difícil</span></button>'
-      + (p.imgr && st.vista !== 'completo' ? '<button class="sb' + (ent ? ' on' : '') + '" data-a="ent">' + (ent ? '▴ Ver Exprés' : '▾ <span class="lb">Artículo </span>entero') + '</button>'
-        : p.imgr ? '<button class="sb on" data-a="vista" title="Ahora ves todos los artículos enteros">⚡<span class="lb"> Volver a la versión Exprés</span></button>'
+      + (p.imgr ? '<button class="sb' + (ent ? ' on' : '') + '" data-a="ent" title="Cambia solo este artículo entre la versión Exprés y el artículo entero">' + (ent ? '⚡<span class="lb"> Ver</span> Exprés' : '📄 <span class="lb">Artículo </span>entero') + '</button>'
         : '<button class="sb sinrec" data-a="info" title="Todavía no hay versión recortada de este artículo">✓ Sin versión recortada: ya es el artículo entero</button>')
       + (p.imgr && !ent && BL()[p.id] ? '<button class="sb' + (((st.add || {})[k] || []).length ? ' on' : '') + '" data-a="add" title="Sumar a este recorte un apartado que el Exprés no lleva">➕<span class="lb"> Añadir a mi subrayado</span>' + (((st.add || {})[k] || []).length ? ' (' + st.add[k].length + ')' : '') + '</button>' : '')
       + (cu.length ? '<button class="sb' + (abreEsq ? ' on' : '') + '" data-a="esq" title="Esquema">🧩<span class="lb"> Esquema</span>' + (cu.length > 1 ? ' (' + cu.length + ')' : '') + '</button>' : '')
@@ -558,7 +559,7 @@ $('#m').addEventListener('click', e => {
   if (a === 'vista') { st.vista = 'expres'; recarga(); return; }
   if (a === 'vis') { st.vis[k] = st.vis[k] ? 0 : 1; recarga(); }
   if (a === 'dif') { st.dif[k] = st.dif[k] ? 0 : 1; recarga(); }
-  if (a === 'ent') { st.ent[k] = st.ent[k] ? 0 : 1; if (dest === id) destAp = null; recarga(); }
+  if (a === 'ent') { const pz = D[tema].piezas.find(x => x.id === id); st.ver = st.ver || {}; st.ver[k] = pz && entera(pz) ? 'e' : 'f'; st.ent[k] = 0; if (dest === id) destAp = null; recarga(); }
   if (a === 'add') { st.addAb = st.addAb === k ? null : k; recarga(); }
   if (a === 'addb') { const i = +e.target.dataset.i, l = anade(k), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); }
   if (a === 'addx') { st.add[k] = []; recarga(); }
@@ -1053,7 +1054,7 @@ async function lanzaImp() {
 // backups/expres-subrayado.json. Mezcla de tres vías (lo que había en la última sincronización, lo de este dispositivo y lo de la nube):
 // lo que cambia solo en un sitio se queda; si cambia en los dos, se suman las marcas y gana este dispositivo en lo demás. Nunca borra trabajo de otro dispositivo.
 const GH_CFG = 'oficialGhCfg', GH_PATH = 'backups/expres-subrayado.json', GH_BASE = 'exsub-sync-base';
-const MAPAS = ['vis', 'dif', 'nota', 'ent', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp'];
+const MAPAS = ['vis', 'dif', 'nota', 'ent', 'ver', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp'];
 const lsObj = k => { try { return JSON.parse(localStorage.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
 const ghCfg = () => lsObj(GH_CFG), hayGh = () => { const c = ghCfg(); return !!(c.repo && c.token); };
 const b64 = s => btoa(unescape(encodeURIComponent(s))), unb64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
