@@ -72,7 +72,7 @@ const primera = {}; for (const q in preg) if (!primera[preg[q]]) primera[preg[q]
 // ---- cuadros (esquemas visuales) de visuales-tN.js, tomados ya montados de esquemas.html ----
 const cuadros = {}, sinPieza = [];
 const mapP = `expres-subrayado/t${T}-cuadros-map.json`; const cmap = fs.existsSync(mapP) ? JSON.parse(fs.readFileSync(mapP, 'utf8')) : {};   // {«despues» o «título del cuadro»: pieza} para los que no se deducen solos
-const visP = `prompts/herramientas/visuales-t${T}.js`;
+const visP = [`prompts/herramientas/visuales-t${T}.js`, `prompts/herramientas/tema${T}/visuales-t${T}.js`].find(f => fs.existsSync(f)) || `prompts/herramientas/visuales-t${T}.js`;
 if (fs.existsSync(visP)) {
   const src = fs.readFileSync(visP, 'utf8'), esq = fs.readFileSync('esquemas.html', 'utf8');
   const rx = /^\s*v\('((?:[^'\\]|\\.)*)',\s*\w+\('((?:[^'\\]|\\.)*)'/gm;

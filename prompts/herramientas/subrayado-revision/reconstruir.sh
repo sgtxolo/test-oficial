@@ -4,6 +4,7 @@ T=${TEMA:-11}
 case $T in
  1) TIT="Tema 1 · Derechos humanos"; PDF="TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf";;
  7) TIT="Tema 7 · Constitución Española"; PDF="TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf";;
+ 12) TIT="Tema 12 · Gobierno y Administración"; PDF="TEMA 12 - GOBIERNO Y ADMINISTRACION-2026-08-08.pdf";;
  11) TIT="Tema 11 · Derecho administrativo"; PDF="TEMA 11 DERECHO ADEMINISTRATIVO-08-08-2026.pdf";;
 esac
 IDS=$(node -e "process.stdout.write(Object.keys(JSON.parse(require('fs').readFileSync('expres-subrayado/t$T-img-recorte.json','utf8'))).join(','))")

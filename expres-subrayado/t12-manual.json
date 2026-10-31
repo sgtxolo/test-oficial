@@ -1,0 +1,80 @@
+{
+ "manual": [
+  {
+   "id": "a-pre",
+   "ficha": "^Exposici",
+   "nombre": "Ley 50/1997 · Exposición de motivos",
+   "expres": 1,
+   "piezas": [
+    [
+     4,
+     0.12,
+     0.93
+    ],
+    [
+     5,
+     0.06,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "a-da2",
+   "ficha": "^Disposici.n adicional segunda",
+   "nombre": "Ley 50/1997 · Disposición adicional segunda",
+   "expres": 1,
+   "piezas": [
+    [
+     28,
+     0.25,
+     0.375
+    ]
+   ]
+  },
+  {
+   "id": "a-rec",
+   "ficha": "^RECUERDA del temario",
+   "nombre": "Ley 50/1997 · RECUERDA del temario",
+   "expres": 1,
+   "piezas": [
+    [
+     30,
+     0.06,
+     0.93
+    ],
+    [
+     31,
+     0.06,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "a-fin",
+   "nombre": "Ley 50/1997 · Disposiciones adicionales y derogatoria",
+   "piezas": [
+    [
+     28,
+     0.12,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "a-9",
+   "nombre": "Ley 50/1997 · Artículo 9 (Secretariado del Gobierno)",
+   "piezas": [
+    [
+     12,
+     0.485,
+     0.93
+    ],
+    [
+     13,
+     0.06,
+     0.32
+    ]
+   ]
+  }
+ ]
+}
