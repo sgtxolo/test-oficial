@@ -7794,14 +7794,20 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
   /* si las preguntas del artículo no apuntan a ninguna pieza: se busca por número de artículo dentro de la misma ley (la de los artículos vecinos que sí tienen pieza) */
   function numCab(h){ var c = h.cloneNode(true); [].forEach.call(c.querySelectorAll('button,[data-ui],.st-chip,a'), function(x){ x.remove(); }); var m = /^\s*art[íi]culo\s+(\d+)\s*(bis|ter|quater)?\b/i.exec(c.textContent); return m ? m[1] + (m[2] ? m[2].toLowerCase() : '') : null; }
   function idsDe(u){ if (u.classList.contains('ex-ficha')) return [].map.call(u.querySelectorAll('[data-q]'), function(m){ return m.getAttribute('data-q'); }).join(',').split(/[ ,;|]+/).filter(Boolean); return (u.dataset.qs || '').split(',').filter(Boolean); }
+  var cacheTodos = null;   // lista de artículos por zona, válida solo durante el mismo instante (evita recorrer toda la página por cada botón)
   function piezaBtn(b){
-    var pz = piezaDe(b._t, b._ids); if (pz) return pz;
+    if (b._pz) return b._pz;
+    var pz = piezaDe(b._t, b._ids); if (pz) return (b._pz = pz);
     var D = window.EXSUB && window.EXSUB[b._t], u = b._u; if (!D || !u) return null;
     var n = numCab(b._h); if (!n) return null;
-    var raiz = u.closest('.ex-cont, .esquema'), todos = [].filter.call(raiz.querySelectorAll(u.classList.contains('ex-ficha') ? '.ex-ficha' : '.articulo'), function(x){ return !x.closest('#print-host') && (u.classList.contains('ex-ficha') || !x.closest('.ex-cont')); }), i = todos.indexOf(u), letras = [];
+    var raiz = u.closest('.ex-cont, .esquema'), clave = u.classList.contains('ex-ficha');
+    if (!cacheTodos){ cacheTodos = new Map(); setTimeout(function(){ cacheTodos = null; }, 0); }
+    var ck = clave ? 1 : 0, porRaiz = cacheTodos.get(raiz) || {}, todos = porRaiz[ck];
+    if (!todos){ todos = porRaiz[ck] = [].filter.call(raiz.querySelectorAll(clave ? '.ex-ficha' : '.articulo'), function(x){ return !x.closest('#print-host') && (clave || !x.closest('.ex-cont')); }); cacheTodos.set(raiz, porRaiz); }
+    var i = todos.indexOf(u), letras = [];
     [-1, 1].forEach(function(d){ for (var j = i + d; j >= 0 && j < todos.length; j += d){ var v = piezaDe(b._t, idsDe(todos[j])); if (v){ letras.push(v.id.split('-')[0]); return; } } });
     if (!letras.length || (letras.length === 2 && letras[0] !== letras[1])) return null;
-    return D.piezas.filter(function(x){ return x.id === letras[0] + '-' + n; })[0] || null;
+    return (b._pz = D.piezas.filter(function(x){ return x.id === letras[0] + '-' + n; })[0] || null);
   }
   function esExtra(t, pz){ var r = (window.EXSUB_REV || {})[t] || {}; return !!pz.extra || [r.esq, r.tachado, r.fuera].some(function(l){ return l && l.indexOf(pz.id) >= 0; }); }
   /* 'anadido' (lo metiste tú) · 'fuera' (extra o quitado: no está en tu subrayado) · 'dentro' (ya está) */
@@ -7856,7 +7862,12 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
     b.onclick = function(ev){ ev.preventDefault(); ev.stopPropagation(); if (imp[k]) delete imp[k]; else imp[k] = 1; try { localStorage.setItem(K_IMP, JSON.stringify(imp)); } catch (e) {} pinta(); };
     pinta(); h.appendChild(b);
   }
-  new MutationObserver(function(){ clearTimeout(pon._t); pon._t = setTimeout(pon, 250); }).observe(document.body, {childList: true, subtree: true});
+  /* se ignoran los cambios que hacen estos mismos botones/enlaces (si no, cada botón puesto vuelve a lanzar todo el recorrido) */
+  var propio = function(n){ return n.nodeType === 1 ? /(^|\s)(sub-add|sub-link|sub-resto|imp-btn)(\s|$)/.test(n.className) : n.nodeType === 3 && n.parentNode && propio(n.parentNode); };
+  new MutationObserver(function(ms){
+    if (ms.every(function(m){ return propio(m.target) || (m.addedNodes.length && [].every.call(m.addedNodes, propio)) && !m.removedNodes.length; })) return;
+    clearTimeout(pon._t); pon._t = setTimeout(pon, 250);
+  }).observe(document.body, {childList: true, subtree: true});
   pon();
 })();
 </script>
