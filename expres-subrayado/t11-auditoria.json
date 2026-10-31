@@ -1,0 +1,2406 @@
+{
+"d-6": {
+"exp": 37,
+"falta": 35,
+"sobra": 1,
+"ej_sobra": [
+"basado"
+],
+"ej_falta": [
+"accion",
+"acepta",
+"afirmativa",
+"clara",
+"declaracion",
+"guarden"
+]
+},
+"d-10": {
+"exp": 54,
+"falta": 20,
+"sobra": 3,
+"ej_sobra": [
+"articulo",
+"naturaleza",
+"penal"
+],
+"ej_falta": [
+"amparado",
+"ejecucion",
+"ejercicio",
+"enjuiciamiento",
+"facilitada",
+"fuera"
+]
+},
+"d-12": {
+"exp": 38,
+"falta": 53,
+"sobra": 2,
+"ej_sobra": [
+"disposiciones",
+"sobre"
+],
+"ej_falta": [
+"cancelacion",
+"contrato",
+"cualesquiera",
+"cualquier",
+"cuenta",
+"ejercitar"
+]
+},
+"d-13": {
+"exp": 19,
+"falta": 47,
+"sobra": 9,
+"ej_sobra": [
+"afectado",
+"asumira",
+"cuando",
+"dicho",
+"distinto",
+"eleccion"
+],
+"ej_falta": [
+"considerar",
+"durante",
+"ejercicio",
+"menos",
+"meses",
+"ocasion"
+]
+},
+"d-15": {
+"exp": 23,
+"falta": 17,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"mercadotecnia",
+"necesarios",
+"podra",
+"reglamento"
+]
+},
+"d-20": {
+"exp": 65,
+"falta": 71,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"acreedor",
+"administrativa",
+"alternativo",
+"ciertas",
+"cinco",
+"credito"
+]
+},
+"d-21": {
+"exp": 16,
+"falta": 50,
+"sobra": 5,
+"ej_sobra": [
+"articulo",
+"mercantiles",
+"realizacion",
+"relacionados",
+"vista"
+],
+"ej_falta": [
+"caracter",
+"concluirse",
+"datos",
+"inmediato",
+"llegara",
+"operacion"
+]
+},
+"d-22": {
+"exp": 89,
+"falta": 44,
+"sobra": 3,
+"ej_sobra": [
+"articulo",
+"trata",
+"tratamientos"
+],
+"ej_falta": [
+"2016680",
+"autoridad",
+"bienes",
+"captacion",
+"competente",
+"conocimiento"
+]
+},
+"d-23": {
+"exp": 75,
+"falta": 37,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"autoridades",
+"comunicacion",
+"comunicado",
+"comunicados",
+"conocimiento",
+"considerar"
+]
+},
+"d-25": {
+"exp": 41,
+"falta": 37,
+"sobra": 1,
+"ej_sobra": [
+"tratamiento"
+],
+"ej_falta": [
+"121989",
+"aportacion",
+"conformidad",
+"consecuencia",
+"consentimiento",
+"dispuesto"
+]
+},
+"d-27": {
+"exp": 44,
+"falta": 34,
+"sobra": 2,
+"ej_sobra": [
+"administrativa",
+"articulo"
+],
+"ej_falta": [
+"competentes",
+"consentimiento",
+"dichos",
+"estar",
+"imposicion",
+"interesado"
+]
+},
+"d-32": {
+"exp": 35,
+"falta": 86,
+"sobra": 23,
+"ej_sobra": [
+"acreditar",
+"anterior",
+"apartado",
+"articulo",
+"autenticidad",
+"bloqueados"
+],
+"ej_falta": [
+"administraciones",
+"adoptando",
+"autoridades",
+"bloqueo",
+"competentes",
+"consiste"
+]
+},
+"d-33": {
+"exp": 40,
+"falta": 85,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"2016679",
+"actua",
+"afectados",
+"aplicable",
+"conste",
+"contenido"
+]
+},
+"d-34": {
+"exp": 135,
+"falta": 40,
+"sobra": 4,
+"ej_sobra": [
+"articulo",
+"delegado",
+"electronico",
+"tales"
+],
+"ej_falta": [
+"agencia",
+"aseguradoras",
+"autonomicas",
+"autoridades",
+"capitales",
+"ceses"
+]
+},
+"d-38": {
+"exp": 25,
+"falta": 88,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"accesible",
+"agencia",
+"aprobacion",
+"aprobados",
+"autonomica",
+"autoridad"
+]
+},
+"d-48": {
+"exp": 99,
+"falta": 57,
+"sobra": 6,
+"ej_sobra": [
+"administrativo",
+"contencioso",
+"establecido",
+"general",
+"orden",
+"subdireccion"
+],
+"ej_falta": [
+"absoluta",
+"acompanada",
+"actos",
+"administrativa",
+"alcanzarse",
+"audiencia"
+]
+},
+"d-49": {
+"exp": 77,
+"falta": 39,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"puesto"
+],
+"ej_falta": [
+"acuerdo",
+"administracion",
+"asociacion",
+"autonoma",
+"autoridad",
+"comunidad"
+]
+},
+"d-52": {
+"exp": 130,
+"falta": 11,
+"sobra": 15,
+"ej_sobra": [
+"correo",
+"corresponda",
+"cuenta",
+"desde",
+"determinada",
+"electronico"
+],
+"ej_falta": [
+"denuncia",
+"exclusivamente",
+"investigacion",
+"obligaciones",
+"pregunta",
+"preguntas"
+]
+},
+"d-55": {
+"exp": 26,
+"falta": 8,
+"sobra": 3,
+"ej_sobra": [
+"articulo",
+"potestades",
+"regulacion"
+],
+"ej_falta": [
+"obligatorias",
+"pregunta"
+]
+},
+"d-65": {
+"exp": 59,
+"falta": 80,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"abusivas",
+"admision",
+"agencia",
+"aporten",
+"archivar",
+"carezcan"
+]
+},
+"d-67": {
+"exp": 38,
+"falta": 71,
+"sobra": 6,
+"ej_sobra": [
+"articulo",
+"conforme",
+"estado",
+"europea",
+"miembro",
+"union"
+],
+"ej_falta": [
+"actuara",
+"actue",
+"acuerdo",
+"admision",
+"agencia",
+"cuando"
+]
+},
+"d-72": {
+"exp": 45,
+"falta": 44,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"aquel",
+"atencion",
+"cuando",
+"excepciones",
+"garantias",
+"graves"
+]
+},
+"d-76": {
+"exp": 28,
+"falta": 18,
+"sobra": 5,
+"ej_sobra": [
+"aplicacion",
+"autonomica",
+"estara",
+"imponer",
+"normativa"
+],
+"ej_falta": [
+"euros",
+"millon",
+"objeto",
+"pregunta",
+"superior"
+]
+},
+"d-77": {
+"exp": 59,
+"falta": 10,
+"sobra": 4,
+"ej_sobra": [
+"debida",
+"determinadas",
+"encargados",
+"responsables"
+],
+"ej_falta": [
+"debidamente",
+"disciplinario",
+"existencia",
+"pregunta",
+"propondra",
+"regimen"
+]
+},
+"d-78": {
+"exp": 24,
+"falta": 42,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"causa",
+"durante",
+"imputable",
+"interrumpira",
+"meses",
+"plazo"
+]
+},
+"d-81": {
+"exp": 19,
+"falta": 37,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"acceso",
+"discriminatorio",
+"economica",
+"geografica",
+"personal",
+"pregunta"
+]
+},
+"d-84": {
+"exp": 49,
+"falta": 51,
+"sobra": 3,
+"ej_sobra": [
+"articulo",
+"internet",
+"vicios"
+],
+"ej_falta": [
+"adecuado",
+"curadores",
+"desarrollo",
+"digitales",
+"dignidad",
+"dispositivos"
+]
+},
+"d-85": {
+"exp": 69,
+"falta": 90,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"21984",
+"aclaratorio",
+"actual",
+"adecuados",
+"adoptaran",
+"aparecer"
+]
+},
+"d-89": {
+"exp": 58,
+"falta": 81,
+"sobra": 2,
+"ej_sobra": [
+"dispositivos",
+"intimidad"
+],
+"ej_falta": [
+"actividad",
+"admitira",
+"anteriores",
+"apartado",
+"apartados",
+"atendiendo"
+]
+},
+"d-90": {
+"exp": 30,
+"falta": 37,
+"sobra": 4,
+"ej_sobra": [
+"ambito",
+"articulo",
+"derecho",
+"intimidad"
+],
+"ej_falta": [
+"acceso",
+"caracter",
+"caracteristicas",
+"clara",
+"derechos",
+"expresa"
+]
+},
+"d-93": {
+"exp": 31,
+"falta": 52,
+"sobra": 1,
+"ej_sobra": [
+"internet"
+],
+"ej_falta": [
+"borrado",
+"busqueda",
+"conservacion",
+"cuando",
+"dirigiera",
+"enlace"
+]
+},
+"d-94": {
+"exp": 23,
+"falta": 57,
+"sobra": 5,
+"ej_sobra": [
+"articulo",
+"equivalentes",
+"redes",
+"servicios",
+"sociales"
+],
+"ej_falta": [
+"afectado",
+"datos",
+"debera",
+"durante",
+"ejercitase",
+"facilitados"
+]
+},
+"a-1": {
+"exp": 60,
+"falta": 22,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"actos",
+"adicionales",
+"administrativo",
+"administrativos",
+"ajustar",
+"distintos"
+]
+},
+"a-2": {
+"exp": 49,
+"falta": 45,
+"sobra": 3,
+"ej_sobra": [
+"ambito",
+"aplicacion",
+"articulo"
+],
+"ej_falta": [
+"atribuidas",
+"consideracion",
+"corporaciones",
+"dependientes",
+"derecho",
+"dispuesto"
+]
+},
+"a-4": {
+"exp": 39,
+"falta": 44,
+"sobra": 4,
+"ej_sobra": [
+"adopte",
+"articulo",
+"decision",
+"mismo"
+],
+"ej_falta": [
+"colectivos",
+"definitiva",
+"habiente",
+"individuales",
+"juridica",
+"organizaciones"
+]
+},
+"a-5": {
+"exp": 100,
+"falta": 59,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"acreditada",
+"actuar",
+"administracion",
+"adquieran",
+"aplicacion",
+"apoderamiento"
+]
+},
+"a-6": {
+"exp": 104,
+"falta": 71,
+"sobra": 9,
+"ej_sobra": [
+"articulo",
+"donde",
+"electronicos",
+"especificos",
+"existencia",
+"particulares"
+],
+"ej_falta": [
+"actuaciones",
+"actuar",
+"antes",
+"anulado",
+"apoderamiento",
+"aprobara"
+]
+},
+"a-9": {
+"exp": 84,
+"falta": 73,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"acompanada",
+"acudir",
+"administracion",
+"asuntos",
+"competente",
+"comunicacion"
+]
+},
+"a-10": {
+"exp": 15,
+"falta": 80,
+"sobra": 4,
+"ej_sobra": [
+"administraciones",
+"articulo",
+"interesado",
+"publicas"
+],
+"ej_falta": [
+"consentimiento",
+"cualquier",
+"documento",
+"firmar",
+"inalterabilidad",
+"integridad"
+]
+},
+"a-12": {
+"exp": 54,
+"falta": 20,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"administrativo",
+"asistiran",
+"dispone",
+"especialmente",
+"incluidos",
+"podra"
+]
+},
+"a-14": {
+"exp": 29,
+"falta": 45,
+"sobra": 1,
+"ej_sobra": [
+"derecho"
+],
+"ej_falta": [
+"cualquier",
+"derechos",
+"elegido",
+"elegir",
+"obligaciones",
+"obligadas"
+]
+},
+"a-16": {
+"exp": 42,
+"falta": 12,
+"sobra": 22,
+"ej_sobra": [
+"acceso",
+"acreditado",
+"capacidad",
+"ciertos",
+"colectivos",
+"deben"
+],
+"ej_falta": [
+"deberan",
+"devolviendose",
+"originales",
+"perjuicio",
+"pregunta"
+]
+},
+"a-17": {
+"exp": 49,
+"falta": 59,
+"sobra": 1,
+"ej_sobra": [
+"acuerde"
+],
+"ej_falta": [
+"acuerdo",
+"aplicaciones",
+"articulo",
+"asegurara",
+"autenticidad",
+"conservacion"
+]
+},
+"a-19": {
+"exp": 12,
+"falta": 33,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"cuando",
+"obligatoria",
+"presencialmente",
+"rango"
+]
+},
+"a-20": {
+"exp": 26,
+"falta": 77,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"adoptaran",
+"asuntos",
+"cargo",
+"despacho",
+"dificulten",
+"ejercicio"
+]
+},
+"a-24": {
+"exp": 162,
+"falta": 33,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"adoptara",
+"alguna",
+"ambiente",
+"aplicable",
+"aquel",
+"computandose"
+]
+},
+"a-27": {
+"exp": 41,
+"falta": 15,
+"sobra": 6,
+"ej_sobra": [
+"articulo",
+"asimismo",
+"electronicas",
+"estaran",
+"obligadas",
+"publico"
+],
+"ej_falta": [
+"administracion",
+"cualquier",
+"momento",
+"organismo",
+"pregunta",
+"publicos"
+]
+},
+"a-30": {
+"exp": 34,
+"falta": 56,
+"sobra": 5,
+"ej_sobra": [
+"articulo",
+"constar",
+"hayan",
+"plazo",
+"senalado"
+],
+"ej_falta": [
+"contaran",
+"desde",
+"domingos",
+"duracion",
+"excluyendose",
+"expresados"
+]
+},
+"a-32": {
+"exp": 23,
+"falta": 48,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"aconsejan",
+"establecidos",
+"exceda",
+"interesados",
+"mismos",
+"mitad"
+]
+},
+"a-36": {
+"exp": 62,
+"falta": 13,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"funcionario",
+"nombramientos",
+"podran",
+"pregunta",
+"produciran",
+"refundirse"
+]
+},
+"a-37": {
+"exp": 17,
+"falta": 29,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"aquellas",
+"aunque",
+"jerarquia",
+"particular",
+"procedan"
+]
+},
+"a-39": {
+"exp": 39,
+"falta": 46,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"favor"
+],
+"ej_falta": [
+"actos",
+"administraciones",
+"administrativo",
+"anulados",
+"derecho",
+"desde"
+]
+},
+"a-40": {
+"exp": 30,
+"falta": 27,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"contener",
+"cursada",
+"dictado",
+"fecha",
+"organo",
+"partir"
+]
+},
+"a-42": {
+"exp": 71,
+"falta": 24,
+"sobra": 1,
+"ej_sobra": [
+"tenido"
+],
+"ej_falta": [
+"actuante",
+"contenido",
+"cualquier",
+"deberan",
+"dejando",
+"dentro"
+]
+},
+"a-48": {
+"exp": 14,
+"falta": 7,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"imponga"
+]
+},
+"a-52": {
+"exp": 15,
+"falta": 73,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"competente",
+"cuando",
+"determinante",
+"dicto",
+"incompetencia",
+"jerarquico"
+]
+},
+"a-56": {
+"exp": 55,
+"falta": 60,
+"sobra": 10,
+"ej_sobra": [
+"acerca",
+"articulo",
+"cuando",
+"derecho",
+"dichas",
+"dicho"
+],
+"ej_falta": [
+"amparados",
+"antes",
+"casos",
+"competente",
+"confirmadas",
+"debera"
+]
+},
+"a-61": {
+"exp": 35,
+"falta": 3,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"pregunta"
+]
+},
+"a-62": {
+"exp": 23,
+"falta": 4,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"pregunta"
+]
+},
+"a-63": {
+"exp": 37,
+"falta": 54,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"normas"
+],
+"ej_falta": [
+"competente",
+"conductas",
+"continuada",
+"debida",
+"distintos",
+"ejecutivo"
+]
+},
+"a-65": {
+"exp": 27,
+"falta": 30,
+"sobra": 5,
+"ej_sobra": [
+"articulo",
+"formacion",
+"inicio",
+"interesado",
+"solicitud"
+],
+"ej_falta": [
+"aunque",
+"derecho",
+"informacion",
+"instruira",
+"notificara",
+"personen"
+]
+},
+"a-67": {
+"exp": 46,
+"falta": 46,
+"sobra": 15,
+"ej_sobra": [
+"apartados",
+"articulo",
+"contrario",
+"declare",
+"europea",
+"inconstitucionalidad"
+],
+"ej_falta": [
+"anulacion",
+"computarse",
+"contenciosoadministrativa",
+"cuando",
+"curacion",
+"definitiva"
+]
+},
+"a-68": {
+"exp": 45,
+"falta": 47,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"ampliado",
+"aportacion",
+"cinco",
+"competitiva",
+"cuando",
+"dificultades"
+]
+},
+"a-69": {
+"exp": 39,
+"falta": 21,
+"sobra": 19,
+"ej_sobra": [
+"acredite",
+"administraciones",
+"anterior",
+"aporte",
+"clara",
+"correspondiente"
+],
+"ej_falta": [
+"cuando",
+"cumple",
+"derecho",
+"facultad",
+"obligaciones",
+"pregunta"
+]
+},
+"a-70": {
+"exp": 35,
+"falta": 51,
+"sobra": 2,
+"ej_sobra": [
+"administrativo",
+"articulo"
+],
+"ej_falta": [
+"asimismo",
+"certificada",
+"constar",
+"contenga",
+"copia",
+"cuando"
+]
+},
+"a-73": {
+"exp": 38,
+"falta": 55,
+"sobra": 3,
+"ej_sobra": [
+"articulo",
+"cumplimiento",
+"solucion"
+],
+"ej_falta": [
+"antes",
+"cumplimentados",
+"deban",
+"deberan",
+"dentro",
+"distinto"
+]
+},
+"a-77": {
+"exp": 32,
+"falta": 66,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"acordara",
+"alegados",
+"apertura",
+"asimismo",
+"considere",
+"cuantas"
+]
+},
+"a-80": {
+"exp": 46,
+"falta": 17,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"actuaciones",
+"cuando",
+"podra",
+"podran",
+"pregunta",
+"proseguir"
+]
+},
+"a-81": {
+"exp": 27,
+"falta": 67,
+"sobra": 27,
+"ej_sobra": [
+"acuerdo",
+"articulo",
+"causado",
+"causalidad",
+"contar",
+"criterios"
+],
+"ej_falta": [
+"31980",
+"50000",
+"abril",
+"autonomica",
+"consejo",
+"correspondiente"
+]
+},
+"a-82": {
+"exp": 12,
+"falta": 42,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"documentos",
+"justificaciones",
+"plazo",
+"quince",
+"superior"
+]
+},
+"a-85": {
+"exp": 65,
+"falta": 51,
+"sobra": 6,
+"ej_sobra": [
+"apartado",
+"articulo",
+"podra",
+"porcentaje",
+"previsto",
+"procedimientos"
+],
+"ej_falta": [
+"acumulables",
+"anterior",
+"aplicara",
+"citadas",
+"competente",
+"condicionada"
+]
+},
+"a-86": {
+"exp": 33,
+"falta": 21,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"aprobacion",
+"autonomas",
+"comunidades",
+"expresa",
+"funcionarios",
+"pregunta"
+]
+},
+"a-90": {
+"exp": 35,
+"falta": 34,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"procedimientos"
+],
+"ej_falta": [
+"aceptar",
+"alegaciones",
+"cuando",
+"inculpado",
+"independencia",
+"notificara"
+]
+},
+"a-91": {
+"exp": 16,
+"falta": 50,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"acuerdo",
+"desde",
+"entenderse",
+"expresa",
+"meses",
+"podra"
+]
+},
+"a-94": {
+"exp": 38,
+"falta": 42,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"aceptara",
+"concluso",
+"conveniente",
+"declarara",
+"desde",
+"esclarecimiento"
+]
+},
+"a-100": {
+"exp": 19,
+"falta": 21,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"forzosa"
+],
+"ej_falta": [
+"individual",
+"patrimonio",
+"pregunta",
+"subsidiaria"
+]
+},
+"a-106": {
+"exp": 36,
+"falta": 50,
+"sobra": 8,
+"ej_sobra": [
+"actos",
+"articulo",
+"disposiciones",
+"hayan",
+"previstos",
+"puesto"
+],
+"ej_falta": [
+"administraciones",
+"administrativo",
+"caducidad",
+"consejo",
+"cualquier",
+"dictamen"
+]
+},
+"a-107": {
+"exp": 39,
+"falta": 28,
+"sobra": 10,
+"ej_sobra": [
+"accion",
+"actos",
+"correspondiente",
+"efectos",
+"judicial",
+"notificarse"
+],
+"ej_falta": [
+"administrativo",
+"adoptara",
+"audiencia",
+"desde",
+"dicto",
+"entidad"
+]
+},
+"a-109": {
+"exp": 38,
+"falta": 74,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"aritmeticos",
+"constituya",
+"contraria",
+"desfavorables",
+"dispensa",
+"errores"
+]
+},
+"a-112": {
+"exp": 8,
+"falta": 0,
+"sobra": 9,
+"ej_sobra": [
+"administrativo",
+"alguna",
+"articulo",
+"dicha",
+"dicto",
+"nulidad"
+],
+"ej_falta": []
+},
+"a-115": {
+"exp": 52,
+"falta": 23,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"posicion"
+],
+"ej_falta": [
+"apellidos",
+"calificacion",
+"caracter",
+"debera",
+"firma",
+"medio"
+]
+},
+"a-117": {
+"exp": 37,
+"falta": 46,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"desde",
+"ejecucion",
+"electronico",
+"entendera",
+"entrada",
+"impugnado"
+]
+},
+"a-119": {
+"exp": 56,
+"falta": 23,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"cuantas",
+"cuestiones",
+"forma",
+"inadmision",
+"ningun",
+"obstante"
+]
+},
+"a-122": {
+"exp": 46,
+"falta": 15,
+"sobra": 70,
+"ej_sobra": [
+"actuen",
+"administraciones",
+"administrativa",
+"adscritos",
+"alegados",
+"anulabilidad"
+],
+"ej_falta": [
+"cualquier",
+"interponer",
+"momento",
+"parrafo",
+"partir",
+"siguiente"
+]
+},
+"a-124": {
+"exp": 22,
+"falta": 9,
+"sobra": 17,
+"ej_sobra": [
+"acuerdo",
+"aquel",
+"articulo",
+"cualquier",
+"especifica",
+"interesados"
+],
+"ej_falta": [
+"contra",
+"nuevo"
+]
+},
+"a-125": {
+"exp": 28,
+"falta": 0,
+"sobra": 3,
+"ej_sobra": [
+"articulo",
+"objeto",
+"plazos"
+],
+"ej_falta": []
+},
+"a-126": {
+"exp": 59,
+"falta": 44,
+"sobra": 60,
+"ej_sobra": [
+"actos",
+"administrativa",
+"administrativo",
+"articulos",
+"casos",
+"causa"
+],
+"ej_falta": [
+"acordar",
+"alguna",
+"anterior",
+"apartado",
+"autonoma",
+"causas"
+]
+},
+"a-128": {
+"exp": 44,
+"falta": 7,
+"sobra": 1,
+"ej_sobra": [
+"potestad"
+],
+"ej_falta": [
+"perjuicio",
+"pregunta",
+"sanciones"
+]
+},
+"a-129": {
+"exp": 14,
+"falta": 0,
+"sobra": 3,
+"ej_sobra": [
+"articulo",
+"buena",
+"principios"
+],
+"ej_falta": []
+},
+"b-3": {
+"exp": 89,
+"falta": 30,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"actua",
+"actuan",
+"administracion",
+"alcanzar",
+"autonomas",
+"comunidades"
+]
+},
+"b-4": {
+"exp": 45,
+"falta": 29,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"trate"
+],
+"ej_falta": [
+"actividad",
+"aplicar",
+"asimismo",
+"deberan",
+"discriminatorias",
+"evaluar"
+]
+},
+"b-5": {
+"exp": 50,
+"falta": 36,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"administracion",
+"administrativas",
+"atribuyan",
+"caracter",
+"consideracion",
+"debidamente"
+]
+},
+"b-6": {
+"exp": 15,
+"falta": 13,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"incumplimiento",
+"perjuicio"
+]
+},
+"b-8": {
+"exp": 44,
+"falta": 68,
+"sobra": 9,
+"ej_sobra": [
+"alteracion",
+"articulo",
+"avocado",
+"competencias",
+"encomiendas",
+"firma"
+],
+"ej_falta": [
+"administracion",
+"administrativos",
+"alguna",
+"atribuida",
+"atribuye",
+"avocacion"
+]
+},
+"b-9": {
+"exp": 79,
+"falta": 53,
+"sobra": 17,
+"ej_sobra": [
+"alcanzar",
+"articulo",
+"asignados",
+"asimismo",
+"conveniente",
+"dependan"
+],
+"ej_falta": [
+"acerca",
+"acuerdo",
+"ambos",
+"aprobacion",
+"aquellas",
+"circunstancia"
+]
+},
+"b-11": {
+"exp": 65,
+"falta": 28,
+"sobra": 15,
+"ej_sobra": [
+"acceso",
+"aplicacion",
+"articulo",
+"condicion",
+"datos",
+"dispuesto"
+],
+"ej_falta": [
+"actos",
+"administrativos",
+"concreta",
+"cuando",
+"derecho",
+"distinta"
+]
+},
+"b-12": {
+"exp": 29,
+"falta": 83,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"actos",
+"administrativas",
+"administrativos",
+"alterara",
+"atribucion",
+"competencia"
+]
+},
+"b-14": {
+"exp": 31,
+"falta": 42,
+"sobra": 4,
+"ej_sobra": [
+"administraciones",
+"articulo",
+"distintas",
+"funcionamiento"
+],
+"ej_falta": [
+"administracion",
+"atribuciones",
+"circunstancia",
+"directamente",
+"entre",
+"finalizado"
+]
+},
+"b-15": {
+"exp": 44,
+"falta": 36,
+"sobra": 2,
+"ej_sobra": [
+"regimen",
+"soluciones"
+],
+"ej_falta": [
+"acuerdo",
+"adicionalmente",
+"boletin",
+"colegiados",
+"creacion",
+"deberan"
+]
+},
+"b-16": {
+"exp": 19,
+"falta": 42,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"administracion",
+"colegiados",
+"persona",
+"podra",
+"pregunta",
+"publica"
+]
+},
+"b-17": {
+"exp": 73,
+"falta": 38,
+"sobra": 40,
+"ej_sobra": [
+"administraciones",
+"articulo",
+"asegure",
+"audiovisuales",
+"condicion",
+"considerandose"
+],
+"ej_falta": [
+"adoptados",
+"asista",
+"asistan",
+"asistencia",
+"constitucion",
+"constituir"
+]
+},
+"b-18": {
+"exp": 48,
+"falta": 21,
+"sobra": 26,
+"ej_sobra": [
+"acceso",
+"acompanar",
+"articulo",
+"autenticidad",
+"conservarse",
+"constar"
+],
+"ej_falta": [
+"aprobarse",
+"bueno",
+"elaborara",
+"inmediata",
+"levantara",
+"podra"
+]
+},
+"b-20": {
+"exp": 43,
+"falta": 33,
+"sobra": 3,
+"ej_sobra": [
+"articulo",
+"credito",
+"nacion"
+],
+"ej_falta": [
+"administracion",
+"composicion",
+"creditos",
+"criterios",
+"dependencia",
+"designacion"
+]
+},
+"b-21": {
+"exp": 27,
+"falta": 4,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"pregunta"
+]
+},
+"b-22": {
+"exp": 24,
+"falta": 17,
+"sobra": 4,
+"ej_sobra": [
+"antes",
+"articulo",
+"modificacion",
+"organo"
+],
+"ej_falta": [
+"director",
+"rango",
+"restantes",
+"superior"
+]
+},
+"b-23": {
+"exp": 70,
+"falta": 14,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"administradores",
+"afinidad",
+"circunstancia",
+"compartir",
+"concurran",
+"consanguinidad"
+]
+},
+"b-24": {
+"exp": 36,
+"falta": 3,
+"sobra": 84,
+"ej_sobra": [
+"abstencion",
+"acordara",
+"administradores",
+"afinidad",
+"algun",
+"alguna"
+],
+"ej_falta": [
+"pregunta"
+]
+},
+"b-25": {
+"exp": 34,
+"falta": 18,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"legalidad"
+],
+"ej_falta": [
+"ejercera",
+"expresamente",
+"legal",
+"norma",
+"rango",
+"reglamentario"
+]
+},
+"b-26": {
+"exp": 25,
+"falta": 72,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"cuanto",
+"cumplimiento",
+"disposiciones",
+"efecto",
+"favorezcan",
+"infraccion"
+]
+},
+"b-30": {
+"exp": 41,
+"falta": 63,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"iniciado"
+],
+"ej_falta": [
+"administrativo",
+"cometido",
+"conducta",
+"contarse",
+"desde",
+"durante"
+]
+},
+"b-31": {
+"exp": 37,
+"falta": 22,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"sanciones"
+],
+"ej_falta": [
+"aprecie",
+"fundamento",
+"hecho",
+"minorarla",
+"mismos",
+"podran"
+]
+},
+"b-33": {
+"exp": 53,
+"falta": 21,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"consideren",
+"distribucion",
+"frente",
+"instrumento",
+"intervinientes",
+"juridico"
+]
+},
+"b-38": {
+"exp": 91,
+"falta": 42,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"abiertos",
+"acuerdo",
+"aquellos",
+"comunicacion",
+"conlleva",
+"debera"
+]
+},
+"b-47": {
+"exp": 46,
+"falta": 65,
+"sobra": 13,
+"ej_sobra": [
+"ajustara",
+"contratos",
+"definicion",
+"juridico",
+"legislacion",
+"objeto"
+],
+"ej_falta": [
+"actuacion",
+"acuerdos",
+"administraciones",
+"adoptados",
+"comporten",
+"compromisos"
+]
+},
+"b-48": {
+"exp": 95,
+"falta": 52,
+"sobra": 3,
+"ej_sobra": [
+"articulo",
+"requisitos",
+"validez"
+],
+"ej_falta": [
+"acuerdos",
+"adicional",
+"administrativos",
+"alguno",
+"aplicacion",
+"asimismo"
+]
+},
+"b-53": {
+"exp": 26,
+"falta": 69,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"600000",
+"comunidad",
+"corresponda",
+"cualquier",
+"cuyos",
+"deberan"
+]
+},
+"b-54": {
+"exp": 23,
+"falta": 83,
+"sobra": 4,
+"ej_sobra": [
+"acuerdo",
+"articulo",
+"articulos",
+"directivos"
+],
+"ej_falta": [
+"administracion",
+"administrativa",
+"atribuidas",
+"competencias",
+"conforme",
+"corresponderan"
+]
+},
+"b-57": {
+"exp": 14,
+"falta": 64,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"competencia",
+"decreto",
+"denominacion",
+"estado",
+"mediante",
+"ministerios"
+]
+},
+"b-59": {
+"exp": 38,
+"falta": 68,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"administraciones",
+"anteriores",
+"consejo",
+"decreto",
+"direcciones",
+"generales"
+]
+},
+"b-64": {
+"exp": 29,
+"falta": 72,
+"sobra": 7,
+"ej_sobra": [
+"administracion",
+"articulo",
+"cargo",
+"ejercicio",
+"general",
+"marzo"
+],
+"ej_falta": [
+"categoria",
+"consejo",
+"cualificacion",
+"decreto",
+"desempeno",
+"efectuarse"
+]
+},
+"b-66": {
+"exp": 134,
+"falta": 34,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"administracion",
+"areas",
+"atribuciones",
+"cargo",
+"competencias",
+"comunidades"
+]
+},
+"b-72": {
+"exp": 49,
+"falta": 49,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"efecto"
+],
+"ej_falta": [
+"defecto",
+"delegado",
+"designe",
+"estado",
+"exista",
+"funcionalmente"
+]
+},
+"b-145": {
+"exp": 66,
+"falta": 11,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"aplicacion",
+"disposiciones",
+"dispuesto",
+"especificas",
+"instrumentos",
+"pregunta"
+]
+},
+"b-148": {
+"exp": 95,
+"falta": 15,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"leves"
+],
+"ej_falta": [
+"consultivas",
+"ejercer",
+"especificos",
+"estadistico",
+"informadas",
+"leyes"
+]
+},
+"b-149": {
+"exp": 59,
+"falta": 24,
+"sobra": 11,
+"ej_sobra": [
+"actas",
+"apartado",
+"articulo",
+"conferencias",
+"conformidad",
+"elaboracion"
+],
+"ej_falta": [
+"acordar",
+"adoptados",
+"audiovisuales",
+"iniciativa",
+"ministro",
+"normativo"
+]
+},
+"b-155": {
+"exp": 76,
+"falta": 28,
+"sobra": 1,
+"ej_sobra": [
+"entre"
+],
+"ej_falta": [
+"aquel",
+"comprobar",
+"comunicarlo",
+"debera",
+"decision",
+"dispuesto"
+]
+},
+"t-8": {
+"exp": 133,
+"falta": 24,
+"sobra": 4,
+"ej_sobra": [
+"articulo",
+"economica",
+"presupuestario",
+"volumen"
+],
+"ej_falta": [
+"abandono",
+"abril",
+"adjudicacion",
+"altos",
+"anualmente",
+"aplicacion"
+]
+},
+"t-9": {
+"exp": 21,
+"falta": 52,
+"sobra": 2,
+"ej_sobra": [
+"articulo",
+"control"
+],
+"ej_falta": [
+"activa",
+"capitulo",
+"correspondiente",
+"disciplinario",
+"incumplimiento",
+"infraccion"
+]
+},
+"t-10": {
+"exp": 27,
+"falta": 93,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"acceso",
+"actuacion",
+"administracion",
+"ambito",
+"anteriores",
+"articulos"
+]
+},
+"t-14": {
+"exp": 39,
+"falta": 21,
+"sobra": 1,
+"ej_sobra": [
+"derecho"
+],
+"ej_falta": [
+"acceso",
+"atendera",
+"contuvieran",
+"especialmente",
+"justificada",
+"limites"
+]
+},
+"t-15": {
+"exp": 28,
+"falta": 7,
+"sobra": 20,
+"ej_sobra": [
+"administrativas",
+"amonestacion",
+"amparado",
+"articulo",
+"comision",
+"hagan"
+],
+"ej_falta": [
+"manifiestamente",
+"religion"
+]
+},
+"t-17": {
+"exp": 36,
+"falta": 67,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"ausencia",
+"causa",
+"cuando",
+"cuenta",
+"dicte",
+"dirigirse"
+]
+},
+"t-18": {
+"exp": 18,
+"falta": 11,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"anterior",
+"pregunta"
+]
+},
+"t-19": {
+"exp": 18,
+"falta": 6,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"pregunta"
+]
+},
+"t-20": {
+"exp": 62,
+"falta": 32,
+"sobra": 4,
+"ej_sobra": [
+"notificacion",
+"podra",
+"solicita",
+"volumen"
+],
+"ej_falta": [
+"afectados",
+"conceda",
+"contenciosoadministrativa",
+"deniegue",
+"desde",
+"desestimada"
+]
+},
+"t-22": {
+"exp": 64,
+"falta": 36,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"81989",
+"administrativo",
+"confirmando",
+"contencioso",
+"debera",
+"derecho"
+]
+},
+"t-24": {
+"exp": 48,
+"falta": 31,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"administrativo",
+"aplicacion",
+"comunicara",
+"dicte",
+"efectos",
+"interpondra"
+]
+},
+"t-26": {
+"exp": 179,
+"falta": 12,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"actuaran",
+"adecuadamente",
+"asumiran",
+"conservaran",
+"correccion",
+"eficiencia"
+]
+},
+"t-30": {
+"exp": 26,
+"falta": 100,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"apartado",
+"arreglo",
+"asimilado",
+"cargo",
+"cesado",
+"cinco"
+]
+},
+"t-32": {
+"exp": 8,
+"falta": 0,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": []
+},
+"t-33": {
+"exp": 35,
+"falta": 31,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"actua",
+"administracion",
+"administraciones",
+"disposicion",
+"funcionamiento",
+"hacienda"
+]
+},
+"t-36": {
+"exp": 51,
+"falta": 57,
+"sobra": 0,
+"ej_sobra": [],
+"ej_falta": [
+"administraciones",
+"autonomas",
+"competencias",
+"comunidades",
+"convocado",
+"creados"
+]
+},
+"t-37": {
+"exp": 68,
+"falta": 88,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"absoluta",
+"acordada",
+"acuerdo",
+"administraciones",
+"adoptado",
+"candidato"
+]
+},
+"r-13": {
+"exp": 90,
+"falta": 77,
+"sobra": 1,
+"ej_sobra": [
+"articulo"
+],
+"ej_falta": [
+"adecuada",
+"adecuado",
+"adoptadas",
+"adscripcion",
+"aplicacion",
+"apoyo"
+]
+}
+}
