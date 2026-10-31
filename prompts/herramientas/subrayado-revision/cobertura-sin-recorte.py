@@ -4,7 +4,7 @@ import sys, re, json, subprocess, html, pymupdf
 B='C:/Users/ruben/Desktop/HTML OFICIAL/'; OUT=B+'expres-subrayado/img/t'+T
 cfg=json.load(open(B+'expres-subrayado/t'+T+'-config.json',encoding='utf-8')); inst=json.load(open(B+'expres-subrayado/t'+T+'-instrumentos.json',encoding='utf-8'))
 ind={e['id']:e for e in json.load(open(OUT+'/indice.json',encoding='utf-8'))}
-d=PDF={'1':'TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf','12':'TEMA 12 - GOBIERNO Y ADMINISTRACION-2026-08-08.pdf','7':'TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf','11':'TEMA 11 DERECHO ADEMINISTRATIVO-08-08-2026.pdf'}
+d=PDF={'1':'TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf','9':'TEMA 9 DERECHO CIVIL-08-08-2026.pdf','12':'TEMA 12 - GOBIERNO Y ADMINISTRACION-2026-08-08.pdf','7':'TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf','11':'TEMA 11 DERECHO ADEMINISTRATIVO-08-08-2026.pdf'}
 d=pymupdf.open('C:/Users/ruben/Desktop/OFICIAL 2026-27/TEMARIO ESCANEADO 2026-27/'+PDF[T]); DPI=130; K=DPI/72
 H=json.loads(subprocess.run(['node','-e',"global.window={};require('"+B+"expres/t"+T+".js');process.stdout.write(JSON.stringify(window.EXPRES_T["+T+"].html))"],capture_output=True,text=True,encoding='utf-8').stdout)
 def numeros(t):

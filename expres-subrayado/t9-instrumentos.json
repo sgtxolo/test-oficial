@@ -1,0 +1,4 @@
+[
+ {"id":"a","nombre":"LO 5/2005","paginas":[4,20],"inicio":"^EXPOSICIÓN DE MOTIVOS$","cit":"LO 5/2005|Ley Orgánica 5/2005|Ley Orgánica de la Defensa Nacional|Ley de la Defensa Nacional","pre":"a-pre","pre_re":"exposici[óo]n de motivos de la (?:LO|Ley Org[áa]nica) 5/2005"},
+ {"id":"d","nombre":"Directiva de Defensa Nacional 2020","inicio":"^9.2 — DIRECTIVA","cit":"Directiva de Defensa Nacional|DDN|Directiva 2020"}
+]

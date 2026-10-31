@@ -1,0 +1,168 @@
+{
+ "manual": [
+  {
+   "id": "a-pre",
+   "ficha": "^Exposici",
+   "nombre": "LO 5/2005 · Exposición de motivos",
+   "expres": 1,
+   "piezas": [
+    [
+     4,
+     0.15,
+     0.93
+    ],
+    [
+     5,
+     0.06,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "a-df2",
+   "ficha": "^Disposici.n final segunda",
+   "nombre": "LO 5/2005 · Disposición final segunda",
+   "expres": 1,
+   "piezas": [
+    [
+     20,
+     0.29,
+     0.455
+    ]
+   ]
+  },
+  {
+   "id": "a-df3",
+   "ficha": "^Disposici.n final tercera",
+   "nombre": "LO 5/2005 · Disposición final tercera",
+   "expres": 1,
+   "piezas": [
+    [
+     20,
+     0.455,
+     0.62
+    ]
+   ]
+  },
+  {
+   "id": "d-1",
+   "ficha": "^Apartado 1 ",
+   "nombre": "Directiva de Defensa Nacional 2020 · Apartado 1 (Introducción)",
+   "expres": 1,
+   "piezas": [
+    [
+     22,
+     0.165,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "d-2",
+   "ficha": "^Apartado 2 ",
+   "nombre": "Directiva de Defensa Nacional 2020 · Apartado 2 (El escenario estratégico)",
+   "expres": 1,
+   "piezas": [
+    [
+     23,
+     0.1,
+     0.93
+    ],
+    [
+     24,
+     0.06,
+     0.465
+    ]
+   ]
+  },
+  {
+   "id": "d-3",
+   "ficha": "^Apartado 3 ",
+   "nombre": "Directiva de Defensa Nacional 2020 · Apartado 3 (Líneas generales y objetivos)",
+   "expres": 1,
+   "piezas": [
+    [
+     24,
+     0.47,
+     0.93
+    ],
+    [
+     25,
+     0.06,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "d-4",
+   "ficha": "^Apartado 4 ",
+   "nombre": "Directiva de Defensa Nacional 2020 · Apartado 4 (Directrices de actuación)",
+   "expres": 1,
+   "piezas": [
+    [
+     26,
+     0.1,
+     0.93
+    ],
+    [
+     27,
+     0.06,
+     0.77
+    ]
+   ]
+  },
+  {
+   "id": "a-rec",
+   "ficha": "^RECUERDA del temario · LO",
+   "nombre": "LO 5/2005 · RECUERDA del temario",
+   "expres": 1,
+   "piezas": [
+    [
+     28,
+     0.06,
+     0.93
+    ],
+    [
+     29,
+     0.06,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "d-rec",
+   "ficha": "^RECUERDA del temario · Directiva",
+   "nombre": "Directiva · RECUERDA del temario",
+   "expres": 1,
+   "piezas": [
+    [
+     30,
+     0.06,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "a-6",
+   "nombre": "LO 5/2005 · Artículo 6",
+   "piezas": [
+    [
+     7,
+     0.311,
+     0.657
+    ]
+   ]
+  },
+  {
+   "id": "a-df1",
+   "nombre": "LO 5/2005 · Disposición final primera",
+   "piezas": [
+    [
+     20,
+     0.17,
+     0.275
+    ]
+   ]
+  }
+ ]
+}

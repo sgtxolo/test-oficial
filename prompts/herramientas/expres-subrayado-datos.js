@@ -67,6 +67,28 @@ ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) 
 { const cab = h.split('<div class="ex-ficha">').slice(1).map(f => ((f.match(/class="ex-fh">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, ''));
   (man.manual || []).filter(m => m.ficha).forEach(m => { const k = cab.findIndex(t => new RegExp(m.ficha).test(t)); if (k >= 0) fx[m.id] = k; else console.log('  ⚠ ficha no encontrada', m.id, m.ficha); }); }
 ix.forEach(p => { if (fx[p.id] !== undefined) p.fx = fx[p.id]; });
+// preguntas que Esquemas sitúa en una ficha «Artículo N» / «Apartado N» que el Exprés no enlaza: van a la pieza de ese número si es la única (Exprés o fuera del Exprés)
+try {
+  const X = require('./expres-lib.js')(+T), MP = JSON.parse(fs.readFileSync('esquemas.html', 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
+  const cand = {}; for (const p of ix) { const m = p.id.match(/^[a-z]+-(\d+)$/); if (m) { const k0 = (/Apartado/.test(p.nombre) ? 'ap' : 'art') + m[1]; (cand[k0] = cand[k0] || []).push(p.id); } }
+  let nuevas = 0;
+  for (const [q, anc] of Object.entries(MP)) {
+    if (!q.startsWith(T + '-') || preg[q]) continue;
+    const f = X.fichas[+anc.split('-')[1]]; if (!f) continue;
+    const cabf = f.cab.replace(/<[^>]+>/g, ''), m = cabf.match(/^(?:Art[íi]culo|Apartado)\s+(\d+)\s+—/);
+    const kk = (/^Apartado/.test(cabf) ? 'ap' : 'art') + (m ? m[1] : ''); if (m && cand[kk] && cand[kk].length === 1) { preg[q] = cand[kk][0]; nuevas++; }
+  }
+  // las que Esquemas deja en un RECUERDA o sin ficha: si el tema tiene UNA sola norma con artículos y la explicación cita «artículo N», a esa pieza
+  if (inst.filter(i => i.paginas).length === 1) {
+    const th = fs.readFileSync('test-oficial-conocimiento.html', 'utf8'), RQ = new RegExp('\\{"id":"(' + T + '-[^"]+)","pregunta":"(?:[^"\\\\]|\\\\.)*","opciones"[\\s\\S]{0,3000}?"explicacion":"((?:[^"\\\\]|\\\\.)*)"', 'g');
+    for (const mm of th.matchAll(RQ)) {
+      const q = mm[1]; if (preg[q]) continue;
+      const ns = [...new Set([...mm[2].replace(/<[^>]+>/g, ' ').matchAll(/\bart(?:ículo|\.)\s*(\d+)(?!\d)([^.;]{0,50})/gi)].filter(x => new RegExp(inst.find(i => i.paginas).cit, 'i').test(x[2]) || !/Constituci|\bCE\b|\bLey\b|C[óo]digo|Tratado|Reglamento|Real Decreto|LECrim|\bLO\b|Directiva/.test(x[2])).map(x => x[1]))];
+      if (ns.length === 1 && cand['art' + ns[0]] && cand['art' + ns[0]].length === 1) { preg[q] = cand['art' + ns[0]][0]; nuevas++; }
+    }
+  }
+  if (nuevas) console.log('  preguntas enlazadas desde Esquemas por número de artículo/apartado:', nuevas);
+} catch (er) { console.log('  (sin enlace por ficha de Esquemas:', er.message + ')'); }
 // primera pregunta de cada artículo: sirve para saltar desde aquí a la ficha de Esquemas (esquemas.html#q=<id>&ex=1)
 const primera = {}; for (const q in preg) if (!primera[preg[q]]) primera[preg[q]] = q; ix.forEach(p => { if (primera[p.id]) p.q1 = primera[p.id]; });
 // ---- cuadros (esquemas visuales) de visuales-tN.js, tomados ya montados de esquemas.html ----
@@ -75,7 +97,7 @@ const mapP = `expres-subrayado/t${T}-cuadros-map.json`; const cmap = fs.existsSy
 const visP = [`prompts/herramientas/visuales-t${T}.js`, `prompts/herramientas/tema${T}/visuales-t${T}.js`].find(f => fs.existsSync(f)) || `prompts/herramientas/visuales-t${T}.js`;
 if (fs.existsSync(visP)) {
   const src = fs.readFileSync(visP, 'utf8'), esq = fs.readFileSync('esquemas.html', 'utf8');
-  const rx = /^\s*v\('((?:[^'\\]|\\.)*)',\s*\w+\('((?:[^'\\]|\\.)*)'/gm;
+  const rx = /^\s*v\('((?:[^'\\]|\\.)*)',\s*(?:\w+\()+'((?:[^'\\]|\\.)*)'/gm;
   for (const m of src.matchAll(rx)) {
     const despues = m[1].replace(/\\'/g, "'"), tit = m[2].replace(/\\'/g, "'");
     const esc = s => s.replace(/"/g, '\\"');
