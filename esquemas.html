@@ -7797,7 +7797,10 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
   var cacheTodos = null;   // lista de artículos por zona, válida solo durante el mismo instante (evita recorrer toda la página por cada botón)
   function piezaBtn(b){
     if (b._pz) return b._pz;
-    var pz = piezaDe(b._t, b._ids); if (pz) return (b._pz = pz);
+    var pz = piezaDe(b._t, b._ids);
+    /* las preguntas de un artículo con cuadro a veces apuntan a la pieza del vecino (p. ej. art. 55 → pieza del 54): si el número no coincide, manda el número */
+    if (pz && b._h){ var n0 = numCab(b._h), D0 = window.EXSUB && window.EXSUB[b._t]; if (n0 && D0 && pz.id.split('-')[1] !== n0){ var g = D0.piezas.filter(function(x){ return x.id === pz.id.split('-')[0] + '-' + n0; })[0]; if (g) return (b._pz = g); } }
+    if (pz) return (b._pz = pz);
     var D = window.EXSUB && window.EXSUB[b._t], u = b._u; if (!D || !u) return null;
     var n = numCab(b._h); if (!n) return null;
     var raiz = u.closest('.ex-cont, .esquema'), clave = u.classList.contains('ex-ficha');
