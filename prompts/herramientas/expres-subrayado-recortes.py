@@ -38,6 +38,7 @@ def encabezados(a, b):
     H2 = []; ult = None
     for k, h in enumerate(H):
         if ult is not None and h[0] == ult: continue          # «15 bis», «15 ter»: dentro del 15
+        if ult is not None and h[0] > ult + 5 and sum(1 for x in H[k + 1:k + 40] if ult < x[0] < h[0]) >= 3: continue   # (p. ej. «3» leído como «23»)
         if ult is not None and h[0] > ult + 30 and any(ult < x[0] < h[0] for x in H[k + 1:]): continue   # número suelto de una cita («ARTÍCULO 294» dentro del texto): detrás vienen otros más bajos y seguidos
         if ult is None or h[0] > ult: H2.append(h); ult = h[0]; continue
         sig = next((x for x in H[k + 1:] if x[0] > ult), None)   # número mal leído (p. ej. «1.» en vez de «13.»): se deduce por el hueco

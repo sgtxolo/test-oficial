@@ -5,7 +5,7 @@ const fs = require('fs'); const T = process.argv[2];
 const inst = JSON.parse(fs.readFileSync(`expres-subrayado/t${T}-instrumentos.json`, 'utf8'));
 global.window = {}; require('../../expres/t' + T + '.js'); const h = window.EXPRES_T[T].html;
 function numeros(t) {
-  const s = t.replace(/^Art[íi]culos?\s+/i, '').split(/\s+—\s+/)[0]; const out = new Set();
+  const s = t.replace(/\s*(?:EXOF|EX|✱|R\d+)(?![\wÁ-ú])/g, '').replace(/^Art[íi]culos?\s+/i, '').split(/\s+—\s+/)[0]; const out = new Set();
   for (const m of s.matchAll(/(\d+)\s*(?:bis|ter|quater)?\s+a\s+(\d+)/gi)) for (let n = +m[1]; n <= +m[2]; n++) out.add(n);
   for (const m of s.replace(/(\d+)\s*(?:bis|ter|quater)?\s+a\s+(\d+)/gi, '').matchAll(/\d+/g)) out.add(+m[0]);
   return [...out];

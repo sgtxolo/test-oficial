@@ -19,7 +19,7 @@ function quitaPlg(s) {   // quita <span class="ex-plg"…>…</span> con anidami
 }
 const hdr = f => ((f.match(/class="ex-fh">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, '');
 function nums(t) {
-  const s = t.replace(/^Art[íi]culos?\s+/i, '').split(/\s+—\s+/)[0], o = new Set();
+  const s = t.replace(/\s*(?:EXOF|EX|✱|R\d+)(?![\wÁ-ú])/g, '').replace(/^Art[íi]culos?\s+/i, '').split(/\s+—\s+/)[0], o = new Set();
   for (const m of s.matchAll(/(\d+)\s*(?:bis|ter|quater)?\s+a\s+(\d+)/gi)) for (let k = +m[1]; k <= +m[2]; k++) o.add(k);
   for (const m of s.replace(/(\d+)\s*(?:bis|ter|quater)?\s+a\s+(\d+)/gi, '').matchAll(/\d+/g)) o.add(+m[0]);
   return [...o];
@@ -30,7 +30,7 @@ for (const p of D.piezas) {
   if (p.fx === undefined) continue; const n = +p.id.split('-')[1], pre = p.id.split('-')[0];
   // también las fichas vecinas del mismo bloque que nombran el artículo (p. ej. «Artículos 7 y 8» y «Artículo 8 bis y artículo 9» para la pieza 8)
   const fxs = [p.fx];
-  for (let k = p.fx - 3; k <= p.fx + 3; k++) if (k !== p.fx && k >= 0 && D.piezas.some(q => q.fx === k && q.id.split('-')[0] === pre) && nums(hdr(ficha(k))).includes(n)) fxs.push(k);
+  for (let k = p.fx - 8; k <= p.fx + 8; k++) if (k !== p.fx && k >= 0 && (D.piezas.some(q => q.fx === k && q.id.split('-')[0] === pre) || !D.piezas.some(q => q.fx === k)) && nums(hdr(ficha(k))).includes(n)) fxs.push(k);   // también «61 bis», «61 ter»… (sin pieza propia: van a la del 61)
   let todo = [];
   for (const k of fxs.sort((a, b) => a - b)) {
     const f = ficha(k), hd = hdr(f);
