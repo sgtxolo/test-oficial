@@ -374,6 +374,9 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', 
 let tema = null, filtro = 'todos', inst = 'todas', marca = null, busca = '', dest = null, destAp = null;
 const key = (t, id) => t + '/' + id;
 // Esquemas (otra pestaña o este mismo marco) añade o devuelve artículos: se recoge al momento
+// Esquemas escribe en el mismo localStorage: antes de sincronizar y al volver a la pestaña se recoge lo suyo, para que un estado viejo en memoria no lo pise
+function recogeEsquemas() { try { const n = JSON.parse(localStorage.getItem(LS) || '{}') || {}; ['inc', 'quit', 'vm', 'esq'].forEach(k => { if (n[k]) st[k] = n[k]; }); } catch (er) {} }
+addEventListener('pageshow', recogeEsquemas); addEventListener('focus', recogeEsquemas); document.addEventListener('visibilitychange', () => { if (!document.hidden) recogeEsquemas(); });
 addEventListener('storage', e => { if (e.key !== LS || !e.newValue) return; try { const n = JSON.parse(e.newValue); st.inc = n.inc || {}; st.quit = n.quit || {}; if (tema !== null) verTema(); } catch (er) {} });
 const hoyISO = (d = new Date()) => new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10);
 const fmtF = iso => iso ? iso.split('-').reverse().join('/') : '';
@@ -1288,7 +1291,7 @@ async function ghLeer() {
 }
 async function sincronizar(manual, soloBajar) {
   if (!hayGh()) { if (manual) panelGh(); return; }
-  if (syncOcupado) return; syncOcupado = true; pintaSync('☁ …', 'Sincronizando…', 'on');
+  if (syncOcupado) return; recogeEsquemas(); syncOcupado = true; pintaSync('☁ …', 'Sincronizando…', 'on');
   try {
     for (let intento = 0; intento < 2; intento++) {
       const rem = await ghLeer(), base = lsObj(GH_BASE), loc = estadoSync(), mez = mezcla3(base, loc, rem.estado);
