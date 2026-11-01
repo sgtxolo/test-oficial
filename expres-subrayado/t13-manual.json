@@ -1,0 +1,43 @@
+{
+ "manual": [
+  {
+   "id": "a-rec",
+   "ficha": "^RECUERDA del temario",
+   "nombre": "LJCA · RECUERDA del temario",
+   "expres": 1,
+   "piezas": [
+    [
+     46,
+     0.04,
+     0.96
+    ],
+    [
+     47,
+     0.04,
+     0.96
+    ],
+    [
+     48,
+     0.04,
+     0.96
+    ],
+    [
+     49,
+     0.04,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "a-46c",
+   "nombre": "LJCA · Cuadro de plazos de interposición (arts. 45 y 46)",
+   "piezas": [
+    [
+     25,
+     0.12,
+     0.93
+    ]
+   ]
+  }
+ ]
+}
