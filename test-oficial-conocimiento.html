@@ -1589,4 +1589,101 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
 })();
 </script>
 
+<script id="script-prob-nota">
+/* ==================== PROBABILIDAD DE CADA PREGUNTA + NOTA ESTIMADA SI EL EXAMEN FUERA HOY ====================
+   - Insignia arriba a la izquierda de cada pregunta: 🔥 cae mucho · 🟡 puede caer · ❄️ poco probable.
+     Mismo criterio que el temario subrayado: marcas EXOF/EX/✱/R del artículo + preguntas oficiales que lo citan
+     (si el tema aún no tiene artículos enlazados, se usan las marcas de la propia pregunta).
+   - Nota estimada: aciertos y repasos de todas tus preguntas, lo no visto se acierta al azar (1/4) y cada fallo resta 1/3. */
+(function(){
+  var NIV = {hot: ['🔥', 'cae mucho'], warm: ['🟡', 'puede caer'], cold: ['❄️', 'poco probable']};
+  var CONTEO = null, PIEZA = {};
+  function conteo(){
+    if (CONTEO) return CONTEO; CONTEO = {};
+    var E = window.EXSUB || {};
+    Object.keys(E).forEach(function(t){
+      var pr = E[t].preg || {}, c = CONTEO[t] = {};
+      Object.keys(pr).forEach(function(q){ if (!/-ia-/.test(q)) c[pr[q]] = (c[pr[q]] || 0) + 1; });
+    });
+    return CONTEO;
+  }
+  function puntosPieza(t, p){
+    var m = p.m || {}, o = (conteo()[t] || {})[p.id] || 0;
+    return 3 * !!m.exof + 2 * !!m.ex + 1 * !!m.ast + .5 * (m.r || []).length + 1.5 * Math.min(o, 4);
+  }
+  window.probPregunta = function(q){
+    var id = String(q.id), t = parseInt(id, 10), E = (window.EXSUB || {})[t];
+    var mk = ((window.MARCAS_PREG || {})[id] || '').split(',');
+    var enlazada = false, s = 3 * (mk.indexOf('EXOF') >= 0) + 2 * (mk.indexOf('EX') >= 0) + 1 * (mk.indexOf('*') >= 0) + (/-ia-/.test(id) ? 0 : 2);
+    if (E && E.preg && E.preg[id]){
+      var k = t + '/' + E.preg[id];
+      if (!(k in PIEZA)) PIEZA[k] = (E.piezas || []).filter(function(x){ return x.id === E.preg[id]; })[0] || null;
+      if (PIEZA[k]){ s = Math.max(s, puntosPieza(t, PIEZA[k])); enlazada = true; }
+    }
+    // con artículo enlazado la escala es mayor (cuenta cuántas preguntas oficiales lo citan): hot ≈ 20 %, warm ≈ 55 %, cold ≈ 25 %
+    return enlazada ? (s >= 9.5 ? 'hot' : s >= 4.5 ? 'warm' : 'cold') : (s >= 5 ? 'hot' : s >= 2 ? 'warm' : 'cold');
+  };
+  var css = document.createElement('style');
+  css.textContent = '.q-prob{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:0;padding:3px 10px;border-radius:999px;margin-left:8px;white-space:nowrap;vertical-align:middle}'
+    + '.q-tema-row .q-tema{display:inline-block;margin-bottom:0}.q-prob.hot{background:#fde1dc;color:#a3281b}.q-prob.warm{background:#fff0c2;color:#7a5b00}.q-prob.cold{background:#e3eef8;color:#2a5b86}'
+    + '.nota-hoy{background:var(--card);border:1.5px solid var(--verde-med);border-radius:18px;padding:16px 18px;margin:14px 0}'
+    + '.nota-hoy .nh-top{display:flex;align-items:center;gap:16px}.nota-hoy .nh-num{font-size:40px;font-weight:800;color:var(--verde-med);line-height:1}.nota-hoy .nh-num small{font-size:16px;font-weight:700;opacity:.7}'
+    + '.nota-hoy h4{margin:0;font-size:15px}.nota-hoy p{margin:3px 0 0;font-size:12.5px;opacity:.75;line-height:1.45}'
+    + '.nota-hoy .nh-t{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:12px}.nota-hoy .nh-t span{flex:0 0 38%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.nota-hoy .nh-b{flex:1;height:7px;border-radius:5px;background:var(--card-alt);overflow:hidden}.nota-hoy .nh-b i{display:block;height:100%;background:var(--verde-med)}'
+    + '.nota-hoy .nh-ver{margin-top:12px;font-size:12.5px;font-weight:700;color:var(--verde-med);cursor:pointer;background:none;border:0;padding:0}';
+  document.head.appendChild(css);
+
+  window.notaSiHoy = function(){
+    var temas = [], vistas = 0, total = 0, suma = 0;
+    TEMARIO.forEach(function(T){
+      var qs = todasPreguntasDe(T.id); if (!qs.length) return;
+      var s = 0, v = 0;
+      qs.forEach(function(q){
+        var st = statsDe(q.id); if (!(st.vistas > 0)) return; v++;
+        var ac = (st.vistas - st.falladas) / st.vistas;
+        s += st.ultimaCorrecta ? .5 + .5 * ac : .5 * ac;
+      });
+      var d = s / qs.length; vistas += v; total += qs.length; suma += d;
+      temas.push({id: T.id, nombre: temaNombre(T), d: d, v: v, tot: qs.length});
+    });
+    if (!temas.length || !vistas) return null;
+    var d = suma / temas.length, acc = d + (1 - d) * .25;
+    return {nota: Math.max(0, 10 * (acc - (1 - acc) / 3)), pct: Math.round(d * 100), temas: temas, vistas: vistas, total: total,
+            temasConDatos: temas.filter(function(t){ return t.v >= 1; }).length, totalTemas: temas.length};
+  };
+  window.notaEstimada = function(){ return window.notaSiHoy(); };
+
+  function tarjetaNota(){
+    var r = window.notaSiHoy();
+    if (!r) return '<div class="nota-hoy"><div class="nh-top"><div class="nh-num">–</div><div><h4>📈 Nota estimada si el examen fuera hoy</h4><p>Responde algunos tests y aquí verás tu nota aproximada (con la penalización de los fallos).</p></div></div></div>';
+    var peores = r.temas.filter(function(t){ return t.v >= 1; }).sort(function(a, b){ return a.d - b.d; }).slice(0, 3);
+    return '<div class="nota-hoy"><div class="nh-top"><div class="nh-num">' + r.nota.toFixed(1).replace('.', ',') + '<small>/10</small></div><div><h4>📈 Nota estimada si el examen fuera hoy</h4>'
+      + '<p>Con lo que has respondido (' + r.pct + ' % dominado, ' + r.vistas + ' de ' + r.total + ' preguntas vistas en ' + r.temasConDatos + ' de ' + r.totalTemas + ' temas). Lo no visto cuenta como azar y cada fallo resta 1/3.</p></div></div>'
+      + (peores.length ? '<div style="margin-top:10px;font-size:11.5px;font-weight:700;opacity:.7;letter-spacing:.5px">TUS TEMAS MÁS FLOJOS</div>' + peores.map(function(t){ var p = Math.round(t.d * 100); return '<div class="nh-t"><span>' + t.nombre + '</span><div class="nh-b"><i style="width:' + p + '%"></i></div><b>' + p + ' %</b></div>'; }).join('') : '')
+      + '<button type="button" class="nh-ver" onclick="goScreen(\'refuerzo\')">Ver temas a reforzar →</button></div>';
+  }
+  function ponTarjeta(id, ancla, donde){
+    var el = document.getElementById(id);
+    if (!el){ var a = document.querySelector(ancla); if (!a) return; el = document.createElement('div'); el.id = id; a.insertAdjacentElement(donde, el); }
+    el.innerHTML = tarjetaNota();
+  }
+  function insignia(){
+    try {
+      var e = testActivo, q = e && e.preguntas[e.idx], t = document.querySelector('#q-wrap .q-tema'); if (!q || !t) return;
+      var old = t.parentNode.querySelector('.q-prob'); if (old) old.remove();
+      var n = window.probPregunta(q), N = NIV[n];
+      t.insertAdjacentHTML('afterend', '<span class="q-prob ' + n + '" title="Probabilidad de que caiga en el examen según las marcas de tu temario y las preguntas oficiales">' + N[0] + ' ' + N[1] + '</span>');
+    } catch (err) { console.error(err); }
+  }
+  var pp0 = pintarPregunta;
+  pintarPregunta = function(){ pp0.apply(this, arguments); insignia(); };
+  var ri0 = renderInicio;
+  renderInicio = function(){ ri0.apply(this, arguments); try { ponTarjeta('nota-hoy-inicio', '#screen-inicio .row-cards', 'afterend'); } catch (err) { console.error(err); } };
+  var gs0 = goScreen;
+  goScreen = function(e){
+    gs0.apply(this, arguments);
+    try { if (e === 'actividad') ponTarjeta('nota-hoy-act', '#screen-actividad .subscreen-head', 'afterend'); } catch (err) { console.error(err); }
+  };
+})();
+</script>
 </body></html>
