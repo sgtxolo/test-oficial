@@ -21,14 +21,23 @@ function numeros(t) {
   return [...out];
 }
 global.window = {}; require('../../expres/t' + T + '.js'); const h = window.EXPRES_T[T].html;
-const ids = new Set(ix.map(p => p.id)), preg = {}, enEx = new Set(), marcas = {}, fichas = []; let cur = null, ixCur = -1, fi = -1; const fx = {};
+const faltan = {}, ids = new Set(ix.map(p => p.id)), preg = {}, enEx = new Set(), marcas = {}, fichas = []; let cur = null, ixCur = -1, fi = -1; const fx = {};
 const limpia = t => t.replace(/\s*(EXOF|EX|✱|R\d+)(?![\wÁ-ú])/g, '').replace(/\s*[·.]\s*$/, '').replace(/\s+/g, ' ').trim();
+// preguntas de una ficha (o bloque): a la pieza del último «Artículo N» / «Art. N» que las precede (líneas «Artículo 31 — …» y cuadros «Art. 32 · …»);
+// antes de la primera etiqueta van a «primera» (la 1.ª pieza de la ficha). Si ese artículo no tiene pieza NO se manda al primero de la ficha (sería de otro artículo):
+// se anota en «faltan» (hay que añadirlo a tN-extra.json) y lo resuelven las reglas de más abajo
+// --estricto: las preguntas de un artículo sin pieza quedan sin enlazar (hay que añadir el artículo a tN-extra.json); sin él van a la 1.ª pieza de la ficha como antes
+const ESTRICTO = process.argv.includes('--estricto');
+const enlazaEtiquetas = (f, primera) => { let lab = null; for (const m of f.matchAll(/<div class="ex-linea">(?:(?!<\/div>|data-q=)[\s\S])*?Art[íi]culo(?:<\/[a-z]+>)?\s+(\d+)|<div class="vis-t">(?:(?!<\/div>|data-q=)[\s\S])*?Art\.\s*(\d+)|data-q="([^"]+)"/g)) {
+    if (m[1] || m[2]) { lab = +(m[1] || m[2]); continue; }
+    m[3].split(/[ ,;|]+/).forEach(q => { if (!q || preg[q]) return; const pz = lab !== null ? (ids.has(cur + '-' + lab) ? cur + '-' + lab : null) : primera;
+      if (pz) preg[q] = pz; else if (lab !== null) { faltan[cur + '-' + lab] = (faltan[cur + '-' + lab] || 0) + 1; if (!ESTRICTO && primera) preg[q] = primera; } }); } };
 const trozos = h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha(?: ex-of)?">)/);
 for (const f of trozos) {
   const t = ((f.match(/(?:ex-fh|bloque-titulo)">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, '');
   if (/^ANEXO/.test(t)) break;
   const k = inst.findIndex((i, j) => j > ixCur && i.inicio && new RegExp(i.inicio).test(t)); if (k >= 0) { ixCur = k; cur = inst[k].id; }
-  if (!/^<div class="ex-ficha(?: ex-of)?">/.test(f)) continue;
+  if (!/^<div class="ex-ficha(?: ex-of)?">/.test(f)) { if (cur) enlazaEtiquetas(f, null); continue; }
   fi++;                                   // nº de ficha dentro del Exprés (para sacar su texto al imprimir)
   if (!cur) continue;
   const num = numeros(t); fichas.push({ t: limpia(t), cur, num });
@@ -62,7 +71,7 @@ for (const f of trozos) {
     if (propia && !hayRp && p === piezas[0] && rsTit.length) marcas[p].r = [...new Set([...(marcas[p].r || []), ...rsTit])].sort((a, b) => a - b);   // ficha R del título sin párrafo concreto: va al primer artículo
   });
   if (hayPorArt) pars.forEach(x => { const pz = x.art !== null && piezas.includes(cur + '-' + x.art) ? cur + '-' + x.art : null; if (pz) for (const m of x.pm[2].matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (q && !preg[q]) preg[q] = pz; }); });
-  for (const m of f.matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (!preg[q]) preg[q] = piezas[0]; });
+  enlazaEtiquetas(f, piezas[0]);
 }
 ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) p.extra = 1; if (marcas[p.id] && Object.keys(marcas[p.id]).length) p.m = marcas[p.id]; });
 // piezas a mano (preámbulos, protocolos…) con «ficha»: regex del título de su ficha del Exprés → también tienen versión Exprés
@@ -95,6 +104,26 @@ try {
 // primera pregunta de cada artículo: sirve para saltar desde aquí a la ficha de Esquemas (esquemas.html#q=<id>&ex=1)
 // preguntas ancladas a mano / por el mapa de Esquemas a una pieza: expres-subrayado/tN-preg-extra.json {id: pieza} (no pisa lo ya enlazado)
 { const pe = `expres-subrayado/t${T}-preg-extra.json`; if (fs.existsSync(pe)) { const E = JSON.parse(fs.readFileSync(pe, 'utf8')); for (const [q, p] of Object.entries(E)) if (!preg[q] && ids.has(p)) preg[q] = p; } }
+if (Object.keys(faltan).length) console.log('  ⚠ preguntas de artículos SIN pieza (añadir a tN-extra.json):', Object.entries(faltan).map(([k, n]) => k + ' (' + n + ')').join(', '));
+// Revisión por la explicación: una pregunta enlazada a «Artículo N» cuya explicación cita OTRO artículo (de una norma con pieza) y no el N se pasa a ese artículo
+// (Esquemas agrupa por texto de respuesta —«tres meses», «seis meses»— y mete en un artículo preguntas de otros). Solo si cita UN único artículo con pieza.
+// A mano: expres-subrayado/tN-preg-mover.json {id: pieza} (fuerza la pieza) y tN-preg-fijas.json [id,…] (no se tocan).
+{ const th = fs.readFileSync('test-oficial-conocimiento.html', 'utf8'), expl = {}, fijas = new Set(fs.existsSync(`expres-subrayado/t${T}-preg-fijas.json`) ? JSON.parse(fs.readFileSync(`expres-subrayado/t${T}-preg-fijas.json`, 'utf8')) : []);
+  for (const mm of th.matchAll(new RegExp('\\{"id":"(' + T + '-[^"]+)","pregunta":"(?:[^"\\\\]|\\\\.)*","opciones"[\\s\\S]{0,3000}?"explicacion":"((?:[^"\\\\]|\\\\.)*)"', 'g'))) expl[mm[1]] = mm[2].replace(/<[^>]+>/g, ' ');
+  const leyes = inst.filter(i => i.paginas), otras = /Constituci|\bCE\b|C[óo]digo|Tratado|Reglamento|Real Decreto|LECrim|Directiva|Convenio|Carta/;
+  let movidas = 0; const sinCambio = [];
+  for (const q of Object.keys(preg)) {
+    if (fijas.has(q) || !expl[q]) continue; const m0 = preg[q].match(/^([a-z]+)-(\d+)$/); if (!m0) continue;
+    const cand = new Set();
+    for (const x of expl[q].matchAll(/\bart(?:ículo|\.|s\.)\s*(\d+)(?:\.\d+)?([^.;]{0,70})/gi)) {
+      let ley = leyes.find(i => i.cit && new RegExp(i.cit, 'i').test(x[2])); if (!ley && leyes.length === 1 && !otras.test(x[2])) ley = leyes[0];
+      if (ley && ids.has(ley.id + '-' + x[1])) cand.add(ley.id + '-' + x[1]);
+    }
+    if (cand.has(preg[q]) || !cand.size) continue;
+    if (cand.size === 1) { preg[q] = [...cand][0]; movidas++; } else sinCambio.push(q);
+  }
+  { const pm = `expres-subrayado/t${T}-preg-mover.json`; if (fs.existsSync(pm)) for (const [q, p] of Object.entries(JSON.parse(fs.readFileSync(pm, 'utf8')))) if (ids.has(p)) preg[q] = p; }
+  if (movidas) console.log('  preguntas pasadas al artículo que cita su explicación:', movidas, sinCambio.length ? '(' + sinCambio.length + ' citan varios artículos y se dejan)' : ''); }
 const primera = {}; for (const q in preg) if (!primera[preg[q]]) primera[preg[q]] = q; ix.forEach(p => { if (primera[p.id]) p.q1 = primera[p.id]; });
 // ---- cuadros (esquemas visuales) de visuales-tN.js, tomados ya montados de esquemas.html ----
 const cuadros = {}, sinPieza = [];
