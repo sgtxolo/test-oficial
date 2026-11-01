@@ -623,13 +623,17 @@ function cmpDiv(p, a, b, cl, i) {
   return partes(p, a, b).map(([y0, y1]) => { const hh = y1 - y0; return hh < 2 ? '' : '<div class="cmpb' + cl + '"' + (i !== undefined ? ' data-a="hfij" data-h="' + i + '" title="Toca para quitar este trozo de tu subrayado"' : '') + ' data-ya="' + y0 + '" data-yb="' + y1 + '" style="aspect-ratio:' + W + '/' + hh + ';background-image:url(&quot;' + src + '&quot;);background-position:0 ' + (tot > hh ? y0 / (tot - hh) * 100 : 0) + '%">' + capaTrozo(p, y0, y1) + '</div>'; }).join('');
 }
 function capaTrozo(p, y0, y1) { const vk = key(tema, p.id) + '/e'; return '<svg class="ov" data-mk="' + vk + '" viewBox="0 ' + y0 + ' ' + p.wh[0] + ' ' + (y1 - y0) + '" preserveAspectRatio="none">' + (st.marks[vk] || []).map(mHTML).join('') + '</svg>'; }
+// Une trozos y «(…)»: un «(…)» solo se queda si tiene algo visible antes y después (si cortaste lo de un lado, la franja desaparece) y no se repite
+function unirTrozos(it) { let o = '', vis = false, g = null;
+  it.forEach(x => { if (x.g) { if (vis && g === null) g = x.h; return; } if (!x.h) return; if (g !== null) { o += g; g = null; } o += x.h; vis = true; });
+  return o; }
 function compuesto(p) {
   const b = BL()[p.id], ad = (st.add || {})[key(tema, p.id)] || []; if (!b || !ad.length) return null;
-  let h = '', ult = -2;
+  const it = []; let ult = -2;
   b.forEach((x, i) => { if (!(x[3] || ad.includes(i))) return; if (x[1] - x[0] < 2) return;
-    if (ult >= 0 && i !== ult + 1) h += '<div class="gapb">(…)</div>';
-    h += cmpDiv(p, x[0], x[1], '', undefined); ult = i; });
-  return h;
+    if (ult >= 0 && i !== ult + 1) it.push({g: 1, h: '<div class="gapb">(…)</div>'});
+    it.push({h: cmpDiv(p, x[0], x[1], '', undefined)}); ult = i; });
+  return unirTrozos(it);
 }
 // «(…)» tocable: p.tr = tramos del recorte (px de la captura entera); el hueco i queda entre el tramo i y el i+1 (solo si el recorte le puso franja «(…)»)
 const huecos = p => { const o = []; (p.tr || []).forEach((x, i, a) => { if (i && x[0] - a[i - 1][1] > 8) o.push({i: i - 1, a: a[i - 1][1], b: x[0]}); }); return o; };
@@ -637,12 +641,13 @@ const fijados = k => (((st.fij || {})[k]) || []);
 const PREV = {};   // (…) abiertos solo para mirar (✓ los fija, ✕ los vuelve a ocultar); no se guardan
 function compuestoFij(p, imp) {   // recorte con los huecos que has fijado abiertos (atenuados) y el resto con su «(…)» tocable
   const k = key(tema, p.id), fj = fijados(k), pv = imp ? [] : (PREV[k] || []); if (!p.tr || !(fj.length || pv.length)) return null;
-  const hs = huecos(p); let h = '';
-  p.tr.forEach((x, i) => { h += cmpDiv(p, x[0], x[1], '', undefined);
+  const hs = huecos(p); const it = [];
+  p.tr.forEach((x, i) => { it.push({h: cmpDiv(p, x[0], x[1], '', undefined)});
     const g = hs.find(y => y.i === i); if (!g) return;
-    h += fj.includes(g.i) ? cmpDiv(p, g.a, g.b, ' fj', undefined) + (imp ? '' : '<div class="hbar fijo"><span>✓ En tu subrayado</span><button class="hno" data-a="hno" data-h="' + g.i + '" title="Quitar de tu subrayado y ocultar">✕</button></div>')
-      : pv.includes(g.i) ? cmpDiv(p, g.a, g.b, ' fj pv', undefined) + '<div class="hbar"><button class="hok" data-a="hok" data-h="' + g.i + '" title="Me gusta: añadirlo a tu subrayado">✓ Me gusta</button><button class="hno" data-a="hno" data-h="' + g.i + '" title="Ocultarlo otra vez">✕</button></div>' : '<button class="gapb tg" data-a="hfij" data-h="' + g.i + '" title="Toca para ver este trozo y fijarlo en tu subrayado">(…)</button>'; });
-  return h;
+    const ab = cl => { const c = cmpDiv(p, g.a, g.b, cl, undefined); return c; };
+    it.push(fj.includes(g.i) ? {h: ab(' fj') && ab(' fj') + (imp ? '' : '<div class="hbar fijo"><span>✓ En tu subrayado</span><button class="hno" data-a="hno" data-h="' + g.i + '" title="Quitar de tu subrayado y ocultar">✕</button></div>')}
+      : pv.includes(g.i) ? {h: cmpDiv(p, g.a, g.b, ' fj pv', undefined) + '<div class="hbar"><button class="hok" data-a="hok" data-h="' + g.i + '" title="Me gusta: añadirlo a tu subrayado">✓ Me gusta</button><button class="hno" data-a="hno" data-h="' + g.i + '" title="Ocultarlo otra vez">✕</button></div>'} : {g: 1, h: '<button class="gapb tg" data-a="hfij" data-h="' + g.i + '" title="Toca para ver este trozo y fijarlo en tu subrayado">(…)</button>'}); });
+  return unirTrozos(it);
 }
 function puntosHueco(p, wh) {   // zonas tocables sobre las franjas «(…)» de la imagen recortada
   const hs = huecos(p); if (!hs.length || !wh) return ''; let y = 0, h = ''; const tot = wh[1];

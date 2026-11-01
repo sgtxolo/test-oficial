@@ -98,15 +98,19 @@ window.MEJORAS2 = function () {
       const H = b - a, svg = document.createElementNS(NS, 'svg');
       svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); svg.setAttribute('preserveAspectRatio', 'none'); svg.setAttribute('class', 'cutsv'); el.style.position = 'relative'; el.appendChild(svg);
       piezas.push({svg, el, a, b});
-      svg.addEventListener('pointerdown', e => { if (c.classList.contains('cutmano')) return; const y = absY(e.clientY); dib = {y0: y, y1: y, cx: e.clientX, cy: e.clientY, ly: e.clientY}; svg.setPointerCapture(e.pointerId); e.preventDefault(); cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); pintaTodo(); });
-      svg.addEventListener('pointermove', e => { if (!dib) return; dib.ly = e.clientY; dib.y1 = absY(e.clientY); pintaTodo(); });
+    };
+    /* los eventos van en el contenedor entero: así también se puede empezar, cruzar o acabar el arrastre sobre una franja «(…)» */
+    {
+      w.addEventListener('pointerdown', e => { if (c.classList.contains('cutmano') || e.button > 0) return; const y = absY(e.clientY); dib = {y0: y, y1: y, cx: e.clientX, cy: e.clientY, ly: e.clientY}; w.setPointerCapture(e.pointerId); e.preventDefault(); cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); pintaTodo(); });
+      w.addEventListener('pointermove', e => { if (!dib) return; dib.ly = e.clientY; dib.y1 = absY(e.clientY); pintaTodo(); });
+      w.addEventListener('click', e => { if (!c.classList.contains('cutmano')) { e.stopPropagation(); e.preventDefault(); } }, true);   // en modo recorte las franjas «(…)» no se abren al tocarlas
       const fin = e => {
         if (!dib) return; cancelAnimationFrame(raf); const y0 = Math.round(Math.min(dib.y0, dib.y1)), y1 = Math.round(Math.max(dib.y0, dib.y1)), mov = Math.hypot(e.clientX - dib.cx, e.clientY - dib.cy); dib = null;
         if (mov < 5) { const i = st.cort[K].findIndex(x => y0 >= x[0] && y0 <= x[1]); if (i >= 0) st.cort[K].splice(i, 1); } else if (y1 - y0 >= 8) { st.cort[K].push([Math.max(0, y0), Math.min(H0, y1)]); fusiona(); }
         guarda(); pintaTodo();
       };
-      svg.addEventListener('pointerup', fin); svg.addEventListener('pointercancel', fin);
-    };
+      w.addEventListener('pointerup', fin); w.addEventListener('pointercancel', fin);
+    }
     if (comp) w.querySelectorAll('.cmpb[data-ya]').forEach(el => capa(el, +el.dataset.ya, +el.dataset.yb)); else capa(w, 0, H0);
     pintas.push(pintaTodo); pintaTodo();
     bar.addEventListener('click', e => {
