@@ -61,6 +61,7 @@ const F = [
   ['15-279', q => { q.correcta = 0; return ['La Oficina Judicial comunicará la Resolución, con carácter inmediato y dentro del plazo máximo de 24 horas, a las FFCCS territorialmente competentes', 'El plazo máximo es de 24 horas.']; }],
   ...require('./fix-t15-nuevas.js')({ O, ex }),
   ...require('./fix-t15-lote2.js')({ O, ex }),
+  ...require('./fix-t15-lote3.js')({ O, ex }),
 ];
 // ---------- aplicación ----------
 let s = fs.readFileSync(FILE, 'utf8'), n = 0; const malas = [], imgs = [];
@@ -69,9 +70,9 @@ for (const [id, fn] of F) {
   let d = 0, inS = false, esc = false, j = i;
   for (; j < s.length; j++) { const c = s[j]; if (inS) { if (esc) esc = false; else if (c === BS) esc = true; else if (c === '"') inS = false; continue; } if (c === '"') inS = true; else if (c === '{') d++; else if (c === '}') { d--; if (d === 0) break; } }
   const q = JSON.parse(s.slice(i, j + 1));
-  const [cita, extra, modo] = fn(q);
+  const [cita, extra, modo, art] = fn(q);
   if (modo === 'img') imgs.push(id); else if (!OFN.includes(nz(cita))) { malas.push(id); continue; }
-  q.explicacion = ex(q, lab(cita), cita, extra);
+  q.explicacion = ex(q, art || lab(cita), cita, extra);
   s = s.slice(0, i) + JSON.stringify(q) + s.slice(j + 1); n++;
 }
 if (imgs.length) console.log('(citas verificadas contra la imagen de mi PDF, no literales en oficial.txt):', imgs.join(', '));
