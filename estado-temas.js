@@ -12,7 +12,7 @@
   const rd = (k, d) => { try { return JSON.parse(localStorage.getItem(k) || 'null') || d; } catch (e) { return d; } };
   const wr = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
   const b64 = s => btoa(unescape(encodeURIComponent(s))), unb64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
-  let ad = null, tmrCambio = 0, tmrSync = 0, ocupado = false, aplicando = false;
+  let snap = {}, ad = null, tmrCambio = 0, tmrSync = 0, ocupado = false, aplicando = false;
   const canon = e => { e = (ad && ad.canon ? ad.canon(e) : e) || ''; return e === 'olvidado' ? 'estudiado' : e; };
   const igual = (a, b) => { const x = a || {e: '', f: ''}, y = b || {e: '', f: ''}; if (!canon(x.e) && !canon(y.e)) return true; return canon(x.e) === canon(y.e) && (x.f || '') === (y.f || ''); };
   const tsDe = f => { const t = Date.parse(f || ''); return isFinite(t) ? t : 1; };
@@ -29,18 +29,20 @@
     });
     if (sucio) wr(K, s);
     if (aplicado && ad.refrescar) { try { ad.refrescar(); } catch (e) {} }
+    snap = ad.leer() || {};
     if (sucio) agendaSync();
   }
 
-  /* cambio hecho por la persona en esta app: lo de aquí pasa a ser lo más nuevo */
+  /* cambio hecho por la persona en esta app: SOLO lo que ha cambiado respecto a lo último que vio esta página (nunca se deduce un borrado de que falte algo) */
   function cambio() {
     if (!ad || aplicando) return;
     const s = rd(K, {}), loc = ad.leer() || {}; let sucio = false;
-    new Set([...Object.keys(s), ...Object.keys(loc)]).forEach(n => {
-      const lv = loc[n] && loc[n].e ? loc[n] : null, sv = s[n] || null;
-      if (igual(lv, sv)) return;
+    new Set([...Object.keys(snap), ...Object.keys(loc)]).forEach(n => {
+      const lv = loc[n] && loc[n].e ? loc[n] : null, antes = snap[n] && snap[n].e ? snap[n] : null, sv = s[n] || null;
+      if (igual(lv, antes) || igual(lv, sv)) return;
       s[n] = lv ? {e: lv.e, f: lv.f, t: Date.now()} : {e: '', f: '', t: Date.now()}; sucio = true;
     });
+    snap = loc;
     if (sucio) { wr(K, s); agendaSync(); }
   }
 
@@ -80,7 +82,7 @@
 
   window.EstadoTemas = {
     init(a) {
-      ad = a; reconcilia();
+      ad = a; reconcilia(); snap = ad.leer() || {};
       const org = Storage.prototype.setItem;
       Storage.prototype.setItem = function (k, v) { const r = org.apply(this, arguments); if (this === localStorage && k === ad.clave && !aplicando) { clearTimeout(tmrCambio); tmrCambio = setTimeout(cambio, 60); } return r; };
       addEventListener('storage', e => { if (e.key === K) reconcilia(); });
