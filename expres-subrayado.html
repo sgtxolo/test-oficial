@@ -383,7 +383,7 @@ const fmtF = iso => iso ? iso.split('-').reverse().join('/') : '';
 const diasHasta = iso => Math.round((new Date(iso + 'T00:00:00') - new Date(hoyISO() + 'T00:00:00')) / 864e5);
 // ---------- datos derivados ----------
 const inv = {}; for (const t in D) { inv[t] = {}; for (const q in D[t].preg) (inv[t][D[t].preg[q]] = inv[t][D[t].preg[q]] || []).push(q); }
-const quitado = (t, id) => !!(st.quit || {})[key(t, id)];   // artículos que has quitado de tu temario (se pueden devolver)
+const quitado = (t, id) => (st.quit || {})[key(t, id)] > 0;   // artículos que has quitado de tu temario (se pueden devolver)
 // «📑➕ Añadir a mi subrayado» (desde Esquemas, completo o Exprés): mete en tu temario un artículo que estaba fuera (ESQ, tachado, fuera del Exprés)
 const anadidoP = (t, p) => !!p.extra && !!(st.inc || {})[key(t, p.id)];
 const fueraP = (t, p) => !!p.extra && !anadidoP(t, p);
@@ -734,7 +734,7 @@ $('#m').addEventListener('click', e => {
   if (a === 'hfij') { const i = +(e.target.closest('[data-h]').dataset.h), l = ((st.fij = st.fij || {})[k] = st.fij[k] || []), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); return; }
   if (a === 'addx') { st.add[k] = []; recarga(); }
   if (a === 'esq') { st.esq[k] = st.esq[k] ? 0 : 1; recarga(); }
-  if (a === 'quit') { const pz0 = D[tema].piezas.find(x => x.id === id); if (pz0 && anadidoP(tema, pz0)) { st.inc[k] = 0; aviso('↩️ Artículo fuera otra vez de tu subrayado'); recarga(); return; } st.quit = st.quit || {}; if (st.quit[k]) { st.quit[k] = 0; aviso('↩️ Artículo devuelto'); } else { st.quit[k] = 1; aviso('🗑️ Artículo quitado (lo encuentras en «Quitados»)'); } if (!D[tema].piezas.some(x => quitado(tema, x.id))) st.verQuit = false; recarga(); return; }
+  if (a === 'quit') { const pz0 = D[tema].piezas.find(x => x.id === id); if (pz0 && anadidoP(tema, pz0)) { st.inc[k] = 0; aviso('↩️ Artículo fuera otra vez de tu subrayado'); recarga(); return; } st.quit = st.quit || {}; if (st.quit[k] > 0) { st.quit[k] = -Date.now(); aviso('↩️ Artículo devuelto'); } else { st.quit[k] = 1; aviso('🗑️ Artículo quitado (lo encuentras en «Quitados»)'); } if (!D[tema].piezas.some(x => quitado(tema, x.id))) st.verQuit = false; recarga(); return; }
   if (a === 'pin') { st.pin[tema] = st.pin[tema] === id ? null : id; aviso(st.pin[tema] ? '📍 Te quedarás aquí' : 'Marca quitada'); recarga(); botonPin(); }
   if (a === 'nota') { st.notaAb = st.notaAb === k ? null : k; if (st.nota[k] === undefined) st.nota[k] = ''; recarga(); const ta = document.querySelector('[data-n="' + k + '"]'); if (ta) ta.focus(); }
   if (a === 'prac') { const qs = (inv[tema][id] || []).slice(0, 60).join(','), v = location.pathname.split('/').pop() + '#t=' + tema + '&p=' + id; location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(qs) + '&v=' + encodeURIComponent(v); }
