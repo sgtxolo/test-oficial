@@ -8,7 +8,7 @@ from difflib import SequenceMatcher
 from PIL import Image, ImageDraw, ImageFont
 T = os.environ.get('TEMA', '11'); S = os.environ.get('SCRATCH', 'C:/Users/ruben/AppData/Local/Temp/')
 B = 'C:/Users/ruben/Desktop/HTML OFICIAL/'
-PDF = {'1': 'TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf', '14': 'TEMA 14 DEFENSOR DEL PUEBLO-2026-08-08.pdf', '3': 'TEMA 3 TRATADOS DE LA UNION EUROPEA-08-08-2026.pdf', '8': 'TEMA 8 PODER  JUDICIAL-08-08-2026.pdf', '9': 'TEMA 9 DERECHO CIVIL-08-08-2026.pdf', '12': 'TEMA 12 - GOBIERNO Y ADMINISTRACION-2026-08-08.pdf', '7': 'TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf', '11': 'TEMA 11 DERECHO ADEMINISTRATIVO-08-08-2026.pdf'}
+PDF = {'2': 'TEMA 2 TERRORISMO INTERNACIONA-08-08-2026-.pdf', '6': 'TEMA 6 EXTRANJERIA -08-08-2026.pdf', '10': 'TEMA 10 DERECHO CIVIL-08-08-2026.pdf', '13': 'TEMA 13 JURISDICCION CONTENCIOSO ADMINISTRATIVA-2026-08-08 .pdf', '16': 'TEMA 16 IGUALDAD MUJERES Y HOMBRES-2026-08-08.pdf', '1': 'TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf', '14': 'TEMA 14 DEFENSOR DEL PUEBLO-2026-08-08.pdf', '3': 'TEMA 3 TRATADOS DE LA UNION EUROPEA-08-08-2026.pdf', '8': 'TEMA 8 PODER  JUDICIAL-08-08-2026.pdf', '9': 'TEMA 9 DERECHO CIVIL-08-08-2026.pdf', '12': 'TEMA 12 - GOBIERNO Y ADMINISTRACION-2026-08-08.pdf', '7': 'TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf', '11': 'TEMA 11 DERECHO ADEMINISTRATIVO-08-08-2026.pdf'}
 d = pymupdf.open('C:/Users/ruben/Desktop/OFICIAL 2026-27/TEMARIO ESCANEADO 2026-27/' + PDF[T]); DPI = 130; K = DPI / 72
 cfg = json.load(open(B + f'expres-subrayado/t{T}-config.json', encoding='utf-8'))
 ind = {e['id']: e for e in json.load(open(B + f'expres-subrayado/img/t{T}/indice.json', encoding='utf-8'))}
