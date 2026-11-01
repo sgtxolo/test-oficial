@@ -81,21 +81,34 @@ window.MEJORAS2 = function () {
     bar.innerHTML = '<button class="ib on" data-cl="ok">✓ Listo</button><button class="ib" data-cl="mano" title="Mover la página con el dedo sin dibujar">✋</button><button class="ib" data-cl="undo" title="Deshacer el último corte">↶</button><button class="ib" data-cl="todo" title="Devolver todo lo quitado">Restaurar todo</button>'
       + '<small>Arrastra un cuadro sobre lo que no quieres, directamente en el artículo (también en los trozos que has añadido). Toca una franja roja para devolverla.</small>';
     w.parentNode.insertBefore(bar, w);
+    /* Un solo arrastre sirve para toda la página: cada trozo (o la foto entera) lleva su capa, pero el cuadro se calcula en
+       coordenadas de la foto, así que puede cruzar los (…) y los trozos; al acercarte al borde de la pantalla la página se desplaza sola. */
+    const piezas = []; let dib = null, raf = 0;
+    const absY = cy => { for (const z of piezas) { const r = z.el.getBoundingClientRect(); if (r.height && cy >= r.top && cy <= r.bottom) return z.a + (cy - r.top) / r.height * (z.b - z.a); }
+      let d = 1e9, y = 0; piezas.forEach(z => { const r = z.el.getBoundingClientRect(); [[r.top, z.a], [r.bottom, z.b]].forEach(([e, v]) => { const dd = Math.abs(cy - e); if (dd < d) { d = dd; y = v; } }); }); return y; };
+    const pintaTodo = () => piezas.forEach(z => { const a = z.a, b = z.b, W2 = W;
+      let h = st.cort[K].map(([c0, c1]) => { const y0 = Math.max(c0, a) - a, y1 = Math.min(c1, b) - a; return y1 - y0 > 0 ? '<rect x="0" y="' + y0 + '" width="' + W2 + '" height="' + (y1 - y0) + '" fill="rgba(210,40,40,.38)" stroke="#c0392b" stroke-width="3" stroke-dasharray="14 8"/>' : ''; }).join('');
+      if (dib) { const lo = Math.max(Math.min(dib.y0, dib.y1), a), hi = Math.min(Math.max(dib.y0, dib.y1), b); if (hi > lo) h += '<rect x="0" y="' + (lo - a) + '" width="' + W2 + '" height="' + (hi - lo) + '" fill="rgba(30,102,208,.25)" stroke="#1e66d0" stroke-width="3"/>'; }
+      z.svg.innerHTML = h; });
+    const scroller = el => { for (let n = el.parentElement; n && n !== document.body; n = n.parentElement) { const o = getComputedStyle(n).overflowY; if ((o === 'auto' || o === 'scroll') && n.scrollHeight > n.clientHeight + 4) return n; } return window; };
+    const tick = () => { if (!dib) return; const sc = scroller(w), top = sc === window ? 0 : sc.getBoundingClientRect().top, bot = sc === window ? innerHeight : sc.getBoundingClientRect().bottom; let v = 0;
+      if (dib.ly < top + 80) v = -Math.min(34, (top + 80 - dib.ly) / 2.5); else if (dib.ly > bot - 80) v = Math.min(34, (dib.ly - (bot - 80)) / 2.5);
+      if (v) { sc.scrollBy(0, v); dib.y1 = absY(dib.ly); pintaTodo(); } raf = requestAnimationFrame(tick); };
     const capa = (el, a, b) => {
-      const H = b - a, svg = document.createElementNS(NS, 'svg'); let dib = null;
+      const H = b - a, svg = document.createElementNS(NS, 'svg');
       svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); svg.setAttribute('preserveAspectRatio', 'none'); svg.setAttribute('class', 'cutsv'); el.style.position = 'relative'; el.appendChild(svg);
-      const pinta = () => { svg.innerHTML = st.cort[K].map(([c0, c1]) => { const y0 = Math.max(c0, a) - a, y1 = Math.min(c1, b) - a; return y1 - y0 > 0 ? '<rect x="0" y="' + y0 + '" width="' + W + '" height="' + (y1 - y0) + '" fill="rgba(210,40,40,.38)" stroke="#c0392b" stroke-width="3" stroke-dasharray="14 8"/>' : ''; }).join('')
-        + (dib ? '<rect x="' + dib[0] + '" y="' + Math.min(dib[1], dib[3]) + '" width="' + Math.abs(dib[2] - dib[0]) + '" height="' + Math.abs(dib[3] - dib[1]) + '" fill="rgba(30,102,208,.25)" stroke="#1e66d0" stroke-width="3"/>' : ''); };
-      svg.addEventListener('pointerdown', e => { if (c.classList.contains('cutmano')) return; const q = ptSvg(e, svg); dib = [q[0], q[1], q[0], q[1]]; svg.setPointerCapture(e.pointerId); e.preventDefault(); pinta(); });
-      svg.addEventListener('pointermove', e => { if (!dib) return; const q = ptSvg(e, svg); dib[2] = q[0]; dib[3] = q[1]; pinta(); });
-      svg.addEventListener('pointerup', e => {
-        if (!dib) return; const q = ptSvg(e, svg), y0 = Math.round(Math.max(0, Math.min(dib[1], q[1]))), y1 = Math.round(Math.min(H, Math.max(dib[1], q[1]))), mov = Math.abs(q[0] - dib[0]) + (y1 - y0); dib = null;
-        if (mov < 14) { const i = st.cort[K].findIndex(x => a + q[1] >= x[0] && a + q[1] <= x[1]); if (i >= 0) st.cort[K].splice(i, 1); } else if (y1 - y0 >= 8) { st.cort[K].push([a + y0, a + y1]); fusiona(); }
-        guarda(); pintas.forEach(f => f());
-      });
-      pintas.push(pinta); pinta();
+      piezas.push({svg, el, a, b});
+      svg.addEventListener('pointerdown', e => { if (c.classList.contains('cutmano')) return; const y = absY(e.clientY); dib = {y0: y, y1: y, cx: e.clientX, cy: e.clientY, ly: e.clientY}; svg.setPointerCapture(e.pointerId); e.preventDefault(); cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); pintaTodo(); });
+      svg.addEventListener('pointermove', e => { if (!dib) return; dib.ly = e.clientY; dib.y1 = absY(e.clientY); pintaTodo(); });
+      const fin = e => {
+        if (!dib) return; cancelAnimationFrame(raf); const y0 = Math.round(Math.min(dib.y0, dib.y1)), y1 = Math.round(Math.max(dib.y0, dib.y1)), mov = Math.hypot(e.clientX - dib.cx, e.clientY - dib.cy); dib = null;
+        if (mov < 5) { const i = st.cort[K].findIndex(x => y0 >= x[0] && y0 <= x[1]); if (i >= 0) st.cort[K].splice(i, 1); } else if (y1 - y0 >= 8) { st.cort[K].push([Math.max(0, y0), Math.min(H0, y1)]); fusiona(); }
+        guarda(); pintaTodo();
+      };
+      svg.addEventListener('pointerup', fin); svg.addEventListener('pointercancel', fin);
     };
     if (comp) w.querySelectorAll('.cmpb[data-ya]').forEach(el => capa(el, +el.dataset.ya, +el.dataset.yb)); else capa(w, 0, H0);
+    pintas.push(pintaTodo); pintaTodo();
     bar.addEventListener('click', e => {
       const b = e.target.closest('[data-cl]'); if (!b) return; const x = b.dataset.cl;
       if (x === 'mano') { c.classList.toggle('cutmano'); b.classList.toggle('on', c.classList.contains('cutmano')); }
@@ -117,8 +130,11 @@ window.MEJORAS2 = function () {
     const pinta = () => { svg.innerHTML = st.cort[K].map((b, i) => '<g data-i="' + i + '"><rect x="0" y="' + b[0] + '" width="' + W + '" height="' + (b[1] - b[0]) + '" fill="rgba(210,40,40,.38)" stroke="#c0392b" stroke-width="3" stroke-dasharray="14 8"/></g>').join('') + (dib ? '<rect x="' + dib[0] + '" y="' + Math.min(dib[1], dib[3]) + '" width="' + Math.abs(dib[2] - dib[0]) + '" height="' + Math.abs(dib[3] - dib[1]) + '" fill="rgba(30,102,208,.25)" stroke="#1e66d0" stroke-width="3"/>' : ''); };
     const fusiona = () => { const o = st.cort[K].slice().sort((a, b) => a[0] - b[0]), r = []; o.forEach(b => { const u = r[r.length - 1]; if (u && b[0] <= u[1] + 2) u[1] = Math.max(u[1], b[1]); else r.push(b.slice()); }); st.cort[K] = r; };
     svg.addEventListener('pointerdown', e => { if (mano) return; const q = ptSvg(e, svg); dib = [q[0], q[1], q[0], q[1]]; svg.setPointerCapture(e.pointerId); e.preventDefault(); pinta(); });
-    svg.addEventListener('pointermove', e => { if (!dib) return; const q = ptSvg(e, svg); dib[2] = q[0]; dib[3] = q[1]; pinta(); });
+    let ly = 0, lx = 0, raf = 0; const sc = ed.querySelector('.ce-s');   // al acercarte al borde, la página se desplaza sola mientras arrastras
+    const tick = () => { if (!dib) return; const r = sc.getBoundingClientRect(); let v = 0; if (ly < r.top + 80) v = -Math.min(34, (r.top + 80 - ly) / 2.5); else if (ly > r.bottom - 80) v = Math.min(34, (ly - (r.bottom - 80)) / 2.5); if (v){ sc.scrollTop += v; const q = ptSvg({clientX: lx, clientY: ly}, svg); dib[2] = q[0]; dib[3] = q[1]; pinta(); } raf = requestAnimationFrame(tick); };
+    svg.addEventListener('pointermove', e => { if (!dib) return; lx = e.clientX; ly = e.clientY; if (!raf) raf = requestAnimationFrame(tick); const q = ptSvg(e, svg); dib[2] = q[0]; dib[3] = q[1]; pinta(); });
     svg.addEventListener('pointerup', e => {
+      cancelAnimationFrame(raf); raf = 0;
       if (!dib) return; const q = ptSvg(e, svg), y0 = Math.round(Math.max(0, Math.min(dib[1], q[1]))), y1 = Math.round(Math.min(H, Math.max(dib[1], q[1]))), mov = Math.abs(q[0] - dib[0]) + (y1 - y0); dib = null;
       if (mov < 14) { const i = st.cort[K].findIndex(b => q[1] >= b[0] && q[1] <= b[1]); if (i >= 0) st.cort[K].splice(i, 1); } else if (y1 - y0 >= 8) { st.cort[K].push([y0, y1]); fusiona(); }
       guarda(); pinta();
