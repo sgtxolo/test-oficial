@@ -13,7 +13,7 @@
   const wr = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
   const b64 = s => btoa(unescape(encodeURIComponent(s))), unb64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
   let ad = null, tmrCambio = 0, tmrSync = 0, ocupado = false, aplicando = false;
-  const canon = e => (ad && ad.canon ? ad.canon(e) : e) || '';
+  const canon = e => { e = (ad && ad.canon ? ad.canon(e) : e) || ''; return e === 'olvidado' ? 'estudiado' : e; };
   const igual = (a, b) => { const x = a || {e: '', f: ''}, y = b || {e: '', f: ''}; if (!canon(x.e) && !canon(y.e)) return true; return canon(x.e) === canon(y.e) && (x.f || '') === (y.f || ''); };
   const tsDe = f => { const t = Date.parse(f || ''); return isFinite(t) ? t : 1; };
 
