@@ -18,8 +18,9 @@ window.MEJORAS = function () {
   // ---------- datos de cada artículo ----------
   const quizS = () => { try { return leerStats(); } catch (e) { return {}; } };
   const ofic = (t, p) => (inv[t][p.id] || []).filter(q => !/-ia-/.test(q)).length;
-  const puntos = (t, p) => { const m = p.m || {}; return 3 * !!m.exof + 2 * !!m.ex + 1 * !!m.ast + .5 * (m.r || []).length + 1.5 * Math.min(ofic(t, p), 4); };
-  const nivel = (t, p) => { const s = puntos(t, p); return s >= 5 ? 'hot' : s >= 2 ? 'warm' : 'cold'; };
+  const iaN = (t, p) => (inv[t][p.id] || []).filter(q => /-ia-/.test(q)).length;
+  const puntos = (t, p) => { const m = p.m || {}; return 3 * !!m.exof + 2 * !!m.ex + 1 * !!m.ast + .5 * (m.r || []).length + 1.5 * Math.min(ofic(t, p), 4) + .2 * Math.min(iaN(t, p), 10); };
+  const nivel = (t, p) => { const s = puntos(t, p); return s >= 5 ? 'hot' : (s >= 2 || ofic(t, p) >= 1) ? 'warm' : 'cold'; };   // una oficial enlazada ya es «puede caer»; las IA suman .2 cada una (tope 2)
   const NIV = {hot: '🔥 cae mucho', warm: '🟡 puede caer', cold: '❄️ poco probable'};
   const memDe = (t, p) => st.mem[key(t, p.id)];
   const debe = (t, p) => { const m = memDe(t, p); return !!(m && m.d <= hoy()); };
