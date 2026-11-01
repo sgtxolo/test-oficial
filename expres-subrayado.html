@@ -506,7 +506,7 @@ $('#mod').addEventListener('change', e => {
   if (e.target.id === 'cm-a' || e.target.id === 'cm-b') comparar($('#cm-a').value, $('#cm-b').value);
 });
 // ---------- control de estudio de cada tema (como en Esquemas: estudiando / estudiado / lo olvidé) ----------
-const PASOS = [1, 3, 7, 15, 30, 60];
+const PASOS = [20];   // igual que Esquemas: el repaso de un tema toca 20 días después de estudiarlo
 // f = fecha (AAAA-MM-DD) en la que de verdad terminaste de estudiar o repasar el tema; si no se da, hoy.
 const masDias = (iso, n) => { const d = new Date(iso + 'T00:00:00'); d.setDate(d.getDate() + n); return hoyISO(d); };
 function ponEstado(n, e, f) {
@@ -1320,6 +1320,7 @@ entra();
 /* Estado de los temas compartido con Esquemas (ver estado-temas.js). Aquí: st.temas[N] = {e, desde, ultimo, olvido, prox, n} */
 (function(){
   if (!window.EstadoTemas) return;
+  for (const n in st.temas) { const t = st.temas[n]; if (t && t.e === 'estudiado' && t.ultimo) t.prox = masDias(t.ultimo, 20); }
   window.EstadoTemas.init({
     clave: LS,
     leer() { const o = {}; for (const n in st.temas) { const t = st.temas[n]; if (!t || !t.e) continue; o[n] = {e: t.e, f: (t.e === 'estudiando' ? t.desde : t.e === 'estudiado' ? t.ultimo : t.olvido) || ''}; } return o; },
