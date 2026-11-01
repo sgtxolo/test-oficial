@@ -537,36 +537,6 @@
   ]
  },
  {
-  "id": "a-45",
-  "nombre": "LJCA (Ley 29/1998) · Artículo 45",
-  "img": "a-45.jpg",
-  "imgr": "a-45-r.jpg",
-  "ap": [
-   1,
-   3,
-   4,
-   5
-  ],
-  "wh": [
-   1075,
-   1165
-  ],
-  "whr": [
-   1075,
-   1005
-  ],
-  "tr": [
-   [
-    0,
-    127
-   ],
-   [
-    181,
-    1029
-   ]
-  ]
- },
- {
   "id": "a-47",
   "nombre": "LJCA (Ley 29/1998) · Artículo 47",
   "img": "a-47.jpg",
@@ -1066,9 +1036,9 @@
   ]
  },
  {
-  "id": "a-46c",
-  "nombre": "LJCA · Cuadro de plazos de interposición (arts. 45 y 46)",
-  "img": "a-46c.jpg",
+  "id": "a-45",
+  "nombre": "LJCA · Artículos 45 y 46 (esquema)",
+  "img": "a-45.jpg",
   "wh": [
    1075,
    1232
