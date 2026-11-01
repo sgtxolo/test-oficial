@@ -746,18 +746,19 @@ function repaso() { vlista = [...document.querySelectorAll('.card')].map(c => c.
 // Modo lectura: pestañas «Subrayado» (tu captura, sin los márgenes en blanco para que se lea más grande, con tus marcas), «Exprés» (el texto del Exprés
 // de Esquemas, grande y con tamaño ajustable; los (…) se pueden abrir) y «Esquema» (los cuadros). Se cambia de artículo con las flechas o deslizando.
 const RB = {};   // límites del texto de cada captura (para quitar los márgenes en blanco)
-function recorteBlanco(img, caja) {
-  const aplica = b => { const w = Math.max(.35, b[1] - b[0]); caja.style.width = (100 / w) + '%'; caja.style.marginLeft = (-b[0] / w * 100) + '%'; };
-  if (RB[img.src]) return aplica(RB[img.src]);
-  const pre = (window.RBPRE || {})[decodeURI(img.src).split('/img/').pop().replace('.jpg', '')]; if (pre) return aplica(RB[img.src] = pre);   // calculado de antemano: en file:// el canvas no deja leer los píxeles
+function limitesBlanco(img) {   // fracción [izq, der] de la foto que contiene texto; null si no se puede medir
+  if (RB[img.src]) return RB[img.src];
+  const pre = (window.RBPRE || {})[decodeURI(img.src).split('/img/').pop().replace('.jpg', '')]; if (pre) return RB[img.src] = pre;   // calculado de antemano: en file:// el canvas no deja leer los píxeles
   try {
     const W = 360, H = Math.max(1, Math.round(img.naturalHeight * W / img.naturalWidth)), c = document.createElement('canvas'); c.width = W; c.height = H;
     const cx = c.getContext('2d', {willReadFrequently: true}); cx.drawImage(img, 0, 0, W, H); const d = cx.getImageData(0, 0, W, H).data, col = new Array(W).fill(0);
     for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { const i = (y * W + x) * 4; if (d[i] < 150 && d[i + 1] < 150 && d[i + 2] < 150) col[x]++; }
     let a = 0, b = W - 1; const u = Math.max(2, H * .012); while (a < W && col[a] < u) a++; while (b > a && col[b] < u) b--;
-    const pad = .02, fr = [Math.max(0, a / W - pad), Math.min(1, (b + 1) / W + pad)]; if (fr[1] - fr[0] < .5 || fr[1] - fr[0] > .98) return; RB[img.src] = fr; aplica(fr);
-  } catch (e) { /* imagen de otro origen o sin datos: se deja entera */ }
+    const pad = .02, fr = [Math.max(0, a / W - pad), Math.min(1, (b + 1) / W + pad)]; if (fr[1] - fr[0] < .5 || fr[1] - fr[0] > .98) return null; return RB[img.src] = fr;
+  } catch (e) { return null; /* imagen de otro origen o sin datos: se deja entera */ }
 }
+function aplicaRecorte(caja, b) { const w = Math.max(.35, b[1] - b[0]); caja.style.width = (100 / w) + '%'; caja.style.marginLeft = (-b[0] / w * 100) + '%'; }
+function recorteBlanco(img, caja) { const b = limitesBlanco(img); if (b) aplicaRecorte(caja, b); }
 function modoLect(p) { const hay = {s: true, x: p.fx !== undefined, e: !!((C[tema] || {})[p.id] || []).length}; return hay[st.vmodo] ? st.vmodo : 's'; }
 function pintaVisor() {
   const id = vlista[vi], p = D[tema].piezas.find(x => x.id === id), k = key(tema, id), v = $('#vis'), modo = modoLect(p), cu = (C[tema] || {})[id] || [];
@@ -1237,7 +1238,9 @@ async function lanzaImp() {
   }
   if (!n) { aviso('No has elegido nada para imprimir'); return; }
   await Promise.all([...z.querySelectorAll('img')].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
-  z.querySelectorAll('.pbox .imgw').forEach(c => { const im = c.querySelector('img'); if (im && im.naturalWidth) recorteBlanco(im, c); });   // quita el margen blanco de los lados: la letra sale más grande
+  // quita el margen blanco de los lados con UN SOLO recorte para todas las fotos (el más ancho): todos los artículos salen al mismo tamaño y alineados
+  const cajas = [...z.querySelectorAll('.pbox .imgw')].filter(c => { const im = c.querySelector('img'); return im && im.naturalWidth; }), lims = cajas.map(c => limitesBlanco(c.querySelector('img'))).filter(Boolean);
+  if (lims.length) { const comun = [Math.min(...lims.map(b => b[0])), Math.max(...lims.map(b => b[1]))]; cajas.forEach(c => aplicaRecorte(c, comun)); }
   rebanar(z, t);
   const tema0 = document.documentElement.dataset.theme; document.documentElement.dataset.theme = 'light';
   let hecho = false; const fin = () => { if (hecho) return; hecho = true; document.documentElement.dataset.theme = tema0; z.innerHTML = ''; removeEventListener('afterprint', fin); };
