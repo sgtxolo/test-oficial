@@ -144,7 +144,10 @@ input[type=date],input[type=text].f,select.f{font:inherit;border:1.5px solid var
 .tag.revok{background:#e1f2e7;color:#1f6b45;border:1px solid #57a683}.tag.revpend{background:#fff1dc;color:#9a5a10;border:1px solid #d9a35a}
 .hsg{position:absolute;left:0;right:0;z-index:3;border:0;background:rgba(47,107,82,.0);cursor:pointer;padding:0;font-size:0}.hsg:hover,.hsg:focus-visible{background:rgba(47,107,82,.22);outline:2px dashed #2f6b52}
 .gapb.tg{cursor:pointer;border:0;width:100%;font-family:inherit}.gapb.tg:hover{background:rgba(47,107,82,.22);color:#2f6b52}
-.cmpb.fj{opacity:.62;outline:2px dashed #2f6b52;outline-offset:-2px;cursor:pointer}.fjn{font-size:12px;color:#2f6b52;margin:2px 0 6px}
+.cmpb.fj{opacity:.62;outline:2px dashed #2f6b52;outline-offset:-2px;cursor:pointer}.cmpb.pv{outline-style:dotted}.hbar{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin:3px 0 6px;font-size:13px}.hbar span{color:#2f6b52;font-weight:700}
+.hbar button{cursor:pointer;font:700 13px system-ui,sans-serif;border:1.5px solid #8a8f98;background:#fff;color:#555;border-radius:999px;padding:3px 12px}.hbar .hok{border-color:#2e9c4d;color:#2e9c4d}.hbar .hok:hover{background:#2e9c4d;color:#fff}.hbar .hno:hover{background:#d1332a;border-color:#d1332a;color:#fff}
+@media print{.hbar{display:none!important}}
+.fjn{font-size:12px;color:#2f6b52;margin:2px 0 6px}
 .cmpb{position:relative;width:100%;background-repeat:no-repeat;background-size:100% auto}.gapb{line-height:1;text-align:center;color:#7a808a;font-weight:700;padding:3px 0;background:rgba(120,126,136,.1);font-size:13px}
 .addp{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0;font-size:12.5px}.addp b{font-weight:700}.addp .chip.on{background:#2f6b52;color:#fff}.addn{font-size:12px;color:#7a808a;margin:2px 0 6px}
 .cmpb svg.ov{overflow:hidden}
@@ -631,12 +634,14 @@ function compuesto(p) {
 // «(…)» tocable: p.tr = tramos del recorte (px de la captura entera); el hueco i queda entre el tramo i y el i+1 (solo si el recorte le puso franja «(…)»)
 const huecos = p => { const o = []; (p.tr || []).forEach((x, i, a) => { if (i && x[0] - a[i - 1][1] > 8) o.push({i: i - 1, a: a[i - 1][1], b: x[0]}); }); return o; };
 const fijados = k => (((st.fij || {})[k]) || []);
-function compuestoFij(p) {   // recorte con los huecos que has fijado abiertos (atenuados) y el resto con su «(…)» tocable
-  const k = key(tema, p.id), fj = fijados(k); if (!p.tr || !fj.length) return null;
+const PREV = {};   // (…) abiertos solo para mirar (✓ los fija, ✕ los vuelve a ocultar); no se guardan
+function compuestoFij(p, imp) {   // recorte con los huecos que has fijado abiertos (atenuados) y el resto con su «(…)» tocable
+  const k = key(tema, p.id), fj = fijados(k), pv = imp ? [] : (PREV[k] || []); if (!p.tr || !(fj.length || pv.length)) return null;
   const hs = huecos(p); let h = '';
   p.tr.forEach((x, i) => { h += cmpDiv(p, x[0], x[1], '', undefined);
     const g = hs.find(y => y.i === i); if (!g) return;
-    h += fj.includes(g.i) ? cmpDiv(p, g.a, g.b, ' fj', g.i) : '<button class="gapb tg" data-a="hfij" data-h="' + g.i + '" title="Toca para ver este trozo y fijarlo en tu subrayado">(…)</button>'; });
+    h += fj.includes(g.i) ? cmpDiv(p, g.a, g.b, ' fj', undefined) + (imp ? '' : '<div class="hbar fijo"><span>✓ En tu subrayado</span><button class="hno" data-a="hno" data-h="' + g.i + '" title="Quitar de tu subrayado y ocultar">✕</button></div>')
+      : pv.includes(g.i) ? cmpDiv(p, g.a, g.b, ' fj pv', undefined) + '<div class="hbar"><button class="hok" data-a="hok" data-h="' + g.i + '" title="Me gusta: añadirlo a tu subrayado">✓ Me gusta</button><button class="hno" data-a="hno" data-h="' + g.i + '" title="Ocultarlo otra vez">✕</button></div>' : '<button class="gapb tg" data-a="hfij" data-h="' + g.i + '" title="Toca para ver este trozo y fijarlo en tu subrayado">(…)</button>'; });
   return h;
 }
 function puntosHueco(p, wh) {   // zonas tocables sobre las franjas «(…)» de la imagen recortada
@@ -677,7 +682,7 @@ function lista() {
       + (p.q1 ? '<a class="sb" target="_top" href="esquemas.html#q=' + encodeURIComponent(p.q1) + '&ex=1" title="Ver este artículo en el Exprés de Esquemas">⚡<span class="lb"> En Esquemas</span></a>' : '') + '</div>'
       + selector(p, k)
       + (st.notaAb === k ? '<textarea class="nota" data-n="' + k + '" placeholder="Tu nota sobre este artículo…">' + esc(st.nota[k] || '') + '</textarea>' : (st.nota[k] ? '<div class="nota" style="min-height:0;white-space:pre-wrap">' + esc(st.nota[k]) + '</div>' : ''))
-      + (st.modoEsq && cu.length ? '' : (!ent && p.imgr && compuesto(p)) ? '<div class="imgw">' + compuesto(p) + '</div>' : (!ent && p.imgr && compuestoFij(p)) ? '<div class="imgw">' + compuestoFij(p) + '</div><div class="fjn">Lo atenuado con borde verde es lo que has fijado: tócalo para quitarlo. Tus marcas se guardan en el artículo entero.</div>' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + (!ent && p.imgr ? puntosHueco(p, wh) : '') + '</div>')
+      + (st.modoEsq && cu.length ? '' : (!ent && p.imgr && compuesto(p)) ? '<div class="imgw">' + compuesto(p) + '</div>' : (!ent && p.imgr && compuestoFij(p)) ? '<div class="imgw">' + compuestoFij(p) + '</div><div class="fjn">Toca un (…) para verlo: ✓ Me gusta lo deja en tu subrayado y ✕ lo oculta otra vez. Tus marcas se guardan en el artículo entero.</div>' : '<div class="imgw"><img' + lazy + ' src="' + src + '"' + (wh ? ' style="aspect-ratio:' + wh.join('/') + '"' : '') + ' alt="' + esc(p.nombre) + '" data-z="1">' + capaMarcas(key(t, p.id) + '/' + (ent || !p.imgr ? 'e' : 'r'), wh) + (!ent && p.imgr ? puntosHueco(p, wh) : '') + '</div>')
       + (abreEsq && cu.length ? '<div class="esqs"><div class="esq-t">🧩 Esquema de este artículo</div>' + cu.map(x => x.h).join('') + '</div>' : '') + '</div>'; });
   return h;
 }
@@ -731,7 +736,10 @@ $('#m').addEventListener('click', e => {
   if (a === 'ent') { const v = e.target.closest('[data-v]').dataset.v, pz = D[tema].piezas.find(x => x.id === id); if (pz && entera(pz) === (v === 'f')) return; st.ver = st.ver || {}; st.ver[k] = v; st.ent[k] = 0; if (dest === id) destAp = null; recarga(); }
   if (a === 'add') { st.addAb = st.addAb === k ? null : k; recarga(); }
   if (a === 'addb') { const i = +e.target.dataset.i, l = anade(k), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); }
-  if (a === 'hfij') { const i = +(e.target.closest('[data-h]').dataset.h), l = ((st.fij = st.fij || {})[k] = st.fij[k] || []), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); return; }
+  if (a === 'hfij') { const i = +(e.target.closest('[data-h]').dataset.h), l = (PREV[k] = PREV[k] || []), j = l.indexOf(i); if (j < 0) l.push(i); else l.splice(j, 1); recarga(); return; }
+  if (a === 'hok' || a === 'hno') { const i = +(e.target.closest('[data-h]').dataset.h), f = ((st.fij = st.fij || {})[k] = st.fij[k] || []), v = PREV[k] = (PREV[k] || []).filter(x => x !== i);
+    const j = f.indexOf(i); if (a === 'hok') { if (j < 0) f.push(i); } else if (j >= 0) f.splice(j, 1); recarga(); return; }
+  if (false) { return; }
   if (a === 'addx') { st.add[k] = []; recarga(); }
   if (a === 'esq') { st.esq[k] = st.esq[k] ? 0 : 1; recarga(); }
   if (a === 'quit') { const pz0 = D[tema].piezas.find(x => x.id === id); if (pz0 && anadidoP(tema, pz0)) { st.inc[k] = 0; aviso('↩️ Artículo fuera otra vez de tu subrayado'); recarga(); return; } st.quit = st.quit || {}; if (st.quit[k] > 0) { st.quit[k] = -Date.now(); aviso('↩️ Artículo devuelto'); } else { st.quit[k] = 1; aviso('🗑️ Artículo quitado (lo encuentras en «Quitados»)'); } if (!D[tema].piezas.some(x => quitado(tema, x.id))) st.verQuit = false; recarga(); return; }
@@ -1230,7 +1238,7 @@ async function lanzaImp() {
     const fj = s.s && recImp(p) && p.tr && fijados(key(t, p.id)).length ? await imgFij(p) : null;   // recorte con los «(…)» que has fijado abiertos
     const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; const usaFj = rec && fj; w.innerHTML = '<img src="' + (usaFj ? fj : D[t].dir + (rec ? p.imgr : p.img)) + '">' + (usaFj ? '' : capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh)); const pb = document.createElement('div'); pb.className = 'pbox'; if (!usaFj) pb.dataset.cx = (rec ? p.imgr : p.img).replace('.jpg', ''); else pb.dataset.cr = p.img.replace('.jpg', ''); pb.appendChild(w); div.appendChild(pb); n++; };
     const nCort = nom => (((st.cort || {})[t + '/' + nom.replace('.jpg', '')]) || []).length;   // tus ✂️ se guardan con la foto sobre la que los dibujaste (entera o recortada)
-    const cmp = s.s && recImp(p) ? (compuesto(p) || compuestoFij(p)) : null;   // recorte a medida (Exprés + trozos añadidos + huecos abiertos), con tus ✂️, tal como lo ves en pantalla
+    const cmp = s.s && recImp(p) ? (compuesto(p) || compuestoFij(p, true)) : null;   // recorte a medida (Exprés + trozos añadidos + huecos abiertos), con tus ✂️, tal como lo ves en pantalla
     if (cmp) { await new Promise(r => { const i = new Image(); i.onload = i.onerror = r; i.src = D[t].dir + p.img; });   // la foto va de fondo: que esté cargada antes de imprimir
       const w = document.createElement('div'); w.className = 'imgw'; w.innerHTML = cmp.replace(/cmpb fj/g, 'cmpb').replace(/ data-a="hfij"/g, ''); const pb = document.createElement('div'); pb.className = 'pbox'; pb.dataset.cr = p.img.replace('.jpg', ''); pb.appendChild(w); div.appendChild(pb); n++; }
     else if (s.s) imagen(recImp(p) && !(!nCort(p.imgr) && nCort(p.img)));
