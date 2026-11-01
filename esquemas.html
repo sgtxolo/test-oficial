@@ -7915,5 +7915,193 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
   pon();
 })();
 </script>
+<script id="script-dashboard">
+/* ==================== INICIO · DASHBOARD DE ESQUEMAS ====================
+   Pantalla de inicio (se abre sola al entrar, salvo que vengas de un enlace; botón «🏠 Inicio» para volver).
+   Solo LEE lo que ya guardan las demás partes: 'esquemas-fichas', 'esquemas-repaso', 'esquemas-ultima', 'esquemas-examen'
+   y las estadísticas del test de conocimientos ('oficialAppState_v1'). No escribe nada salvo la fecha del examen ('esquemas-examen'). */
+(function(){
+  if (document.body.classList.contains('embed')) return;
+  var DIA = 86400000, KT = 'oficialAppState_v1';
+  function rd(k, d){ try { return JSON.parse(localStorage.getItem(k) || 'null') || d; } catch (e) { return d; } }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
+  function hoyN(){ var d = new Date(); return Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / DIA); }
+  function aN(s){ var p = String(s).slice(0, 10).split('-'); return Math.floor(Date.UTC(+p[0], +p[1] - 1, +p[2]) / DIA); }
+  function iso(d){ return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+  function bonito(t){ var s = t.replace(/^\s*TEMA\s*\d+\s*\.?\s*-?\s*/i, '').trim().toLowerCase(); return s.charAt(0).toUpperCase() + s.slice(1); }
+  var INT = [20];
+
+  var css = document.createElement('style');
+  css.textContent = [
+    '.ds-ov{position:fixed;inset:0;z-index:99990;background:var(--fondo);overflow:auto;display:none;-webkit-overflow-scrolling:touch}.ds-ov.on{display:block}',
+    '.ds{max-width:1100px;margin:0 auto;padding:16px 16px 60px;font-family:var(--fuente);color:var(--texto)}',
+    '.ds-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.ds-top h1{font-size:22px}',
+    '.ds-top .ds-x{border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:20px;padding:8px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer}',
+    '.ds-hero{background:linear-gradient(135deg,#1c4d3c,#2f6b52);color:#fff;border-radius:22px;padding:22px 22px 18px}.ds-hero h2{color:#fff;font-size:24px}.ds-hero p{opacity:.88;margin-top:4px;font-size:14px}',
+    '.ds-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}.ds-st{background:rgba(255,255,255,.14);border-radius:14px;padding:12px 14px}.ds-st b{display:block;font-size:26px;line-height:1.1}.ds-st span{font-size:12.5px;opacity:.88}',
+    '.ds-bar{height:8px;border-radius:6px;background:rgba(255,255,255,.2);overflow:hidden;margin-top:14px}.ds-bar i{display:block;height:100%;background:#7fd9ac;border-radius:6px}',
+    '.ds-sec{margin:22px 4px 8px;font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--texto-gris);font-family:var(--fuente)}',
+    '.ds-cont{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--examen-bg);border:1.5px solid var(--examen-borde);border-radius:16px;padding:14px 16px;margin-top:12px}.ds-cont b{display:block;font-size:16px}.ds-cont span{font-size:13px;color:var(--examen-txt)}',
+    '.ds-btn{border:0;background:var(--verde);color:#fff;border-radius:12px;padding:10px 16px;font:inherit;font-size:14px;font-weight:800;cursor:pointer;white-space:nowrap}.ds-btn.sec{background:transparent;color:var(--verde-med);border:1.5px solid var(--verde-med)}',
+    '.ds-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}',
+    '.ds-card{background:var(--panel);border:1px solid var(--borde);border-radius:16px;padding:14px 16px}.ds-card h3{font-size:16px;margin-bottom:6px}.ds-card p{font-size:13px;color:var(--texto-gris);line-height:1.45}',
+    '.ds-nota{border:1.5px solid var(--verde-med);background:var(--verde-suave)}.ds-nota .n{font-size:42px;font-weight:800;color:var(--verde-med);line-height:1}.ds-nota .n small{font-size:16px;opacity:.7}',
+    '.ds-fila{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:12.5px}.ds-fila span{flex:0 0 40%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ds-fila .b{flex:1;height:7px;border-radius:5px;background:var(--panel-alt);overflow:hidden}.ds-fila .b i{display:block;height:100%;background:var(--verde-med)}',
+    '.ds-hoy{display:flex;align-items:center;gap:10px;padding:9px 10px;border:1px solid var(--borde);border-radius:12px;margin-top:8px;cursor:pointer;background:var(--panel)}.ds-hoy b{flex:1;font-size:14px}.ds-hoy small{display:block;font-weight:400;color:var(--texto-gris);font-size:12px;margin-top:2px}',
+    '.ds-hoy.tarde{border-color:#d33;background:rgba(220,50,50,.07)}.ds-hoy.hoy{border-color:var(--examen-borde);background:var(--examen-bg)}',
+    '.ds-acc{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}.ds-a{background:var(--panel);border:1px solid var(--borde);border-radius:14px;padding:14px 10px;text-align:center;font:inherit;font-size:14px;font-weight:700;color:var(--texto);cursor:pointer;text-decoration:none;display:block}.ds-a:hover{border-color:var(--verde-med)}.ds-a i{display:block;font-style:normal;font-size:24px;margin-bottom:4px}',
+    '.ds-fil{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}.ds-fil input{flex:1;min-width:180px;border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:12px;padding:9px 12px;font:inherit;font-size:14px}',
+    '.ds-chip{border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:18px;padding:7px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}.ds-chip.on{background:var(--verde);border-color:var(--verde);color:#fff}',
+    '.ds-temas{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}',
+    '.ds-t{background:var(--panel);border:1px solid var(--borde);border-radius:16px;padding:14px 16px;cursor:pointer}.ds-t:hover{border-color:var(--verde-med)}.ds-t .nu{display:inline-block;background:var(--verde-suave);color:var(--verde-osc);border-radius:10px;padding:2px 10px;font-size:12.5px;font-weight:800}',
+    '.ds-t h4{margin:8px 0 6px;font-size:16px;font-family:var(--fuente);color:var(--texto);line-height:1.25}.ds-t .m{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12.5px;color:var(--texto-gris);margin-top:4px}',
+    '.ds-t .br{height:7px;border-radius:5px;background:var(--panel-alt);overflow:hidden;margin-top:8px}.ds-t .br i{display:block;height:100%;background:var(--verde-med)}.ds-t .br.q i{background:#d89b2a}',
+    '.ds-t .est{display:inline-block;font-size:11.5px;font-weight:800;border-radius:10px;padding:2px 9px;margin-left:6px;background:var(--panel-alt);color:var(--texto-gris)}.ds-t .est.tarde{background:#fde1dc;color:#a3281b}.ds-t .est.hoy{background:#fff0c2;color:#7a5b00}.ds-t .est.estu{background:#e2dafc;color:#4a2f9c}',
+    '.ds-t .pr{margin-top:8px;font-size:12.5px;font-weight:800;color:var(--verde-med);text-decoration:none;display:inline-block}',
+    '.ds-ex{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.ds-ex input{border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:10px;padding:7px 10px;font:inherit}',
+    '@media (max-width:700px){.ds-stats{grid-template-columns:1fr 1fr}.ds-2{grid-template-columns:1fr}.ds-hero{padding:16px}.ds-temas{grid-template-columns:1fr}.ds-cont{flex-direction:column;align-items:flex-start}}',
+    '@media print{.ds-ov{display:none!important}}'
+  ].join('\n');
+  document.head.appendChild(css);
+
+  var ov = document.createElement('div'); ov.className = 'ds-ov'; ov.id = 'ds-ov'; document.body.appendChild(ov);
+  var filtro = 'todos', busca = '';
+
+  function totQ(){
+    if (totQ.c) return totQ.c; var c = totQ.c = {};
+    Object.keys(window.MAPA_PREG || {}).forEach(function(k){ var t = parseInt(k, 10); c[t] = (c[t] || 0) + 1; });
+    return c;
+  }
+  function temas(){
+    return Array.prototype.map.call(document.querySelectorAll('.tema-nav-item'), function(n){
+      return {id: n.dataset.target, n: parseInt(String(n.dataset.target).replace(/\D/g, ''), 10), nombre: bonito(n.textContent)};
+    });
+  }
+  function datos(){
+    var rep = rd('esquemas-repaso', {}), fich = rd('esquemas-fichas', {}), ult = rd('esquemas-ultima', {}), h = hoyN();
+    var S = rd(KT, {}), qs = S.qStats || {}, tq = totQ(), COB = window.COBERTURA || {};
+    var ok = {}, rp = {}, vis = {}, sum = {}, fall = {};
+    Object.keys(fich).forEach(function(k){ var t = k.split('|')[0]; if (fich[k] === 'ok') ok[t] = (ok[t] || 0) + 1; else if (fich[k] === 'rep') rp[t] = (rp[t] || 0) + 1; });
+    Object.keys(qs).forEach(function(id){
+      var s = qs[id], t = parseInt(id, 10); if (!(s && s.vistas > 0)) return;
+      vis[t] = (vis[t] || 0) + 1; var ac = (s.vistas - s.falladas) / s.vistas; sum[t] = (sum[t] || 0) + (s.ultimaCorrecta ? .5 + .5 * ac : .5 * ac);
+      if (s.ultimaCorrecta === false) (fall[t] = fall[t] || []).push(id);
+    });
+    return temas().map(function(t){
+      var es = document.getElementById(t.id), total = es && !es.dataset.lazy ? es.querySelectorAll('.articulo').length : ((COB[t.n] || {}).esquema || 0);
+      var r = rep[t.id], dif = null; if (r && !r.est) dif = aN(r.last) + INT[Math.min(r.st || 0, INT.length - 1)] - h;
+      var nq = Math.max(tq[t.n] || 0, vis[t.n] || 0), v = vis[t.n] || 0, d = v ? (sum[t.n] || 0) / v * Math.min(1, v / Math.min(nq, 200)) : 0;   // nivel en lo visto × cuánto del tema has visto (con 200 preguntas vistas se da por demostrado)
+      return {id: t.id, n: t.n, nombre: t.nombre, total: total, ok: Math.min(ok[t.id] || 0, total || 9e9), rp: rp[t.id] || 0, est: !!(r && r.est), empezado: !!r, dif: dif,
+              ult: ult[t.id], nq: nq, vistas: vis[t.n] || 0, dom: d, fallos: fall[t.n] || []};
+    });
+  }
+  function nota(D){
+    var c = D.filter(function(t){ return t.nq; }); if (!c.length || !D.some(function(t){ return t.vistas; })) return null;
+    var d = c.reduce(function(s, t){ return s + t.dom; }, 0) / c.length, acc = d + (1 - d) * .25;
+    return {nota: Math.max(0, 10 * (acc - (1 - acc) / 3)), pct: Math.round(d * 100), vistas: D.reduce(function(s, t){ return s + t.vistas; }, 0), total: D.reduce(function(s, t){ return s + t.nq; }, 0)};
+  }
+  function racha(S){
+    var f = {}; (S.history || []).forEach(function(x){ f[x.fecha] = (f[x.fecha] || 0) + (x.total || 0); });
+    var d = new Date(), n = 0, hoy = f[iso(d)] || 0; if (!hoy) d.setDate(d.getDate() - 1);
+    while (f[iso(d)]) { n++; d.setDate(d.getDate() - 1); }
+    return {dias: n, hoy: hoy, meta: S.dailyGoal || 0};
+  }
+  function urlTest(ids){ return 'test-oficial-conocimiento.html' + (ids && ids.length ? '#repasar=' + encodeURIComponent(ids.slice(0, 40).join(',')) : ''); }
+
+  function pinta(){
+    var D = datos(), S = rd(KT, {}), N = nota(D), R = racha(S), h = hoyN();
+    var ex = rd('esquemas-examen', '') || (S.examDate ? String(S.examDate).slice(0, 10) : ''), dias = ex ? aN(ex) - h : null;
+    var tot = D.reduce(function(s, t){ return s + t.total; }, 0), ok = D.reduce(function(s, t){ return s + t.ok; }, 0), pct = tot ? Math.round(ok * 100 / tot) : 0;
+    var tarde = D.filter(function(t){ return t.dif !== null && t.dif < 0; }).sort(function(a, b){ return a.dif - b.dif; }), hoy = D.filter(function(t){ return t.dif === 0; });
+    var nuevos = D.filter(function(t){ return !t.empezado && t.total; }), estu = D.filter(function(t){ return t.est; });
+    var u = D.filter(function(t){ return t.ult; }).sort(function(a, b){ return b.ult.t - a.ult.t; })[0];
+    var fallos = []; D.forEach(function(t){ fallos = fallos.concat(t.fallos.slice(0, 6)); });
+    var h2 = '<div class="ds"><div class="ds-top"><h1>🏠 Inicio</h1><button class="ds-x" data-ds="cierra">Entrar a los esquemas →</button></div>'
+      + '<div class="ds-hero"><h2>Tus esquemas, a examen</h2><p>Todo tu avance de un vistazo: fichas dominadas, repasos que tocan y cómo vas en los tests.</p><div class="ds-stats">'
+      + '<div class="ds-st"><b>' + pct + '%</b><span>fichas dominadas</span></div>'
+      + '<div class="ds-st"><b>' + (N ? N.nota.toFixed(1).replace('.', ',') : '–') + '</b><span>nota estimada si fuera hoy</span></div>'
+      + '<div class="ds-st"><b>' + (dias === null ? '—' : Math.max(dias, 0)) + '</b><span>días para el examen</span></div>'
+      + '<div class="ds-st"><b>' + R.dias + ' 🔥</b><span>días de racha' + (R.meta ? ' · hoy ' + Math.min(R.hoy, R.meta) + '/' + R.meta : '') + '</span></div></div>'
+      + '<div class="ds-bar"><i style="width:' + pct + '%"></i></div></div>';
+    if (u) h2 += '<div class="ds-cont"><div><b>📍 Aquí te quedaste</b><span>' + esc(u.nombre) + ' · ' + esc(String(u.ult.k || '').replace(/\s+/g, ' ').slice(0, 70)) + '</span></div><button class="ds-btn" data-ds-ir="' + u.id + '">Ir →</button></div>';
+
+    var hoyH = '<h3>🎯 Hoy toca</h3>';
+    var fila = function(t, c, m){ return '<div class="ds-hoy ' + c + '" data-ds-ir="' + t.id + '"><b>' + esc(t.nombre) + '<small>' + m + '</small></b></div>'; };
+    tarde.slice(0, 3).forEach(function(t){ hoyH += fila(t, 'tarde', '⚠️ Repaso atrasado ' + (-t.dif) + ' d'); });
+    hoy.slice(0, 3).forEach(function(t){ hoyH += fila(t, 'hoy', '📌 Repaso de hoy'); });
+    estu.slice(0, 2).forEach(function(t){ hoyH += fila(t, '', '📖 Estudiando ahora'); });
+    if (!tarde.length && !hoy.length && !estu.length && nuevos.length) hoyH += fila(nuevos[0], '', '🆕 Siguiente tema nuevo · ' + nuevos[0].total + ' fichas');
+    if (!tarde.length && !hoy.length && !estu.length && !nuevos.length) hoyH += '<p>✅ Hoy no te toca nada. Buen trabajo.</p>';
+    var rpT = D.reduce(function(s, t){ return s + t.rp; }, 0); if (rpT) hoyH += '<p style="margin-top:8px">🔁 ' + rpT + ' fichas marcadas para repasar.</p>';
+
+    var notaH = '<div class="ds-card ds-nota"><h3>📈 Nota estimada</h3>';
+    if (N) {
+      var peores = D.filter(function(t){ return t.nq && t.vistas; }).sort(function(a, b){ return a.dom - b.dom; }).slice(0, 3);
+      notaH += '<div class="n">' + N.nota.toFixed(1).replace('.', ',') + '<small>/10</small></div><p style="margin-top:6px">Si el examen fuera hoy, con tus tests (' + N.pct + ' % dominado, ' + N.vistas + ' de ' + N.total + ' preguntas vistas). Lo no visto cuenta como azar y cada fallo resta 1/3.</p>'
+        + (peores.length ? '<div class="ds-sec" style="margin:12px 0 0;font-size:11px">Tus temas más flojos</div>' + peores.map(function(t){ var p = Math.round(t.dom * 100); return '<div class="ds-fila"><span>' + esc(t.nombre) + '</span><div class="b"><i style="width:' + p + '%"></i></div><b>' + p + ' %</b></div>'; }).join('') : '');
+    } else notaH += '<p>Haz algún test de conocimientos y aquí verás tu nota aproximada si el examen fuera hoy.</p>';
+    notaH += '</div>';
+    h2 += '<h3 class="ds-sec">Hoy</h3><div class="ds-2"><div class="ds-card">' + hoyH + '</div>' + notaH + '</div>';
+
+    h2 += '<h3 class="ds-sec">Mi examen</h3><div class="ds-card ds-ex"><label>Fecha del examen <input type="date" id="ds-fecha" value="' + esc(ex) + '"></label><span style="font-size:13px;color:var(--texto-gris)">'
+      + (dias === null ? 'Ponla para ver la cuenta atrás y el ritmo de temas nuevos.' : dias > 0 && nuevos.length ? 'Para ver todo y dejar un 25 % para repasar: ' + Math.ceil(nuevos.length / Math.max(1, dias - Math.ceil(dias * .25))) + ' tema(s) nuevo(s) al día (' + nuevos.length + ' sin empezar).' : dias > 0 ? 'Te quedan ' + dias + ' días: ¡a repasar!' : 'El examen ya ha pasado o es hoy.') + '</span></div>';
+
+    h2 += '<h3 class="ds-sec">Acciones rápidas</h3><div class="ds-acc">'
+      + '<button class="ds-a" data-ds="panel"><i>🎯</i>Panel de estudio</button>'
+      + '<button class="ds-a" data-ds="expres"><i>⚡</i>Exprés</button>'
+      + '<button class="ds-a" data-ds="marcas"><i>🖍</i>Marcas</button>'
+      + '<button class="ds-a" data-ds="voz"><i>🔊</i>Voz</button>'
+      + (fallos.length ? '<a class="ds-a" href="' + urlTest(fallos) + '"><i>❌</i>Practicar mis fallos</a>' : '')
+      + '<a class="ds-a" href="test-oficial-conocimiento.html"><i>📝</i>Test de conocimientos</a>'
+      + '<a class="ds-a" href="expres-subrayado.html"><i>📑</i>Temario subrayado</a></div>';
+
+    h2 += '<h3 class="ds-sec">Temas</h3><div class="ds-fil"><input type="search" id="ds-q" placeholder="Buscar tema…" value="' + esc(busca) + '">'
+      + [['todos', 'Todos'], ['tarde', '⚠️ Atrasados'], ['nuevo', '🆕 Sin empezar'], ['flojo', '📉 Flojos en test']].map(function(f){ return '<button class="ds-chip' + (filtro === f[0] ? ' on' : '') + '" data-ds-f="' + f[0] + '">' + f[1] + '</button>'; }).join('') + '</div><div class="ds-temas" id="ds-temas">';
+    var L = D.filter(function(t){
+      if (busca && (t.nombre + ' tema ' + t.n).toLowerCase().indexOf(busca.toLowerCase()) < 0) return false;
+      return filtro === 'todos' || (filtro === 'tarde' && t.dif !== null && t.dif < 0) || (filtro === 'nuevo' && !t.empezado) || (filtro === 'flojo' && t.vistas && t.dom < .5);
+    });
+    L.forEach(function(t){
+      var p = t.total ? Math.round(100 * t.ok / t.total) : 0, pq = Math.round(t.dom * 100);
+      var est = t.est ? '<span class="est estu">estudiando</span>' : t.dif === null ? '<span class="est">sin empezar</span>' : t.dif < 0 ? '<span class="est tarde">repaso atrasado</span>' : t.dif === 0 ? '<span class="est hoy">repasar hoy</span>' : '<span class="est">repaso en ' + t.dif + ' d</span>';
+      h2 += '<div class="ds-t" data-ds-ir="' + t.id + '"><span class="nu">Tema ' + t.n + '</span>' + est + '<h4>' + esc(t.nombre) + '</h4>'
+        + '<div class="m"><span>📄 ' + t.ok + '/' + t.total + ' fichas</span><span>🔁 ' + t.rp + ' a repasar</span></div><div class="br"><i style="width:' + p + '%"></i></div>'
+        + '<div class="m"><span>🎯 ' + t.vistas + '/' + t.nq + ' preguntas vistas · dominio ' + pq + ' %</span></div><div class="br q"><i style="width:' + pq + '%"></i></div>'
+        + (t.fallos.length ? '<a class="pr" href="' + urlTest(t.fallos) + '">❌ Practicar mis ' + t.fallos.length + ' fallos</a>' : '') + '</div>';
+    });
+    if (!L.length) h2 += '<p>No hay temas con ese filtro.</p>';
+    h2 += '</div></div>';
+    var y = ov.scrollTop; ov.innerHTML = h2; ov.scrollTop = y;
+  }
+
+  function abre(){ pinta(); ov.classList.add('on'); document.body.style.overflow = 'hidden'; }
+  function cierra(){ ov.classList.remove('on'); document.body.style.overflow = ''; window.scrollTo(0, 0); }
+  window.abrirInicioEsquemas = abre;
+  function clic(sel){ var b = document.querySelector(sel); if (b) b.click(); }
+  ov.addEventListener('click', function(ev){
+    var f = ev.target.closest('[data-ds-f]'), i = ev.target.closest('[data-ds-ir]'), a = ev.target.closest('[data-ds]');
+    if (ev.target.closest('a.pr')) return;
+    if (f) { filtro = f.dataset.dsF; pinta(); return; }
+    if (a) {
+      var x = a.dataset.ds;
+      if (x === 'cierra') cierra();
+      else if (x === 'panel') clic('.btn-panel');
+      else if (x === 'marcas') { cierra(); clic('#btn-marcas'); }
+      else if (x === 'voz') { cierra(); clic('#btn-voz-menu'); }
+      else if (x === 'expres') { clic('#vista-of [data-v="ex"]'); var D = datos(), u = D.filter(function(t){ return t.ult; }).sort(function(p, q){ return q.ult.t - p.ult.t; })[0]; cierra(); if (typeof mostrar === 'function') mostrar(u ? u.id : 'tema-1'); }
+      return;
+    }
+    if (i) { cierra(); if (typeof mostrar === 'function') mostrar(i.dataset.dsIr); }
+  });
+  ov.addEventListener('input', function(ev){ if (ev.target.id === 'ds-q') { busca = ev.target.value; var p = ev.target.selectionStart; pinta(); var q = document.getElementById('ds-q'); if (q) { q.focus(); try { q.setSelectionRange(p, p); } catch (e) {} } } });
+  ov.addEventListener('change', function(ev){ if (ev.target.id === 'ds-fecha') { try { localStorage.setItem('esquemas-examen', JSON.stringify(ev.target.value)); } catch (e) {} pinta(); } });
+  document.addEventListener('visibilitychange', function(){ if (!document.hidden && ov.classList.contains('on')) pinta(); });
+  addEventListener('keydown', function(ev){ if (ev.key === 'Escape' && ov.classList.contains('on')) cierra(); });
+
+  var top = document.getElementById('barra-acciones'), ref = document.getElementById('btn-marcas');
+  if (top) { var b = document.createElement('button'); b.type = 'button'; b.className = 'btn-pdf'; b.id = 'btn-inicio'; b.textContent = '🏠 Inicio'; b.title = 'Pantalla de inicio: tu avance, nota estimada, qué toca hoy y todos los temas'; b.onclick = abre; top.insertBefore(b, top.firstChild); }
+  if (!location.hash) abre();
+})();
+</script>
 </body>
 </html>

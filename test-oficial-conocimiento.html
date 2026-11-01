@@ -1643,7 +1643,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
         var ac = (st.vistas - st.falladas) / st.vistas;
         s += st.ultimaCorrecta ? .5 + .5 * ac : .5 * ac;
       });
-      var d = s / qs.length; vistas += v; total += qs.length; suma += d;
+      var d = v ? s / v * Math.min(1, v / Math.min(qs.length, 200)) : 0; vistas += v; total += qs.length; suma += d; /* nivel en lo visto × cuánto del tema has visto (con 200 preguntas vistas se da por demostrado) */
       temas.push({id: T.id, nombre: temaNombre(T), d: d, v: v, tot: qs.length});
     });
     if (!temas.length || !vistas) return null;
