@@ -92,6 +92,8 @@ try {
   if (nuevas) console.log('  preguntas enlazadas desde Esquemas por número de artículo/apartado:', nuevas);
 } catch (er) { console.log('  (sin enlace por ficha de Esquemas:', er.message + ')'); }
 // primera pregunta de cada artículo: sirve para saltar desde aquí a la ficha de Esquemas (esquemas.html#q=<id>&ex=1)
+// preguntas ancladas a mano / por el mapa de Esquemas a una pieza: expres-subrayado/tN-preg-extra.json {id: pieza} (no pisa lo ya enlazado)
+{ const pe = `expres-subrayado/t${T}-preg-extra.json`; if (fs.existsSync(pe)) { const E = JSON.parse(fs.readFileSync(pe, 'utf8')); for (const [q, p] of Object.entries(E)) if (!preg[q] && ids.has(p)) preg[q] = p; } }
 const primera = {}; for (const q in preg) if (!primera[preg[q]]) primera[preg[q]] = q; ix.forEach(p => { if (primera[p.id]) p.q1 = primera[p.id]; });
 // ---- cuadros (esquemas visuales) de visuales-tN.js, tomados ya montados de esquemas.html ----
 const cuadros = {}, sinPieza = [];
@@ -117,6 +119,15 @@ if (fs.existsSync(visP)) {
     (cuadros[pid] = cuadros[pid] || []).push({ t: tit, h: html });
   }
 }
+// formato nuevo (T15-T17): visuales-tN.js exporta [[norma, localizador, html], …] con el HTML ya montado; la pieza sale de «art. N» del título o de tN-cuadros-map.json
+if (fs.existsSync(visP)) { let V = null; try { V = require(require('path').resolve(visP)); } catch (e) {}
+  if (Array.isArray(V) && V.length && Array.isArray(V[0]) && typeof V[0][2] === 'string') for (const [norma, loc, html] of V) {
+    const tit = ((html.match(/class="vis-t">(?:<i>[^<]*<\/i>)?([^<]*)/) || [])[1] || '').trim();
+    let pid = cmap[tit] || cmap[loc] || null;
+    if (!pid) { const n = (tit.match(/\bart(?:s|[íi]culos?)?\.?\s*(\d+)/i) || [])[1]; const pre = /RD 1774/.test(tit) || norma === 'rd' ? 'b' : 'a'; if (n) pid = pre + '-' + n; }
+    if (!pid || !ids.has(pid)) { sinPieza.push('SIN ARTÍCULO (' + (pid || '?') + ') → ' + tit); continue; }
+    (cuadros[pid] = cuadros[pid] || []).push({ t: tit, h: html });
+  } }
 ix.forEach(p => { if (cuadros[p.id]) p.cu = cuadros[p.id].length; });
 // cobertura: cuántas preguntas del banco del tema tendrán botón «Ver en mi temario subrayado»
 let cob = { q: 0, e: 0 };

@@ -7,6 +7,7 @@ case $T in
  10) TIT="Tema 10 · Derecho civil"; PDF="TEMA 10 DERECHO CIVIL-08-08-2026.pdf";;
  13) TIT="Tema 13 · Jurisdicción contencioso-administrativa"; PDF="TEMA 13 JURISDICCION CONTENCIOSO ADMINISTRATIVA-2026-08-08 .pdf";;
  16) TIT="Tema 16 · Igualdad entre mujeres y hombres"; PDF="TEMA 16 IGUALDAD MUJERES Y HOMBRES-2026-08-08.pdf";;
+ 17) TIT="Tema 17 · Responsabilidad penal de los menores"; PDF="TEMA 17 MENORES-2026-08-08.pdf";;
  1) TIT="Tema 1 · Derechos humanos"; PDF="TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf";;
  7) TIT="Tema 7 · Constitución Española"; PDF="TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf";;
  14) TIT="Tema 14 · El Defensor del Pueblo"; PDF="TEMA 14 DEFENSOR DEL PUEBLO-2026-08-08.pdf";;

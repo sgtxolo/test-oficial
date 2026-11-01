@@ -1,0 +1,468 @@
+{
+ "manual": [
+  {
+   "id": "a-9",
+   "nombre": "LO 5/2000 · Artículo 9",
+   "piezas": [
+    [
+     11,
+     0.1,
+     0.97
+    ],
+    [
+     12,
+     0.04,
+     0.195
+    ]
+   ]
+  },
+  {
+   "id": "a-10",
+   "nombre": "LO 5/2000 · Artículo 10",
+   "piezas": [
+    [
+     12,
+     0.195,
+     0.97
+    ],
+    [
+     14,
+     0.04,
+     0.735
+    ]
+   ]
+  },
+  {
+   "id": "a-11",
+   "nombre": "LO 5/2000 · Artículo 11",
+   "piezas": [
+    [
+     17,
+     0.655,
+     0.97
+    ],
+    [
+     18,
+     0.04,
+     0.28
+    ]
+   ]
+  },
+  {
+   "id": "c-ins",
+   "ficha": "^Instrucciones",
+   "nombre": "Instrucción 1/2017 · Instrucciones (Primera a Cuarto)",
+   "expres": 1,
+   "piezas": [
+    [
+     46,
+     0.09,
+     0.575
+    ]
+   ]
+  },
+  {
+   "id": "c-21",
+   "ficha": "^2\\.1\\. Organizaci",
+   "nombre": "Instrucción 1/2017 · 2.1 Organización",
+   "expres": 1,
+   "piezas": [
+    [
+     47,
+     0.4,
+     0.7
+    ]
+   ]
+  },
+  {
+   "id": "c-22",
+   "ficha": "^2\\.2\\. Competencias",
+   "nombre": "Instrucción 1/2017 · 2.2 Competencias",
+   "expres": 1,
+   "piezas": [
+    [
+     47,
+     0.7,
+     0.97
+    ],
+    [
+     48,
+     0.04,
+     0.375
+    ]
+   ]
+  },
+  {
+   "id": "c-32",
+   "ficha": "^3\\.2\\. Requisitos",
+   "nombre": "Instrucción 1/2017 · 3.2 Requisitos de la actuación en el ámbito administrativo",
+   "expres": 1,
+   "piezas": [
+    [
+     50,
+     0.07,
+     0.31
+    ]
+   ]
+  },
+  {
+   "id": "c-51",
+   "ficha": "^5\\.1\\. Protecci",
+   "nombre": "Instrucción 1/2017 · 5.1 Protección de la víctima menor de edad",
+   "expres": 1,
+   "piezas": [
+    [
+     52,
+     0.085,
+     0.47
+    ]
+   ]
+  },
+  {
+   "id": "c-52",
+   "ficha": "^5\\.2\\. Recepci",
+   "nombre": "Instrucción 1/2017 · 5.2 Recepción de denuncias",
+   "expres": 1,
+   "piezas": [
+    [
+     52,
+     0.47,
+     0.79
+    ]
+   ]
+  },
+  {
+   "id": "c-53",
+   "ficha": "^5\\.3\\. Exploraci",
+   "nombre": "Instrucción 1/2017 · 5.3 Exploración del menor",
+   "expres": 1,
+   "piezas": [
+    [
+     52,
+     0.79,
+     0.97
+    ],
+    [
+     53,
+     0.04,
+     0.97
+    ],
+    [
+     54,
+     0.04,
+     0.97
+    ],
+    [
+     55,
+     0.04,
+     0.27
+    ]
+   ]
+  },
+  {
+   "id": "c-54",
+   "ficha": "^5\\.4\\. Tratamiento",
+   "nombre": "Instrucción 1/2017 · 5.4 Tratamiento del testigo menor de edad",
+   "expres": 1,
+   "piezas": [
+    [
+     55,
+     0.275,
+     0.6
+    ]
+   ]
+  },
+  {
+   "id": "c-61",
+   "ficha": "^6\\.1\\. Aplicaci",
+   "nombre": "Instrucción 1/2017 · 6.1 Aplicación de la normativa de seguridad ciudadana",
+   "expres": 1,
+   "piezas": [
+    [
+     56,
+     0.085,
+     0.97
+    ],
+    [
+     57,
+     0.04,
+     0.225
+    ]
+   ]
+  },
+  {
+   "id": "c-71",
+   "ficha": "^7\\.1\\. Actuaci",
+   "nombre": "Instrucción 1/2017 · 7.1 Entornos escolares",
+   "expres": 1,
+   "piezas": [
+    [
+     57,
+     0.245,
+     0.52
+    ]
+   ]
+  },
+  {
+   "id": "c-72",
+   "ficha": "^7\\.2\\. Actuaci",
+   "nombre": "Instrucción 1/2017 · 7.2 Acoso escolar",
+   "expres": 1,
+   "piezas": [
+    [
+     57,
+     0.52,
+     0.97
+    ],
+    [
+     58,
+     0.04,
+     0.97
+    ],
+    [
+     59,
+     0.04,
+     0.205
+    ]
+   ]
+  },
+  {
+   "id": "c-81",
+   "ficha": "^8\\.1\\. Actuaci",
+   "nombre": "Instrucción 1/2017 · 8.1 Menores en riesgo o desamparo",
+   "expres": 1,
+   "piezas": [
+    [
+     59,
+     0.225,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c-82",
+   "ficha": "^8\\.2\\. Actuaci",
+   "nombre": "Instrucción 1/2017 · 8.2 Menores extranjeros no acompañados",
+   "expres": 1,
+   "piezas": [
+    [
+     60,
+     0.1,
+     0.97
+    ],
+    [
+     61,
+     0.04,
+     0.97
+    ],
+    [
+     62,
+     0.04,
+     0.555
+    ]
+   ]
+  },
+  {
+   "id": "c-91",
+   "ficha": "^9\\.1\\. Actuaci",
+   "nombre": "Instrucción 1/2017 · 9.1 Desaparición de menores",
+   "expres": 1,
+   "piezas": [
+    [
+     62,
+     0.555,
+     0.97
+    ],
+    [
+     63,
+     0.04,
+     0.73
+    ]
+   ]
+  },
+  {
+   "id": "c-92",
+   "ficha": "^9\\.2\\. Actuaci",
+   "nombre": "Instrucción 1/2017 · 9.2 Localización de menores",
+   "expres": 1,
+   "piezas": [
+    [
+     63,
+     0.735,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c-101",
+   "ficha": "^10\\.1\\. Acceso",
+   "nombre": "Instrucción 1/2017 · 10.1 Acceso y confidencialidad",
+   "expres": 1,
+   "piezas": [
+    [
+     64,
+     0.43,
+     0.64
+    ]
+   ]
+  },
+  {
+   "id": "c-102",
+   "ficha": "^10\\.2\\. Libros",
+   "nombre": "Instrucción 1/2017 · 10.2 Libros-Registros",
+   "expres": 1,
+   "piezas": [
+    [
+     64,
+     0.64,
+     0.97
+    ],
+    [
+     65,
+     0.04,
+     0.465
+    ]
+   ]
+  },
+  {
+   "id": "c-103",
+   "ficha": "^10\\.3\\. Bases",
+   "nombre": "Instrucción 1/2017 · 10.3 Bases de datos",
+   "expres": 1,
+   "piezas": [
+    [
+     65,
+     0.465,
+     0.97
+    ],
+    [
+     66,
+     0.1,
+     0.205
+    ]
+   ]
+  },
+  {
+   "id": "c-104",
+   "ficha": "^10\\.4\\. .lbumes",
+   "nombre": "Instrucción 1/2017 · 10.4 Álbumes fotográficos",
+   "expres": 1,
+   "piezas": [
+    [
+     66,
+     0.225,
+     0.47
+    ]
+   ]
+  },
+  {
+   "id": "a-rec",
+   "ficha": "^RECUERDA del temario · LO 5/2000",
+   "nombre": "RECUERDA · LO 5/2000 (R1 a R7)",
+   "expres": 1,
+   "piezas": [
+    [
+     68,
+     0.1,
+     0.97
+    ],
+    [
+     69,
+     0.05,
+     0.355
+    ]
+   ]
+  },
+  {
+   "id": "b-rec",
+   "ficha": "^RECUERDA del temario · RD 1774/2004",
+   "nombre": "RECUERDA · RD 1774/2004 (R8 y R9)",
+   "expres": 1,
+   "piezas": [
+    [
+     69,
+     0.355,
+     0.6
+    ]
+   ]
+  },
+  {
+   "id": "c-rec",
+   "ficha": "^RECUERDA del temario · Instrucci",
+   "nombre": "RECUERDA · Instrucción 1/2017 (R10 y R17 a R23)",
+   "expres": 1,
+   "piezas": [
+    [
+     69,
+     0.6,
+     0.725
+    ],
+    [
+     71,
+     0.08,
+     0.88
+    ],
+    [
+     72,
+     0.08,
+     0.44
+    ]
+   ]
+  },
+  {
+   "id": "a-pl",
+   "nombre": "LO 5/2000 · PLAZOS (págs. 36 a 38 del temario)",
+   "piezas": [
+    [
+     35,
+     0.04,
+     0.97
+    ],
+    [
+     36,
+     0.04,
+     0.97
+    ],
+    [
+     37,
+     0.04,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c-11",
+   "nombre": "Instrucción 1/2017 · 1.1 Objeto",
+   "piezas": [
+    [
+     46,
+     0.735,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "c-12",
+   "nombre": "Instrucción 1/2017 · 1.2 Ámbito de aplicación",
+   "piezas": [
+    [
+     47,
+     0.1,
+     0.4
+    ]
+   ]
+  },
+  {
+   "id": "c-rec2",
+   "nombre": "RECUERDA · Instrucción 14/2018 (R24 y R25)",
+   "piezas": [
+    [
+     72,
+     0.44,
+     0.8
+    ]
+   ]
+  }
+ ],
+ "paginas": []
+}

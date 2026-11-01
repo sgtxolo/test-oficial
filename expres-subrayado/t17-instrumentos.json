@@ -1,0 +1,22 @@
+[
+ {
+  "id": "a",
+  "nombre": "LO 5/2000",
+  "paginas": [4, 34],
+  "inicio": "^TÍTULO PRELIMINAR",
+  "cit": "LO 5/2000|Ley Orgánica 5/2000|Ley Orgánica reguladora de la responsabilidad penal de los menores"
+ },
+ {
+  "id": "b",
+  "nombre": "RD 1774/2004",
+  "paginas": [38, 43],
+  "inicio": "^CAPÍTULO I\\. DISPOSICIONES GENERALES",
+  "cit": "RD 1774/2004|Real Decreto 1774/2004"
+ },
+ {
+  "id": "c",
+  "nombre": "Instrucción 1/2017",
+  "inicio": "^17\\.3",
+  "cit": "Instrucción 1/2017|Instrucción n\\.º 1/2017|Protocolo de actuación policial con menores"
+ }
+]
