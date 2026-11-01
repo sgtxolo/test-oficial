@@ -1304,7 +1304,8 @@ async function sincronizar(manual, soloBajar) {
         if (r.status === 409 || r.status === 422) continue;   // otro dispositivo subió justo ahora: se vuelve a mezclar
         if (!r.ok) throw new Error('GitHub respondió ' + r.status + ' al subir');
       }
-      try { localStorage.setItem(GH_BASE, JSON.stringify(mez)); localStorage.setItem(GH_BASE + '-s', JJ(estadoSync())); } catch (e) {}
+      const sinSubir = soloBajar && JJ(mez) !== JJ(rem.estado);   // al abrir solo se baja: si hay cambios tuyos sin subir, la «base» no puede darlos por sincronizados (si no, el siguiente sincronizar los borra)
+      if (!sinSubir) try { localStorage.setItem(GH_BASE, JSON.stringify(mez)); localStorage.setItem(GH_BASE + '-s', JJ(estadoSync())); } catch (e) {}
       if (cambia) render();
       pintaSync('☁ ✓', 'Sincronizado ' + new Date().toLocaleTimeString().slice(0, 5), '');
       if (manual) aviso(cambia ? 'Sincronizado: se han traído cambios de la nube' : 'Sincronizado');
