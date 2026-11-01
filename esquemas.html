@@ -4492,6 +4492,13 @@ body.embed #app{padding-top:4px}
 .hueco-txt{color:#7a808a;font-style:italic;background:rgba(120,126,136,.12);border-radius:4px;padding:0 3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 [data-theme="dark"] .hueco-txt{color:#a3a9b3;background:rgba(160,166,176,.14)}
 [data-theme="dark"] .hueco{border-bottom-color:#a3a9b3}
+.hueco-bt{display:inline-flex;gap:3px;margin:0 3px;vertical-align:baseline;white-space:nowrap}
+.hueco-bt button{all:unset;cursor:pointer;width:19px;height:19px;border-radius:50%;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;font:700 12px/1 system-ui,sans-serif;font-style:normal;border:1.5px solid #8a8f98;color:#6b717b;background:#fff}
+.hueco-bt .hb-ok::before{content:"✓"}.hueco-bt .hb-no::before{content:"✕"}
+.hueco-bt .hb-ok:hover,.hueco-bt .hb-ok.on{background:#2e9c4d;border-color:#2e9c4d;color:#fff}
+.hueco-bt .hb-no:hover{background:#d1332a;border-color:#d1332a;color:#fff}
+[data-theme="dark"] .hueco-bt button{background:#2b2f36;color:#a3a9b3}
+@media print{.hueco-bt{display:none!important}}
 #hueco-tip{position:fixed;z-index:9999;max-width:min(440px,calc(100vw - 24px));padding:9px 12px;border-radius:9px;background:#4b5058;color:#f1f2f4;font-size:12.5px;line-height:1.5;box-shadow:0 6px 22px rgba(0,0,0,.28);pointer-events:none;display:none}
 @media print{#hueco-tip{display:none!important}.hueco{border-bottom:0}}
 </style>
@@ -4512,13 +4519,23 @@ body.embed #app{padding-top:4px}
     tip.style.left = x + 'px'; tip.style.top = y + 'px';
   }
   const ocultarTip = () => { if (tip) tip.style.display = 'none'; };
+  /* ✓ = «me gusta»: el (…) se queda desplegado (se guarda por tema + texto); ✗ = se oculta y deja de guardarse */
+  const kh = el => { const e = el.closest('.esquema'); return (e ? e.id : '') + '|' + clave(el.dataset.h).slice(0, 80); };
+  const guardados = () => { try { return JSON.parse(localStorage.getItem('huecos-fijos') || '[]'); } catch (_) { return []; } };
+  const guardar = l => { try { localStorage.setItem('huecos-fijos', JSON.stringify(l)); } catch (_) {} };
   function alternar(el){
     ocultarTip();
     const sig = el.nextSibling;
-    if (el.classList.contains('abierto')){ if (sig && sig.classList && sig.classList.contains('hueco-txt')) sig.remove(); el.classList.remove('abierto'); el.setAttribute('aria-expanded', 'false'); return; }
+    if (el.classList.contains('abierto')){ if (sig && sig.classList && sig.classList.contains('hueco-txt')){ const b = sig.nextSibling; if (b && b.classList && b.classList.contains('hueco-bt')) b.remove(); sig.remove(); } el.classList.remove('abierto'); el.setAttribute('aria-expanded', 'false'); return; }
     const s = document.createElement('span'); s.className = 'hueco-txt'; const h = el.dataset.h, sg = el.nextSibling;
     s.textContent = (/^[.,;:)]/.test(h) ? '' : ' ') + h + (sg && sg.nodeType === 3 && !/^[\s.,;:)]/.test(sg.nodeValue) ? ' ' : '');
     el.after(s); el.classList.add('abierto'); el.setAttribute('aria-expanded', 'true');
+    if (!el.closest('.ex-plg-t, [data-ui]')){
+      const bt = document.createElement('span'); bt.className = 'hueco-bt'; bt.setAttribute('data-ui', '');
+      bt.innerHTML = '<button type="button" class="hb-ok" title="Me gusta: dejarlo desplegado" aria-label="Dejar desplegado"></button><button type="button" class="hb-no" title="Ocultar otra vez" aria-label="Ocultar"></button>';
+      if (guardados().includes(kh(el))) bt.firstChild.classList.add('on');
+      s.after(bt);
+    }
     if (window.huecoMarcar) window.huecoMarcar(el, s);   // marcas que pusiste sobre este texto gris
   }
   /* (…) que el propio Exprés crea al recortar un apartado: su texto se busca en el temario entero del mismo tema */
@@ -4561,7 +4578,14 @@ body.embed #app{padding-top:4px}
       });
     });
   }
-  document.addEventListener('click', e => { const el = e.target.closest && e.target.closest('.hueco'); if (el) alternar(el); });
+  document.addEventListener('click', e => {
+    const b = e.target.closest && e.target.closest('.hueco-bt button');
+    if (b){ const tx = b.parentNode.previousSibling, el = tx && tx.previousSibling; if (!el || !el.classList || !el.classList.contains('hueco')) return;
+      const k = kh(el), l = guardados().filter(x => x !== k);
+      if (b.classList.contains('hb-ok')){ l.push(k); guardar(l); b.classList.add('on'); }
+      else { guardar(l); alternar(el); }
+      return; }
+    const el = e.target.closest && e.target.closest('.hueco'); if (el) alternar(el); });
   document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('hueco')){ e.preventDefault(); alternar(e.target); } });
   document.addEventListener('mouseover', e => { const el = e.target.closest && e.target.closest('.hueco'); if (el && !el.classList.contains('abierto') && matchMedia('(hover:hover)').matches) mostrarTip(el); });
   document.addEventListener('mouseout', e => { if (e.target.closest && e.target.closest('.hueco')) ocultarTip(); });
@@ -4607,8 +4631,10 @@ body.embed #app{padding-top:4px}
   };
   /* Exprés: sus (…) se abren igual; el contenedor .ex-cont se monta después, así que se vigila */
   new MutationObserver(ms => { const vistos = new Set(); ms.forEach(m => m.addedNodes.forEach(n => { if (n.nodeType === 1 && (n.classList.contains('ex-cont') || n.querySelector('.ex-cont'))) { const e = n.closest('.esquema'); if (e && !vistos.has(e)) { vistos.add(e); montar(e); } } })); }).observe(document.body, {childList: true, subtree: true});
-  if (window.alPrepararTema) window.alPrepararTema(70, montar);
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', montar); else montar();
+  const montarYAbrir = solo => { montar(solo); const l = guardados(); if (!l.length) return;
+    (solo && solo.nodeType === 1 ? [solo] : document.querySelectorAll('.esquema')).forEach(esq => esq.querySelectorAll('.hueco:not(.abierto)').forEach(h => { if (!h.closest('.ex-plg-t') && l.includes(kh(h))) alternar(h); })); };
+  if (window.alPrepararTema) window.alPrepararTema(70, montarYAbrir);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => montarYAbrir()); else montarYAbrir();
 })();
 </script>
 
