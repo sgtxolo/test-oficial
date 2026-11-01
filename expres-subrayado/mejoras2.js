@@ -89,7 +89,7 @@ window.MEJORAS2 = function () {
     const pintaTodo = () => piezas.forEach(z => { const a = z.a, b = z.b, W2 = W;
       let h = st.cort[K].map(([c0, c1]) => { const y0 = Math.max(c0, a) - a, y1 = Math.min(c1, b) - a; return y1 - y0 > 0 ? '<rect x="0" y="' + y0 + '" width="' + W2 + '" height="' + (y1 - y0) + '" fill="rgba(210,40,40,.38)" stroke="#c0392b" stroke-width="3" stroke-dasharray="14 8"/>' : ''; }).join('');
       if (dib) { const lo = Math.max(Math.min(dib.y0, dib.y1), a), hi = Math.min(Math.max(dib.y0, dib.y1), b); if (hi > lo) h += '<rect x="0" y="' + (lo - a) + '" width="' + W2 + '" height="' + (hi - lo) + '" fill="rgba(30,102,208,.25)" stroke="#1e66d0" stroke-width="3"/>'; }
-      z.svg.innerHTML = h; });
+      if (z.svg) z.svg.innerHTML = h; else z.el.classList.toggle('gapcut', (tol => st.cort[K].some(q => q[0] <= a + tol && q[1] >= b - tol) || (dib && Math.min(dib.y0, dib.y1) <= a + tol && Math.max(dib.y0, dib.y1) >= b - tol))(Math.max(2, (b - a) * .3))); });
     const scroller = el => { for (let n = el.parentElement; n && n !== document.body; n = n.parentElement) { const o = getComputedStyle(n).overflowY; if ((o === 'auto' || o === 'scroll') && n.scrollHeight > n.clientHeight + 4) return n; } return window; };
     const tick = () => { if (!dib) return; const sc = scroller(w), top = sc === window ? 0 : sc.getBoundingClientRect().top, bot = sc === window ? innerHeight : sc.getBoundingClientRect().bottom; let v = 0;
       if (dib.ly < top + 80) v = -Math.min(34, (top + 80 - dib.ly) / 2.5); else if (dib.ly > bot - 80) v = Math.min(34, (dib.ly - (bot - 80)) / 2.5);
@@ -111,6 +111,7 @@ window.MEJORAS2 = function () {
       };
       w.addEventListener('pointerup', fin); w.addEventListener('pointercancel', fin);
     }
+    if (comp) w.querySelectorAll('.gapb[data-ga]').forEach(el => piezas.push({svg: null, el, a: +el.dataset.ga, b: +el.dataset.gb}));
     if (comp) w.querySelectorAll('.cmpb[data-ya]').forEach(el => capa(el, +el.dataset.ya, +el.dataset.yb)); else capa(w, 0, H0);
     pintas.push(pintaTodo); pintaTodo();
     bar.addEventListener('click', e => {
