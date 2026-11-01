@@ -1238,9 +1238,7 @@ async function lanzaImp() {
   }
   if (!n) { aviso('No has elegido nada para imprimir'); return; }
   await Promise.all([...z.querySelectorAll('img')].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
-  // quita el margen blanco de los lados con UN SOLO recorte para todas las fotos (el más ancho): todos los artículos salen al mismo tamaño y alineados
-  const cajas = [...z.querySelectorAll('.pbox .imgw')].filter(c => { const im = c.querySelector('img'); return im && im.naturalWidth; }), lims = cajas.map(c => limitesBlanco(c.querySelector('img'))).filter(Boolean);
-  if (lims.length) { const comun = [Math.min(...lims.map(b => b[0])), Math.max(...lims.map(b => b[1]))]; cajas.forEach(c => aplicaRecorte(c, comun)); }
+  z.querySelectorAll('.pbox .imgw').forEach(c => { const im = c.querySelector('img'); if (im && im.naturalWidth) recorteBlanco(im, c); });   // recorte por las rayas de la página (recortes.js): todas las fotos del tema con el mismo ancho, así todos los artículos salen del mismo tamaño
   rebanar(z, t);
   const tema0 = document.documentElement.dataset.theme; document.documentElement.dataset.theme = 'light';
   let hecho = false; const fin = () => { if (hecho) return; hecho = true; document.documentElement.dataset.theme = tema0; z.innerHTML = ''; removeEventListener('afterprint', fin); };
