@@ -1238,7 +1238,7 @@ async function lanzaImp() {
   }
   if (!n) { aviso('No has elegido nada para imprimir'); return; }
   await Promise.all([...z.querySelectorAll('img')].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
-  z.querySelectorAll('.pbox .imgw').forEach(c => { const k = c.parentElement.dataset.cr && (window.RBPRE || {})[t + '/' + c.parentElement.dataset.cr]; if (k) return aplicaRecorte(c, k); const im = c.querySelector('img'); if (im && im.naturalWidth) recorteBlanco(im, c); });   // los recortes a medida (lienzo) usan el mismo recorte que su foto entera   // recorte por las rayas de la página (recortes.js): todas las fotos del tema con el mismo ancho, así todos los artículos salen del mismo tamaño
+  z.querySelectorAll('.pbox .imgw').forEach(c => { const k = c.parentElement.dataset.cr && (window.RBPRE || {})['t' + t + '/' + c.parentElement.dataset.cr]; if (k) return aplicaRecorte(c, k); const im = c.querySelector('img'); if (im && im.naturalWidth) recorteBlanco(im, c); });   // los recortes a medida (lienzo) usan el mismo recorte que su foto entera   // recorte por las rayas de la página (recortes.js): todas las fotos del tema con el mismo ancho, así todos los artículos salen del mismo tamaño
   rebanar(z, t);
   const tema0 = document.documentElement.dataset.theme; document.documentElement.dataset.theme = 'light';
   let hecho = false; const fin = () => { if (hecho) return; hecho = true; document.documentElement.dataset.theme = tema0; z.innerHTML = ''; removeEventListener('afterprint', fin); };
