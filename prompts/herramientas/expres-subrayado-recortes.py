@@ -11,6 +11,13 @@ from PIL import Image
 pdf, out, cfg = sys.argv[1], sys.argv[2], json.load(open(sys.argv[3], encoding='utf-8'))
 APART = cfg.get('apartados', {})
 d = pymupdf.open(pdf); DPI = 130; K = DPI / 72
+# páginas/zonas tachadas (X, raya o MOD): se les borra el OCR para que no cuenten (expres-subrayado/tN-saltar.json: {"paginas":[36],"zonas":[[61,0.52,1.0]]})
+_sk = sys.argv[3].replace('-config.json', '-saltar.json')
+if __import__('os').path.exists(_sk):
+    _s = json.load(open(_sk, encoding='utf-8'))
+    for _p in _s.get('paginas', []): d[_p].add_redact_annot(d[_p].rect, fill=False); d[_p].apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE)
+    for _p, _a, _b in _s.get('zonas', []):
+        _h = d[_p].rect.height; d[_p].add_redact_annot(pymupdf.Rect(0, _h * _a, d[_p].rect.width, _h * _b), fill=False); d[_p].apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE)
 def img(p, y0, y1):
     r = p.rect; pm = p.get_pixmap(dpi=DPI, clip=pymupdf.Rect(r.x0, y0, r.x1, y1))
     return Image.frombytes('RGB', (pm.w, pm.h), pm.samples)

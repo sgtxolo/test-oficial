@@ -1,0 +1,70 @@
+{
+ "manual": [
+  {
+   "id": "a-293",
+   "nombre": "Código Civil · Artículo 293",
+   "piezas": [
+    [
+     86,
+     0.1,
+     0.235
+    ]
+   ]
+  },
+  {
+   "id": "a-28",
+   "nombre": "Código Civil · Artículo 28",
+   "piezas": [
+    [
+     15,
+     0.245,
+     0.4
+    ]
+   ]
+  },
+  {
+   "id": "a-103",
+   "nombre": "Código Civil · Artículo 103 (esquema)",
+   "piezas": [
+    [
+     40,
+     0.12,
+     0.83
+    ]
+   ]
+  },
+  {
+   "id": "a-rec",
+   "ficha": "^RECUERDA del temario",
+   "nombre": "Código Civil · RECUERDA del temario",
+   "expres": 1,
+   "piezas": [
+    [
+     88,
+     0.04,
+     0.96
+    ],
+    [
+     89,
+     0.04,
+     0.96
+    ],
+    [
+     90,
+     0.04,
+     0.96
+    ],
+    [
+     91,
+     0.04,
+     0.96
+    ],
+    [
+     92,
+     0.04,
+     0.96
+    ]
+   ]
+  }
+ ]
+}

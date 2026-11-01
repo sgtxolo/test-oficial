@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v361";
+const CACHE_NAME = "oposicion-cache-v362";
 // La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
 // Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
 // versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
@@ -21,6 +21,7 @@ const APP_SHELL = [
   "./expres-subrayado/bloques-t8.js",
   "./expres-subrayado/bloques-t9.js",
   "./expres-subrayado/bloques-t12.js",
+  "./expres-subrayado/bloques-t10.js",
   "./expres-subrayado/bloques-t6.js",
   "./expres-subrayado/revision-t7.js",
   "./expres-subrayado/revision-t14.js",
@@ -28,6 +29,7 @@ const APP_SHELL = [
   "./expres-subrayado/revision-t8.js",
   "./expres-subrayado/revision-t9.js",
   "./expres-subrayado/revision-t12.js",
+  "./expres-subrayado/revision-t10.js",
   "./expres-subrayado/revision-t6.js",
   "./expres-subrayado/cortes-t7.js",
   "./expres-subrayado/cortes-t14.js",
@@ -35,6 +37,7 @@ const APP_SHELL = [
   "./expres-subrayado/cortes-t8.js",
   "./expres-subrayado/cortes-t9.js",
   "./expres-subrayado/cortes-t12.js",
+  "./expres-subrayado/cortes-t10.js",
   "./expres-subrayado/cortes-t6.js",
   "./expres-subrayado/datos-t7.js",
   "./expres-subrayado/datos-t14.js",
@@ -42,6 +45,7 @@ const APP_SHELL = [
   "./expres-subrayado/datos-t8.js",
   "./expres-subrayado/datos-t9.js",
   "./expres-subrayado/datos-t12.js",
+  "./expres-subrayado/datos-t10.js",
   "./expres-subrayado/datos-t6.js",
   "./expres-subrayado/datos-t11.js",
   "./expres-subrayado/datos-t1.js",
@@ -52,6 +56,7 @@ const APP_SHELL = [
   "./expres-subrayado/tapa-t8.js",
   "./expres-subrayado/tapa-t9.js",
   "./expres-subrayado/tapa-t12.js",
+  "./expres-subrayado/tapa-t10.js",
   "./expres-subrayado/tapa-t6.js",
   "./expres-subrayado/tapa-t11.js",
   "./expres-subrayado/mejoras.js",
@@ -63,6 +68,7 @@ const APP_SHELL = [
   "./expres-subrayado/cuadros-t8.js",
   "./expres-subrayado/cuadros-t9.js",
   "./expres-subrayado/cuadros-t12.js",
+  "./expres-subrayado/cuadros-t10.js",
   "./expres-subrayado/cuadros-t6.js",
   "./expres-subrayado/cuadros-t11.js",
   "./expres-subrayado/esquema.css",
@@ -71,6 +77,7 @@ const APP_SHELL = [
   "./expres/t1.js",
   "./expres/t11.js",
   "./expres/t12.js",
+  "./expres/t10.js",
   "./expres/t13.js",
   "./expres/t14.js",
   "./expres/t15.js",
