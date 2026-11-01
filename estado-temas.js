@@ -1,5 +1,5 @@
 /* Estado de los temas (Estudiando / Estudiado / Lo olvidé + fecha) COMPARTIDO entre Esquemas y Exprés subrayado.
-   Formato común, clave 'estado-temas-v1':  { "N": { e: 'estudiando'|'estudiado'|'olvidado'|'' , f: 'AAAA-MM-DD', t: ms } }  (e '' = quitado)
+   Formato común, clave 'estado-temas-v2':  { "N": { e: 'estudiando'|'estudiado'|'olvidado'|'' , f: 'AAAA-MM-DD', t: ms } }  (e '' = quitado)
    - Misma web (mismo origen): se pasa de una app a otra al abrirla, al volver a la pestaña o al instante (evento «storage»).
    - Otros dispositivos: se sincroniza con backups/estado-temas.json del mismo repositorio privado y token que el resto (localStorage «oficialGhCfg»).
    - Gana siempre lo más reciente por tema. Un cambio hecho a mano cuenta como «ahora»; lo que solo existía en una app se toma con la fecha de estudio.
@@ -8,7 +8,8 @@
      aplicar(N, e, f)  -> pone (o quita, si e es '') el estado de ese tema en la app
      canon(e)          -> opcional: estados que la app no distingue (Esquemas no separa «estudiado» de «lo olvidé») */
 (function(){
-  const K = 'estado-temas-v1', CFG = 'oficialGhCfg', PATH = 'backups/estado-temas.json';
+  const K = 'estado-temas-v2', CFG = 'oficialGhCfg', PATH = 'backups/estado-temas-v2.json';   // v1 quedó envenenado por versiones viejas abiertas (marcaban «quitado»): ya no se usa
+  try { localStorage.removeItem('estado-temas-v1'); } catch (e) {}
   const rd = (k, d) => { try { return JSON.parse(localStorage.getItem(k) || 'null') || d; } catch (e) { return d; } };
   const wr = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
   const b64 = s => btoa(unescape(encodeURIComponent(s))), unb64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
