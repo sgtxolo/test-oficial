@@ -7832,8 +7832,8 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
     if (!pz){ avisoX('Este artículo todavía no tiene foto en Mi subrayado (tema ' + t + ').'); return; }
     if (estadoSub(t, pz) === 'dentro'){ location.href = 'expres-subrayado.html#q=' + encodeURIComponent(b._ids[0]); return; }
     var s = leeX(), k = t + '/' + pz.id, e = estadoSub(t, pz); s.inc = s.inc || {}; s.quit = s.quit || {};
-    if (e === 'anadido'){ delete s.inc[k]; avisoX('↩️ Quitado de Mi subrayado: ' + pz.nombre); }
-    else { if (esExtra(t, pz)) s.inc[k] = 1; s.quit[k] = 0; avisoX('📑 Añadido a Mi subrayado: ' + pz.nombre); }
+    if (e === 'anadido'){ s.inc[k] = 0; avisoX('↩️ Quitado de Mi subrayado: ' + pz.nombre); }
+    else { if (esExtra(t, pz)) s.inc[k] = Date.now(); s.quit[k] = 0; avisoX('📑 Añadido a Mi subrayado: ' + pz.nombre); }
     try { localStorage.setItem(LSX, JSON.stringify(s)); } catch (er) { avisoX('No he podido guardarlo en este dispositivo'); return; }
     document.querySelectorAll('.sub-add').forEach(function(x){ if (x._ids) pintaAdd(x); });
   }
@@ -7861,7 +7861,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
     var t = b._t, pz = piezaDeCuadro(t, b._tit); if (!pz) return;
     var s = leeX(), k = t + '/' + pz.id, dentro = estadoSub(t, pz) !== 'fuera'; s.inc = s.inc || {}; s.quit = s.quit || {}; s.vm = s.vm || {}; s.esq = s.esq || {};
     if (dentro && (s.vm[k] === 'e' || s.vm[k] === 'ae' || s.esq[k] == 1)){ avisoX('Este esquema ya está en Mi subrayado (' + pz.nombre + ')'); return; }
-    if (!dentro){ if (esExtra(t, pz)) s.inc[k] = 1; s.quit[k] = 0; s.vm[k] = 'e'; } else s.vm[k] = 'ae';
+    if (!dentro){ if (esExtra(t, pz)) s.inc[k] = Date.now(); s.quit[k] = 0; s.vm[k] = 'e'; } else s.vm[k] = 'ae';
     s.esq[k] = 1;
     try { localStorage.setItem(LSX, JSON.stringify(s)); } catch (er) { avisoX('No he podido guardarlo en este dispositivo'); return; }
     avisoX('🧩 Añadido a Mi subrayado: ' + pz.nombre + (dentro ? ' (artículo + esquema)' : ' (solo el esquema)'));
