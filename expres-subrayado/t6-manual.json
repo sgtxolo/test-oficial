@@ -1,14 +1,181 @@
-{"manual":[
- {"id":"a-7","nombre":"LO 4/2000 · Artículo 7","piezas":[[7,0.615,0.742]]},
- {"id":"a-45","nombre":"LO 4/2000 · Artículo 45","piezas":[[38,0.527,0.79]]},
- {"id":"a-da1","ficha":"^Disposici.n adicional primera — Plazo","nombre":"LO 4/2000 · Disposición adicional primera","expres":1,"piezas":[[65,0.18,0.57]]},
- {"id":"a-da3","ficha":"^Disposici.n adicional tercera","nombre":"LO 4/2000 · Disposición adicional tercera","expres":1,"piezas":[[66,0.125,0.68]]},
- {"id":"a-da4","ficha":"^Disposici.n adicional cuarta","nombre":"LO 4/2000 · Disposición adicional cuarta","expres":1,"piezas":[[66,0.685,0.93],[67,0.06,0.57]]},
- {"id":"a-da8","ficha":"^Disposici.n adicional octava","nombre":"LO 4/2000 · Disposición adicional octava","expres":1,"piezas":[[69,0.42,0.52]]},
- {"id":"a-da9","ficha":"^Disposici.n adicional novena","nombre":"LO 4/2000 · Disposición adicional novena","expres":1,"piezas":[[69,0.55,0.675]]},
- {"id":"b-3","nombre":"Ley 12/2009 · Artículo 3","piezas":[[79,0.42,0.565]]},
- {"id":"b-10","nombre":"Ley 12/2009 · Artículo 10","piezas":[[83,0.235,0.41]]},
- {"id":"b-33","nombre":"Ley 12/2009 · Artículo 33","piezas":[[94,0.8,0.9],[95,0.07,0.19]]},
- {"id":"b-37","nombre":"Ley 12/2009 · Artículo 37","piezas":[[96,0.795,0.93],[97,0.07,0.205]]},
- {"id":"b-da1","ficha":"^Disposici.n adicional primera — Reasentamiento","nombre":"Ley 12/2009 · Disposición adicional primera","expres":1,"piezas":[[103,0.185,0.43]]}
-]}
+{
+ "manual": [
+  {
+   "id": "a-7",
+   "nombre": "LO 4/2000 · Artículo 7",
+   "piezas": [
+    [
+     7,
+     0.615,
+     0.742
+    ]
+   ]
+  },
+  {
+   "id": "a-45",
+   "nombre": "LO 4/2000 · Artículo 45",
+   "piezas": [
+    [
+     38,
+     0.527,
+     0.79
+    ]
+   ]
+  },
+  {
+   "id": "a-da1",
+   "ficha": "^Disposici.n adicional primera — Plazo",
+   "nombre": "LO 4/2000 · Disposición adicional primera",
+   "expres": 1,
+   "piezas": [
+    [
+     65,
+     0.18,
+     0.57
+    ]
+   ]
+  },
+  {
+   "id": "a-da3",
+   "ficha": "^Disposici.n adicional tercera",
+   "nombre": "LO 4/2000 · Disposición adicional tercera",
+   "expres": 1,
+   "piezas": [
+    [
+     66,
+     0.125,
+     0.68
+    ]
+   ]
+  },
+  {
+   "id": "a-da4",
+   "ficha": "^Disposici.n adicional cuarta",
+   "nombre": "LO 4/2000 · Disposición adicional cuarta",
+   "expres": 1,
+   "piezas": [
+    [
+     66,
+     0.685,
+     0.93
+    ],
+    [
+     67,
+     0.06,
+     0.57
+    ]
+   ]
+  },
+  {
+   "id": "a-da8",
+   "ficha": "^Disposici.n adicional octava",
+   "nombre": "LO 4/2000 · Disposición adicional octava",
+   "expres": 1,
+   "piezas": [
+    [
+     69,
+     0.42,
+     0.52
+    ]
+   ]
+  },
+  {
+   "id": "a-da9",
+   "ficha": "^Disposici.n adicional novena",
+   "nombre": "LO 4/2000 · Disposición adicional novena",
+   "expres": 1,
+   "piezas": [
+    [
+     69,
+     0.55,
+     0.675
+    ]
+   ]
+  },
+  {
+   "id": "a-da11",
+   "ficha": "^Disposici.n adicional und",
+   "nombre": "LO 4/2000 · Disposición adicional undécima (nueva)",
+   "expres": 1,
+   "piezas": [
+    [
+     108,
+     0.14,
+     0.93
+    ],
+    [
+     109,
+     0.06,
+     0.17
+    ]
+   ]
+  },
+  {
+   "id": "b-3",
+   "nombre": "Ley 12/2009 · Artículo 3",
+   "piezas": [
+    [
+     79,
+     0.42,
+     0.565
+    ]
+   ]
+  },
+  {
+   "id": "b-10",
+   "nombre": "Ley 12/2009 · Artículo 10",
+   "piezas": [
+    [
+     83,
+     0.235,
+     0.41
+    ]
+   ]
+  },
+  {
+   "id": "b-33",
+   "nombre": "Ley 12/2009 · Artículo 33",
+   "piezas": [
+    [
+     94,
+     0.8,
+     0.9
+    ],
+    [
+     95,
+     0.07,
+     0.19
+    ]
+   ]
+  },
+  {
+   "id": "b-37",
+   "nombre": "Ley 12/2009 · Artículo 37",
+   "piezas": [
+    [
+     96,
+     0.795,
+     0.93
+    ],
+    [
+     97,
+     0.07,
+     0.205
+    ]
+   ]
+  },
+  {
+   "id": "b-da1",
+   "ficha": "^Disposici.n adicional primera — Reasentamiento",
+   "nombre": "Ley 12/2009 · Disposición adicional primera",
+   "expres": 1,
+   "piezas": [
+    [
+     103,
+     0.185,
+     0.43
+    ]
+   ]
+  }
+ ]
+}
