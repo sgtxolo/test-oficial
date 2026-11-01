@@ -1,0 +1,1070 @@
+[
+ {
+  "id": "a-1",
+  "nombre": "LO 3/2007 · Artículo 1",
+  "img": "a-1.jpg",
+  "wh": [
+   1075,
+   703
+  ],
+  "imgr": "a-1-r.jpg",
+  "ap": [
+   1
+  ],
+  "whr": [
+   1075,
+   616
+  ],
+  "tr": [
+   [
+    0,
+    494
+   ],
+   [
+    574,
+    666
+   ]
+  ]
+ },
+ {
+  "id": "a-3",
+  "nombre": "LO 3/2007 · Artículo 3",
+  "img": "a-3.jpg",
+  "wh": [
+   1075,
+   145
+  ]
+ },
+ {
+  "id": "a-4",
+  "nombre": "LO 3/2007 · Artículo 4",
+  "img": "a-4.jpg",
+  "wh": [
+   1075,
+   171
+  ],
+  "imgr": "a-4-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   137
+  ],
+  "tr": [
+   [
+    0,
+    137
+   ]
+  ]
+ },
+ {
+  "id": "a-5",
+  "nombre": "LO 3/2007 · Artículo 5",
+  "img": "a-5.jpg",
+  "wh": [
+   1075,
+   416
+  ],
+  "imgr": "a-5-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   208
+  ],
+  "tr": [
+   [
+    0,
+    138
+   ],
+   [
+    280,
+    320
+   ]
+  ]
+ },
+ {
+  "id": "a-6",
+  "nombre": "LO 3/2007 · Artículo 6",
+  "img": "a-6.jpg",
+  "wh": [
+   1075,
+   428
+  ]
+ },
+ {
+  "id": "a-7",
+  "nombre": "LO 3/2007 · Artículo 7",
+  "img": "a-7.jpg",
+  "wh": [
+   1075,
+   1338
+  ],
+  "imgr": "a-7-r.jpg",
+  "ap": [
+   1,
+   2,
+   4
+  ],
+  "whr": [
+   1075,
+   477
+  ],
+  "tr": [
+   [
+    0,
+    42
+   ],
+   [
+    441,
+    530
+   ],
+   [
+    988,
+    1124
+   ],
+   [
+    1167,
+    1287
+   ]
+  ]
+ },
+ {
+  "id": "a-8",
+  "nombre": "LO 3/2007 · Artículo 8",
+  "img": "a-8.jpg",
+  "wh": [
+   1075,
+   130
+  ],
+  "imgr": "a-8-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   94
+  ],
+  "tr": [
+   [
+    0,
+    94
+   ]
+  ]
+ },
+ {
+  "id": "a-9",
+  "nombre": "LO 3/2007 · Artículo 9",
+  "img": "a-9.jpg",
+  "wh": [
+   1075,
+   236
+  ],
+  "imgr": "a-9-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   114
+  ],
+  "tr": [
+   [
+    0,
+    46
+   ],
+   [
+    58,
+    96
+   ]
+  ]
+ },
+ {
+  "id": "a-10",
+  "nombre": "LO 3/2007 · Artículo 10",
+  "img": "a-10.jpg",
+  "wh": [
+   1075,
+   227
+  ]
+ },
+ {
+  "id": "a-12",
+  "nombre": "LO 3/2007 · Artículo 12",
+  "img": "a-12.jpg",
+  "wh": [
+   1075,
+   858
+  ]
+ },
+ {
+  "id": "a-13",
+  "nombre": "LO 3/2007 · Artículo 13",
+  "img": "a-13.jpg",
+  "wh": [
+   1075,
+   2155
+  ],
+  "imgr": "a-13-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
+  "whr": [
+   1075,
+   268
+  ],
+  "tr": [
+   [
+    0,
+    201
+   ],
+   [
+    256,
+    293
+   ]
+  ]
+ },
+ {
+  "id": "a-14",
+  "nombre": "LO 3/2007 · Artículo 14",
+  "img": "a-14.jpg",
+  "wh": [
+   1075,
+   842
+  ],
+  "imgr": "a-14-r.jpg",
+  "ap": [
+   2,
+   3,
+   4,
+   6,
+   7,
+   8,
+   10
+  ],
+  "whr": [
+   1075,
+   562
+  ],
+  "tr": [
+   [
+    0,
+    101
+   ],
+   [
+    125,
+    165
+   ],
+   [
+    180,
+    233
+   ],
+   [
+    453,
+    731
+   ]
+  ]
+ },
+ {
+  "id": "a-15",
+  "nombre": "LO 3/2007 · Artículo 15",
+  "img": "a-15.jpg",
+  "wh": [
+   1075,
+   248
+  ]
+ },
+ {
+  "id": "a-16",
+  "nombre": "LO 3/2007 · Artículo 16",
+  "img": "a-16.jpg",
+  "wh": [
+   1075,
+   107
+  ],
+  "imgr": "a-16-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   79
+  ],
+  "tr": [
+   [
+    0,
+    79
+   ]
+  ]
+ },
+ {
+  "id": "a-18",
+  "nombre": "LO 3/2007 · Artículo 18",
+  "img": "a-18.jpg",
+  "wh": [
+   1075,
+   128
+  ]
+ },
+ {
+  "id": "a-19",
+  "nombre": "LO 3/2007 · Artículo 19",
+  "img": "a-19.jpg",
+  "wh": [
+   1075,
+   125
+  ],
+  "imgr": "a-19-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   78
+  ],
+  "tr": [
+   [
+    0,
+    78
+   ]
+  ]
+ },
+ {
+  "id": "a-21",
+  "nombre": "LO 3/2007 · Artículo 21",
+  "img": "a-21.jpg",
+  "wh": [
+   1075,
+   325
+  ],
+  "imgr": "a-21-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
+  "whr": [
+   1075,
+   280
+  ],
+  "tr": [
+   [
+    0,
+    99
+   ],
+   [
+    143,
+    294
+   ]
+  ]
+ },
+ {
+  "id": "a-22",
+  "nombre": "LO 3/2007 · Artículo 22",
+  "img": "a-22.jpg",
+  "wh": [
+   1075,
+   353
+  ],
+  "imgr": "a-22-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   344
+  ],
+  "tr": [
+   [
+    0,
+    147
+   ],
+   [
+    179,
+    250
+   ],
+   [
+    269,
+    335
+   ]
+  ]
+ },
+ {
+  "id": "a-51",
+  "nombre": "LO 3/2007 · Artículo 51",
+  "img": "a-51.jpg",
+  "wh": [
+   1075,
+   2220
+  ],
+  "imgr": "a-51-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   454
+  ],
+  "tr": [
+   [
+    0,
+    270
+   ],
+   [
+    287,
+    441
+   ]
+  ]
+ },
+ {
+  "id": "a-52",
+  "nombre": "LO 3/2007 · Artículo 52",
+  "img": "a-52.jpg",
+  "wh": [
+   1075,
+   128
+  ]
+ },
+ {
+  "id": "a-53",
+  "nombre": "LO 3/2007 · Artículo 53",
+  "img": "a-53.jpg",
+  "wh": [
+   1075,
+   204
+  ]
+ },
+ {
+  "id": "a-54",
+  "nombre": "LO 3/2007 · Artículo 54",
+  "img": "a-54.jpg",
+  "wh": [
+   1075,
+   397
+  ],
+  "imgr": "a-54-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   206
+  ],
+  "tr": [
+   [
+    0,
+    95
+   ],
+   [
+    298,
+    379
+   ]
+  ]
+ },
+ {
+  "id": "a-55",
+  "nombre": "LO 3/2007 · Artículo 55",
+  "img": "a-55.jpg",
+  "wh": [
+   1075,
+   140
+  ]
+ },
+ {
+  "id": "a-56",
+  "nombre": "LO 3/2007 · Artículo 56",
+  "img": "a-56.jpg",
+  "wh": [
+   1075,
+   2170
+  ],
+  "imgr": "a-56-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   176
+  ],
+  "tr": [
+   [
+    0,
+    176
+   ]
+  ]
+ },
+ {
+  "id": "a-58",
+  "nombre": "LO 3/2007 · Artículo 58",
+  "img": "a-58.jpg",
+  "wh": [
+   1075,
+   262
+  ],
+  "imgr": "a-58-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   267
+  ],
+  "tr": [
+   [
+    0,
+    85
+   ],
+   [
+    99,
+    183
+   ],
+   [
+    213,
+    251
+   ]
+  ]
+ },
+ {
+  "id": "a-59",
+  "nombre": "LO 3/2007 · Artículo 59",
+  "img": "a-59.jpg",
+  "wh": [
+   1075,
+   259
+  ],
+  "imgr": "a-59-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   89
+  ],
+  "tr": [
+   [
+    0,
+    89
+   ]
+  ]
+ },
+ {
+  "id": "a-60",
+  "nombre": "LO 3/2007 · Artículo 60",
+  "img": "a-60.jpg",
+  "wh": [
+   1075,
+   305
+  ],
+  "imgr": "a-60-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
+  "whr": [
+   1075,
+   263
+  ],
+  "tr": [
+   [
+    0,
+    107
+   ],
+   [
+    186,
+    236
+   ],
+   [
+    259,
+    305
+   ]
+  ]
+ },
+ {
+  "id": "a-61",
+  "nombre": "LO 3/2007 · Artículo 61",
+  "img": "a-61.jpg",
+  "wh": [
+   1075,
+   270
+  ],
+  "imgr": "a-61-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
+  "whr": [
+   1075,
+   177
+  ],
+  "tr": [
+   [
+    0,
+    177
+   ]
+  ]
+ },
+ {
+  "id": "a-62",
+  "nombre": "LO 3/2007 · Artículo 62",
+  "img": "a-62.jpg",
+  "wh": [
+   1075,
+   491
+  ]
+ },
+ {
+  "id": "a-63",
+  "nombre": "LO 3/2007 · Artículo 63",
+  "img": "a-63.jpg",
+  "wh": [
+   1075,
+   200
+  ],
+  "imgr": "a-63-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   84
+  ],
+  "tr": [
+   [
+    0,
+    84
+   ]
+  ]
+ },
+ {
+  "id": "a-64",
+  "nombre": "LO 3/2007 · Artículo 64",
+  "img": "a-64.jpg",
+  "wh": [
+   1075,
+   1397
+  ]
+ },
+ {
+  "id": "a-65",
+  "nombre": "LO 3/2007 · Artículo 65",
+  "img": "a-65.jpg",
+  "wh": [
+   1075,
+   290
+  ]
+ },
+ {
+  "id": "a-66",
+  "nombre": "LO 3/2007 · Artículo 66",
+  "img": "a-66.jpg",
+  "wh": [
+   1075,
+   336
+  ]
+ },
+ {
+  "id": "a-67",
+  "nombre": "LO 3/2007 · Artículo 67",
+  "img": "a-67.jpg",
+  "wh": [
+   1075,
+   319
+  ]
+ },
+ {
+  "id": "a-68",
+  "nombre": "LO 3/2007 · Artículo 68",
+  "img": "a-68.jpg",
+  "wh": [
+   1075,
+   210
+  ]
+ },
+ {
+  "id": "a-2",
+  "nombre": "LO 3/2007 · Artículo 2",
+  "img": "a-2.jpg",
+  "wh": [
+   1075,
+   252
+  ]
+ },
+ {
+  "id": "a-rec",
+  "nombre": "LO 3/2007 · RECUERDA del temario",
+  "img": "a-rec.jpg",
+  "wh": [
+   1075,
+   4197
+  ]
+ },
+ {
+  "id": "b-pre",
+  "nombre": "RD 247/2024 · Preámbulo",
+  "img": "b-pre.jpg",
+  "wh": [
+   1075,
+   1613
+  ],
+  "imgr": "b-pre-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   414
+  ],
+  "tr": [
+   [
+    456,
+    496
+   ],
+   [
+    608,
+    716
+   ],
+   [
+    805,
+    845
+   ],
+   [
+    1065,
+    1105
+   ],
+   [
+    1469,
+    1535
+   ]
+  ]
+ },
+ {
+  "id": "b-p1",
+  "nombre": "Protocolo · I. Introducción",
+  "img": "b-p1.jpg",
+  "wh": [
+   1075,
+   814
+  ],
+  "imgr": "b-p1-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   724
+  ],
+  "tr": [
+   [
+    0,
+    322
+   ],
+   [
+    406,
+    709
+   ],
+   [
+    768,
+    807
+   ]
+  ]
+ },
+ {
+  "id": "b-p21",
+  "nombre": "Protocolo · 2.1 Principios rectores",
+  "img": "b-p21.jpg",
+  "wh": [
+   1075,
+   944
+  ],
+  "imgr": "b-p21-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   750
+  ],
+  "tr": [
+   [
+    61,
+    324
+   ],
+   [
+    418,
+    875
+   ]
+  ]
+ },
+ {
+  "id": "b-p23",
+  "nombre": "Protocolo · 2.3 Garantías de actuación",
+  "img": "b-p23.jpg",
+  "wh": [
+   1075,
+   389
+  ],
+  "imgr": "b-p23-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   280
+  ],
+  "tr": [
+   [
+    0,
+    78
+   ],
+   [
+    104,
+    129
+   ],
+   [
+    148,
+    265
+   ]
+  ]
+ },
+ {
+  "id": "b-p24",
+  "nombre": "Protocolo · 2.4 Definiciones",
+  "img": "b-p24.jpg",
+  "wh": [
+   1075,
+   404
+  ],
+  "imgr": "b-p24-r.jpg",
+  "ap": [
+   2,
+   4,
+   5
+  ],
+  "whr": [
+   1075,
+   389
+  ],
+  "tr": [
+   [
+    0,
+    111
+   ],
+   [
+    172,
+    202
+   ],
+   [
+    224,
+    254
+   ],
+   [
+    272,
+    400
+   ]
+  ]
+ },
+ {
+  "id": "b-p251",
+  "nombre": "Protocolo · 2.5.1 Compromisos de la AGE",
+  "img": "b-p251.jpg",
+  "wh": [
+   1075,
+   1172
+  ],
+  "imgr": "b-p251-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   845
+  ],
+  "tr": [
+   [
+    0,
+    224
+   ],
+   [
+    493,
+    741
+   ],
+   [
+    823,
+    948
+   ],
+   [
+    967,
+    1125
+   ]
+  ]
+ },
+ {
+  "id": "b-p252",
+  "nombre": "Protocolo · 2.5.2 Compromisos de la representación sindical",
+  "img": "b-p252.jpg",
+  "wh": [
+   1075,
+   396
+  ]
+ },
+ {
+  "id": "b-p43",
+  "nombre": "Protocolo · 4.3 Conclusiones e informe",
+  "img": "b-p43.jpg",
+  "wh": [
+   1075,
+   882
+  ],
+  "imgr": "b-p43-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   256
+  ],
+  "tr": [
+   [
+    0,
+    256
+   ]
+  ]
+ },
+ {
+  "id": "b-p44",
+  "nombre": "Protocolo · 4.4 Comité de Asesoramiento",
+  "img": "b-p44.jpg",
+  "wh": [
+   1075,
+   641
+  ],
+  "imgr": "b-p44-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   555
+  ],
+  "tr": [
+   [
+    0,
+    259
+   ],
+   [
+    308,
+    346
+   ],
+   [
+    367,
+    565
+   ]
+  ]
+ },
+ {
+  "id": "b-a1",
+  "nombre": "Protocolo · Anexo I. Asesoría confidencial",
+  "img": "b-a1.jpg",
+  "wh": [
+   1075,
+   1308
+  ],
+  "imgr": "b-a1-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   582
+  ],
+  "tr": [
+   [
+    0,
+    421
+   ],
+   [
+    570,
+    701
+   ]
+  ]
+ },
+ {
+  "id": "b-a5",
+  "nombre": "Protocolo · Anexo V. Situaciones de acoso",
+  "img": "b-a5.jpg",
+  "wh": [
+   1075,
+   2100
+  ],
+  "imgr": "b-a5-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   1729
+  ],
+  "tr": [
+   [
+    0,
+    261
+   ],
+   [
+    473,
+    706
+   ],
+   [
+    730,
+    862
+   ],
+   [
+    910,
+    947
+   ],
+   [
+    992,
+    1152
+   ],
+   [
+    1166,
+    1309
+   ],
+   [
+    1402,
+    1683
+   ],
+   [
+    1795,
+    2067
+   ]
+  ]
+ },
+ {
+  "id": "b-a6",
+  "nombre": "Protocolo · Anexo VI. Referencias normativas",
+  "img": "b-a6.jpg",
+  "wh": [
+   1075,
+   3574
+  ],
+  "imgr": "b-a6-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   102
+  ],
+  "tr": [
+   [
+    626,
+    665
+   ],
+   [
+    2974,
+    3007
+   ]
+  ]
+ },
+ {
+  "id": "b-a2",
+  "nombre": "Protocolo · Anexos II, III y IV",
+  "img": "b-a2.jpg",
+  "wh": [
+   1075,
+   1415
+  ]
+ },
+ {
+  "id": "b-p22",
+  "nombre": "Protocolo · 2.2 Objetivos y ámbito de aplicación",
+  "img": "b-p22.jpg",
+  "wh": [
+   1075,
+   1446
+  ]
+ },
+ {
+  "id": "b-p3",
+  "nombre": "Protocolo · III. Medidas de prevención",
+  "img": "b-p3.jpg",
+  "wh": [
+   1075,
+   959
+  ]
+ },
+ {
+  "id": "b-p4",
+  "nombre": "Protocolo · IV. Procedimiento (consideraciones generales, inicio)",
+  "img": "b-p4.jpg",
+  "wh": [
+   1075,
+   1415
+  ]
+ },
+ {
+  "id": "b-p56",
+  "nombre": "Protocolo · V. Evaluación y seguimiento y VI. Implantación",
+  "img": "b-p56.jpg",
+  "wh": [
+   1075,
+   1050
+  ]
+ }
+]

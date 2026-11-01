@@ -1,0 +1,284 @@
+{
+ "manual": [
+  {
+   "id": "a-2",
+   "nombre": "LO 3/2007 · Artículo 2",
+   "piezas": [
+    [
+     4,
+     0.49,
+     0.655
+    ]
+   ]
+  },
+  {
+   "id": "a-rec",
+   "ficha": "^RECUERDA del temario",
+   "nombre": "LO 3/2007 · RECUERDA del temario",
+   "expres": 1,
+   "piezas": [
+    [
+     64,
+     0.04,
+     0.96
+    ],
+    [
+     65,
+     0.04,
+     0.96
+    ],
+    [
+     66,
+     0.04,
+     0.96
+    ]
+   ]
+  },
+  {
+   "id": "b-pre",
+   "ficha": "^Real Decreto 247/2024 · Pre",
+   "nombre": "RD 247/2024 · Preámbulo",
+   "expres": 1,
+   "piezas": [
+    [
+     34,
+     0.14,
+     0.96
+    ],
+    [
+     35,
+     0.04,
+     0.28
+    ]
+   ]
+  },
+  {
+   "id": "b-p1",
+   "ficha": "^Protocolo · I. Introducci",
+   "nombre": "Protocolo · I. Introducción",
+   "expres": 1,
+   "piezas": [
+    [
+     22,
+     0.155,
+     0.69
+    ]
+   ]
+  },
+  {
+   "id": "b-p21",
+   "ficha": "^Protocolo · II. Pol.tica de prevenci.n · 2.1",
+   "nombre": "Protocolo · 2.1 Principios rectores",
+   "expres": 1,
+   "piezas": [
+    [
+     22,
+     0.69,
+     0.95
+    ],
+    [
+     23,
+     0.04,
+     0.4
+    ]
+   ]
+  },
+  {
+   "id": "b-p23",
+   "ficha": "^Protocolo · 2.3",
+   "nombre": "Protocolo · 2.3 Garantías de actuación",
+   "expres": 1,
+   "piezas": [
+    [
+     24,
+     0.45,
+     0.705
+    ]
+   ]
+  },
+  {
+   "id": "b-p24",
+   "ficha": "^Protocolo · 2.4",
+   "nombre": "Protocolo · 2.4 Definiciones",
+   "expres": 1,
+   "piezas": [
+    [
+     24,
+     0.705,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "b-p251",
+   "ficha": "^Protocolo · 2.5 · Compromisos · 2.5.1|^Protocolo · 2.5 Compromisos · 2.5.1",
+   "nombre": "Protocolo · 2.5.1 Compromisos de la AGE",
+   "expres": 1,
+   "piezas": [
+    [
+     25,
+     0.05,
+     0.82
+    ]
+   ]
+  },
+  {
+   "id": "b-p252",
+   "ficha": "^Protocolo · 2.5.*2.5.2",
+   "nombre": "Protocolo · 2.5.2 Compromisos de la representación sindical",
+   "expres": 1,
+   "piezas": [
+    [
+     26,
+     0.07,
+     0.33
+    ]
+   ]
+  },
+  {
+   "id": "b-p43",
+   "ficha": "^Protocolo · IV. Procedimiento · 4.3",
+   "nombre": "Protocolo · 4.3 Conclusiones e informe",
+   "expres": 1,
+   "piezas": [
+    [
+     28,
+     0.06,
+     0.64
+    ]
+   ]
+  },
+  {
+   "id": "b-p44",
+   "ficha": "^Protocolo · IV. Procedimiento · 4.4",
+   "nombre": "Protocolo · 4.4 Comité de Asesoramiento",
+   "expres": 1,
+   "piezas": [
+    [
+     28,
+     0.68,
+     0.88
+    ],
+    [
+     29,
+     0.04,
+     0.26
+    ]
+   ]
+  },
+  {
+   "id": "b-a1",
+   "ficha": "^Protocolo · Anexo I.",
+   "nombre": "Protocolo · Anexo I. Asesoría confidencial",
+   "expres": 1,
+   "piezas": [
+    [
+     30,
+     0.07,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "b-a5",
+   "ficha": "^Protocolo · Anexo V.",
+   "nombre": "Protocolo · Anexo V. Situaciones de acoso",
+   "expres": 1,
+   "piezas": [
+    [
+     32,
+     0.05,
+     0.95
+    ],
+    [
+     33,
+     0.04,
+     0.52
+    ]
+   ]
+  },
+  {
+   "id": "b-a6",
+   "ficha": "^Protocolo · Anexo VI.",
+   "nombre": "Protocolo · Anexo VI. Referencias normativas",
+   "expres": 1,
+   "piezas": [
+    [
+     60,
+     0.07,
+     0.95
+    ],
+    [
+     61,
+     0.04,
+     0.95
+    ],
+    [
+     62,
+     0.04,
+     0.6
+    ]
+   ]
+  },
+  {
+   "id": "b-a2",
+   "nombre": "Protocolo · Anexos II, III y IV",
+   "piezas": [
+    [
+     31,
+     0.04,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "b-p22",
+   "nombre": "Protocolo · 2.2 Objetivos y ámbito de aplicación",
+   "piezas": [
+    [
+     23,
+     0.42,
+     0.97
+    ],
+    [
+     24,
+     0.04,
+     0.44
+    ]
+   ]
+  },
+  {
+   "id": "b-p3",
+   "nombre": "Protocolo · III. Medidas de prevención",
+   "piezas": [
+    [
+     26,
+     0.34,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "b-p4",
+   "nombre": "Protocolo · IV. Procedimiento (consideraciones generales, inicio)",
+   "piezas": [
+    [
+     27,
+     0.04,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "b-p56",
+   "nombre": "Protocolo · V. Evaluación y seguimiento y VI. Implantación",
+   "piezas": [
+    [
+     29,
+     0.28,
+     0.97
+    ]
+   ]
+  }
+ ]
+}

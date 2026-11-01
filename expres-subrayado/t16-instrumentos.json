@@ -1,0 +1,20 @@
+[
+ {
+  "id": "a",
+  "nombre": "LO 3/2007",
+  "paginas": [
+   4,
+   19
+  ],
+  "inicio": "^TÍTULO PRELIMINAR. OBJETO Y ÁMBITO DE LA LEY",
+  "cit": "LO 3/2007|Ley Orgánica 3/2007|Ley de Igualdad"
+ },
+ {
+  "id": "b",
+  "nombre": "RD 247/2024",
+  "inicio": "^Real Decreto 247/2024$",
+  "cit": "RD 247/2024|Real Decreto 247/2024|Protocolo de actuación frente al acoso",
+  "pre": "b-pre",
+  "pre_re": "pre[áa]mbulo del (?:RD|Real Decreto) 247/2024"
+ }
+]

@@ -1,0 +1,2 @@
+// Recortes del Exprés que se revisan a mano (el Exprés corta dentro de un apartado): todos = los que hay que revisar, hechos = ya revisados.
+(window.EXSUB_REV=window.EXSUB_REV||{})[16]={"todos": ["a-1", "a-4", "a-5", "a-7", "a-8", "a-9", "a-13", "a-14", "a-16", "a-19", "a-21", "a-22", "a-51", "a-54", "a-56", "a-58", "a-59", "a-60", "a-61", "a-63"], "esq": [], "tachado": [], "fuera": [], "hechos": ["a-1", "a-4", "a-5", "a-7", "a-8", "a-9", "a-13", "a-14", "a-16", "a-19", "a-21", "a-22", "a-51", "a-54", "a-56", "a-58", "a-59", "a-60", "a-61", "a-63"]};
