@@ -7955,7 +7955,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
     '.ds-temas{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}',
     '.ds-t{background:var(--panel);border:1px solid var(--borde);border-radius:16px;padding:14px 16px;cursor:pointer}.ds-t:hover{border-color:var(--verde-med)}.ds-t .nu{display:inline-block;background:var(--verde-suave);color:var(--verde-osc);border-radius:10px;padding:2px 10px;font-size:12.5px;font-weight:800}',
     '.ds-t h4{margin:8px 0 6px;font-size:16px;font-family:var(--fuente);color:var(--texto);line-height:1.25}.ds-t .m{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12.5px;color:var(--texto-gris);margin-top:4px}',
-    '.ds-t .br{height:7px;border-radius:5px;background:var(--panel-alt);overflow:hidden;margin-top:8px}.ds-t .br i{display:block;height:100%;background:var(--verde-med)}.ds-t .br.q i{background:#d89b2a}',
+    '.ds-t .br{height:7px;border-radius:5px;background:var(--panel-alt);overflow:hidden;margin-top:8px}.ds-t .br i{display:block;height:100%;background:var(--verde-med)}.ds-t .br.q i{background:#d89b2a}.ds-t .br.s i{background:#7a5bd0}',
     '.ds-t .est{display:inline-block;font-size:11.5px;font-weight:800;border-radius:10px;padding:2px 9px;margin-left:6px;background:var(--panel-alt);color:var(--texto-gris)}.ds-t .est.tarde{background:#fde1dc;color:#a3281b}.ds-t .est.hoy{background:#fff0c2;color:#7a5b00}.ds-t .est.estu{background:#e2dafc;color:#4a2f9c}',
     '.ds-t .pr{margin-top:8px;font-size:12.5px;font-weight:800;color:var(--verde-med);text-decoration:none;display:inline-block}',
     '.ds-ex{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.ds-ex input{border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:10px;padding:7px 10px;font:inherit}',
@@ -7977,9 +7977,23 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
       return {id: n.dataset.target, n: parseInt(String(n.dataset.target).replace(/\D/g, ''), 10), nombre: bonito(n.textContent)};
     });
   }
+  var TS = [1, 3, 6, 7, 8, 9, 10, 11, 12, 14], cargados = 0, pedido = false;
+  function cargaSub(){
+    if (pedido) return; pedido = true;
+    TS.forEach(function(t){ var s = document.createElement('script'); s.src = 'expres-subrayado/datos-t' + t + '.js';
+      s.onload = s.onerror = function(){ if (++cargados === TS.length && ov.classList.contains('on')) pinta(); }; document.head.appendChild(s); });
+  }
+  function subDe(n, SB){
+    var E = (window.EXSUB || {})[n]; if (!E) return null;
+    var vs = E.piezas.filter(function(p){ return !(p.extra && !(SB.inc || {})[n + '/' + p.id]) && !(SB.quit || {})[n + '/' + p.id]; });
+    var hechos = vs.filter(function(p){ return (SB.vis || {})[n + '/' + p.id]; }).length, hoy = hoyISO();
+    var toca = vs.filter(function(p){ var m = (SB.mem || {})[n + '/' + p.id]; return m && m.d && m.d <= hoy; }).length;
+    return {total: vs.length, hechos: hechos, toca: toca};
+  }
+  function hoyISO(){ return iso(new Date()); }
   function datos(){
     var rep = rd('esquemas-repaso', {}), fich = rd('esquemas-fichas', {}), ult = rd('esquemas-ultima', {}), h = hoyN();
-    var S = rd(KT, {}), qs = S.qStats || {}, tq = totQ(), COB = window.COBERTURA || {};
+    var S = rd(KT, {}), qs = S.qStats || {}, tq = totQ(), COB = window.COBERTURA || {}, SB = rd('exsub2', {});
     var ok = {}, rp = {}, vis = {}, sum = {}, fall = {};
     Object.keys(fich).forEach(function(k){ var t = k.split('|')[0]; if (fich[k] === 'ok') ok[t] = (ok[t] || 0) + 1; else if (fich[k] === 'rep') rp[t] = (rp[t] || 0) + 1; });
     Object.keys(qs).forEach(function(id){
@@ -7992,7 +8006,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
       var r = rep[t.id], dif = null; if (r && !r.est) dif = aN(r.last) + INT[Math.min(r.st || 0, INT.length - 1)] - h;
       var nq = Math.max(tq[t.n] || 0, vis[t.n] || 0), v = vis[t.n] || 0, d = v ? (sum[t.n] || 0) / v * Math.min(1, v / Math.min(nq, 200)) : 0;   // nivel en lo visto × cuánto del tema has visto (con 200 preguntas vistas se da por demostrado)
       return {id: t.id, n: t.n, nombre: t.nombre, total: total, ok: Math.min(ok[t.id] || 0, total || 9e9), rp: rp[t.id] || 0, est: !!(r && r.est), empezado: !!r, dif: dif,
-              ult: ult[t.id], nq: nq, vistas: vis[t.n] || 0, dom: d, fallos: fall[t.n] || []};
+              ult: ult[t.id], sub: subDe(t.n, SB), nq: nq, vistas: vis[t.n] || 0, dom: d, fallos: fall[t.n] || []};
     });
   }
   function nota(D){
@@ -8012,6 +8026,8 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
     var D = datos(), S = rd(KT, {}), N = nota(D), R = racha(S), h = hoyN();
     var ex = rd('esquemas-examen', '') || (S.examDate ? String(S.examDate).slice(0, 10) : ''), dias = ex ? aN(ex) - h : null;
     var tot = D.reduce(function(s, t){ return s + t.total; }, 0), ok = D.reduce(function(s, t){ return s + t.ok; }, 0), pct = tot ? Math.round(ok * 100 / tot) : 0;
+    var SBs = rd('exsub2', {}), sT = 0, sH = 0, sToca = 0; D.forEach(function(t){ if (t.sub) { sT += t.sub.total; sH += t.sub.hechos; sToca += t.sub.toca; } });
+    var uS = SBs.ultimo && window.EXSUB && window.EXSUB[SBs.ultimo.t] ? window.EXSUB[SBs.ultimo.t].piezas.filter(function(p){ return p.id === SBs.ultimo.id; })[0] : null;
     var tarde = D.filter(function(t){ return t.dif !== null && t.dif < 0; }).sort(function(a, b){ return a.dif - b.dif; }), hoy = D.filter(function(t){ return t.dif === 0; });
     var nuevos = D.filter(function(t){ return !t.empezado && t.total; }), estu = D.filter(function(t){ return t.est; });
     var u = D.filter(function(t){ return t.ult; }).sort(function(a, b){ return b.ult.t - a.ult.t; })[0];
@@ -8022,16 +8038,18 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
       + '<div class="ds-st"><b>' + (N ? N.nota.toFixed(1).replace('.', ',') : '–') + '</b><span>nota estimada si fuera hoy</span></div>'
       + '<div class="ds-st"><b>' + (dias === null ? '—' : Math.max(dias, 0)) + '</b><span>días para el examen</span></div>'
       + '<div class="ds-st"><b>' + R.dias + ' 🔥</b><span>días de racha' + (R.meta ? ' · hoy ' + Math.min(R.hoy, R.meta) + '/' + R.meta : '') + '</span></div></div>'
-      + '<div class="ds-bar"><i style="width:' + pct + '%"></i></div></div>';
+      + '<div class="ds-bar"><i style="width:' + pct + '%"></i></div>' + (sT ? '<p style="margin-top:10px">📑 Tu temario subrayado: <b>' + sH + '/' + sT + '</b> artículos vistos (' + Math.round(100 * sH / sT) + ' %)' + (sToca ? ' · 🧠 ' + sToca + ' para repasar hoy' : '') + '</p>' : '') + '</div>';
     if (u) h2 += '<div class="ds-cont"><div><b>📍 Aquí te quedaste</b><span>' + esc(u.nombre) + ' · ' + esc(String(u.ult.k || '').replace(/\s+/g, ' ').slice(0, 70)) + '</span></div><button class="ds-btn" data-ds-ir="' + u.id + '">Ir →</button></div>';
 
+    if (uS) h2 += '<div class="ds-cont" style="background:var(--verde-suave);border-color:var(--verde-med)"><div><b>📑 En tu temario subrayado</b><span>' + esc(uS.nombre) + '</span></div><a class="ds-btn" style="text-decoration:none" href="expres-subrayado.html#t=' + SBs.ultimo.t + '&p=' + encodeURIComponent(SBs.ultimo.id) + '">Seguir →</a></div>';
     var hoyH = '<h3>🎯 Hoy toca</h3>';
     var fila = function(t, c, m){ return '<div class="ds-hoy ' + c + '" data-ds-ir="' + t.id + '"><b>' + esc(t.nombre) + '<small>' + m + '</small></b></div>'; };
     tarde.slice(0, 3).forEach(function(t){ hoyH += fila(t, 'tarde', '⚠️ Repaso atrasado ' + (-t.dif) + ' d'); });
     hoy.slice(0, 3).forEach(function(t){ hoyH += fila(t, 'hoy', '📌 Repaso de hoy'); });
     estu.slice(0, 2).forEach(function(t){ hoyH += fila(t, '', '📖 Estudiando ahora'); });
     if (!tarde.length && !hoy.length && !estu.length && nuevos.length) hoyH += fila(nuevos[0], '', '🆕 Siguiente tema nuevo · ' + nuevos[0].total + ' fichas');
-    if (!tarde.length && !hoy.length && !estu.length && !nuevos.length) hoyH += '<p>✅ Hoy no te toca nada. Buen trabajo.</p>';
+    if (!tarde.length && !hoy.length && !estu.length && !nuevos.length && !sToca) hoyH += '<p>✅ Hoy no te toca nada. Buen trabajo.</p>';
+    if (sToca) hoyH += '<div class="ds-hoy hoy"><b>🧠 ' + sToca + ' recortes del subrayado para repasar hoy<small>Ábrelos en el temario subrayado (filtro «Toca hoy»)</small></b></div>';
     var rpT = D.reduce(function(s, t){ return s + t.rp; }, 0); if (rpT) hoyH += '<p style="margin-top:8px">🔁 ' + rpT + ' fichas marcadas para repasar.</p>';
 
     var notaH = '<div class="ds-card ds-nota"><h3>📈 Nota estimada</h3>';
@@ -8066,6 +8084,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
       var est = t.est ? '<span class="est estu">estudiando</span>' : t.dif === null ? '<span class="est">sin empezar</span>' : t.dif < 0 ? '<span class="est tarde">repaso atrasado</span>' : t.dif === 0 ? '<span class="est hoy">repasar hoy</span>' : '<span class="est">repaso en ' + t.dif + ' d</span>';
       h2 += '<div class="ds-t" data-ds-ir="' + t.id + '"><span class="nu">Tema ' + t.n + '</span>' + est + '<h4>' + esc(t.nombre) + '</h4>'
         + '<div class="m"><span>📄 ' + t.ok + '/' + t.total + ' fichas</span><span>🔁 ' + t.rp + ' a repasar</span></div><div class="br"><i style="width:' + p + '%"></i></div>'
+        + (t.sub ? '<div class="m"><span>📑 Subrayado: ' + t.sub.hechos + '/' + t.sub.total + ' vistos' + (t.sub.toca ? ' · 🧠 ' + t.sub.toca + ' hoy' : '') + '</span></div><div class="br s"><i style="width:' + Math.round(100 * t.sub.hechos / (t.sub.total || 1)) + '%"></i></div>' : '')
         + '<div class="m"><span>🎯 ' + t.vistas + '/' + t.nq + ' preguntas vistas · dominio ' + pq + ' %</span></div><div class="br q"><i style="width:' + pq + '%"></i></div>'
         + (t.fallos.length ? '<a class="pr" href="' + urlTest(t.fallos) + '">❌ Practicar mis ' + t.fallos.length + ' fallos</a>' : '') + '</div>';
     });
@@ -8074,7 +8093,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
     var y = ov.scrollTop; ov.innerHTML = h2; ov.scrollTop = y;
   }
 
-  function abre(){ pinta(); ov.classList.add('on'); document.body.style.overflow = 'hidden'; }
+  function abre(){ cargaSub(); pinta(); ov.classList.add('on'); document.body.style.overflow = 'hidden'; }
   function cierra(){ ov.classList.remove('on'); document.body.style.overflow = ''; window.scrollTo(0, 0); }
   window.abrirInicioEsquemas = abre;
   function clic(sel){ var b = document.querySelector(sel); if (b) b.click(); }
@@ -8100,7 +8119,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
 
   var top = document.getElementById('barra-acciones'), ref = document.getElementById('btn-marcas');
   if (top) { var b = document.createElement('button'); b.type = 'button'; b.className = 'btn-pdf'; b.id = 'btn-inicio'; b.textContent = '🏠 Inicio'; b.title = 'Pantalla de inicio: tu avance, nota estimada, qué toca hoy y todos los temas'; b.onclick = abre; top.insertBefore(b, top.firstChild); }
-  if (!location.hash) abre();
+  if (!location.hash) abre();   // cargaSub() trae los datos del subrayado y repinta al terminar
 })();
 </script>
 </body>
