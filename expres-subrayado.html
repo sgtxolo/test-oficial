@@ -1050,7 +1050,7 @@ function cambiaTexto(a) {
 }
 // ---------- IMPRESIÓN HÍBRIDA: por cada artículo eliges qué versión sale en el papel ----------
 // 📑 tu subrayado (la captura, con tus marcas) · ⚡ el artículo del Exprés de Esquemas (con sus sellos) · 🧩 los cuadros de esquema. Se pueden mezclar artículo a artículo.
-st.imp = st.imp || {}; st.impOp = st.impOp || {bn: false, ent: false}; if (st.impOp.zoom === 100) st.impOp.zoom = 95; else if (st.impOp.zoom === 85) st.impOp.zoom = 88;   // tamaños de foto reajustados: Grande 100→95, Media 85→88
+st.imp = st.imp || {}; st.impOp = st.impOp || {bn: false, ent: false}; if (st.impOp.zoom === 100) st.impOp.zoom = 95; else if (st.impOp.zoom === 85) st.impOp.zoom = 90; else if (st.impOp.zoom === 88) st.impOp.zoom = 90;   // tamaños de foto reajustados: Grande 100→95, Media 85→90
 const EXH = {};
 function fichaExpres(t, p) {
   if (p.fx === undefined || !window.EXPRES_T || !window.EXPRES_T[t]) return null;
@@ -1085,7 +1085,7 @@ function fichaNodo(t, p, desplegar) {   // desplegar = true: los (…) del Expr�
 // Al imprimir, «Mi subrayado» es la versión recortada si el artículo la tiene (si no, la única que hay) y «Entero» es el artículo completo.
 const recImp = p => !!p.imgr, hayAlgo = s => !!(s && (s.s || s.n || s.x || s.d || s.e));
 function estPag(t, p, s) {
-  let mm = 0, fz = (st.impOp.fz || 12) / 12; const zf = 1.38 * (st.impOp.zoom || 88) / 100;   // 1,38 = ampliación media al quitar los márgenes blancos de los lados (≈1,2) y aire entre artículos y saltos de página (≈1,15); calibrado con una impresión real del Tema 11 (105 págs)
+  let mm = 0, fz = (st.impOp.fz || 12) / 12; const zf = 1.38 * (st.impOp.zoom || 90) / 100;   // 1,38 = ampliación media al quitar los márgenes blancos de los lados (≈1,2) y aire entre artículos y saltos de página (≈1,15); calibrado con una impresión real del Tema 11 (105 págs)
   if (s.s) { const wh = recImp(p) ? p.whr : p.wh; if (wh) mm += wh[1] / wh[0] * 190 * zf; }
   if (s.n && p.wh) mm += p.wh[1] / p.wh[0] * 190 * zf;
   if (s.x || s.d) { const f = fichaExpres(t, p); if (f) mm += f.replace(/<[^>]+>/g, '').length * .075 * fz * fz * ((s.x ? 1 : 0) + (s.d ? 1.25 : 0)); }
@@ -1161,7 +1161,7 @@ function imprimirPanel() {
     + '<div class="chips" style="margin:0 0 10px">' + [['s', '📑 Todo con mi subrayado (recortado)'], ['n', '📑 Todo con mi subrayado entero'], ['x', '⚡ Todo con el Exprés'], ['d', '⚡ Todo con el Exprés (…) abiertos'], ['e', '🧩 Solo los esquemas'], ['m', '🏷 Solo lo marcado (EXOF/EX/✱/R)'], ['n', '✕ Quitar todo']].map(a => '<button class="chip" data-imp-a="' + a[0] + '">' + a[1] + '</button>').join('') + '</div>'
     + '<div class="imp-rango"><b>Por rango:</b> ' + (ns.length > 1 ? '<select class="f" id="imp-n">' + ns.map(c => '<option value="' + c.p + '">' + esc(c.nombre) + '</option>').join('') + '</select>' : '<input type="hidden" id="imp-n" value="' + (ns[0] ? ns[0].p : '') + '">') + ' artículos del <input id="imp-de" type="number" min="1" placeholder="1"> al <input id="imp-aa" type="number" min="1" placeholder="9"> →'
     + '<select class="f" id="imp-v"><option value="s">Mi subrayado (recortado)</option><option value="n">Mi subrayado entero</option><option value="x">Exprés de Esquemas</option><option value="d">Exprés con (…) abiertos</option><option value="e">Esquema</option><option value="0">No imprimir</option></select><button class="chip on" data-imp-a="r">Aplicar</button></div>'
-    + '<div style="display:flex;gap:16px;flex-wrap:wrap;margin:10px 0;font-size:13.5px"><label><input type="checkbox" id="imp-bn"' + (op.bn ? ' checked' : '') + '> Imprimir en blanco y negro (grises)</label><label>Letra del Exprés <select class="f" id="imp-fz">' + [[11, 'Pequeña'], [12, 'Media (recomendada)'], [13, 'Algo mayor'], [14, 'Como el PDF de Esquemas']].map(o => '<option value="' + o[0] + '"' + ((op.fz || 12) === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') + '</select></label><label>Tamaño de las fotos <select class="f" id="imp-zoom">' + [[95, 'Grande (como el Exprés)'], [88, 'Media (≈ 15 % menos páginas)'], [70, 'Pequeña (≈ 30 % menos páginas)']].map(o => '<option value="' + o[0] + '"' + ((op.zoom || 88) === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') + '</select></label></div>'
+    + '<div style="display:flex;gap:16px;flex-wrap:wrap;margin:10px 0;font-size:13.5px"><label><input type="checkbox" id="imp-bn"' + (op.bn ? ' checked' : '') + '> Imprimir en blanco y negro (grises)</label><label>Letra del Exprés <select class="f" id="imp-fz">' + [[11, 'Pequeña'], [12, 'Media (recomendada)'], [13, 'Algo mayor'], [14, 'Como el PDF de Esquemas']].map(o => '<option value="' + o[0] + '"' + ((op.fz || 12) === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') + '</select></label><label>Tamaño de las fotos <select class="f" id="imp-zoom">' + [[95, 'Grande (como el Exprés)'], [90, 'Media (≈ 15 % menos páginas)'], [70, 'Pequeña (≈ 30 % menos páginas)']].map(o => '<option value="' + o[0] + '"' + ((op.zoom || 90) === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') + '</select></label></div>'
     + '<div id="imp-lista">' + ps.map(p => filaImp(t, p, sel[p.id] || {})).join('') + '</div>'
     + '<div class="imp-bar"><span class="res" id="imp-res"></span><button class="ebtn" data-cerrar="1">Cerrar</button><button class="ebtn on" data-imp-go="1">🖨 Imprimir lo elegido</button></div>';
   modal(h, true); resumenImp(); const c = $('#mod .caja'); if (c) c.scrollTop = y;
@@ -1221,7 +1221,7 @@ async function imgFij(p) {
   } catch (e) { return null; }
 }
 async function lanzaImp() {
-  const t = tema, sel = st.imp[t] || {}, op = st.impOp, z = $('#zonaImp'); z.innerHTML = ''; z.className = op.bn ? 'bn' : ''; z.style.setProperty('--fz', (op.fz || 12) + 'px'); z.style.setProperty('--zoom', op.zoom || 88); const hechas = new Set(); let n = 0;
+  const t = tema, sel = st.imp[t] || {}, op = st.impOp, z = $('#zonaImp'); z.innerHTML = ''; z.className = op.bn ? 'bn' : ''; z.style.setProperty('--fz', (op.fz || 12) + 'px'); z.style.setProperty('--zoom', op.zoom || 90); const hechas = new Set(); let n = 0;
   for (const p of D[t].piezas) {
     const s = sel[p.id]; if (!hayAlgo(s)) continue; const div = document.createElement('div'); div.className = 'pieza';
     const fj = s.s && recImp(p) && p.tr && fijados(key(t, p.id)).length ? await imgFij(p) : null;   // recorte con los «(…)» que has fijado abiertos
