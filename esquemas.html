@@ -7994,7 +7994,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
       g.total++; if (!v) g.nuevo++; else if (mal) g.mal++; else if (v < l.length || dud) g.dud++; else g.ok++;
     });
     var toca = vs.filter(function(p){ var m = (SB.mem || {})[n + '/' + p.id]; return m && m.d && m.d <= hoy; }).length;
-    g.toca = toca; return g;
+    return g;
   }
   function hoyISO(){ return iso(new Date()); }
   function datos(){
@@ -8032,10 +8032,8 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
     var D = datos(), S = rd(KT, {}), N = nota(D), R = racha(S), h = hoyN();
     var ex = rd('esquemas-examen', '') || (S.examDate ? String(S.examDate).slice(0, 10) : ''), dias = ex ? aN(ex) - h : null;
     var tot = D.reduce(function(s, t){ return s + t.total; }, 0), ok = D.reduce(function(s, t){ return s + t.ok; }, 0), pct = N ? N.pct : 0;
-    var SBs = rd('exsub2', {}), sT = 0, sO = 0, sD = 0, sM = 0, sN = 0, sToca = 0; D.forEach(function(t){ if (t.sub) { sT += t.sub.total; sO += t.sub.ok; sD += t.sub.dud; sM += t.sub.mal; sN += t.sub.nuevo; sToca += t.sub.toca; } });
+    var SBs = rd('exsub2', {}), sT = 0, sO = 0, sD = 0, sM = 0, sN = 0, sToca = 0; D.forEach(function(t){ if (t.sub) { sT += t.sub.total; sO += t.sub.ok; sD += t.sub.dud; sM += t.sub.mal; sN += t.sub.nuevo; } });
     var uS = SBs.ultimo && window.EXSUB && window.EXSUB[SBs.ultimo.t] ? window.EXSUB[SBs.ultimo.t].piezas.filter(function(p){ return p.id === SBs.ultimo.id; })[0] : null;
-    var tarde = D.filter(function(t){ return t.dif !== null && t.dif < 0; }).sort(function(a, b){ return a.dif - b.dif; }), hoy = D.filter(function(t){ return t.dif === 0; });
-    var nuevos = D.filter(function(t){ return !t.empezado && t.total; }), estu = D.filter(function(t){ return t.est; });
     var u = D.filter(function(t){ return t.ult; }).sort(function(a, b){ return b.ult.t - a.ult.t; })[0];
     var fallos = []; D.forEach(function(t){ fallos = fallos.concat(t.fallos.slice(0, 6)); });
     var h2 = '<div class="ds"><div class="ds-top"><h1>🏠 Inicio</h1><button class="ds-x" data-ds="cierra">Entrar a los esquemas →</button></div>'
@@ -8044,19 +8042,17 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
       + '<div class="ds-st"><b>' + (N ? N.nota.toFixed(1).replace('.', ',') : '–') + '</b><span>nota estimada si fuera hoy</span></div>'
       + '<div class="ds-st"><b>' + (dias === null ? '—' : Math.max(dias, 0)) + '</b><span>días para el examen</span></div>'
       + '<div class="ds-st"><b>' + R.dias + ' 🔥</b><span>días de racha' + (R.meta ? ' · hoy ' + Math.min(R.hoy, R.meta) + '/' + R.meta : '') + '</span></div></div>'
-      + '<div class="ds-bar"><i style="width:' + pct + '%"></i></div>' + (sT ? '<p style="margin-top:10px">📑 Artículos de tu subrayado según tus tests: <b>🟢 ' + sO + ' dominados</b> · 🟡 ' + sD + ' a medias · 🔴 ' + sM + ' con fallos · ○ ' + sN + ' sin practicar' + (sToca ? ' · 🧠 ' + sToca + ' para repasar hoy' : '') + '</p>' : '') + '</div>';
+      + '<div class="ds-bar"><i style="width:' + pct + '%"></i></div>' + (sT ? '<p style="margin-top:10px">📑 Artículos de tu subrayado según tus tests: <b>🟢 ' + sO + ' dominados</b> · 🟡 ' + sD + ' a medias · 🔴 ' + sM + ' con fallos · ○ ' + sN + ' sin practicar' + '</p>' : '') + '</div>';
     if (u) h2 += '<div class="ds-cont"><div><b>📍 Aquí te quedaste</b><span>' + esc(u.nombre) + ' · ' + esc(String(u.ult.k || '').replace(/\s+/g, ' ').slice(0, 70)) + '</span></div><button class="ds-btn" data-ds-ir="' + u.id + '">Ir →</button></div>';
 
     if (uS) h2 += '<div class="ds-cont" style="background:var(--verde-suave);border-color:var(--verde-med)"><div><b>📑 En tu temario subrayado</b><span>' + esc(uS.nombre) + '</span></div><a class="ds-btn" style="text-decoration:none" href="expres-subrayado.html#t=' + SBs.ultimo.t + '&p=' + encodeURIComponent(SBs.ultimo.id) + '">Seguir →</a></div>';
     var hoyH = '<h3>🎯 Hoy toca</h3>';
     var fila = function(t, c, m){ return '<div class="ds-hoy ' + c + '" data-ds-ir="' + t.id + '"><b>' + esc(t.nombre) + '<small>' + m + '</small></b></div>'; };
-    tarde.slice(0, 3).forEach(function(t){ hoyH += fila(t, 'tarde', '⚠️ Repaso atrasado ' + (-t.dif) + ' d'); });
-    hoy.slice(0, 3).forEach(function(t){ hoyH += fila(t, 'hoy', '📌 Repaso de hoy'); });
-    estu.slice(0, 2).forEach(function(t){ hoyH += fila(t, '', '📖 Estudiando ahora'); });
-    if (!tarde.length && !hoy.length && !estu.length && nuevos.length) hoyH += fila(nuevos[0], '', '🆕 Siguiente tema nuevo · ' + nuevos[0].total + ' fichas');
-    if (!tarde.length && !hoy.length && !estu.length && !nuevos.length && !sToca) hoyH += '<p>✅ Hoy no te toca nada. Buen trabajo.</p>';
-    if (sToca) hoyH += '<div class="ds-hoy hoy"><b>🧠 ' + sToca + ' recortes del subrayado para repasar hoy<small>Ábrelos en el temario subrayado (filtro «Toca hoy»)</small></b></div>';
-    var rpT = D.reduce(function(s, t){ return s + t.rp; }, 0); if (rpT) hoyH += '<p style="margin-top:8px">🔁 ' + rpT + ' fichas marcadas para repasar.</p>';
+    var malos = D.filter(function(t){ return t.sub && t.sub.mal; }).sort(function(a, b){ return b.sub.mal - a.sub.mal; }).slice(0, 3);
+    malos.forEach(function(t){ hoyH += fila(t, 'tarde', '🔴 ' + t.sub.mal + ' artículo' + (t.sub.mal > 1 ? 's' : '') + ' con fallos en el test · ' + t.fallos.length + ' pregunta' + (t.fallos.length === 1 ? '' : 's') + ' fallada' + (t.fallos.length === 1 ? '' : 's')); });
+    D.filter(function(t){ return t.vistas && t.dom < .5 && !(t.sub && t.sub.mal); }).sort(function(a, b){ return a.dom - b.dom; }).slice(0, 2).forEach(function(t){ hoyH += fila(t, 'hoy', '📉 Dominio ' + Math.round(t.dom * 100) + ' % en el test'); });
+    var virgen = D.filter(function(t){ return !t.vistas && t.nq; })[0]; if (virgen && !malos.length) hoyH += fila(virgen, '', '🆕 Aún sin practicar en el test · ' + virgen.nq + ' preguntas');
+    if (!malos.length && !virgen && !D.some(function(t){ return t.vistas && t.dom < .5; })) hoyH += '<p>✅ Sin fallos pendientes. Sigue practicando.</p>';
 
     var notaH = '<div class="ds-card ds-nota"><h3>📈 Nota estimada</h3>';
     if (N) {
@@ -8068,7 +8064,7 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
     h2 += '<h3 class="ds-sec">Hoy</h3><div class="ds-2"><div class="ds-card">' + hoyH + '</div>' + notaH + '</div>';
 
     h2 += '<h3 class="ds-sec">Mi examen</h3><div class="ds-card ds-ex"><label>Fecha del examen <input type="date" id="ds-fecha" value="' + esc(ex) + '"></label><span style="font-size:13px;color:var(--texto-gris)">'
-      + (dias === null ? 'Ponla para ver la cuenta atrás y el ritmo de temas nuevos.' : dias > 0 && nuevos.length ? 'Para ver todo y dejar un 25 % para repasar: ' + Math.ceil(nuevos.length / Math.max(1, dias - Math.ceil(dias * .25))) + ' tema(s) nuevo(s) al día (' + nuevos.length + ' sin empezar).' : dias > 0 ? 'Te quedan ' + dias + ' días: ¡a repasar!' : 'El examen ya ha pasado o es hoy.') + '</span></div>';
+      + (dias === null ? 'Ponla para ver la cuenta atrás.' : dias > 0 ? 'Te quedan ' + dias + ' días: practica los artículos 🔴 y 🟡 primero.' : 'El examen ya ha pasado o es hoy.') + '</span></div>';
 
     h2 += '<h3 class="ds-sec">Acciones rápidas</h3><div class="ds-acc">'
       + '<button class="ds-a" data-ds="panel"><i>🎯</i>Panel de estudio</button>'
@@ -8080,17 +8076,16 @@ body.mj-imprime-min #mj-minimo>div{box-shadow:none;width:auto}.mj-x{display:none
       + '<a class="ds-a" href="expres-subrayado.html"><i>📑</i>Temario subrayado</a></div>';
 
     h2 += '<h3 class="ds-sec">Temas</h3><div class="ds-fil"><input type="search" id="ds-q" placeholder="Buscar tema…" value="' + esc(busca) + '">'
-      + [['todos', 'Todos'], ['tarde', '⚠️ Atrasados'], ['nuevo', '🆕 Sin empezar'], ['flojo', '📉 Flojos en test']].map(function(f){ return '<button class="ds-chip' + (filtro === f[0] ? ' on' : '') + '" data-ds-f="' + f[0] + '">' + f[1] + '</button>'; }).join('') + '</div><div class="ds-temas" id="ds-temas">';
+      + [['todos', 'Todos'], ['fallos', '🔴 Con fallos'], ['nuevo', '○ Sin practicar'], ['flojo', '📉 Flojos en test']].map(function(f){ return '<button class="ds-chip' + (filtro === f[0] ? ' on' : '') + '" data-ds-f="' + f[0] + '">' + f[1] + '</button>'; }).join('') + '</div><div class="ds-temas" id="ds-temas">';
     var L = D.filter(function(t){
       if (busca && (t.nombre + ' tema ' + t.n).toLowerCase().indexOf(busca.toLowerCase()) < 0) return false;
-      return filtro === 'todos' || (filtro === 'tarde' && t.dif !== null && t.dif < 0) || (filtro === 'nuevo' && !t.empezado) || (filtro === 'flojo' && t.vistas && t.dom < .5);
+      return filtro === 'todos' || (filtro === 'fallos' && t.sub && t.sub.mal) || (filtro === 'nuevo' && !t.vistas) || (filtro === 'flojo' && t.vistas && t.dom < .5);
     });
     L.forEach(function(t){
       var p = t.total ? Math.round(100 * t.ok / t.total) : 0, pq = Math.round(t.dom * 100);
-      var est = t.est ? '<span class="est estu">estudiando</span>' : t.dif === null ? '<span class="est">sin empezar</span>' : t.dif < 0 ? '<span class="est tarde">repaso atrasado</span>' : t.dif === 0 ? '<span class="est hoy">repasar hoy</span>' : '<span class="est">repaso en ' + t.dif + ' d</span>';
-      h2 += '<div class="ds-t" data-ds-ir="' + t.id + '"><span class="nu">Tema ' + t.n + '</span>' + est + '<h4>' + esc(t.nombre) + '</h4>'
+      h2 += '<div class="ds-t" data-ds-ir="' + t.id + '"><span class="nu">Tema ' + t.n + '</span>' + '<h4>' + esc(t.nombre) + '</h4>'
         + ''
-        + (t.sub ? '<div class="m"><span>📑 ' + t.sub.total + ' artículos · 🟢 ' + t.sub.ok + ' · 🟡 ' + t.sub.dud + ' · 🔴 ' + t.sub.mal + ' · ○ ' + t.sub.nuevo + (t.sub.toca ? ' · 🧠 ' + t.sub.toca + ' hoy' : '') + '</span></div><div class="br s"><i style="width:' + Math.round(100 * t.sub.ok / (t.sub.total || 1)) + '%"></i></div>' : '')
+        + (t.sub ? '<div class="m"><span>📑 ' + t.sub.total + ' artículos · 🟢 ' + t.sub.ok + ' · 🟡 ' + t.sub.dud + ' · 🔴 ' + t.sub.mal + ' · ○ ' + t.sub.nuevo + '' + '</span></div><div class="br s"><i style="width:' + Math.round(100 * t.sub.ok / (t.sub.total || 1)) + '%"></i></div>' : '')
         + '<div class="m"><span>🎯 ' + t.vistas + '/' + t.nq + ' preguntas vistas · dominio ' + pq + ' %</span></div><div class="br q"><i style="width:' + pq + '%"></i></div>'
         + (t.fallos.length ? '<a class="pr" href="' + urlTest(t.fallos) + '">❌ Practicar mis ' + t.fallos.length + ' fallos</a>' : '') + '</div>';
     });

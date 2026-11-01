@@ -534,7 +534,7 @@ function dash() {
   ts.forEach(t => { const v = visibles(t), g = EG[t], n = g.ok, pc = (g.ok + g.dud + g.mal + g.nuevo) ? Math.round(g.ok * 100 / (g.ok + g.dud + g.mal + g.nuevo)) : 0, c = D[t].cob || {q: 0, e: 0}, pq2 = c.q ? Math.round(c.e * 100 / c.q) : 0, nc = Object.values(C[t] || {}).reduce((s, a) => s + a.length, 0), dif = Object.keys(st.dif).filter(k => k.startsWith(t + '/') && st.dif[k]).length;
     h += '<div class="tema" data-t="' + t + '"><span class="num">Tema ' + t + '</span><h4>' + esc(NOMBRES[t - 1] || D[t].titulo) + '</h4><div class="meta"><span>📄 ' + v.length + ' artículos</span><span>🧩 ' + nc + ' cuadros</span><span>🎯 ' + c.e + '/' + c.q + ' preguntas</span>' + (dif ? '<span>⭐ ' + dif + '</span>' : '') + '</div>'
       + '<div class="barra"><i style="width:' + pc + '%"></i></div><div class="meta"><span>🟢 ' + g.ok + ' · 🟡 ' + g.dud + ' · 🔴 ' + g.mal + ' · ○ ' + g.nuevo + ' · ' + pc + '% dominado</span></div><div class="barra q"><i style="width:' + pq2 + '%"></i></div><div class="meta"><span>cobertura de preguntas ' + pq2 + '%</span></div></div>'; });
-  h += '</div><h3 class="sec">Control de todos los temas</h3><div class="cont" style="margin-top:0"><div><b>' + sin + ' temas sin empezar</b><span>Marca cómo vas en cada tema, con fechas de repaso y plazos</span></div><button data-panel="1">🎯 Abrir panel</button></div>'
+  h += '</div>'
     + '<h3 class="sec">Otras apps</h3><div class="apps"><a href="esquemas.html">📘 Esquemas</a><a href="test-oficial-conocimiento.html">📝 Test de conocimiento</a></div>';
   $('#m').innerHTML = h; scrollTo(0, 0);
 }
@@ -552,12 +552,13 @@ function infoTema() {
 }
 function cabTema() {
   const t = tema, ns = []; (D[t].cit || []).forEach(c => { if (c.nombre && D[t].piezas.some(p => p.id.startsWith(c.p + '-'))) ns.push(c); });
-  const v = visibles(t), n = hechos(t), pc = v.length ? Math.round(n * 100 / v.length) : 0;
+  const v = visibles(t), S0 = leerStats(), g = {ok: 0, dud: 0, mal: 0, nuevo: 0}; v.forEach(p => { const e = estadoDe(t, p, S0); if (e) g[e.c]++; });
+  const n = g.ok, pc = (g.ok + g.dud + g.mal + g.nuevo) ? Math.round(g.ok * 100 / (g.ok + g.dud + g.mal + g.nuevo)) : 0;   // avance según tus tests
   let h = '<input class="buscar" id="q" type="search" placeholder="Buscar artículo o norma (p. ej. art. 90, Roma, preámbulo)…" value="' + esc(busca) + '"><div class="chips">'
     + [['todos', 'Todos'], ['pend', 'Pendientes'], ['vistos', 'Vistos'], ['dif', '⭐ Difíciles'], ['nota', '📝 Con nota'], ['preg', '🎯 Con preguntas'], ['esq', '🧩 Con esquema']].map(f => '<button class="chip' + (filtro === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>').join('') + (marca ? '<button class="chip on" data-marca-quita="1">🏷 ' + esc(marca) + ' ✕</button>' : '') + '</div>';
   if (ns.length > 1) h += '<div class="chips"><button class="chip' + (inst === 'todas' ? ' on' : '') + '" data-i="todas">Todas las normas</button>' + ns.map(c => '<button class="chip' + (inst === c.p ? ' on' : '') + '" data-i="' + c.p + '">' + esc(c.nombre) + '</button>').join('') + '</div>';
   h += '<div class="chips"><button class="chip" id="b-rep">▶ Repasar la lista</button>' + (D[t].piezas.some(x => quitado(t, x.id)) ? '<button class="chip' + (st.verQuit ? ' on' : '') + '" id="b-quit" title="Ver los artículos que has quitado para devolverlos">🗑️ Quitados (' + D[t].piezas.filter(x => quitado(t, x.id)).length + ')</button>' : '') + '<span class="seg" title="Cómo se ven todos los artículos: lo relleno es lo que estás viendo"><button class="' + (st.vista === 'completo' ? '' : 'on') + '" id="b-vx">⚡ Exprés</button><button class="' + (st.vista === 'completo' ? 'on' : '') + '" id="b-ve">📄 Artículos enteros</button></span><button class="chip' + (st.modoEsq ? ' on' : '') + '" id="b-esq">🧩 Solo esquemas</button></div>'
-    + '<div class="prog"><span>' + n + '/' + v.length + ' vistos</span><div class="barra"><i style="width:' + pc + '%"></i></div><span>' + pc + '%</span></div>';
+    + '<div class="prog"><span>🟢 ' + g.ok + ' · 🟡 ' + g.dud + ' · 🔴 ' + g.mal + ' · ○ ' + g.nuevo + '</span><div class="barra"><i style="width:' + pc + '%"></i></div><span>' + pc + '%</span></div>';
   $('#herr .in').innerHTML = h; $('#herr').classList.remove('oculto');
 }
 function entera(p) {
