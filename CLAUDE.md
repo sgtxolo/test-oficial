@@ -47,4 +47,4 @@ Idioma: responde SIEMPRE en español. Carpeta de trabajo real: `Escritorio\HTML 
 - Subir `CACHE` en `service-worker.js` en cada cambio visible.
 
 ## Paso 7 del flujo por tema: Exprés subrayado
-Al cerrar un tema, pasarlo a `expres-subrayado.html` (recortes de las fotos del PDF subrayado del usuario iguales al Exprés, ESQ solo con esquema, páginas tachadas/MOD/raya fuera, impresión continua). Guía completa: sección «FLUJO ACTUALIZADO (31/10/2026)» en `prompts/PROMPT_EXPRES_SUBRAYADO.md`; reglas del usuario en la memoria (`subrayado-reglas-esq-y-mod`). Estado: T1, T3, T6, T7, T10, T8, T9, T11, T12 y T14 hechos (T11 el más completo).
+Al cerrar un tema, pasarlo a `expres-subrayado.html` (recortes de las fotos del PDF subrayado del usuario iguales al Exprés, ESQ solo con esquema, páginas tachadas/MOD/raya fuera, impresión continua). Guía completa: sección «FLUJO ACTUALIZADO (31/10/2026)» en `prompts/PROMPT_EXPRES_SUBRAYADO.md`; reglas del usuario en la memoria (`subrayado-reglas-esq-y-mod`). Estado: T1, T2, T3, T6, T7, T10, T8, T9, T11, T12 y T14 hechos (T11 el más completo).

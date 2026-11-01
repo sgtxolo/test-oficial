@@ -1,0 +1,9 @@
+[
+ {"id":"a","nombre":"Ley 19/2003","paginas":[4,23],"inicio":"^CAPÍTULO I\\. RÉGIMEN GENERAL DE LOS MOVIMIENTOS","cit":"Ley 19/2003|Ley de movimientos de capitales"},
+ {"id":"b","nombre":"Convenio CoE 196","paginas":[24,38],"inicio":"^2\\.2 — CONVENIO DEL CONSEJO DE EUROPA","cit":"Convenio (?:del Consejo de Europa )?(?:n\\.º )?196|Convenio de Varsovia|Convenio para la prevención del terrorismo"},
+ {"id":"c","nombre":"Ley 10/2010","paginas":[40,125],"inicio":"^2\\.3 — LEY 10/2010","cit":"Ley 10/2010|Ley de prevención del blanqueo","pre":"c-pre","pre_re":"pre[áa]mbulo de la Ley 10/2010"},
+ {"id":"d","nombre":"Convención de Palermo","paginas":[136,162],"inicio":"^2\\.4 — CONVENCIÓN DE LAS NACIONES UNIDAS","cit":"Convención de (?:las Naciones Unidas contra la Delincuencia Organizada|Palermo)|Convención de la ONU|Convención de Naciones Unidas"},
+ {"id":"e","nombre":"Protocolo de trata","paginas":[164,174],"inicio":"^2\\.5 — PROTOCOLO PARA PREVENIR","cit":"Protocolo (?:para prevenir, reprimir y sancionar la )?trata|Protocolo de trata|Protocolo contra la trata"},
+ {"id":"f","nombre":"Protocolo de tráfico de migrantes","paginas":[176,188],"inicio":"^2\\.6 — PROTOCOLO CONTRA EL TRÁFICO","cit":"Protocolo contra el tráfico ilícito de migrantes|Protocolo de tráfico de migrantes"},
+ {"id":"g","nombre":"Protocolo de armas de fuego","paginas":[190,200],"inicio":"^2\\.7 — PROTOCOLO CONTRA LA FABRICACIÓN","cit":"Protocolo contra la fabricación|Protocolo de armas de fuego"}
+]
