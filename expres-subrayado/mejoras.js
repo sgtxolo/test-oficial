@@ -3,6 +3,7 @@
 window.MEJORAS = function () {
   "use strict";
   const hoy = () => hoyISO(), yaVisto = id => id, PASOS_M = [2, 5, 12, 30, 60];
+  window.SEL = window.SEL || {niv: new Set(), est: new Set()};   // filtros que se pueden combinar: probabilidad (hot/warm/cold) y estado en el test (ok/dud/mal/nuevo)
   st.mem = st.mem || {}; if (st.tapa === undefined) st.tapa = false; if (MAPAS.indexOf('mem') < 0) MAPAS.push('mem');
   const css = document.createElement('style');
   css.textContent = 'svg.tp{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}svg.tp rect{pointer-events:all;cursor:pointer;stroke:rgba(0,0,0,.35);stroke-width:1.5}svg.tp rect.off{fill-opacity:0;stroke-opacity:0}'
@@ -11,7 +12,7 @@ window.MEJORAS = function () {
     + '.tag.hot{background:#fde1dc;color:#a3281b}.tag.warm{background:#fff0c2;color:#7a5b00}.tag.cold{background:#e3eef8;color:#2a5b86}.tag.toca{background:#e2dafc;color:#4a2f9c}'
     + '#vis .bar.pro{justify-content:center;flex-wrap:wrap;border-bottom:0;border-top:1px solid var(--borde)}#vis .bar.pro small{font-size:11.5px;color:var(--gris);width:100%;text-align:center}'
     + '.pro-r{display:flex;gap:10px;align-items:center;padding:8px 10px;border:1px solid var(--borde);border-radius:10px;margin-top:6px;cursor:pointer;background:var(--panel)}.pro-r b{flex:1;font-size:13.5px}.pro-r small{display:block;font-weight:400;color:var(--gris);font-size:12px;margin-top:2px}'
-    + '.nota-big{font-size:38px;font-weight:800;color:var(--verde-med);line-height:1}';
+    + '.pdot{border:1.5px solid var(--borde);background:var(--panel);color:inherit;border-radius:14px;padding:3px 10px;margin-right:6px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}.pdot.on{background:var(--verde);color:#fff;border-color:var(--verde)}.nota-big{font-size:38px;font-weight:800;color:var(--verde-med);line-height:1}';
   document.head.appendChild(css);
 
   // ---------- datos de cada artículo ----------
@@ -72,18 +73,25 @@ window.MEJORAS = function () {
   const pf0 = pasaFiltro;
   pasaFiltro = function (p) {
     if (filtro === 'toca' || filtro === 'hot') { const f = filtro; filtro = 'todos'; let r; try { r = pf0(p); } finally { filtro = f; } return r && (f === 'toca' ? debe(tema, p) : nivel(tema, p) === 'hot'); }
-    return pf0(p);
+    if (!pf0(p)) return false;
+    if (SEL.niv.size && !SEL.niv.has(nivel(tema, p))) return false;
+    if (SEL.est.size) { const e = estadoDe(tema, p, quizS()); if (!e || !SEL.est.has(e.c)) return false; }
+    return true;
   };
   const cab0 = cabTema;
   cabTema = function () {
     cab0(); const fila = [...document.querySelectorAll('#herr .in .chips')].pop(); if (!fila) return;
     const n = visibles(tema).filter(p => debe(tema, p)).length;
     fila.insertAdjacentHTML('beforeend', '<button class="chip' + (st.tapa ? ' on' : '') + '" data-px="tapa" title="Tapa tu fosforito: toca la caja para verlo (T en el visor)">🙈 Tapar subrayado</button>'
-      + '<button class="chip' + (filtro === 'toca' ? ' on' : '') + '" data-px="toca">🧠 Toca hoy (' + n + ')</button><button class="chip' + (filtro === 'hot' ? ' on' : '') + '" data-px="hot" title="Los que más probabilidad tienen de caer según tus preguntas oficiales y marcas">🔥 Calientes</button>');
+      + '<button class="chip' + (filtro === 'toca' ? ' on' : '') + '" data-px="toca">🧠 Toca hoy (' + n + ')</button>'+ [['hot', '🔥 Cae mucho'], ['warm', '🟡 Puede caer'], ['cold', '❄️ Poco probable']].map(x => '<button class="chip' + (SEL.niv.has(x[0]) ? ' on' : '') + '" data-px="niv:' + x[0] + '" title="Probabilidad de que caiga (puedes juntar varias)">' + x[1] + '</button>').join('') + '<button class="chip' + (SEL.est.has('mal') && SEL.est.has('dud') && SEL.est.size === 2 ? ' on' : '') + '" data-px="flojo" title="Solo los artículos 🔴 y 🟡 de tus tests: lo que peor tienes">🎯 Lo más flojo</button>');
   };
   $('#herr').addEventListener('click', e => {
     const b = e.target.closest('[data-px]'); if (!b) return; const x = b.dataset.px;
-    if (x === 'tapa') ponTapa(); else filtro = filtro === x ? 'todos' : x;
+    if (x === 'tapa') ponTapa();
+    else if (x.startsWith('niv:')) { const k = x.slice(4); SEL.niv.has(k) ? SEL.niv.delete(k) : SEL.niv.add(k); }
+    else if (x.startsWith('est:')) { const k = x.slice(4); SEL.est.has(k) ? SEL.est.delete(k) : SEL.est.add(k); }
+    else if (x === 'flojo') { const ya = SEL.est.size === 2 && SEL.est.has('mal') && SEL.est.has('dud'); SEL.est.clear(); if (!ya) { SEL.est.add('mal'); SEL.est.add('dud'); } }
+    else filtro = filtro === x ? 'todos' : x;
     cabTema(); pintaLista();
   });
 
