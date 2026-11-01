@@ -1314,4 +1314,24 @@ if (hayGh() && !emb) setTimeout(() => sincronizar(false, true), 1500);   // al a
 if (window.MEJORAS) window.MEJORAS();
 if (window.MEJORAS2) window.MEJORAS2();
 entra();
+</script>
+<script src="estado-temas.js"></script>
+<script>
+/* Estado de los temas compartido con Esquemas (ver estado-temas.js). Aquí: st.temas[N] = {e, desde, ultimo, olvido, prox, n} */
+(function(){
+  if (!window.EstadoTemas) return;
+  window.EstadoTemas.init({
+    clave: LS,
+    leer() { const o = {}; for (const n in st.temas) { const t = st.temas[n]; if (!t || !t.e) continue; o[n] = {e: t.e, f: (t.e === 'estudiando' ? t.desde : t.e === 'estudiado' ? t.ultimo : t.olvido) || ''}; } return o; },
+    aplicar(n, e, f) {
+      if (!e) delete st.temas[n];
+      else { const t = st.temas[n] = st.temas[n] || {};
+        if (e === 'estudiando') { t.e = e; t.desde = f; }
+        else if (e === 'estudiado') { t.e = e; t.ultimo = f; t.prox = masDias(f, PASOS[Math.min(t.n || 0, PASOS.length - 1)]); }
+        else { t.e = 'olvidado'; t.n = 0; t.olvido = f; t.prox = masDias(f, 1); } }
+      try { localStorage.setItem(LS, JSON.stringify(st)); } catch (er) {}
+    },
+    refrescar() { try { render(); if (!$('#mod').classList.contains('oculto') && $('#mod .tabs')) panel(); } catch (er) {} }
+  });
+})();
 </script></body></html>
