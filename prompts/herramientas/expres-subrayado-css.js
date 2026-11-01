@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Extrae de esquemas.html los estilos de las fichas del Exprés (.ex-*, .bloque-titulo) y de los cuadros (.vis*, .m-*)
 // para que expres-subrayado.html los pinte igual. Uso: node prompts/herramientas/expres-subrayado-css.js
 const fs = require('fs'); const h = fs.readFileSync('esquemas.html', 'utf8');

@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Quita los dígitos sueltos de NOTAS AL PIE que el OCR/PDF dejó pegados en enunciados y opciones de las preguntas de un tema
 // («po1r», «c4onformidad», «institución.3», «7Todas son correctas»). Solo toca preguntas cuyo texto casa con el detector; muestra cada cambio.
 // Uso: node prompts/herramientas/limpia-notas-pie.js N [--aplicar]      (idempotente; escribe test-oficial-conocimiento.html)

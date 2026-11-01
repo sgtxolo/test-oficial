@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Añade un párrafo literal del temario a la ficha de un tema en esquemas.html (clase 1 de «sin sitio»: falta el apartado en el esquema).
 // Uso desde un script de tema:
 //   const E = require('../anade-parrafo.js')();

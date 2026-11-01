@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Añade al esquema del Tema 2 los apartados que el usuario marcó en su temario (EX / EXOF / asterisco) y que no estaban:
 // texto LITERAL del temario (prompts/temario-limpio/tema2/temario.txt), pintado con los colores reales de su PDF escaneado
 // (aplicar-subrayado-pdf.js sobre un html temporal) y con data-ex en cada párrafo. Marca además data-ex en tres párrafos que

@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Cuadros visuales del Tema 17: recrean los cuadros de tu temario subrayado (PDF 08-08-2026) con su TEXTO LITERAL y tus marcas.
 //   p5 art. 1 · p6 competencias · p10 medidas · p11 dos períodos · p13/17 art. 10.1 · p15 art. 10.2 (RESUMEN) · p20 prescripción · p23 plazos de detención
 //   p25 sobreseimiento · p26 unidad de expediente · p31-32 medidas cautelares · p34 responsabilidad civil · p36-38 PLAZOS · p42 RD: modo de llevar a cabo la detención

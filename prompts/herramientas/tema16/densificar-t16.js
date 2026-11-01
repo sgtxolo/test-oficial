@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Método Prefortia (subrayado automático por categorías, el de densify.js) aplicado SOLO a los grupos del Tema 16 que se le indiquen
 // (los que tu PDF no trae subrayados o cuyo OCR no se pudo alinear). Uso: node prompts/herramientas/tema16/densificar-t16.js T16_RDP T16_RDA …
 // Reescribe cada línea «/* T16_X */ T16.x = "…";» de esquemas.html respetando lo que ya está marcado (colores reales de tu PDF).

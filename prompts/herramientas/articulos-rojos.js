@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Cobertura de cada esquema respecto al temario: cuántos artículos del temario recoge el esquema (los que tienen
 // preguntas) y cuántos se quedan fuera. Escribe en esquemas.html:
 //   <script id="cobertura-temario">window.COBERTURA={"5":{"temario":300,"esquema":120},...}</script>

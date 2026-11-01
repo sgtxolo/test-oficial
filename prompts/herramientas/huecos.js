@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Texto literal de cada «(…)» de los esquemas: lo busca en el texto limpio del temario y lo guarda en esquemas.html
 // para que, al pulsar el (…) (o pasar el ratón), se despliegue en gris lo que falta de ese artículo.
 // Uso (desde la carpeta del proyecto):

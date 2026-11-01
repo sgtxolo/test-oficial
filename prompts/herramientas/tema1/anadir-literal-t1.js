@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 1 · fichas LITERALES de los artículos cuyo texto no estaba en el esquema (cobertura-literal-t1.js, 25/10/2026). Texto de prompts/temario-limpio/tema1/temario.txt.
 // Normas con numeración propia (Carta, Estatuto CE, CEDH, Roma, Acuerdo): ficha «Artículo N — Título» ordenada por número dentro de su bloque.
 // Protocolos al CEDH: ficha «Protocolo n.º X, art. N — Título» detrás de la ficha de su protocolo. Idempotente (no repite una cabecera ya existente).

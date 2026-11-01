@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Fichas RECUERDA R1-R29 del Tema 3 → su párrafo del articulado (ficha k de expres-lib + regex del texto del apartado).
 // Devuelve { r: {'k-j': ['R1',…]}, falta: [] }. Uso: require('./r-articulado-t3.js')(X)  ·  node r-articulado-t3.js (informe)
 const fs = require('fs'), path = require('path');

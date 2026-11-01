@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Cuadros visuales del Tema 9 (LO 5/2005 de la Defensa Nacional): recrean los cuadros del temario subrayado de Prefortia
 // (págs. 9, 11, 13, 14 y 18 del PDF escaneado «TEMA 9»; impresas 5, 7, 9, 10 y 14) con el TEXTO LITERAL del cuadro y las MARCAS REALES
 // del usuario: colores de fosforito (amarillo = concepto, naranja = verbo/acción, verde = órgano), subrayado rojo, subrayado a lápiz,

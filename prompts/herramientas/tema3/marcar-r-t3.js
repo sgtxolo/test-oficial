@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Pone data-r="R1,R2" en el párrafo del articulado del Tema 3 donde está el apartado de cada ficha RECUERDA (r-articulado-t3.js).
 // La app (esquema) lo enseña como sello «R n». Idempotente. Uso: node prompts/herramientas/tema3/marcar-r-t3.js
 const fs = require('fs'), path = require('path');

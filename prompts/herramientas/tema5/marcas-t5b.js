@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 5 · marcas de su LIBRO RESUMEN (págs. escaneadas 7-42): ✱ azules a mano → '*', círculos «Ex» azules → 'EX' (leídas 20/10/2026).
 // Solo las del SIS, VIS y Código de visados (Reglamento 810/2009). Las del Eurodac del libro (págs. 38-39) son del Rgto. 603/2013 derogado: no se usan.
 // Se aplican al párrafo del apartado indicado de la ficha del esquema (k = índice de ficha de expres-lib; sel = nº de apartado al principio del párrafo).

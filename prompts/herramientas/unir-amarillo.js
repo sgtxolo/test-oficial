@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Amarillo (m-personalizado): une dos marcas amarillas separadas solo por palabras de enlace (de, con, el, a lo...).
 // Uso: node prompts/herramientas/unir-amarillo.js   (ejecutar despues de unir-subrayados.js)
 const fs = require('fs');

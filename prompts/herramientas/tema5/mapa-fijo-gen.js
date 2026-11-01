@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 5 · genera tema5/mapa-fijo-t5.json (id → 'k-j') para que mapa-preguntas.js ancle a su párrafo marcado:
 //   · las preguntas nuevas para las marcas (oficiales 5-315…5-329 e IA 5-ia-2101…2102);
 //   · las preguntas que el mapa colgaba de las fichas «RECUERDA del temario», llevadas al párrafo de su R en el articulado.

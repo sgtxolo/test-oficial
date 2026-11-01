@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Igual que cobertura-marcas.js pero una pregunta IA TAMBIÉN cubre la marca (EX → IA, pauta 1/11/2026). Escribe %TEMP%/faltaIAN.json. Uso: node prompts/herramientas/cobertura-marcas-con-ia.js N
 // Párrafos con marca suya (data-ex / data-r) SIN pregunta oficial que los cubra (situada por el mapa o con su respuesta correcta
 // dentro del párrafo). Escribe %TEMP%/faltaN.json para redactar la fase 2. Uso: node prompts/herramientas/cobertura-marcas.js N

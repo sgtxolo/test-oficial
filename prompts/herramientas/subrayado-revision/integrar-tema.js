@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Registra temas nuevos del Exprés subrayado en expres-subrayado.html, service-worker.js, test-oficial-conocimiento.html y esquemas.html.
 // Uso: node integrar-tema.js 6 10 …   (idempotente; copia las líneas del tema 12 para cada tema nuevo)
 const fs = require('fs');

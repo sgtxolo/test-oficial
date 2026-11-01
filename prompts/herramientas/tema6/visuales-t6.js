@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Cuadros visuales del Tema 6 (LO 4/2000 de extranjería y Ley 12/2009 de asilo).
 // No hay escaneo del temario subrayado en esta sesión: son cuadros PROPIOS (árboles, columnas, flujos y tablas de plazos) con el
 // TEXTO LITERAL del temario oficial (prompts/temario-limpio/tema6) y el subrayado por el método del usuario: lo que el examen pregunta

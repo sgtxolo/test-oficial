@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 9 · esquema LITERAL (19/10/2026): sustituye el esquema resumido por el texto íntegro del temario oficial
 //   9.1 LO 5/2005 (prompts/temario-limpio/tema9/temario.txt → lo5.txt limpio) y 9.2 Directiva de Defensa Nacional 2020
 //   (ddn2020.txt, transcrita del facsímil oficial). Deja las normas como /* T9_LO */ y /* T9_DDN */ (una línea cada una)

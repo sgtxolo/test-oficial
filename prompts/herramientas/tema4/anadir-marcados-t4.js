@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Añade al esquema del Tema 4 los apartados que el usuario marcó (✱ / EX / EXAMEN) y cuyo artículo no estaba, con el texto LITERAL
 // del temario oficial (prompts/temario-limpio/tema4/temario.txt, PDF del 19/09/2025). Los colores los pone el Exprés con el diccionario de
 // subrayado del usuario. Idempotente. Uso: node prompts/herramientas/tema4/anadir-marcados-t4.js [--dry]

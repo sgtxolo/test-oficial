@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 1 · añade al esquema las fichas de los artículos que estaban «en rojo» (rojos-t1.js), con su texto LITERAL de prompts/temario-limpio/tema1/temario.txt.
 // Cada ficha va en su bloque (T1_CARTA, T1_COE, T1_CEDH, T1_ROMA) ordenada por número de artículo; se realinean las anclas de mapa-fijo-t1.json (k = nº de ficha).
 // Idempotente. Uso: node prompts/herramientas/tema1/anadir-rojos-t1.js [--dry]

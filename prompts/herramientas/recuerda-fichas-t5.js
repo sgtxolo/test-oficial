@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Fichas «RECUERDA del temario · R1 a R36» del Tema 5 (págs. 375-380 del PDF subrayado del usuario) + cajas de trampas.
 // Se escribe el bloque /* T5_REC */ justo antes de /* T5_RECUERDA. Uso: node prompts/herramientas/recuerda-fichas-t5.js
 // Correcciones a mano del usuario en su PDF: R14 y R18 → eu-LISA · R16 → no devolución · R21 → imagen facial.

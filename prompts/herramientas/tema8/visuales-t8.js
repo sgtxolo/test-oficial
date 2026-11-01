@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Cuadros visuales del Tema 8 (LOPJ 6/1985): recrean los cuadros del temario subrayado de Prefortia («TEMA 8 PODER JUDICIAL-08-08-2026.pdf»)
 // con el TEXTO LITERAL del cuadro y las MARCAS REALES del usuario: amarillo (concepto) Y, naranja/rosa (verbo/acción) D, azul (plazo/cifra) P,
 // subrayado rojo K, subrayado a lápiz U, cuadrado azul CA, círculo O y asterisco AS. El verde (órganos) y el lila (futuros) los pone reglas-color.js.

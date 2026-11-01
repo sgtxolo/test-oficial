@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Diagnóstico T1: dónde sitúa el mapa las preguntas que el Exprés no enlaza, ahora y en HEAD. Uso: node prompts/herramientas/tema1/diag-t1.js id1 id2 ...
 const fs = require('fs'), cp = require('child_process');
 const get = s => JSON.parse(s.match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);

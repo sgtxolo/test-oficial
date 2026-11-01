@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Aplica fotos-t7-datos.js sobre el esquema del Tema 7 de esquemas.html (sustituye solo el HTML de cada artículo)
 const fs = require('fs');
 const { buildArticle, norm } = require('./fotos-lib.js');

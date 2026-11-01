@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Inserta (o actualiza) en esquemas.html el bloque de mejoras de prompts/herramientas/mejoras-2810.html, entre <!--MEJORAS2810--> y <!--/MEJORAS2810-->, justo antes de </body>.
 const fs = require('fs');
 let s = fs.readFileSync('esquemas.html', 'utf8');

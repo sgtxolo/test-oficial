@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Cuadros visuales del Tema 12 (Ley 50/1997, del Gobierno), con TEXTO LITERAL de la ley (temario oficial) y subrayado:
 //  · Cuadros del temario subrayado de Prefortia: «Consejo de Ministros» (art. 18, PDF p. 18) con las MARCAS REALES del usuario
 //    (amarillo, naranja, verde, lila, subrayado rojo, cajas y círculo, leídas a mano de la imagen) y «Del Gobierno en funciones»

@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Ancla en mapa-fijo-t1.json las preguntas que el mapa no sitúa (25/10/2026): 1-ia-3527 (art. 8 bis/9, párrafo 2) y 1-ia-4182 (CEDH art. 38). Uso: node prompts/herramientas/tema1/ancla-extra-t1.js
 const fs = require('fs'), path = require('path');
 const s = fs.readFileSync(path.join(__dirname, '..', '..', '..', 'esquemas.html'), 'utf8');

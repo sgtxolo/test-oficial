@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Quita el subrayado que el alineado del OCR puede dejar dentro de las cabeceras «Artículo N» del esquema del Tema 10 (deben quedar en texto plano
 // para que marcas-lib.js y el Exprés las reconozcan). Uso: node prompts/herramientas/tema10/limpia-cabeceras-t10.js
 const fs = require('fs'), path = require('path');

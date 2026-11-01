@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Marcas a mano del temario escaneado → esquema (hecho en el Tema 6 el 19/10/2026, reutilizable en cualquier tema).
 //   data-ex="EXOF,EX,*" en el PÁRRAFO marcado · data-r="R5" en el apartado de cada ficha RECUERDA · bloque TN.rec con las R.
 //   Si el apartado marcado no estaba en el esquema, se añade con el texto LITERAL del temario limpio en su sitio;

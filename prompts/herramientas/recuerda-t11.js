@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Inserta en el esquema del Tema 11 las 55 fichas «RECUERDA» (R1 a R55) del temario de Prefortia (pregunta → respuesta),
 // transcritas de las páginas 317-325 del temario escaneado. Uso: node prompts/herramientas/recuerda-t11.js
 const fs = require('fs');

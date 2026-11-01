@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Sitúa cada marca de marcas-t1.txt (temario subrayado del usuario) en su PÁRRAFO del esquema del Tema 1 (por norma + artículo + apartado + letra)
 // y las fichas R1-R33 (pins numerados) en su apartado. Uso: node prompts/herramientas/tema1/situa-marcas-t1.js [--json]
 const fs = require('fs'), path = require('path');

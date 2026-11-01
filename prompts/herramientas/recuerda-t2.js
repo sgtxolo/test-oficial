@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Inserta en el esquema del Tema 2 las 39 fichas «RECUERDA» (R1 a R39) del temario de Prefortia (pregunta → respuesta),
 // transcritas de las páginas finales del temario escaneado. Uso: node prompts/herramientas/recuerda-t2.js
 const fs = require('fs');

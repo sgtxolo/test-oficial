@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 17 · Exprés subrayado: pregunta → pieza a partir del mapa de Esquemas (MAPA_PREG: «17-k-j») y la ficha k.
 // Escribe expres-subrayado/t17-preg-extra.json (lo lee expres-subrayado-datos.js). Uso: node prompts/herramientas/tema17/preg-extra-t17.js
 const fs = require('fs'), path = require('path');

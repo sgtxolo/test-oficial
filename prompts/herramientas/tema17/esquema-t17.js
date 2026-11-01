@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 17 · esquema LITERAL (28/10/2026) a partir del texto limpio (prompts/temario-limpio/tema17/oficial.txt, que sigue MI PDF subrayado):
 //   17.1 LO 5/2000 (Tít. Prel., I, II, III y VIII) · 17.2 RD 1774/2004 (Cap. I y II) · 17.3 Instrucción 1/2017 (sin 3.1, 3.3, 3.4 y punto 4, tachados) · RECUERDA R1-R10, R17-R25.
 // Las marcas a mano (EXOF / EX / EXAMEN / ✱ → data-ex; fichas R → data-r) se colocan en su párrafo desde la tabla MARCAS (lectura en marcas-lectura.md).

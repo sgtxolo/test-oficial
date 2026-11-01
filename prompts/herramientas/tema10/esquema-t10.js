@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 10 · esquema LITERAL (24/10/2026): sustituye el esquema parcial (solo los apartados que preguntaban los tests) por el texto
 // íntegro del Código Civil del temario 2026 (prompts/temario-limpio/tema10/cc.txt) con los títulos y capítulos de MI temario.
 // Deja la norma como /* T10_CC */ (una línea) para marcas-lib.js, aplicar-subrayado-pdf.js y el Exprés. Conserva el RECUERDA conceptual anterior.

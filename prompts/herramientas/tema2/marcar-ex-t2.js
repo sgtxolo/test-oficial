@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Pone en el esquema del Tema 2 las marcas a mano del temario subrayado del usuario (marcas-t2.txt), en el PÁRRAFO exacto:
 //   <p data-ex="EXOF,*">  →  EXOF = círculo EXOF o sello «PREGUNTA EXAMEN» (ha salido en examen oficial)
 //                            EX   = círculo EX · * = asterisco (pregunta de la academia Prefortia)

@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 2 · «sin sitio» clase 1 que restaura-sinsitio.js no resuelve solo (hueco a mitad de frase, apartado intermedio ausente, preámbulo).
 // Texto LITERAL del temario (temario-limpio/tema2/temario.txt), pintado con los colores del PDF escaneado. Idempotente.
 // Uso: node prompts/herramientas/tema2/anadir-sinsitio-t2.js <subrayado-t2.json>

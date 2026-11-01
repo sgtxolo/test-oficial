@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 1 · completa el esquema con el articulado literal que falta para las preguntas sin sitio (y para cualquier artículo que se indique).
 // Para cada artículo tocado: reconstruye el artículo COMPLETO con el texto del temario oficial (t1-texto-oficial.js), lo pinta con los
 // colores reales de tu PDF subrayado (aplicar-subrayado-pdf.js, alineado por OCR) y lo mete en esquemas.html:

@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Párrafos con marca suya (data-ex / data-r) SIN pregunta oficial que los cubra (situada por el mapa o con su respuesta correcta
 // dentro del párrafo). Escribe %TEMP%/faltaN.json para redactar la fase 2. Uso: node prompts/herramientas/cobertura-marcas.js N
 const fs = require('fs'), path = require('path');

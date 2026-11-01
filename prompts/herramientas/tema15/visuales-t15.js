@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Cuadros visuales del Tema 15: recrean los cuadros de tu temario subrayado (PDF 08-08-2026) con su TEXTO LITERAL y tus marcas.
 //   p20 Delegación del Gobierno · p35 Comunicaciones de los órganos judiciales · p60 Niveles de riesgo (plazos VPER) · p70 Casos que incrementan la gravedad
 //   p75 Pautas para entrevistarse con las víctimas · p76-78 Anexo II Medidas por nivel de riesgo · p105 Protocolo Cero (dos acciones) · p112 Tres efectos básicos

@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 8 · añade al esquema (T8.lopj de esquemas.html) las fichas de los artículos de la LOPJ que estaban «en rojo» (articulos-rojos.js 8), con su texto LITERAL de prompts/temario-limpio/tema8/lopj.txt.
 // Un <p> por apartado; se colocan en su sitio por número de artículo. Idempotente. Uso: node prompts/herramientas/tema8/anadir-rojos-t8.js [--dry]
 const fs = require('fs'), path = require('path');

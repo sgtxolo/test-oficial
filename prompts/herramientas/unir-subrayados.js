@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Une los <mark> contiguos del mismo color separados solo por espacios (más cómodo para estudiar).
 // Uso: node prompts/herramientas/unir-subrayados.js   (no toca m-resp, la respuesta clave)
 const fs = require('fs');

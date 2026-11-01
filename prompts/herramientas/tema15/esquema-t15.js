@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 15 · esquema LITERAL (26/10/2026) a partir del temario oficial limpio (prompts/temario-limpio/tema15/oficial.txt):
 //   15.1 LO 1/2004 (Títulos Preliminar, I, II y III) · 15.3 Instr. 1/2025 · 15.4 Instr. 5/2021 (Protocolo Cero) · 15.5 Protocolo telemático (Anexo).
 // Las normas que solo están en MI PDF (Resolución 2005, Acuerdo CGPJ, NTF-2/2025, Instr. 12/2018) vienen de esquema-t15-mio-lib.js (transcritas de las imágenes).

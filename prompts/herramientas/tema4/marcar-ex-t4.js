@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Pone en el esquema del Tema 4 las marcas a mano del temario subrayado (situa-marcas-t4.js) en el PÁRRAFO exacto:
 //   <p data-ex="EXOF,*">  →  EXOF = sello «PREGUNTA EXAMEN» · EX = círculo EX · * = asterisco (pregunta de la academia)
 // y quita el sello EX automático por ficha (articuloResp(..., true)). Idempotente. Uso: node prompts/herramientas/tema4/marcar-ex-t4.js [--dry]

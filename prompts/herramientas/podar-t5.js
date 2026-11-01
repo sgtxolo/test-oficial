@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Poda del esquema del Tema 5: quita los párrafos que SOLO vienen de preguntas oficiales y que el usuario NO tiene subrayados
 // (regla del encargo: solo se trabaja lo subrayado).
 // Uso: UMBRAL=0.2 REPORT=rep.json node aplicar-subrayado-pdf.js … --dry   y luego   node podar-t5.js rep.json

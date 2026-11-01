@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Sitúa cada marca de marcas-t2.txt en su ficha/párrafo del esquema del Tema 2 (por norma + artículo + apartado)
 // y lista las preguntas (oficiales / IA) que el mapa pone en ese párrafo. Uso: node situa-marcas-t2.js [--sin] [--json]
 const fs = require('fs'), path = require('path');

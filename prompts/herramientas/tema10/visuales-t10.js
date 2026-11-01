@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Cuadros visuales del Tema 10 (Código Civil): recrean los tres cuadros impresos de tu temario subrayado de Prefortia
 // (págs. 9, 24 y 41 del PDF escaneado «TEMA 10») con el TEXTO LITERAL del cuadro y tus MARCAS: fosforito (amarillo = concepto, naranja = verbo/acción,
 // verde = órgano, azul = plazo/cifra), subrayado rojo, cuadrados azules, círculos y las «x» rojas del margen (✱). Se insertan en T10.cc de esquemas.html

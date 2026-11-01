@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Reconstruye el esquema del Tema 5 (fichas con citas literales de las preguntas + colores reales del PDF subrayado del usuario).
 // Uso: S=<carpeta con subrayado.json y t5.json> node prompts/herramientas/esquema-t5-todo.js
 //   (t5.json = node extraer-preguntas.js test-oficial-conocimiento.html 5 t5.json ; subrayado.json = py subrayado-pdf.py <pdf> subrayado.json)

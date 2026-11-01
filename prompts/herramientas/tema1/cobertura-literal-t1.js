@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // T1 · cobertura REAL por texto literal: de cada artículo del temario (temario.txt, todas las normas y protocolos) busca su primera frase en el esquema (esquemas.html, bloque T1) y en las fichas
 // Uso: node prompts/herramientas/tema1/cobertura-literal-t1.js   → lista los artículos cuyo texto no aparece en el esquema.
 const fs = require('fs'), path = require('path');

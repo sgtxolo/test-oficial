@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Densifica el subrayado Método Prefortia del Tema 4 en esquemas.html
 const fs=require('fs');
 // Uso: node densify.js esquemas.html 5   (procesa la región /* T5_... */ hasta /* T5_RECUERDA */)

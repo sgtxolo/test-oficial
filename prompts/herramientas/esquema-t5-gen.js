@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Genera las fichas del esquema del Tema 5 (solo lo subrayado por el usuario) a partir de las citas LITERALES de las
 // preguntas (IA, todas hechas sobre texto subrayado, + oficiales con cita) y las escribe en esquemas.html.
 // Uso: node prompts/herramientas/esquema-t5-gen.js [--dry]

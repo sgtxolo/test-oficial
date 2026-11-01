@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 12 · NOTAS MANUSCRITAS del usuario (leídas a mano de su temario escaneado 08-08-2026) al final del párrafo exacto del esquema,
 // como <span class="m-nota"> («ro» = bolígrafo rojo). Pauta del 21/10/2026: se transcriben sus notas importantes. Idempotente.
 // Uso: node prompts/herramientas/tema12/notas-t12.js [--dry]

@@ -48,3 +48,6 @@ Idioma: responde SIEMPRE en español. Carpeta de trabajo real: `Escritorio\HTML 
 
 ## Paso 7 del flujo por tema: Exprés subrayado
 Al cerrar un tema, pasarlo a `expres-subrayado.html` (recortes de las fotos del PDF subrayado del usuario iguales al Exprés, ESQ solo con esquema, páginas tachadas/MOD/raya fuera, impresión continua). Guía completa: sección «FLUJO ACTUALIZADO (31/10/2026)» en `prompts/PROMPT_EXPRES_SUBRAYADO.md`; reglas del usuario en la memoria (`subrayado-reglas-esq-y-mod`). Estado: T1, T2, T3, T6, T7, T10, T13, T16, T8, T9, T11, T12 y T14 hechos (T11 el más completo).
+
+## esquemas.html partido en archivos (1/11/2026)
+- Los textos largos de las leyes (T6, T8, T9, T10, T12, T15, T16, T17) y las tablas huecos/mapa viven en `esquemas-datos/*.js`; `esquemas.html` solo lleva referencias. Para editarlos usa las herramientas de `prompts/herramientas` (todas hacen `require` de `esq-virtual.js`, que muestra y guarda `esquemas.html` completo y lo vuelve a separar). Una herramienta nueva que toque `esquemas.html` debe empezar con `require(".../prompts/herramientas/esq-virtual.js")`. Un tema nuevo con texto largo crea su `esquemas-datos/tN.js` solo; añádelo también a `APP_SHELL` del service worker.

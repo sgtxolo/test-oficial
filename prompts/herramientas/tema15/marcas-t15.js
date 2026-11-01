@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 15 · marcas a mano del temario escaneado 08-08-2026 (marcas-t15.txt) + fichas RECUERDA R1-R23 (págs. 165-168 y 15.7).
 // Aplica data-ex="EXOF,EX,*" y data-r="Rn" a los <p> de cada norma del esquema (bloques T15_*), localizándolos por «artículo.apartado.letra»
 // (solo LO 1/2004) o por texto literal ~"…" (resto), y monta el bloque T15.rec (RECUERDA, pregunta → respuesta). Idempotente.

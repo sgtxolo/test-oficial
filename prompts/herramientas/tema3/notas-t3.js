@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Pone en el esquema del Tema 3 las NOTAS MANUSCRITAS del usuario (columna «nota» de marcas-t3.tsv) al final del párrafo exacto,
 // como <span class="m-nota"> («nota roja» → m-nota ro). Pauta del 21/10/2026: se transcriben también sus notas importantes. Idempotente.
 // Uso: node prompts/herramientas/tema3/notas-t3.js [--dry]

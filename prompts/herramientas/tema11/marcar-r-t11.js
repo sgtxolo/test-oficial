@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Enlaza las fichas RECUERDA R1-R55 del T11 (recuerda-t11.js) con su PÁRRAFO del esquema: <p data-r="R7">. Busca el párrafo cuyo texto contiene la respuesta (o el que más palabras comparte con pregunta+respuesta).
 // Uso: node prompts/herramientas/tema11/marcar-r-t11.js [--dry]   (idempotente)
 const fs = require('fs'), path = require('path');

@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Librería del modo ⚡ EXPRÉS (resumen de 1 hora por tema, 17-20 págs): mezcla
 //   · fichas LITERALES (párrafos enteros del esquema completo, con su subrayado) para lo muy preguntado / EX,
 //   · ESQUEMAS visuales (árbol, columnas, flujo, tabla) para listas, órganos, plazos y comparaciones,

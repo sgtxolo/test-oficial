@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Pone en el esquema del Tema 3 las marcas a mano del temario subrayado (marcas-t3.tsv), en el PÁRRAFO exacto:
 //   <p data-ex="EXOF,*">  →  EXOF = círculo EXOF o sello «PREGUNTA EXAMEN» (ha salido en examen oficial) · EX = círculo EX · * = asterisco
 // y quita el sello EX automático por ficha (articuloResp(..., true)): el EX por párrafo lo pone la app. Idempotente.

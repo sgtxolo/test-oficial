@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Vuelca el texto plano de fichas del Tema 5 de esquemas.html. Uso: node prompts/herramientas/ver-ficha-t5.js "<prefijo de cabecera>" ["<otro>"…]  (norma opcional con NORMA=T5_EUR)
 const fs = require('fs'); const h = fs.readFileSync('esquemas.html', 'utf8');
 const a = h.indexOf('const T5 = {};'), b = h.indexOf('/* T5_RECUERDA'); let nm = '';

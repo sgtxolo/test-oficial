@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // T1 · artículos del temario (temario-limpio/tema1/temario.txt) que NO tienen ficha en el esquema, por norma (cada bloque T1_X de esquemas.html frente a su tanda de artículos).
 // articulos-rojos.js mezclaba bloques en el T1; este script compara norma a norma. Uso: node prompts/herramientas/tema1/rojos-t1.js
 const fs = require('fs'), path = require('path');

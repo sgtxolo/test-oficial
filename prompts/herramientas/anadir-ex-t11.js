@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Añade al esquema del Tema 11 los artículos que el usuario marcó en su temario escaneado con un círculo EX / EXOF
 // (o el sello EXAMEN 2020) y que aún no estaban en esquemas.html. Texto LITERAL del extracto oficial (prompts/temario-limpio/tema11),
 // subrayado con los colores reales de su temario (aplicar-subrayado-pdf.js sobre un html temporal solo con estos artículos).

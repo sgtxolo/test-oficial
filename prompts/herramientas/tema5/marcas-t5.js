@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 5 · marcas a mano del temario escaneado (08-08-2026), leídas página a página como imagen el 17/10/2026.
 //   data-ex="EXOF,EX,*" en el PÁRRAFO exacto: EXOF = sello «PREGUNTA EXAMEN» (págs. escaneadas 55, 58, 93, 193, 233, 294) ·
 //   EX = círculo rosa «EX» del Eurodac (págs. 324-358) · * = asterisco ✱ rojo.

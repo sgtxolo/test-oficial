@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Vuelca los párrafos del esquema del T15 (k-j, ficha, texto) y la unidad de MAPA_PREG de cada pregunta para preg-extra-t15.py
 const fs = require('fs'), path = require('path'); const R = path.join(__dirname, '..', '..', '..'); process.chdir(R);
 const src = fs.readFileSync('prompts/herramientas/mapa-preguntas.js', 'utf8'); const ESQ = 'esquemas.html', TEST = 'test-oficial-conocimiento.html';

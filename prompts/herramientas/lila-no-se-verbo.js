@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Lila ampliado (29/10/2026) sobre lo ya hecho: a cada <mark class="m-accion"> (solo texto plano) se le suma
 //  · «no» / «se» / «ni» (hasta 2) justo delante, si están sin colorear («no se podrán», «se comunicará»)
 //  · el verbo en infinitivo que va justo detrás de un futuro/modal («podrán comunicar», «tendrá que comunicar»,

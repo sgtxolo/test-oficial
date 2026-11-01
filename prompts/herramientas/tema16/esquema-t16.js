@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 16 · esquema LITERAL (28/10/2026) a partir del texto oficial limpio (prompts/temario-limpio/tema16/oficial.txt):
 //   16.1 LO 3/2007 (Tít. Prel., I, II cap. I y V) · 16.2 RD 247/2024 (preámbulo, Primero/Segundo y Protocolo anexo con Anexos I, II, V y VI) · RECUERDA R1-R14.
 // Las marcas a mano (EXAMEN / EXOF / EX / ✱ → data-ex; fichas R → data-r) se colocan en su párrafo desde la lista MARCAS (lectura de tu PDF subrayado, 28/10/2026).

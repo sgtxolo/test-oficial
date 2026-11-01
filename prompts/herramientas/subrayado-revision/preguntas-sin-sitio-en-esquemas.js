@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 const T=process.env.TEMA||'11';const fs = require('fs');
 const th = fs.readFileSync('test-oficial-conocimiento.html', 'utf8'), es = fs.readFileSync('esquemas.html', 'utf8');
 const ids = [...new Set([...th.matchAll(new RegExp('\\{"id":"('+T+'-[^"]+)","pregunta"','g'))].map(m => m[1]))];

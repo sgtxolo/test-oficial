@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Marca en el esquema del Tema 2 los artículos que se mencionan dentro del texto («artículos 4 y 5», «art. 13», «artículo 20.d)»…)
 // con <span class="ref-art"> (negrita + punteado rojo). Solo toca texto, nunca etiquetas; no marca las etiquetas en negrita «Art. 4.».
 // Uso: node prompts/herramientas/marcar-articulos-t2.js   (idempotente)

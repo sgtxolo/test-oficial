@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 3 · cuadros visuales: recrean los cuadros del temario OFICIAL (2025-09-09) con su TEXTO LITERAL y con el subrayado del usuario
 // (lo leído de su PDF escaneado donde el cuadro coincide: fecha/«Maastricht» en azul, «Igualdad» en naranja, subrayados a lápiz de los
 // flujos del art. 7, «cinco años», «Participación»…) y, donde no lo marcó, con su método: lo impreso en negrita → amarillo,

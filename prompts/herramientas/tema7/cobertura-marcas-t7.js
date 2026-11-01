@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 7 · ¿qué párrafos con marca suya (data-ex / data-r) no tienen ninguna pregunta OFICIAL situada en ellos (mapa-preguntas)?
 // Uso: node prompts/herramientas/tema7/cobertura-marcas-t7.js
 const fs = require('fs'), path = require('path');

@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 8 · genera tema8/mapa-fijo-t8.json (id → 'k-j') para que mapa-preguntas.js ancle a su párrafo las preguntas
 // que el mapa automático dejaba sin sitio: se busca la ficha del artículo que cita la explicación y, dentro de ella,
 // el párrafo que mejor casa con la cita literal (o con la respuesta correcta).

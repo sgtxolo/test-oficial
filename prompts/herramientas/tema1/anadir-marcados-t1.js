@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Añade al esquema del Tema 1 los apartados que el usuario marcó en su temario (EXOF / EXAMEN / EX / asterisco) y cuyo artículo no estaba:
 // texto LITERAL (prompts/temario-limpio/tema1/temario.txt = OCR del temario; la Memoria del Protocolo 12 no tiene capa de texto y se transcribió de la imagen),
 // pintado con los colores reales del PDF escaneado (aplicar-subrayado-pdf.js) y con data-ex / data-r en cada párrafo. Idempotente.

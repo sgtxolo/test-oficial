@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 6 · marcas a mano del temario escaneado (08-08-2026) leídas página a página (marcas-t6.txt):
 //   data-ex="EXOF,EX,*" en el PÁRRAFO marcado · data-r="R5" en el apartado de cada ficha RECUERDA · bloque T6.rec con R1-R28.
 //   Si el apartado marcado no estaba en el esquema, se añade con el texto LITERAL (prompts/temario-limpio/tema6) en su sitio;

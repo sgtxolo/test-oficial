@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Sitúa cada marca de marcas-t3.tsv (norma · art · apartado · tipo) en su ficha/párrafo del esquema del Tema 3 y lista
 // las preguntas (oficiales / IA) que el mapa pone en ese párrafo. Uso: node situa-marcas-t3.js [--sin] [--json]
 const fs = require('fs'), path = require('path');

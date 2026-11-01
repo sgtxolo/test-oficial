@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Repara textos donde la extracción perdió las «s» minúsculas (cada «s» quedó como un espacio: «lo  dato  per onale»).
 // Reconstruye cada palabra con un diccionario sacado del texto limpio de todos los temas (prompts/temario-limpio/**.txt).
 // Uso: node prompts/herramientas/reparar-s-extra.js <ruta _extra.json> [--escribe]

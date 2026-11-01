@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Pone en el esquema del Tema 13 las marcas a mano de marcas-t13.txt en su PÁRRAFO:  <p data-ex="EXOF,EX,*" data-r="R7">
 // (mismo criterio que tema4/marcar-ex-t4.js y tema2/marcar-r-t2.js). Idempotente. Uso: node prompts/herramientas/tema14/marcar-t14.js [--dry]
 const fs = require('fs'), path = require('path');

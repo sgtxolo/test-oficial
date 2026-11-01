@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 4 · «sin sitio» clase 1 (1/11/2026): preguntas cuyo artículo está en el temario pero no se subrayó y no estaba en el esquema.
 // Una ficha nueva en «AMPLIACIONES DEL TEMA 4» (tras la trampa del art. 121, antes de Prüm) con el texto LITERAL del temario (temario.txt).
 // Idempotente. Uso: node prompts/herramientas/tema4/anadir-sinsitio-t4.js

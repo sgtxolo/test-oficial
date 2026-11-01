@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Fichas RECUERDA (R1-R39) del Tema 2 → su párrafo del ARTICULADO (pauta 15/10/2026: en el Exprés se quita la parte final
 // RECUERDA y en el artículo se pone la marca «R n»). Devuelve, sobre las fichas de expres-lib:
 //   r:     { 'k-j': ['R1', …] }  párrafo del articulado donde está el apartado de cada R

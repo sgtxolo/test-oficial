@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Relaciona cada pregunta de test con el párrafo exacto del esquema donde está su respuesta.
 // Uso (desde la carpeta del proyecto):
 //   node prompts/herramientas/mapa-preguntas.js            -> calcula, informa y escribe el mapa

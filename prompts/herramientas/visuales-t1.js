@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Genera los esquemas visuales (árboles, flujos, comparaciones, plazos) del Tema 1 y los inserta en esquemas.html
 // justo después de la ficha del artículo que ilustran. Idempotente: se puede ejecutar cuantas veces haga falta.
 // Uso: node prompts/herramientas/visuales-t1.js

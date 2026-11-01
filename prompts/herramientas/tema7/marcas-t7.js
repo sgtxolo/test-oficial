@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 7 · marcas a mano del temario escaneado (08-08-2026), leídas página a página como imagen el 16/10/2026.
 //   data-ex="EXOF,*" en el PÁRRAFO exacto: EXOF = sello «PREGUNTA EXAMEN 2020» o círculo azul «exof» · * = asterisco ✱ azul/rojo
 //   data-r="R5" en el párrafo del apartado de cada ficha RECUERDA R1-R13, más el bloque T7.rec con las 13 fichas (págs. 27-28 del escaneado).

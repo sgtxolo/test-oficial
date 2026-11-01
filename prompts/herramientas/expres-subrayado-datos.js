@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Genera expres-subrayado/datos-tN.js (recortes, mapa pregunta→recorte, reglas de cita, marcas EXOF/EX/✱/R)
 // y expres-subrayado/cuadros-tN.js (los cuadros/esquemas visuales de Esquemas asociados a cada artículo).
 // Uso: node prompts/herramientas/expres-subrayado-datos.js 7 "Tema 7 · Derechos y deberes fundamentales"

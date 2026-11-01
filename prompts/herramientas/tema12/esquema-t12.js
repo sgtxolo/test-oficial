@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 12 · esquema LITERAL (21/10/2026): sustituye el esquema resumido (articuloResp + VIS_T12) por el texto íntegro del
 //   temario oficial (prompts/temario-limpio/tema12/temario.txt = Ley 50/1997 consolidada a 03/01/2025) → ley50.txt limpio.
 //   Deja la norma como /* T12_LEY50 */ (una línea) para marcas-lib.js, aplicar-subrayado-pdf.js y el Exprés.

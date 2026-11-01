@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Marcas del temario subrayado del usuario en cada pregunta del test (pauta 15/10/2026): si la respuesta de una pregunta está en un
 // párrafo del esquema con data-ex (EXOF = círculo EXOF o sello «PREGUNTA EXAMEN»; EX o "1" = círculo EX; * = asterisco de la
 // academia), la app de test lo muestra junto a la respuesta correcta: «(EXAMEN OFICIAL)», «(EX)», «(✱ academia)».

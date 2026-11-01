@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Sustituye el ensamblaje (aviso inicial + RECUERDA) del Tema 5 en esquemas.html. Uso: node prompts/herramientas/recuerda-t5.js
 const fs = require('fs'); const F = 'esquemas.html'; let h = fs.readFileSync(F, 'utf8');
 const aviso = 'Esquema hecho SOLO con lo que tienes subrayado en tu temario (escaneo del 08/08/2026): cada ficha es el texto LITERAL de lo que preguntan los tests del tema (oficiales + IA), con TUS colores de subrayado. Lo que va <mark class="m-resp">en rojo con marco dorado</mark> es la respuesta de alguna pregunta. El VIS y el Código de visados son los textos consolidados de TU temario (no los originales de 2008/2009 del PDF oficial). (…) = texto que no se pregunta. EX = artículo con pregunta oficial o marca de examen.';

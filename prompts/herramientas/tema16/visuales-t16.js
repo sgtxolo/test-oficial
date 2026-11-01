@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Cuadros visuales del Tema 16: recrean los cuadros de tu temario subrayado (PDF 08-08-2026) con su TEXTO LITERAL y tus marcas, más dos propios (plazos del Protocolo y FFAA/FCSE).
 //   LO 3/2007: p7 definiciones (arts. 6-7) · p8 art. 11 · p9 art. 12 · p17 arts. 65 y 67 · p17 art. 64 | RD 247/2024: p25 ámbito, garantías y definiciones · p24 objetivos · p28 4.1 · p30 VI · p32 Anexo II y Anexo IV
 // COLORES: los de tu PDF son fosforito sobre imagen; aquí van por el método (concepto → amarillo, verbo → naranja, órgano → verde, plazo/cifra → azul, no/salvo → rojo subrayado). Se avisa en el informe.

@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // «Sin sitio» clase 1 (pauta 25/10/2026): el esquema tiene la ficha pero con «(…)» o sin el apartado que contesta la pregunta.
 // Localiza, para cada pregunta sin sitio de un tema, el pasaje LITERAL del temario que la contesta y el hueco «(…)» del esquema que lo
 // debería contener; con --aplicar rellena ese hueco con el texto literal (el resto de «(…)» se respetan).

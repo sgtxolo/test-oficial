@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Lista las fichas del tema N que DEBERÍAN llevar esquema visual debajo y no lo llevan
 // (listas a) b) c)…, órganos/competencias, plazos y cifras, procedimientos, clasificaciones).
 // Uso: node prompts/herramientas/sin-esquema.js N

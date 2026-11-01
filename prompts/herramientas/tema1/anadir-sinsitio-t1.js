@@ -1,3 +1,4 @@
+require('../esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Tema 1 · preguntas «sin sitio» de clase 1 (pauta del usuario 25/10/2026): el esquema NO tenía el pasaje que contesta la pregunta
 // (artículo ausente o apartado sustituido por «(…)»). Se restaura / añade el texto LITERAL del oficial (temario-limpio/tema1/temario.txt),
 // pintado con los colores reales del PDF escaneado (aplicar-subrayado-pdf.js), y se realinean los anclajes de mapa-fijo-t1.json (k-j).

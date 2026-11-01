@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Ajusta el Exprés de un tema al tope de páginas (pauta 16/10/2026: cortos 25, largos 30-35 como máximo).
 // Prueba, de más a menos completo, estas configuraciones y se queda con la primera que cabe (si ninguna, la última).
 // Uso: node prompts/herramientas/expres-presupuesto.js <N> <máx. págs>      (corre expres-tN.js varias veces; la última deja esquemas.html listo)

@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Mide el volumen de subrayado (Método Prefortia) de un tema en esquemas.html.
 // Uso (desde la carpeta del proyecto):  node prompts/herramientas/densidad.js 6
 // Cuenta, dentro de los párrafos del tema (región «const TN = {}» … «/* TN_RECUERDA»), qué parte del texto va en

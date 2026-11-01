@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Re-subraya el esquema de un tema con los colores REALES del temario escaneado.
 // Uso: node aplicar-subrayado-pdf.js <subrayado.json> <esquemas.html> <marca_inicio> <marca_fin> <rangos> [--dry]
 //   rangos = "T1_ROMA:4-36,T1_LO:37-50,..."  (marca /* T1_xxx */ de cada norma : páginas del PDF que ocupa)

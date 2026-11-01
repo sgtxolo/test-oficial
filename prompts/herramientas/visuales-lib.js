@@ -1,3 +1,4 @@
+require('./esq-virtual.js');   // esquemas.html con los textos de las leyes en su sitio (ver esq-virtual.js)
 // Librería común de esquemas visuales (árboles, flujos, comparaciones y plazos) para cualquier tema.
 // Uso desde un script de tema:
 //   const L = require('./visuales-lib.js'); const { R, P, D, Y, K, arbol, flujo, cols, plazos } = L;
