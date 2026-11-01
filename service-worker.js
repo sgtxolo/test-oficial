@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v375";
+const CACHE_NAME = "oposicion-cache-v376";
 // La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
 // Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
 // versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
@@ -22,6 +22,7 @@ const APP_SHELL = [
   "./expres-subrayado/bloques-t8.js",
   "./expres-subrayado/bloques-t9.js",
   "./expres-subrayado/bloques-t12.js",
+  "./expres-subrayado/bloques-t15.js",
   "./expres-subrayado/bloques-t17.js",
   "./expres-subrayado/bloques-t13.js",
   "./expres-subrayado/bloques-t16.js",
@@ -34,6 +35,7 @@ const APP_SHELL = [
   "./expres-subrayado/revision-t8.js",
   "./expres-subrayado/revision-t9.js",
   "./expres-subrayado/revision-t12.js",
+  "./expres-subrayado/revision-t15.js",
   "./expres-subrayado/revision-t17.js",
   "./expres-subrayado/revision-t13.js",
   "./expres-subrayado/revision-t16.js",
@@ -46,6 +48,7 @@ const APP_SHELL = [
   "./expres-subrayado/cortes-t8.js",
   "./expres-subrayado/cortes-t9.js",
   "./expres-subrayado/cortes-t12.js",
+  "./expres-subrayado/cortes-t15.js",
   "./expres-subrayado/cortes-t17.js",
   "./expres-subrayado/cortes-t13.js",
   "./expres-subrayado/cortes-t16.js",
@@ -58,6 +61,7 @@ const APP_SHELL = [
   "./expres-subrayado/datos-t8.js",
   "./expres-subrayado/datos-t9.js",
   "./expres-subrayado/datos-t12.js",
+  "./expres-subrayado/datos-t15.js",
   "./expres-subrayado/datos-t17.js",
   "./expres-subrayado/datos-t13.js",
   "./expres-subrayado/datos-t16.js",
@@ -74,6 +78,7 @@ const APP_SHELL = [
   "./expres-subrayado/tapa-t8.js",
   "./expres-subrayado/tapa-t9.js",
   "./expres-subrayado/tapa-t12.js",
+  "./expres-subrayado/tapa-t15.js",
   "./expres-subrayado/tapa-t17.js",
   "./expres-subrayado/tapa-t13.js",
   "./expres-subrayado/tapa-t16.js",
@@ -90,6 +95,7 @@ const APP_SHELL = [
   "./expres-subrayado/cuadros-t8.js",
   "./expres-subrayado/cuadros-t9.js",
   "./expres-subrayado/cuadros-t12.js",
+  "./expres-subrayado/cuadros-t15.js",
   "./expres-subrayado/cuadros-t17.js",
   "./expres-subrayado/cuadros-t13.js",
   "./expres-subrayado/cuadros-t16.js",

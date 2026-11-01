@@ -1,0 +1,5 @@
+[
+ {"id":"a","nombre":"LO 1/2004","paginas":[4,25],"inicio":"^TÍTULO PRELIMINAR","cit":"LO 1/2004|Ley Orgánica 1/2004|Ley Integral"},
+ {"id":"b","nombre":"Resolución de 28 de junio de 2005","inicio":"^15\\.2\\.","cit":"Resolución de 28 de junio de 2005|Resolución 28/06/2005|Protocolo de Actuación de las Fuerzas"},
+ {"id":"c","nombre":"Instrucción 1/2025","inicio":"^VIOLENCIA DE GÉNERO Y SEGUIMIENTO","cit":"Instrucción 1/2025"}
+]
