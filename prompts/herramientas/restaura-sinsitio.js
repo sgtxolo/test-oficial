@@ -30,7 +30,7 @@ const nz = t => fold(t.replace(/<[^>]+>/g, ' ')).replace(/[^a-z0-9]/g, '');
 // ---- esquema: párrafos con su ficha ----
 const esq = cargarEsquemas()[N - 1]; const H = esq.html;
 const qs = cargarPreguntas(N);
-const mapa = JSON.parse(fs.readFileSync(ESQ, 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
+const mapa = JSON.parse(fs.readFileSync(require('path').join(__dirname, '..', '..', 'esquemas-datos', 'mapa-preguntas.js'), 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
 let sin = qs.filter(q => !(q.id in mapa)); if (IDS) sin = qs.filter(q => IDS.includes(q.id));
 const unid = unidades(esq, N);
 const UN = unid.map(u => ({ pid: u.pid, nz: u.T.replace(/ /g, '') }));

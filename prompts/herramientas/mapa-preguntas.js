@@ -184,10 +184,8 @@ try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema10/mapa-fij
 // Temas 2, 7, 9, 11, 13, 14: preguntas «sin sitio» ancladas a mano a su párrafo (temaN/mapa-fijo-tN.json: id → 'k-j'; pauta 25/10/2026)
 for (const tN of [2, 7, 9, 11, 13, 14, 15, 17]) { try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema' + tN + '/mapa-fijo-t' + tN + '.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = tN + '-' + kj; }); } catch (e) {} }
 // ---------- 7. Escribir ----------
-const bloqueMapa = `<script id="mapa-preguntas">window.MAPA_PREG=${JSON.stringify(MAPA)};window.TOTAL_PREG=${JSON.stringify(TOTAL)};window.MAPA_EXTRA=${JSON.stringify(EXTRA)};</script>`;
-let h = fs.readFileSync(ESQ, 'utf8');
-h = /<script id="mapa-preguntas">[\s\S]*?<\/script>/.test(h) ? h.replace(/<script id="mapa-preguntas">[\s\S]*?<\/script>/, () => bloqueMapa) : h.replace('<script>\n// ---- ESQUEMAS ----', () => bloqueMapa + '\n<script>\n// ---- ESQUEMAS ----');
-fs.writeFileSync(ESQ, h);
+// El mapa vive en esquemas-datos/mapa-preguntas.js (esquemas.html lo carga con <script src>)
+fs.writeFileSync('esquemas-datos/mapa-preguntas.js', `window.MAPA_PREG=${JSON.stringify(MAPA)};window.TOTAL_PREG=${JSON.stringify(TOTAL)};window.MAPA_EXTRA=${JSON.stringify(EXTRA)};` + '\n');
 const bloqueTemas = `<script id="esq-temas">window.ESQ_TEMAS=${JSON.stringify(temas)};</script>`;
 let t = fs.readFileSync(TEST, 'utf8');
 t = /<script id="esq-temas">[\s\S]*?<\/script>/.test(t) ? t.replace(/<script id="esq-temas">[\s\S]*?<\/script>/, () => bloqueTemas) : t.replace(/<\/body>(?![\s\S]*<\/body>)/, () => bloqueTemas + '\n</body>');

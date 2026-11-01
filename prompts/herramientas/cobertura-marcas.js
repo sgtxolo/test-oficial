@@ -5,7 +5,7 @@ const T = +process.argv[2];
 const RAIZ = path.join(__dirname, '..', '..');
 const X = require('./expres-lib.js')(T);
 const h = fs.readFileSync(path.join(RAIZ, 'esquemas.html'), 'utf8');
-const MAPA = JSON.parse(h.match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
+const MAPA = JSON.parse(fs.readFileSync(path.join(RAIZ, 'esquemas-datos', 'mapa-preguntas.js'), 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
 const app = fs.readFileSync(path.join(RAIZ, 'test-oficial-conocimiento.html'), 'utf8');
 const n = t => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/<[^>]+>/g, '').replace(/[^a-z0-9ñ]/g, '');
 const BS = String.fromCharCode(92);

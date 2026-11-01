@@ -3,6 +3,7 @@ rem Actualiza la carpeta ESTUDIO-OFFLINE con la ultima version de los esquemas, 
 cd /d "%~dp0"
 if not exist ESTUDIO-OFFLINE mkdir ESTUDIO-OFFLINE
 copy /Y esquemas.html ESTUDIO-OFFLINE\ >nul
+xcopy /E /I /Y /Q esquemas-datos ESTUDIO-OFFLINE\esquemas-datos >nul
 copy /Y test-oficial-conocimiento.html ESTUDIO-OFFLINE\ >nul
 copy /Y test-oficial-ingles.html ESTUDIO-OFFLINE\ >nul
 rem Exprés subrayado: la pagina, sus capturas/datos/cuadros y los Exprés de Esquemas (expres\tN.js) que usa para imprimir

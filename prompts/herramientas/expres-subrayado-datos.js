@@ -72,7 +72,7 @@ ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) 
 ix.forEach(p => { if (fx[p.id] !== undefined) p.fx = fx[p.id]; });
 // preguntas que Esquemas sitúa en una ficha «Artículo N» / «Apartado N» que el Exprés no enlaza: van a la pieza de ese número si es la única (Exprés o fuera del Exprés)
 try {
-  const X = require('./expres-lib.js')(+T), MP = JSON.parse(fs.readFileSync('esquemas.html', 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
+  const X = require('./expres-lib.js')(+T), MP = JSON.parse(fs.readFileSync(require('path').join(__dirname, '..', '..', 'esquemas-datos', 'mapa-preguntas.js'), 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
   const cand = {}; for (const p of ix) { const m = p.id.match(/^[a-z]+-(\d+)$/); if (m) { const k0 = (/Apartado/.test(p.nombre) ? 'ap' : 'art') + m[1]; (cand[k0] = cand[k0] || []).push(p.id); } }
   let nuevas = 0;
   for (const [q, anc] of Object.entries(MP)) {

@@ -160,9 +160,6 @@ esquemas.forEach((es, i) => {
   }
 });
 
-let h = fs.readFileSync(ESQ, 'utf8');
-const tag = '<script id="huecos-temario">window.HUECOS=' + JSON.stringify(HUECOS).replace(/<\//g, '<\\/') + '</script>';
-if (h.includes('<script id="huecos-temario">')) h = h.replace(/<script id="huecos-temario">[\s\S]*?<\/script>/, () => tag);
-else h = h.replace('<script id="mapa-preguntas">', () => tag + '\n<script id="mapa-preguntas">');
-fs.writeFileSync(ESQ, h);
-console.log(`Total: ${hechos} de ${total} (…) con su texto literal → esquemas.html`);
+// Los huecos viven en esquemas-datos/huecos.js (esquemas.html lo carga con <script src>)
+fs.writeFileSync('esquemas-datos/huecos.js', 'window.HUECOS=' + JSON.stringify(HUECOS).replace(/<\//g, '<\\/') + '\n');
+console.log(`Total: ${hechos} de ${total} (…) con su texto literal → esquemas-datos/huecos.js`);

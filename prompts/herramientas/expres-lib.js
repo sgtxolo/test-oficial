@@ -18,7 +18,7 @@ module.exports = function (T) {
   const fake = () => new Proxy(function () {}, { get: (t, k) => k === Symbol.toPrimitive ? (() => '') : fake(), apply: () => fake(), set: () => true, construct: () => fake() });
   const E = new Function('document', 'window', 'localStorage', 'speechSynthesis', 'location', 'matchMedia', 'addEventListener', 'removeEventListener', code)(fake(), fake(), fake(), fake(), fake(), fake(), fake(), fake());
   const html = E[T - 1].html;
-  const MAPA = JSON.parse(h.match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
+  const MAPA = JSON.parse(fs.readFileSync(path.join(RAIZ, 'esquemas-datos', 'mapa-preguntas.js'), 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
   const EXTRA = JSON.parse(h.match(/window\.MAPA_EXTRA=(\{.*?\});/)[1]);
   // fuera las preguntas cuya respuesta es solo «el artículo X» (no caen así en el examen; pauta del usuario 14/10/2026)
   const PA = require('./preguntas-articulo.js');
@@ -252,7 +252,7 @@ module.exports = function (T) {
 `;
   // Los «(…)» del propio temario (huecos del esquema, window.HUECOS del tema) se sustituyen por su texto literal en gris (clase hueco-txt,
   // la misma del esquema): en los apartados con pregunta oficial / R no debe quedar ningún (…) con texto conocido (pauta 16/10/2026)
-  const HUECOS = (() => { try { return JSON.parse(h.match(/window\.HUECOS=(\{[\s\S]*?\})<\/script>/)[1])[T] || {}; } catch (e) { return {}; } })();
+  const HUECOS = (() => { try { return JSON.parse(fs.readFileSync(path.join(RAIZ, 'esquemas-datos', 'huecos.js'), 'utf8').match(/window\.HUECOS=(\{[\s\S]*\})\s*$/)[1])[T] || {}; } catch (e) { return {}; } })();
   const claveH = t => t.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9ñ]/g, '');
   // texto de pie de página del PDF que se coló en los huecos. Los huecos cortos o con plazos / cantidades se escriben en gris dentro del
   // texto; los largos quedan en un (…) verde que se despliega al pulsarlo (en el Exprés no hay mecanismo de huecos como en el esquema)

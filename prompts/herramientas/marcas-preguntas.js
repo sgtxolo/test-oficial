@@ -6,7 +6,7 @@
 const fs = require('fs'), path = require('path');
 const RAIZ = path.join(__dirname, '..', '..');
 const h = fs.readFileSync(path.join(RAIZ, 'esquemas.html'), 'utf8');
-const MAPA = JSON.parse(h.match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
+const MAPA = JSON.parse(fs.readFileSync(path.join(RAIZ, 'esquemas-datos', 'mapa-preguntas.js'), 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
 const temas = [...new Set(Object.values(MAPA).map(s => +s.split('-')[0]))].sort((a, b) => a - b);
 const OUT = {};
 for (const t of temas) {

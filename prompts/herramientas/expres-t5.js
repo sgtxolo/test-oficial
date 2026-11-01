@@ -17,7 +17,7 @@ const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=|data-r=/.tes
 // Sin la parte final RECUERDA: las preguntas que el mapa colgaba de las fichas «RECUERDA del temario» pasan al párrafo de su R
 // en el articulado (donde va el sello «R n»), como en el Tema 2.
 const { RS } = require('./tema5/marcas-t5.js');
-const MAPA = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', '..', 'esquemas.html'), 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
+const MAPA = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', '..', 'esquemas-datos', 'mapa-preguntas.js'), 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
 const kRec = X.fichaBloque.findIndex(t => /^RECUERDA/.test(t));
 let movidas = 0;
 if (kRec > 0) Object.entries(MAPA).forEach(([id, v]) => { const m = v.match(/^5-(\d+)-(\d+)/); if (!m || +m[1] < kRec) return;

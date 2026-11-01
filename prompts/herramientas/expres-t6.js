@@ -17,7 +17,7 @@ const nivel = (k, p, f) => { const marca = f.ps.some(x => /data-ex=/.test(x.at))
   return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 }; };
 
 // Sin la parte final RECUERDA: las preguntas que el mapa colgaba de las fichas RECUERDA pasan al párrafo de su R en el articulado
-const MAPA = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', '..', 'esquemas.html'), 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
+const MAPA = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', '..', 'esquemas-datos', 'mapa-preguntas.js'), 'utf8').match(/window\.MAPA_PREG=(\{.*?\});window\.TOTAL_PREG/)[1]);
 const kRec = X.fichaBloque.findIndex(t => /^RECUERDA/.test(t));
 const sitioR = {};   // 'R16' → [k, j] del párrafo del articulado con el sello R16
 X.fichas.forEach((f, k) => { if (k < kRec) f.ps.forEach((p, j) => { const m = p.at.match(/data-r="([^"]*)"/); if (m) m[1].split(/[ ,·]+/).forEach(r => { if (/^R\d+$/.test(r) && !sitioR[r]) sitioR[r] = [k, j]; }); }); });
