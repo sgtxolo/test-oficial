@@ -243,7 +243,7 @@ label=1===temas.length?temaNombre(TEMARIO.find(x=>x.id===temas[0])||{id:0,nombre
 state.history.push({id:Date.now(),fecha:todayStr(),temaLabel:label,total:tot,aciertos:ac,tiempoSeg:tiempoSeg,detalle:det.map(d=>({preguntaId:d.preguntaId,temaId:d.temaId,seleccion:d.seleccion,correcta:d.correcta,esCorrecta:d.esCorrecta,altSeleccion:null!=d.altSeleccion?d.altSeleccion:null}))});
 saveState();testActivo=null;closeModal("modal-test");mostrarResultado(det,ac,tot,esSim,totalPreg,tiempoSeg,pctAnterior);renderInicio()}
 function guardarYSalir(){if(!testActivo)return;guardarTestPendiente();pararCronometro();quitarPausaUI();testActivo=null;closeModal("modal-test");renderInicio();renderPerfil();if(typeof renderGuardados==="function")try{renderGuardados()}catch(e){}avisoApp("Test guardado. Puedes retomarlo desde \u201cTests guardados\u201d.")}function avisoApp(msg){var t=document.createElement("div");t.className="app-toast";t.textContent=msg;document.body.appendChild(t);setTimeout(function(){t.remove()},2600)}
-function confirmarApp(msg,onYes,txtYes,txtNo){var ov=document.createElement("div");ov.className="app-confirm";ov.innerHTML='<div class="app-confirm-box"><p></p><div class="app-confirm-btns"><button type="button" class="ac-no"></button><button type="button" class="ac-si"></button></div></div>';ov.querySelector("p").textContent=msg;ov.querySelector(".ac-no").textContent=txtNo||"Cancelar";ov.querySelector(".ac-si").textContent=txtYes||"Salir";function cerrar(){ov.remove()}ov.querySelector(".ac-no").onclick=cerrar;ov.querySelector(".ac-si").onclick=function(){cerrar();onYes()};ov.onclick=function(e){if(e.target===ov)cerrar()};document.body.appendChild(ov)}function salirTest(){if(!testActivo)return;if(tiempoActivoMs()<12e4){pararCronometro();quitarPausaUI();testActivo=null;closeModal("modal-test");renderInicio();return}confirmarApp("¿Salir del test? Se perderá el progreso no guardado. Usa el icono de guardar si quieres continuarlo más tarde.",function(){pararCronometro();quitarPausaUI();testActivo=null;closeModal("modal-test");renderInicio()},"Salir","Seguir")}function quitarPausaUI(){const e=document.getElementById("pausa-overlay");e&&e.remove();const b=document.getElementById("btn-pausa");b&&b.classList.remove("en-pausa")}function pausarTest(){const t=testActivo;if(!t)return;if(t.pausado){t.inicio+=Date.now()-t.pausado;t.pausado=null;qStartTime=Date.now();quitarPausaUI();null!=cronoRestante&&cronoRestante>0&&t.esSimulacro&&iniciarCronometro(cronoRestante);return}t.pausado=Date.now();cronometroInterval&&(clearInterval(cronometroInterval),cronometroInterval=null);try{vozPararTodo()}catch(e){}document.getElementById("btn-pausa").classList.add("en-pausa");const o=document.createElement("div");o.id="pausa-overlay";o.innerHTML='<div class="pausa-box"><div class="pausa-ico">\u23f8</div><h3>Test en pausa</h3><p>El tiempo est\u00e1 parado.</p><button onclick="pausarTest()">Continuar</button></div>';document.getElementById("modal-test").appendChild(o)}
+function confirmarApp(msg,onYes,txtYes,txtNo){var ov=document.createElement("div");ov.className="app-confirm";ov.innerHTML='<div class="app-confirm-box"><p></p><div class="app-confirm-btns"><button type="button" class="ac-no"></button><button type="button" class="ac-si"></button></div></div>';ov.querySelector("p").textContent=msg;ov.querySelector(".ac-no").textContent=txtNo||"Cancelar";ov.querySelector(".ac-si").textContent=txtYes||"Salir";function cerrar(){ov.remove()}ov.querySelector(".ac-no").onclick=cerrar;ov.querySelector(".ac-si").onclick=function(){cerrar();onYes()};ov.onclick=function(e){if(e.target===ov)cerrar()};document.body.appendChild(ov)}function salirTest(){if(!testActivo)return;if(tiempoActivoMs()<12e4){pararCronometro();quitarPausaUI();testActivo=null;closeModal("modal-test");renderInicio();return}confirmarApp("¿Salir del test? Se perderá el progreso no guardado. Usa el icono de guardar si quieres continuarlo más tarde.",function(){pararCronometro();quitarPausaUI();testActivo=null;closeModal("modal-test");renderInicio()},"Salir","Seguir")}function quitarPausaUI(){const e=document.getElementById("pausa-overlay");e&&e.remove();const b=document.getElementById("btn-pausa");b&&b.classList.remove("en-pausa")}function pausarTest(){const t=testActivo;if(!t)return;if(t.pausado){t.inicio+=Date.now()-t.pausado;t.pausado=null;qStartTime=Date.now();quitarPausaUI();null!=cronoRestante&&cronoRestante>0&&t.esSimulacro&&iniciarCronometro(cronoRestante);try{modoVoz&&vozLeerPreguntaActual()}catch(e){}return}t.pausado=Date.now();cronometroInterval&&(clearInterval(cronometroInterval),cronometroInterval=null);try{vozPararTodo()}catch(e){}document.getElementById("btn-pausa").classList.add("en-pausa");const o=document.createElement("div");o.id="pausa-overlay";o.innerHTML='<div class="pausa-box"><div class="pausa-ico">\u23f8</div><h3>Test en pausa</h3><p>El tiempo est\u00e1 parado.</p><button onclick="pausarTest()">Continuar</button></div>';document.getElementById("modal-test").appendChild(o)}
 function cerrarTestConfirm(){salirTest()}
 
 // Ciclo de estudio/repaso reducido a solo 3 colores, tal como pide el usuario: VERDE para 1ª Fase (estudio
@@ -942,117 +942,240 @@ function vozBotonEstado(estado){
   if(estado==='leyendo') btn.classList.add('voz-leyendo');
   else if(estado==='escuchando') btn.classList.add('voz-escuchando');
 }
+var vozVelocidad = 1;
+var vozHablando = false;
+var vozTokenHabla = 0;
+var vozGenRec = 0;
+var vozEsperaAvance = false;
+var vozConfirmacion = null;
+var vozHintDado = false;
+var vozFallos = 0;
+
+function vozAbortarReconocimiento(){
+  vozGenRec++;
+  if(vozRecognition){ try{ vozRecognition.onresult=null; vozRecognition.onerror=null; vozRecognition.onend=null; vozRecognition.abort(); }catch(e){} vozRecognition=null; }
+}
 function vozHablar(texto, onEnd){
+  vozAbortarReconocimiento();
   if(!('speechSynthesis' in window)){ if(onEnd) onEnd(); return; }
   try{ window.speechSynthesis.cancel(); }catch(e){}
+  var my = ++vozTokenHabla;
   var u = new SpeechSynthesisUtterance(texto);
   u.lang = 'es-ES';
-  u.rate = 1;
+  u.rate = vozVelocidad;
   u.pitch = 1;
+  vozHablando = true;
   vozBotonEstado('leyendo');
-  vozEstadoMostrar('🔊 Leyendo...');
-  u.onend = function(){ vozBotonEstado(''); if(onEnd) onEnd(); };
-  u.onerror = function(){ vozBotonEstado(''); if(onEnd) onEnd(); };
+  vozEstadoMostrar('🔊 Leyendo... (toca el micro para contestar ya)');
+  var fin = function(){ if(my!==vozTokenHabla) return; vozHablando=false; vozBotonEstado(''); if(onEnd) onEnd(); };
+  u.onend = fin;
+  u.onerror = fin;
   window.speechSynthesis.speak(u);
 }
 function vozLeerPreguntaActual(){
-  if(!modoVoz || !testActivo) return;
+  if(!modoVoz || !testActivo || testActivo.pausado) return;
   var q = testActivo.preguntas[testActivo.idx];
   if(!q) return;
-  var letras = ["A","B","C","D"];
+  var letras = ["A","B","C","D","E","F"];
   var texto = 'Pregunta ' + (testActivo.idx+1) + ' de ' + testActivo.preguntas.length + '. ' + vozLimpiarTexto(q.pregunta) + '. ';
   q.opciones.forEach(function(o,i){ texto += 'Opción ' + letras[i] + ': ' + vozLimpiarTexto(o) + '. '; });
-  vozReintentos = 0;
-  vozHablar(texto, function(){ if(modoVoz) vozEscucharRespuesta(); });
+  vozEsperaAvance = false;
+  vozConfirmacion = null;
+  vozFallos = 0;
+  vozHablar(texto, function(){ vozEscuchar(); });
 }
-function vozParseRespuesta(t){
-  t = vozNormalizar(t);
-  var mapa = {
-    'a':0,'la a':0,'opcion a':0,'la opcion a':0,'uno':0,'una':0,'primera':0,'primero':0,'la primera':0,
-    'b':1,'la b':1,'opcion b':1,'la opcion b':1,'dos':1,'segunda':1,'segundo':1,'la segunda':1,
-    'c':2,'la c':2,'opcion c':2,'la opcion c':2,'tres':2,'tercera':2,'tercero':2,'la tercera':2,
-    'd':3,'la d':3,'opcion d':3,'la opcion d':3,'cuatro':3,'cuarta':3,'cuarto':3,'la cuarta':3
-  };
-  if(Object.prototype.hasOwnProperty.call(mapa,t)) return mapa[t];
-  for(var k in mapa){ if(t.indexOf(k)!==-1) return mapa[k]; }
-  return -1;
+
+/* ---- Interpretación de lo dicho ---- */
+var VOZ_RELLENO = {opcion:1,opciones:1,letra:1,la:1,el:1,respuesta:1,es:1,marco:1,marca:1,marcar:1,contesto:1,contestar:1,elijo:1,pongo:1,quiero:1,creo:1,que:1,sera:1,seria:1,yo:1,digo:1,pues:1,por:1,favor:1};
+var VOZ_PALABRAS_LETRA = {
+  a:0,ah:0,aa:0,ha:0,ay:0,alfa:0,primera:0,primero:0,uno:0,una:0,
+  b:1,be:1,ve:1,beh:1,bee:1,bravo:1,segunda:1,segundo:1,dos:1,
+  c:2,ce:2,se:2,ze:2,the:2,charlie:2,tercera:2,tercero:2,tres:2,
+  d:3,de:3,dee:3,delta:3,cuarta:3,cuarto:3,cuatro:3,
+  e:4,eh:4,echo:4,quinta:4,quinto:4,cinco:4,
+  f:5,efe:5,fe:5,sexta:5,sexto:5,seis:5
+};
+function vozParseLetra(normAlts, n){
+  var score = {}, orden = [];
+  normAlts.forEach(function(t, i){
+    var toks = t.split(' ').filter(function(w){ return w && !VOZ_RELLENO[w]; });
+    if(toks.length===1 && Object.prototype.hasOwnProperty.call(VOZ_PALABRAS_LETRA, toks[0])){
+      var l = VOZ_PALABRAS_LETRA[toks[0]];
+      if(l<n){ if(score[l]===undefined){ score[l]=0; orden.push(l); } score[l] += 1/(i+1); }
+    }
+  });
+  var mejor = -1, ms = 0;
+  orden.forEach(function(l){ if(score[l]>ms){ ms=score[l]; mejor=l; } });
+  return mejor;
 }
-function vozEscucharRespuesta(){
+function vozParseRespuesta(t){ return vozParseLetra([vozNormalizar(t)], 6); }
+
+var VOZ_AYUDA = 'Puedes decir: A, B, C o D para responder. Siguiente. Anterior. Repetir. Ver respuesta, para oír la solución y la explicación. Pausa y continuar. Guardar. Terminar, para corregir. Salir. Más rápido o más lento. Desactivar voz.';
+
+function vozEscuchar(){
   if(!modoVoz || !testActivo) return;
-  var opts = document.getElementById('opciones');
-  if(opts && opts.dataset.locked) return;
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if(!SR){ vozHablar('Tu navegador no permite responder hablando. Toca una opción en pantalla.'); vozEstadoOcultar(); return; }
+  if(!SR){ vozHablar('Tu navegador no permite responder hablando. Toca una opción en pantalla.'); return; }
+  vozAbortarReconocimiento();
   var rec;
   try{ rec = new SR(); }catch(e){ vozHablar('No se pudo activar el micrófono.'); return; }
+  var gen = vozGenRec;
+  var recibido = false;
   vozRecognition = rec;
   rec.lang = 'es-ES';
   rec.continuous = false;
   rec.interimResults = false;
-  rec.maxAlternatives = 4;
+  rec.maxAlternatives = 5;
   vozBotonEstado('escuchando');
-  vozEstadoMostrar('🎤 Di la respuesta: A, B, C o D...');
+  vozEstadoMostrar(testActivo.pausado ? '⏸ En pausa. Di “continuar”' : '🎤 Te escucho: A, B, C, D, siguiente, anterior, ver respuesta...');
   rec.onresult = function(ev){
-    var idx = -1;
-    var alts = ev.results[0];
-    for(var i=0;i<alts.length;i++){
-      idx = vozParseRespuesta(alts[i].transcript);
-      if(idx!==-1) break;
-    }
+    if(gen!==vozGenRec) return;
+    recibido = true;
     vozBotonEstado('');
-    if(idx===-1){
-      vozReintentos++;
-      if(vozReintentos>=3){ vozHablar('No consigo entenderte. Toca la pantalla para responder.'); vozEstadoOcultar(); vozReintentos=0; return; }
-      vozHablar('No te he entendido. Di la letra A, B, C o D.', function(){ if(modoVoz) vozEscucharRespuesta(); });
-      return;
-    }
-    vozResponder(idx);
+    var alts = [];
+    var r = ev.results[ev.results.length-1];
+    for(var i=0;i<r.length;i++) alts.push(r[i].transcript);
+    vozManejar(alts);
   };
   rec.onerror = function(ev){
-    vozBotonEstado('');
-    if(!modoVoz) return;
-    if(ev.error==='no-speech' || ev.error==='aborted' || ev.error==='audio-capture'){
-      vozReintentos++;
-      if(vozReintentos<3){ vozEscucharRespuesta(); }
-      else { vozHablar('No te oigo bien. Toca la pantalla para responder.'); vozEstadoOcultar(); vozReintentos=0; }
-    } else if(ev.error==='not-allowed' || ev.error==='service-not-allowed'){
-      vozHablar('No tengo permiso para usar el micrófono. Actívalo en el navegador.');
-      vozEstadoOcultar();
+    if(gen!==vozGenRec) return;
+    if(ev.error==='not-allowed' || ev.error==='service-not-allowed'){
+      recibido = true;
       modoVoz = false;
-      var btn=document.getElementById('btn-voz'); if(btn) btn.classList.remove('voz-leyendo','voz-escuchando');
+      vozPararTodo();
+      vozHablar('No tengo permiso para usar el micrófono. Actívalo en el navegador.');
     }
   };
-  rec.onend = function(){ vozBotonEstado(''); };
+  rec.onend = function(){
+    if(gen!==vozGenRec) return;
+    vozBotonEstado('');
+    vozRecognition = null;
+    if(recibido || !modoVoz || !testActivo || vozHablando) return;
+    if(vozEsperaAvance){ vozEsperaAvance=false; vozAvanzarAuto(); return; }
+    setTimeout(function(){ if(modoVoz && testActivo && !vozHablando && !vozRecognition) vozEscuchar(); }, 300);
+  };
   try{ rec.start(); }catch(e){}
+}
+function vozAvanzarAuto(){
+  if(!modoVoz || !testActivo) return;
+  siguientePregunta();
+}
+function vozConfirmar(texto, fn){
+  vozConfirmacion = { fn: fn };
+  vozHablar(texto + ' Di sí o no.', function(){ vozEscuchar(); });
+}
+function vozSalirSinGuardar(){
+  modoVoz = false;
+  vozPararTodo();
+  pararCronometro(); quitarPausaUI();
+  testActivo = null;
+  closeModal("modal-test");
+  renderInicio();
+}
+function vozVerRespuesta(){
+  var t = testActivo, q = t.preguntas[t.idx];
+  var letras = ["A","B","C","D","E","F"];
+  var txt = 'La respuesta correcta es la ' + letras[q.correcta] + ': ' + vozLimpiarTexto(q.opciones[q.correcta]) + '.';
+  var ex = vozLimpiarTexto(q.explicacion).replace(/\(?Pregunta generada por IA\)?/gi,'').trim();
+  if(ex) txt += ' Explicación: ' + (ex.length>700 ? ex.slice(0,700) : ex);
+  var yaRespondida = !!t.detalle[t.idx];
+  vozHablar(txt, function(){ vozEsperaAvance = yaRespondida; vozEscuchar(); });
+}
+function vozManejar(alts){
+  var t = testActivo;
+  if(!modoVoz || !t) return;
+  var norm = alts.map(vozNormalizar);
+  function tiene(re){ for(var i=0;i<norm.length;i++){ if(re.test(norm[i])) return true; } return false; }
+  var esperaba = vozEsperaAvance;
+  vozEsperaAvance = false;
+  var q = t.preguntas[t.idx];
+
+  if(vozConfirmacion){
+    var c = vozConfirmacion; vozConfirmacion = null;
+    if(tiene(/\b(si|vale|confirmo|confirmar|dale|claro|afirmativo)\b/)) return c.fn();
+    return vozHablar('De acuerdo, cancelado.', function(){ vozEscuchar(); });
+  }
+  if(tiene(/\b(ayuda|comandos|que puedo decir)\b/)) return vozHablar(VOZ_AYUDA, function(){ vozEscuchar(); });
+  if(tiene(/\b(desactiv|apag|quit)\w* (el |la )?(modo )?voz\b|\bmodo voz fuera\b/)){
+    modoVoz = false; var b = document.getElementById('btn-voz'); if(b) b.title='Modo voz: leer preguntas y responder hablando';
+    vozPararTodo(); return vozHablar('Modo voz desactivado.');
+  }
+  if(tiene(/\bmas (rapido|deprisa|velocidad)\b|\bacelera\w*\b/)){ vozVelocidad = Math.min(1.8, vozVelocidad+0.2); return vozHablar('Voy más rápido.', function(){ vozEscuchar(); }); }
+  if(tiene(/\bmas (lento|despacio)\b|\bdespacio\b|\bfrena\b/)){ vozVelocidad = Math.max(0.6, vozVelocidad-0.2); return vozHablar('Voy más despacio.', function(){ vozEscuchar(); }); }
+  if(tiene(/\bguarda\w*\b/)){
+    return vozHablar('Guardando el test.', function(){ modoVoz=false; vozPararTodo(); guardarYSalir(); });
+  }
+  if(tiene(/\b(salir|sal|cancelar|cancela|abandonar|abandona)\b/)){
+    return vozConfirmar('¿Salir del test sin guardar?', vozSalirSinGuardar);
+  }
+  if(t.pausado){
+    if(tiene(/\b(continu|segui|sigue|reanud|vamos|adelante)\w*/)) { pausarTest(); return; }
+    return vozEscuchar();
+  }
+  if(tiene(/\b(terminar|termina|finalizar|finaliza|corregir|corrige|corrijo|resultados?|acabar|acaba)\b/)){
+    if(!t.detalle.filter(Boolean).length) return vozHablar('Todavía no has respondido ninguna pregunta.', function(){ vozEscuchar(); });
+    return vozConfirmar('¿Terminar y corregir el test?', function(){ modoVoz=false; vozPararTodo(); finalizarTest(); });
+  }
+  if(tiene(/\b(pausa|pausar|parar|para|detener|detente|espera|esperar)\b/)){
+    pausarTest();
+    return vozHablar('Test en pausa. Di continuar cuando quieras.', function(){ vozEscuchar(); });
+  }
+  if(tiene(/\b(repite|repetir|otra vez|de nuevo|volver a leer|vuelve a leer|lee|leer)\b/)) return vozLeerPreguntaActual();
+  if(tiene(/\bver respuesta\b|\brespuesta correcta\b|\bdime la respuesta\b|\bsolucion\b|\bexplicacion\b|\bexplica\w*\b|\bcual es la respuesta\b|\bcual es\b|\bpista\b|\bmuestra\w* la respuesta\b/)) return vozVerRespuesta();
+  if(tiene(/\b(siguiente|adelante|avanza|avanzar|pasa|pasar|salta|saltar|next|no lo se|no se)\b/)){
+    if(t.idx>=t.preguntas.length-1) return vozHablar('Es la última pregunta. Di terminar para corregir el test.', function(){ vozEscuchar(); });
+    return avanzarPregunta();
+  }
+  if(tiene(/\b(anterior|atras|vuelve|volver|retrocede|retroceder|previa)\b/)){
+    if(t.idx<=0) return vozHablar('Esta es la primera pregunta.', function(){ vozEscuchar(); });
+    return anteriorPregunta();
+  }
+  var idx = vozParseLetra(norm, q.opciones.length);
+  if(idx!==-1) return vozResponder(idx);
+  if(esperaba){ vozAvanzarAuto(); return; }
+  vozFallos++;
+  if(vozFallos%3===1) return vozHablar('No te he entendido. Di A, B, C o D.', function(){ vozEscuchar(); });
+  return vozEscuchar();
 }
 function vozResponder(idx){
   if(!testActivo) return;
   var opts = document.getElementById('opciones');
-  if(opts && opts.dataset.locked) return;
+  if(opts && opts.dataset.locked){ return vozHablar('Esta pregunta ya está respondida.', function(){ vozEscuchar(); }); }
   var q = testActivo.preguntas[testActivo.idx];
   var esOk = idx===q.correcta;
   seleccionar(idx);
-  var letras = ["A","B","C","D"];
-  var fb = esOk ? '¡Correcto!' : ('Incorrecto. La respuesta correcta es la ' + letras[q.correcta] + ': ' + vozLimpiarTexto(q.opciones[q.correcta]));
+  var letras = ["A","B","C","D","E","F"];
+  var fb = 'Has marcado la ' + letras[idx] + '. ' + (esOk ? '¡Correcto!' : ('Incorrecto. La correcta es la ' + letras[q.correcta] + ': ' + vozLimpiarTexto(q.opciones[q.correcta])));
   vozEstadoMostrar(esOk ? '✅ Correcto' : '❌ Incorrecto');
-  vozHablar(fb, function(){
-    setTimeout(function(){
-      if(modoVoz && testActivo){ siguientePregunta(); }
-    }, 700);
-  });
+  vozFallos = 0;
+  vozHablar(fb, function(){ vozEsperaAvance = true; vozEscuchar(); });
 }
 function vozPararTodo(){
+  vozTokenHabla++;
+  vozHablando = false;
+  vozEsperaAvance = false;
+  vozConfirmacion = null;
   try{ window.speechSynthesis.cancel(); }catch(e){}
-  if(vozRecognition){ try{ vozRecognition.onresult=null; vozRecognition.onerror=null; vozRecognition.onend=null; vozRecognition.abort(); }catch(e){} vozRecognition=null; }
+  vozAbortarReconocimiento();
   vozEstadoOcultar();
   vozBotonEstado('');
 }
 function toggleModoVoz(){
+  if(modoVoz && vozHablando){
+    vozTokenHabla++; vozHablando=false;
+    try{ window.speechSynthesis.cancel(); }catch(e){}
+    vozBotonEstado('');
+    vozEscuchar();
+    return;
+  }
   modoVoz = !modoVoz;
   var btn = document.getElementById('btn-voz');
   if(modoVoz){
     if(btn) btn.title = 'Desactivar modo voz';
-    vozLeerPreguntaActual();
+    if(!vozHintDado){
+      vozHintDado = true;
+      vozHablar('Modo voz activado. Di ayuda en cualquier momento para oír los comandos.', function(){ vozLeerPreguntaActual(); });
+    } else vozLeerPreguntaActual();
   } else {
     if(btn) btn.title = 'Modo voz: leer preguntas y responder hablando';
     vozPararTodo();
