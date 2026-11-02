@@ -55,6 +55,7 @@ h3.sec{font-size:15px;margin:22px 4px 10px;color:var(--gris);text-transform:uppe
 .ley{background:var(--panel-alt);border-radius:var(--radio-sm);padding:12px 14px;margin:8px 0;display:flex;gap:16px;flex-wrap:wrap;font-size:13px;align-items:center}
 /* barra de herramientas fija */
 #herr{position:sticky;top:59px;z-index:15;background:var(--fondo);border-bottom:1px solid var(--borde);padding:8px 0 10px}
+#herr.plegado{display:none}#b-filtros.on{background:var(--verde);color:#fff}
 #herr .in{max-width:var(--ancho);margin:0 auto;padding:0 max(16px,env(safe-area-inset-left))}
 .buscar{width:100%;border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:12px;padding:9px 12px;font:inherit}
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
@@ -235,6 +236,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
   <button class="ib oculto" id="b-atras" title="Volver a la pantalla de inicio">🏠 <span class="txt-b">Inicio</span></button>
   <h1 id="tit">Exprés · Temario subrayado</h1>
   <button class="ib oculto" id="b-pin" title="Llevarme al artículo donde pusiste la chincheta 📍">📍 <span class="txt-b">Donde me quedé</span></button>
+  <button class="ib oculto" id="b-filtros" title="Buscar y filtrar los artículos">🔎 <span class="txt-b">Filtros</span></button>
   <button class="ib oculto" id="b-cut" title="Quitar trozos del artículo que estás viendo">✂️ <span class="txt-b">Quitar trozos</span></button>
   <button class="ib" id="b-panel" title="Panel de estudio">🎯 <span class="txt-b">Panel</span></button>
   <button class="ib" id="b-marcas" title="Subrayar y dibujar sobre tu temario">✏️ <span class="txt-b">Marcas</span></button>
@@ -551,7 +553,7 @@ function ponFecha(n, f) {
 }
 // ---------- dashboard ----------
 function dash() {
-  tema = null; $('#b-pin').classList.add('oculto'); $('#b-cut').classList.add('oculto'); $('#herr').classList.add('oculto'); $('#info').innerHTML = ''; $('#pill').classList.add('oculto'); $('#b-atras').classList.add('oculto'); $('#tit').textContent = 'Exprés · Temario subrayado';
+  tema = null; $('#b-pin').classList.add('oculto'); $('#b-cut').classList.add('oculto'); $('#b-filtros').classList.add('oculto'); $('#herr').classList.add('oculto'); $('#info').innerHTML = ''; $('#pill').classList.add('oculto'); $('#b-atras').classList.add('oculto'); $('#tit').textContent = 'Exprés · Temario subrayado';
   const ts = Object.keys(D).sort((a, b) => a - b);
   const S = leerStats(), EG = {}; let tot = 0, ok = 0, pq = 0, qq = 0; ts.forEach(t => { const g = EG[t] = {ok: 0, dud: 0, mal: 0, nuevo: 0}; visibles(t).forEach(p => { const e = estadoDe(t, p, S); if (e) g[e.c]++; }); tot += g.ok + g.dud + g.mal + g.nuevo; ok += g.ok; pq += D[t].cob ? D[t].cob.e : 0; qq += D[t].cob ? D[t].cob.q : 0; });   // el avance sale de tus TESTS: artículo dominado = todas sus preguntas vistas y sin fallos
   const pct = tot ? Math.round(ok * 100 / tot) : 0, dEx = diasHasta(st.examen);
@@ -590,7 +592,7 @@ function cabTema() {
   if (ns.length > 1) h += '<div class="chips"><button class="chip' + (inst === 'todas' ? ' on' : '') + '" data-i="todas">Todas las normas</button>' + ns.map(c => '<button class="chip' + (inst === c.p ? ' on' : '') + '" data-i="' + c.p + '">' + esc(c.nombre) + '</button>').join('') + '</div>';
   h += '<div class="chips"><button class="chip" id="b-rep">▶ Repasar la lista</button>' + (D[t].piezas.some(x => quitado(t, x.id)) ? '<button class="chip' + (st.verQuit ? ' on' : '') + '" id="b-quit" title="Ver los artículos que has quitado para devolverlos">🗑️ Quitados (' + D[t].piezas.filter(x => quitado(t, x.id)).length + ')</button>' : '') + '<span class="seg" title="Cómo se ven todos los artículos: lo relleno es lo que estás viendo"><button class="' + (st.vista === 'completo' ? '' : 'on') + '" id="b-vx">⚡ Exprés</button><button class="' + (st.vista === 'completo' ? 'on' : '') + '" id="b-ve">📄 Artículos enteros</button></span><button class="chip' + (st.modoEsq ? ' on' : '') + '" id="b-esq">🧩 Solo esquemas</button></div>'
     + '<div class="prog"><span class="pdots">' + [['ok', '🟢', g.ok], ['dud', '🟡', g.dud], ['mal', '🔴', g.mal], ['nuevo', '○', g.nuevo]].map(x => '<button class="pdot' + ((window.SEL && window.SEL.est.has(x[0])) ? ' on' : '') + '" data-px="est:' + x[0] + '" title="Ver solo los artículos de este color (puedes juntar varios)">' + x[1] + ' ' + x[2] + '</button>').join('') + '</span><div class="barra"><i style="width:' + pc + '%"></i></div><span>' + pc + '%</span></div>';
-  $('#herr .in').innerHTML = h; $('#herr').classList.remove('oculto');
+  $('#herr .in').innerHTML = h; $('#herr').classList.remove('oculto'); filtrosVista();
 }
 function entera(p) {
   if (!p.imgr) return true; const v = (st.ver || {})[key(tema, p.id)];   // botón propio de cada artículo: manda sobre el botón general de arriba
@@ -698,7 +700,7 @@ function lista() {
 }
 function render() { if (tema === null) dash(); else verTema(); }
 function pintaLista() { $('#m').innerHTML = lista(); montaEsqs(); }
-function verTema() { $('#b-atras').classList.remove('oculto'); $('#b-cut').classList.remove('oculto'); botonPin(); $('#tit').textContent = nomTema(tema); infoTema(); cabTema(); pintaLista(); }
+function verTema() { $('#b-atras').classList.remove('oculto'); $('#b-cut').classList.remove('oculto'); $('#b-filtros').classList.remove('oculto'); botonPin(); $('#tit').textContent = nomTema(tema); infoTema(); cabTema(); pintaLista(); }
 // ---------- «aquí te quedaste» ----------
 function pill() {
   const p = $('#pill'), id = st.pin[tema] || st.ult[tema];
@@ -718,6 +720,10 @@ $('#pill').onclick = e => {
 $('#b-atras').onclick = () => { tema = null; dest = null; destAp = null; busca = ''; filtro = 'todos'; inst = 'todas'; marca = null; history.replaceState(null, '', location.pathname + location.search); render(); };
 $('#info').addEventListener('click', e => { const b = e.target.closest('[data-est]'); if (!b) return; const antes = (st.temas[tema] || {}).e; ponEstado(tema, antes === b.dataset.est && b.dataset.est !== 'estudiado' ? '' : b.dataset.est); aviso(b.dataset.est === 'estudiado' ? 'Repaso anotado' : 'Estado guardado'); infoTema(); });
 $('#info').addEventListener('change', e => { if (e.target.dataset.fechaT) { ponFecha(tema, e.target.value); infoTema(); aviso('Fecha guardada'); } });
+// los filtros (búsqueda, normas, vistas, colores) van plegados tras el botón 🔎; se abren solos si hay algún filtro puesto
+let herrAbierto = false; try { herrAbierto = localStorage.getItem('exsub-herr') === '1'; } catch (e) {}
+function filtrosVista() { const h = $('#herr'), b = $('#b-filtros'); if (!h || !b) return; const act = !!(busca || filtro !== 'todos' || inst !== 'todas' || marca); h.classList.toggle('plegado', !herrAbierto); b.classList.toggle('on', herrAbierto || act); }
+$('#b-filtros').onclick = () => { herrAbierto = !herrAbierto; try { localStorage.setItem('exsub-herr', herrAbierto ? '1' : '0'); } catch (e) {} filtrosVista(); };
 $('#herr').addEventListener('click', e => {
   const c = e.target.closest('[data-f],[data-i],[data-marca-quita],#b-rep,#b-quit,#b-vx,#b-ve,#b-esq'); if (!c) return;
   if (c.dataset.f) filtro = c.dataset.f; if (c.dataset.i) inst = c.dataset.i; if (c.dataset.marcaQuita) marca = null;
