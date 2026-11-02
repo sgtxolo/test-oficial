@@ -38,6 +38,8 @@ for (const n of ['sis', 'vis', 'cv']) for (const [art, ap] of Object.entries(R[n
   const got = porArt[n + '|' + art] || []; const falta = ap === '*' ? (got.length ? [] : ['*']) : ap.map(String).filter(a => !got.includes(a));
   if (falta.length) (gaps[n] = gaps[n] || {})[art] = falta;
 }
+// párrafos añadidos a mano desde las fotos del resumen (data-res): entran siempre
+X.fichas.forEach((f, k) => { if (!normaDeBloque(X.fichaBloque[k])) return; f.ps.forEach((p, j) => { if (/data-res/.test(p.at)) { sel[k] = sel[k] || []; if (!sel[k].includes(j)) sel[k].push(j); } }); if (sel[k]) sel[k].sort((a, b) => a - b); });
 const out = path.join('prompts', 'temario-limpio', 'tema5', 'seleccion-resumen.json');
 fs.writeFileSync(out, JSON.stringify({ sel, gaps, umb: UMB, fuerte: FUERTE }));
 console.log('párrafos dentro', resumen.dentro, '· fuera', resumen.fuera, '· fichas con algo', Object.keys(sel).length);
