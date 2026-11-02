@@ -3,10 +3,10 @@
 import sys, json, os
 import numpy as np, pymupdf
 from PIL import Image
-pdf, out, pj = sys.argv[1], sys.argv[2], sys.argv[3]
+pdf, out, pj = sys.argv[1], sys.argv[2], sys.argv[3]; salida = sys.argv[4] if len(sys.argv) > 4 else 'piezas.json'
 os.makedirs(out, exist_ok=True)
 P = json.load(open(pj, encoding='utf8')); d = pymupdf.open(pdf); res = []
-for pid, norma, pag, (y0, y1), arts in P:
+for pid, norma, pag, (y0, y1), arts, *resto in P:
     pm = d[pag - 1].get_pixmap(dpi=200)
     im = Image.frombytes('RGB', (pm.w, pm.h), pm.samples)
     a = np.asarray(im).astype(int)
@@ -21,6 +21,6 @@ for pid, norma, pag, (y0, y1), arts in P:
     x0, x1 = max(0, colx[0] - 10), min(a.shape[1], colx[-1] + 10)
     c = im.crop((x0, ya, x1, yb)); w = 1075; h = round(c.height * w / c.width)
     c.resize((w, h), Image.LANCZOS).save(os.path.join(out, pid + '.jpg'), quality=82)
-    res.append({'id': pid, 'norma': norma, 'pag': pag, 'wh': [w, h], 'arts': arts})
-json.dump(res, open(os.path.join(out, 'piezas.json'), 'w', encoding='utf8'))
+    res.append({'id': pid, 'norma': norma, 'pag': pag, 'wh': [w, h], 'arts': arts, 'qs': resto[0] if resto else []})
+json.dump(res, open(os.path.join(out, salida), 'w', encoding='utf8'))
 print(len(res), 'piezas')
