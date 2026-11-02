@@ -393,7 +393,7 @@ const quitado = (t, id) => (st.quit || {})[key(t, id)] > 0;   // artículos que 
 // «📑➕ Añadir a mi subrayado» (desde Esquemas, completo o Exprés): mete en tu temario un artículo que estaba fuera (ESQ, tachado, fuera del Exprés)
 const anadidoP = (t, p) => !!p.extra && !!(st.inc || {})[key(t, p.id)];
 const fueraP = (t, p) => !!p.extra && !anadidoP(t, p);
-const enImpP = (t, p) => !fueraP(t, p) || !!st.impOp.extras || hayAlgo(((st.imp || {})[t] || {})[p.id]);   // en el panel de impresión: los «fuera del Exprés» solo si los pides (o ya los habías marcado)
+const enImpP = (t, p) => !quitado(t, p.id) && (!fueraP(t, p) || !!st.impOp.extras || hayAlgo(((st.imp || {})[t] || {})[p.id]));   // en el panel de impresión: los «fuera del Exprés» solo si los pides (o ya los habías marcado)
 const visibles = t => D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id));
 const hechos = t => visibles(t).filter(p => st.vis[key(t, p.id)]).length;
 const LEYES_TIT = {"Estatuto de Roma":"Estatuto de Roma de la Corte Penal Internacional","LO 18/2003":"Ley Orgánica 18/2003, de Cooperación con la Corte Penal Internacional","Carta de la UE":"Carta de los Derechos Fundamentales de la Unión Europea","Estatuto del Consejo de Europa":"Estatuto del Consejo de Europa","Protocolos al CEDH":"Protocolos adicionales al Convenio Europeo de Derechos Humanos","CEDH":"Convenio Europeo para la Protección de los Derechos Humanos (CEDH)","Acuerdo de privilegios CPI":"Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional","LO 3/2018":"Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales","Ley 39/2015":"Ley 39/2015, del Procedimiento Administrativo Común de las Administraciones Públicas","Ley 40/2015":"Ley 40/2015, de Régimen Jurídico del Sector Público","Ley 19/2013":"Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno","RD 179/2005":"Real Decreto 179/2005, sobre prevención de riesgos laborales en la Guardia Civil","Ley 50/1997":"Ley 50/1997, del Gobierno","LO 3/1981":"Ley Orgánica 3/1981, del Defensor del Pueblo","Reglamento del Defensor del Pueblo":"Reglamento de Organización y Funcionamiento del Defensor del Pueblo","TUE":"Tratado de la Unión Europea (TUE)","TFUE":"Tratado de Funcionamiento de la Unión Europea (TFUE)","LO 2/1979 TC":"Ley Orgánica 2/1979, del Tribunal Constitucional","LO 1/1982":"Ley Orgánica 1/1982, de protección civil del derecho al honor, a la intimidad personal y familiar y a la propia imagen","LO 6/1985":"Ley Orgánica 6/1985, del Poder Judicial","LO 5/2005":"Ley Orgánica 5/2005, de la Defensa Nacional","Directiva de Defensa Nacional 2020":"Directiva de Defensa Nacional 2020"};
@@ -1197,7 +1197,7 @@ $('#mod').addEventListener('click', e => {
     previaImp(pv, t, p); pv.classList.remove('oculto'); return; }
   if (go) return lanzaImp();
   if (a) {
-    const sel = st.imp[t], ps = D[t].piezas.filter(p => !fueraP(t, p)), k = a.dataset.impA;   // los botones «Todo…» solo tocan el Exprés; los de fuera se eligen uno a uno
+    const sel = st.imp[t], ps = D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id)), k = a.dataset.impA;   // los botones «Todo…» solo tocan el Exprés; los de fuera se eligen uno a uno
     if (k === 'n' && a.textContent.includes('Quitar')) D[t].piezas.forEach(p => { if (fueraP(t, p)) delete sel[p.id]; });
     if (k === 'n') ps.forEach(p => delete sel[p.id]);
     else if (k === 'm') ps.forEach(p => { if (p.m && (p.m.exof || p.m.ex || p.m.ast || (p.m.r || []).length)) sel[p.id] = {s: 1}; else delete sel[p.id]; });
@@ -1245,7 +1245,7 @@ async function imgFij(p) {
 async function lanzaImp() {
   const t = tema, sel = st.imp[t] || {}, op = st.impOp, z = $('#zonaImp'); z.innerHTML = ''; z.className = op.bn ? 'bn' : ''; z.style.setProperty('--fz', (op.fz || 12) + 'px'); z.style.setProperty('--zoom', op.zoom || 90); const hechas = new Set(); let n = 0, grupoAnt = null;
   for (const p of D[t].piezas) {
-    const s = sel[p.id]; if (!hayAlgo(s)) continue; const gn = instDe(t, p).nombre || ''; if (gn !== grupoAnt) { grupoAnt = gn; z.insertAdjacentHTML('beforeend', '<div class="tit-grupo">Tema ' + t + ' · ' + esc(gn || D[t].titulo.replace(/^Tema \d+ · /, '')) + '</div>'); }
+    const s = sel[p.id]; if (!hayAlgo(s) || quitado(t, p.id)) continue; const gn = instDe(t, p).nombre || ''; if (gn !== grupoAnt) { grupoAnt = gn; z.insertAdjacentHTML('beforeend', '<div class="tit-grupo">Tema ' + t + ' · ' + esc(gn || D[t].titulo.replace(/^Tema \d+ · /, '')) + '</div>'); }
     const div = document.createElement('div'); div.className = 'pieza'; div.insertAdjacentHTML('afterbegin', '<div class="tit-pieza">' + esc(p.nombre) + '</div>');
     const fj = s.s && recImp(p) && p.tr && fijados(key(t, p.id)).length ? await imgFij(p) : null;   // recorte con los «(…)» que has fijado abiertos
     const imagen = (rec) => { const k = key(t, p.id), w = document.createElement('div'); w.className = 'imgw'; const usaFj = rec && fj; w.innerHTML = '<img src="' + (usaFj ? fj : D[t].dir + (rec ? p.imgr : p.img)) + '">' + (usaFj ? '' : capaMarcas(k + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh)); const pb = document.createElement('div'); pb.className = 'pbox'; if (!usaFj) pb.dataset.cx = (rec ? p.imgr : p.img).replace('.jpg', ''); else pb.dataset.cr = p.img.replace('.jpg', ''); pb.appendChild(w); div.appendChild(pb); n++; };
