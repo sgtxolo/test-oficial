@@ -375,7 +375,7 @@ Object.entries(window.EXSUB_REV || {}).forEach(([t, r]) => (r.tachado || []).for
 Object.entries(window.EXSUB_REV || {}).forEach(([t, r]) => (r.fuera || []).forEach(id => { const p = ((D[t] || {}).piezas || []).find(x => x.id === id); if (p) p.extra = 1; }));
 const NOMBRES = ['Derechos humanos', 'Terrorismo internacional', 'Tratados de la Unión Europea', 'Fronteras de la UE', 'Bases de datos europeas', 'Extranjería', 'Derechos y deberes fundamentales (Constitución)', 'Poder judicial', 'Defensa nacional', 'Derecho civil', 'Derecho administrativo', 'Gobierno y Administración', 'Jurisdicción contencioso-administrativa', 'Defensor del Pueblo', 'VioGén', 'Igualdad entre mujeres y hombres', 'Menores', 'Derecho penal · parte general', 'Derecho penal · parte especial', 'Derecho procesal (I)', 'Derecho procesal · normas complementarias', 'Seguridad ciudadana', 'Seguridad privada', 'Estructura orgánica básica', 'Cooperación y coordinación policial', 'Estatuto de la Guardia Civil', 'Deontología profesional'];
 const nomTema = n => 'Tema ' + n + '.- ' + (NOMBRES[n - 1] || '');
-let st = {vis: {}, dif: {}, nota: {}, ent: {}, esq: {}, pin: {}, ult: {}, temas: {}, plazos: [], examen: '2027-07-01', escala: 100, vista: 'expres', extras: false, modoEsq: false};
+let st = {orden: {}, vis: {}, dif: {}, nota: {}, ent: {}, esq: {}, pin: {}, ult: {}, temas: {}, plazos: [], examen: '2027-07-01', escala: 100, vista: 'expres', extras: false, modoEsq: false};
 try { Object.assign(st, JSON.parse(localStorage.getItem(LS) || '{}')); const v0 = JSON.parse(localStorage.getItem('exsub-vis') || '{}'); for (const k in v0) if (v0[k] && st.vis[k] === undefined) st.vis[k] = 1; } catch (e) {}
 const guarda = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) {} if (window.syncMarca) window.syncMarca(); };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
@@ -393,7 +393,15 @@ const diasHasta = iso => Math.round((new Date(iso + 'T00:00:00') - new Date(hoyI
 const inv = {}; for (const t in D) { inv[t] = {}; for (const q in D[t].preg) (inv[t][D[t].preg[q]] = inv[t][D[t].preg[q]] || []).push(q); }
 const quitado = (t, id) => (st.quit || {})[key(t, id)] > 0;   // artículos que has quitado de tu temario (se pueden devolver)
 // «📑➕ Añadir a mi subrayado» (desde Esquemas, completo o Exprés): mete en tu temario un artículo que estaba fuera (ESQ, tachado, fuera del Exprés)
+// Orden propio de los artículos (⬆️⬇️ en cada artículo): st.orden[tema] = lista de ids; los artículos que no estén en la lista siguen a su vecino de siempre
+function aplicaOrden(t) {
+  const o = (st.orden || {})[t], L = D[t] && D[t].piezas; if (!o || !L) return; const ids = new Set(L.map(p => p.id)), vistos = new Set(), res = [];
+  o.forEach(id => { if (ids.has(id) && !vistos.has(id)) { vistos.add(id); res.push(L.find(p => p.id === id)); } });
+  let ant = null; L.forEach(p => { if (!vistos.has(p.id)) { const i = ant ? res.findIndex(q => q.id === ant) : -1; res.splice(i + 1, 0, p); vistos.add(p.id); } ant = p.id; });
+  D[t].piezas = res;
+}
 const anadidoP = (t, p) => !!p.extra && !!(st.inc || {})[key(t, p.id)];
+Object.keys(D).forEach(aplicaOrden);
 const _conPreg = {};
 const conPregP = (t, p) => { if (!_conPreg[t]) _conPreg[t] = new Set(Object.values((D[t] || {}).preg || {})); return _conPreg[t].has(p.id); };
 // En el Exprés subrayado entra lo del Exprés de esquemas y todo artículo con preguntas; lo demás (piezas «extra» sin preguntas) o lo tachado queda oculto
@@ -690,6 +698,7 @@ function lista() {
         : '<button class="sb sinrec" data-a="info" title="Todavía no hay versión recortada de este artículo">✓ Sin versión recortada: ya es el artículo entero</button>')
       + (p.imgr && !ent && BL()[p.id] ? '<button class="sb' + (((st.add || {})[k] || []).length ? ' on' : '') + '" data-a="add" title="Sumar a este recorte un apartado que el Exprés no lleva">➕<span class="lb"> Añadir a mi subrayado</span>' + (((st.add || {})[k] || []).length ? ' (' + st.add[k].length + ')' : '') + '</button>' : '')
       + (cu.length ? '<button class="sb' + (abreEsq ? ' on' : '') + '" data-a="esq" title="Esquema">🧩<span class="lb"> Esquema</span>' + (cu.length > 1 ? ' (' + cu.length + ')' : '') + '</button>' : '')
+      + '<button class="sb" data-a="sube" title="Subir este artículo un puesto (si está mal colocado)">⬆️<span class="lb"> Subir</span></button><button class="sb" data-a="baja" title="Bajar este artículo un puesto">⬇️<span class="lb"> Bajar</span></button>'
       + '<button class="sb" data-a="quit" title="' + (quitado(t, p.id) ? 'Devolver este artículo a tu temario' : 'Quitar este artículo: no es importante o no entra en examen (puedes devolverlo)') + '">' + (quitado(t, p.id) ? '↩️<span class="lb"> Devolver artículo</span>' : '🗑️<span class="lb"> Quitar artículo</span>') + '</button>'
       + '<button class="sb' + (st.pin[t] === p.id ? ' on' : '') + '" data-a="pin" title="Marca aquí dónde te quedas">📍</button>'
       + '<button class="sb' + (st.nota[k] ? ' on' : '') + '" data-a="nota" title="Nota">📝<span class="lb"> Nota</span></button>'
@@ -748,6 +757,9 @@ $('#m').addEventListener('click', e => {
   const card = e.target.closest('.card'); if (!card) return; const id = card.dataset.id, k = key(tema, id), a = (e.target.closest('[data-a]') || e.target).dataset.a;
   const recarga = () => { guarda(); const y = scrollY; verTema(); scrollTo(0, y); };
   if (e.target.dataset.z || a === 'leer') return visor(id);
+  if (a === 'sube' || a === 'baja') { const L = D[tema].piezas, i = L.findIndex(x => x.id === id), dir = a === 'sube' ? -1 : 1; let j = i + dir; while (j >= 0 && j < L.length && (quitado(tema, L[j].id) || fueraP(tema, L[j]))) j += dir;
+    if (j < 0 || j >= L.length) return aviso(dir < 0 ? 'Ya es el primero' : 'Ya es el último'); const [mv] = L.splice(i, 1); L.splice(j, 0, mv); (st.orden = st.orden || {})[tema] = L.map(x => x.id); guarda(); const y = scrollY; verTema();
+    const el = document.getElementById('c-' + id); if (el) el.scrollIntoView({block: 'center'}); else scrollTo(0, y); return aviso('↕ Artículo movido'); }
   if (a === 'info') return aviso(D[tema].piezas.some(x => x.imgr) ? 'Este artículo se ve entero: todavía no tiene versión recortada.' : 'En este tema todavía no hay versiones recortadas: todos los artículos se ven enteros.');
   if (a === 'vista') { st.vista = 'expres'; recarga(); return; }
   if (a === 'vis') { st.vis[k] = st.vis[k] ? 0 : 1; recarga(); }
@@ -1282,7 +1294,7 @@ async function lanzaImp() {
 // backups/expres-subrayado.json. Mezcla de tres vías (lo que había en la última sincronización, lo de este dispositivo y lo de la nube):
 // lo que cambia solo en un sitio se queda; si cambia en los dos, se suman las marcas y gana este dispositivo en lo demás. Nunca borra trabajo de otro dispositivo.
 const GH_CFG = 'oficialGhCfg', GH_REPO = 'sgtxolo/copia-seguridad-conocimientos', GH_PATH = 'backups/expres-subrayado.json', GH_BASE = 'exsub-sync-base';
-const MAPAS = ['inc', 'quit', 'vis', 'dif', 'nota', 'ent', 'ver', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp'];
+const MAPAS = ['inc', 'quit', 'vis', 'dif', 'nota', 'ent', 'ver', 'esq', 'marks', 'tm', 'cm', 'vbh', 'pin', 'ult', 'temas', 'imp', 'orden'];
 const lsObj = k => { try { return JSON.parse(localStorage.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
 const ghCfg = () => lsObj(GH_CFG), hayGh = () => { const c = ghCfg(); return !!(c.repo && c.token); };
 const b64 = s => btoa(unescape(encodeURIComponent(s))), unb64 = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
