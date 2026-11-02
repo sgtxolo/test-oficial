@@ -90,12 +90,21 @@ for (const tema of temas) {
     const lit0 = b ? b.win.map(f => f.t).join(" ").replace(/\s+/g, " ").trim() : "";
     const art0 = b ? (b.win[0].art || (b.win[1] && b.win[1].art)) : "";
     if (conf && !(dicho && art0 === dicho)) conf = false;
+    if (conf) {
+      const pl = x => norm(x).replace(/\s+/g, " ").trim();
+      const ans = q.ops[q.c].replace(/[.;]\s*$/, "");
+      const vago = b.vago;
+      if (!vago && !pl(lit0).includes(pl(ans))) conf = false;     // la respuesta debe aparecer tal cual en la frase
+      if (vago && !(b.a >= 0.9 && b.s >= 0.6)) conf = false;
+      if (b.s < 0.6) conf = false;                                // el enunciado también debe estar en la frase
+      if (b.win.length > 1 && !pl(b.win[0].t).includes(pl(ans)) && !pl(b.win[1].t).includes(pl(ans))) conf = false;
+    }
     if (/incorrect|no es cierto|falsa|excepto|no forma parte|no (?:es|son) /i.test(q.q)) conf = false; // el literal no contiene la respuesta
     if (conf && /(^|[\s.:;(])[B-DF-NP-TV-XZ] [a-záéíóúñ]{2,}|ARTÍCULO|TOMO|R\d+\b|\d+ \| /.test(lit0)) conf = false;
     const lit = b ? b.win.map(f => f.t).join(" ").replace(/\s+/g, " ").trim() : "";
     const art = b ? (b.win[0].art || b.win[1] && b.win[1].art) : "";
     informe.push((conf ? "OK  " : "NO  ") + q.id + " a=" + (b && b.a.toFixed(2)) + " s=" + (b && b.s.toFixed(2)) + " art=" + art + " | " + q.ops[q.c].slice(0, 60) + "\n      " + lit.slice(0, 300));
-    if (conf && art && lit.length <= 700) { ok++; aplicar.push({ q, lit, art, ley: b.win[0].ley }); }
+    if (conf && art && lit.length <= 450) { ok++; aplicar.push({ q, lit, art, ley: b.win[0].ley }); }
   }
   informe.push("== T" + tema + ": " + ok + " de " + lista.length + " con confianza alta");
 }
