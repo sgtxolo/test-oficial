@@ -1281,6 +1281,9 @@ async function lanzaImp() {
     z.appendChild(div);
   }
   if (!n) { aviso('No has elegido nada para imprimir'); return; }
+  // los recortes a medida (trozos añadidos, (…) abiertos) van de fondo de un <div>: algunos navegadores no imprimen fondos y salía un hueco en blanco; se pasan a <img>, que siempre se imprimen
+  z.querySelectorAll('.cmpb[data-ya]').forEach(el => { const m = /url\(["']?([^"')]+)/.exec(el.style.backgroundImage || ''); if (!m) return; const ya = +el.dataset.ya, hh = (+el.dataset.yb) - ya; if (!(hh > 0)) return;
+    const im = new Image(); im.src = m[1].replace(/&quot;/g, ''); im.style.cssText = 'position:absolute;left:0;width:100%;height:auto;top:' + (-ya / hh * 100) + '%'; el.style.backgroundImage = 'none'; el.style.position = 'relative'; el.style.overflow = 'hidden'; el.insertBefore(im, el.firstChild); });
   await Promise.all([...z.querySelectorAll('img')].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
   z.querySelectorAll('.pbox .imgw').forEach(c => { const k = c.parentElement.dataset.cr && (window.RBPRE || {})['t' + t + '/' + c.parentElement.dataset.cr]; if (k) return aplicaRecorte(c, k); const im = c.querySelector('img'); if (im && im.naturalWidth) recorteBlanco(im, c); });   // los recortes a medida (lienzo) usan el mismo recorte que su foto entera   // recorte por las rayas de la página (recortes.js): todas las fotos del tema con el mismo ancho, así todos los artículos salen del mismo tamaño
   rebanar(z, t);
