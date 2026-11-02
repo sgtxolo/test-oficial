@@ -1197,7 +1197,8 @@ $('#mod').addEventListener('click', e => {
     previaImp(pv, t, p); pv.classList.remove('oculto'); return; }
   if (go) return lanzaImp();
   if (a) {
-    const sel = st.imp[t], ps = D[t].piezas.filter(p => enImpP(t, p)), k = a.dataset.impA;
+    const sel = st.imp[t], ps = D[t].piezas.filter(p => !fueraP(t, p)), k = a.dataset.impA;   // los botones «Todo…» solo tocan el Exprés; los de fuera se eligen uno a uno
+    if (k === 'n' && a.textContent.includes('Quitar')) D[t].piezas.forEach(p => { if (fueraP(t, p)) delete sel[p.id]; });
     if (k === 'n') ps.forEach(p => delete sel[p.id]);
     else if (k === 'm') ps.forEach(p => { if (p.m && (p.m.exof || p.m.ex || p.m.ast || (p.m.r || []).length)) sel[p.id] = {s: 1}; else delete sel[p.id]; });
     else {
