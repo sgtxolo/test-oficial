@@ -81,7 +81,7 @@ module.exports = function (T) {
     // (pauta 16/10/2026: «una pregunta oficial no puede quedar cortada así»)
     const ofRes = resto.filter(id => !esIA(id)).map(id => PREG[id] && claveH(limpia(PREG[id].opciones[PREG[id].correcta]).replace(/[.;,:]+$/, ''))).filter(x => x && x.length >= 4);
     // pauta 16/10/2026: párrafo con pregunta OFICIAL, marca del usuario o R, y sus apartados vecinos (OPC.vecinas) → ENTEROS, sin (…)
-    const enteroPar = OPC.entero && (esOfPar(k, j) || (OPC.vecinas && OPC.vecinas.has(j))) && limpia(h2).length <= ENTERO_MAX;
+    const enteroPar = (OPC.todo || OPC.entero && (esOfPar(k, j) || (OPC.vecinas && OPC.vecinas.has(j)))) && limpia(h2).length <= ENTERO_MAX;   // OPC.todo: resumen del usuario, todo entero
     if (enteroPar) h2 = abreHuecos(h2, ofRes);
     else if (ofRes.length) h2 = abreHuecos(h2, ofRes, true);
     resto = resto.filter(id => { const r = marcaRespuesta(h2, id); if (r) { h2 = r; return false; } return true; });
@@ -89,7 +89,7 @@ module.exports = function (T) {
     const entero2 = enteroPar || (OPC.restoEntero && resto.length);
     if (!entero2 && OPC.recorte) h2 = recorta(h2, /data-ex=/.test(p.at));
     // pauta 16/10/2026 (tarde): en los apartados enteros, las parrafadas SIN subrayar ni marca (texto plano largo) se pliegan en «(…)»
-    else if (entero2 && RUN_MIN) h2 = pliegaPlano(h2);
+    else if (entero2 && RUN_MIN && !OPC.todo) h2 = pliegaPlano(h2);
     const boton = resto.length ? ` <mark class="m-resp ex-q${resto.every(esIA) ? ' r-ia' : ''}"${q(resto)}>🎯 ${resto.length === 1 ? '1 pregunta' : resto.length + ' preguntas'}</mark>` : '';
     // ficha RECUERDA del temario cuyo apartado es este párrafo (data-r): sello «R n» al principio
     const rr = ((p.at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').filter(Boolean).map(r => `<span class="ex-sello ex-sello-r">${r}</span> `).join('');
@@ -364,6 +364,8 @@ module.exports = function (T) {
       if (m[1] !== undefined) { titulo = bloque(m[1]) + (omitir && omitir.mapa ? mapaLey(k + 1, omitir) : ''); continue; }
       k++; const f = fichas[k]; const cab = limpia(f.cab);
       if (rango && (k < rango[0] || k > rango[1])) { titulo = ''; continue; }
+      // omitir.sel = { k: [j…] } (Tema 5, 2/11/2026): solo las fichas y los párrafos que el usuario tiene en su resumen subrayado
+      if (omitir && omitir.sel && !omitir.sel[k]) continue;
       let cs = V.map((x, i) => [x, i]).filter(([[c], i]) => !puestos.has(i) && (cab.startsWith(c) || cab.includes(c)));
       const conCuadro = omitir === 'conCuadro' || !!(omitir && omitir.conCuadro);
       // el esquema condensado ('condensa') sustituye en el Exprés a los demás cuadros de su ficha
@@ -380,6 +382,7 @@ module.exports = function (T) {
         else { cs.forEach(([, i]) => puestos.add(i)); cs = []; }
       }
       let js = fuera ? [] : f.ps.map((p, j) => j).filter(j => conPreg.has(k + '-' + j) || /data-ex|class="ex-p"/.test(f.ps[j].at + f.ps[j].h));
+      if (omitir && omitir.sel && omitir.sel[k] !== 'auto') js = omitir.sel[k].filter(j => j < f.ps.length);   // 'auto' = lo de siempre (párrafos con pregunta o marca)
       // 'nivel' (pauta 15/10/2026): cuánto se ve de cada artículo según lo preguntado → 'boton' (solo título + 🎯) u opciones de recorte
       let nv = null;
       if (omitir && omitir.nivel && js.length) { nv = omitir.nivel(k, pesoFicha(k), f);

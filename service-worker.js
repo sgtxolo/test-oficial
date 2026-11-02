@@ -65,6 +65,7 @@ const APP_SHELL = [
   "./expres-subrayado/cortes-t2.js",
   "./expres-subrayado/cortes-t10.js",
   "./expres-subrayado/cortes-t6.js",
+  "./expres-subrayado/datos-t5.js",
   "./expres-subrayado/datos-t7.js",
   "./expres-subrayado/datos-t14.js",
   "./expres-subrayado/datos-t3.js",
