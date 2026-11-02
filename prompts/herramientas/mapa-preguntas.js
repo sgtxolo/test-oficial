@@ -183,7 +183,7 @@ try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema6/mapa-fijo
 // Tema 10: oficiales e IA que el mapa dejaba sin sitio y fase 2 de las marcas, ancladas a su párrafo (tema10/mapa-fijo-t10.json; tema10/mapa-fijo-gen.js)
 try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema10/mapa-fijo-t10.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = '10-' + kj; }); } catch (e) {}
 // Temas 2, 7, 9, 11, 13, 14: preguntas «sin sitio» ancladas a mano a su párrafo (temaN/mapa-fijo-tN.json: id → 'k-j'; pauta 25/10/2026)
-for (const tN of [2, 7, 9, 11, 13, 14, 15, 17]) { try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema' + tN + '/mapa-fijo-t' + tN + '.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = tN + '-' + kj; }); } catch (e) {} }
+for (const tN of [2, 7, 9, 11, 13, 14, 15, 17, 18]) { try { const F = JSON.parse(fs.readFileSync('prompts/herramientas/tema' + tN + '/mapa-fijo-t' + tN + '.json', 'utf8')); Object.entries(F).forEach(([id, kj]) => { delete EXTRA[id]; MAPA[id] = tN + '-' + kj; }); } catch (e) {} }
 // ---------- 7. Escribir ----------
 // El mapa vive en esquemas-datos/mapa-preguntas.js (esquemas.html lo carga con <script src>)
 fs.writeFileSync('esquemas-datos/mapa-preguntas.js', `window.MAPA_PREG=${JSON.stringify(MAPA)};window.TOTAL_PREG=${JSON.stringify(TOTAL)};window.MAPA_EXTRA=${JSON.stringify(EXTRA)};` + '\n');
