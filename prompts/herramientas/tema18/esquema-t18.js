@@ -12,9 +12,11 @@ const RR = require('./r-temario-t18.js');
 // ---- marcas: clave art|token (token = «1.», «e)», «#1» = primer párrafo). Ej.: '2|2.': { ex: ['EX'], r: ['R1'] }
 const MARCAS = require('./marcas-t18.js');
 const usadas = new Set();
-const attrs = (art, tok, idx) => {
+const attrs = (art, tok, idx, texto, cnt) => {
   const ex = [], r = [];
-  for (const k of [`${art}|${tok}`, idx === 1 ? `${art}|#1` : null].filter(Boolean)) if (MARCAS[k]) { usadas.add(k); (MARCAS[k].ex || []).forEach(x => !ex.includes(x) && ex.push(x)); (MARCAS[k].r || []).forEach(x => !r.includes(x) && r.push(x)); }
+  // claves: art|tok (todas las apariciones), art|tok@n (n-ésima aparición del token), art|#n (n-ésimo párrafo), art|~texto (párrafo que empieza así)
+  const claves = [`${art}|${tok}`, `${art}|${tok}@${cnt}`, `${art}|#${idx}`, ...Object.keys(MARCAS).filter(k => k.startsWith(art + '|~') && texto.startsWith(k.slice(art.length + 2)))];
+  for (const k of claves) if (MARCAS[k]) { usadas.add(k); (MARCAS[k].ex || []).forEach(x => !ex.includes(x) && ex.push(x)); (MARCAS[k].r || []).forEach(x => !r.includes(x) && r.push(x)); }
   return (ex.length ? ` data-ex="${ex.join(',')}"` : '') + (r.length ? ` data-r="${r.join(',')}"` : '');
 };
 
@@ -22,14 +24,14 @@ const attrs = (art, tok, idx) => {
 const lineas = fs.readFileSync(path.join(D, 'oficial.txt'), 'utf8').replace(/\r/g, '').split('\n');
 const ini = lineas.findIndex(l => /^=====PAG 2 ?=====/.test(l));
 const TOK = /^(\d+\.[ªº]|\d+\.|[a-z]{1,2}(?: bis)?\)|Primero\.|Segundo\.|Tercero\.)\s+(.*)$/;
-let h = '', abierta = false, art = '', idx = 0, cur = null, cab = [], saltaResumen = false;
+let tokCnt = {}, h = '', abierta = false, art = '', idx = 0, cur = null, cab = [], saltaResumen = false;
 const cierraP = () => { if (cur) { h += cur; cur = null; } };
 const cierra = () => { cierraP(); if (abierta) { h += '</div></div></div>'; abierta = false; } };
 const vuelcaCab = () => { if (cab.length) { cierra(); h += `<div class="bloque-titulo">${esc(cab.join(' · '))}</div>`; cab = []; } };
 let ptxt = '', ptok = '';
 const abreP = (tok, texto) => { cierraP(); idx++; ptxt = texto; ptok = tok; cur = { tok, texto, idx }; };
 let parrafos = [];
-const flushP = () => { if (cur) { const sangria = cur.tok ? (/[ªº]\.$/.test(cur.tok) ? ' style="margin-left:36px"' : /\)$/.test(cur.tok) ? ' style="margin-left:18px"' : '') : ''; parrafos.push(`<p${sangria}${attrs(art, cur.tok || '~', cur.idx)}>${cur.tok ? `<b>${esc(cur.tok)}</b> ${esc(cur.texto)}` : esc(cur.texto)}</p>`); cur = null; } };
+const flushP = () => { if (cur) { const sangria = cur.tok ? (/[ªº]\.$/.test(cur.tok) ? ' style="margin-left:36px"' : /\)$/.test(cur.tok) ? ' style="margin-left:18px"' : '') : ''; parrafos.push(`<p${sangria}${attrs(art, cur.tok || '~', cur.idx, cur.texto, cur.cnt)}>${cur.tok ? `<b>${esc(cur.tok)}</b> ${esc(cur.texto)}` : esc(cur.texto)}</p>`); cur = null; } };
 const cierraArt = () => { flushP(); if (abierta) { h += parrafos.join('') + '</div></div></div>'; parrafos = []; abierta = false; } };
 for (let i = ini; i < lineas.length; i++) {
   const raw = lineas[i], l = raw.trim();
@@ -39,13 +41,13 @@ for (let i = ini; i < lineas.length; i++) {
   if (/^(TÍTULO|LIBRO)\b.* — /.test(raw)) { saltaResumen = true; continue; }
   if (saltaResumen) { if (sangria === 0 && !/^Artículo /.test(raw)) continue; saltaResumen = false; }
   const m = l.match(/^Artículo (\d+(?: (?:bis|ter|quater|quinquies|sexies|septies|octies))?)\.\s*(.*)$/);
-  if (m) { cierraArt(); vuelcaCab(); art = m[1]; idx = 0;
+  if (m) { cierraArt(); vuelcaCab(); art = m[1]; idx = 0; tokCnt = {};
     h += `<div class="articulo"><div class="articulo-head">Artículo ${m[1]}</div><div class="articulo-body"><div class="txt">`; abierta = true; continue; }
   if (sangria >= 6 && l[0] !== '(') { cierraArt(); cab.push(l); continue; }          // título / capítulo / sección centrados
   if (!abierta) continue;
   if (sangria >= 2) {                                                  // principio de párrafo
     const n = l.match(TOK);
-    flushP(); idx++; cur = n ? { tok: n[1], texto: n[2], idx } : { tok: '', texto: l, idx }; continue;
+    flushP(); idx++; const tk = n ? n[1] : ''; tokCnt[tk] = (tokCnt[tk] || 0) + 1; cur = n ? { tok: n[1], texto: n[2], idx, cnt: tokCnt[tk] } : { tok: '', texto: l, idx, cnt: tokCnt[tk] }; continue;
   }
   if (cur) cur.texto += (/-$/.test(cur.texto) ? '' : ' ') + l;         // continuación de renglón
 }
