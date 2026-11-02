@@ -191,7 +191,7 @@ document.getElementById("q-wrap").innerHTML=`
       </div>
       </div>
     </div>
-    <div class="q-text">${q.pregunta}</div>
+    <div class="q-text">${/^5-/.test(q.id||"")&&!(window.FUERA_RESUMEN&&window.FUERA_RESUMEN[q.id])?'<span class="r-resumen" title="Pregunta de tu resumen subrayado">R</span>':""}${q.pregunta}</div>
     <div id="opciones">
       ${q.opciones.map((o,i)=>`<div class="q-opt${t.altSel&&t.altSel[t.idx]===i?" alt":""}" data-i="${i}"><b>${L[i]}.</b> ${o}${t.altSel&&t.altSel[t.idx]===i?'<span class="alt-badge">⚡</span>':""}</div>`).join("")}
     </div>
