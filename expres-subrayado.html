@@ -394,7 +394,10 @@ const inv = {}; for (const t in D) { inv[t] = {}; for (const q in D[t].preg) (in
 const quitado = (t, id) => (st.quit || {})[key(t, id)] > 0;   // artículos que has quitado de tu temario (se pueden devolver)
 // «📑➕ Añadir a mi subrayado» (desde Esquemas, completo o Exprés): mete en tu temario un artículo que estaba fuera (ESQ, tachado, fuera del Exprés)
 const anadidoP = (t, p) => !!p.extra && !!(st.inc || {})[key(t, p.id)];
-const fueraP = (t, p) => !!p.tachado && !anadidoP(t, p);   // ya no hay «fuera del Exprés»: se ven todos los artículos; solo los tachados en tu temario quedan fuera
+const _conPreg = {};
+const conPregP = (t, p) => { if (!_conPreg[t]) _conPreg[t] = new Set(Object.values((D[t] || {}).preg || {})); return _conPreg[t].has(p.id); };
+// En el Exprés subrayado entra lo del Exprés de esquemas y todo artículo con preguntas; lo demás (piezas «extra» sin preguntas) o lo tachado queda oculto
+const fueraP = (t, p) => !anadidoP(t, p) && (!!p.tachado || (!!p.extra && !conPregP(t, p)));   // ya no hay «fuera del Exprés»: se ven todos los artículos; solo los tachados en tu temario quedan fuera
 const enImpP = (t, p) => !quitado(t, p.id) && (!fueraP(t, p) || !!st.impOp.extras || hayAlgo(((st.imp || {})[t] || {})[p.id]));   // en el panel de impresión: los «fuera del Exprés» solo si los pides (o ya los habías marcado)
 const visibles = t => D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id));
 const hechos = t => visibles(t).filter(p => st.vis[key(t, p.id)]).length;
