@@ -1,0 +1,9 @@
+[
+ {
+  "id": "a",
+  "nombre": "Código Penal",
+  "paginas": [4, 66],
+  "inicio": "^TÍTULO PRELIMINAR",
+  "cit": "Código Penal|CP|Ley Orgánica 10/1995"
+ }
+]

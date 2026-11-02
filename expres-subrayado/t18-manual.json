@@ -1,0 +1,59 @@
+{
+ "manual": [
+  {
+   "id": "a-13",
+   "nombre": "Código Penal · Artículo 13",
+   "piezas": [
+    [
+     6,
+     0.635,
+     0.825
+    ]
+   ]
+  },
+  {
+   "id": "a-38",
+   "nombre": "Código Penal · Artículo 38",
+   "piezas": [
+    [
+     23,
+     0.1,
+     0.24
+    ]
+   ]
+  },
+  {
+   "id": "a-50",
+   "nombre": "Código Penal · Artículo 50",
+   "piezas": [
+    [
+     27,
+     0.185,
+     0.54
+    ]
+   ]
+  },
+  {
+   "id": "a-55",
+   "nombre": "Código Penal · Artículo 55",
+   "piezas": [
+    [
+     29,
+     0.25,
+     0.385
+    ]
+   ]
+  },
+  {
+   "id": "a-56",
+   "nombre": "Código Penal · Artículo 56",
+   "piezas": [
+    [
+     29,
+     0.385,
+     0.655
+    ]
+   ]
+  }
+ ]
+}
