@@ -200,7 +200,7 @@ pm-m{display:inline}
   #zonaImp.bn{filter:grayscale(1)}
   #zonaImp .pieza{break-inside:auto;margin:0 0 2.5mm}   /* continuo, como un temario: las fotos se parten entre renglones (ver .sl), sin dejar medias páginas en blanco */
   #zonaImp .sl{overflow:hidden;position:relative;break-inside:avoid;page-break-inside:avoid}
-  #zonaImp .sl:first-child{break-after:avoid;page-break-after:avoid}
+  #zonaImp .sl.alta{break-inside:auto;page-break-inside:auto}   /* los trozos muy altos (cuadros, bloques sin hueco entre líneas) pueden partirse: así no dejan media hoja en blanco */
   #zonaImp .pbox{overflow:hidden;background:#fff;width:calc(var(--zoom,100) * 1%);margin-left:auto;margin-right:auto}
   #zonaImp .imgw img{width:100%;display:block;cursor:auto}
   /* mismo tamaño de letra que el PDF de Esquemas (equivale al temario oficial): letra Source Sans 3 de 14 px, interlineado corto y títulos en rojo */
@@ -1287,6 +1287,7 @@ async function lanzaImp() {
   await Promise.all([...z.querySelectorAll('img')].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
   z.querySelectorAll('.pbox .imgw').forEach(c => { const k = c.parentElement.dataset.cr && (window.RBPRE || {})['t' + t + '/' + c.parentElement.dataset.cr]; if (k) return aplicaRecorte(c, k); const im = c.querySelector('img'); if (im && im.naturalWidth) recorteBlanco(im, c); });   // los recortes a medida (lienzo) usan el mismo recorte que su foto entera   // recorte por las rayas de la página (recortes.js): todas las fotos del tema con el mismo ancho, así todos los artículos salen del mismo tamaño
   rebanar(z, t);
+  { const ancho = 196 * ((op.zoom || 90) / 100); z.querySelectorAll('.sl').forEach(sl => { const m = /([0-9.]+)\s*[/]\s*([0-9.]+)/.exec(sl.style.aspectRatio || ''); if (m && (+m[2] / +m[1]) * ancho > 60) sl.classList.add('alta'); }); }   // alto del trozo en mm sobre el papel (≈ 1/5 de hoja)
   const tema0 = document.documentElement.dataset.theme; document.documentElement.dataset.theme = 'light';
   let hecho = false; const fin = () => { if (hecho) return; hecho = true; document.documentElement.dataset.theme = tema0; z.innerHTML = ''; pie.remove(); removeEventListener('afterprint', fin); };
   const pie = document.createElement('style'); pie.textContent = '@page{@bottom-left{content:"Tema ' + t + ' · ' + (NOMBRES[t - 1] || D[t].titulo.replace(/^Tema \d+ · /, '')).replace(/["\\]/g, '') + '";font:600 9pt "Segoe UI",Arial,sans-serif;color:#333}}'; document.head.appendChild(pie);
