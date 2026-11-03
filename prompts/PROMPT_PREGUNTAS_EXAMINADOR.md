@@ -331,3 +331,9 @@ Pendientes: temas 15 y 16 sin Exprés (el T10 se hizo el 24/10/2026: 516 IA, 107
 
 ## AL TERMINAR EL TEMA (obligatorio): incorporarlo al «Exprés subrayado»
 Cuando el tema esté cerrado en Esquemas (preguntas auditadas, esquema con marcas, cuadros y Exprés `expres/tN.js`), **no lo des por terminado**: incorpóralo a la aplicación `expres-subrayado.html` siguiendo, paso a paso, la sección **«FLUJO ACTUALIZADO (31/10/2026)»** de `prompts/PROMPT_EXPRES_SUBRAYADO.md` (recortes iguales al Exprés, artículos ESQ solo con su esquema, páginas con X/MOD/raya fuera, botón por artículo, impresión continua, cobertura de preguntas). **El PDF subrayado del tema lo buscas tú** en `C:\Users\ruben\Desktop\OFICIAL 2026-27\TEMARIO ESCANEADO 2026-27\TEMA N …-08-08-2026.pdf`: no me pidas que lo suba; pregúntame solo si hay más de un candidato (p. ej. Tema 5 en dos partes) o dudas de que sea mi copia subrayada. Al final, di cuántas preguntas del tema abren su artículo en el subrayado y en Esquemas, y qué no has podido probar (impresión real, móvil).
+
+## Cierre de tema — checklist (añadido 3/11/2026, Tema 18)
+- IA = 5 por página **con contenido** de MI PDF (las páginas en blanco no cuentan); decir en el informe el total real y la diferencia con el nominal (T18: 370 IA para 71 págs con texto, 76 págs nominales = 380).
+- Preguntas rápidas del Exprés reescritas a mano (`rapidas-mostradas.js N` → `rapidas-reescritas/tN-a.json` → `preguntas-rapidas.js N`).
+- Exprés subrayado: cadena apartados → config → recortes → datos, preguntas sin botón = 0, recortes manuales de los artículos que el OCR no separa (ver «Lecciones del Tema 18» en PROMPT_EXPRES_SUBRAYADO.md).
+- Cajas de trampas, cuadros contra el PDF (colores/contenido), móvil e impresión: revisar y, si no se pudo, decirlo claramente.
