@@ -9,3 +9,13 @@ No se ha cambiado ninguna respuesta. Revisar a mano. Estado: **T27 hecho** (168 
 - Res. 690: 27-6 (A y C falsas), 27-180 (C es literal), 27-215 (C es literal), 27-8, 27-16 (dice «éticas»), 27-139 (corrupción, no tortura), 27-131, 27-179 («examen periódico»).
 - Rec. 2001/10: 27-9 y 27-181 («objetivas y equitativas»), 27-28 (no aparece «eficaz»), 27-37, 27-46, 27-56 (la C es literal del punto 38), 27-62, 27-83, 27-115 («infracciones graves»), 27-158 (la D es literal del punto 27), 27-162, 27-203 (la B es literal del punto 60).
 - Ambiguas (citadas igualmente): 27-45, 27-51, 27-53 (hay dos opciones ausentes del texto).
+
+## T15–T17 (hecho parcialmente; citas en citas-manual-t15/16/17.js)
+- Citadas: 15-45, 15-82, 15-148, 15-285, 16-191, 17-9, 17-184, 17-38, 17-47, 17-68, 17-219, 17-222, 17-233, 17-235.
+- Contradicen el temario (respuesta no cambiada): 15-65 (art. 16 dice «un año», se marcó «seis meses»); 15-200 y 15-247 (el protocolo con Cometa dice «doce meses»).
+- Sin literal localizado en `_citas/t15.txt`: 15-70, 15-72, 15-124, 15-263, 15-307, 15-310, 15-ia-1308, 15-ia-2260, 15-ia-2261, 15-ia-2304.
+- 17-235 usa «[…]» para abreviar la lista del art. 7.1.
+
+## T26 (casi sin hacer)
+- Citadas solo 7 (26-4, 26-92, 26-120, 26-135, 26-140, 26-146, 26-147), con coincidencia casi literal de la respuesta.
+- Quedan ~180 sin cita: la mayoría son preguntas «incorrecta»/«todas», o de enunciado con errores de importación (p. ej. «Próctad de cinco y veinte días», «Guardia Cifras») que exigen revisión manual contra las ~11 normas del tema. Las 53 que ya tenían cita automática no se han revisado.
