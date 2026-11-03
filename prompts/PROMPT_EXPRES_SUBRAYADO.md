@@ -115,3 +115,11 @@ Si el usuario solo escribe «Tema N» (con estos prompts adjuntos), **lo hago TO
 
 ## ⚠ REGLA FIJA DEL USUARIO (3/11/2026) — no se le vuelve a pedir
 El Exprés sale de las **preguntas de conocimientos**; el Exprés subrayado sale **del Exprés**, recortado por apartados/letras (nunca el temario entero). Si el Exprés lleva solo una letra (p. ej. la C) y el recorte queda cortado: artículo entero, o recorte + botón «➕ Añadir a mi subrayado» (`tN-bloques.json` NO puede quedar vacío). Un tema no está cerrado si casi todos sus artículos siguen enteros (T18 3/11: solo 21 de 112 recortados, bloques `{}`).
+
+## Cadena rápida para recortar un tema como el Exprés (hecha en T18 el 3/11/2026)
+Con `TEMA=N`, `SCRATCH=<carpeta temporal>/` (con barra final) y un wrapper `py` en el PATH (Python de `AppData\Local\Python\bin`). Añadir el tema al diccionario `PDF` de `cobertura-todas.py`, `cobertura-sin-recorte.py`, `propuesta-lineas.py` y al `case` de `reconstruir.sh` (en T18 ya está).
+1. `expres-subrayado/tN-saltar.json` `{"paginas":[…]}` con las páginas 0-based tachadas con X o duplicadas limpias (T18: 60,61,63,64). Si aun así la propuesta usa la copia tachada, recortar ese artículo a mano con `lineas-img.py <id> sel "líneas"`.
+2. `py subrayado-revision/propuesta-lineas.py todas` y mirar las hojas (`lado-a-lado.py`): verde = se queda.
+3. `py subrayado-revision/aplicar-propuesta.py N '{"a-79":null,…}'` (`null` = entero: cuadros a mano, piezas manuales).
+4. `py subrayado-revision/ajustar-cortes.py` y `bash subrayado-revision/reconstruir.sh` (aplica, datos, bloques → «Añadir», cortes y páginas).
+5. `node prompts/herramientas/expres-subrayado-sinboton.js N todo` = 0 sin botón; revisar a ojo, subir caché, commit y push.
