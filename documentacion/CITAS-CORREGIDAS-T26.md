@@ -28,3 +28,18 @@ El texto anterior está en el historial de git.
 - **26-156**: El art. 25.2 fija períodos de cuatro años. Respuesta C → B.
 - **26-167**: El art. 4.2 dice que otros actos oficiales se rigen por su normativa específica, con carácter supletorio la del ámbito del Ministerio de Defensa. C reescrita y marcada. Respuesta A → C.
 - **26-189**: El art. 16 cita jerarquía, disciplina y subordinación; «mérito y capacidad» no. Respuesta D → A.
+
+## Protocolos de acoso (Resoluciones de 22-07-2019, temario escaneado)
+- **26-87**: B ya era literal salvo «promover» (→ «potenciar»); la incorrecta pasa a ser A, que es un objetivo general (primero.1 a) y no específico. Respuesta B → A.
+- **26-42**: El apartado primero.1 dice que el Protocolo es «un instrumento para expresar la voluntad de actuar…»; la D añade «aunque no se acrediten los hechos», que contradice primero.1 c) («una vez acreditados los hechos»). Respuesta D → A.
+- **26-74**: Opción A «Políticas saludables…» → «Prácticas saludables…» (apartado quinto).
+- **26-116**: Opción C «Los casos de comunicación…» → «Los cauces de comunicación…» (apartado quinto 5.2).
+- **26-108**: El recordatorio de los cauces de comunicación es prevención secundaria (5.2), no primaria. Respuesta A → B.
+- **26-50**: Opción C «Atención terciaria… en un caso» → «Atención temprana… en su caso» (apartado quinto 5.3).
+- **26-160**: El apartado segundo.2 dice que se remite comunicación al Director General de la Guardia Civil. Respuesta D → B.
+- **26-129**: El apartado sexto dice que el Protocolo tiene «un enfoque eminentemente preventivo». Respuesta D → A.
+- **26-6**: A estaba corrompida («situaciones de crisis tiene de acaso»); reescrita con el literal del apartado primero.1 a) para que «todas son correctas» sea cierta.
+- **26-47**: B («Imponer el procedimiento») y C («asistir») reescritas con el literal del apartado cuarto.1 e) y f) para que «todas son correctas» sea cierta.
+- **26-207**: El apartado sexto da diez días para complementar la comunicación con un primer análisis. Respuesta A (cinco) → B (diez).
+- **26-38**: El art. 24 dice «el derecho y deber de defender España de acuerdo con lo previsto en la legislación orgánica de defensa nacional» (sin «la Constitución»). Respuesta A → D.
+- **26-197**: El art. 65.5 atribuye la determinación de ciclos al Ministro de Defensa. Respuesta D → B.
