@@ -1,0 +1,1 @@
+window.CITAS_PREG=Object.assign(window.CITAS_PREG||{},{"3-ia-3002":["Ficha del Tratado","Tratado de la Unión Europea, firmado en Maastricht, el 7 de febrero de 1992. Parlamento Europeo y el Consejo. 1 de noviembre de 1993.","Tratado de la Unión Europea"]});
