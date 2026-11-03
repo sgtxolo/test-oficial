@@ -6,7 +6,7 @@ Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, RUN_MIN: 60, GRIS_PLIEGA: 'todo', ENT
 const X = require('./expres-lib.js')(18);
 const V18 = require('./tema18/visuales-t18.js');
 // cabecera de la ficha de cada cuadro, en el MISMO orden que visuales-t18.js
-const CAB = ['Artículo 14', 'Artículo 16', 'Artículo 18', 'Artículo 20', 'Artículo 33', 'Artículo 36', 'Artículo 79', 'Artículo 96', 'Artículo 97', 'Artículo 98', 'Artículo 131', 'Artículo 133', 'Artículo 135'];
+const CAB = ['Artículo 14', 'Artículo 16', 'Artículo 18', 'Artículo 20', 'Artículo 33', 'Artículo 36', 'Artículo 79', 'Artículo 96', 'Artículo 97', 'Artículo 98', 'Artículo 131', 'Artículo 133', 'Artículo 135', 'Artículo 40', 'Artículo 40', 'Artículo 50', 'Artículo 36', 'Artículo 36', 'Artículo 66', 'Artículo 76', 'Artículo 78 bis', 'Artículo 131', 'Artículo 133', 'Artículo 135', 'Artículo 136', 'Artículo 37', 'Artículo 33'];
 if (CAB.length !== V18.length) throw new Error(`hay ${V18.length} cuadros y ${CAB.length} cabeceras`);
 const Vcab = V18.map(([, , h], i) => [CAB[i], h]);
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });

@@ -119,9 +119,18 @@
   "id": "a-14",
   "nombre": "Código Penal · Artículo 14",
   "img": "a-14.jpg",
+  "imgr": "a-14-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
   "wh": [
    1075,
    683
+  ],
+  "whr": [
+   1075,
+   593
   ]
  },
  {
@@ -337,9 +346,19 @@
   "id": "a-36",
   "nombre": "Código Penal · Artículo 36",
   "img": "a-36.jpg",
+  "imgr": "a-36-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
   "wh": [
    1075,
    1320
+  ],
+  "whr": [
+   1075,
+   1175
   ]
  },
  {

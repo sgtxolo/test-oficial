@@ -138,6 +138,8 @@ const F = [
   ['18-143', q => { O(q, 0, 'Al año.'); return ['Al año, las penas leves', 'Penas graves: 10 a 30 años según su gravedad; menos graves: cinco años; leves: un año.']; }],
   ['18-138', q => { O(q, 1, 'Cuando exista una específica obligación legal o contractual de actuar.'); return ['a) Cuando exista una específica obligación legal o contractual de actuar', 'También cuando el omitente haya creado una ocasión de riesgo mediante una acción u omisión precedente.']; }],
   ['18-244', q => { q.correcta = 3; return ['g) La privación del derecho a residir en determinados lugares o acudir a ellos, por tiempo de seis meses a cinco años', 'Es de seis meses a cinco años (no de un año y un día a cinco).']; }],
+  ['18-67', q => { O(q, 0, 'De 3 meses a 10 años.'); q.correcta = 0; return ['tendrán una duración de tres meses a 10 años', null]; }],
+  ['18-87', q => { O(q, 0, 'Transcurridos veinticinco años computables desde el día siguiente a la firmeza de la sentencia.'); q.correcta = 3; return ['se cancelarán las anotaciones transcurridos cincuenta años computados desde el día siguiente a la firmeza de la sentencia', 'El texto vigente dice cincuenta años (no veinte).']; }],
 ];
 // ---------- aplicación ----------
 const BS = String.fromCharCode(92);

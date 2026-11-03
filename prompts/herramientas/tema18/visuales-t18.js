@@ -17,11 +17,11 @@ const V = []; const v = (norma, loc, html) => V.push([norma, loc, html]);
 // ───────── p8 · art. 14 · ERROR ─────────
 v('cp', 'El error sobre un hecho que cualifique la infracción o sobre una circunstancia agravante', tabla('ERROR (cuadro del temario · art. 14)', ['Error', 'Efecto'], [
   { l: 'DE TIPO (art. 14.1)', c: 'o', h: [
-    { p: 'Vencible', c: 'o', t: `${D('Se castiga')} como ${Y('imprudente')}.` },
-    { p: 'Invencible', c: 'v', t: `${K('No existe')} ${Y('delito')}.` }] },
+    { p: 'Vencible', c: 'o', t: `Se castiga como ${D('imprudente')}.` },
+    { p: 'Invencible', c: 'v', t: `${P('No existe delito')}.` }] },
   { l: 'DE PROHIBICIÓN (art. 14.3)', c: 'v', h: [
-    { p: 'Vencible', c: 'o', t: `${D('Se rebaja')} la pena en ${P('uno o dos grados')}.` },
-    { p: 'Invencible', c: 'v', t: `${K('No existe')} ${Y('delito')}.` }] },
+    { p: 'Vencible', c: 'o', t: `${D('Se rebaja la pena en uno o dos grados')}.` },
+    { p: 'Invencible', c: 'v', t: `${P('No existe delito')}.` }] },
 ]));
 
 // ───────── p9 · art. 16 · TENTATIVA ─────────
@@ -33,16 +33,16 @@ v('cp', 'Quedará exento de responsabilidad penal por el delito intentado', fluj
 
 // ───────── p10 · arts. 17-18 · conspiración, proposición, provocación ─────────
 v('cp', 'Si a la provocación hubiese seguido la perpetración del delito', cols('CONSPIRACIÓN · PROPOSICIÓN · PROVOCACIÓN (cuadro del temario · arts. 17 y 18)', [
-  { t: Y('CONSPIRACIÓN'), l: [`${P('Dos o más')} personas ${D('se conciertan')} para la ejecución de un delito y ${D('resuelven ejecutarlo')}.`] },
-  { t: Y('PROPOSICIÓN'), l: [`El que ${D('ha resuelto')} cometer un delito ${D('invita')} a otra u otras personas a participar en él.`] },
-  { t: Y('PROVOCACIÓN'), l: [`${D('Se incita')} directamente a que otro u otros cometan un delito.`] },
+  { t: 'CONSPIRACIÓN', l: [`Dos o más personas ${D('se conciertan y resuelven')} ejecutar un delito.`] },
+  { t: 'PROPOSICIÓN', l: [`El que ha resuelto cometer un delito ${D('invita')} a otro/s a participar en él.`] },
+  { t: 'PROVOCACIÓN', l: [`Se ${D('incita')} a otro/s a que cometan un delito.`] },
 ]));
 
 // ───────── p11 · art. 20.4 · legítima defensa ─────────
 v('cp', 'Segundo. Necesidad racional del medio empleado', cols('REQUISITOS DE LA LEGÍTIMA DEFENSA (cuadro del temario · art. 20.4)', [
-  { t: Y('1.º Agresión ilegítima'), l: ['Defensa de los bienes: el ataque que constituya delito y los ponga en grave peligro de deterioro o pérdida inminentes.', 'Defensa de la morada o sus dependencias: la entrada indebida en aquélla o éstas.'] },
-  { t: Y('2.º Necesidad racional del medio empleado'), l: ['Para impedirla o repelerla.'] },
-  { t: Y('3.º Falta de provocación suficiente'), l: ['Por parte del defensor.'] },
+  { t: G('1.º Agresión ilegítima'), l: [`Defensa de los bienes: el ataque que ${D('constituya delito')} y los ponga en ${D('grave peligro de deterioro o pérdida inminentes')}.`, `Defensa de la morada o sus dependencias: ${Y('la entrada indebida')} en aquélla o éstas.`] },
+  { t: G('2.º Necesidad racional del medio empleado'), l: ['Para impedirla o repelerla.'] },
+  { t: G('3.º Falta de provocación suficiente'), l: ['Por parte del defensor.'] },
 ]));
 
 // ───────── p21 y p69 · art. 33 · penas graves, menos graves y leves ─────────
@@ -130,6 +130,24 @@ v('cp', 'Si el cumplimiento de una medida de seguridad fuere posterior al de una
   { t: Y('PRIVATIVAS DE LIBERTAD SUPERIORES A TRES AÑOS'), l: [`A los ${P('diez años')}.`] },
   { t: Y('PRIVATIVAS DE LIBERTAD IGUALES O INFERIORES A TRES AÑOS o con otro contenido'), l: [`A los ${P('cinco años')}.`] },
 ]));
+
+// ───────── cajas de trampas (3/11/2026): cifras y redacciones que se confunden, todo literal del Código Penal ─────────
+const T = (titulo, html) => `<div class="trampa"><b>⚠ ${titulo}</b><p>${html}</p></div>`;
+const C = (de, ok, no) => T('Cifras que se confunden', `<em>${de}</em><strong>${ok}</strong> — ${no.map(x => 'no ' + x).join(' · ')}`);
+v('cp', 'La pena de inhabilitación absoluta tendrá una duración de seis a 20 años', C('Duración de las penas de inhabilitación y suspensión (art. 40.1)', 'Absoluta 6 a 20 años · especial 3 meses a 20 años · suspensión de empleo o cargo público 3 meses a 6 años', ['absoluta 3 meses a 20', 'suspensión hasta 20 años', 'especial 6 a 20 años']));
+v('cp', 'La pena de privación del derecho a conducir vehículos a motor y ciclomotores, y la de privación del derecho a la tenencia y porte de armas', C('Duración de las privaciones y prohibiciones (art. 40.2-4)', 'Conducir y armas 3 meses a 10 años · residir hasta 10 años · aproximarse o comunicarse 1 mes a 10 años · trabajos en beneficio de la comunidad 1 día a 1 año', ['conducir y armas de 1 día a 10 años', 'trabajos de 1 mes a 1 año', 'aproximarse hasta 5 años']));
+v('cp', 'La cuota diaria tendrá un mínimo de dos y un máximo de 400 euros', C('Cuota diaria de la multa (art. 50.4)', '2 a 400 euros · personas jurídicas 30 a 5.000 euros', ['3 a 500 euros', 'personas jurídicas 30 a 2.000 euros', 'personas jurídicas 2 a 5.000 euros']));
+v('cp', 'La pena de prisión tendrá una duración mínima de tres meses y máxima de veinte', T('Ojo a la redacción', 'Prisión de más de cinco años: el juez <strong>«podrá» ordenar</strong> que el tercer grado no se conceda hasta cumplir <strong>la mitad de la pena</strong>; pero en los delitos enumerados (terrorismo, organización o grupo criminal, art. 183, Capítulo V del Título VIII…) <strong>«en cualquier caso»</strong>, sin potestad del juez.'));
+v('cp', 'el penado no podrá disfrutar de permisos de salida hasta que haya cumplido', C('Permisos de salida en la prisión permanente revisable (art. 36.1)', '12 años (tercer grado a los 20, terrorismo) · 8 años (tercer grado a los 15, resto de casos)', ['8 años en terrorismo', '12 años en el resto', '15 y 20 años para los permisos']));
+v('cp', 'Cuando concurra sólo una o dos circunstancias agravantes', T('Ojo a la redacción', '<strong>Una o dos agravantes</strong> → «aplicarán» la pena en la mitad superior (obligatorio). <strong>Más de dos agravantes</strong> y ninguna atenuante, o <strong>reincidencia cualificada</strong> → «podrán aplicar» la pena superior en grado (potestativo).'));
+v('cp', 'Excepcionalmente, este límite máximo será', C('Límite máximo de cumplimiento (art. 76)', 'Regla general: triple de la pena más grave, máximo 20 años · 25 (alguno hasta 20 años) · 30 (alguno superior a 20) · 40 (dos superiores a 20, o terrorismo)', ['triple sin máximo', '25 si alguno es superior a 20', '30 con dos superiores a 20']));
+v('cp', 'la progresión a tercer grado requerirá del cumplimiento', C('Prisión permanente revisable con otras penas (art. 78 bis)', 'Tercer grado: 18 años (resto > 5 años), 20 años (resto > 15), 22 años (dos permanentes, o una más 25 años o más) · suspensión: 25 años (letras a y b) o 30 años (letra c)', ['18 años si el resto excede de 15', '22 años con una sola permanente y 10 años de resto', 'suspensión a los 20 años']));
+v('cp', 'A los veinte años, cuando la pena máxima señalada al delito sea prisión de quince o más', C('Prescripción de los delitos (art. 131)', '20 años (prisión de 15 o más) · 15 (inhabilitación más de 10, o prisión más de 10 y menos de 15) · 10 (más de 5 y hasta 10) · 5 (los demás) · 1 año (delitos leves, injurias y calumnias)', ['10 años para prisión de 15 o más', '3 años para los demás', '5 años en injurias y calumnias']));
+v('cp', 'A los 30 años, las de prisión por más de 20 años', C('Prescripción de las penas (art. 133)', '30 años (prisión más de 20) · 25 (prisión de 15 a 20) · 20 · 15 · 10 (restantes graves) · 5 (menos graves) · 1 año (leves)', ['25 años para prisión de más de 20', '10 años para las menos graves', '2 años para las leves']));
+v('cp', 'Las medidas de seguridad prescribirán a los diez años', C('Prescripción de las medidas de seguridad (art. 135)', '10 años (privativas de libertad de más de 3 años) · 5 años (de 3 años o menos, u otro contenido)', ['5 años para las de más de 3 años', '15 años', '3 años']));
+v('cp', 'Seis meses para las penas leves', C('Cancelación de antecedentes penales (art. 136.1)', '6 meses (leves) · 2 años (hasta 12 meses y delitos imprudentes) · 3 años (menos graves < 3 años) · 5 años (menos graves ≥ 3 años) · 10 años (graves) · 50 años si hubo disolución o prohibición definitiva (apdo. 3)', ['1 año para las leves', '20 años en la disolución', '5 años para las graves']));
+v('cp', 'La localización permanente tendrá una duración de hasta seis meses', C('Localización permanente (art. 37.1)', 'Hasta 6 meses', ['hasta 1 año', 'hasta 3 meses', 'hasta 12 días']));
+v('cp', 'La multa de más de tres meses', T('Cifras que se confunden', '<strong>Multa de más de tres meses</strong> = pena <strong>menos grave</strong> · <strong>hasta tres meses</strong> = pena <strong>leve</strong> · la <strong>multa proporcional</strong>, cualquiera que sea su cuantía, es menos grave (salvo las de personas jurídicas, que son graves).'));
 
 module.exports = V;
 if (require.main === module) {

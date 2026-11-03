@@ -1,5 +1,4 @@
-{
-"18-12":["¿Qué leyes penales tienen efecto retroactivo?","Las que favorezcan al reo, aunque haya sentencia firme y esté cumpliendo condena"],
+{"18-12":["¿Qué leyes penales tienen efecto retroactivo?","Las que favorezcan al reo, aunque haya sentencia firme y esté cumpliendo condena"],
 "18-ia-1005":["¿Cómo se juzgan los hechos cometidos bajo una ley temporal, una vez derogada?","Conforme a ella, salvo que se disponga expresamente lo contrario"],
 "18-ia-1004":["¿Quién es oído en caso de duda sobre cuál es la ley más favorable?","El reo"],
 "18-ia-1007":["¿Bajo el control de quién se ejecuta la pena o la medida de seguridad?","De los Jueces y Tribunales competentes"],
@@ -80,7 +79,7 @@
 "18-186":["¿Qué es una pena privativa de derechos?","La suspensión de empleo o cargo público"],
 "18-90":["¿Cuánto dura la inhabilitación absoluta?","De seis a veinte años"],
 "18-1":["¿Cuánto dura la inhabilitación especial?","De tres meses a veinte años"],
-"18-67":["¿Cuánto dura la privación del derecho a conducir vehículos a motor?","Hasta diez años y tres meses"],
+"18-67":["¿Cuánto dura la privación del derecho a conducir vehículos a motor?","De tres meses a diez años"],
 "18-226":["¿Qué incapacidad produce además la inhabilitación absoluta?","Para obtener cualquier honor, cargo o empleo público y ser elegido para cargo público"],
 "18-191":["¿Cuánto dura la incapacidad de la inhabilitación absoluta?","El tiempo de la condena"],
 "18-ia-1217":["¿Qué honores, empleos y cargos priva la inhabilitación absoluta?","Todos los que tenga el penado, aunque sean electivos"],
@@ -214,7 +213,7 @@
 "18-104":["¿En cuánto prescriben las medidas privativas de libertad iguales o inferiores a tres años?","A los cinco años"],
 "18-ia-1550":["¿En cuánto prescriben las medidas privativas de libertad de más de tres años?","A los diez años"],
 "18-40":["¿Quién cancela los antecedentes penales a los condenados con responsabilidad extinguida?","El Ministerio de Justicia, de oficio o a instancia de parte"],
-"18-87":["¿Cuándo se cancelan las anotaciones si hubo liquidación o prohibición definitiva de actividades?","A los veinte años desde el día siguiente a la firmeza de la sentencia"],
+"18-87":["¿Cuándo se cancelan las anotaciones si se acordó la disolución o prohibición definitiva de actividades de la persona jurídica?","Transcurridos cincuenta años desde el día siguiente a la firmeza de la sentencia"],
 "18-ia-1552":["¿Para qué penas el plazo de cancelación es de dos años?","Penas que no excedan de doce meses e impuestas por delitos imprudentes"],
 "18-88":["¿Qué efecto tiene el error invencible sobre un hecho constitutivo de la infracción?","Excluye la responsabilidad criminal"],
 "18-69":["¿Cuándo se castigan las acciones imprudentes?","Solo cuando la ley lo disponga expresamente"],
@@ -224,5 +223,4 @@
 "18-232":["¿Cuánto dura como máximo la localización permanente?","Hasta seis meses"],
 "18-249":["¿Qué es punible?","El delito consumado y la tentativa de delito"],
 "18-16":["¿Qué se abona para la pena en concurrencia de penas y medidas privativas de libertad?","La medida de seguridad cumplida"],
-"18-34":["¿Desde cuándo se computa el tiempo de prescripción de las medidas de seguridad?","Desde que quedó firme la resolución que la impuso, o desde que debió empezar a cumplirse si es sucesiva"]
-}
+"18-34":["¿Desde cuándo se computa el tiempo de prescripción de las medidas de seguridad?","Desde que quedó firme la resolución que la impuso, o desde que debió empezar a cumplirse si es sucesiva"]}
