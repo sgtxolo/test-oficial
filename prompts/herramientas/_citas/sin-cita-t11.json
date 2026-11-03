@@ -1,0 +1,814 @@
+[
+ {
+  "id": "11-12",
+  "pregunta": "La validez de los actos administrativos que contengan algún vicio:",
+  "opciones": [
+   "Siempre son nulos de pleno derecho.",
+   "Pueden ser nulos o anulables.",
+   "Siempre son anulables.",
+   "Siempre serán declarados inválidos."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Pueden ser nulos o anulables. Art. 47 · Derecho Administrativo . La opción B es correcta porque la Ley 39/2015 distingue dos categorías de invalidez de los actos administrativos —la nulidad de pleno derecho del artículo 47 y la anulabilidad del artículo 48—, de modo que un acto viciado no es siempre nulo ni siempre anulable, sino que puede incurrir en una u otra categoría según la gravedad del vicio.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "11-60",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Datos de las personas fallecidas. Señale la opción INCORRECTA.",
+  "opciones": [
+   "Las personas vinculadas por razones familiares o de hecho, así como sus herederos, podrán dirigirse al responsable o encargado del tratamiento al objeto de solicitar el acceso a los datos personales.",
+   "Mediante real decreto se establecerán los requisitos y condiciones para acreditar la validez y vigencia de estos mandatos o instrucciones y, en su caso, el registro de los mismos.",
+   "Las personas o instituciones a las que el fallecido hubiese designado expresamente para ello podrán también solicitar el acceso a los datos personales.",
+   "En caso de fallecimiento de menores, estas facultades de acceso a los datos personales podrán ejercerse también por sus representantes legales, por el Ministerio Fiscal o la Autoridad Judicial."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · En caso de fallecimiento de menores, estas facultades de acceso a los datos personales podrán ejercerse también por sus representantes lega… TEST 10 He analizado las imágenes que adjuntaste y he extraído y consolidado todas las preguntas y respuestas",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-120",
+  "pregunta": "Real Decreto 179/2005, sobre prevención de riesgos laborales en la Guardia Civil. ¿Quién promoverá las medidas necesarias para que su personal esté informado sobre los riesgos de la función que realiza y de las medidas adoptadas para la prevención de dichos riesgos?",
+  "opciones": [
+   "El Gobierno.",
+   "El Ministro de Justicia.",
+   "La Secretaría de Estado de Justicia.",
+   "Dirección General de la Guardia Civil."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Dirección General de la Guardia Civil. La opción D es correcta porque el Real Decreto 179/2005 encomienda a la Dirección General de la Guardia Civil promover las medidas necesarias para que su personal esté informado sobre los riesgos propios de la función que realiza y sobre las medidas adoptadas para prevenirlos.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-127",
+  "pregunta": "Real Decreto 179/2005, sobre prevención de riesgos laborales en la Guardia Civil. En la Dirección General de la Guardia Civil se constituirán los siguientes órganos de prevención:",
+  "opciones": [
+   "Servicio de Prevención.",
+   "Sección de Prevención de Zona.",
+   "Oficina de Prevención de Comandancia.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. La opción D es correcta porque el Real Decreto 179/2005 constituye en la Dirección General de la Guardia Civil, además de la Comisión y la Secretaría, órganos de ámbito territorial como el Servicio de Prevención, las Secciones de Prevención de Zona y las Oficinas de Prevención de Comandancia.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-151",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. En cualquier caso, los titulares de la patria potestad podrán ejercitar en nombre y representación de los menores de ____ los derechos de acceso, rectificación, cancelación, oposición o cualesquiera otros que pudieran corresponderles en el contexto de la presente ley orgánica.",
+  "opciones": [
+   "Catorce años.",
+   "Doce años.",
+   "Dieciséis años.",
+   "Dieciocho años."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Catorce años. La opción A es correcta por el mismo fundamento que la pregunta 11-137: la Ley Orgánica 3/2018 fija en catorce años la edad hasta la cual los titulares de la patria potestad pueden ejercitar en nombre de los menores los derechos de acceso, rectificación, cancelación u oposición sobre sus datos personales.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-154",
+  "pregunta": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil. Objeto y ámbito de aplicación. A tal efecto, su contenido se inspira en los principios relativos a:",
+  "opciones": [
+   "La eliminación o disminución de factores de riesgo.",
+   "La participación y consulta.",
+   "La información.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. La opción D es correcta porque el Real Decreto 179/2005 inspira su contenido en los principios de eliminación o disminución de los factores de riesgo, participación y consulta del personal, e información, como pilares de la política preventiva de la Guardia Civil.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "11-165",
+  "pregunta": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. ¿Qué órgano será competente para tramitar el procedimiento mediante el que se solicite el acceso a la información que obre en poder de la Casa de Su Majestad el Rey, así como para conocer de cualquier otra cuestión que pudiera surgir derivada de la aplicación por este órgano de las disposiciones de esta Ley?",
+  "opciones": [
+   "El Ministerio de Hacienda y Administraciones Públicas.",
+   "La Secretaría de Estado de Administraciones Públicas.",
+   "La Secretaría General de la Presidencia del Gobierno.",
+   "La Subsecretaría del Ministerio de Hacienda y Administraciones Públicas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · La Secretaría General de la Presidencia del Gobierno. La opción C es correcta porque la Ley 19/2013 atribuye a la Secretaría General de la Presidencia del Gobierno la tramitación de las solicitudes de acceso a la información que obre en poder de la Casa de Su Majestad el Rey, así como el conocimiento de cualquier cuestión derivada de la aplicación de la ley a este órgano.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1001",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. El Tribunal Constitucional señaló en su Sentencia __________ que nos encontramos ante un derecho fundamental a la protección de datos por el que se garantiza a la persona el control sobre sus datos, cualesquiera datos personales, y sobre su uso y destino.",
+  "opciones": [
+   "292/2000, de 30 de noviembre",
+   "94/1998, de 4 de mayo",
+   "94/1998, de 30 de noviembre",
+   "290/2000, de 4 de mayo"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · 94/1998, de 4 de mayo El preámbulo (apartado I) de la LO 3/2018 dispone: \"El Tribunal Constitucional señaló en su Sentencia 94/1998, de 4 de mayo, que nos encontramos ante un derecho fundamental a la protección de datos por el que se garantiza a la persona el control sobre sus datos, cualesquiera datos personales, y sobre su uso y destino\" . La STC 94/1998, de 4 de mayo, habla del control sobre los datos; la STC 292/2000, de 30 de noviembre, es la que lo califica de derecho autónomo e independiente. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1002",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. En la Sentencia 292/2000, de 30 de noviembre, el Tribunal Constitucional considera el derecho a la protección de datos como un derecho:",
+  "opciones": [
+   "instrumental del derecho a la intimidad que consiste en un poder de oposición frente al uso de los datos, salvo que se disponga otra cosa en la normativa aplicable.",
+   "autónomo pero dependiente del derecho al honor, que consiste en un poder de control sobre los ficheros.",
+   "accesorio e independiente que consiste en un poder de rectificación y de cancelación de los datos.",
+   "autónomo e independiente que consiste en un poder de disposición y de control sobre los datos personales."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · autónomo e independiente que consiste en un poder de disposición y de control sobre los datos personales El preámbulo (apartado I) de la LO 3/2018 dispone: \"en la Sentencia 292/2000, de 30 de noviembre, lo considera como un derecho autónomo e independiente que consiste en un poder de disposición y de control sobre los datos personales\" . Es «autónomo e independiente» y consiste en un poder de «disposición y de control»; no es instrumental, ni dependiente, ni accesorio. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1003",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. A nivel legislativo, la concreción y desarrollo del derecho fundamental de protección de las personas físicas en relación con el tratamiento de datos personales tuvo lugar en sus orígenes mediante la aprobación de la Ley Orgánica __________, reguladora del tratamiento automatizado de datos personales, conocida como LORTAD.",
+  "opciones": [
+   "15/1999, de 13 de diciembre",
+   "5/1992, de 13 de diciembre",
+   "5/1992, de 29 de octubre",
+   "15/1992, de 29 de octubre"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · 5/1992, de 29 de octubre El preámbulo (apartado I) de la LO 3/2018 dispone: \"tuvo lugar en sus orígenes mediante la aprobación de la Ley Orgánica 5/1992, de 29 de octubre, reguladora del tratamiento automatizado de datos personales, conocida como LORTAD\" . La LORTAD es la LO 5/1992, de 29 de octubre; la LO 15/1999, de 13 de diciembre, fue la que la reemplazó. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1004",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. La Ley Orgánica 5/1992 fue reemplazada por la Ley Orgánica 15/1999, de 13 de diciembre, de protección de datos personales, a fin de trasponer a nuestro derecho la Directiva:",
+  "opciones": [
+   "2016/680 del Parlamento Europeo y del Consejo, de 27 de abril de 2016.",
+   "95/46/CE del Parlamento Europeo y del Consejo, de 24 de octubre de 1995.",
+   "95/46/CE del Parlamento Europeo y de la Comisión, de 4 de noviembre de 1995.",
+   "2008/977/JAI del Consejo, de 24 de octubre de 2008, sobre protección de datos."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · 95/46/CE del Parlamento Europeo y del Consejo, de 24 de octubre de 1995 El preámbulo (apartado I) de la LO 3/2018 dispone: \"La Ley Orgánica 5/1992 fue reemplazada por la Ley Orgánica 15/1999, de 13 de diciembre, de protección de datos personales, a fin de trasponer a nuestro derecho a la Directiva 95/46/CE del Parlamento Europeo y del Consejo, de 24 de octubre de 1995\" . La LO 15/1999 traspuso la Directiva 95/46/CE (Parlamento Europeo y Consejo, 24 de octubre de 1995). La 2016/680 es posterior y la 2008/977/JAI es una Decisión Marco. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1006",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. A nivel europeo se había adoptado la Directiva 95/46/CE, cuyo objeto era procurar que la garantía del derecho a la protección de datos personales no supusiese un obstáculo a:",
+  "opciones": [
+   "la libre prestación de servicios en el seno de la Unión.",
+   "la transferencia internacional de los datos fuera de la Unión.",
+   "el correcto funcionamiento del mercado interior de la Unión.",
+   "la libre circulación de los datos en el seno de la Unión."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · la libre circulación de los datos en el seno de la Unión El preámbulo (apartado I) de la LO 3/2018 dispone: \"cuyo objeto era procurar que la garantía del derecho a la protección de datos personales no supusiese un obstáculo a la libre circulación de los datos en el seno de la Unión\" . El obstáculo que se quería evitar era a la libre circulación de los datos en el seno de la Unión. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1007",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. En este marco la Comisión lanzó el __________ su Comunicación titulada «Un enfoque global de la protección de los datos personales en la Unión Europea», que constituye el germen de la posterior reforma del marco de la Unión Europea.",
+  "opciones": [
+   "27 de abril de 2016",
+   "24 de octubre de 2010, conforme al procedimiento que se establezca reglamentariamente.",
+   "4 de noviembre de 2010",
+   "4 de mayo de 2012"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · 4 de noviembre de 2010 El preámbulo (apartado II) de la LO 3/2018 dispone: \"la Comisión lanzó el 4 de noviembre de 2010 su Comunicación titulada «Un enfoque global de la protección de los datos personales en la Unión Europea», que constituye el germen de la posterior reforma del marco de la Unión Europea\" . La Comunicación de la Comisión es de 4 de noviembre de 2010; el 27 de abril de 2016 es la fecha del Reglamento y de la Directiva 2016/680. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1008",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. La Directiva (UE) 2016/680 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativa a la protección de las personas físicas en lo que respecta al tratamiento de datos personales por parte de las autoridades competentes para fines de prevención, investigación, detección o enjuiciamiento de infracciones penales o de ejecución de sanciones penales, deroga:",
+  "opciones": [
+   "la Directiva 95/46/CE del Parlamento Europeo y del Consejo.",
+   "la Decisión Marco 2008/977/JAI del Consejo.",
+   "la Decisión Marco 2008/977/JAI de la Comisión.",
+   "el Reglamento (CE) 45/2001 del Parlamento Europeo."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · la Decisión Marco 2008/977/JAI del Consejo El preámbulo (apartado II) de la LO 3/2018 dispone: \"y por la que se deroga la Decisión Marco 2008/977/JAI del Consejo\" . La Directiva 95/46/CE la deroga el Reglamento (UE) 2016/679; la Directiva 2016/680 deroga la Decisión Marco 2008/977/JAI del Consejo (no de la Comisión). (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1010",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. El Reglamento general de protección de datos pretende con su eficacia directa superar los obstáculos que impidieron la finalidad armonizadora de la Directiva 95/46/CE. La transposición de la directiva por los Estados miembros se ha plasmado en:",
+  "opciones": [
+   "un marco normativo homogéneo con perfiles regulares en el conjunto de la Unión Europea.",
+   "un mosaico normativo con perfiles uniformes en el conjunto de los Estados miembros.",
+   "un sistema normativo armonizado con perfiles irregulares en el conjunto de la Unión.",
+   "un mosaico normativo con perfiles irregulares en el conjunto de la Unión Europea."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · un mosaico normativo con perfiles irregulares en el conjunto de la Unión Europea El preámbulo (apartado III) de la LO 3/2018 dispone: \"La transposición de la directiva por los Estados miembros se ha plasmado en un mosaico normativo con perfiles irregulares en el conjunto de la Unión Europea\" . «Mosaico normativo con perfiles irregulares»: justo lo contrario de un marco homogéneo o armonizado. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1011",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. Señale la INCORRECTA. Según el preámbulo, el carácter central de la información personal tiene también riesgos, pues las informaciones sobre los individuos:",
+  "opciones": [
+   "se multiplican exponencialmente y son más accesibles, por más actores.",
+   "son cada vez más fáciles de procesar, mientras es más difícil su control, conforme al procedimiento que se establezca reglamentariamente.",
+   "son más difíciles de procesar, aunque resulta más fácil controlar su uso.",
+   "son más accesibles, por más actores, y se multiplican exponencialmente."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · son más difíciles de procesar, aunque resulta más fácil controlar su uso El preámbulo (apartado III) de la LO 3/2018 dispone: \"las informaciones sobre los individuos se multiplican exponencialmente, son más accesibles, por más actores, y cada vez son más fáciles de procesar mientras que es más difícil el control de su destino y uso\" . Es al revés: cada vez son más fáciles de procesar y es más difícil el control de su destino y uso. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1012",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. El Reglamento general de protección de datos procede a reforzar la seguridad jurídica y transparencia a la vez que permite que sus normas sean __________ por el Derecho de los Estados miembros en la medida en que sea necesario por razones de coherencia y para que las disposiciones nacionales sean comprensibles para sus destinatarios.",
+  "opciones": [
+   "interpretadas o derogadas",
+   "especificadas o restringidas",
+   "ampliadas o sustituidas",
+   "desarrolladas o suspendidas, sin perjuicio de lo dispuesto en otras disposiciones."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · especificadas o restringidas El preámbulo (apartado III) de la LO 3/2018 dispone: \"Procede a reforzar la seguridad jurídica y transparencia a la vez que permite que sus normas sean especificadas o restringidas por el Derecho de los Estados miembros en la medida en que sea necesario por razones de coherencia y para que las disposiciones nacionales sean comprensibles para sus destinatarios\" . Sus normas pueden ser «especificadas o restringidas» por los Estados miembros; nunca derogadas, sustituidas ni suspendidas. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1015",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. La adaptación al Reglamento general de protección de datos, que será aplicable a partir del __________, requiere, en suma, la elaboración de una nueva ley orgánica que sustituya a la actual.",
+  "opciones": [
+   "25 de mayo de 2018",
+   "27 de abril de 2016",
+   "25 de mayo de 2016",
+   "6 de diciembre de 2018"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 25 de mayo de 2018 El preámbulo (apartado III) de la LO 3/2018 dispone: \"La adaptación al Reglamento general de protección de datos, que será aplicable a partir del 25 de mayo de 2018\" . Aprobado el 27 de abril de 2016, el Reglamento es aplicable desde el 25 de mayo de 2018. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1016",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. En la elaboración de la nueva ley orgánica se han preservado los principios de buena regulación, al tratarse de una norma necesaria para la adaptación del ordenamiento español a la citada disposición europea y proporcional a este objetivo, siendo su razón última procurar:",
+  "opciones": [
+   "eficacia administrativa.",
+   "seguridad jurídica.",
+   "transparencia normativa.",
+   "coherencia y comprensión."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · seguridad jurídica El preámbulo (apartado III) de la LO 3/2018 dispone: \"siendo su razón última procurar seguridad jurídica\" . La razón última es procurar seguridad jurídica. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1019",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. Esta ley orgánica consta de __________ artículos estructurados en diez títulos, veintidós disposiciones adicionales, seis disposiciones transitorias, una disposición derogatoria y dieciséis disposiciones finales.",
+  "opciones": [
+   "noventa y cuatro",
+   "noventa y nueve",
+   "noventa y siete",
+   "ciento siete"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · noventa y siete El preámbulo (apartado V) de la LO 3/2018 dispone: \"Esta ley orgánica consta de noventa y siete artículos estructurados en diez títulos, veintidós disposiciones adicionales, seis disposiciones transitorias, una disposición derogatoria y dieciséis disposiciones finales\" . Noventa y siete artículos en diez títulos. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1025",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. Se indica que el consentimiento del afectado para una pluralidad de finalidades será preciso que conste de manera específica e inequívoca que se otorga para todas ellas, y se mantiene en __________ la edad a partir de la cual el menor puede prestar su consentimiento.",
+  "opciones": [
+   "catorce años",
+   "dieciséis años",
+   "trece años",
+   "dieciocho años"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · catorce años El preámbulo (apartado V) de la LO 3/2018 dispone: \"y se mantiene en catorce años la edad a partir de la cual el menor puede prestar su consentimiento\" . Se mantiene en catorce años. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1026",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. Se mantiene la prohibición de consentir tratamientos con la finalidad principal de almacenar información identificativa de determinadas categorías de datos especialmente protegidos. Así, por ejemplo, la prestación del consentimiento no dará cobertura a la creación de «listas negras» de:",
+  "opciones": [
+   "morosos.",
+   "deudores tributarios.",
+   "trabajadores despedidos.",
+   "sindicalistas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · sindicalistas El preámbulo (apartado V) de la LO 3/2018 dispone: \"la prestación del consentimiento no dará cobertura a la creación de «listas negras» de sindicalistas\" . El ejemplo del preámbulo son las «listas negras» de sindicalistas (dato de afiliación sindical, categoría especial). (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1028",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. El Título III, dedicado a los derechos de las personas, adapta al Derecho español el principio de transparencia en el tratamiento y recoge la denominada «información por capas», ya generalmente aceptada en ámbitos como el de:",
+  "opciones": [
+   "los sistemas de denuncias internas en el sector privado o los ficheros de exclusión publicitaria.",
+   "la videovigilancia o la instalación de dispositivos de almacenamiento masivo de datos.",
+   "la investigación biomédica en materia de salud o los sistemas de información crediticia.",
+   "la función estadística pública o los tratamientos con fines de archivo en interés público."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · la videovigilancia o la instalación de dispositivos de almacenamiento masivo de datos El preámbulo (apartado V) de la LO 3/2018 dispone: \"recoge la denominada «información por capas» ya generalmente aceptada en ámbitos como el de la videovigilancia o la instalación de dispositivos de almacenamiento masivo de datos\" . Los ámbitos citados son la videovigilancia y los dispositivos de almacenamiento masivo de datos («cookies»). (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1029",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. En el Título IV se recogen «Disposiciones aplicables a tratamientos concretos». Respecto de algunos de ellos el legislador establece, cuando se lleven a cabo con una serie de requisitos, una presunción:",
+  "opciones": [
+   "«iuris tantum» de prevalencia del interés legítimo del responsable.",
+   "«iuris et de iure» de prevalencia del interés legítimo del responsable.",
+   "«iuris tantum» de prevalencia del interés público sobre el del afectado.",
+   "«iuris et de iure» de licitud del tratamiento realizado por el encargado."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · «iuris tantum» de prevalencia del interés legítimo del responsable El preámbulo (apartado V) de la LO 3/2018 dispone: \"el legislador establece una presunción «iuris tantum» de prevalencia del interés legítimo del responsable\" . Es «iuris tantum» (admite prueba en contrario) y a favor del interés legítimo del responsable. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1031",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. La mayor novedad que presenta el Reglamento (UE) 2016/679 es la evolución de un modelo basado, fundamentalmente, en el control del cumplimiento a otro que descansa en el principio de:",
+  "opciones": [
+   "minimización de datos.",
+   "limitación de la finalidad.",
+   "responsabilidad activa.",
+   "privacidad por defecto."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · responsabilidad activa El preámbulo (apartado V) de la LO 3/2018 dispone: \"la mayor novedad que presenta el Reglamento (UE) 2016/679 es la evolución de un modelo basado, fundamentalmente, en el control del cumplimiento a otro que descansa en el principio de responsabilidad activa\" . Del control del cumplimiento se pasa a la responsabilidad activa. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1032",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. Según el preámbulo, respecto de la figura del delegado de protección de datos, señale la INCORRECTA:",
+  "opciones": [
+   "Puede tener un carácter obligatorio o voluntario.",
+   "Solo podrá ser una persona física integrada en la organización del responsable.",
+   "Su designación ha de comunicarse a la autoridad de protección de datos competente.",
+   "No podrá ser removido, salvo en los supuestos de dolo o negligencia grave."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Solo podrá ser una persona física integrada en la organización del responsable El preámbulo (apartado V) de la LO 3/2018 dispone: \"que parte del principio de que puede tener un carácter obligatorio o voluntario, estar o no integrado en la organización del responsable o encargado y ser tanto una persona física como una persona jurídica\" . Puede estar o no integrado en la organización y ser persona física o jurídica. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1034",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. Según el preámbulo, el delegado de protección de datos permite configurar un medio para la resolución amistosa de reclamaciones, pues el interesado podrá reproducir ante él:",
+  "opciones": [
+   "la denuncia que haya sido inadmitida por la Agencia Española de Protección de Datos.",
+   "el recurso que haya sido desestimado por la autoridad autonómica de protección de datos.",
+   "la reclamación que haya sido resuelta por el Comité Europeo de Protección de Datos.",
+   "la reclamación que no sea atendida por el responsable o encargado del tratamiento."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · la reclamación que no sea atendida por el responsable o encargado del tratamiento El preámbulo (apartado V) de la LO 3/2018 dispone: \"el interesado podrá reproducir ante él la reclamación que no sea atendida por el responsable o encargado del tratamiento\" . Ante el delegado se reproduce la reclamación no atendida por el responsable o el encargado. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1036",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. El Reglamento (UE) 2016/679 evoluciona hacia un modelo de «ventanilla única» en el que existe una autoridad de control principal y otras autoridades interesadas; en caso de discrepancia entre autoridades de los Estados miembros, se prevé:",
+  "opciones": [
+   "el dictamen no vinculante del Comité Europeo de Protección de Datos.",
+   "la decisión vinculante del Comité Europeo de Protección de Datos.",
+   "la decisión vinculante de la autoridad de control principal.",
+   "la resolución vinculante del Tribunal de Justicia de la Unión Europea."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · la decisión vinculante del Comité Europeo de Protección de Datos El preámbulo (apartado V) de la LO 3/2018 dispone: \"en caso de discrepancia, se prevé la decisión vinculante del Comité Europeo de Protección de Datos\" . Decide el Comité Europeo de Protección de Datos y su decisión es vinculante. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1038",
+  "pregunta": "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Preámbulo. Según el preámbulo, en el Título X: a) Son objeto de regulación los derechos al olvido, a la portabilidad y al testamento digital. b) Ocupa un lugar relevante el reconocimiento del derecho a la desconexión digital en el marco del derecho a la libertad de expresión en el ámbito laboral.",
+  "opciones": [
+   "Solo la a) es correcta.",
+   "Solo la b) es correcta, salvo que se disponga otra cosa en la normativa aplicable.",
+   "Ambas son correctas.",
+   "Ninguna es correcta."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Solo la a) es correcta El preámbulo (apartado V) de la LO 3/2018 dispone: \"así como los derechos al olvido, a la portabilidad y al testamento digital. Ocupa un lugar relevante el reconocimiento del derecho a la desconexión digital en el marco del derecho a la intimidad en el uso de dispositivos digitales en el ámbito laboral\" . La desconexión digital se enmarca en el derecho a la intimidad en el uso de dispositivos digitales en el ámbito laboral, no en la libertad de expresión. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1359",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. La esfera jurídica de derechos de los ciudadanos frente a la actuación de las Administraciones Públicas se encuentra protegida a través de una serie de instrumentos tanto de carácter reactivo, entre los que destaca el sistema de recursos administrativos o el control realizado por jueces y tribunales, como preventivo, a través de:",
+  "opciones": [
+   "el procedimiento administrativo.",
+   "la potestad reglamentaria.",
+   "la responsabilidad patrimonial, en los términos que establezca la propia norma.",
+   "la iniciativa legislativa."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · el procedimiento administrativo El preámbulo (apartado I) de la Ley 39/2015 dispone: \"como preventivo, a través del procedimiento administrativo, que es la expresión clara de que la Administración Pública actúa con sometimiento pleno a la Ley y al Derecho\" . El instrumento preventivo es el procedimiento administrativo; los reactivos, los recursos y el control judicial. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1361",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Según el preámbulo, se propone una reforma del ordenamiento jurídico público articulada en dos ejes fundamentales: las relaciones «ad extra» y «ad intra» de las Administraciones Públicas. La Ley 39/2015 constituye:",
+  "opciones": [
+   "el segundo de estos ejes, al establecer una regulación completa y sistemática de las relaciones «ad intra» entre las distintas Administraciones.",
+   "el primero de estos ejes, al establecer una regulación completa y sistemática de las relaciones «ad intra» de la organización administrativa.",
+   "el primero de estos ejes, al regular de forma completa y sistemática las relaciones «ad extra» con los administrados.",
+   "ambos ejes a la vez, al regular en un cuerpo único las relaciones «ad extra» y «ad intra» de las Administraciones."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · el primero de estos ejes, al regular de forma completa y sistemática las relaciones «ad extra» con los administrados El preámbulo (apartado I) de la Ley 39/2015 dispone: \"Esta Ley constituye el primero de estos dos ejes, al establecer una regulación completa y sistemática de las relaciones «ad extra» entre las Administraciones y los administrados\" . La Ley 39/2015 regula las relaciones «ad extra»; la 40/2015, las «ad intra». (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1362",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. La Constitución recoge en su título IV, bajo la rúbrica «Del Gobierno y la Administración», los rasgos propios que diferencian al Gobierno de la Administración, definiendo al primero como:",
+  "opciones": [
+   "un órgano eminentemente técnico al que se reserva la ejecución de las leyes, la potestad sancionadora y la gestión de los servicios públicos.",
+   "un órgano eminentemente político al que se reserva gobernar, la potestad reglamentaria y la dirección de la Administración.",
+   "un órgano colegiado al que se reserva la función legislativa, la potestad reglamentaria y la dirección de la política interior y exterior.",
+   "un órgano eminentemente político al que se reserva la función de gobernar y la potestad legislativa, quedando la reglamentaria a la Administración."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · un órgano eminentemente político al que se reserva gobernar, la potestad reglamentaria y la dirección de la Administración El preámbulo (apartado II) de la Ley 39/2015 dispone: \"definiendo al primero como un órgano eminentemente político al que se reserva la función de gobernar, el ejercicio de la potestad reglamentaria y la dirección de la Administración\" . Órgano político: gobernar, potestad reglamentaria y dirección de la Administración. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1363",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Según el preámbulo, entre los principios que deben regir la actuación de las Administraciones Públicas destacan, al imponer el sometimiento pleno de la actividad administrativa a la Ley y al Derecho:",
+  "opciones": [
+   "el de eficacia y el de legalidad.",
+   "el de jerarquía y el de coordinación.",
+   "el de transparencia y el de eficiencia.",
+   "el de descentralización y desconcentración."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · el de eficacia y el de legalidad El preámbulo (apartado II) de la Ley 39/2015 dispone: \"entre los que destacan el de eficacia y el de legalidad, al imponer el sometimiento pleno de la actividad administrativa a la Ley y al Derecho\" . Eficacia y legalidad. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1365",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. El preámbulo entiende el procedimiento administrativo como:",
+  "opciones": [
+   "el conjunto de actos administrativos dictados por un órgano competente que inciden directamente en la esfera jurídica de los interesados y agotan la vía administrativa.",
+   "el conjunto ordenado de normas reglamentarias que regulan la iniciativa legislativa y la potestad reglamentaria de las Administraciones Públicas.",
+   "el conjunto ordenado de trámites y actuaciones, según el cauce legal, para dictar un acto administrativo o expresar la voluntad de la Administración.",
+   "el conjunto de garantías de los ciudadanos frente a la potestad de autotutela de la Administración, cuyo cierre es la revisión judicial de su actuación."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · el conjunto ordenado de trámites y actuaciones, según el cauce legal, para dictar un acto administrativo o expresar la voluntad de la Administración El preámbulo (apartado II) de la Ley 39/2015 dispone: \"entendido como el conjunto ordenado de trámites y actuaciones formalmente realizadas, según el cauce legalmente previsto, para dictar un acto administrativo o expresar la voluntad de la Administración\" . Conjunto ordenado de trámites y actuaciones según el cauce legal para dictar un acto o expresar la voluntad de la Administración. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1367",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Al margen de la conocida como Ley de Azcárate, de 19 de octubre de 1889, la primera regulación completa del procedimiento administrativo en nuestro ordenamiento jurídico es la contenida en la Ley de Procedimiento Administrativo de:",
+  "opciones": [
+   "17 de julio de 1958.",
+   "26 de noviembre de 1992.",
+   "19 de octubre de 1889.",
+   "26 de julio de 1957."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 17 de julio de 1958 El preámbulo (apartado III) de la Ley 39/2015 dispone: \"la primera regulación completa del procedimiento administrativo en nuestro ordenamiento jurídico es la contenida en la Ley de Procedimiento Administrativo de 17 de julio de 1958\" . Ley de 17 de julio de 1958. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1372",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Según el preámbulo, una Administración sin papel basada en un funcionamiento íntegramente electrónico no sólo sirve mejor a los principios de eficacia y eficiencia, al ahorrar costes a ciudadanos y empresas, sino que también:",
+  "opciones": [
+   "reduce el número de empleados públicos, salvo que se disponga otra cosa en la normativa aplicable.",
+   "suprime la necesidad de notificar.",
+   "elimina el silencio administrativo.",
+   "refuerza las garantías de los interesados."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · refuerza las garantías de los interesados El preámbulo (apartado III) de la Ley 39/2015 dispone: \"Porque una Administración sin papel basada en un funcionamiento íntegramente electrónico no sólo sirve mejor a los principios de eficacia y eficiencia, al ahorrar costes a ciudadanos y empresas, sino que también refuerza las garantías de los interesados\" . Refuerza las garantías de los interesados. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1373",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Los diversos informes internacionales definen la regulación inteligente como un marco jurídico de calidad que permite el cumplimiento de un objetivo regulatorio a la vez que ofrece los incentivos adecuados para dinamizar la actividad económica. Para ello resulta esencial un adecuado análisis de impacto de las normas de forma continua:",
+  "opciones": [
+   "únicamente ex ante, conforme al procedimiento que se establezca reglamentariamente.",
+   "únicamente ex post.",
+   "tanto ex ante como ex post.",
+   "cada cinco años."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · tanto ex ante como ex post El preámbulo (apartado IV) de la Ley 39/2015 dispone: \"resulta esencial un adecuado análisis de impacto de las normas de forma continua, tanto ex ante como ex post\" . Tanto ex ante como ex post. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1377",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Señale la INCORRECTA sobre la estructura de la Ley 39/2015 según su preámbulo:",
+  "opciones": [
+   "Consta de 133 artículos.",
+   "Consta de cinco disposiciones adicionales.",
+   "Tiene siete disposiciones transitorias.",
+   "Consta de siete disposiciones finales."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Tiene siete disposiciones transitorias El preámbulo (apartado V) de la Ley 39/2015 dispone: \"La Ley se estructura en 133 artículos, distribuidos en siete títulos, cinco disposiciones adicionales, cinco disposiciones transitorias, una disposición derogatoria y siete disposiciones finales\" . Las transitorias son cinco (siete son los títulos y las finales). (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1379",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Según el preámbulo, la vigencia del anexo 2 de la disposición adicional vigésima novena de la Ley 14/2000, de medidas fiscales, administrativas y del orden social, se mantiene, y establece una serie de procedimientos que quedan excepcionados de:",
+  "opciones": [
+   "la regla general del silencio administrativo positivo.",
+   "la obligación de resolver expresamente en plazo.",
+   "la tramitación electrónica obligatoria.",
+   "la regla general del silencio administrativo negativo, en los términos que establezca la propia norma."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · la regla general del silencio administrativo positivo El preámbulo (apartado V) de la Ley 39/2015 dispone: \"que establece una serie de procedimientos que quedan excepcionados de la regla general del silencio administrativo positivo\" . Quedan excepcionados del silencio positivo. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1382",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Una de las novedades más importantes de la Ley es la separación entre identificación y firma electrónica, de modo que, con carácter general:",
+  "opciones": [
+   "sólo será necesaria la firma, y se exigirá la identificación cuando deba acreditarse la identidad del interesado.",
+   "sólo será necesaria la identificación; la firma se exigirá para acreditar la voluntad y consentimiento del interesado.",
+   "serán necesarias tanto la identificación como la firma en todas las actuaciones del interesado ante la Administración, sin perjuicio de lo dispuesto en otras disposiciones.",
+   "sólo será necesaria la identificación, salvo en los procedimientos iniciados de oficio, en que se exigirá la firma."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · sólo será necesaria la identificación; la firma se exigirá para acreditar la voluntad y consentimiento del interesado El preámbulo (apartado V) de la Ley 39/2015 dispone: \"de modo que, con carácter general, sólo será necesaria la primera, y se exigirá la segunda cuando deba acreditarse la voluntad y consentimiento del interesado\" . Basta la identificación; la firma, para acreditar voluntad y consentimiento. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1383",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Se admitirán como sistemas de identificación:",
+  "opciones": [
+   "los sistemas de firma admitidos, los de clave concertada y cualquier otro que establezcan las Administraciones.",
+   "únicamente los sistemas de firma electrónica cualificada basados en certificados electrónicos cualificados de persona física.",
+   "cualquiera de los sistemas de firma admitidos, excluidos los sistemas de clave concertada por su menor seguridad técnica.",
+   "únicamente el DNI electrónico y los certificados electrónicos expedidos por la Fábrica Nacional de Moneda y Timbre."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · los sistemas de firma admitidos, los de clave concertada y cualquier otro que establezcan las Administraciones El preámbulo (apartado V) de la Ley 39/2015 dispone: \"Se admitirán como sistemas de identificación cualquiera de los sistemas de firma admitidos, así como sistemas de clave concertada y cualquier otro que establezcan las Administraciones Públicas\" . Sistemas de firma, clave concertada y cualquier otro que establezcan las Administraciones. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1384",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Los sistemas de identificación y firma previstos en la Ley son plenamente coherentes con el Reglamento (UE) n.º 910/2014 del Parlamento Europeo y del Consejo, de __________, relativo a la identificación electrónica y los servicios de confianza para las transacciones electrónicas en el mercado interior.",
+  "opciones": [
+   "27 de abril de 2016",
+   "13 de diciembre de 1999",
+   "1 de octubre de 2015",
+   "23 de julio de 2014"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · 23 de julio de 2014 El preámbulo (apartado V) de la Ley 39/2015 dispone: \"Reglamento (UE) n.º 910/2014 del Parlamento Europeo y del Consejo, de 23 de julio de 2014, relativo a la identificación electrónica y los servicios de confianza para las transacciones electrónicas en el mercado interior\" . Reglamento eIDAS, de 23 de julio de 2014 (deroga la Directiva 1999/93/CE). (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1386",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. En materia de archivos se introduce como novedad la obligación de cada Administración Pública de mantener un archivo electrónico único de los documentos que correspondan a:",
+  "opciones": [
+   "procedimientos en tramitación.",
+   "procedimientos finalizados.",
+   "expedientes sancionadores.",
+   "todos los procedimientos."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · procedimientos finalizados El preámbulo (apartado V) de la Ley 39/2015 dispone: \"la obligación de cada Administración Pública de mantener un archivo electrónico único de los documentos que correspondan a procedimientos finalizados\" . Procedimientos finalizados. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1387",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Según el preámbulo, como principal novedad del capítulo de términos y plazos destaca:",
+  "opciones": [
+   "la introducción del cómputo de plazos por horas y la declaración de los sábados como días inhábiles.",
+   "la introducción del cómputo de plazos por semanas y la declaración de los domingos como días hábiles.",
+   "la supresión del cómputo de plazos por meses y la declaración del mes de agosto como inhábil.",
+   "la introducción del cómputo de plazos por horas y la declaración de los sábados como días hábiles."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · la introducción del cómputo de plazos por horas y la declaración de los sábados como días inhábiles El preámbulo (apartado V) de la Ley 39/2015 dispone: \"Como principal novedad destaca la introducción del cómputo de plazos por horas y la declaración de los sábados como días inhábiles, unificando de este modo el cómputo de plazos en el ámbito judicial y el administrativo\" . Plazos por horas y sábados inhábiles (unificación con el ámbito judicial). (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1388",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Según el preámbulo, las notificaciones electrónicas serán preferentes y se realizarán:",
+  "opciones": [
+   "en la dirección de correo electrónico que el interesado haya comunicado a la Administración.",
+   "exclusivamente a través del Punto de Acceso General Electrónico de la Administración.",
+   "mediante mensaje a los dispositivos electrónicos del interesado, con acuse de recibo.",
+   "en la sede electrónica o en la dirección electrónica habilitada única, según corresponda."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · en la sede electrónica o en la dirección electrónica habilitada única, según corresponda El preámbulo (apartado V) de la Ley 39/2015 dispone: \"que serán preferentes y se realizarán en la sede electrónica o en la dirección electrónica habilitada única, según corresponda\" . Sede electrónica o DEHú; el correo y los dispositivos solo reciben avisos. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1391",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. En la tramitación simplificada del procedimiento administrativo común, el plazo máximo de resolución será de __________.",
+  "opciones": [
+   "treinta días",
+   "quince días, en los términos que establezca la propia norma.",
+   "un mes",
+   "diez días"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · treinta días El preámbulo (apartado V) de la Ley 39/2015 dispone: \"el plazo máximo de resolución que será de treinta días y los trámites de que constará\" . Treinta días. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1393",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. El título V, de la revisión de los actos en vía administrativa, mantiene la tipología de recursos administrativos existentes hasta la fecha, que son:",
+  "opciones": [
+   "alzada, reposición obligatoria y extraordinario de revisión, conforme al procedimiento que se establezca reglamentariamente.",
+   "alzada, potestativo de reposición y reclamación previa.",
+   "alzada, potestativo de reposición y extraordinario de revisión.",
+   "reposición, súplica y extraordinario de revisión."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · alzada, potestativo de reposición y extraordinario de revisión El preámbulo (apartado V) de la Ley 39/2015 dispone: \"la tipología de recursos administrativos existentes hasta la fecha (alzada, potestativo de reposición y extraordinario de revisión)\" . Alzada, potestativo de reposición y extraordinario de revisión. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1394",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Según el preámbulo, la Ley no contempla ya las reclamaciones previas en vía civil y laboral:",
+  "opciones": [
+   "por haberse integrado en el recurso potestativo de reposición, que pasa a ser obligatorio en esos ámbitos, sin perjuicio de lo dispuesto en otras disposiciones.",
+   "debido a la escasa utilidad práctica que han demostrado hasta la fecha y que, de este modo, quedan suprimidas.",
+   "por haberse trasladado su regulación a la Ley de Régimen Jurídico del Sector Público.",
+   "por haberse sustituido por un trámite de mediación obligatoria ante la propia Administración."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · debido a la escasa utilidad práctica que han demostrado hasta la fecha y que, de este modo, quedan suprimidas El preámbulo (apartado V) de la Ley 39/2015 dispone: \"la Ley no contempla ya las reclamaciones previas en vía civil y laboral, debido a la escasa utilidad práctica que han demostrado hasta la fecha y que, de este modo, quedan suprimidas\" . Quedan suprimidas por su escasa utilidad práctica. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1396",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. En aras de una mayor seguridad jurídica y la predictibilidad del ordenamiento, todas las Administraciones divulgarán un Plan Anual Normativo en el que se recogerán:",
+  "opciones": [
+   "únicamente los proyectos de ley que el Gobierno vaya a remitir a las Cortes Generales durante el año en curso, salvo que se disponga otra cosa en la normativa aplicable.",
+   "todas las normas aprobadas durante el año anterior, con la evaluación de su impacto económico y social.",
+   "únicamente los reglamentos ejecutivos que vayan a aprobarse en desarrollo de leyes durante el año siguiente.",
+   "todas las propuestas con rango de ley o de reglamento que vayan a ser elevadas para su aprobación el año siguiente."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · todas las propuestas con rango de ley o de reglamento que vayan a ser elevadas para su aprobación el año siguiente El preámbulo (apartado V) de la Ley 39/2015 dispone: \"todas las Administraciones divulgarán un Plan Anual Normativo en el que se recogerán todas las propuestas con rango de ley o de reglamento que vayan a ser elevadas para su aprobación el año siguiente\" . Todas las propuestas de ley o reglamento que se elevarán el año siguiente. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-1397",
+  "pregunta": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Preámbulo. Según el preámbulo, entre las novedades para incrementar la participación de los ciudadanos en el procedimiento de elaboración de normas destaca:",
+  "opciones": [
+   "la necesidad de someter todo proyecto normativo a referéndum consultivo cuando afecte a derechos de los ciudadanos, conforme al procedimiento que se establezca reglamentariamente.",
+   "la obligación de publicar el texto definitivo de la norma un mes antes de su aprobación para recibir alegaciones.",
+   "la consulta previa a ciudadanos y empresas, antes de elaborar la norma, sobre los problemas que se pretenden solucionar.",
+   "la necesidad de recabar, tras la aprobación de la norma, la opinión de ciudadanos y empresas sobre su aplicación."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · la consulta previa a ciudadanos y empresas, antes de elaborar la norma, sobre los problemas que se pretenden solucionar El preámbulo (apartado V) de la Ley 39/2015 dispone: \"la necesidad de recabar, con carácter previo a la elaboración de la norma, la opinión de ciudadanos y empresas acerca de los problemas que se pretenden solucionar con la iniciativa\" . Consulta previa a ciudadanos y empresas antes de elaborar la norma. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-2011",
+  "pregunta": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. Preámbulo. Según su preámbulo, la Ley 19/2013 tiene un triple alcance (señale la INCORRECTA):",
+  "opciones": [
+   "Incrementa y refuerza la transparencia en la actividad pública.",
+   "Reconoce y garantiza el acceso a la información.",
+   "Regula el régimen disciplinario de todos los empleados públicos.",
+   "Establece las obligaciones de buen gobierno de los responsables públicos."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Regula el régimen disciplinario de todos los empleados públicos El preámbulo (apartado I) de la Ley 19/2013 dispone: \"La presente Ley tiene un triple alcance: incrementa y refuerza la transparencia en la actividad pública\" . Transparencia, acceso y buen gobierno; no el régimen disciplinario general. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-2012",
+  "pregunta": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. Preámbulo. Según el preámbulo, la transparencia, el acceso a la información pública y las normas de buen gobierno deben ser:",
+  "opciones": [
+   "los principios rectores de la potestad reglamentaria.",
+   "los ejes fundamentales de toda acción política.",
+   "los fundamentos de la responsabilidad patrimonial.",
+   "los límites de la actuación de los poderes públicos."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · los ejes fundamentales de toda acción política El preámbulo (apartado I) de la Ley 19/2013 dispone: \"La transparencia, el acceso a la información pública y las normas de buen gobierno deben ser los ejes fundamentales de toda acción política\" . Ejes fundamentales de toda acción política. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-2013",
+  "pregunta": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. Preámbulo. Según el preámbulo, la transparencia en la actividad pública se articula a través de:",
+  "opciones": [
+   "obligaciones de publicidad activa para todas las Administraciones y entidades públicas.",
+   "un derecho de acceso de ámbito subjetivo limitado a los interesados en el procedimiento.",
+   "un régimen sancionador aplicable a los empleados públicos que incumplan sus deberes.",
+   "la publicación en el BOE de todos los actos administrativos de gravamen."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · obligaciones de publicidad activa para todas las Administraciones y entidades públicas El preámbulo (apartado I) de la Ley 19/2013 dispone: \"incrementa y refuerza la transparencia en la actividad pública –que se articula a través de obligaciones de publicidad activa para todas las Administraciones y entidades públicas–\" . Obligaciones de publicidad activa. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-2014",
+  "pregunta": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. Preámbulo. Según el preámbulo, para canalizar la publicación de tan ingente cantidad de información y facilitar el cumplimiento de las obligaciones de publicidad activa, la Ley contempla la creación y desarrollo de:",
+  "opciones": [
+   "un Registro de altos cargos.",
+   "una Oficina de Transparencia.",
+   "un Boletín de la Transparencia.",
+   "un Portal de la Transparencia."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · un Portal de la Transparencia El preámbulo (apartado II) de la Ley 19/2013 dispone: \"la Ley contempla la creación y desarrollo de un Portal de la Transparencia\" . Portal de la Transparencia. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-2015",
+  "pregunta": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. Preámbulo. Según el preámbulo, la regulación del derecho de acceso de la Ley 30/1992 adolecía de deficiencias como (señale la INCORRECTA):",
+  "opciones": [
+   "No ser claro el objeto del derecho de acceso.",
+   "Estar limitado a documentos de procedimientos ya terminados.",
+   "Exigir siempre la motivación de la solicitud de acceso.",
+   "Resultar su ejercicio extraordinariamente limitado en la práctica."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Exigir siempre la motivación de la solicitud de acceso El preámbulo (apartado II) de la Ley 19/2013 dispone: \"al no ser claro el objeto del derecho de acceso, al estar limitado a documentos contenidos en procedimientos administrativos ya terminados y al resultar su ejercicio extraordinariamente limitado en su articulación práctica\" . La motivación no aparece entre las deficiencias citadas. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-2020",
+  "pregunta": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. Preámbulo. Según el preámbulo, los límites al derecho de acceso se aplicarán atendiendo a:",
+  "opciones": [
+   "un test de legalidad y de oportunidad, de forma discrecional por el órgano.",
+   "un test de daño y de interés público en la divulgación, de forma proporcionada.",
+   "un test de motivación de la solicitud y del interés legítimo del solicitante, sin perjuicio de lo dispuesto en otras disposiciones.",
+   "un test de seguridad nacional, con preferencia sobre cualquier otro interés."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · un test de daño y de interés público en la divulgación, de forma proporcionada El preámbulo (apartado III) de la Ley 19/2013 dispone: \"los límites previstos se aplicarán atendiendo a un test de daño (del interés que se salvaguarda con el límite) y de interés público en la divulgación\" . Test de daño y de interés público, de forma proporcionada. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-2021",
+  "pregunta": "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno. Preámbulo. Según el preámbulo, en materia de impugnaciones se crea una reclamación potestativa y previa a la vía judicial, de la que conocerá:",
+  "opciones": [
+   "el Consejo de Transparencia y Buen Gobierno.",
+   "la Agencia Española de Protección de Datos.",
+   "el Defensor del Pueblo o institución análoga.",
+   "la Sala de lo Contencioso de la Audiencia Nacional."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · el Consejo de Transparencia y Buen Gobierno El preámbulo (apartado III) de la Ley 19/2013 dispone: \"En materia de impugnaciones se crea una reclamación potestativa y previa a la vía judicial de la que conocerá el Consejo de Transparencia y Buen Gobierno\" . El CTBG; sustituye a los recursos administrativos. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "11-ia-2174",
+  "pregunta": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil. Preámbulo. El preámbulo del Real Decreto 179/2005 destaca la creación del órgano asesor que puede constituirse en el medio para hacer llegar al Director General de la Guardia Civil las inquietudes en materia de prevención. Se trata de:",
+  "opciones": [
+   "la Comisión de Seguridad y Salud.",
+   "el Consejo Asesor de Personal.",
+   "el Comité de Seguridad Laboral.",
+   "el Servicio de Prevención Central."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · el Consejo Asesor de Personal El preámbulo de el RD 179/2005 dispone: \"la creación del Consejo Asesor de Personal del Cuerpo de la Guardia Civil\" . El Consejo Asesor de Personal (RD 4/2002). (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ }
+]

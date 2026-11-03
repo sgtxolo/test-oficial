@@ -1,0 +1,842 @@
+[
+ {
+  "id": "17-18",
+  "pregunta": "Instrucción 1/2017. ¿Cuándo entró en vigor esta instrucción?",
+  "opciones": [
+   "A los veinte días de su publicación.",
+   "Al día siguiente de su publicación.",
+   "Al mes de su publicación.",
+   "A los dos meses de su publicación."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Al día siguiente de su publicación Texto leído en la imagen de la pág. 47 de tu temario subrayado. Según el Instrucciones, cuarta de la Instrucción 1/2017 de la SES : \"La presente Instrucción surtirá plenos efectos a partir del día siguiente de su publicación\" (verificado con el temario oficial).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-19",
+  "pregunta": "Instrucción 1/2017. La instrucción 1/2017 deroga:",
+  "opciones": [
+   "La Orden de la Secretaría de Estado de Seguridad 11/2004, de 12 de octubre.",
+   "La Orden de la Secretaría de Estado de Seguridad 11/2007, de 12 de septiembre.",
+   "La Instrucción de la Secretaría de Estado de Seguridad 11/2007, de 12 de septiembre.",
+   "La Instrucción de la Secretaría de Estado de Seguridad 11/2004, de 3 de octubre."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · La Instrucción de la Secretaría de Estado de Seguridad 11/2007, de 12 de septiembre. *Explicación: La Disposición Derogatoria Única de la Instrucción 1/2017 deroga expresamente la Instrucción 11/2007, de 12 de septiembre.*",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-41",
+  "pregunta": "Instrucción 1/2017. Cuando existan dudas sobre la mayoría o minoría de edad de la víctima y no pueda ser determinada con certeza, se presumirá:",
+  "opciones": [
+   "Que se trata de una persona mayor de edad.",
+   "Siempre que se trata de una persona menor de edad.",
+   "Depende del delito cometido.",
+   "Depende de las circunstancias psicológicas y sociales de la persona detenida."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Siempre que se trata de una persona menor de edad. *Explicación: El principio de protección del menor establece que, en caso de duda sobre la edad, se presumirá que es menor de edad para aplicar las garantías correspondientes.*",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-52",
+  "pregunta": "Instrucción 1/2017. En las diligencias de identificación de menores, será necesario el consentimiento de:",
+  "opciones": [
+   "El menor exclusivamente.",
+   "Los representantes legales exclusivamente.",
+   "Tanto el menor como sus representantes legales.",
+   "El Ministerio Fiscal."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Tanto el menor como sus representantes legales. *Explicación: Para la identificación de menores se requiere el consentimiento tanto del menor (si tiene suficiente madurez) como de sus representantes legales.*",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-71",
+  "pregunta": "Instrucción 1/2017. Actuación con menores extranjeros no acompañados. Se entiende por menor extranjero no acompañado (MENA) a:",
+  "opciones": [
+   "El extranjero menor de dieciocho años, nacional de un Estado al que no le sea de aplicación el régimen de la Unión Europea que llegue a territorio español sin un adulto responsable de él, ya sea legalmente o con arreglo a la costumbre, y al que se aprecie riesgo de desprotección del menor.",
+   "El extranjero mayor de dieciocho años, nacional de un Estado al que no le sea de aplicación el régimen de la Unión Europea que llegue a territorio español sin un adulto responsable de él.",
+   "El extranjero menor de dieciséis años, nacional de un Estado al que no le sea de aplicación el régimen de la Unión Europea que llegue a territorio español sin un adulto responsable de él.",
+   "Cualquier extranjero que llegue a territorio español sin documentación."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El extranjero menor de dieciocho años, nacional de un Estado al que no le sea de aplicación el régimen de la Unión Europea que llegue a ter… *Explicación: La definición correcta de MENA es un extranjero menor de 18 años no acompañado y en situación de riesgo.*",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-84",
+  "pregunta": "Ley Orgánica 5/2000. Unidad de expediente. Señale la opción incorrecta en esta materia:",
+  "opciones": [
+   "El Ministerio Fiscal incoará un procedimiento por cada hecho delictivo, salvo cuando se trate de hechos delictivos conexos.",
+   "Todos los procedimientos tramitados a un mismo menor se archivarán en el expediente personal que del mismo se haya abierto en la Fiscalía. De igual modo se archivarán las diligencias en el Juzgado de Menores respectivo.",
+   "Los procedimientos de la competencia de la Audiencia Nacional podrán ser objeto de acumulación con otros procedimientos sustanciados en el ámbito de la jurisdicción de menores.",
+   "En los casos en los que los delitos atribuidos al menor expedientado hubieran sido cometidos en diferentes territorios, la determinación del órgano judicial competente para el enjuiciamiento de todos ellos en unidad de expediente se hará teniendo en cuenta el lugar del domicilio del menor y, subsidiariamente, los criterios expresados en el artículo 18 de la Ley de Enjuiciamiento Criminal."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Los procedimientos de la competencia de la Audiencia Nacional podrán ser objeto de acumulación con otros procedimientos sustanciados en el … *Explicación: Los procedimientos de la Audiencia Nacional NO pueden acumularse con procedimientos de la jurisdicción de menores ordinaria por razones de competencia.*",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-90",
+  "pregunta": "Instrucción 1/2017. Exploración del menor y valoración de las necesidades de la víctima. Siempre que existan dudas sobre la mayoría o minoría de edad de la víctima y no pueda ser determinada con certeza, se presumirá que se trata de:",
+  "opciones": [
+   "Una persona mayor de edad.",
+   "Una persona menor de edad.",
+   "Una persona menor de dieciséis años.",
+   "Una persona mayor de dieciséis años."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Una persona menor de edad. *Explicación: El principio de protección del menor establece que, en caso de duda sobre la edad, se presumirá que es menor de edad.*",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-118",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Competencia de los Jueces de Menores. ¿Quiénes serán los competentes para conocer de los hechos delictivos cometidos por mayores de 14 años y menores de 18 años?:",
+  "opciones": [
+   "El Ministerio Fiscal.",
+   "La Facultad de Menores.",
+   "El Juez de Menores.",
+   "El Juez de Instrucción."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · El Juez de Menores. El Juez de Menores es competente para delitos de menores de 14 a 18 años.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-124",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Régimen general de aplicación y duración de las medidas. Las acciones u omisiones imprudentes no podrán ser sancionadas:",
+  "opciones": [
+   "Con medida de internamiento en régimen cerrado.",
+   "Con medida de internamiento en régimen abierto.",
+   "Con medida de internamiento en régimen de semilibertad.",
+   "Todas son incorrectas."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Con medida de internamiento en régimen cerrado. Las acciones imprudentes no pueden sancionarse con internamiento en régimen cerrado.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-138",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la Responsabilidad Penal de los Menores. Los Jueces de Menores NO serán competentes para:",
+  "opciones": [
+   "Conocer los hechos cometidos por las personas mayores de catorce años y menores de dieciocho.",
+   "Conocer los hechos cometidos por mayores de dieciocho años y menores de veintiuno.",
+   "Ejecutar las sentencias dictadas por los Juzgados de menores.",
+   "Resolver sobre las responsabilidades civiles derivadas de los hechos cometidos por las personas a las que resulta aplicable la presente ley."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Conocer los hechos cometidos por mayores de dieciocho años y menores de veintiuno. No son competentes para mayores de 18 años.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-145",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la Responsabilidad Penal de los Menores. Secreto del expediente. ¿Quién podrá decretar mediante auto motivado el secreto del expediente durante la instrucción?:",
+  "opciones": [
+   "El Juez de Menores, a solicitud del Ministerio Fiscal, del menor o de su familia, o de quien ejercita la acción penal.",
+   "El Ministerio fiscal como instructor, a instancia del Juez de Menores, o a solicitud del menor o de su familia, o de quien ejercite la acción penal.",
+   "El Ministerio fiscal como instructor, a instancia del Juez de Menores, o a solicitud de cualquiera de las partes.",
+   "El Ministerio fiscal como instructor, a instancia del Juez de Menores, o a solicitud de cualquiera de las partes, personadas antes del trámite de audiencia."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El Juez de Menores, a solicitud del Ministerio Fiscal, del menor o de su familia, o de quien ejercita la acción penal. El Juez de Menores decreta el secreto del expediente.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-147",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la Responsabilidad Penal de los Menores. Régimen General de aplicación y duración de las medidas. Reglas para la aplicación de las medidas susceptibles de ser impuestas a los menores. Señale la INCORRECTA:",
+  "opciones": [
+   "La medida de internamiento en régimen cerrado no se podrá aplicar cuando el menor actuare al servicio de una banda, con carácter transitorio, que se dedique a la realización de hechos tipificados como delito.",
+   "La medida de prestaciones en beneficio de la comunidad no podrá superar las cien horas.",
+   "La medida de internamiento en régimen cerrado se podrá aplicar cuando los hechos tipificados como delito se cometan en grupo.",
+   "La medida de permanencia de fin de semana no podrá superar las ocho fines de semana."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · La medida de internamiento en régimen cerrado no se podrá aplicar cuando el menor actuare al servicio de una banda, con carácter transitori… Es incorrecta porque SÍ se puede aplicar internamiento cerrado cuando el menor actúe al servicio de una banda.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-153",
+  "pregunta": "Real Decreto 1774/2004, por el que se aprueba el Reglamento de la Ley Orgánica 5/2000, reguladora de la responsabilidad penal de los menores. Existirá un registro o archivo central donde, de modo específico para menores, se incorporará la información relativa a los datos de estos resultantes de la investigación. Tal registro o archivo solo podrá facilitar información a requerimiento:",
+  "opciones": [
+   "Del Ministerio Fiscal o del juez de menores.",
+   "Del Ministerio Fiscal o del juez de instrucción.",
+   "Del juez de instrucción o del juez de menores.",
+   "Del Ministerio Fiscal, del juez de menores o del equipo técnico de protección de menores."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Del Ministerio Fiscal o del juez de menores. Del Ministerio Fiscal o del juez de menores.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-156",
+  "pregunta": "Ley orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. ¿Quién podrá desistir de la incoación del expediente cuando los hechos denunciados constituyan delitos menos graves sin violencia o intimidación en las personas o faltas?",
+  "opciones": [
+   "El Juez de Menores.",
+   "El Ministerio Fiscal.",
+   "El letrado del menor.",
+   "El equipo técnico."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · El Ministerio Fiscal. El Ministerio Fiscal.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-159",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la Responsabilidad Penal de los Menores. Ámbito de aplicación de la Ley. En especial, cuando el Ministerio Fiscal, desista de la Incoación del expediente deberá inmediatamente ponerlo en conocimiento de las víctimas y perjudicados haciéndoles saber su derecho:",
+  "opciones": [
+   "A ejercitar las acciones civiles que les asisten ante la jurisdicción civil.",
+   "A ejercitar las acciones penales que les asisten ante la jurisdicción penal.",
+   "A ejercitar las acciones penales y civiles que les asisten ante la jurisdicción de menores.",
+   "A ejercitar las acciones penales y civiles que les asisten ante la jurisdicción penal o civil."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · A ejercitar las acciones penales y civiles que les asisten ante la jurisdicción penal o civil. A ejercitar las acciones ante la jurisdicción penal o civil.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-161",
+  "pregunta": "Ley orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. ¿A quién corresponde la defensa de los derechos que a los menores reconocen las leyes, así como la vigilancia de las actuaciones que deban efectuarse en su interés y la observancia de las garantías del procedimiento?",
+  "opciones": [
+   "Al Ministerio Fiscal.",
+   "Al Juez de Menores.",
+   "Al Abogado del menor.",
+   "A los padres o tutores del menor."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Al Ministerio Fiscal. Al Ministerio Fiscal. TEST 12",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-163",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. ¿Quién incoa un procedimiento por cada hecho delictivo, salvo cuando se trate de hechos delictivos conexos?:",
+  "opciones": [
+   "La Audiencia Nacional.",
+   "El Ministerio Fiscal.",
+   "El Juez de Menores.",
+   "El Fiscal General del Estado."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · El Ministerio Fiscal. El Ministerio Fiscal incoa el procedimiento.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-164",
+  "pregunta": "Real Decreto 1774/2004, de 30 de julio, por el que se aprueba el Reglamento de la Ley Orgánica 5/2000, de 12 de enero, reguladora de la Responsabilidad Penal de los Menores. Modo de llevar a cabo las soluciones extrajudiciales. ¿Quién solicitará del equipo técnico informe sobre la conveniencia de adoptar la solución extrajudicial más adecuada al interés del menor y al de la víctima?:",
+  "opciones": [
+   "El abogado de la víctima.",
+   "El abogado del menor detenido.",
+   "El Ministerio Fiscal.",
+   "El Juez de Menores."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · El Ministerio Fiscal. El Ministerio Fiscal.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-165",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Derechos de las víctimas y de las personas perjudicadas. ¿Quién velará en todo momento por la protección de los derechos de las víctimas y de las personas perjudicadas por las infracciones cometidas por las personas menores de edad?",
+  "opciones": [
+   "El Ministerio Fiscal y el Juez de Menores.",
+   "El Ministerio Fiscal y el Fiscal General del Estado.",
+   "La Secretaría de Estado de Justicia.",
+   "La Autoridad Judicial competente."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El Ministerio Fiscal y el Juez de Menores. El Ministerio Fiscal y el Juez de Menores.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-170",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Actuación Instructora del Ministerio Fiscal. El Ministerio Fiscal deberá dar vista del expediente al letrado del menor y, en su caso, a quien haya ejercitado la acción penal, en un plazo no superior a ______ tantas veces como aquel lo solicite.",
+  "opciones": [
+   "12 horas.",
+   "24 horas.",
+   "36 horas.",
+   "48 horas."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · 24 horas. 24 horas.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-179",
+  "pregunta": "Real Decreto 1774/2004, por el que se aprueba el Reglamento de la Ley Orgánica 5/2000, reguladora de la responsabilidad penal de los menores. Cuando para la identificación de un menor haya de acudirse a la diligencia de reconocimiento prevista en la Ley de Enjuiciamiento Criminal, dicha diligencia solo podrá llevarse a cabo:",
+  "opciones": [
+   "Con orden o autorización del juez de instrucción o del juez de menores según sus propias competencias.",
+   "Con orden o autorización del Ministerio Fiscal o del juez de instrucción según sus propias competencias.",
+   "Con orden o autorización del Ministerio Fiscal o del juez de menores según sus propias competencias.",
+   "Con orden o autorización del juez de instrucción."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Con orden o autorización del Ministerio Fiscal o del juez de menores según sus propias competencias. Con orden o autorización del Ministerio Fiscal o del juez de menores.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-180",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. El tiempo máximo de la medida cautelar de internamiento será de seis meses, y podrá prorrogarse, a instancia del Ministerio Fiscal, previa audiencia del letrado del menor y mediante auto motivado, por otros _____ como máximo.",
+  "opciones": [
+   "Tres meses.",
+   "Seis meses.",
+   "Nueve meses.",
+   "Doce meses."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Tres meses. Tres meses. TEST 13",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-182",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de Actuación Policial con Menores\". Menores infractores a la normativa de Seguridad Ciudadana. Aplicación de la normativa sobre Protección de la Seguridad Ciudadana. En las actuaciones policiales realizadas para el mantenimiento y restablecimiento de la seguridad ciudadana se tendrá en cuenta que los menores afectados reciban un trato acorde con la protección del superior interés del menor, sin perjuicio:",
+  "opciones": [
+   "Del interés nacional.",
+   "Del interés público general.",
+   "Del interés social.",
+   "Ninguna es correcta."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Del interés público general. Del interés público general.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-183",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. ¿Quién podrá decretar el secreto del expediente?",
+  "opciones": [
+   "El Juez de Menores mediante auto motivado.",
+   "El Ministerio Fiscal mediante orden motivado.",
+   "El Ministerio Fiscal mediante auto motivado.",
+   "El Juez de Menores mediante orden motivado."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El Juez de Menores mediante auto motivado. El Juez de Menores mediante auto motivado.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-188",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. El tiempo máximo de la medida cautelar de internamiento será de seis meses, y podrá prorrogarse:",
+  "opciones": [
+   "A instancia del Ministerio Fiscal, previa audiencia del letrado del menor y mediante auto motivado, por otros seis meses como máximo.",
+   "A instancia del Ministerio Fiscal, previa audiencia del letrado del menor y mediante auto motivado, por otros tres meses como máximo.",
+   "A instancia del Ministerio Fiscal, previa audiencia del letrado del menor y mediante auto motivado, por otros dos meses como máximo.",
+   "A instancia del Ministerio Fiscal, previa audiencia del letrado del menor y mediante auto motivado, por otros cuatro meses como máximo."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · A instancia del Ministerio Fiscal, previa audiencia del letrado del menor y mediante auto motivado, por otros tres meses como máximo. Por otros tres meses como máximo.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-190",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de Actuación Policial con Menores\". Protección de la seguridad ciudadana. ¿Qué menores de edad estarán exentos de responsabilidad administrativa por la comisión de conductas tipificadas como infracciones en la Ley Orgánica 4/2015?",
+  "opciones": [
+   "Los menores de doce años.",
+   "Los menores de catorce años.",
+   "Los menores de quince años.",
+   "Los menores de dieciséis años."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Los menores de catorce años. Los menores de catorce años.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-194",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de Actuación Policial con Menores\". Menores extranjeros no acompañados. Una vez determinada la minoría de edad y puesto a disposición de los servicios competentes de protección de menores de la Comunidad Autónoma en la que se halle, el órgano competente para llevar a cabo los trámites relativos a la repatriación del menor extranjero no acompañado será:",
+  "opciones": [
+   "La Delegación y Subdelegación del Gobierno.",
+   "La Fiscalía de Menores.",
+   "La Brigada Provincial de Extranjería y Fronteras de la Policía Nacional.",
+   "Los servicios sociales de protección del menor."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · La Delegación y Subdelegación del Gobierno. La Delegación y Subdelegación del Gobierno. TEST 14",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-195",
+  "pregunta": "Instrucción nº 1/2017 de la Secretaría de Estado de Seguridad, por la que se actualiza el protocolo de actuación policial con menores. Régimen General de actuación policial con menores. ¿Qué se debe hacer con un menor de catorce años que haya cometido una infracción penal?",
+  "opciones": [
+   "Se le debe entregar a las autoridades locales.",
+   "Se le debe imponer una sanción económica, de la cual se responsabilizarán los padres, tutores, o los que ejerzan patria potestad o guarda de hecho.",
+   "Se le debe enviar a una institución de internamiento.",
+   "Se le debe entregar a quienes ejerzan la patria potestad, la tutela o la guarda de hecho, o a la Entidad Pública de protección de menores."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Se le debe entregar a quienes ejerzan la patria potestad, la tutela o la guarda de hecho, o a la Entidad Pública de protección de menores. Se entrega a quienes ejerzan la patria potestad o a la Entidad Pública de protección de menores.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-199",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. ¿Quién admite la personación del acusador particular?",
+  "opciones": [
+   "El Juez de Menores.",
+   "El Juez de Instrucción.",
+   "La Audiencia Provincial.",
+   "El Ministerio Fiscal."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El Juez de Menores. El Juez de Menores.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-202",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Ámbito de aplicación de la Ley. ¿Cuál es la principal función del Ministerio Fiscal en el ámbito de la Ley de Responsabilidad Penal del Menor?",
+  "opciones": [
+   "Actuar como defensa del menor en el juicio.",
+   "Impulsar el procedimiento y dirigir la investigación de los hechos.",
+   "Defender a las víctimas del delito cometido por el menor.",
+   "Concretar y reunir toda la información al respecto de la responsabilidad penal del Menor."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Impulsar el procedimiento y dirigir la investigación de los hechos. Impulsar el procedimiento y dirigir la investigación.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-206",
+  "pregunta": "Instrucción nº 1/2017 de la Secretaría de Estado de Seguridad, por la que se actualiza el protocolo de actuación policial con menores. Especialización policial en materia de menores. ¿Qué se prevé para el personal policial no especializado en materia de menores?",
+  "opciones": [
+   "Una reducción de sus responsabilidades en casos relacionados con menores.",
+   "Planes específicos de formación y actualización en el tratamiento policial de menores.",
+   "La supervisión obligatoria por parte de las Unidades especializadas en todos los casos.",
+   "La asignación exclusiva a casos administrativos."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Planes específicos de formación y actualización en el tratamiento policial de menores. Planes específicos de formación y actualización.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-212",
+  "pregunta": "Real Decreto 1774/2004, de 30 de julio, por el que se aprueba el Reglamento de la Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Si el equipo técnico considera conveniente que el menor efectúe una actividad reparadora o de conciliación con la víctima:",
+  "opciones": [
+   "Notificará a un cuerpo policial.",
+   "Informará de tal extremo al Ministerio Fiscal y al letrado del menor.",
+   "Solicitará la opinión de la víctima.",
+   "Activará el expediente y comenzará uno nuevo."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Informará de tal extremo al Ministerio Fiscal y al letrado del menor. Informará al Ministerio Fiscal y al letrado del menor.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-213",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Velarán en todo momento por la protección de los derechos de las víctimas y de las personas perjudicadas por las infracciones cometidas por las personas menores de edad:",
+  "opciones": [
+   "El Ministerio Fiscal y el Juez de Menores.",
+   "El Letrado de la Administración de Justicia.",
+   "La Juez.",
+   "Las partes personadas."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El Ministerio Fiscal y el Juez de Menores. El Ministerio Fiscal y el Juez de Menores.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-216",
+  "pregunta": "Real Decreto 1774/2004, de 30 de julio, por el que se aprueba el Reglamento de la Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Las autoridades y funcionarios que intervengan en la detención de un menor deberán notificar inmediatamente el hecho de la detención y el lugar de la custodia:",
+  "opciones": [
+   "Al Ministerio Fiscal.",
+   "Al juez de menores y a los representantes legales.",
+   "A los representantes legales del menor y al Ministerio Fiscal.",
+   "Sólo a los representantes legales del menor."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · A los representantes legales del menor y al Ministerio Fiscal. A los representantes legales del menor y al Ministerio Fiscal.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-224",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Una vez elaborado el informe del equipo técnico, el Ministerio Fiscal lo remitirá inmediatamente:",
+  "opciones": [
+   "Al Juez de Menores y dará copia del mismo al letrado del menor.",
+   "Al Juez de Instrucción y dará original del mismo al letrado del menor.",
+   "Al Juez de Menores y dará original del mismo al letrado del menor.",
+   "Al Juez de Instrucción, y dará copia del mismo al letrado del menor."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Al Juez de Menores y dará copia del mismo al letrado del menor. - Se remite al Juez de Menores y se da copia al letrado del menor.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-228",
+  "pregunta": "Real Decreto 1774/2004, de 30 de julio, por el que se aprueba el Reglamento de la Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. De la actuación de la Policía Judicial y del equipo técnico. ¿Desde qué momento los equipos técnicos deben prestar asistencia profesional al menor?",
+  "opciones": [
+   "Desde la primera comparecencia ante el juez.",
+   "Desde que el Ministerio Fiscal lo requiera.",
+   "Desde el momento de su detención.",
+   "Tras ser declarado culpable."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Desde el momento de su detención. - La asistencia comienza desde el momento de la detención.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-231",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. ¿A quién corresponde promover la mediación entre el menor y la víctima o perjudicado?",
+  "opciones": [
+   "A los abogados o representantes legales del menor y de los perjudicados o víctimas.",
+   "Al Ministerio Fiscal.",
+   "Al Juez de Menores del lugar donde se hubieren cometidos los hechos.",
+   "Al correspondiente equipo técnico."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Al Ministerio Fiscal. - Corresponde al Ministerio Fiscal promover la mediación.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-232",
+  "pregunta": "Instrucción 1/2017 de la Secretaría de Estado de Seguridad, por la que se aprueba el \"Protocolo de Actuación Policial con Menores\". Para el reconocimiento y ejecución dentro de España de una Orden Europea de Detención y Entrega (OEDE) que provenga de otro Estado miembro, la competencia, desde la detención del menor hasta la decisión definitiva, corresponde:",
+  "opciones": [
+   "Al Juzgado Central de Menores de la Audiencia Provincial.",
+   "A la Sección de Menores de la Fiscalía de la Audiencia Nacional.",
+   "Al Juzgado Central de Menores de la Audiencia Nacional.",
+   "A la Sección de Menores de la Fiscalía de la Audiencia Provincial."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Al Juzgado Central de Menores de la Audiencia Nacional. - Corresponde al Juzgado Central de Menores de la Audiencia Nacional.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-236",
+  "pregunta": "Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores. Ámbito de aplicación de la Ley. ¿Quiénes serán competentes para resolver sobre las responsabilidades civiles derivadas de los hechos cometidos por las personas a las que resulta aplicable la presente Ley?",
+  "opciones": [
+   "El Fiscal General.",
+   "El Ministro de Interior.",
+   "Los Jueces de Menores.",
+   "Todas son incorrectas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Los Jueces de Menores. - Los Jueces de Menores conocen también de la responsabilidad civil.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1501",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Derogación. Todas las referencias efectuadas al Protocolo de Actuación Policial con Menores contenidas en normas anteriores de igual o inferior rango se entenderán realizadas en lo sucesivo:",
+  "opciones": [
+   "a este texto.",
+   "a la Instrucción 11/2007, de 12 de septiembre.",
+   "a la Ley Orgánica 5/2000, de 12 de enero.",
+   "al Real Decreto 1774/2004, de 30 de julio."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · a este texto El Instrucción tercera de la Instrucción 1/2017 se dispone: \"Todas las referencias efectuadas al Protocolo de Actuación Policial con Menores contenidas en normas anteriores de igual o inferior rango se entenderán realizadas en lo sucesivo a este texto\" . Las referencias al protocolo anterior pasan a entenderse hechas a este texto. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1502",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Objeto y ámbito de aplicación. La actuación y tratamiento policial de menores se ajustará a la Constitución, a los Tratados Internacionales ratificados por España y al resto del ordenamiento jurídico aplicable, especialmente a lo dispuesto en la Ley Orgánica 1/1996, de 15 de enero, sobre:",
+  "opciones": [
+   "protección integral de la infancia.",
+   "responsabilidad penal de los menores.",
+   "protección de la seguridad ciudadana.",
+   "protección jurídica del menor."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · protección jurídica del menor El 1.2.1 de la Instrucción 1/2017 se dispone: \"especialmente a lo dispuesto en la Ley Orgánica 1/1996, de 15 de enero, sobre protección jurídica del menor\" . La LO 1/1996 es la de protección jurídica del menor. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1508",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Especialización policial en materia de menores. En el ámbito de la Guardia Civil, los especialistas en actuación con menores se integran en los Puntos de Atención Especializada (PAE), como órganos de las:",
+  "opciones": [
+   "Unidades Técnicas de Policía Judicial.",
+   "Unidades Orgánicas de Policía Judicial (UOPJ).",
+   "Secciones de Investigación de las Comandancias.",
+   "Unidades Orgánicas de Seguridad Ciudadana."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Unidades Orgánicas de Policía Judicial (UOPJ) El 2.1.2 de la Instrucción 1/2017 se dispone: \"los Puntos de Atención Especializada (PAE), como órganos de las Unidades Orgánicas de Policía Judicial (UOPJ)\" . Los PAE son órganos de las Unidades Orgánicas de Policía Judicial. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1521",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Atención policial al menor víctima o testigo. Protección de la víctima menor de edad. Todo menor víctima de delitos cometidos en España tiene los derechos recogidos en la Ley 4/2015, del Estatuto de la víctima del delito; en el «Protocolo básico de intervención contra el maltrato infantil en el ámbito familiar», del Observatorio de la Infancia; y en la Circular 3/2009 de la Fiscalía General del Estado sobre:",
+  "opciones": [
+   "«protección de los menores víctimas y testigos».",
+   "«tratamiento del acoso escolar desde el sistema de justicia juvenil».",
+   "«criterios para la unidad de actuación especializada del Ministerio Fiscal en materia de reforma de menores».",
+   "«la escucha del menor, víctima o testigo»."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · «protección de los menores víctimas y testigos» El 5.1.1 de la Instrucción 1/2017 se dispone: \"y en la Circular 3/2009 de la Fiscalía General del Estado sobre protección de los menores víctimas y testigos\" . La Circular 3/2009 versa sobre la protección de los menores víctimas y testigos. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1525",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Recepción de denuncias a menores de edad víctimas o testigos de delitos. Cuando el menor denuncie sin la presencia de sus representantes legales, los agentes que la reciban podrán poner la denuncia en conocimiento de aquellos, considerando el propio interés del menor, y también, si se aprecia una posible situación de desamparo, en conocimiento del:",
+  "opciones": [
+   "Fiscal.",
+   "Juez de Menores.",
+   "servicio de protección de menores.",
+   "equipo técnico."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Fiscal El 5.2.1.b de la Instrucción 1/2017 se dispone: \"y también, si se aprecia una posible situación de desamparo, en conocimiento del Fiscal\" . Si se aprecia desamparo se pone en conocimiento del Fiscal. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1528",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Exploración del menor y valoración de las necesidades de la víctima. Antes de recoger la declaración del menor víctima se realizarán actuaciones de preparación en las que corresponderá recabar la mayor información posible sobre el menor y el hecho delictivo, y, en la medida de lo posible, la declaración ha de ser realizada por:",
+  "opciones": [
+   "funcionarios de la unidad que practicó la detención.",
+   "funcionarios especializados en tratamiento policial a menores.",
+   "personal del equipo técnico.",
+   "psicólogos de la Oficina de Asistencia a las Víctimas, salvo que la autoridad judicial disponga otra cosa."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · funcionarios especializados en tratamiento policial a menores El 5.3.1.b de la Instrucción 1/2017 se dispone: \"dicha declaración ha de ser realizada por funcionarios especializados en tratamiento policial a menores\" . La declaración la realizan funcionarios especializados en tratamiento policial a menores. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1538",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Exploración del menor y valoración de las necesidades de la víctima. La entrevista de las víctimas menores de delitos contra la libertad o indemnidad sexual se realizará en dependencias adaptadas y por la misma persona, salvo que ello pueda perjudicar el desarrollo del proceso o se deba tomar directamente por:",
+  "opciones": [
+   "un equipo técnico.",
+   "psicólogos especializados.",
+   "la unidad de Policía Judicial.",
+   "un Juez o un Fiscal."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · un Juez o un Fiscal El 5.3.1.h de la Instrucción 1/2017 se dispone: \"salvo que ello pueda perjudicar el desarrollo del proceso o se deba tomar directamente por un Juez o un Fiscal\" . La excepción es que se deba tomar directamente por un Juez o un Fiscal. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1543",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Exploración del menor y valoración de las necesidades de la víctima. Se informará a los menores víctimas de su derecho a acceder, de forma gratuita y confidencial, a los servicios de las Oficinas de Asistencia a las Víctimas, y a ser derivado a dichas oficinas cuando resulte necesario en atención a la gravedad del delito o en aquellos casos en los que:",
+  "opciones": [
+   "lo solicite el Fiscal.",
+   "lo soliciten sus representantes legales.",
+   "el propio menor lo solicite.",
+   "se aprecie riesgo de desamparo."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · el propio menor lo solicite El 5.3.3 de la Instrucción 1/2017 se dispone: \"o en aquellos casos en los que el propio menor lo solicite\" . Se deriva también cuando el propio menor lo solicite. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1546",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Exploración del menor y valoración de las necesidades de la víctima. Señale la INCORRECTA sobre los casos en los que los agentes podrán elevar al Ministerio Fiscal la conveniencia de designar un defensor judicial de la víctima menor de edad:",
+  "opciones": [
+   "Cuando se valore que puede tener con los representantes un conflicto de intereses, derivado o no del hecho investigado.",
+   "Cuando exista un conflicto con uno de los progenitores y el otro no se encuentre en condiciones de ejercer adecuadamente sus funciones de representación y asistencia.",
+   "Cuando no esté acompañada o no se encuentre a quienes ejerzan la patria potestad o cargos tutelares.",
+   "Cuando la víctima menor de edad sea mayor de catorce años."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Cuando la víctima menor de edad sea mayor de catorce años El 5.3.7 de la Instrucción 1/2017 se dispone: \"Cuando se valore que puede tener con los mismos un conflicto de intereses, derivado o no del hecho investigado que no permita confiar en una gestión adecuada de sus intereses. b. Cuando exista un conflicto con uno de los progenitores\" . Los casos son conflicto de intereses, conflicto con un progenitor sin otro idóneo, y ausencia de quienes ejerzan la patria potestad; no la edad. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1604",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Menores infractores a la normativa de seguridad ciudadana. Al requerir la identidad de un menor y realizar un control superficial sobre sus efectos personales, se pondrá lo antes posible en conocimiento de quienes ejerzan la patria potestad, la tutela o la guarda de hecho siempre que de las circunstancias del entorno o de los hechos que originan la intervención pueda deducirse que:",
+  "opciones": [
+   "el menor ha cometido una infracción.",
+   "existe riesgo para el menor.",
+   "el menor porta sustancias prohibidas.",
+   "el menor se niega a identificarse."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · existe riesgo para el menor El 6.1.6 de la Instrucción 1/2017 se dispone: \"siempre que de las circunstancias del entorno o de los hechos que originan la intervención pueda deducirse que existe riesgo para el menor\" . Solo si puede deducirse que existe riesgo para el menor. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1605",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Menores infractores a la normativa de seguridad ciudadana. El registro corporal externo y superficial de los menores no detenidos podrá practicarse cuando existan indicios racionales suficientes para suponer que pueda conducir al hallazgo de instrumentos, efectos u otros objetos relevantes para el ejercicio de las funciones de:",
+  "opciones": [
+   "indagación y prevención que encomiendan las leyes a las Fuerzas y Cuerpos de Seguridad.",
+   "investigación y persecución que encomiendan las leyes a las Fuerzas y Cuerpos de Seguridad.",
+   "prevención y protección que encomiendan las leyes a las Fuerzas y Cuerpos de Seguridad.",
+   "control e inspección que encomiendan las leyes a las Fuerzas y Cuerpos de Seguridad."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · indagación y prevención que encomiendan las leyes a las Fuerzas y Cuerpos de Seguridad El 6.1.7 de la Instrucción 1/2017 se dispone: \"relevantes para el ejercicio de las funciones de indagación y prevención que encomiendan las leyes a las Fuerzas y Cuerpos de Seguridad\" . Las funciones son de indagación y prevención. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1627",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Actuación específica en casos de acoso escolar. El delito de stalking requiere denuncia previa del agraviado o de su representante legal, bastando en caso de menores o discapacitados:",
+  "opciones": [
+   "denuncia de la policía.",
+   "denuncia del centro escolar.",
+   "denuncia del Ministerio Fiscal.",
+   "denuncia de los servicios sociales."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · denuncia del Ministerio Fiscal El 7.2.3.c de la Instrucción 1/2017 se dispone: \"bastando en caso de menores o discapacitados denuncia del Ministerio Fiscal\" . En menores o discapacitados basta la denuncia del Ministerio Fiscal. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1632",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Menores en situación de riesgo o desamparo. Ante un menor en aparente situación de riesgo se prestará asistencia inmediata, se averiguarán las causas de su situación y se dará cuenta inmediata al Ministerio Fiscal y al servicio competente en materia de protección de menores, haciéndoles entrega del menor:",
+  "opciones": [
+   "en todo caso.",
+   "en los casos en que proceda o así lo disponga el Fiscal.",
+   "previa autorización del Juez.",
+   "cuando lo soliciten los padres, previo informe de la unidad policial competente."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · en los casos en que proceda o así lo disponga el Fiscal El 8.1.2 de la Instrucción 1/2017 se dispone: \"haciéndoles entrega del menor en los casos en que proceda o así lo disponga el Fiscal\" . La entrega es en los casos en que proceda o así lo disponga el Fiscal. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1634",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Menores en situación de riesgo o desamparo. A efectos de determinación de edad e identificación civil, se obtendrá la correspondiente reseña en aquellos casos de:",
+  "opciones": [
+   "menores extranjeros no acompañados, salvo que la autoridad judicial disponga otra cosa.",
+   "menores detenidos por delitos.",
+   "menores en situación de riesgo.",
+   "personas indocumentadas cuya minoría de edad no esté acreditada."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · personas indocumentadas cuya minoría de edad no esté acreditada El 8.1.4 de la Instrucción 1/2017 se dispone: \"se obtendrá la correspondiente reseña en aquellos casos de personas indocumentadas cuya minoría de edad no esté acreditada\" . Se reseña a personas indocumentadas cuya minoría de edad no esté acreditada. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1643",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Actuación con menores extranjeros no acompañados. Cuando la minoría de edad del menor extranjero sea indubitada, se realizarán las diligencias de reseña dactilar y cotejo del RMENA, procediendo a inscribirlo si no lo estuviera, y en cualquier caso se hará entrega inmediata del menor a:",
+  "opciones": [
+   "la Delegación o Subdelegación del Gobierno.",
+   "el Ministerio Fiscal.",
+   "la Entidad pública de protección de menores del lugar de localización.",
+   "la Brigada Provincial de Extranjería y Fronteras, en los términos que se determinen reglamentariamente."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · la Entidad pública de protección de menores del lugar de localización El 8.2.5 de la Instrucción 1/2017 se dispone: \"se hará entrega inmediata del menor a la Entidad pública de protección de menores del lugar de localización\" . Entrega inmediata a la Entidad pública de protección de menores del lugar de localización. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1645",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Actuación con menores extranjeros no acompañados. Una vez determinada la minoría de edad y puesto a disposición de los servicios de protección de menores de la Comunidad Autónoma, el órgano competente para los trámites relativos a la repatriación del menor extranjero no acompañado será:",
+  "opciones": [
+   "la Delegación y Subdelegación del Gobierno del territorio donde se halle el domicilio del menor.",
+   "la Entidad pública de protección de menores.",
+   "el Ministerio Fiscal.",
+   "la Brigada Provincial de Extranjería y Fronteras, sin perjuicio de lo previsto en la normativa vigente."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · la Delegación y Subdelegación del Gobierno del territorio donde se halle el domicilio del menor El 8.2.8 de la Instrucción 1/2017 se dispone: \"el órgano competente para llevar a cabo los trámites relativos a la repatriación del menor extranjero no acompañado será la Delegación y Subdelegación del Gobierno del territorio donde se halle el domicilio del menor\" . La competente es la Delegación y Subdelegación del Gobierno del domicilio del menor. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1646",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Actuación con menores extranjeros no acompañados. En caso de localización de un menor extranjero no acompañado al que le sea aplicable el régimen jurídico de la Unión Europea se pondrá en conocimiento inmediato de:",
+  "opciones": [
+   "la Delegación o Subdelegación del Gobierno.",
+   "el Consulado del Estado de que se trate.",
+   "la entidad pública de protección de menores, en los términos que se determinen reglamentariamente.",
+   "la correspondiente Brigada Provincial de Extranjería y Fronteras de la Policía Nacional."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · la correspondiente Brigada Provincial de Extranjería y Fronteras de la Policía Nacional El 8.2.12 de la Instrucción 1/2017 se dispone: \"se pondrá en conocimiento inmediato de la correspondiente Brigada Provincial de Extranjería y Fronteras de la Policía Nacional\" . Se pone en conocimiento inmediato de la Brigada Provincial de Extranjería y Fronteras. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1649",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Menores desaparecidos. La declaración provisional de la desaparición de un menor como de alto riesgo deberá ratificarse, a la mayor brevedad, por:",
+  "opciones": [
+   "la Unidad Central de Policía Judicial competente en cada Cuerpo policial.",
+   "el Centro Nacional de Desaparecidos, en los términos que se determinen reglamentariamente.",
+   "el Ministerio Fiscal.",
+   "la Unidad receptora de la denuncia."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · la Unidad Central de Policía Judicial competente en cada Cuerpo policial El 9.1.4 de la Instrucción 1/2017 se dispone: \"deberá ratificarse, a la mayor brevedad, por la Unidad Central de Policía Judicial competente en cada Cuerpo policial\" . La ratifica la Unidad Central de Policía Judicial competente de cada Cuerpo. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1653",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Menores desaparecidos. Localizado el menor desaparecido y puesto a salvo de situaciones de riesgo, será entregado, a la mayor brevedad, a la persona o entidad encargada de su guarda o custodia o, en su defecto, a:",
+  "opciones": [
+   "quien indique la Fiscalía.",
+   "quien indique el Juez de Menores.",
+   "la entidad pública de protección.",
+   "la autoridad reclamante."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · quien indique la Fiscalía El 9.2.1 de la Instrucción 1/2017 se dispone: \"o, en su defecto, a quién indique la Fiscalía\" . En su defecto, a quien indique la Fiscalía. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1658",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Registros policiales de datos personales de menores. Señale la INCORRECTA. En el Libro-Registro de actuaciones con Menores e Incapaces en Situaciones de Riesgo se anotarán las actuaciones policiales con:",
+  "opciones": [
+   "menores de edad inferior a catorce años presuntamente responsables de la comisión de infracciones penales.",
+   "menores de dieciocho años en situación de riesgo o desamparo, incluyendo los fugados del domicilio familiar o institucional y los desaparecidos por distintas causas.",
+   "personas con discapacidad intelectual necesitadas de especial protección, sean mayores o menores de edad.",
+   "menores de edad entre catorce y dieciocho años presuntamente responsables de infracciones penales."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · menores de edad entre catorce y dieciocho años presuntamente responsables de infracciones penales El 10.2.2 de la Instrucción 1/2017 se dispone: \"a. Menores de edad inferior a catorce años presuntamente responsables de la comisión de infracciones penales. b. Menores de dieciocho años en situación de riesgo o desamparo\" . Los de entre catorce y dieciocho años se anotan en el Libro-Registro de Menores Detenidos. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "17-ia-1661",
+  "pregunta": "Instrucción 1/2017, de la Secretaría de Estado de Seguridad, por la que se actualiza el \"Protocolo de actuación policial con menores\". Registros policiales de datos personales de menores. El Registro de Menores Extranjeros No Acompañados (RMENA) está ubicado en el subfichero de la aplicación ADEXTRA cuya titularidad corresponde a la Dirección General de la Policía, y su gestión a:",
+  "opciones": [
+   "la Comisaría General de Extranjería y Fronteras.",
+   "la Comisaría General de Policía Judicial.",
+   "la Secretaría de Estado de Seguridad.",
+   "la Brigada Provincial de Extranjería y Fronteras."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · la Comisaría General de Extranjería y Fronteras El 10.3.5 de la Instrucción 1/2017 se dispone: \"cuya titularidad corresponde a la Dirección General de la Policía, y su gestión a la Comisaría General de Extranjería y Fronteras\" . La titularidad es de la Dirección General de la Policía y la gestión de la Comisaría General de Extranjería y Fronteras. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ }
+]

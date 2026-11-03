@@ -1,0 +1,758 @@
+[
+ {
+  "id": "20-1",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Podrán promover y sostener competencia: Señale la opción incorrecta.",
+  "opciones": [
+   "Los Jueces municipales en cualquier estado del juicio, y las partes desde la citación hasta el acto de la comparecencia.",
+   "El Ministerio Fiscal en cualquier estado de la causa.",
+   "Los Jueces de Instrucción en cualquier estado de la causa.",
+   "Las Audiencias de lo criminal durante la sustanciación del juicio."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Las Audiencias de lo criminal durante la sustanciación del juicio. - Las Audiencias no pueden promover competencia durante la sustanciación del juicio.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-18",
+  "pregunta": "Ley de Enjuiciamiento Criminal. El procedimiento para delitos de terrorismo se caracteriza por:",
+  "opciones": [
+   "La competencia exclusiva de la Audiencia Nacional",
+   "La posibilidad de prisión provisional por hasta cuatro años",
+   "La intervención judicial inmediata de todos los actos de investigación",
+   "Todas las anteriores son correctas"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · La competencia exclusiva de la Audiencia Nacional - Los delitos de terrorismo son competencia de la Audiencia Nacional.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-19",
+  "pregunta": "Ley de Enjuiciamiento Criminal. El auto de apertura del juicio oral debe contener:",
+  "opciones": [
+   "La calificación jurídica provisional del hecho",
+   "La relación de pruebas propuestas y admitidas",
+   "La citación para la vista oral",
+   "Todas las anteriores"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas las anteriores - El auto de apertura debe contener todos estos extremos.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-20",
+  "pregunta": "Ley de Enjuiciamiento Criminal. La recusación de un juez por causa de parentesco se podrá interponer:",
+  "opciones": [
+   "En cualquier estado del proceso",
+   "Solo antes de comenzar la audiencia",
+   "Dentro de los cinco días siguientes al conocimiento de la causa",
+   "Solo durante la fase de instrucción"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · En cualquier estado del proceso La recusación por parentesco puede interponerse en cualquier estado del proceso. TEST 2 Listado de Preguntas y Respuestas",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-21",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De la detención. El auto elevando la detención a prisión o dejándola sin efecto, se pondrá en conocimiento de:",
+  "opciones": [
+   "El Ministerio Fiscal.",
+   "El gobernador particular, si lo hubiera.",
+   "El gobernador social.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas las opciones son correctas. Según la LECrim, el auto que convierte la detención en prisión preventiva o la deja sin efecto debe comunicarse al Ministerio Fiscal, al gobernador particular (si existe) y al gobernador social.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-22",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Interceptación de las comunicaciones telefónicas y telemáticas. La autorización judicial será dictada con plena sujeción a alguno de los siguientes principios:",
+  "opciones": [
+   "Congruencia.",
+   "Secreto judicial.",
+   "Identidad.",
+   "Oportunidad."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Secreto judicial. La autorización judicial para la interceptación de comunicaciones debe dictarse con sujeción al principio de secreto judicial para proteger la eficacia de la investigación.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-23",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Del registro de libros y papeles. Los libros y papeles que se recojan serán follados, sellados y rubricados en todas sus hojas por:",
+  "opciones": [
+   "Los agentes de policía judicial que participen en el registro.",
+   "Por el representante del Ministerio Fiscal.",
+   "Las opciones A y B son correctas.",
+   "Ninguna opción es correcta."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Las opciones A y B son correctas. Según la LECrim, los libros y papeles incautados deben ser foliados, sellados y rubricados por los agentes de policía judicial que intervengan en el registro y por el representante del Ministerio Fiscal.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-27",
+  "pregunta": "Ley de Enjuiciamiento Criminal. A la querella se acompañará la certificación que acredite haberse celebrado o intentado el acto de conciliación entre querellante y querellado excepto:",
+  "opciones": [
+   "En delito de violación.",
+   "En delitos de robo.",
+   "En delitos perseguibles solo a instancia de parte.",
+   "Las opciones A y B son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Las opciones A y B son correctas. No se requiere acto de conciliación previo en delitos como violación y robo, según la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-29",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Cualquier persona puede detener:",
+  "opciones": [
+   "Al que estuviere procesado por delito que tenga señalada en el Código pena inferior a la de prisión correccional.",
+   "Al que estuviere procesado por delito que tenga señalada en el Código pena superior a la de prisión correccional.",
+   "Al que se fugare mientras estuviere esperando su extradición al extranjero.",
+   "Las opciones B y C son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Las opciones B y C son correctas. La LECrim permite la detención por cualquier persona de procesados por delitos con pena superior a prisión correccional y de fugados pendientes de extradición.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-31",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Las víctimas del delito que no hubieran renunciado a su derecho podrán ejercer la acción penal:",
+  "opciones": [
+   "En cualquier momento antes de la finalización de la fase de instrucción.",
+   "En cualquier momento antes de la apertura de la fase oral.",
+   "En cualquier momento antes del término de calificación del delito.",
+   "En cualquier momento antes de que se dicte sentencia firme."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · En cualquier momento antes de la finalización de la fase de instrucción. Las víctimas pueden ejercer la acción penal en cualquier momento antes de que finalice la fase de instrucción.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-33",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Constituirán la Policía Judicial y serán auxiliares de los Jueces y Tribunales competentes en materia penal y del Ministerio Fiscal, quedando obligados a seguir las instrucciones que de aquellas autoridades reciban a efectos de la investigación de los delitos y persecución de los delincuentes:",
+  "opciones": [
+   "Los directores de seguridad privada.",
+   "Los jefes de seguridad privada.",
+   "Los vigilantes de seguridad.",
+   "Los Colaboradores."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Los vigilantes de seguridad. Los vigilantes de seguridad forman parte de la Policía Judicial como auxiliares de jueces y fiscales en la investigación penal.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-41",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Interceptación de las comunicaciones telefónicas y telemáticas. La duración máxima inicial de la intervención, que se computará desde la fecha de autorización judicial, será de:",
+  "opciones": [
+   "Quince días.",
+   "Un mes.",
+   "Dos meses.",
+   "Ninguna opción es correcta."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Un mes. La duración máxima inicial de la interceptación de comunicaciones es de un mes, según establece la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-44",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Detención por parte de particulares:",
+  "opciones": [
+   "Tiene la obligación de detener al que intentase cometer un delito.",
+   "Tiene la obligación de detener al delincuente \"in fraganti\".",
+   "Tiene derecho a detener al que se fugare el ser conducido a la cárcel.",
+   "Tiene la obligación de detener al que se fugare estando condenado o preso por causa pendiente."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Tiene la obligación de detener al delincuente &quot;in fraganti&quot;. Los particulares tienen obligación de detener al delincuente &quot;in fraganti&quot; según la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-45",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Se reputarán edificios o lugares públicos: indique la proposición INCORRECTA:",
+  "opciones": [
+   "Los Palacios Reales no habitados por el Monarca.",
+   "Los que estuvieren destinados a cualquier establecimiento de recreo.",
+   "Bosques de Estado.",
+   "Edificios o lugares cerrados que no constituyan domicilio."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Edificios o lugares cerrados que no constituyan domicilio. Los edificios o lugares cerrados que no constituyan domicilio NO se consideran lugares públicos a efectos de registro según la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-49",
+  "pregunta": "Ley de Enjuiciamiento Criminal. El Juez instructor visitará, sin previo aviso ni día determinado, las prisiones de la localidad donde no existan la Audiencia:",
+  "opciones": [
+   "Una vez por semana.",
+   "La opción A acompañado de un individuo del Ministerio Fiscal.",
+   "Las opción B acompañados del Presidente del Tribunal y un Magistrado.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas las opciones son correctas. Todas las opciones son correctas respecto a las visitas de inspección a prisiones por parte del Juez instructor.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-50",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Interceptación de las comunicaciones telefónicas y telemáticas. El principio de idoneidad:",
+  "opciones": [
+   "Exige que una medida esté relacionada con la investigación de un hecho concreto.",
+   "Sirve para definir el alcance objetivo y espacial y la duración de la medida en virtud de su utilidad.",
+   "Hace referencia a cuando no existan en disposición de la investigación, en atención a sus características, otras medidas menos graves para los derechos fundamentales del investigado.",
+   "Hace referencia a cuando el descubrimiento o la comprobación del hecho investigado, la determinación de su autor o autores, la averiguación de su paradero o la localización de los efectos del delito se vea gravemente dificultada sin el recurso a esta medida."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Exige que una medida esté relacionada con la investigación de un hecho concreto. El principio de idoneidad exige que la medida de interceptación esté relacionada con la investigación de un hecho concreto.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-57",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Prestará fianza de la clase y en la cuantía que fijare el Juez o Tribunal para responder de las resultas del juicio:",
+  "opciones": [
+   "El Ministerio Fiscal.",
+   "El particular acusador.",
+   "El particular querellado.",
+   "El acusador y el querellado."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · El acusador y el querellado. Tanto el acusador como el querellado pueden verse obligados a prestar fianza para responder de las resultas del juicio según la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-71",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De las cuestiones de competencia entre los jueces y tribunales ordinarios. Recibidas las diligencias en el Juzgado o Tribunal llamado a resolver la competencia y oído el Fiscal por término de segundo día, la decidirá dentro de los tres siguientes al en que el Ministerio Fiscal evacue el traslado. Contra lo resuelto por el Juzgado o Audiencia procederá:",
+  "opciones": [
+   "El recurso de revisión.",
+   "El recurso de apelación.",
+   "El recurso de casación.",
+   "No cabe recurso alguno."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · No cabe recurso alguno. Las resoluciones sobre competencia entre juzgados y tribunales ordinarios no son recurribles según la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-75",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Los delitos que no sean conexos pero hayan sido cometidos por la misma persona y tengan analogía o relación entre sí, cuando sean de la competencia del mismo órgano judicial, podrán ser enjuiciados en la misma causa, si la investigación y la prueba en conjunto de los hechos resultan convenientes para su esclarecimiento y para la determinación de las responsabilidades procedentes, salvo que suponga excesiva complejidad o dilación para el proceso:",
+  "opciones": [
+   "A instancia del procesado.",
+   "A instancia del Ministerio Fiscal.",
+   "A instancia del Juez de instrucción.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. La acumulación de delitos no conexos puede solicitarse por el procesado, el Ministerio Fiscal o el Juez de instrucción.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-76",
+  "pregunta": "Ley de Enjuiciamiento Criminal. El que presenciere la perpetración de cualquier delito público está obligado a ponerlo inmediatamente en conocimiento del Juez de Instrucción, de paz, comarcal o municipal, o funcionario fiscal más próximo al sitio en que se hallare: Señale la correcta.",
+  "opciones": [
+   "Sigue la multa de 25 a 250 pesetas.",
+   "Esta obligación no comprende a los impúberes.",
+   "Esta obligación no comprende a los que no gozaren del pleno uso de su razón.",
+   "Todas son correctas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Esta obligación no comprende a los que no gozaren del pleno uso de su razón. Quedan exentos de la obligación de denunciar quienes no gocen del pleno uso de su razón.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-78",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Disposiciones generales. De la competencia de los jueces y tribunales en lo criminal. De las reglas por donde se determina la competencia. La jurisdicción criminal es siempre:",
+  "opciones": [
+   "Improrrogable.",
+   "Indelegable.",
+   "A y B son correctas.",
+   "Ninguna es correcta."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · A y B son correctas. La jurisdicción criminal es tanto improrrogable como indelegable según la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-82",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Del procedimiento para el juicio sobre delitos leves. Para acordar la celebración inmediata del juicio, será necesario que el asunto le corresponda al Juzgado de guardia en virtud de las normas de:",
+  "opciones": [
+   "Competencia.",
+   "Turno.",
+   "A y B son correctas.",
+   "Ninguna es correcta."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · A y B son correctas. Para el juicio inmediato de delitos leves se requiere que corresponda al juzgado de guardia tanto por competencia como por turno.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-84",
+  "pregunta": "Según la Ley de Enjuiciamiento Criminal, se reputarán edificios o lugares públicos para la observancia de lo dispuesto en el capítulo referente a la entrada y registro en lugar cerrado:",
+  "opciones": [
+   "Los que estuvieren destinados a cualquier servicio oficial, militar o civil del Estado, de la provincia o del Municipio, aunque habiten allí los encargados de dicho servicio o los de la conservación y custodia del edificio o lugar.",
+   "Los que estuvieren destinados a cualquier establecimiento de reunión o recreo, abierto o no al público.",
+   "Los bosques del Estado.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. Todos estos lugares se consideran públicos a efectos de entrada y registro según la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-88",
+  "pregunta": "Ley de Enjuiciamiento Criminal. A los efectos señalados en esta ley, la asociación de dos o más personas para realizar, de forma permanente o reiterada, conductas que tengan como fin cometer un delito de secuestro tendrá la consideración de:",
+  "opciones": [
+   "Delincuencia organizada.",
+   "Banda criminal.",
+   "Organización criminal.",
+   "Todas son incorrectas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Organización criminal. Esta asociación tiene la consideración de organización criminal según la LECrim. TEST 6 Listado de Preguntas y Respuestas",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-89",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Podrán realizarse los efectos judiciales de lícito comercio, sin esperar al pronunciamiento o firmeza del fallo, y siempre que no se trate de piezas de convicción o que deban quedar a expensas del procedimiento, en cualquiera de los casos siguientes, entre otros:",
+  "opciones": [
+   "Cuando sean perecederos.",
+   "Cuando los gastos de conservación y depósito sean iguales o superiores al valor del objeto en sí.",
+   "Cuando no proceda legal abandono de ellos.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. Todos estos supuestos permiten la realización anticipada de efectos judiciales según la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-92",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Del procedimiento abreviado. Disposiciones generales. Señale la incorrecta.",
+  "opciones": [
+   "Contra las actuaciones del Juez de Instrucción y del Juez de lo Penal que no estén exceptuadas de recurso podrán ejercitarse el de reforma y el de apelación. Salvo que la Ley disponga otra cosa, los recursos de reforma y apelación suspenderán el curso del procedimiento.",
+   "Desde la detención o desde que de las actuaciones resultare la imputación de un delito contra persona determinada será necesaria la asistencia letrada. La Policía Judicial, el Ministerio Fiscal o la autoridad judicial recabarán de inmediato del Colegio de Abogados la designación de un abogado de oficio, si no lo hubiere nombrado ya el interesado.",
+   "El Juez o Tribunal podrá adoptar medidas cautelares para el aseguramiento de las responsabilidades pecuniarias, incluidas las costas. Tales medidas se acordarán mediante auto y se formalizarán en pieza separada.",
+   "El abogado designado para la defensa tendrá habilitación legal para la representación de su defendido, no siendo necesaria la intervención de procurador hasta el trámite de apertura del juicio oral."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · El abogado designado para la defensa tendrá habilitación legal para la representación de su defendido, no siendo necesaria la intervención … Es incorrecta porque la intervención del procurador sí es necesaria desde el inicio en el procedimiento abreviado.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-93",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De las reglas por donde se determina la competencia. Cuando no conste el lugar en que se haya cometido una falta o delito, serán Jueces y Tribunales competentes en su caso para conocer de la causa o juicio:",
+  "opciones": [
+   "1°: El del término municipal, partido o circunscripción, en que el reo haya sido aprehendido.",
+   "2°: El del territorio del otro reo.",
+   "3°: El del término municipal, partido o circunscripción en que se hayan descubierto pruebas materiales del delito.",
+   "4°: Cualquiera que hubiese tenido noticia del delito."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 1°: El del término municipal, partido o circunscripción, en que el reo haya sido aprehendido. El primer criterio para determinar la competencia cuando se desconoce el lugar del delito es el lugar donde el reo fue aprehendido.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-94",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Solicitud de autorización judicial. Cuando el Ministerio Fiscal o la Policía Judicial soliciten del juez de instrucción una medida de investigación tecnológica, la petición habrá de contener, entre otros: Señala la opción incorrecta.",
+  "opciones": [
+   "La forma de ejecución de la medida.",
+   "La descripción del hecho objeto de investigación y la identidad del investigado o de cualquier otro afectado por la medida.",
+   "La extensión de la medida con especificación de su contenido.",
+   "El sujeto obligado que llevará a cabo la medida, en caso de conocerse."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · La forma de ejecución de la medida. La forma de ejecución de la medida NO es uno de los requisitos que debe contener la solicitud de autorización para medidas de investigación tecnológica.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-98",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Del procedimiento para el juicio sobre delitos leves. En el caso de que por motivo justo no pueda celebrarse el juicio oral en el día señalado o de que no pueda concluirse en un solo acto, el Secretario judicial señalará para su celebración o continuación el día más inmediato posible y, en todo caso, dentro de:",
+  "opciones": [
+   "Los cinco días siguientes.",
+   "Los diez días siguientes.",
+   "Los quince días siguientes.",
+   "Ninguna es correcta."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Los cinco días siguientes. El juicio debe reanudarse dentro de los cinco días siguientes según la LECrim.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-102",
+  "pregunta": "Ley de Enjuiciamiento Criminal. La Policía Judicial acudirá de inmediato al lugar de los hechos y realizará las siguientes diligencias, entre otras: requerirá la presencia de cualquier facultativo o personal sanitario que fuere habido para prestar, si fuere necesario, los oportunos auxilios al ofendido. El requerido, aunque sólo lo fuera verbalmente, que no acuda sin causa que lo justifique será sancionado con una multa de 500 a 5.000 euros, sin perjuicio de la responsabilidad ______ en que hubiera podido incurrir.",
+  "opciones": [
+   "Civil",
+   "Penal",
+   "Disciplinaria",
+   "Administrativa"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Disciplinaria Además de la multa, el requerido podrá incurrir en responsabilidad disciplinaria según la LECrim. TEST 8",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-108",
+  "pregunta": "Real Decreto de 14 de Septiembre de 1882, por el que se aprueba la Ley de Enjuiciamiento Criminal. El Juez municipal requerido de inhibición, oyendo al Fiscal, resolverá:",
+  "opciones": [
+   "En término de tercer día a partir del requerimiento",
+   "En término de segundo día a partir del requerimiento",
+   "En término de último día a partir del requerimiento",
+   "En término de 24 horas remitiendo las diligencias practicadas al Juez requerente"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · En término de 24 horas remitiendo las diligencias practicadas al Juez requerente - El Juez municipal debe resolver en 24 horas remitiendo las diligencias.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-111",
+  "pregunta": "Real Decreto de 14 de Septiembre de 1882, aprobatorio de la Ley de Enjuiciamiento Criminal. Respecto de la acción penal, el que no goce de la plenitud de los derechos civiles: (señale la incorrecta)",
+  "opciones": [
+   "Podrá ejercitar la acción penal por delito o falta cometidos contra sus personas o bienes",
+   "Podrá ejercitar la acción penal por delito o falta cometidos contra los bienes de sus hermanos uterinos",
+   "Podrá ejercitar la acción penal por el delito o falta cometidos contra las personas o bienes de los que estuviesen bajo su guarda legal",
+   "Podrá ejercitar la acción penal por delito o falta cometidos contra los bienes de sus hermanos afines"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Podrá ejercitar la acción penal por delito o falta cometidos contra los bienes de sus hermanos afines - No existe legitimación para ejercitar acción penal por delitos contra bienes de hermanos afines.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-130",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De la competencia de los jueces y tribunales en lo criminal. Podrán promover y sostener competencia, entre otros.",
+  "opciones": [
+   "Los Jueces de instrucción durante el asumido.",
+   "Las Audiencias de lo criminal durante la sustanciación del juicio.",
+   "El Ministerio Fiscal en cualquier estado de la causa.",
+   "Todas son correctas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · El Ministerio Fiscal en cualquier estado de la causa. (El Ministerio Fiscal puede promover competencia en cualquier estado del proceso).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-131",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De la denuncia. De aquellos que presenciaren la perpetración de delito público, no estarán obligados a denunciar:",
+  "opciones": [
+   "Los que carecen del pleno uso de la razón.",
+   "Los ascendientes y descendientes del delincuente y sus parientes colaterales hasta el tercer grado incluido.",
+   "Los abogados ni los procesadores respecto de las instrucciones o explicaciones que recibieron de sus superiores.",
+   "Los impulsores."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Los ascendientes y descendientes del delincuente y sus parientes colaterales hasta el tercer grado incluido. (Los familiares del delincuente hasta tercer grado están exentos de la obligación de denunciar).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-132",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De las cuestiones de competencia entre los jueces y tribunales ordinarios. Señale la INCORRECTA:",
+  "opciones": [
+   "El Tribunal Supremo podrá formar y promover competencias.",
+   "Cuando algún Juez o Tribunal idóneo entendiendo en avance cuyo conocimiento estuviese reservado al Tribunal Supremo, ordenará éste a aquél, que se abstenga de todo procedimiento y remita los antecedentes en el término de seguida: día para, en su tama, resultará.",
+   "El Tribunal Supremo podrá, sin embargo, asustarse en la misma orden y entre tanto que resuelve la competencia, la continuación de aquellas diligencias, cuya urgencia o necesidad fuera manifestará.",
+   "Cerrará la decisión del Tribunal Supremo no es de incurso alguno."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Cerrará la decisión del Tribunal Supremo no es de incurso alguno. (La decisión del Tribunal Supremo sobre competencia sí es recurrible en algunos casos).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-133",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Disposiciones generales. De las cuestiones de competencias entre los jueces y tribunales ordinarios. Contra el auto en que se deniegue el requerimiento de inhibición, sólo habrá lugar al recurso de:",
+  "opciones": [
+   "Caracletín.",
+   "Ataxia.",
+   "Reposición.",
+   "Aplicación."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Reposición. (Contra el auto que deniegue la inhibición solo cabe recurso de reposición).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-134",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Registros remotos sobre equipos informáticos. Presupuestos. El juez competente podrá autorizar la utilización de datos de identificación y códigos, así como la instalación de un software, que permitan, de forma remota y telemática, el examen a distancia y sin conocimiento de su titular o usuario del contenido de un ordenador, dispositivo electrónico, sistema informático, instrumento de almacenamiento masivo de datos informáticos o base de datos, siempre que persiga la investigación de alguno de los siguientes delitos: señale la INCORRECTA.",
+  "opciones": [
+   "Delitos de terrorismo.",
+   "Delitos cometidos contra las personas y su patrimonio.",
+   "Delitos cometidos en el seno de organizaciones criminales.",
+   "Delitos cometidos contra personas con capacidad modificada judicialmente."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Delitos cometidos contra personas con capacidad modificada judicialmente. (Los delitos contra personas con capacidad modificada judicialmente no están entre los que permiten registro remoto).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-138",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De la destrucción y la realización anticipada de los efectos judiciales. ¿A quién le corresponde resolver, conforme a lo previsto legal y reglamentariamente, sobre la adjudicación del uso de los efectos decomisados cautelarmente y sobre las medidas de conservación que deban ser adoptadas?",
+  "opciones": [
+   "Al juez de instrucción.",
+   "Al Ministro Social.",
+   "Al Secretario Judicial.",
+   "A la Orden de Recuperación y Gestión de Activos."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Al Secretario Judicial. Art. 367 · Derecho Procesal Penal . El artículo 367 sexies.3 de la Ley de Enjuiciamiento Criminal, dentro del capítulo dedicado a la destrucción y realización anticipada de efectos judiciales, atribuye a la Oficina de Recuperación y Gestión de Activos la competencia para resolver, conforme a lo previsto legal y reglamentariamente, sobre la adjudicación del uso de los efectos decomisados cautelarmente y sobre las medidas de conservación que deban adoptarse, debiendo dicha Oficina informar de sus decisiones al juez o tribunal y al Ministerio Fiscal.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-141",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De las diligencias urgentes ante el juzgado de guardia. El Juez de guardia dictará resolución con alguno de estos contenidos:",
+  "opciones": [
+   "En el caso de que considere autónoma las diligencias practicadas, dictará auto en forma escrita.",
+   "En el caso de que considere insuficientes las diligencias practicadas, ordenará el sobreestimismo de la escasa a la espera que la Policía Judicial pueda aportar más precisos.",
+   "En el caso de que considere insuficientes las diligencias practicadas, ordenará que el procedimiento contiene como diligencias previas del procedimiento derivado.",
+   "Todas sus incorrectas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas sus incorrectas. Art. 798.2 · Del Sumario y la Instrucción . Conforme al artículo 798.2 de la Ley de Enjuiciamiento Criminal, el Juez de guardia, tras oír a las partes y al Ministerio Fiscal, debe dictar resolución con uno de dos contenidos posibles: si considera suficientes las diligencias practicadas, dictará auto en forma oral (que se documentará) ordenando continuar el procedimiento conforme al capítulo siguiente, o procederá al enjuiciamiento inmediato si el hecho resulta ser un delito leve; y si las considera insuficientes, ordenará que el procedimiento continúe como diligencias previas del procedimiento abreviado, señalando motivadamente qué diligencias resultan necesarias. Ninguna de las formulaciones alternativas propuestas coincide exactamente con este contenido legal, de ahí que todas resulten incorrectas.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-143",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Del ejercicio del derecho de defensa, de la asistencia de abogado y del tratamiento de los detenidos y presos. La detención preventiva no podrá durar más del tiempo estrictamente necesario para la realización de las averiguaciones tendentes al esclarecimiento de los hechos. Dentro de los plazos establecidos en la presente Ley, y, en todo caso, en el plazo máximo de el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial.",
+  "opciones": [
+   "Contenga y debe horas.",
+   "Verificamos horas.",
+   "Treinta y seis horas.",
+   "Seletora y dos horas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Treinta y seis horas. Art. 520.1 · De la Policía Judicial, la Detención y el Atestado . El artículo 520.1 de la Ley de Enjuiciamiento Criminal dispone que la detención preventiva no podrá durar más del tiempo estrictamente necesario para realizar las averiguaciones tendentes al esclarecimiento de los hechos y que, en todo caso, en el plazo máximo de setenta y dos horas, el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial. Este plazo constitucional de setenta y dos horas constituye el límite máximo absoluto de la detención gubernativa, debiendo el atestado reflejar la hora de la detención y de la puesta a disposición judicial o en libertad.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-149",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De las personas a quienes corresponde el ejercicio de las acciones que nacen de los delitos y faltas. No podrán ejercitar la acción penal: Señale la INCORRECTA.",
+  "opciones": [
+   "El Ejercito goce de la pérdida de los derechos civiles.",
+   "El Ejercito se hace sólo conformado con un recurso de forma como una definición de normas o criterios fundamentales.",
+   "El Juzgado se debe ser responsable por su acción.",
+   "Los ciudadanos extranjeros."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Los ciudadanos extranjeros. (Los ciudadanos extranjeros sí pueden ejercitar la acción penal en los mismos términos que los españoles, según el principio de igualdad).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-153",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Del procedimiento abreviado. Disposición generales. Señale la INCORRECTA:",
+  "opciones": [
+   "La operación de las cuestiones que se acuerden es huir en la forma prevista en la Ley de Enjuiciamiento Civil y podrá ser realizada por la entidad en que tenga asegurado la responsabilidad civil la persona contra quien es obliga la medida.",
+   "El Juez o Tribunal podrá adoptar medidas colectivas para el aseguramiento de las responsabilidades pecuniarias, incluidas las costas. Tener medidas se acordarán mediante auto y se formalizarán en pieza separada.",
+   "En los supuestos en que las responsabilidades civiles estén total o parcialmente cubiertas por un seguro obligatorio de responsabilidad civil, se requerirá a la entidad aseguradora o al Consorcio de Competencias de Seguros, en su caso, para que, hasta el inicio del seguro obligatorio, diuece aquellas.",
+   "Que se podrá acuerda la intervención, remediada del vehículo y la intervención del partido de descubierto del mismo, por el tiempo indispensable, cuando fuere necesario practicar alguna investigación en aquél, tal tampoco asegurar las responsabilidades pecuniarias, en tanto no conste sencillidad la solvencia del investigado o encauzado o del tercero responsable civil."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Que se podrá acuerda la intervención, remediada del vehículo y la intervención del partido de descubierto del mismo, por el tiempo indispen… (Esta opción contiene errores conceptuales y terminológicos sobre las medidas cautelares).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-154",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De la detención. Cualquier persona puede detener:",
+  "opciones": [
+   "Al que se figure de la cárcel en que estuviese esperando su traslación al establecimiento penal o lugar en que deba cumplir la condición que se le hubiese impactado por sentencia firme.",
+   "Al demuestre, sin fragorito.",
+   "Al que se figure del establecimiento penal en que se halle extinguiendo concierta.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. (Cualquier persona puede detener en casos de flagrante delito, evasión de establecimientos penitenciarios, etc.).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-155",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Constituirán la Policía Judicial y serán auxiliares de los Jueces y Tribunales competentes en materia penal y del Ministerio Fiscal, quedando obligados a seguir las instrucciones que de aquellas autoridades reciban a efectos de la investigación de los delitos y persecución de los delincuentes:",
+  "opciones": [
+   "1- Las autoridades administrativas encargadas de la seguridad pública y de la persecución de todos los delitos o de algunos especiales.",
+   "2- Los empleados o subalternos de la policía de seguridad, con denominación específica.",
+   "3- Los Subdelegados del Gobierno en las Comunidades Autónomas.",
+   "4- Los funcionarios del Cuerpo de Prisiones."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · 4- Los funcionarios del Cuerpo de Prisiones. (Los funcionarios de prisiones no forman parte de la Policía Judicial como auxiliares directos).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-158",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Durante la instrucción de las causas se podrá acordar alguna de las medidas de investigación reguladas en el presente capítulo siempre que medie autorización judicial dictada con plena sujeción a los principios de: Señale la INCORRECTA.",
+  "opciones": [
+   "Especialidad.",
+   "Secreto judicial.",
+   "Monetidad.",
+   "Desegedosatidad."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Monetidad. (&quot;Monetidad&quot; no es un principio aplicable a las medidas de investigación en el proceso penal).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-163",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De las reglas por donde se determina la competencia. Se consideran como primeras diligencias: Señale la INCORRECTA.",
+  "opciones": [
+   "La de contiguar las pruebas del delito que puedan desaparecer.",
+   "La de recoger y poner en cuanto a cuatro conductas a su comprobación y a la identificación del delincuente.",
+   "La de detener, en su caso, a los precursos responsables del delito.",
+   "La de proteger a los ofensivos o psíquicos por el mismo, a sus familiares o a otras personas, no podiendo necesitarse a tal efecto las medidas cualitativas a las que se refiere el artículo 54/Listo iba con el perecedor previsto en el artículo 54/Listo de esta Ley."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · La de proteger a los ofensivos o psíquicos por el mismo, a sus familiares o a otras personas, no podiendo necesitarse a tal efecto las medi… (Esta opción contiene errores terminológicos y conceptuales sobre las medidas de protección). TEST 13",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-172",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Del cuerpo del delito. Siendo habida la persona o cosa objeto del delito, el ______ describirá detalladamente su estado y circunstancias, y especialmente todas las que tuviesen relación con el hecho punible.",
+  "opciones": [
+   "Juez instructor.",
+   "Juez.",
+   "Secretario judicial.",
+   "Tribunal."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Secretario judicial. Art. 335 · De las Diligencias de Investigación . El artículo 335 de la Ley de Enjuiciamiento Criminal, dentro del capítulo dedicado al cuerpo del delito, establece que siendo habida la persona o cosa objeto del delito, el Secretario judicial describirá detalladamente su estado y circunstancias, especialmente las que guarden relación con el hecho punible, reclamando a las Administraciones correspondientes, en caso de falsificación de documentos oficiales, los que fueren necesarios para su reconocimiento pericial.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-173",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De la Policía Judicial. Los Jueces de instrucción y los Fiscales calificarán en un registro ______ el comportamiento de los funcionarios que bajo su inspección prestan servicios de Policía judicial.",
+  "opciones": [
+   "Secreto.",
+   "Confidencial.",
+   "Reservado.",
+   "Público."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Secreto. Art. 298 · De la Policía Judicial, la Detención y el Atestado . El artículo 298 de la Ley de Enjuiciamiento Criminal dispone que los Jueces de instrucción y los Fiscales calificarán en un registro reservado el comportamiento de los funcionarios que, bajo su inspección, prestan servicios de Policía Judicial, comunicando cada semestre a los superiores de cada uno de ellos la calificación razonada de dicho comportamiento a los efectos oportunos.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-181",
+  "pregunta": "Ley de Enjuiciamiento Criminal. De la querella: Señale la INCORRECTA.",
+  "opciones": [
+   "Si la querella tuviese por objeto algún delito de los que solamente pueden perseguirse a instancia de parte, excepto el de violación o rapto, acompañará también la certificación que acredite haberse celebrado o intentado el acto de conciliación entre querellante y querellado.",
+   "El particular querellante prestará fianza de la clase y en la cuantía que figure el Juez o Tribunal para responder de las resultas del juicio.",
+   "En los delitos de calumnia o injuria causadas en juicio se presentará además la licencia del Juez o Tribunal que hubiese conocido de aquél, con arreglo a lo dispuesto en la Ley de Enjuiciamiento Criminal.",
+   "La querella es interponida ante el Juez de Instrucción competente."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · El particular querellante prestará fianza de la clase y en la cuantía que figure el Juez o Tribunal para responder de las resultas del juicio. Art. 280 · Del Sumario y la Instrucción . El artículo 280 de la Ley de Enjuiciamiento Criminal establece que el particular querellante prestará fianza de la clase y en la cuantía que fijare el Juez o Tribunal para responder de las resultas del juicio, siendo por tanto el órgano judicial, y no el propio querellante, quien determina dicha cuantía; a ello se añaden los requisitos de los artículos 278 (certificación de conciliación en delitos perseguibles a instancia de parte, salvo violación o rapto), 279 (licencia judicial en calumnia o injuria causadas en juicio) y 272 (presentación ante el Juez de Instrucción competente).",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-184",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Del cuerpo del delito. El Médico forense residirá en la capital del Juzgado para que haya sido nombrado, y no podrá ausentarse del lugar de residencia por veinte días a lo más sin licencia de:",
+  "opciones": [
+   "El juez del juzgado a que pertenezca.",
+   "Del Presidente de la Audiencia de lo Criminal.",
+   "Del Ministerio Fiscal.",
+   "Del Ministerio del Interior."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El juez del juzgado a que pertenezca. (El médico forense necesita licencia del juez de su juzgado para ausentarse más de 20 días).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-185",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Contra el auto en que se deniegue el requerimiento de inhibición, sólo habrá lugar:",
+  "opciones": [
+   "Al recurso de apelación.",
+   "Al recurso de casación.",
+   "Al recurso de reposición.",
+   "Al recurso directo de revisión."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Al recurso de reposición. (Contra el auto que deniega la inhibición solo cabe recurso de reposición).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-190",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Principios rectores. El principio de especialidad:",
+  "opciones": [
+   "Exige que una medida esté relacionada con la investigación de un delito concreto.",
+   "Servirá para definir el ámbito objetivo y subjetivo y la duración de la medida en virtud de su utilidad.",
+   "Hace referencia a cuando no estén a disposición de la investigación, en atención a sus características, otras medidas menos graves para los derechos fundamentales del investigado.",
+   "Hace referencia a cuando el descubrimiento o la comprobación del hecho investigado, la determinación de su autor o autores, la averiguación de su paradero, o la localización de los efectos del delito se vea gravemente dificultada sin el recurso a esta medida."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Servirá para definir el ámbito objetivo y subjetivo y la duración de la medida en virtud de su utilidad. (El principio de especialidad define el ámbito y duración de la medida según su utilidad).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-210",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Podrán realizarse los efectos judiciales de lícito comercio, sin esperar al pronunciamiento o firmeza del fallo, y siempre que no se trate de piezas de convicción o que deban quedar a expensas del procedimiento, en cualquiera de los casos siguientes:",
+  "opciones": [
+   "Cuando su propietario haga lúcido abandono de ellos.",
+   "Cuando los gastos de conservación y depósito sean inferiores al valor del objeto en sí.",
+   "Cuando se trate de efectos que, sin arribe deterioro material, se deprecien sustancialmente por el transcurso del tiempo.",
+   "Cuando, debidamente requerido el propietario sobre el destino del efecto judicial, haga manifestación alguna."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Cuando los gastos de conservación y depósito sean inferiores al valor del objeto en sí. - Los gastos deben ser superiores, no inferiores.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "20-211",
+  "pregunta": "Ley de Enjuiciamiento Criminal. Presupuestos. Solo podrá autorizarse cuando concurran los requisitos siguientes: Que los hechos que estén siendo investigados sean constitutivos de alguno de los siguientes delitos: señale la INCORRECTA.",
+  "opciones": [
+   "Delitos dolosos castigados con pena con firme máximo de, al menos, dos años de prisión.",
+   "Delitos cometidos en el seno de un grupo u organización criminal.",
+   "Delitos de terrorismo.",
+   "Que podrá radicalmente preverse que la utilización de los dispositivos aportará datos esenciales y de relevancia probatoria para el esclarecimiento de los hechos y la identificación de su autor."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Que podrá radicalmente preverse que la utilización de los dispositivos aportará datos esenciales y de relevancia probatoria para el esclare… - Este no es un tipo de delito sino un requisito de utilidad de la medida.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ }
+]

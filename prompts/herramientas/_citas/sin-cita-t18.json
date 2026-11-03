@@ -1,0 +1,744 @@
+[
+ {
+  "id": "18-10",
+  "pregunta": "Código Penal. La provocación existe:",
+  "opciones": [
+   "Cuando se exponen a una o varias personas, ideas o doctrinas que ensalcen el crimen",
+   "Cuando directamente se incita a una o varias personas a perpetuar un hecho delictivo",
+   "Cuando directamente se incita por medio de la imprenta, la radiodifusión o cualquier otro medio de eficacia semejante, que facilite la publicidad o ante una concurrencia de personas, a la perpetración de un delito.",
+   "Cuando se exponen por medio de la imprenta, radiodifusión o medio semejante que facilite la publicidad o ante una concurrencia de personas, ideas o doctrinas que ensalcen el crimen"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Cuando directamente se incita por medio de la imprenta, la radiodifusión o cualquier otro medio de eficacia semejante, que facilite la publ… - La provocación requiere incitación directa mediante medios de publicidad.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-11",
+  "pregunta": "Código Penal. La exención de la responsabilidad criminal declarada en los números 1, 2, 3, 5, 6 y 8 del artículo 20, no comprende la de la responsabilidad civil, de la que serán responsables:",
+  "opciones": [
+   "En el caso del que obre impulsado por miedo insuperable, exclusivamente los que hayan causado el miedo.",
+   "En el caso del que obre impulsado por miedo insuperable, exclusivamente los que hayan ejecutado el hecho.",
+   "En el caso del que obre impulsado por miedo insuperable, responderán principalmente los que hayan causado el miedo, y a defecto de ellos, los que hayan ejecutado el hecho.",
+   "En el caso del que obre impulsado por miedo insuperable, responderán principalmente los que hayan ejecutado el hecho, y a defecto de ellos, los que hayan causado el miedo."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · En el caso del que obre impulsado por miedo insuperable, responderán principalmente los que hayan causado el miedo, y a defecto de ellos, l… - Responden principalmente los causantes del miedo, y subsidiariamente los ejecutores.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-15",
+  "pregunta": "Código Penal. De la responsabilidad civil derivada de los delitos y de las costas procesales. De la responsabilidad civil y su extensión. La responsabilidad civil comprenderá:",
+  "opciones": [
+   "La indemnización por los daños psicológicos.",
+   "La fianza.",
+   "La reparación del daño.",
+   "Todas son correctas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · La reparación del daño. - La responsabilidad civil comprende principalmente la reparación del daño causado.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-16",
+  "pregunta": "Código Penal. De las medidas de seguridad. Señale la CORRECTA:",
+  "opciones": [
+   "En el caso de concurrencia de penas y medidas de seguridad privativas de libertad, el juez o tribunal ordenará el incumplimiento de la medida.",
+   "En el caso de concurrencia de penas y medidas de seguridad privativas de libertad, el juez o tribunal ordenará el cumplimiento de la medida, que no se abonará para el de la pena.",
+   "En el caso de concurrencia de penas y medidas de seguridad privativas de libertad, el juez o tribunal ordenará el cumplimiento de la medida, que se abonará para el de la pena.",
+   "Todas son incorrectas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · En el caso de concurrencia de penas y medidas de seguridad privativas de libertad, el juez o tribunal ordenará el cumplimiento de la medida… - El tiempo de cumplimiento de la medida de seguridad se abona para el cómputo de la pena.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-19",
+  "pregunta": "Código Penal. Están exentos de responsabilidad criminal: señale la INCORRECTA.",
+  "opciones": [
+   "El que al tiempo de cometer la infracción penal, a causa de cualquier anomalía o alteración psíquica, no pueda comprender la ilicitud del hecho o actuar conforme a esa comprensión.",
+   "El que, en estado de necesidad, haya causado un mal mayor o ajeno para evitar un mal propio o ajeno, siempre que la situación de necesidad haya sido provocada intencionalmente por el sujeto.",
+   "El que, por sufrir alteraciones en la percepción desde el nacimiento o desde la infancia, tenga alterada gravemente la conciencia de la realidad.",
+   "El que obre en cumplimiento de un deber o en el ejercicio legítimo de un derecho, oficio o cargo."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · El que, en estado de necesidad, haya causado un mal mayor o ajeno para evitar un mal propio o ajeno, siempre que la situación de necesidad … - No existe exención cuando el sujeto ha provocado intencionalmente el estado de necesidad.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-20",
+  "pregunta": "Código Penal. Será calificada, como pena menos grave, la prohibición de aproximarse a la víctima o a aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo de:",
+  "opciones": [
+   "Hasta seis meses.",
+   "Hasta un año.",
+   "De uno a cinco años.",
+   "De seis meses a tres años."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · De uno a cinco años. - La prohibición de aproximación de 1 a 5 años se considera pena menos grave.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-22",
+  "pregunta": "Código Penal. La responsabilidad criminal se extingue, entre otros:",
+  "opciones": [
+   "Por la muerte del reo.",
+   "Por el cumplimiento de la condena.",
+   "Por la prescripción del delito.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. - Todas son causas de extinción de la responsabilidad criminal.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-23",
+  "pregunta": "Código Penal. No se reputarán penas: Señale la INCORRECTA.",
+  "opciones": [
+   "La localización permanente y la responsabilidad personal subsidiaria por impago de multa.",
+   "La detención y prisión preventiva y las demás medidas cautelares de naturaleza penal.",
+   "Las multas y demás correcciones que, en uso de potestades gubernativas o disciplinarias, se impongan a los subordinados o administrados.",
+   "Las privaciones de derechos y las sanciones reparadoras que establezcan las leyes civiles o administrativas."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · La localización permanente y la responsabilidad personal subsidiaria por impago de multa. - La localización permanente SÍ es una pena según el Código Penal.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-27",
+  "pregunta": "Código Penal. Se fundamentan en la peligrosidad criminal del sujeto al que se impongan, exteriorizada en la comisión de un hecho previsto como delito, las:",
+  "opciones": [
+   "Penas.",
+   "Medidas de seguridad.",
+   "Sanciones administrativas.",
+   "Multas."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Medidas de seguridad. - Las medidas de seguridad se fundamentan en la peligrosidad criminal del sujeto.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-31",
+  "pregunta": "Código Penal. De las medidas de seguridad. Las medidas de seguridad que se pueden imponer con arreglo a este Código son:",
+  "opciones": [
+   "Privativas y no privativas de libertad.",
+   "Privativas, no privativas de libertad y multa.",
+   "Privativas, no privativas de libertad y localización permanente.",
+   "Privativas, no privativas de libertad y la responsabilidad penal subsidiaria por impago de multas."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Privativas y no privativas de libertad. - Las medidas de seguridad pueden ser privativas o no privativas de libertad.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-37",
+  "pregunta": "Código Penal. Según establece el Código Penal, son delitos:",
+  "opciones": [
+   "Las acciones dolosas penadas por la ley",
+   "Las omisiones dolosas penadas por la ley",
+   "Las acciones imprudentes penadas por la ley",
+   "Todas son correctas"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas - El Código Penal considera delitos tanto acciones como omisiones, tanto dolosas como imprudentes, cuando están penadas por la ley.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-39",
+  "pregunta": "Código Penal. La responsabilidad criminal se extingue, entre otras: señale la INCORRECTA",
+  "opciones": [
+   "Por la prescripción del delito",
+   "Por la prescripción de la pena",
+   "Por la prescripción de la instrucción",
+   "Por la prescripción de la medida de seguridad"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Por la prescripción de la instrucción - No existe la &quot;prescripción de la instrucción&quot; como causa de extinción de la responsabilidad criminal.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-43",
+  "pregunta": "Código Penal. De los delitos. La exposición, ante una concurrencia de personas o por cualquier medio de difusión, de ideas o doctrinas que ensalcen el crimen o enaltezcan a su autor se considera:",
+  "opciones": [
+   "Comprensión",
+   "Apología",
+   "Redacción",
+   "Prosecución"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Apología - Se considera apología del delito.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-46",
+  "pregunta": "Código Penal. La libertad vigilada consistirá en el sometimiento del condenado a control judicial a través del cumplimiento por su parte de medidas como: Señale la CORRECTA",
+  "opciones": [
+   "La de comunicar inmediatamente, en el plazo máximo y por el medio que el Juez o Tribunal señale a tal efecto, cada cambio del lugar de residencia o del lugar o puesto de trabajo",
+   "La obligación de presentarse periódicamente en el lugar que el Juez o Tribunal establezca",
+   "La obligación de estar siempre localizable mediante aparatos electrónicos que permitan su seguimiento permanente",
+   "Todas son correctas"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas - Todas las medidas mencionadas son propias de la libertad vigilada.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-51",
+  "pregunta": "Código Penal. En materia de garantías penales y de la aplicación de la ley penal, señale la opción correcta",
+  "opciones": [
+   "No será castigada ninguna acción ni omisión que no esté prevista como delito por ley anterior a su perpetración",
+   "No será castigado ningún delito con pena que no se halle prevista por ley anterior a su perpetración. Carecerán, igualmente, de efectos retroactivos las leyes que establezcan medidas de seguridad",
+   "En caso de duda sobre la determinación de la Ley más favorable, será oído el reo",
+   "Todas son correctas"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas - Todas las afirmaciones son principios básicos de garantías penales.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-54",
+  "pregunta": "Código Penal. De las consecuencias accesorias. El juez o tribunal ordenará también el decomiso de los bienes, efectos y ganancias pertenecientes a una persona condenada por alguno de los siguientes delitos cuando resuelva, a partir de indicios objetivos fundados, que los bienes o efectos provienen de una actividad delictiva, y no se acredite su origen lícito: señale la INCORRECTA",
+  "opciones": [
+   "Delitos de falsificación de moneda",
+   "Delitos de cohecho",
+   "Delitos de prevaricación",
+   "Delitos de malversación"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Delitos de prevaricación - La prevaricación no está específicamente mencionada entre los delitos que permiten este tipo de decomiso.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-58",
+  "pregunta": "Código Penal. De las penas y sus clases. La privación del derecho a conducir vehículos a motor y ciclomotores de tres meses a un año es una pena calificada como",
+  "opciones": [
+   "Grave",
+   "Menos grave",
+   "Leve",
+   "Ninguna es correcta"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Leve - La privación del derecho a conducir de 3 meses a 1 año se considera pena leve.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-60",
+  "pregunta": "Código Penal. De los delitos. Cuando el que ha resuelto cometer un delito invita a otra u otras personas a participar en él, es una",
+  "opciones": [
+   "Complicidad",
+   "Proposición",
+   "Provocación",
+   "Todas son correctas"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Proposición - Se denomina proposición cuando alguien invita a otros a participar en un delito que ha resuelto cometer.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-61",
+  "pregunta": "Código Penal. El error sobre un hecho constitutivo de la infracción penal",
+  "opciones": [
+   "Será castigada, en su caso, como imprudente",
+   "Excluye la responsabilidad criminal",
+   "Será castigada, en su caso, como dolosa",
+   "Impedirá su apreciación"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Excluye la responsabilidad criminal - El error sobre un elemento constitutivo del tipo penal excluye la responsabilidad criminal.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-69",
+  "pregunta": "Código Penal. De los delitos. ¿Cuándo se castigan las acciones imprudentes?:",
+  "opciones": [
+   "Sólo se castigarán cuando sean delitos dolosos",
+   "Sólo se castigarán cuando expresamente lo disponga la Ley",
+   "Sólo se castigarán cuando la imprudencia sea considerada grave",
+   "Ninguna es correcta"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Sólo se castigarán cuando expresamente lo disponga la Ley - Las acciones imprudentes sólo se castigan cuando expresamente lo disponga la Ley.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-70",
+  "pregunta": "Código Penal. De las multas. La cuota diaria de las multas impuestas a las personas jurídicas tendrá un mínimo de 30 y un máximo de:",
+  "opciones": [
+   "3000 euros",
+   "6000 euros",
+   "2000 euros",
+   "5000 euros"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · 5000 euros - La cuota diaria para personas jurídicas va de 30 a 5000 euros.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-75",
+  "pregunta": "Código Penal. A los cómplices de un delito consumado se les impondrá:",
+  "opciones": [
+   "La pena inferior en su mitad inferior en todo caso",
+   "La pena inferior en dos grados a la señalada por la Ley para el delito consumado en todo caso",
+   "La pena inferior en un grado a la fijada por la Ley para el mismo delito",
+   "Todas son incorrectas"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · La pena inferior en un grado a la fijada por la Ley para el mismo delito - A los cómplices se les impone la pena inferior en un grado.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-79",
+  "pregunta": "Código Penal. De las consecuencias accesorias. El juez o tribunal ordenará también el decomiso de los bienes, efectos y ganancias pertenecientes a una persona condenada por alguno de los siguientes delitos cuando resuelva, a partir de indicios objetivos fundados, que los bienes o efectos provienen de una actividad delictiva, y no se acredite su origen lícito:",
+  "opciones": [
+   "Delitos de trata de seres humanos",
+   "Delitos de tráfico de órganos",
+   "Delitos contra el patrimonio y contra el orden socioeconómico en los supuestos de continuidad delictiva y reincidencia",
+   "Todas son correctas"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas - Todos estos delitos permiten el decomiso cuando no se acredite el origen lícito de los bienes.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-88",
+  "pregunta": "Código Penal. Infracción Penal. En relación al error:",
+  "opciones": [
+   "El error invencible sobre un hecho constitutivo de la infracción penal excluye la responsabilidad criminal",
+   "Si el error fuera vencible sobre un hecho constitutivo de la infracción penal, atendidas las circunstancias del hecho y las personales del autor, la infracción será castigada, en su caso, como imprudente",
+   "El error sobre un hecho que cualifique la infracción o sobre una circunstancia agravante, impedirá su apreciación",
+   "El error invencible sobre la ilicitud del hecho constitutivo de la infracción penal excluye la responsabilidad criminal"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El error invencible sobre un hecho constitutivo de la infracción penal excluye la responsabilidad criminal - El error invencible sobre un elemento del tipo excluye la responsabilidad criminal.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-89",
+  "pregunta": "Código Penal. De las penas privativas de libertad. Son penas privativas de libertad:",
+  "opciones": [
+   "La responsabilidad personal subsidiaria por impago de multa",
+   "La privación del derecho a la tenencia y porte de armas",
+   "La privación del derecho a residir en determinados lugares o acudir a ellos",
+   "La prisión permanente revisable"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · La prisión permanente revisable - La prisión permanente revisable es pena privativa de libertad.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-92",
+  "pregunta": "Código Penal. De la infracción penal. La provocación se castigará exclusivamente en los casos en que la Ley así lo prevea. Si a la provocación hubiese seguido la perpetración del delito, se castigará como:",
+  "opciones": [
+   "Proposición",
+   "Apología.",
+   "Conjugación",
+   "Ninguna es correcta"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Ninguna es correcta - La provocación seguida de perpetración se castiga como inducción.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-98",
+  "pregunta": "Código Penal. De las penas, sus clases y efectos. ¿En qué tipo de penas se incluyen las inhabilitaciones especiales por tiempo superior a cinco años?:",
+  "opciones": [
+   "Esta pena no está recogida en el Código Penal",
+   "Penas graves",
+   "Penas leves",
+   "Penas menos graves"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Penas graves - Las inhabilitaciones especiales superiores a 5 años son penas graves.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-101",
+  "pregunta": "Código Penal. De la responsabilidad civil y su extensión. La responsabilidad civil derivada de los delitos NO comprenderá:",
+  "opciones": [
+   "La restitución",
+   "La reparación del daño",
+   "La indemnización de perjuicios materiales y morales",
+   "La rehabilitación del derecho afectado"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · La rehabilitación del derecho afectado - La rehabilitación del derecho afectado no forma parte de la responsabilidad civil.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-103",
+  "pregunta": "Código Penal. Los modelos de organización y gestión que el órgano de administración haya adoptado y ejecutado con diligencia, antes de la comisión del delito, modelos de organización y gestión que incluyen las medidas de vigilancia y control idóneas para prevenir delitos de la misma naturaleza o para reducir de forma significativa el riesgo de su comisión; deberán cumplir los siguientes requisitos:",
+  "opciones": [
+   "Identificar las actividades en cuyo ámbito puedan ser cometidos los delitos que deben ser prevenidos",
+   "Establecer los protocolos o procedimientos que concreten el proceso de formación de la voluntad de la persona jurídica, de adopción de decisiones y de ejecución de las mismas con relación a aquéllos",
+   "Disponer de modelos de gestión de los recursos financieros adecuados para impedir la comisión de los delitos que deben ser prevenidos",
+   "Todas son correctas"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas - Todos son requisitos para los modelos de organización y gestión preventivos.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-112",
+  "pregunta": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal. Existe cuando el que ha resuelto cometer un delito invita a otra u otras personas a participar en él:",
+  "opciones": [
+   "La comparación.",
+   "La proposición.",
+   "La conspiración.",
+   "La apología."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · La proposición. (La proposición delictiva consiste en invitar a otros a participar en un delito).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-114",
+  "pregunta": "Código Penal. En el caso de error invencible sobre la ilicitud del hecho constitutivo de la infracción penal, ¿cuál es la consecuencia?",
+  "opciones": [
+   "Excluye la responsabilidad criminal.",
+   "Se considera una circunstancia atenuante.",
+   "Se aplica la pena superior en uno o dos grados.",
+   "Se aplica la pena correspondiente al delito imprudente."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Excluye la responsabilidad criminal. (El error invencible sobre la ilicitud excluye la responsabilidad criminal según el principio de culpabilidad).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-125",
+  "pregunta": "Código Penal. Si una persona comete un error sobre un hecho que cualifica la infracción o sobre una circunstancia agravante, ¿qué consecuencia tiene?",
+  "opciones": [
+   "La infracción se considera como cometida con dolo.",
+   "Se aplica la pena correspondiente al delito básico.",
+   "Impedirá su apreciación.",
+   "Se considera como una atenuante en la responsabilidad criminal."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Impedirá su apreciación. (El error sobre una circunstancia agravante impide su apreciación).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-127",
+  "pregunta": "Código Penal. De los delitos. Señale la CORRECTA.",
+  "opciones": [
+   "El error invencible sobre un hecho constitutivo de la infracción penal excluye la responsabilidad criminal.",
+   "El error sobre un hecho que cualifique la infracción o sobre una circunstancia agravante, impide su apreciación.",
+   "El error invencible sobre la ilicitud del hecho constitutivo de la infracción penal excluye la responsabilidad criminal.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. (Todas las afirmaciones sobre el error son correctas según la legislación penal).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-134",
+  "pregunta": "Código Penal. NO se reputarán penas: señale la INCORRECTA.",
+  "opciones": [
+   "La detención y prisión preventiva y las demás medidas cautelares de naturaleza penal.",
+   "Las multas de hasta tres meses.",
+   "Las privaciones de derechos que establezcan las leyes civiles o administrativas.",
+   "Las sanciones reparadoras que establezcan las leyes civiles o administrativas."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Las multas de hasta tres meses. (Las multas sí son penas, mientras que las otras opciones no se reputan penas).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-135",
+  "pregunta": "Código Penal. ¿Desde qué momento se inicia el cómputo del tiempo de prescripción de una medida de seguridad?",
+  "opciones": [
+   "Desde que se dicta la resolución.",
+   "Desde el día en que haya quedado firme la resolución en la que se impuso la medida o, en caso de cumplimiento sucesivo, desde que debió empezar a cumplirse.",
+   "Desde que se notifica la resolución.",
+   "Desde que se apela la resolución."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Desde el día en que haya quedado firme la resolución en la que se impuso la medida o, en caso de cumplimiento sucesivo, desde que debió emp… (La prescripción comienza desde que la resolución queda firme o desde que debió empezar el cumplimiento).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-140",
+  "pregunta": "Código Penal. ¿Cuál es el plazo necesario para que una persona condenada por un delito leve pueda solicitar la cancelación de sus antecedentes penales?",
+  "opciones": [
+   "Seis meses.",
+   "Un año.",
+   "Dos años.",
+   "Cinco años."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Seis meses. (Para delitos leves, el plazo de cancelación es de seis meses).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-141",
+  "pregunta": "Código Penal. ¿En qué casos se castigan la conspiración y la proposición para delinquir?",
+  "opciones": [
+   "En todos los casos de delitos menores y mayores.",
+   "Sólo cuando el delito ha sido consumado.",
+   "Únicamente en los casos que la ley no genera.",
+   "Sólo en los casos especialmente previstos en la ley."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Sólo en los casos especialmente previstos en la ley. (Solo se castigan cuando la ley los prevé expresamente para determinados delitos).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-150",
+  "pregunta": "Código Penal. NO son penas menos graves:",
+  "opciones": [
+   "La prisión de tres meses hasta cinco años.",
+   "Las penas que no sean graves ni leves.",
+   "Las penas de localización permanente de hasta cinco años.",
+   "Las penas de trabajos en beneficio de la comunidad de hasta 360 días."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · La prisión de tres meses hasta cinco años. (La prisión de tres meses a cinco años SÍ es pena menos grave, por lo que esta opción es incorrecta). TEST 11",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-151",
+  "pregunta": "Código Penal. De los delitos. ¿Cuál de las siguientes afirmaciones define correctamente la conspiración?:",
+  "opciones": [
+   "La conspiración se da cuando una persona planea un delito en solitario.",
+   "La conspiración existe cuando dos o más personas se conciertan para la ejecución de un delito y resuelven ejecutarlo.",
+   "La conspiración ocurre cuando una persona comete un delito sin ayuda.",
+   "La conspiración se castiga en todos los casos sin excepción."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · La conspiración existe cuando dos o más personas se conciertan para la ejecución de un delito y resuelven ejecutarlo. (La conspiración requiere el concierto de dos o más personas para ejecutar un delito).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-153",
+  "pregunta": "Código Penal. ¿Quiénes son considerados cómplices?:",
+  "opciones": [
+   "Los que realizan el hecho por sí solos.",
+   "Los que inducen directamente a otro a ejecutar el hecho.",
+   "Los que no siendo autores cooperan a la ejecución del hecho con actos anteriores o simultáneos.",
+   "Los que son testigos del hecho."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Los que no siendo autores cooperan a la ejecución del hecho con actos anteriores o simultáneos. (Los cómplices son quienes cooperan en la ejecución del delito sin ser autores).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-154",
+  "pregunta": "Código Penal. De los delitos. ¿Qué efecto tiene el error invencible sobre un hecho constitutivo de la infracción penal?:",
+  "opciones": [
+   "No tiene ningún efecto sobre la responsabilidad criminal.",
+   "Excluye la responsabilidad criminal.",
+   "La infracción se castiga como delito doloso.",
+   "La infracción se castiga con la pena máxima posible."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Excluye la responsabilidad criminal. (El error invencible sobre un hecho constitutivo excluye la responsabilidad criminal).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-155",
+  "pregunta": "Código Penal. De las personas criminalmente responsables de los delitos. Sólo podrán considerarse circunstancias atenuantes de la responsabilidad penal de las personas jurídicas haber realizado, con posterioridad a la comisión del delito y a través de sus representantes legales, las siguientes actividades:",
+  "opciones": [
+   "Haber procedido, antes de conocer que el procedimiento judicial se dirige contra ella, a confesar la infracción a las autoridades.",
+   "Haber procedido en cualquier momento del procedimiento y con anterioridad al juicio oral a reparar o disminuir el daño causado por el delito.",
+   "Haber colaborado en la investigación del hecho aportando pruebas, en cualquier momento del proceso, que fueran nuevas y decisivas para establecer las responsabilidades penales dimanantes de los hechos.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. (Todas estas actividades pueden considerarse circunstancias atenuantes para personas jurídicas).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-159",
+  "pregunta": "Código Penal. De las causas que extinguen la responsabilidad criminal. ¿Cuál es el plazo de prescripción para las medidas de seguridad privativas de libertad superiores a tres años?:",
+  "opciones": [
+   "A los 10 años.",
+   "A los 15 años.",
+   "A los 20 años.",
+   "Ninguna es correcta."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · A los 10 años. (Las medidas de seguridad privativas de libertad superiores a 3 años prescriben a los 10 años).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-162",
+  "pregunta": "Código Penal. La responsabilidad criminal NO se extingue:",
+  "opciones": [
+   "Por el perdón de la persona ofendida en todo caso.",
+   "Por la amnistía o el indulto.",
+   "Por el cumplimiento de la condena.",
+   "Por la prescripción de la pena."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Por el perdón de la persona ofendida en todo caso. (El perdón de la víctima no extingue la responsabilidad criminal en todos los casos, solo en algunos delitos).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-166",
+  "pregunta": "Código Penal. De las personas criminalmente responsables de los delitos. ¿Quiénes son responsables criminalmente de los delitos?",
+  "opciones": [
+   "Los autores.",
+   "Los cómplices.",
+   "Los testigos de los delitos.",
+   "A y B son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · A y B son correctas. (Autores y cómplices son responsables criminalmente de los delitos).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-167",
+  "pregunta": "Código Penal. De las consecuencias accesorias. ¿Qué medida puede tomar la autoridad judicial para garantizar la efectividad del decomiso desde las primeras diligencias?",
+  "opciones": [
+   "Aprehender o embargar los bienes y ponerlos en depósito.",
+   "Transferir la propiedad de los bienes al estado inmediatamente.",
+   "Realizar una auditoría financiera de los bienes.",
+   "Todas son correctas."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Aprehender o embargar los bienes y ponerlos en depósito. (Puede aprehender o embargar los bienes para garantizar el decomiso). TEST 12",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-171",
+  "pregunta": "Código penal. De los delitos. Si el error sobre la ilicitud del hecho fuera vencible:",
+  "opciones": [
+   "Se aplicará la pena menos grave.",
+   "Se aplicará la pena inferior en uno o dos grados.",
+   "Se excluye la responsabilidad criminal.",
+   "Se siguen las mismas consecuencias que si el error fuera invencible."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Se aplicará la pena inferior en uno o dos grados. (El error vencible sobre la ilicitud permite aplicar la pena inferior en uno o dos grados).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-173",
+  "pregunta": "Código Penal. De las penas y sus clases. Las penas que pueden imponerse con arreglo a este Código, bien con carácter principal bien como accesorias, son:",
+  "opciones": [
+   "Privativas de libertad.",
+   "Privativas de otros derechos.",
+   "Multas.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. (El Código Penal establece estos tres tipos de penas).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-174",
+  "pregunta": "Código penal. De las medidas no privativas de libertad. Si el juez acuerda la expulsión de un extranjero del territorio nacional como sustitutiva de las medidas de seguridad que le sean aplicables, este no podrá regresar a España en un plazo de:",
+  "opciones": [
+   "15 años.",
+   "5 años.",
+   "10 años.",
+   "20 años."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · 10 años. (El plazo de prohibición de regreso es de 10 años).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-176",
+  "pregunta": "Código penal. De los siguientes delitos, ¿cuáles no prescriben nunca?",
+  "opciones": [
+   "Los cometidos por organizaciones criminales.",
+   "Los delitos contra las personas y bienes protegidos en caso de conflicto armado.",
+   "Los delitos de terrorismo.",
+   "Los delitos de apropiación, siempre que hubiesen causado la muerte de una persona."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Los delitos contra las personas y bienes protegidos en caso de conflicto armado. (Los delitos de lesa humanidad y contra personas protegidas en conflictos armados no prescriben).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-178",
+  "pregunta": "Código penal. De las personas criminalmente responsables de los delitos. Señale la INCORRECTA:",
+  "opciones": [
+   "Son responsables criminalmente de los delitos los autores y los cómplices.",
+   "Son autores quienes realizan el hecho por sí solos, conjuntamente o por medio de otro del que se sirven como instrumento.",
+   "Serán considerados autores los que cooperen en la ejecución del delito.",
+   "Serán considerados autores los que induzcan directamente a otro u otros a ejecutarlo."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Serán considerados autores los que cooperen en la ejecución del delito. (Quienes cooperan en la ejecución son cómplices, no autores).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "18-236",
+  "pregunta": "Código Penal. La privación del derecho a la tenencia y porte de armas de un año y un día a ocho años, es una pena calificada como:",
+  "opciones": [
+   "Muy grave",
+   "Grave",
+   "Menos grave",
+   "Leve"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Grave Art. 33.2 · De las Penas . (Según el Artículo 33.2 del CP, las penas de esta duración para este derecho son graves).",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "18-245",
+  "pregunta": "Código Penal. Si la persona condenada lo fuera a pena de prisión y el Juez o Tribunal acordara la imposición de una o varias de dichas prohibiciones, lo hará por un tiempo superior entre uno y diez años al de la duración de la pena de prisión impuesta en la sentencia, si el delito fuera grave, y entre uno y cinco años, si fuera menos grave. En este supuesto, la pena de prisión y las prohibiciones antes citadas se cumplirán necesariamente por la persona condenada:",
+  "opciones": [
+   "Coordinadamente.",
+   "Ordenadamente.",
+   "Simultáneamente.",
+   "Predeterminadamente."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Simultáneamente. Art. 57.2 · De las Penas . (El Artículo 57.2 del CP establece que se cumplirán simultáneamente).",
+  "sinArticulo": false,
+  "sinLiteral": true
+ }
+]

@@ -1,0 +1,506 @@
+[
+ {
+  "id": "21-7",
+  "pregunta": "Ley Orgánica 2/1989, Procesal Militar. La detención de un militar en actividad, dispuesta por Autoridad Judicial de cualquier jurisdicción, miembros del Ministerio Fiscal, Autoridad gubernativa, funcionario o agente, se efectuará conforme dispone el ordenamiento común para la detención, en especial:",
+  "opciones": [
+   "Si no hace valer su condición de militar",
+   "Si no está de servicio en el momento de su detención",
+   "Si comete un delito de violencia de género",
+   "Si se trata de flagrante delito"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Si no hace valer su condición de militar (La detención se realiza según el ordenamiento común si el militar no hace valer su condición).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-24",
+  "pregunta": "Ley Orgánica 19/1994, de protección a testigos y peritos en causas criminales. En los ____ siguientes a la notificación a las partes de la identidad de los testigos, cualquiera de ellos podrá proponer nueva prueba tendente a acreditar alguna circunstancia que pueda influir en el valor probatorio de su testimonio.",
+  "opciones": [
+   "Dice días.",
+   "Cómo dije.",
+   "Quince días.",
+   "Siete días."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Quince días. - Quince días.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-34",
+  "pregunta": "Ley 25/2007, de 18 de octubre, de conservación de datos relativos a las comunicaciones electrónicas y a las redes públicas de comunicaciones. Disposiciones generales. Infracciones y sanciones. En todo caso, se deberá recabar informe preceptivo y determinante para la resolución del procedimiento sancionador del:",
+  "opciones": [
+   "Ministerio del Interior.",
+   "Presidente del Gobierno.",
+   "Secretario de Estado de Telecomunicaciones.",
+   "Todos son incorrectas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Secretario de Estado de Telecomunicaciones. - Secretario de Estado de Telecomunicaciones.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-41",
+  "pregunta": "Ley 23/2014, de 20 de noviembre, de reconocimiento mutuo de resoluciones penales en la Unión Europea. Cuando la orden europea de detención y entrega emitida tenga por finalidad el ejercicio de acciones penales, la toma de declaración de la persona reclamada se llevará a cabo por:",
+  "opciones": [
+   "La autoridad judicial de emisión",
+   "La autoridad judicial española",
+   "Las opciones A y B son correctas",
+   "Ninguna opción es correcta"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · La autoridad judicial española (La toma de declaración la realiza la autoridad judicial española, no la del Estado de emisión).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-43",
+  "pregunta": "Ley 23/2014, de 20 de noviembre, de reconocimiento mutuo de resoluciones penales en la Unión Europea. En el curso de la audiencia o de la vista, el Juez Central de Instrucción podrá decretar la prisión provisional. Contra esta resolución judicial:",
+  "opciones": [
+   "No cabrá recurso alguno",
+   "Cabrá recurso de apelación",
+   "Cabrá recurso de súplica",
+   "Cabrá recurso de reposición"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Cabrá recurso de reposición (Contra la resolución que decreta prisión provisional cabe recurso de reposición).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-48",
+  "pregunta": "Ley 23/2014, de 20 de noviembre, de reconocimiento mutuo de resoluciones penales en la Unión Europea. Si no es posible recurrir al Sistema de Información Schengen, la autoridad judicial española podrá recurrir para la comunicación de la orden europea de detención y entrega:",
+  "opciones": [
+   "A los servicios de Interpol",
+   "A los servicios de Europol",
+   "A los servicios de Eurojust",
+   "Las opciones B y C son correctas"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Las opciones B y C son correctas (Puede recurrirse a Europol o Eurojust como alternativas al Sistema de Información Schengen).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-49",
+  "pregunta": "Ley 23/2014, de 20 de noviembre, de reconocimiento mutuo de resoluciones penales en la Unión Europea. La audiencia de la persona detenida se celebrará en el plazo máximo de ______ desde la puesta a disposición, con asistencia del Ministerio Fiscal, del abogado de la persona detenida y, en su caso, de intérprete, debiendo realizarse conforme a lo previsto para la declaración del detenido por la Ley de Enjuiciamiento Criminal. Asimismo, se garantizará el derecho de defensa y, cuando legalmente proceda, la asistencia jurídica gratuita.",
+  "opciones": [
+   "Setenta y dos horas",
+   "Cuarenta y ocho horas",
+   "Veinticuatro horas",
+   "Doce horas"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Veinticuatro horas (La audiencia debe celebrarse en el plazo máximo de 24 horas desde la puesta a disposición).",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-54",
+  "pregunta": "Ley 23/2014, de 20 de noviembre, de reconocimiento mutuo de resoluciones penales en la Unión Europea. El Juez o Tribunal emisor español será el competente para adoptar decisiones ulteriores en relación con la resolución sobre medidas alternativas a la prisión provisional, en particular, será competente para decidir sobre: (indique la proposición INCORRECTA).",
+  "opciones": [
+   "La renovación de la resolución sobre medidas alternativas a la prisión provisional",
+   "La modificación de las medidas de vigilancia acordadas",
+   "La cancelación de las medidas de vigilancia acordadas",
+   "La emisión de una orden europea de detención y entrega"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · La emisión de una orden europea de detención y entrega (La emisión de una orden europea de detención y entrega NO es una decisión ulterior sobre medidas alternativas a la prisión provisional). TEST 4",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-60",
+  "pregunta": "Instrucción número 1/2024 de la Secretaría de Estado de Seguridad por la que se aprueba el \"procedimiento integral de la detención policial\". Esta instrucción, su anexo y apéndices, serán revisados:",
+  "opciones": [
+   "Coda dos años;",
+   "Auxiliarios;",
+   "Prediscrementes.",
+   "Todas son incorrectas."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Coda dos años; - Cada dos años.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-65",
+  "pregunta": "Ley Orgánica 19/1994, de 23 de diciembre, de Protección a testigos y peritos en causas criminales. ¿A instancias de qué organismo se brindará a los testigos y peritos, en su caso, protección policial?:",
+  "opciones": [
+   "El Ministerio Fiscal.",
+   "El Auer de la Penal.",
+   "El Auer de Instrucción.",
+   "La Policía Judicial."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · El Auer de Instrucción. - El Juez de Instrucción.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-69",
+  "pregunta": "Ley Orgánica 10/2007. Base de datos policial sobre identificadores obtenidos a partir del ADN. La conservación de los identificadores obtenidos a partir del ADN en la base de datos no superará:",
+  "opciones": [
+   "Los tres años.",
+   "Los diez años.",
+   "Los vientos días.",
+   "Ninguna opción es correcta."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Los diez años. - Los diez años según la LO 10/2007.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-75",
+  "pregunta": "Ley 4/1985 de Extradición pasiva. Señale la INCORRECTA.",
+  "opciones": [
+   "Si la resolución firme del Tribunal deniegue la extradición, dicha resolución será definitiva y no podrá concederse aquello.",
+   "La resolución del Tribunal declarando procedente la extradición será vinculante para el Gobierno.",
+   "Contra la acreditación del Gobierno no cabrá recurso alguno.",
+   "Gobierno podrá entregarla en el ejercicio de la soberanía nacional, atendiendo al principio de reciprocidad o a razones de seguridad."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Contra la acreditación del Gobierno no cabrá recurso alguno. - Contra la decisión del Gobierno sí cabe recurso.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-83",
+  "pregunta": "Ley 4/1985, de 21 de marzo, de extradición pasiva. No se concederá la extradición en los casos siguientes:",
+  "opciones": [
+   "Cuando el Estado requieren habían dado las garantías exigidas en el párrafo tercero del artículo segundo.",
+   "Cuando la persona reclamada deba ser juzgada por un Tribunal de excepción.",
+   "Cuando no se haya extinguido la responsabilidad criminal, conforme a la legislación española o la del Estado requierno.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas las opciones son correctas. La Ley 4/1985 establece varios supuestos de denegación obligatoria de la extradición pasiva, que incluyen los mencionados en las opciones a, b y c.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-86",
+  "pregunta": "Ley Orgánica 6/1984, de 24 de Mayo, reguladora del procedimiento de «habeas corpus». En el ámbito de la Jurisdicción Militar será competente para conocer de la solicitud de «Habeas Corpus»:",
+  "opciones": [
+   "El Juez Togado Militar de instrucción constituido en la cabecera de la circunscripción jurisdiccional en la que se efectuó la detención.",
+   "El Juez Central de Instrucción.",
+   "El Juez Togado Militar de instrucción constituido en la cabecera de la circunscripción jurisdiccional del lugar en que se encuentre la persona privada de libertad.",
+   "El Juez de Instrucción del lugar donde se produzca la detención."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · El Juez Togado Militar de instrucción constituido en la cabecera de la circunscripción jurisdiccional del lugar en que se encuentre la pers… La LO 6/1984 atribuye la competencia en el ámbito militar al Juez Togado Militar del lugar donde se encuentre la persona privada de libertad.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-95",
+  "pregunta": "Ley 4/1985, de 21 de marzo, de Extradición pasiva. Cumpliendo la solicitud de detención preventiva que se emita, se pondrá al detenido a disposición del juzgado competente en plazo no superior:",
+  "opciones": [
+   "A ocho horas.",
+   "A veinticuatro horas.",
+   "A cuarenta y ocho horas.",
+   "A setenta y dos horas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · A setenta y dos horas. La Ley 4/1985 establece un plazo máximo de 72 horas para poner al detenido a disposición judicial tras una detención preventiva con fines de extradición.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-97",
+  "pregunta": "Ley 4/1985, de 21 de marzo, de Extradición pasiva. Las resoluciones adoptadas por el Juez cuando el detenido se intenta oponer a la extradición, adoptarán la forma de auto, que se dictará dentro de las veinticuatro horas siguientes a la comparecencia y del que el Secretario judicial dará traslado inmediato al Ministerio de Justicia. Contra este auto sólo procederá el ______ por los trámites de la Ley de Enjuiciamiento Criminal.",
+  "opciones": [
+   "Recurso de Reforma.",
+   "Recurso de Reposición.",
+   "Recurso de Apelación.",
+   "Recurso de Aclaración."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Recurso de Apelación. Contra el auto que resuelve la oposición a la extradición solo cabe recurso de apelación, según lo previsto en la Ley 4/1985.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-99",
+  "pregunta": "Ley 25/2007, de 18 de Octubre, de conservación de datos relativos a las comunicaciones electrónicas y a las redes públicas de comunicaciones. La cesión de la información conservada de conformidad a lo dispuesto en esta ley a personas o entidades distintas de las autorizadas constituye una infracción:",
+  "opciones": [
+   "Leve.",
+   "Menos grave.",
+   "Grave.",
+   "Muy grave."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Muy grave. La cesión de datos a entidades no autorizadas está tipificada como una infracción muy grave en la Ley 25/2007.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-102",
+  "pregunta": "Ley 23/2014, De 20 De Noviembre, De Reconocimiento Mutuo De Resoluciones Penales En La Unión Europea. La autoridad judicial española, ante una orden europea de detención y entrega, podrá denegar su ejecución cuando:",
+  "opciones": [
+   "El hecho no constituya delito según el Derecho español.",
+   "Se trate de un delito fiscal.",
+   "La persona reclamada haya sido ya juzgada por el mismo hecho en otro Estado miembro.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas las opciones son correctas. La Ley 23/2014 prevé como causas de denegación la ausencia de tipicidad en España (principio de doble incriminación para ciertos delitos), los delitos fiscales en los casos no previstos y el non bis in ídem. TEST 8 He analizado las imágenes del",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-104",
+  "pregunta": "Ley Orgánica 6/1984 Reguladora del procedimiento de Habeas Corpus. Principios inspiradores del procedimiento de habeas corpus. ¿Qué principio es necesario para conseguir que la violación ilegal de la libertad de la persona sea reparada con la máxima celeridad, y que se consigue instituyendo un procedimiento judicial sumario?",
+  "opciones": [
+   "Aplicar.",
+   "Sencillez.",
+   "Universalidad.",
+   "Generalidad."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Sencillez. El principio de sencillez garantiza un procedimiento rápido y sin formalismos, esencial para la tutela urgente de la libertad personal.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-145",
+  "pregunta": "Ley 4/1985, de 21 de marzo, de Extradición Pasiva. ¿Qué recurso cabe contra el auto del Tribunal sobre la procedencia de la extradición?:",
+  "opciones": [
+   "Recurso de apelación.",
+   "Recurso de casación.",
+   "Recurso de amparo.",
+   "Recurso de oficio."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Recurso de apelación. Contra el auto que resuelve sobre la procedencia de la extradición solo cabe recurso de apelación.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-153",
+  "pregunta": "Instrucción Núm. 1/2024, de la Secretaría de Estado de Seguridad por la que se Aprueba el \"Procedimiento Integral de la Detención Policial\". ¿Cómo deben identificarse los miembros no uniformados de las FGSE al practicar una detención?:",
+  "opciones": [
+   "Identificándose claramente como tales.",
+   "Presentando una orden judicial.",
+   "Mostrando su placa de servicio.",
+   "Usando un distintivo especial."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Mostrando su placa de servicio. Los agentes no uniformados deben identificarse mostrando su placa de servicio, tal como establece la instrucción.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-166",
+  "pregunta": "Ley Orgánica 6/1984, de 24 de mayo, reguladora del procedimiento de «Habeas Corpus». ¿Qué característica del procedimiento de “Habeas Corpus” se manifiesta en la posibilidad de la comparecencia verbal y en la no necesidad de Abogado y Procurador?",
+  "opciones": [
+   "Universidad.",
+   "Agilidad.",
+   "Generalidad.",
+   "Sencillez y carencia de formulismos."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Sencillez y carencia de formulismos. Sencillez y carencia de formulismos. *Explicación: La naturaleza sumaria y no formalista del Habeas Corpus permite la comparecencia verbal y prescinde de la asistencia de Abogado y Procurador.*",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "21-169",
+  "pregunta": "Convenio de Viena de 24 de abril de 1963, sobre Relaciones Consulares. Los jefes de oficina consular serán de cuatro categorías: Señale la INCORRECTA.",
+  "opciones": [
+   "Cónsules generales.",
+   "Cónsules.",
+   "Vicecónsules.",
+   "Agentes consulares."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Agentes consulares. Agentes consulares. *Explicación: Las cuatro categorías de jefes de oficina consular son: cónsules generales, cónsules, vicecónsules y agentes consulares. Por lo tanto, todas las opciones listadas son correctas. Sin embargo, la pregunta pide señalar la INCORRECTA. Dado que &quot;Agentes consulares&quot; es una categoría válida, parece haber una discrepancia. Revisando el convenio, las categorías son: Cónsules generales, Cónsules, Vicecónsules y Procuradores consulares. La opción &quot;d&quot; en el test probablemente sea &quot;Agentes consulares&quot;, que no es el término correcto, por lo que es la incorrecta.*",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-170",
+  "pregunta": "Ley 11/2003, de 21 de mayo, reguladora de los equipos conjuntos de investigación penal en el ámbito de la Unión Europea. ¿Quién es responsable de solicitar la creación de un equipo conjunto de investigación o decidir sobre la participación española en equipos que vayan a crearse a instancias de otros Estados?",
+  "opciones": [
+   "La autoridad competente española.",
+   "El Ministerio de Justicia.",
+   "El Consejo de Ministros.",
+   "El Ministerio del Interior."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · El Ministerio del Interior. El Ministerio del Interior. *Explicación: La Ley 11/2003 atribuye al Ministerio del Interior la competencia para solicitar la creación o decidir la participación en equipos conjuntos de investigación.*",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-175",
+  "pregunta": "Ley 4/2015, de 27 de abril, del Estatuto de la Víctima del Delito. ¿Quiénes asegurarán la formación relativa a la protección de las víctimas en el proceso penal? Señale la INCORRECTA.",
+  "opciones": [
+   "El Ministerio de Justicia.",
+   "El Consejo General del Poder Judicial.",
+   "El Ministerio Fiscal.",
+   "Las Comunidades Autónomas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Las Comunidades Autónomas. Las Comunidades Autónomas no están mencionadas entre las entidades encargadas de asegurar esta formación en el Estatuto de la Víctima.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-178",
+  "pregunta": "Ley Orgánica 6/1984, de 24 de mayo, reguladora del Procedimiento de Habeas Corpus. ¿Qué aspecto de la generalidad del procedimiento de \"Habeas Corpus\" establecido por la ley no permite excepciones?",
+  "opciones": [
+   "La necesidad de un abogado para instar el procedimiento.",
+   "La exclusión de la Autoridad Militar del control judicial.",
+   "La legitimación del Ministerio Fiscal y del Defensor del Pueblo.",
+   "La posibilidad de comparecencia escrita."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · La legitimación del Ministerio Fiscal y del Defensor del Pueblo. La legitimación del Ministerio Fiscal y del Defensor del Pueblo es un aspecto general que no admite excepciones en el procedimiento de hábeas corpus.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "21-181",
+  "pregunta": "Ley 4/1985, de 21 de marzo, de Extradición Pasiva. Si el Gobierno acordare la continuación del procedimiento en vía judicial remitirá el expediente:",
+  "opciones": [
+   "Al Tribunal Supremo.",
+   "Al Ministerio del Interior.",
+   "Al Juzgado Central de Instrucción.",
+   "Al Ministerio de Justicia."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Al Tribunal Supremo. La Ley 4/1985 establece que el Gobierno remitirá el expediente al Tribunal Supremo para la continuación del procedimiento en vía judicial.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-185",
+  "pregunta": "Convenio de Viena de 24 de abril de 1963, sobre Relaciones Consulares. Protocolo de firma facultativa sobre adquisición de nacionalidad. ¿Dónde deben depositarse los instrumentos de ratificación del Protocolo de Firma Facultativa sobre Jurisdicción Obligatoria para la Solución de Controversias?",
+  "opciones": [
+   "En la Corte Internacional de Justicia.",
+   "En el Consejo de Seguridad de las Naciones Unidas.",
+   "En la Asamblea General de las Naciones Unidas.",
+   "En poder del Secretario General de las Naciones Unidas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · En poder del Secretario General de las Naciones Unidas. El Protocolo establece que los instrumentos de ratificación se depositarán en poder del Secretario General de las Naciones Unidas.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-188",
+  "pregunta": "Instrucción Núm. 1/2024, de la Secretaría de Estado de Seguridad por la que se Aprueba el \"Procedimiento Integral de la Detención Policial\". ¿Quién es responsable de la interpretación y evaluación de la ejecución de la instrucción?",
+  "opciones": [
+   "La Dirección General de la Policía.",
+   "La Dirección General de la Guardia Civil.",
+   "La Secretaría de Estado de Seguridad, a través de la Dirección General de Coordinación y Estudios.",
+   "Todas son incorrectas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · La Secretaría de Estado de Seguridad, a través de la Dirección General de Coordinación y Estudios. La Instrucción 1/2024 atribuye esta responsabilidad a la Secretaría de Estado de Seguridad, a través de la Dirección General de Coordinación y Estudios.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "21-191",
+  "pregunta": "Ley Orgánica 19/1994, de 23 de diciembre, de protección a testigos y peritos en causas criminales. Las medidas adoptadas podrán ser objeto de recurso de:",
+  "opciones": [
+   "Reposición.",
+   "Apelación.",
+   "Queja.",
+   "Suplicación."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Apelación. Apelación. *Explicación: La LO 19/1994 establece que las medidas de protección pueden ser recurridas en apelación ante la Audiencia Provincial.*",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-197",
+  "pregunta": "Ley 4/1985, de 21 de marzo, de Extradición Pasiva. ¿Qué acción debe realizar el Secretario judicial inmediatamente después de que sea firme la resolución denegatoria de la extradición?",
+  "opciones": [
+   "Librar testimonio de la misma al Ministerio de Justicia.",
+   "Comunicar al Ministerio de Asuntos Exteriores.",
+   "Ordenar la puesta en libertad de la persona requerida.",
+   "Solicitar la notificación a la representación diplomática."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Ordenar la puesta en libertad de la persona requerida. Ordenar la puesta en libertad de la persona requerida. *Explicación: Una vez firme la resolución denegatoria, el Secretario judicial debe ordenar la inmediata puesta en libertad de la persona reclamada.*",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-205",
+  "pregunta": "Ley 23/2014, de 20 de noviembre, de reconocimiento mutuo de resoluciones penales en la Unión Europea. Información específica sobre el curso de la ejecución de la Orden Europea de Investigación. ¿En qué plazo debe el Ministerio Fiscal acusar recibo de la orden europea de investigación?",
+  "opciones": [
+   "En un plazo máximo de 24 horas.",
+   "En un plazo máximo de 48 horas.",
+   "En un plazo máximo de 72 horas.",
+   "En un plazo máximo de una semana."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · En un plazo máximo de 24 horas. En un plazo máximo de 24 horas. *Explicación: La Ley 23/2014 establece que el Ministerio Fiscal debe acusar recibo de la orden europea de investigación en un plazo máximo de 24 horas.*",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-207",
+  "pregunta": "Convenio de Viena de 18 de abril de 1961, sobre Relaciones Diplomáticas. Se notificará al Ministerio de Relaciones Exteriores, o al Ministerio que se haya convenido, del Estado receptor: señale la INCORRECTA.",
+  "opciones": [
+   "El nombramiento de los miembros de la misión, su llegada y su salida temporal o la terminación de sus funciones en la misión.",
+   "La llegada y la salida definitiva de toda persona perteneciente a la familia de un miembro de la misión y, en su caso, el hecho de que determinada persona entre a formar parte o cese de ser miembro de la familia de un miembro de la misión.",
+   "La llegada y la salida definitiva de los criados particulares al servicio de las personas a que se refiere el inciso a, de este párrafo y, en su caso, el hecho de que cesen en el servicio de tales personas.",
+   "La contratación y el despido de personas residentes en el Estado receptor como miembros de la misión o criados particulares que tengan derecho a privilegios e inmunidades."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · La contratación y el despido de personas residentes en el Estado receptor como miembros de la misión o criados particulares que tengan dere… La contratación y el despido de personas residentes en el Estado receptor como miembros de la misión o criados particulares que tengan derecho a privilegios e inmunidades. *Explicación: El Convenio de Viena no exige notificación sobre la contratación y despido de personal local, por lo que esta opción es la incorrecta.*",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-211",
+  "pregunta": "Ley 23/2014, de 20 de noviembre, de reconocimiento mutuo de resoluciones penales en la Unión Europea. ¿Cuál es el plazo máximo que tiene la autoridad competente española para decidir sobre el reconocimiento y ejecución de una orden europea de investigación?",
+  "opciones": [
+   "15 días.",
+   "30 días.",
+   "45 días.",
+   "60 días."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · 45 días. La Ley 23/2014 establece un plazo máximo de 45 días para decidir sobre el reconocimiento y ejecución de una orden europea de investigación.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-215",
+  "pregunta": "Instrucción núm. 1 de 2004, de la Secretaría de Estado de Seguridad, por la que se aprueba el Procedimiento Integral de la Detención Policial. Los registros personales. Dicho registro personal se llevará a cabo, adoptando ______ para evitar el contagio de cualquier tipo de enfermedad.",
+  "opciones": [
+   "Las medidas posibilísticas necesarias.",
+   "Las medidas de protección necesarias.",
+   "Las medidas higiénicas necesarias.",
+   "Las medidas de contracción necesarias."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Las medidas de protección necesarias. La Instrucción 1/2004 establece que se adoptarán las medidas de protección necesarias para evitar contagios durante los registros personales.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "21-238",
+  "pregunta": "Instrucción núm. 1/2024 de la Secretaría de Estado de Seguridad por la que se aprueba el \"Procedimiento integral de la detención policial\". Debe entenderse la necesidad o no de recurrir a la coacción física en la detención, de acuerdo con los datos conocidos sobre la situación y el sujeto en cuestión por:",
+  "opciones": [
+   "Oportunidad.",
+   "Congruencia.",
+   "Proporcionalidad.",
+   "Activación."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Proporcionalidad. Proporcionalidad. *Explicación: El principio de proporcionalidad rige el uso de la coacción física durante la detención.*",
+  "sinArticulo": true,
+  "sinLiteral": true
+ }
+]

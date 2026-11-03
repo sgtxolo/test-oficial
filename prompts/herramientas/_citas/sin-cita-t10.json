@@ -1,0 +1,170 @@
+[
+ {
+  "id": "10-54",
+  "pregunta": "Código Civil. ¿Cómo se considera el matrimonio contraído por coacción o miedo grave?",
+  "opciones": [
+   "Anulable.",
+   "Legal.",
+   "Ilegal.",
+   "Nulo."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Nulo. Art. 73.5 · De las Personas . El artículo 73.5º del Código Civil califica de NULO, cualquiera que sea la forma de su celebración, el matrimonio contraído por coacción o miedo grave.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "10-61",
+  "pregunta": "Código Civil. ¿Cómo se considera el matrimonio celebrado sin consentimiento matrimonial?",
+  "opciones": [
+   "Anulable.",
+   "Legal.",
+   "Ilegal.",
+   "Nulo."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Nulo. Art. 73.1 · De las Personas . El artículo 73.1º del Código Civil califica de NULO, cualquiera que sea la forma de su celebración, el matrimonio celebrado sin consentimiento matrimonial.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "10-110",
+  "pregunta": "Código Civil. Del nombramiento del curador. ¿Quién no podrá ser curador?:",
+  "opciones": [
+   "Quienes hayan sido excluidos por la persona que precise apoyo.",
+   "Quienes hubieren sido legalmente removidos de una curatela o guarda anterior.",
+   "Quienes hubieren sido removidos de hecho de una tutela.",
+   "A y B son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · A y B son correctas. Art. 275.2 · De las Personas . El artículo 275.2 del Código Civil dispone que no podrán ser curadores quienes hayan sido excluidos por la persona que precise apoyo, ni quienes hubieren sido legalmente removidos de una tutela, curatela o guarda anterior, por lo que ambas causas de inhabilidad recogidas en las opciones A y B son correctas.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "10-118",
+  "pregunta": "Código Civil. De los efectos comunes a la nulidad, separación y divorcio. El convenio regulador deberá contener, al menos y siempre que fueran aplicables, los siguientes extremos:",
+  "opciones": [
+   "La atribución del uso de la vivienda y ajuar familiar.",
+   "La contribución a las cargas del matrimonio y alimentos, así como sus bases de actualización y garantías en su caso.",
+   "La liquidación, cuando proceda, del régimen económico del matrimonio.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. Art. 90.1 · De las Personas . El artículo 90.1 del Código Civil enumera entre el contenido mínimo del convenio regulador la atribución del uso de la vivienda y ajuar familiar, la contribución a las cargas del matrimonio y alimentos, y la liquidación del régimen económico matrimonial cuando proceda, por lo que las tres afirmaciones son correctas.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "10-135",
+  "pregunta": "Código Civil. Las funciones tutelares constituyen un deber, se ejercerán en beneficio del tutelado y estarán bajo la salvaguarda:",
+  "opciones": [
+   "De la entidad pública.",
+   "Del Ministerio Fiscal.",
+   "De la autoridad judicial.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. Art. 200 · De las Personas . El artículo 200, párrafo primero, del Código Civil dispone que las funciones tutelares constituyen un deber, se ejercerán en beneficio del tutelado y estarán bajo la salvaguarda de la autoridad judicial, sin perjuicio de la intervención de la entidad pública y del Ministerio Fiscal en el sistema de protección de menores, por lo que la respuesta comprende a todas ellas.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "10-170",
+  "pregunta": "Código Civil. ¿Cuándo no se acaba la patria potestad?",
+  "opciones": [
+   "Por la muerte o la declaración de fallecimiento de los padres o del hijo.",
+   "Por la huida o escondite por parte del hijo menor del domicilio familiar.",
+   "Por la emancipación.",
+   "Por la adopción del hijo."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Por la huida o escondite por parte del hijo menor del domicilio familiar. Art. 169 · De las Personas . La opción B es correcta porque el artículo 169 del Código Civil enumera como causas de extinción de la patria potestad la muerte o declaración de fallecimiento, la emancipación y la adopción del hijo, sin que la huida del menor del domicilio familiar figure entre ellas.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "10-175",
+  "pregunta": "Código Civil. ¿Cuál no es una fuente del ordenamiento jurídico español?",
+  "opciones": [
+   "La Ley.",
+   "Las sentencias del Tribunal Supremo.",
+   "La costumbre.",
+   "Los principios generales del derecho."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Las sentencias del Tribunal Supremo. TEST 10 He analizado las imágenes adjuntas, las cuales contienen una parte del &quot;TEST 10 - Tema 10 - Derecho Civil (ORO)&quot",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "10-216",
+  "pregunta": "Código Civil. La obligación de alimentos entre parientes cesará:",
+  "opciones": [
+   "Por la muerte del alimentista.",
+   "Por la reducción de la fortuna del obligado.",
+   "Cuando el alimentista pueda ejercer un oficio, profesión o industria.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. Art. 152 · Derecho Civil . La opción D es correcta porque el artículo 152 del Código Civil dispone que la obligación de alimentos entre parientes cesa por la muerte del alimentista, por la reducción de la fortuna del obligado y cuando el alimentista pueda ejercer un oficio, profesión o industria, entre otras causas.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "10-229",
+  "pregunta": "Código Civil. Son personas jurídicas reconocidas por la ley: señale la INCORRECTA.",
+  "opciones": [
+   "Las corporaciones.",
+   "Las asociaciones.",
+   "Las comunidades.",
+   "Las fundaciones."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Las comunidades. Art. 35 · De las Personas . La opción C es la incorrecta porque el artículo 35 del Código Civil reconoce como personas jurídicas las corporaciones, asociaciones y fundaciones de interés público reconocidas por la ley, sin incluir a las comunidades entre ellas.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "10-274",
+  "pregunta": "Código Civil. Del nombramiento del curador. Señale la INCORRECTA:",
+  "opciones": [
+   "La autoridad judicial, de oficio o a solicitud de la persona a cuyo favor se establezca el apoyo o del Ministerio Fiscal, cuando conocieren por sí o a través de cualquier interesado, de la existencia de una persona con discapacidad que precise apoyo.",
+   "También pueden solicitar la constitución de la curatela quienes estuvieran legitimados para ello conforme a lo dispuesto en la legislación procesal.",
+   "A falta de propuesta de curador por la persona que precisa el apoyo, la autoridad judicial podrá nombrar a cualquiera de las personas legitimadas para promover la curatela.",
+   "La autoridad judicial podrá dictar resolución motivada en el plazo máximo de tres meses."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · A falta de propuesta de curador por la persona que precisa el apoyo, la autoridad judicial podrá nombrar a cualquiera de las personas legit… TEST 15 Dado que todas las preguntas visibles en las imágenes pertenecen al &quot;Código Civil&quot; y están numeradas del 1 al 20 sin repetición aparente en su ordenación original (aunque no se muestran todas), se presentará el listado ordenado por el número de pregunta sin necesidad de especificar la normativa en cada caso, ya que es la misma para todas. Listado de Preguntas y Respuestas del Test de Derecho Civil",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "10-275",
+  "pregunta": "Código Civil. De las Personas. Señale la opción CORRECTA sobre los hijos:",
+  "opciones": [
+   "Están obligados a prestar alimentos a sus ascendientes.",
+   "Deben contribuir equitativamente, según sus posibilidades, al levantamiento de las cargas de la familia mientras convivan con ella.",
+   "Deben obedecer a sus padres mientras permanezcan bajo su potestad, y respetarles siempre.",
+   "Todas son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Todas son correctas. Art. 155 · Derecho Civil . La opción D es correcta porque el artículo 155 del Código Civil impone a los hijos, mientras convivan con la familia, el deber de obedecer a los padres y respetarles siempre, así como de contribuir equitativamente, según sus posibilidades, al levantamiento de las cargas familiares.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "10-277",
+  "pregunta": "Código Civil. De los españoles y extranjeros. Son españoles de origen: señale la INCORRECTA.",
+  "opciones": [
+   "Los nacidos de padre o madre españoles.",
+   "Los nacidos en España de padres extranjeros, si ambos carecieren de nacionalidad o si la legislación de ninguno de ellos atribuye al hijo una nacionalidad.",
+   "Los nacidos en España cuya filiación no resulte determinada.",
+   "Los que hayan ejercido el derecho de opción."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Los que hayan ejercido el derecho de opción. Art. 17 · De las Personas . La opción D es la incorrecta porque el artículo 17 del Código Civil reserva la condición de españoles de origen a los nacidos de español, a los nacidos en España en los supuestos que enumera y a los adoptados menores de dieciocho años, mientras que quienes ejercen el derecho de opción adquieren la nacionalidad española, pero no con la condición de origen, salvo los supuestos expresamente asimilados.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ }
+]

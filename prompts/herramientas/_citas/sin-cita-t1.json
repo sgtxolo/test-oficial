@@ -1,0 +1,1346 @@
+[
+ {
+  "id": "1-1",
+  "pregunta": "¿Qué órgano sustituyó en 2006 a la Comisión de Derechos Humanos, cuya labor supervisaba el Consejo Económico y Social, órgano principal de las Naciones Unidas establecido por la Carta de San Francisco de 1945?",
+  "opciones": [
+   "Alto Comisionado de las Naciones Unidas.",
+   "Consejo de Derechos Humanos.",
+   "Comité de Derechos Económicos y Sociales.",
+   "Tercera Comisión de la Asamblea General."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Consejo de Derechos Humanos Resolución 60/251 de la Asamblea General de la ONU (2006) . La Asamblea General creó el Consejo de Derechos Humanos, que sustituyó a la Comisión de Derechos Humanos, órgano que dependía del Consejo Económico y Social.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-2",
+  "pregunta": "Con el pretexto de evitar la guerra, la SDN le autorizó a Italia el bombardeo con gases tóxicos, a pesar de que este estaba prohibido por la Convención de Ginebra de 1925, a:",
+  "opciones": [
+   "Etiopía en 1935.",
+   "Libia en 1928.",
+   "Albania en 1939.",
+   "Todas las anteriores."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Etiopía en 1935. Protocolo de Ginebra de 1925 dispone: \"sobre la prohibición del empleo en la guerra de gases asfixiantes, tóxicos o similares y de medios bacteriológicos\" . Italia usó gases tóxicos contra Etiopía en 1935 y la SDN no lo impidió.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-3",
+  "pregunta": "¿Qué organismo internacional se considera, de forma general, como el precursor de las Naciones Unidas?",
+  "opciones": [
+   "La Corte Penal Internacional.",
+   "La Sociedad de Naciones (SDN).",
+   "La Organización Internacional del Trabajo.",
+   "El Tribunal de Arbitraje de La Haya."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · La Sociedad de Naciones (SDN). Historia de las Naciones Unidas . La Sociedad de Naciones (1919) es el precursor de la ONU; fue disuelta y sustituida en 1945.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-4",
+  "pregunta": "El primer antecedente directo del concepto moderno de Derechos Humanos es el:",
+  "opciones": [
+   "Código de Hammurabi.",
+   "Cilindro de Ciro.",
+   "Derecho de gentes (Ius Gentium).",
+   "Derecho de los ciudadanos romanos (Ius Civile)."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Cilindro de Ciro. esquema del Tema 1 (derechos humanos) dispone: \"Primer antecedente directo: Cilindro de Ciro\" . Es el primer antecedente directo del concepto moderno de derechos humanos.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-5",
+  "pregunta": "El primer documento moderno de defensa de los Derechos Humanos fue:",
+  "opciones": [
+   "El Habeas Corpus Amendment Act, de 1679.",
+   "La Petición de Derechos (Petition of Rights), de 1628.",
+   "La Carta Magna, de 1215.",
+   "El Bill of Rights, de 1689."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · La Carta Magna, de 1215. esquema del Tema 1 (derechos humanos) dispone: \"Primer documento moderno de defensa de los derechos humanos: Carta Magna de 1215\" . Limitó el poder absoluto del rey e inició las garantías individuales frente al poder.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-6",
+  "pregunta": "¿Cuál de las siguientes declaraciones de Derechos Humanos tuvo una mayor influencia en el movimiento de independencia latinoamericano y en el desarrollo de los Derechos Humanos en Europa?",
+  "opciones": [
+   "La Declaración de Derechos de Virginia (EE.UU).",
+   "La Declaración de Independencia de los EE.UU.",
+   "La Declaración de los Derechos del Hombre y del Ciudadano (Francia).",
+   "La Carta de Derechos de EE.UU. (Bill of Rights)."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · La Declaración de los Derechos del Hombre y del Ciudadano (Francia). esquema del Tema 1 (derechos humanos) dispone: \"Declaración de los Derechos del Hombre y del Ciudadano: Francia, 1789 (Revolución francesa)\" . Fue la que más influyó en la independencia latinoamericana y en los derechos humanos en Europa.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-7",
+  "pregunta": "¿En qué fecha fue firmada la Carta de las Naciones Unidas?",
+  "opciones": [
+   "26 de junio de 1945.",
+   "26 de agosto de 1945.",
+   "26 de octubre de 1945.",
+   "10 de diciembre de 1948."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 26 de junio de 1945. esquema del Tema 1 (derechos humanos) dispone: \"Carta de las Naciones Unidas: 26 de junio de 1945 (San Francisco)\" . Se firmó el 26 de junio de 1945, en San Francisco.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-10",
+  "pregunta": "¿A quién se le encomendó la primera redacción del proyecto de la Declaración Universal de Derechos Humanos?",
+  "opciones": [
+   "A un Comité de 18 miembros.",
+   "Al Departamento de Derechos Humanos de las Naciones Unidas.",
+   "A la Tercera Comisión de la Asamblea General.",
+   "A una Comisión de 8 miembros, dirigida por Eleanor Roosevelt."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · A un Comité de 18 miembros. esquema del Tema 1 (derechos humanos) . La redacción del primer borrador se encomendó a la Comisión de Derechos Humanos, formada por 18 miembros.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-11",
+  "pregunta": "La Declaración Universal de Derechos Humanos fue adoptada y proclamada por la Asamblea General en su resolución:",
+  "opciones": [
+   "217.",
+   "217 A (III).",
+   "17.",
+   "17 A (III)."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · 217 A (III). esquema del Tema 1 (derechos humanos) dispone: \"DUDH: 10 de diciembre de 1948 · resolución 217 A (III)\" . La Asamblea General la adoptó y proclamó mediante la resolución 217 A (III).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-12",
+  "pregunta": "¿En qué año fue adoptada la Declaración de los Derechos del Hombre y del Ciudadano?",
+  "opciones": [
+   "1789.",
+   "1776.",
+   "1791.",
+   "1804."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 1789. Declaración de los Derechos del Hombre y del Ciudadano de 1789 . Fue adoptada en 1789 por la Asamblea Nacional Constituyente francesa.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-13",
+  "pregunta": "La Declaración Universal de Derechos Humanos fue proclamada el:",
+  "opciones": [
+   "10 de diciembre de 1948.",
+   "24 de octubre de 1945.",
+   "26 de junio de 1945.",
+   "10 de diciembre de 1966."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 10 de diciembre de 1948. esquema del Tema 1 (derechos humanos) dispone: \"DUDH: 10 de diciembre de 1948 · resolución 217 A (III)\" . Fue proclamada en París el 10 de diciembre de 1948.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-14",
+  "pregunta": "El concepto de 'Derechos Humanos' surge en:",
+  "opciones": [
+   "El siglo XVIII.",
+   "El siglo XX.",
+   "El siglo XIX.",
+   "El siglo XVII."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · El siglo XIX. esquema del Tema 1 (derechos humanos) dispone: \"Siglo XIX: surge el concepto de «derechos humanos»\" . Los antecedentes son anteriores, pero el concepto aparece en el siglo XIX.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-15",
+  "pregunta": "Se puede definir la primera generación de Derechos Humanos, como:",
+  "opciones": [
+   "El derecho del hombre frente al Estado.",
+   "Los derechos de los pueblos.",
+   "Los derechos del individuo en sociedad.",
+   "Los derechos económicos, sociales y culturales."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El derecho del hombre frente al Estado. esquema del Tema 1 (derechos humanos) dispone: \"1.ª · derechos civiles y políticos: el derecho del hombre frente al Estado\" . Garantiza la libertad individual frente al poder del Estado.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-16",
+  "pregunta": "¿Qué documento es considerado como el primer instrumento internacional de Derechos Humanos?",
+  "opciones": [
+   "El Pacto Internacional de Derechos Civiles y Políticos.",
+   "El Pacto Internacional de Derechos Económicos, Sociales y Culturales.",
+   "La Declaración Universal de Derechos Humanos.",
+   "La Carta de las Naciones Unidas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · La Carta de las Naciones Unidas. Carta de las Naciones Unidas . Es el primer tratado internacional de ámbito global que incorpora la promoción de los derechos humanos entre sus fines, antes que la DUDH de 1948.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-17",
+  "pregunta": "¿Qué documentos conforman la llamada 'Carta Internacional de Derechos Humanos'?",
+  "opciones": [
+   "La Declaración Universal de Derechos Humanos, el Pacto Internacional de Derechos Civiles y Políticos, el Pacto Internacional de Derechos Económicos, Sociales y Culturales y los protocolos Facultativos correspondientes.",
+   "La Declaración Universal de Derechos Humanos y los Pactos de 1966.",
+   "La Declaración Universal de Derechos Humanos, el Pacto Internacional de Derechos Civiles y Políticos y el Pacto Internacional de Derechos Económicos, Sociales y Culturales.",
+   "La Carta de las Naciones Unidas y la Declaración Universal de Derechos Humanos."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · La Declaración Universal de Derechos Humanos, el Pacto Internacional de Derechos Civiles y Políticos, el Pacto Internacional de Derechos Económicos, Sociales y Culturales y los protocolos Facultativos correspondientes. esquema del Tema 1 (derechos humanos) dispone: \"Carta Internacional: DUDH (1948) · Pacto Internacional de Derechos Civiles y Políticos · Pacto Internacional de Derechos Económicos, Sociales y Culturales · Protocolos facultativos\" . Estos cuatro elementos forman la Carta Internacional de Derechos Humanos.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-18",
+  "pregunta": "¿Qué documento no forma parte del derecho blando (Soft law)?",
+  "opciones": [
+   "El Pacto Internacional de Derechos Civiles y Políticos, de 1966.",
+   "La Declaración sobre los derechos de las personas pertenecientes a minorías nacionales o étnicas, religiosas y lingüísticas, de 1992.",
+   "La Declaración de las Naciones Unidas sobre la clonación humana.",
+   "Los Principios y Directrices básicos sobre el derecho a un recurso y a una reparación para las víctimas de violaciones de las normas internacionales de Derechos Humanos."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El Pacto Internacional de Derechos Civiles y Políticos, de 1966. esquema del Tema 1 (derechos humanos) dispone: \"DUDH (1948): declaración, no vinculante (soft law) · Pacto Internacional de Derechos Civiles y Políticos (PIDCP): vinculante\" . El PIDCP es vinculante, por lo que no es derecho blando.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-19",
+  "pregunta": "Según el Preámbulo del Pacto Internacional de Derechos Civiles y Políticos de 1966, la persona humana no puede realizar el ideal del ser humano libre, a menos que se creen condiciones que permitan a cada uno gozar de sus derechos civiles y políticos, a la par que de:",
+  "opciones": [
+   "Sus derechos económicos, sociales y culturales.",
+   "Sus derechos económicos y sociales.",
+   "Sus derechos sociales y culturales.",
+   "Sus derechos políticos y sociales."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Sus derechos económicos, sociales y culturales. Preámbulo del Pacto Internacional de Derechos Civiles y Políticos dispone: \"no puede realizarse el ideal del ser humano libre, liberado del temor y de la miseria, a menos que se creen condiciones que permitan a cada persona gozar de sus derechos civiles y políticos, tanto como de sus derechos económicos, sociales y culturales\" . Por eso los derechos civiles y políticos se unen a los económicos, sociales y culturales.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-20",
+  "pregunta": "El Pacto Internacional de Derechos Civiles y Políticos y el Pacto Internacional de Derechos Económicos, Sociales y Culturales entraron en vigor en:",
+  "opciones": [
+   "1966.",
+   "1976.",
+   "1989.",
+   "1990."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · 1976. esquema del Tema 1 (derechos humanos) dispone: \"Los dos Pactos: aprobados 1966, en vigor 1976\" . Entraron en vigor en 1976.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-22",
+  "pregunta": "La Declaración de los Derechos del Hombre y del Ciudadano fue un documento fundamental de la:",
+  "opciones": [
+   "Independencia estadounidense.",
+   "Ilustración francesa.",
+   "Revolución francesa.",
+   "Independencia española."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Revolución francesa. esquema del Tema 1 (derechos humanos) dispone: \"Declaración de los Derechos del Hombre y del Ciudadano: Francia, 1789 (Revolución francesa)\" . Fue el documento fundamental de la Revolución francesa.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-26",
+  "pregunta": "¿Qué se considera como la primera manifestación moderna de los Derechos Humanos?",
+  "opciones": [
+   "La Carta Magna de 1215.",
+   "La Declaración de los Derechos de Virginia.",
+   "El Bill of Rights de 1689.",
+   "La Declaración de Independencia de los EE. UU."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · La Declaración de Independencia de los EE. UU. esquema del Tema 1 (derechos humanos) dispone: \"1776 · Primera manifestación moderna: Declaración de Independencia de los EE. UU.\" . Es la primera manifestación moderna de los derechos humanos.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-27",
+  "pregunta": "¿En qué año se firmó la Carta de las Naciones Unidas?",
+  "opciones": [
+   "1945.",
+   "1948.",
+   "1950.",
+   "1966."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 1945. esquema del Tema 1 (derechos humanos) dispone: \"Carta de las Naciones Unidas: 26 de junio de 1945 (San Francisco)\" . Se firmó en 1945.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-28",
+  "pregunta": "En 1928, en el marco del Convenio de Ginebra, se prohibió el uso de:",
+  "opciones": [
+   "Gases tóxicos.",
+   "Armas nucleares.",
+   "Armas químicas.",
+   "Armas biológicas."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Gases tóxicos. Protocolo de Ginebra de 1925 dispone: \"sobre la prohibición del empleo en la guerra de gases asfixiantes, tóxicos o similares y de medios bacteriológicos\" . La prohibición de gases tóxicos procede del Protocolo de 1925, no de un convenio de 1928.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-29",
+  "pregunta": "Los Derechos Económicos, Sociales y Culturales se refieren a la generación:",
+  "opciones": [
+   "Primera.",
+   "Segunda.",
+   "Tercera.",
+   "Cuarta."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Segunda. esquema del Tema 1 (derechos humanos) dispone: \"2.ª · derechos económicos, sociales y culturales y colectivos (educación, trabajo)\" . Son la segunda generación.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-31",
+  "pregunta": "La doctrina de los \"derechos de primera, segunda y tercera generación\" fue acuñada por:",
+  "opciones": [
+   "Norberto Bobbio.",
+   "Karel Vasak.",
+   "Jacques Maritain.",
+   "La ONU."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Karel Vasak. esquema del Tema 1 (derechos humanos) dispone: \"Las tres generaciones (Karel Vasak)\" . Vasak la formuló en 1979.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-32",
+  "pregunta": "Los Pactos Internacionales de Derechos Civiles y Políticos y de Derechos Económicos, Sociales y Culturales, fueron aprobados por la Asamblea General de la ONU en el año:",
+  "opciones": [
+   "1948.",
+   "1950.",
+   "1966.",
+   "1976."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · 1966. esquema del Tema 1 (derechos humanos) dispone: \"Los dos Pactos: aprobados 1966, en vigor 1976\" . Los Pactos se aprobaron en 1966.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-33",
+  "pregunta": "¿Cuál de las siguientes generaciones de Derechos Humanos no tiene carácter vinculante?",
+  "opciones": [
+   "La primera.",
+   "La segunda.",
+   "La tercera.",
+   "Ninguna de las anteriores."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · La tercera. esquema del Tema 1 (derechos humanos) dispone: \"3.ª · paz, solidaridad, medio ambiente sano: no tiene carácter vinculante\" . La tercera generación no es vinculante.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-34",
+  "pregunta": "¿Cuál de los siguientes no forma parte de los llamados 'Derechos de la Tercera Generación'?",
+  "opciones": [
+   "El derecho al desarrollo.",
+   "El derecho al medio ambiente.",
+   "El derecho a la autodeterminación de los pueblos.",
+   "El derecho al trabajo."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · El derecho al trabajo. esquema del Tema 1 (derechos humanos) dispone: \"2.ª · derechos económicos, sociales y culturales y colectivos (educación, trabajo)\" . El derecho al trabajo es de segunda generación; los demás son de tercera.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-35",
+  "pregunta": "¿A qué generación pertenecen el Derecho a la Paz y el Derecho a la Solidaridad?",
+  "opciones": [
+   "Primera generación.",
+   "Segunda generación.",
+   "Tercera generación.",
+   "Cuarta generación."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Tercera generación. esquema del Tema 1 (derechos humanos) dispone: \"3.ª · paz, solidaridad, medio ambiente sano\" . La paz y la solidaridad son de tercera generación.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-36",
+  "pregunta": "Los Derechos Colectivos y del Hombre en la Sociedad, ¿a qué generación pertenecen?",
+  "opciones": [
+   "Primera.",
+   "Segunda.",
+   "Tercera.",
+   "Cuarta."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Segunda. esquema del Tema 1 (derechos humanos) dispone: \"2.ª · derechos económicos, sociales y culturales y colectivos (educación, trabajo)\" . Los derechos colectivos son de segunda generación.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-37",
+  "pregunta": "Los Derechos Civiles y Políticos, ¿a qué generación pertenecen?",
+  "opciones": [
+   "Primera.",
+   "Segunda.",
+   "Tercera.",
+   "Cuarta."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Primera. esquema del Tema 1 (derechos humanos) dispone: \"1.ª · derechos civiles y políticos: el derecho del hombre frente al Estado\" . Los civiles y políticos son la primera generación.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-38",
+  "pregunta": "El Derecho a un medio ambiente sano se encuadra dentro de los derechos de:",
+  "opciones": [
+   "Primera generación.",
+   "Segunda generación.",
+   "Tercera generación.",
+   "Cuarta generación."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Tercera generación. esquema del Tema 1 (derechos humanos) dispone: \"3.ª · paz, solidaridad, medio ambiente sano\" . El medio ambiente sano es de tercera generación.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-39",
+  "pregunta": "De los siguientes, ¿cuál es un derecho de segunda generación?",
+  "opciones": [
+   "El derecho a la autodeterminación.",
+   "El derecho de libertad de opinión.",
+   "El derecho a la educación.",
+   "El derecho a la vida."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · El derecho a la educación. esquema del Tema 1 (derechos humanos) dispone: \"2.ª · derechos económicos, sociales y culturales y colectivos (educación, trabajo)\" . La educación es de segunda generación; las otras opciones son de primera.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-40",
+  "pregunta": "Se puede afirmar que la característica de la universalidad de los Derechos Humanos se concreta en:",
+  "opciones": [
+   "Los Pactos Internacionales de 1966.",
+   "El Cilindro de Ciro.",
+   "La Declaración de los Derechos del Hombre y del Ciudadano.",
+   "La Carta de las Naciones Unidas."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Los Pactos Internacionales de 1966. esquema del Tema 1 (derechos humanos) dispone: \"Los dos Pactos: aprobados 1966, en vigor 1976\" . La universalidad se concreta en los Pactos de 1966.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-41",
+  "pregunta": "La característica de la Progresividad de los derechos, significa:",
+  "opciones": [
+   "Que no puede haber ningún derecho anterior.",
+   "Que las medidas de la ley deben progresar, para que las personas tengan más derechos.",
+   "Que los derechos no pueden ser disminuidos.",
+   "Todas son correctas."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Que los derechos no pueden ser disminuidos. esquema del Tema 1 (derechos humanos) dispone: \"Progresividad: no pueden ser disminuidos\" . Una vez reconocidos, no pueden retroceder.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-42",
+  "pregunta": "¿Cuál de las siguientes afirmaciones es incorrecta?",
+  "opciones": [
+   "Los Derechos Humanos son inalienables.",
+   "Los Derechos Humanos son inviolables.",
+   "Los Derechos Humanos son obligatorios.",
+   "Los Derechos Humanos son absolutos."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Los Derechos Humanos son absolutos. esquema del Tema 1 (derechos humanos) dispone: \"No son absolutos\" . Admiten limitaciones legítimas y proporcionadas, por lo que es incorrecto decir que son absolutos.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-43",
+  "pregunta": "La inalienabilidad de los Derechos Humanos se refiere a que:",
+  "opciones": [
+   "No se puede disponer de ellos, ni en su totalidad ni parcialmente.",
+   "No pueden ser transferidos a terceros.",
+   "Su disfrute no puede ser violado.",
+   "Son para toda persona, sin importar su condición."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · No se puede disponer de ellos, ni en su totalidad ni parcialmente. esquema del Tema 1 (derechos humanos) dispone: \"Inalienabilidad: no se puede disponer de ellos, ni total ni parcialmente\" . Son indisponibles.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-44",
+  "pregunta": "La inviolabilidad de los Derechos Humanos significa que:",
+  "opciones": [
+   "No pueden ser restringidos ni limitados.",
+   "No pueden ser lesionados o violados en su goce y disfrute.",
+   "No pueden ser abolidos por el Estado.",
+   "Solo pueden ser vulnerados si el Estado lo decide."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · No pueden ser lesionados o violados en su goce y disfrute. esquema del Tema 1 (derechos humanos) dispone: \"Inviolabilidad: no pueden ser lesionados en su goce\" . Nadie puede lesionarlos, ni el Estado.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-45",
+  "pregunta": "La universalidad de los Derechos Humanos significa que:",
+  "opciones": [
+   "Son para todos y en todos los lugares.",
+   "Solo para unos pocos, los que cumplan ciertos requisitos.",
+   "Son aplicables solo en determinados lugares del mundo.",
+   "Son solo para los ciudadanos de un determinado país."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Son para todos y en todos los lugares. esquema del Tema 1 (derechos humanos) dispone: \"Universalidad: para todos y en todos los lugares\" . Se reconocen a toda persona, sin distinción.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-46",
+  "pregunta": "La irrenunciabilidad de los Derechos Humanos significa que:",
+  "opciones": [
+   "No se puede disponer de ellos, ni en su totalidad ni parcialmente.",
+   "Son para todos y en todos los lugares.",
+   "Nadie puede desprenderse de los mismos, ni aun por su propia voluntad.",
+   "No pueden ser restringidos ni limitados."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Nadie puede desprenderse de los mismos, ni aun por su propia voluntad. esquema del Tema 1 (derechos humanos) dispone: \"Irrenunciabilidad: nadie puede desprenderse de ellos, ni por su voluntad\" . No se puede renunciar a ellos ni voluntariamente.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-47",
+  "pregunta": "¿Qué es un derecho humano?",
+  "opciones": [
+   "Las facultades que el ordenamiento jurídico reconoce a las personas",
+   "Son inherentes a la condición humana, son facultades que se atribuyen a la persona y le son inherentes por el mero hecho de ser persona",
+   "Son las libertades fundamentales",
+   "Son los derechos que reconoce la constitución"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Son inherentes a la condición humana, son facultades que se atribuyen a la persona y le son inherentes por el mero hecho de ser persona esquema del Tema 1 (derechos humanos) dispone: \"Derecho humano: facultades inherentes a la condición humana\" . Corresponden a la persona por el mero hecho de serlo.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-48",
+  "pregunta": "La Declaración de los Derechos del Hombre y del Ciudadano fue promulgada en:",
+  "opciones": [
+   "Estados Unidos",
+   "Rusia",
+   "Francia",
+   "México"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Francia esquema del Tema 1 (derechos humanos) dispone: \"Declaración de los Derechos del Hombre y del Ciudadano: Francia, 1789 (Revolución francesa)\" . Se promulgó en Francia.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-49",
+  "pregunta": "¿Qué año se aprobó la Declaración de los Derechos del Hombre y del Ciudadano?",
+  "opciones": [
+   "1789",
+   "1948",
+   "1788",
+   "1978"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 1789 esquema del Tema 1 (derechos humanos) dispone: \"1789 · Declaración de los Derechos del Hombre y del Ciudadano\" . La aprobó la Asamblea Nacional francesa en 1789.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-50",
+  "pregunta": "La Declaración de Independencia de los Estados Unidos fue aprobada en el año:",
+  "opciones": [
+   "1948",
+   "1776",
+   "1789",
+   "1978"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · 1776 esquema del Tema 1 (derechos humanos) dispone: \"1776 · Primera manifestación moderna: Declaración de Independencia de los EE. UU.\" . Se aprobó el 4 de julio de 1776.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-51",
+  "pregunta": "La ONU fue creada en el año:",
+  "opciones": [
+   "1945",
+   "1948",
+   "1978",
+   "1949"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 1945 Carta de las Naciones Unidas . La ONU se creó el 24 de octubre de 1945, al entrar en vigor la Carta, como sucesora de la Sociedad de Naciones.",
+  "sinArticulo": true,
+  "sinLiteral": true
+ },
+ {
+  "id": "1-52",
+  "pregunta": "La Declaración Universal de los Derechos Humanos fue aprobada en el año:",
+  "opciones": [
+   "1945",
+   "1948",
+   "1978",
+   "1949"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · 1948 esquema del Tema 1 (derechos humanos) dispone: \"DUDH: 10 de diciembre de 1948 · resolución 217 A (III)\" . Se aprobó en 1948.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-53",
+  "pregunta": "La Declaración Universal de los Derechos Humanos fue aprobada por la Asamblea General de las Naciones Unidas en su Resolución:",
+  "opciones": [
+   "217 (II)",
+   "217 (III)",
+   "217 A (II)",
+   "217 A (III)"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · 217 A (III) esquema del Tema 1 (derechos humanos) dispone: \"DUDH: 10 de diciembre de 1948 · resolución 217 A (III)\" . Se aprobó por la resolución 217 A (III).",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-54",
+  "pregunta": "El 10 de diciembre se celebra el Día de los Derechos Humanos. ¿A qué se debe esto?",
+  "opciones": [
+   "Se aprobó el Pacto de Derechos Civiles y Políticos",
+   "Se aprobó la Convención Europea de los Derechos Humanos",
+   "Se firmó la Convención de Ginebra",
+   "Se aprobó la Declaración Universal de los Derechos Humanos"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Se aprobó la Declaración Universal de los Derechos Humanos esquema del Tema 1 (derechos humanos) dispone: \"DUDH: 10 de diciembre de 1948 · resolución 217 A (III)\" . El Día de los Derechos Humanos recuerda esa aprobación.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-55",
+  "pregunta": "La Declaración Universal de los Derechos Humanos establece:",
+  "opciones": [
+   "Derechos económicos, sociales y culturales",
+   "Derechos civiles y políticos",
+   "Los derechos inherentes a la persona",
+   "Los derechos de la familia"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Los derechos inherentes a la persona Declaración Universal de Derechos Humanos, preámbulo dispone: \"los derechos iguales e inalienables de todos los miembros de la familia humana\" . La Declaración parte de que los derechos son inherentes a la persona.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-74",
+  "pregunta": "Según la Declaración Universal de Derechos Humanos, los derechos humanos están reconocidos en:",
+  "opciones": [
+   "Su articulado.",
+   "El preámbulo.",
+   "La Declaración Universal de Derechos Humanos.",
+   "Ninguna es correcta."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · Ninguna es correcta. Declaración Universal de Derechos Humanos . Los derechos se recogen en toda la Declaración, en el preámbulo y en el articulado, no solo en una parte; por eso la respuesta del test es «ninguna es correcta».",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-122",
+  "pregunta": "Según la Declaración Universal de los Derechos Humanos, la libertad de opinión y de expresión se recoge en su artículo:",
+  "opciones": [
+   "17",
+   "18",
+   "19",
+   "20"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Artículo 19 El artículo 19 de la DUDH recoge el derecho a la libertad de opinión y de expresión.",
+  "sinArticulo": false,
+  "sinLiteral": true
+ },
+ {
+  "id": "1-124",
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional, hecho en Roma el 17 de julio de 1998. Podrán proponer enmiendas a los Elementos de los crímenes, entre otros:",
+  "opciones": [
+   "Cualquier Estado.",
+   "Los magistrados, por mayoría simple.",
+   "El fiscal.",
+   "Los magistrados, por mayoría de dos tercios."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · El fiscal Art. 9.2 del Estatuto de Roma: pueden proponer enmiendas \"Cualquier Estado PARTE\" (no cualquier Estado, sin más), \"los magistrados, por mayoría ABSOLUTA\" (no simple ni dos tercios) y \"el fiscal\". Solo la opción C es literalmente correcta tal como está formulada.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-135",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo (PREGUNTA EXAMEN 2020). Los órganos jurisdiccionales de la Unión y de los Estados miembros interpretarán la Carta atendiendo debidamente a las explicaciones elaboradas bajo la autoridad del:",
+  "opciones": [
+   "Praesidium de la Convención que redactó la Carta y actualizadas bajo la responsabilidad del Praesidium de la Convención Europea.",
+   "Consejo Europeo que adoptó la Carta y actualizadas bajo la responsabilidad del Consejo de la Unión Europea.",
+   "Parlamento Europeo que proclamó la Carta y actualizadas bajo la responsabilidad de la Comisión Europea.",
+   "Tribunal de Justicia de la Unión Europea y actualizadas bajo la responsabilidad del Praesidium de la Convención Europea."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Praesidium de la Convención que redactó la Carta y actualizadas bajo la responsabilidad del Praesidium de la Convención Europea El preámbulo de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"los órganos jurisdiccionales de la Unión y de los Estados miembros interpretarán la Carta atendiendo debidamente a las explicaciones elaboradas bajo la autoridad del Praesidium de la Convención que redactó la Carta y actualizadas bajo la responsabilidad del Praesidium de la Convención Europea\" . Las explicaciones las elaboró el Praesidium de la Convención que redactó la Carta y las actualizó el de la Convención Europea.",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-171",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo (1.º párrafo). Los pueblos de Europa, al crear entre sí una unión cada vez más estrecha, han decidido compartir un porvenir __________ basado en valores comunes.",
+  "opciones": [
+   "próspero",
+   "pacífico",
+   "democrático",
+   "solidario"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · pacífico Según el Preámbulo de la Carta de los Derechos Fundamentales de la UE : \"han decidido compartir un porvenir pacífico basado en valores comunes\" . Preámbulo de la Carta (sello «PREGUNTA EXAMEN»). (marca EXOF / sello «PREGUNTA EXAMEN» del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-172",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo (valores de la Unión). Consciente de su patrimonio espiritual y moral, la Unión está fundada sobre los valores indivisibles y universales de __________, y se basa en los principios de la democracia y el Estado de Derecho.",
+  "opciones": [
+   "la dignidad humana, la libertad, la igualdad y la solidaridad",
+   "la dignidad humana, la libertad, la justicia y la solidaridad",
+   "la vida, la libertad, la igualdad y la fraternidad",
+   "la dignidad humana, la igualdad, la seguridad y la solidaridad"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · la dignidad humana, la libertad, la igualdad y la solidaridad Según el Preámbulo de la Carta de los Derechos Fundamentales de la UE : \"los valores indivisibles y universales de la dignidad humana, la libertad, la igualdad y la solidaridad\" . Preámbulo de la Carta (sello «PREGUNTA EXAMEN»). (marca EXOF / sello «PREGUNTA EXAMEN» del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-173",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo (ciudadanía y espacio de libertad). Al instituir la ciudadanía de la Unión y crear un espacio de libertad, seguridad y justicia, la Unión sitúa a __________ en el centro de su actuación.",
+  "opciones": [
+   "el ciudadano europeo",
+   "el Estado de Derecho",
+   "la dignidad humana",
+   "la persona"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · la persona Según el Preámbulo de la Carta de los Derechos Fundamentales de la UE : \"sitúa a la persona en el centro de su actuación\" . Preámbulo de la Carta (sello «PREGUNTA EXAMEN»). (marca EXOF / sello «PREGUNTA EXAMEN» del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-174",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo (diversidad e identidad nacional). La Unión contribuye a defender y fomentar estos valores comunes dentro del respeto de la diversidad de culturas y tradiciones de los pueblos de Europa, así como de la __________ de los Estados miembros y de la organización de sus poderes públicos a escala nacional, regional y local.",
+  "opciones": [
+   "soberanía nacional",
+   "identidad cultural",
+   "identidad nacional",
+   "unidad territorial"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · identidad nacional Según el Preámbulo de la Carta de los Derechos Fundamentales de la UE : \"así como de la identidad nacional de los Estados miembros y de la organización de sus poderes públicos a escala nacional, regional y local\" . Preámbulo de la Carta (sello «PREGUNTA EXAMEN»). (marca EXOF / sello «PREGUNTA EXAMEN» del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-175",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo (libre circulación). La Unión trata de fomentar un desarrollo equilibrado y sostenible y garantiza la libre circulación de __________, así como la libertad de establecimiento.",
+  "opciones": [
+   "personas, servicios, mercancías y datos",
+   "personas, servicios, mercancías y capitales",
+   "personas, bienes, servicios y capitales",
+   "trabajadores, servicios, mercancías y capitales"
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · personas, servicios, mercancías y capitales Según el Preámbulo de la Carta de los Derechos Fundamentales de la UE : \"garantiza la libre circulación de personas, servicios, mercancías y capitales, así como la libertad de establecimiento\" . Preámbulo de la Carta (sello «PREGUNTA EXAMEN»). (marca EXOF / sello «PREGUNTA EXAMEN» del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-176",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo (evolución de la sociedad). Es necesario, dándoles mayor proyección mediante una Carta, reforzar la protección de los derechos fundamentales a tenor de la evolución de la sociedad, del __________ y de los avances científicos y tecnológicos.",
+  "opciones": [
+   "progreso social",
+   "desarrollo económico",
+   "progreso cultural",
+   "crecimiento sostenible"
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · progreso social Según el Preámbulo de la Carta de los Derechos Fundamentales de la UE : \"a tenor de la evolución de la sociedad, del progreso social y de los avances científicos y tecnológicos\" . Preámbulo de la Carta (sello «PREGUNTA EXAMEN»). (marca EXOF / sello «PREGUNTA EXAMEN» del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-177",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo (responsabilidades y deberes). El disfrute de tales derechos conlleva responsabilidades y deberes tanto respecto de los demás como de la comunidad humana y de __________.",
+  "opciones": [
+   "las generaciones presentes y futuras",
+   "los Estados miembros",
+   "las instituciones de la Unión",
+   "las generaciones futuras"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · las generaciones futuras Según el Preámbulo de la Carta de los Derechos Fundamentales de la UE : \"de la comunidad humana y de las generaciones futuras\" . Preámbulo de la Carta (sello «PREGUNTA EXAMEN»). (marca EXOF / sello «PREGUNTA EXAMEN» del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-178",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo (cierre). En consecuencia, la Unión __________ los derechos, libertades y principios enunciados a continuación.",
+  "opciones": [
+   "garantiza",
+   "proclama",
+   "reconoce",
+   "protege"
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · reconoce Según el Preámbulo de la Carta de los Derechos Fundamentales de la UE : \"En consecuencia, la Unión reconoce los derechos, libertades y principios enunciados a continuación\" . Preámbulo de la Carta (sello «PREGUNTA EXAMEN»). (marca EXOF / sello «PREGUNTA EXAMEN» del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-251",
+  "pregunta": "Ley Orgánica 18/2003, de 10 de diciembre, de Cooperación con la Corte Penal Internacional. De los órganos jurisdiccionales militares. Las referencias que esta ley hace al Juzgado Central de Instrucción y a la Sala de lo Penal de la Audiencia Nacional deben entenderse hechas, cuando la cooperación sea de la competencia de la jurisdicción militar:",
+  "opciones": [
+   "Al Tribunal Militar Territorial y al Tribunal Militar Central, respectivamente.",
+   "Al Juzgado Togado Militar Central Decano y al Tribunal Militar Central, respectivamente.",
+   "Al Juzgado Togado Militar Territorial y a la Sala de lo Militar del Tribunal Supremo, respectivamente.",
+   "Al Tribunal Militar Central y a la Sala de lo Militar del Tribunal Supremo, respectivamente."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · Al Juzgado Togado Militar Central Decano y al Tribunal Militar Central, respectivamente Según el D.A. 3.ª.1 de la Ley Orgánica 18/2003 : \"al Juzgado Togado Militar Central Decano y al Tribunal Militar Central, respectivamente\" . Disposición adicional tercera: la jurisdicción militar sustituye a la ordinaria cuando la cooperación sea de su competencia. (asterisco ✱ del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-252",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Proclamación y valor jurídico. La Carta de los Derechos Fundamentales de la Unión Europea fue proclamada solemnemente el 7 de diciembre de 2000 en Niza y es jurídicamente vinculante desde:",
+  "opciones": [
+   "El 1 de diciembre de 2009, con el Tratado de Lisboa.",
+   "El 12 de diciembre de 2007, con su revisión en Estrasburgo.",
+   "El 18 de diciembre de 2000, con su publicación en el DOUE.",
+   "El 1 de mayo de 2004, con la ampliación de la Unión."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · El 1 de diciembre de 2009, con el Tratado de Lisboa Según el Datos y estructura de la Carta de los Derechos Fundamentales de la UE : \"Jurídicamente vinculante desde: 1 de diciembre de 2009 (con el Tratado de Lisboa)\" . Revisión: 12 de diciembre de 2007 (Estrasburgo). Emisores: Parlamento, Consejo y Comisión europeos. (asterisco ✱ del temario)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3002",
+  "pregunta": "Ley Orgánica 18/2003, de 10 de diciembre, de Cooperación con la Corte Penal Internacional. Exposición de motivos. La estructura de la ley es comparable a la seguida en la Ley Orgánica 15/1994 y en la Ley Orgánica 4/1998, y parte del presupuesto del carácter __________ de numerosos preceptos del Estatuto de Roma.",
+  "opciones": [
+   "programático, salvo que se disponga otra cosa en la normativa aplicable.",
+   "subsidiario",
+   "orientativo",
+   "autoejecutivo"
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · autoejecutivo El exposición de motivos de la Ley Orgánica 18/2003 dispone: \"parte del presupuesto del carácter autoejecutivo de numerosos preceptos del Estatuto de Roma\" . La ley presupone que muchos preceptos del Estatuto son autoejecutivos y de aplicación directa por los tribunales. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3003",
+  "pregunta": "Ley Orgánica 18/2003, de 10 de diciembre, de Cooperación con la Corte Penal Internacional. Exposición de motivos. La ley regula con particular cuidado el llamado «mecanismo de activación», a través de la denuncia por España de una situación que podría ser de la competencia de la Corte, configurándose como una competencia exclusiva:",
+  "opciones": [
+   "del Ministerio de Justicia, por ser el órgano de relación con la Corte.",
+   "de la Audiencia Nacional, en razón a su competencia en materia de cooperación pasiva, conforme al procedimiento que se establezca reglamentariamente.",
+   "del Gobierno, en razón a las diversas variables de política exterior que deben ser ponderadas.",
+   "del Ministerio Fiscal, en razón a su función de promover la acción de la justicia."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · del Gobierno, en razón a las diversas variables de política exterior que deben ser ponderadas El exposición de motivos de la Ley Orgánica 18/2003 dispone: \"configurándose como una competencia exclusiva del Gobierno en razón a las diversas variables de política exterior que deben ser ponderadas\" . La competencia es exclusiva del Gobierno, órgano constitucionalmente responsable de la política exterior. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3004",
+  "pregunta": "Ley Orgánica 18/2003, de 10 de diciembre, de Cooperación con la Corte Penal Internacional. Exposición de motivos. En los conflictos de competencia entre la Corte y los tribunales españoles, cuando la causa se halla en un estadio inicial y el Fiscal de la Corte reclama la competencia, el Gobierno tiene:",
+  "opciones": [
+   "la facultad de recurrir ante la Sala de Apelaciones.",
+   "el deber de recurrir ante la Sala de Cuestiones Preliminares.",
+   "el deber de recurrir ante la Sala de Apelaciones.",
+   "la facultad de recurrir ante la Sala de Cuestiones Preliminares."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · el deber de recurrir ante la Sala de Cuestiones Preliminares El exposición de motivos de la Ley Orgánica 18/2003 dispone: \"el Gobierno tiene el deber de recurrir ante la Sala de Cuestiones Preliminares\" . En fase inicial el recurso es un deber ante la Sala de Cuestiones Preliminares; si esta ya sostuvo la competencia de la Corte, ante la Sala de Apelaciones es una facultad. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3005",
+  "pregunta": "Ley Orgánica 18/2003, de 10 de diciembre, de Cooperación con la Corte Penal Internacional. Exposición de motivos. Cuando la Sala de Cuestiones Preliminares ya se ha pronunciado sosteniendo la competencia de la Corte, el Gobierno:",
+  "opciones": [
+   "tiene la facultad de apreciar soberanamente si se aquieta a esa decisión o interpone recurso ante la Sala de Apelaciones.",
+   "tiene el deber de interponer recurso ante la Sala de Apelaciones.",
+   "debe aquietarse a esa decisión y entregar la causa a la Corte.",
+   "tiene el deber de plantear una cuestión de inconstitucionalidad ante el Tribunal Supremo, en los términos que establezca la propia norma."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · tiene la facultad de apreciar soberanamente si se aquieta a esa decisión o interpone recurso ante la Sala de Apelaciones El exposición de motivos de la Ley Orgánica 18/2003 dispone: \"el Gobierno tiene la facultad de apreciar soberanamente si se aquieta a esta decisión o interpone recurso ante la Sala de Apelaciones\" . Es una facultad soberana del Gobierno, no un deber. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3006",
+  "pregunta": "Ley Orgánica 18/2003, de 10 de diciembre, de Cooperación con la Corte Penal Internacional. Exposición de motivos. Un elemento significativo de la ley es la entrega a la Corte de una persona reclamada por la misma, que resulta imprescindible porque el Estatuto:",
+  "opciones": [
+   "no admite la prisión provisional de los acusados.",
+   "exige el consentimiento previo del Estado de la nacionalidad.",
+   "no prevé la cooperación mediante comisiones rogatorias.",
+   "no permite dictar sentencias en rebeldía."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · no permite dictar sentencias en rebeldía El exposición de motivos de la Ley Orgánica 18/2003 dispone: \"pues el Estatuto no permite dictar sentencias en rebeldía\" . La entrega es imprescindible porque el Estatuto no permite sentencias en rebeldía. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3008",
+  "pregunta": "Ley Orgánica 18/2003, de 10 de diciembre, de Cooperación con la Corte Penal Internacional. Exposición de motivos. En el plano orgánico, la ley mantiene la competencia de la Audiencia Nacional para la cooperación pasiva concerniente a la entrega a la Corte; en el orden político y administrativo, el órgano de relación con la Corte es:",
+  "opciones": [
+   "el Ministerio de Asuntos Exteriores, sin perjuicio de contar con el criterio del Ministerio de Justicia, sin perjuicio de lo dispuesto en otras disposiciones.",
+   "el Ministerio de Justicia, sin perjuicio de contar con el criterio del Ministerio de Asuntos Exteriores en los asuntos de su competencia.",
+   "el Ministerio del Interior, sin perjuicio de contar con el criterio del Ministerio de Justicia.",
+   "la Abogacía General del Estado, sin perjuicio de contar con el criterio del Ministerio de Justicia."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · el Ministerio de Justicia, sin perjuicio de contar con el criterio del Ministerio de Asuntos Exteriores en los asuntos de su competencia El exposición de motivos de la Ley Orgánica 18/2003 dispone: \"el Ministerio de Justicia es el órgano de relación con la Corte, sin perjuicio de tener que contar con el criterio del Ministerio de Asuntos Exteriores en los asuntos de su competencia\" . El órgano de relación es el Ministerio de Justicia, que debe contar con el criterio de Asuntos Exteriores cuando proceda. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3010",
+  "pregunta": "Ley Orgánica 18/2003, de 10 de diciembre, de Cooperación con la Corte Penal Internacional. Exposición de motivos. A diferencia del modelo que inspira la Ley de Extradición Pasiva de 1985, en esta ley la intervención del Poder Ejecutivo es reducida, judicializándose todo el sistema y eliminándose:",
+  "opciones": [
+   "la intervención del Ministerio Fiscal.",
+   "el recurso de apelación ante la Audiencia Nacional.",
+   "la necesidad de oír a la persona reclamada.",
+   "las llamadas fases gubernativas."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · las llamadas fases gubernativas El exposición de motivos de la Ley Orgánica 18/2003 dispone: \"judicializándose todo el sistema y eliminándose las llamadas fases gubernativas\" . Se eliminan las fases gubernativas y se reducen los motivos de oposición a la entrega. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3121",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Instrumento de creación. La Carta de los Derechos Fundamentales de la Unión Europea tuvo su proclamación solemne el 7 de diciembre de 2000 en:",
+  "opciones": [
+   "Niza.",
+   "Estrasburgo.",
+   "Lisboa.",
+   "Roma."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Niza El ficha de la Carta de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"Proclamación solemne: 7 de diciembre de 2000 (Niza)\" . Se proclamó en Niza; la revisión de 2007 se hizo en Estrasburgo. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3122",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Instrumento de creación. La Carta fue revisada el 12 de diciembre de 2007 en Estrasburgo y es jurídicamente vinculante desde el 1 de diciembre de 2009, con:",
+  "opciones": [
+   "el Tratado de Niza.",
+   "el Tratado de Maastricht.",
+   "el Tratado de Ámsterdam.",
+   "el Tratado de Lisboa."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · el Tratado de Lisboa El ficha de la Carta de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"Jurídicamente vinculante desde: 1 de diciembre de 2009 (con el Tratado de Lisboa)\" . La fuerza vinculante llega con la entrada en vigor del Tratado de Lisboa. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3123",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Instrumento de creación. Los órganos emisores de la Carta de los Derechos Fundamentales de la Unión Europea son:",
+  "opciones": [
+   "el Consejo Europeo y el Parlamento Europeo.",
+   "el Consejo de la Unión Europea y la Comisión Europea.",
+   "el Parlamento, el Consejo y la Comisión europeos.",
+   "el Parlamento Europeo, el Consejo Europeo y el Tribunal de Justicia."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · el Parlamento, el Consejo y la Comisión europeos El ficha de la Carta de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"Órganos emisores: Parlamento, Consejo y Comisión europeos\" . La emitieron los tres: Parlamento, Consejo y Comisión. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3124",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo. La Unión está fundada sobre los valores indivisibles y universales de la dignidad humana, la libertad, la igualdad y la solidaridad, y se basa en los principios de:",
+  "opciones": [
+   "la democracia y la separación de poderes.",
+   "la democracia y el Estado de Derecho.",
+   "el Estado de Derecho y la economía social de mercado.",
+   "la subsidiariedad y la proporcionalidad."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · la democracia y el Estado de Derecho El preámbulo de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"se basa en los principios de la democracia y el Estado de Derecho\" . Los principios son democracia y Estado de Derecho. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3125",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo. Al instituir la ciudadanía de la Unión y crear un espacio de libertad, seguridad y justicia, la Unión:",
+  "opciones": [
+   "sitúa a la persona en el centro de su actuación.",
+   "refuerza la soberanía de los Estados miembros.",
+   "garantiza la primacía de las libertades económicas.",
+   "establece la igualdad de todos los residentes."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · sitúa a la persona en el centro de su actuación El preámbulo de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"sitúa a la persona en el centro de su actuación\" . La persona es el centro de la actuación de la Unión. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3126",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo. Según el preámbulo, es necesario, dándoles mayor proyección mediante una Carta, reforzar la protección de los derechos fundamentales a tenor de:",
+  "opciones": [
+   "la evolución del Derecho de la Unión, de la jurisprudencia y de las tradiciones nacionales, salvo que se disponga otra cosa en la normativa aplicable.",
+   "la ampliación de la Unión, del progreso económico y de la globalización.",
+   "las obligaciones internacionales, de las Cartas Sociales y de los Tratados.",
+   "la evolución de la sociedad, del progreso social y de los avances científicos y tecnológicos."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · la evolución de la sociedad, del progreso social y de los avances científicos y tecnológicos El preámbulo de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"reforzar la protección de los derechos fundamentales a tenor de la evolución de la sociedad, del progreso social y de los avances científicos y tecnológicos\" . La protección se refuerza por la evolución de la sociedad, el progreso social y los avances científicos y tecnológicos. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3127",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo. Los órganos jurisdiccionales de la Unión y de los Estados miembros interpretarán la Carta atendiendo debidamente a las explicaciones elaboradas bajo la autoridad del:",
+  "opciones": [
+   "Presidente del Parlamento Europeo.",
+   "Tribunal de Justicia de la Unión Europea, conforme al procedimiento que se establezca reglamentariamente.",
+   "Praesidium de la Convención que redactó la Carta.",
+   "Consejo Europeo reunido en Niza."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · Praesidium de la Convención que redactó la Carta El preámbulo de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"bajo la autoridad del Praesidium de la\" . Las explicaciones se elaboraron bajo la autoridad del Praesidium de la Convención. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3128",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo. El preámbulo señala que el disfrute de los derechos que la Carta enuncia conlleva responsabilidades y deberes tanto respecto de los demás como:",
+  "opciones": [
+   "del Estado y de las instituciones de la Unión.",
+   "de la comunidad humana y de las generaciones futuras.",
+   "de la comunidad internacional y del medio ambiente, sin perjuicio de lo dispuesto en otras disposiciones.",
+   "de los Estados miembros y de sus nacionales."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · de la comunidad humana y de las generaciones futuras El preámbulo de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"El disfrute de tales derechos conlleva responsabilidades y deberes tanto respecto de los demás como de la comunidad humana y de las generaciones futuras\" . Los deberes lo son respecto de los demás, de la comunidad humana y de las generaciones futuras. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3255",
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Nota final. El texto de la Carta recoge, adaptándola, la Carta proclamada el 7 de diciembre de 2000, a la que sustituirá:",
+  "opciones": [
+   "a partir del día de su publicación en el Diario Oficial.",
+   "a partir del 1 de enero de 2008.",
+   "a partir del día de la entrada en vigor del Tratado de Lisboa.",
+   "a partir de su ratificación por todos los Estados miembros, conforme al procedimiento que se establezca reglamentariamente."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · a partir del día de la entrada en vigor del Tratado de Lisboa El texto final de la Carta de la Carta de los Derechos Fundamentales de la Unión Europea dispone: \"a la que sustituirá a partir del día de la entrada en vigor del Tratado de Lisboa\" . La sustitución se produce con la entrada en vigor del Tratado de Lisboa. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3256",
+  "pregunta": "Estatuto del Consejo de Europa, hecho en Londres el 5 de mayo de 1949. Instrumento de adhesión de España. El Instrumento de Adhesión de España al Estatuto del Consejo de Europa, hecho en Londres el 5 de mayo de 1949, fue dado en Madrid a:",
+  "opciones": [
+   "veintidós de noviembre de mil novecientos setenta y ocho.",
+   "veintidós de noviembre de mil novecientos setenta y siete.",
+   "cinco de mayo de mil novecientos setenta y siete.",
+   "veintiocho de noviembre de mil novecientos setenta y siete."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · veintidós de noviembre de mil novecientos setenta y siete El instrumento de adhesión de el Estatuto del Consejo de Europa dispone: \"Dado en Madrid a veintidós de noviembre de mil novecientos setenta y siete\" . El instrumento es del 22 de noviembre de 1977. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3257",
+  "pregunta": "Estatuto del Consejo de Europa, hecho en Londres el 5 de mayo de 1949. Instrumento de adhesión de España. España pasa a ser parte del Estatuto del Consejo de Europa mediante el depósito del instrumento de adhesión y de conformidad con lo dispuesto en:",
+  "opciones": [
+   "su artículo cuatro.",
+   "su artículo tres.",
+   "su artículo cinco.",
+   "su artículo veintitrés."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · su artículo cuatro El instrumento de adhesión de el Estatuto del Consejo de Europa dispone: \"de conformidad con lo dispuesto en su artículo cuatro, España pase a ser parte del mismo\" . La adhesión de nuevos miembros se regula en el artículo cuatro. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3258",
+  "pregunta": "Estatuto del Consejo de Europa, hecho en Londres el 5 de mayo de 1949. Preámbulo. Los Gobiernos signatarios se declaran convencidos de que la consolidación de la paz, basada en la justicia y la cooperación internacional, es de interés vital para:",
+  "opciones": [
+   "la defensa de los valores democráticos y del Estado de Derecho.",
+   "el progreso económico y social de los pueblos de Europa.",
+   "la seguridad colectiva de los Estados europeos.",
+   "la preservación de la sociedad humana y de la civilización."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · la preservación de la sociedad humana y de la civilización El preámbulo de el Estatuto del Consejo de Europa dispone: \"es de interés vital para la preservación de la sociedad humana y de la civilización\" . Es de interés vital para la preservación de la sociedad humana y de la civilización. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3259",
+  "pregunta": "Estatuto del Consejo de Europa, hecho en Londres el 5 de mayo de 1949. Preámbulo. Los Gobiernos signatarios reafirman su adhesión a los valores espirituales y morales que son patrimonio común de sus pueblos y la verdadera fuente de la libertad individual, la libertad política y el imperio del Derecho, principios sobre los cuales se funda:",
+  "opciones": [
+   "todo Estado social de Derecho.",
+   "toda sociedad civilizada.",
+   "toda auténtica democracia.",
+   "toda organización internacional."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · toda auténtica democracia El preámbulo de el Estatuto del Consejo de Europa dispone: \"principios sobre los cuales se funda toda auténtica democracia\" . Se funda toda auténtica democracia. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3260",
+  "pregunta": "Estatuto del Consejo de Europa, hecho en Londres el 5 de mayo de 1949. Preámbulo. Los Gobiernos signatarios han decidido constituir un Consejo de Europa compuesto de:",
+  "opciones": [
+   "un Comité de Ministros y una Asamblea Parlamentaria.",
+   "un Comité de representantes de los Gobiernos y de una Asamblea Consultiva.",
+   "un Comité de Ministros y un Tribunal de Derechos Humanos, sin perjuicio de lo dispuesto en otras disposiciones.",
+   "una Asamblea Consultiva y una Secretaría General."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · un Comité de representantes de los Gobiernos y de una Asamblea Consultiva El preámbulo de el Estatuto del Consejo de Europa dispone: \"constituir un Consejo de Europa compuesto de un Comité de\" . El preámbulo habla de un Comité de representantes de los Gobiernos y de una Asamblea Consultiva. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3362",
+  "pregunta": "Estatuto del Consejo de Europa, hecho en Londres el 5 de mayo de 1949. Entrada de España. España depositó su Instrumento de Adhesión al Estatuto del Consejo de Europa el 24 de noviembre de 1977 y, según lo establecido en su normativa, es miembro de pleno derecho:",
+  "opciones": [
+   "a partir del 22 de noviembre de 1977, salvo que se disponga otra cosa en la normativa aplicable.",
+   "a partir del 21 de febrero de 1978.",
+   "a partir del 17 de enero de 1978.",
+   "a partir del 24 de noviembre de 1977."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · a partir del 24 de noviembre de 1977 El nota final de el Estatuto del Consejo de Europa dispone: \"España es miembro de pleno derecho del Consejo de Europa a partir del 24 de noviembre de 1977\" . La fecha de adhesión plena es la del depósito: 24 de noviembre de 1977. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3401",
+  "pregunta": "Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales (Convenio Europeo de Derechos Humanos). Preámbulo. Los Gobiernos signatarios, miembros del Consejo de Europa, consideran la Declaración Universal de Derechos Humanos, proclamada por la Asamblea General de las Naciones Unidas el:",
+  "opciones": [
+   "10 de diciembre de 1948.",
+   "4 de noviembre de 1950.",
+   "16 de diciembre de 1966, en los términos que establezca la propia norma.",
+   "10 de diciembre de 1950."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 10 de diciembre de 1948 El preámbulo de el Convenio Europeo de Derechos Humanos dispone: \"proclamada por la Asamblea Gene-ral de las Naciones Unidas el 10 de diciembre de 1948\" . La Declaración Universal se proclamó el 10 de diciembre de 1948; el Convenio es de 4 de noviembre de 1950. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3402",
+  "pregunta": "Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales (Convenio Europeo de Derechos Humanos). Preámbulo. Los Gobiernos signatarios afirman que incumbe en primer lugar a las Altas Partes Contratantes, con arreglo al principio de subsidiariedad, garantizar el respeto de los derechos y libertades definidos en el Convenio y sus protocolos, y que, al hacerlo, gozan de:",
+  "opciones": [
+   "un margen de discrecionalidad, bajo el control del Comité de Ministros del Consejo de Europa.",
+   "una competencia exclusiva, sin más control que el de sus propios tribunales.",
+   "un margen de apreciación, bajo el control de la Asamblea Parlamentaria del Consejo.",
+   "un margen de apreciación, bajo el control del Tribunal Europeo de Derechos Humanos."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · un margen de apreciación, bajo el control del Tribunal Europeo de Derechos Humanos El preámbulo de el Convenio Europeo de Derechos Humanos dispone: \"gozan de un margen de apreciación, bajo el control del Tribunal\" . El preámbulo reconoce un margen de apreciación bajo el control del Tribunal Europeo de Derechos Humanos. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3403",
+  "pregunta": "Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales (Convenio Europeo de Derechos Humanos). Preámbulo. Los Gobiernos signatarios, resueltos a tomar las primeras medidas adecuadas para asegurar la garantía colectiva de algunos de los derechos enunciados en la Declaración Universal, se declaran animados de:",
+  "opciones": [
+   "un mismo espíritu democrático y en posesión de una tradición común de soberanía nacional y respeto de los derechos fundamentales, conforme al procedimiento que se establezca reglamentariamente.",
+   "un espíritu de cooperación y de un patrimonio común de principios de justicia y solidaridad entre los pueblos europeos.",
+   "un mismo espíritu y en posesión de un patrimonio común de ideales y de tradiciones políticas, de respeto a las libertades y de preeminencia del Derecho.",
+   "un mismo ideal de paz y de un patrimonio común de valores espirituales, morales y jurídicos de los pueblos de Europa."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · un mismo espíritu y en posesión de un patrimonio común de ideales y de tradiciones políticas, de respeto a las libertades y de preeminencia del Derecho El preámbulo de el Convenio Europeo de Derechos Humanos dispone: \"Estados europeos animados de un mismo espíritu y en posesión de un patrimonio común de ideales y de tradiciones políticas\" . La fórmula literal habla de un mismo espíritu y de un patrimonio común de ideales y tradiciones políticas. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3615",
+  "pregunta": "Protocolo n.º 7 al Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales (Estrasburgo, 22 de noviembre de 1984). Cierre del Protocolo. El Protocolo n.º 7 fue hecho en Estrasburgo, en francés e inglés, siendo ambos textos igualmente auténticos, el día:",
+  "opciones": [
+   "16 de septiembre de 1963.",
+   "28 de abril de 1983.",
+   "22 de noviembre de 1984.",
+   "4 de noviembre de 2000."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · 22 de noviembre de 1984 El cierre de el Protocolo n.º 7 al Convenio Europeo de Derechos Humanos dispone: \"Hecho en Estrasburgo, el 22 de noviembre de 1984, en francés e inglés\" . Es de 22 de noviembre de 1984. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3616",
+  "pregunta": "Protocolo n.º 12 al Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales (Roma, 4 de noviembre de 2000). Preámbulo. Los Estados signatarios tienen en cuenta el principio fundamental según el cual todas las personas son iguales ante la ley y tienen derecho a:",
+  "opciones": [
+   "igual protección de los tribunales.",
+   "igual amparo de la ley.",
+   "igual trato de las autoridades públicas.",
+   "igual acceso a la justicia."
+  ],
+  "correcta": 1,
+  "explicacion": "Respuesta correcta: B · igual amparo de la ley El preámbulo de el Protocolo n.º 12 al Convenio Europeo de Derechos Humanos dispone: \"todas las personas son iguales ante la ley y tienen derecho a igual amparo de la ley\" . El preámbulo dice «igual amparo de la ley». (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3617",
+  "pregunta": "Protocolo n.º 12 al Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales (Roma, 4 de noviembre de 2000). Preámbulo. Los Estados signatarios reiteran que el principio de no discriminación no impide a los Estados Partes tomar medidas para promover una igualdad plena y efectiva, siempre que:",
+  "opciones": [
+   "respondan a una justificación objetiva y razonable.",
+   "sean proporcionadas y temporales.",
+   "sean adoptadas mediante ley y se notifiquen al Secretario General.",
+   "respeten el contenido esencial de los derechos reconocidos por el Convenio."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · respondan a una justificación objetiva y razonable El preámbulo de el Protocolo n.º 12 al Convenio Europeo de Derechos Humanos dispone: \"siempre que respondan a una justificación objetiva y razonable\" . Las medidas de igualdad plena exigen justificación objetiva y razonable. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3625",
+  "pregunta": "Protocolo n.º 12 al Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales (Roma, 4 de noviembre de 2000). Cierre del Protocolo. El Protocolo n.º 12 fue hecho en Roma, en francés y en inglés, siendo ambos textos igualmente auténticos, el día:",
+  "opciones": [
+   "4 de noviembre de 2000.",
+   "4 de noviembre de 1950.",
+   "3 de mayo de 2002.",
+   "22 de noviembre de 1984."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · 4 de noviembre de 2000 El cierre de el Protocolo n.º 12 al Convenio Europeo de Derechos Humanos dispone: \"Hecho en Roma, el 4 de noviembre de 2000, en francés y en inglés\" . Es de 4 de noviembre de 2000, cincuenta años después del Convenio. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3626",
+  "pregunta": "Protocolo n.º 13 al Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales, relativo a la abolición de la pena de muerte en todas las circunstancias (Vilna, 3 de mayo de 2002). Preámbulo. Los Estados signatarios toman nota de que el Protocolo n.º 6 al Convenio, relativo a la abolición de la pena de muerte, firmado en Estrasburgo el 28 de abril de 1983, no excluye la pena de muerte por actos cometidos:",
+  "opciones": [
+   "en tiempos de guerra y en estado de excepción.",
+   "por razones de terrorismo o de crimen organizado.",
+   "en el territorio sometido a ocupación militar extranjera.",
+   "en tiempos de guerra o de peligro inminente de guerra."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · en tiempos de guerra o de peligro inminente de guerra El preámbulo de el Protocolo n.º 13 al Convenio Europeo de Derechos Humanos dispone: \"no excluye la pena de muerte por actos cometidos en tiempos de guerra o de peligro inminente de guerra\" . El Protocolo n.º 13 completa al n.º 6 al abolir la pena de muerte también en tiempo de guerra. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3627",
+  "pregunta": "Protocolo n.º 13 al Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales, relativo a la abolición de la pena de muerte en todas las circunstancias (Vilna, 3 de mayo de 2002). Preámbulo. Los Estados signatarios, convencidos de que el derecho de toda persona a la vida es un valor fundamental en una sociedad democrática, declaran estar resueltos a dar un paso definitivo con el fin de:",
+  "opciones": [
+   "proscribir la pena de muerte en tiempo de paz y de guerra en el territorio de los Estados.",
+   "garantizar la inviolabilidad del derecho a la vida frente a cualquier injerencia estatal.",
+   "abolir la pena de muerte en todas las circunstancias.",
+   "eliminar la pena de muerte de la legislación de los Estados miembros del Consejo."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · abolir la pena de muerte en todas las circunstancias El preámbulo de el Protocolo n.º 13 al Convenio Europeo de Derechos Humanos dispone: \"Resueltos a dar un paso definitivo con el fin de abolir la pena de muerte en todas las circunstancias\" . La finalidad es abolir la pena de muerte en todas las circunstancias. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-3633",
+  "pregunta": "Protocolo n.º 13 al Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales, relativo a la abolición de la pena de muerte en todas las circunstancias (Vilna, 3 de mayo de 2002). Cierre del Protocolo. El Protocolo n.º 13 fue hecho, en francés y en inglés, el 3 de mayo de 2002 en:",
+  "opciones": [
+   "Vilna.",
+   "Roma.",
+   "Estrasburgo.",
+   "Varsovia."
+  ],
+  "correcta": 0,
+  "explicacion": "Respuesta correcta: A · Vilna El cierre de el Protocolo n.º 13 al Convenio Europeo de Derechos Humanos dispone: \"Hecho en Vilna, el 3 de mayo de 2002\" . Se hizo en Vilna (Lituania). (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-4026",
+  "pregunta": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional. Preámbulo. El Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional fue hecho en Nueva York, el:",
+  "opciones": [
+   "17 de julio de 1998, salvo que se disponga otra cosa en la normativa aplicable.",
+   "1 de julio de 2002.",
+   "11 de abril de 2002.",
+   "9 de septiembre de 2002."
+  ],
+  "correcta": 3,
+  "explicacion": "Respuesta correcta: D · 9 de septiembre de 2002 El preámbulo de el Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional dispone: \"HECHO EN NUEVA YORK EL 9 DE SEPTIEMBRE DE 2002\" . Es de 9 de septiembre de 2002; el Estatuto de Roma es de 17 de julio de 1998. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ },
+ {
+  "id": "1-ia-4027",
+  "pregunta": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional. Preámbulo. Según el Estatuto de Roma, la Corte Penal Internacional gozará en el territorio de cada Estado Parte de los privilegios e inmunidades que sean necesarios:",
+  "opciones": [
+   "para el cumplimiento de sus fines.",
+   "para el desempeño de sus propósitos.",
+   "para el cumplimiento de sus funciones.",
+   "para la realización de sus actividades."
+  ],
+  "correcta": 2,
+  "explicacion": "Respuesta correcta: C · para el cumplimiento de sus funciones El preámbulo de el Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional dispone: \"gozará en el territorio de cada Estado Parte en el Estatuto de los privilegios e inmunidades que sean necesarios para el cumplimiento de sus funciones\" . El considerando alude al cumplimiento de sus funciones. (Pregunta generada por IA)",
+  "sinArticulo": true,
+  "sinLiteral": false
+ }
+]
