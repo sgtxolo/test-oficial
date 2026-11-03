@@ -17,8 +17,8 @@ Generado por `prompts/herramientas/auditoria-apps.js` (solo lectura).
 - expres/t4.js enlaza 19 preguntas que ya no existen: 4-ia-553, 4-ia-554, 4-ia-555, 4-ia-556, 4-ia-557, 4-ia-558, 4-ia-559, 4-ia-560…
 
 ## Datos
-- Sintaxis comprobada: 54 scripts inline y 152 archivos .js
-- Caché del service worker: oposicion-cache-v442 · 176 archivos en APP_SHELL
+- Sintaxis comprobada: 54 scripts inline y 153 archivos .js
+- Caché del service worker: oposicion-cache-v443 · 177 archivos en APP_SHELL
 - Preguntas IA leídas de los bloques «seed»: 9325
 - Test de conocimientos: 16336 preguntas en 27 temas
 
