@@ -157,7 +157,7 @@ function procederGenerarTest(){if(esSimMod()){const e=bancoSimulacro();return e.
    No se baraja si alguna opción remite a otras («todas», «ninguna», «ambas», «A y B»…). */
 function barajarOpcionesQ(q){
   if(!q||!Array.isArray(q.opciones)||q.opciones.length<2||typeof q.correcta!=="number")return q;
-  if(q.opciones.some(o=>/\b(todas|ninguna|ambas|anteriores|las dos|ni la|ni el)\b|\b[A-D]\s*(\)|,|y|e|o)\s*[A-D]\b/i.test(String(o))))return q;
+  if(q.opciones.some(o=>/\b(todas|ninguna|ambas|anteriores|las dos|ni la|ni el)\b|\b[A-D]\s*\)|\b[A-D]\s*(,|y|e|o)\s*[A-D]\b|\b(la|las|opci[oó]n|opciones|letra|respuesta)\s+[A-D]\b/i.test(String(o))))return q;
   const n=q.opciones.length,idx=[...Array(n).keys()];
   for(let i=n-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[idx[i],idx[j]]=[idx[j],idx[i]]}
   const L="ABCDEF",nueva=idx.map(i=>q.opciones[i]),map={};idx.forEach((viejo,nuevoPos)=>{map[L[viejo]]=L[nuevoPos]});

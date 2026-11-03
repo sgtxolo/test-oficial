@@ -1,0 +1,58 @@
+preguntas 275 avisos 57
+19-1 [dado por correcto sin apoyo literal] A 0.73 «Al Rey o la Reina, al Príncipe o a la Princesa de Asturias»
+19-3 [dado por correcto sin apoyo literal] B 0.67 «Si se causare la muerte de una persona.» | C 0.13 «Si se detuviere ilegalmente, amenazare o coaccionare a una persona.»
+19-21 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-23 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-24 [correcta sin apoyo literal] 0.00 «Actividades y negociaciones prohibidas.»
+19-25 [INCORRECTA marcada pero literal en el texto] 1.00 «Fuere de notoria importancia la cantidad de las citadas sustancias objeto de las conductas.»
+19-27 [otra opción más literal que la correcta] B 1.00 «Rebelión.» | C 1.00 «Sedición.» vs correcta 0.50
+19-29 [INCORRECTA: otra opción también sin apoyo] A 0.64 «Al personal que establece intervenciones con ocasión de un siniestro, calamidad pública o situación de emergen» | C 0.29 «Al personal de las entidades prestadoras de servicios sanitarios.»
+19-29 [INCORRECTA marcada pero literal en el texto] 1.00 «Al personal de seguridad privada.»
+19-33 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-34 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-35 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-36 [dado por correcto sin apoyo literal] C 0.71 «El alistamiento de personas y la organización de prácticas de entrenamiento o la asistencia a ellas.»
+19-41 [dice "ninguna" pero hay opción literal] A 1.00 «100 euros.»
+19-42 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-46 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-48 [dice "ninguna" pero hay opción literal] A 1.00 «Acometimiento.» | B 1.00 «Detención.» | C 1.00 «Desobediencia.»
+19-50 [dado por correcto sin apoyo literal] B 0.45 «La recompensa obtenida o que hubiera podido obtener el reo, en su caso.»
+19-55 [correcta sin apoyo literal] 0.00 «Todas las opciones anteriores son correctas.»
+19-56 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-66 [correcta sin apoyo literal] 0.33 «Delito de revelación de secretos.»
+19-67 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-68 [correcta sin apoyo literal] 0.38 «El que, en suelo no urbanizable o en suelo rustico, realizare obras de construcción o instalaciones que ocasionen la des»
+19-72 [dado por correcto sin apoyo literal] A 0.00 «Prevaricación de funcionarios públicos» | B 0.67 «Delito sobre el patrimonio histórico»
+19-78 [correcta sin apoyo literal] 0.00 «Todas las opciones anteriores son correctas»
+19-79 [INCORRECTA: otra opción también sin apoyo] A 0.25 «La explotación sexual, incluso la pornografía»
+19-79 [INCORRECTA marcada pero literal en el texto] 1.00 «La explotación para realizar actividades delictivas»
+19-97 [INCORRECTA: otra opción también sin apoyo] B 0.70 «El Juez o Magistrado que se arrogue atribuciones administrativas de las que carezca, o impidiere su legítimo e»
+19-98 [correcta sin apoyo literal] 0.46 «Quien aceche a una persona llevando a cabo de forma insistente y reiterada conductas que sin estar autorizadas legítimam»
+19-101 [correcta sin apoyo literal] 0.00 «Destrucción de documentos»
+19-103 [otra opción más literal que la correcta] A 1.00 «Título XXII. Delitos contra el orden público» vs correcta 0.67
+19-111 [INCORRECTA: otra opción también sin apoyo] B 0.25 «Se trate de hechos cometidos por persona con responsabilidades de gestión en una entidad» | C 0.54 «Se trate de hechos cometidos abusando de una situación de emergencia o de desgracia ajena»
+19-122 [otra opción más literal que la correcta] A 1.00 «Delito contra los recursos naturales.» | C 1.00 «Delito ecológico.» vs correcta 0.67
+19-130 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-137 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-139 [correcta sin apoyo literal] 0.00 «Todas las opciones son correctas.»
+19-150 [correcta sin apoyo literal] 0.00 «Todas las anteriores»
+19-163 [dado por correcto sin apoyo literal] B 0.76 «Los que, si hicieren públicamente, portando armas o otros instrumentos peligrosos, intentaren penetrar en las »
+19-187 [otra opción más literal que la correcta] C 1.00 «Castigado como autor de un delito contra la paz pública» vs correcta 0.50
+19-188 [correcta sin apoyo literal] 0.00 «Malicia o negligencia grave»
+19-190 [dado por correcto sin apoyo literal] C 0.79 «Que la utilización de personas físicas o jurídicas o de entidades de personalidad jurídica interpuesta, respec»
+19-195 [correcta sin apoyo literal] 0.00 «Ánimo de ofensa.»
+19-203 [INCORRECTA: otra opción también sin apoyo] A 0.25 «Si hubiese mediado ensañamiento o atrocidad.» | C 0.79 «Si en la agresión se hubiese utilizado armas, instrumentos, objetos, medios, métodos o formas concretamente pe»
+19-208 [correcta sin apoyo literal] 0.43 «De los cometidos por profesionales contra otros derechos individuales.»
+19-218 [correcta sin apoyo literal] 0.00 «Vigésima segunda semana»
+19-219 [INCORRECTA: otra opción también sin apoyo] B 0.63 «El que exponga moneda falsa o alterada o la imponga a España o cualquier otro Estado miembro de la Unión Europ» | C 0.54 «El que empleare, expusiere o distribuyere moneda falsa o alterada con conocimiento de su falsedad»
+19-221 [INCORRECTA marcada pero literal en el texto] 1.00 «Por imprudencia grave»
+19-222 [INCORRECTA: otra opción también sin apoyo] A 0.53 «Una vez que se manifieste la rebeldía, la autoridad gubernativa intimará a los sediciosos a que inmediatamente» | D 0.65 «Si los sediciosos no depusieran su actitud inmediatamente después de la intimación, la autoridad hará uso de u»
+19-229 [INCORRECTA: otra opción también sin apoyo] C 0.77 «Que el delito se hubiera cometido por quien perteneciera a un grupo u organización criminal.»
+19-242 [INCORRECTA marcada pero literal en el texto] 1.00 «Faltando a la verdad en la narración de los hechos.»
+19-249 [correcta sin apoyo literal] 0.00 «Ambas son correctas»
+19-251 [correcta sin apoyo literal] 0.00 «La adquisición y la enajenación»
+19-253 [dado por correcto sin apoyo literal] A 0.00 «Las reuniones ilícitas» | B 0.00 «Las manifestaciones ilícitas»
+19-259 [INCORRECTA marcada pero literal en el texto] 1.00 «Impedir la libre celebración de elecciones para cargos públicos»
+19-260 [INCORRECTA marcada pero literal en el texto] 1.00 «Adquiera productos o mercancías, o contrate servicios, o haga que terceras personas se pongan en contacto con »
+19-268 [correcta sin apoyo literal] 0.00 «Inducción a la guerra.»
+19-273 [otra opción más literal que la correcta] B 1.00 «Falso testimonio.» | C 1.00 «Obstrucción a la justicia y la deslealtad profesional.» | D 1.00 «Simulación de delitos.» vs correcta 0.50

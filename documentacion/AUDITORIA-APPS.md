@@ -6,7 +6,6 @@ Generado por `prompts/herramientas/auditoria-apps.js` (solo lectura).
 - Ninguno
 
 ## Avisos
-- 2 archivos de datos no están en APP_SHELL: expres/q10.js, esquemas-datos/t18.js
 - Opciones repetidas dentro de la pregunta 23-125
 - Opciones repetidas dentro de la pregunta 23-129
 - 87 explicaciones con restos de importación («TEST n», «He analizado…»)
@@ -19,7 +18,7 @@ Generado por `prompts/herramientas/auditoria-apps.js` (solo lectura).
 
 ## Datos
 - Sintaxis comprobada: 54 scripts inline y 152 archivos .js
-- Caché del service worker: oposicion-cache-v441 · 174 archivos en APP_SHELL
+- Caché del service worker: oposicion-cache-v442 · 176 archivos en APP_SHELL
 - Preguntas IA leídas de los bloques «seed»: 9325
 - Test de conocimientos: 16336 preguntas en 27 temas
 
