@@ -8,6 +8,7 @@ case $T in
  13) TIT="Tema 13 · Jurisdicción contencioso-administrativa"; PDF="TEMA 13 JURISDICCION CONTENCIOSO ADMINISTRATIVA-2026-08-08 .pdf";;
  16) TIT="Tema 16 · Igualdad entre mujeres y hombres"; PDF="TEMA 16 IGUALDAD MUJERES Y HOMBRES-2026-08-08.pdf";;
  17) TIT="Tema 17 · Responsabilidad penal de los menores"; PDF="TEMA 17 MENORES-2026-08-08.pdf";;
+ 18) TIT="Tema 18 · Derecho penal, parte general"; PDF="TEMA 18 DERECHO PENAL PARTE GENERAL-2026-08-08.pdf";;
  15) TIT="Tema 15 · Protección integral contra la violencia de género"; PDF="TEMA 15 VIOGEN-2026-08-08.pdf";;
  1) TIT="Tema 1 · Derechos humanos"; PDF="TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf";;
  7) TIT="Tema 7 · Constitución Española"; PDF="TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf";;
