@@ -337,3 +337,18 @@ Cuando el tema esté cerrado en Esquemas (preguntas auditadas, esquema con marca
 - Preguntas rápidas del Exprés reescritas a mano (`rapidas-mostradas.js N` → `rapidas-reescritas/tN-a.json` → `preguntas-rapidas.js N`).
 - Exprés subrayado: cadena apartados → config → recortes → datos, preguntas sin botón = 0, recortes manuales de los artículos que el OCR no separa (ver «Lecciones del Tema 18» en PROMPT_EXPRES_SUBRAYADO.md).
 - Cajas de trampas, cuadros contra el PDF (colores/contenido), móvil e impresión: revisar y, si no se pudo, decirlo claramente.
+
+## FORMATO DE LA EXPLICACIÓN — REGLA FIJA (pauta del usuario, 03/11/2026; sustituye a cualquier formato anterior)
+Vale para TODA pregunta de test de conocimientos, oficial o IA, y para las que se añadan en los temas que quedan por hacer. El recuadro se ve siempre con este orden y nada más:
+1. ✅ Correcto / ❌ Incorrecto (lo pone la app).
+2. «Respuesta correcta: X · <respuesta>» (`ex-resp` + `<mark class="ex-key">`).
+3. **Lila** (`<span class="ref-norma">`): **«Art. 15.1 · Ley Orgánica 5/2000, de 12 de enero…»**, es decir, localizador exacto (Art. N.apartado, Punto 9.1.5, Disposición adicional X, letra) + nombre de la norma. **Nunca** solo el nombre del apartado o del tema («Responsabilidad Penal de los Menores»).
+4. **Rojo** (`<span class="ref-concepto">`): el **literal del temario oficial** de la respuesta correcta (no de la pregunta, no del PDF subrayado). Sin «dispone:», «Según el…», «El art.…» ni «(verificado con el temario oficial)».
+5. Texto normal: **explicación breve de la IA** (por qué es esa y por qué fallan las otras) para que la pregunta sirva también de repaso.
+6. Origen: «(Pregunta de test oficial)», «(Pregunta de examen oficial)» o «(Pregunta generada por IA)» (la app lo añade sola).
+Plantilla: `"explicacion":"<span class=\"ex-resp\">Respuesta correcta: <b>A</b> · <mark class=\"ex-key\">respuesta</mark></span><span class=\"ref-norma\">Art. X.Y · <norma></span><span class=\"ref-concepto\">\"literal\"</span>Explicación breve."`
+Reglas de banco que acompañan a esta:
+- **Sin repetidas:** no crear una pregunta con el mismo enunciado y la misma respuesta que otra del tema (el test además descarta las repetidas al montarse; si hay oficial e IA iguales, queda la oficial).
+- **IA: la correcta NO puede ser la opción más larga** (alarga o acorta las falsas hasta igualar longitudes).
+- Sin restos de importación («TEST n», «He analizado las imágenes…»).
+- La app ordena y limpia lo que ya existe (`normalizarExplicacion` en test-oficial-conocimiento.html) y completa artículo y literal con `esquemas-datos/citas-preguntas.js` (generado desde el esquema por `prompts/herramientas/citas-preguntas.js`, ver documentacion/CITAS-PREGUNTAS.md). Aun así, **al crear preguntas nuevas escribe ya la explicación completa en este formato**; lo que el esquema no pueda dar (T19–T27 y preguntas sin sitio en el esquema) se completa a mano contra el temario oficial. Tras cambios en un esquema o en el mapa, regenera `citas-preguntas.js`.
