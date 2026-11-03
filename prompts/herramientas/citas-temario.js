@@ -23,20 +23,29 @@ function nombre(t) {
   s = s.charAt(0).toUpperCase() + s.slice(1);
   return s.replace(/\b(ley|real decreto|org[aá]nica|decreto|orden|instrucci[oó]n|c[oó]digo|penal|civil|reglamento|constituci[oó]n|estatuto|directiva|espa[nñ]ola|guardia|estado|seguridad|ministerio|interior)\b/g, w => w.charAt(0).toUpperCase() + w.slice(1)).replace(/^(de|del|la|las|los|el)\b/, w => w.charAt(0).toUpperCase() + w.slice(1));
 }
+// Temas cuyo texto junta varias normas sin «TEXTO CONSOLIDADO»: [línea de inicio, nombre de la norma, tipo de localizador]
+const DOCS = {
+  27: [[0, "Principios Básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley (ONU, 1990)", "Principio"],
+       [397, "Resolución 690 (1979) de la Asamblea Parlamentaria del Consejo de Europa. Declaración sobre la Policía", "Punto"],
+       [590, "Recomendación Rec. (2001) 10 del Comité de Ministros. Código Europeo de Ética de la Policía", "Punto"],
+       [1000, "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del personal de la Guardia Civil", "Art."]]
+};
 function segmentar(tema) {
+  const docs = DOCS[tema] || [];
   const L = fs.readFileSync(path.join(DIR, "t" + tema + ".txt"), "utf8").split(/\r?\n/).map(l => l.replace(/\f/g, ""));
   const unidades = []; let norma = "", art = "", titArt = "", par = "", buf = [];
-  const volcar = () => { const t = buf.join(" ").replace(/\s+/g, " ").replace(/(\w)- (\w)/g, "$1$2").trim(); buf = []; if (t.length > 25 && art) unidades.push({ norma, art, par, t }); };
+  let iLin = 0; const docDe = () => { let d = null; docs.forEach(x => { if (iLin >= x[0]) d = x; }); return d; };
+  const volcar = () => { const t = buf.join(" ").replace(/\s+/g, " ").replace(/(\w)- (\w)/g, "$1$2").trim(); buf = []; const d = docDe(); if (d && d[2] !== "Art." && (par || /^\d+\.\s/.test(t))) unidades.push({ norma: d[1], art: "", par: (t.match(/^(\d+)\.\s/) || [, par])[1], t, kind: d[2] }); else if (t.length > 25 && (art || par) && !(d && d[2] === "Art." && !art)) unidades.push({ norma: d ? d[1] : norma, art, par, t }); };
   for (let i = 0; i < L.length; i++) {
-    const l = L[i].trim();
+    iLin = i; const l = L[i].trim();
     if (/^TEXTO CONSOLIDADO$/i.test(l)) { // el título de la norma son las líneas en mayúsculas inmediatamente anteriores
       let j = i - 1, tit = []; while (j >= 0 && !L[j].trim()) j--;
       while (j >= 0 && L[j].trim() && L[j].trim() === L[j].trim().toUpperCase() && tit.length < 4) { tit.unshift(L[j].trim()); j--; }
       if (tit.length) norma = nombre(tit.join(" ")); continue;
     }
-    const ma = l.match(/^Art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies))?)\.?\s*(.*)$/);
+    const dd = docDe(); const ma = (dd && dd[2] !== "Art.") ? null : l.match(/^Art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies))?)\.?\s*(.*)$/);
     if (ma) { volcar(); art = ma[1].replace(/\s+/g, " "); titArt = ma[2]; par = ""; continue; }
-    if (/^(Disposici[oó]n (?:adicional|transitoria|derogatoria|final)\s+\S+)\.?/i.test(l) && !buf.length) { volcar(); art = l.match(/^(Disposici[oó]n [a-záéíóú]+\s+\S+)/i)[1]; par = ""; continue; }
+    if (!(dd && dd[2] !== "Art.") && /^(Disposici[oó]n (?:adicional|transitoria|derogatoria|final)\s+\S+)\.?/i.test(l) && !buf.length) { volcar(); art = l.match(/^(Disposici[oó]n [a-záéíóú]+\s+\S+)/i)[1]; par = ""; continue; }
     if (!l) { if (buf.length) { volcar(); } continue; }
     const mp = l.match(/^(\d+)\.\s+\S/);
     if (mp && !buf.length) par = mp[1];
@@ -57,7 +66,8 @@ function frase(u, q) {
   if (lit.length > 420) lit = lit.slice(0, 420).replace(/\s+\S*$/, "") + "…";
   return lit;
 }
-const out = {}; const informe = [];
+const out = {}; const informe = []; const cands = {};
+const ACEPT = new Set(); try { JSON.parse(fs.readFileSync(path.join(__dirname, "citas-aceptadas.json"), "utf8")).forEach(i => ACEPT.add(i)); } catch (e) {}
 for (const tema of TEMAS) {
   if (!fs.existsSync(path.join(DIR, "t" + tema + ".txt"))) continue;
   const U = segmentar(tema); const idx = new Map(); // token -> unidades
@@ -70,7 +80,8 @@ for (const tema of TEMAS) {
     const tieneLit = /ref-concepto/.test(ex) || /["«“][^"»”]{12,}["»”]/.test(ex.replace(/<[^>]+>/g, ""));
     if ((tieneArt && tieneLit) || previas[q.id]) continue;
     falta++;
-    const A = [...new Set(toks(q.opciones[q.correcta]))].filter(w => !STOP.has(w)), P = [...new Set(toks(q.pregunta))].filter(w => !STOP.has(w));
+    const neg = /\b(incorrect|falsa|no es|no se|excepto|salvo)/i.test(q.pregunta);
+    const A = [...new Set(toks(neg ? q.opciones.join(" ") : q.opciones[q.correcta]))].filter(w => !STOP.has(w)), P = [...new Set(toks(q.pregunta))].filter(w => !STOP.has(w));
     const hint = (txt(ex) + " " + q.pregunta).match(/\bart(?:[íi]culos?|s?\.)\s*(\d+)/i); const hArt = hint && hint[1];
     const pref = q.pregunta.split(/\.\s/)[0].slice(0, 160);
     const num = (pref.match(/\d+\/\d{4}/) || [])[0];
@@ -80,14 +91,16 @@ for (const tema of TEMAS) {
       A.forEach(w => { const v = idf(w); ta += v; if (u.w.has(w)) sa += v; }); P.forEach(w => { const v = idf(w); tp += v; if (u.w.has(w)) sp += v; });
       let s = (ta ? sa / ta : 0) * 2 + (tp ? sp / tp : 0); if (hArt && u.art === hArt) s += 0.8;
       if (s > ms) { seg = ms; ms = s; mejor = u; mejor.ca = ta ? sa / ta : 0; mejor.cp = tp ? sp / tp : 0; } else if (s > seg) seg = s; });
-    if (!mejor || ms < 1.6 || ms - seg < 0.05 || mejor.ca < 0.5 || mejor.cp < 0.25) { dudosas++; continue; }
+    const flojo = !mejor || ms < 1.6 || ms - seg < 0.05 || mejor.ca < 0.5 || mejor.cp < 0.25;
+    if (flojo && !(mejor && ACEPT.has(q.id))) { dudosas++; if (mejor) cands[q.id] = { loc: !mejor.art ? (mejor.kind || "Punto") + " " + mejor.par : "Art. " + mejor.art + (mejor.par ? "." + mejor.par : ""), n: mejor.norma.slice(0, 40), t: mejor.t.slice(0, 170), s: +ms.toFixed(2) }; continue; }
     let nom = mejor.norma;
     if (!/^(Ley|Real|Orden|C[oó]digo|Instrucci|Decreto|Constituci|Reglamento|Directiva|Convenio|Tratado|Estatuto)/i.test(nom)) nom = pref.replace(/\.$/, "");
-    const loc = /^Disposici/i.test(mejor.art) ? mejor.art : "Art. " + mejor.art + (mejor.par ? "." + mejor.par : "");
+    const loc = !mejor.art ? (mejor.kind || "Punto") + " " + mejor.par : /^Disposici/i.test(mejor.art) ? mejor.art : "Art. " + mejor.art + (mejor.par ? "." + mejor.par : "");
     out[q.id] = [loc, frase(mejor, q), nom]; ok++;
   }
   informe.push("T" + tema + ": sin cita completa " + falta + " · resueltas " + ok + " · dudosas " + dudosas);
 }
 fs.writeFileSync(path.join(ROOT, "esquemas-datos/citas-temario.js"), "window.CITAS_PREG=Object.assign(window.CITAS_PREG||{}," + JSON.stringify(out) + ");\n");
 console.log(informe.join("\n"), "\ntotal:", Object.keys(out).length);
+fs.writeFileSync(path.join(DIR, "candidatas.json"), JSON.stringify(cands));
 fs.writeFileSync(path.join(DIR, "informe-citas.txt"), JSON.stringify(out, null, 1));

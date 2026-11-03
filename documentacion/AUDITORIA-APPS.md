@@ -10,7 +10,7 @@ Generado por `prompts/herramientas/auditoria-apps.js` (solo lectura).
 - Opciones repetidas dentro de la pregunta 23-129
 - 87 explicaciones con restos de importación («TEST n», «He analizado…»)
 - 289 preguntas repetidas (mismo enunciado y misma respuesta) dentro de un mismo tema
-- 1995 preguntas sin norma en lila (ref-norma) en la explicación (ver tabla por tema)
+- 1981 preguntas sin norma en lila (ref-norma) en la explicación (ver tabla por tema)
 - 224 preguntas IA cuya respuesta correcta es la opción más larga (regla del examinador: no debe serlo)
 - esquemas-datos/mapa-preguntas.js enlaza 19 preguntas que ya no existen: 4-ia-553, 4-ia-554, 4-ia-555, 4-ia-556, 4-ia-557, 4-ia-558, 4-ia-559, 4-ia-560…
 - MARCAS_PREG (test) enlaza 10 preguntas que ya no existen: 4-ia-553, 4-ia-554, 4-ia-555, 4-ia-556, 4-ia-557, 4-ia-562, 4-ia-568, 4-ia-569…
@@ -18,7 +18,7 @@ Generado por `prompts/herramientas/auditoria-apps.js` (solo lectura).
 
 ## Datos
 - Sintaxis comprobada: 54 scripts inline y 153 archivos .js
-- Caché del service worker: oposicion-cache-v443 · 177 archivos en APP_SHELL
+- Caché del service worker: oposicion-cache-v445 · 177 archivos en APP_SHELL
 - Preguntas IA leídas de los bloques «seed»: 9325
 - Test de conocimientos: 16336 preguntas en 27 temas
 
@@ -43,7 +43,7 @@ Generado por `prompts/herramientas/auditoria-apps.js` (solo lectura).
 | T16 | 322 | 140 | 182 | 0 | 11 | 0 | 4 | 100% | sí | 54 | 36 |
 | T17 | 632 | 280 | 352 | 105 | 163 | 6 | 6 | 100% | sí | 64 | 61 |
 | T18 | 664 | 294 | 370 | 132 | 169 | 5 | 7 | 97% | sí | 114 | 114 |
-| T19 | 275 | 275 | 0 | 59 | 275 | 0 | 4 | 0% | — | — | — |
+| T19 | 275 | 275 | 0 | 45 | 231 | 0 | 4 | 0% | — | — | — |
 | T20 | 217 | 217 | 0 | 186 | 217 | 9 | 0 | 0% | — | — | — |
 | T21 | 248 | 248 | 0 | 247 | 248 | 12 | 0 | 0% | — | — | — |
 | T22 | 203 | 203 | 0 | 116 | 203 | 4 | 0 | 0% | — | — | — |
