@@ -21,6 +21,7 @@ Preguntas del T20 sin cita en `esquemas-datos/citas-manual-t20.js`. Texto de ref
 - **20-89 / 20-210** (Art. 367 quáter.1): la ley dice «expreso abandono», gastos «superiores» al valor y «no haga manifestación alguna»; las opciones lo alteran.
 - **20-92** (Art. 766.1): los recursos de reforma y apelación **no** suspenden el procedimiento (A es la incorrecta, no D).
 - **20-93** (Art. 15): el orden es 1.º pruebas materiales, 2.º aprehendido; la opción A invierte el orden.
+- **20-211** (Art. 588 quater b.2): el requisito es pena con límite máximo de «al menos tres años» (la opción A dice dos); y la D no es un delito sino el requisito b). Incorrecta más probable: A.
 - **20-94** (Art. 588 bis b.2): todos los datos A–D figuran en la solicitud (6.º forma de ejecución, 1.º, 4.º, 8.º); no hay ninguna incorrecta.
 - **20-98** (Art. 968): el nuevo señalamiento es «dentro de los siete siguientes», no cinco.
 - **20-102** (Art. 770.1): la multa es «sin perjuicio de la responsabilidad criminal» (B), no disciplinaria.
