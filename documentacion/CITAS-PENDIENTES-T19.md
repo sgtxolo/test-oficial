@@ -1,5 +1,7 @@
 # Citas pendientes del Tema 19
 
+> **Revisión 04/11/2026:** las preguntas de este archivo se han vuelto a revisar; las corregidas están en `CITAS-CORREGIDAS-T20-T27.md` y las que siguen sin resolver (con el motivo) en `DECISIONES-CITAS.md`.
+
 Preguntas del T19 sin cita (lila/rojo) en `esquemas-datos/citas-manual-t19.js` porque el literal del temario oficial (Código Penal, Libro II, texto vigente) **contradice la respuesta marcada como correcta** o no se ha localizado. No se ha cambiado ninguna respuesta; hay que decidir caso por caso.
 
 ## 19-7

@@ -1,5 +1,7 @@
 # Citas pendientes T26–T27 (estado tras la revisión manual del 03/11/2026)
 
+> **Revisión 04/11/2026:** las preguntas de este archivo se han vuelto a revisar; las corregidas están en `CITAS-CORREGIDAS-T20-T27.md` y las que siguen sin resolver (con el motivo) en `DECISIONES-CITAS.md`.
+
 Hecho: T27 (salvo 2), T26 (salvo 30), T15–T17 (ver abajo). Correcciones en `CITAS-CORREGIDAS-T26.md` / `-T27.md`; eliminadas en `CITAS-ELIMINADAS-T26-T27.md`.
 
 ## T27 — pendientes (2)

@@ -1,5 +1,7 @@
 # Citas pendientes T22 y T23
 
+> **Revisión 04/11/2026:** las preguntas de este archivo se han vuelto a revisar; las corregidas están en `CITAS-CORREGIDAS-T20-T27.md` y las que siguen sin resolver (con el motivo) en `DECISIONES-CITAS.md`.
+
 > **Resuelto (04/11/2026):** todas las preguntas de esta lista se han corregido, citado o eliminado. Ver `CITAS-CORREGIDAS-T22-T23.md` y `CITAS-ELIMINADAS-T22-T23.md`.
 
 Preguntas sin cita en `esquemas-datos/citas-manual-t22.js` / `citas-manual-t23.js` porque la respuesta marcada contradice el texto oficial del extracto (`prompts/herramientas/_citas/t22.txt`, `t23.txt`), las opciones están corruptas, o el texto no está en el extracto. No se ha cambiado ninguna respuesta: hay que decidir.

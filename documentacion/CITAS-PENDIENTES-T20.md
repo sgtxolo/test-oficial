@@ -1,5 +1,7 @@
 # Citas pendientes T20 (LECrim) — para revisión
 
+> **Revisión 04/11/2026:** las preguntas de este archivo se han vuelto a revisar; las corregidas están en `CITAS-CORREGIDAS-T20-T27.md` y las que siguen sin resolver (con el motivo) en `DECISIONES-CITAS.md`.
+
 Preguntas del T20 sin cita en `esquemas-datos/citas-manual-t20.js`. Texto de referencia: `prompts/herramientas/_citas/t20.txt` (LECrim consolidada). No se ha cambiado ninguna respuesta; si el literal desmiente la marcada o el enunciado está estropeado, se anota aquí.
 
 ## El texto vigente contradice la respuesta marcada

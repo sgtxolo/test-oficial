@@ -1,5 +1,7 @@
 # Citas pendientes del Tema 21
 
+> **Revisión 04/11/2026:** las preguntas de este archivo se han vuelto a revisar; las corregidas están en `CITAS-CORREGIDAS-T20-T27.md` y las que siguen sin resolver (con el motivo) en `DECISIONES-CITAS.md`.
+
 Fuente: `prompts/herramientas/_citas/t21.txt` (temario oficial limpio). Estas preguntas NO llevan cita en `esquemas-datos/citas-manual-t21.js` porque el literal del temario contradice la respuesta marcada (no se ha cambiado ninguna respuesta) o porque no se ha encontrado el texto. Revisar con el usuario.
 
 ## El literal contradice la respuesta marcada

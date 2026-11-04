@@ -1,5 +1,7 @@
 # Citas pendientes T24 y T25
 
+> **Revisión 04/11/2026:** las preguntas de este archivo se han vuelto a revisar; las corregidas están en `CITAS-CORREGIDAS-T20-T27.md` y las que siguen sin resolver (con el motivo) en `DECISIONES-CITAS.md`.
+
 Preguntas sin lila/rojo en `citas-manual-t24.js` y `citas-manual-t25.js`. No se ha cambiado ninguna respuesta marcada.
 
 ## T24
