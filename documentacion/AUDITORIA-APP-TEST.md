@@ -90,6 +90,10 @@ Se ha trabajado el **Tema 13** (Ley 29/1998, Jurisdicción Contencioso-administr
 - Pendiente en el Tema 13 (necesita el temario): 12 oficiales sin literal en rojo y ~32 sin explicación breve.
 - Pendiente en el resto: T6 (79), T13 hecho, T14 (9), T8 (4), T7 (1), T9 (1) con la correcta más larga; los 6 temas sin IA; las explicaciones breves.
 
+## Correcta más larga: resuelto en todos los temas (CACHE v471)
+Con la ayuda de 4 sesiones en paralelo se aplicaron 204 ediciones más (T6: 176, T14/T8/T7/T9: 28): **0 preguntas IA con la correcta como opción más larga en todo el banco**. No cambia ninguna respuesta ni explicación.
+Pendiente de revisar a ojo (las propias sesiones los marcaron): 6-ia-1038, 1101, 1128, 1129, 1146, 1242, 1249, 1436, 1441 y 1619.
+
 ## Prioridad recomendada (original)
 1. `defer` en pdf.js (una línea, el mayor efecto en móvil).
 2. Estadísticas en modo sin corrección inmediata (actualizar `qStats` con la respuesta final).

@@ -43,3 +43,18 @@ Probado con Playwright (Chromium, móvil 390×844 y 360×800): los 5 paneles (In
 3. Tabla de Reported Speech con desplazamiento propio en móvil.
 4. Cronómetro de los simulacros con hora real, quitar el «>» suelto, permitir el zoom y llevar la barra al 100 %.
 5. Banco (por temas): completar las 88 preguntas de 2–3 opciones, quitar las 62 repetidas por la vía que se decida (los ids son posicionales: **no se puede borrar**, hay que corregir en su sitio), y ampliar las 117 explicaciones de una palabra.
+
+## Estado tras las correcciones (CACHE v470–v471)
+Corregido y verificado con Playwright:
+- **Opciones repartidas**: ahora A/B/C/D salen al ~25 % cada una. Se permutan al arrancar con una semilla fija por pregunta (el banco y los ids `Q<índice>` no cambian, y lo guardado en el historial sigue coincidiendo). No se baraja si una opción remite a otras («Both», «A and B»…) o si la explicación cita una letra. Los tests ya guardados antes del cambio pueden mostrar la opción elegida en otra posición al revisarlos.
+- **Guardado seguro** (`saveStateEN` con `try/catch` y aviso en pantalla).
+- **Tablas**: `.tbl-wrap` no tenía estilo; ahora desplaza dentro de la tabla y la página ya no se ensancha (390 px).
+- **Cronómetro de simulacros** con hora real; **«>» suelto** eliminado; **barra al 100 %** en el resultado; **zoom con los dedos** (iPhone/Android) permitido.
+- **Repetidas**: 59 se marcan y se excluyen de los bancos (no se borran: ids posicionales).
+- Herramienta nueva `prompts/herramientas/ingles-banco.js` (listar y aplicar ediciones por referencia B/G/E).
+
+**Pendiente (sesiones en marcha; mañana unir sus ramas)**: se lanzaron 9 sesiones que solo suben JSON de ediciones a `documentacion/ediciones-ingles/`:
+`claude/ingles-tr-a|b|c` (traducciones, 1021), `claude/ingles-dif-a|b` (dificultad, 928), `claude/ingles-fb-a|b|c` (explicaciones de 1–2 palabras, 1182) y `claude/ingles-opts` (completar 75 preguntas de 2–3 opciones).
+Para unirlas: bajar cada rama, copiar su JSON, `node prompts/herramientas/ingles-banco.js aplicar <json>` (sin y con `--aplicar`), `node --check`, subir CACHE, commit y push.
+
+**No se hará**: la correcta más larga en 1971 preguntas de gramática (alargar distractores de una palabra empeoraría la pregunta; con las opciones repartidas el sesgo de posición ya no existe) y la clave de Gemini sin cifrar (app personal sin servidor).
