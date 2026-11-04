@@ -14,11 +14,16 @@ Comprobado: la corrección es por índice (`seleccionar`), marca ✅/❌ y pinta
 4. **Móvil**: `.q-wrap` pasa de 30 px a 130 px de relleno inferior; al hacer scroll al final, la explicación queda por encima del micrófono flotante.
 5. **Offline**: el service worker sirve los `.js` con «red primero» (con espera de 4 s y caída a la copia guardada), igual que las páginas, para no mezclar HTML nuevo con datos antiguos. Probado con Playwright sobre http: se instala, controla la página y recarga sin red con el banco (27 temas) y las citas cargados.
 
+## Tercera tanda (CACHE v467): erratas del banco
+- Herramienta nueva `prompts/herramientas/limpia-erratas-banco.js` (sustituciones de texto exacto con recuento; sin `--aplicar` solo cuenta).
+- Corregidos 81 restos de importación: dígitos de nota al pie pegados dentro de palabras («obligat1orio», «ca4so», «aleg1ato», «pú1blica»…) y números de nota al final de frase («expulsión.3», «buque.5», «VIS.3»), más «de de», «administrativa administrativa», «Toda las opciones son correctas» → «Todas…» (21-32) y «O y D son correctas» → «C y D son correctas» (24-81; encaja con las opciones y la explicación).
+- No tocados (necesitan el temario): 26-19 «Si y C son correctas.» (la correcta es B, «El derecho»; no se sabe qué letras quería decir); el texto OCR muy degradado de 21-32 («funcionario consultar», «pie de ofensa consulta»); y los números tras el punto en las **explicaciones** («art. 8 bis.1», «24 horas.24»), que en su mayoría son legítimos o necesitan revisión manual.
+
 ## Mejoras opcionales (no implementadas)
-- **Preguntas repetidas en el banco**: 216 pares con el mismo enunciado y respuesta (el test ya las descarta al montarse, pero conviene limpiarlas del banco).
+- **Preguntas repetidas en el banco**: 211 grupos (221 copias; 3 grupos más aparecieron al corregir erratas), todas oficiales entre sí. Listadas en `documentacion/REPETIDAS-BANCO-TEST.md`; sin borrar (decisión del usuario: las oficiales no se borran). El test ya las descarta al montarse.
 - **Referencias a letras sin cubrir**: opciones tipo «Solo la primera y la tercera» no se detectan; revisar a mano.
 - **Opciones de remisión con errata** (no se barajan gracias a una regla genérica, pero conviene corregirlas): 21-32 «Toda las opciones son correctas.», 24-81 «O y D son correctas.», 26-19 «Si y C son correctas.».
-- **Erratas en opciones del banco** (p. ej. «Todas son cometidas.», «Hacer que se examine su ca4so.», «…ante esos acciones»): pasar un barrido de erratas.
+- **Erratas del banco**: ver sección «Tercera tanda».
 - **Cabecera «Tema»**: si la pregunta llega sin `temaId` se ve solo «Tema»; mostrar el tema por el prefijo del id (`N-…`).
 - **Service worker**: `./expres-subrayado/bloques-t2.js` está duplicado en `APP_SHELL` (inofensivo).
 - **Peso**: 20 MB de HTML (el banco va inline). Partir el banco en `preguntas/tN.js` cargados bajo demanda reduciría el arranque en móvil.
