@@ -44,3 +44,14 @@ El texto anterior está en el historial de git.
 - **26-38**: El art. 24 dice «el derecho y deber de defender España de acuerdo con lo previsto en la legislación orgánica de defensa nacional» (sin «la Constitución»). Respuesta A → D.
 - **26-197**: El art. 65.5 atribuye la determinación de ciclos al Ministro de Defensa. Respuesta D → B.
 - **26-187**: B «Asistencia integral y colectiva» → «integral y especializada» (apartado quinto 1 g) para que «todas las anteriores» sea cierta.
+- **26-94**: El apartado octavo asigna el informe sobre la evolución del acoso a la Jefatura de Asistencia al Personal (el Servicio de Régimen Disciplinario solo estandariza la recogida de datos). Respuesta A → C.
+- **26-131**: El apartado sexto fija treinta días desde la recepción de la comunicación (texto del protocolo de acoso laboral; el del protocolo sexual tiene la cifra ilegible en el OCR y es idéntico en estructura). Respuesta B (diez) → D (treinta).
+- **26-155**: La formación continua para mandos del apartado quinto 5.1 b) corresponde a la Jefatura de Asistencia al Personal («…al Personal, especialmente por sus Servicios de Psicología»). Respuesta A (Jefatura de Enseñanza) → C.
+- **26-34**: A reescrita con el literal del art. 38.1 para que «todas son correctas» sea cierta.
+- **26-80**: D decía «asociarse»; reescrita con el literal del art. 38.2 para que solo B (transparencia y oportunidad) sea incorrecta.
+- **26-109**: A era literal del art. 36 (parcial) y por tanto correcta; se cambia «sociales» por «políticos» para que sea la incorrecta.
+- **26-126**: La B es literal del art. 18.5; la falsa es la C (la suspensión de haberes y servicios sí conlleva la pérdida de retribuciones: art. 18.7). Respuesta B → C.
+- **26-164**: C reescrita con el literal del art. 54.1 d) para que solo D («Planes de permisos…», que es «Régimen de permisos…») sea incorrecta.
+- **26-178**: El art. 54.1 enumera condiciones de trabajo, régimen retributivo, programas de enseñanza y régimen de permisos; «condiciones de destino» no figura. Respuesta D → A.
+- **26-209**: El art. 5.1 no incluye el 8 de diciembre; A–C son literales. Respuesta A → D.
+- **26-173**: El art. 18.3 c) enumera Suboficial Mayor, Subteniente, Brigada, Sargento Primero y Sargento; Cabo Mayor pertenece a cabos y guardias. Respuesta A → B.
