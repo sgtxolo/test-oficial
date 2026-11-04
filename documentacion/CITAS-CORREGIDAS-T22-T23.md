@@ -84,3 +84,5 @@ El texto anterior está en el historial de git (commit previo a esta revisión).
 ## T23 — preguntas IA (50)
 
 Las 50 IA de T23 (`23-ia-1` … `23-ia-50`) pasan al formato fijo de explicación: ✅/❌ → respuesta correcta → lila con artículo y nombre completo de la ley → rojo con el literal (comprobado palabra por palabra contra `t23.txt`) → explicación breve. Antes llevaban «Art. N · Seguridad Privada» (apartado del temario, no norma), el literal embebido en prosa y párrafos largos. No se ha cambiado ninguna respuesta ni opción de las IA.
+
+Además, en las 49 IA de T23 con «Según el artículo N…» en el enunciado se ha quitado el número de artículo (ahora «Según la Ley 5/2014…»); solo `23-ia-3` lo conserva porque pregunta precisamente qué artículo regula el ámbito de aplicación. Las opciones y respuestas no cambian.
