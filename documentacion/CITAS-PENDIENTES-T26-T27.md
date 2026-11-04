@@ -6,8 +6,8 @@ Hecho: T27 (salvo 2), T26 (salvo 30), T15–T17 (ver abajo). Correcciones en `CI
 - 27-162 («Investigaciones de policía», incorrecta): la B («no deben fundarse exclusivamente en el testimonio…») no figura en el punto 47 y la D altera el punto 51; dos opciones dudosas, no se corrige sin criterio.
 - 27-180 (Resolución 690, preámbulo, incorrecta): A y D están alteradas respecto al texto y C es literal; ambigua.
 
-## T26 — pendientes (30): ids 32, 34, 59, 80, 94, 109, 115, 126, 127, 131, 143, 149, 152, 155, 164, 170, 173, 178, 179, 184, 185, 186, 187, 188, 190, 192, 193, 195, 200, 209
-- Fuente disponible pero sin transcribir/comparar: el tercer protocolo del temario escaneado (violencia sobre la mujer en la GC, OCR pegado) afecta a 185–195; el protocolo de acoso sexual en su apartado de informes (94, 152, 131, 155) tiene el OCR cortado en el punto clave.
+## T26 — pendientes (27): ids 32, 34, 59, 80, 94, 109, 115, 126, 127, 131, 143, 149, 152, 155, 164, 170, 173, 178, 179, 184, 185, 190, 192, 193, 195, 200, 209
+- Fuente disponible pero sin transcribir/comparar: el tercer protocolo del temario escaneado (violencia sobre la mujer en la GC, OCR pegado) afecta a 185, 190, 192, 195; el protocolo de acoso sexual en su apartado de informes (94, 152, 131, 155) tiene el OCR cortado en el punto clave.
 - 32, 178: Art. 54 LO 11/2007 (facultades del Consejo): hay que comparar cada opción con las letras del art. 54.1; en 178 la «e) régimen de permisos, vacaciones y licencias» sí es facultad del Consejo.
 - 34, 80, 109, 115, 126, 149, 164, 193, 209: opciones truncadas o sin comparar con el art. correspondiente (arts. 38, 39, 36 y 37 LO 11/2007; art. 18 y 25-30 LO 12/2007; art. 54 LO 11/2007; en 209 la opción A es literal del art. 5.1 a) de la Orden y está marcada como incorrecta).
 - 59, 127, 143, 170, 173, 179, 200: no localizado el texto en `t26.txt` ni en el OCR (59 alumnos en servicio activo; 127 «cualidades físicas/psicológicas»; 143 quién propone los estudios; 170 categorías; 173 empleos de suboficiales; 179 medida cautelar; 200 ambigua, A–D son opciones literales).

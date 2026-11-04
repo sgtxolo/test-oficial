@@ -43,3 +43,4 @@ El texto anterior está en el historial de git.
 - **26-207**: El apartado sexto da diez días para complementar la comunicación con un primer análisis. Respuesta A (cinco) → B (diez).
 - **26-38**: El art. 24 dice «el derecho y deber de defender España de acuerdo con lo previsto en la legislación orgánica de defensa nacional» (sin «la Constitución»). Respuesta A → D.
 - **26-197**: El art. 65.5 atribuye la determinación de ciclos al Ministro de Defensa. Respuesta D → B.
+- **26-187**: B «Asistencia integral y colectiva» → «integral y especializada» (apartado quinto 1 g) para que «todas las anteriores» sea cierta.
