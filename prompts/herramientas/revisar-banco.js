@@ -8,6 +8,8 @@
 const fs = require('fs');
 const path = require('path');
 const APLICAR = process.argv.includes('--aplicar');
+const IGUALAR = process.argv.includes('--igualar-largas');
+const COLETILLAS = [', según los casos', ' en los términos legalmente previstos', ', conforme a lo que establezca la normativa de desarrollo', ', sin perjuicio de lo dispuesto en otras disposiciones aplicables', ', de acuerdo con el procedimiento que reglamentariamente se determine en cada supuesto', ', en los términos y con las excepciones que establezca la normativa de desarrollo aplicable en cada caso concreto'];
 const FILE = process.argv.slice(2).find(a => !a.startsWith('--')) || 'test-oficial-conocimiento.html';
 let s = fs.readFileSync(FILE, 'utf8');
 
@@ -56,6 +58,25 @@ const nOf = todas.length;
 const norm = x => String(x).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/<[^>]+>/g, ' ').replace(/[^a-z0-9]+/g, ' ').trim();
 const texto = x => String(x).replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 const RESTOS = /\bTEST\s*\d+\b|He analizado las im[aá]genes|analizado las im[aá]genes|\[imagen|\bIMG[_ ]\d+/i;
+// Reescrituras manuales de opciones (índice -> texto) para las IA que el script no puede igualar solo.
+const PARCHES = {
+  '6-ia-1541': { 1: 'quince días hábiles' },
+  '14-ia-38': { 1: 'Tres de los nueve puestos.' },
+  '13-ia-109': {
+    0: 'Todos los actos de los concesionarios de servicios públicos, sin excepción y con independencia de su naturaleza, ante este orden jurisdiccional.',
+    1: 'Los actos de control o fiscalización dictados por la Administración concedente sobre los concesionarios que impliquen el ejercicio de potestades administrativas, y los de los propios concesionarios cuando sean recurribles directamente según la legislación sectorial.',
+    2: 'Únicamente los actos de los concesionarios de servicios públicos locales, y no los de los concesionarios de servicios estatales o autonómicos, que quedan excluidos de este orden jurisdiccional.',
+    3: 'Solo los actos de la Administración concedente sobre contratación y ejecución del contrato, no los dictados por los propios concesionarios de servicios públicos, que quedan fuera del orden contencioso-administrativo, con arreglo a lo previsto en el contrato administrativo suscrito.' },
+  '13-ia-119': {
+    0: 'Sí, recurso de alzada ante el superior jerárquico de la Administración autora del acto, que deberá resolver en el plazo de tres meses y cuya resolución pondrá fin a la vía administrativa, sin que sea necesario requerimiento previo.',
+    1: 'Sí, recurso potestativo de reposición en todo caso, ante el mismo órgano que dictó la disposición o el acto, antes de acudir a la vía jurisdiccional contencioso-administrativa.',
+    2: 'No, y tampoco cabe requerimiento previo alguno, de modo que la Administración deberá acudir directamente a la vía jurisdiccional sin trámite ni plazo previo alguno.',
+    3: 'No, aunque la Administración que vaya a recurrir podrá requerir previamente a la otra para que derogue la disposición, anule o revoque el acto, haga cesar la actuación material o inicie la actividad debida.' },
+  '13-ia-120': {
+    0: 'La fecha del requerimiento previo formulado a la Administración y el sentido del silencio administrativo producido, si lo hubiera, transcurrido el plazo legal para resolver, con indicación del órgano ante el que se formuló.',
+    1: 'El nombre y cargo del funcionario responsable de la inactividad o de la vía de hecho, así como la fecha en que se produjo el incumplimiento.',
+    2: 'El órgano o dependencia al que se atribuya una u otra y, en su caso, el expediente de origen, o cualesquiera otros datos que identifiquen suficientemente el objeto del recurso.',
+    3: 'La cuantía del perjuicio causado por la inactividad o la vía de hecho y la resolución administrativa que lo valore o cuantifique de forma expresa.' } };
 const ops = []; // {a,b,nuevo|null,motivo}
 const inf = { dup: [], dupOfOf: [], restos: [], larga: [], fmt: [], total: todas.length, oficiales: nOf, ia: todas.length - nOf };
 
@@ -101,9 +122,21 @@ for (let i = 0; i < todas.length; i++) {
   const campos = [['pregunta', null], ['explicacion', null], ['apartado', null]];
   for (const [c] of campos) if (typeof nq[c] === 'string' && RESTOS.test(nq[c])) { const n = limpiaResto(nq[c], c); if (n !== nq[c]) { nq[c] = n; cambio = true; } inf.restos.push([q.id, c]); }
   nq.opciones = nq.opciones.map((x, k) => { if (RESTOS.test(x)) { inf.restos.push([q.id, 'op' + k]); const n = limpiaResto(x, 'op'); if (n !== x) { cambio = true; return n; } } return x; });
+  if (o.tipo === 'ia' && PARCHES[q.id]) for (const [k, v] of Object.entries(PARCHES[q.id])) if (nq.opciones[k] !== v) { nq.opciones[k] = v; cambio = true; }
   if (o.tipo === 'ia') {
     const ls = nq.opciones.map(L), c = nq.correcta, mx = Math.max(...ls);
-    if (ls[c] === mx && ls.filter(v => v === mx).length === 1 && nq.opciones.length > 1) inf.larga.push([q.id, ls[c], Math.max(...ls.filter((v, k) => k !== c))]);
+    if (ls[c] === mx && ls.filter(v => v === mx).length === 1 && nq.opciones.length > 1) {
+      const mw = Math.max(...ls.filter((v, k) => k !== c));
+      if (IGUALAR) {
+        // Alarga la falsa más larga con una coletilla neutra (no puede volverla verdadera) hasta superar a la correcta.
+        const k = ls.indexOf(mw), op = nq.opciones[k], gap = ls[c] - mw;
+        const suf = COLETILLAS.find(x => x.length >= gap);
+        if (suf && op.trim().split(/\s+/).length >= 4 && !/[:?]$/.test(op)) {
+          nq.opciones[k] = op.replace(/\.?\s*$/, '') + suf + (/\.\s*$/.test(op) ? '.' : '');
+          cambio = true; inf.igualadas = (inf.igualadas || []).concat([[q.id, k]]);
+        } else inf.larga.push([q.id, ls[c], mw]);
+      } else inf.larga.push([q.id, ls[c], mw]);
+    }
   }
   const fp = fmtProblemas(o); if (fp.length) inf.fmt.push([q.id, fp.join(', ')]);
   if (cambio) ops.push({ a: o.a, b: o.b, nuevo: JSON.stringify(nq), motivo: 'restos ' + q.id });
@@ -161,8 +194,8 @@ Preguntas revisadas: **${inf.total}** (${inf.oficiales} oficiales + ${inf.ia} IA
   - ${lst(inf.restos, r => r[0] + '·' + r[1])}
 
 ## (c) IA cuya correcta es la opción más larga
-- Detectadas: **${inf.larga.length}** (la correcta es estrictamente la más larga).
-- **No se modifican automáticamente**: igualar longitudes sin cambiar el sentido legal exige contrastar con el texto legal. Lista [id, longitud correcta, longitud máxima de las falsas] en \`_tmp/revision-banco.json\` (clave \`larga\`) y abajo:
+- Igualadas automáticamente: **${(inf.igualadas||[]).length}**. Pendientes de revisión manual: **${inf.larga.length}** (la correcta es estrictamente la más larga).
+- Con \`--igualar-largas\` se alarga la falsa más larga con una coletilla neutra (solo falsas; nunca la correcta). Quedan listadas las que no se pueden tratar por script (opciones de una palabra o enunciados con hueco). Lista [id, longitud correcta, longitud máxima de las falsas] en \`_tmp/revision-banco.json\` (clave \`larga\`) y abajo:
   - ${lst(inf.larga, l => l[0] + ' (' + l[1] + '/' + l[2] + ')')}
 
 ## (d) Explicaciones fuera del formato fijo
