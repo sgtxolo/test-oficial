@@ -1,0 +1,827 @@
+[
+ [
+  "B:723",
+  {
+   "opts": [
+    "was riding",
+    "rode",
+    "rides",
+    "was ride"
+   ]
+  }
+ ],
+ [
+  "B:846",
+  {
+   "opts": [
+    "Whose",
+    "What",
+    "Who",
+    "Where"
+   ]
+  }
+ ],
+ [
+  "B:1725",
+  {
+   "opts": [
+    "may",
+    "have to",
+    "should",
+    "would"
+   ]
+  }
+ ],
+ [
+  "B:2348",
+  {
+   "opts": [
+    "gooder as",
+    "better than",
+    "more better than",
+    "good than"
+   ]
+  }
+ ],
+ [
+  "B:2465",
+  {
+   "opts": [
+    "will be playing",
+    "will playing",
+    "will been play",
+    "will be play"
+   ]
+  }
+ ],
+ [
+  "B:2466",
+  {
+   "opts": [
+    "will be improve",
+    "will improve",
+    "wills improve",
+    "will improving"
+   ]
+  }
+ ],
+ [
+  "B:2471",
+  {
+   "opts": [
+    "will be baking",
+    "will baking",
+    "would been baking",
+    "will be bake"
+   ]
+  }
+ ],
+ [
+  "B:2476",
+  {
+   "opts": [
+    "will be swimming",
+    "am swim",
+    "will swimming",
+    "will be swim"
+   ]
+  }
+ ],
+ [
+  "B:2591",
+  {
+   "opts": [
+    "there hadn't been",
+    "there hasn't been",
+    "there had been",
+    "hadn't been there"
+   ]
+  }
+ ],
+ [
+  "B:2595",
+  {
+   "opts": [
+    "denied doing",
+    "denied do",
+    "denied did",
+    "denied to do"
+   ]
+  }
+ ],
+ [
+  "B:2609",
+  {
+   "opts": [
+    "when she met",
+    "when she had met",
+    "when did she meet",
+    "when had she met"
+   ]
+  }
+ ],
+ [
+  "B:2660",
+  {
+   "opts": [
+    "Two racing cars",
+    "Two car racing",
+    "A racing cars",
+    "Two racings cars"
+   ]
+  }
+ ],
+ [
+  "B:2663",
+  {
+   "opts": [
+    "Italy's monuments",
+    "Italy monuments",
+    "Italy's monument",
+    "Italys' monuments"
+   ]
+  }
+ ],
+ [
+  "B:2706",
+  {
+   "opts": [
+    "folder",
+    "carpet",
+    "apartment",
+    "wardrobe"
+   ]
+  }
+ ],
+ [
+  "B:2756",
+  {
+   "opts": [
+    "coming back",
+    "came across",
+    "coming in",
+    "come back"
+   ]
+  }
+ ],
+ [
+  "B:2768",
+  {
+   "opts": [
+    "Had she done her part",
+    "Had her done her part",
+    "Had done she her part",
+    "Had she her part done"
+   ]
+  }
+ ],
+ [
+  "B:2783",
+  {
+   "opts": [
+    "forced her to go",
+    "forced her going",
+    "forced her to going",
+    "forced she to go"
+   ]
+  }
+ ],
+ [
+  "B:2851",
+  {
+   "opts": [
+    "used to eat",
+    "using to eating",
+    "used to eating",
+    "use to eat"
+   ]
+  }
+ ],
+ [
+  "B:2908",
+  {
+   "opts": [
+    "dances",
+    "am dancing",
+    "is dancing",
+    "dancing"
+   ]
+  }
+ ],
+ [
+  "B:2995",
+  {
+   "opts": [
+    "flats",
+    "two flat",
+    "two flats",
+    "a two flats"
+   ]
+  }
+ ],
+ [
+  "B:3016",
+  {
+   "opts": [
+    "What a beautiful sunset",
+    "How beautiful sunset",
+    "What beautiful sunset",
+    "How a beautiful sunset"
+   ]
+  }
+ ],
+ [
+  "B:3030",
+  {
+   "opts": [
+    "What big",
+    "How big",
+    "How a big",
+    "What a big"
+   ]
+  }
+ ],
+ [
+  "B:3041",
+  {
+   "opts": [
+    "is about",
+    "is on the point of",
+    "due",
+    "is near"
+   ]
+  }
+ ],
+ [
+  "B:3047",
+  {
+   "opts": [
+    "I should going",
+    "that I should go",
+    "that I gone",
+    "that I going"
+   ]
+  }
+ ],
+ [
+  "B:3071",
+  {
+   "opts": [
+    "The players was explained the following tactics",
+    "The following tactics was explained the players",
+    "The players were explained the following tactics",
+    "The following tactics were explained the players"
+   ]
+  }
+ ],
+ [
+  "B:3076",
+  {
+   "opts": [
+    "soup",
+    "soap",
+    "sope",
+    "supe"
+   ]
+  }
+ ],
+ [
+  "B:3082",
+  {
+   "opts": [
+    "not seeing you",
+    "not see you",
+    "not to see you",
+    "no seeing you"
+   ]
+  }
+ ],
+ [
+  "B:3093",
+  {
+   "opts": [
+    "I will share",
+    "I sharing",
+    "will I share",
+    "do I share"
+   ]
+  }
+ ],
+ [
+  "B:3094",
+  {
+   "opts": [
+    "in no way can I understand",
+    "in no way accept",
+    "in no way can't I understand",
+    "in no way I can understand"
+   ]
+  }
+ ],
+ [
+  "B:3111",
+  {
+   "opts": [
+    "what else",
+    "where else",
+    "what others",
+    "what another"
+   ]
+  }
+ ],
+ [
+  "B:3142",
+  {
+   "opts": [
+    "looks",
+    "look",
+    "travels",
+    "looking"
+   ]
+  }
+ ],
+ [
+  "B:3143",
+  {
+   "opts": [
+    "waters",
+    "is",
+    "to be",
+    "are"
+   ]
+  }
+ ],
+ [
+  "B:3147",
+  {
+   "opts": [
+    "smells",
+    "drinks",
+    "eats",
+    "smelling"
+   ]
+  }
+ ],
+ [
+  "B:3148",
+  {
+   "opts": [
+    "for understanding",
+    "to understand",
+    "to understanding",
+    "understand"
+   ]
+  }
+ ],
+ [
+  "B:3150",
+  {
+   "opts": [
+    "fast enough",
+    "too fast enough",
+    "enough fast",
+    "fastly enough"
+   ]
+  }
+ ],
+ [
+  "B:3151",
+  {
+   "opts": [
+    "many young",
+    "too young",
+    "too much young",
+    "enough young"
+   ]
+  }
+ ],
+ [
+  "B:3171",
+  {
+   "opts": [
+    "even do",
+    "does even",
+    "even does",
+    "even doing"
+   ]
+  }
+ ],
+ [
+  "B:3174",
+  {
+   "opts": [
+    "weirdly you are behaving",
+    "weird you are behave",
+    "you are behaving weirdly",
+    "weirdly are you behaving"
+   ]
+  }
+ ],
+ [
+  "B:3175",
+  {
+   "opts": [
+    "is able to jumping",
+    "is able to jump",
+    "cans jump",
+    "able to jump"
+   ]
+  }
+ ],
+ [
+  "B:3188",
+  {
+   "opts": [
+    "John if would they get",
+    "John whether we will get",
+    "John if they would get",
+    "John if will they get"
+   ]
+  }
+ ],
+ [
+  "B:3190",
+  {
+   "opts": [
+    "would not working",
+    "wouldn't have been working",
+    "wouldn't be working",
+    "wouldn't have working"
+   ]
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|1",
+  {
+   "opts": [
+    "was missing",
+    "missed",
+    "missing",
+    "miss"
+   ]
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|7",
+  {
+   "opts": [
+    "may been delayed",
+    "may have delayed",
+    "may have been delayed",
+    "may have being delayed"
+   ]
+  }
+ ],
+ [
+  "G:Test General 7 (PLATA)|5",
+  {
+   "opts": [
+    "do / drink",
+    "was / drinking",
+    "are / drinking",
+    "am / drinked"
+   ]
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|3",
+  {
+   "opts": [
+    "A/~/a",
+    "The/the/~",
+    "A/the/the",
+    "~/the/a"
+   ]
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|12",
+  {
+   "opts": [
+    "gets",
+    "get",
+    "got",
+    "getting"
+   ]
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|6",
+  {
+   "opts": [
+    "enjoy",
+    "enjoying",
+    "enjoyed",
+    "enjoys"
+   ]
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|9",
+  {
+   "opts": [
+    "three-past twenty",
+    "twenty passing three",
+    "twenty past three",
+    "twenty to three"
+   ]
+  }
+ ],
+ [
+  "G:Test General 29 (PLATA)|7",
+  {
+   "opts": [
+    "even when",
+    "even though",
+    "even more",
+    "even if"
+   ]
+  }
+ ],
+ [
+  "G:Test General 30 (PLATA)|5",
+  {
+   "opts": [
+    "I hadn’t drunk",
+    "I haven’t drunk",
+    "I didn’t drink",
+    "I wouldn't drink"
+   ]
+  }
+ ],
+ [
+  "G:Test General 30 (ORO)|2",
+  {
+   "opts": [
+    "matches / lessons",
+    "match / lesson",
+    "matches / lesson",
+    "match / lessons"
+   ]
+  }
+ ],
+ [
+  "G:Test General 30 (ORO)|10",
+  {
+   "opts": [
+    "Did / see",
+    "Did / saw",
+    "Do / seen",
+    "Does / see"
+   ]
+  }
+ ],
+ [
+  "G:Test General 33 (ORO)|4",
+  {
+   "opts": [
+    "speak / hear",
+    "will speak / will hear",
+    "speaks / hears",
+    "spoke / will hear"
+   ]
+  }
+ ],
+ [
+  "G:Test General 34 (ORO) (parte 2)|4",
+  {
+   "opts": [
+    "don’t contain",
+    "start containing",
+    "didn’t contain",
+    "doesn't contain"
+   ]
+  }
+ ],
+ [
+  "G:Test General 34 (ORO) (parte 2)|9",
+  {
+   "opts": [
+    "forbidden",
+    "forbade",
+    "forbid",
+    "forbided"
+   ]
+  }
+ ],
+ [
+  "G:Test General 32 (ORO) (parte 2)|6",
+  {
+   "opts": [
+    "much better",
+    "a lot of better",
+    "much good",
+    "many better"
+   ]
+  }
+ ],
+ [
+  "G:Test General 32 (ORO) (parte 2)|7",
+  {
+   "opts": [
+    "have / been done",
+    "have / been doing",
+    "have / being do",
+    "has / been doing"
+   ]
+  }
+ ],
+ [
+  "G:Test Global 3 (FASE FINAL)|0",
+  {
+   "opts": [
+    "— / —",
+    "The / —",
+    "The / the",
+    "— / the"
+   ]
+  }
+ ],
+ [
+  "G:Test Global 5 (FASE FINAL)|2",
+  {
+   "opts": [
+    "have answered",
+    "had answered",
+    "answered",
+    "would answered"
+   ]
+  }
+ ],
+ [
+  "G:Test Global 4 (FASE FINAL)|4",
+  {
+   "opts": [
+    "the another is",
+    "the other is",
+    "other is",
+    "the others is"
+   ]
+  }
+ ],
+ [
+  "G:Test Global 7 (FASE FINAL)|6",
+  {
+   "opts": [
+    "make up to be",
+    "make up for being",
+    "making up being",
+    "make up for be"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 2 (Parte 2)|9",
+  {
+   "opts": [
+    "slept / arrive",
+    "slept / was arriving",
+    "was sleeping / arrived",
+    "sleeping / arrive"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 4 (Parte 2)|2",
+  {
+   "opts": [
+    "Both",
+    "Neither",
+    "Either",
+    "Any"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 8 (Parte 2)|9",
+  {
+   "opts": [
+    "When",
+    "Who",
+    "Why",
+    "Where"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 9 (Parte 2)|9",
+  {
+   "opts": [
+    "slept / arrive",
+    "was sleeping / arrived",
+    "slept / was arriving",
+    "was slept / arrived"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 10 (Parte 2)|17",
+  {
+   "opts": [
+    "simply",
+    "simple",
+    "simplest",
+    "simplely"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 10 (Parte 2)|19",
+  {
+   "opts": [
+    "frightening / scared",
+    "frightened / scared",
+    "frightening / scary",
+    "frightened / scary"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 11 (Parte 2)|8",
+  {
+   "opts": [
+    "— / the",
+    "the / the",
+    "— / —",
+    "the / —"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 11 (Parte 2)|11",
+  {
+   "opts": [
+    "___/ ___",
+    "The / an",
+    "The / ___",
+    "___ / The"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 11 (Parte 2)|13",
+  {
+   "opts": [
+    "photos / pretty",
+    "photos / parties",
+    "photo / pretty",
+    "photo / parties"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 11 (Parte 2)|14",
+  {
+   "opts": [
+    "boxes",
+    "boxs",
+    "box",
+    "boxies"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 12 (Parte 2)|17",
+  {
+   "opts": [
+    "destroyed / had built",
+    "had destroyed / build",
+    "are destroyed / had built",
+    "destroy / had build"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 13 (Parte 2)|0",
+  {
+   "opts": [
+    "time",
+    "a time",
+    "an time",
+    "times"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 14 (Parte 2)|3",
+  {
+   "opts": [
+    "happened",
+    "happens",
+    "succeed",
+    "happening"
+   ]
+  }
+ ],
+ [
+  "E:Bloque Repaso 15 (Parte 2)|7",
+  {
+   "opts": [
+    "It's Thomas?",
+    "It's Thomas's",
+    "It's Thomas'es",
+    "It's Thomases"
+   ]
+  }
+ ]
+]
