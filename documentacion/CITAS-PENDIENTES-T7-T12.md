@@ -28,5 +28,5 @@ Hecho: `esquemas-datos/citas-manual-t7.js … t12.js` (generados con `prompts/he
 - **9-18** (definición de Defensa Nacional «acción del Estado dirigida a proteger la integridad territorial de España y sus intereses» + «a y b»): no aparece en la LO 5/2005 (el Art. 2 es la finalidad de la política de defensa) ni en la Directiva 2020.
 - **9-84** («seguridad marítima en el Golfo de Guinea» en la dimensión naval y marítima): no está en `tema9/ddn2020.txt` (puede faltar texto de la Directiva en el extracto; revisar contra el PDF).
 
-## Detectado, sin tocar (decisión del usuario)
-Muchas explicaciones antiguas llevan el localizador correcto pero con **el título de la sección en vez del nombre de la norma** («Art. 383 · De los Jueces y Magistrados: Carrera, Estatuto y Régimen Disciplinario»). Recuento aproximado: T8 83, T9 154, T10 183, T11 3. Se pintan así tal cual; arreglarlo es un cambio masivo de texto (sustituir la cola por el nombre de la norma, pregunta a pregunta en T9/T10, que mezclan varias normas). Dime si lo hago.
+## Colas con título de sección (resuelto)
+Se sustituyó en T8 (130), T9 (154), T10 (205) y T11 (3) la cola «· De la Política de Defensa» etc. por el nombre de la norma (LOPJ, LO 5/2005, Directiva 2020, Código Civil, Ley 39/2015 o 40/2015). En las de la Directiva se puso también el localizador de `citas-manual-t9.js`.
