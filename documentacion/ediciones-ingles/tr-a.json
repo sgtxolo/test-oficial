@@ -1,0 +1,2042 @@
+[
+ [
+  "B:2341",
+  {
+   "tr": "¿Es esta carretera más corta que la otra ruta?"
+  }
+ ],
+ [
+  "B:2342",
+  {
+   "tr": "¡Guau! La Torre Eiffel es más alta de lo que imaginaba."
+  }
+ ],
+ [
+  "B:2343",
+  {
+   "tr": "¿Quién es el estudiante más listo de la clase?"
+  }
+ ],
+ [
+  "B:2344",
+  {
+   "tr": "¿Es su nueva novela más popular que la última que escribió?"
+  }
+ ],
+ [
+  "B:2345",
+  {
+   "tr": "Es la música más talentosa que he conocido jamás."
+  }
+ ],
+ [
+  "B:2346",
+  {
+   "tr": "La pizza que cocinaste es la más sabrosa que he comido nunca."
+  }
+ ],
+ [
+  "B:2347",
+  {
+   "tr": "Hoy llueve. El tiempo es peor que ayer."
+  }
+ ],
+ [
+  "B:2348",
+  {
+   "tr": "Su nuevo trabajo es mejor que el anterior."
+  }
+ ],
+ [
+  "B:2349",
+  {
+   "tr": "¡No puedo creer que haya aprobado el examen! ¡Este es el día más emocionante de mi vida!"
+  }
+ ],
+ [
+  "B:2350",
+  {
+   "tr": "¿Quién es el mejor jugador del equipo?"
+  }
+ ],
+ [
+  "B:2351",
+  {
+   "tr": "Este es el rompecabezas más difícil que he intentado nunca."
+  }
+ ],
+ [
+  "B:2352",
+  {
+   "tr": "El lago donde nadamos ayer es más profundo que este río."
+  }
+ ],
+ [
+  "B:2353",
+  {
+   "tr": "¿Es París más bonita que Roma?"
+  }
+ ],
+ [
+  "B:2354",
+  {
+   "tr": "Después de investigar un poco, este es el hotel menos caro de la ciudad."
+  }
+ ],
+ [
+  "B:2355",
+  {
+   "tr": "Mi perro es más sociable que el perro de mi vecino."
+  }
+ ],
+ [
+  "B:2356",
+  {
+   "tr": "¿Cuándo me vas a dar mi dinero?"
+  }
+ ],
+ [
+  "B:2357",
+  {
+   "tr": "Nos sentimos muy deprimidos porque no pudimos visitar a nuestros primos."
+  }
+ ],
+ [
+  "B:2358",
+  {
+   "tr": "Hoy es el día más caluroso del año."
+  }
+ ],
+ [
+  "B:2359",
+  {
+   "tr": "Estamos preparando una sorpresa para el cumpleaños del hermano de John."
+  }
+ ],
+ [
+  "B:2360",
+  {
+   "tr": "Déjame darte un consejo... no confíes en él."
+  }
+ ],
+ [
+  "B:2361",
+  {
+   "tr": "Te vi en la tienda hace solo unos días."
+  }
+ ],
+ [
+  "B:2362",
+  {
+   "tr": "Lleva aprendiendo chino desde 2010."
+  }
+ ],
+ [
+  "B:2363",
+  {
+   "tr": "El coche de Sam está aparcado delante de la comisaría."
+  }
+ ],
+ [
+  "B:2364",
+  {
+   "tr": "Mis padres casi nunca están en casa los viernes."
+  }
+ ],
+ [
+  "B:2365",
+  {
+   "tr": "Hablas inglés muy bien. ¡Enhorabuena!"
+  }
+ ],
+ [
+  "B:2366",
+  {
+   "tr": "Las entradas del concierto ya están agotadas."
+  }
+ ],
+ [
+  "B:2367",
+  {
+   "tr": "El tiempo en Nueva York es más frío que en California."
+  }
+ ],
+ [
+  "B:2368",
+  {
+   "tr": "Cien estudiantes asistieron a la clase porque era muy interesante."
+  }
+ ],
+ [
+  "B:2369",
+  {
+   "tr": "No había nadie aquí, así que me fui a casa."
+  }
+ ],
+ [
+  "B:2402",
+  {
+   "tr": "¿Hay leche en el vaso de mi hija?"
+  }
+ ],
+ [
+  "B:2403",
+  {
+   "tr": "Había habido una hermosa puesta de sol antes de que las fábricas empezaran a emitir humos."
+  }
+ ],
+ [
+  "B:2404",
+  {
+   "tr": "Ahora mismo hay una rata durmiendo en el sofá."
+  }
+ ],
+ [
+  "B:2405",
+  {
+   "tr": "Mañana no habrá niños en el parque por el mal tiempo."
+  }
+ ],
+ [
+  "B:2406",
+  {
+   "tr": "Deja que vayan al cementerio en Halloween, ¿quieres?"
+  }
+ ],
+ [
+  "B:2407",
+  {
+   "tr": "¿Había cinco sillas en el vestíbulo del hotel el fin de semana pasado?"
+  }
+ ],
+ [
+  "B:2408",
+  {
+   "tr": "¿No ha llovido mucho en esta zona últimamente?"
+  }
+ ],
+ [
+  "B:2409",
+  {
+   "tr": "Mary visitó a sus abuelos, ¿verdad?"
+  }
+ ],
+ [
+  "B:2410",
+  {
+   "tr": "Peter está trabajando en el nuevo hospital, ¿verdad?"
+  }
+ ],
+ [
+  "B:2411",
+  {
+   "tr": "Han limpiado las ventanas, ¿verdad?"
+  }
+ ],
+ [
+  "B:2412",
+  {
+   "tr": "No irás a la boda de James, ¿verdad?"
+  }
+ ],
+ [
+  "B:2413",
+  {
+   "tr": "Estaban jugando en el aula, ¿verdad?"
+  }
+ ],
+ [
+  "B:2414",
+  {
+   "tr": "Ella toca la guitarra, ¿verdad?"
+  }
+ ],
+ [
+  "B:2415",
+  {
+   "tr": "Papá, déjame ir a la fiesta, ¿vale?"
+  }
+ ],
+ [
+  "B:2416",
+  {
+   "tr": "Hay un café nuevo en tu ciudad."
+  }
+ ],
+ [
+  "B:2417",
+  {
+   "tr": "Nunca me perdonará, ¿verdad?"
+  }
+ ],
+ [
+  "B:2418",
+  {
+   "tr": "Habrá mucha gente en el partido de fútbol el próximo sábado."
+  }
+ ],
+ [
+  "B:2419",
+  {
+   "tr": "Hubo mucho ruido en el edificio de al lado el sábado por la noche."
+  }
+ ],
+ [
+  "B:2420",
+  {
+   "tr": "Sé puntual, ¿vale?"
+  }
+ ],
+ [
+  "B:2421",
+  {
+   "tr": "Déjame echarte una mano con el proyecto."
+  }
+ ],
+ [
+  "B:2422",
+  {
+   "tr": "¿Qué color prefieres, el azul o el verde?"
+  }
+ ],
+ [
+  "B:2423",
+  {
+   "tr": "No olvides traer el paraguas por si llueve."
+  }
+ ],
+ [
+  "B:2424",
+  {
+   "tr": "Por favor, cierra la puerta."
+  }
+ ],
+ [
+  "B:2425",
+  {
+   "tr": "Recuerda: termina los deberes antes de la cena."
+  }
+ ],
+ [
+  "B:2426",
+  {
+   "tr": "El cine está cerrado, vámonos a casa."
+  }
+ ],
+ [
+  "B:2427",
+  {
+   "tr": "¿Por qué está el cielo tan nublado hoy?"
+  }
+ ],
+ [
+  "B:2428",
+  {
+   "tr": "¿Cuáles son tus planes para el fin de semana?"
+  }
+ ],
+ [
+  "B:2429",
+  {
+   "tr": "¿Por qué elegiste este restaurante?"
+  }
+ ],
+ [
+  "B:2689",
+  {
+   "tr": "¿Quieres tomar prestado el libro que compré el mes pasado?"
+  }
+ ],
+ [
+  "B:2696",
+  {
+   "tr": "Nuestro apartamento ha sido reformado."
+  }
+ ],
+ [
+  "B:2698",
+  {
+   "tr": "¿Quién es el hombre a quien escribiste esa carta de queja?"
+  }
+ ],
+ [
+  "B:2731",
+  {
+   "tr": "Mis hermanos siempre están viendo películas de terror, ¡lo cual odio!"
+  }
+ ],
+ [
+  "B:2732",
+  {
+   "tr": "El nuevo modelo tiene que fabricarse según los más altos estándares de calidad."
+  }
+ ],
+ [
+  "B:2795",
+  {
+   "tr": "Son muy simpáticos."
+  }
+ ],
+ [
+  "B:2826",
+  {
+   "tr": "Será mejor que no dejes el portátil en el coche. Hay muchos robos de coches en esta zona."
+  }
+ ],
+ [
+  "B:2831",
+  {
+   "tr": "El grupo se está portando mal. Será mejor que se vayan inmediatamente."
+  }
+ ],
+ [
+  "B:2902",
+  {
+   "tr": "Puede que esté esperándote en la puerta. No estoy segura, pero es posible."
+  }
+ ],
+ [
+  "B:2905",
+  {
+   "tr": "Ojalá supiera qué hacer, pero no lo sé."
+  }
+ ],
+ [
+  "B:2910",
+  {
+   "tr": "Ojalá te estuvieran escuchando ahora mismo."
+  }
+ ],
+ [
+  "B:2942",
+  {
+   "tr": "«¡Vete a casa y déjame en paz!», me ordenó que me fuera y la dejara sola."
+  }
+ ],
+ [
+  "B:2949",
+  {
+   "tr": "¿Estábamos viendo una película cuando nos viste?"
+  }
+ ],
+ [
+  "B:3006",
+  {
+   "tr": "Este problema no es tan complicado como parece."
+  }
+ ],
+ [
+  "B:3007",
+  {
+   "tr": "La playa no está tan llena como el fin de semana pasado."
+  }
+ ],
+ [
+  "B:3008",
+  {
+   "tr": "Mi café no está tan caliente como debería."
+  }
+ ],
+ [
+  "B:3009",
+  {
+   "tr": "Mi mochila pesa tanto como la tuya."
+  }
+ ],
+ [
+  "B:3010",
+  {
+   "tr": "Las cajas pesadas eran difíciles de cargar."
+  }
+ ],
+ [
+  "B:3011",
+  {
+   "tr": "Muchos países de Europa, como Italia y España, son famosos por su gastronomía."
+  }
+ ],
+ [
+  "B:3012",
+  {
+   "tr": "No hay dos muñecas en la estantería."
+  }
+ ],
+ [
+  "B:3013",
+  {
+   "tr": "¡Qué tranquilo es este lugar!"
+  }
+ ],
+ [
+  "B:3014",
+  {
+   "tr": "¡Qué canción tan bonita estás cantando!"
+  }
+ ],
+ [
+  "B:3015",
+  {
+   "tr": "¡Toma asiento y relájate!"
+  }
+ ],
+ [
+  "B:3016",
+  {
+   "tr": "¡Qué hermosa puesta de sol es esta!"
+  }
+ ],
+ [
+  "B:3017",
+  {
+   "tr": "¿Con qué frecuencia vas al gimnasio?"
+  }
+ ],
+ [
+  "B:3018",
+  {
+   "tr": "¿Cuánto durará la reunión?"
+  }
+ ],
+ [
+  "B:3019",
+  {
+   "tr": "¡Increíble! ¿Cómo resolviste este problema?"
+  }
+ ],
+ [
+  "B:3020",
+  {
+   "tr": "¡Qué día para un picnic!"
+  }
+ ],
+ [
+  "B:3021",
+  {
+   "tr": "¡Qué idea tan inteligente fue!"
+  }
+ ],
+ [
+  "B:3022",
+  {
+   "tr": "¡Qué suerte tenemos de tener tan buenos amigos!"
+  }
+ ],
+ [
+  "B:3023",
+  {
+   "tr": "¡Qué cosa tan valiente hiciste!"
+  }
+ ],
+ [
+  "B:3067",
+  {
+   "tr": "La bici que compró la semana pasada es muy barata."
+  }
+ ],
+ [
+  "B:3087",
+  {
+   "tr": "Mi padre siempre me dijo que tuviera cuidado con el dinero."
+  }
+ ],
+ [
+  "B:3090",
+  {
+   "tr": "María esperaba con ilusión su cumpleaños."
+  }
+ ],
+ [
+  "B:3123",
+  {
+   "tr": "Puedo quedar contigo el próximo lunes o viernes; ¿te vendría bien alguno de esos días?"
+  }
+ ],
+ [
+  "B:3126",
+  {
+   "tr": "Mis abuelos están haciendo construir una habitación extra en el garaje para que duerman allí todos los nietos."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|0",
+  {
+   "tr": "No quiere ir al médico."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|1",
+  {
+   "tr": "¿Cuántas patas tiene un escorpión?"
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|2",
+  {
+   "tr": "Nos cepillamos los dientes todos los días."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|3",
+  {
+   "tr": "¡Lo siento mucho! Ayer olvidé por completo tu cumpleaños."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|4",
+  {
+   "tr": "Él nunca hace su trabajo correctamente."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|5",
+  {
+   "tr": "La música no empezó hasta que se apagaron las luces."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|6",
+  {
+   "tr": "—¿Escribiste tu redacción ayer? —Sí, la escribí."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|7",
+  {
+   "tr": "¿Viste esa película ayer?"
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|8",
+  {
+   "tr": "Ayer iba conduciendo y me sentí cansado, por eso paré durante 30 minutos."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|9",
+  {
+   "tr": "A los 10 años era más alto que mi hermano, pero hoy en día es al revés."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|10",
+  {
+   "tr": "Ella le dio un regalo, pero no dijo «Feliz cumpleaños»."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|11",
+  {
+   "tr": "Elige la opción correcta: ¿Dónde trabajan sus primos?"
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|12",
+  {
+   "tr": "¿Ella suele cocinar durante la semana?"
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|13",
+  {
+   "tr": "El apartamento no tenía muebles cuando me mudé."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|14",
+  {
+   "tr": "¿Estuvo ella aquí ayer?"
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|15",
+  {
+   "tr": "¿Estabas cansado la semana pasada? Sí, lo estaba."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|16",
+  {
+   "tr": "Anoche no vi la tele."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|17",
+  {
+   "tr": "Desde el accidente, la niña solo llora y dice que echa de menos a su mamá."
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|18",
+  {
+   "tr": "—¿Les gusta a tus padres la música rock? —¡Claro, les encanta!"
+  }
+ ],
+ [
+  "G:Test 1 - Temas 1 y 2 (PLATA)|19",
+  {
+   "tr": "Mucha gente visita esta ciudad en mayo."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|0",
+  {
+   "tr": "Cuando oigas el mensaje, llámame de vuelta."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|1",
+  {
+   "tr": "Hago mis deberes más rápido que tú, pero los hago mejor que nadie."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|2",
+  {
+   "tr": "Mi suegra usa mantequilla para cocinar arroz."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|3",
+  {
+   "tr": "No le ayudes, quiere hacerlo él solo."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|4",
+  {
+   "tr": "Si hace frío, ponte el gorro y los guantes."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|5",
+  {
+   "tr": "He estado pensando en ti todo el día."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|6",
+  {
+   "tr": "Será mejor que seas puntual o tu hermana se enfadará contigo."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|7",
+  {
+   "tr": "¡Tengo algunos chismes que contarte!"
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|8",
+  {
+   "tr": "Tiene dos naranjas, pero solo va a comerse una. ¿Puedo coger la otra?"
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|9",
+  {
+   "tr": "Me estoy acostumbrando a trabajar en esta empresa. Todo es distinto de mi trabajo anterior."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|10",
+  {
+   "tr": "Rara vez voy a restaurantes de comida rápida. Creo que son demasiado poco saludables."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|11",
+  {
+   "tr": "Si quieres mantenerte en forma, deberías hacer algo de deporte."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|12",
+  {
+   "tr": "Los dos hermanos se parecen mucho. Sin embargo, cada uno de ellos es de una madre diferente."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|13",
+  {
+   "tr": "Esa serpiente tiene veneno, es venenosa."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|14",
+  {
+   "tr": "El hombre apareció de la nada y robó el coche."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|15",
+  {
+   "tr": "La niña se quedó dormida en cuanto su padre empezó a leer su cuento favorito."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|16",
+  {
+   "tr": "¿Te gusta el fútbol? ¡Soy un gran aficionado! También me gusta el baloncesto."
+  }
+ ],
+ [
+  "G:Test General 2 (PLATA)|17",
+  {
+   "tr": "El nuevo logotipo de la empresa me impresiona cada vez que lo veo por la ciudad."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|0",
+  {
+   "tr": "La fiesta fue un gran éxito. Todo el mundo estuvo allí."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|1",
+  {
+   "tr": "Cuando Laura vivía en Francia el año pasado, echaba mucho de menos a su familia."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|2",
+  {
+   "tr": "Intenta estar callado durante 5 minutos."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|3",
+  {
+   "tr": "No pude terminar el examen porque leí más despacio que mis compañeros."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|4",
+  {
+   "tr": "Peter podrá practicar para correr un maratón."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|5",
+  {
+   "tr": "Michael intentó terminar los crucigramas."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|6",
+  {
+   "tr": "Es un poco tarde, llegarán a tiempo, ¿verdad?"
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|7",
+  {
+   "tr": "Tu información es muy valiosa para mí."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|8",
+  {
+   "tr": "Las paredes de mi habitación están siendo pintadas de blanco."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|9",
+  {
+   "tr": "Mi amiga Lola siempre ha sido muy habladora."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|10",
+  {
+   "tr": "No creo que nadie esté seguro de eso."
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|11",
+  {
+   "tr": "¿Conoces a la persona que acaba de llamar por teléfono?"
+  }
+ ],
+ [
+  "G:Test General 3 (PLATA)|12",
+  {
+   "tr": "El presidente Biden visitará Europa el próximo fin de semana."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|0",
+  {
+   "tr": "El norte del país está industrializado y es rico, mientras que el sur es bastante pobre."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|1",
+  {
+   "tr": "Dejó de fumar hace 10 años y nunca ha vuelto a fumar."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|2",
+  {
+   "tr": "No vamos a ese restaurante por sus precios caros."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|3",
+  {
+   "tr": "Ella tiene que elegir entre él y yo."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|4",
+  {
+   "tr": "He estado en Francia, Alemania y otros países europeos."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|5",
+  {
+   "tr": "Es una lástima, ¿verdad?"
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|6",
+  {
+   "tr": "El ladrón simplemente entró porque yo había olvidado cerrar la puerta con llave."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|7",
+  {
+   "tr": "Quiero pagar por adelantado, si no le importa."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|8",
+  {
+   "tr": "Este café está demasiado caliente, no puedo bebérmelo."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|9",
+  {
+   "tr": "—¿Sabías que Ann está en el hospital? —Sí, la visitaré uno de estos días."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|10",
+  {
+   "tr": "Se llevó a un cachorro que había encontrado en la calle."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|11",
+  {
+   "tr": "Por favor, sé un buen chico y no hagas ruido mientras duermo."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|12",
+  {
+   "tr": "No estoy segura de dónde está mi mujer ahora mismo. Puede que esté en su clase de baile."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|13",
+  {
+   "tr": "Salí del cine antes de que terminara la película porque no me estaba divirtiendo."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|14",
+  {
+   "tr": "—«Cené con alguien» —«¿Con quién cenaste?»"
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|15",
+  {
+   "tr": "La zapatería no vende sombreros."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|16",
+  {
+   "tr": "Todavía no han ido al aeropuerto."
+  }
+ ],
+ [
+  "G:Test General 1 (ORO)|17",
+  {
+   "tr": "Estaba sentada en una silla viendo la tele cuando llegué."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|0",
+  {
+   "tr": "Siempre pasan su tiempo libre jugando a videojuegos."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|1",
+  {
+   "tr": "Estaba haciendo la compra cuando oyó la noticia."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|2",
+  {
+   "tr": "¡Vamos! Tienes que hacer un esfuerzo para mejorar tus resultados."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|3",
+  {
+   "tr": "¿Está embarazada tu mujer? ¿Es niña o niño?"
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|4",
+  {
+   "tr": "«Mañana volaré a Santander». Dijo que volaría a Santander al día siguiente."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|5",
+  {
+   "tr": "Si no cooperas, serás despedido."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|6",
+  {
+   "tr": "A pesar de prestar atención durante la reunión, tenía muchas preguntas."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|7",
+  {
+   "tr": "Por un lado, me encanta el chocolate. Por otro lado, odio los caramelos."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|8",
+  {
+   "tr": "—¿Cuándo terminaste la carrera? —En 2006."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|9",
+  {
+   "tr": "Uso el ordenador todos los días, así que estoy acostumbrado a escribir a máquina."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|10",
+  {
+   "tr": "Tu padre es mayor que tu madre, ¿verdad?"
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|11",
+  {
+   "tr": "Es muy difícil elegir entre opciones tan diferentes."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|12",
+  {
+   "tr": "Un desconocido me preguntó dónde estaba la estación de autobuses."
+  }
+ ],
+ [
+  "G:Test General 3 (ORO)|13",
+  {
+   "tr": "Mañana a las 14:00 ya habremos llegado a París."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|0",
+  {
+   "tr": "Si hubiera tomado la medicación prescrita, ahora no estaría enfermo."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|1",
+  {
+   "tr": "Matt es incapaz de reconocer que cometió un error."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|2",
+  {
+   "tr": "Lucas y Mark tocaban el violín mientras Lucy tocaba el piano cuando llegué a casa."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|3",
+  {
+   "tr": "Cuando fui a ver a la novia, la maquilladora había terminado su trabajo."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|4",
+  {
+   "tr": "Era profesora en la ciudad donde nació."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|5",
+  {
+   "tr": "¿Sabías que Marie está embarazada? ¡Dice que le encantaría que fuera una niña!"
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|6",
+  {
+   "tr": "¡Está muy delgado! Estoy preocupado por él."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|7",
+  {
+   "tr": "El tráfico puede haberlos retrasado. Pasiva: Pueden haber sido retrasados por el tráfico."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|8",
+  {
+   "tr": "Cambia todo lo que toca."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|9",
+  {
+   "tr": "No seas ruidoso durante las clases."
+  }
+ ],
+ [
+  "G:Test General 5 (PLATA)|10",
+  {
+   "tr": "Había sido el corredor más rápido, ¿verdad?"
+  }
+ ],
+ [
+  "G:Test General 7 (PLATA)|0",
+  {
+   "tr": "Esa señora mayor me pone nerviosa. Me ha estado mirando fijamente toda la tarde."
+  }
+ ],
+ [
+  "G:Test General 7 (PLATA)|1",
+  {
+   "tr": "¿De quién es el dinero que está sobre la mesa? —¡Es mío!"
+  }
+ ],
+ [
+  "G:Test General 7 (PLATA)|2",
+  {
+   "tr": "Estoy seguro de que si te cuento esto, te enfadarás."
+  }
+ ],
+ [
+  "G:Test General 7 (PLATA)|3",
+  {
+   "tr": "No quiero ir allí, pregunta a otra persona."
+  }
+ ],
+ [
+  "G:Test General 7 (PLATA)|4",
+  {
+   "tr": "Se dice que encontraba a sus víctimas gracias a una aplicación."
+  }
+ ],
+ [
+  "G:Test General 7 (PLATA)|5",
+  {
+   "tr": "—¿Qué estás haciendo? —Estoy bebiendo agua."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|0",
+  {
+   "tr": "Mi coche es muy pequeño. ¡Ojalá fuera más grande!"
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|1",
+  {
+   "tr": "Han encontrado oro en esa vieja mina."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|2",
+  {
+   "tr": "A pesar de nuestras preocupaciones, todo salió bien."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|3",
+  {
+   "tr": "El presidente de los EE. UU. va a la iglesia todos los domingos."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|4",
+  {
+   "tr": "Tengo las manos sucias porque he estado arreglando mi bici."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|5",
+  {
+   "tr": "«Salimos anoche». Ella me dijo que habían salido esa noche."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|6",
+  {
+   "tr": "Es un mentiroso; todo lo que diga no será verdad."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|7",
+  {
+   "tr": "Si Mark hubiera estado prestando atención cuando la profesora explicó el proyecto, lo habría hecho correctamente."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|8",
+  {
+   "tr": "Los abogados han llegado a un compromiso."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|9",
+  {
+   "tr": "La ventana ha sido rota por unos niños que jugaban al béisbol."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|10",
+  {
+   "tr": "Creo que James se ha podido perder. Nunca llega tarde."
+  }
+ ],
+ [
+  "G:Test General 9 (PLATA)|11",
+  {
+   "tr": "Lucy abrió sus regalos de cumpleaños."
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|0",
+  {
+   "tr": "¿Le importaría volver a llamar más tarde?"
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|1",
+  {
+   "tr": "¡El pequeño Jimmy se inventa unas historias maravillosas!"
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|2",
+  {
+   "tr": "Esto me aburre. Prefiero otro tipo de actividades de ocio."
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|3",
+  {
+   "tr": "Aunque algunas personas no lo consideran tan importante, entiendo que para la mayoría el sueldo es el aspecto más importante de un trabajo."
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|4",
+  {
+   "tr": "Se levanta bastante temprano por las mañanas para hacer ejercicio y leer."
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|5",
+  {
+   "tr": "Jake, el mejor amigo de mi hermano, será el padrino en su boda. No podría haber nadie mejor que él."
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|6",
+  {
+   "tr": "¡No puedes haber comprado tanta ropa! ¡Es demasiado!"
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|7",
+  {
+   "tr": "Saludé a todos los que habían venido a nuestra ceremonia anual."
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|8",
+  {
+   "tr": "¿Había mucha gente en la peluquería?"
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|9",
+  {
+   "tr": "No compraron el cuadro aunque les gustaba y tenían el dinero."
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|10",
+  {
+   "tr": "Esta película es demasiado intensa para mí. No tengo ganas de verla."
+  }
+ ],
+ [
+  "G:Test General 6 (ORO)|11",
+  {
+   "tr": "Cada uno de los propietarios pagó la misma cantidad por la reparación."
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|0",
+  {
+   "tr": "La madre de John le hizo cortarse el pelo."
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|1",
+  {
+   "tr": "Mañana a esta hora mi hermana estará haciendo su examen de acceso."
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|2",
+  {
+   "tr": "Tengo mucha curiosidad por ellos. (Frase incorrecta: «about they».)"
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|3",
+  {
+   "tr": "Ha corrido cuatro maratones. El primero fue en 2001 en Ámsterdam."
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|4",
+  {
+   "tr": "Rara vez habían asistido tantas personas a una manifestación contra la guerra en Londres."
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|5",
+  {
+   "tr": "Con el poder de la imaginación, incluso podemos viajar por el espacio."
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|6",
+  {
+   "tr": "Lucas todavía no ha hecho los deberes."
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|7",
+  {
+   "tr": "Será mejor que no llegues tarde o nos iremos sin ti."
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|8",
+  {
+   "tr": "Es muy infeliz a pesar de ser muy rico."
+  }
+ ],
+ [
+  "G:Test General 8 (ORO)|9",
+  {
+   "tr": "El espectáculo de esta noche ha sido cancelado."
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|0",
+  {
+   "tr": "Michael llevaba horas llamando a John antes de que este le devolviera la llamada."
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|1",
+  {
+   "tr": "¿Tienes otro cuaderno?"
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|2",
+  {
+   "tr": "Alessandra estaba entrenando en la calle cuando empezó a llover."
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|3",
+  {
+   "tr": "Cuando Laura llegue a casa, Luke habrá limpiado su habitación."
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|4",
+  {
+   "tr": "En esta unidad, mis alumnos estudian todo lo relacionado con la Tierra."
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|5",
+  {
+   "tr": "El próximo jueves a esta hora, Martha estará viajando a Canadá en tren."
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|6",
+  {
+   "tr": "Rose está a punto de empezar un nuevo curso de diseño de interiores."
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|7",
+  {
+   "tr": "Mary no tiene muchas preguntas sobre el examen. Por eso no ha venido a la clase de repaso."
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|8",
+  {
+   "tr": "Mi tía viene a la ciudad para pasar con nosotros las próximas vacaciones de Navidad."
+  }
+ ],
+ [
+  "G:Test General 10 (PLATA)|9",
+  {
+   "tr": "Gonzalo se ha alojado en el mismo hotel durante 20 días."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|0",
+  {
+   "tr": "¡El cielo brilla! Esta noche habrá lluvias de meteoros y, por eso, los miembros de nuestro club de astronomía están muy emocionados."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|1",
+  {
+   "tr": "«¿Cuándo compraste este bolso?», preguntó Pam. Pam preguntó cuándo había comprado yo ese bolso."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|2",
+  {
+   "tr": "¡Qué historia tan aterradora has escrito, Danny! Seguro que ganarás el concurso de escritura de terror."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|3",
+  {
+   "tr": "¡Eh, Luke! ¿Viste el partido de baloncesto de anoche? Por cierto, voy a comprar entradas para el próximo partido."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|4",
+  {
+   "tr": "Este es el lago que más me gusta."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|5",
+  {
+   "tr": "Carl, esta reunión es vital para el futuro de la empresa. Necesito que te comportes correctamente y hagas una presentación excelente."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|6",
+  {
+   "tr": "Este luchador es agresivo. Por eso gana todos sus combates por KO."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|7",
+  {
+   "tr": "Tengo una cita. Necesito arreglarme el pelo."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|8",
+  {
+   "tr": "¡No juegues con este perro! ¡Podría morderte!"
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|9",
+  {
+   "tr": "Ojalá hubiera visitado Disneyland cuando era niño."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|10",
+  {
+   "tr": "Mike nunca dice «no» a quienes necesitan ayuda. Es una persona servicial."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|11",
+  {
+   "tr": "No voy a seguir hablando. Esta conversación nos lleva a un callejón sin salida."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|12",
+  {
+   "tr": "Si no llevas abrigo al salir de casa, te resfrías."
+  }
+ ],
+ [
+  "G:Test General 12 (PLATA)|13",
+  {
+   "tr": "Susan trabajó como diplomática durante muchos años. Sin embargo, se comporta como una persona grosera."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|0",
+  {
+   "tr": "¿Quién no sabe la respuesta a la pregunta número 3?"
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|1",
+  {
+   "tr": "Mi abuela tiene suficientes camas para que durmamos allí."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|2",
+  {
+   "tr": "¿Dónde está la tableta de chocolate que compré esta mañana? Está en este armario."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|3",
+  {
+   "tr": "El ayuntamiento emitió una alerta por fuertes lluvias."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|4",
+  {
+   "tr": "¿Compramos entradas para el concierto?"
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|5",
+  {
+   "tr": "¿Habrás estado practicando lo suficiente para el día del examen práctico?"
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|6",
+  {
+   "tr": "Los Ferrari son los coches más caros del mundo."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|7",
+  {
+   "tr": "Por todas partes de este barrio hay jardines hermosos."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|8",
+  {
+   "tr": "Yo limpiaba la casa mientras mis hijos estudiaban."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|9",
+  {
+   "tr": "Me enviaron una camisa que yo no había comprado."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|10",
+  {
+   "tr": "Rick era muy popular, sin embargo siempre estaba solo en el patio del colegio."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|11",
+  {
+   "tr": "Si estuvieras aquí en Nochebuena, cenaríamos juntos."
+  }
+ ],
+ [
+  "G:Test General 10 (ORO)|12",
+  {
+   "tr": "Mi madre no nos solía llevar al colegio porque entonces estaba trabajando."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|0",
+  {
+   "tr": "Si Charlie habla con Adam, podrían discutir delante de toda la oficina."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|1",
+  {
+   "tr": "El espectáculo empieza a las 8:45, pero será mejor que llegues una hora antes o no conseguirás asiento."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|2",
+  {
+   "tr": "Montar tu propia empresa puede ser deprimente, pero es importante no sentirse deprimido durante el primer año."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|3",
+  {
+   "tr": "Rocío está jugando con nosotros, ¿verdad?"
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|4",
+  {
+   "tr": "Elvis Presley es mi cantante favorito. Tengo todos sus CD, además de objetos de colección relacionados con él."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|5",
+  {
+   "tr": "Aunque David es un buen niño, a veces se mete en problemas."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|6",
+  {
+   "tr": "Edward disfrutó mucho de la música en directo en el concierto del año pasado."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|7",
+  {
+   "tr": "La conferencia empieza a las cinco y termina a las ocho y media. Si llegas a las siete, no habrá terminado."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|8",
+  {
+   "tr": "El reconocido cómico canadiense Arthur Jones es capaz de entretener a todo tipo de públicos. Es considerado el cómico más gracioso de su país."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|9",
+  {
+   "tr": "Peter acaba de llamar y está muy preocupado. Creo que deberías devolverle la llamada."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|10",
+  {
+   "tr": "¿Para qué está usando mi portátil?"
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|11",
+  {
+   "tr": "Los clientes estuvieron esperando delante de la tienda hasta que el personal abrió las puertas."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|12",
+  {
+   "tr": "Paul llegará tarde esta tarde y voy a esperarlo. Estaré preparando unos documentos cuando llegue."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|13",
+  {
+   "tr": "Por favor, responde a las preguntas del examen con sensatez."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|14",
+  {
+   "tr": "Leo no vino a la oficina la semana pasada. No sé mucho de su vida personal, pero puede que estuviera enfermo."
+  }
+ ],
+ [
+  "G:Test General 13 (ORO)|15",
+  {
+   "tr": "Mis hermanos siempre están escuchando música alta por la noche. ¡No lo soporto!"
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|0",
+  {
+   "tr": "Mi bisabuela tuvo 10 hijos. No te imaginas cuántos primos tengo."
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|1",
+  {
+   "tr": "Ojalá tuviera poderes mágicos."
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|2",
+  {
+   "tr": "Lo peor de invitarlos a todos a cenar es que tengo que lavar todos los platos."
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|3",
+  {
+   "tr": "¿Tienes una caja de herramientas en casa? Necesito un destornillador. (Opción incorrecta: «Do you have got».)"
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|4",
+  {
+   "tr": "No entiendo a la gente a la que no le gustan los deportes."
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|5",
+  {
+   "tr": "«Anoche no dormimos nada». Amy dijo que no habían dormido nada la noche anterior."
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|6",
+  {
+   "tr": "El tren pasa por un túnel en lugar de por encima."
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|7",
+  {
+   "tr": "¿Quién te va a ayudar con la mudanza?"
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|8",
+  {
+   "tr": "Su hijo fue atropellado por un coche y ahora está en silla de ruedas."
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|9",
+  {
+   "tr": "Antes de empezar, debes escribir tu nombre en la parte superior de la página."
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|10",
+  {
+   "tr": "¿Tienes que ir a trabajar el domingo?"
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|11",
+  {
+   "tr": "Peter se cortó con un cuchillo mientras cocinaba. Es muy torpe."
+  }
+ ],
+ [
+  "G:Test General 1 (PLATA)|12",
+  {
+   "tr": "Si Peter hubiera trabajado más, habría conservado su trabajo."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|0",
+  {
+   "tr": "Mi tío tiene una nueva novia: sale con su vecina Mary."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|1",
+  {
+   "tr": "Iba a haber tres conciertos, pero se cancelaron."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|2",
+  {
+   "tr": "Supongamos que hubiera una huelga de controladores aéreos, ¿qué harías?"
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|3",
+  {
+   "tr": "Para mí, los bomberos son muy valientes."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|4",
+  {
+   "tr": "Dentro de cinco años me veo casada y con hijos."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|5",
+  {
+   "tr": "No hables con extraños. Déjame darte un consejo."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|6",
+  {
+   "tr": "Hasta un niño pequeño puede ver que esos cuadros no pegan."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|7",
+  {
+   "tr": "Abrí la nevera y descubrí que alguien se había comido todo mi chocolate."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|8",
+  {
+   "tr": "Nunca olvidaré haberla conocido por primera vez."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|9",
+  {
+   "tr": "Lo llamaré antes de la hora de comer."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|10",
+  {
+   "tr": "Hacía un día tan bonito que decidimos ir a la playa."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|11",
+  {
+   "tr": "Como resultado de sus heridas, no pudo caminar durante seis meses."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|12",
+  {
+   "tr": "Peter vive en una granja y tiene muchas ovejas negras preciosas."
+  }
+ ],
+ [
+  "G:Test General 26 (PLATA)|13",
+  {
+   "tr": "Durante los últimos seis meses, Paul ha estado bebiendo todos los días. Tiene un problema, así que tenemos que ayudarlo."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|0",
+  {
+   "tr": "Te habría ayudado si hubiera sabido que estabas enfermo."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|1",
+  {
+   "tr": "Voy a celebrar mi cumpleaños esta tarde."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|2",
+  {
+   "tr": "—¿Qué hiciste en Navidad? —Nada en absoluto. Solo quería relajarme."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|3",
+  {
+   "tr": "¡Sacaste la mejor nota del examen! Debiste de estar estudiando mucho la semana pasada."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|4",
+  {
+   "tr": "Me mudé a mi propia casa hace años, pero puedo dormir en casa de mis padres cuando quiera."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|5",
+  {
+   "tr": "Ella no habrá vuelto de la excursión a las 6."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|6",
+  {
+   "tr": "Tengo dos hermanos: uno es médico y el otro es piloto."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|7",
+  {
+   "tr": "«¿Has dejado las llaves en casa?» Mamá me preguntó si había dejado las llaves en casa."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|8",
+  {
+   "tr": "A menudo se argumenta que la rápida deforestación es la causa de la mayor parte de la erosión del suelo."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|9",
+  {
+   "tr": "Susan se hizo hacer el vestido de novia. Quería un diseño único."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|10",
+  {
+   "tr": "John fue a Francia para buscar trabajo. (Frase incorrecta: «for look».)"
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|11",
+  {
+   "tr": "He visto a una chica comiendo helado y ahora yo también quiero uno."
+  }
+ ],
+ [
+  "G:Test General 28 (PLATA)|12",
+  {
+   "tr": "¿Cuándo cambiaste de opinión sobre el viaje?"
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|0",
+  {
+   "tr": "Encontré tus zapatos debajo de la cama. ¿No miraste allí?"
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|1",
+  {
+   "tr": "Vamos a comprar dos muebles nuevos para el salón."
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|2",
+  {
+   "tr": "«¿Adónde han ido?». Preguntó adónde habían ido."
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|3",
+  {
+   "tr": "¿Quién te llamó ayer?"
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|4",
+  {
+   "tr": "Normalmente bebo agua con las comidas, pero hoy estoy bebiendo café porque tengo mucho sueño."
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|5",
+  {
+   "tr": "¿Hizo ella los deberes ayer?"
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|6",
+  {
+   "tr": "A pesar de estudiar mucho, suspendí el examen de gramática."
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|7",
+  {
+   "tr": "«¿Estaban en el teatro?» «Sí, lo estaban.»"
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|8",
+  {
+   "tr": "Me gustaría viajar a Japón. ¿Y a qué otro lugar?"
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|9",
+  {
+   "tr": "«¿Qué hora es?» «Son las tres y veinte.»"
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|10",
+  {
+   "tr": "¡Ojalá hubiera estudiado inglés en lugar de francés!"
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|11",
+  {
+   "tr": "Se está haciendo de noche, así que será mejor que volvamos ya."
+  }
+ ],
+ [
+  "G:Test General 24 (ORO)|12",
+  {
+   "tr": "Los periodistas informaron de la noticia. La noticia fue comunicada por los periodistas."
+  }
+ ],
+ [
+  "G:Test General 25 (ORO)|0",
+  {
+   "tr": "Son tan simpáticos que quiero verlos todos los días."
+  }
+ ],
+ [
+  "G:Test General 25 (ORO)|1",
+  {
+   "tr": "Mi jefe me está llamando constantemente. ¡Odio esta situación!"
+  }
+ ],
+ [
+  "G:Test General 25 (ORO)|2",
+  {
+   "tr": "¿A qué se dedica Tom? Es policía."
+  }
+ ],
+ [
+  "G:Test General 25 (ORO)|3",
+  {
+   "tr": "Aunque no sé qué hacer, se me ocurrirá algo."
+  }
+ ],
+ [
+  "G:Test General 25 (ORO)|4",
+  {
+   "tr": "…cuyo cuaderno perdiste."
+  }
+ ],
+ [
+  "G:Test General 25 (ORO)|5",
+  {
+   "tr": "Lucía quiere ir a ese concierto. Que vaya."
+  }
+ ],
+ [
+  "G:Test General 25 (ORO)|6",
+  {
+   "tr": "¿Hay mucha gente que no quiere venir aquí?"
+  }
+ ]
+]
