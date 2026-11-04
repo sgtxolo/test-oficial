@@ -82,6 +82,14 @@ No corregidos (decisión o contenido):
 - **13** claves en `localStorage`: se queda así (app personal sin servidor; cifrarlas en el propio navegador no aporta seguridad real). Las copias y exportaciones ya las excluyen.
 - **Banco** (explicación breve ausente en ~3300 preguntas, 293 literales oficiales, 166 correctas más largas, 6 temas sin IA): requieren el temario/texto legal y redacción verificada pregunta a pregunta (CLAUDE.md: «verificar siempre contra el texto legal»); generarlo sin esa fuente produciría contenido sin verificar. Se hace por tema con el flujo habitual.
 
+## Contenido del banco: Tema 13 (CACHE v469)
+Se ha trabajado el **Tema 13** (Ley 29/1998, Jurisdicción Contencioso-administrativa) en lo de «la correcta no es la más larga»:
+- 72 preguntas IA tenían la correcta como opción más larga → **0** ahora. Se alargaron 1–3 opciones falsas por pregunta (194 ediciones) con matices que siguen siendo falsos; en las 3 preguntas de tipo «cuál NO / excluido» (13-ia-12, 13-ia-51, 13-ia-91), cuyas falsas son verdaderas, se alargaron con texto que sigue siendo verdadero (art. 71.1, 8.1.a y 109.1).
+- Verificado: no cambia ninguna respuesta correcta ni su letra, ni las explicaciones; todas siguen con 4 opciones distintas.
+- Herramienta nueva: `prompts/herramientas/reemplaza-opcion-pregunta.js` (cambia una opción de UNA pregunta por id; las opciones se repiten entre preguntas y un reemplazo global falsearía otras).
+- Pendiente en el Tema 13 (necesita el temario): 12 oficiales sin literal en rojo y ~32 sin explicación breve.
+- Pendiente en el resto: T6 (79), T13 hecho, T14 (9), T8 (4), T7 (1), T9 (1) con la correcta más larga; los 6 temas sin IA; las explicaciones breves.
+
 ## Prioridad recomendada (original)
 1. `defer` en pdf.js (una línea, el mayor efecto en móvil).
 2. Estadísticas en modo sin corrección inmediata (actualizar `qStats` con la respuesta final).
