@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v465";
+const CACHE_NAME = "oposicion-cache-v466";
 // La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
 // Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
 // versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
@@ -242,7 +242,8 @@ self.addEventListener("fetch", event => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
-  const esPagina = event.request.mode === "navigate" || url.pathname.endsWith(".html") || url.pathname.includes("/expres/");
+  // Los .js de datos (esquemas, citas, expres…) van igual que las páginas: así no se mezcla un HTML nuevo con datos viejos.
+  const esPagina = event.request.mode === "navigate" || url.pathname.endsWith(".html") || url.pathname.endsWith(".js") || url.pathname.includes("/expres/");
 
   if (esPagina) {
     // Red primero, pero preguntando "¿ha cambiado?" (no-cache): si no ha cambiado, el servidor
