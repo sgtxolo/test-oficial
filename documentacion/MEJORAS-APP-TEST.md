@@ -25,6 +25,5 @@ Comprobado: la corrección es por índice (`seleccionar`), marca ✅/❌ y pinta
 - **Opciones de remisión con errata** (no se barajan gracias a una regla genérica, pero conviene corregirlas): 21-32 «Toda las opciones son correctas.», 24-81 «O y D son correctas.», 26-19 «Si y C son correctas.».
 - **Erratas del banco**: ver sección «Tercera tanda».
 - **Cabecera «Tema»**: si la pregunta llega sin `temaId` se ve solo «Tema»; mostrar el tema por el prefijo del id (`N-…`).
-- **Service worker**: `./expres-subrayado/bloques-t2.js` está duplicado en `APP_SHELL` (inofensivo).
 - **Peso**: 20 MB de HTML (el banco va inline). Partir el banco en `preguntas/tN.js` cargados bajo demanda reduciría el arranque en móvil.
 - La paginación «5 por página» es del banco IA (generación), no de la app: el test muestra una pregunta cada vez.
