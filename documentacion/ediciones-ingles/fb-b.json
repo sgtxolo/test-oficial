@@ -1,0 +1,2366 @@
+[
+ [
+  "B:5678",
+  {
+   "fb": "Para expresar que algo es imposible/muy improbable se usa THERE CAN'T BE (no puede haber); «can to» o «isn't can» no existen."
+  }
+ ],
+ [
+  "B:5679",
+  {
+   "fb": "THERE SHOULD BE: «should» + infinitivo sin TO expresa que algo es esperable o debería haber; «should to» y «shoulds» son incorrectas."
+  }
+ ],
+ [
+  "B:5680",
+  {
+   "fb": "THERE HAS TO BE: «has to» + infinitivo sin TO expresa obligación o deducción (tiene que haber); «there» con «have/has to be» en singular lleva HAS."
+  }
+ ],
+ [
+  "B:5682",
+  {
+   "fb": "THERE ARE: «a lot of things» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5686",
+  {
+   "fb": "THERE ARE: «three chairs» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5687",
+  {
+   "fb": "THERE IS: «one bed» es singular, por eso se usa IS. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5690",
+  {
+   "fb": "THERE IS: «water» es incontable (se trata como singular), por eso se usa IS, no ARE. «Hay» no se dice con HAVE/HAS."
+  }
+ ],
+ [
+  "B:5691",
+  {
+   "fb": "THERE ARE: «apples» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5704",
+  {
+   "fb": "Tras el artículo A hace falta un sustantivo singular: «a RESTAURANT». «Restaurants» es plural y «restaurant's» es posesivo."
+  }
+ ],
+ [
+  "B:5705",
+  {
+   "fb": "«Moon» es singular y numerable, así que lleva artículo y adjetivo antes: A FULL MOON. El adjetivo no lleva -s ni va detrás del sustantivo."
+  }
+ ],
+ [
+  "B:5706",
+  {
+   "fb": "THERE ARE: «tourists» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5708",
+  {
+   "fb": "THERE ARE: «ten people» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5709",
+  {
+   "fb": "THERE IS: «a man» es singular, por eso se usa IS. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5710",
+  {
+   "fb": "THERE ARE: «animals» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5711",
+  {
+   "fb": "THERE ARE: «many reasons» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5712",
+  {
+   "fb": "THERE IS: «a good reason» es singular, por eso se usa IS. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5714",
+  {
+   "fb": "THERE ARE: «differences» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5715",
+  {
+   "fb": "THERE IS: «a chance of rain» es singular, por eso se usa IS. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5716",
+  {
+   "fb": "THERE IS: «no chance» es singular, por eso se usa IS. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5717",
+  {
+   "fb": "THERE ARE: «ways» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5718",
+  {
+   "fb": "THERE ARE: «two ways» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5719",
+  {
+   "fb": "THERE ARE: «five minutes» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5720",
+  {
+   "fb": "THERE IS: «only one» es singular, por eso se usa IS. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5721",
+  {
+   "fb": "THERE ARE: «only two» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5722",
+  {
+   "fb": "THERE ARE: «tickets» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5723",
+  {
+   "fb": "THERE IS: «time» es incontable (se trata como singular), por eso se usa IS, no ARE. «Hay» no se dice con HAVE/HAS."
+  }
+ ],
+ [
+  "B:5724",
+  {
+   "fb": "THERE IS: «time» es incontable (se trata como singular), por eso se usa IS, no ARE. «Hay» no se dice con HAVE/HAS."
+  }
+ ],
+ [
+  "B:5725",
+  {
+   "fb": "THERE ARE: «seats» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5726",
+  {
+   "fb": "THERE ARE: «days» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5727",
+  {
+   "fb": "THERE ARE: «a few people» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5728",
+  {
+   "fb": "THERE IS: «little time» es incontable (se trata como singular), por eso se usa IS, no ARE. «Hay» no se dice con HAVE/HAS."
+  }
+ ],
+ [
+  "B:5729",
+  {
+   "fb": "THERE ARE: «few chairs» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5730",
+  {
+   "fb": "THERE ARE: «hundreds of people» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5731",
+  {
+   "fb": "THERE ARE: «several mistakes» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5732",
+  {
+   "fb": "THERE IS: «at least one mistake» es singular, por eso se usa IS. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5733",
+  {
+   "fb": "THERE IS: «a lot» (mucho) aquí funciona como singular/incontable y lleva IS; HAVE/HAS no se usan para decir «hay»."
+  }
+ ],
+ [
+  "B:5734",
+  {
+   "fb": "THERE IS NOTHING: «nothing» es singular y lleva IS."
+  }
+ ],
+ [
+  "B:5735",
+  {
+   "fb": "THERE ARE: «reasons» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5742",
+  {
+   "fb": "Pasado simple: la oración (went home) está en pasado, por eso THERE WAS; «was» porque «nothing» es singular."
+  }
+ ],
+ [
+  "B:5743",
+  {
+   "fb": "THERE WAS: «nobody» es singular, por eso se usa la forma singular WAS, no WERE."
+  }
+ ],
+ [
+  "B:5744",
+  {
+   "fb": "WAS THERE...?: «anybody» es singular y la pregunta lleva «was» en pasado; «Are/Were» no concuerdan con «anybody», y «have» no se usa para «hay»."
+  }
+ ],
+ [
+  "B:5750",
+  {
+   "fb": "Tras «hopes» (presente), el verbo de la subordinada va en presente: THERE IS a solution («solution» es singular)."
+  }
+ ],
+ [
+  "B:5751",
+  {
+   "fb": "Tras «I think» se usa presente: THERE IS a mistake («mistake» es singular). «Being» y «be» no pueden ser el verbo conjugado."
+  }
+ ],
+ [
+  "B:5752",
+  {
+   "fb": "Tras «I'm sure» se usa presente: THERE IS a good reason («reason» es singular). «Being» y «be» no sirven como verbo conjugado."
+  }
+ ],
+ [
+  "B:5757",
+  {
+   "fb": "Tras «it's possible» se usa THERE IS a mistake («mistake» es singular); «being» y «be» no pueden ser el verbo conjugado."
+  }
+ ],
+ [
+  "B:5758",
+  {
+   "fb": "THERE ARE any tickets: «tickets» es plural. «Any» se usa en preguntas e indirectas con «if»."
+  }
+ ],
+ [
+  "B:5759",
+  {
+   "fb": "THERE ARE: «a lot of cars» es plural, por eso se usa ARE. Para decir «hay» no se usa HAVE/HAS."
+  }
+ ],
+ [
+  "B:5765",
+  {
+   "fb": "THERE ARE: para decir «hay» se usa THERE + verbo to be, y «six people» es plural. IT/THEY no expresan existencia."
+  }
+ ],
+ [
+  "B:5766",
+  {
+   "fb": "THERE IS: «hay un/una...» se dice THERE IS + sustantivo singular; IT, THEY y THAT no expresan existencia."
+  }
+ ],
+ [
+  "B:5771",
+  {
+   "fb": "HOW: pregunta por la manera (¿cómo vas al trabajo?). WHO, WHOSE y WHAT no preguntan por el modo."
+  }
+ ],
+ [
+  "B:5773",
+  {
+   "fb": "HOW MANY: se usa con sustantivos contables en plural (brothers). WHICH, WHAT y WHO no forman esta pregunta de cantidad."
+  }
+ ],
+ [
+  "B:5775",
+  {
+   "fb": "HOW LONG: pregunta por la duración (¿cuánto tiempo?)."
+  }
+ ],
+ [
+  "B:5777",
+  {
+   "fb": "HOW TALL: pregunta por la altura (HOW + adjetivo). WHICH, WHO y WHAT no se combinan así con «tall»."
+  }
+ ],
+ [
+  "B:5781",
+  {
+   "fb": "WHAT TIME: es la forma fija para preguntar la hora."
+  }
+ ],
+ [
+  "B:5782",
+  {
+   "fb": "WHAT DAY: se usa WHAT + sustantivo para preguntar el día (¿qué día es hoy?)."
+  }
+ ],
+ [
+  "B:5788",
+  {
+   "fb": "WHAT: pregunta por la cosa que se hizo (¿qué hiciste ayer?)."
+  }
+ ],
+ [
+  "B:5793",
+  {
+   "fb": "WHO: pregunta por la persona (¿con quién vives?), y la preposición WITH va al final."
+  }
+ ],
+ [
+  "B:5794",
+  {
+   "fb": "WHO: pregunta por la persona (¿con quién fuiste?), con WITH al final."
+  }
+ ],
+ [
+  "B:5795",
+  {
+   "fb": "WHAT: pregunta por la cosa (¿qué buscas?); «look for» lleva la preposición al final."
+  }
+ ],
+ [
+  "B:5796",
+  {
+   "fb": "WHO: pregunta por la persona a la que se espera (¿a quién esperas?); «wait for» lleva la preposición al final."
+  }
+ ],
+ [
+  "B:5797",
+  {
+   "fb": "WHERE: pregunta por el lugar (¿adónde fuiste ayer?)."
+  }
+ ],
+ [
+  "B:5798",
+  {
+   "fb": "WHERE: pregunta por el origen/lugar (¿de dónde eres?); «come from» deja FROM al final."
+  }
+ ],
+ [
+  "B:5799",
+  {
+   "fb": "WHEN: pregunta por el momento (¿cuándo empieza la película?)."
+  }
+ ],
+ [
+  "B:5800",
+  {
+   "fb": "WHY: pregunta por la causa (¿por qué se fue tan pronto?)."
+  }
+ ],
+ [
+  "B:5801",
+  {
+   "fb": "WHY: pregunta por el motivo (¿por qué compraste este coche?)."
+  }
+ ],
+ [
+  "B:5802",
+  {
+   "fb": "HOW: pregunta por el modo o la fuente de conocimiento (¿cómo sabes eso?)."
+  }
+ ],
+ [
+  "B:5803",
+  {
+   "fb": "HOW: pregunta por el medio o la manera (¿cómo llegaste aquí?)."
+  }
+ ],
+ [
+  "B:5804",
+  {
+   "fb": "WHAT: pregunta por la cosa/significado (¿qué significa esta palabra?)."
+  }
+ ],
+ [
+  "B:5805",
+  {
+   "fb": "HOW: pregunta por el modo (¿cómo se deletrea tu apellido?)."
+  }
+ ],
+ [
+  "B:5806",
+  {
+   "fb": "WHERE: pregunta por el lugar (¿dónde está el banco más cercano?)."
+  }
+ ],
+ [
+  "B:5807",
+  {
+   "fb": "WHO: pregunta por la persona (¿quién es el mejor jugador?)."
+  }
+ ],
+ [
+  "B:5808",
+  {
+   "fb": "WHOSE: pregunta por el poseedor (¿de quién es este bolígrafo?) y va seguido del sustantivo. «Who’s» significa «who is»."
+  }
+ ],
+ [
+  "B:5810",
+  {
+   "fb": "WHOSE: pregunta por el poseedor y va seguido del sustantivo (¿de quién es ese coche?). «Who’s» es «who is»."
+  }
+ ],
+ [
+  "B:5813",
+  {
+   "fb": "WHICH ONE: se usa WHICH cuando se elige entre un grupo conocido de opciones (¿cuál te gusta más?)."
+  }
+ ],
+ [
+  "B:5815",
+  {
+   "fb": "WHEN: pregunta por el momento (¿cuándo es el examen?)."
+  }
+ ],
+ [
+  "B:5816",
+  {
+   "fb": "WHEN: pregunta por el momento (¿cuándo es el examen?); la respuesta es «por la mañana o por la tarde»."
+  }
+ ],
+ [
+  "B:5817",
+  {
+   "fb": "WHERE: pregunta por el lugar (¿dónde trabaja?)."
+  }
+ ],
+ [
+  "B:5822",
+  {
+   "fb": "WHAT: pregunta por la cosa/actividad (¿qué hiciste de vacaciones?)."
+  }
+ ],
+ [
+  "B:5826",
+  {
+   "fb": "HOW MANY: se usa con sustantivos contables en plural (days)."
+  }
+ ],
+ [
+  "B:5827",
+  {
+   "fb": "HOW MUCH: pregunta por el precio (¿cuánto cuesta un billete?)."
+  }
+ ],
+ [
+  "B:5828",
+  {
+   "fb": "HOW MUCH: pregunta por el precio (¿cuánto costó?)."
+  }
+ ],
+ [
+  "B:5829",
+  {
+   "fb": "HOW LONG: pregunta por la duración (¿cuánto dura la clase?)."
+  }
+ ],
+ [
+  "B:5830",
+  {
+   "fb": "HOW OFTEN: pregunta por la frecuencia (¿con qué frecuencia juegas al tenis?)."
+  }
+ ],
+ [
+  "B:5831",
+  {
+   "fb": "HOW FAR: pregunta por la distancia (¿a qué distancia está la Luna de la Tierra?)."
+  }
+ ],
+ [
+  "B:5832",
+  {
+   "fb": "HOW WIDE: pregunta por la anchura (¿qué anchura tiene el río?)."
+  }
+ ],
+ [
+  "B:5833",
+  {
+   "fb": "HOW BIG: pregunta por el tamaño (¿qué tamaño tiene la habitación?)."
+  }
+ ],
+ [
+  "B:5836",
+  {
+   "fb": "WHAT: pregunta por la actividad (¿qué haces?)."
+  }
+ ],
+ [
+  "B:5837",
+  {
+   "fb": "WHERE: pregunta por el lugar (¿adónde vas?)."
+  }
+ ],
+ [
+  "B:5838",
+  {
+   "fb": "WHO: pregunta por la persona (¿con quién hablas?), con TO al final."
+  }
+ ],
+ [
+  "B:5839",
+  {
+   "fb": "WHAT: pregunta por lo que se dijo (¿qué dijiste?)."
+  }
+ ],
+ [
+  "B:5840",
+  {
+   "fb": "WHAT: pregunta por la cosa (¿qué te gustaría beber?) cuando no hay un grupo limitado de opciones."
+  }
+ ],
+ [
+  "B:5841",
+  {
+   "fb": "WHO: pregunta por la persona a la que se vio (¿a quién viste en el cine?)."
+  }
+ ],
+ [
+  "B:5842",
+  {
+   "fb": "WHEN: pregunta por el momento (¿cuándo llegarás?)."
+  }
+ ],
+ [
+  "B:5843",
+  {
+   "fb": "WHAT: pregunta por la acción (¿qué harás si llueve?)."
+  }
+ ],
+ [
+  "B:5844",
+  {
+   "fb": "WHAT: pregunta por la acción (¿qué debo hacer?)."
+  }
+ ],
+ [
+  "B:5845",
+  {
+   "fb": "HOW: pregunta por el modo (¿cómo puedo ayudarte?)."
+  }
+ ],
+ [
+  "B:5847",
+  {
+   "fb": "SHALL I...? se usa para ofrecerse o hacer una sugerencia (¿abro la ventana?). DO, ARE e IS no forman esta estructura con «I»."
+  }
+ ],
+ [
+  "B:5848",
+  {
+   "fb": "WHAT: pregunta por la cosa (¿qué quieres comer?)."
+  }
+ ],
+ [
+  "B:5849",
+  {
+   "fb": "WHO: pregunta por la persona (¿con quién quieres hablar?), con TO al final."
+  }
+ ],
+ [
+  "B:5850",
+  {
+   "fb": "WHAT: pregunta por la cosa (¿qué quiere?)."
+  }
+ ],
+ [
+  "B:5851",
+  {
+   "fb": "WHERE: pregunta por el lugar (¿dónde viven?)."
+  }
+ ],
+ [
+  "B:5866",
+  {
+   "fb": "WHAT TIME: es la forma fija para preguntar la hora (¿a qué hora cierra el banco?)."
+  }
+ ],
+ [
+  "B:5867",
+  {
+   "fb": "WHICH OF: se usa WHICH OF + grupo conocido (these books) para elegir (¿cuál de estos libros?)."
+  }
+ ],
+ [
+  "B:5868",
+  {
+   "fb": "WHICH: se usa WHICH para elegir entre un grupo de edificios de la ciudad; «who» es solo para personas."
+  }
+ ],
+ [
+  "B:5870",
+  {
+   "fb": "WHAT: «What is the distance...?» pregunta por el dato (la distancia). WHO es para personas."
+  }
+ ],
+ [
+  "B:5871",
+  {
+   "fb": "WHAT: pregunta por la cosa (¿qué sueles desayunar?)."
+  }
+ ],
+ [
+  "B:5872",
+  {
+   "fb": "WHAT TIME: es la forma fija para preguntar la hora (¿a qué hora te levantas?)."
+  }
+ ],
+ [
+  "B:5873",
+  {
+   "fb": "WHERE: pregunta por el lugar de origen (¿de dónde eres?)."
+  }
+ ],
+ [
+  "B:5874",
+  {
+   "fb": "HOW OFTEN: pregunta por la frecuencia (¿cuántas veces has estado en París?), válida con present perfect."
+  }
+ ],
+ [
+  "B:5875",
+  {
+   "fb": "HOW LONG: pregunta por la duración (¿cuánto tiempo te quedaste en Londres?)."
+  }
+ ],
+ [
+  "B:5876",
+  {
+   "fb": "HOW MANY: se usa con sustantivos contables en plural (people)."
+  }
+ ],
+ [
+  "B:5877",
+  {
+   "fb": "HOW MUCH: se usa con sustantivos incontables (cheese)."
+  }
+ ],
+ [
+  "B:5878",
+  {
+   "fb": "HOW MANY: se usa con sustantivos contables en plural (eggs)."
+  }
+ ],
+ [
+  "B:5879",
+  {
+   "fb": "WHERE: pregunta por el lugar (¿adónde te gustaría viajar?)."
+  }
+ ],
+ [
+  "B:5880",
+  {
+   "fb": "WHERE: pregunta por el lugar (¿dónde compraste ese vestido?)."
+  }
+ ],
+ [
+  "B:5883",
+  {
+   "fb": "HOW: «How is it going?» pregunta cómo van las cosas."
+  }
+ ],
+ [
+  "B:5885",
+  {
+   "fb": "WHO: pregunta por la persona (¿quién es ella?); la respuesta es «mi hermana»."
+  }
+ ],
+ [
+  "B:5886",
+  {
+   "fb": "WHERE: pregunta por el lugar (¿dónde fue el accidente?)."
+  }
+ ],
+ [
+  "B:5887",
+  {
+   "fb": "WHAT: «What is the best way...?» pregunta por la cosa (la mejor manera). WHERE y WHO no encajan."
+  }
+ ],
+ [
+  "B:5888",
+  {
+   "fb": "WHAT: pregunta por lo que dijo (¿qué te dijo?)."
+  }
+ ],
+ [
+  "B:5889",
+  {
+   "fb": "WHO: pregunta por la persona detenida (¿a quién detuvo la policía?)."
+  }
+ ],
+ [
+  "B:5913",
+  {
+   "fb": "Frase afirmativa con WILL: la question tag es negativa con el mismo auxiliar, WON'T THEY?"
+  }
+ ],
+ [
+  "B:5927",
+  {
+   "fb": "Tras un imperativo la question tag habitual es WILL YOU? (también «won't you?»); DO, ARE y SHALL no encajan."
+  }
+ ],
+ [
+  "B:5928",
+  {
+   "fb": "Tras un imperativo la question tag habitual es WILL YOU?; DO, ARE y SHALL no encajan."
+  }
+ ],
+ [
+  "B:5933",
+  {
+   "fb": "Frase negativa con WON'T: la tag es afirmativa y repite el sujeto THERE: WILL THERE?"
+  }
+ ],
+ [
+  "B:5934",
+  {
+   "fb": "Frase afirmativa en pasado con THERE: la tag es negativa, repite THERE y el auxiliar: WASN'T THERE?"
+  }
+ ],
+ [
+  "B:5935",
+  {
+   "fb": "La tag de «this» es IT: ISN'T IT? (frase afirmativa con IS, tag negativa)."
+  }
+ ],
+ [
+  "B:5936",
+  {
+   "fb": "La tag de «that» es IT: ISN'T IT? (frase afirmativa con IS, tag negativa)."
+  }
+ ],
+ [
+  "B:5955",
+  {
+   "fb": "«He's» aquí es HE IS: frase afirmativa, tag negativa ISN'T HE?"
+  }
+ ],
+ [
+  "B:5964",
+  {
+   "fb": "«It's» aquí es IT IS: frase afirmativa, tag negativa ISN'T IT?"
+  }
+ ],
+ [
+  "B:5974",
+  {
+   "fb": "Frase afirmativa con WILL: la tag es negativa con el mismo auxiliar, WON'T YOU?"
+  }
+ ],
+ [
+  "B:5975",
+  {
+   "fb": "Frase afirmativa con WILL: la tag es negativa con el mismo auxiliar, WON'T HE?"
+  }
+ ],
+ [
+  "B:5987",
+  {
+   "fb": "Frase afirmativa con SHOULD: la tag es negativa con el mismo auxiliar, SHOULDN'T HE?"
+  }
+ ],
+ [
+  "B:5995",
+  {
+   "fb": "Tras un imperativo la question tag habitual es WILL YOU?; «shall we» se usa con «let's»."
+  }
+ ],
+ [
+  "B:5998",
+  {
+   "fb": "Frase afirmativa con IS: la tag es negativa con el mismo verbo y el sujeto en pronombre, ISN'T HE?"
+  }
+ ],
+ [
+  "B:5999",
+  {
+   "fb": "Frase negativa: la tag es afirmativa con el mismo verbo: ARE WE? («aren't we» sería negativa)."
+  }
+ ],
+ [
+  "B:6000",
+  {
+   "fb": "Frase afirmativa con WERE: la tag es negativa con el mismo verbo, WEREN'T THEY?"
+  }
+ ],
+ [
+  "B:6001",
+  {
+   "fb": "Frase negativa en pasado con WASN'T: la tag es afirmativa con el mismo verbo, WAS SHE?"
+  }
+ ],
+ [
+  "B:6008",
+  {
+   "fb": "«You've got» es HAVE GOT: la tag repite el auxiliar HAVE en negativa, HAVEN'T YOU? (con «you» nunca «hasn't»)."
+  }
+ ],
+ [
+  "B:6031",
+  {
+   "fb": "Cuando sujeto y objeto son la misma persona se usa el pronombre reflexivo HERSELF."
+  }
+ ],
+ [
+  "B:6032",
+  {
+   "fb": "Cuando sujeto y objeto son la misma persona se usa el reflexivo MYSELF."
+  }
+ ],
+ [
+  "B:6033",
+  {
+   "fb": "Cuando sujeto y objeto son la misma persona se usa el reflexivo HIMSELF."
+  }
+ ],
+ [
+  "B:6034",
+  {
+   "fb": "Con «enjoy» se usa el reflexivo OURSELVES («enjoy oneself» = divertirse)."
+  }
+ ],
+ [
+  "B:6035",
+  {
+   "fb": "Sujeto y objeto son los mismos, por eso se usa el reflexivo THEMSELVES."
+  }
+ ],
+ [
+  "B:6036",
+  {
+   "fb": "Sujeto y objeto son la misma persona, por eso se usa el reflexivo YOURSELF."
+  }
+ ],
+ [
+  "B:6038",
+  {
+   "fb": "Sujeto y objeto son el mismo, por eso se usa el reflexivo ITSELF. «It's» es «it is»."
+  }
+ ],
+ [
+  "B:6039",
+  {
+   "fb": "Sujeto y objeto son la misma persona, por eso se usa el reflexivo HERSELF."
+  }
+ ],
+ [
+  "B:6040",
+  {
+   "fb": "El reflexivo MYSELF al final enfatiza que lo hice yo mismo, sin ayuda."
+  }
+ ],
+ [
+  "B:6041",
+  {
+   "fb": "El reflexivo HIMSELF al final enfatiza que lo hizo él mismo, sin ayuda."
+  }
+ ],
+ [
+  "B:6042",
+  {
+   "fb": "El reflexivo THEMSELVES al final enfatiza que lo construyeron ellos mismos."
+  }
+ ],
+ [
+  "B:6046",
+  {
+   "fb": "«Enjoy yourself!» (¡diviértete!): el verbo enjoy sin complemento lleva el reflexivo YOURSELF."
+  }
+ ],
+ [
+  "B:6047",
+  {
+   "fb": "La expresión fija es «Make YOURSELF at home» (siéntete como en casa), con el reflexivo."
+  }
+ ],
+ [
+  "B:6048",
+  {
+   "fb": "EACH OTHER expresa acción recíproca entre dos o más personas (se miraron el uno al otro)."
+  }
+ ],
+ [
+  "B:6049",
+  {
+   "fb": "EACH OTHER expresa acción recíproca (nos escribimos el uno al otro); «ourselves» sería reflexivo."
+  }
+ ],
+ [
+  "B:6050",
+  {
+   "fb": "EACH OTHER expresa acción recíproca (se quieren el uno al otro). «Theirselves» no existe."
+  }
+ ],
+ [
+  "B:6062",
+  {
+   "fb": "THERE IS A LOT OF TRAFFIC: para decir «hay» se usa THERE + to be; HE, IT y THAT no expresan existencia."
+  }
+ ],
+ [
+  "B:6066",
+  {
+   "fb": "«Be» va seguido de un adjetivo: ALONE (solo). «Lonely of», «itself» y «oneself of» no son correctas aquí."
+  }
+ ],
+ [
+  "B:6076",
+  {
+   "fb": "NOBODY (nadie): si la habitación está vacía, no hay nadie. Los demás pronombres indican presencia."
+  }
+ ],
+ [
+  "B:6077",
+  {
+   "fb": "NOTHING (nada): la ciudad es aburrida porque no pasa nada. Los otros pronombres no encajan con «it's boring»."
+  }
+ ],
+ [
+  "B:6081",
+  {
+   "fb": "BOTH OF THEM (los dos): «both» se usa con dos elementos; ANY, EVERY y EACH no se combinan así con «of them»."
+  }
+ ],
+ [
+  "B:6082",
+  {
+   "fb": "ALL OF THE STUDENTS (todos): «all of» + determinante + plural; NO y EVERY no van seguidos de «of»."
+  }
+ ],
+ [
+  "B:6111",
+  {
+   "fb": "Con HAS ... YET se usa el present perfect: has + participio (WRITTEN). «Wrote» es pasado simple."
+  }
+ ],
+ [
+  "B:6142",
+  {
+   "fb": "WE HAVE ONLY MET HIM ONCE: ONLY (solo) se coloca entre el auxiliar y el participio; AGO, YET y SINCE no encajan."
+  }
+ ],
+ [
+  "B:6148",
+  {
+   "fb": "SINCE + punto del pasado («last week»). FOR se usa con duraciones y AGO con pasado simple."
+  }
+ ],
+ [
+  "B:6149",
+  {
+   "fb": "FOR + duración («a long time»). SINCE necesita un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6157",
+  {
+   "fb": "Present perfect negativo con «ever»: SHE HASN'T EVER BEEN (nunca ha estado). «She» lleva HAS."
+  }
+ ],
+ [
+  "B:6159",
+  {
+   "fb": "HAVE YOU EVER...?: el present perfect con EVER pregunta por experiencias de la vida."
+  }
+ ],
+ [
+  "B:6181",
+  {
+   "fb": "RECENTLY indica un pasado reciente relacionado con el presente: present perfect, HAS LOST."
+  }
+ ],
+ [
+  "B:6182",
+  {
+   "fb": "LATELY indica un periodo reciente hasta hoy: present perfect negativo, HAVEN'T SEEN."
+  }
+ ],
+ [
+  "B:6183",
+  {
+   "fb": "SO FAR (hasta ahora) pide el present perfect: HAS SCORED."
+  }
+ ],
+ [
+  "B:6186",
+  {
+   "fb": "Con HASN'T ... YET se usa el participio: FOUND. Los infinitivos y el gerundio no sirven."
+  }
+ ],
+ [
+  "B:6187",
+  {
+   "fb": "Present perfect: HASN'T + participio (COME, que coincide con el infinitivo). «Came» es pasado simple."
+  }
+ ],
+ [
+  "B:6188",
+  {
+   "fb": "Present perfect: HAVEN'T + participio (CALLED)."
+  }
+ ],
+ [
+  "B:6189",
+  {
+   "fb": "Present perfect: HAVEN'T + participio de have (HAD)."
+  }
+ ],
+ [
+  "B:6190",
+  {
+   "fb": "Present perfect: HAVEN'T + participio de do (DONE). «Did» es pasado simple."
+  }
+ ],
+ [
+  "B:6192",
+  {
+   "fb": "HAS GONE significa que John fue y no está aquí ahora. HAS BEEN indicaría que ya volvió."
+  }
+ ],
+ [
+  "B:6193",
+  {
+   "fb": "HAVE BEEN TO: fui al banco y ya volví (tengo el dinero ahora). HAVE GONE indicaría que sigo allí."
+  }
+ ],
+ [
+  "B:6195",
+  {
+   "fb": "Superlativo + present perfect con EVER: «the best meal I HAVE ever eaten»."
+  }
+ ],
+ [
+  "B:6196",
+  {
+   "fb": "Superlativo + present perfect con EVER: «the most interesting man I HAVE ever met»."
+  }
+ ],
+ [
+  "B:6197",
+  {
+   "fb": "Superlativo + present perfect con EVER: «the worst film I HAVE ever seen»."
+  }
+ ],
+ [
+  "B:6201",
+  {
+   "fb": "YET con frase negativa pide present perfect: THE TRAIN HASN'T LEFT YET."
+  }
+ ],
+ [
+  "B:6202",
+  {
+   "fb": "RECENTLY pide present perfect: PRICES HAVE GONE UP."
+  }
+ ],
+ [
+  "B:6203",
+  {
+   "fb": "SINCE pide present perfect: HAS RISEN (rise, rose, risen)."
+  }
+ ],
+ [
+  "B:6204",
+  {
+   "fb": "THIS WEEK es un periodo que aún no ha terminado: present perfect, HAVE STUDIED."
+  }
+ ],
+ [
+  "B:6208",
+  {
+   "fb": "HOW LONG...? con una situación que continúa hasta ahora pide present perfect: HAVE THEY KNOWN."
+  }
+ ],
+ [
+  "B:6234",
+  {
+   "fb": "STILL (todavía, sigue) indica que una acción continúa; YET va en negativas/preguntas con present perfect y ALREADY en afirmativas."
+  }
+ ],
+ [
+  "B:6235",
+  {
+   "fb": "ALREADY (ya) se usa en frases afirmativas con present perfect; YET va en negativas y preguntas."
+  }
+ ],
+ [
+  "B:6236",
+  {
+   "fb": "ALREADY (ya) se usa en frases afirmativas con present perfect; YET va en negativas y preguntas."
+  }
+ ],
+ [
+  "B:6237",
+  {
+   "fb": "AGO va detrás de una cantidad de tiempo (a week) y se usa con el pasado simple: «a week AGO»."
+  }
+ ],
+ [
+  "B:6245",
+  {
+   "fb": "FOR + duración (a long time): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6247",
+  {
+   "fb": "FOR + duración (six months): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6248",
+  {
+   "fb": "FOR + ages (duración): «for ages» significa «desde hace mucho tiempo»; SINCE necesita un punto de inicio."
+  }
+ ],
+ [
+  "B:6250",
+  {
+   "fb": "AGO va detrás de una cantidad de tiempo (ten years) y se usa con el pasado simple: «ten years AGO»."
+  }
+ ],
+ [
+  "B:6252",
+  {
+   "fb": "FOR + duración (a week): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6255",
+  {
+   "fb": "JUST (acabar de) se coloca entre HAVE/HAS y el participio para acciones recién terminadas."
+  }
+ ],
+ [
+  "B:6256",
+  {
+   "fb": "JUST (acabar de) se coloca entre HAVE/HAS y el participio para acciones recién terminadas."
+  }
+ ],
+ [
+  "B:6257",
+  {
+   "fb": "YET (todavía/ya) va al final de frases negativas o preguntas con present perfect."
+  }
+ ],
+ [
+  "B:6258",
+  {
+   "fb": "STILL (todavía, sigue) indica que una acción continúa; YET va en negativas/preguntas con present perfect y ALREADY en afirmativas."
+  }
+ ],
+ [
+  "B:6259",
+  {
+   "fb": "STILL (todavía, sigue) indica que una acción continúa; YET va en negativas/preguntas con present perfect y ALREADY en afirmativas."
+  }
+ ],
+ [
+  "B:6262",
+  {
+   "fb": "NEVER (nunca): se coloca entre HAVE y el participio; «it's my first time» confirma que nunca ha estado."
+  }
+ ],
+ [
+  "B:6264",
+  {
+   "fb": "NEVER (nunca): se coloca entre HAS y el participio (has never seen)."
+  }
+ ],
+ [
+  "B:6265",
+  {
+   "fb": "YET (todavía/ya) va al final de frases negativas o preguntas con present perfect."
+  }
+ ],
+ [
+  "B:6268",
+  {
+   "fb": "YET (todavía/ya) va al final de frases negativas o preguntas con present perfect."
+  }
+ ],
+ [
+  "B:6269",
+  {
+   "fb": "AGO va detrás de una cantidad de tiempo (ten years) y se usa con el pasado simple: «ten years AGO»."
+  }
+ ],
+ [
+  "B:6270",
+  {
+   "fb": "AGO va detrás de una cantidad de tiempo (three months) y se usa con el pasado simple: «three months AGO»."
+  }
+ ],
+ [
+  "B:6271",
+  {
+   "fb": "JUST se coloca entre el auxiliar y el participio: HAS JUST LANDED (acaba de aterrizar). «Just has» y «have just» no concuerdan."
+  }
+ ],
+ [
+  "B:6278",
+  {
+   "fb": "ALWAYS (siempre): se coloca entre HAVE y el participio; «I was born here» lo confirma."
+  }
+ ],
+ [
+  "B:6279",
+  {
+   "fb": "JUST (acabar de) se coloca entre HAVE/HAS y el participio para acciones recién terminadas."
+  }
+ ],
+ [
+  "B:6303",
+  {
+   "fb": "Aquí se usa el present perfect continuous: HASN'T BEEN EATING enough (no ha estado comiendo). Ojo: «eaten» también sería gramatical, ver dudas."
+  }
+ ],
+ [
+  "B:6304",
+  {
+   "fb": "Aquí aparece HAVEN'T BEEN PAYING attention (no han estado prestando atención). Ojo: «paid» también sería gramatical, ver dudas."
+  }
+ ],
+ [
+  "B:6305",
+  {
+   "fb": "Tras «hasn't been» el verbo va en -ING: SLEEPING. «Hasn't been sleeping well» (no ha dormido bien últimamente)."
+  }
+ ],
+ [
+  "B:6307",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN SITTING."
+  }
+ ],
+ [
+  "B:6308",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN TALKING."
+  }
+ ],
+ [
+  "B:6309",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN LOOKING."
+  }
+ ],
+ [
+  "B:6310",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN DANCING."
+  }
+ ],
+ [
+  "B:6312",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN PLAYING."
+  }
+ ],
+ [
+  "B:6313",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN RAINING."
+  }
+ ],
+ [
+  "B:6315",
+  {
+   "fb": "ONLY se coloca antes de «been waiting»: I'VE ONLY BEEN WAITING (solo llevo esperando...). SINCE, AGO y YET no encajan con «for long»."
+  }
+ ],
+ [
+  "B:6316",
+  {
+   "fb": "FOR + duración (five years): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6317",
+  {
+   "fb": "SINCE + punto concreto del pasado (2019): se usa con el present perfect. FOR indica duración y AGO se usa con pasado simple."
+  }
+ ],
+ [
+  "B:6319",
+  {
+   "fb": "I HAVE BEEN PLAYING tennis for years: el present perfect continuous destaca la duración hasta ahora. Ojo: «have played» también sería gramatical, ver dudas."
+  }
+ ],
+ [
+  "B:6320",
+  {
+   "fb": "THEY'VE BEEN PAINTING the house for weeks: el present perfect continuous expresa una acción que se prolonga durante semanas."
+  }
+ ],
+ [
+  "B:6321",
+  {
+   "fb": "FOR + duración (two weeks): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6328",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN CLEANING."
+  }
+ ],
+ [
+  "B:6329",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN DRINKING."
+  }
+ ],
+ [
+  "B:6330",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN STUDYING."
+  }
+ ],
+ [
+  "B:6331",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN LOOKING."
+  }
+ ],
+ [
+  "B:6332",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN RAINING."
+  }
+ ],
+ [
+  "B:6333",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN SITTING."
+  }
+ ],
+ [
+  "B:6334",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN WORKING."
+  }
+ ],
+ [
+  "B:6336",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN WORKING."
+  }
+ ],
+ [
+  "B:6337",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN THINKING."
+  }
+ ],
+ [
+  "B:6352",
+  {
+   "fb": "Past perfect negativo: HADN'T + participio (seen) para algo anterior a otro momento del pasado."
+  }
+ ],
+ [
+  "B:6353",
+  {
+   "fb": "Past perfect negativo: HADN'T FINISHED (aún no habían terminado cuando llegamos)."
+  }
+ ],
+ [
+  "B:6354",
+  {
+   "fb": "Past perfect negativo: HADN'T BEEN there before."
+  }
+ ],
+ [
+  "B:6355",
+  {
+   "fb": "BY + hora (by 8 o'clock) pide past perfect: HAD LEFT (ya se había ido)."
+  }
+ ],
+ [
+  "B:6392",
+  {
+   "fb": "Past perfect continuous en pregunta: HOW LONG HAD YOU BEEN WAITING...?"
+  }
+ ],
+ [
+  "B:6393",
+  {
+   "fb": "Past perfect continuous en pregunta: WHAT HAD SHE BEEN DOING before you called?"
+  }
+ ],
+ [
+  "B:6394",
+  {
+   "fb": "Past perfect continuous en pregunta: WHY HAD THEY BEEN ARGUING?"
+  }
+ ],
+ [
+  "B:6395",
+  {
+   "fb": "Past perfect continuous negativo: I HADN'T BEEN WAITING long when the bus came."
+  }
+ ],
+ [
+  "B:6396",
+  {
+   "fb": "Past perfect continuous negativo: SHE HADN'T BEEN SLEEPING well, so she was tired."
+  }
+ ],
+ [
+  "B:6397",
+  {
+   "fb": "Past perfect continuous negativo: THEY HADN'T BEEN LIVING there long."
+  }
+ ],
+ [
+  "B:6399",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN WAITING."
+  }
+ ],
+ [
+  "B:6400",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN WORKING."
+  }
+ ],
+ [
+  "B:6401",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN WALKING."
+  }
+ ],
+ [
+  "B:6402",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN THINKING."
+  }
+ ],
+ [
+  "B:6403",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN RAINING."
+  }
+ ],
+ [
+  "B:6404",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN WORKING."
+  }
+ ],
+ [
+  "B:6418",
+  {
+   "fb": "HOW LONG HAD SHE BEEN WORKING...?: past perfect continuous para una duración anterior a otro momento del pasado."
+  }
+ ],
+ [
+  "B:6564",
+  {
+   "fb": "ALTHOUGH (aunque) va seguido de sujeto + verbo para expresar contraste; BECAUSE OF, DESPITE e IN SPITE OF van seguidos de sustantivo o -ING."
+  }
+ ],
+ [
+  "B:6567",
+  {
+   "fb": "ALTHOUGH (aunque) va seguido de sujeto + verbo para expresar contraste; BECAUSE OF, DESPITE e IN SPITE OF van seguidos de sustantivo o -ING."
+  }
+ ],
+ [
+  "B:6573",
+  {
+   "fb": "ALTHOUGH (aunque) va seguido de sujeto + verbo para expresar contraste; BECAUSE OF, DESPITE e IN SPITE OF van seguidos de sustantivo o -ING."
+  }
+ ],
+ [
+  "B:6587",
+  {
+   "fb": "ALTHOUGH (aunque) va seguido de sujeto + verbo para expresar contraste; BECAUSE OF, DESPITE e IN SPITE OF van seguidos de sustantivo o -ING."
+  }
+ ],
+ [
+  "B:6590",
+  {
+   "fb": "ALTHOUGH (aunque) va seguido de sujeto + verbo para expresar contraste; BECAUSE OF, DESPITE e IN SPITE OF van seguidos de sustantivo o -ING."
+  }
+ ],
+ [
+  "B:6591",
+  {
+   "fb": "DESPITE + sustantivo (his nerves) expresa contraste sin sujeto + verbo. ALTHOUGH y EVEN THOUGH exigen una oración completa."
+  }
+ ],
+ [
+  "B:6598",
+  {
+   "fb": "ALTHOUGH (aunque) va seguido de sujeto + verbo para expresar contraste; BECAUSE OF, DESPITE e IN SPITE OF van seguidos de sustantivo o -ING."
+  }
+ ],
+ [
+  "B:6604",
+  {
+   "fb": "ALTHOUGH (aunque) va seguido de sujeto + verbo para expresar contraste; BECAUSE OF, DESPITE e IN SPITE OF van seguidos de sustantivo o -ING."
+  }
+ ],
+ [
+  "B:6606",
+  {
+   "fb": "ALTHOUGH (aunque) va seguido de sujeto + verbo para expresar contraste; BECAUSE OF, DESPITE e IN SPITE OF van seguidos de sustantivo o -ING."
+  }
+ ],
+ [
+  "B:6613",
+  {
+   "fb": "WILL + infinitivo expresa una promesa o decisión espontánea: I WILL CALL you."
+  }
+ ],
+ [
+  "B:6614",
+  {
+   "fb": "WILL + infinitivo expresa una predicción o certeza: «I'm sure she WILL PASS the exam»."
+  }
+ ],
+ [
+  "B:6617",
+  {
+   "fb": "I WON'T GO: WON'T expresa negativa o rechazo a hacer algo (no pienso ir), por estar cansado."
+  }
+ ],
+ [
+  "B:6620",
+  {
+   "fb": "WHAT TIME WILL THE MEETING START?: pregunta de futuro con WILL."
+  }
+ ],
+ [
+  "B:6621",
+  {
+   "fb": "WHEN WILL YOU ARRIVE?: pregunta de futuro con WILL."
+  }
+ ],
+ [
+  "B:6640",
+  {
+   "fb": "BE GOING TO expresa un plan ya decidido (aquí ya han ahorrado el dinero). WILL se usa para decisiones espontáneas."
+  }
+ ],
+ [
+  "B:6645",
+  {
+   "fb": "I AM GOING TO go home: BE GOING TO expresa una intención tomada. «Will to» es incorrecto."
+  }
+ ],
+ [
+  "B:6648",
+  {
+   "fb": "Para horarios fijos se usa el presente simple con valor de futuro: MY PLANE LEAVES at 9 tomorrow."
+  }
+ ],
+ [
+  "B:6656",
+  {
+   "fb": "Tras el artículo «a» y antes de «day» hace falta un adjetivo: BUSY. «Business» y «busyness» son sustantivos."
+  }
+ ],
+ [
+  "B:6657",
+  {
+   "fb": "IT WON'T BE EASY: futuro negativo con WON'T + infinitivo (be)."
+  }
+ ],
+ [
+  "B:6658",
+  {
+   "fb": "I WILL NEVER FORGET: futuro con WILL + never + infinitivo."
+  }
+ ],
+ [
+  "B:6659",
+  {
+   "fb": "YOU WILL BE a good teacher: predicción con WILL + infinitivo (be)."
+  }
+ ],
+ [
+  "B:6666",
+  {
+   "fb": "Future continuous en pregunta: WHAT WILL YOU BE DOING...? (qué estarás haciendo)."
+  }
+ ],
+ [
+  "B:6669",
+  {
+   "fb": "Future continuous en pregunta: WILL YOU BE USING...? (¿estarás usando...?)."
+  }
+ ],
+ [
+  "B:6680",
+  {
+   "fb": "Future perfect continuous negativo: SHE WON'T HAVE BEEN WAITING long by then."
+  }
+ ],
+ [
+  "B:6684",
+  {
+   "fb": "En el future perfect continuous, tras «been» el present/past perfect continuous exige la forma -ING: BEEN WALKING."
+  }
+ ],
+ [
+  "B:6708",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el presente pasa a pasado: «work» → WORKED."
+  }
+ ],
+ [
+  "B:6709",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el presente pasa a pasado: «live» → LIVED."
+  }
+ ],
+ [
+  "B:6717",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «am going to» pasa a WAS going to."
+  }
+ ],
+ [
+  "B:6719",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el present perfect pasa a past perfect: «haven't seen» → HADN'T seen."
+  }
+ ],
+ [
+  "B:6720",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «won’t» pasa a WOULDN'T."
+  }
+ ],
+ [
+  "B:6722",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «are» pasa a WERE."
+  }
+ ],
+ [
+  "B:6727",
+  {
+   "fb": "En estilo indirecto, NOW cambia a THEN (she was busy THEN) porque el momento ya pasó."
+  }
+ ],
+ [
+  "B:6735",
+  {
+   "fb": "En preguntas sí/no indirectas se usa IF (o whether): HE ASKED ME IF I WAS TIRED."
+  }
+ ],
+ [
+  "B:6739",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «will» pasa a WOULD."
+  }
+ ],
+ [
+  "B:6740",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el present perfect «have eaten» pasa a past perfect: IF I HAD eaten."
+  }
+ ],
+ [
+  "B:6741",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el pasado simple «did you see» pasa a past perfect: IF I HAD SEEN."
+  }
+ ],
+ [
+  "B:6743",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «can» pasa a COULD."
+  }
+ ],
+ [
+  "B:6747",
+  {
+   "fb": "Una orden en estilo indirecto se expresa con TOLD + objeto + TO + infinitivo: told us TO BE quiet."
+  }
+ ],
+ [
+  "B:6767",
+  {
+   "fb": "OFFER va seguido de TO + infinitivo: HE OFFERED TO TAKE me home."
+  }
+ ],
+ [
+  "B:6773",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «can» pasa a COULD (asked if I COULD help)."
+  }
+ ],
+ [
+  "B:6774",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «will» pasa a WOULD."
+  }
+ ],
+ [
+  "B:6775",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «have» pasa a HAD."
+  }
+ ],
+ [
+  "B:6776",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «knows» pasa a KNEW."
+  }
+ ],
+ [
+  "B:6777",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «are» pasa a WERE."
+  }
+ ],
+ [
+  "B:6778",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el present perfect pasa a past perfect: HAD been there."
+  }
+ ],
+ [
+  "B:6779",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «will» pasa a WOULD (would leave the next day)."
+  }
+ ],
+ [
+  "B:6780",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el pasado simple «received» pasa a past perfect: HAD RECEIVED (the day before)."
+  }
+ ],
+ [
+  "B:6786",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «will» pasa a WOULD."
+  }
+ ],
+ [
+  "B:6787",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el present perfect «I've lost» pasa a past perfect: HAD lost."
+  }
+ ],
+ [
+  "B:6788",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el presente continuo «is raining» pasa a WAS raining."
+  }
+ ],
+ [
+  "B:6789",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «am going» pasa a WAS going."
+  }
+ ],
+ [
+  "B:6790",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, «don't like» pasa a DIDN'T like."
+  }
+ ],
+ [
+  "B:6791",
+  {
+   "fb": "Backshift: en estilo indirecto con verbo introductor en pasado, el pasado simple «didn't see» pasa a past perfect: HADN'T seen."
+  }
+ ],
+ [
+  "B:6792",
+  {
+   "fb": "WHEN se usa como relativo tras sustantivos de tiempo: THE DAY WHEN we met."
+  }
+ ],
+ [
+  "B:6793",
+  {
+   "fb": "WHY se usa como relativo tras REASON: THE REASON WHY she left."
+  }
+ ],
+ [
+  "B:6796",
+  {
+   "fb": "WHOSE expresa posesión en relativas: «a man WHOSE wife is a lawyer» (cuya esposa)."
+  }
+ ],
+ [
+  "B:6807",
+  {
+   "fb": "WHERE introduce una pregunta indirecta sobre el lugar: she didn't tell me WHERE she was going."
+  }
+ ],
+ [
+  "B:6816",
+  {
+   "fb": "WHO introduce una relativa referida a personas: a man WHO speaks six languages."
+  }
+ ],
+ [
+  "B:6817",
+  {
+   "fb": "WHOSE expresa posesión: a friend WHOSE father is a pilot (cuyo padre)."
+  }
+ ],
+ [
+  "B:6818",
+  {
+   "fb": "WHO introduce una relativa de persona y funciona como sujeto: the girl WHO is standing there."
+  }
+ ],
+ [
+  "B:6820",
+  {
+   "fb": "WHO introduce una relativa de persona: A PERSON WHO steals (una persona que roba)."
+  }
+ ],
+ [
+  "B:6821",
+  {
+   "fb": "Tras «the thing» se usa el relativo THAT; WHAT ya incluye el antecedente."
+  }
+ ],
+ [
+  "B:6823",
+  {
+   "fb": "THOSE WHO significa «los que/quienes»; para personas se usa WHO."
+  }
+ ],
+ [
+  "B:6825",
+  {
+   "fb": "Tras REASON se usa el relativo WHY: the reason WHY I called you."
+  }
+ ],
+ [
+  "B:6826",
+  {
+   "fb": "Tras «the moment» se usa el relativo WHEN (o that): the moment WHEN I saw her."
+  }
+ ],
+ [
+  "B:6827",
+  {
+   "fb": "Tras «the place» se usa el relativo WHERE: the place WHERE we met."
+  }
+ ],
+ [
+  "B:6828",
+  {
+   "fb": "WHOSE expresa posesión con coma explicativa: the manager, WHOSE office is... (cuyo despacho)."
+  }
+ ],
+ [
+  "B:6903",
+  {
+   "fb": "PUT ON significa «ponerse» (una prenda). PUT OUT apaga, PUT OFF aplaza y PUT UP levanta o aloja."
+  }
+ ],
+ [
+  "B:6915",
+  {
+   "fb": "TURN OFF significa «apagar» (el motor). TURN UP sube el volumen y TURN INTO transforma."
+  }
+ ],
+ [
+  "B:6922",
+  {
+   "fb": "LET OUT significa «dejar salir» (al perro). «Lost», «lent» y «left» no forman esa expresión."
+  }
+ ],
+ [
+  "B:6942",
+  {
+   "fb": "PUNCTUAL es la forma inglesa de «puntual». Las otras son falsas formas con ortografía española."
+  }
+ ],
+ [
+  "B:6953",
+  {
+   "fb": "ACCOUNT es «cuenta bancaria». BILL es «factura» y COUNT es «contar»."
+  }
+ ],
+ [
+  "B:6954",
+  {
+   "fb": "EXPERIENCE significa «experiencia». EXPERIMENT es «experimento» y las otras formas están mal escritas."
+  }
+ ],
+ [
+  "B:6955",
+  {
+   "fb": "EXPERIMENT significa «experimento». EXPERIENCE es «experiencia» y las otras formas están mal escritas."
+  }
+ ],
+ [
+  "B:6964",
+  {
+   "fb": "ALREADY (ya) se usa en frases afirmativas con present perfect; YET va en negativas y preguntas."
+  }
+ ],
+ [
+  "B:6967",
+  {
+   "fb": "FOR + duración (ten years): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6968",
+  {
+   "fb": "SINCE + punto concreto del pasado (2015): se usa con el present perfect. FOR indica duración y AGO se usa con pasado simple."
+  }
+ ],
+ [
+  "B:6970",
+  {
+   "fb": "NEVER (nunca) va entre HAS y el participio: «She has never been late» (por eso es puntual)."
+  }
+ ],
+ [
+  "B:6972",
+  {
+   "fb": "JUST (acabar de) se coloca entre HAVE/HAS y el participio para acciones recién terminadas."
+  }
+ ],
+ [
+  "B:6973",
+  {
+   "fb": "FOR + duración (two years): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6974",
+  {
+   "fb": "SINCE + punto concreto del pasado (2023): se usa con el present perfect. FOR indica duración y AGO se usa con pasado simple."
+  }
+ ],
+ [
+  "B:6975",
+  {
+   "fb": "AGO va detrás de una cantidad de tiempo (ten years) y se usa con el pasado simple: «ten years AGO»."
+  }
+ ],
+ [
+  "B:6976",
+  {
+   "fb": "SINCE + punto concreto del pasado (last year): se usa con el present perfect. FOR indica duración y AGO se usa con pasado simple."
+  }
+ ],
+ [
+  "B:6977",
+  {
+   "fb": "FOR + duración (five years): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6978",
+  {
+   "fb": "YET (todavía/ya) va al final de frases negativas o preguntas con present perfect."
+  }
+ ],
+ [
+  "B:6979",
+  {
+   "fb": "STILL (todavía, sigue) indica que la lluvia continúa ahora; YET va en negativas/preguntas y ALREADY en afirmativas."
+  }
+ ],
+ [
+  "B:6980",
+  {
+   "fb": "JUST (acabar de) se coloca entre HAVE/HAS y el participio para acciones recién terminadas."
+  }
+ ],
+ [
+  "B:6985",
+  {
+   "fb": "AGO va detrás de una cantidad de tiempo (an hour) y se usa con el pasado simple: «an hour AGO»."
+  }
+ ],
+ [
+  "B:6986",
+  {
+   "fb": "AGO va detrás de una cantidad de tiempo (a month) y se usa con el pasado simple: «a month AGO»."
+  }
+ ],
+ [
+  "B:6987",
+  {
+   "fb": "SINCE + punto concreto del pasado (2018): se usa con el present perfect. FOR indica duración y AGO se usa con pasado simple."
+  }
+ ],
+ [
+  "B:6988",
+  {
+   "fb": "FOR + duración (six years): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6989",
+  {
+   "fb": "ALREADY (ya) se usa en frases afirmativas con present perfect; YET va en negativas y preguntas."
+  }
+ ],
+ [
+  "B:6990",
+  {
+   "fb": "YET (todavía/ya) va al final de frases negativas o preguntas con present perfect."
+  }
+ ],
+ [
+  "B:6991",
+  {
+   "fb": "FOR + duración (ages): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6994",
+  {
+   "fb": "FOR + duración (half an hour): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:6995",
+  {
+   "fb": "SINCE + punto concreto del pasado (half past two): se usa con el present perfect. FOR indica duración y AGO se usa con pasado simple."
+  }
+ ],
+ [
+  "B:6996",
+  {
+   "fb": "AGO va detrás de una cantidad de tiempo (two years) y se usa con el pasado simple: «two years AGO»."
+  }
+ ],
+ [
+  "B:6997",
+  {
+   "fb": "ALREADY (ya) se usa en frases afirmativas con present perfect; YET va en negativas y preguntas."
+  }
+ ],
+ [
+  "B:6998",
+  {
+   "fb": "YET (todavía/ya) va al final de frases negativas o preguntas con present perfect."
+  }
+ ],
+ [
+  "B:6999",
+  {
+   "fb": "STILL (todavía, sigue) indica que una acción continúa; YET va en negativas/preguntas con present perfect y ALREADY en afirmativas."
+  }
+ ],
+ [
+  "B:7000",
+  {
+   "fb": "STILL (todavía, sigue) indica que una acción continúa; YET va en negativas/preguntas con present perfect y ALREADY en afirmativas."
+  }
+ ],
+ [
+  "B:7001",
+  {
+   "fb": "JUST (acabar de) se coloca entre HAVE/HAS y el participio para acciones recién terminadas."
+  }
+ ],
+ [
+  "B:7005",
+  {
+   "fb": "Present perfect continuous en pregunta: HAVE YOU BEEN WORKING...? Se deduce por la evidencia presente (manos sucias)."
+  }
+ ],
+ [
+  "B:7006",
+  {
+   "fb": "SINCE Monday pide present perfect continuous: I HAVE BEEN TRYING to contact you."
+  }
+ ],
+ [
+  "B:7007",
+  {
+   "fb": "SINCE he was ten pide present perfect continuous: HE HAS BEEN STUDYING English."
+  }
+ ],
+ [
+  "B:7008",
+  {
+   "fb": "SINCE nine o'clock pide present perfect continuous: WE HAVE BEEN WAITING here."
+  }
+ ],
+ [
+  "B:7009",
+  {
+   "fb": "HOW LONG HAS SHE BEEN LIVING...?: «she» lleva HAS en el present perfect continuous."
+  }
+ ],
+ [
+  "B:7010",
+  {
+   "fb": "FOR weeks indica duración hasta ahora: THEY HAVE BEEN REPAIRING the road."
+  }
+ ],
+ [
+  "B:7011",
+  {
+   "fb": "SINCE morning pide present perfect continuous: THE CHILDREN HAVE BEEN PLAYING."
+  }
+ ],
+ [
+  "B:7012",
+  {
+   "fb": "RECENTLY con una acción repetida o prolongada: HE HAS BEEN DRINKING a lot."
+  }
+ ],
+ [
+  "B:7013",
+  {
+   "fb": "LATELY indica un periodo reciente hasta hoy: SHE HASN'T BEEN SLEEPING well."
+  }
+ ],
+ [
+  "B:7014",
+  {
+   "fb": "ALL DAY indica una acción prolongada hasta ahora: I HAVE BEEN THINKING about you."
+  }
+ ],
+ [
+  "B:7015",
+  {
+   "fb": "FOR A WEEK indica duración hasta ahora: THE ENGINE HAS BEEN MAKING strange noises."
+  }
+ ],
+ [
+  "B:7016",
+  {
+   "fb": "SINCE I woke up pide present perfect continuous: IT HAS BEEN SNOWING."
+  }
+ ],
+ [
+  "B:7017",
+  {
+   "fb": "FOR HOURS y la evidencia presente (Look at the sky) piden present perfect continuous: IT HAS BEEN RAINING."
+  }
+ ],
+ [
+  "B:7018",
+  {
+   "fb": "SINCE she left university pide present perfect continuous: SHE HAS BEEN LOOKING for a job."
+  }
+ ],
+ [
+  "B:7019",
+  {
+   "fb": "WHAT HAVE YOU BEEN DOING all morning?: pregunta con present perfect continuous («you» lleva HAVE)."
+  }
+ ],
+ [
+  "B:7020",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN TELLING."
+  }
+ ],
+ [
+  "B:7021",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN WAITING."
+  }
+ ],
+ [
+  "B:7022",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN ARGUING."
+  }
+ ],
+ [
+  "B:7023",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN PLAYING."
+  }
+ ],
+ [
+  "B:7024",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN STUDYING."
+  }
+ ],
+ [
+  "B:7025",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN SHOUTING."
+  }
+ ],
+ [
+  "B:7026",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN RAINING."
+  }
+ ],
+ [
+  "B:7027",
+  {
+   "fb": "Present perfect continuous: PRICES HAVE BEEN RISING (rising) for months."
+  }
+ ],
+ [
+  "B:7028",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN DATING."
+  }
+ ],
+ [
+  "B:7029",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN LOSING."
+  }
+ ],
+ [
+  "B:7030",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN TRYING."
+  }
+ ],
+ [
+  "B:7031",
+  {
+   "fb": "Tras «been» el present/past perfect continuous exige la forma -ING: BEEN WORKING."
+  }
+ ],
+ [
+  "B:7035",
+  {
+   "fb": "SINCE + punto concreto del pasado (Monday): se usa con el present perfect. FOR indica duración y AGO se usa con pasado simple."
+  }
+ ],
+ [
+  "B:7036",
+  {
+   "fb": "FOR + duración (three years): se usa con el present perfect. SINCE exige un punto de inicio y AGO va con pasado simple."
+  }
+ ],
+ [
+  "B:7041",
+  {
+   "fb": "LATELY indica un periodo reciente hasta hoy: THE BOSS HAS BEEN GETTING angry with us."
+  }
+ ],
+ [
+  "B:7042",
+  {
+   "fb": "FOR AGES indica una duración hasta ahora: I HAVE BEEN LOOKING for you for ages."
+  }
+ ],
+ [
+  "B:7073",
+  {
+   "fb": "Past perfect negativo: I HADN'T STUDIED English before I came here (antes de otra acción pasada)."
+  }
+ ],
+ [
+  "B:7074",
+  {
+   "fb": "Past perfect negativo: HE HADN'T BEEN to the station, así que no conocía el camino."
+  }
+ ],
+ [
+  "B:7075",
+  {
+   "fb": "Past perfect negativo en estilo indirecto: she told us she HADN'T RECEIVED the letter."
+  }
+ ],
+ [
+  "B:7076",
+  {
+   "fb": "Past perfect negativo: THE FILM HADN'T STARTED when we arrived (aún no había empezado)."
+  }
+ ],
+ [
+  "B:7078",
+  {
+   "fb": "I WISH + past perfect expresa un lamento sobre el pasado: I WISH I HAD KNOWN."
+  }
+ ],
+ [
+  "B:7082",
+  {
+   "fb": "HAD BEEN DRIVING (past perfect continuous) explica la causa del cansancio, anterior al momento del pasado."
+  }
+ ],
+ [
+  "B:7084",
+  {
+   "fb": "FOR twenty years antes de otro momento pasado (cuando cerró): past perfect continuous, HAD BEEN WORKING."
+  }
+ ],
+ [
+  "B:7085",
+  {
+   "fb": "FOR months before they arrested him: past perfect continuous, HAD BEEN FOLLOWING (duración anterior a otro hecho pasado)."
+  }
+ ],
+ [
+  "B:7086",
+  {
+   "fb": "FOR three years when I went to London: past perfect continuous, HAD BEEN STUDYING."
+  }
+ ],
+ [
+  "B:7087",
+  {
+   "fb": "Past perfect continuous para explicar la causa de algo en el pasado (estaban sucios): HAD BEEN PLAYING in the mud."
+  }
+ ],
+ [
+  "B:7088",
+  {
+   "fb": "Past perfect continuous para explicar la causa de algo en el pasado (ojos rojos): SHE HAD BEEN CRYING."
+  }
+ ],
+ [
+  "B:7089",
+  {
+   "fb": "Past perfect continuous para explicar la causa de algo en el pasado (sin aliento): HE HAD BEEN RUNNING upstairs."
+  }
+ ]
+]
