@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v467";
+const CACHE_NAME = "oposicion-cache-v468";
 // La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
 // Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
 // versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
@@ -191,6 +191,10 @@ const APP_SHELL = [
   "./fonts/fira-sans-condensed-800-latin-ext.woff2",
   "./fonts/fira-sans-condensed-800-latin.woff2",
   "./manifest-esquemas.json",
+  "./manifest-ingles.json",
+  "./icon-conocimiento-512.png",
+  "./icon-esquemas-512.png",
+  "./icon-ingles-512.png",
   "./manifest.json",
   "./icon-192.png",
   "./icon-512.png",

@@ -60,7 +60,29 @@ Las cifras son aproximadas (detección automática) y conviene revisarlas a mano
 
 Temas **sin preguntas IA**: 20, 21, 22, 24, 26 y 27. Con muy pocas: 19 (61), 23 (50) y 25 (50).
 
-## Prioridad recomendada
+## Estado tras las correcciones (CACHE v468)
+Corregidos y verificados con Playwright:
+- **1** pdf.js ahora carga con `async` (no bloquea): con el CDN a 8 s, la app arranca en 0,85 s.
+- **2** si cambias de respuesta sin corrección inmediata, las estadísticas guardan la definitiva (se restaura la foto previa y se recalcula).
+- **3** botón «Entregar test» al pie de cada pregunta (pide confirmación y avisa de las que quedan en blanco).
+- **4** la tabla de «Estudio para hoy» ya no se recorta en móvil (texto con salto de línea y círculo con más contraste).
+- **5** Gestor IA: temas plegados, 50 preguntas cada vez con «Mostrar más» (de 347 000 nodos a 42 al abrir).
+- **6** aviso en pantalla cuando el almacenamiento está lleno.
+- **7** cronómetro por hora real (no se retrasa con la pantalla bloqueada).
+- **8** tarjetas del resultado dentro de los márgenes.
+- **9** «Vs. anterior test» compara con el último test del mismo tema.
+- **10** simulacro: se descartan las repetidas antes de recortar (siempre 105); igual en el resto de modos.
+- **11** se puede ampliar con los dedos.
+- **12** el chat del Tutor IA escapa el HTML.
+- **14** quitadas las 5 funciones duplicadas (con parser, no a mano).
+- **15** iconos de 512 px y `manifest-ingles.json` en la caché del service worker.
+- **16** «de el» → «del» y «a el» → «al» en las normas.
+
+No corregidos (decisión o contenido):
+- **13** claves en `localStorage`: se queda así (app personal sin servidor; cifrarlas en el propio navegador no aporta seguridad real). Las copias y exportaciones ya las excluyen.
+- **Banco** (explicación breve ausente en ~3300 preguntas, 293 literales oficiales, 166 correctas más largas, 6 temas sin IA): requieren el temario/texto legal y redacción verificada pregunta a pregunta (CLAUDE.md: «verificar siempre contra el texto legal»); generarlo sin esa fuente produciría contenido sin verificar. Se hace por tema con el flujo habitual.
+
+## Prioridad recomendada (original)
 1. `defer` en pdf.js (una línea, el mayor efecto en móvil).
 2. Estadísticas en modo sin corrección inmediata (actualizar `qStats` con la respuesta final).
 3. Botón «Entregar test».
