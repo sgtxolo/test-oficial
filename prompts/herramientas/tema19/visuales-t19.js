@@ -1,6 +1,6 @@
 require('../esq-virtual.js');
 // Cuadros visuales del Tema 19 (CP Parte Especial): recrean los cuadros de tu temario (PDF 08-08-2026) con su texto. Colores copiados de tu fosforito.
-//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145) · p8-9 detenciones/secuestro · p10 amenazas y coacciones · p17 agresión sexual · p19 menores de 16 · p22 prostitución
+//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145) · p8-9 detenciones/secuestro · p10 amenazas y coacciones · p17 agresión sexual · p19 menores de 16 · p22 prostitución · p29-30 calumnias e injurias · p33 socorro · p39 hurtos y robos
 // Uso: node prompts/herramientas/tema19/visuales-t19.js (idempotente: sustituye los anteriores marcados <!--VIS19-->). Lo usará expres/t19.js (module.exports = V).
 const fs = require('fs'), path = require('path');
 const L = require('../literal-lib.js');
@@ -68,6 +68,51 @@ v('cp', 'cuando sea menor de cuatro años', cols('AGRESIONES SEXUALES A MENORES 
 v('cp', 'condiciones gravosas, desproporcionadas o abusivas', cols('PROSTITUCIÓN DE MAYORES DE EDAD (cuadro del temario · art. 187)', [
   { t: 'TIPO BÁSICO · art. 187.1', l: [`El que, empleando ${D('violencia')}, ${D('intimidación')} o ${D('engaño')}, o ${D('abusando de una situación de superioridad, necesidad o vulnerabilidad')}, determine a una persona ${G('mayor de edad')} a ${D('ejercer o mantenerse en la prostitución')}.`, `Quien se ${D('lucre explotando')} la prostitución de otra persona, ${K('aun con el consentimiento')} de la misma. Hay explotación cuando concurra alguna de estas circunstancias: que la víctima se encuentre en situación de ${D('vulnerabilidad personal o económica')}; que se le impongan para su ejercicio ${D('condiciones gravosas, desproporcionadas o abusivas')}.`] },
   { t: 'TIPO CUALIFICADO · art. 187.2 · AGRAVANTE → MITAD SUPERIOR', l: [`${D('Prevalerse de su condición de autoridad, agente de ésta o funcionario público')}.`, `${D('Pertenecer a una organización o grupo criminal')} que se dedicare a la realización de tales actividades.`, `${D('Poner en peligro')}, de forma dolosa o por imprudencia grave, la vida o salud de la víctima.`] },
+]));
+
+
+// ───────── p33 · arts. 195-196 · OMISIÓN DEL DEBER DE SOCORRO ─────────
+v('cp', 'riesgo grave para la salud de las personas', tabla('OMISIÓN DEL DEBER DE SOCORRO (cuadro del temario · arts. 195 y 196)', ['Conducta típica', 'Requisitos'], [
+  { l: 'Omisión de socorro personal · art. 195.1', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('NO SOCORRER')} cuando pudiere hacerlo ${K('sin riesgo propio ni de terceros')}.` },
+    { p: 'Requisitos', c: 'v', t: `Sujeto pasivo: persona que se halle ${D('desamparada')} y en ${D('peligro manifiesto y grave')}.` }] },
+  { l: 'Omisión de petición de socorro · art. 195.2', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('NO DEMANDAR con urgencia auxilio ajeno')}.` },
+    { p: 'Requisitos', c: 'v', t: `${D('Imposibilidad de prestar socorro')}.` }] },
+  { l: 'Omisión de socorro a la víctima del accidente · art. 195.3', c: 'c', h: [
+    { p: 'Conducta', c: 'o', t: `${D('OMITIR AUXILIO')} a la víctima del accidente ocasionado.` },
+    { p: 'Requisitos', c: 'v', t: `Que el accidente se haya ocasionado de forma ${D('fortuita o imprudente')}.` }] },
+  { l: 'Omisión de prestar asistencia sanitaria · art. 196 (pena: MITAD SUPERIOR)', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('DENEGAR ASISTENCIA SANITARIA o ABANDONAR los SERVICIOS SANITARIOS')}.` },
+    { p: 'Requisitos', c: 'v', t: `${G('Sujeto activo: profesional obligado a prestar asistencia sanitaria')}. Que la denegación o abandono se derive ${D('riesgo grave para la salud de las personas')}.` }] },
+]));
+
+// ───────── p39 · arts. 234-236 · DE LOS HURTOS ─────────
+v('cp', 'con perjuicio del mismo o de un tercero', flujo('DE LOS HURTOS · arts. 234 a 236 (cuadro del temario)', [
+  { et: 'Art. 234 · Hurto', c: 'o', t: `${D('Ánimo de lucro')}: ${D('tomar cosas muebles ajenas')}, ${K('sin la voluntad de su dueño')}. Según la cuantía de lo sustraído: si excediese de 400 euros → prisión; si NO excediese de 400 euros → multa (salvo que concurra alguna de las circunstancias del art. 235).` },
+  { et: 'Mitad superior', c: 'c', t: `Cuando en la comisión del hecho se hubieran ${D('neutralizado, eliminado o inutilizado')} dispositivos de alarma o seguridad instalados en las cosas sustraídas por cualquier medio: mitad superior de las penas anteriores, en sus respectivos casos.` },
+  { et: 'Art. 235 · Hurtos agravados', c: 'v', t: `Cuando se produzca ${D('alguna de las circunstancias del art. 235')}.` },
+  { et: 'Art. 236 · Hurto de cosa propia', c: 'v', t: `Cuando, siendo ${D('dueño de una cosa mueble')} o actuando con el consentimiento de éste, la sustrajere de quien la tenga ${D('legítimamente en su poder')}, con perjuicio del mismo o de un tercero.` },
+]));
+
+// ───────── p39 · art. 237 · DE LOS ROBOS ─────────
+v('cp', 'o sobre los que acudiesen en auxilio de la víctima o que le persiguieren', cols('DE LOS ROBOS · art. 237 (cuadro del temario)', [
+  { t: 'Apoderarse de cosas muebles ajenas', l: [`${D('Apoderarse')} de cosas muebles ajenas + con ${Y('ánimo de lucro')}.`] },
+  { t: 'Empleando FUERZA en las cosas', l: [`${D('Fuerza en las cosas')} para ${D('acceder o abandonar')} el lugar donde éstas se encuentran (robo con fuerza en las cosas: arts. 238 a 240).`] },
+  { t: 'Empleando VIOLENCIA o INTIMIDACIÓN', l: [`${D('Violencia o intimidación en las personas')}, ya sea: ${P('al cometer el delito')}, ${P('para proteger la huida')} o ${P('sobre los que acudiesen en auxilio de la víctima o que le persiguieren')}.`] },
+]));
+
+
+// ───────── p29 · arts. 205-207 · DELITO DE CALUMNIAS ─────────
+v('cp', 'probando el hecho criminal que hubiere imputado', flujo('DELITO DE CALUMNIAS · arts. 205 a 207 (cuadro del temario)', [
+  { et: 'Conducta · art. 205', c: 'o', t: `${D('IMPUTAR un delito')} + con ${Y('conocimiento de su falsedad')}, o con ${Y('temerario desprecio hacia la verdad')}.` },
+  { et: '«Exceptio veritatis»', c: 'v', t: `El acusado de calumnia quedará ${K('EXENTO')} de toda pena ${D('probando el hecho criminal que hubiere imputado')}.` },
+]));
+
+// ───────── p30 · arts. 208-210 · DELITO DE INJURIAS ─────────
+v('cp', 'referidos a la comisión de infracciones administrativas', flujo('DELITO DE INJURIAS · arts. 208 a 210 (cuadro del temario)', [
+  { et: 'Conducta · art. 208', c: 'o', t: `${D('Acción o expresión')} que ${D('lesionen la dignidad')} de otra persona, ${D('menoscaben su fama')} o ${D('atenten contra su propia estimación')}. Solo son delito las que, por su naturaleza, efectos y circunstancias, sean tenidas en el concepto público por ${P('graves')}.` },
+  { et: '«Exceptio veritatis» · art. 210', c: 'v', t: `El acusado de injuria quedará ${K('EXENTO')} de responsabilidad ${D('probando la verdad de las imputaciones')} cuando éstas se dirijan contra ${G('funcionarios públicos')} sobre hechos concernientes al ejercicio de sus cargos o referidos a la comisión de infracciones administrativas.` },
 ]));
 
 module.exports = V;
