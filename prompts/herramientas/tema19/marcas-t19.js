@@ -1,5 +1,5 @@
-// Tema 19 · marcas a mano de MI PDF (EXOF / EX / EXAMEN / ✱ → ex; fichas R → r). LECTURA PARCIAL: solo págs. 5-42 (arts. 138-249), leídas como imagen el 8/11/2026.
-// Las págs. 43-190 NO están leídas todavía. Clave: 'art|token' · 'art|token@n' · 'art|#n' · 'art|~texto'. ✱ se escribe '*'.
+// Tema 19 · marcas a mano de MI PDF (EXOF / EX / EXAMEN / ✱ → ex; fichas R → r). LECTURA PARCIAL: solo págs. 5-49 (arts. 138-274), leídas como imagen el 8/11/2026.
+// Las págs. 50-190 NO están leídas todavía. Clave: 'art|token' · 'art|token@n' · 'art|#n' · 'art|~texto'. ✱ se escribe '*'.
 // Ojo: los pines «R36, R37, R39…» y los números en círculo de esas págs. son de otro temario (T18): NO son fichas R de este tema.
 const M = {};
 const ex = (k, ...m) => { (M[k] = M[k] || {}).ex = [...((M[k] || {}).ex || []), ...m]; };
@@ -16,4 +16,6 @@ ex('191|#1', '*');
 ex('223|#1', 'EX');
 ex('225|#1', '*');
 ex('227|1.', 'EX');
+(M['273|1.'] = M['273|1.'] || {}).r = ['R8'];
+ex('273|1.', '*');
 module.exports = M;
