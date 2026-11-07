@@ -1,6 +1,6 @@
 require('../esq-virtual.js');
 // Cuadros visuales del Tema 19 (CP Parte Especial): recrean los cuadros de tu temario (PDF 08-08-2026) con su texto. Colores copiados de tu fosforito.
-//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145) · p8-9 detenciones/secuestro · p10 amenazas y coacciones · p17 agresión sexual · p19 menores de 16 · p22 prostitución · p29-30 calumnias e injurias · p33 socorro · p39 hurtos y robos
+//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145) · p8-9 detenciones/secuestro · p10 amenazas y coacciones · p17 agresión sexual · p19 menores de 16 · p22 prostitución · p29-30 calumnias e injurias · p33 socorro · p122-123 cohecho · p126 tráfico de influencias · p107 seguridad vial · p117 prevaricación/nombramiento · p42 administración desleal/apropiación indebida · p39 hurtos y robos
 // Uso: node prompts/herramientas/tema19/visuales-t19.js (idempotente: sustituye los anteriores marcados <!--VIS19-->). Lo usará expres/t19.js (module.exports = V).
 const fs = require('fs'), path = require('path');
 const L = require('../literal-lib.js');
@@ -113,6 +113,75 @@ v('cp', 'probando el hecho criminal que hubiere imputado', flujo('DELITO DE CALU
 v('cp', 'referidos a la comisión de infracciones administrativas', flujo('DELITO DE INJURIAS · arts. 208 a 210 (cuadro del temario)', [
   { et: 'Conducta · art. 208', c: 'o', t: `${D('Acción o expresión')} que ${D('lesionen la dignidad')} de otra persona, ${D('menoscaben su fama')} o ${D('atenten contra su propia estimación')}. Solo son delito las que, por su naturaleza, efectos y circunstancias, sean tenidas en el concepto público por ${P('graves')}.` },
   { et: '«Exceptio veritatis» · art. 210', c: 'v', t: `El acusado de injuria quedará ${K('EXENTO')} de responsabilidad ${D('probando la verdad de las imputaciones')} cuando éstas se dirijan contra ${G('funcionarios públicos')} sobre hechos concernientes al ejercicio de sus cargos o referidos a la comisión de infracciones administrativas.` },
+]));
+
+
+// ───────── p42 · arts. 252-253 · ADMINISTRACIÓN DESLEAL / APROPIACIÓN INDEBIDA ─────────
+v('cp', 'obligación de entregarlos o devolverlos', cols('ADMINISTRACIÓN DESLEAL · APROPIACIÓN INDEBIDA (cuadro del temario · arts. 252 y 253)', [
+  { t: 'ADMINISTRACIÓN DESLEAL · art. 252', l: [`${D('Causar un perjuicio al patrimonio administrado')} + ${D('excediéndose en las facultades de administración')}.`, `Tener ${Y('facultades para administrar un patrimonio ajeno')}: emanadas de la ${D('Ley')}; encomendadas por la ${G('autoridad')}; asumidas mediante un ${D('negocio jurídico')}.`] },
+  { t: 'APROPIACIÓN INDEBIDA · art. 253', l: [`${D('Apropiarse para sí o para un tercero')} de dinero, efectos, valores o cualquier cosa mueble, o ${D('negar haberlo recibido')}.`, `Haber recibido el dinero, efectos, valores o cosas muebles: en ${D('depósito, comisión o custodia')}, o ${D('confiados')} en virtud de cualquier otro título que produzca la ${P('obligación de entregarlos o devolverlos')}.`] },
+]));
+
+
+// ───────── p107 · art. 379 · DELITOS CONTRA LA SEGURIDAD VIAL ─────────
+v('cp', 'una tasa de alcohol en sangre superior a 1,2 gramos por litro', cols('DELITOS CONTRA LA SEGURIDAD VIAL (cuadro del temario · art. 379)', [
+  { t: 'POR EXCESO DE VELOCIDAD · 379.1', l: [`${D('Conducir')}: vehículo de motor o ciclomotor.`, `+ Velocidad superior a la permitida reglamentariamente: ${P('60 km/h en vía urbana')} · ${P('80 km/h en vía interurbana')}.`] },
+  { t: 'BAJO EFECTOS DE ALCOHOL O DROGAS · 379.2', l: [`${D('Conducir')}: vehículo de motor o ciclomotor.`, `Bajo la influencia de ${D('drogas tóxicas, estupefacientes o sustancias psicotrópicas')}.`, `Bajo la influencia de ${D('bebidas alcohólicas')}: tasa de alcohol en aire espirado superior a ${P('0,60 miligramos por litro')}, o tasa de alcohol en sangre superior a ${P('1,2 gramos por litro')}.`] },
+]));
+
+// ───────── p117 · arts. 404-406 · PREVARICACIÓN Y NOMBRAMIENTO ILEGAL ─────────
+v('cp', 'sabiendo que carece de los requisitos legalmente exigibles', tabla('PREVARICACIÓN · NOMBRAMIENTO ILEGAL (cuadro del temario · arts. 404 a 406)', ['Conducta', 'Sujeto activo'], [
+  { l: 'Prevaricación de funcionario público · art. 404', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Dictar')} resolución ${D('ARBITRARIA')} en un asunto administrativo, ${K('a sabiendas')} de su injusticia.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Autoridad o funcionario público')}.` }] },
+  { l: 'Nombramiento ilegal · art. 405', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Propusiere, nombrare o diere posesión')} para el ejercicio de un determinado cargo público a cualquier persona sin que concurran los requisitos legalmente establecidos, ${K('a sabiendas')} de su ilegalidad.` },
+    { p: 'Sujeto activo', c: 'v', t: `En el ejercicio de sus competencias: ${G('autoridad o funcionario público')}.` }] },
+  { l: 'Aceptar nombramiento ilegal · art. 406', c: 'c', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Aceptar')} propuesta, nombramiento o toma de posesión, ${K('sabiendo')} que carece de los requisitos legales exigibles.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Cualquier persona')}.` }] },
+]));
+
+
+// ───────── p122 · arts. 419-422 · COHECHO PASIVO ─────────
+v('cp', 'en consideración a su cargo o función', tabla('COHECHO PASIVO (cuadro del temario · arts. 419 a 422) · cometido por autoridad o funcionario público en provecho propio o de un tercero', ['Conducta', 'Para / finalidad'], [
+  { l: 'Cohecho pasivo propio · art. 419', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Recibir o solicitar')} por sí o por persona interpuesta dádiva, favor o retribución de cualquier clase, o ${D('aceptar')} ofrecimiento o promesa.` },
+    { p: 'Para', c: 'v', t: `Realizar en el ejercicio de su cargo un ${D('acto CONTRARIO')} a los deberes inherentes al cargo, o ${D('no realizar o retrasar injustificadamente')} actos que deba practicar.` }] },
+  { l: 'Cohecho pasivo impropio · art. 420', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Recibir o solicitar')} por sí o por persona interpuesta dádiva, favor o retribución de cualquier clase, o ${D('aceptar')} ofrecimiento o promesa.` },
+    { p: 'Para', c: 'v', t: `Realizar un ${D('acto PROPIO')} de su cargo.` }] },
+  { l: 'Cohecho pasivo impropio · art. 421', c: 'c', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Recibir o solicitar')} por sí o por persona interpuesta dádiva, favor o retribución.` },
+    { p: 'Para', c: 'v', t: `${D('RECOMPENSA')} por realizar alguna de las conductas descritas.` }] },
+  { l: 'Cohecho pasivo IMPROPIO · art. 422', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Admitir')} por sí o por persona interpuesta dádiva o regalo.` },
+    { p: 'Que', c: 'v', t: `Le fueren ofrecidos ${D('en consideración a su cargo o función')}.` }] },
+]));
+
+// ───────── p123 · arts. 424 · COHECHO ACTIVO ─────────
+v('cp', 'atendiendo la solicitud de la autoridad, funcionario público o persona', tabla('COHECHO ACTIVO (cuadro del temario · art. 424) · cometido por los particulares', ['Conducta', 'Para / finalidad'], [
+  { l: 'Art. 424.1', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Ofrecer o entregar')} dádiva o retribución de cualquier clase a: ${G('autoridad')}, ${G('funcionario público')} o ${G('persona que participe en el ejercicio de la función pública')}.` },
+    { p: 'Para', c: 'v', t: `Que realice en el ejercicio de su cargo: ${D('acto CONTRARIO')} a los deberes inherentes a su cargo, ${D('acto PROPIO')} de su cargo, o para que ${D('no realice o retrase')} el que debiera practicar; en consideración a su cargo o función.` }] },
+  { l: 'Art. 424.2', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Entregar')} la dádiva o retribución.` },
+    { p: 'Atendiendo', c: 'v', t: `${D('Atendiendo la solicitud')} de la autoridad, funcionario público o persona que participe en el ejercicio de la función pública.` }] },
+]));
+
+// ───────── p126 · arts. 428-430 · TRÁFICO DE INFLUENCIAS ─────────
+v('cp', 'solicitaren de terceros dádivas', tabla('TRÁFICO DE INFLUENCIAS (cuadro del temario · arts. 428 a 430; con círculo «Ex»)', ['Conducta · finalidad', 'Sujeto activo'], [
+  { l: 'Influencia por funcionario o autoridad · art. 428', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Influenciar')} a funcionario público o autoridad ${K('prevaliéndose')} de: el ejercicio de ${D('facultades de su cargo')}, o situación derivada de su ${D('relación personal o jerárquica')} con éste o con otro funcionario o autoridad.` },
+    { p: 'Finalidad', c: 'v', t: `${D('Conseguir')} una resolución que le pueda generar ${D('directa o indirectamente un beneficio económico')} para sí o para un tercero.` },
+    { p: 'Sujeto activo', c: 'c', t: `${G('Funcionario público o autoridad')}.` }] },
+  { l: 'Influencia por particular · art. 429', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Influenciar')} a funcionario público o autoridad ${K('prevaliéndose')} de situación derivada de su ${D('relación personal')} con éste o con otro funcionario público o autoridad.` },
+    { p: 'Finalidad', c: 'v', t: `${D('Conseguir')} una resolución que le pueda generar ${D('directa o indirectamente un beneficio económico')} para sí o para un tercero.` },
+    { p: 'Sujeto activo', c: 'c', t: `${G('Particular')}.` }] },
+  { l: 'Ofrecimiento de influencias · art. 430', c: 'c', h: [
+    { p: 'Finalidad', c: 'v', t: `${D('Solicitaren de terceros dádivas, presentes o cualquier otra remuneración')}, o aceptaren ofrecimiento o promesa.` },
+    { p: 'Sujeto activo', c: 'c', t: `${G('Funcionario o autoridad; particular')} (incluye personas jurídicas).` }] },
 ]));
 
 module.exports = V;
