@@ -1,5 +1,5 @@
-// Tema 19 · marcas a mano de MI PDF (EXOF / EX / EXAMEN / ✱ → ex; fichas R → r). LECTURA PARCIAL: solo págs. 5-49 (arts. 138-274), leídas como imagen el 8/11/2026.
-// Las págs. 50-190 NO están leídas todavía. Clave: 'art|token' · 'art|token@n' · 'art|#n' · 'art|~texto'. ✱ se escribe '*'.
+// Tema 19 · marcas a mano de MI PDF (EXOF / EX / EXAMEN / ✱ → ex; fichas R → r). LECTURA PARCIAL: solo págs. 5-70 (arts. 138-308), leídas como imagen el 8/11/2026.
+// Las págs. 71-190 NO están leídas todavía. Clave: 'art|token' · 'art|token@n' · 'art|#n' · 'art|~texto'. ✱ se escribe '*'.
 // Ojo: los pines «R36, R37, R39…» y los números en círculo de esas págs. son de otro temario (T18): NO son fichas R de este tema.
 const M = {};
 const ex = (k, ...m) => { (M[k] = M[k] || {}).ex = [...((M[k] || {}).ex || []), ...m]; };
@@ -18,4 +18,25 @@ ex('225|#1', '*');
 ex('227|1.', 'EX');
 (M['273|1.'] = M['273|1.'] || {}).r = ['R8'];
 ex('273|1.', '*');
+ex('276|b)', 'EX');
+ex('279|#1', 'EX');
+ex('284|~que como consecuencia', '*');
+ex('284|~que el importe', '*');
+ex('285|~que, como consecuencia', '*');
+ex('285|~que el valor', '*');
+ex('285 quater|#1', '*');
+ex('286 bis|1.', 'EX');
+ex('286 ter|1.', 'EX');
+ex('287|2.', '*');
+ex('290|#1', 'EX');
+(M['291|#1'] = M['291|#1'] || {}).r = ['R9'];
+ex('292|#1', '*', 'EX');
+ex('298|2.', '*');
+ex('304|#1', '*');
+ex('305|1.', 'EXAMEN');
+(M['305|1.'] = M['305|1.'] || {}).r = ['R10'];
+ex('305|a)', '*');
+ex('305 bis|c)', 'EX');
+ex('307|2.', '*');
+ex('308|1.', 'EX');
 module.exports = M;
