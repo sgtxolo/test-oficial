@@ -1,5 +1,5 @@
-// Librería de las preguntas IA del Tema 19 (Código Penal, Parte Especial (SIN penas); estilo examen oficial, media-alta/difícil,
-// 5 por página de MI PDF subrayado, bloques de 10 páginas). La usan preguntas-t19r-bNN.js. Manda MI PDF subrayado (28/10/2026); fichas R11-R16 y apartados tachados (3.1, 3.3, 3.4, 4) fuera.
+// Librería de las preguntas IA del Tema 19 (Código Penal, Parte Especial; SOLO sobre lo subrayado en mi PDF y NUNCA penas/años/multas (regla 7/11/2026); estilo examen oficial, media-alta/difícil,
+// 5 por página de MI PDF subrayado, bloques de 10 páginas). La usan preguntas-t19r-bNN.js. Fuente del subrayado: prompts/temario-limpio/tema19/mio-subrayado.txt (texto entre «…»). Lo sin subrayar no se pregunta.
 // run({bloque, Q}) — Q: {k, a, r, e, o, t, p, d?, c?, v?}:
 //   k = norma (clave de NORMAS), a = «art. X.Y»/apartado (solo para la explicación), r = rúbrica, e = enunciado SIN número de artículo/apartado,
 //   o = 4 opciones (la correcta va PRIMERA; la librería la recoloca), t = cita literal, p = por qué fallan las otras, d = 'media' | 'dificil',
