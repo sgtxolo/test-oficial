@@ -1,14 +1,327 @@
 {
  "manual": [
-  {"id": "a-140", "nombre": "Código Penal · Artículos 138 a 140", "piezas": [[4, 0.185, 0.415]]},
-  {"id": "a-143", "nombre": "Código Penal · Artículo 143", "piezas": [[4, 0.69, 0.95]]},
-  {"id": "a-145", "nombre": "Código Penal · Delito de aborto (arts. 144 y 145)", "piezas": [[5, 0.21, 0.485]]},
-  {"id": "a-147", "nombre": "Código Penal · Artículo 147", "piezas": [[5, 0.56, 0.84]]},
-  {"id": "a-156", "nombre": "Código Penal · Artículo 156", "piezas": [[6, 0.505, 0.615]]},
-  {"id": "a-161", "nombre": "Código Penal · Artículo 161", "piezas": [[7, 0.43, 0.555]]},
-  {"id": "a-163", "nombre": "Código Penal · Artículos 163 a 165", "piezas": [[7, 0.65, 1.0], [8, 0.05, 0.17]]},
-  {"id": "a-172", "nombre": "Código Penal · Artículo 172", "piezas": [[9, 0.615, 0.885]]},
-  {"id": "a-173", "nombre": "Código Penal · Artículo 173", "piezas": [[10, 0.69, 0.93], [11, 0.05, 0.67]]},
-  {"id": "a-177", "nombre": "Código Penal · Artículo 177", "piezas": [[12, 0.055, 0.17]]}
+  {
+   "id": "a-140",
+   "nombre": "Código Penal · Artículos 138 a 140",
+   "piezas": [
+    [
+     4,
+     0.185,
+     0.415
+    ]
+   ]
+  },
+  {
+   "id": "a-143",
+   "nombre": "Código Penal · Artículo 143",
+   "piezas": [
+    [
+     4,
+     0.69,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "a-145",
+   "nombre": "Código Penal · Delito de aborto (arts. 144 y 145)",
+   "piezas": [
+    [
+     5,
+     0.21,
+     0.485
+    ]
+   ]
+  },
+  {
+   "id": "a-147",
+   "nombre": "Código Penal · Artículo 147",
+   "piezas": [
+    [
+     5,
+     0.56,
+     0.84
+    ]
+   ]
+  },
+  {
+   "id": "a-156",
+   "nombre": "Código Penal · Artículo 156",
+   "piezas": [
+    [
+     6,
+     0.505,
+     0.615
+    ]
+   ]
+  },
+  {
+   "id": "a-161",
+   "nombre": "Código Penal · Artículo 161",
+   "piezas": [
+    [
+     7,
+     0.43,
+     0.555
+    ]
+   ]
+  },
+  {
+   "id": "a-163",
+   "nombre": "Código Penal · Artículos 163 a 165",
+   "piezas": [
+    [
+     7,
+     0.65,
+     1
+    ],
+    [
+     8,
+     0.05,
+     0.17
+    ]
+   ]
+  },
+  {
+   "id": "a-172",
+   "nombre": "Código Penal · Artículo 172",
+   "piezas": [
+    [
+     9,
+     0.615,
+     0.885
+    ]
+   ]
+  },
+  {
+   "id": "a-173",
+   "nombre": "Código Penal · Artículo 173",
+   "piezas": [
+    [
+     10,
+     0.69,
+     0.93
+    ],
+    [
+     11,
+     0.05,
+     0.67
+    ]
+   ]
+  },
+  {
+   "id": "a-177",
+   "nombre": "Código Penal · Artículo 177",
+   "piezas": [
+    [
+     12,
+     0.055,
+     0.17
+    ]
+   ]
+  },
+  {
+   "id": "a-169",
+   "nombre": "Código Penal · Artículo 169",
+   "piezas": [
+    [
+     9,
+     0.05,
+     0.34
+    ]
+   ]
+  },
+  {
+   "id": "a-196",
+   "nombre": "Código Penal · Artículos 195 y 196",
+   "piezas": [
+    [
+     27,
+     0.62,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "a-197",
+   "nombre": "Código Penal · Artículo 197",
+   "piezas": [
+    [
+     28,
+     0.14,
+     0.27
+    ]
+   ]
+  },
+  {
+   "id": "a-207",
+   "nombre": "Código Penal · Calumnias (arts. 205 a 207)",
+   "piezas": [
+    [
+     29,
+     0.37,
+     0.62
+    ]
+   ]
+  },
+  {
+   "id": "a-208",
+   "nombre": "Código Penal · Injurias (arts. 208 a 210)",
+   "piezas": [
+    [
+     29,
+     0.69,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "a-238",
+   "nombre": "Código Penal · Robos (arts. 237 y 238)",
+   "piezas": [
+    [
+     38,
+     0.45,
+     0.82
+    ]
+   ]
+  },
+  {
+   "id": "a-248",
+   "nombre": "Código Penal · Artículo 248",
+   "piezas": [
+    [
+     40,
+     0.82,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "a-253",
+   "nombre": "Código Penal · Artículos 252 y 253",
+   "piezas": [
+    [
+     41,
+     0.37,
+     0.63
+    ]
+   ]
+  },
+  {
+   "id": "a-347",
+   "nombre": "Código Penal · Artículo 347",
+   "piezas": [
+    [
+     92,
+     0.8,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "a-379",
+   "nombre": "Código Penal · Artículo 379",
+   "piezas": [
+    [
+     106,
+     0.08,
+     0.82
+    ]
+   ]
+  },
+  {
+   "id": "a-390",
+   "nombre": "Código Penal · Artículo 390",
+   "piezas": [
+    [
+     111,
+     0.1,
+     0.28
+    ]
+   ]
+  },
+  {
+   "id": "a-395",
+   "nombre": "Código Penal · Artículo 395",
+   "piezas": [
+    [
+     112,
+     0.14,
+     0.235
+    ]
+   ]
+  },
+  {
+   "id": "a-419",
+   "nombre": "Código Penal · Cohecho pasivo (arts. 419 a 422)",
+   "piezas": [
+    [
+     121,
+     0,
+     0.52
+    ]
+   ]
+  },
+  {
+   "id": "a-424",
+   "nombre": "Código Penal · Cohecho activo (art. 424)",
+   "piezas": [
+    [
+     121,
+     0.78,
+     0.97
+    ],
+    [
+     122,
+     0,
+     0.62
+    ]
+   ]
+  },
+  {
+   "id": "a-469",
+   "nombre": "Código Penal · Artículos 469 a 471",
+   "piezas": [
+    [
+     140,
+     0.17,
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": "a-495",
+   "nombre": "Código Penal · Artículo 495",
+   "piezas": [
+    [
+     146,
+     0.195,
+     0.325
+    ]
+   ]
+  },
+  {
+   "id": "a-543",
+   "nombre": "Código Penal · Artículo 543",
+   "piezas": [
+    [
+     159,
+     0.18,
+     0.285
+    ]
+   ]
+  },
+  {
+   "id": "a-550",
+   "nombre": "Código Penal · Artículo 550",
+   "piezas": [
+    [
+     160,
+     0.64,
+     0.98
+    ]
+   ]
+  }
  ]
 }
