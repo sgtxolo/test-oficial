@@ -1,6 +1,6 @@
 require('../esq-virtual.js');
 // Cuadros visuales del Tema 19 (CP Parte Especial): recrean los cuadros de tu temario (PDF 08-08-2026) con su texto. Colores copiados de tu fosforito.
-//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145)
+//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145) · p8-9 detenciones/secuestro · p10 amenazas y coacciones · p17 agresión sexual · p19 menores de 16 · p22 prostitución
 // Uso: node prompts/herramientas/tema19/visuales-t19.js (idempotente: sustituye los anteriores marcados <!--VIS19-->). Lo usará expres/t19.js (module.exports = V).
 const fs = require('fs'), path = require('path');
 const L = require('../literal-lib.js');
@@ -26,6 +26,48 @@ v('cp', 'consintiere que otra persona se lo cause', tabla('DELITO DE ABORTO · a
   { l: 'Cuando fuera de los casos permitidos por la ley', c: 'c', h: [
     { p: 'La mujer', c: 'c', t: `${D('Produce su propio aborto')}, o ${D('consiente que otra persona se lo cause')}.` },
     { p: 'Sujeto activo', c: 'v', t: `${G('Propia mujer embarazada')}.` }] },
+]));
+
+
+// ───────── p8-9 · arts. 163-165 · DETENCIONES ILEGALES / SECUESTRO ─────────
+v('cp', 'o funcionario público en el ejercicio de sus funciones', cols('DETENCIONES ILEGALES · SECUESTRO (cuadro del temario · arts. 163 a 165)', [
+  { t: 'DETENCIONES ILEGALES', l: [`TIPO BÁSICO: ${D('El particular')} que ${D('encerrare o detuviere')} a otro, privándole de su libertad.`, `OTROS TIPOS · ATENUADO: si el culpable diera libertad al encerrado o detenido ${P('dentro de los tres primeros días')} de su detención, ${D('sin haber logrado el objeto')} que se había propuesto.`, `OTROS TIPOS · AGRAVADO: si el encierro o detención ha durado ${P('más de quince días')}.`, `El particular que, ${D('fuera de los casos permitidos por las leyes')}, aprehendiere a una persona para presentarla ${D('inmediatamente a la autoridad')}.`] },
+  { t: 'SECUESTRO', l: [`TIPO BÁSICO: ${D('Secuestro')} de una persona ${D('exigiendo alguna condición')} para ponerla en libertad.`, `OTROS TIPOS · AGRAVADO: si el secuestro ha durado ${P('más de quince días')}.`, `OTROS TIPOS · ATENUADO: si el culpable diera la libertad al secuestrado dentro de los ${P('tres primeros días')}, ${D('sin haber logrado el objeto')} que se había propuesto.`] },
+  { t: 'ART. 165 · MITAD SUPERIOR (ambos)', l: [`Cuando se ha cometido con ${D('simulación de autoridad o función pública')}, o la víctima fuere ${G('menor de edad')} o ${G('persona con discapacidad necesitada de especial protección')}, o ${G('funcionario público en el ejercicio de sus funciones')}.`] },
+]));
+
+// ───────── p10 · art. 169 · DELITO DE AMENAZAS ─────────
+v('cp', 'o en nombre de entidades o grupos reales o supuestos', flujo('DELITO DE AMENAZAS · art. 169 (cuadro del temario)', [
+  { et: 'Conducta', c: 'o', t: `El que ${D('amenazare')} a otro con causarle a él, a su familia o a otras personas con las que esté ${Y('íntimamente vinculado')} un mal que constituya delitos de homicidio, lesiones, aborto, contra la libertad, torturas y contra la integridad moral, la libertad sexual, la intimidad, el honor, el patrimonio y el orden socioeconómico.` },
+  { et: 'AMENAZA CONDICIONAL', c: 'v', t: `Si se hubiere hecho la amenaza ${D('exigiendo una cantidad')}, o imponiendo cualquier ${D('otra condición')}, ${K('aunque no sea ilícita')}.` },
+  { et: 'MITAD SUPERIOR', c: 'c', t: `Si se hace ${D('por escrito')}, ${D('por teléfono')} o por cualquier medio de comunicación o de reproducción, o ${D('en nombre de entidades o grupos reales o supuestos')}.` },
+]));
+
+// ───────── p10 · art. 172.1 · DELITOS DE COACCIONES ─────────
+v('cp', 'impedir el legítimo disfrute de la vivienda', cols('DELITOS DE COACCIONES (cuadro del temario · art. 172.1)', [
+  { t: 'El que, SIN ESTAR LEGÍTIMAMENTE AUTORIZADO', l: [`${D('Impidiere')} a otro ${D('con violencia')} hacer lo que la ley no prohíbe.`, `${D('Compeliere')} a otro a efectuar lo que no quiere, ${D('sea justo o injusto')}.`] },
+  { t: 'PENA EN SU MITAD SUPERIOR', l: [`${D('Impidiere')} a otro el ejercicio de un ${D('derecho fundamental')} (salvo que el hecho tuviera señalada mayor pena en otro precepto de este Código).`, `${D('Impidiere')} a otro el legítimo ${D('disfrute de la vivienda')}.`] },
+]));
+
+
+// ───────── p17 · arts. 178-180 · AGRESIÓN SEXUAL (cuadro impreso sin fosforito: colores por método) ─────────
+v('cp', 'anulado la voluntad de la víctima suministrándole fármacos', cols('AGRESIÓN SEXUAL (cuadro del temario · arts. 178, 179 y 180)', [
+  { t: 'TIPO BÁSICO · art. 178 · Agresión sexual', l: [`El que realice ${D('cualquier acto que atente contra la libertad sexual')} de otra persona ${K('sin su consentimiento')}.`, `Hay consentimiento cuando se haya manifestado ${D('libremente')} mediante actos que, en atención a las circunstancias del caso, expresen de manera clara la voluntad de la persona.`, `Se consideran en todo caso agresión sexual los actos de contenido sexual que se realicen empleando: ${D('violencia')}, ${D('intimidación')} o ${D('abuso de una situación de superioridad o de vulnerabilidad')} de la víctima; los que se ejecuten sobre personas ${D('privadas de sentido')} o de cuya situación mental se abusare; y los que se realicen cuando la víctima tenga ${D('anulada por cualquier causa su voluntad')}.`] },
+  { t: 'TIPO CUALIFICADO · art. 179 · Violación sexual', l: [`Cuando la agresión sexual consista en ${D('acceso carnal por vía vaginal, anal o bucal')}, o en ${D('introducción de miembros corporales u objetos')} por alguna de las dos primeras vías.`] },
+  { t: 'SUBTIPOS CUALIFICADOS · art. 180 · Circunstancias', l: [`${D('Actuación conjunta de dos o más personas')}.`, `Agresión sexual precedida o acompañada de ${D('violencia de extrema gravedad')} o de actos con carácter particularmente degradante o vejatorio.`, `Hechos cometidos contra una persona en situación de ${D('especial vulnerabilidad')} por razón de su edad, enfermedad, discapacidad o cualquier otra circunstancia, salvo lo dispuesto en el artículo 181.`, `La víctima sea o haya sido ${G('esposa o mujer ligada por análoga relación de afectividad')}, aun sin convivencia.`, `El responsable se hubiera prevalido de una situación o relación de ${D('convivencia o de parentesco')} o de una relación de ${D('superioridad')} respecto a la víctima.`, `Uso de ${D('armas u otros medios igualmente peligrosos')}, susceptibles de producir la muerte o alguna de las lesiones de los artículos 149 y 150, sin perjuicio del artículo 194 bis.`, `Haber ${D('anulado la voluntad')} de la víctima suministrándole ${D('fármacos, drogas')} o cualquier otra sustancia natural o química idónea.`] },
+]));
+
+// ───────── p19 · art. 181 · AGRESIONES SEXUALES A MENORES DE DIECISÉIS AÑOS ─────────
+v('cp', 'cuando sea menor de cuatro años', cols('AGRESIONES SEXUALES A MENORES DE DIECISÉIS AÑOS (cuadro del temario · art. 181)', [
+  { t: 'ACTOS DE CARÁCTER SEXUAL · art. 181', l: [`El que realizare ${D('actos de carácter sexual con un menor de dieciséis años')}, o los que realice el menor con un tercero o sobre sí mismo a instancia del autor.`, `O el acto sexual consista en ${D('acceso carnal por vía vaginal, anal o bucal')}, o en introducción de miembros corporales u objetos por alguna de las dos primeras vías.`, `Las conductas serán castigadas con la pena de prisión correspondiente en su ${P('mitad superior')} cuando concurra alguna de las siguientes circunstancias:`] },
+  { t: 'CIRCUNSTANCIAS (1)', l: [`${D('Actuación conjunta de dos o más personas')}.`, `Agresión sexual precedida o acompañada de ${D('violencia de extrema gravedad')} o de actos particularmente degradantes o vejatorios.`, `Hechos contra persona en situación de ${D('especial vulnerabilidad')} por razón de su edad, enfermedad, discapacidad o cualquier otra circunstancia y, en todo caso, cuando sea ${P('menor de cuatro años')}.`] },
+  { t: 'CIRCUNSTANCIAS (2) y (3)', l: [`La víctima sea o haya sido ${G('pareja del autor')}, aun sin convivencia.`, `El responsable se hubiera prevalido de una relación de ${D('convivencia, parentesco o superioridad')}.`, `Uso de ${D('armas u otros medios igualmente peligrosos')} (arts. 149 y 150, sin perjuicio del 194 bis).`, `Haber ${D('anulado la voluntad')} de la víctima suministrándole fármacos, drogas o cualquier otra sustancia idónea.`, `La infracción se haya cometido en el seno de una ${D('organización o grupo criminal')} que se dedicare a la realización de tales actividades.`] },
+]));
+
+// ───────── p22 · art. 187 · PROSTITUCIÓN DE MAYORES DE EDAD ─────────
+v('cp', 'condiciones gravosas, desproporcionadas o abusivas', cols('PROSTITUCIÓN DE MAYORES DE EDAD (cuadro del temario · art. 187)', [
+  { t: 'TIPO BÁSICO · art. 187.1', l: [`El que, empleando ${D('violencia')}, ${D('intimidación')} o ${D('engaño')}, o ${D('abusando de una situación de superioridad, necesidad o vulnerabilidad')}, determine a una persona ${G('mayor de edad')} a ${D('ejercer o mantenerse en la prostitución')}.`, `Quien se ${D('lucre explotando')} la prostitución de otra persona, ${K('aun con el consentimiento')} de la misma. Hay explotación cuando concurra alguna de estas circunstancias: que la víctima se encuentre en situación de ${D('vulnerabilidad personal o económica')}; que se le impongan para su ejercicio ${D('condiciones gravosas, desproporcionadas o abusivas')}.`] },
+  { t: 'TIPO CUALIFICADO · art. 187.2 · AGRAVANTE → MITAD SUPERIOR', l: [`${D('Prevalerse de su condición de autoridad, agente de ésta o funcionario público')}.`, `${D('Pertenecer a una organización o grupo criminal')} que se dedicare a la realización de tales actividades.`, `${D('Poner en peligro')}, de forma dolosa o por imprudencia grave, la vida o salud de la víctima.`] },
 ]));
 
 module.exports = V;
