@@ -1,5 +1,5 @@
-// Tema 19 · marcas a mano de MI PDF (EXOF / EX / EXAMEN / ✱ → ex; fichas R → r). LECTURA PARCIAL: solo págs. 5-162 (arts. 138-554; págs. 83-86 y 89-92 sin leer), leídas como imagen el 8/11/2026.
-// Las págs. 163-190 NO están leídas todavía. Clave: 'art|token' · 'art|token@n' · 'art|#n' · 'art|~texto'. ✱ se escribe '*'.
+// Tema 19 · marcas a mano de MI PDF (EXOF / EX / EXAMEN / ✱ → ex; fichas R → r). LECTURA PARCIAL: solo págs. 5-168 (arts. 138-566; págs. 83-86 y 89-92 sin leer), leídas como imagen el 8/11/2026.
+// Las págs. 169-190 NO están leídas todavía. Clave: 'art|token' · 'art|token@n' · 'art|#n' · 'art|~texto'. ✱ se escribe '*'.
 // Ojo: los pines «R36, R37, R39…» y los números en círculo de esas págs. son de otro temario (T18): NO son fichas R de este tema.
 const M = {};
 const ex = (k, ...m) => { (M[k] = M[k] || {}).ex = [...((M[k] || {}).ex || []), ...m]; };
@@ -130,4 +130,8 @@ ex('550|1.', 'EXOF', '*');
 ex('551|#1', 'EX');
 ex('553|#1', '*');
 ex('554|a)', 'EX', '*');
+ex('558|#1', '*');
+ex('560|3.', 'EXAMEN');
+(M['563|#1'] = M['563|#1'] || {}).r = ['R28'];
+ex('564|2.', 'EX');
 module.exports = M;
