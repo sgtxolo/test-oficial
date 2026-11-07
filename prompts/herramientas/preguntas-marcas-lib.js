@@ -33,7 +33,7 @@ module.exports = function (C) {
   }
   let nOf = C.desdeOf, nIA = C.desdeIA;
   const objs = C.Q.map(q => ({ id: q.ia ? `${C.T}-ia-${nIA++}` : `${C.T}-${nOf++}`, pregunta: `${q.n[0]}. ${q.r}. ${q.e}`, opciones: q.o, correcta: q.c,
-    explicacion: `<span class="ex-resp">Respuesta correcta: <b>${L[q.c]}</b> · <mark class="ex-key">${esc(q.o[q.c].replace(/\.$/, ''))}</mark></span>El <span class="ref-norma">${q.a} de la ${q.n[1]}</span> dispone: <span class="ref-concepto">"${esc(q.t)}"</span>${q.p ? ' ' + esc(q.p) : ''}`,
+    explicacion: `<span class="ex-resp">Respuesta correcta: <b>${L[q.c]}</b> · <mark class="ex-key">${esc(q.o[q.c].replace(/\.$/, ''))}</mark></span>${C.fmt==="nuevo"?`<span class="ref-norma">${q.a.replace(/^art./i,"Art.")} · ${q.n[1]}</span>`:`El <span class="ref-norma">${q.a} de la ${q.n[1]}</span> dispone:`} <span class="ref-concepto">"${esc(q.t)}"</span>${q.p ? ' ' + esc(q.p) : ''}`,
     apartado: q.n[2] }));
   const reparto = [0, 1, 2, 3].map(c => objs.filter(o => o.correcta === c).length).join('/');
   console.log(`✓ ${objs.length} preguntas (${objs.filter(o => !/-ia-/.test(o.id)).length} oficiales, ${objs.filter(o => /-ia-/.test(o.id)).length} IA) · citas literales · correcta nunca la más larga · letras A/B/C/D ${reparto}`);
