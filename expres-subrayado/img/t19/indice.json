@@ -3,15 +3,15 @@
   "id": "a-178",
   "nombre": "Código Penal · Artículo 178",
   "img": "a-178.jpg",
-  "wh": [
-   1075,
-   547
-  ],
   "imgr": "a-178-r.jpg",
   "ap": [
    1,
    2,
    4
+  ],
+  "wh": [
+   1075,
+   547
   ],
   "whr": [
    1075,
@@ -32,13 +32,13 @@
   "id": "a-179",
   "nombre": "Código Penal · Artículo 179",
   "img": "a-179.jpg",
-  "wh": [
-   1075,
-   206
-  ],
   "imgr": "a-179-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   206
   ],
   "whr": [
    1075,
@@ -55,14 +55,14 @@
   "id": "a-181",
   "nombre": "Código Penal · Artículo 181",
   "img": "a-181.jpg",
-  "wh": [
-   1075,
-   2303
-  ],
   "imgr": "a-181-r.jpg",
   "ap": [
    1,
    7
+  ],
+  "wh": [
+   1075,
+   2303
   ],
   "whr": [
    1075,
@@ -100,14 +100,14 @@
   "id": "a-183",
   "nombre": "Código Penal · Artículo 183",
   "img": "a-183.jpg",
-  "wh": [
-   1075,
-   633
-  ],
   "imgr": "a-183-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   633
   ],
   "whr": [
    1075,
@@ -124,13 +124,13 @@
   "id": "a-187",
   "nombre": "Código Penal · Artículo 187",
   "img": "a-187.jpg",
-  "wh": [
-   1075,
-   1412
-  ],
   "imgr": "a-187-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   1412
   ],
   "whr": [
    1075,
@@ -155,13 +155,13 @@
   "id": "a-188",
   "nombre": "Código Penal · Artículo 188",
   "img": "a-188.jpg",
-  "wh": [
-   1520,
-   2727
-  ],
   "imgr": "a-188-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1520,
+   2727
   ],
   "whr": [
    1520,
@@ -191,14 +191,14 @@
   "id": "a-191",
   "nombre": "Código Penal · Artículo 191",
   "img": "a-191.jpg",
-  "wh": [
-   1075,
-   288
-  ],
   "imgr": "a-191-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   288
   ],
   "whr": [
    1075,
@@ -219,12 +219,12 @@
   "id": "a-193",
   "nombre": "Código Penal · Artículo 193",
   "img": "a-193.jpg",
+  "imgr": "a-193-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    136
   ],
-  "imgr": "a-193-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    84
@@ -249,16 +249,16 @@
   "id": "a-225",
   "nombre": "Código Penal · Artículo 225",
   "img": "a-225.jpg",
-  "wh": [
-   1075,
-   2271
-  ],
   "imgr": "a-225-r.jpg",
   "ap": [
    1,
    3,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   2271
   ],
   "whr": [
    1075,
@@ -307,14 +307,14 @@
   "id": "a-227",
   "nombre": "Código Penal · Artículo 227",
   "img": "a-227.jpg",
-  "wh": [
-   1075,
-   283
-  ],
   "imgr": "a-227-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   283
   ],
   "whr": [
    1075,
@@ -335,12 +335,12 @@
   "id": "a-228",
   "nombre": "Código Penal · Artículo 228",
   "img": "a-228.jpg",
+  "imgr": "a-228-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    158
   ],
-  "imgr": "a-228-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    89
@@ -356,14 +356,14 @@
   "id": "a-233",
   "nombre": "Código Penal · Artículo 233",
   "img": "a-233.jpg",
-  "wh": [
-   1075,
-   5754
-  ],
   "imgr": "a-233-r.jpg",
   "ap": [
    2,
    3
+  ],
+  "wh": [
+   1075,
+   5754
   ],
   "whr": [
    1075,
@@ -380,13 +380,13 @@
   "id": "a-234",
   "nombre": "Código Penal · Artículo 234",
   "img": "a-234.jpg",
-  "wh": [
-   1075,
-   170
-  ],
   "imgr": "a-234-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   170
   ],
   "whr": [
    1075,
@@ -412,16 +412,16 @@
   "id": "a-270",
   "nombre": "Código Penal · Artículo 270",
   "img": "a-270.jpg",
-  "wh": [
-   1075,
-   1623
-  ],
   "imgr": "a-270-r.jpg",
   "ap": [
    1,
    2,
    3,
    6
+  ],
+  "wh": [
+   1075,
+   1623
   ],
   "whr": [
    1075,
@@ -454,14 +454,14 @@
   "id": "a-273",
   "nombre": "Código Penal · Artículo 273",
   "img": "a-273.jpg",
-  "wh": [
-   1075,
-   356
-  ],
   "imgr": "a-273-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   356
   ],
   "whr": [
    1075,
@@ -478,12 +478,12 @@
   "id": "a-276",
   "nombre": "Código Penal · Artículo 276",
   "img": "a-276.jpg",
+  "imgr": "a-276-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    420
   ],
-  "imgr": "a-276-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    348
@@ -512,13 +512,13 @@
   "id": "a-284",
   "nombre": "Código Penal · Artículo 284",
   "img": "a-284.jpg",
-  "wh": [
-   1075,
-   1379
-  ],
   "imgr": "a-284-r.jpg",
   "ap": [
    3
+  ],
+  "wh": [
+   1075,
+   1379
   ],
   "whr": [
    1075,
@@ -547,15 +547,15 @@
   "id": "a-285",
   "nombre": "Código Penal · Artículo 285",
   "img": "a-285.jpg",
-  "wh": [
-   1075,
-   2122
-  ],
   "imgr": "a-285-r.jpg",
   "ap": [
    1,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   2122
   ],
   "whr": [
    1075,
@@ -584,15 +584,15 @@
   "id": "a-286",
   "nombre": "Código Penal · Artículo 286",
   "img": "a-286.jpg",
-  "wh": [
-   1075,
-   3076
-  ],
   "imgr": "a-286-r.jpg",
   "ap": [
    1,
    2,
    4
+  ],
+  "wh": [
+   1075,
+   3076
   ],
   "whr": [
    1075,
@@ -650,12 +650,12 @@
   "id": "a-289",
   "nombre": "Código Penal · Artículo 289",
   "img": "a-289.jpg",
+  "imgr": "a-289-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2581
   ],
-  "imgr": "a-289-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    193
@@ -675,12 +675,12 @@
   "id": "a-290",
   "nombre": "Código Penal · Artículo 290",
   "img": "a-290.jpg",
+  "imgr": "a-290-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    184
   ],
-  "imgr": "a-290-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    145
@@ -705,12 +705,12 @@
   "id": "a-292",
   "nombre": "Código Penal · Artículo 292",
   "img": "a-292.jpg",
+  "imgr": "a-292-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    987
   ],
-  "imgr": "a-292-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    191
@@ -726,14 +726,14 @@
   "id": "a-296",
   "nombre": "Código Penal · Artículo 296",
   "img": "a-296.jpg",
-  "wh": [
-   1075,
-   234
-  ],
   "imgr": "a-296-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   234
   ],
   "whr": [
    1075,
@@ -754,12 +754,12 @@
   "id": "a-297",
   "nombre": "Código Penal · Artículo 297",
   "img": "a-297.jpg",
+  "imgr": "a-297-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    357
   ],
-  "imgr": "a-297-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    104
@@ -775,14 +775,14 @@
   "id": "a-298",
   "nombre": "Código Penal · Artículo 298",
   "img": "a-298.jpg",
-  "wh": [
-   1075,
-   821
-  ],
   "imgr": "a-298-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   821
   ],
   "whr": [
    1075,
@@ -820,10 +820,6 @@
   "id": "a-305",
   "nombre": "Código Penal · Artículo 305",
   "img": "a-305.jpg",
-  "wh": [
-   1075,
-   3000
-  ],
   "imgr": "a-305-r.jpg",
   "ap": [
    1,
@@ -831,6 +827,10 @@
    4,
    5,
    6
+  ],
+  "wh": [
+   1075,
+   3000
   ],
   "whr": [
    1075,
@@ -867,15 +867,15 @@
   "id": "a-307",
   "nombre": "Código Penal · Artículo 307",
   "img": "a-307.jpg",
-  "wh": [
-   1075,
-   3400
-  ],
   "imgr": "a-307-r.jpg",
   "ap": [
    1,
    2,
    5
+  ],
+  "wh": [
+   1075,
+   3400
   ],
   "whr": [
    1075,
@@ -900,10 +900,6 @@
   "id": "a-308",
   "nombre": "Código Penal · Artículo 308",
   "img": "a-308.jpg",
-  "wh": [
-   1075,
-   2541
-  ],
   "imgr": "a-308-r.jpg",
   "ap": [
    1,
@@ -911,6 +907,10 @@
    5,
    6,
    8
+  ],
+  "wh": [
+   1075,
+   2541
   ],
   "whr": [
    1075,
@@ -959,12 +959,12 @@
   "id": "a-310",
   "nombre": "Código Penal · Artículo 310",
   "img": "a-310.jpg",
+  "imgr": "a-310-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1249
   ],
-  "imgr": "a-310-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    521
@@ -1005,16 +1005,16 @@
   "id": "a-318",
   "nombre": "Código Penal · Artículo 318",
   "img": "a-318.jpg",
-  "wh": [
-   1075,
-   1879
-  ],
   "imgr": "a-318-r.jpg",
   "ap": [
    1,
    2,
    4,
    6
+  ],
+  "wh": [
+   1075,
+   1879
   ],
   "whr": [
    1075,
@@ -1051,15 +1051,15 @@
   "id": "a-319",
   "nombre": "Código Penal · Artículo 319",
   "img": "a-319.jpg",
-  "wh": [
-   1075,
-   744
-  ],
   "imgr": "a-319-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   744
   ],
   "whr": [
    1075,
@@ -1080,13 +1080,13 @@
   "id": "a-322",
   "nombre": "Código Penal · Artículo 322",
   "img": "a-322.jpg",
-  "wh": [
-   1075,
-   263
-  ],
   "imgr": "a-322-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   263
   ],
   "whr": [
    1075,
@@ -1103,12 +1103,12 @@
   "id": "a-324",
   "nombre": "Código Penal · Artículo 324",
   "img": "a-324.jpg",
+  "imgr": "a-324-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    380
   ],
-  "imgr": "a-324-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    158
@@ -1124,13 +1124,13 @@
   "id": "a-325",
   "nombre": "Código Penal · Artículo 325",
   "img": "a-325.jpg",
-  "wh": [
-   1075,
-   496
-  ],
   "imgr": "a-325-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   496
   ],
   "whr": [
    1075,
@@ -1160,12 +1160,12 @@
   "id": "a-327",
   "nombre": "Código Penal · Artículo 327",
   "img": "a-327.jpg",
+  "imgr": "a-327-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    532
   ],
-  "imgr": "a-327-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    304
@@ -1193,13 +1193,13 @@
   "id": "a-329",
   "nombre": "Código Penal · Artículo 329",
   "img": "a-329.jpg",
-  "wh": [
-   1075,
-   321
-  ],
   "imgr": "a-329-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   321
   ],
   "whr": [
    1075,
@@ -1220,13 +1220,13 @@
   "id": "a-335",
   "nombre": "Código Penal · Artículo 335",
   "img": "a-335.jpg",
-  "wh": [
-   1075,
-   584
-  ],
   "imgr": "a-335-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   584
   ],
   "whr": [
    1075,
@@ -1252,12 +1252,12 @@
   "id": "a-337",
   "nombre": "Código Penal · Artículo 337",
   "img": "a-337.jpg",
+  "imgr": "a-337-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3968
   ],
-  "imgr": "a-337-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    154
@@ -1277,14 +1277,14 @@
   "id": "a-346",
   "nombre": "Código Penal · Artículo 346",
   "img": "a-346.jpg",
-  "wh": [
-   1075,
-   772
-  ],
   "imgr": "a-346-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   772
   ],
   "whr": [
    1075,
@@ -1305,14 +1305,14 @@
   "id": "a-348",
   "nombre": "Código Penal · Artículo 348",
   "img": "a-348.jpg",
-  "wh": [
-   1075,
-   971
-  ],
   "imgr": "a-348-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   971
   ],
   "whr": [
    1075,
@@ -1337,12 +1337,12 @@
   "id": "a-351",
   "nombre": "Código Penal · Artículo 351",
   "img": "a-351.jpg",
+  "imgr": "a-351-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    400
   ],
-  "imgr": "a-351-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    303
@@ -1366,12 +1366,12 @@
   "id": "a-355",
   "nombre": "Código Penal · Artículo 355",
   "img": "a-355.jpg",
+  "imgr": "a-355-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    371
   ],
-  "imgr": "a-355-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    292
@@ -1395,12 +1395,12 @@
   "id": "a-357",
   "nombre": "Código Penal · Artículo 357",
   "img": "a-357.jpg",
+  "imgr": "a-357-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    342
   ],
-  "imgr": "a-357-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    157
@@ -1425,14 +1425,14 @@
   "id": "a-362",
   "nombre": "Código Penal · Artículo 362",
   "img": "a-362.jpg",
-  "wh": [
-   1075,
-   2534
-  ],
   "imgr": "a-362-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   2534
   ],
   "whr": [
    1075,
@@ -1461,14 +1461,14 @@
   "id": "a-363",
   "nombre": "Código Penal · Artículo 363",
   "img": "a-363.jpg",
-  "wh": [
-   1075,
-   424
-  ],
   "imgr": "a-363-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   424
   ],
   "whr": [
    1075,
@@ -1503,12 +1503,12 @@
   "id": "a-370",
   "nombre": "Código Penal · Artículo 370",
   "img": "a-370.jpg",
+  "imgr": "a-370-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    512
   ],
-  "imgr": "a-370-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    291
@@ -1528,14 +1528,14 @@
   "id": "a-371",
   "nombre": "Código Penal · Artículo 371",
   "img": "a-371.jpg",
-  "wh": [
-   1075,
-   462
-  ],
   "imgr": "a-371-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   462
   ],
   "whr": [
    1075,
@@ -1561,12 +1561,12 @@
   "id": "a-376",
   "nombre": "Código Penal · Artículo 376",
   "img": "a-376.jpg",
+  "imgr": "a-376-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    370
   ],
-  "imgr": "a-376-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    152
@@ -1595,12 +1595,12 @@
   "id": "a-378",
   "nombre": "Código Penal · Artículo 378",
   "img": "a-378.jpg",
+  "imgr": "a-378-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    752
   ],
-  "imgr": "a-378-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    170
@@ -1638,14 +1638,14 @@
   "id": "a-407",
   "nombre": "Código Penal · Artículo 407",
   "img": "a-407.jpg",
-  "wh": [
-   1075,
-   304
-  ],
   "imgr": "a-407-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   304
   ],
   "whr": [
    1075,
@@ -1662,12 +1662,12 @@
   "id": "a-409",
   "nombre": "Código Penal · Artículo 409",
   "img": "a-409.jpg",
+  "imgr": "a-409-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    798
   ],
-  "imgr": "a-409-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    301
@@ -1696,13 +1696,13 @@
   "id": "a-417",
   "nombre": "Código Penal · Artículo 417",
   "img": "a-417.jpg",
-  "wh": [
-   1075,
-   337
-  ],
   "imgr": "a-417-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   337
   ],
   "whr": [
    1075,
@@ -1719,12 +1719,12 @@
   "id": "a-418",
   "nombre": "Código Penal · Artículo 418",
   "img": "a-418.jpg",
+  "imgr": "a-418-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    454
   ],
-  "imgr": "a-418-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    262
@@ -1740,12 +1740,12 @@
   "id": "a-423",
   "nombre": "Código Penal · Artículo 423",
   "img": "a-423.jpg",
+  "imgr": "a-423-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    268
   ],
-  "imgr": "a-423-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    102
@@ -1770,12 +1770,12 @@
   "id": "a-426",
   "nombre": "Código Penal · Artículo 426",
   "img": "a-426.jpg",
+  "imgr": "a-426-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    265
   ],
-  "imgr": "a-426-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    161
@@ -1809,14 +1809,14 @@
   "id": "a-432",
   "nombre": "Código Penal · Artículo 432",
   "img": "a-432.jpg",
-  "wh": [
-   1075,
-   1171
-  ],
   "imgr": "a-432-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   1171
   ],
   "whr": [
    1075,
@@ -1849,12 +1849,12 @@
   "id": "a-433",
   "nombre": "Código Penal · Artículo 433",
   "img": "a-433.jpg",
+  "imgr": "a-433-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    758
   ],
-  "imgr": "a-433-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    634
@@ -1874,12 +1874,12 @@
   "id": "a-435",
   "nombre": "Código Penal · Artículo 435",
   "img": "a-435.jpg",
+  "imgr": "a-435-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3118
   ],
-  "imgr": "a-435-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    316
@@ -1912,12 +1912,12 @@
   "id": "a-438",
   "nombre": "Código Penal · Artículo 438",
   "img": "a-438.jpg",
+  "imgr": "a-438-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    454
   ],
-  "imgr": "a-438-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    337
@@ -1941,12 +1941,12 @@
   "id": "a-444",
   "nombre": "Código Penal · Artículo 444",
   "img": "a-444.jpg",
+  "imgr": "a-444-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    343
   ],
-  "imgr": "a-444-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    83
@@ -1962,12 +1962,12 @@
   "id": "a-445",
   "nombre": "Código Penal · Artículo 445",
   "img": "a-445.jpg",
+  "imgr": "a-445-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    465
   ],
-  "imgr": "a-445-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    97
@@ -1983,12 +1983,12 @@
   "id": "a-446",
   "nombre": "Código Penal · Artículo 446",
   "img": "a-446.jpg",
+  "imgr": "a-446-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    390
   ],
-  "imgr": "a-446-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    309
@@ -2013,13 +2013,13 @@
   "id": "a-449",
   "nombre": "Código Penal · Artículo 449",
   "img": "a-449.jpg",
-  "wh": [
-   1075,
-   897
-  ],
   "imgr": "a-449-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   897
   ],
   "whr": [
    1075,
@@ -2040,14 +2040,14 @@
   "id": "a-450",
   "nombre": "Código Penal · Artículo 450",
   "img": "a-450.jpg",
-  "wh": [
-   1075,
-   1151
-  ],
   "imgr": "a-450-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   1151
   ],
   "whr": [
    1075,
@@ -2064,12 +2064,12 @@
   "id": "a-454",
   "nombre": "Código Penal · Artículo 454",
   "img": "a-454.jpg",
+  "imgr": "a-454-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    411
   ],
-  "imgr": "a-454-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    95
@@ -2085,13 +2085,13 @@
   "id": "a-455",
   "nombre": "Código Penal · Artículo 455",
   "img": "a-455.jpg",
-  "wh": [
-   1075,
-   402
-  ],
   "imgr": "a-455-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   402
   ],
   "whr": [
    1075,
@@ -2117,12 +2117,12 @@
   "id": "a-462",
   "nombre": "Código Penal · Artículo 462",
   "img": "a-462.jpg",
+  "imgr": "a-462-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    366
   ],
-  "imgr": "a-462-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    158
@@ -2138,13 +2138,13 @@
   "id": "a-463",
   "nombre": "Código Penal · Artículo 463",
   "img": "a-463.jpg",
-  "wh": [
-   1075,
-   412
-  ],
   "imgr": "a-463-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   412
   ],
   "whr": [
    1075,
@@ -2161,13 +2161,13 @@
   "id": "a-466",
   "nombre": "Código Penal · Artículo 466",
   "img": "a-466.jpg",
-  "wh": [
-   1075,
-   311
-  ],
   "imgr": "a-466-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   311
   ],
   "whr": [
    1075,
@@ -2184,13 +2184,13 @@
   "id": "a-468",
   "nombre": "Código Penal · Artículo 468",
   "img": "a-468.jpg",
-  "wh": [
-   1075,
-   1164
-  ],
   "imgr": "a-468-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   1164
   ],
   "whr": [
    1075,
@@ -2207,13 +2207,13 @@
   "id": "a-470",
   "nombre": "Código Penal · Artículo 470",
   "img": "a-470.jpg",
-  "wh": [
-   1075,
-   389
-  ],
   "imgr": "a-470-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   389
   ],
   "whr": [
    1075,
@@ -2230,10 +2230,6 @@
   "id": "a-471",
   "nombre": "Código Penal · Artículo 471",
   "img": "a-471.jpg",
-  "wh": [
-   1075,
-   1957
-  ],
   "imgr": "a-471-r.jpg",
   "ap": [
    1,
@@ -2241,6 +2237,10 @@
    3,
    4,
    7
+  ],
+  "wh": [
+   1075,
+   1957
   ],
   "whr": [
    1075,
@@ -2273,12 +2273,12 @@
   "id": "a-472",
   "nombre": "Código Penal · Artículo 472",
   "img": "a-472.jpg",
+  "imgr": "a-472-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    602
   ],
-  "imgr": "a-472-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    368
@@ -2306,12 +2306,12 @@
   "id": "a-474",
   "nombre": "Código Penal · Artículo 474",
   "img": "a-474.jpg",
+  "imgr": "a-474-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    140
   ],
-  "imgr": "a-474-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    100
@@ -2327,14 +2327,14 @@
   "id": "a-476",
   "nombre": "Código Penal · Artículo 476",
   "img": "a-476.jpg",
-  "wh": [
-   1075,
-   252
-  ],
   "imgr": "a-476-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   252
   ],
   "whr": [
    1075,
@@ -2364,12 +2364,12 @@
   "id": "a-479",
   "nombre": "Código Penal · Artículo 479",
   "img": "a-479.jpg",
+  "imgr": "a-479-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    205
   ],
-  "imgr": "a-479-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    176
@@ -2393,14 +2393,14 @@
   "id": "a-480",
   "nombre": "Código Penal · Artículo 480",
   "img": "a-480.jpg",
-  "wh": [
-   1075,
-   227
-  ],
   "imgr": "a-480-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   227
   ],
   "whr": [
    1075,
@@ -2417,14 +2417,14 @@
   "id": "a-485",
   "nombre": "Código Penal · Artículo 485",
   "img": "a-485.jpg",
-  "wh": [
-   1075,
-   317
-  ],
   "imgr": "a-485-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   317
   ],
   "whr": [
    1075,
@@ -2454,12 +2454,12 @@
   "id": "a-493",
   "nombre": "Código Penal · Artículo 493",
   "img": "a-493.jpg",
+  "imgr": "a-493-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    229
   ],
-  "imgr": "a-493-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    133
@@ -2493,13 +2493,13 @@
   "id": "a-504",
   "nombre": "Código Penal · Artículo 504",
   "img": "a-504.jpg",
-  "wh": [
-   1075,
-   474
-  ],
   "imgr": "a-504-r.jpg",
   "ap": [
    2
+  ],
+  "wh": [
+   1075,
+   474
   ],
   "whr": [
    1075,
@@ -2520,13 +2520,13 @@
   "id": "a-505",
   "nombre": "Código Penal · Artículo 505",
   "img": "a-505.jpg",
-  "wh": [
-   1075,
-   446
-  ],
   "imgr": "a-505-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   446
   ],
   "whr": [
    1075,
@@ -2543,12 +2543,12 @@
   "id": "a-506",
   "nombre": "Código Penal · Artículo 506",
   "img": "a-506.jpg",
+  "imgr": "a-506-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    249
   ],
-  "imgr": "a-506-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    156
@@ -2564,14 +2564,14 @@
   "id": "a-508",
   "nombre": "Código Penal · Artículo 508",
   "img": "a-508.jpg",
-  "wh": [
-   1075,
-   433
-  ],
   "imgr": "a-508-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   433
   ],
   "whr": [
    1075,
@@ -2588,12 +2588,12 @@
   "id": "a-509",
   "nombre": "Código Penal · Artículo 509",
   "img": "a-509.jpg",
+  "imgr": "a-509-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2248
   ],
-  "imgr": "a-509-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    160
@@ -2609,13 +2609,13 @@
   "id": "a-510",
   "nombre": "Código Penal · Artículo 510",
   "img": "a-510.jpg",
-  "wh": [
-   1075,
-   1565
-  ],
   "imgr": "a-510-r.jpg",
   "ap": [
    3
+  ],
+  "wh": [
+   1075,
+   1565
   ],
   "whr": [
    1075,
@@ -2664,12 +2664,12 @@
   "id": "a-515",
   "nombre": "Código Penal · Artículo 515",
   "img": "a-515.jpg",
+  "imgr": "a-515-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    434
   ],
-  "imgr": "a-515-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    363
@@ -2720,13 +2720,13 @@
   "id": "a-529",
   "nombre": "Código Penal · Artículo 529",
   "img": "a-529.jpg",
-  "wh": [
-   1075,
-   188
-  ],
   "imgr": "a-529-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   188
   ],
   "whr": [
    1075,
@@ -2752,12 +2752,12 @@
   "id": "a-533",
   "nombre": "Código Penal · Artículo 533",
   "img": "a-533.jpg",
+  "imgr": "a-533-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1184
   ],
-  "imgr": "a-533-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    805
@@ -2785,13 +2785,13 @@
   "id": "a-534",
   "nombre": "Código Penal · Artículo 534",
   "img": "a-534.jpg",
-  "wh": [
-   1075,
-   497
-  ],
   "imgr": "a-534-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   497
   ],
   "whr": [
    1075,
@@ -2835,12 +2835,12 @@
   "id": "a-551",
   "nombre": "Código Penal · Artículo 551",
   "img": "a-551.jpg",
+  "imgr": "a-551-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    377
   ],
-  "imgr": "a-551-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    265
@@ -2869,13 +2869,13 @@
   "id": "a-554",
   "nombre": "Código Penal · Artículo 554",
   "img": "a-554.jpg",
-  "wh": [
-   1075,
-   432
-  ],
   "imgr": "a-554-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   432
   ],
   "whr": [
    1075,
@@ -2896,12 +2896,12 @@
   "id": "a-557",
   "nombre": "Código Penal · Artículo 557",
   "img": "a-557.jpg",
+  "imgr": "a-557-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2791
   ],
-  "imgr": "a-557-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    294
@@ -2948,16 +2948,16 @@
   "id": "a-567",
   "nombre": "Código Penal · Artículo 567",
   "img": "a-567.jpg",
-  "wh": [
-   1075,
-   616
-  ],
   "imgr": "a-567-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   616
   ],
   "whr": [
    1075,
@@ -2978,15 +2978,15 @@
   "id": "a-570",
   "nombre": "Código Penal · Artículo 570",
   "img": "a-570.jpg",
-  "wh": [
-   1075,
-   3476
-  ],
   "imgr": "a-570-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   3476
   ],
   "whr": [
    1075,
@@ -3039,14 +3039,14 @@
   "id": "a-573",
   "nombre": "Código Penal · Artículo 573",
   "img": "a-573.jpg",
-  "wh": [
-   1075,
-   1545
-  ],
   "imgr": "a-573-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   1545
   ],
   "whr": [
    1075,
@@ -3083,14 +3083,14 @@
   "id": "a-577",
   "nombre": "Código Penal · Artículo 577",
   "img": "a-577.jpg",
-  "wh": [
-   1075,
-   946
-  ],
   "imgr": "a-577-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   946
   ],
   "whr": [
    1075,
@@ -3127,13 +3127,13 @@
   "id": "a-579",
   "nombre": "Código Penal · Artículo 579",
   "img": "a-579.jpg",
-  "wh": [
-   1075,
-   1129
-  ],
   "imgr": "a-579-r.jpg",
   "ap": [
    3
+  ],
+  "wh": [
+   1075,
+   1129
   ],
   "whr": [
    1075,
@@ -3154,12 +3154,12 @@
   "id": "a-580",
   "nombre": "Código Penal · Artículo 580",
   "img": "a-580.jpg",
+  "imgr": "a-580-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3975
   ],
-  "imgr": "a-580-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    134
@@ -3184,15 +3184,15 @@
   "id": "a-607",
   "nombre": "Código Penal · Artículo 607",
   "img": "a-607.jpg",
-  "wh": [
-   1075,
-   3343
-  ],
   "imgr": "a-607-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   3343
   ],
   "whr": [
    1075,
@@ -3249,12 +3249,12 @@
   "id": "a-611",
   "nombre": "Código Penal · Artículo 611",
   "img": "a-611.jpg",
+  "imgr": "a-611-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    810
   ],
-  "imgr": "a-611-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    728
@@ -3286,12 +3286,12 @@
   "id": "a-615",
   "nombre": "Código Penal · Artículo 615",
   "img": "a-615.jpg",
+  "imgr": "a-615-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    809
   ],
-  "imgr": "a-615-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    104
@@ -3307,12 +3307,12 @@
   "id": "a-616",
   "nombre": "Código Penal · Artículo 616",
   "img": "a-616.jpg",
+  "imgr": "a-616-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1618
   ],
-  "imgr": "a-616-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    246
@@ -3326,6 +3326,96 @@
     479,
     650
    ]
+  ]
+ },
+ {
+  "id": "a-140",
+  "nombre": "Código Penal · Artículos 138 a 140",
+  "img": "a-140.jpg",
+  "wh": [
+   1075,
+   350
+  ]
+ },
+ {
+  "id": "a-143",
+  "nombre": "Código Penal · Artículo 143",
+  "img": "a-143.jpg",
+  "wh": [
+   1075,
+   396
+  ]
+ },
+ {
+  "id": "a-145",
+  "nombre": "Código Penal · Delito de aborto (arts. 144 y 145)",
+  "img": "a-145.jpg",
+  "wh": [
+   1075,
+   419
+  ]
+ },
+ {
+  "id": "a-147",
+  "nombre": "Código Penal · Artículo 147",
+  "img": "a-147.jpg",
+  "wh": [
+   1075,
+   426
+  ]
+ },
+ {
+  "id": "a-156",
+  "nombre": "Código Penal · Artículo 156",
+  "img": "a-156.jpg",
+  "wh": [
+   1075,
+   168
+  ]
+ },
+ {
+  "id": "a-161",
+  "nombre": "Código Penal · Artículo 161",
+  "img": "a-161.jpg",
+  "wh": [
+   1075,
+   191
+  ]
+ },
+ {
+  "id": "a-163",
+  "nombre": "Código Penal · Artículos 163 a 165",
+  "img": "a-163.jpg",
+  "wh": [
+   1075,
+   717
+  ]
+ },
+ {
+  "id": "a-172",
+  "nombre": "Código Penal · Artículo 172",
+  "img": "a-172.jpg",
+  "wh": [
+   1075,
+   411
+  ]
+ },
+ {
+  "id": "a-173",
+  "nombre": "Código Penal · Artículo 173",
+  "img": "a-173.jpg",
+  "wh": [
+   1075,
+   1310
+  ]
+ },
+ {
+  "id": "a-177",
+  "nombre": "Código Penal · Artículo 177",
+  "img": "a-177.jpg",
+  "wh": [
+   1075,
+   176
   ]
  }
 ]

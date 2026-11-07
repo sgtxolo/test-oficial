@@ -1,0 +1,14 @@
+{
+ "manual": [
+  {"id": "a-140", "nombre": "Código Penal · Artículos 138 a 140", "piezas": [[4, 0.185, 0.415]]},
+  {"id": "a-143", "nombre": "Código Penal · Artículo 143", "piezas": [[4, 0.69, 0.95]]},
+  {"id": "a-145", "nombre": "Código Penal · Delito de aborto (arts. 144 y 145)", "piezas": [[5, 0.21, 0.485]]},
+  {"id": "a-147", "nombre": "Código Penal · Artículo 147", "piezas": [[5, 0.56, 0.84]]},
+  {"id": "a-156", "nombre": "Código Penal · Artículo 156", "piezas": [[6, 0.505, 0.615]]},
+  {"id": "a-161", "nombre": "Código Penal · Artículo 161", "piezas": [[7, 0.43, 0.555]]},
+  {"id": "a-163", "nombre": "Código Penal · Artículos 163 a 165", "piezas": [[7, 0.65, 1.0], [8, 0.05, 0.17]]},
+  {"id": "a-172", "nombre": "Código Penal · Artículo 172", "piezas": [[9, 0.615, 0.885]]},
+  {"id": "a-173", "nombre": "Código Penal · Artículo 173", "piezas": [[10, 0.69, 0.93], [11, 0.05, 0.67]]},
+  {"id": "a-177", "nombre": "Código Penal · Artículo 177", "piezas": [[12, 0.055, 0.17]]}
+ ]
+}
