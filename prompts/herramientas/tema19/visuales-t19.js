@@ -1,6 +1,6 @@
 require('../esq-virtual.js');
 // Cuadros visuales del Tema 19 (CP Parte Especial): recrean los cuadros de tu temario (PDF 08-08-2026) con su texto. Colores copiados de tu fosforito.
-//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145) · p8-9 detenciones/secuestro · p10 amenazas y coacciones · p17 agresión sexual · p19 menores de 16 · p22 prostitución · p29-30 calumnias e injurias · p33 socorro · p134 prevaricación judicial · p140-141 quebrantamiento/evasión · p150 usurpación · p122-123 cohecho · p126 tráfico de influencias · p107 seguridad vial · p117 prevaricación/nombramiento · p42 administración desleal/apropiación indebida · p39 hurtos y robos
+//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145) · p8-9 detenciones/secuestro · p10 amenazas y coacciones · p17 agresión sexual · p19 menores de 16 · p22 prostitución · p29-30 calumnias e injurias · p33 socorro · p182 derecho de gentes · p190 piratería · p171 organización/grupo criminal · p157 garantías constitucionales · p163 atentado/resistencia · p134 prevaricación judicial · p140-141 quebrantamiento/evasión · p150 usurpación · p122-123 cohecho · p126 tráfico de influencias · p107 seguridad vial · p117 prevaricación/nombramiento · p42 administración desleal/apropiación indebida · p39 hurtos y robos
 // Uso: node prompts/herramientas/tema19/visuales-t19.js (idempotente: sustituye los anteriores marcados <!--VIS19-->). Lo usará expres/t19.js (module.exports = V).
 const fs = require('fs'), path = require('path');
 const L = require('../literal-lib.js');
@@ -238,6 +238,66 @@ v('cp', 'sin esperar a que se decida el correspondiente conflicto jurisdiccional
   { l: 'Art. 509', c: 'v', h: [
     { p: 'Conducta', c: 'o', t: `${D('Continuar procediendo')} sin esperar a que se decida el correspondiente ${D('conflicto jurisdiccional')} (salvo casos permitidos por la ley), estando legalmente requerido de inhibición.` },
     { p: 'Sujeto activo', c: 'v', t: `${G('Juez o Magistrado, o autoridad o funcionario público')}.` }] },
+]));
+
+
+// ───────── p157 · arts. 529-533 · DELITOS DE FUNCIONARIOS CONTRA LAS GARANTÍAS CONSTITUCIONALES ─────────
+v('cp', 'usare con ellos de un rigor innecesario', tabla('DELITOS DE FUNCIONARIOS CONTRA LA LIBERTAD INDIVIDUAL Y LAS GARANTÍAS (cuadro del temario · arts. 529 a 533)', ['Conducta', 'Sujeto activo'], [
+  { l: 'Entrega ilegal de causa criminal · art. 529', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Hacer entrega de')}: causa criminal, o persona detenida, entregando a otra autoridad o funcionario, militar o administrativo, que ${K('ilegalmente')} se la reclame.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Juez o Magistrado')}.` }] },
+  { l: 'Detención ilegal · art. 530', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Acordar, practicar o prolongar')} cualquier ${D('PRIVACIÓN DE LIBERTAD')} de un detenido, preso o sentenciado: ${D('mediando causa por delito')}, ${K('violando plazos')} o demás garantías constitucionales o legales.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Autoridad o funcionario público')}.` }] },
+  { l: 'Incomunicación ilegal · art. 531', c: 'c', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Decretar, practicar o prolongar la INCOMUNICACIÓN')} de un detenido, preso o sentenciado.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Autoridad o funcionario público')}.` }] },
+  { l: 'Excesos cometidos por funcionarios de prisiones · art. 533', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Imponer sanciones o privaciones indebidas')}, o ${D('usare rigor innecesario')}; dirigida a ${P('reclusos o internos')} (no a detenidos).` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Funcionario penitenciario, o de centros de protección o corrección de menores')}.` }] },
+]));
+
+// ───────── p163 · arts. 550 y 556 · ATENTADO · RESISTENCIA Y DESOBEDIENCIA · FALTAR AL RESPETO ─────────
+v('cp', 'faltaren al respeto y consideración debida', tabla('DELITO DE ATENTADO · RESISTENCIA Y DESOBEDIENCIA · FALTAR AL RESPETO (cuadro del temario · arts. 550 y 556)', ['Conducta', 'Sujeto pasivo'], [
+  { l: 'Delito de atentado · art. 550', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Agredir')}; ${D('oponer resistencia grave')} (con intimidación grave o violencia); ${D('acometer')}. El delito se produce cuando el sujeto pasivo se halle en el ${D('ejercicio de las funciones')} de sus cargos o con ocasión de ellas.` },
+    { p: 'Sujeto pasivo', c: 'v', t: `${G('Autoridad, sus agentes o funcionarios públicos')}; funcionarios ${G('docentes')}; funcionarios ${G('sanitarios')}.` }] },
+  { l: 'Resistencia y desobediencia · art. 556.1', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Resistirse')}; ${D('desobedecer gravemente')} (sin estar comprendido en el art. 550 CP). El sujeto pasivo se halle en el ejercicio de sus funciones o cumpla los requisitos señalados.` },
+    { p: 'Sujeto pasivo', c: 'v', t: `${G('Autoridad o sus agentes')}; ${G('personal de seguridad privada')} que cumpla los requisitos: debidamente identificado y que desarrolle actividades de seguridad privada en cooperación y bajo el mando de las Fuerzas y Cuerpos de Seguridad.` }] },
+  { l: 'Faltar al respeto · art. 556.2', c: 'c', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Faltar al respeto y consideración debida')}. El sujeto pasivo se halle en el ejercicio de sus funciones.` },
+    { p: 'Sujeto pasivo', c: 'v', t: `${G('Autoridad')}.` }] },
+]));
+
+
+// ───────── p171 · arts. 570 bis y ter · ORGANIZACIÓN CRIMINAL / GRUPO CRIMINAL (círculo «Exof») ─────────
+v('cp', 'perpetración concertada de delitos', tabla('ORGANIZACIÓN CRIMINAL · GRUPO CRIMINAL (cuadro del temario · arts. 570 bis y 570 ter; con círculo «Exof»)', ['Organización criminal · 570 bis', 'Grupo criminal · 570 ter'], [
+  { l: 'Concepto', c: 'o', h: [
+    { p: '570 bis', c: 'o', t: `${D('Agrupación')} formada por ${P('más de dos personas')}: con carácter ${D('estable')} o por ${D('tiempo indefinido')}; que de manera ${D('concertada y coordinada')} se repartan diversas tareas o funciones con el fin de cometer delitos.` },
+    { p: '570 ter', c: 'v', t: `${D('Unión')} de ${P('más de dos personas')}: que ${K('no')} reúnan alguna o algunas de las características de la organización criminal; que tengan por finalidad la ${D('perpetración concertada de delitos')}.` }] },
+  { l: 'Conducta', c: 'v', h: [
+    { p: '570 bis', c: 'o', t: `${D('Promover, constituir, organizar, coordinar o dirigir')} una organización criminal, o ${D('participar activamente')}, formar parte o cooperar económicamente o de cualquier otro modo.` },
+    { p: '570 ter', c: 'v', t: `${D('Constituir, financiar o integrar')} un grupo criminal.` }] },
+  { l: 'Finalidad del delito', c: 'c', h: [
+    { p: '570 bis', c: 'o', t: `Comisión de ${D('delitos graves')}; demás casos.` },
+    { p: '570 ter', c: 'v', t: `Comisión de delitos del art. 570 ter.1 (*delitos del art. 570.3 bis CP*), de ${D('cualquier otro delito grave')}, de ${D('uno o varios delitos menos graves')}, o perpetración ${D('reiterada')} de ${D('delitos leves')}.` }] },
+]));
+
+
+// ───────── p182 · arts. 605-606 · DELITOS CONTRA EL DERECHO DE GENTES ─────────
+v('cp', 'violare la inmunidad personal', cols('DELITOS CONTRA EL DERECHO DE GENTES (cuadro del temario · arts. 605 y 606)', [
+  { t: 'Delitos contra la vida · 605.1', l: [`${D('Matar')} al Jefe de un Estado extranjero o a otra persona internacionalmente protegida por un Tratado que se halle en España.`] },
+  { t: 'Contra la salud e integridad física · 605.2', l: [`${D('Causar lesiones')} de las previstas en el art. 149 o 150.`] },
+  { t: 'Otros delitos · 605.3', l: [`${D('Cometer cualquier otro delito contra')}: el ${G('sujeto pasivo')}, o sus ${G('locales oficiales, residencia particular o transporte')}.`] },
+  { t: 'Violación de la inmunidad personal · 606.1', l: [`${D('Violar la inmunidad personal')} del Jefe de otro Estado o de otra persona internacionalmente protegida por un Tratado.`] },
+]));
+
+// ───────── p190 · arts. 616 ter y quater · DELITO DE PIRATERÍA ─────────
+v('cp', 'sin perjuicio de las que correspondan por los delitos cometidos', cols('DELITO DE PIRATERÍA (cuadro del temario · arts. 616 ter y 616 quater)', [
+  { t: 'Tipo básico · art. 616 ter', l: [`${D('Apoderarse, dañar o destruir')}: ${Y('aeronave')}, ${Y('buque')} u otro tipo de ${Y('embarcación o plataforma en el mar')}.`, `${D('Atentar contra')}: personas, cargamento o bienes que se hallaren en las mismas.`, `Cometer el delito con: ${D('violencia, intimidación o engaño')}.`] },
+  { t: 'Resistencia o desobediencia · art. 616 quater', l: [`Con ocasión de la ${D('prevención o persecución')} de los hechos del art. 616 ter: ${D('resistirse')}, o ${D('desobedecer')}.`, `Se ha de realizar contra: ${G('buque de guerra')} o ${G('aeronave militar')}, u otro buque o aeronave que lleve ${D('signos claros')} y sea identificable como buque o aeronave al servicio del Estado español, y esté ${D('autorizado a tal fin')}.`] },
+  { t: 'Disposición común · arts. 616 ter y 616 quater.3', l: [`Las penas previstas en estos artículos se impondrán ${K('sin perjuicio')} de las que correspondan por los delitos cometidos.`] },
 ]));
 
 module.exports = V;
