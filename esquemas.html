@@ -5322,7 +5322,7 @@ html{overflow-x:hidden}body{max-width:100%}
 </style>
 
 <script id="expres-datos">/* El Exprés ya no va dentro de esta página: cada tema es un archivo expres/tN.js que se descarga solo al usarlo (y el service worker lo guarda). EXPRES_TEMAS = temas que tienen Exprés. */
-window.EXPRES_TEMAS=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];window.EXPRES_T={};
+window.EXPRES_TEMAS=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];window.EXPRES_T={};
 /* preguntas rápidas del tema (expres/qN.js, generadas con prompts/herramientas/preguntas-rapidas.js): no frenan el Exprés; al llegar se avisa con el evento «expresq» */
 window.cargarExpresQ=function(n){var P=window._exQ=window._exQ||{};if((window.EXPRES_Q||{})[n])return Promise.resolve();return P[n]||(P[n]=new Promise(function(ok){var sc=document.createElement('script');sc.src='expres/q'+n+'.js';sc.onload=function(){ok();document.dispatchEvent(new CustomEvent('expresq',{detail:n}));};sc.onerror=function(){delete P[n];ok();};document.head.appendChild(sc);}));};
 window.cargarExpres=function(n){var P=window._exP=window._exP||{};if(window.EXPRES_T[n])return Promise.resolve();return P[n]||(P[n]=new Promise(function(ok,ko){var sc=document.createElement('script');sc.src='expres/t'+n+'.js';sc.onload=ok;sc.onerror=function(){delete P[n];ko();};document.head.appendChild(sc);}));};
