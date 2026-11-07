@@ -1,6 +1,6 @@
 require('../esq-virtual.js');
 // Cuadros visuales del Tema 19 (CP Parte Especial): recrean los cuadros de tu temario (PDF 08-08-2026) con su texto. Colores copiados de tu fosforito.
-//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145) · p8-9 detenciones/secuestro · p10 amenazas y coacciones · p17 agresión sexual · p19 menores de 16 · p22 prostitución · p29-30 calumnias e injurias · p33 socorro · p122-123 cohecho · p126 tráfico de influencias · p107 seguridad vial · p117 prevaricación/nombramiento · p42 administración desleal/apropiación indebida · p39 hurtos y robos
+//   p5 homicidio y asesinato (arts. 138-140) · p6 delito de aborto (arts. 144-145) · p8-9 detenciones/secuestro · p10 amenazas y coacciones · p17 agresión sexual · p19 menores de 16 · p22 prostitución · p29-30 calumnias e injurias · p33 socorro · p134 prevaricación judicial · p140-141 quebrantamiento/evasión · p150 usurpación · p122-123 cohecho · p126 tráfico de influencias · p107 seguridad vial · p117 prevaricación/nombramiento · p42 administración desleal/apropiación indebida · p39 hurtos y robos
 // Uso: node prompts/herramientas/tema19/visuales-t19.js (idempotente: sustituye los anteriores marcados <!--VIS19-->). Lo usará expres/t19.js (module.exports = V).
 const fs = require('fs'), path = require('path');
 const L = require('../literal-lib.js');
@@ -182,6 +182,62 @@ v('cp', 'solicitaren de terceros dádivas', tabla('TRÁFICO DE INFLUENCIAS (cuad
   { l: 'Ofrecimiento de influencias · art. 430', c: 'c', h: [
     { p: 'Finalidad', c: 'v', t: `${D('Solicitaren de terceros dádivas, presentes o cualquier otra remuneración')}, o aceptaren ofrecimiento o promesa.` },
     { p: 'Sujeto activo', c: 'c', t: `${G('Funcionario o autoridad; particular')} (incluye personas jurídicas).` }] },
+]));
+
+
+// ───────── p134 · arts. 446-449 · PREVARICACIÓN JUDICIAL ─────────
+v('cp', 'finalidad ilegítima', tabla('PREVARICACIÓN JUDICIAL · RETARDO MALICIOSO (cuadro del temario · arts. 446 a 449; con círculo «Ex»)', ['Conducta', 'Sujeto activo'], [
+  { l: 'Prevaricación dolosa · art. 446', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Dictar sentencia o resolución INJUSTA')}. «${K('A sabiendas')}» (requiere DOLO).` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Juez o Magistrado')}.` }] },
+  { l: 'Prevaricación imprudente · art. 447', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Dictar sentencia o resolución manifiestamente INJUSTA')}, por ${D('imprudencia grave o ignorancia inexcusable')}.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Juez o Magistrado')}.` }] },
+  { l: 'Prevaricación omisiva · art. 448', c: 'c', h: [
+    { p: 'Conducta', c: 'o', t: `${D('NEGARSE a juzgar')}, sin alegar causa legal, o so pretexto de oscuridad, insuficiencia o silencio de la ley.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Juez o Magistrado')}.` }] },
+  { l: 'Retardo malicioso · art. 449', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Causar retardo MALICIOSO')} en la Administración de Justicia, provocado para conseguir ${D('cualquier finalidad ilegítima')}.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Juez, Magistrado o Secretario Judicial')}.` }] },
+]));
+
+// ───────── p140 · art. 468 · DEL QUEBRANTAMIENTO DE CONDENA ─────────
+v('cp', 'para mantener su correcto estado de funcionamiento', cols('DEL QUEBRANTAMIENTO DE CONDENA (cuadro del temario · art. 468)', [
+  { t: 'Art. 468.1', l: [`${D('QUEBRANTAR')}: condena, prisión, medida de seguridad, medida cautelar, custodia o conducción.`, `Si estuvieran ${K('privados de libertad')} → una pena; ${D('demás casos')} → otra.`] },
+  { t: 'Art. 468.2', l: [`${D('QUEBRANTAR')}: ${D('pena')} de las contempladas en el art. 48 CP; ${D('medida cautelar o de seguridad')} de la misma naturaleza impuesta en procesos criminales en los que el ofendido sea alguna de las personas del art. 173.2 CP; ${D('libertad vigilada')}.`] },
+  { t: 'Art. 468.3', l: [`${D('INUTILIZAR o PERTURBAR')} el funcionamiento normal de los ${D('dispositivos técnicos')} dispuestos para controlar el cumplimiento de penas, medidas de seguridad o cautelares.`, `${D('NO LLEVAR CONSIGO')} estos dispositivos de control.`, `${D('OMITIR')} medidas exigibles para mantener su correcto estado de funcionamiento.`] },
+]));
+
+// ───────── p141 · arts. 469-471 · QUEBRANTAMIENTO CUALIFICADO / FAVORECIMIENTO DE LA EVASIÓN ─────────
+v('cp', 'encargado de la conducción o custodia', tabla('QUEBRANTAMIENTO CUALIFICADO · FAVORECIMIENTO DE LA EVASIÓN (cuadro del temario · arts. 469 a 471)', ['Conducta', 'Sujeto activo'], [
+  { l: 'Quebrantamiento cualificado · art. 469', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('FUGARSE')} del lugar en que estén recluidos: haciendo uso de ${D('violencia o intimidación')} en las personas, o de ${D('fuerza en las cosas')}, o ${D('tomando parte en motín')}.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Sentenciados o presos')}.` }] },
+  { l: 'Favorecimiento de la evasión · art. 470', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('PROPORCIONAR la evasión')} de un condenado, preso o detenido: bien del lugar en que esté recluido, o durante su conducción.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Particular')}.` }] },
+  { l: 'Favorecimiento de la evasión · art. 471', c: 'c', h: [
+    { p: 'Conducta', c: 'o', t: `${D('PROPORCIONAR la evasión')} de un condenado, preso o detenido.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Funcionario público encargado de la conducción o custodia')} de un condenado, preso o detenido.` }] },
+]));
+
+// ───────── p150 · arts. 506-509 · USURPACIÓN DE ATRIBUCIONES ─────────
+v('cp', 'sin esperar a que se decida el correspondiente conflicto jurisdiccional', tabla('USURPACIÓN DE ATRIBUCIONES (cuadro del temario · arts. 506 a 509; con círculo «Ex»)', ['Conducta', 'Sujeto activo'], [
+  { l: 'Art. 506', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Dictar')} una disposición general, o ${D('suspender la ejecución')} de una disposición general, ${D('careciendo de las atribuciones')}.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Autoridad o funcionario público')}.` }] },
+  { l: 'Art. 507', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Arrogarse atribuciones administrativas')} de las que careciere, o ${D('impedir su legítimo ejercicio')} por quien las ostentare.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Juez o Magistrado')}.` }] },
+  { l: 'Art. 508.1', c: 'c', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Arrogarse atribuciones judiciales')}, o ${D('impedir ejecutar una resolución')} dictada por la autoridad judicial competente.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Autoridad o funcionario público')}.` }] },
+  { l: 'Art. 508.2', c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Atentar contra la independencia')} de los Jueces y Magistrados, garantizada por la Constitución, ${D('dirigiendo instrucción, orden o intimación')} relativas a causas o actuaciones que estén conociendo los Jueces o Magistrados.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Autoridad o funcionario administrativo o militar')}.` }] },
+  { l: 'Art. 509', c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Continuar procediendo')} sin esperar a que se decida el correspondiente ${D('conflicto jurisdiccional')} (salvo casos permitidos por la ley), estando legalmente requerido de inhibición.` },
+    { p: 'Sujeto activo', c: 'v', t: `${G('Juez o Magistrado, o autoridad o funcionario público')}.` }] },
 ]));
 
 module.exports = V;
