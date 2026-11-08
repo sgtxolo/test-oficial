@@ -104,6 +104,7 @@ img{max-width:100%}
 <div class="tools">
  <button class="primary" id="goto">Ir a hoy</button>
  <button id="hide" aria-pressed="false">Ocultar días libres</button>
+ <button id="sync" title="Sincronizar con tus otros dispositivos">☁ Sincronizar</button>
 </div>
 <main id="list"></main>
 <footer>Las primeras semanas, el calentamiento se completa con "Repaso inteligente" y tus fallos, porque aún no hay respuestas de hace una semana o un mes. Si un día no llegas, no hace falta que hagas nada: lo que no marques como hecho se mueve solo al siguiente día de estudio y todo el plan se desplaza. Los domingos son ligeros (unas 2 horas); el primero de cada mes es colchón.</footer>
@@ -114,7 +115,7 @@ const TAGS={NUEVO:["Tema nuevo","--c-new"],REPASO:["Repaso 1","--c-rep"],V2:["Vu
 const CORE=new Set(["NUEVO","REPASO","V2","V3","V4","V5","V6"]);
 const ROD="2027-05-24";
 const WD=["DOM","LUN","MAR","MIÉ","JUE","VIE","SÁB"],MES=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
-let done={},skip={},doneOn={},hideFree=false,dbDoc=null,openSet={};
+let done={},skip={},doneOn={},tmk={},hideFree=false,dbDoc=null,openSet={};
 let todayISO=(()=>{const n=new Date();return n.getFullYear()+"-"+String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0")})();
 DATA.forEach((o,i)=>{o.core=CORE.has(o.k);o.key=o.core?"t"+i:o.d});
 const tasks=DATA.filter(o=>o.core);
@@ -153,9 +154,10 @@ function views(){
  return {out,c};
 }
 /*DOM*/
+function mk(kind,key){tmk[kind+"|"+key]=Date.now()}
 function save(){
- try{localStorage.setItem("plan-oficial2",JSON.stringify({done,skip,doneOn}))}catch(e){}
- if(!dbDoc)return;clearTimeout(save.t);save.t=setTimeout(()=>{dbDoc.set({done,skip,doneOn}).catch(()=>{})},400);
+ try{localStorage.setItem("plan-oficial2",JSON.stringify({done,skip,doneOn,t:tmk}))}catch(e){}
+ if(!dbDoc)return;clearTimeout(save.t);save.t=setTimeout(()=>{dbDoc.set({done,skip,doneOn}).catch(()=>{})},400);syncSoon();
 }
 function banner(c){
  const b=document.getElementById("banner");
@@ -185,7 +187,7 @@ function render(){
   r.className="day"+(free?" free":"")+(v.key&&done[v.key]?" done":"")+(v.d===todayISO?" today":"")+(e.k==="EXAMEN"?" exam":"")+(v.late&&!done[v.key]?" late":"")+(v.skipped?" skipped":"");r.id="d"+v.d;
   const cb=document.createElement("input");cb.type="checkbox";cb.id="c"+v.d;cb.checked=!!(v.key&&done[v.key]);cb.setAttribute("aria-label","Hecho "+v.d);
   if(free||v.skipped)cb.style.visibility="hidden";
-  cb.onchange=()=>{const y=window.scrollY;if(cb.checked){done[v.key]=true;if(v.d>=todayISO)doneOn[v.key]=v.d}else{delete done[v.key];delete doneOn[v.key]}save();render();window.scrollTo(0,y);requestAnimationFrame(()=>window.scrollTo(0,y))};
+  cb.onchange=()=>{const y=window.scrollY;if(cb.checked){done[v.key]=true;mk("done",v.key);if(v.d>=todayISO){doneOn[v.key]=v.d;mk("doneOn",v.key)}}else{delete done[v.key];delete doneOn[v.key];mk("done",v.key);mk("doneOn",v.key)}save();render();window.scrollTo(0,y);requestAnimationFrame(()=>window.scrollTo(0,y))};
   const dt=document.createElement("div");dt.className="dt";dt.innerHTML="<b>"+d.getDate()+"</b><span>"+WD[d.getDay()]+"</span>";
   const b=document.createElement("div");b.className="body";
   let tg=TAGS[e.k]||["",""],title=e.t,note=e.n||"";
@@ -208,8 +210,8 @@ function render(){
    if(note){const n=document.createElement("div");n.className="n";n.textContent=note;b.appendChild(n)}
   }
   if(v.moved){const mv=document.createElement("div");mv.className="mv";mv.textContent="Movido desde el "+dshort(v.from);b.appendChild(mv)}
-  if(v.d===todayISO&&v.pr&&!v.skipped){const bt=document.createElement("button");bt.className="skipbtn";bt.textContent="Hoy no puedo estudiar";bt.onclick=()=>{skip[todayISO]=true;save();render()};b.appendChild(bt)}
-  if(v.skipped){const bt=document.createElement("button");bt.className="skipbtn";bt.textContent="Deshacer";bt.onclick=()=>{delete skip[v.d];save();render()};b.appendChild(bt)}
+  if(v.d===todayISO&&v.pr&&!v.skipped){const bt=document.createElement("button");bt.className="skipbtn";bt.textContent="Hoy no puedo estudiar";bt.onclick=()=>{skip[todayISO]=true;mk("skip",todayISO);save();render()};b.appendChild(bt)}
+  if(v.skipped){const bt=document.createElement("button");bt.className="skipbtn";bt.textContent="Deshacer";bt.onclick=()=>{delete skip[v.d];mk("skip",v.d);save();render()};b.appendChild(bt)}
   r.append(cb,dt,b);grp.appendChild(r);
  });
  const n=checkable.filter(o=>done[o.key]).length;
@@ -220,9 +222,9 @@ function render(){
 }
 document.getElementById("goto").onclick=()=>{let id=todayISO;if(!document.getElementById("d"+id)){id=(DATA.find(o=>o.d>=todayISO)||DATA[0]).d}const e=document.getElementById("d"+id);if(e)e.scrollIntoView({block:"center"})};
 document.getElementById("hide").onclick=e=>{hideFree=!hideFree;e.target.setAttribute("aria-pressed",hideFree);render()};
-try{const s=JSON.parse(localStorage.getItem("plan-oficial2")||"null");if(s){done=s.done||{};skip=s.skip||{};doneOn=s.doneOn||{}}}catch(e){}
+try{const s=JSON.parse(localStorage.getItem("plan-oficial2")||"null");if(s){done=s.done||{};skip=s.skip||{};doneOn=s.doneOn||{};tmk=s.t||{}}}catch(e){}
 // T8 (5 nov) y T18 (6 nov) ya estudiados: se marcan una sola vez y el plan sigue desde ahí
-try{if(!localStorage.getItem("plan-oficial2-seed1")){tasks.slice(0,2).forEach(t=>{done[t.key]=true});localStorage.setItem("plan-oficial2-seed1","1");save()}}catch(e){}
+try{if(!localStorage.getItem("plan-oficial2-seed1")){tasks.slice(0,2).forEach(t=>{done[t.key]=true;tmk["done|"+t.key]=1});localStorage.setItem("plan-oficial2-seed1","1");save()}}catch(e){}
 render();
 setTimeout(()=>document.getElementById("goto").click(),50);
 (async()=>{
@@ -235,6 +237,46 @@ setTimeout(()=>document.getElementById("goto").click(),50);
  }catch(e){}
 })();
 
+
+/* Sincronización PC ↔ móvil: mismo repositorio privado y token que Esquemas/Test (clave oficialGhCfg); gana el cambio más reciente de cada casilla */
+const GH_CFG="oficialGhCfg",GH_REPO="sgtxolo/copia-seguridad-conocimientos",GH_PATH="backups/autoestudio.json";
+const b64=x=>btoa(unescape(encodeURIComponent(x))),unb64=x=>decodeURIComponent(escape(atob(x.replace(/\s/g,""))));
+const ghCfg=()=>{try{return JSON.parse(localStorage.getItem(GH_CFG)||"{}")}catch(e){return{}}};
+const hayGh=()=>{const c=ghCfg();return !!(c.repo&&c.token)};
+function ghApi(o){const c=ghCfg();o=o||{};o.headers=Object.assign({Authorization:"Bearer "+c.token,Accept:"application/vnd.github+json"},o.headers||{});return fetch("https://api.github.com/repos/"+c.repo+"/contents/"+GH_PATH,o)}
+function mezcla(a,b){
+ const out={done:{},skip:{},doneOn:{},t:{}},ids=new Set([...Object.keys(a.t||{}),...Object.keys(b.t||{})]);
+ ["done","skip","doneOn"].forEach(k=>{Object.keys(a[k]||{}).forEach(x=>ids.add(k+"|"+x));Object.keys(b[k]||{}).forEach(x=>ids.add(k+"|"+x))});
+ ids.forEach(id=>{const i=id.indexOf("|"),k=id.slice(0,i),x=id.slice(i+1),ta=(a.t||{})[id]||0,tb=(b.t||{})[id]||0,src=tb>ta?b:a;
+  if((src[k]||{})[x]!==undefined)out[k][x]=src[k][x];else if(tb===ta&&(b[k]||{})[x]!==undefined)out[k][x]=b[k][x];
+  if(ta||tb)out.t[id]=Math.max(ta,tb)});
+ return out;
+}
+let syncBusy=false,syncT=0;
+function syncSoon(){clearTimeout(syncT);syncT=setTimeout(()=>sync(false),1500)}
+function setSyncBtn(t,tit){const b=document.getElementById("sync");if(b){b.textContent=t;b.title=tit||""}}
+async function sync(manual){
+ if(!hayGh()){if(manual){const repo=prompt("Repositorio privado (usuario/repositorio):",GH_REPO);if(!repo)return;const tok=prompt("Token de GitHub (permiso Contents: Read and write). Es el mismo que usas en Esquemas y Test:");if(!tok)return;localStorage.setItem(GH_CFG,JSON.stringify(Object.assign(ghCfg(),{repo:repo.trim(),token:tok.replace(/[\s"'`]/g,"")})))}else return}
+ if(syncBusy)return;syncBusy=true;setSyncBtn("☁ …");
+ try{
+  for(let n=0;n<3;n++){
+   const r=await ghApi({cache:"no-store"});let sha=null,rem={};
+   if(r.status!==404){if(!r.ok)throw new Error("GitHub "+r.status+(r.status===401?" (token no válido)":""));const j=await r.json();sha=j.sha;try{rem=(JSON.parse(unb64(j.content))||{}).estado||{}}catch(e){}}
+   const loc={done,skip,doneOn,t:tmk},mez=mezcla(loc,rem),cambia=JSON.stringify(mez)!==JSON.stringify(loc);
+   if(cambia){done=mez.done;skip=mez.skip;doneOn=mez.doneOn;tmk=mez.t;try{localStorage.setItem("plan-oficial2",JSON.stringify({done,skip,doneOn,t:tmk}))}catch(e){}const y=window.scrollY;render();window.scrollTo(0,y)}
+   if(JSON.stringify(mez)!==JSON.stringify(rem)){
+    const body={message:"Autoestudio: sincronización "+new Date().toISOString().slice(0,16),content:b64(JSON.stringify({v:1,ts:Date.now(),estado:mez}))};if(sha)body.sha=sha;
+    const w=await ghApi({method:"PUT",body:JSON.stringify(body)});if(w.status===409||w.status===422)continue;if(!w.ok)throw new Error("GitHub "+w.status+" al subir");
+   }
+   setSyncBtn("☁ ✓","Sincronizado "+new Date().toLocaleTimeString().slice(0,5));if(manual)alert(cambia?"Sincronizado: se han traído cambios de tu otro dispositivo":"Sincronizado");break;
+  }
+ }catch(e){setSyncBtn("☁ ⚠",String(e.message||e));if(manual)alert("No se pudo sincronizar: "+(e.message||e))}
+ finally{syncBusy=false}
+}
+document.getElementById("sync").onclick=()=>sync(true);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")sync(false)});
+setInterval(()=>{if(document.visibilityState==="visible")sync(false)},60000);
+setTimeout(()=>sync(false),800);
 
 try{if("serviceWorker" in navigator&&location.protocol.indexOf("http")===0)navigator.serviceWorker.register("service-worker.js").catch(function(){})}catch(e){}
 </script>
