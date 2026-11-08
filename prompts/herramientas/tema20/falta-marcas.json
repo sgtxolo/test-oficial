@@ -1,0 +1,723 @@
+[
+ {
+  "k": 0,
+  "j": 0,
+  "marca": "R1",
+  "cab": "Artículo 8",
+  "t": "La jurisdicción criminal es siempre improrrogable."
+ },
+ {
+  "k": 1,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 9",
+  "t": "Los Jueces y Tribunales que tengan competencia para conocer de una causa determinada, la tendrán también para todas sus incidencias, para llevar a efecto las providencias de tramitación y para la ejecución de las sentencias, sin perjuicio de lo dispuesto en el artículo 801."
+ },
+ {
+  "k": 6,
+  "j": 2,
+  "marca": "*",
+  "cab": "Artículo 14",
+  "t": "2. Para la instrucción de las causas, la Sección de Instrucción del Tribunal de Instancia del partido en que el delito se hubiere cometido, o las Secciones del Tribunal de Instancia con competencia en materia de violencia sobre la mujer o de violencia contra la infancia y la adolescencia, o el Juez Central de Instrucción respecto de los delitos que la Ley determine."
+ },
+ {
+  "k": 6,
+  "j": 3,
+  "marca": "EXOF,EXAMEN",
+  "cab": "Artículo 14",
+  "t": "3. Para el conocimiento y fallo de las causas por delitos a los que la ley señale pena privativa de libertad de duración no superior a cinco años o pena de multa cualquiera que sea su cuantía, o cualesquiera otras de distinta naturaleza, bien sean únicas, conjuntas o alternativas, siempre que la duración de estas no exceda de diez años, así como por delitos leves, sean o no incidentales, imputables a los autores de estos delitos o a otras personas, cuando la comisión del delito leve o su prueba estuviesen relacionadas con aquellos, la Sección de lo Penal del Tribunal de Instancia de la circunscripción donde el delito fue cometido, o las secciones con competencia para el enjuiciamiento en materia de violencia sobre la mujer o de violencia contra la infancia y la adolescencia, en su caso, o el Juez Central de lo Penal en el ámbito que le es propio, sin perjuicio de la competencia de la Sección de Instrucción del Tribunal de Instancia con competencia en materia de guardia del lugar de comisión del delito para dictar sentencia de conformidad, o de las secciones con competencia en la instrucción en materia de violencia sobre la mujer o de violencia contra la infancia y la adolescencia competentes, en su caso, en los términos establecidos en el artículo 801, así como de las Secciones de Instrucción de los Tribunales de Instancia competentes para dictar sentencia."
+ },
+ {
+  "k": 8,
+  "j": 0,
+  "marca": "EXOF,*",
+  "cab": "Artículo 15",
+  "t": "Cuando no conste el lugar en que se haya cometido una falta o delito, serán Jueces y Tribunales competentes en su caso para conocer de la causa o juicio:"
+ },
+ {
+  "k": 8,
+  "j": 3,
+  "marca": "*",
+  "cab": "Artículo 15",
+  "t": "3.º El de la residencia del reo presunto."
+ },
+ {
+  "k": 11,
+  "j": 1,
+  "marca": "*",
+  "cab": "Artículo 17",
+  "t": "No obstante, los delitos conexos serán investigados y enjuiciados en la misma causa cuando la investigación y la prueba en conjunto de los hechos resulten convenientes para su esclarecimiento y para la determinación de las responsabilidades procedentes salvo que suponga excesiva complejidad o dilación para el proceso."
+ },
+ {
+  "k": 13,
+  "j": 0,
+  "marca": "*,EXAMEN",
+  "cab": "Artículo 18",
+  "t": "1. Son Jueces y Tribunales competentes, por su orden, para conocer de las causas por delitos conexos:"
+ },
+ {
+  "k": 14,
+  "j": 0,
+  "marca": "EXOF",
+  "cab": "Artículo 19",
+  "t": "Podrán promover y sostener competencia:"
+ },
+ {
+  "k": 15,
+  "j": 0,
+  "marca": "EXOF",
+  "cab": "Artículo 20",
+  "t": "Son superiores jerárquicos para resolver sobre las cuestiones de competencia, en la forma que determinarán los arts. siguientes:"
+ },
+ {
+  "k": 16,
+  "j": 0,
+  "marca": "R3",
+  "cab": "Artículo 21",
+  "t": "El Tribunal Supremo no podrá formar ni promover competencias y ningún Juez, Tribunal o parte podrá promoverlas contra él."
+ },
+ {
+  "k": 16,
+  "j": 1,
+  "marca": "*",
+  "cab": "Artículo 21",
+  "t": "Cuando algún Juez o Tribunal viniere entendiendo en asunto cuyo conocimiento estuviere reservado al Tribunal Supremo, ordenará éste a aquél, de oficio, a excitación del Ministerio Fiscal o a solicitud de parte, que se abstenga de todo procedimiento y remita los antecedentes en el término de segundo día, para en su vista, resolver."
+ },
+ {
+  "k": 17,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 22",
+  "t": "Cuando dos o más Jueces de instrucción se reputen competentes para actuar en un asunto, si a la primera comunicación no se pusieren de acuerdo sobre la competencia, darán cuenta con remisión de testimonio al superior competente; y éste, en su vista, decidirá de plano y sin ulterior recurso cuál de los Jueces instructores debe actuar."
+ },
+ {
+  "k": 21,
+  "j": 3,
+  "marca": "R5",
+  "cab": "Artículo 26",
+  "t": "La declinatoria, ante el Juez o Tribunal que se repute incompetente."
+ },
+ {
+  "k": 22,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 27",
+  "t": "El Juez municipal ante quien se proponga la inhibitoria, oyendo al Fiscal cuando éste no la hubiera propuesto, resolverá en término de segundo día si procede o no el requerimiento de inhibición."
+ },
+ {
+  "k": 22,
+  "j": 1,
+  "marca": "*",
+  "cab": "Artículo 27",
+  "t": "El auto denegatorio de requerimiento es apelable en ambos efectos para ante el Juez de instrucción respectivo."
+ },
+ {
+  "k": 24,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 29",
+  "t": "El Juez municipal requerido de inhibición, oyendo al Fiscal, resolverá en término de segundo día si desiste de conocer o mantiene su competencia."
+ },
+ {
+  "k": 25,
+  "j": 0,
+  "marca": "EXOF",
+  "cab": "Artículo 30",
+  "t": "Recibidos los autos por el Juez requirente, declarará, sin más trámites, y dentro de veinticuatro horas, si insiste en la competencia o se aparta de ella."
+ },
+ {
+  "k": 27,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 32",
+  "t": "Cuando se proponga declinatoria ante un Juez municipal, resolverá éste en término de segundo día, oyendo previamente al Fiscal sobre si procede o no acordar la inhibición."
+ },
+ {
+  "k": 28,
+  "j": 0,
+  "marca": "EXOF",
+  "cab": "Artículo 33",
+  "t": "La inhibición ante los Tribunales de lo criminal se propondrá en escrito con firma de Letrado."
+ },
+ {
+  "k": 30,
+  "j": 0,
+  "marca": "R6",
+  "cab": "Artículo 35",
+  "t": "Contra el auto en que se deniegue el requerimiento de inhibición sólo habrá lugar al recurso de casación."
+ },
+ {
+  "k": 38,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 43",
+  "t": "Las competencias se decidirán por el Tribunal dentro de los tres días siguientes al en que el Ministerio Fiscal hubiese emitido dictamen, que evacuará en el término de segundo día."
+ },
+ {
+  "k": 45,
+  "j": 0,
+  "marca": "R10",
+  "cab": "Artículo 101",
+  "t": "La acción penal es pública."
+ },
+ {
+  "k": 46,
+  "j": 4,
+  "marca": "*",
+  "cab": "Artículo 102",
+  "t": "Los comprendidos en los números anteriores podrán, sin embargo, ejercitar la acción penal por delito o falta cometidos contra sus personas o bienes o contra las personas o bienes de sus cónyuges, ascendientes, descendientes, hermanos consanguíneos o uterinos y afines."
+ },
+ {
+  "k": 47,
+  "j": 0,
+  "marca": "*,EXOF",
+  "cab": "Artículo 103",
+  "t": "Tampoco podrán ejercitar acciones penales entre sí:"
+ },
+ {
+  "k": 48,
+  "j": 1,
+  "marca": "*",
+  "cab": "Artículo 104",
+  "t": "Las faltas consistentes en el anuncio por medio de la imprenta de hechos falsos o relativos a la vida privada, con el que se perjudique u ofenda a particulares, y en injurias leves sólo podrán ser perseguidas por los ofendidos o por sus legítimos representantes."
+ },
+ {
+  "k": 49,
+  "j": 1,
+  "marca": "R11",
+  "cab": "Artículo 105",
+  "t": "2. En los delitos perseguibles a instancias de la persona agraviada también podrá denunciar el Ministerio Fiscal si aquélla fuere menor de edad, persona con discapacidad necesitada de especial protección o desvalida."
+ },
+ {
+  "k": 50,
+  "j": 0,
+  "marca": "*,EXOF,EXAMEN",
+  "cab": "Artículo 106",
+  "t": "La acción penal por delito o falta que dé lugar al procedimiento de oficio no se extingue por la renuncia de la persona ofendida."
+ },
+ {
+  "k": 55,
+  "j": 1,
+  "marca": "*",
+  "cab": "Artículo 110",
+  "t": "Aun cuando las personas perjudicadas no se muestren parte en la causa, no por esto se entiende que renuncian al derecho de restitución, reparación o indemnización que a su favor puede acordarse en sentencia firme, siendo necesario que la renuncia de este derecho se haga en su caso de una manera clara y terminante."
+ },
+ {
+  "k": 56,
+  "j": 0,
+  "marca": "EXOF",
+  "cab": "Artículo 111",
+  "t": "Las acciones que nacen de un delito o falta podrán ejercitarse junta o separadamente; pero mientras estuviese pendiente la acción penal no se ejercitará la civil con separación hasta que aquélla haya sido resuelta en sentencia firme, salvo siempre lo dispuesto en los arts. 4.º, 5.º y 6.º de este Código."
+ },
+ {
+  "k": 57,
+  "j": 0,
+  "marca": "* R12",
+  "cab": "Artículo 112",
+  "t": "Ejercitada sólo la acción penal, se entenderá utilizada también la civil, a no ser que el dañado o perjudicado la renunciase o la reservase expresamente para ejercitarla después de terminado el juicio criminal, si a ello hubiere lugar."
+ },
+ {
+  "k": 57,
+  "j": 2,
+  "marca": "*",
+  "cab": "Artículo 112",
+  "t": "Si se ejercitase sólo la civil que nace de un delito de los que no pueden perseguirse sino en virtud de querella particular, se considerará extinguida desde luego la acción penal."
+ },
+ {
+  "k": 60,
+  "j": 0,
+  "marca": "EXAMEN R13",
+  "cab": "Artículo 115",
+  "t": "La acción penal se extingue por la muerte del culpable; pero en este caso subsiste la civil contra sus herederos y causahabientes, que sólo podrá ejercitarse ante la jurisdicción y por la vía de lo civil."
+ },
+ {
+  "k": 62,
+  "j": 0,
+  "marca": "R14",
+  "cab": "Artículo 117",
+  "t": "La extinción de la acción civil tampoco lleva consigo la de la penal que nazca del mismo delito o falta."
+ },
+ {
+  "k": 63,
+  "j": 3,
+  "marca": "EX",
+  "cab": "Artículo 118",
+  "t": "c) Derecho a actuar en el proceso penal para ejercer su derecho de defensa de acuerdo con lo dispuesto en la ley."
+ },
+ {
+  "k": 69,
+  "j": 5,
+  "marca": "*",
+  "cab": "Artículo 123",
+  "t": "e) Derecho a presentar una solicitud motivada para que se considere esencial un documento."
+ },
+ {
+  "k": 78,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 263",
+  "t": "La obligación impuesta en el párrafo primero del art. anterior no comprenderá a los Abogados ni a los Procuradores respecto de las instrucciones o explicaciones que recibieren de sus clientes. Tampoco comprenderá a los eclesiásticos y ministros de cultos disidentes respecto de las noticias que se les hubieren revelado en el ejercicio de las funciones de su ministerio."
+ },
+ {
+  "k": 79,
+  "j": 4,
+  "marca": "*",
+  "cab": "Artículo 263 bis",
+  "t": "Los Jefes de las Unidades Orgánicas de la Policía Judicial centrales o de ámbito provincial o sus mandos superiores darán cuenta inmediata al Ministerio Fiscal sobre las autorizaciones que hubiesen otorgado de conformidad con el apartado 1 de este artículo y, si existiese procedimiento judicial abierto, al Juez de Instrucción competente."
+ },
+ {
+  "k": 80,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 264",
+  "t": "El que por cualquier medio diferente de los mencionados tuviere conocimiento de la perpetración de algún delito de los que deben perseguirse de oficio, deberá denunciarlo al Ministerio Fiscal, al Tribunal competente o al Juez de instrucción o municipal, o funcionario de policía, sin que se entienda obligado por esto a probar los hechos denunciados ni a formalizar querella."
+ },
+ {
+  "k": 86,
+  "j": 0,
+  "marca": "EXOF,* R16",
+  "cab": "Artículo 270",
+  "t": "Todos los ciudadanos españoles, hayan sido o no ofendidos por el delito, pueden querellarse, ejercitando la acción popular establecida en el artículo 101 de esta Ley."
+ },
+ {
+  "k": 88,
+  "j": 1,
+  "marca": "EXOF",
+  "cab": "Artículo 272",
+  "t": "Si el querellado estuviere sometido por disposición especial de la Ley a determinado Tribunal, ante éste se interpondrá la querella."
+ },
+ {
+  "k": 88,
+  "j": 2,
+  "marca": "EXOF",
+  "cab": "Artículo 272",
+  "t": "Lo mismo se hará cuando fueren varios los querellados por un mismo delito o por dos o más conexos y alguno de aquéllos estuviere sometido excepcionalmente a un Tribunal que no fuere el llamado a conocer, por regla general, del delito."
+ },
+ {
+  "k": 89,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 273",
+  "t": "En los casos del artículo anterior, cuando se trate de un delito in fraganti o de los que no dejan señales permanentes de su perpetración, o en que fuere de temer fundadamente la ocultación o fuga del presunto culpable, el particular que intentare querellarse del delito podrá acudir desde luego al Juez de instrucción o municipal que estuviere más próximo o a cualquier funcionario de policía, a fin de que se practiquen las primeras diligencias necesarias para hacer constar la verdad de los hechos y para detener al delincuente."
+ },
+ {
+  "k": 91,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 275",
+  "t": "Si la querella fuese por delito que no pueda ser perseguido sino a instancia de parte, se entenderá abandonada por el que la hubiere interpuesto cuando dejare de instar el procedimiento dentro de los diez días siguientes a la notificación del auto en que el Juez o el Tribunal así lo hubiese acordado."
+ },
+ {
+  "k": 93,
+  "j": 0,
+  "marca": "R17",
+  "cab": "Artículo 277",
+  "t": "La querella se presentará siempre por medio de Procurador con poder bastante y suscrita por Letrado."
+ },
+ {
+  "k": 93,
+  "j": 7,
+  "marca": "*",
+  "cab": "Artículo 277",
+  "t": "5.º Expresión de las diligencias que se deberán practicar para la comprobación del hecho."
+ },
+ {
+  "k": 93,
+  "j": 8,
+  "marca": "*",
+  "cab": "Artículo 277",
+  "t": "6.º La petición de que se admita la querella, se practiquen las diligencias indicadas en el número anterior, se proceda a la detención y prisión del presunto culpable o a exigirle la fianza de libertad provisional, y se acuerde el embargo de sus bienes en la cantidad necesaria en los casos en que así proceda."
+ },
+ {
+  "k": 97,
+  "j": 2,
+  "marca": "*",
+  "cab": "Artículo 281",
+  "t": "2.º En los delitos de asesinato o de homicidio, el cónyuge del difunto o persona vinculada a él por una análoga relación de afectividad, los ascendientes y descendientes y sus parientes colaterales hasta el segundo grado inclusive, los herederos de la víctima y los padres, madres e hijos del delincuente."
+ },
+ {
+  "k": 97,
+  "j": 4,
+  "marca": "* R18",
+  "cab": "Artículo 281",
+  "t": "La exención de fianza no es aplicable a los extranjeros si no les correspondiere en virtud de tratados internacionales o por el principio de reciprocidad.»"
+ },
+ {
+  "k": 99,
+  "j": 4,
+  "marca": "R19",
+  "cab": "Artículo 282 bis",
+  "t": "Ningún funcionario de la Policía Judicial podrá ser obligado a actuar como agente encubierto."
+ },
+ {
+  "k": 99,
+  "j": 6,
+  "marca": "EXAMEN,*,EXOF",
+  "cab": "Artículo 282 bis",
+  "t": "4. A los efectos señalados en el apartado 1 de este artículo, se considerará como delincuencia organizada la asociación de tres o más personas para realizar, de forma permanente o reiterada, conductas que tengan como fin cometer alguno o algunos de los delitos siguientes:"
+ },
+ {
+  "k": 99,
+  "j": 8,
+  "marca": "*",
+  "cab": "Artículo 282 bis",
+  "t": "b) Delito de secuestro de personas previsto en los artículos 164 a 166 del Código Penal."
+ },
+ {
+  "k": 99,
+  "j": 15,
+  "marca": "*",
+  "cab": "Artículo 282 bis",
+  "t": "i) Delitos de tráfico de especies de flora o fauna amenazada previstos en los artículos 332 y 334 del Código Penal."
+ },
+ {
+  "k": 99,
+  "j": 21,
+  "marca": "*",
+  "cab": "Artículo 282 bis",
+  "t": "o) Delitos contra el patrimonio histórico previstos en el artículo 2.1.e de la Ley Orgánica 12/1995, de 12 de diciembre, de represión del contrabando."
+ },
+ {
+  "k": 99,
+  "j": 24,
+  "marca": "*",
+  "cab": "Artículo 282 bis",
+  "t": "6. El juez de instrucción podrá autorizar a funcionarios de la Policía Judicial para actuar bajo identidad supuesta en comunicaciones mantenidas en canales cerrados de comunicación con el fin de esclarecer alguno de los delitos a los que se refiere el apartado 4 de este artículo o cualquier delito de los previstos en el artículo 588 ter a."
+ },
+ {
+  "k": 100,
+  "j": 0,
+  "marca": "EXOF",
+  "cab": "Artículo 283",
+  "t": "Constituirán la Policía judicial y serán auxiliares de los Jueces y Tribunales competentes en materia penal y del Ministerio fiscal, quedando obligados a seguir las instrucciones que de aquellas autoridades reciban a efectos de la investigación de los delitos y persecución de los delincuentes:"
+ },
+ {
+  "k": 100,
+  "j": 4,
+  "marca": "EXOF",
+  "cab": "Artículo 283",
+  "t": "Cuarto. Los Jefes, Oficiales e individuos de la Guardia Civil o de cualquier otra fuerza destinada a la persecución de malhechores."
+ },
+ {
+  "k": 110,
+  "j": 0,
+  "marca": "R20",
+  "cab": "Artículo 293",
+  "t": "El atestado será firmado por el que lo haya extendido, y si usare sello lo estampará con su rúbrica en todas las hojas."
+ },
+ {
+  "k": 114,
+  "j": 1,
+  "marca": "R22",
+  "cab": "Artículo 297",
+  "t": "Las demás declaraciones que prestaren deberán ser firmadas, y tendrán el valor de declaraciones testificales en cuanto se refieran a hechos de conocimiento propio."
+ },
+ {
+  "k": 115,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 298",
+  "t": "Los Jueces de instrucción y los Fiscales calificarán en un registro reservado el comportamiento de los funcionarios que bajo su inspección prestan servicios de Policía judicial; y cada semestre, con referencia a dicho registro, comunicarán a los superiores de cada uno de aquéllos, para los efectos a que hubiere lugar, la calificación razonada de su comportamiento."
+ },
+ {
+  "k": 115,
+  "j": 1,
+  "marca": "*",
+  "cab": "Artículo 298",
+  "t": "Cuando los funcionarios de Policía judicial que hubieren de ser corregidos disciplinariamente con arreglo a esta Ley fuesen de categoría superior a la de la Autoridad judicial o fiscal que entendiesen en las diligencias en que se hubiere cometido la falta, se abstendrán éstos de imponer por sí mismos la corrección, limitándose a poner lo ocurrido en conocimiento del jefe inmediato del que debiere ser corregido."
+ },
+ {
+  "k": 124,
+  "j": 2,
+  "marca": "*",
+  "cab": "Artículo 334",
+  "t": "La persona afectada por la incautación podrá recurrir en cualquier momento la medida ante el Juez de Instrucción. Este recurso no requerirá de la intervención de abogado cuando sea presentado por terceras personas diferentes del imputado. El recurso se entenderá interpuesto cuando la persona afectada por la medida o un familiar suyo mayor de edad hubieran expresado su disconformidad en el momento de la misma."
+ },
+ {
+  "k": 131,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 341",
+  "t": "No habiendo testigos de conocimiento, si el estado del cadáver lo permitiere, se expondrá al público antes de practicarse la autopsia, por tiempo a lo menos de veinticuatro horas, expresando en un cartel, que se fijará a la puerta del depósito de cadáveres, el sitio, hora y día en que aquél se hubiese hallado y el Juez que estuviese instruyendo el sumario, a fin de que quien tenga algún dato que pueda contribuir al reconocimiento del cadáver o al esclarecimiento del delito y de sus circunstancias lo comunique al Juez instructor."
+ },
+ {
+  "k": 134,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 344",
+  "t": "Con el nombre de Médico forense habrá en cada Juzgado de instrucción un facultativo encargado de auxiliar a la administración de justicia en todos los casos y actuaciones en que sea necesaria o conveniente la intervención y servicios de su profesión en cualquier punto de la demarcación judicial."
+ },
+ {
+  "k": 157,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 367",
+  "t": "En ningún caso admitirá el Juez durante el sumario reclamaciones ni tercerías que tengan por objeto la devolución de los efectos que constituyen el cuerpo del delito, cualquiera que sea su clase y la persona que los reclame."
+ },
+ {
+  "k": 158,
+  "j": 0,
+  "marca": "R23",
+  "cab": "Artículo 367 bis",
+  "t": "Tendrán la consideración de efectos judiciales, en el orden penal, todos aquellos bienes puestos a disposición judicial, embargados, incautados o aprehendidos en el curso de un procedimiento penal."
+ },
+ {
+  "k": 160,
+  "j": 2,
+  "marca": "*",
+  "cab": "Artículo 367 quinquies",
+  "t": "b) La realización por medio de persona o entidad especializada."
+ },
+ {
+  "k": 160,
+  "j": 4,
+  "marca": "EXOF",
+  "cab": "Artículo 367 quinquies",
+  "t": "2. Podrá entregarse el efecto judicial a entidades sin ánimo de lucro o a las Administraciones públicas cuando sea de ínfimo valor o se prevea que la realización por medio de persona o entidad especializada o por medio de subasta pública será antieconómica."
+ },
+ {
+  "k": 165,
+  "j": 1,
+  "marca": "*",
+  "cab": "Artículo 370",
+  "t": "Cuando fueren varios los que hubieren de ser reconocidos por una misma persona, podrá hacerse el reconocimiento de todos en un solo acto."
+ },
+ {
+  "k": 172,
+  "j": 2,
+  "marca": "*",
+  "cab": "Artículo 377",
+  "t": "Los que los dieren no contraerán responsabilidad alguna, salvo en el caso de dolo o negligencia grave."
+ },
+ {
+  "k": 178,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 383",
+  "t": "Si la demencia sobreviniera después de cometido el delito, concluso que sea el sumario se mandará archivar la causa por el Tribunal competente hasta que el procesado recobre la salud, disponiéndose además respecto de éste lo que el Código Penal prescribe para los que ejecutan el hecho en estado de demencia."
+ },
+ {
+  "k": 179,
+  "j": 0,
+  "marca": "EX",
+  "cab": "Artículo 384",
+  "t": "Desde que resultare del sumario algún indicio racional de criminalidad contra determinada persona, se dictará auto declarándola procesada y mandando que se entiendan con ella las diligencias en la forma y del modo dispuesto en este título y en los demás de esta Ley."
+ },
+ {
+  "k": 184,
+  "j": 0,
+  "marca": "R27",
+  "cab": "Artículo 489",
+  "t": "Ningún español ni extranjero podrá ser detenido sino en los casos y en la forma que las leyes prescriban."
+ },
+ {
+  "k": 190,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 495",
+  "t": "No se podrá detener por la presunta comisión de delitos leves, a no ser que el presunto reo no tuviese domicilio conocido ni diese fianza bastante, a juicio de la autoridad o agente que intente detenerle."
+ },
+ {
+  "k": 191,
+  "j": 0,
+  "marca": "EX,*",
+  "cab": "Artículo 496",
+  "t": "El particular, Autoridad o agente de Policía judicial que detuviere a una persona en virtud de lo dispuesto en los precedentes artículos, deberá ponerla en libertad o entregarla al Juez más próximo al lugar en que hubiere hecho la detención dentro de las veinticuatro horas siguientes al acto de la misma."
+ },
+ {
+  "k": 196,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 501",
+  "t": "El auto elevando la detención a prisión o dejándola sin efecto se pondrá en conocimiento del Ministerio Fiscal, y se notificará al querellante particular, si lo hubiere, y al procesado, al cual se le hará saber asimismo el derecho que le asiste para pedir de palabra o por escrito la reposición del auto, consignándose en la notificación las manifestaciones que hiciere."
+ },
+ {
+  "k": 197,
+  "j": 0,
+  "marca": "EX",
+  "cab": "Artículo 520",
+  "t": "1. La detención y la prisión provisional deberán practicarse en la forma que menos perjudique al detenido o preso en su persona, reputación y patrimonio. Quienes acuerden la medida y los encargados de practicarla así como de los traslados ulteriores, velarán por los derechos constitucionales al honor, intimidad e imagen de aquéllos, con respeto al derecho fundamental a la libertad de información."
+ },
+ {
+  "k": 197,
+  "j": 4,
+  "marca": "*",
+  "cab": "Artículo 520",
+  "t": "a) Derecho a guardar silencio no declarando si no quiere, a no contestar alguna o algunas de las preguntas que le formulen, o a manifestar que sólo declarará ante el juez."
+ },
+ {
+  "k": 197,
+  "j": 6,
+  "marca": "*",
+  "cab": "Artículo 520",
+  "t": "c) Derecho a designar abogado, sin perjuicio de lo dispuesto en el apartado 1.a) del artículo 527 y a ser asistido por él sin demora injustificada. En caso de que, debido a la lejanía geográfica no sea posible de inmediato la asistencia de letrado, se facilitará al detenido comunicación telefónica o por videoconferencia con aquél, salvo que dicha comunicación sea imposible."
+ },
+ {
+  "k": 197,
+  "j": 14,
+  "marca": "*",
+  "cab": "Artículo 520",
+  "t": "Asimismo, se le informará del plazo máximo legal de duración de la detención hasta la puesta a disposición de la autoridad judicial y del procedimiento por medio del cual puede impugnar la legalidad de su detención."
+ },
+ {
+  "k": 197,
+  "j": 18,
+  "marca": "EXOF",
+  "cab": "Artículo 520",
+  "t": "3. Si el detenido fuere extranjero, se comunicará al cónsul de su país el hecho de su detención y el lugar de custodia y se le permitirá la comunicación con la autoridad consular. En caso de que el detenido tenga dos o más nacionalidades, podrá elegir a qué autoridades consulares debe informarse de que se encuentra privado de libertad y con quién desea comunicarse."
+ },
+ {
+  "k": 197,
+  "j": 28,
+  "marca": "*",
+  "cab": "Artículo 520",
+  "t": "a) Solicitar, en su caso, que se informe al detenido o preso de los derechos establecidos en el apartado 2 y que se proceda, si fuera necesario, al reconocimiento médico señalado en su letra i)."
+ },
+ {
+  "k": 197,
+  "j": 30,
+  "marca": "*",
+  "cab": "Artículo 520",
+  "t": "c) Informar al detenido de las consecuencias de la prestación o denegación de consentimiento a la práctica de diligencias que se le soliciten."
+ },
+ {
+  "k": 197,
+  "j": 33,
+  "marca": "*",
+  "cab": "Artículo 520",
+  "t": "7. Las comunicaciones entre el investigado o encausado y su abogado tendrán carácter confidencial en los mismos términos y con las mismas excepciones previstas en el apartado 4 del artículo 118."
+ },
+ {
+  "k": 200,
+  "j": 2,
+  "marca": "*",
+  "cab": "Artículo 521",
+  "t": "Para esta separación se tendrá en cuenta el grado de educación del detenido, su edad y la naturaleza del delito que se le impute."
+ },
+ {
+  "k": 204,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 525",
+  "t": "No se adoptará contra el detenido o preso ninguna medida extraordinaria de seguridad sino en caso de desobediencia, de violencia o de rebelión, o cuando haya intentado o hecho preparativos para fugarse."
+ },
+ {
+  "k": 206,
+  "j": 0,
+  "marca": "EX",
+  "cab": "Artículo 527",
+  "t": "1. En los supuestos del artículo 509, el detenido o preso podrá ser privado de los siguientes derechos si así lo justifican las circunstancias del caso:"
+ },
+ {
+  "k": 211,
+  "j": 0,
+  "marca": "EX,EXAMEN",
+  "cab": "Artículo 547",
+  "t": "Se reputarán edificios o lugares públicos para la observancia de lo dispuesto en este capítulo:"
+ },
+ {
+  "k": 213,
+  "j": 0,
+  "marca": "R33",
+  "cab": "Artículo 549",
+  "t": "Para la entrada y registro en los templos y demás lugares religiosos bastará pasar recado de atención a las personas a cuyo cargo estuvieren."
+ },
+ {
+  "k": 218,
+  "j": 4,
+  "marca": "*",
+  "cab": "Artículo 554",
+  "t": "4.º Tratándose de personas jurídicas imputadas, el espacio físico que constituya el centro de dirección de las mismas, ya se trate de su domicilio social o de un establecimiento dependiente, o aquellos otros lugares en que se custodien documentos u otros soportes de su vida diaria que quedan reservados al conocimiento de terceros."
+ },
+ {
+  "k": 243,
+  "j": 4,
+  "marca": "*",
+  "cab": "Artículo 579",
+  "t": "2. El juez podrá acordar, en resolución motivada, por un plazo de hasta tres meses, prorrogable por iguales o inferiores períodos hasta un máximo de dieciocho meses, la observación de las comunicaciones postales y telegráficas del investigado, así como de las comunicaciones de las que se sirva para la realización de sus fines delictivos."
+ },
+ {
+  "k": 279,
+  "j": 2,
+  "marca": "*",
+  "cab": "Artículo 588 quater b",
+  "t": "a) Que los hechos que estén siendo investigados sean constitutivos de alguno de los siguientes delitos:"
+ },
+ {
+  "k": 291,
+  "j": 0,
+  "marca": "EXAMEN R36",
+  "cab": "Artículo 588 septies c",
+  "t": "La medida tendrá una duración máxima de un mes, prorrogable por iguales períodos hasta un máximo de tres meses."
+ },
+ {
+  "k": 293,
+  "j": 0,
+  "marca": "R37",
+  "cab": "Artículo 757",
+  "t": "Sin perjuicio de lo establecido para los procesos especiales, el procedimiento regulado en este Título se aplicará al enjuiciamiento de los delitos castigados con pena privativa de libertad no superior a nueve años, o bien con cualesquiera otras penas de distinta naturaleza bien sean únicas, conjuntas o alternativas, cualquiera que sea su cuantía o duración."
+ },
+ {
+  "k": 300,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 764",
+  "t": "1. Asimismo, el Juez o Tribunal podrá adoptar medidas cautelares para el aseguramiento de las responsabilidades pecuniarias, incluidas las costas. Tales medidas se acordarán mediante auto y se formalizarán en pieza separada."
+ },
+ {
+  "k": 308,
+  "j": 1,
+  "marca": "*",
+  "cab": "Artículo 772",
+  "t": "2. La Policía extenderá el atestado de acuerdo con las normas generales de esta Ley y lo entregará al Juzgado competente, pondrá a su disposición a los detenidos, si los hubiere, y remitirá copia al Ministerio Fiscal."
+ },
+ {
+  "k": 310,
+  "j": 0,
+  "marca": "EX",
+  "cab": "Artículo 795",
+  "t": "1. Sin perjuicio de lo establecido para los demás procesos especiales, el procedimiento regulado en este Título se aplicará a la instrucción y al enjuiciamiento de delitos castigados con pena privativa de libertad que no exceda de cinco años, o con cualesquiera otras penas, bien sean únicas, conjuntas o alternativas, cuya duración no exceda de diez años, cualquiera que sea su cuantía, siempre que el proceso penal se incoe en virtud de un atestado policial y que la Policía Judicial haya detenido a una persona y la haya puesto a disposición del Juzgado de guardia o que, aun sin detenerla, la haya citado para comparecer ante el Juzgado de guardia por tener la calidad de denunciado en el atestado policial y, además, concurra cualquiera de las circunstancias siguientes:"
+ },
+ {
+  "k": 311,
+  "j": 0,
+  "marca": "EX",
+  "cab": "Artículo 796",
+  "t": "1. Sin perjuicio de cuanto se establece en el Título III del Libro II y de las previsiones del capítulo II del Título II de este Libro, la Policía Judicial deberá practicar en el tiempo imprescindible y, en todo caso, durante el tiempo de la detención, las siguientes diligencias:"
+ },
+ {
+  "k": 313,
+  "j": 0,
+  "marca": "*",
+  "cab": "Artículo 797 bis",
+  "t": "1. En el supuesto de que la competencia corresponda al Juzgado de Violencia sobre la Mujer, las diligencias y resoluciones señaladas en los artículos anteriores deberán ser practicadas y adoptadas durante las horas de audiencia."
+ },
+ {
+  "k": 314,
+  "j": 1,
+  "marca": "EX",
+  "cab": "Artículo 798",
+  "t": "2. El Juez de guardia dictará resolución con alguno de estos contenidos:"
+ },
+ {
+  "k": 317,
+  "j": 0,
+  "marca": "EX",
+  "cab": "Artículo 963",
+  "t": "1. Recibido el atestado conforme a lo previsto en el artículo anterior, si el juez estima procedente la incoación del juicio, adoptará alguna de las siguientes resoluciones:"
+ },
+ {
+  "k": 317,
+  "j": 7,
+  "marca": "*",
+  "cab": "Artículo 963",
+  "t": "2. Para acordar la celebración inmediata del juicio, será necesario que el asunto le corresponda al Juzgado de guardia en virtud de las normas de competencia y de reparto."
+ },
+ {
+  "k": 321,
+  "j": 1,
+  "marca": "EX",
+  "cab": "Artículo 967",
+  "t": "Sin perjuicio de lo dispuesto en el párrafo anterior, para el enjuiciamiento de delitos leves que lleven aparejada pena de multa cuyo límite máximo sea de al menos seis meses, se aplicarán las reglas generales de defensa y representación."
+ }
+]
