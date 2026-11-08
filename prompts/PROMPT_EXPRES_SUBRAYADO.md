@@ -9,6 +9,7 @@ Si el usuario me pasa este prompt (con `PROMPT_PREGUNTAS_EXAMINADOR.md`) y solo 
 - **No se borra ninguna pregunta** (la clase 4 de «sin sitio» se deja y se lista con ids al final).
 - Recortes dudosos → miro la imagen yo mismo y decido (hojas de contacto, `lineas-img.py`, `ajustar-cortes.py`); lo que no pueda comprobar lo digo al final.
 - Solo paro si falta un archivo que no encuentro en ninguna ruta; en ese caso hago todo lo demás y lo comunico en el informe.
+- **No paro a medias ni pregunto «¿sigo?»** (ni con la caja de siguiente paso): hago toda la cadena hasta «preguntas sin botón = n/n» en la misma ejecución; que sea largo no es motivo para parar ni para dejar fases «para otra sesión».
 - Informe final en español: nº de piezas, recortadas vs. enteras, preguntas con botón (n/n), ESQ/tachados, y **lo no probado** (impresión real, móvil).
 
 ## Qué es la app
