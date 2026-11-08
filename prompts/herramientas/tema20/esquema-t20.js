@@ -55,10 +55,10 @@ cierraArt();
 const hCP = h;
 
 // ---- fichas R (pregunta → respuesta), págs. 191-196 de mi PDF
-const gruposR = [['RECUERDA del temario · Ley de Enjuiciamiento Criminal (R1 a R10)', r => r.n <= 10], ['RECUERDA del temario · Ley de Enjuiciamiento Criminal (R11 a R20)', r => r.n > 10 && r.n <= 20], ['RECUERDA del temario · Ley de Enjuiciamiento Criminal (R21 a R29)', r => r.n > 20]];
+const gruposR = [['RECUERDA del temario · Ley de Enjuiciamiento Criminal (R1 a R10)', r => r.n <= 10], ['RECUERDA del temario · Ley de Enjuiciamiento Criminal (R11 a R20)', r => r.n > 10 && r.n <= 20], ['RECUERDA del temario · Ley de Enjuiciamiento Criminal (R21 a R30)', r => r.n > 20 && r.n <= 30], ['RECUERDA del temario · Ley de Enjuiciamiento Criminal (R31 a R38)', r => r.n > 30]];
 const fich = r => { const [p1, p2] = r.p.split(' / '), [r1, r2] = r.r.split(' / ');
   return `<p data-r="R${r.n}"><b>R${r.n}</b> · <i>Ley de Enjuiciamiento Criminal.</i> ${esc(p1)} <b>→</b> <mark class="m-resp">${esc(r1)}</mark>${p2 ? ` ${esc(p2)} <b>→</b> <mark class="m-resp">${esc(r2)}</mark>` : ''}</p>`; };
-const hREC = `<div class="bloque-titulo">RECUERDA DEL TEMARIO — fichas R1 a R29 (pregunta → respuesta), tal como vienen en las últimas páginas de tu temario</div>`
+const hREC = `<div class="bloque-titulo">RECUERDA DEL TEMARIO — fichas R1 a R38 (pregunta → respuesta), tal como vienen en las últimas páginas de tu temario</div>`
   + gruposR.map(([t, f]) => `<div class="articulo"><div class="articulo-head">${esc(t)}</div><div class="articulo-body"><div class="txt">${RR.filter(f).map(fich).join('')}</div></div></div>`).join('');
 
 // ---- insertar en esquemas.html entre /* T20_BEGIN */ y /* T20_END */ (tras T17_END)
