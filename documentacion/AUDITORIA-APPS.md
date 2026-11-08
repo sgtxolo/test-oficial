@@ -7,16 +7,16 @@ Generado por `prompts/herramientas/auditoria-apps.js` (solo lectura).
 
 ## Avisos
 - 1 archivos de datos no están en APP_SHELL: esquemas-datos/citas-manual-t10.js
-- 85 explicaciones con restos de importación («TEST n», «He analizado…»)
-- 289 preguntas repetidas (mismo enunciado y misma respuesta) dentro de un mismo tema
-- 1979 preguntas sin norma en lila (ref-norma) en la explicación (ver tabla por tema)
+- 84 explicaciones con restos de importación («TEST n», «He analizado…»)
+- 290 preguntas repetidas (mismo enunciado y misma respuesta) dentro de un mismo tema
+- 1934 preguntas sin norma en lila (ref-norma) en la explicación (ver tabla por tema)
 - 164 preguntas IA cuya respuesta correcta es la opción más larga (regla del examinador: no debe serlo)
 
 ## Datos
 - Sintaxis comprobada: 54 scripts inline y 170 archivos .js
-- Caché del service worker: oposicion-cache-v461 · 193 archivos en APP_SHELL
+- Caché del service worker: oposicion-cache-v463 · 193 archivos en APP_SHELL
 - Preguntas IA leídas de los bloques «seed»: 9386
-- Test de conocimientos: 16340 preguntas en 27 temas
+- Test de conocimientos: 16338 preguntas en 27 temas
 
 ## Por tema
 | Tema | Preguntas | Oficiales | IA | Sin norma lila | Sin literal | Restos importación | Repetidas | % en mapa esquema | Exprés | Subrayado (piezas) | Preguntas enlazadas al subrayado |
@@ -42,9 +42,9 @@ Generado por `prompts/herramientas/auditoria-apps.js` (solo lectura).
 | T19 | 335 | 274 | 61 | 43 | 211 | 0 | 4 | 0% | — | — | — |
 | T20 | 217 | 217 | 0 | 186 | 217 | 9 | 0 | 0% | — | — | — |
 | T21 | 248 | 248 | 0 | 247 | 248 | 12 | 0 | 0% | — | — | — |
-| T22 | 203 | 203 | 0 | 116 | 203 | 4 | 0 | 0% | — | — | — |
-| T23 | 182 | 132 | 50 | 123 | 182 | 0 | 1 | 0% | — | — | — |
+| T22 | 201 | 201 | 0 | 95 | 158 | 3 | 0 | 0% | — | — | — |
+| T23 | 182 | 132 | 50 | 95 | 104 | 0 | 2 | 0% | — | — | — |
 | T24 | 208 | 208 | 0 | 208 | 208 | 5 | 0 | 0% | — | — | — |
 | T25 | 177 | 127 | 50 | 118 | 177 | 1 | 7 | 0% | — | — | — |
-| T26 | 206 | 206 | 0 | 168 | 206 | 6 | 1 | 0% | — | — | — |
+| T26 | 206 | 206 | 0 | 172 | 206 | 6 | 1 | 0% | — | — | — |
 | T27 | 217 | 217 | 0 | 217 | 217 | 6 | 0 | 0% | — | — | — |

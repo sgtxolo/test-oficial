@@ -53,7 +53,7 @@ h2{font-family:var(--display);font-size:1.5rem;font-weight:600;margin:26px 0 8px
 .day.done .t{text-decoration:line-through;color:var(--muted)}
 .day.free{background:transparent;padding-block:6px}
 .day.free .t{color:var(--muted)}
-.day input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--accent)}
+.day input{width:26px;height:26px;margin:0;touch-action:manipulation;accent-color:var(--accent)}
 .dt{font-family:var(--display);text-align:center;line-height:1}
 .dt b{display:block;font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums}
 .dt span{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
@@ -114,7 +114,7 @@ const TAGS={NUEVO:["Tema nuevo","--c-new"],REPASO:["Repaso 1","--c-rep"],V2:["Vu
 const CORE=new Set(["NUEVO","REPASO","V2","V3","V4","V5","V6"]);
 const ROD="2027-05-24";
 const WD=["DOM","LUN","MAR","MIÉ","JUE","VIE","SÁB"],MES=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
-let done={},skip={},hideFree=false,dbDoc=null,openSet={};
+let done={},skip={},doneOn={},hideFree=false,dbDoc=null,openSet={};
 let todayISO=(()=>{const n=new Date();return n.getFullYear()+"-"+String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0")})();
 DATA.forEach((o,i)=>{o.core=CORE.has(o.k);o.key=o.core?"t"+i:o.d});
 const tasks=DATA.filter(o=>o.core);
@@ -127,7 +127,8 @@ function fmt(m){const h=Math.floor(m/60),r=m%60;return h?(h+" h"+(r?" "+r+" min"
 function dshort(d){const x=new Date(d+"T12:00:00");return x.getDate()+" "+MES[x.getMonth()].slice(0,3).toLowerCase()}
 function compute(){
  const pending=tasks.filter(t=>!done[t.key]);
- let slots=prim.filter(o=>o.d>=todayISO&&!skip[o.d]).map(o=>o.d);
+ const fijos=new Set(Object.values(doneOn).filter(d=>d>=todayISO));
+ let slots=prim.filter(o=>o.d>=todayISO&&!skip[o.d]&&!fijos.has(o.d)).map(o=>o.d);
  if(pending.length>slots.length){
   const ex=DATA.filter(o=>o.k==="COLCHON"&&o.d>=todayISO).map(o=>o.d);
   slots=slots.concat(ex).sort();
@@ -142,6 +143,8 @@ function views(){
   const d=o.d,pr=isPrimDate(o);
   if(d<todayISO){out.push({d,e:o,key:o.key,late:o.core&&!done[o.key]});return}
   if(skip[d]&&pr){out.push({d,e:o,skipped:true,pr});return}
+  const dk=Object.keys(doneOn).find(k=>doneOn[k]===d&&done[k]);
+  if(dk&&d>=todayISO){const tt=tasks.find(x=>x.key===dk);if(tt){out.push({d,e:tt,key:tt.key,moved:tt.d!==d,from:tt.d,pr});return}}
   const t=c.assign[d];
   if(t){out.push({d,e:t,key:t.key,moved:t.d!==d,from:t.d,pr});return}
   if(pr){out.push({d,e:SLACK,key:d,slack:true,pr});return}
@@ -151,8 +154,8 @@ function views(){
 }
 /*DOM*/
 function save(){
- try{localStorage.setItem("plan-oficial2",JSON.stringify({done,skip}))}catch(e){}
- if(!dbDoc)return;clearTimeout(save.t);save.t=setTimeout(()=>{dbDoc.set({done,skip}).catch(()=>{})},400);
+ try{localStorage.setItem("plan-oficial2",JSON.stringify({done,skip,doneOn}))}catch(e){}
+ if(!dbDoc)return;clearTimeout(save.t);save.t=setTimeout(()=>{dbDoc.set({done,skip,doneOn}).catch(()=>{})},400);
 }
 function banner(c){
  const b=document.getElementById("banner");
@@ -182,7 +185,7 @@ function render(){
   r.className="day"+(free?" free":"")+(v.key&&done[v.key]?" done":"")+(v.d===todayISO?" today":"")+(e.k==="EXAMEN"?" exam":"")+(v.late&&!done[v.key]?" late":"")+(v.skipped?" skipped":"");r.id="d"+v.d;
   const cb=document.createElement("input");cb.type="checkbox";cb.id="c"+v.d;cb.checked=!!(v.key&&done[v.key]);cb.setAttribute("aria-label","Hecho "+v.d);
   if(free||v.skipped)cb.style.visibility="hidden";
-  cb.onchange=()=>{if(cb.checked)done[v.key]=true;else delete done[v.key];save();render()};
+  cb.onchange=()=>{const y=window.scrollY;if(cb.checked){done[v.key]=true;if(v.d>=todayISO)doneOn[v.key]=v.d}else{delete done[v.key];delete doneOn[v.key]}save();render();window.scrollTo(0,y);requestAnimationFrame(()=>window.scrollTo(0,y))};
   const dt=document.createElement("div");dt.className="dt";dt.innerHTML="<b>"+d.getDate()+"</b><span>"+WD[d.getDay()]+"</span>";
   const b=document.createElement("div");b.className="body";
   let tg=TAGS[e.k]||["",""],title=e.t,note=e.n||"";
@@ -217,7 +220,9 @@ function render(){
 }
 document.getElementById("goto").onclick=()=>{let id=todayISO;if(!document.getElementById("d"+id)){id=(DATA.find(o=>o.d>=todayISO)||DATA[0]).d}const e=document.getElementById("d"+id);if(e)e.scrollIntoView({block:"center"})};
 document.getElementById("hide").onclick=e=>{hideFree=!hideFree;e.target.setAttribute("aria-pressed",hideFree);render()};
-try{const s=JSON.parse(localStorage.getItem("plan-oficial2")||"null");if(s){done=s.done||{};skip=s.skip||{}}}catch(e){}
+try{const s=JSON.parse(localStorage.getItem("plan-oficial2")||"null");if(s){done=s.done||{};skip=s.skip||{};doneOn=s.doneOn||{}}}catch(e){}
+// T8 (5 nov) y T18 (6 nov) ya estudiados: se marcan una sola vez y el plan sigue desde ahí
+try{if(!localStorage.getItem("plan-oficial2-seed1")){tasks.slice(0,2).forEach(t=>{done[t.key]=true});localStorage.setItem("plan-oficial2-seed1","1");save()}}catch(e){}
 render();
 setTimeout(()=>document.getElementById("goto").click(),50);
 (async()=>{
@@ -225,7 +230,7 @@ setTimeout(()=>document.getElementById("goto").click(),50);
   const db=await claude.use("db");if(!db)return;
   dbDoc=db.doc("progress/plan2");
   const snap=await dbDoc.get();
-  if(snap.exists&&snap.data()){const s=snap.data();done=Object.assign({},s.done||{},done);skip=Object.assign({},s.skip||{},skip);render()}
+  if(snap.exists&&snap.data()){const s=snap.data();done=Object.assign({},s.done||{},done);skip=Object.assign({},s.skip||{},skip);doneOn=Object.assign({},s.doneOn||{},doneOn);try{if(!localStorage.getItem("plan-oficial2-seed1")){tasks.slice(0,2).forEach(t=>{done[t.key]=true});localStorage.setItem("plan-oficial2-seed1","1");save()}}catch(e){}render()}
   else if(Object.keys(done).length||Object.keys(skip).length)dbDoc.set({done,skip}).catch(()=>{});
  }catch(e){}
 })();

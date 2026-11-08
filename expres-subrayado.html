@@ -900,8 +900,8 @@ function mHTML(m) {
   if (m.k === 'circ') return '<ellipse cx="' + (m.x + m.w / 2) + '" cy="' + (m.y + m.h / 2) + '" rx="' + m.w / 2 + '" ry="' + m.h / 2 + '" fill="none" stroke="' + c + '" stroke-width="' + w + '"/>';
   if (m.k === 'u' || m.k === 's' || m.k === 'line') return '<line x1="' + m.x1 + '" y1="' + m.y1 + '" x2="' + m.x2 + '" y2="' + m.y2 + '" stroke="' + c + '" stroke-width="' + w + '" stroke-linecap="round"/>';
   if (m.k === 'arrow') {
-    const a = Math.atan2(m.y2 - m.y1, m.x2 - m.x1), L = 26, p1 = [m.x2 - L * Math.cos(a - .42), m.y2 - L * Math.sin(a - .42)], p2 = [m.x2 - L * Math.cos(a + .42), m.y2 - L * Math.sin(a + .42)];
-    return '<line x1="' + m.x1 + '" y1="' + m.y1 + '" x2="' + m.x2 + '" y2="' + m.y2 + '" stroke="' + c + '" stroke-width="' + w + '" stroke-linecap="round"/><polygon points="' + m.x2 + ',' + m.y2 + ' ' + p1.join(',') + ' ' + p2.join(',') + '" fill="' + c + '"/>';
+    const a = Math.atan2(m.y2 - m.y1, m.x2 - m.x1), L = 15, wa = Math.min(w, 2.5), p1 = [m.x2 - L * Math.cos(a - .38), m.y2 - L * Math.sin(a - .38)], p2 = [m.x2 - L * Math.cos(a + .38), m.y2 - L * Math.sin(a + .38)];
+    return '<line x1="' + m.x1 + '" y1="' + m.y1 + '" x2="' + m.x2 + '" y2="' + m.y2 + '" stroke="' + c + '" stroke-width="' + wa + '" stroke-linecap="round"/><polygon points="' + m.x2 + ',' + m.y2 + ' ' + p1.join(',') + ' ' + p2.join(',') + '" fill="' + c + '"/>';
   }
   if (m.k === 'pen') return '<polyline points="' + m.p.map(a => a.join(',')).join(' ') + '" fill="none" stroke="' + c + '" stroke-width="' + w + '" stroke-linecap="round" stroke-linejoin="round"/>';
   if (m.k === 'mkr') return '<polyline points="' + m.p.map(a => a.join(',')).join(' ') + '" fill="none" stroke="' + c + '" stroke-opacity=".45" stroke-width="' + w + '" stroke-linecap="round" stroke-linejoin="round" style="mix-blend-mode:multiply"/>';
