@@ -105,6 +105,7 @@ img{max-width:100%}
  <button class="primary" id="goto">Ir a hoy</button>
  <button id="hide" aria-pressed="false">Ocultar días libres</button>
  <button id="sync" title="Sincronizar con tus otros dispositivos">☁ Sincronizar</button>
+ <button id="rehacer" title="Deja hechos solo T8, T18 y los días 7 y 8, y recoloca todo desde T19 (también en la nube)">↺ Rehacer desde T19</button>
 </div>
 <main id="list"></main>
 <footer>Las primeras semanas, el calentamiento se completa con "Repaso inteligente" y tus fallos, porque aún no hay respuestas de hace una semana o un mes. Si un día no llegas, no hace falta que hagas nada: lo que no marques como hecho se mueve solo al siguiente día de estudio y todo el plan se desplaza. Los domingos son ligeros (unas 2 horas); el primero de cada mes es colchón.</footer>
@@ -274,6 +275,13 @@ async function sync(manual){
  finally{syncBusy=false}
 }
 document.getElementById("sync").onclick=()=>sync(true);
+document.getElementById("rehacer").onclick=()=>{
+ if(!confirm("Se dejarán como hechos solo T8, T18 y los días 7 y 8 de noviembre; lo demás quedará pendiente, aquí y en tus otros dispositivos. ¿Seguir?"))return;
+ const keep=new Set([tasks[0].key,tasks[1].key,"2026-11-07","2026-11-08"]),now=Date.now();
+ DATA.forEach(o=>{const k=o.key;if(keep.has(k)){done[k]=true}else delete done[k];tmk["done|"+k]=now;delete doneOn[k];tmk["doneOn|"+k]=now});
+ Object.keys(skip).forEach(d=>{delete skip[d];tmk["skip|"+d]=now});
+ save();render();sync(true);
+};
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")sync(false)});
 setInterval(()=>{if(document.visibilityState==="visible")sync(false)},60000);
 setTimeout(()=>sync(false),800);
