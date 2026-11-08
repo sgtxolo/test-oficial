@@ -2,6 +2,15 @@
 
 Esta guía resume todo lo hecho con la app «Exprés subrayado» (Temas 1 y 7 terminados) para repetirlo en otro tema (por ejemplo el Tema 11) sin volver a descubrirlo.
 
+## 🚀 MODO «TODO DE GOLPE» (pauta del usuario, 8/11/2026 — MANDA SOBRE CUALQUIER OTRA LÍNEA de este prompt)
+Si el usuario me pasa este prompt (con `PROMPT_PREGUNTAS_EXAMINADOR.md`) y solo dice **«Tema N»**, hago **todo seguido, en una sola ejecución, sin hacerle ninguna pregunta**: toda la cadena de abajo (base → auditoría de apartados → recortes como el Exprés → ESQ/tachados → cobertura de preguntas = n/n → bloques «Añadir» → cortes → verificación → caché, commit y push). Reglas:
+- **No hay «dímelo antes de hacer nada»** ni «cuéntale el plan antes»: decido yo con las reglas de este documento y **anoto en el informe final** cada decisión de criterio.
+- **No pido capturas, PDF ni confirmaciones:** localizo el PDF subrayado en `C:\Users\ruben\Desktop\OFICIAL 2026-27\TEMARIO ESCANEADO 2026-27\` (si hay varios candidatos, uso todos los que correspondan o el más reciente) y sigo.
+- **No se borra ninguna pregunta** (la clase 4 de «sin sitio» se deja y se lista con ids al final).
+- Recortes dudosos → miro la imagen yo mismo y decido (hojas de contacto, `lineas-img.py`, `ajustar-cortes.py`); lo que no pueda comprobar lo digo al final.
+- Solo paro si falta un archivo que no encuentro en ninguna ruta; en ese caso hago todo lo demás y lo comunico en el informe.
+- Informe final en español: nº de piezas, recortadas vs. enteras, preguntas con botón (n/n), ESQ/tachados, y **lo no probado** (impresión real, móvil).
+
 ## Qué es la app
 `expres-subrayado.html` enseña, artículo a artículo, **recortes de la captura del PDF subrayado a mano por el usuario** (la copia escaneada de su temario, con OCR), en el mismo orden y con los mismos artículos que el Exprés de `esquemas.html`. Se le suman:
 - los **cuadros de esquema** de Esquemas (`visuales-tN.js`),
@@ -15,7 +24,7 @@ URL publicada: https://sgtxolo.github.io/test-oficial/expres-subrayado.html
 ## Reglas de trabajo (del usuario)
 - Responde SIEMPRE en español. Sé honesto: di qué has probado de verdad y qué no (móvil, impresora…).
 - Trabaja en **C:\Users\ruben\Desktop\HTML OFICIAL** (no en la copia de OneDrive). Cada cambio: commit y `git push` a origin (main). Subir la versión de caché con `node prompts/herramientas/bump-cache.js`.
-- Si el cambio es grande o ambiguo, **cuéntale el plan antes de hacerlo** («dímelo antes de hacer nada»).
+- (Anulado por el modo «todo de golpe» del 8/11/2026: ya no se cuenta el plan ni se pregunta antes de hacer; se hace y se informa al final.)
 - Verifica en el navegador (preview `esq`, puerto 8777, sirve la carpeta de Escritorio). Al probar: desregistra el service worker y borra cachés, fronta la pestaña y fija un viewport (`resize_window`); las capturas reducen la ventana, así que mide con JS además de mirar.
 - NUNCA imprimas ni copies el token de GitHub (está en `sincronizacion esquemas con dispositivos.txt`, ignorado por git). No lo leas con `cat`.
 
@@ -89,7 +98,7 @@ URL publicada: https://sgtxolo.github.io/test-oficial/expres-subrayado.html
 ---
 
 # ⚙ MODO AUTOMÁTICO PARA UN TEMA NUEVO (pauta del usuario, 2/11/2026; hecho en el Tema 18, plantilla `prompts/herramientas/tema18/`)
-Si el usuario solo escribe «Tema N» (con estos prompts adjuntos), **lo hago TODO seguido, sin preguntarle nada entre pasos ni esperar un «sí, sigue»**: al acabar un paso empiezo el siguiente. Solo paro si falta un archivo que no encuentro en ningún sitio o si hay que borrar preguntas (clase 4 de «sin sitio»: aviso con la lista de ids). Las dudas de criterio las resuelvo con estas reglas y las anoto en el informe final (qué no he podido probar: navegador/móvil, impresión).
+Si el usuario solo escribe «Tema N» (con estos prompts adjuntos), **lo hago TODO seguido, sin preguntarle nada entre pasos ni esperar un «sí, sigue»**: al acabar un paso empiezo el siguiente. Solo paro si falta un archivo que no encuentro en ningún sitio. Las preguntas de la clase 4 de «sin sitio» NO se borran ni se pregunta: se dejan y se listan con sus ids en el informe final. Las dudas de criterio las resuelvo con estas reglas y las anoto en el informe final (qué no he podido probar: navegador/móvil, impresión).
 
 ## Orden de trabajo y reglas que ya están decididas
 1. **Preguntas IA**: 5 por página de MI PDF, por bloques de ~50 (`preguntas-tNr-bNN.js` + `preguntas-tNr-lib.js` + `cierre-bloque-tNr.sh`, plantilla T18). Enunciado sin nº de artículo/apartado; cita literal en UNA sola página del oficial (los marcadores `=====PAG n =====` no se filtran); la correcta nunca la más larga. Commit + push por bloque.
