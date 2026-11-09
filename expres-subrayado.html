@@ -430,9 +430,9 @@ const conPregP = (t, p) => { if (!_conPreg[t]) _conPreg[t] = new Set(Object.valu
 const fueraP = (t, p) => !anadidoP(t, p) && (!!p.tachado || (!!p.extra && !conPregP(t, p)));   // ya no hay «fuera del Exprés»: se ven todos los artículos; solo los tachados en tu temario quedan fuera
 const enImpP = (t, p) => !quitado(t, p.id) && (!fueraP(t, p) || !!st.impOp.extras || hayAlgo(((st.imp || {})[t] || {})[p.id]));   // en el panel de impresión: los «fuera del Exprés» solo si los pides (o ya los habías marcado)
 const visibles = t => D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id));
-// ⭐ Esquema clave: tus piezas subrayadas más probables de examen, hasta un tope de páginas. Puntos: 2,5 por cada pregunta OFICIAL enlazada (máx. 5), EXOF 3, ✱ de tu temario 3, sello EXAMEN 2, fichas RECUERDA 1,5 cada una (máx. 3), cuadro de esquema 1. Se ordenan por puntos por página y se rellena hasta el tope.
+// ⭐ Esquema clave: tus piezas subrayadas más probables de examen, hasta un tope de páginas. Puntos: 6 por cada pregunta OFICIAL enlazada (las de IA no cuentan); tus marcas solo desempatan: EXOF 2, ✱ 1,5, sello EXAMEN 1, fichas RECUERDA 0,5 (máx. 3), cuadro 0,5. Se ordenan por puntos por página y se rellena hasta el tope.
 const nOficiales = (t, p) => ((inv[t] || {})[p.id] || []).filter(q => !/-ia-/.test(q)).length;   // preguntas OFICIALES enlazadas a ese artículo (las de IA llevan «-ia-» en el id)
-const puntosClave = (p, t) => { const m = p.m || {}; return Math.min(nOficiales(t === undefined ? tema : t, p), 5) * 2.5 + (m.exof ? 3 : 0) + (m.ast ? 3 : 0) + (m.ex ? 2 : 0) + Math.min((m.r || []).length, 3) * 1.5 + (p.cu ? 1 : 0); };
+const puntosClave = (p, t) => { const m = p.m || {}; return nOficiales(t === undefined ? tema : t, p) * 6 + (m.exof ? 2 : 0) + (m.ast ? 1.5 : 0) + (m.ex ? 1 : 0) + Math.min((m.r || []).length, 3) * 0.5 + (p.cu ? 0.5 : 0); };
 const CLAVE_PG = [5, 8, 10];
 function claveSet(t, pgs) {
   const cand = visibles(t).map(p => ({p, pt: puntosClave(p, t), pg: estPag(t, p, {s: 1})})).filter(x => x.pt > 0 && x.pg > 0);
