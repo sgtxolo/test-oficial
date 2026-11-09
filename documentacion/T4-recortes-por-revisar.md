@@ -36,3 +36,11 @@ La herramienta automática alinea el texto del Exprés con el OCR del PDF; con e
 - a-22 (coincidencia 58 %)
 - b-58 (coincidencia 58 %)
 - c-20 (coincidencia 58 %)
+
+## Revisión a ojo (9/11/2026, segunda pasada)
+Miradas con el overlay verde/rojo y el texto del Exprés de cada pieza:
+- f-31, a-18, d-30: el recorte lleva lo que dice el Exprés (los apartados citados); la baja «coincidencia» es ruido del OCR. Sin cambios.
+- f-26: la métrica estaba contaminada: las «AMPLIACIONES» del Exprés (GEFC arts. 18, 19, 20.3, 22, 26, 27…) se atribuyen en la herramienta a la última norma (f), no a la suya (b). Las piezas b-18, b-19, b-22, b-26, b-27, a-30, a-31, a-39 y otras 11 (19 en total) salen enteras y fuera del Exprés: si las quieres recortadas como el apartado de «Ampliaciones», hay que hacerlo a mano.
+- b-91: el Exprés lleva los apartados 1, 2 y 3; el recorte lo cubre en parte. Dudosa: conviene mirarla al estudiar ese artículo.
+- b-116: sin texto propio en el Exprés (la ficha agrupa varios artículos). Sin cambios.
+- El resto de la lista (c-49, b-83, a-38, e-9, b-53, c-33, c-28, b-121, c-5, a-11, b-105, e-2, c-7, d-3, a-17, c-35, a-44, d-24, e-14, b-63, f-35, a-22, b-58, c-20) NO se han mirado a ojo.
