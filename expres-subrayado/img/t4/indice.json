@@ -3,15 +3,15 @@
   "id": "a-1",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 1",
   "img": "a-1.jpg",
-  "wh": [
-   1075,
-   174
-  ],
   "imgr": "a-1-r.jpg",
   "ap": [
    1,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   174
   ],
   "whr": [
    1075,
@@ -32,12 +32,12 @@
   "id": "a-2",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 2",
   "img": "a-2.jpg",
+  "imgr": "a-2-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3507
   ],
-  "imgr": "a-2-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    2442
@@ -125,15 +125,15 @@
   "id": "a-3",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 3",
   "img": "a-3.jpg",
-  "wh": [
-   1075,
-   257
-  ],
   "imgr": "a-3-r.jpg",
   "ap": [
    1,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   257
   ],
   "whr": [
    1075,
@@ -154,15 +154,15 @@
   "id": "a-4",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 4",
   "img": "a-4.jpg",
-  "wh": [
-   1075,
-   3559
-  ],
   "imgr": "a-4-r.jpg",
   "ap": [
    1,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   3559
   ],
   "whr": [
    1075,
@@ -203,16 +203,16 @@
   "id": "a-5",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 5",
   "img": "a-5.jpg",
-  "wh": [
-   1075,
-   1014
-  ],
   "imgr": "a-5-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   1014
   ],
   "whr": [
    1075,
@@ -253,14 +253,14 @@
   "id": "a-6",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 6",
   "img": "a-6.jpg",
-  "wh": [
-   1075,
-   10785
-  ],
   "imgr": "a-6-r.jpg",
   "ap": [
    1,
    5
+  ],
+  "wh": [
+   1075,
+   10785
   ],
   "whr": [
    1075,
@@ -385,14 +385,14 @@
   "id": "a-7",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 7",
   "img": "a-7.jpg",
-  "wh": [
-   1075,
-   263
-  ],
   "imgr": "a-7-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   263
   ],
   "whr": [
    1075,
@@ -417,10 +417,6 @@
   "id": "a-8",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 8",
   "img": "a-8.jpg",
-  "wh": [
-   1075,
-   16658
-  ],
   "imgr": "a-8-r.jpg",
   "ap": [
    1,
@@ -430,6 +426,10 @@
    5,
    6,
    10
+  ],
+  "wh": [
+   1075,
+   16658
   ],
   "whr": [
    1075,
@@ -602,16 +602,16 @@
   "id": "a-9",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 9",
   "img": "a-9.jpg",
-  "wh": [
-   1075,
-   1343
-  ],
   "imgr": "a-9-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   1343
   ],
   "whr": [
    1075,
@@ -660,10 +660,6 @@
   "id": "a-10",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 10",
   "img": "a-10.jpg",
-  "wh": [
-   1075,
-   1633
-  ],
   "imgr": "a-10-r.jpg",
   "ap": [
    1,
@@ -671,6 +667,10 @@
    3,
    4,
    8
+  ],
+  "wh": [
+   1075,
+   1633
   ],
   "whr": [
    1075,
@@ -707,14 +707,14 @@
   "id": "a-11",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 11",
   "img": "a-11.jpg",
-  "wh": [
-   1075,
-   433
-  ],
   "imgr": "a-11-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   433
   ],
   "whr": [
    1075,
@@ -731,12 +731,12 @@
   "id": "a-12",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 12",
   "img": "a-12.jpg",
+  "imgr": "a-12-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1356
   ],
-  "imgr": "a-12-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    938
@@ -813,10 +813,6 @@
   "id": "a-14",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 14",
   "img": "a-14.jpg",
-  "wh": [
-   1075,
-   1423
-  ],
   "imgr": "a-14-r.jpg",
   "ap": [
    1,
@@ -824,6 +820,10 @@
    3,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   1423
   ],
   "whr": [
    1075,
@@ -864,14 +864,14 @@
   "id": "a-15",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 15",
   "img": "a-15.jpg",
-  "wh": [
-   1075,
-   304
-  ],
   "imgr": "a-15-r.jpg",
   "ap": [
    4,
    15
+  ],
+  "wh": [
+   1075,
+   304
   ],
   "whr": [
    1075,
@@ -892,14 +892,14 @@
   "id": "a-16",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 16",
   "img": "a-16.jpg",
-  "wh": [
-   1075,
-   530
-  ],
   "imgr": "a-16-r.jpg",
   "ap": [
    4,
    15
+  ],
+  "wh": [
+   1075,
+   530
   ],
   "whr": [
    1075,
@@ -924,14 +924,14 @@
   "id": "a-17",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 17",
   "img": "a-17.jpg",
-  "wh": [
-   1075,
-   687
-  ],
   "imgr": "a-17-r.jpg",
   "ap": [
    4,
    15
+  ],
+  "wh": [
+   1075,
+   687
   ],
   "whr": [
    1075,
@@ -956,14 +956,14 @@
   "id": "a-18",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 18",
   "img": "a-18.jpg",
-  "wh": [
-   1075,
-   2345
-  ],
   "imgr": "a-18-r.jpg",
   "ap": [
    4,
    15
+  ],
+  "wh": [
+   1075,
+   2345
   ],
   "whr": [
    1075,
@@ -1056,15 +1056,15 @@
   "id": "a-22",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 22",
   "img": "a-22.jpg",
-  "wh": [
-   1075,
-   1294
-  ],
   "imgr": "a-22-r.jpg",
   "ap": [
    22,
    23,
    24
+  ],
+  "wh": [
+   1075,
+   1294
   ],
   "whr": [
    1075,
@@ -1106,15 +1106,15 @@
   "id": "a-24",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 24",
   "img": "a-24.jpg",
-  "wh": [
-   1075,
-   550
-  ],
   "imgr": "a-24-r.jpg",
   "ap": [
    22,
    23,
    24
+  ],
+  "wh": [
+   1075,
+   550
   ],
   "whr": [
    1075,
@@ -1215,13 +1215,13 @@
   "id": "a-26",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 26",
   "img": "a-26.jpg",
-  "wh": [
-   1075,
-   970
-  ],
   "imgr": "a-26-r.jpg",
   "ap": [
    6
+  ],
+  "wh": [
+   1075,
+   970
   ],
   "whr": [
    1075,
@@ -1242,13 +1242,13 @@
   "id": "a-27",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 27",
   "img": "a-27.jpg",
-  "wh": [
-   1075,
-   2768
-  ],
   "imgr": "a-27-r.jpg",
   "ap": [
    6
+  ],
+  "wh": [
+   1075,
+   2768
   ],
   "whr": [
    1075,
@@ -1297,13 +1297,13 @@
   "id": "a-28",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 28",
   "img": "a-28.jpg",
-  "wh": [
-   1075,
-   1987
-  ],
   "imgr": "a-28-r.jpg",
   "ap": [
    6
+  ],
+  "wh": [
+   1075,
+   1987
   ],
   "whr": [
    1075,
@@ -1412,12 +1412,12 @@
   "id": "a-32",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 32",
   "img": "a-32.jpg",
+  "imgr": "a-32-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    230
   ],
-  "imgr": "a-32-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    135
@@ -1437,12 +1437,12 @@
   "id": "a-33",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 33",
   "img": "a-33.jpg",
+  "imgr": "a-33-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    465
   ],
-  "imgr": "a-33-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    166
@@ -1458,12 +1458,12 @@
   "id": "a-34",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 34",
   "img": "a-34.jpg",
+  "imgr": "a-34-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    155
   ],
-  "imgr": "a-34-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    113
@@ -1483,12 +1483,12 @@
   "id": "a-35",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 35",
   "img": "a-35.jpg",
+  "imgr": "a-35-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3346
   ],
-  "imgr": "a-35-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    606
@@ -1528,12 +1528,12 @@
   "id": "a-36",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 36",
   "img": "a-36.jpg",
+  "imgr": "a-36-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    119
   ],
-  "imgr": "a-36-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    123
@@ -1553,12 +1553,12 @@
   "id": "a-37",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 37",
   "img": "a-37.jpg",
+  "imgr": "a-37-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    536
   ],
-  "imgr": "a-37-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    523
@@ -1594,12 +1594,12 @@
   "id": "a-38",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 38",
   "img": "a-38.jpg",
+  "imgr": "a-38-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    515
   ],
-  "imgr": "a-38-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    91
@@ -1624,13 +1624,13 @@
   "id": "a-40",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 40",
   "img": "a-40.jpg",
-  "wh": [
-   1075,
-   109
-  ],
   "imgr": "a-40-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   109
   ],
   "whr": [
    1075,
@@ -1651,13 +1651,13 @@
   "id": "a-41",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 41",
   "img": "a-41.jpg",
-  "wh": [
-   1075,
-   152
-  ],
   "imgr": "a-41-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   152
   ],
   "whr": [
    1075,
@@ -1674,13 +1674,13 @@
   "id": "a-42",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 42",
   "img": "a-42.jpg",
-  "wh": [
-   1075,
-   3849
-  ],
   "imgr": "a-42-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   3849
   ],
   "whr": [
    1075,
@@ -1754,13 +1754,13 @@
   "id": "a-44",
   "nombre": "Código de Fronteras Schengen (Rgto. 2016/399) · Artículo 44",
   "img": "a-44.jpg",
-  "wh": [
-   1075,
-   143
-  ],
   "imgr": "a-44-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   143
   ],
   "whr": [
    1075,
@@ -1783,7 +1783,7 @@
   "img": "a-45.jpg",
   "wh": [
    1075,
-   28679
+   260
   ],
   "imgr": "a-45-r.jpg",
   "ap": [
@@ -1791,7 +1791,7 @@
   ],
   "whr": [
    1075,
-   25661
+   237
   ],
   "tr": [
    [
@@ -1801,466 +1801,6 @@
    [
     50,
     226
-   ],
-   [
-    600,
-    698
-   ],
-   [
-    714,
-    785
-   ],
-   [
-    798,
-    1081
-   ],
-   [
-    1094,
-    1331
-   ],
-   [
-    1345,
-    1443
-   ],
-   [
-    1490,
-    1568
-   ],
-   [
-    1582,
-    1655
-   ],
-   [
-    1669,
-    1763
-   ],
-   [
-    1820,
-    1852
-   ],
-   [
-    1897,
-    2227
-   ],
-   [
-    2273,
-    2351
-   ],
-   [
-    2390,
-    2419
-   ],
-   [
-    2448,
-    2560
-   ],
-   [
-    2613,
-    2693
-   ],
-   [
-    2740,
-    2807
-   ],
-   [
-    2875,
-    2956
-   ],
-   [
-    3059,
-    3084
-   ],
-   [
-    3154,
-    3183
-   ],
-   [
-    3207,
-    3331
-   ],
-   [
-    3345,
-    3604
-   ],
-   [
-    3656,
-    3759
-   ],
-   [
-    3774,
-    3918
-   ],
-   [
-    3939,
-    4024
-   ],
-   [
-    4093,
-    4194
-   ],
-   [
-    4215,
-    4263
-   ],
-   [
-    4374,
-    4408
-   ],
-   [
-    4443,
-    4973
-   ],
-   [
-    5007,
-    5529
-   ],
-   [
-    5573,
-    5631
-   ],
-   [
-    5708,
-    5785
-   ],
-   [
-    5797,
-    6811
-   ],
-   [
-    6846,
-    6892
-   ],
-   [
-    6928,
-    6961
-   ],
-   [
-    7003,
-    8145
-   ],
-   [
-    8170,
-    8190
-   ],
-   [
-    8263,
-    8439
-   ],
-   [
-    8449,
-    8628
-   ],
-   [
-    8645,
-    8818
-   ],
-   [
-    8846,
-    8939
-   ],
-   [
-    8953,
-    9441
-   ],
-   [
-    9483,
-    9516
-   ],
-   [
-    9550,
-    10413
-   ],
-   [
-    10425,
-    10732
-   ],
-   [
-    10761,
-    11021
-   ],
-   [
-    11037,
-    11780
-   ],
-   [
-    11807,
-    11888
-   ],
-   [
-    11899,
-    12000
-   ],
-   [
-    12113,
-    12357
-   ],
-   [
-    12375,
-    12445
-   ],
-   [
-    12461,
-    12801
-   ],
-   [
-    12816,
-    13289
-   ],
-   [
-    13371,
-    13514
-   ],
-   [
-    13524,
-    13617
-   ],
-   [
-    13631,
-    13773
-   ],
-   [
-    13788,
-    14098
-   ],
-   [
-    14204,
-    14277
-   ],
-   [
-    14291,
-    14408
-   ],
-   [
-    14417,
-    14562
-   ],
-   [
-    14664,
-    14891
-   ],
-   [
-    14907,
-    15023
-   ],
-   [
-    15057,
-    15194
-   ],
-   [
-    15237,
-    15304
-   ],
-   [
-    15321,
-    15848
-   ],
-   [
-    15918,
-    16078
-   ],
-   [
-    16092,
-    16427
-   ],
-   [
-    16441,
-    17105
-   ],
-   [
-    17144,
-    17177
-   ],
-   [
-    17199,
-    17294
-   ],
-   [
-    17310,
-    17493
-   ],
-   [
-    17510,
-    17738
-   ],
-   [
-    17752,
-    18118
-   ],
-   [
-    18123,
-    18238
-   ],
-   [
-    18253,
-    18282
-   ],
-   [
-    18296,
-    18388
-   ],
-   [
-    18422,
-    18455
-   ],
-   [
-    18471,
-    18835
-   ],
-   [
-    18874,
-    19109
-   ],
-   [
-    19113,
-    19423
-   ],
-   [
-    19440,
-    19590
-   ],
-   [
-    19754,
-    19945
-   ],
-   [
-    19967,
-    20062
-   ],
-   [
-    20117,
-    20252
-   ],
-   [
-    20272,
-    20367
-   ],
-   [
-    20404,
-    20432
-   ],
-   [
-    20555,
-    20648
-   ],
-   [
-    20663,
-    20702
-   ],
-   [
-    20705,
-    20871
-   ],
-   [
-    20919,
-    20939
-   ],
-   [
-    20976,
-    21011
-   ],
-   [
-    21032,
-    21387
-   ],
-   [
-    21425,
-    21446
-   ],
-   [
-    21472,
-    21606
-   ],
-   [
-    21622,
-    21694
-   ],
-   [
-    21757,
-    21953
-   ],
-   [
-    21974,
-    21995
-   ],
-   [
-    22019,
-    22196
-   ],
-   [
-    22309,
-    22543
-   ],
-   [
-    22566,
-    23166
-   ],
-   [
-    23206,
-    23229
-   ],
-   [
-    23250,
-    23493
-   ],
-   [
-    23529,
-    23567
-   ],
-   [
-    23581,
-    23631
-   ],
-   [
-    23652,
-    23751
-   ],
-   [
-    23774,
-    23813
-   ],
-   [
-    23833,
-    24065
-   ],
-   [
-    24087,
-    24141
-   ],
-   [
-    24164,
-    24261
-   ],
-   [
-    24287,
-    24309
-   ],
-   [
-    24340,
-    24389
-   ],
-   [
-    24483,
-    24507
-   ],
-   [
-    26090,
-    26114
-   ],
-   [
-    26165,
-    26282
-   ],
-   [
-    26301,
-    27288
-   ],
-   [
-    27391,
-    28256
-   ],
-   [
-    28607,
-    28653
    ]
   ]
  },
@@ -2277,13 +1817,13 @@
   "id": "b-2",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 2",
   "img": "b-2.jpg",
-  "wh": [
-   1075,
-   3377
-  ],
   "imgr": "b-2-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   3377
   ],
   "whr": [
    1075,
@@ -2348,13 +1888,13 @@
   "id": "b-3",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 3",
   "img": "b-3.jpg",
-  "wh": [
-   1075,
-   1290
-  ],
   "imgr": "b-3-r.jpg",
   "ap": [
    2
+  ],
+  "wh": [
+   1075,
+   1290
   ],
   "whr": [
    1075,
@@ -2379,14 +1919,14 @@
   "id": "b-4",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 4",
   "img": "b-4.jpg",
-  "wh": [
-   1075,
-   896
-  ],
   "imgr": "b-4-r.jpg",
   "ap": [
    4,
    6
+  ],
+  "wh": [
+   1075,
+   896
   ],
   "whr": [
    1075,
@@ -2420,16 +1960,16 @@
   "id": "b-7",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 7",
   "img": "b-7.jpg",
-  "wh": [
-   1075,
-   2221
-  ],
   "imgr": "b-7-r.jpg",
   "ap": [
    1,
    2,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   2221
   ],
   "whr": [
    1075,
@@ -2478,12 +2018,12 @@
   "id": "b-9",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 9",
   "img": "b-9.jpg",
+  "imgr": "b-9-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2139
   ],
-  "imgr": "b-9-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    1758
@@ -2527,14 +2067,14 @@
   "id": "b-10",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 10",
   "img": "b-10.jpg",
-  "wh": [
-   1075,
-   3700
-  ],
   "imgr": "b-10-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   3700
   ],
   "whr": [
    1075,
@@ -2559,13 +2099,13 @@
   "id": "b-11",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 11",
   "img": "b-11.jpg",
-  "wh": [
-   1075,
-   152
-  ],
   "imgr": "b-11-r.jpg",
   "ap": [
    11
+  ],
+  "wh": [
+   1075,
+   152
   ],
   "whr": [
    1075,
@@ -2599,13 +2139,13 @@
   "id": "b-13",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 13",
   "img": "b-13.jpg",
-  "wh": [
-   1075,
-   498
-  ],
   "imgr": "b-13-r.jpg",
   "ap": [
    11
+  ],
+  "wh": [
+   1075,
+   498
   ],
   "whr": [
    1075,
@@ -2630,13 +2170,13 @@
   "id": "b-14",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 14",
   "img": "b-14.jpg",
-  "wh": [
-   1075,
-   640
-  ],
   "imgr": "b-14-r.jpg",
   "ap": [
    11
+  ],
+  "wh": [
+   1075,
+   640
   ],
   "whr": [
    1075,
@@ -2675,12 +2215,12 @@
   "id": "b-17",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 17",
   "img": "b-17.jpg",
+  "imgr": "b-17-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    567
   ],
-  "imgr": "b-17-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    201
@@ -2722,12 +2262,12 @@
   "id": "b-20",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 20",
   "img": "b-20.jpg",
+  "imgr": "b-20-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    985
   ],
-  "imgr": "b-20-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    339
@@ -2747,14 +2287,14 @@
   "id": "b-21",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 21",
   "img": "b-21.jpg",
-  "wh": [
-   1075,
-   1502
-  ],
   "imgr": "b-21-r.jpg",
   "ap": [
    3,
    4
+  ],
+  "wh": [
+   1075,
+   1502
   ],
   "whr": [
    1075,
@@ -2808,12 +2348,12 @@
   "id": "b-23",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 23",
   "img": "b-23.jpg",
+  "imgr": "b-23-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    860
   ],
-  "imgr": "b-23-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    653
@@ -2845,15 +2385,15 @@
   "id": "b-24",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 24",
   "img": "b-24.jpg",
-  "wh": [
-   1075,
-   768
-  ],
   "imgr": "b-24-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   768
   ],
   "whr": [
    1075,
@@ -2882,12 +2422,12 @@
   "id": "b-25",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 25",
   "img": "b-25.jpg",
+  "imgr": "b-25-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1098
   ],
-  "imgr": "b-25-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    1036
@@ -2941,12 +2481,12 @@
   "id": "b-28",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 28",
   "img": "b-28.jpg",
+  "imgr": "b-28-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1603
   ],
-  "imgr": "b-28-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    1231
@@ -2974,14 +2514,14 @@
   "id": "b-29",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 29",
   "img": "b-29.jpg",
-  "wh": [
-   1075,
-   1278
-  ],
   "imgr": "b-29-r.jpg",
   "ap": [
    3,
    30
+  ],
+  "wh": [
+   1075,
+   1278
   ],
   "whr": [
    1075,
@@ -3002,14 +2542,14 @@
   "id": "b-30",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 30",
   "img": "b-30.jpg",
-  "wh": [
-   1075,
-   242
-  ],
   "imgr": "b-30-r.jpg",
   "ap": [
    3,
    30
+  ],
+  "wh": [
+   1075,
+   242
   ],
   "whr": [
    1075,
@@ -3034,13 +2574,13 @@
   "id": "b-31",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 31",
   "img": "b-31.jpg",
-  "wh": [
-   1075,
-   2218
-  ],
   "imgr": "b-31-r.jpg",
   "ap": [
    5
+  ],
+  "wh": [
+   1075,
+   2218
   ],
   "whr": [
    1075,
@@ -3099,13 +2639,13 @@
   "id": "b-35",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 35",
   "img": "b-35.jpg",
-  "wh": [
-   1075,
-   1338
-  ],
   "imgr": "b-35-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   1338
   ],
   "whr": [
    1075,
@@ -3142,12 +2682,12 @@
   "id": "b-36",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 36",
   "img": "b-36.jpg",
+  "imgr": "b-36-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    927
   ],
-  "imgr": "b-36-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    834
@@ -3171,12 +2711,12 @@
   "id": "b-37",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 37",
   "img": "b-37.jpg",
+  "imgr": "b-37-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    687
   ],
-  "imgr": "b-37-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    494
@@ -3205,16 +2745,16 @@
   "id": "b-39",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 39",
   "img": "b-39.jpg",
-  "wh": [
-   1075,
-   1921
-  ],
   "imgr": "b-39-r.jpg",
   "ap": [
    2,
    5,
    8,
    14
+  ],
+  "wh": [
+   1075,
+   1921
   ],
   "whr": [
    1075,
@@ -3247,13 +2787,13 @@
   "id": "b-40",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 40",
   "img": "b-40.jpg",
-  "wh": [
-   1075,
-   1105
-  ],
   "imgr": "b-40-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   1105
   ],
   "whr": [
    1075,
@@ -3286,13 +2826,13 @@
   "id": "b-41",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 41",
   "img": "b-41.jpg",
-  "wh": [
-   1075,
-   376
-  ],
   "imgr": "b-41-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   376
   ],
   "whr": [
    1075,
@@ -3313,10 +2853,6 @@
   "id": "b-42",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 42",
   "img": "b-42.jpg",
-  "wh": [
-   1075,
-   2103
-  ],
   "imgr": "b-42-r.jpg",
   "ap": [
    1,
@@ -3326,6 +2862,10 @@
    6,
    7,
    10
+  ],
+  "wh": [
+   1075,
+   2103
   ],
   "whr": [
    1075,
@@ -3374,15 +2914,15 @@
   "id": "b-43",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 43",
   "img": "b-43.jpg",
-  "wh": [
-   1075,
-   1675
-  ],
   "imgr": "b-43-r.jpg",
   "ap": [
    2,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   1675
   ],
   "whr": [
    1075,
@@ -3419,15 +2959,15 @@
   "id": "b-45",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 45",
   "img": "b-45.jpg",
-  "wh": [
-   1075,
-   832
-  ],
   "imgr": "b-45-r.jpg",
   "ap": [
    2,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   832
   ],
   "whr": [
    1075,
@@ -3452,15 +2992,15 @@
   "id": "b-46",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 46",
   "img": "b-46.jpg",
-  "wh": [
-   1075,
-   960
-  ],
   "imgr": "b-46-r.jpg",
   "ap": [
    2,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   960
   ],
   "whr": [
    1075,
@@ -3493,15 +3033,15 @@
   "id": "b-47",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 47",
   "img": "b-47.jpg",
-  "wh": [
-   1075,
-   380
-  ],
   "imgr": "b-47-r.jpg",
   "ap": [
    2,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   380
   ],
   "whr": [
    1075,
@@ -3526,13 +3066,13 @@
   "id": "b-48",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 48",
   "img": "b-48.jpg",
-  "wh": [
-   1075,
-   2031
-  ],
   "imgr": "b-48-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   2031
   ],
   "whr": [
    1075,
@@ -3561,12 +3101,12 @@
   "id": "b-50",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 50",
   "img": "b-50.jpg",
+  "imgr": "b-50-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2104
   ],
-  "imgr": "b-50-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    1945
@@ -3606,12 +3146,12 @@
   "id": "b-51",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 51",
   "img": "b-51.jpg",
+  "imgr": "b-51-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    957
   ],
-  "imgr": "b-51-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    431
@@ -3631,14 +3171,14 @@
   "id": "b-52",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 52",
   "img": "b-52.jpg",
-  "wh": [
-   1075,
-   265
-  ],
   "imgr": "b-52-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   265
   ],
   "whr": [
    1075,
@@ -3659,12 +3199,12 @@
   "id": "b-53",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 53",
   "img": "b-53.jpg",
+  "imgr": "b-53-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1154
   ],
-  "imgr": "b-53-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    280
@@ -3688,12 +3228,12 @@
   "id": "b-54",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 54",
   "img": "b-54.jpg",
+  "imgr": "b-54-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2448
   ],
-  "imgr": "b-54-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    644
@@ -3737,12 +3277,12 @@
   "id": "b-55",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 55",
   "img": "b-55.jpg",
+  "imgr": "b-55-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2555
   ],
-  "imgr": "b-55-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    985
@@ -3782,12 +3322,12 @@
   "id": "b-56",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 56",
   "img": "b-56.jpg",
+  "imgr": "b-56-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1855
   ],
-  "imgr": "b-56-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    1379
@@ -3828,12 +3368,12 @@
   "id": "b-58",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 58",
   "img": "b-58.jpg",
+  "imgr": "b-58-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    389
   ],
-  "imgr": "b-58-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    208
@@ -3857,17 +3397,19 @@
   "id": "b-60",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 60",
   "img": "b-60.jpg",
+  "imgr": "b-60-r.jpg",
+  "ap": [
+   3,
+   4,
+   7
+  ],
   "wh": [
    1075,
    1858
   ],
-  "imgr": "b-60-r.jpg",
-  "ap": [
-   5
-  ],
   "whr": [
    1075,
-   171
+   284
   ],
   "tr": [
    [
@@ -3880,7 +3422,11 @@
    ],
    [
     1503,
-    1540
+    1545
+   ],
+   [
+    1770,
+    1848
    ]
   ]
  },
@@ -3888,13 +3434,13 @@
   "id": "b-61",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 61",
   "img": "b-61.jpg",
-  "wh": [
-   1075,
-   2061
-  ],
   "imgr": "b-61-r.jpg",
   "ap": [
    5
+  ],
+  "wh": [
+   1075,
+   2061
   ],
   "whr": [
    1075,
@@ -3948,12 +3494,12 @@
   "id": "b-63",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 63",
   "img": "b-63.jpg",
+  "imgr": "b-63-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1529
   ],
-  "imgr": "b-63-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    458
@@ -3981,12 +3527,12 @@
   "id": "b-64",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 64",
   "img": "b-64.jpg",
+  "imgr": "b-64-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3512
   ],
-  "imgr": "b-64-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    1707
@@ -4043,15 +3589,15 @@
   "id": "b-67",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 67",
   "img": "b-67.jpg",
-  "wh": [
-   1075,
-   3005
-  ],
   "imgr": "b-67-r.jpg",
   "ap": [
    1,
    2,
    6
+  ],
+  "wh": [
+   1075,
+   3005
   ],
   "whr": [
    1075,
@@ -4120,15 +3666,15 @@
   "id": "b-69",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 69",
   "img": "b-69.jpg",
-  "wh": [
-   1075,
-   897
-  ],
   "imgr": "b-69-r.jpg",
   "ap": [
    1,
    2,
    6
+  ],
+  "wh": [
+   1075,
+   897
   ],
   "whr": [
    1075,
@@ -4153,15 +3699,15 @@
   "id": "b-70",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 70",
   "img": "b-70.jpg",
-  "wh": [
-   1075,
-   1130
-  ],
   "imgr": "b-70-r.jpg",
   "ap": [
    1,
    2,
    6
+  ],
+  "wh": [
+   1075,
+   1130
   ],
   "whr": [
    1075,
@@ -4214,16 +3760,16 @@
   "id": "b-71",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 71",
   "img": "b-71.jpg",
-  "wh": [
-   1075,
-   500
-  ],
   "imgr": "b-71-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   500
   ],
   "whr": [
    1075,
@@ -4244,15 +3790,15 @@
   "id": "b-72",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 72",
   "img": "b-72.jpg",
-  "wh": [
-   1075,
-   422
-  ],
   "imgr": "b-72-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   422
   ],
   "whr": [
    1075,
@@ -4277,13 +3823,13 @@
   "id": "b-73",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 73",
   "img": "b-73.jpg",
-  "wh": [
-   1075,
-   1615
-  ],
   "imgr": "b-73-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   1615
   ],
   "whr": [
    1075,
@@ -4340,15 +3886,15 @@
   "id": "b-74",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 74",
   "img": "b-74.jpg",
-  "wh": [
-   1075,
-   1820
-  ],
   "imgr": "b-74-r.jpg",
   "ap": [
    1,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   1820
   ],
   "whr": [
    1075,
@@ -4393,15 +3939,15 @@
   "id": "b-76",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 76",
   "img": "b-76.jpg",
-  "wh": [
-   1075,
-   788
-  ],
   "imgr": "b-76-r.jpg",
   "ap": [
    1,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   788
   ],
   "whr": [
    1075,
@@ -4430,14 +3976,14 @@
   "id": "b-77",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 77",
   "img": "b-77.jpg",
-  "wh": [
-   1075,
-   863
-  ],
   "imgr": "b-77-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   863
   ],
   "whr": [
    1075,
@@ -4458,14 +4004,14 @@
   "id": "b-78",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 78",
   "img": "b-78.jpg",
-  "wh": [
-   1075,
-   1036
-  ],
   "imgr": "b-78-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   1036
   ],
   "whr": [
    1075,
@@ -4498,13 +4044,13 @@
   "id": "b-79",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 79",
   "img": "b-79.jpg",
-  "wh": [
-   1075,
-   439
-  ],
   "imgr": "b-79-r.jpg",
   "ap": [
    3
+  ],
+  "wh": [
+   1075,
+   439
   ],
   "whr": [
    1075,
@@ -4525,13 +4071,13 @@
   "id": "b-81",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 81",
   "img": "b-81.jpg",
-  "wh": [
-   1075,
-   4275
-  ],
   "imgr": "b-81-r.jpg",
   "ap": [
    3
+  ],
+  "wh": [
+   1075,
+   4275
   ],
   "whr": [
    1075,
@@ -4560,14 +4106,14 @@
   "id": "b-83",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 83",
   "img": "b-83.jpg",
-  "wh": [
-   1075,
-   436
-  ],
   "imgr": "b-83-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   436
   ],
   "whr": [
    1075,
@@ -4592,13 +4138,13 @@
   "id": "b-84",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 84",
   "img": "b-84.jpg",
-  "wh": [
-   1075,
-   735
-  ],
   "imgr": "b-84-r.jpg",
   "ap": [
    10
+  ],
+  "wh": [
+   1075,
+   735
   ],
   "whr": [
    1075,
@@ -4623,13 +4169,13 @@
   "id": "b-85",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 85",
   "img": "b-85.jpg",
-  "wh": [
-   1075,
-   396
-  ],
   "imgr": "b-85-r.jpg",
   "ap": [
    10
+  ],
+  "wh": [
+   1075,
+   396
   ],
   "whr": [
    1075,
@@ -4654,15 +4200,15 @@
   "id": "b-86",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 86",
   "img": "b-86.jpg",
-  "wh": [
-   1075,
-   2293
-  ],
   "imgr": "b-86-r.jpg",
   "ap": [
    1,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   2293
   ],
   "whr": [
    1075,
@@ -4723,15 +4269,15 @@
   "id": "b-88",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 88",
   "img": "b-88.jpg",
-  "wh": [
-   1075,
-   1169
-  ],
   "imgr": "b-88-r.jpg",
   "ap": [
    1,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   1169
   ],
   "whr": [
    1075,
@@ -4772,15 +4318,15 @@
   "id": "b-89",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 89",
   "img": "b-89.jpg",
-  "wh": [
-   1075,
-   921
-  ],
   "imgr": "b-89-r.jpg",
   "ap": [
    1,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   921
   ],
   "whr": [
    1075,
@@ -4809,15 +4355,15 @@
   "id": "b-90",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 90",
   "img": "b-90.jpg",
-  "wh": [
-   1075,
-   568
-  ],
   "imgr": "b-90-r.jpg",
   "ap": [
    1,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   568
   ],
   "whr": [
    1075,
@@ -4846,15 +4392,15 @@
   "id": "b-91",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 91",
   "img": "b-91.jpg",
-  "wh": [
-   1075,
-   707
-  ],
   "imgr": "b-91-r.jpg",
   "ap": [
    1,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   707
   ],
   "whr": [
    1075,
@@ -4879,15 +4425,15 @@
   "id": "b-92",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 92",
   "img": "b-92.jpg",
-  "wh": [
-   1075,
-   648
-  ],
   "imgr": "b-92-r.jpg",
   "ap": [
    1,
    4,
    5
+  ],
+  "wh": [
+   1075,
+   648
   ],
   "whr": [
    1075,
@@ -4920,12 +4466,12 @@
   "id": "b-93",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 93",
   "img": "b-93.jpg",
+  "imgr": "b-93-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    817
   ],
-  "imgr": "b-93-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    606
@@ -5014,12 +4560,12 @@
   "id": "b-99",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 99",
   "img": "b-99.jpg",
+  "imgr": "b-99-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    312
   ],
-  "imgr": "b-99-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    94
@@ -5039,10 +4585,6 @@
   "id": "b-100",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 100",
   "img": "b-100.jpg",
-  "wh": [
-   1075,
-   3675
-  ],
   "imgr": "b-100-r.jpg",
   "ap": [
    1,
@@ -5050,6 +4592,10 @@
    3,
    5,
    7
+  ],
+  "wh": [
+   1075,
+   3675
   ],
   "whr": [
    1075,
@@ -5090,12 +4636,12 @@
   "id": "b-101",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 101",
   "img": "b-101.jpg",
+  "imgr": "b-101-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    488
   ],
-  "imgr": "b-101-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    460
@@ -5119,12 +4665,12 @@
   "id": "b-102",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 102",
   "img": "b-102.jpg",
+  "imgr": "b-102-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1240
   ],
-  "imgr": "b-102-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    1050
@@ -5156,12 +4702,12 @@
   "id": "b-103",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 103",
   "img": "b-103.jpg",
+  "imgr": "b-103-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    260
   ],
-  "imgr": "b-103-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    211
@@ -5181,12 +4727,12 @@
   "id": "b-104",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 104",
   "img": "b-104.jpg",
+  "imgr": "b-104-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    821
   ],
-  "imgr": "b-104-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    767
@@ -5222,12 +4768,12 @@
   "id": "b-105",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 105",
   "img": "b-105.jpg",
+  "imgr": "b-105-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    390
   ],
-  "imgr": "b-105-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    125
@@ -5252,15 +4798,15 @@
   "id": "b-107",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 107",
   "img": "b-107.jpg",
-  "wh": [
-   1075,
-   1363
-  ],
   "imgr": "b-107-r.jpg",
   "ap": [
    1,
    2,
    8
+  ],
+  "wh": [
+   1075,
+   1363
   ],
   "whr": [
    1075,
@@ -5294,13 +4840,13 @@
   "id": "b-109",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 109",
   "img": "b-109.jpg",
-  "wh": [
-   1075,
-   2355
-  ],
   "imgr": "b-109-r.jpg",
   "ap": [
    5
+  ],
+  "wh": [
+   1075,
+   2355
   ],
   "whr": [
    1075,
@@ -5357,13 +4903,13 @@
   "id": "b-110",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 110",
   "img": "b-110.jpg",
-  "wh": [
-   1075,
-   1661
-  ],
   "imgr": "b-110-r.jpg",
   "ap": [
    5
+  ],
+  "wh": [
+   1075,
+   1661
   ],
   "whr": [
    1075,
@@ -5428,13 +4974,13 @@
   "id": "b-111",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 111",
   "img": "b-111.jpg",
-  "wh": [
-   1075,
-   2755
-  ],
   "imgr": "b-111-r.jpg",
   "ap": [
    5
+  ],
+  "wh": [
+   1075,
+   2755
   ],
   "whr": [
    1075,
@@ -5480,13 +5026,13 @@
   "id": "b-113",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 113",
   "img": "b-113.jpg",
-  "wh": [
-   1075,
-   419
-  ],
   "imgr": "b-113-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   419
   ],
   "whr": [
    1075,
@@ -5511,13 +5057,13 @@
   "id": "b-114",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 114",
   "img": "b-114.jpg",
-  "wh": [
-   1075,
-   844
-  ],
   "imgr": "b-114-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   844
   ],
   "whr": [
    1075,
@@ -5534,13 +5080,13 @@
   "id": "b-115",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 115",
   "img": "b-115.jpg",
-  "wh": [
-   1075,
-   1987
-  ],
   "imgr": "b-115-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   1987
   ],
   "whr": [
    1075,
@@ -5573,13 +5119,13 @@
   "id": "b-116",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 116",
   "img": "b-116.jpg",
-  "wh": [
-   1075,
-   1145
-  ],
   "imgr": "b-116-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   1145
   ],
   "whr": [
    1075,
@@ -5600,13 +5146,13 @@
   "id": "b-117",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 117",
   "img": "b-117.jpg",
-  "wh": [
-   1075,
-   664
-  ],
   "imgr": "b-117-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   664
   ],
   "whr": [
    1075,
@@ -5627,13 +5173,13 @@
   "id": "b-118",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 118",
   "img": "b-118.jpg",
-  "wh": [
-   1075,
-   502
-  ],
   "imgr": "b-118-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   502
   ],
   "whr": [
    1075,
@@ -5667,13 +5213,13 @@
   "id": "b-120",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 120",
   "img": "b-120.jpg",
-  "wh": [
-   1075,
-   205
-  ],
   "imgr": "b-120-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   205
   ],
   "whr": [
    1075,
@@ -5690,13 +5236,13 @@
   "id": "b-121",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 121",
   "img": "b-121.jpg",
-  "wh": [
-   1075,
-   1533
-  ],
   "imgr": "b-121-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   1533
   ],
   "whr": [
    1075,
@@ -5713,13 +5259,13 @@
   "id": "b-122",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 122",
   "img": "b-122.jpg",
-  "wh": [
-   1075,
-   173
-  ],
   "imgr": "b-122-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   173
   ],
   "whr": [
    1075,
@@ -5744,13 +5290,13 @@
   "id": "b-123",
   "nombre": "Guardia Europea de Fronteras y Costas (Rgto. 2019/1896) · Artículo 123",
   "img": "b-123.jpg",
-  "wh": [
-   1075,
-   839
-  ],
   "imgr": "b-123-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   839
   ],
   "whr": [
    1075,
@@ -5785,7 +5331,7 @@
   "img": "b-124.jpg",
   "wh": [
    1075,
-   16204
+   450
   ],
   "imgr": "b-124-r.jpg",
   "ap": [
@@ -5793,7 +5339,7 @@
   ],
   "whr": [
    1075,
-   6793
+   481
   ],
   "tr": [
    [
@@ -5815,90 +5361,6 @@
    [
     399,
     425
-   ],
-   [
-    927,
-    964
-   ],
-   [
-    983,
-    1362
-   ],
-   [
-    2164,
-    2201
-   ],
-   [
-    2226,
-    3254
-   ],
-   [
-    3377,
-    3421
-   ],
-   [
-    3457,
-    3491
-   ],
-   [
-    3600,
-    3913
-   ],
-   [
-    4004,
-    4039
-   ],
-   [
-    4167,
-    4640
-   ],
-   [
-    4757,
-    5288
-   ],
-   [
-    5373,
-    5410
-   ],
-   [
-    5548,
-    5929
-   ],
-   [
-    6016,
-    6635
-   ],
-   [
-    7294,
-    7330
-   ],
-   [
-    7463,
-    7488
-   ],
-   [
-    7500,
-    8472
-   ],
-   [
-    8564,
-    8600
-   ],
-   [
-    8647,
-    8721
-   ],
-   [
-    8773,
-    8806
-   ],
-   [
-    8820,
-    8916
-   ],
-   [
-    8931,
-    9393
    ]
   ]
  },
@@ -5906,12 +5368,12 @@
   "id": "c-1",
   "nombre": "Convenio de Prüm · Artículo 1",
   "img": "c-1.jpg",
+  "imgr": "c-1-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    633
   ],
-  "imgr": "c-1-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    446
@@ -5935,16 +5397,16 @@
   "id": "c-2",
   "nombre": "Convenio de Prüm · Artículo 2",
   "img": "c-2.jpg",
-  "wh": [
-   1075,
-   512
-  ],
   "imgr": "c-2-r.jpg",
   "ap": [
    1,
    2,
    5,
    7
+  ],
+  "wh": [
+   1075,
+   512
   ],
   "whr": [
    1075,
@@ -5961,16 +5423,16 @@
   "id": "c-3",
   "nombre": "Convenio de Prüm · Artículo 3",
   "img": "c-3.jpg",
-  "wh": [
-   1075,
-   659
-  ],
   "imgr": "c-3-r.jpg",
   "ap": [
    1,
    2,
    5,
    7
+  ],
+  "wh": [
+   1075,
+   659
   ],
   "whr": [
    1075,
@@ -5991,16 +5453,16 @@
   "id": "c-5",
   "nombre": "Convenio de Prüm · Artículo 5",
   "img": "c-5.jpg",
-  "wh": [
-   1075,
-   177
-  ],
   "imgr": "c-5-r.jpg",
   "ap": [
    1,
    2,
    5,
    7
+  ],
+  "wh": [
+   1075,
+   177
   ],
   "whr": [
    1075,
@@ -6017,16 +5479,16 @@
   "id": "c-6",
   "nombre": "Convenio de Prüm · Artículo 6",
   "img": "c-6.jpg",
-  "wh": [
-   1075,
-   469
-  ],
   "imgr": "c-6-r.jpg",
   "ap": [
    1,
    2,
    5,
    7
+  ],
+  "wh": [
+   1075,
+   469
   ],
   "whr": [
    1075,
@@ -6047,16 +5509,16 @@
   "id": "c-7",
   "nombre": "Convenio de Prüm · Artículo 7",
   "img": "c-7.jpg",
-  "wh": [
-   1075,
-   611
-  ],
   "imgr": "c-7-r.jpg",
   "ap": [
    1,
    2,
    5,
    7
+  ],
+  "wh": [
+   1075,
+   611
   ],
   "whr": [
    1075,
@@ -6095,13 +5557,13 @@
   "id": "c-13",
   "nombre": "Convenio de Prüm · Artículo 13",
   "img": "c-13.jpg",
-  "wh": [
-   1075,
-   175
-  ],
   "imgr": "c-13-r.jpg",
   "ap": [
    13
+  ],
+  "wh": [
+   1075,
+   175
   ],
   "whr": [
    1075,
@@ -6118,13 +5580,13 @@
   "id": "c-14",
   "nombre": "Convenio de Prüm · Artículo 14",
   "img": "c-14.jpg",
-  "wh": [
-   1075,
-   545
-  ],
   "imgr": "c-14-r.jpg",
   "ap": [
    13
+  ],
+  "wh": [
+   1075,
+   545
   ],
   "whr": [
    1075,
@@ -6149,13 +5611,13 @@
   "id": "c-16",
   "nombre": "Convenio de Prüm · Artículo 16",
   "img": "c-16.jpg",
-  "wh": [
-   1075,
-   506
-  ],
   "imgr": "c-16-r.jpg",
   "ap": [
    13
+  ],
+  "wh": [
+   1075,
+   506
   ],
   "whr": [
    1075,
@@ -6176,13 +5638,13 @@
   "id": "c-17",
   "nombre": "Convenio de Prüm · Artículo 17",
   "img": "c-17.jpg",
-  "wh": [
-   1075,
-   747
-  ],
   "imgr": "c-17-r.jpg",
   "ap": [
    2
+  ],
+  "wh": [
+   1075,
+   747
   ],
   "whr": [
    1075,
@@ -6211,13 +5673,13 @@
   "id": "c-18",
   "nombre": "Convenio de Prüm · Artículo 18",
   "img": "c-18.jpg",
-  "wh": [
-   1075,
-   437
-  ],
   "imgr": "c-18-r.jpg",
   "ap": [
    2
+  ],
+  "wh": [
+   1075,
+   437
   ],
   "whr": [
    1075,
@@ -6238,13 +5700,13 @@
   "id": "c-19",
   "nombre": "Convenio de Prüm · Artículo 19",
   "img": "c-19.jpg",
-  "wh": [
-   1075,
-   569
-  ],
   "imgr": "c-19-r.jpg",
   "ap": [
    19
+  ],
+  "wh": [
+   1075,
+   569
   ],
   "whr": [
    1075,
@@ -6265,10 +5727,6 @@
   "id": "c-20",
   "nombre": "Convenio de Prüm · Artículo 20",
   "img": "c-20.jpg",
-  "wh": [
-   1075,
-   352
-  ],
   "imgr": "c-20-r.jpg",
   "ap": [
    1,
@@ -6277,6 +5735,10 @@
    5,
    21,
    22
+  ],
+  "wh": [
+   1075,
+   352
   ],
   "whr": [
    1075,
@@ -6301,10 +5763,6 @@
   "id": "c-21",
   "nombre": "Convenio de Prüm · Artículo 21",
   "img": "c-21.jpg",
-  "wh": [
-   1075,
-   503
-  ],
   "imgr": "c-21-r.jpg",
   "ap": [
    1,
@@ -6313,6 +5771,10 @@
    5,
    21,
    22
+  ],
+  "wh": [
+   1075,
+   503
   ],
   "whr": [
    1075,
@@ -6341,10 +5803,6 @@
   "id": "c-22",
   "nombre": "Convenio de Prüm · Artículo 22",
   "img": "c-22.jpg",
-  "wh": [
-   1075,
-   251
-  ],
   "imgr": "c-22-r.jpg",
   "ap": [
    1,
@@ -6353,6 +5811,10 @@
    5,
    21,
    22
+  ],
+  "wh": [
+   1075,
+   251
   ],
   "whr": [
    1075,
@@ -6369,10 +5831,6 @@
   "id": "c-23",
   "nombre": "Convenio de Prüm · Artículo 23",
   "img": "c-23.jpg",
-  "wh": [
-   1075,
-   832
-  ],
   "imgr": "c-23-r.jpg",
   "ap": [
    1,
@@ -6381,6 +5839,10 @@
    5,
    21,
    22
+  ],
+  "wh": [
+   1075,
+   832
   ],
   "whr": [
    1075,
@@ -6417,16 +5879,16 @@
   "id": "c-24",
   "nombre": "Convenio de Prüm · Artículo 24",
   "img": "c-24.jpg",
-  "wh": [
-   1075,
-   670
-  ],
   "imgr": "c-24-r.jpg",
   "ap": [
    1,
    2,
    3,
    26
+  ],
+  "wh": [
+   1075,
+   670
   ],
   "whr": [
    1075,
@@ -6459,16 +5921,16 @@
   "id": "c-25",
   "nombre": "Convenio de Prüm · Artículo 25",
   "img": "c-25.jpg",
-  "wh": [
-   1075,
-   594
-  ],
   "imgr": "c-25-r.jpg",
   "ap": [
    1,
    2,
    3,
    26
+  ],
+  "wh": [
+   1075,
+   594
   ],
   "whr": [
    1075,
@@ -6494,16 +5956,16 @@
   "id": "c-27",
   "nombre": "Convenio de Prüm · Artículo 27",
   "img": "c-27.jpg",
-  "wh": [
-   1075,
-   1416
-  ],
   "imgr": "c-27-r.jpg",
   "ap": [
    1,
    2,
    3,
    26
+  ],
+  "wh": [
+   1075,
+   1416
   ],
   "whr": [
    1075,
@@ -6528,14 +5990,14 @@
   "id": "c-28",
   "nombre": "Convenio de Prüm · Artículo 28",
   "img": "c-28.jpg",
-  "wh": [
-   1075,
-   644
-  ],
   "imgr": "c-28-r.jpg",
   "ap": [
    29,
    30
+  ],
+  "wh": [
+   1075,
+   644
   ],
   "whr": [
    1075,
@@ -6586,14 +6048,14 @@
   "id": "c-31",
   "nombre": "Convenio de Prüm · Artículo 31",
   "img": "c-31.jpg",
-  "wh": [
-   1075,
-   211
-  ],
   "imgr": "c-31-r.jpg",
   "ap": [
    29,
    30
+  ],
+  "wh": [
+   1075,
+   211
   ],
   "whr": [
    1075,
@@ -6610,14 +6072,14 @@
   "id": "c-32",
   "nombre": "Convenio de Prüm · Artículo 32",
   "img": "c-32.jpg",
-  "wh": [
-   1075,
-   343
-  ],
   "imgr": "c-32-r.jpg",
   "ap": [
    29,
    30
+  ],
+  "wh": [
+   1075,
+   343
   ],
   "whr": [
    1075,
@@ -6638,16 +6100,16 @@
   "id": "c-33",
   "nombre": "Convenio de Prüm · Artículo 33",
   "img": "c-33.jpg",
-  "wh": [
-   1075,
-   591
-  ],
   "imgr": "c-33-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   591
   ],
   "whr": [
    1075,
@@ -6672,16 +6134,16 @@
   "id": "c-34",
   "nombre": "Convenio de Prüm · Artículo 34",
   "img": "c-34.jpg",
-  "wh": [
-   1075,
-   479
-  ],
   "imgr": "c-34-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   479
   ],
   "whr": [
    1075,
@@ -6706,16 +6168,16 @@
   "id": "c-35",
   "nombre": "Convenio de Prüm · Artículo 35",
   "img": "c-35.jpg",
-  "wh": [
-   1075,
-   731
-  ],
   "imgr": "c-35-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   731
   ],
   "whr": [
    1075,
@@ -6736,12 +6198,12 @@
   "id": "c-36",
   "nombre": "Convenio de Prüm · Artículo 36",
   "img": "c-36.jpg",
+  "imgr": "c-36-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    174
   ],
-  "imgr": "c-36-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    152
@@ -6761,16 +6223,16 @@
   "id": "c-37",
   "nombre": "Convenio de Prüm · Artículo 37",
   "img": "c-37.jpg",
-  "wh": [
-   1075,
-   878
-  ],
   "imgr": "c-37-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   878
   ],
   "whr": [
    1075,
@@ -6803,14 +6265,14 @@
   "id": "c-38",
   "nombre": "Convenio de Prüm · Artículo 38",
   "img": "c-38.jpg",
-  "wh": [
-   1075,
-   440
-  ],
   "imgr": "c-38-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   440
   ],
   "whr": [
    1075,
@@ -6844,16 +6306,16 @@
   "id": "c-40",
   "nombre": "Convenio de Prüm · Artículo 40",
   "img": "c-40.jpg",
-  "wh": [
-   1075,
-   579
-  ],
   "imgr": "c-40-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   579
   ],
   "whr": [
    1075,
@@ -6874,12 +6336,12 @@
   "id": "c-41",
   "nombre": "Convenio de Prüm · Artículo 41",
   "img": "c-41.jpg",
+  "imgr": "c-41-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    550
   ],
-  "imgr": "c-41-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    97
@@ -6895,12 +6357,12 @@
   "id": "c-43",
   "nombre": "Convenio de Prüm · Artículo 43",
   "img": "c-43.jpg",
+  "imgr": "c-43-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    390
   ],
-  "imgr": "c-43-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    256
@@ -6925,12 +6387,12 @@
   "id": "c-45",
   "nombre": "Convenio de Prüm · Artículo 45",
   "img": "c-45.jpg",
+  "imgr": "c-45-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    157
   ],
-  "imgr": "c-45-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    161
@@ -6959,12 +6421,12 @@
   "id": "c-47",
   "nombre": "Convenio de Prüm · Artículo 47",
   "img": "c-47.jpg",
+  "imgr": "c-47-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    354
   ],
-  "imgr": "c-47-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    299
@@ -6992,12 +6454,12 @@
   "id": "c-48",
   "nombre": "Convenio de Prüm · Artículo 48",
   "img": "c-48.jpg",
+  "imgr": "c-48-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    156
   ],
-  "imgr": "c-48-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    160
@@ -7017,12 +6479,12 @@
   "id": "c-49",
   "nombre": "Convenio de Prüm · Artículo 49",
   "img": "c-49.jpg",
+  "imgr": "c-49-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    376
   ],
-  "imgr": "c-49-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    77
@@ -7058,7 +6520,7 @@
   "img": "c-52.jpg",
   "wh": [
    1075,
-   5868
+   330
   ],
   "imgr": "c-52-r.jpg",
   "ap": [],
@@ -7077,12 +6539,12 @@
   "id": "d-1",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 1",
   "img": "d-1.jpg",
+  "imgr": "d-1-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    713
   ],
-  "imgr": "d-1-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    408
@@ -7106,14 +6568,14 @@
   "id": "d-2",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 2",
   "img": "d-2.jpg",
-  "wh": [
-   1075,
-   527
-  ],
   "imgr": "d-2-r.jpg",
   "ap": [
    5,
    7
+  ],
+  "wh": [
+   1075,
+   527
   ],
   "whr": [
    1075,
@@ -7138,14 +6600,14 @@
   "id": "d-3",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 3",
   "img": "d-3.jpg",
-  "wh": [
-   1075,
-   305
-  ],
   "imgr": "d-3-r.jpg",
   "ap": [
    5,
    7
+  ],
+  "wh": [
+   1075,
+   305
   ],
   "whr": [
    1075,
@@ -7170,14 +6632,14 @@
   "id": "d-4",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 4",
   "img": "d-4.jpg",
-  "wh": [
-   1075,
-   329
-  ],
   "imgr": "d-4-r.jpg",
   "ap": [
    5,
    7
+  ],
+  "wh": [
+   1075,
+   329
   ],
   "whr": [
    1075,
@@ -7198,14 +6660,14 @@
   "id": "d-5",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 5",
   "img": "d-5.jpg",
-  "wh": [
-   1075,
-   182
-  ],
   "imgr": "d-5-r.jpg",
   "ap": [
    5,
    7
+  ],
+  "wh": [
+   1075,
+   182
   ],
   "whr": [
    1075,
@@ -7222,14 +6684,14 @@
   "id": "d-6",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 6",
   "img": "d-6.jpg",
-  "wh": [
-   1075,
-   394
-  ],
   "imgr": "d-6-r.jpg",
   "ap": [
    5,
    7
+  ],
+  "wh": [
+   1075,
+   394
   ],
   "whr": [
    1075,
@@ -7250,14 +6712,14 @@
   "id": "d-7",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 7",
   "img": "d-7.jpg",
-  "wh": [
-   1075,
-   540
-  ],
   "imgr": "d-7-r.jpg",
   "ap": [
    5,
    7
+  ],
+  "wh": [
+   1075,
+   540
   ],
   "whr": [
    1075,
@@ -7287,13 +6749,13 @@
   "id": "d-9",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 9",
   "img": "d-9.jpg",
-  "wh": [
-   1075,
-   515
-  ],
   "imgr": "d-9-r.jpg",
   "ap": [
    8
+  ],
+  "wh": [
+   1075,
+   515
   ],
   "whr": [
    1075,
@@ -7318,13 +6780,13 @@
   "id": "d-12",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 12",
   "img": "d-12.jpg",
-  "wh": [
-   1075,
-   1073
-  ],
   "imgr": "d-12-r.jpg",
   "ap": [
    8
+  ],
+  "wh": [
+   1075,
+   1073
   ],
   "whr": [
    1075,
@@ -7345,13 +6807,13 @@
   "id": "d-14",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 14",
   "img": "d-14.jpg",
-  "wh": [
-   1075,
-   378
-  ],
   "imgr": "d-14-r.jpg",
   "ap": [
    13
+  ],
+  "wh": [
+   1075,
+   378
   ],
   "whr": [
    1075,
@@ -7376,13 +6838,13 @@
   "id": "d-16",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 16",
   "img": "d-16.jpg",
-  "wh": [
-   1075,
-   696
-  ],
   "imgr": "d-16-r.jpg",
   "ap": [
    13
+  ],
+  "wh": [
+   1075,
+   696
   ],
   "whr": [
    1075,
@@ -7407,10 +6869,6 @@
   "id": "d-17",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 17",
   "img": "d-17.jpg",
-  "wh": [
-   1075,
-   786
-  ],
   "imgr": "d-17-r.jpg",
   "ap": [
    3,
@@ -7418,6 +6876,10 @@
    20,
    22,
    23
+  ],
+  "wh": [
+   1075,
+   786
   ],
   "whr": [
    1075,
@@ -7454,10 +6916,6 @@
   "id": "d-18",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 18",
   "img": "d-18.jpg",
-  "wh": [
-   1075,
-   405
-  ],
   "imgr": "d-18-r.jpg",
   "ap": [
    3,
@@ -7466,14 +6924,22 @@
    22,
    23
   ],
+  "wh": [
+   1075,
+   405
+  ],
   "whr": [
    1075,
-   32
+   195
   ],
   "tr": [
    [
     0,
-    32
+    62
+   ],
+   [
+    288,
+    391
    ]
   ]
  },
@@ -7481,10 +6947,6 @@
   "id": "d-19",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 19",
   "img": "d-19.jpg",
-  "wh": [
-   1075,
-   732
-  ],
   "imgr": "d-19-r.jpg",
   "ap": [
    3,
@@ -7492,6 +6954,10 @@
    20,
    22,
    23
+  ],
+  "wh": [
+   1075,
+   732
   ],
   "whr": [
    1075,
@@ -7516,10 +6982,6 @@
   "id": "d-20",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 20",
   "img": "d-20.jpg",
-  "wh": [
-   1075,
-   131
-  ],
   "imgr": "d-20-r.jpg",
   "ap": [
    3,
@@ -7527,6 +6989,10 @@
    20,
    22,
    23
+  ],
+  "wh": [
+   1075,
+   131
   ],
   "whr": [
    1075,
@@ -7556,10 +7022,6 @@
   "id": "d-22",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 22",
   "img": "d-22.jpg",
-  "wh": [
-   1075,
-   356
-  ],
   "imgr": "d-22-r.jpg",
   "ap": [
    3,
@@ -7567,6 +7029,10 @@
    20,
    22,
    23
+  ],
+  "wh": [
+   1075,
+   356
   ],
   "whr": [
    1075,
@@ -7591,10 +7057,6 @@
   "id": "d-23",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 23",
   "img": "d-23.jpg",
-  "wh": [
-   1075,
-   345
-  ],
   "imgr": "d-23-r.jpg",
   "ap": [
    3,
@@ -7602,6 +7064,10 @@
    20,
    22,
    23
+  ],
+  "wh": [
+   1075,
+   345
   ],
   "whr": [
    1075,
@@ -7626,14 +7092,14 @@
   "id": "d-24",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 24",
   "img": "d-24.jpg",
-  "wh": [
-   1075,
-   545
-  ],
   "imgr": "d-24-r.jpg",
   "ap": [
    1,
    27
+  ],
+  "wh": [
+   1075,
+   545
   ],
   "whr": [
    1075,
@@ -7658,14 +7124,14 @@
   "id": "d-25",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 25",
   "img": "d-25.jpg",
-  "wh": [
-   1075,
-   648
-  ],
   "imgr": "d-25-r.jpg",
   "ap": [
    1,
    27
+  ],
+  "wh": [
+   1075,
+   648
   ],
   "whr": [
    1075,
@@ -7694,14 +7160,14 @@
   "id": "d-26",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 26",
   "img": "d-26.jpg",
-  "wh": [
-   1075,
-   731
-  ],
   "imgr": "d-26-r.jpg",
   "ap": [
    1,
    27
+  ],
+  "wh": [
+   1075,
+   731
   ],
   "whr": [
    1075,
@@ -7726,14 +7192,14 @@
   "id": "d-27",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 27",
   "img": "d-27.jpg",
-  "wh": [
-   1075,
-   387
-  ],
   "imgr": "d-27-r.jpg",
   "ap": [
    1,
    27
+  ],
+  "wh": [
+   1075,
+   387
   ],
   "whr": [
    1075,
@@ -7771,14 +7237,14 @@
   "id": "d-29",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 29",
   "img": "d-29.jpg",
-  "wh": [
-   1075,
-   562
-  ],
   "imgr": "d-29-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   562
   ],
   "whr": [
    1075,
@@ -7807,13 +7273,13 @@
   "id": "d-30",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 30",
   "img": "d-30.jpg",
-  "wh": [
-   1075,
-   1670
-  ],
   "imgr": "d-30-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   1670
   ],
   "whr": [
    1075,
@@ -7834,13 +7300,13 @@
   "id": "d-31",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 31",
   "img": "d-31.jpg",
-  "wh": [
-   1075,
-   774
-  ],
   "imgr": "d-31-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   774
   ],
   "whr": [
    1075,
@@ -7857,14 +7323,14 @@
   "id": "d-32",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 32",
   "img": "d-32.jpg",
-  "wh": [
-   1075,
-   317
-  ],
   "imgr": "d-32-r.jpg",
   "ap": [
    1,
    27
+  ],
+  "wh": [
+   1075,
+   317
   ],
   "whr": [
    1075,
@@ -7898,13 +7364,13 @@
   "id": "d-34",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 34",
   "img": "d-34.jpg",
-  "wh": [
-   1075,
-   133
-  ],
   "imgr": "d-34-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   133
   ],
   "whr": [
    1075,
@@ -7921,13 +7387,13 @@
   "id": "d-35",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 35",
   "img": "d-35.jpg",
-  "wh": [
-   1075,
-   994
-  ],
   "imgr": "d-35-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   994
   ],
   "whr": [
    1075,
@@ -7969,13 +7435,13 @@
   "id": "d-37",
   "nombre": "Decisión Prüm (2008/615/JAI) · Artículo 37",
   "img": "d-37.jpg",
-  "wh": [
-   1075,
-   496
-  ],
   "imgr": "d-37-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   496
   ],
   "whr": [
    1075,
@@ -8004,14 +7470,14 @@
   "id": "e-1",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 1",
   "img": "e-1.jpg",
-  "wh": [
-   1075,
-   491
-  ],
   "imgr": "e-1-r.jpg",
   "ap": [
    2,
    3
+  ],
+  "wh": [
+   1075,
+   491
   ],
   "whr": [
    1075,
@@ -8036,14 +7502,14 @@
   "id": "e-2",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 2",
   "img": "e-2.jpg",
-  "wh": [
-   1075,
-   128
-  ],
   "imgr": "e-2-r.jpg",
   "ap": [
    2,
    3
+  ],
+  "wh": [
+   1075,
+   128
   ],
   "whr": [
    1075,
@@ -8060,10 +7526,6 @@
   "id": "e-3",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 3",
   "img": "e-3.jpg",
-  "wh": [
-   1075,
-   253
-  ],
   "imgr": "e-3-r.jpg",
   "ap": [
    1,
@@ -8075,6 +7537,10 @@
    13,
    16,
    17
+  ],
+  "wh": [
+   1075,
+   253
   ],
   "whr": [
    1075,
@@ -8095,10 +7561,6 @@
   "id": "e-4",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 4",
   "img": "e-4.jpg",
-  "wh": [
-   1075,
-   1021
-  ],
   "imgr": "e-4-r.jpg",
   "ap": [
    1,
@@ -8107,6 +7569,10 @@
    4,
    5,
    6
+  ],
+  "wh": [
+   1075,
+   1021
   ],
   "whr": [
    1075,
@@ -8147,15 +7613,15 @@
   "id": "e-5",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 5",
   "img": "e-5.jpg",
-  "wh": [
-   1075,
-   1414
-  ],
   "imgr": "e-5-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   1414
   ],
   "whr": [
    1075,
@@ -8172,13 +7638,13 @@
   "id": "e-6",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 6",
   "img": "e-6.jpg",
-  "wh": [
-   1075,
-   752
-  ],
   "imgr": "e-6-r.jpg",
   "ap": [
    7
+  ],
+  "wh": [
+   1075,
+   752
   ],
   "whr": [
    1075,
@@ -8203,13 +7669,13 @@
   "id": "e-7",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 7",
   "img": "e-7.jpg",
-  "wh": [
-   1075,
-   216
-  ],
   "imgr": "e-7-r.jpg",
   "ap": [
    7
+  ],
+  "wh": [
+   1075,
+   216
   ],
   "whr": [
    1075,
@@ -8226,13 +7692,13 @@
   "id": "e-8",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 8",
   "img": "e-8.jpg",
-  "wh": [
-   1075,
-   212
-  ],
   "imgr": "e-8-r.jpg",
   "ap": [
    7
+  ],
+  "wh": [
+   1075,
+   212
   ],
   "whr": [
    1075,
@@ -8253,10 +7719,6 @@
   "id": "e-9",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 9",
   "img": "e-9.jpg",
-  "wh": [
-   1075,
-   1195
-  ],
   "imgr": "e-9-r.jpg",
   "ap": [
    2,
@@ -8269,6 +7731,10 @@
    10,
    11,
    13
+  ],
+  "wh": [
+   1075,
+   1195
   ],
   "whr": [
    1075,
@@ -8298,16 +7764,16 @@
   "id": "e-11",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 11",
   "img": "e-11.jpg",
-  "wh": [
-   1075,
-   472
-  ],
   "imgr": "e-11-r.jpg",
   "ap": [
    9,
    10,
    11,
    13
+  ],
+  "wh": [
+   1075,
+   472
   ],
   "whr": [
    1075,
@@ -8328,16 +7794,16 @@
   "id": "e-12",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 12",
   "img": "e-12.jpg",
-  "wh": [
-   1075,
-   402
-  ],
   "imgr": "e-12-r.jpg",
   "ap": [
    9,
    10,
    11,
    13
+  ],
+  "wh": [
+   1075,
+   402
   ],
   "whr": [
    1075,
@@ -8358,16 +7824,16 @@
   "id": "e-13",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 13",
   "img": "e-13.jpg",
-  "wh": [
-   1075,
-   181
-  ],
   "imgr": "e-13-r.jpg",
   "ap": [
    9,
    10,
    11,
    13
+  ],
+  "wh": [
+   1075,
+   181
   ],
   "whr": [
    1075,
@@ -8392,16 +7858,16 @@
   "id": "e-14",
   "nombre": "Rgto. 2024/1349 (retorno fronterizo) · Artículo 14",
   "img": "e-14.jpg",
-  "wh": [
-   1075,
-   673
-  ],
   "imgr": "e-14-r.jpg",
   "ap": [
    9,
    10,
    11,
    13
+  ],
+  "wh": [
+   1075,
+   673
   ],
   "whr": [
    1075,
@@ -8418,13 +7884,13 @@
   "id": "f-1",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 1",
   "img": "f-1.jpg",
-  "wh": [
-   1075,
-   536
-  ],
   "imgr": "f-1-r.jpg",
   "ap": [
    2
+  ],
+  "wh": [
+   1075,
+   536
   ],
   "whr": [
    1075,
@@ -8445,13 +7911,13 @@
   "id": "f-2",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 2",
   "img": "f-2.jpg",
-  "wh": [
-   1075,
-   1829
-  ],
   "imgr": "f-2-r.jpg",
   "ap": [
    2
+  ],
+  "wh": [
+   1075,
+   1829
   ],
   "whr": [
    1075,
@@ -8468,12 +7934,12 @@
   "id": "f-4",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 4",
   "img": "f-4.jpg",
+  "imgr": "f-4-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    978
   ],
-  "imgr": "f-4-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    600
@@ -8506,12 +7972,12 @@
   "id": "f-8",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 8",
   "img": "f-8.jpg",
+  "imgr": "f-8-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3131
   ],
-  "imgr": "f-8-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    507
@@ -8535,12 +8001,12 @@
   "id": "f-13",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 13",
   "img": "f-13.jpg",
+  "imgr": "f-13-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    704
   ],
-  "imgr": "f-13-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    652
@@ -8580,12 +8046,12 @@
   "id": "f-15",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 15",
   "img": "f-15.jpg",
+  "imgr": "f-15-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2183
   ],
-  "imgr": "f-15-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    857
@@ -8609,12 +8075,12 @@
   "id": "f-17",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 17",
   "img": "f-17.jpg",
+  "imgr": "f-17-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    524
   ],
-  "imgr": "f-17-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    251
@@ -8630,13 +8096,13 @@
   "id": "f-18",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 18",
   "img": "f-18.jpg",
-  "wh": [
-   1075,
-   269
-  ],
   "imgr": "f-18-r.jpg",
   "ap": [
    18
+  ],
+  "wh": [
+   1075,
+   269
   ],
   "whr": [
    1075,
@@ -8661,13 +8127,13 @@
   "id": "f-19",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 19",
   "img": "f-19.jpg",
-  "wh": [
-   1075,
-   539
-  ],
   "imgr": "f-19-r.jpg",
   "ap": [
    18
+  ],
+  "wh": [
+   1075,
+   539
   ],
   "whr": [
    1075,
@@ -8688,13 +8154,13 @@
   "id": "f-20",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 20",
   "img": "f-20.jpg",
-  "wh": [
-   1075,
-   852
-  ],
   "imgr": "f-20-r.jpg",
   "ap": [
    18
+  ],
+  "wh": [
+   1075,
+   852
   ],
   "whr": [
    1075,
@@ -8731,13 +8197,13 @@
   "id": "f-21",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 21",
   "img": "f-21.jpg",
-  "wh": [
-   1075,
-   648
-  ],
   "imgr": "f-21-r.jpg",
   "ap": [
    18
+  ],
+  "wh": [
+   1075,
+   648
   ],
   "whr": [
    1075,
@@ -8766,12 +8232,12 @@
   "id": "f-24",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 24",
   "img": "f-24.jpg",
+  "imgr": "f-24-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    558
   ],
-  "imgr": "f-24-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    418
@@ -8791,12 +8257,12 @@
   "id": "f-25",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 25",
   "img": "f-25.jpg",
+  "imgr": "f-25-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    661
   ],
-  "imgr": "f-25-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    598
@@ -8832,13 +8298,13 @@
   "id": "f-26",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 26",
   "img": "f-26.jpg",
-  "wh": [
-   1075,
-   1551
-  ],
   "imgr": "f-26-r.jpg",
   "ap": [
    18
+  ],
+  "wh": [
+   1075,
+   1551
   ],
   "whr": [
    1075,
@@ -8867,13 +8333,13 @@
   "id": "f-28",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 28",
   "img": "f-28.jpg",
-  "wh": [
-   1075,
-   395
-  ],
   "imgr": "f-28-r.jpg",
   "ap": [
    28
+  ],
+  "wh": [
+   1075,
+   395
   ],
   "whr": [
    1075,
@@ -8890,13 +8356,13 @@
   "id": "f-29",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 29",
   "img": "f-29.jpg",
-  "wh": [
-   1075,
-   680
-  ],
   "imgr": "f-29-r.jpg",
   "ap": [
    28
+  ],
+  "wh": [
+   1075,
+   680
   ],
   "whr": [
    1075,
@@ -8929,13 +8395,13 @@
   "id": "f-30",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 30",
   "img": "f-30.jpg",
-  "wh": [
-   1075,
-   1030
-  ],
   "imgr": "f-30-r.jpg",
   "ap": [
    28
+  ],
+  "wh": [
+   1075,
+   1030
   ],
   "whr": [
    1075,
@@ -8960,12 +8426,12 @@
   "id": "f-31",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 31",
   "img": "f-31.jpg",
+  "imgr": "f-31-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    634
   ],
-  "imgr": "f-31-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    141
@@ -8985,12 +8451,12 @@
   "id": "f-32",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 32",
   "img": "f-32.jpg",
+  "imgr": "f-32-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    938
   ],
-  "imgr": "f-32-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    330
@@ -9014,12 +8480,12 @@
   "id": "f-33",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 33",
   "img": "f-33.jpg",
+  "imgr": "f-33-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    434
   ],
-  "imgr": "f-33-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    351
@@ -9043,12 +8509,12 @@
   "id": "f-34",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 34",
   "img": "f-34.jpg",
+  "imgr": "f-34-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    682
   ],
-  "imgr": "f-34-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    273
@@ -9072,12 +8538,12 @@
   "id": "f-35",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 35",
   "img": "f-35.jpg",
+  "imgr": "f-35-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1588
   ],
-  "imgr": "f-35-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    336
@@ -9101,12 +8567,12 @@
   "id": "f-36",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 36",
   "img": "f-36.jpg",
+  "imgr": "f-36-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    284
   ],
-  "imgr": "f-36-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    124
@@ -9122,12 +8588,12 @@
   "id": "f-37",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 37",
   "img": "f-37.jpg",
+  "imgr": "f-37-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    458
   ],
-  "imgr": "f-37-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    331
@@ -9143,12 +8609,12 @@
   "id": "f-38",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 38",
   "img": "f-38.jpg",
+  "imgr": "f-38-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    258
   ],
-  "imgr": "f-38-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    192
@@ -9168,13 +8634,13 @@
   "id": "f-39",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 39",
   "img": "f-39.jpg",
-  "wh": [
-   1075,
-   260
-  ],
   "imgr": "f-39-r.jpg",
   "ap": [
    27
+  ],
+  "wh": [
+   1075,
+   260
   ],
   "whr": [
    1075,
@@ -9199,12 +8665,12 @@
   "id": "f-40",
   "nombre": "Rgto. de ejecución 2021/581 (EUROSUR) · Artículo 40",
   "img": "f-40.jpg",
+  "imgr": "f-40-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    224
   ],
-  "imgr": "f-40-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    193
@@ -9226,21 +8692,17 @@
   "img": "f-41.jpg",
   "wh": [
    1075,
-   18415
+   300
   ],
   "imgr": "f-41-r.jpg",
   "ap": [],
   "whr": [
    1075,
-   150
+   176
   ],
   "tr": [
    [
     0,
-    93
-   ],
-   [
-    149,
     176
    ]
   ]
