@@ -1,0 +1,3459 @@
+[
+ {
+  "id": "a-9",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 9",
+  "img": "a-9.jpg",
+  "wh": [
+   1075,
+   135
+  ]
+ },
+ {
+  "id": "a-10",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 10",
+  "img": "a-10.jpg",
+  "wh": [
+   1075,
+   138
+  ]
+ },
+ {
+  "id": "a-11",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 11",
+  "img": "a-11.jpg",
+  "wh": [
+   1075,
+   139
+  ]
+ },
+ {
+  "id": "a-12",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 12",
+  "img": "a-12.jpg",
+  "wh": [
+   1075,
+   442
+  ],
+  "imgr": "a-12-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   340
+  ],
+  "tr": [
+   [
+    0,
+    45
+   ],
+   [
+    116,
+    149
+   ],
+   [
+    233,
+    435
+   ]
+  ]
+ },
+ {
+  "id": "a-13",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 13",
+  "img": "a-13.jpg",
+  "wh": [
+   1075,
+   304
+  ]
+ },
+ {
+  "id": "a-14",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 14",
+  "img": "a-14.jpg",
+  "wh": [
+   1075,
+   9692
+  ],
+  "imgr": "a-14-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "whr": [
+   1075,
+   786
+  ],
+  "tr": [
+   [
+    0,
+    45
+   ],
+   [
+    412,
+    460
+   ],
+   [
+    541,
+    582
+   ],
+   [
+    6579,
+    6619
+   ],
+   [
+    6671,
+    6728
+   ],
+   [
+    6747,
+    7079
+   ],
+   [
+    8901,
+    8944
+   ]
+  ]
+ },
+ {
+  "id": "a-15",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 15",
+  "img": "a-15.jpg",
+  "wh": [
+   1075,
+   713
+  ]
+ },
+ {
+  "id": "a-16",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 16",
+  "img": "a-16.jpg",
+  "wh": [
+   1075,
+   208
+  ],
+  "imgr": "a-16-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   158
+  ],
+  "tr": [
+   [
+    0,
+    158
+   ]
+  ]
+ },
+ {
+  "id": "a-17",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 17",
+  "img": "a-17.jpg",
+  "imgr": "a-17-r.jpg",
+  "ap": [
+   3
+  ],
+  "wh": [
+   1075,
+   1039
+  ],
+  "whr": [
+   1075,
+   499
+  ],
+  "tr": [
+   [
+    0,
+    52
+   ],
+   [
+    94,
+    175
+   ],
+   [
+    487,
+    525
+   ],
+   [
+    551,
+    588
+   ],
+   [
+    630,
+    733
+   ],
+   [
+    759,
+    797
+   ]
+  ]
+ },
+ {
+  "id": "a-18",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 18",
+  "img": "a-18.jpg",
+  "wh": [
+   1075,
+   755
+  ],
+  "imgr": "a-18-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
+  "whr": [
+   1075,
+   526
+  ],
+  "tr": [
+   [
+    0,
+    87
+   ],
+   [
+    131,
+    396
+   ],
+   [
+    424,
+    457
+   ],
+   [
+    524,
+    575
+   ]
+  ]
+ },
+ {
+  "id": "a-19",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 19",
+  "img": "a-19.jpg",
+  "wh": [
+   1075,
+   399
+  ],
+  "imgr": "a-19-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   337
+  ],
+  "tr": [
+   [
+    0,
+    89
+   ],
+   [
+    103,
+    321
+   ]
+  ]
+ },
+ {
+  "id": "a-20",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 20",
+  "img": "a-20.jpg",
+  "wh": [
+   1075,
+   405
+  ],
+  "imgr": "a-20-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   309
+  ],
+  "tr": [
+   [
+    0,
+    115
+   ],
+   [
+    132,
+    234
+   ],
+   [
+    315,
+    347
+   ]
+  ]
+ },
+ {
+  "id": "a-21",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 21",
+  "img": "a-21.jpg",
+  "wh": [
+   1075,
+   310
+  ],
+  "imgr": "a-21-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   280
+  ],
+  "tr": [
+   [
+    0,
+    87
+   ],
+   [
+    110,
+    143
+   ],
+   [
+    215,
+    247
+   ],
+   [
+    272,
+    310
+   ]
+  ]
+ },
+ {
+  "id": "a-22",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 22",
+  "img": "a-22.jpg",
+  "wh": [
+   1075,
+   346
+  ],
+  "imgr": "a-22-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   335
+  ],
+  "tr": [
+   [
+    0,
+    134
+   ],
+   [
+    164,
+    231
+   ],
+   [
+    267,
+    341
+   ]
+  ]
+ },
+ {
+  "id": "a-23",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 23",
+  "img": "a-23.jpg",
+  "wh": [
+   1075,
+   209
+  ],
+  "imgr": "a-23-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   164
+  ],
+  "tr": [
+   [
+    0,
+    164
+   ]
+  ]
+ },
+ {
+  "id": "a-25",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 25",
+  "img": "a-25.jpg",
+  "wh": [
+   1075,
+   603
+  ],
+  "imgr": "a-25-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   361
+  ],
+  "tr": [
+   [
+    0,
+    44
+   ],
+   [
+    190,
+    477
+   ]
+  ]
+ },
+ {
+  "id": "a-26",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 26",
+  "img": "a-26.jpg",
+  "wh": [
+   1075,
+   332
+  ]
+ },
+ {
+  "id": "a-27",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 27",
+  "img": "a-27.jpg",
+  "wh": [
+   1075,
+   197
+  ]
+ },
+ {
+  "id": "a-28",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 28",
+  "img": "a-28.jpg",
+  "wh": [
+   1075,
+   150
+  ]
+ },
+ {
+  "id": "a-29",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 29",
+  "img": "a-29.jpg",
+  "wh": [
+   1075,
+   233
+  ]
+ },
+ {
+  "id": "a-30",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 30",
+  "img": "a-30.jpg",
+  "wh": [
+   1075,
+   367
+  ],
+  "imgr": "a-30-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   240
+  ],
+  "tr": [
+   [
+    0,
+    111
+   ],
+   [
+    200,
+    299
+   ]
+  ]
+ },
+ {
+  "id": "a-31",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 31",
+  "img": "a-31.jpg",
+  "wh": [
+   1075,
+   421
+  ],
+  "imgr": "a-31-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   153
+  ],
+  "tr": [
+   [
+    0,
+    84
+   ],
+   [
+    165,
+    204
+   ]
+  ]
+ },
+ {
+  "id": "a-33",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 33",
+  "img": "a-33.jpg",
+  "wh": [
+   1075,
+   166
+  ],
+  "imgr": "a-33-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   136
+  ],
+  "tr": [
+   [
+    0,
+    136
+   ]
+  ]
+ },
+ {
+  "id": "a-34",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 34",
+  "img": "a-34.jpg",
+  "wh": [
+   1075,
+   179
+  ]
+ },
+ {
+  "id": "a-35",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 35",
+  "img": "a-35.jpg",
+  "wh": [
+   1075,
+   111
+  ]
+ },
+ {
+  "id": "a-36",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 36",
+  "img": "a-36.jpg",
+  "wh": [
+   1075,
+   197
+  ],
+  "imgr": "a-36-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   168
+  ],
+  "tr": [
+   [
+    0,
+    81
+   ],
+   [
+    135,
+    192
+   ]
+  ]
+ },
+ {
+  "id": "a-37",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 37",
+  "img": "a-37.jpg",
+  "wh": [
+   1075,
+   195
+  ]
+ },
+ {
+  "id": "a-38",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 38",
+  "img": "a-38.jpg",
+  "wh": [
+   1075,
+   156
+  ]
+ },
+ {
+  "id": "a-39",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 39",
+  "img": "a-39.jpg",
+  "wh": [
+   1075,
+   226
+  ]
+ },
+ {
+  "id": "a-41",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 41",
+  "img": "a-41.jpg",
+  "wh": [
+   1075,
+   129
+  ]
+ },
+ {
+  "id": "a-43",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 43",
+  "img": "a-43.jpg",
+  "wh": [
+   1075,
+   205
+  ]
+ },
+ {
+  "id": "a-46",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 46",
+  "img": "a-46.jpg",
+  "wh": [
+   1075,
+   249
+  ]
+ },
+ {
+  "id": "a-100",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 100",
+  "img": "a-100.jpg",
+  "wh": [
+   1075,
+   228
+  ]
+ },
+ {
+  "id": "a-101",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 101",
+  "img": "a-101.jpg",
+  "wh": [
+   1075,
+   139
+  ]
+ },
+ {
+  "id": "a-102",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 102",
+  "img": "a-102.jpg",
+  "wh": [
+   1075,
+   458
+  ],
+  "imgr": "a-102-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   401
+  ],
+  "tr": [
+   [
+    0,
+    89
+   ],
+   [
+    134,
+    167
+   ],
+   [
+    247,
+    287
+   ],
+   [
+    325,
+    389
+   ],
+   [
+    400,
+    455
+   ]
+  ]
+ },
+ {
+  "id": "a-103",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 103",
+  "img": "a-103.jpg",
+  "wh": [
+   1075,
+   246
+  ]
+ },
+ {
+  "id": "a-104",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 104",
+  "img": "a-104.jpg",
+  "wh": [
+   1075,
+   230
+  ]
+ },
+ {
+  "id": "a-105",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 105",
+  "img": "a-105.jpg",
+  "wh": [
+   1075,
+   1138
+  ]
+ },
+ {
+  "id": "a-106",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 106",
+  "img": "a-106.jpg",
+  "wh": [
+   1075,
+   2028
+  ],
+  "imgr": "a-106-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   211
+  ],
+  "tr": [
+   [
+    0,
+    122
+   ],
+   [
+    150,
+    209
+   ]
+  ]
+ },
+ {
+  "id": "a-108",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 108",
+  "img": "a-108.jpg",
+  "wh": [
+   1075,
+   138
+  ],
+  "imgr": "a-108-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   104
+  ],
+  "tr": [
+   [
+    0,
+    104
+   ]
+  ]
+ },
+ {
+  "id": "a-109",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 109",
+  "img": "a-109.jpg",
+  "wh": [
+   1075,
+   1254
+  ],
+  "imgr": "a-109-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
+  "whr": [
+   1075,
+   823
+  ],
+  "tr": [
+   [
+    0,
+    574
+   ],
+   [
+    604,
+    646
+   ],
+   [
+    822,
+    969
+   ]
+  ]
+ },
+ {
+  "id": "a-110",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 110",
+  "img": "a-110.jpg",
+  "wh": [
+   1075,
+   274
+  ]
+ },
+ {
+  "id": "a-111",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 111",
+  "img": "a-111.jpg",
+  "wh": [
+   1075,
+   138
+  ]
+ },
+ {
+  "id": "a-112",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 112",
+  "img": "a-112.jpg",
+  "wh": [
+   1075,
+   5478
+  ],
+  "imgr": "a-112-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   377
+  ],
+  "tr": [
+   [
+    0,
+    105
+   ],
+   [
+    142,
+    198
+   ],
+   [
+    3782,
+    3820
+   ],
+   [
+    3894,
+    3926
+   ],
+   [
+    5392,
+    5418
+   ]
+  ]
+ },
+ {
+  "id": "a-115",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 115",
+  "img": "a-115.jpg",
+  "wh": [
+   1075,
+   100
+  ],
+  "imgr": "a-115-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   96
+  ],
+  "tr": [
+   [
+    0,
+    42
+   ],
+   [
+    46,
+    100
+   ]
+  ]
+ },
+ {
+  "id": "a-116",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 116",
+  "img": "a-116.jpg",
+  "wh": [
+   1075,
+   178
+  ],
+  "imgr": "a-116-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   101
+  ],
+  "tr": [
+   [
+    0,
+    101
+   ]
+  ]
+ },
+ {
+  "id": "a-117",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 117",
+  "img": "a-117.jpg",
+  "wh": [
+   1075,
+   3409
+  ],
+  "imgr": "a-117-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   106
+  ],
+  "tr": [
+   [
+    0,
+    42
+   ],
+   [
+    68,
+    102
+   ]
+  ]
+ },
+ {
+  "id": "a-118",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 118",
+  "img": "a-118.jpg",
+  "wh": [
+   1075,
+   1733
+  ]
+ },
+ {
+  "id": "a-121",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 121",
+  "img": "a-121.jpg",
+  "wh": [
+   1075,
+   540
+  ],
+  "imgr": "a-121-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   219
+  ],
+  "tr": [
+   [
+    0,
+    92
+   ],
+   [
+    191,
+    226
+   ],
+   [
+    402,
+    434
+   ]
+  ]
+ },
+ {
+  "id": "a-123",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 123",
+  "img": "a-123.jpg",
+  "wh": [
+   1075,
+   1241
+  ],
+  "imgr": "a-123-r.jpg",
+  "ap": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "whr": [
+   1075,
+   896
+  ],
+  "tr": [
+   [
+    0,
+    44
+   ],
+   [
+    127,
+    330
+   ],
+   [
+    413,
+    454
+   ],
+   [
+    473,
+    534
+   ],
+   [
+    592,
+    711
+   ],
+   [
+    745,
+    960
+   ],
+   [
+    1018,
+    1051
+   ]
+  ]
+ },
+ {
+  "id": "a-259",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 259",
+  "img": "a-259.jpg",
+  "wh": [
+   1075,
+   139
+  ]
+ },
+ {
+  "id": "a-260",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 260",
+  "img": "a-260.jpg",
+  "wh": [
+   1075,
+   198
+  ],
+  "imgr": "a-260-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   185
+  ],
+  "tr": [
+   [
+    0,
+    89
+   ],
+   [
+    107,
+    173
+   ]
+  ]
+ },
+ {
+  "id": "a-261",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 261",
+  "img": "a-261.jpg",
+  "wh": [
+   1075,
+   449
+  ],
+  "imgr": "a-261-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   382
+  ],
+  "tr": [
+   [
+    0,
+    202
+   ],
+   [
+    242,
+    291
+   ],
+   [
+    313,
+    384
+   ]
+  ]
+ },
+ {
+  "id": "a-264",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 264",
+  "img": "a-264.jpg",
+  "wh": [
+   1075,
+   257
+  ],
+  "imgr": "a-264-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   146
+  ],
+  "tr": [
+   [
+    0,
+    83
+   ],
+   [
+    193,
+    226
+   ]
+  ]
+ },
+ {
+  "id": "a-265",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 265",
+  "img": "a-265.jpg",
+  "wh": [
+   1075,
+   292
+  ]
+ },
+ {
+  "id": "a-270",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 270",
+  "img": "a-270.jpg",
+  "wh": [
+   1075,
+   206
+  ]
+ },
+ {
+  "id": "a-272",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 272",
+  "img": "a-272.jpg",
+  "wh": [
+   1075,
+   239
+  ]
+ },
+ {
+  "id": "a-273",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 273",
+  "img": "a-273.jpg",
+  "wh": [
+   1075,
+   217
+  ],
+  "imgr": "a-273-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   200
+  ],
+  "tr": [
+   [
+    0,
+    114
+   ],
+   [
+    134,
+    190
+   ]
+  ]
+ },
+ {
+  "id": "a-275",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 275",
+  "img": "a-275.jpg",
+  "wh": [
+   1075,
+   294
+  ],
+  "imgr": "a-275-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   196
+  ],
+  "tr": [
+   [
+    0,
+    109
+   ],
+   [
+    181,
+    238
+   ]
+  ]
+ },
+ {
+  "id": "a-276",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 276",
+  "img": "a-276.jpg",
+  "wh": [
+   1075,
+   162
+  ]
+ },
+ {
+  "id": "a-277",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 277",
+  "img": "a-277.jpg",
+  "wh": [
+   1075,
+   706
+  ],
+  "imgr": "a-277-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   449
+  ],
+  "tr": [
+   [
+    0,
+    45
+   ],
+   [
+    203,
+    241
+   ],
+   [
+    361,
+    394
+   ],
+   [
+    419,
+    571
+   ],
+   [
+    621,
+    682
+   ]
+  ]
+ },
+ {
+  "id": "a-278",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 278",
+  "img": "a-278.jpg",
+  "wh": [
+   1075,
+   281
+  ],
+  "imgr": "a-278-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   232
+  ],
+  "tr": [
+   [
+    0,
+    46
+   ],
+   [
+    66,
+    105
+   ],
+   [
+    189,
+    276
+   ]
+  ]
+ },
+ {
+  "id": "a-280",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 280",
+  "img": "a-280.jpg",
+  "wh": [
+   1075,
+   115
+  ]
+ },
+ {
+  "id": "a-281",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 281",
+  "img": "a-281.jpg",
+  "wh": [
+   1075,
+   1195
+  ],
+  "imgr": "a-281-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   340
+  ],
+  "tr": [
+   [
+    0,
+    44
+   ],
+   [
+    104,
+    306
+   ],
+   [
+    357,
+    391
+   ]
+  ]
+ },
+ {
+  "id": "a-282",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 282",
+  "img": "a-282.jpg",
+  "wh": [
+   1075,
+   2753
+  ],
+  "imgr": "a-282-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "whr": [
+   1075,
+   1450
+  ],
+  "tr": [
+   [
+    0,
+    45
+   ],
+   [
+    437,
+    625
+   ],
+   [
+    699,
+    733
+   ],
+   [
+    818,
+    925
+   ],
+   [
+    964,
+    1036
+   ],
+   [
+    1155,
+    1189
+   ],
+   [
+    1241,
+    1332
+   ],
+   [
+    1412,
+    1450
+   ],
+   [
+    1517,
+    1552
+   ],
+   [
+    1752,
+    1814
+   ],
+   [
+    2115,
+    2142
+   ],
+   [
+    2174,
+    2293
+   ],
+   [
+    2422,
+    2595
+   ],
+   [
+    2630,
+    2665
+   ]
+  ]
+ },
+ {
+  "id": "a-283",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 283",
+  "img": "a-283.jpg",
+  "wh": [
+   1075,
+   656
+  ],
+  "imgr": "a-283-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   570
+  ],
+  "tr": [
+   [
+    0,
+    136
+   ],
+   [
+    161,
+    255
+   ],
+   [
+    277,
+    468
+   ],
+   [
+    563,
+    622
+   ]
+  ]
+ },
+ {
+  "id": "a-284",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 284",
+  "img": "a-284.jpg",
+  "wh": [
+   1075,
+   902
+  ],
+  "imgr": "a-284-r.jpg",
+  "ap": [
+   1,
+   3,
+   4
+  ],
+  "whr": [
+   1075,
+   646
+  ],
+  "tr": [
+   [
+    0,
+    88
+   ],
+   [
+    312,
+    475
+   ],
+   [
+    506,
+    841
+   ]
+  ]
+ },
+ {
+  "id": "a-285",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 285",
+  "img": "a-285.jpg",
+  "wh": [
+   1075,
+   143
+  ],
+  "imgr": "a-285-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   109
+  ],
+  "tr": [
+   [
+    0,
+    109
+   ]
+  ]
+ },
+ {
+  "id": "a-290",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 290",
+  "img": "a-290.jpg",
+  "wh": [
+   1075,
+   196
+  ]
+ },
+ {
+  "id": "a-292",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 292",
+  "img": "a-292.jpg",
+  "wh": [
+   1075,
+   229
+  ]
+ },
+ {
+  "id": "a-293",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 293",
+  "img": "a-293.jpg",
+  "wh": [
+   1075,
+   171
+  ]
+ },
+ {
+  "id": "a-295",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 295",
+  "img": "a-295.jpg",
+  "wh": [
+   1075,
+   387
+  ]
+ },
+ {
+  "id": "a-297",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 297",
+  "img": "a-297.jpg",
+  "wh": [
+   1075,
+   297
+  ]
+ },
+ {
+  "id": "a-298",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 298",
+  "img": "a-298.jpg",
+  "wh": [
+   1075,
+   901
+  ],
+  "imgr": "a-298-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   306
+  ],
+  "tr": [
+   [
+    0,
+    306
+   ]
+  ]
+ },
+ {
+  "id": "a-326",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 326",
+  "img": "a-326.jpg",
+  "wh": [
+   1075,
+   371
+  ]
+ },
+ {
+  "id": "a-327",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 327",
+  "img": "a-327.jpg",
+  "wh": [
+   1075,
+   141
+  ]
+ },
+ {
+  "id": "a-328",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 328",
+  "img": "a-328.jpg",
+  "wh": [
+   1075,
+   138
+  ]
+ },
+ {
+  "id": "a-329",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 329",
+  "img": "a-329.jpg",
+  "wh": [
+   1075,
+   161
+  ]
+ },
+ {
+  "id": "a-330",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 330",
+  "img": "a-330.jpg",
+  "wh": [
+   1075,
+   192
+  ],
+  "imgr": "a-330-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   106
+  ],
+  "tr": [
+   [
+    0,
+    106
+   ]
+  ]
+ },
+ {
+  "id": "a-332",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 332",
+  "img": "a-332.jpg",
+  "wh": [
+   1075,
+   139
+  ],
+  "imgr": "a-332-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   106
+  ],
+  "tr": [
+   [
+    0,
+    106
+   ]
+  ]
+ },
+ {
+  "id": "a-333",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 333",
+  "img": "a-333.jpg",
+  "wh": [
+   1075,
+   472
+  ]
+ },
+ {
+  "id": "a-334",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 334",
+  "img": "a-334.jpg",
+  "wh": [
+   1075,
+   659
+  ],
+  "imgr": "a-334-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   449
+  ],
+  "tr": [
+   [
+    0,
+    449
+   ]
+  ]
+ },
+ {
+  "id": "a-335",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 335",
+  "img": "a-335.jpg",
+  "wh": [
+   1075,
+   241
+  ]
+ },
+ {
+  "id": "a-340",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 340",
+  "img": "a-340.jpg",
+  "wh": [
+   1075,
+   170
+  ]
+ },
+ {
+  "id": "a-341",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 341",
+  "img": "a-341.jpg",
+  "wh": [
+   1075,
+   214
+  ],
+  "imgr": "a-341-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   85
+  ],
+  "tr": [
+   [
+    0,
+    85
+   ]
+  ]
+ },
+ {
+  "id": "a-344",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 344",
+  "img": "a-344.jpg",
+  "wh": [
+   1075,
+   142
+  ]
+ },
+ {
+  "id": "a-345",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 345",
+  "img": "a-345.jpg",
+  "wh": [
+   1075,
+   166
+  ]
+ },
+ {
+  "id": "a-347",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 347",
+  "img": "a-347.jpg",
+  "wh": [
+   1075,
+   137
+  ],
+  "imgr": "a-347-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   88
+  ],
+  "tr": [
+   [
+    0,
+    88
+   ]
+  ]
+ },
+ {
+  "id": "a-353",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 353",
+  "img": "a-353.jpg",
+  "wh": [
+   1075,
+   238
+  ],
+  "imgr": "a-353-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   162
+  ],
+  "tr": [
+   [
+    0,
+    104
+   ],
+   [
+    156,
+    184
+   ]
+  ]
+ },
+ {
+  "id": "a-354",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 354",
+  "img": "a-354.jpg",
+  "wh": [
+   1075,
+   411
+  ],
+  "imgr": "a-354-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   84
+  ],
+  "tr": [
+   [
+    0,
+    84
+   ]
+  ]
+ },
+ {
+  "id": "a-355",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 355",
+  "img": "a-355.jpg",
+  "wh": [
+   1075,
+   155
+  ]
+ },
+ {
+  "id": "a-356",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 356",
+  "img": "a-356.jpg",
+  "wh": [
+   1075,
+   438
+  ],
+  "imgr": "a-356-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   218
+  ],
+  "tr": [
+   [
+    0,
+    84
+   ],
+   [
+    206,
+    245
+   ],
+   [
+    376,
+    411
+   ]
+  ]
+ },
+ {
+  "id": "a-358",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 358",
+  "img": "a-358.jpg",
+  "wh": [
+   1075,
+   158
+  ]
+ },
+ {
+  "id": "a-360",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 360",
+  "img": "a-360.jpg",
+  "wh": [
+   1075,
+   159
+  ],
+  "imgr": "a-360-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   82
+  ],
+  "tr": [
+   [
+    0,
+    82
+   ]
+  ]
+ },
+ {
+  "id": "a-367",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 367",
+  "img": "a-367.jpg",
+  "wh": [
+   1075,
+   3612
+  ],
+  "imgr": "a-367-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "whr": [
+   1075,
+   2468
+  ],
+  "tr": [
+   [
+    0,
+    137
+   ],
+   [
+    401,
+    434
+   ],
+   [
+    468,
+    914
+   ],
+   [
+    933,
+    1207
+   ],
+   [
+    1411,
+    1479
+   ],
+   [
+    1572,
+    1604
+   ],
+   [
+    1630,
+    1853
+   ],
+   [
+    1881,
+    2135
+   ],
+   [
+    2214,
+    2341
+   ],
+   [
+    2397,
+    2433
+   ],
+   [
+    2728,
+    2993
+   ],
+   [
+    3168,
+    3411
+   ]
+  ]
+ },
+ {
+  "id": "a-368",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 368",
+  "img": "a-368.jpg",
+  "wh": [
+   1075,
+   162
+  ]
+ },
+ {
+  "id": "a-369",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 369",
+  "img": "a-369.jpg",
+  "wh": [
+   1075,
+   259
+  ]
+ },
+ {
+  "id": "a-370",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 370",
+  "img": "a-370.jpg",
+  "wh": [
+   1075,
+   202
+  ],
+  "imgr": "a-370-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   84
+  ],
+  "tr": [
+   [
+    0,
+    84
+   ]
+  ]
+ },
+ {
+  "id": "a-375",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 375",
+  "img": "a-375.jpg",
+  "wh": [
+   1075,
+   290
+  ],
+  "imgr": "a-375-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   163
+  ],
+  "tr": [
+   [
+    0,
+    163
+   ]
+  ]
+ },
+ {
+  "id": "a-377",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 377",
+  "img": "a-377.jpg",
+  "wh": [
+   1075,
+   229
+  ],
+  "imgr": "a-377-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   216
+  ],
+  "tr": [
+   [
+    0,
+    52
+   ],
+   [
+    106,
+    145
+   ],
+   [
+    161,
+    226
+   ]
+  ]
+ },
+ {
+  "id": "a-380",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 380",
+  "img": "a-380.jpg",
+  "wh": [
+   1075,
+   286
+  ],
+  "imgr": "a-380-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   203
+  ],
+  "tr": [
+   [
+    0,
+    140
+   ],
+   [
+    171,
+    204
+   ]
+  ]
+ },
+ {
+  "id": "a-383",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 383",
+  "img": "a-383.jpg",
+  "wh": [
+   1075,
+   229
+  ]
+ },
+ {
+  "id": "a-384",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 384",
+  "img": "a-384.jpg",
+  "wh": [
+   1075,
+   4747
+  ],
+  "imgr": "a-384-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   1635
+  ],
+  "tr": [
+   [
+    0,
+    242
+   ],
+   [
+    266,
+    360
+   ],
+   [
+    386,
+    614
+   ],
+   [
+    643,
+    1080
+   ],
+   [
+    1123,
+    1546
+   ],
+   [
+    1561,
+    1622
+   ]
+  ]
+ },
+ {
+  "id": "a-489",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 489",
+  "img": "a-489.jpg",
+  "wh": [
+   1075,
+   92
+  ]
+ },
+ {
+  "id": "a-490",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 490",
+  "img": "a-490.jpg",
+  "wh": [
+   1075,
+   397
+  ],
+  "imgr": "a-490-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   265
+  ],
+  "tr": [
+   [
+    0,
+    45
+   ],
+   [
+    92,
+    132
+   ],
+   [
+    201,
+    251
+   ],
+   [
+    320,
+    360
+   ]
+  ]
+ },
+ {
+  "id": "a-495",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 495",
+  "img": "a-495.jpg",
+  "wh": [
+   1075,
+   141
+  ],
+  "imgr": "a-495-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   117
+  ],
+  "tr": [
+   [
+    0,
+    117
+   ]
+  ]
+ },
+ {
+  "id": "a-496",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 496",
+  "img": "a-496.jpg",
+  "wh": [
+   1075,
+   214
+  ],
+  "imgr": "a-496-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   179
+  ],
+  "tr": [
+   [
+    0,
+    116
+   ],
+   [
+    150,
+    183
+   ]
+  ]
+ },
+ {
+  "id": "a-497",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 497",
+  "img": "a-497.jpg",
+  "wh": [
+   1075,
+   1311
+  ]
+ },
+ {
+  "id": "a-501",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 501",
+  "img": "a-501.jpg",
+  "wh": [
+   1075,
+   722
+  ],
+  "imgr": "a-501-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   252
+  ],
+  "tr": [
+   [
+    0,
+    159
+   ],
+   [
+    608,
+    671
+   ]
+  ]
+ },
+ {
+  "id": "a-520",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 520",
+  "img": "a-520.jpg",
+  "wh": [
+   1075,
+   4516
+  ],
+  "imgr": "a-520-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   7,
+   8
+  ],
+  "whr": [
+   1075,
+   2578
+  ],
+  "tr": [
+   [
+    0,
+    401
+   ],
+   [
+    476,
+    542
+   ],
+   [
+    577,
+    745
+   ],
+   [
+    773,
+    916
+   ],
+   [
+    968,
+    1004
+   ],
+   [
+    1031,
+    1087
+   ],
+   [
+    1112,
+    1448
+   ],
+   [
+    1514,
+    1572
+   ],
+   [
+    1802,
+    1837
+   ],
+   [
+    1886,
+    1917
+   ],
+   [
+    1966,
+    2022
+   ],
+   [
+    2050,
+    2088
+   ],
+   [
+    2116,
+    2239
+   ],
+   [
+    2305,
+    2339
+   ],
+   [
+    2411,
+    2545
+   ],
+   [
+    2592,
+    2709
+   ],
+   [
+    2734,
+    2921
+   ],
+   [
+    3489,
+    3538
+   ]
+  ]
+ },
+ {
+  "id": "a-521",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 521",
+  "img": "a-521.jpg",
+  "wh": [
+   1075,
+   250
+  ],
+  "imgr": "a-521-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   211
+  ],
+  "tr": [
+   [
+    0,
+    52
+   ],
+   [
+    94,
+    127
+   ],
+   [
+    184,
+    250
+   ]
+  ]
+ },
+ {
+  "id": "a-523",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 523",
+  "img": "a-523.jpg",
+  "wh": [
+   1075,
+   180
+  ]
+ },
+ {
+  "id": "a-524",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 524",
+  "img": "a-524.jpg",
+  "wh": [
+   1075,
+   173
+  ]
+ },
+ {
+  "id": "a-525",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 525",
+  "img": "a-525.jpg",
+  "wh": [
+   1075,
+   184
+  ],
+  "imgr": "a-525-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   108
+  ],
+  "tr": [
+   [
+    0,
+    108
+   ]
+  ]
+ },
+ {
+  "id": "a-526",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 526",
+  "img": "a-526.jpg",
+  "wh": [
+   1075,
+   240
+  ],
+  "imgr": "a-526-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   170
+  ],
+  "tr": [
+   [
+    0,
+    50
+   ],
+   [
+    150,
+    240
+   ]
+  ]
+ },
+ {
+  "id": "a-527",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 527",
+  "img": "a-527.jpg",
+  "wh": [
+   1075,
+   969
+  ],
+  "imgr": "a-527-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
+  "whr": [
+   1075,
+   800
+  ],
+  "tr": [
+   [
+    0,
+    81
+   ],
+   [
+    133,
+    215
+   ],
+   [
+    239,
+    308
+   ],
+   [
+    325,
+    468
+   ],
+   [
+    581,
+    761
+   ],
+   [
+    821,
+    916
+   ]
+  ]
+ },
+ {
+  "id": "a-544",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 544",
+  "img": "a-544.jpg",
+  "wh": [
+   1520,
+   5846
+  ],
+  "imgr": "a-544-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4,
+   6
+  ],
+  "whr": [
+   1520,
+   2705
+  ],
+  "tr": [
+   [
+    0,
+    52
+   ],
+   [
+    402,
+    444
+   ],
+   [
+    478,
+    558
+   ],
+   [
+    583,
+    698
+   ],
+   [
+    3437,
+    3728
+   ],
+   [
+    3739,
+    4600
+   ],
+   [
+    4617,
+    4638
+   ],
+   [
+    4681,
+    5264
+   ],
+   [
+    5288,
+    5471
+   ],
+   [
+    5521,
+    5658
+   ],
+   [
+    5750,
+    5790
+   ]
+  ]
+ },
+ {
+  "id": "a-545",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 545",
+  "img": "a-545.jpg",
+  "wh": [
+   1075,
+   113
+  ]
+ },
+ {
+  "id": "a-546",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 546",
+  "img": "a-546.jpg",
+  "wh": [
+   1075,
+   153
+  ]
+ },
+ {
+  "id": "a-547",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 547",
+  "img": "a-547.jpg",
+  "wh": [
+   1075,
+   373
+  ],
+  "imgr": "a-547-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   331
+  ],
+  "tr": [
+   [
+    0,
+    145
+   ],
+   [
+    190,
+    346
+   ]
+  ]
+ },
+ {
+  "id": "a-548",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 548",
+  "img": "a-548.jpg",
+  "wh": [
+   1075,
+   123
+  ],
+  "imgr": "a-548-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   91
+  ],
+  "tr": [
+   [
+    0,
+    91
+   ]
+  ]
+ },
+ {
+  "id": "a-549",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 549",
+  "img": "a-549.jpg",
+  "wh": [
+   1075,
+   218
+  ]
+ },
+ {
+  "id": "a-550",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 550",
+  "img": "a-550.jpg",
+  "wh": [
+   1075,
+   199
+  ]
+ },
+ {
+  "id": "a-553",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 553",
+  "img": "a-553.jpg",
+  "wh": [
+   1075,
+   789
+  ],
+  "imgr": "a-553-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   223
+  ],
+  "tr": [
+   [
+    0,
+    83
+   ],
+   [
+    379,
+    489
+   ]
+  ]
+ },
+ {
+  "id": "a-554",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 554",
+  "img": "a-554.jpg",
+  "wh": [
+   1075,
+   669
+  ],
+  "imgr": "a-554-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   623
+  ],
+  "tr": [
+   [
+    0,
+    90
+   ],
+   [
+    126,
+    203
+   ],
+   [
+    226,
+    340
+   ],
+   [
+    368,
+    538
+   ],
+   [
+    558,
+    610
+   ]
+  ]
+ },
+ {
+  "id": "a-556",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 556",
+  "img": "a-556.jpg",
+  "wh": [
+   1075,
+   174
+  ],
+  "imgr": "a-556-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   94
+  ],
+  "tr": [
+   [
+    0,
+    94
+   ]
+  ]
+ },
+ {
+  "id": "a-564",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 564",
+  "img": "a-564.jpg",
+  "wh": [
+   1075,
+   285
+  ]
+ },
+ {
+  "id": "a-567",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 567",
+  "img": "a-567.jpg",
+  "wh": [
+   1075,
+   161
+  ]
+ },
+ {
+  "id": "a-569",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 569",
+  "img": "a-569.jpg",
+  "wh": [
+   1075,
+   1288
+  ]
+ },
+ {
+  "id": "a-573",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 573",
+  "img": "a-573.jpg",
+  "wh": [
+   1075,
+   138
+  ]
+ },
+ {
+  "id": "a-574",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 574",
+  "img": "a-574.jpg",
+  "wh": [
+   1075,
+   181
+  ],
+  "imgr": "a-574-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   103
+  ],
+  "tr": [
+   [
+    0,
+    103
+   ]
+  ]
+ },
+ {
+  "id": "a-575",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 575",
+  "img": "a-575.jpg",
+  "wh": [
+   1075,
+   229
+  ]
+ },
+ {
+  "id": "a-579",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 579",
+  "img": "a-579.jpg",
+  "imgr": "a-579-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "wh": [
+   1075,
+   1556
+  ],
+  "whr": [
+   1075,
+   1044
+  ],
+  "tr": [
+   [
+    0,
+    55
+   ],
+   [
+    149,
+    187
+   ],
+   [
+    205,
+    263
+   ],
+   [
+    359,
+    744
+   ],
+   [
+    767,
+    892
+   ],
+   [
+    1143,
+    1247
+   ],
+   [
+    1280,
+    1315
+   ],
+   [
+    1396,
+    1430
+   ]
+  ]
+ },
+ {
+  "id": "a-586",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 586",
+  "img": "a-586.jpg",
+  "wh": [
+   1075,
+   319
+  ]
+ },
+ {
+  "id": "a-588",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 588",
+  "img": "a-588.jpg",
+  "wh": [
+   1075,
+   19364
+  ],
+  "imgr": "a-588-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "whr": [
+   1075,
+   4679
+  ],
+  "tr": [
+   [
+    0,
+    45
+   ],
+   [
+    1307,
+    1407
+   ],
+   [
+    1485,
+    1625
+   ],
+   [
+    1644,
+    1680
+   ],
+   [
+    1701,
+    1980
+   ],
+   [
+    2033,
+    2525
+   ],
+   [
+    4968,
+    5077
+   ],
+   [
+    5220,
+    5258
+   ],
+   [
+    5287,
+    5325
+   ],
+   [
+    5350,
+    5472
+   ],
+   [
+    5546,
+    5590
+   ],
+   [
+    5688,
+    5749
+   ],
+   [
+    7249,
+    7462
+   ],
+   [
+    9282,
+    9323
+   ],
+   [
+    10117,
+    10173
+   ],
+   [
+    10323,
+    10364
+   ],
+   [
+    10416,
+    10461
+   ],
+   [
+    10504,
+    10546
+   ],
+   [
+    10614,
+    10658
+   ],
+   [
+    10753,
+    10869
+   ],
+   [
+    10982,
+    11071
+   ],
+   [
+    11780,
+    11820
+   ],
+   [
+    12366,
+    12412
+   ],
+   [
+    13667,
+    13724
+   ],
+   [
+    13760,
+    13828
+   ],
+   [
+    14206,
+    14268
+   ],
+   [
+    14319,
+    14455
+   ],
+   [
+    14504,
+    14548
+   ],
+   [
+    14595,
+    14897
+   ],
+   [
+    14945,
+    15010
+   ],
+   [
+    15149,
+    15194
+   ],
+   [
+    15412,
+    15503
+   ],
+   [
+    15678,
+    15738
+   ],
+   [
+    15904,
+    15957
+   ],
+   [
+    16003,
+    16042
+   ],
+   [
+    16094,
+    16139
+   ],
+   [
+    16145,
+    16170
+   ],
+   [
+    16234,
+    16256
+   ],
+   [
+    16341,
+    16425
+   ],
+   [
+    16875,
+    16939
+   ]
+  ]
+ },
+ {
+  "id": "a-757",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 757",
+  "img": "a-757.jpg",
+  "wh": [
+   1075,
+   236
+  ],
+  "imgr": "a-757-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   225
+  ],
+  "tr": [
+   [
+    0,
+    113
+   ],
+   [
+    127,
+    209
+   ]
+  ]
+ },
+ {
+  "id": "a-759",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 759",
+  "img": "a-759.jpg",
+  "wh": [
+   1075,
+   835
+  ]
+ },
+ {
+  "id": "a-763",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 763",
+  "img": "a-763.jpg",
+  "wh": [
+   1075,
+   141
+  ]
+ },
+ {
+  "id": "a-764",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 764",
+  "img": "a-764.jpg",
+  "wh": [
+   1075,
+   902
+  ],
+  "imgr": "a-764-r.jpg",
+  "ap": [
+   1,
+   3,
+   4
+  ],
+  "whr": [
+   1075,
+   493
+  ],
+  "tr": [
+   [
+    0,
+    180
+   ],
+   [
+    251,
+    295
+   ],
+   [
+    365,
+    457
+   ],
+   [
+    502,
+    589
+   ]
+  ]
+ },
+ {
+  "id": "a-766",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 766",
+  "img": "a-766.jpg",
+  "wh": [
+   1075,
+   1905
+  ],
+  "imgr": "a-766-r.jpg",
+  "ap": [
+   1,
+   2,
+   5
+  ],
+  "whr": [
+   1075,
+   438
+  ],
+  "tr": [
+   [
+    0,
+    65
+   ],
+   [
+    156,
+    206
+   ],
+   [
+    253,
+    316
+   ],
+   [
+    335,
+    435
+   ],
+   [
+    1060,
+    1100
+   ]
+  ]
+ },
+ {
+  "id": "a-768",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 768",
+  "img": "a-768.jpg",
+  "wh": [
+   1075,
+   382
+  ],
+  "imgr": "a-768-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   89
+  ],
+  "tr": [
+   [
+    0,
+    89
+   ]
+  ]
+ },
+ {
+  "id": "a-769",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 769",
+  "img": "a-769.jpg",
+  "wh": [
+   1075,
+   138
+  ]
+ },
+ {
+  "id": "a-770",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 770",
+  "img": "a-770.jpg",
+  "wh": [
+   1075,
+   779
+  ]
+ },
+ {
+  "id": "a-771",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 771",
+  "img": "a-771.jpg",
+  "wh": [
+   1075,
+   575
+  ]
+ },
+ {
+  "id": "a-772",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 772",
+  "img": "a-772.jpg",
+  "wh": [
+   1075,
+   228
+  ],
+  "imgr": "a-772-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
+  "whr": [
+   1075,
+   146
+  ],
+  "tr": [
+   [
+    0,
+    81
+   ],
+   [
+    138,
+    173
+   ]
+  ]
+ },
+ {
+  "id": "a-796",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 796",
+  "img": "a-796.jpg",
+  "imgr": "a-796-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
+  "wh": [
+   1075,
+   2210
+  ],
+  "whr": [
+   1075,
+   1580
+  ],
+  "tr": [
+   [
+    0,
+    245
+   ],
+   [
+    273,
+    397
+   ],
+   [
+    487,
+    517
+   ],
+   [
+    546,
+    629
+   ],
+   [
+    659,
+    749
+   ],
+   [
+    783,
+    1028
+   ],
+   [
+    1046,
+    1094
+   ],
+   [
+    1165,
+    1234
+   ],
+   [
+    1252,
+    1280
+   ],
+   [
+    1327,
+    1440
+   ],
+   [
+    1473,
+    1533
+   ],
+   [
+    1578,
+    1602
+   ],
+   [
+    1631,
+    1692
+   ]
+  ]
+ },
+ {
+  "id": "a-797",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 797",
+  "img": "a-797.jpg",
+  "imgr": "a-797-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
+  "wh": [
+   1075,
+   1994
+  ],
+  "whr": [
+   1075,
+   1438
+  ],
+  "tr": [
+   [
+    0,
+    104
+   ],
+   [
+    189,
+    227
+   ],
+   [
+    442,
+    521
+   ],
+   [
+    549,
+    581
+   ],
+   [
+    779,
+    954
+   ],
+   [
+    1131,
+    1194
+   ],
+   [
+    1241,
+    1301
+   ],
+   [
+    1325,
+    1474
+   ],
+   [
+    1496,
+    1994
+   ]
+  ]
+ },
+ {
+  "id": "a-798",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 798",
+  "img": "a-798.jpg",
+  "imgr": "a-798-r.jpg",
+  "ap": [
+   1,
+   2,
+   4
+  ],
+  "wh": [
+   1075,
+   776
+  ],
+  "whr": [
+   1075,
+   479
+  ],
+  "tr": [
+   [
+    0,
+    92
+   ],
+   [
+    163,
+    380
+   ],
+   [
+    435,
+    469
+   ],
+   [
+    730,
+    776
+   ]
+  ]
+ },
+ {
+  "id": "a-799",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 799",
+  "img": "a-799.jpg",
+  "wh": [
+   1075,
+   1045
+  ]
+ },
+ {
+  "id": "a-962",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 962",
+  "img": "a-962.jpg",
+  "wh": [
+   1075,
+   1137
+  ]
+ },
+ {
+  "id": "a-963",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 963",
+  "img": "a-963.jpg",
+  "wh": [
+   1075,
+   641
+  ],
+  "imgr": "a-963-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
+  "whr": [
+   1075,
+   524
+  ],
+  "tr": [
+   [
+    0,
+    112
+   ],
+   [
+    180,
+    294
+   ],
+   [
+    399,
+    466
+   ],
+   [
+    510,
+    566
+   ],
+   [
+    586,
+    641
+   ]
+  ]
+ },
+ {
+  "id": "a-965",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 965",
+  "img": "a-965.jpg",
+  "wh": [
+   1075,
+   457
+  ],
+  "imgr": "a-965-r.jpg",
+  "ap": [],
+  "whr": [
+   1075,
+   270
+  ],
+  "tr": [
+   [
+    0,
+    47
+   ],
+   [
+    117,
+    248
+   ],
+   [
+    280,
+    312
+   ]
+  ]
+ },
+ {
+  "id": "a-967",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 967",
+  "img": "a-967.jpg",
+  "wh": [
+   1075,
+   349
+  ]
+ },
+ {
+  "id": "a-968",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 968",
+  "img": "a-968.jpg",
+  "wh": [
+   1075,
+   161
+  ]
+ },
+ {
+  "id": "a-969",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 969",
+  "img": "a-969.jpg",
+  "wh": [
+   1075,
+   445
+  ],
+  "imgr": "a-969-r.jpg",
+  "ap": [
+   1,
+   2
+  ],
+  "whr": [
+   1075,
+   354
+  ],
+  "tr": [
+   [
+    0,
+    104
+   ],
+   [
+    225,
+    272
+   ],
+   [
+    302,
+    445
+   ]
+  ]
+ },
+ {
+  "id": "a-973",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 973",
+  "img": "a-973.jpg",
+  "wh": [
+   1075,
+   352
+  ]
+ },
+ {
+  "id": "a-976",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 976",
+  "img": "a-976.jpg",
+  "imgr": "a-976-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
+  "wh": [
+   1075,
+   217
+  ],
+  "whr": [
+   1075,
+   176
+  ]
+ },
+ {
+  "id": "a-8",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 8",
+  "img": "a-8.jpg",
+  "wh": [
+   1075,
+   99
+  ]
+ },
+ {
+  "id": "a-795",
+  "nombre": "Ley de Enjuiciamiento Criminal · Artículo 795",
+  "img": "a-795.jpg",
+  "wh": [
+   1075,
+   1050
+  ]
+ }
+]

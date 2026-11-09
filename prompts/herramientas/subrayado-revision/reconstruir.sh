@@ -9,6 +9,7 @@ case $T in
  16) TIT="Tema 16 · Igualdad entre mujeres y hombres"; PDF="TEMA 16 IGUALDAD MUJERES Y HOMBRES-2026-08-08.pdf";;
  17) TIT="Tema 17 · Responsabilidad penal de los menores"; PDF="TEMA 17 MENORES-2026-08-08.pdf";;
  18) TIT="Tema 18 · Derecho penal, parte general"; PDF="TEMA 18 DERECHO PENAL PARTE GENERAL-2026-08-08.pdf";;
+ 20) TIT="Tema 20 · Derecho procesal penal (I)"; PDF="TEMA 20 DERECHO PROCESAL (I)-2026-08-08.pdf";;
  19) TIT="Tema 19 · Derecho penal, parte especial"; PDF="TEMA 19 DERECHO PENAL PARTE ESPECIAL-2026-08-08.pdf";;
  15) TIT="Tema 15 · Protección integral contra la violencia de género"; PDF="TEMA 15 VIOGEN-2026-08-08.pdf";;
  1) TIT="Tema 1 · Derechos humanos"; PDF="TEMA 1 DERECHOS HUMANOS-08-08-2026.pdf";;
