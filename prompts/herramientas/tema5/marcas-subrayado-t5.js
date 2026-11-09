@@ -31,14 +31,22 @@ for (const f of h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha)/))
   }
   for (const n of nums) { const k = norma + '|' + n; const a = arts[k] = arts[k] || { exof: 0, ex: 0, ast: 0, r: new Set() }; a.exof |= mk.exof; a.ex |= mk.ex; a.ast |= mk.ast; mk.r.forEach(x => a.r.add(x)); }
 }
+const EUR = fs.existsSync(B + 'expres-subrayado/t5-eurodac-paginas.json') ? JSON.parse(fs.readFileSync(B + 'expres-subrayado/t5-eurodac-paginas.json', 'utf8')) : {};
 const fd = B + 'expres-subrayado/datos-t5.js';
 let src = fs.readFileSync(fd, 'utf8');
 const ini = src.indexOf('={') + 1, fin = src.lastIndexOf('};') + 1;
 const J = JSON.parse(src.slice(ini, fin));
+// Preguntas de Eurodac que citan un artículo y no tenían pieza: se enlazan a la página de Eurodac donde empieza ese artículo (según t5-eurodac-paginas.json).
+const PREG_EXTRA = { '5-64': 'e-147', '5-ia-2051': 'e-147', '5-ia-2054': 'e-147', '5-ia-1865': 'e-99', '5-ia-1900': 'e-99', '5-ia-1922': 'e-116', '5-ia-1951': 'e-118', '5-ia-2022': 'e-134', '5-ia-2102': 'e-134' };
+let nuevas = 0; for (const [q, pz] of Object.entries(PREG_EXTRA)) if (!J.preg[q] && J.piezas.some(p => p.id === pz)) { J.preg[q] = pz; nuevas++; }
 let con = 0, sin = [];
 for (const p of J.piezas) {
-  const tr = p.nombre.match(/·\s*Arts?\.\s*(.+)$/i); delete p.m;
-  if (!tr) { sin.push(p.id); continue; }
+  let tr = p.nombre.match(/·\s*Arts?\.\s*(.+)$/i); delete p.m;
+  if (!tr) {   // Eurodac: la lista de artículos de cada página sale de expres-subrayado/t5-eurodac-paginas.json (prompts/herramientas/tema5/eurodac-paginas-t5.py)
+    const pg = (p.nombre.match(/pág\.\s*(\d+) de la parte 2/) || [])[1], lst = EUR[pg];
+    if (!lst) { sin.push(p.id); continue; }
+    tr = [null, lst.join(', ')];
+  }
   const mk = { exof: 0, ex: 0, ast: 0, r: new Set() };
   for (const x of tr[1].split(/\s*,\s*/)) { const a = arts[p.id[0] + '|' + clave(x)]; if (!a) continue; mk.exof |= a.exof; mk.ex |= a.ex; mk.ast |= a.ast; a.r.forEach(r => mk.r.add(r)); }
   const m = {}; if (mk.exof) m.exof = 1; if (mk.ex) m.ex = 1; if (mk.ast) m.ast = 1; if (mk.r.size) m.r = [...mk.r].sort((a, b) => a - b);
