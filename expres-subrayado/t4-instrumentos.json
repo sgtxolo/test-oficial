@@ -1,0 +1,8 @@
+[
+ {"id":"a","nombre":"Código de Fronteras Schengen (Rgto. 2016/399)","paginas":[4,95],"inicio":"^4\\.1 — REGLAMENTO","cit":"Código de Fronteras Schengen|CFS|Reglamento \\(UE\\) 2016/399|Reglamento 2016/399|2016/399"},
+ {"id":"b","nombre":"Guardia Europea de Fronteras y Costas (Rgto. 2019/1896)","paginas":[100,241],"inicio":"^4\\.2 — REGLAMENTO","cit":"2019/1896|Guardia Europea de Fronteras|GEFC|Frontex|Agencia Europea de la Guardia"},
+ {"id":"c","nombre":"Convenio de Prüm","paginas":[252,275],"inicio":"^4\\.3 — CONVENIO","cit":"Convenio de Prüm|Tratado de Prüm|Convenio Prüm|Prüm, de 27 de mayo"},
+ {"id":"d","nombre":"Decisión Prüm (2008/615/JAI)","paginas":[276,293],"inicio":"^4\\.4 — DECISIÓN","cit":"2008/615|Decisión Prüm|Decisión 2008/615"},
+ {"id":"e","nombre":"Rgto. 2024/1349 (retorno fronterizo)","paginas":[296,305],"inicio":"^4\\.5 — REGLAMENTO","cit":"2024/1349|procedimiento fronterizo de retorno"},
+ {"id":"f","nombre":"Rgto. de ejecución 2021/581 (EUROSUR)","paginas":[306,345],"inicio":"^4\\.6 — REGLAMENTO","cit":"2021/581|mapas de situación|Reglamento de Ejecución \\(UE\\) 2021/581"}
+]

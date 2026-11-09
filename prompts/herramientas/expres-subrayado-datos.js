@@ -36,7 +36,8 @@ const enlazaEtiquetas = (f, primera) => { let lab = null; for (const m of f.matc
 const trozos = h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha(?: ex-of)?">)/);
 for (const f of trozos) {
   const t = ((f.match(/(?:ex-fh|bloque-titulo)">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, '');
-  if (/^ANEXO/.test(t)) break;
+  if (T === '4' && /^AMPLIACIONES/.test(t)) break;   // T4: los anexos de cada norma van en medio; solo se corta en las ampliaciones finales
+  if (/^ANEXO/.test(t)) { if (T === '4') continue; break; }
   const k = inst.findIndex((i, j) => j > ixCur && i.inicio && new RegExp(i.inicio).test(t)); if (k >= 0) { ixCur = k; cur = inst[k].id; }
   if (!/^<div class="ex-ficha(?: ex-of)?">/.test(f)) { if (cur) enlazaEtiquetas(f, null); continue; }
   fi++;                                   // nº de ficha dentro del Exprés (para sacar su texto al imprimir)

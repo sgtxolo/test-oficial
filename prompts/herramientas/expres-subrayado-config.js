@@ -18,7 +18,8 @@ function numeros(t) {
 }
 let ixCur = -1;
 for (const [tipo, t] of piezas) {
-  if (/^ANEXO/.test(t)) break;
+  if (T === '4' && /^AMPLIACIONES/.test(t)) break;   // T4: los anexos de cada norma van en medio; solo se corta en las ampliaciones finales
+  if (/^ANEXO/.test(t)) { if (T === '4') continue; break; }
   const k = inst.findIndex((i, ix) => ix > ixCur && i.inicio && new RegExp(i.inicio).test(t));
   if (k >= 0) { ixCur = k; cur = inst[k].id; }
   if (!cur || !ley(cur) || tipo !== 'ex-fh' || !/^Art[íi]culos?\s+\d/i.test(t)) continue;
