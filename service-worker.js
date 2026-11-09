@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v537";
+const CACHE_NAME = "oposicion-cache-v538";
 // La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
 // Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
 // versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
@@ -53,6 +53,7 @@ const APP_SHELL = [
   "./expres-subrayado/bloques-t7.js",
   "./expres-subrayado/bloques-t14.js",
   "./expres-subrayado/bloques-t3.js",
+  "./expres-subrayado/bloques-t4.js",
   "./expres-subrayado/bloques-t8.js",
   "./expres-subrayado/bloques-t9.js",
   "./expres-subrayado/bloques-t12.js",
@@ -69,6 +70,7 @@ const APP_SHELL = [
   "./expres-subrayado/revision-t7.js",
   "./expres-subrayado/revision-t14.js",
   "./expres-subrayado/revision-t3.js",
+  "./expres-subrayado/revision-t4.js",
   "./expres-subrayado/revision-t8.js",
   "./expres-subrayado/revision-t9.js",
   "./expres-subrayado/revision-t12.js",
