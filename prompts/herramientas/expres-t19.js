@@ -6,7 +6,7 @@ Object.entries({ VEC_MAX: 0, HUECO_MAX: 1, RUN_MIN: 60, GRIS_PLIEGA: 'todo', ENT
 const X = require('./expres-lib.js')(19);
 const V19 = require('./tema19/visuales-t19.js');
 // cabecera de la ficha de cada cuadro, en el MISMO orden que visuales-t18.js
-const CAB = ['Artículo 140', 'Artículo 145', 'Artículo 165', 'Artículo 169', 'Artículo 172', 'Artículo 180', 'Artículo 181', 'Artículo 187', 'Artículo 196', 'Artículo 236', 'Artículo 237', 'Artículo 207', 'Artículo 210', 'Artículo 253', 'Artículo 379', 'Artículo 406', 'Artículo 422', 'Artículo 424', 'Artículo 430', 'Artículo 449', 'Artículo 468', 'Artículo 471', 'Artículo 509', 'Artículo 533', 'Artículo 556', 'Artículo 570 ter', 'Artículo 606', 'Artículo 616 ter'];
+const CAB = ['Artículo 140', 'Artículo 145', 'Artículo 165', 'Artículo 169', 'Artículo 172', 'Artículo 180', 'Artículo 181', 'Artículo 187', 'Artículo 196', 'Artículo 236', 'Artículo 237', 'Artículo 207', 'Artículo 210', 'Artículo 253', 'Artículo 310', 'Artículo 379', 'Artículo 406', 'Artículo 422', 'Artículo 424', 'Artículo 430', 'Artículo 449', 'Artículo 468', 'Artículo 471', 'Artículo 509', 'Artículo 533', 'Artículo 556', 'Artículo 570 ter', 'Artículo 606', 'Artículo 616 ter'];
 if (CAB.length !== V19.length) throw new Error(`hay ${V19.length} cuadros y ${CAB.length} cabeceras`);
 const Vcab = V19.map(([, , h], i) => [CAB[i], h]);
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });

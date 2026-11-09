@@ -123,6 +123,77 @@ v('cp', 'obligación de entregarlos o devolverlos', cols('ADMINISTRACIÓN DESLEA
 ]));
 
 
+// ───────── arts. 305-310 bis · DELITOS CONTRA LA HACIENDA PÚBLICA Y CONTRA LA SEGURIDAD SOCIAL (esquema manuscrito del usuario, p64, ampliado) ─────────
+v('cp', 'prohibición para contratar con las Administraciones Públicas', tabla('DELITOS CONTRA LA HACIENDA PÚBLICA Y LA SEGURIDAD SOCIAL · arts. 305 a 310 bis (tu esquema manuscrito, ampliado)', ['Delito · bien jurídico', 'Cuantía, regla y consecuencias'], [
+  { l: `HACIENDA PÚBLICA · art. 305 (estatal, autonómica, foral o local)`, c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Defraudar por acción u omisión')}: eludir tributos, retenciones o ingresos a cuenta, obtener devoluciones o disfrutar beneficios fiscales indebidos.` },
+    { p: 'Cuantía', c: 'o', t: `Cuota defraudada ${P('más de 120.000 €')}. ${K('La mera presentación')} de declaraciones o autoliquidaciones ${K('no excluye')} la defraudación.` },
+    { p: 'Cómputo', c: 'v', t: `Tributos periódicos: lo defraudado en ${P('cada período impositivo o declaración')} (si es inferior a 12 meses, ${P('año natural')}). Resto: cada concepto liquidable. Si hay ${G('organización o grupo criminal')} o sociedades pantalla, es perseguible desde que se alcance la cuantía.` },
+    { p: 'Regularización', c: 'c', t: `Se regulariza si se reconoce y paga la deuda antes de que se notifique el inicio de actuaciones de comprobación o, sin ellas, antes de querella, denuncia o diligencias → ${K('no se castiga')}. También si se paga ${D('una vez prescrito')} el derecho de la Administración.` },
+    { p: 'Accesoria', c: 'v', t: `${D('Pérdida de subvenciones, ayudas y beneficios fiscales o de la Seguridad Social')}: ${P('3 a 6 años')}.` },
+    { p: 'Procedimiento', c: 'c', t: `La Administración puede ${D('liquidar de forma separada')} lo vinculado al delito. El proceso penal ${K('no paraliza')} el cobro, salvo suspensión judicial con ${D('garantía')} (o dispensa excepcional).` },
+  ] },
+  { l: `HACIENDA PÚBLICA · AGRAVADO · art. 305 bis`, c: 'c', h: [
+    { p: 'Cuantía', c: 'o', t: `Cuota defraudada ${P('más de 600.000 €')}.` },
+    { p: 'Organización', c: 'v', t: `Defraudación en el seno de ${G('una organización o grupo criminal')}.` },
+    { p: 'Ocultación', c: 'v', t: `Uso de ${D('personas o entes interpuestos, negocios fiduciarios, paraísos fiscales')} que oculte o dificulte la identidad del obligado o la cuantía.` },
+    { p: 'Accesoria', c: 'c', t: `${D('Pérdida de subvenciones y beneficios')}: ${P('4 a 8 años')}.` },
+  ] },
+  { l: `HACIENDA DE LA UNIÓN EUROPEA · art. 305.3`, c: 'v', h: [
+    { p: 'Cuantía', c: 'o', t: `Más de ${P('100.000 €')} en el plazo de ${P('un año natural')}.` },
+    { p: 'Atenuado', c: 'c', t: `No supera 100.000 € pero excede de ${P('10.000 €')} → prisión de ${P('3 meses a 1 año')} o multa del tanto al triplo, y pérdida de subvenciones ${P('6 meses a 2 años')}.` },
+  ] },
+  { l: `PRESUPUESTOS GENERALES DE LA UE · art. 306`, c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Defraudar a los presupuestos de la UE u otros administrados por ésta')}: eludir pagos, dar a los fondos ${D('aplicación distinta')} u obtenerlos falseando condiciones.` },
+    { p: 'Cuantía', c: 'o', t: `Más de ${P('50.000 €')}.` },
+    { p: 'Atenuado', c: 'c', t: `No supera 50.000 € pero excede de ${P('4.000 €')} → prisión de ${P('3 meses a 1 año')} o multa del tanto al triplo, y pérdida de subvenciones ${P('6 meses a 2 años')}.` },
+    { p: 'Accesoria', c: 'v', t: `${D('Pérdida de subvenciones y beneficios')}: ${P('3 a 6 años')}.` },
+  ] },
+  { l: `SEGURIDAD SOCIAL · art. 307 (cuotas y conceptos de recaudación conjunta)`, c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Defraudar a la Seguridad Social')}: eludir cuotas, obtener devoluciones o disfrutar deducciones indebidas.` },
+    { p: 'Cuantía', c: 'o', t: `Más de ${P('50.000 €')}, computado sobre ${P('cuatro años naturales')}. ${K('La mera presentación')} de documentos de cotización ${K('no excluye')} la defraudación.` },
+    { p: 'Regularización', c: 'c', t: `Se regulariza si se reconoce y paga la deuda antes de que se notifiquen actuaciones inspectoras o, sin ellas, antes de querella o denuncia del ${G('Ministerio Fiscal')} o del ${G('Letrado de la Seguridad Social')}, o de diligencias.` },
+    { p: 'Pena inferior', c: 'v', t: `${D('Inferior en uno o dos grados')} si, antes de ${P('2 meses')} desde la citación como imputado, satisface la deuda y reconoce los hechos; también a otros partícipes que ${D('colaboren activamente')}.` },
+    { p: 'Procedimiento', c: 'c', t: `El proceso penal ${K('no paraliza')} la liquidación y cobro, salvo que el Juez lo acuerde con ${D('garantía')}. Multa y responsabilidad civil: ${D('apremio')} por la Administración de la Seguridad Social.` },
+  ] },
+  { l: `SEGURIDAD SOCIAL · AGRAVADO · art. 307 bis`, c: 'c', h: [
+    { p: 'Cuantía', c: 'o', t: `Más de ${P('120.000 €')}.` },
+    { p: 'Organización', c: 'v', t: `${G('Organización o grupo criminal')} u ocultación mediante ${D('interpuestos, fiduciarios, paraísos fiscales')}.` },
+    { p: 'Accesoria', c: 'c', t: `${D('Pérdida de subvenciones y beneficios')}: ${P('4 a 8 años')}. Le son aplicables ${D('todas las previsiones del art. 307')}.` },
+  ] },
+  { l: `FRAUDE EN PRESTACIONES DE LA SEGURIDAD SOCIAL · art. 307 ter`, c: 'v', h: [
+    { p: 'Conducta', c: 'o', t: `${D('Obtener, prolongar o facilitar a otros')} prestaciones por ${D('error provocado')} mediante simulación, tergiversación u ocultación consciente de hechos, con ${D('perjuicio a la Administración Pública')}.` },
+    { p: 'Pena', c: 'o', t: `Prisión de ${P('6 meses a 3 años')}; si no hay especial gravedad, ${D('multa')} del tanto al séxtuplo.` },
+    { p: 'Agravado', c: 'v', t: `Prestaciones de ${P('más de 50.000 €')} o circunstancias b) o c) del art. 307 bis.1 → prisión de ${P('2 a 6 años')} y multa del tanto al séxtuplo.` },
+    { p: 'Exención', c: 'c', t: `${K('Exento de responsabilidad')} quien reintegre el valor de la prestación con interés, antes de que se le notifique la iniciación de actuaciones o de querella, denuncia o diligencias. El proceso penal ${K('no impide')} el reintegro administrativo.` },
+  ] },
+  { l: `SUBVENCIONES Y AYUDAS PÚBLICAS · art. 308`, c: 'o', h: [
+    { p: 'Conducta', c: 'o', t: `Obtener subvenciones o ayudas de las Administraciones Públicas (incluida la UE) ${D('falseando las condiciones')} u ${D('ocultando las que lo hubieran impedido')}, o aplicarlas a ${D('fines distintos')}.` },
+    { p: 'Cuantía', c: 'o', t: `Más de ${P('100.000 €')} → prisión de ${P('1 a 5 años')} y multa del tanto al séxtuplo, ${K('salvo')} reintegro.` },
+    { p: 'Atenuado', c: 'c', t: `No supera 100.000 € pero excede de ${P('10.000 €')} → prisión de ${P('3 meses a 1 año')} o multa del tanto al triplo, ${K('salvo')} reintegro.` },
+    { p: 'Accesoria', c: 'v', t: `${D('Pérdida de subvenciones y beneficios')}: ${P('3 a 6 años')} (${P('6 meses a 2 años')} en el atenuado).` },
+    { p: 'Reintegro', c: 'c', t: `Devolver lo percibido con ${D('interés de demora')} ${P('antes')} de que se notifiquen actuaciones de comprobación o control, o de querella, denuncia o diligencias. Evita perseguir las falsedades instrumentales.` },
+    { p: 'Pena inferior', c: 'v', t: `${D('Uno o dos grados')} si, antes de ${P('2 meses')} desde la citación como investigado, reintegra y reconoce los hechos; también a partícipes que colaboren.` },
+  ] },
+  { l: `SUSPENSIÓN DE LA PENA · art. 308 bis (todo el Título)`, c: 'c', h: [
+    { p: 'Requisito', c: 'o', t: `Además del art. 80: haber ${D('abonado la deuda')} o reintegrado la subvención. Se entiende cumplido si ${D('asume el compromiso')} de pagar según su capacidad económica y facilitar el decomiso, y es razonable esperar que lo cumplirá.` },
+    { p: 'No se concede', c: 'c', t: `Si ha facilitado ${D('información inexacta o insuficiente')} sobre su patrimonio. Se ${D('revoca')} si incumple el compromiso o la oculta.` },
+  ] },
+  { l: `ART. 309 · derogado`, c: 'v', h: [
+    { t: `${K('Derogado')}: no hay contenido que estudiar.` },
+  ] },
+  { l: `DELITO CONTABLE · art. 310 (obligado por ley tributaria a llevar contabilidad)`, c: 'o', h: [
+    { p: 'Pena', c: 'o', t: `Prisión de ${P('5 a 7 meses')}.` },
+    { p: 'a)', c: 'o', t: `${D('Incumplir absolutamente')} la obligación en régimen de ${D('estimación directa')}.` },
+    { p: 'b)', c: 'v', t: `Llevar ${D('contabilidades distintas')} que oculten o simulen la verdadera situación de la empresa.` },
+    { p: 'c) y d)', c: 'c', t: `No anotar o anotar con ${D('cifras distintas')} operaciones; o practicar ${D('anotaciones ficticias')}. Solo son delito si se omitieron las declaraciones (o reflejan la falsa contabilidad) y la cuantía excede de ${P('240.000 € por ejercicio')}, ${K('sin compensación aritmética')}.` },
+  ] },
+  { l: `PERSONAS JURÍDICAS · art. 310 bis`, c: 'v', h: [
+    { p: 'Multa', c: 'o', t: `Del ${P('tanto al doble')} de lo defraudado (física con prisión de más de 2 años) · del ${P('doble al cuádruple')} (más de 5 años) · de ${P('6 meses a 1 año')} (art. 310).` },
+    { p: 'Además', c: 'c', t: `${D('Pérdida de subvenciones y beneficios')} ${P('3 a 6 años')}; podrá imponerse la ${D('prohibición de contratar')} con las Administraciones Públicas y las penas del art. 33.7 b), c), d), e) y g) (art. 66 bis).` },
+  ] },
+]));
+
 // ───────── p107 · art. 379 · DELITOS CONTRA LA SEGURIDAD VIAL ─────────
 v('cp', 'una tasa de alcohol en sangre superior a 1,2 gramos por litro', cols('DELITOS CONTRA LA SEGURIDAD VIAL (cuadro del temario · art. 379)', [
   { t: 'POR EXCESO DE VELOCIDAD · 379.1', l: [`${D('Conducir')}: vehículo de motor o ciclomotor.`, `+ Velocidad superior a la permitida reglamentariamente: ${P('60 km/h en vía urbana')} · ${P('80 km/h en vía interurbana')}.`] },
