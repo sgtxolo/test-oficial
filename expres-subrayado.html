@@ -899,6 +899,7 @@ function entra() {
   else if (mt && D[mt[1]]) { tema = mt[1]; dest = mp ? decodeURIComponent(mp[1]) : null; }
   else if (emb) tema = Object.keys(D).sort((a, b) => a - b)[0];
   if (/[#&]entero=1/.test(h) && tema && dest) { st.ent = st.ent || {}; st.ent[key(tema, dest)] = 1; destAp = null; }   // «➕ Resto en Mi subrayado» del Exprés: se abre el artículo entero
+  if (/[#&]clave=1/.test(h) && tema) { st.clave = true; guarda(); }   // enlace desde el Autoestudio: abre el tema ya en «Esquema clave»
   try { history.scrollRestoration = 'manual'; } catch (e) {}
   pintaTema(); if (emb) document.body.classList.add('embed'); render(); irA(); addEventListener('load', irA); if (tema) { pill(); if (dest) { st.pin[tema] = st.pin[tema]; } }
 }

@@ -146,6 +146,17 @@ const SLACK=DATA.find(o=>o.k==="REFUERZO");
 const checkable=DATA.filter(o=>o.core||(o.k!=="LIBRE"&&!isSlack(o)));
 function fmt(m){const h=Math.floor(m/60),r=m%60;return h?(h+" h"+(r?" "+r+" min":"")):r+" min"}
 function dshort(d){const x=new Date(d+"T12:00:00");return x.getDate()+" "+MES[x.getMonth()].slice(0,3).toLowerCase()}
+/* Esquema clave y repaso inteligente (nov 2026): el paso del esquema enlaza al Esquema clave del tema (tu subrayado, ≈8 págs) y, mientras no haya fallos acumulados, el repaso usa 'Repaso inteligente' */
+function adapta(s){
+ s=s.replace("Esquema de memoria del tema (3-5 páginas), sin mirar el resumen.","Repasa el Esquema clave del tema (unas 8 páginas, con tu subrayado) y después haz tu esquema de memoria (3-5 páginas) sin mirar el resumen.");
+ s=s.replace(/^Esquema de memoria de T[^,]+, sin mirar el resumen[.]/,"Repasa el Esquema clave del tema (unas 8 páginas, con tu subrayado) y después haz tu esquema de memoria (3-5 páginas) sin mirar el resumen.");
+ s=s.replace("modo 'Repasar fallos' o 'Lo que no domino'","modo 'Repaso inteligente' (cuando ya tengas fallos de ese tema, usa 'Repasar fallos' o 'Lo que no domino')");
+ s=s.replace("('Repasar fallos')","('Repaso inteligente'; cuando ya tengas fallos del tema, 'Repasar fallos')");
+ return s}
+function enlaceClave(txt,titulo){
+ if(!/esquema de memoria|Repaso exprés/i.test(txt))return null;
+ const m=txt.match(/\bT([0-9]{1,2})\b/)||(titulo||"").match(/\bT([0-9]{1,2})\b/);if(!m)return null;
+ const a=document.createElement("a");a.href="expres-subrayado.html#t="+m[1]+"&clave=1";a.target="_blank";a.rel="noopener";a.textContent="⭐ Esquema clave T"+m[1];a.style.cssText="white-space:nowrap;font-weight:700";return a}
 function compute(){
  const pending=tasks.filter(t=>!done[t.key]);
  const fijos=new Set(Object.values(doneOn).filter(d=>d>=todayISO));
@@ -286,7 +297,7 @@ function render(){
    const ch=document.createElement("span");ch.className="chev";ch.textContent="▾";
    t.appendChild(tot);sm.append(ch,tag,document.createElement("br"),t);
    const bl=document.createElement("div");bl.className="blks";
-   e.b.forEach(x=>{const rw=document.createElement("div");rw.className="blk";const mm=document.createElement("span");mm.className="min";mm.textContent=x[0]+" min";const tx=document.createElement("span");tx.textContent=x[1];rw.append(mm,tx);bl.appendChild(rw)});
+   e.b.forEach(x=>{const rw=document.createElement("div");rw.className="blk";const mm=document.createElement("span");mm.className="min";mm.textContent=x[0]+" min";const tx=document.createElement("span");tx.textContent=adapta(x[1]);rw.append(mm,tx);const ck=enlaceClave(x[1],e.t);if(ck)tx.append(" ",ck);bl.appendChild(rw)});
    det.append(sm,bl);extras(e).forEach(x=>det.appendChild(x));b.appendChild(det);
   }else{
    b.append(tag,t);
