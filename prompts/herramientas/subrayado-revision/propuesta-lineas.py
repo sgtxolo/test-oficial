@@ -21,6 +21,9 @@ if __import__('os').path.exists(_sk):
 cfg = json.load(open(B + f'expres-subrayado/t{T}-config.json', encoding='utf-8'))
 ind = {e['id']: e for e in json.load(open(B + f'expres-subrayado/img/t{T}/indice.json', encoding='utf-8'))}
 EX = json.loads(subprocess.run(['node', 'prompts/herramientas/subrayado-revision/texto-pieza.js', '--json'], capture_output=True, text=True, encoding='utf-8', env={**os.environ, 'TEMA': T}, cwd=B).stdout)
+_ee = B + f'expres-subrayado/t{T}-ex-extra.json'   # párrafos del Exprés que la herramienta no atribuye a su pieza (p. ej. «Ampliaciones» del T4): {id: [párrafos]}
+if os.path.exists(_ee):
+    for _k, _v in json.load(open(_ee, encoding='utf-8')).items(): EX[_k] = list(EX.get(_k, [])) + _v
 src = open(B + 'prompts/herramientas/expres-subrayado-recortes.py', encoding='utf-8').read(); ns = {'d': d, 're': re, 'pymupdf': pymupdf, 'DPI': DPI, 'K': K}
 for fn in ('es_art', 'encabezados', 'segmentos'):
     m = re.search(r'^def ' + fn + r'\(.*?(?=^def |^res = )', src, flags=re.S | re.M); exec(m.group(0), ns)

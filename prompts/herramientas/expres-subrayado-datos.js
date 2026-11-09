@@ -75,6 +75,7 @@ for (const f of trozos) {
   if (hayPorArt) pars.forEach(x => { const pz = x.art !== null && piezas.includes(cur + '-' + x.art) ? cur + '-' + x.art : null; if (pz) for (const m of x.pm[2].matchAll(/data-q="([^"]+)"/g)) m[1].split(/[ ,;|]+/).forEach(q => { if (q && !preg[q]) preg[q] = pz; }); });
   enlazaEtiquetas(f, piezas[0]);
 }
+{ const xe = `expres-subrayado/t${T}-ex-extra.json`; if (fs.existsSync(xe)) Object.keys(JSON.parse(fs.readFileSync(xe, 'utf8'))).forEach(k => enEx.add(k)); }   // artículos que el Exprés lleva en «Ampliaciones» (T4): cuentan como del Exprés
 ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) p.extra = 1; if (marcas[p.id] && Object.keys(marcas[p.id]).length) p.m = marcas[p.id]; });
 // piezas a mano (preámbulos, protocolos…) con «ficha»: regex del título de su ficha del Exprés → también tienen versión Exprés
 { const cab = h.split('<div class="ex-ficha">').slice(1).map(f => ((f.match(/class="ex-fh">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, ''));
