@@ -49,3 +49,7 @@ Miradas con el overlay verde/rojo y el texto del Exprés de cada pieza:
 - **Corregidas a mano (11):** b-83 (faltaba el comienzo del apartado 1), b-53 (llevaba los apartados 1 y 5; el Exprés lleva 2, 3 y 4), c-28 (llevaba los apartados 4-6; el Exprés lleva 1 y 2), a-17 (faltaban los apartados 2 y 4 y sobraba una nota), b-121 y a-22 y b-63 (llevaban casi toda la página y el Exprés solo el primer párrafo o línea), b-58 (faltaba el comienzo del apartado 1), c-20 (sobraban los apartados 2 y 3), c-5 y a-11 (cortados demasiado pronto).
 - **Correctas (13):** c-49, a-38, e-9, c-33, b-105, e-2, c-7, d-3, c-35, a-44, d-24, e-14, f-35.
 - Las vi en imágenes reducidas; los cortes se ajustan a huecos entre renglones, así que pueden variar unos píxeles.
+
+## Cuarta pasada (9/11/2026): muestra y recortes cortos
+- Muestra aleatoria de 18 recortes sin revisar + los 43 recortes más cortos (los que se quedaban a medias): corregidos a mano 11 que estaban cortados (c-13, f-2, c-22, c-32, d-5, f-36, a-33, c-25, e-13, b-103, c-6). Los demás vistos estaban bien; algunos llevan texto de más (títulos de capítulo, apartados vecinos), p. ej. d-23, d-32, b-104.
+- No se han mirado uno a uno los ~150 recortes largos restantes: de la muestra salió ~1 error por cada 6, sobre todo recortes que se cortan por abajo, y ya están corregidos los cortos. El resto, si ves uno incompleto, se añade con «Añadir a mi subrayado».
