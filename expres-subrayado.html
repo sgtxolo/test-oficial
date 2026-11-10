@@ -467,6 +467,7 @@ const claveFijos = t => (window.EXSUBCLAVE || {})[t] || {};   // artículos que 
 function claveSet(t, pgs) {
   const fijos = claveFijos(t), ids0 = new Set(); let tot0 = 0;
   D[t].piezas.forEach(p => { if (fijos[p.id] && !p.tachado && !quitado(t, p.id)) { ids0.add(p.id); tot0 += estPag(t, p, fijos[p.id] === 'f' ? {n: 1} : {s: 1}); } });
+  if ((window.EXSUBCLAVE_SOLO || {})[t]) return {ids: ids0, pg: tot0};   // tema con lista cerrada del usuario: solo esos artículos
   const cand = visibles(t).map(p => ({p, pt: puntosClave(p, t), pg: estPag(t, p, {s: 1})})).filter(x => x.pt > 0 && x.pg > 0 && (nOficiales(t, x.p) > 0 || x.pt >= 6));
   const dens = x => x.pt / Math.pow(x.pg, 0.5);
   cand.sort((a, b) => dens(b) - dens(a));
