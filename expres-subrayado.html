@@ -59,6 +59,7 @@ h3.sec{font-size:15px;margin:22px 4px 10px;color:var(--gris);text-transform:uppe
 #herr .in{max-width:var(--ancho);margin:0 auto;padding:0 max(16px,env(safe-area-inset-left))}
 .buscar{width:100%;border:1.5px solid var(--borde);background:var(--panel);color:var(--texto);border-radius:12px;padding:9px 12px;font:inherit}
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.rep-clave{margin:0 0 14px}.rep-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 8px}.rep-bar .chip{text-decoration:none}
 .chip{border:1.5px solid var(--borde);background:var(--panel);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:600;white-space:nowrap}
 .chip.on{background:var(--verde);border-color:var(--verde);color:#fff}
 .prog{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:12.5px;color:var(--gris)}
@@ -463,8 +464,10 @@ const puntosClave = (p, t) => {
 };
 const CLAVE_PG = [8, 10];
 const clavePgDe = () => CLAVE_PG.includes(st.clavePg) ? st.clavePg : 10;
+const repasoClave = t => (window.EXSUBCLAVE_REPASO || {})[t] || null;   // tema con repaso propio como Esquema clave
 const claveFijos = t => (window.EXSUBCLAVE || {})[t] || {};   // artículos que el usuario quiere SIEMPRE en el Esquema clave (expres-subrayado/clave-fijos.js)
 function claveSet(t, pgs) {
+  if (repasoClave(t)) return {ids: new Set(), pg: 10};   // el Esquema clave de este tema es el repaso (≈10 págs), no una selección de artículos
   const fijos = claveFijos(t), ids0 = new Set(); let tot0 = 0;
   D[t].piezas.forEach(p => { if (fijos[p.id] && !p.tachado && !quitado(t, p.id)) { ids0.add(p.id); tot0 += estPag(t, p, fijos[p.id] === 'f' ? {n: 1} : {s: 1}); } });
   if ((window.EXSUBCLAVE_SOLO || {})[t]) return {ids: ids0, pg: tot0};   // tema con lista cerrada del usuario: solo esos artículos
@@ -754,7 +757,17 @@ function selector(p, k) {
   if (!opc.length) return '<div class="addp">Este recorte ya lleva todo el artículo.</div>';
   return '<div class="addp"><b>Añadir a mi subrayado:</b>' + opc.map(([x, i]) => '<button class="chip' + (ad.includes(i) ? ' on' : '') + '" data-a="addb" data-i="' + i + '">' + (ad.includes(i) ? '✓ ' : '+ ') + esc(x[2]) + (/^Trozo/.test(x[2]) ? (i < a0 ? ' (antes)' : i > a1 ? ' (después)' : ' (en medio)') : '') + '</button>').join('') + (ad.length ? '<button class="chip" data-a="addx">Quitar lo añadido</button>' : '') + '</div><div class="addn">Las marcas que hagas en el recorte a medida se guardan en el artículo entero.</div>';
 }
+function repasoHTML(t) {
+  const u = repasoClave(t);
+  return '<div class="rep-clave"><div class="rep-bar"><b>⭐ Esquema clave · repaso del tema (≈10 págs)</b><a class="chip" href="' + u + '" target="_blank" rel="noopener">Abrir aparte ↗</a><a class="chip" href="' + u + '#imprimir" target="_blank" rel="noopener">🖨️ Imprimir / PDF</a></div><iframe id="rep-if" src="' + u + '" title="Esquema clave" style="width:100%;border:0;min-height:700px;background:transparent"></iframe></div>';
+}
+function ajustaRepaso() {
+  const f = document.getElementById('rep-if'); if (!f) return;
+  const aj = () => { try { f.style.height = (f.contentDocument.documentElement.scrollHeight + 20) + 'px'; } catch (e) {} };
+  f.onload = () => { aj(); setTimeout(aj, 400); setTimeout(aj, 1500); }; window.addEventListener('resize', aj);
+}
 function lista() {
+  if (st.clave && repasoClave(tema)) return repasoHTML(tema);
   const t = tema, S = leerStats(); const ps = D[t].piezas.filter(pasaFiltro);
   if (!ps.length) return '<div class="vacio">No hay nada con ese filtro.</div>';
   const ixD = ps.findIndex(p => p.id === dest); let h = '', gAnt = null;
@@ -786,7 +799,7 @@ function lista() {
   return h;
 }
 function render() { if (tema === null) dash(); else verTema(); }
-function pintaLista() { $('#m').innerHTML = lista(); montaEsqs(); }
+function pintaLista() { $('#m').innerHTML = lista(); montaEsqs(); ajustaRepaso(); }
 function verTema() { $('#b-atras').classList.remove('oculto'); $('#b-cut').classList.remove('oculto'); $('#b-filtros').classList.remove('oculto'); botonPin(); $('#tit').textContent = nomTema(tema); infoTema(); cabTema(); pintaLista(); }
 // ---------- «aquí te quedaste» ----------
 function pill() {
@@ -1301,6 +1314,7 @@ $('#mod').addEventListener('click', e => {
     const sel = st.imp[t], ps = D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id)), k = a.dataset.impA;   // los botones «Todo…» solo tocan el Exprés; los de fuera se eligen uno a uno
     if (k === 'n' && a.textContent.includes('Quitar')) D[t].piezas.forEach(p => { if (fueraP(t, p)) delete sel[p.id]; });
     if (k === 'n') ps.forEach(p => delete sel[p.id]);
+    else if (k === 'k' && repasoClave(t)) { window.open(repasoClave(t) + '#imprimir', '_blank'); return; }
     else if (k === 'k') { const ck = claveDe(t).ids; ps.forEach(p => { if (ck.has(p.id)) sel[p.id] = verPant(p); else delete sel[p.id]; }); }
     else if (k === 'm') ps.forEach(p => { if (p.m && (p.m.exof || p.m.ex || p.m.ast || (p.m.r || []).length)) sel[p.id] = verPant(p); else delete sel[p.id]; });
     else {
