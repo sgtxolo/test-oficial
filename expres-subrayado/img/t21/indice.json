@@ -126,15 +126,6 @@
   ]
  },
  {
-  "id": "b-212",
-  "nombre": "LO 2/1989 · Procesal Militar (detención) · Artículo 212",
-  "img": "b-212.jpg",
-  "wh": [
-   1075,
-   230
-  ]
- },
- {
   "id": "b-213",
   "nombre": "LO 2/1989 · Procesal Militar (detención) · Artículo 213",
   "img": "b-213.jpg",
@@ -668,9 +659,18 @@
   "id": "i-4",
   "nombre": "Ley 23/2014 · Reconocimiento mutuo de resoluciones penales · Artículo 4",
   "img": "i-4.jpg",
+  "imgr": "i-4-r.jpg",
+  "ap": [
+   1,
+   3
+  ],
   "wh": [
    1075,
    297
+  ],
+  "whr": [
+   1075,
+   230
   ]
  },
  {
@@ -1084,15 +1084,6 @@
   "wh": [
    1075,
    935
-  ]
- },
- {
-  "id": "i-49",
-  "nombre": "Ley 23/2014 · Reconocimiento mutuo de resoluciones penales · Artículo 49",
-  "img": "i-49.jpg",
-  "wh": [
-   1075,
-   669
   ]
  },
  {

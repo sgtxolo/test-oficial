@@ -1,12 +1,112 @@
 [
- { "id": "a", "nombre": "LO 6/1984 · Habeas Corpus", "paginas": [9, 14], "inicio": "^LEY ORGÁNICA 6/1984", "cit": "Habeas Corpus|Ley Orgánica 6/1984|LO 6/1984" },
- { "id": "b", "nombre": "LO 2/1989 · Procesal Militar (detención)", "paginas": [5, 8], "inicio": "^CAPÍTULO VIII · De las medidas cautelares", "cit": "Ley Orgánica Procesal Militar|Ley Orgánica 2/1989|LO 2/1989" },
- { "id": "c", "nombre": "LO 19/1994 · Testigos y peritos", "paginas": [23, 28], "inicio": "^LEY ORGÁNICA 19/1994", "cit": "Ley Orgánica 19/1994|LO 19/1994|testigos y peritos" },
- { "id": "d", "nombre": "LO 3/2003 · Equipos conjuntos (responsabilidad penal)", "paginas": [15, 16], "inicio": "^LEY ORGÁNICA 3/2003", "cit": "Ley Orgánica 3/2003|LO 3/2003" },
- { "id": "e", "nombre": "LO 10/2007 · Base de datos de ADN", "paginas": [17, 22], "inicio": "^LEY ORGÁNICA 10/2007", "cit": "Ley Orgánica 10/2007|LO 10/2007|ADN" },
- { "id": "f", "nombre": "Ley 4/1985 · Extradición pasiva", "paginas": [29, 38], "inicio": "^LEY 4/1985", "cit": "Ley 4/1985|Extradición Pasiva" },
- { "id": "g", "nombre": "Ley 11/2003 · Equipos conjuntos de investigación", "paginas": [39, 45], "inicio": "^CAPÍTULO I · Disposiciones generales", "cit": "Ley 11/2003" },
- { "id": "h", "nombre": "Ley 25/2007 · Conservación de datos", "paginas": [47, 57], "inicio": "^CAPÍTULO I · Disposiciones generales", "cit": "Ley 25/2007" },
- { "id": "i", "nombre": "Ley 23/2014 · Reconocimiento mutuo de resoluciones penales", "paginas": [59, 162], "inicio": "^TÍTULO PRELIMINAR · Unión Europea", "cit": "Ley 23/2014" },
- { "id": "j", "nombre": "Ley 4/2015 · Estatuto de la víctima", "paginas": [163, 188], "inicio": "^TÍTULO PRELIMINAR · Disposiciones generales", "cit": "Ley 4/2015|Estatuto de la víctima" }
+ {
+  "id": "a",
+  "nombre": "LO 6/1984 · Habeas Corpus",
+  "paginas": [
+   9,
+   14
+  ],
+  "inicio": "^LEY ORGÁNICA 6/1984",
+  "cit": "Habeas Corpus|Ley Orgánica 6/1984|LO 6/1984"
+ },
+ {
+  "id": "b",
+  "nombre": "LO 2/1989 · Procesal Militar (detención)",
+  "paginas": [
+   5,
+   8
+  ],
+  "inicio": "^CAPÍTULO VIII · De las medidas cautelares",
+  "cit": "Ley Orgánica Procesal Militar|Ley Orgánica 2/1989|LO 2/1989"
+ },
+ {
+  "id": "c",
+  "nombre": "LO 19/1994 · Testigos y peritos",
+  "paginas": [
+   23,
+   28
+  ],
+  "inicio": "^LEY ORGÁNICA 19/1994",
+  "cit": "Ley Orgánica 19/1994|LO 19/1994|testigos y peritos"
+ },
+ {
+  "id": "d",
+  "nombre": "LO 3/2003 · Equipos conjuntos (responsabilidad penal)",
+  "paginas": [
+   15,
+   16
+  ],
+  "inicio": "^LEY ORGÁNICA 3/2003",
+  "cit": "Ley Orgánica 3/2003|LO 3/2003"
+ },
+ {
+  "id": "e",
+  "nombre": "LO 10/2007 · Base de datos de ADN",
+  "paginas": [
+   17,
+   22
+  ],
+  "inicio": "^LEY ORGÁNICA 10/2007",
+  "cit": "Ley Orgánica 10/2007|LO 10/2007|ADN"
+ },
+ {
+  "id": "f",
+  "nombre": "Ley 4/1985 · Extradición pasiva",
+  "paginas": [
+   29,
+   38
+  ],
+  "inicio": "^LEY 4/1985",
+  "cit": "Ley 4/1985|Extradición Pasiva"
+ },
+ {
+  "id": "g",
+  "nombre": "Ley 11/2003 · Equipos conjuntos de investigación",
+  "paginas": [
+   39,
+   45
+  ],
+  "inicio": "^CAPÍTULO I · Disposiciones generales",
+  "cit": "Ley 11/2003"
+ },
+ {
+  "id": "h",
+  "nombre": "Ley 25/2007 · Conservación de datos",
+  "paginas": [
+   47,
+   57
+  ],
+  "inicio": "^CAPÍTULO I · Disposiciones generales",
+  "cit": "Ley 25/2007"
+ },
+ {
+  "id": "i",
+  "nombre": "Ley 23/2014 · Reconocimiento mutuo de resoluciones penales",
+  "paginas": [
+   59,
+   162
+  ],
+  "inicio": "^TÍTULO PRELIMINAR · Unión Europea",
+  "cit": "Ley 23/2014"
+ },
+ {
+  "id": "j",
+  "nombre": "Ley 4/2015 · Estatuto de la víctima",
+  "paginas": [
+   163,
+   188
+  ],
+  "inicio": "^TÍTULO PRELIMINAR · Disposiciones generales",
+  "cit": "Ley 4/2015|Estatuto de la víctima"
+ },
+ {
+  "id": "k",
+  "nombre": "Instrucción 1/2024 SES · Detención policial",
+  "paginas": [
+   245,
+   315
+  ],
+  "inicio": "^PRIMERA. OBJETO",
+  "cit": "Instrucción 1/2024|Instrucción núm|Procedimiento [Ii]ntegral de la [Dd]etención"
+ }
 ]
