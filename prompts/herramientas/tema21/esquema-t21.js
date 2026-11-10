@@ -7,7 +7,8 @@ const RAIZ = path.join(__dirname, '..', '..', '..'), F = path.join(RAIZ, 'esquem
 const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 let MARCAS = {}; try { MARCAS = require('./marcas-t21.js'); } catch (e) {}
 const usadas = new Set();
-const attrs = (art, tok, idx, texto, cnt) => {
+const attrs = (art0, tok, idx, texto, cnt) => {
+  const art = ley + ":" + art0;   // clave: ley:artículo|token (ley 1 Habeas, 2 LO 2/1989, 3 LO 19/1994, 4 LO 3/2003, 5 LO 10/2007, 6 Ext, 7 L11/2003, 8 L25/2007, 9 L23/2014, 10 L4/2015)
   const ex = [], r = [];
   const claves = [`${art}|${tok}`, `${art}|${tok}@${cnt}`, `${art}|#${idx}`, ...Object.keys(MARCAS).filter(k => k.startsWith(art + '|~') && texto.startsWith(k.slice(art.length + 2)))];
   for (const k of claves) if (MARCAS[k]) { usadas.add(k); (MARCAS[k].ex || []).forEach(x => !ex.includes(x) && ex.push(x)); (MARCAS[k].r || []).forEach(x => !r.includes(x) && r.push(x)); }
