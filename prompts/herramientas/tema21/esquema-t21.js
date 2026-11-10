@@ -54,16 +54,45 @@ for (let i = ini; i < fin; i++) {
 }
 cierraArt(); vuelcaCab();
 const hCP = h;
+// ---- Instrucción 1/2024 SES (texto limpio, una columna): cada punto del anexo / apéndice = una ficha; cada subpunto, un párrafo
+const hINS = (() => {
+  const i0 = lineas.findIndex(l => /^INSTRUCCIONES:\s*$/.test(l.trim()));
+  let i1 = lineas.findIndex((l, i) => i > i0 && /^Documentación acreditativa MNP/.test(l.trim())); if (i1 < 0) i1 = lineas.length;
+  const sk = /^(=====PAG|- \d+ -$|MINISTERIO DEL INTERIOR SECRETARÍA DE ESTADO DE SEGURIDAD)/;
+  let out = '<div class="bloque-titulo">INSTRUCCIÓN 1/2024 DE LA SECRETARÍA DE ESTADO DE SEGURIDAD POR LA QUE SE APRUEBA EL «PROCEDIMIENTO INTEGRAL DE LA DETENCIÓN POLICIAL»</div>';
+  let abierta = false, ps = [], cur = null, head = null, enIndice = false;
+  const flush = () => { if (cur) { ps.push(`<p>${esc(cur)}</p>`); cur = null; } };
+  const cierra = () => { flush(); if (abierta) { out += `<div class="articulo"><div class="articulo-head">${esc(head)}</div><div class="articulo-body"><div class="txt">${ps.join('')}</div></div></div>`; ps = []; abierta = false; } };
+  const MAY = /^[A-ZÁÉÍÓÚÑ0-9 ,.\-:()«»/]{6,}$/;
+  for (let i = i0; i < i1; i++) {
+    const l = lineas[i].trim(); if (!l || sk.test(l)) continue;
+    if (/^ÍNDICE DE CONTENIDOS/.test(l)) { enIndice = true; continue; }
+    if (enIndice) { if (/^ANEXO$/.test(l)) enIndice = false; else continue; }
+    let m;
+    if (/^ANEXO$/.test(l)) { cierra(); out += '<div class="bloque-titulo">ANEXO · PROCEDIMIENTO INTEGRAL DE LA DETENCIÓN POLICIAL</div>'; continue; }
+    if (/^INSTRUCCIONES:$/.test(l) || /^APÉNDICES$/.test(l)) continue;
+    if ((m = l.match(/^(PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA)\. (.+)$/)) || (m = l.match(/^(\d{1,2})\.?-? ?([A-ZÁÉÍÓÚÑ].*)$/)) && MAY.test(m[2]) && !/^\d{1,2}\.\d/.test(l)) {
+      cierra(); head = l; abierta = true; continue; }
+    if (/^APÉNDICE [IV]+(\.\d)?\b/.test(l)) { cierra(); head = l; abierta = true; continue; }
+    if (abierta && ps.length === 0 && !cur && MAY.test(l) && head && !/^\d/.test(l)) { head += ' ' + l; continue; }   // título que continúa en otro renglón
+    if (!abierta) continue;
+    const t = l.replace(/^ð[·§]\s*/, '• ');
+    const nuevo = /^(\d{1,2}\.\d{1,2}\.-?|\d{1,2}\.\d\.-|[a-z]\)|\d[º°]\.|•)\s/.test(t) || (cur !== null && /[.:;]$/.test(cur) && /^[A-ZÁÉÍÓÚÑ¿«"“-]/.test(t) && cur.length > 40);
+    if (nuevo || cur === null) { flush(); cur = t; } else cur += (/-$/.test(cur) ? '' : ' ') + t;
+  }
+  cierra(); return out;
+})();
 let s = fs.readFileSync(F, 'utf8');
 const bloque = `/* T21_BEGIN */
 const T21 = {};
 /* T21_CP */ T21.leyes = ${JSON.stringify(hCP)};
+/* T21_INS */ T21.instr = ${JSON.stringify(hINS)};
 (function(){
   const t = esquemas[20];
   t.titulo = "21 — Derecho Procesal Penal (II): normas complementarias";
   t.html = leyenda()
-    + trampa("Cómo está hecho este esquema", "Texto LITERAL de las leyes del extracto oficial 2026 (Habeas Corpus, LO 2/1989, LO 19/1994, LO 3/2003, LO 10/2007, Leyes 4/1985, 11/2003, 25/2007, 23/2014 y 4/2015). Los Convenios de Viena y la Instrucción 1/2024 se añaden aparte.")
-    + T21.leyes;
+    + trampa("Cómo está hecho este esquema", "Texto LITERAL de las leyes del extracto oficial 2026 (Habeas Corpus, LO 2/1989, LO 19/1994, LO 3/2003, LO 10/2007, Leyes 4/1985, 11/2003, 25/2007, 23/2014 y 4/2015). Al final, la Instrucción 1/2024 de la Secretaría de Estado de Seguridad (texto limpio). Los Convenios de Viena no se incluyen aún (el oficial viene en OCR roto).")
+    + T21.leyes + T21.instr;
 })();
 /* T21_END */`;
 const a = s.indexOf('/* T21_BEGIN */');
