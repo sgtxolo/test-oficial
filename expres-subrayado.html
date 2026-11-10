@@ -444,7 +444,7 @@ const enImpP = (t, p) => !quitado(t, p.id) && (!fueraP(t, p) || !!st.impOp.extra
 const visibles = t => D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id));
 // ⭐ Esquema clave (criterio del usuario, 10/11/2026): lo más probable de examen, entre 8 y 10 págs. Puntos por artículo (las preguntas de IA NO cuentan):
 //  · pregunta OFICIAL enlazada: 6 cada una (máx. 4) · y sus artículos de antes y después (los examinadores repiten o pasan al contiguo): hasta 6 por vecino si el artículo está muy subrayado
-//  · marcas de la academia en tu temario: EXOF 6, EX 4, ✱ 4 · fichas R (RECUERDA, suelen ser pregunta): 3 cada una (máx. 2) · cuadro/esquema del temario subrayado: 3
+//  · marcas de tu temario que indican pregunta de exámenes anteriores: EXOF (a mano) 16, sello EXAMEN de la academia 8, ✱ 4 · fichas R (RECUERDA, suelen ser pregunta): 3 cada una (máx. 2) · cuadro/esquema del temario subrayado: 3
 //  · tu subrayado (densidad medida en la imagen, 0-1 dentro del tema): hasta 4 · tus anotaciones a boli en los márgenes: hasta 4
 //  Se ordenan por puntos / páginas^0,5 (así un artículo largo pero importante, como las sanciones, no se cae por ser largo) y se rellena hasta el tope.
 const nOficiales = (t, p) => ((inv[t] || {})[p.id] || []).filter(q => !/-ia-/.test(q)).length;   // preguntas OFICIALES enlazadas a ese artículo (las de IA llevan «-ia-» en el id)
@@ -459,7 +459,7 @@ function vecinosPuntos(t, p) {
 }
 const puntosClave = (p, t) => {
   t = t === undefined ? tema : t; const m = p.m || {}, us = uSub(t, p);
-  return Math.min(nOficiales(t, p), 4) * 6 + vecinosPuntos(t, p) + (m.exof ? 6 : 0) + (m.ex ? 4 : 0) + (m.ast ? 4 : 0) + Math.min((m.r || []).length, 2) * 3 + (p.cu ? 3 : 0) + 4 * us[0] + Math.max(0, us[1] - 0.5) * 8 + (nOficiales(t, p) > 0 && ((m.ex && m.ast) || m.exof) ? 10 : 0);   // +10: pregunta oficial y a la vez tus dos marcas (EX y ✱) o EXOF
+  return Math.min(nOficiales(t, p), 4) * 6 + vecinosPuntos(t, p) + (m.exof ? 16 : 0) + (m.ex ? 8 : 0) + (m.ast ? 4 : 0) + Math.min((m.r || []).length, 2) * 3 + (p.cu ? 3 : 0) + 4 * us[0] + Math.max(0, us[1] - 0.5) * 8 + (nOficiales(t, p) > 0 && ((m.ex && m.ast) || m.exof) ? 10 : 0);   // +10: pregunta oficial y a la vez tus dos marcas (EX y ✱) o EXOF
 };
 const CLAVE_PG = [8, 10];
 const clavePgDe = () => CLAVE_PG.includes(st.clavePg) ? st.clavePg : 10;
