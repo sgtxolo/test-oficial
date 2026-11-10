@@ -59,7 +59,52 @@ const bRepaso = [CAL,
   [50, 'Vuelve al resumen solo en lo fallado de ambos temas y corrige tus esquemas.'],
   [35, "Test de 50 preguntas mezcladas de los temas nuevos (modo 'Bloques')."],
   [15, "Cierre: dudas marcadas del día y 'Repasar fallos'."]];
-const bSab = [CAL, [90, 'Inglés: tu suite de estudio de inglés.'], [60, 'Psicotécnicos.'], [30, "'Plazos y autoridades (general)'."]];
+/* ---------- Inglés y psicotécnicos (sábados + toques cortos entre semana) ---------- */
+/* Inglés: 41 temas de gramática de la app de inglés (test-oficial-ingles.html), 2 por sábado; al acabar, simulacros y flojos. */
+const TEMAS_ING = {1:'Present Simple',2:'Pasado Simple',3:'El Artículo',4:'El Plural',5:'Los Adjetivos',6:'Presente Continuo',7:'Past Continuo',8:'Genitivo Sajón',9:'There Be',10:'Question Words',11:'Question Tags',12:'Los Pronombres',13:'Sustantivos Contables e Incontables',14:'Presente Perfecto',15:'For, Since, Ago, Just, Still, Already, Yet',16:'Present Perfect Continuo',17:'Past Perfect',18:'Past Perfect Continuo',19:'Verbos Irregulares',20:'Los Adverbios',21:'Comparativo y Superlativo',22:'Las Preposiciones',23:'Despite, In Spite Of, Although, Though',24:'Conectores',25:'Futuro Simple y Futuro Perfecto',26:'Futuro Continuo y Perfecto Continuo',27:'Verbos Dinámicos y Estáticos',28:'Verbos Modales',29:'Verbos Modales Perfectos',30:'Primer Condicional',31:'Segundo Condicional',32:'Tercer Condicional',33:'Condicional Cero',34:'La Voz Pasiva',35:'El Imperativo',36:'Reported Speech',37:'Relative Clauses',38:'Phrasal Verbs',39:'False Friends',40:'Un poco de todo 1',41:'Un poco de todo 2'};
+const NT_ING = 41;
+const ingTema = N => 'T' + N + ' ' + TEMAS_ING[N];
+/* Psicotécnicos: tipos de prueba que se rotan (no hay banco en la app: se usa el material propio). */
+const TIPOS_PSI = [
+  ['series numéricas y de letras', 'busca la regla (suma, resta, alternancia, saltos) antes de calcular'],
+  ['razonamiento verbal (analogías, sinónimos y antónimos)', 'define la relación entre el primer par y aplícala al segundo'],
+  ['razonamiento lógico y deductivo', 'dibuja un esquema o una tabla y descarta opciones por contradicción'],
+  ['cálculo y problemas numéricos', 'porcentajes, proporciones, velocidades y reglas de tres; cálculo mental y estimación'],
+  ['razonamiento abstracto y series de figuras', 'compara giros, sumas y restas de elementos, colores y posiciones'],
+  ['razonamiento espacial (giros, plegados y cubos)', 'rota la figura mentalmente por pasos pequeños'],
+  ['atención y percepción (diferencias, búsqueda y comparación rápida)', 'ritmo constante: no te atasques, marca y sigue'],
+  ['memoria y ordenación (secuencias, datos y ordenaciones)', 'agrupa la información en bloques y repítela con tus palabras']];
+const PSI_SIM_CADA = 4;   // cada 4.º sábado, un bloque mixto cronometrado en lugar de un solo tipo
+function bSabN(k) {      // k = nº de sábado (0 = 14 nov 2026)
+  const a = 2 * k + 1, b = 2 * k + 2;
+  let ing;
+  if (a <= NT_ING) {
+    const ts = b <= NT_ING ? [a, b] : [a], nm = ts.map(ingTema).join(' y ');
+    ing = [[30, 'Inglés: teoría de ' + nm + ' (apartado Teoría de la app de inglés). Léela y escribe 3 ejemplos propios de cada uno; fíjate en las trampas.'],
+           [35, 'Inglés: test de ' + nm + " (30-40 preguntas, modo 'Un tema'). Anota los fallos."],
+           [25, "Inglés: repasa los fallos de hoy (modo 'Repasar fallos') y haz 10 preguntas de temas de semanas anteriores."]];
+  } else {
+    const simu = (k - Math.ceil(NT_ING / 2)) % 2 === 0;
+    ing = simu
+      ? [[30, 'Inglés: simulacro de inglés completo (apartado Simulacros de la app de inglés), cronometrado y sin ayudas.'],
+         [35, 'Inglés: corrige cada fallo con la teoría del tema y apunta la regla en una frase.'],
+         [25, 'Inglés: test de 20 preguntas de los 3 temas con peor nota.']]
+      : [[30, 'Inglés: repasa la teoría de los 3 temas de gramática con peor nota (míralo en Mi Progreso de la app de inglés).'],
+         [35, "Inglés: test de 40 preguntas de esos temas (modo 'Lo que no domino' o 'Repasar fallos')."],
+         [25, 'Inglés: phrasal verbs, false friends y verbos irregulares: 20 preguntas rápidas.']];
+  }
+  const sim = (k + 1) % PSI_SIM_CADA === 0, tp = TIPOS_PSI[k % TIPOS_PSI.length];
+  const psi = sim
+    ? [[10, 'Psicotécnicos: repasa tus errores recurrentes de las semanas anteriores.'],
+       [40, 'Psicotécnicos: bloque mixto cronometrado (series, analogías, lógica, cálculo y figuras) con el tiempo de la prueba real. Anota aciertos y tiempo.'],
+       [10, 'Psicotécnicos: revisa los fallos y apunta qué tipo te cuesta más.']]
+    : [[15, 'Psicotécnicos: método de ' + tp[0] + ': ' + tp[1] + '.'],
+       [35, 'Psicotécnicos: practica ' + tp[0] + ' con tu material, cronometrado. Anota aciertos y tiempo.'],
+       [10, 'Psicotécnicos: corrige los fallos y escribe en una línea por qué fallaste.']];
+  return [CAL, ...ing, ...psi, [30, "'Plazos y autoridades (general)'."]];
+}
+const bIngExpres = [10, "Inglés exprés: 15 preguntas en la app de inglés (modo 'Repasar fallos' o un tema ya visto). Mínimo 3 días por semana."];
+const bPsiDom = [20, 'Psicotécnicos: test corto cronometrado (20 min) del tipo que peor llevas. Mínimo 1 día por semana, además del sábado.'];
 const bColchon = [CAL, [120, 'Recupera lo atrasado del mes: por cada día que no hiciste, un tema o vuelta pendiente (máximo 2). Si vas al día, repasa primero los temas de la lista de flojos y haz el repaso inteligente.'], [40, "'Repasar fallos'."]];
 const bDom = [CAL, [40, "'Repasar fallos': todos los de la semana."], [25, "'Repasar dudas'."], [30, "'Plazos y autoridades (general)'."], [15, 'Mira la semana siguiente en el calendario y deja preparado el lunes.']];
 const bSim = [CAL,
@@ -103,15 +148,16 @@ const out = viejo.slice(0, 4).map((o, i) => i < 2 ? Object.assign({}, o, {id: 't
 
 const iso = d => d.toISOString().slice(0, 10);
 const sumaDias = (f, n) => { const d = new Date(f + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return iso(d); };
-let sig = 0, domN = 1;   // el domingo 8 nov (colchón) era el primero del ciclo
+let sig = 0, domN = 1, sabN = 0;   // sabN: 0 = sábado 14 nov 2026
+const conIng = (f, o) => { if ([1, 3, 5].includes(new Date(f + 'T12:00:00Z').getUTCDay())) { o.b = [...o.b, bIngExpres]; o.m = tot(o.b); } return o; };   // el domingo 8 nov (colchón) era el primero del ciclo
 for (let f = '2026-11-09'; f <= '2027-07-01'; f = sumaDias(f, 1)) {
   const dow = new Date(f + 'T12:00:00Z').getUTCDay();
   if (FESTIVOS[f]) { out.push({d: f, k: 'LIBRE', t: 'Festivo', n: 'Libre. Si vas atrasado, úsalo para recuperar (hasta 3 h) siguiendo el orden del calendario.'}); continue; }
-  if (dow === 6) { out.push(dia(f, 'SAB', 'Inglés y psicotécnicos', bSab)); continue; }
+  if (dow === 6) { out.push(dia(f, 'SAB', 'Inglés y psicotécnicos', bSabN(sabN++))); continue; }
   if (dow === 0) {
     const ciclo = domN++ % 4;   // colchón · descanso · ligero · descanso  (un descanso real cada dos semanas)
-    if (ciclo === 0) out.push(dia(f, 'COLCHON', 'Domingo colchón', bColchon));
-    else if (ciclo === 2) out.push(dia(f, 'DOM', 'Domingo ligero', bDom));
+    if (ciclo === 0) out.push(dia(f, 'COLCHON', 'Domingo colchón', [...bColchon, bPsiDom]));
+    else if (ciclo === 2) out.push(dia(f, 'DOM', 'Domingo ligero', [...bDom, bPsiDom]));
     else out.push({d: f, k: 'LIBRE', t: 'Descanso', n: 'Día libre de verdad: no estudies. Descansar también forma parte del plan (y la memoria se consolida mientras descansas).'});
     continue;
   }
@@ -126,8 +172,8 @@ for (let f = '2026-11-09'; f <= '2027-07-01'; f = sumaDias(f, 1)) {
     continue;
   }
   if (SIMS.includes(f)) { const o = dia(f, 'SIMULACRO', 'SIMULACRO', bSim, {sim: 1}); if (HITOS[f]) { o.h = HITOS[f][0]; o.ht = HITOS[f][1]; } out.push(o); continue; }
-  if (sig < cola.length) { const c = cola[sig++]; out.push(dia(f, c.k, c.t, c.b, {id: c.id, tm: c.tm, last: c.last})); continue; }
-  out.push(dia(f, 'REFUERZO', 'Refuerzo de puntos débiles', bRef));
+  if (sig < cola.length) { const c = cola[sig++]; out.push(conIng(f, dia(f, c.k, c.t, c.b, {id: c.id, tm: c.tm, last: c.last}))); continue; }
+  out.push(conIng(f, dia(f, 'REFUERZO', 'Refuerzo de puntos débiles', bRef)));
 }
 if (HITOS['2027-06-11']) { const o = out.find(x => x.d === '2027-06-11'); o.h = HITOS['2027-06-11'][0]; o.ht = HITOS['2027-06-11'][1]; }
 if (sig < cola.length) console.log('AVISO: no caben ' + (cola.length - sig) + ' tareas antes del ' + ROD + ' (la app las recortará; revisa PAG o PARTES_VUELTA).');
