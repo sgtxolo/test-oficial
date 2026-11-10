@@ -13,6 +13,8 @@ const P = /(\d|años?\b|meses|mes siguiente|días?\b|trigésimo|nonagésimo|cuad
 const A = /(ministerio|ministro|ministra|banco de españa|consejo de ministros|consejo de europa|consejo de administración|secretar|comisión|comité|servicio ejecutivo|dirección general|^dg\b|\bdg\b|gobierno|naciones unidas|autoridad|órgano|organismos|entidades|intermediarios|empresas de servicios|gestoras|sociedades gestoras|auditores|notarios|casinos|operadores de juego|experto externo|estado del pabellón|estado requirente|estado requerido|comunidad europea|signatarios|fiscal|tesoro|director|presidente|boe|apátrida|nacionales|tribunal|profesiones colegiadas|titular de la actividad|sociedad dominante|ministerio de justicia|miembros del consejo)/;
 const C = /^(facilitar|quedan obligadas a facilitar|remitir|remitir la solicitud|presentar la orden|presentar|difusión|incitar|mensajes con la intención de incitar|incitar a otra persona|dar instrucciones|informa|notifica|comunicar|tipificar|someter|mantener|conserv|identificarán|identifican|comprueban|aplicar|ampliar|invita|aceptación|aprueba|dictar|se faculta|designa|eliminarán|instruye|incoar|convoca|obtienen, conservan y actualizan|examinarán|abstendrán|comunicarán|reseñando por escrito|notificarlo|pedirle que confirme la matrícula|solicitarle autorización|visitar|registrarlo|adoptar medidas|captación|conversión o transferencia|ocultación o disimulación|intensificar y canalizar|impulso y coordinación|verifica|autoridad competente verifica|promover|prevenir y combatir|proteger y ayudar|expide|remit|someter el asunto|proporciona|difusión)/;
 const Y = /^(la única que «podrá»)$/;
+// Naranja = palabras destacables (conceptos y categorías del artículo). Todo lo demás con contenido = amarillo (subrayado general).
+const D = /(muy graves|graves|leves|infracci|sanci|amonestaci|multa|suspensi|revocaci|separaci|inhabilitaci|decomiso|extradici|blanqueo|terroris|delito|provocaci|reclutamiento|adiestramiento|diligencia debida|titular real|titularidad|control|prescri|graduaci|reserva|enmienda|denuncia|adhesi|competencia|jurisdicci|inversi|liberalizaci|salvaguardia|tentativa|cómplice|trata\b|tráfico|fabricaci|marcaci|desactivaci|fichero|abstenci|examen|comunicaci|colaboraci|asistencia|víctimas|testigos|requerimiento|secreto|incoaci|sobreseimiento|obligatoria|residentes)/;
 const cls = t => {
   const x = norm(t);
   if (Y.test(x)) return 'y';
@@ -20,13 +22,17 @@ const cls = t => {
   if (P.test(x) && !A.test(x)) return 'p';
   if (A.test(x)) return 'a';
   if (C.test(x)) return 'c';
-  return 'd';
+  return D.test(x) ? 'd' : 'y';   // naranja solo para los conceptos/categorías; el contenido general del artículo va en amarillo
 };
 let n = 0; const cuenta = {};
+// --rehacer-naranja: repasa las marcas que ya estaban en naranja (d) y pasa a amarillo las que no son concepto/categoría
+if (process.argv.includes('--rehacer-naranja')) s = s.replace(/<mark class="d">([\s\S]*?)<\/mark>/g, (m, t) => '<mark class="' + (D.test(norm(t)) ? 'd' : 'y') + '">' + t + '</mark>');
 s = s.replace(/<mark>([\s\S]*?)<\/mark>/g, (m, t) => { const c = cls(t); n++; cuenta[c] = (cuenta[c] || 0) + 1; return '<mark class="' + c + '">' + t + '</mark>'; });
 // Correcciones a mano (texto exacto de la marca -> clase). Se aplican siempre, también sobre marcas que ya tenían clase.
 const OVERRIDES = {
-  d: ['residentes o no residentes','residentes y no residentes','no miembros que participaron','penal o no penal','personas físicas no residentes','nombre del fabricante','nombre y ubicación','sin autorización previa','sin solicitar autorización','proporcionalidad','aceptación','conservación de documentos','cooperación entre las autoridades nacionales','penal, civil o administrativa','autorización administrativa previa','autorización administrativa','uno de sus nacionales','nacionales','nacional o un apátrida','apátrida con residencia habitual','cargo de administración o dirección','5 a 7 y 9','ocasionales o muy limitadas','más de un Estado'],
+  d: ['residentes o no residentes','residentes y no residentes','sin autorización previa','sin solicitar autorización'],
+  y: ['no miembros que participaron','penal o no penal','personas físicas no residentes','nombre del fabricante','nombre y ubicación','proporcionalidad','aceptación','conservación de documentos','cooperación entre las autoridades nacionales','penal, civil o administrativa','autorización administrativa previa','autorización administrativa','uno de sus nacionales','nacionales','nacional o un apátrida','apátrida con residencia habitual','cargo de administración o dirección','5 a 7 y 9','ocasionales o muy limitadas','más de un Estado'],
+  a: ['Industria, Comercio y Turismo','Sec. de Estado de Comercio','Consulta entre las Partes'],
   k: ['no proceda a su extradición','no excedan de un umbral cuantitativo','no es posible o dificulta la investigación','no lo extradita por ser nacional','consentimiento de la víctima no se tiene en cuenta'],
 };
 const SPLIT = { // marca completa -> html de sustitución (palabra clave roja + el resto con su color)
