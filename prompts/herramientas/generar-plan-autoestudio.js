@@ -74,36 +74,36 @@ const TIPOS_PSI = [
   ['razonamiento espacial (giros, plegados y cubos)', 'rota la figura mentalmente por pasos pequeños'],
   ['atención y percepción (diferencias, búsqueda y comparación rápida)', 'ritmo constante: no te atasques, marca y sigue'],
   ['memoria y ordenación (secuencias, datos y ordenaciones)', 'agrupa la información en bloques y repítela con tus palabras']];
-const PSI_SIM_CADA = 4;   // cada 4.º domingo de psicotécnicos, un bloque mixto cronometrado en lugar de un solo tipo
+const PSI_SIM_CADA = 4;   // cada 4.º sábado, un bloque mixto cronometrado en lugar de un solo tipo
 function bSabN(k) {      // k = nº de sábado (0 = 14 nov 2026)
   const a = 2 * k + 1, b = 2 * k + 2;
   let ing;
   if (a <= NT_ING) {
     const ts = b <= NT_ING ? [a, b] : [a], nm = ts.map(ingTema).join(' y ');
-    ing = [[40, 'Inglés: teoría de ' + nm + ' (apartado Teoría de la app de inglés). Léela y escribe 3 ejemplos propios de cada uno; fíjate en las trampas.'],
-           [50, 'Inglés: test de ' + nm + " (30-40 preguntas, modo 'Un tema'). Anota los fallos."],
-           [30, "Inglés: repasa los fallos de hoy (modo 'Repasar fallos') y haz 10 preguntas de temas de semanas anteriores."]];
+    ing = [[30, 'Inglés: teoría de ' + nm + ' (apartado Teoría de la app de inglés). Léela y escribe 3 ejemplos propios de cada uno; fíjate en las trampas.'],
+           [35, 'Inglés: test de ' + nm + " (30-40 preguntas, modo 'Un tema'). Anota los fallos."],
+           [25, "Inglés: repasa los fallos de hoy (modo 'Repasar fallos') y haz 10 preguntas de temas de semanas anteriores."]];
   } else {
     const simu = (k - Math.ceil(NT_ING / 2)) % 2 === 0;
     ing = simu
-      ? [[40, 'Inglés: simulacro de inglés completo (apartado Simulacros de la app de inglés), cronometrado y sin ayudas.'],
-         [50, 'Inglés: corrige cada fallo con la teoría del tema y apunta la regla en una frase.'],
-         [30, 'Inglés: test de 20 preguntas de los 3 temas con peor nota.']]
-      : [[40, 'Inglés: repasa la teoría de los 3 temas de gramática con peor nota (míralo en Mi Progreso de la app de inglés).'],
-         [50, "Inglés: test de 40 preguntas de esos temas (modo 'Lo que no domino' o 'Repasar fallos')."],
-         [30, 'Inglés: phrasal verbs, false friends y verbos irregulares: 20 preguntas rápidas.']];
+      ? [[30, 'Inglés: simulacro de inglés completo (apartado Simulacros de la app de inglés), cronometrado y sin ayudas.'],
+         [35, 'Inglés: corrige cada fallo con la teoría del tema y apunta la regla en una frase.'],
+         [25, 'Inglés: test de 20 preguntas de los 3 temas con peor nota.']]
+      : [[30, 'Inglés: repasa la teoría de los 3 temas de gramática con peor nota (míralo en Mi Progreso de la app de inglés).'],
+         [35, "Inglés: test de 40 preguntas de esos temas (modo 'Lo que no domino' o 'Repasar fallos')."],
+         [25, 'Inglés: phrasal verbs, false friends y verbos irregulares: 20 preguntas rápidas.']];
   }
-  ing.push([25, "Inglés: lectura y vocabulario: un texto corto en inglés, 15 palabras nuevas con su ejemplo y 10 preguntas de phrasal verbs o false friends."]);
-  return [CAL, ...ing, [30, "'Plazos y autoridades (general)'."]];
+  const sim = (k + 1) % PSI_SIM_CADA === 0, tp = TIPOS_PSI[k % TIPOS_PSI.length];
+  const psi = sim
+    ? [[10, 'Psicotécnicos: repasa tus errores recurrentes de las semanas anteriores.'],
+       [40, 'Psicotécnicos: bloque mixto cronometrado (series, analogías, lógica, cálculo y figuras) con el tiempo de la prueba real. Anota aciertos y tiempo.'],
+       [10, 'Psicotécnicos: revisa los fallos y apunta qué tipo te cuesta más.']]
+    : [[15, 'Psicotécnicos: método de ' + tp[0] + ': ' + tp[1] + '.'],
+       [35, 'Psicotécnicos: practica ' + tp[0] + ' con tu material, cronometrado. Anota aciertos y tiempo.'],
+       [10, 'Psicotécnicos: corrige los fallos y escribe en una línea por qué fallaste.']];
+  return [CAL, ...ing, ...psi, [30, "'Plazos y autoridades (general)'."]];
 }
 const bIngExpres = [10, "Inglés exprés: 15 preguntas en la app de inglés (modo 'Repasar fallos' o un tema ya visto). Mínimo 3 días por semana."];
-let psiN = 0;   // nº de domingo de psicotécnicos (colchón o ligero)
-function bPsiDom() {
-  const k = psiN++, tp = TIPOS_PSI[k % TIPOS_PSI.length];
-  return (k + 1) % PSI_SIM_CADA === 0
-    ? [[10, "Psicotécnicos: repasa tus errores recurrentes de las semanas anteriores."], [35, "Psicotécnicos: bloque mixto cronometrado (series, analogías, lógica, cálculo y figuras) con el tiempo de la prueba real. Anota aciertos y tiempo."], [10, "Psicotécnicos: revisa los fallos y apunta qué tipo te cuesta más."]]
-    : [[10, "Psicotécnicos: método de " + tp[0] + ": " + tp[1] + "."], [30, "Psicotécnicos: practica " + tp[0] + " con tu material, cronometrado. Anota aciertos y tiempo."], [10, "Psicotécnicos: corrige los fallos y escribe en una línea por qué fallaste."]];
-}
 const bColchon = [CAL, [120, 'Recupera lo atrasado del mes: por cada día que no hiciste, un tema o vuelta pendiente (máximo 2). Si vas al día, repasa primero los temas de la lista de flojos y haz el repaso inteligente.'], [40, "'Repasar fallos'."]];
 const bDom = [CAL, [40, "'Repasar fallos': todos los de la semana."], [25, "'Repasar dudas'."], [30, "'Plazos y autoridades (general)'."], [15, 'Mira la semana siguiente en el calendario y deja preparado el lunes.']];
 const bSim = [CAL,
@@ -152,11 +152,11 @@ const conIng = (f, o) => { if ([1, 3, 5].includes(new Date(f + 'T12:00:00Z').get
 for (let f = '2026-11-09'; f <= '2027-07-01'; f = sumaDias(f, 1)) {
   const dow = new Date(f + 'T12:00:00Z').getUTCDay();
   if (FESTIVOS[f]) { out.push({d: f, k: 'LIBRE', t: 'Festivo', n: 'Libre. Si vas atrasado, úsalo para recuperar (hasta 3 h) siguiendo el orden del calendario.'}); continue; }
-  if (dow === 6) { out.push(dia(f, 'SAB', 'Inglés', bSabN(sabN++))); continue; }
+  if (dow === 6) { out.push(dia(f, 'SAB', 'Inglés y psicotécnicos', bSabN(sabN++))); continue; }
   if (dow === 0) {
     const ciclo = domN++ % 4;   // colchón · descanso · ligero · descanso  (un descanso real cada dos semanas)
-    if (ciclo === 0) out.push(dia(f, 'COLCHON', 'Domingo colchón', [...bColchon, ...bPsiDom()]));
-    else if (ciclo === 2) out.push(dia(f, 'DOM', 'Domingo ligero', [...bDom, ...bPsiDom()]));
+    if (ciclo === 0) out.push(dia(f, 'COLCHON', 'Domingo colchón', bColchon));
+    else if (ciclo === 2) out.push(dia(f, 'DOM', 'Domingo ligero', bDom));
     else out.push({d: f, k: 'LIBRE', t: 'Descanso', n: 'Día libre de verdad: no estudies. Descansar también forma parte del plan (y la memoria se consolida mientras descansas).'});
     continue;
   }
