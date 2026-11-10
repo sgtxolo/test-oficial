@@ -28,9 +28,53 @@ window.MEJORAS2 = function () {
     + '.portada .p-datos span{background:#fff;border:1px solid #bcd3c4;border-radius:99px;padding:3px 12px;font-size:12.5px}.portada .p-datos b{color:#163f30}.portada .p-pie{font-size:11px;color:#777;margin-top:6px}'
     + '@media print{.portada{margin:0 0 4mm}}';
   document.head.appendChild(css);
-  const cortesDe = (t, nom) => ((st.cort || {})[t + '/' + nom]) || [];
+  // ---------- cortes compartidos entre versiones ----------
+  // Un corte se guarda siempre sobre la foto ENTERA (st.cort['tema/e-17']). La versión Exprés (foto «-r») es la entera partida en tramos (p.tr)
+  // con una franja «(…)» de 30 px entre ellos; con ese modelo se traduce de una a otra, así un corte vale en Exprés, Entero y Esquema clave.
+  const GAPR = 30, CUT_TMP = new Set();
+  const mezcla = a => { const o = a.slice().sort((x, y) => x[0] - y[0]), r = []; o.forEach(b => { const u = r[r.length - 1]; if (u && b[0] <= u[1] + 2) u[1] = Math.max(u[1], b[1]); else r.push(b.slice()); }); return r; };
+  const nomBase = p => p.img.replace('.jpg', '');
+  const pzDeNom = (t, nom) => (((D[t] || {}).piezas) || []).find(p => p.imgr && p.imgr.replace('.jpg', '') === nom);
+  function modeloR(p) {
+    if (!p.imgr || !p.tr || !p.whr) return null; if (p._mr !== undefined) return p._mr;
+    let r = 0; const seg = [];
+    p.tr.forEach((x, i, a) => { const gap = i && x[0] - a[i - 1][1] > 8; if (gap) r += GAPR; seg.push({f0: x[0], f1: x[1], r0: r, gapAntes: gap ? [r - GAPR, r] : null}); r += x[1] - x[0]; });
+    return (p._mr = Math.abs(r - p.whr[1]) <= 3 ? seg : null);
+  }
+  function aR(p, fc) {   // cortes de la foto entera → cortes de la foto recortada
+    const sg = modeloR(p); if (!sg || !fc.length) return []; const out = [], gone = [];
+    sg.forEach((s, i) => {
+      let vis = [[s.f0, s.f1]];
+      fc.forEach(([c0, c1]) => { const n = []; vis.forEach(([x, y]) => { if (c1 <= x || c0 >= y) n.push([x, y]); else { if (c0 - x >= 1) n.push([x, c0]); if (y - c1 >= 1) n.push([c1, y]); } }); vis = n; });
+      let y = s.f0; const rem = []; vis.forEach(([x, yy]) => { if (x - y > 0) rem.push([y, x]); y = yy; }); if (s.f1 - y > 0) rem.push([y, s.f1]);
+      rem.forEach(([x, yy]) => out.push([s.r0 + x - s.f0, s.r0 + yy - s.f0]));
+      if (!vis.length) gone.push(i);
+    });
+    gone.forEach(i => { const gp = sg[i + 1 < sg.length ? i + 1 : i].gapAntes; if (gp) out.push(gp.slice()); });   // tramo entero fuera → también su «(…)»
+    return mezcla(out);
+  }
+  function aF(p, rc) {   // cortes de la foto recortada → cortes de la foto entera (solo lo que cae sobre tramos)
+    const sg = modeloR(p), out = []; if (!sg) return out;
+    rc.forEach(([a, b]) => sg.forEach(s => { const r1 = s.r0 + s.f1 - s.f0, x = Math.max(a, s.r0), y = Math.min(b, r1); if (y - x > 0) out.push([s.f0 + x - s.r0, s.f0 + y - s.r0]); }));
+    return mezcla(out);
+  }
+  function consolida() {   // pasa a la foto entera los cortes que haya sobre la recortada (hechos aquí o venidos de otro dispositivo)
+    let ch = false;
+    Object.keys(st.cort || {}).forEach(k => {
+      const i = k.indexOf('/'), t = k.slice(0, i), nom = k.slice(i + 1); if (!/-r$/.test(nom)) return;
+      const p = pzDeNom(t, nom); if (!p || !modeloR(p) || window.CUT_ED === p.id) return;
+      const kf = t + '/' + nomBase(p), rc = st.cort[k] || [], old = st.cort[kf] || [], reemplaza = CUT_TMP.has(k); let base = old;
+      if (reemplaza) { base = []; old.forEach(([c0, c1]) => { let parts = [[c0, c1]]; modeloR(p).forEach(s => { const n = []; parts.forEach(([x, y]) => { if (y <= s.f0 || x >= s.f1) n.push([x, y]); else { if (s.f0 - x > 0) n.push([x, s.f0]); if (y - s.f1 > 0) n.push([s.f1, y]); } }); parts = n; }); base.push(...parts); }); }
+      const r = mezcla(base.concat(aF(p, rc))); if (r.length) st.cort[kf] = r; else delete st.cort[kf];
+      delete st.cort[k]; CUT_TMP.delete(k); ch = true;
+    });
+    if (ch) guarda();
+  }
+  const tempR = (p, K) => { const nom = K.slice(K.indexOf('/') + 1); if (!p.imgr || nom !== p.imgr.replace('.jpg', '') || !modeloR(p)) return []; CUT_TMP.add(K); return aR(p, st.cort[K.slice(0, K.indexOf('/')) + '/' + nomBase(p)] || []); };
+  const cortesDe = (t, nom) => { const raw = (st.cort || {})[t + '/' + nom]; if (raw) return raw; const p = pzDeNom(t, nom); return p && modeloR(p) ? aR(p, (st.cort || {})[t + '/' + nomBase(p)] || []) : []; };
+  window.cortesDeX = cortesDe;
   const vmDe = (t, p) => { const k = key(t, p.id), cu = ((C[t] || {})[p.id] || []).length; if (!cu) return 'a'; if (st.modoEsq) return 'e'; return st.vm[k] || (st.esq[k] ? 'ae' : 'a'); };
-  const refresco = () => { if (!$('#vis').classList.contains('oculto')) pintaVisor(); else { const y = scrollY; verTema(); scrollTo(0, y); } };
+  const refresco = () => { consolida(); if (!$('#vis').classList.contains('oculto')) pintaVisor(); else { const y = scrollY; verTema(); scrollTo(0, y); } };
 
   // ---------- trocear una foto sin las franjas que has quitado ----------
   function trocear(caja, t, nom, wh, zoomV) {
@@ -49,6 +93,7 @@ window.MEJORAS2 = function () {
   // ---------- tarjetas: quitar artículo / esquema / ambos, y cortes ----------
   const pl0 = pintaLista;
   pintaLista = function () {
+    consolida();
     pl0();
     document.querySelectorAll('#m .card').forEach(c => {
       const p = D[tema].piezas.find(x => x.id === c.dataset.id); if (!p) return; const k = key(tema, p.id), cu = ((C[tema] || {})[p.id] || []).length;
@@ -75,7 +120,7 @@ window.MEJORAS2 = function () {
   function cortarEnLinea(c, p) {
     const w = c.querySelector(':scope > .imgw'); if (!w) return;
     const comp = compDe(p), K = tema + '/' + claveCorte(p), W = ((comp || entera(p) || !p.imgr) ? p.wh : p.whr)[0], H0 = ((comp || entera(p) || !p.imgr) ? p.wh : p.whr)[1], NS = 'http://www.w3.org/2000/svg';
-    st.cort[K] = st.cort[K] || []; const pintas = [];
+    st.cort[K] = st.cort[K] || tempR(p, K); const pintas = [];
     const fusiona = () => { const o = st.cort[K].slice().sort((a, b) => a[0] - b[0]), r = []; o.forEach(b => { const u = r[r.length - 1]; if (u && b[0] <= u[1] + 2) u[1] = Math.max(u[1], b[1]); else r.push(b.slice()); }); st.cort[K] = r; };
     const bar = document.createElement('div'); bar.className = 'cutbar';
     bar.innerHTML = '<button class="ib on" data-cl="ok">✓ Listo</button><button class="ib" data-cl="mano" title="Mover la página con el dedo sin dibujar">✋</button><button class="ib" data-cl="undo" title="Deshacer el último corte">↶</button><button class="ib" data-cl="todo" title="Devolver todo lo quitado">Restaurar todo</button>'
@@ -126,7 +171,7 @@ window.MEJORAS2 = function () {
   // ---------- editor de cortes: arrastra un cuadro sobre lo que quieres quitar ----------
   function editorCorte(t, id) {
     const p = D[t].piezas.find(x => x.id === id); if (!p) return; const full = entera(p) || st.vizEnt || !p.imgr, nom = (full ? p.img : p.imgr).replace('.jpg', ''), wh = full ? p.wh : p.whr, W = wh[0], H = wh[1], K = t + '/' + nom;
-    st.cort[K] = st.cort[K] || []; let dib = null, mano = false;
+    st.cort[K] = st.cort[K] || tempR(p, K); let dib = null, mano = false;
     const ed = document.createElement('div'); ed.id = 'cutEd';
     ed.innerHTML = '<div class="bar"><button class="ib on" data-ce="ok">✓ Listo</button><b>✂️ ' + esc(p.nombre.replace(/^.* · /, '')) + '</b><button class="ib" data-ce="mano" title="Mover la página con el dedo sin dibujar">✋</button><button class="ib" data-ce="undo" title="Deshacer el último corte">↶</button><button class="ib" data-ce="todo" title="Restaurar todo el artículo">Restaurar todo</button></div>'
       + '<div class="ce-s"><div class="ce-b"><img src="' + D[t].dir + (full ? p.img : p.imgr) + '"><svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none"></svg></div></div>'
@@ -156,7 +201,7 @@ window.MEJORAS2 = function () {
 
   // artículo que estás viendo: el que está en edición o el primero que asoma bajo la barra de arriba
   const cardVista = () => { if (window.CUT_ED) return window.CUT_ED; const y = ($('#top') || {offsetHeight: 0}).offsetHeight + 8, cs = [...document.querySelectorAll('#m .card')]; const c = cs.find(q => q.getBoundingClientRect().bottom > y + 40); return c ? c.dataset.id : null; };
-  function restaura(id) { const p = D[tema].piezas.find(x => x.id === id); if (!p) return; const K = claveCorte(p); if (!(st.cort[tema + '/' + K] || []).length) { aviso('Este artículo no tiene recortes'); return; } delete st.cort[tema + '/' + K]; guarda(); aviso('↩️ Recortes devueltos'); refresco(); }
+  function restaura(id) { const p = D[tema].piezas.find(x => x.id === id); if (!p) return; const K = claveCorte(p); if (!cortesDe(tema, K).length) { aviso('Este artículo no tiene recortes'); return; } delete st.cort[tema + '/' + K]; if (modeloR(p)) { delete st.cort[tema + '/' + nomBase(p)]; delete st.cort[tema + '/' + p.imgr.replace('.jpg', '')]; } guarda(); aviso('↩️ Recortes devueltos'); refresco(); }
   $('#b-cut').onclick = () => { if (window.CUT_ED) { window.CUT_ED = null; refresco(); return; } const v = cardVista(); if (!v) return; window.CUT_ED = v; refresco(); const el = document.getElementById('c-' + v); el && el.scrollIntoView({block: 'start'}); };
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-px2]'); if (!b) return; const x = b.dataset.px2, c = b.closest('.card');
