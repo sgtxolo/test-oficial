@@ -29,13 +29,16 @@ const limpia = t => t.replace(/\s*(EXOF|EX|✱|R\d+)(?![\wÁ-ú])/g, '').replace
 // se anota en «faltan» (hay que añadirlo a tN-extra.json) y lo resuelven las reglas de más abajo
 // --estricto: las preguntas de un artículo sin pieza quedan sin enlazar (hay que añadir el artículo a tN-extra.json); sin él van a la 1.ª pieza de la ficha como antes
 const ESTRICTO = process.argv.includes('--estricto');
+// «Artículo primero / once / veintidós / único» (leyes con ordinales en letra, T21) → «Artículo 1 / 11 / 22 / 1»
+const PAL = { primero: 1, segundo: 2, tercero: 3, cuarto: 4, quinto: 5, sexto: 6, 'séptimo': 7, octavo: 8, noveno: 9, 'décimo': 10, once: 11, doce: 12, trece: 13, catorce: 14, quince: 15, 'dieciséis': 16, diecisiete: 17, dieciocho: 18, diecinueve: 19, veinte: 20, veintiuno: 21, 'veintidós': 22, 'único': 1 };
+const pal = t => t.replace(/^(Art[íi]culo)\s+([a-zéíóú]+)/i, (m, a, w) => PAL[w.toLowerCase()] ? a + ' ' + PAL[w.toLowerCase()] : m);
 const enlazaEtiquetas = (f, primera) => { let lab = null; for (const m of f.matchAll(/<div class="ex-linea">(?:(?!<\/div>|data-q=)[\s\S])*?Art[íi]culo(?:<\/[a-z]+>)?\s+(\d+)|<div class="vis-t">(?:(?!<\/div>|data-q=)[\s\S])*?Art\.\s*(\d+)|data-q="([^"]+)"/g)) {
     if (m[1] || m[2]) { lab = +(m[1] || m[2]); continue; }
     m[3].split(/[ ,;|]+/).forEach(q => { if (!q || preg[q]) return; const pz = lab !== null ? (ids.has(cur + '-' + lab) ? cur + '-' + lab : null) : primera;
       if (pz) preg[q] = pz; else if (lab !== null) { faltan[cur + '-' + lab] = (faltan[cur + '-' + lab] || 0) + 1; if (!ESTRICTO && primera) preg[q] = primera; } }); } };
 const trozos = h.split(/(?=<div class="bloque-titulo">|<div class="ex-ficha(?: ex-of)?">)/);
 for (const f of trozos) {
-  const t = ((f.match(/(?:ex-fh|bloque-titulo)">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, '');
+  const t = pal(((f.match(/(?:ex-fh|bloque-titulo)">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, ''));
   if (T === '4' && /^AMPLIACIONES/.test(t)) break;   // T4: los anexos de cada norma van en medio; solo se corta en las ampliaciones finales
   if (/^ANEXO/.test(t)) { if (T === '4') continue; break; }
   const k = inst.findIndex((i, j) => j > ixCur && i.inicio && new RegExp(i.inicio).test(t)); if (k >= 0) { ixCur = k; cur = inst[k].id; }

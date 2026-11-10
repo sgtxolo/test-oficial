@@ -17,7 +17,9 @@ function numeros(t) {
   return [...out];
 }
 let ixCur = -1;
-for (const [tipo, t] of piezas) {
+const PAL = { primero: 1, segundo: 2, tercero: 3, cuarto: 4, quinto: 5, sexto: 6, 'séptimo': 7, octavo: 8, noveno: 9, 'décimo': 10, once: 11, doce: 12, trece: 13, catorce: 14, quince: 15, 'dieciséis': 16, diecisiete: 17, dieciocho: 18, diecinueve: 19, veinte: 20, veintiuno: 21, 'veintidós': 22, 'único': 1 };
+const pal = t => t.replace(/^(Art[íi]culo)\s+([a-zéíóú]+)/i, (m, a, w) => PAL[w.toLowerCase()] ? a + ' ' + PAL[w.toLowerCase()] : m);   // «Artículo primero» → «Artículo 1» (T21)
+for (const [tipo, t0] of piezas) { const t = pal(t0);
   if (T === '4' && /^AMPLIACIONES/.test(t)) break;   // T4: los anexos de cada norma van en medio; solo se corta en las ampliaciones finales
   if (/^ANEXO/.test(t)) { if (T === '4') continue; break; }
   const k = inst.findIndex((i, ix) => ix > ixCur && i.inicio && new RegExp(i.inicio).test(t));

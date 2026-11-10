@@ -1,0 +1,8 @@
+{
+ "manual": [
+  { "id": "i-120", "nombre": "Ley 23/2014 · Artículo 120", "piezas": [[117, 0.575, 0.99]] },
+  { "id": "i-122", "nombre": "Ley 23/2014 · Artículo 122", "piezas": [[120, 0.38, 0.77]] },
+  { "id": "i-125", "nombre": "Ley 23/2014 · Artículo 125", "piezas": [[121, 0.365, 0.70]] },
+  { "id": "j-10", "nombre": "Ley 4/2015 · Artículo 10", "piezas": [[173, 0.74, 0.93]] }
+ ]
+}
