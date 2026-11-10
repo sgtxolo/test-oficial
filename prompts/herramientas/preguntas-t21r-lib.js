@@ -45,7 +45,7 @@ exports.run = function ({ bloque, Q, arg = process.argv.slice(2) }) {
     let ops = q.o.slice(), c = q.c;
     if (c === null || c === undefined) { const ok = ops.shift(); c = [0, 1, 2, 3].sort((a, b) => uso[a] - uso[b] || ((a + i) % 4) - ((b + i) % 4))[0]; ops.splice(c, 0, ok); uso[c]++; }
     const [nom, corta, apartado] = NORMAS[q.k];
-    const explicacion = `<span class="ex-resp">Respuesta correcta: <b>${L[c]}</b> · <mark class="ex-key">${esc(ops[c].replace(/\.$/, ''))}</mark></span><span class="ref-norma">${String(q.a).replace(/^art./i,"Art.").replace(/^./,c=>c.toUpperCase())} · ${nom}</span><span class="ref-concepto">"${esc(q.t)}"</span>${esc(q.p || "")}`;
+    const explicacion = `<span class="ex-resp">Respuesta correcta: <b>${L[c]}</b> · <mark class="ex-key">${esc(ops[c].replace(/\.$/, ''))}</mark></span><span class="ref-norma">${String(q.a).replace(/^art(?:[ií]culo|.)s*/i,"Art. ").replace(/^./,c=>c.toUpperCase())} · ${nom}</span><span class="ref-concepto">"${esc(q.t)}"</span>${esc(q.p || "")}`;
     return { id: '21-ia-' + (ini + i), pregunta: `${nom}. ${q.r ? q.r + '. ' : ''}${q.e}`, opciones: ops, correcta: c, dificultad: q.d === 'dificil' ? 'dificil' : 'media', explicacion, apartado: q.ap || apartado };
   });
   // verificación de citas: literal en el temario oficial limpio o, si viene de mi PDF (v:'img'), cobertura aproximada del OCR
