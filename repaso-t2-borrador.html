@@ -4,8 +4,6 @@
 <title>Repaso Tema 2 · borrador</title>
 <style>
 :root{--tx:#1b1b1b;--fondo:#fff;--gris:#666;--linea:#cfcfcf;--of:#1d4ed8;--ex:#555;--mk:#f7e79a}
-@media (prefers-color-scheme:dark){mark.d{background:#6b3d1f;color:#ffd9b8}mark.a{background:#265331;color:#c9f0cf}mark.p{background:#1f4a63;color:#c8e9fb}mark.c{background:#4a3768;color:#e6d9fa}mark.y{background:#5a4a12;color:#fff0b0}mark.k{color:#fca5a5;text-decoration-color:#f87171}}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--tx:#e8e8e8;--fondo:#16181c;--gris:#9aa0a6;--linea:#3a3d42;--of:#7aa2ff;--ex:#bbb;--mk:#6b5f00}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--fondo);color:var(--tx);font:13px/1.38 "Segoe UI",system-ui,sans-serif}
 .hoja{max-width:900px;margin:0 auto;padding:16px}
@@ -140,12 +138,43 @@ body.mj-solomarcas .esquema .sm-fuera,body.mj-solomarcas .esquema .ex-clave,body
 .ed-y{background:#f7e79a}.ed-d{background:#f7c9a8}.ed-a{background:#bfe3c4}.ed-p{background:#a9d3ea}.ed-c{background:#c9b7e0}.ed-k{background:#fff;color:#222}.ed-k u{text-decoration-color:#dc2626;text-decoration-thickness:2px}.ed-x{background:#444;color:#fff}.ed-u{background:#fff;color:#222;font-size:12px;letter-spacing:-.5px}.mayus{text-transform:uppercase}
 .vis-wrap mark.d{background:#f7c9a8;color:#3a2213;padding:1px 3px;border-radius:3px}.vis-wrap mark.a{background:#bfe3c4;color:#173a1e;padding:1px 3px;border-radius:3px}.vis-wrap mark.p{background:#a9d3ea;color:#0f2c3d;padding:1px 3px;border-radius:3px}.vis-wrap mark.c{background:#c9b7e0;color:#2c1c40;padding:1px 3px;border-radius:3px}.vis-wrap mark.y{background:#f7e79a;color:#463a04;padding:1px 3px;border-radius:3px}.vis-wrap mark.k{background:transparent;color:inherit;font-weight:600;text-decoration:underline solid #dc2626;text-decoration-thickness:2px;text-underline-offset:2px;padding:0}
 @media print{.ed-top,#ed-bar{display:none!important}}
+
+:root[data-theme="dark"]{--tx:#e8e8e8;--fondo:#16181c;--gris:#9aa0a6;--linea:#3a3d42;--of:#7aa2ff;--ex:#bbb;--mk:#6b5f00;--panel:#1e2523;--panel-alt:#262f2b;--texto:#eef1ee;--texto-gris:#9aa39c;--borde:#333d37;--verde-osc:#7fd9ac;--verde:#3f8a68;--verde-med:#57a683;--verde-suave:#16332a}
+:root[data-theme="dark"] mark.d{background:#6b3d1f;color:#ffd9b8}:root[data-theme="dark"] mark.a{background:#265331;color:#c9f0cf}:root[data-theme="dark"] mark.p{background:#1f4a63;color:#c8e9fb}:root[data-theme="dark"] mark.c{background:#4a3768;color:#e6d9fa}:root[data-theme="dark"] mark.y{background:#5a4a12;color:#fff0b0}:root[data-theme="dark"] mark.k{color:#fca5a5;text-decoration-color:#f87171}
+.vis-wrap{background:var(--panel);color:var(--texto)}
+:root[data-theme="dark"] .vis-wrap mark.d,:root[data-theme="dark"] .vis-wrap mark.m-destacable{background:#6b3d1f;color:#ffd9b8}:root[data-theme="dark"] .vis-wrap mark.a,:root[data-theme="dark"] .vis-wrap mark.m-autoridad{background:#265331;color:#c9f0cf}:root[data-theme="dark"] .vis-wrap mark.p,:root[data-theme="dark"] .vis-wrap mark.m-plazo{background:#1f4a63;color:#c8e9fb}:root[data-theme="dark"] .vis-wrap mark.c,:root[data-theme="dark"] .vis-wrap mark.m-accion{background:#4a3768;color:#e6d9fa}:root[data-theme="dark"] .vis-wrap mark.y,:root[data-theme="dark"] .vis-wrap mark.m-personalizado{background:#5a4a12;color:#fff0b0}:root[data-theme="dark"] .vis-wrap mark.k{color:#fca5a5;text-decoration-color:#f87171}
+[data-theme="dark"] mark.m-resp{background:transparent;color:inherit;box-shadow:none;text-decoration-color:#60a5fa}
+[data-theme="dark"] mark.m-resp::before,[data-theme="dark"] mark.m-resp::after{color:#60a5fa}
+[data-theme="dark"] .vis-plazo .n{color:#c8e9fb;background:#1f4a63}
+[data-theme="dark"] mark.m-destacable{background:#6b3d1f;color:#ffd9b8}
+[data-theme="dark"] mark.m-autoridad{background:#265331;color:#c9f0cf}
+[data-theme="dark"] mark.m-plazo{background:#1f4a63;color:#c8e9fb}
+[data-theme="dark"] mark.m-accion{background:#4a3768;color:#e6d9fa}
+[data-theme="dark"] mark.m-personalizado{background:#5a4a12;color:#fff0b0}
+[data-theme="dark"] mark.m-resp.r-ia{background:transparent;color:inherit;box-shadow:none;text-decoration-color:#ff8a80}
+[data-theme="dark"] mark.m-resp.r-ia::before,[data-theme="dark"] mark.m-resp.r-ia::after{color:#ff8a80}
+[data-theme="dark"] mark.m-resp{background:rgba(96,165,250,.20)}
+[data-theme="dark"] mark.m-resp.r-ia{background:rgba(255,138,128,.18)}
+[data-theme="dark"] mark.m-resp{color:#93c5fd}
+[data-theme="dark"] mark.m-resp.r-ia{color:#ff8a80}
+:root{--fs:15px}
+@media screen{
+body{font-size:var(--fs);line-height:1.42}
+h1{font-size:1.45em}h2{font-size:1.04em}.art h3{font-size:1em}.sub,.leyenda,.cod,.ed-top{font-size:.85em}.b{font-size:.75em}.pie{font-size:.8em}
+.vis-wrap .vis{font-size:calc(var(--fs) - 1px)}
+.ed-b{width:34px;height:34px}
+}
+@media (max-width:700px){:root{--fs:17px}.hoja{padding:12px 10px}.art{padding-left:6px}.art ul{padding-left:18px}}
+@media (max-width:640px){.vt-cab{display:none}.vt-nodo{grid-template-columns:1fr}.vt-hoja{grid-template-columns:72px 1fr}}
+@media (max-width:640px){.vis-arbol{flex-direction:column;align-items:stretch}.vis-raiz{max-width:none}.vis-ramas{margin:12px 0 0 14px}.vis-ramas:before{left:-8px}.vis-rama:before{left:-8px;width:8px}.vis-raiz+.vis-ramas:after{display:none}.vis-bifurca{grid-template-columns:1fr}.vis-comp,.vis-comp.med{grid-template-columns:1fr}.vis-mid{transform:rotate(90deg)}}
+@media (max-width:640px){.ex-tab{grid-template-columns:1fr}.ex-th{display:none}.ex-tl{margin-top:6px}}
+@media (max-width:720px){.vis{padding:10px 8px}}
 </style></head><body><div class="hoja">
 <h1>Tema 2 · Terrorismo y delincuencia transnacional — repaso</h1>
 <p class="sub">BORRADOR · construido solo desde tus marcas <span class="b of">EXOF</span> (círculo azul a boli) y <span class="b ex">EXAMEN</span> (sello «Pregunta examen») + las sanciones 56-60 · texto literal del temario · «R» = ficha RECUERDA</p>
 <div class="leyenda cod"><span><mark class="d">Palabras destacables</mark></span><span><mark class="a">Autoridades y órganos</mark></span><span><mark class="p">Plazos, cifras y mayorías</mark></span><span><mark class="c">Acciones</mark></span><span><mark class="y">Contenido general (personalizado)</mark></span><span><mark class="k">palabras clave: no, podrá, deberá…</mark></span></div>
 
-<div class="ed-top">✏️ <b>Editar colores:</b> selecciona un texto (o toca una palabra ya coloreada) y elige el color · se guarda en este navegador <button id="ed-undo" type="button">↩ Deshacer</button><button id="ed-reset" type="button">Restaurar original</button><span id="ed-st"></span></div><div id="rc" data-id="t2" data-ver="9090d632"><h2>1 · Ley 19/2003 · Movimientos de capitales y transacciones económicas con el exterior</h2><div class="art of"><h3>Art. 3.2 · Obligaciones de información <span class="b of">EXOF</span></h3>
+<div class="ed-top">✏️ <b>Editar colores:</b> selecciona un texto (o toca una palabra ya coloreada) y elige el color · se guarda en este navegador <button id="ed-undo" type="button">↩ Deshacer</button><button id="ed-reset" type="button">Restaurar original</button><button id="ed-fm" type="button" title="Letra más pequeña">A−</button><button id="ed-fp" type="button" title="Letra más grande">A+</button><button id="ed-tema" type="button">🌙 Noche</button><span id="ed-st"></span></div><div id="rc" data-id="t2" data-ver="9090d632"><h2>1 · Ley 19/2003 · Movimientos de capitales y transacciones económicas con el exterior</h2><div class="art of"><h3>Art. 3.2 · Obligaciones de información <span class="b of">EXOF</span></h3>
 <p>Las <mark class="y">personas físicas o jurídicas</mark>, <mark class="d">residentes o no residentes</mark>, que <mark class="y">realicen operaciones</mark> con el <mark class="y">exterior quedan obligadas</mark> a <mark class="c">facilitar</mark> al <mark class="a">Ministerio de Economía</mark> y al <mark class="a">Banco de España</mark> los <mark class="y">datos</mark> que se les <mark class="y">requieran</mark>. <mark class="y">Además</mark>, las <mark class="a">entidades</mark> de <mark class="y">crédito</mark>, <mark class="y">empresas de servicios</mark> de <mark class="d">inversión</mark> y otros <mark class="a">intermediarios</mark> <mark class="y">financieros deben</mark> <mark class="c">remitir</mark> la <mark class="d">información</mark> de las <mark class="d">transacciones</mark> de sus <mark class="y">clientes</mark>.</p></div><div class="art"><h3>Arts. 1 a 7 · Régimen general y cláusulas de salvaguardia <span class="b r">R1</span></h3>
 <ul>
 <li><b>Art. 1:</b> son <mark class="y">libres los actos</mark>, <mark class="d">negocios</mark>, <mark class="d">transacciones</mark> y <mark class="y">operaciones</mark> entre <mark class="d">residentes y no residentes</mark>, <mark class="k">sin</mark> más <mark class="y">limitaciones</mark> que las de esta <mark class="y">ley</mark> y la <mark class="y">legislación sectorial</mark>. <mark class="y">Además</mark>, <mark class="y">establece medidas de prevención</mark> del <mark class="d">blanqueo de capitales</mark>.</li>
@@ -346,6 +375,17 @@ body.mj-solomarcas .esquema .sm-fuera,body.mj-solomarcas .esquema .ex-clave,body
   bar.addEventListener('touchend', function (e) { e.preventDefault(); pulsa(e); }, {passive: false});
   window.addEventListener('scroll', function () { /* la barra va anclada al texto; no hace falta moverla */ });
 })();
-</script><script>if(location.hash==="#imprimir"){window.addEventListener("load",function(){setTimeout(function(){window.print()},300)})}</script>
+</script><script>(function(){var R=document.documentElement,emb=window.parent!==window;
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){}return null}
+var f=parseFloat(ls('repaso-fs'));if(f)R.style.setProperty('--fs',f+'px');
+function tam(d){var c=parseFloat(getComputedStyle(document.body).fontSize);var n=Math.max(12,Math.min(28,Math.round(c+d)));R.style.setProperty('--fs',n+'px');ls('repaso-fs',n)}
+function pon(t){R.setAttribute('data-theme',t);var b=document.getElementById('ed-tema');if(b)b.textContent=t==='dark'?'☀️ Claro':'🌙 Noche'}
+pon(emb?'light':(ls('repaso-tema')||'light'));
+document.addEventListener('DOMContentLoaded',function(){var m=document.getElementById('ed-fm'),p=document.getElementById('ed-fp'),t=document.getElementById('ed-tema');
+if(m)m.onclick=function(){tam(-1)};if(p)p.onclick=function(){tam(1)};
+if(t){if(emb)t.style.display='none';else t.onclick=function(){var n=R.getAttribute('data-theme')==='dark'?'light':'dark';pon(n);ls('repaso-tema',n)};pon(R.getAttribute('data-theme'))}});
+window.addEventListener('message',function(e){var d=e.data;if(d&&d.repasoTema)pon(d.repasoTema)});
+if(emb){try{parent.postMessage({repasoListo:1},'*')}catch(x){}}
+})();</script><script>if(location.hash==="#imprimir"){window.addEventListener("load",function(){setTimeout(function(){window.print()},300)})}</script>
 <script>(function(){if(window.parent===window)return;var u=0;function e(){var h=document.body.offsetHeight;if(h!==u){u=h;try{parent.postMessage({repasoAlto:h},"*")}catch(x){}}}document.documentElement.style.overflow="hidden";window.addEventListener("load",e);window.addEventListener("resize",e);if(window.ResizeObserver)new ResizeObserver(e).observe(document.body);setInterval(e,800);e()})()</script>
 </body></html>

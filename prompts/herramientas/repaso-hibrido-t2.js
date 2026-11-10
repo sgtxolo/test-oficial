@@ -54,12 +54,44 @@ const EDITOR_CSS = `
 @media print{.ed-top,#ed-bar{display:none!important}}
 `;
 style = style.replace('</style>', EDITOR_CSS + '</style>');
-const ED_TOP = '<div class="ed-top">✏️ <b>Editar colores:</b> selecciona un texto (o toca una palabra ya coloreada) y elige el color · se guarda en este navegador <button id="ed-undo" type="button">↩ Deshacer</button><button id="ed-reset" type="button">Restaurar original</button><span id="ed-st"></span></div>';
+// ---- tema claro/oscuro (por defecto CLARO; lo manda la app o el botón 🌙; ya NO sigue al sistema), letra ajustable y móvil ----
+style = style.replace(/@media \(prefers-color-scheme:dark\)\{[\s\S]*?\}\}\n?/g, '');
+const DK = ':root[data-theme="dark"]';
+const THEME_CSS = `
+${DK}{--tx:#e8e8e8;--fondo:#16181c;--gris:#9aa0a6;--linea:#3a3d42;--of:#7aa2ff;--ex:#bbb;--mk:#6b5f00;--panel:#1e2523;--panel-alt:#262f2b;--texto:#eef1ee;--texto-gris:#9aa39c;--borde:#333d37;--verde-osc:#7fd9ac;--verde:#3f8a68;--verde-med:#57a683;--verde-suave:#16332a}
+${DK} mark.d{background:#6b3d1f;color:#ffd9b8}${DK} mark.a{background:#265331;color:#c9f0cf}${DK} mark.p{background:#1f4a63;color:#c8e9fb}${DK} mark.c{background:#4a3768;color:#e6d9fa}${DK} mark.y{background:#5a4a12;color:#fff0b0}${DK} mark.k{color:#fca5a5;text-decoration-color:#f87171}
+.vis-wrap{background:var(--panel);color:var(--texto)}
+${DK} .vis-wrap mark.d,${DK} .vis-wrap mark.m-destacable{background:#6b3d1f;color:#ffd9b8}${DK} .vis-wrap mark.a,${DK} .vis-wrap mark.m-autoridad{background:#265331;color:#c9f0cf}${DK} .vis-wrap mark.p,${DK} .vis-wrap mark.m-plazo{background:#1f4a63;color:#c8e9fb}${DK} .vis-wrap mark.c,${DK} .vis-wrap mark.m-accion{background:#4a3768;color:#e6d9fa}${DK} .vis-wrap mark.y,${DK} .vis-wrap mark.m-personalizado{background:#5a4a12;color:#fff0b0}${DK} .vis-wrap mark.k{color:#fca5a5;text-decoration-color:#f87171}
+${fs.readFileSync(process.env.TEMP + '/vis/vis-dark.css', 'utf8')}
+:root{--fs:15px}
+@media screen{
+body{font-size:var(--fs);line-height:1.42}
+h1{font-size:1.45em}h2{font-size:1.04em}.art h3{font-size:1em}.sub,.leyenda,.cod,.ed-top{font-size:.85em}.b{font-size:.75em}.pie{font-size:.8em}
+.vis-wrap .vis{font-size:calc(var(--fs) - 1px)}
+.ed-b{width:34px;height:34px}
+}
+@media (max-width:700px){:root{--fs:17px}.hoja{padding:12px 10px}.art{padding-left:6px}.art ul{padding-left:18px}}
+${fs.readFileSync(process.env.TEMP + '/vis/vis-movil.css', 'utf8')}
+`;
+style = style.replace('</style>', THEME_CSS + '</style>');
+const THEME_JS = `(function(){var R=document.documentElement,emb=window.parent!==window;
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){}return null}
+var f=parseFloat(ls('repaso-fs'));if(f)R.style.setProperty('--fs',f+'px');
+function tam(d){var c=parseFloat(getComputedStyle(document.body).fontSize);var n=Math.max(12,Math.min(28,Math.round(c+d)));R.style.setProperty('--fs',n+'px');ls('repaso-fs',n)}
+function pon(t){R.setAttribute('data-theme',t);var b=document.getElementById('ed-tema');if(b)b.textContent=t==='dark'?'☀️ Claro':'🌙 Noche'}
+pon(emb?'light':(ls('repaso-tema')||'light'));
+document.addEventListener('DOMContentLoaded',function(){var m=document.getElementById('ed-fm'),p=document.getElementById('ed-fp'),t=document.getElementById('ed-tema');
+if(m)m.onclick=function(){tam(-1)};if(p)p.onclick=function(){tam(1)};
+if(t){if(emb)t.style.display='none';else t.onclick=function(){var n=R.getAttribute('data-theme')==='dark'?'light':'dark';pon(n);ls('repaso-tema',n)};pon(R.getAttribute('data-theme'))}});
+window.addEventListener('message',function(e){var d=e.data;if(d&&d.repasoTema)pon(d.repasoTema)});
+if(emb){try{parent.postMessage({repasoListo:1},'*')}catch(x){}}
+})();`;
+const ED_TOP = '<div class="ed-top">✏️ <b>Editar colores:</b> selecciona un texto (o toca una palabra ya coloreada) y elige el color · se guarda en este navegador <button id="ed-undo" type="button">↩ Deshacer</button><button id="ed-reset" type="button">Restaurar original</button><button id="ed-fm" type="button" title="Letra más pequeña">A−</button><button id="ed-fp" type="button" title="Letra más grande">A+</button><button id="ed-tema" type="button">🌙 Noche</button><span id="ed-st"></span></div>';
 const crypto = require('crypto'); const VER = crypto.createHash('md5').update(body).digest('hex').slice(0, 8);   // mismo contenido = mismos cambios guardados
 const EDITOR_JS = fs.readFileSync(R + 'prompts/herramientas/repaso-editor.js', 'utf8');
 const cab = hib.slice(hib.indexOf('<h1>'), hib.indexOf('<div class="vis-wrap"'));
 const cabLimpia = cab.slice(0, cab.indexOf('<h2>'));
 const out = hib.slice(0, hib.indexOf('<style>')) + style + hib.slice(hib.indexOf('</style>') + 8, hib.indexOf('<h1>')) + cabLimpia + ED_TOP + '<div id="rc" data-id="t2" data-ver="' + VER + '">' +
-  body + '</div>\n<p class="pie">Borrador: texto como base (palabra por palabra, código Prefortia) y 6 esquemas de la app de Esquemas donde ayudan (comparativas y tablas).</p>\n</div><script>' + EDITOR_JS + '</script><script>if(location.hash==="#imprimir"){window.addEventListener("load",function(){setTimeout(function(){window.print()},300)})}</script>\n<script>(function(){if(window.parent===window)return;var u=0;function e(){var h=document.body.offsetHeight;if(h!==u){u=h;try{parent.postMessage({repasoAlto:h},"*")}catch(x){}}}document.documentElement.style.overflow="hidden";window.addEventListener("load",e);window.addEventListener("resize",e);if(window.ResizeObserver)new ResizeObserver(e).observe(document.body);setInterval(e,800);e()})()</script>\n</body></html>';
+  body + '</div>\n<p class="pie">Borrador: texto como base (palabra por palabra, código Prefortia) y 6 esquemas de la app de Esquemas donde ayudan (comparativas y tablas).</p>\n</div><script>' + EDITOR_JS + '</script><script>' + THEME_JS + '</script><script>if(location.hash==="#imprimir"){window.addEventListener("load",function(){setTimeout(function(){window.print()},300)})}</script>\n<script>(function(){if(window.parent===window)return;var u=0;function e(){var h=document.body.offsetHeight;if(h!==u){u=h;try{parent.postMessage({repasoAlto:h},"*")}catch(x){}}}document.documentElement.style.overflow="hidden";window.addEventListener("load",e);window.addEventListener("resize",e);if(window.ResizeObserver)new ResizeObserver(e).observe(document.body);setInterval(e,800);e()})()</script>\n</body></html>';
 fs.writeFileSync(R + 'repaso-t2-borrador.html', out);
 console.log('ok', out.length, 'letra', FS + 'pt');

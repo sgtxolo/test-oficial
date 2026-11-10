@@ -507,7 +507,9 @@ function marcasHTML(p) {
   return o.join('');
 }
 // ---------- tema claro / oscuro y tamaño ----------
-function pintaTema() { const d = st.oscuro === undefined ? matchMedia('(prefers-color-scheme:dark)').matches : st.oscuro; document.documentElement.dataset.theme = d ? 'dark' : 'light'; $('#b-tema').textContent = d ? '☀️' : '🌙'; document.documentElement.style.setProperty('--ancho', Math.round(980 * st.escala / 100) + 'px'); }
+function pintaTema() { const d = st.oscuro === undefined ? matchMedia('(prefers-color-scheme:dark)').matches : st.oscuro; document.documentElement.dataset.theme = d ? 'dark' : 'light'; $('#b-tema').textContent = d ? '☀️' : '🌙'; document.documentElement.style.setProperty('--ancho', Math.round(980 * st.escala / 100) + 'px'); mandaTemaRepaso(); }
+// el repaso (iframe) sigue el modo claro/oscuro de la app, no el del móvil: se lo mando por postMessage (vale también en file://)
+function mandaTemaRepaso() { const f = document.getElementById('rep-if'); if (f && f.contentWindow) f.contentWindow.postMessage({repasoTema: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'}, '*'); }
 $('#b-tema').onclick = () => { st.oscuro = document.documentElement.dataset.theme !== 'dark'; guarda(); pintaTema(); };
 function aviso(t) { const e = document.createElement('div'); e.className = 'toast'; e.textContent = t; document.body.appendChild(e); setTimeout(() => e.remove(), 1900); }
 // ---------- menú ----------
@@ -762,7 +764,7 @@ function repasoHTML(t) {
   return '<div class="rep-clave"><div class="rep-bar"><b>⭐ Esquema clave · repaso del tema (≈10 págs)</b><a class="chip" href="' + u + '" target="_blank" rel="noopener">Abrir aparte ↗</a><a class="chip" href="' + u + '#imprimir" target="_blank" rel="noopener">🖨️ Imprimir / PDF</a></div><iframe id="rep-if" src="' + u + '" title="Esquema clave" scrolling="no" style="width:100%;border:0;min-height:700px;background:transparent;display:block"></iframe></div>';
 }
 // el repaso (dentro de un iframe) avisa de su altura con postMessage: así funciona también al abrir la app desde un archivo del disco (file://), donde no se puede leer el contenido del iframe. El marco crece entero y se desplaza con la página.
-window.addEventListener('message', e => { const d = e.data; if (!d || typeof d.repasoAlto !== 'number') return; const f = document.getElementById('rep-if'); if (f && e.source === f.contentWindow) f.style.height = (d.repasoAlto + 12) + 'px'; });
+window.addEventListener('message', e => { const d = e.data; if (d && d.repasoListo) { const fl = document.getElementById('rep-if'); if (fl && e.source === fl.contentWindow) mandaTemaRepaso(); return; } if (!d || typeof d.repasoAlto !== 'number') return; const f = document.getElementById('rep-if'); if (f && e.source === f.contentWindow) f.style.height = (d.repasoAlto + 12) + 'px'; });
 function ajustaRepaso() {
   const f = document.getElementById('rep-if'); if (!f) return;
   const aj = () => { try { f.style.height = (f.contentDocument.body.offsetHeight + 20) + 'px'; } catch (e) {} };
