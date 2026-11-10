@@ -1245,6 +1245,8 @@ function filaImp(t, p, s) {
     + '<button class="chip' + (s.e ? ' on' : '') + '" data-imp-t="e"' + (cu ? '' : ' disabled title="Este artículo no tiene esquema"') + '>🧩 Esquema' + (cu > 1 ? ' (' + cu + ')' : '') + '</button>'
     + '<button class="chip" data-imp-v="1" title="Ver las versiones una al lado de la otra">👁</button></div><div class="imp-prev oculto"></div></div>';
 }
+// Lo que se imprime respeta lo que ves en pantalla: artículo en «Entero» → entero; en «Exprés» → recorte (con lo que hayas añadido con ➕)
+const verPant = p => (p.imgr && entera(p)) ? {n: 1} : {s: 1};
 function imprimirPanel() {
   if (!tema) return aviso('Abre un tema y elige qué versión de cada artículo quieres imprimir');
   const t = tema, sel = st.imp[t] = st.imp[t] || {}, op = st.impOp, ps = D[t].piezas.filter(p => enImpP(t, p)), ns = (D[t].cit || []).filter(c => c.nombre && ps.some(p => p.id.startsWith(c.p + '-'))), y = ($('#mod .caja') || {}).scrollTop || 0;
@@ -1270,8 +1272,8 @@ $('#mod').addEventListener('click', e => {
     const sel = st.imp[t], ps = D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id)), k = a.dataset.impA;   // los botones «Todo…» solo tocan el Exprés; los de fuera se eligen uno a uno
     if (k === 'n' && a.textContent.includes('Quitar')) D[t].piezas.forEach(p => { if (fueraP(t, p)) delete sel[p.id]; });
     if (k === 'n') ps.forEach(p => delete sel[p.id]);
-    else if (k === 'k') { const ck = claveDe(t).ids; ps.forEach(p => { if (ck.has(p.id)) sel[p.id] = {s: 1}; else delete sel[p.id]; }); }
-    else if (k === 'm') ps.forEach(p => { if (p.m && (p.m.exof || p.m.ex || p.m.ast || (p.m.r || []).length)) sel[p.id] = {s: 1}; else delete sel[p.id]; });
+    else if (k === 'k') { const ck = claveDe(t).ids; ps.forEach(p => { if (ck.has(p.id)) sel[p.id] = verPant(p); else delete sel[p.id]; }); }
+    else if (k === 'm') ps.forEach(p => { if (p.m && (p.m.exof || p.m.ex || p.m.ast || (p.m.r || []).length)) sel[p.id] = verPant(p); else delete sel[p.id]; });
     else {
       const pon = (p, ver) => {   // una sola versión para ese artículo; si no la tiene, se quita (el entero cae al subrayado normal)
         if (ver === '0') return delete sel[p.id];
