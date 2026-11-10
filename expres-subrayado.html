@@ -759,11 +759,13 @@ function selector(p, k) {
 }
 function repasoHTML(t) {
   const u = repasoClave(t);
-  return '<div class="rep-clave"><div class="rep-bar"><b>⭐ Esquema clave · repaso del tema (≈10 págs)</b><a class="chip" href="' + u + '" target="_blank" rel="noopener">Abrir aparte ↗</a><a class="chip" href="' + u + '#imprimir" target="_blank" rel="noopener">🖨️ Imprimir / PDF</a></div><iframe id="rep-if" src="' + u + '" title="Esquema clave" style="width:100%;border:0;min-height:700px;background:transparent"></iframe></div>';
+  return '<div class="rep-clave"><div class="rep-bar"><b>⭐ Esquema clave · repaso del tema (≈10 págs)</b><a class="chip" href="' + u + '" target="_blank" rel="noopener">Abrir aparte ↗</a><a class="chip" href="' + u + '#imprimir" target="_blank" rel="noopener">🖨️ Imprimir / PDF</a></div><iframe id="rep-if" src="' + u + '" title="Esquema clave" scrolling="no" style="width:100%;border:0;min-height:700px;background:transparent;display:block"></iframe></div>';
 }
+// el repaso (dentro de un iframe) avisa de su altura con postMessage: así funciona también al abrir la app desde un archivo del disco (file://), donde no se puede leer el contenido del iframe. El marco crece entero y se desplaza con la página.
+window.addEventListener('message', e => { const d = e.data; if (!d || typeof d.repasoAlto !== 'number') return; const f = document.getElementById('rep-if'); if (f && e.source === f.contentWindow) f.style.height = (d.repasoAlto + 12) + 'px'; });
 function ajustaRepaso() {
   const f = document.getElementById('rep-if'); if (!f) return;
-  const aj = () => { try { f.style.height = (f.contentDocument.documentElement.scrollHeight + 20) + 'px'; } catch (e) {} };
+  const aj = () => { try { f.style.height = (f.contentDocument.body.offsetHeight + 20) + 'px'; } catch (e) {} };
   f.onload = () => { aj(); setTimeout(aj, 400); setTimeout(aj, 1500); }; window.addEventListener('resize', aj);
 }
 function lista() {
