@@ -137,7 +137,7 @@ body.mj-solomarcas .esquema .sm-fuera,body.mj-solomarcas .esquema .ex-clave,body
 #ed-st{margin-left:8px;color:#15803d}
 #ed-bar{position:absolute;z-index:99;display:flex;gap:4px;background:#222;border-radius:10px;padding:5px;box-shadow:0 3px 14px rgba(0,0,0,.35)}
 .ed-b{width:30px;height:30px;border:2px solid transparent;border-radius:8px;font:700 14px/1 sans-serif;cursor:pointer;color:#222}
-.ed-y{background:#f7e79a}.ed-d{background:#f7c9a8}.ed-a{background:#bfe3c4}.ed-p{background:#a9d3ea}.ed-c{background:#c9b7e0}.ed-k{background:#fff;color:#222}.ed-k u{text-decoration-color:#dc2626;text-decoration-thickness:2px}.ed-x{background:#444;color:#fff}
+.ed-y{background:#f7e79a}.ed-d{background:#f7c9a8}.ed-a{background:#bfe3c4}.ed-p{background:#a9d3ea}.ed-c{background:#c9b7e0}.ed-k{background:#fff;color:#222}.ed-k u{text-decoration-color:#dc2626;text-decoration-thickness:2px}.ed-x{background:#444;color:#fff}.ed-u{background:#fff;color:#222;font-size:12px;letter-spacing:-.5px}.mayus{text-transform:uppercase}
 .vis-wrap mark.d{background:#f7c9a8;color:#3a2213;padding:1px 3px;border-radius:3px}.vis-wrap mark.a{background:#bfe3c4;color:#173a1e;padding:1px 3px;border-radius:3px}.vis-wrap mark.p{background:#a9d3ea;color:#0f2c3d;padding:1px 3px;border-radius:3px}.vis-wrap mark.c{background:#c9b7e0;color:#2c1c40;padding:1px 3px;border-radius:3px}.vis-wrap mark.y{background:#f7e79a;color:#463a04;padding:1px 3px;border-radius:3px}.vis-wrap mark.k{background:transparent;color:inherit;font-weight:600;text-decoration:underline solid #dc2626;text-decoration-thickness:2px;text-underline-offset:2px;padding:0}
 @media print{.ed-top,#ed-bar{display:none!important}}
 </style></head><body><div class="hoja">
@@ -241,7 +241,7 @@ body.mj-solomarcas .esquema .sm-fuera,body.mj-solomarcas .esquema .ex-clave,body
 
   var COLORES = [['y', 'Amarillo · contenido general'], ['d', 'Naranja · palabra destacable'], ['a', 'Verde · autoridad / órgano'], ['p', 'Azul · plazo / cifra'], ['c', 'Morado · acción'], ['k', 'Rojo · palabra clave']];
   var bar = document.createElement('div'); bar.id = 'ed-bar'; bar.style.display = 'none';
-  bar.innerHTML = COLORES.map(function (c) { return '<button type="button" data-c="' + c[0] + '" class="ed-b ed-' + c[0] + '" title="' + c[1] + '">' + (c[0] === 'k' ? '<u>a</u>' : 'A') + '</button>'; }).join('') + '<button type="button" data-c="x" class="ed-b ed-x" title="Quitar el color">✖</button>';
+  bar.innerHTML = COLORES.map(function (c) { return '<button type="button" data-c="' + c[0] + '" class="ed-b ed-' + c[0] + '" title="' + c[1] + '">' + (c[0] === 'k' ? '<u>a</u>' : 'A') + '</button>'; }).join('') + '<button type="button" data-c="U" class="ed-b ed-u" title="Poner en MAYÚSCULAS (otra vez: volver a como estaba)">AA</button><button type="button" data-c="x" class="ed-b ed-x" title="Quitar el color">✖</button>';
   document.body.appendChild(bar);
   var top = document.querySelector('.ed-top');
   if (top) {
@@ -276,6 +276,29 @@ body.mj-solomarcas .esquema .sm-fuera,body.mj-solomarcas .esquema .ex-clave,body
       padre.removeChild(n);
     }
   }
+  // MAYÚSCULAS: no cambia el texto, solo lo envuelve en <span class="mayus"> (text-transform); pulsar otra vez lo devuelve a como estaba
+  function mayusculas(lista) {
+    var todo = lista.every(function (x) { return x[0].parentElement && x[0].parentElement.closest('.mayus'); });
+    lista.forEach(function (x) {
+      var n = x[0], ini = x[1], fin = x[2], txt = n.nodeValue, antes = txt.slice(0, ini), medio = txt.slice(ini, fin), desp = txt.slice(fin), padre = n.parentNode;
+      var sp = n.parentElement && n.parentElement.closest('.mayus');
+      if (!todo) {
+        if (sp) return;   // ya estaba en mayúsculas
+        if (antes) padre.insertBefore(document.createTextNode(antes), n);
+        var s = document.createElement('span'); s.className = 'mayus'; s.textContent = medio; padre.insertBefore(s, n);
+        if (desp) padre.insertBefore(document.createTextNode(desp), n);
+        padre.removeChild(n);
+      } else if (sp && RC.contains(sp)) {
+        if (sp.childNodes.length === 1 && sp.firstChild === n) {   // span simple: se parte en antes / medio (normal) / después
+          var pp = sp.parentNode;
+          if (antes) { var a = document.createElement('span'); a.className = 'mayus'; a.textContent = antes; pp.insertBefore(a, sp); }
+          pp.insertBefore(document.createTextNode(medio), sp);
+          if (desp) { var d = document.createElement('span'); d.className = 'mayus'; d.textContent = desp; pp.insertBefore(d, sp); }
+          pp.removeChild(sp);
+        } else { var q = sp.parentNode; while (sp.firstChild) q.insertBefore(sp.firstChild, sp); q.removeChild(sp); }
+      }
+    });
+  }
   function aplica(cls) {
     var r = rangoAct; if (!r) return;
     var raiz = r.commonAncestorContainer; if (raiz.nodeType === 3) raiz = raiz.parentNode;
@@ -289,7 +312,8 @@ body.mj-solomarcas .esquema .sm-fuera,body.mj-solomarcas .esquema .ex-clave,body
     while (lista.length && !/\S/.test(lista[lista.length - 1][0].nodeValue.slice(lista[lista.length - 1][1], lista[lista.length - 1][2]))) lista.pop();
     if (!lista.length) return;
     pila.push(RC.innerHTML); if (pila.length > 40) pila.shift();
-    lista.forEach(function (x) { trabaja(x[0], x[1], x[2], cls); });
+    if (cls === 'U') mayusculas(lista);
+    else lista.forEach(function (x) { trabaja(x[0], x[1], x[2], cls); });
     RC.normalize();
     var s = window.getSelection(); if (s) s.removeAllRanges();
     bar.style.display = 'none'; rangoAct = null; guarda();

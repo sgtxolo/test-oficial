@@ -14,7 +14,7 @@
 
   var COLORES = [['y', 'Amarillo · contenido general'], ['d', 'Naranja · palabra destacable'], ['a', 'Verde · autoridad / órgano'], ['p', 'Azul · plazo / cifra'], ['c', 'Morado · acción'], ['k', 'Rojo · palabra clave']];
   var bar = document.createElement('div'); bar.id = 'ed-bar'; bar.style.display = 'none';
-  bar.innerHTML = COLORES.map(function (c) { return '<button type="button" data-c="' + c[0] + '" class="ed-b ed-' + c[0] + '" title="' + c[1] + '">' + (c[0] === 'k' ? '<u>a</u>' : 'A') + '</button>'; }).join('') + '<button type="button" data-c="x" class="ed-b ed-x" title="Quitar el color">✖</button>';
+  bar.innerHTML = COLORES.map(function (c) { return '<button type="button" data-c="' + c[0] + '" class="ed-b ed-' + c[0] + '" title="' + c[1] + '">' + (c[0] === 'k' ? '<u>a</u>' : 'A') + '</button>'; }).join('') + '<button type="button" data-c="U" class="ed-b ed-u" title="Poner en MAYÚSCULAS (otra vez: volver a como estaba)">AA</button><button type="button" data-c="x" class="ed-b ed-x" title="Quitar el color">✖</button>';
   document.body.appendChild(bar);
   var top = document.querySelector('.ed-top');
   if (top) {
@@ -49,6 +49,29 @@
       padre.removeChild(n);
     }
   }
+  // MAYÚSCULAS: no cambia el texto, solo lo envuelve en <span class="mayus"> (text-transform); pulsar otra vez lo devuelve a como estaba
+  function mayusculas(lista) {
+    var todo = lista.every(function (x) { return x[0].parentElement && x[0].parentElement.closest('.mayus'); });
+    lista.forEach(function (x) {
+      var n = x[0], ini = x[1], fin = x[2], txt = n.nodeValue, antes = txt.slice(0, ini), medio = txt.slice(ini, fin), desp = txt.slice(fin), padre = n.parentNode;
+      var sp = n.parentElement && n.parentElement.closest('.mayus');
+      if (!todo) {
+        if (sp) return;   // ya estaba en mayúsculas
+        if (antes) padre.insertBefore(document.createTextNode(antes), n);
+        var s = document.createElement('span'); s.className = 'mayus'; s.textContent = medio; padre.insertBefore(s, n);
+        if (desp) padre.insertBefore(document.createTextNode(desp), n);
+        padre.removeChild(n);
+      } else if (sp && RC.contains(sp)) {
+        if (sp.childNodes.length === 1 && sp.firstChild === n) {   // span simple: se parte en antes / medio (normal) / después
+          var pp = sp.parentNode;
+          if (antes) { var a = document.createElement('span'); a.className = 'mayus'; a.textContent = antes; pp.insertBefore(a, sp); }
+          pp.insertBefore(document.createTextNode(medio), sp);
+          if (desp) { var d = document.createElement('span'); d.className = 'mayus'; d.textContent = desp; pp.insertBefore(d, sp); }
+          pp.removeChild(sp);
+        } else { var q = sp.parentNode; while (sp.firstChild) q.insertBefore(sp.firstChild, sp); q.removeChild(sp); }
+      }
+    });
+  }
   function aplica(cls) {
     var r = rangoAct; if (!r) return;
     var raiz = r.commonAncestorContainer; if (raiz.nodeType === 3) raiz = raiz.parentNode;
@@ -62,7 +85,8 @@
     while (lista.length && !/\S/.test(lista[lista.length - 1][0].nodeValue.slice(lista[lista.length - 1][1], lista[lista.length - 1][2]))) lista.pop();
     if (!lista.length) return;
     pila.push(RC.innerHTML); if (pila.length > 40) pila.shift();
-    lista.forEach(function (x) { trabaja(x[0], x[1], x[2], cls); });
+    if (cls === 'U') mayusculas(lista);
+    else lista.forEach(function (x) { trabaja(x[0], x[1], x[2], cls); });
     RC.normalize();
     var s = window.getSelection(); if (s) s.removeAllRanges();
     bar.style.display = 'none'; rangoAct = null; guarda();
