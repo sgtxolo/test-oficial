@@ -72,8 +72,9 @@
     var b = r.getBoundingClientRect(), sx = window.pageXOffset, sy = window.pageYOffset;
     bar.style.display = 'flex';
     var ancho = bar.offsetWidth, alto = bar.offsetHeight, dw = document.documentElement.clientWidth;
-    var x = Math.max(4, Math.min(b.left + sx, sx + dw - ancho - 4)), y = b.top + sy - alto - 8;
-    if (y < sy + 4) y = b.bottom + sy + 8;
+    // debajo del texto seleccionado: arriba suele salir el minimenú propio del navegador (Edge: copiar, buscar, Copilot) y se pisaría
+    var x = Math.max(4, Math.min(b.left + sx, sx + dw - ancho - 4)), y = b.bottom + sy + 10;
+    if (b.bottom + alto + 24 > window.innerHeight && b.top - alto - 12 > 0) y = b.top + sy - alto - 10;
     bar.style.left = x + 'px'; bar.style.top = y + 'px';
   }
   function revisa(ev) {
