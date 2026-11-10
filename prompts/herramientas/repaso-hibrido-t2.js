@@ -42,9 +42,24 @@ style = style.replace(/\.cols\{[^}]*\}/, '.cols{}')
   .replace(/@media print\{@page\{size:A4;margin:[^}]*\}body\{font-size:[^;]*;line-height:[^}]*\}/, '@media print{@page{size:A4;margin:12mm 12mm}body{font-size:' + FS + 'pt;line-height:1.3}');
 style = style.replace(/\.hoja\{max-width:1100px/, '.hoja{max-width:900px');
 style = style.replace('</style>', '.art{break-inside:avoid;margin:0 0 9px}.art h3{font-size:1.02em}.art li{margin:0 0 2px}.art p{margin:3px 0}@media print{.vis-wrap{zoom:.86}.art{margin:0 0 7px}h2{margin:10px 0 6px}}\n</style>');
+// ---- editor de colores (seleccionar texto -> barra de colores; se guarda en el navegador) ----
+const EDITOR_CSS = `
+.ed-top{border:1px dashed #9ab;border-radius:8px;padding:6px 10px;font-size:12px;margin:0 0 10px;color:var(--gris)}
+.ed-top button{font:inherit;border:1px solid var(--linea);background:transparent;color:inherit;border-radius:99px;padding:2px 10px;margin-left:6px;cursor:pointer}
+#ed-st{margin-left:8px;color:#15803d}
+#ed-bar{position:absolute;z-index:99;display:flex;gap:4px;background:#222;border-radius:10px;padding:5px;box-shadow:0 3px 14px rgba(0,0,0,.35)}
+.ed-b{width:30px;height:30px;border:2px solid transparent;border-radius:8px;font:700 14px/1 sans-serif;cursor:pointer;color:#222}
+.ed-y{background:#f7e79a}.ed-d{background:#f7c9a8}.ed-a{background:#bfe3c4}.ed-p{background:#a9d3ea}.ed-c{background:#c9b7e0}.ed-k{background:#fff;color:#222}.ed-k u{text-decoration-color:#dc2626;text-decoration-thickness:2px}.ed-x{background:#444;color:#fff}
+.vis-wrap mark.d{background:#f7c9a8;color:#3a2213;padding:1px 3px;border-radius:3px}.vis-wrap mark.a{background:#bfe3c4;color:#173a1e;padding:1px 3px;border-radius:3px}.vis-wrap mark.p{background:#a9d3ea;color:#0f2c3d;padding:1px 3px;border-radius:3px}.vis-wrap mark.c{background:#c9b7e0;color:#2c1c40;padding:1px 3px;border-radius:3px}.vis-wrap mark.y{background:#f7e79a;color:#463a04;padding:1px 3px;border-radius:3px}.vis-wrap mark.k{background:transparent;color:inherit;font-weight:600;text-decoration:underline solid #dc2626;text-decoration-thickness:2px;text-underline-offset:2px;padding:0}
+@media print{.ed-top,#ed-bar{display:none!important}}
+`;
+style = style.replace('</style>', EDITOR_CSS + '</style>');
+const ED_TOP = '<div class="ed-top">✏️ <b>Editar colores:</b> selecciona un texto (o toca una palabra ya coloreada) y elige el color · se guarda en este navegador <button id="ed-undo" type="button">↩ Deshacer</button><button id="ed-reset" type="button">Restaurar original</button><span id="ed-st"></span></div>';
+const crypto = require('crypto'); const VER = crypto.createHash('md5').update(body).digest('hex').slice(0, 8);   // mismo contenido = mismos cambios guardados
+const EDITOR_JS = fs.readFileSync(R + 'prompts/herramientas/repaso-editor.js', 'utf8');
 const cab = hib.slice(hib.indexOf('<h1>'), hib.indexOf('<div class="vis-wrap"'));
 const cabLimpia = cab.slice(0, cab.indexOf('<h2>'));
-const out = hib.slice(0, hib.indexOf('<style>')) + style + hib.slice(hib.indexOf('</style>') + 8, hib.indexOf('<h1>')) + cabLimpia +
-  body + '\n<p class="pie">Borrador: texto como base (palabra por palabra, código Prefortia) y 6 esquemas de la app de Esquemas donde ayudan (comparativas y tablas).</p>\n</div><script>if(location.hash==="#imprimir"){window.addEventListener("load",function(){setTimeout(function(){window.print()},300)})}</script>\n</body></html>';
+const out = hib.slice(0, hib.indexOf('<style>')) + style + hib.slice(hib.indexOf('</style>') + 8, hib.indexOf('<h1>')) + cabLimpia + ED_TOP + '<div id="rc" data-id="t2" data-ver="' + VER + '">' +
+  body + '</div>\n<p class="pie">Borrador: texto como base (palabra por palabra, código Prefortia) y 6 esquemas de la app de Esquemas donde ayudan (comparativas y tablas).</p>\n</div><script>' + EDITOR_JS + '</script><script>if(location.hash==="#imprimir"){window.addEventListener("load",function(){setTimeout(function(){window.print()},300)})}</script>\n</body></html>';
 fs.writeFileSync(R + 'repaso-t2-borrador.html', out);
 console.log('ok', out.length, 'letra', FS + 'pt');
