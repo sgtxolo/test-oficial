@@ -315,6 +315,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres-subrayado/revision-t6.js"></script>
 <script src="expres-subrayado/cortes-t7.js"></script>
 <script src="expres-subrayado/revision-t7.js"></script>
+<script src="expres-subrayado/dens.js"></script>
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t5.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
@@ -440,19 +441,41 @@ const conPregP = (t, p) => { if (!_conPreg[t]) _conPreg[t] = new Set(Object.valu
 const fueraP = (t, p) => !anadidoP(t, p) && (!!p.tachado || (!!p.extra && !conPregP(t, p)));   // ya no hay «fuera del Exprés»: se ven todos los artículos; solo los tachados en tu temario quedan fuera
 const enImpP = (t, p) => !quitado(t, p.id) && (!fueraP(t, p) || !!st.impOp.extras || hayAlgo(((st.imp || {})[t] || {})[p.id]));   // en el panel de impresión: los «fuera del Exprés» solo si los pides (o ya los habías marcado)
 const visibles = t => D[t].piezas.filter(p => !fueraP(t, p) && !quitado(t, p.id));
-// ⭐ Esquema clave: tus piezas subrayadas más probables de examen, hasta un tope de páginas. Puntos: 6 por cada pregunta OFICIAL enlazada (las de IA no cuentan); tus marcas solo desempatan: EXOF 2, ✱ 1,5, sello EXAMEN 1, fichas RECUERDA 0,5 (máx. 3), cuadro 0,5. Se ordenan por puntos por página y se rellena hasta el tope.
+// ⭐ Esquema clave (criterio del usuario, 10/11/2026): lo más probable de examen, entre 8 y 10 págs. Puntos por artículo (las preguntas de IA NO cuentan):
+//  · pregunta OFICIAL enlazada: 6 cada una (máx. 4) · y sus artículos de antes y después (los examinadores repiten o pasan al contiguo): hasta 6 por vecino si el artículo está muy subrayado
+//  · marcas de la academia en tu temario: EXOF 6, EX 4, ✱ 4 · fichas R (RECUERDA, suelen ser pregunta): 3 cada una (máx. 2) · cuadro/esquema del temario subrayado: 3
+//  · tu subrayado (densidad medida en la imagen, 0-1 dentro del tema): hasta 4 · tus anotaciones a boli en los márgenes: hasta 4
+//  Se ordenan por puntos / páginas^0,5 (así un artículo largo pero importante, como las sanciones, no se cae por ser largo) y se rellena hasta el tope.
 const nOficiales = (t, p) => ((inv[t] || {})[p.id] || []).filter(q => !/-ia-/.test(q)).length;   // preguntas OFICIALES enlazadas a ese artículo (las de IA llevan «-ia-» en el id)
-const puntosClave = (p, t) => { const m = p.m || {}; return nOficiales(t === undefined ? tema : t, p) * 6 + (m.exof ? 2 : 0) + (m.ast ? 1.5 : 0) + (m.ex ? 1 : 0) + Math.min((m.r || []).length, 3) * 0.5 + (p.cu ? 0.5 : 0); };
-const CLAVE_PG = [5, 8, 10];
+const uSub = (t, p) => (((window.EXSUBU || {})[t] || {})[p.id]) || [0, 0];   // [subrayado, boli en márgenes], percentil 0-1 dentro del tema (prompts/herramientas/subrayado-densidad.py)
+const numArt = p => { const m = /(\d+)\s*(?:bis|ter|quater)?\s*$/i.exec(p.nombre || ''); return m ? +m[1] : null; };
+const leyP = p => (p.nombre || p.id).split('·')[0].trim();
+function vecinosPuntos(t, p) {
+  const L = D[t].piezas, i = L.indexOf(p); let pt = 0; if (i < 0) return 0;
+  const u = uSub(t, p)[0];
+  [L[i - 1], L[i + 1]].forEach(q => { if (!q || leyP(q) !== leyP(p) || nOficiales(t, q) === 0) return; const a = numArt(p), b = numArt(q); if (a !== null && b !== null && Math.abs(a - b) > 1) return; pt += 1.5 + 4.5 * u; });
+  return pt;
+}
+const puntosClave = (p, t) => {
+  t = t === undefined ? tema : t; const m = p.m || {}, us = uSub(t, p);
+  return Math.min(nOficiales(t, p), 4) * 6 + vecinosPuntos(t, p) + (m.exof ? 6 : 0) + (m.ex ? 4 : 0) + (m.ast ? 4 : 0) + Math.min((m.r || []).length, 2) * 3 + (p.cu ? 3 : 0) + 4 * us[0] + Math.max(0, us[1] - 0.5) * 8 + (nOficiales(t, p) > 0 && ((m.ex && m.ast) || m.exof) ? 10 : 0);   // +10: pregunta oficial y a la vez tus dos marcas (EX y ✱) o EXOF
+};
+const CLAVE_PG = [8, 10];
+const clavePgDe = () => CLAVE_PG.includes(st.clavePg) ? st.clavePg : 10;
 function claveSet(t, pgs) {
-  const cand = visibles(t).map(p => ({p, pt: puntosClave(p, t), pg: estPag(t, p, {s: 1})})).filter(x => x.pt > 0 && x.pg > 0);
-  cand.sort((a, b) => b.pt / b.pg - a.pt / a.pg);
+  const cand = visibles(t).map(p => ({p, pt: puntosClave(p, t), pg: estPag(t, p, {s: 1})})).filter(x => x.pt > 0 && x.pg > 0 && (nOficiales(t, x.p) > 0 || x.pt >= 6));
+  const dens = x => x.pt / Math.pow(x.pg, 0.5);
+  cand.sort((a, b) => dens(b) - dens(a));
   const ids = new Set(); let tot = 0;
-  cand.forEach(x => { if (tot + x.pg <= pgs) { ids.add(x.p.id); tot += x.pg; } });
+  cand.forEach(x => { if (tot + x.pg <= pgs * 0.87) { ids.add(x.p.id); tot += x.pg; } });   // el 87 % del tope para lo más puntuado; el resto, para los artículos de antes/después
+  // 2.ª pasada: el artículo de antes o de después de uno elegido, si tiene pregunta oficial y tus marcas (EX/✱/EXOF), entra con el 13 % de páginas que queda del tope
+  const L = D[t].piezas, lim = pgs, ext = [];
+  L.forEach((p, i) => { if (!ids.has(p.id)) return; [L[i - 1], L[i + 1]].forEach(q => { if (!q || ids.has(q.id) || ext.some(x => x.p === q) || !visibles(t).includes(q) || leyP(q) !== leyP(p) || nOficiales(t, q) === 0) return; const m = q.m || {}; if (!(m.ex || m.ast || m.exof)) return; const a = numArt(p), b = numArt(q); if (a !== null && b !== null && Math.abs(a - b) > 1) return; const pg = estPag(t, q, {s: 1}); if (pg > 0) ext.push({p: q, pt: puntosClave(q, t), pg}); }); });
+  ext.sort((a, b) => dens(b) - dens(a)).forEach(x => { if (tot + x.pg <= lim) { ids.add(x.p.id); tot += x.pg; } });
   return {ids, pg: tot};
 }
 let claveCache = {};
-function claveDe(t) { const pgs = st.clavePg || 8, k = t + '/' + pgs + '/' + (st.impOp.zoom || 90); return claveCache[k] || (claveCache[k] = claveSet(t, pgs)); }
+function claveDe(t) { const pgs = clavePgDe(), k = t + '/' + pgs + '/' + (st.impOp.zoom || 90); return claveCache[k] || (claveCache[k] = claveSet(t, pgs)); }
 const hechos = t => visibles(t).filter(p => st.vis[key(t, p.id)]).length;
 const LEYES_TIT = {"Estatuto de Roma":"Estatuto de Roma de la Corte Penal Internacional","LO 18/2003":"Ley Orgánica 18/2003, de Cooperación con la Corte Penal Internacional","Carta de la UE":"Carta de los Derechos Fundamentales de la Unión Europea","Estatuto del Consejo de Europa":"Estatuto del Consejo de Europa","Protocolos al CEDH":"Protocolos adicionales al Convenio Europeo de Derechos Humanos","CEDH":"Convenio Europeo para la Protección de los Derechos Humanos (CEDH)","Acuerdo de privilegios CPI":"Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional","LO 3/2018":"Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales","Ley 39/2015":"Ley 39/2015, del Procedimiento Administrativo Común de las Administraciones Públicas","Ley 40/2015":"Ley 40/2015, de Régimen Jurídico del Sector Público","Ley 19/2013":"Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno","RD 179/2005":"Real Decreto 179/2005, sobre prevención de riesgos laborales en la Guardia Civil","Ley 50/1997":"Ley 50/1997, del Gobierno","LO 3/1981":"Ley Orgánica 3/1981, del Defensor del Pueblo","Reglamento del Defensor del Pueblo":"Reglamento de Organización y Funcionamiento del Defensor del Pueblo","TUE":"Tratado de la Unión Europea (TUE)","TFUE":"Tratado de Funcionamiento de la Unión Europea (TFUE)","LO 2/1979 TC":"Ley Orgánica 2/1979, del Tribunal Constitucional","LO 1/1982":"Ley Orgánica 1/1982, de protección civil del derecho al honor, a la intimidad personal y familiar y a la propia imagen","LO 6/1985":"Ley Orgánica 6/1985, del Poder Judicial","LO 5/2005":"Ley Orgánica 5/2005, de la Defensa Nacional","Directiva de Defensa Nacional 2020":"Directiva de Defensa Nacional 2020"};
 const grupoHTML = n => '<div class="grupo ley"><small>Norma</small>' + esc(LEYES_TIT[n] || n) + '</div>';
@@ -646,7 +669,7 @@ function cabTema() {
   let h = '<input class="buscar" id="q" type="search" placeholder="Buscar artículo o norma (p. ej. art. 90, Roma, preámbulo)…" value="' + esc(busca) + '"><div class="chips">'
     + [['todos', 'Todos'], ['pend', 'Pendientes'], ['vistos', 'Vistos'], ['dif', '⭐ Difíciles'], ['nota', '📝 Con nota'], ['preg', '🎯 Con preguntas'], ['esq', '🧩 Con esquema']].map(f => '<button class="chip' + (filtro === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>').join('') + (marca ? '<button class="chip on" data-marca-quita="1">🏷 ' + esc(marca) + ' ✕</button>' : '') + '</div>';
   if (ns.length > 1) h += '<div class="chips"><button class="chip' + (inst === 'todas' ? ' on' : '') + '" data-i="todas">Todas las normas</button>' + ns.map(c => '<button class="chip' + (inst === c.p ? ' on' : '') + '" data-i="' + c.p + '">' + esc(c.nombre) + '</button>').join('') + '</div>';
-  h += '<div class="chips"><button class="chip' + (st.clave ? ' on' : '') + '" id="b-clave" title="Solo lo más probable de examen de este tema (' + (st.clavePg || 8) + ' págs aprox.), con tu subrayado">⭐ Esquema clave' + (st.clave ? ' (≈' + Math.round(claveDe(t).pg) + ' págs)' : '') + '</button>' + (st.clave ? '<span class="seg">' + CLAVE_PG.map(n => '<button class="' + ((st.clavePg || 8) === n ? 'on' : '') + '" data-clavepg="' + n + '">' + n + ' págs</button>').join('') + '</span>' : '') + '<button class="chip" id="b-rep">▶ Repasar la lista</button>' + (D[t].piezas.some(x => quitado(t, x.id)) ? '<button class="chip' + (st.verQuit ? ' on' : '') + '" id="b-quit" title="Ver los artículos que has quitado para devolverlos">🗑️ Quitados (' + D[t].piezas.filter(x => quitado(t, x.id)).length + ')</button>' : '') + '<span class="seg" title="Cómo se ven todos los artículos: lo relleno es lo que estás viendo"><button class="' + (st.vista === 'completo' ? '' : 'on') + '" id="b-vx">⚡ Exprés</button><button class="' + (st.vista === 'completo' ? 'on' : '') + '" id="b-ve">📄 Artículos enteros</button></span><button class="chip' + (st.modoEsq ? ' on' : '') + '" id="b-esq">🧩 Solo esquemas</button></div>'
+  h += '<div class="chips"><button class="chip' + (st.clave ? ' on' : '') + '" id="b-clave" title="Solo lo más probable de examen de este tema (' + clavePgDe() + ' págs aprox.), con tu subrayado">⭐ Esquema clave' + (st.clave ? ' (≈' + Math.round(claveDe(t).pg) + ' págs)' : '') + '</button>' + (st.clave ? '<span class="seg">' + CLAVE_PG.map(n => '<button class="' + (clavePgDe() === n ? 'on' : '') + '" data-clavepg="' + n + '">' + n + ' págs</button>').join('') + '</span>' : '') + '<button class="chip" id="b-rep">▶ Repasar la lista</button>' + (D[t].piezas.some(x => quitado(t, x.id)) ? '<button class="chip' + (st.verQuit ? ' on' : '') + '" id="b-quit" title="Ver los artículos que has quitado para devolverlos">🗑️ Quitados (' + D[t].piezas.filter(x => quitado(t, x.id)).length + ')</button>' : '') + '<span class="seg" title="Cómo se ven todos los artículos: lo relleno es lo que estás viendo"><button class="' + (st.vista === 'completo' ? '' : 'on') + '" id="b-vx">⚡ Exprés</button><button class="' + (st.vista === 'completo' ? 'on' : '') + '" id="b-ve">📄 Artículos enteros</button></span><button class="chip' + (st.modoEsq ? ' on' : '') + '" id="b-esq">🧩 Solo esquemas</button></div>'
     + '<div class="prog"><span class="pdots">' + [['ok', '🟢', g.ok], ['dud', '🟡', g.dud], ['mal', '🔴', g.mal], ['nuevo', '○', g.nuevo]].map(x => '<button class="pdot' + ((window.SEL && window.SEL.est.has(x[0])) ? ' on' : '') + '" data-px="est:' + x[0] + '" title="Ver solo los artículos de este color (puedes juntar varios)">' + x[1] + ' ' + x[2] + '</button>').join('') + '</span><div class="barra"><i style="width:' + pc + '%"></i></div><span>' + pc + '%</span></div>';
   $('#herr .in').innerHTML = h; $('#herr').classList.remove('oculto'); filtrosVista();
 }
