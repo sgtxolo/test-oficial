@@ -82,17 +82,34 @@ const hINS = (() => {
   }
   cierra(); return out;
 })();
+// ---- Convenios de Viena (texto limpio en prompts/temario-limpio/tema21/viena61-limpio.txt y viena63-limpio.txt; "Artículo N" + un párrafo por línea)
+const hVIENA = (fich, titulo) => {
+  const p = path.join(D, fich); if (!fs.existsSync(p)) return '';
+  let out = '<div class="bloque-titulo">' + esc(titulo) + '</div>', abierta = false;
+  for (const l0 of fs.readFileSync(p, 'utf8').replace(//g, '').split('
+')) {
+    const l = l0.trim(); if (!l) continue;
+    if (/^Artículo d+/.test(l)) { if (abierta) out += '</div></div></div>'; out += '<div class="articulo"><div class="articulo-head">' + esc(l) + '</div><div class="articulo-body"><div class="txt">'; abierta = true; continue; }
+    if (!abierta) continue;
+    const sg = /^[a-z]{1,2})/.test(l) ? ' style="margin-left:18px"' : '';
+    out += '<p' + sg + '>' + esc(l) + '</p>';
+  }
+  if (abierta) out += '</div></div></div>'; return out;
+};
+const hV61 = hVIENA('viena61-limpio.txt', 'CONVENIO DE VIENA DE 18 DE ABRIL DE 1961, SOBRE RELACIONES DIPLOMÁTICAS');
+const hV63 = hVIENA('viena63-limpio.txt', 'CONVENIO DE VIENA DE 24 DE ABRIL DE 1963, SOBRE RELACIONES CONSULARES');
 let s = fs.readFileSync(F, 'utf8');
 const bloque = `/* T21_BEGIN */
 const T21 = {};
 /* T21_CP */ T21.leyes = ${JSON.stringify(hCP)};
 /* T21_INS */ T21.instr = ${JSON.stringify(hINS)};
+/* T21_VIE */ T21.viena = ${JSON.stringify(hV61 + hV63)};
 (function(){
   const t = esquemas[20];
   t.titulo = "21 — Derecho Procesal Penal (II): normas complementarias";
   t.html = leyenda()
-    + trampa("Cómo está hecho este esquema", "Texto LITERAL de las leyes del extracto oficial 2026 (Habeas Corpus, LO 2/1989, LO 19/1994, LO 3/2003, LO 10/2007, Leyes 4/1985, 11/2003, 25/2007, 23/2014 y 4/2015). Al final, la Instrucción 1/2024 de la Secretaría de Estado de Seguridad (texto limpio). Los Convenios de Viena no se incluyen aún (el oficial viene en OCR roto).")
-    + T21.leyes + T21.instr;
+    + trampa("Cómo está hecho este esquema", "Texto LITERAL de las leyes del extracto oficial 2026 (Habeas Corpus, LO 2/1989, LO 19/1994, LO 3/2003, LO 10/2007, Leyes 4/1985, 11/2003, 25/2007, 23/2014 y 4/2015). Después, los Convenios de Viena (texto limpio) y, al final, la Instrucción 1/2024 de la Secretaría de Estado de Seguridad.")
+    + T21.leyes + T21.viena + T21.instr;
 })();
 /* T21_END */`;
 const a = s.indexOf('/* T21_BEGIN */');
