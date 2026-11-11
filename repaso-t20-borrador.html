@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Esquema clave Tema 20</title>
+<style>
+:root{--tx:#1b1b1b;--fondo:#fff;--gris:#666;--linea:#cfcfcf;--of:#1d4ed8;--ex:#555;--mk:#f7e79a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tx);font:13px/1.38 "Segoe UI",system-ui,sans-serif}
+.hoja{max-width:900px;margin:0 auto;padding:16px}
+h1{font-size:20px;margin:0 0 2px}
+.sub{color:var(--gris);font-size:12px;margin:0 0 10px}
+.leyenda{border:1px solid var(--linea);border-radius:8px;padding:6px 10px;font-size:12px;margin:0 0 12px}
+.cols{}
+h2{font-size:14px;margin:12px 0 6px;padding:4px 8px;background:#14532d;color:#fff;border-radius:6px;break-after:avoid}
+.art{break-inside:avoid;margin:0 0 7px;border-left:3px solid var(--linea);padding:1px 0 1px 8px}
+.art.of{border-left-color:var(--of)}
+.art h3{font-size:12.5px;margin:0 0 2px}
+.art h3 small{font-weight:400;color:var(--gris)}
+.art ul{margin:2px 0 0;padding-left:15px}
+.art li{margin:0 0 1px}
+.art p{margin:2px 0}
+mark{background:var(--mk);color:inherit;padding:0 2px;border-radius:3px}
+mark.d{background:#f7c9a8;color:#3a2213}
+mark.a{background:#bfe3c4;color:#173a1e}
+mark.p{background:#a9d3ea;color:#0f2c3d}
+mark.c{background:#c9b7e0;color:#2c1c40}
+mark.y{background:#f7e79a;color:#463a04}
+mark.k{background:transparent;color:inherit;font-weight:600;text-decoration:underline solid #dc2626;text-decoration-thickness:2px;text-underline-offset:2px;padding:0}
+.b{font-size:10px;font-weight:700;border-radius:9px;padding:0 6px;margin-left:4px;white-space:nowrap}
+.b.of{color:var(--of);border:1.5px solid var(--of)}
+.b.ex{color:var(--ex);border:1.5px dashed var(--ex)}
+.b.r{color:#92400e;border:1.5px solid #92400e}
+.pie{font-size:11px;color:var(--gris);margin-top:10px}
+.cod{display:flex;flex-wrap:wrap;gap:6px 10px;margin:6px 0 0;font-size:11.5px}
+@media print{@page{size:A4;margin:12mm 12mm}body{font-size:12pt;line-height:1.3}.hoja{max-width:none;padding:0}h2{-webkit-print-color-adjust:exact;print-color-adjust:exact}mark{-webkit-print-color-adjust:exact;print-color-adjust:exact}.leyenda{margin-bottom:6px}}
+
+/* ---- esquemas de la app de Esquemas (mismos estilos) ---- */
+:root{--panel:#fff;--panel-alt:#eeece3;--texto:#1f2a24;--texto-gris:#767a70;--borde:#e2e0d5;--verde-osc:#163f30;--verde:#1c4d3c;--verde-med:#2f6b52;--verde-suave:#e7efe8;--examen-bg:#fff4d6;--examen-borde:#e0a800;--examen-txt:#7a5b00;--radio:18px;--radio-sm:12px}
+.vis-wrap{background:#fff;color:#1f2a24;border:1px solid #e2e0d5;border-radius:10px;padding:2px 4px;margin:0 0 8px;break-inside:avoid}
+.vis-wrap mark.m-destacable{background:#f7c9a8;color:#3a2213;padding:1px 3px;border-radius:3px}
+.vis-wrap mark.m-autoridad{background:#bfe3c4;color:#173a1e;padding:1px 3px;border-radius:3px}
+.vis-wrap mark.m-plazo{background:#a9d3ea;color:#0f2c3d;padding:1px 3px;border-radius:3px}
+.vis-wrap mark.m-accion{background:#c9b7e0;color:#2c1c40;padding:1px 3px;border-radius:3px}
+.vis-wrap mark.m-personalizado{background:#f7e79a;color:#463a04;padding:1px 3px;border-radius:3px}
+.vis-wrap .vis{font-size:13px;line-height:1.35}
+mark.m-destacable{background:#f7c9a8;color:#3a2213;padding:1px 3px;border-radius:3px}
+mark.m-autoridad{background:#bfe3c4;color:#173a1e;padding:1px 3px;border-radius:3px}
+mark.m-plazo{background:#a9d3ea;color:#0f2c3d;padding:1px 3px;border-radius:3px}
+mark.m-accion{background:#c9b7e0;color:#2c1c40;padding:1px 3px;border-radius:3px}
+mark.m-personalizado{background:#f7e79a;color:#463a04;padding:1px 3px;border-radius:3px}
+mark.m-resp{background:transparent;color:inherit;font-weight:inherit;padding:0 1px;border-radius:0;box-shadow:none;text-decoration:underline solid #2563eb;text-decoration-thickness:2px;text-underline-offset:3px}
+mark.m-resp::before,mark.m-resp::after{font-weight:800;color:#2563eb}
+mark.m-resp::before{content:"["}
+mark.m-resp::after{content:"]"}
+.vis{margin:14px 0 18px;padding:14px 14px 12px;background:var(--panel);border:1.5px solid var(--borde);border-radius:var(--radio-sm)}
+.vis-t{font-weight:800;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;color:var(--verde-med);margin:0 0 10px}
+.vis-t i{font-style:normal;margin-right:6px}
+.vis-arbol{display:flex;align-items:center;gap:0;flex-wrap:nowrap}
+.vis-raiz{flex:0 0 auto;max-width:34%;background:var(--verde);color:#fff;font-weight:800;border-radius:12px;padding:10px 12px;text-align:center;font-size:.92rem;line-height:1.25}
+.vis-ramas{flex:1 1 auto;display:flex;flex-direction:column;gap:7px;margin-left:26px;position:relative}
+.vis-ramas:before{content:"";position:absolute;left:-14px;top:14px;bottom:14px;border-left:2.5px solid var(--verde-med)}
+.vis-rama{position:relative;background:var(--panel-alt);border:1.5px solid var(--borde);border-radius:10px;padding:7px 10px;font-size:.88rem;line-height:1.35}
+.vis-rama:before{content:"";position:absolute;left:-14px;top:50%;width:14px;border-top:2.5px solid var(--verde-med)}
+.vis-raiz+.vis-ramas:after{content:"";position:absolute;left:-26px;top:50%;width:12px;border-top:2.5px solid var(--verde-med)}
+.vis-rama b{color:var(--verde-osc)}
+.vis-sub{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.vis-sub span{background:var(--panel);border:1.5px solid var(--borde);border-radius:8px;padding:4px 8px;font-size:.84rem;line-height:1.3}
+.vis-flujo{display:flex;flex-direction:column;align-items:stretch;gap:0}
+.vis-paso{background:var(--panel-alt);border:1.5px solid var(--borde);border-radius:10px;padding:8px 12px;font-size:.88rem;line-height:1.35;position:relative}
+.vis-ph{text-align:center;font-weight:800;font-size:.85rem;margin-bottom:4px}
+.vis-paso.si{border-color:#2f8f5b}
+.vis-paso.no{border-color:#c0392b}
+.vis-paso .et{display:inline-block;font-weight:800;font-size:.72rem;border-radius:6px;padding:1px 7px;margin-right:6px;background:var(--verde);color:#fff}
+.vis-paso.si .et{background:#2f8f5b}
+.vis-paso.no .et{background:#c0392b}
+.vis-flecha{align-self:center;color:var(--verde-med);font-size:1.25rem;line-height:1;padding:2px 0;font-weight:900}
+.vis-bifurca{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.vis-comp{display:grid;grid-template-columns:repeat(var(--n,2),1fr);gap:8px;align-items:stretch}
+.vis-comp.med{grid-template-columns:1fr auto 1fr}
+.vis-col{background:var(--panel-alt);border:1.5px solid var(--borde);border-radius:10px;padding:8px 11px;font-size:.88rem;line-height:1.35}
+.vis-col h5{margin:0 0 5px;font-size:.9rem;color:var(--verde-osc)}
+.vis-col ul{margin:0;padding-left:16px}
+.vis-mid{align-self:center;font-weight:900;color:var(--verde-med);font-size:1.4rem}
+.vis-plazos{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.vis-plazo{background:var(--panel-alt);border:1.5px solid var(--borde);border-radius:10px;padding:7px 10px;font-size:.86rem;line-height:1.3}
+.vis-plazo .n{display:block;font-weight:900;font-size:1.05rem;color:#0f2c3d;background:#a9d3ea;border-radius:6px;padding:1px 8px;width:max-content;margin-bottom:4px}
+.vis-tabla{display:flex;flex-direction:column;gap:7px}
+u.m-clave{text-decoration:underline;text-decoration-color:#d1332a;text-decoration-thickness:2px;text-underline-offset:2px}
+mark.m-resp.r-ia{background:transparent;color:inherit;font-weight:inherit;box-shadow:none;padding:0 1px;text-decoration:underline dotted #e8737f;text-decoration-thickness:2px;text-underline-offset:3px}
+mark.m-resp.r-ia::before,mark.m-resp.r-ia::after{color:#b3001b}
+mark.m-resp{background:rgba(37,99,235,.13);border-radius:3px;text-decoration-thickness:3px;text-underline-offset:4px}
+mark.m-resp::before,mark.m-resp::after{font-size:1.35em;font-weight:900;line-height:1}
+mark.m-resp::before{margin-right:2px}
+mark.m-resp::after{margin-left:2px}
+mark.m-resp.r-ia{background:rgba(220,38,38,.10);text-decoration-thickness:3px}
+mark.m-resp,mark.m-resp.r-ia{background:transparent!important;text-decoration:none!important;font-weight:800;box-shadow:none}
+mark.m-resp{color:#1d4ed8}
+mark.m-resp.r-ia{color:#b3001b}
+mark.m-resp::before,mark.m-resp::after{color:inherit}
+mark.m-resp[data-q]{cursor:pointer;touch-action:manipulation}
+mark.m-resp[data-q]:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.vista-of{display:inline-flex;border:1.5px solid var(--verde-med);border-radius:20px;overflow:hidden}
+.vista-of button{border:0;background:transparent;color:var(--verde-med);padding:8px 12px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap}
+.vista-of button.on{background:var(--verde,#1c4d3c);color:#fff}
+.ex-linea{margin:-8px 0 18px;padding:8px 14px;border:1.5px dashed var(--borde);border-radius:10px;font-size:.9rem;line-height:1.6;background:var(--panel-alt,transparent)}
+.ex-tab{display:grid;grid-template-columns:minmax(96px,20%) repeat(calc(var(--n) - 1),1fr);gap:6px}
+.ex-th{font-weight:800;font-size:.76rem;letter-spacing:.05em;text-transform:uppercase;color:var(--verde-med);padding:2px 6px}
+.ex-tl{background:var(--verde);color:#fff;border-radius:8px;padding:7px 9px;font-size:.86rem;line-height:1.3}
+.ex-tl small{opacity:.92}
+.ex-tl mark.m-resp::before,.ex-tl mark.m-resp::after{color:#ffd27a!important}
+.ex-tl mark,.ex-tl mark.m-resp.r-ia{color:#fff!important;background:transparent!important;text-decoration:underline dotted #ffd27a!important;font-weight:800}
+.ex-td.num{text-align:center;font-weight:800;font-size:1rem;display:flex;align-items:center;justify-content:center}
+.ex-td{background:var(--panel-alt);border:1.5px solid var(--borde);border-radius:8px;padding:7px 9px;font-size:.88rem;line-height:1.4}
+mark.m-resp.ex-q{font-size:.75em;font-weight:800;white-space:nowrap;border-radius:8px;padding:0 6px;text-decoration:none}
+body.pm-on.cat-normal .txt mark:not(.m-resp):hover,body.pm-on.cat-normal .txt u.m-clave:hover,body.pm-on.cat-normal .vis mark:not(.m-resp):hover,body.pm-on.cat-normal .vis u.m-clave:hover{outline:2px solid rgba(0,0,0,.35);outline-offset:1px}
+body.tapar .articulo mark.m-resp:not(.visto){color:transparent!important;text-shadow:none!important;cursor:pointer}
+body.tapar .articulo mark.m-resp.visto{outline:2px solid rgba(47,107,82,.55)}
+.esquema .vis,.esquema .vis *,.esquema .trampa,.esquema .trampa *,.esquema .recuerda,.esquema .recuerda *,.esquema .bloque-titulo,.esquema .leyenda,.esquema .resp-strip,.ex-clave,.ex-clave *,.ex-rq,.ex-rq *,.ex-bar{font-family:"Source Sans 3","Myriad Pro","Segoe UI",Arial,sans-serif}
+.esquema .vis-rama,.esquema .vis-paso,.esquema .vis-col,.esquema .vis-plazo,.esquema .vt-hoja,.esquema .ex-td{font-size:15px}
+.esquema .vis *,.esquema .trampa *,.esquema .recuerda *,.esquema .ex-tl,.esquema .ex-td,.esquema .ex-tl *,.esquema .ex-td *{font-family:"Source Sans 3","Myriad Pro","Segoe UI",Arial,sans-serif!important;letter-spacing:-.005em}
+.esquema .vis-rama,.esquema .vis-rama *,.esquema .vis-paso *,.esquema .vis-col *,.esquema .vis-plazo,.esquema .vt-hoja,.esquema .trampa p,.esquema .recuerda li{font-size:15px}
+.vis,.ex-tab,.vis-comp,.vis-plazos{max-width:100%;overflow-x:auto}
+.vis-t .xp-vis{float:right;margin-left:6px;border:1.5px solid #2563eb;background:transparent;color:#2563eb;border-radius:10px;padding:1px 8px;font:inherit;font-size:11.5px;font-weight:800;cursor:pointer;text-transform:none;letter-spacing:0}
+.vis-t .xp-vis.vis-menos{border-color:#c0392b;color:#c0392b;opacity:.8}
+.vis-t .xp-vis::before{content:attr(data-l)}
+.vis-t .xp-vis:hover{background:rgba(37,99,235,.1)}
+.mj-ind a.vis-i{padding-left:22px;font-style:italic}
+body.mj-notas .esquema .txt p:hover,body.mj-notas .esquema .vis:hover{outline:2px dashed #1b4fb3;cursor:pointer}
+body.mj-solomarcas .esquema .sm-fuera,body.mj-solomarcas .esquema .ex-clave,body.mj-solomarcas .esquema .ex-rq,body.mj-solomarcas .esquema.active .vis{display:none!important}
+@media print{.vis-wrap{zoom:.83}.vis-wrap .vis{font-size:12.5px}}
+.art{break-inside:avoid;margin:0 0 9px}.art h3{font-size:1.02em}.art li{margin:0 0 2px}.art p{margin:3px 0}@media print{.vis-wrap{zoom:.86}.art{margin:0 0 7px}h2{margin:10px 0 6px}}
+
+.ed-top{border:1px dashed #9ab;border-radius:8px;padding:6px 10px;font-size:12px;margin:0 0 10px;color:var(--gris)}
+.ed-top button{font:inherit;border:1px solid var(--linea);background:transparent;color:inherit;border-radius:99px;padding:2px 10px;margin-left:6px;cursor:pointer}
+#ed-st{margin-left:8px;color:#15803d}
+#ed-bar{position:absolute;z-index:99;display:flex;gap:4px;background:#222;border-radius:10px;padding:5px;box-shadow:0 3px 14px rgba(0,0,0,.35)}
+.ed-b{width:30px;height:30px;border:2px solid transparent;border-radius:8px;font:700 14px/1 sans-serif;cursor:pointer;color:#222}
+.ed-y{background:#f7e79a}.ed-d{background:#f7c9a8}.ed-a{background:#bfe3c4}.ed-p{background:#a9d3ea}.ed-c{background:#c9b7e0}.ed-k{background:#fff;color:#222}.ed-k u{text-decoration-color:#dc2626;text-decoration-thickness:2px}.ed-x{background:#444;color:#fff}.ed-u{background:#fff;color:#222;font-size:12px;letter-spacing:-.5px}.mayus{text-transform:uppercase}
+.vis-wrap mark.d{background:#f7c9a8;color:#3a2213;padding:1px 3px;border-radius:3px}.vis-wrap mark.a{background:#bfe3c4;color:#173a1e;padding:1px 3px;border-radius:3px}.vis-wrap mark.p{background:#a9d3ea;color:#0f2c3d;padding:1px 3px;border-radius:3px}.vis-wrap mark.c{background:#c9b7e0;color:#2c1c40;padding:1px 3px;border-radius:3px}.vis-wrap mark.y{background:#f7e79a;color:#463a04;padding:1px 3px;border-radius:3px}.vis-wrap mark.k{background:transparent;color:inherit;font-weight:600;text-decoration:underline solid #dc2626;text-decoration-thickness:2px;text-underline-offset:2px;padding:0}
+@media print{.ed-top,#ed-bar{display:none!important}}
+
+:root[data-theme="dark"]{--tx:#e8e8e8;--fondo:#16181c;--gris:#9aa0a6;--linea:#3a3d42;--of:#7aa2ff;--ex:#bbb;--mk:#6b5f00;--panel:#1e2523;--panel-alt:#262f2b;--texto:#eef1ee;--texto-gris:#9aa39c;--borde:#333d37;--verde-osc:#7fd9ac;--verde:#3f8a68;--verde-med:#57a683;--verde-suave:#16332a}
+:root[data-theme="dark"] mark.d{background:#6b3d1f;color:#ffd9b8}:root[data-theme="dark"] mark.a{background:#265331;color:#c9f0cf}:root[data-theme="dark"] mark.p{background:#1f4a63;color:#c8e9fb}:root[data-theme="dark"] mark.c{background:#4a3768;color:#e6d9fa}:root[data-theme="dark"] mark.y{background:#5a4a12;color:#fff0b0}:root[data-theme="dark"] mark.k{color:#fca5a5;text-decoration-color:#f87171}
+.vis-wrap{background:var(--panel);color:var(--texto)}
+:root[data-theme="dark"] .vis-wrap mark.d,:root[data-theme="dark"] .vis-wrap mark.m-destacable{background:#6b3d1f;color:#ffd9b8}:root[data-theme="dark"] .vis-wrap mark.a,:root[data-theme="dark"] .vis-wrap mark.m-autoridad{background:#265331;color:#c9f0cf}:root[data-theme="dark"] .vis-wrap mark.p,:root[data-theme="dark"] .vis-wrap mark.m-plazo{background:#1f4a63;color:#c8e9fb}:root[data-theme="dark"] .vis-wrap mark.c,:root[data-theme="dark"] .vis-wrap mark.m-accion{background:#4a3768;color:#e6d9fa}:root[data-theme="dark"] .vis-wrap mark.y,:root[data-theme="dark"] .vis-wrap mark.m-personalizado{background:#5a4a12;color:#fff0b0}:root[data-theme="dark"] .vis-wrap mark.k{color:#fca5a5;text-decoration-color:#f87171}
+[data-theme="dark"] mark.m-resp{background:transparent;color:inherit;box-shadow:none;text-decoration-color:#60a5fa}
+[data-theme="dark"] mark.m-resp::before,[data-theme="dark"] mark.m-resp::after{color:#60a5fa}
+[data-theme="dark"] .vis-plazo .n{color:#c8e9fb;background:#1f4a63}
+[data-theme="dark"] mark.m-destacable{background:#6b3d1f;color:#ffd9b8}
+[data-theme="dark"] mark.m-autoridad{background:#265331;color:#c9f0cf}
+[data-theme="dark"] mark.m-plazo{background:#1f4a63;color:#c8e9fb}
+[data-theme="dark"] mark.m-accion{background:#4a3768;color:#e6d9fa}
+[data-theme="dark"] mark.m-personalizado{background:#5a4a12;color:#fff0b0}
+[data-theme="dark"] mark.m-resp.r-ia{background:transparent;color:inherit;box-shadow:none;text-decoration-color:#ff8a80}
+[data-theme="dark"] mark.m-resp.r-ia::before,[data-theme="dark"] mark.m-resp.r-ia::after{color:#ff8a80}
+[data-theme="dark"] mark.m-resp{background:rgba(96,165,250,.20)}
+[data-theme="dark"] mark.m-resp.r-ia{background:rgba(255,138,128,.18)}
+[data-theme="dark"] mark.m-resp{color:#93c5fd}
+[data-theme="dark"] mark.m-resp.r-ia{color:#ff8a80}
+:root{--fs:15px}
+@media screen{
+body{font-size:var(--fs);line-height:1.42}
+h1{font-size:1.45em}h2{font-size:1.04em}.art h3{font-size:1em}.sub,.leyenda,.cod,.ed-top{font-size:.85em}.b{font-size:.75em}.pie{font-size:.8em}
+.vis-wrap .vis{font-size:calc(var(--fs) - 1px)}
+.ed-b{width:34px;height:34px}
+}
+@media (max-width:700px){:root{--fs:17px}.hoja{padding:12px 10px}.art{padding-left:6px}.art ul{padding-left:18px}}
+@media (max-width:640px){.vt-cab{display:none}.vt-nodo{grid-template-columns:1fr}.vt-hoja{grid-template-columns:72px 1fr}}
+@media (max-width:640px){.vis-arbol{flex-direction:column;align-items:stretch}.vis-raiz{max-width:none}.vis-ramas{margin:12px 0 0 14px}.vis-ramas:before{left:-8px}.vis-rama:before{left:-8px;width:8px}.vis-raiz+.vis-ramas:after{display:none}.vis-bifurca{grid-template-columns:1fr}.vis-comp,.vis-comp.med{grid-template-columns:1fr}.vis-mid{transform:rotate(90deg)}}
+@media (max-width:640px){.ex-tab{grid-template-columns:1fr}.ex-th{display:none}.ex-tl{margin-top:6px}}
+@media (max-width:720px){.vis{padding:10px 8px}}
+/*aireado*/.art{margin:0 0 20px;padding:10px 14px 8px;border:1px solid var(--linea);border-left:4px solid var(--linea);border-radius:10px;background:rgba(127,127,127,.05)}.art.of{border-left-color:var(--of)}.art p{margin:0 0 14px;line-height:1.8}.art h3{margin:0 0 10px;font-size:1.08em}.art p:last-child{margin-bottom:2px}.art li{margin:0 0 6px;line-height:1.7}h2{margin:32px 0 14px}.vis-wrap{margin:14px 0 20px}@media print{.art{margin:0 0 9px;padding:5px 9px}.art p{margin:0 0 5px;line-height:1.45}.art li{margin:0 0 3px;line-height:1.4}h2{margin:12px 0 7px}}.lin{margin:2px 0}.rec{color:var(--gris);font-size:.85em;margin:2px 0}/*aireado*/.art{margin:0 0 20px;padding:10px 14px 8px;border:1px solid var(--linea);border-left:4px solid var(--linea);border-radius:10px;background:rgba(127,127,127,.05)}.art.of{border-left-color:var(--of)}.art p{margin:0 0 14px;line-height:1.8}.art h3{margin:0 0 10px;font-size:1.08em}.art p:last-child{margin-bottom:2px}.art li{margin:0 0 6px;line-height:1.7}h2{margin:32px 0 14px}.vis-wrap{margin:14px 0 20px}@media print{.art{margin:0 0 9px;padding:5px 9px}.art p{margin:0 0 5px;line-height:1.45}.art li{margin:0 0 3px;line-height:1.4}h2{margin:12px 0 7px}}:root{--oro:#c9a227;--lin:#3b4a57;--caja:#fff;--fondo2:#faf6e6}:root[data-theme="dark"]{--lin:#8aa0b2;--caja:#1e2227;--fondo2:#262a1c}.esq{margin:0 0 22px;break-inside:avoid;border:1px solid rgba(127,127,127,.35);border-radius:8px;overflow:hidden;background:var(--fondo)}.esq .ban{background:var(--oro);color:#fff;text-align:center;padding:7px 10px;font-weight:800}.esq .ban small{display:block;font-weight:500;font-size:.8em}.esq .cuerpo{padding:12px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.g2s{display:grid;grid-template-columns:1fr 1fr;gap:10px}.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.esq .caja{border:1.5px solid var(--lin);background:var(--caja);padding:6px 9px;margin:0 0 5px;line-height:1.5}.esq .caja ul{margin:3px 0 0}.esq .cen{text-align:center}.esq .tit{font-weight:800;text-align:center}.esq .pie{background:var(--fondo2);padding:6px 10px;margin:4px 0}.esq .fl{text-align:center;color:var(--oro);font-size:15px;line-height:1.1;margin:2px 0 3px}.esq .rama{border-top:2px solid var(--oro);padding-top:14px;position:relative}.esq .rama::before{content:"▼";position:absolute;top:-2px;left:50%;transform:translateX(-50%);color:var(--oro);font-size:12px;line-height:1;background:var(--fondo)}.esq .bif{display:grid;gap:10px;margin-top:2px}.esq .pill{display:inline-block;padding:1px 9px;border-radius:4px;font-weight:800}.esq .hd{background:var(--fondo2);padding:4px 8px;font-weight:800;text-align:center;margin:0 0 6px}.esq .nota{font-size:.82em;color:var(--gris)}.esq .x{color:#1f6f6a;font-weight:900}.esq .ex{display:inline-block;border:1.5px solid #1d4ed8;color:#1d4ed8;border-radius:10px;padding:0 6px;font-size:.78em;font-weight:700}.esq .man{font-family:"Segoe Print","Bradley Hand",cursive;color:#2d3a9a;font-size:.88em}.esq .tab2{display:grid;grid-template-columns:1fr 1fr;border:1.5px solid var(--lin)}.esq .tab2 .th{background:var(--oro);color:#fff;text-align:center;font-weight:800;padding:5px}.esq .tab2 .td{padding:6px 9px;border-top:1px solid rgba(127,127,127,.4);line-height:1.5}.esq .tab2 .td:nth-child(odd){border-right:1px solid rgba(127,127,127,.4)}.esq .lt{display:flex;align-items:stretch;gap:0;margin:8px 0 4px;flex-wrap:wrap}.esq .lt-i{flex:1;min-width:110px;border:1.5px solid var(--lin);border-radius:30px;padding:8px 10px;text-align:center;background:var(--caja);margin:0 -4px;line-height:1.35}.esq .lt-i.fl2{border-radius:4px;background:var(--fondo2);flex:.9}.esq .lt-i.fin{border-radius:4px}@media (max-width:640px){.g2,.g2s,.g3,.esq .bif{grid-template-columns:1fr!important}.esq .lt{flex-direction:column}.esq .lt-i{margin:2px 0}}@media print{.esq .ban{-webkit-print-color-adjust:exact;print-color-adjust:exact}}</style></head><body><div class="hoja">
+<h1>Tema 20 · Derecho Procesal Penal (I) — esquema clave</h1>
+<p class="sub">Construido con tus marcas <span class="b of">EXOF</span>, las fichas <span class="b r">R</span>, las preguntas OFICIALES enlazadas y tu subrayado · texto literal (en las fichas largas solo los apartados con pregunta)</p>
+<div class="leyenda cod"><span><mark class="d">Palabras destacables</mark></span><span><mark class="a">Autoridades y órganos</mark></span><span><mark class="p">Plazos, cifras y mayorías</mark></span><span><mark class="c">Acciones</mark></span><span><mark class="y">Contenido general (personalizado)</mark></span><span><mark class="k">palabras clave: no, podrá, deberá…</mark></span></div>
+
+<div class="ed-top">✏️ <b>Editar colores:</b> selecciona un texto (o toca una palabra ya coloreada) y elige el color · se guarda en este navegador <button id="ed-undo" type="button">↩ Deshacer</button><button id="ed-reset" type="button">Restaurar original</button><button id="ed-fm" type="button" title="Letra más pequeña">A−</button><button id="ed-fp" type="button" title="Letra más grande">A+</button><button id="ed-tema" type="button">🌙 Noche</button><span id="ed-st"></span></div><div id="rc" data-id="t20" data-ver="88890367"><h2>CAPÍTULO II · De las cuestiones de competencia entre los Jueces y Tribunales ordinarios</h2><div class="art of"><h3>Artículo 26 <span class="b of">EXOF</span> <span class="b ex">✱</span> <span class="b r">R4</span> <span class="b r">R5</span></h3><p><mark class="d">El</mark> <mark class="a">Ministerio Fiscal</mark> <mark class="d">y las partes</mark> <mark class="c">promoverán</mark> <mark class="y">las competencias por</mark> inhibitoria o por declinatoria. </p><p>El <mark class="y">uso de uno de estos medios excluye absolutamente el del otro,</mark> así durante la sustanciación de la competencia como una vez que ésta se halle terminada. </p><p><span class="b r">R4</span> La <mark class="d">inhibitoria</mark> <mark class="c">se propondrá</mark> ante el <mark class="a">Juez o Tribunal</mark> <mark class="y">que se repute</mark> <mark class="d">competente.</mark> </p><p><span class="b r">R5</span> <mark class="d">La declinatoria,</mark> <mark class="y">ante el</mark> <mark class="a">Juez o Tribunal</mark> <mark class="y">que se repute</mark> <mark class="d">incompetente.</mark> </p></div>
+<div class="vis-wrap"><div class="esq"><div class="ban">COMPETENCIA PROMOVIDA POR LAS PARTES (ART. 26)</div><div class="cuerpo">
+<div class="g2">
+ <div class="cen"><span class="pill" style="background:var(--fondo2)">Ante el <mark class="a">Juez o tribunal</mark> que se repute…</span></div>
+ <div></div>
+</div>
+<div class="g2" style="margin-top:6px">
+ <div>
+  <div class="tit">INCOMPETENTE</div>
+  <div class="cen nota" style="margin-bottom:4px">El Ministerio Fiscal y las partes promoverán las competencias por:</div>
+  <div class="hd"><mark class="d"><b>DECLINATORIA</b></mark> (ARTS. 32 y ss.)</div>
+  <div class="caja cen">Cuando se proponga declinatoria ante un <mark class="a">Juez municipal</mark> <mark class="c">resolverá</mark> <mark class="p">en término de segundo día</mark> <mark class="y">oyendo previamente</mark> al Fiscal sobre si procede o no acordar la inhibición.</div>
+  <div class="bif">
+   <div class="rama cen"><mark class="y"><b>PROCEDE</b></mark><br><mark class="d">(Se cede la competencia)</mark></div>
+   <div class="rama cen"><mark class="y"><b>NO PROCEDE</b></mark><br><mark class="d"><b>AUTO DENEGATORIO DE INHIBICIÓN</b></mark> **<div class="nota">[Apelable en ambos efectos para ante el Juez de instrucción respectivo]<br>[Contra la resolución del Juzgado procederá el recurso de <mark class="d">casación</mark>]</div></div>
+  </div>
+  <div class="caja cen" style="margin-top:8px"><mark class="y">Las declinatorias se sustanciarán como artículos de previo pronunciamiento.</mark> (ARTS. 666 y ss.)</div>
+ </div>
+ <div>
+  <div class="tit">COMPETENTE</div>
+  <div class="cen nota" style="margin-bottom:4px">[Se excluyen absolutamente durante la sustanciación de la competencia y una vez que ésta se halle terminada]</div>
+  <div class="hd"><mark class="d"><b>INHIBITORIA</b></mark> (ARTS. 27 y ss.) <span class="man">al 31</span></div>
+  <div class="caja cen">El <mark class="a">Juez municipal</mark> requerido de inhibición <mark class="y">oyendo al Fiscal</mark> cuando éste no la hubiera propuesto. <mark class="p"><b>Resolverá en término de segundo día</b></mark></div>
+  <div class="bif">
+   <div class="rama cen"><mark class="d">Desiste</mark> de conocer<br><mark class="d"><b>PROCEDE EL REQUERIMIENTO</b></mark></div>
+   <div class="rama cen"><mark class="d">Mantiene</mark> su competencia<br><mark class="d"><b>NO PROCEDE: AUTO DENEGATORIO</b></mark> **</div>
+  </div>
+  <div class="fl">▼</div>
+  <div class="caja">Lo mandará practicar <mark class="y">X OFICIO</mark> en el cual consignará los fundamentos de su <mark class="y">AUTO</mark>* y se remitirán al juez requirente las diligencias practicadas <mark class="p">dentro de 24 H</mark> precisamente.</div>
+  <div class="fl">▼</div>
+  <div class="caja">Recibidos los autos por el juez requirente. <mark class="c">Declarará</mark>, <span style="outline:1.5px solid #1d4ed8">sin más trámites</span>, y <mark class="p">dentro de 24 H</mark> si:</div>
+  <div class="bif">
+   <div class="rama cen"><mark class="y">Insiste en la competencia</mark><div class="caja" style="margin-top:6px"><mark class="y">El Juez requerido siga conociendo</mark> <span class="x">✖</span></div></div>
+   <div class="rama cen"><mark class="d">Se aparta de ella</mark>*<div class="nota"><mark class="c">Lo participará</mark> <mark class="p">en el mismo día</mark> al juez requerido para:</div><div class="caja" style="margin-top:6px"><mark class="p">En 24 H siguientes</mark> remisión de diligencias por <mark class="y">ambos</mark> al órgano que debe resolver</div></div>
+  </div>
+  <div class="fl">▼</div>
+  <div class="caja nota" style="color:inherit">Recibidas las diligencias en el Juzgado o Tribunal llamado a resolver la competencia. <mark class="y">Oído el Fiscal</mark> por término de <mark class="p">segundo día</mark> <b>DECIDIRÁ</b> dentro de los <mark class="p">tres siguientes</mark> al en que el Ministerio Fiscal evacue el traslado.</div>
+  <div class="caja nota" style="color:inherit">- Contra lo resuelto por el Juzgado o Audiencia procederá el recurso de <mark class="d">casación</mark>.<br>- Contra la resolución del Supremo <mark class="d">no se da recurso alguno</mark>.</div>
+ </div>
+</div>
+<div class="nota" style="margin-top:6px">* ESTOS AUTOS serán apelables para ante el respectivo Juez de instrucción. &nbsp; ** ESTOS AUTOS serán apelables en ambos efectos para ante el Juez de instrucción respectivo.</div>
+</div></div></div><div class="vis-wrap"><div class="esq"><div class="ban">PROCEDIMIENTO DE UNA <mark class="d">INHIBITORIA</mark><small>ante los Tribunales de lo criminal (ARTS. 33 y ss.)</small></div><div class="cuerpo">
+<div class="caja pie" style="border:0"><div class="cen tit"><mark class="d">INICIACIÓN</mark></div>
+ • <mark class="c">Se propondrá</mark> en <mark class="y">escrito</mark> con <mark class="d">firma de Letrado</mark>. <span class="man">Art 33</span> <span class="ex">EXOF</span><br>
+ • En el escrito <mark class="c">expresará</mark> el que la proponga que <mark class="y"><b>NO ha empleado la declinatoria</b></mark> (si resultase lo contrario, será condenado en costas, aunque se decida en su favor la competencia o aunque la abandone en lo sucesivo). <span class="man">Art 33</span></div>
+<div class="caja pie" style="border:0"><mark class="a">El Secretario del Tribunal</mark> ante quien <mark class="y">se proponga la inhibitoria</mark> dará <mark class="d">TRASLADO</mark> por <mark class="p">término de uno o dos días</mark> (según el volumen de la causa):<br>
+ • al <mark class="a">Ministerio Fiscal</mark>, cuando éste <mark class="y">no la haya propuesto</mark>.<br>
+ • a las <mark class="a">demás partes</mark> que <mark class="y">figuren en la causa</mark> de que pudiera a la vez estar conociendo el Tribunal a quien se haya instado.</div>
+<div class="cen" style="margin:6px 0 2px">Para que haga <mark class="y">el requerimiento y, en su vista</mark></div>
+<div class="cen"><span class="pill" style="background:var(--fondo2)">El Tribunal mandará, dentro de los <mark class="p">dos días siguientes</mark></span></div>
+<div style="display:grid;grid-template-columns:3fr 1fr;gap:12px;margin-top:2px">
+ <div class="rama"><div class="cen" style="margin-bottom:4px"><mark class="d"><b>LIBRAR OFICIO INHIBITORIO</b></mark></div>
+  <div class="caja">Con el oficio de inhibición <mark class="y">se acompañará</mark>, <mark class="c">se extenderá y remitirá</mark> <mark class="d">TESTIMONIO</mark>:
+   <ul style="list-style:none;padding-left:8px">
+    <li>- En el <mark class="p">plazo improrrogable de 1 a 3 días</mark>, según volumen de la causa.</li>
+    <li>- Del <mark class="y">escrito</mark> en que se haya pedido.</li>
+    <li>- De lo <mark class="y">expuesto por Ministerio Fiscal/partes</mark>, <span style="outline:1.5px solid #1d4ed8">en su caso.</span></li>
+    <li>- Del <mark class="y">auto que se haya dictado</mark>.</li>
+    <li>- De lo demás que el <mark class="a">Tribunal</mark> estime conducente a fundar su competencia.</li></ul>
+   <div style="margin-top:6px">El <mark class="a">Secretario del Tribunal requerido</mark>:<br>
+    - <mark class="c">acusará</mark> <mark class="p">inmediatamente</mark> recibo.<br>
+    - Dará <mark class="d">TRASLADO</mark> en <mark class="p">plazo de 24 H MAX</mark> a cada uno:
+    <ul style="list-style:none;padding-left:14px"><li>- <mark class="a">Ministerio Fiscal</mark>.</li><li>- <mark class="a">Acusador particular</mark>.</li><li>- <mark class="a">Procesados/detenidos</mark> <span style="outline:1.5px solid #1d4ed8">personados.</span></li><li>- <mark class="a">Parte Civil</mark>.</li></ul></div>
+   <div class="cen" style="margin-top:4px">Tras lo cual: <span class="nota">Continúa ↓ (esquema siguiente)</span></div></div></div>
+ <div class="rama"><div class="cen" style="margin-bottom:4px"><mark class="d"><b>DECLARAR NO HABER LUGAR A ELLO</b></mark></div>
+  <div class="nota cen" style="color:inherit">Contra el auto en que <mark class="y">se deniegue el requerimiento de inhibición</mark> sólo habrá lugar al recurso de <mark class="d">casación</mark>. <span class="man">casación</span><br><span class="x">✖</span></div></div>
+</div></div></div></div><div class="vis-wrap"><div class="esq"><div class="ban">PROCEDIMIENTO DE UNA INHIBITORIA<small>ante los Tribunales de lo criminal (ARTS. 33 y ss.) — continuación</small></div><div class="cuerpo">
+<div class="cen" style="margin-bottom:4px"><span class="pill" style="background:var(--fondo2)">El Tribunal dictará <mark class="y"><b>AUTO</b></mark></span></div>
+<div class="g2">
+ <div class="rama">
+  <div class="cen"><mark class="d"><b>DE INHIBICIÓN</b></mark><div class="nota">(solo recurrible en casación)</div></div>
+  <div class="fl">▼</div>
+  <div class="cen">Consentido o ejecutoriado <mark class="y">el auto:</mark></div>
+  <div class="caja nota" style="color:inherit">El <mark class="a">Secretario judicial</mark>, respecto al Tribunal que hubiera propuesto la inhibitoria:<br>
+   - <mark class="c">Le remitirá</mark> la causa, <mark class="p">plazo de 3 días</mark><br>- Con emplazamiento a las partes.<br>- <mark class="c">Pondrá a su disposición</mark>: a los procesados, las pruebas materiales del delito y los bienes embargados. <span class="x">✖</span></div>
+ </div>
+ <div class="rama">
+  <div class="cen"><div class="nota">DECLARANDO QUE <mark class="y"><b>NO HA LUGAR</b></mark></div><mark class="d"><b>AUTO DENEGATORIO DE INHIBICIÓN</b></mark></div>
+  <div class="fl">▼</div>
+  <div class="cen">Se <mark class="c">comunicará</mark> <mark class="y">el auto</mark> al <mark class="a">Tribunal requirente</mark></div>
+  <div class="caja nota" style="color:inherit">Con testimonio remitido <mark class="p">dentro de 3 días</mark>:<br>- de lo <mark class="y">expuesto</mark> por el <mark class="a">Ministerio Fiscal</mark> y por las partes.<br>- de <mark class="y">todo lo demás</mark> que se crea conducente<br>mediante <mark class="d"><b>OFICIO DE REMISIÓN</b></mark> donde se exigirá que el Tribunal requirente conteste <mark class="p">inmediatamente</mark> para:</div>
+  <div class="bif"><div class="rama caja" style="border-top:2px solid var(--oro)"><mark class="y">Continuar actuando</mark> si no insiste en la inhibición</div><div class="rama caja" style="border-top:2px solid var(--oro)">Que <mark class="c">remita</mark> la causa a quien corresponda decidir la competencia</div></div>
+ </div>
+</div>
+<div class="caja cen" style="margin-top:8px">Recibido este oficio el <mark class="a">Tribunal que propone la inhibitoria</mark> <mark class="y">sin más trámites</mark> <mark class="c">dictará</mark> <mark class="p">AUTO en término de 2º día</mark>:</div>
+<div class="bif"><div class="rama caja cen"><mark class="d"><b>DESISTIENDO DE LA INHIBICIÓN</b></mark>*</div><div class="rama caja cen"><mark class="d"><b>MANTENIENDO SU COMPETENCIA</b></mark></div></div>
+<div class="cen nota" style="margin:4px 0">Al (órgano judicial) requerido de inhibición:</div>
+<div class="bif">
+ <div class="rama caja" style="background:var(--fondo2)">Consentido o ejecutoriado esto:<br>1) Se lo <mark class="c">comunicará</mark> en <mark class="p">término de 24 H</mark>.<br>2) Le <mark class="c">remitirá</mark> <mark class="y">todo lo actuado</mark> para su unión a la causa.</div>
+ <div class="rama caja" style="background:var(--fondo2)">Lo <mark class="c">comunicará</mark> en el <mark class="p">término de 24 H</mark>. Para <mark class="y">remisión de la causa</mark> por <mark class="y">ambos</mark> a quien corresponda la resolución.<br>+ Dictamen del <mark class="a">Ministerio Fiscal</mark> en <mark class="p">término del 2º día</mark>.</div>
+</div>
+<div class="fl">▼</div>
+<div class="cen"><mark class="d"><b>RESOLUCIÓN</b></mark> dentro de los <mark class="p"><b>3 días siguientes</b></mark><br><mark class="d"><b>RECURSOS</b></mark> — Cuando procede de:</div>
+<div class="bif" style="margin:4px 25% 0"><div class="rama caja cen"><mark class="a">Audiencias territoriales</mark>:<br><mark class="d"><b>CASACIÓN</b></mark></div><div class="rama caja cen"><mark class="a">Tribunal Supremo</mark>:<br><mark class="d"><b>no cabe</b></mark></div></div>
+<div class="cen" style="margin-top:6px">Cabe <mark class="d"><b>CONDENA EN COSTAS</b></mark> a las partes <mark class="y">por notoria temeridad</mark></div>
+<div class="nota" style="margin-top:4px">* Solo recurrible en casación.</div>
+</div></div></div><h2>TÍTULO II · De la querella</h2><div class="art of"><h3>Artículo 270 <span class="b of">EXOF</span> <span class="b ex">✱</span> <span class="b r">R16</span></h3><p><span class="b r">R16</span> <mark class="y">Todos los ciudadanos</mark> <mark class="d">españoles,</mark> hayan sido o <mark class="y">no ofendidos por el delito, pueden querellarse, ejercitando la acción popular</mark> establecida en el artículo 101 de esta Ley. </p><p><mark class="y">También pueden</mark> querellarse los <mark class="a">extranjeros</mark> <mark class="y"><mark class="k">por</mark> los delitos cometidos contra sus</mark> <mark class="a">personas</mark> <mark class="y">o bienes</mark> o <mark class="y">las</mark> <mark class="a"><mark class="k">personas</mark></mark> <mark class="y"><mark class="k">o</mark> bienes de sus representados,</mark> previo cumplimiento de lo dispuesto en el artículo 280, si no estuvieren comprendidos en el último párrafo del 281. </p></div>
+<div class="vis-wrap"><div class="esq"><div class="ban">ARTÍCULO 281 · EXENTOS DE FIANZA Y DENUNCIA / QUERELLA<small>arts. 259 a 281</small></div><div class="cuerpo">
+  <div class="caja ">Quedan <mark class="d">exentos</mark> de cumplir lo dispuesto en el artículo anterior <span class="man">fianza</span>:<ul style="list-style:none;padding-left:10px"><li>1.º El <mark class="a">ofendido</mark> y sus <mark class="a">herederos o representantes legales</mark>.</li><li>2.º En los delitos de <mark class="d">asesinato u homicidio</mark>, el <mark class="a">cónyuge</mark> del difunto o persona vinculada a él por análoga relación de afectividad, los <mark class="a">ascendientes y descendientes</mark> y sus parientes colaterales <mark class="p">hasta el segundo grado</mark> inclusive, los herederos de la víctima y los <mark class="a">padres, madres e hijos</mark> del delincuente.</li><li>3.º Las <mark class="a">asociaciones y personas jurídicas</mark> a las que la ley reconoce legitimación para defender los derechos de las víctimas, siempre que el ejercicio de la acción penal hubiera sido <mark class="y">expresamente autorizado por la propia víctima</mark>.</li></ul><span class="b r">R18</span> La exención de fianza <mark class="k">no es aplicable</mark> a los <mark class="a">extranjeros</mark> si no les correspondiere en virtud de tratados internacionales o por el principio de reciprocidad.</div>
+  <div class="tab2"><div class="th">DENUNCIA</div><div class="th">QUERELLA</div><div class="td">Puede formularse ante <mark class="a">cualquier Autoridad judicial</mark>, funcionario, Ministerio Fiscal o policía.</div><div class="td">Sólo cabe interponerla ante el <mark class="a">órgano jurisdiccional competente</mark>.</div><div class="td">Es un <mark class="d">deber</mark>, una obligación impuesta por el Estado.</div><div class="td">Es un <mark class="d">derecho</mark>.</div><div class="td">Puede formularse <mark class="y">oralmente</mark>, por escrito o mediante mandatario con poder especial.</div><div class="td">Se debe formular <mark class="y">siempre por escrito</mark>.</div><div class="td"><mark class="k">No</mark> exige constitución de <mark class="d">fianza</mark>.</div><div class="td">Requiere constitución de <mark class="d">fianza</mark> como presupuesto para ser admitida.</div><div class="td">Implica una participación de <mark class="d">conocimiento</mark>.</div><div class="td">Constituye una <mark class="d">declaración de voluntad</mark>.</div><div class="td">El denunciante <mark class="k">no</mark> viene obligado a probar los hechos.</div><div class="td">El querellante <mark class="k">viene obligado</mark> a probar los hechos.</div><div class="td">Una vez presentada, <mark class="k">no</mark> requiere ningún otro acto del denunciante.</div><div class="td">Exige <mark class="y">actos posteriores</mark> del querellante que, de no llevarlos a cabo, suponen el <mark class="d">abandono del procedimiento</mark>.</div><div class="td">El denunciante <mark class="k">no</mark> tiene la consideración de <mark class="d">parte</mark> en el proceso.</div><div class="td">El querellante <mark class="d">es parte</mark> en el proceso.</div></div></div></div></div><h2>CAPÍTULO III · De la identidad del delincuente y de sus circunstancias personales</h2><div class="vis-wrap"><div class="esq"><div class="ban">RECURSOS CONTRA AUTOS DE PROCESAMIENTO<small>art. 384</small></div><div class="cuerpo">
+  <div class="caja cen">Contra autos que dicten los <mark class="a">Jueces de Instrucción</mark>. <mark class="d"><b>DECRETANDO</b></mark> el procesamiento:</div>
+  <div class="g2s" style="align-items:start">
+   <div><div class="caja "><mark class="d">1º Recurso de reforma</mark>: dentro de los <mark class="p">3 días</mark> siguientes de haber sido notificada la resolución</div><div class="fl">▼ y contra el auto denegando la reforma</div><div class="caja "><mark class="d">2º Recurso de apelación</mark>: dentro de los <mark class="p">5 días</mark> siguientes de haber sido notificada la resolución denegando el recurso</div></div>
+   <div><div class="caja ">También se pueden presentar los recursos <mark class="y">de forma conjunta</mark>:<br><mark class="d">Recurso de reforma</mark>: dentro de los <mark class="p">3 días</mark> siguientes de haber sido notificada la resolución<div class="cen"><b>+</b></div><mark class="d">Recurso de apelación</mark> (de forma <mark class="y">subsidiaria</mark>)</div></div>
+  </div>
+  <div class="caja cen">Contra autos que dicten los <mark class="a">Jueces de Instrucción</mark>. <mark class="d"><b>DENEGANDO</b></mark> el procesamiento:<br><mark class="y">Solo podrá recurrir quien haya solicitado el procesamiento</mark></div>
+  <div class="g2s" style="align-items:start"><div><div class="caja "><mark class="d">1º Recurso de reforma</mark>: dentro de los <mark class="p">3 días</mark> siguientes de haber sido notificada la resolución</div><div class="fl">▼ y contra el auto denegando la reforma</div></div>
+   <div><div class="caja "><mark class="d">2º <mark class="k">NO CABE RECURSO DE APELACIÓN</mark></mark> ni ningún otro recurso<br><span class="nota">*Pero podrá reproducirse ante la <mark class="a">Audiencia</mark> correspondiente la petición de procesamiento formulada por la parte a quien le haya sido denegada*</span></div></div></div></div></div></div><h2>CAPÍTULO II · De la detención</h2><div class="vis-wrap"><div class="esq"><div class="ban">LA DETENCIÓN: SUPUESTOS Y PLAZOS<small>arts. 490, 492, 496, 497 y 500</small></div><div class="cuerpo">
+  <div class="caja "><b>Norma del art. 497 (Norma General)</b><br>Aplicable a los siguientes casos del artículo 490 <span class="man">Cualquiera</span>:<ul style="list-style:none;padding-left:10px"><li>1.º Al que <mark class="y">intentare cometer un delito</mark>, <mark class="p">en el momento</mark> de ir a cometerlo.</li><li>2.º Al delincuente, <mark class="d">«in fraganti»</mark>.</li><li>6.º Al que se <mark class="d">fugare</mark> estando detenido o preso por causa pendiente.</li><li>7.º Al <mark class="a">procesado o condenado</mark> que estuviere en <mark class="d">rebeldía</mark>.</li></ul>Y a los siguientes casos del artículo 492:<ul style="list-style:none;padding-left:10px"><li>2.º Al que estuviere <mark class="a">procesado</mark> por delito que tenga señalada en el Código pena <mark class="d">superior a la de prisión correccional</mark>.</li><li>3.º Al <mark class="a">procesado</mark> por delito a que esté señalada pena <mark class="d">inferior</mark>, si sus antecedentes o las circunstancias del hecho hicieren presumir que <mark class="k">no comparecerá</mark> cuando fuere llamado por la Autoridad judicial.</li><li>4.º Al que estuviere en el caso del número anterior, aunque todavía no se hallase procesado, con tal que concurran las dos circunstancias siguientes: 1.º que la Autoridad o agente tenga motivos <mark class="d">racionalmente bastantes</mark> para creer en la existencia de un hecho que presente los caracteres de <mark class="d">delito</mark>; 2.º que los tenga también bastantes para creer que la persona a quien intente detener <mark class="d">tuvo participación</mark> en él.</li></ul></div>
+  <div class="lt"><div class="lt-i ">Momento de la <b>detención</b></div><div class="lt-i fl2">art. 496 LECrim<br><mark class="p">24 horas</mark> siguientes</div><div class="lt-i ">Puesta a <b>disposición judicial</b></div><div class="lt-i fl2">art. 497 LECrim<br><mark class="p">72 horas</mark> siguientes</div><div class="lt-i fin"><b>Libertad</b><br><b>Prisión preventiva</b></div></div>
+  <div class="cen" style="margin:4px 0 10px"><b>Total: <mark class="p">24 + 72 = 96 horas</mark></b> (plazos máximos)</div>
+  <div class="caja "><b>Norma del art. 500</b> · aplicable a los siguientes casos del artículo 490:<ul style="list-style:none;padding-left:10px"><li>3.º Al que se <mark class="d">fugare del establecimiento</mark> penal en que se halle extinguiendo <mark class="d">condena</mark>.</li><li>4.º Al que se <mark class="d">fugare de la cárcel</mark> en que estuviere esperando su traslación al establecimiento penal o lugar en que deba cumplir la condena que se le hubiese impuesto por sentencia firme.</li><li>5.º Al que se <mark class="d">fugare al ser conducido</mark> al establecimiento o lugar mencionado en el número anterior.</li><li>7.º Al <mark class="a">procesado o condenado</mark> que estuviere en <mark class="d">rebeldía</mark>.</li></ul></div>
+  <div class="lt"><div class="lt-i ">Momento de la <b>detención</b></div><div class="lt-i fl2"><b>ENTREGA <mark class="p">INMEDIATA</mark></b></div><div class="lt-i fin"><b>Lugar de cumplimiento</b> de la condena</div></div></div></div></div><h2>CAPÍTULO IV · tratamiento de los detenidos y presos</h2><div class="vis-wrap"><div class="esq"><div class="ban">NORMA DEL ARTÍCULO 520 BIS<small>detención de presuntos partícipes de delitos del art. 384 bis</small></div><div class="cuerpo">
+  <div class="caja ">Aplicable a <mark class="y">toda persona detenida</mark> como presunto partícipe de alguno de los delitos a que se refiere el artículo 384 bis: (persona integrada o relacionada con <mark class="d">bandas armadas</mark> o individuos <mark class="d">terroristas o rebeldes</mark>)</div>
+  <div class="lt"><div class="lt-i ">Momento de la <b>detención</b></div><div class="lt-i fl2"><mark class="p">72 horas</mark><br>siguientes</div><div class="lt-i ">Inicio del plazo de posible <b>prórroga</b></div><div class="lt-i fl2"><mark class="p">48 horas</mark><br>siguientes</div><div class="lt-i ">Puesto a <b>disposición judicial</b></div><div class="lt-i fl2"><mark class="p">72 horas</mark><br>siguientes</div><div class="lt-i fin"><b>Libertad</b><br><b>Prisión preventiva</b></div></div>
+  <div class="cen"><div class="caja cen"><mark class="p"><b>48 horas</b></mark>: límite para <mark class="d">solicitar la prórroga</mark> de la detención</div></div></div></div></div><h2>CAPÍTULO III · De la detención y apertura de la correspondencia escrita y telegráfica</h2><div class="vis-wrap"><div class="esq"><div class="ban">ARTÍCULO 579 · DETENCIÓN DE LA CORRESPONDENCIA<small>escrita y telegráfica</small></div><div class="cuerpo">
+  <div class="g2s" style="align-items:start">
+   <div><div class="caja "><b>579.1</b> · El <mark class="a">juez</mark> <mark class="c">podrá acordar</mark> la detención de la correspondencia <mark class="y">privada, postal y telegráfica</mark>, incluidos faxes, burofaxes y giros, si hubiera indicios, siempre que la investigación tenga por objeto alguno de los siguientes delitos:</div>
+   <div class="caja ">1.º Delitos <mark class="d">dolosos</mark> castigados con pena con límite máximo de, <mark class="p">al menos, tres años</mark> de prisión <span class="man">≥ 3</span><br>2.º Delitos cometidos en el seno de un <mark class="d">grupo u organización criminal</mark><br>3.º Delitos de <mark class="d">terrorismo</mark></div></div>
+   <div><div class="caja "><b>579.2</b> · Resolución motivada, por un plazo de hasta <mark class="p">tres meses</mark>, <mark class="c">prorrogable</mark> por iguales o inferiores períodos hasta un máximo de <mark class="p">dieciocho meses</mark>. <span class="man">M.I. o S.E.S.</span></div>
+   <div class="caja "><b>579.3 · URGENCIA</b> (bandas armadas o terrorismo): la ordena el <mark class="a">Ministro del Interior</mark> o, en su defecto, el <mark class="a">Secretario de Estado de Seguridad</mark>. <mark class="c">Comunicará inmediatamente</mark> al juez, en todo caso dentro de <mark class="p">24 horas</mark>. El <mark class="a">juez</mark> <mark class="c">revocará o confirmará</mark> en un plazo máximo de <mark class="p">72 horas</mark> desde que fue ordenada.</div></div>
+  </div>
+  <div class="caja "><b>579.4 · No se requerirá autorización judicial</b> en:<br>a) <mark class="d">Envíos postales</mark> que por sus características externas no sean usualmente utilizados para contener correspondencia individual sino para el transporte y tráfico de <mark class="d">mercancías</mark> (en cuyo exterior se haga constar su contenido).<br>b) <mark class="d">Formato legal de comunicación abierta</mark>: declaración externa de contenido o indicación expresa de que se autoriza su inspección.<br>c) Inspección conforme a la <mark class="d">normativa aduanera</mark> o a las <mark class="d">normas postales</mark>.</div></div></div></div><h2>CAPÍTULO VI · dispositivos electrónicos</h2><div class="vis-wrap"><div class="esq"><div class="ban">DURACIÓN DE LA MEDIDA<small>cuadro manuscrito del temario · arts. 588 ter g, 579.2, 588 quinquies c, 588 septies</small></div><div class="cuerpo"><div class="tab2"><div class="th">MEDIDA</div><div class="th">PLAZOS</div><div class="td"><b>1 · <mark class="d">TELEFÓNICAS Y TELEMÁTICAS</mark></b></div><div class="td">Será de <mark class="p">3 meses</mark> · <mark class="c">prorrogable</mark> por periodos de igual duración · máximo <mark class="p">18 meses</mark></div><div class="td"><b>2 · <mark class="d">CORRESPONDENCIA ESCRITA</mark></b></div><div class="td">Hasta <mark class="p">3 meses</mark> · prorrogable por iguales o inferiores periodos · máximo <mark class="p">18 meses</mark></div><div class="td"><b>3 · <mark class="d">MEDIOS DE SEGUIMIENTO Y LOCALIZACIÓN</mark></b></div><div class="td">Máximo de <mark class="p">3 meses</mark> · <mark class="k">excepcionalmente</mark>: prórrogas por el mismo o inferior plazo · máximo <mark class="p">18 meses</mark></div><div class="td"><b>4 · <mark class="d">REGISTRO REMOTO DE EQUIPOS INFORMÁTICOS</mark></b></div><div class="td">Máximo de <mark class="p">1 mes</mark> · prorrogable por iguales periodos · máximo <mark class="p">3 meses</mark></div><div class="td"><b>ORDEN DE CONSERVACIÓN DE DATOS</b> (588 octies) · <mark class="a">M. Fiscal o P.J.</mark></div><div class="td">Podrá requerir a cualquier persona la conservación y protección de datos · máximo <mark class="p">90 días</mark> · prorrogable <mark class="p">1 vez</mark> hasta: el <mark class="a">Juez</mark> autoriza la cesión o se cumplen <mark class="p">180 días</mark></div></div></div></div></div><h2>CAPÍTULO IX · Registros remotos sobre equipos informáticos</h2><div class="art"><h3>Artículo 588 septies c <span class="b r">R36</span></h3><p><span class="b r">R36</span> <mark class="y">La medida</mark> <mark class="c">tendrá</mark> una duración máxima de un mes, prorrogable por iguales períodos hasta un máximo de tres meses.</p></div>
+<h2>TÍTULO II · Del procedimiento abreviado · CAPÍTULO I · Disposiciones generales</h2><div class="vis-wrap"><div class="esq"><div class="ban">PROCEDIMIENTO ABREVIADO · RECURSOS<small>art. 766</small></div><div class="cuerpo">
+  <div class="g2s" style="align-items:center"><div class="caja ">En el <mark class="d">procedimiento abreviado</mark>, contra los:<br>• Autos del <mark class="a">Juez de Instrucción</mark><br>• Autos del <mark class="a">Juez de lo Penal</mark><br><mark class="y">que no estén exceptuados de recurso</mark></div>
+   <div><div class="caja ">Podrán ejercitarse: <b><mark class="d">RECURSO DE REFORMA</mark></b> / <b><mark class="d">RECURSO DE APELACIÓN</mark></b></div><div class="caja "><mark class="k">No suspenderán</mark> el curso del procedimiento (salvo que lo disponga la ley).<br>La apelación se podrá interponer <mark class="y">subsidiariamente</mark> con la reforma o <mark class="y">por separado</mark>.<br><mark class="k">En ningún caso</mark> será necesario interponer previamente la reforma (la reforma es <mark class="d">potestativa</mark>).</div></div></div></div></div></div><div class="vis-wrap"><div class="esq"><div class="ban">PROCEDIMIENTOS · RECURSO DE APELACIÓN<small>art. 766.3, 4 y 5</small></div><div class="cuerpo">
+  <div class="g3">
+   <div><div class="hd">Cuando se interponga <u>por separado</u></div>
+    <div class="caja "><b>1º <mark class="d">PRESENTACIÓN</mark></b> de apelación: dentro de los <mark class="p">5 días</mark> siguientes a la notificación del auto recurrido o del auto resolutorio del recurso de reforma. Mediante <mark class="y">escrito</mark> donde se expondrán motivos, se señalarán los particulares que hayan de testimoniarse y se acompañarán documentos justificativos.</div><div class="fl">▼</div>
+    <div class="caja "><b>2º <mark class="d">ADMITIDO</mark></b> a trámite: el <mark class="a">Secretario Judicial</mark> da traslado a las demás partes personadas, que podrán por un plazo de <mark class="p">5 días</mark> formular alegaciones por escrito, señalar otros particulares y presentar documentos. Finalizado el plazo, en los <mark class="p">2 días</mark> siguientes se remite <mark class="d">testimonio</mark> a la <mark class="a">Audiencia</mark> respectiva.</div></div>
+   <div><div class="hd">Cuando se interponga <u>subsidiariamente</u> con el de reforma</div>
+    <div class="caja ">Recurso de reforma resulta <mark class="y">total o parcialmente desestimatorio</mark></div><div class="fl">▼</div>
+    <div class="caja "><b>1º</b> El <mark class="a">Secretario Judicial</mark> dará traslado al recurrente para que, en un plazo de <mark class="p">5 días</mark>: formule alegaciones y pueda presentar documentos justificativos.</div><div class="fl">▼</div>
+    <div class="caja "><b>2º</b> Se dará traslado a las demás partes personadas.</div></div>
+   <div><div class="hd">Cuando se interponga contra autos que acuerden:</div>
+    <div class="caja "><mark class="d">Prisión provisional</mark> de alguno de los investigados o encausados: se <mark class="c">podrá solicitar</mark>, en el escrito de interposición, la celebración de <mark class="d">vista</mark>; la acordará la Audiencia respectiva.</div>
+    <div class="caja "><mark class="d">Otras medidas cautelares</mark>: la Audiencia <mark class="c">podrá acordar</mark> la celebración de una vista si lo estima conveniente.</div>
+    <div class="caja ">El <mark class="a">Secretario Judicial</mark> señalará la vista dentro de los <mark class="p">10 días</mark> siguientes a la recepción de la causa en la Audiencia.</div></div>
+  </div><div class="fl">▼</div>
+  <div class="caja "><b>3º <mark class="d">RESOLUCIÓN</mark></b> por la <mark class="a">Audiencia respectiva</mark>: dentro de los <mark class="p">5 días</mark> siguientes. <mark class="k">Excepcionalmente</mark>, podrá reclamar las actuaciones para su consulta (siempre que no se obstaculice la tramitación de aquéllas), debiendo devolverse al Juez en el plazo máximo de <mark class="p">3 días</mark>.</div></div></div></div><h2>RECUERDA DEL TEMARIO — fichas R1 a R38 (pregunta → respuesta), tal como vienen en las últimas páginas de tu temario</h2><div class="art"><h3>RECUERDA del temario · Ley de Enjuiciamiento Criminal (R1 a R10) <span class="b r">R1</span> <span class="b r">R2</span> <span class="b r">R3</span> <span class="b r">R4</span> <span class="b r">R5</span> <span class="b r">R6</span> <span class="b r">R7</span> <span class="b r">R8</span> <span class="b r">R9</span> <span class="b r">R10</span></h3><p><span class="b r">R1</span> <b>R1</b> · <i>Ley de Enjuiciamiento Criminal.</i> La jurisdicción criminal es siempre: <b>→</b> improrrogable.</p><p><span class="b r">R2</span> <b>R2</b> · <i>Ley de Enjuiciamiento Criminal.</i> Corresponderá a la jurisdicción ordinaria el conocimiento de las causas y juicios criminales, con excepción de los casos reservados por las leyes: <b>→</b> al Senado, a los Tribunales de Guerra y Marina y a las Autoridades administrativas o de policía.</p><p><span class="b r">R3</span> <b>R3</b> · <i>Ley de Enjuiciamiento Criminal.</i> No podrá formarse ni promoverse competencias, y ningún Juez, Tribunal o parte podrá promoverlas contra él: <b>→</b> el Tribunal Supremo. </p><p><span class="b r">R4</span> <b>R4</b> · <i>Ley de Enjuiciamiento Criminal.</i> Se propondrá ante el Juez o Tribunal que se repute competente: <b>→</b> la inhibitoria.</p><p><span class="b r">R5</span> <b>R5</b> · <i>Ley de Enjuiciamiento Criminal.</i> Se propondrá ante el Juez o Tribunal que se repute incompetente: <b>→</b> la declinatoria.</p><p><span class="b r">R6</span> <b>R6</b> · <i>Ley de Enjuiciamiento Criminal.</i> Contra el auto en que se deniegue el requerimiento de inhibición, sólo habrá lugar al: <b>→</b> recurso de casación.</p><p><span class="b r">R7</span> <b>R7</b> · <i>Ley de Enjuiciamiento Criminal.</i> Cuando la cuestión de competencia empeñada entre dos o más Jueces o Tribunales fuere negativa por rehusar todos entender en la causa, la decidirá: <b>→</b> el Juez o Tribunal superior y, en su caso, el Supremo, siguiendo para ello los mismos trámites prescritos para las demás competencias.</p><p><span class="b r">R8</span> <b>R8</b> · <i>Ley de Enjuiciamiento Criminal.</i> De todo delito o falta: <b>→</b> nace acción penal para el castigo del culpable.</p><p><span class="b r">R9</span> <b>R9</b> · <i>Ley de Enjuiciamiento Criminal.</i> De todo delito o falta: <b>→</b> puede nacer también acción civil para la restitución de la cosa, la reparación del daño y la indemnización de perjuicios causados por el hecho punible.</p><p><span class="b r">R10</span> <b>R10</b> · <i>Ley de Enjuiciamiento Criminal.</i> La acción penal es: <b>→</b> pública.</p></div>
+<div class="art"><h3>RECUERDA del temario · Ley de Enjuiciamiento Criminal (R11 a R20) <span class="b r">R11</span> <span class="b r">R12</span> <span class="b r">R13</span> <span class="b r">R14</span> <span class="b r">R15</span> <span class="b r">R16</span> <span class="b r">R17</span> <span class="b r">R18</span> <span class="b r">R19</span> <span class="b r">R20</span></h3><p><span class="b r">R11</span> <b>R11</b> · <i>Ley de Enjuiciamiento Criminal.</i> La ausencia de denuncia no impedirá: <b>→</b> la práctica de diligencias a prevención.</p><p><span class="b r">R12</span> <b>R12</b> · <i>Ley de Enjuiciamiento Criminal.</i> Ejercitada sólo la acción penal, se entenderá utilizada: <b>→</b> también la civil, a no ser que el dañado o perjudicado la renunciase o la reservase expresamente para ejercitarla después de terminado el juicio criminal, si a ello hubiere lugar.</p><p><span class="b r">R13</span> <b>R13</b> · <i>Ley de Enjuiciamiento Criminal.</i> La acción penal se extingue por la muerte del culpable; pero en este caso: <b>→</b> subsiste la civil contra sus herederos y causahabientes, que sólo podrá ejercitarse ante la jurisdicción y por la vía de lo civil.</p><p><span class="b r">R14</span> <b>R14</b> · <i>Ley de Enjuiciamiento Criminal.</i> La extinción de la acción civil: <b>→</b> tampoco lleva consigo la de la penal que nazca del mismo delito o falta.</p><p><span class="b r">R15</span> <b>R15</b> · <i>Ley de Enjuiciamiento Criminal.</i> Las denuncias podrán hacerse: <b>→</b> por escrito o de palabra, personalmente o por medio de mandatario con poder especial.</p><p><span class="b r">R16</span> <b>R16</b> · <i>Ley de Enjuiciamiento Criminal.</i> Todos los ciudadanos españoles, hayan sido o no ofendidos por el delito, pueden querellarse, ejercitando: <b>→</b> la acción popular.</p><p><span class="b r">R17</span> <b>R17</b> · <i>Ley de Enjuiciamiento Criminal.</i> La querella: <b>→</b> se presentará siempre por medio de procurador con poder bastante y suscrita por letrado.</p><p><span class="b r">R18</span> <b>R18</b> · <i>Ley de Enjuiciamiento Criminal.</i> La exención de fianza no es aplicable a los extranjeros si no les correspondiere en virtud de: <b>→</b> tratados internacionales o por el principio de reciprocidad.</p><p><span class="b r">R19</span> <b>R19</b> · <i>Ley de Enjuiciamiento Criminal.</i> Ningún funcionario de la Policía Judicial podrá ser obligado a actuar como: <b>→</b> agente encubierto.</p><p><span class="b r">R20</span> <b>R20</b> · <i>Ley de Enjuiciamiento Criminal.</i> El atestado será firmado: <b>→</b> por el que lo haya extendido, y si usare sello lo estampará con su rúbrica en todas las hojas.</p></div>
+</div>
+<p class="pie">Esquema clave del Tema 20: marcas EXOF, fichas R, preguntas oficiales y cuadros, con tu subrayado.</p>
+</div><script>// Editor de colores para los repasos (repaso-tN-borrador.html). Se incrusta en el HTML (lo hace repaso-hibrido-tN.js).
+// Seleccionas texto (o tocas una palabra ya coloreada) y sale una barra con los 6 colores del Método Prefortia y «quitar».
+// Funciona en los párrafos y en los esquemas. Se guarda en este navegador (localStorage); si el repaso cambia de contenido, se descarta y se guarda copia aparte.
+(function () {
+  var RC = document.getElementById('rc'); if (!RC) return;
+  var KEY = 'repaso-edit:' + (RC.getAttribute('data-id') || 't'), VER = RC.getAttribute('data-ver') || '0';
+  var pila = [], rangoAct = null;
+  function guarda() { try { localStorage.setItem(KEY, JSON.stringify({v: VER, h: RC.innerHTML})); estado('Guardado en este navegador'); } catch (e) { estado('No se pudo guardar aquí'); } }
+  function estado(t) { var s = document.getElementById('ed-st'); if (s) { s.textContent = t; clearTimeout(estado.t); estado.t = setTimeout(function () { s.textContent = ''; }, 2500); } }
+  try {
+    var g = JSON.parse(localStorage.getItem(KEY) || 'null');
+    if (g && g.h) { if (g.v === VER) RC.innerHTML = g.h; else { localStorage.setItem(KEY + ':anterior', JSON.stringify(g)); localStorage.removeItem(KEY); } }
+  } catch (e) {}
+
+  var COLORES = [['y', 'Amarillo · contenido general'], ['d', 'Naranja · palabra destacable'], ['a', 'Verde · autoridad / órgano'], ['p', 'Azul · plazo / cifra'], ['c', 'Morado · acción'], ['k', 'Rojo · palabra clave']];
+  var bar = document.createElement('div'); bar.id = 'ed-bar'; bar.style.display = 'none';
+  bar.innerHTML = COLORES.map(function (c) { return '<button type="button" data-c="' + c[0] + '" class="ed-b ed-' + c[0] + '" title="' + c[1] + '">' + (c[0] === 'k' ? '<u>a</u>' : 'A') + '</button>'; }).join('') + '<button type="button" data-c="U" class="ed-b ed-u" title="Poner en MAYÚSCULAS (otra vez: volver a como estaba)">AA</button><button type="button" data-c="x" class="ed-b ed-x" title="Quitar el color">✖</button>';
+  document.body.appendChild(bar);
+  var top = document.querySelector('.ed-top');
+  if (top) {
+    top.querySelector('#ed-undo').onclick = function () { if (!pila.length) return estado('Nada que deshacer'); RC.innerHTML = pila.pop(); guarda(); };
+    top.querySelector('#ed-reset').onclick = function () { if (confirm('¿Volver al repaso original y perder tus cambios de color?')) { try { localStorage.removeItem(KEY); } catch (e) {} location.reload(); } };
+  }
+
+  function nuevo(cls, txt) { var m = document.createElement('mark'); m.className = cls; m.textContent = txt; return m; }
+  function clon(m, txt) { var c = m.cloneNode(false); c.textContent = txt; return c; }
+  function trabaja(n, ini, fin, cls) {
+    var txt = n.nodeValue, antes = txt.slice(0, ini), medio = txt.slice(ini, fin), desp = txt.slice(fin);
+    if (!medio) return;
+    var m = n.parentElement && n.parentElement.closest('mark, u.m-clave');
+    var padre;
+    if (m && RC.contains(m) && m.childNodes.length === 1 && m.firstChild === n) {
+      padre = m.parentNode;
+      var piezas = [];
+      if (antes) piezas.push(clon(m, antes));
+      piezas.push(cls === 'x' ? document.createTextNode(medio) : nuevo(cls, medio));
+      if (desp) piezas.push(clon(m, desp));
+      piezas.forEach(function (p) { padre.insertBefore(p, m); }); padre.removeChild(m);
+    } else if (m && RC.contains(m)) {   // marca con varios hijos: se cambia entera
+      if (cls === 'x') { padre = m.parentNode; while (m.firstChild) padre.insertBefore(m.firstChild, m); padre.removeChild(m); }
+      else if (m.tagName === 'U') { var nm = nuevo(cls, ''); while (m.firstChild) nm.appendChild(m.firstChild); m.parentNode.replaceChild(nm, m); }
+      else m.className = cls;
+    } else {
+      if (cls === 'x') return;
+      padre = n.parentNode;
+      if (antes) padre.insertBefore(document.createTextNode(antes), n);
+      padre.insertBefore(nuevo(cls, medio), n);
+      if (desp) padre.insertBefore(document.createTextNode(desp), n);
+      padre.removeChild(n);
+    }
+  }
+  // MAYÚSCULAS: no cambia el texto, solo lo envuelve en <span class="mayus"> (text-transform); pulsar otra vez lo devuelve a como estaba
+  function mayusculas(lista) {
+    var todo = lista.every(function (x) { return x[0].parentElement && x[0].parentElement.closest('.mayus'); });
+    lista.forEach(function (x) {
+      var n = x[0], ini = x[1], fin = x[2], txt = n.nodeValue, antes = txt.slice(0, ini), medio = txt.slice(ini, fin), desp = txt.slice(fin), padre = n.parentNode;
+      var sp = n.parentElement && n.parentElement.closest('.mayus');
+      if (!todo) {
+        if (sp) return;   // ya estaba en mayúsculas
+        if (antes) padre.insertBefore(document.createTextNode(antes), n);
+        var s = document.createElement('span'); s.className = 'mayus'; s.textContent = medio; padre.insertBefore(s, n);
+        if (desp) padre.insertBefore(document.createTextNode(desp), n);
+        padre.removeChild(n);
+      } else if (sp && RC.contains(sp)) {
+        if (sp.childNodes.length === 1 && sp.firstChild === n) {   // span simple: se parte en antes / medio (normal) / después
+          var pp = sp.parentNode;
+          if (antes) { var a = document.createElement('span'); a.className = 'mayus'; a.textContent = antes; pp.insertBefore(a, sp); }
+          pp.insertBefore(document.createTextNode(medio), sp);
+          if (desp) { var d = document.createElement('span'); d.className = 'mayus'; d.textContent = desp; pp.insertBefore(d, sp); }
+          pp.removeChild(sp);
+        } else { var q = sp.parentNode; while (sp.firstChild) q.insertBefore(sp.firstChild, sp); q.removeChild(sp); }
+      }
+    });
+  }
+  function aplica(cls) {
+    var r = rangoAct; if (!r) return;
+    var raiz = r.commonAncestorContainer; if (raiz.nodeType === 3) raiz = raiz.parentNode;
+    var w = document.createTreeWalker(raiz, NodeFilter.SHOW_TEXT, null), lista = [], n;
+    while ((n = w.nextNode())) {
+      if (!RC.contains(n) || !r.intersectsNode(n)) continue;
+      var ini = n === r.startContainer ? r.startOffset : 0, fin = n === r.endContainer ? r.endOffset : n.nodeValue.length;
+      if (fin > ini) lista.push([n, ini, fin]);
+    }
+    while (lista.length && !/\S/.test(lista[0][0].nodeValue.slice(lista[0][1], lista[0][2]))) lista.shift();
+    while (lista.length && !/\S/.test(lista[lista.length - 1][0].nodeValue.slice(lista[lista.length - 1][1], lista[lista.length - 1][2]))) lista.pop();
+    if (!lista.length) return;
+    pila.push(RC.innerHTML); if (pila.length > 40) pila.shift();
+    if (cls === 'U') mayusculas(lista);
+    else lista.forEach(function (x) { trabaja(x[0], x[1], x[2], cls); });
+    RC.normalize();
+    var s = window.getSelection(); if (s) s.removeAllRanges();
+    bar.style.display = 'none'; rangoAct = null; guarda();
+  }
+  function muestra(r) {
+    rangoAct = r.cloneRange();
+    var b = r.getBoundingClientRect(), sx = window.pageXOffset, sy = window.pageYOffset;
+    bar.style.display = 'flex';
+    var ancho = bar.offsetWidth, alto = bar.offsetHeight, dw = document.documentElement.clientWidth;
+    // debajo del texto seleccionado: arriba suele salir el minimenú propio del navegador (Edge: copiar, buscar, Copilot) y se pisaría
+    var x = Math.max(4, Math.min(b.left + sx, sx + dw - ancho - 4)), y = b.bottom + sy + 10;
+    if (b.bottom + alto + 24 > window.innerHeight && b.top - alto - 12 > 0) y = b.top + sy - alto - 10;
+    bar.style.left = x + 'px'; bar.style.top = y + 'px';
+  }
+  function revisa(ev) {
+    if (ev && bar.contains(ev.target)) return;
+    setTimeout(function () {
+      var s = window.getSelection();
+      if (s && s.rangeCount && !s.isCollapsed) { var r = s.getRangeAt(0); if (RC.contains(r.commonAncestorContainer) && /\S/.test(r.toString())) return muestra(r); }
+      var t = ev && ev.target && ev.target.closest && ev.target.closest('mark, u.m-clave');   // tocar una palabra coloreada: cambiarle el color
+      if (t && RC.contains(t) && (!s || s.isCollapsed)) { var rr = document.createRange(); rr.selectNodeContents(t); return muestra(rr); }
+      bar.style.display = 'none'; rangoAct = null;
+    }, 20);
+  }
+  document.addEventListener('mouseup', revisa); document.addEventListener('touchend', revisa); document.addEventListener('keyup', function (e) { if (e.key === 'Shift' || /Arrow/.test(e.key)) revisa(e); });
+  bar.addEventListener('mousedown', function (e) { e.preventDefault(); });
+  bar.addEventListener('touchstart', function (e) { e.preventDefault(); }, {passive: false});
+  function pulsa(e) { var b = e.target.closest('[data-c]'); if (b) aplica(b.getAttribute('data-c')); }
+  bar.addEventListener('click', pulsa);
+  bar.addEventListener('touchend', function (e) { e.preventDefault(); pulsa(e); }, {passive: false});
+  window.addEventListener('scroll', function () { /* la barra va anclada al texto; no hace falta moverla */ });
+})();
+</script><script>(function(){var R=document.documentElement,emb=window.parent!==window;
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){}return null}
+var f=parseFloat(ls('repaso-fs'));if(f)R.style.setProperty('--fs',f+'px');
+function tam(d){var c=parseFloat(getComputedStyle(document.body).fontSize);var n=Math.max(12,Math.min(28,Math.round(c+d)));R.style.setProperty('--fs',n+'px');ls('repaso-fs',n)}
+function pon(t){R.setAttribute('data-theme',t);var b=document.getElementById('ed-tema');if(b)b.textContent=t==='dark'?'☀️ Claro':'🌙 Noche'}
+pon(emb?'light':(ls('repaso-tema')||'light'));
+document.addEventListener('DOMContentLoaded',function(){var m=document.getElementById('ed-fm'),p=document.getElementById('ed-fp'),t=document.getElementById('ed-tema');
+if(m)m.onclick=function(){tam(-1)};if(p)p.onclick=function(){tam(1)};
+if(t){if(emb)t.style.display='none';else t.onclick=function(){var n=R.getAttribute('data-theme')==='dark'?'light':'dark';pon(n);ls('repaso-tema',n)};pon(R.getAttribute('data-theme'))}});
+window.addEventListener('message',function(e){var d=e.data;if(d&&d.repasoTema)pon(d.repasoTema)});
+if(emb){try{parent.postMessage({repasoListo:1},'*')}catch(x){}}
+})();</script><script>if(location.hash==="#imprimir"){window.addEventListener("load",function(){setTimeout(function(){window.print()},300)})}</script>
+<script>(function(){if(window.parent===window)return;var u=0;function e(){var h=document.body.offsetHeight;if(h!==u){u=h;try{parent.postMessage({repasoAlto:h},"*")}catch(x){}}}document.documentElement.style.overflow="hidden";window.addEventListener("load",e);window.addEventListener("resize",e);if(window.ResizeObserver)new ResizeObserver(e).observe(document.body);setInterval(e,800);e()})()</script>
+</body></html>

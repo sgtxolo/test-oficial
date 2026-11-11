@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Esquema clave Tema 20 · propuesta</title>
+<style>
+:root{--tx:#1b1b1b;--fondo:#fff;--gris:#666;--oro:#c9a227;--lin:#3b4a57;--caja:#fff;--fondo2:#faf6e6;
+--y:#f7e79a;--d:#f7c9a8;--a:#bfe3c4;--p:#a9d3ea;--c:#c9b7e0}
+@media (prefers-color-scheme:dark){:root{--tx:#e8e8e8;--fondo:#16181c;--gris:#9aa0a6;--lin:#8aa0b2;--caja:#1e2227;--fondo2:#262a1c;--y:#5a4a12;--d:#6b3d1f;--a:#265331;--p:#1f4a63;--c:#4a3768}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tx);font:14px/1.38 "Segoe UI",system-ui,sans-serif}
+.hoja{max-width:1060px;margin:0 auto;padding:14px}
+h1{font-size:19px;margin:0 0 2px}.sub{color:var(--gris);font-size:12px;margin:0 0 12px}
+mark{color:inherit;padding:0 2px;border-radius:3px;background:var(--y)}
+mark.d{background:var(--d)}mark.a{background:var(--a)}mark.p{background:var(--p)}mark.c{background:var(--c)}mark.y{background:var(--y)}
+mark.k{background:transparent;font-weight:600;text-decoration:underline solid #dc2626;text-decoration-thickness:2px;text-underline-offset:2px;padding:0}
+.esq{margin:0 0 26px;break-inside:avoid;border:1px solid #d9d9d9;border-radius:8px;overflow:hidden}
+.ban{background:var(--oro);color:#fff;text-align:center;padding:7px 10px;font-weight:800;letter-spacing:.02em}
+.ban small{display:block;font-weight:500;font-size:.8em;opacity:.95}
+.cuerpo{padding:12px 12px 10px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g2s{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.caja{border:1.5px solid var(--lin);background:var(--caja);padding:6px 9px;margin:0 0 4px}
+.caja ul{margin:3px 0 0;padding-left:16px}
+.cen{text-align:center}
+.tit{font-weight:800;text-align:center;font-size:.98em;margin:2px 0}
+.pie{background:var(--fondo2);padding:6px 10px;margin:4px 0}
+.fl{text-align:center;color:var(--oro);font-size:17px;line-height:1;margin:2px 0 3px}
+.rama{border-top:2px solid var(--oro);padding-top:14px;position:relative}
+.rama::before{content:"▼";position:absolute;top:-2px;left:50%;transform:translateX(-50%);color:var(--oro);font-size:12px;line-height:1;background:var(--fondo)}
+.bif{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:2px}
+.pill{display:inline-block;padding:1px 9px;border-radius:4px;font-weight:800}
+.hd{background:var(--fondo2);padding:4px 8px;font-weight:800;text-align:center;margin:0 0 6px}
+.nota{font-size:.82em;color:var(--gris)}
+.x{color:#1f6f6a;font-weight:900;font-size:1.2em}
+.ex{display:inline-block;border:1.5px solid #1d4ed8;color:#1d4ed8;border-radius:10px;padding:0 6px;font-size:.78em;font-weight:700;margin-left:4px}
+.man{font-family:"Segoe Print","Bradley Hand",cursive;color:#2d3a9a;font-size:.9em}
+.r{display:inline-block;color:#92400e;border:1.5px solid #92400e;border-radius:9px;padding:0 6px;font-size:.78em;font-weight:700;margin-left:4px}
+.prop{border:1px dashed #9ab;border-radius:8px;padding:8px 12px;font-size:13px;margin:0 0 14px}
+@media (max-width:640px){.g2,.g2s,.bif{grid-template-columns:1fr}}
+@media print{@page{size:A4 landscape;margin:9mm}body{font-size:11pt}.esq{border:0}mark,.ban{-webkit-print-color-adjust:exact;print-color-adjust:exact}.prop{display:none}}
+</style></head><body><div class="hoja">
+<h1>Tema 20 · Esquema clave — PROPUESTA con esquemas fieles al temario</h1>
+<p class="sub">Los cuadros del temario se rehacen con su misma forma (ramas, cajas, flechas, ✖ y notas a boli) y tus colores de fosforito, en vez de convertirlos en listas. Ejemplo con las 3 páginas de cuestiones de competencia (arts. 26 a 44 LECrim).</p>
+<div class="prop">💡 <b>Idea:</b> el esquema clave de cada tema llevaría estos cuadros <b>tal cual están en tu temario</b> (los que tú tienes subrayados o que suelen caer) y, entre ellos, solo los artículos sueltos que pidan las marcas EXOF / R / oficiales. Los textos son los de tus fotos; revísalos si ves algún fallo.</div>
+
+<!-- ============ 1 · COMPETENCIA PROMOVIDA POR LAS PARTES ============ -->
+<div class="esq"><div class="ban">COMPETENCIA PROMOVIDA POR LAS PARTES (ART. 26)</div><div class="cuerpo">
+<div class="g2">
+ <div class="cen"><span class="pill" style="background:var(--fondo2)">Ante el <mark class="a">Juez o tribunal</mark> que se repute…</span></div>
+ <div></div>
+</div>
+<div class="g2" style="margin-top:6px">
+ <div>
+  <div class="tit">INCOMPETENTE</div>
+  <div class="cen nota" style="margin-bottom:4px">El Ministerio Fiscal y las partes promoverán las competencias por:</div>
+  <div class="hd"><mark class="d"><b>DECLINATORIA</b></mark> (ARTS. 32 y ss.)</div>
+  <div class="caja cen">Cuando se proponga declinatoria ante un <mark class="a">Juez municipal</mark> <mark class="c">resolverá</mark> <mark class="p">en término de segundo día</mark> <mark class="y">oyendo previamente</mark> al Fiscal sobre si procede o no acordar la inhibición.</div>
+  <div class="bif">
+   <div class="rama cen"><mark class="y"><b>PROCEDE</b></mark><br><mark class="d">(Se cede la competencia)</mark></div>
+   <div class="rama cen"><mark class="y"><b>NO PROCEDE</b></mark><br><mark class="d"><b>AUTO DENEGATORIO DE INHIBICIÓN</b></mark> **<div class="nota">[Apelable en ambos efectos para ante el Juez de instrucción respectivo]<br>[Contra la resolución del Juzgado procederá el recurso de <mark class="d">casación</mark>]</div></div>
+  </div>
+  <div class="caja cen" style="margin-top:8px"><mark class="y">Las declinatorias se sustanciarán como artículos de previo pronunciamiento.</mark> (ARTS. 666 y ss.)</div>
+ </div>
+ <div>
+  <div class="tit">COMPETENTE</div>
+  <div class="cen nota" style="margin-bottom:4px">[Se excluyen absolutamente durante la sustanciación de la competencia y una vez que ésta se halle terminada]</div>
+  <div class="hd"><mark class="d"><b>INHIBITORIA</b></mark> (ARTS. 27 y ss.) <span class="man">al 31</span></div>
+  <div class="caja cen">El <mark class="a">Juez municipal</mark> requerido de inhibición <mark class="y">oyendo al Fiscal</mark> cuando éste no la hubiera propuesto. <mark class="p"><b>Resolverá en término de segundo día</b></mark></div>
+  <div class="bif">
+   <div class="rama cen"><mark class="d">Desiste</mark> de conocer<br><mark class="d"><b>PROCEDE EL REQUERIMIENTO</b></mark></div>
+   <div class="rama cen"><mark class="d">Mantiene</mark> su competencia<br><mark class="d"><b>NO PROCEDE: AUTO DENEGATORIO</b></mark> **</div>
+  </div>
+  <div class="fl">▼</div>
+  <div class="caja">Lo mandará practicar <mark class="y">X OFICIO</mark> en el cual consignará los fundamentos de su <mark class="y">AUTO</mark>* y se remitirán al juez requirente las diligencias practicadas <mark class="p">dentro de 24 H</mark> precisamente.</div>
+  <div class="fl">▼</div>
+  <div class="caja">Recibidos los autos por el juez requirente. <mark class="c">Declarará</mark>, <span style="outline:1.5px solid #1d4ed8">sin más trámites</span>, y <mark class="p">dentro de 24 H</mark> si:</div>
+  <div class="bif">
+   <div class="rama cen"><mark class="y">Insiste en la competencia</mark><div class="caja" style="margin-top:6px"><mark class="y">El Juez requerido siga conociendo</mark> <span class="x">✖</span></div></div>
+   <div class="rama cen"><mark class="d">Se aparta de ella</mark>*<div class="nota"><mark class="c">Lo participará</mark> <mark class="p">en el mismo día</mark> al juez requerido para:</div><div class="caja" style="margin-top:6px"><mark class="p">En 24 H siguientes</mark> remisión de diligencias por <mark class="y">ambos</mark> al órgano que debe resolver</div></div>
+  </div>
+  <div class="fl">▼</div>
+  <div class="caja nota" style="color:inherit">Recibidas las diligencias en el Juzgado o Tribunal llamado a resolver la competencia. <mark class="y">Oído el Fiscal</mark> por término de <mark class="p">segundo día</mark> <b>DECIDIRÁ</b> dentro de los <mark class="p">tres siguientes</mark> al en que el Ministerio Fiscal evacue el traslado.</div>
+  <div class="caja nota" style="color:inherit">- Contra lo resuelto por el Juzgado o Audiencia procederá el recurso de <mark class="d">casación</mark>.<br>- Contra la resolución del Supremo <mark class="d">no se da recurso alguno</mark>.</div>
+ </div>
+</div>
+<div class="nota" style="margin-top:6px">* ESTOS AUTOS serán apelables para ante el respectivo Juez de instrucción. &nbsp; ** ESTOS AUTOS serán apelables en ambos efectos para ante el Juez de instrucción respectivo.</div>
+</div></div>
+
+<!-- ============ 2 · PROCEDIMIENTO DE UNA INHIBITORIA (1) ============ -->
+<div class="esq"><div class="ban">PROCEDIMIENTO DE UNA <mark class="d">INHIBITORIA</mark><small>ante los Tribunales de lo criminal (ARTS. 33 y ss.)</small></div><div class="cuerpo">
+<div class="caja pie" style="border:0"><div class="cen tit"><mark class="d">INICIACIÓN</mark></div>
+ • <mark class="c">Se propondrá</mark> en <mark class="y">escrito</mark> con <mark class="d">firma de Letrado</mark>. <span class="man">Art 33</span> <span class="ex">EXOF</span><br>
+ • En el escrito <mark class="c">expresará</mark> el que la proponga que <mark class="y"><b>NO ha empleado la declinatoria</b></mark> (si resultase lo contrario, será condenado en costas, aunque se decida en su favor la competencia o aunque la abandone en lo sucesivo). <span class="man">Art 33</span></div>
+<div class="caja pie" style="border:0"><mark class="a">El Secretario del Tribunal</mark> ante quien <mark class="y">se proponga la inhibitoria</mark> dará <mark class="d">TRASLADO</mark> por <mark class="p">término de uno o dos días</mark> (según el volumen de la causa):<br>
+ • al <mark class="a">Ministerio Fiscal</mark>, cuando éste <mark class="y">no la haya propuesto</mark>.<br>
+ • a las <mark class="a">demás partes</mark> que <mark class="y">figuren en la causa</mark> de que pudiera a la vez estar conociendo el Tribunal a quien se haya instado.</div>
+<div class="cen" style="margin:6px 0 2px">Para que haga <mark class="y">el requerimiento y, en su vista</mark></div>
+<div class="cen"><span class="pill" style="background:var(--fondo2)">El Tribunal mandará, dentro de los <mark class="p">dos días siguientes</mark></span></div>
+<div style="display:grid;grid-template-columns:3fr 1fr;gap:12px;margin-top:2px">
+ <div class="rama"><div class="cen" style="margin-bottom:4px"><mark class="d"><b>LIBRAR OFICIO INHIBITORIO</b></mark></div>
+  <div class="caja">Con el oficio de inhibición <mark class="y">se acompañará</mark>, <mark class="c">se extenderá y remitirá</mark> <mark class="d">TESTIMONIO</mark>:
+   <ul style="list-style:none;padding-left:8px">
+    <li>- En el <mark class="p">plazo improrrogable de 1 a 3 días</mark>, según volumen de la causa.</li>
+    <li>- Del <mark class="y">escrito</mark> en que se haya pedido.</li>
+    <li>- De lo <mark class="y">expuesto por Ministerio Fiscal/partes</mark>, <span style="outline:1.5px solid #1d4ed8">en su caso.</span></li>
+    <li>- Del <mark class="y">auto que se haya dictado</mark>.</li>
+    <li>- De lo demás que el <mark class="a">Tribunal</mark> estime conducente a fundar su competencia.</li></ul>
+   <div style="margin-top:6px">El <mark class="a">Secretario del Tribunal requerido</mark>:<br>
+    - <mark class="c">acusará</mark> <mark class="p">inmediatamente</mark> recibo.<br>
+    - Dará <mark class="d">TRASLADO</mark> en <mark class="p">plazo de 24 H MAX</mark> a cada uno:
+    <ul style="list-style:none;padding-left:14px"><li>- <mark class="a">Ministerio Fiscal</mark>.</li><li>- <mark class="a">Acusador particular</mark>.</li><li>- <mark class="a">Procesados/detenidos</mark> <span style="outline:1.5px solid #1d4ed8">personados.</span></li><li>- <mark class="a">Parte Civil</mark>.</li></ul></div>
+   <div class="cen" style="margin-top:4px">Tras lo cual: <span class="nota">Continúa ↓ (esquema siguiente)</span></div></div></div>
+ <div class="rama"><div class="cen" style="margin-bottom:4px"><mark class="d"><b>DECLARAR NO HABER LUGAR A ELLO</b></mark></div>
+  <div class="nota cen" style="color:inherit">Contra el auto en que <mark class="y">se deniegue el requerimiento de inhibición</mark> sólo habrá lugar al recurso de <mark class="d">casación</mark>. <span class="man">casación</span><br><span class="x">✖</span></div></div>
+</div></div></div>
+
+<!-- ============ 3 · PROCEDIMIENTO DE UNA INHIBITORIA (2) ============ -->
+<div class="esq"><div class="ban">PROCEDIMIENTO DE UNA INHIBITORIA<small>ante los Tribunales de lo criminal (ARTS. 33 y ss.) — continuación</small></div><div class="cuerpo">
+<div class="cen" style="margin-bottom:4px"><span class="pill" style="background:var(--fondo2)">El Tribunal dictará <mark class="y"><b>AUTO</b></mark></span></div>
+<div class="g2">
+ <div class="rama">
+  <div class="cen"><mark class="d"><b>DE INHIBICIÓN</b></mark><div class="nota">(solo recurrible en casación)</div></div>
+  <div class="fl">▼</div>
+  <div class="cen">Consentido o ejecutoriado <mark class="y">el auto:</mark></div>
+  <div class="caja nota" style="color:inherit">El <mark class="a">Secretario judicial</mark>, respecto al Tribunal que hubiera propuesto la inhibitoria:<br>
+   - <mark class="c">Le remitirá</mark> la causa, <mark class="p">plazo de 3 días</mark><br>- Con emplazamiento a las partes.<br>- <mark class="c">Pondrá a su disposición</mark>: a los procesados, las pruebas materiales del delito y los bienes embargados. <span class="x">✖</span></div>
+ </div>
+ <div class="rama">
+  <div class="cen"><div class="nota">DECLARANDO QUE <mark class="y"><b>NO HA LUGAR</b></mark></div><mark class="d"><b>AUTO DENEGATORIO DE INHIBICIÓN</b></mark></div>
+  <div class="fl">▼</div>
+  <div class="cen">Se <mark class="c">comunicará</mark> <mark class="y">el auto</mark> al <mark class="a">Tribunal requirente</mark></div>
+  <div class="caja nota" style="color:inherit">Con testimonio remitido <mark class="p">dentro de 3 días</mark>:<br>- de lo <mark class="y">expuesto</mark> por el <mark class="a">Ministerio Fiscal</mark> y por las partes.<br>- de <mark class="y">todo lo demás</mark> que se crea conducente<br>mediante <mark class="d"><b>OFICIO DE REMISIÓN</b></mark> donde se exigirá que el Tribunal requirente conteste <mark class="p">inmediatamente</mark> para:</div>
+  <div class="bif"><div class="rama caja" style="border-top:2px solid var(--oro)"><mark class="y">Continuar actuando</mark> si no insiste en la inhibición</div><div class="rama caja" style="border-top:2px solid var(--oro)">Que <mark class="c">remita</mark> la causa a quien corresponda decidir la competencia</div></div>
+ </div>
+</div>
+<div class="caja cen" style="margin-top:8px">Recibido este oficio el <mark class="a">Tribunal que propone la inhibitoria</mark> <mark class="y">sin más trámites</mark> <mark class="c">dictará</mark> <mark class="p">AUTO en término de 2º día</mark>:</div>
+<div class="bif"><div class="rama caja cen"><mark class="d"><b>DESISTIENDO DE LA INHIBICIÓN</b></mark>*</div><div class="rama caja cen"><mark class="d"><b>MANTENIENDO SU COMPETENCIA</b></mark></div></div>
+<div class="cen nota" style="margin:4px 0">Al (órgano judicial) requerido de inhibición:</div>
+<div class="bif">
+ <div class="rama caja" style="background:var(--fondo2)">Consentido o ejecutoriado esto:<br>1) Se lo <mark class="c">comunicará</mark> en <mark class="p">término de 24 H</mark>.<br>2) Le <mark class="c">remitirá</mark> <mark class="y">todo lo actuado</mark> para su unión a la causa.</div>
+ <div class="rama caja" style="background:var(--fondo2)">Lo <mark class="c">comunicará</mark> en el <mark class="p">término de 24 H</mark>. Para <mark class="y">remisión de la causa</mark> por <mark class="y">ambos</mark> a quien corresponda la resolución.<br>+ Dictamen del <mark class="a">Ministerio Fiscal</mark> en <mark class="p">término del 2º día</mark>.</div>
+</div>
+<div class="fl">▼</div>
+<div class="cen"><mark class="d"><b>RESOLUCIÓN</b></mark> dentro de los <mark class="p"><b>3 días siguientes</b></mark><br><mark class="d"><b>RECURSOS</b></mark> — Cuando procede de:</div>
+<div class="bif" style="margin:4px 25% 0"><div class="rama caja cen"><mark class="a">Audiencias territoriales</mark>:<br><mark class="d"><b>CASACIÓN</b></mark></div><div class="rama caja cen"><mark class="a">Tribunal Supremo</mark>:<br><mark class="d"><b>no cabe</b></mark></div></div>
+<div class="cen" style="margin-top:6px">Cabe <mark class="d"><b>CONDENA EN COSTAS</b></mark> a las partes <mark class="y">por notoria temeridad</mark></div>
+<div class="nota" style="margin-top:4px">* Solo recurrible en casación.</div>
+</div></div>
+</div></body></html>
