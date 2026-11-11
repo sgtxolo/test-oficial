@@ -15,7 +15,9 @@ const limpia = b => b.replace(/<span class="ex-plg"[^>]*><span class="ex-plg-t">
 
 // ---- R ----
 let lineasR = [];
-if (fichas.some(esRec)) {   // T20: las R ya vienen en pregunta → respuesta
+const RQA = R + 'prompts/herramientas/rqa/t' + N + '.json';
+if (fs.existsSync(RQA)) lineasR = JSON.parse(fs.readFileSync(RQA, 'utf8'));   // R en pregunta → respuesta escritas a mano desde las páginas RECUERDA del temario
+else if (fichas.some(esRec)) {   // T20: las R ya vienen en pregunta → respuesta
   fichas.filter(esRec).forEach(f => (f.body.match(/<p data-r="R\d+"[\s\S]*?<\/p>/g) || []).forEach(p => {
     const n = p.match(/data-r="(R\d+)"/)[1]; const t = p.replace(/<span class="ex-plg"[^>]*><span class="ex-plg-t">([\s\S]*?)<\/span><\/span>/g, '$1').replace(/<span class="ex-sello[^"]*">R\d+<\/span> <b>R\d+<\/b> · /, '');
     const [q, a] = t.replace(/<\/?p[^>]*>/g, '').split(/<b>→<\/b>/); lineasR.push([+n.slice(1), plano(q), plano(a || '')]);
