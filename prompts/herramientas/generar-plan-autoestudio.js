@@ -82,29 +82,29 @@ function ingDiario() {   // bloque de inglés de un día de estudio (lunes a vie
   const w = ingW++;
   if (w < NT_ING) {
     const N = w + 1; semana.push(N);
-    return [20, "Inglés, tema nuevo de hoy: " + ingTema(N) + ". Lee su teoría (10 min) y haz el test del tema: 10 preguntas, modo 'Un tema' (10 min)."];
+    return [25, "Inglés, tema nuevo de hoy: ESTUDIA " + ingTema(N) + ". 10 min de teoría y 15 min de test sobre este tema (15 preguntas, modo 'Un tema').", "Estudia " + ingTema(N) + " · 10 min de teoría + 15 min de test"];
   }
   const j = w - NT_ING;
-  if (j % 5 === 4) return [20, "Inglés, temas flojos: los 3 temas de inglés con peor nota en Mi Progreso de la app de inglés. Repasa su teoría (8 min) y haz un test mezclado de 20 preguntas de esos 3 temas (modo 'Bloques')."];
+  if (j % 5 === 4) return [25, "Inglés, temas flojos: los 3 temas de inglés con peor nota en Mi Progreso de la app de inglés. 10 min de teoría de esos 3 temas y 15 min de test mezclado de 20 preguntas (modo 'Bloques').", "Temas flojos: los 3 de peor nota · 10 min de teoría + 15 min de test"];
   const ts = [0, 1, 2].map(i => ((3 * ingBloq + i) % NT_ING) + 1); ingBloq++; semana.push(...ts);
-  return [20, "Inglés, bloque de repaso: " + lista(ts) + ". Recuerda de memoria qué regla tiene cada tema (5 min) y haz un test mezclado de 30 preguntas de los 3, modo 'Bloques' (15 min)."];
+  return [25, "Inglés, bloque de repaso: " + lista(ts) + ". Recuerda de memoria qué regla tiene cada tema (10 min) y haz un test mezclado de 30 preguntas de los 3, modo 'Bloques' (15 min).", "Bloque de repaso: " + ts.map(N => "T" + N).join(" + ") + " · test mezclado"];
 }
 const GRUPOS_ING = [[1, 8], [9, 16], [17, 24], [25, 32], [33, 41]];
 function ingSabado(f) {   // bloques de inglés del sábado (90 min)
   const fase1 = ingW <= NT_ING, ts = [...new Set(semana)].sort((x, y) => x - y); semana = [];
   if (fase1) return [
-    [35, "Inglés, test por bloques de los temas de esta semana (" + lista(ts) + "): 40 preguntas mezcladas, modo 'Bloques'."],
+    [35, "Inglés, test por bloques de los temas de esta semana (" + lista(ts) + "): 40 preguntas mezcladas, modo 'Bloques'.", "Test por bloques de la semana: " + ts.map(N => "T" + N).join(" + ")],
     [35, "Inglés: corrige cada fallo con la teoría de su tema y escribe la regla en una frase."],
     [20, "Inglés: 'Repasar fallos' acumulados y 10 preguntas de los temas de las semanas anteriores."]];
   const j = sabIng++;
   if (f >= "2027-04-10" || j % 4 === 3) return [
-    [50, "Inglés, simulacro COMPLETO de todos los temas (modo 'Bloques' con los 41 temas, 60 preguntas), cronometrado y sin ayudas."],
+    [50, "Inglés, simulacro COMPLETO de todos los temas (modo 'Bloques' con los 41 temas, 60 preguntas), cronometrado y sin ayudas.", "SIMULACRO COMPLETO de inglés (41 temas)"],
     [30, "Inglés: corrige cada fallo con la teoría del tema y anótalo."],
     [10, "Inglés: apunta los 3 temas con peor resultado: serán los 'temas flojos' de la semana."]];
   const g = GRUPOS_ING[j % GRUPOS_ING.length], bl = [];
   for (let N = g[0]; N <= g[1]; N++) bl.push(N);
   return [
-    [45, "Inglés, simulacro POR BLOQUES de T" + g[0] + " a T" + g[1] + " (" + bl.map(N => TEMAS_ING[N]).join(", ") + "): 40 preguntas mezcladas de esos temas, modo 'Bloques', cronometrado."],
+    [45, "Inglés, simulacro POR BLOQUES de T" + g[0] + " a T" + g[1] + " (" + bl.map(N => TEMAS_ING[N]).join(", ") + "): 40 preguntas mezcladas de esos temas, modo 'Bloques', cronometrado.", "SIMULACRO POR BLOQUES: T" + g[0] + " a T" + g[1]],
     [30, "Inglés: corrige cada fallo con la teoría del tema y escribe la regla."],
     [15, "Inglés: 'Repasar fallos' de la semana."]];
 }
@@ -164,11 +164,11 @@ const out = viejo.slice(0, 4).map((o, i) => i < 2 ? Object.assign({}, o, {id: 't
 const iso = d => d.toISOString().slice(0, 10);
 const sumaDias = (f, n) => { const d = new Date(f + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return iso(d); };
 let sig = 0, domN = 1, sabN = 0;   // sabN: 0 = sábado 14 nov 2026
-const conIng = (f, o) => { o.b = [...o.b, ingDiario()]; let ex = tot(o.b) - 240; for (let i = o.b.length - 2; ex > 0 && i >= 0; i--) { const q = Math.min(ex, o.b[i][0] - 10); if (q > 0) { o.b[i] = [o.b[i][0] - q, o.b[i][1]]; ex -= q; } } o.m = tot(o.b); return o; };
+const conIng = (f, o) => { const ib = ingDiario(); o.ing = ib[2]; o.b = [...o.b, ib]; let ex = tot(o.b) - 240; for (let i = o.b.length - 2; ex > 0 && i >= 0; i--) { const q = Math.min(ex, o.b[i][0] - 10); if (q > 0) { o.b[i] = [o.b[i][0] - q, o.b[i][1]]; ex -= q; } } o.m = tot(o.b); return o; };
 for (let f = '2026-11-09'; f <= '2027-07-01'; f = sumaDias(f, 1)) {
   const dow = new Date(f + 'T12:00:00Z').getUTCDay();
   if (FESTIVOS[f]) { out.push({d: f, k: 'LIBRE', t: 'Festivo', n: 'Libre. Si vas atrasado, úsalo para recuperar (hasta 3 h) siguiendo el orden del calendario.'}); continue; }
-  if (dow === 6) { out.push(dia(f, 'SAB', 'Inglés y psicotécnicos', bSabN(sabN++, f))); continue; }
+  if (dow === 6) { { const bs = bSabN(sabN++, f), o = dia(f, 'SAB', 'Inglés y psicotécnicos', bs); o.ing = bs[1][2]; out.push(o); } continue; }
   if (dow === 0) {
     const ciclo = domN++ % 4;   // colchón · descanso · ligero · descanso  (un descanso real cada dos semanas)
     if (ciclo === 0) out.push(dia(f, 'COLCHON', 'Domingo colchón', bColchon));
