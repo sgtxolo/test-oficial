@@ -27,7 +27,7 @@ while ((m = re.exec(H))) {
 let PROP = null; try { PROP = require('./repaso-cuadros-t' + N + '.js'); } catch (e) {}
 if (PROP) {
   for (let i = toks.length - 1; i >= 0; i--) if (toks[i].t === 'v') toks.splice(i, 1);
-  PROP.cuadros.forEach(cu => { let j = toks.findIndex(k => k.t === 'f' && cu.antes.test(plano(k.hd).replace(/ (EXOF|✱|Rd+)/g, '').trim())); if (j < 0) { console.log('SIN ANCLA', cu.antes); j = toks.length; } else { while (j > 0 && toks[j - 1].t === 'h') j--; } toks.splice(j, 0, { t: 'v', html: cu.html, propio: 1 }); });
+  PROP.cuadros.forEach(cu => { let j = cu.antesH ? toks.findIndex(k => k.t === 'h' && cu.antesH.test(k.txt)) : toks.findIndex(k => k.t === 'f' && cu.antes.test(plano(k.hd).replace(/ (EXOF|✱|Rd+)/g, '').trim())); if (j < 0) { console.log('SIN ANCLA', cu.antes); j = toks.length; } else { while (j > 0 && toks[j - 1].t === 'h') j--; } toks.splice(j, 0, { t: 'v', html: cu.html, propio: 1 }); });
 }
 const esOf = ids => ids.split(',').some(q => !/ia/.test(q));
 function limpia(b) {
