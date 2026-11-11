@@ -26,9 +26,8 @@ const dia = (d, k, t, b, extra) => Object.assign({d, k, t, n: '', b, m: tot(b)},
 function bNuevo(N, i, n, rep) {
   const ult = i === n - 1, pp = n > 1 ? Math.round(PAG[N] / n) : PAG[N];
   return [CAL,
-    [75, 'Lee lo subrayado de ' + nom(N) + parte(i, n) + ' (≈' + pp + ' págs): solo lo subrayado, de seguido. El objetivo es saber cómo está organizado el tema, no memorizarlo todavía.'],
-    [45, 'Recuerdo activo por bloques: divide lo leído en 4-5 bloques; al acabar cada uno cierra el resumen y di o escribe lo que recuerdas (plazos, órganos, listas, excepciones). Ábrelo y comprueba lo que has olvidado.'],
-    [30, ult ? "Test del tema completo (40 preguntas, modo 'Un tema'). Anota la nota abajo y marca con '?' las dudas, aunque las aciertes." : "Test de esta parte (20-30 preguntas, modo 'Un tema'). Marca con '?' las dudas, aunque las aciertes."],
+    [120, 'Lee y estudia lo subrayado de ' + nom(N) + parte(i, n) + ' (≈' + pp + ' págs de orientación): solo lo subrayado, a tu ritmo. Si no llegas a todo, para donde hayas llegado: en el test limita por artículos (desde/hasta) y marca «Estudiado hasta el art. …», y el test de hoy será solo de lo que llevas.'],
+    [30, ult ? "Test del tema completo (40 preguntas, modo 'Un tema'). Anota la nota abajo y marca con '?' las dudas, aunque las aciertes." : "Test de lo que has estudiado hoy (20-30 preguntas, modo 'Un tema', limitado a los artículos que llevas: botón «Test de lo que llevo»). Marca con '?' las dudas, aunque las aciertes."],
     [20, 'Repaso corto de ' + nom(rep) + ": 10 min recordando de memoria y test de 15 preguntas ('Repasar fallos'). Solo vuelves al resumen en lo fallado."],
     [20, "Cierre: repasa los '?' y los fallos de hoy y haz 10 preguntas de 'Plazos y autoridades (tema)'."]];
 }
