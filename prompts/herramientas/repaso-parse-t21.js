@@ -24,7 +24,18 @@ function fichas() {
   });
   return out;
 }
-module.exports = { fichas };
+// Cuadros (esquemas) del Exprés: bloques <div class="vis"> de primer nivel
+function visBlocks() {
+  global.window = {}; eval(fs.readFileSync(R + 'expres/t21.js', 'utf8'));
+  const h = window.EXPRES_T[21].html, out = []; let i = 0;
+  while ((i = h.indexOf('<div class="vis">', i)) >= 0) {
+    let d = 0; const r = new RegExp('<div\\b|</div>', 'g'); r.lastIndex = i; let x, fin = h.length;
+    while ((x = r.exec(h))) { d += x[0] === '</div>' ? -1 : 1; if (d === 0) { fin = r.lastIndex; break; } }
+    out.push(h.slice(i, fin)); i = fin;
+  }
+  return out;
+}
+module.exports = { fichas, visBlocks };
 if (require.main === module) {
   const F = fichas(); const L = {}; F.forEach(f => { (L[f.ley] = L[f.ley] || []).push(f); });
   Object.entries(L).forEach(([l, a]) => console.log(l.slice(0, 70), a.length, 'fichas', a.reduce((s, f) => s + f.len, 0), 'car'));
