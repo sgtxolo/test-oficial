@@ -2,6 +2,7 @@
 // actores en cadena, categorías en cuadrícula…) y con tu fosforito. El texto literal y las marcas vienen de visuales-t4.js (transcrito de las págs.
 // 57, 63, 97-100, 150, 168, 173, 186 y 198 del PDF escaneado); aquí solo se cambia cómo se dibuja. Los usa repaso-hibrido.js (cuadros propios).
 const fs = require('fs');
+const { colorea } = require('./repaso-cuadros-lib.js');   // verde (órganos y personas) y lila (futuros) con las mismas reglas del Exprés
 const R = 'C:/Users/ruben/Desktop/HTML OFICIAL/';
 const mk = c => t => `<mark class="${c}">${t}</mark>`;
 const Y = mk('y'), D = mk('d'), P = mk('p'), K = t => `<mark class="k">${t}</mark>`;
@@ -54,5 +55,5 @@ const ANCLA = {
   'Artículos 54 y 55': /^Artículos? 54 y 55/, 'Artículos 56 a 58': /^Artículos? 56 a 58/,
   'Artículos 67 a 70': /^Artículos? 67 a 70/, 'Artículos 82, 84 y 85': /^Artículos? 82, 84 y 85/
 };
-module.exports = { soloPropios: true, cuadros: V.map(([tras, html]) => ({ antes: ANCLA[tras] || new RegExp('^' + tras.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), html })) };
+module.exports = { soloPropios: true, cuadros: V.map(([tras, html]) => ({ antes: ANCLA[tras] || new RegExp('^' + tras.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), html: colorea(html) })) };
 if (require.main === module) console.log(V.length + ' cuadros', V.map(v => v[0]));

@@ -11,4 +11,15 @@ const lineaTiempo = pasos => `<div class="lt">${pasos.map(x => `<div class="lt-i
 const g2 = (...cols) => `<div class="g2s" style="align-items:start;grid-template-columns:repeat(${cols.length},1fr)">${cols.map(x => `<div>${x}</div>`).join('')}</div>`;
 // nota a boli del usuario
 const man = t => `<span class="man">${t}</span>`;
-module.exports = { y, d, a, p, c, k, esq, fl, bif, caja, lista, tabla2, lineaTiempo, g2, man };
+// Reglas de color del método (verbos en futuro → lila, órganos y personas → verde, enlaces entre verdes): las mismas del Exprés (reglas-color.js)
+const colorea = html => {
+  const { aplica } = require('./reglas-color.js');
+  const A = { y: 'm-personalizado', d: 'm-destacable', a: 'm-autoridad', p: 'm-plazo', c: 'm-accion' }, B = {};
+  Object.keys(A).forEach(x => { B[A[x]] = x; });
+  let h = html.replace(/<mark class="(y|d|a|p|c)">/g, (m, x) => '<mark class="' + A[x] + '">');
+  h = h.replace(/<mark class="k">([\s\S]*?)<\/mark>/g, '<u class="m-clave">$1</u>');
+  h = aplica(h);
+  h = h.replace(/<mark class="(m-[a-z]+)"[^>]*>/g, (m, c) => (B[c] ? '<mark class="' + B[c] + '">' : m));
+  return h.replace(/<u class="m-clave"[^>]*>([\s\S]*?)<\/u>/g, '<mark class="k">$1</mark>');
+};
+module.exports = { colorea, y, d, a, p, c, k, esq, fl, bif, caja, lista, tabla2, lineaTiempo, g2, man };

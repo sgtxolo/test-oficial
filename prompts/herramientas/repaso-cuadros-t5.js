@@ -89,4 +89,5 @@ add(/^Artículo 35 — Visados solicitados en la frontera exterior/, esq('ART. 3
   ['', abc(['b', `el solicitante ${k('no')} ha podido solicitar un visado con antelación y presenta, si se le solicita, ${y('documentos justificativos')} que demuestren la existencia de ${y('razones imprevisibles e imperiosas')} para la entrada, y;`])],
   ['', abc(['c', `se considera ${d('garantizado el retorno')} del solicitante a su país de origen o de residencia, o su tránsito por países que ${k('no')} sean Estados miembros que apliquen plenamente el acervo de Schengen.`])])}`));
 
-module.exports = { soloPropios: true, cuadros: out };
+const { colorea } = require('./repaso-cuadros-lib.js');   // verde (órganos y personas) y lila (futuros) con las mismas reglas del Exprés
+module.exports = { soloPropios: true, cuadros: out.map(c => ({ antes: c.antes, html: colorea(c.html) })) };

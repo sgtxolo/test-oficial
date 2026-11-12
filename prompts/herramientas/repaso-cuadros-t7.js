@@ -1,5 +1,6 @@
 // Cuadros del Tema 7 con la forma del temario: tu PÁGINA MANUSCRITA (pág. 2 del PDF «TEMA 7 CONTITUCION ESPAÑOLA-08-08-2026.pdf»: presidente del TC y recurso de amparo)
 // y los recuadros impresos de las págs. 15-17 y 23-24 (arts. 7, 8.2, 9.2 de la LO 1/1982 y arts. 53 y 55.1 de la LOTC), leídos como imagen el 12/11/2026.
+// Páginas revisadas 12/11/2026: 2, 5-8, 10-11, 13-14, 15-17, 18, 21-24 (el resto sin recuadros a la vista).
 // Amarillo y · naranja/rosa d · verde a · azul p · lila c · subrayado rojo k. «man» = nota a boli. Los usa repaso-hibrido.js (cuadros propios).
 const { y, d, a, p, c, k, esq, fl, caja, man } = require('./repaso-cuadros-lib.js');
 const it = (l, t) => `<div style="margin:3px 0"><b>${l})</b> ${t}</div>`;
@@ -45,4 +46,12 @@ add(/^Artículo 9 — Tutela judicial/, esq('ART. 9.2 · TUTELA JUDICIAL: MEDIDA
   caja(it('a', `El ${d('restablecimiento')} del perjudicado en el pleno disfrute de sus derechos, con la declaración de la intromisión sufrida, el ${d('cese inmediato')} de la misma y la ${d('reposición del estado anterior')}. En caso de intromisión en el derecho al honor, el restablecimiento del derecho violado incluirá, sin perjuicio del derecho de réplica por el procedimiento legalmente previsto, la ${y('publicación total o parcial de la sentencia condenatoria')} a costa del condenado con al menos la misma difusión pública que tuvo la intromisión sufrida.`) + it('b', `${d('Prevenir')} intromisiones ${y('inminentes o ulteriores')}.`) + it('c', `La ${d('indemnización')} de los daños y perjuicios causados.`) + it('d', `La ${d('apropiación')} por el perjudicado del ${y('lucro obtenido')} con la intromisión ilegítima en sus derechos.`)) +
   `<div class="nota">Estas medidas se entenderán ${k('sin perjuicio')} de la tutela cautelar necesaria para asegurar su efectividad.</div>`));
 
-module.exports = { soloPropios: true, cuadros: out };
+
+// ───────── LOTC · art. 44.1 y art. 46.1 (pág. 14) ─────────
+add(/^Artículo 44 — Amparo frente a órganos judiciales/, esq('ART. 44 · AMPARO FRENTE A ÓRGANOS JUDICIALES', '', caja(`<b>1.</b> Las violaciones de los derechos y libertades susceptibles de amparo constitucional, que tuvieran su origen ${d('inmediato y directo en un acto u omisión de un órgano judicial')}, podrán dar lugar a este recurso ${k('siempre que')} se cumplan los ${y('requisitos siguientes')}: ${man('Órgano judicial')}`) +
+  caja(it('a', `Que se hayan ${d('agotado')} todos los medios de impugnación previstos por las normas procesales para el caso concreto dentro de la ${y('vía judicial')}.`) + it('b', `Que la violación del derecho o libertad sea ${y('imputable de modo inmediato y directo')} a una ${y('acción u omisión')} del órgano judicial con independencia de los hechos que dieron lugar al proceso en que aquellas se produjeron, acerca de los que, en ningún caso, entrará a conocer el Tribunal Constitucional.`) + it('c', `Que se haya ${d('denunciado formalmente')} en el proceso, si hubo oportunidad, la vulneración del derecho constitucional tan pronto como, una vez conocida, hubiera lugar para ello.`)) +
+  caja(`<b>2.</b> El plazo para interponer el recurso de amparo será de ${p('30 días')}, a partir de la notificación de la resolución recaída en el proceso judicial. ${man('Rec. amparo 30 días')}`)));
+add(/^Artículo 46 — Legitimación para el amparo/, esq('ART. 46.1 · ESTÁN LEGITIMADOS PARA INTERPONER EL RECURSO DE AMPARO CONSTITUCIONAL', '', caja(it('a', `En los casos de los artículos 42 y 45, la ${a('persona directamente afectada')}, el ${a('Defensor del Pueblo')} y el ${a('Ministerio Fiscal')}.`) + it('b', `En los casos de los artículos 43 y 44, quienes hayan sido ${y('parte en el proceso judicial')} correspondiente, el ${a('Defensor del Pueblo')} y el ${a('Ministerio Fiscal')}.`))));
+
+const { colorea } = require('./repaso-cuadros-lib.js');   // verde (órganos y personas) y lila (futuros) con las mismas reglas del Exprés
+module.exports = { soloPropios: true, cuadros: out.map(c => ({ antes: c.antes, html: colorea(c.html) })) };
