@@ -1,6 +1,6 @@
 // Cuadros del Tema 5 rehechos con la forma del temario (recuadros impresos dentro de los artículos del resumen, págs. 7-42 del PDF
 // «TEMA 5  BASE DE DATOS-08-08-2026.pdf», leídos como imagen el 12/11/2026) y con tu fosforito. Los usa repaso-hibrido.js (cuadros propios).
-// Amarillo y · naranja/rosa d · verde a · azul p · lila c · subrayado rojo k. «man» = nota a boli. Pendiente de mirar: págs. 12-15, 18-20, 22, 25-27, 29-30, 35 y 42.
+// Amarillo y · naranja/rosa d · verde a · azul p · lila c · subrayado rojo k. «man» = nota a boli. Revisadas todas las págs. 7-42 salvo 25 y 27 (texto sin recuadros a la vista).
 const { y, d, a, p, c, k, esq, fl, caja, man } = require('./repaso-cuadros-lib.js');
 const COL = { o: '#f3d5c2', v: '#d3e8d6', c: '#e3dbf0', n: '#dfe9f5', y: '#f6ecb8' };
 const lab = (t, col = 'y') => `<div style="background:${COL[col]};padding:6px 8px;font-weight:700;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid rgba(60,70,80,.35);color:#1f2a33"><span style="text-align:center;overflow-wrap:anywhere;font-size:.88em;min-width:0">${t}</span></div>`;
@@ -76,5 +76,17 @@ add(/^Artículo 7 — Autoridad designada de Europol/, esq('ART. 7 · EUROPOL', 
 add(/^Artículo 52 — Responsabilidad/, esq('ART. 23 (del resumen) · RESPONSABILIDAD EN CUANTO AL TRATAMIENTO DE LOS DATOS (EURODAC)', '', `${caja(`El ${a('Estado miembro de origen')} ${d('responderá')}:`)}${cols(
   ['', abc(['a', `de la ${y('legalidad de la toma de las impresiones dactilares')};`], ['b', `de la ${y('legalidad de la transmisión')} al Sistema Central de los datos dactiloscópicos, así como de los demás datos;`], ['c', `de la ${y('exactitud y actualidad de los datos')} cuando se transmitan al Sistema Central;`])],
   ['', abc(['d', `sin perjuicio de las responsabilidades de la Agencia, de la ${y('legalidad del registro, conservación, rectificación y supresión')} de los datos en el Sistema Central;`], ['e', `de la ${y('legalidad del tratamiento de los resultados de la comparación')} de los datos dactiloscópicos transmitidos por el Sistema Central.`])])}`));
+
+add(/^Artículo 5 — Estado miembro competente para examinar/, esq('ART. 5 · ESTADO MIEMBRO COMPETENTE PARA EXAMINAR Y DECIDIR SOBRE UNA SOLICITUD (CÓDIGO DE VISADOS)', '', `${caja(`1. El ${a('Estado miembro')} competente para ${d('examinar')} y ${d('decidir')} sobre una solicitud de ${d('visado uniforme')} será: ${ex}`)}${cols(
+  ['', abc(['a', `el Estado miembro cuyo territorio sea el ${y('único destino de la visita o visitas')};`], ['b', `${y('SI LA VISITA INCLUYE MÁS DE UN DESTINO')}, o si se van a realizar varias visitas ${y('diferentes')} durante un ${p('período de dos meses')}, el Estado miembro cuyo territorio sea, por la duración de la estancia, (…)`])],
+  ['', abc(['c', `${y('SI NO PUEDE DETERMINARSE UN DESTINO PRINCIPAL')}, el Estado miembro cuya ${y('frontera exterior')} se proponga cruzar el solicitante para entrar en el territorio de los Estados miembros.`])])}${fl}${caja(`2. El ${a('Estado miembro')} competente para ${d('examinar')} y ${d('decidir')} sobre una solicitud de ${d('VISADO UNIFORME CON FINES DE TRÁNSITO')} será:`)}${cols(
+  ['', abc(['a', `en caso de tránsito a través de un ${k('único Estado miembro')}, el Estado miembro de que se trate; o`])],
+  ['', abc(['b', `en caso de tránsito a través de ${k('varios Estados miembros')}, el Estado miembro cuya ${y('frontera exterior')} se proponga cruzar el solicitante para iniciar el tránsito.`])])}${fl}${caja(`3. El ${a('Estado miembro')} competente para ${d('examinar')} y ${d('decidir')} sobre una solicitud de ${d('VISADO DE TRÁNSITO AEROPORTUARIO')} será: ${ex}`)}${cols(
+  ['', abc(['a', `en caso de un ${k('único tránsito aeroportuario')}, el Estado miembro en cuyo territorio esté situado el aeropuerto de tránsito; o`])],
+  ['', abc(['b', `en caso de un ${k('tránsito aeroportuario doble o múltiple')}, el Estado miembro en cuyo territorio esté situado el ${y('primer aeropuerto de tránsito')}.`])])}`));
+add(/^Artículo 35 — Visados solicitados en la frontera exterior/, esq('ART. 35.1 · VISADOS SOLICITADOS EN LA FRONTERA EXTERIOR (CÓDIGO DE VISADOS)', '', `${caja(`${d('En casos excepcionales')}, se podrá expedir un ${d('visado en un paso fronterizo')}, siempre que se cumplan las ${d('condiciones siguientes')}: ${ex}`)}${cols(
+  ['', abc(['a', `el solicitante ${d('cumple las condiciones')} establecidas en el Código de fronteras Schengen;`])],
+  ['', abc(['b', `el solicitante ${k('no')} ha podido solicitar un visado con antelación y presenta, si se le solicita, ${y('documentos justificativos')} que demuestren la existencia de ${y('razones imprevisibles e imperiosas')} para la entrada, y;`])],
+  ['', abc(['c', `se considera ${d('garantizado el retorno')} del solicitante a su país de origen o de residencia, o su tránsito por países que ${k('no')} sean Estados miembros que apliquen plenamente el acervo de Schengen.`])])}`));
 
 module.exports = { soloPropios: true, cuadros: out };
