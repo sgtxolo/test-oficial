@@ -27,7 +27,15 @@ while ((m = re.exec(H))) {
 let PROP = null; try { PROP = require('./repaso-cuadros-t' + N + '.js'); } catch (e) {}
 if (PROP) {
   for (let i = toks.length - 1; i >= 0; i--) if (toks[i].t === 'v') toks.splice(i, 1);
-  PROP.cuadros.forEach(cu => { let j = cu.antesH ? toks.findIndex(k => k.t === 'h' && cu.antesH.test(k.txt)) : toks.findIndex(k => k.t === 'f' && cu.antes.test(plano(k.hd).replace(/ (EXOF|✱|Rd+)/g, '').trim())); if (j < 0) { console.log('SIN ANCLA', cu.antes); j = toks.length; } else { while (j > 0 && toks[j - 1].t === 'h') j--; } toks.splice(j, 0, { t: 'v', html: cu.html, propio: 1 }); });
+  // CUAD_MAX=n: si hay demasiados cuadros para las págs. del límite, quedan los n cuyo artículo tiene más peso (EXOF·5 + R·3 + oficiales·1,5 + ✱) y se informa de los que se dejan fuera
+  if (process.env.CUAD_MAX && PROP.cuadros.every(cu => cu.art)) {
+    const numP = k => { const m = plano(k.hd).match(/^Art[ií]culos? (\d+)/); return m ? +m[1] : -1; };
+    PROP.cuadros.forEach((cu, i) => { const k = toks.find((t, ix) => t.t === 'f' && ix >= cu.rango[0] - 1 && ix <= cu.rango[1] - 1 && numP(t) >= cu.art); cu.sc = k ? k.exof * 5 + k.r * 3 + Math.min(k.of, 4) * 1.5 + (k.ast ? 1 : 0) : 0; cu.i0 = i; });
+    const dejar = PROP.cuadros.slice().sort((a, b) => b.sc - a.sc || a.i0 - b.i0).slice(+process.env.CUAD_MAX);
+    console.log('Cuadros dejados fuera (' + dejar.length + '):', dejar.map(c => c.tit || ('art. ' + c.art)).join(', '));
+    PROP.cuadros = PROP.cuadros.filter(cu => !dejar.includes(cu));
+  }
+  PROP.cuadros.forEach(cu => { const num = k => { const m = plano(k.hd).match(/^Art[ií]culos? (\d+)/); return m ? +m[1] : -1; }; let j = cu.art ? toks.findIndex((k, ix) => k.t === 'f' && ix >= cu.rango[0] - 1 && ix <= cu.rango[1] - 1 && num(k) >= cu.art) : cu.antesH ? toks.findIndex(k => k.t === 'h' && cu.antesH.test(k.txt)) : toks.findIndex(k => k.t === 'f' && cu.antes.test(plano(k.hd).replace(/ (EXOF|✱|Rd+)/g, '').trim())); if (j < 0) { console.log('SIN ANCLA', cu.antes); j = toks.length; } else { while (j > 0 && toks[j - 1].t === 'h') j--; } toks.splice(j, 0, { t: 'v', html: cu.html, propio: 1 }); });
 }
 const esOf = ids => ids.split(',').some(q => !/ia/.test(q));
 function limpia(b) {
@@ -68,7 +76,7 @@ toks.forEach(k => {
 // ---- AL FINAL, aparte del límite de páginas: R1…Rn (pregunta → respuesta) y preguntas rápidas de cada artículo (como en la app de Esquemas) ----
 let extra = '', nR = 0, nQ = 0;
 const lineasR = [];
-toks.filter(k => k.t === 'f' && esRec(k)).forEach(k => { (k.body.match(/<p data-r="R\d+"[\s\S]*?<\/p>/g) || []).forEach(p => lineasR.push(p)); });
+toks.filter(k => k.t === 'f' && esRec(k)).forEach(k => { const a = k.body.match(/<p data-r="R\d+"[\s\S]*?<\/p>/g) || []; (a.length ? a : (k.body.match(/<p><b>R\d+<\/b>[\s\S]*?<\/p>/g) || []).map(p => p.replace(/^<p><b>(R\d+)<\/b>/, '<p><span class="b r">$1</span> <b>$1</b>'))).forEach(p => lineasR.push(p)); });
 if (lineasR.length) {
   extra += '<div class="rr-wrap"><h2>RECUERDA del temario · fichas R (pregunta → respuesta)</h2>';
   lineasR.forEach(p => {
@@ -97,7 +105,7 @@ if (QQ) {
 if (!process.env.SIN_EXTRA) body += extra;
 body = body.replace(/<span class="ex-sello ex-sello-r">(R\d+)<\/span>/g, '<span class="b r">$1</span>').replace(/<span class="ex-sello">EXOF<\/span>/g, '<span class="b of">EXOF</span>').replace(/<span class="ex-sello">✱<\/span>/g, '<span class="b ex">✱</span>');
 for (let k = 0; k < 4; k++) body = body.replace(/<mark class="([a-z]+)">([^<]*)<\/mark>(\s*)<mark class="\1">/g, '<mark class="$1">$2$3');
-const TIT = {1: 'Derechos Humanos', 9: 'Defensa Nacional', 10: 'Derecho Civil (Código Civil)', 2: 'Terrorismo y delincuencia transnacional', 3: 'Unión Europea (TUE y TFUE)', 20: 'Derecho Procesal Penal (I)', 21: 'Derecho Procesal Penal (II)'}[N] || ((window.EXPRES_T[N].titulo) || '');
+const TIT = {1: 'Derechos Humanos', 9: 'Defensa Nacional', 11: 'Derecho Administrativo', 10: 'Derecho Civil (Código Civil)', 2: 'Terrorismo y delincuencia transnacional', 3: 'Unión Europea (TUE y TFUE)', 20: 'Derecho Procesal Penal (I)', 21: 'Derecho Procesal Penal (II)'}[N] || ((window.EXPRES_T[N].titulo) || '');
 // ---- plantilla: cabecera, editor, tema claro/oscuro y móvil de repaso-t2-borrador.html ----
 const T2 = fs.readFileSync(R + 'repaso-t2-borrador.html', 'utf8');
 const iH1 = T2.indexOf('<h1>'), iRc = T2.indexOf('<div id="rc"'), iPie = T2.indexOf('</div>\n<p class="pie">');
