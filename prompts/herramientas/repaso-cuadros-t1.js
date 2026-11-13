@@ -26,7 +26,7 @@ add(/^Artículo 19 — Impugnación de la competencia de la Corte/, esq('ART. 19
   caja(`Las decisiones relativas a la competencia o la admisibilidad ${d('podrán ser recurridas')} ante la ${a('Sala de Apelaciones')} (art. 82).`)].join('')));
 
 // ───────── Carta de los Derechos Fundamentales: títulos y artículos (págs. 51-52) ─────────
-add(/^Datos y estructura de la Carta/, esq('CARTA DE LOS DERECHOS FUNDAMENTALES DE LA UE · TÍTULOS Y ARTÍCULOS', '', `<div style="display:grid;grid-template-columns:170px 1fr">`
+add(/^Datos y estructura de la Carta/, '<h2>1.2 — CARTA DE LOS DERECHOS FUNDAMENTALES DE LA UNIÓN EUROPEA</h2>' + esq('CARTA DE LOS DERECHOS FUNDAMENTALES DE LA UE · TÍTULOS Y ARTÍCULOS', '', `<div style="display:grid;grid-template-columns:170px 1fr">`
   + [['PREÁMBULO', 'Sin artículos'], ['I · DIGNIDAD', 'Arts. 1 a 5'], ['II · LIBERTADES', 'Arts. 6 a 19'], ['III · IGUALDAD', 'Arts. 20 a 26'],
     ['IV · SOLIDARIDAD', 'Arts. 27 a 38'], ['V · CIUDADANÍA', 'Arts. 39 a 46'], ['VI · JUSTICIA', 'Arts. 47 a 50'], ['VII · DISPOSICIONES GENERALES', 'Arts. 51 a 54']]
     .map(([t, z]) => lab(t, '#d3e8d6') + cel(z)).join('') + '</div>'));
