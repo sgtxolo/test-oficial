@@ -1,5 +1,5 @@
 // Cuadros del Tema 10 (Derecho Civil · Código Civil) rehechos con la forma del temario escaneado («TEMA 10 DERECHO CIVIL-08-08-2026.pdf», leído como imagen el 13/11/2026).
-// Págs. del PDF: 9 (infografía de la vecindad civil), 18, 20, 27, 36, 41 (art. 103), 52. Amarillo y · naranja d · verde a · azul p · lila c · subrayado rojo k. «man» = nota a boli.
+// Págs. del PDF: 9 (infografía de la vecindad civil), 17, 20, 27, 36, 41 (art. 103), 52. Amarillo y · naranja d · verde a · azul p · lila c · subrayado rojo k. «man» = nota a boli.
 // Quedan fuera los recuadros pequeños (listas enmarcadas dentro de los artículos 162, 169-171, 217, 231, 251, 267, 275-276, 295…): su texto ya está en las fichas.
 const { colorea, y, d, a, p, c, k, esq, fl, caja, man } = require('./repaso-cuadros-lib.js');
 const BD = 'border:1px solid rgba(60,70,80,.35)';
@@ -24,7 +24,7 @@ add(/^Artículo 15(?!\d)/, esq('LA VECINDAD CIVIL (ARTS. 14 Y 15 DEL CÓDIGO CIV
   + col(y('PÉRDIDA'), `La vecindad civil se puede perder por la ${d('pérdida de la nacionalidad')} o bien por ${d('adquisición de otra vecindad')}.`)
   + col(y('RECUPERACIÓN'), `La recuperación de la nacionalidad española ${d('lleva consigo')} la de aquella vecindad civil que ostentara el interesado al tiempo de su pérdida.`) + '</div>'].join('')));
 
-// ───────── ART. 35: PERSONAS JURÍDICAS (pág. 18) ─────────
+// ───────── ART. 35: PERSONAS JURÍDICAS (pág. 17) ─────────
 add(/^Artículo 35(?!\d)/, esq('ART. 35 · SON PERSONAS JURÍDICAS', '', [
   `<div style="display:grid;grid-template-columns:1fr 1.3fr;gap:10px;align-items:center">`
   + caja(lis(y('corporaciones'), y('asociaciones'), y('fundaciones'))) + caja(`De ${y('interés público')}, ${d('reconocidas por la ley')}.`) + '</div>'].join('')));
