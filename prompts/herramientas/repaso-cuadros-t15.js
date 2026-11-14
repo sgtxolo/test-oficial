@@ -96,6 +96,12 @@ function vis(html) {
   } else if (/vis-flujo/.test(body.cls)) {
     const paso = p => caja(strip(p.inner.replace(/<span class="et">([\s\S]*?)<\/span>/, '<b>$1</b> · ')));
     inner = kids(body.inner).map(p => p.cls === 'vis-flecha' ? fl : /vis-bifurca/.test(p.cls) ? `<div class="g2s" style="align-items:start">${kids(p.inner).map(paso).join('')}</div>` : paso(p)).join('').replace(/(<div class="fl">▼<\/div>)+/g, fl);
+  } else if (/vis-arbol/.test(body.cls)) {
+    const [raiz, ramas] = kids(body.inner);
+    inner = caja(strip(raiz.inner), 'cen') + fl + kids(ramas.inner).map(r => {
+      const subs = [...r.inner.matchAll(/<span>([\s\S]*?)<\/span>/g)].map(x => '• ' + x[1]);
+      return caja(strip(r.inner.replace(/<div class="vis-sub">[\s\S]*$/, '')) + (subs.length ? '<br>' + subs.join('<br>') : ''));
+    }).join('');
   } else return html;
   let h = '<!--largo-->' + esq(tit, inner);
   h = h.replace(/<mark class="m-resp[^"]*"[^>]*>([\s\S]*?)<\/mark>/g, '$1').replace(/ (data-q|title|data-r|tabindex|onclick)="[^"]*"/g, '')
