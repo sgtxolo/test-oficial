@@ -1,4 +1,15 @@
 // Cuadros del Tema 17 (Menores: LO 5/2000, RD 1774/2004, Instrucción 1/2017) para el Esquema clave: los 15 cuadros del temario ya están transcritos dentro del Exprés (expres/t17.js, <div class="vis">);
-// aquí solo se REDIBUJAN en su sitio con la forma del temario (misma función que los T15 y T16) y con el fosforito del Exprés. Se usa con repaso-hibrido.js (PROP.vis).
+// aquí solo se REDIBUJAN en su sitio con la forma del temario (misma función que los T15 y T16). Se usa con repaso-hibrido.js (PROP.vis).
+// R11-R16, R24 y R25 del RECUERDA (págs. 70-73 del PDF) faltan en el RECUERDA del Exprés: se añaden aquí, texto literal, en su orden numérico.
 const { vis } = require('./repaso-cuadros-t15.js');
-module.exports = { soloPropios: true, vis };
+const I = 'Instrucción 1/2017. Actualización protocolo de actuación policial con menores.';
+const RR = { 11: [I, 'Este régimen especial de actuación policial se aplicará a los menores comprendidos entre los:', 'catorce y los dieciocho años de edad, tanto en labores de protección como de reforma.'],
+  12: [I, 'Cualquiera que sea la infracción penal que cometan, están exentos de responsabilidad penal:', 'los menores de catorce años.'],
+  13: [I, 'Salvo la detención, toda diligencia policial restrictiva de derechos fundamentales será interesada al Ministerio Fiscal para que, por su conducto, se realice la oportuna solicitud:', 'al Juez de Menores competente.'],
+  14: [I, 'En cualquier caso, los traslados se efectuarán siempre:', 'de forma separada de los detenidos mayores de edad.'],
+  15: [I, 'En caso de detención del menor por hechos susceptibles de ser tipificados exclusivamente como delitos contra la seguridad del tráfico no cabe:', 'la renuncia del menor detenido a la preceptiva asistencia de abogado, de conformidad con lo apreciado en la mencionada Circular 9/2011, de 16 de noviembre.'],
+  16: [I, 'En los casos en que el menor se encuentre abandonado o desvalido, o quienes ejerzan la patria potestad, la tutela o la guarda de hecho se negaran a hacerse cargo de su custodia, se hará entrega del menor a:', 'la Entidad Pública de protección, haciéndolo constar en el atestado y comunicándolo al Fiscal.'],
+  24: ['Instrucción 14/2018 de 27 de diciembre, por la que se regulan los libros de registros oficiales.', 'Los datos tratados de los libros oficiales regulados en la presente Instrucción, cuyo registro corresponde a las Direcciones Generales de la Policía y de la Guardia Civil, se efectuará:', 'de modo inmediato en sus respectivos sistemas informáticos conforme se vayan produciendo las vicisitudes objeto de inscripción.'],
+  25: ['Instrucción 14/2018 de 27 de diciembre, por la que se regulan los libros de registros oficiales.', 'En todas las dependencias que tengan la obligación de cumplimentar los libros de registro regulados en la presente Instrucción, se deberá facilitar el acceso:', 'a las autoridades legitimadas en funciones de control e inspección respecto al/los libros de registro que le correspondan, de conformidad con la normativa reguladora de aplicación.'] };
+const rExtra = Object.keys(RR).map(n => `<p><span class="b r">R${n}</span> <b>R${n}</b> · <i>${RR[n][0]}</i> ${RR[n][1]} <b>→</b> <mark>${RR[n][2]}</mark></p>`);
+module.exports = { rExtra, soloPropios: true, vis };
