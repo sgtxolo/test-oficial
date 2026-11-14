@@ -77,6 +77,8 @@ toks.forEach(k => {
 let extra = '', nR = 0, nQ = 0;
 const lineasR = [];
 toks.filter(k => k.t === 'f' && esRec(k)).forEach(k => { const a = k.body.match(/<p data-r="R\d+"[\s\S]*?<\/p>/g) || []; (a.length ? a : (k.body.match(/<p><b>R\d+<\/b>[\s\S]*?<\/p>/g) || []).map(p => p.replace(/^<p><b>(R\d+)<\/b>/, '<p><span class="b r">$1</span> <b>$1</b>'))).forEach(p => lineasR.push(p)); });
+// R que faltan en el RECUERDA del Exprés pero están en el temario: PROP.rExtra = ['<p><span class="b r">R7</span> <b>R7</b> · … <b>→</b> <mark>respuesta</mark></p>'], se insertan en orden numérico
+(PROP && PROP.rExtra || []).forEach(x => { const n = +x.match(/R(\d+)/)[1]; const at = lineasR.findIndex(l => +((l.match(/R(\d+)</) || [])[1]) > n); if (at < 0) lineasR.push(x); else lineasR.splice(at, 0, x); });
 if (lineasR.length) {
   extra += '<div class="rr-wrap"><h2>RECUERDA del temario · fichas R (pregunta → respuesta)</h2>';
   lineasR.forEach(p => {

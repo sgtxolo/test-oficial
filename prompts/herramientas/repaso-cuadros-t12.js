@@ -35,12 +35,12 @@ add(21, esq('DEL GOBIERNO EN FUNCIONES (ART. 21)', '', grid('190px', [
 // ───────── ART. 24: FORMA DE LAS DECISIONES DEL GOBIERNO Y JERARQUÍA DE LOS REGLAMENTOS (págs. 21-22) ─────────
 add(25, esq('ART. 24 · FORMA DE LAS DECISIONES DEL GOBIERNO Y JERARQUÍA DE LOS REGLAMENTOS', 'Las decisiones del Gobierno de la Nación y de sus miembros revisten las formas siguientes', [
   grid('220px', [
-    lab(`${d('Reales Decretos Legislativos')} y ${d('Reales Decretos-leyes')}`), cel(`Las decisiones que aprueban, respectivamente, las normas previstas en los ${p('artículos 82 y 86')} de la Constitución.`),
-    lab(`${d('Reales Decretos del Presidente del Gobierno')}`), cel(`Las disposiciones y actos cuya adopción venga atribuida al ${a('Presidente')}.`),
-    lab(`${d('Reales Decretos acordados en Consejo de Ministros')}`), cel(`Las decisiones que aprueben normas reglamentarias de la competencia de éste y las resoluciones que deban adoptar dicha forma jurídica.`),
-    lab(`${d('Acuerdos del Consejo de Ministros')}`), cel(`Las decisiones de dicho órgano colegiado que ${k('no')} deban adoptar la forma de Real Decreto.`),
-    lab(`${d('Acuerdos adoptados en Comisiones Delegadas del Gobierno')}`), cel(`Las disposiciones y resoluciones de tales órganos colegiados. Revestirán la forma de ${y('Orden del Ministro competente')} o del ${a('Ministro de la Presidencia')}, cuando la competencia corresponda a distintos Ministros.`),
-    lab(`${d('Órdenes Ministeriales')}`), cel(`Las disposiciones y resoluciones de los ${a('Ministros')}. Cuando afecte a varios Departamentos revestirá la forma de Orden del ${a('Ministro de la Presidencia')}, dictada a propuesta de los Ministros interesados.`)]),
+    lab(`a) ${d('Reales Decretos Legislativos')} y ${d('Reales Decretos-leyes')}`), cel(`Las decisiones que aprueban, respectivamente, las normas previstas en los ${p('artículos 82 y 86')} de la Constitución.`),
+    lab(`b) ${d('Reales Decretos del Presidente del Gobierno')}`), cel(`Las disposiciones y actos cuya adopción venga atribuida al ${a('Presidente')}.`),
+    lab(`c) ${d('Reales Decretos acordados en Consejo de Ministros')}`), cel(`Las decisiones que aprueben normas reglamentarias de la competencia de éste y las resoluciones que deban adoptar dicha forma jurídica.`),
+    lab(`d) ${d('Acuerdos del Consejo de Ministros')}`), cel(`Las decisiones de dicho órgano colegiado que ${k('no')} deban adoptar la forma de Real Decreto.`),
+    lab(`e) ${d('Acuerdos adoptados en Comisiones Delegadas del Gobierno')}`), cel(`Las disposiciones y resoluciones de tales órganos colegiados. Tales acuerdos revestirán la forma de ${y('Orden del Ministro competente')} o del ${a('Ministro de la Presidencia')}, cuando la competencia corresponda a distintos Ministros.`),
+    lab(`f) ${d('Órdenes Ministeriales')}`), cel(`Las disposiciones y resoluciones de los ${a('Ministros')}. Cuando la disposición o resolución afecte a varios Departamentos revestirá la forma de Orden del ${a('Ministro de la Presidencia')}, dictada a propuesta de los Ministros interesados.`)]),
   `<div style="margin-top:8px;font-weight:800">LOS REGLAMENTOS SE ORDENARÁN SEGÚN LA SIGUIENTE JERARQUÍA:</div>`,
   caja(`${p('1.º')} Disposiciones aprobadas por ${y('Real Decreto del Presidente del Gobierno')} o acordado en el ${a('Consejo de Ministros')}.<br>${p('2.º')} Disposiciones aprobadas por ${y('Orden Ministerial')}.`)].join('')));
 
@@ -50,5 +50,7 @@ add(28, esq('ART. 27 · TRAMITACIÓN URGENTE DE INICIATIVAS NORMATIVAS EN EL ÁM
   `<div style="margin:4px 0">La ${y('Memoria del Análisis de Impacto Normativo')} que acompañe al proyecto ${d('mencionará')} la existencia del acuerdo de tramitación urgente, así como las circunstancias que lo sirven de fundamento.</div>`,
   caja(`${y('2.')} La tramitación por vía de urgencia ${d('implicará')} que:<br>${p('a)')} Los ${y('plazos previstos')} para la realización de los trámites del procedimiento de elaboración, establecidos en ésta o en otra norma, se ${d('reducirán a la mitad')} de su duración.<br>${p('b)')} ${k('No')} será preciso el trámite de ${y('consulta pública')} previsto en el artículo 26.2, sin perjuicio de la realización de los trámites de audiencia pública o información pública sobre el texto a los que se refiere el artículo 26.6, cuyo plazo de realización será de ${p('siete días')}.<br>${p('c)')} La falta de emisión de un dictamen o informe ${y('preceptivo')} en plazo ${k('no impedirá')} la continuación del procedimiento, sin perjuicio de su eventual incorporación y consideración cuando se reciba.`)].join('')));
 
-module.exports = { soloPropios: true, cuadros: out.map(o => ({ ...o, html: colorea(o.html) })) };
+// R7 del temario (pág. 32, RECUERDA) que falta en el RECUERDA del Exprés
+const rExtra = ['<p><span class="b r">R7</span> <b>R7</b> · <i>Ley del Gobierno.</i> El Gobierno aprobará anualmente un Plan Normativo que contendrá las iniciativas legislativas o reglamentarias que vayan a ser elevadas para su aprobación: <b>→</b> <mark>en el año siguiente.</mark></p>'];
+module.exports = { rExtra, soloPropios: true, cuadros: out.map(o => ({ ...o, html: colorea(o.html) })) };
 if (require.main === module) console.log(out.length + ' cuadros');
