@@ -103,6 +103,7 @@ function vis(html) {
       return caja(strip(r.inner.replace(/<div class="vis-sub">[\s\S]*$/, '')) + (subs.length ? '<br>' + subs.join('<br>') : ''));
     }).join('');
   } else return html;
+  if (/RESUMEN · art. 10.2/.test(tit)) inner = inner.replace(/De (d) a (d) años(?:<[^>]*>)*Medida de INTERNAMIENTO EN RÉGIMEN CERRADO: De d a d años/g, '<b>Internamiento en régimen cerrado</b>: de $1 a $2 años<br>').replace(/Hasta (d) años(?:<[^>]*>)*LIBERTAD VIGILADA: Hasta d años/g, '<b>Libertad vigilada</b>: hasta $1 años');
   let h = '<!--largo-->' + esq(tit, inner);
   h = h.replace(/<mark class="m-resp[^"]*"[^>]*>([\s\S]*?)<\/mark>/g, '$1').replace(/ (data-q|title|data-r|tabindex|onclick)="[^"]*"/g, '')
     .replace(/<span class="m-circulo[^"]*">/g, '<span style="border:1.5px solid #c2185b;border-radius:10px;padding:0 3px">')
