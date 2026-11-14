@@ -69,7 +69,7 @@ toks.forEach(k => {
   if (k.t === 'h') { hAct = k.txt; hPend = true; return; }
   if (!sel.has(k.i)) return;
   if (hPend) { body += '<h2>' + hAct + '</h2>'; hPend = false; }
-  if (k.t === 'v') { body += '<div class="vis-wrap">' + k.html.split('>true<').join('>⇄<') + '</div>'; nV++; return; }
+  if (k.t === 'v') { body += '<div class="vis-wrap"' + (/<!--largo-->/.test(k.html) ? ' style="break-inside:auto"' : '') + '>' + k.html.split('>true<').join('>⇄<') + '</div>'; nV++; return; }
   nF++; body += '<div class="art' + (k.exof ? ' of' : '') + '"><h3>' + k.hd.replace(/ · R[0-9]+(?: R[0-9]+)*/g, '').replace(/<mark[^>]*>|<\/mark>|<u[^>]*>|<\/u>/g, '') + '</h3>' + limpia(k.rc) + (k.recortada ? '<p class="rec">(…) solo los apartados con pregunta, EXOF o ficha R</p>' : '') + '</div>\n';
 });
 

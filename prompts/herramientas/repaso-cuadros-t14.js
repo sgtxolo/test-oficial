@@ -80,5 +80,5 @@ const RR = [
   [RGr, 'Los Asesores prestarán al Defensor del Pueblo y a los Adjuntos:', 'la cooperación técnico-jurídica necesaria para el cumplimiento de sus funciones.'],
   [RGr, 'El presupuesto de la Institución del Defensor del Pueblo se integrará en:', 'la sección presupuestaria del presupuesto de las Cortes Generales como un servicio más del mismo.']];
 const rExtra = RR.map(([ley, q, r], i) => `<p><span class="b r">R${i + 1}</span> <b>R${i + 1}</b> · <i>${ley}</i> ${q} <b>→</b> <mark>${r}</mark></p>`);
-module.exports = { rExtra, soloPropios: true, cuadros: out.map(o => ({ ...o, html: colorea(o.html) })) };
+module.exports = { rExtra, soloPropios: true, cuadros: out.map((o, i) => ({ ...o, html: i < 3 ? '<!--largo-->' + colorea(o.html).replace('<div class="esq">', '<div class="esq" style="break-inside:auto">').replace('<div class="cuerpo">', '<div class="cuerpo" style="break-inside:auto">') : colorea(o.html) })) };
 if (require.main === module) console.log(out.length + ' cuadros');

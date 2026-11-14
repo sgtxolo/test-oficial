@@ -7,7 +7,7 @@ window.EXSUBCLAVE_REPASO = {
   6: "repaso-t6-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
   7: "repaso-t7-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
   8: "repaso-t8-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
-  14: "repaso-t14-borrador.html",   // 14/11/2026: Esquema clave T14 Defensor del Pueblo (4 cuadros del temario + 21 fichas + R1-R15 + rápidas)
+  14: "repaso-t14-borrador.html",   // 14/11/2026: Esquema clave T14 Defensor del Pueblo (4 cuadros del temario + 28 fichas + R1-R15 + rápidas)
   13: "repaso-t13-borrador.html",   // 14/11/2026: Esquema clave T13 LJCA (5 cuadros del temario + 16 fichas + R1-R19 + rápidas)
   12: "repaso-t12-borrador.html",   // 13/11/2026: Esquema clave T12 Gobierno (5 cuadros del temario + 17 fichas + R + rápidas)
   11: "repaso-t11-borrador.html",   // 14/11/2026: Esquema clave T11 Derecho Administrativo (12 de 40 cuadros + 13 fichas EXOF/R + R1-R55 + rápidas)
