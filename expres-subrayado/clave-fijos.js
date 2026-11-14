@@ -7,6 +7,7 @@ window.EXSUBCLAVE_REPASO = {
   6: "repaso-t6-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
   7: "repaso-t7-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
   8: "repaso-t8-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
+  19: "repaso-t19-borrador.html",   // 14/11/2026: Esquema clave T19 Derecho Penal PE (14 de 29 cuadros redibujados + 14 fichas + R1-R29 + rápidas)
   18: "repaso-t18-borrador.html",   // 14/11/2026: Esquema clave T18 Derecho Penal PG (13 cuadros redibujados + 25 fichas + R1-R29 + rápidas)
   17: "repaso-t17-borrador.html",   // 14/11/2026: Esquema clave T17 Menores (15 cuadros redibujados + 3 fichas + R1-R25 + rápidas)
   16: "repaso-t16-borrador.html",   // 14/11/2026: Esquema clave T16 Igualdad y acoso (15 cuadros del temario redibujados + 8 fichas + R1-R14 + rápidas)
