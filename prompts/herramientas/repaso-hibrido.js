@@ -11,7 +11,7 @@ const H = window.EXPRES_T[N].html;
 const cierra = (s, from) => { let d = 0; const r = new RegExp('<div[ >]|</div>', 'g'); r.lastIndex = from; let x; while ((x = r.exec(s))) { d += x[0] === '</div>' ? -1 : 1; if (d === 0) return r.lastIndex; } return s.length; };
 const plano = h => h.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 // ---- tokens en orden de documento: título, ficha, cuadro ----
-const toks = [], re = /<div class="bloque-titulo">|<div class="ex-ficha">|<div class="vis">/g; let m, ult = 0;
+const toks = [], re = /<div class="bloque-titulo">|<div class="ex-ficha(?: ex-of)?">|<div class="vis">/g; let m, ult = 0;
 while ((m = re.exec(H))) {
   if (m.index < ult) continue; const fin = cierra(H, m.index), blk = H.slice(m.index, fin); ult = fin;
   if (m[0].includes('bloque')) toks.push({ t: 'h', txt: plano(blk) });
@@ -107,7 +107,7 @@ if (QQ) {
 if (!process.env.SIN_EXTRA) body += extra;
 body = body.replace(/<span class="ex-sello ex-sello-r">(R\d+)<\/span>/g, '<span class="b r">$1</span>').replace(/<span class="ex-sello">EXOF<\/span>/g, '<span class="b of">EXOF</span>').replace(/<span class="ex-sello">✱<\/span>/g, '<span class="b ex">✱</span>');
 for (let k = 0; k < 4; k++) body = body.replace(/<mark class="([a-z]+)">([^<]*)<\/mark>(\s*)<mark class="\1">/g, '<mark class="$1">$2$3');
-const TIT = {1: 'Derechos Humanos', 9: 'Defensa Nacional', 12: 'Gobierno y Administración', 11: 'Derecho Administrativo', 10: 'Derecho Civil (Código Civil)', 2: 'Terrorismo y delincuencia transnacional', 3: 'Unión Europea (TUE y TFUE)', 20: 'Derecho Procesal Penal (I)', 21: 'Derecho Procesal Penal (II)'}[N] || ((window.EXPRES_T[N].titulo) || '');
+const TIT = {13: 'Jurisdicción Contencioso-Administrativa', 1: 'Derechos Humanos', 9: 'Defensa Nacional', 12: 'Gobierno y Administración', 11: 'Derecho Administrativo', 10: 'Derecho Civil (Código Civil)', 2: 'Terrorismo y delincuencia transnacional', 3: 'Unión Europea (TUE y TFUE)', 20: 'Derecho Procesal Penal (I)', 21: 'Derecho Procesal Penal (II)'}[N] || ((window.EXPRES_T[N].titulo) || '');
 // ---- plantilla: cabecera, editor, tema claro/oscuro y móvil de repaso-t2-borrador.html ----
 const T2 = fs.readFileSync(R + 'repaso-t2-borrador.html', 'utf8');
 const iH1 = T2.indexOf('<h1>'), iRc = T2.indexOf('<div id="rc"'), iPie = T2.indexOf('</div>\n<p class="pie">');
