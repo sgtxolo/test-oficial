@@ -26,7 +26,9 @@ while ((m = re.exec(H))) {
 }
 let PROP = null; try { PROP = require('./repaso-cuadros-t' + N + '.js'); } catch (e) {}
 if (PROP) {
-  for (let i = toks.length - 1; i >= 0; i--) if (toks[i].t === 'v') toks.splice(i, 1);
+  // PROP.vis(html) → html: redibuja EN SU SITIO los cuadros del Exprés (en vez de quitarlos y anclar otros); con PROP.cuadros ausente, solo esto
+  if (PROP.vis) { toks.forEach(k => { if (k.t === 'v') k.html = PROP.vis(k.html); }); PROP.cuadros = PROP.cuadros || []; }
+  else for (let i = toks.length - 1; i >= 0; i--) if (toks[i].t === 'v') toks.splice(i, 1);
   // CUAD_MAX=n: si hay demasiados cuadros para las págs. del límite, quedan los n cuyo artículo tiene más peso (EXOF·5 + R·3 + oficiales·1,5 + ✱) y se informa de los que se dejan fuera
   if (process.env.CUAD_MAX && PROP.cuadros.every(cu => cu.art)) {
     const numP = k => { const m = plano(k.hd).match(/^Art[ií]culos? (\d+)/); return m ? +m[1] : -1; };
@@ -107,7 +109,7 @@ if (QQ) {
 if (!process.env.SIN_EXTRA) body += extra;
 body = body.replace(/<span class="ex-sello ex-sello-r">(R\d+)<\/span>/g, '<span class="b r">$1</span>').replace(/<span class="ex-sello">EXOF<\/span>/g, '<span class="b of">EXOF</span>').replace(/<span class="ex-sello">✱<\/span>/g, '<span class="b ex">✱</span>');
 for (let k = 0; k < 4; k++) body = body.replace(/<mark class="([a-z]+)">([^<]*)<\/mark>(\s*)<mark class="\1">/g, '<mark class="$1">$2$3');
-const TIT = {14: 'El Defensor del Pueblo', 13: 'Jurisdicción Contencioso-Administrativa', 1: 'Derechos Humanos', 9: 'Defensa Nacional', 12: 'Gobierno y Administración', 11: 'Derecho Administrativo', 10: 'Derecho Civil (Código Civil)', 2: 'Terrorismo y delincuencia transnacional', 3: 'Unión Europea (TUE y TFUE)', 20: 'Derecho Procesal Penal (I)', 21: 'Derecho Procesal Penal (II)'}[N] || ((window.EXPRES_T[N].titulo) || '');
+const TIT = {15: 'Protección Integral contra la Violencia de Género (VioGén)', 14: 'El Defensor del Pueblo', 13: 'Jurisdicción Contencioso-Administrativa', 1: 'Derechos Humanos', 9: 'Defensa Nacional', 12: 'Gobierno y Administración', 11: 'Derecho Administrativo', 10: 'Derecho Civil (Código Civil)', 2: 'Terrorismo y delincuencia transnacional', 3: 'Unión Europea (TUE y TFUE)', 20: 'Derecho Procesal Penal (I)', 21: 'Derecho Procesal Penal (II)'}[N] || ((window.EXPRES_T[N].titulo) || '');
 // ---- plantilla: cabecera, editor, tema claro/oscuro y móvil de repaso-t2-borrador.html ----
 const T2 = fs.readFileSync(R + 'repaso-t2-borrador.html', 'utf8');
 const iH1 = T2.indexOf('<h1>'), iRc = T2.indexOf('<div id="rc"'), iPie = T2.indexOf('</div>\n<p class="pie">');
