@@ -76,5 +76,9 @@ function vis(html) {
   if (!key) return html;
   return colorea(B[key]());
 }
-module.exports = { soloPropios: true, vis, KEYS };
+// R1…R21 del RECUERDA del temario (págs. 57-60), en pregunta → respuesta (el Exprés no lleva ficha RECUERDA: las R van como pines en su artículo)
+const RR = require('./tema22/r-temario-t22.js');
+const corto = l => l.replace(/^Ley Orgánica (\d+\/\d{4}).*$/, 'LO $1');
+const rExtra = RR.map(x => '<p><span class="b r">R' + x.n + '</span> <b>R' + x.n + '</b> · <i>' + corto(x.ley) + '.</i> ' + x.p + ' <b>→</b> <mark>' + x.r + '</mark></p>');
+module.exports = { rExtra, soloPropios: true, vis, KEYS };
 if (require.main === module) { global.window = {}; eval(fs.readFileSync(path.join(__dirname, '..', '..', 'expres', 't22.js'), 'utf8')); const H = window.EXPRES_T[22].html; let n = 0, i = 0, pp = 0; while ((i = H.indexOf('<div class="vis">', pp)) >= 0) { n++; const t = H.slice(i, i + 400).match(/vis-t"><i>[^<]*<\/i>([^<]*)/); console.log(n, (t || [, ''])[1].slice(0, 70), '→', vis(H.slice(i, i + 4000)) === H.slice(i, i + 4000) ? 'SIN REDIBUJAR' : 'ok'); pp = i + 20; } }
