@@ -1,0 +1,23 @@
+[
+ {
+  "id": "a",
+  "nombre": "LO 9/1983 · Derecho de Reunión",
+  "paginas": [5, 9],
+  "inicio": "^LEY ORGÁNICA 9/1983",
+  "cit": "Ley Orgánica 9/1983|LO 9/1983|Derecho de Reunión"
+ },
+ {
+  "id": "b",
+  "nombre": "LO 7/2021 · Protección de datos (ámbito penal)",
+  "paginas": [11, 18],
+  "inicio": "^LEY ORGÁNICA 7/2021",
+  "cit": "Ley Orgánica 7/2021|LO 7/2021|datos personales tratados"
+ },
+ {
+  "id": "c",
+  "nombre": "LO 4/2015 · Protección de la Seguridad Ciudadana",
+  "paginas": [17, 56],
+  "inicio": "^LEY ORGÁNICA 4/2015",
+  "cit": "Ley Orgánica 4/2015|LO 4/2015|Seguridad Ciudadana"
+ }
+]

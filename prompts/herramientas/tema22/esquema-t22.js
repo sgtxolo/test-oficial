@@ -29,7 +29,8 @@ const flushP = () => {
 };
 const cierraArt = () => { flushP(); if (abierta) { h += parrafos.join('') + '</div></div></div>'; parrafos = []; abierta = false; } };
 const vuelcaCab = () => { if (cab.length) { cierraArt(); h += `<div class="bloque-titulo">${esc(cab.join(' · '))}</div>`; cab = []; } };
-const abre = (clave, rotulo) => { cierraArt(); vuelcaCab(); art = clave; idx = 0; tokCnt = {}; nota = false; h += `<div class="articulo"><div class="articulo-head">${esc(rotulo)}</div><div class="articulo-body"><div class="txt">`; abierta = true; };
+const SUF = { 1: 'Derecho de Reunión', 2: 'Protección de datos penal', 3: 'Seguridad Ciudadana' };
+const abre = (clave, rotulo) => { rotulo = rotulo + ' · ' + SUF[ley]; cierraArt(); vuelcaCab(); art = clave; idx = 0; tokCnt = {}; nota = false; h += `<div class="articulo"><div class="articulo-head">${esc(rotulo)}</div><div class="articulo-body"><div class="txt">`; abierta = true; };
 const nuevoP = (texto) => { flushP(); idx++; const n = texto.match(TOK); const tk = n ? n[1] : ''; tokCnt[tk] = (tokCnt[tk] || 0) + 1; cur = n ? { tok: n[1], texto: n[2], idx, cnt: tokCnt[tk] } : { tok: '', texto, idx, cnt: tokCnt[tk] }; };
 const TITULO = [
   { re: /^LEY ORGÁNICA 9\/1983/, ley: 1, rot: 'LEY ORGÁNICA 9/1983, DE 15 DE JULIO, REGULADORA DEL DERECHO DE REUNIÓN' },
