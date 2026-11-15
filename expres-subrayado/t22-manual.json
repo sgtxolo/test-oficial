@@ -1,0 +1,460 @@
+{
+ "manual": [
+  {
+   "id": "a-pre",
+   "nombre": "LO 9/1983 · Exposición de motivos",
+   "piezas": [
+    [
+     4,
+     0.18,
+     0.67
+    ]
+   ],
+   "expres": 1,
+   "ficha": "^Exposición de motivos"
+  },
+  {
+   "id": "a-da",
+   "nombre": "LO 9/1983 · Disposición adicional",
+   "piezas": [
+    [
+     8,
+     0.3,
+     0.42
+    ]
+   ],
+   "expres": 1,
+   "ficha": "^Disposición adicional · Derecho"
+  },
+  {
+   "id": "a-df1",
+   "nombre": "LO 9/1983 · Disposición final primera",
+   "piezas": [
+    [
+     8,
+     0.53,
+     0.6
+    ]
+   ]
+  },
+  {
+   "id": "a-df2",
+   "nombre": "LO 9/1983 · Disposición final segunda",
+   "piezas": [
+    [
+     8,
+     0.62,
+     0.69
+    ]
+   ]
+  },
+  {
+   "id": "a-dt",
+   "nombre": "LO 9/1983 · Disposición transitoria",
+   "piezas": [
+    [
+     8,
+     0.735,
+     0.835
+    ]
+   ]
+  },
+  {
+   "id": "b-2",
+   "nombre": "LO 7/2021 · Artículo 2",
+   "piezas": [
+    [
+     10,
+     0.31,
+     0.77
+    ]
+   ]
+  },
+  {
+   "id": "b-4",
+   "nombre": "LO 7/2021 · Artículo 4",
+   "piezas": [
+    [
+     11,
+     0.045,
+     0.285
+    ]
+   ]
+  },
+  {
+   "id": "b-5",
+   "nombre": "LO 7/2021 · Artículo 5",
+   "piezas": [
+    [
+     11,
+     0.335,
+     0.655
+    ]
+   ]
+  },
+  {
+   "id": "b-6",
+   "nombre": "LO 7/2021 · Artículo 6",
+   "piezas": [
+    [
+     11,
+     0.735,
+     0.99
+    ],
+    [
+     12,
+     0.09,
+     0.365
+    ]
+   ]
+  },
+  {
+   "id": "b-8",
+   "nombre": "LO 7/2021 · Artículo 8",
+   "piezas": [
+    [
+     13,
+     0.045,
+     0.28
+    ]
+   ]
+  },
+  {
+   "id": "b-15",
+   "nombre": "LO 7/2021 · Artículo 15",
+   "piezas": [
+    [
+     14,
+     0.47,
+     0.645
+    ]
+   ]
+  },
+  {
+   "id": "b-16",
+   "nombre": "LO 7/2021 · Artículo 16",
+   "piezas": [
+    [
+     14,
+     0.67,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "b-17",
+   "nombre": "LO 7/2021 · Artículo 17",
+   "piezas": [
+    [
+     15,
+     0.04,
+     0.33
+    ]
+   ]
+  },
+  {
+   "id": "b-18",
+   "nombre": "LO 7/2021 · Artículo 18",
+   "piezas": [
+    [
+     15,
+     0.345,
+     0.65
+    ]
+   ]
+  },
+  {
+   "id": "b-19",
+   "nombre": "LO 7/2021 · Artículo 19",
+   "piezas": [
+    [
+     15,
+     0.65,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "c-pre",
+   "nombre": "LO 4/2015 · Preámbulo",
+   "piezas": [
+    [
+     16,
+     0.27,
+     0.95
+    ],
+    [
+     17,
+     0.03,
+     0.97
+    ],
+    [
+     18,
+     0.03,
+     0.97
+    ],
+    [
+     19,
+     0.03,
+     0.97
+    ],
+    [
+     20,
+     0.03,
+     0.8
+    ]
+   ],
+   "expres": 1,
+   "ficha": "^Preámbulo III"
+  },
+  {
+   "id": "c-da1",
+   "nombre": "LO 4/2015 · Disposición adicional primera",
+   "piezas": [
+    [
+     52,
+     0.165,
+     0.265
+    ]
+   ]
+  },
+  {
+   "id": "c-da2",
+   "nombre": "LO 4/2015 · Disposición adicional segunda",
+   "piezas": [
+    [
+     52,
+     0.265,
+     0.345
+    ]
+   ]
+  },
+  {
+   "id": "c-da3",
+   "nombre": "LO 4/2015 · Disposición adicional tercera",
+   "piezas": [
+    [
+     52,
+     0.355,
+     0.545
+    ]
+   ]
+  },
+  {
+   "id": "c-da4",
+   "nombre": "LO 4/2015 · Disposición adicional cuarta",
+   "piezas": [
+    [
+     52,
+     0.555,
+     0.665
+    ]
+   ],
+   "expres": 1,
+   "ficha": "^Disposición adicional cuarta"
+  },
+  {
+   "id": "c-da5",
+   "nombre": "LO 4/2015 · Disposición adicional quinta",
+   "piezas": [
+    [
+     52,
+     0.68,
+     0.89
+    ]
+   ]
+  },
+  {
+   "id": "c-da6",
+   "nombre": "LO 4/2015 · Disposición adicional sexta",
+   "piezas": [
+    [
+     53,
+     0.115,
+     0.315
+    ]
+   ]
+  },
+  {
+   "id": "c-da7",
+   "nombre": "LO 4/2015 · Disposición adicional séptima",
+   "piezas": [
+    [
+     53,
+     0.33,
+     0.42
+    ]
+   ]
+  },
+  {
+   "id": "c-dt",
+   "nombre": "LO 4/2015 · Disposición transitoria única",
+   "piezas": [
+    [
+     53,
+     0.47,
+     0.58
+    ]
+   ]
+  },
+  {
+   "id": "c-dd",
+   "nombre": "LO 4/2015 · Disposición derogatoria única",
+   "piezas": [
+    [
+     53,
+     0.64,
+     0.78
+    ]
+   ]
+  },
+  {
+   "id": "c-df1",
+   "nombre": "LO 4/2015 · Disposición final primera",
+   "piezas": [
+    [
+     54,
+     0.12,
+     0.45
+    ]
+   ]
+  },
+  {
+   "id": "c-df2",
+   "nombre": "LO 4/2015 · Disposición final segunda",
+   "piezas": [
+    [
+     54,
+     0.62,
+     0.77
+    ]
+   ]
+  },
+  {
+   "id": "c-df3",
+   "nombre": "LO 4/2015 · Disposición final tercera",
+   "piezas": [
+    [
+     54,
+     0.78,
+     0.97
+    ],
+    [
+     55,
+     0.07,
+     0.23
+    ]
+   ]
+  },
+  {
+   "id": "c-df4",
+   "nombre": "LO 4/2015 · Disposición final cuarta",
+   "piezas": [
+    [
+     55,
+     0.265,
+     0.345
+    ]
+   ]
+  },
+  {
+   "id": "c-df5",
+   "nombre": "LO 4/2015 · Disposición final quinta",
+   "piezas": [
+    [
+     55,
+     0.36,
+     0.46
+    ]
+   ]
+  },
+  {
+   "id": "b-1",
+   "nombre": "LO 7/2021 · Artículo 1",
+   "piezas": [
+    [
+     10,
+     0.19,
+     0.3
+    ]
+   ]
+  },
+  {
+   "id": "b-3",
+   "nombre": "LO 7/2021 · Artículo 3",
+   "piezas": [
+    [
+     10,
+     0.78,
+     0.97
+    ]
+   ]
+  },
+  {
+   "id": "b-7",
+   "nombre": "LO 7/2021 · Artículo 7",
+   "piezas": [
+    [
+     12,
+     0.38,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "b-9",
+   "nombre": "LO 7/2021 · Artículo 9",
+   "piezas": [
+    [
+     13,
+     0.31,
+     0.55
+    ]
+   ]
+  },
+  {
+   "id": "b-11",
+   "nombre": "LO 7/2021 · Artículo 11",
+   "piezas": [
+    [
+     13,
+     0.545,
+     0.63
+    ]
+   ]
+  },
+  {
+   "id": "b-12",
+   "nombre": "LO 7/2021 · Artículo 12",
+   "piezas": [
+    [
+     13,
+     0.64,
+     0.83
+    ]
+   ]
+  },
+  {
+   "id": "b-13",
+   "nombre": "LO 7/2021 · Artículo 13",
+   "piezas": [
+    [
+     14,
+     0.04,
+     0.34
+    ]
+   ]
+  },
+  {
+   "id": "b-14",
+   "nombre": "LO 7/2021 · Artículo 14",
+   "piezas": [
+    [
+     14,
+     0.34,
+     0.455
+    ]
+   ]
+  }
+ ]
+}

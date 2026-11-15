@@ -244,7 +244,7 @@ for (const [id, ed, cita, art] of T) {
   if (ed.c !== undefined) q.correcta = ed.c;
   if (new Set(q.opciones.map(nz)).size < 4) { malas.push(id + ' (opciones repetidas)'); continue; }
   const a = art || lab(cita); tabla.push(id + ':' + a);
-  q.explicacion = `<span class="ex-resp">Respuesta correcta: <b>${L[q.correcta]}</b> · <mark class="ex-key">${esc(q.opciones[q.correcta].replace(/\.$/, ''))}</mark></span><span class="ref-norma">${a ? (/^d/.test(a) ? 'Art. ' : '') + a + ' · ' : ''}${normaDe(q)}</span><span class="ref-concepto">"${esc(cita)}"</span>`;
+  q.explicacion = `<span class="ex-resp">Respuesta correcta: <b>${L[q.correcta]}</b> · <mark class="ex-key">${esc(q.opciones[q.correcta].replace(/\.$/, ''))}</mark></span><span class="ref-norma">${a ? (/^[0-9]/.test(a) ? 'Art. ' : '') + a + ' · ' : ''}${normaDe(q)}</span><span class="ref-concepto">"${esc(cita)}"</span>`;
   s = s.slice(0, i) + JSON.stringify(q) + s.slice(j + 1); n++;
 }
 if (repes.length) console.log('⚠ ids repetidos:', repes.join(', '));

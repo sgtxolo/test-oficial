@@ -23,7 +23,7 @@ let h = '', abierta = false, art = '', idx = 0, cur = null, cab = [], parrafos =
 const flushP = () => {
   if (cur) {
     const sg = cur.tok ? (/[ªº]\.$/.test(cur.tok) ? ' style="margin-left:36px"' : /\)$/.test(cur.tok) ? ' style="margin-left:18px"' : '') : '';
-    parrafos.push(`<p${sg}${attrs(art, cur.tok || '~', cur.idx, cur.texto, cur.cnt)}>${cur.tok ? esc(cur.tok) + ' ' : ''}${esc(cur.texto)}</p>`);
+    parrafos.push(`<p${sg}${attrs(art, cur.tok || '~', cur.idx, cur.texto, cur.cnt)}>${cur.tok ? '<b>' + esc(cur.tok) + '</b> ' : ''}${esc(cur.texto)}</p>`);
     cur = null;
   }
 };
@@ -71,7 +71,7 @@ for (i = 0; i < lineas.length; i++) {
   if (em || ew || ed || eo) {
     pre = false;
     const clave = em ? em[1] : ew ? 'w' + ORD[ew[1]] : ed ? ed[1] : 'DF' + eo[1];
-    const rot = em ? 'Artículo ' + em[1] : ew ? 'Artículo ' + ew[1] : ed ? ed[1] : 'Disposición final ' + eo[1].toLowerCase();
+    const rot = em ? 'Artículo ' + em[1] : ew ? 'Artículo ' + ORD[ew[1]] : ed ? ed[1] : 'Disposición final ' + eo[1].toLowerCase();
     const resto = em ? em[2] : ew ? ew[2] : ed ? ed[2] : '';
     abre(clave, rot);
     if (resto) { idx++; cur = { tok: '', texto: resto, idx, cnt: 1, titulo: true }; }

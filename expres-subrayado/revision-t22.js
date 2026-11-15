@@ -1,0 +1,2 @@
+// Recortes del Exprés que se revisan a mano (el Exprés corta dentro de un apartado): todos = los que hay que revisar, hechos = ya revisados (a ojo contra la imagen el 15/11/2026).
+(window.EXSUB_REV=window.EXSUB_REV||{})[22]={"todos":["a-9","c-4","c-8","c-10","c-11","c-12","c-20","c-23","c-27","c-32","c-33","c-37","c-45","c-53"],"hechos":["a-9","c-4","c-8","c-10","c-11","c-12","c-20","c-23","c-27","c-32","c-33","c-37","c-45","c-53"],"esq":[],"tachado":[]};

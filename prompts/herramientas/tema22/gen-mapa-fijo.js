@@ -11,7 +11,7 @@ const T = 22;   // el índice k del mapa cuenta las fichas de TODO el esquema
 const buscar = (cab, ini) => { const k = fichas.findIndex(f => f.cab.startsWith(cab)); if (k < 0) throw new Error('sin ficha ' + cab); const j = fichas[k].ps.findIndex(p => p.startsWith(ini)); if (j < 0) throw new Error('sin párrafo ' + cab + ' · ' + ini + ' → ' + fichas[k].ps.map(x => x.slice(0, 25)).join(' | ')); return k + '-' + j; };
 const RE = 'Derecho de Reunión', DP = 'Protección de datos penal', CP = 'Seguridad Ciudadana';
 const F = {
-  '22-38': buscar('Artículo tercero · ' + RE, '1. Ninguna reunión'),
+  '22-38': buscar('Artículo 3 · ' + RE, '1. Ninguna reunión'),
   '22-46': buscar('Artículo 4 · ' + DP, '1. Será autoridad competente'),
   '22-60': buscar('Artículo 33 · ' + CP, 'En cada grado'),
   '22-204': buscar('Artículo 12 · ' + CP, '1. La competencia'),
@@ -19,12 +19,12 @@ const F = {
   '22-71': buscar('Artículo 12 · ' + CP, '1. La competencia'),
   '22-112': buscar('Artículo 37 · ' + CP, '1. La celebración de reuniones'),
   '22-113': buscar('Artículo 31 · ' + CP, '1. Los hechos susceptibles'),
-  '22-126': buscar('Artículo quinto · ' + RE, 'c) Cuando se hiciere uso de uniformes'),
-  '22-163': buscar('Artículo quinto · ' + RE, 'c) Cuando se hiciere uso de uniformes'),
+  '22-126': buscar('Artículo 5 · ' + RE, 'c) Cuando se hiciere uso de uniformes'),
+  '22-163': buscar('Artículo 5 · ' + RE, 'c) Cuando se hiciere uso de uniformes'),
   '22-150': buscar('Artículo 37 · ' + CP, '17. El consumo de bebidas'),
   '22-159': buscar('Artículo 54 · ' + CP, '3. Una vez realizado el pago'),
   '22-195': buscar('Disposición adicional cuarta · ' + CP, 'A efectos de dar cumplimiento'),
-  '22-197': buscar('Artículo cuarto · ' + RE, '4. La asistencia de militares'),
+  '22-197': buscar('Artículo 4 · ' + RE, '4. La asistencia de militares'),
   '22-205': buscar('Artículo 16 · ' + CP, '1. En el cumplimiento de sus funciones'),
   '22-ia-1355': buscar('Artículo 39 · ' + CP, '2. La multa podrá llevar'),
   '22-ia-1428': buscar('Artículo 49 · ' + CP, '1. Incoado el expediente'),
