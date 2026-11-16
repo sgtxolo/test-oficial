@@ -902,18 +902,34 @@ function limitesBlanco(img) {   // fracción [izq, der] de la foto que contiene 
 function aplicaRecorte(caja, b) { const w = Math.max(.35, b[1] - b[0]); caja.style.width = (100 / w) + '%'; caja.style.marginLeft = (-b[0] / w * 100) + '%'; }
 function recorteBlanco(img, caja) { const b = limitesBlanco(img); if (b) aplicaRecorte(caja, b); }
 function modoLect(p) { const hay = {s: true, x: p.fx !== undefined, e: !!((C[tema] || {})[p.id] || []).length}; return hay[st.vmodo] ? st.vmodo : 's'; }
+let vnota = false;
+function accionesVisor(p, k) {
+  const id = p.id, qs = (inv[tema][id] || []).length, c = (on, d, t, x) => '<button class="chip' + (on ? ' on' : '') + '" data-v="' + d + '"' + (t ? ' title="' + t + '"' : '') + '>' + x + '</button>';
+  return '<div class="acc2" style="display:flex;gap:6px;padding:6px 8px;border-bottom:1px solid var(--borde);overflow-x:auto;align-items:center">'
+    + marcasHTML(p)
+    + (qs ? c(false, 'prac', 'Practicar las preguntas de este artículo', 'Practicar (' + qs + ')') : '')
+    + c(st.pin[tema] === id, 'pin', 'Marca aquí dónde te quedas', st.pin[tema] === id ? 'Chincheta puesta' : 'Quedarme aquí')
+    + (p.imgr ? c(false, 'ent', 'Ver el artículo entero o el Exprés', entera(p) || st.vizEnt ? 'Ver Exprés' : 'Ver artículo entero') : '')
+    + c(vnota || st.nota[k], 'nota', 'Nota', 'Nota')
+    + c(false, 'subr', 'Subrayar sobre el artículo', 'Subrayar')
+    + c(false, 'goma', 'Quitar un trozo de lo subrayado', 'Quitar un trozo')
+    + c(false, 'qart', 'Quitar este artículo del temario', 'Quitar artículo')
+    + (p.q1 ? '<a class="chip" target="_top" href="esquemas.html#q=' + encodeURIComponent(p.q1) + '&ex=1">Ver en Esquemas</a>' : '')
+    + '</div>';
+}
 function pintaVisor() {
   const id = vlista[vi], p = D[tema].piezas.find(x => x.id === id), k = key(tema, id), v = $('#vis'), modo = modoLect(p), cu = (C[tema] || {})[id] || [];
   v.classList.remove('oculto'); document.body.style.overflow = 'hidden'; v.style.setProperty('--fzl', (st.fzl || (innerWidth < 600 ? 17 : 16)) + 'px');
   const ent = entera(p) || st.vizEnt, plg = modo === 'x' && tienePlg(tema, p);
-  const tabs = [['s', '📑 Subrayado', true], ['x', '⚡ Exprés', p.fx !== undefined], ['e', '🧩 Esquema' + (cu.length > 1 ? ' (' + cu.length + ')' : ''), cu.length > 0]].filter(x => x[2]).map(x => '<button class="chip' + (modo === x[0] ? ' on' : '') + '" data-v="m' + x[0] + '">' + x[1] + '</button>').join('');
+  const tabs = [['s', 'Subrayado', true], ['x', 'Exprés', p.fx !== undefined], ['e', 'Esquema' + (cu.length > 1 ? ' (' + cu.length + ')' : ''), cu.length > 0]].filter(x => x[2]).map(x => '<button class="chip' + (modo === x[0] ? ' on' : '') + '" data-v="m' + x[0] + '">' + x[1] + '</button>').join('');
   v.innerHTML = '<div class="bar"><button class="ib" data-v="x" title="Cerrar">✕</button><b>' + esc(p.nombre.replace(/^.* · /, '')) + ' · ' + (vi + 1) + '/' + vlista.length + '</b>'
     + (modo === 's' && p.imgr ? '<button class="ib" data-v="ent">' + (ent ? 'Exprés' : 'Entero') + '</button>' : '')
     + (modo === 's' ? '<button class="ib" data-v="z-">−</button><button class="ib" data-v="z+">+</button>' : '')
     + (modo === 'x' ? '<button class="ib" data-v="f-">A−</button><button class="ib" data-v="f+">A+</button>' + (plg ? '<button class="ib' + (st.vdesp ? ' on' : '') + '" data-v="desp" title="Abrir los (…)">(…)</button>' : '') : '')
     + (document.fullscreenEnabled ? '<button class="ib" data-v="fs" title="Pantalla completa del navegador">⛶</button>' : '') + '</div>'
-    + '<div class="ptabs">' + tabs + '</div><div class="lienzo" id="lienzo"></div>'
-    + '<div class="bar abajo"><button class="ib" data-v="<">←</button><button class="ib' + (st.vis[k] ? ' on' : '') + '" data-v="vis" style="flex:1">' + (st.vis[k] ? '✓ Visto' : '○ Marcar visto') + '</button><button class="ib' + (st.dif[k] ? ' on' : '') + '" data-v="dif">' + (st.dif[k] ? '★' : '☆') + '</button><button class="ib" data-v=">">→</button></div>';
+    + '<div class="ptabs">' + tabs + '</div>' + accionesVisor(p, k)
+    + (vnota ? '<textarea class="nota" id="vnota" placeholder="Tu nota sobre este artículo…" style="margin:6px 8px">' + esc(st.nota[k] || '') + '</textarea>' : '') + '<div class="lienzo" id="lienzo"></div>'
+    + '<div class="bar abajo"><button class="ib" data-v="<">←</button><button class="ib" data-v=">" style="flex:1">→</button></div>';
   const L = $('#lienzo');
   if (modo === 's') {
     const rec = !(ent || !p.imgr), box = document.createElement('div'); box.className = 'lbox'; if (zoom > 1) box.style.overflowX = 'auto';   // ampliada: se desplaza de lado
@@ -927,6 +943,7 @@ function pintaVisor() {
     cu.forEach((x, i) => { const e = document.createElement('div'); e.className = 'esqs'; e.style.cssText = 'border:0;padding:0;background:none'; e.innerHTML = x.h; w.appendChild(e); montaVis(e.firstChild, tema + '/' + id + '/c' + i); });
   }
 }
+$('#vis').addEventListener('input', e => { if (e.target.id === 'vnota') { st.nota[key(tema, vlista[vi])] = e.target.value; guarda(); } });
 $('#vis').onclick = e => {
   const a = e.target.closest('[data-v]'); if (!a) return; const x = a.dataset.v;
   if (x === 'x') { $('#vis').classList.add('oculto'); document.body.style.overflow = ''; st.vizEnt = false; try { if (document.fullscreenElement) document.exitFullscreen(); } catch (er) {} verTema(); return; }
@@ -936,6 +953,13 @@ $('#vis').onclick = e => {
   if (x === 'vis') { const k = key(tema, vlista[vi]); st.vis[k] = st.vis[k] ? 0 : 1; guarda(); }
   if (x === 'dif') { const k = key(tema, vlista[vi]); st.dif[k] = st.dif[k] ? 0 : 1; guarda(); }
   if (x === 'ent') st.vizEnt = !st.vizEnt;
+  { const id = vlista[vi], k = key(tema, id);
+    if (x === 'prac') { const qs = (inv[tema][id] || []).slice(0, 60).join(','), v = location.pathname.split('/').pop() + '#t=' + tema + '&p=' + id; location.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(qs) + '&v=' + encodeURIComponent(v); return; }
+    if (x === 'pin') { st.pin[tema] = st.pin[tema] === id ? null : id; guarda(); aviso(st.pin[tema] ? 'Te quedarás aquí' : 'Chincheta quitada'); try { botonPin(); } catch (er) {} }
+    if (x === 'nota') { vnota = !vnota; if (st.nota[k] === undefined) st.nota[k] = ''; }
+    if (x === 'subr' || x === 'goma') { $('#vis').classList.add('oculto'); document.body.style.overflow = ''; st.vizEnt = false; verTema(); const el = document.getElementById('c-' + id); if (el) el.scrollIntoView(); if (!marcando) $('#b-marcas').onclick(); herr = x === 'goma' ? 'borra' : 'sub'; try { pintaTB(); } catch (er) {} aviso(x === 'goma' ? 'Goma: toca una marca tuya para quitarla' : 'Subrayador: arrastra sobre el texto'); return; }
+    if (x === 'qart') { st.quit = st.quit || {}; st.quit[k] = 1; guarda(); aviso('Artículo quitado (lo encuentras en «Quitados»)'); vlista.splice(vi, 1); if (!vlista.length) { $('#vis [data-v="x"]').click(); return; } if (vi >= vlista.length) vi = vlista.length - 1; zoom = 1; }
+  }
   if (x === 'f+') { st.fzl = Math.min(26, (st.fzl || (innerWidth < 600 ? 17 : 16)) + 1); guarda(); } if (x === 'f-') { st.fzl = Math.max(11, (st.fzl || (innerWidth < 600 ? 17 : 16)) - 1); guarda(); }
   if (x === 'desp') { st.vdesp = !st.vdesp; guarda(); }
   if (/^m[sxe]$/.test(x)) { st.vmodo = x[1]; guarda(); zoom = 1; }
