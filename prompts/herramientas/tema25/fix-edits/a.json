@@ -1,0 +1,20 @@
+{
+  "25-7": {"o": {"1": "Los funcionarios de enlace constituirán las oficinas nacionales de enlace en Europol y las unidades nacionales les encargarán la defensa de sus intereses en esta última de acuerdo con el Derecho nacional del Estado miembro que los haya designado y ajustándose a las disposiciones relativas a la administración de Europol."},
+    "cita": ["Art. 8.4", "Los funcionarios de enlace prestarán asistencia, de conformidad con su Derecho nacional, en el intercambio de información entre sus Estados miembros"],
+    "nota": "La opción D es la incorrecta: el texto dice «de conformidad con su Derecho nacional», no con el Derecho Internacional y el Código Europeo."},
+  "25-10": {"c": 0,
+    "cita": ["Art. 10.1", "Las decisiones y acuerdos de la Junta Local de Seguridad se adoptarán por mayoría de sus miembros"],
+    "nota": "«Mayoría de sus miembros» es mayoría absoluta (más de la mitad de los miembros que la componen), no mayoría simple ni de los presentes."},
+  "25-18": {"o": {"1": "Puede comprometer el éxito de una investigación en curso o de una operación de inteligencia criminal o la seguridad de las personas.", "2": "Fuera claramente desproporcionado o irrelevante para el fin que persigue la solicitud."},
+    "cita": ["Art. 11.1", "Fuera claramente desproporcionado o irrelevante para el fin que persigue la solicitud"]},
+  "25-27": {"o": {"2": "Controlar la ejecución de tales actuaciones, en cuanto a la forma y los resultados."},
+    "cita": ["Art. 35", "Podrán instar el ejercicio de la potestad disciplinaria"],
+    "nota": "La opción D es la incorrecta: pueden instar el ejercicio de la potestad disciplinaria, no limitarla."},
+  "25-30": {"c": 0,
+    "cita": ["Art. 15.1", "se regirá por su normativa específica"],
+    "nota": "El régimen disciplinario de las Fuerzas Armadas solo se aplica cuando actúe en misiones de carácter militar o se integre en unidades militares."},
+  "25-38": {"c": 1,
+    "cita": ["Art. 5", "Vocales de la Administración Local: Tres representantes a designar por el Alcalde"]},
+  "25-42": {"c": 0,
+    "cita": ["Art. 15.1", "el Ministro de Defensa, a propuesta del de Interior"]}
+}

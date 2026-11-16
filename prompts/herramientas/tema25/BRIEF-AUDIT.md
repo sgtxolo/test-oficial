@@ -1,0 +1,17 @@
+# Brief: auditoría de las preguntas OFICIALES del Tema 25 (ids 25-1 … 25-127)
+
+Carpeta de trabajo: `C:\Users\ruben\Desktop\HTML OFICIAL`. Todo en español. NO edites `test-oficial-conocimiento.html` ni hagas git: tu salida es UN archivo JSON `prompts/herramientas/tema25/fix-edits/<tu-letra>.json` que luego aplica `prompts/herramientas/tema25/fix-t25.js` (léelo: explica el formato).
+
+Fuente de verdad: `prompts/temario-limpio/tema25/oficial.txt` (texto oficial con marcadores `=====PAG n =====`; págs. 1-29 LO 2/1986, 30-37 Ley 31/2010, 38-43 RD 1087/2010 Juntas Locales, 44-98 Reglamento (UE) 2016/794 Europol, 99-106 Estatuto INTERPOL). Mi PDF subrayado (`mio-ocr.txt`, OCR con erratas) es la edición más actualizada: si una página/apartado difiere del oficial, manda el mío y dilo en el informe. Preguntas: `prompts/temario-limpio/tema25/preguntas-actuales.json` (array o `{preguntas:[…]}`; campos id, pregunta, opciones[4], correcta 0-3, explicacion). Si esa ruta no existe, regenera con `node prompts/herramientas/extraer-preguntas.js test-oficial-conocimiento.html 25 <tu-ruta>.json`.
+
+## Qué hacer (obligatorio para TODAS las de tu rango)
+Lee cada pregunta y contrástala con el oficial (usa Grep en oficial.txt con palabras clave; las citas deben ser LITERALES del oficial):
+1. ¿La opción marcada es la correcta según el texto? ¿Las otras tres son falsas de verdad (una sola respuesta defendible)?
+2. Revisa a fondo todas las «Todas son correctas», «A y B son correctas», «Ninguna es correcta»: una opción con el texto alterado las hace falsas. Todas las «señale la INCORRECTA» (suelen venir invertidas o con dos opciones falsas). PLAZOS, cifras, autoridades y mayorías (p. ej. «seis meses» donde el oficial dice «un año»).
+3. Si está mal: corrige (`c` = nueva correcta 0-3, `o` = {índice: texto nuevo} para opciones alteradas, `p` = enunciado nuevo o [desde, hasta] para reemplazar). NUNCA borres una pregunta; si está corrupta/duplicada/ilegible, reescríbela para que sea una pregunta correcta sobre el mismo pasaje (mismo id). El enunciado antiguo con notas tipo «*(Esta pregunta parece…» hay que limpiarlo.
+4. La explicación se regenera sola con la cita en rojo buscada automáticamente en la norma correcta. Si el automático falla o es de «confianza baja» (se ve con `node prompts/herramientas/tema25/fix-t25.js --dry --bajas`; mira solo tus ids), pon `cita: ["Art. N.x", "texto LITERAL del oficial"]` (fragmento literal en UNA página del oficial que contenga la respuesta). Para preguntas «todas/ninguna» pon la cita del pasaje que enumera. Si la norma que deduce el script es errónea, pon `"k":"loe|l31|rd|eur|int"`.
+5. `nota`: si quieres añadir una frase corta tras la cita (p. ej. por qué fallan otras), ponla en `nota` (texto plano).
+6. Lo que NO puedas verificar con el temario (historia general, contenido no incluido) NO lo cambies: lístalo con su id en el informe.
+Formato del JSON: `{ "25-6": {"c":3,"o":{"1":"…"},"p":"…","cita":["Art. 12","…"],"nota":"…"}, … }` (solo las que cambian o necesitan cita manual). Valida que sea JSON válido y que `node prompts/herramientas/tema25/fix-t25.js --dry` no muestre «⚠ CITA MANUAL NO LITERAL» de tus ids.
+Trampas: en Bash `node -e` y los heredocs pierden las barras invertidas; escribe archivos con la herramienta Write.
+Al terminar responde SOLO con: nº revisadas, nº corregidas de fondo (ids), ids no verificables y por qué, diferencias con mi PDF.
