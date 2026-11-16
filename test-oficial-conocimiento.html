@@ -1021,7 +1021,7 @@ var vozUltimaLeida = null;
 try{ modoVoz = localStorage.getItem('modoLecturaVoz')==='1'; }catch(e){}
 
 function vozLimpiarTexto(s){
-  return String(s||'').replace(/<[^>]*>/g,' ').replace(/s+/g,' ').trim();
+  return String(s||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
 }
 function vozBotonEstado(){
   var btn = document.getElementById('btn-voz');
