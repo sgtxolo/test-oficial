@@ -1,0 +1,14 @@
+[
+ {
+  "id": "a",
+  "nombre": "Ley 5/2014 · Seguridad Privada",
+  "paginas": [
+   4,
+   74
+  ],
+  "inicio": "^PREÁMBULO",
+  "cit": "Ley 5/2014|Seguridad Privada",
+  "pre": "a-pre",
+  "pre_re": "Preámbulo"
+ }
+]

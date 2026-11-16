@@ -1,0 +1,771 @@
+[
+ {
+  "id": "a-1",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 1",
+  "img": "a-1.jpg",
+  "wh": [
+   1075,
+   294
+  ]
+ },
+ {
+  "id": "a-2",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 2",
+  "img": "a-2.jpg",
+  "wh": [
+   1075,
+   1188
+  ]
+ },
+ {
+  "id": "a-3",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 3",
+  "img": "a-3.jpg",
+  "wh": [
+   1075,
+   1025
+  ]
+ },
+ {
+  "id": "a-5",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 5",
+  "img": "a-5.jpg",
+  "imgr": "a-5-r.jpg",
+  "ap": [
+   2,
+   3
+  ],
+  "wh": [
+   1075,
+   1204
+  ],
+  "whr": [
+   1075,
+   334
+  ]
+ },
+ {
+  "id": "a-6",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 6",
+  "img": "a-6.jpg",
+  "wh": [
+   1075,
+   2303
+  ]
+ },
+ {
+  "id": "a-7",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 7",
+  "img": "a-7.jpg",
+  "wh": [
+   1075,
+   338
+  ]
+ },
+ {
+  "id": "a-8",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 8",
+  "img": "a-8.jpg",
+  "imgr": "a-8-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   5,
+   6
+  ],
+  "wh": [
+   1075,
+   1036
+  ],
+  "whr": [
+   1075,
+   628
+  ]
+ },
+ {
+  "id": "a-9",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 9",
+  "img": "a-9.jpg",
+  "wh": [
+   1075,
+   270
+  ]
+ },
+ {
+  "id": "a-11",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 11",
+  "img": "a-11.jpg",
+  "imgr": "a-11-r.jpg",
+  "ap": [
+   1,
+   4,
+   6,
+   7
+  ],
+  "wh": [
+   1075,
+   2636
+  ],
+  "whr": [
+   1075,
+   1711
+  ]
+ },
+ {
+  "id": "a-12",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 12",
+  "img": "a-12.jpg",
+  "wh": [
+   1075,
+   1744
+  ]
+ },
+ {
+  "id": "a-13",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 13",
+  "img": "a-13.jpg",
+  "wh": [
+   1075,
+   1255
+  ]
+ },
+ {
+  "id": "a-14",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 14",
+  "img": "a-14.jpg",
+  "wh": [
+   1075,
+   1381
+  ]
+ },
+ {
+  "id": "a-16",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 16",
+  "img": "a-16.jpg",
+  "wh": [
+   1075,
+   1548
+  ]
+ },
+ {
+  "id": "a-17",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 17",
+  "img": "a-17.jpg",
+  "imgr": "a-17-r.jpg",
+  "ap": [
+   2,
+   3
+  ],
+  "wh": [
+   1075,
+   312
+  ],
+  "whr": [
+   1075,
+   255
+  ]
+ },
+ {
+  "id": "a-18",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 18",
+  "img": "a-18.jpg",
+  "wh": [
+   1075,
+   249
+  ]
+ },
+ {
+  "id": "a-19",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 19",
+  "img": "a-19.jpg",
+  "wh": [
+   1075,
+   2720
+  ]
+ },
+ {
+  "id": "a-20",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 20",
+  "img": "a-20.jpg",
+  "wh": [
+   1075,
+   374
+  ]
+ },
+ {
+  "id": "a-22",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 22",
+  "img": "a-22.jpg",
+  "wh": [
+   1075,
+   957
+  ]
+ },
+ {
+  "id": "a-23",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 23",
+  "img": "a-23.jpg",
+  "imgr": "a-23-r.jpg",
+  "ap": [
+   1,
+   2,
+   4
+  ],
+  "wh": [
+   1075,
+   763
+  ],
+  "whr": [
+   1075,
+   685
+  ]
+ },
+ {
+  "id": "a-24",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 24",
+  "img": "a-24.jpg",
+  "wh": [
+   1075,
+   1348
+  ]
+ },
+ {
+  "id": "a-25",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 25",
+  "img": "a-25.jpg",
+  "wh": [
+   1075,
+   1665
+  ]
+ },
+ {
+  "id": "a-26",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 26",
+  "img": "a-26.jpg",
+  "imgr": "a-26-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "wh": [
+   1075,
+   937
+  ],
+  "whr": [
+   1075,
+   872
+  ]
+ },
+ {
+  "id": "a-27",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 27",
+  "img": "a-27.jpg",
+  "wh": [
+   1075,
+   1699
+  ]
+ },
+ {
+  "id": "a-28",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 28",
+  "img": "a-28.jpg",
+  "wh": [
+   1075,
+   2164
+  ]
+ },
+ {
+  "id": "a-29",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 29",
+  "img": "a-29.jpg",
+  "imgr": "a-29-r.jpg",
+  "ap": [
+   2,
+   3,
+   5,
+   6,
+   7
+  ],
+  "wh": [
+   1075,
+   1833
+  ],
+  "whr": [
+   1075,
+   841
+  ]
+ },
+ {
+  "id": "a-30",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 30",
+  "img": "a-30.jpg",
+  "wh": [
+   1075,
+   679
+  ]
+ },
+ {
+  "id": "a-31",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 31",
+  "img": "a-31.jpg",
+  "wh": [
+   1075,
+   355
+  ]
+ },
+ {
+  "id": "a-32",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 32",
+  "img": "a-32.jpg",
+  "wh": [
+   1075,
+   1299
+  ]
+ },
+ {
+  "id": "a-33",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 33",
+  "img": "a-33.jpg",
+  "wh": [
+   1075,
+   373
+  ]
+ },
+ {
+  "id": "a-34",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 34",
+  "img": "a-34.jpg",
+  "wh": [
+   1075,
+   798
+  ]
+ },
+ {
+  "id": "a-35",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 35",
+  "img": "a-35.jpg",
+  "imgr": "a-35-r.jpg",
+  "ap": [
+   1
+  ],
+  "wh": [
+   1075,
+   987
+  ],
+  "whr": [
+   1075,
+   609
+  ]
+ },
+ {
+  "id": "a-36",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 36",
+  "img": "a-36.jpg",
+  "wh": [
+   1075,
+   1273
+  ]
+ },
+ {
+  "id": "a-38",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 38",
+  "img": "a-38.jpg",
+  "imgr": "a-38-r.jpg",
+  "ap": [
+   4,
+   6,
+   7
+  ],
+  "wh": [
+   1075,
+   662
+  ],
+  "whr": [
+   1075,
+   344
+  ]
+ },
+ {
+  "id": "a-39",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 39",
+  "img": "a-39.jpg",
+  "wh": [
+   1075,
+   1112
+  ]
+ },
+ {
+  "id": "a-40",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 40",
+  "img": "a-40.jpg",
+  "imgr": "a-40-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
+  "wh": [
+   1075,
+   888
+  ],
+  "whr": [
+   1075,
+   832
+  ]
+ },
+ {
+  "id": "a-41",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 41",
+  "img": "a-41.jpg",
+  "wh": [
+   1075,
+   1392
+  ]
+ },
+ {
+  "id": "a-42",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 42",
+  "img": "a-42.jpg",
+  "imgr": "a-42-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "wh": [
+   1075,
+   1249
+  ],
+  "whr": [
+   1075,
+   1189
+  ]
+ },
+ {
+  "id": "a-43",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 43",
+  "img": "a-43.jpg",
+  "wh": [
+   1075,
+   354
+  ]
+ },
+ {
+  "id": "a-44",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 44",
+  "img": "a-44.jpg",
+  "wh": [
+   1075,
+   439
+  ]
+ },
+ {
+  "id": "a-46",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 46",
+  "img": "a-46.jpg",
+  "wh": [
+   1075,
+   298
+  ]
+ },
+ {
+  "id": "a-47",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 47",
+  "img": "a-47.jpg",
+  "wh": [
+   1075,
+   1253
+  ]
+ },
+ {
+  "id": "a-48",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 48",
+  "img": "a-48.jpg",
+  "imgr": "a-48-r.jpg",
+  "ap": [
+   1,
+   2,
+   3,
+   6
+  ],
+  "wh": [
+   1075,
+   1084
+  ],
+  "whr": [
+   1075,
+   835
+  ]
+ },
+ {
+  "id": "a-49",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 49",
+  "img": "a-49.jpg",
+  "imgr": "a-49-r.jpg",
+  "ap": [
+   1,
+   2,
+   4,
+   5
+  ],
+  "wh": [
+   1075,
+   1132
+  ],
+  "whr": [
+   1075,
+   1048
+  ]
+ },
+ {
+  "id": "a-50",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 50",
+  "img": "a-50.jpg",
+  "wh": [
+   1075,
+   430
+  ]
+ },
+ {
+  "id": "a-51",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 51",
+  "img": "a-51.jpg",
+  "imgr": "a-51-r.jpg",
+  "ap": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "wh": [
+   1075,
+   1250
+  ],
+  "whr": [
+   1075,
+   844
+  ]
+ },
+ {
+  "id": "a-52",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 52",
+  "img": "a-52.jpg",
+  "imgr": "a-52-r.jpg",
+  "ap": [
+   2
+  ],
+  "wh": [
+   1075,
+   1213
+  ],
+  "whr": [
+   1075,
+   526
+  ]
+ },
+ {
+  "id": "a-53",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 53",
+  "img": "a-53.jpg",
+  "wh": [
+   1075,
+   787
+  ]
+ },
+ {
+  "id": "a-54",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 54",
+  "img": "a-54.jpg",
+  "wh": [
+   1075,
+   1285
+  ]
+ },
+ {
+  "id": "a-55",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 55",
+  "img": "a-55.jpg",
+  "wh": [
+   1075,
+   1536
+  ]
+ },
+ {
+  "id": "a-56",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 56",
+  "img": "a-56.jpg",
+  "wh": [
+   1075,
+   987
+  ]
+ },
+ {
+  "id": "a-57",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 57",
+  "img": "a-57.jpg",
+  "wh": [
+   1075,
+   3804
+  ]
+ },
+ {
+  "id": "a-58",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 58",
+  "img": "a-58.jpg",
+  "wh": [
+   1075,
+   2527
+  ]
+ },
+ {
+  "id": "a-59",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 59",
+  "img": "a-59.jpg",
+  "wh": [
+   1075,
+   1290
+  ]
+ },
+ {
+  "id": "a-60",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 60",
+  "img": "a-60.jpg",
+  "wh": [
+   1075,
+   305
+  ]
+ },
+ {
+  "id": "a-61",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 61",
+  "img": "a-61.jpg",
+  "wh": [
+   1075,
+   937
+  ]
+ },
+ {
+  "id": "a-62",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 62",
+  "img": "a-62.jpg",
+  "wh": [
+   1075,
+   516
+  ]
+ },
+ {
+  "id": "a-63",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 63",
+  "img": "a-63.jpg",
+  "wh": [
+   1075,
+   780
+  ]
+ },
+ {
+  "id": "a-64",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 64",
+  "img": "a-64.jpg",
+  "wh": [
+   1075,
+   363
+  ]
+ },
+ {
+  "id": "a-65",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 65",
+  "img": "a-65.jpg",
+  "wh": [
+   1075,
+   164
+  ]
+ },
+ {
+  "id": "a-66",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 66",
+  "img": "a-66.jpg",
+  "wh": [
+   1075,
+   939
+  ]
+ },
+ {
+  "id": "a-67",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 67",
+  "img": "a-67.jpg",
+  "wh": [
+   1075,
+   164
+  ]
+ },
+ {
+  "id": "a-68",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 68",
+  "img": "a-68.jpg",
+  "wh": [
+   1075,
+   1069
+  ]
+ },
+ {
+  "id": "a-69",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 69",
+  "img": "a-69.jpg",
+  "wh": [
+   1075,
+   634
+  ]
+ },
+ {
+  "id": "a-70",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 70",
+  "img": "a-70.jpg",
+  "wh": [
+   1075,
+   3743
+  ]
+ },
+ {
+  "id": "a-71",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 71",
+  "img": "a-71.jpg",
+  "wh": [
+   1075,
+   261
+  ]
+ },
+ {
+  "id": "a-72",
+  "nombre": "Ley 5/2014 · Seguridad Privada · Artículo 72",
+  "img": "a-72.jpg",
+  "imgr": "a-72-r.jpg",
+  "ap": [
+   1,
+   2,
+   3
+  ],
+  "wh": [
+   1075,
+   5422
+  ],
+  "whr": [
+   1075,
+   3506
+  ]
+ },
+ {
+  "id": "a-pre",
+  "nombre": "Ley 5/2014 · Preámbulo",
+  "img": "a-pre.jpg",
+  "wh": [
+   1075,
+   6765
+  ]
+ }
+]

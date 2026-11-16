@@ -1,0 +1,2 @@
+// Recortes del Exprés que se revisan a mano (el Exprés corta dentro de un apartado): todos = los que hay que revisar, hechos = ya revisados a ojo contra la imagen. T23 (16/11/2026): recortes automáticos por apartados SIN revisar a ojo.
+(window.EXSUB_REV=window.EXSUB_REV||{})[23]={"todos":["a-5","a-8","a-11","a-17","a-23","a-26","a-29","a-35","a-38","a-40","a-42","a-48","a-49","a-51","a-52","a-72"],"hechos":[],"esq":[],"tachado":[]};
