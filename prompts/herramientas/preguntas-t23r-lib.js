@@ -20,7 +20,7 @@ const NORMAS = {
   san: ['Ley 5/2014, de 4 de abril, de Seguridad Privada', 'Ley 5/2014 de Seguridad Privada', 'Del Régimen Sancionador: Infracciones y Sanciones'],
 };
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
-const nrm = s => s.replace(/=====PAG \d+=====|\[\[pag \d+\]\]/g, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/-\s*\n\s*/g, '').replace(/[^a-z0-9ñ]/g, '');
+const nrm = s => s.replace(/=====PAG \d+ ?=====|\[\[pag \d+\]\]/g, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/-\s*\n\s*/g, '').replace(/[^a-z0-9ñ]/g, '');
 // cobertura aproximada (shingles de 9 caracteres) de una cita en el OCR de mi PDF
 const cobertura = (cita, ocr) => { const c = nrm(cita); if (c.length < 20) return 1; let ok = 0, n = 0; for (let i = 0; i + 9 <= c.length; i += 3) { n++; if (ocr.includes(c.slice(i, i + 9))) ok++; } return ok / n; };
 exports.run = function ({ bloque, Q, arg = process.argv.slice(2) }) {
