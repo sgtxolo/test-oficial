@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v695";
+const CACHE_NAME = "oposicion-cache-v696";
 // La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
 // Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
 // versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
@@ -207,6 +207,7 @@ const APP_SHELL = [
   "./expres/t20.js",
   "./expres/t21.js",
   "./expres/t22.js",
+  "./expres/t23.js",
   "./expres/t16.js",
   "./expres/t10.js",
   "./expres/t13.js",
@@ -241,6 +242,7 @@ const APP_SHELL = [
   "./expres/q20.js",
   "./expres/q21.js",
   "./expres/q22.js",
+  "./expres/q23.js",
   "./fonts/fira-sans-condensed.css",
   "./fonts/fira-sans-condensed-400-latin-ext.woff2",
   "./fonts/fira-sans-condensed-400-latin.woff2",
