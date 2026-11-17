@@ -1,0 +1,7 @@
+[
+ { "id": "a", "nombre": "LO 2/1986 · Fuerzas y Cuerpos de Seguridad", "paginas": [4, 35], "inicio": "^PREÁMBULO", "cit": "Ley Orgánica 2/1986|LO 2/1986|Fuerzas y Cuerpos de Seguridad", "pre": "a-pre", "pre_re": "Preámbulo" },
+ { "id": "b", "nombre": "Ley 31/2010 · Intercambio de información UE", "paginas": [36, 44], "inicio": "^PREÁMBULO", "cit": "Ley 31/2010|simplificación del intercambio", "pre": "b-pre", "pre_re": "Preámbulo" },
+ { "id": "c", "nombre": "RD 1087/2010 · Juntas Locales de Seguridad", "paginas": [46, 54], "inicio": "^REAL DECRETO 1087", "cit": "Real Decreto 1087/2010|RD 1087/2010|Juntas Locales" },
+ { "id": "d", "nombre": "Reglamento (UE) 2016/794 · Europol", "paginas": [68, 132], "inicio": "^REGLAMENTO .UE. 2016/794", "cit": "Reglamento .UE. 2016/794|Europol|EUROPOL" },
+ { "id": "e", "nombre": "Estatuto de INTERPOL", "paginas": [56, 66], "inicio": "^DISPOSICIONES GENERALES$", "cit": "Estatuto|INTERPOL|Interpol" }
+]

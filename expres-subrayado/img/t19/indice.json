@@ -121,6 +121,33 @@
   ]
  },
  {
+  "id": "a-184",
+  "nombre": "Código Penal · Artículo 184",
+  "img": "a-184.jpg",
+  "wh": [
+   1075,
+   748
+  ]
+ },
+ {
+  "id": "a-185",
+  "nombre": "Código Penal · Artículo 185",
+  "img": "a-185.jpg",
+  "wh": [
+   1075,
+   129
+  ]
+ },
+ {
+  "id": "a-186",
+  "nombre": "Código Penal · Artículo 186",
+  "img": "a-186.jpg",
+  "wh": [
+   1075,
+   878
+  ]
+ },
+ {
   "id": "a-187",
   "nombre": "Código Penal · Artículo 187",
   "img": "a-187.jpg",
@@ -185,6 +212,15 @@
   "wh": [
    1075,
    678
+  ]
+ },
+ {
+  "id": "a-190",
+  "nombre": "Código Penal · Artículo 190",
+  "img": "a-190.jpg",
+  "wh": [
+   1075,
+   319
   ]
  },
  {
@@ -304,6 +340,15 @@
   ]
  },
  {
+  "id": "a-226",
+  "nombre": "Código Penal · Artículo 226",
+  "img": "a-226.jpg",
+  "wh": [
+   1075,
+   320
+  ]
+ },
+ {
   "id": "a-227",
   "nombre": "Código Penal · Artículo 227",
   "img": "a-227.jpg",
@@ -409,6 +454,24 @@
   ]
  },
  {
+  "id": "a-262",
+  "nombre": "Código Penal · Artículo 262",
+  "img": "a-262.jpg",
+  "wh": [
+   1075,
+   3492
+  ]
+ },
+ {
+  "id": "a-263",
+  "nombre": "Código Penal · Artículo 263",
+  "img": "a-263.jpg",
+  "wh": [
+   1075,
+   672
+  ]
+ },
+ {
   "id": "a-270",
   "nombre": "Código Penal · Artículo 270",
   "img": "a-270.jpg",
@@ -500,12 +563,30 @@
   ]
  },
  {
+  "id": "a-278",
+  "nombre": "Código Penal · Artículo 278",
+  "img": "a-278.jpg",
+  "wh": [
+   1075,
+   296
+  ]
+ },
+ {
   "id": "a-279",
   "nombre": "Código Penal · Artículo 279",
   "img": "a-279.jpg",
   "wh": [
    1075,
    182
+  ]
+ },
+ {
+  "id": "a-280",
+  "nombre": "Código Penal · Artículo 280",
+  "img": "a-280.jpg",
+  "wh": [
+   1075,
+   137
   ]
  },
  {
@@ -1002,6 +1083,24 @@
   ]
  },
  {
+  "id": "a-312",
+  "nombre": "Código Penal · Artículo 312",
+  "img": "a-312.jpg",
+  "wh": [
+   1075,
+   280
+  ]
+ },
+ {
+  "id": "a-314",
+  "nombre": "Código Penal · Artículo 314",
+  "img": "a-314.jpg",
+  "wh": [
+   1075,
+   280
+  ]
+ },
+ {
   "id": "a-318",
   "nombre": "Código Penal · Artículo 318",
   "img": "a-318.jpg",
@@ -1074,6 +1173,15 @@
     398,
     432
    ]
+  ]
+ },
+ {
+  "id": "a-321",
+  "nombre": "Código Penal · Artículo 321",
+  "img": "a-321.jpg",
+  "wh": [
+   1075,
+   316
   ]
  },
  {
@@ -1217,6 +1325,33 @@
   ]
  },
  {
+  "id": "a-332",
+  "nombre": "Código Penal · Artículo 332",
+  "img": "a-332.jpg",
+  "wh": [
+   1075,
+   457
+  ]
+ },
+ {
+  "id": "a-333",
+  "nombre": "Código Penal · Artículo 333",
+  "img": "a-333.jpg",
+  "wh": [
+   1075,
+   184
+  ]
+ },
+ {
+  "id": "a-334",
+  "nombre": "Código Penal · Artículo 334",
+  "img": "a-334.jpg",
+  "wh": [
+   1075,
+   600
+  ]
+ },
+ {
   "id": "a-335",
   "nombre": "Código Penal · Artículo 335",
   "img": "a-335.jpg",
@@ -1271,6 +1406,78 @@
     3684,
     3764
    ]
+  ]
+ },
+ {
+  "id": "a-338",
+  "nombre": "Código Penal · Artículo 338",
+  "img": "a-338.jpg",
+  "wh": [
+   1075,
+   102
+  ]
+ },
+ {
+  "id": "a-339",
+  "nombre": "Código Penal · Artículo 339",
+  "img": "a-339.jpg",
+  "wh": [
+   1075,
+   2533
+  ]
+ },
+ {
+  "id": "a-340",
+  "nombre": "Código Penal · Artículo 340",
+  "img": "a-340.jpg",
+  "wh": [
+   1075,
+   571
+  ]
+ },
+ {
+  "id": "a-341",
+  "nombre": "Código Penal · Artículo 341",
+  "img": "a-341.jpg",
+  "wh": [
+   1075,
+   160
+  ]
+ },
+ {
+  "id": "a-342",
+  "nombre": "Código Penal · Artículo 342",
+  "img": "a-342.jpg",
+  "wh": [
+   1075,
+   186
+  ]
+ },
+ {
+  "id": "a-343",
+  "nombre": "Código Penal · Artículo 343",
+  "img": "a-343.jpg",
+  "wh": [
+   1075,
+   5631
+  ]
+ },
+ {
+  "id": "a-344",
+  "nombre": "Código Penal · Artículo 344",
+  "img": "a-344.jpg",
+  "wh": [
+   1075,
+   114
+  ]
+ },
+ {
+  "id": "a-345",
+  "nombre": "Código Penal · Artículo 345",
+  "img": "a-345.jpg",
+  "wh": [
+   1075,
+   524
   ]
  },
  {
@@ -1363,6 +1570,24 @@
   ]
  },
  {
+  "id": "a-353",
+  "nombre": "Código Penal · Artículo 353",
+  "img": "a-353.jpg",
+  "wh": [
+   1075,
+   554
+  ]
+ },
+ {
+  "id": "a-354",
+  "nombre": "Código Penal · Artículo 354",
+  "img": "a-354.jpg",
+  "wh": [
+   1075,
+   182
+  ]
+ },
+ {
   "id": "a-355",
   "nombre": "Código Penal · Artículo 355",
   "img": "a-355.jpg",
@@ -1392,6 +1617,15 @@
   ]
  },
  {
+  "id": "a-356",
+  "nombre": "Código Penal · Artículo 356",
+  "img": "a-356.jpg",
+  "wh": [
+   1075,
+   459
+  ]
+ },
+ {
   "id": "a-357",
   "nombre": "Código Penal · Artículo 357",
   "img": "a-357.jpg",
@@ -1410,6 +1644,15 @@
     0,
     157
    ]
+  ]
+ },
+ {
+  "id": "a-358",
+  "nombre": "Código Penal · Artículo 358",
+  "img": "a-358.jpg",
+  "wh": [
+   1075,
+   481
   ]
  },
  {
@@ -1488,6 +1731,15 @@
   "wh": [
    1075,
    138
+  ]
+ },
+ {
+  "id": "a-368",
+  "nombre": "Código Penal · Artículo 368",
+  "img": "a-368.jpg",
+  "wh": [
+   1075,
+   1004
   ]
  },
  {
@@ -1617,6 +1869,105 @@
   ]
  },
  {
+  "id": "a-380",
+  "nombre": "Código Penal · Artículo 380",
+  "img": "a-380.jpg",
+  "wh": [
+   1075,
+   309
+  ]
+ },
+ {
+  "id": "a-381",
+  "nombre": "Código Penal · Artículo 381",
+  "img": "a-381.jpg",
+  "wh": [
+   1075,
+   296
+  ]
+ },
+ {
+  "id": "a-382",
+  "nombre": "Código Penal · Artículo 382",
+  "img": "a-382.jpg",
+  "wh": [
+   1075,
+   861
+  ]
+ },
+ {
+  "id": "a-383",
+  "nombre": "Código Penal · Artículo 383",
+  "img": "a-383.jpg",
+  "wh": [
+   1075,
+   186
+  ]
+ },
+ {
+  "id": "a-384",
+  "nombre": "Código Penal · Artículo 384",
+  "img": "a-384.jpg",
+  "wh": [
+   1075,
+   253
+  ]
+ },
+ {
+  "id": "a-385",
+  "nombre": "Código Penal · Artículo 385",
+  "img": "a-385.jpg",
+  "wh": [
+   1075,
+   1200
+  ]
+ },
+ {
+  "id": "a-399",
+  "nombre": "Código Penal · Artículo 399",
+  "img": "a-399.jpg",
+  "wh": [
+   1075,
+   7421
+  ]
+ },
+ {
+  "id": "a-400",
+  "nombre": "Código Penal · Artículo 400",
+  "img": "a-400.jpg",
+  "wh": [
+   1075,
+   397
+  ]
+ },
+ {
+  "id": "a-401",
+  "nombre": "Código Penal · Artículo 401",
+  "img": "a-401.jpg",
+  "wh": [
+   1075,
+   182
+  ]
+ },
+ {
+  "id": "a-402",
+  "nombre": "Código Penal · Artículo 402",
+  "img": "a-402.jpg",
+  "wh": [
+   1075,
+   204
+  ]
+ },
+ {
+  "id": "a-403",
+  "nombre": "Código Penal · Artículo 403",
+  "img": "a-403.jpg",
+  "wh": [
+   1075,
+   706
+  ]
+ },
+ {
   "id": "a-404",
   "nombre": "Código Penal · Artículo 404",
   "img": "a-404.jpg",
@@ -1684,6 +2035,42 @@
   ]
  },
  {
+  "id": "a-410",
+  "nombre": "Código Penal · Artículo 410",
+  "img": "a-410.jpg",
+  "wh": [
+   1075,
+   276
+  ]
+ },
+ {
+  "id": "a-411",
+  "nombre": "Código Penal · Artículo 411",
+  "img": "a-411.jpg",
+  "wh": [
+   1075,
+   183
+  ]
+ },
+ {
+  "id": "a-412",
+  "nombre": "Código Penal · Artículo 412",
+  "img": "a-412.jpg",
+  "wh": [
+   1075,
+   867
+  ]
+ },
+ {
+  "id": "a-413",
+  "nombre": "Código Penal · Artículo 413",
+  "img": "a-413.jpg",
+  "wh": [
+   1075,
+   160
+  ]
+ },
+ {
   "id": "a-415",
   "nombre": "Código Penal · Artículo 415",
   "img": "a-415.jpg",
@@ -1734,6 +2121,33 @@
     0,
     262
    ]
+  ]
+ },
+ {
+  "id": "a-420",
+  "nombre": "Código Penal · Artículo 420",
+  "img": "a-420.jpg",
+  "wh": [
+   1075,
+   179
+  ]
+ },
+ {
+  "id": "a-421",
+  "nombre": "Código Penal · Artículo 421",
+  "img": "a-421.jpg",
+  "wh": [
+   1075,
+   135
+  ]
+ },
+ {
+  "id": "a-422",
+  "nombre": "Código Penal · Artículo 422",
+  "img": "a-422.jpg",
+  "wh": [
+   1075,
+   1011
   ]
  },
  {
@@ -1938,6 +2352,51 @@
   ]
  },
  {
+  "id": "a-439",
+  "nombre": "Código Penal · Artículo 439",
+  "img": "a-439.jpg",
+  "wh": [
+   1075,
+   212
+  ]
+ },
+ {
+  "id": "a-440",
+  "nombre": "Código Penal · Artículo 440",
+  "img": "a-440.jpg",
+  "wh": [
+   1075,
+   343
+  ]
+ },
+ {
+  "id": "a-441",
+  "nombre": "Código Penal · Artículo 441",
+  "img": "a-441.jpg",
+  "wh": [
+   1075,
+   237
+  ]
+ },
+ {
+  "id": "a-442",
+  "nombre": "Código Penal · Artículo 442",
+  "img": "a-442.jpg",
+  "wh": [
+   1075,
+   396
+  ]
+ },
+ {
+  "id": "a-443",
+  "nombre": "Código Penal · Artículo 443",
+  "img": "a-443.jpg",
+  "wh": [
+   1075,
+   439
+  ]
+ },
+ {
   "id": "a-444",
   "nombre": "Código Penal · Artículo 444",
   "img": "a-444.jpg",
@@ -2061,6 +2520,15 @@
   ]
  },
  {
+  "id": "a-453",
+  "nombre": "Código Penal · Artículo 453",
+  "img": "a-453.jpg",
+  "wh": [
+   1075,
+   306
+  ]
+ },
+ {
   "id": "a-454",
   "nombre": "Código Penal · Artículo 454",
   "img": "a-454.jpg",
@@ -2102,6 +2570,33 @@
     0,
     109
    ]
+  ]
+ },
+ {
+  "id": "a-456",
+  "nombre": "Código Penal · Artículo 456",
+  "img": "a-456.jpg",
+  "wh": [
+   1075,
+   455
+  ]
+ },
+ {
+  "id": "a-457",
+  "nombre": "Código Penal · Artículo 457",
+  "img": "a-457.jpg",
+  "wh": [
+   1075,
+   375
+  ]
+ },
+ {
+  "id": "a-458",
+  "nombre": "Código Penal · Artículo 458",
+  "img": "a-458.jpg",
+  "wh": [
+   1075,
+   335
   ]
  },
  {
@@ -2158,6 +2653,15 @@
   ]
  },
  {
+  "id": "a-464",
+  "nombre": "Código Penal · Artículo 464",
+  "img": "a-464.jpg",
+  "wh": [
+   1075,
+   307
+  ]
+ },
+ {
   "id": "a-466",
   "nombre": "Código Penal · Artículo 466",
   "img": "a-466.jpg",
@@ -2178,6 +2682,15 @@
     0,
     138
    ]
+  ]
+ },
+ {
+  "id": "a-467",
+  "nombre": "Código Penal · Artículo 467",
+  "img": "a-467.jpg",
+  "wh": [
+   1075,
+   496
   ]
  },
  {
@@ -2472,6 +2985,15 @@
   ]
  },
  {
+  "id": "a-494",
+  "nombre": "Código Penal · Artículo 494",
+  "img": "a-494.jpg",
+  "wh": [
+   1075,
+   377
+  ]
+ },
+ {
   "id": "a-501",
   "nombre": "Código Penal · Artículo 501",
   "img": "a-501.jpg",
@@ -2658,6 +3180,24 @@
     1323,
     1378
    ]
+  ]
+ },
+ {
+  "id": "a-512",
+  "nombre": "Código Penal · Artículo 512",
+  "img": "a-512.jpg",
+  "wh": [
+   1075,
+   228
+  ]
+ },
+ {
+  "id": "a-513",
+  "nombre": "Código Penal · Artículo 513",
+  "img": "a-513.jpg",
+  "wh": [
+   1075,
+   191
   ]
  },
  {
@@ -2936,12 +3476,48 @@
   ]
  },
  {
+  "id": "a-561",
+  "nombre": "Código Penal · Artículo 561",
+  "img": "a-561.jpg",
+  "wh": [
+   1075,
+   1434
+  ]
+ },
+ {
+  "id": "a-562",
+  "nombre": "Código Penal · Artículo 562",
+  "img": "a-562.jpg",
+  "wh": [
+   1075,
+   430
+  ]
+ },
+ {
+  "id": "a-563",
+  "nombre": "Código Penal · Artículo 563",
+  "img": "a-563.jpg",
+  "wh": [
+   1075,
+   142
+  ]
+ },
+ {
   "id": "a-564",
   "nombre": "Código Penal · Artículo 564",
   "img": "a-564.jpg",
   "wh": [
    1075,
    416
+  ]
+ },
+ {
+  "id": "a-566",
+  "nombre": "Código Penal · Artículo 566",
+  "img": "a-566.jpg",
+  "wh": [
+   1075,
+   556
   ]
  },
  {
@@ -3243,6 +3819,24 @@
     2465,
     2600
    ]
+  ]
+ },
+ {
+  "id": "a-608",
+  "nombre": "Código Penal · Artículo 608",
+  "img": "a-608.jpg",
+  "wh": [
+   1075,
+   652
+  ]
+ },
+ {
+  "id": "a-609",
+  "nombre": "Código Penal · Artículo 609",
+  "img": "a-609.jpg",
+  "wh": [
+   1075,
+   235
   ]
  },
  {
