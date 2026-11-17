@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v719";
+const CACHE_NAME = "oposicion-cache-v720";
 // La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
 // Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
 // versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
@@ -101,8 +101,10 @@ const APP_SHELL = [
   "./expres-subrayado/cortes-t21.js",
   "./expres-subrayado/cortes-t22.js",
   "./expres-subrayado/cortes-t23.js",
+  "./expres-subrayado/cortes-t25.js",
   "./expres-subrayado/bloques-t22.js",
   "./expres-subrayado/bloques-t23.js",
+  "./expres-subrayado/bloques-t25.js",
   "./expres-subrayado/revision-t22.js",
   "./expres-subrayado/revision-t23.js",
   "./expres-subrayado/cortes-t13.js",
@@ -126,6 +128,7 @@ const APP_SHELL = [
   "./expres-subrayado/datos-t21.js",
   "./expres-subrayado/datos-t22.js",
   "./expres-subrayado/datos-t23.js",
+  "./expres-subrayado/datos-t25.js",
   "./expres-subrayado/datos-t13.js",
   "./expres-subrayado/datos-t16.js",
   "./expres-subrayado/mapa-t16.js",
@@ -195,6 +198,7 @@ const APP_SHELL = [
   "./expres-subrayado/cuadros-t21.js",
   "./expres-subrayado/cuadros-t22.js",
   "./expres-subrayado/cuadros-t23.js",
+  "./expres-subrayado/cuadros-t25.js",
   "./expres-subrayado/cuadros-t13.js",
   "./expres-subrayado/cuadros-t16.js",
   "./expres-subrayado/cuadros-t2.js",
@@ -214,6 +218,7 @@ const APP_SHELL = [
   "./expres/t21.js",
   "./expres/t22.js",
   "./expres/t23.js",
+  "./expres/t25.js",
   "./expres/t16.js",
   "./expres/t10.js",
   "./expres/t13.js",
@@ -249,6 +254,7 @@ const APP_SHELL = [
   "./expres/q21.js",
   "./expres/q22.js",
   "./expres/q23.js",
+  "./expres/q25.js",
   "./fonts/fira-sans-condensed.css",
   "./fonts/fira-sans-condensed-400-latin-ext.woff2",
   "./fonts/fira-sans-condensed-400-latin.woff2",

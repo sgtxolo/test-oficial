@@ -41,3 +41,5 @@ if (fs.existsSync(irp)) { cfg.img_recorte = JSON.parse(fs.readFileSync(irp, 'utf
 
 const cola = `expres-subrayado/t${T}-cola.json`;   // {"id": y}: recorta por abajo la imagen entera (títulos que se cuelan al final)
 if (fs.existsSync(cola)) { cfg.cola = JSON.parse(fs.readFileSync(cola, "utf8")); fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg)); }
+const enc = `expres-subrayado/t${T}-encabezados.json`;   // cabeceras de artículo que la capa de texto no trae: {"a":[[5,5,173]]} = [nº de artículo, página 0-based, y en pt]
+if (fs.existsSync(enc)) { cfg.encabezados = JSON.parse(fs.readFileSync(enc, 'utf8')); fs.writeFileSync(`expres-subrayado/t${T}-config.json`, JSON.stringify(cfg)); }

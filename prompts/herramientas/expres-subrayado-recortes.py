@@ -94,6 +94,9 @@ def recorte_apartados(segs, mk, quiere):
 res = []; avisos = []
 for ley in cfg['leyes']:
     a, b = ley['paginas']; H2 = encabezados(a, b)
+    for _n, _pn, _y in cfg.get('encabezados', {}).get(ley['id'], []):   # cabeceras que la capa de texto no trae (tN-encabezados: {"a":[[5,5,173]]}  = [n, pagina 0-based, y en pt])
+        if not any(h[0] == _n for h in H2): H2.append((_n, _pn, _y))
+    H2.sort(key=lambda h: (h[1], h[2]))
     print(ley['nombre'], [h[0] for h in H2])
     for n in ley['arts']:
         k = next((i for i, h in enumerate(H2) if h[0] == n), None)
