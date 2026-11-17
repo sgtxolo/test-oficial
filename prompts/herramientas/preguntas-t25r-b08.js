@@ -132,7 +132,7 @@ E("art. 13", R13, "Señale la INCORRECTA sobre el presidente y el vicepresidente
  "Cuando el presidente no pueda ejercer sus funciones, será sustituido automáticamente por el vicepresidente", "Al presidente lo sustituye el vicepresidente, no el director ejecutivo.", "media"),
 E("art. 14.3", R14, "Se invitará a representantes del GCPC, en calidad de observadores sin derecho a voto, a asistir a:",
  ["dos reuniones ordinarias del Consejo de Administración al año.", "todas las reuniones ordinarias del Consejo de Administración.", "una reunión ordinaria del Consejo de Administración al año.", "dos reuniones extraordinarias del Consejo de Administración al año."],
- "Se invitará a representantes del GCPC a asistir a dos reuniones ordinarias del Consejo de Administración al año, en calidad de observadores sin derecho a voto", "Asisten a dos reuniones ordinarias al año.", "dificil", "img"),
+ "Se invitará a dos representantes del GCPC a asistir a dos reuniones ordinarias del Consejo de Administración al año, en calidad de observadores sin derecho a voto", "Asisten a dos reuniones ordinarias al año.", "dificil", "img"),
 E("art. 15.1", R15, "Sin perjuicio de los supuestos que requieren mayoría cualificada, el Consejo de Administración adoptará sus decisiones por:",
  ["mayoría de sus miembros.", "mayoría de dos tercios de sus miembros.", "unanimidad de sus miembros.", "mayoría de los miembros presentes."],
  "el Consejo de Administración adoptará sus decisiones por mayoría de sus miembros", "La regla general es la mayoría de sus miembros.", "media"),
