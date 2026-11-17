@@ -1,0 +1,16 @@
+// Genera esquema-t25.js (parte BOE: LO 2/1986, Ley 31/2010, RD 1087/2010) a partir de la plantilla del T22.
+const fs = require('fs'), path = require('path');
+let s = fs.readFileSync(path.join(__dirname, '..', 'tema22', 'esquema-t22.js'), 'utf8');
+const rep = (a, b) => { if (!s.includes(a)) throw new Error('no encuentro: ' + a.slice(0, 70)); s = s.split(a).join(b); };
+s = s.replace(/^\/\/ Tema 22[\s\S]*?\n(?=const fs)/m, '// Tema 25 · esquema LITERAL (parte BOE) desde prompts/temario-limpio/tema25/oficial.txt: LO 2/1986 · Ley 31/2010 · RD 1087/2010 (págs. 1-43 del oficial).\n// Deja /* T25_LOE */ /* T25_L31 */ /* T25_RD */ para aplicar-subrayado-pdf.js. Idempotente.\n');
+rep("'tema22'", "'tema25'"); rep("./marcas-t22.js", "./marcas-t25.js");
+rep("let ley = 0;   // 1 = LO 9/1983 · 2 = LO 7/2021 · 3 = LO 4/2015", "let ley = 0;   // 1 = LO 2/1986 · 2 = Ley 31/2010 · 3 = RD 1087/2010");
+rep("const SUF = { 1: 'Derecho de Reunión', 2: 'Protección de datos penal', 3: 'Seguridad Ciudadana' };", "const SUF = { 1: 'Fuerzas y Cuerpos de Seguridad', 2: 'Intercambio de información UE', 3: 'Juntas Locales de Seguridad' };");
+s = s.replace(/const TITULO = \[[\s\S]*?\n\];/, "const TITULO = [\n  { re: /^LEY ORGÁNICA 2\/1986/, ley: 1, rot: 'LEY ORGÁNICA 2\/1986, DE 13 DE MARZO, DE FUERZAS Y CUERPOS DE SEGURIDAD' },\n  { re: /^LEY 31\/2010/, ley: 2, rot: 'LEY 31\/2010, DE 27 DE JULIO, SOBRE SIMPLIFICACIÓN DEL INTERCAMBIO DE INFORMACIÓN E INTELIGENCIA ENTRE LOS SERVICIOS DE SEGURIDAD DE LOS ESTADOS MIEMBROS DE LA UNIÓN EUROPEA' },\n  { re: /^REAL DECRETO 1087\/2010/, ley: 3, rot: 'REAL DECRETO 1087\/2010, DE 3 DE SEPTIEMBRE, POR EL QUE SE APRUEBA EL REGLAMENTO QUE REGULA LAS JUNTAS LOCALES DE SEGURIDAD' },\n];");
+rep("    else if (ley === 1 && sg >= 5 && sg < 8) { enTitulo = 0; abre(\"pre0\", \"Exposición de motivos\"); nuevoP(l); continue; }\n", "    else if (sg >= 5 && sg < 8) { enTitulo = 0; abre('pre0', 'Preámbulo'); nuevoP(l); continue; }\n");
+rep("if (ley === 3 && ROM.test(l))", "if (ROM.test(l))");
+rep("const lineas = fs.readFileSync(path.join(D, 'oficial.txt'), 'utf8').replace(/\\r/g, '').split('\\n');", "const lineas = fs.readFileSync(path.join(D, 'oficial.txt'), 'utf8').replace(/\\r/g, '').split(/=====PAG 44 =====/)[0].split('\\n');");
+rep("const partes = hCP.split(/(?=<div class=\"bloque-titulo\">LEY ORGÁNICA)/);\nif (partes.length !== 3)", "const partes = hCP.split(/(?=<div class=\"bloque-titulo\">(?:LEY ORGÁNICA 2|LEY 31|REAL DECRETO 1087))/);\nif (partes.length !== 3)");
+s = s.split('T22').join('T25').replace('T25.reunion', 'T25.loe').replace('T25.datos', 'T25.l31').replace('T25.cp', 'T25.rd').replace('/* T25_RE */', '/* T25_LOE */').replace('/* T25_DP */', '/* T25_L31 */').replace('/* T25_CP */', '/* T25_RD */');
+s = s.split('esquemas[21]').join('esquemas[24]').replace('"22 — Seguridad ciudadana"', '"25 — Coordinación y cooperación policial"').replace('T25.reunion + T25.datos + T25.cp', 'T25.loe + T25.l31 + T25.rd').replace("'/* T21_END */'", "'/* T23_END */'").replace("'sin ancla T21_END'", "'sin ancla T23_END'").replace("'/* T21_END */'.length", "'/* T23_END */'.length");
+fs.writeFileSync(path.join(__dirname, 'esquema-t25.js'), s); console.log('ok');
