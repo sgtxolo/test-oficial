@@ -24,6 +24,7 @@ window.EXSUBCLAVE_REPASO = {
   21: "repaso-t21-borrador.html",   // 11/11/2026: repaso del Tema 21 (EXOF, R, oficiales y subrayado del Exprés; 10 págs reales)
   22: "repaso-t22-borrador.html",   // 15/11/2026: Esquema clave T22 (14 cuadros redibujados con la forma del temario + 9 fichas; 12 págs; R1-R21 y 185 rápidas aparte)
   23: "repaso-t23-borrador.html",   // 16/11/2026: Esquema clave T23 (8 fichas, cuadros con forma, R1-R14 y rápidas)
+  25: "repaso-t25-borrador.html",   // 17/11/2026: Esquema clave T25 (21 cuadros con la forma del temario + 8 fichas; 12 págs; R1-R30 y rápidas aparte)
 };
 // EXSUBCLAVE[tema] = {"id-pieza": "f"} fuerza artículos en la selección automática ('f' = entero, 'e' = recortado); EXSUBCLAVE_SOLO[tema] = true => solo esos.
 window.EXSUBCLAVE = {};
