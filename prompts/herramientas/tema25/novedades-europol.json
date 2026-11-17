@@ -1,0 +1,1112 @@
+{
+ "articulos": [
+  {
+   "clave": "2",
+   "rotulo": "Artículo 2",
+   "titulo": "Definiciones",
+   "pagPdf": 69,
+   "modifica": true,
+   "parrafos": [
+    "A efectos del presente Reglamento, se entenderá por:",
+    "a) «autoridades competentes de los Estados miembros»: todas las fuerzas de policía y demás servicios con funciones de policía existentes en los Estados miembros que sean responsables, en virtud del Derecho nacional, de la prevención y la lucha contra la delincuencia. Las autoridades competentes de los Estados miembros comprenden asimismo otras autoridades públicas existentes en los Estados miembros que sean responsables, de conformidad con el Derecho nacional, de la prevención y la lucha contra los actos delictivos que sean competencia de Europol;",
+    "b) «análisis estratégico»: todos los métodos y técnicas mediante los cuales la información se recopila, almacena, trata y evalúa con la finalidad de apoyar y desarrollar una política frente a la delincuencia que contribuya a prevenir y combatir la delincuencia de manera eficiente y efectiva;",
+    "c) «análisis operativo»: todos los métodos y técnicas mediante los cuales la información se recopila, almacena, trata y evalúa con la finalidad de apoyar investigaciones penales;",
+    "d) «organismos de la Unión»: las instituciones, organismos, misiones, oficinas y agencias creadas por o sobre la base del TUE y del TFUE;",
+    "e) «organización internacional»: una organización y sus entes subordinados de Derecho internacional público, o cualquier otro organismo creado por, o basado en, un acuerdo entre dos o más países;",
+    "f) «entidades privadas»: las entidades y organismos establecidos en virtud del Derecho de un Estado miembro o de un país tercero, en particular empresas, asociaciones empresariales, organizaciones sin ánimo de lucro y otras personas jurídicas que no estén incluidas en la letra e);",
+    "g) «particulares»: todas las personas físicas;",
+    "h) SUPRIMIDA.",
+    "i) SUPRIMIDA.",
+    "j) SUPRIMIDA.",
+    "k) SUPRIMIDA.",
+    "l) «destinatario»: la persona física o jurídica, autoridad pública, servicio o cualquier otro organismo que reciba comunicación de datos, se trate o no de un tercero;",
+    "m) SUPRIMIDA.",
+    "n) SUPRIMIDA.",
+    "o) SUPRIMIDA.",
+    "p) «datos personales administrativos»: los datos personales tratados por Europol que no sean datos personales operativos;",
+    "q) «datos de investigación»: los datos que un Estado miembro, la Fiscalía Europea creada por el Reglamento (UE) 2017/1939 del Consejo (20), Eurojust o un tercer país esté autorizado a tratar en una investigación penal en curso relacionada con uno o varios Estados miembros, de conformidad con los requisitos y garantías procesales aplicables en virtud del Derecho de la Unión o nacional, que un Estado miembro, la Fiscalía Europea, Eurojust o un tercer país haya facilitado a Europol en apoyo de dicha investigación penal en curso y que contengan datos personales que no atañan a las categorías de interesados enumeradas en el anexo II;",
+    "r) «contenidos terroristas»: los contenidos terroristas tal como se definen en el artículo 2, punto 7, del Reglamento (UE) 2021/784 del Parlamento Europeo y del Consejo;",
+    "s) «material en línea de abusos sexuales a menores»: el material en línea que constituya pornografía infantil tal como se define esta en el artículo 2, letra c), de la Directiva 2011/93/UE del Parlamento Europeo y del Consejo o espectáculo pornográfico tal como se define este en el artículo 2, letra e), de dicha Directiva;",
+    "t) «situación de crisis en línea»: la difusión de contenido en línea derivado de un acontecimiento real actual o reciente, que muestre imágenes de agresiones contra la vida o la integridad física o que incite a agresiones inminentes contra la vida o la integridad física y que tenga por objeto o por efecto intimidar gravemente a una población, siempre que exista un vínculo, o una sospecha razonable de un vínculo, con el terrorismo o el extremismo violento y que se prevean una potencial multiplicación exponencial y una difusión viral de ese contenido a través de múltiples servicios en línea;",
+    "u) «categoría de transferencias de datos personales»: un conjunto de transferencias de datos personales cuando los datos se refieran a la misma situación específica y cuando las transferencias consistan en las mismas categorías de datos personales y las mismas categorías de interesados;",
+    "v) «proyectos de investigación e innovación»: los proyectos relativos a las materias reguladas por el presente Reglamento, que tengan por objeto el desarrollo, el entrenamiento, la prueba y la validación de algoritmos para el desarrollo de herramientas específicas, y otros proyectos específicos de investigación e innovación que resulten pertinentes para lograr los objetivos de Europol."
+   ]
+  },
+  {
+   "clave": "4",
+   "rotulo": "Artículo 4",
+   "titulo": "Funciones",
+   "pagPdf": 71,
+   "modifica": true,
+   "parrafos": [
+    "1. Para alcanzar los objetivos establecidos en el artículo 3, Europol desempeñará las siguientes funciones:",
+    "a) recoger, conservar, tratar, analizar e intercambiar información, incluida inteligencia criminal;",
+    "b) notificar a los Estados miembros a través de las unidades nacionales designadas al amparo del artículo 7, apartado 2, sin demora, cualquier información y las conexiones entre actos delictivos que les afecten;",
+    "c) coordinar, organizar y ejecutar cualesquiera actuaciones de investigación y operativas para respaldar y reforzar las actuaciones que lleven a cabo las autoridades competentes de los Estados miembros:",
+    "i) conjuntamente con las autoridades competentes de los Estados miembros, o",
+    "ii) en el contexto de equipos conjuntos de investigación, de conformidad con el artículo 5 y, en su caso, en conexión con Eurojust;",
+    "d) participar en equipos conjuntos de investigación, así como proponer su creación de conformidad con el artículo 5;",
+    "e) facilitar información y apoyo analítico a los Estados miembros en relación con los grandes acontecimientos internacionales;",
+    "f) elaborar evaluaciones de las amenazas, análisis estratégicos y operativos e informes generales de situación;",
+    "g) desarrollar, compartir y promover conocimientos especializados sobre métodos de prevención de la delincuencia, procedimientos de investigación y métodos técnicos y criminalísticos, y prestar asesoramiento a los Estados miembros;",
+    "h) respaldar las actividades de intercambio de información, las operaciones y las investigaciones de los Estados miembros, así como a los equipos conjuntos de investigación, inclusive mediante un apoyo operativo, técnico y financiero;",
+    "h bis) prestar apoyo administrativo y financiero a las unidades especiales de intervención de los Estados miembros a que se refiere la Decisión 2008/617/JAI del Consejo;",
+    "i) facilitar formación especializada y ayudar a los Estados miembros a organizar la formación, incluso mediante el suministro de apoyo financiero, dentro del ámbito de sus objetivos y con arreglo a los recursos presupuestarios y de personal a su disposición, en coordinación con la Agencia de la Unión Europea para la Formación Policial (CEPOL);",
+    "j) cooperar con los organismos de la Unión establecidos sobre la base del título V del TFUE, con la OLAF y la Agencia de la Unión Europea para la Ciberseguridad (ENISA) creada por el Reglamento (UE) 2019/881 del Parlamento Europeo y del Consejo (24), en particular mediante el intercambio de información y la prestación de apoyo analítico en ámbitos incluidos dentro de sus respectivas competencias;",
+    "k) facilitar información y ayuda a las estructuras de gestión de crisis de la UE y a las misiones establecidas en virtud del TUE en el ámbito de los objetivos de Europol enunciados en el artículo 3;",
+    "l) crear centros de asesoramiento especializados de la Unión para combatir determinados tipos de delitos enunciados en el ámbito de aplicación de los objetivos de Europol, en particular, el Centro Europeo de Lucha contra la Ciberdelincuencia;",
+    "m) respaldar las acciones de los Estados miembros para prevenir y combatir las formas de delincuencia enumeradas en el anexo I que hayan sido facilitadas, fomentadas o cometidas a través de internet, incluyendo las siguientes actuaciones:",
+    "i) ayudar a las autoridades competentes de los Estados miembros, a petición de estas, a responder a ciberataques de presunto origen delictivo,",
+    "ii) cooperar con las autoridades competentes de los Estados miembros en relación con las órdenes de retirada, de conformidad con el artículo 14 del Reglamento (UE) 2021/784, y",
+    "iii) notificar contenidos en línea a los proveedores de servicios en línea de que se trate para que examinen de manera voluntaria la compatibilidad de esos contenidos con sus propias condiciones contractuales.",
+    "n) gestionar la lista de alerta rápida del SEIAV de conformidad con los artículos 34 y 35 del Reglamento (UE) 2018/1240 del Parlamento Europeo y del Consejo;",
+    "o) introducir en la lista de alerta rápida del SEIAV datos obtenidos por Europol relacionados con delitos de terrorismo u otros delitos graves, sin perjuicio de las condiciones que regulan la cooperación internacional de Europol;",
+    "p) emitir un dictamen a raíz de la petición de consulta a que se refiere el artículo 29 del Reglamento (UE) 2018/1240.",
+    "q) emitir un dictamen previa petición de consulta a tenor del artículo 9 sexies, apartado 4, el artículo 9 octies, apartado 4, y el artículo 22 ter, apartados 14 y 16, del Reglamento (CE) n.º 767/2008 del Parlamento Europeo y del Consejo;",
+    "r) apoyar a los Estados miembros en la identificación de las personas cuyas actividades delictivas se incluyen en las formas de delincuencia enumeradas en el anexo I y que constituyen un alto riesgo para la seguridad;",
+    "s) facilitar investigaciones conjuntas, coordinadas y prioritarias en relación con las personas a que se refiere la letra r);",
+    "t) apoyar a los Estados miembros en el tratamiento de los datos sobre personas implicadas en terrorismo o en formas de delincuencia grave facilitados a Europol por terceros países u organizaciones internacionales y proponer la posible introducción por parte de los Estados miembros, a su discreción y a reserva de su propia comprobación y análisis de dichos datos, de las descripciones de información en interés de la Unión relativas a nacionales de terceros países (en lo sucesivo, \"descripciones de información\") en el Sistema de Información de Schengen (SIS), de conformidad con el Reglamento (UE) 2018/1862 del Parlamento Europeo y del Consejo;",
+    "u) apoyar la aplicación del mecanismo de evaluación y seguimiento para verificar la aplicación del acervo de Schengen que establece el Reglamento (UE) n.º 1053/2013, dentro del ámbito de los objetivos de Europol, proporcionando conocimientos especializados y análisis, cuando sea pertinente;",
+    "v) hacer un seguimiento proactivo de las actividades de investigación e innovación que sean pertinentes para el logro de los objetivos de Europol y contribuir a tales actividades mediante un apoyo a las actividades conexas de los Estados miembros y mediante la ejecución de sus propias actividades de investigación e innovación, incluidos los proyectos de desarrollo, entrenamiento, prueba y validación de algoritmos para el desarrollo de herramientas específicas para su uso por las autoridades policiales, y difundir los resultados de dichas actividades entre los Estados miembros de conformidad con el artículo 67;",
+    "w) contribuir a crear sinergias entre las actividades de investigación e innovación de los organismos de la Unión, que sean pertinentes para el logro de los objetivos de Europol, también por medio del Centro de Innovación de la UE para la Seguridad Interior, y en estrecha colaboración con los Estados miembros;",
+    "x) apoyar, previa solicitud de los Estados miembros, las acciones de estos para hacer frente a situaciones de crisis en línea, en particular, proporcionando a las entidades privadas la información necesaria para identificar los contenidos en línea pertinentes;",
+    "y) respaldar las acciones de los Estados miembros para hacer frente a la difusión en línea de material en línea de abusos sexuales a menores;",
+    "z) cooperar, de conformidad con el artículo 12 de la Directiva (UE) 2019/1153 del Parlamento Europeo y del Consejo, con las unidades de inteligencia financiera (UIF) establecidas con arreglo a la Directiva (UE) 2015/849 del Parlamento Europeo y del Consejo, por medio de la correspondiente unidad nacional de Europol o, si así lo permite el Estado miembro de que se trate, mediante un contacto directo con las UIF, en particular, intercambiando información y proporcionando análisis a los Estados miembros para apoyar las investigaciones transfronterizas de las actividades de blanqueo de capitales de organizaciones delictivas transnacionales y las de financiación del terrorismo;",
+    "Con objeto de llevar a cabo la tarea mencionada en la letra n) del párrafo primero del presente apartado, el Consejo de administración de Europol adoptará, previa consulta al SEPD, los procedimientos a que se refiere el artículo 35 del Reglamento (UE) 2018/1240.",
+    "Se establecerá un mecanismo de información periódica para que los Estados miembros informen a los demás Estados miembros y a Europol, en un plazo de doce meses desde que Europol haya propuesto la posible introducción de una descripción de información a que se refiere la letra t) del párrafo primero, sobre el resultado de la comprobación y análisis de los datos y sobre si se ha introducido en el SIS alguna descripción.",
+    "Los Estados miembros informarán a Europol de cualquier descripción de información introducida en el SIS y de cualquier respuesta positiva en relación con dicha descripción de información, y podrán informar, por medio de Europol, sobre las respuestas positivas relacionadas con dicha descripción de información al tercer país u organización internacional que haya facilitado los datos que hayan dado lugar a la introducción de la descripción de información, de conformidad con el procedimiento establecido en el Reglamento (UE) 2018/1862.",
+    "2. Europol suministrará análisis estratégicos y evaluaciones de las amenazas para ayudar al Consejo y a la Comisión a fijar las prioridades estratégicas y operativas de la Unión en la lucha contra la delincuencia. Europol prestará asistencia igualmente en la ejecución operativa de esas prioridades, en particular, en el marco de la plataforma multidisciplinar europea contra las amenazas delictivas (EMPACT), también facilitando y ofreciendo apoyo administrativo, logístico, financiero y operativo a las actividades operativas y estratégicas dirigidas por los Estados miembros.",
+    "3. Europol también proporcionará análisis de evaluación de amenazas basados en la información que obre en su poder sobre fenómenos y tendencias delictivas para apoyar a la Comisión y a los Estados miembros en la realización de las evaluaciones de riesgos.",
+    "4. Europol actuará como oficina central para la lucha contra la falsificación del euro con arreglo a la Decisión 2005/511/JAI del Consejo. Europol fomentará igualmente la coordinación de las medidas adoptadas para luchar contra la falsificación del euro por las autoridades competentes de los Estados miembros o en el contexto de equipos conjuntos de investigación, en su caso en contacto con los organismos de la Unión y las autoridades de países terceros.",
+    "4 bis. Europol asistirá a los Estados miembros y a la Comisión en la identificación de los temas clave de investigación.",
+    "Europol asistirá a la Comisión en la elaboración y ejecución de los programas marco de la Unión para las actividades de investigación e innovación que sean pertinentes para lograr los objetivos de Europol.",
+    "Cuando sea conveniente, Europol podrá difundir los resultados de sus actividades de investigación e innovación como parte de su contribución a la creación de sinergias entre las actividades de investigación e innovación de los correspondientes organismos de la Unión, de conformidad con el apartado 1, párrafo primero, letra w).",
+    "Europol adoptará todas las medidas necesarias para evitar conflictos de intereses. Europol no podrá recibir financiación de un determinado programa marco de la Unión cuando asista a la Comisión en la identificación de los temas clave de investigación y en la elaboración y ejecución de dicho programa.",
+    "A la hora de diseñar y conceptualizar las actividades de investigación e innovación relativas a las materias objeto del presente Reglamento, Europol podrá, en su caso, consultar al Centro Común de Investigación de la Comisión.",
+    "4 ter. Europol apoyará a los Estados miembros en el control de casos específicos de inversiones extranjeras directas en la Unión, en lo que respecta a las implicaciones previstas para la seguridad en virtud del Reglamento (UE) 2019/452 del Parlamento Europeo y del Consejo que afecten a empresas que suministren tecnologías, incluidos programas informáticos, utilizadas por Europol para la prevención e investigación de delitos que se incluyan en los objetivos de Europol.",
+    "5. Europol no aplicará medidas coercitivas en el desempeño de sus funciones.",
+    "El personal de Europol podrá prestar apoyo operativo a las autoridades competentes de los Estados miembros durante la ejecución de las medidas de investigación, a petición de estas y de conformidad con su Derecho nacional, en particular facilitando el intercambio transfronterizo de información, proporcionando apoyo criminalístico y técnico, y estando presente durante la ejecución de dichas medidas. El personal de Europol no estará facultado por sí mismo para ejecutar medidas de investigación.",
+    "5 bis. En el ejercicio de sus funciones, Europol respetará los derechos y libertades fundamentales consagrados en la Carta de los Derechos Fundamentales de la Unión Europea (en lo sucesivo, \"Carta\")."
+   ]
+  },
+  {
+   "clave": "6",
+   "rotulo": "Artículo 6",
+   "titulo": "Solicitudes cursadas por Europol para la apertura de una investigación penal",
+   "pagPdf": 75,
+   "modifica": true,
+   "parrafos": [
+    "1. En aquellos casos específicos en que Europol considere que debe abrirse una investigación penal sobre un delito comprendido en el ámbito de sus objetivos solicitará a las autoridades competentes de los Estados miembros interesados, a través de sus unidades nacionales, que inicien, realicen o coordinen dicha investigación penal.",
+    "1 bis. Sin perjuicio de lo dispuesto en el apartado 1, cuando el director ejecutivo considere que debe abrirse una investigación penal sobre un delito específico que afecte solo a un Estado miembro pero lesione un interés común protegido por una política de la Unión, podrá proponer a las autoridades competentes del Estado miembro afectado, a través de su unidad nacional, que inicien, realicen o coordinen dicha investigación penal.",
+    "2. Las unidades nacionales informarán sin demora indebida a Europol, en relación con cualquier solicitud formulada con arreglo al apartado 1, o al director ejecutivo, en relación con cualquier propuesta realizada con arreglo al apartado 1 bis, de la decisión de las autoridades competentes de los Estados miembros.",
+    "3. Si las autoridades competentes de un Estado miembro decidieran no acceder a una solicitud cursada por Europol con arreglo al apartado 1, informarán a Europol de los motivos de su decisión sin demoras indebidas, preferiblemente en el plazo de un mes a partir de la recepción de la solicitud. No obstante, no será necesario motivar la decisión si ello:",
+    "a) es contrario a los intereses fundamentales de seguridad del Estado miembro de que se trate, o",
+    "b) pone en peligro el desarrollo de las investigaciones en curso o la seguridad de las personas.",
+    "4. Europol informará de inmediato a Eurojust y, cuando proceda, a la Fiscalía Europea, de cualquier solicitud formulada con arreglo al apartado 1 o cualquier propuesta realizada con arreglo al apartado 1 bis, y de cualquier decisión de una autoridad competente de un Estado miembro con arreglo al apartado 2."
+   ]
+  },
+  {
+   "clave": "7",
+   "rotulo": "Artículo 7",
+   "titulo": "Unidades nacionales de Europol",
+   "pagPdf": 75,
+   "modifica": true,
+   "parrafos": [
+    "1. Los Estados miembros y Europol cooperarán entre sí para cumplir sus respectivas tareas establecidas en el presente Reglamento.",
+    "2. Cada Estado miembro creará o designará una unidad nacional que será el organismo de enlace entre Europol y las autoridades competentes designadas de los Estados miembros. Cada Estado miembro designará a un agente como jefe de la unidad nacional.",
+    "3. Cada Estado miembro velará por que su unidad nacional sea competente conforme a su Derecho nacional para desempeñar las tareas asignadas a las unidades nacionales en el presente Reglamento, y en particular que tengan acceso a los datos policiales nacionales y otros datos pertinentes necesarios para la cooperación con Europol.",
+    "4. Cada Estado miembro determinará la organización y el personal de su unidad nacional de acuerdo con su Derecho nacional.",
+    "5. De conformidad con el apartado 2, la unidad nacional será el único órgano de enlace entre Europol y las autoridades competentes de los Estados miembros. No obstante, a reserva de las condiciones que determinen los Estados miembros, incluida la participación previa de la unidad nacional, los Estados miembros podrán autorizar contactos directos entre sus autoridades competentes y Europol. La unidad nacional recibirá al mismo tiempo de Europol toda la información intercambiada en el curso de los contactos directos entre Europol y las autoridades competentes, salvo en caso de que indique que no necesita recibirla.",
+    "6. Los Estados miembros, a través de su unidad nacional o, a tenor de lo dispuesto en el apartado 5, una autoridad competente:",
+    "a) suministrarán a Europol la información necesaria para que pueda cumplir sus objetivos, incluida información relativa a formas de delincuencia cuya prevención o combate considere prioritario la Unión;",
+    "b) garantizarán una comunicación y cooperación eficaces con Europol de todas las autoridades competentes pertinentes;",
+    "c) propiciarán el conocimiento de las actividades de Europol;",
+    "d) de conformidad con el artículo 38, apartado 5, letra a), garantizarán el cumplimiento del Derecho nacional al proporcionar información a Europol.",
+    "7. Sin perjuicio del ejercicio por parte de los Estados miembros de sus responsabilidades con respecto al mantenimiento del orden público y la salvaguardia de la seguridad interior, los Estados miembros no tendrán la obligación de transmitir, en un caso concreto, información con arreglo al apartado 6, letra a), si:",
+    "a) fuese contrario a los intereses fundamentales de seguridad del Estado miembro de que se trate;",
+    "b) comprometiese el resultado de una investigación en curso o la seguridad de una persona, o",
+    "c) revelase información referida a organizaciones o actividades específicas de inteligencia en materia de seguridad nacional.",
+    "No obstante, los Estados miembros transmitirán la información tan pronto como deje de estar incluida en el ámbito de aplicación de las letras a), b) o c) del primer párrafo.",
+    "8. Los Estados miembros velarán por que sus UIF estén facultadas para responder, dentro de los límites de sus mandatos y competencias y respetando las garantías procesales nacionales, a las solicitudes debidamente justificadas que formule Europol de conformidad con el artículo 12 de la Directiva (UE) 2019/1153 relativas a información financiera y análisis financieros, bien por medio de su unidad nacional o bien, si así lo permite el correspondiente Estado miembro, mediante contactos directos entre la UIF y Europol.",
+    "9. Los jefes de las unidades nacionales se reunirán periódicamente, en particular para debatir y resolver los problemas que se planteen en el contexto de su cooperación operativa con Europol.",
+    "10. Los gastos de comunicación de las unidades nacionales con Europol correrán a cargo de los Estados miembros y, con excepción de los gastos de conexión, no serán imputados a Europol.",
+    "11. Europol elaborará un informe anual sobre la información facilitada por cada Estado miembro con arreglo al apartado 6, letra a), basado en los criterios de evaluación cuantitativos y cualitativos establecidos por el Consejo de Administración. El informe anual se remitirá al Parlamento Europeo, al Consejo, a la Comisión y a los parlamentos nacionales."
+   ]
+  },
+  {
+   "clave": "11",
+   "rotulo": "Artículo 11",
+   "titulo": "Funciones del Consejo de Administración",
+   "pagPdf": 78,
+   "modifica": true,
+   "parrafos": [
+    "1. El Consejo de Administración:",
+    "a) adoptará cada año el documento único de programación a que se refiere el artículo 32 del Reglamento Delegado (UE) 2019/715 de la Comisión, por mayoría de dos tercios de sus miembros y de conformidad con el artículo 12 del presente Reglamento.",
+    "b) adoptará, por mayoría de dos tercios de sus miembros, el presupuesto anual de Europol y ejercerá otras funciones relacionadas con el presupuesto de Europol con arreglo al capítulo X;",
+    "c) adoptará un informe anual de actividades consolidado sobre las actividades de Europol y lo remitirá, a más tardar el 1 de julio del año siguiente, al Parlamento Europeo, al Consejo, a la Comisión, al Tribunal de Cuentas y a los parlamentos nacionales. El informe anual de actividades consolidado se hará público;",
+    "d) adoptará las normas financieras aplicables a Europol, de conformidad con el artículo 61;",
+    "e) adoptará una estrategia interna de lucha contra el fraude proporcional a los riesgos de fraude, teniendo en cuenta los costes y beneficios de las medidas que vayan a aplicarse;",
+    "f) adoptará normas sobre la prevención y la gestión de los conflictos de intereses de sus miembros, incluso en relación con su declaración de intereses;",
+    "g) de conformidad con el apartado 2, ejercerá, con respecto al personal de Europol, las competencias atribuidas por el Estatuto a la autoridad facultada para proceder a los nombramientos y por el régimen aplicable a los otros agentes a la autoridad facultada para celebrar contratos de empleo («competencias de la autoridad facultada para proceder a los nombramientos»);",
+    "h) adoptará normas de desarrollo adecuadas para dar efecto al Estatuto de los funcionarios y al régimen aplicable a los otros agentes de conformidad con el artículo 110 del Estatuto de los funcionarios;",
+    "i) adoptará normas internas relativas al procedimiento de selección del director ejecutivo, incluidas las normas sobre la composición del comité de selección que garanticen su independencia e imparcialidad;",
+    "j) propondrá al Consejo una lista de candidatos preseleccionados para el puesto de director ejecutivo y directores ejecutivos adjuntos y, cuando proceda, propondrá al Consejo la prórroga de su mandato o la destitución de sus cargos de conformidad con los artículos 54 y 55;",
+    "k) establecerá indicadores de rendimiento y supervisará la actuación del director ejecutivo, incluida la aplicación de las decisiones del Consejo de Administración;",
+    "l) nombrará un responsable de protección de datos que actuará con independencia funcional en el ejercicio de sus funciones;",
+    "m) nombrará a un contable, sujeto al Estatuto de los funcionarios y al régimen aplicable a los otros agentes, que será funcionalmente independiente en el ejercicio de sus funciones;",
+    "n) establecerá en su caso una estructura de auditoría interna;",
+    "o) asegurará un seguimiento adecuado de las conclusiones y recomendaciones resultantes de los informes de auditoría y evaluaciones internas o externas, así como de las investigaciones de la OLAF y el SEPD;",
+    "p) establecerá los criterios de evaluación para el informe anual con arreglo al artículo 7, apartado 11;",
+    "q) adoptará unas directrices que especifiquen más detalladamente los procedimientos para el tratamiento de la información por parte de Europol, de conformidad con el artículo 18 y tras haber consultado al SEPD;",
+    "r) decidirá sobre la celebración de acuerdos de trabajo y administrativos con arreglo al artículo 23, apartado 4, y al artículo 25, apartado 1, respectivamente;",
+    "s) decidirá, teniendo en cuenta tanto los requisitos operativos como los financieros, en relación con la creación de las estructuras internas de Europol, incluidos los centros de la Unión de asesoramiento especializado a que hace referencia el artículo 4, apartado 1, letra l), a propuesta del director ejecutivo;",
+    "t) adoptará su reglamento interno, incluidas las disposiciones relativas a las tareas y al funcionamiento de su secretaría;",
+    "u) adoptará otras normas internas cuando convenga.",
+    "v) designará al agente de derechos fundamentales a que se refiere el artículo 41 quater;",
+    "w) especificará los criterios sobre cuya base Europol podrá formular propuestas para la posible introducción de descripciones de información en el SIS.",
+    "2. Si el Consejo de Administración lo considera necesario para la realización de las funciones de Europol, podrá sugerir al Consejo que llame la atención de la Comisión en cuanto a la necesidad de una decisión de adecuación, según se contempla en el artículo 25, apartado 1, letra a), o de una recomendación de decisión por la que se autorice la apertura de negociaciones con vistas a la conclusión de un acuerdo internacional como se contempla en el artículo 25, apartado 1, letra b).",
+    "3. El Consejo de Administración adoptará, de conformidad con el artículo 110 del Estatuto de los funcionarios, una decisión, basada en el artículo 2, apartado 1, del Estatuto y en el artículo 6 del régimen aplicable a los otros agentes, por la que se deleguen las competencias de la autoridad facultada para proceder a los nombramientos en el director ejecutivo y se establezcan las condiciones en que puede suspenderse esta delegación de poderes. El director ejecutivo estará autorizado a subdelegar tales competencias.",
+    "Cuando circunstancias excepcionales así lo requieran, el Consejo de Administración podrá, mediante decisión, suspender temporalmente la delegación de las competencias, y cualquier subdelegación de las mismas, de la autoridad facultada para proceder a los nombramientos en el director ejecutivo y ejercerlas él mismo o delegarlas en uno de sus miembros o en un miembro del personal que no sea el director ejecutivo."
+   ]
+  },
+  {
+   "clave": "12",
+   "rotulo": "Artículo 12",
+   "titulo": "Programación plurianual y programa de trabajo anual",
+   "pagPdf": 80,
+   "modifica": true,
+   "parrafos": [
+    "1. El Consejo de Administración adoptará a más tardar el 30 de noviembre de cada año un documento único de programación que incluya la programación plurianual de Europol y el programa de trabajo anual, sobre la base de un proyecto presentado por el director ejecutivo, teniendo en cuenta el dictamen de la Comisión y, en lo que respecta a la programación plurianual, previa consulta al Grupo de Control Parlamentario Conjunto (GCPC).",
+    "Cuando el Consejo de Administración decida no tener en cuenta el dictamen de la Comisión mencionado en el párrafo primero, en su totalidad o en parte, Europol proporcionará una justificación exhaustiva.",
+    "Cuando el Consejo de Administración decida no tener en cuenta ninguna de las cuestiones planteadas por el GCPC de conformidad con el artículo 51, apartado 2, letra c), Europol proporcionará una justificación exhaustiva.",
+    "Una vez se haya adoptado el documento único de programación, el Consejo de Administración lo remitirá al Consejo, a la Comisión y al GCPC.",
+    "2. La programación plurianual fijará la programación estratégica general, incluidos los objetivos, los resultados esperados y los indicadores de rendimiento. También establecerá la planificación de los recursos, incluidos el presupuesto plurianual y la plantilla de personal. Incluirá la estrategia sobre las relaciones con terceros países u organizaciones internacionales y las actividades de investigación e innovación previstas por Europol.",
+    "La programación plurianual se ejecutará a través de programas de trabajo anuales y se actualizará, en su caso, en función de los resultados de evaluaciones internas y externas. Las conclusiones de estas evaluaciones se reflejarán también, en su caso, en el programa de trabajo anual para el año siguiente.",
+    "3. El programa de trabajo anual comprenderá los objetivos detallados y los resultados esperados, incluidos indicadores de rendimiento. Contendrá asimismo una descripción de las acciones que vayan a financiarse y una indicación de los recursos humanos y financieros asignados a cada acción, de conformidad con los principios de presupuestación y de gestión por actividades. El programa de trabajo anual será coherente con la programación plurianual. Indicará claramente qué tareas se han añadido, modificado o suprimido en relación con el ejercicio presupuestario anterior.",
+    "4. Si tras la adopción del programa de trabajo anual se encomienda a Europol una nueva tarea, el Consejo de Administración lo modificará.",
+    "5. Cualquier modificación sustancial del programa de trabajo anual se adoptará con arreglo al mismo procedimiento que el aplicable a la adopción del programa de trabajo anual inicial. El Consejo de Administración podrá delegar en el director ejecutivo la competencia de adoptar modificaciones no sustanciales del programa de trabajo anual."
+   ]
+  },
+  {
+   "clave": "14",
+   "rotulo": "Artículo 14",
+   "titulo": "Reuniones del Consejo de Administración",
+   "pagPdf": 81,
+   "modifica": true,
+   "parrafos": [
+    "1. El presidente convocará las reuniones del Consejo de Administración.",
+    "2. El director ejecutivo participará en las deliberaciones del Consejo de Administración.",
+    "3. El Consejo de Administración se reunirá al menos dos veces al año en sesión ordinaria. Además, se reunirá a iniciativa del presidente, a petición de la Comisión o de un tercio de sus miembros, como mínimo.",
+    "4. El Consejo de Administración podrá invitar a sus reuniones, en calidad de observador sin derecho a voto, a cualquier persona cuya opinión pueda ser de interés para la discusión.",
+    "Se invitará a dos representantes del GCPC a asistir a dos reuniones ordinarias del Consejo de Administración al año, en calidad de observadores sin derecho a voto para discutir las siguientes cuestiones de interés político:",
+    "a) el informe anual de actividad consolidado mencionado en el artículo 11, apartado 1, letra c), correspondiente al año anterior;",
+    "b) el documento único de programación mencionado en el artículo 12 y correspondiente al año siguiente, así como el presupuesto anual;",
+    "c) las preguntas y respuestas por escrito del GCPC;",
+    "d) las cuestiones relativas a las relaciones exteriores y las asociaciones.",
+    "El Consejo de Administración, junto con los representantes del GCPC, podrá determinar otras cuestiones de interés político que deban discutirse en las reuniones mencionadas en el párrafo primero.",
+    "5. Los miembros y los miembros suplentes del Consejo de Administración podrán ser asistidos en las reuniones por asesores o expertos, con arreglo a su reglamento interno.",
+    "6. Europol se hará cargo de la secretaría del Consejo de Administración."
+   ]
+  },
+  {
+   "clave": "16",
+   "rotulo": "Artículo 16",
+   "titulo": "Cometidos del director ejecutivo",
+   "pagPdf": 82,
+   "modifica": true,
+   "parrafos": [
+    "1. El director ejecutivo se encargará de la gestión de Europol. Deberá rendir cuentas ante el Consejo de Administración.",
+    "2. Sin perjuicio de las competencias de la Comisión o del Consejo de Administración, el director ejecutivo será independiente en el ejercicio de sus funciones y no solicitará ni aceptará instrucciones de ningún gobierno ni de ningún otro organismo.",
+    "3. Tanto el Consejo como el GCPC podrán convocar al director ejecutivo para que informe sobre el ejercicio de sus funciones.",
+    "4. El director ejecutivo será el representante legal de Europol.",
+    "5. El director ejecutivo será responsable de la ejecución de las tareas que competen a Europol en virtud del presente Reglamento, en particular, de lo siguiente:",
+    "a) la administración cotidiana de Europol;",
+    "b) presentar al Consejo de Administración propuestas en relación con el establecimiento de las estructuras internas de Europol;",
+    "c) la aplicación de las decisiones adoptadas por el Consejo de Administración;",
+    "d) la preparación del proyecto de documento único de programación a que se refiere el artículo 12 y su presentación al Consejo de Administración, previa consulta a la Comisión y al GCPC;",
+    "e) la ejecución de la programación plurianual y de los programas de trabajo anual y la presentación de informes al Consejo de Administración sobre su ejecución;",
+    "f) la elaboración de proyectos de normas de desarrollo adecuadas para aplicar al Estatuto de los funcionarios y al régimen aplicable a los otros agentes de conformidad con el artículo 110 del Estatuto de los funcionarios;",
+    "g) la preparación del proyecto de informe anual consolidado sobre las actividades de Europol y su presentación al Consejo de Administración para su adopción;",
+    "h) la preparación de un plan de acción sobre la base de las conclusiones de los informes de auditoría y evaluaciones internas o externas, así como informes de investigación y recomendaciones a raíz de las investigaciones llevadas a cabo por la OLAF y el SEPD, y la presentación de informes de evolución dos veces al año a la Comisión y regularmente al Consejo de Administración;",
+    "i) la protección de los intereses financieros de la Unión mediante la aplicación de medidas preventivas contra el fraude, la corrupción y cualesquiera otra actividad ilegales y, sin perjuicio de las competencias de investigación de la OLAF, mediante la realización de controles efectivos y, si se detectan irregularidades, mediante la recuperación de los importes indebidamente abonados, y, en su caso, mediante sanciones administrativas y financieras efectivas, proporcionales y disuasorias;",
+    "j) la preparación de un proyecto de estrategia interna de lucha contra el fraude de Europol y su presentación al Consejo de Administración para su adopción;",
+    "k) la preparación de un proyecto de normas internas para la prevención y gestión de los conflictos de intereses en lo que respecta al Consejo de Administración y la presentación de esas propuestas de normas al Consejo de Administración para su adopción;",
+    "l) la preparación del proyecto de normas financieras aplicables a Europol;",
+    "m) la preparación del proyecto de estado de previsiones de ingresos y gastos de Europol y la ejecución de su presupuesto;",
+    "n) el apoyo al presidente del Consejo de Administración en la preparación de las reuniones del Consejo de Administración;",
+    "o) la información periódica al Consejo de Administración sobre la aplicación de las prioridades estratégicas y operativas de la Unión en la lucha contra la delincuencia;",
+    "o bis) la información al Consejo de Administración sobre los memorandos de entendimiento firmados con entidades privadas;",
+    "p) el desempeño de otras tareas con arreglo al presente Reglamento."
+   ]
+  },
+  {
+   "clave": "18",
+   "rotulo": "Artículo 18",
+   "titulo": "Fines de las actividades de tratamiento de la información",
+   "pagPdf": 83,
+   "modifica": true,
+   "parrafos": [
+    "1. En la medida en que sea necesario para la consecución de sus objetivos, enunciados en el artículo 3, Europol puede tratar información, incluidos los datos personales.",
+    "2. Los datos personales podrán tratarse únicamente a fin de efectuar:",
+    "a) controles cruzados destinados a identificar conexiones u otras relaciones pertinentes entre datos relacionados con:",
+    "i) las personas que sean sospechosas de haber cometido o de haber participado en un delito penal que sea competencia de Europol o que hayan sido condenadas por tal delito,",
+    "ii) personas respecto de las cuales existan indicios concretos o motivos razonables para pensar que cometerán delitos penales que son competencia de Europol;",
+    "b) análisis estratégicos o temáticos;",
+    "c) análisis operativos;",
+    "d) intercambios más ágiles de información entre los Estados miembros, Europol, otros organismos de la Unión, terceros países, organizaciones internacionales y entidades privadas;",
+    "e) proyectos de investigación e innovación;",
+    "f) actividades destinadas a apoyar a los Estados miembros, previa solicitud de estos, a la hora de informar al público sobre los sospechosos o las personas condenadas en búsqueda sobre la base de una resolución judicial nacional relativa a un delito que se incluya en los objetivos de Europol, y a facilitar que el público proporcione información sobre dichas personas a los Estados miembros y a Europol.",
+    "3. El tratamiento, a efectos de análisis operativos como los mencionados en el apartado 2, letra c), se realizará mediante proyectos de análisis operativos a los que se aplicarán las siguientes garantías específicas:",
+    "a) para cada proyecto de análisis operativo, el director ejecutivo definirá el objetivo específico, las categorías de datos personales y las categorías de interesados, los participantes, la duración de la conservación y condiciones de acceso, transferencia y uso de los datos en cuestión, e informará de ello al Consejo de Administración y al SEPD;",
+    "b) los datos personales podrán recopilarse y tratarse solo a efectos del proyecto específico de análisis operativo. Cuando resulte evidente que los datos personales puedan ser pertinentes para otro proyecto de análisis operativo, solo se permitirá el tratamiento ulterior de dichos datos personales en la medida en que dicho tratamiento ulterior resulte necesario y proporcionado y los datos personales sean compatibles con las disposiciones establecidas en la letra a) que se apliquen al otro proyecto de análisis;",
+    "c) solo el personal autorizado podrá acceder a los datos del proyecto correspondiente y tratarlos.",
+    "3 bis. De ser necesario para lograr los objetivos de los proyectos de investigación e innovación de Europol, el tratamiento de datos personales con dicho fin se llevará a cabo únicamente en el contexto de proyectos de investigación e innovación de Europol con unos fines y objetivos claramente definidos y de conformidad con el artículo 33 bis.",
+    "4. El tratamiento, según se menciona en los apartados 2 y 3, se llevará a cabo de acuerdo con las garantías de protección de datos establecidas en el presente Reglamento. Europol documentará debidamente estas operaciones de tratamiento. Previa solicitud, la documentación se pondrá a disposición del responsable de protección de datos y del SEPD a efectos de la verificación de la licitud de la operación de tratamiento.",
+    "5. Sin perjuicio de lo dispuesto en el artículo 8, apartado 4, el artículo 18, apartado 2, letra e), el artículo 18 bis, y del tratamiento de datos en virtud del artículo 26, apartado 6 quater, cuando la infraestructura de Europol se emplee para intercambios bilaterales de datos personales y Europol no disponga de acceso al contenido de los datos, las categorías de datos personales y las categorías de interesados cuyos datos pueden ser recogidos y tratados a efectos del apartado 2 del presente artículo se enumeran en el anexo II.",
+    "5 bis. De conformidad con el artículo 73 del Reglamento (UE) 2018/1725 del Parlamento Europeo y del Consejo (33), cuando corresponda, y en la medida de lo posible, Europol hará una distinción clara entre los datos personales que atañen a las diferentes categorías de interesados enumeradas en el anexo II.",
+    "6. Europol podrá tratar datos de forma temporal con el fin de determinar si tales datos son pertinentes para el desempeño de sus funciones y, en caso de que lo sean, para qué fines de los mencionados en el apartado 2. El plazo para el tratamiento de dichos datos no superará los seis meses a partir de la recepción de los datos.",
+    "6 bis. Antes del tratamiento de datos en aplicación del apartado 2 del presente artículo, cuando resulte estrictamente necesario con el único fin de determinar si los datos personales se ajustan a lo dispuesto en el apartado 5 del presente artículo, Europol podrá tratar temporalmente los datos personales que se le hayan facilitado en virtud del artículo 17, apartados 1 y 2, incluido el cotejo de esos datos con todos los datos que Europol ya trate de conformidad con el apartado 5 del presente artículo.",
+    "Europol tratará datos personales en virtud del párrafo primero durante un período máximo de dieciocho meses a partir del momento en que Europol determine que esos datos se incluyen en sus objetivos o, en casos justificados, durante un período más largo, cuando sea necesario a efectos del presente artículo. Europol informará al SEPD de toda ampliación del período de tratamiento. El período máximo de tratamiento de datos en virtud del párrafo primero será de tres años. Dichos datos personales se conservarán de tal modo que exista una separación funcional de otros datos.",
+    "Cuando Europol llegue a la conclusión de que los datos personales a los que se refiere el párrafo primero del presente apartado no se ajustan a lo dispuesto en el apartado 5, los suprimirá e informará de ello, en su caso, al proveedor de los datos suprimidos.",
+    "6 ter. El Consejo de Administración, a propuesta del director ejecutivo, tras haber consultado al SEPD y teniendo debidamente en cuenta los principios mencionados en el artículo 71 del Reglamento (UE) 2018/1725, especificará las condiciones relativas al tratamiento de los datos a los que se refieren los apartados 6 y 6 bis del presente artículo, en particular, en lo que respecta al suministro, el acceso y el uso de esos datos, así como a los plazos de conservación y supresión de tales datos, que no superarán los indicados en los apartados 6 y 6 bis del presente artículo.",
+    "7. El Consejo de Administración, tras haber consultado al SEPD adoptará, según proceda, directrices que concreten más detalladamente los procedimientos de tratamiento de la información a los efectos enumerados en el apartado 2, de conformidad con lo dispuesto en el artículo 11, apartado 1, letra q)."
+   ]
+  },
+  {
+   "clave": "18 bis",
+   "rotulo": "Artículo 18 bis",
+   "titulo": "Tratamiento de datos personales en apoyo de una investigación penal",
+   "pagPdf": 85,
+   "modifica": false,
+   "parrafos": [
+    "1. Cuando sea necesario para apoyar una investigación penal específica en curso que entre en el ámbito de los objetivos de Europol, Europol podrá tratar los datos personales que no atañan a las categorías de interesados enumeradas en el anexo II en el caso de que:",
+    "a) un Estado miembro, la Fiscalía Europea o Eurojust facilite datos de investigación a Europol en aplicación del artículo 17, apartado 1, letras a) o b), y solicite a Europol apoyo en esa investigación:",
+    "i) mediante un análisis operativo en virtud del artículo 18, apartado 2, letra c), o",
+    "ii) en casos excepcionales y debidamente justificados, mediante controles cruzados en virtud del artículo 18, apartado 2, letra a);",
+    "b) Europol valore que no es posible llevar a cabo el análisis operativo en virtud del artículo 18, apartado 2, letra c), o los controles cruzados en virtud del artículo 18, apartado 2, letra a), en apoyo de dicha investigación sin tratar datos personales que no se ajusten a lo dispuesto en el artículo 18, apartado 5.",
+    "Los resultados de la valoración a la que se refiere la letra b) del párrafo primero se registrarán y remitirán al SEPD a título informativo, cuando Europol deje de apoyar la investigación mencionada en el párrafo primero.",
+    "2. Cuando el Estado miembro a que se refiere el apartado 1, párrafo primero, letra a), deje de estar autorizado para tratar los datos en la investigación penal específica en curso a la que se refiere el apartado 1, de conformidad con los requisitos y garantías procesales establecidos en virtud del Derecho nacional aplicable, informará a Europol.",
+    "Cuando la Fiscalía Europea o Eurojust facilite datos de investigación a Europol y deje de estar autorizada para tratar los datos de la investigación penal específica en curso a la que se refiere el apartado 1, de conformidad con los requisitos y garantías procesales aplicables en virtud del Derecho de la Unión y del Derecho nacional, informará a Europol.",
+    "3. Europol podrá tratar los datos de investigación de conformidad con el artículo 18, apartado 2, durante todo el tiempo en que apoye la investigación penal específica en curso para la que se hayan facilitado los datos de investigación de conformidad con el apartado 1, párrafo primero, letra a), del presente artículo, y únicamente con el fin de apoyar dicha investigación.",
+    "4. Europol podrá conservar los datos de investigación facilitados de conformidad con el apartado 1, párrafo primero, letra a), y el resultado del tratamiento de dichos datos una vez transcurrido el período de tratamiento indicado en el apartado 3, a petición del proveedor de dichos datos de investigación, con el fin de garantizar la veracidad, fiabilidad y trazabilidad del proceso de inteligencia criminal, y únicamente durante el tiempo en que se esté tramitando el procedimiento judicial relacionado con la investigación penal específica para la que se hayan facilitado dichos datos.",
+    "Los proveedores de los datos de investigación a que se refiere el apartado 1, párrafo primero, letra a), o, con su acuerdo, un Estado miembro en el que esté tramitándose un procedimiento judicial relacionado con una investigación penal conexa, podrá solicitar a Europol que conserve los datos de investigación y el resultado de su análisis operativo de dichos datos una vez transcurrido el período de tratamiento indicado en el apartado 3 con el fin de garantizar la veracidad, fiabilidad y trazabilidad del proceso de inteligencia criminal, y únicamente durante el tiempo en que se esté tramitando en dicho otro Estado miembro un procedimiento judicial relacionado con una investigación penal conexa.",
+    "5. Sin perjuicio del tratamiento de datos personales con arreglo al artículo 18, apartado 6 bis, los datos personales que no atañan a las categorías de interesados enumeradas en el anexo II se conservarán de tal modo que exista una separación funcional de otros datos y solo se tratarán cuando ello sea necesario y proporcionado para los fines de los apartados 3, 4 y 6 del presente artículo.",
+    "El Consejo de Administración, a propuesta del director ejecutivo y previa consulta al SEPD, especificará las condiciones relativas al suministro y al tratamiento de datos personales de conformidad con los apartados 3 y 4.",
+    "6. Los apartados 1 a 4 del presente artículo también se aplicarán cuando un tercer país según el artículo 25, apartado 1, letras a), b) o c), o el artículo 25, apartado 4 bis, facilite datos personales a Europol y dicho tercer país le facilite datos de investigación para análisis operativos que contribuyan a la investigación penal específica en uno o varios Estados miembros a los que Europol apoye, siempre que el tercer país obtuviera los datos en el contexto de una investigación penal de conformidad con los requisitos y garantías procesales aplicables en virtud de su Derecho penal nacional.",
+    "Cuando un tercer país facilite datos de investigación a Europol de conformidad con el párrafo primero, el responsable de protección de datos podrá notificarlo al SEPD, cuando proceda.",
+    "Europol comprobará que la cantidad de datos personales a los que se refiere el párrafo primero no sea manifiestamente desproporcionada en relación con la investigación penal específica en el Estado miembro de que se trate. Cuando Europol llegue a la conclusión de que existen indicios de que tales datos son manifiestamente desproporcionados o han sido obtenidos vulnerando claramente los derechos fundamentales, Europol no tratará los datos y los suprimirá.",
+    "Europol podrá consultar los datos personales tratados con arreglo al presente apartado solo cuando sea necesario para apoyar la investigación penal específica para la que hayan sido facilitados. Dichos datos personales se compartirán únicamente dentro de la Unión."
+   ]
+  },
+  {
+   "clave": "19",
+   "rotulo": "Artículo 19",
+   "titulo": "Determinación de los fines y de las restricciones del tratamiento de la información por Europol",
+   "pagPdf": 87,
+   "modifica": true,
+   "parrafos": [
+    "1. El Estado miembro, organismo de la Unión, tercer país u organización internacional que facilite información a Europol determinará el fin o los fines para los que deba tratarse dicha información de conformidad con el artículo 18.",
+    "Cuando el proveedor de información a que se refiere el párrafo primero no haya cumplido lo dispuesto en dicho párrafo, Europol, de acuerdo con el proveedor de información en cuestión, tratará la información con el fin de determinar la pertinencia de dicha información, así como el fin o los fines de su ulterior tratamiento.",
+    "Europol tratará la información con un fin distinto a aquel para el que fue facilitada solo si así lo autoriza el proveedor de la información.",
+    "La información facilitada a efectos del artículo 18, apartado 2, letras a) a d), también podrá ser tratada por Europol a efectos del artículo 18, apartado 2, letra e), de conformidad con el artículo 33 bis.",
+    "2. Los Estados miembros, organismos de la Unión, terceros países y organizaciones internacionales podrán indicar, en el momento de facilitar la información a Europol, cualquier restricción a su acceso o el uso que se deba hacer de ella, en términos generales o específicos, también por lo que respecta a su transferencia, transmisión, cancelación o destrucción. Cuando la necesidad de tales restricciones se manifieste después de haber facilitado la información, informarán de ello a Europol. Europol cumplirá con esas restricciones.",
+    "3. En casos debidamente justificados, Europol podrá imponer restricciones de acceso o utilización por parte de los Estados miembros, organismos de la Unión, países terceros y organizaciones internacionales de la información extraída de fuentes públicas."
+   ]
+  },
+  {
+   "clave": "20",
+   "rotulo": "Artículo 20",
+   "titulo": "Acceso de los Estados miembros y del personal de Europol a la información conservada por Europol",
+   "pagPdf": 87,
+   "modifica": true,
+   "parrafos": [
+    "1. Los Estados miembros, de conformidad con su legislación nacional y el artículo 7, apartado 5, tendrán acceso a, y podrán consultar, toda la información facilitada a los fines del artículo 18, apartado 2, letras a) y b). Todo ello sin perjuicio del derecho de los Estados miembros, organismos de la Unión, países terceros y organizaciones internacionales a indicar cualquier restricción de conformidad con el artículo 19, apartado 2.",
+    "2. Los Estados miembros, de conformidad con su legislación nacional y el artículo 7, apartado 5, dispondrán de acceso indirecto, sobre la base de un sistema de respuesta positiva o negativa, a la información facilitada para los fines del artículo 18, apartado 2, letra c). Todo ello sin perjuicio de las restricciones indicadas por los Estados miembros, organismos de la Unión, países terceros u organizaciones internacionales que facilitaron los datos, de conformidad con el artículo 19, apartado 2.",
+    "En caso de respuesta positiva, Europol abrirá el procedimiento para que pueda compartirse la información que generó la respuesta positiva, de conformidad con la decisión del proveedor de la información a Europol.",
+    "2 bis. En el marco de la realización de los proyectos de análisis operativos a que se refiere el artículo 18, apartado 3, y siempre que se cumplan las normas y garantías para el tratamiento de datos personales establecidas en el presente Reglamento, los Estados miembros podrán determinar la información que Europol debe poner directamente a disposición de otros Estados miembros seleccionados a efectos de un análisis operativo conjunto en investigaciones específicas, sin perjuicio de las posibles restricciones indicadas con arreglo al artículo 19, apartado 2, y de conformidad con los procedimientos que se establezcan en las directrices mencionadas en el artículo 18, apartado 7.",
+    "3. De conformidad con el Derecho nacional, los Estados miembros tendrán acceso a la información mencionada en los apartados 1, 2 y 2 bis y la tratarán ulteriormente solo a efectos de la prevención, detección, investigación y enjuiciamiento de:",
+    "a) formas de delincuencia para las que Europol sea competente, y",
+    "b) otras formas de delincuencia grave, según se recoge en la Decisión Marco 2002/584/JAI del Consejo.",
+    "4. El personal de Europol debidamente habilitado al efecto por el director ejecutivo tendrá acceso a la información tratada por Europol en la medida necesaria para el ejercicio de sus funciones y sin perjuicio de lo dispuesto en el artículo 67."
+   ]
+  },
+  {
+   "clave": "20 bis",
+   "rotulo": "Artículo 20 bis",
+   "titulo": "Relaciones con la Fiscalía Europea",
+   "pagPdf": 88,
+   "modifica": false,
+   "parrafos": [
+    "1. Europol entablará y mantendrá una estrecha relación con la Fiscalía Europea. En el marco de dicha relación, Europol y la Fiscalía Europea actuarán dentro de sus respectivos mandatos y competencias. Para ello, celebrarán un acuerdo de trabajo que establezca las modalidades de su cooperación.",
+    "2. A solicitud de la Fiscalía Europea de conformidad con el artículo 102 del Reglamento (UE) 2017/1939, Europol apoyará las investigaciones de la Fiscalía Europea y cooperará con ella, facilitando información y apoyo analítico, hasta que la Fiscalía Europea determine si debe ejercer la acción penal o archivar el asunto.",
+    "3. A fin de facilitar información a la Fiscalía Europea con arreglo al apartado 2 del presente artículo, Europol adoptará todas las medidas adecuadas para permitir que la Fiscalía Europea tenga acceso indirecto, sobre la base de un sistema de respuesta positiva o negativa, a los datos relacionados con las infracciones que sean competencia de la Fiscalía Europea, facilitados a efectos del artículo 18, apartado 2, letras a), b) y c). Ese sistema de respuesta positiva o negativa dará notificación a Europol solamente en caso de respuesta positiva y sin perjuicio de las posibles restricciones indicadas con arreglo al artículo 19, apartado 2, por los proveedores de información mencionados en el artículo 19, apartado 1.",
+    "En caso de respuesta positiva, Europol abrirá el procedimiento para que pueda compartirse la información que generó la respuesta positiva, de conformidad con la decisión del proveedor de la información a la que se refiere el artículo 19, apartado 1, y solo en la medida en que los datos que hayan generado la respuesta positiva resulten pertinentes para la solicitud presentada con arreglo al apartado 2 del presente artículo.",
+    "4. Europol informará sin demora indebida a la Fiscalía Europea de cualquier conducta delictiva respecto de la cual la Fiscalía Europea pueda ejercer su competencia de conformidad con el artículo 22 y el artículo 25, apartados 2 y 3, del Reglamento (UE) 2017/1939 y sin perjuicio de las posibles restricciones indicadas con arreglo al artículo 19, apartado 2, del presente Reglamento por el proveedor de la información.",
+    "Cuando Europol informe a la Fiscalía Europea con arreglo al párrafo primero, lo notificará sin demora a los Estados miembros afectados.",
+    "Cuando alguna información relativa a la conducta delictiva respecto de la cual la Fiscalía Europea puede ejercer su competencia haya sido facilitada a Europol por un Estado miembro que haya indicado restricciones al uso de dicha información con arreglo al artículo 19, apartado 2, del presente Reglamento, Europol notificará a la Fiscalía Europea la existencia de dichas restricciones y remitirá el asunto al Estado miembro afectado. El Estado miembro afectado colaborará directamente con la Fiscalía Europea a fin de cumplir lo dispuesto en el artículo 24, apartados 1 y 4, del Reglamento (UE) 2017/1939."
+   ]
+  },
+  {
+   "clave": "21",
+   "rotulo": "Artículo 21",
+   "titulo": "Acceso por Eurojust, por la OLAF y, únicamente para los fines del SEIAV, por la Agencia Europea de la Guardia de Fronteras y Costas y, únicamente para los fines del VIS, por las autoridades designadas para el VIS a la información almacenada por Europol",
+   "pagPdf": 89,
+   "modifica": true,
+   "parrafos": [
+    "1. Europol tomará todas las medidas oportunas para permitir que Eurojust y la OLAF, dentro de sus mandatos respectivos, tengan acceso indirecto, sobre la base de un sistema de respuesta positiva o negativa, a la información facilitada para los fines del artículo 18, apartado 2, letras a), b) y c), sin perjuicio de las restricciones indicadas por los Estados miembros, organismos de la Unión, países terceros u organizaciones internacionales que facilitaron la información en cuestión, de conformidad con el artículo 19, apartado 2.",
+    "En caso de respuesta positiva, Europol abrirá el procedimiento para que pueda compartirse la información que generó la respuesta positiva, de conformidad con la decisión del proveedor de la información a Europol, y solo en la medida en que los datos que hayan generado la respuesta positiva resulten necesarios para la realización de las tareas de Eurojust o de la OLAF.",
+    "1 bis. Europol tomará todas las medidas oportunas para permitir que la Agencia Europea de la Guardia de Fronteras y Costas, con arreglo a su mandato y para los fines del Reglamento (UE) 2018/1240, tenga acceso indirecto mediante un sistema de respuesta positiva o negativa, a los datos facilitados a efectos del artículo 20, apartado 2, letra j), del citado Reglamento, sin perjuicio de las restricciones indicadas por el Estado miembro, organismo de la Unión, tercer país u organización internacional que facilite la información en cuestión, de conformidad con el artículo 19, apartado 2, del presente Reglamento.",
+    "En caso de respuesta positiva, Europol iniciará el procedimiento para que pueda compartirse la información que generó la respuesta positiva, de conformidad con la decisión del proveedor de la información a Europol, y solo en la medida en que los datos que hayan generado la respuesta positiva resulten necesarios para la realización de las tareas de la Agencia Europea de la Guardia de Fronteras y Costas relacionadas con el SEIAV.",
+    "Los apartados 2 a 7 del presente artículo se aplicarán en consecuencia.",
+    "1 ter. Europol tomará todas las medidas oportunas para permitir que las autoridades designadas para el VIS, a los efectos del Reglamento (CE) n.º 767/2008, tengan acceso indirecto, mediante un sistema de respuesta positiva o negativa, a los datos facilitados a efectos del artículo 18, apartado 2, letra a), del presente Reglamento, sin perjuicio de las restricciones indicadas por el Estado miembro, organismo de la Unión, tercer país u organización internacional que facilite la información en cuestión, de conformidad con el artículo 19, apartado 2, del presente Reglamento.",
+    "En caso de respuesta positiva, Europol iniciará el procedimiento para que pueda compartirse la información que generó la respuesta positiva, de conformidad con la decisión del proveedor de la información a Europol. Dicha información podrá compartirse únicamente en la medida en que los datos que hayan generado la respuesta positiva resulten necesarios para la realización de las tareas relacionadas con el VIS de las autoridades designadas para el VIS.",
+    "Los apartados 2 a 7 del presente artículo se aplicarán en consecuencia.",
+    "2. Europol y Eurojust podrán celebrar un acuerdo de trabajo que garantice, recíprocamente y en el marco de sus respectivos mandatos, la posibilidad de acceso a, y búsqueda de, toda la información facilitada a los fines especificados en el artículo 18, apartado 2, letra a), y la posibilidad de consultar dicha información, sin perjuicio del derecho de los Estados miembros, organismos de la Unión, países terceros y organizaciones internacionales a indicar restricciones al acceso y la utilización de dichos datos, de conformidad con las garantías de protección de datos establecidas en el presente Reglamento.",
+    "3. Las búsquedas de información de conformidad con los apartados 1 y 2 solo se podrán llevar a cabo con el fin de determinar si la información disponible en Eurojust o en la OLAF, concuerda con la información tratada en Europol.",
+    "4. Europol solo permitirá que se realicen consultas con arreglo a los apartados 1 y 2 tras haber obtenido de Eurojust información sobre qué miembros nacionales, suplentes y asistentes, así como miembros de su personal y de la OLAF, información sobre qué miembros de su personal, han sido autorizados para realizar tales búsquedas.",
+    "5. Si durante las actividades de tratamiento de información de Europol en relación con una investigación concreta, Europol o un Estado miembro determinaran la necesidad de coordinación, cooperación o apoyo de conformidad con el mandato de Eurojust o de la OLAF, Europol les notificará este extremo y abrirá el procedimiento para compartir información, de conformidad con la decisión del Estado miembro que facilitó la información. En tal caso, Eurojust o la OLAF consultarán a Europol.",
+    "6. Eurojust, incluido el Colegio, los miembros nacionales, los suplentes y los asistentes, así como los miembros de su personal, y la OLAF deberán respetar cualquier restricción de acceso o utilización, en términos generales o específicos, indicada por los Estados miembros, organismos de la Unión, países terceros y organizaciones internacionales de conformidad con el artículo 19, apartado 2.",
+    "7. Europol, Eurojust y la OLAF se informarán entre sí en caso de que, tras consultarse recíprocamente los datos de conformidad con el apartado 2 o como consecuencia de una respuesta positiva de conformidad con el apartado 1, haya indicios de que los datos pueden ser incorrectos o entrar en conflicto con otros datos.",
+    "8. Si durante el tratamiento de la información en relación con una investigación penal específica o un proyecto específico, Europol detecta información pertinente acerca de una posible actividad ilegal que afecte a los intereses financieros de la Unión, Europol facilitará sin demora a la OLAF dicha información, sin perjuicio de las posibles restricciones indicadas con arreglo al artículo 19, apartado 2, por el Estado miembro que facilitó la información.",
+    "Cuando Europol facilite a la OLAF información con arreglo al párrafo primero, lo notificará sin demora a los Estados miembros afectados."
+   ]
+  },
+  {
+   "clave": "23",
+   "rotulo": "Artículo 23",
+   "titulo": "Disposiciones comunes",
+   "pagPdf": 91,
+   "modifica": true,
+   "parrafos": [
+    "1. En la medida en que sea necesario para el desempeño de sus tareas, Europol podrá establecer y mantener relaciones de cooperación con los organismos de la Unión, de conformidad con los objetivos de dichos organismos, las autoridades de países terceros, organizaciones internacionales y entidades privadas.",
+    "2. Siempre que se cumplan las restricciones derivadas del artículo 19, apartado 2, y sin perjuicio del artículo 67, Europol podrá intercambiar directamente todo tipo de información, con la excepción de los datos personales, con las entidades contempladas en el apartado 1 del presente artículo, en la medida en que ese intercambio sea pertinente para el desempeño de sus tareas.",
+    "3. El director ejecutivo informará al Consejo de Administración sobre cualesquiera relaciones de cooperación regulares que Europol se proponga establecer y mantener de conformidad con los apartados 1 y 2 y sobre la evolución de dichas relaciones una vez establecidas.",
+    "4. Para la consecución de los fines contemplados en los apartados 1 y 2, Europol podrá celebrar acuerdos de trabajo con las entidades mencionadas en el apartado 1. Dichos acuerdos de trabajo no permitirán el intercambio de datos personales y no vincularán a la Unión ni a sus Estados miembros.",
+    "5. Europol podrá recibir y tratar datos personales procedentes de las entidades contempladas en el apartado 1 en la medida en que sea necesario y proporcionado para el desempeño legítimo de sus tareas, y a reserva de lo dispuesto en el presente capítulo.",
+    "6. Sin perjuicio de lo dispuesto en el artículo 30, apartado 5, Europol solo transferirá datos personales a los organismos de la Unión, países terceros y organizaciones internacionales si fuera necesario para la prevención y la lucha contra los delitos comprendidos en el ámbito de los objetivos de Europol y de conformidad con el presente Reglamento y si el destinatario se compromete a que los datos se traten solo para los fines para los que se han transmitido. Si los datos que se hayan de transferir hubieran sido facilitados por un Estado miembro, Europol deberá obtener el consentimiento de ese Estado miembro, a menos que el Estado miembro haya concedido su autorización previa para tales transferencias ulteriores, ya sea en términos generales o con arreglo a condiciones específicas. Dicho consentimiento podrá retirarse en cualquier momento.",
+    "7. Las transferencias ulteriores de datos personales en poder de Europol por parte de Estados miembros, organismos de la Unión, terceros países, organizaciones internacionales o entidades privadas estarán prohibidas, a menos que Europol haya dado su autorización expresa previa.",
+    "8. Europol garantizará la anotación detallada de todas las transferencias de datos personales así como las motivaciones de dichas transferencias, de conformidad con el presente Reglamento.",
+    "9. No se tratará ninguna información obtenida en violación manifiesta de los derechos humanos."
+   ]
+  },
+  {
+   "clave": "24",
+   "rotulo": "Artículo 24",
+   "titulo": "Transferencia de datos personales a los organismos de la Unión",
+   "pagPdf": 92,
+   "modifica": true,
+   "parrafos": [
+    "1. Europol únicamente transmitirá datos personales a un organismo de la Unión de conformidad con el artículo 71, apartado 2, del Reglamento (UE) 2018/1725, siempre que se respeten las posibles restricciones en virtud del presente Reglamento y sin perjuicio de lo dispuesto en el artículo 67 del presente Reglamento, si dichos datos son necesarios y proporcionados para el legítimo desempeño de las funciones del organismo de la Unión destinatario.",
+    "2. Cuando otro organismo de la Unión haya solicitado la transmisión de datos personales, Europol verificará la competencia de ese otro organismo. Cuando Europol no pueda confirmar que la transmisión de datos personales es necesaria de conformidad con el apartado 1, pedirá al organismo de la Unión solicitante que aporte información complementaria.",
+    "El organismo de la Unión solicitante garantizará que pueda valorarse la necesidad de la transmisión de los datos personales.",
+    "3. El organismo de la Unión destinatario tratará los datos personales mencionados en los apartados 1 y 2 únicamente para los fines para los que hayan sido transmitidos."
+   ]
+  },
+  {
+   "clave": "25",
+   "rotulo": "Artículo 25",
+   "titulo": "Transferencia de datos personales a países terceros y organizaciones internacionales",
+   "pagPdf": 92,
+   "modifica": true,
+   "parrafos": [
+    "1. Siempre que se respeten las posibles restricciones indicadas con arreglo al artículo 19, apartados 2 o 3, y sin perjuicio de lo dispuesto en el artículo 67, Europol podrá transferir datos personales a las autoridades competentes de un tercer país o a una organización internacional, a condición de que dicha transferencia sea necesaria para el desempeño de las funciones de Europol, sobre la base de alguno de los actos siguientes:",
+    "a) una decisión de la Comisión adoptada de conformidad con el artículo 36 de la Directiva (UE) 2016/680, en la que se decida que el tercer país, un territorio o uno o varios sectores específicos en ese tercer país, o la organización internacional de que se trate garantizan un nivel de protección adecuado (\"decisión de adecuación\"),",
+    "b) un acuerdo internacional celebrado entre la Unión y ese país tercero u organización internacional con arreglo al artículo 218 del TFUE que ofrezca garantías adecuadas con respecto a la protección de la intimidad y los derechos y libertades fundamentales de las personas físicas, o",
+    "c) un acuerdo de cooperación que permita el intercambio de datos personales celebrado antes del 1 de mayo de 2017 entre Europol y ese país tercero u organización internacional con arreglo al artículo 23 de la Decisión 2009/371/JAI.",
+    "2. El director ejecutivo informará al Consejo de Administración acerca del intercambio de datos personales basándose en decisiones de adecuación, conforme al apartado 1, letra a).",
+    "3. SUPRIMIDO.",
+    "4. Antes del 14 de junio de 2021, la Comisión evaluará las disposiciones contenidas en los acuerdos de cooperación mencionados en el apartado 1, letra c), en particular sobre la protección de datos. La Comisión informará al Parlamento Europeo y al Consejo sobre el resultado de esta evaluación y, si procede, podrá someter al Consejo una recomendación de decisión por la que se autorice el inicio de negociaciones para la celebración de acuerdos internacionales según se menciona en el apartado 1, letra b).",
+    "4 bis. A falta de decisión de adecuación, el Consejo de Administración podrá autorizar a Europol a transferir datos personales a una autoridad competente de un tercer país o a una organización internacional cuando:",
+    "a) se hayan aportado garantías adecuadas con respecto a la protección de datos personales, en un instrumento jurídicamente vinculante, o",
+    "b) Europol haya valorado todas las circunstancias que concurren en la transferencia de los datos personales y haya llegado a la conclusión de que existen garantías adecuadas con respecto a la protección de datos personales.",
+    "5. No obstante lo dispuesto en el apartado 1, el director ejecutivo podrá autorizar, en casos debidamente justificados, la transferencia o una categoría de transferencias de datos personales a una autoridad competente de un tercer país o a una organización internacional en función del caso concreto, si la transferencia o la categoría de transferencias es:",
+    "a) necesaria para proteger los intereses vitales del interesado o de otra persona, o",
+    "b) necesaria para salvaguardar intereses legítimos del interesado,",
+    "c) esencial para prevenir una amenaza inminente y grave para la seguridad pública de un Estado miembro o de un país tercero, o",
+    "d) necesaria en casos concretos a efectos de prevención, investigación, detección o enjuiciamiento de infracciones penales o de ejecución de sanciones penales, o",
+    "e) necesaria en casos concretos para el reconocimiento, el ejercicio o la defensa de un derecho en un procedimiento judicial relativo a la prevención, investigación, detección o enjuiciamiento de una infracción penal o la ejecución de una sanción penal específica.",
+    "Los datos personales no se transferirán si el director ejecutivo determina que los derechos y libertades fundamentales del interesado en cuestión priman sobre el interés público en la transferencia a que se refieren las letras d) y e).",
+    "No se aplicarán excepciones a las transferencias sistemáticas, masivas o estructurales.",
+    "6. No obstante lo dispuesto en el apartado 1, el Consejo de Administración podrá, de acuerdo con el Supervisor Europeo de Protección de Datos, autorizar una serie de transferencias de conformidad con el apartado 5, letras a) a e), teniendo en cuenta la existencia de garantías adecuadas con respecto a la protección de la intimidad y los derechos y libertades fundamentales de las personas físicas, por un período no superior a un año, prorrogable. Dicha autorización estará debidamente justificada y documentada.",
+    "7. El director ejecutivo informará lo antes posible al Consejo de Administración y al SEPD de los casos en que haya aplicado el apartado 5.",
+    "8. Europol informará al SEPD sobre las categorías de transferencias contempladas en el apartado 4 bis, letra b). Cuando una transferencia se efectúe de conformidad con los apartados 4 bis o 5, se documentará y la documentación se pondrá a disposición del SEPD previa petición. La documentación incluirá un registro de la fecha y hora de la transferencia, así como información sobre la autoridad competente a la que se refiere el presente artículo, sobre la justificación de la transferencia y sobre los datos personales transferidos."
+   ]
+  },
+  {
+   "clave": "26",
+   "rotulo": "Artículo 26",
+   "titulo": "Intercambios de datos personales con entidades privadas",
+   "pagPdf": 93,
+   "modifica": true,
+   "parrafos": [
+    "1. En la medida en que sea necesario para el desempeño de sus tareas, Europol podrá tratar datos personales procedentes de entidades privadas siempre que hayan sido recibidos a través de:",
+    "a) una unidad nacional de conformidad con el Derecho nacional;",
+    "b) el punto de contacto de un país tercero o una organización internacional con la que Europol haya concluido, antes del 1 de mayo de 2017, un acuerdo de cooperación que permita el intercambio de datos personales de conformidad con el artículo 23 de la Decisión 2009/371/JAI, o",
+    "c) una autoridad de un tercer país o una organización internacional a que se refiere el artículo 25, apartado 1, letra a), b) o c), o el artículo 25, apartado 4 bis.",
+    "2. Cuando Europol reciba datos personales directamente de entidades privadas, podrá tratar dichos datos personales de conformidad con el artículo 18, con el fin de determinar las unidades nacionales afectadas, a las que se refiere el apartado 1, letra a), del presente artículo. Europol transmitirá inmediatamente a las unidades nacionales afectadas los datos personales y todos los resultados pertinentes del tratamiento necesario de dichos datos para determinar el territorio competente. Europol podrá transmitir los datos personales y los resultados pertinentes del tratamiento necesario de dichos datos para determinar el territorio competente, de conformidad con el artículo 25, a los puntos de contacto y a las autoridades afectadas a que se refiere el apartado 1, letras b) y c), del presente artículo. En caso de que Europol no pueda determinar las unidades nacionales afectadas o ya haya transmitido los datos personales pertinentes a todas las unidades nacionales afectadas determinadas y no sea posible determinar otras unidades nacionales afectadas, cancelará los datos, a menos que la unidad nacional, el punto de contacto o la autoridad afectada vuelva a facilitar los datos personales a Europol de conformidad con el artículo 19, apartado 1, en un plazo de cuatro meses a partir de la fecha en que tenga lugar la transmisión o la transferencia.",
+    "Los criterios para determinar si la unidad nacional del Estado miembro en el que esté establecida la entidad privada pertinente constituye una unidad nacional afectada se establecerán en las directrices a que se refiere el artículo 18, apartado 7.",
+    "2 bis. La cooperación de Europol con entidades privadas no deberá suponer una duplicidad en las actividades de las UIF de los Estados miembros ni interferir con ellas, y no concernirá a información que deba facilitarse a las UIF a efectos de la Directiva (UE) 2015/849.",
+    "3. De resultas de la transferencia de datos personales conforme al apartado 5, letra c), del presente artículo, Europol podrá, en relación con esta, recibir directamente de entidades privadas datos personales que la entidad privada de que se trate declare que se le permite transmitir legalmente de conformidad con la legislación aplicable para tratar esos datos a fin de llevar a cabo el cometido indicado en el artículo 4, apartado 1, letra m).",
+    "4. Cuando Europol reciba datos personales procedentes de una entidad privada establecida en un tercer país, Europol solo transmitirá dichos datos y el resultado del análisis y comprobación de dichos datos a un Estado miembro o a un tercer país afectado según se contempla en el artículo 25, apartado 1, letras a), b) o c) o el artículo 25, apartado 4 bis.",
+    "Sin perjuicio de lo dispuesto en el párrafo primero del presente apartado, Europol podrá transferir los resultados a los que se refiere el párrafo primero del presente apartado al tercer país de que se trate con arreglo al artículo 25, apartados 5 o 6.",
+    "5. Europol no podrá transmitir ni transferir datos personales a entidades privadas excepto en los casos siguientes y siempre que dicha transmisión o transferencia sea estrictamente necesaria y proporcionada, en función de cada caso concreto:",
+    "a) la transmisión o la transferencia revista indudablemente un interés para el interesado;",
+    "b) la transmisión o la transferencia sea estrictamente necesaria para prevenir la perpetración inminente de un delito que se incluya en los objetivos de Europol, incluido el terrorismo;",
+    "c) la transmisión o la transferencia de datos personales que estén públicamente disponibles sea estrictamente necesaria para desempeñar la función a que se refiere el artículo 4, apartado 1, letra m), y se cumplan las siguientes condiciones:",
+    "i) que la transmisión o la transferencia se refiera a un caso concreto y específico,",
+    "ii) que los derechos y libertades fundamentales de los interesados no primen sobre el interés público que exija que esos datos personales se transmitan o transfieran en el caso de que se trate, o",
+    "d) la transmisión o la transferencia sea estrictamente necesaria para que Europol notifique a la entidad privada que la información recibida es insuficiente para permitir a Europol determinar las unidades nacionales afectadas, y se cumplan las siguientes condiciones:",
+    "i) que la transmisión o la transferencia se produzca tras la recepción de datos personales directamente de una entidad privada con arreglo al apartado 2,",
+    "ii) que la información que falte, a la que Europol puede referirse en su notificación, tenga un vínculo claro con la información previamente compartida por dicha entidad privada,",
+    "iii) que la información que falte, a la que Europol puede referirse en su notificación, se limite estrictamente a lo necesario para que Europol determine las unidades nacionales afectadas.",
+    "6. En relación con el apartado 5, letras a), b) y d), del presente artículo, si la entidad privada de que se trate no está establecida en la Unión o en un tercer país según se contempla en el artículo 25, apartado 1, letras a), b) o c), o el artículo 25, apartado 4 bis, el director ejecutivo solo podrá autorizar la transferencia si es:",
+    "a) necesaria para proteger los intereses vitales del interesado o de otra persona;",
+    "b) necesaria para salvaguardar intereses legítimos del interesado;",
+    "c) esencial para prevenir una amenaza inminente y grave para la seguridad pública de un Estado miembro o de un tercer país;",
+    "d) necesaria en casos concretos a efectos de prevención, investigación, detección o enjuiciamiento de un delito específico que se incluya en los objetivos de Europol, o",
+    "e) necesaria en casos concretos para el reconocimiento, el ejercicio o la defensa de un derecho en un procedimiento judicial relativo a la prevención, investigación, detección o enjuiciamiento de una infracción penal específica que se incluya en los objetivos de Europol.",
+    "Los datos personales no podrán ser transferidos si el director ejecutivo determina que los derechos y libertades fundamentales del interesado priman sobre el interés público que requiere la transferencia a que se refiere el párrafo primero, letras d) y e), del presente apartado.",
+    "6 bis. Sin perjuicio de lo dispuesto en el apartado 5, letras a), c) y d), del presente artículo y en otros actos jurídicos de la Unión, las transferencias o transmisiones de datos personales con arreglo a los apartados 5 y 6 no serán sistemáticas, masivas ni estructurales.",
+    "6 ter. Europol podrá solicitar a los Estados miembros, a través de las unidades nacionales, que obtengan, de conformidad con el Derecho nacional, datos personales procedentes de entidades privadas que estén establecidas o tengan un representante legal en su territorio, con el fin de compartir dichos datos con Europol. Estas solicitudes deberán estar motivadas y ser lo más precisas posible. Dichos datos personales tendrán el carácter menos sensible posible y se limitarán estrictamente a lo que sea necesario y proporcionado para que Europol pueda determinar las unidades nacionales afectadas.",
+    "No obstante la competencia de los Estados miembros sobre un delito específico, los Estados miembros garantizarán que sus autoridades competentes puedan tramitar las solicitudes a las que se refiere el párrafo primero de conformidad con su Derecho nacional con el fin de facilitar a Europol la información necesaria para determinar las unidades nacionales afectadas.",
+    "6 quater. La infraestructura de Europol podrá utilizarse para intercambios entre las autoridades competentes de los Estados miembros y las entidades privadas de conformidad con el Derecho nacional respectivo. Dichos intercambios también podrán tratar sobre delitos que no se incluyan en los objetivos de Europol.",
+    "Cuando los Estados miembros utilicen la infraestructura de Europol para el intercambio de datos personales sobre delitos que se incluyan en los objetivos de Europol, podrán otorgar a Europol acceso a dichos datos.",
+    "Cuando los Estados miembros utilicen la infraestructura de Europol para el intercambio de datos personales sobre delitos que no se incluyan en los objetivos de Europol, Europol no podrá tener acceso a dichos datos y se le considerará un encargado del tratamiento de conformidad con el artículo 87 del Reglamento (UE) 2018/1725.",
+    "Europol evaluará los riesgos para la seguridad que plantee permitir la utilización de su infraestructura por parte de entidades privadas y, en caso necesario, aplicará las medidas preventivas y de atenuación adecuadas.",
+    "7. Europol garantizará el registro detallado de todas las transferencias de datos personales así como las motivaciones para dichas transferencias, de conformidad con el presente Reglamento, y comunicará las correspondientes anotaciones al SEPD a petición de este con arreglo a lo dispuesto en el artículo 40.",
+    "8. Si los datos personales recibidos o por transferir afectan a los intereses de un Estado miembro, Europol informará inmediatamente a la unidad nacional del Estado miembro de que se trate.",
+    "9. SUPRIMIDO.",
+    "10. SUPRIMIDO.",
+    "11. Europol preparará un informe anual para el Consejo de Administración sobre los datos personales intercambiados con entidades privadas en virtud de los artículos 26, 26 bis y 26 ter, a partir de criterios de evaluación cuantitativos y cualitativos establecidos por el Consejo de Administración.",
+    "El informe anual incluirá ejemplos concretos que demuestren la necesidad de las solicitudes de Europol de conformidad con el apartado 6 ter del presente artículo para cumplir sus objetivos y desempeñar sus funciones.",
+    "El informe anual tendrá en cuenta las obligaciones de discreción y confidencialidad, y los ejemplos se anonimizarán en lo que respecta a los datos personales.",
+    "El informe anual se remitirá al Parlamento Europeo, al Consejo, a la Comisión y a los Parlamentos nacionales."
+   ]
+  },
+  {
+   "clave": "26 bis",
+   "rotulo": "Artículo 26 bis",
+   "titulo": "Intercambio de datos personales con entidades privadas en situaciones de crisis en línea",
+   "pagPdf": 96,
+   "modifica": false,
+   "parrafos": [
+    "1. En situaciones de crisis en línea, Europol podrá recibir datos personales directamente de entidades privadas y tratar dichos datos personales de conformidad con el artículo 18.",
+    "2. Cuando Europol reciba datos personales procedentes de una entidad privada establecida en un tercer país, transmitirá dichos datos y los resultados de su análisis y comprobación de dichos datos solamente a un Estado miembro, o a un tercer país afectado según se contempla en el artículo 25, apartado 1, letras a), b) o c), o en el artículo 25, apartado 4 bis.",
+    "Europol podrá transferir los resultados de su análisis y comprobación de los datos a los que se refiere el apartado 1 del presente artículo al tercer país afectado en virtud del artículo 25, apartados 5 o 6.",
+    "3. Europol podrá transmitir o transferir datos personales a entidades privadas, en función del caso concreto, respetando las posibles restricciones indicadas con arreglo al artículo 19, apartados 2 o 3, y sin perjuicio de lo dispuesto en el artículo 67, cuando la transmisión o la transferencia de dichos datos sea estrictamente necesaria para hacer frente a situaciones de crisis en línea, y los derechos y libertades fundamentales de los interesados afectados no primen sobre el interés público que requiera que esos datos personales se transmitan o transfieran.",
+    "4. Cuando la entidad privada de que se trate no esté establecida en la Unión o en un tercer país según se contempla en el artículo 25, apartado 1, letras a), b) o c), o en el artículo 25, apartado 4 bis, la transferencia requerirá la autorización del director ejecutivo.",
+    "5. Europol prestará asistencia, intercambiará información y cooperará con las autoridades competentes de los Estados miembros en relación con las transmisiones y las transferencias de datos personales a entidades privadas con arreglo a los apartados 3 o 4, en particular, para evitar que se dupliquen esfuerzos, para reforzar la coordinación y evitar interferencias con investigaciones en distintos Estados miembros.",
+    "6. Europol podrá solicitar a los Estados miembros, a través de las unidades nacionales, que obtengan, de conformidad con el Derecho nacional, datos personales procedentes de entidades privadas que estén establecidas o tengan un representante legal en su territorio, con el fin de compartir dichos datos con Europol. Esta solicitud deberá estar motivada y ser lo más precisa posible. Dichos datos personales tendrán el carácter menos sensible posible y se limitarán estrictamente a lo que sea necesario y proporcionado con la finalidad de permitir que Europol apoye a los Estados miembros para hacer frente a las situaciones de crisis en línea.",
+    "No obstante la competencia de los Estados miembros en materia de difusión del contenido sobre el que Europol solicite datos personales, los Estados miembros garantizarán que sus autoridades competentes puedan tramitar las solicitudes a las que se refiere el párrafo primero de conformidad con el Derecho nacional, con el fin de facilitar a Europol la información necesaria para lograr sus objetivos.",
+    "7. Europol garantizará que se lleve un registro detallado de todas las transferencias de datos personales y de los motivos para dichas transferencias, de conformidad con el presente Reglamento. A petición del SEPD, Europol pondrá tal registro a su disposición en virtud del artículo 39 bis.",
+    "8. Si los datos personales recibidos o por transferir afectan a los intereses de un Estado miembro, Europol informará inmediatamente a la unidad nacional del Estado miembro de que se trate."
+   ]
+  },
+  {
+   "clave": "26 ter",
+   "rotulo": "Artículo 26 ter",
+   "titulo": "Intercambio de datos personales con entidades privadas para combatir la difusión en línea de material en línea de abusos sexuales a menores",
+   "pagPdf": 97,
+   "modifica": false,
+   "parrafos": [
+    "1. Europol podrá recibir datos personales directamente de entidades privadas y tratar dichos datos personales de conformidad con el artículo 18 para combatir la difusión en línea de material en línea de abusos sexuales a menores, a que se refiere el artículo 4, apartado 1, letra y).",
+    "2. Cuando Europol reciba datos personales procedentes de una entidad privada establecida en un tercer país, transmitirá dichos datos y los resultados de su análisis y comprobación de dichos datos solamente a un Estado miembro, o a un tercer país afectado según se contempla en el artículo 25, apartado 1, letras a), b) o c), o en el artículo 25, apartado 4 bis.",
+    "Europol podrá transferir los resultados de su análisis y comprobación de los datos mencionados en el párrafo primero del presente apartado al tercer país afectado con arreglo al artículo 25, apartados 5 o 6.",
+    "3. Europol podrá transmitir o transferir datos personales a entidades privadas, en función del caso concreto, siempre que se respeten las posibles restricciones indicadas con arreglo al artículo 19, apartados 2 o 3, y sin perjuicio del artículo 67, cuando la transmisión o la transferencia de dichos datos sea estrictamente necesaria para combatir la difusión en línea de material en línea de abusos sexuales a menores a que se refiere el artículo 4, apartado 1, letra y), y los derechos y libertades fundamentales de los interesados afectados no primen sobre el interés público que requiera que esos datos personales se transmitan o transfieran.",
+    "4. Cuando la entidad privada de que se trate no esté establecida en la Unión o en un tercer país según se contempla en el artículo 25, apartado 1, letras a), b) o c), o en el artículo 25, apartado 4 bis, la transferencia requerirá la autorización del director ejecutivo.",
+    "5. Europol prestará asistencia, intercambiará información y cooperará con las autoridades competentes de los Estados miembros en relación con las transmisiones y las transferencias de datos personales a entidades privadas con arreglo a los apartados 3 o 4, en particular, para evitar que se dupliquen esfuerzos, reforzar la coordinación y evitar interferencias con investigaciones en distintos Estados miembros.",
+    "6. Europol podrá solicitar a los Estados miembros, a través de las unidades nacionales, que obtengan, de conformidad con el Derecho nacional, datos personales procedentes de entidades privadas que estén establecidas o tengan un representante legal en su territorio, con el fin de compartir dichos datos con Europol. Estas solicitudes deberán estar motivadas y ser lo más precisas posible. Dichos datos personales tendrán el carácter menos sensible posible y se limitarán estrictamente a lo que sea necesario y proporcionado para que Europol pueda combatir la difusión en línea de material en línea de abusos sexuales a menores, a que se refiere el artículo 4, apartado 1, letra y).",
+    "No obstante la competencia de los Estados miembros en materia de difusión del contenido sobre el que Europol solicite datos personales, los Estados miembros garantizarán que las autoridades competentes de los Estados miembros puedan tramitar las solicitudes a las que se refiere el párrafo primero de conformidad con el Derecho nacional con el fin de facilitar a Europol la información necesaria para lograr sus objetivos.",
+    "7. Europol garantizará que se lleve un registro detallado de todas las transferencias de datos personales y de los motivos para dichas transferencias, de conformidad con el presente Reglamento. A petición del SEPD, Europol pondrá tal registro a su disposición en virtud del artículo 39 bis.",
+    "8. Si los datos personales recibidos o por transferir afectan a los intereses de un Estado miembro, Europol informará inmediatamente a la unidad nacional del Estado miembro de que se trate."
+   ]
+  },
+  {
+   "clave": "27",
+   "rotulo": "Artículo 27",
+   "titulo": "Información procedente de particulares",
+   "pagPdf": 98,
+   "modifica": true,
+   "parrafos": [
+    "1. En la medida en que lo necesite para el desempeño de sus funciones, Europol podrá recibir y tratar información procedente de particulares.",
+    "Europol solo podrá tratar los datos personales procedentes de particulares si han sido recibidos a través de:",
+    "a) una unidad nacional, de conformidad con el Derecho nacional;",
+    "b) el punto de contacto de un tercer país o una organización internacional en aplicación del artículo 25, apartado 1, letra c), o",
+    "c) una autoridad de un tercer país o una organización internacional según se contempla en el artículo 25, apartado 1, letras a) o b), o en el artículo 25, apartado 4 bis.",
+    "2. Cuando Europol reciba información, incluidos datos personales, procedente de un particular residente en un tercer país que no sea aquel a que se refiere el artículo 25, apartado 1, letras a) o b), o el artículo 25, apartado 4 bis, solo podrá remitir dicha información a un Estado miembro o a ese tercer país.",
+    "3. Si los datos personales recibidos afectan a los intereses de un Estado miembro, Europol informará inmediatamente a la unidad nacional del Estado miembro de que se trate.",
+    "4. Europol no podrá ponerse en contacto con particulares con el fin de recabar información.",
+    "5. Sin perjuicio de lo dispuesto en los artículos 36 y 37, Europol no podrá transferir datos personales a particulares."
+   ]
+  },
+  {
+   "clave": "27 bis",
+   "rotulo": "Artículo 27 bis",
+   "titulo": "Tratamiento de datos personales por Europol",
+   "pagPdf": 99,
+   "modifica": false,
+   "parrafos": [
+    "1. Sin perjuicio de lo dispuesto en el presente Reglamento, el artículo 3 y el capítulo IX del Reglamento (UE) 2018/1725 se aplicarán al tratamiento de datos personales por Europol.",
+    "El Reglamento (UE) 2018/1725, a excepción del capítulo IX, se aplicará al tratamiento de datos personales administrativos por Europol.",
+    "2. Las referencias a \"datos personales\" en el presente Reglamento se entenderán como referencias a \"datos personales operativos\" tal como se definen en el artículo 3, punto 2, del Reglamento (UE) 2018/1725, salvo que se disponga otra cosa en el presente Reglamento.",
+    "3. El Consejo de Administración adoptará normas para determinar los plazos de conservación de los datos personales administrativos."
+   ]
+  },
+  {
+   "clave": "28",
+   "rotulo": "Artículo 28",
+   "titulo": "Principios generales en materia de protección de datos",
+   "pagPdf": 99,
+   "modifica": true,
+   "parrafos": [
+    "SUPRIMIDO"
+   ]
+  },
+  {
+   "clave": "30",
+   "rotulo": "Artículo 30",
+   "titulo": "Tratamiento de categorías especiales de datos personales y de categorías diferentes de interesados",
+   "pagPdf": 100,
+   "modifica": true,
+   "parrafos": [
+    "1. El tratamiento de datos personales de las víctimas de delitos, los testigos u otras personas que pudieran facilitar información sobre delitos, y de los menores de dieciocho años estará permitido si es estrictamente necesario y proporcionado para la prevención o la lucha contra los delitos enunciados en los objetivos de Europol.",
+    "2. El tratamiento de datos personales, ya sea por medios automatizados o de otro tipo, que revelen el origen racial o étnico, las opiniones políticas, las creencias religiosas o filosóficas, o la filiación sindical y el tratamiento de los datos genéticos, los datos biométricos destinados a identificar de manera unívoca a una persona física, o los datos relativos a la salud o a la vida sexual o a la orientación sexual de personas físicas estará permitido solo cuando sea estrictamente necesario y proporcionado para fines de proyectos de investigación e innovación en virtud del artículo 33 bis y con fines operativos, dentro de los objetivos de Europol, y únicamente para prevenir o combatir los delitos que se incluyan en los objetivos de Europol. Tal tratamiento estará sujeto asimismo a unas garantías adecuadas establecidas en el presente Reglamento con respecto a los derechos y libertades del interesado y, a excepción de los datos biométricos tratados a efectos de identificar de manera unívoca a una persona física, se permitirá únicamente si esos datos complementan otros datos personales tratados por Europol. Estará prohibido seleccionar un grupo particular de personas únicamente sobre la base de los datos personales citados.",
+    "2 bis. El responsable de la protección de datos será informado sin demora indebida en el caso de que se traten datos personales en virtud del presente artículo.",
+    "3. Solo Europol tendrá acceso directo a los datos personales a que se refieren los apartados 1 y 2. El director ejecutivo autorizará debidamente dicho acceso a un número limitado de miembros del personal de Europol cuando sea necesario para que desempeñen sus tareas.",
+    "No obstante lo dispuesto en el párrafo primero, cuando resulte necesario autorizar al personal de las autoridades competentes de los Estados miembros o de los organismos de la Unión establecidos sobre la base del título V del TFUE un acceso directo a datos personales para desempeñar sus tareas, en los casos previstos en el artículo 20, apartados 1 y 2 bis, del presente Reglamento, o para proyectos de investigación e innovación de conformidad con el artículo 33 bis, apartado 2, letra d), del presente Reglamento, el director ejecutivo autorizará debidamente tal acceso a un número limitado de miembros de dicho personal.",
+    "4. SUPRIMIDO.",
+    "5. Los datos personales a que se refieren los apartados 1 y 2 no se transmitirán a los Estados miembros u organismos de la Unión ni se transferirán a terceros países u organizaciones internacionales, a menos que tal transmisión o transferencia sea obligatoria en virtud del Derecho de la Unión o sea estrictamente necesaria y proporcionada en casos concretos de delitos que se incluyan en los objetivos de Europol y de conformidad con el capítulo V.",
+    "6. Cada año, Europol facilitará al SEPD un resumen estadístico de todos los datos personales contemplados en el apartado 2 tratados por sus servicios."
+   ]
+  },
+  {
+   "clave": "32",
+   "rotulo": "Artículo 32",
+   "titulo": "Seguridad del tratamiento",
+   "pagPdf": 102,
+   "modifica": true,
+   "parrafos": [
+    "Europol y los Estados miembros establecerán, de conformidad, respectivamente, con el artículo 91 del Reglamento (UE) 2018/1725 y con el artículo 29 de la Directiva (UE) 2016/680, mecanismos para garantizar que se abordan las medidas de seguridad, más allá de los límites de los sistemas de información."
+   ]
+  },
+  {
+   "clave": "33",
+   "rotulo": "Artículo 33",
+   "titulo": "Protección de datos desde el diseño",
+   "pagPdf": 102,
+   "modifica": true,
+   "parrafos": [
+    "SUPRIMIDO."
+   ]
+  },
+  {
+   "clave": "33 bis",
+   "rotulo": "Artículo 33 bis",
+   "titulo": "Tratamiento de datos personales para investigación e innovación",
+   "pagPdf": 102,
+   "modifica": false,
+   "parrafos": [
+    "1. Europol podrá tratar datos personales para fines de sus proyectos de investigación e innovación a condición de que el tratamiento de dichos datos personales:",
+    "a) sea absolutamente necesario y esté debidamente justificado para lograr los objetivos del proyecto de que se trate;",
+    "b) por lo que se refiere a categorías especiales de datos personales, sea estrictamente necesario y esté sujeto a unas garantías adecuadas, entre las que se puede incluir la seudonimización.",
+    "El tratamiento de datos personales por Europol en el contexto de los proyectos de investigación e innovación se guiará por los principios de transparencia, explicabilidad, equidad y rendición de cuentas.",
+    "2. Sin perjuicio de lo dispuesto en el apartado 1, para el tratamiento de datos personales realizado en el contexto de los proyectos de investigación e innovación de Europol, se aplicarán las siguientes garantías:",
+    "a) todo proyecto de investigación e innovación requerirá la autorización previa del director ejecutivo, en consulta con el responsable de la protección de datos y el agente de derechos fundamentales, sobre la base de:",
+    "i) una descripción de los objetivos del proyecto y una explicación de cómo el proyecto ayuda a Europol o a las autoridades competentes de los Estados miembros en sus funciones,",
+    "ii) una descripción de la actividad de tratamiento prevista, en la que se expongan los objetivos, el alcance y la duración del tratamiento, así como la necesidad y la proporcionalidad del tratamiento de datos personales, por ejemplo, para explorar y probar soluciones tecnológicas innovadoras y garantizar la exactitud de los resultados del proyecto,",
+    "iii) una descripción de las categorías de datos personales que vayan a tratarse,",
+    "iv) una valoración de la observancia de los principios de la protección de datos establecidos en el artículo 72 del Reglamento (UE) 2018/1725, los plazos de conservación y las condiciones de acceso a los datos personales, y",
+    "v) una evaluación de impacto sobre la protección de datos, en la que se incluyan los riesgos para los derechos y libertades de los interesados, el riesgo de cualquier sesgo en los datos personales que vayan a utilizarse para el entrenamiento de los algoritmos y en el resultado del tratamiento, y las medidas previstas para hacer frente a dichos riesgos, así como para evitar las vulneraciones de derechos fundamentales;",
+    "b) se informará al SEPD antes del inicio del proyecto;",
+    "c) se consultará o informará al Consejo de Administración antes del inicio del proyecto, de conformidad con las directrices a que se refiere el artículo 18, apartado 7;",
+    "d) los datos personales que vayan a tratarse en el contexto del proyecto:",
+    "i) se copiarán temporalmente en un entorno de tratamiento de datos separado, aislado y protegido dentro de Europol con el único fin de llevar a cabo dicho proyecto,",
+    "ii) serán accesibles solo para el personal específicamente autorizado de Europol de conformidad con el artículo 30, apartado 3, del presente Reglamento, y, siempre que se disponga de medidas técnicas de seguridad, para el personal específicamente autorizado de las autoridades competentes de los Estados miembros y los organismos de la Unión establecidos sobre la base del título V del TFUE,",
+    "iii) no serán transmitidos o transferidos,",
+    "iv) no darán lugar a medidas o decisiones que afecten a los interesados como resultado del tratamiento,",
+    "v) se cancelarán una vez concluido el proyecto o vencido el plazo de conservación de conformidad con el artículo 31;",
+    "e) los registros del tratamiento de datos personales en el contexto del proyecto se conservarán hasta dos años después de la conclusión del proyecto, únicamente con el fin de comprobar la exactitud de los resultados del tratamiento de datos y solo durante el tiempo necesario para ello.",
+    "3. El Consejo de Administración establecerá en un documento vinculante el alcance general de los proyectos de investigación e innovación. Dicho documento se actualizará cuando proceda y se pondrá a disposición del SEPD para que este pueda desempeñar su función de supervisión.",
+    "4. Europol conservará un documento con una descripción detallada del proceso y de la justificación del entrenamiento, la prueba y la validación de algoritmos para garantizar la transparencia del proceso y de los algoritmos, incluido el cumplimiento de las garantías establecidas en el presente artículo, y para permitir la comprobación de la exactitud de los resultados sobre la base de la utilización de dichos algoritmos. Previa solicitud, Europol pondrá dicho documento a disposición de las partes interesadas, incluidos los Estados miembros y el GCPC.",
+    "5. Si los datos que vayan a tratarse para fines de un proyecto de investigación e innovación hubieran sido facilitados por un Estado miembro, un organismo de la Unión, un tercer país o una organización internacional, Europol solicitará el consentimiento de dicho proveedor de datos de conformidad con el artículo 19, apartado 2, a menos que el proveedor de datos haya concedido autorización previa para dicho tratamiento para fines de proyectos de investigación e innovación, ya sea en términos generales o con condiciones específicas.",
+    "Europol no tratará datos para proyectos de investigación e innovación sin el consentimiento del proveedor de los datos. Dicho consentimiento podrá retirarse en cualquier momento."
+   ]
+  },
+  {
+   "clave": "34",
+   "rotulo": "Artículo 34",
+   "titulo": "Notificación de una violación de datos personales a las autoridades afectadas",
+   "pagPdf": 103,
+   "modifica": true,
+   "parrafos": [
+    "1. Sin perjuicio de lo dispuesto en el artículo 92 del Reglamento (UE) 2018/1725, en caso de violación de datos personales, Europol notificará sin demora indebida dicha violación a las autoridades competentes de los Estados miembros afectados, de conformidad con el artículo 7, apartado 5, del presente Reglamento, así como al proveedor de los datos de que se trate, a menos que sea improbable que la violación de datos personales entrañe un riesgo para los derechos y libertades de las personas físicas.",
+    "2. La notificación contemplada en el apartado 1 deberá al menos:",
+    "a) describir la naturaleza de la violación de datos personales, en particular, cuando sea posible y oportuno, las categorías y el número de interesados afectados, y las categorías y el número de registros de datos de que se trate;",
+    "b) describir las posibles consecuencias de la violación de datos personales;",
+    "c) describir las medidas propuestas o adoptadas por Europol para poner remedio a la violación de datos personales, y",
+    "d) cuando convenga, recomendar medidas tendentes a atenuar los posibles efectos negativos de la violación de datos personales.",
+    "3. SUPRIMIDO."
+   ]
+  },
+  {
+   "clave": "35",
+   "rotulo": "Artículo 35",
+   "titulo": "Comunicación de una violación de datos personales al interesado",
+   "pagPdf": 104,
+   "modifica": true,
+   "parrafos": [
+    "1. SUPRIMIDO.",
+    "2. SUPRIMIDO.",
+    "3. En caso de que Europol no disponga de los datos de contacto del interesado, pedirá al proveedor de datos que comunique la violación de datos personales al interesado e informe a Europol de la decisión tomada. Los Estados miembros que faciliten datos comunicarán la violación al interesado con arreglo a los procedimientos contemplados en su legislación nacional.",
+    "4. SUPRIMIDO.",
+    "5. SUPRIMIDO."
+   ]
+  },
+  {
+   "clave": "36",
+   "rotulo": "Artículo 36",
+   "titulo": "Derecho de acceso del interesado",
+   "pagPdf": 104,
+   "modifica": true,
+   "parrafos": [
+    "1. SUPRIMIDO.",
+    "2. SUPRIMIDO.",
+    "3. Cualquier interesado que desee ejercer el derecho de acceso a que se refiere el artículo 80 del Reglamento (UE) 2018/1725 a los datos personales que le atañan podrá formular la correspondiente solicitud a la autoridad designada a tal efecto en el Estado miembro de su elección o ante Europol. Cuando la solicitud se presente a dicha autoridad, esta remitirá la solicitud a Europol sin demora indebida y en el plazo de un mes a partir de su recepción.",
+    "4. Europol confirmará el recibo de la solicitud en virtud del apartado 3. Europol deberá responder a la solicitud sin retrasos indebidos y en cualquier caso en el plazo de tres meses desde la recepción por Europol de la solicitud de la autoridad nacional.",
+    "5. Europol consultará sobre la decisión que deba tomarse a las autoridades competentes de los Estados miembros, con arreglo a las condiciones establecidas en el artículo 7, apartado 5, y al proveedor de los datos en cuestión. La decisión sobre el acceso a los datos personales estará supeditada a una estrecha cooperación entre Europol y los Estados miembros y el proveedor de datos directamente afectado por el acceso del interesado a dichos datos. En caso de que un Estado miembro o el proveedor de datos se oponga a la respuesta propuesta por Europol, notificará a Europol los motivos de su oposición de conformidad con el apartado 6 del presente artículo. Europol tendrá lo más posible en cuenta cualquier objeción de este tipo. Europol notificará posteriormente el contenido de su decisión a las autoridades competentes afectadas, con arreglo a las condiciones establecidas en el artículo 7, apartado 5, y al proveedor de datos.",
+    "6. SUPRIMIDO.",
+    "7. SUPRIMIDO."
+   ]
+  },
+  {
+   "clave": "37",
+   "rotulo": "Artículo 37",
+   "titulo": "Derecho de rectificación, cancelación y restricción",
+   "pagPdf": 104,
+   "modifica": true,
+   "parrafos": [
+    "1. Cualquier interesado que desee ejercer el derecho de rectificación o supresión de datos personales o limitación del tratamiento de los datos personales que le atañan, a que se refiere el artículo 82 del Reglamento (UE) 2018/1725, podrá formular la correspondiente solicitud a través de la autoridad designada a tal efecto en el Estado miembro de su elección o a Europol. Cuando la solicitud se presente a dicha autoridad, esta remitirá la solicitud a Europol sin demora indebida y en el plazo de un mes a partir de su recepción.",
+    "2. SUPRIMIDO.",
+    "3. Sin perjuicio de lo dispuesto en el artículo 82, apartado 3, del Reglamento (UE) 2018/1725, Europol restringirá el tratamiento de datos personales, en lugar de cancelar los datos personales, en caso de que hubiera motivos razonables para suponer que la cancelación podría perjudicar intereses legítimos del interesado.",
+    "Los datos restringidos solo se tratarán con el fin de proteger los derechos del interesado, cuando sea necesario para proteger los intereses vitales del interesado o de otra persona o para los fines establecidos en el artículo 82, apartado 3, del Reglamento (UE) 2018/1725.",
+    "4. Cuando los datos personales a que se refieren los apartados 1 y 3 en poder de Europol le hubieran sido facilitados por terceros países, organizaciones internacionales u organismos de la Unión, hubieran sido facilitados directamente por entidades privadas, extraídos por Europol de fuentes públicas o fueran el resultado de los propios análisis de Europol, esta deberá rectificar o cancelar dichos datos o restringir su tratamiento e informar, en su caso, a los proveedores de los datos.",
+    "5. Cuando los datos personales a que se refieren los apartados 1 y 3 en poder de Europol le hubieran sido facilitados por Estados miembros, los Estados miembros de que se trate deberán rectificar o cancelar dichos datos o restringir su tratamiento en cooperación con Europol, dentro de sus respectivas competencias.",
+    "6. Si datos personales incorrectos se hubieran transferido por cualquier otro medio apropiado, o si los errores en los datos facilitados por los Estados miembros se debieran a una transferencia defectuosa, o se hubieran transmitido incumpliendo las disposiciones del presente Reglamento o Europol hubiera introducido, integrado o conservado los datos de manera incorrecta o incumpliendo las disposiciones del presente Reglamento, Europol deberá rectificarlos o cancelarlos en colaboración con el proveedor de los datos afectado.",
+    "7. En los casos contemplados en los apartados 4, 5 y 6, se informará inmediatamente a todos los destinatarios de dichos datos. De conformidad con las normas que les sean aplicables, los destinatarios procederán a rectificar, cancelar o restringir tales datos en sus sistemas.",
+    "8. SUPRIMIDO.",
+    "9. SUPRIMIDO."
+   ]
+  },
+  {
+   "clave": "38",
+   "rotulo": "Artículo 38",
+   "titulo": "Responsabilidad en materia de protección de datos",
+   "pagPdf": 105,
+   "modifica": true,
+   "parrafos": [
+    "1. Europol tratará los datos personales de manera que pueda determinarse su fuente de conformidad con el artículo 17.",
+    "2. La responsabilidad por la exactitud de los datos personales a que se refiere el artículo 71, apartado 1, letra d), del Reglamento (UE) 2018/1725 recaerá en:",
+    "a) el Estado miembro y en el organismo de la Unión que facilitaron los datos personales a Europol;",
+    "b) Europol en lo que respecta a los datos personales facilitados por países terceros u organizaciones internacionales o directamente por entidades privadas, por los datos personales extraídos por Europol de fuentes públicas o que resulten de los propios análisis de Europol y por los datos personales almacenados por Europol de conformidad con el artículo 31, apartado 5.",
+    "3. Si Europol tuviera conocimiento de que los datos personales facilitados de conformidad con el artículo 17, apartado 1, letras a) y b), contienen errores de hecho o han sido almacenados ilícitamente, informará de ello al proveedor de dichos datos.",
+    "4. Europol será responsable del cumplimiento del Reglamento (UE) 2018/1725 por lo que respecta a los datos personales administrativos y del cumplimiento del presente Reglamento y del artículo 3 y el capítulo IX del Reglamento (UE) 2018/1725 por lo que respecta a los datos personales.",
+    "5. La responsabilidad por la legalidad de la transferencia de los datos recaerá en:",
+    "a) el Estado miembro que facilitó los datos personales a Europol;",
+    "b) Europol en el caso de datos personales facilitados por él a los Estados miembros, países terceros u organizaciones internacionales.",
+    "6. En caso de transferencia entre Europol y un organismo de la Unión, la responsabilidad por la legalidad de la transferencia recaerá en Europol.",
+    "Sin perjuicio del párrafo primero, cuando los datos hubieran sido transferidos por Europol a petición del destinatario, tanto Europol como el destinatario serán responsables de la legalidad de la transferencia.",
+    "7. Europol será responsable de todas las operaciones de tratamiento de datos efectuadas por sus servicios, con excepción del intercambio bilateral de datos mediante la infraestructura de Europol entre Estados miembros, organismos de la Unión, países terceros y organizaciones internacionales a las que Europol no tenga acceso. Dicho intercambio bilateral se llevará a cabo bajo la responsabilidad de las entidades interesadas y de conformidad con su legislación. La seguridad de dicho intercambio se garantizará con arreglo al artículo 91 del Reglamento (UE) 2018/1725"
+   ]
+  },
+  {
+   "clave": "39",
+   "rotulo": "Artículo 39",
+   "titulo": "Consulta previa",
+   "pagPdf": 106,
+   "modifica": true,
+   "parrafos": [
+    "1. Sin perjuicio de lo dispuesto en el artículo 90 del Reglamento (UE) 2018/1725, la consulta previa al SEPD no se aplicará a actividades operativas específicas que no incluyan ningún tipo nuevo de tratamiento que implique un riesgo elevado para los derechos y libertades de los interesados.",
+    "2. Europol podrá iniciar operaciones de tratamiento que estén sujetas a consulta previa del SEPD en virtud del artículo 90, apartado 1, del Reglamento (UE) 2018/1725, a menos que el SEPD haya proporcionado asesoramiento por escrito en virtud del artículo 90, apartado 4, de dicho Reglamento en los plazos previstos en dicha disposición, que se iniciarán en la fecha de recepción de la solicitud inicial de consulta y no podrán suspenderse.",
+    "3. Cuando las operaciones de tratamiento a que se refiere el apartado 2 del presente artículo tengan una importancia sustancial para desempeñar las funciones de Europol y sean especialmente urgentes y necesarias para prevenir y combatir una amenaza inmediata de un delito que se incluya en los objetivos de Europol o para proteger los intereses vitales del interesado o de otra persona, Europol podrá iniciar excepcionalmente el tratamiento después de la consulta previa del SEPD prevista en el artículo 90, apartado 1, del Reglamento (UE) 2018/1725 y antes de que expire el plazo previsto en el artículo 90, apartado 4, de dicho Reglamento. En tal caso, Europol informará al SEPD antes del inicio de las operaciones de tratamiento.",
+    "El asesoramiento por escrito del SEPD en virtud del artículo 90, apartado 4, del Reglamento (UE) 2018/1725 se tendrá en cuenta de manera retroactiva, y la forma en que se lleve a cabo el tratamiento se adaptará en consecuencia.",
+    "El responsable de protección de datos participará en la valoración de la urgencia de dichas operaciones de tratamiento antes de que expire el plazo previsto en el artículo 90, apartado 4, del Reglamento (UE) 2018/1725 y supervisará el tratamiento en cuestión.",
+    "4. El SEPD llevará un registro de todas las operaciones de tratamiento que se le hayan notificado en virtud del apartado 1. Dicho registro no será público."
+   ]
+  },
+  {
+   "clave": "39 bis",
+   "rotulo": "Artículo 39 bis",
+   "titulo": "Registro de categorías de actividades de tratamiento",
+   "pagPdf": 107,
+   "modifica": false,
+   "parrafos": [
+    "1. Europol llevará un registro de todas las categorías de actividades de tratamiento bajo su responsabilidad. Dicho registro contendrá la siguiente información:",
+    "a) los datos de contacto de Europol y el nombre y los datos de contacto del responsable de protección de datos;",
+    "b) los fines del tratamiento;",
+    "c) una descripción de las categorías de interesados y de las categorías de datos personales;",
+    "d) las categorías de destinatarios a los que se hayan comunicado o vayan a comunicarse los datos personales, incluidos los destinatarios en terceros países u organizaciones internacionales;",
+    "e) cuando proceda, las transferencias de datos personales a un tercer país, a una organización internacional o a una entidad privada, incluido el nombre de dicho destinatario;",
+    "f) cuando sea posible, los plazos previstos para la cancelación de las diferentes categorías de datos;",
+    "g) cuando sea posible, una descripción general de las medidas técnicas y organizativas de seguridad a que se refiere el artículo 91 del Reglamento (UE) 2018/1725;",
+    "h) en su caso, el recurso a la elaboración de perfiles.",
+    "2. El registro a que se refiere el apartado 1 se efectuará por escrito, incluido el formato electrónico.",
+    "3. Europol pondrá a disposición del SEPD, previa solicitud, el registro a que se refiere el apartado 1."
+   ]
+  },
+  {
+   "clave": "40",
+   "rotulo": "Artículo 40",
+   "titulo": "Registros de operaciones",
+   "pagPdf": 107,
+   "modifica": true,
+   "parrafos": [
+    "1. De conformidad con el artículo 88 del Reglamento (UE) 2018/1725, Europol conservará registros de sus operaciones de tratamiento. No será posible modificarlos.",
+    "2. Sin perjuicio de lo dispuesto en el artículo 88 del Reglamento (UE) 2018/1725, si lo requiere una unidad nacional para una investigación específica relacionada con el cumplimiento de las normas de protección de datos, los registros de operaciones a que se refiere el apartado 1 se comunicarán a dicha unidad nacional."
+   ]
+  },
+  {
+   "clave": "41",
+   "rotulo": "Artículo 41",
+   "titulo": "Designación del responsable de protección de datos",
+   "pagPdf": 107,
+   "modifica": true,
+   "parrafos": [
+    "1. El Consejo de Administración nombrará a un miembro del personal de Europol como responsable de protección de datos, que será designado para ese único cargo.",
+    "2. El responsable de protección de datos será seleccionado atendiendo a sus cualidades profesionales y, en particular, sus conocimientos especializados de la normativa y las prácticas en materia de protección de datos, así como a su capacidad para desempeñar las funciones a que se refiere el artículo 41 ter del presente Reglamento y el Reglamento (UE) 2018/1725.",
+    "3. La selección del responsable de protección de datos no podrá derivar en un conflicto de intereses entre su función de responsable de protección de datos y cualesquiera otras obligaciones oficiales que pueda tener, en particular, en relación con la aplicación del presente Reglamento.",
+    "4. El responsable de protección de datos no podrá ser destituido ni sancionado por el Consejo de Administración por razón del ejercicio de sus funciones.",
+    "5. Europol publicará los datos de contacto del responsable de protección de datos y los comunicará al SEPD."
+   ]
+  },
+  {
+   "clave": "41 bis",
+   "rotulo": "Artículo 41 bis",
+   "titulo": "Cargo de responsable de protección de datos",
+   "pagPdf": 108,
+   "modifica": false,
+   "parrafos": [
+    "1. Europol garantizará que el responsable de protección de datos participe de forma adecuada y en tiempo oportuno en todas las cuestiones relativas a la protección de datos personales.",
+    "2. Europol respaldará al responsable de protección de datos en el desempeño de las funciones mencionadas en el artículo 41 ter, facilitando los recursos y el personal necesarios para el desempeño de dichas funciones y facilitando el acceso a los datos personales y a las operaciones de tratamiento, y para mantener sus conocimientos especializados.",
+    "Con el fin de respaldar al responsable de protección de datos en el desempeño de sus funciones, se podrá designar a un miembro del personal de Europol como responsable adjunto de protección de datos.",
+    "3. Europol garantizará que el responsable de protección de datos actúe de modo independiente y que no reciba ninguna instrucción en lo que respecta al desempeño de sus funciones.",
+    "El responsable de protección de datos informará directamente al Consejo de Administración.",
+    "4. Los interesados podrán ponerse en contacto con el responsable de protección de datos por lo que respecta a todas las cuestiones relativas al tratamiento de sus datos personales y al ejercicio de sus derechos al amparo del presente Reglamento y del Reglamento (UE) 2018/1725.",
+    "Nadie deberá sufrir perjuicio alguno por informar al responsable de protección de datos de una presunta infracción del presente Reglamento o del Reglamento (UE) 2018/1725.",
+    "5. El Consejo de Administración adoptará normas de desarrollo referentes al responsable de protección de datos. Tales normas se referirán, en concreto, al procedimiento de selección para el cargo de responsable de protección de datos y a su destitución, a las funciones, obligaciones y competencias del responsable de protección de datos y a las garantías de su independencia.",
+    "6. El responsable de protección de datos y su personal estarán obligados a mantener la confidencialidad de conformidad con el artículo 67, apartado 1.",
+    "7. El responsable de protección de datos será nombrado para un mandato de cuatro años y podrá optar a un nuevo nombramiento.",
+    "8. En caso de que deje de cumplir las condiciones requeridas para el ejercicio de sus funciones, el responsable de protección de datos será destituido de su cargo por el Consejo de Administración solo previo consentimiento del SEPD.",
+    "9. El responsable de protección de datos y el responsable adjunto de protección de datos serán adscritos al SEPD por el Consejo de Administración.",
+    "10. Las disposiciones aplicables al responsable de protección de datos se aplicarán mutatis mutandis al responsable adjunto de protección de datos."
+   ]
+  },
+  {
+   "clave": "41 ter",
+   "rotulo": "Artículo 41 ter",
+   "titulo": "Funciones del responsable de protección de datos",
+   "pagPdf": 108,
+   "modifica": false,
+   "parrafos": [
+    "1. El responsable de protección de datos desempeñará, en particular, las siguientes funciones en relación con el tratamiento de datos personales:",
+    "a) garantizar de manera independiente el cumplimiento por parte de Europol de las disposiciones sobre protección de datos del presente Reglamento y del Reglamento (UE) 2018/1725, así como de las disposiciones pertinentes en materia de protección de datos de las normas internas de Europol, incluido el seguimiento del cumplimiento del presente Reglamento, del Reglamento (UE) 2018/1725, de otras disposiciones de la Unión o nacionales en materia de protección de datos y de las políticas de Europol en esta materia, incluida la asignación de responsabilidades, la concienciación y la formación del personal que participe en las operaciones de tratamiento, y las auditorías correspondientes;",
+    "b) informar a Europol y a aquellos miembros del personal que se ocupen del tratamiento de datos personales de las obligaciones que les incumben en virtud del presente Reglamento, del Reglamento (UE) 2018/1725 y de otras disposiciones de la Unión o nacionales en materia de datos personales y asesorarles en la materia;",
+    "c) prestar el asesoramiento que se le solicite acerca de la evaluación de impacto relativa a la protección de datos con arreglo al artículo 89 del Reglamento (UE) 2018/1725 y hacer el seguimiento de la eficacia de la evaluación de impacto relativa a la protección de datos;",
+    "d) llevar un registro de las violaciones de datos personales y prestar el asesoramiento que se le solicite acerca de la necesidad de notificar o comunicar una violación de datos personales con arreglo a los artículos 92 y 93 del Reglamento (UE) 2018/1725;",
+    "e) velar por que se lleve un registro de la transmisión, la transferencia y la recepción de datos personales de conformidad con el presente Reglamento;",
+    "f) velar por que los interesados que lo soliciten sean informados de sus derechos en virtud del presente Reglamento y del Reglamento (UE) 2018/1725;",
+    "g) cooperar con el personal de Europol responsable de los procedimientos, la formación y el asesoramiento en materia de tratamiento de datos;",
+    "h) responder a las solicitudes del SEPD, en el ámbito de sus competencias, cooperar y consultar con el SEPD, a petición de este o por iniciativa propia;",
+    "i) cooperar con las autoridades competentes de los Estados miembros, en particular, con los responsables de protección de datos de las autoridades competentes de los Estados miembros y las autoridades nacionales de control en materia de protección de datos en el ámbito policial;",
+    "j) actuar como punto de contacto del SEPD para las cuestiones relacionadas con el tratamiento, incluida la consulta previa con arreglo a los artículos 40 y 90 del Reglamento (UE) 2018/1725, y realizar consultas, en su caso, sobre cualquier otra cuestión de su ámbito de competencias;",
+    "k) elaborar un informe anual y transmitirlo al Consejo de Administración y al SEPD;",
+    "l) velar por que las operaciones de tratamiento no tengan efectos adversos en los derechos y las libertades de los interesados.",
+    "2. El responsable de protección de datos podrá formular recomendaciones al Consejo de Administración para la mejora práctica de la protección de datos y asesorar sobre cuestiones relativas a la aplicación de las disposiciones en materia de protección de datos.",
+    "El responsable de protección de datos podrá investigar, de oficio o a instancias del Consejo de Administración o de cualquier persona física, las cuestiones y los incidentes directamente relacionados con sus funciones que lleguen a su conocimiento e informar a la persona que solicitó la investigación o al Consejo de Administración sobre los resultados de dicha investigación.",
+    "3. El responsable de protección de datos ejercerá las funciones que dispone el Reglamento (UE) 2018/1725 en lo que atañe a los datos personales administrativos.",
+    "4. En el ejercicio de sus funciones, el responsable de protección de datos y los miembros del personal de Europol que le asistan en el ejercicio de sus funciones tendrán acceso a todos los datos tratados por Europol y a todos los locales de Europol.",
+    "5. Si el responsable de protección de datos considerara que no se han cumplido las disposiciones del presente Reglamento o del Reglamento (UE) 2018/1725 relativas al tratamiento de los datos personales administrativos, o las disposiciones del presente Reglamento o del artículo 3 y el capítulo IX del Reglamento (UE) 2018/1725 relativas al tratamiento de los datos personales, informará de ello al director ejecutivo y le pedirá que subsane el incumplimiento en un plazo determinado.",
+    "Si el director ejecutivo no subsanara el incumplimiento en el plazo fijado, el responsable de protección de datos informará al Consejo de Administración. El Consejo de Administración responderá en un plazo determinado acordado con el responsable de protección de datos. Si el Consejo de Administración no subsanara el incumplimiento en el plazo fijado, el responsable de protección de datos remitirá el asunto al SEPD."
+   ]
+  },
+  {
+   "clave": "41 quater",
+   "rotulo": "Artículo 41 quater",
+   "titulo": "Agente de derechos fundamentales",
+   "pagPdf": 110,
+   "modifica": false,
+   "parrafos": [
+    "1. El Consejo de Administración designará, a propuesta del director ejecutivo, a un agente de derechos fundamentales. Este podrá ser un miembro del personal en plantilla de Europol que haya recibido formación especial jurídica y práctica en materia de derechos fundamentales.",
+    "2. El agente de derechos fundamentales desempeñará las siguientes funciones:",
+    "a) asesorar a Europol, si lo considera necesario o previa solicitud, en relación con cualquier actividad de Europol sin impedir ni retrasar las actividades de que se trate;",
+    "b) hacer el seguimiento del cumplimiento de los derechos fundamentales por parte de Europol;",
+    "c) elaborar dictámenes no vinculantes sobre los acuerdos de trabajo;",
+    "d) informar al director ejecutivo de posibles vulneraciones de los derechos fundamentales durante las actividades de Europol;",
+    "e) promover el respeto de los derechos fundamentales por parte de Europol en el desempeño de sus funciones y actividades;",
+    "f) cualquier otra tarea prevista en el presente Reglamento.",
+    "3. Europol garantizará que el agente de derechos fundamentales no reciba ninguna instrucción en lo que respecta al desempeño de sus funciones.",
+    "4. El agente de derechos fundamentales informará directamente al director ejecutivo y preparará informes anuales sobre la medida en que las actividades de Europol respetan los derechos fundamentales. Dichos informes serán puestos a disposición del Consejo de Administración."
+   ]
+  },
+  {
+   "clave": "41 quinquies",
+   "rotulo": "Artículo 41 quinquies",
+   "titulo": "Formación sobre derechos fundamentales",
+   "pagPdf": 110,
+   "modifica": false,
+   "parrafos": [
+    "Todo miembro del personal de Europol que participe en tareas operativas que conlleven el tratamiento de datos personales recibirá una formación obligatoria en materia de protección de los derechos y libertades fundamentales, incluida la relativa al tratamiento de datos personales. Dicha formación se impartirá en cooperación con la Agencia de los Derechos Fundamentales de la Unión Europea (FRA), creada por el Reglamento (CE) n.º 168/2007 del Consejo, y la Agencia de la Unión Europea para la Formación Policial (CEPOL), creada por el Reglamento (UE) 2015/2219 del Parlamento Europeo y del Consejo."
+   ]
+  },
+  {
+   "clave": "42",
+   "rotulo": "Artículo 42",
+   "titulo": "Vigilancia por parte de la autoridad nacional de control",
+   "pagPdf": 110,
+   "modifica": true,
+   "parrafos": [
+    "1. A efectos del ejercicio de su función supervisora, las autoridades nacionales de control a que se refiere el artículo 41 de la Directiva (UE) 2016/680 tendrán acceso, en la unidad nacional o en los locales de los funcionarios de enlace, a los datos facilitados por su Estado miembro a Europol, de conformidad con los procedimientos nacionales aplicables, y a los registros de operaciones mencionados en el artículo 40 del presente Reglamento.",
+    "2. Las autoridades nacionales de control tendrán acceso a las oficinas y los documentos de sus respectivos funcionarios de enlace en Europol.",
+    "3. Las autoridades nacionales de control controlarán, de conformidad con los procedimientos nacionales aplicables, las actividades de las unidades nacionales y de los funcionarios de enlace, en la medida en que dichas actividades sean pertinentes para la protección de los datos personales. Mantendrán asimismo informado al SEPD de las acciones que puedan emprender con respecto a Europol.",
+    "4. Cualquier persona tendrá derecho a solicitar a la autoridad nacional de control que verifique la legalidad de la transferencia o la comunicación a Europol de datos que le conciernan, en cualquier forma, y el acceso a los datos por parte del Estado miembro de que se trate. Ese derecho se ejercerá con arreglo a la legislación nacional del Estado miembro en el que se presente la solicitud."
+   ]
+  },
+  {
+   "clave": "43",
+   "rotulo": "Artículo 43",
+   "titulo": "Vigilancia por parte del SEPD",
+   "pagPdf": 111,
+   "modifica": true,
+   "parrafos": [
+    "1. El SEPD tendrá la responsabilidad de vigilar y garantizar la aplicación de las disposiciones del presente Reglamento y del Reglamento (UE) 2018/1725 relativas a la protección de los derechos y libertades fundamentales de las personas físicas en relación con el tratamiento de datos personales por Europol, y de asesorar a Europol y a los interesados sobre cualquier cuestión relativa al tratamiento de los datos personales. A tal fin, deberá cumplir los cometidos que le incumben según el apartado 2, y ejercerá las competencias que le son conferidas en virtud del apartado 3 cooperando estrechamente al mismo tiempo con las autoridades nacionales de control de conformidad con el artículo 44.",
+    "2. El SEPD tendrá los siguientes cometidos:",
+    "a) atender e investigar las quejas e informar al interesado, en un plazo razonable, del curso dado a las mismas;",
+    "b) efectuar pesquisas por iniciativa propia o a raíz de una queja e informar a los interesados de los resultados en un plazo razonable;",
+    "c) vigilar y garantizar la aplicación del presente Reglamento y de cualquier otro acto de la Unión relativo a la protección de las personas físicas en lo que respecta al tratamiento de los datos personales por Europol;",
+    "d) asesorar a Europol, por propia iniciativa o en respuesta a una consulta, sobre todas las cuestiones relacionadas con el tratamiento de los datos personales, en particular antes de la elaboración de normas internas sobre la protección de los derechos y libertades fundamentales en relación con el tratamiento de los datos personales;",
+    "e) llevar un registro de los nuevos tipos de operaciones de tratamiento que se le hayan notificado en virtud del artículo 39, apartado 1, y que hayan sido registradas de conformidad con el artículo 39, apartado 4;",
+    "f) efectuar una consulta previa sobre los tratamientos que se le hayan notificado.",
+    "3. El SEPD podrá, en virtud del presente Reglamento:",
+    "a) asesorar a los interesados en el ejercicio de sus derechos;",
+    "b) remitir el asunto a Europol en caso de presunta violación de las disposiciones que rigen el tratamiento de datos personales y, en su caso, formular propuestas encaminadas a subsanar esa violación y mejorar la protección de los interesados;",
+    "c) ordenar que se atiendan las solicitudes para ejercer determinados derechos en relación con los datos cuando se hayan denegado tales solicitudes en violación de lo dispuesto en los artículos 36 y 37;",
+    "d) dirigir una advertencia o una amonestación a Europol;",
+    "e) ordenar a Europol que efectúe la rectificación, restricción, cancelación o destrucción de datos personales que hayan sido tratados en violación de las disposiciones que rigen el tratamiento de datos personales y notificar de dichas medidas a los terceros a quienes se hayan divulgado dichos datos;",
+    "f) prohibir temporal o definitivamente las operaciones de tratamiento por parte de Europol que violen las disposiciones que rigen el tratamiento de datos personales;",
+    "g) remitir el asunto a Europol y, en caso de necesidad, al Parlamento Europeo, al Consejo y a la Comisión;",
+    "h) remitir el asunto al Tribunal de Justicia de la Unión Europea en las condiciones previstas en el TFUE;",
+    "i) intervenir en los procesos ante el Tribunal de Justicia de la Unión Europea.",
+    "j) ordenar al responsable del tratamiento o al encargado del tratamiento que las operaciones de tratamiento cumplan el presente Reglamento, en su caso, de una determinada manera y dentro de un plazo señalado;",
+    "k) ordenar la suspensión de los flujos de datos hacia un destinatario en un Estado miembro o en un tercer país o hacia una organización internacional;",
+    "l) imponer una multa administrativa en caso de incumplimiento por parte de Europol de alguna de las medidas contempladas en las letras c), e), f), j) y k) del presente apartado, en función de las circunstancias de cada caso concreto.",
+    "4. El SEPD será competente para:",
+    "a) obtener de Europol acceso a todos los datos personales y a toda la información necesaria para sus pesquisas;",
+    "b) obtener acceso a todos los locales en los que Europol lleva a cabo sus actividades, cuando hubiera motivos razonables para suponer que en ellos se lleva a cabo una actividad cubierta por el presente Reglamento.",
+    "5. El SEPD preparará un informe anual sobre sus actividades de supervisión relativas a Europol. Dicho informe formará parte del informe anual del SEPD contemplado en el artículo 60 del Reglamento (UE) 2018/1725.",
+    "El SEPD invitará a las autoridades nacionales de control a formular observaciones sobre dicha parte del informe anual antes de que se adopte el informe anual. El SEPD prestará suma atención a dichas observaciones y hará referencia a ellas en el informe anual.",
+    "La parte del informe anual a que se refiere el párrafo segundo incluirá información estadística sobre quejas, pesquisas e investigaciones, así como sobre las transferencias de datos personales a terceros países y organizaciones internacionales, los casos de consulta previa al SEPD y el ejercicio de las competencias establecidas en el apartado 3 del presente artículo.",
+    "6. El SEPD, sus funcionarios y el resto del personal de la Secretaría del SEPD estarán sujetos a la obligación de confidencialidad de conformidad con el artículo 67, apartado 1."
+   ]
+  },
+  {
+   "clave": "44",
+   "rotulo": "Artículo 44",
+   "titulo": "Cooperación entre el SEPD y las autoridades nacionales de control",
+   "pagPdf": 112,
+   "modifica": true,
+   "parrafos": [
+    "1. El SEPD actuará en estrecha cooperación con las autoridades nacionales de control en cuestiones que requieran una intervención nacional, en particular si el SEPD o una autoridad nacional de control detectan discrepancias importantes entre las prácticas de los Estados miembros o transferencias potencialmente ilícitas en la utilización de los canales de Europol para el intercambio de información, o en el contexto de cuestiones planteadas por una o varias autoridades nacionales de control sobre la aplicación y la interpretación del presente Reglamento.",
+    "2. En los casos a que se refiere el apartado 1, se garantizará un control coordinado de conformidad con el artículo 62 del Reglamento (UE) 2018/1725. El SEPD recurrirá a los conocimientos y la experiencia de las autoridades nacionales de control para el desempeño de las funciones contempladas en el artículo 43, apartado 2, del presente Reglamento.",
+    "3. El SEPD mantendrá plenamente informadas a las autoridades nacionales de control de todas las cuestiones que les afecten directamente o que les conciernan de otra manera. A petición de una o varias autoridades nacionales de control, el SEPD les informará sobre cuestiones específicas.",
+    "4. En casos relativos a datos procedentes de uno o más Estados miembros, en particular en los casos mencionados en el artículo 47, apartado 2, el SEPD deberá consultar a las autoridades nacionales de control de que se trate. El SEPD no tomará una decisión sobre la adopción de ulteriores medidas antes de que dichas autoridades nacionales de control le informen de la opinión de estas en un plazo por él especificado, que no será inferior a un mes ni superior a tres meses a partir del momento en que el SEPD consulte a las autoridades nacionales de control de que se trate. El SEPD tendrá en cuenta al máximo la opinión de las autoridades nacionales de control de que se trate. Cuando el SEPD no tenga intención de seguir la opinión de dichas autoridades, les informará de ello, aducirá una justificación y remitirá el asunto al Comité Europeo de Protección de Datos."
+   ]
+  },
+  {
+   "clave": "45",
+   "rotulo": "Artículo 45",
+   "titulo": "Consejo de Cooperación",
+   "pagPdf": 113,
+   "modifica": true,
+   "parrafos": [
+    "SUPRIMIDO."
+   ]
+  },
+  {
+   "clave": "46",
+   "rotulo": "Artículo 46",
+   "titulo": "Datos personales de carácter administrativo",
+   "pagPdf": 113,
+   "modifica": true,
+   "parrafos": [
+    "SUPRIMIDO."
+   ]
+  },
+  {
+   "clave": "47",
+   "rotulo": "Artículo 47",
+   "titulo": "Derecho a presentar una queja ante el SEPD",
+   "pagPdf": 113,
+   "modifica": true,
+   "parrafos": [
+    "1. Cualquier interesado que considere que el tratamiento por parte de Europol de datos personales que guarden relación con él no respeta el presente Reglamento o el Reglamento (UE) 2018/1725 tendrá derecho a presentar una queja ante el SEPD.",
+    "2. Cuando una queja se refiera a una decisión contemplada en los artículos 36 o 37 del presente Reglamento o en los artículos 81 u 82 del Reglamento (UE) 2018/1725, el SEPD consultará a las autoridades nacionales de control del Estado miembro del que procedan los datos o del Estado miembro directamente afectado. La decisión del SEPD, que podría consistir en la negativa a comunicar información alguna, tendrá en cuenta el dictamen de la autoridad nacional de control.",
+    "3. Cuando una queja se refiera al tratamiento de datos facilitados por un Estado miembro a Europol, el SEPD y la autoridad nacional de control del Estado miembro que haya facilitado los datos se cerciorarán, cada uno en el ámbito de sus respectivas competencias, de que se han efectuado correctamente las comprobaciones necesarias sobre la legalidad del tratamiento de datos.",
+    "4. Cuando una queja se refiera al tratamiento de datos facilitados a Europol por organismos de la Unión, países terceros u organizaciones internacionales, o de datos extraídos por Europol de fuentes públicamente disponibles o que resulten de los propios análisis de Europol, el SEPD se cerciorará de que Europol ha efectuado correctamente las comprobaciones necesarias sobre la legalidad del tratamiento de datos.",
+    "5. El SEPD informará al interesado sobre el curso y el resultado de la queja, así como sobre la posibilidad de tutela judicial en virtud del artículo 48."
+   ]
+  },
+  {
+   "clave": "50",
+   "rotulo": "Artículo 50",
+   "titulo": "Responsabilidad por el tratamiento incorrecto de datos personales y derecho a una indemnización",
+   "pagPdf": 114,
+   "modifica": true,
+   "parrafos": [
+    "1. Toda persona que haya sufrido daños y perjuicios materiales o inmateriales como consecuencia de una infracción del presente Reglamento tendrá derecho a recibir una indemnización de conformidad con el artículo 65 del Reglamento (UE) 2018/1725 y el artículo 56 de la Directiva (UE) 2016/680.",
+    "2. Cualquier litigio entre Europol y los Estados miembros en relación con la responsabilidad última por la indemnización concedida a una persona que haya sufrido daños y perjuicios materiales o inmateriales de conformidad con el apartado 1 del presente artículo se remitirá al Consejo de Administración, que decidirá sobre dicha responsabilidad por mayoría de dos tercios de sus miembros, sin perjuicio del derecho a impugnar dicha decisión de conformidad con el artículo 263 del TFUE."
+   ]
+  },
+  {
+   "clave": "51",
+   "rotulo": "Artículo 51",
+   "titulo": "Control parlamentario conjunto",
+   "pagPdf": 114,
+   "modifica": true,
+   "parrafos": [
+    "1. Con arreglo al artículo 88 del TFUE, el control de las actividades de Europol corresponderá al Parlamento Europeo junto con los parlamentos nacionales. Juntos constituirán un Grupo de Control Parlamentario Conjunto (GCPC) creado conjuntamente por los parlamentos nacionales y la comisión competente del Parlamento Europeo. El Parlamento Europeo y los parlamentos nacionales determinarán conjuntamente la organización y el reglamento interno del GCPC con arreglo al artículo 9 del Protocolo n.º 1.",
+    "2. El GCPC efectuará una supervisión política de las actividades de Europol en el cumplimiento de su misión, incluso en relación con las consecuencias de dichas actividades sobre los derechos y las libertades fundamentales de las personas físicas.",
+    "A efectos del apartado primero:",
+    "a) el presidente del Consejo de Administración, el director ejecutivo o sus suplentes comparecerán ante el GCPC a petición de este para debatir cuestiones relativas a las actividades a que se refiere el primer párrafo, incluidos los aspectos presupuestarios de dichas actividades, la organización estructural de Europol y la posible creación de unidades y centros especializados nuevos, teniendo en cuenta las obligaciones de discreción y confidencialidad. El GCPC podrá, cuando proceda, decidir invitar a sus reuniones a otras personas pertinentes;",
+    "b) el SEPD comparecerá ante el GCPC a petición de este al menos una vez al año, para debatir sobre cuestiones generales relativas a la protección de los derechos y libertades fundamentales de las personas físicas y, en particular, la protección de los datos personales, con respecto a las actividades de Europol, teniendo en cuenta las obligaciones de discreción y confidencialidad;",
+    "c) se consultará al GCPC en relación con la programación plurianual de Europol con arreglo al artículo 12, apartado 1.",
+    "3. Europol transmitirá los siguientes documentos, a efectos informativos, al GCPC, teniendo en cuenta las obligaciones de discreción y confidencialidad:",
+    "a) valoraciones de las amenazas, análisis estratégicos e informes generales de situación relacionados con los objetivos de Europol, así como los resultados de los estudios y evaluaciones encargados por Europol;",
+    "b) los acuerdos administrativos adoptados de conformidad con el artículo 25, apartado 1;",
+    "c) el documento que contenga la programación plurianual y el programa de trabajo anual de Europol mencionados en el artículo 12, apartado 1;",
+    "d) el informe anual de actividades consolidado sobre las actividades de Europol, mencionado en el artículo 11, apartado 1, letra c), incluida la información pertinente sobre las actividades de Europol y los resultados obtenidos en el tratamiento de grandes conjuntos de datos, sin revelar detalles operativos y sin perjuicio de las investigaciones en curso;",
+    "e) el informe de evaluación elaborado por la Comisión mencionado en el artículo 68, apartado 1.",
+    "f) información anual de conformidad con el artículo 26, apartado 11, sobre los datos personales intercambiados con entidades privadas en virtud de los artículos 26, 26 bis y 26 ter, incluida una evaluación de la eficacia de la cooperación, ejemplos concretos en los que se demuestre por qué esas solicitudes eran necesarias y proporcionadas, para que Europol pueda lograr sus objetivos y desempeñar sus funciones, y, en lo que respecta a los intercambios de datos personales en virtud del artículo 26 ter, el número de niños identificados como resultado de dichos intercambios en la medida en que Europol disponga de esta información;",
+    "g) información anual sobre el número de casos en los que Europol haya tenido que tratar datos personales que no atañan a las categorías de interesados enumeradas en el anexo II con el fin de apoyar a los Estados miembros en una investigación penal específica en curso de conformidad con el artículo 18 bis, así como información sobre la duración y los resultados del tratamiento, que incluya ejemplos de casos en los que se demuestre por qué ese tratamiento de datos era necesario y proporcionado;",
+    "h) información anual sobre las transferencias de datos personales a terceros países y organizaciones internacionales en virtud del artículo 25, apartados 1 y 4 bis, desglosadas por base jurídica, y sobre el número de casos en los que el director ejecutivo haya autorizado, en virtud del artículo 25, apartado 5, la transferencia o las categorías de transferencias de datos personales relacionadas con una investigación penal específica en curso a terceros países u organizaciones internacionales, incluida la información sobre los países de que se trate y la duración de la autorización;",
+    "i) información anual sobre el número de casos en los que Europol haya propuesto la posible introducción de descripciones de información de conformidad con el artículo 4, apartado 1, letra t), que incluya ejemplos concretos de casos en los que se demuestre por qué se había propuesto la introducción de dichas descripciones;",
+    "j) información anual sobre el número de proyectos de investigación e innovación emprendidos, que incluya información sobre los fines de dichos proyectos, las categorías de datos personales tratados, las garantías adicionales utilizadas, incluida la minimización de datos, las necesidades policiales que dichos proyectos pretenden abordar y el resultado de estos;",
+    "k) información anual sobre el número de casos en los que Europol haya recurrido al tratamiento temporal de conformidad con el artículo 18, apartado 6 bis y, en su caso, el número de casos en que se haya ampliado el período de tratamiento;",
+    "l) información anual sobre el número y los tipos de casos en los que se hayan tratado categorías especiales de datos personales, en virtud del artículo 30, apartado 2.",
+    "Los ejemplos a que se refieren las letras f) e i) se anonimizarán en lo que respecta a los datos personales.",
+    "Los ejemplos a que se refiere la letra g) se anonimizarán en lo que respecta a los datos personales, sin revelar detalles operativos y sin perjuicio de las investigaciones en curso.",
+    "4. El GCPC podrá pedir otros documentos pertinentes necesarios para el cumplimiento de sus funciones relativas a la supervisión política de las actividades de Europol, con arreglo a lo dispuesto en el Reglamento (CE) n.º 1049/2001 del Parlamento Europeo y del Consejo y sin perjuicio de los artículos 52 y 67 del presente Reglamento.",
+    "5. El GCPC podrá elaborar unas conclusiones resumidas sobre el seguimiento político de las actividades de Europol, incluidas recomendaciones específicas no vinculantes dirigidas a Europol, y presentarlas al Parlamento Europeo y a los Parlamentos nacionales. El Parlamento Europeo remitirá dichas conclusiones, a efectos informativos, al Consejo, la Comisión y Europol."
+   ]
+  },
+  {
+   "clave": "52 bis",
+   "rotulo": "Artículo 52 bis",
+   "titulo": "Foro consultivo",
+   "pagPdf": 116,
+   "modifica": false,
+   "parrafos": [
+    "1. El GCPC creará un foro consultivo que le asista, previa petición, mediante un asesoramiento independiente en materia de derechos fundamentales.",
+    "El GCPC y el director ejecutivo podrán consultar al foro consultivo acerca de cualquier asunto relacionado con los derechos fundamentales.",
+    "2. El GCPC determinará la composición del foro consultivo, sus métodos de trabajo y el modo en que la información se haya de transmitir al foro consultivo."
+   ]
+  },
+  {
+   "clave": "58",
+   "rotulo": "Artículo 58",
+   "titulo": "Establecimiento del presupuesto",
+   "pagPdf": 118,
+   "modifica": true,
+   "parrafos": [
+    "1. Cada año, el director ejecutivo elaborará un proyecto de estado de previsiones de ingresos y gastos de Europol para el ejercicio presupuestario siguiente, que incluirá la plantilla de personal, y lo remitirá al Consejo de Administración.",
+    "2. Sobre la base de ese proyecto de estado de previsiones, el Consejo de Administración adoptará un proyecto provisional de previsiones de ingresos y gastos de Europol para el ejercicio presupuestario siguiente y lo enviará a la Comisión a más tardar el 31 de enero de cada año.",
+    "3. El Consejo de Administración remitirá el proyecto definitivo de previsiones de ingresos y gastos de Europol, que incluirá un proyecto de plantilla de personal, al Parlamento Europeo, al Consejo y a la Comisión, a más tardar el 31 de marzo de cada año.",
+    "4. La Comisión remitirá el estado de previsiones al Parlamento Europeo y al Consejo junto con el proyecto de presupuesto general de la Unión.",
+    "5. Sobre la base del estado de previsiones, la Comisión inscribirá en el proyecto de presupuesto general de la Unión las previsiones que considere necesarias en lo que respecta a la plantilla de personal y el importe de la contribución que se imputará al presupuesto general, que presentará al Parlamento Europeo y al Consejo de conformidad con los artículos 313 y 314 del TFUE.",
+    "6. El Parlamento Europeo y el Consejo autorizarán los créditos de la contribución destinada a Europol.",
+    "7. El Parlamento Europeo y el Consejo aprobarán la plantilla de personal de Europol.",
+    "8. El presupuesto de Europol será adoptado por el Consejo de Administración. Será definitivo tras la adopción definitiva del presupuesto general de la Unión. Si fuese necesario, se adaptará en consecuencia.",
+    "9. El Reglamento Delegado (UE) 2019/715 se aplicará a cualquier proyecto inmobiliario que pueda tener repercusiones significativas en el presupuesto de Europol."
+   ]
+  },
+  {
+   "clave": "60",
+   "rotulo": "Artículo 60",
+   "titulo": "Rendición de cuentas y aprobación de la gestión",
+   "pagPdf": 119,
+   "modifica": true,
+   "parrafos": [
+    "1. El contable de Europol enviará las cuentas provisionales del ejercicio contable (año N) al contable de la Comisión y al Tribunal de Cuentas antes del 1 de marzo del siguiente ejercicio presupuestario (año N + 1).",
+    "2. Europol enviará un informe sobre la gestión presupuestaria y financiera del año N al Parlamento Europeo, al Consejo y al Tribunal de Cuentas a más tardar el 31 de marzo del año N + 1.",
+    "3. El contable de la Comisión enviará las cuentas provisionales consolidadas de Europol del año N, junto con las cuentas de la Comisión, al Tribunal de Cuentas, a más tardar el 31 de marzo del año N + 1.",
+    "4. Una vez recibidas las observaciones del Tribunal de Cuentas sobre las cuentas provisionales de Europol del año N con arreglo al artículo 246 del Reglamento (UE, Euratom) n.º 2018/1046 del Parlamento Europeo y del Consejo (39), el contable de Europol elaborará las cuentas definitivas de Europol de ese año. El director ejecutivo presentará dichas cuentas definitivas al Consejo de Administración para que este emita dictamen al respecto.",
+    "5. El Consejo de Administración emitirá un dictamen sobre las cuentas definitivas de Europol del año N.",
+    "6. El contable de Europol enviará, a más tardar el 1 de julio del año N + 1, las cuentas definitivas del año N al Parlamento Europeo, al Consejo, a la Comisión, al Tribunal de Cuentas y a los parlamentos nacionales, junto con el dictamen del Consejo de Administración a que se refiere el apartado 5.",
+    "7. Las cuentas definitivas del año N se publicarán en el Diario Oficial de la Unión Europea a más tardar el 15 de noviembre del año N + 1.",
+    "8. El director ejecutivo enviará al Tribunal de Cuentas una respuesta a las observaciones formuladas en su informe anual a más tardar el 30 de septiembre del año N + 1. Enviará asimismo la respuesta al Consejo de Administración.",
+    "9. A petición del Parlamento Europeo, el director ejecutivo le presentará toda la información necesaria para el correcto desarrollo del procedimiento de aprobación de la gestión presupuestaria del ejercicio N, de conformidad con el artículo 106, apartado 3, del Reglamento Delegado (UE) 2019/715.",
+    "10. El Parlamento Europeo, previa recomendación del Consejo por mayoría cualificada, aprobará, antes del 15 de mayo del ejercicio N + 2, la gestión del director ejecutivo con respecto a la ejecución del presupuesto del ejercicio presupuestario del año N."
+   ]
+  },
+  {
+   "clave": "61",
+   "rotulo": "Artículo 61",
+   "titulo": "Normas financieras",
+   "pagPdf": 120,
+   "modifica": true,
+   "parrafos": [
+    "1. El Consejo de Administración aprobará las normas financieras aplicables a Europol, previa consulta a la Comisión. Estas normas no se apartarán del Reglamento Delegado (UE) 2019/715 salvo que sea específicamente necesario para el funcionamiento de Europol y previo acuerdo de la Comisión.",
+    "2. Europol podrá conceder subvenciones relacionadas con la consecución de sus objetivos y el desempeño de sus funciones.",
+    "3. Europol podrá conceder subvenciones sin necesidad de ninguna convocatoria de propuestas a los Estados miembros para la realización de actividades que se incluyan en los objetivos y funciones de Europol.",
+    "4. Cuando esté debidamente justificado por fines operativos, tras la autorización del Consejo de Administración, la ayuda financiera podrá sufragar la totalidad de los costes de inversión en equipos e infraestructuras.",
+    "Las normas financieras a que se refiere el apartado 1 podrán especificar los criterios con arreglo a los cuales la ayuda financiera podrá sufragar la totalidad de los costes de inversión a que se refiere el párrafo primero del presente apartado.",
+    "5. En lo que se refiere al apoyo presupuestario a las actividades de los equipos conjuntos de investigación, Europol y Eurojust establecerán conjuntamente las normas y condiciones de tramitación de las solicitudes de apoyo."
+   ]
+  },
+  {
+   "clave": "68",
+   "rotulo": "Artículo 68",
+   "titulo": "Evaluación y reexamen",
+   "pagPdf": 122,
+   "modifica": true,
+   "parrafos": [
+    "1. A más tardar el 29 de junio de 2027, y posteriormente cada cinco años, la Comisión efectuará una evaluación para valorar, en particular, el impacto, la eficacia y la eficiencia de Europol y de sus prácticas de trabajo. Dicha evaluación podrá abordar, en particular, la posible necesidad de modificar la estructura, el funcionamiento, el ámbito de actuación y las funciones de Europol, y las repercusiones financieras de cualquier modificación de este tipo.",
+    "2. La Comisión someterá el informe de evaluación al Consejo de Administración. El Consejo de Administración aportará sus observaciones sobre el informe de evaluación en un plazo de tres meses desde la fecha de recepción. La Comisión remitirá el informe final de evaluación junto con sus conclusiones, así como las observaciones del Consejo de Administración en un anexo, al Parlamento Europeo, al Consejo, a los parlamentos nacionales y al Consejo de Administración. Cuando proceda, los resultados principales del informe de evaluación se harán públicos.",
+    "3. A más tardar el 29 de junio de 2025, la Comisión presentará un informe al Parlamento Europeo y al Consejo en el que se evalúen los efectos operativos del cumplimiento de las funciones previstas en el presente Reglamento, en particular, el artículo 4, apartado 1, letra t), el artículo 18, apartado 2, letra e), el artículo 18, apartado 6 bis, y los artículos 18 bis, 26, 26 bis y 26 ter, en relación con los objetivos de Europol. El informe evaluará los efectos de dichas funciones en los derechos y libertades fundamentales establecidos en la Carta. También proporcionará un análisis de costes y beneficios de la ampliación de las funciones de Europol."
+   ]
+  },
+  {
+   "clave": "74 bis",
+   "rotulo": "Artículo 74 bis",
+   "titulo": "Disposiciones transitorias relativas al tratamiento de datos personales en apoyo de una investigación penal específica en curso",
+   "pagPdf": 124,
+   "modifica": false,
+   "parrafos": [
+    "1. Cuando un Estado miembro, la Fiscalía Europea o Eurojust hayan facilitado datos personales que no atañan a las categorías de interesados enumeradas en el anexo II a Europol antes del 28 de junio de 2022, Europol podrá tratar dichos datos personales de conformidad con el artículo 18 bis, cuando:",
+    "a) el Estado miembro afectado, la Fiscalía Europea o Eurojust informen a Europol a más tardar el 29 de septiembre de 2022 de que está autorizado a tratar dichos datos personales, de conformidad con los requisitos y garantías procesales aplicables en virtud del Derecho de la Unión o nacional, en la investigación penal en curso para la que hubiera solicitado el apoyo de Europol cuando proporcionó inicialmente los datos;",
+    "b) el Estado miembro afectado, la Fiscalía Europea o Eurojust soliciten a Europol, a más tardar el 29 de septiembre de 2022, que apoye la investigación penal en curso a que se refiere la letra a), y",
+    "c) Europol valore que, de conformidad con el artículo 18 bis, apartado 1, letra b), no es posible apoyar la investigación penal en curso a que se refiere la letra a) del presente apartado sin tratar datos personales que no cumplan con lo dispuesto en el artículo 18, apartado 5.",
+    "La valoración mencionada en la letra c) del presente apartado se registrará y remitirá al SEPD a efectos informativos cuando Europol deje de apoyar la investigación penal específica conexa.",
+    "2. Cuando un Estado miembro, la Fiscalía Europea o Eurojust no cumpla alguno o varios de los requisitos establecidos en el apartado 1, letras a) y b), del presente artículo por lo que respecta a los datos personales que no atañan a las categorías de interesados enumeradas en el anexo II que haya facilitado a Europol antes del 28 de junio de 2022, o cuando un Estado miembro, la Fiscalía Europea o Eurojust no cumpla el apartado 1, letra c), del presente artículo, Europol no tratará dichos datos personales de conformidad con el artículo 18 bis, sino que los suprimirá, sin perjuicio de lo dispuesto en el artículo 18, apartado 5, y en el artículo 74 ter, a más tardar el 29 de octubre de 2022.",
+    "3. Cuando un tercer país a que se refiere el artículo 18 bis, apartado 6, haya facilitado datos personales que no atañan a las categorías de interesados enumeradas en el anexo II a Europol antes del 28 de junio de 2022, Europol podrá tratar dichos datos personales de conformidad con el artículo 18 bis, apartado 6, cuando:",
+    "a) el tercer país haya facilitado los datos personales en apoyo de una investigación penal específica en uno o más Estados miembros a los que Europol apoye;",
+    "b) el tercer país haya obtenido los datos en el contexto de una investigación penal de conformidad con los requisitos y garantías procesales aplicables en virtud de su Derecho penal nacional;",
+    "c) el tercer país informe a Europol, a más tardar el 29 de septiembre de 2022, de que está autorizado a tratar dichos datos personales en la investigación penal en el contexto de la cual haya obtenido los datos;",
+    "d) Europol valore que, de conformidad con el artículo 18 bis, apartado 1, letra b), no es posible apoyar la investigación penal específica a que se refiere la letra a) del presente apartado sin tratar datos personales que no cumplan con lo dispuesto en el artículo 18, apartado 5, y dicha valoración se registre y remita al SEPD a efectos informativos cuando Europol deje de apoyar la investigación penal específica conexa; y",
+    "e) Europol compruebe, de conformidad con el artículo 18 bis, apartado 6, que la cantidad de datos personales no es manifiestamente desproporcionada en relación con la investigación penal específica a que se refiere la letra a) del presente apartado en uno o más Estados miembros a los que Europol apoya.",
+    "4. Cuando un tercer país no cumpla el requisito establecido en el apartado 3, letra c), del presente artículo respecto de los datos personales que no atañan a las categorías de interesados enumeradas en el anexo II que haya facilitado a Europol antes del 28 de junio de 2022, o cuando no se cumplan los demás requisitos establecidos en el apartado 3 del presente artículo, Europol no tratará dichos datos personales de conformidad con el artículo 18 bis, apartado 6, sino que los suprimirá, sin perjuicio de lo dispuesto en el artículo 18, apartado 5, y en el artículo 74 ter, a más tardar el 29 de octubre de 2022.",
+    "5. Cuando un Estado miembro, la Fiscalía Europea o Eurojust haya facilitado datos personales que no atañan a las categorías de interesados enumeradas en el anexo II a Europol antes del 28 de junio de 2022, podrá solicitar a Europol, a más tardar el 29 de septiembre de 2022, que conserve dichos datos y el resultado del tratamiento de dichos datos por parte de Europol cuando sea necesario para garantizar la veracidad, fiabilidad y trazabilidad del proceso de inteligencia criminal. Europol conservará los datos personales que no atañan a las categorías de interesados enumeradas en el anexo II de tal modo que exista una separación funcional de otros datos y solo tratará dichos datos con el fin de garantizar la veracidad, fiabilidad y trazabilidad del proceso de inteligencia criminal, y únicamente durante el tiempo en que se esté tramitando el procedimiento judicial relacionado con la investigación penal para la que se hayan facilitado dichos datos.",
+    "6. Cuando Europol haya recibido datos personales que no atañan a las categorías de interesados enumeradas en el anexo II antes del 28 de junio de 2022, Europol no conservará dichos datos con el fin de garantizar la veracidad, fiabilidad y trazabilidad del proceso de inteligencia criminal, a menos que así se solicite de conformidad con el apartado 5. A falta de tal solicitud, Europol suprimirá dichos datos personales a más tardar el 29 de octubre de 2022."
+   ]
+  },
+  {
+   "clave": "74 ter",
+   "rotulo": "Artículo 74 ter",
+   "titulo": "Disposiciones transitorias relativas al tratamiento de datos personales en poder de Europol",
+   "pagPdf": 125,
+   "modifica": false,
+   "parrafos": [
+    "Sin perjuicio de lo dispuesto en el artículo 74 bis, respecto de los datos personales recibidos por Europol antes del 28 de junio de 2022, Europol podrá comprobar si dichos datos personales atañen a alguna de las categorías de interesados establecidas en el anexo II. Con este fin, Europol podrá llevar a cabo un análisis preliminar de dichos datos personales durante un período máximo de dieciocho meses a partir de la fecha en que se recibieran por primera vez o, en casos justificados y con la autorización previa del SEPD, durante un período más largo.",
+    "El período máximo de tratamiento de los datos a que se refiere el párrafo primero será de tres años a partir del día de la recepción de los datos por Europol."
+   ]
+  }
+ ]
+}

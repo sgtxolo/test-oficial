@@ -51,7 +51,26 @@ module.exports.build = function (txt, mk) {
     if (!E.abierta) { E.cab(l); continue; }
     if (/^(\d+\.|[a-z]{1,2}\)|[ivx]+\))\s/.test(l)) E.parr(l); else E.cont(l);
   }
-  const eur = E.h;
+  let eur = E.h;
+  // ---------- NOVEDADES de MI PDF (reforma del Reglamento: artículos modificados se sustituyen; nuevos «bis/ter…» se insertan tras su base)
+  try {
+    const NV = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'novedades-europol.json'), 'utf8')).articulos;
+    const partes = eur.split('<div class="articulo">'); const cab = partes.shift();
+    const head = p => (p.match(/articulo-head">([^<]*)</) || [])[1] || '';
+    const claveDe = p => { const m = head(p).match(/^Artículo (\d+(?: \w+)?) · Europol/); return m ? m[1] : (/^ANEXO/.test(head(p)) ? head(p) : ''); };
+    const ficha = (a) => { const F = nuevo(4); F.abre(a.clave, a.rotulo || 'Artículo ' + a.clave); if (a.titulo) F.parr(a.titulo, true); for (const t of a.parrafos) F.parr(t); const x = F.h; return x.replace(/^[\s\S]*?<div class="articulo">/, ''); };
+    for (const a of NV) {
+      const html = ficha(a);
+      const i = partes.findIndex(p => claveDe(p) === a.clave);
+      if (a.modifica && i >= 0) { partes[i] = html; continue; }
+      if (i >= 0) { partes[i] = html; continue; }
+      const base = a.clave.split(' ')[0]; let j = -1;
+      for (let k = 0; k < partes.length; k++) { const c = claveDe(partes[k]); if (c === base || c.startsWith(base + ' ')) j = k; }
+      if (j < 0) { console.error('novedad sin base:', a.clave); continue; }
+      partes.splice(j + 1, 0, html);
+    }
+    eur = cab + partes.map(p => '<div class="articulo">' + p).join('');
+  } catch (e) { if (e.code !== 'ENOENT') throw e; }
   // ---------- INTERPOL
   const I = nuevo(5);
   I.titulo('ESTATUTO DE LA ORGANIZACIÓN INTERNACIONAL DE POLICÍA CRIMINAL (INTERPOL)');
