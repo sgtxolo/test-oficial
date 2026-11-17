@@ -171,6 +171,8 @@ try {
   const th = fs.readFileSync('test-oficial-conocimiento.html', 'utf8'), i0 = th.indexOf('window.piezaSubrayado = function'), i1 = th.indexOf('\n  };\n', i0);
   const S = { piezas: ix, preg, cit: inst.map(i => ({ p: i.id, nombre: i.nombre, re: i.cit, pre: i.pre || null, pre_re: i.pre_re || null, proto: i.proto ? 1 : 0 })) };
   const hw = {}; new Function('window', th.slice(i0, i1 + 5))(hw);
+  // mapa de apartados/anexos (expres-subrayado/mapa-tN.js): el test lo carga, así que la cifra de cobertura también lo cuenta
+  { const mp = 'expres-subrayado/mapa-t' + T + '.js'; if (fs.existsSync(mp)) { const w0 = global.window; global.window = {}; try { require(require('path').resolve(mp)); hw.EXSUB_MAP = global.window.EXSUB_MAP; } catch (e) {} global.window = w0; } }
   const RQ = new RegExp('\\{"id":"(' + T + '-[^"]+)","pregunta":"((?:[^"\\\\]|\\\\.)*)","opciones"[\\s\\S]{0,3000}?"explicacion":"((?:[^"\\\\]|\\\\.)*)"', 'g');
   const seen = {}; for (const m of th.matchAll(RQ)) seen[m[1]] = m[3].replace(/\\"/g, '"');
   for (const [id, e] of Object.entries(seen)) { cob.q++; if (hw.piezaSubrayado(S, id, e)) cob.e++; }
