@@ -192,6 +192,33 @@
      0.268
     ]
    ]
+  },
+  {
+   "id": "a-da5",
+   "nombre": "LO 4/2000 · Disposición adicional quinta",
+   "piezas": [
+    [
+     67,
+     0.58,
+     0.96
+    ],
+    [
+     68,
+     0.1,
+     0.76
+    ]
+   ]
+  },
+  {
+   "id": "a-da7",
+   "nombre": "LO 4/2000 · Disposición adicional séptima",
+   "piezas": [
+    [
+     69,
+     0.262,
+     0.388
+    ]
+   ]
   }
  ]
 }

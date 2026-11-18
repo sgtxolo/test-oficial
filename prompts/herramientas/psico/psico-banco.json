@@ -1,0 +1,2306 @@
+[
+ {
+  "qid": "PSI001",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie?",
+  "a": 1,
+  "img": "ps-001.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AOAE0714_0005"
+ },
+ {
+  "qid": "PSI002",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie? OOA",
+  "a": 3,
+  "img": "ps-002.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AOAE0714_0007"
+ },
+ {
+  "qid": "PSI003",
+  "stem": "¿Qué número continúa la siguiente serie numérica? 1-1-2-3-5-8-13-21-?",
+  "a": 1,
+  "img": "ps-003.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AOAE0714_0010"
+ },
+ {
+  "qid": "PSI004",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie?",
+  "a": 3,
+  "img": "ps-004.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AOAE0714_0011"
+ },
+ {
+  "qid": "PSI005",
+  "stem": "¿Qué opción continúa la siguiente serie?",
+  "a": 1,
+  "img": "ps-005.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AOAE0714_0013"
+ },
+ {
+  "qid": "PSI006",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie?",
+  "a": 3,
+  "img": "ps-006.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AOAE0714_0018"
+ },
+ {
+  "qid": "PSI007",
+  "stem": "¿Qué opción continúa la siguiente serie?",
+  "a": 1,
+  "img": "ps-007.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AOAE0714_0023"
+ },
+ {
+  "qid": "PSI008",
+  "stem": "Indica la opción que continúa la siguiente serie:",
+  "a": 1,
+  "img": "ps-008.jpg",
+  "ex": "ps-008-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-008-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "AOAE0714_0028"
+ },
+ {
+  "qid": "PSI009",
+  "stem": "¿Cuál es la figura que resulta después de aplicar la/s orden/es?",
+  "a": 3,
+  "img": "ps-009.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AOAE0714_0034"
+ },
+ {
+  "qid": "PSI010",
+  "stem": "¿Qué opción continúa la siguiente serie?",
+  "a": 3,
+  "img": "ps-010.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AOAE0714_0037"
+ },
+ {
+  "qid": "PSI011",
+  "stem": "¿Qué número continúa la siguiente serie numérica? 14 -11 -15 -12 -17 -14 -20 -17 -24 -21 - ?",
+  "a": 3,
+  "img": "ps-011.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AOAE0714_0039"
+ },
+ {
+  "qid": "PSI012",
+  "stem": "¿Qué figura continúa la serie?",
+  "a": 2,
+  "img": "ps-012.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AOAE0714_0042"
+ },
+ {
+  "qid": "PSI013",
+  "stem": "o o o ¿Qué figura sigue a la serie?",
+  "a": 3,
+  "img": "ps-013.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AOAE0714_0044"
+ },
+ {
+  "qid": "PSI014",
+  "stem": "¿Qué reloj continúa la serie? ooooooooo",
+  "a": 3,
+  "img": "ps-014.jpg",
+  "ex": "ps-014-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-014-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "AOAE0714_0046"
+ },
+ {
+  "qid": "PSI015",
+  "stem": "Indica la opción que continúa la siguiente serie:",
+  "a": 2,
+  "img": "ps-015.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AOAE0714_0056"
+ },
+ {
+  "qid": "PSI016",
+  "stem": "Indica la opción que sustituye al interrogante para completar la serie:",
+  "a": 2,
+  "img": "ps-016.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AOAE0714_0058"
+ },
+ {
+  "qid": "PSI017",
+  "stem": "Indica la opción que continúa la siguiente serie:",
+  "a": 3,
+  "img": "ps-017.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AOAE0714_0060"
+ },
+ {
+  "qid": "PSI018",
+  "stem": "Indica la opción que continúa la siguiente serie: • 0000 0000",
+  "a": 2,
+  "img": "ps-018.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AOAE0714_0061"
+ },
+ {
+  "qid": "PSI019",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie? eooeoo eooeoo eeoeeoeeoeeo oooooeoooooe",
+  "a": 3,
+  "img": "ps-019.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AOAE0714_0063"
+ },
+ {
+  "qid": "PSI020",
+  "stem": "¿Qué número continúa la siguiente serie numérica? 13 -15 -20 -22 -27 - ?",
+  "a": 0,
+  "img": "ps-020.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AOAE0714_0064"
+ },
+ {
+  "qid": "PSI021",
+  "stem": "¿Qué opción continúa la siguiente serie? eco aco oca a a o ?",
+  "a": 0,
+  "img": "ps-021.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AOAE0714_0065"
+ },
+ {
+  "qid": "PSI022",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie?",
+  "a": 3,
+  "img": "ps-022.jpg",
+  "ex": "ps-022-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-022-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "AOAE0714_0068"
+ },
+ {
+  "qid": "PSI023",
+  "stem": "¿Qué figura continúa la serie?",
+  "a": 1,
+  "img": "ps-023.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AOAE0714_0075"
+ },
+ {
+  "qid": "PSI024",
+  "stem": "¿Qué número continúa la siguiente serie numérica? 39 -40 -38 -19 -22 -18-9-14-8-4-?",
+  "a": 0,
+  "img": "ps-024.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AOAE0714_0077"
+ },
+ {
+  "qid": "PSI025",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie?",
+  "a": 0,
+  "img": "ps-025.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AOAE0714_0080"
+ },
+ {
+  "qid": "PSI026",
+  "stem": "¿Cuál es el valor de la interrogante? (Ten en cuenta la información de la clave y las operaciones). Clave",
+  "a": 1,
+  "img": "ps-026.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AOAE0714_0083"
+ },
+ {
+  "qid": "PSI027",
+  "stem": "¿Qué opción continúa la siguiente serie? 0000/ ooeo",
+  "a": 1,
+  "img": "ps-027.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AOAE0714_0087"
+ },
+ {
+  "qid": "PSI028",
+  "stem": "¿Qué opción continúa la siguiente serie?",
+  "a": 1,
+  "img": "ps-028.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AOAE0714_0089"
+ },
+ {
+  "qid": "PSI029",
+  "stem": "¿Qué figura continúa la serie?",
+  "a": 2,
+  "img": "ps-029.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AOAE0714_0090"
+ },
+ {
+  "qid": "PSI030",
+  "stem": "¿Qué figura continúa la serie?",
+  "a": 1,
+  "img": "ps-030.jpg",
+  "ex": "ps-030-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-030-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "AOAE0714_0092"
+ },
+ {
+  "qid": "PSI031",
+  "stem": "¿Qué figura continúa la serie?",
+  "a": 3,
+  "img": "ps-031.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AZEZ0379_0009"
+ },
+ {
+  "qid": "PSI032",
+  "stem": "¿Qué número continúa la siguiente serie numérica? 1-3-9-11-121-?",
+  "a": 0,
+  "img": "ps-032.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AZEZ0379_0011"
+ },
+ {
+  "qid": "PSI033",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie?",
+  "a": 2,
+  "img": "ps-033.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0012"
+ },
+ {
+  "qid": "PSI034",
+  "stem": "¿Qué figura sigue la serie?",
+  "a": 3,
+  "img": "ps-034.jpg",
+  "ex": "ps-034-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-034-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "AZEZ0379_0014"
+ },
+ {
+  "qid": "PSI035",
+  "stem": "¿Qué figura continúa la serie?",
+  "a": 2,
+  "img": "ps-035.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0016"
+ },
+ {
+  "qid": "PSI036",
+  "stem": "¿Qué opción continúa la siguiente serie? ODA oco",
+  "a": 3,
+  "img": "ps-036.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AZEZ0379_0020"
+ },
+ {
+  "qid": "PSI037",
+  "stem": "¿Qué figura sigue a la serie?",
+  "a": 1,
+  "img": "ps-037.jpg",
+  "ex": "ps-037-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-037-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "AZEZ0379_0022"
+ },
+ {
+  "qid": "PSI038",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie?",
+  "a": 2,
+  "img": "ps-038.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0028"
+ },
+ {
+  "qid": "PSI039",
+  "stem": "¿Cuál es el valor de la interrogante? (Ten en cuenta la información de la clave y las operaciones). Clave O",
+  "a": 1,
+  "img": "ps-039.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AZEZ0379_0030"
+ },
+ {
+  "qid": "PSI040",
+  "stem": "¿Qué figura sigue a la serie? A 00 • oo",
+  "a": 0,
+  "img": "ps-040.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AZEZ0379_0031"
+ },
+ {
+  "qid": "PSI041",
+  "stem": "Indica la opción que continúa la siguiente serie:",
+  "a": 3,
+  "img": "ps-041.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AZEZ0379_0032"
+ },
+ {
+  "qid": "PSI042",
+  "stem": "¿Cuál es la figura que resulta de aplicar la/s orden/es?",
+  "a": 0,
+  "img": "ps-042.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AZEZ0379_0034"
+ },
+ {
+  "qid": "PSI043",
+  "stem": "¿Qué número continúa la siguiente serie numérica?",
+  "a": 0,
+  "img": "ps-043.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AZEZ0379_0036"
+ },
+ {
+  "qid": "PSI044",
+  "stem": "¿Qué opción (A,B,C o D) debe sustituir al interrogante para completar la serie?",
+  "a": 2,
+  "img": "ps-044.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0038"
+ },
+ {
+  "qid": "PSI045",
+  "stem": "Indica la figura que resulta después de aplicar Ials orden/es:",
+  "a": 3,
+  "img": "ps-045.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AZEZ0379_0040"
+ },
+ {
+  "qid": "PSI046",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie?",
+  "a": 1,
+  "img": "ps-046.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AZEZ0379_0041"
+ },
+ {
+  "qid": "PSI047",
+  "stem": "Indica la opción que continúa la siguiente serie: o oo",
+  "a": 2,
+  "img": "ps-047.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0044"
+ },
+ {
+  "qid": "PSI048",
+  "stem": "Indica la figura que resulta después de aplicar la/s orden/es:",
+  "a": 2,
+  "img": "ps-048.jpg",
+  "ex": "ps-048-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-048-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "AZEZ0379_0046"
+ },
+ {
+  "qid": "PSI049",
+  "stem": "¿Qué opción continúa la siguiente serie?",
+  "a": 3,
+  "img": "ps-049.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AZEZ0379_0054"
+ },
+ {
+  "qid": "PSI050",
+  "stem": "Teniendo en cuenta la información de la clave y las operaciones, ¿cuál es el valor de la interrogante? Clave",
+  "a": 1,
+  "img": "ps-050.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AZEZ0379_0056"
+ },
+ {
+  "qid": "PSI051",
+  "stem": "Indica la opción que continúa la siguiente serie: a A O • A e•ao 00000000 e oooe••",
+  "a": 0,
+  "img": "ps-051.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AZEZ0379_0057"
+ },
+ {
+  "qid": "PSI052",
+  "stem": "¿Qué figura continúa la serie?",
+  "a": 3,
+  "img": "ps-052.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "AZEZ0379_0061"
+ },
+ {
+  "qid": "PSI053",
+  "stem": "¿Qué figura sigue a la serie?",
+  "a": 2,
+  "img": "ps-053.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0062"
+ },
+ {
+  "qid": "PSI054",
+  "stem": "Indica la opción que continúa la siguiente serie: 0000 000",
+  "a": 1,
+  "img": "ps-054.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AZEZ0379_0064"
+ },
+ {
+  "qid": "PSI055",
+  "stem": "¿Qué reloj continúa la serie? ooooooooo",
+  "a": 2,
+  "img": "ps-055.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0065"
+ },
+ {
+  "qid": "PSI056",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie?",
+  "a": 2,
+  "img": "ps-056.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0068"
+ },
+ {
+  "qid": "PSI057",
+  "stem": "¿Qué figura continúa la serie? eo oooeo 000 eoooo",
+  "a": 1,
+  "img": "ps-057.jpg",
+  "ex": "ps-057-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-057-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "AZEZ0379_0071"
+ },
+ {
+  "qid": "PSI058",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie? ooooooe@ ?",
+  "a": 1,
+  "img": "ps-058.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "AZEZ0379_0081"
+ },
+ {
+  "qid": "PSI059",
+  "stem": "¿Qué figura debe sustituir al interrogante para completar la serie? OAOAOA OOAOOO a AOAOA OC]A",
+  "a": 0,
+  "img": "ps-059.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AZEZ0379_0083"
+ },
+ {
+  "qid": "PSI060",
+  "stem": "Indica la opción que continúa la siguiente serie:",
+  "a": 2,
+  "img": "ps-060.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0085"
+ },
+ {
+  "qid": "PSI061",
+  "stem": "Indica la opción que continúa la siguiente serie:",
+  "a": 0,
+  "img": "ps-061.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AZEZ0379_0088"
+ },
+ {
+  "qid": "PSI062",
+  "stem": "Indica la opción que continúa la siguiente serie: 00000000 e O AOOAO oooe••",
+  "a": 0,
+  "img": "ps-062.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AZEZ0379_0090"
+ },
+ {
+  "qid": "PSI063",
+  "stem": "¿Qué número continúa la siguiente serie numérica? 1-1-8-5-15-9-?",
+  "a": 0,
+  "img": "ps-063.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "AZEZ0379_0091"
+ },
+ {
+  "qid": "PSI064",
+  "stem": "Indica la opción que continúa la siguiente serie:",
+  "a": 2,
+  "img": "ps-064.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "AZEZ0379_0092"
+ },
+ {
+  "qid": "PSI065",
+  "stem": "Indica la opción que continúa la serie:",
+  "a": 3,
+  "img": "ps-065.jpg",
+  "ex": "ps-065-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-065-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "AZEZ0379_0096"
+ },
+ {
+  "qid": "PSI066",
+  "stem": "Resuelve la siguiente operación: 16 - 51",
+  "a": 0,
+  "img": "ps-066.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "BAHL6754_0006"
+ },
+ {
+  "qid": "PSI067",
+  "stem": "Resuelve la siguiente operación: 7x3 + 5x9x2 + 13",
+  "a": 0,
+  "img": "ps-067.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "BAHL6754_0008"
+ },
+ {
+  "qid": "PSI068",
+  "stem": "Indica la opción correcta después de realizar el siguiente cálculo: 48 +90 -63 + 22 =",
+  "a": 0,
+  "img": "ps-068.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "BAHL6754_0009"
+ },
+ {
+  "qid": "PSI069",
+  "stem": "En un hangar se guardan diferentes tipos de aviones: de pasajeros, de carga, avionetas y ultraligeros. Respecto a su valor económico, un avión de pasajeros es el doble de caro que un avión de carga. Una avioneta cuesta la mitad que un ultraligero y uno de carga cuesta cinco veces 10 que cuesta un ultraligero. Un empresario decide comprar aviones para 10 que dispone de medio millos de euros. Teniendo en cuenta que cada avioneta cuesta 4000 euros, ¿cuántos euros más Ie harían falta para comprar 7 aviones de pasajeros y 4 ultraligeros?",
+  "a": 3,
+  "img": "ps-069.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "BAHL6754_0012"
+ },
+ {
+  "qid": "PSI070",
+  "stem": "En un aeropuerto está permitido facturar gratis hasta 18 kilogramos de equipaje. A partir de ese peso, hay que pagar una cantidad de 3 euros por cada kilogramos de equipaje. María se dispone a facturar un equipaje que pesa 27 kilogramos. ¿Cuánto dinero deberá pagar María al facturar su equipaje?",
+  "a": 0,
+  "img": "ps-070.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "BAHL6754_0015"
+ },
+ {
+  "qid": "PSI071",
+  "stem": "Calcula y después indica la respuesta correcta: (18 -3+ 7+3 - (12 - + 9x2 - 3x6 =",
+  "a": 2,
+  "img": "ps-071.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "BAHL6754_0018"
+ },
+ {
+  "qid": "PSI072",
+  "stem": "Indica la opción que contiene mayor cantidad de dinero:",
+  "a": 3,
+  "img": "ps-072.jpg",
+  "ex": "ps-072-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-072-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "BAHL6754_0022"
+ },
+ {
+  "qid": "PSI073",
+  "stem": "Un accidente de tren causa un número elevado de heridos. Durante su traslado al hospital se clasifican según su estado considerando diferentes categorías: muy grave, grave, moderado y leve. Un 2% de los heridos son muy graves, hay la mitad de heridos graves que de moderados y los heridos leves corresponden a sieste veces los graves. Teniendo en cuenta que hay 10 heridos muy graves, ¿cuántos heridos leves acuden al hospital?",
+  "a": 1,
+  "img": "ps-073.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "BAHL6754_0031"
+ },
+ {
+  "qid": "PSI074",
+  "stem": "En una habitación de 5.6 x 5.6 metros se han puesto baldosas nuevas. Cada baldosa mide 200 x 200 milímetros. ¿Cuántas baldosas hay en cada fila?",
+  "a": 1,
+  "img": "ps-074.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "BAHL6754_0033"
+ },
+ {
+  "qid": "PSI075",
+  "stem": "Resuelve la siguiente operación: 3x(6x7 + 8x2 - 3x9) -",
+  "a": 0,
+  "img": "ps-075.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "BAHL6754_0036"
+ },
+ {
+  "qid": "PSI076",
+  "stem": "Resuelve la siguiente operación: 18 + +5",
+  "a": 2,
+  "img": "ps-076.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "BAHL6754_0039"
+ },
+ {
+  "qid": "PSI077",
+  "stem": "Fíjate en los siguientes datos. ¿Cuántos libros de química encontramos en la biblioteca? 4m 4m 4m",
+  "a": 1,
+  "img": "ps-077.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "BAHL6754_0041"
+ },
+ {
+  "qid": "PSI078",
+  "stem": "La longitud de una escalera de bomberos es de 12 metros y la separación entre cada peldaño es de 30 cm. Si el primer peldaño se encuentra a 45 cm de la base de la escalera, ¿cuántos peldaños podría tener en total como máximo?",
+  "a": 3,
+  "img": "ps-078.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "BAHL6754_0045"
+ },
+ {
+  "qid": "PSI079",
+  "stem": "Calcula y después indica la respuesta correcta: 25x2 + 15x2= 324 + 31x2",
+  "a": 1,
+  "img": "ps-079.jpg",
+  "ex": "ps-079-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-079-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "BAHL6754_0046"
+ },
+ {
+  "qid": "PSI080",
+  "stem": "Resuelve la siguiente ecuación matemática: 5z2 + 9z x 4z",
+  "a": 1,
+  "img": "ps-080.jpg",
+  "ex": "ps-080-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-080-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "BAHL6754_0049"
+ },
+ {
+  "qid": "PSI081",
+  "stem": "En una playa hay 4.500 bañistas. En la playa hay 20 puestos de vigilancia que se encargan de atender a los bañistas. Cada 50 bañistas, 2 acuden al puesto de vigilancia para realizar alguna pregunta y 4 a curarse alguna herida. Teniendo en cuenta que todos los puestos de vigilancia atienden al mismo número de bañistas, ¿cuántos acuden a cada puesto de vigilancia?",
+  "a": 3,
+  "img": "ps-081.jpg",
+  "ex": "ps-081-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-081-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "BAHL6754_0054"
+ },
+ {
+  "qid": "PSI082",
+  "stem": "Resuelve la siguiente operación: (15 + 37 -9 + 24 - 27) x 6 +",
+  "a": 3,
+  "img": "ps-082.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "BAHL6754_0063"
+ },
+ {
+  "qid": "PSI083",
+  "stem": "Resuelve: 2z +",
+  "a": 3,
+  "img": "ps-083.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "BAHL6754_0075"
+ },
+ {
+  "qid": "PSI084",
+  "stem": "Resuelve:",
+  "a": 1,
+  "img": "ps-084.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "BAHL6754_0078"
+ },
+ {
+  "qid": "PSI085",
+  "stem": "Indique cuál de las siguientes palabras significa más claramente 10 CONTRARIO que TENUE.",
+  "a": 0,
+  "img": "ps-085.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "FXIE3378_0005"
+ },
+ {
+  "qid": "PSI086",
+  "stem": "Indique qué palabra significa 10 contrario que Mesura:",
+  "a": 2,
+  "img": "ps-086.jpg",
+  "ex": "ps-086-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-086-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0007"
+ },
+ {
+  "qid": "PSI087",
+  "stem": "Señale la pareja de palabras que sean sinónimos:",
+  "a": 1,
+  "img": "ps-087.jpg",
+  "ex": "ps-087-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-087-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0010"
+ },
+ {
+  "qid": "PSI088",
+  "stem": "Indique que palabra significa 10 CONTRARIO que HENCHIR.",
+  "a": 3,
+  "img": "ps-088.jpg",
+  "ex": "ps-088-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-088-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0011"
+ },
+ {
+  "qid": "PSI089",
+  "stem": "PÁJARO es a PLUMAS como PEZ es a:",
+  "a": 3,
+  "img": "ps-089.jpg",
+  "ex": "ps-089-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-089-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0013"
+ },
+ {
+  "qid": "PSI090",
+  "stem": "Indique cuál de las siguientes palabras significa más claramente 10 contrario que APREHENDER.",
+  "a": 3,
+  "img": "ps-090.jpg",
+  "ex": "ps-090-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-090-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0014"
+ },
+ {
+  "qid": "PSI091",
+  "stem": "Indique cuál de las siguientes palabras significa más claramente 10 contrario que HURAÑO.",
+  "a": 3,
+  "img": "ps-091.jpg",
+  "ex": "ps-091-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-091-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0015"
+ },
+ {
+  "qid": "PSI092",
+  "stem": "Indique ei sinónimo de ATURDIDO:",
+  "a": 1,
+  "img": "ps-092.jpg",
+  "ex": "ps-092-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-092-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0016"
+ },
+ {
+  "qid": "PSI093",
+  "stem": "Señale la palabra que sea sinónimo o más relación tenga con ZAHÓN:",
+  "a": 2,
+  "img": "ps-093.jpg",
+  "ex": "ps-093-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-093-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0018"
+ },
+ {
+  "qid": "PSI094",
+  "stem": "Completa la analogía-",
+  "a": 1,
+  "img": "ps-094.jpg",
+  "ex": "ps-094-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-094-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0020"
+ },
+ {
+  "qid": "PSI095",
+  "stem": "Indique que palabra significa 10 CONTRARIO que CLANDESTINO.",
+  "a": 1,
+  "img": "ps-095.jpg",
+  "ex": "ps-095-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-095-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0027"
+ },
+ {
+  "qid": "PSI096",
+  "stem": "Indicar cuál de las siguientes palabras significa más claramente 10 contrario que ARROGANTE.",
+  "a": 0,
+  "img": "ps-096.jpg",
+  "ex": "ps-096-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-096-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0028"
+ },
+ {
+  "qid": "PSI097",
+  "stem": "Indique que palabra significa 10 MISMO que Estupendo:",
+  "a": 2,
+  "img": "ps-097.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "FXIE3378_0034"
+ },
+ {
+  "qid": "PSI098",
+  "stem": "Indique el sinónimo de CACIQUE:",
+  "a": 3,
+  "img": "ps-098.jpg",
+  "ex": "ps-098-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-098-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0036"
+ },
+ {
+  "qid": "PSI099",
+  "stem": "¿Qué explica mejor 10 que es un valle?",
+  "a": 0,
+  "img": "ps-099.jpg",
+  "ex": "ps-099-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-099-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0041"
+ },
+ {
+  "qid": "PSI100",
+  "stem": "Indique qué palabra significa 10 contrario que ARDUO",
+  "a": 3,
+  "img": "ps-100.jpg",
+  "ex": "ps-100-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-100-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0043"
+ },
+ {
+  "qid": "PSI101",
+  "stem": "Los prolegómenos de un libro son:",
+  "a": 1,
+  "img": "ps-101.jpg",
+  "ex": "ps-101-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-101-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0051"
+ },
+ {
+  "qid": "PSI102",
+  "stem": "Señale la palabra que sea sinónimo o que tenga más relación con FLEMÁTICO:",
+  "a": 0,
+  "img": "ps-102.jpg",
+  "ex": "ps-102-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-102-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0052"
+ },
+ {
+  "qid": "PSI103",
+  "stem": "Completa: DERMATOLOGÍA es a MEDICINA como CARTOGRAFÍA es a ...",
+  "a": 1,
+  "img": "ps-103.jpg",
+  "ex": "ps-103-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-103-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0056"
+ },
+ {
+  "qid": "PSI104",
+  "stem": "Completa: FUGAZ es a DURADERO corno TRANSLÚCIDO es a ...",
+  "a": 2,
+  "img": "ps-104.jpg",
+  "ex": "ps-104-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-104-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0057"
+ },
+ {
+  "qid": "PSI105",
+  "stem": "Señale la palabra que sea sinónimo o más relación tenga con CIRCUNSPECTO:",
+  "a": 1,
+  "img": "ps-105.jpg",
+  "ex": "ps-105-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-105-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0060"
+ },
+ {
+  "qid": "PSI106",
+  "stem": "¿Cuál de las siguientes palabras no pertenece al conjunto?",
+  "a": 2,
+  "img": "ps-106.jpg",
+  "ex": "ps-106-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-106-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0061"
+ },
+ {
+  "qid": "PSI107",
+  "stem": "Indique cuál de las siguientes palabras significa más claramente 10 contrario que AMBIGUO.",
+  "a": 3,
+  "img": "ps-107.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "FXIE3378_0065"
+ },
+ {
+  "qid": "PSI108",
+  "stem": "No sabía más que contar FALACIAS\". ¿Qué significa FALACIAS en la frase anterior?",
+  "a": 0,
+  "img": "ps-108.jpg",
+  "ex": "ps-108-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-108-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0066"
+ },
+ {
+  "qid": "PSI109",
+  "stem": "¿Qué significa 10 mismo que ENGARZAR?",
+  "a": 3,
+  "img": "ps-109.jpg",
+  "ex": "ps-109-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-109-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0067"
+ },
+ {
+  "qid": "PSI110",
+  "stem": "Completa la siguiente analogía: LÁTIGO es a DOMADOR como ESPUELA es a ...",
+  "a": 2,
+  "img": "ps-110.jpg",
+  "ex": "ps-110-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-110-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0070"
+ },
+ {
+  "qid": "PSI111",
+  "stem": "Indique ei sinónimo de VENCEDOR:",
+  "a": 1,
+  "img": "ps-111.jpg",
+  "ex": "ps-111-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-111-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0076"
+ },
+ {
+  "qid": "PSI112",
+  "stem": "Indique que palabra significa 10 CONTRARIO que INDÓMITO.",
+  "a": 1,
+  "img": "ps-112.jpg",
+  "ex": "ps-112-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-112-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0077"
+ },
+ {
+  "qid": "PSI113",
+  "stem": "¿Qué definición se ajusta MEJOR a COMEDIDO?",
+  "a": 1,
+  "img": "ps-113.jpg",
+  "ex": "ps-113-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-113-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0078"
+ },
+ {
+  "qid": "PSI114",
+  "stem": "Ensalada es a Aderezar como Guiso es a ...",
+  "a": 1,
+  "img": "ps-114.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "FXIE3378_0085"
+ },
+ {
+  "qid": "PSI115",
+  "stem": "PINTOR es a PINTURA como ESCULTOR es a:",
+  "a": 0,
+  "img": "ps-115.jpg",
+  "ex": "ps-115-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-115-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0086"
+ },
+ {
+  "qid": "PSI116",
+  "stem": "Completa: INDEFENSO es a DESVALIDO corno ENLAZADO es a ...",
+  "a": 1,
+  "img": "ps-116.jpg",
+  "ex": "ps-116-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-116-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0091"
+ },
+ {
+  "qid": "PSI117",
+  "stem": "Completa la siguiente analogía: ¿ROJO es a AMARILLO como DULCE esa",
+  "a": 0,
+  "img": "ps-117.jpg",
+  "ex": "ps-117-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-117-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "FXIE3378_0094"
+ },
+ {
+  "qid": "PSI118",
+  "stem": "¿Cuál es la figura resultante de la suma de las siguientes?",
+  "a": 3,
+  "img": "ps-118.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "IGTL3827_0014"
+ },
+ {
+  "qid": "PSI119",
+  "stem": "Indica la figura que resulta después de aplicar las siguientes órdenes: Giro 450 sentido reloj.",
+  "a": 1,
+  "img": "ps-119.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "IGTL3827_0015"
+ },
+ {
+  "qid": "PSI120",
+  "stem": "Indica qué pieza completa el puzzle de la izquierda:",
+  "a": 3,
+  "img": "ps-120.jpg",
+  "ex": "ps-120-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-120-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "IGTL3827_0016"
+ },
+ {
+  "qid": "PSI121",
+  "stem": "Indica la pieza que completa el puzzle al combinarla con las piezas de la izquierda:",
+  "a": 0,
+  "img": "ps-121.jpg",
+  "ex": "ps-121-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-121-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "IGTL3827_0020"
+ },
+ {
+  "qid": "PSI122",
+  "stem": "¿Cuál de las piezas es la única que encaja con los",
+  "a": 2,
+  "img": "ps-122.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "IGTL3827_0024"
+ },
+ {
+  "qid": "PSI123",
+  "stem": "¿Cuál es la figura que resulta al aplicar las órdenes? Volteo horizontal. 2. Giro 900 sentido reloj. 3.",
+  "a": 0,
+  "img": "ps-123.jpg",
+  "ex": "ps-123-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-123-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "IGTL3827_0026"
+ },
+ {
+  "qid": "PSI124",
+  "stem": "¿Cuál de los cubos se corresponde con el despliegue de la izquierda?",
+  "a": 0,
+  "img": "ps-124.jpg",
+  "ex": "ps-124-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-124-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "IGTL3827_0031"
+ },
+ {
+  "qid": "PSI125",
+  "stem": "Indica la figura que resulta después de aplicar las siguientes órdenes: 1. Ciro 450 contrario reloj. 2.",
+  "a": 1,
+  "img": "ps-125.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "IGTL3827_0037"
+ },
+ {
+  "qid": "PSI126",
+  "stem": "¿Cuál de los cubos se corresponde con el despliegue de la izquierda?",
+  "a": 3,
+  "img": "ps-126.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "IGTL3827_0038"
+ },
+ {
+  "qid": "PSI127",
+  "stem": "¿Cuál es la figura resultante de la suma de las siguientes?",
+  "a": 3,
+  "img": "ps-127.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "IGTL3827_0039"
+ },
+ {
+  "qid": "PSI128",
+  "stem": "Indica la pieza que completa el puzzle al combinarla con las piezas de la izquierda:",
+  "a": 1,
+  "img": "ps-128.jpg",
+  "ex": "ps-128-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-128-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "IGTL3827_0040"
+ },
+ {
+  "qid": "PSI129",
+  "stem": "¿Cuál es la figura resultante de la suma de las siguientes?",
+  "a": 3,
+  "img": "ps-129.jpg",
+  "ex": "ps-129-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-129-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "IGTL3827_0041"
+ },
+ {
+  "qid": "PSI130",
+  "stem": "¿Cuál es la figura que resulta al aplicar las órdenes? 1. Volteo horizontal. 2.",
+  "a": 0,
+  "img": "ps-130.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "IGTL3827_0045"
+ },
+ {
+  "qid": "PSI131",
+  "stem": "Después de aplicar las siguientes órdenes indica la 1. opción correcta: Ciro 900 contrario reloj. 2. 3. Volteo horizontal.",
+  "a": 2,
+  "img": "ps-131.jpg",
+  "ex": "ps-131-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-131-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "IGTL3827_0055"
+ },
+ {
+  "qid": "PSI132",
+  "stem": "Sigue las órdenes y después indica la opción resultante: 008) 0 od 008) 1. AVolteo horizontal. 2. Avolteo horizontal.",
+  "a": 1,
+  "img": "ps-132.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "IGTL3827_0064"
+ },
+ {
+  "qid": "PSI133",
+  "stem": "¿Cuál es la figura resultante de la siguiente operación?",
+  "a": 2,
+  "img": "ps-133.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "IGTL3827_0068"
+ },
+ {
+  "qid": "PSI134",
+  "stem": "¿Cuál de los cubos se corresponde con el despliegue de la izquierda? auaa",
+  "a": 1,
+  "img": "ps-134.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "IGTL3827_0069"
+ },
+ {
+  "qid": "PSI135",
+  "stem": "¿Cuál es la figura resultante de la suma de las siguientes?",
+  "a": 3,
+  "img": "ps-135.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "IGTL3827_0071"
+ },
+ {
+  "qid": "PSI136",
+  "stem": "¿Cuál es la figura resultante de la suma de las siguientes?",
+  "a": 0,
+  "img": "ps-136.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "IGTL3827_0085"
+ },
+ {
+  "qid": "PSI137",
+  "stem": "¿Cuál es la figura que resulta después de aplicar la/s orden/es?",
+  "a": 2,
+  "img": "ps-137.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "IGTL3827_0090"
+ },
+ {
+  "qid": "PSI138",
+  "stem": "Indica la pieza que completa el puzzle al combinarla con las piezas de la izquierda:",
+  "a": 1,
+  "img": "ps-138.jpg",
+  "ex": "ps-138-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-138-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "IGTL3827_0091"
+ },
+ {
+  "qid": "PSI139",
+  "stem": "Indica qué pieza completa el puzzle de la izquierda:",
+  "a": 1,
+  "img": "ps-139.jpg",
+  "ex": "ps-139-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-139-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "IGTL3827_0096"
+ },
+ {
+  "qid": "PSI140",
+  "stem": "¿Cuál de las piezas es la única que encaja con los orificios de la pletina de la izquierda?",
+  "a": 2,
+  "img": "ps-140.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "IGTL3827_0097"
+ },
+ {
+  "qid": "PSI141",
+  "stem": "Indica la figura que resulta después de aplicar las siguientes órdenes: 1. Giro 450 contrario reloj. 2.",
+  "a": 2,
+  "img": "ps-141.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "IGTL3827_0098"
+ },
+ {
+  "qid": "PSI142",
+  "stem": "¿Cuál de los cubos se corresponde con el despliegue de la izquierda?",
+  "a": 2,
+  "img": "ps-142.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "IGTL3827_0099"
+ },
+ {
+  "qid": "PSI143",
+  "stem": "Indica la figura que resulta después de aplicar las siguientes órdenes: 1. Volteo horizontal. Volteo vertical.",
+  "a": 1,
+  "img": "ps-143.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "IGTL3827_0106"
+ },
+ {
+  "qid": "PSI144",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 1,
+  "img": "ps-144.jpg",
+  "ex": "ps-144-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-144-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0005"
+ },
+ {
+  "qid": "PSI145",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 1,
+  "img": "ps-145.jpg",
+  "ex": "ps-145-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-145-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0006"
+ },
+ {
+  "qid": "PSI146",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 3,
+  "img": "ps-146.jpg",
+  "ex": "ps-146-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-146-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0008"
+ },
+ {
+  "qid": "PSI147",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 3,
+  "img": "ps-147.jpg",
+  "ex": "ps-147-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-147-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0015"
+ },
+ {
+  "qid": "PSI148",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 2,
+  "img": "ps-148.jpg",
+  "ex": "ps-148-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-148-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0019"
+ },
+ {
+  "qid": "PSI149",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 1,
+  "img": "ps-149.jpg",
+  "ex": "ps-149-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-149-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0021"
+ },
+ {
+  "qid": "PSI150",
+  "stem": "¿Qué figura es igual al modelo de la izquierda?",
+  "a": 0,
+  "img": "ps-150.jpg",
+  "ex": "ps-150-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-150-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0022"
+ },
+ {
+  "qid": "PSI151",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 0,
+  "img": "ps-151.jpg",
+  "ex": "ps-151-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-151-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0029"
+ },
+ {
+  "qid": "PSI152",
+  "stem": "Observe la siguiente imagen e indique que afirmación la describe de manera MÁS precisa: TORNILLOS BROCA TORNILLOS DE PRESIÓN CLAVO LISO CLAVO ANILLADO TUERCA MARIPOSA TUERCA CÓNICA",
+  "a": 1,
+  "img": "ps-152.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "JDVE7428_0031"
+ },
+ {
+  "qid": "PSI153",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 2,
+  "img": "ps-153.jpg",
+  "ex": "ps-153-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-153-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0032"
+ },
+ {
+  "qid": "PSI154",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 2,
+  "img": "ps-154.jpg",
+  "ex": "ps-154-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-154-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0034"
+ },
+ {
+  "qid": "PSI155",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 0,
+  "img": "ps-155.jpg",
+  "ex": "ps-155-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-155-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0035"
+ },
+ {
+  "qid": "PSI156",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 1,
+  "img": "ps-156.jpg",
+  "ex": "ps-156-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-156-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0038"
+ },
+ {
+  "qid": "PSI157",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 0,
+  "img": "ps-157.jpg",
+  "ex": "ps-157-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-157-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0039"
+ },
+ {
+  "qid": "PSI158",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 1,
+  "img": "ps-158.jpg",
+  "ex": "ps-158-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-158-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0040"
+ },
+ {
+  "qid": "PSI159",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 3,
+  "img": "ps-159.jpg",
+  "ex": "ps-159-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-159-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JDVE7428_0042"
+ },
+ {
+  "qid": "PSI160",
+  "stem": "Indique ei sinónimo de MIXTURA:",
+  "a": 3,
+  "img": "ps-160.jpg",
+  "ex": "ps-160-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-160-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0006"
+ },
+ {
+  "qid": "PSI161",
+  "stem": "Indique qué palabra significa 10 contrario de CABALLERO",
+  "a": 0,
+  "img": "ps-161.jpg",
+  "ex": "ps-161-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-161-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0007"
+ },
+ {
+  "qid": "PSI162",
+  "stem": "Señale la pareja de palabras que sean sinónimas de CUSTODIAR y OSADÍA:",
+  "a": 3,
+  "img": "ps-162.jpg",
+  "ex": "ps-162-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-162-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0011"
+ },
+ {
+  "qid": "PSI163",
+  "stem": "Calor es a Estufa como Hedor es a...",
+  "a": 2,
+  "img": "ps-163.jpg",
+  "ex": "ps-163-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-163-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0014"
+ },
+ {
+  "qid": "PSI164",
+  "stem": "Completa: ... es a BLANCO corno FUEGO es a ...",
+  "a": 1,
+  "img": "ps-164.jpg",
+  "ex": "ps-164-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-164-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0018"
+ },
+ {
+  "qid": "PSI165",
+  "stem": "Completa la siguiente analogía: ESCULTOR es a ESTUDIO como ACTOR es a ...",
+  "a": 0,
+  "img": "ps-165.jpg",
+  "ex": "ps-165-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-165-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0019"
+ },
+ {
+  "qid": "PSI166",
+  "stem": "Indique que palabra significa 10 CONTRARIO que ENAJENAR",
+  "a": 2,
+  "img": "ps-166.jpg",
+  "ex": "ps-166-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-166-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0021"
+ },
+ {
+  "qid": "PSI167",
+  "stem": "Por fin acabaron las INSTIGACIONES, ¿qué significa INSTIGACIONES en la frase anterior?",
+  "a": 0,
+  "img": "ps-167.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "JILO8638_0029"
+ },
+ {
+  "qid": "PSI168",
+  "stem": "Señale la palabra que no sea sinónimo de TENACIDAD:",
+  "a": 3,
+  "img": "ps-168.jpg",
+  "ex": "ps-168-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-168-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0030"
+ },
+ {
+  "qid": "PSI169",
+  "stem": "Indique qué palabra significa 10 CONTRARIO que Languidez:",
+  "a": 1,
+  "img": "ps-169.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "JILO8638_0032"
+ },
+ {
+  "qid": "PSI170",
+  "stem": "Indica cuál es el sinónimo de PREMURA:",
+  "a": 0,
+  "img": "ps-170.jpg",
+  "ex": "ps-170-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-170-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0039"
+ },
+ {
+  "qid": "PSI171",
+  "stem": "Decimos que existen INFLUENCIAS EXOGENAS cuando hay",
+  "a": 1,
+  "img": "ps-171.jpg",
+  "ex": "ps-171-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-171-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0041"
+ },
+ {
+  "qid": "PSI172",
+  "stem": "Indique cuál de las siguientes palabras significa más claramente 10 contrario que ALTRUISTA",
+  "a": 2,
+  "img": "ps-172.jpg",
+  "ex": "ps-172-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-172-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0056"
+ },
+ {
+  "qid": "PSI173",
+  "stem": "Indique qué palabra significa 10 contrario que Loco:",
+  "a": 3,
+  "img": "ps-173.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "JILO8638_0059"
+ },
+ {
+  "qid": "PSI174",
+  "stem": "¿Qué definición se ajusta MEJOR a COMPELER?",
+  "a": 2,
+  "img": "ps-174.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "JILO8638_0061"
+ },
+ {
+  "qid": "PSI175",
+  "stem": "Indique que palabra significa 10 CONTRARIO que PÚBLICO.",
+  "a": 1,
+  "img": "ps-175.jpg",
+  "ex": "ps-175-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-175-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0065"
+ },
+ {
+  "qid": "PSI176",
+  "stem": "AFLUENCIA es a PROFUSIÓN como AUGE es a ...",
+  "a": 2,
+  "img": "ps-176.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "JILO8638_0067"
+ },
+ {
+  "qid": "PSI177",
+  "stem": "¿Qué definición se ajunta MEJOR a POSTULANTE?",
+  "a": 3,
+  "img": "ps-177.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "JILO8638_0068"
+ },
+ {
+  "qid": "PSI178",
+  "stem": "Completa la siguiente analogía: INFINITO es a INAGOTABLE como VASTO es a ...",
+  "a": 1,
+  "img": "ps-178.jpg",
+  "ex": "ps-178-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-178-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JILO8638_0069"
+ },
+ {
+  "qid": "PSI179",
+  "stem": "Indique que palabra significa 10 CONTRARIO que HEGEMONÍA.",
+  "a": 2,
+  "img": "ps-179.jpg",
+  "ex": "ps-179-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-179-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "UKFB0752_0032"
+ },
+ {
+  "qid": "PSI180",
+  "stem": "Indique ei sinónimo de MALOGRADO:",
+  "a": 2,
+  "img": "ps-180.jpg",
+  "ex": "ps-180-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-180-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "UKFB0752_0036"
+ },
+ {
+  "qid": "PSI181",
+  "stem": "Los CARDÚMENES son:",
+  "a": 1,
+  "img": "ps-181.jpg",
+  "ex": "ps-181-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-181-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "UKFB0752_0039"
+ },
+ {
+  "qid": "PSI182",
+  "stem": "Señale la palabra que no sea sinónimo de POQUEDAD:",
+  "a": 1,
+  "img": "ps-182.jpg",
+  "ex": "ps-182-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-182-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "UKFB0752_0042"
+ },
+ {
+  "qid": "PSI183",
+  "stem": "¿Cuál de las siguientes palabras no pertenece al conjunto?",
+  "a": 0,
+  "img": "ps-183.jpg",
+  "ex": "ps-183-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-183-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "UKFB0752_0045"
+ },
+ {
+  "qid": "PSI184",
+  "stem": "Completa la siguiente analogía: ... es a CONSECUENCIA corno PARTE es a ...",
+  "a": 3,
+  "img": "ps-184.jpg",
+  "ex": "ps-184-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-184-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "UKFB0752_0050"
+ },
+ {
+  "qid": "PSI185",
+  "stem": "Calcula y después indica la respuesta correcta: 23 + 13 9x12",
+  "a": 0,
+  "img": "ps-185.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "WFIY3935_0008"
+ },
+ {
+  "qid": "PSI186",
+  "stem": "Para evaluar una asignatura se preparan 800 exámenes. El 25 % de los exámenes corresponde a pruebas teóricas y el resto a pruebas prácticas. Si de las pruebas prácticas un 20% se entregan sin contestar, ¿cuántas pruebas prácticas no se han contestado?",
+  "a": 0,
+  "img": "ps-186.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "WFIY3935_0014"
+ },
+ {
+  "qid": "PSI187",
+  "stem": "Calcula y después indica la respuesta correcta: 11+2-5 24-3+4",
+  "a": 3,
+  "img": "ps-187.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "WFIY3935_0017"
+ },
+ {
+  "qid": "PSI188",
+  "stem": "Andrea y Marcos trabajan en la misma empresa y por ahorrar gasolina deciden ir juntos al trabajo puesto que los 2 viven en el mismo barrio. La distancia que separa su trabajo del barrio en el que viven es de 60 kilómetros. Recorren esta distancia 2 veces al día, en el camino de ida y en el de vuelta. Acuden a trabajar 4 días a la semana, por 10 que acuerdan que cada uno de ellos lleve su coche 2 días por semana. El coche de Andrea gasta 6 litros cada 100 km y el de Marcos gasta 4 litros cada 100 Km. ¿Cuántos litros de gasolina gastan entre los dos a la semana?",
+  "a": 3,
+  "img": "ps-188.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "WFIY3935_0031"
+ },
+ {
+  "qid": "PSI189",
+  "stem": "Resuelve: 25z.2z + 147-2 = 37z2",
+  "a": 3,
+  "img": "ps-189.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "WFIY3935_0035"
+ },
+ {
+  "qid": "PSI190",
+  "stem": "Resuelve la siguiente ecuación: 27z2- 19z2- 3z•2z =",
+  "a": 1,
+  "img": "ps-190.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "WFIY3935_0036"
+ },
+ {
+  "qid": "PSI191",
+  "stem": "Si Nuria tiene 2000 € y se gasta la quinta parte en un viaje, ¿cuánto dinero le queda?",
+  "a": 1,
+  "img": "ps-191.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "WFIY3935_0039"
+ },
+ {
+  "qid": "PSI192",
+  "stem": "",
+  "a": 0,
+  "img": "ps-192.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "WFIY3935_0044"
+ },
+ {
+  "qid": "PSI193",
+  "stem": "Una persona compra lotería con un billete de 100 euros y le dan de cambio el 25% del importe que ha gastado. Uno de los décimos resulta premiado y la persona recibe 8 veces el importe que se gastó en total en lotería. ¿Cuántos euros ha obtenido de beneficio?",
+  "a": 1,
+  "img": "ps-193.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "WFIY3935_0047"
+ },
+ {
+  "qid": "PSI194",
+  "stem": "Fijese en el gráfico. En el cuartel 2 se tramitan un 20% menos de denuncias en mayo que en abril. ¿Cuántas denuncias hubo en dicho cuartel en mayo?",
+  "a": 2,
+  "img": "ps-194.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "WFIY3935_0050"
+ },
+ {
+  "qid": "PSI195",
+  "stem": "En un día de enero la temperatura a las 8 de la mañana es de — 0.5 grados. Si hasta las 2 de la tarde aumenta 1 grado cada hora y a partir de las 2 disminuye 5 décimas cada hora, ¿cuál es la temperatura a las 5 de la tarde?",
+  "a": 2,
+  "img": "ps-195.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "WFIY3935_0053"
+ },
+ {
+  "qid": "PSI196",
+  "stem": "Resuelve la siguiente operación: 31 +",
+  "a": 1,
+  "img": "ps-196.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "WFIY3935_0056"
+ },
+ {
+  "qid": "PSI197",
+  "stem": "Indica la respuesta correcta: 29z2- 10z2= 252 +",
+  "a": 1,
+  "img": "ps-197.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "WFIY3935_0066"
+ },
+ {
+  "qid": "PSI198",
+  "stem": "El servicio de vigilancia de un parque empresarial duran un total de 8.5 horas. Se han detectado 2 incidencias cada hora. ¿Cuántos incidentes se han detectado a 10 largo de todo el servicio?",
+  "a": 3,
+  "img": "ps-198.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "WFIY3935_0068"
+ },
+ {
+  "qid": "PSI199",
+  "stem": "En un tanque había 250 litros de agua y posteriormente se añadió un 30 % más de agua. Si el tanque tiene una capacidad máxima de 475 litros, ¿cuántos litros más caben en el tanque?",
+  "a": 3,
+  "img": "ps-199.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "WFIY3935_0070"
+ },
+ {
+  "qid": "PSI200",
+  "stem": "Resuelve: (14 + 5x3) - (21 + 7x2)",
+  "a": 0,
+  "img": "ps-200.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "WFIY3935_0072"
+ },
+ {
+  "qid": "PSI201",
+  "stem": "Resuelve el siguiente cálculo numérico: 3x5 + 21 +",
+  "a": 1,
+  "img": "ps-201.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "WFIY3935_0075"
+ },
+ {
+  "qid": "PSI202",
+  "stem": "Fíjese en la tabla. ¿Qué porcentaje de los árboles plantados en el sector C se plantaron en la semana 2? Calcule el valor de los interrogantes (?) cuando sea necesario. Sector A Sector B Sector C Sector D TOTAL",
+  "a": 1,
+  "img": "ps-202.jpg",
+  "ex": "ps-202-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-202-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WFIY3935_0077"
+ },
+ {
+  "qid": "PSI203",
+  "stem": "Resuelve la siguiente ecuación: 21 + 113 + y = 18",
+  "a": 2,
+  "img": "ps-203.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "WFIY3935_0086"
+ },
+ {
+  "qid": "PSI204",
+  "stem": "Resuelve la siguiente operación: 8x - 47 + 12 = 37",
+  "a": 3,
+  "img": "ps-204.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "WFIY3935_0088"
+ },
+ {
+  "qid": "PSI205",
+  "stem": "Siguiendo el gráfico, ¿en qué año los avistamientos de cetáceos en las costas canarias son 1/4 del total de avistamientos de dicho año? o z",
+  "a": 1,
+  "img": "ps-205.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "WFIY3935_0092"
+ },
+ {
+  "qid": "PSI206",
+  "stem": "Calcula y después indica la respuesta correcta: (57 - 13) - (70 - 26) =",
+  "a": 3,
+  "img": "ps-206.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "WFIY3935_0093"
+ },
+ {
+  "qid": "PSI207",
+  "stem": "Resuelve la siguiente operación: 52+ 70 - 15",
+  "a": 2,
+  "img": "ps-207.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "WFIY3935_0096"
+ },
+ {
+  "qid": "PSI208",
+  "stem": "Resuelve el siguiente cálculo numérico: (52 + 63 - 5)",
+  "a": 1,
+  "img": "ps-208.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "WFIY3935_0099"
+ },
+ {
+  "qid": "PSI209",
+  "stem": "Resuelve: (19x5) + (21-12) x 22 =",
+  "a": 2,
+  "img": "ps-209.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "WFIY3935_0101"
+ },
+ {
+  "qid": "PSI210",
+  "stem": "Resuelve la siguiente operación matemática: -187x2 - 37x2 = 243 - 227x2",
+  "a": 0,
+  "img": "ps-210.jpg",
+  "ex": "ps-210-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-210-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WFIY3935_0107"
+ },
+ {
+  "qid": "PSI211",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 3,
+  "img": "ps-211.jpg",
+  "ex": "ps-211-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-211-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0007"
+ },
+ {
+  "qid": "PSI212",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 1,
+  "img": "ps-212.jpg",
+  "ex": "ps-212-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-212-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0010"
+ },
+ {
+  "qid": "PSI213",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 0,
+  "img": "ps-213.jpg",
+  "ex": "ps-213-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-213-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0012"
+ },
+ {
+  "qid": "PSI214",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 0,
+  "img": "ps-214.jpg",
+  "ex": "ps-214-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-214-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0016"
+ },
+ {
+  "qid": "PSI215",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 1,
+  "img": "ps-215.jpg",
+  "ex": "ps-215-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-215-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0017"
+ },
+ {
+  "qid": "PSI216",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 2,
+  "img": "ps-216.jpg",
+  "ex": "ps-216-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-216-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0032"
+ },
+ {
+  "qid": "PSI217",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 2,
+  "img": "ps-217.jpg",
+  "ex": "ps-217-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-217-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0034"
+ },
+ {
+  "qid": "PSI218",
+  "stem": "¿Qué figura es diferente al resto?",
+  "a": 0,
+  "img": "ps-218.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "WWGD2005_0037"
+ },
+ {
+  "qid": "PSI219",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 3,
+  "img": "ps-219.jpg",
+  "ex": "ps-219-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-219-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0038"
+ },
+ {
+  "qid": "PSI220",
+  "stem": "¿Qué figura es diferente al resto?",
+  "a": 1,
+  "img": "ps-220.jpg",
+  "ex": "ps-220-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-220-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0040"
+ },
+ {
+  "qid": "PSI221",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 0,
+  "img": "ps-221.jpg",
+  "ex": "ps-221-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-221-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0044"
+ },
+ {
+  "qid": "PSI222",
+  "stem": "",
+  "a": 2,
+  "img": "ps-222.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "WWGD2005_0052"
+ },
+ {
+  "qid": "PSI223",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 1,
+  "img": "ps-223.jpg",
+  "ex": "ps-223-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-223-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0054"
+ },
+ {
+  "qid": "PSI224",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 3,
+  "img": "ps-224.jpg",
+  "ex": "ps-224-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-224-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0055"
+ },
+ {
+  "qid": "PSI225",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 1,
+  "img": "ps-225.jpg",
+  "ex": "ps-225-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-225-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0063"
+ },
+ {
+  "qid": "PSI226",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 3,
+  "img": "ps-226.jpg",
+  "ex": "ps-226-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-226-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0070"
+ },
+ {
+  "qid": "PSI227",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 3,
+  "img": "ps-227.jpg",
+  "ex": "ps-227-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-227-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0072"
+ },
+ {
+  "qid": "PSI228",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 2,
+  "img": "ps-228.jpg",
+  "ex": "ps-228-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-228-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0074"
+ },
+ {
+  "qid": "PSI229",
+  "stem": "¿Qué imagen es diferente a las demás?",
+  "a": 2,
+  "img": "ps-229.jpg",
+  "ex": "ps-229-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-229-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0085"
+ },
+ {
+  "qid": "PSI230",
+  "stem": "Indica la imagen que es diferente al resto:",
+  "a": 0,
+  "img": "ps-230.jpg",
+  "ex": "ps-230-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-230-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "WWGD2005_0091"
+ },
+ {
+  "qid": "PSI231",
+  "stem": "Después de aplicar las siguientes órdenes indica la opción correcta: 1. Volteo horizontal. 3. Ciro 900 sentido reloj.",
+  "a": 2,
+  "img": "ps-231.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "XZVH1178_0006"
+ },
+ {
+  "qid": "PSI232",
+  "stem": "¿Cuál de las piezas es la única que encaja con los orificios de la pletina de la izquierda? :iii••",
+  "a": 0,
+  "img": "ps-232.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "XZVH1178_0011"
+ },
+ {
+  "qid": "PSI233",
+  "stem": "Indica qué pieza completa el puzzle de la izquierda:",
+  "a": 2,
+  "img": "ps-233.jpg",
+  "ex": "ps-233-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-233-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "XZVH1178_0014"
+ },
+ {
+  "qid": "PSI234",
+  "stem": "¿Cuál es la figura que resulta después de aplicar la/s orden/es?",
+  "a": 2,
+  "img": "ps-234.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "XZVH1178_0017"
+ },
+ {
+  "qid": "PSI235",
+  "stem": "Después de aplicar las siguientes órdenes indica la opción correcta: 1. Volteo horizontal. 3. Ciro 900 contrario reloj.",
+  "a": 0,
+  "img": "ps-235.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "XZVH1178_0020"
+ },
+ {
+  "qid": "PSI236",
+  "stem": "Indica la figura resultante al superponer las imágenes siguientes:",
+  "a": 0,
+  "img": "ps-236.jpg",
+  "ex": "ps-236-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-236-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "XZVH1178_0027"
+ },
+ {
+  "qid": "PSI237",
+  "stem": "¿Cuál es la figura resultante de la suma de las siguientes?",
+  "a": 3,
+  "img": "ps-237.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "XZVH1178_0037"
+ },
+ {
+  "qid": "PSI238",
+  "stem": "Indica qué pieza completa el puzzle de la izquierda:",
+  "a": 0,
+  "img": "ps-238.jpg",
+  "ex": "ps-238-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-238-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "XZVH1178_0055"
+ },
+ {
+  "qid": "PSI239",
+  "stem": "¿Cuál de las piezas (A,B,C o D) es la única que ENCAJA con los orificios de la pletina de la izquierda?",
+  "a": 3,
+  "img": "ps-239.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "XZVH1178_0056"
+ },
+ {
+  "qid": "PSI240",
+  "stem": "¿Cuál es la figura que resulta de aplicar Ials orden/es?",
+  "a": 0,
+  "img": "ps-240.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "XZVH1178_0057"
+ },
+ {
+  "qid": "PSI241",
+  "stem": "¿Cuál es la figura que resulta después de aplicar la/s orden/es?",
+  "a": 1,
+  "img": "ps-241.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "XZVH1178_0058"
+ },
+ {
+  "qid": "PSI242",
+  "stem": "Después de usar las piezas que nos ofrecen, indica la opción que completaría el puzzle de la izquierda:",
+  "a": 1,
+  "img": "ps-242.jpg",
+  "ex": "ps-242-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-242-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "XZVH1178_0069"
+ },
+ {
+  "qid": "PSI243",
+  "stem": "¿Cuál de los cubos se corresponde con el despliegue de la izquierda?",
+  "a": 3,
+  "img": "ps-243.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "XZVH1178_0074"
+ },
+ {
+  "qid": "PSI244",
+  "stem": "Sigue las órdenes y después indica la opción resultante: l. AVolteo horizontal. 2. 3. Ciro 900 contrario reloj.",
+  "a": 2,
+  "img": "ps-244.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "XZVH1178_0075"
+ },
+ {
+  "qid": "PSI245",
+  "stem": "¿Cuál es la figura que resulta al aplicar las órdenes? 1. Ciro 450 sentido reloj.",
+  "a": 3,
+  "img": "ps-245.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "XZVH1178_0087"
+ },
+ {
+  "qid": "PSI246",
+  "stem": "Indica la pieza que completa el puzzle al combinarla con las piezas de la izquierda:",
+  "a": 2,
+  "img": "ps-246.jpg",
+  "ex": "ps-246-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-246-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "XZVH1178_0090"
+ },
+ {
+  "qid": "PSI247",
+  "stem": "¿Cuál es la figura resultante de la suma de las siguientes?",
+  "a": 0,
+  "img": "ps-247.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "XZVH1178_0104"
+ },
+ {
+  "qid": "PSI248",
+  "stem": "¿Cuál es la figura que resulta de aplicar Ials orden/es?",
+  "a": 2,
+  "img": "ps-248.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>.",
+  "fuente": "XZVH1178_0105"
+ },
+ {
+  "qid": "PSI249",
+  "stem": "¿Cuál es la figura resultante de la suma de las siguientes?",
+  "a": 2,
+  "img": "ps-249.jpg",
+  "ex": "ps-249-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-249-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "XZVH1178_0119"
+ },
+ {
+  "qid": "PSI250",
+  "stem": "Señala qué pieza completa el puzzle de la izquierda:",
+  "a": 3,
+  "img": "ps-250.jpg",
+  "ex": "ps-250-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-250-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "XZVH1178_0123"
+ },
+ {
+  "qid": "PSI251",
+  "stem": "¿Cuál de las piezas de la derecha (A,B,C o D) completa el puzzle al combinarla con las piezas de la izquierda?",
+  "a": 3,
+  "img": "ps-251.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "XZVH1178_0129"
+ },
+ {
+  "qid": "PSI252",
+  "stem": "Indica la figura que resulta al aplicar las órdenes: c seeo Ciro 900 sentido reloj.",
+  "a": 3,
+  "img": "ps-252.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "XZVH1178_0133"
+ },
+ {
+  "qid": "PSI253",
+  "stem": "Indica la pieza que completa el puzzle al combinarla con las piezas de la izquierda:",
+  "a": 3,
+  "img": "ps-253.jpg",
+  "ex": "ps-253-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-253-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "XZVH1178_0138"
+ },
+ {
+  "qid": "PSI254",
+  "stem": "¿Cuál de las piezas es la única que encaja con los orificios de la pletina de la izquierda?",
+  "a": 3,
+  "img": "ps-254.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>.",
+  "fuente": "XZVH1178_0142"
+ },
+ {
+  "qid": "PSI255",
+  "stem": "Indica la pieza que completa el puzzle al combinarla con las piezas de la izquierda:",
+  "a": 1,
+  "img": "ps-255.jpg",
+  "ex": "ps-255-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-255-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "XZVH1178_0152"
+ },
+ {
+  "qid": "PSI256",
+  "stem": "¿Cuál de los cubos (A,B,C, o D) se corresponde con el desarrollo de la izquierda?",
+  "a": 1,
+  "img": "ps-256.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>.",
+  "fuente": "XZVH1178_0160"
+ }
+]
