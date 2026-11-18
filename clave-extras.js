@@ -46,7 +46,9 @@
   function elegirVoz() {
     if (vozElegida) return vozElegida;
     var v = (window.speechSynthesis && speechSynthesis.getVoices()) || [];
-    var es = v.filter(function (x) { return /^es/i.test(x.lang); });
+    var es = v.filter(function (x) { return /^es[-_]ES/i.test(x.lang) || /spain|españa|castellano/i.test(x.name); });   // solo voces de España
+    if (!es.length) es = v.filter(function (x) { return /^es/i.test(x.lang) && !/es[-_](MX|US|AR|CO|CL|PE|VE|419)|mexic|estados unidos|latino|argentin|colomb/i.test(x.lang + ' ' + x.name); });
+    if (!es.length) es = v.filter(function (x) { return /^es/i.test(x.lang); });
     if (!es.length) return null;
     var M = /jorge|pablo|diego|alvaro|álvaro|enrique|carlos|raul|raúl|tomas|tomás|jose|josé|fernando|antonio|miguel|male/i;
     var pool = es.filter(function (x) { return !M.test(x.name); }); if (!pool.length) pool = es;
@@ -68,7 +70,7 @@
         if (i > trozos.length) return ok(true);
         if (!x) return sig();
         var u = new SpeechSynthesisUtterance(x), v = elegirVoz();
-        if (v) u.voice = v; u.lang = v ? v.lang : 'es-ES'; u.rate = vel; u.pitch = 1;
+        if (v) u.voice = v; u.lang = (v && /^es[-_]ES/i.test(v.lang)) ? v.lang : 'es-ES'; u.rate = vel; u.pitch = 1;
         var fin = function () { if (t !== tok) return ok(false); setTimeout(sig, 220); };
         u.onend = fin; u.onerror = fin; speechSynthesis.speak(u);
       })();
@@ -155,10 +157,12 @@
   var guard = parseInt(ls(KEY) || '0', 10) || 0;
   ini.innerHTML = '<button class="cq-btn p" data-i="coche">🚗 Escuchar el esquema clave</button>' +
     (guard > 0 ? '<button class="cq-btn" data-i="seguir">▶ Seguir donde me quedé</button>' : '') +
-    '<button class="cq-btn" data-i="preg">🧠 Hacerme las preguntas</button>';
+    '<button class="cq-btn" data-i="pausa">⏸ Pausa / ▶ Seguir</button><button class="cq-btn m" data-i="parar">⏹ Parar</button><button class="cq-btn" data-i="preg">🧠 Hacerme las preguntas</button>';
   var h1 = $('h1', hoja); if (h1 && h1.parentNode) h1.parentNode.insertBefore(ini, (h1.nextElementSibling && h1.nextElementSibling.classList.contains('sub')) ? h1.nextElementSibling.nextSibling : h1.nextSibling); else hoja.insertBefore(ini, hoja.firstChild);
   ini.addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return; var a = b.getAttribute('data-i');
+    if (a === 'parar') { detener(); return; }
+    if (a === 'pausa') { if (activo) { parar(); activo = false; $('[data-a="play"]', bar).textContent = '▶'; } else if (bar.classList.contains('on')) leerDesde(pos); return; }
     if (a === 'preg') { var q = $('.cq-quiz'); if (q) { q.scrollIntoView({block: 'start', behavior: 'smooth'}); } return; }
     quizAbortar(); recoge();
     leerDesde(a === 'seguir' ? guard : 0);
@@ -202,8 +206,10 @@
     x.onerror = function () { cb(); }; D.head.appendChild(x);
   }
   var bancoTodo = [];
+  var quizCtrlClick = null;
   var quiz = null, modoQuiz = false, cola = [], qi = 0, aciertos = 0, falladas = [], mostrada = false, voz = false, espera = parseInt(ls('clave-espera') || '6', 10);
   function crearQuiz() {
+    D.addEventListener('click', function (e) { if (quizCtrlClick && quiz && quiz.contains(e.target)) quizCtrlClick(e); });
     reunir(); if (!banco.length && !NT) return;
     quiz = D.createElement('section'); quiz.className = 'cq-quiz'; quiz.id = 'cq-quiz';
     var pie = $('.pie', hoja); if (pie && pie.parentNode === hoja) hoja.insertBefore(quiz, pie); else hoja.appendChild(quiz);
@@ -289,7 +295,7 @@
       var c = cola[qi]; info((qi + 1) + '/' + cola.length);
       if (c.t) {
         var ops = c.o.map(function (o, k) { return '<div class="cq-opt" data-k="' + k + '"><b>' + LET[k] + '.</b> ' + o + '</div>'; }).join('');
-        quiz.innerHTML = cabTest(c) + '<div class="cq-opts">' + ops + '</div><div class="cq-expl"></div>';
+        quiz.innerHTML = cabTest(c) + '<div class="cq-opts">' + ops + '</div><div class="cq-expl"></div>' + ctrlVoz();
         if (!(await decir('Pregunta ' + (qi + 1) + '. ' + textoTest(c), t))) return;
         await pausa(espera * 1000, t); if (t !== tok) return;
         var ok = quiz.querySelector('.cq-opt[data-k="' + c.c + '"]'); if (ok) ok.className += ' ok';
@@ -311,6 +317,8 @@
     }
     if (t === tok && modoQuiz) fin();
   }
+  function ctrlVoz() { return '<div class="cq-fila cq-ctrl"><button class="cq-btn" data-c="ant">⏮</button><button class="cq-btn p" data-c="play">' + (bar.dataset.p ? '▶ Seguir' : '⏸ Pausa') + '</button><button class="cq-btn m" data-c="x">⏹ Parar</button><button class="cq-btn" data-c="sig">⏭</button></div>'; }
+  quizCtrlClick = function (e) { var b = e.target.closest('[data-c]'); if (!b || !modoQuiz) return; var a = b.getAttribute('data-c'); quizBar(a); if (a === 'play') b.textContent = bar.dataset.p ? '▶ Seguir' : '⏸ Pausa'; };
   function quizBar(a) {
     if (a === 'x') { quizAbortar(); pintaInicio(); return; }
     if (a === 'play') { if (tok && !bar.dataset.p) { bar.dataset.p = '1'; parar(); $('[data-a="play"]', bar).textContent = '▶'; } else { delete bar.dataset.p; $('[data-a="play"]', bar).textContent = '⏸'; quizVoz(); } return; }
@@ -321,6 +329,6 @@
   function quizAbortar() { if (modoQuiz) { modoQuiz = false; parar(); bar.classList.remove('on'); pantalla(false); delete bar.dataset.p; } }
 
   window.addEventListener('pagehide', function () { parar(); });
-  function arranca() { recoge(); crearQuiz(); }
+  function arranca() { if (D.getElementById('cq-quiz') === null) { }  recoge(); crearQuiz(); }
   if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', arranca); else arranca();
 })();
