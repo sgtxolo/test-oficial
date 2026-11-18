@@ -3,10 +3,6 @@
   "id": "a-1",
   "nombre": "Código Civil · Artículo 1",
   "img": "a-1.jpg",
-  "wh": [
-   1075,
-   666
-  ],
   "imgr": "a-1-r.jpg",
   "ap": [
    1,
@@ -16,6 +12,10 @@
    5,
    6,
    7
+  ],
+  "wh": [
+   1075,
+   666
   ],
   "whr": [
    1075,
@@ -32,15 +32,15 @@
   "id": "a-2",
   "nombre": "Código Civil · Artículo 2",
   "img": "a-2.jpg",
-  "wh": [
-   1075,
-   534
-  ],
   "imgr": "a-2-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   534
   ],
   "whr": [
    1075,
@@ -61,14 +61,14 @@
   "id": "a-3",
   "nombre": "Código Civil · Artículo 3",
   "img": "a-3.jpg",
-  "wh": [
-   1075,
-   197
-  ],
   "imgr": "a-3-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   197
   ],
   "whr": [
    1075,
@@ -89,15 +89,15 @@
   "id": "a-4",
   "nombre": "Código Civil · Artículo 4",
   "img": "a-4.jpg",
-  "wh": [
-   1075,
-   238
-  ],
   "imgr": "a-4-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   238
   ],
   "whr": [
    1075,
@@ -118,14 +118,14 @@
   "id": "a-5",
   "nombre": "Código Civil · Artículo 5",
   "img": "a-5.jpg",
-  "wh": [
-   1075,
-   631
-  ],
   "imgr": "a-5-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   631
   ],
   "whr": [
    1075,
@@ -142,16 +142,16 @@
   "id": "a-6",
   "nombre": "Código Civil · Artículo 6",
   "img": "a-6.jpg",
-  "wh": [
-   1075,
-   335
-  ],
   "imgr": "a-6-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   335
   ],
   "whr": [
    1075,
@@ -172,14 +172,14 @@
   "id": "a-7",
   "nombre": "Código Civil · Artículo 7",
   "img": "a-7.jpg",
-  "wh": [
-   1075,
-   418
-  ],
   "imgr": "a-7-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   418
   ],
   "whr": [
    1075,
@@ -204,14 +204,14 @@
   "id": "a-13",
   "nombre": "Código Civil · Artículo 13",
   "img": "a-13.jpg",
-  "wh": [
-   1075,
-   241
-  ],
   "imgr": "a-13-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   241
   ],
   "whr": [
    1075,
@@ -241,15 +241,15 @@
   "id": "a-15",
   "nombre": "Código Civil · Artículo 15",
   "img": "a-15.jpg",
-  "wh": [
-   1520,
-   2942
-  ],
   "imgr": "a-15-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1520,
+   2942
   ],
   "whr": [
    1520,
@@ -278,13 +278,13 @@
   "id": "a-16",
   "nombre": "Código Civil · Artículo 16",
   "img": "a-16.jpg",
-  "wh": [
-   1075,
-   1286
-  ],
   "imgr": "a-16-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   1286
   ],
   "whr": [
    1075,
@@ -310,12 +310,12 @@
   "id": "a-18",
   "nombre": "Código Civil · Artículo 18",
   "img": "a-18.jpg",
+  "imgr": "a-18-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    136
   ],
-  "imgr": "a-18-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    111
@@ -331,13 +331,13 @@
   "id": "a-19",
   "nombre": "Código Civil · Artículo 19",
   "img": "a-19.jpg",
-  "wh": [
-   1075,
-   376
-  ],
   "imgr": "a-19-r.jpg",
   "ap": [
    2
+  ],
+  "wh": [
+   1075,
+   376
   ],
   "whr": [
    1075,
@@ -372,12 +372,12 @@
   "id": "a-23",
   "nombre": "Código Civil · Artículo 23",
   "img": "a-23.jpg",
+  "imgr": "a-23-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    374
   ],
-  "imgr": "a-23-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    234
@@ -401,12 +401,12 @@
   "id": "a-27",
   "nombre": "Código Civil · Artículo 27",
   "img": "a-27.jpg",
+  "imgr": "a-27-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    660
   ],
-  "imgr": "a-27-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    128
@@ -440,12 +440,12 @@
   "id": "a-31",
   "nombre": "Código Civil · Artículo 31",
   "img": "a-31.jpg",
+  "imgr": "a-31-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    110
   ],
-  "imgr": "a-31-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    87
@@ -461,12 +461,12 @@
   "id": "a-32",
   "nombre": "Código Civil · Artículo 32",
   "img": "a-32.jpg",
+  "imgr": "a-32-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    223
   ],
-  "imgr": "a-32-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    87
@@ -482,12 +482,12 @@
   "id": "a-33",
   "nombre": "Código Civil · Artículo 33",
   "img": "a-33.jpg",
+  "imgr": "a-33-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    138
   ],
-  "imgr": "a-33-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    94
@@ -503,12 +503,12 @@
   "id": "a-35",
   "nombre": "Código Civil · Artículo 35",
   "img": "a-35.jpg",
+  "imgr": "a-35-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    683
   ],
-  "imgr": "a-35-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    258
@@ -524,12 +524,12 @@
   "id": "a-36",
   "nombre": "Código Civil · Artículo 36",
   "img": "a-36.jpg",
+  "imgr": "a-36-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    198
   ],
-  "imgr": "a-36-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    108
@@ -563,12 +563,12 @@
   "id": "a-39",
   "nombre": "Código Civil · Artículo 39",
   "img": "a-39.jpg",
+  "imgr": "a-39-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    358
   ],
-  "imgr": "a-39-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    87
@@ -602,12 +602,12 @@
   "id": "a-43",
   "nombre": "Código Civil · Artículo 43",
   "img": "a-43.jpg",
+  "imgr": "a-43-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    345
   ],
-  "imgr": "a-43-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    155
@@ -624,15 +624,24 @@
   ]
  },
  {
+  "id": "a-44",
+  "nombre": "Código Civil · Artículo 44",
+  "img": "a-44.jpg",
+  "wh": [
+   1075,
+   164
+  ]
+ },
+ {
   "id": "a-45",
   "nombre": "Código Civil · Artículo 45",
   "img": "a-45.jpg",
+  "imgr": "a-45-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    120
   ],
-  "imgr": "a-45-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    109
@@ -652,12 +661,12 @@
   "id": "a-46",
   "nombre": "Código Civil · Artículo 46",
   "img": "a-46.jpg",
+  "imgr": "a-46-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    254
   ],
-  "imgr": "a-46-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    87
@@ -673,14 +682,14 @@
   "id": "a-47",
   "nombre": "Código Civil · Artículo 47",
   "img": "a-47.jpg",
-  "wh": [
-   1075,
-   208
-  ],
   "imgr": "a-47-r.jpg",
   "ap": [
    2,
    3
+  ],
+  "wh": [
+   1075,
+   208
   ],
   "whr": [
    1075,
@@ -701,12 +710,12 @@
   "id": "a-48",
   "nombre": "Código Civil · Artículo 48",
   "img": "a-48.jpg",
+  "imgr": "a-48-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1307
   ],
-  "imgr": "a-48-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    106
@@ -726,12 +735,12 @@
   "id": "a-49",
   "nombre": "Código Civil · Artículo 49",
   "img": "a-49.jpg",
+  "imgr": "a-49-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    246
   ],
-  "imgr": "a-49-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    148
@@ -751,12 +760,12 @@
   "id": "a-50",
   "nombre": "Código Civil · Artículo 50",
   "img": "a-50.jpg",
+  "imgr": "a-50-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    333
   ],
-  "imgr": "a-50-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    85
@@ -772,14 +781,14 @@
   "id": "a-51",
   "nombre": "Código Civil · Artículo 51",
   "img": "a-51.jpg",
-  "wh": [
-   1075,
-   430
-  ],
   "imgr": "a-51-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   430
   ],
   "whr": [
    1075,
@@ -800,12 +809,12 @@
   "id": "a-52",
   "nombre": "Código Civil · Artículo 52",
   "img": "a-52.jpg",
+  "imgr": "a-52-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    405
   ],
-  "imgr": "a-52-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    267
@@ -843,12 +852,12 @@
   "id": "a-55",
   "nombre": "Código Civil · Artículo 55",
   "img": "a-55.jpg",
+  "imgr": "a-55-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    373
   ],
-  "imgr": "a-55-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    158
@@ -868,12 +877,12 @@
   "id": "a-57",
   "nombre": "Código Civil · Artículo 57",
   "img": "a-57.jpg",
+  "imgr": "a-57-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    279
   ],
-  "imgr": "a-57-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    223
@@ -889,12 +898,12 @@
   "id": "a-58",
   "nombre": "Código Civil · Artículo 58",
   "img": "a-58.jpg",
+  "imgr": "a-58-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    326
   ],
-  "imgr": "a-58-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    83
@@ -910,12 +919,12 @@
   "id": "a-59",
   "nombre": "Código Civil · Artículo 59",
   "img": "a-59.jpg",
+  "imgr": "a-59-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    141
   ],
-  "imgr": "a-59-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    106
@@ -940,12 +949,12 @@
   "id": "a-62",
   "nombre": "Código Civil · Artículo 62",
   "img": "a-62.jpg",
+  "imgr": "a-62-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    199
   ],
-  "imgr": "a-62-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    91
@@ -961,12 +970,12 @@
   "id": "a-63",
   "nombre": "Código Civil · Artículo 63",
   "img": "a-63.jpg",
+  "imgr": "a-63-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    199
   ],
-  "imgr": "a-63-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    193
@@ -995,12 +1004,12 @@
   "id": "a-65",
   "nombre": "Código Civil · Artículo 65",
   "img": "a-65.jpg",
+  "imgr": "a-65-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    589
   ],
-  "imgr": "a-65-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    156
@@ -1038,12 +1047,12 @@
   "id": "a-70",
   "nombre": "Código Civil · Artículo 70",
   "img": "a-70.jpg",
+  "imgr": "a-70-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    108
   ],
-  "imgr": "a-70-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    85
@@ -1068,12 +1077,12 @@
   "id": "a-73",
   "nombre": "Código Civil · Artículo 73",
   "img": "a-73.jpg",
+  "imgr": "a-73-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    367
   ],
-  "imgr": "a-73-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    95
@@ -1089,12 +1098,12 @@
   "id": "a-74",
   "nombre": "Código Civil · Artículo 74",
   "img": "a-74.jpg",
+  "imgr": "a-74-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    231
   ],
-  "imgr": "a-74-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    86
@@ -1110,12 +1119,12 @@
   "id": "a-75",
   "nombre": "Código Civil · Artículo 75",
   "img": "a-75.jpg",
+  "imgr": "a-75-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    251
   ],
-  "imgr": "a-75-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    175
@@ -1135,12 +1144,12 @@
   "id": "a-76",
   "nombre": "Código Civil · Artículo 76",
   "img": "a-76.jpg",
+  "imgr": "a-76-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    339
   ],
-  "imgr": "a-76-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    217
@@ -1160,12 +1169,12 @@
   "id": "a-79",
   "nombre": "Código Civil · Artículo 79",
   "img": "a-79.jpg",
+  "imgr": "a-79-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    172
   ],
-  "imgr": "a-79-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    161
@@ -1185,13 +1194,13 @@
   "id": "a-82",
   "nombre": "Código Civil · Artículo 82",
   "img": "a-82.jpg",
-  "wh": [
-   1075,
-   434
-  ],
   "imgr": "a-82-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   434
   ],
   "whr": [
    1075,
@@ -1217,12 +1226,12 @@
   "id": "a-84",
   "nombre": "Código Civil · Artículo 84",
   "img": "a-84.jpg",
+  "imgr": "a-84-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    524
   ],
-  "imgr": "a-84-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    310
@@ -1256,12 +1265,12 @@
   "id": "a-88",
   "nombre": "Código Civil · Artículo 88",
   "img": "a-88.jpg",
+  "imgr": "a-88-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    246
   ],
-  "imgr": "a-88-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    114
@@ -1277,12 +1286,12 @@
   "id": "a-89",
   "nombre": "Código Civil · Artículo 89",
   "img": "a-89.jpg",
+  "imgr": "a-89-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    380
   ],
-  "imgr": "a-89-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    84
@@ -1307,10 +1316,6 @@
   "id": "a-92",
   "nombre": "Código Civil · Artículo 92",
   "img": "a-92.jpg",
-  "wh": [
-   1075,
-   1098
-  ],
   "imgr": "a-92-r.jpg",
   "ap": [
    1,
@@ -1321,6 +1326,10 @@
    7,
    8,
    10
+  ],
+  "wh": [
+   1075,
+   1098
   ],
   "whr": [
    1075,
@@ -1361,12 +1370,12 @@
   "id": "a-94",
   "nombre": "Código Civil · Artículo 94",
   "img": "a-94.jpg",
+  "imgr": "a-94-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1027
   ],
-  "imgr": "a-94-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    502
@@ -1399,15 +1408,24 @@
   ]
  },
  {
+  "id": "a-96",
+  "nombre": "Código Civil · Artículo 96",
+  "img": "a-96.jpg",
+  "wh": [
+   1075,
+   692
+  ]
+ },
+ {
   "id": "a-97",
   "nombre": "Código Civil · Artículo 97",
   "img": "a-97.jpg",
+  "imgr": "a-97-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    854
   ],
-  "imgr": "a-97-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    376
@@ -1435,12 +1453,12 @@
   "id": "a-98",
   "nombre": "Código Civil · Artículo 98",
   "img": "a-98.jpg",
+  "imgr": "a-98-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    114
   ],
-  "imgr": "a-98-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    86
@@ -1456,12 +1474,12 @@
   "id": "a-101",
   "nombre": "Código Civil · Artículo 101",
   "img": "a-101.jpg",
+  "imgr": "a-101-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2028
   ],
-  "imgr": "a-101-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    220
@@ -1481,12 +1499,12 @@
   "id": "a-102",
   "nombre": "Código Civil · Artículo 102",
   "img": "a-102.jpg",
+  "imgr": "a-102-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    4973
   ],
-  "imgr": "a-102-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    219
@@ -1515,12 +1533,12 @@
   "id": "a-105",
   "nombre": "Código Civil · Artículo 105",
   "img": "a-105.jpg",
+  "imgr": "a-105-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    111
   ],
-  "imgr": "a-105-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    89
@@ -1536,12 +1554,12 @@
   "id": "a-106",
   "nombre": "Código Civil · Artículo 106",
   "img": "a-106.jpg",
+  "imgr": "a-106-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    361
   ],
-  "imgr": "a-106-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    243
@@ -1565,14 +1583,14 @@
   "id": "a-107",
   "nombre": "Código Civil · Artículo 107",
   "img": "a-107.jpg",
-  "wh": [
-   1075,
-   899
-  ],
   "imgr": "a-107-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   899
   ],
   "whr": [
    1075,
@@ -1593,12 +1611,12 @@
   "id": "a-108",
   "nombre": "Código Civil · Artículo 108",
   "img": "a-108.jpg",
+  "imgr": "a-108-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    174
   ],
-  "imgr": "a-108-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    154
@@ -1618,12 +1636,12 @@
   "id": "a-109",
   "nombre": "Código Civil · Artículo 109",
   "img": "a-109.jpg",
+  "imgr": "a-109-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    282
   ],
-  "imgr": "a-109-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    262
@@ -1647,12 +1665,12 @@
   "id": "a-110",
   "nombre": "Código Civil · Artículo 110",
   "img": "a-110.jpg",
+  "imgr": "a-110-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    108
   ],
-  "imgr": "a-110-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    86
@@ -1668,12 +1686,12 @@
   "id": "a-111",
   "nombre": "Código Civil · Artículo 111",
   "img": "a-111.jpg",
+  "imgr": "a-111-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    603
   ],
-  "imgr": "a-111-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    293
@@ -1706,12 +1724,12 @@
   "id": "a-143",
   "nombre": "Código Civil · Artículo 143",
   "img": "a-143.jpg",
+  "imgr": "a-143-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    219
   ],
-  "imgr": "a-143-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    200
@@ -1731,12 +1749,12 @@
   "id": "a-144",
   "nombre": "Código Civil · Artículo 144",
   "img": "a-144.jpg",
+  "imgr": "a-144-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    326
   ],
-  "imgr": "a-144-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    262
@@ -1756,12 +1774,12 @@
   "id": "a-148",
   "nombre": "Código Civil · Artículo 148",
   "img": "a-148.jpg",
+  "imgr": "a-148-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    246
   ],
-  "imgr": "a-148-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    153
@@ -1799,12 +1817,12 @@
   "id": "a-152",
   "nombre": "Código Civil · Artículo 152",
   "img": "a-152.jpg",
+  "imgr": "a-152-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1720
   ],
-  "imgr": "a-152-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    271
@@ -1832,12 +1850,12 @@
   "id": "a-154",
   "nombre": "Código Civil · Artículo 154",
   "img": "a-154.jpg",
+  "imgr": "a-154-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    511
   ],
-  "imgr": "a-154-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    506
@@ -1865,12 +1883,12 @@
   "id": "a-155",
   "nombre": "Código Civil · Artículo 155",
   "img": "a-155.jpg",
+  "imgr": "a-155-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    179
   ],
-  "imgr": "a-155-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    112
@@ -1917,13 +1935,13 @@
   "id": "a-160",
   "nombre": "Código Civil · Artículo 160",
   "img": "a-160.jpg",
-  "wh": [
-   1075,
-   513
-  ],
   "imgr": "a-160-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   513
   ],
   "whr": [
    1075,
@@ -1948,12 +1966,12 @@
   "id": "a-161",
   "nombre": "Código Civil · Artículo 161",
   "img": "a-161.jpg",
+  "imgr": "a-161-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    590
   ],
-  "imgr": "a-161-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    383
@@ -1973,12 +1991,12 @@
   "id": "a-162",
   "nombre": "Código Civil · Artículo 162",
   "img": "a-162.jpg",
+  "imgr": "a-162-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    460
   ],
-  "imgr": "a-162-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    434
@@ -2002,12 +2020,12 @@
   "id": "a-163",
   "nombre": "Código Civil · Artículo 163",
   "img": "a-163.jpg",
+  "imgr": "a-163-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    515
   ],
-  "imgr": "a-163-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    222
@@ -2027,14 +2045,14 @@
   "id": "a-164",
   "nombre": "Código Civil · Artículo 164",
   "img": "a-164.jpg",
-  "wh": [
-   1075,
-   475
-  ],
   "imgr": "a-164-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   475
   ],
   "whr": [
    1075,
@@ -2059,12 +2077,12 @@
   "id": "a-165",
   "nombre": "Código Civil · Artículo 165",
   "img": "a-165.jpg",
+  "imgr": "a-165-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    314
   ],
-  "imgr": "a-165-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    158
@@ -2080,12 +2098,12 @@
   "id": "a-166",
   "nombre": "Código Civil · Artículo 166",
   "img": "a-166.jpg",
+  "imgr": "a-166-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    342
   ],
-  "imgr": "a-166-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    284
@@ -2109,12 +2127,12 @@
   "id": "a-168",
   "nombre": "Código Civil · Artículo 168",
   "img": "a-168.jpg",
+  "imgr": "a-168-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    385
   ],
-  "imgr": "a-168-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    183
@@ -2130,12 +2148,12 @@
   "id": "a-169",
   "nombre": "Código Civil · Artículo 169",
   "img": "a-169.jpg",
+  "imgr": "a-169-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    237
   ],
-  "imgr": "a-169-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    142
@@ -2151,15 +2169,15 @@
   "id": "a-172",
   "nombre": "Código Civil · Artículo 172",
   "img": "a-172.jpg",
-  "wh": [
-   1075,
-   3376
-  ],
   "imgr": "a-172-r.jpg",
   "ap": [
    1,
    2,
    4
+  ],
+  "wh": [
+   1075,
+   3376
   ],
   "whr": [
    1075,
@@ -2209,15 +2227,15 @@
   "id": "a-174",
   "nombre": "Código Civil · Artículo 174",
   "img": "a-174.jpg",
-  "wh": [
-   1075,
-   2398
-  ],
   "imgr": "a-174-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   2398
   ],
   "whr": [
    1075,
@@ -2247,16 +2265,16 @@
   "id": "a-176",
   "nombre": "Código Civil · Artículo 176",
   "img": "a-176.jpg",
-  "wh": [
-   1075,
-   1657
-  ],
   "imgr": "a-176-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   1657
   ],
   "whr": [
    1075,
@@ -2298,14 +2316,14 @@
   "id": "a-178",
   "nombre": "Código Civil · Artículo 178",
   "img": "a-178.jpg",
-  "wh": [
-   1075,
-   1823
-  ],
   "imgr": "a-178-r.jpg",
   "ap": [
    3,
    4
+  ],
+  "wh": [
+   1075,
+   1823
   ],
   "whr": [
    1075,
@@ -2346,10 +2364,6 @@
   "id": "a-180",
   "nombre": "Código Civil · Artículo 180",
   "img": "a-180.jpg",
-  "wh": [
-   1075,
-   1243
-  ],
   "imgr": "a-180-r.jpg",
   "ap": [
    1,
@@ -2358,6 +2372,10 @@
    4,
    5,
    6
+  ],
+  "wh": [
+   1075,
+   1243
   ],
   "whr": [
    1075,
@@ -2382,12 +2400,12 @@
   "id": "a-199",
   "nombre": "Código Civil · Artículo 199",
   "img": "a-199.jpg",
+  "imgr": "a-199-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    198
   ],
-  "imgr": "a-199-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    156
@@ -2407,12 +2425,12 @@
   "id": "a-200",
   "nombre": "Código Civil · Artículo 200",
   "img": "a-200.jpg",
+  "imgr": "a-200-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    304
   ],
-  "imgr": "a-200-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    220
@@ -2432,12 +2450,12 @@
   "id": "a-201",
   "nombre": "Código Civil · Artículo 201",
   "img": "a-201.jpg",
+  "imgr": "a-201-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    133
   ],
-  "imgr": "a-201-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    90
@@ -2453,12 +2471,12 @@
   "id": "a-205",
   "nombre": "Código Civil · Artículo 205",
   "img": "a-205.jpg",
+  "imgr": "a-205-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    138
   ],
-  "imgr": "a-205-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    90
@@ -2474,12 +2492,12 @@
   "id": "a-209",
   "nombre": "Código Civil · Artículo 209",
   "img": "a-209.jpg",
+  "imgr": "a-209-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    182
   ],
-  "imgr": "a-209-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    92
@@ -2504,12 +2522,12 @@
   "id": "a-213",
   "nombre": "Código Civil · Artículo 213",
   "img": "a-213.jpg",
+  "imgr": "a-213-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    313
   ],
-  "imgr": "a-213-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    230
@@ -2533,12 +2551,12 @@
   "id": "a-215",
   "nombre": "Código Civil · Artículo 215",
   "img": "a-215.jpg",
+  "imgr": "a-215-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    112
   ],
-  "imgr": "a-215-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    88
@@ -2563,12 +2581,12 @@
   "id": "a-217",
   "nombre": "Código Civil · Artículo 217",
   "img": "a-217.jpg",
+  "imgr": "a-217-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    419
   ],
-  "imgr": "a-217-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    273
@@ -2597,12 +2615,12 @@
   "id": "a-220",
   "nombre": "Código Civil · Artículo 220",
   "img": "a-220.jpg",
+  "imgr": "a-220-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    145
   ],
-  "imgr": "a-220-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    89
@@ -2618,12 +2636,12 @@
   "id": "a-222",
   "nombre": "Código Civil · Artículo 222",
   "img": "a-222.jpg",
+  "imgr": "a-222-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    389
   ],
-  "imgr": "a-222-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    167
@@ -2643,12 +2661,12 @@
   "id": "a-223",
   "nombre": "Código Civil · Artículo 223",
   "img": "a-223.jpg",
+  "imgr": "a-223-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    451
   ],
-  "imgr": "a-223-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    85
@@ -2673,12 +2691,12 @@
   "id": "a-226",
   "nombre": "Código Civil · Artículo 226",
   "img": "a-226.jpg",
+  "imgr": "a-226-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    336
   ],
-  "imgr": "a-226-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    307
@@ -2702,12 +2720,12 @@
   "id": "a-228",
   "nombre": "Código Civil · Artículo 228",
   "img": "a-228.jpg",
+  "imgr": "a-228-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    370
   ],
-  "imgr": "a-228-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    157
@@ -2727,12 +2745,12 @@
   "id": "a-231",
   "nombre": "Código Civil · Artículo 231",
   "img": "a-231.jpg",
+  "imgr": "a-231-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    348
   ],
-  "imgr": "a-231-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    302
@@ -2774,12 +2792,12 @@
   "id": "a-234",
   "nombre": "Código Civil · Artículo 234",
   "img": "a-234.jpg",
+  "imgr": "a-234-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    398
   ],
-  "imgr": "a-234-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    145
@@ -2795,12 +2813,12 @@
   "id": "a-235",
   "nombre": "Código Civil · Artículo 235",
   "img": "a-235.jpg",
+  "imgr": "a-235-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    310
   ],
-  "imgr": "a-235-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    158
@@ -2816,13 +2834,13 @@
   "id": "a-237",
   "nombre": "Código Civil · Artículo 237",
   "img": "a-237.jpg",
-  "wh": [
-   1075,
-   391
-  ],
   "imgr": "a-237-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   391
   ],
   "whr": [
    1075,
@@ -2843,12 +2861,12 @@
   "id": "a-239",
   "nombre": "Código Civil · Artículo 239",
   "img": "a-239.jpg",
+  "imgr": "a-239-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    239
   ],
-  "imgr": "a-239-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    187
@@ -2868,12 +2886,12 @@
   "id": "a-240",
   "nombre": "Código Civil · Artículo 240",
   "img": "a-240.jpg",
+  "imgr": "a-240-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    128
   ],
-  "imgr": "a-240-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    114
@@ -2893,12 +2911,12 @@
   "id": "a-241",
   "nombre": "Código Civil · Artículo 241",
   "img": "a-241.jpg",
+  "imgr": "a-241-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    136
   ],
-  "imgr": "a-241-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    90
@@ -2914,12 +2932,12 @@
   "id": "a-242",
   "nombre": "Código Civil · Artículo 242",
   "img": "a-242.jpg",
+  "imgr": "a-242-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    147
   ],
-  "imgr": "a-242-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    114
@@ -2939,12 +2957,12 @@
   "id": "a-243",
   "nombre": "Código Civil · Artículo 243",
   "img": "a-243.jpg",
+  "imgr": "a-243-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    142
   ],
-  "imgr": "a-243-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    118
@@ -2960,12 +2978,12 @@
   "id": "a-244",
   "nombre": "Código Civil · Artículo 244",
   "img": "a-244.jpg",
+  "imgr": "a-244-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    332
   ],
-  "imgr": "a-244-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    156
@@ -2985,12 +3003,12 @@
   "id": "a-245",
   "nombre": "Código Civil · Artículo 245",
   "img": "a-245.jpg",
+  "imgr": "a-245-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    113
   ],
-  "imgr": "a-245-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    89
@@ -3015,12 +3033,12 @@
   "id": "a-249",
   "nombre": "Código Civil · Artículo 249",
   "img": "a-249.jpg",
+  "imgr": "a-249-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    576
   ],
-  "imgr": "a-249-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    234
@@ -3044,12 +3062,12 @@
   "id": "a-250",
   "nombre": "Código Civil · Artículo 250",
   "img": "a-250.jpg",
+  "imgr": "a-250-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    666
   ],
-  "imgr": "a-250-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    334
@@ -3081,12 +3099,12 @@
   "id": "a-251",
   "nombre": "Código Civil · Artículo 251",
   "img": "a-251.jpg",
+  "imgr": "a-251-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    393
   ],
-  "imgr": "a-251-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    248
@@ -3110,12 +3128,12 @@
   "id": "a-253",
   "nombre": "Código Civil · Artículo 253",
   "img": "a-253.jpg",
+  "imgr": "a-253-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    634
   ],
-  "imgr": "a-253-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    450
@@ -3175,12 +3193,12 @@
   "id": "a-259",
   "nombre": "Código Civil · Artículo 259",
   "img": "a-259.jpg",
+  "imgr": "a-259-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    184
   ],
-  "imgr": "a-259-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    85
@@ -3214,12 +3232,12 @@
   "id": "a-264",
   "nombre": "Código Civil · Artículo 264",
   "img": "a-264.jpg",
+  "imgr": "a-264-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    457
   ],
-  "imgr": "a-264-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    267
@@ -3243,12 +3261,12 @@
   "id": "a-267",
   "nombre": "Código Civil · Artículo 267",
   "img": "a-267.jpg",
+  "imgr": "a-267-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    665
   ],
-  "imgr": "a-267-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    501
@@ -3289,12 +3307,12 @@
   "id": "a-269",
   "nombre": "Código Civil · Artículo 269",
   "img": "a-269.jpg",
+  "imgr": "a-269-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    432
   ],
-  "imgr": "a-269-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    260
@@ -3345,12 +3363,12 @@
   "id": "a-273",
   "nombre": "Código Civil · Artículo 273",
   "img": "a-273.jpg",
+  "imgr": "a-273-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    137
   ],
-  "imgr": "a-273-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    91
@@ -3366,15 +3384,15 @@
   "id": "a-275",
   "nombre": "Código Civil · Artículo 275",
   "img": "a-275.jpg",
-  "wh": [
-   1075,
-   728
-  ],
   "imgr": "a-275-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   728
   ],
   "whr": [
    1075,
@@ -3408,12 +3426,12 @@
   "id": "a-277",
   "nombre": "Código Civil · Artículo 277",
   "img": "a-277.jpg",
+  "imgr": "a-277-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    200
   ],
-  "imgr": "a-277-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    160
@@ -3433,12 +3451,12 @@
   "id": "a-278",
   "nombre": "Código Civil · Artículo 278",
   "img": "a-278.jpg",
+  "imgr": "a-278-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    436
   ],
-  "imgr": "a-278-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    224
@@ -3462,12 +3480,12 @@
   "id": "a-279",
   "nombre": "Código Civil · Artículo 279",
   "img": "a-279.jpg",
+  "imgr": "a-279-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    445
   ],
-  "imgr": "a-279-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    335
@@ -3483,12 +3501,12 @@
   "id": "a-282",
   "nombre": "Código Civil · Artículo 282",
   "img": "a-282.jpg",
+  "imgr": "a-282-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    332
   ],
-  "imgr": "a-282-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    119
@@ -3504,12 +3522,12 @@
   "id": "a-283",
   "nombre": "Código Civil · Artículo 283",
   "img": "a-283.jpg",
+  "imgr": "a-283-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    377
   ],
-  "imgr": "a-283-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    157
@@ -3529,12 +3547,12 @@
   "id": "a-284",
   "nombre": "Código Civil · Artículo 284",
   "img": "a-284.jpg",
+  "imgr": "a-284-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    195
   ],
-  "imgr": "a-284-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    134
@@ -3550,12 +3568,12 @@
   "id": "a-285",
   "nombre": "Código Civil · Artículo 285",
   "img": "a-285.jpg",
+  "imgr": "a-285-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    415
   ],
-  "imgr": "a-285-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    169
@@ -3670,12 +3688,12 @@
   "id": "a-28",
   "nombre": "Código Civil · Artículo 28",
   "img": "a-28.jpg",
+  "imgr": "a-28-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    236
   ],
-  "imgr": "a-28-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    138

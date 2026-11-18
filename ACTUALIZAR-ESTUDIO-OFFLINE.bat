@@ -8,6 +8,7 @@ copy /Y test-oficial-conocimiento.html ESTUDIO-OFFLINE\ >nul
 copy /Y test-oficial-ingles.html ESTUDIO-OFFLINE\ >nul
 rem Psicotecnicos del test de ingles: imagenes de las preguntas
 xcopy /E /I /Y /Q psicotecnicos ESTUDIO-OFFLINE\psicotecnicos >nul
+xcopy /E /I /Y /Q ingles-forma ESTUDIO-OFFLINE\ingles-forma >nul
 rem Exprés subrayado: la pagina, sus capturas/datos/cuadros y los Exprés de Esquemas (expres\tN.js) que usa para imprimir
 copy /Y expres-subrayado.html ESTUDIO-OFFLINE\ >nul
 copy /Y estado-temas.js ESTUDIO-OFFLINE\ >nul

@@ -1,0 +1,5147 @@
+[
+ {
+  "qid": "FM001",
+  "t": 2,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-001.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-001-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0004"
+ },
+ {
+  "qid": "FM002",
+  "t": 38,
+  "stem": "She decided to discussion.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-002.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-002-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0006"
+ },
+ {
+  "qid": "FM003",
+  "t": 3,
+  "stem": "The Council is virtually unknown as",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-003.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-003-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0011"
+ },
+ {
+  "qid": "FM004",
+  "t": 32,
+  "stem": "If they train.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-004.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-004-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0019"
+ },
+ {
+  "qid": "FM005",
+  "t": 24,
+  "stem": "She didn't study.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-005.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-005-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0022"
+ },
+ {
+  "qid": "FM006",
+  "t": 43,
+  "stem": "Would you like ... spice on your pizza?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-006.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-006-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0024"
+ },
+ {
+  "qid": "FM007",
+  "t": 22,
+  "stem": "There has been an increase road accidents recently.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-007.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-007-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0028"
+ },
+ {
+  "qid": "FM008",
+  "t": 4,
+  "stem": "Those children ... too spoiled. Their parents buy them toys every week.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-008.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-008-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0030"
+ },
+ {
+  "qid": "FM009",
+  "t": 3,
+  "stem": "Are you interested in",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-009.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-009-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0031"
+ },
+ {
+  "qid": "FM010",
+  "t": 43,
+  "stem": "The meeting, to great success",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-010.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-010-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0032"
+ },
+ {
+  "qid": "FM011",
+  "t": 32,
+  "stem": "If you ... a king, what ...?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-011.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-011-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0033"
+ },
+ {
+  "qid": "FM012",
+  "t": 34,
+  "stem": "Choose the correct sentence:",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-012.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-012-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0034"
+ },
+ {
+  "qid": "FM013",
+  "t": 13,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-013.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-013-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0037"
+ },
+ {
+  "qid": "FM014",
+  "t": 43,
+  "stem": "The situation time.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-014.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-014-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0045"
+ },
+ {
+  "qid": "FM015",
+  "t": 43,
+  "stem": "writing project.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-015.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-015-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0047"
+ },
+ {
+  "qid": "FM016",
+  "t": 5,
+  "stem": "Today was the everything went wrong!",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-016.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-016-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0049"
+ },
+ {
+  "qid": "FM017",
+  "t": 43,
+  "stem": "After the fight, he got a",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-017.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-017-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0054"
+ },
+ {
+  "qid": "FM018",
+  "t": 34,
+  "stem": "Susan boyfriend.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-018.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-018-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0055"
+ },
+ {
+  "qid": "FM019",
+  "t": 2,
+  "stem": "The plane to pick you up.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-019.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-019-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0066"
+ },
+ {
+  "qid": "FM020",
+  "t": 20,
+  "stem": "-Hey, look at that cave! -Wow!",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-020.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-020-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0072"
+ },
+ {
+  "qid": "FM021",
+  "t": 12,
+  "stem": "Don't catch those shoes, they are",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-021.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-021-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0181"
+ },
+ {
+  "qid": "FM022",
+  "t": 34,
+  "stem": "These exercises Will",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-022.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-022-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0079"
+ },
+ {
+  "qid": "FM023",
+  "t": 13,
+  "stem": "I have",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-023.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-023-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0085"
+ },
+ {
+  "qid": "FM024",
+  "t": 21,
+  "stem": "This is the",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-024.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-024-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0086"
+ },
+ {
+  "qid": "FM025",
+  "t": 14,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-025.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-025-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0088"
+ },
+ {
+  "qid": "FM026",
+  "t": 11,
+  "stem": "l'm late,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-026.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-026-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0093"
+ },
+ {
+  "qid": "FM027",
+  "t": 6,
+  "stem": "Mandy eats to work in Italy, so she",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-027.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-027-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0096"
+ },
+ {
+  "qid": "FM028",
+  "t": 21,
+  "stem": "I am not",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-028.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-028-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0087"
+ },
+ {
+  "qid": "FM029",
+  "t": 12,
+  "stem": "This is",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-029.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-029-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0106"
+ },
+ {
+  "qid": "FM030",
+  "t": 2,
+  "stem": "Which is correct?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-030.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-030-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0108"
+ },
+ {
+  "qid": "FM031",
+  "t": 17,
+  "stem": "When Sean arrived, he realized he present.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-031.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-031-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0109"
+ },
+ {
+  "qid": "FM032",
+  "t": 23,
+  "stem": "You can go out",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-032.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-032-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0110"
+ },
+ {
+  "qid": "FM033",
+  "t": 36,
+  "stem": "Rewrite this sentence in reported speech: Katy told us: \"l saw Julia yesterday\".",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-033.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-033-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0115"
+ },
+ {
+  "qid": "FM034",
+  "t": 16,
+  "stem": "My colleagues break.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-034.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-034-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0119"
+ },
+ {
+  "qid": "FM035",
+  "t": 14,
+  "stem": "Which is correct?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-035.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-035-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0005"
+ },
+ {
+  "qid": "FM036",
+  "t": 36,
+  "stem": "The receptionist asked them: \"Have you stayed in this hotel before?\" Turn into reported speech: The receptionist asked them",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-036.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-036-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0009"
+ },
+ {
+  "qid": "FM037",
+  "t": 43,
+  "stem": "How many legs",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-037.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-037-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0011"
+ },
+ {
+  "qid": "FM038",
+  "t": 19,
+  "stem": "She's ... for more than 4 hours. She must be tired.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-038.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-038-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0012"
+ },
+ {
+  "qid": "FM039",
+  "t": 2,
+  "stem": "Choose the correct sentence:",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-039.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-039-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0015"
+ },
+ {
+  "qid": "FM040",
+  "t": 2,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-040.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-040-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0017"
+ },
+ {
+  "qid": "FM041",
+  "t": 9,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-041.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-041-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0022"
+ },
+ {
+  "qid": "FM042",
+  "t": 4,
+  "stem": "Your trousers",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-042.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-042-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0025"
+ },
+ {
+  "qid": "FM043",
+  "t": 43,
+  "stem": "I am very kind with other people,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-043.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-043-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0026"
+ },
+ {
+  "qid": "FM044",
+  "t": 5,
+  "stem": "My father is my role model because he's ... honest person.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-044.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-044-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0029"
+ },
+ {
+  "qid": "FM045",
+  "t": 43,
+  "stem": "The suspect avoided refused",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-045.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-045-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0032"
+ },
+ {
+  "qid": "FM046",
+  "t": 13,
+  "stem": "I need",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-046.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-046-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0036"
+ },
+ {
+  "qid": "FM047",
+  "t": 38,
+  "stem": "Peggy is very fond languages.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-047.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-047-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0039"
+ },
+ {
+  "qid": "FM048",
+  "t": 2,
+  "stem": "entertaining.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-048.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-048-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0047"
+ },
+ {
+  "qid": "FM049",
+  "t": 22,
+  "stem": "Please clear up this room! l'm fed up mess!",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-049.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-049-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0049"
+ },
+ {
+  "qid": "FM050",
+  "t": 28,
+  "stem": "You look tired. You",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-050.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-050-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0055"
+ },
+ {
+  "qid": "FM051",
+  "t": 12,
+  "stem": "Why are you looking at",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-051.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-051-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0062"
+ },
+ {
+  "qid": "FM052",
+  "t": 13,
+  "stem": "Unfortunately, people from that area have",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-052.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-052-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0067"
+ },
+ {
+  "qid": "FM053",
+  "t": 22,
+  "stem": "They were always so good",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-053.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-053-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0073"
+ },
+ {
+  "qid": "FM054",
+  "t": 9,
+  "stem": "beach.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-054.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-054-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0081"
+ },
+ {
+  "qid": "FM055",
+  "t": 43,
+  "stem": "A: 1'11 probably go climbing. B'",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-055.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-055-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0082"
+ },
+ {
+  "qid": "FM056",
+  "t": 2,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-056.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-056-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0012"
+ },
+ {
+  "qid": "FM057",
+  "t": 21,
+  "stem": "That teacher isn't",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-057.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-057-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0087"
+ },
+ {
+  "qid": "FM058",
+  "t": 6,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-058.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-058-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0093"
+ },
+ {
+  "qid": "FM059",
+  "t": 22,
+  "stem": "yours.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-059.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-059-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0098"
+ },
+ {
+  "qid": "FM060",
+  "t": 17,
+  "stem": "Mary a box of chocolates for my birthday when I saw her at the mall.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-060.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-060-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0100"
+ },
+ {
+  "qid": "FM061",
+  "t": 2,
+  "stem": "My niece brought the cake,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-061.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-061-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0105"
+ },
+ {
+  "qid": "FM062",
+  "t": 36,
+  "stem": "Rewrite this sentence in reported speech. The teacher told us: \"Give me your essays tomorrow.\" The teacher told us",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-062.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-062-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0108"
+ },
+ {
+  "qid": "FM063",
+  "t": 2,
+  "stem": "My sister ... thirty-seven candles on her last birthday.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-063.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-063-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0111"
+ },
+ {
+  "qid": "FM064",
+  "t": 2,
+  "stem": "Did the Old man",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-064.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-064-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0112"
+ },
+ {
+  "qid": "FM065",
+  "t": 2,
+  "stem": "Did the Old man",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-065.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-065-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0113"
+ },
+ {
+  "qid": "FM066",
+  "t": 23,
+  "stem": "The match was cancelled",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-066.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-066-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0115"
+ },
+ {
+  "qid": "FM067",
+  "t": 13,
+  "stem": "I need",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-067.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-067-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0118"
+ },
+ {
+  "qid": "FM068",
+  "t": 22,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-068.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-068-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0121"
+ },
+ {
+  "qid": "FM069",
+  "t": 14,
+  "stem": "measures.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-069.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-069-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0123"
+ },
+ {
+  "qid": "FM070",
+  "t": 34,
+  "stem": "The bodies",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-070.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-070-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0126"
+ },
+ {
+  "qid": "FM071",
+  "t": 3,
+  "stem": "Tom and Christine are",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-071.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-071-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0131"
+ },
+ {
+  "qid": "FM072",
+  "t": 12,
+  "stem": "This cat is",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-072.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-072-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0135"
+ },
+ {
+  "qid": "FM073",
+  "t": 38,
+  "stem": "The company had to deal after the product launch.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-073.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-073-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0005"
+ },
+ {
+  "qid": "FM074",
+  "t": 23,
+  "stem": "We couldn't go to the beach",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-074.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-074-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0012"
+ },
+ {
+  "qid": "FM075",
+  "t": 34,
+  "stem": "The Coliseum centuries ago.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-075.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-075-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0014"
+ },
+ {
+  "qid": "FM076",
+  "t": 43,
+  "stem": "I remembered the house.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-076.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-076-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0016"
+ },
+ {
+  "qid": "FM077",
+  "t": 11,
+  "stem": "Don't talk to him like that",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-077.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-077-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0020"
+ },
+ {
+  "qid": "FM078",
+  "t": 22,
+  "stem": "The last Wins against Oviedo and Zaragoza have increased their chances",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-078.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-078-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0079"
+ },
+ {
+  "qid": "FM079",
+  "t": 14,
+  "stem": "Have you ever",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-079.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-079-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0026"
+ },
+ {
+  "qid": "FM080",
+  "t": 24,
+  "stem": "He was injured. running.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-080.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-080-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0029"
+ },
+ {
+  "qid": "FM081",
+  "t": 13,
+  "stem": "Are there ... tools to fix my bike?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-081.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-081-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0031"
+ },
+ {
+  "qid": "FM082",
+  "t": 43,
+  "stem": "She tried work.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-082.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-082-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0036"
+ },
+ {
+  "qid": "FM083",
+  "t": 17,
+  "stem": "The teacher asked if class.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-083.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-083-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0041"
+ },
+ {
+  "qid": "FM084",
+  "t": 22,
+  "stem": "We are going to this new restaurant. It is located",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-084.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-084-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0042"
+ },
+ {
+  "qid": "FM085",
+  "t": 17,
+  "stem": "When I saw you, I knew I",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-085.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-085-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0051"
+ },
+ {
+  "qid": "FM086",
+  "t": 43,
+  "stem": "We can't go to Laura's place because she",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-086.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-086-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0052"
+ },
+ {
+  "qid": "FM087",
+  "t": 12,
+  "stem": "My sister and I live with",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-087.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-087-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0053"
+ },
+ {
+  "qid": "FM088",
+  "t": 23,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-088.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-088-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0054"
+ },
+ {
+  "qid": "FM089",
+  "t": 13,
+  "stem": "I have",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-089.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-089-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0056"
+ },
+ {
+  "qid": "FM090",
+  "t": 43,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-090.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-090-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0142"
+ },
+ {
+  "qid": "FM091",
+  "t": 22,
+  "stem": "Lisa is afraid",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-091.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-091-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0062"
+ },
+ {
+  "qid": "FM092",
+  "t": 28,
+  "stem": "I needn't you to help me,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-092.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-092-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0065"
+ },
+ {
+  "qid": "FM093",
+  "t": 11,
+  "stem": "l'm cleaning in this moment",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-093.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-093-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0077"
+ },
+ {
+  "qid": "FM094",
+  "t": 7,
+  "stem": "Amy",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-094.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-094-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0081"
+ },
+ {
+  "qid": "FM095",
+  "t": 31,
+  "stem": "You ... wet if you ... an umbrella with you.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-095.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-095-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0092"
+ },
+ {
+  "qid": "FM096",
+  "t": 22,
+  "stem": "You have to believe ... yourself. That's the key to success.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-096.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-096-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0064"
+ },
+ {
+  "qid": "FM097",
+  "t": 43,
+  "stem": "Gazpacho is my favourite ...",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-097.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-097-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0100"
+ },
+ {
+  "qid": "FM098",
+  "t": 20,
+  "stem": "I can't understand her, she speaks",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-098.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-098-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0101"
+ },
+ {
+  "qid": "FM099",
+  "t": 2,
+  "stem": "It my first time as an undercover agent. I Plain clothes before.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-099.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-099-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0103"
+ },
+ {
+  "qid": "FM100",
+  "t": 23,
+  "stem": "I couldn't go to work",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-100.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-100-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0108"
+ },
+ {
+  "qid": "FM101",
+  "t": 6,
+  "stem": "They promise they now on.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-101.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-101-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0110"
+ },
+ {
+  "qid": "FM102",
+  "t": 31,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-102.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-102-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0112"
+ },
+ {
+  "qid": "FM103",
+  "t": 21,
+  "stem": "The boss is the same age",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-103.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-103-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0115"
+ },
+ {
+  "qid": "FM104",
+  "t": 2,
+  "stem": "O She",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-104.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-104-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0117"
+ },
+ {
+  "qid": "FM105",
+  "t": 5,
+  "stem": "This is the this semester.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-105.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-105-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0118"
+ },
+ {
+  "qid": "FM106",
+  "t": 34,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-106.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-106-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0123"
+ },
+ {
+  "qid": "FM107",
+  "t": 7,
+  "stem": "They",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-107.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-107-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0124"
+ },
+ {
+  "qid": "FM108",
+  "t": 25,
+  "stem": "The academy",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-108.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-108-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0139"
+ },
+ {
+  "qid": "FM109",
+  "t": 5,
+  "stem": "The best year to run a marathon was I was prepared.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-109.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-109-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0141"
+ },
+ {
+  "qid": "FM110",
+  "t": 2,
+  "stem": "Christine test.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-110.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-110-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0004"
+ },
+ {
+  "qid": "FM111",
+  "t": 23,
+  "stem": "I Will inform my superior information.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-111.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-111-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0006"
+ },
+ {
+  "qid": "FM112",
+  "t": 22,
+  "stem": "They have just arrived",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-112.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-112-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0010"
+ },
+ {
+  "qid": "FM113",
+  "t": 7,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-113.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-113-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0016"
+ },
+ {
+  "qid": "FM114",
+  "t": 25,
+  "stem": "All those questions",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-114.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-114-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0023"
+ },
+ {
+  "qid": "FM115",
+  "t": 4,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-115.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-115-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0028"
+ },
+ {
+  "qid": "FM116",
+  "t": 8,
+  "stem": "Let's go to the pub,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-116.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-116-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0032"
+ },
+ {
+  "qid": "FM117",
+  "t": 34,
+  "stem": "The house workers .",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-117.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-117-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0039"
+ },
+ {
+  "qid": "FM118",
+  "t": 13,
+  "stem": "Choose the correct option:",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-118.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-118-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0041"
+ },
+ {
+  "qid": "FM119",
+  "t": 2,
+  "stem": "l'm looking forward to",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-119.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-119-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0042"
+ },
+ {
+  "qid": "FM120",
+  "t": 1,
+  "stem": "What",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-120.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-120-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0045"
+ },
+ {
+  "qid": "FM121",
+  "t": 22,
+  "stem": "Mike was sitting me.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-121.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-121-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0046"
+ },
+ {
+  "qid": "FM122",
+  "t": 32,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-122.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-122-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0057"
+ },
+ {
+  "qid": "FM123",
+  "t": 1,
+  "stem": "Which ones",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-123.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-123-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0045"
+ },
+ {
+  "qid": "FM124",
+  "t": 43,
+  "stem": "I have ... down and have ... myself.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-124.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-124-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0068"
+ },
+ {
+  "qid": "FM125",
+  "t": 36,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-125.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-125-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0072"
+ },
+ {
+  "qid": "FM126",
+  "t": 22,
+  "stem": "The watch was",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-126.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-126-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0074"
+ },
+ {
+  "qid": "FM127",
+  "t": 36,
+  "stem": "Richard told me: \"1'm having the interview at five o 'clock\". Turn into reported speech: Richard told me",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-127.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-127-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0059"
+ },
+ {
+  "qid": "FM128",
+  "t": 43,
+  "stem": "She avoided",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-128.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-128-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0078"
+ },
+ {
+  "qid": "FM129",
+  "t": 1,
+  "stem": "They have a dog,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-129.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-129-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0083"
+ },
+ {
+  "qid": "FM130",
+  "t": 25,
+  "stem": "We",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-130.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-130-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0084"
+ },
+ {
+  "qid": "FM131",
+  "t": 31,
+  "stem": "Unless I",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-131.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-131-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0090"
+ },
+ {
+  "qid": "FM132",
+  "t": 14,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-132.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-132-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0095"
+ },
+ {
+  "qid": "FM133",
+  "t": 2,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-133.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-133-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0104"
+ },
+ {
+  "qid": "FM134",
+  "t": 23,
+  "stem": "She couldn't attend the meeting",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-134.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-134-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0106"
+ },
+ {
+  "qid": "FM135",
+  "t": 1,
+  "stem": "It ... me long to get ready in the mornings.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-135.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-135-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0080"
+ },
+ {
+  "qid": "FM136",
+  "t": 2,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-136.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-136-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0117"
+ },
+ {
+  "qid": "FM137",
+  "t": 37,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-137.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-137-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0124"
+ },
+ {
+  "qid": "FM138",
+  "t": 12,
+  "stem": "The house",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-138.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-138-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0130"
+ },
+ {
+  "qid": "FM139",
+  "t": 21,
+  "stem": "The performance os the class was years's.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-139.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-139-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0131"
+ },
+ {
+  "qid": "FM140",
+  "t": 2,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-140.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-140-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0137"
+ },
+ {
+  "qid": "FM141",
+  "t": 34,
+  "stem": "life.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-141.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-141-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0164"
+ },
+ {
+  "qid": "FM142",
+  "t": 4,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-142.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-142-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0167"
+ },
+ {
+  "qid": "FM143",
+  "t": 2,
+  "stem": "season?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-143.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-143-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0170"
+ },
+ {
+  "qid": "FM144",
+  "t": 2,
+  "stem": "I didn't ... I was wrong.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-144.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-144-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0171"
+ },
+ {
+  "qid": "FM145",
+  "t": 25,
+  "stem": "She",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-145.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-145-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0173"
+ },
+ {
+  "qid": "FM146",
+  "t": 43,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-146.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-146-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0177"
+ },
+ {
+  "qid": "FM147",
+  "t": 2,
+  "stem": "— How",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-147.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-147-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0187"
+ },
+ {
+  "qid": "FM148",
+  "t": 15,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-148.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-148-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0193"
+ },
+ {
+  "qid": "FM149",
+  "t": 15,
+  "stem": "We met",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-149.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-149-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0121"
+ },
+ {
+  "qid": "FM150",
+  "t": 43,
+  "stem": "At that point we had no time",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-150.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-150-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0195"
+ },
+ {
+  "qid": "FM151",
+  "t": 15,
+  "stem": "My parents got married twenty years",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-151.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-151-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0201"
+ },
+ {
+  "qid": "FM152",
+  "t": 7,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-152.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-152-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0202"
+ },
+ {
+  "qid": "FM153",
+  "t": 38,
+  "stem": "It's very difficult for her to get",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-153.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-153-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0203"
+ },
+ {
+  "qid": "FM154",
+  "t": 23,
+  "stem": "I was very tired.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-154.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-154-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0205"
+ },
+ {
+  "qid": "FM155",
+  "t": 21,
+  "stem": "It was with sharks.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-155.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-155-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0209"
+ },
+ {
+  "qid": "FM156",
+  "t": 34,
+  "stem": "A safety helmet",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-156.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-156-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0048"
+ },
+ {
+  "qid": "FM157",
+  "t": 21,
+  "stem": "What is from home?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-157.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-157-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0229"
+ },
+ {
+  "qid": "FM158",
+  "t": 28,
+  "stem": "According to your experience, after being vaccinated?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-158.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-158-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0234"
+ },
+ {
+  "qid": "FM159",
+  "t": 7,
+  "stem": "The cat was eating my food while I ... on the phone.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-159.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-159-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0235"
+ },
+ {
+  "qid": "FM160",
+  "t": 43,
+  "stem": "Were you tired last week? Yes, I",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-160.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-160-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0238"
+ },
+ {
+  "qid": "FM161",
+  "t": 7,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-161.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-161-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0239"
+ },
+ {
+  "qid": "FM162",
+  "t": 43,
+  "stem": "When l'm working at home, I like to look out",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-162.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-162-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0240"
+ },
+ {
+  "qid": "FM163",
+  "t": 3,
+  "stem": "He has",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-163.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-163-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0241"
+ },
+ {
+  "qid": "FM164",
+  "t": 1,
+  "stem": "Choose the correct option:",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-164.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-164-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0242"
+ },
+ {
+  "qid": "FM165",
+  "t": 28,
+  "stem": "She can speak 4 languages,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-165.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-165-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0058"
+ },
+ {
+  "qid": "FM166",
+  "t": 21,
+  "stem": "Thomas is",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-166.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-166-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0096"
+ },
+ {
+  "qid": "FM167",
+  "t": 28,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-167.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-167-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0249"
+ },
+ {
+  "qid": "FM168",
+  "t": 16,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-168.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-168-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0251"
+ },
+ {
+  "qid": "FM169",
+  "t": 43,
+  "stem": "He stopped continue.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-169.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-169-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0038"
+ },
+ {
+  "qid": "FM170",
+  "t": 1,
+  "stem": "They really like horror films,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-170.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-170-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0007"
+ },
+ {
+  "qid": "FM171",
+  "t": 31,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-171.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-171-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0010"
+ },
+ {
+  "qid": "FM172",
+  "t": 38,
+  "stem": "I don't understand her. Can you make 's saying?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-172.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-172-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0018"
+ },
+ {
+  "qid": "FM173",
+  "t": 32,
+  "stem": "If she time.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-173.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-173-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0021"
+ },
+ {
+  "qid": "FM174",
+  "t": 2,
+  "stem": "Last weekend I without stopping.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-174.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-174-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0028"
+ },
+ {
+  "qid": "FM175",
+  "t": 43,
+  "stem": "How ... have you been waiting?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-175.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-175-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0029"
+ },
+ {
+  "qid": "FM176",
+  "t": 43,
+  "stem": ", -You didn't really see it, did you? - Of course I",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-176.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-176-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0030"
+ },
+ {
+  "qid": "FM177",
+  "t": 28,
+  "stem": "I think you were rude to Pete. You",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-177.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-177-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0031"
+ },
+ {
+  "qid": "FM178",
+  "t": 22,
+  "stem": "I found my glasses",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-178.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-178-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0033"
+ },
+ {
+  "qid": "FM179",
+  "t": 12,
+  "stem": "Mom, can you remind me leaving?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-179.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-179-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0034"
+ },
+ {
+  "qid": "FM180",
+  "t": 37,
+  "stem": "The mam renowned scientist.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-180.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-180-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0035"
+ },
+ {
+  "qid": "FM181",
+  "t": 15,
+  "stem": "He's been a president of Senegal ...",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-181.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-181-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0043"
+ },
+ {
+  "qid": "FM182",
+  "t": 21,
+  "stem": "All these children are nice, but ours are",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-182.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-182-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0051"
+ },
+ {
+  "qid": "FM183",
+  "t": 6,
+  "stem": "Look! The children",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-183.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-183-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0054"
+ },
+ {
+  "qid": "FM184",
+  "t": 31,
+  "stem": "If we",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-184.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-184-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0056"
+ },
+ {
+  "qid": "FM185",
+  "t": 7,
+  "stem": "The plane",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-185.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-185-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0063"
+ },
+ {
+  "qid": "FM186",
+  "t": 2,
+  "stem": "Jimmy behaved badly, so I ... him to play videogames.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-186.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-186-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0068"
+ },
+ {
+  "qid": "FM187",
+  "t": 28,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-187.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-187-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0070"
+ },
+ {
+  "qid": "FM188",
+  "t": 22,
+  "stem": "The project was completed challenges.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-188.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-188-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0075"
+ },
+ {
+  "qid": "FM189",
+  "t": 24,
+  "stem": "She was so tired she fell asleep watching tv.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-189.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-189-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0080"
+ },
+ {
+  "qid": "FM190",
+  "t": 17,
+  "stem": "Choose the correct sentence:",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-190.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-190-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0085"
+ },
+ {
+  "qid": "FM191",
+  "t": 20,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-191.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-191-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0088"
+ },
+ {
+  "qid": "FM192",
+  "t": 20,
+  "stem": "-Did you see the zoo? -Yes, I did.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-192.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-192-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0099"
+ },
+ {
+  "qid": "FM193",
+  "t": 43,
+  "stem": "This house is ... small for us; there are Six people in our family.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-193.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-193-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0106"
+ },
+ {
+  "qid": "FM194",
+  "t": 37,
+  "stem": "Look at those men! Yes, they are earlier.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-194.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-194-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0107"
+ },
+ {
+  "qid": "FM195",
+  "t": 12,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-195.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-195-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0110"
+ },
+ {
+  "qid": "FM196",
+  "t": 30,
+  "stem": "You",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-196.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-196-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0112"
+ },
+ {
+  "qid": "FM197",
+  "t": 34,
+  "stem": "The new regulations before the crisis was officially declared.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-197.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-197-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0114"
+ },
+ {
+  "qid": "FM198",
+  "t": 3,
+  "stem": "I wasn't paying attention because looking at me constantly.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-198.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-198-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0117"
+ },
+ {
+  "qid": "FM199",
+  "t": 21,
+  "stem": "It is",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-199.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-199-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0125"
+ },
+ {
+  "qid": "FM200",
+  "t": 7,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-200.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-200-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0128"
+ },
+ {
+  "qid": "FM201",
+  "t": 22,
+  "stem": "She is afraid",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-201.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-201-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0129"
+ },
+ {
+  "qid": "FM202",
+  "t": 4,
+  "stem": "Are all the students in the course interested in attending the talk? - No,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-202.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-202-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0139"
+ },
+ {
+  "qid": "FM203",
+  "t": 4,
+  "stem": "Are all the students in the course interested in attending the talk? - No,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-203.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-203-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0140"
+ },
+ {
+  "qid": "FM204",
+  "t": 13,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-204.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-204-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0141"
+ },
+ {
+  "qid": "FM205",
+  "t": 17,
+  "stem": "Our boss is not here now, she",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-205.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-205-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0156"
+ },
+ {
+  "qid": "FM206",
+  "t": 8,
+  "stem": "Pete is very responsible, he always",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-206.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-206-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0160"
+ },
+ {
+  "qid": "FM207",
+  "t": 37,
+  "stem": "The guy 's son.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-207.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-207-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0166"
+ },
+ {
+  "qid": "FM208",
+  "t": 2,
+  "stem": "We ... a dog on the street and ... him",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-208.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-208-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0169"
+ },
+ {
+  "qid": "FM209",
+  "t": 14,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-209.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-209-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0003"
+ },
+ {
+  "qid": "FM210",
+  "t": 34,
+  "stem": "Most of Frankfurt's Old buildings world war.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-210.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-210-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0006"
+ },
+ {
+  "qid": "FM211",
+  "t": 43,
+  "stem": "Which is incorrect?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-211.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-211-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0012"
+ },
+ {
+  "qid": "FM212",
+  "t": 15,
+  "stem": "l've been married to my husband ...",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-212.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-212-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0017"
+ },
+ {
+  "qid": "FM213",
+  "t": 43,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-213.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-213-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0020"
+ },
+ {
+  "qid": "FM214",
+  "t": 1,
+  "stem": "Does Trevor like jazz music? - Yes, loves it!",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-214.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-214-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0022"
+ },
+ {
+  "qid": "FM215",
+  "t": 37,
+  "stem": "The guy 's son.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-215.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-215-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0023"
+ },
+ {
+  "qid": "FM216",
+  "t": 24,
+  "stem": "The lecture was cancelled restrictions.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-216.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-216-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0026"
+ },
+ {
+  "qid": "FM217",
+  "t": 36,
+  "stem": "Choose the correct sentence:",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-217.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-217-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0030"
+ },
+ {
+  "qid": "FM218",
+  "t": 13,
+  "stem": "Which is correct?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-218.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-218-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0035"
+ },
+ {
+  "qid": "FM219",
+  "t": 5,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-219.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-219-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0036"
+ },
+ {
+  "qid": "FM220",
+  "t": 12,
+  "stem": "Those pens are",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-220.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-220-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0042"
+ },
+ {
+  "qid": "FM221",
+  "t": 12,
+  "stem": "Those pens are",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-221.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-221-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0043"
+ },
+ {
+  "qid": "FM222",
+  "t": 16,
+  "stem": "The baby Iost his favourite toy and he then.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-222.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-222-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0116"
+ },
+ {
+  "qid": "FM223",
+  "t": 14,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-223.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-223-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0051"
+ },
+ {
+  "qid": "FM224",
+  "t": 36,
+  "stem": "Have you finished your lunch? , she asked. Turn the sentence into the reported speech.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-224.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-224-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0055"
+ },
+ {
+  "qid": "FM225",
+  "t": 11,
+  "stem": "We shouldn't have told him,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-225.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-225-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0065"
+ },
+ {
+  "qid": "FM226",
+  "t": 16,
+  "stem": "You ... the whole morning! You need a rest",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-226.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-226-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0066"
+ },
+ {
+  "qid": "FM227",
+  "t": 2,
+  "stem": "I wish cool.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-227.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-227-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0067"
+ },
+ {
+  "qid": "FM228",
+  "t": 43,
+  "stem": "How can you sleep",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-228.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-228-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0069"
+ },
+ {
+  "qid": "FM229",
+  "t": 4,
+  "stem": "There are three",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-229.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-229-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0071"
+ },
+ {
+  "qid": "FM230",
+  "t": 1,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-230.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-230-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0074"
+ },
+ {
+  "qid": "FM231",
+  "t": 2,
+  "stem": "Did you",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-231.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-231-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0085"
+ },
+ {
+  "qid": "FM232",
+  "t": 2,
+  "stem": "In this country we are not used ... in queues",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-232.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-232-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0089"
+ },
+ {
+  "qid": "FM233",
+  "t": 43,
+  "stem": "When he said that he loved me, I knew that he",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-233.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-233-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0093"
+ },
+ {
+  "qid": "FM234",
+  "t": 25,
+  "stem": "If you keep working ..., you ... perfect English very soon.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-234.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-234-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0101"
+ },
+ {
+  "qid": "FM235",
+  "t": 4,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-235.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-235-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0103"
+ },
+ {
+  "qid": "FM236",
+  "t": 43,
+  "stem": "This is a special tool",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-236.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-236-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0105"
+ },
+ {
+  "qid": "FM237",
+  "t": 37,
+  "stem": "The boy yesterday.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-237.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-237-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0106"
+ },
+ {
+  "qid": "FM238",
+  "t": 43,
+  "stem": "I usually go to the supermarket",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-238.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-238-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "RQVT3267_0109"
+ },
+ {
+  "qid": "FM239",
+  "t": 2,
+  "stem": "When we",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-239.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-239-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0003"
+ },
+ {
+  "qid": "FM240",
+  "t": 36,
+  "stem": "\"The wound bled a lot yesterday\" David said",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-240.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-240-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0004"
+ },
+ {
+  "qid": "FM241",
+  "t": 23,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-241.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-241-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0007"
+ },
+ {
+  "qid": "FM242",
+  "t": 22,
+  "stem": "I found two",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-242.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-242-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0010"
+ },
+ {
+  "qid": "FM243",
+  "t": 4,
+  "stem": "The worst part of inviting all of them to dinner is that I have to wash all the",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-243.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-243-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0012"
+ },
+ {
+  "qid": "FM244",
+  "t": 32,
+  "stem": "Jamie",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-244.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-244-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0014"
+ },
+ {
+  "qid": "FM245",
+  "t": 3,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-245.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-245-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0015"
+ },
+ {
+  "qid": "FM246",
+  "t": 32,
+  "stem": "If I had known you were coming, cake.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-246.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-246-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0033"
+ },
+ {
+  "qid": "FM247",
+  "t": 4,
+  "stem": "At Carnival there's always a big ...",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-247.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-247-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0035"
+ },
+ {
+  "qid": "FM248",
+  "t": 28,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-248.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-248-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0037"
+ },
+ {
+  "qid": "FM249",
+  "t": 21,
+  "stem": "His performance was",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-249.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-249-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0040"
+ },
+ {
+  "qid": "FM250",
+  "t": 21,
+  "stem": "The weather here is",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-250.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-250-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0042"
+ },
+ {
+  "qid": "FM251",
+  "t": 7,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-251.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-251-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0043"
+ },
+ {
+  "qid": "FM252",
+  "t": 23,
+  "stem": "I want you to stay",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-252.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-252-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0054"
+ },
+ {
+  "qid": "FM253",
+  "t": 20,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-253.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-253-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0058"
+ },
+ {
+  "qid": "FM254",
+  "t": 28,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-254.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-254-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0060"
+ },
+ {
+  "qid": "FM255",
+  "t": 7,
+  "stem": "Everyone",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-255.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-255-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0062"
+ },
+ {
+  "qid": "FM256",
+  "t": 2,
+  "stem": "My aunt",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-256.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-256-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0071"
+ },
+ {
+  "qid": "FM257",
+  "t": 34,
+  "stem": "The policewoman could check that the envelope",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-257.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-257-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0075"
+ },
+ {
+  "qid": "FM258",
+  "t": 2,
+  "stem": "Choose the correct sentence:",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-258.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-258-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0079"
+ },
+ {
+  "qid": "FM259",
+  "t": 43,
+  "stem": "All these promises Will not incomes.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-259.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-259-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0083"
+ },
+ {
+  "qid": "FM260",
+  "t": 43,
+  "stem": "Which is incorrect?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-260.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-260-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0086"
+ },
+ {
+  "qid": "FM261",
+  "t": 34,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-261.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-261-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0093"
+ },
+ {
+  "qid": "FM262",
+  "t": 2,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-262.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-262-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0095"
+ },
+ {
+  "qid": "FM263",
+  "t": 13,
+  "stem": "Look at that little girl",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-263.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-263-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0098"
+ },
+ {
+  "qid": "FM264",
+  "t": 31,
+  "stem": "What",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-264.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-264-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0102"
+ },
+ {
+  "qid": "FM265",
+  "t": 43,
+  "stem": "It's half past eight",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-265.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-265-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0104"
+ },
+ {
+  "qid": "FM266",
+  "t": 2,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-266.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-266-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0003"
+ },
+ {
+  "qid": "FM267",
+  "t": 20,
+  "stem": "Old people ... grumpy.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-267.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-267-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0005"
+ },
+ {
+  "qid": "FM268",
+  "t": 43,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-268.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-268-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0006"
+ },
+ {
+  "qid": "FM269",
+  "t": 21,
+  "stem": "Usain Bolt was anyone else.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-269.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-269-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0011"
+ },
+ {
+  "qid": "FM270",
+  "t": 34,
+  "stem": "Transform into passive voice: Janine was writing two stories. -Two stories",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-270.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-270-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0014"
+ },
+ {
+  "qid": "FM271",
+  "t": 28,
+  "stem": "We must take action. Otherwise, consequences.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-271.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-271-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0015"
+ },
+ {
+  "qid": "FM272",
+  "t": 16,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-272.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-272-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0019"
+ },
+ {
+  "qid": "FM273",
+  "t": 23,
+  "stem": "The officer spoke slowly understand the instructions.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-273.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-273-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0021"
+ },
+ {
+  "qid": "FM274",
+  "t": 22,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-274.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-274-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0024"
+ },
+ {
+  "qid": "FM275",
+  "t": 7,
+  "stem": "When Patricia crying.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-275.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-275-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0026"
+ },
+ {
+  "qid": "FM276",
+  "t": 28,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-276.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-276-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0029"
+ },
+ {
+  "qid": "FM277",
+  "t": 14,
+  "stem": "She",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-277.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-277-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0036"
+ },
+ {
+  "qid": "FM278",
+  "t": 36,
+  "stem": "Turn into the reported speech: The teacher said to the students, \"Don't forget to hand in your assignments by Friday.\"",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-278.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-278-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0043"
+ },
+ {
+  "qid": "FM279",
+  "t": 17,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-279.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-279-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0046"
+ },
+ {
+  "qid": "FM280",
+  "t": 43,
+  "stem": "That is the most expensive car ...",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-280.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-280-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0054"
+ },
+ {
+  "qid": "FM281",
+  "t": 12,
+  "stem": "See you later, guys. Enjoy",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-281.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-281-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0055"
+ },
+ {
+  "qid": "FM282",
+  "t": 31,
+  "stem": "If you ... anywhere in the world, where ... you live?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-282.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-282-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0060"
+ },
+ {
+  "qid": "FM283",
+  "t": 25,
+  "stem": "What",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-283.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-283-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0063"
+ },
+ {
+  "qid": "FM284",
+  "t": 22,
+  "stem": "The law firm is jewellery.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-284.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-284-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0066"
+ },
+ {
+  "qid": "FM285",
+  "t": 1,
+  "stem": "-Don't worry so much because my future",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-285.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-285-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0069"
+ },
+ {
+  "qid": "FM286",
+  "t": 14,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-286.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-286-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0079"
+ },
+ {
+  "qid": "FM287",
+  "t": 43,
+  "stem": "Luke and Mila enjoy",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-287.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-287-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0080"
+ },
+ {
+  "qid": "FM288",
+  "t": 22,
+  "stem": "The car parked in front of",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-288.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-288-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0082"
+ },
+ {
+  "qid": "FM289",
+  "t": 43,
+  "stem": "I regret rejected.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-289.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-289-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0086"
+ },
+ {
+  "qid": "FM290",
+  "t": 2,
+  "stem": "It",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-290.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-290-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0093"
+ },
+ {
+  "qid": "FM291",
+  "t": 43,
+  "stem": "It was so hot there, and the air conditioning was",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-291.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-291-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0097"
+ },
+ {
+  "qid": "FM292",
+  "t": 38,
+  "stem": "All the library books must be brought June.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-292.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-292-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0102"
+ },
+ {
+  "qid": "FM293",
+  "t": 13,
+  "stem": "I have ... books in my room, but ... free time to read.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-293.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-293-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0107"
+ },
+ {
+  "qid": "FM294",
+  "t": 28,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-294.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-294-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0054"
+ },
+ {
+  "qid": "FM295",
+  "t": 21,
+  "stem": "Could you please walk",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-295.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-295-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0122"
+ },
+ {
+  "qid": "FM296",
+  "t": 32,
+  "stem": "back for good.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-296.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-296-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0141"
+ },
+ {
+  "qid": "FM297",
+  "t": 34,
+  "stem": "New teachers",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-297.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-297-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0143"
+ },
+ {
+  "qid": "FM298",
+  "t": 20,
+  "stem": "She worked hard and became dedication and perseverance.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-298.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-298-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0144"
+ },
+ {
+  "qid": "FM299",
+  "t": 13,
+  "stem": "We didn't buy",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-299.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-299-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0151"
+ },
+ {
+  "qid": "FM300",
+  "t": 37,
+  "stem": "The guy 's son.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-300.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-300-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0155"
+ },
+ {
+  "qid": "FM301",
+  "t": 37,
+  "stem": "The guy 's son.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-301.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-301-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0156"
+ },
+ {
+  "qid": "FM302",
+  "t": 34,
+  "stem": "This book was",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-302.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-302-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0162"
+ },
+ {
+  "qid": "FM303",
+  "t": 1,
+  "stem": "I can't find my car keys, I think I",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-303.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-303-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0169"
+ },
+ {
+  "qid": "FM304",
+  "t": 34,
+  "stem": "Rewrite into passive: The students finished the test in one hour. The test hour.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-304.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-304-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0171"
+ },
+ {
+  "qid": "FM305",
+  "t": 43,
+  "stem": "l'm hungry,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-305.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-305-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0174"
+ },
+ {
+  "qid": "FM306",
+  "t": 7,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-306.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-306-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0179"
+ },
+ {
+  "qid": "FM307",
+  "t": 43,
+  "stem": "Take the book ... is on the shelf, please.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-307.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-307-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0013"
+ },
+ {
+  "qid": "FM308",
+  "t": 28,
+  "stem": "This inside.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-308.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-308-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0017"
+ },
+ {
+  "qid": "FM309",
+  "t": 43,
+  "stem": "3.45 is",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-309.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-309-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0019"
+ },
+ {
+  "qid": "FM310",
+  "t": 14,
+  "stem": "What",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-310.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-310-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0022"
+ },
+ {
+  "qid": "FM311",
+  "t": 43,
+  "stem": "Victor made his daughter vegetables.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-311.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-311-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0024"
+ },
+ {
+  "qid": "FM312",
+  "t": 34,
+  "stem": "The documents afternoon.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-312.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-312-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0028"
+ },
+ {
+  "qid": "FM313",
+  "t": 43,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-313.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-313-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0031"
+ },
+ {
+  "qid": "FM314",
+  "t": 17,
+  "stem": "What is the correct sentence?",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-314.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-314-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0038"
+ },
+ {
+  "qid": "FM315",
+  "t": 37,
+  "stem": "The mam renowned scientist.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-315.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-315-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0039"
+ },
+ {
+  "qid": "FM316",
+  "t": 4,
+  "stem": "A group of",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-316.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-316-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0045"
+ },
+ {
+  "qid": "FM317",
+  "t": 7,
+  "stem": "The children",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-317.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-317-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0050"
+ },
+ {
+  "qid": "FM318",
+  "t": 25,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-318.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-318-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0058"
+ },
+ {
+  "qid": "FM319",
+  "t": 14,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-319.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-319-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0060"
+ },
+ {
+  "qid": "FM320",
+  "t": 2,
+  "stem": "The boat ...",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-320.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-320-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0065"
+ },
+ {
+  "qid": "FM321",
+  "t": 1,
+  "stem": "",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-321.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-321-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0066"
+ },
+ {
+  "qid": "FM322",
+  "t": 13,
+  "stem": "Are there",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-322.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-322-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0067"
+ },
+ {
+  "qid": "FM323",
+  "t": 14,
+  "stem": "She's forgotten the password,",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-323.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-323-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0071"
+ },
+ {
+  "qid": "FM324",
+  "t": 31,
+  "stem": "inside the house.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-324.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-324-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0075"
+ },
+ {
+  "qid": "FM325",
+  "t": 26,
+  "stem": "Do you know that next week at this exact time",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-325.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-325-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0077"
+ },
+ {
+  "qid": "FM326",
+  "t": 17,
+  "stem": "After they",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-326.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-326-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0078"
+ },
+ {
+  "qid": "FM327",
+  "t": 1,
+  "stem": "It ... me long to get ready in the mornings.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-327.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-327-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0079"
+ },
+ {
+  "qid": "FM328",
+  "t": 7,
+  "stem": "When I arrived at class, the students sentences according to their complexity.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-328.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-328-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0084"
+ },
+ {
+  "qid": "FM329",
+  "t": 2,
+  "stem": "O She",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-329.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-329-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0086"
+ },
+ {
+  "qid": "FM330",
+  "t": 43,
+  "stem": "Darling! You ... there alone at night. Anything might happen!",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-330.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-330-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0101"
+ },
+ {
+  "qid": "FM331",
+  "t": 17,
+  "stem": "Were there many glasses on the table? No, there any.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-331.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-331-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0102"
+ },
+ {
+  "qid": "FM332",
+  "t": 28,
+  "stem": "Be careful there!",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-332.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-332-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0104"
+ },
+ {
+  "qid": "FM333",
+  "t": 2,
+  "stem": "weekend.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-333.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-333-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0109"
+ },
+ {
+  "qid": "FM334",
+  "t": 1,
+  "stem": "It ... me long to get ready in the mornings.",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-334.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-334-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0111"
+ },
+ {
+  "qid": "FM335",
+  "t": 17,
+  "stem": "- Did you",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-335.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-335-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0126"
+ },
+ {
+  "qid": "FM336",
+  "t": 12,
+  "stem": "Neither of the candidates was fully satisfied with",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 3,
+  "img": "ingles-forma/ef-336.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-336-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0127"
+ },
+ {
+  "qid": "FM337",
+  "t": 6,
+  "stem": "Jenny and Howard they",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-337.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-337-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0130"
+ },
+ {
+  "qid": "FM338",
+  "t": 22,
+  "stem": "The house was destroyed",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-338.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-338-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0140"
+ },
+ {
+  "qid": "FM339",
+  "t": 14,
+  "stem": "Choose the correct sentence:",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-339.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-339-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0145"
+ },
+ {
+  "qid": "FM340",
+  "t": 22,
+  "stem": "There was an Old woman",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-340.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-340-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0147"
+ },
+ {
+  "qid": "FM341",
+  "t": 30,
+  "stem": "If I see Robert, I",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 2,
+  "img": "ingles-forma/ef-341.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-341-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0154"
+ },
+ {
+  "qid": "FM342",
+  "t": 43,
+  "stem": "I need",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 0,
+  "img": "ingles-forma/ef-342.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-342-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0156"
+ },
+ {
+  "qid": "FM343",
+  "t": 2,
+  "stem": "We we",
+  "opts": [
+   "Opción A",
+   "Opción B",
+   "Opción C",
+   "Opción D"
+  ],
+  "a": 1,
+  "img": "ingles-forma/ef-343.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-343-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0159"
+ }
+]

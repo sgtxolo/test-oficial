@@ -12,12 +12,12 @@
   "id": "d-2",
   "nombre": "LO 3/2018 · Artículo 2",
   "img": "d-2.jpg",
+  "imgr": "d-2-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1047
   ],
-  "imgr": "d-2-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    175
@@ -37,12 +37,12 @@
   "id": "d-3",
   "nombre": "LO 3/2018 · Artículo 3",
   "img": "d-3.jpg",
+  "imgr": "d-3-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1170
   ],
-  "imgr": "d-3-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    249
@@ -84,14 +84,14 @@
   "id": "d-7",
   "nombre": "LO 3/2018 · Artículo 7",
   "img": "d-7.jpg",
-  "wh": [
-   1075,
-   287
-  ],
   "imgr": "d-7-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   287
   ],
   "whr": [
    1075,
@@ -121,14 +121,14 @@
   "id": "d-9",
   "nombre": "LO 3/2018 · Artículo 9",
   "img": "d-9.jpg",
-  "wh": [
-   1075,
-   530
-  ],
   "imgr": "d-9-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   530
   ],
   "whr": [
    1075,
@@ -181,12 +181,12 @@
   "id": "d-11",
   "nombre": "LO 3/2018 · Artículo 11",
   "img": "d-11.jpg",
+  "imgr": "d-11-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1152
   ],
-  "imgr": "d-11-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    198
@@ -281,12 +281,12 @@
   "id": "d-19",
   "nombre": "LO 3/2018 · Artículo 19",
   "img": "d-19.jpg",
+  "imgr": "d-19-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    473
   ],
-  "imgr": "d-19-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    132
@@ -452,6 +452,15 @@
   ]
  },
  {
+  "id": "d-28",
+  "nombre": "LO 3/2018 · Artículo 28",
+  "img": "d-28.jpg",
+  "wh": [
+   1075,
+   1030
+  ]
+ },
+ {
   "id": "d-30",
   "nombre": "LO 3/2018 · Artículo 30",
   "img": "d-30.jpg",
@@ -560,12 +569,12 @@
   "id": "d-37",
   "nombre": "LO 3/2018 · Artículo 37",
   "img": "d-37.jpg",
+  "imgr": "d-37-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    782
   ],
-  "imgr": "d-37-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    139
@@ -630,12 +639,12 @@
   "id": "d-41",
   "nombre": "LO 3/2018 · Artículo 41",
   "img": "d-41.jpg",
+  "imgr": "d-41-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    421
   ],
-  "imgr": "d-41-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    206
@@ -664,12 +673,12 @@
   "id": "d-44",
   "nombre": "LO 3/2018 · Artículo 44",
   "img": "d-44.jpg",
+  "imgr": "d-44-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    592
   ],
-  "imgr": "d-44-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    402
@@ -698,12 +707,12 @@
   "id": "d-46",
   "nombre": "LO 3/2018 · Artículo 46",
   "img": "d-46.jpg",
+  "imgr": "d-46-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    902
   ],
-  "imgr": "d-46-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    182
@@ -894,12 +903,12 @@
   "id": "d-58",
   "nombre": "LO 3/2018 · Artículo 58",
   "img": "d-58.jpg",
+  "imgr": "d-58-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    275
   ],
-  "imgr": "d-58-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    164
@@ -943,15 +952,24 @@
   ]
  },
  {
+  "id": "d-62",
+  "nombre": "LO 3/2018 · Artículo 62",
+  "img": "d-62.jpg",
+  "wh": [
+   1075,
+   737
+  ]
+ },
+ {
   "id": "d-64",
   "nombre": "LO 3/2018 · Artículo 64",
   "img": "d-64.jpg",
+  "imgr": "d-64-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3648
   ],
-  "imgr": "d-64-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    284
@@ -1036,7 +1054,7 @@
   "img": "d-68.jpg",
   "wh": [
    1075,
-   3072
+   3016
   ]
  },
  {
@@ -1091,12 +1109,12 @@
   "id": "d-73",
   "nombre": "LO 3/2018 · Artículo 73",
   "img": "d-73.jpg",
+  "imgr": "d-73-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2654
   ],
-  "imgr": "d-73-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    358
@@ -1252,13 +1270,13 @@
   "id": "d-83",
   "nombre": "LO 3/2018 · Artículo 83",
   "img": "d-83.jpg",
-  "wh": [
-   1075,
-   679
-  ],
   "imgr": "d-83-r.jpg",
   "ap": [
    4
+  ],
+  "wh": [
+   1075,
+   679
   ],
   "whr": [
    1075,
@@ -1463,12 +1481,12 @@
   "id": "d-95",
   "nombre": "LO 3/2018 · Artículo 95",
   "img": "d-95.jpg",
+  "imgr": "d-95-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    441
   ],
-  "imgr": "d-95-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    135
@@ -1552,12 +1570,12 @@
   "id": "a-3",
   "nombre": "Ley 39/2015 · Artículo 3",
   "img": "a-3.jpg",
+  "imgr": "a-3-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    346
   ],
-  "imgr": "a-3-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    232
@@ -1675,12 +1693,12 @@
   "id": "a-8",
   "nombre": "Ley 39/2015 · Artículo 8",
   "img": "a-8.jpg",
+  "imgr": "a-8-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    412
   ],
-  "imgr": "a-8-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    192
@@ -1786,12 +1804,12 @@
   "id": "a-13",
   "nombre": "Ley 39/2015 · Artículo 13",
   "img": "a-13.jpg",
+  "imgr": "a-13-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    741
   ],
-  "imgr": "a-13-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    132
@@ -1918,12 +1936,12 @@
   "id": "a-21",
   "nombre": "Ley 39/2015 · Artículo 21",
   "img": "a-21.jpg",
+  "imgr": "a-21-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2247
   ],
-  "imgr": "a-21-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    330
@@ -1947,12 +1965,12 @@
   "id": "a-22",
   "nombre": "Ley 39/2015 · Artículo 22",
   "img": "a-22.jpg",
+  "imgr": "a-22-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1381
   ],
-  "imgr": "a-22-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    192
@@ -2029,12 +2047,12 @@
   "id": "a-25",
   "nombre": "Ley 39/2015 · Artículo 25",
   "img": "a-25.jpg",
+  "imgr": "a-25-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    862
   ],
-  "imgr": "a-25-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    302
@@ -2114,12 +2132,12 @@
   "id": "a-31",
   "nombre": "Ley 39/2015 · Artículo 31",
   "img": "a-31.jpg",
+  "imgr": "a-31-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    801
   ],
-  "imgr": "a-31-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    163
@@ -2272,12 +2290,12 @@
   "id": "a-41",
   "nombre": "Ley 39/2015 · Artículo 41 (esquema)",
   "img": "a-41.jpg",
+  "imgr": "a-41-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2859
   ],
-  "imgr": "a-41-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    715
@@ -2311,12 +2329,12 @@
   "id": "a-43",
   "nombre": "Ley 39/2015 · Artículo 43",
   "img": "a-43.jpg",
+  "imgr": "a-43-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    546
   ],
-  "imgr": "a-43-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    282
@@ -2349,12 +2367,12 @@
   "id": "a-45",
   "nombre": "Ley 39/2015 · Artículo 45 (esquema)",
   "img": "a-45.jpg",
+  "imgr": "a-45-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1307
   ],
-  "imgr": "a-45-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    420
@@ -2448,12 +2466,12 @@
   "id": "a-53",
   "nombre": "Ley 39/2015 · Artículo 53",
   "img": "a-53.jpg",
+  "imgr": "a-53-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1666
   ],
-  "imgr": "a-53-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    199
@@ -2514,12 +2532,12 @@
   "id": "a-57",
   "nombre": "Ley 39/2015 · Artículo 57",
   "img": "a-57.jpg",
+  "imgr": "a-57-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    343
   ],
-  "imgr": "a-57-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    103
@@ -2612,12 +2630,12 @@
   "id": "a-64",
   "nombre": "Ley 39/2015 · Artículo 64 (esquema)",
   "img": "a-64.jpg",
+  "imgr": "a-64-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1646
   ],
-  "imgr": "a-64-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    692
@@ -2785,12 +2803,12 @@
   "id": "a-74",
   "nombre": "Ley 39/2015 · Artículo 74",
   "img": "a-74.jpg",
+  "imgr": "a-74-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    413
   ],
-  "imgr": "a-74-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    130
@@ -2924,12 +2942,12 @@
   "id": "a-83",
   "nombre": "Ley 39/2015 · Artículo 83",
   "img": "a-83.jpg",
+  "imgr": "a-83-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1403
   ],
-  "imgr": "a-83-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    144
@@ -3030,12 +3048,12 @@
   "id": "a-92",
   "nombre": "Ley 39/2015 · Artículo 92",
   "img": "a-92.jpg",
+  "imgr": "a-92-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    502
   ],
-  "imgr": "a-92-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    256
@@ -3055,13 +3073,13 @@
   "id": "a-96",
   "nombre": "Ley 39/2015 · Artículo 96",
   "img": "a-96.jpg",
-  "wh": [
-   1075,
-   1826
-  ],
   "imgr": "a-96-r.jpg",
   "ap": [
    6
+  ],
+  "wh": [
+   1075,
+   1826
   ],
   "whr": [
    1075,
@@ -3091,12 +3109,12 @@
   "id": "a-98",
   "nombre": "Ley 39/2015 · Artículo 98",
   "img": "a-98.jpg",
+  "imgr": "a-98-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    705
   ],
-  "imgr": "a-98-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    378
@@ -3187,12 +3205,12 @@
   "id": "a-104",
   "nombre": "Ley 39/2015 · Artículos 100 a 104 (esquema)",
   "img": "a-104.jpg",
+  "imgr": "a-104-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1421
   ],
-  "imgr": "a-104-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    657
@@ -3297,12 +3315,12 @@
   "id": "a-110",
   "nombre": "Ley 39/2015 · Artículo 110",
   "img": "a-110.jpg",
+  "imgr": "a-110-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    466
   ],
-  "imgr": "a-110-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    255
@@ -3392,12 +3410,12 @@
   "id": "a-116",
   "nombre": "Ley 39/2015 · Artículo 116",
   "img": "a-116.jpg",
+  "imgr": "a-116-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    317
   ],
-  "imgr": "a-116-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    156
@@ -3442,15 +3460,15 @@
   "id": "a-120",
   "nombre": "Ley 39/2015 · Artículo 120",
   "img": "a-120.jpg",
-  "wh": [
-   1075,
-   682
-  ],
   "imgr": "a-120-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   682
   ],
   "whr": [
    1075,
@@ -3631,6 +3649,15 @@
   "wh": [
    1075,
    180
+  ]
+ },
+ {
+  "id": "b-2",
+  "nombre": "Ley 40/2015 · Artículo 2",
+  "img": "b-2.jpg",
+  "wh": [
+   1075,
+   710
   ]
  },
  {
@@ -3819,12 +3846,12 @@
   "id": "b-10",
   "nombre": "Ley 40/2015 · Artículo 10",
   "img": "b-10.jpg",
+  "imgr": "b-10-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    522
   ],
-  "imgr": "b-10-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    202
@@ -4037,12 +4064,12 @@
   "id": "b-19",
   "nombre": "Ley 40/2015 · Artículo 19",
   "img": "b-19.jpg",
+  "imgr": "b-19-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    3056
   ],
-  "imgr": "b-19-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    647
@@ -4234,12 +4261,12 @@
   "id": "b-27",
   "nombre": "Ley 40/2015 · Artículo 27",
   "img": "b-27.jpg",
+  "imgr": "b-27-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    469
   ],
-  "imgr": "b-27-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    274
@@ -4259,13 +4286,13 @@
   "id": "b-28",
   "nombre": "Ley 40/2015 · Artículo 28",
   "img": "b-28.jpg",
-  "wh": [
-   1075,
-   588
-  ],
   "imgr": "b-28-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   588
   ],
   "whr": [
    1075,
@@ -4286,13 +4313,13 @@
   "id": "b-29",
   "nombre": "Ley 40/2015 · Artículo 29",
   "img": "b-29.jpg",
-  "wh": [
-   1075,
-   869
-  ],
   "imgr": "b-29-r.jpg",
   "ap": [
    1
+  ],
+  "wh": [
+   1075,
+   869
   ],
   "whr": [
    1075,
@@ -4358,14 +4385,14 @@
   "id": "b-32",
   "nombre": "Ley 40/2015 · Artículo 32",
   "img": "b-32.jpg",
-  "wh": [
-   1075,
-   1766
-  ],
   "imgr": "b-32-r.jpg",
   "ap": [
    1,
    3
+  ],
+  "wh": [
+   1075,
+   1766
   ],
   "whr": [
    1075,
@@ -4482,15 +4509,15 @@
   "id": "b-46",
   "nombre": "Ley 40/2015 · Artículo 46",
   "img": "b-46.jpg",
-  "wh": [
-   1075,
-   1900
-  ],
   "imgr": "b-46-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   1900
   ],
   "whr": [
    1075,
@@ -4701,12 +4728,12 @@
   "id": "b-62",
   "nombre": "Ley 40/2015 · Artículo 62",
   "img": "b-62.jpg",
+  "imgr": "b-62-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1268
   ],
-  "imgr": "b-62-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    154
@@ -4822,16 +4849,16 @@
   "id": "b-73",
   "nombre": "Ley 40/2015 · Artículo 73",
   "img": "b-73.jpg",
-  "wh": [
-   1075,
-   3256
-  ],
   "imgr": "b-73-r.jpg",
   "ap": [
    1,
    2,
    3,
    4
+  ],
+  "wh": [
+   1075,
+   3256
   ],
   "whr": [
    1075,
@@ -4857,12 +4884,12 @@
   "id": "b-75",
   "nombre": "Ley 40/2015 · Artículo 75",
   "img": "b-75.jpg",
+  "imgr": "b-75-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    963
   ],
-  "imgr": "b-75-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    792
@@ -4887,12 +4914,12 @@
   "id": "b-77",
   "nombre": "Ley 40/2015 · Artículo 77",
   "img": "b-77.jpg",
+  "imgr": "b-77-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    606
   ],
-  "imgr": "b-77-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    152
@@ -4953,15 +4980,15 @@
   "id": "b-144",
   "nombre": "Ley 40/2015 · Artículo 144",
   "img": "b-144.jpg",
-  "wh": [
-   1075,
-   832
-  ],
   "imgr": "b-144-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   832
   ],
   "whr": [
    1075,
@@ -5013,15 +5040,15 @@
   "id": "b-147",
   "nombre": "Ley 40/2015 · Artículo 147",
   "img": "b-147.jpg",
-  "wh": [
-   1075,
-   3013
-  ],
   "imgr": "b-147-r.jpg",
   "ap": [
    1,
    2,
    3
+  ],
+  "wh": [
+   1075,
+   3013
   ],
   "whr": [
    1075,
@@ -5099,12 +5126,12 @@
   "id": "b-151",
   "nombre": "Ley 40/2015 · Artículo 151",
   "img": "b-151.jpg",
+  "imgr": "b-151-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1010
   ],
-  "imgr": "b-151-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    539
@@ -5191,12 +5218,12 @@
   "id": "t-2",
   "nombre": "Ley 19/2013 · Artículo 2",
   "img": "t-2.jpg",
+  "imgr": "t-2-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    978
   ],
-  "imgr": "t-2-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    620
@@ -5412,12 +5439,12 @@
   "id": "t-16",
   "nombre": "Ley 19/2013 · Artículo 16",
   "img": "t-16.jpg",
+  "imgr": "t-16-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    350
   ],
-  "imgr": "t-16-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    225
@@ -5650,12 +5677,12 @@
   "id": "t-28",
   "nombre": "Ley 19/2013 · Artículo 28",
   "img": "t-28.jpg",
+  "imgr": "t-28-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1767
   ],
-  "imgr": "t-28-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    280
@@ -5679,12 +5706,12 @@
   "id": "t-29",
   "nombre": "Ley 19/2013 · Artículo 29",
   "img": "t-29.jpg",
+  "imgr": "t-29-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1417
   ],
-  "imgr": "t-29-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    896
@@ -5860,12 +5887,12 @@
   "id": "t-38",
   "nombre": "Ley 19/2013 · Artículo 38",
   "img": "t-38.jpg",
+  "imgr": "t-38-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1056
   ],
-  "imgr": "t-38-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    113
@@ -5903,12 +5930,12 @@
   "id": "r-2",
   "nombre": "RD 179/2005 · Artículo 2 (esquema)",
   "img": "r-2.jpg",
+  "imgr": "r-2-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1395
   ],
-  "imgr": "r-2-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    640
@@ -5933,14 +5960,14 @@
   "id": "r-4",
   "nombre": "RD 179/2005 · Artículo 4",
   "img": "r-4.jpg",
-  "wh": [
-   1075,
-   2984
-  ],
   "imgr": "r-4-r.jpg",
   "ap": [
    1,
    2
+  ],
+  "wh": [
+   1075,
+   2984
   ],
   "whr": [
    1075,
@@ -5992,12 +6019,12 @@
   "id": "r-8",
   "nombre": "RD 179/2005 · Artículo 8",
   "img": "r-8.jpg",
+  "imgr": "r-8-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    2883
   ],
-  "imgr": "r-8-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    118
@@ -6040,12 +6067,12 @@
   "id": "r-12",
   "nombre": "RD 179/2005 · Artículo 12",
   "img": "r-12.jpg",
+  "imgr": "r-12-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    799
   ],
-  "imgr": "r-12-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    378
@@ -6105,12 +6132,12 @@
   "id": "d-4",
   "nombre": "LO 3/2018 · Artículo 4",
   "img": "d-4.jpg",
+  "imgr": "d-4-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    578
   ],
-  "imgr": "d-4-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    362
@@ -6157,12 +6184,12 @@
   "id": "d-96",
   "nombre": "LO 3/2018 · Artículo 96",
   "img": "d-96.jpg",
+  "imgr": "d-96-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    1255
   ],
-  "imgr": "d-96-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    337
@@ -6376,12 +6403,12 @@
   "id": "b-49",
   "nombre": "Ley 40/2015 · Artículo 49",
   "img": "b-49.jpg",
+  "imgr": "b-49-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    952
   ],
-  "imgr": "b-49-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    225
@@ -6459,12 +6486,12 @@
   "id": "r-16",
   "nombre": "RD 179/2005 · Artículo 16",
   "img": "r-16.jpg",
+  "imgr": "r-16-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    617
   ],
-  "imgr": "r-16-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    410
@@ -6553,12 +6580,12 @@
   "id": "t-5",
   "nombre": "Ley 19/2013 · Artículo 5",
   "img": "t-5.jpg",
+  "imgr": "t-5-r.jpg",
+  "ap": [],
   "wh": [
    1075,
    823
   ],
-  "imgr": "t-5-r.jpg",
-  "ap": [],
   "whr": [
    1075,
    271
@@ -6589,132 +6616,6 @@
   "whr": [
    1075,
    163
-  ]
- },
- {
-  "id": "d-pre",
-  "nombre": "LO 3/2018 · Preámbulo",
-  "img": "d-pre.jpg",
-  "wh": [
-   1075,
-   10218
-  ]
- },
- {
-  "id": "d-da",
-  "nombre": "LO 3/2018 · Disposiciones adicionales",
-  "img": "d-da.jpg",
-  "wh": [
-   1075,
-   11510
-  ]
- },
- {
-  "id": "d-dt",
-  "nombre": "LO 3/2018 · Disposiciones transitorias",
-  "img": "d-dt.jpg",
-  "wh": [
-   1075,
-   2131
-  ]
- },
- {
-  "id": "d-dd",
-  "nombre": "LO 3/2018 · Disposición derogatoria",
-  "img": "d-dd.jpg",
-  "wh": [
-   1075,
-   434
-  ]
- },
- {
-  "id": "d-df",
-  "nombre": "LO 3/2018 · Disposiciones finales",
-  "img": "d-df.jpg",
-  "wh": [
-   1075,
-   11446
-  ]
- },
- {
-  "id": "a-da",
-  "nombre": "Ley 39/2015 · Disposiciones adicionales",
-  "img": "a-da.jpg",
-  "wh": [
-   1075,
-   3149
-  ]
- },
- {
-  "id": "a-dt",
-  "nombre": "Ley 39/2015 · Disposiciones transitorias",
-  "img": "a-dt.jpg",
-  "wh": [
-   1075,
-   1825
-  ]
- },
- {
-  "id": "a-dd",
-  "nombre": "Ley 39/2015 · Disposición derogatoria",
-  "img": "a-dd.jpg",
-  "wh": [
-   1075,
-   1008
-  ]
- },
- {
-  "id": "a-df",
-  "nombre": "Ley 39/2015 · Disposiciones finales",
-  "img": "a-df.jpg",
-  "wh": [
-   1075,
-   7348
-  ]
- },
- {
-  "id": "t-da",
-  "nombre": "Ley 19/2013 · Disposiciones adicionales",
-  "img": "t-da.jpg",
-  "wh": [
-   1075,
-   2734
-  ]
- },
- {
-  "id": "t-df",
-  "nombre": "Ley 19/2013 · Disposiciones finales",
-  "img": "t-df.jpg",
-  "wh": [
-   1075,
-   8265
-  ]
- },
- {
-  "id": "r-da",
-  "nombre": "RD 179/2005 · Disposiciones adicionales",
-  "img": "r-da.jpg",
-  "wh": [
-   1075,
-   1947
-  ]
- },
- {
-  "id": "r-dd",
-  "nombre": "RD 179/2005 · Disposición derogatoria",
-  "img": "r-dd.jpg",
-  "wh": [
-   1075,
-   196
-  ]
- },
- {
-  "id": "r-df",
-  "nombre": "RD 179/2005 · Disposiciones finales",
-  "img": "r-df.jpg",
-  "wh": [
-   1075,
-   366
   ]
  }
 ]

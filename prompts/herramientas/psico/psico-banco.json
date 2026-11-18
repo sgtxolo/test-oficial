@@ -2302,5 +2302,446 @@
   "ex": null,
   "fb": "Respuesta correcta: <b>B</b>.",
   "fuente": "XZVH1178_0160"
+ },
+ {
+  "qid": "PSI257",
+  "stem": "Susan's parents Alaska.",
+  "a": 2,
+  "img": "ps-257.jpg",
+  "ex": "ps-257-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-257-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0025"
+ },
+ {
+  "qid": "PSI258",
+  "stem": "Sarah",
+  "a": 1,
+  "img": "ps-258.jpg",
+  "ex": "ps-258-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-258-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0035"
+ },
+ {
+  "qid": "PSI259",
+  "stem": "flight.",
+  "a": 1,
+  "img": "ps-259.jpg",
+  "ex": "ps-259-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-259-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0060"
+ },
+ {
+  "qid": "PSI260",
+  "stem": "Most of us",
+  "a": 0,
+  "img": "ps-260.jpg",
+  "ex": "ps-260-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-260-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EFKV9636_0067"
+ },
+ {
+  "qid": "PSI261",
+  "stem": "Elija la palabra cuya definición aparece enunciada. \"Transmisión, por contacto inmediato o mediato, de una enfermedad específica\"",
+  "a": 3,
+  "img": "ps-261.jpg",
+  "ex": "ps-261-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-261-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EIVM8788_0007"
+ },
+ {
+  "qid": "PSI262",
+  "stem": "Indique qué palabra significa 10 contrario a Discontinuo:",
+  "a": 2,
+  "img": "ps-262.jpg",
+  "ex": "ps-262-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-262-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EIVM8788_0011"
+ },
+ {
+  "qid": "PSI263",
+  "stem": "Indique que palabra significa 10 CONTRARIO que CLANDESTINO.",
+  "a": 0,
+  "img": "ps-263.jpg",
+  "ex": "ps-263-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-263-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EIVM8788_0017"
+ },
+ {
+  "qid": "PSI264",
+  "stem": "SUAVE es a ÁSPERO como RIGIDO es a:",
+  "a": 3,
+  "img": "ps-264.jpg",
+  "ex": "ps-264-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-264-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EIVM8788_0018"
+ },
+ {
+  "qid": "PSI265",
+  "stem": "Indicar qué palabra significa 10 mismo que OFUSCADO.",
+  "a": 1,
+  "img": "ps-265.jpg",
+  "ex": "ps-265-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-265-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EIVM8788_0020"
+ },
+ {
+  "qid": "PSI266",
+  "stem": "Indique ei sinónimo de MIXTURA:",
+  "a": 2,
+  "img": "ps-266.jpg",
+  "ex": "ps-266-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-266-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EIVM8788_0022"
+ },
+ {
+  "qid": "PSI267",
+  "stem": "Señale la pareja de palabras que son sinónimos:",
+  "a": 3,
+  "img": "ps-267.jpg",
+  "ex": "ps-267-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-267-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "EIVM8788_0023"
+ },
+ {
+  "qid": "PSI268",
+  "stem": "After the tennis match, Jimmy",
+  "a": 1,
+  "img": "ps-268.jpg",
+  "ex": "ps-268-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-268-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0046"
+ },
+ {
+  "qid": "PSI269",
+  "stem": "",
+  "a": 2,
+  "img": "ps-269.jpg",
+  "ex": "ps-269-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-269-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0057"
+ },
+ {
+  "qid": "PSI270",
+  "stem": "Sorry to",
+  "a": 2,
+  "img": "ps-270.jpg",
+  "ex": "ps-270-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-270-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0070"
+ },
+ {
+  "qid": "PSI271",
+  "stem": "You more.",
+  "a": 3,
+  "img": "ps-271.jpg",
+  "ex": "ps-271-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-271-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0074"
+ },
+ {
+  "qid": "PSI272",
+  "stem": "He",
+  "a": 3,
+  "img": "ps-272.jpg",
+  "ex": "ps-272-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-272-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "GVPZ3582_0083"
+ },
+ {
+  "qid": "PSI273",
+  "stem": "Jane",
+  "a": 2,
+  "img": "ps-273.jpg",
+  "ex": "ps-273-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-273-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0035"
+ },
+ {
+  "qid": "PSI274",
+  "stem": "l've ... myself peeling the orange.",
+  "a": 0,
+  "img": "ps-274.jpg",
+  "ex": "ps-274-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-274-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0060"
+ },
+ {
+  "qid": "PSI275",
+  "stem": "He",
+  "a": 1,
+  "img": "ps-275.jpg",
+  "ex": "ps-275-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-275-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0093"
+ },
+ {
+  "qid": "PSI276",
+  "stem": "Betty,",
+  "a": 2,
+  "img": "ps-276.jpg",
+  "ex": "ps-276-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-276-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0113"
+ },
+ {
+  "qid": "PSI277",
+  "stem": "The thief",
+  "a": 3,
+  "img": "ps-277.jpg",
+  "ex": "ps-277-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-277-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "JPHH7920_0127"
+ },
+ {
+  "qid": "PSI278",
+  "stem": "The dog . dogs.",
+  "a": 3,
+  "img": "ps-278.jpg",
+  "ex": "ps-278-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-278-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0009"
+ },
+ {
+  "qid": "PSI279",
+  "stem": "Turn the sentence into the passive voice: People should wear life jackets during swimming lessons.",
+  "a": 0,
+  "img": "ps-279.jpg",
+  "ex": "ps-279-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-279-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0017"
+ },
+ {
+  "qid": "PSI280",
+  "stem": "",
+  "a": 1,
+  "img": "ps-280.jpg",
+  "ex": "ps-280-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-280-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0109"
+ },
+ {
+  "qid": "PSI281",
+  "stem": "Ralph chocolates.",
+  "a": 2,
+  "img": "ps-281.jpg",
+  "ex": "ps-281-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-281-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0126"
+ },
+ {
+  "qid": "PSI282",
+  "stem": "Cristina dances salsa",
+  "a": 3,
+  "img": "ps-282.jpg",
+  "ex": "ps-282-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-282-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0152"
+ },
+ {
+  "qid": "PSI283",
+  "stem": "",
+  "a": 2,
+  "img": "ps-283.jpg",
+  "ex": "ps-283-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-283-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0180"
+ },
+ {
+  "qid": "PSI284",
+  "stem": "yesterday.",
+  "a": 1,
+  "img": "ps-284.jpg",
+  "ex": "ps-284-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-284-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0230"
+ },
+ {
+  "qid": "PSI285",
+  "stem": "After the tennis match, Jimmy",
+  "a": 0,
+  "img": "ps-285.jpg",
+  "ex": "ps-285-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-285-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "KQSZ8147_0231"
+ },
+ {
+  "qid": "PSI286",
+  "stem": "The tomatoes ... last season.",
+  "a": 2,
+  "img": "ps-286.jpg",
+  "ex": "ps-286-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-286-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0042"
+ },
+ {
+  "qid": "PSI287",
+  "stem": "l've ... seen that film, so l'd rather ... another one.",
+  "a": 3,
+  "img": "ps-287.jpg",
+  "ex": "ps-287-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-287-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0050"
+ },
+ {
+  "qid": "PSI288",
+  "stem": "They didn't",
+  "a": 2,
+  "img": "ps-288.jpg",
+  "ex": "ps-288-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-288-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0062"
+ },
+ {
+  "qid": "PSI289",
+  "stem": "",
+  "a": 1,
+  "img": "ps-289.jpg",
+  "ex": "ps-289-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-289-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0093"
+ },
+ {
+  "qid": "PSI290",
+  "stem": "continued the operation.",
+  "a": 1,
+  "img": "ps-290.jpg",
+  "ex": "ps-290-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-290-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0143"
+ },
+ {
+  "qid": "PSI291",
+  "stem": "Susan",
+  "a": 0,
+  "img": "ps-291.jpg",
+  "ex": "ps-291-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-291-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "LFEH0749_0155"
+ },
+ {
+  "qid": "PSI292",
+  "stem": "",
+  "a": 3,
+  "img": "ps-292.jpg",
+  "ex": "ps-292-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-292-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0006"
+ },
+ {
+  "qid": "PSI293",
+  "stem": "",
+  "a": 1,
+  "img": "ps-293.jpg",
+  "ex": "ps-293-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-293-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0008"
+ },
+ {
+  "qid": "PSI294",
+  "stem": "Our car night in the second city.",
+  "a": 0,
+  "img": "ps-294.jpg",
+  "ex": "ps-294-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-294-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0018"
+ },
+ {
+  "qid": "PSI295",
+  "stem": "George always talks about the same things. He's really",
+  "a": 1,
+  "img": "ps-295.jpg",
+  "ex": "ps-295-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-295-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0073"
+ },
+ {
+  "qid": "PSI296",
+  "stem": "Yesterday, I minutes.",
+  "a": 2,
+  "img": "ps-296.jpg",
+  "ex": "ps-296-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-296-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "SMHS3689_0100"
+ },
+ {
+  "qid": "PSI297",
+  "stem": "",
+  "a": 2,
+  "img": "ps-297.jpg",
+  "ex": "ps-297-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-297-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0118"
+ },
+ {
+  "qid": "PSI298",
+  "stem": "Please, let me",
+  "a": 0,
+  "img": "ps-298.jpg",
+  "ex": "ps-298-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-298-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0129"
+ },
+ {
+  "qid": "PSI299",
+  "stem": "drinking now.",
+  "a": 1,
+  "img": "ps-299.jpg",
+  "ex": "ps-299-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-299-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "URBF5073_0139"
+ },
+ {
+  "qid": "PSI300",
+  "stem": "Henares seguirá adscrito a: Señale la opción CORRECTA.",
+  "a": 0,
+  "img": "ps-300.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>.",
+  "fuente": "WZRX8549_0028"
+ },
+ {
+  "qid": "PSI301",
+  "stem": "The children are Still",
+  "a": 2,
+  "img": "ps-301.jpg",
+  "ex": "ps-301-e.jpg",
+  "fb": "Respuesta correcta: <b>C</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-301-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0023"
+ },
+ {
+  "qid": "PSI302",
+  "stem": "Citizens",
+  "a": 1,
+  "img": "ps-302.jpg",
+  "ex": "ps-302-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-302-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0048"
+ },
+ {
+  "qid": "PSI303",
+  "stem": "Aida",
+  "a": 3,
+  "img": "ps-303.jpg",
+  "ex": "ps-303-e.jpg",
+  "fb": "Respuesta correcta: <b>D</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-303-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0121"
+ },
+ {
+  "qid": "PSI304",
+  "stem": "",
+  "a": 0,
+  "img": "ps-304.jpg",
+  "ex": "ps-304-e.jpg",
+  "fb": "Respuesta correcta: <b>A</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-304-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0151"
+ },
+ {
+  "qid": "PSI305",
+  "stem": "The man got a",
+  "a": 1,
+  "img": "ps-305.jpg",
+  "ex": "ps-305-e.jpg",
+  "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"psicotecnicos/ps-305-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
+  "fuente": "YCJI6826_0153"
  }
 ]
