@@ -2010,6 +2010,15 @@
   ]
  },
  {
+  "id": "a-408",
+  "nombre": "Código Penal · Artículo 408",
+  "img": "a-408.jpg",
+  "wh": [
+   1075,
+   144
+  ]
+ },
+ {
   "id": "a-409",
   "nombre": "Código Penal · Artículo 409",
   "img": "a-409.jpg",
@@ -2837,6 +2846,15 @@
   ]
  },
  {
+  "id": "a-475",
+  "nombre": "Código Penal · Artículo 475",
+  "img": "a-475.jpg",
+  "wh": [
+   1075,
+   195
+  ]
+ },
+ {
   "id": "a-476",
   "nombre": "Código Penal · Artículo 476",
   "img": "a-476.jpg",
@@ -2871,6 +2889,15 @@
   "wh": [
    1075,
    138
+  ]
+ },
+ {
+  "id": "a-478",
+  "nombre": "Código Penal · Artículo 478",
+  "img": "a-478.jpg",
+  "wh": [
+   1075,
+   178
   ]
  },
  {
@@ -2991,6 +3018,24 @@
   "wh": [
    1075,
    377
+  ]
+ },
+ {
+  "id": "a-496",
+  "nombre": "Código Penal · Artículo 496",
+  "img": "a-496.jpg",
+  "wh": [
+   1075,
+   192
+  ]
+ },
+ {
+  "id": "a-498",
+  "nombre": "Código Penal · Artículo 498",
+  "img": "a-498.jpg",
+  "wh": [
+   1075,
+   165
   ]
  },
  {

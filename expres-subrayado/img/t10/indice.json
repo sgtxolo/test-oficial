@@ -398,6 +398,15 @@
   ]
  },
  {
+  "id": "a-25",
+  "nombre": "Código Civil · Artículo 25",
+  "img": "a-25.jpg",
+  "wh": [
+   1075,
+   347
+  ]
+ },
+ {
   "id": "a-27",
   "nombre": "Código Civil · Artículo 27",
   "img": "a-27.jpg",
@@ -2468,6 +2477,15 @@
   ]
  },
  {
+  "id": "a-202",
+  "nombre": "Código Civil · Artículo 202",
+  "img": "a-202.jpg",
+  "wh": [
+   1075,
+   319
+  ]
+ },
+ {
   "id": "a-205",
   "nombre": "Código Civil · Artículo 205",
   "img": "a-205.jpg",
@@ -2486,6 +2504,15 @@
     0,
     90
    ]
+  ]
+ },
+ {
+  "id": "a-206",
+  "nombre": "Código Civil · Artículo 206",
+  "img": "a-206.jpg",
+  "wh": [
+   1075,
+   162
   ]
  },
  {
@@ -2630,6 +2657,15 @@
     0,
     89
    ]
+  ]
+ },
+ {
+  "id": "a-221",
+  "nombre": "Código Civil · Artículo 221",
+  "img": "a-221.jpg",
+  "wh": [
+   1075,
+   120
   ]
  },
  {
