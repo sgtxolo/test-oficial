@@ -2954,6 +2954,15 @@
   ]
  },
  {
+  "id": "a-484",
+  "nombre": "Código Penal · Artículo 484",
+  "img": "a-484.jpg",
+  "wh": [
+   1075,
+   615
+  ]
+ },
+ {
   "id": "a-485",
   "nombre": "Código Penal · Artículo 485",
   "img": "a-485.jpg",
@@ -2979,6 +2988,24 @@
     276,
     317
    ]
+  ]
+ },
+ {
+  "id": "a-489",
+  "nombre": "Código Penal · Artículo 489",
+  "img": "a-489.jpg",
+  "wh": [
+   1075,
+   168
+  ]
+ },
+ {
+  "id": "a-490",
+  "nombre": "Código Penal · Artículo 490",
+  "img": "a-490.jpg",
+  "wh": [
+   1075,
+   418
   ]
  },
  {
