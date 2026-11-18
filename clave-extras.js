@@ -36,6 +36,8 @@
     '.cq-r{font-size:1.1em;padding:10px 12px;border-left:4px solid #15803d;background:rgba(21,128,61,.12);border-radius:6px;margin:8px 0}' +
     '.cq-prog{height:8px;border-radius:6px;background:var(--linea,#cfcfcf);overflow:hidden;margin:4px 0 10px}.cq-prog i{display:block;height:100%;background:#14532d;width:0}' +
     '.cq-of{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:#1d4ed8;border-radius:5px;padding:0 5px;margin-right:6px}' +
+    '.cq-opts{display:flex;flex-direction:column;gap:8px;margin:8px 0}.cq-opt{display:block;text-align:left;border:1px solid var(--linea,#cfcfcf);border-radius:10px;background:var(--fondo,#fff);color:var(--tx,#1b1b1b);font:inherit;padding:10px 12px;line-height:1.35}button.cq-opt{cursor:pointer}.cq-opt.ok{background:rgba(21,128,61,.18);border-color:#15803d}.cq-opt.ko{background:rgba(185,28,28,.15);border-color:#b91c1c}' +
+    '.cq-res{font-weight:700;margin:8px 0}.cq-res.ok{color:#15803d}.cq-res.ko{color:#b91c1c}.cq-expl{font-size:.95em;margin:6px 0}.cq-expl .ex-resp{display:block;font-weight:700;color:#15803d;margin:0 0 6px}.cq-expl .ref-norma{display:block;font-weight:700;color:#7e3fb8;margin:0 0 6px}.cq-expl .ref-concepto{display:block;font-weight:600;color:#c62828;margin:0 0 6px}.cq-expl mark{background:rgba(21,128,61,.2);padding:0 2px}' +
     '@media print{.cq-bar,.cq-quiz,.cq-ini{display:none!important}}';
   D.head.appendChild(css);
 
@@ -163,7 +165,8 @@
   });
 
   /* ---------- preguntas del esquema clave (al final) ---------- */
-  var banco = [];
+  var banco = [], bancoTest = [];
+  var NT = (location.pathname.match(/repaso-t(\d+)-/) || [])[1];
   function reunir() {
     banco = [];
     Array.prototype.forEach.call(hoja.querySelectorAll('.rq-art'), function (art) {
@@ -180,19 +183,34 @@
       var q = t.slice(0, i).replace(/^R\d+\s*/, '').trim(), r = norm(rn.textContent).replace(/^\[\s*|\s*\]$/g, '');
       if (q && r) banco.push({a: n ? norm(n.textContent) + ' · RECUERDA' : 'RECUERDA', q: q, r: r, of: false});
     });
+    reunirTest();
+  }
+  function reunirTest() {   // preguntas de TEST de los artículos del esquema (datos de clave-tests/tN.js)
+    bancoTest = [];
+    var arr = (window.CLAVE_TEST || {})[NT] || [];
+    arr.forEach(function (g) { g.q.forEach(function (q) { bancoTest.push({t: 1, a: g.a, id: q.i, q: q.p, o: q.o, c: q.c, e: q.e, of: !/-ia-/.test(q.i)}); }); });
+  }
+  if (NT) {   // carga los datos del tema y rehace el bloque al llegar
+    var sc = D.createElement('script'); sc.src = 'clave-tests/t' + NT + '.js';
+    sc.onload = function () { reunirTest(); if (quiz && !modoQuiz && !cola.length) pintaInicio(); };
+    D.head.appendChild(sc);
   }
   var quiz = null, modoQuiz = false, cola = [], qi = 0, aciertos = 0, falladas = [], mostrada = false, voz = false, espera = parseInt(ls('clave-espera') || '6', 10);
   function crearQuiz() {
-    reunir(); if (!banco.length) return;
+    reunir(); if (!banco.length && !NT) return;
     quiz = D.createElement('section'); quiz.className = 'cq-quiz'; quiz.id = 'cq-quiz';
     var pie = $('.pie', hoja); if (pie && pie.parentNode === hoja) hoja.insertBefore(quiz, pie); else hoja.appendChild(quiz);
     pintaInicio();
   }
   function pintaInicio() {
-    var of = banco.filter(function (x) { return x.of; }).length;
-    quiz.innerHTML = '<h2>🧠 Hazme las preguntas del esquema clave</h2><p class="cq-sub">' + banco.length + ' preguntas cortas (las mismas de «preguntas rápidas»). Te pregunto, piensas, y ves o escuchas la respuesta.</p>' +
-      '<div class="cq-fila"><label>Cuántas: <select id="cq-n"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="0">Todas (' + banco.length + ')</option></select></label>' +
-      '<label><input type="checkbox" id="cq-of"> Solo oficiales (' + of + ')</label>' +
+    cola = [];
+    var nT = bancoTest.length, ofT = bancoTest.filter(function (x) { return x.of; }).length, modo = ls('clave-modo') || 'test';
+    if (!nT && modo === 'test') modo = 'rapida';
+    quiz.innerHTML = '<h2>🧠 Hazme las preguntas del esquema clave</h2>' +
+      '<p class="cq-sub">Elige tipo: <b>preguntas de test</b> de los artículos de este esquema (oficiales + de estudio) o <b>preguntas rápidas</b> (pregunta → respuesta corta).</p>' +
+      '<div class="cq-fila"><label>Tipo: <select id="cq-modo"><option value="test"' + (modo === 'test' ? ' selected' : '') + '>📝 Preguntas tipo test (' + (nT || 'cargando…') + ')</option><option value="rapida"' + (modo === 'rapida' ? ' selected' : '') + '>⚡ Preguntas rápidas (' + banco.length + ')</option></select></label></div>' +
+      '<div class="cq-fila"><label>Cuántas: <select id="cq-n"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="0">Todas</option></select></label>' +
+      '<label><input type="checkbox" id="cq-of"> Solo oficiales' + (nT ? ' (' + ofT + ' test)' : '') + '</label>' +
       '<label><input type="checkbox" id="cq-voz"' + (ls('clave-quizvoz') === '1' ? ' checked' : '') + '> 🔊 Por voz (modo coche)</label></div>' +
       '<div class="cq-fila"><label>Pausa antes de la respuesta (voz): <select id="cq-esp">' + [3, 5, 6, 8, 10, 15].map(function (s) { return '<option value="' + s + '"' + (s === espera ? ' selected' : '') + '>' + s + ' s</option>'; }).join('') + '</select></label></div>' +
       '<div class="cq-fila"><button class="cq-btn p" id="cq-go">▶ Empezar</button></div>';
@@ -201,9 +219,11 @@
   }
   function mezcla(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
   function empezarQuiz() {
-    var n = parseInt($('#cq-n', quiz).value, 10), soloOf = $('#cq-of', quiz).checked; voz = $('#cq-voz', quiz).checked; espera = parseInt($('#cq-esp', quiz).value, 10) || 6;
-    ls('clave-quizvoz', voz ? '1' : '0'); ls('clave-espera', String(espera));
-    var base = banco.filter(function (x) { return !soloOf || x.of; }); if (!base.length) { base = banco; }
+    var n = parseInt($('#cq-n', quiz).value, 10), soloOf = $('#cq-of', quiz).checked, modo = $('#cq-modo', quiz).value;
+    voz = $('#cq-voz', quiz).checked; espera = parseInt($('#cq-esp', quiz).value, 10) || 6;
+    ls('clave-quizvoz', voz ? '1' : '0'); ls('clave-espera', String(espera)); ls('clave-modo', modo);
+    var origen = modo === 'test' ? bancoTest : banco;
+    var base = origen.filter(function (x) { return !soloOf || x.of; }); if (!base.length) base = origen; if (!base.length) return;
     cola = mezcla(base.slice()); if (n > 0) cola = cola.slice(0, n);
     qi = 0; aciertos = 0; falladas = []; parar(); activo = false; marca(null);
     if (voz) { modoQuiz = true; bar.classList.add('on'); pantalla(true); $('[data-a="play"]', bar).textContent = '⏸'; colocaBarra(); quizVoz(); }
@@ -211,37 +231,73 @@
     try { quiz.scrollIntoView({block: 'start', behavior: 'smooth'}); } catch (e) {}
   }
   function cabecera() { return '<div class="cq-prog"><i style="width:' + Math.round(qi / cola.length * 100) + '%"></i></div><div class="cq-art">' + (qi + 1) + ' de ' + cola.length + ' · ' + esc(cola[qi].a) + '</div>'; }
+  var LET = ['A', 'B', 'C', 'D', 'E', 'F'];
+  function explPartes(html) {   // «Respuesta correcta» / lila / rojo / resto, por separado (para leerlas con pausas)
+    var d = D.createElement('div'); d.innerHTML = html || '';
+    var r = [], T = function (x) { return norm(x.textContent); };
+    ['.ex-resp', '.ref-norma', '.ref-concepto'].forEach(function (s) { Array.prototype.forEach.call(d.querySelectorAll(s), function (x) { var t = T(x); if (t) r.push(t); x.parentNode.removeChild(x); }); });
+    var t = T(d); if (t) r.push(t); return r;
+  }
+  function cabTest(c) { return '<h2>🧠 Preguntas tipo test del esquema clave</h2>' + cabecera() + '<div class="cq-q">' + (c.of ? '<span class="cq-of">OFICIAL</span>' : '') + c.q + '</div>'; }
   function pintaPregunta() {
     if (qi >= cola.length) return fin();
     var c = cola[qi]; mostrada = false;
-    quiz.innerHTML = '<h2>🧠 Preguntas del esquema clave</h2>' + cabecera() + '<div class="cq-q">' + (c.of ? '<span class="cq-of">OF</span>' : '') + esc(c.q) + '</div><div class="cq-fila"><button class="cq-btn p" id="cq-ver">👁 Ver respuesta</button><button class="cq-btn" id="cq-oir">🔊 Leer pregunta</button><button class="cq-btn" id="cq-sal">Salir</button></div>';
-    $('#cq-ver', quiz).onclick = muestraResp; $('#cq-sal', quiz).onclick = function () { parar(); pintaInicio(); };
-    $('#cq-oir', quiz).onclick = function () { parar(); decir(c.q, tok); };
+    if (c.t) {
+      quiz.innerHTML = cabTest(c) + '<div class="cq-opts">' + c.o.map(function (o, i) { return '<button class="cq-opt" data-i="' + i + '"><b>' + LET[i] + '.</b> ' + o + '</button>'; }).join('') + '</div><div class="cq-fila"><button class="cq-btn" id="cq-oir">🔊 Leer pregunta</button><button class="cq-btn" id="cq-sal">Salir</button></div>';
+      Array.prototype.forEach.call(quiz.querySelectorAll('.cq-opt'), function (b) { b.onclick = function () { responderTest(+b.getAttribute('data-i')); }; });
+      $('#cq-oir', quiz).onclick = function () { parar(); decir(textoTest(c), tok); };
+    } else {
+      quiz.innerHTML = '<h2>🧠 Preguntas rápidas del esquema clave</h2>' + cabecera() + '<div class="cq-q">' + (c.of ? '<span class="cq-of">OF</span>' : '') + esc(c.q) + '</div><div class="cq-fila"><button class="cq-btn p" id="cq-ver">👁 Ver respuesta</button><button class="cq-btn" id="cq-oir">🔊 Leer pregunta</button><button class="cq-btn" id="cq-sal">Salir</button></div>';
+      $('#cq-ver', quiz).onclick = muestraResp; $('#cq-oir', quiz).onclick = function () { parar(); decir(c.q, tok); };
+    }
+    $('#cq-sal', quiz).onclick = function () { parar(); pintaInicio(); };
+  }
+  function textoTest(c) { return hablable(c.q.replace(/<[^>]+>/g, ' ')) + '. ' + c.o.map(function (o, i) { return 'Opción ' + LET[i] + ': ' + hablable(o.replace(/<[^>]+>/g, ' ')) + '.'; }).join(' '); }
+  function responderTest(i) {
+    var c = cola[qi], ok = i === c.c; if (ok) aciertos++; else falladas.push(c); parar();
+    var ops = c.o.map(function (o, k) { return '<div class="cq-opt ' + (k === c.c ? 'ok' : (k === i ? 'ko' : '')) + '"><b>' + LET[k] + '.</b> ' + o + '</div>'; }).join('');
+    quiz.innerHTML = cabTest(c) + '<div class="cq-opts">' + ops + '</div><div class="cq-res ' + (ok ? 'ok' : 'ko') + '">' + (ok ? '✅ Correcto' : '❌ Incorrecto') + '</div><div class="cq-expl">' + (c.e || '') + '</div><div class="cq-fila"><button class="cq-btn p" id="cq-sig">Siguiente ▶</button><button class="cq-btn" id="cq-oir">🔊 Leer explicación</button></div>';
+    $('#cq-sig', quiz).onclick = function () { parar(); qi++; pintaPregunta(); };
+    $('#cq-oir', quiz).onclick = async function () { parar(); var t = tok, p = explPartes(c.e); for (var k = 0; k < p.length; k++) { if (!(await decir(p[k], t))) return; await pausa(1000, t); if (t !== tok) return; } };
   }
   function muestraResp() {
     var c = cola[qi]; mostrada = true;
-    quiz.innerHTML = '<h2>🧠 Preguntas del esquema clave</h2>' + cabecera() + '<div class="cq-q">' + (c.of ? '<span class="cq-of">OF</span>' : '') + esc(c.q) + '</div><div class="cq-r">' + esc(c.r) + '</div><div class="cq-fila"><button class="cq-btn p" id="cq-ok">✔ La sabía</button><button class="cq-btn m" id="cq-ko">✖ Repasar</button><button class="cq-btn" id="cq-oir">🔊 Leer respuesta</button></div>';
+    quiz.innerHTML = '<h2>🧠 Preguntas rápidas del esquema clave</h2>' + cabecera() + '<div class="cq-q">' + (c.of ? '<span class="cq-of">OF</span>' : '') + esc(c.q) + '</div><div class="cq-r">' + esc(c.r) + '</div><div class="cq-fila"><button class="cq-btn p" id="cq-ok">✔ La sabía</button><button class="cq-btn m" id="cq-ko">✖ Repasar</button><button class="cq-btn" id="cq-oir">🔊 Leer respuesta</button></div>';
     $('#cq-ok', quiz).onclick = function () { aciertos++; qi++; parar(); pintaPregunta(); };
     $('#cq-ko', quiz).onclick = function () { falladas.push(c); qi++; parar(); pintaPregunta(); };
     $('#cq-oir', quiz).onclick = function () { parar(); decir(c.r, tok); };
   }
   function fin() {
     parar(); modoQuiz = false; bar.classList.remove('on'); pantalla(false);
-    quiz.innerHTML = '<h2>🧠 Terminado</h2><p class="cq-q">' + (voz ? cola.length + ' preguntas repasadas por voz.' : aciertos + ' de ' + cola.length + ' sabidas.') + '</p><div class="cq-fila">' +
-      (!voz && falladas.length ? '<button class="cq-btn m" id="cq-rep">🔁 Repetir las ' + falladas.length + ' a repasar</button>' : '') + '<button class="cq-btn p" id="cq-otra">↺ Otra tanda</button></div>';
+    quiz.innerHTML = '<h2>🧠 Terminado</h2><p class="cq-q">' + (voz ? cola.length + ' preguntas repasadas por voz.' : aciertos + ' de ' + cola.length + (cola[0] && cola[0].t ? ' acertadas.' : ' sabidas.')) + '</p><div class="cq-fila">' +
+      (!voz && falladas.length ? '<button class="cq-btn m" id="cq-rep">🔁 Repetir las ' + falladas.length + ' falladas</button>' : '') + '<button class="cq-btn p" id="cq-otra">↺ Otra tanda</button></div>';
     var r = $('#cq-rep', quiz); if (r) r.onclick = function () { cola = mezcla(falladas.slice()); qi = 0; aciertos = 0; falladas = []; pintaPregunta(); };
     $('#cq-otra', quiz).onclick = pintaInicio;
   }
   async function quizVoz() {
     parar(); var t = tok;
     while (modoQuiz && t === tok && qi < cola.length) {
-      var c = cola[qi]; quiz.innerHTML = '<h2>🔊 Preguntas por voz</h2>' + cabecera() + '<div class="cq-q">' + esc(c.q) + '</div><div class="cq-r" style="visibility:hidden">' + esc(c.r) + '</div>';
-      info((qi + 1) + '/' + cola.length);
-      if (!(await decir('Pregunta ' + (qi + 1) + '. ' + hablable(c.q), t))) return;
-      await pausa(espera * 1000, t); if (t !== tok) return;
-      var rr = quiz.querySelector('.cq-r'); if (rr) rr.style.visibility = 'visible';
-      if (!(await decir('Respuesta. ' + hablable(c.r), t))) return;
-      await pausa(2200, t); if (t !== tok) return;
+      var c = cola[qi]; info((qi + 1) + '/' + cola.length);
+      if (c.t) {
+        var ops = c.o.map(function (o, k) { return '<div class="cq-opt" data-k="' + k + '"><b>' + LET[k] + '.</b> ' + o + '</div>'; }).join('');
+        quiz.innerHTML = cabTest(c) + '<div class="cq-opts">' + ops + '</div><div class="cq-expl"></div>';
+        if (!(await decir('Pregunta ' + (qi + 1) + '. ' + textoTest(c), t))) return;
+        await pausa(espera * 1000, t); if (t !== tok) return;
+        var ok = quiz.querySelector('.cq-opt[data-k="' + c.c + '"]'); if (ok) ok.className += ' ok';
+        quiz.querySelector('.cq-expl').innerHTML = c.e || '';
+        if (!(await decir('Respuesta correcta: ' + LET[c.c] + '. ' + hablable(c.o[c.c].replace(/<[^>]+>/g, ' ')), t))) return;
+        await pausa(1400, t); if (t !== tok) return;
+        var pe = explPartes(c.e).filter(function (x) { return !/^Respuesta correcta/i.test(x); });
+        for (var k = 0; k < pe.length; k++) { if (!(await decir(hablable(pe[k]), t))) return; await pausa(1200, t); if (t !== tok) return; }
+        await pausa(1500, t); if (t !== tok) return;
+      } else {
+        quiz.innerHTML = '<h2>🔊 Preguntas por voz</h2>' + cabecera() + '<div class="cq-q">' + esc(c.q) + '</div><div class="cq-r" style="visibility:hidden">' + esc(c.r) + '</div>';
+        if (!(await decir('Pregunta ' + (qi + 1) + '. ' + hablable(c.q), t))) return;
+        await pausa(espera * 1000, t); if (t !== tok) return;
+        var rr = quiz.querySelector('.cq-r'); if (rr) rr.style.visibility = 'visible';
+        if (!(await decir('Respuesta. ' + hablable(c.r), t))) return;
+        await pausa(2200, t); if (t !== tok) return;
+      }
       qi++;
     }
     if (t === tok && modoQuiz) fin();
