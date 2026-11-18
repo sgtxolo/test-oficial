@@ -241,6 +241,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
   <button class="ib oculto" id="b-cut" title="Quitar trozos del artículo que estás viendo">✂️ <span class="txt-b">Quitar trozos</span></button>
   <button class="ib" id="b-panel" title="Panel de estudio">🎯 <span class="txt-b">Panel</span></button>
   <button class="ib" id="b-marcas" title="Subrayar y dibujar sobre tu temario">✏️ <span class="txt-b">Marcas</span></button>
+  <button class="ib" id="b-margen" title="Margen: marcas de preguntas y respuestas al lado de cada párrafo">📐 <span class="txt-b">Margen</span></button>
   <button class="ib" id="b-sync" title="Sincronizar con tus otros dispositivos">☁</button>
   <button class="ib" id="b-gh" title="Repositorio y token de la sincronización">⚙</button>
   <button class="ib" id="b-imp" title="Preparar impresión (elige qué versión de cada artículo)">🖨</button>
@@ -330,6 +331,8 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres-subrayado/datos-t1.js"></script>
 <script src="expres-subrayado/datos-t5.js"></script>
 <script src="expres-subrayado/datos-t7.js"></script>
+<script src="expres-subrayado/margen-t7.js"></script>
+<script src="expres-subrayado/margen.js"></script>
 <script src="expres-subrayado/datos-t14.js"></script>
 <script src="expres-subrayado/datos-t3.js"></script>
 <script src="expres-subrayado/datos-t4.js"></script>
@@ -821,7 +824,7 @@ function lista() {
   return h;
 }
 function render() { if (tema === null) dash(); else verTema(); }
-function pintaLista() { $('#m').innerHTML = lista(); montaEsqs(); ajustaRepaso(); }
+function pintaLista() { $('#m').innerHTML = lista(); montaEsqs(); ajustaRepaso(); if (window.margenAplica) margenAplica(); }
 function verTema() { $('#b-atras').classList.remove('oculto'); $('#b-cut').classList.remove('oculto'); $('#b-filtros').classList.remove('oculto'); botonPin(); $('#tit').textContent = nomTema(tema); infoTema(); cabTema(); pintaLista(); }
 // ---------- «aquí te quedaste» ----------
 function pill() {
@@ -993,7 +996,7 @@ function irA() {
 }
 function entra() {
   const h = location.hash, mq = h.match(/[#&]q=([^&]+)/), mp = h.match(/[#&]p=([^&]+)/), mt = h.match(/[#&]t=(\d+)/), ma = h.match(/[#&]ap=(\d+)/);
-  if (mq) { const q = decodeURIComponent(mq[1]), t = String(parseInt(q, 10)); if (D[t]) { tema = t; dest = mp ? decodeURIComponent(mp[1]) : (D[t].preg[q] || null); destAp = ma ? +ma[1] : null; } }
+  if (mq) { const q = decodeURIComponent(mq[1]), t = String(parseInt(q, 10)); window.QDEST = q; if (D[t]) { tema = t; dest = mp ? decodeURIComponent(mp[1]) : (D[t].preg[q] || null); destAp = ma ? +ma[1] : null; } }
   else if (mt && D[mt[1]]) { tema = mt[1]; dest = mp ? decodeURIComponent(mp[1]) : null; }
   else if (emb) tema = Object.keys(D).sort((a, b) => a - b)[0];
   if (/[#&]entero=1/.test(h) && tema && dest) { st.ent = st.ent || {}; st.ent[key(tema, dest)] = 1; destAp = null; }   // «➕ Resto en Mi subrayado» del Exprés: se abre el artículo entero
