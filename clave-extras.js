@@ -195,6 +195,13 @@
     sc.onload = function () { reunirTest(); if (quiz && !modoQuiz && !cola.length) pintaInicio(); };
     D.head.appendChild(sc);
   }
+  var todoCargado = false;
+  function cargaTodo(cb) {
+    if (todoCargado) return cb(); var x = D.createElement('script'); x.src = 'clave-tests/t' + NT + '-todo.js';
+    x.onload = function () { todoCargado = true; ((window.CLAVE_TODO || {})[NT] || []).forEach(function (g) { g.q.forEach(function (q) { bancoTodo.push({t: 1, a: g.a, id: q.i, q: q.p, o: q.o, c: q.c, e: q.e, of: !/-ia-/.test(q.i)}); }); }); cb(); };
+    x.onerror = function () { cb(); }; D.head.appendChild(x);
+  }
+  var bancoTodo = [];
   var quiz = null, modoQuiz = false, cola = [], qi = 0, aciertos = 0, falladas = [], mostrada = false, voz = false, espera = parseInt(ls('clave-espera') || '6', 10);
   function crearQuiz() {
     reunir(); if (!banco.length && !NT) return;
@@ -209,6 +216,7 @@
     quiz.innerHTML = '<h2>🧠 Hazme las preguntas del esquema clave</h2>' +
       '<p class="cq-sub">Elige tipo: <b>preguntas de test</b> de los artículos de este esquema (oficiales + de estudio) o <b>preguntas rápidas</b> (pregunta → respuesta corta).</p>' +
       '<div class="cq-fila"><label>Tipo: <select id="cq-modo"><option value="test"' + (modo === 'test' ? ' selected' : '') + '>📝 Preguntas tipo test (' + (nT || 'cargando…') + ')</option><option value="rapida"' + (modo === 'rapida' ? ' selected' : '') + '>⚡ Preguntas rápidas (' + banco.length + ')</option></select></label></div>' +
+      '<div class="cq-fila"><label>Alcance: <select id="cq-alc"><option value="clave">Artículos del esquema clave</option><option value="todo">Todo el tema (incluye el resto de preguntas)</option></select></label></div>' +
       '<div class="cq-fila"><label>Cuántas: <select id="cq-n"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="0">Todas</option></select></label>' +
       '<label><input type="checkbox" id="cq-of"> Solo oficiales' + (nT ? ' (' + ofT + ' test)' : '') + '</label>' +
       '<label><input type="checkbox" id="cq-voz"' + (ls('clave-quizvoz') === '1' ? ' checked' : '') + '> 🔊 Por voz (modo coche)</label></div>' +
@@ -222,7 +230,8 @@
     var n = parseInt($('#cq-n', quiz).value, 10), soloOf = $('#cq-of', quiz).checked, modo = $('#cq-modo', quiz).value;
     voz = $('#cq-voz', quiz).checked; espera = parseInt($('#cq-esp', quiz).value, 10) || 6;
     ls('clave-quizvoz', voz ? '1' : '0'); ls('clave-espera', String(espera)); ls('clave-modo', modo);
-    var origen = modo === 'test' ? bancoTest : banco;
+    if (modo === 'test' && $('#cq-alc', quiz).value === 'todo' && !todoCargado) { cargaTodo(function () { empezarQuiz(); }); return; }
+    var origen = modo === 'test' ? (($('#cq-alc', quiz).value === 'todo') ? bancoTest.concat(bancoTodo) : bancoTest) : banco;
     var base = origen.filter(function (x) { return !soloOf || x.of; }); if (!base.length) base = origen; if (!base.length) return;
     cola = mezcla(base.slice()); if (n > 0) cola = cola.slice(0, n);
     qi = 0; aciertos = 0; falladas = []; parar(); activo = false; marca(null);

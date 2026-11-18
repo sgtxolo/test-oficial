@@ -24,7 +24,7 @@ for (const f of fs.readdirSync(R).filter(x => /^repaso-t\d+-borrador\.html$/.tes
   const N = +f.match(/\d+/)[0]; if (sel.length && !sel.includes(N)) continue;
   let H; try { global.window = {}; eval(fs.readFileSync(R + 'expres/t' + N + '.js', 'utf8')); H = window.EXPRES_T[N].html; } catch (e) { H = ''; }
   const fichas = []; { const re = /<div class="ex-ficha">/g; let m; while ((m = re.exec(H))) { const blk = H.slice(m.index, cierra(H, m.index)); const hd = blk.match(/<div class="ex-fh">([\s\S]*?)<\/div><div class="ex-fb">/); if (!hd) continue;
-    fichas.push({ k: nm(plano(hd[1])), ids: [...new Set([...blk.matchAll(/data-q="([^"]+)"/g)].flatMap(x => x[1].split(',')).filter(Boolean))] }); } }
+    fichas.push({ h: plano(hd[1]).replace(/ (EXOF|EX|✱|Rd+)/g, '').trim(), k: nm(plano(hd[1])), ids: [...new Set([...blk.matchAll(/data-q="([^"]+)"/g)].flatMap(x => x[1].split(',')).filter(Boolean))] }); } }
   const Q = {}; PA.preguntas(N).forEach(q => Q[q.id] = q); const todas = Object.values(Q);
   const s = fs.readFileSync(R + f, 'utf8'); const arts = [];
   { let ctx = ''; for (const x of s.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>|<div class="art[^"]*"><h3>([\s\S]*?)<\/h3>|<div class="ban">([\s\S]*?)<\/div>/g)) {
@@ -48,6 +48,10 @@ for (const f of fs.readdirSync(R).filter(x => /^repaso-t\d+-borrador\.html$/.tes
     qs.forEach(q => vistos.add(q.id));
     if (qs.length) out.push({ a, q: qs.map(q => ({ i: q.id, p: q.pregunta, o: q.opciones, c: q.correcta, e: q.explicacion || '' })) });
   });
+  // resto del tema (preguntas que no son de los artículos del esquema clave): para la opción «Todo el tema»
+  const grupo = {}; fichas.forEach(fc => fc.ids.forEach(id => { if (!grupo[id]) grupo[id] = fc.h; }));
+  const resto = {}; todas.filter(q => !vistos.has(q.id)).forEach(q => { const g = grupo[q.id] || q.apartado || 'Resto del tema'; (resto[g] = resto[g] || []).push({ i: q.id, p: q.pregunta, o: q.opciones, c: q.correcta, e: q.explicacion || '' }); });
+  fs.writeFileSync(R + 'clave-tests/t' + N + '-todo.js', '/* generado por prompts/herramientas/clave-tests.js; no editar a mano */\n(window.CLAVE_TODO=window.CLAVE_TODO||{})[' + N + ']=' + JSON.stringify(Object.keys(resto).map(a => ({ a, q: resto[a] }))) + ';\n');
   const n = out.reduce((t, x) => t + x.q.length, 0);
   fs.writeFileSync(R + 'clave-tests/t' + N + '.js', '/* generado por prompts/herramientas/clave-tests.js; no editar a mano */\n(window.CLAVE_TEST=window.CLAVE_TEST||{})[' + N + ']=' + JSON.stringify(out) + ';\n');
   console.log('T' + N, 'unidades', arts.length, 'sin preguntas', sin, '| preguntas', n, '| KB', Math.round(fs.statSync(R + 'clave-tests/t' + N + '.js').size / 1024));
