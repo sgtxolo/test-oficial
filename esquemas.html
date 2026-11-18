@@ -291,6 +291,7 @@ body.voz-abierta .voz-bar{display:flex}
 .leyendo{outline:3px solid var(--examen-borde);outline-offset:3px;border-radius:6px;background:var(--examen-bg)}
 @media print{.voz-bar{display:none!important}}
 </style>
+<style>.r-lila{background:#b06bff55;box-shadow:inset 0 -3px 0 #7a2fd0;border-radius:2px}</style>
 </head>
 <body>
 <div id="app">
@@ -338,6 +339,7 @@ body.voz-abierta .voz-bar{display:flex}
 <script id="cobertura-temario">window.COBERTURA={"1":{"temario":298,"esquema":296},"2":{"temario":227,"esquema":199},"3":{"temario":154,"esquema":154,"aviso":1},"4":{"temario":270,"esquema":270,"aviso":1},"5":{"temario":300,"esquema":240},"6":{"temario":138,"esquema":130},"7":{"temario":56,"esquema":56},"8":{"temario":170,"esquema":162},"9":{"temario":31,"esquema":31},"10":{"temario":252,"esquema":248},"11":{"temario":391,"esquema":297},"12":{"temario":29,"esquema":29},"13":{"temario":67,"esquema":63},"14":{"temario":79,"esquema":79}};</script>
 <script src="esquemas-datos/huecos.js"></script>
 <script src="esquemas-datos/mapa-preguntas.js"></script>
+<script src="esquemas-datos/lila-t7.js"></script>
 <script src="esquemas-datos/t25.js"></script>
 <script src="esquemas-datos/t23.js"></script>
 <script src="esquemas-datos/t22.js"></script>
@@ -4441,6 +4443,21 @@ body.embed #app{padding-top:4px}
     if (typeof mostrar === 'function') mostrar(temaId);
     setTimeout(() => { el.scrollIntoView({block:'center'}); el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); }, 60);
   }
+  // ---------- Subrayar en lila la respuesta de la pregunta con la que llegas desde el test (hoy solo Tema 7: esquemas-datos/lila-t7.js) ----------
+  function lilaPregunta(id, raiz){
+    document.querySelectorAll('.r-lila').forEach(s => { const p = s.parentNode; if (!p) return; while (s.firstChild) p.insertBefore(s.firstChild, s); p.removeChild(s); p.normalize(); });
+    const txt = (window.LILA_Q || {})[id]; if (!txt || !raiz) return null;
+    const w = document.createTreeWalker(raiz, NodeFilter.SHOW_TEXT, {acceptNode: n => n.parentElement && n.parentElement.closest('.ex-q,.ex-sello,script,style') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT});
+    const S = [], M = []; let n;
+    while ((n = w.nextNode())){ const t = n.nodeValue; for (let i = 0; i < t.length; i++){ const c = t[i].normalize('NFD').toLowerCase().replace(/[^a-z0-9]/g, ''); for (const ch of c){ S.push(ch); M.push([n, i]); } } }
+    const s = S.join(''), q = txt.normalize('NFD').toLowerCase().replace(/[^a-z0-9]/g, '');
+    let a = s.indexOf(q), b = a < 0 ? -1 : a + q.length;
+    if (a < 0 && q.length > 60){ const h = q.slice(0, 50), t = q.slice(-50), i = s.indexOf(h), j = i < 0 ? -1 : s.indexOf(t, i + 1); if (i >= 0 && j > i){ a = i; b = j + 50; } }
+    if (a < 0) return null;
+    const por = new Map(); for (let i = a; i < b; i++){ const [nd, o] = M[i], r = por.get(nd); if (!r) por.set(nd, [o, o + 1]); else r[1] = o + 1; }
+    const spans = []; por.forEach(([x, y], nd) => { const r = document.createRange(); r.setStart(nd, x); r.setEnd(nd, y); const sp = document.createElement('span'); sp.className = 'r-lila'; try { r.surroundContents(sp); spans.push(sp); } catch (e) {} });
+    return spans[0] || null;
+  }
   function irAPregunta(id){
     const sitio = MAPA[id]; if (!sitio) { const t = parseInt(id, 10); if (t && document.getElementById('tema-' + t)) mostrar('tema-' + t); return false; }
     const [t, k, j, i] = sitio.split('-');
@@ -4449,11 +4466,23 @@ body.embed #app{padding-top:4px}
     const art = esq.querySelectorAll('.articulo')[+k]; if (!art) return false;
     let el = art;
     if (j !== 'x'){ const p = art.querySelectorAll('.txt p')[+j]; if (p){ el = p; if (i !== undefined){ const m = p.querySelectorAll('mark.m-resp')[+i]; if (m) el = m; } } }
+    const L = lilaPregunta(id, art); if (L) el = L;
     irA(el, 'tema-' + t); return true;
   }
   // vuelta desde el test al ⚡ Exprés (esquemas.html#q=1-12&ex=1): se abre el Exprés del tema en la respuesta de esa pregunta
+  function lilaExpres(id, t){
+    let n = 0; const iv = setInterval(() => {
+      if (++n > 80 || document.querySelector('.r-lila')) return clearInterval(iv);
+      const raiz = document.getElementById('tema-' + t); if (!raiz) return;
+      const l = [...raiz.querySelectorAll('.ex-cont [data-q]')].filter(x => x.dataset.q.split(',').includes(id)), b = l.find(x => x.matches('mark.m-resp')) || l[0]; if (!b) return;
+      const L = lilaPregunta(id, b.closest('.ex-ficha') || b); if (!L) return;
+      let pl = L.closest('.ex-plg'); while (pl){ pl.classList.add('on'); pl = pl.parentElement && pl.parentElement.closest('.ex-plg'); }
+      setTimeout(() => L.scrollIntoView({block: 'center'}), 150);
+    }, 250);
+  }
   function irAPreguntaExpres(id, xm){
     const t = parseInt(id, 10); if (!t || !document.getElementById('tema-' + t) || typeof window.expresActivar !== 'function') return irAPregunta(id);
+    lilaExpres(id, t);
     // el restaurador de posición del Exprés (restaurarPos) lleva a este destino en vez de a la posición guardada (que era el principio)
     window._exDestino = c => { const l = [...c.querySelectorAll('[data-q]')].filter(x => x.dataset.q.split(',').includes(id)); const m = l.find(x => x.matches('mark.m-resp')) || l[0]; return m ? (m.closest('.ex-ficha') || m) : null; };
     mostrar('tema-' + t); window.expresActivar(xm ? 'xm' : 'ex');

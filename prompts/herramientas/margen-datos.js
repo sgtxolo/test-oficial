@@ -63,6 +63,10 @@ files.forEach(([pid, kind, file], k) => {
   const qr = {}; (pregPieza[pid] || []).forEach(id => { const r = locQ(id, 0, W.length); if (r.length) qr[id] = r; });
   (out[file] = { w: wh[0], h: wh[1], tx, m: marks, qr });
 });
+// texto literal de la respuesta de cada pregunta (para subrayarla en lila en Esquemas): la cita del temario; en las de IA, la propia respuesta si es larga
+const lila = {}; Object.keys(DT.preg).forEach(id => { const ia = /-ia-/.test(id), c = CI[id] ? CI[id][1] : ((optsC[id] = optsC[id] || opts(id)) || {}).cita, a = QA[id]; const t = c || (a && toks(a[1]).length >= 3 ? a[1] : ''); if (t) lila[id] = t; });
+fs.writeFileSync(B + `esquemas-datos/lila-t${T}.js`, `window.LILA_Q=Object.assign(window.LILA_Q||{},${JSON.stringify(lila)});\n`);
+console.log('textos para lila:', Object.keys(lila).length);
 const dest = B + `expres-subrayado/margen-t${T}.js`;
 fs.writeFileSync(dest, `(window.EXSUB_MARG=window.EXSUB_MARG||{})[${T}]=${JSON.stringify(out)};\n`);
 console.log('imágenes', Object.keys(out).length, '· párrafos con marca', Object.values(out).reduce((s, x) => s + x.m.length, 0), '· respuestas de párrafo localizadas', nLoc + '/' + nDet, '· preguntas localizadas (todas)', Object.values(out).reduce((s, x) => s + Object.keys(x.qr).length, 0) + '/' + Object.keys(DT.preg).length, '→', dest);
