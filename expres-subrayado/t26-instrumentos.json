@@ -1,0 +1,9 @@
+[
+ { "id": "a", "nombre": "LO 11/2007 · Derechos y deberes de la Guardia Civil", "paginas": [6, 29], "inicio": "^PREÁMBULO", "cit": "Ley Orgánica 11/2007|LO 11/2007|derechos y deberes de los miembros", "pre": "a-pre", "pre_re": "Pre[áa]mbulo[^·]{0,12}· *Ley Org[áa]nica 11/2007" },
+ { "id": "b", "nombre": "LO 12/2007 · Régimen disciplinario de la Guardia Civil", "paginas": [30, 71], "inicio": "^PREÁMBULO", "cit": "Ley Orgánica 12/2007|LO 12/2007|r[ée]gimen disciplinario de la Guardia Civil", "pre": "b-pre", "pre_re": "Pre[áa]mbulo[^·]{0,12}· *Ley Org[áa]nica 12/2007" },
+ { "id": "c", "nombre": "Ley 29/2014 · Régimen del Personal de la Guardia Civil", "paginas": [72, 153], "inicio": "^PREÁMBULO", "cit": "Ley 29/2014|R[ée]gimen del Personal de la Guardia Civil", "pre": "c-pre", "pre_re": "Pre[áa]mbulo[^·]{0,12}· *Ley 29/2014" },
+ { "id": "d", "nombre": "Orden PRE/1983/2012 · Reales Ordenanzas (Guardia Civil)", "paginas": [154, 159], "inicio": "^ORDEN PRE/1983", "cit": "Orden PRE/1983/2012|PRE/1983/2012", "pre": "d-pre", "pre_re": "Pre[áa]mbulo[^·]{0,12}· *Orden PRE/1983/2012" },
+ { "id": "e", "nombre": "Protocolo de acoso laboral (Resolución 22/07/2019)", "inicio": "^RESOLUCIÓN DE 22 DE JULIO.*ACOSO LABORAL", "cit": "acoso laboral", "proto": 1 },
+ { "id": "f", "nombre": "Protocolo de acoso sexual y por razón de sexo (Resolución 22/07/2019)", "inicio": "^RESOLUCIÓN DE 22 DE JULIO.*ACOSO SEXUAL", "cit": "acoso sexual", "proto": 1 },
+ { "id": "g", "nombre": "Protocolo de violencia sobre la mujer (Resolución 06/07/2021)", "inicio": "^RESOLUCIÓN DE 6 DE JULIO", "cit": "violencia sobre la mujer", "proto": 1 }
+]

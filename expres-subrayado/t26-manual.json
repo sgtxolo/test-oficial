@@ -1,0 +1,1118 @@
+{
+ "manual": [
+  {
+   "id": "a-pre",
+   "nombre": "LO 11/2007 · Preámbulo",
+   "piezas": [
+    [
+     6,
+     0.33,
+     0.95
+    ],
+    [
+     7,
+     0.06,
+     0.95
+    ],
+    [
+     8,
+     0.06,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "b-pre",
+   "nombre": "LO 12/2007 · Preámbulo",
+   "piezas": [
+    [
+     30,
+     0.28,
+     0.95
+    ],
+    [
+     31,
+     0.06,
+     0.95
+    ],
+    [
+     32,
+     0.06,
+     0.95
+    ],
+    [
+     33,
+     0.06,
+     0.45
+    ]
+   ]
+  },
+  {
+   "id": "c-prea",
+   "nombre": "Ley 29/2014 · Preámbulo (completo)",
+   "piezas": [
+    [
+     72,
+     0.22,
+     0.95
+    ],
+    [
+     73,
+     0.06,
+     0.95
+    ],
+    [
+     74,
+     0.06,
+     0.95
+    ],
+    [
+     75,
+     0.06,
+     0.95
+    ],
+    [
+     76,
+     0.06,
+     0.95
+    ],
+    [
+     77,
+     0.06,
+     0.95
+    ],
+    [
+     78,
+     0.06,
+     0.62
+    ]
+   ]
+  },
+  {
+   "id": "c-pre",
+   "nombre": "Ley 29/2014 · Preámbulo V (régimen del personal)",
+   "piezas": [
+    [
+     76,
+     0.55,
+     0.95
+    ],
+    [
+     77,
+     0.06,
+     0.8
+    ]
+   ],
+   "ficha": "^Preámbulo V · Régimen",
+   "expres": 1
+  },
+  {
+   "id": "d-pre",
+   "nombre": "Orden PRE/1983/2012 · Preámbulo",
+   "piezas": [
+    [
+     154,
+     0.15,
+     0.95
+    ],
+    [
+     155,
+     0.06,
+     0.36
+    ]
+   ],
+   "ficha": "^Preámbulo · Orden",
+   "expres": 1
+  },
+  {
+   "id": "a-fin",
+   "nombre": "LO 11/2007 · Disposiciones adicionales, transitoria, derogatoria y finales",
+   "piezas": [
+    [
+     26,
+     0.09,
+     0.95
+    ],
+    [
+     27,
+     0.07,
+     0.95
+    ],
+    [
+     28,
+     0.07,
+     0.77
+    ]
+   ],
+   "ficha": "^Disposición adicional primera · Derechos",
+   "expres": 1
+  },
+  {
+   "id": "b-fin",
+   "nombre": "LO 12/2007 · Disposiciones adicionales, transitorias, derogatoria y finales",
+   "piezas": [
+    [
+     68,
+     0.07,
+     0.95
+    ],
+    [
+     69,
+     0.07,
+     0.95
+    ],
+    [
+     70,
+     0.07,
+     0.95
+    ],
+    [
+     71,
+     0.07,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "c-fin",
+   "nombre": "Ley 29/2014 · Disposiciones adicionales, transitorias, derogatoria y finales",
+   "piezas": [
+    [
+     142,
+     0.07,
+     0.95
+    ],
+    [
+     143,
+     0.07,
+     0.95
+    ],
+    [
+     144,
+     0.07,
+     0.95
+    ],
+    [
+     145,
+     0.07,
+     0.95
+    ],
+    [
+     146,
+     0.07,
+     0.95
+    ],
+    [
+     147,
+     0.07,
+     0.95
+    ],
+    [
+     148,
+     0.07,
+     0.95
+    ],
+    [
+     149,
+     0.07,
+     0.95
+    ],
+    [
+     150,
+     0.07,
+     0.95
+    ],
+    [
+     151,
+     0.07,
+     0.95
+    ],
+    [
+     152,
+     0.07,
+     0.93
+    ]
+   ]
+  },
+  {
+   "id": "d-fin",
+   "nombre": "Orden PRE/1983/2012 · Disposición adicional única y finales",
+   "piezas": [
+    [
+     158,
+     0.06,
+     0.62
+    ]
+   ],
+   "ficha": "^Disposición adicional única · Orden",
+   "expres": 1
+  },
+  {
+   "id": "e-pre",
+   "nombre": "Acoso laboral · Resolución de 22 de julio de 2019 (exposición de motivos y resuelvo)",
+   "piezas": [
+    [
+     160,
+     0.06,
+     0.95
+    ],
+    [
+     161,
+     0.06,
+     0.58
+    ]
+   ],
+   "ficha": "^Resolución de 22 de julio de 2019 · Exposición",
+   "expres": 1
+  },
+  {
+   "id": "e-1",
+   "nombre": "Acoso laboral · Apartado primero. Objetivos",
+   "piezas": [
+    [
+     162,
+     0.2,
+     0.95
+    ],
+    [
+     163,
+     0.06,
+     0.61
+    ]
+   ]
+  },
+  {
+   "id": "e-2",
+   "nombre": "Acoso laboral · Apartado segundo. Ámbito de aplicación subjetivo",
+   "piezas": [
+    [
+     163,
+     0.59,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "e-3",
+   "nombre": "Acoso laboral · Apartado tercero. Ámbito objetivo y definiciones",
+   "piezas": [
+    [
+     164,
+     0.05,
+     0.95
+    ]
+   ],
+   "ficha": "^TERCERO\\..*· Protocolo acoso laboral",
+   "expres": 1
+  },
+  {
+   "id": "e-4",
+   "nombre": "Acoso laboral · Apartado cuarto. Principios de actuación",
+   "piezas": [
+    [
+     165,
+     0.11,
+     0.64
+    ]
+   ],
+   "ficha": "^CUARTO\\..*· Protocolo acoso laboral",
+   "expres": 1
+  },
+  {
+   "id": "e-5",
+   "nombre": "Acoso laboral · Apartado quinto. Medidas preventivas (5.1 prevención primaria)",
+   "piezas": [
+    [
+     165,
+     0.62,
+     0.95
+    ],
+    [
+     166,
+     0.06,
+     0.95
+    ],
+    [
+     167,
+     0.06,
+     0.66
+    ]
+   ],
+   "ficha": "^QUINTO\\. Medidas preventivas · Protocolo acoso laboral",
+   "expres": 1
+  },
+  {
+   "id": "e-5b",
+   "nombre": "Acoso laboral · Apartado quinto 5.2. Prevención secundaria",
+   "piezas": [
+    [
+     167,
+     0.64,
+     0.95
+    ]
+   ],
+   "ficha": "^QUINTO · 5\\.2.*· Protocolo acoso laboral",
+   "expres": 1
+  },
+  {
+   "id": "e-5c",
+   "nombre": "Acoso laboral · Apartado quinto 5.3. Prevención terciaria",
+   "piezas": [
+    [
+     168,
+     0.08,
+     0.4
+    ]
+   ],
+   "ficha": "^QUINTO · 5\\.3.*· Protocolo acoso laboral",
+   "expres": 1
+  },
+  {
+   "id": "e-6",
+   "nombre": "Acoso laboral · Apartado sexto 6.1 y 6.2 (valoración)",
+   "piezas": [
+    [
+     168,
+     0.38,
+     0.95
+    ],
+    [
+     169,
+     0.06,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "e-6c",
+   "nombre": "Acoso laboral · Apartado sexto 6.3. Propuesta",
+   "piezas": [
+    [
+     170,
+     0.17,
+     0.66
+    ]
+   ],
+   "ficha": "^SEXTO · 6\\.3.*· Protocolo acoso laboral",
+   "expres": 1
+  },
+  {
+   "id": "e-6d",
+   "nombre": "Acoso laboral · Apartado sexto 6.4. Decisiones de carácter provisional",
+   "piezas": [
+    [
+     170,
+     0.62,
+     0.95
+    ],
+    [
+     171,
+     0.06,
+     0.22
+    ]
+   ],
+   "ficha": "^SEXTO · 6\\.4.*· Protocolo acoso laboral",
+   "expres": 1
+  },
+  {
+   "id": "e-7",
+   "nombre": "Acoso laboral · Apartado séptimo. Información, registro, seguimiento y control",
+   "piezas": [
+    [
+     171,
+     0.21,
+     0.95
+    ]
+   ],
+   "ficha": "^SÉPTIMO\\..*· Protocolo acoso laboral",
+   "expres": 1
+  },
+  {
+   "id": "e-8",
+   "nombre": "Acoso laboral · Apartado octavo. Difusión",
+   "piezas": [
+    [
+     173,
+     0.76,
+     0.95
+    ],
+    [
+     174,
+     0.06,
+     0.35
+    ]
+   ]
+  },
+  {
+   "id": "e-ax",
+   "nombre": "Acoso laboral · Anexos I a III (formularios)",
+   "piezas": [
+    [
+     175,
+     0.06,
+     0.95
+    ],
+    [
+     176,
+     0.06,
+     0.95
+    ],
+    [
+     177,
+     0.06,
+     0.95
+    ],
+    [
+     178,
+     0.06,
+     0.95
+    ],
+    [
+     179,
+     0.06,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "f-pre",
+   "nombre": "Acoso sexual · Resolución de 22 de julio de 2019 (título)",
+   "piezas": [
+    [
+     180,
+     0.06,
+     0.23
+    ]
+   ]
+  },
+  {
+   "id": "f-1",
+   "nombre": "Acoso sexual · Apartado primero. Objetivos",
+   "piezas": [
+    [
+     180,
+     0.22,
+     0.95
+    ]
+   ],
+   "ficha": "^PRIMERO\\..*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-2",
+   "nombre": "Acoso sexual · Apartado segundo. Ámbito de aplicación subjetivo",
+   "piezas": [
+    [
+     181,
+     0.06,
+     0.36
+    ]
+   ],
+   "ficha": "^SEGUNDO\\..*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-3",
+   "nombre": "Acoso sexual · Apartado tercero. Ámbito objetivo y definiciones",
+   "piezas": [
+    [
+     181,
+     0.35,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "f-4",
+   "nombre": "Acoso sexual · Apartado cuarto. Principios de actuación",
+   "piezas": [
+    [
+     182,
+     0.1,
+     0.68
+    ]
+   ],
+   "ficha": "^CUARTO\\..*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-5",
+   "nombre": "Acoso sexual · Apartado quinto. Medidas preventivas",
+   "piezas": [
+    [
+     182,
+     0.66,
+     0.95
+    ],
+    [
+     183,
+     0.06,
+     0.21
+    ]
+   ],
+   "ficha": "^QUINTO\\. Medidas preventivas · Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-5a",
+   "nombre": "Acoso sexual · Apartado quinto 5.1. Prevención primaria",
+   "piezas": [
+    [
+     183,
+     0.19,
+     0.95
+    ],
+    [
+     184,
+     0.06,
+     0.39
+    ]
+   ],
+   "ficha": "^QUINTO · 5\\.1.*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-5b",
+   "nombre": "Acoso sexual · Apartado quinto 5.2. Prevención secundaria",
+   "piezas": [
+    [
+     184,
+     0.38,
+     0.64
+    ]
+   ]
+  },
+  {
+   "id": "f-5c",
+   "nombre": "Acoso sexual · Apartado quinto 5.3. Prevención terciaria",
+   "piezas": [
+    [
+     184,
+     0.62,
+     0.95
+    ]
+   ],
+   "ficha": "^QUINTO · 5\\.3.*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-6",
+   "nombre": "Acoso sexual · Apartado sexto. Asesoramiento confidencial",
+   "piezas": [
+    [
+     187,
+     0.11,
+     0.68
+    ]
+   ],
+   "ficha": "^SEXTO\\..*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-7a",
+   "nombre": "Acoso sexual · Apartado séptimo 7.1. Inicio de las actuaciones",
+   "piezas": [
+    [
+     187,
+     0.67,
+     0.95
+    ],
+    [
+     190,
+     0.06,
+     0.46
+    ]
+   ]
+  },
+  {
+   "id": "f-7b",
+   "nombre": "Acoso sexual · Apartado séptimo 7.2. Valoración de los hechos",
+   "piezas": [
+    [
+     190,
+     0.44,
+     0.95
+    ]
+   ],
+   "ficha": "^SÉPTIMO · 7\\.2.*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-7c",
+   "nombre": "Acoso sexual · Apartado séptimo 7.3. Propuesta",
+   "piezas": [
+    [
+     189,
+     0.22,
+     0.67
+    ]
+   ],
+   "ficha": "^SÉPTIMO · 7\\.3.*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-7d",
+   "nombre": "Acoso sexual · Apartado séptimo 7.4. Decisiones de carácter provisional",
+   "piezas": [
+    [
+     189,
+     0.65,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "f-7e",
+   "nombre": "Acoso sexual · Apartado séptimo 7.5. Comunicaciones infundadas o falsas",
+   "piezas": [
+    [
+     192,
+     0.1,
+     0.23
+    ]
+   ],
+   "ficha": "^SÉPTIMO · 7\\.5.*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-8",
+   "nombre": "Acoso sexual · Apartado octavo. Información, registro, seguimiento y control",
+   "piezas": [
+    [
+     192,
+     0.21,
+     0.83
+    ]
+   ],
+   "ficha": "^OCTAVO\\..*· Protocolo acoso sexual",
+   "expres": 1
+  },
+  {
+   "id": "f-9",
+   "nombre": "Acoso sexual · Apartado noveno. Difusión",
+   "piezas": [
+    [
+     192,
+     0.81,
+     0.95
+    ],
+    [
+     193,
+     0.06,
+     0.95
+    ],
+    [
+     194,
+     0.06,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "f-ax",
+   "nombre": "Acoso sexual · Anexos I a III (formularios)",
+   "piezas": [
+    [
+     195,
+     0.06,
+     0.95
+    ],
+    [
+     196,
+     0.06,
+     0.95
+    ],
+    [
+     197,
+     0.06,
+     0.95
+    ],
+    [
+     198,
+     0.06,
+     0.95
+    ],
+    [
+     199,
+     0.06,
+     0.95
+    ],
+    [
+     200,
+     0.06,
+     0.95
+    ],
+    [
+     201,
+     0.06,
+     0.95
+    ]
+   ]
+  },
+  {
+   "id": "g-pre",
+   "nombre": "Violencia sobre la mujer · Resolución de 6 de julio de 2021 (exposición de motivos y resuelvo)",
+   "piezas": [
+    [
+     204,
+     0.06,
+     0.95
+    ],
+    [
+     205,
+     0.06,
+     0.95
+    ],
+    [
+     206,
+     0.06,
+     0.42
+    ]
+   ]
+  },
+  {
+   "id": "g-1",
+   "nombre": "Violencia sobre la mujer · Apartado primero. Objetivos",
+   "piezas": [
+    [
+     206,
+     0.4,
+     0.95
+    ],
+    [
+     207,
+     0.06,
+     0.27
+    ]
+   ],
+   "ficha": "^PRIMERO\\..*· Protocolo violencia sobre la mujer",
+   "expres": 1
+  },
+  {
+   "id": "g-2",
+   "nombre": "Violencia sobre la mujer · Apartado segundo. Ámbito de aplicación subjetivo",
+   "piezas": [
+    [
+     207,
+     0.24,
+     0.69
+    ]
+   ]
+  },
+  {
+   "id": "g-3",
+   "nombre": "Violencia sobre la mujer · Apartado tercero. Ámbito de aplicación objetivo",
+   "piezas": [
+    [
+     207,
+     0.66,
+     0.95
+    ],
+    [
+     208,
+     0.06,
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": "g-4",
+   "nombre": "Violencia sobre la mujer · Apartado cuarto. Principios rectores",
+   "piezas": [
+    [
+     208,
+     0.48,
+     0.95
+    ],
+    [
+     209,
+     0.06,
+     0.13
+    ]
+   ]
+  },
+  {
+   "id": "g-5",
+   "nombre": "Violencia sobre la mujer · Apartado quinto. Garantías",
+   "piezas": [
+    [
+     209,
+     0.11,
+     0.42
+    ]
+   ],
+   "ficha": "^QUINTO\\..*· Protocolo violencia sobre la mujer",
+   "expres": 1
+  },
+  {
+   "id": "g-6",
+   "nombre": "Violencia sobre la mujer · Apartado sexto. Definiciones",
+   "piezas": [
+    [
+     209,
+     0.4,
+     0.95
+    ],
+    [
+     210,
+     0.06,
+     0.2
+    ]
+   ],
+   "ficha": "^SEXTO\\..*· Protocolo violencia sobre la mujer",
+   "expres": 1
+  },
+  {
+   "id": "g-7",
+   "nombre": "Violencia sobre la mujer · Apartado séptimo. Medidas preventivas",
+   "piezas": [
+    [
+     210,
+     0.18,
+     0.95
+    ],
+    [
+     211,
+     0.06,
+     0.46
+    ]
+   ]
+  },
+  {
+   "id": "g-8",
+   "nombre": "Violencia sobre la mujer · Apartado octavo. Acreditación de las situaciones de violencia",
+   "piezas": [
+    [
+     211,
+     0.44,
+     0.69
+    ]
+   ]
+  },
+  {
+   "id": "g-9",
+   "nombre": "Violencia sobre la mujer · Apartado noveno. Información, asesoramiento y orientación",
+   "piezas": [
+    [
+     211,
+     0.67,
+     0.95
+    ],
+    [
+     212,
+     0.06,
+     0.23
+    ]
+   ]
+  },
+  {
+   "id": "g-10",
+   "nombre": "Violencia sobre la mujer · Apartado décimo. Asistencia psicológica",
+   "piezas": [
+    [
+     212,
+     0.21,
+     0.49
+    ]
+   ]
+  },
+  {
+   "id": "g-11",
+   "nombre": "Violencia sobre la mujer · Apartado undécimo. Derechos de la guardia civil víctima",
+   "piezas": [
+    [
+     212,
+     0.47,
+     0.61
+    ]
+   ],
+   "ficha": "^UNDÉCIMO\\..*· Protocolo violencia sobre la mujer",
+   "expres": 1
+  },
+  {
+   "id": "g-12",
+   "nombre": "Violencia sobre la mujer · Apartado duodécimo. Derechos de movilidad (esquema)",
+   "piezas": [
+    [
+     213,
+     0.23,
+     0.46
+    ]
+   ]
+  },
+  {
+   "id": "g-13",
+   "nombre": "Violencia sobre la mujer · Apartado decimotercero. Asistencia jurídica y registro",
+   "piezas": [
+    [
+     213,
+     0.78,
+     0.95
+    ],
+    [
+     214,
+     0.06,
+     0.54
+    ]
+   ]
+  },
+  {
+   "id": "g-14",
+   "nombre": "Violencia sobre la mujer · Apartado decimocuarto. Derechos en materia de jornada y horario",
+   "piezas": [
+    [
+     214,
+     0.52,
+     0.95
+    ],
+    [
+     215,
+     0.06,
+     0.13
+    ]
+   ]
+  },
+  {
+   "id": "g-15",
+   "nombre": "Violencia sobre la mujer · Apartado decimoquinto",
+   "piezas": [
+    [
+     215,
+     0.12,
+     0.55
+    ]
+   ]
+  },
+  {
+   "id": "g-16",
+   "nombre": "Violencia sobre la mujer · Apartado decimosexto",
+   "piezas": [
+    [
+     215,
+     0.53,
+     0.72
+    ]
+   ]
+  },
+  {
+   "id": "g-17",
+   "nombre": "Violencia sobre la mujer · Apartado decimoséptimo",
+   "piezas": [
+    [
+     215,
+     0.7,
+     0.95
+    ],
+    [
+     216,
+     0.06,
+     0.13
+    ]
+   ]
+  },
+  {
+   "id": "g-18",
+   "nombre": "Violencia sobre la mujer · Apartado decimoctavo. Limitación y control de acceso a datos",
+   "piezas": [
+    [
+     216,
+     0.11,
+     0.64
+    ]
+   ],
+   "ficha": "^DECIMOCTAVO\\..*· Protocolo violencia sobre la mujer",
+   "expres": 1
+  },
+  {
+   "id": "g-19",
+   "nombre": "Violencia sobre la mujer · Apartado decimonoveno",
+   "piezas": [
+    [
+     216,
+     0.62,
+     0.95
+    ],
+    [
+     217,
+     0.06,
+     0.11
+    ]
+   ]
+  },
+  {
+   "id": "g-20",
+   "nombre": "Violencia sobre la mujer · Apartado vigésimo. Medidas relacionadas con la prohibición de residir",
+   "piezas": [
+    [
+     217,
+     0.09,
+     0.65
+    ]
+   ]
+  },
+  {
+   "id": "g-21",
+   "nombre": "Violencia sobre la mujer · Apartado vigesimoprimero",
+   "piezas": [
+    [
+     217,
+     0.63,
+     0.95
+    ],
+    [
+     218,
+     0.06,
+     0.13
+    ]
+   ]
+  },
+  {
+   "id": "g-22",
+   "nombre": "Violencia sobre la mujer · Apartado vigesimosegundo",
+   "piezas": [
+    [
+     218,
+     0.11,
+     0.38
+    ]
+   ]
+  },
+  {
+   "id": "g-23",
+   "nombre": "Violencia sobre la mujer · Apartado vigesimotercero. Rehabilitación de los condenados",
+   "piezas": [
+    [
+     218,
+     0.36,
+     0.57
+    ]
+   ],
+   "ficha": "^VIGESIMOTERCERO\\..*· Protocolo violencia sobre la mujer",
+   "expres": 1
+  },
+  {
+   "id": "g-24",
+   "nombre": "Violencia sobre la mujer · Apartado vigesimocuarto. Información, registro, seguimiento y control (esquema)",
+   "piezas": [
+    [
+     219,
+     0.06,
+     0.35
+    ]
+   ]
+  },
+  {
+   "id": "g-25",
+   "nombre": "Violencia sobre la mujer · Apartado vigesimoquinto. Difusión",
+   "piezas": [
+    [
+     219,
+     0.34,
+     0.95
+    ]
+   ],
+   "ficha": "^VIGESIMOQUINTO\\..*· Protocolo violencia sobre la mujer",
+   "expres": 1
+  }
+ ]
+}
