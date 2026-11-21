@@ -3,7 +3,7 @@
    · Datos por tema en expres-subrayado/margen-tN.js (los saca prompts/herramientas/margen-datos.js leyendo las imágenes con OCR). Hoy solo el Tema 7.
    · Al llegar desde el test (#q=…) se subraya en lila la respuesta de esa pregunta, aunque el Margen esté desactivado. */
 (function () {
-  const KEY = 'exsub-margen', DEF = {on: false, md: 'amb', est: 'v', dis: true, lat: true, ia: true};
+  const KEY = 'exsub-margen', DEF = {on: false, md: 'amb', est: 'v', dis: true, lat: true, ia: true, lm: 'todas'};
   let cfg = Object.assign({}, DEF); try { Object.assign(cfg, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) {}
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(cfg)); } catch (e) {} };
   const abierto = {}, EXTRA = 250;   // px que se añaden a la derecha de cada artículo para las tarjetas de respuesta
@@ -65,16 +65,19 @@
       if (!cfg.on) return;
       const md = cfg.md, ia = cfg.ia, lat = cfg.lat, tx = d.tx || [0, d.w];
       const ms = d.m.map((x, ix) => { const of = x.of > 0, ast = x.ex.includes('*'), ex = x.ex.some(s => s === 'EX' || s === 'EXAMEN' || s === '1'), exof = x.ex.includes('EXOF'), labs = [];
-        if (of || exof) labs.push(['exof', 'EXOF' + (x.of > 1 ? ' ×' + x.of : '')]); if (ex && !exof) labs.push(['ex', 'EX']); if (ast) labs.push(['ast', '✱']); if (ia && x.ia) labs.push(['ia', '🎯 ' + x.ia]);
-        return {i: ix, ast, det: x.det || [], a: x.a * k, b: Math.max(x.b * k, x.a * k + 16), labs, cl: (of || exof) ? 'of' : ex ? 'ex' : ast ? 'ast' : 'ia', q: x.q, iaq: x.iaq}; }).filter(x => x.labs.length && (x.cl !== 'ia' || ia));
-      ms.sort((x, y) => x.a - y.a); const lanes = []; ms.forEach(m => { let l = 0; while (lanes[l] !== undefined && lanes[l] > m.a - 2) l++; lanes[l] = m.b; m.l = l; });
+        if (of || exof) labs.push(['exof', 'EXOF' + (x.of > 1 ? ' ×' + x.of : '')]); if (ex && !exof) labs.push(['ex', 'EX']); if (ast) labs.push(['ast', '✱']); if (x.ia) labs.push(['ia', '🎯 ' + x.ia]);
+        return {i: ix, ast, det: x.det || [], a: x.a * k, b: Math.max(x.b * k, x.a * k + 16), labs, cl: (of || exof) ? 'of' : ex ? 'ex' : ast ? 'ast' : 'ia', q: x.q, iaq: x.iaq}; }).filter(x => x.labs.length && (x.cl !== 'ia' || ia || cfg.lm !== 'of'));
+      // marcas laterales según «cuáles»: of = EXOF + EX + ✱ · ia = EXOF + 🎯 IA · todas
+      const lm = cfg.lm, okL = c => lm === 'todas' || (lm === 'of' ? c !== 'ia' : (c === 'exof' || c === 'ia'));
+      ms.forEach(m => { m.labsL = m.labs.filter(l => okL(l[0])); const f = m.labsL[0]; if (f) m.cl = f[0] === 'exof' ? 'of' : f[0]; });
+      ms.sort((x, y) => x.a - y.a); const lanes = []; ms.filter(m => m.labsL.length).forEach(m => { let l = 0; while (lanes[l] !== undefined && lanes[l] > m.a - 2) l++; lanes[l] = m.b; m.l = l; });
       const nl = Math.max(1, lanes.length), v = encodeURIComponent(location.pathname.split('/').pop() + '#t=' + tema + '&p=' + card.dataset.id); let prev = -99;
       const key = (m) => tema + '/' + file + '/' + m.i;
-      if (lat) ms.forEach(m => {
+      if (lat) ms.filter(m => m.labsL.length).forEach(m => {
         const L = tx[0] * k - 34 - m.l * 11, R = tx[1] * k + 22 + m.l * 11;
         [['l', L], ['r', R]].forEach(([c, x]) => { const z = document.createElement('div'); z.className = 'br ' + c + ' ' + m.cl; z.style.left = x + 'px'; z.style.top = m.a + 'px'; z.style.height = (m.b - m.a) + 'px'; mg.appendChild(z); });
         const y = Math.max(m.a, prev + 22); prev = y; const bg = document.createElement('div'); bg.className = 'bg'; bg.style.top = y + 'px'; bg.style.right = (Wd - (tx[0] * k - 34 - (nl - 1) * 11) + 8) + 'px';
-        m.labs.forEach(([c, t]) => { const s = document.createElement('a'); s.className = 'gk ' + c; s.textContent = t; const ids = c === 'ia' ? m.iaq : (m.q.length ? m.q : m.iaq);
+        m.labsL.forEach(([c, t]) => { const s =document.createElement('a'); s.className = 'gk ' + c; s.textContent = t; const ids = c === 'ia' ? m.iaq : (m.q.length ? m.q : m.iaq);
           s.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(ids.join(',')) + '&v=' + v; s.title = (c === 'ia' ? 'Practicar las preguntas de IA de este párrafo' : 'Abrir en el test: ' + ids.join(', ')); bg.appendChild(s); });
         mg.appendChild(bg); });
       // 2) respuesta: A subrayada con corchetes · B tarjetas en el margen
@@ -105,11 +108,12 @@
       + '<label><input type="checkbox" id="mg-on"' + (cfg.on ? ' checked' : '') + '> <b>Margen activado</b></label>'
       + '<h3>Respuesta</h3>' + op('sub', 'A · subrayada en el temario') + op('mar', 'B · escrita en el margen') + op('amb', 'A + B') + op('no', 'ninguna')
       + '<h3>Subrayado de la respuesta</h3><select id="mg-est">' + [['v', 'violeta'], ['a', 'azul'], ['t', 'turquesa'], ['r', 'recuadro punteado negro'], ['0', 'sin subrayado (solo corchetes)']].map(o => '<option value="' + o[0] + '"' + (cfg.est === o[0] ? ' selected' : '') + '>' + o[1] + '</option>').join('') + '</select>'
+      + '<h3>Marcas laterales: cuáles</h3>' + [['of', 'oficiales (EXOF) + EX + ✱'], ['ia', 'oficiales + solo las de IA 🎯'], ['todas', 'todas (oficiales, EX, ✱ e IA)']].map(o => '<label><input type="radio" name="mg-lm" value="' + o[0] + '"' + (cfg.lm === o[0] ? ' checked' : '') + '> ' + o[1] + '</label>').join('')
       + '<h3>Otras opciones</h3><label><input type="checkbox" id="mg-dis"' + (cfg.dis ? ' checked' : '') + '> distractores</label><label><input type="checkbox" id="mg-lat"' + (cfg.lat ? ' checked' : '') + '> marcas laterales</label><label><input type="checkbox" id="mg-ia"' + (cfg.ia ? ' checked' : '') + '> incluir IA</label>'
       + '<button class="ebtn" style="width:100%;margin-top:14px" data-cerrar="1">Cerrar</button></div>');
   }
   document.getElementById('mod').addEventListener('change', e => { const t = e.target; if (!t.closest || !t.closest('.mgp')) return;
-    if (t.id === 'mg-on') cfg.on = t.checked; else if (t.name === 'mg-md') { cfg.md = t.value; cfg.on = true; } else if (t.id === 'mg-est') { cfg.est = t.value; cfg.on = true; } else if (t.id === 'mg-dis') cfg.dis = t.checked; else if (t.id === 'mg-lat') cfg.lat = t.checked; else if (t.id === 'mg-ia') cfg.ia = t.checked;
+    if (t.id === 'mg-on') cfg.on = t.checked; else if (t.name === 'mg-md') { cfg.md = t.value; cfg.on = true; } else if (t.name === 'mg-lm') { cfg.lm = t.value; cfg.lat = true; cfg.on = true; } else if (t.id === 'mg-est') { cfg.est = t.value; cfg.on = true; } else if (t.id === 'mg-dis') cfg.dis = t.checked; else if (t.id === 'mg-lat') cfg.lat = t.checked; else if (t.id === 'mg-ia') cfg.ia = t.checked;
     const on = document.getElementById('mg-on'); if (on) on.checked = cfg.on; save(); aplica(); });
   const bt = document.getElementById('b-margen'); if (bt) bt.onclick = () => { if (!localStorage.getItem(KEY)) { cfg.on = true; save(); aplica(); } panel(); };
   let tm; addEventListener('resize', () => { clearTimeout(tm); tm = setTimeout(aplica, 200); });
