@@ -1582,7 +1582,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
   };
   window.verEnSubrayado = function(id, pieza, ap){
     const ov = document.createElement('div'); ov.className = 'esq-ov';
-    ov.innerHTML = '<div class="esq-ov-bar"><span>📑 Temario subrayado · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Temario subrayado" src="expres-subrayado.html?embed=1#q=' + encodeURIComponent(id) + (pieza ? '&p=' + encodeURIComponent(pieza) : '') + (ap ? '&ap=' + ap : '') + window.respHash() + '"></iframe>';
+    ov.innerHTML = '<div class="esq-ov-bar"><span>📑 Temario subrayado · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Temario subrayado" src="expres-subrayado.html?embed=1#q=' + encodeURIComponent(id) + (pieza ? '&p=' + encodeURIComponent(pieza) : '') + (ap ? '&ap=' + ap : '') + (pieza ? '&entero=1' : '') + window.respHash() + '"></iframe>';
     ov.querySelector('button').onclick = () => { ov.remove(); document.body.style.overflow = prevOverflow; };
     const prevOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
     document.body.appendChild(ov);
