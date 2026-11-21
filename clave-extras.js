@@ -179,7 +179,9 @@
   ini.innerHTML = '<button class="cq-btn p" data-i="coche">🚗 Escuchar el esquema clave</button>' +
     (guard > 0 ? '<button class="cq-btn" data-i="seguir">▶ Seguir donde me quedé</button>' : '') +
     '<button class="cq-btn" data-i="pausa">⏸ Pausa / ▶ Seguir</button><button class="cq-btn m" data-i="parar">⏹ Parar</button><button class="cq-btn" data-i="preg">🧠 Hacerme las preguntas</button>';
-  var h1 = $('h1', hoja); if (h1 && h1.parentNode) h1.parentNode.insertBefore(ini, (h1.nextElementSibling && h1.nextElementSibling.classList.contains('sub')) ? h1.nextElementSibling.nextSibling : h1.nextSibling); else hoja.insertBefore(ini, hoja.firstChild);
+  if (!window.CLAVE_SOLO_QUIZ) {   // CLAVE_SOLO_QUIZ: el esquema ya trae su propia barra de audio; aquí solo se usa el test (T4 nuevo, 21/11/2026)
+    var h1 = $('h1', hoja); if (h1 && h1.parentNode) h1.parentNode.insertBefore(ini, (h1.nextElementSibling && h1.nextElementSibling.classList.contains('sub')) ? h1.nextElementSibling.nextSibling : h1.nextSibling); else hoja.insertBefore(ini, hoja.firstChild);
+  }
   ini.addEventListener('click', function (e) {
     var b = e.target.closest('button'); if (!b) return; var a = b.getAttribute('data-i');
     if (a === 'parar') { detener(); return; }
@@ -221,6 +223,7 @@
     D.head.appendChild(sc);
   }
   var todoCargado = false;
+  if (window.CLAVE_ALCANCE_TEMA && NT) setTimeout(function () { cargaTodo(function () { if (quiz && !modoQuiz && !cola.length) pintaInicio(); }); }, 800);   // carga todas las preguntas del tema para el test
   function cargaTodo(cb) {
     if (todoCargado) return cb(); var x = D.createElement('script'); x.src = 'clave-tests/t' + NT + '-todo.js';
     x.onload = function () { todoCargado = true; ((window.CLAVE_TODO || {})[NT] || []).forEach(function (g) { g.q.forEach(function (q) { bancoTodo.push({t: 1, a: g.a, id: q.i, q: q.p, o: q.o, c: q.c, e: q.e, of: !/-ia-/.test(q.i)}); }); }); cb(); };
@@ -238,12 +241,13 @@
   }
   function pintaInicio() {
     cola = [];
-    var nT = bancoTest.length, ofT = bancoTest.filter(function (x) { return x.of; }).length, modo = ls('clave-modo') || 'test';
+    var BT = window.CLAVE_ALCANCE_TEMA ? bancoTodo : bancoTest;   // CLAVE_ALCANCE_TEMA: el test sale de TODAS las preguntas del tema de la app de conocimientos, no solo de los artículos del esquema
+    var nT = BT.length, ofT = BT.filter(function (x) { return x.of; }).length, modo = ls('clave-modo') || 'test';
     if (!nT && modo === 'test') modo = 'rapida';
     quiz.innerHTML = '<h2>🧠 Hazme las preguntas del esquema clave</h2>' +
       '<p class="cq-sub">Elige tipo: <b>preguntas de test</b> de los artículos de este esquema (oficiales + de estudio) o <b>preguntas rápidas</b> (pregunta → respuesta corta).</p>' +
       '<div class="cq-fila"><label>Tipo: <select id="cq-modo"><option value="test"' + (modo === 'test' ? ' selected' : '') + '>📝 Preguntas tipo test (' + (nT || 'cargando…') + ')</option><option value="rapida"' + (modo === 'rapida' ? ' selected' : '') + '>⚡ Preguntas rápidas (' + banco.length + ')</option></select></label></div>' +
-      '<div class="cq-fila"><label>Alcance: <select id="cq-alc"><option value="clave">Artículos del esquema clave</option><option value="todo">Todo el tema (incluye el resto de preguntas)</option></select></label></div>' +
+      (window.CLAVE_ALCANCE_TEMA ? '<div class="cq-fila"><label>Alcance: <select id="cq-alc"><option value="todo">Todo el tema (app de conocimientos)</option></select></label></div>' : '<div class="cq-fila"><label>Alcance: <select id="cq-alc"><option value="clave">Artículos del esquema clave</option><option value="todo">Todo el tema (incluye el resto de preguntas)</option></select></label></div>') +
       '<div class="cq-fila"><label>Cuántas: <select id="cq-n"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="0">Todas</option></select></label>' +
       '<label><input type="checkbox" id="cq-of"> Solo oficiales' + (nT ? ' (' + ofT + ' test)' : '') + '</label>' +
       '<label><input type="checkbox" id="cq-voz"' + (ls('clave-quizvoz') === '1' ? ' checked' : '') + '> 🔊 Por voz (modo coche)</label></div>' +
@@ -258,7 +262,7 @@
     voz = $('#cq-voz', quiz).checked; espera = parseInt($('#cq-esp', quiz).value, 10) || 6;
     ls('clave-quizvoz', voz ? '1' : '0'); ls('clave-espera', String(espera)); ls('clave-modo', modo);
     if (modo === 'test' && $('#cq-alc', quiz).value === 'todo' && !todoCargado) { cargaTodo(function () { empezarQuiz(); }); return; }
-    var origen = modo === 'test' ? (($('#cq-alc', quiz).value === 'todo') ? bancoTest.concat(bancoTodo) : bancoTest) : banco;
+    var origen = modo === 'test' ? (window.CLAVE_ALCANCE_TEMA ? bancoTodo : (($('#cq-alc', quiz).value === 'todo') ? bancoTest.concat(bancoTodo) : bancoTest)) : banco;
     var base = origen.filter(function (x) { return !soloOf || x.of; }); if (!base.length) base = origen; if (!base.length) return;
     cola = mezcla(base.slice()); if (n > 0) cola = cola.slice(0, n);
     qi = 0; aciertos = 0; falladas = []; parar(); activo = false; marca(null);
