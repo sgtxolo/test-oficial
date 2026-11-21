@@ -358,7 +358,7 @@ mark{background:none;color:#c8102e;font-weight:800;padding:0}   /* lo que más c
 <script>
 (function(){
  var items=[],i=0,playing=false,synth=window.speechSynthesis;
- function limpia(t){return t.replace(/≠/g,' distinto de ').replace(/≥/g,' al menos ').replace(/[✱⚠▲]/g,'').replace(/EXOF|EX\b/g,'').replace(/\s*·\s*/g,', ').replace(/\s+/g,' ').trim();}
+ function limpia(t){return t.replace(/≠/g,' distinto de ').replace(/≥/g,' al menos ').replace(/[✱⚠▲]/g,'').replace(/EXOF|EX\b|\bOF\b/g,'').replace(/→/g,', ').replace(/\s*·\s*/g,', ').replace(/\s+/g,' ').trim();}
  function recoge(){
   items=[];
   document.querySelectorAll('h2,h3,li,tr').forEach(function(e){
