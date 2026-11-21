@@ -65,11 +65,21 @@ table[data-sec] td{border-color:#c9d2dc}
 table[data-sec] tr td:first-child{background:var(--tn)}
 table[data-sec]{border:2px solid var(--c2)}
 /* COLORES-FIN */
+/* COLORES2-INICIO (prueba 21/11/2026, estilo «esquema subrayado»: letra negra con fondo de color por categoría; para quitarlo, borrar de aquí a COLORES2-FIN y el bloque COLORES2 del script) */
+b.n,b.o,b.v,b.p,.tm,.vb{color:#111;font-weight:600;border-radius:3px;padding:0 1px}
+b.n,.tm{background:rgba(59,130,246,.32)}      /* azul: plazos, tiempos y cifras */
+b.v{background:rgba(34,197,94,.34)}            /* verde: autoridades y órganos */
+b.o{background:rgba(251,146,60,.42)}           /* naranja: conceptos */
+b.p,.vb{background:rgba(168,85,247,.30)}       /* lila: verbos y acciones (podrá, deberá, será...) */
+mark{background:none;color:#c8102e;font-weight:800;padding:0}   /* lo que más cae: letra roja */
+.am{background:none;color:inherit;font-weight:700;border:1.5px solid #d1332a;border-radius:3px;padding:0 3px;box-shadow:none}   /* límites y negaciones: recuadro rojo */
+.tr b.n,.tr b.o,.tr b.v,.tr b.p{color:#111}
+/* COLORES2-FIN */
 </style></head><body>
 
 <h1>Tema 4 · ESQUEMA CLAVE — Fronteras y cooperación policial transfronteriza</h1>
 <div class="sub">4.1 Código de Fronteras Schengen · 4.2 Guardia Europea de Fronteras y Costas · 4.3 Convenio de Prüm · 4.4 Decisión 2008/615/JAI · 4.5 Procedimiento fronterizo de retorno · 4.6 Mapas de situación de EUROSUR. Para estudiar en media hora y hacer test seguido. Botón 🔊 abajo: lo lee en voz alta (modo coche). Las trampas están al final, detrás de un botón.</div>
-<div class="leyenda"><b class="n">azul</b> cifra/plazo · <b class="v">verde</b> órgano · <b class="o">naranja</b> concepto · <b class="p">morado</b> acción · <span class="ex">EXOF</span> marca de examen oficial de tu temario · <span class="as">✱</span> asterisco de la academia · <mark>subrayado naranja</mark> lo que más cae · <span class="am">amarillo</span> límites y negaciones (solo, no, sin, máx., mín.)</div>
+<div class="leyenda">Subrayado por categorías (letra negra): <b class="n">azul</b> plazos, tiempos y cifras · <b class="v">verde</b> autoridades y órganos · <b class="o">naranja</b> conceptos · <b class="p">lila</b> verbos y acciones (podrá, deberá, será…) · <mark>letra roja</mark> lo que más cae · <span class="am">recuadro rojo</span> límites y negaciones (solo, no, sí, sin, único, máx., mín.) · <span class="ex">EXOF</span> marca de examen oficial de tu temario · <span class="as">✱</span> asterisco de la academia</div>
 
 <!-- ===================== 4.1 ===================== -->
 <h2>4.1 · CÓDIGO DE FRONTERAS SCHENGEN · Reglamento (UE) 2016/399</h2>
@@ -401,7 +411,7 @@ table[data-sec]{border:2px solid var(--c2)}
 })();
 </script>
 <script>
-/* COLORES-INICIO (ver el CSS «COLORES»): pinta cada norma con su color y marca en amarillo los límites y negaciones */
+/* COLORES-INICIO (ver el CSS «COLORES» y «COLORES2»): pinta cada norma con su color, recuadra en rojo los límites y negaciones, marca en lila los verbos y en azul los tiempos */
 (function(){
  var n=0;
  Array.prototype.forEach.call(document.body.children,function(e){
@@ -409,22 +419,29 @@ table[data-sec]{border:2px solid var(--c2)}
   if(t==='H2'){var x=(e.textContent||'').trim();n=/^4\.1/.test(x)?1:/^4\.2/.test(x)?2:/^4\.3/.test(x)?3:/^4\.4/.test(x)?4:/^4\.5/.test(x)?5:/^4\.6/.test(x)?6:/^AMPLIACIONES/i.test(x)?7:0;}
   if(n&&(t==='H2'||t==='H3'||t==='UL'||t==='TABLE'))e.setAttribute('data-sec',n);
  });
- var pal='solo|sólo|únicamente|únicos|único|no|sin|salvo|excepto|nunca|máx|máximo|máxima|mín|mínimo|mínima|al menos|como máximo|como mínimo';
- var re=new RegExp('(^|[^A-Za-zÁÉÍÓÚÜáéíóúüñÑ])('+pal+')(?![A-Za-zÁÉÍÓÚÜáéíóúüñÑ])','gi');
+ var L='A-Za-zÁÉÍÓÚÜáéíóúüñÑ';
+ var neg='solo|sólo|únicamente|únicos|único|única|no|sí|sin|salvo|excepto|nunca|máx|máximo|máxima|mín|mínimo|mínima|al menos|como máximo|como mínimo';
+ var ver='puede|pueden|debe|deben|decide|deciden|adopta|adoptan|emite|emiten|notifica|notifican|informa|informan|elabora|elaboran|nombra|nombran|propone|proponen|designa|designan|aprueba|aprueban|comunica|comunican|presenta|presentan|elige|eligen|expide|expiden|coordina|coordinan|establece|establecen|garantiza|garantizan|asiste|asisten|evalúa|evalúan|supervisa|supervisan|gestiona|gestionan|recomienda|recomiendan|solicita|solicitan|acuerda|acuerdan|redacta|redactan|despliega|despliegan|rinde|responde|envía|envían|financia|sufraga|deniega|elimina|eliminan|autoriza|autorizan|ejerce|ejercen|comprueba|comprueban|actúa|actúan|respeta|respetan|prolonga|renueva|renuevan|prorroga|prorrogan|deroga|entra|entran|[A-Za-zÁÉÍÓÚÜáéíóúüñÑ]+rá|[A-Za-zÁÉÍÓÚÜáéíóúüñÑ]+rán';
+ var tie='[0-9]+(?:[.,][0-9]+)? ?(?:días hábiles|días naturales|días|día|meses|mes|semanas|semana|años|año|horas|hora)|cada año|cada 6 meses|anual(?:es|mente)?';
+ var re=new RegExp('(^|[^'+L+'0-9])(('+tie+')|('+ver+')|('+neg+'))(?![' +L+'])','gi');
  var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(x){
   var p=x.parentNode;if(!p||!x.nodeValue||x.nodeValue.trim().length<2)return NodeFilter.FILTER_REJECT;
-  if(p.closest('#rqbox,#aud,script,style,button,h1,h2,.leyenda,.am,.cq-quiz'))return NodeFilter.FILTER_REJECT;
+  if(p.closest('#rqbox,#aud,script,style,button,h1,h2,.leyenda,.am,.vb,.tm,.cq-quiz'))return NodeFilter.FILTER_REJECT;
   return NodeFilter.FILTER_ACCEPT;}});
  var lista=[],x;while((x=w.nextNode()))lista.push(x);
  lista.forEach(function(nodo){
-  var s=nodo.nodeValue;re.lastIndex=0;if(!re.test(s))return;
-  var f=document.createDocumentFragment(),ult=0,m;re.lastIndex=0;
+  var s=nodo.nodeValue,p=nodo.parentNode,enN=!!p.closest('b.n'),enP=!!p.closest('b.p'),enB=!!p.closest('b.n,b.o,b.v,b.p,mark');
+  re.lastIndex=0;if(!re.test(s))return;
+  var f=document.createDocumentFragment(),ult=0,m,hubo=false;re.lastIndex=0;
   while((m=re.exec(s))){
-   var ini=m.index+m[1].length;
+   var ini=m.index+m[1].length,txt=m[2],cls=m[3]?'tm':(m[4]?'vb':'am');
+   if((cls==='tm'&&enN)||(cls==='vb'&&enP)||(cls!=='am'&&enB&&cls!=='tm'))continue;
+   if(cls==='vb'&&/^(sin|ahora|terra|ra|ira|era)$/i.test(txt))continue;
    f.appendChild(document.createTextNode(s.slice(ult,ini)));
-   var sp=document.createElement('span');sp.className='am';sp.textContent=m[2];f.appendChild(sp);
-   ult=ini+m[2].length;
+   var sp=document.createElement('span');sp.className=cls;sp.textContent=txt;f.appendChild(sp);
+   ult=ini+txt.length;hubo=true;
   }
+  if(!hubo)return;
   f.appendChild(document.createTextNode(s.slice(ult)));
   nodo.parentNode.replaceChild(f,nodo);
  });
