@@ -1,7 +1,7 @@
 // Esquema clave especial por tema.
 // EXSUBCLAVE_REPASO[tema] = "archivo.html": el botón ⭐ Esquema clave de ese tema muestra ese repaso (resumen hecho a mano, ~10 págs) en lugar de la selección automática de artículos.
 window.EXSUBCLAVE_REPASO = {
-  1: "repaso-t1-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
+  1: "repaso-t1-esquema-clave-nuevo.html",   // Esquema clave nuevo T1 (borrador antiguo repaso-t1-borrador.html sigue en la carpeta)
   4: "repaso-t4-esquema-clave-nuevo.html",   // 21/11/2026: Esquema clave T4 nuevo (13 págs, listas y cuadros, audio y trampas en botón). El anterior (repaso-t4-borrador.html, ~40 págs) sigue en la carpeta
   5: "repaso-t5-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
   6: "repaso-t6-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
