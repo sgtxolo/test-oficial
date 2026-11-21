@@ -1,0 +1,58 @@
+{
+  "fuente": "TEMA 26 ESTATUTO GC-2026-08-08.pdf, paginas PDF 155-220",
+  "marcas": [
+    {"pag":156,"tipo":"R","n":57,"norma":"Orden PRE/1983/2012","art":"1","apartado":"1","inicio":"Como organización jerarquizada, disciplinada y cohesionada, características en las que basa"},
+    {"pag":157,"tipo":"R","n":58,"norma":"Orden PRE/1983/2012","art":"3","apartado":"1","inicio":"Son normas de régimen interior las que regulan la vida de las unidades"},
+    {"pag":165,"tipo":"E","norma":"Protocolo acoso laboral (Res. 22-7-2019)","art":"Tercero","apartado":"encabezado / 1","inicio":"TERCERO. Ámbito de aplicación objetivo. Definiciones (E roja con flecha al titulo; A efectos del presente Protocolo, constituye acoso laboral)"},
+    {"pag":165,"tipo":"R","n":59,"norma":"Protocolo acoso laboral (Res. 22-7-2019)","art":"Tercero","apartado":"1","inicio":"A efectos del presente Protocolo, constituye acoso laboral la exposición a conductas"},
+    {"pag":165,"tipo":"R","n":60,"norma":"Protocolo acoso laboral (Res. 22-7-2019)","art":"Tercero","apartado":"1 (periodo prolongado)","inicio":"A efectos de este Protocolo se entiende por período prolongado en el tiempo"},
+    {"pag":165,"tipo":"SELLO","norma":"Protocolo acoso laboral (Res. 22-7-2019)","art":"Tercero","apartado":"2","inicio":"A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos constitutivos de acoso laboral (sello PREGUNTA EXAMEN 2020)"},
+    {"pag":182,"tipo":"EXOF","norma":"Protocolo acoso sexual y por razón de sexo (Res. 22-7-2019)","art":"Tercero","apartado":"encabezado / 1","inicio":"TERCERO. Ámbito de aplicación objetivo. Definiciones (circulo azul Exof junto al titulo)"},
+    {"pag":182,"tipo":"R","n":61,"norma":"Protocolo acoso sexual y por razón de sexo (Res. 22-7-2019)","art":"Tercero","apartado":"1","inicio":"De conformidad con el artículo 7.1 de la Ley Orgánica 3/2007"},
+    {"pag":182,"tipo":"SELLO","norma":"Protocolo acoso sexual y por razón de sexo (Res. 22-7-2019)","art":"Tercero","apartado":"1 (parrafo ejemplos)","inicio":"A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos que podrían ser constitutivos de acoso sexual (sello PREGUNTA EXAMEN)"},
+    {"pag":182,"tipo":"R","n":62,"norma":"Protocolo acoso sexual y por razón de sexo (Res. 22-7-2019)","art":"Tercero","apartado":"2","inicio":"De conformidad con el artículo 7.2 de la Ley Orgánica 3/2007, es acoso por razón de sexo"},
+    {"pag":183,"tipo":"EXOF","norma":"Protocolo acoso sexual y por razón de sexo (Res. 22-7-2019)","art":"Quinto","apartado":"medidas preventivas, parrafo 1","inicio":"En la Guardia Civil se considera esencial promover, en la medida de lo posible"},
+    {"pag":207,"tipo":"EX","norma":"Protocolo violencia sobre la mujer (Res. 6-7-2021)","art":"Primero","apartado":"2","inicio":"En el marco del cumplimiento de los objetivos generales, se enuncian como objetivos específicos"},
+    {"pag":208,"tipo":"R","n":63,"norma":"Protocolo violencia sobre la mujer (Res. 6-7-2021)","art":"Segundo","apartado":"1","inicio":"El presente protocolo será de aplicación en las situaciones en que una guardia civil sea víctima de violencia"},
+    {"pag":210,"tipo":"EX","norma":"Protocolo violencia sobre la mujer (Res. 6-7-2021)","art":"Sexto","apartado":"encabezado (definiciones)","inicio":"SEXTO. Definiciones. A efectos del protocolo, se entenderá por: (circulo Ex, lectura dudosa)"},
+    {"pag":210,"tipo":"R","n":64,"norma":"Protocolo violencia sobre la mujer (Res. 6-7-2021)","art":"Sexto","apartado":"g","inicio":"Violencia instrumental o vicaria: la ejercida contra los descendientes, ascendientes"},
+    {"pag":215,"tipo":"EX","norma":"Protocolo violencia sobre la mujer (Res. 6-7-2021)","art":"Decimocuarto","apartado":"cuadro Derechos en materia de jornada y horario de trabajo","inicio":"Las guardias civiles víctimas de violencia sobre la mujer podrán solicitar reordenación de su jornada (circulo ex junto al cuadro, lectura dudosa)"},
+    {"pag":217,"tipo":"R","n":65,"norma":"Protocolo violencia sobre la mujer (Res. 6-7-2021)","art":"Decimoctavo","apartado":"5","inicio":"Se protegerá la intimidad de las guardias civiles en las anotaciones de los actos administrativos"}
+  ],
+  "cuadros": [
+    {"pag":163,"titulo":"OBJETIVOS GENERALES (esquema)","art":"Acoso laboral, Primero.1"},
+    {"pag":164,"titulo":"OBJETIVOS ESPECÍFICOS (esquema)","art":"Acoso laboral, Primero.2"},
+    {"pag":167,"titulo":"ACCIONES DE FORMACIÓN CONTINUA (flujo mandos intermedios/superiores > estrategias)","art":"Acoso laboral, Quinto 5.1.b"},
+    {"pag":176,"titulo":"ANEXO I formulario: informe de valoración (mando) acoso laboral","art":"Acoso laboral, Anexo I"},
+    {"pag":178,"titulo":"ANEXO II formulario: informe al Servicio Médico acoso laboral","art":"Acoso laboral, Anexo II"},
+    {"pag":180,"titulo":"ANEXO III formulario: información a la presunta víctima acoso laboral","art":"Acoso laboral, Anexo III"},
+    {"pag":194,"titulo":"PUBLICACIÓN DEL PROTOCOLO + RESPONSABLE DE LA COMUNICACIÓN EFECTIVA","art":"Acoso sexual, Noveno"},
+    {"pag":195,"titulo":"VÍAS DE DIFUSIÓN","art":"Acoso sexual, Noveno"},
+    {"pag":196,"titulo":"ANEXO I formulario acoso sexual (continua 197-198)","art":"Acoso sexual, Anexo I"},
+    {"pag":199,"titulo":"ANEXO II formulario Servicio Médico acoso sexual (continua 200-201)","art":"Acoso sexual, Anexo II"},
+    {"pag":202,"titulo":"ANEXO III formulario información a la presunta víctima acoso sexual","art":"Acoso sexual, Anexo III"},
+    {"pag":209,"titulo":"Mapa PROTOCOLO DE ACTUACIÓN: objetivos, ámbito subjetivo y objetivo","art":"Violencia mujer, Segundo-Tercero"},
+    {"pag":212,"titulo":"MEDIDAS PREVENTIVAS (primaria/secundaria/terciaria)","art":"Violencia mujer, Séptimo"},
+    {"pag":214,"titulo":"DERECHOS DE MOVILIDAD (flujo)","art":"Violencia mujer, Duodécimo"},
+    {"pag":215,"titulo":"DERECHOS EN MATERIA DE JORNADA Y HORARIO DE TRABAJO (flujo)","art":"Violencia mujer, Decimocuarto"},
+    {"pag":220,"titulo":"INFORMACIÓN, REGISTRO, SEGUIMIENTO Y CONTROL (esquema)","art":"Violencia mujer, Vigesimocuarto"}
+  ],
+  "notas_manuscritas": [
+    {"pag":156,"texto":"Ver 3.2 (junto art.1.2/1.3)"},
+    {"pag":157,"texto":"P.P. Principal = Patria; Destacado = Divino => D.D.; Todo Tierra / Buques = Armada / Supletoria única M.D."},
+    {"pag":164,"texto":"2GC; 1GC y otro funcionario o FFAA (Segundo.1 y 2)"},
+    {"pag":170,"texto":"FALTA PUNTO 4; No acoso (6.2.3)"},
+    {"pag":173,"texto":"-10 días CHDA; -30 días Zona; MOD en 6.3.2"},
+    {"pag":182,"texto":"6C y delito acoso sexual o abuso autoridad art. 48 Código Penal Militar (Tercero.4)"},
+    {"pag":184,"texto":"OBJECO / Supra (apuntes de texto en Cuarto d y f)"},
+    {"pag":189,"texto":"MOD en 7.2"},
+    {"pag":192,"texto":"está en Antiguo (aspa grande sobre 7.3)"},
+    {"pag":193,"texto":"Jefatura de Personal (DGGC); Protocolo Acoso MG GyL; ≠"}
+  ],
+  "versiones": {
+    "no_vigente_tachada_MOD": [173, 189, 190, 192],
+    "version_antigua_sin_tachar_sustituida_por_NUEVO": [169, 170, 174, 175, 186, 193, 194, 195],
+    "version_nueva_NUEVO": [171, 172, 181, 182, 188, 191, 192, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220],
+    "en_blanco_o_nota": [160, 203, 204]
+  }
+}
