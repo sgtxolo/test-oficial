@@ -9,6 +9,7 @@ B = 'C:/Users/ruben/Desktop/HTML OFICIAL/'; OUT = B + f'expres-subrayado/img/t{T
 cfg = json.load(open(B + f'expres-subrayado/t{T}-config.json', encoding='utf-8'))
 indice = {e['id']: e for e in json.load(open(OUT + '/indice.json', encoding='utf-8'))}
 d = pymupdf.open(pdf); DPI = 130; K = DPI / 72
+for _p in (json.load(open('C:/Users/ruben/Desktop/HTML OFICIAL/expres-subrayado/t' + str(T) + '-saltar.json', encoding='utf-8')).get('rot0', []) if __import__('os').path.exists('C:/Users/ruben/Desktop/HTML OFICIAL/expres-subrayado/t' + str(T) + '-saltar.json') else []): d[_p].set_rotation(0)   # páginas escaneadas de lado (T26 p.165)
 src = open(B + 'prompts/herramientas/expres-subrayado-recortes.py', encoding='utf-8').read()
 ns = {'d': d, 're': re, 'pymupdf': pymupdf, 'DPI': DPI, 'K': K}
 for fn in ('es_art', 'encabezados', 'segmentos', 'marcadores'):

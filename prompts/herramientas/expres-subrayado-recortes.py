@@ -15,6 +15,7 @@ d = pymupdf.open(pdf); DPI = 130; K = DPI / 72
 _sk = sys.argv[3].replace('-config.json', '-saltar.json')
 if __import__('os').path.exists(_sk):
     _s = json.load(open(_sk, encoding='utf-8'))
+    for _p in _s.get('rot0', []): d[_p].set_rotation(0)   # páginas escaneadas de lado (T26 p.165)
     for _p in _s.get('paginas', []): d[_p].add_redact_annot(d[_p].rect, fill=False); d[_p].apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE)
     for _p, _a, _b in _s.get('zonas', []):
         _h = d[_p].rect.height; d[_p].add_redact_annot(pymupdf.Rect(0, _h * _a, d[_p].rect.width, _h * _b), fill=False); d[_p].apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE)

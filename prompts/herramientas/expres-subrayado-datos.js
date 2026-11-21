@@ -11,12 +11,13 @@ const orden = id => {
   const [l, n] = id.split('-'); const i = inst.findIndex(x => x.id === l);
   if (n === 'rec') return 98e7 + (i < 0 ? 99 : i);   // «RECUERDA del temario»: al final de todo, detrás de todas las normas
   const dis = /^(da|dt|dd|df)(\d*)$/.exec(n);        // disposiciones adicionales/transitorias/derogatoria/finales: al final de su norma, en ese orden
-  const r = n === 'datos' ? -2 : n === 'pre' ? -1 : n === 'ad' ? 0 : n === 'fin' ? 1e6 : dis ? 1e6 + {da: 100, dt: 200, dd: 300, df: 400}[dis[1]] + (+dis[2] || 0) : (+n || 0);
+  const nl = /^(\d+)([a-z])$/.exec(n);   // «5b»: apartado con letra (protocolos T26) va justo detrás del 5
+  const r = n === 'datos' ? -2 : n === 'pre' ? -1 : n === 'ad' ? 0 : n === 'fin' ? 1e6 : n === 'ax' ? 1e6 + 1 : dis ? 1e6 + {da: 100, dt: 200, dd: 300, df: 400}[dis[1]] + (+dis[2] || 0) : nl ? +nl[1] + (nl[2].charCodeAt(0) - 96) / 100 : (+n || 0);
   return (i < 0 ? 99 : i) * 1e7 + r;
 };
 ix.sort((x, y) => orden(x.id) - orden(y.id));
 function numeros(t) {
-  const s = t.replace(/\s*(?:EXOF|EX|✱|R\d+)(?![\wÁ-ú])/g, '').replace(/^Art[íi]culos?\s+/i, '').split(/\s+—\s+/)[0]; const out = new Set();
+  const s = t.replace(/\s*(?:EXOF|EX|✱|R\d+)(?![\wÁ-ú])/g, '').replace(/^Art[íi]culos?\s+/i, '').split(/\s+[—·]\s+/)[0]; const out = new Set();
   for (const m of s.matchAll(/(\d+)\s*(?:bis|ter|quater)?\s+a\s+(\d+)/gi)) for (let n = +m[1]; n <= +m[2]; n++) out.add(n);
   for (const m of s.replace(/(\d+)\s*(?:bis|ter|quater)?\s+a\s+(\d+)/gi, '').matchAll(/\d+/g)) out.add(+m[0]);
   return [...out];
@@ -84,6 +85,19 @@ ix.forEach(p => { if (!enEx.has(p.id) && !manEx.has(p.id) && !/^r-/.test(p.id)) 
 { const cab = h.split('<div class="ex-ficha">').slice(1).map(f => ((f.match(/class="ex-fh">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, ''));
   (man.manual || []).filter(m => m.ficha).forEach(m => { const k = cab.findIndex(t => new RegExp(m.ficha).test(t)); if (k >= 0) fx[m.id] = k; else console.log('  ⚠ ficha no encontrada', m.id, m.ficha); });
   (man.manual || []).filter(m => m.fx !== undefined && !m.ficha).forEach(m => { fx[m.id] = m.fx; }); }   // «fx»: índice de ficha del Exprés (fichas sin título)
+// piezas a mano con «ficha» (protocolos T26…): sus marcas (EXOF/EX/✱/R) y las preguntas de esa ficha del Exprés
+{ const fichasH = h.split('<div class="ex-ficha">').slice(1);
+  (man.manual || []).filter(m => m.ficha && fx[m.id] !== undefined).forEach(m => {
+    const f = fichasH[fx[m.id]]; if (!f) return; const tt = ((f.match(/class="ex-fh">(.*?)<\/div>/) || [])[1] || '').replace(/<[^>]+>/g, ''); const mk = {};
+    if (/\bEXOF\b/.test(tt)) mk.exof = 1; if (/✱/.test(tt)) mk.ast = 1; const rs = [...tt.matchAll(/\bR(\d+)\b/g)].map(x => +x[1]);
+    for (const pm of f.matchAll(/<p((?:\s[^>]*)?)>([\s\S]*?)<\/p>/g)) { const at = pm[1], mx = ((at.match(/data-ex="([^"]*)"/) || [])[1] || '').split(',').filter(Boolean);
+      const ofic = [...pm[2].matchAll(/data-q="([^"]+)"/g)].flatMap(x => x[1].split(/[ ,;|]+/)).some(q => q && !/-ia-/.test(q));
+      if (mx.includes('EXOF')) mk.exof = 1; else if (mx.includes('EX') || mx.includes('1') || ofic) mk.ex = 1; if (mx.includes('*')) mk.ast = 1;
+      ((at.match(/data-r="([^"]*)"/) || [])[1] || '').split(',').forEach(r => { const n = +(r.match(/\d+/) || [0])[0]; if (n) rs.push(n); }); }
+    if (rs.length) mk.r = [...new Set(rs)].sort((a, b) => a - b); if (Object.keys(mk).length) marcas[m.id] = mk;
+    for (const dq of f.matchAll(/data-q="([^"]+)"/g)) dq[1].split(/[ ,;|]+/).forEach(q => { if (q && !preg[q] && ids.has(m.id)) preg[q] = m.id; });
+  }); }
+ix.forEach(p => { if (marcas[p.id] && Object.keys(marcas[p.id]).length && !p.m) p.m = marcas[p.id]; });
 ix.forEach(p => { if (fx[p.id] !== undefined) p.fx = fx[p.id]; });
 // preguntas que Esquemas sitúa en una ficha «Artículo N» / «Apartado N» que el Exprés no enlaza: van a la pieza de ese número si es la única (Exprés o fuera del Exprés)
 try {

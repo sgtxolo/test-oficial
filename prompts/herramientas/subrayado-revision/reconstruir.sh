@@ -2,6 +2,7 @@ cd "C:/Users/ruben/Desktop/HTML OFICIAL"
 # Uso: TEMA=1 bash prompts/herramientas/subrayado-revision/reconstruir.sh   (por defecto el 11)
 T=${TEMA:-11}
 case $T in
+ 26) TIT="Tema 26 · Estatuto del personal de la Guardia Civil"; PDF="TEMA 26 ESTATUTO GC-2026-08-08.pdf";;
   4) TIT="Tema 4 · Fronteras de la UE"; PDF="TEMA 4 FRONTERAS DE LA UE-08-08-2026.pdf";;
  2) TIT="Tema 2 · Terrorismo internacional"; PDF="TEMA 2 TERRORISMO INTERNACIONA-08-08-2026-.pdf";;
  6) TIT="Tema 6 · Extranjería"; PDF="TEMA 6 EXTRANJERIA -08-08-2026.pdf";;
