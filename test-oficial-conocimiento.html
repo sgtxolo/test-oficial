@@ -1566,9 +1566,10 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
   window.addEventListener('load', repasarDesdeHash);
   window.addEventListener('hashchange', repasarDesdeHash);
 
+  window.respHash = function(){ try { var ev = window.event, t = ev && ev.target && ev.target.closest ? ev.target : null, raiz = (t && t.closest('.res-item')) || document, b = raiz.querySelector('.explic-box .btn-voz'), x = b ? trozosExplicacion(b).join('. ') : ''; return x ? '&r=' + encodeURIComponent(x.slice(0, 1500)) : ''; } catch(e){ return ''; } };
   window.verEnEsquema = function(id){
     const ov = document.createElement('div'); ov.className = 'esq-ov';
-    ov.innerHTML = '<div class="esq-ov-bar"><span>📘 Esquema · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Esquema" src="esquemas.html?embed=1#q=' + encodeURIComponent(id) + '"></iframe>';
+    ov.innerHTML = '<div class="esq-ov-bar"><span>📘 Esquema · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Esquema" src="esquemas.html?embed=1#q=' + encodeURIComponent(id) + window.respHash() + '"></iframe>';
     ov.querySelector('button').onclick = () => { ov.remove(); document.body.style.overflow = prevOverflow; };
     const prevOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
     document.body.appendChild(ov);
@@ -1581,7 +1582,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
   };
   window.verEnSubrayado = function(id, pieza, ap){
     const ov = document.createElement('div'); ov.className = 'esq-ov';
-    ov.innerHTML = '<div class="esq-ov-bar"><span>📑 Temario subrayado · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Temario subrayado" src="expres-subrayado.html?embed=1#q=' + encodeURIComponent(id) + (pieza ? '&p=' + encodeURIComponent(pieza) : '') + (ap ? '&ap=' + ap : '') + '"></iframe>';
+    ov.innerHTML = '<div class="esq-ov-bar"><span>📑 Temario subrayado · pregunta ' + id + '</span><button type="button">✕ Volver al test</button></div><iframe title="Temario subrayado" src="expres-subrayado.html?embed=1#q=' + encodeURIComponent(id) + (pieza ? '&p=' + encodeURIComponent(pieza) : '') + (ap ? '&ap=' + ap : '') + window.respHash() + '"></iframe>';
     ov.querySelector('button').onclick = () => { ov.remove(); document.body.style.overflow = prevOverflow; };
     const prevOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
     document.body.appendChild(ov);
@@ -1646,7 +1647,6 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
 })();
 </script>
 
-<script src="voz-comparar.js"></script>
 <script id="script-prob-nota">
 /* ==================== PROBABILIDAD DE CADA PREGUNTA + NOTA ESTIMADA SI EL EXAMEN FUERA HOY ====================
    - Insignia arriba a la izquierda de cada pregunta: 🔥 cae mucho · 🟡 puede caer · ❄️ poco probable.

@@ -27,6 +27,7 @@
     '.cq-btn{border:1px solid var(--linea,#cfcfcf);border-radius:10px;background:var(--fondo,#fff);color:var(--tx,#1b1b1b);font:600 14px "Segoe UI",system-ui,sans-serif;padding:10px 14px;cursor:pointer}' +
     '.cq-btn.p{background:#14532d;color:#fff;border-color:#14532d}.cq-btn.m{background:#b91c1c;color:#fff;border-color:#b91c1c}' +
     '.cq-leyendo{outline:3px solid #f59e0b;outline-offset:2px;border-radius:6px;background:rgba(245,158,11,.10)}' +
+    '.cq-leyendo.ban,.cq-leyendo.ban *,.cq-leyendo .ban,.cq-leyendo .ban *{color:#111!important}.cq-leyendo.ban{background:#f5c518!important}' +
     '.cq-quiz{margin:26px 0 90px;border:2px solid #14532d;border-radius:14px;padding:14px 16px;background:var(--fondo,#fff);color:var(--tx,#1b1b1b)}' +
     '.cq-quiz h2{margin:0 0 6px;background:none!important;color:inherit!important;padding:0!important;font-size:17px}' +
     '.cq-quiz .cq-sub{color:var(--gris,#666);font-size:13px;margin:0 0 10px}' +
@@ -60,15 +61,16 @@
   var vel = parseFloat(ls('clave-vel')) || 1;
   var tok = 0;   // se invalida al parar/saltar
   function pausa(ms, t) { return new Promise(function (ok) { setTimeout(ok, ms); }); }
-  function decir(texto, t) {   // habla un texto (troceado por frases) y espera a que acabe; false si lo cancelaron
+  function decir(texto, t, seg) {   // habla un texto (troceado por frases) y espera a que acabe; false si lo cancelaron
     var trozos = norm(texto).match(/[^.?!;:]+[.?!;:]?/g) || [texto];
-    var i = 0;
+    var i = 0, tot = trozos.join('').length || 1, cum = [], ac = 0; trozos.forEach(function (z) { cum.push(ac / tot); ac += z.length; });
     return new Promise(function (ok) {
       (function sig() {
         if (t !== tok) return ok(false);
         var x = (trozos[i++] || '').trim();
         if (i > trozos.length) return ok(true);
         if (!x) return sig();
+        if (seg) seg(cum[i - 1] || 0);
         var u = new SpeechSynthesisUtterance(x), v = elegirVoz();
         if (v) u.voice = v; u.lang = (v && /^es[-_]ES/i.test(v.lang)) ? v.lang : 'es-ES'; u.rate = vel; u.pitch = 1;
         var fin = function () { if (t !== tok) return ok(false); setTimeout(sig, 220); };
@@ -100,11 +102,18 @@
   var unidades = [];
   function recoge() {
     unidades = [];
-    var els = hoja.querySelectorAll('h1,h2,.art,.rline,.rq-art,.leyenda');
+    var els = hoja.querySelectorAll('h1,h2,.art,.rline,.rq-art,.leyenda,.vis-wrap');
     Array.prototype.forEach.call(els, function (el) {
       if (el.closest('.cq-quiz')) return;
       if (el.tagName === 'H1' || el.tagName === 'H2') { unidades.push({el: el, partes: [hablable(el.textContent)]}); return; }
       if (el.classList.contains('leyenda')) return;
+      if (el.classList.contains('vis-wrap')) {   // cuadros y «TUS APUNTES A MANO»: título y luego cada caja
+        if (el.closest('.art, .rq-art')) return;
+        var ban = el.querySelector('.ban'), hechos = 0; if (ban) unidades.push({el: ban, partes: [hablable(ban.textContent)]});
+        Array.prototype.forEach.call(el.querySelectorAll('.caja'), function (c) { if (c.querySelector('.caja')) return; var tc = hablable(c.textContent); if (tc) { unidades.push({el: c, partes: [tc]}); hechos++; } });
+        if (!hechos) { var cu = el.querySelector('.cuerpo') || el, tv = hablable(cu.textContent); if (tv) unidades.push({el: cu, partes: [tv]}); }
+        return;
+      }
       if (el.classList.contains('rline')) { var q = norm(el.textContent).replace(/\[\s*|\s*\]/g, ''); unidades.push({el: el, partes: [hablable(q)]}); return; }
       if (el.classList.contains('rq-art')) {
         var p = [hablable((el.querySelector('.rq-a') || {}).textContent || '')];
@@ -114,15 +123,26 @@
         });
         unidades.push({el: el, partes: p}); return;
       }
-      var partes = [], h3 = el.querySelector('h3'); if (h3) partes.push(hablable(h3.textContent));
+      var partes = [], pEls = [], h3 = el.querySelector('h3'); if (h3) { partes.push(hablable(h3.textContent)); pEls.push(h3); }
       var cuerpo = el.querySelectorAll('li, p, .lin, td');
-      if (cuerpo.length) Array.prototype.forEach.call(cuerpo, function (c) { if (c.querySelector('li, p')) return; var t = hablable(c.textContent); if (t) partes.push(t); });
+      if (cuerpo.length) Array.prototype.forEach.call(cuerpo, function (c) { if (c.querySelector('li, p')) return; var t = hablable(c.textContent); if (t) { partes.push(t); pEls.push(c); } });
       else { var t0 = hablable(el.textContent); if (t0) partes.push(t0); }
-      unidades.push({el: el, partes: partes});
+      unidades.push({el: el, partes: partes, pEls: pEls});
     });
   }
   var pos = 0, activo = false, leyendoEl = null;
-  function marca(el) { if (leyendoEl) leyendoEl.classList.remove('cq-leyendo'); leyendoEl = el; if (el) { el.classList.add('cq-leyendo'); try { el.scrollIntoView({block: 'center', behavior: 'smooth'}); } catch (e) {} } }
+  function VH() { return (emb && vista && vista.h) ? vista.h : window.innerHeight; }
+  var mk = null;
+  function siguelinea(el, f) {   // sigue la lectura: lleva a la vista el trozo que se está leyendo (en artículos largos va bajando)
+    try {
+      var r = el.getBoundingClientRect();
+      if (r.height < VH() * 0.45) { if (f === 0) el.scrollIntoView({block: 'center', behavior: 'smooth'}); return; }
+      if (!mk) { mk = D.createElement('i'); mk.style.cssText = 'position:absolute;left:0;width:1px;height:1px;pointer-events:none;visibility:hidden'; D.body.appendChild(mk); }
+      mk.style.top = (r.top + (window.pageYOffset || 0) + r.height * Math.min(0.97, f)) + 'px';
+      mk.scrollIntoView({block: 'center', behavior: 'smooth'});
+    } catch (e) {}
+  }
+  function marca(el) { if (leyendoEl) leyendoEl.classList.remove('cq-leyendo'); leyendoEl = el; if (el) { el.classList.add('cq-leyendo'); try { if (el.getBoundingClientRect().height <= VH() * 0.6) el.scrollIntoView({block: 'center', behavior: 'smooth'}); } catch (e) {} } }
   function guardaPos() { ls(KEY, String(pos)); }
   async function leerDesde(i) {
     parar(); var t = tok; pos = Math.max(0, Math.min(unidades.length - 1, i)); activo = true; pantalla(true);
@@ -132,7 +152,8 @@
       for (var k = 0; k < u.partes.length; k++) {
         var p = u.partes[k]; if (!p) continue;
         var resp = p.indexOf('@@') === 0; if (resp) { await pausa(2500, t); if (t !== tok) return; p = 'Respuesta. ' + p.slice(2); }
-        if (!(await decir(p, t))) return;
+        var pe = u.pEls && u.pEls[k] ? u.pEls[k] : u.el;
+        if (!(await decir(p, t, resp ? null : function (f) { siguelinea(pe, f); }))) return;
         await pausa(resp ? 1600 : 700, t); if (t !== tok) return;
       }
       await pausa(900, t); if (t !== tok) return;

@@ -105,7 +105,8 @@ window.MEJORAS2 = function () {
         const nc = cortesDe(tema, claveCorte(p)).length;
         acc.insertAdjacentHTML('beforeend', (cu ? '<span class="seg sbs" title="Qué ver de este artículo: el artículo, solo su esquema, o los dos">' + [['a', '📑', ' Artículo'], ['e', '🧩', ' Solo esquema'], ['ae', '📑🧩', ' Ambos']].map(x => '<button class="' + (vm === x[0] ? 'on' : '') + '" data-px2="vm" data-v="' + x[0] + '">' + x[1] + '<span class="lb">' + x[2] + '</span></button>').join('') + '</span>' : '')
           + (nc && window.CUT_ED !== p.id ? '<button class="sb" data-px2="rest" title="Devolver al artículo todo lo que habías quitado">↩️<span class="lb"> Restaurar recortes</span></button>' : '')
-          + '<button class="sb' + (nc || window.CUT_ED === p.id ? ' on' : '') + '" data-px2="cut" title="Dibuja un cuadro sobre lo que no te interesa, aquí mismo, y se quita">✂️<span class="lb"> ' + (window.CUT_ED === p.id ? 'Terminar de quitar' : 'Quitar trozos') + '</span>' + (nc ? ' (' + nc + ')' : '') + '</button>');
+          + '<button class="sb' + (nc || window.CUT_ED === p.id ? ' on' : '') + '" data-px2="cut" title="Dibuja un cuadro sobre lo que no te interesa, aquí mismo, y se quita">✂️<span class="lb"> ' + (window.CUT_ED === p.id ? 'Terminar de quitar' : 'Quitar trozos') + '</span>' + (nc ? ' (' + nc + ')' : '') + '</button>'
+          + '<button class="sb" data-vozresp="1" data-px2="ear" title="Oír la respuesta de la pregunta">🎧<span class="lb"> Oír respuesta</span></button>');
       }
       if (window.CUT_ED === p.id && vm !== 'e') cortarEnLinea(c, p);
       const bc = $('#b-cut'); if (bc) bc.classList.toggle('on', !!window.CUT_ED);
@@ -208,6 +209,7 @@ window.MEJORAS2 = function () {
     if (x === 'vm' && c) { const id = c.dataset.id, k = key(tema, id), v = b.dataset.v; st.vm[k] = v; st.esq[k] = v === 'a' ? 0 : 1; if (st.modoEsq && v !== 'e') st.modoEsq = false; guarda(); refresco(); }
     if (x === 'cut' && c) { window.CUT_ED = window.CUT_ED === c.dataset.id ? null : c.dataset.id; refresco(); }
     if (x === 'rest' && c) restaura(c.dataset.id);
+    if (x === 'ear' && window.VozResp) window.VozResp.toggle();
     if (x === 'cutv' || x === 'restv') { $('#menu').classList.add('oculto'); const v = cardVista(); if (!v) return; if (x === 'cutv') { window.CUT_ED = v; refresco(); const el = document.getElementById('c-' + v); el && el.scrollIntoView({block: 'start'}); } else restaura(v); }
   });
 
