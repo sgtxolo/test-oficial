@@ -2,8 +2,7 @@ require('../esq-virtual.js');
 // Tema 26 · esquema LITERAL desde prompts/temario-limpio/tema26/oficial.txt:
 //   LO 11/2007 (págs. 2-17) · LO 12/2007 (18-44) · Ley 29/2014 (45-102) · Orden PRE/1983/2012 (103-106).
 // Deja /* T26_LO11 */ /* T26_LO12 */ /* T26_L29 */ /* T26_ORD */ para aplicar-subrayado-pdf.js. Idempotente.
-// PREPARADO PARA AÑADIR después las 3 Resoluciones (acoso laboral, acoso sexual, violencia sobre la mujer): ver el hueco RESOLUCIONES al final
-//   (basta con generar T26.res1/res2/res3 = "<html>" con el mismo formato y añadir sus marcas /* T26_RES1 */… al bloque).
+// Las 3 Resoluciones (acoso laboral, acoso sexual, violencia sobre la mujer) salen de resoluciones-t26.js (T26.res1/res2/res3, marcas /* T26_RES1 */…).
 const fs = require('fs'), path = require('path');
 const RAIZ = path.join(__dirname, '..', '..', '..'), F = path.join(RAIZ, 'esquemas.html'), D = path.join(RAIZ, 'prompts', 'temario-limpio', 'tema26');
 const esc = t => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -96,19 +95,22 @@ function construye(N) {
 }
 const H = {};
 for (const N of NORMAS) H[N.clave] = construye(N);
-// RESOLUCIONES (acoso laboral, acoso sexual, violencia sobre la mujer): pendientes; se añadirán como T26.res1 / res2 / res3.
+const RES = require('./resoluciones-t26.js').H;   // las 3 Resoluciones del PDF escaneado (texto transcrito de las imágenes)
 const bloque = `/* T26_BEGIN */
 const T26 = {};
 /* T26_LO11 */ T26.lo11 = ${JSON.stringify(H.lo11)};
 /* T26_LO12 */ T26.lo12 = ${JSON.stringify(H.lo12)};
 /* T26_L29 */ T26.l29 = ${JSON.stringify(H.l29)};
 /* T26_ORD */ T26.ord = ${JSON.stringify(H.ord)};
+/* T26_RES1 */ T26.res1 = ${JSON.stringify(RES.res1)};
+/* T26_RES2 */ T26.res2 = ${JSON.stringify(RES.res2)};
+/* T26_RES3 */ T26.res3 = ${JSON.stringify(RES.res3)};
 (function(){
   const t = esquemas[25];
   t.titulo = "26 — Estatuto del Personal de la Guardia Civil";
   t.html = leyenda()
-    + trampa("Cómo está hecho este esquema", "Texto LITERAL del extracto oficial del temario: LO 11/2007 (derechos y deberes), LO 12/2007 (régimen disciplinario), Ley 29/2014 (régimen del personal) y Orden PRE/1983/2012 (mando, disciplina y régimen interior). Con tu subrayado y tus marcas. Las tres Resoluciones del Director General (acoso laboral, acoso sexual y violencia sobre la mujer) se añadirán aparte.")
-    + T26.lo11 + T26.lo12 + T26.l29 + T26.ord;
+    + trampa("Cómo está hecho este esquema", "Texto LITERAL del extracto oficial del temario: LO 11/2007 (derechos y deberes), LO 12/2007 (régimen disciplinario), Ley 29/2014 (régimen del personal) y Orden PRE/1983/2012 (mando, disciplina y régimen interior). Con tu subrayado y tus marcas. Y las tres Resoluciones que solo están en tu temario escaneado: Protocolo de acoso laboral (2019), Protocolo de acoso sexual y por razón de sexo (2019) y Protocolo de violencia sobre la mujer (2021), en su versión vigente.")
+    + T26.lo11 + T26.lo12 + T26.l29 + T26.ord + T26.res1 + T26.res2 + T26.res3;
 })();
 /* T26_END */`;
 let s = fs.readFileSync(F, 'utf8');
@@ -116,6 +118,7 @@ const a = s.indexOf('/* T26_BEGIN */');
 if (a >= 0) { const b = s.indexOf('/* T26_END */', a) + '/* T26_END */'.length; s = s.slice(0, a) + bloque + s.slice(b); }
 else { const p = s.indexOf('/* T25_END */'); if (p < 0) throw new Error('sin ancla T25_END'); const q = p + '/* T25_END */'.length; s = s.slice(0, q) + '\n' + bloque + s.slice(q); }
 fs.writeFileSync(F, s);
+for (const k in RES) console.log(k, 'fichas:', (RES[k].match(/class="articulo"/g) || []).length);
 for (const N of NORMAS) console.log(N.clave, 'fichas:', (H[N.clave].match(/class="articulo"/g) || []).length, '· arts:', (H[N.clave].match(/articulo-head">Artículo /g) || []).length, '· títulos:', (H[N.clave].match(/class="bloque-titulo"/g) || []).length);
 const sin = Object.keys(MARCAS).filter(k => !usadas.has(k));
 if (sin.length) console.log('MARCAS SIN COLOCAR:', sin.join(' | '));

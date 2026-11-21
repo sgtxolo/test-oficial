@@ -1,11 +1,11 @@
 #!/bin/sh
 # Reconstruye el esquema del Tema 26 (literal) y le reaplica TU subrayado real (OCR de mi PDF), el lila y la unión de marcas.
 # Uso: sh prompts/herramientas/tema26/reconstruir-t26.sh prompts/temario-limpio/tema26   (necesita subrayado.json, no versionado)
-# Pendiente: las 3 Resoluciones (págs. 161-220 de mi PDF) aún no están en el esquema; al añadirlas, sumar sus claves (T26_RES1…) al rango.
 set -e
-J="$1/subrayado.json"
+node prompts/herramientas/tema26/filtra-subrayado-t26.js "$1"
+J="$1/subrayado-filtrado.json"
 node prompts/herramientas/tema26/esquema-t26.js
-node prompts/herramientas/aplicar-subrayado-pdf.js "$J" esquemas.html "/* T26_BEGIN */" "/* T26_END */" "T26_LO11:7-30,T26_LO12:31-72,T26_L29:73-154,T26_ORD:155-160" 2>&1 | tail -3
+node prompts/herramientas/aplicar-subrayado-pdf.js "$J" esquemas.html "/* T26_BEGIN */" "/* T26_END */" "T26_LO11:7-30,T26_LO12:31-72,T26_L29:73-154,T26_ORD:155-160,T26_RES1:161-180,T26_RES2:181-204,T26_RES3:205-220" 2>&1 | tail -3
 node prompts/herramientas/lila-no-se-verbo.js | tail -1
 node prompts/herramientas/unir-subrayados.js
 node prompts/herramientas/tema26/limpia-cab.js
