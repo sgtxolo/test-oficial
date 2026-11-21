@@ -80,6 +80,8 @@ h3.sec{font-size:15px;margin:22px 4px 10px;color:var(--gris);text-transform:uppe
 .stc.ok{background:#d8f0e4;color:#116a45}.stc.dud{background:#fff0c2;color:#7a5b00}.stc.mal{background:#fbd9d4;color:#9b2b20}
 .tag{font-size:11px;font-weight:700;border-radius:99px;padding:2px 8px;background:var(--verde-suave);color:var(--verde-osc)}.tag.extra{background:var(--ambar-bg);color:var(--ambar)}
 .card .acc{display:flex;gap:6px;flex-wrap:wrap;padding:4px 12px 10px}
+.card .acc:not(.abre)>:not(.sb-menu){display:none}.card .acc.conresp:not(.abre)>[data-vozresp]{display:inline-flex}
+.card .acc .sb-menu .lb{display:inline!important}
 .sb{border:1.5px solid var(--borde);background:var(--panel);border-radius:10px;padding:5px 11px;font-size:13px;font-weight:600;text-decoration:none;color:var(--texto);display:inline-flex;align-items:center;gap:5px}
 .sb:hover{background:var(--panel-alt)}.sb.on{background:var(--verde-suave);border-color:var(--verde-med);color:var(--verde-osc)}
 /* Interruptor de dos opciones (⚡ Exprés | 📄 Entero): la opción rellena es la que se está viendo */
@@ -807,8 +809,6 @@ function lista() {
       + ((((window.EXSUB_REV || {})[t] || {}).todos || []).includes(p.id) && p.imgr ? (((window.EXSUB_REV[t].hechos || []).includes(p.id)) ? '<span class="tag revok" title="El recorte coincide con lo que lleva el Exprés">✓ Recorte revisado</span>' : '<span class="tag revpend" title="Este recorte todavía no se ha ajustado a las frases exactas del Exprés">⏳ Falta revisar el recorte</span>') : '') + (est ? '<span class="stc ' + est.c + '">' + est.txt + '</span>' : '') + '</div>'
       // En el móvil los botones quedan solo con su icono (el texto va en <span class="lb">, que se oculta); «Leer» abre el modo lectura a pantalla completa
       + '<div class="acc"><button class="sb leer" data-a="leer" title="Leer este artículo a pantalla completa">⛶<span class="lb"> Leer</span></button>'
-      + '<button class="sb' + (st.vis[k] ? ' on' : '') + '" data-a="vis" title="Marcar como visto">' + (st.vis[k] ? '✓<span class="lb"> Visto</span>' : '○<span class="lb"> Marcar visto</span>') + '</button>'
-      + '<button class="sb dif' + (st.dif[k] ? ' on' : '') + '" data-a="dif" title="Difícil">' + (st.dif[k] ? '★' : '☆') + '<span class="lb"> Difícil</span></button>'
       + (p.imgr ? '<span class="seg sbs" title="Solo este artículo: lo relleno es lo que estás viendo"><button class="' + (ent ? '' : 'on') + '" data-a="ent" data-v="e">⚡<span class="lb"> Exprés</span></button><button class="' + (ent ? 'on' : '') + '" data-a="ent" data-v="f">📄<span class="lb"> Entero</span></button></span>'
         : '<button class="sb sinrec" data-a="info" title="Todavía no hay versión recortada de este artículo">✓ Sin versión recortada: ya es el artículo entero</button>')
       + (p.imgr && !ent && BL()[p.id] ? '<button class="sb' + (((st.add || {})[k] || []).length ? ' on' : '') + '" data-a="add" title="Sumar a este recorte un apartado que el Exprés no lleva">➕<span class="lb"> Añadir a mi subrayado</span>' + (((st.add || {})[k] || []).length ? ' (' + st.add[k].length + ')' : '') + '</button>' : '')

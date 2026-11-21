@@ -108,6 +108,11 @@ window.MEJORAS2 = function () {
           + '<button class="sb' + (nc || window.CUT_ED === p.id ? ' on' : '') + '" data-px2="cut" title="Dibuja un cuadro sobre lo que no te interesa, aquí mismo, y se quita">✂️<span class="lb"> ' + (window.CUT_ED === p.id ? 'Terminar de quitar' : 'Quitar trozos') + '</span>' + (nc ? ' (' + nc + ')' : '') + '</button>'
           + '<button class="sb" data-vozresp="1" data-px2="ear" title="Oír la respuesta de la pregunta">🎧<span class="lb"> Oír respuesta</span></button>');
       }
+      if (acc) {
+        const ab = (window.ACC_AB = window.ACC_AB || {})[p.id], hay = window.VozResp && window.VozResp.hay();
+        acc.classList.toggle('abre', !!ab); acc.classList.toggle('conresp', !!hay);
+        acc.insertAdjacentHTML('afterbegin', '<button class="sb sb-menu' + (ab ? ' on' : '') + '" data-px2="menu" title="Mostrar u ocultar los botones de este artículo">⚙️<span class="lb"> Opciones</span> <span class="fl">' + (ab ? '▴' : '▾') + '</span></button>');
+      }
       if (window.CUT_ED === p.id && vm !== 'e') cortarEnLinea(c, p);
       const bc = $('#b-cut'); if (bc) bc.classList.toggle('on', !!window.CUT_ED);
       if (vm === 'e') c.querySelectorAll(':scope > .imgw, :scope > .slcs, :scope > .trib').forEach(x => { x.style.display = 'none'; });
@@ -208,6 +213,7 @@ window.MEJORAS2 = function () {
     const b = e.target.closest('[data-px2]'); if (!b) return; const x = b.dataset.px2, c = b.closest('.card');
     if (x === 'vm' && c) { const id = c.dataset.id, k = key(tema, id), v = b.dataset.v; st.vm[k] = v; st.esq[k] = v === 'a' ? 0 : 1; if (st.modoEsq && v !== 'e') st.modoEsq = false; guarda(); refresco(); }
     if (x === 'cut' && c) { window.CUT_ED = window.CUT_ED === c.dataset.id ? null : c.dataset.id; refresco(); }
+    if (x === 'menu' && c) { const A = (window.ACC_AB = window.ACC_AB || {}), id = c.dataset.id, ac = c.querySelector('.acc'); A[id] = !A[id]; ac.classList.toggle('abre', !!A[id]); b.classList.toggle('on', !!A[id]); const f = b.querySelector('.fl'); if (f) f.textContent = A[id] ? '▴' : '▾'; }
     if (x === 'rest' && c) restaura(c.dataset.id);
     if (x === 'ear' && window.VozResp) window.VozResp.toggle();
     if (x === 'cutv' || x === 'restv') { $('#menu').classList.add('oculto'); const v = cardVista(); if (!v) return; if (x === 'cutv') { window.CUT_ED = v; refresco(); const el = document.getElementById('c-' + v); el && el.scrollIntoView({block: 'start'}); } else restaura(v); }

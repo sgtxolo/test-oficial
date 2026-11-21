@@ -1039,21 +1039,35 @@ function vozHablar(texto){
   vozCancelar();
   var my = vozTokenHabla;
   var trozos = String(texto).match(/[^.?!:;]+[.?!:;]?/g) || [texto];
-  var pend = trozos.length;
+  trozos = trozos.map(function(t){ return t.trim(); }).filter(Boolean);
+  /* Un trozo cada vez (el siguiente solo al acabar el anterior) y con vigilante: así, si el
+     navegador deja la voz colgada (p. ej. al volver de Esquemas), no se queda en «Pregunta 8». */
   setTimeout(function(){
     if(my!==vozTokenHabla) return;
     vozHablando = true; vozBotonEstado();
-    trozos.forEach(function(t){
-      t = t.trim(); if(!t){ pend--; return; }
+    var i = 0;
+    var sig = function(){
+      if(my!==vozTokenHabla) return;
+      if(i>=trozos.length){ vozHablando=false; vozBotonEstado(); return; }
+      var t = trozos[i++], hecho = false, dog = null;
       var u = new SpeechSynthesisUtterance(t);
       var vz = mejorVozEspanol(); if (vz) u.voice = vz; u.lang = (vz && /^es[-_]ES/i.test(vz.lang)) ? vz.lang : 'es-ES'; u.rate = 1; u.pitch = 1;
-      var fin = function(){ if(my!==vozTokenHabla) return; if(--pend<=0){ vozHablando=false; vozBotonEstado(); } };
+      var fin = function(){ if(hecho) return; hecho = true; clearTimeout(dog); if(my!==vozTokenHabla) return; setTimeout(sig, 30); };
       u.onend = fin; u.onerror = fin;
+      dog = setTimeout(fin, 2500 + t.length * 110);
+      try{ window.speechSynthesis.resume(); }catch(e){}
       window.speechSynthesis.speak(u);
-    });
-    if(pend<=0){ vozHablando=false; vozBotonEstado(); }
-  }, 80);
+    };
+    sig();
+  }, 120);
 }
+/* al volver de Esquemas / temario subrayado (página restaurada) la voz puede quedar colgada: se limpia y se vuelve a leer la pregunta */
+function vozReiniciarAlVolver(){
+  try{ window.speechSynthesis && (window.speechSynthesis.cancel(), window.speechSynthesis.resume()); }catch(e){}
+  vozTokenHabla++; vozHablando = false; vozUltimaLeida = null; vozBotonEstado();
+}
+window.addEventListener('pageshow', function(){ vozReiniciarAlVolver(); });
+document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='visible' && modoVoz){ try{ window.speechSynthesis.cancel(); window.speechSynthesis.resume(); }catch(e){} } });
 function vozLeerPreguntaActual(){
   if(!modoVoz || !testActivo || testActivo.pausado) return;
   var q = testActivo.preguntas[testActivo.idx];
@@ -1517,7 +1531,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
 <script src="expres-subrayado/datos-t6.js"></script>
 <script src="expres-subrayado/datos-t11.js"></script>
 <script src="expres-subrayado/datos-t1.js"></script>
-<script id="esq-temas">window.ESQ_TEMAS=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,25];</script>
+<script id="esq-temas">window.ESQ_TEMAS=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,25,26];</script>
 <style id="estilo-enlace-esquemas">
 .btn-ver-esquema{display:inline-flex;align-items:center;gap:6px;margin:10px 0 2px;border:1.5px solid #2f6b52;background:transparent;color:#2f6b52;border-radius:18px;padding:7px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
 .btn-ver-esquema:hover{background:rgba(47,107,82,.1)}
