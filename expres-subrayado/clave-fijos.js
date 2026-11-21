@@ -18,7 +18,7 @@ window.EXSUBCLAVE_REPASO = {
   11: "repaso-t11-borrador.html",   // 14/11/2026: Esquema clave T11 Derecho Administrativo (12 de 40 cuadros + 13 fichas EXOF/R + R1-R55 + rápidas)
   10: "repaso-t10-borrador.html",   // 13/11/2026: Esquema clave T10 Derecho Civil (8 cuadros del temario + fichas + R + rápidas)
   9: "repaso-t9-borrador.html",   // 13/11/2026: Esquema clave T9 Defensa Nacional (6 cuadros del temario + fichas + R + rápidas)
-  2: "repaso-t2-borrador.html",   // 10/11/2026: repaso del Tema 2 (EXOF + sello EXAMEN + sanciones, código de colores Prefortia)
+  2: "repaso-t2-esquema-clave-nuevo.html",   // 21/11/2026: Esquema clave T2 nuevo (listas y cuadros, 7 normas, audio y trampas en botón). El anterior (repaso-t2-borrador.html) sigue en la carpeta
   3: "repaso-t3-borrador.html",   // 11/11/2026: repaso del Tema 3 (TUE/TFUE; 11 págs)
   20: "repaso-t20-borrador.html",   // 11/11/2026: Esquema clave T20 con cuadros del temario rehechos (11 cuadros + 5 fichas; 12 págs)
   21: "repaso-t21-borrador.html",   // 11/11/2026: repaso del Tema 21 (EXOF, R, oficiales y subrayado del Exprés; 10 págs reales)
