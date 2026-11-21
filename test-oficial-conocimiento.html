@@ -1015,7 +1015,7 @@ var modoVoz = false;
 var vozTokenHabla = 0;
 var vozHablando = false;
 var vozUltimaLeida = null;
-try{ modoVoz = localStorage.getItem('modoLecturaVoz')==='1'; }catch(e){}
+/* el audio nunca arranca solo: solo si pulsas el botón de voz en el test */
 
 function vozLimpiarTexto(s){
   return String(s||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
@@ -1066,7 +1066,6 @@ function vozLeerPreguntaActual(){
 }
 function toggleModoVoz(){
   modoVoz = !modoVoz;
-  try{ localStorage.setItem('modoLecturaVoz', modoVoz?'1':'0'); }catch(e){}
   if(modoVoz){ vozBotonEstado(); vozLeerPreguntaActual(); }
   else vozCancelar();
 }
@@ -1082,11 +1081,11 @@ function toggleModoVoz(){
   var _seleccionar = seleccionar;
   seleccionar = function(){ vozCancelar(); return _seleccionar.apply(this, arguments); };
   var _salirTest = salirTest;
-  salirTest = function(){ vozPararTodo(); vozUltimaLeida=null; _salirTest(); };
+  salirTest = function(){ vozPararTodo(); vozUltimaLeida=null; modoVoz=false; vozBotonEstado(); _salirTest(); };
   var _finalizarTest = finalizarTest;
-  finalizarTest = function(){ vozPararTodo(); vozUltimaLeida=null; _finalizarTest(); };
+  finalizarTest = function(){ vozPararTodo(); vozUltimaLeida=null; modoVoz=false; vozBotonEstado(); _finalizarTest(); };
   var _guardarYSalir = guardarYSalir;
-  guardarYSalir = function(){ vozPararTodo(); vozUltimaLeida=null; _guardarYSalir(); };
+  guardarYSalir = function(){ vozPararTodo(); vozUltimaLeida=null; modoVoz=false; vozBotonEstado(); _guardarYSalir(); };
 })();
 /* ==================== FIN MODO VOZ ==================== */
 
