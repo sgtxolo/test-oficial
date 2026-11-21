@@ -259,10 +259,17 @@
       '<label><input type="checkbox" id="cq-of"> Solo oficiales' + (nT ? ' (' + ofT + ' test)' : '') + '</label>' +
       '<label><input type="checkbox" id="cq-voz"' + (ls('clave-quizvoz') === '1' ? ' checked' : '') + '> 🔊 Por voz (modo coche)</label></div>' +
       '<div class="cq-fila"><label>Pausa antes de la respuesta (voz): <select id="cq-esp">' + [3, 5, 6, 8, 10, 15].map(function (s) { return '<option value="' + s + '"' + (s === espera ? ' selected' : '') + '>' + s + ' s</option>'; }).join('') + '</select></label></div>' +
+      (window.CLAVE_ALCANCE_TEMA ? '<p class="cq-sub">El test tipo test se hace en la <b>aplicación de conocimientos</b> (con tus estadísticas y falladas). «Por voz» y las preguntas rápidas se hacen aquí.</p>' : '') +
       '<div class="cq-fila"><button class="cq-btn p" id="cq-go">▶ Empezar</button></div>';
     $('#cq-n', quiz).value = '25';
     if (window.CLAVE_ALCANCE_TEMA) $('#cq-alc', quiz).onchange = function () { ls('clave-alc', this.value); pintaInicio(); };   // al cambiar el alcance se actualizan los números
     $('#cq-go', quiz).onclick = empezarQuiz;
+  }
+  function irAlTest(c) {   // abre test-oficial-conocimiento.html con esas preguntas (#repasar=ids); al salir vuelve al esquema clave del tema
+    var ids = c.map(function (x) { return x.id; }), volver, arch = location.pathname.split('/').pop();
+    try { volver = emb ? (parent.location.pathname.split('/').pop() + '#t=' + NT + '&clave=1') : arch; } catch (e) { volver = arch; }
+    var url = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(ids.join(',')) + '&v=' + encodeURIComponent(volver);
+    try { (emb ? parent : window).location.href = url; } catch (e) { window.location.href = url; }
   }
   function mezcla(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
   function empezarQuiz() {
@@ -273,6 +280,7 @@
     var origen = modo === 'test' ? (window.CLAVE_ALCANCE_TEMA ? baseAlc($('#cq-alc', quiz).value) : (($('#cq-alc', quiz).value === 'todo') ? bancoTest.concat(bancoTodo) : bancoTest)) : banco;
     var base = origen.filter(function (x) { return !soloOf || x.of; }); if (!base.length) base = origen; if (!base.length) return;
     cola = mezcla(base.slice()); if (n > 0) cola = cola.slice(0, n);
+    if (window.CLAVE_ALCANCE_TEMA && modo === 'test' && !voz) { irAlTest(cola); return; }   // el test tipo test se hace en la aplicación de conocimientos (estadísticas, falladas...)
     qi = 0; aciertos = 0; falladas = []; parar(); activo = false; marca(null);
     if (voz) { modoQuiz = true; bar.classList.add('on'); pantalla(true); $('[data-a="play"]', bar).textContent = '⏸'; colocaBarra(); quizVoz(); }
     else { modoQuiz = false; bar.classList.remove('on'); pintaPregunta(); }
