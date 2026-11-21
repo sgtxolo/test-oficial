@@ -9,6 +9,6 @@ node prompts/herramientas/aplicar-subrayado-pdf.js "$J" esquemas.html "/* T26_BE
 node prompts/herramientas/lila-no-se-verbo.js | tail -1
 node prompts/herramientas/unir-subrayados.js
 node prompts/herramientas/tema26/limpia-cab.js
-for v in a b; do if [ -f prompts/herramientas/tema26/visuales-t26$v.js ]; then node prompts/herramientas/tema26/visuales-t26$v.js; fi; done
+for v in a b c; do if [ -f prompts/herramientas/tema26/visuales-t26$v.js ]; then node prompts/herramientas/tema26/visuales-t26$v.js; fi; done
 for n in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 27; do git checkout -- expres/t$n.js 2>/dev/null || true; git checkout -- esquemas-datos/t$n.js 2>/dev/null || true; done
 git status --short | head
