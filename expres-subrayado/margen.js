@@ -7,7 +7,8 @@
   let cfg = Object.assign({}, DEF); try { Object.assign(cfg, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch (e) {}
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(cfg)); } catch (e) {} };
   const abierto = {}, EXTRA = 250;   // px que se añaden a la derecha de cada artículo para las tarjetas de respuesta
-  const MG = () => (window.EXSUB_MARG || {})[tema];
+  const MG = () => (window.EXSUB_MARG || {})[tema], pedidos = {};
+  const carga = t => { if (pedidos[t]) return; pedidos[t] = 1; const s = document.createElement('script'); s.src = 'expres-subrayado/margen-t' + t + '.js'; s.onload = () => { if (String(tema) === String(t)) aplica(); }; document.head.appendChild(s); };
   const e2 = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
   const nrm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   const css = document.createElement('style');
@@ -51,7 +52,7 @@
     const b = !!(M && cfg.on && (cfg.md === 'mar' || cfg.md === 'amb'));
     document.body.classList.toggle('mg-b', b);
     document.body.className = document.body.className.replace(/\bmg-e-\w\b/g, '').trim() + ' mg-e-' + cfg.est;
-    if (!M) return;
+    if (!M) { if (tema) carga(tema); return; }
     document.querySelectorAll('#m .card').forEach(card => {
       const im = card.querySelector('.imgw > img[data-z]'); if (!im) return;
       const file = decodeURIComponent(im.getAttribute('src') || '').split('/').pop(), d = M[file]; if (!d) return;
@@ -59,7 +60,8 @@
       const Wd = mg.clientWidth, H = mg.clientHeight, k = Wd / d.w; if (!Wd) return;
       const rect = (cls, r, ext) => { const z = document.createElement('div'); z.className = cls; z.style.left = (r[0] * k - (ext || 0)) + 'px'; z.style.top = (r[1] * k) + 'px'; z.style.width = (r[2] * k + 2 * (ext || 0)) + 'px'; z.style.height = (r[3] * k) + 'px'; mg.appendChild(z); return z; };
       // 1) respuesta de la pregunta con la que llegas desde el test: lila (siempre)
-      if (q && d.qr && d.qr[q]) d.qr[q].forEach(r => rect('mq', r, 2));
+      if (q && d.qr && d.qr[q]) { const R = d.qr[q], tq = /-ia-/.test(q) ? 'tg' : 'tr', a0 = R[0], z0 = R[R.length - 1]; R.forEach(r => rect('mq', r, 2));
+        [['l', a0[0] * k - 8, a0], ['r', (z0[0] + z0[2]) * k + 3, z0]].forEach(([c, x, r]) => { const e = document.createElement('div'); e.className = 'cb ' + c + ' ' + tq; e.style.left = x + 'px'; e.style.top = (r[1] * k - 2) + 'px'; e.style.height = (r[3] * k + 4) + 'px'; mg.appendChild(e); }); }
       if (!cfg.on) return;
       const md = cfg.md, ia = cfg.ia, lat = cfg.lat, tx = d.tx || [0, d.w];
       const ms = d.m.map((x, ix) => { const of = x.of > 0, ast = x.ex.includes('*'), ex = x.ex.some(s => s === 'EX' || s === 'EXAMEN' || s === '1'), exof = x.ex.includes('EXOF'), labs = [];

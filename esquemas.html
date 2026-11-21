@@ -340,7 +340,6 @@ body.voz-abierta .voz-bar{display:flex}
 <script src="esquemas-datos/huecos.js"></script>
 <script src="esquemas-datos/mapa-preguntas.js"></script>
 <script src="esquemas-datos/t26.js"></script>
-<script src="esquemas-datos/lila-t7.js"></script>
 <script src="esquemas-datos/t25.js"></script>
 <script src="esquemas-datos/t23.js"></script>
 <script src="esquemas-datos/t22.js"></script>
@@ -4481,16 +4480,19 @@ body.embed #app{padding-top:4px}
     const art = esq.querySelectorAll('.articulo')[+k]; if (!art) return false;
     let el = art;
     if (j !== 'x'){ const p = art.querySelectorAll('.txt p')[+j]; if (p){ el = p; if (i !== undefined){ const m = p.querySelectorAll('mark.m-resp')[+i]; if (m) el = m; } } }
-    const L = lilaPregunta(id, art); if (L) el = L;
+    const L = lilaPregunta(id, art); if (L) el = L; else if (!(window.LILA_Q || {})[id]) cargaLila(t, () => { const L2 = lilaPregunta(id, art); if (L2) setTimeout(() => L2.scrollIntoView({block: 'center'}), 150); });
     irA(el, 'tema-' + t); return true;
   }
   // vuelta desde el test al ⚡ Exprés (esquemas.html#q=1-12&ex=1): se abre el Exprés del tema en la respuesta de esa pregunta
+  const LILA_OK = {}, LILA_ESP = {};
+  function cargaLila(t, cb){ if (LILA_OK[t]) return cb && cb(); if (LILA_ESP[t]) return cb && LILA_ESP[t].push(cb); LILA_ESP[t] = cb ? [cb] : []; const s = document.createElement('script'); s.src = 'esquemas-datos/lila-t' + t + '.js'; s.onload = () => { LILA_OK[t] = 1; (LILA_ESP[t] || []).forEach(f => f()); LILA_ESP[t] = []; }; document.head.appendChild(s); }
   function lilaExpres(id, t){
+    cargaLila(t);
     let n = 0; const iv = setInterval(() => {
       if (++n > 80 || document.querySelector('.r-lila')) return clearInterval(iv);
       const raiz = document.getElementById('tema-' + t); if (!raiz) return;
       const l = [...raiz.querySelectorAll('.ex-cont [data-q]')].filter(x => x.dataset.q.split(',').includes(id)), b = l.find(x => x.matches('mark.m-resp')) || l[0]; if (!b) return;
-      const L = lilaPregunta(id, b.closest('.ex-ficha') || b); if (!L) return;
+      const L = lilaPregunta(id, b.closest('.ex-ficha') || b.closest('.ex-cont') || b); if (!L) return;
       let pl = L.closest('.ex-plg'); while (pl){ pl.classList.add('on'); pl = pl.parentElement && pl.parentElement.closest('.ex-plg'); }
       setTimeout(() => L.scrollIntoView({block: 'center'}), 150);
     }, 250);

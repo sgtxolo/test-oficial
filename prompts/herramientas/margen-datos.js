@@ -16,21 +16,21 @@ const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').repla
 const toks = s => s.split(/\s+/).map(norm).filter(x => x);
 // ---- opciones del test (solo de las preguntas que lo necesitan)
 const test = fs.readFileSync(B + 'test-oficial-conocimiento.html', 'utf8');
-const opts = id => { const i = test.indexOf('{"id":"' + id + '","pregunta"'); if (i < 0) return null; let dep = 0, inS = false, esc = false, j = i;
+const POS = new Map(); for (const m of test.matchAll(/\{"id":"([^"]+)","pregunta"/g)) POS.set(m[1], m.index);
+const opts = id => { const i = POS.get(id); if (i === undefined) return null; let dep = 0, inS = false, esc = false, j = i;
   for (; j < test.length; j++) { const c = test[j]; if (inS) { if (esc) esc = false; else if (c === '\\') esc = true; else if (c === '"') inS = false; } else { if (c === '"') inS = true; else if (c === '{') dep++; else if (c === '}') { dep--; if (!dep) { j++; break; } } } }
   try { const o = JSON.parse(test.slice(i, j)); const cm = /class="ref-concepto">["“]?([\s\S]*?)["”]?<\/span>/.exec(o.explicacion || ''); return { o: o.opciones, c: o.correcta, cita: cm ? cm[1].replace(/<[^>]+>/g, '') : '' }; } catch (e) { return null; } };
 const optsC = {};
-// ---- párrafos del Exprés por pieza (por número de artículo y norma; la norma cambia cuando el número baja)
-const prefijos = []; DT.piezas.forEach(p => { const m = /^([a-z]+)-\d+$/.exec(p.id); if (m && m[1] !== 'r' && !prefijos.includes(m[1])) prefijos.push(m[1]); });
-const fich = [...H.matchAll(/<div class="ex-fh">(.*?)<\/div><div class="ex-fb">([\s\S]*?)<\/div><\/div>(?=<div class="(?:ex-ficha|bloque)|<\/|$)/g)];
-const porPieza = {}; let norma = 0, prev = 0;
-for (const f of fich) { const hd = f[1].replace(/<[^>]+>/g, ''), m = /^\s*Art[íi]culos?\s+(\d+)/.exec(hd); if (!m) continue; const n = +m[1]; if (n < prev) norma++; prev = n; let art = n;
-  for (const pm of f[2].matchAll(/<p([^>]*)>([\s\S]*?)<\/p>/g)) { const am = pm[2].match(/^\s*(?:<span[^>]*>[^<]*<\/span>\s*)*<b>Art\.\s*(\d+)/); if (am && /^Art[íi]culos\s/.test(hd)) art = +am[1]; const id = (prefijos[norma] || 'a') + '-' + art; (porPieza[id] = porPieza[id] || []).push({ attr: pm[1], html: pm[2] }); } }
+// ---- párrafos del Exprés por pieza: la ficha es la nº p.fx (igual que fichaExpres() de la app); en fichas de varios artículos solo los del artículo de la pieza
+const EXH = H.split(/<div class="ex-ficha(?: ex-of)?">/);
+const fichaHtml = fx => { const t = EXH[fx + 1]; if (t === undefined) return ''; let d = 1, m; const re = /<div\b|<\/div>/g; while ((m = re.exec(t))) { if (m[0] === '</div>') { d--; if (!d) return t.slice(0, m.index); } else d++; } return t; };
+const parasDe = p => { if (p.fx === undefined) return []; const f = fichaHtml(p.fx), hd = (/class="ex-fh">([\s\S]*?)<\/div>/.exec(f) || [])[1] || '', multi = /^\s*Art[íi]culos\s/.test(hd.replace(/<[^>]+>/g, '')), n = +(p.id.split('-')[1]), res = []; let art = null;
+  for (const pm of f.matchAll(/<p([^>]*)>([\s\S]*?)<\/p>/g)) { const am = pm[2].match(/^\s*(?:<span[^>]*>[^<]*<\/span>\s*)*<b>Art\.\s*(\d+)/); if (am) art = +am[1]; if (multi && art !== null && art !== n) continue; res.push({ attr: pm[1], html: pm[2] }); } return res; };
 const pregPieza = {}; for (const q in DT.preg) (pregPieza[DT.preg[q]] = pregPieza[DT.preg[q]] || []).push(q);
 const out = {}; let nDet = 0, nLoc = 0;
 files.forEach(([pid, kind, file], k) => {
-  const W = (ocr[String(k + 1).padStart(3, '0')] || []).map(w => ({ n: norm(w.t), y: w.y, h: w.h, x: w.x, w: w.w })).filter(w => w.n);
-  const piece = DT.piezas.find(p => p.id === pid), wh = kind === 'imgr' ? piece.whr : piece.wh; if (!wh) return;
+  const W = (ocr[String(k + 1).padStart(4, '0')] || ocr[String(k + 1).padStart(3, '0')] || []).map(w => ({ n: norm(w.t), y: w.y, h: w.h, x: w.x, w: w.w })).filter(w => w.n);
+  const piece = DT.piezas.find(p => p.id === pid); if (!piece) return; const wh = kind === 'imgr' ? piece.whr : piece.wh; if (!wh) return;
   // anchura del texto (para pegar los corchetes)
   const rows = []; W.filter(w => w.h > 8 && w.h < 60).sort((a, b) => a.y - b.y).forEach(w => { const r = rows[rows.length - 1]; if (r && Math.abs(w.y - r.y) < 10) { r.min = Math.min(r.min, w.x); r.max = Math.max(r.max, w.x + w.w); r.n++; } else rows.push({ y: w.y, min: w.x, max: w.x + w.w, n: 1 }); });
   const R = rows.filter(r => r.n >= 4), qt = (a, p) => { a = a.slice().sort((x, y) => x - y); return a[Math.floor((a.length - 1) * p)]; };
@@ -48,7 +48,7 @@ files.forEach(([pid, kind, file], k) => {
     if (!r.length && a && toks(a[1]).length >= (ia ? 3 : 4)) r = loc(a[1], lo, hi, 0.8);
     return r; };
   const marks = []; let cursor = 0;
-  for (const p of porPieza[pid] || []) {
+  for (const p of parasDe(piece)) {
     const text = p.html.replace(/<[^>]+>/g, ' ').replace(/🎯.*?preguntas?/g, ''), T2 = toks(text); if (!T2.length) continue;
     let best = -1, bs = -1; const K = Math.min(6, T2.length);
     for (let s = cursor; s < W.length; s++) { let j = s, sc = 0; for (let i = 0; i < K; i++) { let f = -1; for (let q = j; q < Math.min(W.length, j + 4); q++) if (W[q].n === T2[i]) { f = q; break; } if (f >= 0) { sc++; j = f + 1; } } if (sc > bs) { bs = sc; best = s; } if (sc === K) break; }
