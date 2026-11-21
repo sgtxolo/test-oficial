@@ -1527,6 +1527,8 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
 <script src="expres-subrayado/datos-t22.js"></script>
 <script src="expres-subrayado/datos-t23.js"></script>
 <script src="expres-subrayado/datos-t25.js"></script>
+<script src="expres-subrayado/datos-t26.js"></script>
+<script src="expres-subrayado/mapa-t26.js"></script>
 <script src="expres-subrayado/datos-t13.js"></script>
 <script src="expres-subrayado/datos-t16.js"></script>
 <script src="expres-subrayado/mapa-t16.js"></script>
@@ -1613,6 +1615,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
     const tx = String(expl || '').replace(/<[^>]+>/g, '').replace(/&quot;/g, '"');
     const hay = p => S.piezas.some(x => x.id === p);
     const cit = S.cit || [];
+    { const mf0 = (window.EXSUB_MAP || {})[parseInt(id, 10)]; if (typeof mf0 === 'function' && mf0.primero){ const p0 = mf0(tx, expl, id); if (p0 && hay(p0)) return p0; } }   // mapa-tN.js con «primero»: cita exacta de apartados de protocolos, anexos, preámbulos y disposiciones
     const proto = nom => {
       const n = nom.match(/Protocolo\s+(?:n\.?\s*[ºo°]?\s*|n[úu]mero\s+)?(\d+)/i);
       if (n && hay('q-' + n[1])) return 'q-' + n[1];
@@ -1641,7 +1644,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
         const di = tx.match(/disposici[óo]n(?:es)?\s+(adicional|transitoria|final|derogatoria)/i); const t = di && {adicional: 'da', transitoria: 'dt', final: 'df', derogatoria: 'dd'}[di[1].toLowerCase()]; if (t && hay(c.p + '-' + t)) return c.p + '-' + t; if (t && hay(c.p + '-fin')) return c.p + '-fin';
         if (/pre[áa]mbulo|exposici[óo]n de motivos/i.test(tx) && c.pre && hay(c.pre)) return c.pre;
       } }
-    { const mf = (window.EXSUB_MAP || {})[parseInt(id, 10)]; if (typeof mf === 'function'){ const p = mf(tx); if (p && hay(p)) return p; } }   // apartados/anexos de un protocolo (mapa-tN.js)
+    { const mf = (window.EXSUB_MAP || {})[parseInt(id, 10)]; if (typeof mf === 'function'){ const p = mf(tx, expl); if (p && hay(p)) return p; } }   // apartados/anexos de un protocolo (mapa-tN.js)
     return S.preg[id] || null;
   };
 
