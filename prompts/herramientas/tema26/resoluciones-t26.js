@@ -12,23 +12,39 @@ const FUENTES = {
 };
 const TOK = /^(\d+\.[ªº]|\d+\.|[a-z]{1,2}\)|-)\s+(.*)$/;
 const inline = t => esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+// Marcas de las Resoluciones (21/11/2026, lectura C págs 155-220). Claves  resN:FICHA|#n (nº de párrafo de la ficha) o |~texto (inicio del párrafo sin numeración).
+// R63-R65 (violencia sobre la mujer, págs 208/210/217) NO se colocan: las fichas RECUERDA del PDF acaban en R62.
+const MARCAS_RES = {
+  'res1:TERCERO|#1': { ex: ['EX'], r: ['R59'] }, 'res1:TERCERO|#2': { r: ['R60'] }, 'res1:TERCERO|~A modo de ejemplo': { ex: ['EXAMEN'] },
+  'res2:TERCERO|#1': { ex: ['EXOF'], r: ['R61'] }, 'res2:TERCERO|#2': { ex: ['EXAMEN'] }, 'res2:TERCERO|#3': { r: ['R62'] },
+  'res2:QUINTO|~En la Guardia Civil se considera esencial': { ex: ['EXOF'] },
+  'res3:PRIMERO|~En el marco del cumplimiento': { ex: ['EX'] }, 'res3:SEXTO|~A efectos del protocolo': { ex: ['EX'] }, 'res3:DECIMOCUARTO|#1': { ex: ['EX'] },
+};
+const usadasRes = new Set();
+const attrsRes = (clave, ficha, idx, texto) => {
+  const ex = [], r = [];
+  for (const k of Object.keys(MARCAS_RES)) { const [pre, rest] = k.split('|'); if (pre !== clave + ':' + ficha) continue;
+    if (rest === '#' + idx || (rest[0] === '~' && texto.startsWith(rest.slice(1)))) { usadasRes.add(k); (MARCAS_RES[k].ex || []).forEach(x => ex.push(x)); (MARCAS_RES[k].r || []).forEach(x => r.push(x)); } }
+  return (ex.length ? ` data-ex="${ex.join(',')}"` : '') + (r.length ? ` data-r="${r.join(',')}"` : '');
+};
 function construye(clave) {
   const F = FUENTES[clave];
   const lineas = F.archivos.map(a => lee(path.join(__dirname, a), 'utf8')).join('\n').replace(/\r/g, '').split('\n').filter(l => l.trim());
-  let h = '', abierta = false, pars = [];
+  let h = '', abierta = false, pars = [], ficha = '', pidx = 0;
   const cierra = () => { if (abierta) { h += pars.join('') + '</div></div></div>'; pars = []; abierta = false; } };
   for (const raw of lineas) {
     if (raw.startsWith('# ')) { cierra(); h += `<div class="bloque-titulo">${esc(raw.slice(2))}</div>`; continue; }
-    if (raw.startsWith('## ')) { cierra(); h += `<div class="articulo"><div class="articulo-head">${esc(raw.slice(3) + ' · ' + F.suf)}</div><div class="articulo-body"><div class="txt">`; abierta = true; continue; }
+    if (raw.startsWith('## ')) { cierra(); ficha = raw.slice(3).split(/[.s·]/)[0]; pidx = 0; h += `<div class="articulo"><div class="articulo-head">${esc(raw.slice(3) + ' · ' + F.suf)}</div><div class="articulo-body"><div class="txt">`; abierta = true; continue; }
     const sg = raw.length - raw.replace(/^\s+/, '').length, l = raw.trim();
-    const m = l.match(TOK);
+    const m = l.match(TOK); pidx++; const at = attrsRes(clave, ficha, pidx, m ? m[2] : l);
     const mg = sg >= 4 ? 36 : sg >= 2 ? 18 : 0;
     const st = mg ? ` style="margin-left:${mg}px"` : '';
-    pars.push(m ? `<p${st}><b>${esc(m[1])}</b> ${inline(m[2])}</p>` : `<p${st}>${inline(l)}</p>`);
+    pars.push(m ? `<p${st}${at}><b>${esc(m[1])}</b> ${inline(m[2])}</p>` : `<p${st}${at}>${inline(l)}</p>`);
   }
   cierra();
   return h;
 }
 const H = { res1: construye('res1'), res2: construye('res2'), res3: construye('res3') };
+for (const k of Object.keys(MARCAS_RES)) if (!usadasRes.has(k)) console.log('MARCA RES SIN COLOCAR:', k);
 module.exports = { H };
 if (require.main === module) for (const k in H) console.log(k, 'fichas:', (H[k].match(/class="articulo"/g) || []).length, 'títulos:', (H[k].match(/bloque-titulo/g) || []).length, 'chars:', H[k].length);
