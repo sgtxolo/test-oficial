@@ -74,9 +74,9 @@
       const nl = Math.max(1, lanes.length), v = encodeURIComponent(location.pathname.split('/').pop() + '#t=' + tema + '&p=' + card.dataset.id); let prev = -99;
       const key = (m) => tema + '/' + file + '/' + m.i;
       if (lat) ms.filter(m => m.labsL.length).forEach(m => {
-        const L = tx[0] * k - 34 - m.l * 11, R = tx[1] * k + 22 + m.l * 11;
+        const L = tx[0] * k - 50 - m.l * 11, R = tx[1] * k + 22 + m.l * 11;
         [['l', L], ['r', R]].forEach(([c, x]) => { const z = document.createElement('div'); z.className = 'br ' + c + ' ' + m.cl; z.style.left = x + 'px'; z.style.top = m.a + 'px'; z.style.height = (m.b - m.a) + 'px'; mg.appendChild(z); });
-        const y = Math.max(m.a, prev + 22); prev = y; const bg = document.createElement('div'); bg.className = 'bg'; bg.style.top = y + 'px'; bg.style.right = (Wd - (tx[0] * k - 34 - (nl - 1) * 11) + 8) + 'px';
+        const y = Math.max(m.a, prev + 22); prev = y; const bg = document.createElement('div'); bg.className = 'bg'; bg.style.top = y + 'px'; bg.style.right = (Wd - (tx[0] * k - 50 - (nl - 1) * 11) + 8) + 'px';
         m.labsL.forEach(([c, t]) => { const s =document.createElement('a'); s.className = 'gk ' + c; s.textContent = t; const ids = c === 'ia' ? m.iaq : (m.q.length ? m.q : m.iaq);
           s.href = 'test-oficial-conocimiento.html#repasar=' + encodeURIComponent(ids.join(',')) + '&v=' + v; s.title = (c === 'ia' ? 'Practicar las preguntas de IA de este párrafo' : 'Abrir en el test: ' + ids.join(', ')); bg.appendChild(s); });
         mg.appendChild(bg); });
