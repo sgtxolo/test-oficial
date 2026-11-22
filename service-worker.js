@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v787";
+const CACHE_NAME = "oposicion-cache-v788";
 // La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
 // Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
 // versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
@@ -149,6 +149,9 @@ const APP_SHELL = [
   "./expres-subrayado/clave-fijos.js",
   "./clave-extras.js",
   "./clave-mejoras.js",
+  "./clave-audio/t3.js",
+  "./clave-audio/t3-2.js",
+  "./clave-audio/t3-3.js",
   "./clave-audio/t4.js",
   "./clave-audio/t4-2.js",
   "./clave-audio/t2.js",
