@@ -303,12 +303,8 @@
     }
     var nums = numeros(texto); if (!nums.length) return;
     var an = buscaAncla(nums); if (!an) return;
-    var gs = (an.dataset.g || '').split(',').map(Number), ks = nums.filter(function (k) { return hayArt(gs, k); });
-    if (!ks.length) return;
-    var key = ks.join(',') + '@' + secDe(an) + ':' + an.textContent; if (key === autoKey) return;
-    if (autoNodo && autoNodo.parentNode) autoNodo.parentNode.removeChild(autoNodo); autoNodo = null; autoKey = key;
-    var falso = { dataset: { k: ks.join(','), g: an.dataset.g }, textContent: 'art. ' + ks.join(', '), _box: null, parentNode: an.parentNode, classList: { add: function () {}, remove: function () {} }, closest: function (s) { return an.closest(s); } };
-    autoNodo = abrirRef(falso);
+    var key = nums.join(',') + '@' + secDe(an) + ':' + an.textContent; if (key === autoKey) return;
+    autoKey = key; /* solo se resalta y se lleva a la línea; el desplegable lo abre el usuario */
     marca(an.closest('li,tr,h3,h2,p,div') || an);
   }
 
@@ -338,7 +334,7 @@
   window.addEventListener('message', function (e) { var d = e.data; if (d && d.claveVista) { vista = d.claveVista; coloca(); } });
   function pinta() {
     if (!panel) return; var it = items[pos], tot = items.length;
-    $('.sec', panel).textContent = (it ? (N.secciones[it.s].t) : 'Fin') + ' · ' + (pos + 1) + '/' + tot + ' · v792';
+    $('.sec', panel).textContent = (it ? (N.secciones[it.s].t) : 'Fin') + ' · ' + (pos + 1) + '/' + tot + ' · v793';
     $('.tx', panel).textContent = it ? it.t : 'Has terminado el repaso narrado. ¡Ahora, test!';
     $('.bar i', panel).style.width = Math.round(pos / Math.max(1, tot - 1) * 100) + '%';
     $('.est', panel).textContent = '≈ ' + restante() + ' min restantes · velocidad ' + rate + '×';
