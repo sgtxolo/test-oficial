@@ -17,10 +17,11 @@ const STARTS = {
   1: [null, /LEY ORG/, /^1\.2 /, /FINALIDAD DEL CONSEJO/, /TÍTULO I\. DERECHOS Y LIBERTADES/, /^1\.6 /, /^ANEXO/],
   2: [null, /^2\.2 /, /^2\.3 /, /^2\.4 /, /^2\.5 /, /^2\.6 /, /^2\.7 /],
   3: [null, /^3\.2 /],
+  5: [null, /^5\.2 /, /^5\.3 /, /^5\.5 /],
   4: [null, /^4\.2 /, /^4\.3 /, /^4\.4 /, /^4\.5 /, /^4\.6 /, /^AMPLIACIONES/],
 };
 /* grupo de cada <h2> numerado "N.M" (por defecto M-1); excepciones por tema */
-const H2G = { 3: [0, 0, 0, 1, 1, 1, 1] };
+const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3] };
 
 function expand(s) {
   const out = [];

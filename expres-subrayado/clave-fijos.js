@@ -4,7 +4,8 @@ window.EXSUBCLAVE_REPASO = {
   3: "repaso-t3-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T3 nuevo (12 págs; borrador antiguo repaso-t3-borrador.html sigue en la carpeta)
   1: "repaso-t1-esquema-clave-nuevo.html",   // Esquema clave nuevo T1 (borrador antiguo repaso-t1-borrador.html sigue en la carpeta)
   4: "repaso-t4-esquema-clave-nuevo.html",   // 21/11/2026: Esquema clave T4 nuevo (13 págs, listas y cuadros, audio y trampas en botón). El anterior (repaso-t4-borrador.html, ~40 págs) sigue en la carpeta
-  5: "repaso-t5-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
+  // 5: "repaso-t5-borrador.html",   // (antigua, 12/11/2026) la de abajo pisaba a esta
+  5: "repaso-t5-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T5 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   6: "repaso-t6-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
   7: "repaso-t7-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
   8: "repaso-t8-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
