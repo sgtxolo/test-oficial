@@ -68,6 +68,8 @@
     '#cl-nar .bar i{display:block;height:100%;background:#f5b400;border-radius:3px;width:0}',
     '#cl-nar .est{font-size:11.5px;opacity:.8}',
     'body.cl-narando{padding-bottom:190px!important}body.cl-narando #aud{display:none!important}',
+    /* móvil: letra más grande (solo en pantalla; la impresión no cambia) */
+    '@media screen and (max-width:760px){body{font-size:16.5px;line-height:1.5;padding:8px 12px 70px}h1{font-size:21px}.sub{font-size:13px}h2{font-size:17px;padding:5px 9px}h3{font-size:16px}li{margin:3px 0}table{font-size:15px}th,td{padding:4px 6px}.leyenda{font-size:13px}.art{font-size:12.5px}.ex{font-size:11px}.cl-artbox{font-size:15px}.cl-qb button{font-size:12px;padding:3px 9px}.cl-tools button{font-size:14px;padding:8px 12px}.rq-wrap{font-size:15px}.rq-cols{column-count:1}.tr{font-size:15px}#btnQ,#btnT{font-size:16px;padding:10px}.cq-quiz{font-size:15px}}',
     /* impresión: solo el esquema */
     '@media print{.cl-tools,.cl-qb,.cl-artbox,#cl-nar,#aud,#btnQ,#rqbox,#btnT,#trampas,.cq-quiz,.cq-ini,.cq-bar,.cl-fuera{display:none!important}.cl-ref{color:inherit;border:0}body{padding:0!important}}'
   ].join('\n');
@@ -301,7 +303,7 @@
     } catch (e) {}
     pinta(); coloca(); if (window.ResizeObserver) new ResizeObserver(coloca).observe(panel); setTimeout(coloca, 400);
   }
-  $('.cl-nbtn').forEach(function (bt) { bt.onclick = function () {
+  $$('.cl-nbtn').forEach(function (bt) { bt.onclick = function () {
     if (!('speechSynthesis' in window)) { alert('Este navegador no tiene voz (speechSynthesis).'); return; }
     var p = +bt.dataset.p; if (panel) panel.querySelector('#cl-x').click();
     KEY = p > 1 ? NT + '-' + p : NT;
