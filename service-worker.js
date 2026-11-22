@@ -1,4 +1,4 @@
-const CACHE_NAME = "oposicion-cache-v793";
+const CACHE_NAME = "oposicion-cache-v794";
 // La versión de arriba solo sirve para que el navegador vea que el service worker ha cambiado.
 // Los ficheros viven en una caché fija (DATOS) que no se tira en cada versión: así un cambio de
 // versión ya no obliga a volver a bajar las tres apps enteras (unos 6 MB comprimidos) en el móvil.
@@ -157,6 +157,8 @@ const APP_SHELL = [
   "./clave-audio/t5.js",
   "./clave-audio/t5-2.js",
   "./clave-audio/t5-3.js",
+  "./clave-audio/t6.js",
+  "./clave-audio/t6-2.js",
   "./clave-audio/t2.js",
   "./clave-audio/t2-2.js",
   "./clave-audio/t1.js",
@@ -177,11 +179,15 @@ const APP_SHELL = [
   "./clave-tests/t4-sec.js",
   "./clave-tests/t5-sec.js",
   "./clave-tests/t5-amar.js",
+  "./clave-tests/t6-sec.js",
+  "./clave-tests/t6-amar.js",
   "./clave-tests/t4-amar.js",
   "./clave-arts/t4.js",
   "./clave-arts/t4-f.js",
   "./clave-arts/t5.js",
   "./clave-arts/t5-f.js",
+  "./clave-arts/t6.js",
+  "./clave-arts/t6-f.js",
   "./clave-tests/t1.js",
   "./clave-tests/t10.js",
   "./clave-tests/t11.js",
@@ -206,7 +212,9 @@ const APP_SHELL = [
   "./clave-tests/t4-todo.js",
   "./clave-tests/t4-esq.js",
   "./clave-tests/t5-todo.js",
+  "./clave-tests/t6-todo.js",
   "./clave-tests/t5-esq.js",
+  "./clave-tests/t6-esq.js",
   "./clave-tests/t2-todo.js",
   "./clave-tests/t2-esq.js",
   "./clave-tests/t3-todo.js",
@@ -227,6 +235,7 @@ const APP_SHELL = [
   "./repaso-t4-borrador.html",
   "./repaso-t4-esquema-clave-nuevo.html",
   "./repaso-t5-esquema-clave-nuevo.html",
+  "./repaso-t6-esquema-clave-nuevo.html",
   "./repaso-t2-esquema-clave-nuevo.html",
   "./repaso-t3-esquema-clave-nuevo.html",
   "./repaso-t5-borrador.html",

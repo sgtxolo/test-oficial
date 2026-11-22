@@ -18,26 +18,37 @@ const STARTS = {
   2: [null, /^2\.2 /, /^2\.3 /, /^2\.4 /, /^2\.5 /, /^2\.6 /, /^2\.7 /],
   3: [null, /^3\.2 /],
   5: [null, /^5\.2 /, /^5\.3 /, /^5\.5 /],
+  6: [null, /\(arts\. 1 a 5\)/],   // LO 4/2000 (primeros 17 bloques del Exprés) | Ley 12/2009 (desde su Título preliminar «arts. 1 a 5»)
   4: [null, /^4\.2 /, /^4\.3 /, /^4\.4 /, /^4\.5 /, /^4\.6 /, /^AMPLIACIONES/],
 };
 /* grupo de cada <h2> numerado "N.M" (por defecto M-1); excepciones por tema */
-const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3] };
+const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1] };
 
+/* sufijos de artículo; la clave se guarda sin acento y en minúsculas: «35 quáter» -> «35quater».
+   T1-T5 siguen con la lista corta (así sus datos ya generados salen idénticos); desde el T6 se reconocen también quáter, quinquies, sexies, octies… */
+const SUF_CORTO = 'bis|ter|quater', SUF_LARGO = 'bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies|undecies|duodecies|terdecies|quaterdecies|quinquiesdecies';
+const CONN = '(?:\\s*,\\s*|\\s*[-–]\\s*|\\s+y\\s+|\\s+a\\s+)';
+let SUF = SUF_CORTO, NUM, REF;
+function ponSufijos(N) {
+  SUF = N >= 6 ? SUF_LARGO : SUF_CORTO;
+  NUM = '\\d+(?:\\.\\d+)?(?:\\s?(?:' + SUF + '))?';
+  REF = new RegExp('\\b[Aa]rts?\\.\\s*(' + NUM + '(?:' + CONN + '(?=\\d)' + NUM + ')*)', 'g');
+}
+const SUFN = x => x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 function expand(s) {
   const out = [];
   s = s.replace(/\.\d+/g, '').replace(/\sy\s/g, ',').replace(/\sa\s/g, '-').replace(/[–—]/g, '-');
   s.split(',').forEach(part => {
     part = part.trim();
-    const r = part.match(/^(\d+)\s*(bis|ter|quater)?\s*-\s*(\d+)/i);
-    if (r) { const a = +r[1], b = +r[3]; if (r[2]) out.push(a + r[2].toLowerCase()); for (let k = a + (r[2] ? 1 : 0); k <= Math.min(b, a + 80); k++) out.push(String(k)); }
-    else { const m = part.match(/^(\d+)\s*(bis|ter|quater)?/i); if (m) out.push(m[1] + (m[2] ? m[2].toLowerCase() : '')); }
+    const r = part.match(new RegExp('^(\\d+)\\s*(' + SUF + ')?\\s*-\\s*(\\d+)', 'i'));
+    if (r) { const a = +r[1], b = +r[3]; if (r[2]) out.push(a + SUFN(r[2])); for (let k = a + (r[2] ? 1 : 0); k <= Math.min(b, a + 80); k++) out.push(String(k)); }
+    else { const m = part.match(new RegExp('^(\\d+)\\s*(' + SUF + ')?', 'i')); if (m) out.push(m[1] + (m[2] ? SUFN(m[2]) : '')); }
   });
   return out;
 }
-const NUM = '\\d+(?:\\.\\d+)?(?:\\s?(?:bis|ter|quater))?', CONN = '(?:\\s*,\\s*|\\s*[-–]\\s*|\\s+y\\s+|\\s+a\\s+)';
-const REF = new RegExp('\\b[Aa]rts?\\.\\s*(' + NUM + '(?:' + CONN + '(?=\\d)' + NUM + ')*)', 'g');
 
 for (const N of process.argv.slice(2).map(Number).filter(Boolean)) {
+  ponSufijos(N);
   const f = R + 'repaso-t' + N + '-esquema-clave-nuevo.html';
   if (!fs.existsSync(f)) { console.log('T' + N + ': no existe ' + f); continue; }
   const html = fs.readFileSync(f, 'utf8');
@@ -55,7 +66,8 @@ for (const N of process.argv.slice(2).map(Number).filter(Boolean)) {
     const fh = (ch.match(/<div class="ex-fh">([\s\S]*?)<\/div>/) || [])[1]; if (fh === undefined) return;
     const fb = ch.slice(ch.indexOf('<div class="ex-fb">') + 19).replace(/(<\/div>\s*){1,2}$/, '').replace(/ title="[^"]*"/g, '').replace(/ onclick="[^"]*"/g, '').replace(/ tabindex="0"/g, '');
     const head = fh.replace(/\s*[:·]?\s*🎯[^<]*/g, '').replace(/<button[\s\S]*?<\/button>/g, '').trim();
-    const txt = head.replace(/<[^>]+>/g, ' ');
+    let txt = head.replace(/<[^>]+>/g, ' ');
+    if (N >= 6) txt = txt.replace(/\s+/g, ' ').trim();   // desde el T6: una cabecera con marcas dejaba un espacio inicial y la ficha se quedaba sin clave (T1-T5 no se tocan para que salgan idénticos)
     let keys = [];
     const pr = txt.match(/^Protocolo[^—]*?art\.\s*(\d+)/i);
     if (pr) keys = [pr[1]]; else { const a = txt.match(/^Art[íi]culos?\s+([^—]*?)\s+—/); if (a) keys = expand(a[1]); }
