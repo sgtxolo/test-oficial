@@ -237,6 +237,14 @@
     if (cur) out.push(cur); return out;
   }
   function vozEs() { var v = (speechSynthesis.getVoices() || []).filter(function (x) { return /^es/i.test(x.lang); }); return v.filter(function (x) { return /es-ES/i.test(x.lang); })[0] || v[0] || null; }
+  /* dentro de la app (iframe a toda altura) el panel fijo quedaría al final de la página: lo colocamos en la parte visible de la pantalla del padre */
+  var vista = null;
+  function coloca() {
+    if (!panel || !emb) return;
+    if (!vista) { try { parent.postMessage({ claveListo: 1 }, '*'); } catch (e) {} return; }
+    panel.style.position = 'absolute'; panel.style.bottom = 'auto'; panel.style.top = Math.max(0, vista.top + vista.h - panel.offsetHeight) + 'px';
+  }
+  window.addEventListener('message', function (e) { var d = e.data; if (d && d.claveVista) { vista = d.claveVista; coloca(); } });
   function pinta() {
     if (!panel) return; var it = items[pos], tot = items.length;
     $('.sec', panel).textContent = (it ? (N.secciones[it.s].t) : 'Fin') + ' · ' + (pos + 1) + '/' + tot;
@@ -291,9 +299,9 @@
         navigator.mediaSession.setActionHandler('nexttrack', function () { saltoSec(1); }); navigator.mediaSession.setActionHandler('previoustrack', function () { saltoSec(-1); });
       }
     } catch (e) {}
-    pinta();
+    pinta(); coloca(); if (window.ResizeObserver) new ResizeObserver(coloca).observe(panel); setTimeout(coloca, 400);
   }
-  $$('.cl-nbtn').forEach(function (bt) { bt.onclick = function () {
+  $('.cl-nbtn').forEach(function (bt) { bt.onclick = function () {
     if (!('speechSynthesis' in window)) { alert('Este navegador no tiene voz (speechSynthesis).'); return; }
     var p = +bt.dataset.p; if (panel) panel.querySelector('#cl-x').click();
     KEY = p > 1 ? NT + '-' + p : NT;
