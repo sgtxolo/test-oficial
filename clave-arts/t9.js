@@ -1,0 +1,2 @@
+/* generado por prompts/herramientas/clave-mejoras-datos.js; no editar a mano */
+(window.CLAVE_ART=window.CLAVE_ART||{})[9]={"h2g":[0,1],"g":[{"t":"EXPOSICIÓN DE MOTIVOS","a":{"1":[0],"2":[1],"4":[2],"5":[3],"6":[4],"7":[5],"8":[6],"9":[7],"10":[8],"11":[9],"12":[10],"13":[11],"15":[12],"16":[13],"17":[14],"18":[15],"21":[16],"22":[17],"23":[18],"24":[19],"25":[20],"29":[21],"30":[22],"31":[23]}},{"t":"9.2 — DIRECTIVA DE DEFENSA NACIONAL 2020, DE 11 DE JUNIO DE 2020 (texto oficial)","a":{}}]};
