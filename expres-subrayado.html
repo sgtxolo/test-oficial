@@ -536,7 +536,7 @@ function marcasHTML(p) {
   return o.join('');
 }
 // ---------- tema claro / oscuro y tamaño ----------
-function baseAncho() { const w = innerWidth, z = w >= 1900 ? 1.4 : w >= 1500 ? 1.2 : 1; return w >= 1100 ? Math.round((w - 70) / z) : w >= 700 ? Math.max(980, w - 48) : 980; }
+function baseAncho() { const w = innerWidth, sw = screen.width, z = sw >= 1900 ? 1.4 : sw >= 1500 ? 1.2 : 1; return w >= 1100 ? Math.round((Math.min(w, sw) - 70) / z) : w >= 700 ? Math.max(980, w - 48) : 980; }   // el ancho sale de la pantalla real, no de la ventana: así el zoom del navegador (Ctrl+rueda) agranda o encoge también las fotos
 function pintaTema() { const d = st.oscuro === undefined ? matchMedia('(prefers-color-scheme:dark)').matches : st.oscuro; document.documentElement.dataset.theme = d ? 'dark' : 'light'; $('#b-tema').textContent = d ? '☀️' : '🌙'; document.documentElement.style.setProperty('--ancho', Math.round(baseAncho() * st.escala / 100) + 'px'); mandaTemaRepaso(); }
 // el repaso (iframe) sigue el modo claro/oscuro de la app, no el del móvil: se lo mando por postMessage (vale también en file://)
 function mandaTemaRepaso() { const f = document.getElementById('rep-if'); if (f && f.contentWindow) f.contentWindow.postMessage({repasoTema: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'}, '*'); }
