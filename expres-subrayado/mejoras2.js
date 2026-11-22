@@ -261,7 +261,7 @@ window.MEJORAS2 = function () {
   const print0 = window.print.bind(window); let soloPrev = false;
   window.print = function () {
     const z = $('#zonaImp'); if (z && z.children.length && tema && !z.querySelector('.portada')) z.insertAdjacentHTML('afterbegin', portada(tema));
-    if (soloPrev) { soloPrev = false; const o = document.createElement('div'); o.id = 'prevImp'; o.style.setProperty('--fz', (st.impOp.fz || 12) + 'px'); o.style.setProperty('--zoom', st.impOp.zoom || 85);
+    if (soloPrev) { soloPrev = false; const o = document.createElement('div'); o.id = 'prevImp'; o.style.setProperty('--fz', (st.impOp.fz || 12) + 'px'); o.style.setProperty('--zoom', st.impOp.zoom || 100);
       o.innerHTML = '<div class="px"><button data-pv="x">✕ Cerrar vista previa</button><button data-pv="p">🖨 Imprimir</button></div><div class="hoja">' + z.innerHTML + '</div>'; document.body.appendChild(o); return; }
     return print0();
   };
