@@ -80,6 +80,11 @@ Crea `clave-arts/tN.js`, `clave-arts/tN-f.js`, `clave-tests/tN-sec.js` y `clave-
 - **REGLA ESTRICTA: solo datos que estén en el esquema, en el Exprés (`expres/tN.js`) o en las preguntas del tema. NADA de memoria ni de conocimiento general.** Si dudas de un dato, no lo cuentes.
 - Debe incluir las **trampas** del tema, **plazos, cifras, mayorías y autoridades**, y **preguntas de examen** («esto ha caído en examen…», de las oficiales/EXOF) con su respuesta.
 - Después actualiza `PARTES` y haz `node --check` de cada fichero.
+- **El esquema sigue a la voz (automático, lo hace `clave-mejoras.js`; no hay que tocar nada por tema):** al narrar, el esquema se desplaza y resalta en amarillo (`.cl-leyendo`) la línea del artículo nombrado. **No abre el desplegable del artículo** (lo abre el usuario al pulsar la cita `art. N`). Para que funcione al escribir el narrado:
+  - Cada sección del narrado empieza con el número del apartado del esquema en el título (`"t":"2.3 Diligencia debida…"`), que debe coincidir con el `<h2>` «2.3 · …». Sin número, esa sección no se sincroniza.
+  - Nombra los artículos en letra y tras la palabra «artículo/artículos» («artículo treinta y cinco», «artículos cuatro y cinco», «artículos 5 a 9», «artículo veintiséis ter»). Las citas del esquema deben ir como `art. N` / `arts. N-M` (las convierte en desplegables `clave-arts/tN.js`).
+  - Panel en móvil: una sola línea + botones; oculta la barra «Escuchar». Muestra «· vNNN» al final de la línea: sirve para saber qué versión corre.
+  - En la app el esquema va en iframe: el scroll lo hace `expres-subrayado.html` (mensaje `claveScroll`). Al cambiar `clave-mejoras.js`, subir el `?v=` de su `<script>` en las páginas `repaso-tN-esquema-clave-nuevo.html` y la CACHE del service worker (los `.js` se sirven de caché y se refrescan en segundo plano).
 
 ### 6) Lista de comprobación final (antes del commit)
 1. `service-worker.js`: añadir a `APP_SHELL` `repaso-tN-esquema-clave-nuevo.html`, `clave-tests/tN-todo.js`, `tN-esq.js`, `tN-sec.js`, `tN-amar.js`, `clave-arts/tN.js`, `tN-f.js`, `clave-audio/tN.js` (+ `tN-2.js`…) y **subir `CACHE_NAME` en +1**.
