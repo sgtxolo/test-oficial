@@ -80,7 +80,7 @@
   aplicaCss(); window.addEventListener('resize', aplicaCss); try { if (window.parent !== window) window.parent.addEventListener('resize', aplicaCss); } catch (e) {}
 
   /* ---------- 1) barra con imprimir y narrado ---------- */
-  var PARTES = ({ 1: 3, 2: 2, 3: 3, 4: 2, 5: 3, 6: 2, 7: 1 })[NT] || 1, KEY = NT, tools = document.createElement('div'); tools.className = 'cl-tools cl-noprint';
+  var PARTES = ({ 1: 3, 2: 2, 3: 3, 4: 2, 5: 3, 6: 2, 7: 1, 8: 2 })[NT] || 1, KEY = NT, tools = document.createElement('div'); tools.className = 'cl-tools cl-noprint';
   tools.innerHTML = '<button id="cl-print" title="Imprime solo el esquema: sin trampas, preguntas rápidas, test ni audio">🖨 Imprimir solo el esquema</button>'
     + (PARTES > 1 ? [1, 2, 3].slice(0, PARTES).map(function (p) { return '<button class="nar cl-nbtn" data-p="' + p + '" title="Esquema explicado en forma de narración, para escuchar en el coche">🎧 Narrado parte ' + p + ' de ' + PARTES + ' (≈30 min)</button>'; }).join('') : '<button class="nar cl-nbtn" data-p="1" title="Todo el esquema explicado en forma de narración, para escuchar en el coche">🎧 Modo coche narrado (≈30 min)</button>');
   var ley = $('.leyenda'), h1 = $('h1');
