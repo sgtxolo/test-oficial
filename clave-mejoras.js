@@ -57,6 +57,7 @@
     '.cl-artbox .ex-sello{display:inline-block;margin-left:6px;border:2px solid #c0392b;color:#c0392b;border-radius:50%;font-size:9px;font-weight:900;padding:2px 3px;line-height:1;vertical-align:middle}',
     '.cl-artbox .ex-plg{cursor:pointer}.cl-artbox .ex-plg::before{content:"(…)";color:#2f6b52;font-weight:800;padding:0 2px}',
     '.cl-artbox .ex-plg .ex-plg-t{display:none}.cl-artbox .ex-plg.on .ex-plg-t{display:inline}.cl-artbox .ex-plg.on::before{content:none}',
+    '.cl-leyendo{outline:3px solid #f5b400;background:#fff3b0!important;border-radius:4px;scroll-margin-top:90px}',
     '.cl-flash{outline:3px solid #f5b400;background:#fff3b0!important;color:#17324d!important}',
     /* panel narrado */
     '#cl-nar{position:fixed;left:0;right:0;bottom:0;background:#0f2438;color:#fff;padding:8px 10px;z-index:30;box-shadow:0 -3px 12px rgba(0,0,0,.35);font-size:13px}',
@@ -78,7 +79,7 @@
   aplicaCss(); window.addEventListener('resize', aplicaCss); try { if (window.parent !== window) window.parent.addEventListener('resize', aplicaCss); } catch (e) {}
 
   /* ---------- 1) barra con imprimir y narrado ---------- */
-  var PARTES = ({ 1: 3, 2: 2, 3: 3, 4: 2 })[NT] || 1, KEY = NT, tools = document.createElement('div'); tools.className = 'cl-tools cl-noprint';
+  var PARTES = ({ 1: 3, 2: 2, 3: 3, 4: 2, 5: 2 })[NT] || 1, KEY = NT, tools = document.createElement('div'); tools.className = 'cl-tools cl-noprint';
   tools.innerHTML = '<button id="cl-print" title="Imprime solo el esquema: sin trampas, preguntas rápidas, test ni audio">🖨 Imprimir solo el esquema</button>'
     + (PARTES > 1 ? [1, 2, 3].slice(0, PARTES).map(function (p) { return '<button class="nar cl-nbtn" data-p="' + p + '" title="Esquema explicado en forma de narración, para escuchar en el coche">🎧 Narrado parte ' + p + ' de ' + PARTES + ' (≈30 min)</button>'; }).join('') : '<button class="nar cl-nbtn" data-p="1" title="Todo el esquema explicado en forma de narración, para escuchar en el coche">🎧 Modo coche narrado (≈30 min)</button>');
   var ley = $('.leyenda'), h1 = $('h1');
@@ -204,7 +205,7 @@
     return html || '<i>Este artículo no está desarrollado en el Exprés.</i>';
   }
   function abrirRef(ref) {
-    var ya = ref._box; if (ya && ya.parentNode) { ya.parentNode.removeChild(ya); ref._box = null; ref.classList.remove('on'); return; }
+    var ya = ref._box; if (ya && ya.parentNode) { ya.parentNode.removeChild(ya); ref._box = null; ref.classList.remove('on'); return null; }
     var cont = ref.closest('li,tr,h3,h2,p,div') || ref.parentNode, box = document.createElement('div'); box.className = 'cl-artbox';
     var cab = '<div class="cl-top"><span>📖 ' + ref.textContent.replace(/</g, '&lt;') + ' · texto del Exprés con tu subrayado (doble clic en azul = sus preguntas)</span><button type="button">✕ cerrar</button></div>';
     box.innerHTML = cab + '<div class="cl-cuerpo">Cargando…</div>';
@@ -217,6 +218,7 @@
     box.querySelector('.cl-top button').onclick = function () { if (nodo.parentNode) nodo.parentNode.removeChild(nodo); ref._box = null; ref.classList.remove('on'); };
     var listo = function () { var c = box.querySelector('.cl-cuerpo'); if (c) c.innerHTML = pintar(ref); };
     if ((window.CLAVE_ARTF || {})[NT]) listo(); else cargar(base + 'clave-arts/t' + NT + '-f.js').then(listo).catch(function () { var c = box.querySelector('.cl-cuerpo'); if (c) c.textContent = 'No se han podido cargar los artículos (¿sin conexión?).'; });
+    return nodo;
   }
   document.addEventListener('click', function (e) {
     var r = e.target.closest && e.target.closest('.cl-ref'); if (r) { e.preventDefault(); abrirRef(r); return; }
@@ -226,6 +228,87 @@
     var m = e.target.closest && e.target.closest('.cl-artbox mark.m-resp[data-q]'); if (!m) return;
     var ids = m.dataset.q.split(',').filter(Boolean); if (ids.length) irAlTest(ids.slice(0, 60));
   });
+
+  /* ---------- 5b) el esquema sigue a la voz: va al artículo que se está narrando, lo resalta y abre su texto ---------- */
+  var NU = { cero: 0, un: 1, uno: 1, una: 1, dos: 2, tres: 3, cuatro: 4, cinco: 5, seis: 6, siete: 7, ocho: 8, nueve: 9, diez: 10, once: 11, doce: 12, trece: 13, catorce: 14, quince: 15, dieciseis: 16, diecisiete: 17, dieciocho: 18, diecinueve: 19, veinte: 20, veintiun: 21, veintiuno: 21, veintiuna: 21, veintidos: 22, veintitres: 23, veinticuatro: 24, veinticinco: 25, veintiseis: 26, veintisiete: 27, veintiocho: 28, veintinueve: 29 },
+    TE = { treinta: 30, cuarenta: 40, cincuenta: 50, sesenta: 60, setenta: 70, ochenta: 80, noventa: 90 },
+    HU = { cien: 100, ciento: 100, doscientos: 200, trescientos: 300, cuatrocientos: 400, quinientos: 500, seiscientos: 600, setecientos: 700, ochocientos: 800, novecientos: 900 };
+  function sinAc(t) { return t.toLowerCase().replace(/á/g, 'a').replace(/é/g, 'e').replace(/í/g, 'i').replace(/ó/g, 'o').replace(/ú/g, 'u').replace(/ü/g, 'u'); }
+  function numAt(tk, i) {
+    var v = 0, ok = false, w;
+    for (; i < tk.length; i++) {
+      w = tk[i];
+      if (/^\d+$/.test(w) && !ok) { v = +w; ok = true; i++; break; }
+      if (HU[w] !== undefined) { v += HU[w]; ok = true; continue; }
+      if (TE[w] !== undefined) { v += TE[w]; ok = true; i++; if (tk[i] === 'y' && NU[tk[i + 1]] > 0 && NU[tk[i + 1]] < 10) { v += NU[tk[i + 1]]; i += 2; } break; }
+      if (NU[w] !== undefined) { v += NU[w]; ok = true; i++; break; }
+      break;
+    }
+    if (!ok) return null;
+    var suf = ''; if (/^(bis|ter|quater)$/.test(tk[i] || '')) { suf = tk[i]; i++; }
+    return { v: v, s: suf, i: i };
+  }
+  /* artículos que se nombran en un texto narrado: «artículo treinta y cinco», «artículos cuatro y cinco», «artículos 5 a 9»… (devuelve claves como «35», «26ter») */
+  function numeros(texto) {
+    var tk = sinAc(texto).match(/[a-zñ]+|\d+|[,.;:]/g) || [];
+    for (var i = 0; i < tk.length; i++) {
+      if (!/^(articulos?|arts?)$/.test(tk[i])) continue;
+      var j = i + 1, out = []; if (tk[j] === '.') j++;
+      for (;;) {
+        var r = numAt(tk, j); if (!r) break;
+        out.push(r.v + r.s); j = r.i;
+        if ((tk[j] === 'a' || tk[j] === 'al') && !r.s) { var r2 = numAt(tk, j + 1); if (r2 && !r2.s && r2.v > r.v && r2.v - r.v <= 40) { for (var k = r.v + 1; k <= r2.v; k++) out.push(String(k)); j = r2.i; } }
+        if (tk[j] === ',' || tk[j] === 'y' || tk[j] === 'e') j++; else break;
+      }
+      if (out.length) return out;
+    }
+    return [];
+  }
+  var sec0 = -2, h2i = -1, autoNodo = null, autoKey = '', leyendo = null, refsCache = null;
+  function secDe(el) { var sec = -1; for (var i = 0; i < h2s.length; i++) { if (h2s[i].compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) sec = i; else break; } return sec; }
+  function refsDe(h) {
+    if (!refsCache) refsCache = $$('.cl-ref').filter(enMain).map(function (r) { return { r: r, h: secDe(r), ks: (r.dataset.k || '').split(',') }; });
+    return refsCache.filter(function (x) { return x.h === h; });
+  }
+  function h3De(el) { var h = null; $$('h3').filter(enMain).forEach(function (t) { if (t.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = t; }); return h; }
+  function limpiaSync() {
+    try { if (autoNodo && autoNodo.parentNode) autoNodo.parentNode.removeChild(autoNodo); } catch (e) {}
+    autoNodo = null; autoKey = '';
+    if (leyendo) { leyendo.classList.remove('cl-leyendo'); leyendo = null; }
+  }
+  function marca(el) {
+    if (!el) return; if (leyendo && leyendo !== el) leyendo.classList.remove('cl-leyendo');
+    el.classList.add('cl-leyendo'); leyendo = el;
+    try { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) { el.scrollIntoView(); }
+  }
+  function buscaAncla(nums) {
+    var lista = h2i >= 0 ? refsDe(h2i) : []; if (!lista.length) return null;
+    for (var n = 0; n < nums.length; n++) {
+      var c = lista.filter(function (x) { return x.ks.indexOf(nums[n]) >= 0; });
+      var det = c.filter(function (x) { return !x.r.closest('h2,h3'); })[0] || c[0];
+      if (det) return det.r;
+    }
+    return null;
+  }
+  function sincroniza(texto, it) {
+    if (!IDX || !it || !h2s.length) return;
+    if (it.s !== sec0) { /* cambio de sección: ir al apartado (por el número «2.3» del título o por el primer artículo que cite) */
+      sec0 = it.s; limpiaSync();
+      var m = N.secciones[it.s].t.match(/^(\d+\.\d+)/);
+      if (m) for (var i = 0; i < h2s.length; i++) if (h2s[i].textContent.replace(/\s+/g, ' ').trim().indexOf(m[1]) === 0) { h2i = i; break; }
+      var ns = numeros((N.secciones[it.s].p || []).join(' ')), primero = ns.length ? buscaAncla(ns) : null;
+      marca((primero && (primero.closest('h3') || h3De(primero))) || h2s[h2i] || null);
+    }
+    var nums = numeros(texto); if (!nums.length) return;
+    var an = buscaAncla(nums); if (!an) return;
+    var gs = (an.dataset.g || '').split(',').map(Number), ks = nums.filter(function (k) { return hayArt(gs, k); });
+    if (!ks.length) return;
+    var key = ks.join(',') + '@' + secDe(an) + ':' + an.textContent; if (key === autoKey) return;
+    if (autoNodo && autoNodo.parentNode) autoNodo.parentNode.removeChild(autoNodo); autoNodo = null; autoKey = key;
+    var falso = { dataset: { k: ks.join(','), g: an.dataset.g }, textContent: 'art. ' + ks.join(', '), _box: null, parentNode: an.parentNode, classList: { add: function () {}, remove: function () {} }, closest: function (s) { return an.closest(s); } };
+    autoNodo = abrirRef(falso);
+    marca(an.closest('li,tr,h3,h2,p,div') || an);
+  }
 
   /* ---------- 5) modo coche narrado ---------- */
   var N = null, items = [], pos = 0, jugando = false, gen = 0, rate = 1, wl = null, panel = null;
@@ -259,6 +342,7 @@
     $('.est', panel).textContent = '≈ ' + restante() + ' min restantes · velocidad ' + rate + '×';
     $('#cl-play', panel).textContent = jugando ? '⏸' : '▶';
     $('#cl-sel', panel).value = it ? it.s : 0;
+    if (!jugando && it) { try { sincroniza(it.t, it); } catch (e) {} }
     try { localStorage.setItem('clave-nar-' + KEY, String(pos)); } catch (e) {}
   }
   function parar() { gen++; try { speechSynthesis.cancel(); } catch (e) {} }
@@ -268,6 +352,7 @@
     (function sig() {
       if (mi !== gen) return;
       if (i >= partes.length) { pos++; setTimeout(function () { if (mi === gen) hablar(); }, items[pos - 1] && items[pos - 1].tit ? 450 : 250); return; }
+      try { sincroniza(partes[i], items[pos]); } catch (e) {}
       var u = new SpeechSynthesisUtterance(partes[i++]); u.lang = 'es-ES'; u.rate = rate; var v = vozEs(); if (v) u.voice = v;
       u.onend = function () { if (mi === gen) sig(); }; u.onerror = function (e) { if (mi === gen && e.error !== 'canceled' && e.error !== 'interrupted') sig(); };
       speechSynthesis.speak(u);
@@ -296,7 +381,7 @@
     $('#cl-vel', panel).onchange = function () { rate = parseFloat(this.value) || 1; if (jugando) hablar(); else pinta(); };
     $('#cl-sel', panel).onchange = function () { var s = +this.value; for (var i = 0; i < items.length; i++) if (items[i].s === s) { pos = i; break; } if (jugando) hablar(); else pinta(); };
     $('.bar', panel).onclick = function (e) { var r = this.getBoundingClientRect(); pos = Math.round((e.clientX - r.left) / r.width * (items.length - 1)); if (jugando) hablar(); else pinta(); };
-    $('#cl-x', panel).onclick = function () { jugando = false; parar(); panel.remove(); panel = null; document.body.classList.remove('cl-narando'); try { if (wl) wl.release(); } catch (e) {} };
+    $('#cl-x', panel).onclick = function () { jugando = false; parar(); panel.remove(); panel = null; document.body.classList.remove('cl-narando'); sec0 = -2; limpiaSync(); try { if (wl) wl.release(); } catch (e) {} };
     try { var g = +localStorage.getItem('clave-nar-' + KEY); if (g > 0 && g < items.length) pos = g; } catch (e) {}
     try {
       if ('mediaSession' in navigator) {
@@ -309,7 +394,7 @@
   }
   $$('.cl-nbtn').forEach(function (bt) { bt.onclick = function () {
     if (!('speechSynthesis' in window)) { alert('Este navegador no tiene voz (speechSynthesis).'); return; }
-    var p = +bt.dataset.p; if (panel) panel.querySelector('#cl-x').click();
+    var p = +bt.dataset.p; if (panel) panel.querySelector('#cl-x').click(); sec0 = -2; h2i = -1;
     KEY = p > 1 ? NT + '-' + p : NT;
     var go = function () { N = (window.CLAVE_AUDIO || {})[KEY]; if (!N) { alert('La versión narrada de este tema todavía no está hecha.'); return; } items = aplanar(N); pos = 0; abrirNarrado(); };
     if ((window.CLAVE_AUDIO || {})[KEY]) go(); else cargar(base + 'clave-audio/t' + KEY + '.js').then(go).catch(function () { alert('La versión narrada de este tema todavía no está hecha (o no se pudo cargar).'); });
