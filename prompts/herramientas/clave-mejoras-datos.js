@@ -19,10 +19,11 @@ const STARTS = {
   3: [null, /^3\.2 /],
   5: [null, /^5\.2 /, /^5\.3 /, /^5\.5 /],
   6: [null, /\(arts\. 1 a 5\)/],   // LO 4/2000 (primeros 17 bloques del Exprés) | Ley 12/2009 (desde su Título preliminar «arts. 1 a 5»)
+  7: [null, /PREÁMBULO/],   // LO 2/1979 TC (bloques hasta el art. 58) | LO 1/1982 (desde «PREÁMBULO · CAPÍTULO I»)
   4: [null, /^4\.2 /, /^4\.3 /, /^4\.4 /, /^4\.5 /, /^4\.6 /, /^AMPLIACIONES/],
 };
 /* grupo de cada <h2> numerado "N.M" (por defecto M-1); excepciones por tema */
-const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1] };
+const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1] };
 
 /* sufijos de artículo; la clave se guarda sin acento y en minúsculas: «35 quáter» -> «35quater».
    T1-T5 siguen con la lista corta (así sus datos ya generados salen idénticos); desde el T6 se reconocen también quáter, quinquies, sexies, octies… */
