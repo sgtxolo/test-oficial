@@ -73,7 +73,9 @@
     /* impresión: solo el esquema */
     '@media print{.cl-tools,.cl-qb,.cl-artbox,#cl-nar,#aud,#btnQ,#rqbox,#btnT,#trampas,.cq-quiz,.cq-ini,.cq-bar,.cl-fuera{display:none!important}.cl-ref{color:inherit;border:0}body{padding:0!important}}'
   ].join('\n');
-  var st = document.createElement('style'); st.id = 'cl-mejoras-css'; st.textContent = css; document.head.appendChild(st);
+  var st = document.createElement('style'); st.id = 'cl-mejoras-css'; document.head.appendChild(st);
+  function aplicaCss() { var w = window; try { if (window.parent !== window) w = window.parent; } catch (e) {} var vert = w.innerHeight >= w.innerWidth; st.textContent = css.replace(' and (orientation:portrait)', vert ? '' : ' and (min-width:99999px)'); }
+  aplicaCss(); window.addEventListener('resize', aplicaCss); try { if (window.parent !== window) window.parent.addEventListener('resize', aplicaCss); } catch (e) {}
 
   /* ---------- 1) barra con imprimir y narrado ---------- */
   var PARTES = ({ 4: 2 })[NT] || 1, KEY = NT, tools = document.createElement('div'); tools.className = 'cl-tools cl-noprint';
