@@ -1657,6 +1657,11 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
         const t = (e && e.temaId) || parseInt(id, 10);
         if (id && Array.isArray(window.ESQ_TEMAS) && window.ESQ_TEMAS.includes(+t))
           h += '<button type="button" class="btn-ver-esquema" onclick="verEnEsquema(\'' + id.replace(/'/g, '') + '\')">📘 Ver en el esquema</button>';
+        if (id && [1, 2, 3, 4].includes(+t)){   // Esquema clave nuevo (T1-T4): se abre en el apartado donde está la pregunta
+          const E = (window.CLAVE_ESQ || {})[+t];
+          if (!E && !window['_cq' + t]){ window['_cq' + t] = 1; const sc = document.createElement('script'); sc.src = 'clave-tests/t' + (+t) + '-esq.js'; document.head.appendChild(sc); }
+          if (!E || E.includes(id)) h += '<button type="button" class="btn-ver-esquema" onclick="location.href=\'repaso-t' + (+t) + '-esquema-clave-nuevo.html#q=' + encodeURIComponent(id) + '\'">⭐ Ver en el esquema clave</button>';
+        }
         const S = window.EXSUB && window.EXSUB[+t];
         if (id && S){
           const pz = window.piezaSubrayado(S, id, e.explicacion);
