@@ -22,10 +22,11 @@ const STARTS = {
   9: [null, /^9\.2 /],   // LO 5/2005 | Directiva de Defensa Nacional 2020
   8: [null],   // LO 6/1985 del Poder Judicial: una sola norma (todo el Exprés es un único grupo)
   7: [null, /PREÁMBULO/],   // LO 2/1979 TC (bloques hasta el art. 58) | LO 1/1982 (desde «PREÁMBULO · CAPÍTULO I»)
+  10: [null],   // Código Civil: una sola norma
   4: [null, /^4\.2 /, /^4\.3 /, /^4\.4 /, /^4\.5 /, /^4\.6 /, /^AMPLIACIONES/],
 };
 /* grupo de cada <h2> numerado "N.M" (por defecto M-1); excepciones por tema */
-const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1] };
+const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1], 10: [0, 0, 0, 0, 0, 0, 0] };
 
 /* sufijos de artículo; la clave se guarda sin acento y en minúsculas: «35 quáter» -> «35quater».
    T1-T5 siguen con la lista corta (así sus datos ya generados salen idénticos); desde el T6 se reconocen también quáter, quinquies, sexies, octies… */
@@ -73,7 +74,7 @@ for (const N of process.argv.slice(2).map(Number).filter(Boolean)) {
     if (N >= 6) txt = txt.replace(/\s+/g, ' ').trim();   // desde el T6: una cabecera con marcas dejaba un espacio inicial y la ficha se quedaba sin clave (T1-T5 no se tocan para que salgan idénticos)
     let keys = [];
     const pr = txt.match(/^Protocolo[^—]*?art\.\s*(\d+)/i);
-    if (pr) keys = [pr[1]]; else { const a = txt.match(/^Art[íi]culos?\s+([^—]*?)\s+—/); if (a) keys = expand(a[1]); else if (N === 8) { const b = txt.match(/^Art[íi]culos?\s+(\d+(?:\s*(?:bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies))?)(?![\wáéíóú])/i); if (b) keys = expand(b[1]); } }   // T8: las cabeceras del Exprés son «Artículo 22 bis EXOF ✱ R6» (sin raya)
+    if (pr) keys = [pr[1]]; else { const a = txt.match(/^Art[íi]culos?\s+([^—]*?)\s+—/); if (a) keys = expand(a[1]); else if (N === 8 || N === 10) { const b = txt.match(/^Art[íi]culos?\s+(\d+(?:\s*(?:bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies))?)(?![\wáéíóú])/i); if (b) keys = expand(b[1]); } }   // T8: las cabeceras del Exprés son «Artículo 22 bis EXOF ✱ R6» (sin raya)
     const fi = FICHAS.push([head, fb]) - 1; keys.forEach(k => { (grupos[g].a[k] = grupos[g].a[k] || []).push(fi); });
   });
   /* h2 -> grupo */
