@@ -42,7 +42,8 @@ Letra NEGRA con el color como FONDO (sin raya inferior: la raya quitaba legibili
 - Informe final en 6 líneas: páginas reales (cerrado), reparto por bloques, nº de preguntas del esquema (total y oficiales), nº de preguntas rápidas, datos dudosos o no verificados, y lo que no pudiste comprobar.
 
 ### Estado del método nuevo (22/11/2026)
-Hechos: **T4** (modelo; 13 págs; 704 preguntas del esquema, 195 oficiales; 347 rápidas), **T1** (13 págs; 529, 123 oficiales; 325 rápidas), **T2** (14 págs; 511, 87 oficiales; 985 rápidas), **T3** (en curso al escribir esto). Pendiente: el resto de temas, de uno en uno, y la capa de colores se aprobó solo sobre el T4 (vista en captura, no en la app). Las dudas de contenido de cada tema están en el informe de su commit.
+Hechos: **T4** (modelo; 13 págs; 704 preguntas del esquema, 195 oficiales; 347 rápidas), **T1** (13 págs; 529, 123 oficiales; 325 rápidas), **T2** (14 págs; 511, 87 oficiales; 985 rápidas), **T3** (12 págs; 384 preguntas, 185 oficiales; 215 rápidas). Pendiente: el resto de temas, de uno en uno, y la capa de colores se aprobó solo sobre el T4 (vista en captura, no en la app). Las dudas de contenido de cada tema están en el informe de su commit.
+Ojo en `clave-fijos.js`: puede haber DOS entradas con la misma clave en `EXSUBCLAVE_REPASO` (la de abajo pisa a la de arriba); al conectar un tema, busca y comenta la antigua (pasó con el T3).
 
 ---
 
