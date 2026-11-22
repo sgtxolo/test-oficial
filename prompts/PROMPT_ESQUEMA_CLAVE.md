@@ -45,6 +45,51 @@ Letra NEGRA con el color como FONDO (sin raya inferior: la raya quitaba legibili
 Hechos: **T4** (modelo; 13 págs; 704 preguntas del esquema, 195 oficiales; 347 rápidas), **T1** (13 págs; 529, 123 oficiales; 325 rápidas), **T2** (14 págs; 511, 87 oficiales; 985 rápidas), **T3** (12 págs; 384 preguntas, 185 oficiales; 215 rápidas). Pendiente: el resto de temas, de uno en uno, y la capa de colores se aprobó solo sobre el T4 (vista en captura, no en la app). Las dudas de contenido de cada tema están en el informe de su commit.
 Ojo en `clave-fijos.js`: puede haber DOS entradas con la misma clave en `EXSUBCLAVE_REPASO` (la de abajo pisa a la de arriba); al conectar un tema, busca y comenta la antigua (pasó con el T3).
 
+## 🧩 MEJORAS COMUNES (23/11/2026; hechas en T1-T4) — OBLIGATORIAS en todo tema nuevo (T5, T6, T7, T8…)
+Todo esto lo aporta `clave-mejoras.js` (un solo script común) + datos por tema. Un agente nuevo debe poder repetir el resultado sin tocar el código común, salvo la línea `PARTES`, las constantes `STARTS`/`H2G` del generador y la lista `[1,2,3,4]` del botón ⭐ del test.
+
+### 1) Estructura de la página del tema (de ella dependen los generadores)
+- `<h2>` por norma (máx. 7, numerados «N.M …» con M = orden de la norma dentro del tema; `H2G` y `STARTS` usan ese número), `<h3>` por bloque con `<span class="art">arts. X-Y</span>` (las citas «art. 13» / «arts. 5-9» del texto se vuelven desplegables).
+- `<button id="btnQ">` (preguntas rápidas, `#rqbox` justo después), `<button id="btnT">` + `<div class="tr" id="trampas">`, barra `#aud`, y los bloques `COLORES-INICIO…FIN` / `COLORES2-INICIO…FIN`. **Todo lo que está antes de `#btnQ` es «el esquema»**: de ahí sacan texto los generadores.
+- Al final, **en este orden**: `<script>window.CLAVE_SOLO_QUIZ=true;window.CLAVE_ALCANCE_TEMA=true;</script><script src="clave-extras.js" defer></script><script src="clave-mejoras.js" defer></script>`. Sin la tercera etiqueta no hay ninguna de las mejoras.
+
+### 2) Qué hace `clave-mejoras.js` (no se edita por tema, salvo `PARTES`)
+- **🖨 Imprimir solo el esquema**: oculta trampas, rápidas, test, audio y botones.
+- **🎯 Oficiales / Todas** junto a cada título `h2/h3`: abre `test-oficial-conocimiento.html` con las preguntas de esa parte (datos `clave-tests/tN-sec.js`, `CLAVE_SEC[N]`). Aproximación por palabras (respuesta ≥70 %, enunciado ≥30 % del bloque); las oficiales van antes que las de IA (`-ia-` en el id).
+- **Subrayado amarillo** = importante pero menos que lo caído en examen (`clave-tests/tN-amar.js`, `CLAVE_AMAR[N]`): regla de trigramas = tríos de palabras (sin acentos, ≥2 significativas) del esquema que salen en la respuesta correcta de preguntas de IA y NO en las oficiales. También junta marcas contiguas del mismo color.
+- **Artículos citados desplegables**: al pulsar «art. N» se abre debajo la redacción del Exprés con el subrayado del usuario (`clave-arts/tN.js` = índice por norma y `clave-arts/tN-f.js` = fichas; se cargan bajo demanda). Otro clic lo cierra.
+- **🎧 Narrador**: botones «Narrado parte p de P (≈30 min)». Nº de partes por tema en la línea `var PARTES = ({ 1: 3, 2: 2, 3: 3, 4: 2 })[NT] || 1`: **añadir ahí el tema nuevo** (p. ej. `5: 2`). Claves de los datos: `CLAVE_AUDIO['N']` (parte 1) y `CLAVE_AUDIO['N-2']`, `['N-3']`… Con 1 parte sale un solo botón «Modo coche narrado». El panel del narrador conserva la barra `#aud` original del esquema.
+- **Móvil**: letra grande solo en vertical (mira la ventana PADRE si está en iframe: `parent.innerHeight>=innerWidth`; en horizontal no se agranda), `text-size-adjust:100%` y tablas con scroll horizontal.
+- Abre el apartado concreto si la URL lleva `#q=ID` (lo usa el botón ⭐ del test de conocimientos).
+
+### 3) Generador de datos: `node prompts/herramientas/clave-mejoras-datos.js N`
+Crea `clave-arts/tN.js`, `clave-arts/tN-f.js`, `clave-tests/tN-sec.js` y `clave-tests/tN-amar.js` (necesita antes `repaso-tN-esquema-clave-nuevo.html`, `expres/tN.js` y `clave-tests/tN-todo.js`). **Para un tema nuevo hay que añadir su configuración dentro del propio script:**
+- `STARTS[N]` = array de regex del título de bloque del Exprés (`<div class="bloque-titulo">`) donde EMPIEZA cada norma (la primera es `null`; p. ej. T4: `[null,/^4\.2 /,/^4\.3 /,…]`). Un grupo = una norma.
+- `H2G[N]` (solo si hace falta) = grupo de cada `<h2>` cuando no sea «M-1» (p. ej. T3: `[0,0,0,1,1,1,1]`).
+- Revisa la salida: «artículos desplegables N · bloques con preguntas a/b · amarillo K tríos». Si un artículo citado no está en el Exprés, simplemente no se despliega. Regenerar si cambia el esquema.
+
+### 4) `clave-tests/tN-todo.js` y `tN-esq.js` (los necesita también el test de conocimientos)
+- `tN-todo.js` (`CLAVE_TODO[N]`) = todas las preguntas del tema (oficiales + IA); ya existe para T1-T26 en `clave-tests/`. Si no existe, se genera con `node prompts/herramientas/clave-tests.js` (mira su cabecera).
+- `tN-esq.js` (`CLAVE_ESQ[N]` = ids) = `node prompts/herramientas/clave-esquema-nuevo.js N` (respuesta ≥70 % y enunciado ≥40 % en el esquema).
+- **Botón «⭐ Ver en el esquema clave»** en la explicación de cada pregunta de `test-oficial-conocimiento.html` (dentro de `window.explicBoxHTML`): carga `clave-tests/tN-esq.js` bajo demanda y, si el id está en `CLAVE_ESQ[N]`, enlaza a `repaso-tN-esquema-clave-nuevo.html#q=ID`. **Hoy está limitado a `[1, 2, 3, 4].includes(+t)`: al cerrar un tema nuevo AÑADE su número a esa lista.**
+
+### 5) Narrado (`clave-audio/tN.js`, `tN-2.js`…)
+- Formato: `(window.CLAVE_AUDIO=window.CLAVE_AUDIO||{})[N]={"titulo":"Tema N · Esquema clave narrado, parte 1 de P","secciones":[{"t":"Introducción","p":["párrafo 1","párrafo 2"]},{"t":"Nombre de norma","p":[…]}]};` y la parte 2 con clave string `["N-2"]`. Un fichero por parte.
+- **≈30 min por parte = ≈5.000-5.800 palabras.** P = palabras totales / 5.400; **partes equilibradas**, repartidas por normas completas. Cada parte abre con «Bienvenido…» y qué se verá; la última se despide.
+- Texto hablado: números en letra («2016 barra 399»), sin símbolos ni «→», frases cortas.
+- **REGLA ESTRICTA: solo datos que estén en el esquema, en el Exprés (`expres/tN.js`) o en las preguntas del tema. NADA de memoria ni de conocimiento general.** Si dudas de un dato, no lo cuentes.
+- Debe incluir las **trampas** del tema, **plazos, cifras, mayorías y autoridades**, y **preguntas de examen** («esto ha caído en examen…», de las oficiales/EXOF) con su respuesta.
+- Después actualiza `PARTES` y haz `node --check` de cada fichero.
+
+### 6) Lista de comprobación final (antes del commit)
+1. `service-worker.js`: añadir a `APP_SHELL` `repaso-tN-esquema-clave-nuevo.html`, `clave-tests/tN-todo.js`, `tN-esq.js`, `tN-sec.js`, `tN-amar.js`, `clave-arts/tN.js`, `tN-f.js`, `clave-audio/tN.js` (+ `tN-2.js`…) y **subir `CACHE_NAME` en +1**.
+2. `expres-subrayado/clave-fijos.js`: entrada `N: "repaso-tN-esquema-clave-nuevo.html"` (comenta la antigua: la de abajo pisa a la de arriba).
+3. `PARTES` en `clave-mejoras.js`, `STARTS/H2G` en el generador y el `[1,2,3,4]` del botón ⭐ en `test-oficial-conocimiento.html`.
+4. `node --check` de todos los `.js` nuevos; cada `<script>` del HTML con `new Function`; 0 caracteres de control.
+5. **Pruebas con Chrome sin pantalla** (`--headless=new --dump-dom --allow-file-access-from-files --virtual-time-budget=7000`): salen los botones 🎯 y 🎧, hay subrayado amarillo, y al simular clic en una cita se abre el artículo; PDF con `--print-to-pdf` (mayor «/Count»); captura a 980 px y otra en ventana estrecha vertical.
+6. **Commit y push SOLO de tus archivos**, uno a uno con `git add ruta`. NUNCA `boceto-marcas-laterales.html`, `esquemas-datos/citas-temario2.js`, `nul` ni `prompts/temario-limpio/`. Mensaje en español acabando con `Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>`.
+7. Informe: di lo que no pudiste probar (audio con voz real, impresión en papel, móvil real, dentro de la app).
+
 ---
 
 ## MÉTODO ANTERIOR (cuadros fieles del temario, T20) — solo si lo pido
