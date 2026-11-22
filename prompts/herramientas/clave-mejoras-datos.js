@@ -23,6 +23,7 @@ const STARTS = {
   8: [null],   // LO 6/1985 del Poder Judicial: una sola norma (todo el Exprés es un único grupo)
   7: [null, /PREÁMBULO/],   // LO 2/1979 TC (bloques hasta el art. 58) | LO 1/1982 (desde «PREÁMBULO · CAPÍTULO I»)
   10: [null],   // Código Civil: una sola norma
+  11: [null, /^TÍTULO PRELIMINAR — Disposiciones generales$/, /^TÍTULO PRELIMINAR — Disposiciones generales, principios/, /^TÍTULO I — Transparencia/, /^CAPÍTULO I — Objeto y ámbito/],   // LO 3/2018 | Ley 39/2015 | Ley 40/2015 | Ley 19/2013 | RD 179/2005
   4: [null, /^4\.2 /, /^4\.3 /, /^4\.4 /, /^4\.5 /, /^4\.6 /, /^AMPLIACIONES/],
 };
 /* grupo de cada <h2> numerado "N.M" (por defecto M-1); excepciones por tema */
