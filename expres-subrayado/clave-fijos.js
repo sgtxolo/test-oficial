@@ -12,6 +12,7 @@ window.EXSUBCLAVE_REPASO = {
   7: "repaso-t7-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T7 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   // 8: "repaso-t8-borrador.html",   // (antigua, 12/11/2026) la de abajo pisa a esta
   8: "repaso-t8-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T8 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
+  12: "repaso-t12-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T12 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   11: "repaso-t11-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T11 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   10: "repaso-t10-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T10 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   9: "repaso-t9-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T9 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
@@ -22,7 +23,7 @@ window.EXSUBCLAVE_REPASO = {
   15: "repaso-t15-borrador.html",   // 14/11/2026: Esquema clave T15 VioGén (8 cuadros del temario, Anexo I y II literales + 8 fichas + R1-R23 + rápidas)
   14: "repaso-t14-borrador.html",   // 14/11/2026: Esquema clave T14 Defensor del Pueblo (4 cuadros del temario + 28 fichas + R1-R15 + rápidas)
   13: "repaso-t13-borrador.html",   // 14/11/2026: Esquema clave T13 LJCA (5 cuadros del temario + 16 fichas + R1-R19 + rápidas)
-  12: "repaso-t12-borrador.html",   // 13/11/2026: Esquema clave T12 Gobierno (5 cuadros del temario + 17 fichas + R + rápidas)
+  // (antigua) 12: "repaso-t12-borrador.html",   // 13/11/2026: Esquema clave T12 Gobierno (5 cuadros del temario + 17 fichas + R + rápidas)
   // (antigua) 11: "repaso-t11-borrador.html",   // 14/11/2026: Esquema clave T11 Derecho Administrativo (12 de 40 cuadros + 13 fichas EXOF/R + R1-R55 + rápidas)
   // (antigua) 10: "repaso-t10-borrador.html",   // 13/11/2026: Esquema clave T10 Derecho Civil (8 cuadros del temario + fichas + R + rápidas)
   // (antigua) 9: "repaso-t9-borrador.html",   // 13/11/2026: Esquema clave T9 Defensa Nacional (6 cuadros del temario + fichas + R + rápidas)
