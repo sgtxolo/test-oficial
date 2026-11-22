@@ -338,7 +338,7 @@
   window.addEventListener('message', function (e) { var d = e.data; if (d && d.claveVista) { vista = d.claveVista; coloca(); } });
   function pinta() {
     if (!panel) return; var it = items[pos], tot = items.length;
-    $('.sec', panel).textContent = (it ? (N.secciones[it.s].t) : 'Fin') + ' · ' + (pos + 1) + '/' + tot;
+    $('.sec', panel).textContent = (it ? (N.secciones[it.s].t) : 'Fin') + ' · ' + (pos + 1) + '/' + tot + ' · v792';
     $('.tx', panel).textContent = it ? it.t : 'Has terminado el repaso narrado. ¡Ahora, test!';
     $('.bar i', panel).style.width = Math.round(pos / Math.max(1, tot - 1) * 100) + '%';
     $('.est', panel).textContent = '≈ ' + restante() + ' min restantes · velocidad ' + rate + '×';
