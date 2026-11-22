@@ -235,7 +235,7 @@ body.marcando #pill{display:none}
 body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:none}
 @media print{#top,#herr,#info,.acc,.nota,.toast,#vis,#pill,#mod{display:none!important}.card{box-shadow:none;break-inside:avoid;border:0;opacity:1!important}.card .cab{padding:2px 0}.card img{cursor:auto}body{background:#fff}}
 </style><script src="voz-respuesta.js"></script>
-<style id="pantalla-grande">
+<style id="pantalla-grande">@media (min-width:1500px){body{zoom:1.2}}@media (min-width:1900px){body{zoom:1.4}}
 </style></head><body>
 <div id="top"><div class="fila">
   <button class="ib oculto" id="b-atras" title="Volver a la pantalla de inicio">🏠 <span class="txt-b">Inicio</span></button>
@@ -537,7 +537,7 @@ function marcasHTML(p) {
   return o.join('');
 }
 // ---------- tema claro / oscuro y tamaño ----------
-function baseAncho() { const w = innerWidth; return w >= 1900 ? 1840 : w >= 1500 ? 1560 : w >= 1100 ? 1240 : w >= 700 ? Math.max(980, w - 48) : 980; }
+function baseAncho() { const w = innerWidth, z = w >= 1900 ? 1.4 : w >= 1500 ? 1.2 : 1; return w >= 1100 ? Math.round((w - 70) / z) : w >= 700 ? Math.max(980, w - 48) : 980; }
 function pintaTema() { const d = st.oscuro === undefined ? matchMedia('(prefers-color-scheme:dark)').matches : st.oscuro; document.documentElement.dataset.theme = d ? 'dark' : 'light'; $('#b-tema').textContent = d ? '☀️' : '🌙'; document.documentElement.style.setProperty('--ancho', Math.round(baseAncho() * st.escala / 100) + 'px'); mandaTemaRepaso(); }
 // el repaso (iframe) sigue el modo claro/oscuro de la app, no el del móvil: se lo mando por postMessage (vale también en file://)
 function mandaTemaRepaso() { const f = document.getElementById('rep-if'); if (f && f.contentWindow) f.contentWindow.postMessage({repasoTema: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'}, '*'); }
