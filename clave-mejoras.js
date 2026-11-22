@@ -67,9 +67,9 @@
     '#cl-nar .bar{height:6px;background:#2d4a66;border-radius:3px;cursor:pointer;margin-top:4px}',
     '#cl-nar .bar i{display:block;height:100%;background:#f5b400;border-radius:3px;width:0}',
     '#cl-nar .est{font-size:11.5px;opacity:.8}',
-    'body.cl-narando{padding-bottom:190px!important}body.cl-narando #aud{display:none!important}',
+    'body.cl-narando{padding-bottom:240px!important}',
     /* móvil: letra más grande (solo en pantalla; la impresión no cambia) */
-    '@media screen and (max-width:760px){body{font-size:16.5px;line-height:1.5;padding:8px 12px 70px}h1{font-size:21px}.sub{font-size:13px}h2{font-size:17px;padding:5px 9px}h3{font-size:16px}li{margin:3px 0}table{font-size:15px}th,td{padding:4px 6px}.leyenda{font-size:13px}.art{font-size:12.5px}.ex{font-size:11px}.cl-artbox{font-size:15px}.cl-qb button{font-size:12px;padding:3px 9px}.cl-tools button{font-size:14px;padding:8px 12px}.rq-wrap{font-size:15px}.rq-cols{column-count:1}.tr{font-size:15px}#btnQ,#btnT{font-size:16px;padding:10px}.cq-quiz{font-size:15px}}',
+    '@media screen and (max-width:760px) and (orientation:portrait){body{font-size:16.5px;line-height:1.5;padding:8px 12px 70px}h1{font-size:21px}.sub{font-size:13px}h2{font-size:17px;padding:5px 9px}h3{font-size:16px}li{margin:3px 0}table{font-size:15px}th,td{padding:4px 6px}.leyenda{font-size:13px}.art{font-size:12.5px}.ex{font-size:11px}.cl-artbox{font-size:15px}.cl-qb button{font-size:12px;padding:3px 9px}.cl-tools button{font-size:14px;padding:8px 12px}.rq-wrap{font-size:15px}.rq-cols{column-count:1}.tr{font-size:15px}#btnQ,#btnT{font-size:16px;padding:10px}.cq-quiz{font-size:15px}}',
     /* impresión: solo el esquema */
     '@media print{.cl-tools,.cl-qb,.cl-artbox,#cl-nar,#aud,#btnQ,#rqbox,#btnT,#trampas,.cq-quiz,.cq-ini,.cq-bar,.cl-fuera{display:none!important}.cl-ref{color:inherit;border:0}body{padding:0!important}}'
   ].join('\n');
@@ -242,9 +242,11 @@
   /* dentro de la app (iframe a toda altura) el panel fijo quedaría al final de la página: lo colocamos en la parte visible de la pantalla del padre */
   var vista = null;
   function coloca() {
-    if (!panel || !emb) return;
+    if (!panel) return;
+    var au = $('#aud'), ah = au ? au.offsetHeight : 0;
+    if (!emb) { panel.style.bottom = ah + 'px'; return; }
     if (!vista) { try { parent.postMessage({ claveListo: 1 }, '*'); } catch (e) {} return; }
-    panel.style.position = 'absolute'; panel.style.bottom = 'auto'; panel.style.top = Math.max(0, vista.top + vista.h - panel.offsetHeight) + 'px';
+    panel.style.position = 'absolute'; panel.style.bottom = 'auto'; panel.style.top = Math.max(0, vista.top + vista.h - panel.offsetHeight - ah) + 'px';
   }
   window.addEventListener('message', function (e) { var d = e.data; if (d && d.claveVista) { vista = d.claveVista; coloca(); } });
   function pinta() {
@@ -259,7 +261,7 @@
   }
   function parar() { gen++; try { speechSynthesis.cancel(); } catch (e) {} }
   function hablar() {
-    parar(); if (!jugando || pos >= items.length) { jugando = false; pinta(); return; }
+    parar(); try { var bn = $('#bn'); if (bn && jugando) bn.click(); } catch (e) {} /* el audio del esquema y el narrado no suenan a la vez */ if (!jugando || pos >= items.length) { jugando = false; pinta(); return; }
     var mi = gen, partes = troceo(items[pos].t), i = 0; pinta();
     (function sig() {
       if (mi !== gen) return;
@@ -310,6 +312,7 @@
     var go = function () { N = (window.CLAVE_AUDIO || {})[KEY]; if (!N) { alert('La versión narrada de este tema todavía no está hecha.'); return; } items = aplanar(N); pos = 0; abrirNarrado(); };
     if ((window.CLAVE_AUDIO || {})[KEY]) go(); else cargar(base + 'clave-audio/t' + KEY + '.js').then(go).catch(function () { alert('La versión narrada de este tema todavía no está hecha (o no se pudo cargar).'); });
   }; });
+  document.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('#bp') && jugando) { jugando = false; parar(); pinta(); } }, true);
   window.addEventListener('pagehide', parar);
 
   /* ---------- arranque ---------- */
