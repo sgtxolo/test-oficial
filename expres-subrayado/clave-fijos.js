@@ -1,6 +1,7 @@
 // Esquema clave especial por tema.
 // EXSUBCLAVE_REPASO[tema] = "archivo.html": el botón ⭐ Esquema clave de ese tema muestra ese repaso (resumen hecho a mano, ~10 págs) en lugar de la selección automática de artículos.
 window.EXSUBCLAVE_REPASO = {
+  3: "repaso-t3-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T3 nuevo (12 págs; borrador antiguo repaso-t3-borrador.html sigue en la carpeta)
   1: "repaso-t1-esquema-clave-nuevo.html",   // Esquema clave nuevo T1 (borrador antiguo repaso-t1-borrador.html sigue en la carpeta)
   4: "repaso-t4-esquema-clave-nuevo.html",   // 21/11/2026: Esquema clave T4 nuevo (13 págs, listas y cuadros, audio y trampas en botón). El anterior (repaso-t4-borrador.html, ~40 págs) sigue en la carpeta
   5: "repaso-t5-borrador.html",   // 12/11/2026: Esquema clave automático (fichas del Exprés + R + rápidas)
@@ -19,7 +20,7 @@ window.EXSUBCLAVE_REPASO = {
   10: "repaso-t10-borrador.html",   // 13/11/2026: Esquema clave T10 Derecho Civil (8 cuadros del temario + fichas + R + rápidas)
   9: "repaso-t9-borrador.html",   // 13/11/2026: Esquema clave T9 Defensa Nacional (6 cuadros del temario + fichas + R + rápidas)
   2: "repaso-t2-esquema-clave-nuevo.html",   // 21/11/2026: Esquema clave T2 nuevo (listas y cuadros, 7 normas, audio y trampas en botón). El anterior (repaso-t2-borrador.html) sigue en la carpeta
-  3: "repaso-t3-borrador.html",   // 11/11/2026: repaso del Tema 3 (TUE/TFUE; 11 págs)
+  // 3: "repaso-t3-borrador.html",  // sustituido por repaso-t3-esquema-clave-nuevo.html (arriba);   // 11/11/2026: repaso del Tema 3 (TUE/TFUE; 11 págs)
   20: "repaso-t20-borrador.html",   // 11/11/2026: Esquema clave T20 con cuadros del temario rehechos (11 cuadros + 5 fichas; 12 págs)
   21: "repaso-t21-borrador.html",   // 11/11/2026: repaso del Tema 21 (EXOF, R, oficiales y subrayado del Exprés; 10 págs reales)
   22: "repaso-t22-borrador.html",   // 15/11/2026: Esquema clave T22 (14 cuadros redibujados con la forma del temario + 9 fichas; 12 págs; R1-R21 y 185 rápidas aparte)
