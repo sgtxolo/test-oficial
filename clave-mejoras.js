@@ -74,9 +74,9 @@
   var st = document.createElement('style'); st.id = 'cl-mejoras-css'; st.textContent = css; document.head.appendChild(st);
 
   /* ---------- 1) barra con imprimir y narrado ---------- */
-  var tools = document.createElement('div'); tools.className = 'cl-tools cl-noprint';
+  var PARTES = ({ 4: 2 })[NT] || 1, KEY = NT, tools = document.createElement('div'); tools.className = 'cl-tools cl-noprint';
   tools.innerHTML = '<button id="cl-print" title="Imprime solo el esquema: sin trampas, preguntas rápidas, test ni audio">🖨 Imprimir solo el esquema</button>'
-    + '<button id="cl-nbtn" class="nar" title="Todo el esquema explicado en forma de narración, para escuchar en el coche">🎧 Modo coche narrado (≈30 min)</button>';
+    + (PARTES > 1 ? [1, 2, 3].slice(0, PARTES).map(function (p) { return '<button class="nar cl-nbtn" data-p="' + p + '" title="Esquema explicado en forma de narración, para escuchar en el coche">🎧 Narrado parte ' + p + ' de ' + PARTES + ' (≈30 min)</button>'; }).join('') : '<button class="nar cl-nbtn" data-p="1" title="Todo el esquema explicado en forma de narración, para escuchar en el coche">🎧 Modo coche narrado (≈30 min)</button>');
   var ley = $('.leyenda'), h1 = $('h1');
   (ley ? ley : (h1 || document.body.firstChild)).insertAdjacentElement(ley ? 'afterend' : 'afterend', tools);
   $('#cl-print').onclick = function () {
@@ -245,7 +245,7 @@
     $('.est', panel).textContent = '≈ ' + restante() + ' min restantes · velocidad ' + rate + '×';
     $('#cl-play', panel).textContent = jugando ? '⏸' : '▶';
     $('#cl-sel', panel).value = it ? it.s : 0;
-    try { localStorage.setItem('clave-nar-' + NT, String(pos)); } catch (e) {}
+    try { localStorage.setItem('clave-nar-' + KEY, String(pos)); } catch (e) {}
   }
   function parar() { gen++; try { speechSynthesis.cancel(); } catch (e) {} }
   function hablar() {
@@ -283,7 +283,7 @@
     $('#cl-sel', panel).onchange = function () { var s = +this.value; for (var i = 0; i < items.length; i++) if (items[i].s === s) { pos = i; break; } if (jugando) hablar(); else pinta(); };
     $('.bar', panel).onclick = function (e) { var r = this.getBoundingClientRect(); pos = Math.round((e.clientX - r.left) / r.width * (items.length - 1)); if (jugando) hablar(); else pinta(); };
     $('#cl-x', panel).onclick = function () { jugando = false; parar(); panel.remove(); panel = null; document.body.classList.remove('cl-narando'); try { if (wl) wl.release(); } catch (e) {} };
-    try { var g = +localStorage.getItem('clave-nar-' + NT); if (g > 0 && g < items.length) pos = g; } catch (e) {}
+    try { var g = +localStorage.getItem('clave-nar-' + KEY); if (g > 0 && g < items.length) pos = g; } catch (e) {}
     try {
       if ('mediaSession' in navigator) {
         navigator.mediaSession.metadata = new MediaMetadata({ title: N.titulo, artist: 'Esquema clave' });
@@ -293,11 +293,13 @@
     } catch (e) {}
     pinta();
   }
-  $('#cl-nbtn').onclick = function () {
+  $$('.cl-nbtn').forEach(function (bt) { bt.onclick = function () {
     if (!('speechSynthesis' in window)) { alert('Este navegador no tiene voz (speechSynthesis).'); return; }
-    var go = function () { N = (window.CLAVE_AUDIO || {})[NT]; if (!N) { alert('La versión narrada de este tema todavía no está hecha.'); return; } items = aplanar(N); abrirNarrado(); };
-    if ((window.CLAVE_AUDIO || {})[NT]) go(); else cargar(base + 'clave-audio/t' + NT + '.js').then(go).catch(function () { alert('La versión narrada de este tema todavía no está hecha (o no se pudo cargar).'); });
-  };
+    var p = +bt.dataset.p; if (panel) panel.querySelector('#cl-x').click();
+    KEY = p > 1 ? NT + '-' + p : NT;
+    var go = function () { N = (window.CLAVE_AUDIO || {})[KEY]; if (!N) { alert('La versión narrada de este tema todavía no está hecha.'); return; } items = aplanar(N); pos = 0; abrirNarrado(); };
+    if ((window.CLAVE_AUDIO || {})[KEY]) go(); else cargar(base + 'clave-audio/t' + KEY + '.js').then(go).catch(function () { alert('La versión narrada de este tema todavía no está hecha (o no se pudo cargar).'); });
+  }; });
   window.addEventListener('pagehide', parar);
 
   /* ---------- arranque ---------- */
