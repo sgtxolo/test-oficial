@@ -69,6 +69,7 @@
     '#cl-nar .bar i{display:block;height:100%;background:#f5b400;border-radius:3px;width:0}',
     '#cl-nar .est{font-size:11.5px;opacity:.8}',
     'body.cl-narando{padding-bottom:240px!important}',
+    '@media screen and (max-width:760px){body.cl-narando{padding-bottom:170px!important}#cl-nar{padding:5px 8px}#cl-nar .t{gap:5px}#cl-nar .t b{display:none}#cl-nar .sec{flex:1;font-size:11.5px;min-width:0}#cl-nar .tx{max-height:46px;font-size:12px;margin:3px 0}#cl-nar button,#cl-nar select{font-size:13px;padding:3px 8px}#cl-nar #cl-sel{max-width:96px}#cl-nar .est{font-size:10.5px}}',
     /* móvil: letra más grande (solo en pantalla; la impresión no cambia) */
     '@media screen and (max-width:760px) and (orientation:portrait){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}td,th{min-width:150px}body{font-size:16.5px;line-height:1.5;padding:8px 12px 70px}h1{font-size:21px}.sub{font-size:13px}h2{font-size:17px;padding:5px 9px}h3{font-size:16px}li{margin:3px 0}table{font-size:15px}th,td{padding:4px 6px}.leyenda{font-size:13px}.art{font-size:12.5px}.ex{font-size:11px}.cl-artbox{font-size:15px}.cl-qb button{font-size:12px;padding:3px 9px}.cl-tools button{font-size:14px;padding:8px 12px}.rq-wrap{font-size:15px}.rq-cols{column-count:1}.tr{font-size:15px}#btnQ,#btnT{font-size:16px;padding:10px}.cq-quiz{font-size:15px}}',
     /* impresión: solo el esquema */
@@ -279,6 +280,7 @@
   function marca(el) {
     if (!el) return; if (leyendo && leyendo !== el) leyendo.classList.remove('cl-leyendo');
     el.classList.add('cl-leyendo'); leyendo = el;
+    if (emb) { try { parent.postMessage({ claveScroll: el.getBoundingClientRect().top + (window.pageYOffset || 0) }, '*'); } catch (e) {} return; }
     try { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) { el.scrollIntoView(); }
   }
   function buscaAncla(nums) {
