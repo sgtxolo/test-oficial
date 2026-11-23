@@ -27,6 +27,7 @@
     '.cq-btn{border:1px solid var(--linea,#cfcfcf);border-radius:10px;background:var(--fondo,#fff);color:var(--tx,#1b1b1b);font:600 14px "Segoe UI",system-ui,sans-serif;padding:10px 14px;cursor:pointer}' +
     '.cq-btn.p{background:#14532d;color:#fff;border-color:#14532d}.cq-btn.m{background:#b91c1c;color:#fff;border-color:#b91c1c}' +
     '.cq-leyendo{outline:3px solid #f59e0b;outline-offset:2px;border-radius:6px;background:rgba(245,158,11,.10)}' +
+    'h1.cq-leyendo,h2.cq-leyendo,h3.cq-leyendo{background:#f5c518!important}h1.cq-leyendo,h2.cq-leyendo,h3.cq-leyendo,h1.cq-leyendo *,h2.cq-leyendo *,h3.cq-leyendo *{color:#111!important}' +
     '.cq-leyendo.ban,.cq-leyendo.ban *,.cq-leyendo .ban,.cq-leyendo .ban *{color:#111!important}.cq-leyendo.ban{background:#f5c518!important}' +
     '.cq-quiz{margin:26px 0 90px;border:2px solid #14532d;border-radius:14px;padding:14px 16px;background:var(--fondo,#fff);color:var(--tx,#1b1b1b)}' +
     '.cq-quiz h2{margin:0 0 6px;background:none!important;color:inherit!important;padding:0!important;font-size:17px}' +
@@ -93,6 +94,8 @@
   }
   window.addEventListener('message', function (e) { var d = e.data; if (d && d.claveVista) { vista = d.claveVista; colocaBarra(); } });
   try { if (emb) parent.postMessage({claveListo: 1}, '*'); } catch (e) {}
+  /* dentro de la app la barra se copia a la barra fija de la página (así no se queda a mitad de pantalla al hacer scroll) */
+  if (emb) { var se = D.createElement('script'); se.src = location.pathname.replace(/[^/]*$/, '') + 'clave-espejo.js?v=1'; se.onload = function () { try { window.ClaveEspejo && ClaveEspejo.registrar('cq', function () { return bar; }, /.cq-bar/); } catch (er) {} }; D.head.appendChild(se); }
   function pintaVel() { var s = $('.cq-vel', bar); if (s) s.textContent = vel.toFixed(2).replace(/0$/, '') + '×'; }
   function info(t) { var s = $('.cq-info', bar); if (s) s.textContent = t || ''; }
   var wake = null;

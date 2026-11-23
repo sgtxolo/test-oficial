@@ -15,7 +15,13 @@ const CAB = V22.map(([, loc]) => { const k = norm(loc); const f = ARTS.find(([, 
 const Vcab = V22.map(([, , h], i) => [CAB[i], h]);
 Object.assign(X.opciones, { recorte: 'ventana', cabeza: 5, antes: 4, umbral: 80, sinRespPliega: true });
 const N = { BAJO: +(process.env.BAJO || 1e6), CAB: +(process.env.CAB || 6), ANT: +(process.env.ANT || 5) };
+// 23/11/2026: PROTECCIÓN DE DATOS PENAL (LO 7/2021, arts. 1-19): TODOS los artículos y TODOS sus apartados, enteros y con los colores del esquema (pauta del usuario: más detalle
+// de esta parte en el Exprés para poder añadirla a su subrayado). Se apaga con DATOS_TODO=0.
+const DATOS_TODO = process.env.DATOS_TODO !== '0';
+const esDatos = k => DATOS_TODO && /Protección de datos penal/.test(X.fichas[k].cab.replace(/<[^>]+>/g, ''));
+const SEL = {}; X.fichas.forEach((f, k) => { SEL[k] = esDatos(k) ? f.ps.map((_, j) => j) : 'auto'; });
 const nivel = (k, p, f) => {
+  if (esDatos(k)) return { todo: true };
   const fuerte = f.ps.some(x => /data-ex="[^"]*(?:EXOF|EX)/.test(x.at)) || /·\s*R\d/.test(f.cab);
   const ast = f.ps.some(x => /data-ex=/.test(x.at));
   if (process.env.OF_VENT && p.of && !fuerte) return { recorte: 'ventana', cabeza: N.CAB, antes: N.ANT, umbral: 160 };
@@ -27,7 +33,7 @@ const nivel = (k, p, f) => {
 const limpia = t => t.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 const SUSTITUYE = (process.env.SUSTITUYE || '').split('|').filter(Boolean);
 const fichasFuera = new Set(X.fichas.map((f, k) => [k, limpia(f.cab)]).filter(([, c]) => SUSTITUYE.some(s => c === s || c.startsWith(s + ' ') || c.startsWith(s + '○'))).map(([k]) => k));
-const OMITIR = { nivel, fichas: fichasFuera, conCuadro: true };
+const OMITIR = { nivel, fichas: fichasFuera, conCuadro: true, sel: SEL };
 const EXTRAS = {};
 const H0 = X.automatico(Vcab, EXTRAS, OMITIR);
 const S = X.asignaSueltas(H0);

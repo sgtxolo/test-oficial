@@ -57,6 +57,25 @@
     '.cl-artbox .ex-sello{display:inline-block;margin-left:6px;border:2px solid #c0392b;color:#c0392b;border-radius:50%;font-size:9px;font-weight:900;padding:2px 3px;line-height:1;vertical-align:middle}',
     '.cl-artbox .ex-plg{cursor:pointer}.cl-artbox .ex-plg::before{content:"(…)";color:#2f6b52;font-weight:800;padding:0 2px}',
     '.cl-artbox .ex-plg .ex-plg-t{display:none}.cl-artbox .ex-plg.on .ex-plg-t{display:inline}.cl-artbox .ex-plg.on::before{content:none}',
+    /* títulos (letra blanca) que se ponen en amarillo al narrarlos o al llegar desde el test: letra NEGRA */
+    'h1.cl-leyendo,h2.cl-leyendo,h3.cl-leyendo,h1.cl-flash,h2.cl-flash,h3.cl-flash,h2.cl-leyendo *,h3.cl-leyendo *,h2.cl-flash *,h3.cl-flash *{color:#111!important;-webkit-text-fill-color:#111!important}',
+    /* títulos (letra blanca) con amarillo: el amarillo lleva letra NEGRA, si no no se lee */
+    'h1 b.y,h2 b.y,h3 b.y,h1 .y,h2 .y,h3 .y,h2 mark,h3 mark{color:#111!important;-webkit-text-fill-color:#111!important}',
+    /* preguntas y respuestas de cada apartado (se hacen y se narran cuando quieras) */
+    '.cl-qa-b{margin-left:8px;white-space:nowrap;font-weight:400}',
+    '.cl-qa-b button{font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:99px;border:1.5px solid #7a2fd0;background:#f3e8ff;color:#5b1fa6;cursor:pointer;vertical-align:1px}',
+    'h2 .cl-qa-b button{background:#fff;border-color:#fff;color:#4b1d8a}',
+    '.cl-qabox{border:2px solid #7a2fd0;background:#faf5ff;border-radius:8px;padding:7px 10px;margin:6px 0 9px;font-size:13px;line-height:1.4;color:#1d1530;display:block;list-style:none}',
+    '.cl-qabox .qa-top{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:5px;font-weight:700;font-size:11.5px;color:#5b1fa6}',
+    '.cl-qabox .qa-top span{flex:1;min-width:120px}',
+    '.cl-qabox button{font-size:11.5px;border:1.5px solid #7a2fd0;background:#fff;color:#5b1fa6;border-radius:99px;padding:1px 9px;cursor:pointer;font-weight:700}',
+    '.cl-qabox .qa{display:flex;gap:6px;align-items:flex-start;padding:4px 0;border-top:1px dashed #d8c3f5}',
+    '.cl-qabox .qa .qq{flex:1;cursor:pointer}',
+    '.cl-qabox .qa .qr{display:none;margin-top:2px;color:#0b5d2a;font-weight:700}',
+    '.cl-qabox .qa.ver .qr,.cl-qabox.todas .qa .qr{display:block}',
+    '.cl-qabox .qa .qq::before{content:"❓ ";}',
+    '.cl-qabox .qof{display:inline-block;font-size:9px;font-weight:900;border:1.5px solid #c0392b;color:#c0392b;border-radius:99px;padding:0 4px;margin-right:4px;vertical-align:1px}',
+    '.cl-qabox .qa.leyendo-qa{background:#fff3b0}',
     '.cl-leyendo{outline:3px solid #f5b400;background:#fff3b0!important;border-radius:4px;scroll-margin-top:90px}',
     '.cl-flash{outline:3px solid #f5b400;background:#fff3b0!important;color:#17324d!important}',
     /* panel narrado */
@@ -73,7 +92,7 @@
     /* móvil: letra más grande (solo en pantalla; la impresión no cambia) */
     '@media screen and (max-width:760px) and (orientation:portrait){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}td,th{min-width:150px}body{font-size:16.5px;line-height:1.5;padding:8px 12px 70px}h1{font-size:21px}.sub{font-size:13px}h2{font-size:17px;padding:5px 9px}h3{font-size:16px}li{margin:3px 0}table{font-size:15px}th,td{padding:4px 6px}.leyenda{font-size:13px}.art{font-size:12.5px}.ex{font-size:11px}.cl-artbox{font-size:15px}.cl-qb button{font-size:12px;padding:3px 9px}.cl-tools button{font-size:14px;padding:8px 12px}.rq-wrap{font-size:15px}.rq-cols{column-count:1}.tr{font-size:15px}#btnQ,#btnT{font-size:16px;padding:10px}.cq-quiz{font-size:15px}}',
     /* impresión: solo el esquema */
-    '@media print{.cl-tools,.cl-qb,.cl-artbox,#cl-nar,#aud,#btnQ,#rqbox,#btnT,#trampas,.cq-quiz,.cq-ini,.cq-bar,.cl-fuera{display:none!important}.cl-ref{color:inherit;border:0}body{padding:0!important}}'
+    '@media print{.cl-qa-b,.cl-qabox,.cl-tools,.cl-qb,.cl-artbox,#cl-nar,#aud,#btnQ,#rqbox,#btnT,#trampas,.cq-quiz,.cq-ini,.cq-bar,.cl-fuera{display:none!important}.cl-ref{color:inherit;border:0}body{padding:0!important}}'
   ].join('\n');
   var st = document.createElement('style'); st.id = 'cl-mejoras-css'; document.head.appendChild(st);
   function aplicaCss() { var w = window; try { if (window.parent !== window) w = window.parent; } catch (e) {} var vert = w.innerHeight >= w.innerWidth; st.textContent = 'html{-webkit-text-size-adjust:100%;text-size-adjust:100%}' + css.replace(' and (orientation:portrait)', vert ? '' : ' and (min-width:99999px)'); }
@@ -250,8 +269,9 @@
     return { v: v, s: suf, i: i };
   }
   /* artículos que se nombran en un texto narrado: «artículo treinta y cinco», «artículos cuatro y cinco», «artículos 5 a 9»… (devuelve claves como «35», «26ter») */
-  function numeros(texto) {
-    var tk = sinAc(texto).match(/[a-zñ]+|\d+|[,.;:]/g) || [];
+  /* todos los grupos «artículo …» de un texto (cada grupo = lista de claves) con la palabra que sigue al grupo (para descartar «artículo 24 de la Constitución») */
+  function grupos(texto) {
+    var tk = sinAc(texto).match(/[a-zñ]+|\d+|[,.;:]/g) || [], res = [];
     for (var i = 0; i < tk.length; i++) {
       if (!/^(articulos?|arts?)$/.test(tk[i])) continue;
       var j = i + 1, out = []; if (tk[j] === '.') j++;
@@ -259,12 +279,14 @@
         var r = numAt(tk, j); if (!r) break;
         out.push(r.v + r.s); j = r.i;
         if ((tk[j] === 'a' || tk[j] === 'al') && !r.s) { var r2 = numAt(tk, j + 1); if (r2 && !r2.s && r2.v > r.v && r2.v - r.v <= 40) { for (var k = r.v + 1; k <= r2.v; k++) out.push(String(k)); j = r2.i; } }
-        if (tk[j] === ',' || tk[j] === 'y' || tk[j] === 'e') j++; else break;
+        /* «artículo 8, apartado 2»: la coma que sigue a un número y precede a «apartado» no continúa la lista */
+        var w1 = tk[j + 1] || ''; if ((tk[j] === ',' || tk[j] === 'y' || tk[j] === 'e') && (/^\d/.test(w1) || NU[w1] !== undefined || TE[w1] !== undefined || HU[w1] !== undefined)) j++; else break;
       }
-      if (out.length) return out;
+      if (out.length) { res.push({ k: out, sig: tk.slice(j, j + 8).join(' ') }); i = Math.max(i, j - 1); }
     }
-    return [];
+    return res;
   }
+  function numeros(texto) { var g = grupos(texto); return g.length ? g[0].k : []; }
   var sec0 = -2, h2i = -1, autoNodo = null, autoKey = '', leyendo = null, refsCache = null;
   function secDe(el) { var sec = -1; for (var i = 0; i < h2s.length; i++) { if (h2s[i].compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) sec = i; else break; } return sec; }
   function refsDe(h) {
@@ -283,10 +305,12 @@
     if (emb) { try { parent.postMessage({ claveScroll: el.getBoundingClientRect().top + (window.pageYOffset || 0) }, '*'); } catch (e) {} return; }
     try { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) { el.scrollIntoView(); }
   }
-  function buscaAncla(nums) {
+  var libre = false; /* true = el usuario ha saltado él mismo (⏮ ⏪ ⏩ ⏭, selector o barra): se permite ir hacia atrás */
+  function despues(el, ref) { return !ref || !!(ref.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING); }
+  function buscaAncla(nums, adelante) {
     var lista = h2i >= 0 ? refsDe(h2i) : []; if (!lista.length) return null;
     for (var n = 0; n < nums.length; n++) {
-      var c = lista.filter(function (x) { return x.ks.indexOf(nums[n]) >= 0; });
+      var c = lista.filter(function (x) { return x.ks.indexOf(nums[n]) >= 0 && (!adelante || despues(x.r, leyendo)); });
       var det = c.filter(function (x) { return !x.r.closest('h2,h3'); })[0] || c[0];
       if (det) return det.r;
     }
@@ -299,13 +323,149 @@
       var m = N.secciones[it.s].t.match(/^(\d+\.\d+)/);
       if (m) for (var i = 0; i < h2s.length; i++) if (h2s[i].textContent.replace(/\s+/g, ' ').trim().indexOf(m[1]) === 0) { h2i = i; break; }
       var ns = numeros((N.secciones[it.s].p || []).join(' ')), primero = ns.length ? buscaAncla(ns) : null;
-      marca((primero && (primero.closest('h3') || h3De(primero))) || h2s[h2i] || null);
+      var objetivo = (primero && (primero.closest('h3') || h3De(primero))) || h2s[h2i] || null;
+      /* el narrador solo avanza: si lo que va a marcar queda ANTES de donde ya está, se queda donde está y sigue desde ahí */
+      if (objetivo && (libre || !leyendo || despues(objetivo, leyendo))) marca(objetivo);
     }
+    var adel = !libre; libre = false;
     var nums = numeros(texto); if (!nums.length) return;
-    var an = buscaAncla(nums); if (!an) return;
+    var an = buscaAncla(nums, adel); if (!an) return;
     var key = nums.join(',') + '@' + secDe(an) + ':' + an.textContent; if (key === autoKey) return;
     autoKey = key; /* solo se resalta y se lleva a la línea; el desplegable lo abre el usuario */
     marca(an.closest('li,tr,h3,h2,p,div') || an);
+  }
+
+  /* ---------- 2b) preguntas y respuestas rápidas por apartado: se hacen (toca la pregunta y ves la respuesta) y se narran cuando quieras (🔊) ----------
+     Salen del bloque «preguntas y respuestas rápidas» del final de la página, repartidas en el apartado (título) al que pertenece cada artículo. */
+  var QAR = null, qgen = 0;
+  function leeQA() {
+    var rq = $('#rqbox'); if (!rq) return null;
+    var runs = [], prev = -1, cur = null;
+    $$('.rq-art', rq).forEach(function (a) {
+      var t = ($('.rq-a', a) || {}).textContent || '', m = t.match(/Art[íi]culo\s+(\d+)\s*(bis|ter|quater)?/i); if (!m) return;
+      var n = +m[1]; if (!cur || n < prev) { cur = { a: {} }; runs.push(cur); } prev = n;
+      var k = m[1] + (m[2] ? m[2].toLowerCase() : '');
+      var l = $$('li', a).map(function (li) {
+        var q = $('.rq-q', li), r = $('.rq-r', li); if (!q || !r) return null;
+        var of = !!$('.rq-of', q), qc = q.cloneNode(true); $$('.rq-of', qc).forEach(function (x) { x.remove(); });
+        return { q: qc.textContent.replace(/\s+/g, ' ').trim(), r: r.textContent.replace(/\s+/g, ' ').trim(), of: of, k: k };
+      }).filter(Boolean);
+      (cur.a[k] = cur.a[k] || []).push.apply(cur.a[k], l);
+    });
+    return runs;
+  }
+  function qaDe(h) {
+    var sp = $('.art', h), claves = [];
+    if (sp) claves = expand(sp.textContent.replace(/^\s*arts?\.\s*/i, ''));
+    if (!claves.length) $$('.cl-ref', h).forEach(function (r) { claves = claves.concat((r.dataset.k || '').split(',')); });
+    if (!claves.length) return [];
+    var sec = h.tagName === 'H2' ? h2s.indexOf(h) : secDe(h), gi = (IDX && IDX.h2g && sec >= 0) ? IDX.h2g[sec] : -1, rs = [];
+    if (QAR.length === (IDX ? IDX.g.length : -1) && gi >= 0) rs = [QAR[gi]]; else rs = QAR;
+    var out = [], vistos = {};
+    rs.forEach(function (run) { if (!run) return; claves.forEach(function (k) { (run.a[k] || []).forEach(function (x) { var id = x.q + '|' + x.r; if (!vistos[id]) { vistos[id] = 1; out.push(x); } }); }); });
+    return out;
+  }
+  function irAEl(el) {
+    if (emb) { try { parent.postMessage({ claveScroll: el.getBoundingClientRect().top + (window.pageYOffset || 0) }, '*'); } catch (e) {} return; }
+    try { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) { el.scrollIntoView(); }
+  }
+  function pararQA() { qgen++; try { speechSynthesis.cancel(); } catch (e) {} $$('.leyendo-qa').forEach(function (x) { x.classList.remove('leyendo-qa'); }); }
+  function decir(txt, fin, mi) {
+    var ps = troceo(txt), i = 0;
+    (function sig() {
+      if (mi !== qgen) return; if (i >= ps.length) { fin(); return; }
+      var u = new SpeechSynthesisUtterance(ps[i++]); u.lang = 'es-ES'; u.rate = rate; var v = vozEs(); if (v) u.voice = v;
+      u.onend = function () { if (mi === qgen) sig(); }; u.onerror = function (e) { if (mi === qgen && e.error !== 'canceled' && e.error !== 'interrupted') sig(); };
+      speechSynthesis.speak(u);
+    })();
+  }
+  function leerQA(divs) {
+    if (!('speechSynthesis' in window)) { alert('Este navegador no tiene voz (speechSynthesis).'); return; }
+    if (jugando) { jugando = false; try { pinta(); } catch (e) {} } parar(); try { var bn = $('#bn'); if (bn) bn.click(); } catch (e) {}
+    var mi = ++qgen, i = 0;
+    (function sig() {
+      if (mi !== qgen) return; $$('.leyendo-qa').forEach(function (x) { x.classList.remove('leyendo-qa'); });
+      if (i >= divs.length) return;
+      var d = divs[i++]; d.classList.add('leyendo-qa'); d.classList.add('ver'); irAEl(d);
+      decir('Pregunta. ' + d.dataset.q + ' Respuesta. ' + d.dataset.r, function () { setTimeout(sig, 500); }, mi);
+    })();
+  }
+  function abrirQA(h) {
+    var ya = h._qabox; if (ya && ya.parentNode) { pararQA(); ya.parentNode.removeChild(ya); h._qabox = null; return null; }
+    var l = h._qa || []; if (!l.length) return null;
+    var box = document.createElement('div'); box.className = 'cl-qabox cl-noprint';
+    box.innerHTML = '<div class="qa-top"><span>❓ Preguntas y respuestas de esta parte (' + l.length + ') · toca una pregunta para ver su respuesta</span><button data-a="todas">👁 Ver respuestas</button><button data-a="nar">🔊 Narrar todas</button><button data-a="stop">⏹</button><button data-a="x">✕</button></div>'
+      + l.map(function (x) { return '<div class="qa" data-q="' + x.q.replace(/"/g, '&quot;') + '" data-r="' + x.r.replace(/"/g, '&quot;') + '"><div class="qq">' + (x.of ? '<span class="qof">OF</span>' : '') + x.q.replace(/</g, '&lt;') + '<div class="qr">→ ' + x.r.replace(/</g, '&lt;') + '</div></div><button data-a="n" title="Narrar esta pregunta y su respuesta">🔊</button></div>'; }).join('');
+    h.parentNode.insertBefore(box, h.nextSibling); h._qabox = box;
+    box.onclick = function (e) {
+      var b = e.target.closest('button'), qa = e.target.closest('.qa');
+      if (b) {
+        var a = b.dataset.a;
+        if (a === 'x') { pararQA(); box.parentNode.removeChild(box); h._qabox = null; }
+        else if (a === 'todas') { var on = box.classList.toggle('todas'); b.textContent = on ? '🙈 Ocultar respuestas' : '👁 Ver respuestas'; }
+        else if (a === 'nar') leerQA($$('.qa', box));
+        else if (a === 'stop') pararQA();
+        else if (a === 'n' && qa) leerQA([qa]);
+        return;
+      }
+      if (qa && e.target.closest('.qq')) qa.classList.toggle('ver');
+    };
+    return box;
+  }
+  function preguntasPartes() {
+    QAR = leeQA(); if (!QAR || !QAR.length || !IDX) return;
+    $$('h2,h3').filter(enMain).forEach(function (h) {
+      var l = qaDe(h); if (!l.length || $('.cl-qa-b', h)) return; h._qa = l;
+      var sp = document.createElement('span'); sp.className = 'cl-qa-b cl-noprint'; sp.innerHTML = '<button title="Haz las preguntas rápidas de esta parte (y escúchalas si quieres)">❓ P&amp;R ' + l.length + '</button>';
+      sp.onclick = function (e) { e.stopPropagation(); abrirQA(h); };
+      h.appendChild(sp);
+    });
+  }
+  /* botón ❓ del narrador: abre y narra las preguntas del apartado que se está narrando */
+  function narrarQADeLaParteActual() {
+    var el = leyendo, h = null;
+    if (el) h = /^H[23]$/.test(el.tagName) ? el : (h3De(el) || h2s[secDe(el)] || null);
+    if (!h && h2i >= 0) h = h2s[h2i];
+    var cand = []; if (h) { cand.push(h); if (h.tagName === 'H3') { var s = secDe(h); if (s >= 0) cand.push(h2s[s]); } }
+    var ok = cand.filter(function (x) { return x && x._qa && x._qa.length; })[0];
+    if (!ok) { alert('Para esta parte no hay preguntas rápidas.'); return; }
+    var box = ok._qabox && ok._qabox.parentNode ? ok._qabox : abrirQA(ok); if (!box) return;
+    irAEl(box); leerQA($$('.qa', box));
+  }
+
+  /* ---------- 5c) resumen de los artículos que se citan de pasada ----------
+     En un párrafo cuyo artículo principal es el primero que nombra, si además cita otro (p. ej. «… en relación con el artículo 5, apartado 3»),
+     el narrador, al acabar el párrafo, cuenta en pocas palabras qué dice ese otro artículo (primeras frases de su texto en el Exprés). Máx. 2 por párrafo. */
+  var RESUMEN_OFF = /^(de la (constitucion|ley|directiva|decision)|del (codigo|tratado|reglamento|convenio|real|acuerdo|protocolo)|ce\b|lo\b|lopj|cp\b)/;
+  function textoPlano(html) {
+    var d = document.createElement('div'); d.innerHTML = html;
+    $$('.ex-sello,.ex-q,script,style,.m-nota,.ex-r,.ex-ast', d).forEach(function (x) { x.remove(); });
+    return (d.textContent || '').replace(/\(…\)/g, '').replace(/\s+/g, ' ').trim();
+  }
+  function corta(t, max) {
+    t = t.replace(/^\d+\.\s*/, ''); if (t.length <= max) return t;
+    var c = t.slice(0, max), k = Math.max(c.lastIndexOf('. '), c.lastIndexOf('; '), c.lastIndexOf(': '));
+    if (k > max * 0.45) return c.slice(0, k + 1);
+    k = c.lastIndexOf(' '); return c.slice(0, k > 0 ? k : max) + '…';
+  }
+  function resumenes(it) {
+    var F = (window.CLAVE_ARTF || {})[NT]; if (!IDX || !F || !it || it.tit) return [];
+    var gs = grupos(it.t); if (gs.length < 2) return [];
+    var princ = {}; gs[0].k.forEach(function (k) { princ[k] = 1; });
+    var h = -1; var m = N && N.secciones[it.s] && N.secciones[it.s].t.match(/^(\d+\.\d+)/);
+    if (m) for (var i = 0; i < h2s.length; i++) if (h2s[i].textContent.replace(/\s+/g, ' ').trim().indexOf(m[1]) === 0) { h = i; break; }
+    var grp = gruposDe(h >= 0 ? IDX.h2g[h] : -1), out = [], vistos = {};
+    for (var g = 1; g < gs.length && out.length < 2; g++) {
+      if (RESUMEN_OFF.test(gs[g].sig)) continue;
+      for (var q = 0; q < gs[g].k.length && out.length < 2; q++) {
+        var k = gs[g].k[q]; if (princ[k] || vistos[k]) continue;
+        var fi = null; grp.forEach(function (gg) { if (fi === null && IDX.g[gg] && IDX.g[gg].a[k]) fi = IDX.g[gg].a[k][0]; }); if (fi === null || !F[fi]) continue;
+        vistos[k] = 1;
+        var cab = textoPlano(F[fi][0]).replace(/\s*[—–-]\s*/, ', '), cuerpo = corta(textoPlano(F[fi][1]), 230); if (cuerpo.length < 25) continue;
+        out.push('Para recordar qué dice ese artículo. ' + cab + ': ' + cuerpo);
+      }
+    }
+    return out;
   }
 
   /* ---------- 5) modo coche narrado ---------- */
@@ -342,24 +502,26 @@
     $('#cl-sel', panel).value = it ? it.s : 0;
     if (!jugando && it) { try { sincroniza(it.t, it); } catch (e) {} }
     try { localStorage.setItem('clave-nar-' + KEY, String(pos)); } catch (e) {}
+    try { window.ClaveEspejo && ClaveEspejo.actualiza('nar'); } catch (e) {}
   }
   function parar() { gen++; try { speechSynthesis.cancel(); } catch (e) {} }
   function hablar() {
     parar(); try { var bn = $('#bn'); if (bn && jugando) bn.click(); } catch (e) {} /* el audio del esquema y el narrado no suenan a la vez */ if (!jugando || pos >= items.length) { jugando = false; pinta(); return; }
-    var mi = gen, partes = troceo(items[pos].t), i = 0; pinta();
+    var mi = gen, partes = troceo(items[pos].t), nOrig = partes.length, i = 0; pinta();
+    try { partes = partes.concat(resumenes(items[pos])); } catch (e) {} /* si el párrafo cita OTRO artículo, tras leerlo se cuenta qué dice */
     (function sig() {
       if (mi !== gen) return;
       if (i >= partes.length) { pos++; setTimeout(function () { if (mi === gen) hablar(); }, items[pos - 1] && items[pos - 1].tit ? 450 : 250); return; }
-      try { sincroniza(partes[i], items[pos]); } catch (e) {}
+      if (i < nOrig) try { sincroniza(partes[i], items[pos]); } catch (e) {}
       var u = new SpeechSynthesisUtterance(partes[i++]); u.lang = 'es-ES'; u.rate = rate; var v = vozEs(); if (v) u.voice = v;
       u.onend = function () { if (mi === gen) sig(); }; u.onerror = function (e) { if (mi === gen && e.error !== 'canceled' && e.error !== 'interrupted') sig(); };
       speechSynthesis.speak(u);
     })();
   }
   function pideWake() { try { if (navigator.wakeLock) navigator.wakeLock.request('screen').then(function (l) { wl = l; }).catch(function () {}); } catch (e) {} }
-  function salto(d) { pos = Math.max(0, Math.min(items.length - 1, pos + d)); if (jugando) hablar(); else pinta(); }
+  function salto(d) { libre = true; pos = Math.max(0, Math.min(items.length - 1, pos + d)); if (jugando) hablar(); else pinta(); }
   function saltoSec(d) {
-    var s = items[Math.min(pos, items.length - 1)].s + d; s = Math.max(0, Math.min(N.secciones.length - 1, s));
+    libre = true; var s = items[Math.min(pos, items.length - 1)].s + d; s = Math.max(0, Math.min(N.secciones.length - 1, s));
     for (var i = 0; i < items.length; i++) if (items[i].s === s) { pos = i; break; } if (jugando) hablar(); else pinta();
   }
   function abrirNarrado() {
@@ -369,17 +531,18 @@
     var opts = N.secciones.map(function (s, i) { return '<option value="' + i + '">' + (i + 1) + '. ' + s.t.replace(/</g, '&lt;').slice(0, 60) + '</option>'; }).join('');
     panel.innerHTML = '<div class="t"><b>🎧 ' + N.titulo + '</b><span class="sec"></span><button id="cl-x" title="Cerrar">✕</button></div>'
       + '<div class="tx"></div><div class="bar"><i></i></div>'
-      + '<div class="t" style="margin-top:6px"><button id="cl-ps" title="Sección anterior">⏮</button><button id="cl-pp" title="Párrafo anterior">⏪</button><button id="cl-play" title="Reproducir / pausa">▶</button><button id="cl-np" title="Párrafo siguiente">⏩</button><button id="cl-ns" title="Sección siguiente">⏭</button>'
+      + '<div class="t" style="margin-top:6px"><button id="cl-ps" title="Sección anterior">⏮</button><button id="cl-pp" title="Párrafo anterior">⏪</button><button id="cl-play" title="Reproducir / pausa">▶</button><button id="cl-np" title="Párrafo siguiente">⏩</button><button id="cl-ns" title="Sección siguiente">⏭</button><button id="cl-qa" title="Preguntas y respuestas de esta parte: te las narro cuando quieras">❓ P&R</button>'
       + '<select id="cl-vel"><option value="0.85">0,85×</option><option value="1" selected>1×</option><option value="1.1">1,1×</option><option value="1.25">1,25×</option><option value="1.4">1,4×</option></select>'
       + '<select id="cl-sel">' + opts + '</select><span class="est"></span></div>';
     document.body.appendChild(panel);
     $('#cl-play', panel).onclick = function () { jugando = !jugando; if (jugando) { pideWake(); hablar(); } else { parar(); pinta(); } };
     $('#cl-pp', panel).onclick = function () { salto(-1); }; $('#cl-np', panel).onclick = function () { salto(1); };
     $('#cl-ps', panel).onclick = function () { saltoSec(-1); }; $('#cl-ns', panel).onclick = function () { saltoSec(1); };
+    $('#cl-qa', panel).onclick = function () { narrarQADeLaParteActual(); };
     $('#cl-vel', panel).onchange = function () { rate = parseFloat(this.value) || 1; if (jugando) hablar(); else pinta(); };
-    $('#cl-sel', panel).onchange = function () { var s = +this.value; for (var i = 0; i < items.length; i++) if (items[i].s === s) { pos = i; break; } if (jugando) hablar(); else pinta(); };
-    $('.bar', panel).onclick = function (e) { var r = this.getBoundingClientRect(); pos = Math.round((e.clientX - r.left) / r.width * (items.length - 1)); if (jugando) hablar(); else pinta(); };
-    $('#cl-x', panel).onclick = function () { jugando = false; parar(); panel.remove(); panel = null; document.body.classList.remove('cl-narando'); sec0 = -2; limpiaSync(); try { if (wl) wl.release(); } catch (e) {} };
+    $('#cl-sel', panel).onchange = function () { libre = true; var s = +this.value; for (var i = 0; i < items.length; i++) if (items[i].s === s) { pos = i; break; } if (jugando) hablar(); else pinta(); };
+    $('.bar', panel).onclick = function (e) { libre = true; var r = this.getBoundingClientRect(); pos = Math.round((e.clientX - r.left) / r.width * (items.length - 1)); if (jugando) hablar(); else pinta(); };
+    $('#cl-x', panel).onclick = function () { jugando = false; parar(); try { window.ClaveEspejo && ClaveEspejo.quita('nar'); } catch (e) {} panel.remove(); panel = null; document.body.classList.remove('cl-narando'); sec0 = -2; limpiaSync(); try { if (wl) wl.release(); } catch (e) {} };
     try { var g = +localStorage.getItem('clave-nar-' + KEY); if (g > 0 && g < items.length) pos = g; } catch (e) {}
     try {
       if ('mediaSession' in navigator) {
@@ -389,11 +552,13 @@
       }
     } catch (e) {}
     pinta(); coloca(); if (window.ResizeObserver) new ResizeObserver(coloca).observe(panel); setTimeout(coloca, 400);
+    try { window.ClaveEspejo && ClaveEspejo.registrar('nar', function () { return panel; }, /#cl-nar/, { bar: function (f) { libre = true; pos = Math.round(f * (items.length - 1)); if (jugando) hablar(); else pinta(); } }); } catch (e) {}
   }
   $$('.cl-nbtn').forEach(function (bt) { bt.onclick = function () {
     if (!('speechSynthesis' in window)) { alert('Este navegador no tiene voz (speechSynthesis).'); return; }
     var p = +bt.dataset.p; if (panel) panel.querySelector('#cl-x').click(); sec0 = -2; h2i = -1;
     KEY = p > 1 ? NT + '-' + p : NT;
+    if (!(window.CLAVE_ARTF || {})[NT]) cargar(base + 'clave-arts/t' + NT + '-f.js').catch(function () {}); /* textos de los artículos para los resúmenes de las citas de pasada */
     var go = function () { N = (window.CLAVE_AUDIO || {})[KEY]; if (!N) { alert('La versión narrada de este tema todavía no está hecha.'); return; } items = aplanar(N); pos = 0; abrirNarrado(); };
     if ((window.CLAVE_AUDIO || {})[KEY]) go(); else cargar(base + 'clave-audio/t' + KEY + '.js').then(go).catch(function () { alert('La versión narrada de este tema todavía no está hecha (o no se pudo cargar).'); });
   }; });
@@ -404,7 +569,9 @@
   unir();
   Promise.all([cargar(base + 'clave-tests/t' + NT + '-amar.js').catch(function () {}), cargar(base + 'clave-tests/t' + NT + '-sec.js').catch(function () {}), cargar(base + 'clave-arts/t' + NT + '.js').catch(function () {})]).then(function () {
     var A = (window.CLAVE_AMAR || {})[NT]; if (A && A.length) { amarillo(A); unir(); }
-    botonesPreguntas(); citas();
+    botonesPreguntas(); citas(); try { preguntasPartes(); } catch (e) {}
+    /* barra «Escuchar» del esquema: dentro de la app se copia a la barra fija de la página (así no se queda a mitad al hacer scroll) */
+    cargar(base + 'clave-espejo.js?v=1').then(function () { var au = $('#aud'); if (au && window.ClaveEspejo) ClaveEspejo.registrar('aud', function () { return $('#aud'); }, /#(aud|bp|bs|bn|vel|est)\b/); }).catch(function () {});
     var q = decodeURIComponent((location.hash.match(/[#&]q=([^&]+)/) || [])[1] || ''), S = (window.CLAVE_SEC || {})[NT];
     if (q && S) {
       var hs = $$('h2,h3').filter(enMain), hit = -1;

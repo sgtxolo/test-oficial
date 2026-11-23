@@ -1528,7 +1528,9 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
 <script src="expres-subrayado/datos-t23.js"></script>
 <script src="expres-subrayado/datos-t25.js"></script>
 <script src="expres-subrayado/datos-t26.js"></script>
+<script src="expres-subrayado/datos-t27.js"></script>
 <script src="expres-subrayado/mapa-t26.js"></script>
+<script src="expres-subrayado/mapa-t27.js"></script>
 <script src="expres-subrayado/datos-t13.js"></script>
 <script src="expres-subrayado/datos-t16.js"></script>
 <script src="expres-subrayado/mapa-t16.js"></script>
@@ -1648,6 +1650,23 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
     return S.preg[id] || null;
   };
 
+  // «Acerté de voleo»: cuenta la pregunta acertada como fallada (vuelve al repaso espaciado y a «Repasar fallos») y la guarda en dudas; se puede deshacer
+  window.marcarVoleo = function(id, t, btn){
+    try {
+      const o = statsDe(id);
+      if (!o.voleo){
+        o.voleo = 1; o.voleoPrev = {f: o.falladas || 0, i: o.intervaloIdx || 0, p: o.proxima || 0, c: o.ultimaCorrecta, d: esDuda(id)};
+        o.falladas = (o.falladas || 0) + 1; o.ultimaCorrecta = false; o.intervaloIdx = 0; o.proxima = Date.now();
+        if (!esDuda(id)) toggleDuda(id, t);
+      } else {
+        const v = o.voleoPrev || {}; o.voleo = 0; o.falladas = Math.max(0, v.f !== undefined ? v.f : (o.falladas || 1) - 1);
+        o.intervaloIdx = v.i || 0; o.proxima = v.p || 0; o.ultimaCorrecta = v.c === undefined ? true : v.c; delete o.voleoPrev;
+        if (v.d === false && esDuda(id)) toggleDuda(id, t);
+      }
+      state.qStats[id] = o; saveState();
+      if (btn){ const on = !!o.voleo; btn.classList.toggle('on', on); btn.textContent = on ? '✓ Contada como dudosa (pulsa para quitar)' : '🤔 Acerté de voleo: contar como dudosa'; }
+    } catch (err){}
+  };
   if (typeof window.explicBoxHTML === 'function'){
     const original = window.explicBoxHTML;
     window.explicBoxHTML = function(e, a){
@@ -1659,8 +1678,14 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
           h += '<button type="button" class="btn-ver-esquema" onclick="verEnEsquema(\'' + id.replace(/'/g, '') + '\')">📘 Ver en el esquema</button>';
         if (id && [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].includes(+t)){   // Esquema clave nuevo (T1-T6): se abre en el apartado donde está la pregunta
           const E = (window.CLAVE_ESQ || {})[+t];
-          if (!E && !window['_cq' + t]){ window['_cq' + t] = 1; const sc = document.createElement('script'); sc.src = 'clave-tests/t' + (+t) + '-esq.js'; document.head.appendChild(sc); }
-          if (!E || E.includes(id)) h += '<button type="button" class="btn-ver-esquema" onclick="location.href=\'repaso-t' + (+t) + '-esquema-clave-nuevo.html#q=' + encodeURIComponent(id) + '\'">⭐ Ver en el esquema clave</button>';
+          window.cqVis = window.cqVis || (b => { const p = (b.dataset.cq || '').split('|'), L = (window.CLAVE_ESQ || {})[+p[0]]; b.style.display = L && L.includes(p[1]) ? '' : 'none'; });
+          if (!E && !window['_cq' + t]){ window['_cq' + t] = 1; const sc = document.createElement('script'); sc.src = 'clave-tests/t' + (+t) + '-esq.js'; sc.onload = () => document.querySelectorAll('[data-cq]').forEach(window.cqVis); document.head.appendChild(sc); }
+          // el botón solo aparece si la pregunta tiene sitio en el esquema clave (mientras se carga la lista, va oculto)
+          h += '<button type="button" class="btn-ver-esquema" data-cq="' + (+t) + '|' + id.replace(/"/g, '') + '" style="' + (E && E.includes(id) ? '' : 'display:none') + '" onclick="location.href=\'repaso-t' + (+t) + '-esquema-clave-nuevo.html#q=' + encodeURIComponent(id) + '\'">⭐ Ver en el esquema clave</button>';
+        }
+        if (id && a){   // acertada: por si ha sido de voleo, se puede contar como fallada para que vuelva a salir en el repaso
+          const vo = (typeof statsDe === 'function') && statsDe(id).voleo;
+          h += '<button type="button" class="btn-ver-esquema btn-voleo' + (vo ? ' on' : '') + '" onclick="marcarVoleo(\'' + id.replace(/'/g, '') + '\',' + (+t || 0) + ',this)" title="Si la has acertado sin estar segura, cuéntala como fallada para volver a repasarla">' + (vo ? '✓ Contada como dudosa (pulsa para quitar)' : '🤔 Acerté de voleo: contar como dudosa') + '</button>';
         }
         const S = window.EXSUB && window.EXSUB[+t];
         if (id && S){

@@ -306,14 +306,17 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres-subrayado/cortes-t23.js"></script>
 <script src="expres-subrayado/cortes-t25.js"></script>
 <script src="expres-subrayado/cortes-t26.js"></script>
+<script src="expres-subrayado/cortes-t27.js"></script>
 <script src="expres-subrayado/bloques-t22.js"></script>
 <script src="expres-subrayado/bloques-t23.js"></script>
 <script src="expres-subrayado/bloques-t25.js"></script>
 <script src="expres-subrayado/bloques-t26.js"></script>
+<script src="expres-subrayado/bloques-t27.js"></script>
 <script src="expres-subrayado/revision-t22.js"></script>
 <script src="expres-subrayado/revision-t23.js"></script>
 <script src="expres-subrayado/revision-t25.js"></script>
 <script src="expres-subrayado/revision-t26.js"></script>
+<script src="expres-subrayado/revision-t27.js"></script>
 <script src="expres-subrayado/cortes-t13.js"></script>
 <script src="expres-subrayado/cortes-t16.js"></script>
 <script src="expres-subrayado/cortes-t2.js"></script>
@@ -354,6 +357,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres-subrayado/datos-t23.js"></script>
 <script src="expres-subrayado/datos-t25.js"></script>
 <script src="expres-subrayado/datos-t26.js"></script>
+<script src="expres-subrayado/datos-t27.js"></script>
 <script src="expres-subrayado/datos-t13.js"></script>
 <script src="expres-subrayado/datos-t16.js"></script>
 <script src="expres-subrayado/datos-t2.js"></script>
@@ -397,6 +401,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres-subrayado/cuadros-t23.js"></script>
 <script src="expres-subrayado/cuadros-t25.js"></script>
 <script src="expres-subrayado/cuadros-t26.js"></script>
+<script src="expres-subrayado/cuadros-t27.js"></script>
 <script src="expres-subrayado/cuadros-t13.js"></script>
 <script src="expres-subrayado/cuadros-t16.js"></script>
 <script src="expres-subrayado/cuadros-t2.js"></script>
@@ -422,6 +427,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
 <script src="expres/t23.js"></script>
 <script src="expres/t25.js"></script>
 <script src="expres/t26.js"></script>
+<script src="expres/t27.js"></script>
 <script src="expres/t13.js"></script>
 <script src="expres/t16.js"></script>
 <script src="expres/t2.js"></script>
@@ -795,6 +801,41 @@ function repasoHTML(t) {
 }
 // el repaso (dentro de un iframe) avisa de su altura con postMessage: así funciona también al abrir la app desde un archivo del disco (file://), donde no se puede leer el contenido del iframe. El marco crece entero y se desplaza con la página.
 window.addEventListener('message', e => { const d = e.data; if (d && typeof d.claveScroll === 'number') { const fl = document.getElementById('rep-if'); if (fl && e.source === fl.contentWindow) window.scrollTo({top: Math.max(0, fl.getBoundingClientRect().top + window.pageYOffset + d.claveScroll - 90), behavior: 'smooth'}); return; } if (d && (d.repasoListo || d.claveListo)) { const fl = document.getElementById('rep-if'); if (fl && e.source === fl.contentWindow) { mandaTemaRepaso(); mandaVistaClave(); } return; } if (!d || typeof d.repasoAlto !== 'number') return; const f = document.getElementById('rep-if'); if (f && e.source === f.contentWindow) f.style.height = (d.repasoAlto + 12) + 'px'; });
+/* Barras fijas del esquema clave (narrador y «Escuchar»): el marco no tiene scroll propio, así que su barra se copia aquí, fija abajo del todo, y los toques se reenvían al marco */
+(function () {
+  let caja = null, estilo = null; const css = {}, html = {};
+  function asegura() {
+    if (caja) return;
+    estilo = document.createElement('style'); estilo.id = 'clave-fija-css'; document.head.appendChild(estilo);
+    caja = document.createElement('div'); caja.id = 'clave-fija'; caja.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;flex-direction:column;max-height:60vh;overflow:hidden';
+    document.body.appendChild(caja);
+    const base = '#clave-fija [data-cid="cl-nar"],#clave-fija [data-cid="aud"]{position:static!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:auto!important;margin:0!important;box-sizing:border-box}#clave-fija [data-cid="cl-nar"]{display:block}#clave-fija .cq-bar{position:static!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:auto!important}';
+    estilo.dataset.base = base;
+    const accion = (a) => { const f = document.getElementById('rep-if'); if (f && f.contentWindow) f.contentWindow.postMessage({claveAccion: a}, '*'); };
+    caja.addEventListener('click', e => {
+      const t = e.target; if (t.closest('select')) return;
+      const bar = t.closest('.bar'); const cont = t.closest('[data-n]'); if (!cont) return;
+      if (bar) { const r = bar.getBoundingClientRect(); accion({n: cont.dataset.n, bar: Math.max(0, Math.min(1, (e.clientX - r.left) / r.width))}); return; }
+      const bd = t.closest('button[data-a]'); if (bd) { accion({da: bd.dataset.a}); return; }
+      const b = t.closest('[data-cid]'); if (b && !/^(cl-nar|aud)$/.test(b.dataset.cid)) accion({id: b.dataset.cid});
+    });
+    caja.addEventListener('change', e => { const s = e.target.closest('select'); if (s && s.dataset.cid) accion({id: s.dataset.cid, val: s.value}); });
+  }
+  function pinta() {
+    asegura(); estilo.textContent = estilo.dataset.base + '\n' + Object.keys(css).map(n => css[n]).join('\n');
+  }
+  window.addEventListener('message', e => {
+    const d = e.data; if (!d || !d.claveEspejo) return;
+    const fl = document.getElementById('rep-if'); if (!fl || e.source !== fl.contentWindow) return;
+    const m = d.claveEspejo; asegura();
+    let w = caja.querySelector('[data-n="' + m.n + '"]');
+    if (!m.html) { if (w) w.remove(); delete css[m.n]; pinta(); return; }
+    if (!w) { w = document.createElement('div'); w.dataset.n = m.n; caja.appendChild(w); if (m.n === 'aud') caja.appendChild(w); else caja.insertBefore(w, caja.firstChild); }
+    css[m.n] = m.css || ''; pinta(); w.innerHTML = m.html;
+    try { e.source.postMessage({claveEspejoOk: 1}, '*'); } catch (er) {}
+  });
+  setInterval(() => { if (caja && !document.getElementById('rep-if')) { caja.innerHTML = ''; for (const k in css) delete css[k]; pinta(); } }, 1000);
+})();
 function mandaVistaClave() { const f = document.getElementById('rep-if'); if (!f || !f.contentWindow) return; const r = f.getBoundingClientRect(); f.contentWindow.postMessage({claveVista: {top: Math.max(0, -r.top), h: window.innerHeight}}, '*'); }
 window.addEventListener('scroll', () => { if (document.getElementById('rep-if')) mandaVistaClave(); }, {passive: true}); window.addEventListener('resize', () => { if (document.getElementById('rep-if')) mandaVistaClave(); });
 function ajustaRepaso() {
