@@ -22,7 +22,9 @@ window.EXSUBCLAVE_REPASO = {
   16: "repaso-t16-borrador.html",   // 14/11/2026: Esquema clave T16 Igualdad y acoso (15 cuadros del temario redibujados + 8 fichas + R1-R14 + rápidas)
   15: "repaso-t15-borrador.html",   // 14/11/2026: Esquema clave T15 VioGén (8 cuadros del temario, Anexo I y II literales + 8 fichas + R1-R23 + rápidas)
   14: "repaso-t14-borrador.html",   // 14/11/2026: Esquema clave T14 Defensor del Pueblo (4 cuadros del temario + 28 fichas + R1-R15 + rápidas)
-  13: "repaso-t13-borrador.html",   // 14/11/2026: Esquema clave T13 LJCA (5 cuadros del temario + 16 fichas + R1-R19 + rápidas)
+  // 13: "repaso-t13-borrador.html",   // (antigua, 14/11/2026) la de abajo pisa a esta
+  13: "repaso-t13-esquema-clave-nuevo.html",   // 23/11/2026: Esquema clave T13 nuevo (LJCA: listas y cuadros, audio, trampas, rápidas y mejoras comunes)
+  // 13 (antigua): "repaso-t13-borrador.html",   // 14/11/2026: Esquema clave T13 LJCA (5 cuadros del temario + 16 fichas + R1-R19 + rápidas)
   // (antigua) 12: "repaso-t12-borrador.html",   // 13/11/2026: Esquema clave T12 Gobierno (5 cuadros del temario + 17 fichas + R + rápidas)
   // (antigua) 11: "repaso-t11-borrador.html",   // 14/11/2026: Esquema clave T11 Derecho Administrativo (12 de 40 cuadros + 13 fichas EXOF/R + R1-R55 + rápidas)
   // (antigua) 10: "repaso-t10-borrador.html",   // 13/11/2026: Esquema clave T10 Derecho Civil (8 cuadros del temario + fichas + R + rápidas)

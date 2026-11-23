@@ -24,12 +24,13 @@ const STARTS = {
   7: [null, /PREÁMBULO/],   // LO 2/1979 TC (bloques hasta el art. 58) | LO 1/1982 (desde «PREÁMBULO · CAPÍTULO I»)
   10: [null],   // Código Civil: una sola norma
   12: [null],   // Ley 50/1997 del Gobierno: una sola norma
+  13: [null],   // Ley 29/1998 LJCA: una sola norma
   11: [null, /^TÍTULO PRELIMINAR — Disposiciones generales$/, /^TÍTULO PRELIMINAR — Disposiciones generales, principios/, /^TÍTULO I — Transparencia/, /^CAPÍTULO I — Objeto y ámbito/],   // LO 3/2018 | Ley 39/2015 | Ley 40/2015 | Ley 19/2013 | RD 179/2005
   4: [null, /^4\.2 /, /^4\.3 /, /^4\.4 /, /^4\.5 /, /^4\.6 /, /^AMPLIACIONES/],
   27: [null, /RESOLUCIÓN 690/, /RECOMENDACIÓN REC/, /REAL DECRETO 176/, /ORDEN GENERAL NÚMERO 10/],   // ONU | Res. 690/1979 | Código Europeo de Ética | RD 176/2022 + Código de Conducta | OG 10/2024
 };
 /* grupo de cada <h2> numerado "N.M" (por defecto M-1); excepciones por tema */
-const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1], 10: [0, 0, 0, 0, 0, 0, 0], 12: [0, 0, 0, 0, 0, 0, 0], 27: [0, 1, 2, 3, 4] };
+const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1], 10: [0, 0, 0, 0, 0, 0, 0], 12: [0, 0, 0, 0, 0, 0, 0], 13: [0, 0, 0, 0, 0, 0, 0], 27: [0, 1, 2, 3, 4] };
 
 /* sufijos de artículo; la clave se guarda sin acento y en minúsculas: «35 quáter» -> «35quater».
    T1-T5 siguen con la lista corta (así sus datos ya generados salen idénticos); desde el T6 se reconocen también quáter, quinquies, sexies, octies… */
@@ -64,7 +65,7 @@ for (const N of process.argv.slice(2).map(Number).filter(Boolean)) {
   /* ---------- 1) artículos ---------- */
   global.window = {}; eval(fs.readFileSync(R + 'expres/t' + N + '.js', 'utf8'));
   const ex = window.EXPRES_T[N].html, S = STARTS[N];
-  const FICHAS = []; const re = /<div class="bloque-titulo"[^>]*>([\s\S]*?)<\/div>|<div class="ex-ficha">/g; let m, last = null;
+  const FICHAS = []; const re = /<div class="bloque-titulo"[^>]*>([\s\S]*?)<\/div>|<div class="ex-ficha(?: [^"]*)?">/g; let m, last = null;   // T13: sus fichas llevan clases extra (ex-of…)
   const marks = []; while ((m = re.exec(ex))) marks.push({ i: m.index, titulo: m[1] !== undefined ? m[1].replace(/<[^>]+>/g, '').trim() : null });
   let g = 0; const grupos = [{ t: '', a: {} }];
   marks.forEach((mk, idx) => {
