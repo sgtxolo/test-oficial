@@ -1,0 +1,2631 @@
+{
+ "manual": [
+  {
+   "id": "a-1",
+   "nombre": "Principios básicos ONU · Principio 1",
+   "piezas": [
+    [
+     8,
+     0.1718,
+     0.259
+    ]
+   ],
+   "ficha": "^Principio 1 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-2",
+   "nombre": "Principios básicos ONU · Principio 2",
+   "piezas": [
+    [
+     8,
+     0.259,
+     0.4045
+    ]
+   ],
+   "ficha": "^Principio 2 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-3",
+   "nombre": "Principios básicos ONU · Principio 3",
+   "piezas": [
+    [
+     8,
+     0.4045,
+     0.4626
+    ]
+   ],
+   "ficha": "^Principio 3 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-4",
+   "nombre": "Principios básicos ONU · Principio 4",
+   "piezas": [
+    [
+     8,
+     0.4626,
+     0.5341
+    ]
+   ],
+   "ficha": "^Principio 4 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-5",
+   "nombre": "Principios básicos ONU · Principio 5",
+   "piezas": [
+    [
+     8,
+     0.5341,
+     0.7093
+    ]
+   ],
+   "ficha": "^Principio 5 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-6",
+   "nombre": "Principios básicos ONU · Principio 6",
+   "piezas": [
+    [
+     8,
+     0.7093,
+     0.7691
+    ]
+   ],
+   "ficha": "^Principio 6 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-7",
+   "nombre": "Principios básicos ONU · Principio 7",
+   "piezas": [
+    [
+     8,
+     0.7691,
+     0.9172
+    ],
+    [
+     9,
+     0.0737,
+     0.111
+    ]
+   ],
+   "ficha": "^Principio 7 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-8",
+   "nombre": "Principios básicos ONU · Principio 8",
+   "piezas": [
+    [
+     9,
+     0.111,
+     0.1958
+    ]
+   ],
+   "ficha": "^Principio 8 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-9",
+   "nombre": "Principios básicos ONU · Principio 9",
+   "piezas": [
+    [
+     9,
+     0.2357,
+     0.6614
+    ]
+   ]
+  },
+  {
+   "id": "a-10",
+   "nombre": "Principios básicos ONU · Principio 10",
+   "piezas": [
+    [
+     9,
+     0.6614,
+     0.7643
+    ]
+   ]
+  },
+  {
+   "id": "a-11",
+   "nombre": "Principios básicos ONU · Principio 11",
+   "piezas": [
+    [
+     9,
+     0.7643,
+     0.9172
+    ],
+    [
+     10,
+     0.0737,
+     0.3267
+    ]
+   ],
+   "ficha": "^Principio 11 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-12",
+   "nombre": "Principios básicos ONU · Principio 12",
+   "piezas": [
+    [
+     10,
+     0.369,
+     0.4563
+    ]
+   ],
+   "ficha": "^Principio 12 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-13",
+   "nombre": "Principios básicos ONU · Principio 13",
+   "piezas": [
+    [
+     10,
+     0.4563,
+     0.4999
+    ]
+   ],
+   "ficha": "^Principio 13 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-14",
+   "nombre": "Principios básicos ONU · Principio 14",
+   "piezas": [
+    [
+     10,
+     0.4999,
+     0.5818
+    ]
+   ]
+  },
+  {
+   "id": "a-15",
+   "nombre": "Principios básicos ONU · Principio 15",
+   "piezas": [
+    [
+     10,
+     0.8261,
+     0.9172
+    ],
+    [
+     11,
+     0.0737,
+     0.1108
+    ]
+   ],
+   "ficha": "^Principio 15 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-16",
+   "nombre": "Principios básicos ONU · Principio 16",
+   "piezas": [
+    [
+     11,
+     0.1108,
+     0.1992
+    ]
+   ]
+  },
+  {
+   "id": "a-17",
+   "nombre": "Principios básicos ONU · Principio 17",
+   "piezas": [
+    [
+     11,
+     0.1992,
+     0.2792
+    ]
+   ]
+  },
+  {
+   "id": "a-18",
+   "nombre": "Principios básicos ONU · Principio 18",
+   "piezas": [
+    [
+     11,
+     0.316,
+     0.5979
+    ]
+   ]
+  },
+  {
+   "id": "a-19",
+   "nombre": "Principios básicos ONU · Principio 19",
+   "piezas": [
+    [
+     11,
+     0.5979,
+     0.9172
+    ],
+    [
+     12,
+     0.0737,
+     0.1121
+    ]
+   ]
+  },
+  {
+   "id": "a-20",
+   "nombre": "Principios básicos ONU · Principio 20",
+   "piezas": [
+    [
+     12,
+     0.1121,
+     0.2447
+    ]
+   ],
+   "ficha": "^Principio 20 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-21",
+   "nombre": "Principios básicos ONU · Principio 21",
+   "piezas": [
+    [
+     12,
+     0.2447,
+     0.9172
+    ],
+    [
+     13,
+     0.0737,
+     0.1069
+    ]
+   ]
+  },
+  {
+   "id": "a-22",
+   "nombre": "Principios básicos ONU · Principio 22",
+   "piezas": [
+    [
+     13,
+     0.1807,
+     0.3269
+    ]
+   ],
+   "ficha": "^Principio 22 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-23",
+   "nombre": "Principios básicos ONU · Principio 23",
+   "piezas": [
+    [
+     13,
+     0.3269,
+     0.384
+    ]
+   ],
+   "ficha": "^Principio 23 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-24",
+   "nombre": "Principios básicos ONU · Principio 24",
+   "piezas": [
+    [
+     13,
+     0.384,
+     0.4713
+    ]
+   ],
+   "ficha": "^Principio 24 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-25",
+   "nombre": "Principios básicos ONU · Principio 25",
+   "piezas": [
+    [
+     13,
+     0.4713,
+     0.558
+    ]
+   ]
+  },
+  {
+   "id": "a-26",
+   "nombre": "Principios básicos ONU · Principio 26",
+   "piezas": [
+    [
+     13,
+     0.558,
+     0.9136
+    ]
+   ],
+   "ficha": "^Principio 26 · ",
+   "expres": 1
+  },
+  {
+   "id": "a-pre",
+   "nombre": "Principios básicos ONU · Preámbulo",
+   "piezas": [
+    [
+     6,
+     0.0855,
+     0.9172
+    ],
+    [
+     7,
+     0.0737,
+     0.9172
+    ],
+    [
+     8,
+     0.0737,
+     0.1069
+    ]
+   ],
+   "expres": 1
+  },
+  {
+   "id": "b-pre",
+   "nombre": "Declaración sobre la Policía · Preámbulo",
+   "piezas": [
+    [
+     14,
+     0.1093,
+     0.9136
+    ]
+   ],
+   "ficha": "^Preámbulo · Declaración sobre la Policía",
+   "expres": 1
+  },
+  {
+   "id": "b-1",
+   "nombre": "Declaración sobre la Policía · Punto A.1",
+   "piezas": [
+    [
+     15,
+     0.1093,
+     0.3102
+    ]
+   ]
+  },
+  {
+   "id": "b-2",
+   "nombre": "Declaración sobre la Policía · Punto A.2",
+   "piezas": [
+    [
+     15,
+     0.3102,
+     0.3531
+    ]
+   ],
+   "ficha": "^Punto A.2 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-3",
+   "nombre": "Declaración sobre la Policía · Punto A.3",
+   "piezas": [
+    [
+     15,
+     0.3531,
+     0.4098
+    ]
+   ]
+  },
+  {
+   "id": "b-4",
+   "nombre": "Declaración sobre la Policía · Punto A.4",
+   "piezas": [
+    [
+     15,
+     0.4098,
+     0.4678
+    ]
+   ],
+   "ficha": "^Punto A.4 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-5",
+   "nombre": "Declaración sobre la Policía · Punto A.5",
+   "piezas": [
+    [
+     15,
+     0.4678,
+     0.5254
+    ]
+   ]
+  },
+  {
+   "id": "b-6",
+   "nombre": "Declaración sobre la Policía · Punto A.6",
+   "piezas": [
+    [
+     15,
+     0.5254,
+     0.5829
+    ]
+   ]
+  },
+  {
+   "id": "b-7",
+   "nombre": "Declaración sobre la Policía · Punto A.7",
+   "piezas": [
+    [
+     15,
+     0.5829,
+     0.6247
+    ]
+   ],
+   "ficha": "^Punto A.7 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-8",
+   "nombre": "Declaración sobre la Policía · Punto A.8",
+   "piezas": [
+    [
+     15,
+     0.6247,
+     0.6835
+    ]
+   ]
+  },
+  {
+   "id": "b-9",
+   "nombre": "Declaración sobre la Policía · Punto A.9",
+   "piezas": [
+    [
+     15,
+     0.6835,
+     0.7241
+    ]
+   ]
+  },
+  {
+   "id": "b-10",
+   "nombre": "Declaración sobre la Policía · Punto A.10",
+   "piezas": [
+    [
+     15,
+     0.7241,
+     0.7678
+    ]
+   ]
+  },
+  {
+   "id": "b-11",
+   "nombre": "Declaración sobre la Policía · Punto A.11",
+   "piezas": [
+    [
+     15,
+     0.7678,
+     0.8099
+    ]
+   ]
+  },
+  {
+   "id": "b-12",
+   "nombre": "Declaración sobre la Policía · Punto A.12",
+   "piezas": [
+    [
+     15,
+     0.8099,
+     0.9172
+    ],
+    [
+     16,
+     0.0737,
+     0.1158
+    ]
+   ]
+  },
+  {
+   "id": "b-13",
+   "nombre": "Declaración sobre la Policía · Punto A.13",
+   "piezas": [
+    [
+     16,
+     0.1158,
+     0.1581
+    ]
+   ]
+  },
+  {
+   "id": "b-14",
+   "nombre": "Declaración sobre la Policía · Punto A.14",
+   "piezas": [
+    [
+     16,
+     0.1581,
+     0.2455
+    ]
+   ]
+  },
+  {
+   "id": "b-15",
+   "nombre": "Declaración sobre la Policía · Punto A.15",
+   "piezas": [
+    [
+     16,
+     0.2455,
+     0.3031
+    ]
+   ],
+   "ficha": "^Punto A.15 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-16",
+   "nombre": "Declaración sobre la Policía · Punto A.16",
+   "piezas": [
+    [
+     16,
+     0.3031,
+     0.3849
+    ]
+   ]
+  },
+  {
+   "id": "b-101",
+   "nombre": "Declaración sobre la Policía · Punto B.1",
+   "piezas": [
+    [
+     16,
+     0.416,
+     0.4587
+    ]
+   ]
+  },
+  {
+   "id": "b-102",
+   "nombre": "Declaración sobre la Policía · Punto B.2",
+   "piezas": [
+    [
+     16,
+     0.4587,
+     0.4864
+    ]
+   ]
+  },
+  {
+   "id": "b-103",
+   "nombre": "Declaración sobre la Policía · Punto B.3",
+   "piezas": [
+    [
+     16,
+     0.4864,
+     0.5579
+    ]
+   ],
+   "ficha": "^Punto B.3 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-104",
+   "nombre": "Declaración sobre la Policía · Punto B.4",
+   "piezas": [
+    [
+     16,
+     0.5579,
+     0.6014
+    ]
+   ],
+   "ficha": "^Punto B.4 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-105",
+   "nombre": "Declaración sobre la Policía · Punto B.5",
+   "piezas": [
+    [
+     16,
+     0.6014,
+     0.6573
+    ]
+   ]
+  },
+  {
+   "id": "b-106",
+   "nombre": "Declaración sobre la Policía · Punto B.6",
+   "piezas": [
+    [
+     16,
+     0.6573,
+     0.7158
+    ]
+   ]
+  },
+  {
+   "id": "b-107",
+   "nombre": "Declaración sobre la Policía · Punto B.7",
+   "piezas": [
+    [
+     16,
+     0.7158,
+     0.9172
+    ],
+    [
+     17,
+     0.0737,
+     0.1107
+    ]
+   ]
+  },
+  {
+   "id": "b-108",
+   "nombre": "Declaración sobre la Policía · Punto B.8",
+   "piezas": [
+    [
+     17,
+     0.1107,
+     0.1541
+    ]
+   ]
+  },
+  {
+   "id": "b-109",
+   "nombre": "Declaración sobre la Policía · Punto B.9",
+   "piezas": [
+    [
+     17,
+     0.1541,
+     0.2257
+    ]
+   ],
+   "ficha": "^Punto B.9 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-110",
+   "nombre": "Declaración sobre la Policía · Punto B.10",
+   "piezas": [
+    [
+     17,
+     0.2257,
+     0.3077
+    ]
+   ]
+  },
+  {
+   "id": "b-201",
+   "nombre": "Declaración sobre la Policía · Punto C.1",
+   "piezas": [
+    [
+     17,
+     0.3662,
+     0.4584
+    ]
+   ],
+   "ficha": "^Punto C.1 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-202",
+   "nombre": "Declaración sobre la Policía · Punto C.2",
+   "piezas": [
+    [
+     17,
+     0.4584,
+     0.497
+    ]
+   ],
+   "ficha": "^Punto C.2 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-203",
+   "nombre": "Declaración sobre la Policía · Punto C.3",
+   "piezas": [
+    [
+     17,
+     0.497,
+     0.5413
+    ]
+   ]
+  },
+  {
+   "id": "b-204",
+   "nombre": "Declaración sobre la Policía · Punto C.4",
+   "piezas": [
+    [
+     17,
+     0.5413,
+     0.6537
+    ]
+   ]
+  },
+  {
+   "id": "b-205",
+   "nombre": "Declaración sobre la Policía · Punto C.5",
+   "piezas": [
+    [
+     17,
+     0.6537,
+     0.7569
+    ]
+   ],
+   "ficha": "^Punto C.5 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-206",
+   "nombre": "Declaración sobre la Policía · Punto C.6",
+   "piezas": [
+    [
+     17,
+     0.7569,
+     0.8312
+    ]
+   ],
+   "ficha": "^Punto C.6 · ",
+   "expres": 1
+  },
+  {
+   "id": "b-207",
+   "nombre": "Declaración sobre la Policía · Punto C.7",
+   "piezas": [
+    [
+     17,
+     0.8312,
+     0.9136
+    ]
+   ],
+   "ficha": "^Punto C.7 · ",
+   "expres": 1
+  },
+  {
+   "id": "c-pre",
+   "nombre": "Código Europeo de Ética de la Policía · Preámbulo",
+   "piezas": [
+    [
+     18,
+     0.1034,
+     0.4717
+    ]
+   ],
+   "ficha": "^Preámbulo · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-1",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 1",
+   "piezas": [
+    [
+     18,
+     0.5111,
+     0.7252
+    ]
+   ],
+   "ficha": "^Punto 1 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-2",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 2",
+   "piezas": [
+    [
+     18,
+     0.7603,
+     0.7926
+    ]
+   ],
+   "ficha": "^Punto 2 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-3",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 3",
+   "piezas": [
+    [
+     18,
+     0.7926,
+     0.8416
+    ]
+   ],
+   "ficha": "^Punto 3 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-4",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 4",
+   "piezas": [
+    [
+     18,
+     0.8416,
+     0.9172
+    ],
+    [
+     19,
+     0.0737,
+     0.1124
+    ]
+   ],
+   "ficha": "^Punto 4 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-5",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 5",
+   "piezas": [
+    [
+     19,
+     0.1124,
+     0.1753
+    ]
+   ],
+   "ficha": "^Punto 5 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-6",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 6",
+   "piezas": [
+    [
+     19,
+     0.2115,
+     0.2673
+    ]
+   ],
+   "ficha": "^Punto 6 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-7",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 7",
+   "piezas": [
+    [
+     19,
+     0.2673,
+     0.3257
+    ]
+   ],
+   "ficha": "^Punto 7 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-8",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 8",
+   "piezas": [
+    [
+     19,
+     0.3257,
+     0.3977
+    ]
+   ]
+  },
+  {
+   "id": "c-9",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 9",
+   "piezas": [
+    [
+     19,
+     0.3977,
+     0.513
+    ]
+   ],
+   "ficha": "^Punto 9 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-10",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 10",
+   "piezas": [
+    [
+     19,
+     0.513,
+     0.5691
+    ]
+   ],
+   "ficha": "^Punto 10 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-11",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 11",
+   "piezas": [
+    [
+     19,
+     0.5691,
+     0.6057
+    ]
+   ],
+   "ficha": "^Punto 11 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-12",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 12",
+   "piezas": [
+    [
+     19,
+     0.6747,
+     0.7166
+    ]
+   ]
+  },
+  {
+   "id": "c-13",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 13",
+   "piezas": [
+    [
+     19,
+     0.7166,
+     0.7604
+    ]
+   ],
+   "ficha": "^Punto 13 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-14",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 14",
+   "piezas": [
+    [
+     19,
+     0.7604,
+     0.7877
+    ]
+   ]
+  },
+  {
+   "id": "c-15",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 15",
+   "piezas": [
+    [
+     19,
+     0.7877,
+     0.8439
+    ]
+   ]
+  },
+  {
+   "id": "c-16",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 16",
+   "piezas": [
+    [
+     19,
+     0.8439,
+     0.9172
+    ],
+    [
+     20,
+     0.0737,
+     0.1142
+    ]
+   ]
+  },
+  {
+   "id": "c-17",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 17",
+   "piezas": [
+    [
+     20,
+     0.1142,
+     0.1708
+    ]
+   ],
+   "ficha": "^Punto 17 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-18",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 18",
+   "piezas": [
+    [
+     20,
+     0.1708,
+     0.2436
+    ]
+   ]
+  },
+  {
+   "id": "c-19",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 19",
+   "piezas": [
+    [
+     20,
+     0.2436,
+     0.3012
+    ]
+   ]
+  },
+  {
+   "id": "c-20",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 20",
+   "piezas": [
+    [
+     20,
+     0.3012,
+     0.3726
+    ]
+   ],
+   "ficha": "^Punto 20 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-21",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 21",
+   "piezas": [
+    [
+     20,
+     0.3726,
+     0.417
+    ]
+   ]
+  },
+  {
+   "id": "c-22",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 22",
+   "piezas": [
+    [
+     20,
+     0.4497,
+     0.5037
+    ]
+   ],
+   "ficha": "^Punto 22 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-23",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 23",
+   "piezas": [
+    [
+     20,
+     0.5037,
+     0.5791
+    ]
+   ],
+   "ficha": "^Punto 23 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-24",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 24",
+   "piezas": [
+    [
+     20,
+     0.5791,
+     0.6218
+    ]
+   ],
+   "ficha": "^Punto 24 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-25",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 25",
+   "piezas": [
+    [
+     20,
+     0.6218,
+     0.7282
+    ]
+   ],
+   "ficha": "^Punto 25 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-26",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 26",
+   "piezas": [
+    [
+     20,
+     0.7628,
+     0.8176
+    ]
+   ],
+   "ficha": "^Punto 26 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-27",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 27",
+   "piezas": [
+    [
+     20,
+     0.8176,
+     0.8442
+    ]
+   ]
+  },
+  {
+   "id": "c-28",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 28",
+   "piezas": [
+    [
+     20,
+     0.8442,
+     0.9172
+    ],
+    [
+     21,
+     0.0737,
+     0.112
+    ]
+   ],
+   "ficha": "^Punto 28 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-29",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 29",
+   "piezas": [
+    [
+     21,
+     0.112,
+     0.185
+    ]
+   ],
+   "ficha": "^Punto 29 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-30",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 30",
+   "piezas": [
+    [
+     21,
+     0.185,
+     0.231
+    ]
+   ]
+  },
+  {
+   "id": "c-31",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 31",
+   "piezas": [
+    [
+     21,
+     0.2673,
+     0.3397
+    ]
+   ],
+   "ficha": "^Punto 31 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-32",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 32",
+   "piezas": [
+    [
+     21,
+     0.3397,
+     0.4278
+    ]
+   ],
+   "ficha": "^Punto 32 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-33",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 33",
+   "piezas": [
+    [
+     21,
+     0.4278,
+     0.47
+    ]
+   ],
+   "ficha": "^Punto 33 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-34",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 34",
+   "piezas": [
+    [
+     21,
+     0.47,
+     0.519
+    ]
+   ],
+   "ficha": "^Punto 34 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-35",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 35",
+   "piezas": [
+    [
+     21,
+     0.6092,
+     0.6519
+    ]
+   ]
+  },
+  {
+   "id": "c-36",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 36",
+   "piezas": [
+    [
+     21,
+     0.6519,
+     0.6939
+    ]
+   ]
+  },
+  {
+   "id": "c-37",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 37",
+   "piezas": [
+    [
+     21,
+     0.6939,
+     0.7369
+    ]
+   ],
+   "ficha": "^Punto 37 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-38",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 38",
+   "piezas": [
+    [
+     21,
+     0.7369,
+     0.7797
+    ]
+   ]
+  },
+  {
+   "id": "c-39",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 39",
+   "piezas": [
+    [
+     21,
+     0.7797,
+     0.8376
+    ]
+   ],
+   "ficha": "^Punto 39 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-40",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 40",
+   "piezas": [
+    [
+     21,
+     0.8376,
+     0.9172
+    ],
+    [
+     22,
+     0.0737,
+     0.1128
+    ]
+   ],
+   "ficha": "^Punto 40 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-41",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 41",
+   "piezas": [
+    [
+     22,
+     0.1128,
+     0.1542
+    ]
+   ]
+  },
+  {
+   "id": "c-42",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 42",
+   "piezas": [
+    [
+     22,
+     0.1542,
+     0.21
+    ]
+   ],
+   "ficha": "^Punto 42 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-43",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 43",
+   "piezas": [
+    [
+     22,
+     0.21,
+     0.2664
+    ]
+   ],
+   "ficha": "^Punto 43 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-44",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 44",
+   "piezas": [
+    [
+     22,
+     0.2664,
+     0.3223
+    ]
+   ],
+   "ficha": "^Punto 44 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-45",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 45",
+   "piezas": [
+    [
+     22,
+     0.3223,
+     0.362
+    ]
+   ]
+  },
+  {
+   "id": "c-46",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 46",
+   "piezas": [
+    [
+     22,
+     0.362,
+     0.4252
+    ]
+   ],
+   "ficha": "^Punto 46 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-47",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 47",
+   "piezas": [
+    [
+     22,
+     0.4888,
+     0.5268
+    ]
+   ],
+   "ficha": "^Punto 47 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-48",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 48",
+   "piezas": [
+    [
+     22,
+     0.5268,
+     0.6107
+    ]
+   ]
+  },
+  {
+   "id": "c-49",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 49",
+   "piezas": [
+    [
+     22,
+     0.6107,
+     0.68
+    ]
+   ],
+   "ficha": "^Punto 49 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-50",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 50",
+   "piezas": [
+    [
+     22,
+     0.68,
+     0.7635
+    ]
+   ]
+  },
+  {
+   "id": "c-51",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 51",
+   "piezas": [
+    [
+     22,
+     0.7635,
+     0.8176
+    ]
+   ],
+   "ficha": "^Punto 51 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-52",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 52",
+   "piezas": [
+    [
+     22,
+     0.8176,
+     0.8578
+    ]
+   ]
+  },
+  {
+   "id": "c-53",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 53",
+   "piezas": [
+    [
+     22,
+     0.8578,
+     0.9172
+    ],
+    [
+     23,
+     0.0737,
+     0.1069
+    ]
+   ],
+   "ficha": "^Punto 53 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-54",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 54",
+   "piezas": [
+    [
+     23,
+     0.1379,
+     0.1929
+    ]
+   ],
+   "ficha": "^Punto 54 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-55",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 55",
+   "piezas": [
+    [
+     23,
+     0.1929,
+     0.2624
+    ]
+   ]
+  },
+  {
+   "id": "c-56",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 56",
+   "piezas": [
+    [
+     23,
+     0.2624,
+     0.3454
+    ]
+   ]
+  },
+  {
+   "id": "c-57",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 57",
+   "piezas": [
+    [
+     23,
+     0.3454,
+     0.4004
+    ]
+   ]
+  },
+  {
+   "id": "c-58",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 58",
+   "piezas": [
+    [
+     23,
+     0.4004,
+     0.4769
+    ]
+   ]
+  },
+  {
+   "id": "c-59",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 59",
+   "piezas": [
+    [
+     23,
+     0.5135,
+     0.5523
+    ]
+   ],
+   "ficha": "^Punto 59 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-60",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 60",
+   "piezas": [
+    [
+     23,
+     0.5523,
+     0.5912
+    ]
+   ],
+   "ficha": "^Punto 60 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-61",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 61",
+   "piezas": [
+    [
+     23,
+     0.5912,
+     0.6308
+    ]
+   ]
+  },
+  {
+   "id": "c-62",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 62",
+   "piezas": [
+    [
+     23,
+     0.6308,
+     0.671
+    ]
+   ],
+   "ficha": "^Punto 62 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-63",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 63",
+   "piezas": [
+    [
+     23,
+     0.671,
+     0.732
+    ]
+   ]
+  },
+  {
+   "id": "c-64",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 64",
+   "piezas": [
+    [
+     23,
+     0.775,
+     0.8139
+    ]
+   ]
+  },
+  {
+   "id": "c-65",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 65",
+   "piezas": [
+    [
+     23,
+     0.8139,
+     0.8534
+    ]
+   ],
+   "ficha": "^Punto 65 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "c-66",
+   "nombre": "Código Europeo de Ética de la Policía · Punto 66",
+   "piezas": [
+    [
+     23,
+     0.8534,
+     0.9136
+    ]
+   ],
+   "ficha": "^Punto 66 · Código Europeo",
+   "expres": 1
+  },
+  {
+   "id": "d-pre",
+   "nombre": "Real Decreto 176/2022 · Preámbulo",
+   "piezas": [
+    [
+     26,
+     0.0737,
+     0.9172
+    ],
+    [
+     27,
+     0.0737,
+     0.9172
+    ],
+    [
+     28,
+     0.0737,
+     0.9172
+    ],
+    [
+     29,
+     0.0737,
+     0.9172
+    ],
+    [
+     30,
+     0.0737,
+     0.4094
+    ]
+   ],
+   "expres": 1
+  },
+  {
+   "id": "d-1",
+   "nombre": "Real Decreto 176/2022 · Artículo 1",
+   "piezas": [
+    [
+     32,
+     0.1877,
+     0.2492
+    ]
+   ]
+  },
+  {
+   "id": "d-2",
+   "nombre": "Real Decreto 176/2022 · Artículo 2",
+   "piezas": [
+    [
+     32,
+     0.2492,
+     0.4217
+    ]
+   ]
+  },
+  {
+   "id": "d-3",
+   "nombre": "Real Decreto 176/2022 · Artículo 3",
+   "piezas": [
+    [
+     32,
+     0.4217,
+     0.5924
+    ]
+   ]
+  },
+  {
+   "id": "d-4",
+   "nombre": "Real Decreto 176/2022 · Artículo 4",
+   "piezas": [
+    [
+     32,
+     0.5924,
+     0.9172
+    ]
+   ]
+  },
+  {
+   "id": "d-5",
+   "nombre": "Real Decreto 176/2022 · Artículo 5",
+   "piezas": [
+    [
+     33,
+     0.0737,
+     0.2343
+    ]
+   ]
+  },
+  {
+   "id": "d-6",
+   "nombre": "Real Decreto 176/2022 · Artículo 6",
+   "piezas": [
+    [
+     33,
+     0.2343,
+     0.3485
+    ]
+   ]
+  },
+  {
+   "id": "d-fin",
+   "nombre": "Real Decreto 176/2022 · Disposiciones adicional, derogatoria y finales",
+   "piezas": [
+    [
+     33,
+     0.3485,
+     0.8571
+    ]
+   ],
+   "ficha": "^Disposición final tercera · Real Decreto",
+   "expres": 1
+  },
+  {
+   "id": "e-pre",
+   "nombre": "Código de Conducta · Título I, Capítulo I (introducción)",
+   "piezas": [
+    [
+     34,
+     0.0737,
+     0.4086
+    ]
+   ],
+   "expres": 1
+  },
+  {
+   "id": "e-1",
+   "nombre": "Código de Conducta · Artículo 1",
+   "piezas": [
+    [
+     34,
+     0.4086,
+     0.4818
+    ]
+   ]
+  },
+  {
+   "id": "e-2",
+   "nombre": "Código de Conducta · Artículo 2",
+   "piezas": [
+    [
+     34,
+     0.4818,
+     0.5704
+    ]
+   ]
+  },
+  {
+   "id": "e-3",
+   "nombre": "Código de Conducta · Artículo 3",
+   "piezas": [
+    [
+     34,
+     0.5704,
+     0.6608
+    ]
+   ]
+  },
+  {
+   "id": "e-4",
+   "nombre": "Código de Conducta · Artículo 4",
+   "piezas": [
+    [
+     34,
+     0.6608,
+     0.7326
+    ]
+   ]
+  },
+  {
+   "id": "e-5",
+   "nombre": "Código de Conducta · Artículo 5",
+   "piezas": [
+    [
+     34,
+     0.7326,
+     0.8173
+    ]
+   ]
+  },
+  {
+   "id": "e-6",
+   "nombre": "Código de Conducta · Artículo 6",
+   "piezas": [
+    [
+     34,
+     0.8173,
+     0.9172
+    ]
+   ]
+  },
+  {
+   "id": "e-7",
+   "nombre": "Código de Conducta · Artículo 7",
+   "piezas": [
+    [
+     35,
+     0.0737,
+     0.1581
+    ]
+   ]
+  },
+  {
+   "id": "e-8",
+   "nombre": "Código de Conducta · Artículo 8",
+   "piezas": [
+    [
+     35,
+     0.1581,
+     0.2756
+    ]
+   ]
+  },
+  {
+   "id": "e-9",
+   "nombre": "Código de Conducta · Artículo 9",
+   "piezas": [
+    [
+     35,
+     0.2756,
+     0.9172
+    ],
+    [
+     36,
+     0.0737,
+     0.4066
+    ]
+   ]
+  },
+  {
+   "id": "e-10",
+   "nombre": "Código de Conducta · Artículo 10",
+   "piezas": [
+    [
+     36,
+     0.4066,
+     0.5354
+    ]
+   ]
+  },
+  {
+   "id": "e-11",
+   "nombre": "Código de Conducta · Artículo 11",
+   "piezas": [
+    [
+     36,
+     0.5354,
+     0.6519
+    ]
+   ]
+  },
+  {
+   "id": "e-12",
+   "nombre": "Código de Conducta · Artículo 12",
+   "piezas": [
+    [
+     36,
+     0.6519,
+     0.7432
+    ]
+   ]
+  },
+  {
+   "id": "e-13",
+   "nombre": "Código de Conducta · Artículo 13",
+   "piezas": [
+    [
+     36,
+     0.7432,
+     0.9172
+    ]
+   ]
+  },
+  {
+   "id": "e-14",
+   "nombre": "Código de Conducta · Artículo 14",
+   "piezas": [
+    [
+     37,
+     0.0737,
+     0.2771
+    ]
+   ]
+  },
+  {
+   "id": "e-15",
+   "nombre": "Código de Conducta · Artículo 15",
+   "piezas": [
+    [
+     37,
+     0.2771,
+     0.6064
+    ]
+   ]
+  },
+  {
+   "id": "e-16",
+   "nombre": "Código de Conducta · Artículo 16",
+   "piezas": [
+    [
+     37,
+     0.6064,
+     0.9172
+    ]
+   ]
+  },
+  {
+   "id": "e-17",
+   "nombre": "Código de Conducta · Artículo 17",
+   "piezas": [
+    [
+     38,
+     0.0737,
+     0.2825
+    ]
+   ]
+  },
+  {
+   "id": "e-18",
+   "nombre": "Código de Conducta · Artículo 18",
+   "piezas": [
+    [
+     38,
+     0.2825,
+     0.3725
+    ]
+   ]
+  },
+  {
+   "id": "e-19",
+   "nombre": "Código de Conducta · Artículo 19",
+   "piezas": [
+    [
+     38,
+     0.3725,
+     0.4615
+    ]
+   ]
+  },
+  {
+   "id": "e-20",
+   "nombre": "Código de Conducta · Artículo 20",
+   "piezas": [
+    [
+     38,
+     0.4615,
+     0.5334
+    ]
+   ]
+  },
+  {
+   "id": "e-21",
+   "nombre": "Código de Conducta · Artículo 21",
+   "piezas": [
+    [
+     38,
+     0.5334,
+     0.6059
+    ]
+   ]
+  },
+  {
+   "id": "e-22",
+   "nombre": "Código de Conducta · Artículo 22",
+   "piezas": [
+    [
+     38,
+     0.6059,
+     0.8053
+    ]
+   ]
+  },
+  {
+   "id": "e-23",
+   "nombre": "Código de Conducta · Artículo 23",
+   "piezas": [
+    [
+     38,
+     0.8053,
+     0.9172
+    ],
+    [
+     39,
+     0.0737,
+     0.6207
+    ]
+   ]
+  },
+  {
+   "id": "e-24",
+   "nombre": "Código de Conducta · Artículo 24",
+   "piezas": [
+    [
+     39,
+     0.6207,
+     0.9172
+    ]
+   ]
+  },
+  {
+   "id": "e-25",
+   "nombre": "Código de Conducta · Artículo 25",
+   "piezas": [
+    [
+     40,
+     0.0737,
+     0.1581
+    ]
+   ]
+  },
+  {
+   "id": "e-26",
+   "nombre": "Código de Conducta · Artículo 26",
+   "piezas": [
+    [
+     40,
+     0.1581,
+     0.4348
+    ]
+   ]
+  },
+  {
+   "id": "e-27",
+   "nombre": "Código de Conducta · Artículo 27",
+   "piezas": [
+    [
+     40,
+     0.4348,
+     0.6749
+    ]
+   ]
+  },
+  {
+   "id": "e-28",
+   "nombre": "Código de Conducta · Artículo 28",
+   "piezas": [
+    [
+     40,
+     0.6749,
+     0.9172
+    ],
+    [
+     41,
+     0.0737,
+     0.3579
+    ]
+   ]
+  },
+  {
+   "id": "e-29",
+   "nombre": "Código de Conducta · Artículo 29",
+   "piezas": [
+    [
+     41,
+     0.3579,
+     0.4445
+    ]
+   ]
+  },
+  {
+   "id": "e-30",
+   "nombre": "Código de Conducta · Artículo 30",
+   "piezas": [
+    [
+     41,
+     0.4445,
+     0.5538
+    ]
+   ]
+  },
+  {
+   "id": "e-31",
+   "nombre": "Código de Conducta · Artículo 31",
+   "piezas": [
+    [
+     41,
+     0.5538,
+     0.8002
+    ]
+   ]
+  },
+  {
+   "id": "e-32",
+   "nombre": "Código de Conducta · Artículo 32",
+   "piezas": [
+    [
+     41,
+     0.8002,
+     0.9172
+    ],
+    [
+     42,
+     0.0737,
+     0.0973
+    ]
+   ]
+  },
+  {
+   "id": "e-33",
+   "nombre": "Código de Conducta · Artículo 33",
+   "piezas": [
+    [
+     42,
+     0.0973,
+     0.2482
+    ]
+   ]
+  },
+  {
+   "id": "e-34",
+   "nombre": "Código de Conducta · Artículo 34",
+   "piezas": [
+    [
+     42,
+     0.2482,
+     0.3964
+    ]
+   ]
+  },
+  {
+   "id": "e-35",
+   "nombre": "Código de Conducta · Artículo 35",
+   "piezas": [
+    [
+     42,
+     0.3964,
+     0.4729
+    ]
+   ]
+  },
+  {
+   "id": "e-36",
+   "nombre": "Código de Conducta · Artículo 36",
+   "piezas": [
+    [
+     42,
+     0.4729,
+     0.5431
+    ]
+   ]
+  },
+  {
+   "id": "e-37",
+   "nombre": "Código de Conducta · Artículo 37",
+   "piezas": [
+    [
+     42,
+     0.5431,
+     0.6316
+    ]
+   ]
+  },
+  {
+   "id": "e-38",
+   "nombre": "Código de Conducta · Artículo 38",
+   "piezas": [
+    [
+     42,
+     0.6316,
+     0.7208
+    ]
+   ]
+  },
+  {
+   "id": "e-39",
+   "nombre": "Código de Conducta · Artículo 39",
+   "piezas": [
+    [
+     42,
+     0.7208,
+     0.9172
+    ],
+    [
+     43,
+     0.0737,
+     0.2949
+    ]
+   ]
+  },
+  {
+   "id": "e-40",
+   "nombre": "Código de Conducta · Artículo 40",
+   "piezas": [
+    [
+     43,
+     0.2949,
+     0.4009
+    ]
+   ]
+  },
+  {
+   "id": "e-41",
+   "nombre": "Código de Conducta · Artículo 41",
+   "piezas": [
+    [
+     43,
+     0.4009,
+     0.9172
+    ]
+   ]
+  },
+  {
+   "id": "e-42",
+   "nombre": "Código de Conducta · Artículo 42",
+   "piezas": [
+    [
+     44,
+     0.0737,
+     0.6954
+    ]
+   ]
+  },
+  {
+   "id": "e-43",
+   "nombre": "Código de Conducta · Artículo 43",
+   "piezas": [
+    [
+     44,
+     0.6954,
+     0.9172
+    ]
+   ]
+  },
+  {
+   "id": "e-44",
+   "nombre": "Código de Conducta · Artículo 44",
+   "piezas": [
+    [
+     45,
+     0.0737,
+     0.2154
+    ]
+   ]
+  },
+  {
+   "id": "e-45",
+   "nombre": "Código de Conducta · Artículo 45",
+   "piezas": [
+    [
+     45,
+     0.2154,
+     0.3513
+    ]
+   ]
+  },
+  {
+   "id": "e-46",
+   "nombre": "Código de Conducta · Artículo 46",
+   "piezas": [
+    [
+     45,
+     0.3513,
+     0.9172
+    ]
+   ]
+  },
+  {
+   "id": "e-47",
+   "nombre": "Código de Conducta · Artículo 47",
+   "piezas": [
+    [
+     46,
+     0.0737,
+     0.2094
+    ]
+   ]
+  },
+  {
+   "id": "e-48",
+   "nombre": "Código de Conducta · Artículo 48",
+   "piezas": [
+    [
+     46,
+     0.2094,
+     0.3163
+    ]
+   ]
+  },
+  {
+   "id": "e-49",
+   "nombre": "Código de Conducta · Artículo 49",
+   "piezas": [
+    [
+     46,
+     0.3163,
+     0.4797
+    ]
+   ]
+  },
+  {
+   "id": "e-50",
+   "nombre": "Código de Conducta · Artículo 50",
+   "piezas": [
+    [
+     46,
+     0.4797,
+     0.7865
+    ]
+   ]
+  },
+  {
+   "id": "e-fin",
+   "nombre": "Código de Conducta · Anexo. Decálogo",
+   "piezas": [
+    [
+     48,
+     0.0737,
+     0.9136
+    ]
+   ],
+   "expres": 1
+  },
+  {
+   "id": "f-pre",
+   "nombre": "OG 10/2024 · Preámbulo",
+   "piezas": [
+    [
+     50,
+     0.0737,
+     0.9172
+    ],
+    [
+     51,
+     0.0737,
+     0.4061
+    ]
+   ],
+   "expres": 1
+  },
+  {
+   "id": "f-1",
+   "nombre": "OG 10/2024 · Artículo 1",
+   "piezas": [
+    [
+     51,
+     0.4061,
+     0.5797
+    ]
+   ]
+  },
+  {
+   "id": "f-2",
+   "nombre": "OG 10/2024 · Artículo 2",
+   "piezas": [
+    [
+     51,
+     0.5797,
+     0.9172
+    ],
+    [
+     52,
+     0.0737,
+     0.4515
+    ]
+   ]
+  },
+  {
+   "id": "f-3",
+   "nombre": "OG 10/2024 · Artículo 3",
+   "piezas": [
+    [
+     52,
+     0.4515,
+     0.9172
+    ],
+    [
+     53,
+     0.0737,
+     0.1401
+    ]
+   ]
+  },
+  {
+   "id": "f-4",
+   "nombre": "OG 10/2024 · Artículo 4",
+   "piezas": [
+    [
+     53,
+     0.1401,
+     0.9172
+    ],
+    [
+     54,
+     0.0737,
+     0.1668
+    ]
+   ]
+  },
+  {
+   "id": "f-5",
+   "nombre": "OG 10/2024 · Artículo 5",
+   "piezas": [
+    [
+     54,
+     0.1668,
+     0.3248
+    ]
+   ]
+  },
+  {
+   "id": "f-6",
+   "nombre": "OG 10/2024 · Artículo 6",
+   "piezas": [
+    [
+     54,
+     0.3248,
+     0.5988
+    ]
+   ]
+  },
+  {
+   "id": "f-7",
+   "nombre": "OG 10/2024 · Artículo 7",
+   "piezas": [
+    [
+     54,
+     0.5988,
+     0.9172
+    ],
+    [
+     55,
+     0.0737,
+     0.1375
+    ]
+   ]
+  },
+  {
+   "id": "f-8",
+   "nombre": "OG 10/2024 · Artículo 8",
+   "piezas": [
+    [
+     55,
+     0.1375,
+     0.9172
+    ],
+    [
+     56,
+     0.0737,
+     0.8124
+    ]
+   ]
+  },
+  {
+   "id": "f-9",
+   "nombre": "OG 10/2024 · Artículo 9",
+   "piezas": [
+    [
+     56,
+     0.8124,
+     0.9172
+    ],
+    [
+     57,
+     0.0737,
+     0.7382
+    ]
+   ],
+   "ficha": "^Artículo 9 · OG 10/2024",
+   "expres": 1
+  },
+  {
+   "id": "f-10",
+   "nombre": "OG 10/2024 · Artículo 10",
+   "piezas": [
+    [
+     57,
+     0.7382,
+     0.9172
+    ],
+    [
+     58,
+     0.0737,
+     0.9172
+    ],
+    [
+     59,
+     0.0737,
+     0.4884
+    ]
+   ]
+  },
+  {
+   "id": "f-11",
+   "nombre": "OG 10/2024 · Artículo 11",
+   "piezas": [
+    [
+     59,
+     0.4884,
+     0.9172
+    ],
+    [
+     60,
+     0.0737,
+     0.5779
+    ]
+   ]
+  },
+  {
+   "id": "f-12",
+   "nombre": "OG 10/2024 · Artículo 12",
+   "piezas": [
+    [
+     60,
+     0.5779,
+     0.9172
+    ],
+    [
+     61,
+     0.0737,
+     0.4046
+    ]
+   ],
+   "ficha": "^Artículo 12 · OG 10/2024",
+   "expres": 1
+  },
+  {
+   "id": "f-13",
+   "nombre": "OG 10/2024 · Artículo 13",
+   "piezas": [
+    [
+     61,
+     0.4046,
+     0.4971
+    ]
+   ]
+  },
+  {
+   "id": "f-14",
+   "nombre": "OG 10/2024 · Artículo 14",
+   "piezas": [
+    [
+     61,
+     0.4971,
+     0.9172
+    ],
+    [
+     62,
+     0.0737,
+     0.9172
+    ],
+    [
+     63,
+     0.0737,
+     0.1349
+    ]
+   ]
+  },
+  {
+   "id": "f-15",
+   "nombre": "OG 10/2024 · Artículo 15",
+   "piezas": [
+    [
+     63,
+     0.1349,
+     0.4979
+    ]
+   ]
+  },
+  {
+   "id": "f-16",
+   "nombre": "OG 10/2024 · Artículo 16",
+   "piezas": [
+    [
+     63,
+     0.4979,
+     0.573
+    ]
+   ]
+  },
+  {
+   "id": "f-17",
+   "nombre": "OG 10/2024 · Artículo 17",
+   "piezas": [
+    [
+     63,
+     0.573,
+     0.9172
+    ],
+    [
+     64,
+     0.0737,
+     0.9172
+    ],
+    [
+     65,
+     0.0737,
+     0.1291
+    ]
+   ]
+  },
+  {
+   "id": "f-fin",
+   "nombre": "OG 10/2024 · Disposiciones adicionales, transitoria, derogatoria y finales",
+   "piezas": [
+    [
+     65,
+     0.1291,
+     0.9172
+    ],
+    [
+     66,
+     0.0737,
+     0.7156
+    ]
+   ]
+  }
+ ]
+}

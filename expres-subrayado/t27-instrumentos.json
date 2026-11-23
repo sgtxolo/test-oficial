@@ -1,0 +1,8 @@
+[
+ { "id": "a", "nombre": "Principios básicos sobre el empleo de la fuerza y de armas de fuego (ONU 1990)", "inicio": "^PRINCIPIOS BÁSICOS", "cit": "^(?!)$", "pre": "a-pre", "pre_re": "^(?!)$", "proto": 1 },
+ { "id": "b", "nombre": "Resolución 690 de 1979 · Declaración sobre la Policía", "inicio": "^RESOLUCIÓN 690", "cit": "^(?!)$", "pre": "b-pre", "pre_re": "^(?!)$", "proto": 1 },
+ { "id": "c", "nombre": "Recomendación Rec. (2001) 10 · Código Europeo de Ética de la Policía", "inicio": "^RECOMENDACIÓN REC", "cit": "^(?!)$", "pre": "c-pre", "pre_re": "^(?!)$", "proto": 1 },
+ { "id": "d", "nombre": "Real Decreto 176/2022 · Aprobación del Código de Conducta", "inicio": "^REAL DECRETO 176/2022", "cit": "^(?!)$", "pre": "d-pre", "pre_re": "^(?!)$", "proto": 1 },
+ { "id": "e", "nombre": "Código de Conducta del personal de la Guardia Civil", "inicio": "^TÍTULO I · CAPÍTULO I", "cit": "^(?!)$", "proto": 1 },
+ { "id": "f", "nombre": "Orden General 10/2024 · Sistema de Integridad (SINTEGC)", "inicio": "^ORDEN GENERAL NÚMERO 10/2024", "cit": "^(?!)$", "pre": "f-pre", "pre_re": "^(?!)$", "proto": 1 }
+]
