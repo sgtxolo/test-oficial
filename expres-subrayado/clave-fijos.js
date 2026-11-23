@@ -12,6 +12,7 @@ window.EXSUBCLAVE_REPASO = {
   7: "repaso-t7-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T7 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   // 8: "repaso-t8-borrador.html",   // (antigua, 12/11/2026) la de abajo pisa a esta
   8: "repaso-t8-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T8 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
+  14: "repaso-t14-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T14 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   12: "repaso-t12-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T12 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   11: "repaso-t11-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T11 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   10: "repaso-t10-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T10 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
@@ -21,7 +22,7 @@ window.EXSUBCLAVE_REPASO = {
   17: "repaso-t17-borrador.html",   // 14/11/2026: Esquema clave T17 Menores (15 cuadros redibujados + 3 fichas + R1-R25 + rápidas)
   16: "repaso-t16-borrador.html",   // 14/11/2026: Esquema clave T16 Igualdad y acoso (15 cuadros del temario redibujados + 8 fichas + R1-R14 + rápidas)
   15: "repaso-t15-borrador.html",   // 14/11/2026: Esquema clave T15 VioGén (8 cuadros del temario, Anexo I y II literales + 8 fichas + R1-R23 + rápidas)
-  14: "repaso-t14-borrador.html",   // 14/11/2026: Esquema clave T14 Defensor del Pueblo (4 cuadros del temario + 28 fichas + R1-R15 + rápidas)
+  // (antigua) 14: "repaso-t14-borrador.html",   // 14/11/2026: Esquema clave T14 Defensor del Pueblo (4 cuadros del temario + 28 fichas + R1-R15 + rápidas)
   // 13: "repaso-t13-borrador.html",   // (antigua, 14/11/2026) la de abajo pisa a esta
   13: "repaso-t13-esquema-clave-nuevo.html",   // 23/11/2026: Esquema clave T13 nuevo (LJCA: listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   // 13 (antigua): "repaso-t13-borrador.html",   // 14/11/2026: Esquema clave T13 LJCA (5 cuadros del temario + 16 fichas + R1-R19 + rápidas)
