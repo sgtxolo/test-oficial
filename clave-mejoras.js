@@ -570,6 +570,7 @@
   Promise.all([cargar(base + 'clave-tests/t' + NT + '-amar.js').catch(function () {}), cargar(base + 'clave-tests/t' + NT + '-sec.js').catch(function () {}), cargar(base + 'clave-arts/t' + NT + '.js').catch(function () {})]).then(function () {
     var A = (window.CLAVE_AMAR || {})[NT]; if (A && A.length) { amarillo(A); unir(); }
     botonesPreguntas(); citas(); try { preguntasPartes(); } catch (e) {}
+    cargar(base + 'clave-marcas.js?v=1').catch(function () {});   /* 🖍 Marcas: resaltar, subrayar y tachar como en Esquemas */
     /* barra «Escuchar» del esquema: dentro de la app se copia a la barra fija de la página (así no se queda a mitad al hacer scroll) */
     cargar(base + 'clave-espejo.js?v=1').then(function () { var au = $('#aud'); if (au && window.ClaveEspejo) ClaveEspejo.registrar('aud', function () { return $('#aud'); }, /#(aud|bp|bs|bn|vel|est)\b/); }).catch(function () {});
     var q = decodeURIComponent((location.hash.match(/[#&]q=([^&]+)/) || [])[1] || ''), S = (window.CLAVE_SEC || {})[NT];
