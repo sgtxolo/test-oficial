@@ -26,9 +26,10 @@ const STARTS = {
   12: [null],   // Ley 50/1997 del Gobierno: una sola norma
   11: [null, /^TÍTULO PRELIMINAR — Disposiciones generales$/, /^TÍTULO PRELIMINAR — Disposiciones generales, principios/, /^TÍTULO I — Transparencia/, /^CAPÍTULO I — Objeto y ámbito/],   // LO 3/2018 | Ley 39/2015 | Ley 40/2015 | Ley 19/2013 | RD 179/2005
   4: [null, /^4\.2 /, /^4\.3 /, /^4\.4 /, /^4\.5 /, /^4\.6 /, /^AMPLIACIONES/],
+  27: [null, /RESOLUCIÓN 690/, /RECOMENDACIÓN REC/, /REAL DECRETO 176/, /ORDEN GENERAL NÚMERO 10/],   // ONU | Res. 690/1979 | Código Europeo de Ética | RD 176/2022 + Código de Conducta | OG 10/2024
 };
 /* grupo de cada <h2> numerado "N.M" (por defecto M-1); excepciones por tema */
-const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1], 10: [0, 0, 0, 0, 0, 0, 0], 12: [0, 0, 0, 0, 0, 0, 0] };
+const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1], 10: [0, 0, 0, 0, 0, 0, 0], 12: [0, 0, 0, 0, 0, 0, 0], 27: [0, 1, 2, 3, 4] };
 
 /* sufijos de artículo; la clave se guarda sin acento y en minúsculas: «35 quáter» -> «35quater».
    T1-T5 siguen con la lista corta (así sus datos ya generados salen idénticos); desde el T6 se reconocen también quáter, quinquies, sexies, octies… */
@@ -77,6 +78,7 @@ for (const N of process.argv.slice(2).map(Number).filter(Boolean)) {
     let keys = [];
     const pr = txt.match(/^Protocolo[^—]*?art\.\s*(\d+)/i);
     if (pr) keys = [pr[1]]; else { const a = txt.match(/^Art[íi]culos?\s+([^—]*?)\s+—/); if (a) keys = expand(a[1]); else if (N === 8 || N === 10 || N === 12) { const b = txt.match(/^Art[íi]culos?\s+(\d+(?:\s*(?:bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies))?)(?![\wáéíóú])/i); if (b) keys = expand(b[1]); } }   // T8: las cabeceras del Exprés son «Artículo 22 bis EXOF ✱ R6» (sin raya)
+    if (N === 27) { keys = []; const b27 = txt.match(/^Art[íi]culo\s+(\d+)\s*·/); if (b27 && !/Real Decreto 176\/2022/.test(txt)) keys = [b27[1]]; }   // T27: «Artículo N · Código de Conducta / OG 10/2024»; las fichas del RD 176/2022 no se despliegan (sus números chocan con los del Código)
     const fi = FICHAS.push([head, fb]) - 1; keys.forEach(k => { (grupos[g].a[k] = grupos[g].a[k] || []).push(fi); });
   });
   /* h2 -> grupo */
