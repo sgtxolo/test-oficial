@@ -25,6 +25,7 @@
   var css = [
     /* amarillo y subrayado más limpio */
     'b.y{background:rgba(250,204,21,.50);color:#111;font-weight:600}',
+    'span.of{color:#1a3fd1 !important;font-weight:800}',
     'b.n,b.o,b.v,b.p,b.y,.tm,.vb{-webkit-box-decoration-break:clone;box-decoration-break:clone;border-radius:.28em;padding:0 .14em}',
     'body,b,mark,.am,.tm,.vb{-webkit-print-color-adjust:exact;print-color-adjust:exact}',
     /* barra superior */
@@ -146,6 +147,27 @@
       if (!rangos.length) return;
       var f = document.createDocumentFragment(), ult = 0;
       rangos.forEach(function (r) { f.appendChild(document.createTextNode(s.slice(ult, r[0]))); var b = document.createElement('b'); b.className = 'y'; b.textContent = s.slice(r[0], r[1]); f.appendChild(b); ult = r[1]; });
+      f.appendChild(document.createTextNode(s.slice(ult))); nodo.parentNode.replaceChild(f, nodo);
+    });
+  }
+
+  /* LETRA AZUL = respuesta de pregunta OFICIAL (datos: clave-tests/tN-of.js, tríos de palabras). Se pinta también dentro de las marcas de color y manda sobre el rojo. */
+  function azul(lista) {
+    var set = {}; lista.forEach(function (k) { set[k] = 1; });
+    var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, { acceptNode: function (n) {
+      var p = n.parentNode; if (!p || !n.data.trim()) return NodeFilter.FILTER_REJECT;
+      if (p.closest('script,style,button,h1,h2,h3,.art,.ex,.as,.leyenda,.cl-tools,.cl-qb,.cl-artbox,#rqbox,#trampas,#aud,#cl-nar,.cq-quiz,.sub,th,span.of')) return NodeFilter.FILTER_REJECT;
+      return enMain(p) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    } });
+    var nodos = [], n; while ((n = w.nextNode())) nodos.push(n);
+    nodos.forEach(function (nodo) {
+      var s = nodo.data, re = /[A-Za-zÀ-ÿ0-9]+/g, t = [], m;
+      while ((m = re.exec(s))) t.push({ a: m.index, b: m.index + m[0].length, k: normW(m[0]) });
+      var rangos = [];
+      for (var i = 0; i + 2 < t.length; i++) if (set[t[i].k + ' ' + t[i + 1].k + ' ' + t[i + 2].k]) { var r = rangos[rangos.length - 1]; if (r && t[i].a <= r[1] + 3) r[1] = t[i + 2].b; else rangos.push([t[i].a, t[i + 2].b]); }
+      if (!rangos.length) return;
+      var f = document.createDocumentFragment(), ult = 0;
+      rangos.forEach(function (r) { f.appendChild(document.createTextNode(s.slice(ult, r[0]))); var b = document.createElement('span'); b.className = 'of'; b.textContent = s.slice(r[0], r[1]); f.appendChild(b); ult = r[1]; });
       f.appendChild(document.createTextNode(s.slice(ult))); nodo.parentNode.replaceChild(f, nodo);
     });
   }
@@ -567,8 +589,9 @@
 
   /* ---------- arranque ---------- */
   unir();
-  Promise.all([cargar(base + 'clave-tests/t' + NT + '-amar.js').catch(function () {}), cargar(base + 'clave-tests/t' + NT + '-sec.js').catch(function () {}), cargar(base + 'clave-arts/t' + NT + '.js').catch(function () {})]).then(function () {
+  Promise.all([cargar(base + 'clave-tests/t' + NT + '-of.js').catch(function () {}), cargar(base + 'clave-tests/t' + NT + '-amar.js').catch(function () {}),cargar(base + 'clave-tests/t' + NT + '-sec.js').catch(function () {}), cargar(base + 'clave-arts/t' + NT + '.js').catch(function () {})]).then(function () {
     var A = (window.CLAVE_AMAR || {})[NT]; if (A && A.length) { amarillo(A); unir(); }
+    var OF = (window.CLAVE_OF || {})[NT]; if (OF && OF.length) { try { azul(OF); if (ley && !/letra azul/.test(ley.textContent)) ley.insertAdjacentHTML('beforeend', ' · <span class="of">letra azul</span> = respuesta de pregunta OFICIAL (el rojo, lo que más cae a criterio e IA)'); } catch (e) {} }
     botonesPreguntas(); citas(); try { preguntasPartes(); } catch (e) {}
     cargar(base + 'clave-marcas.js?v=1').catch(function () {});   /* 🖍 Marcas: resaltar, subrayar y tachar como en Esquemas */
     /* barra «Escuchar» del esquema: dentro de la app se copia a la barra fija de la página (así no se queda a mitad al hacer scroll) */
