@@ -95,7 +95,7 @@
     '@media print{.cl-qa-b,.cl-qabox,.cl-tools,.cl-qb,.cl-artbox,#cl-nar,#aud,#btnQ,#rqbox,#btnT,#trampas,.cq-quiz,.cq-ini,.cq-bar,.cl-fuera{display:none!important}.cl-ref{color:inherit;border:0}body{padding:0!important}}'
   ].join('\n');
   var st = document.createElement('style'); st.id = 'cl-mejoras-css'; document.head.appendChild(st);
-  function aplicaCss() { var w = window; try { if (window.parent !== window) w = window.parent; } catch (e) {} var vert = w.innerHeight >= w.innerWidth; st.textContent = 'html{-webkit-text-size-adjust:100%;text-size-adjust:100%}' + css.replace(' and (orientation:portrait)', vert ? '' : ' and (min-width:99999px)'); }
+  function aplicaCss() { var vert = window.parent !== window ? screen.height >= screen.width : innerHeight >= innerWidth; try { if (window.parent !== window) vert = window.parent.innerHeight >= window.parent.innerWidth; } catch (e) {} /* en file:// el navegador no deja leer la ventana padre: se usa la propia */ st.textContent = 'html{-webkit-text-size-adjust:100%;text-size-adjust:100%}' + css.replace(' and (orientation:portrait)', vert ? '' : ' and (min-width:99999px)'); }
   aplicaCss(); window.addEventListener('resize', aplicaCss); try { if (window.parent !== window) window.parent.addEventListener('resize', aplicaCss); } catch (e) {}
 
   /* ---------- 1) barra con imprimir y narrado ---------- */
