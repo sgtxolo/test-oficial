@@ -57,7 +57,7 @@ Pedidas por mí al ver el T7: «hay muchos huecos en blanco, pon más palabras c
 8. **Fallo ya corregido (no lo reintroduzcas)**: dentro del iframe NO se puede leer `window.parent.innerHeight` en `file://` (SecurityError que paraba todo `clave-mejoras.js`): usar siempre `try/catch`.
 
 ### Estado de las mejoras de calidad (23/11/2026)
-Hecho completo: **T7**. Estilo de etiquetas en negro aplicado por script a todos los temas. Pendiente por tema (cuadro COMPARATIVAS y cubrir oficiales no recogidas): T1, T2, T3, T4, T9, T10, T11, T12, T27 (sin cuadro); T5, T6, T8 tienen cuadro pero no se han revisado contra las oficiales no recogidas.
+Hecho: **T7** (a mano, modelo), **T1, T2, T3** (bloques de datos escritos a mano desde las oficiales + cuadro COMPARATIVAS), **T4 y T5** (bloques «más preguntas oficiales» generados con respuesta literal, las «señale la incorrecta» marcadas como FALSAS; T4 con cuadro COMPARATIVAS nuevo y T5 con cuadro de falsas típicas). Estilo de etiquetas en negro en los 13. Pendiente: T6, T8 (tienen cuadro, falta cubrir oficiales), T9, T10, T11, T12, T27 (falta cuadro y oficiales). Ojo: los bloques generados alargan mucho la página (T4 25 págs, T5 19, T1 18, T2 17, T3 15).
 
 ## 🧩 MEJORAS COMUNES (23/11/2026; hechas en T1-T4) — OBLIGATORIAS en todo tema nuevo (T5, T6, T7, T8…)
 Todo esto lo aporta `clave-mejoras.js` (un solo script común) + datos por tema. Un agente nuevo debe poder repetir el resultado sin tocar el código común, salvo la línea `PARTES`, las constantes `STARTS`/`H2G` del generador y la lista `[1,2,3,4]` del botón ⭐ del test.
