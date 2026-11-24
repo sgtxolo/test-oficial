@@ -265,6 +265,7 @@ function banner(c){
  const behind=tasks.filter(t=>t.d<todayISO&&!done[t.key]).length;
  const sk=Object.keys(skip).filter(d=>d>=todayISO).length;
  const ds=Object.keys(c.assign).sort(),last=ds[ds.length-1];
+ const ahead=tasks.filter(t=>done[t.key]&&!doneOn[t.key]&&t.d>todayISO);
  const pre=behind?("Llevas "+behind+" día"+(behind>1?"s":"")+" de estudio sin hacer. "):"";
  let msg="";
  if(c.dropped.length){
@@ -273,7 +274,9 @@ function banner(c){
  }else if(behind||sk){
   msg=pre+"Plan reajustado: todo se ha desplazado"+(last?" y la última tarea de vueltas termina el "+dshort(last)+" (antes el "+dshort(tasks[tasks.length-1].d)+")":"")+".";
  }
+ if(ahead.length){const ad="Vas adelantado: "+ahead.length+" tarea"+(ahead.length>1?"s":"")+" hecha"+(ahead.length>1?"s":"")+" de más, el plan se ha acortado"+(last?" y la última tarea de vueltas termina el "+dshort(last):"")+".";msg=msg?msg+" "+ad:ad}
  b.hidden=!msg;b.textContent=msg;
+ if(ahead.length){const u=document.createElement("button");u.className="skipbtn";u.textContent="Deshacer último adelanto";u.onclick=()=>{const t=ahead[0];delete done[t.key];mk("done",t.key);save();render()};b.appendChild(document.createTextNode(" "));b.appendChild(u)}
 }
 /* Tic por bloque: bk["clave|i"]=true/false; si no hay dato, el bloque cuenta como hecho cuando el día entero está hecho */
 const bOk=(key,i)=>bk[key+"|"+i]!==undefined?!!bk[key+"|"+i]:!!done[key];
@@ -328,6 +331,7 @@ function render(){
   }
   if(v.moved){const mv=document.createElement("div");mv.className="mv";mv.textContent="Movido desde el "+dshort(v.from);b.appendChild(mv)}
   if(v.d===todayISO&&v.pr&&!v.skipped){const bt=document.createElement("button");bt.className="skipbtn";bt.textContent="Hoy no puedo estudiar";bt.onclick=()=>{skip[todayISO]=true;mk("skip",todayISO);save();render()};b.appendChild(bt)}
+  if(v.d===todayISO&&v.pr&&!v.skipped){const nx=out.find(x=>x.d>todayISO&&x.pr&&!x.skipped&&x.key&&!x.slack&&x.e.core&&!done[x.key]);if(nx){const ab=document.createElement("button");ab.className="skipbtn";ab.textContent="Hoy he hecho más: adelantar «"+nx.e.t.replace(/^[^:]*: /,"")+"»";ab.onclick=()=>{done[nx.key]=true;mk("done",nx.key);save();render()};b.appendChild(ab)}}
   if(v.skipped){const bt=document.createElement("button");bt.className="skipbtn";bt.textContent="Deshacer";bt.onclick=()=>{delete skip[v.d];mk("skip",v.d);save();render()};b.appendChild(bt)}
   r.append(cb,dt,b);grp.appendChild(r);
  });
