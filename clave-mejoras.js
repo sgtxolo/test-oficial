@@ -329,7 +329,7 @@
   }
   var propio = false; /* true = la página que me incrusta no es la app (p. ej. la muestra de narrado): el scroll lo hago yo */
   window.addEventListener('message', function (e) { /* {claveIrA:{h2:0, arts:[2], titulo:'texto de un título'}} → resalta y lleva a ese artículo (o título) */
-    var d = e.data; if (!d || !d.claveIrA) return; propio = true;
+    var d = e.data; if (!d || !d.claveIrA) return; propio = true; try { var au0 = document.getElementById('aud'); if (au0) au0.style.display = 'none'; } catch (er0) {} /* en la muestra de narrado, la barra de lectura literal del esquema sobra */
     try {
       var a = d.claveIrA, el = null; h2i = a.h2 || 0; refsCache = null; libre = true;
       if (a.arts && a.arts.length) { var an = buscaAncla(a.arts.map(String), false); if (an) el = an.closest('li,tr,h3,h2,p,div') || an; }
