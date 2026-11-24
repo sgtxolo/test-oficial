@@ -1050,16 +1050,37 @@ function vozHablar(texto){
   /* trozos muy largos se parten por comas para que ningún motor los corte */
   var fin2 = []; trozos.forEach(function(t){ if(t.length <= 220) fin2.push(t); else (t.match(/[^,;]+[,;]?/g) || [t]).forEach(function(x){ x = x.trim(); if(x) fin2.push(x); }); });
   trozos = fin2; if(!trozos.length) return;
+  /* Tras cerrar el temario subrayado / esquema (que se abre en un marco con su propia voz) el motor de voz se queda tocado: dice el PRIMER trozo («Pregunta 2.») y ya no
+     reproduce los siguientes aunque estén en cola. Por eso, en ese estado, la pregunta entera se dice en UNA sola locución (un solo speak). */
+  if(window.__vozPostOverlay) trozos = [trozos.join(' ')];
   setTimeout(function(){
     if(my!==vozTokenHabla) return;
     vozHablando = true; vozBotonEstado();
-    var vz = mejorVozEspanol(), arrancado = false, quedan = trozos.length;
+    var vz = mejorVozEspanol(), arrancado = false, quedan = trozos.length, empezados = 0, terminados = 0;
     try{ window.speechSynthesis.resume(); }catch(e){}
-    trozos.forEach(function(t){
+    trozos.forEach(function(t, k){
       var u = new SpeechSynthesisUtterance(t);
       if(vz) u.voice = vz; u.lang = (vz && /^es[-_]ES/i.test(vz.lang)) ? vz.lang : 'es-ES'; u.rate = 1; u.pitch = 1;
-      u.onstart = function(){ arrancado = true; };
-      var listo = false, acaba = function(){ if(listo) return; listo = true; quedan--; if(quedan <= 0 && my===vozTokenHabla){ vozHablando = false; vozBotonEstado(); } };
+      u.onstart = function(){ arrancado = true; empezados++; };
+      var listo = false, acaba = function(){
+        if(listo) return; listo = true; quedan--; terminados++;
+        if(quedan <= 0 && my===vozTokenHabla){ vozHablando = false; vozBotonEstado(); return; }
+        /* si acaba un trozo y el siguiente no arranca en 2,5 s, el motor está tocado: se corta y lo que falta se dice de una sola vez */
+        if(my===vozTokenHabla && !window.__vozPostOverlay && k === 0 && trozos.length > 1){
+          setTimeout(function(){
+            if(my!==vozTokenHabla || empezados > 1 || quedan <= 0) return;
+            window.__vozPostOverlay = true;
+            try{ window.speechSynthesis.cancel(); }catch(e){}
+            var resto = trozos.slice(1).join(' ');
+            setTimeout(function(){
+              if(my!==vozTokenHabla) return;
+              var u2 = new SpeechSynthesisUtterance(resto); if(vz) u2.voice = vz; u2.lang = u.lang; u2.rate = 1; u2.pitch = 1;
+              u2.onend = u2.onerror = function(){ if(my===vozTokenHabla){ vozHablando = false; vozBotonEstado(); } };
+              try{ window.speechSynthesis.resume(); window.speechSynthesis.speak(u2); }catch(e){}
+            }, 150);
+          }, 2500);
+        }
+      };
       u.onend = acaba; u.onerror = acaba;
       try{ window.speechSynthesis.speak(u); }catch(e){}
     });
@@ -1653,9 +1674,10 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
   window.respHash = function(){ try { var ev = window.event, t = ev && ev.target && ev.target.closest ? ev.target : null, raiz = (t && t.closest('.res-item')) || document, b = raiz.querySelector('.explic-box .btn-voz'), x = b ? trozosExplicacion(b).join('. ') : ''; return x ? '&r=' + encodeURIComponent(x.slice(0, 1500)) : ''; } catch(e){ return ''; } };
   /* al cerrar Esquema / temario subrayado la voz del marco (que lee la respuesta) puede dejar el sintetizador colgado: se corta desde el marco, se quita y se deja limpio el del test, que sigue leyendo */
   window.cerrarOverlayVoz = function(ov){
-    try { const f = ov.querySelector('iframe'); if (f && f.contentWindow) { try { f.contentWindow.VozResp && f.contentWindow.VozResp.parar(); } catch(e){} f.contentWindow.speechSynthesis.cancel(); } } catch(e){}
-    ov.remove();
-    setTimeout(function(){ try { vozReiniciarAlVolver(); } catch(e){} }, 350);
+    window.__vozPostOverlay = true;   // el motor de voz queda tocado al cerrar un marco con voz: la lectura de preguntas usa una sola locución (ver vozHablar)
+    try { const f = ov.querySelector('iframe'); if (f && f.contentWindow) { try { f.contentWindow.VozResp && f.contentWindow.VozResp.parar(); } catch(e){} f.contentWindow.speechSynthesis.cancel(); try { f.src = 'about:blank'; } catch(e){} } } catch(e){}
+    setTimeout(function(){ try { ov.remove(); } catch(e){} try { window.speechSynthesis.cancel(); window.speechSynthesis.resume(); } catch(e){} }, 250);
+    setTimeout(function(){ try { vozReiniciarAlVolver(); } catch(e){} }, 600);
   };
   window.verEnEsquema = function(id){
     const ov = document.createElement('div'); ov.className = 'esq-ov';
