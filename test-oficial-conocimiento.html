@@ -1059,7 +1059,7 @@ function vozHablar(texto){
       var vz = mejorVozEspanol(); if (vz) u.voice = vz; u.lang = (vz && /^es[-_]ES/i.test(vz.lang)) ? vz.lang : 'es-ES'; u.rate = 1; u.pitch = 1;
       var fin = function(){ if(hecho) return; hecho = true; clearTimeout(dog); if(my!==vozTokenHabla) return; setTimeout(sig, 30); };
       u.onend = fin; u.onerror = fin;
-      dog = setTimeout(fin, 2500 + t.length * 110);
+      dog = setTimeout(fin, 12000 + t.length * 150);   /* margen amplio: las voces «Natural/Online» tardan en arrancar y cortarlas era lo que dejaba solo «Pregunta 2» */
       /* si el navegador no empieza a hablar en 1,5 s (sintetizador colgado tras volver de Esquemas), se reinicia y se repite el trozo una vez */
       var arrancó = false, repetido = false, reiniciando = false;
       u.onstart = function(){ arrancó = true; };
@@ -1071,7 +1071,7 @@ function vozHablar(texto){
         repetido = true; reiniciando = true;
         try{ window.speechSynthesis.cancel(); window.speechSynthesis.resume(); }catch(e){}
         setTimeout(function(){ reiniciando = false; if(hecho || my!==vozTokenHabla) return; try{ window.speechSynthesis.speak(u); }catch(e){} }, 200);
-      }, 1500);
+      }, 7000);   /* antes 1,5 s: cancelaba voces que aún estaban arrancando y solo se oía «Pregunta N» */
       try{ window.speechSynthesis.resume(); }catch(e){}
       window.speechSynthesis.speak(u);
     };
@@ -1101,7 +1101,7 @@ function vozNuevoContexto(){
     return true;
   }catch(e){ return false; }
 }
-window.addEventListener('pageshow', function(ev){ if(ev && ev.persisted) vozNuevoContexto(); vozReiniciarAlVolver(); });
+window.addEventListener('pageshow', function(ev){ vozReiniciarAlVolver(); });   /* el sintetizador nuevo (vozNuevoContexto) solo se usa si la voz no arranca en 7 s */
 document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='visible' && modoVoz){ try{ window.speechSynthesis.cancel(); window.speechSynthesis.resume(); }catch(e){} } });
 function vozLeerPreguntaActual(){
   if(!modoVoz || !testActivo || testActivo.pausado) return;
