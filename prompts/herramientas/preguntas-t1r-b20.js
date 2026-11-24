@@ -1,0 +1,21 @@
+// Tema 1 · bloque 20 · LO 18/2003 (arts. 21-23 y D.A. 3.ª), parecidas a las de ✱ → banco OFICIAL
+// Uso: node prompts/herramientas/preguntas-t1r-b20.js --json privado/tmp/b20.json  y luego  node prompts/herramientas/anade-oficiales-ast.js 1 privado/tmp/b20.json
+const k = "lo";
+const Q = [
+{k, a: "art. 21.1", r: "De las personas sujetas a la jurisdicción de la Corte", e: "Las personas citadas como peritos o testigos para comparecer ante los tribunales españoles en cumplimiento de una comisión rogatoria expedida por la Corte tendrán las mismas obligaciones y responsabilidades que si hubieren sido citadas en:",
+ o: ["una causa que se siguiere en España.","un proceso ante la propia Corte.","un procedimiento de extradición.","una causa internacional ante la Audiencia Nacional."],
+ t: "tendrán las mismas obligaciones y responsabilidades que si hubieren sido citadas en una causa que se siguiere en España", p: "Tienen las mismas obligaciones y responsabilidades que en una causa española."},
+{k, a: "art. 22.1", r: "De la ejecución de las penas en España", e: "El Ministerio de Justicia, previas las consultas oportunas, comunicará a la Corte las condiciones en las que España estuviese dispuesta a aceptar el traslado de un condenado a pena privativa de libertad o:",
+ o: ["las razones que impidiesen la aceptación de dicho traslado.","el plazo máximo de cumplimiento de la pena en España.","la lista de centros penitenciarios disponibles para el cumplimiento.","el régimen de beneficios penitenciarios aplicable al condenado."],
+ t: "las condiciones en las que España estuviese dispuesta a aceptar el traslado de un condenado a pena privativa de libertad o las razones que impidiesen la aceptación de dicho traslado", p: "Se comunican las condiciones del traslado o las razones que lo impiden.", d: 'dificil'},
+{k, a: "art. 24", r: "De la participación como amicus curiae", e: "Si España recibiere una invitación de la Corte para participar en un proceso en calidad de «amicus curiae», el Ministerio de Justicia consultará con el Ministerio de Asuntos Exteriores para determinar:",
+ o: ["la conveniencia u oportunidad de hacerlo y, en su caso, fijar los términos de dicha participación.","la competencia de la Audiencia Nacional para intervenir en el proceso.","el régimen de representación procesal del Estado ante la Corte.","la posible petición de inhibición en favor de la Corte."],
+ t: "para determinar la conveniencia u oportunidad de hacerlo y, en su caso, fijar los términos de dicha participación", p: "Se consulta a Asuntos Exteriores sobre la conveniencia u oportunidad de participar."},
+{k, a: "disposición adicional tercera", r: "Referencias a la jurisdicción militar", e: "Cuando la cooperación sea de la competencia de la jurisdicción militar, las referencias de la ley al Juzgado Central de Instrucción y a la Sala de lo Penal de la Audiencia Nacional deben entenderse hechas, respectivamente:",
+ o: ["al Juzgado Togado Militar Central Decano y al Tribunal Militar Central.","al Tribunal Militar Central y al Juzgado Togado Militar Central Decano.","al Juzgado Togado Militar Territorial y al Tribunal Militar Territorial.","al Consejo Supremo de Justicia Militar y a la Sala de lo Militar del Tribunal Supremo."],
+ t: "al Juzgado Togado Militar Central Decano y al Tribunal Militar Central, respectivamente", p: "Juzgado Togado Militar Central Decano y Tribunal Militar Central, respectivamente.", d: 'dificil'},
+{k, a: "disposición adicional tercera", r: "Referencias a la jurisdicción militar", e: "En los casos en que la cooperación sea de la competencia de la jurisdicción militar, las referencias de la ley al Ministerio Fiscal y al juzgado de vigilancia penitenciaria deben entenderse hechas:",
+ o: ["al Fiscal Jurídico Militar y al Juez Togado Militar de Vigilancia Penitenciaria.","al Fiscal Togado y al Tribunal Militar Central.","al Auditor General y al Juzgado Togado Militar Territorial.","al Fiscal Jurídico Militar y al Tribunal Militar Territorial."],
+ t: "al Fiscal Jurídico Militar y al Juez Togado Militar de Vigilancia Penitenciaria", p: "El Ministerio Fiscal pasa a ser el Fiscal Jurídico Militar y el juzgado de vigilancia, el Juez Togado Militar de Vigilancia Penitenciaria.", d: 'dificil'},
+];
+require('./preguntas-t1r-lib.js').run({ bloque: 20, Q });
