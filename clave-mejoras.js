@@ -354,17 +354,17 @@
   function lineas() {
     if (!LIN) LIN = $$('li,tr,h3').filter(function (e) {
       return enMain(e) && !e.closest('.cl-artbox,.cl-qabox,#rqbox,#trampas,.cl-tools,.cq-quiz') && !(e.tagName === 'TR' && e.querySelector('th')) && !(e.tagName === 'LI' && e.querySelector('li'));
-    }).map(function (e) { var p = palabrasDe(e.textContent); p.e = e; p.sec = secDe(e); return p; });
+    }).map(function (e) { var p = palabrasDe(e.textContent); p.e = e; p.sec = secDe(e); var ht = h3De(e); p.q = !!(ht && /preguntas oficiales|Oficiales de repaso|más preguntas/i.test(ht.textContent)); return p; });
     return LIN;
   }
   /* línea del esquema que más se parece al párrafo que se narra (coincidencia de palabras): así el amarillo sigue SIEMPRE por dónde va leyendo, lleve o no número de artículo */
-  function mejorLinea(texto, todo) {
+  function mejorLinea(texto, todo, enPreg) {
     var L = lineas(), tk = palabrasDe(texto); if (!tk.n || !L.length) return null;
     var ini = 0;
     if (!todo && ultima) { ini = L.length; for (var i = 0; i < L.length; i++) if (L[i].e === ultima || ultima.contains(L[i].e) || despues(L[i].e, ultima)) { ini = i; break; } }
     var fin = Math.min(L.length, todo ? L.length : ini + 70), best = null, bs = 0;
     for (var j = ini; j < fin; j++) {
-      var l = L[j]; if (!l.n || (h2i >= 0 && l.sec !== h2i && !todo)) continue; var c = 0; for (var w in l.s) if (tk.s[w]) c++;
+      var l = L[j]; if (!l.n || (h2i >= 0 && l.sec !== h2i && !todo) || l.q !== !!enPreg) continue; var c = 0; for (var w in l.s) if (tk.s[w]) c++;
       if (c < 3) continue;
       var cont = c / Math.min(l.n, tk.n), dice = 2 * c / (l.n + tk.n), sc = cont * 0.6 + dice * 0.4 - (todo ? 0 : (j - ini) * 0.0012);
       if (cont >= 0.4 && sc > bs) { bs = sc; best = l.e; }
@@ -384,7 +384,7 @@
       if (objetivo && (libre || !ultima || despues(objetivo, ultima))) marca(objetivo);
     }
     var adel = !libre; libre = false;
-    if (it !== itPrev) { itPrev = it; if (!it.tit && it.s > 0 && !/^(Pregunta de examen|Esto ha caído|La respuesta correcta)/.test(it.t)) { var ml = mejorLinea(it.t, !adel); if (ml) { autoKey = ''; marca(ml); return; } } }
+    if (it !== itPrev) { itPrev = it; if (!it.tit && it.s > 0 && !/^(Pregunta de examen|Esto ha caído|La respuesta correcta)/.test(it.t)) { var ml = mejorLinea(it.t, !adel, /más preguntas|preguntas oficiales|que han caído/i.test(N.secciones[it.s].t)); if (ml) { autoKey = ''; marca(ml); return; } } }
     var nums = numeros(texto); if (!nums.length) return;
     var an = buscaAncla(nums, adel); if (!an) return;
     var key = nums.join(',') + '@' + secDe(an) + ':' + an.textContent; if (key === autoKey) return;
