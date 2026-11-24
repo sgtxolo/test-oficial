@@ -1,0 +1,2 @@
+/* generado por prompts/herramientas/clave-mejoras-datos.js; no editar a mano */
+(window.CLAVE_ART=window.CLAVE_ART||{})[16]={"h2g":[0,1,2,-1],"g":[{"t":"TÍTULO PRELIMINAR. OBJETO Y ÁMBITO DE LA LEY","a":{"1":[0],"3":[1],"4":[2],"5":[3],"7":[4],"8":[5],"9":[6],"13":[7],"14":[8],"15":[9],"16":[10],"18":[11],"19":[12],"21":[13],"22":[14],"51":[15],"54":[16],"56":[17],"58":[18],"59":[19],"60":[20],"61":[21],"62":[22],"63":[23]}},{"t":"Real Decreto 247/2024","a":{}},{"t":"Protocolo de actuación (Anexo)","a":{}}]};
