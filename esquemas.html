@@ -4845,7 +4845,7 @@ body.embed #app{padding-top:4px}
   const okS=(T,s)=>s===0||!L.test(T[s-1])||!L.test(T[s]), okE=(T,e)=>e===T.length||!L.test(T[e])||!L.test(T[e-1]);
   const punt=(T,s,e)=>s>=0&&e<=T.length&&e>s&&T.slice(s,e).trim()!==''?(okS(T,s)?1:0)+(okE(T,e)?1:0):-1;
   /* recordatorio que se ponía del 19 al 22/10/2026 al final de cada artículo del Exprés (su texto contaba) */
-  const RX=/plazo|d[ií]as?|mes(?:es)?|a[ñn]os?|horas?|mayor[ií]a|unanimidad|por ciento|%|dos tercios|tres quintos|tres cuartos|mayor[ií]a absoluta|m[ií]nimo|m[aá]ximo|euros?|€|votos|miembros|en ning[uú]n caso|salvo|excepto|no podr[aá]n?|sin perjuicio|[uú]nicamente|exclusivamente/i;
+  const RX=/plazo|d[ií]as?\b|mes(?:es)?\b|a[ñn]os?\b|horas?\b|mayor[ií]a|unanimidad|por ciento|%|dos tercios|tres quintos|tres cuartos|mayor[ií]a absoluta|m[ií]nimo|m[aá]ximo|euros?|€|votos|miembros|en ning[uú]n caso|salvo|excepto|no podr[aá]n?|sin perjuicio|[uú]nicamente|exclusivamente/i;
   function recViejo(fb){
     const qs=s=>[...fb.querySelectorAll(s)];
     const bul=[]; qs('p').forEach(p=>{ const t=p.textContent.replace(/\s+/g,' ').replace(/(EXOF|EX)\s/g,' ').trim();

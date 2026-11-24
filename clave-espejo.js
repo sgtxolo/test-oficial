@@ -44,6 +44,7 @@
     try {
       var oc = el && el.classList.contains('cl-espejado'); if (oc) el.classList.remove('cl-espejado');
       var vis = !!(el && el.parentNode) && getComputedStyle(el).display !== 'none'; if (oc) el.classList.add('cl-espejado');
+      if (oc && d.mo) d.mo.takeRecords(); /* quitar y volver a poner la clase no debe provocar otro envío (bucle infinito) */
       if (!vis) { parent.postMessage({ claveEspejo: { n: n, html: '', css: '' } }, '*'); return; }
       parent.postMessage({ claveEspejo: { n: n, html: serializa(el), css: d.css || (d.css = cssDe(d.re)) } }, '*');
     } catch (e) {}

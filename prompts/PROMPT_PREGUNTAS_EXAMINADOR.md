@@ -362,3 +362,8 @@ Reglas de banco que acompañan a esta:
 - **IA: la correcta NO puede ser la opción más larga** (alarga o acorta las falsas hasta igualar longitudes).
 - Sin restos de importación («TEST n», «He analizado las imágenes…»).
 - La app ordena y limpia lo que ya existe (`normalizarExplicacion` en test-oficial-conocimiento.html) y completa artículo y literal con `esquemas-datos/citas-preguntas.js` (generado desde el esquema por `prompts/herramientas/citas-preguntas.js`, ver documentacion/CITAS-PREGUNTAS.md). Aun así, **al crear preguntas nuevas escribe ya la explicación completa en este formato**; lo que el esquema no pueda dar (T19–T27 y preguntas sin sitio en el esquema) se completa a mano contra el temario oficial. Tras cambios en un esquema o en el mapa, regenera `citas-preguntas.js`.
+
+## Reglas añadidas el 24/11/2026 (pauta del usuario)
+- **Longitud del enunciado**: estilo oficial largo SÍ, pero con tope. Objetivo 250-350 caracteres, máximo 450 (las oficiales tienen mediana 222 y p90 390). El título de la norma se pone abreviado («Reglamento (CE) n.º 767/2008, de 9 de julio de 2008, sobre el Sistema de Información de Visados»), nunca con todo el título oficial.
+- **Párrafos con asterisco ✱**: si el ✱ está al principio de un párrafo (no en un dato concreto), NO se pregunta «qué párrafo» ni «qué apartado» (nada de «el párrafo 1.c) o el 2.c)»). Se examina el párrafo y se hacen 2-3 preguntas de CONTENIDO sobre lo importante (lo subrayado: naranja, verde, el verbo lila, plazos/cifras en azul). Ejemplo hecho: Estatuto de Roma art. 53.3 (bloque preguntas-t1r-b14.js).
+- Si el ✱ marca una palabra o cifra concreta, la pregunta va sobre ese dato.

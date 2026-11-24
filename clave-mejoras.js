@@ -574,7 +574,7 @@
       }
     } catch (e) {}
     pinta(); coloca(); if (window.ResizeObserver) new ResizeObserver(coloca).observe(panel); setTimeout(coloca, 400);
-    try { window.ClaveEspejo && ClaveEspejo.registrar('nar', function () { return panel; }, /#cl-nar/, { bar: function (f) { libre = true; pos = Math.round(f * (items.length - 1)); if (jugando) hablar(); else pinta(); } }); } catch (e) {}
+    try { window.ClaveEspejo && ClaveEspejo.registrar('nar', function () { return panel; }, /#cl-nar\b/, { bar: function (f) { libre = true; pos = Math.round(f * (items.length - 1)); if (jugando) hablar(); else pinta(); } }); } catch (e) {}
   }
   $$('.cl-nbtn').forEach(function (bt) { bt.onclick = function () {
     if (!('speechSynthesis' in window)) { alert('Este navegador no tiene voz (speechSynthesis).'); return; }

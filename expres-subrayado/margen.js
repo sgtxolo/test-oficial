@@ -19,7 +19,7 @@
   body.mg-b main{max-width:calc(var(--ancho) + ${EXTRA}px)}
   body.mg-b .card svg.ov{width:calc(100% - ${EXTRA}px)}
   .mg .br{position:absolute;border:3px solid;width:9px;border-radius:2px}.mg .br.l{border-right:0}.mg .br.r{border-left:0}
-  .mg .br.of{color:#8a1c5a}.mg .br.ex{color:#c0392b}.mg .br.ast{color:#1f5fbf}.mg .br.ia{color:#aaa;border-width:2px}
+  .mg .br.of{color:#8a1c5a}.mg .br.ex{color:#c0392b}.mg .br.ast{color:#1f5fbf}.mg .br.ia{color:#5f6b7a;border-width:3px}
   .mg .bg{position:absolute;display:flex;gap:2px;align-items:center;white-space:nowrap;pointer-events:auto}
   .gk{display:inline-flex;align-items:center;justify-content:center;height:20px;min-width:22px;padding:0 5px;border-radius:11px;border:2px solid;font-size:10px;font-weight:800;background:#fff;cursor:pointer;text-decoration:none;line-height:1}
   .gk.exof{color:#8a1c5a;border-color:#8a1c5a}.gk.ex{color:#c0392b;border-color:#c0392b}.gk.ast{color:#1f5fbf;border-color:#1f5fbf;font-size:13px}.gk.ia{color:#555;border-color:#bbb;font-weight:600;background:#f4f4f4}
@@ -101,6 +101,16 @@
     if (q && !window.__mgScroll) { const r = document.querySelector('.mg .mq'); if (r) { window.__mgScroll = 1; setTimeout(() => r.scrollIntoView({block: 'center'}), 150); } }
   }
   window.margenAplica = aplica;
+  // Lila de la pregunta del test también en el visor ampliado (toque sobre el artículo): en %, así vale con cualquier zoom o recorte de márgenes
+  window.margenVisor = function (caja, file) {
+    const M = tema && MG(), q = window.QDEST; if (!q) return; if (!M) { if (tema) carga(tema); return; }
+    const d = M[file]; if (!d || !d.qr || !d.qr[q] || !d.w || !d.h) return;
+    const R = d.qr[q], tq = /-ia-/.test(q) ? 'tg' : 'tr', mg = document.createElement('div'); mg.className = 'mg'; mg.style.width = '100%'; caja.appendChild(mg);
+    const pw = v => (v / d.w * 100) + '%', ph = v => (v / d.h * 100) + '%';
+    R.forEach(r => { const z = document.createElement('div'); z.className = 'mq'; z.style.left = 'calc(' + pw(r[0]) + ' - 2px)'; z.style.top = ph(r[1]); z.style.width = 'calc(' + pw(r[2]) + ' + 4px)'; z.style.height = ph(r[3]); mg.appendChild(z); });
+    const a0 = R[0], z0 = R[R.length - 1];
+    [['l', 'calc(' + pw(a0[0]) + ' - 8px)', a0], ['r', 'calc(' + pw(z0[0] + z0[2]) + ' + 3px)', z0]].forEach(([c, x, r]) => { const e = document.createElement('div'); e.className = 'cb ' + c + ' ' + tq; e.style.left = x; e.style.top = 'calc(' + ph(r[1]) + ' - 2px)'; e.style.height = 'calc(' + ph(r[3]) + ' + 4px)'; mg.appendChild(e); });
+  };
   // ---- botón y panel
   function panel() {
     const tiene = !!MG(), op = (v, t) => '<label><input type="radio" name="mg-md" value="' + v + '"' + (cfg.md === v ? ' checked' : '') + '> ' + t + '</label>';

@@ -1000,6 +1000,7 @@ function pintaVisor() {
     const rec = !(ent || !p.imgr), box = document.createElement('div'); box.className = 'lbox'; if (zoom > 1) box.style.overflowX = 'auto';   // ampliada: se desplaza de lado
     const caja = document.createElement('div'); caja.className = 'imgw'; caja.style.width = (zoom * 100) + '%'; box.appendChild(caja);
     caja.innerHTML = '<img src="' + D[tema].dir + (rec ? p.imgr : p.img) + '">' + capaMarcas(key(tema, id) + '/' + (rec ? 'r' : 'e'), rec ? p.whr : p.wh);
+    try { window.margenVisor && window.margenVisor(caja, rec ? p.imgr : p.img); } catch (e) {}
     L.appendChild(box); const im = caja.querySelector('img'); const ajusta = () => { if (zoom === 1) recorteBlanco(im, caja); }; im.complete ? ajusta() : im.addEventListener('load', ajusta);
   } else if (modo === 'x') {
     const w = document.createElement('div'); w.className = 'lect'; if (fichaExpres(tema, p)) fichaEditable(w, tema, p, !!st.vdesp); L.appendChild(w);
