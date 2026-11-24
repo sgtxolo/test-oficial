@@ -1039,6 +1039,13 @@ function vozCancelar(){
   vozBotonEstado();
 }
 function vozPararTodo(){ vozCancelar(); }
+/* etiqueta diminuta con la versión (página y caché) para saber si el móvil ya tiene la última: «p867 · c867» (deben coincidir) */
+(function(){
+  var BUILD = '867';
+  function pon(c){ var e = document.getElementById('etq-version'); if(!e){ e = document.createElement('div'); e.id = 'etq-version'; e.style.cssText = 'position:fixed;left:6px;bottom:2px;z-index:9;font:9px/1 monospace;color:#888;opacity:.6;pointer-events:none'; document.body.appendChild(e); } e.textContent = 'p' + BUILD + ' · c' + (c || '?'); }
+  function ini(){ pon('?'); try{ caches.keys().then(function(k){ var n = k.map(function(x){ return (x.match(/(\d+)$/) || [])[1]; }).filter(Boolean).sort(function(a,b){ return b - a; })[0]; pon(n); }); }catch(e){} }
+  if(document.body) ini(); else window.addEventListener('DOMContentLoaded', ini);
+})();
 /* 24/11/2026: TODOS los trozos se encolan de golpe (el motor los dice uno tras otro). Antes cada trozo se pedía al acabar el anterior, y al volver desde Esquemas solo sonaba
    el primero («Pregunta 2.») porque el aviso de fin / los temporizadores dejaban de funcionar. Así no se depende de ellos. */
 function vozHablar(texto){
@@ -1052,7 +1059,9 @@ function vozHablar(texto){
   trozos = fin2; if(!trozos.length) return;
   /* Tras cerrar el temario subrayado / esquema (que se abre en un marco con su propia voz) el motor de voz se queda tocado: dice el PRIMER trozo («Pregunta 2.») y ya no
      reproduce los siguientes aunque estén en cola. Por eso, en ese estado, la pregunta entera se dice en UNA sola locución (un solo speak). */
-  if(window.__vozPostOverlay) trozos = [trozos.join(' ')];
+  /* iPhone/iPad (Safari): el motor solo dice el primer trozo; ahí SIEMPRE una sola locución (en iOS no hay el corte de 15 s de Chrome de escritorio) */
+  var esIOS = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if(window.__vozPostOverlay || esIOS) trozos = [trozos.join(' ')];
   setTimeout(function(){
     if(my!==vozTokenHabla) return;
     vozHablando = true; vozBotonEstado();
