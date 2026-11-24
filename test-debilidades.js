@@ -67,6 +67,9 @@
       '<button class="btn-test-rapido" style="margin:0" onclick="debRepaso()"' + (venc ? '' : ' disabled') + '>Repasar</button></div>';
     h += '<div class="hist-item"><div class="hist-mid" style="flex:1"><strong>Falladas la última vez</strong><span>' + fall + ' pregunta' + (fall === 1 ? '' : 's') + ' sin corregir todavía</span></div>' +
       '<button class="btn-test-rapido" style="margin:0" onclick="debFallos()"' + (fall ? '' : ' disabled') + '>Repasar</button></div>';
+    var dud = 0; try { dud = dudosos().length; } catch (e) {}
+    h += '<div class="hist-item"><div class="hist-mid" style="flex:1"><strong>Aciertos con duda</strong><span>' + dud + ' que aciertas pero tardas mucho en responder</span></div>' +
+      '<button class="btn-test-rapido" style="margin:0" onclick="debDudosos()"' + (dud ? '' : ' disabled') + '>Repasar</button></div>';
     h += '<div class="hist-item"><div class="hist-mid" style="flex:1"><strong>Temas enfriándose</strong><span>' + aband + ' tema' + (aband === 1 ? '' : 's') + ' llevan 5 días o más sin tocarse (lista más abajo)</span></div></div>';
     h += '<div class="hist-item"><div class="hist-mid" style="flex:1"><strong>Exprés de mis fallos</strong><span>Hoja de lectura con las preguntas que tienes falladas y su respuesta</span></div>' +
       '<button class="btn-test-rapido" style="margin:0" onclick="debExpres()"' + (fall ? '' : ' disabled') + '>Abrir</button></div>';
@@ -88,6 +91,7 @@
           '<button class="btn-test-rapido" style="margin:0 0 0 10px" onclick="debGrupo(' + i + ')">Repasar</button></div>';
       }).join('');
     }
+    h += ajustesSimHTML();
     return h;
   }
 
@@ -130,6 +134,157 @@
     o.style.cssText = 'position:fixed;inset:0;background:#fff;color:#222;overflow:auto;z-index:99999';
     o.innerHTML = h; document.body.appendChild(o);
   }
+
+  /* ---- Ajustes del simulacro (tiempo y penalización) ---- */
+  function cfgSim() {
+    var c = { minutos: 90, pen: '1/3' };
+    try { Object.assign(c, JSON.parse(localStorage.getItem('deb-sim-cfg') || '{}')); } catch (e) {}
+    return c;
+  }
+  window.SIM_MIN = function () { var m = parseInt(cfgSim().minutos, 10); return m > 0 && m <= 300 ? m : 90; };
+  window.SIM_PEN = function () { var p = cfgSim().pen; return p === '0' ? 0 : p === '1/2' ? 0.5 : p === '1/4' ? 0.25 : 1 / 3; };
+  window.SIM_PEN_TXT = function () {
+    var p = cfgSim().pen;
+    return p === '0' ? 'sin penalización' : p === '1/2' ? '2 fallos = -1 acierto' : p === '1/4' ? '4 fallos = -1 acierto' : '3 fallos = -1 acierto';
+  };
+  function textoModalSim() {
+    document.querySelectorAll('.n-box').forEach(function (b) {
+      var s = b.querySelector('span'), v = b.querySelector('.n-val');
+      if (s && v && /penalizaci/.test(s.textContent)) { v.textContent = SIM_MIN(); s.textContent = 'Minutos, con cronómetro y corrección con penalización (' + SIM_PEN_TXT() + ')'; }
+    });
+  }
+  window.debGuardarSim = function () {
+    var m = document.getElementById('deb-sim-min'), p = document.getElementById('deb-sim-pen');
+    var min = parseInt(m && m.value, 10);
+    if (!(min > 0 && min <= 300)) { alert('Pon un tiempo entre 1 y 300 minutos.'); return; }
+    try { localStorage.setItem('deb-sim-cfg', JSON.stringify({ minutos: min, pen: p ? p.value : '1/3' })); } catch (e) {}
+    textoModalSim();
+    alert('Simulacro: ' + SIM_MIN() + ' minutos, ' + SIM_PEN_TXT() + '.');
+  };
+  function ajustesSimHTML() {
+    var c = cfgSim();
+    function op(v, t) { return '<option value="' + v + '"' + (c.pen === v ? ' selected' : '') + '>' + t + '</option>'; }
+    return '<div class="perfil-section-title">Ajustes del simulacro</div>' +
+      '<div class="hist-item"><div class="hist-mid" style="flex:1"><strong>Según tu convocatoria</strong>' +
+      '<span>Tiempo <input id="deb-sim-min" type="number" min="1" max="300" value="' + SIM_MIN() + '" style="width:64px"> min · cada fallo resta ' +
+      '<select id="deb-sim-pen">' + op('1/3', '1/3 de acierto') + op('1/4', '1/4 de acierto') + op('1/2', '1/2 acierto') + op('0', 'nada') + '</select></span></div>' +
+      '<button class="btn-test-rapido" style="margin:0" onclick="debGuardarSim()">Guardar</button></div>';
+  }
+
+  /* ---- Aciertos con duda: aciertas pero tardas mucho ---- */
+  function dudosos() {
+    var medias = [], lista = [];
+    recorrer(function (t, q, st) { if (st && st.tiempoCount) medias.push(st.tiempoTotalMs / st.tiempoCount); });
+    if (medias.length < 20) return [];
+    medias.sort(function (a, b) { return a - b; });
+    var umbral = Math.max(30000, 1.5 * medias[Math.floor(medias.length / 2)]);
+    recorrer(function (t, q, st) {
+      if (st && st.ultimaCorrecta === true && st.tiempoCount) {
+        var m = st.tiempoTotalMs / st.tiempoCount;
+        if (m >= umbral) lista.push({ q: Object.assign({ temaId: t.id }, q), m: m });
+      }
+    });
+    lista.sort(function (a, b) { return b.m - a.m; });
+    return lista.map(function (x) { return x.q; });
+  }
+  window.debDudosos = function () { lanzar(dudosos()); };
+
+  /* ---- Repaso de hoy: vencidas + falladas, sin repetir ---- */
+  function poolHoy() {
+    var vistos = {}, out = [];
+    bancoFallos().concat(bancoRepaso()).forEach(function (q) { if (!vistos[q.id]) { vistos[q.id] = 1; out.push(q); } });
+    return out;
+  }
+  window.debHoy = function () { lanzar(poolHoy()); };
+
+  /* ---- Copia de seguridad: aviso cada 7 días ---- */
+  var DIAS_COPIA = 7;
+  function diasSinCopia() {
+    var t = 0;
+    try { t = parseInt(localStorage.getItem('deb-ultimo-backup') || '0', 10); } catch (e) {}
+    if (!t) { try { localStorage.setItem('deb-ultimo-backup', String(Date.now())); } catch (e) {} return 0; }
+    return Math.floor((Date.now() - t) / 864e5);
+  }
+  var exportOriginal = window.exportarProgreso;
+  if (typeof exportOriginal === 'function') {
+    window.exportarProgreso = function () {
+      var r = exportOriginal.apply(this, arguments);
+      try { localStorage.setItem('deb-ultimo-backup', String(Date.now())); } catch (e) {}
+      setTimeout(function () { try { pintarInicio(); } catch (e) {} }, 300);
+      return r;
+    };
+  }
+
+  /* ---- «Hoy toca» en la pantalla de inicio ---- */
+  function pintarInicio() {
+    var s = document.getElementById('screen-inicio'); if (!s) return;
+    var d = document.getElementById('deb-home');
+    if (!d) {
+      d = document.createElement('div'); d.id = 'deb-home'; d.style.cssText = 'margin:10px 0';
+      var sal = s.querySelector('.saludo');
+      if (sal && sal.parentNode) sal.parentNode.insertBefore(d, sal.nextSibling); else s.insertBefore(d, s.firstChild);
+    }
+    var venc = 0, fall = 0, dud = 0, pool = 0;
+    try { venc = bancoRepaso().length; fall = bancoFallos().length; dud = dudosos().length; pool = poolHoy().length; } catch (e) {}
+    var h = '<div class="hist-item" style="flex-wrap:wrap"><div class="hist-mid" style="flex:1;min-width:200px"><strong>Hoy toca</strong>' +
+      '<span>' + venc + ' de repaso · ' + fall + ' falladas · ' + dud + ' aciertos con duda</span></div>' +
+      '<button class="btn-test-rapido" style="margin:0"' + (pool ? '' : ' disabled') + ' onclick="debHoy()">Repasar ahora</button></div>';
+    var dias = diasSinCopia();
+    if (dias >= DIAS_COPIA) {
+      h += '<div class="hist-item" style="border-left:4px solid #d1554a"><div class="hist-mid" style="flex:1"><strong>Copia de seguridad</strong>' +
+        '<span>Hace ' + dias + ' días que no exportas tu progreso. Si se borra la caché, lo pierdes.</span></div>' +
+        '<button class="btn-test-rapido" style="margin:0" onclick="exportarProgreso()">Exportar</button></div>';
+    }
+    d.innerHTML = h;
+  }
+
+  /* ---- Tras un simulacro: qué temas te han hundido la nota ---- */
+  function desgloseSimulacro(det) {
+    var r = {};
+    (det || []).forEach(function (d) {
+      var x = r[d.temaId] || (r[d.temaId] = { a: 0, f: 0 });
+      if (d.esCorrecta) x.a++; else x.f++;
+    });
+    var pen = SIM_PEN(), filas = [];
+    Object.keys(PESO_TEMAS).forEach(function (k) {
+      var peso = PESO_TEMAS[k], x = r[k] || { a: 0, f: 0 };
+      var blanco = Math.max(0, peso - x.a - x.f);
+      var neto = x.a - x.f * pen;
+      filas.push({ id: parseInt(k, 10), peso: peso, a: x.a, f: x.f, b: blanco, perdidos: peso - neto });
+    });
+    filas.sort(function (p, q) { return q.perdidos - p.perdidos; });
+    return filas.filter(function (f) { return f.perdidos > 0.01; }).slice(0, 8);
+  }
+  var resultadoOriginal = window.mostrarResultado;
+  if (typeof resultadoOriginal === 'function') {
+    window.mostrarResultado = function (e, a, o, n) {
+      var r = resultadoOriginal.apply(this, arguments);
+      try {
+        var prev = document.getElementById('deb-sim-res'); if (prev) prev.remove();
+        if (n) {
+          var filas = desgloseSimulacro(e), grid = document.getElementById('res-stats');
+          if (grid && filas.length) {
+            var d = document.createElement('div'); d.id = 'deb-sim-res'; d.style.cssText = 'margin:12px 0';
+            d.innerHTML = '<div class="perfil-section-title">Temas que más puntos te han costado</div>' + filas.map(function (f) {
+              var t = TEMARIO.find(function (x) { return x.id === f.id; });
+              return '<div class="hist-item"><div class="hist-mid" style="flex:1"><strong>' + esc(corto(t ? temaNombre(t) : 'Tema ' + f.id, 60)) + '</strong>' +
+                '<span>' + f.a + ' aciertos · ' + f.f + ' fallos · ' + f.b + ' en blanco (de ' + f.peso + ')</span></div>' +
+                '<div class="hist-pct pct-bad">-' + f.perdidos.toFixed(1) + '</div></div>';
+            }).join('');
+            grid.parentNode.insertBefore(d, grid.nextSibling);
+          }
+        }
+      } catch (err) {}
+      return r;
+    };
+  }
+
+  var renderInicioOriginal = window.renderInicio;
+  if (typeof renderInicioOriginal === 'function') {
+    window.renderInicio = function () { var r = renderInicioOriginal.apply(this, arguments); try { pintarInicio(); } catch (e) {} return r; };
+  }
+  try { textoModalSim(); } catch (e) {}
+  try { pintarInicio(); } catch (e) {}
 
   window.debRepaso = function () { lanzar(bancoRepaso()); };
   window.debFallos = function () { lanzar(bancoFallos()); };
