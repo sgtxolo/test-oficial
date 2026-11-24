@@ -58,9 +58,9 @@ for (const p of piezas) {
 }
 function h3(f) {
   let t = plano(f.hdr).replace(/\s*(EXOF|EX\b|✱)/g, "").replace(/\s*R\d+\b/g, "").replace(/\s+/g, " ").trim();
-  const mA = t.match(/^Art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quáter|quater|quinquies|sexies))?)\s*[—–-]\s*(.*)$/i);
+  const mA = t.match(/^Art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quáter|quater|quinquies|sexies))?)\s*(?:[—–-]\s*(.*))?$/i);
   const mP = (f.hdr.match(/R\d+/g) || []);
-  let titulo = mA ? mA[2] : t, art = mA ? '<span class="art">art. ' + mA[1] + "</span>" : "";
+  let titulo = mA ? (mA[2] || 'Artículo ' + mA[1]) : t, art = mA ? '<span class="art">art. ' + mA[1] + "</span>" : "";
   return "<h3>" + esc(titulo) + (f.selloEXOF ? ' <span class="ex">EXOF</span>' : f.selloEX ? ' <span class="ex">EX</span>' : "") + (f.ast ? ' <span class="as">✱</span>' : "") + (mP.length ? " <em>(" + [...new Set(mP)].join(", ") + ")</em>" : "") + (art ? " " + art : "") + "</h3>";
 }
 let nFichas = 0;

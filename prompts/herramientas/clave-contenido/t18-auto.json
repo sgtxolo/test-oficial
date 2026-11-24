@@ -1,0 +1,44 @@
+{
+ "titulo": "Esquema clave T18 · Código Penal, Parte General (versión nueva)",
+ "h1": "Tema 18 · ESQUEMA CLAVE — Código Penal (LO 10/1995), Parte General: garantías, infracción penal, penas, medidas de seguridad, responsabilidad civil y extinción",
+ "v": "844",
+ "h2": [
+  {
+   "t": "18.1 · TÍTULO PRELIMINAR y TÍTULO I · Garantías penales, infracción penal y causas de exención, atenuación y agravación",
+   "desde": null
+  },
+  {
+   "t": "18.2 · TÍTULO II · Personas criminalmente responsables",
+   "desde": "^TÍTULO II ·",
+   "texto": "autores|cómplices|responsables de los delitos"
+  },
+  {
+   "t": "18.3 · TÍTULO III · Las penas: clases y efectos",
+   "desde": "^TÍTULO III ·",
+   "texto": "penas? (privativas|de multa|accesorias)|prisión|inhabilitación"
+  },
+  {
+   "t": "18.4 · TÍTULO III, cap. II · Aplicación de las penas",
+   "desde": "^CAPÍTULO II · De la aplicación de las penas",
+   "texto": "grado|reincidencia|concurso"
+  },
+  {
+   "t": "18.5 · TÍTULO IV · Medidas de seguridad",
+   "desde": "^TÍTULO IV ·",
+   "texto": "medidas? de seguridad|internamiento"
+  },
+  {
+   "t": "18.6 · TÍTULOS V y VI · Responsabilidad civil, costas y consecuencias accesorias",
+   "desde": "^TÍTULO V ·",
+   "texto": "responsabilidad civil|consecuencias accesorias|costas"
+  },
+  {
+   "t": "18.7 · TÍTULO VII · Extinción de la responsabilidad criminal y cancelación de antecedentes",
+   "desde": "^TÍTULO VII ·",
+   "texto": "prescripci|indulto|cancelaci"
+  }
+ ],
+ "min": 0.65,
+ "maxFilas": 22,
+ "maxFalsas": 14
+}
