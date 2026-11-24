@@ -8,6 +8,7 @@
 (function () {
   'use strict';
   var NT = (location.pathname.match(/repaso-t(\d+)-/) || [])[1]; if (!NT) return;
+  var VERS = (document.currentScript && (document.currentScript.src.match(/v=([0-9]+)/) || [])[1]) || '?'; /* versión del script: se ve en el panel del narrado */
   var emb = window.parent !== window, base = location.pathname.replace(/[^/]*$/, '');
   var $ = function (s, r) { return (r || document).querySelector(s); }, $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var bq = $('#btnQ');
@@ -550,7 +551,7 @@
   window.addEventListener('message', function (e) { var d = e.data; if (d && d.claveVista) { vista = d.claveVista; coloca(); } });
   function pinta() {
     if (!panel) return; var it = items[pos], tot = items.length;
-    $('.sec', panel).textContent = (it ? (N.secciones[it.s].t) : 'Fin') + ' · ' + (pos + 1) + '/' + tot + ' · v793';
+    $('.sec', panel).textContent = (it ? (N.secciones[it.s].t) : 'Fin') + ' · ' + (pos + 1) + '/' + tot + ' · v' + VERS;
     $('.tx', panel).textContent = it ? it.t : 'Has terminado el repaso narrado. ¡Ahora, test!';
     $('.bar i', panel).style.width = Math.round(pos / Math.max(1, tot - 1) * 100) + '%';
     $('.est', panel).textContent = '≈ ' + restante() + ' min restantes · velocidad ' + rate + '×';
