@@ -1039,7 +1039,38 @@ function vozCancelar(){
   vozBotonEstado();
 }
 function vozPararTodo(){ vozCancelar(); }
+/* 24/11/2026: TODOS los trozos se encolan de golpe (el motor los dice uno tras otro). Antes cada trozo se pedía al acabar el anterior, y al volver desde Esquemas solo sonaba
+   el primero («Pregunta 2.») porque el aviso de fin / los temporizadores dejaban de funcionar. Así no se depende de ellos. */
 function vozHablar(texto){
+  if(!('speechSynthesis' in window)) return;
+  vozCancelar();
+  var my = vozTokenHabla;
+  var trozos = String(texto).match(/[^.?!:;]+[.?!:;]?/g) || [texto];
+  trozos = trozos.map(function(t){ return t.trim(); }).filter(function(t){ return t.length > 1; });
+  /* trozos muy largos se parten por comas para que ningún motor los corte */
+  var fin2 = []; trozos.forEach(function(t){ if(t.length <= 220) fin2.push(t); else (t.match(/[^,;]+[,;]?/g) || [t]).forEach(function(x){ x = x.trim(); if(x) fin2.push(x); }); });
+  trozos = fin2; if(!trozos.length) return;
+  setTimeout(function(){
+    if(my!==vozTokenHabla) return;
+    vozHablando = true; vozBotonEstado();
+    var vz = mejorVozEspanol(), arrancado = false, quedan = trozos.length;
+    try{ window.speechSynthesis.resume(); }catch(e){}
+    trozos.forEach(function(t){
+      var u = new SpeechSynthesisUtterance(t);
+      if(vz) u.voice = vz; u.lang = (vz && /^es[-_]ES/i.test(vz.lang)) ? vz.lang : 'es-ES'; u.rate = 1; u.pitch = 1;
+      u.onstart = function(){ arrancado = true; };
+      var listo = false, acaba = function(){ if(listo) return; listo = true; quedan--; if(quedan <= 0 && my===vozTokenHabla){ vozHablando = false; vozBotonEstado(); } };
+      u.onend = acaba; u.onerror = acaba;
+      try{ window.speechSynthesis.speak(u); }catch(e){}
+    });
+    /* si pasados 7 s no ha empezado nada, el sintetizador de la página está muerto: se pasa a uno nuevo y se vuelve a pedir todo */
+    setTimeout(function(){
+      if(arrancado || my!==vozTokenHabla) return;
+      if(!window.__vozCtxNuevo && vozNuevoContexto()) vozHablar(texto);
+    }, 7000);
+  }, 120);
+}
+function vozHablarViejo(texto){
   if(!('speechSynthesis' in window)) return;
   vozCancelar();
   var my = vozTokenHabla;
