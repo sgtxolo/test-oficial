@@ -1,0 +1,2 @@
+/* generado por prompts/herramientas/clave-mejoras-datos.js; no editar a mano */
+(window.CLAVE_ART=window.CLAVE_ART||{})[17]={"h2g":[0,1,2,-1],"g":[{"t":"TÍTULO PRELIMINAR","a":{"4":[0],"7":[1],"9":[2],"10":[3],"14":[4],"17":[5],"18":[6],"22":[7],"23":[8],"26":[9]}},{"t":"CAPÍTULO I. DISPOSICIONES GENERALES","a":{"2":[10],"4":[11],"5":[12]}},{"t":"17.3 — INSTRUCCIÓN 1/2017, DE LA SECRETARÍA DE ESTADO DE SEGURIDAD, POR LA QUE SE ACTUALIZA EL «PROTOCOLO DE ACTUACIÓN POLICIAL CON MENORES» (excepto los apartados 3.1, 3.3 y 3.4 del punto 3 y el punto 4)","a":{}}]};

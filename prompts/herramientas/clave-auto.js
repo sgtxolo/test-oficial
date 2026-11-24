@@ -67,7 +67,8 @@ let nFichas = 0;
 const h2html = cfg.h2.map((c, k) => {
   const lis = normas[k].map(f => {
     nFichas++;
-    const l = colorea(f.cuerpo);
+    const ratio = x => { const tot = plano(x).length; let col = 0; (x.match(/<(?:b class="[a-z]"|mark)>[\s\S]*?<\/(?:b|mark)>/g) || []).forEach(y => { col += plano(y).length; }); return col / Math.max(1, tot); };
+    const l = colorea(f.cuerpo).filter(x => f.recuerda || !cfg.min || ratio(x) >= cfg.min);
     if (!l.length) return "";
     const titulo = f.recuerda ? "<h3>" + esc(f.cab.replace(/^RECUERDA del temario · /, "Recuerda del temario · ")) + "</h3>" : h3(f);
     return titulo + "\n<ul>\n" + l.map(s => "<li>" + s + "</li>").join("\n") + "\n</ul>";
@@ -138,7 +139,7 @@ for (const f of Object.values(normas).flat()) {
 }
 const vistos = new Set(); const filas = [];
 for (const fr of frases) { const k = plano(fr.s).slice(0, 80); if (vistos.has(k)) continue; vistos.add(k); filas.push('<tr><td><b class="o">' + esc(fr.h.slice(0, 90)) + "</b></td><td>" + fr.s + "</td></tr>"); }
-const falsas = oficiales.filter(esInc).slice(0, 40).map(q => {
+const falsas = oficiales.filter(esInc).slice(0, cfg.maxFalsas || 40).map(q => {
   const falsa = q.o[q.c].replace(/\s+/g, " ").trim();
   const ok = q.o.filter((o, i) => i !== q.c).map(o => o.replace(/\s+/g, " ").trim()).join(" · ");
   let p = q.p.replace(/\s+/g, " ").replace(/\s*Se[ñn]ale la \w+\.?$/i, "").replace(/_{3,}/g, "…");
@@ -146,7 +147,7 @@ const falsas = oficiales.filter(esInc).slice(0, 40).map(q => {
   return "<tr><td>" + esc(p) + '</td><td><b class="p">FALSO</b>: ' + esc(falsa) + "</td><td>" + esc(ok.length > 330 ? ok.slice(0, 327) + "…" : ok) + "</td></tr>";
 });
 cuerpo += '\n<!-- ===================== COMPARATIVAS ===================== -->\n<h2>COMPARATIVAS · lo que se confunde dentro del tema</h2>\n' +
-  '<h3>Plazos y cifras del tema (recogidos del esquema, con la norma o artículo)</h3>\n<table>\n<tr><th>Dónde</th><th>Dato</th></tr>\n' + filas.join("\n") + "\n</table>\n" +
+  '<h3>Plazos y cifras del tema (recogidos del esquema, con la norma o artículo)</h3>\n<table>\n<tr><th>Dónde</th><th>Dato</th></tr>\n' + filas.slice(0, cfg.maxFilas || 60).join("\n") + "\n</table>\n" +
   (falsas.length ? '<h3>Falsas típicas de «señale la incorrecta» (opción falsa que sale en el test → lo correcto, según las otras opciones)</h3>\n<table>\n<tr><th>Pregunta (resumida)</th><th>Opción FALSA</th><th>Las otras opciones (correctas)</th></tr>\n' + falsas.join("\n") + "\n</table>\n" : "");
 
 /* ---- trampas: las de cifras y plazos del test (preguntas oficiales con cifra en la respuesta) ---- */

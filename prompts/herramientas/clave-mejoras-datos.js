@@ -30,10 +30,12 @@ const STARTS = {
   15: [null, /^15\.2\. /, /^VIOLENCIA DE G/, /SITUACIÓN DE DESPROTECCIÓN/, /PROHIBICIONES DE APROXIM/, /^15\.6\. /, /^15\.7\. /],   // LO 1/2004 | Resolución 2005 | Instr. 1/2025 | Instr. 5/2021 | Protocolo telemático | NTF-2/2025 | Instr. 12/2018
   4: [null, /^4\.2 /, /^4\.3 /, /^4\.4 /, /^4\.5 /, /^4\.6 /, /^AMPLIACIONES/],
   16: [null, /^Real Decreto 247/, /^Protocolo de actuaci/],   // LO 3/2007 | RD 247/2024 | Protocolo
+  17: [null, /^CAPÍTULO I. DISPOSICIONES GENERALES/, /^17.3/],   // LO 5/2000 | RD 1774/2004 | Instrucción 1/2017
+  18: [null],   // Código Penal, Parte General
   27: [null, /RESOLUCIÓN 690/, /RECOMENDACIÓN REC/, /REAL DECRETO 176/, /ORDEN GENERAL NÚMERO 10/],   // ONU | Res. 690/1979 | Código Europeo de Ética | RD 176/2022 + Código de Conducta | OG 10/2024
 };
 /* grupo de cada <h2> numerado "N.M" (por defecto M-1); excepciones por tema */
-const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1], 10: [0, 0, 0, 0, 0, 0, 0], 12: [0, 0, 0, 0, 0, 0, 0], 13: [0, 0, 0, 0, 0, 0, 0], 14: [0, 0, 0, 0, 1, 1, 1], 15: [0, 1, 2, 3, 4, 5, 6, 6], 16: [0, 1, 2, 2], 27: [0, 1, 2, 3, 4] };
+const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1], 10: [0, 0, 0, 0, 0, 0, 0], 12: [0, 0, 0, 0, 0, 0, 0], 13: [0, 0, 0, 0, 0, 0, 0], 14: [0, 0, 0, 0, 1, 1, 1], 15: [0, 1, 2, 3, 4, 5, 6, 6], 16: [0, 1, 2, 2], 17: [0, 1, 2, 2], 18: [0, 0, 0, 0, 0, 0, 0, 0], 27: [0, 1, 2, 3, 4] };
 
 /* sufijos de artículo; la clave se guarda sin acento y en minúsculas: «35 quáter» -> «35quater».
    T1-T5 siguen con la lista corta (así sus datos ya generados salen idénticos); desde el T6 se reconocen también quáter, quinquies, sexies, octies… */

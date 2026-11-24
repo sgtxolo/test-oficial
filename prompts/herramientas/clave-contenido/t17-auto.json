@@ -1,0 +1,24 @@
+{
+ "titulo": "Esquema clave T17 · Responsabilidad penal del menor (versión nueva)",
+ "h1": "Tema 17 · ESQUEMA CLAVE — Responsabilidad penal del menor: LO 5/2000, Reglamento (RD 1774/2004) e Instrucción 1/2017 (Protocolo de actuación policial con menores)",
+ "v": "844",
+ "h2": [
+  {
+   "t": "17.1 · LEY ORGÁNICA 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores",
+   "desde": null
+  },
+  {
+   "t": "17.2 · REAL DECRETO 1774/2004 (Reglamento de la LO 5/2000)",
+   "desde": "^CAPÍTULO I. DISPOSICIONES GENERALES",
+   "texto": "1774/2004|Reglamento de la Ley"
+  },
+  {
+   "t": "17.3 · INSTRUCCIÓN 1/2017 de la Secretaría de Estado de Seguridad (Protocolo de actuación policial con menores)",
+   "desde": "^17.3",
+   "texto": "Instrucci[oó]n 1/2017|Protocolo de Actuaci"
+  }
+ ],
+ "min": 0.65,
+ "maxFilas": 22,
+ "maxFalsas": 14
+}
