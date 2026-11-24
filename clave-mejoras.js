@@ -324,9 +324,19 @@
   function marca(el) {
     if (!el) return; if (leyendo && leyendo !== el) leyendo.classList.remove('cl-leyendo');
     el.classList.add('cl-leyendo'); leyendo = el;
-    if (emb) { try { parent.postMessage({ claveScroll: el.getBoundingClientRect().top + (window.pageYOffset || 0) }, '*'); } catch (e) {} return; }
+    if (emb && !propio) { try { parent.postMessage({ claveScroll: el.getBoundingClientRect().top + (window.pageYOffset || 0) }, '*'); } catch (e) {} return; }
     try { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) { el.scrollIntoView(); }
   }
+  var propio = false; /* true = la página que me incrusta no es la app (p. ej. la muestra de narrado): el scroll lo hago yo */
+  window.addEventListener('message', function (e) { /* {claveIrA:{h2:0, arts:[2], titulo:'texto de un título'}} → resalta y lleva a ese artículo (o título) */
+    var d = e.data; if (!d || !d.claveIrA) return; propio = true;
+    try {
+      var a = d.claveIrA, el = null; h2i = a.h2 || 0; refsCache = null; libre = true;
+      if (a.arts && a.arts.length) { var an = buscaAncla(a.arts.map(String), false); if (an) el = an.closest('li,tr,h3,h2,p,div') || an; }
+      if (!el && a.titulo) el = $$('h2,h3').filter(enMain).filter(function (h) { return h.textContent.indexOf(a.titulo) >= 0; })[0] || null;
+      if (el) marca(el);
+    } catch (er) {}
+  });
   var libre = false; /* true = el usuario ha saltado él mismo (⏮ ⏪ ⏩ ⏭, selector o barra): se permite ir hacia atrás */
   function despues(el, ref) { return !ref || !!(ref.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING); }
   function buscaAncla(nums, adelante) {
