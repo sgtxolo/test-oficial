@@ -1065,7 +1065,10 @@ function vozHablar(texto){
       u.onstart = function(){ arrancó = true; };
       u.onend = function(){ if(!reiniciando) fin(); }; u.onerror = function(){ if(!reiniciando) fin(); };
       setTimeout(function(){
-        if(arrancó || hecho || my!==vozTokenHabla || repetido) return; repetido = true; reiniciando = true;
+        if(arrancó || hecho || my!==vozTokenHabla || repetido) return;
+        /* el sintetizador de esta página está colgado (pasa al volver de Esquemas / temario subrayado): se pasa a uno nuevo y se vuelve a leer la pregunta entera */
+        if(!window.__vozCtxNuevo && vozNuevoContexto()){ hecho = true; clearTimeout(dog); vozHablar(texto); return; }
+        repetido = true; reiniciando = true;
         try{ window.speechSynthesis.cancel(); window.speechSynthesis.resume(); }catch(e){}
         setTimeout(function(){ reiniciando = false; if(hecho || my!==vozTokenHabla) return; try{ window.speechSynthesis.speak(u); }catch(e){} }, 200);
       }, 1500);
@@ -1080,7 +1083,25 @@ function vozReiniciarAlVolver(){
   try{ window.speechSynthesis && (window.speechSynthesis.cancel(), window.speechSynthesis.resume()); }catch(e){}
   vozTokenHabla++; vozHablando = false; vozUltimaLeida = null; vozBotonEstado();
 }
-window.addEventListener('pageshow', function(){ vozReiniciarAlVolver(); });
+/* Al volver desde otra página, el navegador restaura ESTA página (bfcache) con el sintetizador de voz muerto: speak() no hace nada hasta recargar. Se arregla creando un sintetizador nuevo
+   en un iframe oculto y poniéndolo en lugar del de la página (window.speechSynthesis y SpeechSynthesisUtterance son los del iframe). */
+var vozFrame = null;
+function vozNuevoContexto(){
+  try{
+    if(vozFrame && vozFrame.parentNode) vozFrame.parentNode.removeChild(vozFrame);
+    var f = document.createElement('iframe'); f.setAttribute('aria-hidden','true'); f.tabIndex = -1;
+    f.style.cssText = 'position:fixed;left:0;bottom:0;width:1px;height:1px;border:0;opacity:0;pointer-events:none';
+    document.body.appendChild(f); vozFrame = f;
+    var w = f.contentWindow; if(!w || !w.speechSynthesis || !w.SpeechSynthesisUtterance) return false;
+    Object.defineProperty(window, 'speechSynthesis', {value: w.speechSynthesis, configurable: true, writable: true});
+    window.SpeechSynthesisUtterance = w.SpeechSynthesisUtterance;
+    try{ vozEspanolCache = null; }catch(e){}
+    try{ w.speechSynthesis.onvoiceschanged = function(){ try{ vozEspanolCache = null; }catch(e){} }; }catch(e){}
+    window.__vozCtxNuevo = true;
+    return true;
+  }catch(e){ return false; }
+}
+window.addEventListener('pageshow', function(ev){ if(ev && ev.persisted) vozNuevoContexto(); vozReiniciarAlVolver(); });
 document.addEventListener('visibilitychange', function(){ if(document.visibilityState==='visible' && modoVoz){ try{ window.speechSynthesis.cancel(); window.speechSynthesis.resume(); }catch(e){} } });
 function vozLeerPreguntaActual(){
   if(!modoVoz || !testActivo || testActivo.pausado) return;
