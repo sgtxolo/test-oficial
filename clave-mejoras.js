@@ -316,14 +316,14 @@
     return refsCache.filter(function (x) { return x.h === h; });
   }
   function h3De(el) { var h = null; $$('h3').filter(enMain).forEach(function (t) { if (t.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING) h = t; }); return h; }
-  function limpiaSync() {
+  function limpiaSync(mantener) {
     try { if (autoNodo && autoNodo.parentNode) autoNodo.parentNode.removeChild(autoNodo); } catch (e) {}
     autoNodo = null; autoKey = '';
-    if (leyendo) { leyendo.classList.remove('cl-leyendo'); leyendo = null; }
+    if (leyendo && !mantener) { leyendo.classList.remove('cl-leyendo'); leyendo = null; } /* al cambiar de apartado el amarillo se queda donde estaba hasta que haya otro sitio al que ir */
   }
   function marca(el) {
     if (!el) return; if (leyendo && leyendo !== el) leyendo.classList.remove('cl-leyendo');
-    el.classList.add('cl-leyendo'); leyendo = el;
+    el.classList.add('cl-leyendo'); leyendo = el; ultima = el;
     if (emb && !propio) { try { parent.postMessage({ claveScroll: el.getBoundingClientRect().top + (window.pageYOffset || 0) }, '*'); } catch (e) {} return; }
     try { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) { el.scrollIntoView(); }
   }
@@ -342,24 +342,48 @@
   function buscaAncla(nums, adelante) {
     var lista = h2i >= 0 ? refsDe(h2i) : []; if (!lista.length) return null;
     for (var n = 0; n < nums.length; n++) {
-      var c = lista.filter(function (x) { return x.ks.indexOf(nums[n]) >= 0 && (!adelante || despues(x.r, leyendo)); });
+      var c = lista.filter(function (x) { return x.ks.indexOf(nums[n]) >= 0 && (!adelante || despues(x.r, ultima)); });
       var det = c.filter(function (x) { return !x.r.closest('h2,h3'); })[0] || c[0];
       if (det) return det.r;
     }
     return null;
   }
+  var LIN = null, itPrev = null, ultima = null; /* ultima: último sitio marcado (no se borra al cambiar de sección): el narrador solo avanza desde aquí */
+  function palabrasDe(t) { var o = {}, n = 0, m = normW(t).match(/[a-z0-9]{4,}/g) || []; m.forEach(function (w) { if (!o[w]) { o[w] = 1; n++; } }); return { s: o, n: n }; }
+  function lineas() {
+    if (!LIN) LIN = $$('li,tr,h3').filter(function (e) {
+      return enMain(e) && !e.closest('.cl-artbox,.cl-qabox,#rqbox,#trampas,.cl-tools,.cq-quiz') && !(e.tagName === 'TR' && e.querySelector('th')) && !(e.tagName === 'LI' && e.querySelector('li'));
+    }).map(function (e) { var p = palabrasDe(e.textContent); p.e = e; p.sec = secDe(e); return p; });
+    return LIN;
+  }
+  /* línea del esquema que más se parece al párrafo que se narra (coincidencia de palabras): así el amarillo sigue SIEMPRE por dónde va leyendo, lleve o no número de artículo */
+  function mejorLinea(texto, todo) {
+    var L = lineas(), tk = palabrasDe(texto); if (!tk.n || !L.length) return null;
+    var ini = 0;
+    if (!todo && ultima) { ini = L.length; for (var i = 0; i < L.length; i++) if (L[i].e === ultima || ultima.contains(L[i].e) || despues(L[i].e, ultima)) { ini = i; break; } }
+    var fin = Math.min(L.length, todo ? L.length : ini + 70), best = null, bs = 0;
+    for (var j = ini; j < fin; j++) {
+      var l = L[j]; if (!l.n || (h2i >= 0 && l.sec !== h2i && !todo)) continue; var c = 0; for (var w in l.s) if (tk.s[w]) c++;
+      if (c < 3) continue;
+      var cont = c / Math.min(l.n, tk.n), dice = 2 * c / (l.n + tk.n), sc = cont * 0.6 + dice * 0.4 - (todo ? 0 : (j - ini) * 0.0012);
+      if (cont >= 0.4 && sc > bs) { bs = sc; best = l.e; }
+    }
+    return best;
+  }
   function sincroniza(texto, it) {
     if (!IDX || !it || !h2s.length) return;
     if (it.s !== sec0) { /* cambio de sección: ir al apartado (por el número «2.3» del título o por el primer artículo que cite) */
-      sec0 = it.s; limpiaSync();
+      sec0 = it.s; limpiaSync(true);
       var m = N.secciones[it.s].t.match(/^(\d+\.\d+)/);
       if (m) for (var i = 0; i < h2s.length; i++) if (h2s[i].textContent.replace(/\s+/g, ' ').trim().indexOf(m[1]) === 0) { h2i = i; break; }
+      if (!m) { var w0 = normW(N.secciones[it.s].t).split(/[^a-z0-9]+/)[0]; if (w0.length > 4) for (var i2 = 0; i2 < h2s.length; i2++) if (normW(h2s[i2].textContent).replace(/^[^a-z0-9]+/, '').indexOf(w0) === 0) { h2i = i2; break; } }
       var ns = numeros((N.secciones[it.s].p || []).join(' ')), primero = ns.length ? buscaAncla(ns) : null;
       var objetivo = (primero && (primero.closest('h3') || h3De(primero))) || h2s[h2i] || null;
       /* el narrador solo avanza: si lo que va a marcar queda ANTES de donde ya está, se queda donde está y sigue desde ahí */
-      if (objetivo && (libre || !leyendo || despues(objetivo, leyendo))) marca(objetivo);
+      if (objetivo && (libre || !ultima || despues(objetivo, ultima))) marca(objetivo);
     }
     var adel = !libre; libre = false;
+    if (it !== itPrev) { itPrev = it; if (!it.tit && it.s > 0 && !/^(Pregunta de examen|Esto ha caído|La respuesta correcta)/.test(it.t)) { var ml = mejorLinea(it.t, !adel); if (ml) { autoKey = ''; marca(ml); return; } } }
     var nums = numeros(texto); if (!nums.length) return;
     var an = buscaAncla(nums, adel); if (!an) return;
     var key = nums.join(',') + '@' + secDe(an) + ':' + an.textContent; if (key === autoKey) return;
@@ -574,7 +598,7 @@
     $('#cl-vel', panel).onchange = function () { rate = parseFloat(this.value) || 1; if (jugando) hablar(); else pinta(); };
     $('#cl-sel', panel).onchange = function () { libre = true; var s = +this.value; for (var i = 0; i < items.length; i++) if (items[i].s === s) { pos = i; break; } if (jugando) hablar(); else pinta(); };
     $('.bar', panel).onclick = function (e) { libre = true; var r = this.getBoundingClientRect(); pos = Math.round((e.clientX - r.left) / r.width * (items.length - 1)); if (jugando) hablar(); else pinta(); };
-    $('#cl-x', panel).onclick = function () { jugando = false; parar(); try { window.ClaveEspejo && ClaveEspejo.quita('nar'); } catch (e) {} panel.remove(); panel = null; document.body.classList.remove('cl-narando'); sec0 = -2; limpiaSync(); try { if (wl) wl.release(); } catch (e) {} };
+    $('#cl-x', panel).onclick = function () { jugando = false; parar(); try { window.ClaveEspejo && ClaveEspejo.quita('nar'); } catch (e) {} panel.remove(); panel = null; document.body.classList.remove('cl-narando'); sec0 = -2; ultima = null; itPrev = null; limpiaSync(); try { if (wl) wl.release(); } catch (e) {} };
     try { var g = +localStorage.getItem('clave-nar-' + KEY); if (g > 0 && g < items.length) pos = g; } catch (e) {}
     try {
       if ('mediaSession' in navigator) {
