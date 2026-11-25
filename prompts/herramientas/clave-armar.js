@@ -52,7 +52,7 @@ const h2n = (cuerpo.match(/<h2>/g) || []).length;
 let mapa = "n=" + Array.from({ length: h2n }, (_, k) => "/^" + N + "\\." + (k + 1) + "/.test(x)?" + (k + 1) + ":").join("") + "0;";
 cola = cola.replace(/n=\/\^8\\\.1\/[^\n]*?:0;/, () => mapa);
 if (!cola.includes(mapa)) throw new Error("no se pudo sustituir el mapa de h2");
-cola = cola.replace(/clave-mejoras\.js\?v=\d+/, "clave-mejoras.js?v=" + (cfg.v || "796"));
+cola = cola.replace(/clave-mejoras\.js\?v=\d+/, "clave-mejoras.js?v=" + (cfg.v || "874"));
 const out = cabeza + "\n<h1>" + esc(cfg.h1) + "</h1>\n" + leyenda + "\n" + cuerpo + "\n\n" + btnQ + "\n" +
   '<div id="rqbox"><div class="rq-wrap"><div class="rq-h">✔ RECUERDA — preguntas rápidas del tema</div><div class="rq-sub">' + total +
   ' preguntas cortas con su respuesta, sacadas de las preguntas de test de cada artículo (<span class="rq-of">OF</span> = oficial).</div><div class="rq-cols">' + bloques + '</div></div></div>\n\n' +

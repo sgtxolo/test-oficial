@@ -84,20 +84,34 @@
     '#cl-nar{position:fixed;left:0;right:0;bottom:0;background:#0f2438;color:#fff;padding:8px 10px;z-index:30;box-shadow:0 -3px 12px rgba(0,0,0,.35);font-size:13px}',
     '#cl-nar .t{display:flex;gap:8px;align-items:center;flex-wrap:wrap}',
     '#cl-nar .t b{flex:1;min-width:150px}',
-    '#cl-nar button,#cl-nar select{font-size:15px;padding:5px 10px;border-radius:7px;border:0;cursor:pointer}',
+    '#cl-nar button,#cl-nar select{font-size:15px;padding:5px 10px;border-radius:7px;border:0;cursor:pointer;color:#111}',
     '#cl-nar .tx{margin:6px 0 4px;max-height:76px;overflow:auto;font-size:13.5px;line-height:1.35;opacity:.95}',
     '#cl-nar .bar{height:6px;background:#2d4a66;border-radius:3px;cursor:pointer;margin-top:4px}',
     '#cl-nar .bar i{display:block;height:100%;background:#f5b400;border-radius:3px;width:0}',
     '#cl-nar .est{font-size:11.5px;opacity:.8}',
     'body.cl-narando{padding-bottom:240px!important}',
     '@media screen and (max-width:760px){body.cl-narando{padding-bottom:84px!important}body.cl-narando #aud{display:none!important}#cl-nar{padding:4px 6px}#cl-nar .t{gap:4px;flex-wrap:nowrap}#cl-nar .t b,#cl-nar .tx,#cl-nar .est,#cl-nar #cl-sel{display:none}#cl-nar .sec{flex:1;font-size:11px;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#cl-nar .bar{margin-top:3px;height:4px}#cl-nar button,#cl-nar select{font-size:14px;padding:2px 7px}#cl-nar .t[style]{margin-top:3px!important}}',
+    /* móvil en HORIZONTAL (clase .hz / cl-hz, la pone ponHz): narrador en una sola barra pequeña, sin el texto (se sigue en el amarillo del esquema) */
+    '#cl-nar.hz{padding:2px 6px}',
+    '#cl-nar.hz .tx,#cl-nar.hz .est,#cl-nar.hz .t b,#cl-nar.hz .sec{display:none}',
+    '#cl-nar.hz .bar{height:4px;margin:0}',
+    '#cl-nar.hz .t{flex-wrap:nowrap;gap:5px;margin-top:3px!important;padding-right:46px}',
+    '#cl-nar.hz .t:first-child{position:absolute;right:6px;bottom:2px;padding:0;margin:0!important}',
+    '#cl-nar.hz button,#cl-nar.hz select{font-size:14px;height:32px;padding:2px 9px}',
+    '#cl-nar.hz #cl-sel{display:block;flex:1;min-width:0}',
+    '@media screen{body.cl-hz.cl-narando{padding-bottom:56px!important}body.cl-hz.cl-narando #aud{display:none!important}}',
+    /* móvil en horizontal: letra grande en el esquema */
+    '@media screen{body.cl-hz{font-size:19px;line-height:1.5}body.cl-hz h1{font-size:23px}body.cl-hz .sub{font-size:14px}body.cl-hz h2{font-size:20px;padding:5px 9px}body.cl-hz h3{font-size:18.5px}body.cl-hz li{margin:3px 0}body.cl-hz table{font-size:17px}body.cl-hz th,body.cl-hz td{padding:4px 6px}body.cl-hz .leyenda{font-size:14px}body.cl-hz .art{font-size:13.5px}body.cl-hz .ex{font-size:12px}body.cl-hz .cl-artbox{font-size:17px}body.cl-hz .cl-qb button,body.cl-hz .cl-qa-b button{font-size:13px;padding:3px 9px}body.cl-hz .cl-qabox{font-size:17px}body.cl-hz .cl-tools button{font-size:15px;padding:7px 12px}body.cl-hz .tr,body.cl-hz .rq-wrap{font-size:17px}}',
     /* móvil: letra más grande (solo en pantalla; la impresión no cambia) */
     '@media screen and (max-width:760px) and (orientation:portrait){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}td,th{min-width:150px}body{font-size:16.5px;line-height:1.5;padding:8px 12px 70px}h1{font-size:21px}.sub{font-size:13px}h2{font-size:17px;padding:5px 9px}h3{font-size:16px}li{margin:3px 0}table{font-size:15px}th,td{padding:4px 6px}.leyenda{font-size:13px}.art{font-size:12.5px}.ex{font-size:11px}.cl-artbox{font-size:15px}.cl-qb button{font-size:12px;padding:3px 9px}.cl-tools button{font-size:14px;padding:8px 12px}.rq-wrap{font-size:15px}.rq-cols{column-count:1}.tr{font-size:15px}#btnQ,#btnT{font-size:16px;padding:10px}.cq-quiz{font-size:15px}}',
     /* impresión: solo el esquema */
     '@media print{.cl-qa-b,.cl-qabox,.cl-tools,.cl-qb,.cl-artbox,#cl-nar,#aud,#btnQ,#rqbox,#btnT,#trampas,.cq-quiz,.cq-ini,.cq-bar,.cl-fuera{display:none!important}.cl-ref{color:inherit;border:0}body{padding:0!important}}'
   ].join('\n');
   var st = document.createElement('style'); st.id = 'cl-mejoras-css'; document.head.appendChild(st);
-  function aplicaCss() { var vert = window.parent !== window ? screen.height >= screen.width : innerHeight >= innerWidth; try { if (window.parent !== window) vert = window.parent.innerHeight >= window.parent.innerWidth; } catch (e) {} /* en file:// el navegador no deja leer la ventana padre: se usa la propia */ st.textContent = 'html{-webkit-text-size-adjust:100%;text-size-adjust:100%}' + css.replace(' and (orientation:portrait)', vert ? '' : ' and (min-width:99999px)'); }
+  function aplicaCss() { var vert = window.parent !== window ? screen.height >= screen.width : innerHeight >= innerWidth; try { if (window.parent !== window) vert = window.parent.innerHeight >= window.parent.innerWidth; } catch (e) {} /* en file:// el navegador no deja leer la ventana padre: se usa la propia */ st.textContent = 'html{-webkit-text-size-adjust:100%;text-size-adjust:100%}' + css.replace(' and (orientation:portrait)', vert ? '' : ' and (min-width:99999px)'); ponHz(); }
+  /* móvil en horizontal = pantalla apaisada y baja (se mira la ventana de la app, no el marco, que es tan alto como el esquema) */
+  function esHz() { var w = window; try { if (w.parent !== w && w.parent.innerHeight) w = w.parent; } catch (e) { return !!(window.matchMedia && matchMedia('(orientation:landscape)').matches) && Math.min(screen.width, screen.height) <= 560; } return w.innerWidth > w.innerHeight && w.innerHeight <= 560; }
+  function ponHz() { var h = esHz(); if (document.body.classList.contains('cl-hz') !== h) document.body.classList.toggle('cl-hz', h); var p = document.getElementById('cl-nar'); if (p && p.classList.contains('hz') !== h) p.classList.toggle('hz', h); }
   aplicaCss(); window.addEventListener('resize', aplicaCss); try { if (window.parent !== window) window.parent.addEventListener('resize', aplicaCss); } catch (e) {}
 
   /* ---------- 1) barra con imprimir y narrado ---------- */
@@ -591,7 +605,7 @@
       + '<div class="t" style="margin-top:6px"><button id="cl-ps" title="Sección anterior">⏮</button><button id="cl-pp" title="Párrafo anterior">⏪</button><button id="cl-play" title="Reproducir / pausa">▶</button><button id="cl-np" title="Párrafo siguiente">⏩</button><button id="cl-ns" title="Sección siguiente">⏭</button><button id="cl-qa" title="Preguntas y respuestas de esta parte: te las narro cuando quieras">❓ P&R</button>'
       + '<select id="cl-vel"><option value="0.85">0,85×</option><option value="1" selected>1×</option><option value="1.1">1,1×</option><option value="1.25">1,25×</option><option value="1.4">1,4×</option></select>'
       + '<select id="cl-sel">' + opts + '</select><span class="est"></span></div>';
-    document.body.appendChild(panel);
+    document.body.appendChild(panel); ponHz();
     $('#cl-play', panel).onclick = function () { jugando = !jugando; if (jugando) { pideWake(); hablar(); } else { parar(); pinta(); } };
     $('#cl-pp', panel).onclick = function () { salto(-1); }; $('#cl-np', panel).onclick = function () { salto(1); };
     $('#cl-ps', panel).onclick = function () { saltoSec(-1); }; $('#cl-ns', panel).onclick = function () { saltoSec(1); };

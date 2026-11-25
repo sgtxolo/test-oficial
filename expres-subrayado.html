@@ -143,6 +143,20 @@ input[type=date],input[type=text].f,select.f{font:inherit;border:1.5px solid var
 .toast{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);background:var(--verde-osc);color:#fff;padding:10px 18px;border-radius:99px;z-index:80;font-size:14px}
 :root[data-theme="dark"] .toast{color:#10201a}
 @media(max-height:759px){#herr{position:static}}
+/* narrando con el móvil en horizontal: toda la pantalla para el esquema; arriba solo el botón ☰ */
+#b-barra{display:none}
+@media screen and (orientation:landscape) and (max-height:560px){
+  body.narrando #top{position:fixed;left:auto;right:max(6px,env(safe-area-inset-right));top:6px;padding:0;background:none;border:0}
+  body.narrando #b-barra{display:flex;margin-left:auto;box-shadow:0 2px 8px rgba(0,0,0,.3);font-size:20px;min-width:44px}
+  body.narrando #top .fila{display:none}
+  body.narrando.barra-abierta #top .fila{display:grid;grid-template-columns:repeat(3,max-content);gap:6px;position:absolute;top:44px;right:0;background:var(--panel);border:1.5px solid var(--borde);border-radius:14px;padding:8px;box-shadow:0 10px 30px rgba(0,0,0,.35);max-height:calc(100vh - 100px);overflow:auto}
+  body.narrando #top h1{display:none}
+  body.narrando #top .fila .ib{justify-content:flex-start;white-space:nowrap}
+  body.narrando #top .fila .oculto{display:none}
+  body.narrando #b-sync::after{content:"Sincronizar"}body.narrando #b-gh::after{content:"Repositorio"}body.narrando #b-imp::after{content:"Imprimir"}body.narrando #b-herr::after{content:"Herramientas"}body.narrando #b-tema::after{content:"Claro / oscuro"}body.narrando #b-menu::after{content:"Más"}
+  body.narrando #menu{right:0;top:44px;max-height:calc(100vh - 100px);overflow:auto}
+  body.narrando main{padding-top:4px}
+}
 /* marcas propias: dibujo encima de cada captura */
 .imgw{position:relative;line-height:0}.imgw img{display:block}
 .tag.revok{background:#e1f2e7;color:#1f6b45;border:1px solid #57a683}.tag.revpend{background:#fff1dc;color:#9a5a10;border:1px solid #d9a35a}
@@ -252,6 +266,7 @@ body.embed #top{display:none}body.embed #herr{top:0}body.embed #info{display:non
   <button class="ib" id="b-tema" title="Modo oscuro">🌙</button>
   <button class="ib" id="b-menu" title="Más opciones">⋮</button>
 </div>
+<button class="ib" id="b-barra" title="Abrir los botones">☰</button>
 <div class="menu oculto" id="menu"></div></div>
 <div id="herr" class="oculto"><div class="in"></div></div>
 <main><div id="info"></div><div id="m"></div></main>
@@ -800,7 +815,7 @@ function repasoHTML(t) {
   return '<div class="rep-clave"><div class="rep-bar"><b>⭐ Esquema clave · repaso del tema (≈10 págs)</b><a class="chip" href="' + u + '" target="_blank" rel="noopener">Abrir aparte ↗</a><a class="chip" href="' + u + '#imprimir" target="_blank" rel="noopener">🖨️ Imprimir / PDF</a></div><iframe id="rep-if" src="' + u + '" title="Esquema clave" scrolling="no" style="width:100%;border:0;min-height:700px;background:transparent;display:block"></iframe></div>';
 }
 // el repaso (dentro de un iframe) avisa de su altura con postMessage: así funciona también al abrir la app desde un archivo del disco (file://), donde no se puede leer el contenido del iframe. El marco crece entero y se desplaza con la página.
-window.addEventListener('message', e => { const d = e.data; if (d && typeof d.claveScroll === 'number') { const fl = document.getElementById('rep-if'); if (fl && e.source === fl.contentWindow) window.scrollTo({top: Math.max(0, fl.getBoundingClientRect().top + window.pageYOffset + d.claveScroll - 90), behavior: 'smooth'}); return; } if (d && (d.repasoListo || d.claveListo)) { const fl = document.getElementById('rep-if'); if (fl && e.source === fl.contentWindow) { mandaTemaRepaso(); mandaVistaClave(); } return; } if (!d || typeof d.repasoAlto !== 'number') return; const f = document.getElementById('rep-if'); if (f && e.source === f.contentWindow) f.style.height = (d.repasoAlto + 12) + 'px'; });
+window.addEventListener('message', e => { const d = e.data; if (d && typeof d.claveScroll === 'number') { const fl = document.getElementById('rep-if'); if (fl && e.source === fl.contentWindow) window.scrollTo({top: Math.max(0, fl.getBoundingClientRect().top + window.pageYOffset + d.claveScroll - (document.body.classList.contains('narrando') && matchMedia('(orientation:landscape) and (max-height:560px)').matches ? 8 : 90)), behavior: 'smooth'}); return; } if (d && (d.repasoListo || d.claveListo)) { const fl = document.getElementById('rep-if'); if (fl && e.source === fl.contentWindow) { mandaTemaRepaso(); mandaVistaClave(); } return; } if (!d || typeof d.repasoAlto !== 'number') return; const f = document.getElementById('rep-if'); if (f && e.source === f.contentWindow) f.style.height = (d.repasoAlto + 12) + 'px'; });
 /* Barras fijas del esquema clave (narrador y «Escuchar»): el marco no tiene scroll propio, así que su barra se copia aquí, fija abajo del todo, y los toques se reenvían al marco */
 (function () {
   let caja = null, estilo = null; const css = {}, html = {};
@@ -829,12 +844,16 @@ window.addEventListener('message', e => { const d = e.data; if (d && typeof d.cl
     const fl = document.getElementById('rep-if'); if (!fl || e.source !== fl.contentWindow) return;
     const m = d.claveEspejo; asegura();
     let w = caja.querySelector('[data-n="' + m.n + '"]');
+    if (m.n === 'nar') narrando(!!m.html);
     if (!m.html) { if (w) w.remove(); delete css[m.n]; pinta(); return; }
     if (!w) { w = document.createElement('div'); w.dataset.n = m.n; caja.appendChild(w); if (m.n === 'aud') caja.appendChild(w); else caja.insertBefore(w, caja.firstChild); }
     css[m.n] = m.css || ''; pinta(); w.innerHTML = m.html;
     try { e.source.postMessage({claveEspejoOk: 1}, '*'); } catch (er) {}
   });
-  setInterval(() => { if (caja && !document.getElementById('rep-if')) { caja.innerHTML = ''; for (const k in css) delete css[k]; pinta(); } }, 1000);
+  // narrando con el móvil en horizontal: la barra de arriba se queda en un solo botón ☰ que la despliega
+  function narrando(si) { document.body.classList.toggle('narrando', si); if (!si) document.body.classList.remove('barra-abierta'); }
+  document.addEventListener('click', e => { const b = document.body; if (!b.classList.contains('narrando')) return; if (e.target.closest('#b-barra')) { b.classList.toggle('barra-abierta'); document.getElementById('menu').classList.add('oculto'); } else if (!e.target.closest('#b-menu,#menu')) b.classList.remove('barra-abierta'); });
+  setInterval(() => { if (caja && !document.getElementById('rep-if')) { narrando(false); caja.innerHTML = ''; for (const k in css) delete css[k]; pinta(); } }, 1000);
 })();
 function mandaVistaClave() { const f = document.getElementById('rep-if'); if (!f || !f.contentWindow) return; const r = f.getBoundingClientRect(); f.contentWindow.postMessage({claveVista: {top: Math.max(0, -r.top), h: window.innerHeight}}, '*'); }
 window.addEventListener('scroll', () => { if (document.getElementById('rep-if')) mandaVistaClave(); }, {passive: true}); window.addEventListener('resize', () => { if (document.getElementById('rep-if')) mandaVistaClave(); });
