@@ -967,8 +967,8 @@ $('#m').addEventListener('input', e => { if (e.target.dataset.n) { st.nota[e.tar
 let tmr; addEventListener('scroll', () => { if (tema === null) return; clearTimeout(tmr); tmr = setTimeout(() => { const c = [...document.querySelectorAll('.card')].find(x => x.getBoundingClientRect().top > 160); if (c) { st.ult[tema] = c.dataset.id; st.ultimo = {t: tema, id: c.dataset.id}; guarda(); } }, 400); }, {passive: true});
 // ---------- visor / repaso ----------
 let vlista = [], vi = 0, zoom = 1;
-function visor(id) { vlista = [...document.querySelectorAll('.card')].map(c => c.dataset.id); vi = Math.max(0, vlista.indexOf(id)); pintaVisor(); }
-function repaso() { vlista = [...document.querySelectorAll('.card')].map(c => c.dataset.id); if (!vlista.length) return aviso('No hay nada que repasar'); vi = 0; pintaVisor(); }
+function visor(id) { vlista = [...document.querySelectorAll('.card')].map(c => c.dataset.id); vi = Math.max(0, vlista.indexOf(id)); st.vmodo = 's'; zoom = 1; pintaVisor(); }
+function repaso() { vlista = [...document.querySelectorAll('.card')].map(c => c.dataset.id); if (!vlista.length) return aviso('No hay nada que repasar'); vi = 0; st.vmodo = 's'; zoom = 1; pintaVisor(); }
 // Modo lectura: pestañas «Subrayado» (tu captura, sin los márgenes en blanco para que se lea más grande, con tus marcas), «Exprés» (el texto del Exprés
 // de Esquemas, grande y con tamaño ajustable; los (…) se pueden abrir) y «Esquema» (los cuadros). Se cambia de artículo con las flechas o deslizando.
 const RB = {};   // límites del texto de cada captura (para quitar los márgenes en blanco)
@@ -1597,6 +1597,7 @@ if (window.MEJORAS) window.MEJORAS();
 if (window.MEJORAS2) window.MEJORAS2();
 entra();
 </script>
+<script src="expres-subrayado/voz-guion-t1.js"></script>
 <script src="expres-subrayado/voz.js"></script>
 <script src="estado-temas.js"></script>
 <script>

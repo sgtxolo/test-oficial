@@ -35,6 +35,28 @@
       return !soloOficial || ids.some(function (i) { return !/-ia-/.test(i); });
     }).map(function (m) { return limpia(m.textContent); }));
   }
+  function marcados_(nodo, entero, clase) {
+    return unicos([].slice.call(nodo.querySelectorAll('mark.m-' + clase)).filter(function (m) { return entero || !m.closest('.ex-plg-t'); })
+      .map(function (m) { return limpia(m.textContent).replace(/^[\s,.;:()]+|[\s,.;:()]+$/g, ''); })).filter(function (x) { return x.length > 3; });
+  }
+  /* una lista «Letra a: …; Letra b: …» seguida desde la a se anuncia con su número de elementos */
+  function enumera(s) {
+    var l = s.match(/Letra [a-z]:/g) || []; if (l.length < 3 || l.some(function (x, i) { return x.charAt(6) !== 'abcdefgh'.charAt(i); })) return s;
+    return s.replace('Letra a:', 'Son ' + l.length + '. Letra a:');
+  }
+  /* cuando se cita otro artículo de la misma norma, se cuenta de qué trata (título de su ficha en el Exprés) */
+  function citados(t, p, mios, txt) {
+    var o = [];
+    unicos((txt.match(/artículo \d+(?: bis| ter| quater)?(?! de la (?:Constitución|Ley)| del (?!presente))/gi) || [])).slice(0, 2).forEach(function (c) {
+      var n = norma_(c.replace(/artículo /i, '')); if (mios.indexOf(n) >= 0) return;
+      var l = localiza(t, { nombre: String(p.nombre).split(' · ')[0] + ' · Artículo ' + n, fx: p.fx }); if (l.fx.length !== 1) return;
+      var d = document.createElement('div'); d.innerHTML = fichaExpres(t, { fx: l.fx[0] }) || ''; var h = d.querySelector('.ex-fh'); if (!h) return;
+      [].forEach.call(h.querySelectorAll('span'), function (x) { x.remove(); });
+      var partes = h.textContent.split('—'); if (partes.length < 2 || numeros(partes[0]).length !== 1) return;
+      o.push('El artículo ' + n + ', que se cita aquí, trata de: ' + conPunto(limpia(partes[1].replace(/·\s*R\d+/g, ''))));
+    });
+    return o;
+  }
   /* excepciones: la frase que empieza por «salvo», «excepto»… es la trampa típica */
   function excepciones(s) { return unicos((s.match(/\b(salvo|excepto|a excepción de|en ningún caso)\b[^.;:]{3,140}/gi) || [])).slice(0, 2); }
 
@@ -121,6 +143,8 @@
     return { nums: nums, fx: res };
   }
   function guion(t, p, entero) {
+    var mano = ((window.VOZ_G || {})[t] || {})[p.id];
+    if (mano) return mano.map(function (s) { return { t: s, lit: true }; });
     var o = [], m = p.m || {}, partes = String(p.nombre || '').split(' · '), norma = limpia(partes.length > 1 ? partes[0] : ''), art = limpia(partes[partes.length - 1] || '');
     function di(s, lit) { s = limpia(s); if (s) o.push({ t: s, lit: !!lit }); }
     var donde = { nums: [], fx: [] }; try { donde = localiza(t, p); } catch (e) {}
@@ -134,7 +158,7 @@
     if ((m.r || []).length) di('Además entra en ' + (m.r.length > 1 ? 'las reglas R ' + m.r.join(' y R ') : 'la regla R ' + m.r[0]) + ' del bloque Recuerda.');
 
     var oficiales = [], todas = [], leido = 0;
-    var ps = [];
+    var ps = [], vistos = {};
     fichas.forEach(function (f) {
       var lista = parrafos(f), de = marcas(lista), ahora = null, marcados = lista.map(function (el, i) { if (de[i]) ahora = de[i]; return { el: el, a: ahora }; });
       /* ficha compartida por varios artículos: solo los párrafos de los artículos de este recorte */
@@ -151,9 +175,11 @@
       var of = respuestas(el, entero, true), ex = (el.getAttribute('data-ex') || '');
       if (of.length || /EXOF/.test(ex)) di('Ojo, esto que viene ha caído en examen.');
       else if (/\*/.test(ex)) di('Esta parte es importante.');
-      di(conPunto(apartados(txt)), true); leido++;
+      di(conPunto(enumera(apartados(txt)).replace(/(^|[.:] )Apartado ([2-9]|\d{2})\./g, '$1Pasamos al apartado $2.')), true); leido++;
       if (of.length) di('Repito, porque lo han preguntado en examen oficial: ' + conPunto(listaDe(of.slice(0, 5))));
       var ec = excepciones(txt); if (ec.length) di('Atención, trampa con la excepción: ' + conPunto(listaDe(ec)));
+      var pl = marcados_(el, entero, 'plazo').filter(function (x) { return /\d|\b(horas?|d[ií]as?|semanas?|mes(es)?|años?|plazo|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|quince|veinte|treinta)\b/i.test(x); });if (pl.length) di('Fíjate en los plazos y cifras: ' + conPunto(listaDe(pl.slice(0, 5))));
+      citados(t, p, donde.nums, txt).forEach(function (c) { if (!vistos[c]) { vistos[c] = 1; di(c); } });
       oficiales = oficiales.concat(of); todas = todas.concat(respuestas(el, entero, false));
     });
     if (!leido) {
@@ -216,20 +242,21 @@
   function pinta() {
     if (!panel) return;
     panel.querySelector('[data-voz="play"]').textContent = jugando ? '⏸ Pausa' : '▶ Escuchar';
-    panel.querySelector('.vz-tx').textContent = (jugando || pos) && items[pos] ? items[pos].t : '';
+
     panel.querySelector('.vz-n').textContent = items.length && (jugando || pos) ? Math.min(pos + 1, items.length) + '/' + items.length : '';
     panel.classList.toggle('on', jugando || pos > 0);
     panel.querySelector('[data-voz="seg"]').classList.toggle('on', seguir);
   }
   function crea() {
     panel = document.createElement('div'); panel.id = 'vz';
-    panel.innerHTML = '<div class="vz-tx"></div><div class="vz-b"><button class="vz-play" data-voz="play">▶ Escuchar</button><button data-voz="ant" title="Frase anterior">⏪</button><button data-voz="sig" title="Frase siguiente">⏩</button>'
+    panel.innerHTML = '<div class="vz-b"><button class="vz-play" data-voz="play">▶ Escuchar</button><button data-voz="ant" title="Frase anterior">⏪</button><button data-voz="sig" title="Frase siguiente">⏩</button>'
       + '<button data-voz="ini" title="Empezar este artículo de nuevo">⟲</button><select title="Velocidad">' + [0.85, 1, 1.1, 1.25, 1.4].map(function (v) { return '<option value="' + v + '"' + (v === rate ? ' selected' : '') + '>' + String(v).replace('.', ',') + '×</option>'; }).join('') + '</select>'
       + '<button data-voz="seg" title="Al terminar, pasa al artículo siguiente y sigue narrando">Seguido</button><span class="vz-n"></span></div>';
     panel.addEventListener('click', function (e) {
       e.stopPropagation(); var b = e.target.closest('[data-voz]'); if (!b) return; var x = b.getAttribute('data-voz');
       if (!('speechSynthesis' in window)) { alert('Este navegador no tiene voz.'); return; }
       if (x === 'seg') { seguir = !seguir; try { localStorage.setItem('exsub-voz-seg', seguir ? '1' : '0'); } catch (er) {} return pinta(); }
+      var s_ = vis.querySelector('.ptabs [data-v="ms"]'); if (x === 'play' && !jugando && s_ && !s_.classList.contains('on')) s_.click();
       prepara();
       if (x === 'play') { jugando = !jugando; if (jugando) { pideWake(); return hablar(); } parar(); sueltaWake(); return pinta(); }
       if (x === 'ant') pos = Math.max(0, pos - 1); if (x === 'sig') pos = Math.min(items.length - 1, pos + 1); if (x === 'ini') pos = 0;
@@ -253,7 +280,6 @@
   var css = document.createElement('style');
   css.textContent = '#vz .vz-b button,#vz .vz-b select{white-space:nowrap}@media (max-width:520px){#vz .vz-b{flex-wrap:nowrap!important;gap:4px!important}#vz button,#vz select{padding:5px 6px!important;font-size:13px!important}#vz .vz-play{min-width:92px!important}#vz .vz-n{display:none}}'
     + '#vz{flex:none;border-top:1px solid var(--borde);background:var(--panel);padding:5px 8px}'
-    + '#vz .vz-tx{display:none;font-size:13.5px;line-height:1.35;max-height:56px;overflow:auto;margin:0 0 5px}#vz.on .vz-tx{display:block}'
     + '#vz .vz-b{display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:center}'
     + '#vz button,#vz select{font:inherit;font-size:14px;padding:6px 10px;border-radius:9px;border:1.5px solid var(--borde);background:var(--panel);color:inherit;cursor:pointer}'
     + '#vz .vz-play{background:#14532d;border-color:#14532d;color:#fff;font-weight:700;min-width:112px}#vz button.on{background:#2563eb;border-color:#2563eb;color:#fff}'
