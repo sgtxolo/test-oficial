@@ -916,5 +916,213 @@
     "Los Estados acatan las sentencias definitivas. Se transmiten al Comité de Ministros, que vela por su ejecución.",
     "Si hay problema de interpretación, puede remitir al Tribunal por mayoría de dos tercios de los representantes con derecho.",
     "Repito: la ejecución la vigila el Comité de Ministros."
+  ],
+  "h-47": [
+    "Situación: artículo cuarenta y siete, opiniones consultivas. Importante y de examen.",
+    "El Tribunal puede emitirlas a solicitud del Comité de Ministros sobre cuestiones jurídicas de interpretación del Convenio y sus Protocolos. No pueden referirse al contenido o extensión de los derechos del título primero, ni a otras cuestiones que el Tribunal pudiera conocer en un recurso.",
+    "El Comité decide pedirlas por voto mayoritario de los representantes con derecho a intervenir.",
+    "Repito: las pide el Comité de Ministros."
+  ],
+  "h-50": [
+    "Situación: artículo cincuenta, gastos del Tribunal. Importante y de examen.",
+    "Los gastos de funcionamiento corren a cargo del Consejo de Europa."
+  ],
+  "h-55": [
+    "Situación: artículo cincuenta y cinco. Importante y de examen.",
+    "Los Estados renuncian recíprocamente, salvo compromiso especial, a usar otros tratados para someter diferencias sobre la interpretación o aplicación del Convenio a un procedimiento distinto de los previstos en él."
+  ],
+  "h-56": [
+    "Situación: artículo cincuenta y seis, aplicación territorial. De examen.",
+    "Un Estado puede declarar, notificándolo al Secretario General, que el Convenio se aplica a territorios de cuyas relaciones internacionales es responsable. Se aplica a partir del trigésimo día desde que el Secretario General reciba la notificación, teniendo en cuenta las necesidades locales.",
+    "Puede además aceptar para esos territorios la competencia del Tribunal sobre demandas individuales."
+  ],
+  "h-57": [
+    "Situación: artículo cincuenta y siete, reservas. Importante y de examen.",
+    "Al firmar o depositar la ratificación, un Estado puede formular una reserva sobre una disposición particular cuando una ley suya esté en desacuerdo. No se autorizan reservas de carácter general. La reserva va con una breve exposición de la ley.",
+    "Repito: reservas concretas, nunca generales."
+  ],
+  "h-58": [
+    "Situación: artículo cincuenta y ocho, denuncia.",
+    "Un Estado solo puede denunciar el Convenio pasados cinco años desde su entrada en vigor para él, y con un preaviso de seis meses notificado al Secretario General. Dejar de ser miembro del Consejo de Europa supone dejar de ser parte.",
+    "Repito: cinco años y seis meses."
+  ],
+  "h-59": [
+    "Situación: artículo cincuenta y nueve, firma y ratificación. De examen.",
+    "El Convenio está abierto a la firma de los miembros del Consejo de Europa y se ratifica ante el Secretario General. La Unión Europea podrá adherirse. Entra en vigor con diez ratificaciones.",
+    "Se hizo en Roma el cuatro de noviembre de mil novecientos cincuenta.",
+    "Repito: Roma, cuatro de noviembre de mil novecientos cincuenta; diez ratificaciones."
+  ],
+  "q-ad": [
+    "Situación: Protocolo Adicional de París, veinte de marzo de mil novecientos cincuenta y dos, y Protocolo número cuatro de Estrasburgo, de mil novecientos sesenta y tres.",
+    "Protocolo Adicional, artículo uno: toda persona física o moral tiene derecho al respeto de sus bienes; solo se la priva de su propiedad por utilidad pública y según la ley y el derecho internacional. Los Estados pueden regular el uso de los bienes por interés general o para garantizar impuestos y multas.",
+    "Artículo tres: elecciones libres, a intervalos razonables y con escrutinio secreto. El artículo dos es el derecho a la instrucción.",
+    "Protocolo cuatro, artículo uno: nadie puede ser privado de libertad solo por no poder cumplir una obligación contractual, es decir, no hay prisión por deudas. Incluye libertad de circulación y prohibición de expulsiones colectivas, y entra en vigor con cinco ratificaciones.",
+    "Repito: bienes, instrucción y elecciones; sin prisión por deudas."
+  ],
+  "q-6": [
+    "Situación: Protocolo número seis, Estrasburgo, veintiocho de abril de mil novecientos ochenta y tres, abolición de la pena de muerte.",
+    "Artículo dos: un Estado puede prever la pena de muerte por actos cometidos en tiempo de guerra o de peligro inminente de guerra, comunicándolo al Secretario General.",
+    "Prohíbe reservas. Entra en vigor el primer día del mes siguiente a que cinco Estados manifiesten su consentimiento. El Secretario General notifica firmas, depósitos, fechas y demás actos.",
+    "Atención, trampa: el protocolo seis permite la excepción de guerra."
+  ],
+  "q-7": [
+    "Situación: Protocolo número siete, Estrasburgo, veintidós de noviembre de mil novecientos ochenta y cuatro: expulsión de extranjeros y garantías penales.",
+    "Artículo uno: el extranjero que resida legalmente solo puede ser expulsado por resolución conforme a ley, y debe poder exponer sus razones, hacer examinar su caso y estar representado. Puede ser expulsado antes por orden público o seguridad nacional.",
+    "Artículo dos: derecho a que la condena penal la revise un órgano superior, con excepciones para infracciones menores, cuando le juzgó el tribunal más alto o si le condenaron al recurrir su absolución.",
+    "Artículo tres, indemnización en caso de error judicial. Artículo cuatro, no ser juzgado ni sancionado dos veces por el mismo Estado."
+  ],
+  "q-12": [
+    "Situación: Protocolo número doce, Roma, cuatro de noviembre de dos mil, prohibición general de la discriminación.",
+    "Lo elaboró el Comité Director de Derechos Humanos del Consejo de Europa, y quedó abierto a la firma ese día.",
+    "La memoria explicativa recuerda que no toda diferencia de trato es discriminación. Una distinción es discriminatoria si carece de justificación objetiva y razonable, es decir, si no persigue un objetivo legítimo o no hay relación razonable de proporcionalidad entre medios y fin. Es la doctrina del caso Abdulaziz contra el Reino Unido.",
+    "Repito: justificación objetiva y razonable."
+  ],
+  "q-13": [
+    "Situación: Protocolo número trece, Vilna, tres de mayo de dos mil dos, abolición de la pena de muerte en todas las circunstancias.",
+    "Entra en vigor el primer día del mes siguiente a los tres meses desde que diez Estados expresen su consentimiento. No admite reservas.",
+    "Atención, trampa: el seis permite la excepción de guerra; el trece la abole en todas las circunstancias."
+  ],
+  "p-1": [
+    "Situación: Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional, artículo uno, los términos. Importante, de examen y Recuerda.",
+    "En tu subrayado destacan: representantes de los Estados Partes son delegados, suplentes, asesores, peritos técnicos y secretarios de delegaciones. Magistrados son los magistrados de la Corte. La Presidencia es el órgano formado por el Presidente y los Vicepresidentes primero y segundo.",
+    "Y la Convención de Viena es la de Relaciones Diplomáticas, de dieciocho de abril de mil novecientos sesenta y uno."
+  ],
+  "p-2": [
+    "Situación: artículo dos, personalidad jurídica. Importante, de examen y Recuerda.",
+    "La Corte tiene personalidad jurídica internacional y la capacidad necesaria para sus funciones, en particular para celebrar contratos, adquirir y disponer de bienes muebles e inmuebles y participar en procedimientos judiciales."
+  ],
+  "p-3": [
+    "Situación: artículo tres, disposición general. Importante y de examen.",
+    "La Corte goza en cada Estado Parte de los privilegios e inmunidades necesarios para el cumplimiento de sus propósitos."
+  ],
+  "p-4": [
+    "Situación: artículo cuatro. Importante y de examen.",
+    "Los locales de la Corte son inviolables."
+  ],
+  "p-5": [
+    "Situación: artículo cinco. Importante y de examen.",
+    "La Corte puede enarbolar su pabellón y exhibir su emblema y señales en sus locales y en los vehículos y medios de transporte oficiales."
+  ],
+  "p-6": [
+    "Situación: artículo seis, inmunidad. Importante, de examen y Recuerda.",
+    "La Corte y sus bienes, haberes y fondos gozan de inmunidad de jurisdicción en todas sus formas, salvo que renuncie expresamente en un caso. Esa renuncia no se extiende a ninguna medida de ejecución.",
+    "Además tienen inmunidad de allanamiento, incautación, requisa, decomiso, expropiación y cualquier otra interferencia, y están exentos de restricciones, controles y moratorias en lo necesario para sus funciones.",
+    "Repito: renunciar a la jurisdicción no es renunciar a la ejecución."
+  ],
+  "p-7": [
+    "Situación: artículo siete, archivos.",
+    "Los archivos de la Corte y todos sus papeles y documentos, dondequiera que estén, son inviolables."
+  ],
+  "p-8": [
+    "Situación: artículo ocho, impuestos. Examen oficial, importante y Recuerda.",
+    "La Corte, sus haberes, ingresos, bienes y operaciones están exentos de todos los impuestos directos. Pero no puede reclamar la exención de gravámenes que sean remuneración de servicios públicos a tarifa fija según la cantidad prestada e identificables.",
+    "También está exenta de derechos de aduana y restricciones sobre lo que importe o exporte para uso oficial y sobre sus publicaciones.",
+    "Atención, trampa: exenta de impuestos directos, no de las tarifas de servicios."
+  ],
+  "p-9": [
+    "Situación: artículo nueve, reembolso. Importante y de examen.",
+    "Por regla general la Corte no reclama exención de impuestos incluidos en el precio. Pero en compras importantes para uso oficial, los Estados toman las disposiciones para eximirla o reembolsarla. Lo adquirido en franquicia no se vende salvo condiciones pactadas, y no hay exención en tarifas de servicios públicos."
+  ],
+  "p-10": [
+    "Situación: artículo diez, fondos. Examen oficial, importante y Recuerda.",
+    "La Corte no está sometida a controles, reglamentos ni moratorias financieros. Puede tener fondos, moneda u oro y operar cuentas en cualquier moneda; transferirlos y convertirlos libremente; y negociar bonos y títulos.",
+    "Y en tipo de cambio recibe un trato no menos favorable que cualquier organización intergubernamental o misión diplomática."
+  ],
+  "p-11": [
+    "Situación: artículo once, comunicaciones. Importante y de examen.",
+    "Para sus comunicaciones la Corte recibe un trato no menos favorable que organizaciones intergubernamentales o misiones diplomáticas en prioridades y tarifas. Sus comunicaciones oficiales no sufren censura alguna y son inviolables.",
+    "Puede usar medios electrónicos y cifras, correo y valija sellada, y equipos de radio en las frecuencias que asignen los Estados, que se esforzarán por darle las solicitadas."
+  ],
+  "p-12": [
+    "Situación: artículo doce, funciones fuera de la sede. Importante y de examen.",
+    "Si la Corte considera conveniente sesionar en un lugar distinto de su sede de La Haya, puede concertar un acuerdo con el Estado de que se trate sobre las facilidades adecuadas para ejercer sus funciones.",
+    "Repito: sede en La Haya; fuera, acuerdo con el Estado."
+  ],
+  "p-13": [
+    "Situación: artículo trece, representantes en la Asamblea. Importante y de examen.",
+    "Representantes de Estados Partes, de observadores y de Estados y organizaciones invitados, mientras ejercen sus funciones y en el viaje, tienen privilegios como la inmunidad de jurisdicción por lo dicho, escrito o hecho oficialmente, que subsiste tras cesar; las inmunidades de equipaje de un agente diplomático; y demás privilegios compatibles, salvo la exención de aduanas sobre mercancías que no sean equipaje personal o de impuestos de compraventa y consumo.",
+    "No se aplican entre el representante y las autoridades del Estado del que es nacional o al que representa. Tu Exprés cita el catorce: representantes en las actuaciones."
+  ],
+  "p-15": [
+    "Situación: artículo quince, Magistrados, Fiscal, Adjuntos y Secretario. Importante, de examen y Recuerda.",
+    "En sus funciones gozan de los privilegios e inmunidades de los jefes de misiones diplomáticas, y al expirar el mandato siguen con inmunidad de jurisdicción por lo dicho, escrito o hecho oficialmente.",
+    "Ellos y sus familiares tienen facilidades para salir y entrar como los agentes diplomáticos. Si residen en otro Estado Parte para estar a disposición de la Corte, gozan allí de las inmunidades diplomáticas. A los Magistrados se les aplica tras el mandato si siguen ejerciendo.",
+    "Sus sueldos están exentos de impuestos; las pensiones de los ex cargos no tienen por qué estarlo.",
+    "Repito: como jefes de misión diplomática."
+  ],
+  "p-16": [
+    "Situación: artículo dieciséis, Secretario Adjunto y personal. Importante y de examen.",
+    "En tu subrayado, el apartado dos: los Estados no están obligados a eximir del impuesto sobre la renta las pensiones de ex secretarios adjuntos, ex personal y personas a su cargo.",
+    "Tu Exprés cita el diecisiete: personal contratado localmente."
+  ],
+  "p-18": [
+    "Situación: artículo dieciocho, abogados.",
+    "Gozan de privilegios e inmunidades en la medida necesaria. Por ejemplo, la exención de inspección del equipaje personal, salvo razones fundadas de que contiene artículos prohibidos; y entonces la inspección se hace en presencia del abogado.",
+    "Designado un abogado, el Secretario le firma un certificado por el período necesario, que se retira si termina el poder antes. Se aplica también a quienes asisten a los abogados defensores."
+  ],
+  "p-20": [
+    "Situación: artículo veinte, víctimas. Importante y de examen. Tu Exprés cita testigos y peritos.",
+    "Las víctimas que participen en las actuaciones tienen los privilegios necesarios para comparecer, incluido el viaje, siempre que exhiban el documento que certifica su participación, por ejemplo la exención de restricciones migratorias para viajar a la Corte.",
+    "La Corte les expide ese documento con la duración de su participación."
+  ],
+  "p-22": [
+    "Situación: artículo veintidós, otras personas requeridas en la sede. Importante y de examen.",
+    "Reciben los privilegios de los apartados a) a d) del párrafo uno del artículo veinte, los de las víctimas, en la medida necesaria, con un documento extendido por la Corte."
+  ],
+  "p-23": [
+    "Situación: artículo veintitrés, nacionales y residentes permanentes. Importante y de examen.",
+    "En el Estado del que sean nacionales o residentes permanentes, las personas de los artículos veinte y veintidós solo disfrutan de los privilegios e inmunidades necesarios para su comparecencia ante la Corte."
+  ],
+  "p-24": [
+    "Situación: artículo veinticuatro, cooperación con las autoridades. Importante y de examen.",
+    "La Corte coopera siempre con los Estados para facilitar el cumplimiento de sus leyes e impedir abusos. Quienes gozan de privilegios deben respetar las leyes y no inmiscuirse en los asuntos internos."
+  ],
+  "p-25": [
+    "Situación: artículo veinticinco, renuncia en los artículos trece y catorce. Importante y de examen.",
+    "Los privilegios de los representantes no se dan en beneficio personal sino para salvaguardar el ejercicio independiente de sus funciones. Por eso los Estados no solo pueden, sino que deben renunciar cuando obstaculicen la justicia y la renuncia no perjudique su fin.",
+    "Los Estados no partes y las organizaciones asumen las mismas obligaciones."
+  ],
+  "p-26": [
+    "Situación: artículo veintiséis, renuncia en los artículos quince a veintidós. Importante y de examen.",
+    "Se reconocen en interés de la administración de justicia. Hay obligación de renunciar cuando obstaculicen la justicia y sea posible sin perjudicar su fin.",
+    "Quién renuncia: respecto de un Magistrado o el Fiscal, la mayoría absoluta de los Magistrados. Respecto del Secretario, la Presidencia. Respecto de los abogados y quienes les asisten, la Presidencia.",
+    "Repito: Magistrado o Fiscal, mayoría absoluta de Magistrados; Secretario y abogados, Presidencia."
+  ],
+  "p-27": [
+    "Situación: artículo veintisiete, seguridad social. Importante y de examen.",
+    "Desde que la Corte establezca su sistema de seguridad social, las personas de los artículos quince, dieciséis y diecisiete quedan exentas, por sus servicios, de toda contribución obligatoria a los sistemas nacionales."
+  ],
+  "p-28": [
+    "Situación: artículo veintiocho, notificación. De examen.",
+    "El Secretario comunica periódicamente a los Estados los nombres de Magistrados, Fiscal, Adjuntos, Secretario, personal y abogados a quienes se aplica el Acuerdo, y los cambios en su condición."
+  ],
+  "p-29": [
+    "Situación: artículo veintinueve, laissez-passer, el documento de viaje. De examen.",
+    "Los Estados Partes reconocen y aceptan como documentos de viaje válidos los laissez-passer de las Naciones Unidas o los documentos de viaje expedidos por la Corte a sus miembros."
+  ],
+  "p-30": [
+    "Situación: artículo treinta, visados. Importante y de examen.",
+    "Las solicitudes de visado de los titulares de ese documento se tramitan con la mayor rapidez posible y de forma gratuita.",
+    "Tu Exprés cita el treinta y uno: arreglo de controversias con terceros."
+  ],
+  "p-32": [
+    "Situación: artículo treinta y dos, arreglo de diferencias. Importante, de examen y Recuerda.",
+    "Primero, consultas, negociación u otro medio convenido. Si en tres meses desde la solicitud escrita no se resuelve, cualquiera puede someterla a un tribunal arbitral.",
+    "Son tres árbitros: uno por cada parte y el tercero, presidente, elegido por los dos. Si en dos meses falta un nombramiento, lo hace el Presidente de la Corte Internacional de Justicia. Decide por mayoría y el laudo es definitivo y obligatorio.",
+    "Repito: tres meses, tres árbitros, dos meses."
+  ],
+  "p-34": [
+    "Situación: artículo treinta y cuatro, firma. Está en el Recuerda.",
+    "El Acuerdo estuvo abierto a la firma de todos los Estados desde el diez de septiembre de dos mil dos hasta el treinta de junio de dos mil cuatro, en la sede de las Naciones Unidas en Nueva York."
+  ],
+  "p-35": [
+    "Situación: artículo treinta y cinco, entrada en vigor. De examen.",
+    "Entra en vigor treinta días después de depositarse el décimo instrumento. Para cada Estado posterior, el trigésimo día desde que deposite el suyo.",
+    "Repito: décimo instrumento y treinta días."
+  ],
+  "p-36": [
+    "Situación: artículo treinta y seis, enmiendas. Importante y de examen.",
+    "Si en tres meses desde la comunicación la mayoría de los Estados Partes apoya una conferencia de examen, se convoca. Sin consenso, las enmiendas se aprueban por dos tercios de los presentes y votantes, con mayoría de Estados presente.",
+    "Entran en vigor sesenta días después de que dos tercios depositen su ratificación. El Estado no obligado sigue como Parte sin la enmienda."
   ]
 };
