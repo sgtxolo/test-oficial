@@ -83,6 +83,9 @@ footer{margin-top:28px;color:var(--muted);font-size:13px}
 .day.skipped{background:transparent;color:var(--muted)}
 .mv{font-size:12.5px;color:var(--muted);margin-top:4px}
 .skipbtn{margin-top:8px;font-size:12px;padding:5px 10px}
+.estfila{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+.estfila select{font:inherit;font-size:13px;padding:5px;max-width:100%;min-width:0}
+.estfila .skipbtn{margin-top:0}
 .panel{margin-top:14px;display:grid;gap:10px}
 .panel:empty{display:none}
 .pbox{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
@@ -183,8 +186,11 @@ function cierra(){
  if(hay)save();
 }
 function arrastradas(){
- return tasks.filter(t=>{if(done[t.key])return false;const es=ess(t),antes=es.filter(j=>bk[t.key+"|"+j]&&tickDia(t.key,j)<todayISO);if(!antes.length)return false;
-  const tot=es.reduce((a,j)=>a+t.b[j][0],0),hecho=antes.reduce((a,j)=>a+t.b[j][0],0);return tot-hecho<=tot/2});
+ const r=[];
+ for(const t of tasks){if(done[t.key])continue;const es=ess(t),antes=es.filter(j=>bk[t.key+"|"+j]&&tickDia(t.key,j)<todayISO);
+  const tot=es.reduce((a,j)=>a+t.b[j][0],0),hecho=antes.reduce((a,j)=>a+t.b[j][0],0);
+  if(!antes.length||tot-hecho>tot/2)break;r.push(t)}
+ return r;
 }
 function colaIngles(){
  const q=[];tasks.forEach(t=>(t.b||[]).forEach((x,j)=>{if(esIng(x)&&!(bOk(t.key,j)&&tickDia(t.key,j)<todayISO))q.push({t,j})}));return q;
@@ -340,6 +346,48 @@ function pendienteAntes(arr){
   v.blks.filter(o=>!bOk(o.k,o.j)||tickDia(o.k,o.j)===todayISO).forEach(o=>w.appendChild(filaBloque(v,o,t.t)))});
  return w;
 }
+/* «He estudiado…»: se elige qué se ha estudiado y se marca donde le tocaba; el recálculo es el de las 00:00 */
+let est={abierto:false,tipo:"esquema",sel:"",ultimo:null};
+function opciones(tipo,out){
+ const cuando=k=>{const v=out.find(v=>v.key===k&&v.d>=todayISO);return v?v.d:tasks.find(t=>t.key===k).d};
+ if(tipo==="ingles")return colaIngles().filter(n=>!bOk(n.t.key,n.j)).map(n=>({id:n.t.key+"|"+n.j,partes:[{k:n.t.key,j:n.j}],txt:(n.t.ing||n.t.b[n.j][1]).split(" · ")[0].replace(/^Estudia /,""),d:n.t.d}));
+ const vistos=new Set(),r=[];
+ tasks.forEach(t=>{if(done[t.key])return;
+  const es=ess(t),porTema={};
+  es.forEach(j=>{const tx=t.b[j][1],m=tx.match(/^T(\d+) [^:]+: esquema/);
+   if(m){(porTema[m[1]]=porTema[m[1]]||[]).push(j);return}
+   if(!/^V[456]$/.test(t.k)&&t.tm&&t.tm.length){
+    const vale=tipo==="esquema"?/^(Esquema de memoria|Repasa el Esquema)/.test(tx):(t.k==="NUEVO"?/^(Estudiar|Lee y estudia)/.test(tx):true);
+    if(vale)(porTema[t.tm[0]]=porTema[t.tm[0]]||[]).push(j)}});
+  Object.keys(porTema).forEach(n=>{
+   const js=porTema[n].filter(j=>!bOk(t.key,j));if(!js.length)return;
+   const parte=(t.t.match(/\(parte \d\/\d\)/)||[""])[0],g=n+parte;if(vistos.has(g))return;vistos.add(g);
+   const d=cuando(t.key);
+   r.push({id:t.key+"|"+n,n:+n,partes:js.map(j=>({k:t.key,j})),txt:(NOMT[n]?"T"+n+" "+NOMT[n].replace(/^T\d+ /,""):"T"+n)+(parte?" "+parte:"")+" · "+(TAGS[t.k]||[t.k])[0],d})});
+ });
+ return r.sort((a,b)=>a.n-b.n||(a.d<b.d?-1:1));
+}
+function panelEstudiado(out){
+ const w=document.createElement("div");w.className="estudiado";
+ const bt=document.createElement("button");bt.className="skipbtn";bt.textContent=est.abierto?"Cerrar «He estudiado…»":"He estudiado… ▾";bt.onclick=()=>{est.abierto=!est.abierto;render()};w.appendChild(bt);
+ if(!est.abierto)return w;
+ const fila=document.createElement("div");fila.className="estfila";
+ const tipo=document.createElement("select");tipo.setAttribute("aria-label","Qué has estudiado");
+ [["esquema","Esquema clave"],["principal","Bloque principal"],["ingles","Inglés"]].forEach(([v,t])=>{const o=document.createElement("option");o.value=v;o.textContent=t;tipo.appendChild(o)});
+ tipo.value=est.tipo;tipo.onchange=()=>{est.tipo=tipo.value;est.sel="";render()};
+ const ops=opciones(est.tipo,out),sel=document.createElement("select");sel.setAttribute("aria-label","Tema");
+ const o0=document.createElement("option");o0.value="";o0.textContent=ops.length?"Elige el tema…":"No queda nada pendiente de este tipo";sel.appendChild(o0);
+ ops.forEach(p=>{const o=document.createElement("option");o.value=p.id;o.textContent=p.txt+" (tocaba "+dshort(p.d)+")";sel.appendChild(o)});
+ sel.value=est.sel;sel.onchange=()=>{est.sel=sel.value};
+ const ok=document.createElement("button");ok.className="skipbtn";ok.textContent="Marcar como hecho";
+ ok.onclick=()=>{const p=ops.find(p=>p.id===sel.value);if(!p)return;
+  p.partes.forEach(z=>{fija(z.k);bk[z.k+"|"+z.j]=true;mk("bk",z.k+"|"+z.j)});
+  est.ultimo={partes:p.partes,txt:p.txt+" (tocaba "+dshort(p.d)+")",d:todayISO};est.sel="";save();const y=window.scrollY;render();window.scrollTo(0,y)};
+ fila.append(tipo,sel,ok);w.appendChild(fila);
+ if(est.ultimo&&est.ultimo.d===todayISO){const m=document.createElement("div");m.className="mv";m.textContent="Marcado: "+est.ultimo.txt+". El plan se recalcula a las 00:00. ";
+  const u=document.createElement("button");u.className="skipbtn";u.textContent="Deshacer";u.onclick=()=>{est.ultimo.partes.forEach(z=>{bk[z.k+"|"+z.j]=false;mk("bk",z.k+"|"+z.j)});est.ultimo=null;save();render()};m.appendChild(u);w.appendChild(m)}
+ return w;
+}
 function render(){
  const list=document.getElementById("list");list.textContent="";
  cierra();
@@ -382,6 +430,7 @@ function render(){
   if(v.d===todayISO&&v.pr&&!v.skipped){const nx=out.find(x=>x.d>todayISO&&x.pr&&!x.skipped&&x.key&&!x.slack&&x.e.core&&!done[x.key]);if(nx){const ab=document.createElement("button");ab.className="skipbtn";ab.textContent="Hoy he hecho más: adelantar «"+nx.e.t.replace(/^[^:]*: /,"")+"»";ab.onclick=()=>{done[nx.key]=true;mk("done",nx.key);save();render()};b.appendChild(ab)}}
   if(v.skipped){const bt=document.createElement("button");bt.className="skipbtn";bt.textContent="Deshacer";bt.onclick=()=>{delete skip[v.d];mk("skip",v.d);save();render()};b.appendChild(bt)}
   if(v.d===todayISO&&c.arr.length)b.appendChild(pendienteAntes(c.arr));
+  if(v.d===todayISO)b.appendChild(panelEstudiado(out));
   r.append(cb,dt,b);grp.appendChild(r);
  });
  const n=checkable.filter(o=>done[o.key]).length;
