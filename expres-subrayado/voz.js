@@ -246,15 +246,17 @@
     panel.querySelector('.vz-n').textContent = items.length && (jugando || pos) ? Math.min(pos + 1, items.length) + '/' + items.length : '';
     panel.classList.toggle('on', jugando || pos > 0);
     panel.querySelector('[data-voz="seg"]').classList.toggle('on', seguir);
+    var vb = panel.querySelector('[data-voz="ver"]'); vb.textContent = nueva ? '⟳ Actualizar' : 'v' + VERSION; vb.classList.toggle('on', !!nueva);
   }
   function crea() {
     panel = document.createElement('div'); panel.id = 'vz';
     panel.innerHTML = '<div class="vz-b"><button class="vz-play" data-voz="play">▶ Escuchar</button><button data-voz="ant" title="Frase anterior">⏪</button><button data-voz="sig" title="Frase siguiente">⏩</button>'
       + '<button data-voz="ini" title="Empezar este artículo de nuevo">⟲</button><select title="Velocidad">' + [0.85, 1, 1.1, 1.25, 1.4].map(function (v) { return '<option value="' + v + '"' + (v === rate ? ' selected' : '') + '>' + String(v).replace('.', ',') + '×</option>'; }).join('') + '</select>'
-      + '<button data-voz="seg" title="Al terminar, pasa al artículo siguiente y sigue narrando">Seguido</button><span class="vz-n"></span></div>';
+      + '<button data-voz="seg" title="Al terminar, pasa al artículo siguiente y sigue narrando">Seguido</button><span class="vz-n"></span><button class="vz-ver" data-voz="ver" title="Versión de la app">v</button></div>';
     panel.addEventListener('click', function (e) {
       e.stopPropagation(); var b = e.target.closest('[data-voz]'); if (!b) return; var x = b.getAttribute('data-voz');
       if (!('speechSynthesis' in window)) { alert('Este navegador no tiene voz.'); return; }
+      if (x === 'ver') { if (nueva) location.reload(); return; }
       if (x === 'seg') { seguir = !seguir; try { localStorage.setItem('exsub-voz-seg', seguir ? '1' : '0'); } catch (er) {} return pinta(); }
       var s_ = vis.querySelector('.ptabs [data-v="ms"]'); if (x === 'play' && !jugando && s_ && !s_.classList.contains('on')) s_.click();
       prepara();
@@ -267,7 +269,17 @@
     panel.addEventListener('touchend', function (e) { e.stopPropagation(); }, { passive: true });
   }
   /* la vista ampliada se vuelve a pintar entera con cada cambio: se recoloca el panel y, si cambió el artículo, se narra el nuevo */
+  /* un segundo toque rápido (el gesto de «doble toque para ampliar») no debe pulsar nada de la vista recién abierta */
+  var abierto = 0, estaba = false;
+  ['click', 'dblclick'].forEach(function (ev) { window.addEventListener(ev, function (e) { if (estaba && Date.now() - abierto < 500 && vis.contains(e.target)) { e.stopPropagation(); e.preventDefault(); } }, true); });
+  /* versión a la vista: si en internet hay una más nueva, se ofrece actualizar */
+  var VERSION = 877, nueva = 0;
+  function compruebaVersion() {
+    if (location.protocol === 'file:' || !window.fetch) return;
+    fetch('service-worker.js?v=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.text(); }).then(function (s) { var m = s.match(/oposicion-cache-v(\d+)/); if (m && +m[1] > VERSION) { nueva = +m[1]; pinta(); } }).catch(function () {});
+  }
   function revisa() {
+    var ahora = !vis.classList.contains('oculto'); if (ahora && !estaba) { abierto = Date.now(); compruebaVersion(); } estaba = ahora;
     if (vis.classList.contains('oculto')) { if (jugando || clave) { jugando = false; parar(); sueltaWake(); clave = ''; items = []; pos = 0; } return; }
     var abajo = vis.querySelector('.bar.abajo'); if (!abajo) return;
     if (!panel) crea();
@@ -279,6 +291,7 @@
 
   var css = document.createElement('style');
   css.textContent = '#vz .vz-b button,#vz .vz-b select{white-space:nowrap}@media (max-width:520px){#vz .vz-b{flex-wrap:nowrap!important;gap:4px!important}#vz button,#vz select{padding:5px 6px!important;font-size:13px!important}#vz .vz-play{min-width:92px!important}#vz .vz-n{display:none}}'
+    + '#vz .vz-ver{font-size:10px!important;opacity:.7;padding:2px 3px!important;border:0!important}#vz .vz-ver.on{font-size:13px!important;opacity:1}'
     + '#vz{flex:none;border-top:1px solid var(--borde);background:var(--panel);padding:5px 8px}'
     + '#vz .vz-b{display:flex;gap:5px;align-items:center;flex-wrap:wrap;justify-content:center}'
     + '#vz button,#vz select{font:inherit;font-size:14px;padding:6px 10px;border-radius:9px;border:1.5px solid var(--borde);background:var(--panel);color:inherit;cursor:pointer}'
