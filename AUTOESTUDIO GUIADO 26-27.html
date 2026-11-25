@@ -494,7 +494,12 @@ function botonCrono(o){
   if(c.desde){c.s=segs(c);delete c.desde}else{Object.values(T).forEach(z=>{if(z.desde){z.s=segs(z);delete z.desde}});c.desde=Date.now()}
   T[id]=c;ponLS("plan-tiempos",T);const y=window.scrollY;render();window.scrollTo(0,y)};
  const m=media(tipoB(o.x));if(m)b.title+=" · tu media real en este tipo: "+m+" min";
- return b;
+ if(!r||(!r.s&&!r.desde))return b;
+ /* ↺ borra el tiempo de este apartado (por si se pulsó sin querer): no cuenta para la media */
+ const w=document.createElement("span");w.className="cronos";
+ const x=document.createElement("button");x.className="crono";x.textContent="↺ Borrar tiempo";x.setAttribute("aria-label","Borrar el tiempo de este apartado");
+ x.onclick=ev=>{ev.preventDefault();const T=leeLS("plan-tiempos",{});delete T[id];ponLS("plan-tiempos",T);const y=window.scrollY;render();window.scrollTo(0,y)};
+ w.append(b," ",x);return w;
 }
 function paraCrono(id){const T=leeLS("plan-tiempos",{}),c=T[id];if(c&&c.desde){c.s=segs(c);delete c.desde;ponLS("plan-tiempos",T)}}
 setInterval(()=>{const T=leeLS("plan-tiempos",{});(document.querySelectorAll?document.querySelectorAll(".crono.activo"):[]).forEach(b=>{const r=T[b.dataset.crono];if(r&&r.desde)b.textContent="⏸ "+reloj(segs(r))})},1000);
@@ -621,7 +626,7 @@ try{if(!localStorage.getItem("plan-oficial2-seed1")){tasks.slice(0,2).forEach(t=
 render();
 setTimeout(()=>document.getElementById("goto").click(),50);
 /* Versión visible y recarga sola: el iPhone reanuda la app desde memoria y no vuelve a pedir la página */
-const VERSION="25-11 · 2";
+const VERSION="25-11 · 3";
 {const el=document.getElementById("ver");if(el)el.textContent="Versión "+VERSION}
 async function buscaVersion(){if(typeof location==="undefined"||String(location.protocol).indexOf("http")!==0)return;try{const t=await (await fetch(location.pathname,{cache:"no-store"})).text(),m=t.match(/const VERSION="([^"]+)"/);if(m&&m[1]!==VERSION&&sessionStorage.getItem("plan-recarga")!==m[1]){sessionStorage.setItem("plan-recarga",m[1]);location.reload()}}catch(e){}}
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")buscaVersion()});
