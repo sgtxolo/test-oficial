@@ -109,20 +109,12 @@ window.MEJORAS = function () {
   };
 
   // ---------- visor: valorar, tapar y atajos ----------
-  const pv0 = pintaVisor;
-  pintaVisor = function () {
-    pv0(); const v = $('#vis'), id = vlista[vi], p = D[tema].piezas.find(x => x.id === id), ab = v.querySelector('.bar.abajo'); if (!p || !ab) return;
-    const m = memDe(tema, p), n = nivel(tema, p);
-    ab.insertAdjacentHTML('beforebegin', '<div class="bar pro"><button class="ib" data-pro="no" title="1">😕 No lo sé</button><button class="ib" data-pro="reg" title="2">🙂 Regular</button><button class="ib" data-pro="se" title="3">😎 Lo sé</button>'
-      + '<button class="ib' + (st.tapa ? ' on' : '') + '" data-pro="tapa" title="T">🙈</button><button class="ib" data-pro="dest" title="Espacio">👁</button>'
-      + '<small>' + NIV[n] + (m ? ' · último: ' + ({no: 'no lo sabía', reg: 'regular', se: 'lo sabía'}[m.r] || '') + ' · próximo repaso ' + fmtF(m.d) : ' · aún sin valorar') + '</small></div>');
-  };
+  // los botones «No lo sé / Regular / Lo sé / tapar» del visor se quitaron a petición del usuario (los atajos de teclado siguen)
   function valoraVisor(r) { const id = vlista[vi]; if (!id) return; const d = valora(key(tema, id), r); aviso({no: '😕 mañana', reg: '🙂 en 3 días', se: '😎 en ' + d + ' días'}[r]); if (vi < vlista.length - 1) { vi++; zoom = 1; } pintaVisor(); }
   $('#vis').addEventListener('click', e => {
     const b = e.target.closest('[data-pro]'); if (!b) return; const x = b.dataset.pro;
     if (x === 'tapa') { ponTapa(); pintaVisor(); } else if (x === 'dest') destapa(); else valoraVisor(x);
   });
-  $('#vis').addEventListener('dblclick', e => { if (e.target.closest('.bar, .ptabs, svg.tp rect')) return; valoraVisor('se'); });   // doble toque = «Lo sé»
   addEventListener('keydown', e => {
     if ($('#vis').classList.contains('oculto') || /INPUT|TEXTAREA|SELECT/.test((e.target || {}).tagName) || e.ctrlKey || e.metaKey || e.altKey) return;
     const k = e.key.toLowerCase(), id = vlista[vi], kk = key(tema, id);
