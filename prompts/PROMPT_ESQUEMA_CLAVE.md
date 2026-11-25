@@ -100,6 +100,15 @@ Crea `clave-arts/tN.js`, `clave-arts/tN-f.js`, `clave-tests/tN-sec.js` y `clave-
   - Panel en móvil: una sola línea + botones; oculta la barra «Escuchar». Muestra «· vNNN» al final de la línea: sirve para saber qué versión corre.
   - En la app el esquema va en iframe: el scroll lo hace `expres-subrayado.html` (mensaje `claveScroll`). Al cambiar `clave-mejoras.js`, subir el `?v=` de su `<script>` en las páginas `repaso-tN-esquema-clave-nuevo.html` y la CACHE del service worker (los `.js` se sirven de caché y se refrescan en segundo plano).
 
+### 5 bis) Narrado extendido TAMBIÉN en el esquema subrayado — OBLIGATORIO (lo pedí el 25/11/2026)
+Siempre que te pida el **narrador del esquema clave** (narración extendida) de un tema, haz ADEMÁS la narración extendida artículo por artículo del **Exprés subrayado** (botón ▶ Escuchar de la vista ampliada). No hace falta que lo pida aparte.
+- Fichero `expres-subrayado/voz-guion-tN.js`: `(window.VOZ_G = window.VOZ_G || {})[N] = { "idRecorte": ["párrafo 1", "párrafo 2"], … };`. Los ids son los de `expres-subrayado/datos-tN.js` (`piezas[].id`). Modelos: `voz-guion-t12.js` y `voz-guion-t1.js`.
+- Un guion por CADA recorte visible (los que no tienen `extra`). Si un recorte (o su ficha del Exprés) incluye artículos vecinos que no tienen recorte propio, se cuentan dentro de ese.
+- Estilo: «Situación: …», aviso de examen según sus marcas (EXOF/EX/✱/R), apartado por apartado y letra por letra explicando, «Fíjate…», «Atención, trampa…», «Repito…» con lo caído en examen y «Mini repaso». Sigue lo que se ve en el subrayado (el Exprés es la guía; si dudas, mira la foto `expres-subrayado/img/tN/ID-r.jpg`).
+- Texto hablado: números en letra, sin símbolos. **Solo datos del Exprés, del subrayado, del esquema o de las preguntas del tema; nada de memoria.**
+- Conectar: `<script src="expres-subrayado/voz-guion-tN.js"></script>` ANTES de `voz.js` en `expres-subrayado.html`, añadirlo a `APP_SHELL`, subir `CACHE_NAME` y la constante `VERSION` de `voz.js` al mismo número.
+- Comprobar: `node --check` y que todos los ids existan: `node prompts/herramientas/voz-guion-revisar.js N` (lista recortes sin guion e ids sobrantes).
+
 ### 6) Lista de comprobación final (antes del commit)
 1. `service-worker.js`: añadir a `APP_SHELL` `repaso-tN-esquema-clave-nuevo.html`, `clave-tests/tN-todo.js`, `tN-esq.js`, `tN-sec.js`, `tN-amar.js`, `clave-arts/tN.js`, `tN-f.js`, `clave-audio/tN.js` (+ `tN-2.js`…) y **subir `CACHE_NAME` en +1**.
 2. `expres-subrayado/clave-fijos.js`: entrada `N: "repaso-tN-esquema-clave-nuevo.html"` (comenta la antigua: la de abajo pisa a la de arriba).
