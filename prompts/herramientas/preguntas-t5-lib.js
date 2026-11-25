@@ -16,7 +16,12 @@ const NORMAS = {
   r977: ['Reglamento (UE) n.º 977/2011 de la Comisión, de 3 de octubre de 2011, que modifica el Reglamento (CE) n.º 810/2009 (Código de visados)', 'el Reglamento (UE) n.º 977/2011', 'Reglamento (UE) n.º 977/2011 (modifica el Código de visados)'],
   eur: ['Reglamento (UE) 2024/1358, de 14 de mayo de 2024, sobre la creación del sistema «Eurodac» para la comparación de datos biométricos', 'el Reglamento (UE) 2024/1358', 'Reglamento (UE) 2024/1358 (Sistema EURODAC)'],
   aec: ['Orden AEC/240/2011, de 4 de enero, por la que se crea el fichero de datos de carácter personal del Sistema de Información de Visados y la Autoridad Nacional del Sistema de Información de Visados', 'la Orden AEC/240/2011', 'Orden AEC/240/2011, por la que se crea el fichero de datos de carácter personal del Sistema de información de'] };
-const PREF = {};
+// Claves «…a» (✱ del temario): mismo Reglamento con el título abreviado en el enunciado.
+NORMAS.sisa = NORMAS.sis; NORMAS.visa = NORMAS.vis; NORMAS.cva = NORMAS.cv;
+const PREF = {
+  sisa: 'Reglamento (UE) 2018/1861 (SIS – inspecciones fronterizas)',
+  visa: 'Reglamento (CE) n.º 767/2008 (Reglamento VIS)',
+  cva: 'Reglamento (CE) n.º 810/2009 (Código de visados)' };
 const COLA = [', en los términos que establezca el propio Reglamento', ', salvo que el Estado miembro afectado disponga otra cosa', ', conforme al procedimiento que se establezca reglamentariamente', ', sin perjuicio de lo dispuesto en el Derecho nacional'];
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const nrm = s => s.replace(/=====PAG \d+=====/g, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/-\s*\n\s*/g, '').replace(/[^a-z0-9ñ]/g, '');
