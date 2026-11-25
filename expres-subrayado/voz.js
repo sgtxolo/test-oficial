@@ -273,7 +273,7 @@
   var abierto = 0, estaba = false;
   ['click', 'dblclick'].forEach(function (ev) { window.addEventListener(ev, function (e) { if (estaba && Date.now() - abierto < 500 && vis.contains(e.target)) { e.stopPropagation(); e.preventDefault(); } }, true); });
   /* versión a la vista: si en internet hay una más nueva, se ofrece actualizar */
-  var VERSION = 879, nueva = 0;
+  var VERSION = 880, nueva = 0;
   function compruebaVersion() {
     if (location.protocol === 'file:' || !window.fetch) return;
     fetch('service-worker.js?v=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.text(); }).then(function (s) { var m = s.match(/oposicion-cache-v(\d+)/); if (m && +m[1] > VERSION) { nueva = +m[1]; pinta(); } }).catch(function () {});
