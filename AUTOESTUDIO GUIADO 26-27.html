@@ -130,6 +130,7 @@ img{max-width:100%}
 <div class="wrap">
 <header>
  <h1>Autoestudio Guiado 26-27</h1>
+ <p class="sub" id="ver"></p>
  <p class="sub">Del 5 de noviembre de 2026 al examen del 1 de julio de 2027. Entre 3 y 4 horas al día: los temas nuevos se reparten por páginas (≈25 al día) hasta el 30 de noviembre y después vienen seis vueltas completas. Las notas de los tests se apuntan solas: los temas por debajo del 85 % pasan solos a la lista de flojos. Toca un día para ver sus bloques con minutos.</p>
  <div class="stats">
   <div class="stat"><b id="left">–</b><span>días para el examen</span></div>
@@ -619,6 +620,11 @@ try{const s=JSON.parse(localStorage.getItem("plan-oficial2")||"null");if(s){done
 try{if(!localStorage.getItem("plan-oficial2-seed1")){tasks.slice(0,2).forEach(t=>{done[t.key]=true;tmk["done|"+t.key]=1});localStorage.setItem("plan-oficial2-seed1","1");save()}}catch(e){}
 render();
 setTimeout(()=>document.getElementById("goto").click(),50);
+/* Versión visible y recarga sola: el iPhone reanuda la app desde memoria y no vuelve a pedir la página */
+const VERSION="25-11 · 2";
+{const el=document.getElementById("ver");if(el)el.textContent="Versión "+VERSION}
+async function buscaVersion(){if(typeof location==="undefined"||String(location.protocol).indexOf("http")!==0)return;try{const t=await (await fetch(location.pathname,{cache:"no-store"})).text(),m=t.match(/const VERSION="([^"]+)"/);if(m&&m[1]!==VERSION&&sessionStorage.getItem("plan-recarga")!==m[1]){sessionStorage.setItem("plan-recarga",m[1]);location.reload()}}catch(e){}}
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")buscaVersion()});
 /* Al volver de hacer un test se marca solo */
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"){const y=window.scrollY;render();window.scrollTo(0,y)}});
 if(window.addEventListener){window.addEventListener("storage",e=>{if(/^(oficialAppState_v1|ingles_gc_state_v1)$/.test(e.key)){const y=window.scrollY;render();window.scrollTo(0,y)}});window.addEventListener("pageshow",e=>{if(e.persisted)render()})}
