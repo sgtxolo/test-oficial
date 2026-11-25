@@ -395,5 +395,526 @@
     "En cooperación de competencia militar, las referencias al Juzgado Central y a la Sala de lo Penal se entienden hechas al Juzgado Togado Militar Central Decano y al Tribunal Militar Central; y las del Fiscal, al Fiscal Jurídico Militar.",
     "Tienen carácter orgánico los artículos siete, ocho, nueve, diez, once, doce, trece salvo su apartado dos, quince y veintiuno apartado tres, la disposición adicional segunda y el apartado dos de la tercera; el resto es ordinario.",
     "La ley entra en vigor el día siguiente de su publicación en el Boletín Oficial del Estado."
+  ],
+  "k-datos": [
+    "Situación: datos y estructura de la Carta de los Derechos Fundamentales de la Unión Europea.",
+    "Fechas, memorízalas. Proclamación solemne, siete de diciembre de dos mil, en Niza. Publicación en el Diario Oficial, dieciocho de diciembre de dos mil. Revisión, doce de diciembre de dos mil siete, en Estrasburgo. Y jurídicamente vinculante desde el uno de diciembre de dos mil nueve, con el Tratado de Lisboa. La emiten el Parlamento, el Consejo y la Comisión.",
+    "Tiene siete títulos, y preguntan el nombre y qué derechos recoge cada uno. Uno, Dignidad, artículos uno a cinco. Dos, Libertades, seis a diecinueve. Tres, Igualdad, veinte a veintiséis. Cuatro, Solidaridad, veintisiete a treinta y ocho. Cinco, Ciudadanía, treinta y nueve a cuarenta y seis. Seis, Justicia, cuarenta y siete a cincuenta. Y siete, disposiciones generales, cincuenta y uno a cincuenta y cuatro.",
+    "Repito: dignidad, libertades, igualdad, solidaridad, ciudadanía, justicia y disposiciones generales."
+  ],
+  "k-pre": [
+    "Situación: el preámbulo de la Carta.",
+    "Los pueblos de Europa deciden compartir un porvenir pacífico basado en valores comunes. La Unión se funda sobre los valores indivisibles y universales de la dignidad humana, la libertad, la igualdad y la solidaridad, y se basa en los principios de democracia y Estado de Derecho. Sitúa a la persona en el centro de su actuación.",
+    "Respeta la identidad nacional de los Estados y garantiza la libre circulación de personas, servicios, mercancías y capitales y la libertad de establecimiento. La Carta reafirma, respetando el principio de subsidiariedad, los derechos de las tradiciones constitucionales, el Convenio Europeo, las Cartas Sociales y la jurisprudencia del Tribunal de Justicia y del Tribunal Europeo de Derechos Humanos.",
+    "Se interpreta atendiendo a las explicaciones elaboradas bajo la autoridad del Praesidium de la Convención que la redactó. El disfrute de los derechos conlleva responsabilidades con los demás, la comunidad humana y las generaciones futuras. Y la Unión reconoce los derechos que siguen.",
+    "Repito: dignidad, libertad, igualdad y solidaridad."
+  ],
+  "k-1": [
+    "Situación: artículo uno de la Carta, la dignidad humana. Importante y de examen.",
+    "La dignidad humana es inviolable. Será respetada y protegida.",
+    "Repito: inviolable, respetada y protegida."
+  ],
+  "k-2": [
+    "Situación: artículo dos, derecho a la vida. Importante y de examen.",
+    "Toda persona tiene derecho a la vida. Nadie podrá ser condenado a la pena de muerte ni ejecutado.",
+    "Atención, trampa: la Carta prohíbe la pena de muerte sin excepciones."
+  ],
+  "k-3": [
+    "Situación: artículo tres, derecho a la integridad de la persona. Importante y de examen.",
+    "Toda persona tiene derecho a su integridad física y psíquica.",
+    "En medicina y biología se respetan cuatro cosas. Primera, el consentimiento libre e informado. Segunda, la prohibición de las prácticas eugenésicas, en particular las de selección de personas. Tercera, la prohibición de que el cuerpo humano o sus partes sean objeto de lucro. Cuarta, la prohibición de la clonación reproductora.",
+    "Atención, trampa: se prohíbe la clonación reproductora, que es la que menciona el texto."
+  ],
+  "k-4": [
+    "Situación: artículo cuatro, prohibición de la tortura. Importante y de examen.",
+    "Nadie podrá ser sometido a tortura ni a penas o tratos inhumanos o degradantes."
+  ],
+  "k-5": [
+    "Situación: artículo cinco, esclavitud y trabajo forzado. Importante y de examen.",
+    "Nadie podrá ser sometido a esclavitud o servidumbre, ni constreñido a realizar un trabajo forzado u obligatorio. Se prohíbe la trata de seres humanos.",
+    "Mini repaso del título Dignidad: dignidad, vida, integridad, tortura y esclavitud."
+  ],
+  "k-8": [
+    "Situación: artículo ocho, protección de datos personales. Importante y de examen.",
+    "Toda persona tiene derecho a la protección de sus datos. Se tratan de modo leal, para fines concretos y con consentimiento u otro fundamento legítimo previsto por ley. Toda persona puede acceder a sus datos y obtener su rectificación.",
+    "El cumplimiento lo controla una autoridad independiente. Repito: autoridad independiente."
+  ],
+  "k-9": [
+    "Situación: artículo nueve, matrimonio y familia. Ha caído en examen.",
+    "Se garantizan el derecho a contraer matrimonio y a fundar una familia según las leyes nacionales que regulen su ejercicio.",
+    "Fíjate: según las leyes nacionales."
+  ],
+  "k-10": [
+    "Situación: artículo diez, libertad de pensamiento, conciencia y religión. Ha caído en examen.",
+    "Incluye la libertad de cambiar de religión o convicciones y de manifestarlas individual o colectivamente, en público o en privado, mediante el culto, la enseñanza, las prácticas y los ritos.",
+    "Apartado dos: se reconoce el derecho a la objeción de conciencia según las leyes nacionales.",
+    "Tu Exprés añade el artículo once, libertad de expresión y de información."
+  ],
+  "k-12": [
+    "Situación: artículo doce, reunión y asociación. Importante y de examen.",
+    "Toda persona tiene derecho a la libertad de reunión pacífica y de asociación en todos los niveles, especialmente político, sindical y cívico, lo que supone fundar sindicatos y afiliarse a ellos.",
+    "Los partidos políticos a escala de la Unión contribuyen a expresar la voluntad política de los ciudadanos."
+  ],
+  "k-13": [
+    "Situación: artículo trece, artes y ciencias.",
+    "Las artes y la investigación científica son libres. Se respeta la libertad de cátedra."
+  ],
+  "k-14": [
+    "Situación: artículo catorce, educación. Importante y de examen.",
+    "Toda persona tiene derecho a la educación y al acceso a la formación profesional y permanente. Incluye la facultad de recibir gratuitamente la enseñanza obligatoria.",
+    "Repito: gratuita, la obligatoria."
+  ],
+  "k-15": [
+    "Situación: artículo quince, libertad profesional y derecho a trabajar, y tu Exprés cita el dieciséis, libertad de empresa. Importante y de examen.",
+    "Apartado tres: los nacionales de terceros países autorizados a trabajar tienen derecho a condiciones laborales equivalentes a las de los ciudadanos de la Unión.",
+    "Repito: equivalentes."
+  ],
+  "k-17": [
+    "Situación: artículo diecisiete, derecho a la propiedad.",
+    "Toda persona tiene derecho a disfrutar de sus bienes adquiridos legalmente. Nadie puede ser privado de su propiedad salvo por causa de utilidad pública, en los casos y condiciones de la ley y a cambio, en tiempo razonable, de una justa indemnización. Se protege la propiedad intelectual."
+  ],
+  "k-18": [
+    "Situación: artículo dieciocho, derecho de asilo.",
+    "Se garantiza respetando la Convención de Ginebra de veintiocho de julio de mil novecientos cincuenta y uno y el Protocolo de treinta y uno de enero de mil novecientos sesenta y siete sobre el Estatuto de los Refugiados."
+  ],
+  "k-19": [
+    "Situación: artículo diecinueve, protección en caso de devolución, expulsión y extradición.",
+    "Se prohíben las expulsiones colectivas. Y nadie podrá ser devuelto, expulsado o extraditado a un Estado donde corra grave riesgo de pena de muerte, tortura u otras penas o tratos inhumanos o degradantes.",
+    "Repito: expulsiones colectivas, prohibidas."
+  ],
+  "k-20": [
+    "Situación: artículo veinte, igualdad ante la ley. Ha caído en examen.",
+    "Todas las personas son iguales ante la ley.",
+    "Tu Exprés recuerda el veintiuno, no discriminación, y el veintidós: la Unión respeta la diversidad cultural, religiosa y lingüística."
+  ],
+  "k-23": [
+    "Situación: artículo veintitrés, igualdad entre mujeres y hombres. Examen oficial, importante y Recuerda.",
+    "La igualdad entre mujeres y hombres se garantiza en todos los ámbitos, inclusive empleo, trabajo y retribución.",
+    "Y el principio de igualdad no impide medidas con ventajas concretas a favor del sexo menos representado.",
+    "Repito: empleo, trabajo y retribución; ventajas para el sexo menos representado."
+  ],
+  "k-24": [
+    "Situación: artículo veinticuatro, derechos del niño. Examen oficial y Recuerda.",
+    "Los niños tienen derecho a la protección y cuidados necesarios. Pueden expresar libremente su opinión, que se tiene en cuenta según su edad y madurez.",
+    "En todos los actos relativos a niños, públicos o privados, el interés superior del niño es consideración primordial. Y todo niño tiene derecho a relaciones periódicas y contacto directo con su padre y su madre, salvo que sea contrario a sus intereses.",
+    "Tu Exprés recuerda el veinticinco, personas mayores, y el veintiséis, discapacidad."
+  ],
+  "k-27": [
+    "Situación: artículo veintisiete, información y consulta de los trabajadores. Importante y de examen.",
+    "Debe garantizarse a los trabajadores o sus representantes la información y consulta con suficiente antelación, según el Derecho de la Unión y las legislaciones y prácticas nacionales."
+  ],
+  "k-28": [
+    "Situación: artículo veintiocho, negociación y acción colectiva. Importante y de examen.",
+    "Trabajadores y empresarios, o sus organizaciones, tienen derecho a negociar y celebrar convenios colectivos y, en caso de conflicto, a emprender acciones colectivas, incluida la huelga.",
+    "Repito: incluida la huelga."
+  ],
+  "k-29": [
+    "Situación: artículo veintinueve, servicios de colocación. Ha caído en examen.",
+    "Toda persona tiene derecho a acceder a un servicio gratuito de colocación.",
+    "Tu Exprés recuerda el treinta, protección ante el despido injustificado, y el treinta y uno: condiciones que respeten salud, seguridad y dignidad, limitación de jornada, descansos y vacaciones retribuidas."
+  ],
+  "k-32": [
+    "Situación: artículo treinta y dos, prohibición del trabajo infantil. Importante y de examen.",
+    "Se prohíbe el trabajo infantil. La edad mínima de admisión no puede ser inferior a la edad en que concluye la escolaridad obligatoria, sin perjuicio de normas más favorables y salvo excepciones limitadas.",
+    "Atención, trampa: no dice una edad concreta."
+  ],
+  "k-33": [
+    "Situación: artículo treinta y tres, vida familiar y profesional. Importante y de examen.",
+    "Se garantiza la protección de la familia en lo jurídico, económico y social.",
+    "Para conciliar, toda persona tiene derecho a ser protegida contra el despido relacionado con la maternidad, a un permiso pagado por maternidad y a un permiso parental por nacimiento o adopción."
+  ],
+  "k-34": [
+    "Situación: artículo treinta y cuatro, seguridad social y ayuda social.",
+    "Apartado tres: para combatir la exclusión y la pobreza, la Unión reconoce y respeta el derecho a una ayuda social y a una ayuda de vivienda para quienes no tengan recursos suficientes."
+  ],
+  "k-35": [
+    "Situación: artículo treinta y cinco, protección de la salud. Examen oficial.",
+    "Toda persona tiene derecho a la prevención sanitaria y a la atención sanitaria en las condiciones de las legislaciones y prácticas nacionales. En todas las políticas y acciones de la Unión se garantiza un nivel elevado de protección de la salud."
+  ],
+  "k-37": [
+    "Situación: artículo treinta y siete, medio ambiente. Importante y de examen.",
+    "En las políticas de la Unión se integra y garantiza, conforme al desarrollo sostenible, un nivel elevado de protección del medio ambiente y la mejora de su calidad."
+  ],
+  "k-39": [
+    "Situación: artículo treinta y nueve, sufragio en elecciones al Parlamento Europeo. Ha caído en examen.",
+    "Todo ciudadano de la Unión es elector y elegible al Parlamento Europeo en el Estado donde resida, en las mismas condiciones que los nacionales. Los diputados se eligen por sufragio universal libre, directo y secreto."
+  ],
+  "k-40": [
+    "Situación: artículo cuarenta, elecciones municipales. Ha caído en examen.",
+    "Todo ciudadano de la Unión es elector y elegible en las municipales del Estado donde resida, en las mismas condiciones que los nacionales."
+  ],
+  "k-41": [
+    "Situación: artículo cuarenta y uno, derecho a una buena administración. Importante y de examen.",
+    "Que las instituciones traten sus asuntos imparcial y equitativamente y en plazo razonable.",
+    "Incluye: ser oído antes de una medida desfavorable; acceder a su expediente, respetando confidencialidad y secreto; y la obligación de motivar las decisiones.",
+    "Además, derecho a la reparación por daños causados por la Unión, y a dirigirse en una lengua de los Tratados y recibir contestación en esa misma lengua.",
+    "Repito: oído, expediente, motivación, reparación y lengua."
+  ],
+  "k-42": [
+    "Situación: artículo cuarenta y dos, acceso a los documentos. Ha caído en examen.",
+    "Todo ciudadano de la Unión, y toda persona física o jurídica que resida o tenga domicilio social en un Estado miembro, puede acceder a los documentos de las instituciones, cualquiera que sea su soporte."
+  ],
+  "k-43": [
+    "Situación: artículo cuarenta y tres, el Defensor del Pueblo Europeo. Ha caído en examen.",
+    "Ciudadanos y personas físicas o jurídicas residentes pueden acudir a él por casos de mala administración de las instituciones, órganos u organismos de la Unión, con exclusión del Tribunal de Justicia en sus funciones jurisdiccionales.",
+    "Atención, trampa: la función judicial del Tribunal de Justicia queda fuera."
+  ],
+  "k-44": [
+    "Situación: artículo cuarenta y cuatro, derecho de petición. Importante y de examen.",
+    "Se ejerce ante el Parlamento Europeo.",
+    "Repito: petición, ante el Parlamento. Mala administración, ante el Defensor del Pueblo."
+  ],
+  "k-46": [
+    "Situación: artículo cuarenta y seis, protección diplomática y consular. Tu Exprés cita el cuarenta y cinco, circulación y residencia.",
+    "En un tercer país donde no esté representado su Estado, el ciudadano de la Unión puede acogerse a la protección diplomática y consular de cualquier otro Estado miembro, en las mismas condiciones que sus nacionales."
+  ],
+  "k-47": [
+    "Situación: artículo cuarenta y siete, tutela judicial efectiva. Importante y de examen.",
+    "Quien vea violados sus derechos garantizados por la Unión tiene derecho a la tutela judicial efectiva, y a que su causa sea oída equitativa y públicamente, en plazo razonable, por un juez independiente e imparcial establecido previamente por la ley. Puede hacerse aconsejar, defender y representar.",
+    "Se presta asistencia jurídica gratuita a quien no tenga recursos suficientes, cuando sea necesaria para el acceso efectivo a la justicia."
+  ],
+  "k-48": [
+    "Situación: artículo cuarenta y ocho, presunción de inocencia y defensa.",
+    "Todo acusado se presume inocente mientras no se declare legalmente su culpabilidad. Y se garantiza el respeto de los derechos de la defensa."
+  ],
+  "k-49": [
+    "Situación: artículo cuarenta y nueve, legalidad y proporcionalidad de delitos y penas. Importante y de examen.",
+    "Nadie puede ser condenado por una acción u omisión que, cuando se cometió, no fuera infracción según el derecho interno o internacional; ni imponerse pena más grave que la aplicable entonces. Si después la ley dispone pena más leve, se aplica esta.",
+    "Y la intensidad de las penas no debe ser desproporcionada.",
+    "Repito: irretroactividad, ley más favorable y proporcionalidad."
+  ],
+  "k-50": [
+    "Situación: artículo cincuenta, no ser juzgado dos veces. Importante y de examen.",
+    "Nadie podrá ser juzgado o condenado penalmente por una infracción de la que ya fue absuelto o condenado en la Unión mediante sentencia penal firme.",
+    "Es el principio non bis in idem."
+  ],
+  "k-51": [
+    "Situación: artículo cincuenta y uno, ámbito de aplicación. Importante y de examen.",
+    "La Carta se dirige a las instituciones, órganos y organismos de la Unión, respetando la subsidiariedad, y a los Estados miembros únicamente cuando apliquen el Derecho de la Unión.",
+    "No amplía el ámbito del Derecho de la Unión, no crea competencias ni misiones nuevas, ni modifica las de los Tratados.",
+    "Atención, trampa: a los Estados solo cuando apliquen Derecho de la Unión."
+  ],
+  "k-52": [
+    "Situación: artículo cincuenta y dos, alcance e interpretación de los derechos. Importante y de examen.",
+    "Toda limitación debe establecerse por ley y respetar el contenido esencial, además de la proporcionalidad.",
+    "Los derechos que correspondan a los del Convenio Europeo tienen el mismo sentido y alcance, sin impedir una protección más extensa de la Unión. Los que resulten de tradiciones constitucionales comunes se interpretan en armonía con ellas.",
+    "Las disposiciones con principios se aplican mediante actos legislativos y ejecutivos, y solo pueden alegarse ante un tribunal para interpretarlos y controlar su legalidad.",
+    "Tu Exprés recuerda el cincuenta y tres, nivel de protección, y el cincuenta y cuatro, prohibición del abuso de derecho."
+  ],
+  "n-pre": [
+    "Situación: preámbulo del Estatuto del Consejo de Europa.",
+    "Los gobiernos fundadores, convencidos de que la consolidación de la paz basada en la justicia y la cooperación internacional es de interés vital, reafirman los valores espirituales y morales que son patrimonio común y fuente de la libertad individual, la libertad política y el imperio del Derecho, base de toda auténtica democracia.",
+    "Por ello deciden constituir un Consejo de Europa compuesto de un Comité de representantes de los Gobiernos y una Asamblea Consultiva.",
+    "Repito sus dos órganos: Comité de Ministros y Asamblea Consultiva."
+  ],
+  "n-1": [
+    "Situación: artículo uno, finalidad del Consejo de Europa. Ha caído en examen y está en el Recuerda.",
+    "Letra a: la finalidad es realizar una unión más estrecha entre sus miembros para salvaguardar y promover los ideales y los principios que constituyen su patrimonio común y favorecer su progreso económico y social.",
+    "Letra b: se persigue a través de los órganos del Consejo, mediante el examen de los asuntos de interés común, la conclusión de acuerdos y la acción conjunta en los campos económico, social, cultural, científico, jurídico y administrativo, así como la salvaguardia de los derechos humanos.",
+    "Letra c: la participación de los miembros no debe alterar su contribución a la obra de las Naciones Unidas. Letra d: los asuntos relativos a la defensa nacional no son competencia del Consejo de Europa.",
+    "Atención, trampa: la defensa nacional queda fuera."
+  ],
+  "n-3": [
+    "Situación: artículo tres, principios de los Miembros. Ha caído en examen.",
+    "Cada Miembro reconoce el principio del imperio del Derecho y el de que toda persona bajo su jurisdicción debe gozar de los derechos humanos y libertades fundamentales, y se compromete a colaborar sincera y activamente.",
+    "Repito: imperio del Derecho y derechos humanos."
+  ],
+  "n-4": [
+    "Situación: artículo cuatro, cómo se entra. Importante y de examen.",
+    "Cualquier Estado europeo capaz de cumplir el artículo tres y con voluntad de hacerlo puede ser invitado por el Comité de Ministros. Es miembro en cuanto se remite al Secretario General su instrumento de adhesión.",
+    "Repito: invita el Comité de Ministros, instrumento al Secretario General."
+  ],
+  "n-5": [
+    "Situación: artículo cinco, miembros asociados. Importante y de examen.",
+    "En circunstancias especiales, un país europeo puede ser invitado por el Comité de Ministros como Miembro asociado. Los asociados solo tienen derecho a estar representados en la Asamblea Consultiva.",
+    "El término Miembro incluye a los asociados, salvo para la representación en el Comité de Ministros.",
+    "Atención, trampa: no están en el Comité de Ministros."
+  ],
+  "n-6": [
+    "Situación: artículo seis.",
+    "Antes de invitar a un Estado, el Comité de Ministros determina el número de representantes a que tendrá derecho en la Asamblea y su contribución financiera."
+  ],
+  "n-7": [
+    "Situación: artículo siete, la retirada. Examen oficial y Recuerda: memoriza el plazo.",
+    "Cualquier Miembro puede retirarse notificándolo al Secretario General. La retirada surte efecto al concluir el año financiero en curso si se notificó en los primeros nueve meses, y al finalizar el año financiero siguiente si fue en los tres últimos.",
+    "Repito: nueve primeros meses, este año; tres últimos, el siguiente."
+  ],
+  "n-8": [
+    "Situación: artículo ocho, suspensión y expulsión. Importante y de examen.",
+    "El Comité de Ministros puede suspender el derecho de representación del Miembro que infrinja gravemente el artículo tres, e invitarle a retirarse. Si no atiende, el Comité puede decidir que ha cesado de pertenecer al Consejo desde la fecha que determine.",
+    "Repito: suspende, invita a retirarse y, si no, cesa."
+  ],
+  "n-9": [
+    "Situación: artículo nueve, impago. Importante y de examen.",
+    "Si un Miembro no cumple sus obligaciones financieras, el Comité puede suspender su representación en el Comité y en la Asamblea mientras no pague.",
+    "Atención: por impago se suspende en los dos órganos."
+  ],
+  "n-13": [
+    "Situación: artículo trece, naturaleza del Comité de Ministros. Examen oficial, importante y Recuerda.",
+    "El Comité de Ministros es el órgano competente para actuar en nombre del Consejo de Europa, conforme a los artículos quince y dieciséis.",
+    "Repito: el Comité de Ministros actúa en nombre del Consejo."
+  ],
+  "n-14": [
+    "Situación: artículo catorce, composición del Comité. Examen oficial y Recuerda.",
+    "Cada Miembro tiene un representante en el Comité y cada representante un voto. Los representantes son los Ministros de Asuntos Exteriores. Si no pueden asistir, se designa un suplente, en lo posible miembro del Gobierno.",
+    "Repito: Ministros de Asuntos Exteriores, un voto cada uno."
+  ],
+  "n-15": [
+    "Situación: artículo quince, atribuciones del Comité. Importante y de examen.",
+    "El Comité examina, por recomendación de la Asamblea Consultiva o por iniciativa propia, las medidas para realizar la finalidad del Consejo, incluidos convenios, acuerdos y políticas comunes. El Secretario General comunica sus conclusiones.",
+    "Pueden revestir forma de recomendaciones a los Gobiernos, invitándoles a informar de lo hecho."
+  ],
+  "n-16": [
+    "Situación: artículo dieciséis, organización interior.",
+    "Sin perjuicio de los poderes de la Asamblea Consultiva definidos en los artículos veinticuatro, veintiocho, treinta, treinta y dos, treinta y tres y treinta y cinco, el Comité de Ministros resuelve con carácter obligatorio cualquier cuestión de organización y régimen interior del Consejo de Europa.",
+    "Con este fin adopta los reglamentos financieros y administrativos necesarios.",
+    "Repito: carácter obligatorio."
+  ],
+  "n-17": [
+    "Situación: artículo diecisiete.",
+    "El Comité de Ministros puede constituir comités o comisiones de carácter consultivo o técnico para las finalidades que juzgue convenientes."
+  ],
+  "n-18": [
+    "Situación: artículo dieciocho, el reglamento del Comité. Examen oficial. Tu Exprés añade las mayorías del artículo veinte y las reuniones del veintiuno.",
+    "El Comité adopta su Reglamento interno, que determina en especial el quórum, la designación y duración del Presidente, cómo incluir temas en el orden del día y la notificación de los suplentes.",
+    "Mayorías. Unanimidad de votos emitidos y mayoría de representantes para cuestiones importantes, como recomendaciones, informes a la Asamblea, reuniones y publicidad, la sede de la Asamblea y ciertas enmiendas. Mayoría simple de representantes con derecho para el reglamento y los regímenes financiero y administrativo.",
+    "Dos tercios de los representantes con derecho para invitar Miembros y asociados. Y en lo demás, dos tercios de los votos emitidos y mayoría de representantes, incluido el presupuesto.",
+    "Reuniones: por regla general a puerta cerrada y en la sede del Consejo; obligatoriamente antes de la apertura y al comienzo de las reuniones de la Asamblea."
+  ],
+  "n-22": [
+    "Situación: artículo veintidós, la Asamblea Consultiva. Ha caído en examen y está en el Recuerda.",
+    "Es el órgano deliberante del Consejo de Europa. Delibera sobre los asuntos de su competencia y transmite sus conclusiones al Comité de Ministros en forma de recomendaciones.",
+    "Repito: órgano deliberante, recomendaciones."
+  ],
+  "n-23": [
+    "Situación: artículo veintitrés, competencias de la Asamblea. Importante y de examen.",
+    "Puede deliberar y recomendar sobre cualquier cuestión de la finalidad y competencia del Consejo, y sobre las que le someta a dictamen el Comité de Ministros. Fija su programa teniendo en cuenta a otras organizaciones europeas. En caso de duda sobre si algo está en el programa, decide su Presidente."
+  ],
+  "n-25": [
+    "Situación: artículo veinticinco, composición de la Asamblea. Importante y de examen.",
+    "La forman representantes de cada Miembro elegidos por su Parlamento entre sus miembros, o designados según el procedimiento que este fije, sin perjuicio de nombramientos complementarios del Gobierno cuando el Parlamento no esté reunido.",
+    "Cada representante tiene la nacionalidad del Estado que representa y no puede ser a la vez miembro del Comité de Ministros. El mandato empieza con la reunión ordinaria siguiente a su designación. Puede tener un suplente que habla y vota en su lugar.",
+    "Repito: los elige el Parlamento."
+  ],
+  "n-26": [
+    "Situación: artículo veintiséis, número de representantes en la Asamblea. Importante y de examen.",
+    "Cada Miembro tiene derecho a un número de representantes. En tu subrayado destaca España, con doce.",
+    "Con dieciocho: Francia, Italia, el Reino Unido y Alemania. Con doce: España y Turquía.",
+    "Repito: España, doce; los grandes, dieciocho."
+  ],
+  "n-28": [
+    "Situación: artículo veintiocho, Presidente de la Asamblea. Importante y de examen.",
+    "La Asamblea adopta su reglamento y elige entre sus miembros a su Presidente, hasta la siguiente reunión ordinaria. Dirige las deliberaciones pero no participa en los debates ni en la votación. Su suplente puede asistir, hablar y votar en su lugar.",
+    "Atención, trampa: el Presidente no vota."
+  ],
+  "n-29": [
+    "Situación: artículo veintinueve, mayorías de la Asamblea. Importante y de examen.",
+    "Todas las resoluciones, salvo las de procedimiento, se toman por mayoría de dos tercios de los votos emitidos, incluidas las recomendaciones al Comité, el programa, crear comisiones, fijar la fecha de las sesiones y determinar otras mayorías.",
+    "Repito: dos tercios de los votos emitidos."
+  ],
+  "n-30": [
+    "Situación: artículo treinta.",
+    "Las resoluciones de procedimiento, como la elección de la Mesa, se adoptan por la mayoría que la propia Asamblea determine."
+  ],
+  "n-31": [
+    "Situación: artículo treinta y uno, deliberaciones sobre el programa de la Asamblea. Importante, de examen y Recuerda.",
+    "Las deliberaciones sobre las proposiciones dirigidas al Comité de Ministros para inscribir una cuestión en el programa de la Asamblea Consultiva, una vez definido su objeto, deben referirse únicamente a las razones en pro o en contra de esa inscripción.",
+    "Repito: solo razones a favor o en contra de inscribirla."
+  ],
+  "n-32": [
+    "Situación: artículo treinta y dos, sesiones ordinarias. Importante y de examen.",
+    "La Asamblea celebra cada año una sesión ordinaria, cuya fecha y duración determina. No excederá de un mes, salvo acuerdo contrario de la Asamblea y el Comité.",
+    "Repito: máximo un mes."
+  ],
+  "n-33": [
+    "Situación: artículo treinta y tres, sede. De examen y Recuerda.",
+    "Las sesiones ordinarias se celebran en la sede del Consejo, salvo acuerdo contrario de la Asamblea y el Comité de Ministros."
+  ],
+  "n-34": [
+    "Situación: artículo treinta y cuatro, sesiones extraordinarias. De examen.",
+    "Se convoca por iniciativa del Comité de Ministros o del Presidente de la Asamblea, previo acuerdo entre ellos, también sobre fecha y lugar."
+  ],
+  "n-35": [
+    "Situación: artículo treinta y cinco, publicidad. Importante, de examen y Recuerda.",
+    "Las deliberaciones de la Asamblea son públicas, salvo que ella misma acuerde lo contrario.",
+    "Atención, trampa: la Asamblea es pública; el Comité de Ministros se reúne a puerta cerrada."
+  ],
+  "n-36": [
+    "Situación: artículo treinta y seis, la Secretaría. Ha caído en examen.",
+    "La componen un Secretario General, un Secretario General Adjunto y el personal necesario. El Secretario General y el Adjunto los nombra la Asamblea Consultiva por recomendación del Comité de Ministros; los demás, el Secretario General.",
+    "Ningún miembro puede cobrar de un Gobierno, ser miembro de la Asamblea o de un Parlamento, ni tener ocupaciones incompatibles. El Secretario General responde ante el Comité de Ministros.",
+    "Atención, trampa: nombra la Asamblea, pero responde ante el Comité."
+  ],
+  "n-37": [
+    "Situación: artículo treinta y siete, la Secretaría. Importante y de examen.",
+    "Letra a: la Secretaría estará instalada en la sede del Consejo.",
+    "Letra b: el Secretario General es responsable de la actividad de la Secretaría ante el Comité de Ministros. Presta, sobre todo a la Asamblea Consultiva, los servicios administrativos y los demás que pueda necesitar.",
+    "Repito: responsable ante el Comité de Ministros."
+  ],
+  "n-38": [
+    "Situación: artículo treinta y ocho, financiación.",
+    "Cada Miembro paga los gastos de su representación. Los de la Secretaría y comunes se reparten según el censo de población que fija el Comité."
+  ],
+  "n-39": [
+    "Situación: artículo treinta y nueve, contribuciones. Importante y de examen.",
+    "El Secretario General notifica cada año a los Gobiernos su contribución, exigible el mismo día de la notificación, y se paga al Secretario General en un plazo máximo de seis meses.",
+    "Repito: seis meses."
+  ],
+  "n-41": [
+    "Situación: artículo cuarenta y uno, enmiendas. Importante y de examen.",
+    "Se proponen al Comité de Ministros o a la Asamblea. El Comité recomienda y recoge las enmiendas en un Protocolo, que entra en vigor cuando lo firman y ratifican las dos terceras partes de los Miembros.",
+    "Excepción: las enmiendas a los artículos veintitrés a treinta y cinco, treinta y ocho y treinta y nueve, aprobadas por Comité y Asamblea, entran en vigor en la fecha del acta del Secretario General."
+  ],
+  "n-42": [
+    "Situación: artículo cuarenta y dos, ratificación y entrada en vigor. Importante y de examen.",
+    "El Estatuto se ratifica y las ratificaciones se depositan ante el Gobierno del Reino Unido. Entra en vigor con siete instrumentos de ratificación.",
+    "Se hizo en Londres, el cinco de mayo de mil novecientos cuarenta y nueve. España depositó su adhesión el veinticuatro de noviembre de mil novecientos setenta y siete.",
+    "Repito: Londres, cinco de mayo de mil novecientos cuarenta y nueve; siete ratificaciones."
+  ],
+  "h-2": [
+    "Situación: artículo dos del Convenio Europeo de Derechos Humanos, el derecho a la vida. Examen oficial, importante y Recuerda.",
+    "El derecho a la vida está protegido por la ley. Nadie puede ser privado de ella intencionadamente, salvo ejecución de una condena a pena capital dictada por un tribunal.",
+    "No hay infracción cuando la muerte resulte de un recurso a la fuerza absolutamente necesario en tres casos. Letra a: defender a una persona de una agresión ilegítima. Letra b: detener legalmente a alguien o impedir la evasión de un preso o detenido. Letra c: reprimir conforme a la ley una revuelta o insurrección.",
+    "Tu Exprés recuerda el artículo tres: nadie podrá ser sometido a tortura ni a penas o tratos inhumanos o degradantes."
+  ],
+  "h-4": [
+    "Situación: artículo cuatro, prohibición de la esclavitud y del trabajo forzado. Examen oficial, importante y Recuerda.",
+    "Nadie puede ser sometido a esclavitud o servidumbre ni constreñido a un trabajo forzado u obligatorio.",
+    "No se considera trabajo forzado: el exigido normalmente a un privado de libertad o en libertad condicional; el servicio militar o el sustitutorio de objetores; el exigido en emergencias o calamidades; y el que forme parte de las obligaciones cívicas normales."
+  ],
+  "h-5": [
+    "Situación: artículo cinco, libertad y seguridad. Examen oficial, importante y Recuerda.",
+    "Solo se puede privar de libertad en casos tasados. Letra a: penado por sentencia de tribunal competente. Letra b: detenido por desobediencia a una orden judicial o para asegurar una obligación legal. Letra c: para llevarle ante la autoridad judicial con indicios de infracción o para impedirla o evitar la fuga.",
+    "Letra d: menores, para vigilar su educación o llevarlos ante la autoridad. Letra e: enfermos contagiosos, enajenados, alcohólicos, toxicómanos o vagabundos. Letra f: para impedir la entrada ilegal o en procedimientos de expulsión o extradición.",
+    "Garantías. Ser informado en el más breve plazo y en lengua comprensible. Ser conducido sin dilación ante un juez y juzgado en plazo razonable o puesto en libertad, que puede condicionarse a una garantía de comparecencia. Recurrir ante un órgano judicial. Y la víctima de detención contraria al artículo tiene derecho a reparación."
+  ],
+  "h-6": [
+    "Situación: artículo seis, proceso equitativo. Importante, de examen y Recuerda.",
+    "Apartado uno. Toda persona tiene derecho a que su causa sea oída equitativa y públicamente y dentro de un plazo razonable, por un tribunal independiente e imparcial establecido por la ley.",
+    "Apartado dos. Toda persona acusada se presume inocente hasta que su culpabilidad haya sido legalmente declarada.",
+    "Apartado tres. Todo acusado tiene como mínimo varios derechos. En tu subrayado: letra a, ser informado en el más breve plazo, en una lengua que comprenda y detalladamente, de la naturaleza y la causa de la acusación. Y letra e, ser asistido gratuitamente de un intérprete si no comprende o no habla la lengua empleada en la audiencia.",
+    "Repito: más breve plazo e intérprete gratuito."
+  ],
+  "h-10": [
+    "Situación: artículo diez, libertad de expresión. Importante y de examen.",
+    "Comprende la libertad de opinión y de recibir o comunicar informaciones o ideas sin injerencia de autoridades y sin fronteras. No impide autorizar previamente radiodifusión, cine o televisión.",
+    "Puede limitarse por ley cuando sea necesario en una sociedad democrática: seguridad nacional, integridad territorial o seguridad pública, orden y prevención del delito, salud o moral, reputación y derechos ajenos, confidencialidad, y autoridad e imparcialidad del poder judicial.",
+    "Tu Exprés recuerda el once, reunión y asociación."
+  ],
+  "h-12": [
+    "Situación: artículo doce, matrimonio.",
+    "A partir de la edad núbil, el hombre y la mujer tienen derecho a casarse y fundar una familia según las leyes nacionales.",
+    "Repito: edad núbil."
+  ],
+  "h-13": [
+    "Situación: artículo trece, recurso efectivo. De examen.",
+    "Quien vea violados sus derechos del Convenio tiene derecho a un recurso efectivo ante una instancia nacional, incluso si la violación la cometió alguien en ejercicio de funciones oficiales.",
+    "Tu Exprés recuerda el siete: no hay pena sin ley."
+  ],
+  "h-15": [
+    "Situación: artículo quince, derogación en estado de urgencia. Importante y de examen.",
+    "En guerra u otro peligro público que amenace la vida de la nación, un Estado puede adoptar medidas que deroguen obligaciones del Convenio en la medida estrictamente necesaria y sin contradecir el Derecho internacional.",
+    "No se puede derogar el artículo dos, salvo muertes por actos lícitos de guerra, ni los artículos tres, cuatro apartado uno y siete. Se informa plenamente al Secretario General del Consejo de Europa.",
+    "Repito, lo intocable: dos con su excepción, tres, cuatro uno y siete."
+  ],
+  "h-16": [
+    "Situación: artículo dieciséis, actividad política de extranjeros. Importante y de examen.",
+    "Los artículos diez, once y catorce no impiden restringir la actividad política de los extranjeros."
+  ],
+  "h-19": [
+    "Situación: artículo diecinueve, el Tribunal Europeo de Derechos Humanos. De examen.",
+    "Se instituye para asegurar el respeto de los compromisos del Convenio y sus Protocolos. Funciona de manera permanente."
+  ],
+  "h-20": [
+    "Situación: artículo veinte. Importante y de examen.",
+    "El Tribunal tiene un número de jueces igual al de las Altas Partes Contratantes."
+  ],
+  "h-21": [
+    "Situación: artículo veintiuno, condiciones de los jueces. Examen oficial.",
+    "Gozan de la más alta consideración moral y reúnen las condiciones para altas funciones judiciales o son jurisconsultos de reconocida competencia. Los candidatos deben ser menores de sesenta y cinco años cuando la Asamblea reciba la lista de tres. Ejercen a título individual.",
+    "Repito: menos de sesenta y cinco años."
+  ],
+  "h-22": [
+    "Situación: artículo veintidós, elección de jueces. Importante, de examen y Recuerda.",
+    "Los elige la Asamblea Parlamentaria, uno por cada Estado, por mayoría absoluta, de una lista de tres candidatos que presenta ese Estado.",
+    "Repito: Asamblea, mayoría absoluta, terna."
+  ],
+  "h-23": [
+    "Situación: artículo veintitrés, mandato. Importante y de examen.",
+    "Los jueces son elegidos por nueve años y no son reelegibles. Permanecen hasta su sustitución, conociendo de los asuntos ya asignados. Solo se les puede relevar si los demás jueces deciden por dos tercios que ya no reúnen las condiciones.",
+    "Tu Exprés cita el veinticuatro: secretaría y ponentes.",
+    "Repito: nueve años, sin reelección."
+  ],
+  "h-25": [
+    "Situación: artículo veinticinco, el Pleno. Importante y de examen.",
+    "Elige por tres años a su Presidente y a uno o dos Vicepresidentes, reelegibles; constituye Salas; elige sus Presidentes, reelegibles; aprueba su reglamento; elige Secretario y adjuntos; y puede pedir reducir a cinco los jueces de Sala.",
+    "Atención, trampa: los jueces no son reelegibles, pero los cargos del Pleno sí."
+  ],
+  "h-26": [
+    "Situación: artículo veintiséis, formaciones. Importante y de examen.",
+    "El Tribunal actúa en juez único, Comités de tres, Salas de siete y Gran Sala de diecisiete. Las Salas constituyen los Comités. El Comité de Ministros, a petición del Pleno, por unanimidad y por un tiempo, puede reducir a cinco las Salas.",
+    "El juez único no examina demandas contra el Estado por el que fue elegido. En la Gran Sala están el Presidente, los Vicepresidentes y los Presidentes de Sala; si llega por el artículo cuarenta y tres, no actúa quien dictó la sentencia de Sala, salvo su Presidente y el juez del Estado interesado.",
+    "Repito: uno, tres, siete y diecisiete."
+  ],
+  "h-27": [
+    "Situación: artículo veintisiete, competencias del juez único.",
+    "El juez único puede declarar inadmisible o eliminar del registro de asuntos una demanda. Y su resolución es definitiva.",
+    "Repito: definitiva."
+  ],
+  "h-28": [
+    "Situación: artículo veintiocho, Comités. Importante y de examen.",
+    "En demandas individuales, un Comité, por unanimidad, puede declararlas inadmisibles o archivarlas; o admitirlas y dictar sentencia de fondo cuando haya jurisprudencia bien establecida. Son definitivas.",
+    "Repito: por unanimidad."
+  ],
+  "h-30": [
+    "Situación: artículo treinta, y el veintinueve, Salas. Importante y de examen.",
+    "La Sala resuelve sobre admisibilidad y fondo de las demandas entre Estados, y la admisibilidad se decide, salvo excepción, por separado.",
+    "La Sala puede inhibirse a favor de la Gran Sala si el asunto plantea cuestión grave de interpretación o puede contradecir una sentencia anterior, mientras no haya dictado sentencia."
+  ],
+  "h-31": [
+    "Situación: artículo treinta y uno, atribuciones de la Gran Sala. Importante y de examen.",
+    "En tu subrayado destaca la letra c: la Gran Sala examina las solicitudes de emisión de opiniones consultivas presentadas en virtud del artículo cuarenta y siete.",
+    "Tu Exprés recuerda los artículos treinta y dos, competencia del Tribunal, y treinta y tres, asuntos entre Estados.",
+    "Repito: opiniones consultivas, Gran Sala."
+  ],
+  "h-34": [
+    "Situación: artículo treinta y cuatro, demandas individuales. Importante y de examen.",
+    "Pueden demandar cualquier persona física, organización no gubernamental o grupo de particulares que se considere víctima de una violación. Los Estados no pondrán trabas a este derecho."
+  ],
+  "h-35": [
+    "Situación: artículo treinta y cinco, admisibilidad. Importante y de examen.",
+    "Solo se acude tras agotar los recursos internos y en el plazo de cuatro meses desde la resolución interna definitiva.",
+    "No se admite demanda individual anónima o esencialmente igual a otra ya examinada o sometida a otra instancia internacional sin hechos nuevos. Es inadmisible la incompatible, manifiestamente mal fundada o abusiva, o sin perjuicio importante, salvo que los derechos exijan examinar el fondo.",
+    "Repito: cuatro meses."
+  ],
+  "h-36": [
+    "Situación: artículo treinta y seis, intervención de terceros. Importante y de examen.",
+    "En Sala o Gran Sala, el Estado del que sea nacional el demandante puede presentar observaciones y participar en la vista. El Presidente puede invitar a otros. Y el Comisario de Derechos Humanos puede presentar observaciones y participar en la vista.",
+    "Tu Exprés recuerda el treinta y siete, cancelación, y el treinta y ocho, examen del asunto."
+  ],
+  "h-39": [
+    "Situación: artículo treinta y nueve, la transacción. De examen.",
+    "En cualquier fase el Tribunal puede facilitar una transacción respetando los derechos humanos. Es confidencial, y la resolución se envía al Comité de Ministros, que supervisa su ejecución.",
+    "Tu Exprés recuerda el cuarenta: vista pública y acceso a documentos."
+  ],
+  "h-41": [
+    "Situación: artículo cuarenta y uno, arreglo equitativo. De examen.",
+    "Si hay violación y el derecho interno solo permite reparar de forma imperfecta, el Tribunal concede, si procede, una satisfacción equitativa."
+  ],
+  "h-43": [
+    "Situación: artículo cuarenta y tres, remisión a la Gran Sala. Importante y de examen.",
+    "En tres meses desde la sentencia de una Sala, cualquier parte puede pedir, en casos excepcionales, la remisión. Un colegio de cinco jueces de la Gran Sala la acepta si plantea cuestión grave de interpretación, aplicación o carácter general; entonces la Gran Sala dicta sentencia.",
+    "Repito: tres meses y colegio de cinco jueces."
+  ],
+  "h-45": [
+    "Situación: artículo cuarenta y cinco, motivación, y el cuarenta y cuatro, firmeza. Ha caído en examen y está en el Recuerda.",
+    "Las sentencias y decisiones de admisibilidad son motivadas. Si no hay unanimidad, cualquier juez puede unir su opinión separada.",
+    "Artículo cuarenta y cuatro: la sentencia de Gran Sala es definitiva. La de Sala lo es si las partes declaran que no pedirán remisión, si pasan tres meses sin pedirla o si el colegio la rechaza."
+  ],
+  "h-46": [
+    "Situación: artículo cuarenta y seis, fuerza obligatoria y ejecución. Importante y de examen.",
+    "Los Estados acatan las sentencias definitivas. Se transmiten al Comité de Ministros, que vela por su ejecución.",
+    "Si hay problema de interpretación, puede remitir al Tribunal por mayoría de dos tercios de los representantes con derecho.",
+    "Repito: la ejecución la vigila el Comité de Ministros."
   ]
 };
