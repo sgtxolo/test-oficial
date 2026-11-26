@@ -1,0 +1,971 @@
+[
+ {
+  "n": "1:1",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿Quién realizará funciones de supervisión y gestión técnicas y conservará una copia de seguridad de la CS-SIS, capaz de realizar todas las funciones de la CS-SIS principal en caso de fallo de este sistema?:",
+  "op": [
+   "Eu-Lisa.",
+   "La Comisión.",
+   "Los Estados Miembros.",
+   "La CS-SIS."
+  ],
+  "c": 3,
+  "art": "s-7",
+  "loc": "Art. 4.3",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "La CS-SIS realizará funciones de supervisión y gestión técnicas y conservará una copia de seguridad de la CS-SIS, capaz de realizar todas las funciones de la CS-SIS principal en caso de fallo de este sistema.",
+  "exp": "La supervisión y gestión técnicas y la copia de seguridad corresponden a la <b>CS-SIS</b>; eu-LISA es quien gestiona el sistema, pero el artículo atribuye estas funciones a la unidad de apoyo técnico."
+ },
+ {
+  "n": "1:2",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). En relación con la seguridad que cada Estado Miembro establecerá con respecto a su N.SIS, al proceso mediante el cual se impide la introducción no autorizada de datos y la inspección, modificación o supresión no autorizadas de datos personales almacenados, se denomina:",
+  "op": [
+   "Control de la entrada de datos",
+   "Control de los usuarios",
+   "Control del almacenamiento",
+   "Control de los soportes de datos"
+  ],
+  "c": 2,
+  "art": "s-8",
+  "loc": "Art. 10.1.d",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Impedir la introducción no autorizada de datos y la inspección, modificación o supresión no autorizadas de datos personales almacenados (control del almacenamiento)",
+  "exp": "Introducir, consultar, modificar o suprimir datos <b>almacenados</b> sin autorización es lo que impide el <b>control del almacenamiento</b>."
+ },
+ {
+  "n": "1:3",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Gestión operativa. Eu-Lisa será responsable de:",
+  "op": [
+   "Cuestiones contractuales.",
+   "Coordinación de las relaciones entre los Estados miembros y el proveedor.",
+   "Todas las opciones son correctas.",
+   "Ejecución del presupuesto."
+  ],
+  "c": 2,
+  "art": "s-9",
+  "loc": "Art. 15.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Eu-LISA será responsable asimismo de las siguientes funciones relacionadas con la infraestructura de comunicación: a) supervisión; b) seguridad; c) coordinación de las relaciones entre los Estados miembros y el proveedor; d) ejecución del presupuesto; e) adquisición y renovación; y f) cuestiones contractuales.",
+  "exp": "Coordinación con el proveedor, ejecución del presupuesto y cuestiones contractuales están en la lista de eu-LISA: todas son correctas."
+ },
+ {
+  "n": "1:4",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Antes de introducir una descripción y al prorrogar el periodo de validez de esta, los Estados Miembros comprobarán si el caso es:",
+  "op": [
+   "Pertinente.",
+   "Todas las opciones son correctas.",
+   "Importante.",
+   "Adecuado."
+  ],
+  "c": 1,
+  "art": "s-9",
+  "loc": "Art. 21.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Antes de introducir una descripción y al prorrogar el período de validez de una descripción, los Estados miembros determinarán si el caso es adecuado, pertinente e importante como para justificar una descripción en el SIS.",
+  "exp": "El juicio de proporcionalidad pide las tres cosas: <b>adecuado, pertinente e importante</b>."
+ },
+ {
+  "n": "1:5",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Cuando un Estado miembro considere conceder o prorrogar un permiso de residencia o un visado para estancia de larga duración a un nacional de un tercer país que sea objeto de una descripción para la denegación de entrada y estancia introducida por otro Estado miembro, los Estados miembros implicados se consultarán mutuamente mediante el intercambio de información complementaria, con arreglo a unas normas. El Estado miembro de concesión consultará al Estado miembro emisor antes de conceder o prorrogar el permiso de residencia o el visado para estancia de larga duración. El Estado miembro emisor contestará en el plazo de:",
+  "op": [
+   "14 días naturales.",
+   "10 días hábiles.",
+   "10 días naturales.",
+   "14 días hábiles."
+  ],
+  "c": 2,
+  "art": "s-10",
+  "loc": "Art. 27.b",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "El Estado miembro emisor contestará a la consulta en un plazo de diez días naturales",
+  "exp": "El Estado emisor contesta en <b>diez días naturales</b>; si calla, no se opone."
+ },
+ {
+  "n": "1:6",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Plazo de revisión de las descripciones. Desde el momento en que una oficina Sirene tenga constancia de que una descripción ha cumplido su objetivo y, por consiguiente, debe suprimirse, lo notificará inmediatamente a la autoridad que haya creado la descripción. ¿De qué plazo dispondrá la autoridad que haya creado la descripción, desde la recepción de esa notificación, para indicar que la descripción se ha suprimido o se suprimirá, o para justificar su conservación?:",
+  "op": [
+   "10 días hábiles.",
+   "15 días hábiles.",
+   "10 días naturales.",
+   "15 días naturales."
+  ],
+  "c": 3,
+  "art": "s-11",
+  "loc": "Art. 39.7",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "La autoridad dispondrá de quince días naturales desde la recepción de esa notificación para indicar que la descripción se ha suprimido o se suprimirá, o para justificar su conservación.",
+  "exp": "Tras la notificación de la oficina Sirene hay <b>quince días naturales</b>."
+ },
+ {
+  "n": "1:7",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Conexiones entre descripciones. Señale la opción INCORRECTA:",
+  "op": [
+   "Los Estados miembros podrán crear conexiones entre las descripciones que introduzcan en el SIS. El efecto de estas conexiones será establecer una relación entre dos o más descripciones.",
+   "La creación de una conexión no afectará a los derechos de acceso regulados en el presente Reglamento.",
+   "Los Estados miembros crearán una conexión entre descripciones cuando exista una necesidad operativa.",
+   "La creación de una conexión no afectará a la medida específica que deba tomarse en virtud de cada una de las descripciones conectadas, pero si al período de revisión de cada una de las descripciones conexas."
+  ],
+  "c": 3,
+  "art": "s-12",
+  "loc": "Art. 48.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "La creación de una conexión no afectará a la medida específica que deba tomarse en virtud de cada una de las descripciones conectadas, ni al período de revisión de cada una de las descripciones conectadas.",
+  "exp": "La conexión no afecta a la medida específica <b>ni</b> al período de revisión; la opción falsa dice «pero sí» a la revisión."
+ },
+ {
+  "n": "1:8",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). En relación con las oficinas Sirene y la comunicación entre ellas, Eu-Lisa será responsable de las siguientes funciones:",
+  "op": [
+   "Mantenimiento y actualización de las especificaciones técnicas relativas al intercambio de información complementaria entre las oficinas Sirene y la infraestructura de comunicación.",
+   "Gestión del impacto de los cambios técnicos cuando afecten al SIS y al intercambio de información complementaria entre las oficinas Sirene.",
+   "Coordinación, gestión y apoyo de las actividades de prueba.",
+   "Todas las opciones son correctas."
+  ],
+  "c": 3,
+  "art": "s-9",
+  "loc": "Art. 15.3",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Eu-LISA será responsable asimismo de las siguientes funciones relacionadas con las oficinas Sirene y la comunicación entre ellas: a) coordinación, gestión y apoyo de las actividades de prueba; b) mantenimiento y actualización de las especificaciones técnicas relativas al intercambio de información complementaria entre las oficinas Sirene y la infraestructura de comunicación",
+  "exp": "Pruebas, especificaciones técnicas e impacto de los cambios técnicos: las tres funciones son de eu-LISA."
+ },
+ {
+  "n": "1:9",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Registros centrales. Eu-LISA garantizará que todo acceso a datos personales y todo intercambio de datos personales en la CS-SIS queden registrados. Los registros que contengan el historial de las descripciones, ¿en qué plazo serán suprimidos?:",
+  "op": [
+   "5 años a partir de la creación de las descripciones.",
+   "3 años a partir de la creación de las descripciones.",
+   "5 años a partir de la supresión de las descripciones.",
+   "3 años a partir de la supresión de las descripciones."
+  ],
+  "c": 3,
+  "art": "s-9",
+  "loc": "Art. 18",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Los registros que incluyan el historial de las descripciones serán suprimidos transcurrido un plazo de tres años a partir de la supresión de las descripciones.",
+  "exp": "El historial se borra a los <b>tres años desde la supresión</b> de las descripciones (no desde su creación)."
+ },
+ {
+  "n": "1:10",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Datos del SIS y ficheros nacionales. Cada Estado miembro tendrá derecho a conservar en sus ficheros nacionales datos del SIS en relación con los cuales se hayan tomado medidas en su territorio. Dichos datos se conservarán en los ficheros nacionales, ¿durante qué período?:",
+  "op": [
+   "Máximo de 5 años, salvo excepciones.",
+   "Máximo de 3 años, en todo caso.",
+   "Máximo de 3 años, salvo excepciones.",
+   "Máximo de 5 años, en todo caso."
+  ],
+  "c": 2,
+  "art": "s-12",
+  "loc": "Art. 42.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Dichos datos se conservarán en los ficheros nacionales durante un período máximo de tres años, salvo si la normativa nacional contiene disposiciones específicas que prevean un plazo de conservación más largo.",
+  "exp": "<b>Tres años como máximo, salvo</b> que la normativa nacional prevea un plazo más largo."
+ },
+ {
+  "n": "2:1",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). A los efectos del presente Reglamento se entiende por \"el Estado miembro que está considerando conceder o prorrogar un permiso de residencia o un visado para estancia de larga duración o que los ha concedido o prorrogado, y que participa en el procedimiento de consulta con otro Estado miembro\":",
+  "op": [
+   "Estado miembro emisor.",
+   "Estado miembro de ejecución.",
+   "Estado miembro de concesión.",
+   "Estado miembro originario."
+  ],
+  "c": 2,
+  "art": "s-7",
+  "loc": "Art. 3.10",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "«Estado miembro de concesión»: el Estado miembro que está considerando conceder o prorrogar un permiso de residencia o un visado para estancia de larga duración o que los ha concedido o prorrogado, y que participa en el procedimiento de consulta con otro Estado miembro",
+  "exp": "Quien estudia, concede o prorroga el permiso o visado es el Estado miembro <b>de concesión</b>."
+ },
+ {
+  "n": "2:2",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Oficina N.SIS y Oficina Sirene. Señale la opción CORRECTA:",
+  "op": [
+   "La oficina N.SIS será responsable del correcto funcionamiento y la seguridad del N.SIS, garantizará el acceso de las autoridades competentes al SIS y adoptará las medidas necesarias para garantizar el cumplimiento de lo dispuesto en el presente Reglamento.",
+   "Conforme al Derecho de la Unión, cada oficina Sirene podrá acceder fácilmente, de forma directa o indirecta, a toda la información nacional pertinente, incluidas las bases de datos nacionales y toda la información relativa a las descripciones de su respectivo Estado miembro, así como al asesoramiento de expertos.",
+   "Cada Estado miembro designará una autoridad (denominada «autoridad N.SIS») que asumirá la responsabilidad central respecto de su N.SIS.",
+   "Cada Estado miembro designará una autoridad nacional (denominada «autoridad Sirene»), operativa las veinticuatro horas del día y los siete días de la semana, que se encargará de garantizar el intercambio y la disponibilidad de toda la información complementaria, de conformidad con el Manual Sirene."
+  ],
+  "c": 0,
+  "art": "s-8",
+  "loc": "Art. 7.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Dicha autoridad será responsable del correcto funcionamiento y la seguridad del N.SIS, garantizará el acceso de las autoridades competentes al SIS y adoptará las medidas necesarias para garantizar el cumplimiento de lo dispuesto en el presente Reglamento.",
+  "exp": "Las autoridades se llaman «<b>oficina</b> N.SIS» y «<b>oficina</b> Sirene», y la Sirene accede a la información conforme al Derecho <b>nacional</b>."
+ },
+ {
+  "n": "2:3",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Formación del personal. Señale la opción INCORRECTA:",
+  "op": [
+   "Antes de ser autorizado a tratar datos almacenados en el SIS y periódicamente tras la concesión del acceso a los datos del SIS, el personal de las autoridades con derecho de acceso al SIS recibirá la formación adecuada sobre seguridad de los datos, derechos fundamentales, incluida la protección de datos, y sobre las normas y procedimientos del Manual Sirene en lo que respecta al tratamiento de datos.",
+   "El programa de formación podrá formar parte de un programa de formación general de ámbito nacional aplicable a la formación en otros ámbitos pertinentes.",
+   "Se organizarán cursos de formación comunes a escala de la Unión al menos dos veces al año para reforzar la cooperación entre las oficinas Sirene.",
+   "Los Estados miembros deberán disponer de un programa nacional de formación sobre el SIS, que incluirá la formación destinada a los usuarios finales y al personal de las oficinas Sirene."
+  ],
+  "c": 2,
+  "art": "s-8",
+  "loc": "Art. 14.3",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Se organizarán cursos de formación comunes a escala de la Unión al menos una vez al año para reforzar la cooperación entre las oficinas Sirene.",
+  "exp": "Los cursos comunes son al menos <b>una</b> vez al año, no dos."
+ },
+ {
+  "n": "2:4",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Campañas de información del SIS. ¿Quién realizará una campaña para informar al público sobre los objetivos del SIS, las autoridades con acceso al SIS y los derechos de los interesados?:",
+  "op": [
+   "Las autoridades de control.",
+   "El Supervisor Europeo de Protección de Datos.",
+   "La Comisión.",
+   "Eu-Lisa."
+  ],
+  "c": 2,
+  "art": "s-9",
+  "loc": "Art. 19",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "La Comisión, en cooperación con las autoridades de control y el Supervisor Europeo de Protección de Datos, realizará una campaña para informar al público",
+  "exp": "La campaña la realiza la <b>Comisión</b>, en cooperación con las autoridades de control y el Supervisor Europeo."
+ },
+ {
+  "n": "2:5",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Compatibilidad de las descripciones. Señale la opción CORRECTA:",
+  "op": [
+   "Antes de introducir una descripción, el Estado miembro verificará si la persona afectada ya es objeto de una descripción en el SIS. A tal efecto, se realizará también una comprobación con datos dactiloscópicos, si están disponibles.",
+   "En caso de que una persona sea objeto de descripciones múltiples introducidas por distintos Estados miembros, no se dará prioridad a las descripciones para la detención.",
+   "Cada Estado miembro podrá introducir en el SIS una o varias descripciones por persona.",
+   "En caso de que se produzcan respuestas positivas sobre descripciones múltiples relativas a la misma persona, el Estado miembro emisor cumplirá las normas sobre prioridad de las descripciones establecidas en el Manual Sirene."
+  ],
+  "c": 0,
+  "art": "s-9",
+  "loc": "Art. 23.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Antes de introducir una descripción, el Estado miembro verificará si la persona afectada ya es objeto de una descripción en el SIS. A tal efecto, se realizará también una comprobación con datos dactiloscópicos, si están disponibles.",
+  "exp": "Solo se admite <b>una</b> descripción por persona y Estado, se prioriza la detención y quien aplica la prioridad es el Estado de <b>ejecución</b>."
+ },
+ {
+  "n": "2:6",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). La Comisión llevará a cabo una evaluación del funcionamiento y la utilización del SIS por parte de Europol y los Equipos de la Agencia Europea de la Guardia de fronteras y costas, ¿en qué plazo?:",
+  "op": [
+   "Al menos cada 5 años.",
+   "Al menos cada 4 años.",
+   "Al menos cada 3 años.",
+   "Al menos anualmente."
+  ],
+  "c": 0,
+  "art": "s-11",
+  "loc": "Art. 37.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "La Comisión llevará a cabo al menos cada cinco años una evaluación del funcionamiento y la utilización del SIS por parte de Europol y de los equipos mencionados en el artículo 36, apartado 1.",
+  "exp": "La evaluación del uso por Europol y la Guardia de Fronteras es al menos <b>cada cinco años</b>."
+ },
+ {
+  "n": "2:7",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Calidad de los datos del SIS. Señale la opción INCORRECTA:",
+  "op": [
+   "El Estado miembro emisor será el único autorizado para modificar, completar, rectificar, actualizar o suprimir los datos que haya introducido en el SIS.",
+   "Si un Estado miembro distinto del Estado miembro emisor dispone de datos adicionales o modificados pertinentes de los enumerados en el artículo 20, apartado 2, los transmitirá sin demora, mediante el intercambio de información complementaria, al Estado miembro emisor para que este último pueda completar o modificar la descripción.",
+   "Si un Estado miembro distinto del Estado miembro emisor dispone de sospechas que permitan presumir que un dato contiene errores de hecho o que ha sido almacenado ilegalmente, informará, mediante el intercambio de información complementaria, al Estado miembro emisor en cuanto sea posible y, a más tardar, dos días laborables después de haber tenido conocimiento de dichos indicios.",
+   "El Estado miembro emisor será responsable de la exactitud y actualidad de los datos y de la legalidad de su introducción y almacenamiento en el SIS."
+  ],
+  "c": 2,
+  "art": "s-12",
+  "loc": "Art. 44.5",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Si un Estado miembro distinto del Estado miembro emisor dispone de indicios que permitan presumir que un dato contiene errores de hecho o que ha sido almacenado ilegalmente, informará, mediante el intercambio de información complementaria, al Estado miembro emisor en cuanto sea posible y, a más tardar, dos días laborables después de haber tenido conocimiento de dichos indicios.",
+  "exp": "La ley habla de «<b>indicios</b>», no de «sospechas», y fija dos días laborables."
+ },
+ {
+  "n": "2:8",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Finalidad general del SIS. El SIS tiene por finalidad:",
+  "op": [
+   "Establecer las condiciones y los procedimientos para la introducción en el SIS y el tratamiento de las descripciones sobre nacionales de terceros países, y para el intercambio de información complementaria y datos adicionales a efectos de la denegación de entrada y estancia en el territorio de los Estados miembros.",
+   "Garantizar un alto nivel de seguridad en el espacio de libertad, seguridad y justicia de la Unión, con inclusión del mantenimiento de la seguridad y el orden públicos y la salvaguardia de la seguridad en el territorio de los Estados miembros, y garantizar la aplicación de las disposiciones del capítulo 2 del título V de la tercera parte del TFUE relativas a la circulación de personas en sus territorios, con la ayuda de la información transmitida a través de este sistema.",
+   "Establecer disposiciones sobre la arquitectura técnica del SIS, las responsabilidades de los Estados miembros y de la Agencia de la Unión Europea para la gestión operativa de sistemas informáticos de gran magnitud en el espacio de libertad, seguridad y justicia (eu-LISA), el tratamiento general de los datos, los derechos de los interesados y la responsabilidad.",
+   "Todas las opciones son correctas."
+  ],
+  "c": 1,
+  "art": "s-7",
+  "loc": "Art. 1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "El SIS tiene por finalidad garantizar un alto nivel de seguridad en el espacio de libertad, seguridad y justicia de la Unión, con inclusión del mantenimiento de la seguridad y el orden públicos y la salvaguardia de la seguridad en el territorio de los Estados miembros, y garantizar la aplicación de las disposiciones del capítulo 2 del título V de la tercera parte del TFUE relativas a la circulación de personas en sus territorios, con la ayuda de la información transmitida a través de este sistema.",
+  "exp": "Esa es la <b>finalidad</b>; las otras dos opciones describen el <b>objeto</b> del Reglamento (art. 2)."
+ },
+ {
+  "n": "2:9",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). En relación con la confidencialidad de eu-Lisa, señale la opción CORRECTA:",
+  "op": [
+   "Todas las opciones son correctas.",
+   "Podrá encomendarse a empresas u organizaciones privadas la gestión operativa de la CS-SIS.",
+   "Eu-LISA aplicará a todo miembro de su personal que trabaje con datos del SIS normas adecuadas sobre secreto profesional u otras obligaciones equivalentes de confidencialidad. Dicha obligación no se aplicará después del cese en el cargo o el empleo de dichas personas o tras la terminación de sus actividades.",
+   "Cuando eu-LISA coopere con contratistas externos en cometidos relacionados con el SIS, supervisará atentamente las actividades del contratista para garantizar el cumplimiento de todas las disposiciones del presente Reglamento, en particular en materia de seguridad, confidencialidad y protección de datos."
+  ],
+  "c": 3,
+  "art": "s-9",
+  "loc": "Art. 17.3",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Cuando eu-LISA coopere con contratistas externos en cometidos relacionados con el SIS, supervisará atentamente las actividades del contratista para garantizar el cumplimiento de todas las disposiciones del presente Reglamento, en particular en materia de seguridad, confidencialidad y protección de datos.",
+  "exp": "No se puede encomendar la gestión a privados y el secreto <b>sigue</b> tras el cese."
+ },
+ {
+  "n": "2:10",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Las autoridades nacionales competentes responsables de la identificación de los nacionales de terceros países tendrán acceso a los datos introducidos en el SIS y tendrán derecho a consultarlos directamente o en una copia de la base de datos del SIS, con una serie de fines. Señale el fin INCORRECTO:",
+  "op": [
+   "Los controles policiales y aduaneros realizados en el Estado miembro de que se trate y la coordinación de dichos controles por las autoridades designadas.",
+   "Los controles fronterizos, de conformidad con el Reglamento (UE) 2016/399.",
+   "El examen de las solicitudes de pasaporte y la toma de decisiones relativas a dichas solicitudes, incluidas las decisiones de anulación, retirada o prórroga.",
+   "La realización de inspecciones de seguridad a nacionales de terceros países que soliciten protección internacional, en la medida en que las autoridades que las realicen no sean «autoridades decisorias» tal como se definen en la Directiva 2013/32/UE del Parlamento Europeo y del Consejo,"
+  ],
+  "c": 2,
+  "art": "s-10",
+  "loc": "Art. 34.1.f",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "El examen de las solicitudes de visado y la toma de decisiones relativas a dichas solicitudes, incluidas las decisiones de anulación, retirada o prórroga de visados",
+  "exp": "El acceso sirve para examinar solicitudes de <b>visado</b>, no de pasaporte."
+ },
+ {
+  "n": "3:2",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Arquitectura técnica y funcionamiento del SIS. El SIS se compondrá, entre otros, de una infraestructura de comunicación entre una serie de componentes. Señale el componente INCORRECTO:",
+  "op": [
+   "La N.SIS.",
+   "La copia de seguridad de la CS-SIS.",
+   "La NI-SIS.",
+   "La CS-SIS."
+  ],
+  "c": 0,
+  "art": "s-7",
+  "loc": "Art. 4.1.c",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Una infraestructura de comunicación entre la CS-SIS, la copia de seguridad de la CS-SIS y la NI-SIS",
+  "exp": "La infraestructura une la CS-SIS, su copia de seguridad y la <b>NI-SIS</b>; no el N.SIS."
+ },
+ {
+  "n": "3:3",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Arquitectura técnica y funcionamiento del SIS. Señale la opción CORRECTA:",
+  "op": [
+   "La CS-SIS prestará los servicios necesarios para la introducción y el tratamiento de datos del SIS, incluida la realización de consultas en la base de datos del SIS.",
+   "Los Estados miembros deberán usar el N.SIS de respaldo compartido.",
+   "Los Estados miembros introducirán, actualizarán, suprimirán y consultarán datos del SIS a través de la infraestructura de comunicación.",
+   "La infraestructura de comunicación segura realizará funciones de supervisión y gestión técnicas y conservará una copia de seguridad de la CS-SIS."
+  ],
+  "c": 0,
+  "art": "s-7",
+  "loc": "Art. 4.6",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "La CS-SIS prestará los servicios necesarios para la introducción y el tratamiento de datos del SIS, incluida la realización de consultas en la base de datos del SIS.",
+  "exp": "Los Estados «podrán» usar un respaldo compartido, operan a través de su N.SIS y la supervisión técnica es de la CS-SIS."
+ },
+ {
+  "n": "3:4",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Registros nacionales. Los Estados miembros garantizarán que todos los accesos a datos personales y todos los intercambios de estos datos en la CS-SIS queden registrados en su N.SIS. ¿Cuándo se suprimirán los registros que incluyan el historial de las descripciones?:",
+  "op": [
+   "En un plazo de tres años a partir de la supresión de las descripciones.",
+   "En un plazo de tres años a partir de su creación.",
+   "En un plazo de cinco años a partir de su creación.",
+   "En un plazo de cinco años a partir de la supresión de las descripciones."
+  ],
+  "c": 0,
+  "art": "s-8",
+  "loc": "Art. 12",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Los registros que incluyan el historial de las descripciones serán suprimidos transcurrido un plazo de tres años a partir de la supresión de las descripciones.",
+  "exp": "<b>Tres años desde la supresión</b> de las descripciones."
+ },
+ {
+  "n": "3:9",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Las autoridades nacionales competentes responsables de la identificación de los nacionales de terceros países tendrán acceso a los datos introducidos en el SIS y tendrán derecho a consultarlos directamente o en una copia de la base de datos del SIS, con una serie de fines. A este respecto, señale el fin CORRECTO:",
+  "op": [
+   "La prevención, la detección, la investigación o el enjuiciamiento de delitos de terrorismo u otros delitos cometidos por bandas organizadas.",
+   "El examen de las solicitudes de visado y la toma de decisiones relativas a dichas solicitudes, excluidas las decisiones de anulación, retirada o prórroga de visados.",
+   "La realización de inspecciones de seguridad a nacionales de terceros países que soliciten protección internacional, cuando las autoridades que las realicen sean «autoridades decisorias».",
+   "La tramitación manual de las solicitudes del SEIAV por la unidad nacional del SEIAV."
+  ],
+  "c": 3,
+  "art": "s-10",
+  "loc": "Art. 34.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Las autoridades nacionales competentes responsables de la identificación de los nacionales de terceros países tendrán acceso a los datos introducidos en el SIS y tendrán derecho a consultarlos directamente o en una copia de la base de datos del SIS, con los siguientes fines",
+  "exp": "La tramitación manual de solicitudes del <b>SEIAV</b> es un fin añadido por la normativa del SEIAV (no figura en el texto original de tu temario). Las otras fallan: delitos «graves», visados «<b>incluidas</b>» las anulaciones y autoridades que «<b>no</b> sean» decisorias."
+ },
+ {
+  "n": "3:10",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Datos adicionales en caso de usurpación de identidad. Señale la opción INCORRECTA:",
+  "op": [
+   "Los datos relacionados con una persona cuya identidad haya sido usurpada se utilizarán para permitir a la autoridad competente diferenciar a la persona cuya identidad haya sido usurpada de la persona a la que realmente se refiere la descripción.",
+   "Cualquier persona cuya identidad haya sido usurpada tendrá derecho a revocar su consentimiento en relación con el tratamiento de los datos personales añadidos.",
+   "En caso de que pueda surgir confusión entre la persona a la que realmente se refiere una descripción y otra persona cuya identidad haya sido usurpada, el Estado miembro emisor deberá añadir, aun sin el consentimiento expreso de esta última, datos sobre ella a la descripción.",
+   "Los datos relacionados con una persona cuya identidad haya sido usurpada se utilizarán para permitir a la persona cuya identidad haya sido usurpada demostrar su identidad y establecer que su identidad ha sido usurpada."
+  ],
+  "c": 2,
+  "art": "s-12",
+  "loc": "Art. 47.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "El Estado miembro emisor deberá añadir, con el consentimiento expreso de esta última, datos sobre ella a la descripción",
+  "exp": "Los datos de la víctima de usurpación se añaden <b>con</b> su consentimiento expreso, nunca sin él."
+ },
+ {
+  "n": "4:1",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Señale cuál de los siguientes es un elemento del sistema central del SIS:",
+  "op": [
+   "Una copia de seguridad de la NI-SIS.",
+   "Una unidad de apoyo técnico.",
+   "Una infraestructura de comunicación.",
+   "Una interfaz europea uniforme."
+  ],
+  "c": 1,
+  "art": "s-7",
+  "loc": "Art. 4.1.a",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Un sistema central (SIS Central) compuesto por: i) una unidad de apoyo técnico («CS-SIS») que contendrá una base de datos (en lo sucesivo, «base de datos del SIS») y que incluirá una copia de seguridad de la CS-SIS",
+  "exp": "El SIS Central son la <b>unidad de apoyo técnico (CS-SIS)</b> y la interfaz nacional uniforme (NI-SIS)."
+ },
+ {
+  "n": "4:2",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). A los efectos del Reglamento objeto de la pregunta, se entenderá por «información complementaria»:",
+  "op": [
+   "Información que no forma parte de los datos de una descripción almacenada en el SIS, pero que está relacionada con descripciones del SIS y no se intercambiará a través de las oficinas Sirene.",
+   "Información que forma parte de los datos de una descripción almacenada en el SIS, pero que está relacionada con descripciones del SIS y se intercambiará a través de las oficinas Sirene.",
+   "Información que no forma parte de los datos de una descripción almacenada en el SIS, pero que está relacionada con descripciones del SIS y se intercambiará a través de las oficinas Sirene.",
+   "Información que no forma parte de los datos de una descripción almacenada en el SIS, pero que no está relacionada con descripciones del SIS y se intercambiará a través de las oficinas Sirene."
+  ],
+  "c": 2,
+  "art": "s-7",
+  "loc": "Art. 3.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "«información complementaria»: información que no forma parte de los datos de una descripción almacenada en el SIS, pero que está relacionada con descripciones del SIS y se intercambiará a través de las oficinas Sirene",
+  "exp": "No forma parte de la descripción, está relacionada con ella y se intercambia por las oficinas Sirene."
+ },
+ {
+  "n": "4:4",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Señale cuál de los siguientes NO corresponde con un dato mínimo necesario para introducir una descripción en el SIS:",
+  "op": [
+   "Clasificación de los documentos de reseña de la persona.",
+   "Medidas que deben tomarse en caso de respuesta positiva.",
+   "Motivo de la descripción.",
+   "Referencia a la decisión que da lugar a la introducción de la descripción."
+  ],
+  "c": 0,
+  "art": "s-9",
+  "loc": "Art. 22.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Los datos mínimos necesarios para introducir una descripción en el SIS serán los previstos en el artículo 20, apartado 2, letras a), g), k), m), n) y q).",
+  "exp": "Los mínimos son las letras a), g), k), m), n) y q) del art. 20.2: apellidos, fecha de nacimiento, motivo, referencia a la decisión, medidas y base de la decisión."
+ },
+ {
+  "n": "4:6",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Plazo de revisión de las descripciones. El Estado miembro emisor revisará la necesidad de conservar una descripción en el SIS en un plazo máximo determinado. No obstante, si la decisión nacional sobre la que se basa la descripción tiene un período de validez superior a tres años, ¿cuándo se revisará la descripción?:",
+  "op": [
+   "Al año.",
+   "A los tres años.",
+   "A los cinco años.",
+   "A los diez años."
+  ],
+  "c": 2,
+  "art": "s-11",
+  "loc": "Art. 39.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "No obstante, si la decisión nacional sobre la que se basa la descripción tiene un período de validez superior a tres años, la descripción se revisará a los cinco años.",
+  "exp": "Plazo general tres años; si la decisión vale más de tres, se revisa a los <b>cinco</b>."
+ },
+ {
+  "n": "4:8",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Información en caso de no ejecución de una descripción. Si no fuera posible ejecutar una medida requerida, ¿cómo procederá el Estado miembro al que se pida actuar?:",
+  "op": [
+   "Informará de ello inmediatamente al Estado miembro emisor mediante el intercambio de información complementaria.",
+   "Informará de ello inmediatamente al Estado miembro emisor mediante cualquier contacto directo y urgente que deje constancia escrita.",
+   "Informará de ello inmediatamente al Estado miembro emisor mediante fax o vía telemática, prefiriendo la segunda.",
+   "Informará de ello inmediatamente al Estado miembro emisor a través de la autoridad judicial de la que emane la orden de actuar."
+  ],
+  "c": 0,
+  "art": "s-12",
+  "loc": "Art. 43",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Si no fuera posible ejecutar una medida requerida, el Estado miembro al que se pide actuar informará de ello inmediatamente al Estado miembro emisor mediante el intercambio de información complementaria.",
+  "exp": "Se informa inmediatamente al emisor mediante el <b>intercambio de información complementaria</b>."
+ },
+ {
+  "n": "4:9",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Todo tratamiento de información del SIS por los Estados miembros con fines distintos de aquellos para los que se introdujo en el SIS deberá guardar relación con algún caso concreto y... Señale la opción INCORRECTA:",
+  "op": [
+   "Estar justificado por la necesidad de prevenir, detectar y sancionar un delito grave.",
+   "Estar justificado por la necesidad de prevenir una amenaza grave e inminente para el orden público.",
+   "Estar justificado por razones graves de seguridad nacional.",
+   "Estar justificado por la necesidad de prevenir una amenaza grave e inminente para la seguridad pública."
+  ],
+  "c": 0,
+  "art": "s-12",
+  "loc": "Art. 41.5",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Todo tratamiento de información del SIS por los Estados miembros con fines distintos de aquellos para los que se introdujo en el SIS deberá guardar relación con algún caso concreto y estar justificado por la necesidad de prevenir una amenaza grave e inminente para el orden y la seguridad públicos, por razones graves de seguridad nacional o por la necesidad de prevenir un delito grave",
+  "exp": "El fin excepcional es <b>prevenir un delito grave</b> (además de amenazas graves o seguridad nacional); no «detectar y sancionar»."
+ },
+ {
+  "n": "4:10",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿Quién será responsable de la exactitud y actualidad de los datos y de la legalidad de su introducción y almacenamiento en el SIS?:",
+  "op": [
+   "eu-LISA.",
+   "El Estado miembro emisor.",
+   "La oficina Sirene.",
+   "La autoridad verificadora."
+  ],
+  "c": 1,
+  "art": "s-12",
+  "loc": "Art. 44.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "El Estado miembro emisor será responsable de la exactitud y actualidad de los datos y de la legalidad de su introducción y almacenamiento en el SIS.",
+  "exp": "De la exactitud y la legalidad responde el Estado miembro <b>emisor</b>."
+ },
+ {
+  "n": "5:1",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). A los efectos del Reglamento objeto de la pregunta, se entenderá por \"coincidencia\" la realización de una serie de pasos. Señale el paso INCORRECTO:",
+  "op": [
+   "Los datos relativos a la consulta han sido confirmados por un usuario final o una autoridad competente.",
+   "La consulta ha arrojado como resultado la existencia de una descripción introducida en el SIS por Otro Estado miembro.",
+   "Los datos relativos a la descripción en el SIS coinciden con los datos utilizados para la consulta.",
+   "un usuario final ha realizado una consulta en el SIS"
+  ],
+  "c": 0,
+  "art": "s-7",
+  "loc": "Art. 3.7",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "«coincidencia»: la realización de los siguientes pasos: a) un usuario final ha realizado una consulta en el SIS; b) la consulta ha arrojado como resultado la existencia de una descripción introducida en el SIS por otro Estado miembro; y c) los datos relativos a la descripción en el SIS coinciden con los datos utilizados para la consulta",
+  "exp": "La coincidencia no exige confirmación; la confirmación convierte la coincidencia en «<b>respuesta positiva</b>»."
+ },
+ {
+  "n": "5:2",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Confidencialidad. Estados miembros. Señale la opción INCORRECTA:",
+  "op": [
+   "Podrá encomendarse a empresas u organizaciones privadas la gestión operativa de las copias técnicas del N.SIS, siempre que no den lugar a copias fuera de línea y bajo las condiciones del acuerdo de contratación.",
+   "No se encomendará a empresas u organizaciones privadas la gestión operativa del N.SIS.",
+   "Cada Estado miembro aplicará sus normas sobre secreto profesional u otras obligaciones equivalentes de confidencialidad a toda persona y organismo que vaya a trabajar con datos del SIS y con información complementaria, de conformidad con su Derecho nacional.",
+   "Cuando un Estado miembro coopere con contratistas externos en cometidos relacionados con el SIS, deberá supervisar atentamente las actividades del contratista para garantizar el cumplimiento de todas las disposiciones del presente Reglamento."
+  ],
+  "c": 0,
+  "art": "s-8",
+  "loc": "Art. 11.3",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "No se encomendará a empresas u organizaciones privadas la gestión operativa del N.SIS o de cualesquiera copias técnicas.",
+  "exp": "Está <b>prohibido</b> encomendar a privados la gestión del N.SIS o de sus copias técnicas."
+ },
+ {
+  "n": "5:3",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Los Estados miembros podrán introducir una descripción para la denegación de entrada y estancia cuando se cumpla, entre otras, la condición de que el Estado miembro haya determinado que la entrada y estancia de un nacional de un tercer país representa una amenaza para el orden público, la seguridad pública o la seguridad nacional en su territorio. Serán consideradas situaciones recogidas anteriormente... Señale la opción INCORRECTA:",
+  "op": [
+   "Cuando existan indicios claros de su intención de cometer un delito de terrorismo en el territorio de un Estado miembro.",
+   "Cuando el nacional de un tercer país haya sido condenado en un Estado miembro por un delito sancionado con una pena privativa de libertad de un año como mínimo.",
+   "Cuando el nacional de un tercer país haya eludido o intentado eludir la normativa nacional o de la Unión en materia de entrada y estancia en el territorio de los Estados miembros.",
+   "Cuando existan sospechas razonables de su intención de cometer un delito en el territorio de un Estado miembro."
+  ],
+  "c": 3,
+  "art": "s-10",
+  "loc": "Art. 24.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Cuando existan motivos fundados para creer que el nacional de un tercer país ha cometido un delito grave, en particular un delito de terrorismo, o indicios claros de su intención de cometer un delito de este tipo en el territorio de un Estado miembro",
+  "exp": "Se exige haber motivos fundados de un delito <b>grave</b> o indicios claros de intención de cometerlo, no simples sospechas de un delito cualquiera."
+ },
+ {
+  "n": "5:4",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Cada Estado miembro adoptará, en lo referente a su N.SIS, las medidas adecuadas, incluido una serie de planes. A este respecto, señale el plan INCORRECTO:",
+  "op": [
+   "Un plan de seguridad.",
+   "Un plan de emergencia en caso de sustracción de datos.",
+   "Un plan de recuperación en caso de catástrofe.",
+   "Un plan de continuidad de las actividades."
+  ],
+  "c": 1,
+  "art": "s-8",
+  "loc": "Art. 10.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Cada Estado miembro adoptará, en lo referente a su N.SIS, las medidas adecuadas, incluido un plan de seguridad, un plan de continuidad de las actividades",
+  "exp": "Son el plan de seguridad, el de continuidad de las actividades y el de recuperación en caso de catástrofe."
+ },
+ {
+  "n": "5:5",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿Cuál de los siguientes datos solo se introducirán cuando sea estrictamente necesario para la identificación del nacional de un tercer país?:",
+  "op": [
+   "Rasgos físicos particulares, objetivos e inalterables.",
+   "Nombres y apellidos usados con anterioridad y alias.",
+   "Conexiones con otras descripciones.",
+   "Indicación de si la decisión de denegación de entrada y estancia se basa en un delito de terrorismo."
+  ],
+  "c": 0,
+  "art": "s-9",
+  "loc": "Art. 22.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Los datos a que se refiere el artículo 20, apartado 2, letra e), del presente Reglamento solo se introducirán cuando sea estrictamente necesario para la identificación del nacional de un tercer país.",
+  "exp": "Los <b>rasgos físicos particulares, objetivos e inalterables</b> solo se introducen si es estrictamente necesario."
+ },
+ {
+  "n": "5:6",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Plazo de revisión de las descripciones. Señale la opción CORRECTA:",
+  "op": [
+   "Las descripciones se conservarán solo durante el tiempo necesario para alcanzar los fines para los que hayan sido introducidas.",
+   "Durante el plazo de revisión, el Estado miembro emisor podrá decidir, tras una evaluación completa del caso concreto, de la que deberá quedar constancia, que se conserve la descripción durante un período de tiempo más largo que el de revisión, cuando ello sea necesario y proporcionado para los fines que motivaron la introducción de la descripción.",
+   "Todas las opciones son correctas.",
+   "Cada Estado miembro fijará, cuando corresponda, plazos de revisión más cortos con arreglo al Derecho nacional."
+  ],
+  "c": 2,
+  "art": "s-11",
+  "loc": "Art. 39",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Las descripciones se conservarán solo durante el tiempo necesario para alcanzar los fines para los que hayan sido introducidas.",
+  "exp": "Conservación limitada, prórroga motivada y plazos nacionales más cortos: las tres son correctas."
+ },
+ {
+  "n": "5:7",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿A que estará sujeto el uso por parte de Europol de la información obtenida como consecuencia de una consulta del SIS o del tratamiento de información complementaria?:",
+  "op": [
+   "Al consentimiento del Estado miembro de concesión.",
+   "No estará sujeto a ninguna obligación.",
+   "Al consentimiento del Estado miembro emisor.",
+   "Al consentimiento del Estado miembro de ejecución."
+  ],
+  "c": 2,
+  "art": "s-11",
+  "loc": "Art. 35.4",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "El uso por parte de Europol de la información obtenida como consecuencia de una consulta del SIS o del tratamiento de información complementaria estará sujeto al consentimiento del Estado miembro emisor.",
+  "exp": "Europol necesita el consentimiento del Estado miembro <b>emisor</b>."
+ },
+ {
+  "n": "5:9",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Los datos solo podrán copiarse con fines técnicos, cuando sea necesario para la consulta directa por las autoridades competentes responsables de la identificación de los nacionales de terceros países. Las copias técnicas mencionadas anteriormente, que den lugar a bases de datos fuera de línea, solo podrán conservarse durante...:",
+  "op": [
+   "24 horas como máximo.",
+   "48 horas como máximo.",
+   "72 horas como máximo.",
+   "El tiempo imprescindiblemente necesario."
+  ],
+  "c": 1,
+  "art": "s-12",
+  "loc": "Art. 41.3",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Las copias técnicas mencionadas en el apartado 2 que den lugar a bases de datos fuera de línea solo podrán conservarse durante 48 horas como máximo.",
+  "exp": "Las copias fuera de línea duran <b>48 horas</b> como máximo."
+ },
+ {
+  "n": "6:1",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿Quién coordinará la verificación de la calidad de la información introducida en el SIS?:",
+  "op": [
+   "Las oficinas Sirene.",
+   "Una autoridad de control independiente.",
+   "La infraestructura de comunicación.",
+   "La autoridad verificadora de cada Estado miembro."
+  ],
+  "c": 0,
+  "art": "s-8",
+  "loc": "Art. 7",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Las oficinas Sirene coordinarán la verificación de la calidad de la información introducida en el SIS.",
+  "exp": "La verificación de la calidad la coordinan las <b>oficinas Sirene</b>."
+ },
+ {
+  "n": "6:2",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Los datos tratados en el SIS y la correspondiente información complementaria intercambiada con arreglo al presente Reglamento, ¿podrá transmitirse a terceros países?:",
+  "op": [
+   "Sí, cuando se trate de evitar la comisión de atentados terroristas.",
+   "Ninguna de las opciones es correcta.",
+   "Si, cuando corra riesgo grave la vida o la integridad física de terceras personas.",
+   "No, en ningún caso."
+  ],
+  "c": 3,
+  "art": "s-13",
+  "loc": "Art. 50",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Los datos tratados en el SIS y la correspondiente información complementaria intercambiada con arreglo al presente Reglamento no se transmitirán ni se pondrán a disposición de terceros países ni de organizaciones internacionales.",
+  "exp": "No se transmiten ni se ponen a disposición de terceros países ni organizaciones internacionales: <b>en ningún caso</b>."
+ },
+ {
+  "n": "6:3",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Los nacionales de terceros países objeto de una descripción del SIS serán informados de ello. ¿Cuándo podrá NO facilitarse dicha información?:",
+  "op": [
+   "En ningún caso, el interesado siempre tiene derecho de información.",
+   "Cuando el Derecho nacional permita limitar el derecho de información, en particular para salvaguardar los derechos de terceras personas.",
+   "Cuando el Derecho nacional permita limitar el derecho de información, en particular para la prevención, detección, investigación y enjuiciamiento de infracciones.",
+   "Cuando el Derecho nacional permita limitar el derecho de información, en particular para salvaguardar la seguridad nacional, la defensa y la seguridad pública."
+  ],
+  "c": 3,
+  "art": "s-13",
+  "loc": "Art. 52.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Dicha información no se facilitará cuando el Derecho nacional permita limitar el derecho de información, en particular para salvaguardar la seguridad nacional, la defensa, la seguridad pública y para la prevención, detección, investigación y enjuiciamiento de delitos.",
+  "exp": "Cita seguridad nacional, defensa y seguridad pública, y prevención y persecución de <b>delitos</b> (no de «infracciones» ni derechos de terceros)."
+ },
+ {
+  "n": "6:4",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Consulta en caso de respuesta positiva relativa a un nacional de un tercer país titular de un permiso de residencia válido o un visado para estancia de larga duración válido. Cuando un Estado miembro obtenga una respuesta positiva en una descripción para la denegación de entrada y estancia introducida por un Estado miembro respecto de un nacional de un tercer país que sea titular de un permiso de residencia válido o un visado para estancia de larga duración válido concedidos por otro Estado miembro, los Estados miembros implicados se consultarán mutuamente mediante el intercambio de información complementaria, con arreglo a una serie de normas. Señale la norma CORRECTA:",
+  "op": [
+   "El Estado miembro emisor comunicará al Estado miembro de ejecución el resultado tras las consultas.",
+   "El Estado miembro emisor tomará la decisión sobre la entrada del nacional de un tercer país.",
+   "El Estado miembro emisor informará de la situación al Estado miembro de ejecución.",
+   "El Estado miembro emisor iniciará el procedimiento de descripciones múltiples."
+  ],
+  "c": 0,
+  "art": "s-10",
+  "loc": "Art. 30.c",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "El Estado miembro emisor comunicará al Estado miembro de ejecución el resultado tras las consultas.",
+  "exp": "Informa el de ejecución, inicia el procedimiento el emisor y decide la entrada el de <b>ejecución</b>."
+ },
+ {
+  "n": "6:5",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Sistemas nacionales. Señale la opción CORRECTA. Cada Estado miembro será responsable de:",
+  "op": [
+   "La creación, el funcionamiento, el mantenimiento y el ulterior desarrollo de su N.SIS y de conectarlo a la NI-SIS.",
+   "Transmitir sus descripciones a través de su N.SIS.",
+   "Todas las opciones son correctas.",
+   "Garantizar la disponibilidad ininterrumpida de los datos del SIS para los usuarios finales."
+  ],
+  "c": 2,
+  "art": "s-8",
+  "loc": "Art. 6",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Cada Estado miembro será responsable de la creación, el funcionamiento, el mantenimiento y el ulterior desarrollo de su N.SIS y de conectarlo a la NI-SIS. Cada Estado miembro será responsable de garantizar la disponibilidad ininterrumpida de los datos del SIS para los usuarios finales. Cada Estado miembro transmitirá sus descripciones a través de su N.SIS.",
+  "exp": "Crear y conectar el N.SIS, garantizar la disponibilidad y transmitir descripciones: todo es correcto."
+ },
+ {
+  "n": "6:6",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿Con que calificativo deberán marcarse las solicitudes de información complementaria que tengan máxima prioridad?:",
+  "op": [
+   "«EMERGENCIA».",
+   "«URGENTE».",
+   "«PRIORITARIO».",
+   "«PREFERENTE»."
+  ],
+  "c": 1,
+  "art": "s-8",
+  "loc": "Art. 8.3",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Máxima prioridad deberán marcarse con el calificativo «URGENTE» en los formularios Sirene y deberán especificarse las razones que motivan la urgencia.",
+  "exp": "La máxima prioridad se marca como «<b>URGENTE</b>»."
+ },
+ {
+  "n": "6:7",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Acceso de Europol a los datos del SIS. Señale la opción INCORRECTA:",
+  "op": [
+   "Los Estados miembros informarán a Europol mediante el intercambio de información complementaria de cualquier respuesta positiva para descripciones relacionadas con delitos graves.",
+   "El uso por parte de Europol de la información obtenida como consecuencia de una consulta del SIS o del tratamiento de información complementaria estará sujeto al consentimiento del Estado miembro emisor.",
+   "Europol podrá intercambiar y solicitar información complementaria de conformidad con lo dispuesto en el Manual Sirene.",
+   "Europol tendrá derecho, cuando sea necesario para cumplir su mandato, a acceder a los datos del SIS y a consultarlos."
+  ],
+  "c": 0,
+  "art": "s-11",
+  "loc": "Art. 35.8",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Los Estados miembros informarán a Europol mediante el intercambio de información complementaria de cualquier respuesta positiva para descripciones relacionadas con delitos de terrorismo.",
+  "exp": "La obligación de informar se refiere a delitos de <b>terrorismo</b>, no a «delitos graves»."
+ },
+ {
+  "n": "6:8",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Gestión operativa. ¿Quién será responsable de las funciones relacionadas con la supervisión, seguridad y coordinación de las relaciones entre los Estado miembros y el proveedor?:",
+  "op": [
+   "El Parlamento.",
+   "Cada Estado miembro.",
+   "La Comisión.",
+   "eu-LISA."
+  ],
+  "c": 3,
+  "art": "s-9",
+  "loc": "Art. 15.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Eu-LISA será responsable asimismo de las siguientes funciones relacionadas con la infraestructura de comunicación: a) supervisión; b) seguridad; c) coordinación de las relaciones entre los Estados miembros y el proveedor",
+  "exp": "Supervisión, seguridad y relación con el proveedor son funciones de <b>eu-LISA</b>."
+ },
+ {
+  "n": "6:9",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿Quién será responsable de la legalidad de la introducción y almacenamiento de los datos en el SIS?:",
+  "op": [
+   "El Estado miembro de concesión.",
+   "La autoridad verificadora.",
+   "El Estado miembro emisor.",
+   "Las autoridades nacionales."
+  ],
+  "c": 2,
+  "art": "s-12",
+  "loc": "Art. 44.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "El Estado miembro emisor será responsable de la exactitud y actualidad de los datos y de la legalidad de su introducción y almacenamiento en el SIS.",
+  "exp": "La legalidad de la introducción y el almacenamiento corresponde al Estado miembro <b>emisor</b>."
+ },
+ {
+  "n": "7:1",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Arquitectura técnica y funcionamiento del SIS. Para los Estados miembros que utilicen una copia nacional o compartida, la CS-SIS (unidad de apoyo técnico), ¿qué garantizará?:",
+  "op": [
+   "La actualización en línea de las copias nacionales.",
+   "Todas las opciones son correctas.",
+   "La sincronización y coherencia entre las copias nacionales y la base de datos del SIS.",
+   "La inicialización y restauración de las copias nacionales."
+  ],
+  "c": 1,
+  "art": "s-7",
+  "loc": "Art. 4.6",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Para los Estados miembros que utilicen una copia nacional o compartida, la CS-SIS garantizará: a) la actualización en línea de las copias nacionales; b) la sincronización y coherencia entre las copias nacionales y la base de datos del SIS",
+  "exp": "La CS-SIS garantiza la actualización en línea, la sincronización y coherencia y la inicialización y restauración de las copias."
+ },
+ {
+  "n": "7:3",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). El SIS se compondrá, entre otros, de una infraestructura de comunicación segura entre la CS-SIS y... Señale la opción INCORRECTA:",
+  "op": [
+   "El DIM.",
+   "El SCB compartido.",
+   "El NI-SIS.",
+   "Las infraestructuras centrales del PEB."
+  ],
+  "c": 2,
+  "art": "s-7",
+  "loc": "Art. 4.1.c",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Una infraestructura de comunicación entre la CS-SIS, la copia de seguridad de la CS-SIS y la NI-SIS",
+  "exp": "La infraestructura «<b>segura</b>» añadida por la normativa de interoperabilidad une la CS-SIS con el PEB, el SCB compartido y el DIM; la NI-SIS pertenece a la infraestructura general."
+ },
+ {
+  "n": "7:4",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). A los efectos del presente Reglamento se entiende por \"respuesta positiva\" toda coincidencia que cumpla una serie de criterios. Señale el criterio CORRECTO:",
+  "op": [
+   "Requerir la adopción de medidas.",
+   "Haber sido confirmada por la autoridad en materia de visados.",
+   "Haber sido confirmada por el usuario final con arreglo a los procedimientos nacionales, cuando la coincidencia en cuestión estuviese basada en la comparación de datos biométricos.",
+   "Todas las opciones son correctas."
+  ],
+  "c": 0,
+  "art": "s-7",
+  "loc": "Art. 3.8",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "«respuesta positiva»: toda coincidencia que cumpla los siguientes criterios: a) haber sido confirmada por: i) el usuario final; o ii) la autoridad competente con arreglo a los procedimientos nacionales, cuando la coincidencia en cuestión estuviese basada en la comparación de datos biométricos; y b) requerir la adopción de medidas",
+  "exp": "Debe estar confirmada (usuario final, o autoridad competente si hay biometría) y <b>requerir la adopción de medidas</b>."
+ },
+ {
+  "n": "7:6",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿Quién será responsable de la gestión operativa del SIS Central?:",
+  "op": [
+   "La Comisión Europea.",
+   "El Supervisor Europeo de Protección de Datos.",
+   "El Tribunal de Justicia Europeo.",
+   "eu-LISA."
+  ],
+  "c": 3,
+  "art": "s-9",
+  "loc": "Art. 15.1",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Eu-LISA será responsable de la gestión operativa del SIS Central. eu-LISA se asegurará, en cooperación con los Estados miembros, de que en el SIS Central se utilice en todo momento la mejor tecnología disponible, con sujeción a un análisis de costes y beneficios.",
+  "exp": "La gestión operativa del SIS Central es de <b>eu-LISA</b>."
+ },
+ {
+  "n": "7:7",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿Quién se encargará de garantizar el intercambio y la disponibilidad de toda la información complementaria?:",
+  "op": [
+   "La oficina Sirene.",
+   "La unidad operativa.",
+   "El Estado de emisión.",
+   "La autoridad verificadora."
+  ],
+  "c": 0,
+  "art": "s-8",
+  "loc": "Art. 7.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Se encargará de garantizar el intercambio y la disponibilidad de toda la información complementaria, de conformidad con el Manual Sirene.",
+  "exp": "De la información complementaria se encarga la <b>oficina Sirene</b>."
+ },
+ {
+  "n": "7:8",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Supervisión de los N.SIS. ¿Cada cuánto tiempo, al menos, las autoridades de control velarán por que se lleve a cabo una auditoría de las operaciones de tratamiento de datos en los N.SIS de acuerdo con las normas internacionales de auditoría?:",
+  "op": [
+   "Cada año.",
+   "Cada cinco años.",
+   "Cada tres años.",
+   "Cada cuatro años."
+  ],
+  "c": 3,
+  "art": "s-13",
+  "loc": "Art. 55.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Las autoridades de control velarán por que se lleve a cabo una auditoría de las operaciones de tratamiento de datos en los N.SIS de acuerdo con las normas internacionales de auditoría, al menos cada cuatro años.",
+  "exp": "Auditoría de los N.SIS al menos cada <b>cuatro años</b>."
+ },
+ {
+  "n": "7:9",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). ¿En qué caso un Estado miembro que no sea el Estado miembro emisor podrá facilitar al interesado información relativa a cualquiera de los datos personales del interesado que estén siendo tratados?:",
+  "op": [
+   "Únicamente si existe acuerdo entre dicho Estado miembro y el Estado miembro emisor.",
+   "Únicamente si el Estado miembro emisor ha dado consentimiento expreso para esa categoría de datos.",
+   "Únicamente si ha dado antes al Estado miembro emisor ocasión de pronunciarse al respecto.",
+   "En ningún caso."
+  ],
+  "c": 2,
+  "art": "s-13",
+  "loc": "Art. 53.2",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Un Estado miembro que no sea el Estado miembro emisor podrá facilitar al interesado información relativa a cualquiera de los datos personales del interesado que estén siendo tratados, únicamente si ha dado antes al Estado miembro emisor ocasión de pronunciarse al respecto.",
+  "exp": "Solo si <b>antes ha dado al emisor ocasión de pronunciarse</b>."
+ },
+ {
+  "n": "7:10",
+  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Sanciones. Los Estados miembros garantizarán que toda utilización indebida de los datos del SIS y todo tratamiento de estos o intercambio de información complementaria que sean contrarios a lo dispuesto en el presente Reglamento se sancionen con arreglo al Derecho nacional. Las sanciones así establecidas serán:",
+  "op": [
+   "Disuasorias.",
+   "Efectivas.",
+   "Proporcionadas.",
+   "Todas las opciones son correctas."
+  ],
+  "c": 3,
+  "art": "s-14",
+  "loc": "Art. 59",
+  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
+  "lit": "Las sanciones así establecidas serán efectivas, proporcionadas y disuasorias.",
+  "exp": "Las sanciones serán <b>efectivas, proporcionadas y disuasorias</b>."
+ }
+]
