@@ -1970,5 +1970,515 @@
   "apartado": "Del Código de visados",
   "lit": "En casos excepcionales, se podrá expedir un visado en un paso fronterizo, siempre que se cumplan las condiciones siguientes",
   "exp": "El seguro médico <b>no</b> es una de las condiciones: puede incluso exceptuarse en frontera."
+ },
+ {
+  "n": "q:1",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Los Estados miembros y Europol se asegurarán de que todas las operaciones de tratamiento de datos derivadas de solicitudes de comparación con los datos de Eurodac a efectos de aplicación de la ley, queden registradas o sean documentadas para...:",
+  "op": [
+   "Todas las opciones son correctas.",
+   "Fines de control interno.",
+   "Controlar la legalidad del tratamiento de datos y la integridad y seguridad de los datos.",
+   "Comprobar la admisibilidad de la solicitud."
+  ],
+  "c": 0,
+  "art": "e-142",
+  "loc": "Art. 51.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Los Estados miembros y Europol se asegurarán de que todas las operaciones de tratamiento de datos derivadas de solicitudes de comparación con los datos de Eurodac a efectos de aplicación de la ley, queden registradas o sean documentadas para comprobar la admisibilidad de la solicitud, controlar la legalidad del tratamiento de datos y la integridad y seguridad de los datos, y para fines de control interno.",
+  "exp": "El registro sirve para comprobar la admisibilidad, controlar la legalidad, la integridad y seguridad y para control interno: todas."
+ },
+ {
+  "n": "q:2",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Señale la definición CORRECTA:",
+  "op": [
+   "Aplicación de la ley: prevención, detección o investigación de los delitos de terrorismo o de otros delitos graves.",
+   "Delito grave: un delito punible con arreglo al Derecho nacional con una pena privativa de libertad o de internamiento de una duración mínima no inferior a tres años.",
+   "Datos dactiloscópicos: los datos relativos a impresiones simples y roladas de las impresiones dactilares de los dedos pulgares, cuando no falte ninguno, o los diez dedos si faltare alguno de ellos.",
+   "Niño o menor: persona menor de dieciocho años."
+  ],
+  "c": 0,
+  "art": "e-99",
+  "loc": "Art. 2.1.n",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "«aplicación de la ley»: prevención, detección o investigación de los delitos de terrorismo o de otros delitos graves",
+  "exp": "«Delito grave» exige una pena de duración <b>máxima</b> no inferior a tres años; y niño o menor es el nacional de un tercer país o apátrida menor de 18."
+ },
+ {
+  "n": "q:3",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Señale cuál de los siguientes corresponde con un órgano de la arquitectura del sistema EURODAC:",
+  "op": [
+   "Todas las opciones son correctas.",
+   "Un Sistema Central integrado por una Unidad Central y las infraestructuras centrales del portal europeo de búsqueda.",
+   "Una infraestructura de comunicación entre el Sistema Central y los Estados miembros que proveerá un canal de comunicación seguro y cifrado para los datos Eurodac.",
+   "Una infraestructura de comunicación segura entre el Sistema Central y el sistema de continuidad operativa."
+  ],
+  "c": 2,
+  "art": "e-101",
+  "loc": "Art. 3.1.b",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Una infraestructura de comunicación entre el Sistema Central y los Estados miembros que proveerá un canal de comunicación seguro y cifrado para los datos Eurodac (en lo sucesivo, «Infraestructura de Comunicación»)",
+  "exp": "El Sistema Central son la Unidad Central y el plan y sistema de continuidad; la infraestructura segura enlaza con el portal europeo de búsqueda y el RCDI."
+ },
+ {
+  "n": "q:4",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Arquitectura del sistema y principios básicos. Señale la opción CORRECTA:",
+  "op": [
+   "La Infraestructura de Comunicación utilizará la red existente «Servicios Transeuropeos Seguros de Telemática entre Administraciones» (LexNet).",
+   "Las normas que rigen Eurodac se aplicarán también a las operaciones efectuadas por los Estados miembros desde la transmisión de los datos a Eurodac hasta la utilización de los resultados de la comparación.",
+   "Cada Estado miembro podrá disponer de más de un Punto de Acceso Nacional.",
+   "Con el fin de garantizar la confidencialidad, todos los datos trasmitidos a o desde Eurodac irán encriptados."
+  ],
+  "c": 1,
+  "art": "e-101",
+  "loc": "Art. 3.7",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Las normas que rigen Eurodac se aplicarán también a las operaciones efectuadas por los Estados miembros desde la transmisión de los datos a Eurodac hasta la utilización de los resultados de la comparación.",
+  "exp": "La red es <b>TESTA</b>, se cifran los datos <b>personales</b> y cada Estado tiene un <b>único</b> punto de acceso nacional."
+ },
+ {
+  "n": "q:5",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Señale cuál de las siguientes funciones, relacionadas con la Infraestructura de Comunicación, NO corresponde a la Comisión:",
+  "op": [
+   "Coordinación de las relaciones.",
+   "Adquisición y renovación.",
+   "Cuestiones contractuales.",
+   "Ejecución del presupuesto."
+  ],
+  "c": 0,
+  "art": "e-102",
+  "loc": "Art. 4.3",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Eu-LISA será responsable de las siguientes funciones relacionadas con la Infraestructura de Comunicación: a) supervisión; b) seguridad; c) coordinación de las relaciones entre los Estados miembros y el proveedor",
+  "exp": "Supervisión, seguridad y <b>coordinación</b> son de eu-LISA; presupuesto, adquisición y contratos, de la Comisión."
+ },
+ {
+  "n": "q:6",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Autoridades designadas y autoridades verificadoras de los Estados miembros a efectos de aplicación de la ley. Señale la opción CORRECTA:",
+  "op": [
+   "Las autoridades designadas serán autoridades de los Estados miembros responsables del enjuiciamiento de los delitos de terrorismo o de otros delitos graves.",
+   "La autoridad designada y la autoridad verificadora no pueden formar parte de la misma organización.",
+   "Cada Estado miembro designará a efectos de aplicación de la ley un o unas autoridades nacionales o unidades de dicha autoridad que actuarán como autoridades verificadoras.",
+   "Cada Estado miembro dispondrá de una lista de las unidades operativas dependientes de sus autoridades designadas que estén autorizadas a solicitar comparaciones con los datos de Eurodac a través del Punto de Acceso Nacional."
+  ],
+  "c": 3,
+  "art": "e-102",
+  "loc": "Art. 5.3",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Cada Estado miembro dispondrá de una lista de las unidades operativas dependientes de sus autoridades designadas que estén autorizadas a solicitar comparaciones con los datos de Eurodac a través del Punto de Acceso Nacional.",
+  "exp": "Las autoridades designadas previenen, detectan o investigan, pueden compartir organización con la verificadora y esta es única por regla general."
+ },
+ {
+  "n": "q:7",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". ¿Con qué periodicidad eu-LISA elaborará un informe estadístico sobre el trabajo de Eurodac?:",
+  "op": [
+   "Mensualmente.",
+   "Cada seis meses.",
+   "Trimestralmente.",
+   "Anualmente."
+  ],
+  "c": 0,
+  "art": "e-105",
+  "loc": "Art. 12.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Eu-LISA elaborará cada mes un informe estadístico sobre el trabajo de Eurodac",
+  "exp": "El informe estadístico es <b>mensual</b>."
+ },
+ {
+  "n": "q:8",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Disposiciones específicas aplicables a los menores. Señale la opción INCORRECTA:",
+  "op": [
+   "NO se utilizará ninguna forma de fuerza ni coerción contra los menores para garantizar cumplimiento de la obligación de proporcionar datos biométricos.",
+   "El menor no acompañado irá acompañado de un representante o, cuando no se haya designado un representante, de una persona formada para salvaguardar el interés superior del niño y bienestar general, durante el proceso de toma de sus datos biométricos.",
+   "En caso de que no exista certeza sobre si el niño es menor de seis años ni existan pruebas que acrediten su edad, las autoridades competentes de los Estados miembros considerarán que el niño es menor de 6 años a los efectos del presente Reglamento.",
+   "De la toma de datos biométricos de los menores a partir de los 6 años de edad se encargarán funcionarios formados específicamente para tomar los datos biométricos de menores, de manera adaptada a sus necesidades y con sensibilidad, respetando plenamente el interés superior del niño."
+  ],
+  "c": 0,
+  "art": "e-110",
+  "loc": "Art. 14.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "No se utilizará ninguna forma de fuerza contra los menores para garantizar su cumplimiento de la obligación de proporcionar datos biométricos. No obstante, cuando lo permita el Derecho nacional o de la Unión pertinente, y como último recurso, se podrá recurrir a un nivel proporcionado de coerción sobre los menores para asegurar su cumplimiento de dicha obligación.",
+  "exp": "Como <b>último recurso</b> sí cabe un nivel proporcionado de coerción si lo permite el Derecho."
+ },
+ {
+  "n": "q:9",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Los Estados miembros tomarán los datos biométricos de cada solicitante de protección internacional de al menos 6 años de edad en el momento en el que se registre la solicitud de protección internacional y los transmitirán cuanto antes y, a más tardar, en las __________ a partir de dicho registro:",
+  "op": [
+   "24 horas.",
+   "72 horas.",
+   "48 horas.",
+   "96 horas."
+  ],
+  "c": 1,
+  "art": "e-111",
+  "loc": "Art. 15.1.a",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "En el momento en el que se registre la solicitud de protección internacional a que se refiere el artículo 27 del Reglamento (UE) 2024/1348 y los transmitirán cuanto antes y, a más tardar, en las 72 horas a partir de dicho registro",
+  "exp": "Plazo máximo de transmisión: <b>72 horas</b> desde el registro."
+ },
+ {
+  "n": "q:10",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Personas registradas con objeto de tramitar un procedimiento de admisión en virtud del Marco de Reasentamiento y Admisión Humanitaria de la Unión. Cuando así lo solicite el Estado miembro de que se trate, y a efectos del Reglamento (UE) 2024/1350, ¿quién podrá tomar datos biométricos y transmitirlos al Estado miembro solicitante?:",
+  "op": [
+   "Una organización internacional pertinente.",
+   "La Agencia de Asilo de la Unión Europea.",
+   "Todas las opciones son correctas.",
+   "Otro Estado miembro."
+  ],
+  "c": 2,
+  "art": "e-115",
+  "loc": "Art. 18.4",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Otro Estado miembro, la Agencia de Asilo de la Unión Europea o una organización internacional pertinente podrán tomar datos biométricos y transmitirlos al Estado miembro solicitante",
+  "exp": "Puede hacerlo otro Estado miembro, la Agencia de Asilo o una organización internacional: todas."
+ },
+ {
+  "n": "q:11",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac. Cada Estado miembro tomará sin demora los datos biométricos de todos los nacionales de terceros países o apátridas que tengan, como mínimo, 6 años de edad y que hayan sido registrados como beneficiarios de protección temporal en el territorio de dicho Estado miembro. El Estado miembro de que se trate, ¿en qué plazo transmitirá a Eurodac los datos relativos a los nacionales de terceros países o apátridas registrados como beneficiarios de protección temporal?:",
+  "op": [
+   "Lo antes posible y en un plazo máximo de 15 días desde la fecha de registro como beneficiarios de protección temporal.",
+   "Lo antes posible y en un plazo máximo de 5 días desde la fecha de registro como beneficiarios de protección temporal.",
+   "Lo antes posible y en un plazo máximo de 10 días desde la fecha de registro como beneficiarios de protección temporal.",
+   "Lo antes posible y en un plazo máximo de 72 horas desde la fecha de registro como beneficiarios de protección temporal."
+  ],
+  "c": 2,
+  "art": "e-124",
+  "loc": "Art. 26.2",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Lo antes posible y en un plazo máximo de diez días desde la fecha de registro como beneficiarios de protección temporal",
+  "exp": "Beneficiarios de protección temporal: máximo <b>10 días</b>."
+ },
+ {
+  "n": "q:12",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Procedimiento para la comparación de los datos de los nacionales de terceros países y apátridas que hayan desembarcado tras una operación de búsqueda y salvamento y los beneficiarios de protección temporal. Cuando el estado de las yemas de los dedos no permita tomar impresiones dactilares de una calidad que garantice una comparación o cuando no se disponga de impresiones dactilares para la comparación, ¿cómo efectuará la comparación el Estado miembro?:",
+  "op": [
+   "Efectuará una comparación de los datos obtenidos a través del análisis óseo.",
+   "Efectuará una comparación de los datos obtenidos a través del análisis del ADN.",
+   "Efectuará una comparación de los datos de los datos alfanuméricos y documentales.",
+   "Efectuará una comparación de los datos de imagen facial."
+  ],
+  "c": 3,
+  "art": "e-126",
+  "loc": "Art. 28.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Cuando el estado de las yemas de los dedos no permita tomar impresiones dactilares de una calidad que garantice una comparación adecuada con arreglo al artículo 38 o cuando no se disponga de impresiones dactilares para la comparación, el Estado miembro efectuará una comparación de los datos de imagen facial.",
+  "exp": "Sin huellas válidas se compara la <b>imagen facial</b>."
+ },
+ {
+  "n": "q:13",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". ¿Cuál de los siguientes datos biométricos NO se registrarán en EURODAC?:",
+  "op": [
+   "Las personas beneficiarias de protección temporal.",
+   "Las personas registradas con objeto de tramitar un procedimiento de admisión.",
+   "Los nacionales de terceros países o apátridas desembarcados tras una operación de búsqueda y salvamento.",
+   "Los solicitantes de protección internacional."
+  ],
+  "c": 1,
+  "art": "e-127",
+  "loc": "Art. 29.2",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Los datos biométricos a que se refiere el artículo 18, apartado 1, no se registrarán en Eurodac.",
+  "exp": "El art. 18.1 es el de las personas registradas para tramitar un <b>procedimiento de admisión</b>: sus datos biométricos no se registran."
+ },
+ {
+  "n": "q:14",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Las autoridades designadas, a efectos de aplicación de la ley, únicamente podrán presentar una solicitud electrónica motivada de comparación de datos biométricos o alfanuméricos con los datos conservados en Eurodac, dentro de los límites de sus competencias, si se han cumplido una serie de condiciones. Señale la condición INCORRECTA:",
+  "op": [
+   "Existan motivos razonables para considerar que la comparación contribuirá sustancialmente a la prevención, detección o investigación de cualquiera de los delitos de terrorismo u otros delitos graves en cuestión.",
+   "Se ha efectuado una comprobación previa en las bases de datos nacionales.",
+   "La comparación sea necesaria a efectos de prevención, detección o investigación de delitos de terrorismo o de otros delitos graves, es decir, que exista un interés superior de seguridad pública que haga que la consulta de la base de datos sea proporcionada al objetivo perseguido.",
+   "La comparación sea necesaria en un caso concreto para personas concretas."
+  ],
+  "c": 1,
+  "art": "e-129",
+  "loc": "Art. 33.1.a",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Se ha efectuado una comprobación previa en: i) las bases de datos nacionales, y ii) los sistemas automatizados de identificación dactilar de todos los demás Estados miembros",
+  "exp": "La comprobación previa abarca las bases nacionales <b>y</b> los sistemas de identificación dactilar de los demás Estados miembros."
+ },
+ {
+  "n": "q:15",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". A efectos de aplicación de la ley, la autoridad designada de Europol únicamente podrá presentar una solicitud electrónica motivada de comparación de datos biométricos o alfanuméricos con los datos conservados en Eurodac, dentro del mandato de Europol y cuando sea necesario para el cumplimiento de cometido, si se han cumplido una serie de condiciones. Señale la condición CORRECTA:",
+  "op": [
+   "Existan sospechas para considerar que la comparación contribuirá sustancialmente a la prevención, detección o investigación de cualquiera de los delitos de terrorismo u otros delitos graves incluidos en el mandato de Europol.",
+   "Las comparaciones con los datos biométricos o alfanuméricos conservados en cualquier sistema de tratamiento de información al que Europol pueda técnica y legalmente acceder no hayan permitido establecer la identidad del interesado.",
+   "La comparación sea necesaria para apoyar y reforzar la actuación de los Estados miembros a la hora de prevenir, detectar o investigar los delitos de terrorismo u otros delitos graves cometidos en uno de los Estados de la Unión.",
+   "La comparación sea necesaria en un caso concreto para personas concretas o grupos concretos de personas."
+  ],
+  "c": 1,
+  "art": "e-130",
+  "loc": "Art. 34.1.a",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Las comparaciones con los datos biométricos o alfanuméricos conservados en cualquier sistema de tratamiento de información al que Europol pueda técnica y legalmente acceder no hayan permitido establecer la identidad del interesado",
+  "exp": "Las otras opciones cambian «motivos razonables» por sospechas o alteran el ámbito de delitos y personas."
+ },
+ {
+  "n": "q:16",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Personas registradas con objeto de tramitar un procedimiento de admisión en virtud del Marco de Reasentamiento y Admisión Humanitaria de la Unión. Cuando así lo solicite el Estado miembro de que se trate, ¿cuál de los siguientes podrá tomar datos biométricos y transmitirlos al Estado miembro solicitante?:",
+  "op": [
+   "La toma de datos biométricos y la transmisión de los mismos solo puede ser ejercida por el Estado de origen.",
+   "EUROPOL",
+   "Cualquier Estado que cuente con autorización del Estado miembro de origen.",
+   "La Agencia de Asilo de la Unión Europea."
+  ],
+  "c": 3,
+  "art": "e-115",
+  "loc": "Art. 18.4",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Otro Estado miembro, la Agencia de Asilo de la Unión Europea o una organización internacional pertinente podrán tomar datos biométricos y transmitirlos al Estado miembro solicitante",
+  "exp": "De las opciones, la única prevista es la <b>Agencia de Asilo de la Unión Europea</b> (junto a otro Estado miembro u organización internacional)."
+ },
+ {
+  "n": "q:17",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". ¿Quién responderá de la exactitud y actualidad de los datos cuando se transmitan a Eurodac?:",
+  "op": [
+   "La Comisión.",
+   "Eu-LISA.",
+   "El Estado miembro de origen.",
+   "El Estado miembro de acogida."
+  ],
+  "c": 2,
+  "art": "e-131",
+  "loc": "Art. 36.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "De la exactitud y actualidad de los datos cuando se transmitan a Eurodac",
+  "exp": "Responde el <b>Estado miembro de origen</b>."
+ },
+ {
+  "n": "q:18",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Eurodac llevará a cabo las comparaciones siguiendo el orden de recepción de las solicitudes. Toda solicitud se tramitará en un plazo de __________ a partir de su recepción. Los Estados miembros, basándose en razones de Derecho nacional, podrán exigir que se realice una comparación particularmente urgente en el plazo de __________:",
+  "op": [
+   "24 horas / 8 horas.",
+   "72 horas / 24 horas.",
+   "24 horas/ 1 hora.",
+   "48 horas / 12 horas."
+  ],
+  "c": 2,
+  "art": "e-133",
+  "loc": "Art. 38.2",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Toda solicitud se tramitará en un plazo de 24 horas a partir de su recepción. Los Estados miembros, basándose en razones de Derecho nacional, podrán exigir que se realice una comparación particularmente urgente en el plazo de una hora.",
+  "exp": "Plazo general <b>24 horas</b>; urgente, <b>una hora</b>."
+ },
+ {
+  "n": "q:19",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Comunicación entre los Estados miembros y Eurodac. Los datos transmitidos desde los Estados miembros a Eurodac y de este a los Estados miembros, ¿qué utilizarán?:",
+  "op": [
+   "El Sistema Central.",
+   "El RCDI.",
+   "La Infraestructura de Comunicación.",
+   "El Sistema de Continuidad Operativa."
+  ],
+  "c": 2,
+  "art": "e-134",
+  "loc": "Art. 39",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Los datos transmitidos desde los Estados miembros a Eurodac y de este a los Estados miembros utilizarán la Infraestructura de Comunicación.",
+  "exp": "La comunicación usa la <b>Infraestructura de Comunicación</b>."
+ },
+ {
+  "n": "q:20",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Acceso a los datos registrados en Eurodac, rectificación y supresión de estos. Señale la opción CORRECTA:",
+  "op": [
+   "El Estado miembro de origen tendrá acceso a los datos que haya transmitido y que estén registrados en Eurodac con arreglo al presente Reglamento.",
+   "Los Estados miembros no efectuarán búsquedas en los datos transmitidos por otro Estado miembro ni recibirán tales datos, incluidos los que sean resultado de la comparación.",
+   "El Estado miembro de origen y EUROPOL estarán facultados para modificar los datos por ellos transmitidos a Eurodac, rectificándolos o completándolos, o para suprimirlos.",
+   "La Agencia eu-LISA no transferirá ni facilitará datos registrados en Eurodac a las autoridades de ningún tercer país."
+  ],
+  "c": 0,
+  "art": "e-134",
+  "loc": "Art. 40.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "El Estado miembro de origen tendrá acceso a los datos que haya transmitido y que estén registrados en Eurodac con arreglo al presente Reglamento.",
+  "exp": "Los demás Estados reciben lo que resulte de la comparación, solo el de origen modifica y la prohibición sobre terceros países tiene excepciones."
+ },
+ {
+  "n": "q:21",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". La Agencia eu-LISA llevará registros de todas las operaciones de tratamiento de datos que se lleven a cabo en Eurodac. En dichos registros se hará constar...:",
+  "op": [
+   "Todas las opciones son correctas.",
+   "El nombre tanto de la unidad que los haya introducido o extraído como el de las personas responsables.",
+   "El objeto y la fecha y hora del acceso.",
+   "Los datos transmitidos y los datos utilizados para una consulta."
+  ],
+  "c": 0,
+  "art": "e-134",
+  "loc": "Art. 41.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "En dichos registros se hará constar el objeto, la fecha y la hora del acceso, los datos transmitidos, los datos utilizados para una consulta y el nombre tanto de la unidad que los haya introducido o extraído como el de las personas responsables.",
+  "exp": "Constan objeto, fecha y hora, datos transmitidos y consultados y nombres de unidad y responsables: todo."
+ },
+ {
+  "n": "q:22",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". El Supervisor Europeo de Protección de Datos se asegurará de que, __________, se lleve a cabo una auditoría de las actividades de tratamiento de datos personales de eu-LISA siguiendo normas de auditoría internacionales:",
+  "op": [
+   "Al menos una vez al año.",
+   "Al menos cada seis meses.",
+   "Al menos cada 2 años.",
+   "Al menos cada 3 años."
+  ],
+  "c": 3,
+  "art": "e-138",
+  "loc": "Art. 45.2",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "El Supervisor Europeo de Protección de Datos se asegurará de que, al menos cada tres años, se lleve a cabo una auditoría de las actividades de tratamiento de datos personales de eu-LISA siguiendo normas de auditoría internacionales.",
+  "exp": "Auditoría al menos <b>cada tres años</b>."
+ },
+ {
+  "n": "q:23",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Con arreglo al presente Reglamento, ¿por quién estará supervisado el tratamiento de datos personales efectuado por Europol?:",
+  "op": [
+   "Por la Comisión.",
+   "Por el agente de derechos fundamentales.",
+   "Por Eu-Lisa.",
+   "Por el Supervisor Europeo de Protección de Datos."
+  ],
+  "c": 3,
+  "art": "e-138",
+  "loc": "Art. 45.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "El Supervisor Europeo de Protección de Datos se asegurará de que todas las actividades de tratamiento de datos personales relativos a Eurodac, en particular las que lleve a cabo eu-LISA, sean conformes al Reglamento (UE) 2018/1725 y al presente Reglamento.",
+  "exp": "El tratamiento por los organismos de la Unión lo supervisa el <b>Supervisor Europeo de Protección de Datos</b>."
+ },
+ {
+  "n": "q:24",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Seguridad de los datos. Señale la opción INCORRECTA:",
+  "op": [
+   "Los Estados miembros adoptarán, en relación con todos los datos tratados por sus autoridades competentes de conformidad con el presente Reglamento, las medidas necesarias, incluido un plan de seguridad de los datos.",
+   "El Estado miembro de origen garantizará la seguridad de los datos antes de la transmisión a Eurodac y mientras esta se produce.",
+   "Los Estados miembros y Europol informarán a la Comisión de los incidentes de seguridad relativos a Eurodac detectados en sus sistemas.",
+   "Los Estados miembros de que se trate, eu-LISA y Europol colaborarán durante un incidente de seguridad."
+  ],
+  "c": 2,
+  "art": "e-139",
+  "loc": "Art. 48",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Los Estados miembros y Europol informarán a eu-LISA de los incidentes de seguridad relativos a Eurodac detectados en sus sistemas",
+  "exp": "Los incidentes de seguridad se comunican a <b>eu-LISA</b>, no a la Comisión."
+ },
+ {
+  "n": "q:25",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Prohibición de transferencia de datos a terceros países, organismos internacionales o particulares. Señale la opción CORRECTA:",
+  "op": [
+   "Los datos personales obtenidos por un Estado miembro o Europol de Eurodac de acuerdo con el presente Reglamento no se transferirán a ningún tercer país. organización internacional o persona física establecida dentro o fuera de la Unión Europea, ni se pondrán a su disposición.",
+   "Los datos personales que se originan en un Estado miembro y se intercambian entre un Estado miembro y Europol a raíz de una respuesta positiva de búsqueda obtenida a efectos de aplicación de la ley no se transferirán a terceros países.",
+   "Los datos personales que se originan en un Estado miembro y se intercambian entre Estados miembros a raíz de una respuesta positiva de búsqueda obtenida a efectos de aplicación de la ley no se transferirán a terceros países.",
+   "Todas las opciones son correctas."
+  ],
+  "c": 0,
+  "art": "e-140",
+  "loc": "Art. 49.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Los datos personales obtenidos por un Estado miembro o Europol de Eurodac de acuerdo con el presente Reglamento no se transferirán a ningún tercer país, organización internacional o persona física establecida dentro o fuera de la Unión Europea, ni se pondrán a su disposición.",
+  "exp": "Las otras dos omiten que la prohibición de esos apartados exige un <b>riesgo real</b> de tortura, tratos inhumanos u otra vulneración."
+ },
+ {
+  "n": "q:26",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Las reclamaciones de indemnización contra eu-LISA por los daños ocasionados a EURODAC estarán sujetas a las condiciones establecidas...:",
+  "op": [
+   "En la legislación nacional del Estado miembro de origen.",
+   "En los ordenamientos jurídicos internos de los Estados parte.",
+   "En el reglamento de la Comisión.",
+   "En los Tratados."
+  ],
+  "c": 3,
+  "art": "e-142",
+  "loc": "Art. 52",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Las reclamaciones de indemnización contra eu-LISA por los daños y perjuicios a que se refieren los apartados 1 y 2 del presente artículo estarán sujetas a las condiciones establecidas en los Tratados.",
+  "exp": "Contra eu-LISA rigen las condiciones de los <b>Tratados</b>; contra un Estado, su Derecho nacional."
+ },
+ {
+  "n": "q:27",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Señale cuál de los siguientes NO es uno de los fines de EURODAC:",
+  "op": [
+   "Apoyar los objetivos del Sistema de Información de Schengen (SIS).",
+   "Apoyar la elaboración de políticas basadas en datos contrastados mediante la elaboración de estadísticas.",
+   "Apoyar los objetivos del Sistema Europeo de Información y Autorización de Viajes (SEIAV).",
+   "Apoyar los objetivos del Sistema de Información de Visados (VIS)."
+  ],
+  "c": 0,
+  "art": "e-98",
+  "loc": "Art. 1.1",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Apoyar los objetivos del Sistema Europeo de Información y Autorización de Viajes (SEIAV) establecido por el Reglamento (UE) 2018/1240",
+  "exp": "Entre los fines están SEIAV, VIS y estadísticas, pero <b>no</b> el SIS."
+ },
+ {
+  "n": "q:28",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". A efectos del presente Reglamento, ¿qué se entenderá por los datos dactiloscópicos o los datos de imagen facial?:",
+  "op": [
+   "Datos documentales.",
+   "Datos alfanuméricos.",
+   "Datos procedimentales.",
+   "Datos biométricos."
+  ],
+  "c": 3,
+  "art": "e-99",
+  "loc": "Art. 2.1.s",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "«datos biométricos»: los datos dactiloscópicos o los datos de imagen facial",
+  "exp": "Dactiloscópicos o de imagen facial = datos <b>biométricos</b>."
+ },
+ {
+  "n": "q:29",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Eurodac constará de un Sistema Central integrado por:",
+  "op": [
+   "Una Unidad Central y el RCDI.",
+   "Una infraestructura de comunicación y el RCDI.",
+   "Una Unidad Central y una infraestructura de comunicación segura.",
+   "Una Unidad Central y un plan y un sistema de continuidad operativa."
+  ],
+  "c": 3,
+  "art": "e-101",
+  "loc": "Art. 3.1.a",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "Un Sistema Central integrado por: i) una Unidad Central, ii) un plan y un sistema de continuidad operativa",
+  "exp": "Sistema Central = <b>Unidad Central</b> + <b>plan y sistema de continuidad operativa</b>."
+ },
+ {
+  "n": "q:31",
+  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Arquitectura del sistema y principios básicos. ¿Qué red existente utilizará la Infraestructura de Comunicación?:",
+  "op": [
+   "LEXNET.",
+   "TESTA.",
+   "ADEXTRA.",
+   "TEU"
+  ],
+  "c": 1,
+  "art": "e-101",
+  "loc": "Art. 3.3",
+  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
+  "lit": "La Infraestructura de Comunicación utilizará la red existente «Servicios Transeuropeos Seguros de Telemática entre Administraciones» (TESTA).",
+  "exp": "La red es <b>TESTA</b>."
  }
 ]

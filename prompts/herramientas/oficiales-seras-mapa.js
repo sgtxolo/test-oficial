@@ -13,9 +13,12 @@ const qs = F.cargarPreguntas(T);
 const plano = t => String(t).toLowerCase().normalize('NFD').replace(/[^a-z0-9]/g, '');
 const us = F.unidades(F.cargarEsquemas()[T - 1], T);
 const nuevo = {}; const flojas = [];
+// ya enlazadas, y las descartadas a mano porque su artículo no está en el esquema
+const ya = fs.readFileSync('esquemas-datos/mapa-preguntas.js', 'utf8');
+const FUERA = ['2-301', '2-312', '2-361', '2-364', '5-376', '5-381', '5-396', '5-437', '5-438', '5-444', '5-450', '5-455', '5-478'];
 for (const d of D) {
   const q = qs.find(x => plano(x.pregunta) === plano(d.en) && plano(x.opciones.join('')) === plano(d.op.join('')));
-  if (!q) continue;
+  if (!q || ya.includes('"' + q.id + '":') || FUERA.includes(q.id)) continue; // solo las que aún no están en el mapa
   const lit = [...new Set(F.toks(d.lit))]; const art = d.loc.replace(/^Art\.\s*/, '').split('.')[0].toLowerCase();
   let best = null, bs = -1, bf, bl = 0;
   for (const u of us) {
