@@ -7648,5 +7648,1391 @@
   "img": "ingles-forma/ef-510.jpg",
   "fb": "Respuesta correcta: <b>B</b>.<img class=\"psico-ex\" src=\"ingles-forma/ef-510-e.jpg\" alt=\"Explicación\" loading=\"lazy\">",
   "fuente": "YCJI6826_01261"
+ },
+ {
+  "qid": "FM511",
+  "t": 2,
+  "stem": "Our sheets ___ dirty enough to take them to the laundry, so we cleaned them at home.",
+  "opts": [
+   "aren't",
+   "were not",
+   "was",
+   "were"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Nuestras sábanas no estaban lo bastante sucias para llevarlas a la lavandería, así que las lavamos en casa». Pasado de <b>to be</b> con sujeto plural y sentido negativo: <b>were not</b>. «aren't» es presente, «was» es singular y «were» (afirmativo) contradice la segunda parte.",
+  "fuente": "SERAS2611_1"
+ },
+ {
+  "qid": "FM512",
+  "t": 2,
+  "stem": "Who ___ here before, Joyce or Mary?",
+  "opts": [
+   "am",
+   "are",
+   "were",
+   "was"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «¿Quién estuvo aquí antes, Joyce o Mary?». <b>Who</b> como sujeto lleva el verbo en singular y «before» pide pasado: <b>was</b>.",
+  "fuente": "SERAS2611_2"
+ },
+ {
+  "qid": "FM513",
+  "t": 9,
+  "stem": "___ people at the meeting when you arrived?",
+  "opts": [
+   "Were there",
+   "Was there",
+   "Is there",
+   "Are there"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «¿Había gente en la reunión cuando llegaste?». <b>There be</b> en pasado y «people» es plural: <b>Were there</b>.",
+  "fuente": "SERAS2611_3"
+ },
+ {
+  "qid": "FM514",
+  "t": 12,
+  "stem": "I really love Amsterdam. Many of ___ canals were built in the 17th century.",
+  "opts": [
+   "his",
+   "her",
+   "its",
+   "hers"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Muchos de sus canales…». El posesivo de una ciudad (cosa) es <b>its</b>. «his/her» son para personas y «hers» es pronombre, no va delante de nombre.",
+  "fuente": "SERAS2611_4"
+ },
+ {
+  "qid": "FM515",
+  "t": 3,
+  "stem": "Plainfield is in ___ north-west of the county",
+  "opts": [
+   "an",
+   "a",
+   "the",
+   "-"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Plainfield está en el noroeste del condado». Los puntos cardinales como zona llevan <b>the</b>: in the north-west of…",
+  "fuente": "SERAS2611_5"
+ },
+ {
+  "qid": "FM516",
+  "t": 3,
+  "stem": "Even though Sophie lives in Paris, she does not speak ___ French.",
+  "opts": [
+   "a",
+   "an",
+   "the",
+   "no article"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «…no habla francés». Los idiomas van <b>sin artículo</b>.",
+  "fuente": "SERAS2611_6"
+ },
+ {
+  "qid": "FM517",
+  "t": 5,
+  "stem": "My ___ is about to start university and she is very excited",
+  "opts": [
+   "18-years-old sister",
+   "18-year-old sister",
+   "18-years-olds sister",
+   "18-year-olds sister"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Mi hermana de 18 años…». El adjetivo compuesto va con guiones y <b>en singular</b>: 18-year-old.",
+  "fuente": "SERAS2611_7"
+ },
+ {
+  "qid": "FM518",
+  "t": 5,
+  "stem": "Have you listened to this clip? I find it so ___!",
+  "opts": [
+   "amuse",
+   "amused",
+   "amusing",
+   "amuses"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «¡Me parece muy divertido!». Los adjetivos en <b>-ing</b> describen lo que provoca la sensación (el clip); «amused» es cómo se siente la persona.",
+  "fuente": "SERAS2611_8"
+ },
+ {
+  "qid": "FM519",
+  "t": 40,
+  "stem": "A ___ is a female flight attendant. Now that term is not so common, though.",
+  "opts": [
+   "stewardess",
+   "stewardress",
+   "stewardee",
+   "stewardese"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «Una azafata es una auxiliar de vuelo mujer». La grafía correcta es <b>stewardess</b>; las demás no existen.",
+  "fuente": "SERAS2611_9"
+ },
+ {
+  "qid": "FM520",
+  "t": 4,
+  "stem": "During my last trip, I did a scuba diving course and I saw thousands of incredible ___.",
+  "opts": [
+   "fishes",
+   "fishs",
+   "some fish",
+   "fish"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «…vi miles de peces increíbles». El plural habitual de <b>fish</b> es <b>fish</b>. «fishs» no existe, «fishes» se reserva para especies distintas y «some» no cabe tras «thousands of».",
+  "fuente": "SERAS2611_10"
+ },
+ {
+  "qid": "FM521",
+  "t": 13,
+  "stem": "Olivia spilled ___ bit of orange juice on her lap.",
+  "opts": [
+   "some",
+   "little",
+   "a little",
+   "a lot of"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Olivia derramó un poquito de zumo…». La expresión es <b>a little bit of</b>. «some bit», «little bit» (sin artículo) y «a lot of bit» no encajan.",
+  "fuente": "SERAS2611_11"
+ },
+ {
+  "qid": "FM522",
+  "t": 24,
+  "stem": "___ Ronald ___ Philip was aware of the negative impact their decision could make.",
+  "opts": [
+   "Both / and",
+   "Nor / nor",
+   "Neither / nor",
+   "Either / and"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Ni Ronald ni Philip eran conscientes…». <b>Neither… nor</b> con verbo en singular (was). «Both… and» exigiría «were»; «either» se combina con «or».",
+  "fuente": "SERAS2611_12"
+ },
+ {
+  "qid": "FM523",
+  "t": 13,
+  "stem": "Let me say a ___ words in his honour",
+  "opts": [
+   "many",
+   "few",
+   "little",
+   "much"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Permítanme decir unas palabras en su honor». Contables en plural: <b>a few</b>.",
+  "fuente": "SERAS2611_13"
+ },
+ {
+  "qid": "FM524",
+  "t": 9,
+  "stem": "There ___ no cheese, so make sure you buy some if you want to make a pizza tonight",
+  "opts": [
+   "are",
+   "isn't",
+   "is",
+   "aren't"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «No hay queso…». «Cheese» es incontable (singular) y la negación ya la lleva «no»: <b>There is no cheese</b>. «isn't no» sería doble negación.",
+  "fuente": "SERAS2611_14"
+ },
+ {
+  "qid": "FM525",
+  "t": 12,
+  "stem": "Come on guys, hurry up! It seems ___ of you want to work, and the deadline is tight!",
+  "opts": [
+   "both",
+   "no",
+   "none",
+   "either"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Parece que ninguno de vosotros quiere trabajar». Ante «of you» con sentido negativo: <b>none</b>. «no» no puede ir delante de «of».",
+  "fuente": "SERAS2611_15"
+ },
+ {
+  "qid": "FM526",
+  "t": 1,
+  "stem": "She sometimes ___ during the weekends.",
+  "opts": [
+   "work",
+   "workeds",
+   "works",
+   "is working"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Hábito con «sometimes»: <b>Present Simple</b>, tercera persona con -s: <b>works</b>.",
+  "fuente": "SERAS2611_16"
+ },
+ {
+  "qid": "FM527",
+  "t": 6,
+  "stem": "I think she's ___ to a slightly different issue",
+  "opts": [
+   "referring",
+   "refering",
+   "refers",
+   "referred"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «Creo que se está refiriendo a…». Present Continuous; <b>refer</b> dobla la r: <b>referring</b>.",
+  "fuente": "SERAS2611_17"
+ },
+ {
+  "qid": "FM528",
+  "t": 7,
+  "stem": "Carla ___ yesterday because it ___ very heavily.",
+  "opts": [
+   "didn't went out / was snow",
+   "didn't go out / was snowing",
+   "did go out / was snowwing",
+   "did not got out / were snowing"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Carla no salió ayer porque nevaba mucho». Tras «didn't» va el infinitivo (<b>go</b>) y la acción en curso va en Past Continuous (<b>was snowing</b>).",
+  "fuente": "SERAS2611_18"
+ },
+ {
+  "qid": "FM529",
+  "t": 14,
+  "stem": "My father ___ cooking. He's really passionate about it",
+  "opts": [
+   "has always loved",
+   "has always love",
+   "always love",
+   "is always loving"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «A mi padre siempre le ha encantado cocinar». Present Perfect (have + participio): <b>has always loved</b>. «love» es verbo de estado y en tercera persona llevaría -s.",
+  "fuente": "SERAS2611_19"
+ },
+ {
+  "qid": "FM530",
+  "t": 6,
+  "stem": "Check out your schedule. Who ___ tomorrow at 8:00? I need to know as soon as possible.",
+  "opts": [
+   "is she meeting",
+   "is she going to meet",
+   "will she meet",
+   "is she going to"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «Mira tu agenda: ¿con quién se reúne mañana a las 8:00?». Citas ya agendadas: <b>Present Continuous</b> con valor de futuro. «is she going to» queda sin verbo; las otras expresan intención o predicción, no una cita fijada en la agenda.",
+  "fuente": "SERAS2611_20"
+ },
+ {
+  "qid": "FM531",
+  "t": 25,
+  "stem": "She ___ a day off on Tuesday. She needs a break before the new song is released.",
+  "opts": [
+   "is going to take",
+   "will take",
+   "going to take",
+   "is takeing"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «Va a tomarse el martes libre». Plan o intención ya decidida: <b>be going to</b>. «going to take» no tiene el verbo be y «takeing» está mal escrito.",
+  "fuente": "SERAS2611_21"
+ },
+ {
+  "qid": "FM532",
+  "t": 28,
+  "stem": "___ to France for our holiday if it isn't too expensive?",
+  "opts": [
+   "Will we goes",
+   "Can we go",
+   "Could we go",
+   "Can we going"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «¿Podemos ir a Francia de vacaciones si no es muy caro?». Con condición real en presente («isn't») se usa <b>Can we go</b>. «Could» iría con condición en pasado; las demás tienen mal el verbo.",
+  "fuente": "SERAS2611_22"
+ },
+ {
+  "qid": "FM533",
+  "t": 34,
+  "stem": "The \"Baby Shark Song\" video ___ on YouTube more than 9.4 billion times.",
+  "opts": [
+   "is viewed",
+   "views",
+   "has been viewed",
+   "is being viewed"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «El vídeo ha sido visto más de 9.400 millones de veces». Total acumulado hasta hoy: <b>Present Perfect pasivo</b>.",
+  "fuente": "SERAS2611_23"
+ },
+ {
+  "qid": "FM534",
+  "t": 34,
+  "stem": "Since last week, 5 of the 7 terrorists ___",
+  "opts": [
+   "have being caught",
+   "has been caught",
+   "have caught",
+   "have been caught"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «Desde la semana pasada han sido capturados 5 de los 7 terroristas». Pasiva con «since» y sujeto plural: <b>have been caught</b>.",
+  "fuente": "SERAS2611_24"
+ },
+ {
+  "qid": "FM535",
+  "t": 34,
+  "stem": "Jeremy ___ a scholarship to work in New Zealand, but he didn't take it.",
+  "opts": [
+   "has been offered",
+   "was offered",
+   "was offer",
+   "is being offered"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Le ofrecieron una beca, pero no la aceptó». Hecho terminado: <b>pasiva en pasado simple</b>.",
+  "fuente": "SERAS2611_25"
+ },
+ {
+  "qid": "FM536",
+  "t": 34,
+  "stem": "Experts ___ into Somalia by the UN to organise relief work",
+  "opts": [
+   "have been flown",
+   "have being flown",
+   "had been flow",
+   "had been flew"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «La ONU ha trasladado expertos en avión a Somalia…». Pasiva perfecta: have been + participio <b>flown</b>.",
+  "fuente": "SERAS2611_26"
+ },
+ {
+  "qid": "FM537",
+  "t": 22,
+  "stem": "Have you been ___ the theatre recently? I think you should really do that",
+  "opts": [
+   "in",
+   "to",
+   "for",
+   "on"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «¿Has ido al teatro últimamente?». <b>been to</b> + lugar = haber ido a.",
+  "fuente": "SERAS2611_27"
+ },
+ {
+  "qid": "FM538",
+  "t": 22,
+  "stem": "Charly always drives ___ a tremendous speed when she is in a hurry",
+  "opts": [
+   "of",
+   "in",
+   "at",
+   "for"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. La expresión es <b>at a speed</b> (a una velocidad).",
+  "fuente": "SERAS2611_28"
+ },
+ {
+  "qid": "FM539",
+  "t": 2,
+  "stem": "Yesterday morning, I ___ a report and then I ___ a meeting with an investor.",
+  "opts": [
+   "write / have",
+   "was writing / was having",
+   "wrote / had",
+   "am writing / am having"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Ayer por la mañana escribí un informe y luego tuve una reunión». Acciones terminadas y sucesivas: <b>Past Simple</b>.",
+  "fuente": "SERAS2611_30"
+ },
+ {
+  "qid": "FM540",
+  "t": 26,
+  "stem": "___ she still ___ a size 38 next year after giving birth?",
+  "opts": [
+   "Will ... wear",
+   "Will ... be wear",
+   "Will ... be wearing",
+   "Will ... being wearing"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «¿Seguirá usando una 38 el año que viene…?». Situación en curso en el futuro (still, next year): <b>Future Continuous</b>, will + be + -ing.",
+  "fuente": "SERAS2611_31"
+ },
+ {
+  "qid": "FM541",
+  "t": 30,
+  "stem": "___ you are here by breakfast, you can stay out for the night with your friends.",
+  "opts": [
+   "In case",
+   "As long as",
+   "Otherwise",
+   "Unless"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Siempre que estés aquí para el desayuno, puedes salir esta noche». <b>As long as</b> = siempre que (condición). «Unless» daría el sentido contrario.",
+  "fuente": "SERAS2611_32"
+ },
+ {
+  "qid": "FM542",
+  "t": 31,
+  "stem": "I'd stop whining and start doing something about it if I ___ you.",
+  "opts": [
+   "'ll be",
+   "am",
+   "were",
+   "was"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Yo que tú, dejaría de quejarme…». Segundo condicional: <b>if I were you</b>.",
+  "fuente": "SERAS2611_33"
+ },
+ {
+  "qid": "FM543",
+  "t": 32,
+  "stem": "We would have frozen to death if we ___ a warm coat and gloves.",
+  "opts": [
+   "didn't bring",
+   "wouldn't bring",
+   "hadn't brought",
+   "brought"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Habríamos muerto de frío si no hubiéramos traído abrigo y guantes». Tercer condicional: if + <b>Past Perfect</b>.",
+  "fuente": "SERAS2611_34"
+ },
+ {
+  "qid": "FM544",
+  "t": 40,
+  "stem": "The final match is taking place next Saturday ___. I'm looking forward to it!",
+  "opts": [
+   "at the theatre",
+   "at the museum",
+   "at the restaurant",
+   "at the stadium"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «La final se juega el sábado en el estadio». Un partido se juega en un <b>stadium</b>.",
+  "fuente": "SERAS2611_35"
+ },
+ {
+  "qid": "FM545",
+  "t": 37,
+  "stem": "The dog, ___ owner is a minister, ran away after opening the door of the car.",
+  "opts": [
+   "-",
+   "that",
+   "which",
+   "whose"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «El perro, cuyo dueño es ministro…». Posesión: <b>whose</b>.",
+  "fuente": "SERAS2611_36"
+ },
+ {
+  "qid": "FM546",
+  "t": 34,
+  "stem": "The Internet ___ been the most revolutionary invention of the last decades.",
+  "opts": [
+   "was",
+   "is considered to have",
+   "is considered that it",
+   "was considered"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Se considera que Internet ha sido…». Pasiva impersonal: sujeto + <b>is considered to have</b> + participio.",
+  "fuente": "SERAS2611_37"
+ },
+ {
+  "qid": "FM547",
+  "t": 22,
+  "stem": "In this part of the talk, I will focus ___ the methods I have used so far",
+  "opts": [
+   "at",
+   "of",
+   "on",
+   "for"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. <b>focus on</b> = centrarse en.",
+  "fuente": "SERAS2611_38"
+ },
+ {
+  "qid": "FM548",
+  "t": 38,
+  "stem": "Don't forget to turn ___ the lights before you leave home. I won't come back until late.",
+  "opts": [
+   "on",
+   "off",
+   "up",
+   "down"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «No olvides apagar las luces». <b>turn off</b> = apagar.",
+  "fuente": "SERAS2611_39"
+ },
+ {
+  "qid": "FM549",
+  "t": 38,
+  "stem": "I need to study for my exam, could you ___ the music ___ a bit for me, please? I need to concentrate.",
+  "opts": [
+   "Turn up",
+   "Go down",
+   "Turn down",
+   "Give down"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «¿Podrías bajar un poco la música?». <b>turn down</b> = bajar el volumen.",
+  "fuente": "SERAS2611_40"
+ },
+ {
+  "qid": "FM550",
+  "t": 11,
+  "stem": "I shouldn't disturb him now, ___?",
+  "opts": [
+   "shouldn't I",
+   "should he",
+   "should I",
+   "shouldn't he"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Question tag: frase negativa → coletilla afirmativa con el mismo auxiliar y sujeto: <b>should I?</b>",
+  "fuente": "SERAS2611_41"
+ },
+ {
+  "qid": "FM551",
+  "t": 23,
+  "stem": "___ my bike is quite old, it still works.",
+  "opts": [
+   "Despite",
+   "Although",
+   "When",
+   "For"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Aunque mi bici es bastante vieja, sigue funcionando». <b>Although</b> + sujeto y verbo; «Despite» necesita nombre o -ing.",
+  "fuente": "SERAS2611_42"
+ },
+ {
+  "qid": "FM552",
+  "t": 12,
+  "stem": "That can't be Mark's backpack! ___ is red. It might be Gwen's because I know that ___ backpack is blue.",
+  "opts": [
+   "His / her",
+   "His / hers",
+   "He's / her",
+   "He's / hers"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «¡No puede ser la de Mark! La suya es roja…». Pronombre posesivo <b>His</b> y adjetivo posesivo <b>her</b> delante del nombre.",
+  "fuente": "SERAS2611_43"
+ },
+ {
+  "qid": "FM553",
+  "t": 12,
+  "stem": "When Lisa got pregnant, she decided to quit ___ job at the airport.",
+  "opts": [
+   "his",
+   "my",
+   "her",
+   "our"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Posesivo que concuerda con Lisa: <b>her</b>.",
+  "fuente": "SERAS2611_44"
+ },
+ {
+  "qid": "FM554",
+  "t": 21,
+  "stem": "You will never find Sally in a golf field, she thinks it is ___ game a person can play.",
+  "opts": [
+   "the boringest",
+   "the most boring",
+   "the boringer",
+   "boringest"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «…el juego más aburrido». «boring» tiene dos sílabas acabadas en -ing: superlativo con <b>the most</b>.",
+  "fuente": "SERAS2611_45"
+ },
+ {
+  "qid": "FM555",
+  "t": 5,
+  "stem": "Aren't the Smiths a ___?",
+  "opts": [
+   "richest family",
+   "richer family",
+   "family rich",
+   "rich family"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «¿No son los Smith una familia rica?». El adjetivo va delante del nombre y con «a» no cabe superlativo ni comparativo sin término de comparación.",
+  "fuente": "SERAS2611_46"
+ },
+ {
+  "qid": "FM556",
+  "t": 21,
+  "stem": "I loved the dress that my sister bought, to be honest, it was ___ of all the dresses in the store.",
+  "opts": [
+   "the prettyest",
+   "the prettiest",
+   "prettier than",
+   "the prettiest than"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. Superlativo de <b>pretty</b>: the <b>prettiest</b> (y → i), sin «than».",
+  "fuente": "SERAS2611_47"
+ },
+ {
+  "qid": "FM557",
+  "t": 13,
+  "stem": "His family is having a cookout this weekend, we should buy ___ bread, don't you think?",
+  "opts": [
+   "some",
+   "a",
+   "many",
+   "any"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «Deberíamos comprar algo de pan». Incontable en frase afirmativa: <b>some</b>.",
+  "fuente": "SERAS2611_48"
+ },
+ {
+  "qid": "FM558",
+  "t": 13,
+  "stem": "This restaurant offers a wide variety of cuisines. Indeed, there were ___ dishes on the menu from different countries.",
+  "opts": [
+   "much",
+   "many",
+   "little",
+   "few"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «dishes» es contable en plural y hay gran variedad: <b>many</b>.",
+  "fuente": "SERAS2611_49"
+ },
+ {
+  "qid": "FM559",
+  "t": 13,
+  "stem": "I don't have ___ reason to believe the opposite",
+  "opts": [
+   "some",
+   "the",
+   "any",
+   "an"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. En frase negativa: <b>any</b> reason.",
+  "fuente": "SERAS2611_50"
+ },
+ {
+  "qid": "FM560",
+  "t": 25,
+  "stem": "Choose the correct option:",
+  "opts": [
+   "My colleague Peter wills assist you further",
+   "My colleague Peter will assists you further",
+   "My colleague Peter will assist you further",
+   "My colleague Peter wills assists you further"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. <b>Will</b> no lleva -s y detrás va el infinitivo sin -s: will assist.",
+  "fuente": "SERAS2611_51"
+ },
+ {
+  "qid": "FM561",
+  "t": 25,
+  "stem": "Anne ___ food tomorrow, so don't worry about that",
+  "opts": [
+   "will bring",
+   "has brought",
+   "brings",
+   "brought"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «Anne traerá comida mañana». Futuro (promesa/decisión): <b>will bring</b>.",
+  "fuente": "SERAS2611_52"
+ },
+ {
+  "qid": "FM562",
+  "t": 28,
+  "stem": "Chefs should always ___ all the food before they serve it.",
+  "opts": [
+   "tastes",
+   "tasting",
+   "taste",
+   "are tasting"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Tras el modal <b>should</b> va el infinitivo sin «to»: taste.",
+  "fuente": "SERAS2611_53"
+ },
+ {
+  "qid": "FM563",
+  "t": 2,
+  "stem": "Last year, I ___ to NY with my best friends to celebrate my birthday. It was amazing!",
+  "opts": [
+   "go",
+   "goed",
+   "didn't go",
+   "went"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. Pasado irregular de <b>go</b>: <b>went</b>.",
+  "fuente": "SERAS2611_54"
+ },
+ {
+  "qid": "FM564",
+  "t": 2,
+  "stem": "The riots ___ when the President and Vice President ___ the country.",
+  "opts": [
+   "start / were visiting",
+   "started / visited",
+   "were starting / was starting",
+   "started / were visitting"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Los disturbios empezaron cuando el presidente y el vicepresidente visitaron el país». Past Simple en ambos: <b>started / visited</b>; «visitting» está mal escrito.",
+  "fuente": "SERAS2611_55"
+ },
+ {
+  "qid": "FM565",
+  "t": 14,
+  "stem": "How ___ it? I am impressed!",
+  "opts": [
+   "has she doed",
+   "did she doing",
+   "did she done",
+   "has she done"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «¿Cómo lo ha hecho?». Present Perfect interrogativo: <b>has she done</b>.",
+  "fuente": "SERAS2611_56"
+ },
+ {
+  "qid": "FM566",
+  "t": 34,
+  "stem": "Change this active sentence into passive: \"People are using phones for everything nowadays: work, socializing, buying, etc.\"",
+  "opts": [
+   "Phones by people are being used for everything nowadays: work, socializing, buying, etc.",
+   "Phones are been used by people for everything nowadays: work, socializing, buying, etc.",
+   "Phones are being used by people for everything nowadays: work, socializing, buying, etc.",
+   "Phones are being used for everything nowadays: work, socializing, buying, etc."
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. Pasiva del Present Continuous: <b>are being used</b>. El agente genérico «people» <b>se omite</b>. La opción con «by people» es gramatical pero no es la forma natural; las otras dos tienen mal el orden o el verbo.",
+  "fuente": "SERAS2611_57"
+ },
+ {
+  "qid": "FM567",
+  "t": 34,
+  "stem": "My room should be ___ in blue to improve concentration",
+  "opts": [
+   "painting",
+   "paint",
+   "painted",
+   "paints"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Pasiva con modal: should be + participio <b>painted</b>.",
+  "fuente": "SERAS2611_58"
+ },
+ {
+  "qid": "FM568",
+  "t": 34,
+  "stem": "It is unknown nowadays how much the ozone layer ___ by the Global Warming.",
+  "opts": [
+   "will be damaged",
+   "have damaged",
+   "has been damaged",
+   "has being damaged"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Hoy no se sabe cuánto ha sido dañada la capa de ozono». «nowadays» pide el efecto hasta ahora: <b>Present Perfect pasivo</b>.",
+  "fuente": "SERAS2611_59"
+ },
+ {
+  "qid": "FM569",
+  "t": 34,
+  "stem": "The saxophone is quite a modern instrument. It ___ around 1840 by Adolphe Sax.",
+  "opts": [
+   "is invented",
+   "invented",
+   "was invented",
+   "had been invent"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Pasiva en pasado con fecha concreta: <b>was invented</b>.",
+  "fuente": "SERAS2611_60"
+ },
+ {
+  "qid": "FM570",
+  "t": 28,
+  "stem": "You ___ break in in that house, it is not yours and that is considered illegal. Give it a thought!",
+  "opts": [
+   "Must",
+   "mustn't",
+   "can't",
+   "shouldn't"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «No debes allanar esa casa… es ilegal». Prohibición: <b>mustn't</b>. «shouldn't» es solo un consejo y «can't» apunta más a imposibilidad.",
+  "fuente": "SERAS2611_61"
+ },
+ {
+  "qid": "FM571",
+  "t": 22,
+  "stem": "She used to hold the umbrella ___ our heads since she was taller",
+  "opts": [
+   "on",
+   "below",
+   "under",
+   "over"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «Sujetaba el paraguas por encima de nuestras cabezas»: <b>over</b>.",
+  "fuente": "SERAS2611_62"
+ },
+ {
+  "qid": "FM572",
+  "t": 20,
+  "stem": "Why do you wake up ___ today? It's a bank holiday!",
+  "opts": [
+   "such earlily",
+   "so earlyly",
+   "so early",
+   "such early"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. <b>early</b> es adjetivo y adverbio a la vez; con adverbios se usa <b>so</b>.",
+  "fuente": "SERAS2611_63"
+ },
+ {
+  "qid": "FM573",
+  "t": 17,
+  "stem": "___ had I closed the door when my son and daughter arrived home.",
+  "opts": [
+   "Sooner",
+   "Hardly",
+   "Frequently",
+   "Likely"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «Apenas había cerrado la puerta cuando…». <b>Hardly had I… when</b> (inversión). «Sooner» necesitaría «No sooner… than».",
+  "fuente": "SERAS2611_64"
+ },
+ {
+  "qid": "FM574",
+  "t": 13,
+  "stem": "They had ___ money that they didn't know what to do with it",
+  "opts": [
+   "so much",
+   "so many",
+   "such much",
+   "such many"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «money» es incontable: <b>so much</b> … that.",
+  "fuente": "SERAS2611_65"
+ },
+ {
+  "qid": "FM575",
+  "t": 28,
+  "stem": "When I lived in Germany, we ___ every single day to the countryside.",
+  "opts": [
+   "used to drove",
+   "would drive",
+   "drives",
+   "would drives"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. Hábito del pasado: <b>would</b> + infinitivo. «used to» iría con «drive».",
+  "fuente": "SERAS2611_66"
+ },
+ {
+  "qid": "FM576",
+  "t": 14,
+  "stem": "It ___ since I had a holiday. I am so wasted.",
+  "opts": [
+   "'ve being ages",
+   "'s being ages",
+   "'s been ages",
+   "'re been ages"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. <b>It's been ages since…</b> = hace siglos que… (has been).",
+  "fuente": "SERAS2611_67"
+ },
+ {
+  "qid": "FM577",
+  "t": 17,
+  "stem": "By the time I was 12, I ___ to a different house five times already.",
+  "opts": [
+   "had moved",
+   "had moving",
+   "hadn't moved",
+   "had been moving"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. Acción anterior a otro momento del pasado y contada en veces: <b>Past Perfect</b> had moved.",
+  "fuente": "SERAS2611_68"
+ },
+ {
+  "qid": "FM578",
+  "t": 26,
+  "stem": "At this time tomorrow evening, he ___ the new TV show on Channel 3. How exciting!",
+  "opts": [
+   "will host",
+   "will have hosted",
+   "was going to host",
+   "will be hosting"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «Mañana a esta hora estará presentando…». <b>Future Continuous</b>.",
+  "fuente": "SERAS2611_69"
+ },
+ {
+  "qid": "FM579",
+  "t": 1,
+  "stem": "The seminar ___ at 7 p.m. in the conference room. I'll take a seat for you.",
+  "opts": [
+   "will begin",
+   "is beginning",
+   "is going to begin",
+   "begins"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. Horarios y programas fijos: <b>Present Simple</b> con valor de futuro.",
+  "fuente": "SERAS2611_70"
+ },
+ {
+  "qid": "FM580",
+  "t": 1,
+  "stem": "The novel ___ with a long internal monologue from the protagonist about friendship.",
+  "opts": [
+   "started",
+   "was starting",
+   "starts",
+   "is starting"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Para hablar del contenido de una obra se usa el <b>Present Simple</b>: The novel starts with…",
+  "fuente": "SERAS2611_71"
+ },
+ {
+  "qid": "FM581",
+  "t": 19,
+  "stem": "He ___ the information incorrectly the other day",
+  "opts": [
+   "spelt",
+   "spell",
+   "spells",
+   "spelling"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. Pasado de <b>spell</b> (irregular británico): <b>spelt</b>; «the other day» pide pasado.",
+  "fuente": "SERAS2611_72"
+ },
+ {
+  "qid": "FM582",
+  "t": 40,
+  "stem": "Patrick has been living in China for seven years now. He ___ Chinese",
+  "opts": [
+   "used to speak",
+   "is getting used to speakg",
+   "is used to speaking",
+   "is used to speak"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «Está acostumbrado a hablar chino». <b>be used to + -ing</b> = estar acostumbrado a.",
+  "fuente": "SERAS2611_73"
+ },
+ {
+  "qid": "FM583",
+  "t": 15,
+  "stem": "We ___ bought a house on the outskirts of the city. It has a huge garden for kids.",
+  "opts": [
+   "just bought",
+   "were just buying",
+   "have just been buying",
+   "have just bought"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «Acabamos de comprar una casa». <b>have just</b> + participio. Ojo: el enunciado del vídeo está mal redactado (repite «bought» después del hueco); la opción prevista es «have just bought».",
+  "fuente": "SERAS2611_74"
+ },
+ {
+  "qid": "FM584",
+  "t": 14,
+  "stem": "How many people here ___ what to do in their future?",
+  "opts": [
+   "has decided",
+   "have decided",
+   "has been deciding",
+   "have deciding"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. «people» es plural: <b>have decided</b>.",
+  "fuente": "SERAS2611_75"
+ },
+ {
+  "qid": "FM585",
+  "t": 30,
+  "stem": "You can come to the meeting we have at 15 ___ that you don't say anything",
+  "opts": [
+   "in case",
+   "whether",
+   "if",
+   "provided"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. <b>provided that</b> = siempre que. Las otras no se combinan así con «that».",
+  "fuente": "SERAS2611_76"
+ },
+ {
+  "qid": "FM586",
+  "t": 20,
+  "stem": "My best friend yells ___ when he drives through the streets of Madrid.",
+  "opts": [
+   "angriely",
+   "angrily",
+   "more angry",
+   "angrierly than"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. Adverbio de <b>angry</b>: <b>angrily</b> (y → i + ly).",
+  "fuente": "SERAS2611_77"
+ },
+ {
+  "qid": "FM587",
+  "t": 24,
+  "stem": "They behaved very impolitely. ___, we forgave them.",
+  "opts": [
+   "However",
+   "Furthermore",
+   "So",
+   "Because"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. Contraste entre las dos frases: <b>However</b> (sin embargo).",
+  "fuente": "SERAS2611_78"
+ },
+ {
+  "qid": "FM588",
+  "t": 5,
+  "stem": "She was ___ brilliant scientist! What a pity she died at a young age.",
+  "opts": [
+   "so",
+   "such a",
+   "such",
+   "so a"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. <b>such a</b> + adjetivo + nombre contable en singular.",
+  "fuente": "SERAS2611_79"
+ },
+ {
+  "qid": "FM589",
+  "t": 5,
+  "stem": "These are ___ comfortable trousers that I could wear them in every occasion.",
+  "opts": [
+   "so",
+   "such a",
+   "such",
+   "so a"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «trousers» es plural: <b>such</b> + adjetivo + nombre, sin «a».",
+  "fuente": "SERAS2611_80"
+ },
+ {
+  "qid": "FM590",
+  "t": 37,
+  "stem": "Mrs Miller, ___ house was damaged during the hurricane, used to be my neighbour",
+  "opts": [
+   "that",
+   "which",
+   "whose",
+   "who"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Posesión («cuya casa»): <b>whose</b>.",
+  "fuente": "SERAS2611_81"
+ },
+ {
+  "qid": "FM591",
+  "t": 37,
+  "stem": "Amazing! You should go to a cooking contest. The cookies ___ you baked are absolutely delicious!",
+  "opts": [
+   "where",
+   "that",
+   "why",
+   "those"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. Pronombre relativo para cosas: <b>that</b>.",
+  "fuente": "SERAS2611_82"
+ },
+ {
+  "qid": "FM592",
+  "t": 37,
+  "stem": "Caroline lost the money ___ her mother had given to her",
+  "opts": [
+   "that",
+   "who",
+   "whose",
+   "when"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. El antecedente es una cosa (money): <b>that</b>.",
+  "fuente": "SERAS2611_83"
+ },
+ {
+  "qid": "FM593",
+  "t": 41,
+  "stem": "Did you really close the door? - Absolutely, I remember perfectly ___ the door with your keys.",
+  "opts": [
+   "close",
+   "to close",
+   "closing",
+   "to closing"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. <b>remember + -ing</b> = recordar haber hecho algo; «remember to» es acordarse de hacerlo.",
+  "fuente": "SERAS2611_84"
+ },
+ {
+  "qid": "FM594",
+  "t": 40,
+  "stem": "I hope ___ the promotion after so many years of hard work and commitment.",
+  "opts": [
+   "getting",
+   "get",
+   "she get",
+   "that she gets"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. <b>I hope (that)</b> + sujeto + presente con -s en tercera persona. «I hope getting/get» no es correcto.",
+  "fuente": "SERAS2611_85"
+ },
+ {
+  "qid": "FM595",
+  "t": 38,
+  "stem": "don't mind going to the beach or to the mountain, it ___ to you to make that decision.",
+  "opts": [
+   "goes up",
+   "is on",
+   "is up",
+   "turns up"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. <b>it is up to you</b> = depende de ti. (El vídeo escribe «don't mind» sin la «I» inicial).",
+  "fuente": "SERAS2611_86"
+ },
+ {
+  "qid": "FM596",
+  "t": 40,
+  "stem": "A: I think Paul doesn't know the way to their house! B: ___",
+  "opts": [
+   "Neither don't we",
+   "Neither do we",
+   "So we do",
+   "So don't we"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. Para sumarse a una negación: <b>Neither</b> + auxiliar afirmativo + sujeto: Neither do we.",
+  "fuente": "SERAS2611_87"
+ },
+ {
+  "qid": "FM597",
+  "t": 40,
+  "stem": "Seldom ___ trainers in my daily life. I prefer shoes, they are more elegant.",
+  "opts": [
+   "I wear",
+   "I do wear",
+   "do I wear",
+   "don't I wear"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Al empezar por un adverbio negativo (<b>Seldom</b>) hay <b>inversión</b>: do I wear.",
+  "fuente": "SERAS2611_88"
+ },
+ {
+  "qid": "FM598",
+  "t": 3,
+  "stem": "They go to the cinema once ___ week, normally on Wednesdays",
+  "opts": [
+   "a",
+   "an",
+   "the",
+   "-"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. Frecuencia: once <b>a</b> week.",
+  "fuente": "SERAS2611_89"
+ },
+ {
+  "qid": "FM599",
+  "t": 4,
+  "stem": "Guess what! I have bought myself a new camera which takes gorgeous ___",
+  "opts": [
+   "photoes",
+   "photos",
+   "picture",
+   "picturies"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. Plural de <b>photo</b>: <b>photos</b> (solo -s). «picture» necesitaría plural.",
+  "fuente": "SERAS2611_90"
+ },
+ {
+  "qid": "FM600",
+  "t": 13,
+  "stem": "How ___ times do I have to tell you?",
+  "opts": [
+   "little",
+   "few",
+   "many",
+   "much"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. «times» (veces) es contable: <b>How many</b>.",
+  "fuente": "SERAS2611_91"
+ },
+ {
+  "qid": "FM601",
+  "t": 10,
+  "stem": "What ___ when you arrived there? Were you scared?",
+  "opts": [
+   "did happen",
+   "happens",
+   "happened",
+   "happening"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Cuando <b>What</b> es el sujeto no se usa «did»: What happened?",
+  "fuente": "SERAS2611_92"
+ },
+ {
+  "qid": "FM602",
+  "t": 15,
+  "stem": "They ___ for Apple ___ three years",
+  "opts": [
+   "have workt / since",
+   "have worked / for",
+   "have worked / since",
+   "has worked / since"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. Periodo de tiempo: <b>for</b> three years, con Present Perfect <b>have worked</b>.",
+  "fuente": "SERAS2611_93"
+ },
+ {
+  "qid": "FM603",
+  "t": 19,
+  "stem": "A: When did it start? B: It all ___ ten years ago",
+  "opts": [
+   "begun",
+   "began",
+   "begin",
+   "begins"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. Pasado de <b>begin</b>: <b>began</b> («begun» es participio).",
+  "fuente": "SERAS2611_94"
+ },
+ {
+  "qid": "FM604",
+  "t": 25,
+  "stem": "We don't have enough money for the down payment. They ___ the loan we applied for.",
+  "opts": [
+   "will deny",
+   "are going to deny",
+   "are denying",
+   "going to deny"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. Predicción basada en una evidencia presente (no hay dinero para la entrada): <b>be going to</b>.",
+  "fuente": "SERAS2611_95"
+ },
+ {
+  "qid": "FM605",
+  "t": 22,
+  "stem": "They'll get married ___ the island of Santorini ___ Greece",
+  "opts": [
+   "on / at",
+   "on / in",
+   "in / in",
+   "in / at"
+  ],
+  "a": 1,
+  "fb": "Respuesta correcta: <b>B</b>. <b>on</b> an island y <b>in</b> a country.",
+  "fuente": "SERAS2611_96"
+ },
+ {
+  "qid": "FM606",
+  "t": 7,
+  "stem": "When the teacher entered the classroom the students ___ out loud",
+  "opts": [
+   "scream",
+   "screamed",
+   "was screaming",
+   "were screaming"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. Acción en curso cuando ocurre otra: <b>Past Continuous</b> en plural: were screaming.",
+  "fuente": "SERAS2611_97"
+ },
+ {
+  "qid": "FM607",
+  "t": 37,
+  "stem": "Tomorrow I am visiting a friend ___ wife is an astronaut",
+  "opts": [
+   "whose",
+   "who",
+   "which",
+   "that"
+  ],
+  "a": 0,
+  "fb": "Respuesta correcta: <b>A</b>. «un amigo cuya mujer…»: <b>whose</b>.",
+  "fuente": "SERAS2611_98"
+ },
+ {
+  "qid": "FM608",
+  "t": 10,
+  "stem": "How do we say in English \"¿DÓNDE NACIÓ?\"?",
+  "opts": [
+   "When did you born?",
+   "Where borned you?",
+   "Where did you born?",
+   "Where were you born?"
+  ],
+  "a": 3,
+  "fb": "Respuesta correcta: <b>D</b>. «Nacer» es <b>to be born</b>: Where were you born?",
+  "fuente": "SERAS2611_99"
+ },
+ {
+  "qid": "FM609",
+  "t": 39,
+  "stem": "How would you say in English \"CARNET DE CONDUCIR\"?",
+  "opts": [
+   "driving pass",
+   "driving card",
+   "driving licence",
+   "driving identity"
+  ],
+  "a": 2,
+  "fb": "Respuesta correcta: <b>C</b>. Carné de conducir = <b>driving licence</b>.",
+  "fuente": "SERAS2611_100"
  }
 ]
