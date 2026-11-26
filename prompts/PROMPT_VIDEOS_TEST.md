@@ -13,6 +13,8 @@ Carpeta de trabajo real: `C:\Users\ruben\Desktop\HTML OFICIAL` (no la copia de O
 
 Si el usuario no dice el tipo, se deduce del vídeo. Si un vídeo mezcla tipos, cada pregunta va a su destino.
 
+**Temas distintos (regla del usuario, 26/11/2026)**: los vídeos pueden ser de cualquier tema, y uno mismo puede mezclar varios. Analizar **cada pregunta** (título del test, enunciado, norma citada y respuesta) y ponerla en el tema que le corresponde, comprobándolo contra el temario del usuario; no dar por hecho que es el Tema 1 ni que todo el vídeo es del mismo tema. La numeración de la academia (p. ej. «Tema 1.1») puede no coincidir con la suya: manda su temario. Cada tema lleva sus propios ids, enlaces y script. En inglés, igual con el tema de gramática; en psicotécnicos, todo al 42. Si una pregunta no encaja en ningún tema de su temario, no meterla a la fuerza: listarla al final.
+
 ## 1. Sacar las preguntas (los tres tipos)
 
 - ffmpeg: `C:\Users\ruben\AppData\Local\DVDVideoSoft\lib\ffmpeg.exe`.
@@ -23,7 +25,7 @@ Si el usuario no dice el tipo, se deduce del vídeo. Si un vídeo mezcla tipos, 
 - Si el vídeo marca la respuesta (fila verde), se usa y se comprueba. Si no la marca, la resuelve Claude. Si hay duda real, decirlo al final con el número de pregunta.
 - **Repetidas (regla del usuario, 26/11/2026)**: si el **enunciado es el mismo** que el de una pregunta que ya está en la app (o que otra del mismo vídeo), **no se pone**, aunque cambien las opciones o la respuesta. Las que solo **se parecen** (otra redacción) **sí entran**. «Mismo enunciado» = mismo texto ignorando tildes, mayúsculas, signos, espacios y el prefijo con el nombre de la ley. Única excepción: enunciados genéricos («De los recursos. Señale la opción CORRECTA/INCORRECTA», o en inglés y psicotécnicos «Choose the correct option», «Pregunta psicotécnica»), donde la pregunta está en las opciones o en la imagen: ahí es repetida si además las opciones (o la imagen) son las mismas. Comparar con **todo** el banco, no solo con el tema detectado. Al copiar el script modelo, cambiar su criterio (compara enunciado + respuesta). Las preguntas que ya estaban no se borran.
 - **Botón «Oficial»**: lo añadido tiene que salir al elegir origen **Oficial** al montar el test. Conocimientos: dentro de `QUESTIONS[tema]` (id `T-N`; nunca en el banco IA ni Forma, sin `-ia-`/`-forma-` en el id). Inglés y psicotécnicos: **sin** `ia:true` ni `sim`. Comprobarlo en el navegador (`preguntasOficialesDe(t)` / `preguntasOficialesDeEN(t)` y el contador del botón).
-- Informar al final: preguntas vistas, añadidas, repetidas (cuáles), dudosas y no legibles.
+- Informar al final: preguntas vistas, añadidas por tema, repetidas (cuáles), dudosas, sin tema y no legibles.
 
 ## 2. CONOCIMIENTOS
 
