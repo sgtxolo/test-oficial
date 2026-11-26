@@ -15,7 +15,7 @@ const us = F.unidades(F.cargarEsquemas()[T - 1], T);
 const nuevo = {}; const flojas = [];
 // ya enlazadas, y las descartadas a mano porque su artículo no está en el esquema
 const ya = fs.readFileSync('esquemas-datos/mapa-preguntas.js', 'utf8');
-const FUERA = ['2-301', '2-312', '2-361', '2-364', '5-376', '5-381', '5-396', '5-437', '5-438', '5-444', '5-450', '5-455', '5-478'];
+const FUERA = ['2-301', '2-312', '2-361', '2-364', '5-376', '5-381', '5-396', '5-437', '5-438', '5-444', '5-450', '5-455', '5-478', '11-250'];
 for (const d of D) {
   const q = qs.find(x => plano(x.pregunta) === plano(d.en) && plano(x.opciones.join('')) === plano(d.op.join('')));
   if (!q || ya.includes('"' + q.id + '":') || FUERA.includes(q.id)) continue; // solo las que aún no están en el mapa
