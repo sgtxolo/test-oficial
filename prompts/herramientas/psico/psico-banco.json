@@ -4651,5 +4651,860 @@
   "ex": null,
   "fb": "Respuesta correcta: <b>A</b>.",
   "fuente": "YDWV4453_00713"
+ },
+ {
+  "qid": "PSI518",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-518.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo vertical; 2) giro de 90° contrario al reloj; 3) volteo vertical; 4) giro de 45° contrario al reloj. El resultado es la figura C.",
+  "fuente": "seras-psico-26-11_01"
+ },
+ {
+  "qid": "PSI519",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-519.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo horizontal; 2) volteo vertical; 3) giro de 45° en el sentido del reloj. El resultado es la figura C.",
+  "fuente": "seras-psico-26-11_02"
+ },
+ {
+  "qid": "PSI520",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-520.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Se aplican a la figura de la izquierda, en este orden: 1) giro de 45° en el sentido del reloj; 2) giro de 90° en el sentido del reloj; 3) volteo vertical; 4) giro de 90° contrario al reloj. El resultado es la figura C.",
+  "fuente": "seras-psico-26-11_03"
+ },
+ {
+  "qid": "PSI521",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-521.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo horizontal; 2) giro de 45° en el sentido del reloj; 3) giro de 90° contrario al reloj; 4) volteo vertical. El resultado es la figura B.",
+  "fuente": "seras-psico-26-11_04"
+ },
+ {
+  "qid": "PSI522",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-522.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Se aplican a la figura de la izquierda, en este orden: 1) giro de 90° contrario al reloj; 2) giro de 45° en el sentido del reloj; 3) giro de 90° en el sentido del reloj. El resultado es la figura B.",
+  "fuente": "seras-psico-26-11_05"
+ },
+ {
+  "qid": "PSI523",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-523.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Se aplican a la figura de la izquierda, en este orden: 1) giro de 90° contrario al reloj; 2) volteo horizontal; 3) giro de 45° contrario al reloj; 4) volteo vertical. El resultado es la figura B.",
+  "fuente": "seras-psico-26-11_06"
+ },
+ {
+  "qid": "PSI524",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-524.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Se aplican a la figura de la izquierda, en este orden: 1) giro de 45° en el sentido del reloj; 2) giro de 90° contrario al reloj; 3) giro de 45° en el sentido del reloj. El resultado es la figura A.",
+  "fuente": "seras-psico-26-11_07"
+ },
+ {
+  "qid": "PSI525",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-525.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo vertical; 2) giro de 90° en el sentido del reloj; 3) volteo vertical; 4) giro de 90° contrario al reloj. El resultado es la figura D.",
+  "fuente": "seras-psico-26-11_08"
+ },
+ {
+  "qid": "PSI526",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-526.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo horizontal; 2) giro de 90° contrario al reloj; 3) volteo vertical; 4) volteo horizontal. El resultado es la figura D.",
+  "fuente": "seras-psico-26-11_09"
+ },
+ {
+  "qid": "PSI527",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-527.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo vertical; 2) giro de 45° contrario al reloj; 3) volteo horizontal; 4) giro de 45° en el sentido del reloj. El resultado es la figura C.",
+  "fuente": "seras-psico-26-11_10"
+ },
+ {
+  "qid": "PSI528",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-528.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. La pieza A, girándola 90° en el sentido del reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_11"
+ },
+ {
+  "qid": "PSI529",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-529.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. La pieza B, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_12"
+ },
+ {
+  "qid": "PSI530",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-530.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. La pieza B, girándola 90° en sentido contrario al reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_13"
+ },
+ {
+  "qid": "PSI531",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-531.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 90° en sentido contrario al reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_14"
+ },
+ {
+  "qid": "PSI532",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-532.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. La pieza B, girándola 90° en el sentido del reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_15"
+ },
+ {
+  "qid": "PSI533",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-533.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. La pieza D, girándola 90° en el sentido del reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_16"
+ },
+ {
+  "qid": "PSI534",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-534.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. La pieza B, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_17"
+ },
+ {
+  "qid": "PSI535",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-535.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. La pieza A, girándola 90° en el sentido del reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_18"
+ },
+ {
+  "qid": "PSI536",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-536.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_19"
+ },
+ {
+  "qid": "PSI537",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-537.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. La pieza B, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_20"
+ },
+ {
+  "qid": "PSI538",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-538.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. La pieza A, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_21"
+ },
+ {
+  "qid": "PSI539",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-539.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 90° en sentido contrario al reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_22"
+ },
+ {
+  "qid": "PSI540",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-540.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▽ = 8, ○ = 3, ● = 2, ▲ = 4, △ = 5, □ = 6, ▼ = 7; así, el signo «?» vale 5.",
+  "fuente": "seras-psico-26-11_23"
+ },
+ {
+  "qid": "PSI541",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-541.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▽ = 7, ○ = 1, □ = 3, △ = 4, ▼ = 8; así, el signo «?» vale 4.",
+  "fuente": "seras-psico-26-11_24"
+ },
+ {
+  "qid": "PSI542",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-542.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ○ = 1, ■ = 4, ● = 2, △ = 5, ▲ = 6; así, el signo «?» vale 1.",
+  "fuente": "seras-psico-26-11_25"
+ },
+ {
+  "qid": "PSI543",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-543.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▽ = 2, □ = 4, ▷ = 5, ○ = 3; así, el signo «?» vale 5.",
+  "fuente": "seras-psico-26-11_26"
+ },
+ {
+  "qid": "PSI544",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-544.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen △ = 5, □ = 4, ■ = 3, ▲ = 6, ● = 2; así, el signo «?» vale 5.",
+  "fuente": "seras-psico-26-11_27"
+ },
+ {
+  "qid": "PSI545",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-545.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen △ = 3, ● = 6, ▲ = 4, ◆ = 2; así, el signo «?» vale 6.",
+  "fuente": "seras-psico-26-11_28"
+ },
+ {
+  "qid": "PSI546",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-546.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ■ = 5, ○ = 4, ▽ = 2, □ = 6, ▼ = 1, ● = 3; así, el signo «?» vale 7.",
+  "fuente": "seras-psico-26-11_29"
+ },
+ {
+  "qid": "PSI547",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-547.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen △ = 5, □ = 3, ● = 2, ■ = 4, ○ = 1; así, el signo «?» vale 6.",
+  "fuente": "seras-psico-26-11_30"
+ },
+ {
+  "qid": "PSI548",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-548.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen □ = 5, ▼ = 2, ◀ = 4, ▶ = 3, ● = 7; así, el signo «?» vale 2.",
+  "fuente": "seras-psico-26-11_31"
+ },
+ {
+  "qid": "PSI549",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-549.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▲ = 6, □ = 2, ■ = 5, ● = 7, ○ = 4, △ = 3; así, el signo «?» vale 1.",
+  "fuente": "seras-psico-26-11_32"
+ },
+ {
+  "qid": "PSI550",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-550.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▽ = 7, □ = 5, ● = 4, △ = 2, ▼ = 8, ■ = 6, ○ = 1, ▲ = 3; así, el signo «?» vale 4.",
+  "fuente": "seras-psico-26-11_33"
+ },
+ {
+  "qid": "PSI551",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-551.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ■ = 2, ▼ = 8, ● = 4, ○ = 3, ▷ = 5, ▽ = 9, △ = 7, ◁ = 6; así, el signo «?» vale 4.",
+  "fuente": "seras-psico-26-11_34"
+ },
+ {
+  "qid": "PSI552",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-552.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▲ = 6, ● = 3, ○ = 1, ■ = 4, □ = 2, △ = 5, ▽ = 8, ▼ = 7; así, el signo «?» vale 4.",
+  "fuente": "seras-psico-26-11_35"
+ },
+ {
+  "qid": "PSI553",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-553.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 90° en sentido contrario al reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_36"
+ },
+ {
+  "qid": "PSI554",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-554.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. La pieza B, sin girarla (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_37"
+ },
+ {
+  "qid": "PSI555",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-555.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. La pieza A, girándola 90° en sentido contrario al reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_38"
+ },
+ {
+  "qid": "PSI556",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-556.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. La pieza B, sin girarla (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_39"
+ },
+ {
+  "qid": "PSI557",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-557.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 90° en el sentido del reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_40"
+ },
+ {
+  "qid": "PSI558",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-558.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. La pieza A, girándola 90° en sentido contrario al reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_41"
+ },
+ {
+  "qid": "PSI559",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-559.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 90° en el sentido del reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_42"
+ },
+ {
+  "qid": "PSI560",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-560.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 90° en el sentido del reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_43"
+ },
+ {
+  "qid": "PSI561",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-561.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_44"
+ },
+ {
+  "qid": "PSI562",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-562.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_45"
+ },
+ {
+  "qid": "PSI563",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-563.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. La pieza A, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_46"
+ },
+ {
+  "qid": "PSI564",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-564.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. La pieza D, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_47"
+ },
+ {
+  "qid": "PSI565",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-565.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▽ = 8, ■ = 4, ▲ = 2, △ = 1, ○ = 6, ▼ = 7, ● = 5, □ = 3; así, el signo «?» vale 1.",
+  "fuente": "seras-psico-26-11_48"
+ },
+ {
+  "qid": "PSI566",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-566.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen △ = 2, ▷ = 4, ▽ = 3, ● = 6, □ = 7; así, el signo «?» vale 5.",
+  "fuente": "seras-psico-26-11_49"
+ },
+ {
+  "qid": "PSI567",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-567.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▷ = 3, ◁ = 4, ▽ = 2, ○ = 6, ● = 5, □ = 7; así, el signo «?» vale 6.",
+  "fuente": "seras-psico-26-11_50"
+ },
+ {
+  "qid": "PSI568",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-568.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ○ = 6, △ = 3, ▽ = 2; así, el signo «?» vale 5.",
+  "fuente": "seras-psico-26-11_51"
+ },
+ {
+  "qid": "PSI569",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-569.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ◁ = 6, ○ = 2, ▽ = 4, △ = 1, ● = 5; así, el signo «?» vale 9.",
+  "fuente": "seras-psico-26-11_52"
+ },
+ {
+  "qid": "PSI570",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-570.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ○ = 1, ● = 6, △ = 3, ▶ = 9, ▼ = 4, ■ = 2, □ = 7; así, el signo «?» vale 9.",
+  "fuente": "seras-psico-26-11_53"
+ },
+ {
+  "qid": "PSI571",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-571.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen □ = 1, ■ = 2, ▽ = 7, △ = 5, ○ = 3, ● = 4; así, el signo «?» vale 9.",
+  "fuente": "seras-psico-26-11_54"
+ },
+ {
+  "qid": "PSI572",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-572.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ○ = 4, ■ = 2, □ = 6, △ = 7, ● = 3; así, el signo «?» vale 6.",
+  "fuente": "seras-psico-26-11_55"
+ },
+ {
+  "qid": "PSI573",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-573.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen △ = 6, ■ = 3, ○ = 4, ▲ = 7, ● = 5, □ = 2; así, el signo «?» vale 5.",
+  "fuente": "seras-psico-26-11_56"
+ },
+ {
+  "qid": "PSI574",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-574.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Las piezas de la opción D son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_57"
+ },
+ {
+  "qid": "PSI575",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-575.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Las piezas de la opción D son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_58"
+ },
+ {
+  "qid": "PSI576",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-576.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Las piezas de la opción C son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_59"
+ },
+ {
+  "qid": "PSI577",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-577.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Las piezas de la opción B son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_60"
+ },
+ {
+  "qid": "PSI578",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-578.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Las piezas de la opción D son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_61"
+ },
+ {
+  "qid": "PSI579",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-579.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C es la única que completa el hueco: girándola sin darle la vuelta coinciden salientes, entrantes y bordes.",
+  "fuente": "seras-psico-26-11_62"
+ },
+ {
+  "qid": "PSI580",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-580.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Las piezas de la opción D son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_63"
+ },
+ {
+  "qid": "PSI581",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-581.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C es la única que completa el hueco: girándola sin darle la vuelta coinciden salientes, entrantes y bordes.",
+  "fuente": "seras-psico-26-11_64"
+ },
+ {
+  "qid": "PSI582",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-582.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Las piezas de la opción C son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_65"
+ },
+ {
+  "qid": "PSI583",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-583.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Las piezas de la opción B son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_66"
+ },
+ {
+  "qid": "PSI584",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-584.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. La pieza B es la única que, junto con la pieza suelta, completa el hueco: girándola sin darle la vuelta coinciden salientes, entrantes y bordes.",
+  "fuente": "seras-psico-26-11_67"
+ },
+ {
+  "qid": "PSI585",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-585.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Las piezas de la opción D son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_68"
+ },
+ {
+  "qid": "PSI586",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-586.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Las piezas de la opción C son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_69"
+ },
+ {
+  "qid": "PSI587",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-587.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Se aplican a la figura de la izquierda, en este orden: 1) giro de 45° en el sentido del reloj; 2) volteo vertical; 3) giro de 90° contrario al reloj; 4) volteo horizontal. El resultado es la figura A.",
+  "fuente": "seras-psico-26-11_70"
+ },
+ {
+  "qid": "PSI588",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-588.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo horizontal; 2) giro de 90° en el sentido del reloj; 3) volteo vertical; 4) giro de 90° en el sentido del reloj. El resultado es la figura D.",
+  "fuente": "seras-psico-26-11_71"
+ },
+ {
+  "qid": "PSI589",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-589.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo vertical; 2) giro de 90° contrario al reloj; 3) volteo vertical; 4) giro de 45° contrario al reloj. El resultado es la figura B.",
+  "fuente": "seras-psico-26-11_72"
+ },
+ {
+  "qid": "PSI590",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-590.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo vertical; 2) giro de 90° en el sentido del reloj; 3) volteo horizontal; 4) giro de 45° contrario al reloj. El resultado es la figura A.",
+  "fuente": "seras-psico-26-11_73"
+ },
+ {
+  "qid": "PSI591",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-591.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Se aplican a la figura de la izquierda, en este orden: 1) giro de 90° en el sentido del reloj; 2) volteo horizontal; 3) giro de 45° en el sentido del reloj; 4) volteo vertical. El resultado es la figura B.",
+  "fuente": "seras-psico-26-11_74"
+ },
+ {
+  "qid": "PSI592",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-592.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Se aplican a la figura de la izquierda, en este orden: 1) volteo horizontal; 2) giro de 45° contrario al reloj; 3) volteo horizontal. El resultado es la figura A.",
+  "fuente": "seras-psico-26-11_75"
+ },
+ {
+  "qid": "PSI593",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-593.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Se aplican a la figura de la izquierda, en este orden: 1) giro de 90° en el sentido del reloj; 2) volteo horizontal; 3) giro de 45° contrario al reloj; 4) volteo vertical. El resultado es la figura D.",
+  "fuente": "seras-psico-26-11_76"
+ },
+ {
+  "qid": "PSI594",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-594.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Las piezas de la opción C son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_77"
+ },
+ {
+  "qid": "PSI595",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-595.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Las piezas de la opción B son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_78"
+ },
+ {
+  "qid": "PSI596",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-596.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Las piezas de la opción B son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_79"
+ },
+ {
+  "qid": "PSI597",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-597.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Las piezas de la opción D son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_80"
+ },
+ {
+  "qid": "PSI598",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-598.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Las piezas de la opción D son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_81"
+ },
+ {
+  "qid": "PSI599",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-599.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Las piezas de la opción A son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_82"
+ },
+ {
+  "qid": "PSI600",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-600.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Las piezas de la opción B son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_83"
+ },
+ {
+  "qid": "PSI601",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-601.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. La pieza D, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_84"
+ },
+ {
+  "qid": "PSI602",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-602.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 90° en el sentido del reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_85"
+ },
+ {
+  "qid": "PSI603",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-603.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. La pieza A, sin girarla (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_86"
+ },
+ {
+  "qid": "PSI604",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-604.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. La pieza A, girándola 90° en el sentido del reloj (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_87"
+ },
+ {
+  "qid": "PSI605",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-605.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. La pieza D, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_88"
+ },
+ {
+  "qid": "PSI606",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-606.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▶ = 6, ▷ = 5, ◀ = 9, ▲ = 3, △ = 1, ▼ = 4; así, el signo «?» vale 4.",
+  "fuente": "seras-psico-26-11_89"
+ },
+ {
+  "qid": "PSI607",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-607.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ○ = 1, △ = 4, ● = 2, ■ = 6, ▲ = 5; así, el signo «?» vale 2.",
+  "fuente": "seras-psico-26-11_90"
+ },
+ {
+  "qid": "PSI608",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-608.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ◀ = 6, □ = 3, ▽ = 8, ▷ = 5, ○ = 1, ■ = 4, ● = 2; así, el signo «?» vale 3.",
+  "fuente": "seras-psico-26-11_91"
+ },
+ {
+  "qid": "PSI609",
+  "stem": "Pregunta psicotécnica",
+  "a": 1,
+  "img": "ps-609.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>B</b>. Cada signo vale una cifra. Con la clave y las cuentas completas salen ▲ = 4, ● = 3, □ = 5, △ = 7, ■ = 2; así, el signo «?» vale 6.",
+  "fuente": "seras-psico-26-11_92"
+ },
+ {
+  "qid": "PSI610",
+  "stem": "Pregunta psicotécnica",
+  "a": 3,
+  "img": "ps-610.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>D</b>. Las piezas de la opción D son las únicas que completan el hueco: girándolas sin darles la vuelta coinciden los salientes, los entrantes y los bordes.",
+  "fuente": "seras-psico-26-11_93"
+ },
+ {
+  "qid": "PSI611",
+  "stem": "Pregunta psicotécnica",
+  "a": 0,
+  "img": "ps-611.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>A</b>. La pieza A, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_94"
+ },
+ {
+  "qid": "PSI612",
+  "stem": "Pregunta psicotécnica",
+  "a": 2,
+  "img": "ps-612.jpg",
+  "ex": null,
+  "fb": "Respuesta correcta: <b>C</b>. La pieza C, girándola 180° (sin darle la vuelta), es la única en la que todos los puntos y uniones coinciden con orificios de la pletina.",
+  "fuente": "seras-psico-26-11_95"
  }
 ]

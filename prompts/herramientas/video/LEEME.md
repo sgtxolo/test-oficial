@@ -8,3 +8,14 @@ Ejecutar en una carpeta de trabajo (copiar allí estos scripts; ajustar rutas).
 5. Inglés o textos cortos: py mosaico.py vNN y leer los mosaicos a ojo (el OCR pierde opciones cortas).
 6. Respuestas en un módulo r-*.js (ver build.js) -> node build.js r-xxx -> añadir a oficiales-seras-tT.json
 7. node prompts/herramientas/oficiales-seras.js T y oficiales-seras-mapa.js T
+
+## Psicotécnicos resueltos por ordenador (`psico/`, 26/11/2026)
+
+Scripts usados en el vídeo de 95 preguntas. Son el registro del método: llevan dentro los números de pregunta y se ejecutan en una carpeta con los recortes en `ps/q{n}.jpg` (copiarlos y adaptarlos).
+
+- `codigos.js`: claves con signos; prueba todas las cifras y exige una sola opción posible.
+- `giros.py`: aplica las órdenes (volteos y giros) a la figura y compara con A–D.
+- `pletina.py`: lee orificios y piezas en la rejilla 6×6; la correcta no tiene ningún punto fuera con alguno de los 4 giros (sin espejo).
+- `comp.py` + `match.py`: puzles; separa huecos y piezas y compara formas (la correcta pasa de 0,93). Piezas con cuellos finos: separar con radio 2 en vez de 5. Algunas figuras salen achatadas: probar el estirado vertical.
+- `tile.py`: huecos de dos celdas sin línea divisoria (encaja las dos piezas dentro del hueco).
+- `fin.py` (imagen limpia y repetidas), `psico-fb.js` (explicaciones), `psico-add.js` (banco).
