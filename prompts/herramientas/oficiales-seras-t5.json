@@ -967,5 +967,1008 @@
   "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
   "lit": "Las sanciones así establecidas serán efectivas, proporcionadas y disuasorias.",
   "exp": "Las sanciones serán <b>efectivas, proporcionadas y disuasorias</b>."
+ },
+ {
+  "n": "q:1",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Qué Estado miembro será competente para examinar y decidir sobre una solicitud de visado uniforme con fines de tránsito en caso de tránsito a través de varios Estados miembros?:",
+  "op": [
+   "El Estado miembro más cercano cuyo territorio posea Consulado del país nacional del que pretendo cruzar la frontera exterior.",
+   "El Estado miembro cuyo territorio sea el destino principal de la visita.",
+   "El Estado miembro cuyo territorio sea la primera visita.",
+   "El Estado miembro cuya frontera exterior se proponga cruzar el solicitante para iniciar el tránsito."
+  ],
+  "c": 3,
+  "art": "c-29",
+  "loc": "Art. 5.2.b",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "En caso de tránsito a través de varios Estados miembros, el Estado miembro cuya frontera exterior se proponga cruzar el solicitante para iniciar el tránsito.",
+  "exp": "En un tránsito por varios Estados es competente el de la frontera exterior por la que se <b>inicia el tránsito</b>."
+ },
+ {
+  "n": "q:2",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Identificadores biométricos. Señale la opción INCORRECTA:",
+  "op": [
+   "En el momento de la presentación de la primera solicitud y, posteriormente, al menos cada 59 meses, el solicitante deberá presentarse personalmente.",
+   "En el momento de la presentación de la primera solicitud se tomarán del solicitante; una imagen facial presentada por el solicitante y diez impresiones dactilares, tomadas planas y recogidas digitalmente.",
+   "Los Estados miembros tomarán identificadores biométricos del solicitante, que comprenderán una imagen facial y diez impresiones dactilares de este.",
+   "Cuando en el marco de una solicitud presentada menos de 59 meses antes de la fecha de la nueva solicitud, se hayan tomado del solicitante e introducido en el VIS las impresiones dactilares y una imagen facial tomada en vivo de calidad suficiente, tales datos se copiarán en la solicitud posterior."
+  ],
+  "c": 1,
+  "art": "c-31",
+  "loc": "Art. 13.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "En ese momento se tomarán del solicitante los siguientes identificadores biométricos: a) una imagen facial tomada en vivo en el momento de presentar la solicitud; b) diez impresiones dactilares, tomadas planas y recogidas digitalmente.",
+  "exp": "La imagen facial se toma <b>en vivo</b>; no la «presenta» el solicitante."
+ },
+ {
+  "n": "q:3",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Prórroga. El período de validez de un visado ya expedido o la duración de la estancia autorizada por este se prorrogará si la autoridad competente de un Estado miembro considera que el titular del visado ha demostrado la existencia de razones humanitarias o de fuerza mayor que le impiden abandonar el territorio de los Estados miembros antes de que caduque el visado o la duración de la estancia autorizada por este. ¿Qué tasa se cobrará por las prórrogas que obedezcan a este motivo?:",
+  "op": [
+   "Se cobrará una tasa de 60 EUR.",
+   "Se cobrará una tasa de 40 EUR.",
+   "Se concederán gratuitamente.",
+   "Se cobrará una tasa de 30 EUR."
+  ],
+  "c": 2,
+  "art": "c-34",
+  "loc": "Art. 33.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Las prórrogas que obedezcan a estos motivos se concederán gratuitamente.",
+  "exp": "Razones humanitarias o de fuerza mayor: prórroga <b>gratuita</b>."
+ },
+ {
+  "n": "q:4",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Por ciertos motivos, los Estados miembros podrán requerir a las autoridades centrales de otros Estados miembros que consulten a sus autoridades centrales durante el examen de las solicitudes presentadas por nacionales de determinados países o por categorías específicas de estos nacionales. ¿En qué plazo las autoridades centrales consultadas darán una respuesta definitiva?:",
+  "op": [
+   "En el plazo más breve posible, a más tardar en el plazo de siete días naturales.",
+   "En el plazo más breve posible, a más tardar en el plazo de cinco días hábiles.",
+   "En el plazo más breve posible, a más tardar en el plazo de tres días hábiles.",
+   "En el plazo más breve posible, a más tardar en el plazo de diez días naturales."
+  ],
+  "c": 0,
+  "art": "c-32",
+  "loc": "Art. 22.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Las autoridades centrales consultadas darán una respuesta definitiva en el plazo más breve posible, a más tardar en el plazo de siete días naturales desde la fecha de la consulta.",
+  "exp": "Plazo de la consulta previa: <b>siete días naturales</b>; el silencio equivale a no oponerse."
+ },
+ {
+  "n": "q:5",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Objeto y ámbito de aplicación. Lo dispuesto en el presente Reglamento se aplicará a los nacionales de terceros países sometidos a la obligación de visado para cruzar las fronteras exteriores de los Estados miembros, sin perjuicio de:",
+  "op": [
+   "Los derechos equivalentes de los nacionales de terceros países y sus familiares que, en virtud de acuerdos entre la Comunidad y sus Estados miembros, por una parte, y esos terceros países, por otra, gocen de un derecho de libre circulación equivalente al de los ciudadanos de la Unión y sus familiares.",
+   "Los derechos de libre circulación de los nacionales que sean familiares de ciudadanos de terceros países.",
+   "Los derechos equivalentes de los nacionales de terceros países y sus familiares que, en virtud de acuerdos entre los Estados miembros, gocen de un derecho de libre circulación.",
+   "Los derechos de libre circulación de los nacionales de terceros países que no sean familiares de ciudadanos de la Unión."
+  ],
+  "c": 0,
+  "art": "c-28",
+  "loc": "Art. 1.2.b",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los derechos equivalentes de los nacionales de terceros países y sus familiares que, en virtud de acuerdos entre la Comunidad y sus Estados miembros, por una parte, y esos terceros países, por otra, gocen de un derecho de libre circulación equivalente al de los ciudadanos de la Unión y sus familiares.",
+  "exp": "Los acuerdos han de ser entre la Comunidad y sus Estados miembros y esos terceros países; y la otra salvedad se refiere a familiares de ciudadanos <b>de la Unión</b>."
+ },
+ {
+  "n": "q:6",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Cuál será el periodo de validez máximo de la expedición de un visado uniforme?:",
+  "op": [
+   "Dos años.",
+   "Diez años.",
+   "Cinco años.",
+   "Tres años."
+  ],
+  "c": 2,
+  "art": "c-33",
+  "loc": "Art. 24.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "El período de validez no será superior a cinco años.",
+  "exp": "Máximo <b>cinco años</b>."
+ },
+ {
+  "n": "q:7",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Las solicitudes de visado se presentarán, como norma, __________ antes del comienzo de dicha visita:",
+  "op": [
+   "No menos de 10 días hábiles.",
+   "No menos de 20 días naturales.",
+   "No menos de 15 días hábiles.",
+   "No menos de 15 días naturales."
+  ],
+  "c": 3,
+  "art": "c-30",
+  "loc": "Art. 9.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Como norma, no menos de quince días naturales antes del comienzo de dicha visita.",
+  "exp": "Regla general: al menos <b>15 días naturales</b> antes; los 15 días <b>hábiles</b> aparecen en los casos urgentes."
+ },
+ {
+  "n": "q:8",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Prórroga. El período de validez de un visado expedido o la duración de la estancia autorizada por este podrá prorrogarse si el titular del visado demuestra la existencia de razones personales graves que justifican la prórroga de la validez del visado o de la duración de la estancia. ¿Qué tasa se cobrará por las prórrogas que obedezcan a este motivo?:",
+  "op": [
+   "Se concederán gratuitamente.",
+   "Se cobrará una tasa de 60 EUR.",
+   "Se cobrará una tasa de 40 EUR.",
+   "Se cobrará una tasa de 30 EUR."
+  ],
+  "c": 3,
+  "art": "c-34",
+  "loc": "Art. 33.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Se cobrará una tasa de 30 EUR por las prórrogas que obedezcan a este motivo.",
+  "exp": "Razones <b>personales graves</b>: tasa de <b>30 EUR</b>. Solo son gratis las humanitarias o de fuerza mayor."
+ },
+ {
+  "n": "q:9",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Tasas de visado. ¿Cuál de los siguientes solicitantes NO quedarán exentos del pago de las tasas de visado?",
+  "op": [
+   "Estudiantes de los distintos ciclos, incluido el postgrado, que efectúen estancias con fines educativos o de formación, y profesores acompañantes.",
+   "Representantes de organizaciones sin ánimo de lucro mayores de veinticinco años y que vayan a participar en seminarios, conferencias o acontecimientos deportivos, culturales o educativos, organizados por organizaciones sin ánimo de lucro.",
+   "Investigadores, que se desplacen con fines de investigación científica o que participen en conferencias o seminarios científicos.",
+   "Niños menores de seis años."
+  ],
+  "c": 1,
+  "art": "c-32",
+  "loc": "Art. 16.4.d",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Representantes de organizaciones sin ánimo de lucro que no sean mayores de veinticinco años y que vayan a participar en seminarios, conferencias o acontecimientos deportivos, culturales o educativos, organizados por organizaciones sin ánimo de lucro.",
+  "exp": "La exención es para los representantes que <b>no</b> sean mayores de 25 años."
+ },
+ {
+  "n": "q:10",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Cuál de los siguientes quedarán exentos de la obligación de facilitar sus impresiones dactilares?:",
+  "op": [
+   "Los menores de 6 años y los mayores de 70 años.",
+   "Los menores de 12 años y los mayores de 65 años.",
+   "Los menores de 12 años y los mayores de 75 años.",
+   "Los menores de 6 años y los mayores de 75 años."
+  ],
+  "c": 3,
+  "art": "c-31",
+  "loc": "Art. 13.7.a",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Menores de seis años y personas mayores de setenta y cinco años.",
+  "exp": "Exentos de huellas: menores de <b>6</b> y mayores de <b>75</b>."
+ },
+ {
+  "n": "q:11",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Tasas de visado. De manera general, ¿cuánto abonará el solicitante por unas tasas de visado?:",
+  "op": [
+   "90 EUR.",
+   "40 EUR.",
+   "60 EUR.",
+   "100 EUR."
+  ],
+  "c": 0,
+  "art": "c-32",
+  "loc": "Art. 16.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los solicitantes pagarán una tasa de visado de 90 EUR.",
+  "exp": "Tasa general: <b>90 EUR</b>."
+ },
+ {
+  "n": "q:12",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Cuánto pagarán los niños mayores de seis años y menores de doce años por una tasa de visado?:",
+  "op": [
+   "60 Euros.",
+   "45 Euros.",
+   "35 Euros.",
+   "80 Euros."
+  ],
+  "c": 1,
+  "art": "c-32",
+  "loc": "Art. 16.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Las tasas de visado para los niños de entre seis y doce años serán de 45 EUR.",
+  "exp": "Niños de 6 a 12 años: <b>45 EUR</b>."
+ },
+ {
+  "n": "q:13",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Competencia territorial consular. ¿A qué Consulado le corresponderá el examen de una solicitud y la decisión al respecto?:",
+  "op": [
+   "Al consulado del Estado miembro competente en cuyo territorio sea el único destino de la visita o visitas.",
+   "Al consulado del Estado miembro competente en cuyo ámbito territorial se solicite.",
+   "Al consulado del Estado miembro competente en cuyo ámbito territorial resida legalmente el solicitante.",
+   "En cualquier consulado de un Estado miembro."
+  ],
+  "c": 2,
+  "art": "c-30",
+  "loc": "Art. 6.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "El examen de una solicitud y la decisión al respecto corresponderá al consulado del Estado miembro competente en cuyo ámbito territorial resida legalmente el solicitante.",
+  "exp": "Manda la <b>residencia legal</b> del solicitante."
+ },
+ {
+  "n": "q:14",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Respecto a los visados solicitados en la frontera exterior, señale la opción CORRECTA:",
+  "op": [
+   "Si se trata de un tránsito, la duración de la estancia autorizada corresponderá al tiempo necesario para efectuar el tránsito.",
+   "En los casos en que se solicite un visado en la frontera exterior, se podrá hacer una excepción al requisito de que el solicitante disponga de un seguro médico de viaje si tal seguro no está disponible en el paso fronterizo o si lo justifican razones humanitarias.",
+   "Todas las opciones son correctas.",
+   "Los visados que se expidan en la frontera exterior tendrán que ser visados uniformes, que autoricen la estancia del titular durante un máximo de 15 días, en función del propósito y las condiciones de la estancia prevista."
+  ],
+  "c": 2,
+  "art": "c-35",
+  "loc": "Art. 35.3",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los visados que se expidan en la frontera exterior tendrán que ser visados uniformes, que autoricen la estancia del titular durante un máximo de 15 días, en función del propósito y las condiciones de la estancia prevista.",
+  "exp": "Las tres reproducen el artículo: duración del tránsito, excepción del seguro y máximo de 15 días."
+ },
+ {
+  "n": "q:15",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Cómo procederá el Estado miembro de expedición del visado que no reconozca el documento de viaje del solicitante?:",
+  "op": [
+   "Lo comunicará a la mayor brevedad a la Comisión.",
+   "Utilizará el impreso separado para la colocación del visado.",
+   "Colocará la etiqueta del visado en el documento de viaje, haciendo constar sus observaciones.",
+   "Inadmitirá la solicitud de visado, pudiendo ser recurrida administrativamente la medida."
+  ],
+  "c": 1,
+  "art": "c-33",
+  "loc": "Art. 29.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "En los casos en que el Estado miembro de expedición del visado no reconozca el documento de viaje del solicitante, se utilizará el impreso separado para la colocación del visado.",
+  "exp": "Documento no reconocido: <b>impreso separado</b>."
+ },
+ {
+  "n": "q:16",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Respecto a la cooperación con proveedores de servicios externos, señale la opción INCORRECTA:",
+  "op": [
+   "Los Estados miembros intentarán cooperar con un proveedor de servicios externo junto con uno o varios Estados miembros sin perjuicio de las normas sobre contratación pública y competencia.",
+   "Los proveedores de servicios externos podrá tener acceso al VIS en casos concretos.",
+   "El examen de las solicitudes, las entrevistas que procedan, la decisión sobre las solicitudes y la impresión y fijación de las etiquetas de visado serán competencia exclusiva del consulado.",
+   "El acceso al VIS estará reservado exclusivamente al personal debidamente autorizado de los consulados o de las autoridades centrales."
+  ],
+  "c": 1,
+  "art": "c-36",
+  "loc": "Art. 43.5",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los proveedores de servicios externos no tendrán acceso al VIS en ningún caso.",
+  "exp": "Los proveedores externos <b>nunca</b> acceden al VIS."
+ },
+ {
+  "n": "q:17",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Cuál será el periodo de validez de un visado uniforme?:",
+  "op": [
+   "No será superior a diez años.",
+   "No será superior a un año.",
+   "No será superior a tres años.",
+   "No será superior a cinco años."
+  ],
+  "c": 3,
+  "art": "c-33",
+  "loc": "Art. 24.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "El período de validez no será superior a cinco años.",
+  "exp": "Máximo <b>cinco años</b>."
+ },
+ {
+  "n": "q:18",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Qué menores de edad quedarán exentos del pago de las tasas de visado?:",
+  "op": [
+   "Los menores de seis años.",
+   "Los menores de catorce años.",
+   "Los menores de edad.",
+   "Los menores de doce años."
+  ],
+  "c": 0,
+  "art": "c-32",
+  "loc": "Art. 16.4.a",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Quedarán exentos del pago de las tasas de visado los solicitantes que pertenezcan a alguna de las siguientes categorías: a) niños menores de seis años",
+  "exp": "La exención obligatoria es para menores de <b>6</b>; entre 6 y 18 es potestativa."
+ },
+ {
+  "n": "q:19",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Acuerdos de representación. ¿Quién notificará a la Comisión los acuerdos de representación o la terminación de dichos acuerdos a más tardar veinte días naturales antes de su entrada en vigor o de su terminación, excepto en casos de fuerza mayor?:",
+  "op": [
+   "El Estado miembro representado.",
+   "No hace falta dicha comunicación.",
+   "El Estado miembro representante.",
+   "Conjuntamente el Estado miembro representado y el Estado miembro representante."
+  ],
+  "c": 0,
+  "art": "c-30",
+  "loc": "Art. 8.7",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "El Estado miembro representado notificará a la Comisión los acuerdos de representación o la terminación de dichos acuerdos a más tardar veinte días naturales antes de su entrada en vigor o de su terminación, excepto en casos de fuerza mayor.",
+  "exp": "Notifica el Estado <b>representado</b>."
+ },
+ {
+  "n": "q:20",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Los nacionales de los terceros países incluidos en la lista que figura en el anexo IV deberán estar en posesión de un visado de tránsito aeroportuario para pasar por las zonas internacionales de tránsito de los aeropuertos situados en el territorio de los Estados miembros. Señale cuál de los siguientes países está incluido en el anexo IV:",
+  "op": [
+   "Nigeria.",
+   "Sudán.",
+   "Yemen.",
+   "Egipto."
+  ],
+  "c": 0,
+  "art": "c-29",
+  "loc": "Art. 3.1 y anexo IV",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los nacionales de los terceros países incluidos en la lista que figura en el anexo IV deberán estar en posesión de un visado de tránsito aeroportuario para pasar por las zonas internacionales de tránsito de los aeropuertos situados en el territorio de los Estados miembros.",
+  "exp": "En el anexo IV figuran Afganistán, Bangladesh, R. D. del Congo, Eritrea, Etiopía, Ghana, Irán, Irak, <b>Nigeria</b>, Pakistán, Somalia y Sri Lanka."
+ },
+ {
+  "n": "q:21",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Competencia territorial consular. El examen de una solicitud y la decisión al respecto corresponderá al consulado del Estado miembro competente...:",
+  "op": [
+   "En cuyo ámbito territorial tenga el domicilio habitual el solicitante.",
+   "En cuyo ámbito territorial sea nacional el solicitante.",
+   "En cuyo ámbito territorial resida legalmente el solicitante.",
+   "En cuyo ámbito territorial se encuentre legalmente el solicitante."
+  ],
+  "c": 2,
+  "art": "c-30",
+  "loc": "Art. 6.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "El examen de una solicitud y la decisión al respecto corresponderá al consulado del Estado miembro competente en cuyo ámbito territorial resida legalmente el solicitante.",
+  "exp": "Manda la <b>residencia legal</b>, no el domicilio habitual, la nacionalidad o la mera presencia."
+ },
+ {
+  "n": "q:22",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Al presentar su solicitud de visado, el solicitante deberá... Señale la opción INCORRECTA:",
+  "op": [
+   "Permitir la toma de sus impresiones dactilares, en todo caso.",
+   "Abonar las tasas de tramitación del visado.",
+   "Presentar pruebas de estar en posesión de un documento de viaje.",
+   "En su caso, presentar la prueba de poseer un seguro médico de viaje adecuado y válido."
+  ],
+  "c": 0,
+  "art": "c-30",
+  "loc": "Art. 10.3.d",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Permitir la toma de sus impresiones dactilares, de conformidad con el artículo 13, cuando proceda",
+  "exp": "Las huellas se toman <b>cuando proceda</b>, no «en todo caso»."
+ },
+ {
+  "n": "q:23",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Cuando el documento de viaje presentado contenga un medio de almacenamiento (chip), el consulado, las autoridades centrales o el proveedor de servicios externo leerán el chip y controlarán la autenticidad e integridad de sus datos. ¿Cuál de los siguientes datos se cargarán en la PSV?:",
+  "op": [
+   "Los identificadores biométricos utilizados en el modelo de solicitud electrónica.",
+   "Todas las opciones son correctas.",
+   "Los certificados electrónicos y los protocolos de control.",
+   "Los datos personales pertinentes limitados a los datos incluidos en la solicitud electrónica, salvo la fotografía."
+  ],
+  "c": 2,
+  "art": "c-30",
+  "loc": "Art. 12.6",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Se cargarán en la PSV de la UE los datos siguientes: a) los datos personales pertinentes limitados a los datos incluidos en la zona de lectura mecánica y la fotografía; b) los certificados electrónicos; c) los protocolos de control.",
+  "exp": "Se cargan los certificados y protocolos; los datos son los de la zona de lectura mecánica <b>y</b> la fotografía."
+ },
+ {
+  "n": "q:24",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿En qué plazo máximo se tomará la decisión sobre la solicitud de visado, incluyendo la ampliación prevista en casos concretos y especialmente cuando sea necesario realizar un examen más detallado de la solicitud?:",
+  "op": [
+   "45 días naturales.",
+   "90 días naturales.",
+   "30 días naturales.",
+   "50 días naturales."
+  ],
+  "c": 0,
+  "art": "c-32",
+  "loc": "Art. 23.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Este plazo podrá ampliarse a un máximo de cuarenta y cinco días naturales en casos concretos, especialmente cuando sea necesario realizar un examen más detallado de la solicitud.",
+  "exp": "Ampliable hasta <b>45 días naturales</b>."
+ },
+ {
+  "n": "q:25",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). El solicitante presentará un documento de viaje que sea válido al menos hasta tres meses después de la fecha prevista de salida del territorio de los Estados miembros o, en caso de varias visitas, hasta después de la última fecha prevista de salida del territorio del Estado miembro. NO obstante, en caso de urgencia justificado, podrá aplicarse una exención de esta obligación. Sin perjuicio de lo citado anteriormente, ¿por qué período de validez máximo se expedirán los visados de tránsito aeroportuario múltiple?:",
+  "op": [
+   "Dos años.",
+   "Un año.",
+   "Seis meses.",
+   "Tres meses."
+  ],
+  "c": 2,
+  "art": "c-33",
+  "loc": "Art. 26.3",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los visados de tránsito aeroportuario múltiple se expedirán con un período de validez máximo de seis meses.",
+  "exp": "Tránsito aeroportuario múltiple: máximo <b>seis meses</b>."
+ },
+ {
+  "n": "q:26",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Prórroga. Señale la opción INCORRECTA:",
+  "op": [
+   "Los Estados miembros podrán permitir al titular de un visado solicitar su prórroga a través de la PSV de la UE utilizando un impreso de solicitud simplificado.",
+   "Los Estados miembros notificarán a la Comisión quiénes son las autoridades competentes para realizar la prórroga de visados.",
+   "A menos que la autoridad que expida el visado decida otra cosa, la validez territorial del visado prorrogado será la misma que la del visado original.",
+   "Será competente para prorrogar el visado la autoridad del Estado miembro que haya expedido el visado."
+  ],
+  "c": 3,
+  "art": "c-34",
+  "loc": "Art. 33.4",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Será competente para prorrogar el visado la autoridad del Estado miembro en cuyo territorio se encuentre el nacional del tercer país en el momento de solicitar la prórroga.",
+  "exp": "Prorroga el Estado <b>donde se encuentre</b> el titular, no necesariamente el que expidió el visado."
+ },
+ {
+  "n": "q:28",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Los visados que se expidan en la frontera exterior tendrán que ser visados __________, que autoricen la estancia del titular durante __________, en función del propósito y las condiciones de la estancia prevista:",
+  "op": [
+   "De validez territorial limitada, un máximo de 15 días.",
+   "Uniformes, un máximo de 15 días.",
+   "De validez territorial limitada, un máximo de 10 días.",
+   "Uniformes, un máximo de 10 días."
+  ],
+  "c": 1,
+  "art": "c-35",
+  "loc": "Art. 35.3",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los visados que se expidan en la frontera exterior tendrán que ser visados uniformes, que autoricen la estancia del titular durante un máximo de 15 días, en función del propósito y las condiciones de la estancia prevista.",
+  "exp": "En frontera: visados <b>uniformes</b> y como máximo <b>15 días</b>."
+ },
+ {
+  "n": "q:29",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Anexo II. Lista no exhaustiva de documentos justificativos. Los documentos justificativos que deberán presentar los solicitantes de visado para los viajes de negocios podrán incluir... Señale la opción INCORRECTA:",
+  "op": [
+   "Entradas para ferias, en su caso.",
+   "Una invitación de una autoridad para asistir a reuniones relacionadas con el comercio.",
+   "La invitación de un anfitrión.",
+   "Documentos que demuestren que el estatus profesional del solicitante en la empresa."
+  ],
+  "c": 2,
+  "art": "c-31",
+  "loc": "Anexo II",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Para los viajes de negocios: a) una invitación de una empresa o de una autoridad para asistir a reuniones, conferencias o acontecimientos relacionados con el comercio, la industria o el trabajo",
+  "exp": "La <b>invitación del anfitrión</b> es un documento de los viajes de turismo o privados."
+ },
+ {
+  "n": "q:30",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Objeto y ámbito de aplicación. Respecto a la aplicación del presente Reglamento, señale la opción INCORRECTA:",
+  "op": [
+   "Los Estados miembros actuarán de conformidad con los principios generales del Derecho de la Unión.",
+   "Los Estados miembros actuarán dentro del pleno respeto del Derecho de la Unión, en particular la Carta de los Derechos Fundamentales de la Unión Europea.",
+   "Las decisiones en materia de solicitudes al amparo del presente Reglamento se adoptarán de manera individualizada.",
+   "Las decisiones en materia de solicitudes al amparo del presente Reglamento se adoptarán de manera individualizada o colectiva."
+  ],
+  "c": 3,
+  "art": "c-28",
+  "loc": "Art. 1.7",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Las decisiones en materia de solicitudes al amparo del presente Reglamento se adoptarán de manera individualizada.",
+  "exp": "Las decisiones son siempre <b>individualizadas</b>, nunca colectivas."
+ },
+ {
+  "n": "q:31",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). A efectos del presente Reglamento, ¿qué se entenderá por gestoría privada, empresa de transporte o agencia de viaje?:",
+  "op": [
+   "Servicio externo.",
+   "Gestor de visados.",
+   "Agente económico.",
+   "Intermediario comercial."
+  ],
+  "c": 3,
+  "art": "c-28",
+  "loc": "Art. 2.11",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "«Intermediario comercial»: gestoría privada, empresa de transporte o agencia de viaje (operador turístico o minorista del sector turístico)",
+  "exp": "Es la definición de <b>intermediario comercial</b>."
+ },
+ {
+  "n": "q:32",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Expedición de un visado uniforme. Siempre que el solicitante cumpla las condiciones de entrada, los visados para entradas múltiples de larga duración se expedirán para los períodos de validez siguientes, a menos que la validez del visado supere la del documento de viaje:",
+  "op": [
+   "Por un período de validez de dos años, siempre que el solicitante haya obtenido y utilizado legalmente un visado para entradas múltiples con una validez de dos años en los tres anteriores.",
+   "Por un período de validez de cinco años, siempre que el solicitante haya obtenido y utilizado legalmente un visado para entradas múltiples con una validez de tres años en los cinco años anteriores.",
+   "Todas las opciones son correctas.",
+   "Por un período de validez de un año, siempre que el solicitante haya obtenido y utilizado legalmente tres visados en los dos años anteriores."
+  ],
+  "c": 3,
+  "art": "c-33",
+  "loc": "Art. 24.2.a",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Por un período de validez de un año, siempre que el solicitante haya obtenido y utilizado legalmente tres visados en los dos años anteriores",
+  "exp": "Escala correcta: 1 año (tres visados en 2 años), 2 años (uno de 1 año en 2 años) y 5 años (uno de 2 años en 3 años)."
+ },
+ {
+  "n": "q:33",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Para qué estancias el presente Reglamento establece los procedimientos y las condiciones para la expedición de visados?:",
+  "op": [
+   "Para las estancias previstas en el territorio de los Estados miembros no superiores a 90 días en cualquier período de 180 días.",
+   "Para las estancias previstas en el territorio de los Estados miembros no superiores a 30 días en cualquier período de 90 días.",
+   "Para las estancias previstas en el territorio de los Estados miembros no superiores a 1 mes en cualquier período de 3 meses.",
+   "Para las estancias previstas en el territorio de los Estados miembros no superiores a 3 meses en el periodo de un año."
+  ],
+  "c": 0,
+  "art": "c-28",
+  "loc": "Art. 1.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "El presente Reglamento establece los procedimientos y las condiciones para la expedición de visados para las estancias previstas en el territorio de los Estados miembros no superiores a noventa días en cualquier período de 180 días.",
+  "exp": "Estancias de no más de <b>90 días en cualquier período de 180</b>."
+ },
+ {
+  "n": "q:34",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Respecto a la colocación de la etiqueta de visado, señale la opción CORRECTA:",
+  "op": [
+   "La etiqueta de visado no se colocará en el documento de viaje si no en documento aparte.",
+   "Todas las opciones son correctas.",
+   "Los visados individuales expedidos a personas que estén incluidas en el documento de viaje del solicitante se colocarán en documento aparte.",
+   "En los casos en que el Estado miembro de expedición del visado no reconozca el documento de viaje del solicitante, se utilizará el impreso separado para la colocación del visado."
+  ],
+  "c": 3,
+  "art": "c-33",
+  "loc": "Art. 29.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "En los casos en que el Estado miembro de expedición del visado no reconozca el documento de viaje del solicitante, se utilizará el impreso separado para la colocación del visado.",
+  "exp": "La etiqueta va en el documento de viaje, salvo documento no reconocido: entonces en el <b>impreso separado</b>."
+ },
+ {
+  "n": "q:35",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Cada cuánto tiempo la Comisión evaluará la necesidad de revisar el importe de las tasas de visado?:",
+  "op": [
+   "Cada cuatro años.",
+   "Cada dos años.",
+   "Cada tres años.",
+   "Cada año."
+  ],
+  "c": 2,
+  "art": "c-32",
+  "loc": "Art. 16.9",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "La Comisión evaluará cada tres años la necesidad de revisar el importe de las tasas de visado",
+  "exp": "La Comisión revisa la necesidad <b>cada tres años</b>."
+ },
+ {
+  "n": "q:36",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Respecto al seguro médico de viaje, señale la opción INCORRECTA:",
+  "op": [
+   "Los solicitantes de un visado para entradas múltiples deberán demostrar que se encuentran en posesión de un seguro médico de viaje adecuado y válido que cubra el período de la primera visita prevista.",
+   "La cobertura mínima será de 20.000 EUR.",
+   "Los solicitantes de un visado uniforme para una o dos entradas deberán demostrar que poseen un seguro médico de viaje adecuado y válido que cubra aquellos gastos que pudieran ocasionar su repatriación por motivos médicos o por defunción, la asistencia médica de urgencia o la atención hospitalaria de urgencia durante su estancia o estancias en el territorio de los Estados miembros.",
+   "El seguro deberá ser válido en el territorio de los Estados miembros y cubrir todo el período de estancia o tránsito que la persona haya previsto."
+  ],
+  "c": 1,
+  "art": "c-32",
+  "loc": "Art. 15.3",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "La cobertura mínima será de 30.000 EUR.",
+  "exp": "Cobertura mínima: <b>30.000 EUR</b>."
+ },
+ {
+  "n": "q:37",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Respecto a la colocación de la etiqueta de visado, señale la opción INCORRECTA:",
+  "op": [
+   "La etiqueta de visado no se colocará en el documento de viaje y se añadirá en una hoja como anexo.",
+   "Cuando el documento de viaje en el que estén incluidas dichas personas no sea reconocido por el Estado miembro de expedición, la etiqueta de visado individual se colocará en el impreso separado para la colocación del visado.",
+   "Los visados individuales expedidos a personas que estén incluidas en el documento de viaje del solicitante se colocarán en dicho documento de viaje.",
+   "En los casos en que el Estado miembro de expedición del visado no reconozca el documento de viaje del solicitante, se utilizará el impreso separado para la colocación del visado."
+  ],
+  "c": 0,
+  "art": "c-33",
+  "loc": "Art. 29.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "La etiqueta de visado se colocará en el documento de viaje.",
+  "exp": "La etiqueta <b>sí</b> se coloca en el documento de viaje."
+ },
+ {
+  "n": "q:38",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Respecto a la prórroga del visado, señale la opción INCORRECTA:",
+  "op": [
+   "El período de validez de un visado expedido o la duración de la estancia autorizada por este podrá prorrogarse si el titular del visado demuestra la existencia de razones personales graves que justifican la prórroga de la validez del visado o de la duración de la estancia.",
+   "Las prórrogas por razones personales graves se cobrará una tasa de 40 EUR,",
+   "Las prórrogas por la existencia de razones humanitarias o de fuerza mayor se concederán gratuitamente.",
+   "El período de validez de un visado expedido o la duración de la estancia autorizada por este se prorrogará si la autoridad competente de un Estado miembro considera que el titular del visado ha demostrado la existencia de razones humanitarias o de fuerza mayor que le impiden abandonar el territorio de los Estados miembros antes de que caduque el visado o la duración de la estancia autorizada por este."
+  ],
+  "c": 1,
+  "art": "c-34",
+  "loc": "Art. 33.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Se cobrará una tasa de 30 EUR por las prórrogas que obedezcan a este motivo.",
+  "exp": "La tasa por razones personales graves es de <b>30 EUR</b>, no 40."
+ },
+ {
+  "n": "q:39",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Cuáles de los siguientes estarán exentos del requisito de la posesión de un seguro médico de viaje?:",
+  "op": [
+   "Los titulares de pasaportes diplomáticos.",
+   "Todas las opciones son correctas.",
+   "Los titulares de pasaportes especiales.",
+   "Los titulares de un pasaporte oficial o de servicio."
+  ],
+  "c": 0,
+  "art": "c-32",
+  "loc": "Art. 15.7",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los titulares de pasaportes diplomáticos estarán exentos del requisito de poseer un seguro médico de viaje.",
+  "exp": "La exención nombra solo los pasaportes <b>diplomáticos</b>."
+ },
+ {
+  "n": "q:40",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Siempre que el solicitante cumpla las condiciones de entrada y, a menos que la validez del visado supere la del documento de viaje, los visados para entradas múltiples de larga duración se expedirán para un periodo de validez de cinco años, siempre que...:",
+  "op": [
+   "El solicitante haya obtenido y utilizado legalmente un visado para entradas múltiples con una validez de 1 año en los 2 años anteriores.",
+   "El solicitante haya obtenido y utilizado legalmente un visado para entradas múltiples con una validez de 2 años en los 5 años anteriores.",
+   "El solicitante haya obtenido y utilizado legalmente un visado para entradas múltiples con una validez de 1 año en los 3 años anteriores.",
+   "El solicitante haya obtenido y utilizado legalmente un visado para entradas múltiples con una validez de 2 años en los 3 años anteriores."
+  ],
+  "c": 3,
+  "art": "c-33",
+  "loc": "Art. 24.2.c",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Por un período de validez de cinco años, siempre que el solicitante haya obtenido y utilizado legalmente un visado para entradas múltiples con una validez de dos años en los tres años anteriores",
+  "exp": "Cinco años exige un visado múltiple de <b>2 años en los 3 anteriores</b>."
+ },
+ {
+  "n": "q:41",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Si se detecta un error en una etiqueta de visado correspondiente a un visado no expedido en formato digital, se invalidará la etiqueta de visado haciendo sobre ella dos trazos en aspa con tinta indeleble, y:",
+  "op": [
+   "Se expedirá un visado digital con los datos correctos.",
+   "Se deberá solicitar un nuevo visado de forma electrónica.",
+   "Se expedirá un visado con los datos correctos, de forma manual o electrónica.",
+   "Se deberá solicitar un nuevo visado, de forma manual o electrónica."
+  ],
+  "c": 0,
+  "art": "c-33",
+  "loc": "Art. 28",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Se invalidará la etiqueta de visado haciendo sobre ella dos trazos en aspa con tinta indeleble, y se expedirá un visado digital con los datos correctos.",
+  "exp": "Tras invalidar la etiqueta se expide un <b>visado digital</b>."
+ },
+ {
+  "n": "q:42",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Cómo se procederá si se pone de manifiesto que, en el momento en que se expidió, no se cumplían las condiciones necesarias para su expedición, especialmente si existen motivos fundados para creer que el visado se obtuvo de forma fraudulenta?:",
+  "op": [
+   "Se retirará el visado.",
+   "Se anulará el visado.",
+   "Se modificará el visado.",
+   "Se invalidará el visado."
+  ],
+  "c": 1,
+  "art": "c-35",
+  "loc": "Art. 34.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "El visado se anulará si se pone de manifiesto que, en el momento en que se expidió, no se cumplían las condiciones necesarias para su expedición, especialmente si existen motivos fundados para creer que el visado se obtuvo de forma fraudulenta.",
+  "exp": "Defecto <b>originario</b>: anulación. Se retira cuando las condiciones <b>dejan</b> de cumplirse."
+ },
+ {
+  "n": "q:43",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Señale cuál de las siguientes NO es una competencia exclusiva del consulado o las autoridades centrales:",
+  "op": [
+   "Examinarán las solicitudes.",
+   "Realizarán las entrevistas que procedan.",
+   "Adoptarán la decisión sobre las solicitudes.",
+   "Recogerán los identificadores biométricos."
+  ],
+  "c": 3,
+  "art": "c-36",
+  "loc": "Art. 43.4",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Únicamente los consulados o las autoridades centrales examinarán las solicitudes, realizarán las entrevistas que procedan y adoptarán la decisión sobre las solicitudes.",
+  "exp": "Recoger los identificadores biométricos puede encargarse a un proveedor externo."
+ },
+ {
+  "n": "q:44",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Derechos derivados de un visado expedido. ¿Qué conferirá la mera posesión de un visado uniforme o de un visado de validez territorial limitada?:",
+  "op": [
+   "No conferirá un derecho de entrada automático.",
+   "Podrá conferir un derecho de entrada, salvo excepciones.",
+   "Conferirá un derecho de entrada automático.",
+   "Conferirá un derecho de entrada, si reúne todos los requisitos en la solicitud."
+  ],
+  "c": 0,
+  "art": "c-33",
+  "loc": "Art. 30",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "La mera posesión de un visado uniforme o de un visado de validez territorial limitada no conferirá un derecho de entrada automático.",
+  "exp": "El visado <b>no</b> da un derecho de entrada automático."
+ },
+ {
+  "n": "q:45",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Verificación de las condiciones de entrada y evaluación del riesgo. Señale la opción INCORRECTA:",
+  "op": [
+   "El examen de la solicitud se basará sobre todo en la autenticidad y la fiabilidad de los documentos presentados y en la veracidad y fiabilidad de las declaraciones efectuadas por el solicitante.",
+   "Cuando se verifique si el solicitante cumple las condiciones de entrada, el consulado o las autoridades centrales comprobarán, entre otros, si el solicitante es una persona sobre la que se introdujo una descripción en el VIS a efectos de denegación de entrada.",
+   "Una denegación de visado anterior no supondrá la denegación automática de una nueva solicitud. La nueva solicitud se evaluará sobre la base de toda la información de que se disponga.",
+   "En el curso del examen de una solicitud, los consulados o las autoridades centrales podrán, en casos justificados, mantener una entrevista con el solicitante y exigir la presentación de documentos adicionales."
+  ],
+  "c": 1,
+  "art": "c-32",
+  "loc": "Art. 21.3.c",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Si el solicitante es una persona sobre la que se introdujo una descripción en el Sistema de Información de Schengen (SIS) a efectos de denegación de entrada",
+  "exp": "La descripción de denegación de entrada se consulta en el <b>SIS</b>, no en el VIS."
+ },
+ {
+  "n": "q:46",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Estado miembro competente para examinar y decidir sobre una solicitud. ¿Qué Estado miembro será competente para examinar y decidir sobre una solicitud de visado uniforme?:",
+  "op": [
+   "Si la visita incluye más de un destino, o si se van a realizar varias visitas diferentes durante un período de dos meses, el Estado miembro cuyo territorio sea, por la duración de la estancia, contabilizada en días, o por su finalidad, el destino principal de la visita o visitas.",
+   "Todas las opciones son correctas.",
+   "Si no puede determinarse un destino principal, el Estado miembro cuya frontera exterior se proponga cruzar el solicitante para entrar en el territorio de los Estados miembros.",
+   "El Estado miembro cuyo territorio sea el único destino de la visita o visitas."
+  ],
+  "c": 1,
+  "art": "c-29",
+  "loc": "Art. 5.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "El Estado miembro competente para examinar y decidir sobre una solicitud de visado uniforme será: a) el Estado miembro cuyo territorio sea el único destino de la visita o visitas",
+  "exp": "Destino único, destino principal y, en su defecto, frontera exterior de entrada: todas son correctas."
+ },
+ {
+  "n": "q:47",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Consulta previa a las autoridades centrales de otros Estados miembros. Señale la opción INCORRECTA. ¿Por qué motivos los Estados miembros podrán requerir a las autoridades centrales de otros Estados miembros que consulten a sus autoridades centrales durante el examen de las solicitudes presentadas por nacionales de determinados terceros países o por categorías específicas de estos nacionales?:",
+  "op": [
+   "Por motivos de amenaza contra las personas y bienes.",
+   "Por motivos de amenaza para el orden público.",
+   "Por motivos de amenaza para la seguridad interior.",
+   "Por motivos de amenaza para las relaciones internacionales o la salud pública."
+  ],
+  "c": 0,
+  "art": "c-32",
+  "loc": "Art. 22.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Por motivos de amenaza para el orden público, la seguridad interior, las relaciones internacionales o la salud pública",
+  "exp": "Las «personas y bienes» no figuran entre los motivos de consulta."
+ },
+ {
+  "n": "q:48",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Definiciones. A efectos del presente Reglamento, ¿qué visado se entenderá por \"el visado válido para el territorio de uno o más Estados miembros, pero no todos\"?:",
+  "op": [
+   "Visado uniforme.",
+   "Visado múltiple.",
+   "Visado de validez territorial limitada.",
+   "Visado de tránsito aeroportuario."
+  ],
+  "c": 2,
+  "art": "c-28",
+  "loc": "Art. 2.4",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "«Visado de validez territorial limitada»: el visado válido para el territorio de uno o más Estados miembros, pero no todos",
+  "exp": "Uno o más Estados, <b>pero no todos</b>."
+ },
+ {
+  "n": "q:49",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Respecto al impreso de la solicitud, señale la opción CORRECTA:",
+  "op": [
+   "Las personas incluidas en el documento de viaje del solicitante deberán estar incluidas en el impreso de solicitud del titular del derecho a visado.",
+   "El impreso de solicitud se presentará y firmará, en todo caso, mediante medios electrónicos.",
+   "Los menores de edad emancipados podrán presentar el impreso de solicitud de forma independiente a la persona que ejerza sobre ellos la patria potestad o la tutela legal del menor.",
+   "Cada solicitante presentará un impreso de solicitud debidamente cumplimentado, junto con una declaración de la autenticidad, exhaustividad, exactitud y fiabilidad de la información presentada y una declaración sobre la veracidad y fiabilidad de las declaraciones efectuadas."
+  ],
+  "c": 3,
+  "art": "c-30",
+  "loc": "Art. 11.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "El impreso de solicitud se presentará y se firmará electrónicamente.",
+  "exp": "La regla electrónica admite excepciones y las personas incluidas en el documento presentan su propio impreso; la declaración de autenticidad y veracidad es correcta."
+ },
+ {
+  "n": "q:50",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Quedarán exentos de la obligación de facilitar sus impresiones dactilares:",
+  "op": [
+   "Las personas cuyas impresiones dactilares resulte muy difíciles de tomar.",
+   "Personas mayores de setenta y cinco años.",
+   "Personas menores de doce años.",
+   "Personas que deban comparecer como testigos ante un órgano jurisdiccional penal en el territorio de los Estados miembros cuya comparecencia en persona para presentar una solicitud les pondría en una situación de peligro grave."
+  ],
+  "c": 1,
+  "art": "c-31",
+  "loc": "Art. 13.7.a",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Menores de seis años y personas mayores de setenta y cinco años.",
+  "exp": "Son los <b>mayores de 75</b>. En el caso de los testigos la ley habla de un órgano jurisdiccional <b>internacional</b>."
+ },
+ {
+  "n": "q:52",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Los nacionales de los terceros países incluidos en la lista que figura en el anexo IV deberán estar en posesión de un visado de tránsito aeroportuario para pasar por las zonas internacionales de tránsito de los aeropuertos situados en el territorio de los Estados miembros. Señale qué país NO está incluido en el anexo IV:",
+  "op": [
+   "Kazajistán.",
+   "Bangladesh.",
+   "Sri Lanka.",
+   "Ghana."
+  ],
+  "c": 0,
+  "art": "c-29",
+  "loc": "Art. 3.1 y anexo IV",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los nacionales de los terceros países incluidos en la lista que figura en el anexo IV deberán estar en posesión de un visado de tránsito aeroportuario para pasar por las zonas internacionales de tránsito de los aeropuertos situados en el territorio de los Estados miembros.",
+  "exp": "Bangladesh, Sri Lanka y Ghana están en el anexo IV; <b>Kazajistán</b> no."
+ },
+ {
+  "n": "q:53",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Ordinariamente, ¿a quién corresponde examinar las solicitudes de visado y decidir al respecto?:",
+  "op": [
+   "A los departamentos de extranjería.",
+   "A las embajadas.",
+   "A las autoridades centrales.",
+   "A los consulados."
+  ],
+  "c": 3,
+  "art": "c-29",
+  "loc": "Art. 4.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Corresponderá a los consulados examinar las solicitudes y decidir al respecto.",
+  "exp": "Ordinariamente examinan y deciden los <b>consulados</b>."
+ },
+ {
+  "n": "q:55",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Modalidades prácticas para la presentación de una solicitud. En casos individuales urgentes y justificados, ¿cuándo podrán permitir la presentación de solicitudes los consulados o las autoridades centrales?:",
+  "op": [
+   "En un plazo de menos de quince días hábiles antes del comienzo de la visita prevista.",
+   "En un plazo de menos de quince días hábiles después de la justificación de la urgencia de la medida.",
+   "En un plazo de menos de quince días naturales antes del comienzo de la visita prevista.",
+   "En un plazo de menos de quince días naturales después de la justificación de la urgencia de la medida."
+  ],
+  "c": 0,
+  "art": "c-30",
+  "loc": "Art. 9.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "En casos individuales urgentes y justificados, los consulados o las autoridades centrales podrán permitir la presentación de solicitudes menos de quince días hábiles antes del comienzo de la visita prevista.",
+  "exp": "Menos de 15 días <b>hábiles antes</b> del comienzo de la visita."
+ },
+ {
+  "n": "q:56",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿Cuál será el Estado miembro competente para examinar y decidir sobre una solicitud de visado uniforme si se van a realizar varias visitas diferentes durante un período de dos meses?:",
+  "op": [
+   "El Estado miembro cuyo territorio sea la primera visita.",
+   "El Estado miembro más cercano cuyo territorio posea Consulado del país nacional del que pretenda cruzar la frontera exterior.",
+   "El Estado miembro cuyo territorio sea el destino principal de la visita.",
+   "El Estado miembro cuyo territorio corresponda con la primera frontera exterior que se proponga cruzar."
+  ],
+  "c": 2,
+  "art": "c-29",
+  "loc": "Art. 5.1.b",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Si la visita incluye más de un destino, o si se van a realizar varias visitas diferentes durante un período de dos meses, el Estado miembro cuyo territorio sea, por la duración de la estancia, contabilizada en días, o por su finalidad, el destino principal de la visita o visitas",
+  "exp": "Varias visitas en dos meses: decide el <b>destino principal</b>."
+ },
+ {
+  "n": "q:57",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Sin perjuicio de lo estipulado para la obtención de los identificadores biométricos, la solicitud podrá ser presentada por... Señale la opción INCORRECTA:",
+  "op": [
+   "Una asociación educativa en nombre de sus miembros.",
+   "Un intermediario comercial acreditado.",
+   "El solicitante.",
+   "Un representante debidamente nombrado al efecto."
+  ],
+  "c": 3,
+  "art": "c-30",
+  "loc": "Art. 9.4",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "La solicitud podrá ser presentada: a) por el solicitante; b) por un intermediario comercial acreditado; c) por una asociación o entidad profesional, cultural, deportiva o educativa en nombre de sus miembros. d) por otra persona, si procede, debidamente autorizada por el solicitante, en el caso de que la solicitud se presente a través de la PSV de la UE.",
+  "exp": "La opción falla porque la ley no habla de un «representante nombrado»: solo admite otra persona autorizada y únicamente si la solicitud se presenta por la <b>PSV</b>."
+ },
+ {
+  "n": "q:58",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). El solicitante presentará un documento de viaje válido que responda a una serie de criterios. Señale el criterio CORRECTO:",
+  "op": [
+   "En el caso de una única visita, será válido al menos hasta tres meses tras la fecha prevista de salida del territorio de los Estados miembros.",
+   "En el caso de varias visitas, será válido al menos hasta tres meses después de la primera fecha prevista de salida del territorio de los Estados miembros.",
+   "Contendrá mínimo una página en blanco.",
+   "Deberá haberse expedido en los cinco años anteriores."
+  ],
+  "c": 0,
+  "art": "c-30",
+  "loc": "Art. 12.1.a",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Será válido al menos hasta tres meses tras la fecha prevista de salida del territorio de los Estados miembros o, en caso de varias visitas, hasta después de la última fecha prevista de salida del territorio de los Estados miembros",
+  "exp": "Con varias visitas se cuenta la <b>última</b> salida, y debe haberse expedido en los <b>diez</b> años anteriores."
+ },
+ {
+  "n": "q:59",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Al solicitar un visado de tránsito aeroportuario, qué NO deberá presentar el solicitante:",
+  "op": [
+   "Información que permita establecer la intención del solicitante de no entrar en el territorio de los Estados miembros.",
+   "Prueba de los documentos acreditativos relativos al alojamiento, o de que dispone de medios suficientes para costearlo.",
+   "Prueba de los documentos acreditativos relativos a la continuación del viaje hasta el destino final tras el tránsito aeroportuario previsto.",
+   "Todas las opciones son correctas."
+  ],
+  "c": 1,
+  "art": "c-31",
+  "loc": "Art. 14.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Al solicitar un visado de tránsito aeroportuario, el solicitante presentará: a) prueba de los documentos acreditativos relativos a la continuación del viaje hasta el destino final tras el tránsito aeroportuario previsto; b) información que permita establecer la intención del solicitante de no entrar en el territorio de los Estados miembros.",
+  "exp": "En el tránsito aeroportuario no se pide prueba de <b>alojamiento</b>."
+ },
+ {
+  "n": "q:60",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). ¿En qué plazo se tomará ordinariamente la decisión sobre las solicitudes admisibles?:",
+  "op": [
+   "10 días hábiles.",
+   "15 días naturales.",
+   "20 días naturales.",
+   "1 mes."
+  ],
+  "c": 1,
+  "art": "c-32",
+  "loc": "Art. 23.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "La decisión sobre las solicitudes se tomará en el plazo de 15 días naturales a partir de la fecha de presentación de una solicitud que sea admisible",
+  "exp": "Plazo ordinario: <b>15 días naturales</b>."
+ },
+ {
+  "n": "q:61",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Cumplimentación de los campos de datos del visado digital. ¿En qué sección podrán los Estados miembros añadir anotaciones nacionales?:",
+  "op": [
+   "En la sección de \"datos nacionales\".",
+   "En la sección de \"observaciones\".",
+   "En la sección de \"anotaciones nacionales\".",
+   "En la sección de \"otros\"."
+  ],
+  "c": 1,
+  "art": "c-33",
+  "loc": "Art. 27.2",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "Los Estados miembros podrán añadir anotaciones nacionales en la sección de «observaciones»",
+  "exp": "Las anotaciones nacionales van en la sección de «<b>observaciones</b>»."
+ },
+ {
+  "n": "q:62",
+  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). En casos excepcionales, se podrá expedir un visado en un paso fronterizo, siempre que se cumplan una serie de condiciones. Señale la condición INCORRECTA:",
+  "op": [
+   "Se considera garantizado el retorno del solicitante a su país de origen o residencia, o su tránsito por países que no sean Estados miembros que apliquen plenamente el acervo de Schengen.",
+   "El solicitante no ha podido solicitar un visado con antelación y presenta, si se le solicitan, documentos justificativos que demuestran la existencia de razones imprevisibles e imperiosas para la entrada.",
+   "El solicitante cumple una serie de condiciones establecidas en el Código de fronteras Schengen.",
+   "Estar en posesión de un seguro médico de viaje que cubra todo el periodo de estancia previsto."
+  ],
+  "c": 3,
+  "art": "c-35",
+  "loc": "Art. 35.1",
+  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
+  "apartado": "Del Código de visados",
+  "lit": "En casos excepcionales, se podrá expedir un visado en un paso fronterizo, siempre que se cumplan las condiciones siguientes",
+  "exp": "El seguro médico <b>no</b> es una de las condiciones: puede incluso exceptuarse en frontera."
  }
 ]
