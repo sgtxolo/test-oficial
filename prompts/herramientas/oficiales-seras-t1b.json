@@ -1,0 +1,710 @@
+[
+ {
+  "en": "Cuando se presentare una denuncia o querella ante un órgano judicial o del Ministerio Fiscal o una solicitud en un departamento ministerial, en relación con hechos sucedidos en otros Estados, cuyos presuntos autores no sean nacionales españoles y para cuyo enjuiciamiento pudiera ser competente la Corte, ¿qué harán dichos órganos?:",
+  "op": [
+   "Informarán al denunciante, querellante o solicitante de que tendrán que acudir directamente al Ministerio de Justicia por ser este el único órgano de relación con la Corte.",
+   "Iniciarán una investigación, sin perjuicio de adoptar, si fuera necesario, las primeras diligencias urgentes para las que pudieran tener competencia y acto seguido ponerlo en conocimiento del Fiscal de la Corte.",
+   "Informarán al denunciante, querellante o solicitante de que tendrán que acudir directamente al Fiscal de la Corte.",
+   "Se abstendrán de todo procedimiento, limitándose a informar al denunciante, querellante o solicitante de la posibilidad de acudir directamente al Fiscal de la Corte, que podrá, en su caso, iniciar una investigación, sin perjuicio de adoptar, si fuera necesario, las primeras diligencias urgentes para las que pudieran tener competencia."
+  ],
+  "c": 3,
+  "art": "7.2",
+  "exp": "Los órganos españoles <b>se abstienen</b> y solo informan de la <b>posibilidad</b> de acudir al Fiscal de la Corte (no de la obligación), sin perjuicio de las primeras diligencias urgentes."
+ },
+ {
+  "en": "De los recursos. ¿Qué recurso cabe contra los autos de la Sala de lo Penal de la Audiencia Nacional que resuelven los recursos de la situación de personal y de la que se resuelve la entrega?:",
+  "op": [
+   "Recurso de súplica.",
+   "Recurso de apelación.",
+   "No serán susceptibles de recurso alguno.",
+   "Recurso de amparo."
+  ],
+  "c": 2,
+  "art": "17.3",
+  "exp": "Lo que resuelve la Sala de lo Penal en esos recursos es ya firme: <b>no cabe recurso alguno</b>."
+ },
+ {
+  "en": "De los órganos jurisdiccionales militares. Las referencias que esta ley hace al Juzgado Central de Instrucción y a la Sala de lo Penal de la Audiencia Nacional, cuando la cooperación sea de la competencia de la jurisdicción militar, ¿a quién deben entenderse hechas?:",
+  "op": [
+   "Al Juzgado Militar Decano y al Tribunal Central, respectivamente.",
+   "Al Juzgado Togado y al Tribunal Militar, respectivamente.",
+   "Todas las opciones son incorrectas.",
+   "Al Juzgado Togado Militar Central Decano y al Tribunal Militar Central, respectivamente."
+  ],
+  "c": 3,
+  "art": "DA3.1",
+  "exp": "Hay que dar los nombres completos: <b>Juzgado Togado Militar Central Decano</b> y <b>Tribunal Militar Central</b>."
+ },
+ {
+  "en": "De la entrega temporal a la Corte. Por parte del Ministerio de Justicia, ¿a quién se transmitirán las informaciones precisas para efectuar el desplazamiento y en su momento el retorno?:",
+  "op": [
+   "Al Secretario de la Corte.",
+   "Al Ministerio de Asuntos Exteriores.",
+   "A la Sala de Cuestiones Preliminares.",
+   "Al Ministerio de Interior."
+  ],
+  "c": 3,
+  "art": "18.2",
+  "exp": "En la entrega temporal Justicia informa a los órganos judiciales competentes y al <b>Ministerio del Interior</b>, que es quien hace el traslado."
+ },
+ {
+  "en": "De la representación y defensa procesal. ¿Quién podrá por motivos excepcionales y oído el Abogado General del Estado, acordar que una persona, especialmente designada al efecto, actúe como agente de España en un determinado procedimiento ante los órganos de la Corte?:",
+  "op": [
+   "El Gobierno.",
+   "El Consejo de Ministros.",
+   "El Ministerio de Asuntos Exteriores y el Ministerio de Justicia, conjuntamente.",
+   "El Fiscal General del Estado."
+  ],
+  "c": 0,
+  "art": "5.2",
+  "exp": "El agente de España lo acuerda el <b>Gobierno</b>, por motivos excepcionales y oído el Abogado General del Estado."
+ },
+ {
+  "en": "De las autoridades competentes. ¿Quiénes NO son autoridades competentes para la aplicación de la presente ley?:",
+  "op": [
+   "Los órganos judiciales de la jurisdicción ordinaria y, en particular, la Audiencia Nacional.",
+   "Los órganos judiciales militares y, en particular, el Juez Togado Militar.",
+   "El Ministerio de Asuntos Exteriores, en los casos previstos en esta ley, y, en todo caso, cuando intervinieran factores de política exterior.",
+   "El Ministerio de Defensa y el Ministerio del Interior, cuando el acto de cooperación afecte a sus competencias."
+  ],
+  "c": 1,
+  "art": "4",
+  "exp": "La ley menciona en la jurisdicción militar al <b>Tribunal Militar Central</b>, no al Juez Togado Militar. Las otras tres figuran en la lista."
+ },
+ {
+  "en": "Del requerimiento de inhibición al Fiscal de la Corte. ¿Quién responderá con carácter urgente a cualquier petición de información del Fiscal de la Corte referida al estado de los procedimientos penales que se siguieren en España y que hubieren sido objeto de petición de inhibición, recabando dicha información del Fiscal General del Estado o directamente del órgano judicial que estuviere conociendo del asunto?:",
+  "op": [
+   "El Gobierno.",
+   "Conjuntamente el Ministerio de Asuntos Exteriores y el Ministerio de Justicia.",
+   "El Ministerio de Asuntos Exteriores.",
+   "El Ministerio de Justicia."
+  ],
+  "c": 3,
+  "art": "8.4",
+  "exp": "Contesta el <b>Ministerio de Justicia</b>, que recaba el dato del Fiscal General del Estado o del órgano judicial."
+ },
+ {
+  "en": "De los recursos. Contra las resoluciones del Juez Central de Instrucción relativas a la situación personal del reclamado, ¿qué recurso cabe ante la Sala de lo Penal de la Audiencia Nacional?:",
+  "op": [
+   "Recurso de apelación.",
+   "Recurso de amparo.",
+   "Recurso de súplica.",
+   "Recurso de reforma."
+  ],
+  "c": 0,
+  "art": "17.1",
+  "exp": "Contra las resoluciones sobre la situación personal cabe <b>apelación</b> ante la Sala de lo Penal (art. 766 LECrim)."
+ },
+ {
+  "en": "De la inhibición de la jurisdicción española a favor de la Corte. Si, a pesar de la solicitud de inhibición al Fiscal de la Corte o de la impugnación de la competencia o la admisibilidad de la causa, la Sala competente de la Corte autoriza al Fiscal a proceder a la investigación o mantiene su competencia, ¿cómo procederá el órgano jurisdiccional español?:",
+  "op": [
+   "No se inhibirá a favor de la Corte y lo elevará al Juez Central de Instrucción de la Audiencia Nacional para que decida.",
+   "Se inhibirá a favor de la Corte pero seguirá instruyendo la causa.",
+   "No se inhibirá a favor de la Corte y lo elevará al Ministro de Justicia para que decida.",
+   "Se inhibirá a favor de la Corte y a su solicitud le remitirá lo actuado."
+  ],
+  "c": 3,
+  "art": "10",
+  "exp": "Si la Corte mantiene su competencia, el órgano español <b>se inhibe</b> y, a su solicitud, le remite lo actuado."
+ },
+ {
+  "en": "De la libertad provisional. Si el detenido solicitara, en la comparecencia prevista en la ley objeto de la pregunta, su libertad provisional, el Juez Central de Instrucción acordará remitir dicha solicitud a la Corte, a través del Ministerio de Justicia, con indicación del plazo para recibir sus recomendaciones. ¿Qué duración tendrá dicho plazo?:",
+  "op": [
+   "El plazo no será inferior a diez días.",
+   "El plazo no será inferior a treinta días.",
+   "El plazo no será inferior a quince días.",
+   "El plazo no será inferior a veinte días."
+  ],
+  "c": 3,
+  "art": "12.1",
+  "exp": "El plazo para las recomendaciones de la Corte <b>no puede ser inferior a veinte días</b>."
+ },
+ {
+  "en": "Cuando fuere detenida una persona, en cumplimiento de una orden de la Corte de detención provisional o de detención y entrega, ¿a quién lo comunicará inmediatamente la autoridad que practicare la detención?:",
+  "op": [
+   "Al Ministerio de Justicia y al Juez Central de Instrucción de la Audiencia Nacional.",
+   "Al Fiscal General del Estado y al Juez Central de Instrucción de la Audiencia Nacional.",
+   "Al Ministerio de Justicia y al Fiscal General del Estado.",
+   "Al Fiscal General del Estado."
+  ],
+  "c": 0,
+  "art": "11.1",
+  "exp": "La comunicación inmediata va a dos destinatarios: <b>Ministerio de Justicia</b> y <b>Juez Central de Instrucción</b> de la Audiencia Nacional."
+ },
+ {
+  "en": "De los órganos jurisdiccionales militares. Las referencias que esta ley hace al Ministerio Fiscal y al juzgado de vigilancia penitenciaria, cuando la cooperación sea de la competencia de la jurisdicción militar, ¿a quién deben entenderse hechas?:",
+  "op": [
+   "Todas las opciones son incorrectas.",
+   "Al Fiscal Jurídico Militar y al Juez Togado Militar de Vigilancia Penitenciaria.",
+   "Al Fiscal Jurídico y al Juez Togado de Vigilancia Penitenciaria.",
+   "Al Fiscal Militar y al Juez Militar de Vigilancia Penitenciaria."
+  ],
+  "c": 1,
+  "art": "DA3.1",
+  "exp": "Ministerio Fiscal → <b>Fiscal Jurídico Militar</b>; vigilancia penitenciaria → <b>Juez Togado Militar de Vigilancia Penitenciaria</b>. Las otras recortan los nombres."
+ },
+ {
+  "en": "De la ejecución de la penas. ¿En qué Sala se celebrará la vista acerca de una posible reducción de la pena de quien estuviere cumpliendo condena en España?:",
+  "op": [
+   "La Sala de Cuestiones Preliminares.",
+   "La Sala de Apelaciones.",
+   "La Sala del Secretario de la Corte.",
+   "La Sala del Fiscal de la Corte."
+  ],
+  "c": 1,
+  "art": "22.5",
+  "exp": "La posible reducción de la pena se ve en la <b>Sala de Apelaciones</b> de la Corte."
+ },
+ {
+  "en": "Respecto a la entrega a la Corte, señale la opción INCORRECTA:",
+  "op": [
+   "Si en el citado auto se denegare la entrega, podrá mantenerse la situación de prisión provisional hasta la firmeza de dicha resolución.",
+   "Si la resolución fuere denegatoria de la entrega, una vez firme, se pondrá urgentemente en libertad a la persona detenida y se comunicará al Ministerio de Justicia, que a su vez lo hará a la Corte.",
+   "Concluida la vista, el Juzgado Central de Instrucción resolverá sobre la petición de entrega, por medio de auto, en el plazo de diez días.",
+   "Si la resolución fuere estimatoria, una vez firme, se notificará de inmediato al Ministerio de Justicia y por éste se dará traslado seguidamente a la Corte, solicitando indicaciones para la realización del traslado, que una vez recibidas se comunicarán al Juzgado Central de Instrucción y al Ministerio del Interior."
+  ],
+  "c": 2,
+  "art": "15.3",
+  "exp": "La falsa es el plazo: el auto sobre la entrega se dicta en <b>tres días</b>, no en diez. Las demás copian los apartados 4, 5 y 6."
+ },
+ {
+  "en": "Respecto de las personas sujetas a la jurisdicción de la Corte, señale la opción INCORRECTA:",
+  "op": [
+   "Las personas citadas como peritos o testigos para comparecer ante los tribunales españoles en cumplimiento de una comisión rogatoria expedida por la Corte tendrán las mismas obligaciones y responsabilidades que si hubieren sido citadas en una causa que se siguiere en España.",
+   "Si la Corte hubiere remitido alguna instrucción sobre la regla relativa a la autoinculpación, se entregará dicho documento al testigo y el órgano judicial se cerciorará de que ha sido debidamente entendido.",
+   "Si la comparecencia fuere en la sede de la Corte, tendrá carácter forzoso, solicitándose de ésta por el Ministerio de Justicia información acerca de las inmunidades y plazo de vigencia para la persona citada, que será transmitida a dicha persona, anticipándose los gastos por el Ministerio de Justicia.",
+   "No será necesario el consentimiento cuando se tratare de un condenado por la Corte que se encontrare cumpliendo condena en España, en cuyo caso se efectuará el traslado temporal, en las condiciones que se acuerden con la Corte."
+  ],
+  "c": 2,
+  "art": "21.1",
+  "exp": "La comparecencia en la sede de la Corte es <b>voluntaria</b>, no forzosa. El resto es literal."
+ },
+ {
+  "en": "Cuando se acordare la libertad provisional del detenido, ¿a quién se informará?:",
+  "op": [
+   "Al Ministerio de Justicia.",
+   "A la Sala de Cuestiones Preliminares.",
+   "Al Fiscal de la Corte.",
+   "Al Fiscal General del Estado."
+  ],
+  "c": 1,
+  "art": "12.4",
+  "exp": "De la libertad provisional se informa a la <b>Sala de Cuestiones Preliminares</b>."
+ },
+ {
+  "en": "De la solicitud para iniciar una investigación por el Fiscal de la Corte. ¿A quién le corresponderá exclusivamente la presentación de la denuncia de una situación ante el Fiscal de la Corte Penal Internacional?:",
+  "op": [
+   "Al Gobierno, mediante Acuerdo del Consejo de Ministros, a propuesta del Ministro de Asuntos Exteriores.",
+   "Al Gobierno, mediante Acuerdo del Consejo de Ministros, a propuesta del Ministro de Justicia.",
+   "Al Gobierno, mediante Acuerdo del Consejo de Ministros, a propuesta conjunta del Ministro de Asuntos Exteriores y del Ministro de Justicia.",
+   "Al Gobierno, mediante Acuerdo del Ministro de Asuntos Exteriores, a propuesta del Ministro de Justicia."
+  ],
+  "c": 2,
+  "art": "7.1",
+  "exp": "Decide el Gobierno por Acuerdo del Consejo de Ministros, a propuesta <b>conjunta de Exteriores y Justicia</b>."
+ },
+ {
+  "en": "Si España recibiere una invitación de la Corte para participar en un proceso en calidad de «amicus curiae», ¿con quién consultará el Ministerio de Justicia para determinar la conveniencia u oportunidad de hacerlo y, en su caso, fijar los términos de dicha participación?:",
+  "op": [
+   "Con el Ministerio de Interior.",
+   "No procederá la consulta, el Ministerio de Justicia lo determinará sin recurrir a ella.",
+   "Con el Ministerio de Asuntos Exteriores.",
+   "Con el Ministerio de Defensa."
+  ],
+  "c": 2,
+  "art": "24",
+  "exp": "Justicia consulta con <b>Asuntos Exteriores</b>."
+ },
+ {
+  "en": "De las autoridades competentes. ¿Quiénes NO son autoridades competentes para la aplicación de la ley objeto de la pregunta?:",
+  "op": [
+   "Los órganos judiciales de la jurisdicción ordinaria y, en particular, la Audiencia Nacional.",
+   "El Gobierno.",
+   "El Fiscal General del Estado.",
+   "Los órganos judiciales militares y, en particular, el Tribunal Militar Central."
+  ],
+  "c": 2,
+  "art": "4",
+  "exp": "La lista incluye el <b>Ministerio Fiscal</b>, pero no nombra como autoridad al Fiscal General del Estado: es la opción que la academia busca como no competente."
+ },
+ {
+  "en": "De la libertad provisional. Cuando se acordare la libertad provisional, ¿a quién se informará?:",
+  "op": [
+   "A la Sala de Apelaciones.",
+   "A la Sala de Primera Instancia.",
+   "A la Sala de lo Penal de la Audiencia Nacional.",
+   "A la Sala de Cuestiones Preliminares."
+  ],
+  "c": 3,
+  "art": "12.4",
+  "exp": "Se informa a la <b>Sala de Cuestiones Preliminares</b> y después cuantas veces lo pida."
+ },
+ {
+  "en": "De otras formas de cooperación con la Corte, señale la opción INCORRECTA:",
+  "op": [
+   "El Ministerio de Interior acusará recibo e informará a la Corte acerca del órgano interno al que se haya transmitido la solicitud.",
+   "El objeto de las consultas será exponer a la Corte la razón fundada por la que no puede prestarse la asistencia solicitada, considerar la posibilidad de atenderla de otra manera o con arreglo a otras condiciones, estudiar su modificación o retirada, así como asegurar la protección de informaciones de carácter confidencial o restringido.",
+   "Cuando la solicitud de la Corte pudiera afectar a la defensa o a la seguridad nacionales, el Ministerio de Asuntos Exteriores, en coordinación con los Ministerios de Justicia, del Interior y de Defensa u otros Ministerios competentes, efectuará consultas con el Estado u organización de que proceda la información o documentación, informándose a la Corte del resultado de tales consultas.",
+   "Los órganos judiciales y las restantes autoridades intervinientes darán cumplimiento a las solicitudes de cooperación formuladas por la Corte que no estuvieran prohibidas en la legislación española y cuyo fin fuera también facilitar el proceso ante la Corte."
+  ],
+  "c": 0,
+  "art": "20.1",
+  "exp": "Quien acusa recibo e informa a la Corte es el <b>Ministerio de Justicia</b>, no el del Interior."
+ },
+ {
+  "en": "De la entrega simplificada. Respecto a la entrega simplificada, señale la opción CORRECTA:",
+  "op": [
+   "El Juez Central de Instrucción remitirá urgentemente copia del auto al Ministerio de Justicia, que informará de inmediato a la Corte y solicitará indicaciones de ésta, en orden a la realización del traslado.",
+   "Todas las opciones son correctas.",
+   "En la comparecencia se informará al detenido de que el consentimiento, una vez dado, es irrevocable.",
+   "La persona reclamada, aunque se hubiere opuesto a la entrega, podrá dar su consentimiento dentro de los quince días siguientes."
+  ],
+  "c": 1,
+  "art": "13",
+  "exp": "Las tres afirmaciones copian los apartados 2, 3 y 4 del artículo, así que <b>todas son correctas</b>."
+ },
+ {
+  "en": "De la libertad provisional. Si en el plazo establecido en las reglas de procedimiento y prueba la Corte no hubiera remitido la documentación para la entrega, el Juez Central de Instrucción podrá acordar la libertad provisional y las medidas cautelares adecuadas. ¿Por qué tiempo se mantendrán las medidas cautelares?:",
+  "op": [
+   "Por un máximo de 180 días.",
+   "Por un máximo de 60 días.",
+   "Por un máximo de 120 días.",
+   "Por un máximo de 90 días."
+  ],
+  "c": 0,
+  "art": "12.3",
+  "exp": "Sin la documentación de la Corte, las medidas duran como máximo <b>180 días</b>."
+ },
+ {
+  "en": "Recibida en el Ministerio de Justicia notificación del Fiscal de la Corte de inicio de una investigación, de tratarse de hechos cuyo conocimiento podría corresponder a la jurisdicción española por haber acaecido en territorio español u ostentar sus presuntos responsables la nacionalidad española, ¿a quién solicitará el Ministerio de Justicia información urgente sobre la existencia de actuaciones penales que se sigan o se hayan seguido en relación con los hechos objeto de la investigación, así como sobre si tienen competencia los tribunales españoles?:",
+  "op": [
+   "Al Fiscal General del Estado.",
+   "Al Fiscal General de la Audiencia Nacional.",
+   "Al Juzgado Central de Instrucción competente.",
+   "Al Consejo General del Poder Judicial."
+  ],
+  "c": 0,
+  "art": "8.1",
+  "exp": "Justicia pide la información urgente al <b>Fiscal General del Estado</b>."
+ },
+ {
+  "en": "De los órganos de relación y consulta con la Corte. Cuando la consulta con la Corte incluya, a juicio del Ministerio de Asuntos Exteriores, aspectos de política exterior, ¿qué ministerio será el competente?:",
+  "op": [
+   "El Ministerio de Asuntos Exteriores, en coordinación con el Ministerio de Justicia y, en su caso, con otros ministerios.",
+   "El Ministerio de Defensa, en coordinación con el Ministerio de Justicia y, en su caso, con otros ministerios.",
+   "El Ministerio de Interior, en coordinación con el Ministerio de Justicia y, en su caso, con otros ministerios.",
+   "Todas las opciones son correctas según el caso de que se trate."
+  ],
+  "c": 0,
+  "art": "6.2",
+  "exp": "Con aspectos de política exterior manda <b>Asuntos Exteriores</b>, en coordinación con Justicia."
+ },
+ {
+  "en": "De la impugnación de la competencia de la Corte o de la admisibilidad de la causa. ¿A quién le corresponderá exclusivamente acordar la impugnación de la competencia de la Corte o de la admisibilidad de la causa?:",
+  "op": [
+   "Al Gobierno, mediante Acuerdo del Ministro de Asuntos Exteriores, a propuesta del Ministro de Justicia.",
+   "Al Gobierno, mediante Acuerdo del Consejo de Ministros, a propuesta conjunta del Ministro de Asuntos Exteriores y del Ministro de Justicia.",
+   "Al Gobierno, mediante Acuerdo del Consejo de Ministros, a propuesta del Ministro de Asuntos Exteriores.",
+   "Al Gobierno, mediante Acuerdo del Consejo de Ministros, a propuesta del Ministro de Justicia."
+  ],
+  "c": 1,
+  "art": "9.1",
+  "exp": "Igual que la denuncia: Gobierno, por Acuerdo del Consejo de Ministros, a propuesta <b>conjunta</b> de Justicia y Exteriores."
+ },
+ {
+  "en": "De la entrega a la Corte. No habiéndose accedido a la entrega simplificada, cuando hubiera sido detenida una persona en cumplimiento de una orden de la Corte de detención y entrega o una vez recibida en el Juzgado Central de Instrucción la documentación, se pondrá ésta de manifiesto en Secretaría y se convocará a una audiencia que tendrá lugar, ¿en qué plazo?:",
+  "op": [
+   "En el plazo máximo de cinco días.",
+   "En el plazo máximo de diez días.",
+   "En el plazo máximo de tres días.",
+   "En el plazo máximo de quince días."
+  ],
+  "c": 1,
+  "art": "15.1",
+  "exp": "La audiencia se celebra en el plazo máximo de <b>diez días</b>."
+ },
+ {
+  "en": "De la impugnación de la competencia de la Corte o de la admisibilidad de la causa. Corresponde exclusivamente al Gobierno, acordar la impugnación de la competencia de la Corte o de la admisibilidad de la causa, cuando los tribunales españoles hayan conocido del asunto y haya recaído sentencia, o se haya decretado el sobreseimiento libre de la causa o estén conociendo del asunto. ¿Cuándo se formalizará tal impugnación?:",
+  "op": [
+   "A la mayor brevedad posible, antes del inicio del juicio en la Corte.",
+   "Todas las opciones son correctas.",
+   "Ordinariamente, en el momento de la iniciación del juicio en la Corte.",
+   "Excepcionalmente, en un momento posterior al inicio del juicio en la Corte, fundándose en el caso de que el detenido haya cumplido la pena."
+  ],
+  "c": 0,
+  "art": "9.2",
+  "exp": "La regla general es <b>antes del inicio del juicio</b>. Las otras fallan: en la iniciación solo es excepcional y después solo por cosa juzgada, no por pena cumplida."
+ },
+ {
+  "en": "De la detención. Cuando la orden de detención de la Corte se refiera a una persona que se encuentra cumpliendo condena impuesta por los tribunales españoles o por los de un tercer Estado desde el cual hubiere sido trasladada a España para su cumplimiento, la autoridad penitenciaria competente informará:",
+  "op": [
+   "Con antelación suficiente y en un plazo máximo de 48 horas sobre la fecha de excarcelación al Juez Central de Instrucción y al Ministerio de Justicia, que informará a la Corte sobre la fecha prevista de excarcelación.",
+   "Con antelación suficiente sobre la fecha de excarcelación al Juez Central de Instrucción y al Ministerio de Justicia, que informará a la Corte sobre la fecha prevista de excarcelación.",
+   "Con antelación suficiente sobre la fecha de excarcelación al Juez de Instrucción y al Ministerio de Justicia, que informará a la Corte sobre la fecha prevista de excarcelación.",
+   "Con antelación suficiente y en un plazo máximo de 24 horas sobre la fecha de excarcelación al Juez Central de Instrucción y al Ministerio de Justicia, que informará a la Corte sobre la fecha prevista de excarcelación."
+  ],
+  "c": 1,
+  "art": "11.3",
+  "exp": "La ley pide antelación suficiente <b>sin plazo en horas</b>, y avisa al <b>Juez Central de Instrucción</b> y a Justicia."
+ },
+ {
+  "en": "Del requerimiento de inhibición al Fiscal de la Corte. Cuando de la información suministrada por el Fiscal General del Estado apareciera que se ha ejercido jurisdicción en España, se está ejerciendo o, como consecuencia de la notificación recibida, se ha iniciado una investigación por las autoridades españolas, los Ministros de Justicia y de Asuntos Exteriores, __________, elevarán propuesta conjunta al Consejo de Ministros para que resuelva sobre sostener la competencia de las autoridades españolas y, en su caso, pedir la inhibición al Fiscal de la Corte:",
+  "op": [
+   "En plazo que no podrá rebasar los diez días desde la recepción de la notificación del Fiscal de la Corte.",
+   "En plazo que no podrá rebasar los veinte días desde la recepción de la notificación del Fiscal de la Corte.",
+   "En plazo que no podrá rebasar los quince días desde la recepción de la notificación del Fiscal de la Corte.",
+   "En plazo que no podrá rebasar los treinta días desde la recepción de la notificación del Fiscal de la Corte."
+  ],
+  "c": 1,
+  "art": "8.2",
+  "exp": "La propuesta conjunta se eleva en un plazo que no puede rebasar los <b>veinte días</b>."
+ },
+ {
+  "en": "De la solicitud para iniciar una investigación por el Fiscal de la Corte. Cuando se presentare una denuncia o querella ante un órgano judicial o del Ministerio Fiscal o una solicitud en un departamento ministerial, en relación con hechos sucedidos en otros Estados, cuyos presuntos autores no sean nacionales españoles y para cuyo enjuiciamiento pudiera ser competente la Corte, ¿cómo procederán dichos órganos?:",
+  "op": [
+   "Se dará traslado a la denuncia o querella al Ministerio de Justicia por ser este el único órgano de relación con la Corte.",
+   "Iniciarán la investigación pertinente, sin perjuicio de adoptar, si fuera necesario, las primeras diligencias urgentes para las que pudieran tener competencia.",
+   "Se dará traslado a la denuncia o querella al Gobierno que decidirá sobre la misma.",
+   "Se abstendrán de todo procedimiento, limitándose a informar al denunciante, querellante o solicitante de la posibilidad de acudir directamente al Fiscal de la Corte."
+  ],
+  "c": 3,
+  "art": "7.2",
+  "exp": "Se <b>abstienen de todo procedimiento</b> e informan de la posibilidad de acudir al Fiscal de la Corte: no dan traslado a Justicia ni al Gobierno."
+ },
+ {
+  "en": "De la detención. El Juez Central de Instrucción oirá a la persona reclamada, asistida de letrado y, en su caso, de intérprete y al Ministerio Fiscal, ¿en qué plazo?:",
+  "op": [
+   "Dentro de las veinticuatro horas siguientes a su detención.",
+   "Dentro de las setenta y dos horas siguientes a su detención.",
+   "Dentro de las veinticuatro horas siguientes a su puesta a disposición judicial.",
+   "Dentro de las setenta y dos horas siguientes a su puesta a disposición judicial."
+  ],
+  "c": 3,
+  "art": "11.2",
+  "exp": "Las 72 horas de la audiencia se cuentan desde la <b>puesta a disposición judicial</b>, no desde la detención."
+ },
+ {
+  "en": "Las referencias que esta ley hace a la Sala de lo Penal de la Audiencia Nacional, cuando la cooperación sea de la competencia de la jurisdicción militar, ¿a quién deben entenderse hechas?:",
+  "op": [
+   "Al Tribunal Militar Central.",
+   "Al Fiscal Jurídico Militar.",
+   "Al Juzgado Togado Militar de Vigilancia Penitenciaria.",
+   "Al Juzgado Togado Militar Central Decano."
+  ],
+  "c": 0,
+  "art": "DA3.1",
+  "exp": "La Sala de lo Penal de la Audiencia Nacional equivale al <b>Tribunal Militar Central</b>."
+ },
+ {
+  "en": "De la celebración del juicio y otras actuaciones procesales en España. Si la Corte propusiere la celebración del juicio u otras actuaciones procesales en España, ¿quién comunicará a la Corte la decisión al respecto?:",
+  "op": [
+   "El Gobierno.",
+   "El Fiscal General del Estado.",
+   "El Consejo de Ministros.",
+   "El Ministerio de Justicia."
+  ],
+  "c": 3,
+  "art": "25",
+  "exp": "Comunica la decisión el <b>Ministerio de Justicia</b>, previa consulta con Exteriores, Interior y otras autoridades."
+ },
+ {
+  "en": "¿Cuál es el objeto de la presente ley orgánica?:",
+  "op": [
+   "Todas las opciones son correctas.",
+   "Regular las relaciones de cooperación entre el Estado español y la Corte Penal Internacional.",
+   "Regular las relaciones de cooperación entre los Estados miembros y la Corte Penal Internacional.",
+   "Regular las relaciones de cooperación entre todos los Estados y la Corte Penal Internacional."
+  ],
+  "c": 1,
+  "art": "1",
+  "exp": "La ley regula la relación entre el <b>Estado español</b> y la Corte, no la de otros Estados."
+ },
+ {
+  "en": "De la detención. El Juez Central de Instrucción oirá a la persona reclamada, asistida de letrado y, en su caso, de intérprete y al Ministerio Fiscal, dentro de las setenta y dos horas siguientes a su puesta a disposición judicial. Después de verificar la identidad del detenido, el contenido de la orden de detención y las circunstancias previstas en el artículo 59.2 del Estatuto, ¿de qué se informará al detenido?:",
+  "op": [
+   "Del contenido de la orden de detención y de su derecho a solicitar la libertad provisional.",
+   "Del contenido de la orden de detención y de su derecho a solicitar intérprete.",
+   "Todas las opciones son correctas.",
+   "Del contenido de la orden de detención de su derecho a solicitar abogado."
+  ],
+  "c": 0,
+  "art": "11.2",
+  "exp": "Se le informa del <b>contenido de la orden</b> y de su derecho a <b>solicitar la libertad provisional</b>."
+ },
+ {
+  "en": "¿Quién será el único órgano de relación entre la Corte, por un lado, y los órganos judiciales y Ministerio Fiscal, por otro, sin perjuicio de las competencias del Ministerio de Asuntos Exteriores?:",
+  "op": [
+   "El Tribunal Supremo.",
+   "El Gobierno.",
+   "El Consejo General del Poder Judicial.",
+   "El Ministerio de Justicia."
+  ],
+  "c": 3,
+  "art": "6.1",
+  "exp": "El único órgano de relación es el <b>Ministerio de Justicia</b>."
+ },
+ {
+  "en": "Cuando la solicitud de la Corte pudiera afectar a la defensa o a la seguridad nacionales o tenga por objeto documentos o informaciones que hubieren sido transmitidos a España con carácter confidencial por un Estado, una organización internacional o una organización intergubernamental, ¿quién efectuará consultas con el Estado u organización de que proceda la información o documentación, informándose a la Corte del resultado de tales consultas?:",
+  "op": [
+   "El Ministerio de Asuntos Exteriores, en coordinación con los Ministerios de Justicia, del Interior y de Defensa u otros Ministerios competentes.",
+   "El Ministerio de Interior, en coordinación con los Ministerios de Asuntos Exteriores, de Justicia y de Defensa u otros Ministerios competentes.",
+   "El Ministerio de Defensa, en coordinación con los Ministerios de Justicia, de Asuntos Exteriores y de Interior u otros Ministerios competentes.",
+   "El Ministerio de Justicia, en coordinación con los Ministerios de Asuntos Exteriores, del Interior y de Defensa u otros Ministerios competentes."
+  ],
+  "c": 0,
+  "art": "20.2",
+  "exp": "En defensa, seguridad nacional o información confidencial consulta <b>Asuntos Exteriores</b>, en coordinación con los demás."
+ },
+ {
+  "en": "De los órganos de relación y consulta con la Corte. ¿Quién será el único órgano de relación entre la Corte, por un lado, y los órganos judiciales y Ministerio Fiscal, por otro, sin perjuicio de las competencias del Ministerio de Asuntos Exteriores?:",
+  "op": [
+   "El Consejo de Ministros.",
+   "El Ministerio de Interior.",
+   "El Ministerio de Justicia.",
+   "El Gobierno."
+  ],
+  "c": 2,
+  "art": "6.1",
+  "exp": "El único órgano de relación es el <b>Ministerio de Justicia</b>."
+ },
+ {
+  "en": "De la ejecución de las penas en España. Por el Ministerio de Justicia se transmitirán las oportunas informaciones al Ministerio del Interior para la realización del traslado, debiendo comunicarse por las autoridades penitenciarias al juez de vigilancia penitenciaria competente la llegada del recluso, en un plazo de:",
+  "op": [
+   "24 horas.",
+   "12 horas.",
+   "72 horas.",
+   "8 horas."
+  ],
+  "c": 0,
+  "art": "22.1",
+  "exp": "La llegada del recluso se comunica en <b>24 horas</b>."
+ },
+ {
+  "en": "De la ejecución de las penas en España. Cuando la petición de ejecución de la Corte se refiriese a una multa u orden de decomiso, el Ministerio de Justicia transmitirá la documentación pertinente para que inste la ejecución ante el órgano judicial competente y, en su caso, se pongan a disposición del Ministerio de Justicia los bienes o sumas obtenidas para su transferencia a la Corte. ¿A quién transmitirá el Ministerio de Justicia la citada documentación pertinente?:",
+  "op": [
+   "Al Juez de instrucción donde tenga fijado su domicilio.",
+   "Al Fiscal General del Estado.",
+   "Al Fiscal de la Audiencia Nacional.",
+   "Al Fiscal de la Corte."
+  ],
+  "c": 1,
+  "art": "22.7",
+  "exp": "Multas y decomisos van al <b>Fiscal General del Estado</b> para que inste la ejecución."
+ },
+ {
+  "en": "De la detención. Cuando fuere detenida una persona, en cumplimiento de una orden de la Corte de detención provisional o de detención y entrega, la autoridad que practicare la detención, lo pondrá a disposición del Juez Central de Instrucción, ¿en qué plazo?:",
+  "op": [
+   "Sin demora y, en todo caso, dentro del plazo de cuarenta y ocho horas siguientes a la detención.",
+   "Sin demora y, en todo caso, dentro del plazo de setenta y dos horas siguientes a la detención.",
+   "Sin demora y, en todo caso, dentro del plazo de cinco días siguientes a la detención.",
+   "Sin demora y, en todo caso, dentro del plazo de veinticuatro horas siguientes a la detención."
+  ],
+  "c": 1,
+  "art": "11.1",
+  "exp": "Sin demora y como máximo en <b>setenta y dos horas</b> desde la detención."
+ },
+ {
+  "en": "De las siguientes opciones, ¿cuál NO es una autoridad competente para la aplicación de esta ley?:",
+  "op": [
+   "Los órganos judiciales militares y, en particular, el Juez Togado Militar Central.",
+   "Los órganos judiciales de la jurisdicción ordinaria y, en particular, la Audiencia Nacional.",
+   "El Ministerio Fiscal.",
+   "El Ministerio de Defensa y el Ministerio del Interior, cuando el acto de cooperación afecte a sus competencias."
+  ],
+  "c": 0,
+  "art": "4",
+  "exp": "El órgano militar destacado es el <b>Tribunal Militar Central</b>; el «Juez Togado Militar Central» no está en la lista."
+ },
+ {
+  "en": "No habiéndose accedido a la entrega simplificada, cuando hubiera sido detenida una persona en cumplimiento de una orden de la Corte de detención y entrega, se pondrá ésta de manifiesto en Secretaría y se convocará a una audiencia que tendrá lugar en el plazo máximo de diez días. ¿Qué personas NO se citarán a dicha audiencia?:",
+  "op": [
+   "La persona reclamada.",
+   "Un delegado del Fiscal de la Corte.",
+   "Su defensor.",
+   "El Ministerio Fiscal."
+  ],
+  "c": 1,
+  "art": "15.1",
+  "exp": "Al delegado del Fiscal de la Corte no se le cita: <b>podrá asistir e intervenir</b>. Los otros tres sí se citan."
+ },
+ {
+  "en": "Cuando, en lugar de una solicitud de detención, la Corte hubiere dictado una orden de comparecencia, ¿a quién remitirá la solicitud de la Corte el Ministerio de Justicia?:",
+  "op": [
+   "Al Juez de lo Penal del domicilio o residencia de la persona buscada.",
+   "A la Audiencia Provincial del domicilio o residencia de la persona buscada.",
+   "Al Juez de instrucción del domicilio o residencia de la persona buscada.",
+   "Todas las opciones son incorrectas."
+  ],
+  "c": 2,
+  "art": "14",
+  "exp": "La solicitud va al <b>juez de instrucción</b> del domicilio o residencia de la persona buscada."
+ },
+ {
+  "en": "De la cooperación activa. Los órganos judiciales y el Ministerio Fiscal podrán dirigir solicitudes de cooperación a la Corte que se consideren necesarias en el marco de un proceso que se siguiere en España. ¿Por conducto de quién harán dichas solicitudes?:",
+  "op": [
+   "Por conducto del Ministerio de Interior.",
+   "Por conducto del Ministerio de Justicia.",
+   "Por conducto del Ministerio de Defensa.",
+   "Por conducto del Ministerio de Asuntos Exteriores."
+  ],
+  "c": 1,
+  "art": "3",
+  "exp": "Las solicitudes de cooperación activa van por conducto del <b>Ministerio de Justicia</b>."
+ },
+ {
+  "en": "¿Mediante qué corresponderá al Gobierno acordar la impugnación de la competencia de la Corte o de la admisibilidad de la causa?:",
+  "op": [
+   "Mediante Real Decreto.",
+   "Mediante Acuerdo del Consejo de Ministros.",
+   "Mediante Ley.",
+   "Mediante Decreto."
+  ],
+  "c": 1,
+  "art": "9.1",
+  "exp": "La impugnación se acuerda por <b>Acuerdo del Consejo de Ministros</b>."
+ },
+ {
+  "en": "De la ejecución de la penas. Por el Ministerio de Justicia se transmitirán las oportunas informaciones al Ministerio del Interior para la realización del traslado, ¿en qué plazo deberán comunicar las autoridades penitenciarias al juez de vigilancia penitenciaria competente la llegada del recluso?:",
+  "op": [
+   "En un plazo de cuarenta y ocho horas.",
+   "En un plazo de veinticuatro horas.",
+   "En un plazo de setenta y dos horas.",
+   "En un plazo de doce horas."
+  ],
+  "c": 1,
+  "art": "22.1",
+  "exp": "La llegada del recluso se comunica en <b>veinticuatro horas</b>."
+ },
+ {
+  "en": "De los recursos. Contra el auto del Juez Central de Instrucción en el que se resuelve sobre la entrega, ¿qué recurso cabe ante la Sala de lo Penal de la Audiencia Nacional?:",
+  "op": [
+   "Recurso de súplica.",
+   "Recurso de reforma.",
+   "Recurso de amparo.",
+   "Recurso de apelación."
+  ],
+  "c": 3,
+  "art": "17.2",
+  "exp": "Contra el auto de entrega cabe <b>apelación</b> ante la Sala de lo Penal (art. 790 LECrim)."
+ },
+ {
+  "en": "De la ejecución de las penas en España. ¿Quiénes prestarán el máximo apoyo a Magistrados y funcionarios de la Corte que se personaren en España para supervisar la ejecución de las penas?:",
+  "op": [
+   "El Ministerio de Asuntos Exteriores y el Ministerio de Justicia.",
+   "Los jueces de vigilancia penitenciaria y el Ministerio del Interior.",
+   "Los jueces de vigilancia penitenciaria y el Ministerio de Justicia.",
+   "El Gobierno."
+  ],
+  "c": 1,
+  "art": "22.3",
+  "exp": "El apoyo lo prestan los <b>jueces de vigilancia penitenciaria</b> y el <b>Ministerio del Interior</b>."
+ },
+ {
+  "en": "De la representación y defensa procesal. El Gobierno, por motivos excepcionales, podrá acordar que una persona, especialmente designada al efecto, actúe como agente de España en un determinado procedimiento ante los órganos de la Corte. ¿A quién deberá oír el Gobierno previamente antes de designarla?:",
+  "op": [
+   "Al Consejo de Ministros.",
+   "Al Fiscal General del Estado.",
+   "Al Ministro de Justicia.",
+   "Al Abogado General del Estado."
+  ],
+  "c": 3,
+  "art": "5.2",
+  "exp": "Antes de designar al agente se oye al <b>Abogado General del Estado</b>."
+ },
+ {
+  "en": "De la detención. Cuando fuere detenida una persona, en cumplimiento de una orden de la Corte de detención provisional o de detención y entrega, la autoridad que practicare la detención, ¿a quién lo comunicará inmediatamente?:",
+  "op": [
+   "Al Ministerio de Justicia y al Juez Central de Instrucción de la Audiencia Nacional.",
+   "Al Ministerio de Asuntos Exteriores.",
+   "Al Ministerio de Interior.",
+   "A la Audiencia Nacional."
+  ],
+  "c": 0,
+  "art": "11.1",
+  "exp": "Comunicación inmediata al <b>Ministerio de Justicia</b> y al <b>Juez Central de Instrucción</b>."
+ },
+ {
+  "en": "Respecto a las solicitudes concurrentes, señale la opción CORRECTA:",
+  "op": [
+   "Todas las opciones son correctas.",
+   "El Juez Central de Instrucción se abstendrá de decidir sobre la entrega, elevando ambos procesos a la Sala de lo Penal de la Audiencia Nacional, que resolverá de acuerdo con el Estatuto y, en su caso, de acuerdo con el tratado que existiere con el Estado requirente. Cuando no existiere tratado, se dará preferencia a la solicitud de la Corte.",
+   "Cuando concurriere con la solicitud de entrega de la Corte una solicitud de extradición de un Estado, sea o no parte en el Estatuto, o una orden europea de detención y entrega, se notificará este hecho a la Corte y al Estado requirente y se tramitarán conjuntamente ambos procedimientos en el Juzgado Central de Instrucción que estuviere conociendo de la solicitud de entrega.",
+   "El Ministerio de Justicia informará a la Corte cuando, habiendo sido declarada inadmisible la causa por ésta, asimismo se hubiere denegado la extradición al Estado requirente."
+  ],
+  "c": 0,
+  "art": "16",
+  "exp": "Las tres afirmaciones reproducen los apartados 1, 2 y 3 del artículo: <b>todas son correctas</b>."
+ },
+ {
+  "en": "De las solicitudes concurrentes. Respecto a las solicitudes concurrentes, señale la opción INCORRECTA:",
+  "op": [
+   "El Ministerio de Justicia informará a la Corte cuando, habiendo sido declarada inadmisible la causa por ésta, asimismo se hubiere denegado la extradición al Estado requirente.",
+   "El Juez Central de Instrucción se abstendrá de decidir sobre la entrega, elevando ambos procesos a la Sala de lo Penal de la Audiencia Nacional, que resolverá de acuerdo con el Estatuto y, en su caso, de acuerdo con el tratado que existiere con el Estado requirente.",
+   "Cuando no existiere tratado con el Estado requirente, se dará preferencia a la solicitud de la orden europea de detención y entrega.",
+   "Cuando concurriere con la solicitud de entrega de la Corte una solicitud de extradición de un Estado, sea o no parte en el Estatuto, o una orden europea de detención y entrega, se notificará este hecho a la Corte y al Estado requirente y se tramitarán conjuntamente ambos procedimientos en el Juzgado Central de Instrucción que estuviere conociendo de la solicitud de entrega."
+  ],
+  "c": 2,
+  "art": "16.2",
+  "exp": "La falsa cambia la preferencia: sin tratado se prefiere la <b>solicitud de la Corte</b>."
+ },
+ {
+  "en": "La representación y defensa en juicio de España ante los órganos de la Corte corresponderá a los Abogados del Estado integrados en la Abogacía General del Estado y de acuerdo con las instrucciones impartidas, ¿por quién?:",
+  "op": [
+   "Conjuntamente Ministerio de Justicia y el Ministerio de Interior.",
+   "Por el Gobierno.",
+   "Conjuntamente Ministerio de Interior y el Ministerio de Asuntos Exteriores.",
+   "Conjuntamente Ministerio de Justicia y el Ministerio de Asuntos Exteriores."
+  ],
+  "c": 3,
+  "art": "5.1",
+  "exp": "Instrucciones impartidas <b>conjuntamente por Justicia y Asuntos Exteriores</b>."
+ },
+ {
+  "en": "Respecto de las medidas de reparación, señale la opción CORRECTA:",
+  "op": [
+   "Cuando las observaciones se refiriesen a la atribución del importe de la reparación a una organización intergubernamental o internacional, el Ministerio de Justicia consultará con el Ministerio de Asuntos Exteriores.",
+   "El Ministerio de Justicia, en el plazo indicado por la Corte o, en su caso, en el más breve plazo posible, remitirá observaciones sobre las cuestiones planteadas por la Corte, incluidas las relativas a las observaciones formuladas por los peritos, pudiendo recabar, a tal efecto, informaciones de organismos competentes.",
+   "Cuando para cumplimentar la comunicación de la Corte hubieran de adoptarse medidas de ejecución, se procederá, en lo que sea pertinente conforme al procedimiento previsto en el apartado 7 del artículo 22 de esta ley.",
+   "Todas las opciones son correctas."
+  ],
+  "c": 3,
+  "art": "23",
+  "exp": "Cada opción copia un apartado del artículo (2, 1 y 3): <b>todas son correctas</b>."
+ },
+ {
+  "en": "De las personas sujetas a la jurisdicción de la Corte, señale la opción INCORRECTA:",
+  "op": [
+   "Las personas citadas como peritos o testigos para comparecer ante los tribunales españoles en cumplimiento de una comisión rogatoria expedida por la Corte tendrán las mismas obligaciones y responsabilidades que si hubieren sido citadas en una causa que se siguiere en España.",
+   "Si la Corte hubiere remitido alguna instrucción sobre la regla relativa a la autoinculpación, no se entregará dicho documento al testigo por ser un documento secreto.",
+   "Si la comparecencia fuere en la sede de la Corte, tendrá carácter voluntario.",
+   "No será necesario el consentimiento cuando se tratare de un condenado por la Corte que se encontrare cumpliendo condena en España, en cuyo caso se efectuará el traslado temporal, en las condiciones que se acuerden con la Corte."
+  ],
+  "c": 1,
+  "art": "21.1",
+  "exp": "La instrucción sobre autoinculpación <b>sí se entrega</b> al testigo y el juez comprueba que la ha entendido."
+ },
+ {
+  "en": "Respecto del requerimiento de inhibición al Fiscal de la Corte, señale la opción INCORRECTA:",
+  "op": [
+   "Una vez aprobado el Acuerdo del Consejo de Ministros sobre sostener la competencia de las autoridades españolas y, en su caso, pedir la inhibición al Fiscal de la Corte, corresponderá al Ministerio de Justicia formular la petición de inhibición y realizar las restantes actuaciones previstas en el Estatuto para dar cumplimiento a dicho Acuerdo.",
+   "Cuando de la información suministrada por el Fiscal General del Estado apareciera que se ha ejercido jurisdicción en España, se está ejerciendo o, como consecuencia de la notificación recibida, se ha iniciado una investigación por las autoridades españolas, los Ministros de Justicia y de Asuntos Exteriores, en plazo que no podrá rebasar los diez días desde la recepción de la notificación del Fiscal de la Corte, elevarán propuesta conjunta al Consejo de Ministros para que resuelva sobre sostener la competencia de las autoridades españolas y, en su caso, pedir la inhibición al Fiscal de la Corte.",
+   "Cuando de la información suministrada por el Fiscal General del Estado sobre sostener la competencia de las autoridades españolas y, en su caso, pedir la inhibición al Fiscal de la Corte, resulte que no se ha ejercido jurisdicción, ni se está ejerciendo, ni se ha iniciado investigación en España, el Ministerio de Justicia lo comunicará urgentemente al Fiscal de la Corte.",
+   "El Ministerio de Justicia responderá con carácter urgente a cualquier petición de información del Fiscal de la Corte referida al estado de los procedimientos penales que se siguieren en España y que hubieren sido objeto de petición de inhibición, recabando dicha información del Fiscal General del Estado o directamente del órgano judicial que estuviere conociendo del asunto."
+  ],
+  "c": 1,
+  "art": "8.2",
+  "exp": "El plazo de la propuesta conjunta es de <b>veinte días</b>, no de diez. (La tercera opción está redactada de forma rara en el test, pero su contenido es el del apartado 5.)"
+ },
+ {
+  "en": "Respecto de la entrega simplificada, señale la opción CORRECTA:",
+  "op": [
+   "El Juez Central de Instrucción remitirá urgentemente copia del auto al Ministerio de Justicia, que informará de inmediato a la Corte y solicitará indicaciones de ésta, en orden a la realización del traslado. Una vez recibidas dichas instrucciones, las transmitirá al Juzgado Central de Instrucción y al Ministerio de Justicia a los fines de la entrega.",
+   "Todas las opciones son correctas.",
+   "La persona reclamada, aunque se hubiere opuesto a la entrega en la citada comparecencia, podrá dar su consentimiento dentro de los veinte días siguientes, procediéndose en tal caso conforme a lo prevenido en los apartados precedentes.",
+   "En la comparecencia con el Juez Central de Instrucción se interrogará a la persona reclamada acerca de si consiente en su entrega y, si diere el consentimiento, el Juez Central de Instrucción dictará auto acordando la entrega a la Corte sin más trámites y sin que sea necesario que la Corte remita la documentación relacionada con la solicitud de detención y entrega."
+  ],
+  "c": 3,
+  "art": "13.1",
+  "exp": "La primera falla porque las instrucciones se transmiten al Juzgado y al <b>Ministerio del Interior</b>; la del consentimiento tardío, porque son <b>quince días</b>."
+ }
+]
