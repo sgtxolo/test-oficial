@@ -114,4 +114,13 @@ const esq = lee(FE).CLAVE_ESQ[1], sec = lee(FS).CLAVE_SEC[1];
 nuevas.forEach((n, i) => { if (!esq.includes(n.id)) esq.push(n.id); sec.forEach((a, j) => { if (a) sec[j] = a.filter(x => x !== n.id); }); sec[porArt[i]].push(n.id); });
 const pon = (f, v) => { const t = fs.readFileSync(f, 'utf8'), k = t.indexOf('[1]=') + 4; fs.writeFileSync(f, t.slice(0, k) + JSON.stringify(v) + ';' + String.fromCharCode(10)); };
 pon(FE, esq); pon(FS, sec);
+// 5) Retiradas por orden del usuario (se quitan siempre, sin renumerar las demás). 1-517: mismo enunciado que la 1-491.
+for (const id of ['1-517']) {
+  let h = fs.readFileSync('test-oficial-conocimiento.html', 'utf8'); const i = h.indexOf('{"id":"' + id + '"');
+  if (i >= 0) { let d = 0, str = false, e = false, j = i; for (; j < h.length; j++) { const c = h[j]; if (str) { if (e) e = false; else if (c === BS) e = true; else if (c === '"') str = false; continue; } if (c === '"') str = true; else if (c === '{') d++; else if (c === '}' && !--d) break; }
+    const a = h[i - 1] === ',' ? i - 1 : i; h = h.slice(0, a) + h.slice(a === i && h[j + 1] === ',' ? j + 2 : j + 1); fs.writeFileSync('test-oficial-conocimiento.html', h); }
+  for (const f of [MP, DS]) fs.writeFileSync(f, fs.readFileSync(f, 'utf8').replace(new RegExp('"' + id + '":"[^"]*",?', 'g'), ''));
+  for (const f of [MF, PE]) { const o = JSON.parse(fs.readFileSync(f, 'utf8')); delete o[id]; fs.writeFileSync(f, JSON.stringify(o, null, 1)); }
+  const e1 = lee(FE).CLAVE_ESQ[1].filter(x => x !== id), s1 = lee(FS).CLAVE_SEC[1].map(a => a && a.filter(x => x !== id)); pon(FE, e1); pon(FS, s1);
+}
 console.log('preguntas', nuevas.length, '(nuevas', pendientes.length + ')', nuevas[0].id, '→', nuevas[nuevas.length - 1].id);
