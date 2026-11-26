@@ -12,9 +12,9 @@ const fix = t => {
 const falta = [], out = [];
 for (const [k, c, art, loc, ini, fin, exp] of M.R) {
   const q = Q.find(x => x.t + ':' + x.num === k); if (!q) { falta.push(k + ' sin texto'); continue; }
-  const t = M.texto(art) || ''; const low = t.toLowerCase();
+  const t = M.directo ? ini : M.texto(art) || ''; const low = t.toLowerCase();
   const i = low.indexOf(ini.toLowerCase()); let lit = '';
-  if (i >= 0) { if (fin) { const j = low.indexOf(fin.toLowerCase(), i); if (j >= 0 && j - i < 1100) lit = t.slice(i, j + fin.length); } else { const m = /\.(?= |$)/.exec(t.slice(i + ini.length)); lit = m ? t.slice(i, i + ini.length + m.index + 1) : t.slice(i, i + 400); } }
+  if (M.directo) lit = ini; else if (i >= 0) { if (fin) { const j = low.indexOf(fin.toLowerCase(), i); if (j >= 0 && j - i < 1100) lit = t.slice(i, j + fin.length); } else { const m = /\.(?= |$)/.exec(t.slice(i + ini.length)); lit = m ? t.slice(i, i + ini.length + m.index + 1) : t.slice(i, i + 400); } }
   if (!lit) falta.push(k + ' ' + art + (i < 0 ? ' inicio' : ' fin') + ' «' + (i < 0 ? ini : fin) + '»');
   lit = lit.replace(/[;,:]$/, '').replace(/"/g, '»').trim();
   out.push({ n: k, en: fix(q.en), op: q.op.map(fix), c, art: M.pieza(art), loc, norma: M.norma, apartado: M.apartado, lit: lit.charAt(0).toUpperCase() + lit.slice(1), exp });
