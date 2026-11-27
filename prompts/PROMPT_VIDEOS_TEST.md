@@ -52,9 +52,20 @@ Modelo ya hecho: `prompts/herramientas/oficiales-seras-t1b.js` + `oficiales-sera
 
 - La respuesta sale del temario del usuario: esquema de `esquemas.html` (y `esquemas-datos/tN.js`), temario subrayado `expres-subrayado/` y `prompts/temario-limpio/temaN/`. PDF escaneado: `C:\Users\ruben\Desktop\OFICIAL 2026-27\TEMARIO ESCANEADO 2026-27\`. Nunca de memoria.
 - Banco oficial del tema, ids `T-N` a continuación del último; `apartado` = nombre de la norma. Detectar el tema y la norma de cada pregunta.
-- Explicación, formato fijo:
-  `<span class="ex-resp">Respuesta correcta: <b>B</b> · <mark class="ex-key">respuesta</mark></span><span class="ref-norma">Art. X.Y · Nombre de la norma</span><span class="ref-concepto">"literal del temario"</span>Explicación breve de por qué es esa y por qué fallan las otras.`
-  (lila = artículo, rojo = párrafo literal, sin letras de opciones en el texto de la explicación porque la app baraja; el origen lo añade la app).
+- Explicación, formato fijo y **siempre en este orden** (usuario, 28/11/2026):
+  1. **Respuesta correcta**, resaltada.
+  2. **En lila**, el artículo y la norma.
+  3. **En rojo**, el **párrafo completo** del temario donde está la respuesta.
+  4. **Explicación breve de la IA**, en texto normal: por qué es esa y por qué fallan las otras.
+
+  `<span class="ex-resp">Respuesta correcta: <b>B</b> · <mark class="ex-key">respuesta</mark></span><span class="ref-norma">Art. X.Y · Nombre de la norma</span><span class="ref-concepto">"párrafo completo y literal del temario"</span>Explicación breve.`
+  (sin letras de opciones en la explicación porque la app baraja; el origen lo añade la app).
+- **Qué es «párrafo completo»** (nunca solo el trozo que responde, ni una frase recortada, ni «(…)»):
+  - El apartado o párrafo entero, desde su primera palabra hasta su punto final, con todas sus frases.
+  - Si la respuesta es una letra o un número de una lista, la frase que introduce la lista y la lista entera de ese apartado.
+  - Si las opciones salen de varios párrafos («señale la INCORRECTA», «todas son correctas»), todos esos párrafos enteros.
+  - Copiado del temario del usuario, limpiando solo los defectos del escaneado (palabras partidas, cabeceras y pies de página). Si el párrafo cruza de página, unirlo entero.
+  - Antes de subir: `node prompts/herramientas/comprobar-citas.js N` en «OK» y revisar que cada cita en rojo empieza y acaba donde empieza y acaba el párrafo en el temario.
 - Los tres enlaces deben funcionar:
   - **Esquema**: párrafo exacto en `prompts/herramientas/temaN/mapa-fijo-tN.json` y `esquemas-datos/mapa-preguntas.js` (sin regenerar entero). **Ninguna pregunta se queda sin enlace**: si el párrafo no está en el esquema, se añade literal desde el temario (modelo `prompts/herramientas/oficiales-seras-parrafos.js`) sin descolocar los enlaces existentes. Antes de decir que un texto no está, buscarlo también repartido en varios párrafos.
   - **Subrayado**: `expres-subrayado/tN-preg-extra.json` y `datos-tN.js`. Si falta el artículo, recortarlo del PDF con `expres-subrayado-anadir-piezas.py` (usar `/c/Users/ruben/bin/py`), revisar la imagen y añadir la pieza a `datos-tN.js`. Páginas tachadas o MOD no se usan.
