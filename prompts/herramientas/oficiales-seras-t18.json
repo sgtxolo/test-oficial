@@ -14,7 +14,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "Si el error fuera vencible, se aplicará la pena inferior en uno o dos grados",
-  "exp": "El error <b>vencible sobre la ilicitud</b> rebaja la pena en uno o dos grados; el vencible sobre un hecho constitutivo se castiga, en su caso, como imprudencia."
+  "exp": "El error <b>vencible sobre la ilicitud</b> rebaja la pena en uno o dos grados; el vencible sobre un hecho constitutivo se castiga, en su caso, como imprudencia.",
+  "cita": [
+   "1. El error invencible sobre un hecho constitutivo de la infracción penal excluye la responsabilidad criminal. Si el error, atendidas las circunstancias del hecho y las personales del autor, fuera vencible, la infracción será castigada, en su caso, como imprudente.",
+   "2. El error sobre un hecho que cualifique la infracción o sobre una circunstancia agravante, impedirá su apreciación.",
+   "3. El error invencible sobre la ilicitud del hecho constitutivo de la infracción penal excluye la responsabilidad criminal. Si el error fuera vencible, se aplicará la pena inferior en uno o dos grados."
+  ]
  },
  {
   "n": "q:2",
@@ -31,7 +36,22 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Circunstancias que Modifican la Responsabilidad Criminal",
   "lit": "Prevalerse del carácter público que tenga el culpable",
-  "exp": "La agravante es prevalerse del carácter público que tenga el <b>culpable</b>, no la víctima."
+  "exp": "La agravante es prevalerse del carácter público que tenga el <b>culpable</b>, no la víctima.",
+  "cita": [
+   "Son circunstancias agravantes:",
+   "1.ª Ejecutar el hecho con alevosía.",
+   "Hay alevosía cuando el culpable comete cualquiera de los delitos contra las personas empleando en la ejecución medios, modos o formas que tiendan directa o especialmente a asegurarla, sin el riesgo que para su persona pudiera proceder de la defensa por parte del ofendido.",
+   "2.ª Ejecutar el hecho mediante disfraz, con abuso de superioridad o aprovechando las circunstancias de lugar, tiempo o auxilio de otras personas que debiliten la defensa del ofendido o faciliten la impunidad del delincuente.",
+   "3.ª Ejecutar el hecho mediante precio, recompensa o promesa.",
+   "4.ª Cometer el delito por motivos racistas, antisemitas, antigitanos u otra clase de discriminación referente a la ideología, religión o creencias de la víctima, la etnia, raza o nación a la que pertenezca, su sexo, edad, orientación o identidad sexual o de género, razones de género, de aporofobia o de exclusión social, la enfermedad que padezca o su discapacidad, con independencia de que tales condiciones o circunstancias concurran efectivamente en la persona sobre la que recaiga la conducta.",
+   "5.ª Aumentar deliberada e inhumanamente el sufrimiento de la víctima, causando a ésta padecimientos innecesarios para la ejecución del delito.",
+   "6.ª Obrar con abuso de confianza.",
+   "7.ª Prevalerse del carácter público que tenga el culpable.",
+   "8.ª Ser reincidente.",
+   "Hay reincidencia cuando, al delinquir, el culpable haya sido condenado ejecutoriamente por un delito comprendido en el mismo título de este código, siempre que sea de la misma naturaleza.",
+   "A los efectos de este número no se computarán los antecedentes penales cancelados o que debieran serlo, ni los que correspondan a delitos leves, salvo lo dispuesto para los tipos agravados por multirreincidencia de delitos leves.",
+   "Las condenas firmes de jueces o tribunales impuestas en otros Estados de la Unión Europea producirán los efectos de reincidencia salvo que el antecedente penal haya sido cancelado o pudiera serlo con arreglo al Derecho español."
+  ]
  },
  {
   "n": "q:3",
@@ -48,7 +68,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "En todo caso, tendrán la consideración de autoridad los miembros del Congreso de los Diputados, del Senado, de las Asambleas Legislativas de las Comunidades Autónomas y del Parlamento Europeo. Tendrán también la consideración de autoridad los funcionarios del Ministerio Fiscal y los Fiscales de la Fiscalía Europea.",
-  "exp": "Parlamentarios europeos, Fiscales de la Fiscalía Europea y quien tiene mando o jurisdicción propia: todos son autoridad."
+  "exp": "Parlamentarios europeos, Fiscales de la Fiscalía Europea y quien tiene mando o jurisdicción propia: todos son autoridad.",
+  "cita": [
+   "1. A los efectos penales se reputará autoridad al que por sí solo o como miembro de alguna corporación, tribunal u órgano colegiado tenga mando o ejerza jurisdicción propia. En todo caso, tendrán la consideración de autoridad los miembros del Congreso de los Diputados, del Senado, de las Asambleas Legislativas de las Comunidades Autónomas y del Parlamento Europeo. Tendrán también la consideración de autoridad los funcionarios del Ministerio Fiscal y los Fiscales de la Fiscalía Europea."
+  ]
  },
  {
   "n": "q:4",
@@ -65,7 +88,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Aunque no concurran en él las condiciones, cualidades o relaciones que la correspondiente figura de delito requiera para poder ser sujeto activo del mismo, si tales circunstancias se dan en la entidad o persona en cuyo nombre o representación obre",
-  "exp": "Responde quien actúa por otro si las cualidades exigidas <b>se dan</b> en la persona o entidad representada."
+  "exp": "Responde quien actúa por otro si las cualidades exigidas <b>se dan</b> en la persona o entidad representada.",
+  "cita": [
+   "El que actúe como administrador de hecho o de derecho de una persona jurídica, o en nombre o representación legal o voluntaria de otro, responderá personalmente, aunque no concurran en él las condiciones, cualidades o relaciones que la correspondiente figura de delito requiera para poder ser sujeto activo del mismo, si tales circunstancias se dan en la entidad o persona en cuyo nombre o representación obre."
+  ]
  },
  {
   "n": "q:5",
@@ -82,7 +108,16 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "Son medidas no privativas de libertad: 1.ª) La inhabilitación profesional. 2.ª) La expulsión del territorio nacional de extranjeros no residentes legalmente en España.",
-  "exp": "La expulsión de extranjeros no residentes legalmente es una <b>medida de seguridad no privativa de libertad</b>."
+  "exp": "La expulsión de extranjeros no residentes legalmente es una <b>medida de seguridad no privativa de libertad</b>.",
+  "cita": [
+   "3. Son medidas no privativas de libertad:",
+   "1.ª) La inhabilitación profesional.",
+   "2.ª) La expulsión del territorio nacional de extranjeros no residentes legalmente en España.",
+   "3.ª) La libertad vigilada",
+   "4.ª) La custodia familiar. El sometido a esta medida quedará sujeto al cuidado y vigilancia del familiar que se designe y que acepte la custodia, quien la ejercerá en relación con el Juez de Vigilancia Penitenciaria y sin menoscabo de las actividades escolares o laborales del custodiado.",
+   "5.ª) La privación del derecho a conducir vehículos a motor y ciclomotores.",
+   "6.ª) La privación del derecho a la tenencia y porte de armas."
+  ]
  },
  {
   "n": "q:6",
@@ -99,7 +134,21 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "Las inhabilitaciones especiales por tiempo superior a cinco años",
-  "exp": "Las inhabilitaciones especiales <b>hasta cinco años</b> son penas menos graves; solo las superiores son graves."
+  "exp": "Las inhabilitaciones especiales <b>hasta cinco años</b> son penas menos graves; solo las superiores son graves.",
+  "cita": [
+   "2. Son penas graves:",
+   "a) La prisión permanente revisable.",
+   "b) La prisión superior a cinco años.",
+   "c) La inhabilitación absoluta.",
+   "d) Las inhabilitaciones especiales por tiempo superior a cinco años.",
+   "e) La suspensión de empleo o cargo público por tiempo superior a cinco años.",
+   "f) La privación del derecho a conducir vehículos a motor y ciclomotores por tiempo superior a ocho años.",
+   "g) La privación del derecho a la tenencia y porte de armas por tiempo superior a ocho años.",
+   "h) La privación del derecho a residir en determinados lugares o acudir a ellos, por tiempo superior a cinco años.",
+   "i) La prohibición de aproximarse a la víctima o a aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo superior a cinco años.",
+   "j) La prohibición de comunicarse con la víctima o con aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo superior a cinco años.",
+   "k) La privación de la patria potestad."
+  ]
  },
  {
   "n": "q:7",
@@ -116,7 +165,16 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Responsabilidad Civil Derivada de los Delitos y de las Costas Procesales",
   "lit": "La exención de la responsabilidad criminal declarada en los números 1.º, 2.º, 3.º, 5.º y 6.º del artículo 20, no comprende la de la responsabilidad civil",
-  "exp": "La ley enumera como supuestos que no eximen de la civil los números 1, 2, 3, 5 y 6 del art. 20; el <b>cumplimiento de un deber</b> (n.º 7) no está entre ellos."
+  "exp": "La ley enumera como supuestos que no eximen de la civil los números 1, 2, 3, 5 y 6 del art. 20; el <b>cumplimiento de un deber</b> (n.º 7) no está entre ellos.",
+  "cita": [
+   "1. La exención de la responsabilidad criminal declarada en los números 1.º, 2.º, 3.º, 5.º y 6.º del artículo 20, no comprende la de la responsabilidad civil, que se hará efectiva conforme a las reglas siguientes:",
+   "1.ª En los casos de los números 1.º y 3.º, son también responsables por los hechos que ejecuten los declarados exentos de responsabilidad penal, quienes ejerzan su apoyo legal o de hecho, siempre que haya mediado culpa o negligencia por su parte y sin perjuicio de la responsabilidad civil directa que pudiera corresponder a los inimputables.",
+   "Los Jueces o Tribunales graduarán de forma equitativa la medida en que deba responder con sus bienes cada uno de dichos sujetos.",
+   "2.ª Son igualmente responsables el ebrio y el intoxicado en el supuesto del número 2.º",
+   "3.ª En el caso del número 5.º serán responsables civiles directos las personas en cuyo favor se haya precavido el mal, en proporción al perjuicio que se les haya evitado, si fuera estimable o, en otro caso, en la que el Juez o Tribunal establezca según su prudente arbitrio.",
+   "Cuando las cuotas de que deba responder el interesado no sean equitativamente asignables por el Juez o Tribunal, ni siquiera por aproximación, o cuando la responsabilidad se extienda a las Administraciones Públicas o a la mayor parte de una población y, en todo caso, siempre que el daño se haya causado con asentimiento de la autoridad o de sus agentes, se acordará, en su caso, la indemnización en la forma que establezcan las leyes y reglamentos especiales.",
+   "4.ª En el caso del número 6.º, responderán principalmente los que hayan causado el miedo, y en defecto de ellos, los que hayan ejecutado el hecho."
+  ]
  },
  {
   "n": "q:8",
@@ -133,7 +191,29 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Consecuencias Accesorias",
   "lit": "Delitos relativos a las insolvencias punibles. f) Delitos contra la propiedad intelectual o industrial",
-  "exp": "La lista del decomiso ampliado incluye insolvencias, malversación y tráfico de órganos, pero <b>no</b> los delitos contra las personas."
+  "exp": "La lista del decomiso ampliado incluye insolvencias, malversación y tráfico de órganos, pero <b>no</b> los delitos contra las personas.",
+  "cita": [
+   "1. El juez o tribunal ordenará también el decomiso de los bienes, efectos y ganancias pertenecientes a una persona condenada por alguno de los siguientes delitos cuando resuelva, a partir de indicios objetivos fundados, que los bienes o efectos provienen de una actividad delictiva, y no se acredite su origen lícito:",
+   "a) Delitos de trata de seres humanos.",
+   "a bis) Delitos de tráfico de órganos.",
+   "b) Delitos relativos a la prostitución y a la explotación sexual y corrupción de menores y delitos de abusos y agresiones sexuales a menores de dieciséis años.",
+   "c) Delitos informáticos de los apartados 2 y 3 del artículo 197 y artículo 264.",
+   "d) Delitos contra el patrimonio y contra el orden socioeconómico en los supuestos de continuidad delictiva y reincidencia.",
+   "e) Delitos relativos a las insolvencias punibles.",
+   "f) Delitos contra la propiedad intelectual o industrial.",
+   "g) Delitos de corrupción en los negocios.",
+   "h) Delitos de receptación del apartado 2 del artículo 298.",
+   "i) Delitos de blanqueo de capitales.",
+   "j) Delitos contra la Hacienda pública y la Seguridad Social.",
+   "k) Delitos contra los derechos de los trabajadores de los artículos 311 a 313.",
+   "l) Delitos contra los derechos de los ciudadanos extranjeros.",
+   "m) Delitos contra la salud pública de los artículos 368 a 373.",
+   "n) Delitos de falsificación de moneda.",
+   "o) Delitos de cohecho.",
+   "p) Delitos de malversación.",
+   "q) Delitos de terrorismo.",
+   "r) Delitos cometidos en el seno de una organización o grupo criminal."
+  ]
  },
  {
   "n": "q:9",
@@ -150,7 +230,18 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Extinción de la Responsabilidad Criminal y sus Efectos",
   "lit": "En los delitos cometidos contra personas menores de edad o personas con discapacidad necesitadas de especial protección que afecten a bienes jurídicos eminentemente personales, el perdón de la persona ofendida no extingue la responsabilidad criminal",
-  "exp": "El perdón no extingue la responsabilidad en delitos contra menores o personas con discapacidad solo cuando afecten a <b>bienes eminentemente personales</b>, no «en todo caso»."
+  "exp": "El perdón no extingue la responsabilidad en delitos contra menores o personas con discapacidad solo cuando afecten a <b>bienes eminentemente personales</b>, no «en todo caso».",
+  "cita": [
+   "1. La responsabilidad criminal se extingue:",
+   "1.º Por la muerte del reo.",
+   "2.º Por el cumplimiento de la condena.",
+   "3.º Por la remisión definitiva de la pena, conforme a lo dispuesto en los apartados 1 y 2 del artículo 87.",
+   "4.º Por la amnistía o el indulto.",
+   "5.º Por el perdón de la persona ofendida, cuando se trate de delitos leves perseguibles a instancias de la persona agraviada o la ley así lo prevea. El perdón habrá de ser otorgado de forma expresa antes de que se haya dictado sentencia, a cuyo efecto la autoridad judicial sentenciadora deberá oír a la persona ofendida por el delito antes de dictarla.",
+   "En los delitos cometidos contra personas menores de edad o personas con discapacidad necesitadas de especial protección que afecten a bienes jurídicos eminentemente personales, el perdón de la persona ofendida no extingue la responsabilidad criminal.",
+   "6.º Por la prescripción del delito.",
+   "7.º Por la prescripción de la pena o de la medida de seguridad."
+  ]
  },
  {
   "n": "q:10",
@@ -167,7 +258,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Extinción de la Responsabilidad Criminal y sus Efectos",
   "lit": "Las medidas de seguridad prescribirán a los diez años, si fueran privativas de libertad superiores a tres años, y a los cinco años si fueran privativas de libertad iguales o inferiores a tres años o tuvieran otro contenido.",
-  "exp": "Privativas de libertad de <b>más de tres años prescriben a los diez</b>; las demás, a los cinco."
+  "exp": "Privativas de libertad de <b>más de tres años prescriben a los diez</b>; las demás, a los cinco.",
+  "cita": [
+   "1. Las medidas de seguridad prescribirán a los diez años, si fueran privativas de libertad superiores a tres años, y a los cinco años si fueran privativas de libertad iguales o inferiores a tres años o tuvieran otro contenido.",
+   "2. El tiempo de la prescripción se computará desde el día en que haya quedado firme la resolución en la que se impuso la medida o, en caso de cumplimiento sucesivo, desde que debió empezar a cumplirse.",
+   "3. Si el cumplimiento de una medida de seguridad fuere posterior al de una pena, el plazo se computará desde la extinción de ésta."
+  ]
  },
  {
   "n": "q:11",
@@ -184,7 +280,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "Cuando el omitente haya creado una ocasión de riesgo para el bien jurídicamente protegido mediante una acción u omisión precedente",
-  "exp": "La ley exige una acción u omisión <b>precedente</b>, no «posterior»."
+  "exp": "La ley exige una acción u omisión <b>precedente</b>, no «posterior».",
+  "cita": [
+   "Los delitos que consistan en la producción de un resultado sólo se entenderán cometidos por omisión cuando la no evitación del mismo, al infringir un especial deber jurídico del autor, equivalga, según el sentido del texto de la ley, a su causación. A tal efecto se equiparará la omisión a la acción:",
+   "a) Cuando exista una específica obligación legal o contractual de actuar.",
+   "b) Cuando el omitente haya creado una ocasión de riesgo para el bien jurídicamente protegido mediante una acción u omisión precedente."
+  ]
  },
  {
   "n": "q:12",
@@ -201,7 +302,14 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Los que realmente hayan redactado el texto o producido el signo de que se trate, y quienes les hayan inducido a realizarlo. 2.º Los directores de la publicación o programa en que se difunda. 3.º Los directores de la empresa editora, emisora o difusora. 4.º Los directores de la empresa grabadora, reproductora o impresora.",
-  "exp": "Primero responden quienes redactan o producen (y sus inductores), después directores de la publicación, de la editora o difusora y por último de la grabadora o impresora."
+  "exp": "Primero responden quienes redactan o producen (y sus inductores), después directores de la publicación, de la editora o difusora y por último de la grabadora o impresora.",
+  "cita": [
+   "2. Los autores a los que se refiere el artículo 28 responderán de forma escalonada, excluyente y subsidiaria de acuerdo con el siguiente orden:",
+   "1.º Los que realmente hayan redactado el texto o producido el signo de que se trate, y quienes les hayan inducido a realizarlo.",
+   "2.º Los directores de la publicación o programa en que se difunda.",
+   "3.º Los directores de la empresa editora, emisora o difusora.",
+   "4.º Los directores de la empresa grabadora, reproductora o impresora."
+  ]
  },
  {
   "n": "q:13",
@@ -218,7 +326,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "No responderán criminalmente ni los cómplices ni quienes los hubieren favorecido personal o realmente",
-  "exp": "En medios de difusión mecánicos <b>no responden</b> los cómplices ni quienes hayan favorecido personal o realmente."
+  "exp": "En medios de difusión mecánicos <b>no responden</b> los cómplices ni quienes hayan favorecido personal o realmente.",
+  "cita": [
+   "1. En los delitos que se cometan utilizando medios o soportes de difusión mecánicos no responderán criminalmente ni los cómplices ni quienes los hubieren favorecido personal o realmente."
+  ]
  },
  {
   "n": "q:14",
@@ -235,7 +346,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "En el caso de las Sociedades mercantiles públicas que ejecuten políticas públicas o presten servicios de interés económico general, solamente les podrán ser impuestas las penas previstas en las letras a) y g) del apartado 7 del artículo 33.",
-  "exp": "Solo caben la <b>multa</b> (por cuotas o proporcional) y la intervención judicial, esta última por no más de cinco años."
+  "exp": "Solo caben la <b>multa</b> (por cuotas o proporcional) y la intervención judicial, esta última por no más de cinco años.",
+  "cita": [
+   "2. En el caso de las Sociedades mercantiles públicas que ejecuten políticas públicas o presten servicios de interés económico general, solamente les podrán ser impuestas las penas previstas en las letras a) y g) del apartado 7 del artículo 33. Esta limitación no será aplicable cuando el juez o tribunal aprecie que se trata de una forma jurídica creada por sus promotores, fundadores, administradores o representantes con el propósito de eludir una eventual responsabilidad penal."
+  ]
  },
  {
   "n": "q:15",
@@ -252,7 +366,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "Cuando se trate de una medida de seguridad privativa de libertad o de una medida de libertad vigilada que deba ejecutarse después del cumplimiento de una pena privativa de libertad, el Juez de Vigilancia Penitenciaria estará obligado a elevar al menos anualmente, una propuesta de mantenimiento, cese, sustitución o suspensión de la misma",
-  "exp": "La propuesta anual obliga en las privativas de libertad y en la libertad vigilada posterior a la pena de prisión."
+  "exp": "La propuesta anual obliga en las privativas de libertad y en la libertad vigilada posterior a la pena de prisión.",
+  "cita": [
+   "1. A los efectos del artículo anterior, cuando se trate de una medida de seguridad privativa de libertad o de una medida de libertad vigilada que deba ejecutarse después del cumplimiento de una pena privativa de libertad, el Juez de Vigilancia Penitenciaria estará obligado a elevar al menos anualmente, una propuesta de mantenimiento, cese, sustitución o suspensión de la misma. Para formular dicha propuesta el Juez de Vigilancia Penitenciaria deberá valorar los informes emitidos por los facultativos y profesionales que asistan al sometido a medida de seguridad o por las Administraciones Públicas competentes y, en su caso, el resultado de las demás actuaciones que a este fin ordene."
+  ]
  },
  {
   "n": "q:16",
@@ -269,7 +386,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Responsabilidad Civil Derivada de los Delitos y de las Costas Procesales",
   "lit": "La responsabilidad penal de una persona jurídica llevará consigo su responsabilidad civil en los términos establecidos en el artículo 110 de este Código de forma solidaria con las personas físicas que fueren condenadas por los mismos hechos.",
-  "exp": "La responsabilidad civil es <b>solidaria</b> con las personas físicas condenadas por los mismos hechos."
+  "exp": "La responsabilidad civil es <b>solidaria</b> con las personas físicas condenadas por los mismos hechos.",
+  "cita": [
+   "3. La responsabilidad penal de una persona jurídica llevará consigo su responsabilidad civil en los términos establecidos en el artículo 110 de este Código de forma solidaria con las personas físicas que fueren condenadas por los mismos hechos."
+  ]
  },
  {
   "n": "q:17",
@@ -286,7 +406,15 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Responsabilidad Civil Derivada de los Delitos y de las Costas Procesales",
   "lit": "Son también responsables civilmente, en defecto de los que lo sean criminalmente: 1.º Los curadores con facultades de representación plena que convivan con la persona a quien prestan apoyo, siempre que haya por su parte culpa o negligencia.",
-  "exp": "El artículo cita a los <b>curadores</b> con representación plena, no a padres o tutores respecto de mayores de edad."
+  "exp": "El artículo cita a los <b>curadores</b> con representación plena, no a padres o tutores respecto de mayores de edad.",
+  "cita": [
+   "Son también responsables civilmente, en defecto de los que lo sean criminalmente:",
+   "1.º Los curadores con facultades de representación plena que convivan con la persona a quien prestan apoyo, siempre que haya por su parte culpa o negligencia.",
+   "2.º Las personas naturales o jurídicas titulares de editoriales, periódicos, revistas, estaciones de radio o televisión o de cualquier otro medio de difusión escrita, hablada o visual, por los delitos cometidos utilizando los medios de los que sean titulares, dejando a salvo lo dispuesto en el artículo 212.",
+   "3.º Las personas naturales o jurídicas, en los casos de delitos cometidos en los establecimientos de los que sean titulares, cuando por parte de los que los dirijan o administren, o de sus dependientes o empleados, se hayan infringido los reglamentos de policía o las disposiciones de la autoridad que estén relacionados con el hecho punible cometido, de modo que éste no se hubiera producido sin dicha infracción.",
+   "4.º Las personas naturales o jurídicas dedicadas a cualquier género de industria o comercio, por los delitos que hayan cometido sus empleados o dependientes, representantes o gestores en el desempeño de sus obligaciones o servicios.",
+   "5.º Las personas naturales o jurídicas titulares de vehículos susceptibles de crear riesgos para terceros, por los delitos cometidos en la utilización de aquellos por sus dependientes o representantes o personas autorizadas."
+  ]
  },
  {
   "n": "q:18",
@@ -303,7 +431,18 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Consecuencias Accesorias",
   "lit": "La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de personas físicas o jurídicas o entes sin personalidad jurídica interpuestos, o paraísos fiscales o territorios de nula tributación que oculten o dificulten la determinación de la verdadera titularidad de los bienes.",
-  "exp": "El indicio es la ocultación mediante personas interpuestas o paraísos fiscales <b>que dificulten determinar la titularidad</b>; los ingresos de referencia son los de origen <b>lícito</b>."
+  "exp": "El indicio es la ocultación mediante personas interpuestas o paraísos fiscales <b>que dificulten determinar la titularidad</b>; los ingresos de referencia son los de origen <b>lícito</b>.",
+  "cita": [
+   "1. Los jueces y tribunales podrán acordar también el decomiso de bienes, efectos y ganancias provenientes de la actividad delictiva previa del condenado, cuando se cumplan, cumulativamente, los siguientes requisitos:",
+   "a) Que el sujeto sea o haya sido condenado por alguno de los delitos a que se refiere el artículo 127 bis.1 del Código Penal.",
+   "b) Que el delito se haya cometido en el contexto de una actividad delictiva previa continuada.",
+   "c) Que existan indicios fundados de que una parte relevante del patrimonio del penado procede de una actividad delictiva previa.",
+   "Son indicios relevantes:",
+   "1.º La desproporción entre el valor de los bienes y efectos de que se trate y los ingresos de origen lícito de la persona condenada.",
+   "2.º La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de personas físicas o jurídicas o entes sin personalidad jurídica interpuestos, o paraísos fiscales o territorios de nula tributación que oculten o dificulten la determinación de la verdadera titularidad de los bienes.",
+   "3.º La transferencia de los bienes o efectos mediante operaciones que dificulten o impidan su localización o destino y que carezcan de una justificación legal o económica válida.",
+   "Lo dispuesto en el párrafo anterior solamente será de aplicación cuando consten indicios fundados de que el sujeto ha obtenido, a partir de su actividad delictiva, un beneficio superior a 6.000 euros."
+  ]
  },
  {
   "n": "q:19",
@@ -320,7 +459,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Extinción de la Responsabilidad Criminal y sus Efectos",
   "lit": "En los casos de delito continuado, delito permanente, así como en las infracciones que exijan habitualidad, tales términos se computarán, respectivamente, desde el día en que se realizó la última infracción, desde que se eliminó la situación ilícita o desde que cesó la conducta.",
-  "exp": "Las tres reglas sobre el inicio del cómputo son correctas: mayoría de edad, 35 años y cese de la conducta habitual."
+  "exp": "Las tres reglas sobre el inicio del cómputo son correctas: mayoría de edad, 35 años y cese de la conducta habitual.",
+  "cita": [
+   "1. Los términos previstos en el artículo precedente se computarán desde el día en que se haya cometido la infracción punible. En los casos de delito continuado, delito permanente, así como en las infracciones que exijan habitualidad, tales términos se computarán, respectivamente, desde el día en que se realizó la última infracción, desde que se eliminó la situación ilícita o desde que cesó la conducta.",
+   "En los delitos de aborto no consentido, lesiones, contra la libertad, de torturas y contra la integridad moral, contra la intimidad, el derecho a la propia imagen y la inviolabilidad del domicilio, y contra las relaciones familiares, excluidos los delitos contemplados en el párrafo siguiente, cuando la víctima fuere una persona menor de dieciocho años, los términos se computarán desde el día en que ésta haya alcanzado la mayoría de edad, y si falleciere antes de alcanzarla, a partir de la fecha del fallecimiento.",
+   "En los delitos de tentativa de homicidio, de lesiones de los artículos 149 y 150, en el delito de maltrato habitual previsto en el artículo 173.2, en los delitos contra la libertad sexual y en los delitos de trata de seres humanos, cuando la víctima fuere una persona menor de dieciocho años, los términos se computarán desde que la víctima cumpla los treinta y cinco años de edad, y si falleciere antes de alcanzar esa edad, a partir de la fecha del fallecimiento."
+  ]
  },
  {
   "n": "q:20",
@@ -337,7 +481,14 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "Título Preliminar: De las Garantías Penales y de la Aplicación de la Ley Penal",
   "lit": "El precepto subsidiario se aplicará sólo en defecto del principal, ya se declare expresamente dicha subsidiariedad, ya sea ésta tácitamente deducible.",
-  "exp": "La subsidiariedad puede declararse expresamente <b>o deducirse tácitamente</b>."
+  "exp": "La subsidiariedad puede declararse expresamente <b>o deducirse tácitamente</b>.",
+  "cita": [
+   "Los hechos susceptibles de ser calificados con arreglo a dos o más preceptos de este Código, y no comprendidos en los artículos 73 a 77, se castigarán observando las siguientes reglas:",
+   "1.ª El precepto especial se aplicará con preferencia al general.",
+   "2.ª El precepto subsidiario se aplicará sólo en defecto del principal, ya se declare expresamente dicha subsidiariedad, ya sea ésta tácitamente deducible.",
+   "3.ª El precepto penal más amplio o complejo absorberá a los que castiguen las infracciones consumidas en aquél.",
+   "4.ª En defecto de los criterios anteriores, el precepto penal más grave excluirá los que castiguen el hecho con pena menor."
+  ]
  },
  {
   "n": "q:21",
@@ -354,7 +505,13 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "La provocación se castigará exclusivamente en los casos en que la Ley así lo prevea. Si a la provocación hubiese seguido la perpetración del delito, se castigará como inducción.",
-  "exp": "La provocación es punible en los casos previstos aunque no se llegue a cometer el delito; si se comete, se castiga como inducción."
+  "exp": "La provocación es punible en los casos previstos aunque no se llegue a cometer el delito; si se comete, se castiga como inducción.",
+  "cita": [
+   "1. La provocación existe cuando directamente se incita por medio de la imprenta, la radiodifusión o cualquier otro medio de eficacia semejante, que facilite la publicidad, o ante una concurrencia de personas, a la perpetración de un delito.",
+   "Es apología, a los efectos de este Código, la exposición, ante una concurrencia de personas o por cualquier medio de difusión, de ideas o doctrinas que ensalcen el crimen o enaltezcan a su autor. La apología sólo será delictiva como forma de provocación y si por su naturaleza y circunstancias constituye una incitación directa a cometer un delito.",
+   "2. La provocación se castigará exclusivamente en los casos en que la Ley así lo prevea.",
+   "Si a la provocación hubiese seguido la perpetración del delito, se castigará como inducción."
+  ]
  },
  {
   "n": "q:22",
@@ -371,7 +528,17 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Circunstancias que Modifican la Responsabilidad Criminal",
   "lit": "La de actuar el culpable a causa de su grave adicción a las sustancias mencionadas en el número 2.º del artículo anterior.",
-  "exp": "La atenuante exige una <b>grave</b> adicción."
+  "exp": "La atenuante exige una <b>grave</b> adicción.",
+  "cita": [
+   "Son circunstancias atenuantes:",
+   "1.ª Las causas expresadas en el capítulo anterior, cuando no concurrieren todos los requisitos necesarios para eximir de responsabilidad en sus respectivos casos.",
+   "2.ª La de actuar el culpable a causa de su grave adicción a las sustancias mencionadas en el número 2.º del artículo anterior.",
+   "3.ª La de obrar por causas o estímulos tan poderosos que hayan producido arrebato, obcecación u otro estado pasional de entidad semejante.",
+   "4.ª La de haber procedido el culpable, antes de conocer que el procedimiento judicial se dirige contra él, a confesar la infracción a las autoridades.",
+   "5.ª La de haber procedido el culpable a reparar el daño ocasionado a la víctima, o disminuir sus efectos, en cualquier momento del procedimiento y con anterioridad a la celebración del acto del juicio oral.",
+   "6.ª La dilación extraordinaria e indebida en la tramitación del procedimiento, siempre que no sea atribuible al propio inculpado y que no guarde proporción con la complejidad de la causa.",
+   "7.ª Cualquier otra circunstancia de análoga significación que las anteriores."
+  ]
  },
  {
   "n": "q:23",
@@ -388,7 +555,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "Se considera documento todo soporte material que exprese o incorpore datos, hechos o narraciones con eficacia probatoria o cualquier otro tipo de relevancia jurídica.",
-  "exp": "Soporte que exprese o incorpore datos, hechos o narraciones con eficacia probatoria o relevancia jurídica: todas son correctas."
+  "exp": "Soporte que exprese o incorpore datos, hechos o narraciones con eficacia probatoria o relevancia jurídica: todas son correctas.",
+  "cita": [
+   "A los efectos de este Código se considera documento todo soporte material que exprese o incorpore datos, hechos o narraciones con eficacia probatoria o cualquier otro tipo de relevancia jurídica."
+  ]
  },
  {
   "n": "q:24",
@@ -405,7 +575,13 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "También serán considerados autores: a) Los que inducen directamente a otro u otros a ejecutarlo. b) Los que cooperan a su ejecución con un acto sin el cual no se habría efectuado.",
-  "exp": "También son autores los <b>inductores</b> y los cooperadores necesarios; cómplices y encubridores no."
+  "exp": "También son autores los <b>inductores</b> y los cooperadores necesarios; cómplices y encubridores no.",
+  "cita": [
+   "Son autores quienes realizan el hecho por sí solos, conjuntamente o por medio de otro del que se sirven como instrumento.",
+   "También serán considerados autores:",
+   "a) Los que inducen directamente a otro u otros a ejecutarlo.",
+   "b) Los que cooperan a su ejecución con un acto sin el cual no se habría efectuado."
+  ]
  },
  {
   "n": "q:25",
@@ -422,7 +598,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Las disposiciones relativas a la responsabilidad penal de las personas jurídicas no serán aplicables al Estado, a las Administraciones públicas territoriales e institucionales, a los Organismos Reguladores, las Agencias y Entidades públicas Empresariales, a las organizaciones internacionales de derecho público, ni a aquellas otras que ejerzan potestades públicas de soberanía o administrativas.",
-  "exp": "Los <b>partidos políticos</b> no están entre las entidades excluidas."
+  "exp": "Los <b>partidos políticos</b> no están entre las entidades excluidas.",
+  "cita": [
+   "1. Las disposiciones relativas a la responsabilidad penal de las personas jurídicas no serán aplicables al Estado, a las Administraciones públicas territoriales e institucionales, a los Organismos Reguladores, las Agencias y Entidades públicas Empresariales, a las organizaciones internacionales de derecho público, ni a aquellas otras que ejerzan potestades públicas de soberanía o administrativas."
+  ]
  },
  {
   "n": "q:26",
@@ -439,7 +618,13 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "No se reputarán penas: 1. La detención y prisión preventiva y las demás medidas cautelares de naturaleza penal. 2. Las multas y demás correcciones que, en uso de atribuciones gubernativas o disciplinarias, se impongan a los subordinados o administrados. 3. Las privaciones de derechos y las sanciones reparadoras que establezcan las leyes civiles o administrativas.",
-  "exp": "Medidas cautelares, correcciones disciplinarias y privaciones civiles o administrativas <b>no son penas</b>."
+  "exp": "Medidas cautelares, correcciones disciplinarias y privaciones civiles o administrativas <b>no son penas</b>.",
+  "cita": [
+   "No se reputarán penas:",
+   "1. La detención y prisión preventiva y las demás medidas cautelares de naturaleza penal.",
+   "2. Las multas y demás correcciones que, en uso de atribuciones gubernativas o disciplinarias, se impongan a los subordinados o administrados.",
+   "3. Las privaciones de derechos y las sanciones reparadoras que establezcan las leyes civiles o administrativas."
+  ]
  },
  {
   "n": "q:27",
@@ -456,7 +641,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "La pena de multa se impondrá, salvo que la Ley disponga otra cosa, por el sistema de días-multa. 3. Su extensión mínima será de diez días y la máxima de dos años. Las penas de multa imponibles a personas jurídicas tendrán una extensión máxima de cinco años.",
-  "exp": "Sistema de días-multa, extensión de diez días a dos años (cinco en personas jurídicas) y aplazamiento de hasta dos años: todo correcto."
+  "exp": "Sistema de días-multa, extensión de diez días a dos años (cinco en personas jurídicas) y aplazamiento de hasta dos años: todo correcto.",
+  "cita": [
+   "2. La pena de multa se impondrá, salvo que la Ley disponga otra cosa, por el sistema de días-multa.",
+   "3. Su extensión mínima será de diez días y la máxima de dos años. Las penas de multa imponibles a personas jurídicas tendrán una extensión máxima de cinco años.",
+   "6. El tribunal, por causa justificada, podrá autorizar el pago de la multa dentro de un plazo que no exceda de dos años desde la firmeza de la sentencia, bien de una vez o en los plazos que se determinen. En este caso, el impago de dos de ellos determinará el vencimiento de los restantes."
+  ]
  },
  {
   "n": "q:28",
@@ -473,7 +663,16 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Responsabilidad Civil Derivada de los Delitos y de las Costas Procesales",
   "lit": "La exención de la responsabilidad criminal declarada en los números 1.º, 2.º, 3.º, 5.º y 6.º del artículo 20, no comprende la de la responsabilidad civil",
-  "exp": "La legítima defensa (n.º 4) no figura entre los supuestos que dejan subsistente la responsabilidad civil."
+  "exp": "La legítima defensa (n.º 4) no figura entre los supuestos que dejan subsistente la responsabilidad civil.",
+  "cita": [
+   "1. La exención de la responsabilidad criminal declarada en los números 1.º, 2.º, 3.º, 5.º y 6.º del artículo 20, no comprende la de la responsabilidad civil, que se hará efectiva conforme a las reglas siguientes:",
+   "1.ª En los casos de los números 1.º y 3.º, son también responsables por los hechos que ejecuten los declarados exentos de responsabilidad penal, quienes ejerzan su apoyo legal o de hecho, siempre que haya mediado culpa o negligencia por su parte y sin perjuicio de la responsabilidad civil directa que pudiera corresponder a los inimputables.",
+   "Los Jueces o Tribunales graduarán de forma equitativa la medida en que deba responder con sus bienes cada uno de dichos sujetos.",
+   "2.ª Son igualmente responsables el ebrio y el intoxicado en el supuesto del número 2.º",
+   "3.ª En el caso del número 5.º serán responsables civiles directos las personas en cuyo favor se haya precavido el mal, en proporción al perjuicio que se les haya evitado, si fuera estimable o, en otro caso, en la que el Juez o Tribunal establezca según su prudente arbitrio.",
+   "Cuando las cuotas de que deba responder el interesado no sean equitativamente asignables por el Juez o Tribunal, ni siquiera por aproximación, o cuando la responsabilidad se extienda a las Administraciones Públicas o a la mayor parte de una población y, en todo caso, siempre que el daño se haya causado con asentimiento de la autoridad o de sus agentes, se acordará, en su caso, la indemnización en la forma que establezcan las leyes y reglamentos especiales.",
+   "4.ª En el caso del número 6.º, responderán principalmente los que hayan causado el miedo, y en defecto de ellos, los que hayan ejecutado el hecho."
+  ]
  },
  {
   "n": "q:29",
@@ -490,7 +689,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "Podrá acordar la sustitución de la quebrantada por la de internamiento si ésta estuviese prevista para el supuesto de que se trate y si el quebrantamiento demostrase su necesidad",
-  "exp": "Cabe sustituirla por internamiento si estaba <b>prevista</b> y el quebrantamiento demuestra su <b>necesidad</b>."
+  "exp": "Cabe sustituirla por internamiento si estaba <b>prevista</b> y el quebrantamiento demuestra su <b>necesidad</b>.",
+  "cita": [
+   "2. Si se tratare de otras medidas, el juez o tribunal podrá acordar la sustitución de la quebrantada por la de internamiento si ésta estuviese prevista para el supuesto de que se trate y si el quebrantamiento demostrase su necesidad."
+  ]
  },
  {
   "n": "q:30",
@@ -507,7 +709,19 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Aplicación de las Penas",
   "lit": "Cuando concurra sólo una circunstancia atenuante, aplicarán la pena en la mitad inferior de la que fije la ley para el delito.",
-  "exp": "Con una sola atenuante la pena va en la <b>mitad inferior</b>, no en el grado inferior."
+  "exp": "Con una sola atenuante la pena va en la <b>mitad inferior</b>, no en el grado inferior.",
+  "cita": [
+   "1. En la aplicación de la pena, tratándose de delitos dolosos, los jueces o tribunales observarán, según haya o no circunstancias atenuantes o agravantes, las siguientes reglas:",
+   "1.ª Cuando concurra sólo una circunstancia atenuante, aplicarán la pena en la mitad inferior de la que fije la ley para el delito.",
+   "2.ª Cuando concurran dos o más circunstancias atenuantes, o una o varias muy cualificadas, y no concurra agravante alguna, aplicarán la pena inferior en uno o dos grados a la establecida por la ley, atendidos el número y la entidad de dichas circunstancias atenuantes.",
+   "3.ª Cuando concurra sólo una o dos circunstancias agravantes, aplicarán la pena en la mitad superior de la que fije la ley para el delito.",
+   "4.ª Cuando concurran más de dos circunstancias agravantes y no concurra atenuante alguna, podrán aplicar la pena superior en grado a la establecida por la ley, en su mitad inferior.",
+   "5.ª Cuando concurra la circunstancia agravante de reincidencia con la cualificación de que el culpable al delinquir hubiera sido condenado ejecutoriamente, al menos, por tres delitos comprendidos en el mismo título de este Código, siempre que sean de la misma naturaleza, podrán aplicar la pena superior en grado a la prevista por la ley para el delito de que se trate, teniendo en cuenta las condenas precedentes, así como la gravedad del nuevo delito cometido.",
+   "A los efectos de esta regla no se computarán los antecedentes penales cancelados o que debieran serlo.",
+   "6.ª Cuando no concurran atenuantes ni agravantes aplicarán la pena establecida por la ley para el delito cometido, en la extensión que estimen adecuada, en atención a las circunstancias personales del delincuente y a la mayor o menor gravedad del hecho.",
+   "7.ª Cuando concurran atenuantes y agravantes, las valorarán y compensarán racionalmente para la individualización de la pena. En el caso de persistir un fundamento cualificado de atenuación aplicarán la pena inferior en grado. Si se mantiene un fundamento cualificado de agravación, aplicarán la pena en su mitad superior.",
+   "8.ª Cuando los jueces o tribunales apliquen la pena inferior en más de un grado podrán hacerlo en toda su extensión."
+  ]
  },
  {
   "n": "q:31",
@@ -524,7 +738,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "Si el error, atendidas las circunstancias del hecho y las personales del autor, fuera vencible, la infracción será castigada, en su caso, como imprudente.",
-  "exp": "Se castiga como imprudente «<b>en su caso</b>», no «en todo caso»."
+  "exp": "Se castiga como imprudente «<b>en su caso</b>», no «en todo caso».",
+  "cita": [
+   "1. El error invencible sobre un hecho constitutivo de la infracción penal excluye la responsabilidad criminal. Si el error, atendidas las circunstancias del hecho y las personales del autor, fuera vencible, la infracción será castigada, en su caso, como imprudente.",
+   "2. El error sobre un hecho que cualifique la infracción o sobre una circunstancia agravante, impedirá su apreciación.",
+   "3. El error invencible sobre la ilicitud del hecho constitutivo de la infracción penal excluye la responsabilidad criminal. Si el error fuera vencible, se aplicará la pena inferior en uno o dos grados."
+  ]
  },
  {
   "n": "q:32",
@@ -541,7 +760,22 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Circunstancias que Modifican la Responsabilidad Criminal",
   "lit": "Hay alevosía cuando el culpable comete cualquiera de los delitos contra las personas empleando en la ejecución medios, modos o formas que tiendan directa o especialmente a asegurarla, sin el riesgo que para su persona pudiera proceder de la defensa por parte del ofendido.",
-  "exp": "La alevosía asegura el delito contra las personas <b>sin riesgo</b> procedente de la defensa del ofendido."
+  "exp": "La alevosía asegura el delito contra las personas <b>sin riesgo</b> procedente de la defensa del ofendido.",
+  "cita": [
+   "Son circunstancias agravantes:",
+   "1.ª Ejecutar el hecho con alevosía.",
+   "Hay alevosía cuando el culpable comete cualquiera de los delitos contra las personas empleando en la ejecución medios, modos o formas que tiendan directa o especialmente a asegurarla, sin el riesgo que para su persona pudiera proceder de la defensa por parte del ofendido.",
+   "2.ª Ejecutar el hecho mediante disfraz, con abuso de superioridad o aprovechando las circunstancias de lugar, tiempo o auxilio de otras personas que debiliten la defensa del ofendido o faciliten la impunidad del delincuente.",
+   "3.ª Ejecutar el hecho mediante precio, recompensa o promesa.",
+   "4.ª Cometer el delito por motivos racistas, antisemitas, antigitanos u otra clase de discriminación referente a la ideología, religión o creencias de la víctima, la etnia, raza o nación a la que pertenezca, su sexo, edad, orientación o identidad sexual o de género, razones de género, de aporofobia o de exclusión social, la enfermedad que padezca o su discapacidad, con independencia de que tales condiciones o circunstancias concurran efectivamente en la persona sobre la que recaiga la conducta.",
+   "5.ª Aumentar deliberada e inhumanamente el sufrimiento de la víctima, causando a ésta padecimientos innecesarios para la ejecución del delito.",
+   "6.ª Obrar con abuso de confianza.",
+   "7.ª Prevalerse del carácter público que tenga el culpable.",
+   "8.ª Ser reincidente.",
+   "Hay reincidencia cuando, al delinquir, el culpable haya sido condenado ejecutoriamente por un delito comprendido en el mismo título de este código, siempre que sea de la misma naturaleza.",
+   "A los efectos de este número no se computarán los antecedentes penales cancelados o que debieran serlo, ni los que correspondan a delitos leves, salvo lo dispuesto para los tipos agravados por multirreincidencia de delitos leves.",
+   "Las condenas firmes de jueces o tribunales impuestas en otros Estados de la Unión Europea producirán los efectos de reincidencia salvo que el antecedente penal haya sido cancelado o pudiera serlo con arreglo al Derecho español."
+  ]
  },
  {
   "n": "q:33",
@@ -558,7 +792,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "Título Preliminar: De las Garantías Penales y de la Aplicación de la Ley Penal",
   "lit": "Las medidas de seguridad se fundamentan en la peligrosidad criminal del sujeto al que se impongan, exteriorizada en la comisión de un hecho previsto como delito.",
-  "exp": "Fundamento: la <b>peligrosidad criminal</b> exteriorizada en un hecho previsto como delito."
+  "exp": "Fundamento: la <b>peligrosidad criminal</b> exteriorizada en un hecho previsto como delito.",
+  "cita": [
+   "1. Las medidas de seguridad se fundamentan en la peligrosidad criminal del sujeto al que se impongan, exteriorizada en la comisión de un hecho previsto como delito."
+  ]
  },
  {
   "n": "q:34",
@@ -575,7 +812,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Aplicación de las Penas",
   "lit": "En los delitos leves y en los delitos imprudentes, los jueces o tribunales aplicarán las reglas a su prudente arbitrio",
-  "exp": "En delitos <b>leves e imprudentes</b> la pena se impone a prudente arbitrio."
+  "exp": "En delitos <b>leves e imprudentes</b> la pena se impone a prudente arbitrio.",
+  "cita": [
+   "2. En los delitos leves y en los delitos imprudentes, los jueces o tribunales aplicarán las reglas a su prudente arbitrio, sin sujetarse a las reglas prescritas en el apartado anterior, salvo lo dispuesto para los tipos agravados por multirreincidencia de delitos leves."
+  ]
  },
  {
   "n": "q:35",
@@ -592,7 +832,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Aplicación de las Penas",
   "lit": "Al mayor de dieciocho años y menor de veintiuno que cometa un hecho delictivo, podrán aplicársele las disposiciones de la ley que regule la responsabilidad penal del menor en los casos y con los requisitos que ésta disponga.",
-  "exp": "La franja es de <b>18 a 21 años</b>."
+  "exp": "La franja es de <b>18 a 21 años</b>.",
+  "cita": [
+   "Al mayor de dieciocho años y menor de veintiuno que cometa un hecho delictivo, podrán aplicársele las disposiciones de la ley que regule la responsabilidad penal del menor en los casos y con los requisitos que ésta disponga."
+  ]
  },
  {
   "n": "q:36",
@@ -609,7 +852,18 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Consecuencias Accesorias",
   "lit": "Que el sujeto sea o haya sido condenado por alguno de los delitos a que se refiere el artículo 127 bis.1 del Código Penal. b) Que el delito se haya cometido en el contexto de una actividad delictiva previa continuada. c) Que existan indicios fundados de que una parte relevante del patrimonio del penado procede de una actividad delictiva previa.",
-  "exp": "Los tres requisitos son condena por delito del art. 127 bis, actividad previa continuada e indicios; no se exige un límite de pena."
+  "exp": "Los tres requisitos son condena por delito del art. 127 bis, actividad previa continuada e indicios; no se exige un límite de pena.",
+  "cita": [
+   "1. Los jueces y tribunales podrán acordar también el decomiso de bienes, efectos y ganancias provenientes de la actividad delictiva previa del condenado, cuando se cumplan, cumulativamente, los siguientes requisitos:",
+   "a) Que el sujeto sea o haya sido condenado por alguno de los delitos a que se refiere el artículo 127 bis.1 del Código Penal.",
+   "b) Que el delito se haya cometido en el contexto de una actividad delictiva previa continuada.",
+   "c) Que existan indicios fundados de que una parte relevante del patrimonio del penado procede de una actividad delictiva previa.",
+   "Son indicios relevantes:",
+   "1.º La desproporción entre el valor de los bienes y efectos de que se trate y los ingresos de origen lícito de la persona condenada.",
+   "2.º La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de personas físicas o jurídicas o entes sin personalidad jurídica interpuestos, o paraísos fiscales o territorios de nula tributación que oculten o dificulten la determinación de la verdadera titularidad de los bienes.",
+   "3.º La transferencia de los bienes o efectos mediante operaciones que dificulten o impidan su localización o destino y que carezcan de una justificación legal o económica válida.",
+   "Lo dispuesto en el párrafo anterior solamente será de aplicación cuando consten indicios fundados de que el sujeto ha obtenido, a partir de su actividad delictiva, un beneficio superior a 6.000 euros."
+  ]
  },
  {
   "n": "q:37",
@@ -626,7 +880,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "Cuando en un hecho intervengan varios sujetos, quedarán exentos de responsabilidad penal aquél o aquéllos que desistan de la ejecución ya iniciada, e impidan o intenten impedir, seria, firme y decididamente, la consumación, sin perjuicio de la responsabilidad en que pudieran haber incurrido por los actos ejecutados, si éstos fueren ya constitutivos de otro delito.",
-  "exp": "Quedan exentos quienes desisten e impiden o intentan impedir seriamente la consumación."
+  "exp": "Quedan exentos quienes desisten e impiden o intentan impedir seriamente la consumación.",
+  "cita": [
+   "3. Cuando en un hecho intervengan varios sujetos, quedarán exentos de responsabilidad penal aquél o aquéllos que desistan de la ejecución ya iniciada, e impidan o intenten impedir, seria, firme y decididamente, la consumación, sin perjuicio de la responsabilidad en que pudieran haber incurrido por los actos ejecutados, si éstos fueren ya constitutivos de otro delito."
+  ]
  },
  {
   "n": "q:38",
@@ -643,7 +900,14 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "Título Preliminar: De las Garantías Penales y de la Aplicación de la Ley Penal",
   "lit": "El precepto subsidiario se aplicará sólo en defecto del principal, ya se declare expresamente dicha subsidiariedad, ya sea ésta tácitamente deducible.",
-  "exp": "El subsidiario se aplica en defecto del principal tanto si la subsidiariedad se declara expresamente como si se deduce; la opción dice lo contrario."
+  "exp": "El subsidiario se aplica en defecto del principal tanto si la subsidiariedad se declara expresamente como si se deduce; la opción dice lo contrario.",
+  "cita": [
+   "Los hechos susceptibles de ser calificados con arreglo a dos o más preceptos de este Código, y no comprendidos en los artículos 73 a 77, se castigarán observando las siguientes reglas:",
+   "1.ª El precepto especial se aplicará con preferencia al general.",
+   "2.ª El precepto subsidiario se aplicará sólo en defecto del principal, ya se declare expresamente dicha subsidiariedad, ya sea ésta tácitamente deducible.",
+   "3.ª El precepto penal más amplio o complejo absorberá a los que castiguen las infracciones consumidas en aquél.",
+   "4.ª En defecto de los criterios anteriores, el precepto penal más grave excluirá los que castiguen el hecho con pena menor."
+  ]
  },
  {
   "n": "q:39",
@@ -660,7 +924,14 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Haber colaborado en la investigación del hecho aportando pruebas, en cualquier momento del proceso, que fueran nuevas y decisivas para esclarecer las responsabilidades penales dimanantes de los hechos.",
-  "exp": "La colaboración vale en cualquier momento; confesar exige hacerlo <b>antes</b> de conocer el procedimiento y las medidas, antes del juicio oral."
+  "exp": "La colaboración vale en cualquier momento; confesar exige hacerlo <b>antes</b> de conocer el procedimiento y las medidas, antes del juicio oral.",
+  "cita": [
+   "1. Sólo podrán considerarse circunstancias atenuantes de la responsabilidad penal de las personas jurídicas haber realizado, con posterioridad a la comisión del delito y a través de sus representantes legales, las siguientes actividades:",
+   "a) Haber procedido, antes de conocer que el procedimiento judicial se dirige contra ella, a confesar la infracción a las autoridades.",
+   "b) Haber colaborado en la investigación del hecho aportando pruebas, en cualquier momento del proceso, que fueran nuevas y decisivas para esclarecer las responsabilidades penales dimanantes de los hechos.",
+   "c) Haber procedido en cualquier momento del procedimiento y con anterioridad al juicio oral a reparar o disminuir el daño causado por el delito.",
+   "d) Haber establecido, antes del comienzo del juicio oral, medidas eficaces para prevenir y descubrir los delitos que en el futuro pudieran cometerse con los medios o bajo la cobertura de la persona jurídica."
+  ]
  },
  {
   "n": "q:40",
@@ -677,7 +948,13 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Consecuencias Accesorias",
   "lit": "El juez o tribunal podrá acordar el decomiso previsto en los artículos anteriores aunque no medie sentencia de condena, cuando la situación patrimonial ilícita quede acreditada en un proceso contradictorio",
-  "exp": "Sin condena cabe el decomiso si la situación patrimonial <b>ilícita</b> queda acreditada en proceso contradictorio."
+  "exp": "Sin condena cabe el decomiso si la situación patrimonial <b>ilícita</b> queda acreditada en proceso contradictorio.",
+  "cita": [
+   "1. El juez o tribunal podrá acordar el decomiso previsto en los artículos anteriores aunque no medie sentencia de condena, cuando la situación patrimonial ilícita quede acreditada en un proceso contradictorio y se trate de alguno de los siguientes supuestos:",
+   "a) Que el sujeto haya fallecido o sufra una enfermedad crónica que impida su enjuiciamiento y exista el riesgo de que puedan prescribir los hechos,",
+   "b) se encuentre en rebeldía y ello impida que los hechos puedan ser enjuiciados dentro de un plazo razonable, o",
+   "c) no se le imponga pena por estar exento de responsabilidad criminal o por haberse ésta extinguido."
+  ]
  },
  {
   "n": "q:41",
@@ -694,7 +971,34 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "La privación del derecho a la tenencia y porte de armas de un año y un día a ocho años",
-  "exp": "La privación del derecho a armas es menos grave a partir de <b>un año y un día</b>; hasta un año es leve."
+  "exp": "La privación del derecho a armas es menos grave a partir de <b>un año y un día</b>; hasta un año es leve.",
+  "cita": [
+   "2. Son penas graves:",
+   "a) La prisión permanente revisable.",
+   "b) La prisión superior a cinco años.",
+   "c) La inhabilitación absoluta.",
+   "d) Las inhabilitaciones especiales por tiempo superior a cinco años.",
+   "e) La suspensión de empleo o cargo público por tiempo superior a cinco años.",
+   "f) La privación del derecho a conducir vehículos a motor y ciclomotores por tiempo superior a ocho años.",
+   "g) La privación del derecho a la tenencia y porte de armas por tiempo superior a ocho años.",
+   "h) La privación del derecho a residir en determinados lugares o acudir a ellos, por tiempo superior a cinco años.",
+   "i) La prohibición de aproximarse a la víctima o a aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo superior a cinco años.",
+   "j) La prohibición de comunicarse con la víctima o con aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo superior a cinco años.",
+   "k) La privación de la patria potestad.",
+   "3. Son penas menos graves:",
+   "a) La prisión de tres meses hasta cinco años.",
+   "b) Las inhabilitaciones especiales hasta cinco años.",
+   "c) La suspensión de empleo o cargo público hasta cinco años.",
+   "d) La privación del derecho a conducir vehículos a motor y ciclomotores de un año y un día a ocho años.",
+   "e) La privación del derecho a la tenencia y porte de armas de un año y un día a ocho años.",
+   "f) Inhabilitación especial para el ejercicio de profesión, oficio o comercio que tenga relación con los animales y para la tenencia de animales de un año y un día a cinco años.",
+   "g) La privación del derecho a residir en determinados lugares o acudir a ellos, por tiempo de seis meses a cinco años.",
+   "h) La prohibición de aproximarse a la víctima o a aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo de seis meses a cinco años.",
+   "i) La prohibición de comunicarse con la víctima o con aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo de seis meses a cinco años.",
+   "j) La multa de más de tres meses.",
+   "k) La multa proporcional, cualquiera que fuese su cuantía, salvo lo dispuesto en el apartado 7 de este artículo.",
+   "l) Los trabajos en beneficio de la comunidad de treinta y un días a un año."
+  ]
  },
  {
   "n": "q:42",
@@ -711,7 +1015,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "Hay tentativa cuando el sujeto da principio a la ejecución del delito directamente por hechos exteriores, practicando todos o parte de los actos que objetivamente deberían producir el resultado, y sin embargo éste no se produce por causas independientes de la voluntad del autor.",
-  "exp": "Inicio <b>directo</b> de la ejecución, practicando todos o parte de los actos que objetivamente deberían producir el resultado."
+  "exp": "Inicio <b>directo</b> de la ejecución, practicando todos o parte de los actos que objetivamente deberían producir el resultado.",
+  "cita": [
+   "1. Hay tentativa cuando el sujeto da principio a la ejecución del delito directamente por hechos exteriores, practicando todos o parte de los actos que objetivamente deberían producir el resultado, y sin embargo éste no se produce por causas independientes de la voluntad del autor."
+  ]
  },
  {
   "n": "q:43",
@@ -728,7 +1035,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Consecuencias Accesorias",
   "lit": "Se presumirá, salvo prueba en contrario, que el tercero ha conocido o ha tenido motivos para sospechar que se trataba de bienes procedentes de una actividad ilícita o que eran transferidos para evitar su decomiso, cuando los bienes o efectos le hubieran sido transferidos a título gratuito o por un precio inferior al real de mercado.",
-  "exp": "Se presume en transmisiones <b>gratuitas</b> o por precio inferior (no superior) al de mercado."
+  "exp": "Se presume en transmisiones <b>gratuitas</b> o por precio inferior (no superior) al de mercado.",
+  "cita": [
+   "2. Se presumirá, salvo prueba en contrario, que el tercero ha conocido o ha tenido motivos para sospechar que se trataba de bienes procedentes de una actividad ilícita o que eran transferidos para evitar su decomiso, cuando los bienes o efectos le hubieran sido transferidos a título gratuito o por un precio inferior al real de mercado."
+  ]
  },
  {
   "n": "q:44",
@@ -745,7 +1055,14 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "Clasificación del condenado en el tercer grado deberá ser autorizada por el tribunal previo pronóstico individualizado y favorable de reinserción social, oídos el Ministerio Fiscal e Instituciones Penitenciarias",
-  "exp": "La clasificación en tercer grado la autoriza el <b>tribunal</b>."
+  "exp": "La clasificación en tercer grado la autoriza el <b>tribunal</b>.",
+  "cita": [
+   "1. La pena de prisión permanente será revisada de conformidad con lo dispuesto en el artículo 92.",
+   "La clasificación del condenado en el tercer grado deberá ser autorizada por el tribunal previo pronóstico individualizado y favorable de reinserción social, oídos el Ministerio Fiscal e Instituciones Penitenciarias, y no podrá efectuarse:",
+   "a) Hasta el cumplimiento de veinte años de prisión efectiva, en el caso de que el penado lo hubiera sido por un delito del Capítulo VII del Título XXII del Libro II de este Código.",
+   "b) Hasta el cumplimiento de quince años de prisión efectiva, en el resto de los casos.",
+   "En estos supuestos, el penado no podrá disfrutar de permisos de salida hasta que haya cumplido un mínimo de doce años de prisión, en el caso previsto en la letra a), y ocho años de prisión, en el previsto en la letra b)."
+  ]
  },
  {
   "n": "q:45",
@@ -762,7 +1079,11 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "Título Preliminar: De las Garantías Penales y de la Aplicación de la Ley Penal",
   "lit": "Las medidas de seguridad se fundamentan en la peligrosidad criminal del sujeto al que se impongan, exteriorizada en la comisión de un hecho previsto como delito.",
-  "exp": "La peligrosidad se exterioriza en un <b>hecho previsto como delito</b>; no se habla de omisión de actos obligados."
+  "exp": "La peligrosidad se exterioriza en un <b>hecho previsto como delito</b>; no se habla de omisión de actos obligados.",
+  "cita": [
+   "1. Las medidas de seguridad se fundamentan en la peligrosidad criminal del sujeto al que se impongan, exteriorizada en la comisión de un hecho previsto como delito.",
+   "2. Las medidas de seguridad no pueden resultar ni más gravosas ni de mayor duración que la pena abstractamente aplicable al hecho cometido, ni exceder el límite de lo necesario para prevenir la peligrosidad del autor."
+  ]
  },
  {
   "n": "q:46",
@@ -779,7 +1100,21 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "La obligación de estar siempre localizable mediante aparatos electrónicos que permitan su seguimiento permanente. b) La obligación de presentarse periódicamente en el lugar que el Juez o Tribunal establezca. c) La de comunicar inmediatamente, en el plazo máximo y por el medio que el Juez o Tribunal señale a tal efecto, cada cambio del lugar de residencia o del lugar o puesto de trabajo. d) La prohibición de ausentarse del lugar donde resida o de un determinado territorio sin autorización del Juez o Tribunal. e) La prohibición de aproximarse a la víctima, o a aquellos de sus familiares u otras personas que determine el Juez o Tribunal. f) La prohibición de comunicarse con la víctima, o con aquellos de sus familiares u otras personas que determine el Juez o Tribunal. g) La prohibición de acudir a determinados territorios, lugares o establecimientos. h) La prohibición de residir en determinados lugares. i) La prohibición de desempeñar determinadas actividades que puedan ofrecerle o facilitarle la ocasión para cometer hechos delictivos de similar naturaleza. j) La obligación de participar en programas formativos, laborales, culturales, de educación sexual u otros similares. k) La obligación de seguir tratamiento médico externo, o de someterse a un control médico periódico.",
-  "exp": "La libertad vigilada no incluye la prohibición de tenencia y porte de armas."
+  "exp": "La libertad vigilada no incluye la prohibición de tenencia y porte de armas.",
+  "cita": [
+   "1. La libertad vigilada consistirá en el sometimiento del condenado a control judicial a través del cumplimiento por su parte de alguna o algunas de las siguientes medidas:",
+   "a) La obligación de estar siempre localizable mediante aparatos electrónicos que permitan su seguimiento permanente.",
+   "b) La obligación de presentarse periódicamente en el lugar que el Juez o Tribunal establezca.",
+   "c) La de comunicar inmediatamente, en el plazo máximo y por el medio que el Juez o Tribunal señale a tal efecto, cada cambio del lugar de residencia o del lugar o puesto de trabajo.",
+   "d) La prohibición de ausentarse del lugar donde resida o de un determinado territorio sin autorización del Juez o Tribunal.",
+   "e) La prohibición de aproximarse a la víctima, o a aquellos de sus familiares u otras personas que determine el Juez o Tribunal.",
+   "f) La prohibición de comunicarse con la víctima, o con aquellos de sus familiares u otras personas que determine el Juez o Tribunal.",
+   "g) La prohibición de acudir a determinados territorios, lugares o establecimientos.",
+   "h) La prohibición de residir en determinados lugares.",
+   "i) La prohibición de desempeñar determinadas actividades que puedan ofrecerle o facilitarle la ocasión para cometer hechos delictivos de similar naturaleza.",
+   "j) La obligación de participar en programas formativos, laborales, culturales, de educación sexual u otros similares.",
+   "k) La obligación de seguir tratamiento médico externo, o de someterse a un control médico periódico."
+  ]
  },
  {
   "n": "q:47",
@@ -796,7 +1131,14 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Extinción de la Responsabilidad Criminal y sus Efectos",
   "lit": "Los delitos leves y los delitos de injurias y calumnias, que prescriben al año",
-  "exp": "Los delitos leves prescriben <b>al año</b>."
+  "exp": "Los delitos leves prescriben <b>al año</b>.",
+  "cita": [
+   "1. Los delitos prescriben:",
+   "A los veinte años, cuando la pena máxima señalada al delito sea prisión de quince o más años.",
+   "A los quince, cuando la pena máxima señalada por la ley sea inhabilitación por más de diez años, o prisión por más de diez y menos de quince años.",
+   "A los diez, cuando la pena máxima señalada por la ley sea prisión o inhabilitación por más de cinco años y que no exceda de diez.",
+   "A los cinco, los demás delitos, excepto los delitos leves y los delitos de injurias y calumnias, que prescriben al año."
+  ]
  },
  {
   "n": "q:48",
@@ -813,7 +1155,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Son cómplices los que, no hallándose comprendidos en el artículo anterior, cooperan a la ejecución del hecho con actos anteriores o simultáneos.",
-  "exp": "Cómplice: no siendo autor, coopera con actos <b>anteriores o simultáneos</b>."
+  "exp": "Cómplice: no siendo autor, coopera con actos <b>anteriores o simultáneos</b>.",
+  "cita": [
+   "Son cómplices los que, no hallándose comprendidos en el artículo anterior, cooperan a la ejecución del hecho con actos anteriores o simultáneos."
+  ]
  },
  {
   "n": "q:49",
@@ -830,7 +1175,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Responsabilidad Civil Derivada de los Delitos y de las Costas Procesales",
   "lit": "Toda persona criminalmente responsable de un delito lo es también civilmente si del hecho se derivaren daños o perjuicios.",
-  "exp": "Lo es civilmente <b>si del hecho se derivan daños o perjuicios</b>."
+  "exp": "Lo es civilmente <b>si del hecho se derivan daños o perjuicios</b>.",
+  "cita": [
+   "1. Toda persona criminalmente responsable de un delito lo es también civilmente si del hecho se derivaren daños o perjuicios. Si son dos o más los responsables de un delito los jueces o tribunales señalarán la cuota de que deba responder cada uno."
+  ]
  },
  {
   "n": "q:50",
@@ -847,7 +1195,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "El error sobre un hecho que cualifique la infracción o sobre una circunstancia agravante, impedirá su apreciación.",
-  "exp": "El error sobre una agravante <b>impide apreciarla</b>."
+  "exp": "El error sobre una agravante <b>impide apreciarla</b>.",
+  "cita": [
+   "2. El error sobre un hecho que cualifique la infracción o sobre una circunstancia agravante, impedirá su apreciación."
+  ]
  },
  {
   "n": "q:51",
@@ -864,7 +1215,17 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Circunstancias que Modifican la Responsabilidad Criminal",
   "lit": "La de haber procedido el culpable a reparar el daño ocasionado a la víctima, o disminuir sus efectos, en cualquier momento del procedimiento y con anterioridad a la celebración del acto del juicio oral.",
-  "exp": "La reparación antes del juicio oral es atenuante. La opción de la confesión omite «a las autoridades» y la de dilaciones exige que <b>no</b> guarden proporción."
+  "exp": "La reparación antes del juicio oral es atenuante. La opción de la confesión omite «a las autoridades» y la de dilaciones exige que <b>no</b> guarden proporción.",
+  "cita": [
+   "Son circunstancias atenuantes:",
+   "1.ª Las causas expresadas en el capítulo anterior, cuando no concurrieren todos los requisitos necesarios para eximir de responsabilidad en sus respectivos casos.",
+   "2.ª La de actuar el culpable a causa de su grave adicción a las sustancias mencionadas en el número 2.º del artículo anterior.",
+   "3.ª La de obrar por causas o estímulos tan poderosos que hayan producido arrebato, obcecación u otro estado pasional de entidad semejante.",
+   "4.ª La de haber procedido el culpable, antes de conocer que el procedimiento judicial se dirige contra él, a confesar la infracción a las autoridades.",
+   "5.ª La de haber procedido el culpable a reparar el daño ocasionado a la víctima, o disminuir sus efectos, en cualquier momento del procedimiento y con anterioridad a la celebración del acto del juicio oral.",
+   "6.ª La dilación extraordinaria e indebida en la tramitación del procedimiento, siempre que no sea atribuible al propio inculpado y que no guarde proporción con la complejidad de la causa.",
+   "7.ª Cualquier otra circunstancia de análoga significación que las anteriores."
+  ]
  },
  {
   "n": "q:52",
@@ -881,7 +1242,16 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "Son medidas no privativas de libertad: 1.ª) La inhabilitación profesional. 2.ª) La expulsión del territorio nacional de extranjeros no residentes legalmente en España. 3.ª) La libertad vigilada 4.ª) La custodia familiar",
-  "exp": "La inhabilitación absoluta es una <b>pena</b>, no una medida de seguridad."
+  "exp": "La inhabilitación absoluta es una <b>pena</b>, no una medida de seguridad.",
+  "cita": [
+   "3. Son medidas no privativas de libertad:",
+   "1.ª) La inhabilitación profesional.",
+   "2.ª) La expulsión del territorio nacional de extranjeros no residentes legalmente en España.",
+   "3.ª) La libertad vigilada",
+   "4.ª) La custodia familiar. El sometido a esta medida quedará sujeto al cuidado y vigilancia del familiar que se designe y que acepte la custodia, quien la ejercerá en relación con el Juez de Vigilancia Penitenciaria y sin menoscabo de las actividades escolares o laborales del custodiado.",
+   "5.ª) La privación del derecho a conducir vehículos a motor y ciclomotores.",
+   "6.ª) La privación del derecho a la tenencia y porte de armas."
+  ]
  },
  {
   "n": "q:53",
@@ -898,7 +1268,19 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "Las penas aplicables a las personas jurídicas, que tienen todas la consideración de graves, son las siguientes",
-  "exp": "Las penas de las personas jurídicas tienen <b>todas la consideración de graves</b>."
+  "exp": "Las penas de las personas jurídicas tienen <b>todas la consideración de graves</b>.",
+  "cita": [
+   "7. Las penas aplicables a las personas jurídicas, que tienen todas la consideración de graves, son las siguientes:",
+   "a) Multa por cuotas o proporcional.",
+   "b) Disolución de la persona jurídica. La disolución producirá la pérdida definitiva de su personalidad jurídica, así como la de su capacidad de actuar de cualquier modo en el tráfico jurídico, o llevar a cabo cualquier clase de actividad, aunque sea lícita.",
+   "c) Suspensión de sus actividades por un plazo que no podrá exceder de cinco años.",
+   "d) Clausura de sus locales y establecimientos por un plazo que no podrá exceder de cinco años.",
+   "e) Prohibición de realizar en el futuro las actividades en cuyo ejercicio se haya cometido, favorecido o encubierto el delito. Esta prohibición podrá ser temporal o definitiva. Si fuere temporal, el plazo no podrá exceder de quince años.",
+   "f) Inhabilitación para obtener subvenciones y ayudas públicas, para contratar con el sector público y para gozar de beneficios e incentivos fiscales o de la Seguridad Social, por un plazo que no podrá exceder de quince años.",
+   "g) Intervención judicial para salvaguardar los derechos de los trabajadores o de los acreedores por el tiempo que se estime necesario, que no podrá exceder de cinco años.",
+   "La intervención podrá afectar a la totalidad de la organización o limitarse a alguna de sus instalaciones, secciones o unidades de negocio. El Juez o Tribunal, en la sentencia o, posteriormente, mediante auto, determinará exactamente el contenido de la intervención y determinará quién se hará cargo de la intervención y en qué plazos deberá realizar informes de seguimiento para el órgano judicial. La intervención se podrá modificar o suspender en todo momento previo informe del interventor y del Ministerio Fiscal. El interventor tendrá derecho a acceder a todas las instalaciones y locales de la empresa o persona jurídica y a recibir cuanta información estime necesaria para el ejercicio de sus funciones. Reglamentariamente se determinarán los aspectos relacionados con el ejercicio de la función de interventor, como la retribución o la cualificación necesaria.",
+   "La clausura temporal de los locales o establecimientos, la suspensión de las actividades sociales y la intervención judicial podrán ser acordadas también por el Juez Instructor como medida cautelar durante la instrucción de la causa."
+  ]
  },
  {
   "n": "q:55",
@@ -915,7 +1297,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Las disposiciones relativas a la responsabilidad penal de las personas jurídicas no serán aplicables al Estado, a las Administraciones públicas territoriales e institucionales, a los Organismos Reguladores, las Agencias y Entidades públicas Empresariales, a las organizaciones internacionales de derecho público, ni a aquellas otras que ejerzan potestades públicas de soberanía o administrativas.",
-  "exp": "Estado, Administraciones, reguladores, entidades empresariales y organizaciones internacionales públicas quedan fuera: todas."
+  "exp": "Estado, Administraciones, reguladores, entidades empresariales y organizaciones internacionales públicas quedan fuera: todas.",
+  "cita": [
+   "1. Las disposiciones relativas a la responsabilidad penal de las personas jurídicas no serán aplicables al Estado, a las Administraciones públicas territoriales e institucionales, a los Organismos Reguladores, las Agencias y Entidades públicas Empresariales, a las organizaciones internacionales de derecho público, ni a aquellas otras que ejerzan potestades públicas de soberanía o administrativas."
+  ]
  },
  {
   "n": "q:56",
@@ -932,7 +1317,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "Título Preliminar: De las Garantías Penales y de la Aplicación de la Ley Penal",
   "lit": "Tendrán efecto retroactivo aquellas leyes penales que favorezcan al reo, aunque al entrar en vigor hubiera recaído sentencia firme y el sujeto estuviese cumpliendo condena.",
-  "exp": "La ley favorable es retroactiva <b>aunque</b> haya sentencia firme y se esté cumpliendo condena."
+  "exp": "La ley favorable es retroactiva <b>aunque</b> haya sentencia firme y se esté cumpliendo condena.",
+  "cita": [
+   "2. No obstante, tendrán efecto retroactivo aquellas leyes penales que favorezcan al reo, aunque al entrar en vigor hubiera recaído sentencia firme y el sujeto estuviese cumpliendo condena. En caso de duda sobre la determinación de la Ley más favorable, será oído el reo. Los hechos cometidos bajo la vigencia de una Ley temporal serán juzgados, sin embargo, conforme a ella, salvo que se disponga expresamente lo contrario."
+  ]
  },
  {
   "n": "q:57",
@@ -949,7 +1337,13 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "La apología sólo será delictiva como forma de provocación y si por su naturaleza y circunstancias constituye una incitación directa a cometer un delito.",
-  "exp": "La apología solo es delictiva como forma de <b>provocación</b>, no de proposición."
+  "exp": "La apología solo es delictiva como forma de <b>provocación</b>, no de proposición.",
+  "cita": [
+   "1. La provocación existe cuando directamente se incita por medio de la imprenta, la radiodifusión o cualquier otro medio de eficacia semejante, que facilite la publicidad, o ante una concurrencia de personas, a la perpetración de un delito.",
+   "Es apología, a los efectos de este Código, la exposición, ante una concurrencia de personas o por cualquier medio de difusión, de ideas o doctrinas que ensalcen el crimen o enaltezcan a su autor. La apología sólo será delictiva como forma de provocación y si por su naturaleza y circunstancias constituye una incitación directa a cometer un delito.",
+   "2. La provocación se castigará exclusivamente en los casos en que la Ley así lo prevea.",
+   "Si a la provocación hubiese seguido la perpetración del delito, se castigará como inducción."
+  ]
  },
  {
   "n": "q:58",
@@ -966,7 +1360,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Responsabilidad Civil Derivada de los Delitos y de las Costas Procesales",
   "lit": "La indemnización de perjuicios materiales y morales comprenderá no sólo los que se hubieren causado al agraviado, sino también los que se hubieren irrogado a sus familiares o a terceros.",
-  "exp": "Comprende también los perjuicios de <b>familiares y terceros</b>."
+  "exp": "Comprende también los perjuicios de <b>familiares y terceros</b>.",
+  "cita": [
+   "La indemnización de perjuicios materiales y morales comprenderá no sólo los que se hubieren causado al agraviado, sino también los que se hubieren irrogado a sus familiares o a terceros."
+  ]
  },
  {
   "n": "q:59",
@@ -983,7 +1380,13 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "La apología sólo será delictiva como forma de provocación y si por su naturaleza y circunstancias constituye una incitación directa a cometer un delito.",
-  "exp": "La incitación debe ser <b>directa</b>."
+  "exp": "La incitación debe ser <b>directa</b>.",
+  "cita": [
+   "1. La provocación existe cuando directamente se incita por medio de la imprenta, la radiodifusión o cualquier otro medio de eficacia semejante, que facilite la publicidad, o ante una concurrencia de personas, a la perpetración de un delito.",
+   "Es apología, a los efectos de este Código, la exposición, ante una concurrencia de personas o por cualquier medio de difusión, de ideas o doctrinas que ensalcen el crimen o enaltezcan a su autor. La apología sólo será delictiva como forma de provocación y si por su naturaleza y circunstancias constituye una incitación directa a cometer un delito.",
+   "2. La provocación se castigará exclusivamente en los casos en que la Ley así lo prevea.",
+   "Si a la provocación hubiese seguido la perpetración del delito, se castigará como inducción."
+  ]
  },
  {
   "n": "q:60",
@@ -1000,7 +1403,16 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "Por un tiempo de hasta diez años: a) Libertad vigilada, cuando expresamente lo disponga este Código. b) La privación del derecho a la tenencia y porte de armas. c) La privación del derecho a conducir vehículos a motor y ciclomotores.",
-  "exp": "La <b>custodia familiar</b> tiene un máximo de cinco años."
+  "exp": "La <b>custodia familiar</b> tiene un máximo de cinco años.",
+  "cita": [
+   "1. Por un tiempo no superior a cinco años:",
+   "a) Libertad vigilada.",
+   "b) Custodia familiar. El sometido a esta medida quedará sujeto al cuidado y vigilancia del familiar que se designe y que acepte la custodia, quien la ejercerá en relación con el Juez de Vigilancia y sin menoscabo de las actividades escolares o laborales del custodiado.",
+   "2. Por un tiempo de hasta diez años:",
+   "a) Libertad vigilada, cuando expresamente lo disponga este Código.",
+   "b) La privación del derecho a la tenencia y porte de armas.",
+   "c) La privación del derecho a conducir vehículos a motor y ciclomotores."
+  ]
  },
  {
   "n": "q:61",
@@ -1017,7 +1429,14 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Los que realmente hayan redactado el texto o producido el signo de que se trate, y quienes les hayan inducido a realizarlo. 2.º Los directores de la publicación o programa en que se difunda. 3.º Los directores de la empresa editora, emisora o difusora. 4.º Los directores de la empresa grabadora, reproductora o impresora.",
-  "exp": "Los directores de la difusora van <b>antes</b> que los de la reproductora, no después."
+  "exp": "Los directores de la difusora van <b>antes</b> que los de la reproductora, no después.",
+  "cita": [
+   "2. Los autores a los que se refiere el artículo 28 responderán de forma escalonada, excluyente y subsidiaria de acuerdo con el siguiente orden:",
+   "1.º Los que realmente hayan redactado el texto o producido el signo de que se trate, y quienes les hayan inducido a realizarlo.",
+   "2.º Los directores de la publicación o programa en que se difunda.",
+   "3.º Los directores de la empresa editora, emisora o difusora.",
+   "4.º Los directores de la empresa grabadora, reproductora o impresora."
+  ]
  },
  {
   "n": "q:62",
@@ -1034,7 +1453,21 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "La obligación de estar siempre localizable mediante aparatos electrónicos que permitan su seguimiento permanente. b) La obligación de presentarse periódicamente en el lugar que el Juez o Tribunal establezca. c) La de comunicar inmediatamente, en el plazo máximo y por el medio que el Juez o Tribunal señale a tal efecto, cada cambio del lugar de residencia o del lugar o puesto de trabajo. d) La prohibición de ausentarse del lugar donde resida o de un determinado territorio sin autorización del Juez o Tribunal.",
-  "exp": "Localización electrónica, presentaciones y prohibición de ausentarse: todas integran la libertad vigilada."
+  "exp": "Localización electrónica, presentaciones y prohibición de ausentarse: todas integran la libertad vigilada.",
+  "cita": [
+   "1. La libertad vigilada consistirá en el sometimiento del condenado a control judicial a través del cumplimiento por su parte de alguna o algunas de las siguientes medidas:",
+   "a) La obligación de estar siempre localizable mediante aparatos electrónicos que permitan su seguimiento permanente.",
+   "b) La obligación de presentarse periódicamente en el lugar que el Juez o Tribunal establezca.",
+   "c) La de comunicar inmediatamente, en el plazo máximo y por el medio que el Juez o Tribunal señale a tal efecto, cada cambio del lugar de residencia o del lugar o puesto de trabajo.",
+   "d) La prohibición de ausentarse del lugar donde resida o de un determinado territorio sin autorización del Juez o Tribunal.",
+   "e) La prohibición de aproximarse a la víctima, o a aquellos de sus familiares u otras personas que determine el Juez o Tribunal.",
+   "f) La prohibición de comunicarse con la víctima, o con aquellos de sus familiares u otras personas que determine el Juez o Tribunal.",
+   "g) La prohibición de acudir a determinados territorios, lugares o establecimientos.",
+   "h) La prohibición de residir en determinados lugares.",
+   "i) La prohibición de desempeñar determinadas actividades que puedan ofrecerle o facilitarle la ocasión para cometer hechos delictivos de similar naturaleza.",
+   "j) La obligación de participar en programas formativos, laborales, culturales, de educación sexual u otros similares.",
+   "k) La obligación de seguir tratamiento médico externo, o de someterse a un control médico periódico."
+  ]
  },
  {
   "n": "q:63",
@@ -1051,7 +1484,25 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Causas que Eximen de la Responsabilidad Criminal",
   "lit": "El que obre en cumplimiento de un deber o en el ejercicio legítimo de un derecho, oficio o cargo.",
-  "exp": "Las otras alteran el texto: la alteración de la conciencia ha de ser <b>grave</b> y el estado de necesidad tiene otros requisitos."
+  "exp": "Las otras alteran el texto: la alteración de la conciencia ha de ser <b>grave</b> y el estado de necesidad tiene otros requisitos.",
+  "cita": [
+   "Están exentos de responsabilidad criminal:",
+   "1.º El que al tiempo de cometer la infracción penal, a causa de cualquier anomalía o alteración psíquica, no pueda comprender la ilicitud del hecho o actuar conforme a esa comprensión.",
+   "El trastorno mental transitorio no eximirá de pena cuando hubiese sido provocado por el sujeto con el propósito de cometer el delito o hubiera previsto o debido prever su comisión.",
+   "2.º El que al tiempo de cometer la infracción penal se halle en estado de intoxicación plena por el consumo de bebidas alcohólicas, drogas tóxicas, estupefacientes, sustancias psicotrópicas u otras que produzcan efectos análogos, siempre que no haya sido buscado con el propósito de cometerla o no se hubiese previsto o debido prever su comisión, o se halle bajo la influencia de un síndrome de abstinencia, a causa de su dependencia de tales sustancias, que le impida comprender la ilicitud del hecho o actuar conforme a esa comprensión.",
+   "3.º El que, por sufrir alteraciones en la percepción desde el nacimiento o desde la infancia, tenga alterada gravemente la conciencia de la realidad.",
+   "4.º El que obre en defensa de la persona o derechos propios o ajenos, siempre que concurran los requisitos siguientes:",
+   "Primero. Agresión ilegítima. En caso de defensa de los bienes se reputará agresión ilegítima el ataque a los mismos que constituya delito y los ponga en grave peligro de deterioro o pérdida inminentes. En caso de defensa de la morada o sus dependencias, se reputará agresión ilegítima la entrada indebida en aquélla o éstas.",
+   "Segundo. Necesidad racional del medio empleado para impedirla o repelerla.",
+   "Tercero. Falta de provocación suficiente por parte del defensor.",
+   "5.º El que, en estado de necesidad, para evitar un mal propio o ajeno lesione un bien jurídico de otra persona o infrinja un deber, siempre que concurran los siguientes requisitos:",
+   "Primero. Que el mal causado no sea mayor que el que se trate de evitar.",
+   "Segundo. Que la situación de necesidad no haya sido provocada intencionadamente por el sujeto.",
+   "Tercero. Que el necesitado no tenga, por su oficio o cargo, obligación de sacrificarse.",
+   "6.º El que obre impulsado por miedo insuperable.",
+   "7.º El que obre en cumplimiento de un deber o en el ejercicio legítimo de un derecho, oficio o cargo.",
+   "En los supuestos de los tres primeros números se aplicarán, en su caso, las medidas de seguridad previstas en este Código."
+  ]
  },
  {
   "n": "q:65",
@@ -1068,7 +1519,16 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Impondrán la obligación de informar de posibles riesgos e incumplimientos al organismo encargado de vigilar el funcionamiento y observancia del modelo de prevención.",
-  "exp": "Los modelos <b>imponen</b> la obligación de informar; no la «recomiendan»."
+  "exp": "Los modelos <b>imponen</b> la obligación de informar; no la «recomiendan».",
+  "cita": [
+   "5. Los modelos de organización y gestión a que se refieren la condición 1.ª del apartado 2 y el apartado anterior deberán cumplir los siguientes requisitos:",
+   "1.º Identificarán las actividades en cuyo ámbito puedan ser cometidos los delitos que deben ser prevenidos.",
+   "2.º Establecerán los protocolos o procedimientos que concreten el proceso de formación de la voluntad de la persona jurídica, de adopción de decisiones y de ejecución de las mismas con relación a aquéllos.",
+   "3.º Dispondrán de modelos de gestión de los recursos financieros adecuados para impedir la comisión de los delitos que deben ser prevenidos.",
+   "4.º Impondrán la obligación de informar de posibles riesgos e incumplimientos al organismo encargado de vigilar el funcionamiento y observancia del modelo de prevención.",
+   "5.º Establecerán un sistema disciplinario que sancione adecuadamente el incumplimiento de las medidas que establezca el modelo.",
+   "6.º Realizarán una verificación periódica del modelo y de su eventual modificación cuando se pongan de manifiesto infracciones relevantes de sus disposiciones, o cuando se produzcan cambios en la organización, en la estructura de control o en la actividad desarrollada que los hagan necesarios."
+  ]
  },
  {
   "n": "q:66",
@@ -1085,7 +1545,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "La conspiración existe cuando dos o más personas se conciertan para la ejecución de un delito y resuelven ejecutarlo.",
-  "exp": "Invitar a otros a participar es la <b>proposición</b>; la conspiración es el concierto y la resolución de ejecutarlo."
+  "exp": "Invitar a otros a participar es la <b>proposición</b>; la conspiración es el concierto y la resolución de ejecutarlo.",
+  "cita": [
+   "1. La conspiración existe cuando dos o más personas se conciertan para la ejecución de un delito y resuelven ejecutarlo.",
+   "2. La proposición existe cuando el que ha resuelto cometer un delito invita a otra u otras personas a participar en él.",
+   "3. La conspiración y la proposición para delinquir sólo se castigarán en los casos especialmente previstos en la ley."
+  ]
  },
  {
   "n": "q:67",
@@ -1102,7 +1567,11 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "Título Preliminar: De las Garantías Penales y de la Aplicación de la Ley Penal",
   "lit": "No podrá ejecutarse pena ni medida de seguridad sino en virtud de sentencia firme dictada por el Juez o Tribunal competente, de acuerdo con las leyes procesales.",
-  "exp": "Las medidas de seguridad solo se ejecutan por <b>sentencia firme</b>; no son una cautelar de los agentes."
+  "exp": "Las medidas de seguridad solo se ejecutan por <b>sentencia firme</b>; no son una cautelar de los agentes.",
+  "cita": [
+   "1. No podrá ejecutarse pena ni medida de seguridad sino en virtud de sentencia firme dictada por el Juez o Tribunal competente, de acuerdo con las leyes procesales.",
+   "2. Tampoco podrá ejecutarse pena ni medida de seguridad en otra forma que la prescrita por la Ley y reglamentos que la desarrollan, ni con otras circunstancias o accidentes que los expresados en su texto. La ejecución de la pena o de la medida de seguridad se realizará bajo el control de los Jueces y Tribunales competentes."
+  ]
  },
  {
   "n": "q:68",
@@ -1119,7 +1588,32 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "Los trabajos en beneficio de la comunidad de uno a treinta días.",
-  "exp": "Como pena <b>leve</b>, los trabajos en beneficio de la comunidad van de uno a treinta días; de 31 días a un año son menos graves."
+  "exp": "Como pena <b>leve</b>, los trabajos en beneficio de la comunidad van de uno a treinta días; de 31 días a un año son menos graves.",
+  "cita": [
+   "3. Son penas menos graves:",
+   "a) La prisión de tres meses hasta cinco años.",
+   "b) Las inhabilitaciones especiales hasta cinco años.",
+   "c) La suspensión de empleo o cargo público hasta cinco años.",
+   "d) La privación del derecho a conducir vehículos a motor y ciclomotores de un año y un día a ocho años.",
+   "e) La privación del derecho a la tenencia y porte de armas de un año y un día a ocho años.",
+   "f) Inhabilitación especial para el ejercicio de profesión, oficio o comercio que tenga relación con los animales y para la tenencia de animales de un año y un día a cinco años.",
+   "g) La privación del derecho a residir en determinados lugares o acudir a ellos, por tiempo de seis meses a cinco años.",
+   "h) La prohibición de aproximarse a la víctima o a aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo de seis meses a cinco años.",
+   "i) La prohibición de comunicarse con la víctima o con aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo de seis meses a cinco años.",
+   "j) La multa de más de tres meses.",
+   "k) La multa proporcional, cualquiera que fuese su cuantía, salvo lo dispuesto en el apartado 7 de este artículo.",
+   "l) Los trabajos en beneficio de la comunidad de treinta y un días a un año.",
+   "4. Son penas leves:",
+   "a) La privación del derecho a conducir vehículos a motor y ciclomotores de tres meses a un año.",
+   "b) La privación del derecho a la tenencia y porte de armas de tres meses a un año.",
+   "c) Inhabilitación especial para el ejercicio de profesión, oficio o comercio que tenga relación con los animales y para la tenencia de animales de tres meses a un año.",
+   "d) La privación del derecho a residir en determinados lugares o acudir a ellos, por tiempo inferior a seis meses.",
+   "e) La prohibición de aproximarse a la víctima o a aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo de un mes a menos de seis meses.",
+   "f) La prohibición de comunicarse con la víctima o con aquellos de sus familiares u otras personas que determine el juez o tribunal, por tiempo de un mes a menos de seis meses.",
+   "g) La multa de hasta tres meses.",
+   "h) La localización permanente de un día a tres meses.",
+   "i) Los trabajos en beneficio de la comunidad de uno a treinta días."
+  ]
  },
  {
   "n": "q:69",
@@ -1136,7 +1630,13 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "No se reputarán penas: 1. La detención y prisión preventiva y las demás medidas cautelares de naturaleza penal. 2. Las multas y demás correcciones que, en uso de atribuciones gubernativas o disciplinarias, se impongan a los subordinados o administrados. 3. Las privaciones de derechos y las sanciones reparadoras que establezcan las leyes civiles o administrativas.",
-  "exp": "Ninguna de las tres situaciones es pena: todas son correctas."
+  "exp": "Ninguna de las tres situaciones es pena: todas son correctas.",
+  "cita": [
+   "No se reputarán penas:",
+   "1. La detención y prisión preventiva y las demás medidas cautelares de naturaleza penal.",
+   "2. Las multas y demás correcciones que, en uso de atribuciones gubernativas o disciplinarias, se impongan a los subordinados o administrados.",
+   "3. Las privaciones de derechos y las sanciones reparadoras que establezcan las leyes civiles o administrativas."
+  ]
  },
  {
   "n": "q:70",
@@ -1153,7 +1653,14 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Los que realmente hayan redactado el texto o producido el signo de que se trate, y quienes les hayan inducido a realizarlo.",
-  "exp": "En primer lugar responden quienes <b>redactan</b> el texto o producen el signo, y sus inductores."
+  "exp": "En primer lugar responden quienes <b>redactan</b> el texto o producen el signo, y sus inductores.",
+  "cita": [
+   "2. Los autores a los que se refiere el artículo 28 responderán de forma escalonada, excluyente y subsidiaria de acuerdo con el siguiente orden:",
+   "1.º Los que realmente hayan redactado el texto o producido el signo de que se trate, y quienes les hayan inducido a realizarlo.",
+   "2.º Los directores de la publicación o programa en que se difunda.",
+   "3.º Los directores de la empresa editora, emisora o difusora.",
+   "4.º Los directores de la empresa grabadora, reproductora o impresora."
+  ]
  },
  {
   "n": "q:71",
@@ -1170,7 +1677,25 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Causas que Eximen de la Responsabilidad Criminal",
   "lit": "El que, por sufrir alteraciones en la percepción desde el nacimiento o desde la infancia, tenga alterada gravemente la conciencia de la realidad.",
-  "exp": "La eximente exige alteraciones desde el nacimiento o la <b>infancia</b>, no desde la adolescencia."
+  "exp": "La eximente exige alteraciones desde el nacimiento o la <b>infancia</b>, no desde la adolescencia.",
+  "cita": [
+   "Están exentos de responsabilidad criminal:",
+   "1.º El que al tiempo de cometer la infracción penal, a causa de cualquier anomalía o alteración psíquica, no pueda comprender la ilicitud del hecho o actuar conforme a esa comprensión.",
+   "El trastorno mental transitorio no eximirá de pena cuando hubiese sido provocado por el sujeto con el propósito de cometer el delito o hubiera previsto o debido prever su comisión.",
+   "2.º El que al tiempo de cometer la infracción penal se halle en estado de intoxicación plena por el consumo de bebidas alcohólicas, drogas tóxicas, estupefacientes, sustancias psicotrópicas u otras que produzcan efectos análogos, siempre que no haya sido buscado con el propósito de cometerla o no se hubiese previsto o debido prever su comisión, o se halle bajo la influencia de un síndrome de abstinencia, a causa de su dependencia de tales sustancias, que le impida comprender la ilicitud del hecho o actuar conforme a esa comprensión.",
+   "3.º El que, por sufrir alteraciones en la percepción desde el nacimiento o desde la infancia, tenga alterada gravemente la conciencia de la realidad.",
+   "4.º El que obre en defensa de la persona o derechos propios o ajenos, siempre que concurran los requisitos siguientes:",
+   "Primero. Agresión ilegítima. En caso de defensa de los bienes se reputará agresión ilegítima el ataque a los mismos que constituya delito y los ponga en grave peligro de deterioro o pérdida inminentes. En caso de defensa de la morada o sus dependencias, se reputará agresión ilegítima la entrada indebida en aquélla o éstas.",
+   "Segundo. Necesidad racional del medio empleado para impedirla o repelerla.",
+   "Tercero. Falta de provocación suficiente por parte del defensor.",
+   "5.º El que, en estado de necesidad, para evitar un mal propio o ajeno lesione un bien jurídico de otra persona o infrinja un deber, siempre que concurran los siguientes requisitos:",
+   "Primero. Que el mal causado no sea mayor que el que se trate de evitar.",
+   "Segundo. Que la situación de necesidad no haya sido provocada intencionadamente por el sujeto.",
+   "Tercero. Que el necesitado no tenga, por su oficio o cargo, obligación de sacrificarse.",
+   "6.º El que obre impulsado por miedo insuperable.",
+   "7.º El que obre en cumplimiento de un deber o en el ejercicio legítimo de un derecho, oficio o cargo.",
+   "En los supuestos de los tres primeros números se aplicarán, en su caso, las medidas de seguridad previstas en este Código."
+  ]
  },
  {
   "n": "q:72",
@@ -1187,7 +1712,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "El extranjero no podrá regresar a España en un plazo de 10 años",
-  "exp": "Prohibición de regreso durante <b>10 años</b>."
+  "exp": "Prohibición de regreso durante <b>10 años</b>.",
+  "cita": [
+   "2. El extranjero no podrá regresar a España en un plazo de 10 años, contados desde la fecha de su expulsión."
+  ]
  },
  {
   "n": "q:73",
@@ -1204,7 +1732,11 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Extinción de la Responsabilidad Criminal y sus Efectos",
   "lit": "Los delitos de lesa humanidad y de genocidio y los delitos contra las personas y bienes protegidos en caso de conflicto armado, salvo los castigados en el artículo 614, no prescribirán en ningún caso.",
-  "exp": "Los de <b>lesa humanidad</b> no prescriben nunca; el terrorismo solo si causó la muerte y en los de conflicto armado hay una excepción."
+  "exp": "Los de <b>lesa humanidad</b> no prescriben nunca; el terrorismo solo si causó la muerte y en los de conflicto armado hay una excepción.",
+  "cita": [
+   "3. Los delitos de lesa humanidad y de genocidio y los delitos contra las personas y bienes protegidos en caso de conflicto armado, salvo los castigados en el artículo 614, no prescribirán en ningún caso.",
+   "Tampoco prescribirán los delitos de terrorismo, si hubieren causado la muerte de una persona."
+  ]
  },
  {
   "n": "q:74",
@@ -1221,7 +1753,25 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Causas que Eximen de la Responsabilidad Criminal",
   "lit": "Necesidad racional del medio empleado para impedirla o repelerla.",
-  "exp": "Es requisito de la legítima defensa la <b>necesidad racional del medio</b>."
+  "exp": "Es requisito de la legítima defensa la <b>necesidad racional del medio</b>.",
+  "cita": [
+   "Están exentos de responsabilidad criminal:",
+   "1.º El que al tiempo de cometer la infracción penal, a causa de cualquier anomalía o alteración psíquica, no pueda comprender la ilicitud del hecho o actuar conforme a esa comprensión.",
+   "El trastorno mental transitorio no eximirá de pena cuando hubiese sido provocado por el sujeto con el propósito de cometer el delito o hubiera previsto o debido prever su comisión.",
+   "2.º El que al tiempo de cometer la infracción penal se halle en estado de intoxicación plena por el consumo de bebidas alcohólicas, drogas tóxicas, estupefacientes, sustancias psicotrópicas u otras que produzcan efectos análogos, siempre que no haya sido buscado con el propósito de cometerla o no se hubiese previsto o debido prever su comisión, o se halle bajo la influencia de un síndrome de abstinencia, a causa de su dependencia de tales sustancias, que le impida comprender la ilicitud del hecho o actuar conforme a esa comprensión.",
+   "3.º El que, por sufrir alteraciones en la percepción desde el nacimiento o desde la infancia, tenga alterada gravemente la conciencia de la realidad.",
+   "4.º El que obre en defensa de la persona o derechos propios o ajenos, siempre que concurran los requisitos siguientes:",
+   "Primero. Agresión ilegítima. En caso de defensa de los bienes se reputará agresión ilegítima el ataque a los mismos que constituya delito y los ponga en grave peligro de deterioro o pérdida inminentes. En caso de defensa de la morada o sus dependencias, se reputará agresión ilegítima la entrada indebida en aquélla o éstas.",
+   "Segundo. Necesidad racional del medio empleado para impedirla o repelerla.",
+   "Tercero. Falta de provocación suficiente por parte del defensor.",
+   "5.º El que, en estado de necesidad, para evitar un mal propio o ajeno lesione un bien jurídico de otra persona o infrinja un deber, siempre que concurran los siguientes requisitos:",
+   "Primero. Que el mal causado no sea mayor que el que se trate de evitar.",
+   "Segundo. Que la situación de necesidad no haya sido provocada intencionadamente por el sujeto.",
+   "Tercero. Que el necesitado no tenga, por su oficio o cargo, obligación de sacrificarse.",
+   "6.º El que obre impulsado por miedo insuperable.",
+   "7.º El que obre en cumplimiento de un deber o en el ejercicio legítimo de un derecho, oficio o cargo.",
+   "En los supuestos de los tres primeros números se aplicarán, en su caso, las medidas de seguridad previstas en este Código."
+  ]
  },
  {
   "n": "q:75",
@@ -1238,7 +1788,22 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Circunstancias que Modifican la Responsabilidad Criminal",
   "lit": "Son circunstancias agravantes: 1.ª Ejecutar el hecho con alevosía.",
-  "exp": "La intoxicación plena es una <b>eximente</b>, no una agravante."
+  "exp": "La intoxicación plena es una <b>eximente</b>, no una agravante.",
+  "cita": [
+   "Son circunstancias agravantes:",
+   "1.ª Ejecutar el hecho con alevosía.",
+   "Hay alevosía cuando el culpable comete cualquiera de los delitos contra las personas empleando en la ejecución medios, modos o formas que tiendan directa o especialmente a asegurarla, sin el riesgo que para su persona pudiera proceder de la defensa por parte del ofendido.",
+   "2.ª Ejecutar el hecho mediante disfraz, con abuso de superioridad o aprovechando las circunstancias de lugar, tiempo o auxilio de otras personas que debiliten la defensa del ofendido o faciliten la impunidad del delincuente.",
+   "3.ª Ejecutar el hecho mediante precio, recompensa o promesa.",
+   "4.ª Cometer el delito por motivos racistas, antisemitas, antigitanos u otra clase de discriminación referente a la ideología, religión o creencias de la víctima, la etnia, raza o nación a la que pertenezca, su sexo, edad, orientación o identidad sexual o de género, razones de género, de aporofobia o de exclusión social, la enfermedad que padezca o su discapacidad, con independencia de que tales condiciones o circunstancias concurran efectivamente en la persona sobre la que recaiga la conducta.",
+   "5.ª Aumentar deliberada e inhumanamente el sufrimiento de la víctima, causando a ésta padecimientos innecesarios para la ejecución del delito.",
+   "6.ª Obrar con abuso de confianza.",
+   "7.ª Prevalerse del carácter público que tenga el culpable.",
+   "8.ª Ser reincidente.",
+   "Hay reincidencia cuando, al delinquir, el culpable haya sido condenado ejecutoriamente por un delito comprendido en el mismo título de este código, siempre que sea de la misma naturaleza.",
+   "A los efectos de este número no se computarán los antecedentes penales cancelados o que debieran serlo, ni los que correspondan a delitos leves, salvo lo dispuesto para los tipos agravados por multirreincidencia de delitos leves.",
+   "Las condenas firmes de jueces o tribunales impuestas en otros Estados de la Unión Europea producirán los efectos de reincidencia salvo que el antecedente penal haya sido cancelado o pudiera serlo con arreglo al Derecho español."
+  ]
  },
  {
   "n": "q:76",
@@ -1255,7 +1820,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "La pena de prisión igual o superior a diez años llevará consigo la inhabilitación absoluta durante el tiempo de la condena, salvo que ésta ya estuviere prevista como pena principal para el supuesto de que se trate.",
-  "exp": "Prisión de diez años o más: <b>inhabilitación absoluta</b>."
+  "exp": "Prisión de diez años o más: <b>inhabilitación absoluta</b>.",
+  "cita": [
+   "La pena de prisión igual o superior a diez años llevará consigo la inhabilitación absoluta durante el tiempo de la condena, salvo que ésta ya estuviere prevista como pena principal para el supuesto de que se trate. El Juez podrá además disponer la inhabilitación especial para el ejercicio de la patria potestad, tutela, curatela, guarda o acogimiento, o bien la privación de la patria potestad, cuando estos derechos hubieren tenido relación directa con el delito cometido. Esta vinculación deberá determinarse expresamente en la sentencia."
+  ]
  },
  {
   "n": "q:77",
@@ -1272,7 +1840,19 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "Las penas aplicables a las personas jurídicas, que tienen todas la consideración de graves, son las siguientes",
-  "exp": "Todas son <b>graves</b>."
+  "exp": "Todas son <b>graves</b>.",
+  "cita": [
+   "7. Las penas aplicables a las personas jurídicas, que tienen todas la consideración de graves, son las siguientes:",
+   "a) Multa por cuotas o proporcional.",
+   "b) Disolución de la persona jurídica. La disolución producirá la pérdida definitiva de su personalidad jurídica, así como la de su capacidad de actuar de cualquier modo en el tráfico jurídico, o llevar a cabo cualquier clase de actividad, aunque sea lícita.",
+   "c) Suspensión de sus actividades por un plazo que no podrá exceder de cinco años.",
+   "d) Clausura de sus locales y establecimientos por un plazo que no podrá exceder de cinco años.",
+   "e) Prohibición de realizar en el futuro las actividades en cuyo ejercicio se haya cometido, favorecido o encubierto el delito. Esta prohibición podrá ser temporal o definitiva. Si fuere temporal, el plazo no podrá exceder de quince años.",
+   "f) Inhabilitación para obtener subvenciones y ayudas públicas, para contratar con el sector público y para gozar de beneficios e incentivos fiscales o de la Seguridad Social, por un plazo que no podrá exceder de quince años.",
+   "g) Intervención judicial para salvaguardar los derechos de los trabajadores o de los acreedores por el tiempo que se estime necesario, que no podrá exceder de cinco años.",
+   "La intervención podrá afectar a la totalidad de la organización o limitarse a alguna de sus instalaciones, secciones o unidades de negocio. El Juez o Tribunal, en la sentencia o, posteriormente, mediante auto, determinará exactamente el contenido de la intervención y determinará quién se hará cargo de la intervención y en qué plazos deberá realizar informes de seguimiento para el órgano judicial. La intervención se podrá modificar o suspender en todo momento previo informe del interventor y del Ministerio Fiscal. El interventor tendrá derecho a acceder a todas las instalaciones y locales de la empresa o persona jurídica y a recibir cuanta información estime necesaria para el ejercicio de sus funciones. Reglamentariamente se determinarán los aspectos relacionados con el ejercicio de la función de interventor, como la retribución o la cualificación necesaria.",
+   "La clausura temporal de los locales o establecimientos, la suspensión de las actividades sociales y la intervención judicial podrán ser acordadas también por el Juez Instructor como medida cautelar durante la instrucción de la causa."
+  ]
  },
  {
   "n": "q:78",
@@ -1289,7 +1869,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "La detención y prisión preventiva y las demás medidas cautelares de naturaleza penal.",
-  "exp": "La prisión preventiva <b>no es una pena</b>."
+  "exp": "La prisión preventiva <b>no es una pena</b>.",
+  "cita": [
+   "1. La detención y prisión preventiva y las demás medidas cautelares de naturaleza penal."
+  ]
  },
  {
   "n": "q:79",
@@ -1306,7 +1889,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "Cuando exista una específica obligación legal o contractual de actuar.",
-  "exp": "La equiparación procede con obligación legal o contractual (o riesgo creado por una conducta <b>precedente</b>, condición que la otra opción omite)."
+  "exp": "La equiparación procede con obligación legal o contractual (o riesgo creado por una conducta <b>precedente</b>, condición que la otra opción omite).",
+  "cita": [
+   "Los delitos que consistan en la producción de un resultado sólo se entenderán cometidos por omisión cuando la no evitación del mismo, al infringir un especial deber jurídico del autor, equivalga, según el sentido del texto de la ley, a su causación. A tal efecto se equiparará la omisión a la acción:",
+   "a) Cuando exista una específica obligación legal o contractual de actuar.",
+   "b) Cuando el omitente haya creado una ocasión de riesgo para el bien jurídicamente protegido mediante una acción u omisión precedente."
+  ]
  },
  {
   "n": "q:80",
@@ -1323,7 +1911,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "La cuota diaria tendrá un mínimo de dos y un máximo de 400 euros",
-  "exp": "Cuota diaria de <b>2 a 400 euros</b>; en personas jurídicas, de 30 a 5.000 y hasta cinco años."
+  "exp": "Cuota diaria de <b>2 a 400 euros</b>; en personas jurídicas, de 30 a 5.000 y hasta cinco años.",
+  "cita": [
+   "1. La pena de multa consistirá en la imposición al condenado de una sanción pecuniaria.",
+   "3. Su extensión mínima será de diez días y la máxima de dos años. Las penas de multa imponibles a personas jurídicas tendrán una extensión máxima de cinco años.",
+   "4. La cuota diaria tendrá un mínimo de dos y un máximo de 400 euros, excepto en el caso de las multas imponibles a las personas jurídicas, en las que la cuota diaria tendrá un mínimo de 30 y un máximo de 5.000 euros. A efectos de cómputo, cuando se fije la duración por meses o por años, se entenderá que los meses son de treinta días y los años de trescientos sesenta."
+  ]
  },
  {
   "n": "q:81",
@@ -1340,7 +1933,11 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Extinción de la Responsabilidad Criminal y sus Efectos",
   "lit": "Tampoco prescribirán los delitos de terrorismo, si hubieren causado la muerte de una persona.",
-  "exp": "El terrorismo no prescribe <b>si causó la muerte</b>."
+  "exp": "El terrorismo no prescribe <b>si causó la muerte</b>.",
+  "cita": [
+   "3. Los delitos de lesa humanidad y de genocidio y los delitos contra las personas y bienes protegidos en caso de conflicto armado, salvo los castigados en el artículo 614, no prescribirán en ningún caso.",
+   "Tampoco prescribirán los delitos de terrorismo, si hubieren causado la muerte de una persona."
+  ]
  },
  {
   "n": "q:82",
@@ -1357,7 +1954,20 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "Son medidas privativas de libertad: 1.ª El internamiento en centro psiquiátrico. 2.ª El internamiento en centro de deshabituación. 3.ª El internamiento en centro educativo especial.",
-  "exp": "El internamiento en centro de deshabituación es <b>privativa</b> de libertad."
+  "exp": "El internamiento en centro de deshabituación es <b>privativa</b> de libertad.",
+  "cita": [
+   "2. Son medidas privativas de libertad:",
+   "1.ª El internamiento en centro psiquiátrico.",
+   "2.ª El internamiento en centro de deshabituación.",
+   "3.ª El internamiento en centro educativo especial.",
+   "3. Son medidas no privativas de libertad:",
+   "1.ª) La inhabilitación profesional.",
+   "2.ª) La expulsión del territorio nacional de extranjeros no residentes legalmente en España.",
+   "3.ª) La libertad vigilada",
+   "4.ª) La custodia familiar. El sometido a esta medida quedará sujeto al cuidado y vigilancia del familiar que se designe y que acepte la custodia, quien la ejercerá en relación con el Juez de Vigilancia Penitenciaria y sin menoscabo de las actividades escolares o laborales del custodiado.",
+   "5.ª) La privación del derecho a conducir vehículos a motor y ciclomotores.",
+   "6.ª) La privación del derecho a la tenencia y porte de armas."
+  ]
  },
  {
   "n": "q:83",
@@ -1374,7 +1984,14 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Los que realmente hayan redactado el texto o producido el signo de que se trate, y quienes les hayan inducido a realizarlo.",
-  "exp": "El primer escalón incluye a los <b>inductores</b>, por delante de los directores."
+  "exp": "El primer escalón incluye a los <b>inductores</b>, por delante de los directores.",
+  "cita": [
+   "2. Los autores a los que se refiere el artículo 28 responderán de forma escalonada, excluyente y subsidiaria de acuerdo con el siguiente orden:",
+   "1.º Los que realmente hayan redactado el texto o producido el signo de que se trate, y quienes les hayan inducido a realizarlo.",
+   "2.º Los directores de la publicación o programa en que se difunda.",
+   "3.º Los directores de la empresa editora, emisora o difusora.",
+   "4.º Los directores de la empresa grabadora, reproductora o impresora."
+  ]
  },
  {
   "n": "q:84",
@@ -1391,7 +2008,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "Cuando la pena, por su extensión, pueda incluirse a la vez entre las mencionadas en los dos primeros números de este artículo, el delito se considerará, en todo caso, como grave.",
-  "exp": "Entre grave y menos grave, el delito se considera <b>grave</b> en todo caso."
+  "exp": "Entre grave y menos grave, el delito se considera <b>grave</b> en todo caso.",
+  "cita": [
+   "4. Cuando la pena, por su extensión, pueda incluirse a la vez entre las mencionadas en los dos primeros números de este artículo, el delito se considerará, en todo caso, como grave. Cuando la pena, por su extensión, pueda considerarse como leve y como menos grave, el delito se considerará, en todo caso, como leve."
+  ]
  },
  {
   "n": "q:86",
@@ -1408,7 +2028,11 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Infracción Penal",
   "lit": "La conspiración existe cuando dos o más personas se conciertan para la ejecución de un delito y resuelven ejecutarlo.",
-  "exp": "Concierto de dos o más para ejecutar el delito y resolución de hacerlo."
+  "exp": "Concierto de dos o más para ejecutar el delito y resolución de hacerlo.",
+  "cita": [
+   "1. La conspiración existe cuando dos o más personas se conciertan para la ejecución de un delito y resuelven ejecutarlo.",
+   "2. La proposición existe cuando el que ha resuelto cometer un delito invita a otra u otras personas a participar en él."
+  ]
  },
  {
   "n": "q:87",
@@ -1425,7 +2049,10 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "El Juez de Vigilancia Penitenciaria estará obligado a elevar al menos anualmente, una propuesta de mantenimiento, cese, sustitución o suspensión de la misma",
-  "exp": "La propuesta es <b>al menos anual</b>."
+  "exp": "La propuesta es <b>al menos anual</b>.",
+  "cita": [
+   "1. A los efectos del artículo anterior, cuando se trate de una medida de seguridad privativa de libertad o de una medida de libertad vigilada que deba ejecutarse después del cumplimiento de una pena privativa de libertad, el Juez de Vigilancia Penitenciaria estará obligado a elevar al menos anualmente, una propuesta de mantenimiento, cese, sustitución o suspensión de la misma. Para formular dicha propuesta el Juez de Vigilancia Penitenciaria deberá valorar los informes emitidos por los facultativos y profesionales que asistan al sometido a medida de seguridad o por las Administraciones Públicas competentes y, en su caso, el resultado de las demás actuaciones que a este fin ordene."
+  ]
  },
  {
   "n": "q:88",
@@ -1442,7 +2069,16 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Medidas de Seguridad",
   "lit": "Son medidas no privativas de libertad: 1.ª) La inhabilitación profesional. 2.ª) La expulsión del territorio nacional de extranjeros no residentes legalmente en España. 3.ª) La libertad vigilada 4.ª) La custodia familiar",
-  "exp": "La inhabilitación absoluta es una pena."
+  "exp": "La inhabilitación absoluta es una pena.",
+  "cita": [
+   "3. Son medidas no privativas de libertad:",
+   "1.ª) La inhabilitación profesional.",
+   "2.ª) La expulsión del territorio nacional de extranjeros no residentes legalmente en España.",
+   "3.ª) La libertad vigilada",
+   "4.ª) La custodia familiar. El sometido a esta medida quedará sujeto al cuidado y vigilancia del familiar que se designe y que acepte la custodia, quien la ejercerá en relación con el Juez de Vigilancia Penitenciaria y sin menoscabo de las actividades escolares o laborales del custodiado.",
+   "5.ª) La privación del derecho a conducir vehículos a motor y ciclomotores.",
+   "6.ª) La privación del derecho a la tenencia y porte de armas."
+  ]
  },
  {
   "n": "q:89",
@@ -1459,7 +2095,13 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Personas Criminalmente Responsables de los Delitos",
   "lit": "Los que inducen directamente a otro u otros a ejecutarlo.",
-  "exp": "La inducción tiene que ser <b>directa</b>."
+  "exp": "La inducción tiene que ser <b>directa</b>.",
+  "cita": [
+   "Son autores quienes realizan el hecho por sí solos, conjuntamente o por medio de otro del que se sirven como instrumento.",
+   "También serán considerados autores:",
+   "a) Los que inducen directamente a otro u otros a ejecutarlo.",
+   "b) Los que cooperan a su ejecución con un acto sin el cual no se habría efectuado."
+  ]
  },
  {
   "n": "q:90",
@@ -1476,7 +2118,12 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De la Extinción de la Responsabilidad Criminal y sus Efectos",
   "lit": "El tiempo de la prescripción se computará desde el día en que haya quedado firme la resolución en la que se impuso la medida o, en caso de cumplimiento sucesivo, desde que debió empezar a cumplirse.",
-  "exp": "Cómputo desde la firmeza o, en cumplimiento sucesivo, desde que debió empezar."
+  "exp": "Cómputo desde la firmeza o, en cumplimiento sucesivo, desde que debió empezar.",
+  "cita": [
+   "1. Las medidas de seguridad prescribirán a los diez años, si fueran privativas de libertad superiores a tres años, y a los cinco años si fueran privativas de libertad iguales o inferiores a tres años o tuvieran otro contenido.",
+   "2. El tiempo de la prescripción se computará desde el día en que haya quedado firme la resolución en la que se impuso la medida o, en caso de cumplimiento sucesivo, desde que debió empezar a cumplirse.",
+   "3. Si el cumplimiento de una medida de seguridad fuere posterior al de una pena, el plazo se computará desde la extinción de ésta."
+  ]
  },
  {
   "n": "q:91",
@@ -1493,6 +2140,9 @@
   "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
   "apartado": "De las Penas",
   "lit": "La pena de inhabilitación absoluta produce la privación definitiva de todos los honores, empleos y cargos públicos que tenga el penado, aunque sean electivos.",
-  "exp": "La privación definitiva de honores, empleos y cargos es propia de la <b>inhabilitación absoluta</b>."
+  "exp": "La privación definitiva de honores, empleos y cargos es propia de la <b>inhabilitación absoluta</b>.",
+  "cita": [
+   "La pena de inhabilitación absoluta produce la privación definitiva de todos los honores, empleos y cargos públicos que tenga el penado, aunque sean electivos. Produce, además, la incapacidad para obtener los mismos o cualesquiera otros honores, cargos o empleos públicos, y la de ser elegido para cargo público, durante el tiempo de la condena."
+  ]
  }
 ]

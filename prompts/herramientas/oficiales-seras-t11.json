@@ -14,7 +14,12 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Su contenido se inspira en los principios relativos a: a) La planificación de la prevención. b) La eliminación o disminución de factores de riesgo. c) La información. d) La participación y consulta. e) La formación. f) Integración de la prevención.",
-  "exp": "Los principios son planificación, eliminación o disminución de riesgos, información, participación y consulta, formación e integración; no la «ejecución»."
+  "exp": "Los principios son planificación, eliminación o disminución de riesgos, información, participación y consulta, formación e integración; no la «ejecución».",
+  "cita": [
+   "El objeto de este real decreto es promover la seguridad y la salud en el trabajo del personal del Cuerpo de la Guardia Civil y de los miembros de las Fuerzas Armadas que presten servicios en unidades, centros y organismos de la Dirección General de la Guardia Civil, y adaptar las estructuras y medidas diseñadas por la Directiva 89/391/CEE del Consejo, de 12 de junio de 1989, relativa a la aplicación de medidas para promover la mejora de la seguridad y la salud de los trabajadores en el trabajo, y por la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, a sus peculiaridades organizativas y de participación y a las especiales características de las funciones que tiene encomendadas.",
+   "A tal efecto, su contenido se inspira en los principios relativos a:",
+   "a) La planificación de la prevención. b) La eliminación o disminución de factores de riesgo. c) La información. d) La participación y consulta. e) La formación. f) Integración de la prevención."
+  ]
  },
  {
   "n": "q:2",
@@ -31,7 +36,10 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Las medidas que se adopten en aplicación de este real decreto tendrán como objetivo principal, de conformidad con los principios contenidos tanto en la Directiva 89/391/CEE como en la Ley 31/1995, de 8 de noviembre, la promoción de la mejora de las condiciones del servicio y tratarán de elevar el nivel de protección de la seguridad y la salud del personal al que se dirigen.",
-  "exp": "Objetivo de mejora de las condiciones del servicio y mayor protección de la seguridad y la salud: todas son correctas."
+  "exp": "Objetivo de mejora de las condiciones del servicio y mayor protección de la seguridad y la salud: todas son correctas.",
+  "cita": [
+   "Las medidas que se adopten en aplicación de este real decreto tendrán como objetivo principal, de conformidad con los principios contenidos tanto en la Directiva 89/391/CEE como en la Ley 31/1995, de 8 de noviembre, la promoción de la mejora de las condiciones del servicio y tratarán de elevar el nivel de protección de la seguridad y la salud del personal al que se dirigen."
+  ]
  },
  {
   "n": "q:3",
@@ -48,7 +56,11 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Los instrumentos esenciales para la gestión y aplicación del plan de prevención de riesgos son la evaluación de riesgos laborales y la planificación de la actividad preventiva",
-  "exp": "Los instrumentos son la <b>evaluación de riesgos</b> y la <b>planificación</b> de la actividad preventiva; la inspección no es uno de ellos."
+  "exp": "Los instrumentos son la <b>evaluación de riesgos</b> y la <b>planificación</b> de la actividad preventiva; la inspección no es uno de ellos.",
+  "cita": [
+   "1. La prevención de riesgos laborales en la Guardia Civil deberá integrarse en el conjunto de sus actividades a través de la implantación y aplicación de un plan de prevención de riesgos laborales que deberá incluir todos los elementos necesarios para realizar la acción de prevención de riesgos en la Guardia Civil.",
+   "Los instrumentos esenciales para la gestión y aplicación del plan de prevención de riesgos son la evaluación de riesgos laborales y la planificación de la actividad preventiva a que se refiere el apartado siguiente."
+  ]
  },
  {
   "n": "q:4",
@@ -65,7 +77,11 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Los órganos de prevención regulados en este real decreto deberán definir, implantar y mantener al día los planes de emergencia de los edificios e instalaciones correspondientes a su respectivo ámbito de competencias.",
-  "exp": "Los planes de emergencia corresponden a los <b>órganos de prevención</b>."
+  "exp": "Los planes de emergencia corresponden a los <b>órganos de prevención</b>.",
+  "cita": [
+   "Los órganos de prevención regulados en este real decreto deberán definir, implantar y mantener al día los planes de emergencia de los edificios e instalaciones correspondientes a su respectivo ámbito de competencias.",
+   "Estos planes se incorporarán como anexo a los correspondientes planes de seguridad de los centros y organismos de la Dirección General de la Guardia Civil."
+  ]
  },
  {
   "n": "q:5",
@@ -82,7 +98,11 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "En la Dirección General de la Guardia Civil se constituirán los siguientes órganos de prevención: a) Servicio de Prevención. b) Sección de Prevención de Zona. c) Oficina de Prevención de Comandancia. d) Otras unidades.",
-  "exp": "No existe una «Oficina de Asistencia a la Prevención»."
+  "exp": "No existe una «Oficina de Asistencia a la Prevención».",
+  "cita": [
+   "2. En la Dirección General de la Guardia Civil se constituirán los siguientes órganos de prevención:",
+   "a) Servicio de Prevención. b) Sección de Prevención de Zona. c) Oficina de Prevención de Comandancia. d) Otras unidades."
+  ]
  },
  {
   "n": "q:6",
@@ -99,7 +119,12 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "La Dirección General de la Guardia Civil garantizará una formación suficiente y adecuada en materia preventiva. A estos efectos, adaptará los planes de formación para que el personal disponga de ella desde su incorporación a la actividad profesional.",
-  "exp": "Quien adapta los planes de formación es la <b>Dirección General</b>, no los órganos de prevención."
+  "exp": "Quien adapta los planes de formación es la <b>Dirección General</b>, no los órganos de prevención.",
+  "cita": [
+   "La Dirección General de la Guardia Civil garantizará una formación suficiente y adecuada en materia preventiva. A estos efectos, adaptará los planes de formación para que el personal disponga de ella desde su incorporación a la actividad profesional.",
+   "Igualmente, la prevención de la seguridad y de la salud se incorporará a los planes de formación continua, se centrará en los aspectos relativos a las distintas funciones asignadas al personal y se adaptará a la evolución de los riesgos o a la aparición de otros nuevos.",
+   "El personal destinado en los órganos de prevención que se establezcan o que desempeñe funciones propias de protección de la seguridad y de la salud recibirá una formación especializada, adecuada a los cometidos que tenga asignados."
+  ]
  },
  {
   "n": "q:7",
@@ -116,7 +141,13 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Sin perjuicio de otras obligaciones que se indican en otras disposiciones de este real decreto, los órganos administrativos comprendidos en su ámbito de aplicación adoptarán las medidas necesarias para garantizar, en lo posible, la seguridad y salud del personal al utilizar medios y equipos. Del mismo modo, deberán proporcionar al personal incluido en el ámbito de aplicación de este real decreto equipos de protección individual adecuados para el desempeño de sus funciones y velar por el uso efectivo de éstos cuando, por la naturaleza de las misiones desempeñadas, sean necesarios. Así mismo, deberán adoptar las medidas necesarias en materia de primeros auxilios, lucha contra incendios y evacuación del personal, para lo cual se les asignarán los medios necesarios para poner en práctica estas medidas.",
-  "exp": "Equipos y medios, protección individual y primeros auxilios, incendios y evacuación: todo es correcto."
+  "exp": "Equipos y medios, protección individual y primeros auxilios, incendios y evacuación: todo es correcto.",
+  "cita": [
+   "Sin perjuicio de otras obligaciones que se indican en otras disposiciones de este real decreto, los órganos administrativos comprendidos en su ámbito de aplicación adoptarán las medidas necesarias para garantizar, en lo posible, la seguridad y salud del personal al utilizar medios y equipos.",
+   "Del mismo modo, deberán proporcionar al personal incluido en el ámbito de aplicación de este real decreto equipos de protección individual adecuados para el desempeño de sus funciones y velar por el uso efectivo de éstos cuando, por la naturaleza de las misiones desempeñadas, sean necesarios.",
+   "Así mismo, deberán adoptar las medidas necesarias en materia de primeros auxilios, lucha contra incendios y evacuación del personal, para lo cual se les asignarán los medios necesarios para poner en práctica estas medidas.",
+   "Siempre que sea posible, en supuestos de riesgo grave e inminente, el personal afectado deberá estar informado de su existencia y de las medidas adoptadas o que, en su caso, deban adoptarse en materia de prevención."
+  ]
  },
  {
   "n": "q:8",
@@ -133,7 +164,13 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Sus funciones generales serán diseñar, implantar y coordinar los planes y programas de acción preventiva, evaluar los riesgos, establecer las medidas preventivas y aquellas otras de naturaleza análoga que expresamente se les encomienden.",
-  "exp": "Vigilar la aplicación de las medidas no es función de los órganos: de la aplicación responde el <b>jefe de la unidad</b>."
+  "exp": "Vigilar la aplicación de las medidas no es función de los órganos: de la aplicación responde el <b>jefe de la unidad</b>.",
+  "cita": [
+   "1. Los órganos de prevención son el conjunto de medios humanos necesarios para realizar las actividades preventivas a fin de garantizar la adecuada protección de la seguridad y la salud en el desempeño de las actividades incluidas en el ámbito de aplicación.",
+   "Sus funciones generales serán diseñar, implantar y coordinar los planes y programas de acción preventiva, evaluar los riesgos, establecer las medidas preventivas y aquellas otras de naturaleza análoga que expresamente se les encomienden.",
+   "No obstante las funciones asignadas a los órganos de prevención, el jefe de cada una de las unidades, centros y organismos de la Guardia Civil será responsable de la aplicación de las medidas adoptadas para la mejora de la seguridad y la salud de sus subordinados, recogerá las propuestas y sugerencias que reciba y las hará llegar al órgano de prevención competente para resolver o proponer las medidas pertinentes.",
+   "Mediante orden ministerial se determinará el nivel orgánico, la adscripción, la dependencia orgánica y funcional, las normas de funcionamiento, el ámbito de competencias, los medios humanos y materiales y las funciones específicas de cada uno de los órganos de prevención que se establecen, teniendo en cuenta que deberán estar en condiciones de proporcionar un adecuado asesoramiento y el apoyo necesario en función de los riesgos existentes en su respectivo ámbito de actuación."
+  ]
  },
  {
   "n": "q:9",
@@ -150,7 +187,13 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "De esa propuesta se dará traslado al Director General de la Guardia Civil, a través del Servicio de Prevención de la Dirección General de la Guardia Civil, que podrá formular alegaciones en el plazo de 30 días hábiles desde su notificación.",
-  "exp": "Traslado al <b>Director General</b>, con <b>30 días hábiles</b> para alegar."
+  "exp": "Traslado al <b>Director General</b>, con <b>30 días hábiles</b> para alegar.",
+  "cita": [
+   "Si, como consecuencia del ejercicio de las funciones señaladas en el artículo anterior, la Inspección de Personal y Servicios de Seguridad de la Secretaría de Estado de Seguridad considera que existen incumplimientos o irregularidades en materia de riesgos profesionales, emitirá una propuesta de requerimiento sobre las cuestiones planteadas en dicha materia, en la que se recogerán las irregularidades detectadas, las medidas para subsanarlas y el plazo que considera necesario para su ejecución.",
+   "De esa propuesta se dará traslado al Director General de la Guardia Civil, a través del Servicio de Prevención de la Dirección General de la Guardia Civil, que podrá formular alegaciones en el plazo de 30 días hábiles desde su notificación.",
+   "Si no se formulasen alegaciones en el plazo señalado en el párrafo anterior, por no mantener discrepancias sobre la existencia de las anomalías en materia de prevención, ni sobre las medidas precisas para su subsanación, la propuesta de requerimiento adquirirá automáticamente carácter definitivo. En estos casos, el Director General de la Guardia Civil encomendará al Servicio de Prevención citado la realización de los trámites necesarios para que las medidas requeridas se lleven a cabo. Realizada la subsanación, el Servicio de Prevención dará cuenta a la Inspección de Personal y Servicios de Seguridad de la Secretaría de Estado de Seguridad.",
+   "En el caso de discrepancias con la propuesta de requerimiento, a la vista de las alegaciones formuladas por la Dirección General de la Guardia Civil en el referido plazo de 30 días hábiles, la Inspección de Personal y Servicios de Seguridad podrá elevar una propuesta de requerimiento definitivo al Secretario de Estado de Seguridad, quien, previos los informes que estime oportunos, dictará la resolución procedente."
+  ]
  },
  {
   "n": "q:10",
@@ -167,7 +210,14 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Las misiones de carácter militar que se encomienden a la Guardia Civil se regirán por sus normas específicas.",
-  "exp": "En el ámbito personal no se habla de «adscritos» y en el de actividades no figura la Ley Orgánica de Defensa Nacional."
+  "exp": "En el ámbito personal no se habla de «adscritos» y en el de actividades no figura la Ley Orgánica de Defensa Nacional.",
+  "cita": [
+   "Este real decreto será de aplicación en la Dirección General de la Guardia Civil, con las particularidades siguientes:",
+   "a) Ámbito personal: incluye a los miembros del Cuerpo de la Guardia Civil y a los miembros de las Fuerzas Armadas destinados en unidades, centros y organismos de la Dirección General de la Guardia Civil.",
+   "b) Ámbito de actividades: comprende las actividades específicas para el cumplimiento de las misiones encomendadas por la Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad.",
+   "Las misiones de carácter militar que se encomienden a la Guardia Civil se regirán por sus normas específicas.",
+   "A las funciones que realice el personal comprendido en el ámbito de aplicación de este real decreto que no presenten características exclusivas de las actividades de policía, seguridad, resguardo aduanero y servicios operativos de protección civil antes relacionadas les será de aplicación la normativa general sobre prevención de riesgos laborales, con las particularidades establecidas para la Administración General del Estado, y las contenidas en este real decreto sobre el derecho de información al personal, órganos de representación, cauces de participación y órganos de prevención, seguridad y vigilancia de la salud."
+  ]
  },
  {
   "n": "q:11",
@@ -184,7 +234,11 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "La prevención de riesgos laborales en la Guardia Civil deberá integrarse en el conjunto de sus actividades a través de la implantación y aplicación de un plan de prevención de riesgos laborales",
-  "exp": "Se integra mediante un <b>plan de prevención</b> de riesgos laborales."
+  "exp": "Se integra mediante un <b>plan de prevención</b> de riesgos laborales.",
+  "cita": [
+   "1. La prevención de riesgos laborales en la Guardia Civil deberá integrarse en el conjunto de sus actividades a través de la implantación y aplicación de un plan de prevención de riesgos laborales que deberá incluir todos los elementos necesarios para realizar la acción de prevención de riesgos en la Guardia Civil.",
+   "Los instrumentos esenciales para la gestión y aplicación del plan de prevención de riesgos son la evaluación de riesgos laborales y la planificación de la actividad preventiva a que se refiere el apartado siguiente."
+  ]
  },
  {
   "n": "q:14",
@@ -201,7 +255,12 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Esta evaluación será actualizada periódicamente o cuando cambien las condiciones de dichas actividades y será revisada, si fuera necesario, con ocasión de los daños para la seguridad y la salud que se han producido.",
-  "exp": "La evaluación se <b>actualiza</b> periódicamente y se <b>revisa</b> con ocasión de daños; la opción falsa dice «revisada periódicamente»."
+  "exp": "La evaluación se <b>actualiza</b> periódicamente y se <b>revisa</b> con ocasión de daños; la opción falsa dice «revisada periódicamente».",
+  "cita": [
+   "1. La prevención de riesgos laborales en la Guardia Civil deberá integrarse en el conjunto de sus actividades a través de la implantación y aplicación de un plan de prevención de riesgos laborales que deberá incluir todos los elementos necesarios para realizar la acción de prevención de riesgos en la Guardia Civil.",
+   "Los instrumentos esenciales para la gestión y aplicación del plan de prevención de riesgos son la evaluación de riesgos laborales y la planificación de la actividad preventiva a que se refiere el apartado siguiente.",
+   "2. La acción preventiva se planificará a partir de una evaluación inicial de los riesgos para la seguridad y la salud del personal, que se realizará, con carácter general, teniendo en cuenta la naturaleza de la actividad que se desarrolle, las características de los servicios en cuanto a la posibilidad de establecer medidas de prevención de riesgos laborales y las actividades preventivas desarrolladas hasta la fecha del estudio. Esta evaluación será actualizada periódicamente o cuando cambien las condiciones de dichas actividades y será revisada, si fuera necesario, con ocasión de los daños para la seguridad y la salud que se han producido."
+  ]
  },
  {
   "n": "q:15",
@@ -218,7 +277,10 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Corresponderá al Servicio de Prevención el ejercicio de las funciones relacionadas con el personal incluido en el ámbito de aplicación de este real decreto que esté destinado o en comisión de servicio en el extranjero y que no desempeñe misiones militares.",
-  "exp": "Personal en el extranjero sin misiones militares: <b>Servicio de Prevención</b>."
+  "exp": "Personal en el extranjero sin misiones militares: <b>Servicio de Prevención</b>.",
+  "cita": [
+   "Corresponderá al Servicio de Prevención el ejercicio de las funciones relacionadas con el personal incluido en el ámbito de aplicación de este real decreto que esté destinado o en comisión de servicio en el extranjero y que no desempeñe misiones militares. Para ello, tendrá en cuenta las peculiaridades derivadas de su organización, la dispersión geográfica, la naturaleza de las misiones que realizan y, en su caso, la aplicabilidad del derecho local del Estado correspondiente."
+  ]
  },
  {
   "n": "q:16",
@@ -235,7 +297,11 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Los órganos de prevención regulados en este real decreto deberán definir, implantar y mantener al día los planes de emergencia de los edificios e instalaciones correspondientes a su respectivo ámbito de competencias.",
-  "exp": "Los planes de emergencia corresponden a los <b>órganos de prevención</b>."
+  "exp": "Los planes de emergencia corresponden a los <b>órganos de prevención</b>.",
+  "cita": [
+   "Los órganos de prevención regulados en este real decreto deberán definir, implantar y mantener al día los planes de emergencia de los edificios e instalaciones correspondientes a su respectivo ámbito de competencias.",
+   "Estos planes se incorporarán como anexo a los correspondientes planes de seguridad de los centros y organismos de la Dirección General de la Guardia Civil."
+  ]
  },
  {
   "n": "q:17",
@@ -252,7 +318,11 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Si los resultados de la evaluación revelasen un riesgo para la seguridad y la salud o una posible repercusión sobre el embarazo o la lactancia, los mandos competentes de las unidades a que pertenezcan adoptarán las medidas necesarias de las previstas en las normas sobre destinos y permisos en la Guardia Civil y en la legislación vigente sobre permisos para el personal al servicio de las Administraciones públicas, para evitar la exposición de dichos riesgos.",
-  "exp": "Las medidas las adoptan los <b>mandos competentes</b> de las unidades."
+  "exp": "Las medidas las adoptan los <b>mandos competentes</b> de las unidades.",
+  "cita": [
+   "La evaluación de los riesgos a que se refiere el artículo 4 deberá comprender la determinación de la naturaleza, el grado y la duración de la exposición de la mujer en situación de embarazo o parto reciente a agentes, procedimientos o condiciones de trabajo que puedan influir negativamente en su salud o en la del feto, en cualquier actividad susceptible de presentar un riesgo específico.",
+   "Si los resultados de la evaluación revelasen un riesgo para la seguridad y la salud o una posible repercusión sobre el embarazo o la lactancia, los mandos competentes de las unidades a que pertenezcan adoptarán las medidas necesarias de las previstas en las normas sobre destinos y permisos en la Guardia Civil y en la legislación vigente sobre permisos para el personal al servicio de las Administraciones públicas, para evitar la exposición de dichos riesgos."
+  ]
  },
  {
   "n": "q:19",
@@ -269,7 +339,13 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "De esa propuesta se dará traslado al Director General de la Guardia Civil, a través del Servicio de Prevención de la Dirección General de la Guardia Civil, que podrá formular alegaciones en el plazo de 30 días hábiles desde su notificación.",
-  "exp": "Plazo de alegaciones: <b>30 días hábiles</b>."
+  "exp": "Plazo de alegaciones: <b>30 días hábiles</b>.",
+  "cita": [
+   "Si, como consecuencia del ejercicio de las funciones señaladas en el artículo anterior, la Inspección de Personal y Servicios de Seguridad de la Secretaría de Estado de Seguridad considera que existen incumplimientos o irregularidades en materia de riesgos profesionales, emitirá una propuesta de requerimiento sobre las cuestiones planteadas en dicha materia, en la que se recogerán las irregularidades detectadas, las medidas para subsanarlas y el plazo que considera necesario para su ejecución.",
+   "De esa propuesta se dará traslado al Director General de la Guardia Civil, a través del Servicio de Prevención de la Dirección General de la Guardia Civil, que podrá formular alegaciones en el plazo de 30 días hábiles desde su notificación.",
+   "Si no se formulasen alegaciones en el plazo señalado en el párrafo anterior, por no mantener discrepancias sobre la existencia de las anomalías en materia de prevención, ni sobre las medidas precisas para su subsanación, la propuesta de requerimiento adquirirá automáticamente carácter definitivo. En estos casos, el Director General de la Guardia Civil encomendará al Servicio de Prevención citado la realización de los trámites necesarios para que las medidas requeridas se lleven a cabo. Realizada la subsanación, el Servicio de Prevención dará cuenta a la Inspección de Personal y Servicios de Seguridad de la Secretaría de Estado de Seguridad.",
+   "En el caso de discrepancias con la propuesta de requerimiento, a la vista de las alegaciones formuladas por la Dirección General de la Guardia Civil en el referido plazo de 30 días hábiles, la Inspección de Personal y Servicios de Seguridad podrá elevar una propuesta de requerimiento definitivo al Secretario de Estado de Seguridad, quien, previos los informes que estime oportunos, dictará la resolución procedente."
+  ]
  },
  {
   "n": "q:20",
@@ -286,7 +362,11 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Se inspirarán en los siguientes principios generales: a) Evitar los riesgos. b) Evaluar los riesgos de imposible o muy difícil evitación",
-  "exp": "El texto dice «<b>evitar</b>» los riesgos, combatirlos «en su <b>origen</b>» y priorizar la protección <b>colectiva</b>."
+  "exp": "El texto dice «<b>evitar</b>» los riesgos, combatirlos «en su <b>origen</b>» y priorizar la protección <b>colectiva</b>.",
+  "cita": [
+   "Las medidas a desarrollar en orden a promover las condiciones de seguridad y salud en el ámbito de las funciones propias del Cuerpo de la Guardia Civil se inspirarán en los siguientes principios generales:",
+   "a) Evitar los riesgos. b) Evaluar los riesgos de imposible o muy difícil evitación. c) Combatir los riesgos en su origen. d) Adaptar el puesto al personal del ámbito de aplicación, en particular en lo que respecta a la concepción de los puestos de trabajo, así como a la elección de los equipos, con objeto de reducir los posibles efectos negativos del trabajo en la salud. e) Tener en cuenta la evolución de la técnica. f) Priorizar la protección colectiva sobre la individual. g) Estimular el interés de su personal por la seguridad y la salud en el trabajo a través de adecuados mecanismos de formación e información. h) Elegir los medios y equipos de trabajo más adecuados, teniendo en cuenta la evolución de la técnica, sustituyendo, siempre que sea posible por la naturaleza y circunstancias de los servicios a realizar, los que entrañen más riesgos por otros que supongan poco o ninguno. i) Incorporar a los métodos y procedimientos generales de trabajo, así como, siempre que ello sea posible, a los dispositivos de servicios específicos, las previsiones más adecuadas, en orden a la salvaguarda de la seguridad y salud de su personal. j) Dar las debidas instrucciones a su personal."
+  ]
  },
  {
   "n": "q:21",
@@ -303,7 +383,10 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "El personal incluido en el ámbito de aplicación de este real decreto tendrá derecho a efectuar propuestas a los órganos de prevención regulados en el artículo 13",
-  "exp": "El derecho a hacer propuestas es el <b>principio de participación</b>."
+  "exp": "El derecho a hacer propuestas es el <b>principio de participación</b>.",
+  "cita": [
+   "El personal incluido en el ámbito de aplicación de este real decreto tendrá derecho a efectuar propuestas a los órganos de prevención regulados en el artículo 13, que serán analizadas y valoradas por el órgano de asesoramiento previsto en el artículo 14, dirigidas a la mejora de los niveles de protección de la seguridad y la salud."
+  ]
  },
  {
   "n": "q:22",
@@ -320,14 +403,19 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Su contenido se inspira en los principios relativos a: a) La planificación de la prevención. b) La eliminación o disminución de factores de riesgo. c) La información. d) La participación y consulta. e) La formación. f) Integración de la prevención.",
-  "exp": "De las opciones, solo la <b>formación</b> figura entre los principios del artículo."
+  "exp": "De las opciones, solo la <b>formación</b> figura entre los principios del artículo.",
+  "cita": [
+   "El objeto de este real decreto es promover la seguridad y la salud en el trabajo del personal del Cuerpo de la Guardia Civil y de los miembros de las Fuerzas Armadas que presten servicios en unidades, centros y organismos de la Dirección General de la Guardia Civil, y adaptar las estructuras y medidas diseñadas por la Directiva 89/391/CEE del Consejo, de 12 de junio de 1989, relativa a la aplicación de medidas para promover la mejora de la seguridad y la salud de los trabajadores en el trabajo, y por la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales, a sus peculiaridades organizativas y de participación y a las especiales características de las funciones que tiene encomendadas.",
+   "A tal efecto, su contenido se inspira en los principios relativos a:",
+   "a) La planificación de la prevención. b) La eliminación o disminución de factores de riesgo. c) La información. d) La participación y consulta. e) La formación. f) Integración de la prevención."
+  ]
  },
  {
   "n": "q:25",
   "en": "Real Decreto sobre prevención de riesgos laborales en la Guardia Civil. Señale cuál de los siguientes NO corresponde con uno de los principios generales en los que se inspiran las medidas a desarrollar en orden a promover las condiciones de seguridad y salud en el ámbito de las funciones propias del Cuerpo de la Guardia Civil:",
   "op": [
    "Tener en cuenta la evolución de la técnica.",
-   "Elegir los medios y equipos de trabajo más adecuados, teniendo en cuenta la evolución de la técnica, debiendo sustituir los que entrañen más riesgos por Otros que supongan POCO o ninguno.",
+   "Elegir los medios y equipos de trabajo más adecuados, teniendo en cuenta la evolución de la técnica, debiendo sustituir los que entrañen más riesgos por otros que supongan poco o ninguno.",
    "Estimular el interés de su personal por la seguridad y la salud en el trabajo a través de adecuados mecanismos de formación e información.",
    "Incorporar a los métodos y procedimientos generales de trabajo, así como, siempre que ello sea posible, a los dispositivos de servicios específicos, las previsiones más adecuadas, en orden a la salvaguarda de la seguridad y salud de su personal."
   ],
@@ -337,7 +425,11 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Elegir los medios y equipos de trabajo más adecuados, teniendo en cuenta la evolución de la técnica, sustituyendo, siempre que sea posible por la naturaleza y circunstancias de los servicios a realizar, los que entrañen más riesgos por otros que supongan poco o ninguno.",
-  "exp": "La sustitución se hace «siempre que sea posible por la naturaleza y circunstancias de los servicios»; la opción la convierte en obligación absoluta."
+  "exp": "La sustitución se hace «siempre que sea posible por la naturaleza y circunstancias de los servicios»; la opción la convierte en obligación absoluta.",
+  "cita": [
+   "Las medidas a desarrollar en orden a promover las condiciones de seguridad y salud en el ámbito de las funciones propias del Cuerpo de la Guardia Civil se inspirarán en los siguientes principios generales:",
+   "a) Evitar los riesgos. b) Evaluar los riesgos de imposible o muy difícil evitación. c) Combatir los riesgos en su origen. d) Adaptar el puesto al personal del ámbito de aplicación, en particular en lo que respecta a la concepción de los puestos de trabajo, así como a la elección de los equipos, con objeto de reducir los posibles efectos negativos del trabajo en la salud. e) Tener en cuenta la evolución de la técnica. f) Priorizar la protección colectiva sobre la individual. g) Estimular el interés de su personal por la seguridad y la salud en el trabajo a través de adecuados mecanismos de formación e información. h) Elegir los medios y equipos de trabajo más adecuados, teniendo en cuenta la evolución de la técnica, sustituyendo, siempre que sea posible por la naturaleza y circunstancias de los servicios a realizar, los que entrañen más riesgos por otros que supongan poco o ninguno. i) Incorporar a los métodos y procedimientos generales de trabajo, así como, siempre que ello sea posible, a los dispositivos de servicios específicos, las previsiones más adecuadas, en orden a la salvaguarda de la seguridad y salud de su personal. j) Dar las debidas instrucciones a su personal."
+  ]
  },
  {
   "n": "q:26",
@@ -354,7 +446,13 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Esta vigilancia se llevará a cabo respetando la dignidad de la persona, la confidencialidad de toda la información relacionada con el estado de salud y garantizando que los datos que deriven de esa vigilancia no podrán ser usados con fines discriminatorios ni en perjuicio de la persona afectada.",
-  "exp": "La confidencialidad se refiere a la información relacionada con el <b>estado de salud</b>, no a toda la relacionada con el afectado."
+  "exp": "La confidencialidad se refiere a la información relacionada con el <b>estado de salud</b>, no a toda la relacionada con el afectado.",
+  "cita": [
+   "La Dirección General de la Guardia Civil garantizará una adecuada vigilancia de la salud de su personal en función de los riesgos profesionales a los que estén expuestos. Esta vigilancia se llevará a cabo respetando la dignidad de la persona, la confidencialidad de toda la información relacionada con el estado de salud y garantizando que los datos que deriven de esa vigilancia no podrán ser usados con fines discriminatorios ni en perjuicio de la persona afectada. Tendrá carácter periódico y, oídas las asociaciones profesionales representativas, de acuerdo con el cauce de participación y representación de los guardias civiles previsto en la disposición final tercera de la Ley 29/2014, de 28 de noviembre, de Régimen del personal de la Guardia Civil, se determinará su obligatoriedad para aquellos supuestos en los que la realización de los reconocimientos médicos y psicológicos sean necesarios para verificar si el estado de salud de este personal puede constituir un peligro para sí mismo o para las demás personas relacionadas con la función que desempeña.",
+   "Estos reconocimientos serán realizados por la Sanidad de la Guardia Civil o bien, mediante la contratación de un servicio de prevención ajeno.",
+   "Los resultados de los reconocimientos serán comunicados por medios electrónicos a cada uno de los interesados. El contenido de la información médica de carácter personal que se derive de los reconocimientos se limitará al personal médico y autoridades que lleven a cabo la vigilancia de la salud, sin que pueda facilitarse a otras personas sin consentimiento expreso de la persona afectada.",
+   "No obstante lo anterior, los que ostenten el mando de unidad nivel Comandancia o similar y sus órganos de prevención serán informados de las conclusiones que se deriven de los reconocimientos efectuados en relación con la aptitud del interesado para el desempeño del puesto de trabajo o con la necesidad de introducir o mejorar las medidas de protección y prevención, para que puedan desarrollar correctamente sus funciones en materia preventiva."
+  ]
  },
  {
   "n": "q:27",
@@ -371,7 +469,11 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Los órganos de prevención regulados en este real decreto deberán definir, implantar y mantener al día los planes de emergencia de los edificios e instalaciones correspondientes a su respectivo ámbito de competencias.",
-  "exp": "Los planes de emergencia corresponden a los <b>órganos de prevención</b>."
+  "exp": "Los planes de emergencia corresponden a los <b>órganos de prevención</b>.",
+  "cita": [
+   "Los órganos de prevención regulados en este real decreto deberán definir, implantar y mantener al día los planes de emergencia de los edificios e instalaciones correspondientes a su respectivo ámbito de competencias.",
+   "Estos planes se incorporarán como anexo a los correspondientes planes de seguridad de los centros y organismos de la Dirección General de la Guardia Civil."
+  ]
  },
  {
   "n": "q:28",
@@ -388,7 +490,13 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Los órganos administrativos comprendidos en su ámbito de aplicación adoptarán las medidas necesarias para garantizar, en lo posible, la seguridad y salud del personal al utilizar medios y equipos.",
-  "exp": "Los equipos son de protección <b>individual</b>, se prevé la <b>evacuación</b> y la información en riesgo grave es «siempre que sea posible»."
+  "exp": "Los equipos son de protección <b>individual</b>, se prevé la <b>evacuación</b> y la información en riesgo grave es «siempre que sea posible».",
+  "cita": [
+   "Sin perjuicio de otras obligaciones que se indican en otras disposiciones de este real decreto, los órganos administrativos comprendidos en su ámbito de aplicación adoptarán las medidas necesarias para garantizar, en lo posible, la seguridad y salud del personal al utilizar medios y equipos.",
+   "Del mismo modo, deberán proporcionar al personal incluido en el ámbito de aplicación de este real decreto equipos de protección individual adecuados para el desempeño de sus funciones y velar por el uso efectivo de éstos cuando, por la naturaleza de las misiones desempeñadas, sean necesarios.",
+   "Así mismo, deberán adoptar las medidas necesarias en materia de primeros auxilios, lucha contra incendios y evacuación del personal, para lo cual se les asignarán los medios necesarios para poner en práctica estas medidas.",
+   "Siempre que sea posible, en supuestos de riesgo grave e inminente, el personal afectado deberá estar informado de su existencia y de las medidas adoptadas o que, en su caso, deban adoptarse en materia de prevención."
+  ]
  },
  {
   "n": "q:29",
@@ -405,7 +513,14 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Ámbito personal: incluye a los miembros del Cuerpo de la Guardia Civil y a los miembros de las Fuerzas Armadas destinados en unidades, centros y organismos de la Dirección General de la Guardia Civil. b) Ámbito de actividades: comprende las actividades específicas para el cumplimiento de las misiones encomendadas por la Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad. Las misiones de carácter militar que se encomienden a la Guardia Civil se regirán por sus normas específicas.",
-  "exp": "Las tres particularidades reproducen el artículo."
+  "exp": "Las tres particularidades reproducen el artículo.",
+  "cita": [
+   "Este real decreto será de aplicación en la Dirección General de la Guardia Civil, con las particularidades siguientes:",
+   "a) Ámbito personal: incluye a los miembros del Cuerpo de la Guardia Civil y a los miembros de las Fuerzas Armadas destinados en unidades, centros y organismos de la Dirección General de la Guardia Civil.",
+   "b) Ámbito de actividades: comprende las actividades específicas para el cumplimiento de las misiones encomendadas por la Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad.",
+   "Las misiones de carácter militar que se encomienden a la Guardia Civil se regirán por sus normas específicas.",
+   "A las funciones que realice el personal comprendido en el ámbito de aplicación de este real decreto que no presenten características exclusivas de las actividades de policía, seguridad, resguardo aduanero y servicios operativos de protección civil antes relacionadas les será de aplicación la normativa general sobre prevención de riesgos laborales, con las particularidades establecidas para la Administración General del Estado, y las contenidas en este real decreto sobre el derecho de información al personal, órganos de representación, cauces de participación y órganos de prevención, seguridad y vigilancia de la salud."
+  ]
  },
  {
   "n": "q:30",
@@ -422,7 +537,12 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "La acción preventiva se planificará a partir de una evaluación inicial de los riesgos para la seguridad y la salud del personal, que se realizará, con carácter general, teniendo en cuenta la naturaleza de la actividad que se desarrolle, las características de los servicios en cuanto a la posibilidad de establecer medidas de prevención de riesgos laborales y las actividades preventivas desarrolladas hasta la fecha del estudio.",
-  "exp": "La evaluación inicial se hace con carácter <b>general</b>, no «exclusivo»."
+  "exp": "La evaluación inicial se hace con carácter <b>general</b>, no «exclusivo».",
+  "cita": [
+   "1. La prevención de riesgos laborales en la Guardia Civil deberá integrarse en el conjunto de sus actividades a través de la implantación y aplicación de un plan de prevención de riesgos laborales que deberá incluir todos los elementos necesarios para realizar la acción de prevención de riesgos en la Guardia Civil.",
+   "Los instrumentos esenciales para la gestión y aplicación del plan de prevención de riesgos son la evaluación de riesgos laborales y la planificación de la actividad preventiva a que se refiere el apartado siguiente.",
+   "2. La acción preventiva se planificará a partir de una evaluación inicial de los riesgos para la seguridad y la salud del personal, que se realizará, con carácter general, teniendo en cuenta la naturaleza de la actividad que se desarrolle, las características de los servicios en cuanto a la posibilidad de establecer medidas de prevención de riesgos laborales y las actividades preventivas desarrolladas hasta la fecha del estudio. Esta evaluación será actualizada periódicamente o cuando cambien las condiciones de dichas actividades y será revisada, si fuera necesario, con ocasión de los daños para la seguridad y la salud que se han producido."
+  ]
  },
  {
   "n": "q:31",
@@ -439,7 +559,13 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "Sus funciones generales serán diseñar, implantar y coordinar los planes y programas de acción preventiva, evaluar los riesgos, establecer las medidas preventivas y aquellas otras de naturaleza análoga que expresamente se les encomienden.",
-  "exp": "Confeccionar los planes de seguridad no es función suya: a ellos se anexan los planes de emergencia."
+  "exp": "Confeccionar los planes de seguridad no es función suya: a ellos se anexan los planes de emergencia.",
+  "cita": [
+   "1. Los órganos de prevención son el conjunto de medios humanos necesarios para realizar las actividades preventivas a fin de garantizar la adecuada protección de la seguridad y la salud en el desempeño de las actividades incluidas en el ámbito de aplicación.",
+   "Sus funciones generales serán diseñar, implantar y coordinar los planes y programas de acción preventiva, evaluar los riesgos, establecer las medidas preventivas y aquellas otras de naturaleza análoga que expresamente se les encomienden.",
+   "No obstante las funciones asignadas a los órganos de prevención, el jefe de cada una de las unidades, centros y organismos de la Guardia Civil será responsable de la aplicación de las medidas adoptadas para la mejora de la seguridad y la salud de sus subordinados, recogerá las propuestas y sugerencias que reciba y las hará llegar al órgano de prevención competente para resolver o proponer las medidas pertinentes.",
+   "Mediante orden ministerial se determinará el nivel orgánico, la adscripción, la dependencia orgánica y funcional, las normas de funcionamiento, el ámbito de competencias, los medios humanos y materiales y las funciones específicas de cada uno de los órganos de prevención que se establecen, teniendo en cuenta que deberán estar en condiciones de proporcionar un adecuado asesoramiento y el apoyo necesario en función de los riesgos existentes en su respectivo ámbito de actuación."
+  ]
  },
  {
   "n": "q:32",
@@ -456,7 +582,12 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "La Inspección de Personal y Servicios de Seguridad de la Secretaría de Estado de Seguridad realizará las funciones de inspección y control externo de las actividades de los órganos citados en el párrafo anterior.",
-  "exp": "La inspección y control <b>externo</b> es de la Inspección de Personal y Servicios de Seguridad; el interno, de cada órgano de prevención."
+  "exp": "La inspección y control <b>externo</b> es de la Inspección de Personal y Servicios de Seguridad; el interno, de cada órgano de prevención.",
+  "cita": [
+   "Corresponderá a cada órgano de prevención la inspección y el control interno de la actividad de los órganos de ellos dependientes y de las medidas que hayan adoptado para mejorar las condiciones de seguridad y de salud del personal afectado por aquéllas.",
+   "La Inspección de Personal y Servicios de Seguridad de la Secretaría de Estado de Seguridad realizará las funciones de inspección y control externo de las actividades de los órganos citados en el párrafo anterior. A estos efectos, el Servicio de Prevención le remitirá una copia de la memoria anual que elabore.",
+   "Si en la realización de tales inspecciones y controles se detectara la existencia de situaciones de grave e inminente riesgo para la seguridad y la salud, que no deban ser asumidas en virtud de la naturaleza de las funciones que se realizan, se comunicará urgentemente a la subdirección general competente para adoptar las medidas necesarias para su corrección. De las demás deficiencias observadas se elevará informe a la subdirección general competente, por conducto del Servicio de Prevención, con las recomendaciones que estimen convenientes para su solución."
+  ]
  },
  {
   "n": "q:33",
@@ -473,6 +604,9 @@
   "norma": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "apartado": "Real Decreto 179/2005, de 18 de febrero, sobre prevención de riesgos laborales en la Guardia Civil",
   "lit": "La acción preventiva se planificará a partir de una evaluación inicial de los riesgos para la seguridad y la salud del personal, que se realizará, con carácter general, teniendo en cuenta la naturaleza de la actividad que se desarrolle, las características de los servicios en cuanto a la posibilidad de establecer medidas de prevención de riesgos laborales y las actividades preventivas desarrolladas hasta la fecha del estudio.",
-  "exp": "Naturaleza de la actividad, características de los servicios y actividades desarrolladas: todas."
+  "exp": "Naturaleza de la actividad, características de los servicios y actividades desarrolladas: todas.",
+  "cita": [
+   "2. La acción preventiva se planificará a partir de una evaluación inicial de los riesgos para la seguridad y la salud del personal, que se realizará, con carácter general, teniendo en cuenta la naturaleza de la actividad que se desarrolle, las características de los servicios en cuanto a la posibilidad de establecer medidas de prevención de riesgos laborales y las actividades preventivas desarrolladas hasta la fecha del estudio. Esta evaluación será actualizada periódicamente o cuando cambien las condiciones de dichas actividades y será revisada, si fuera necesario, con ocasión de los daños para la seguridad y la salud que se han producido."
+  ]
  }
 ]

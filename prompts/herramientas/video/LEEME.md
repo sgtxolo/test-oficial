@@ -19,3 +19,7 @@ Scripts usados en el vídeo de 95 preguntas. Son el registro del método: llevan
 - `comp.py` + `match.py`: puzles; separa huecos y piezas y compara formas (la correcta pasa de 0,93). Piezas con cuellos finos: separar con radio 2 en vez de 5. Algunas figuras salen achatadas: probar el estirado vertical.
 - `tile.py`: huecos de dos celdas sin línea divisoria (encaja las dos piezas dentro del hueco).
 - `fin.py` (imagen limpia y repetidas), `psico-fb.js` (explicaciones), `psico-add.js` (banco).
+
+## Citas con el apartado completo (`citas/`, 28/11/2026)
+
+Orden usado: `parr.js` (saca del temario el apartado entero de cada pregunta) → `ov.js` → `dump.js` (hojas para revisar a mano cada pregunta contra su cita) → `ov2.js` (arreglos tras la revisión) → `aplica.js`. Llevan ids y arreglos de ese lote: sirven de modelo. El texto escaneado del código de visados sale con defectos de OCR: transcribir desde la imagen del PDF.
