@@ -1,9 +1,28 @@
 # Vídeos con preguntas tipo test → aplicaciones de estudio
 
-Guía para cuando el usuario pasa un vídeo (grabación de móvil o de pantalla) con preguntas tipo test. Responde siempre en español.
-Carpeta de trabajo real: `C:\Users\ruben\Desktop\HTML OFICIAL` (no la copia de OneDrive). Un solo vídeo cada vez, de principio a fin, sin preguntar entre pasos.
+**Este es el único prompt para vídeos.** El usuario solo adjunta el vídeo (uno o varios) y pega esto, sin indicar tipo ni tema:
 
-## 0. Qué tipo de vídeo es
+```
+Lee y sigue entera la guía C:\Users\ruben\Desktop\HTML OFICIAL\prompts\PROMPT_VIDEOS_TEST.md con los vídeos que adjunto. Hazlo todo de principio a fin sin preguntarme.
+```
+
+Responde siempre en español. Carpeta de trabajo real: `C:\Users\ruben\Desktop\HTML OFICIAL` (no la copia de OneDrive). Los vídeos se hacen de uno en uno, de principio a fin, sin preguntar entre pasos. Que un vídeo esté en una carpeta llamada «ya en la aplicación» no significa que esté metido: comprobarlo en la app.
+
+## REGLA PRINCIPAL: lo marcado en el vídeo NO es la respuesta (usuario, 28/11/2026)
+
+El usuario, para pasar rápido, **marca opciones al azar**. Esas marcas son erróneas y **se ignoran siempre**: casillas de la plantilla de respuestas (X, cuadrados rellenos, círculos), opción seleccionada, botones «Estoy seguro / Dudo entre…», puntuaciones, «NO APTO», páginas de revisión y la posición del cursor. Tampoco se usan para deshacer una duda ni como pista.
+
+La respuesta de **cada** pregunta se obtiene comprobando las cuatro opciones contra el enunciado:
+
+- **Conocimientos**: con el texto literal del temario del usuario. En «señale la INCORRECTA», localizar también las tres verdaderas; en «todas / ninguna / A y B», comprobar cada opción.
+- **Inglés**: por la regla gramatical, descartando las otras tres una a una.
+- **Psicotécnicos**: resolviendo el ejercicio (cálculo o comparación de figuras) y confirmando que solo una opción cumple.
+
+Antes de subir, hacer una **segunda pasada** independiente sobre todas: enunciado (¿pide la correcta o la incorrecta?), respuesta guardada y justificación deben cuadrar. Lo que no se pueda demostrar no se inventa: se lista como dudoso (conocimientos e inglés) o se deja fuera (psicotécnicos).
+
+Única excepción: si el usuario dice expresamente que ese vídeo muestra la corrección oficial. Aun así, contrastarla con el temario.
+
+## 0. Qué tipo de pregunta es (se decide pregunta a pregunta)
 
 | Tipo | Destino |
 |---|---|
@@ -11,7 +30,7 @@ Carpeta de trabajo real: `C:\Users\ruben\Desktop\HTML OFICIAL` (no la copia de O
 | INGLÉS | `test-oficial-ingles.html`, tema de gramática que toque |
 | PSICOTÉCNICOS | `test-oficial-ingles.html`, tema 42 «Psicotécnicos» |
 
-Si el usuario no dice el tipo, se deduce del vídeo. Si un vídeo mezcla tipos, cada pregunta va a su destino.
+El tipo lo deduce Claude. Si un vídeo mezcla tipos, o se adjuntan varios de tipos distintos, cada pregunta va a su destino y se avisa claramente (al empezar y en el resumen) de qué tipos ha traído cada vídeo.
 
 **Temas distintos (regla del usuario, 26/11/2026)**: los vídeos pueden ser de cualquier tema, y uno mismo puede mezclar varios. Analizar **cada pregunta** (título del test, enunciado, norma citada y respuesta) y ponerla en el tema que le corresponde, comprobándolo contra el temario del usuario; no dar por hecho que es el Tema 1 ni que todo el vídeo es del mismo tema. La numeración de la academia (p. ej. «Tema 1.1») puede no coincidir con la suya: manda su temario. Cada tema lleva sus propios ids, enlaces y script. En inglés, igual con el tema de gramática; en psicotécnicos, todo al 42. Si una pregunta no encaja en ningún tema de su temario, no meterla a la fuerza: listarla al final.
 
@@ -22,7 +41,7 @@ Si el usuario no dice el tipo, se deduce del vídeo. Si un vídeo mezcla tipos, 
 - Pantalla (1440p): 3 fps, recortar la zona de preguntas y pasar `prompts/herramientas/ocr-windows.ps1`; agrupar apariciones repetidas y votar el texto. Móvil (baja resolución o scroll rápido): 4-8 fps y leer a ojo.
 - **Contar**: preguntas leídas = preguntas de cada test (número de la plantilla). Si falta alguna, volver a esos fotogramas. Ninguna opción cortada ni línea de hueco (`__________`) perdida; el OCR se come esas líneas y confunde «lo»/«10», «El»/«EI».
 - Transcripción **literal**: enunciado y 4 opciones en el orden del vídeo. No corregir ni mejorar el texto de la academia; si está mal redactado, decirlo en la explicación.
-- Si el vídeo marca la respuesta (fila verde), se usa y se comprueba. Si no la marca, la resuelve Claude. Si hay duda real, decirlo al final con el número de pregunta.
+- La respuesta la resuelve siempre Claude (ver la regla principal); las marcas del vídeo no se transcriben ni se miran. Si hay duda real, decirlo al final con el número de pregunta.
 - **Repetidas (regla del usuario, 26/11/2026)**: si el **enunciado es el mismo** que el de una pregunta que ya está en la app (o que otra del mismo vídeo), **no se pone**, aunque cambien las opciones o la respuesta. Las que solo **se parecen** (otra redacción) **sí entran**. «Mismo enunciado» = mismo texto ignorando tildes, mayúsculas, signos, espacios y el prefijo con el nombre de la ley. Única excepción: enunciados genéricos («De los recursos. Señale la opción CORRECTA/INCORRECTA», o en inglés y psicotécnicos «Choose the correct option», «Pregunta psicotécnica»), donde la pregunta está en las opciones o en la imagen: ahí es repetida si además las opciones (o la imagen) son las mismas. Comparar con **todo** el banco, no solo con el tema detectado. Al copiar el script modelo, cambiar su criterio (compara enunciado + respuesta). Las preguntas que ya estaban no se borran.
 - **Botón «Oficial»**: lo añadido tiene que salir al elegir origen **Oficial** al montar el test. Conocimientos: dentro de `QUESTIONS[tema]` (id `T-N`; nunca en el banco IA ni Forma, sin `-ia-`/`-forma-` en el id). Inglés y psicotécnicos: **sin** `ia:true` ni `sim`. Comprobarlo en el navegador (`preguntasOficialesDe(t)` / `preguntasOficialesDeEN(t)` y el contador del botón).
 - Informar al final: preguntas vistas, añadidas por tema, repetidas (cuáles), dudosas, sin tema y no legibles.
@@ -37,7 +56,7 @@ Modelo ya hecho: `prompts/herramientas/oficiales-seras-t1b.js` + `oficiales-sera
   `<span class="ex-resp">Respuesta correcta: <b>B</b> · <mark class="ex-key">respuesta</mark></span><span class="ref-norma">Art. X.Y · Nombre de la norma</span><span class="ref-concepto">"literal del temario"</span>Explicación breve de por qué es esa y por qué fallan las otras.`
   (lila = artículo, rojo = párrafo literal, sin letras de opciones en el texto de la explicación porque la app baraja; el origen lo añade la app).
 - Los tres enlaces deben funcionar:
-  - **Esquema**: párrafo exacto en `prompts/herramientas/temaN/mapa-fijo-tN.json` y `esquemas-datos/mapa-preguntas.js` (sin regenerar entero).
+  - **Esquema**: párrafo exacto en `prompts/herramientas/temaN/mapa-fijo-tN.json` y `esquemas-datos/mapa-preguntas.js` (sin regenerar entero). **Ninguna pregunta se queda sin enlace**: si el párrafo no está en el esquema, se añade literal desde el temario (modelo `prompts/herramientas/oficiales-seras-parrafos.js`) sin descolocar los enlaces existentes. Antes de decir que un texto no está, buscarlo también repartido en varios párrafos.
   - **Subrayado**: `expres-subrayado/tN-preg-extra.json` y `datos-tN.js`. Si falta el artículo, recortarlo del PDF con `expres-subrayado-anadir-piezas.py` (usar `/c/Users/ruben/bin/py`), revisar la imagen y añadir la pieza a `datos-tN.js`. Páginas tachadas o MOD no se usan.
   - **Esquema clave** (si el tema lo tiene): `clave-tests.js N`, `clave-mejoras-datos.js N`, `clave-esquema-nuevo.js N`, `clave-of-datos.js N` y después volver a pasar los scripts de inserción del tema (también los anteriores).
 - Si un tema no tiene alguno de los tres, decirlo.
@@ -63,4 +82,4 @@ Modelo ya hecho: `prompts/herramientas/oficiales-seras-t1b.js` + `oficiales-sera
 1. Sintaxis de los `<script>` del HTML y de los `.js` tocados.
 2. Navegador (`preview_start` «estudio-node»): borrar service worker y cachés antes de probar; comprobar todas las nuevas por script (explicación, imagen, enlaces) y abrir a ojo un ejemplo de cada enlace.
 3. `node prompts/herramientas/bump-cache.js`, commit solo de lo propio y push a `origin main`.
-4. Resumen final corto: dónde han quedado (ids), cuántas, repetidas, dudosas y qué no se ha probado.
+4. Resumen final corto: tipos que traía cada vídeo, dónde han quedado (ids), cuántas, repetidas, dudosas, que la segunda pasada de respuestas se ha hecho y qué no se ha probado.
