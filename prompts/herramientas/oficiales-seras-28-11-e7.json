@@ -1,0 +1,1434 @@
+[
+ {
+  "lote": "e7",
+  "i": 0,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 7.27",
+    "k": 78
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Siempre que no constituyan delito, qué falta constituye no impedir que el personal subordinado realice cualquier acción u omisión tipificada como falta muy grave en la presente Ley:",
+  "opciones": [
+   "Falta muy grave.",
+   "Falta menos grave.",
+   "Falta grave.",
+   "No constituye falta."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7.27 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "27. No impedir que el personal subordinado realice cualquier acción u omisión tipificada como falta muy grave en la presente Ley.",
+  "exp": "Es falta muy grave del art. 7.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "78-29",
+  "pz": "b-7",
+  "id": "26-395"
+ },
+ {
+  "lote": "e7",
+  "i": 1,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 22",
+    "k": 93
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. En relación con la prescripción de las sanciones, señale la opción CORRECTA:",
+  "opciones": [
+   "El quebrantamiento del cumplimiento de una sanción disciplinaria no produce efectos sobre su prescripción pero Sí genera una nueva responsabilidad disciplinaria.",
+   "Cuando el cumplimiento de una sanción hubiera dado comienzo y se quebrantase dicho cumplimiento, el plazo de prescripción de esta sanción comenzará a computarse desde que se haya producido el quebrantamiento.",
+   "La prescripción no se interrumpirá cuando se suspenda el cumplimiento de la sanción en los casos previstos en esta Ley.",
+   "Este plazo comenzará a computarse desde que la falta se hubiese cometido."
+  ],
+  "correcta": 1,
+  "lila": "Art. 22 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Estos plazos comenzarán a computarse desde el día en que se notifique al interesado la resolución sancionadora o desde que se quebrantase su cumplimiento, si hubiera comenzado. 2. La prescripción se interrumpirá cuando se suspenda el cumplimiento de la sanción en los casos previstos en esta Ley.",
+  "exp": "Quebrantado el cumplimiento, el plazo corre desde el quebrantamiento; la suspensión interrumpe la prescripción.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "93-2",
+  "pz": "b-22",
+  "id": "26-396"
+ },
+ {
+  "lote": "e7",
+  "i": 2,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 24.1",
+    "k": 95
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Del ejercicio de la potestad disciplinaria. ¿Qué deber tiene todo mando que observe alguna infracción cometida por un componente del Cuerpo de inferior empleo, que no le esté directamente subordinado?:",
+  "opciones": [
+   "De ordenar, entre otras medidas, que el presunto infractor se persone de manera inmediata en su Unidad. Centro u Organismo que constituya su destino cuando la naturaleza y circunstancias de la falta exijan una acción inmediata para mantener la disciplina, evitar un posible perjuicio grave al servicio o a la buena imagen de la Institución.",
+   "De corregir la infracción observada.",
+   "De formular un parte disciplinario si no tiene competencia para ordenar el inicio del procedimiento sancionador.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 24.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. Todo mando tiene el deber de corregir las infracciones que observe en los de inferior empleo, aunque no le estén directamente subordinados, sin que ello suponga sanción alguna. Si, además, las considera merecedoras de sanción, formulará parte disciplinario o acordará el inicio del procedimiento sancionador que corresponda, si tuviera competencia para ello.",
+  "exp": "Todo mando tiene el deber de corregir las infracciones de los de inferior empleo.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "95-1",
+  "pz": "b-24",
+  "id": "26-397"
+ },
+ {
+  "lote": "e7",
+  "i": 4,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 23.2",
+    "k": 94
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. De la potestad disciplinaria. Señale la opción CORRECTA:",
+  "opciones": [
+   "Un Juez o Magistrado tendrá competencia para sancionar disciplinariamente a un Guardia Civil que se encuentre bajo su dependencia funcional.",
+   "El Subdelegado del Gobierno bajo cuya dependencia funcional presten servicio miembros del Cuerpo de la Guardia Civil, podrá instar el ejercicio de la potestad disciplinaria.",
+   "Las autoridades bajo cuya dependencia funcional presten servicio los miembros de la Guardia Civil podrán instar el ejercicio de la potestad disciplinaria, a través del Director General quien deberá disponer, en todo caso, la apertura del correspondiente procedimiento disciplinario.",
+   "Sólo pueden instar el ejercicio de la potestad disciplinaria las autoridades y mandos de los Ministerios de Defensa e Interior, en los términos establecidos en esta Ley."
+  ],
+  "correcta": 1,
+  "lila": "Art. 23.2 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "2. Tendrán la facultad de instar el ejercicio de la potestad disciplinaria ante el Director General de la Policía y de la Guardia Civil, las autoridades bajo cuya dependencia funcional presten servicio los miembros del Cuerpo de la Guardia Civil.",
+  "exp": "Las autoridades bajo cuya dependencia funcional presten servicio pueden instar la potestad; no sancionar.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "94-2",
+  "pz": "b-23",
+  "id": "26-398"
+ },
+ {
+  "lote": "e7",
+  "i": 5,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 35",
+    "k": 106
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Competencias sobre el personal que preste servicio en el extranjero. Con carácter general. ¿a quién corresponde la competencia para conocer de las faltas leves del personal que preste servicio en el extranjero, a falta de otros mandos que la tengan por aplicación de las normas establecidas en esta Ley?:",
+  "opciones": [
+   "Al Mando de Operaciones.",
+   "Al Director General de la Guardia Civil.",
+   "Al Mando de la misión extranjera.",
+   "Al Director Adjunto Operativo."
+  ],
+  "correcta": 3,
+  "lila": "Art. 35 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "La competencia para conocer las faltas leves y graves cometidas por el personal que preste servicio en el extranjero corresponde, a falta de otros mandos que la tengan por aplicación de las reglas precedentes, al Director Adjunto Operativo. Esta competencia también podrá ser ejercida por el Director General de la Policía y de la Guardia Civil.",
+  "exp": "Al Director Adjunto Operativo.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "106-1",
+  "pz": "b-35",
+  "id": "26-399"
+ },
+ {
+  "lote": "e7",
+  "i": 6,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 50",
+    "k": 121
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 50.6",
+    "k": 121
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Del procedimiento por faltas leves. Señale la opción CORRECTA:",
+  "opciones": [
+   "La tramitación de este procedimiento deberá completarse en el plazo de seis meses desde el acuerdo de inicio.",
+   "Cuando el inicio de este procedimiento se hubiera acordado por los Oficiales Jefes de Zona, en la orden de incoación se podrá designar al instructor de este procedimiento que debe ser de superior empleo al del interesado.",
+   "Todas las opciones son correctas.",
+   "Un jefe de Comandancia que acuerde el inicio de este procedimiento tiene obligación de encomendar la instrucción de dicho procedimiento en la misma resolución por la que acuerde su inicio."
+  ],
+  "correcta": 1,
+  "lila": "Art. 50 y Art. 50.6 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Art. 50. Cuando el inicio del procedimiento se hubiera acordado por alguna de las autoridades o mandos de la Guardia Civil a los que se refieren los artículos 28, 29 y 30.1 de esta ley, se podrá encomendar su instrucción, en la misma resolución, a un subordinado, siempre que sea de superior empleo al del interesado.<br>Art. 50.6. 6. La tramitación del procedimiento deberá completarse dentro del plazo de dos meses desde el acuerdo de inicio.",
+  "exp": "Cabe encomendar la instrucción a un subordinado de superior empleo; el plazo es de dos meses.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "121-4",
+  "pz": "b-50",
+  "id": "26-400"
+ },
+ {
+  "lote": "e7",
+  "i": 7,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 46.3",
+    "k": 117
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Procedimiento por faltas graves y muy graves. ¿Qué recurso se podrá interponer contra una resolución del instructor de este procedimiento, por el que se deniega la práctica de una prueba propuesta por el interesado?:",
+  "opciones": [
+   "Recurso contencioso disciplinario militar preferente y sumario dado que afecta al derecho fundamental de defensa.",
+   "Se podrá interponer recurso de alzada directamente ante la Autoridad que ordena la incoación de este procedimiento.",
+   "Recurso ante el propio Instructor solicitando que admita las pruebas inicialmente denegadas.",
+   "Ninguno."
+  ],
+  "correcta": 3,
+  "lila": "Art. 46.3 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "3. El instructor podrá denegar la práctica de las pruebas que considere impertinentes o inútiles o no guarden relación con los hechos. La denegación será motivada y contra ella no cabrá recurso alguno, sin perjuicio de que se pueda hacer valer la denegación indebida de medios de prueba en el recurso que proceda frente a la resolución del expediente.",
+  "exp": "Contra la denegación no cabe recurso alguno.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "117-3",
+  "pz": "b-46",
+  "id": "26-401"
+ },
+ {
+  "lote": "e7",
+  "i": 8,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 78.2",
+    "k": 149
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Recursos. ¿Qué recurso se podrá interponer contra una resolución sancionadora dictada por un Jefe de Compañía?:",
+  "opciones": [
+   "Recurso contencioso disciplinario militar ordinario.",
+   "Recurso contencioso-disciplinario militar preferente y sumario cuando el recurso se fundamente en infracción de algún derecho fundamental.",
+   "Ninguno de los recursos citados en las opciones reseñadas.",
+   "Recurso de reposición."
+  ],
+  "correcta": 1,
+  "lila": "Art. 78.2 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "2. El recurso contencioso-disciplinario militar preferente y sumario podrá interponerse contra las resoluciones de las autoridades y mandos a los que la presente Ley atribuye competencia sancionadora, en los términos que se establece en la legislación procesal militar.",
+  "exp": "Cabe el contencioso-disciplinario militar preferente y sumario.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "149-2",
+  "pz": "b-78",
+  "id": "26-402"
+ },
+ {
+  "lote": "e7",
+  "i": 9,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 31.1",
+    "k": 102
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. ¿A quién corresponde la competencia para imponer la sanción de baja en Centro Docente de Formación a un alumno que no tenga la condición de guardia civil?:",
+  "opciones": [
+   "Al Director del Centro.",
+   "Al Subsecretario de Defensa, previo informe del Director del Centro.",
+   "Al General Jefe de Enseñanza, previo informe del Director del Centro.",
+   "Al Director General de la Guardia Civil."
+  ],
+  "correcta": 1,
+  "lila": "Art. 31.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. La competencia para imponer la sanción de baja en Centro Docente de Formación corresponderá al Subsecretario de Defensa, previo informe del Director del Centro.",
+  "exp": "Al Subsecretario de Defensa, previo informe del Director del Centro.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "102-1",
+  "pz": "b-31",
+  "id": "26-403"
+ },
+ {
+  "lote": "e7",
+  "i": 10,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 78.2",
+    "k": 149
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. ¿Qué tipo de recurso podrá interponerse contra las resoluciones de las autoridades y mandos a los que la Ley objeto de la pregunta atribuyan competencia sancionadora?:",
+  "opciones": [
+   "Recurso de alzada.",
+   "Recurso de reposición o de alzada.",
+   "Recurso contencioso-disciplinario militar ordinario.",
+   "Recurso contencioso-disciplinario militar preferente y sumario."
+  ],
+  "correcta": 3,
+  "lila": "Art. 78.2 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "2. El recurso contencioso-disciplinario militar preferente y sumario podrá interponerse contra las resoluciones de las autoridades y mandos a los que la presente Ley atribuye competencia sancionadora, en los términos que se establece en la legislación procesal militar.",
+  "exp": "El contencioso-disciplinario militar preferente y sumario.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "149-2",
+  "pz": "b-78",
+  "id": "26-404"
+ },
+ {
+  "lote": "e7",
+  "i": 11,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 7.20",
+    "k": 78
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 7.19",
+    "k": 78
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 7.5",
+    "k": 78
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Faltas disciplinarias. Señale la opción CORRECTA:",
+  "opciones": [
+   "Permitir el acceso de personas no autorizadas a las imágenes o sonidos obtenidos por cualquier medio legítimo es una falta muy grave.",
+   "La falta de subordinación es una falta muy grave.",
+   "Alterar o manipular los registros de imágenes o sonidos obtenidos con videocámaras es una falta grave.",
+   "La obstaculización grave del ejercicio de los derechos fundamentales o de las libertades públicas es una falta grave."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7.20 y Art. 7.19 y Art. 7.5 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Art. 7.20. 20. Permitir el acceso de personas no autorizadas a las imágenes o sonidos obtenidos por cualquier medio legítimo o utilizar aquéllas o éstos para fines distintos de los previstos legalmente.<br>Art. 7.19. 19. Alterar o manipular los registros de imágenes o sonidos obtenidos con videocámaras.<br>Art. 7.5. 5. La obstaculización grave del ejercicio de los derechos fundamentales o de las libertades públicas.",
+  "exp": "Es falta muy grave; manipular registros y obstaculizar derechos también son muy graves.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "78-22",
+  "pz": "b-7",
+  "id": "26-405"
+ },
+ {
+  "lote": "e7",
+  "i": 12,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 8.38",
+    "k": 79
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Señale cuál de las siguientes conductas puede constituir una falta grave:",
+  "opciones": [
+   "La invasión, sin razón justificada, de las competencias atribuidas a los subordinados.",
+   "La negativa a tramitar una denuncia formulada en una lengua oficial.",
+   "El incumplimiento del horario de servicio o la falta de puntualidad en los actos de servicio, sin causa que lo justifique.",
+   "La desconsideración o incorrección con los superiores cuando se vistiere de uniforme."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.38 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "38. La negativa a tramitar una denuncia formulada en una lengua oficial.",
+  "exp": "Es falta grave; las otras son leves.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "79-40",
+  "pz": "b-8",
+  "id": "26-406"
+ },
+ {
+  "lote": "e7",
+  "i": 13,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 34",
+    "k": 105
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Competencia sobre los vocales del Consejo de la Guardia Civil. Cesado en el cargo un vocal o suplente del Consejo de la Guardia Civil, ¿hasta cuándo se mantendrá la competencia exclusiva del Director General del Cuerpo para sancionar, excepto con separación de servicio, a dichos miembros por las infracciones cometidas?:",
+  "opciones": [
+   "Hasta un año después del cese en dichos cargos.",
+   "Durante los dos años siguientes al cese en sus cargos o hasta que pasen a la situación Reserva si tiene lugar antes de este plazo.",
+   "Durante los dos años siguientes al cese en sus cargos.",
+   "Una vez cesado en sus cargos la competencia disciplinaria viene atribuida a sus mandos orgánicos de acuerdo con las normas establecidas en esta Ley."
+  ],
+  "correcta": 2,
+  "lila": "Art. 34 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Esta competencia disciplinaria se mantendrá durante los dos años siguientes al cese en sus cargos.",
+  "exp": "Durante los dos años siguientes al cese.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "105-2",
+  "pz": "b-34",
+  "id": "26-407"
+ },
+ {
+  "lote": "e7",
+  "i": 14,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 47.1",
+    "k": 118
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Disposiciones generales del procedimiento sancionador. Resolución final del procedimiento. Señale la opción CORRECTA:",
+  "opciones": [
+   "La resolución que ponga fin al procedimiento deberá Ser motivada y fundada únicamente en los hechos que Sirvieron de base al acuerdo de inicio.",
+   "La notificación de la resolución del procedimiento sólo procede efectuarla al interesado con indicación de los recursos que contra la misma procedan, así como el órgano ante el que han de presentarse y los plazos para interponerlos.",
+   "Fijará con claridad los hechos constitutivos de la infracción, su calificación jurídica, el responsable de la misma y la sanción a imponer, precisando, cuando sea necesario, las circunstancias de su cumplimiento y haciendo expresa declaración en orden a las medidas provisionales adoptadas durante la tramitación.",
+   "Se comunicará la resolución a la Autoridad disciplinaria que hubiera ordenado el inicio del procedimiento o instado el ejercicio de la potestad disciplinaria, al Jefe de la Unidad a la que pertenecía el interesado cuando cometió la infracción y al Director General de la Guardia Civil."
+  ],
+  "correcta": 2,
+  "lila": "Art. 47.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. La resolución que ponga fin al procedimiento deberá ser motivada y fundada únicamente en los hechos que sirvieron de base al acuerdo de inicio o, en su caso, al pliego de cargos; resolverá todas las cuestiones planteadas y fijará con claridad los hechos constitutivos de la infracción, su calificación jurídica, el responsable de la misma y la sanción a imponer, precisando, cuando sea necesario, las circunstancias de su cumplimiento y haciendo expresa declaración en orden a las medidas provisionales adoptadas durante la tramitación. Igualmente hará mención de la prueba practicada y, en su caso, denegada, señalando, respecto a ésta, los concretos motivos de su inadmisión.",
+  "exp": "Es literal el contenido que fija la resolución.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "118-1",
+  "pz": "b-47",
+  "id": "26-408"
+ },
+ {
+  "lote": "e7",
+  "i": 15,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 11",
+    "k": 82
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Sanciones disciplinarias. ¿Qué sanción podrá imponerse por faltas graves?:",
+  "opciones": [
+   "Pérdida de puestos en el escalafón.",
+   "Suspensión de empleo de tres meses.",
+   "Reprensión.",
+   "Pérdida de cuatro días de haberes con suspensión de funciones."
+  ],
+  "correcta": 1,
+  "lila": "Art. 11 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "2. Las sanciones que pueden imponerse por faltas graves son: Suspensión de empleo de un mes a tres meses. Pérdida de cinco a veinte días de haberes con suspensión de funciones. Pérdida de destino.",
+  "exp": "Por falta grave cabe suspensión de empleo de un mes a tres meses; la pérdida de puestos es de muy graves y la de uno a cuatro días de leves.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "82-5",
+  "pz": "b-11",
+  "id": "26-409"
+ },
+ {
+  "lote": "e7",
+  "i": 16,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 62",
+    "k": 133
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Procedimiento por faltas graves y muy graves: Terminación. Señale la opción INCORRECTA:",
+  "opciones": [
+   "La Autoridad competente que reciba el expediente disciplinario y tras el examen de lo actuado, podrá devolverlo al instructor para que someta al interesado a una propuesta de resolución que incluya una calificación jurídica de mayor gravedad.",
+   "Recibido el expediente disciplinario por la autoridad competente y antes de devolverlo al Instructor para que, por ejemplo, lleve a cabo una práctica de una prueba que ha Sido omitida, será preceptivo el informe del asesor jurídico correspondiente, lo que implica que lo dispuesto por el asesor en su informe es obligatorio para todos.",
+   "Una vez que la Autoridad competente que debe resolver el procedimiento recibe el expediente puede, tras el examen de lo actuado, dictar resolución o devolverlo al instructor para que, entre otras, practique las diligencias complementarias que se consideren necesarias para resolver el procedimiento.",
+   "Antes de dictar resolución en el expediente disciplinario, será obligatorio el informe del asesor jurídico correspondiente."
+  ],
+  "correcta": 1,
+  "lila": "Art. 62 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. Recibido el expediente disciplinario, la autoridad competente, tras el examen de lo actuado, dictará resolución o lo devolverá al instructor para que practique las diligencias complementarias o las que hubieran sido omitidas que se consideren necesarias para resolver el procedimiento o, en su caso, para que someta al interesado una propuesta de resolución que incluya una calificación jurídica de mayor gravedad. 2. Antes de adoptar cualquiera de las determinaciones expresadas en el apartado anterior, y previamente a dictar resolución, será preceptivo el informe del asesor jurídico correspondiente.",
+  "exp": "El informe del asesor jurídico es preceptivo, no vinculante.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "133-1",
+  "pz": "b-62",
+  "id": "26-410"
+ },
+ {
+  "lote": "e7",
+  "i": 17,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 74.1",
+    "k": 145
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. ¿Ante quién podrán ser recurridas en alzada las resoluciones sancionadoras acordadas por los Comandantes de Puesto Principal respecto de las faltas leves impuestas por los mismos?:",
+  "opciones": [
+   "Ante el Jefe de la Compañía de la Guardia Civil de que directamente dependan.",
+   "Ante los Generales Jefes de Unidad, Centro u Organismo de la Guardia Civil de que directamente dependan.",
+   "Ante el Director General de la Guardia Civil.",
+   "Ante el Jefe de la Comandancia de la Guardia Civil de que directamente dependan."
+  ],
+  "correcta": 1,
+  "lila": "Art. 74.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. Podrán ser recurridas en alzada ante el Ministro de Defensa las resoluciones sancionadoras acordadas por el Director General de la Policía y de la Guardia Civil; ante éste, las adoptadas por los Oficiales Generales, cualquiera que fuere su jerarquía; ante los Generales Jefes de Unidad, Centro u Organismo de la Guardia Civil del que directamente dependan, las dictadas por las autoridades y mandos subordinados a los mismos a los que la presente Ley atribuya competencia sancionadora por falta leve.",
+  "exp": "Ante el General Jefe de la Unidad del que directamente dependan, por tratarse de falta leve.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "145-1",
+  "pz": "b-74",
+  "id": "26-411"
+ },
+ {
+  "lote": "e7",
+  "i": 18,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 2.1",
+    "k": 73
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Están sujetos al Régimen Disciplinario de la Guardia Civil todos los miembros de la Guardia Civil.",
+   "Los alumnos de los Centros Docentes de Formación de la Guardia Civil estarán sujetos a lo previsto en el Régimen Disciplinario de la Guardia Civil en la medida en que les sea de aplicación, sin perjuicio de la observancia de las normas específicas de carácter académico.",
+   "El régimen disciplinario de la Guardia Civil tiene por objeto garantizar el cumplimiento de la misión encomendada a la Guardia Civil de acuerdo con la Constitución.",
+   "El régimen disciplinario de la Guardia Civil tiene por objeto garantizar el correcto desempeño de las funciones que tiene asignadas en el ordenamiento jurídico."
+  ],
+  "correcta": 0,
+  "lila": "Art. 2.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. Están sujetos a la presente Ley los miembros de la Guardia Civil que se encuentren en cualquiera de las situaciones administrativas en que se mantengan derechos y obligaciones inherentes a la condición de Guardia Civil.",
+  "exp": "Solo están sujetos quienes estén en situaciones en que mantengan derechos y obligaciones.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "73-1",
+  "pz": "b-2",
+  "id": "26-412"
+ },
+ {
+  "lote": "e7",
+  "i": 19,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 4",
+    "k": 75
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Cuando se inicie un procedimiento penal contra miembros de la Guardia Civil, ¿podrá instruirse un expediente disciplinario por los mismos hechos?:",
+  "opciones": [
+   "Sí, pero la resolución del expediente disciplinario debe ser remitida a la Autoridad Judicial que instruya el procedimiento penal para ser tenido en cuenta al dictar la sentencia.",
+   "No, ya que la iniciación del procedimiento penal impedirá la incoación y tramitación de expedientes disciplinarios por los mismos hechos.",
+   "Sí, pero la resolución definitiva de los procedimientos sancionadores sólo podrá producirse cuando la dictada en el ámbito penal sea firme, vinculando la declaración de hechos probados.",
+   "No, habrá que esperar a que la resolución penal sea firme y, solo en el caso de que los hechos no hayan sido sancionados por vía penal, se iniciará el expediente disciplinario."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "La iniciación de un procedimiento penal contra miembros de la Guardia Civil no impedirá la incoación y tramitación de expedientes disciplinarios por los mismos hechos. No obstante, la resolución definitiva de dichos procedimientos sancionadores sólo podrá producirse cuando la dictada en el ámbito penal sea firme, vinculando la declaración de hechos probados.",
+  "exp": "Cabe tramitarlo, pero la resolución definitiva espera a la firmeza penal.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "75-1",
+  "pz": "b-4",
+  "id": "26-413"
+ },
+ {
+  "lote": "e7",
+  "i": 20,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 19",
+    "k": 90
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Para la graduación de las sanciones se tienen en cuenta una serie de criterios. Señale el criterio INCORRECTO:",
+  "opciones": [
+   "La perturbación en el normal funcionamiento de la Administración o de los servicios que le estén encomendados.",
+   "El historial profesional que, a estos efectos, sólo podrá valorarse como circunstancia eximente.",
+   "La incidencia sobre la seguridad ciudadana.",
+   "La reincidencia, siempre que no constituya una falta en sí misma."
+  ],
+  "correcta": 1,
+  "lila": "Art. 19 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "c) El historial profesional que, a estos efectos, sólo podrá valorarse como circunstancia atenuante.",
+  "exp": "El historial profesional solo atenúa.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "90-5",
+  "pz": "b-19",
+  "id": "26-414"
+ },
+ {
+  "lote": "e7",
+  "i": 21,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 12",
+    "k": 83
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. ¿Qué tipo de sanción supone para el sancionado la pérdida de la condición de militar de carrera de la Guardia Civil?:",
+  "opciones": [
+   "Suspensión de empleo.",
+   "Separación del servicio.",
+   "Suspensión de funciones.",
+   "Pérdida de destino."
+  ],
+  "correcta": 1,
+  "lila": "Art. 12 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "La separación del servicio supondrá para el sancionado la pérdida de la condición de militar de carrera de la Guardia Civil, perdiendo los derechos profesionales adquiridos excepto los derechos pasivos que hubiese consolidado.",
+  "exp": "La separación del servicio.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "83-1",
+  "pz": "b-12",
+  "id": "26-415"
+ },
+ {
+  "lote": "e7",
+  "i": 22,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 18",
+    "k": 89
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. En relación con la aplicación del Régimen disciplinario a los alumnos de Centros Docentes de Formación, que aún no son miembros de la Guardia Civil, señale la opción INCORRECTA:",
+  "opciones": [
+   "Se les podrá imponer la sanción de suspensión de haberes y servicios de uno a cinco días por falta leve.",
+   "Se les podrá imponer la sanción de reprensión por falta leve.",
+   "Se les podrá imponer la sanción de baja como alumno del Centro por faltas graves.",
+   "Se les podrá imponer la sanción de suspensión de haberes de cinco a veinte días por faltas muy graves."
+  ],
+  "correcta": 0,
+  "lila": "Art. 18 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "3. Al resto de los alumnos sólo se les podrá imponer las sanciones siguientes: a) Por la comisión de faltas graves y muy graves: Suspensión de haberes y servicios de cinco a veinte días. Baja como alumno en el Centro Docente. b) Por la comisión de faltas leves: Reprensión. Suspensión de haberes y servicios de uno a cuatro días.",
+  "exp": "La suspensión por falta leve es de uno a cuatro días.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "89-3",
+  "pz": "b-18",
+  "id": "26-416"
+ },
+ {
+  "lote": "e7",
+  "i": 23,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 14",
+    "k": 85
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Sanciones disciplinarias. En el caso de imposición de la sanción de pérdida de puestos en el escalafón a un Guardia Civil profesional. ¿cuál será, como mínimo, el número de puestos que deberá perder dicho componente al imponerle esta sanción?:",
+  "opciones": [
+   "Un décimo del número de componentes de su Escala.",
+   "Un quinto del número de componentes de su Escala.",
+   "Un tercio del número de componentes de su empleo.",
+   "Un décimo del número de componentes de su empleo."
+  ],
+  "correcta": 3,
+  "lila": "Art. 14 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "La pérdida de puestos en el escalafón supondrá para el sancionado el retraso en el orden de escalafonamiento, dentro de su empleo, del número de puestos que se determine en la resolución del expediente que, en ningún caso, podrá ser superior a un quinto ni inferior a un décimo, del número de los componentes de su empleo.",
+  "exp": "Un décimo de los componentes de su empleo.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "85-1",
+  "pz": "b-14",
+  "id": "26-417"
+ },
+ {
+  "lote": "e7",
+  "i": 24,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 13.2",
+    "k": 84
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. En relación a la sanción de suspensión de empleo, señale la opción INCORRECTA:",
+  "opciones": [
+   "Si la duración es superior a seis meses, implicará el cese en el destino que venía ocupando el infractor.",
+   "Implica el pase a la situación administrativa del mismo nombre con los efectos económicos inherentes a dicha situación.",
+   "El tiempo de suspensión no afectará al correspondiente de abono para el servicio.",
+   "Produce el efecto de quedar inmovilizado el infractor en su puesto y empleo que ocupe."
+  ],
+  "correcta": 2,
+  "lila": "Art. 13.2 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "2. También producirá el efecto de quedar inmovilizado el infractor en su puesto y empleo que ocupe, y el tiempo transcurrido no será de abono para el servicio.",
+  "exp": "El tiempo de suspensión no es de abono para el servicio.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "84-2",
+  "pz": "b-13",
+  "id": "26-418"
+ },
+ {
+  "lote": "e7",
+  "i": 25,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 37",
+    "k": 108
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Competencia sancionadora. ¿De qué dependerá el ejercicio de la potestad sancionadora de los Jefes de Unidades o Grupos temporales que se constituyan?:",
+  "opciones": [
+   "Entre otras, de la entidad de la Unidad o Grupo Temporal.",
+   "Dependerá exclusivamente del empleo que ostente el Jefe de la Unidad o Grupo Temporal constituido.",
+   "De si el Grupo Temporal se ha constituido en el extranjero o en territorio Nacional.",
+   "De si la integración de los componentes del Cuerpo en dichos Grupos Temporales lo es sin perjuicio de la pérdida del destino que tenía anteriormente conferido y al que volverá una vez finalice la misión encomendada o con pérdida de destino."
+  ],
+  "correcta": 0,
+  "lila": "Art. 37 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Tienen potestad para imponer sanciones al personal a sus órdenes los Jefes de Unidades o Grupos Temporales de la Guardia Civil, cualquiera que sea la denominación que reciban. El ejercicio de la potestad sancionadora, temporalmente circunscrita a la duración de la misión para la que fueron creadas dichas Unidades o Grupos, dependerá de su entidad y del empleo que tengan sus Jefes conforme a las reglas contenidas en los artículos anteriores.",
+  "exp": "Depende de la entidad de la unidad y del empleo de sus jefes.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "108-1",
+  "pz": "b-37",
+  "id": "26-419"
+ },
+ {
+  "lote": "e7",
+  "i": 26,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 35",
+    "k": 106
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Potestad disciplinaria y competencia sancionadora. En relación con las competencias disciplinarias sobre determinado personal del Cuerpo, señale la opción CORRECTA:",
+  "opciones": [
+   "Las faltas disciplinarias cometidas por el personal que no ocupe destino serán sancionadas siempre por el Director Adjunto Operativo salvo cuando la competencia corresponda en exclusiva al Ministro del Interior.",
+   "Corresponde en exclusiva al Director General de la Guardia Civil la competencia para conocer las faltas leves y graves cometidas por el personal que preste servicio en el extranjero.",
+   "Corresponde al Director Adjunto Operativo la competencia para conocer las faltas leves y graves cometidas por el personal que preste servicio en el extranjero a falta de otros mandos que la tengan por aplicación de las reglas precedentes.",
+   "Corresponde en exclusiva al Director General de la Guardia Civil la competencia para sancionar todas las infracciones cometidas por los Guardias Civiles que sean vocales o suplentes del Consejo Asesor de Personal de la Guardia Civil."
+  ],
+  "correcta": 2,
+  "lila": "Art. 35 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "La competencia para conocer las faltas leves y graves cometidas por el personal que preste servicio en el extranjero corresponde, a falta de otros mandos que la tengan por aplicación de las reglas precedentes, al Director Adjunto Operativo. Esta competencia también podrá ser ejercida por el Director General de la Policía y de la Guardia Civil.",
+  "exp": "El Director Adjunto Operativo, a falta de otros mandos competentes.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "106-1",
+  "pz": "b-35",
+  "id": "26-420"
+ },
+ {
+  "lote": "e7",
+  "i": 27,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 38",
+    "k": 109
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Procedimiento sancionador. En relación al procedimiento disciplinario, señale la opción CORRECTA:",
+  "opciones": [
+   "Ninguna de las opciones es correcta.",
+   "El procedimiento disciplinario comprenderá esencialmente los derechos a la presunción de inocencia, información, defensa y audiencia.",
+   "Se ajustará entre otros a los principios de legalidad proporcional e impulso de imparcialidad.",
+   "Se ajustará, entre otros, a los principios de eficiencia, contracción e individualidad de las faltas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 38 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "El procedimiento disciplinario se ajustará a los principios de legalidad, impulso de oficio, imparcialidad, celeridad, eficacia, publicidad, contradicción, irretroactividad, tipicidad, responsabilidad, proporcionalidad, individualización de las sanciones y culpabilidad, y comprenderá esencialmente los derechos a la presunción de inocencia, información, defensa y audiencia.",
+  "exp": "Comprende presunción de inocencia, información, defensa y audiencia.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "109-1",
+  "pz": "b-38",
+  "id": "26-421"
+ },
+ {
+  "lote": "e7",
+  "i": 28,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 64.2",
+    "k": 135
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 64.1",
+    "k": 135
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Disposiciones complementarias en la tramitación de determinados expedientes. Señale la opción CORRECTA:",
+  "opciones": [
+   "En el caso de expedientes instruidos por faltas muy graves se deberá oír al Consejo Superior de la Guardia Civil, cuya opinión se emitirá una vez formulada por el instructor la correspondiente propuesta de resolución, incorporándose al procedimiento antes de que ésta sea notificada al interesado.",
+   "En todos los expedientes disciplinarios instruidos por faltas graves o muy graves a miembros del Consejo de la Guardia Civil será preceptivo interesar la emisión de informe vinculante, de dicho Consejo, que se incorporará a las actuaciones. Dicho informe deberá ser emitido en el plazo de diez días.",
+   "En el caso de expedientes instruidos por faltas muy graves, incoado por las faltas disciplinarias derivadas de condena por sentencia penal, se deberá oír al Consejo Superior de la Guardia Civil.",
+   "Cuando el Director General de la Policía y de la Guardia Civil considere que la sanción adecuada es la de separación del servicio, remitirá el expediente al Ministro de Defensa quien, a la vista de lo actuado, propondrá al de Interior la imposición de dicha sanción."
+  ],
+  "correcta": 0,
+  "lila": "Art. 64.2 y Art. 64.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Art. 64.2. 2. En el caso de expedientes instruidos por faltas muy graves se deberá oír al Consejo Superior de la Guardia Civil, cuya opinión se emitirá una vez formulada por el instructor la correspondiente propuesta de resolución, incorporándose al procedimiento antes de que ésta sea notificada al interesado.<br>Art. 64.1. 1. En todos los expedientes disciplinarios instruidos por faltas graves o muy graves a miembros del Consejo de la Guardia Civil será preceptivo interesar la emisión de informe, no vinculante, de dicho Consejo, que se incorporará a las actuaciones. Dicho informe deberá ser emitido en el plazo de diez días.",
+  "exp": "Es literal. El informe del Consejo de la Guardia Civil no es vinculante.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "135-2",
+  "pz": "b-64",
+  "id": "26-422"
+ },
+ {
+  "lote": "e7",
+  "i": 29,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 25",
+    "k": 96
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 25",
+    "k": 96
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. No tienen potestad para sancionar a los miembros de la Guardia Civil:",
+  "opciones": [
+   "Los Comandantes de Puesto con el empleo de Cabo 1º.",
+   "El Director General de la Guardia Civil.",
+   "Los Oficiales Jefes de Compañía.",
+   "Los Oficiales Generales con mando sobre Unidad, Centro u Organismo de la Guardia Civil."
+  ],
+  "correcta": 0,
+  "lila": "Art. 25 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Art. 25. g) Los Suboficiales Comandantes de Puesto, Jefes de Destacamento de Tráfico, Grupo de Investigación o Unidad de categoría similar.<br>Art. 25. b) El Director General de la Policía y de la Guardia Civil. c) Los Oficiales Generales con mando sobre Unidad, Centro u Organismo de la Guardia Civil. d) Los Oficiales Jefes de Zona, de Servicio, Organismo, Jefatura o Dirección de Centro Docente de Formación, Comandancia, Sector, Grupo de Reserva y Seguridad, Jefes de Estudio de Centros Docentes de Formación y los de Unidad, Centro u Organismo de categoría similar. e) Los Oficiales Jefes de Compañía, Subsector de Tráfico, Unidad Orgánica de Policía Judicial, o Unidad de categoría similar.",
+  "exp": "La potestad alcanza a los Suboficiales Comandantes de Puesto, no a los Cabos.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "96-8",
+  "pz": "b-25",
+  "id": "26-423"
+ },
+ {
+  "lote": "e7",
+  "i": 30,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 24.1",
+    "k": 95
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Potestad disciplinaria y competencia sancionadora. En el ejercicio de la potestad disciplinaria:",
+  "opciones": [
+   "Todo mando tiene el deber de corregir las infracciones que observe sólo en los de inferior empleo que le estén directamente subordinados.",
+   "Todo mando tiene el deber de corregir las infracciones que observe en los de inferior empleo sin que ello suponga sanción alguna.",
+   "Todo mando tiene el derecho y el deber de corregir las infracciones que observe sólo en los de inferior empleo que le estén directamente subordinados y siempre que ello suponga sanción.",
+   "NO todo mando tiene el derecho a corregir las infracciones que observe en los de inferior empleo aunque le estén directamente subordinados."
+  ],
+  "correcta": 1,
+  "lila": "Art. 24.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. Todo mando tiene el deber de corregir las infracciones que observe en los de inferior empleo, aunque no le estén directamente subordinados, sin que ello suponga sanción alguna. Si, además, las considera merecedoras de sanción, formulará parte disciplinario o acordará el inicio del procedimiento sancionador que corresponda, si tuviera competencia para ello.",
+  "exp": "Corrige a los de inferior empleo sin que suponga sanción.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "95-1",
+  "pz": "b-24",
+  "id": "26-424"
+ },
+ {
+  "lote": "e7",
+  "i": 31,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 29",
+    "k": 100
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Señale la opción CORRECTA. En relación a la competencia para imponer sanciones disciplinarias a los miembros del Cuerpo:",
+  "opciones": [
+   "El Director General de la Guardia Civil puede imponer todas las sanciones.",
+   "Los Oficiales Generales con mando sobre Unidad, Centro u Organismo podrán imponer a los Guardias Civiles que estén a sus órdenes, sanciones por falta grave, excepto la de pérdida de destino.",
+   "Los Oficiales Generales con mando sobre Unidad, Centro u Organismo sólo podrán imponer a los Guardias Civiles que estén a sus órdenes, sanciones por falta grave.",
+   "El Ministerio del Interior a propuesta del Director General del Cuerpo es competente para la imposición de sanción de pérdida de destino conforme lo previsto en la LO 2/86."
+  ],
+  "correcta": 1,
+  "lila": "Art. 29 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Los Oficiales Generales con mando sobre Unidad, Centro u Organismo de la Guardia Civil podrán imponer a los miembros del Cuerpo que estén a sus órdenes, las sanciones por faltas leves y graves, excepto la pérdida de destino.",
+  "exp": "Sancionan faltas leves y graves, excepto con pérdida de destino.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "100-1",
+  "pz": "b-28",
+  "id": "26-425"
+ },
+ {
+  "lote": "e7",
+  "i": 32,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 64.1",
+    "k": 135
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Será preceptivo interesar la emisión de un informe no vinculante al Consejo de la Guardia Civil cuando a alguno de los miembros de dicho Consejo se le instruya, ¿qué tipo de procedimientos?:",
+  "opciones": [
+   "Expedientes disciplinarios por faltas graves.",
+   "Expedientes disciplinarios por faltas leves.",
+   "Expedientes por faltas disciplinarias derivadas de condena por sentencia penal.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 64.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. En todos los expedientes disciplinarios instruidos por faltas graves o muy graves a miembros del Consejo de la Guardia Civil será preceptivo interesar la emisión de informe, no vinculante, de dicho Consejo, que se incorporará a las actuaciones. Dicho informe deberá ser emitido en el plazo de diez días.",
+  "exp": "Faltas graves o muy graves.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "135-1",
+  "pz": "b-64",
+  "id": "26-426"
+ },
+ {
+  "lote": "e7",
+  "i": 33,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 66.1",
+    "k": 137
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. ¿Cuándo se suspende el cumplimiento de una sanción disciplinaria por la interposición de un recurso?:",
+  "opciones": [
+   "Se suspende la ejecución tanto por la interposición de un recurso administrativo como judicial.",
+   "No se suspende por la interposición de ningún tipo de recurso, ni administrativo ni judicial.",
+   "Se suspende inmediatamente, por la interposición de cualquier tipo de recurso.",
+   "No se suspende por la interposición de un recurso administrativo, pero si por el judicial."
+  ],
+  "correcta": 1,
+  "lila": "Art. 66.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. Las sanciones impuestas serán inmediatamente ejecutivas, no suspendiendo su cumplimiento la interposición de ningún tipo de recurso, administrativo o judicial.",
+  "exp": "Ningún recurso suspende el cumplimiento.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "137-1",
+  "pz": "b-66",
+  "id": "26-427"
+ },
+ {
+  "lote": "e7",
+  "i": 34,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 38",
+    "k": 109
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. En relación con los derechos que comprenderá el procedimiento disciplinario, señale la opción INCORRECTA:",
+  "opciones": [
+   "Audiencia.",
+   "Transparencia.",
+   "Información.",
+   "Defensa."
+  ],
+  "correcta": 1,
+  "lila": "Art. 38 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "El procedimiento disciplinario se ajustará a los principios de legalidad, impulso de oficio, imparcialidad, celeridad, eficacia, publicidad, contradicción, irretroactividad, tipicidad, responsabilidad, proporcionalidad, individualización de las sanciones y culpabilidad, y comprenderá esencialmente los derechos a la presunción de inocencia, información, defensa y audiencia.",
+  "exp": "La transparencia no figura.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "109-1",
+  "pz": "b-38",
+  "id": "26-428"
+ },
+ {
+  "lote": "e7",
+  "i": 35,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 72",
+    "k": 143
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. La cancelación de una anotación de sanción producirá el efecto de anularla, sin que pueda certificarse de ella, salvo:",
+  "opciones": [
+   "Se trate de faltas graves o muy graves, lo soliciten las autoridades competentes, a los efectos exclusivos de las clasificaciones reglamentarias y, en su caso, la concesión de destinos.",
+   "Se trate de faltas graves o muy graves, lo soliciten las autoridades competentes, a los efectos exclusivos de las evaluaciones reglamentarias y, en su caso, la concesión de recompensas.",
+   "Se trate de cualquier falta, y lo soliciten las autoridades competentes, a los efectos exclusivos de las clasificaciones reglamentarias y, en su caso, la concesión de recompensas.",
+   "Se trate de faltas graves o muy graves, lo soliciten las autoridades competentes, a los efectos exclusivos de las clasificaciones reglamentarias y, en su caso, la concesión de recompensas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 72 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "La cancelación de una anotación de sanción producirá el efecto de anularla, sin que pueda certificarse de ella, salvo cuando, tratándose de faltas graves o muy graves, lo soliciten las autoridades competentes, a los efectos exclusivos de las clasificaciones reglamentarias y, en su caso, la concesión de recompensas. En las certificaciones se hará constar expresamente la cancelación.",
+  "exp": "Clasificaciones reglamentarias y concesión de recompensas.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "143-1",
+  "pz": "b-72",
+  "id": "26-429"
+ },
+ {
+  "lote": "e7",
+  "i": 36,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 71.3",
+    "k": 142
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 71.2",
+    "k": 142
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 72",
+    "k": 143
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Anotación y cancelación de las sanciones. Señale la opción CORRECTA:",
+  "opciones": [
+   "Las anotaciones por falta leve de los alumnos de los Centros de Formación de la Guardia Civil se cancelarán, en todo caso, cuando se incorporen a la Escala correspondiente.",
+   "La cancelación de una anotación de sanción producirá el efecto de anularla, sin que pueda certificarse de ella, salvo cuando, tratándose de faltas graves o muy graves, lo soliciten las autoridades competentes, a los efectos exclusivos de las clasificaciones reglamentarias.",
+   "Los plazos de prescripción se contarán desde que se cumpla la sanción, aunque durante ese tiempo le hubiese Sido impuesta al interesado una pena o sanción disciplinaria.",
+   "Las anotaciones de las sanciones serán canceladas de oficio una vez transcurridos cuatro años en los casos de las sanciones por faltas muy graves."
+  ],
+  "correcta": 0,
+  "lila": "Art. 71.3 y Art. 71.2 y Art. 72 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Art. 71.3. 3. Las anotaciones por falta leve de los alumnos de los Centros de Formación de la Guardia Civil se cancelarán, en todo caso, cuando se incorporen a la Escala correspondiente.<br>Art. 71.2. 2. Los plazos se contarán desde que se hubiere cumplido la sanción, siempre que durante ese tiempo no le hubiese sido impuesta al interesado ninguna pena o sanción disciplinaria.<br>Art. 72. La cancelación de una anotación de sanción producirá el efecto de anularla, sin que pueda certificarse de ella, salvo cuando, tratándose de faltas graves o muy graves, lo soliciten las autoridades competentes, a los efectos exclusivos de las clasificaciones reglamentarias y, en su caso, la concesión de recompensas. En las certificaciones se hará constar expresamente la cancelación.",
+  "exp": "Es literal.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "142-6",
+  "pz": "b-71",
+  "id": "26-430"
+ },
+ {
+  "lote": "e7",
+  "i": 37,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 74.2",
+    "k": 145
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 75",
+    "k": 146
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Recursos. Señale la opción CORRECTA:",
+  "opciones": [
+   "Ninguna de las opciones es correcta.",
+   "El recurso de alzada podrá interponerse en el plazo de un mes, a contar desde el mismo día al de la notificación de la resolución sancionadora.",
+   "En el caso de sanciones por falta grave o muy grave el recurso de alzada o reposición que su caso proceda interponer deberá presentarse por medio del instructor del expediente.",
+   "Contra las resoluciones del Director General de la Guardia Civil podrá interponerse recurso potestativo de reposición en el plazo de un mes."
+  ],
+  "correcta": 0,
+  "lila": "Art. 74.2 y Art. 75 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Art. 74.2. 2. El recurso podrá interponerse en el plazo de un mes, a contar desde el día siguiente al de la notificación de la resolución.<br>Art. 75. Contra las resoluciones del Ministro de Defensa podrá interponerse recurso potestativo de reposición en el plazo de un mes.",
+  "exp": "El plazo cuenta desde el día siguiente y la reposición es contra el Ministro de Defensa.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "145-2",
+  "pz": "b-74",
+  "id": "26-431"
+ },
+ {
+  "lote": "e7",
+  "i": 38,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 13.1",
+    "k": 84
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. De las sanciones disciplinarias. Señale la opción CORRECTA:",
+  "opciones": [
+   "La reprensión es la reprobación expresa que, de forma oral, dirige al subordinado la autoridad competente para imponerla.",
+   "La sanción de suspensión de empleo implicará el pase a la situación administrativa del mismo nombre con los efectos económicos inherentes a dicha situación y privará al interesado de todas las funciones propias de éste por el período que se determine.",
+   "La sanción de pérdida de destino supone el cese en el que viniera ocupando el infractor quien, durante tres años, no podrá solicitar otro en la misma Unidad o especialidad que determine, de manera motivada y atendiendo a la relación directa con la infracción cometida, la resolución sancionadora.",
+   "La pérdida de puestos en el escalafón supondrá para el sancionado el retraso en el orden de escalafonamiento, dentro de su escala, del número de puestos que se determine en la resolución del expediente que, en ningún caso, podrá ser superior a un quinto ni inferior a un décimo del número de los componentes de su empleo."
+  ],
+  "correcta": 1,
+  "lila": "Art. 13.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. La sanción de suspensión de empleo implicará el pase a la situación administrativa del mismo nombre con los efectos económicos inherentes a dicha situación y privará al interesado de todas las funciones propias de éste por el período que se determine.",
+  "exp": "Es el texto de la suspensión de empleo; la reprensión es escrita y la pérdida de destino impide volver en dos años.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "84-1",
+  "pz": "b-13",
+  "id": "26-432"
+ },
+ {
+  "lote": "e7",
+  "i": 39,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 7.9",
+    "k": 78
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. La omisión de urgente auxilio, en aquellos hechos o circunstancias graves en que sea obligada su actuación, constituye...:",
+  "opciones": [
+   "Infracción leve.",
+   "Infracción muy grave.",
+   "Infracción grave.",
+   "Infracción menos grave."
+  ],
+  "correcta": 1,
+  "lila": "Art. 7.9 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "9. La omisión de urgente auxilio, en aquellos hechos o circunstancias graves en que sea obligada su actuación o cuando se trate de un compañero en peligro.",
+  "exp": "Falta muy grave.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "78-11",
+  "pz": "b-7",
+  "id": "26-433"
+ },
+ {
+  "lote": "e7",
+  "i": 40,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 22",
+    "k": 93
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 22.1",
+    "k": 93
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. De la prescripción de las sanciones. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Las sanciones impuestas por faltas muy graves prescribirán a los tres años.",
+   "La prescripción se interrumpirá cuando se suspenda el cumplimiento de la sanción en los casos previstos en esta Ley.",
+   "Las sanciones impuestas por faltas graves prescribirán a los dos años.",
+   "Los plazos comenzarán a computarse desde el día siguiente a que se notifique al interesado la resolución sancionadora o desde que se quebrantase su cumplimiento, si hubiera comenzado."
+  ],
+  "correcta": 3,
+  "lila": "Art. 22 y Art. 22.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Art. 22. Estos plazos comenzarán a computarse desde el día en que se notifique al interesado la resolución sancionadora o desde que se quebrantase su cumplimiento, si hubiera comenzado.<br>Art. 22.1. 1. Las sanciones impuestas por faltas muy graves prescribirán a los tres años, las impuestas por faltas graves a los dos años y las impuestas por falta leve al año.",
+  "exp": "Se computan desde el día de la notificación, no desde el siguiente.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "93-2",
+  "pz": "b-22",
+  "id": "26-434"
+ },
+ {
+  "lote": "e7",
+  "i": 41,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 8.26",
+    "k": 79
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. ¿Cuál de las siguientes conductas NO constituye falta disciplinaria?:",
+  "opciones": [
+   "El alentar un altercado entre compañeros.",
+   "Ostentar sobre el uniforme un distintivo, sin estar autorizado a ello.",
+   "La falta de rendimiento en el desempeño del servicio habitual.",
+   "La embriaguez fuera del servicio."
+  ],
+  "correcta": 3,
+  "lila": "Art. 8.26 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "26. La embriaguez o el consumo de estupefacientes o sustancias tóxicas o psicotrópicas fuera del servicio, cuando tales circunstancias tengan carácter habitual o afecten a la imagen de la Guardia Civil o de la función pública. Se entenderá que existe habitualidad cuanto estuvieren acreditados tres o más episodios de embriaguez o consumo de las sustancias referidas en un período de un año.",
+  "exp": "La embriaguez fuera del servicio solo es falta si es habitual o afecta a la imagen.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "79-28",
+  "pz": "b-8",
+  "id": "26-435"
+ },
+ {
+  "lote": "e7",
+  "i": 42,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 20.2",
+    "k": 91
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. En relación con la responsabilidad disciplinaria:",
+  "opciones": [
+   "Si durante la sustanciación del procedimiento sancionador por la comisión de una falta disciplinaria, el interesado dejara de estar sometido a la presente Ley, se dictará resolución ordenando el archivo del expediente con invocación de su causa.",
+   "Se extingue sólo por la prescripción de la pena.",
+   "Se extingue por el cumplimiento de la sanción y la prescripción de la falta simultáneamente.",
+   "Si el interesado dejara de estar sometido a la presente Ley, en el periodo de sustanciación del procedimiento sancionador se dictará resolución ordenando el archivo del expediente con invocación de su causa salvo para el caso de falta grave."
+  ],
+  "correcta": 0,
+  "lila": "Art. 20.2 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "2. Si durante la sustanciación de un procedimiento sancionador el interesado dejara de estar sometido a la presente Ley, se dictará resolución ordenando el archivo del expediente con invocación de su causa. Si el expediente se instruye por falta muy grave y el interesado volviera a quedar sujeto a la presente Ley, se acordará la reapertura del procedimiento, siempre que no hayan transcurrido cuatro años desde que se hubiera producido la causa que motivó el archivo de las actuaciones.",
+  "exp": "Se archiva el expediente con invocación de su causa.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "91-2",
+  "pz": "b-20",
+  "id": "26-436"
+ },
+ {
+  "lote": "e7",
+  "i": 43,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 8.28",
+    "k": 79
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 7.21",
+    "k": 78
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 9.6",
+    "k": 80
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Faltas disciplinarias. Señale la opción CORRECTA:",
+  "opciones": [
+   "La tenencia de drogas tóxicas, estupefacientes, sustancias psicotrópicas o similares, durante el servicio constituye una falta muy grave.",
+   "Reproducir las imágenes y sonidos obtenidos con videocámaras para fines distintos de los previstos legalmente es una falta grave.",
+   "Ninguna de las opciones es correcta.",
+   "El incumplimiento de las directrices o pautas formativas durante la instrucción o preparación para el desempeño de la labor profesional es una falta grave."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8.28 y Art. 7.21 y Art. 9.6 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Art. 8.28. 28. La tenencia de drogas tóxicas, estupefacientes, sustancias psicotrópicas o similares, excepto que esa tenencia se derive de actuaciones propias del servicio.<br>Art. 7.21. 21. Reproducir las imágenes y sonidos obtenidos con videocámaras para fines distintos de los previstos legalmente.<br>Art. 9.6. 6. El incumplimiento de las directrices o pautas formativas durante la instrucción o preparación para el desempeño de la labor profesional.",
+  "exp": "La tenencia de drogas es grave, reproducir imágenes muy grave y el incumplimiento formativo leve.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "79-30",
+  "pz": "b-8",
+  "id": "26-437"
+ },
+ {
+  "lote": "e7",
+  "i": 44,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 17.1",
+    "k": 88
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. ¿En qué consiste la reprensión?:",
+  "opciones": [
+   "Llamada de atención que, por escrito, dirige al subordinado la autoridad competente para imponerla.",
+   "Notificación de sanción escrita que dirige al subordinado la autoridad competente para imponerla.",
+   "Reprobación expresa que, por escrito, dirige al subordinado la autoridad competente para imponerla.",
+   "Llamada de atención tácita que, verbalmente, dirige al subordinado la autoridad competente para imponerla."
+  ],
+  "correcta": 2,
+  "lila": "Art. 17.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. La reprensión es la reprobación expresa que, por escrito, dirige al subordinado la autoridad competente para imponerla.",
+  "exp": "Reprobación expresa por escrito.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "88-1",
+  "pz": "b-17",
+  "id": "26-438"
+ },
+ {
+  "lote": "e7",
+  "i": 45,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 21.2",
+    "k": 92
+   },
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 21.4",
+    "k": 92
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Faltas y sanciones. En relación con la prescripción de las faltas disciplinarias, señale la opción CORRECTA:",
+  "opciones": [
+   "Las faltas graves lo hará a los dos años contando a partir de la notificación al interesado.",
+   "Ninguna de las opciones es correcta.",
+   "Los plazos de prescripción de las faltas leves quedarán interrumpidos cuando los hechos sean objeto de procedimiento judicial penal.",
+   "El plazo de prescripción comenzará a contarse desde que la falta se hubiese cometido."
+  ],
+  "correcta": 3,
+  "lila": "Art. 21.2 y Art. 21.4 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "Art. 21.2. 2. El plazo de prescripción comenzará a contarse desde que la falta se hubiese cometido. Si el procedimiento se iniciase por cualquiera de las faltas disciplinarias derivadas de condena por sentencia penal, la prescripción comenzará a computarse desde que la sentencia sea firme, y, en todo caso, desde la fecha en que se acuerde el archivo de la ejecutoria penal.<br>Art. 21.4. 4. Los plazos de prescripción de las faltas graves y muy graves quedarán interrumpidos cuando cualquiera de los hechos integrantes de esas faltas o vinculados con ellos sean objeto de procedimiento judicial penal. Estos plazos volverán a correr cuando se adopte resolución firme por el órgano judicial competente.",
+  "exp": "Se cuenta desde que la falta se cometió.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "92-2",
+  "pz": "b-21",
+  "id": "26-439"
+ },
+ {
+  "lote": "e7",
+  "i": 46,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 38",
+    "k": 109
+   }
+  ],
+  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Procedimiento sancionador. ¿Qué derechos comprenderá esencialmente el procedimiento sancionador?:",
+  "opciones": [
+   "El de publicidad.",
+   "El de legalidad.",
+   "El de información.",
+   "El de imparcialidad."
+  ],
+  "correcta": 2,
+  "lila": "Art. 38 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "El procedimiento disciplinario se ajustará a los principios de legalidad, impulso de oficio, imparcialidad, celeridad, eficacia, publicidad, contradicción, irretroactividad, tipicidad, responsabilidad, proporcionalidad, individualización de las sanciones y culpabilidad, y comprenderá esencialmente los derechos a la presunción de inocencia, información, defensa y audiencia.",
+  "exp": "El derecho de información.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "109-1",
+  "pz": "b-38",
+  "id": "26-440"
+ },
+ {
+  "lote": "e7",
+  "i": 47,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 44.3",
+    "k": 115
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Cuando en un procedimiento disciplinario no se pueda practicar una notificación al interesado, ¿cómo se efectuará ésta?:",
+  "opciones": [
+   "Por medio de edictos en el tablón de anuncios del Ayuntamiento de su último domicilio conocido y en el Boletín Oficial de la Provincia correspondiente a dicho domicilio.",
+   "Por medio de edictos en el tablón de anuncios del Ayuntamiento de su último domicilio conocido y en el Boletín Oficial de la Guardia Civil.",
+   "Por medio de edictos en el tablón de anuncios de su unidad de destino o encuadramiento y en el Boletín Oficial de la Guardia Civil.",
+   "Por medio de edictos en el tablón de anuncios de su unidad de destino o encuadramiento y en el Boletín Oficial de la Provincia correspondiente a la ubicación de dicha unidad."
+  ],
+  "correcta": 2,
+  "lila": "Art. 44.3 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "3. Cuando no se pueda practicar una notificación, por no ser localizado el interesado en su unidad de destino o encuadramiento, o en su domicilio declarado, la notificación se efectuará por medio de edictos en el tablón de anuncios de su unidad de destino o encuadramiento y en el Boletín Oficial de la Guardia Civil, continuándose las actuaciones. El trámite de notificación domiciliaria se entenderá cumplimentado una vez efectuados, en el plazo de tres días, dos intentos llevados a cabo en momentos diferentes.",
+  "exp": "Edictos en el tablón de su unidad y Boletín Oficial de la Guardia Civil.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "115-3",
+  "pz": "b-44",
+  "id": "26-441"
+ },
+ {
+  "lote": "e7",
+  "i": 48,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 78",
+    "k": 149
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Disposiciones generales de los procedimientos sancionadores. Ejecución de las sanciones y recursos. En relación con el recurso contencioso-disciplinario militar, señale la opción INCORRECTA:",
+  "opciones": [
+   "Contra las resoluciones adoptadas en los recursos de alzada y de reposición podrá interponerse recurso contencioso-disciplinario militar ordinario.",
+   "El recurso contencioso-disciplinario militar preferente y sumario podrá interponerse en los términos que se establecen en la legislación procesal militar.",
+   "Las resoluciones adoptadas en los recursos de alzada y de reposición ponen fin a la vía disciplinaria, con alguna excepción.",
+   "El recurso contencioso-disciplinario militar preferente y sumario podrá interponerse contra las resoluciones de las autoridades y mandos a los que la presente Ley atribuye competencia sancionadora."
+  ],
+  "correcta": 2,
+  "lila": "Art. 78 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "1. Las resoluciones adoptadas en los recursos de alzada y de reposición pondrán fin a la vía disciplinaria y contra ellas podrá interponerse recurso contencioso-disciplinario militar ordinario, en la forma y plazos previstos en la legislación procesal militar. De todo lo anterior se informará a los recurrentes en las notificaciones que se practiquen, con expresa indicación del plazo hábil para recurrir y el órgano judicial ante el que puede interponerse. 2. El recurso contencioso-disciplinario militar preferente y sumario podrá interponerse contra las resoluciones de las autoridades y mandos a los que la presente Ley atribuye competencia sancionadora, en los términos que se establece en la legislación procesal militar.",
+  "exp": "Ponen fin a la vía disciplinaria sin excepciones.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "149-1",
+  "pz": "b-78",
+  "id": "26-442"
+ },
+ {
+  "lote": "e7",
+  "i": 49,
+  "v": "v07",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley Orgánica 12/2007",
+    "art": "Art. 14",
+    "k": 85
+   }
+  ],
+  "pregunta": "Ley Orgánica del Régimen Disciplinario de la Guardia Civil. Sanciones disciplinarias. Si en la Escala de Oficiales hay 3000 efectivos de los cuales 1200 son Tenientes, ¿cuántos puestos en el orden de escalafonamiento podrá perder como mínimo un Teniente que fuese sancionado con pérdida de puestos en el escalafón?:",
+  "opciones": [
+   "120.",
+   "240.",
+   "600.",
+   "300."
+  ],
+  "correcta": 0,
+  "lila": "Art. 14 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "rojo": "La pérdida de puestos en el escalafón supondrá para el sancionado el retraso en el orden de escalafonamiento, dentro de su empleo, del número de puestos que se determine en la resolución del expediente que, en ningún caso, podrá ser superior a un quinto ni inferior a un décimo, del número de los componentes de su empleo.",
+  "exp": "Como mínimo un décimo de los componentes de su empleo: 120.",
+  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
+  "par": "85-1",
+  "pz": "b-14",
+  "id": "26-443"
+ }
+]
