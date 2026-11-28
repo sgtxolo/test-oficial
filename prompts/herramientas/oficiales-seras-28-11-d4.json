@@ -1,0 +1,1472 @@
+[
+ {
+  "lote": "d4",
+  "i": 0,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "15",
+    "ap": "6"
+   },
+   {
+    "n": "APIC",
+    "art": "15",
+    "ap": "7"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto a los Magistrados, Fiscal, Fiscales Adjuntos y Secretario, señale la opción INCORRECTA:",
+  "opciones": [
+   "Los sueldos, los emolumentos y las prestaciones que perciban los Magistrados, el Fiscal, los Fiscales Adjuntos y el Secretario de la Corte estarán exentos de impuestos.",
+   "Los Estados Partes podrán tener en cuenta los sueldos, los emolumentos y las prestaciones que perciban los Magistrados, el Fiscal, los Fiscales Adjuntos y el Secretario de la Corte, a los efectos de determinar la cuantía de los impuestos que se han de aplicar a los ingresos de otras fuentes.",
+   "Los Estados Partes estarán obligados a exonerar del impuesto a la renta a las pensiones o rentas vitalicias pagadas a los ex Magistrados, Fiscales o Secretarios y a las personas a su cargo.",
+   "Cuando la aplicación de un impuesto de cualquier índole dependa de la residencia, los períodos durante los cuales los Magistrados, el Fiscal, los Fiscales Adjuntos y el Secretario se encuentren en un Estado Parte a fin de desempeñar sus funciones no serán considerados períodos de residencia a efectos tributarios."
+  ],
+  "correcta": 2,
+  "lila": "Art. 15.6 y Art. 15.7 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "Art. 15. 6. Los sueldos, los emolumentos y las prestaciones que perciban los Magistrados, el Fiscal, los Fiscales Adjuntos y el Secretario de la Corte estarán exentos de impuestos. Cuando la aplicación de un impuesto de cualquier índole dependa de la residencia, los períodos durante los cuales los Magistrados, el Fiscal, los Fiscales Adjuntos y el Secretario se encuentren en un Estado Parte a fin de desempeñar sus funciones no serán considerados períodos de residencia a efectos tributarios. Los Estados Partes podrán tener en cuenta esos sueldos, emolumentos y prestaciones a los efectos de determinar la cuantía de los impuestos que se han de aplicar a los ingresos de otras fuentes.<br>Art. 15. 7. Los Estados Partes no estarán obligados a exonerar del impuesto a la renta a las pensiones o rentas vitalicias pagadas a los ex Magistrados, Fiscales o Secretarios y a las personas a su cargo.",
+  "exp": "Los Estados Partes NO están obligados a exonerar esas pensiones.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "199-6-0",
+  "parT": "7 los estados partes no estaran obligados a exonerar del impuesto a la renta a las pension",
+  "fR": 1,
+  "pz": "p-15",
+  "sec": 35,
+  "id": "1-771"
+ },
+ {
+  "lote": "d4",
+  "i": 1,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "11",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto a las facilidades en las comunicaciones, señale la opción CORRECTA:",
+  "opciones": [
+   "La correspondencia o las comunicaciones oficiales de la Corte serán sometidas a censura previa.",
+   "La Corte podrá utilizar todos los medios apropiados de comunicación, sin incluir los electrónicos, y emplear claves o cifras para su correspondencia o comunicaciones oficiales.",
+   "A los efectos de su correspondencia y comunicaciones oficiales, la Corte gozará en el territorio de cada Estado Parte de un trato no menos favorable que el que éste conceda a cualquier organización intergubernamental o misión diplomática en materia de prioridades, tarifas o impuestos aplicables al franqueo postal y a las diversas formas de comunicación y correspondencia.",
+   "La correspondencia y las comunicaciones oficiales de la Corte serán secretas."
+  ],
+  "correcta": 2,
+  "lila": "Art. 11 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. A los efectos de su correspondencia y comunicaciones oficiales, la Corte gozará en el territorio de cada Estado Parte de un trato no menos favorable que el que éste conceda a cualquier organización intergubernamental o misión diplomática en materia de prioridades, tarifas o impuestos aplicables al franqueo postal y a las diversas formas de comunicación y correspondencia. 2. La correspondencia o las comunicaciones oficiales de la Corte no serán sometidas a censura alguna. 3. La Corte podrá utilizar todos los medios apropiados de comunicación, incluidos los electrónicos, y emplear claves o cifras para su correspondencia o comunicaciones oficiales. La correspondencia y las comunicaciones oficiales de la Corte serán inviolables. 4. La Corte podrá despachar y recibir correspondencia y otras piezas o comunicaciones por correo o valija sellada, los cuales gozarán de los mismos privilegios, inmunidades y facilidades que se reconocen a las valijas y los correos y diplomáticos. 5. La Corte podrá operar equipos de radio y otro equipo de telecomunicaciones en las frecuencias que le asignen los Estados Partes, de conformidad con sus procedimientos nacionales. Los Estados Partes se esforzarán por asignar a la Corte, en la mayor medida posible, las frecuencias que haya solicitado.",
+  "exp": "Es literal el apartado 1. No hay censura, se incluyen los medios electrónicos y la correspondencia es inviolable (no «secreta»).",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "197-1-0",
+  "parT": "art 11 1 a los efectos de su correspondencia y comunicaciones oficiales la corte gozara en",
+  "fR": 1,
+  "pz": "p-11",
+  "sec": 34,
+  "id": "1-772"
+ },
+ {
+  "lote": "d4",
+  "i": 2,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Las diferencias que surjan de la interpretación o aplicación del Acuerdo objeto de la pregunta entre dos o más Estados Partes o entre la Corte Penal Internacional y un Estado Parte serán resueltas mediante consultas, negociación u otro medio convenido de arreglo. La diferencia, de no ser resuelta de conformidad con lo establecido en el presente enunciado:",
+  "opciones": [
+   "Dentro de los dos meses siguientes a la presentación de una solicitud por escrito de una de las partes en la diferencia, será, a petición de las dos partes, sometida a un tribunal arbitral.",
+   "Dentro de los tres meses siguientes a la presentación de una solicitud por escrito de una de las partes en la diferencia, será, a petición de cualquiera de las partes, sometida a un tribunal arbitral.",
+   "Dentro de los dos meses siguientes a la presentación de una solicitud por escrito de una de las partes en la diferencia, será, a petición de cualquiera de las partes, sometida a un tribunal arbitral.",
+   "Dentro de los seis meses siguientes a la presentación de una solicitud por escrito de una de las partes en la diferencia, será, a petición de cualquiera de las partes, sometida a un tribunal arbitral."
+  ],
+  "correcta": 1,
+  "lila": "Art. 32.2 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "2. La diferencia, de no ser resuelta de conformidad con el párrafo 1 del presente artículo dentro de los tres meses siguientes a la presentación de una solicitud por escrito por una de las partes en ella, será, a petición de cualquiera de las partes, sometida a un TRIBUNAL ARBITRAL de conformidad con el procedimiento establecido en los párrafos 3 a 6 infra.",
+  "exp": "A petición de cualquiera de las partes, transcurridos tres meses desde la solicitud escrita.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "213-1-0",
+  "parT": "2 la diferencia de no ser resuelta dentro de los tres meses siguientes a la presentacion d",
+  "fR": 1,
+  "pz": "p-32",
+  "sec": 37,
+  "id": "1-773"
+ },
+ {
+  "lote": "d4",
+  "i": 3,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "24",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿A qué estarán obligadas todas las personas que gocen de privilegios e inmunidades de conformidad con el presente Acuerdo?:",
+  "opciones": [
+   "A respetar las leyes y reglamentos del Estado Parte en cuyo territorio se encuentren.",
+   "A no inmiscuirse en los asuntos internos del Estado Parte en cuyo territorio se encuentren o por el que transiten en ejercicio de sus funciones para la Corte.",
+   "Todas las opciones son correctas.",
+   "A respetar las leyes y reglamentos del Estado Parte por el que transiten en ejercicio de sus funciones para la Corte."
+  ],
+  "correcta": 2,
+  "lila": "Art. 24.2 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "2. Todas las personas que gocen de privilegios e inmunidades de conformidad con el presente Acuerdo estarán obligadas, sin perjuicio de esos privilegios e inmunidades, a respetar las leyes y reglamentos del Estado Parte en cuyo territorio se encuentren o por el que transiten en ejercicio de sus funciones para la Corte. Estarán también obligadas a no inmiscuirse en los asuntos internos de ese Estado.",
+  "exp": "Deben respetar las leyes del Estado en que estén o por el que transiten y no inmiscuirse en sus asuntos internos.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "207-1-0",
+  "parT": "2 todas las personas que gocen de privilegios e inmunidades de conformidad con el presente",
+  "fR": 1,
+  "pz": "p-24",
+  "sec": 36,
+  "id": "1-774"
+ },
+ {
+  "lote": "d4",
+  "i": 4,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "18",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Abogados y personas que asistan a los abogados defensores. Los abogados gozarán de unos privilegios, inmunidades y facilidades en la medida en que sea necesario para el ejercicio independiente de sus funciones, incluso el tiempo empleado en viajes, en relación con el ejercicio de sus funciones y siempre que exhiban el certificado a que hace referencia el Acuerdo objeto de la pregunta. ¿A qué privilegios, inmunidades y facilidades hace referencia el enunciado?:",
+  "opciones": [
+   "A la inmunidad de jurisdicción de toda índole respecto de las declaraciones que hagan verbalmente o por escrito y los actos que realicen en el desempeño de sus funciones, la cual subsistirá incluso después de que hayan cesado en el ejercicio de sus funciones.",
+   "A la exención de las restricciones en materia de inmigración, sí quedando sujeto a las formalidades de registro de extranjeros.",
+   "Al derecho a la inviolabilidad de cualesquiera papeles y documentos, cualquiera que sea su forma, y materiales.",
+   "Al derecho a recibir y enviar cualesquiera papeles y documentos, cualquiera que sea su forma."
+  ],
+  "correcta": 0,
+  "lila": "Art. 18.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Los abogados gozarán de los siguientes privilegios, inmunidades y facilidades en la medida en que sea necesario para el ejercicio independiente de sus funciones, incluso el tiempo empleado en viajes, en relación con el ejercicio de sus funciones y siempre que exhiban el certificado a que se hace referencia en el párrafo 2 del presente artículo: a) Inmunidad de arresto o detención personal y contra la incautación de su equipaje personal; b) Inmunidad de jurisdicción de toda índole respecto de las declaraciones que hagan verbalmente o por escrito y los actos que realicen en el desempeño de sus funciones, la cual subsistirá incluso después de que hayan cesado en el ejercicio de sus funciones; c) El derecho a la inviolabilidad de papeles y documentos, cualquiera que sea su forma, y materiales relacionados con el desempeño de sus funciones; d) El derecho a recibir y enviar papeles y documentos, cualquiera que sea su forma, con fines de comunicación en el ejercicio de sus funciones de abogado; e) Exención de las restricciones en materia de inmigración y las formalidades de registro de extranjeros; f) Exención de la inspección del equipaje personal, a menos que haya fundadas razones para creer que el equipaje contiene artículos cuya importación o exportación está prohibida por la ley o sometida a control por las normas de cuarentena del Estado Parte de que se trate, en cuyo caso se hará una inspección en presencia del abogado; g) Los mismos privilegios con respecto a las facilidades monetarias y cambiarias que se reconozcan a los representantes de gobiernos extranjeros en misión temporal oficial; h) Las mismas facilidades de repatriación en épocas de crisis internacional que se reconozcan a los agentes diplomáticos con arreglo a la Convención de Viena.",
+  "exp": "Es literal la letra b). Las otras alteran o recortan las letras e), c) y d).",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "202-2",
+  "parT": "b inmunidad de jurisdiccion de toda indole respecto de las declaraciones que hagan verbalm",
+  "fR": 1,
+  "pz": "p-18",
+  "sec": 35,
+  "id": "1-775"
+ },
+ {
+  "lote": "d4",
+  "i": 5,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "26",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Se podrá renunciar a los privilegios e inmunidades previstos en el Acuerdo objeto de la pregunta:",
+  "opciones": [
+   "En el caso del Fiscal, por mayoría absoluta de la Fiscalía.",
+   "En el caso del Secretario, por la Presidencia.",
+   "En el caso de los testigos y de las víctimas, por el Secretario.",
+   "En el caso de los peritos, por decisión del órgano de la Corte Penal Internacional que haya designado al perito."
+  ],
+  "correcta": 1,
+  "lila": "Art. 26 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Los privilegios e inmunidades previstos en los artículos 15 a 22 del presente Acuerdo se reconocen en interés de la administración de justicia y no en beneficio personal. Podrá renunciarse a ellos de conformidad con el párrafo del artículo 48 del Estatuto y con lo dispuesto en el presente artículo y se tendrá la obligación de hacerlo en un caso determinado cuando podrían constituir un obstáculo a la justicia y la renuncia sea posible sin perjuicio del fin para el cual se reconocen. 2. Se podrá renunciar a los privilegios e inmunidades: a) En el caso de un Magistrado o del Fiscal, por mayoría absoluta de los Magistrados; b) En el caso del Secretario, por la Presidencia; c) En el caso de los Fiscales Adjuntos y del personal de la Fiscalía, por el Fiscal; d) En el caso del Secretario Adjunto y del personal de la Secretaría, por el Secretario; e) En el caso del personal a que se hace referencia en el artículo 17, por decisión del jefe del órgano de la Corte que emplee a ese personal; f) En el caso de los abogados y de las personas que asistan a los abogados defensores, por la Presidencia; g) En el caso de los testigos y de las víctimas, por la Presidencia; h) En el caso de los peritos, por decisión del jefe del órgano de la Corte que haya designado al perito; i) En el caso de las otras personas cuya presencia se requiera en la sede de la Corte, por la Presidencia.",
+  "exp": "El Secretario: por la Presidencia. El Fiscal requiere mayoría de los Magistrados, testigos y víctimas la Presidencia y los peritos el jefe del órgano que los designó.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "209-0",
+  "parT": "art 26 en los articulos 15 a 22",
+  "fR": 0,
+  "pz": "p-26",
+  "sec": 36,
+  "id": "1-776"
+ },
+ {
+  "lote": "d4",
+  "i": 6,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "15",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Cuando actúen en el desempeño de sus funciones para la Corte Penal Internacional o en relación con ellas, ¿quiénes gozarán de los mismos privilegios e inmunidades que los reconocidos a los jefes de las misiones diplomáticas?:",
+  "opciones": [
+   "Los Magistrados, el Fiscal, los Fiscales Adjuntos y el Secretario General.",
+   "Los Magistrados, el Fiscal Jefe y el Secretario General.",
+   "Los Magistrados, el Fiscal, los Fiscales Adjuntos y el Secretario.",
+   "Los Magistrados, el Fiscal Jefe y el Secretario."
+  ],
+  "correcta": 2,
+  "lila": "Art. 15.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Los Magistrados, el Fiscal, los Fiscales Adjuntos y el Secretario gozarán, cuando actúen en el desempeño de sus funciones para la Corte o en relación con ellas, de los mismos privilegios e inmunidades reconocidos a los jefes de las misiones diplomáticas y, una vez expirado su mandato, seguirán gozando de inmunidad de jurisdicción por las declaraciones que hayan hecho verbalmente o por escrito y los actos que hayan realizado en el desempeño de sus funciones oficiales.",
+  "exp": "Son los Magistrados, el Fiscal, los Fiscales Adjuntos y el Secretario.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "199-0",
+  "parT": "art 15 1 los magistrados el fiscal los fiscales adjuntos y el secretario gozaran cuando ac",
+  "fR": 1,
+  "pz": "p-15",
+  "sec": 35,
+  "id": "1-777"
+ },
+ {
+  "lote": "d4",
+  "i": 8,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "18",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Una vez designado un abogado de conformidad con el Estatuto, las Reglas de Procedimiento y Prueba y el Reglamento de la Corte, se le extenderá un certificado, por el período necesario para el ejercicio de sus funciones. ¿Por quién será firmado el certificado?:",
+  "opciones": [
+   "Por el Presidente.",
+   "Por el Magistrado.",
+   "Por el Secretario.",
+   "Por el Fiscal."
+  ],
+  "correcta": 2,
+  "lila": "Art. 18.2 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "2. Una vez designado un abogado de conformidad con el Estatuto, las Reglas de Procedimiento y Prueba y el Reglamento de la Corte, se le extenderá un certificado, firmado por el Secretario, por el período necesario para el ejercicio de sus funciones. El certificado se retirará si se pone término al poder o al mandato antes de que expire el certificado.",
+  "exp": "El certificado lo firma el Secretario.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "202-9-0",
+  "parT": "2 una vez designado un abogado de conformidad con el estatuto las reglas de procedimiento ",
+  "fR": 1,
+  "pz": "p-18",
+  "sec": 35,
+  "id": "1-778"
+ },
+ {
+  "lote": "d4",
+  "i": 11,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "5",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Señale la opción INCORRECTA. ¿A qué tendrá derecho la Corte?:",
+  "opciones": [
+   "A exhibir su emblema y sus señales en los vehículos que utilice con fines oficiales.",
+   "A exhibir su emblema y sus señales en medios de transporte.",
+   "A enarbolar su pabellón.",
+   "A exhibir su emblema y sus señales en sus locales."
+  ],
+  "correcta": 1,
+  "lila": "Art. 5 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "La Corte tendrá derecho a enarbolar su pabellón y a exhibir su emblema y sus señales en sus locales y en los vehículos y otros medios de transporte que utilice con fines oficiales.",
+  "exp": "Los vehículos y medios de transporte deben utilizarse con fines oficiales; la opción omite esa condición.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "191-19-0",
+  "parT": "art 5 la corte tendra derecho a enarbolar su pabellon y a exhibir su emblema y sus senales",
+  "fR": 1,
+  "pz": "p-5",
+  "sec": 33,
+  "id": "1-779"
+ },
+ {
+  "lote": "d4",
+  "i": 12,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Todas las diferencias que surjan de la interpretación o aplicación del presente Acuerdo entre dos o más Estados Partes o entre la Corte y un Estado Parte, ¿cómo NO serán resueltas?:",
+  "opciones": [
+   "Mediante consultas.",
+   "Mediante otro medio convenido de arreglo.",
+   "Mediante la negociación.",
+   "Mediante denuncia."
+  ],
+  "correcta": 3,
+  "lila": "Art. 32.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Todas las diferencias que surjan de la interpretación o aplicación del presente Acuerdo entre dos o más Estados Partes o entre la Corte y un Estado Parte serán resueltas mediante consultas, negociación u otro medio convenido de arreglo.",
+  "exp": "Se resuelven por consultas, negociación u otro medio convenido; no por denuncia.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "213-0-0",
+  "parT": "1 todas las diferencias que surjan de la interpretacion o aplicacion del presente acuerdo ",
+  "fR": 0.5,
+  "pz": "p-32",
+  "sec": 37,
+  "id": "1-780"
+ },
+ {
+  "lote": "d4",
+  "i": 13,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "1",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Términos empleados. A los efectos del Acuerdo objeto de la pregunta, ¿qué se entenderá por \"Secretario General?:",
+  "opciones": [
+   "El Secretario General de las Naciones Unidas.",
+   "El Secretario elegido por Naciones Unidas.",
+   "El Secretario del Tribunal Internacional de Justicia.",
+   "El Secretario elegido por la Corte Penal Internacional."
+  ],
+  "correcta": 0,
+  "lila": "Art. 1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "A los efectos del presente Acuerdo: a) Por «el Estatuto» se entenderá el Estatuto de Roma de la Corte Penal Internacional, aprobado el 17 de julio de 1998 por la Conferencia Diplomática de Plenipotenciarios de las Naciones Unidas sobre el establecimiento de una corte penal internacional; b) Por «la Corte» se entenderá la Corte Penal Internacional establecida por el Estatuto; c) Por «Estados Partes» se entenderán los Estados Partes en el presente Acuerdo; d) Por «representantes de los Estados Partes» se entenderán los delegados, delegados suplentes, asesores, peritos técnicos y secretarios de delegaciones; e) Por «la Asamblea» se entenderá la Asamblea de los Estados Partes en el Estatuto; f) Por «Magistrados» se entenderán los magistrados de la Corte; g) Por «la Presidencia» se entenderá el órgano integrado por el Presidente y los Vicepresidentes primero y segundo de la Corte; h) Por «el Fiscal» se entenderá el Fiscal elegido por la Asamblea de conformidad con el párrafo del artículo 42 del Estatuto; i) Por «los Fiscales Adjuntos» se entenderán los Fiscales Adjuntos elegidos por la Asamblea de conformidad con el párrafo del artículo 42 del Estatuto; j) Por «el Secretario» se entenderá el Secretario elegido por la Corte de conformidad con el párrafo del artículo 43 del Estatuto; k) Por «Secretario Adjunto» se entenderá el Secretario elegido por la Corte de conformidad con el párrafo del artículo 43 del Estatuto; l) Por «abogados» se entenderán los abogados defensores y los representantes legales de las víctimas; m) Por «Secretario General» se entenderá el Secretario General de las Naciones Unidas; n) Por «representantes de organizaciones intergubernamentales» se entenderá los jefes ejecutivos de organizaciones intergubernamentales, incluido todo funcionario que actúe en su representación; o) Por «la Convención de Viena» se entenderá la Convención de Viena sobre Relaciones Diplomáticas, de 18 de abril de 1961; p) Por «Reglas de Procedimiento y Prueba» se entenderán las Reglas de Procedimiento y Prueba aprobadas de conformidad con el artículo 51 del Estatuto.",
+  "exp": "Es el Secretario General de las Naciones Unidas.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "191-13",
+  "parT": "m por secretario general se entendera el secretario general de las naciones unidas",
+  "fR": 1,
+  "pz": "p-1",
+  "sec": 33,
+  "id": "1-781"
+ },
+ {
+  "lote": "d4",
+  "i": 14,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "10",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Señale la opción INCORRECTA. La Corte NO quedará sometida a controles financieros, reglamentos o moratorias financieros de índole alguna en el desempeño de sus funciones y podrá:",
+  "opciones": [
+   "Recibir, tener, negociar, transferir o convertir bonos u otros títulos financieros o realizar cualquier transacción con ellos.",
+   "Tener fondos, moneda de cualquier tipo u oro y operar cuentas en cualquier moneda.",
+   "Transferir, previa autorización, sus fondos, oro o moneda de un país a otro o dentro de un país y convertir a cualesquiera otras las monedas que tenga en su poder.",
+   "Las transacciones financieras de la Corte gozarán, en cuanto al tipo de cambio, de un trato no menos favorable que el que otorgue el Estado Parte de que se trate a cualquier organización intergubernamental o misión diplomática."
+  ],
+  "correcta": 2,
+  "lila": "Art. 10.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. La Corte no quedará sometida a controles financieros, reglamentos o moratorias financieros de índole alguna en el desempeño de sus funciones y podrá: a) Tener fondos, moneda de cualquier tipo u oro y operar cuentas en cualquier moneda; b) Transferir libremente sus fondos, oro o moneda de un país a otro o dentro de un país y convertir a cualesquiera otras las monedas que tenga en su poder; c) Recibir, tener, negociar, transferir o convertir bonos u otros títulos financieros o realizar cualquier transacción con ellos; d) Las transacciones financieras de la Corte gozarán, en cuanto al tipo de cambio, de un trato no menos favorable que el que otorgue el Estado Parte de que se trate a cualquier organización intergubernamental o misión diplomática.",
+  "exp": "La transferencia de fondos es libre, sin autorización previa.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "194-1",
+  "parT": "art 10 1 la corte no quedara sometida a controles financieros reglamentos o moratorias fin",
+  "fR": 1,
+  "pz": "p-10",
+  "sec": 34,
+  "id": "1-782"
+ },
+ {
+  "lote": "d4",
+  "i": 15,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "26",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Se podrá renunciar a los privilegios e inmunidades:",
+  "opciones": [
+   "En el caso de los peritos, por la Presidencia.",
+   "En el caso del personal contratado localmente, por el Secretario general.",
+   "En el caso de los abogados y de las personas que asistan a los abogados defensores, por el Fiscal.",
+   "En el caso de los testigos y de las víctimas, por la Presidencia."
+  ],
+  "correcta": 3,
+  "lila": "Art. 26 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Los privilegios e inmunidades previstos en los artículos 15 a 22 del presente Acuerdo se reconocen en interés de la administración de justicia y no en beneficio personal. Podrá renunciarse a ellos de conformidad con el párrafo del artículo 48 del Estatuto y con lo dispuesto en el presente artículo y se tendrá la obligación de hacerlo en un caso determinado cuando podrían constituir un obstáculo a la justicia y la renuncia sea posible sin perjuicio del fin para el cual se reconocen. 2. Se podrá renunciar a los privilegios e inmunidades: a) En el caso de un Magistrado o del Fiscal, por mayoría absoluta de los Magistrados; b) En el caso del Secretario, por la Presidencia; c) En el caso de los Fiscales Adjuntos y del personal de la Fiscalía, por el Fiscal; d) En el caso del Secretario Adjunto y del personal de la Secretaría, por el Secretario; e) En el caso del personal a que se hace referencia en el artículo 17, por decisión del jefe del órgano de la Corte que emplee a ese personal; f) En el caso de los abogados y de las personas que asistan a los abogados defensores, por la Presidencia; g) En el caso de los testigos y de las víctimas, por la Presidencia; h) En el caso de los peritos, por decisión del jefe del órgano de la Corte que haya designado al perito; i) En el caso de las otras personas cuya presencia se requiera en la sede de la Corte, por la Presidencia.",
+  "exp": "Testigos y víctimas: por la Presidencia.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "209-0",
+  "parT": "art 26 en los articulos 15 a 22",
+  "fR": 0,
+  "pz": "p-26",
+  "sec": 36,
+  "id": "1-783"
+ },
+ {
+  "lote": "d4",
+  "i": 16,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Inmunidad de la Corte y de sus bienes, haberes y fondos. Señale la opción CORRECTA:",
+  "opciones": [
+   "Los bienes, haberes y fondos de la Corte Penal Internacional, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de allanamiento, incautación, requisa, decomiso y expropiación y cualquier otra forma de interferencia, ya sea de carácter ejecutivo, administrativo, judicial o legislativo.",
+   "En la medida en que sea necesario para el desempeño de las funciones de la Corte Penal Internacional, los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, estarán exentos de restricciones, reglamentaciones, controles o moratorias de toda índole.",
+   "La Corte Penal Internacional y sus bienes, haberes y fondos, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de jurisdicción en todas sus formas, salvo en la medida en que la Corte renuncie expresamente a ella en un caso determinado.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 6 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. La Corte y sus bienes, haberes y fondos, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de jurisdicción en todas sus formas, salvo en la medida en que la Corte renuncie expresamente a ella en un caso determinado. Se entenderá, sin embargo, que la renuncia no será extensible a ninguna medida de ejecución. 2. Los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de allanamiento, incautación, requisa, decomiso y expropiación y cualquier otra forma de interferencia, ya sea de carácter ejecutivo, administrativo, judicial o legislativo. 3. En la medida en que sea necesario para el desempeño de las funciones de la Corte, los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, estarán exentos de restricciones, reglamentaciones, controles o moratorias de toda índole.",
+  "exp": "Las tres reproducen los apartados del artículo 6.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "191-20",
+  "parT": "art 6 1 la corte y sus bienes haberes y fondos gozaran de inmunidad de jurisdiccion en tod",
+  "fR": 0.41,
+  "pz": "p-6",
+  "sec": 33,
+  "id": "1-784"
+ },
+ {
+  "lote": "d4",
+  "i": 17,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "29",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿Qué documentos de viaje válidos reconocerán y aceptarán los Estados Partes, a los Magistrados, el Fiscal, los Fiscales Adjuntos, el Secretario, el Secretario Adjunto, el personal de la Fiscalía y el personal de la Secretaría?:",
+  "opciones": [
+   "Los laissez passer de cada Estado Parte.",
+   "Los documentos de viaje expedidos por el Presidente.",
+   "Los laissez passer de las Naciones Unidas.",
+   "Los documentos de viaje expedidos por el Estado Parte."
+  ],
+  "correcta": 2,
+  "lila": "Art. 29 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "Los Estados Partes reconocerán y aceptarán como documentos de viaje válidos los laissez passer de las Naciones Unidas o los documentos de viaje expedidos por la Corte a los Magistrados, el Fiscal, los Fiscales Adjuntos, el Secretario, el Secretario Adjunto, el personal de la Fiscalía y el personal de la Secretaría.",
+  "exp": "Los laissez-passer de las Naciones Unidas (o los documentos de viaje expedidos por la Corte).",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "211-0",
+  "parT": "los estados partes reconoceran y aceptaran como documentos de viaje validos los laissez pa",
+  "fR": 1,
+  "pz": "p-29",
+  "sec": 36,
+  "id": "1-785"
+ },
+ {
+  "lote": "d4",
+  "i": 18,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "16",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Secretario Adjunto, personal de la Fiscalía y personal de la Secretaría. El Secretario Adjunto, el personal de la Fiscalía y el personal de la Secretaría gozarán de los privilegios, las inmunidades y las facilidades que sean necesarios para el ejercicio independiente de sus funciones. Gozarán de:",
+  "opciones": [
+   "Exención de toda obligación de servicio nacional.",
+   "El derecho a la inviolabilidad de todos los papeles y documentos, cualquiera que sea su forma, y de todos los materiales.",
+   "Inmunidad contra toda forma de arresto o detención y contra la incautación de toda forma de equipaje.",
+   "Inmunidad de jurisdicción de toda índole respecto a todos los actos y las declaraciones que haga verbalmente o por escrito."
+  ],
+  "correcta": 0,
+  "lila": "Art. 16.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. El Secretario Adjunto, el personal de la Fiscalía y el personal de la Secretaría gozarán de los privilegios, las inmunidades y las facilidades que sean necesarios para el ejercicio independiente de sus funciones. Gozarán de: a) Inmunidad contra toda forma de arresto o detención y contra la incautación de su equipaje personal; b) Inmunidad de jurisdicción de toda índole respecto de las declaraciones que hagan verbalmente o por escrito y los actos que realicen en el ejercicio de sus funciones, la cual subsistirá incluso después de que hayan cesado en el ejercicio de sus funciones; c) El derecho a la inviolabilidad de todos los papeles y documentos oficiales de la Corte, cualquiera que sea su forma, y de todos los materiales; d) Exención de impuestos sobre los sueldos, emolumentos y prestaciones que perciban de la Corte. Los Estados Partes podrán tener en cuenta esos salarios, emolumentos y prestaciones a los efectos de determinar la cuantía de los impuestos que se han de aplicar a los ingresos de otras fuentes; e) Exención de toda obligación de servicio nacional; f) Junto con los familiares que formen parte de sus hogares, exención de las restricciones de inmigración y las formalidades de registro de extranjeros; g) Exención de la inspección de su equipaje personal, a menos que haya fundadas razones para creer que el equipaje contiene artículos cuya importación o exportación está prohibida por la ley o sometida a control por las normas de cuarentena del Estado Parte de que se trate, en cuyo caso se hará una inspección en presencia del funcionario; h) Los mismos privilegios con respecto a las facilidades monetarias y cambiarias que se reconozcan a los funcionarios de categoría equivalente pertenecientes a las misiones diplomáticas acreditadas en el Estado Parte de que se trate; i) Junto con los familiares que formen parte de sus hogares, las mismas facilidades de repatriación en épocas de crisis internacional, reconocidas a los agentes diplomáticos con arreglo a la Convención de Viena; j) Derecho a importar, libres de gravámenes e impuestos, con la salvedad de los pagos que constituyan la remuneración de servicios prestados, sus muebles y efectos en el momento en que ocupen su cargo en el Estado Parte de que se trate y a reexportar a su país de residencia permanente, libres de gravámenes e impuestos, esos muebles y efectos.",
+  "exp": "La exención de toda obligación de servicio nacional es literal; las demás cambian los documentos «oficiales», el equipaje «personal» y el alcance de la inmunidad.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "200-0",
+  "parT": "art 16 2 los estados partes no estaran obligados a eximir del impuesto sobre la renta a la",
+  "fR": 0,
+  "pz": "p-16",
+  "sec": 35,
+  "id": "1-786"
+ },
+ {
+  "lote": "d4",
+  "i": 19,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿Cómo serán resueltas todas las diferencias que surjan de la interpretación o aplicación del presente Acuerdo entre dos o más Estados Partes o entre la Corte y un Estado Parte?:",
+  "opciones": [
+   "Mediante consultas, negociación u otro medio convenido de arreglo.",
+   "Mediante el Tribunal Internacional de Justicia.",
+   "Todas las opciones son correctas.",
+   "Mediante acuerdo, incluida la sumisión de controversias."
+  ],
+  "correcta": 0,
+  "lila": "Art. 32.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Todas las diferencias que surjan de la interpretación o aplicación del presente Acuerdo entre dos o más Estados Partes o entre la Corte y un Estado Parte serán resueltas mediante consultas, negociación u otro medio convenido de arreglo.",
+  "exp": "Consultas, negociación u otro medio convenido.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "213-0-0",
+  "parT": "1 todas las diferencias que surjan de la interpretacion o aplicacion del presente acuerdo ",
+  "fR": 1,
+  "pz": "p-32",
+  "sec": 37,
+  "id": "1-787"
+ },
+ {
+  "lote": "d4",
+  "i": 20,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "10",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Fondos y exención de restricciones monetarias. La Corte Penal Internacional no quedará sometida a controles financieros, reglamentos o moratorias financieros de índole alguna en el desempeño de sus funciones y podrá... Señale la opción INCORRECTA:",
+  "opciones": [
+   "Recibir, tener, negociar, transferir o convertir bonos u otros títulos financieros o realizar cualquier transacción con ellos.",
+   "Las transacciones financieras de la Corte Penal Internacional gozarán, en todo caso, de un trato no menos favorable que el que otorgue el Estado Parte de que se trate a cualquier organización intergubernamental o misión diplomática.",
+   "Tener fondos, moneda de cualquier tipo u oro y operar cuentas en cualquier moneda.",
+   "Transferir libremente sus fondos, oro o moneda de un país a otro o dentro de un país y convertir a cualesquiera otras las monedas que tenga en su poder."
+  ],
+  "correcta": 1,
+  "lila": "Art. 10.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. La Corte no quedará sometida a controles financieros, reglamentos o moratorias financieros de índole alguna en el desempeño de sus funciones y podrá: a) Tener fondos, moneda de cualquier tipo u oro y operar cuentas en cualquier moneda; b) Transferir libremente sus fondos, oro o moneda de un país a otro o dentro de un país y convertir a cualesquiera otras las monedas que tenga en su poder; c) Recibir, tener, negociar, transferir o convertir bonos u otros títulos financieros o realizar cualquier transacción con ellos; d) Las transacciones financieras de la Corte gozarán, en cuanto al tipo de cambio, de un trato no menos favorable que el que otorgue el Estado Parte de que se trate a cualquier organización intergubernamental o misión diplomática.",
+  "exp": "El trato no menos favorable se refiere al tipo de cambio, no a «todo caso».",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "194-1-0",
+  "parT": "art 10 1 la corte no quedara sometida a controles financieros reglamentos o moratorias fin",
+  "fR": 0.84,
+  "pz": "p-10",
+  "sec": 34,
+  "id": "1-788"
+ },
+ {
+  "lote": "d4",
+  "i": 22,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "8",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Exención de impuestos, derechos de aduana y restricciones de importación o exportación. ¿Qué exención NO podrá reclamar la Corte Penal Internacional?:",
+  "opciones": [
+   "La exención de todos los impuestos directos, que incluyen, entre otros, el impuesto sobre la renta.",
+   "La exención de prohibiciones o restricciones respecto de los artículos que importe o exporte para su uso oficial y respecto de sus publicaciones.",
+   "La exención de todos los impuestos directos, que incluyen, entre otros, el impuesto sobre el capital y el impuesto de sociedades.",
+   "La exención del pago de los gravámenes que constituyan de hecho la remuneración de servicios públicos prestados a una tarifa fija según la cantidad de servicios prestados y que se puedan identificar, describir y desglosar."
+  ],
+  "correcta": 3,
+  "lila": "Art. 8.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. La Corte, sus haberes, ingresos y otros bienes, así como sus operaciones y transacciones, estarán exentos de todos los impuestos directos, que incluyen, entre otros, el impuesto sobre la renta, el impuesto sobre el capital y el impuesto a las sociedades, así como los impuestos directos que perciban las autoridades locales o provinciales. Se entenderá, sin embargo, que la Corte no podrá reclamar la exención del pago de los gravámenes que constituyan de hecho la remuneración de servicios públicos prestados a una tarifa fija según la cantidad de servicios prestados y que se puedan identificar, describir y desglosar.",
+  "exp": "No cabe exención de los gravámenes que remuneran servicios públicos.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "194-0-0",
+  "parT": "art 8 1 la corte estaran exentos de todos los impuestos directos se entendera sin embargo ",
+  "fR": 0.75,
+  "pz": "p-8",
+  "sec": 33,
+  "id": "1-789"
+ },
+ {
+  "lote": "d4",
+  "i": 23,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "3"
+   },
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "6"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Arreglo de diferencias sobre la interpretación o aplicación del Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto al tribunal arbitral, señale la opción CORRECTA:",
+  "opciones": [
+   "El tribunal arbitral estará compuesto por tres árbitros y uno será elegido por cada parte en la diferencia.",
+   "El laudo del tribunal arbitral será comunicado a las partes en la diferencia, al Secretario y al Presidente de la Corte Penal Internacional.",
+   "El tribunal arbitral estará compuesto por tres árbitros y el tercero de ellos, que actuará como secretario del tribunal, será elegido por los otros dos árbitros elegidos por cada parte en la diferencia.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 32.3 y Art. 32.6 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "Art. 32. 3. El TRIBUNAL ARBITRAL estará compuesto de tres árbitros: • uno será elegido por cada parte en la diferencia y • el tercero, que actuará como presidente del tribunal, será elegido por los otros dos. Si una de las partes no hubiere nombrado a un árbitro del tribunal dentro de los dos meses siguientes al nombramiento de un árbitro por la otra parte, ésta podrá pedir al Presidente de la Corte Internacional de Justicia que efectúe dicho nombramiento. En caso de que los dos primeros árbitros no convinieran en el nombramiento del presidente del tribunal en los dos meses siguientes a sus nombramientos, cualquiera de las partes podrá pedir al Presidente de la Corte Internacional de Justicia que efectúe el nombramiento del presidente del tribunal.<br>Art. 32. 6. El laudo del tribunal arbitral será comunicado a las partes en la diferencia, al Secretario y al Secretario General.",
+  "exp": "Son tres árbitros y cada parte elige uno; el tercero preside y el laudo se comunica al Secretario y al Secretario General.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "213-2",
+  "parT": "3 el tribunal arbitral estara compuesto de tres arbitros uno sera elegido por cada parte e",
+  "fR": 1,
+  "pz": "p-32",
+  "sec": 37,
+  "id": "1-790"
+ },
+ {
+  "lote": "d4",
+  "i": 24,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "39",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿En cuál de los siguientes textos está redactado el presente Acuerdo?:",
+  "opciones": [
+   "Japonés.",
+   "Español.",
+   "Alemán.",
+   "Neerlandés."
+  ],
+  "correcta": 1,
+  "lila": "Art. 39 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "El original del presente Acuerdo, cuyas versiones en árabe, chino, español, francés, inglés y ruso son igualmente auténticas, será depositado en poder del Secretario General. El presente Acuerdo entró en vigor de forma general el 22 de julio de 2004 y para España entró en vigor el 24 de octubre de 2009 de conformidad con lo establecido en su artículo 35.",
+  "exp": "Árabe, chino, español, francés, inglés y ruso.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "223-0",
+  "parT": "el original del presente acuerdo cuyas versiones en arabe chino espanol frances ingles y r",
+  "fR": 1,
+  "pz": "p-39",
+  "sec": 37,
+  "id": "1-791"
+ },
+ {
+  "lote": "d4",
+  "i": 25,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "18",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Una vez designado un abogado de conformidad con el Estatuto, las Reglas de Procedimiento y Prueba y el Reglamento de la Corte, ¿por qué período se le extenderá un certificado?:",
+  "opciones": [
+   "Por un periodo de dos años.",
+   "Por el período necesario para el ejercicio de sus funciones.",
+   "Por un periodo de un año.",
+   "Por un periodo de cuatro años."
+  ],
+  "correcta": 1,
+  "lila": "Art. 18.2 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "2. Una vez designado un abogado de conformidad con el Estatuto, las Reglas de Procedimiento y Prueba y el Reglamento de la Corte, se le extenderá un certificado, firmado por el Secretario, por el período necesario para el ejercicio de sus funciones. El certificado se retirará si se pone término al poder o al mandato antes de que expire el certificado.",
+  "exp": "Por el período necesario para el ejercicio de sus funciones.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "202-9",
+  "parT": "2 una vez designado un abogado de conformidad con el estatuto las reglas de procedimiento ",
+  "fR": 1,
+  "pz": "p-18",
+  "sec": 35,
+  "id": "1-792"
+ },
+ {
+  "lote": "d4",
+  "i": 26,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "11",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto a las facilidades en las comunicaciones, señale la opción CORRECTA:",
+  "opciones": [
+   "La Corte podrá operar equipos de radio y otro equipo de telecomunicaciones en las frecuencias que le asignen los Estados Partes, de conformidad con el presente Acuerdo.",
+   "La Corte podrá despachar y recibir correspondencia y otras piezas o comunicaciones por correo o valija sellada, los cuales gozarán de los mismos privilegios, inmunidades y facilidades que se reconocen a las valijas y los correos y diplomáticos.",
+   "Todas las opciones son correctas.",
+   "Los Estados Partes asignarán a la Corte las frecuencias de equipos de radio y otros equipos de telecomunicaciones que haya solicitado."
+  ],
+  "correcta": 1,
+  "lila": "Art. 11 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. A los efectos de su correspondencia y comunicaciones oficiales, la Corte gozará en el territorio de cada Estado Parte de un trato no menos favorable que el que éste conceda a cualquier organización intergubernamental o misión diplomática en materia de prioridades, tarifas o impuestos aplicables al franqueo postal y a las diversas formas de comunicación y correspondencia. 2. La correspondencia o las comunicaciones oficiales de la Corte no serán sometidas a censura alguna. 3. La Corte podrá utilizar todos los medios apropiados de comunicación, incluidos los electrónicos, y emplear claves o cifras para su correspondencia o comunicaciones oficiales. La correspondencia y las comunicaciones oficiales de la Corte serán inviolables. 4. La Corte podrá despachar y recibir correspondencia y otras piezas o comunicaciones por correo o valija sellada, los cuales gozarán de los mismos privilegios, inmunidades y facilidades que se reconocen a las valijas y los correos y diplomáticos. 5. La Corte podrá operar equipos de radio y otro equipo de telecomunicaciones en las frecuencias que le asignen los Estados Partes, de conformidad con sus procedimientos nacionales. Los Estados Partes se esforzarán por asignar a la Corte, en la mayor medida posible, las frecuencias que haya solicitado.",
+  "exp": "Es literal el apartado 4. Las frecuencias se asignan según los procedimientos nacionales y los Estados solo se esfuerzan en asignar las solicitadas.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "197-4",
+  "parT": "4 la corte podra despachar y recibir correspondencia y otras piezas o comunicaciones por c",
+  "fR": 1,
+  "pz": "p-11",
+  "sec": 34,
+  "id": "1-793"
+ },
+ {
+  "lote": "d4",
+  "i": 27,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. De no ser resuelta la diferencia sobre la interpretación o aplicación del presente Acuerdo, ¿en qué plazo será sometida a un tribunal arbitral?:",
+  "opciones": [
+   "Dentro de los nueve meses siguientes en los que los Estados Parte no hayan solucionado la diferencia.",
+   "Dentro de los tres meses siguientes en los que los Estados Parte no hayan solucionado la diferencia.",
+   "Dentro de los tres meses siguientes a la presentación de una solicitud por escrito por una de las partes en ella.",
+   "Dentro de los nueve meses siguientes a la presentación de una solicitud por escrito por una de las partes en ella."
+  ],
+  "correcta": 2,
+  "lila": "Art. 32.2 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "2. La diferencia, de no ser resuelta de conformidad con el párrafo 1 del presente artículo dentro de los tres meses siguientes a la presentación de una solicitud por escrito por una de las partes en ella, será, a petición de cualquiera de las partes, sometida a un TRIBUNAL ARBITRAL de conformidad con el procedimiento establecido en los párrafos 3 a 6 infra.",
+  "exp": "Tres meses desde la solicitud escrita de una de las partes.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "213-1",
+  "parT": "2 la diferencia de no ser resuelta dentro de los tres meses siguientes a la presentacion d",
+  "fR": 0.89,
+  "pz": "p-32",
+  "sec": 37,
+  "id": "1-794"
+ },
+ {
+  "lote": "d4",
+  "i": 28,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "10",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. La Corte NO quedará sometida a controles financieros, reglamentos o moratorias financieros de índole alguna en el desempeño de sus funciones y podrá:",
+  "opciones": [
+   "Transferir libremente sus fondos, oro o moneda de un país a otro o dentro de un país y convertir a cualesquiera otras las monedas que tenga en su poder.",
+   "Todas las opciones son correctas.",
+   "Tener fondos, moneda de cualquier tipo u oro y operar cuentas en cualquier moneda.",
+   "Recibir, tener, negociar, transferir o convertir bonos u otros títulos financieros o realizar cualquier transacción con ellos."
+  ],
+  "correcta": 1,
+  "lila": "Art. 10.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. La Corte no quedará sometida a controles financieros, reglamentos o moratorias financieros de índole alguna en el desempeño de sus funciones y podrá: a) Tener fondos, moneda de cualquier tipo u oro y operar cuentas en cualquier moneda; b) Transferir libremente sus fondos, oro o moneda de un país a otro o dentro de un país y convertir a cualesquiera otras las monedas que tenga en su poder; c) Recibir, tener, negociar, transferir o convertir bonos u otros títulos financieros o realizar cualquier transacción con ellos; d) Las transacciones financieras de la Corte gozarán, en cuanto al tipo de cambio, de un trato no menos favorable que el que otorgue el Estado Parte de que se trate a cualquier organización intergubernamental o misión diplomática.",
+  "exp": "Las tres figuran en el apartado 1.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "194-1",
+  "parT": "art 10 1 la corte no quedara sometida a controles financieros reglamentos o moratorias fin",
+  "fR": 1,
+  "pz": "p-10",
+  "sec": 34,
+  "id": "1-795"
+ },
+ {
+  "lote": "d4",
+  "i": 29,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "37",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto a la denuncia, señale la opción CORRECTA:",
+  "opciones": [
+   "Un Estado Parte, mediante notificación dirigida por escrito al Secretario General, podrá denunciar el presente Acuerdo.",
+   "La denuncia surtirá efecto seis meses después de la fecha en que se reciba la notificación, a menos que en ésta se indique una fecha posterior.",
+   "Todas las opciones son correctas.",
+   "La denuncia afectará a la obligación de un Estado Parte de cumplir cualquiera de las obligaciones establecidas en el presente Acuerdo a que, de conformidad con el derecho internacional, estuviere sujeto independientemente del Acuerdo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 37 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Un Estado Parte, mediante notificación dirigida por escrito al Secretario General, podrá denunciar el presente Acuerdo. La denuncia surtirá efecto un año después de la fecha en que se reciba la notificación, a menos que en ésta se indique una fecha posterior. 2. La denuncia no afectará en modo alguno a la obligación de un Estado Parte de cumplir cualquiera de las obligaciones establecidas en el presente Acuerdo a que, de conformidad con el derecho internacional, estuviere sujeto independientemente del Acuerdo.",
+  "exp": "Se denuncia por escrito ante el Secretario General; surte efecto al año y no afecta a las obligaciones propias del derecho internacional.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "221-0",
+  "parT": "1 un estado parte mediante notificacion dirigida por escrito al secretario general podra d",
+  "fR": 1,
+  "pz": "p-37",
+  "sec": 37,
+  "id": "1-796"
+ },
+ {
+  "lote": "d4",
+  "i": 30,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "1",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. De los siguientes, ¿cuál NO se considerará \"representantes de los Estados Partes\"?:",
+  "opciones": [
+   "El Secretario General.",
+   "Los peritos técnicos.",
+   "Los delegados suplentes.",
+   "Los delegados."
+  ],
+  "correcta": 0,
+  "lila": "Art. 1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "A los efectos del presente Acuerdo: a) Por «el Estatuto» se entenderá el Estatuto de Roma de la Corte Penal Internacional, aprobado el 17 de julio de 1998 por la Conferencia Diplomática de Plenipotenciarios de las Naciones Unidas sobre el establecimiento de una corte penal internacional; b) Por «la Corte» se entenderá la Corte Penal Internacional establecida por el Estatuto; c) Por «Estados Partes» se entenderán los Estados Partes en el presente Acuerdo; d) Por «representantes de los Estados Partes» se entenderán los delegados, delegados suplentes, asesores, peritos técnicos y secretarios de delegaciones; e) Por «la Asamblea» se entenderá la Asamblea de los Estados Partes en el Estatuto; f) Por «Magistrados» se entenderán los magistrados de la Corte; g) Por «la Presidencia» se entenderá el órgano integrado por el Presidente y los Vicepresidentes primero y segundo de la Corte; h) Por «el Fiscal» se entenderá el Fiscal elegido por la Asamblea de conformidad con el párrafo del artículo 42 del Estatuto; i) Por «los Fiscales Adjuntos» se entenderán los Fiscales Adjuntos elegidos por la Asamblea de conformidad con el párrafo del artículo 42 del Estatuto; j) Por «el Secretario» se entenderá el Secretario elegido por la Corte de conformidad con el párrafo del artículo 43 del Estatuto; k) Por «Secretario Adjunto» se entenderá el Secretario elegido por la Corte de conformidad con el párrafo del artículo 43 del Estatuto; l) Por «abogados» se entenderán los abogados defensores y los representantes legales de las víctimas; m) Por «Secretario General» se entenderá el Secretario General de las Naciones Unidas; n) Por «representantes de organizaciones intergubernamentales» se entenderá los jefes ejecutivos de organizaciones intergubernamentales, incluido todo funcionario que actúe en su representación; o) Por «la Convención de Viena» se entenderá la Convención de Viena sobre Relaciones Diplomáticas, de 18 de abril de 1961; p) Por «Reglas de Procedimiento y Prueba» se entenderán las Reglas de Procedimiento y Prueba aprobadas de conformidad con el artículo 51 del Estatuto.",
+  "exp": "Representantes son delegados, suplentes, asesores, peritos técnicos y secretarios de delegaciones.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "191-4-0",
+  "parT": "d por representantes de los estados partes se entenderan los delegados delegados suplentes",
+  "fR": 0.5,
+  "pz": "p-1",
+  "sec": 33,
+  "id": "1-797"
+ },
+ {
+  "lote": "d4",
+  "i": 31,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "3",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿Dónde gozará la Corte de los privilegios e inmunidades que sean necesarios para el cumplimiento de sus propósitos?:",
+  "opciones": [
+   "En el territorio de cada Estado Parte.",
+   "Todas las opciones son incorrectas.",
+   "En el territorio de la Unión Europea.",
+   "En el territorio del Estado Parte que la invoque."
+  ],
+  "correcta": 0,
+  "lila": "Art. 3 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "La Corte gozará en el territorio de cada Estado Parte de los privilegios e inmunidades que sean necesarios para el cumplimiento de sus propósitos.",
+  "exp": "En el territorio de cada Estado Parte.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "193-0",
+  "parT": "art 3 la corte gozara en el territorio de cada estado parte de los privilegios e inmunidad",
+  "fR": 1,
+  "pz": "p-3",
+  "sec": 33,
+  "id": "1-798"
+ },
+ {
+  "lote": "d4",
+  "i": 32,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "12",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿Dónde se encuentra la sede de la Corte?:",
+  "opciones": [
+   "Lyon (Francia).",
+   "La Haya (Países Bajos).",
+   "Estrasburgo (Francia).",
+   "Viena (Austria)."
+  ],
+  "correcta": 1,
+  "lila": "Art. 12 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "La Corte, en caso de que, de conformidad con el párrafo 3 del artículo 3 del Estatuto, considere conveniente sesionar en un lugar distinto de su sede de La Haya (Países Bajos), podrá concertar un acuerdo con el Estado de que se trate respecto de la concesión de las facilidades adecuadas para el ejercicio de sus funciones.",
+  "exp": "La Haya (Países Bajos).",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "197-6-0",
+  "parT": "art 12 la corte en caso de que considere conveniente sesionar en un lugar distinto de su s",
+  "fR": 1,
+  "pz": "p-12",
+  "sec": 34,
+  "id": "1-799"
+ },
+ {
+  "lote": "d4",
+  "i": 33,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "30",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Las solicitudes de visado o permiso de entrada o salida, en caso de que sean necesarios, presentadas por quienes sean titulares de un laissez passer de las Naciones Unidas o del documento de viaje expedido por la Corte, ¿en qué plazo serán tramitados?:",
+  "opciones": [
+   "Serán tramitadas por la Corte con la mayor rapidez posible y con el pago de la tasa correspondiente.",
+   "Serán tramitadas por los Estados Partes con la mayor rapidez posible y con carácter gratuito.",
+   "Serán tramitadas por la Corte con la mayor rapidez posible y con carácter gratuito.",
+   "Serán tramitadas por los Estados Partes con la mayor rapidez posible y con el pago de la tasa correspondiente."
+  ],
+  "correcta": 1,
+  "lila": "Art. 30 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "Las solicitudes de visado o permiso de entrada o salida, en caso de que sean necesarios, presentadas por quienes sean titulares de un laissez passer de las Naciones Unidas o del documento de viaje expedido por la Corte, u otra persona de las referidas en los artículos 18 a 22 del presente Acuerdo que tenga un certificado expedido por la Corte en que conste que su viaje obedece a asuntos de ésta, serán tramitadas por los Estados Partes con la mayor rapidez posible y con carácter gratuito.",
+  "exp": "Las tramitan los Estados Partes con rapidez y gratis.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "210-2-0",
+  "parT": "art 30 las solicitudes de visado o permiso de entrada o salida seran tramitadas por los es",
+  "fR": 1,
+  "pz": "p-30",
+  "sec": 36,
+  "id": "1-800"
+ },
+ {
+  "lote": "d4",
+  "i": 34,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿Por cuántos árbitros estará compuesto el tribunal arbitral?:",
+  "opciones": [
+   "Por dos árbitros.",
+   "Por cuatro árbitros.",
+   "Por seis árbitros.",
+   "Por tres árbitros."
+  ],
+  "correcta": 3,
+  "lila": "Art. 32.3 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "3. El TRIBUNAL ARBITRAL estará compuesto de tres árbitros: • uno será elegido por cada parte en la diferencia y • el tercero, que actuará como presidente del tribunal, será elegido por los otros dos. Si una de las partes no hubiere nombrado a un árbitro del tribunal dentro de los dos meses siguientes al nombramiento de un árbitro por la otra parte, ésta podrá pedir al Presidente de la Corte Internacional de Justicia que efectúe dicho nombramiento. En caso de que los dos primeros árbitros no convinieran en el nombramiento del presidente del tribunal en los dos meses siguientes a sus nombramientos, cualquiera de las partes podrá pedir al Presidente de la Corte Internacional de Justicia que efectúe el nombramiento del presidente del tribunal.",
+  "exp": "Tres árbitros.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "213-1-0",
+  "parT": "2 la diferencia de no ser resuelta dentro de los tres meses siguientes a la presentacion d",
+  "fR": 1,
+  "pz": "p-32",
+  "sec": 37,
+  "id": "1-801"
+ },
+ {
+  "lote": "d4",
+  "i": 35,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "36",
+    "ap": "5"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿Cuándo entrará en vigor una enmienda para los Estados Partes que la hayan ratificado o aceptado?:",
+  "opciones": [
+   "Sesenta días después del depósito de los instrumentos de ratificación o aceptación en poder del Secretario General por los dos tercios de los Estados que eran Partes en la fecha en que se aprobó la enmienda.",
+   "Treinta días después del depósito de los instrumentos de ratificación o aceptación en poder del Secretario General por los dos tercios de los Estados que eran Partes en la fecha en que se aprobó la enmienda.",
+   "Sesenta días después del depósito de los instrumentos de ratificación o aceptación en poder del Secretario General por mayoría de los Estados que eran Partes en la fecha en que se aprobó la enmienda.",
+   "Treinta días después del depósito de los instrumentos de ratificación o aceptación en poder del Secretario General por mayoría de los Estados que eran Partes en la fecha en que se aprobó la enmienda."
+  ],
+  "correcta": 0,
+  "lila": "Art. 36.5 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "5. Una enmienda entrará en vigor para los Estados Partes que la hayan ratificado o aceptado sesenta días después del depósito de los instrumentos de ratificación o aceptación en poder del Secretario General por los dos tercios de los Estados que eran Partes en la fecha en que se aprobó la enmienda.",
+  "exp": "Sesenta días tras el depósito por dos tercios de los Estados Partes.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "216-4-0",
+  "parT": "5 una enmienda entrara en vigor para los estados partes que la hayan ratificado o aceptado",
+  "fR": 1,
+  "pz": "p-36",
+  "sec": 37,
+  "id": "1-802"
+ },
+ {
+  "lote": "d4",
+  "i": 36,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "2",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Condición jurídica y personalidad jurídica de la Corte. ¿Qué personalidad tendrá la Corte?:",
+  "opciones": [
+   "Personalidad jurídica exclusiva.",
+   "Personalidad jurídica única.",
+   "Personalidad jurídica penal.",
+   "Personalidad jurídica internacional."
+  ],
+  "correcta": 3,
+  "lila": "Art. 2 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "La Corte tendrá personalidad jurídica internacional y tendrá también la capacidad jurídica que sea necesaria para el desempeño de sus funciones y el cumplimiento de sus propósitos. Tendrá en particular capacidad jurídica para celebrar contratos, adquirir bienes muebles e inmuebles y disponer de ellos y participar en procedimientos judiciales.",
+  "exp": "Personalidad jurídica internacional.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "191-17-0",
+  "parT": "art 2 la corte tendra personalidad juridica internacional y tendra tambien la capacidad ju",
+  "fR": 1,
+  "pz": "p-2",
+  "sec": 33,
+  "id": "1-803"
+ },
+ {
+  "lote": "d4",
+  "i": 37,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto a la inmunidad de la Corte y de sus bienes, haberes y fondos, señale la opción CORRECTA:",
+  "opciones": [
+   "Los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de allanamiento, incautación, requisa, decomiso y expropiación y cualquier otra forma de interferencia, ya sea de carácter ejecutivo, administrativo, judicial o legislativo.",
+   "La Corte y sus bienes, haberes y fondos, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de jurisdicción en todas sus formas, salvo en la medida en que la Corte renuncie expresamente a ella en un caso determinado. Se entenderá, sin embargo, que la renuncia no será extensible a ninguna medida de ejecución.",
+   "Todas las opciones son correctas.",
+   "En la medida en que sea necesario para el desempeño de las funciones de la Corte, los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, estarán exentos de restricciones, reglamentaciones, controles o moratorias de toda índole."
+  ],
+  "correcta": 2,
+  "lila": "Art. 6 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. La Corte y sus bienes, haberes y fondos, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de jurisdicción en todas sus formas, salvo en la medida en que la Corte renuncie expresamente a ella en un caso determinado. Se entenderá, sin embargo, que la renuncia no será extensible a ninguna medida de ejecución. 2. Los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de allanamiento, incautación, requisa, decomiso y expropiación y cualquier otra forma de interferencia, ya sea de carácter ejecutivo, administrativo, judicial o legislativo. 3. En la medida en que sea necesario para el desempeño de las funciones de la Corte, los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, estarán exentos de restricciones, reglamentaciones, controles o moratorias de toda índole.",
+  "exp": "Las tres reproducen el artículo 6.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "191-20",
+  "parT": "art 6 1 la corte y sus bienes haberes y fondos gozaran de inmunidad de jurisdiccion en tod",
+  "fR": 0.49,
+  "pz": "p-6",
+  "sec": 33,
+  "id": "1-804"
+ },
+ {
+  "lote": "d4",
+  "i": 38,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "16",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. El Secretario Adjunto, el personal de la Fiscalía y el personal de la Secretaría gozarán de los privilegios, las inmunidades y las facilidades que sean necesarios para el ejercicio independiente de sus funciones. Gozarán de:",
+  "opciones": [
+   "Exención de la inspección de su equipaje personal.",
+   "Los mismos privilegios con respecto a las facilidades monetarias y cambiarias que se reconozcan a los funcionarios de una categoría superior pertenecientes a las misiones diplomáticas acreditadas en el Estado Parte de que se trate.",
+   "Exención de obligación de servicios civiles o militares.",
+   "Junto con los familiares que formen parte de sus hogares, exención de las restricciones de inmigración y las formalidades de registro de extranjeros."
+  ],
+  "correcta": 3,
+  "lila": "Art. 16.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. El Secretario Adjunto, el personal de la Fiscalía y el personal de la Secretaría gozarán de los privilegios, las inmunidades y las facilidades que sean necesarios para el ejercicio independiente de sus funciones. Gozarán de: a) Inmunidad contra toda forma de arresto o detención y contra la incautación de su equipaje personal; b) Inmunidad de jurisdicción de toda índole respecto de las declaraciones que hagan verbalmente o por escrito y los actos que realicen en el ejercicio de sus funciones, la cual subsistirá incluso después de que hayan cesado en el ejercicio de sus funciones; c) El derecho a la inviolabilidad de todos los papeles y documentos oficiales de la Corte, cualquiera que sea su forma, y de todos los materiales; d) Exención de impuestos sobre los sueldos, emolumentos y prestaciones que perciban de la Corte. Los Estados Partes podrán tener en cuenta esos salarios, emolumentos y prestaciones a los efectos de determinar la cuantía de los impuestos que se han de aplicar a los ingresos de otras fuentes; e) Exención de toda obligación de servicio nacional; f) Junto con los familiares que formen parte de sus hogares, exención de las restricciones de inmigración y las formalidades de registro de extranjeros; g) Exención de la inspección de su equipaje personal, a menos que haya fundadas razones para creer que el equipaje contiene artículos cuya importación o exportación está prohibida por la ley o sometida a control por las normas de cuarentena del Estado Parte de que se trate, en cuyo caso se hará una inspección en presencia del funcionario; h) Los mismos privilegios con respecto a las facilidades monetarias y cambiarias que se reconozcan a los funcionarios de categoría equivalente pertenecientes a las misiones diplomáticas acreditadas en el Estado Parte de que se trate; i) Junto con los familiares que formen parte de sus hogares, las mismas facilidades de repatriación en épocas de crisis internacional, reconocidas a los agentes diplomáticos con arreglo a la Convención de Viena; j) Derecho a importar, libres de gravámenes e impuestos, con la salvedad de los pagos que constituyan la remuneración de servicios prestados, sus muebles y efectos en el momento en que ocupen su cargo en el Estado Parte de que se trate y a reexportar a su país de residencia permanente, libres de gravámenes e impuestos, esos muebles y efectos.",
+  "exp": "Es literal la letra f). La inspección tiene excepción, la categoría es equivalente y la exención es del servicio nacional.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "200-0",
+  "parT": "art 16 2 los estados partes no estaran obligados a eximir del impuesto sobre la renta a la",
+  "fR": 0,
+  "pz": "p-16",
+  "sec": 35,
+  "id": "1-805"
+ },
+ {
+  "lote": "d4",
+  "i": 39,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "26",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿Ante quién podrá renunciar de los privilegios e inmunidades los testigos?:",
+  "opciones": [
+   "Ante el jefe de la Corte que lo haya designado.",
+   "Ante la mayoría de los Magistrados.",
+   "Ante la Presidencia.",
+   "Ante el Secretario."
+  ],
+  "correcta": 2,
+  "lila": "Art. 26 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Los privilegios e inmunidades previstos en los artículos 15 a 22 del presente Acuerdo se reconocen en interés de la administración de justicia y no en beneficio personal. Podrá renunciarse a ellos de conformidad con el párrafo del artículo 48 del Estatuto y con lo dispuesto en el presente artículo y se tendrá la obligación de hacerlo en un caso determinado cuando podrían constituir un obstáculo a la justicia y la renuncia sea posible sin perjuicio del fin para el cual se reconocen. 2. Se podrá renunciar a los privilegios e inmunidades: a) En el caso de un Magistrado o del Fiscal, por mayoría absoluta de los Magistrados; b) En el caso del Secretario, por la Presidencia; c) En el caso de los Fiscales Adjuntos y del personal de la Fiscalía, por el Fiscal; d) En el caso del Secretario Adjunto y del personal de la Secretaría, por el Secretario; e) En el caso del personal a que se hace referencia en el artículo 17, por decisión del jefe del órgano de la Corte que emplee a ese personal; f) En el caso de los abogados y de las personas que asistan a los abogados defensores, por la Presidencia; g) En el caso de los testigos y de las víctimas, por la Presidencia; h) En el caso de los peritos, por decisión del jefe del órgano de la Corte que haya designado al perito; i) En el caso de las otras personas cuya presencia se requiera en la sede de la Corte, por la Presidencia.",
+  "exp": "Testigos: la Presidencia.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "209-0",
+  "parT": "art 26 en los articulos 15 a 22",
+  "fR": 0,
+  "pz": "p-26",
+  "sec": 36,
+  "id": "1-806"
+ },
+ {
+  "lote": "d4",
+  "i": 40,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Arreglo de diferencias sobre la interpretación o aplicación del presente Acuerdo. La diferencia, de no ser resuelta de conformidad con el presente Acuerdo dentro de __________ siguientes a la presentación de una solicitud por escrito por una de las partes en ella, será, a petición de cualquiera de las partes, sometida a un tribunal arbitral:",
+  "opciones": [
+   "Los tres meses.",
+   "Un año.",
+   "Un mes.",
+   "Los seis meses."
+  ],
+  "correcta": 0,
+  "lila": "Art. 32.2 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "2. La diferencia, de no ser resuelta de conformidad con el párrafo 1 del presente artículo dentro de los tres meses siguientes a la presentación de una solicitud por escrito por una de las partes en ella, será, a petición de cualquiera de las partes, sometida a un TRIBUNAL ARBITRAL de conformidad con el procedimiento establecido en los párrafos 3 a 6 infra.",
+  "exp": "Tres meses.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "213-1",
+  "parT": "2 la diferencia de no ser resuelta dentro de los tres meses siguientes a la presentacion d",
+  "fR": 1,
+  "pz": "p-32",
+  "sec": 37,
+  "id": "1-807"
+ },
+ {
+  "lote": "d4",
+  "i": 41,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "5"
+   },
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "4"
+   },
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "6"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto al tribunal arbitral, señale la opción INCORRECTA:",
+  "opciones": [
+   "El laudo del tribunal arbitral será comunicado a las partes en la diferencia, al Secretario y al Secretario General.",
+   "El laudo del tribunal arbitral será definitivo y obligatorio para las partes en la diferencia.",
+   "A menos que las partes en la diferencia acuerden otra cosa, el tribunal arbitral decidirá su propio procedimiento y los gastos serán sufragados por las partes en la proporción que él determine.",
+   "El tribunal arbitral, adoptará sus decisiones por unanimidad."
+  ],
+  "correcta": 3,
+  "lila": "Art. 32.5 y Art. 32.4 y Art. 32.6 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "Art. 32. 5. El tribunal arbitral, que adoptará sus decisiones por mayoría de votos, llegará a una decisión sobre la diferencia de conformidad con las disposiciones del presente Acuerdo y las normas aplicables de derecho internacional. El laudo del tribunal arbitral será definitivo y obligatorio para las partes en la diferencia.<br>Art. 32. 4. A menos que las partes en la diferencia acuerden otra cosa, el tribunal arbitral decidirá su propio procedimiento y los gastos serán sufragados por las partes en la proporción que él determine.<br>Art. 32. 6. El laudo del tribunal arbitral será comunicado a las partes en la diferencia, al Secretario y al Secretario General.",
+  "exp": "El tribunal decide por mayoría de votos, no por unanimidad.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "213-1-0",
+  "parT": "2 la diferencia de no ser resuelta dentro de los tres meses siguientes a la presentacion d",
+  "fR": 0.4,
+  "pz": "p-32",
+  "sec": 37,
+  "id": "1-808"
+ },
+ {
+  "lote": "d4",
+  "i": 42,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "39",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. ¿En cuál de los siguientes textos NO está redactado el presente Acuerdo?:",
+  "opciones": [
+   "Italiano.",
+   "Ruso.",
+   "Español.",
+   "Chino."
+  ],
+  "correcta": 0,
+  "lila": "Art. 39 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "El original del presente Acuerdo, cuyas versiones en árabe, chino, español, francés, inglés y ruso son igualmente auténticas, será depositado en poder del Secretario General. El presente Acuerdo entró en vigor de forma general el 22 de julio de 2004 y para España entró en vigor el 24 de octubre de 2009 de conformidad con lo establecido en su artículo 35.",
+  "exp": "El italiano no es versión auténtica.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "223-0",
+  "parT": "el original del presente acuerdo cuyas versiones en arabe chino espanol frances ingles y r",
+  "fR": 0,
+  "pz": "p-39",
+  "sec": 37,
+  "id": "1-809"
+ },
+ {
+  "lote": "d4",
+  "i": 43,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "39",
+    "ap": null
+   },
+   {
+    "n": "APIC",
+    "art": "38",
+    "ap": null
+   },
+   {
+    "n": "APIC",
+    "art": "37",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto al Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional, señale la opción CORRECTA:",
+  "opciones": [
+   "Su original, cuyas versiones en árabe, chino, español, francés, inglés y ruso son igualmente auténticos, será depositado en poder del Secretario de la Corte Penal Internacional.",
+   "Será su depositario el Secretario de la Corte Penal Internacional.",
+   "Entró en vigor de forma general el 22 de julio de 2004 y para España entró en vigor el 24 de octubre de 2009.",
+   "Podrá ser denunciado por un Estado Parte, mediante notificación dirigida al Secretario de la Corte Penal Internacional."
+  ],
+  "correcta": 2,
+  "lila": "Art. 39 y Art. 38 y Art. 37 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "Art. 39. El original del presente Acuerdo, cuyas versiones en árabe, chino, español, francés, inglés y ruso son igualmente auténticas, será depositado en poder del Secretario General. El presente Acuerdo entró en vigor de forma general el 22 de julio de 2004 y para España entró en vigor el 24 de octubre de 2009 de conformidad con lo establecido en su artículo 35.<br>Art. 38. El Secretario General será el depositario del presente Acuerdo.<br>Art. 37. 1. Un Estado Parte, mediante notificación dirigida por escrito al Secretario General, podrá denunciar el presente Acuerdo. La denuncia surtirá efecto un año después de la fecha en que se reciba la notificación, a menos que en ésta se indique una fecha posterior. 2. La denuncia no afectará en modo alguno a la obligación de un Estado Parte de cumplir cualquiera de las obligaciones establecidas en el presente Acuerdo a que, de conformidad con el derecho internacional, estuviere sujeto independientemente del Acuerdo.",
+  "exp": "Es la fecha de entrada en vigor. El original, el depósito y la denuncia corresponden al Secretario General de las Naciones Unidas.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "223-0",
+  "parT": "el original del presente acuerdo cuyas versiones en arabe chino espanol frances ingles y r",
+  "fR": 1,
+  "pz": "p-39",
+  "sec": 37,
+  "id": "1-810"
+ },
+ {
+  "lote": "d4",
+  "i": 44,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "36",
+    "ap": "6"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Para los Estados Partes que ratifiquen o acepten la enmienda cuando ya se haya depositado el número requerido de instrumentos de ratificación o aceptación, ¿cuándo entrará en vigor la enmienda?:",
+  "opciones": [
+   "Diez días después del depósito del instrumento de ratificación o aceptación del Estado Parte de que se trate.",
+   "Treinta días después del depósito del instrumento de ratificación o aceptación del Estado Parte de que se trate.",
+   "Sesenta días después del depósito del instrumento de ratificación o aceptación del Estado Parte de que se trate.",
+   "Noventa días después del depósito del instrumento de ratificación o aceptación del Estado Parte de que se trate."
+  ],
+  "correcta": 2,
+  "lila": "Art. 36.6 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "6. Para los Estados Partes que ratifiquen o acepten la enmienda cuando ya se haya depositado el número requerido de instrumentos de ratificación o aceptación, la enmienda entrará en vigor sesenta días después del depósito del instrumento de ratificación o aceptación del Estado Parte de que se trate.",
+  "exp": "Sesenta días después del depósito de su instrumento.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "216-5",
+  "parT": "6 para los estados partes que ratifiquen o acepten la enmienda cuando ya se haya depositad",
+  "fR": 1,
+  "pz": "p-36",
+  "sec": 37,
+  "id": "1-811"
+ },
+ {
+  "lote": "d4",
+  "i": 100,
+  "v": "v09",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "21",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Peritos. Se reconocerá a los peritos que cumplan funciones para la Corte Penal Internacional de unos privilegios, inmunidades y facilidades en la medida en que sea necesario para el ejercicio independiente de sus funciones, incluido el tiempo empleado en viajes relacionados con ellas, siempre que exhiban el documento a que hace referencia el Acuerdo objeto de la pregunta. ¿A qué privilegios, inmunidades y facilidades NO hace referencia el enunciado?:",
+  "opciones": [
+   "A los efectos de sus comunicaciones con la Corte Penal Internacional, al derecho a recibir y enviar papeles y documentos, cualquiera que sea su forma, y materiales relacionadas con sus funciones por correo o en valija sellada.",
+   "A la inviolabilidad de los documentos y papeles, cualquiera que sea su forma, y materiales relacionados con sus funciones.",
+   "A las mismas facilidades de repatriación en épocas de crisis internacional que se reconozcan a los agentes diplomáticos conforme a la Convención de Viena.",
+   "A los mismos privilegios respecto de las facilidades monetarias y cambiarias que se reconozcan a los representantes de gobiernos extranjeros en misión oficial permanente."
+  ],
+  "correcta": 3,
+  "lila": "Art. 21.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Se reconocerá a los peritos que cumplan funciones para la Corte los privilegios, inmunidades y facilidades siguientes en la medida en que sea necesario para el ejercicio independiente de sus funciones, incluido el tiempo empleado en viajes relacionados con ellas, siempre que exhiban el documento a que se hace referencia en el párrafo 2 del presente artículo: a) Inmunidad contra toda forma de arresto o detención personal y contra la incautación de su equipaje personal; b) Inmunidad de jurisdicción de toda índole respecto de las declaraciones que hagan verbalmente o por escrito y los actos que realicen durante el desempeño de sus funciones, inmunidad que subsistirá incluso después de que hayan cesado en dichas funciones; c) Inviolabilidad de los documentos y papeles, cualquiera que sea su forma, y materiales relacionados con sus funciones; d) A los efectos de sus comunicaciones con la Corte, el derecho a recibir y enviar papeles y documentos, cualquiera que sea su forma, y materiales relacionadas con sus funciones por correo o en valija sellada; e) Exención de la inspección del equipaje personal, a menos que haya fundadas razones para creer que el equipaje contiene artículos cuya importación o exportación está prohibida por la ley o sometida a control por las normas de cuarentena del Estado Parte de que se trate, en cuyo caso se hará una inspección en presencia del propio perito; f) Los mismos privilegios respecto de las facilidades monetarias y cambiarias que se reconozcan a los representantes de gobiernos extranjeros en misión oficial temporal; g) Las mismas facilidades de repatriación en épocas de crisis internacional que se reconozcan a los agentes diplomáticos conforme a la Convención de Viena; h) Exención de las restricciones en materia de inmigración y las formalidades de registro de extranjeros en relación con sus funciones, como se especifica en el documento a que se hace referencia en el párrafo 2 del presente artículo.",
+  "exp": "Las facilidades monetarias son las de representantes en misión oficial temporal, no permanente.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "204-6",
+  "parT": "f los mismos privilegios respecto de las facilidades monetarias y cambiarias que se recono",
+  "fR": 0.92,
+  "pz": null,
+  "sec": 35,
+  "id": "1-812"
+ },
+ {
+  "lote": "d4",
+  "i": 101,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "13",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Señale la opción INCORRECTA. Los representantes de los Estados y de las organizaciones intergubernamentales invitados a reuniones de la Asamblea y sus órganos subsidiarios, tendrán, mientras se encuentren en ejercicio de sus funciones oficiales y durante el trayecto al lugar de reunión y a su regreso, los privilegios e inmunidades siguientes:",
+  "opciones": [
+   "Inmunidad de jurisdicción de toda índole respecto de las declaraciones que hagan verbalmente o por escrito y los actos que realicen a título oficial, la cual solo subsistirá mientras dure su mandato.",
+   "Inviolabilidad de todos los papeles y documentos, cualquiera que sea su forma.",
+   "Inmunidad contra arresto o detención personal.",
+   "Derecho a usar claves o cifras y recibir papeles y documentos o correspondencia por correo o en valija sellada y a recibir y enviar comunicaciones electrónicas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 13.1 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. Los representantes de Estados Partes en el Estatuto que asistan a reuniones de la Asamblea o sus órganos subsidiarios, los representantes de otros Estados que asistan a reuniones de la Asamblea y sus órganos subsidiarios en calidad de observadores de conformidad con el párrafo 1 del artículo 112 del Estatuto de Roma, y los representantes de los Estados y de las organizaciones intergubernamentales invitados a reuniones de la Asamblea y sus órganos subsidiarios, tendrán, mientras se encuentren en ejercicio de sus funciones oficiales y durante el trayecto al lugar de reunión y a su regreso, los privilegios e inmunidades siguientes: a) Inmunidad contra arresto o detención personal; b) Inmunidad de jurisdicción de toda índole respecto de las declaraciones que hagan verbalmente o por escrito y los actos que realicen a título oficial, la cual subsistirá incluso después de que hayan cesado en el ejercicio de sus funciones como representantes; c) Inviolabilidad de todos los papeles y documentos, cualquiera que sea su forma; d) Derecho a usar claves o cifras y recibir papeles y documentos o correspondencia por correo o en valija sellada y a recibir y enviar comunicaciones electrónicas; e) Exención de restricciones de inmigración, formalidades de registro de extranjeros y obligaciones del servicio nacional en el Estado Parte que visiten o por el cual transiten en el desempeño de sus funciones; f) Los mismos privilegios con respecto a las facilidades monetarias y cambiarias que se reconozcan a los representantes de gobiernos extranjeros en misión oficial temporal; g) Las mismas inmunidades y facilidades respecto de su equipaje personal que se reconozcan a los agentes diplomáticos con arreglo a la Convención de Viena; h) La misma protección y las mismas facilidades de repatriación que se reconozcan a los agentes diplomáticos en épocas de crisis internacional con arreglo a la Convención de Viena: i) Los demás privilegios, inmunidades y facilidades compatibles con los que anteceden de que gocen los agentes diplomáticos, con la salvedad de que no podrán reclamar la exención de derechos aduaneros sobre mercaderías importadas (que no sean parte de su equipaje personal) ode impuestos sobre la compraventa o el consumo.",
+  "exp": "La inmunidad de jurisdicción subsiste incluso después de cesar como representantes.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "197-9",
+  "parT": "b inmunidad de jurisdiccion de toda indole respecto de las declaraciones que hagan verbalm",
+  "fR": 0.76,
+  "pz": "p-13",
+  "sec": 35,
+  "id": "1-813"
+ },
+ {
+  "lote": "d4",
+  "i": 102,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "32",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto al tribunal arbitral, señale la opción INCORRECTA:",
+  "opciones": [
+   "El tribunal arbitral estará compuesto de tres árbitros.",
+   "En caso de que los dos primeros árbitros no convinieran en el nombramiento del presidente del tribunal en los tres meses siguientes a sus nombramientos, cualquiera de las partes podrá pedir al Presidente de la Corte Internacional de Justicia que efectúe el nombramiento del presidente del tribunal.",
+   "Si una de las partes no hubiere nombrado a un árbitro del tribunal dentro de los dos meses siguientes al nombramiento de un árbitro por la otra parte, ésta podrá pedir al Presidente de la Corte Internacional de Justicia que efectúe dicho nombramiento.",
+   "Uno árbitro será elegido por cada parte en la diferencia y el tercero, que actuará como presidente del tribunal, será elegido por los otros dos."
+  ],
+  "correcta": 1,
+  "lila": "Art. 32.3 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "3. El TRIBUNAL ARBITRAL estará compuesto de tres árbitros: • uno será elegido por cada parte en la diferencia y • el tercero, que actuará como presidente del tribunal, será elegido por los otros dos. Si una de las partes no hubiere nombrado a un árbitro del tribunal dentro de los dos meses siguientes al nombramiento de un árbitro por la otra parte, ésta podrá pedir al Presidente de la Corte Internacional de Justicia que efectúe dicho nombramiento. En caso de que los dos primeros árbitros no convinieran en el nombramiento del presidente del tribunal en los dos meses siguientes a sus nombramientos, cualquiera de las partes podrá pedir al Presidente de la Corte Internacional de Justicia que efectúe el nombramiento del presidente del tribunal.",
+  "exp": "El plazo para convenir el presidente es de dos meses.",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "213-2-0",
+  "parT": "3 el tribunal arbitral estara compuesto de tres arbitros uno sera elegido por cada parte e",
+  "fR": 1,
+  "pz": "p-32",
+  "sec": 37,
+  "id": "1-814"
+ },
+ {
+  "lote": "d4",
+  "i": 103,
+  "v": "v10",
+  "t": 1,
+  "refs": [
+   {
+    "n": "APIC",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Acuerdo sobre privilegios e inmunidades de la Corte Penal Internacional. Respecto a la inmunidad de la Corte y de sus bienes, haberes y fondos, señale la opción CORRECTA:",
+  "opciones": [
+   "En la medida en que sea necesario para el desempeño de las funciones de la Corte, los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, estarán exentos de restricciones, reglamentaciones, controles o moratorias de toda índole.",
+   "Todas las opciones son correctas.",
+   "Los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de allanamiento, incautación, requisa, decomiso y expropiación y cualquier otra forma de interferencia, salvo la que sean de carácter ejecutivo, administrativo, judicial o legislativo.",
+   "La Corte y sus bienes, haberes y fondos, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de jurisdicción en todas sus formas, salvo en la medida en que la Corte renuncie expresamente a ella en un caso determinado. Se entenderá, sin embargo, que la renuncia será extensible a la medida de ejecución."
+  ],
+  "correcta": 0,
+  "lila": "Art. 6 · Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "rojo": "1. La Corte y sus bienes, haberes y fondos, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de jurisdicción en todas sus formas, salvo en la medida en que la Corte renuncie expresamente a ella en un caso determinado. Se entenderá, sin embargo, que la renuncia no será extensible a ninguna medida de ejecución. 2. Los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, gozarán de inmunidad de allanamiento, incautación, requisa, decomiso y expropiación y cualquier otra forma de interferencia, ya sea de carácter ejecutivo, administrativo, judicial o legislativo. 3. En la medida en que sea necesario para el desempeño de las funciones de la Corte, los bienes, haberes y fondos de la Corte, dondequiera y en poder de quienquiera que se hallen, estarán exentos de restricciones, reglamentaciones, controles o moratorias de toda índole.",
+  "exp": "Es literal el apartado 3. Las otras convierten en excepción lo protegido, extienden la renuncia a la ejecución o hacen falsas las «todas».",
+  "apartado": "Acuerdo sobre Privilegios e Inmunidades de la Corte Penal Internacional",
+  "letra": "p",
+  "par": "191-21",
+  "parT": "art 6 1 la corte y sus bienes haberes y fondos dondequiera y en poder de quienquiera que s",
+  "fR": 0.43,
+  "pz": "p-6",
+  "sec": 33,
+  "id": "1-815"
+ }
+]
