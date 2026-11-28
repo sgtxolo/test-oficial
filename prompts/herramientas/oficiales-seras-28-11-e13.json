@@ -1,0 +1,1683 @@
+[
+ {
+  "lote": "e13",
+  "i": 0,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "PRIMERO. Objetivos",
+    "k": 357
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Señale cuál de los siguientes corresponde con uno de los objetivos generales del presente Protocolo:",
+  "opciones": [
+   "Asegurar la confidencialidad de todas las actuaciones que se produzcan bajo el amparo del protocolo y establecer cauces de comunicación y tramitación adecuados.",
+   "Facilitar la protección, intervención, asistencia, acompañamiento y recuperación de las guardias civiles que han sufrido esta violencia.",
+   "Evitar la revictimización y estigmatización del personal afectado por estas situaciones, para ofrecer respuestas que no agraven sus daños o secuelas.",
+   "Desarrollar programas y actividades de atención especializada para los guardias civiles que cometan actos de violencia sobre la mujer, con la meta de que puedan recobrar su desempeño profesional habitual."
+  ],
+  "correcta": 1,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "1. El protocolo constituye un instrumento para expresar la voluntad de actuar con el propósito de hacer frente a las situaciones de violencia sobre la mujer que afectan a personal de la Guardia Civil a través de los siguientes objetivos generales: a) Establecer medidas adecuadas dirigidas a prevenir, detectar y erradicar las posibles situaciones de violencia sobre la mujer en la Guardia Civil. b) Fijar reglas de actuación efectivas ante el conocimiento de que se han producido conductas de este tipo que afecten a personal del Cuerpo. c) Facilitar la protección, intervención, asistencia, acompañamiento y recuperación de las guardias civiles que han sufrido esta violencia.",
+  "exp": "Facilitar protección y asistencia es objetivo general; los demás son específicos.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "357-0",
+  "pz": "g-1",
+  "id": "26-658"
+ },
+ {
+  "lote": "e13",
+  "i": 1,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 358
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Respecto al ámbito de aplicación subjetivo del presente Protocolo, señale la opción INCORRECTA:",
+  "opciones": [
+   "Será de aplicación en las situaciones en que una guardia civil sea víctima de violencia, de cualquier naturaleza, derivada de manifestaciones de discriminación, desigualdad y dominio de hombres sobre mujeres por el hecho de serlo.",
+   "Incluirá medidas a aplicar a los guardias civiles ante la presunta atribución o comisión de conductas violentas de esta índole, así como en los supuestos en que sean objeto de medidas cautelares, penas o sanciones a raíz de ellas.",
+   "Las medidas previstas serán de aplicación directa cuando se observe o se tenga noticia de elementos que indiquen la posibilidad de ocurrencia o constituyan una primera manifestación de conductas susceptibles de alcanzar una mayor magnitud o intensidad en el marco de la violencia sobre la mujer.",
+   "Afectará al personal de la Guardia Civil que, de acuerdo con lo previsto en la Ley de Régimen de Personal de la Guardia Civil, permanezca sujeto al régimen general de derechos y deberes de los miembros del Cuerpo y a la leyes penales y disciplinarias."
+  ],
+  "correcta": 2,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "3. Las medidas previstas en el protocolo podrán valorarse para ser aplicadas cuando se observe o se tenga noticia de elementos que indiquen la posibilidad de ocurrencia o constituyan una primera manifestación de conductas susceptibles de alcanzar una mayor magnitud o intensidad en el marco de la violencia sobre la mujer.",
+  "exp": "Esas medidas «podrán valorarse» para ser aplicadas; no son de aplicación directa.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "358-3",
+  "pz": "g-1",
+  "id": "26-659"
+ },
+ {
+  "lote": "e13",
+  "i": 2,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "QUINTO. Garantías",
+    "k": 361
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "QUINTO. Garantías",
+    "k": 361
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Las actuaciones que se lleven a cabo bajo el marco del Protocolo asegurarán:",
+  "opciones": [
+   "Objetividad e imparcialidad en las actuaciones y transparencia en el uso de la información.",
+   "Asistencia integral y especializada a las víctimas y a sus familiares.",
+   "Disponibilidad y acceso a mecanismos de índole económica, social y jurídica.",
+   "Coherencia con las medidas que puedan adoptarse al amparo de otros instrumentos corporativos orientados a combatir conductas de naturaleza violenta."
+  ],
+  "correcta": 3,
+  "lila": "QUINTO. Garantías · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "QUINTO. Garantías. 1. Bajo la guía de los principios rectores, las actuaciones que se lleven a cabo bajo el marco del protocolo asegurarán las condiciones siguientes:<br>QUINTO. Garantías. i) Coherencia con las medidas que puedan adoptarse al amparo de otros instrumentos corporativos orientados a combatir conductas de naturaleza violenta.",
+  "exp": "La garantía es la coherencia con otros instrumentos; las demás alteran confidencialidad, destinatarios o mecanismos.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "361-0",
+  "pz": "g-5",
+  "id": "26-660"
+ },
+ {
+  "lote": "e13",
+  "i": 3,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEXTO. Definiciones",
+    "k": 362
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Respecto a la definición de \"violencia económica\", señale la opción INCORRECTA:",
+  "opciones": [
+   "Incluye forzar a la dependencia económica.",
+   "Incluye impedir el acceso al mercado laboral por cualquier medio o forma.",
+   "Incluye el incumplimiento en el pago de pensiones legítimamente establecidas en favor de sus descendientes o el excónyuge.",
+   "Constituye la privación deliberada e injustificada, a la mujer y a sus descendientes, de los recursos económicos necesarios para su bienestar."
+  ],
+  "correcta": 1,
+  "lila": "SEXTO. Definiciones · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "f) Violencia económica: privación total o parcial, deliberada e injustificada, a la mujer y a sus descendientes, de los recursos económicos necesarios para su bienestar, así como la discriminación en la disposición de los que se compartan en el ámbito de convivencia de la pareja. Incluye forzar a la dependencia económica e impedir el acceso al mercado laboral mediante amenaza, coacción o restricción. También el incumplimiento en el pago de pensiones legítimamente establecidas en favor de sus descendientes o el excónyuge.",
+  "exp": "El acceso al mercado laboral se impide mediante amenaza, coacción o restricción, no por cualquier medio.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "362-6",
+  "pz": "g-6",
+  "id": "26-661"
+ },
+ {
+  "lote": "e13",
+  "i": 4,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SÉPTIMO. Medidas preventivas",
+    "k": 363
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. ¿Cuál de las siguientes medidas preventivas tienen como meta afrontar las situaciones de violencia que puedan estar produciéndose y atenuar su extensión, progresión e impacto?:",
+  "opciones": [
+   "Las medidas de prevención secundaria.",
+   "Las medidas de prevención primaria.",
+   "Las medidas generales de prevención.",
+   "Las medidas específicas de prevención."
+  ],
+  "correcta": 0,
+  "lila": "SÉPTIMO. Medidas preventivas · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "b) Prevención secundaria, cuya meta es afrontar las situaciones de violencia que puedan estar produciéndose y atenuar su extensión, progresión e impacto:",
+  "exp": "Es la meta de la prevención secundaria.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "363-6",
+  "pz": "g-6",
+  "id": "26-662"
+ },
+ {
+  "lote": "e13",
+  "i": 5,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMOCTAVO. Medidas de limitación y control de acceso a datos sobre los casos de violencia sobre la mujer",
+    "k": 374
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Cuando el presunto autor de conductas de violencia sobre la mujer sea guardia Civil, ¿en qué plazo el jefe de unidad le notificará que queda suspendido su permiso para acceder a las bases de datos cuyo uso tenga autorizado para el ejercicio de sus funciones y que sean susceptibles de contener información de la víctima?:",
+  "opciones": [
+   "A la mayor brevedad posible.",
+   "Inmediatamente.",
+   "En el plazo de veinticuatro horas.",
+   "La suspensión del permiso para acceder a las citadas bases solo se producirá cuando la resolución del procedimiento sea firme."
+  ],
+  "correcta": 1,
+  "lila": "DECIMOCTAVO. Medidas de limitación y control de acceso a datos sobre los casos de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "3. Cuando el presunto autor de conductas de violencia sobre la mujer sea guardia civil, quien ejerza la jefatura de unidad le notificará de forma inmediata que queda suspendido su permiso para acceder a las bases de datos cuyo uso tenga autorizado para el ejercicio de sus funciones y que sean susceptibles de contener información de la víctima, en especial si se trata del sistema de seguimiento integral de los casos de violencia de género (Sistema VIOGÉN). A la vez, se solicitará sin demora la deshabilitación o bloqueo de acceso al administrador que corresponda.",
+  "exp": "Se le notifica de forma inmediata.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "374-3",
+  "pz": "g-18",
+  "id": "26-663"
+ },
+ {
+  "lote": "e13",
+  "i": 6,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOCUARTO. Información, registro, seguimiento y control",
+    "k": 380
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. ¿Por parte de qué Unidad se realizará un seguimiento estadístico, penal y disciplinario de los casos en los que concurran circunstancias susceptibles de incardinarse en el presente Protocolo?:",
+  "opciones": [
+   "Por parte de la Unidad Técnica de Policía Judicial.",
+   "Por parte del Área de Igualdad y Diversidad.",
+   "Por parte del Servicio Estadístico de la Guardia Civil.",
+   "Por parte de las Unidades Orgánicas de Policía Judicial."
+  ],
+  "correcta": 0,
+  "lila": "VIGESIMOCUARTO. Información, registro, seguimiento y control · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "2. Por parte de la Unidad Técnica de Policía Judicial, en el marco de las medidas de coordinación y seguimiento del Plan de Acción de la Guardia Civil contra la violencia sobre la mujer, se realizará un seguimiento estadístico, penal y disciplinario de los casos en los que concurran circunstancias susceptibles de incardinarse en el presente protocolo.",
+  "exp": "La Unidad Técnica de Policía Judicial.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "380-1",
+  "pz": "g-23",
+  "id": "26-664"
+ },
+ {
+  "lote": "e13",
+  "i": 7,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGÉSIMO. Medidas relacionadas con la prohibición de residir o acudir a determinados lugares o de aproximarse o comunicar con determinadas personas",
+    "k": 376
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Respecto a las medidas relacionadas con la prohibición de residir o acudir a determinados lugares o de aproximarse o comunicar con determinadas personas, señale la opción INCORRECTA:",
+  "opciones": [
+   "Cuando sobre un guardia civil se adopte y mantenga vigente una medida cautelar de prohibición de residir o acudir a determinados lugares, o de aproximarse a la víctima de violencia sobre la mujer, que no le permita continuar en su domicilio habitual, su situación podrá ser tenido en cuenta para que le sea adjudicado un pabellón en precario.",
+   "Por los responsables de las unidades, centros y organismos, ante el conocimiento de la adopción de estas medidas, se establecerá lo necesario para que el guardia civil sobre el que se han dictado no coincida con la víctima en ninguna actividad de la prestación del servicio.",
+   "Quienes tengan impuesta una pena consistente en la privación del derecho a residir en determinados lugares o acudir a ellos, no podrán solicitar ni obtener destino en aquellas unidades que tengan su residencia oficial en las localidades afectadas.",
+   "La adopción de la medida cautelar de prohibición de residir o acudir a determinados lugares o de aproximarse o comunicar con determinadas personas, determinará el pase a la situación de suspensión de funciones, de acuerdo con lo previsto en la Ley del Régimen del Personal de la Guardia Civil."
+  ],
+  "correcta": 3,
+  "lila": "VIGÉSIMO. Medidas relacionadas con la prohibición de residir o acudir a determinados lugares o de aproximarse o comunicar con determinadas personas · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "4. La adopción de la medida cautelar de prohibición de residir o acudir a determinados lugares o de aproximarse o comunicar con determinadas personas, podrá servir para acordar el pase a la situación de suspensión de funciones, de acuerdo con lo previsto en el artículo 92 de la Ley 29/2014, de 28 de diciembre, y su normativa de desarrollo.",
+  "exp": "La medida «podrá servir» para acordar la suspensión de funciones; no la determina.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "376-5",
+  "pz": "c-92",
+  "id": "26-665"
+ },
+ {
+  "lote": "e13",
+  "i": 8,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMONOVENO. Retirada del armamento oficial y particular del presunto autor de violencia sobre la mujer",
+    "k": 375
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Cualquier situación susceptible de constituir actos de violencia sobre la mujer cuyo autor pueda ser un guardia civil, conllevará la retirada _______ de sus _______, con arreglo a los procedimientos previstos ante conductas anómalas que afecten a los guardias civiles:",
+  "opciones": [
+   "Inmediata y con carácter cautelar / armas oficiales y particulares.",
+   "Inmediata y con carácter definitivo / armas particulares.",
+   "Inmediata y con carácter cautelar / armas particulares.",
+   "Inmediata y con carácter definitivo / armas oficiales y particulares."
+  ],
+  "correcta": 0,
+  "lila": "DECIMONOVENO. Retirada del armamento oficial y particular del presunto autor de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "1. Cualquier situación susceptible de constituir actos de violencia sobre la mujer cuyo autor pueda ser un guardia civil, conllevará la retirada inmediata y con carácter cautelar de sus armas oficiales y particulares, con arreglo a los procedimientos previstos ante conductas anómalas que afecten a los guardias civiles.",
+  "exp": "Retirada inmediata y cautelar de armas oficiales y particulares.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "375-0",
+  "pz": "g-18",
+  "id": "26-666"
+ },
+ {
+  "lote": "e13",
+  "i": 9,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMOSÉPTIMO. Otras medidas a favor de las víctimas de violencia sobre la mujer",
+    "k": 373
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Los procesos de incapacidad temporal de las guardias civiles víctimas de violencia sobre la mujer que puedan producirse como consecuencia de esta situación, generarán derecho a la percepción de la productividad de la forma prevista para las bajas médicas producidas durante la prestación del servicio, durante:",
+  "opciones": [
+   "Seis meses.",
+   "Tres meses.",
+   "Dos meses.",
+   "Nueve."
+  ],
+  "correcta": 1,
+  "lila": "DECIMOSÉPTIMO. Otras medidas a favor de las víctimas de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "Los procesos de incapacidad temporal de las guardias civiles víctimas de violencia sobre la mujer que puedan producirse como consecuencia de esta situación, generarán derecho a la percepción de la productividad de la forma prevista para las bajas médicas producidas durante la prestación del servicio, durante tres meses, de conformidad con lo dispuesto en el artículo 21.2 y 21.5 de la Orden General 4/2021, de 12 de febrero, por la que se regulan los incentivos al rendimiento del personal de la Guardia Civil.",
+  "exp": "Durante tres meses.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "373-0",
+  "pz": "g-11",
+  "id": "26-667"
+ },
+ {
+  "lote": "e13",
+  "i": 10,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "PRIMERO. Objetivos",
+    "k": 357
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "PRIMERO. Objetivos",
+    "k": 357
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. ¿Cuál de los siguientes corresponde con un objetivo específico del presente Protocolo:",
+  "opciones": [
+   "Establecer medidas adecuadas dirigidas a prevenir, detectar y erradicar las posibles situaciones de violencia sobre la mujer en la Guardia Civil.",
+   "Fijar reglas de actuación efectivas ante el conocimiento de que se han producido conductas de este tipo que afecten a personal del Cuerpo.",
+   "Asegurar la transparencia de todas las actuaciones que se produzcan bajo el amparo del protocolo y establecer cauces de comunicación y tramitación adecuados.",
+   "Evitar la revictimización y estigmatización del personal afectado por estas situaciones, para ofrecer respuestas que no agraven sus daños o secuelas."
+  ],
+  "correcta": 3,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "PRIMERO. Objetivos. 2. En el marco del cumplimiento de los objetivos generales, se enuncian como objetivos específicos del protocolo los siguientes:<br>PRIMERO. Objetivos. e) Evitar la revictimización y estigmatización del personal afectado por estas situaciones, para ofrecer respuestas que no agraven sus daños o secuelas.",
+  "exp": "Evitar la revictimización es objetivo específico; la opción de transparencia altera el texto.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "357-4",
+  "pz": "g-1",
+  "id": "26-668"
+ },
+ {
+  "lote": "e13",
+  "i": 11,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 358
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. ¿A qué personal de la Guardia Civil afectará el presente Protocolo?:",
+  "opciones": [
+   "Al personal que permanezca sujeto al régimen general de derechos y deberes de los miembros del Cuerpo y a la leyes penales y disciplinarias.",
+   "Al personal que se encuentre en la situación de activo, según se determina en la Ley del Régimen del Personal de la Guardia Civil.",
+   "A todo el personal de la Guardia Civil, indistintamente de su situación administrativa.",
+   "Al personal que se encuentre en la situación de activo o de reserva con destino, según se determina en la Ley del Régimen del Personal de la Guardia Civil."
+  ],
+  "correcta": 0,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "4. El protocolo afectará al personal de la Guardia Civil que, de acuerdo con lo previsto en la Ley 29/2014, de 28 de noviembre, de Régimen de Personal de la Guardia Civil, permanezca sujeto al régimen general de derechos y deberes de los miembros del Cuerpo y a la leyes penales y disciplinarias.",
+  "exp": "Al que permanezca sujeto al régimen general de derechos y deberes.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "358-4",
+  "pz": "g-1",
+  "id": "26-669"
+ },
+ {
+  "lote": "e13",
+  "i": 12,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "CUARTO. Principios rectores y de actuación de la Dirección General de la Guardia Civil en la prevención y lucha contra la violencia sobre la mujer",
+    "k": 360
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Señale por cuál de los siguientes principios NO estará presidido el presente Protocolo:",
+  "opciones": [
+   "Asegurar que prevalece el interés de la víctima y de la imagen de la Guardia Civil, así como que se garantizan plenamente los derechos de todas las personas que resulten afectadas.",
+   "Proceder con la máxima diligencia y celeridad, actuando de forma proactiva, y siempre con la discreción debida, a fin de anticipar, afrontar y erradicar las situaciones de violencia y sus efectos sobre el personal del Cuerpo.",
+   "Ofrecer una respuesta integral, homogénea, transversal y coordinada, promoviendo la colaboración de todo el personal y unidades que resulten concernidas, sobre todo las que puedan proporcionar asistencia y acceso a medios especializados.",
+   "Desechar actitudes que prejuzguen, presupongan la culpabilidad, resten importancia o defiendan de forma irreflexiva o sesgada a las personas que se vean afectadas por Situaciones de esta naturaleza."
+  ],
+  "correcta": 0,
+  "lila": "CUARTO. Principios rectores y de actuación de la Dirección General de la Guardia Civil en la prevención y lucha contra la violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "b) Asegurar que prevalece el interés de la víctima y de las personas perjudicadas, así como que se garantizan plenamente los derechos de todas las personas que resulten afectadas.",
+  "exp": "El interés es el de la víctima y las personas perjudicadas, no la imagen del Cuerpo.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "360-2",
+  "pz": "g-1",
+  "id": "26-670"
+ },
+ {
+  "lote": "e13",
+  "i": 13,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SÉPTIMO. Medidas preventivas",
+    "k": 363
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SÉPTIMO. Medidas preventivas",
+    "k": 363
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Medidas preventivas. ¿A qué orden de actuación corresponde la intervención en el entorno profesional de la víctima y del autor para asegurar la gestión confidencial y frenar el eventual agravamiento de la situación, de forma que no genere nuevos perjuicios ni menoscabe la imagen de la Guardia Civil?:",
+  "opciones": [
+   "Prevención terciaria.",
+   "Prevención secundaria.",
+   "Prevención elemental.",
+   "Prevención primaria."
+  ],
+  "correcta": 1,
+  "lila": "SÉPTIMO. Medidas preventivas · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "SÉPTIMO. Medidas preventivas. b) Prevención secundaria, cuya meta es afrontar las situaciones de violencia que puedan estar produciéndose y atenuar su extensión, progresión e impacto:<br>SÉPTIMO. Medidas preventivas. - Intervención en el entorno profesional de la víctima y del autor para asegurar la gestión confidencial y frenar el eventual agravamiento de la situación, de forma que no genere nuevos perjuicios ni menoscabe la imagen de la Guardia Civil.",
+  "exp": "Pertenece a la prevención secundaria.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "363-6",
+  "pz": "g-6",
+  "id": "26-671"
+ },
+ {
+  "lote": "e13",
+  "i": 14,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer",
+    "k": 364
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Acreditación de las situaciones de violencia sobre la mujer. Cuando, sin constituir violencia de género, las guardias civiles sean ofendidas por un delito contra la libertad e indemnidad sexual, ¿qué será preciso para la acreditación de las situaciones de violencia sobre la mujer?",
+  "opciones": [
+   "Sentencia condenatoria o resolución judicial acordando alguna medida cautelar.",
+   "Una orden de protección.",
+   "El informe de los servicios sociales, de los especializados o de acogida de la Administración Pública competente.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 0,
+  "lila": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "2. Será precisa sentencia condenatoria o resolución judicial acordando alguna medida cautelar cuando, sin constituir violencia de género, las guardias civiles sean ofendidas por un delito contra la libertad e indemnidad sexual.",
+  "exp": "Exige sentencia condenatoria o resolución con medida cautelar.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "364-2",
+  "pz": "g-6",
+  "id": "26-672"
+ },
+ {
+  "lote": "e13",
+  "i": 15,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOPRIMERO. Medidas en relación con el desempeño de determinadas funciones profesionales",
+    "k": 377
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. A los guardias civiles a los que se atribuya la presunta comisión de un delito de violencia sobre la mujer, mientras se hallen incursos en el procedimiento penal, ¿a cuál de los siguientes cursos no se les permitirá el acceso?:",
+  "opciones": [
+   "A cualquier curso de perfeccionamiento, en especial los relacionados con el trato de víctimas de violencia de género.",
+   "A cualquier curso desarrollado en el ámbito de la enseñanza en la Guardia Civil.",
+   "A cursos de perfeccionamiento relacionados con el ámbito de policía judicial.",
+   "A los cursos de perfeccionamiento que expresamente se determinen."
+  ],
+  "correcta": 2,
+  "lila": "VIGESIMOPRIMERO. Medidas en relación con el desempeño de determinadas funciones profesionales · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "2. No se permitirá el acceso a cursos de perfeccionamiento relacionados con el ámbito de policía judicial a los guardias civiles a los que se atribuya la presunta comisión de un delito de violencia sobre la mujer, mientras se hallen incursos en el procedimiento penal.",
+  "exp": "Cursos de perfeccionamiento de policía judicial.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "377-2",
+  "pz": "g-18",
+  "id": "26-673"
+ },
+ {
+  "lote": "e13",
+  "i": 16,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOCUARTO. Información, registro, seguimiento y control",
+    "k": 380
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. ¿Con qué periodicidad el Área de Igualdad y Diversidad elaborará un informe que será incluido en el orden del día de la correspondiente convocatoria de la Comisión de Igualdad y Diversidad del Consejo?:",
+  "opciones": [
+   "Bienalmente.",
+   "Al menos una vez al año.",
+   "Cada seis meses.",
+   "Trimestralmente, coincidiendo con las reuniones del Consejo."
+  ],
+  "correcta": 1,
+  "lila": "VIGESIMOCUARTO. Información, registro, seguimiento y control · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "3. Al menos una vez al año, el Área de Igualdad y Diversidad elaborará un informe que será incluido en el orden del día de la correspondiente convocatoria de la Comisión de Igualdad y Diversidad del Consejo.",
+  "exp": "Al menos una vez al año.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "380-3",
+  "pz": "g-23",
+  "id": "26-674"
+ },
+ {
+  "lote": "e13",
+  "i": 17,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOQUINTO. Difusión",
+    "k": 381
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. ¿Cuál de las siguientes vías se seguirán con el objetivo de la difusión del alcance del protocolo?:",
+  "opciones": [
+   "Concienciación, formación y prevención.",
+   "Información, formación y concienciación.",
+   "Prevención, formación y actuación.",
+   "Concienciación, prevención y denuncia."
+  ],
+  "correcta": 1,
+  "lila": "VIGESIMOQUINTO. Difusión · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "3. Con el objetivo de la difusión del alcance del protocolo, su conocimiento y compromiso con él, se seguirán diferentes vías: a) Información: una vez publicado y en vigor se distribuirá a través de los canales habituales de transmisión de la información corporativa y se entregará dentro de los planes de acogida al personal de nuevo ingreso. b) Formación y concienciación: por personal experto en materia de género del Área de Igualdad y Diversidad de la Guardia Civil se promoverá lo necesario para que puedan llevarse a cabo actividades formativas y de concienciación acerca del contenido del protocolo y de la prevención y lucha contra la violencia sobre la mujer, dirigidas tanto al personal que desempeña funciones de mando como al conjunto de los integrantes del Cuerpo.",
+  "exp": "Información, formación y concienciación.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "381-2",
+  "pz": "g-25",
+  "id": "26-675"
+ },
+ {
+  "lote": "e13",
+  "i": 18,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOSEGUNDO. Medidas para evitar que se agraven las consecuencias sobre quienes se puedan ver afectados",
+    "k": 378
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. En los supuestos en que sean unidades del Cuerpo las encargadas de hacerse cargo de situaciones de violencia sobre la mujer, cuya víctima o presunto autor sean guardias civiles, ¿por qué unidad será asumida la instrucción e investigación?:",
+  "opciones": [
+   "Por unidades de policía judicial, siempre distintas a las concretas de destino del personal afectado, salvo que la relevancia penal sea mínima.",
+   "Por los equipos de violencia de género, siempre distintas a las concretas de destino del personal afectado, salvo que la relevancia penal sea mínima.",
+   "Por unidades de policía judicial, siempre distintas a las concretas de destino del personal afectado.",
+   "Por la unidad orgánica de policía judicial, sección de personas, correspondiente a la provincia del destino de la víctima."
+  ],
+  "correcta": 2,
+  "lila": "VIGESIMOSEGUNDO. Medidas para evitar que se agraven las consecuencias sobre quienes se puedan ver afectados · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "1. En los supuestos en que sean unidades del Cuerpo las encargadas de hacerse cargo de situaciones de violencia sobre la mujer, cualquiera que sea su entidad, cuya víctima o presunto autor sean guardias civiles, la instrucción e investigación será asumida por unidades de policía judicial y siempre distintas a las concretas de destino del personal afectado. Se procurará que estos criterios queden recogidos en los Planes Anuales de actuación de las Unidades Orgánicas de Policía Judicial.",
+  "exp": "Unidades de policía judicial distintas a las de destino, sin excepción por relevancia.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "378-0",
+  "pz": "g-18",
+  "id": "26-676"
+ },
+ {
+  "lote": "e13",
+  "i": 19,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEXTO. Definiciones",
+    "k": 362
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Señale la opción INCORRECTA. A efectos del presente Protocolo, se entiende por violencia instrumental la ejercida contra _______ con el propósito de producir en ella sufrimiento, culpabilidad, temor, sometimiento o coacción:",
+  "opciones": [
+   "Los descendientes de la mujer.",
+   "La mujer o sus hijos.",
+   "Los ascendientes de la mujer.",
+   "Las personas vinculadas afectivamente a la mujer."
+  ],
+  "correcta": 1,
+  "lila": "SEXTO. Definiciones · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "g) Violencia instrumental o vicaria: la ejercida contra los descendientes, ascendientes o personas vinculadas afectivamente a la mujer, con el propósito de producir en ella sufrimiento, culpabilidad, temor, sometimiento o coacción.",
+  "exp": "Se ejerce contra descendientes, ascendientes o personas vinculadas; no se define contra la propia mujer.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "362-7",
+  "pz": "g-6",
+  "id": "26-677"
+ },
+ {
+  "lote": "e13",
+  "i": 20,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "PRIMERO. Objetivos",
+    "k": 357
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "PRIMERO. Objetivos",
+    "k": 357
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Señale cuál de los siguientes corresponde con un objetivo específico del presente protocolo:",
+  "opciones": [
+   "Establecer medidas adecuadas dirigidas a prevenir, detectar y erradicar las posibles situaciones de violencia sobre la mujer en la Guardia Civil.",
+   "Asegurar la confidencialidad de todas las actuaciones que se produzcan bajo el amparo del protocolo y establecer cauces de comunicación y tramitación adecuados.",
+   "Facilitar la protección, intervención, asistencia, acompañamiento y recuperación de las guardias civiles que han sufrido esta violencia.",
+   "Fijar reglas de actuación efectivas ante el conocimiento de que se han producido conductas de este tipo que afecten a personal del Cuerpo."
+  ],
+  "correcta": 1,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "PRIMERO. Objetivos. 2. En el marco del cumplimiento de los objetivos generales, se enuncian como objetivos específicos del protocolo los siguientes:<br>PRIMERO. Objetivos. d) Asegurar la confidencialidad de todas las actuaciones que se produzcan bajo el amparo del protocolo y establecer cauces de comunicación y tramitación adecuados.",
+  "exp": "La confidencialidad es objetivo específico.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "357-4",
+  "pz": "g-1",
+  "id": "26-678"
+ },
+ {
+  "lote": "e13",
+  "i": 21,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 358
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 358
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 358
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Ámbito de aplicación subjetivo. Señale la opción CORRECTA:",
+  "opciones": [
+   "El presente protocolo será de aplicación en las situaciones en que una guardia civil sea víctima de violencia, de cualquier naturaleza, derivada de manifestaciones de discriminación, desigualdad y dominio de hombres sobre mujeres por cualquier motivo.",
+   "Todas las opciones son correctas.",
+   "El presente protocolo incluirá medidas a aplicar a los guardias civiles ante la presunta atribución o comisión de conductas violentas de esta índole, así como en los supuestos en que sean objeto de medidas cautelares, penas o sanciones a raíz de ellas.",
+   "Las medidas previstas en el protocolo deberán ser aplicadas cuando se observe o se tenga noticia de elementos que indiquen la posibilidad de ocurrencia o constituyan una primera manifestación de conductas susceptibles de alcanzar una mayor magnitud o intensidad en el marco de la violencia sobre la mujer."
+  ],
+  "correcta": 2,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "SEGUNDO. Ámbito de aplicación subjetivo. 2. De igual forma, incluirá medidas a aplicar a los guardias civiles ante la presunta atribución o comisión de conductas violentas de esta índole, así como en los supuestos en que sean objeto de medidas cautelares, penas o sanciones a raíz de ellas.<br>SEGUNDO. Ámbito de aplicación subjetivo. 1. El presente protocolo será de aplicación en las situaciones en que una guardia civil sea víctima de violencia, de cualquier naturaleza, derivada de manifestaciones de discriminación, desigualdad y dominio de hombres sobre mujeres por el hecho de serlo.<br>SEGUNDO. Ámbito de aplicación subjetivo. 3. Las medidas previstas en el protocolo podrán valorarse para ser aplicadas cuando se observe o se tenga noticia de elementos que indiquen la posibilidad de ocurrencia o constituyan una primera manifestación de conductas susceptibles de alcanzar una mayor magnitud o intensidad en el marco de la violencia sobre la mujer.",
+  "exp": "Es literal. La violencia es por el hecho de ser mujer y las medidas indiciarias «podrán valorarse».",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "358-2",
+  "pz": "g-1",
+  "id": "26-679"
+ },
+ {
+  "lote": "e13",
+  "i": 22,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "CUARTO. Principios rectores y de actuación de la Dirección General de la Guardia Civil en la prevención y lucha contra la violencia sobre la mujer",
+    "k": 360
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. El protocolo está presidido por una serie de principios que servirán de guía en su aplicación y sustentarán las actuaciones que se lleven a cabo. Señale el principio INCORRECTO:",
+  "opciones": [
+   "Proceder con la máxima diligencia y celeridad, actuando de forma preventiva, y siempre con la discreción debida, a fin de anticipar, afrontar y erradicar las situaciones de violencia y sus efectos sobre el personal del Cuerpo, preservando la intimidad de las personas implicadas y evitando cualquier tipo de publicidad.",
+   "Asegurar que prevalece el interés de la víctima y de las personas perjudicadas, así como que se garantizan plenamente los derechos de todas las personas que resulten afectadas.",
+   "Promover un entorno libre de violencia sobre la mujer y de firme intolerancia frente a cualquier tipo de maltrato, así como una cultura preventiva y un ambiente de igualdad que genere un entorno profesional respetuoso y que destierre y sancione actitudes de discriminación o diferencia de trato.",
+   "Ofrecer una respuesta integral, homogénea, transversal y coordinada, promoviendo la colaboración de todo el personal y unidades que resulten concernidas, sobre todo las que puedan proporcionar asistencia y acceso a medios especializados."
+  ],
+  "correcta": 0,
+  "lila": "CUARTO. Principios rectores y de actuación de la Dirección General de la Guardia Civil en la prevención y lucha contra la violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "c) Proceder con la máxima diligencia y celeridad, actuando de forma proactiva, y siempre con la discreción debida, a fin de anticipar, afrontar y erradicar las situaciones de violencia y sus efectos sobre el personal del Cuerpo, preservando la intimidad de las personas implicadas y evitando cualquier acto innecesario de publicidad.",
+  "exp": "El texto dice «proactiva» y «cualquier acto innecesario de publicidad».",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "360-3",
+  "pz": "g-1",
+  "id": "26-680"
+ },
+ {
+  "lote": "e13",
+  "i": 23,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "QUINTO. Garantías",
+    "k": 361
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "QUINTO. Garantías",
+    "k": 361
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Bajo la guía de los principios rectores, las actuaciones que se lleven a cabo bajo el marco del protocolo asegurarán:",
+  "opciones": [
+   "La contundencia en la aplicación de las medidas.",
+   "La asistencia integral y especializada a las víctimas.",
+   "La subjetividad e imparcialidad en las actuaciones.",
+   "La transparencia en el uso de la información."
+  ],
+  "correcta": 1,
+  "lila": "QUINTO. Garantías · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "QUINTO. Garantías. g) Asistencia integral y especializada a las víctimas.<br>QUINTO. Garantías. 1. Bajo la guía de los principios rectores, las actuaciones que se lleven a cabo bajo el marco del protocolo asegurarán las condiciones siguientes: a) Confidencialidad en el uso de la información. b) Respeto en el trato con quienes resulten afectados. c) Objetividad e imparcialidad en las actuaciones. d) Proporcionalidad en la aplicación de las medidas.",
+  "exp": "La garantía es la asistencia integral y especializada.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "361-7",
+  "pz": "g-5",
+  "id": "26-681"
+ },
+ {
+  "lote": "e13",
+  "i": 24,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEXTO. Definiciones",
+    "k": 362
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEXTO. Definiciones",
+    "k": 362
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEXTO. Definiciones",
+    "k": 362
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Señale la definición CORRECTA:",
+  "opciones": [
+   "Violencia sexual: cualquier acto de naturaleza sexual, consentido o no por la mujer, y que abarca la imposición, mediante violencia, intimidación, fuerza o coacción, de relaciones o actividades de índole sexual en contra de su voluntad o limitando su libertad.",
+   "Violencia instrumental o vicaria: la ejercida de forma reiterativa y/o grave contra los descendientes, ascendientes o personas vinculadas afectivamente a la mujer.",
+   "En la definición de violencia económica no se incluye el incumplimiento en el pago de pensiones judicialmente establecidas en favor de sus descendientes o el excónyuge.",
+   "Violencia digital: conductas continuadas de hostigamiento, control, limitación de libertad, chantaje o dominación que se realizan sobre la mujer utilizando las nuevas tecnologías y sus posibilidades."
+  ],
+  "correcta": 3,
+  "lila": "SEXTO. Definiciones · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "SEXTO. Definiciones. h) Violencia digital: conductas continuadas de hostigamiento, control, limitación de libertad, chantaje o dominación que se realizan sobre la mujer utilizando las nuevas tecnologías y sus posibilidades, como los sistemas de mensajería, redes sociales o correo electrónico, con acceso, difusión o intromisión no consentida en su privacidad.<br>SEXTO. Definiciones. d) Violencia sexual: cualquier acto de naturaleza sexual no consentido por la mujer, y que abarca la imposición, mediante violencia, intimidación, fuerza o coacción, de relaciones o actividades de índole sexual en contra de su voluntad o limitando su libertad, con independencia de que quien las realice tenga o no vínculo conyugal, afectivo o de parentesco con la víctima.<br>SEXTO. Definiciones. f) Violencia económica: privación total o parcial, deliberada e injustificada, a la mujer y a sus descendientes, de los recursos económicos necesarios para su bienestar, así como la discriminación en la disposición de los que se compartan en el ámbito de convivencia de la pareja. Incluye forzar a la dependencia económica e impedir el acceso al mercado laboral mediante amenaza, coacción o restricción. También el incumplimiento en el pago de pensiones legítimamente establecidas en favor de sus descendientes o el excónyuge. g) Violencia instrumental o vicaria: la ejercida contra los descendientes, ascendientes o personas vinculadas afectivamente a la mujer, con el propósito de producir en ella sufrimiento, culpabilidad, temor, sometimiento o coacción.",
+  "exp": "Es literal la violencia digital.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "362-8",
+  "pz": "g-6",
+  "id": "26-682"
+ },
+ {
+  "lote": "e13",
+  "i": 25,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SÉPTIMO. Medidas preventivas",
+    "k": 363
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SÉPTIMO. Medidas preventivas",
+    "k": 363
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Para el cumplimiento de los objetivos generales y específicos del protocolo. ¿a qué orden de actuación corresponde el seguimiento coordinado de las situaciones de violencia sobre la mujer que hayan acontecido para adecuar las intervenciones y evitar que se reproduzcan contextos de riesgo?:",
+  "opciones": [
+   "Prevención primaria.",
+   "Prevención principal.",
+   "Prevención terciaria.",
+   "Prevención secundaria."
+  ],
+  "correcta": 2,
+  "lila": "SÉPTIMO. Medidas preventivas · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "SÉPTIMO. Medidas preventivas. c) Prevención terciaria, con el propósito de minimizar las consecuencias derivadas de la violencia ejercida, así como recuperar a las personas afectadas y normalizar la situación:<br>SÉPTIMO. Medidas preventivas. - Seguimiento coordinado de las situaciones de violencia sobre la mujer que hayan acontecido para adecuar las intervenciones y evitar que se reproduzcan contextos de riesgo.",
+  "exp": "Es prevención terciaria.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "363-12",
+  "pz": "g-6",
+  "id": "26-683"
+ },
+ {
+  "lote": "e13",
+  "i": 26,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer",
+    "k": 364
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Acreditación de las situaciones de violencia sobre la mujer. Cuando, sin constituir violencia de género, las guardias civiles sean ofendidas por un delito contra la libertad e indemnidad sexual, ¿qué será preciso para la citada acreditación?:",
+  "opciones": [
+   "Informe del Ministerio Fiscal que indique la existencia de indicios de que es víctima de violencia de género.",
+   "Sentencia condenatoria o resolución judicial acordando alguna medida cautelar.",
+   "Todas las opciones son correctas.",
+   "Informe vinculante de los servicios sociales o de atención a la víctima."
+  ],
+  "correcta": 1,
+  "lila": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "2. Será precisa sentencia condenatoria o resolución judicial acordando alguna medida cautelar cuando, sin constituir violencia de género, las guardias civiles sean ofendidas por un delito contra la libertad e indemnidad sexual.",
+  "exp": "Sentencia condenatoria o resolución con medida cautelar.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "364-2",
+  "pz": "g-6",
+  "id": "26-684"
+ },
+ {
+  "lote": "e13",
+  "i": 27,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "NOVENO. Información, asesoramiento y orientación especializada a las víctimas de violencia sobre la mujer",
+    "k": 365
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Información, asesoramiento y orientación especializada a las víctimas de violencia sobre la mujer. Señale la opción INCORRECTA:",
+  "opciones": [
+   "El personal experto para el asesoramiento e información en los casos de violencia sobre la mujer deberá contar con la formación específica indispensable para su cumplimiento. Sin que quien las realice pierda expectativas respecto a otros cursos a los que desee acudir.",
+   "El desempeño de las funciones de asesoramiento e información será considerado como tiempo de servicio y justificará las indemnizaciones por razón de servicio que resulten necesarias para su cumplimiento.",
+   "Para asegurar la efectividad y confidencialidad de las comunicaciones entre las guardias civiles y quienes tengan atribuidas las responsabilidades de asesoramiento, estará disponible las 24 horas del día el teléfono gratuito 800.009.555.",
+   "Las víctimas de violencia sobre la mujer disponen de una red de recursos de atención especializada que ponen a su disposición las Administraciones Públicas, en especial a través del servicio telefónica 016."
+  ],
+  "correcta": 2,
+  "lila": "NOVENO. Información, asesoramiento y orientación especializada a las víctimas de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "Para asegurar la efectividad y confidencialidad de las comunicaciones entre las guardias civiles y quienes tengan atribuidas las responsabilidades de asesoramiento, estará disponible en horario laboral el teléfono gratuito 800.009.555.",
+  "exp": "El teléfono está disponible en horario laboral.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "365-2",
+  "pz": "g-6",
+  "id": "26-685"
+ },
+ {
+  "lote": "e13",
+  "i": 28,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas",
+    "k": 369
+   }
+  ],
+  "pregunta": "protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. La mujer guardia civil víctima de violencia sobre la mujer tendrá derecho a solicitar la situación de excedencia. Respecto a la citada excedencia, señale la opción CORRECTA:",
+  "opciones": [
+   "Debe de haber prestado dos años de servicios previos, pero no es exigible plazo de permanencia en la misma.",
+   "No tiene que haber prestado un tiempo mínimo de servicios previos, pero se exige un plazo de permanencia mínima de dos meses.",
+   "No tiene que haber prestado un tiempo mínimo de servicios previos, pero se exige un plazo de permanencia mínima de seis meses.",
+   "No tiene que haber prestado un tiempo mínimo de servicios previos y no es exigible plazo de permanencia en la misma."
+  ],
+  "correcta": 3,
+  "lila": "DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "1. En virtud de lo establecido en el artículo 90 de la Ley 29/2014, de 28 de noviembre, la mujer guardia civil víctima de violencia sobre la mujer tendrá derecho a solicitar la situación de excedencia sin tener que haber prestado un tiempo mínimo de servicios previos y sin que sea exigible plazo de permanencia en la misma.",
+  "exp": "Sin servicios previos ni plazo de permanencia.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "369-0",
+  "pz": "g-11",
+  "id": "26-686"
+ },
+ {
+  "lote": "e13",
+  "i": 29,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOPRIMERO. Medidas en relación con el desempeño de determinadas funciones profesionales",
+    "k": 377
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Quienes tengan impuesta una pena consistente en la privación del derecho a residir en determinados lugares o acudir a ellos, no podrán solicitar ni obtener destino en aquellas unidades que tengan su residencia oficial en las localidades afectadas.",
+   "En caso de ser condenados por sentencia firme por algún delito de violencia sobre la mujer, se evitará que desarrollen actividades que impliquen contacto habitual con menores, salvo en tareas relacionadas con los planes para promover la convivencia y mejora de la seguridad escolar.",
+   "No se permitirá el acceso a cursos de perfeccionamiento relacionados con el ámbito de policía judicial a los guardias civiles a los que se atribuya la presunta comisión de un delito de violencia sobre la mujer, mientras se hallen incursos en el procedimiento penal.",
+   "Cualquier situación susceptible de constituir actos de violencia sobre la mujer cuyo autor pueda ser un guardia civil, conllevará la retirada inmediata y con carácter cautelar de sus armas oficiales y particulares, con arreglo a los procedimientos previstos ante conductas anómalos que afecten a los guardias civiles."
+  ],
+  "correcta": 1,
+  "lila": "VIGESIMOPRIMERO. Medidas en relación con el desempeño de determinadas funciones profesionales · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "En caso de que resulten condenados por sentencia firme por algún delito de violencia sobre la mujer, se evitará que desarrollen actividades que impliquen contacto habitual con menores y en especial las tareas que se incluyen en planes para promover la convivencia y mejora de la seguridad escolar, las orientadas a agrupaciones de víctimas u otras de semejante naturaleza.",
+  "exp": "Se evitan en especial las tareas de convivencia y seguridad escolar; no son una excepción.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "377-1",
+  "pz": "g-18",
+  "id": "26-687"
+ },
+ {
+  "lote": "e13",
+  "i": 30,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "PRIMERO. Objetivos",
+    "k": 357
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. En el marco del cumplimiento de los objetivos generales, ¿cuál de los siguientes NO se enuncia como un objetivo específico del protocolo?:",
+  "opciones": [
+   "Facilitar la protección, intervención, asistencia, acompañamiento y recuperación de las guardias civiles que han sufrido esta violencia.",
+   "Garantizar la seguridad e integridad de las guardias civiles víctimas de este tipo de violencia, su dignidad, intimidad y privacidad.",
+   "Desarrollar programas y actividades de atención especializada para los guardias civiles que cometan actos de violencia sobre la mujer, con la meta de que puedan recobrar su desempeño profesional habitual.",
+   "Evitar la revictimización y estigmatización del personal afectado por estas situaciones, para ofrecer respuestas que no agraven sus daños o secuelas."
+  ],
+  "correcta": 0,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "1. El protocolo constituye un instrumento para expresar la voluntad de actuar con el propósito de hacer frente a las situaciones de violencia sobre la mujer que afectan a personal de la Guardia Civil a través de los siguientes objetivos generales: a) Establecer medidas adecuadas dirigidas a prevenir, detectar y erradicar las posibles situaciones de violencia sobre la mujer en la Guardia Civil. b) Fijar reglas de actuación efectivas ante el conocimiento de que se han producido conductas de este tipo que afecten a personal del Cuerpo. c) Facilitar la protección, intervención, asistencia, acompañamiento y recuperación de las guardias civiles que han sufrido esta violencia. 2. En el marco del cumplimiento de los objetivos generales, se enuncian como objetivos específicos del protocolo los siguientes:",
+  "exp": "Es un objetivo general.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "357-0",
+  "pz": "g-1",
+  "id": "26-688"
+ },
+ {
+  "lote": "e13",
+  "i": 31,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 358
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Ámbito de aplicación subjetivo. Respecto al presente protocolo, señale la opción INCORRECTA:",
+  "opciones": [
+   "Incluirá medidas a aplicar a los guardias civiles ante la presunta atribución o comisión de conductas violentas, así como en los supuestos en que sean objeto de medidas cautelares, penas o administrativas a raíz de ellas.",
+   "Será de aplicación en las Situaciones en que una guardia civil sea víctima de violencia, de cualquier naturaleza, derivada de manifestaciones de discriminación, desigualdad y dominio de hombres sobre mujeres por el hecho de serlo.",
+   "Las medidas previstas podrán valorarse para ser aplicadas cuando se observe o se tenga noticia de elementos que indiquen la posibilidad de ocurrencia o constituyan una primera manifestación de conductas susceptibles de alcanzar una mayor magnitud o intensidad en el marco de la violencia sobre la mujer.",
+   "Se orientará especialmente a los casos de violencia de género y a las conductas que puedan quebrantar su libertad e indemnidad sexual."
+  ],
+  "correcta": 0,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "2. De igual forma, incluirá medidas a aplicar a los guardias civiles ante la presunta atribución o comisión de conductas violentas de esta índole, así como en los supuestos en que sean objeto de medidas cautelares, penas o sanciones a raíz de ellas.",
+  "exp": "El texto habla de medidas cautelares, penas o sanciones.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "358-2",
+  "pz": "g-1",
+  "id": "26-689"
+ },
+ {
+  "lote": "e13",
+  "i": 32,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "QUINTO. Garantías",
+    "k": 361
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Bajo la guía de los principios rectores, las actuaciones que se lleven a cabo bajo el marco del protocolo asegurarán una serie de condiciones. Señale la condición INCORRECTA:",
+  "opciones": [
+   "Asistencia integral y especializada a las víctimas.",
+   "Sustitución de las medidas que puedan adoptarse al amparo de otros instrumentos corporativos orientados a combatir conductas de naturaleza violenta.",
+   "Disponibilidad y acceso a mecanismos de prevención, protección, recuperación y actuación.",
+   "Salvaguarda de la seguridad, salud e indemnidad de todas las personas."
+  ],
+  "correcta": 1,
+  "lila": "QUINTO. Garantías · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "i) Coherencia con las medidas que puedan adoptarse al amparo de otros instrumentos corporativos orientados a combatir conductas de naturaleza violenta.",
+  "exp": "Se garantiza la coherencia, no la sustitución.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "361-9",
+  "pz": "g-5",
+  "id": "26-690"
+ },
+ {
+  "lote": "e13",
+  "i": 33,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEXTO. Definiciones",
+    "k": 362
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. A efectos del protocolo, ¿qué se entenderá por la violencia ejercida contra los descendientes, ascendientes o personas vinculadas afectivamente a la mujer, con el propósito de producir en ella sometimiento?:",
+  "opciones": [
+   "Violencia secundaria.",
+   "Violencia psicológica.",
+   "Violencia económica.",
+   "Violencia vicaria."
+  ],
+  "correcta": 3,
+  "lila": "SEXTO. Definiciones · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "g) Violencia instrumental o vicaria: la ejercida contra los descendientes, ascendientes o personas vinculadas afectivamente a la mujer, con el propósito de producir en ella sufrimiento, culpabilidad, temor, sometimiento o coacción.",
+  "exp": "Violencia instrumental o vicaria.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "362-7",
+  "pz": "g-6",
+  "id": "26-691"
+ },
+ {
+  "lote": "e13",
+  "i": 34,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SÉPTIMO. Medidas preventivas",
+    "k": 363
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SÉPTIMO. Medidas preventivas",
+    "k": 363
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Para el cumplimiento de los objetivos generales y específicos del protocolo, ¿a qué orden de actuación corresponde la intervención en el entorno profesional de la víctima y del autor para asegurar la gestión confidencial y frenar el eventual agravamiento de la situación?:",
+  "opciones": [
+   "Prevención cuaternaria.",
+   "Prevención primaria.",
+   "Prevención terciaria.",
+   "Prevención secundaria."
+  ],
+  "correcta": 3,
+  "lila": "SÉPTIMO. Medidas preventivas · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "SÉPTIMO. Medidas preventivas. b) Prevención secundaria, cuya meta es afrontar las situaciones de violencia que puedan estar produciéndose y atenuar su extensión, progresión e impacto:<br>SÉPTIMO. Medidas preventivas. - Intervención en el entorno profesional de la víctima y del autor para asegurar la gestión confidencial y frenar el eventual agravamiento de la situación, de forma que no genere nuevos perjuicios ni menoscabe la imagen de la Guardia Civil.",
+  "exp": "Prevención secundaria.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "363-6",
+  "pz": "g-6",
+  "id": "26-692"
+ },
+ {
+  "lote": "e13",
+  "i": 35,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer",
+    "k": 364
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. A los efectos del presente protocolo, ¿cómo podrán las guardias civiles acreditar ser víctimas de situaciones de violencia de género?:",
+  "opciones": [
+   "A través de cualquier resolución judicial que acuerde una medida cautelar a su favor.",
+   "A través de cualquier medida de protección adoptada.",
+   "Mediante sentencia condenatoria por delitos de violencia de género o sexual.",
+   "Con un informe del Ministerio Fiscal que indique la existencia de sospechas de que es víctima de violencia de género."
+  ],
+  "correcta": 0,
+  "lila": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "1. A los efectos del presente protocolo, las guardias civiles podrán acreditar ser víctimas de situaciones de violencia de género mediante sentencia condenatoria por delitos de esta naturaleza, a través de una orden de protección, de cualquier otra resolución judicial que acuerde una medida cautelar a su favor o, excepcionalmente, hasta tanto se dicte la misma, con un informe del Ministerio Fiscal que indique la existencia de indicios de que es víctima de violencia de género.",
+  "exp": "Cualquier resolución judicial que acuerde una medida cautelar a su favor.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "364-0",
+  "pz": "g-6",
+  "id": "26-693"
+ },
+ {
+  "lote": "e13",
+  "i": 36,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DUODÉCIMO. Derechos de movilidad",
+    "k": 368
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Derecho de movilidad. Se podrán asignar destinos y puestos de trabajo sin publicación previa de la vacante correspondiente, mediante el procedimiento de asignación extraordinaria, a quienes tengan la consideración de víctimas de violencia sobre la mujer. En relación a la citada asignación, señale la opción CORRECTA:",
+  "opciones": [
+   "La asignación de estos destinos no será publicada, siendo notificada directamente al personal interesado.",
+   "Todas las opciones son correctas.",
+   "Estos destinos tendrán el carácter de forzoso.",
+   "Si existe cambio del término municipal de residencia oficial, se percibirán los gastos por traslado que correspondan con arreglo a la normativa reguladora de indemnizaciones por razón de servicio."
+  ],
+  "correcta": 1,
+  "lila": "DUODÉCIMO. Derechos de movilidad · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "Estos destinos tendrán el carácter de forzoso, y su asignación no será publicada, siendo notificada directamente al personal interesado. Si existe cambio del término municipal de residencia oficial, se percibirán los gastos por traslado que correspondan con arreglo a la normativa reguladora de indemnizaciones por razón de servicio.",
+  "exp": "Las tres afirmaciones son literales.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "368-6",
+  "pz": "g-11",
+  "id": "26-694"
+ },
+ {
+  "lote": "e13",
+  "i": 37,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMOQUINTO. Derechos en materia de vacaciones y permisos",
+    "k": 371
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Derechos en materia de vacaciones y permisos. Señale la opción INCORRECTA:",
+  "opciones": [
+   "La situación de excedencia por razón de violencia de género computará como tiempo de servicio efectivo para calcular el crédito de vacaciones anuales y el número de días de permiso por asuntos particulares al que se tiene derecho.",
+   "Las faltas de asistencia, totales o parciales, de las mujeres guardias civiles víctima de violencia de género, tendrán la consideración de justificadas por el tiempo y en las condiciones en que así lo determinen los servicios sociales de atención o de salud, según proceda.",
+   "La reducción de jornada por razón de violencia de género sobre la mujer guardia civil es acumulable con la de guarda legal y con los otros permisos a los que se tenga derecho.",
+   "Las solicitudes para acogerse a las medidas en materia de vacaciones y permisos se presentarán por las afectadas mediante el cauce reglamentario."
+  ],
+  "correcta": 3,
+  "lila": "DECIMOQUINTO. Derechos en materia de vacaciones y permisos · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "3. Las solicitudes para acogerse a estas medidas se presentarán por las afectadas directamente al jefe de unidad para su tramitación. Deberá quedar asegurado que se gestionan con confidencialidad y restringiendo su acceso a quienes resulte estrictamente necesario para su resolución por el jefe de Comandancia o unidad similar, quien establecerá y dará a conocer en su ámbito de responsabilidad los procedimientos específicos a utilizar en estos supuestos.",
+  "exp": "Se presentan directamente al jefe de unidad.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "371-4",
+  "pz": "g-11",
+  "id": "26-695"
+ },
+ {
+  "lote": "e13",
+  "i": 38,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOPRIMERO. Medidas en relación con el desempeño de determinadas funciones profesionales",
+    "k": 377
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. A los guardias civiles a los que se atribuya la presunta comisión de un delito de violencia sobre la mujer, mientras se hallen incursos en el procedimiento penal, no se permitirá:",
+  "opciones": [
+   "La intervención en investigaciones judiciales relacionadas con mujeres o niños, salvo que expresamente le sea encomendadas las mismas por la autoridad judicial o el Ministerio Fiscal.",
+   "Todas las opciones son correctas.",
+   "El acceso a cursos de perfeccionamiento relacionados con el ámbito de policía judicial.",
+   "La solicitud de destinos en Unidades de Policía Judicial."
+  ],
+  "correcta": 2,
+  "lila": "VIGESIMOPRIMERO. Medidas en relación con el desempeño de determinadas funciones profesionales · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "2. No se permitirá el acceso a cursos de perfeccionamiento relacionados con el ámbito de policía judicial a los guardias civiles a los que se atribuya la presunta comisión de un delito de violencia sobre la mujer, mientras se hallen incursos en el procedimiento penal.",
+  "exp": "Los cursos de perfeccionamiento de policía judicial.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "377-2",
+  "pz": "g-18",
+  "id": "26-696"
+ },
+ {
+  "lote": "e13",
+  "i": 39,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOQUINTO. Difusión",
+    "k": 381
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Con el objetivo de la difusión del alcance del protocolo, su conocimiento y compromiso con él, se seguirán diferentes vías. Señale la vía INCORRECTA:",
+  "opciones": [
+   "Información.",
+   "Prevención.",
+   "Formación.",
+   "Concienciación."
+  ],
+  "correcta": 1,
+  "lila": "VIGESIMOQUINTO. Difusión · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "3. Con el objetivo de la difusión del alcance del protocolo, su conocimiento y compromiso con él, se seguirán diferentes vías: a) Información: una vez publicado y en vigor se distribuirá a través de los canales habituales de transmisión de la información corporativa y se entregará dentro de los planes de acogida al personal de nuevo ingreso. b) Formación y concienciación: por personal experto en materia de género del Área de Igualdad y Diversidad de la Guardia Civil se promoverá lo necesario para que puedan llevarse a cabo actividades formativas y de concienciación acerca del contenido del protocolo y de la prevención y lucha contra la violencia sobre la mujer, dirigidas tanto al personal que desempeña funciones de mando como al conjunto de los integrantes del Cuerpo.",
+  "exp": "La prevención no es vía de difusión.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "381-2",
+  "pz": "g-25",
+  "id": "26-697"
+ },
+ {
+  "lote": "e13",
+  "i": 40,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "PRIMERO. Objetivos",
+    "k": 357
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "PRIMERO. Objetivos",
+    "k": 357
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. En el marco del cumplimiento de los objetivos generales, ¿cuál de los siguientes se enuncia como un objetivo específico?",
+  "opciones": [
+   "Establecer medidas adecuadas dirigidas a prevenir, detectar y erradicar las posibles Situaciones de violencia sobre la mujer en la Guardia Civil.",
+   "Facilitar la protección, intervención, asistencia, acompañamiento y recuperación de las guardias civiles que han sufrido esta violencia.",
+   "Evitar la revictimización y estigmatización del personal afectado por estas situaciones, para ofrecer respuestas que no agraven sus daños o secuelas.",
+   "Fijar reglas de actuación efectivas ante el conocimiento de que se han producido conductas de este tipo que afecten a personal del Cuerpo."
+  ],
+  "correcta": 2,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "PRIMERO. Objetivos. 2. En el marco del cumplimiento de los objetivos generales, se enuncian como objetivos específicos del protocolo los siguientes:<br>PRIMERO. Objetivos. e) Evitar la revictimización y estigmatización del personal afectado por estas situaciones, para ofrecer respuestas que no agraven sus daños o secuelas.",
+  "exp": "Evitar la revictimización es objetivo específico.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "357-4",
+  "pz": "g-1",
+  "id": "26-698"
+ },
+ {
+  "lote": "e13",
+  "i": 41,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 358
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Ámbito de aplicación subjetivo. Señale la opción INCORRECTA:",
+  "opciones": [
+   "El presente protocolo afectará al personal de la Guardia Civil que, de acuerdo con lo previsto en la Ley de Régimen de Personal de la Guardia Civil, permanezca en alguna de las situaciones establecidas en la misma.",
+   "Las medidas previstas en el protocolo podrán valorarse para ser aplicadas cuando se observe o se tenga noticia de elementos que indiquen la posibilidad de ocurrencia o constituyan una primera manifestación de conductas susceptibles de alcanzar una mayor magnitud o intensidad en el marco de la violencia sobre la mujer.",
+   "El presente protocolo será de aplicación en las situaciones en que una guardia civil sea víctima de violencia, de cualquier naturaleza, derivada de manifestaciones de discriminación, desigualdad y dominio de hombres sobre mujeres por el hecho de serlo.",
+   "El presente protocolo se orientará especialmente a los casos de violencia de género y a las conductas que puedan quebrantar su libertad e indemnidad sexual."
+  ],
+  "correcta": 0,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "4. El protocolo afectará al personal de la Guardia Civil que, de acuerdo con lo previsto en la Ley 29/2014, de 28 de noviembre, de Régimen de Personal de la Guardia Civil, permanezca sujeto al régimen general de derechos y deberes de los miembros del Cuerpo y a la leyes penales y disciplinarias.",
+  "exp": "Afecta a quien permanezca sujeto al régimen general de derechos y deberes.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "358-4",
+  "pz": "g-1",
+  "id": "26-699"
+ },
+ {
+  "lote": "e13",
+  "i": 42,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "CUARTO. Principios rectores y de actuación de la Dirección General de la Guardia Civil en la prevención y lucha contra la violencia sobre la mujer",
+    "k": 360
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. El protocolo está presidido por una serie de principios que servirán de guía en su aplicación y sustentarán las actuaciones que se lleven a cabo. Señale el principio CORRECTO:",
+  "opciones": [
+   "Asegurar que prevalece el interés de la víctima y la eficiencia del servicio, así como que se garantizan plenamente los derechos de todas las personas que resulten afectadas.",
+   "Proceder con la máxima diligencia y celeridad, actuando de forma proactiva, y siempre con la discreción debida, a fin de anticipar, afrontar y erradicar las situaciones de violencia.",
+   "Ofrecer una respuesta integral, heterogénea, transversal y colaborativa, promoviendo la colaboración de todo el personal y unidades que resulten concernidas.",
+   "Promover un entorno libre de violencia sobre la mujer y de firme intolerancia frente a cualquier tipo de maltrato, así como una cultura preventiva y disuasorio."
+  ],
+  "correcta": 1,
+  "lila": "CUARTO. Principios rectores y de actuación de la Dirección General de la Guardia Civil en la prevención y lucha contra la violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "c) Proceder con la máxima diligencia y celeridad, actuando de forma proactiva, y siempre con la discreción debida, a fin de anticipar, afrontar y erradicar las situaciones de violencia y sus efectos sobre el personal del Cuerpo, preservando la intimidad de las personas implicadas y evitando cualquier acto innecesario de publicidad.",
+  "exp": "Es el principio de diligencia y celeridad.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "360-3",
+  "pz": "g-1",
+  "id": "26-700"
+ },
+ {
+  "lote": "e13",
+  "i": 43,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEXTO. Definiciones",
+    "k": 362
+   }
+  ],
+  "pregunta": "protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. A efectos del protocolo, ¿qué se entenderá por violencia instrumental?:",
+  "opciones": [
+   "Conductas que constituyan violencia de género y aquellas otras que quebranten la libertad e indemnidad sexual de la mujer, que se asocien con manifestaciones de discriminación, desigualdad y dominio de hombres sobre mujeres por el hecho de serlo.",
+   "Violencia ejercida contra los descendientes, ascendientes o personas vinculadas afectivamente a la mujer, con el propósito de producir en ella sufrimiento, culpabilidad, temor, sometimiento o coacción.",
+   "Conductas continuadas de hostigamiento, control, limitación de libertad, chantaje o dominación que se realizan sobre la mujer utilizando las nuevas tecnologías y sus posibilidades.",
+   "Privación total o parcial, deliberada e injustificada, a la mujer y a sus descendientes, de los recursos económicos necesarios para su bienestar, así como la discriminación en la disposición de los que se Compartan en el ámbito de convivencia de la pareja."
+  ],
+  "correcta": 1,
+  "lila": "SEXTO. Definiciones · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "g) Violencia instrumental o vicaria: la ejercida contra los descendientes, ascendientes o personas vinculadas afectivamente a la mujer, con el propósito de producir en ella sufrimiento, culpabilidad, temor, sometimiento o coacción.",
+  "exp": "Violencia instrumental o vicaria.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "362-7",
+  "pz": "g-6",
+  "id": "26-701"
+ },
+ {
+  "lote": "e13",
+  "i": 44,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SÉPTIMO. Medidas preventivas",
+    "k": 363
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SÉPTIMO. Medidas preventivas",
+    "k": 363
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Para el cumplimiento de los objetivos generales y específicos del protocolo, ¿a qué orden de actuación corresponde la realización de actividades integradas en el sistema de formación continua, configuradas desde el Área de Igualdad y Diversidad y dirigidas a todos los escalones organizativos, para interiorizar qué actitudes y valores desembocan en comportamientos violentos?:",
+  "opciones": [
+   "Prevención primaria.",
+   "Prevención terciaria.",
+   "Prevención elemental.",
+   "Prevención secundaria."
+  ],
+  "correcta": 0,
+  "lila": "SÉPTIMO. Medidas preventivas · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "SÉPTIMO. Medidas preventivas. a) Prevención primaria, orientada a evitar que ocurran episodios violentos de esta naturaleza, controlando los elementos de riesgo o las circunstancias bajo las que se producen:<br>SÉPTIMO. Medidas preventivas. - Realización de actividades integradas en el sistema de formación continua, configuradas desde el Área de Igualdad y Diversidad y dirigidas a todos los escalones organizativos, para interiorizar qué actitudes y valores desembocan en comportamientos violentos, promover la igualdad efectiva de mujeres y hombres e intensificar la concienciación, sensibilización, información y rechazo de actos violentos o discriminatorios.",
+  "exp": "Prevención primaria.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "363-1",
+  "pz": "g-6",
+  "id": "26-702"
+ },
+ {
+  "lote": "e13",
+  "i": 45,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer",
+    "k": 364
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Será precisa sentencia condenatoria o resolución judicial acordando alguna medida cautelar cuando:",
+  "opciones": [
+   "Sin constituir violencia de género, las guardias civiles sean ofendidas por un delito contra la libertad e indemnidad sexual.",
+   "Sin constituir violencia de género, las guardias civiles no sean ofendidas por un delito contra la libertad e indemnidad sexual.",
+   "Constituyendo violencia de género, las guardias civiles no sean ofendidas por un delito contra la libertad e indemnidad sexual.",
+   "Constituyendo violencia de género, las guardias civiles sean ofendidas por un delito contra la libertad e indemnidad sexual."
+  ],
+  "correcta": 0,
+  "lila": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "2. Será precisa sentencia condenatoria o resolución judicial acordando alguna medida cautelar cuando, sin constituir violencia de género, las guardias civiles sean ofendidas por un delito contra la libertad e indemnidad sexual.",
+  "exp": "Sin violencia de género y con delito contra la libertad e indemnidad sexual.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "364-2",
+  "pz": "g-6",
+  "id": "26-703"
+ },
+ {
+  "lote": "e13",
+  "i": 46,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DUODÉCIMO. Derechos de movilidad",
+    "k": 368
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DUODÉCIMO. Derechos de movilidad",
+    "k": 368
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DUODÉCIMO. Derechos de movilidad",
+    "k": 368
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Respecto a los derechos a la movilidad, señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Podrá valorarse la posibilidad de nombrar una comisión de servicio a las víctimas de violencia sobre la mujer si así lo solicitan, con o sin ocupación de puesto de trabajo y sin derecho a indemnización, cuando en el marco de la protección y asistencia integral existan razones que provisionalmente no aconsejen la asignación de destino.",
+   "Se asignará el destino que en cada caso corresponda a las guardias civiles víctimas de violencia sobre la mujer, para hacer efectivo el derecho de retorno al puesto orgánico de origen, en los plazos y circunstancias recogidos en el procedimiento de movilidad de aplicación para el conjunto de las empleadas públicas así consideradas.",
+   "Se podrán asignar destinos y puestos de trabajo sin publicación previa de la vacante correspondiente, mediante el procedimiento de asignación extraordinaria, a quienes tengan la consideración de víctimas de violencia sobre la mujer."
+  ],
+  "correcta": 0,
+  "lila": "DUODÉCIMO. Derechos de movilidad · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "DUODÉCIMO. Derechos de movilidad. Se podrán asignar destinos y puestos de trabajo sin publicación previa de la vacante correspondiente, mediante el procedimiento de asignación extraordinaria, a quienes tengan la consideración de víctimas de violencia sobre la mujer.<br>DUODÉCIMO. Derechos de movilidad. Asimismo, se asignará el destino que en cada caso corresponda a las guardias civiles víctimas de violencia sobre la mujer, para hacer efectivo el derecho de retorno al puesto orgánico de origen, en los plazos y circunstancias recogidos en el procedimiento de movilidad de aplicación para el conjunto de las empleadas públicas así consideradas.<br>DUODÉCIMO. Derechos de movilidad. 3. Podrá valorarse la posibilidad de nombrar una comisión de servicio a las víctimas de violencia sobre la mujer si así lo solicitan, con o sin ocupación de puesto de trabajo y sin derecho a indemnización, cuando en el marco de la protección y asistencia integral existan razones que provisionalmente no aconsejen la asignación de destino.",
+  "exp": "Las tres son literales.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "368-5",
+  "pz": "g-11",
+  "id": "26-704"
+ },
+ {
+  "lote": "e13",
+  "i": 47,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas",
+    "k": 369
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. La mujer guardia civil víctima de violencia sobre la mujer tendrá derecho a solicitar la situación de excedencia. Cuando las actuaciones judiciales lo exigieran se podrá prorrogar la excedencia por periodos de tres meses, con un máximo de:",
+  "opciones": [
+   "Veinticuatro.",
+   "Nueve.",
+   "Dieciocho.",
+   "Doce."
+  ],
+  "correcta": 2,
+  "lila": "DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "Cuando las actuaciones judiciales lo exigieran se podrá prorrogar por periodos de tres meses, con un máximo de dieciocho, a fin de garantizar la efectividad del derecho de protección de la víctima. Durante los dos primeros meses de esta excedencia se tendrá derecho a percibir las retribuciones íntegras que venía percibiendo.",
+  "exp": "Máximo de dieciocho.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "369-2",
+  "pz": "g-11",
+  "id": "26-705"
+ },
+ {
+  "lote": "e13",
+  "i": 48,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMONOVENO. Retirada del armamento oficial y particular del presunto autor de violencia sobre la mujer",
+    "k": 375
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Cualquier situación susceptible de constituir actos de violencia sobre la mujer cuyo autor pueda ser un guardia civil, conllevará:",
+  "opciones": [
+   "La retirada inmediata y con carácter definitivo de sus armas, salvo las particulares, con arreglo a los procedimientos previstos ante conductas anómalas que afecten a los guardias civiles.",
+   "La retirada inmediata y con carácter cautelar de sus armas, salvo las particulares, con arreglo a los procedimientos previstos ante conductas anómalas que afecten a los guardias civiles.",
+   "La retirada inmediata y con carácter cautelar de sus armas oficiales y particulares, con arreglo a los procedimientos previstos ante conductas anómalas que afecten a los guardias civiles.",
+   "La retirada inmediata y con carácter definitivo de sus armas oficiales y particulares, con arreglo a los procedimientos previstos ante conductas anómalas que afecten a los guardias civiles."
+  ],
+  "correcta": 2,
+  "lila": "DECIMONOVENO. Retirada del armamento oficial y particular del presunto autor de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "1. Cualquier situación susceptible de constituir actos de violencia sobre la mujer cuyo autor pueda ser un guardia civil, conllevará la retirada inmediata y con carácter cautelar de sus armas oficiales y particulares, con arreglo a los procedimientos previstos ante conductas anómalas que afecten a los guardias civiles.",
+  "exp": "Retirada cautelar de armas oficiales y particulares.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "375-0",
+  "pz": "g-18",
+  "id": "26-706"
+ },
+ {
+  "lote": "e13",
+  "i": 49,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "CUARTO. Principios rectores y de actuación de la Dirección General de la Guardia Civil en la prevención y lucha contra la violencia sobre la mujer",
+    "k": 360
+   }
+  ],
+  "pregunta": "protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Principios rectores y de actuación de la Dirección General de la Guardia Civil en la prevención y lucha contra la violencia sobre la mujer. En relación a la forma de proceder, señale la opción CORRECTA:",
+  "opciones": [
+   "Denunciar las coacciones a la intimidad de las personas implicadas.",
+   "Proceder con la máxima diligencia y celeridad.",
+   "Actuar de forma preventiva, y siempre con la discreción debida.",
+   "Evitar cualquier tipo de publicidad."
+  ],
+  "correcta": 1,
+  "lila": "CUARTO. Principios rectores y de actuación de la Dirección General de la Guardia Civil en la prevención y lucha contra la violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "c) Proceder con la máxima diligencia y celeridad, actuando de forma proactiva, y siempre con la discreción debida, a fin de anticipar, afrontar y erradicar las situaciones de violencia y sus efectos sobre el personal del Cuerpo, preservando la intimidad de las personas implicadas y evitando cualquier acto innecesario de publicidad.",
+  "exp": "Máxima diligencia y celeridad.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "360-3",
+  "pz": "g-1",
+  "id": "26-707"
+ },
+ {
+  "lote": "e13",
+  "i": 50,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "QUINTO. Garantías",
+    "k": 361
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Las actuaciones que se lleven a cabo bajo el marco del protocolo asegurarán, señale la opción INCORRECTA:",
+  "opciones": [
+   "La proporcionalidad en la aplicación de las medidas.",
+   "La asistencia integral y especializada a las víctimas.",
+   "El acceso a mecanismos de prevención, protección, denuncia y recuperación.",
+   "La objetividad e imparcialidad en las actuaciones."
+  ],
+  "correcta": 2,
+  "lila": "QUINTO. Garantías · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "h) Disponibilidad y acceso a mecanismos de prevención, protección, recuperación y actuación.",
+  "exp": "Los mecanismos son de prevención, protección, recuperación y actuación; no de denuncia.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "361-8",
+  "pz": "g-5",
+  "id": "26-708"
+ },
+ {
+  "lote": "e13",
+  "i": 51,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "SEXTO. Definiciones",
+    "k": 362
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. A efectos del protocolo, ¿qué se entenderá por las conductas que constituyan violencia de género y aquellas otras que quebranten la libertad e indemnidad sexual de la mujer, que se asocien con manifestaciones de discriminación, desigualdad y dominio de hombres sobre mujeres por el hecho de serlo?:",
+  "opciones": [
+   "Violencia por razón de sexo.",
+   "Violencia vicaria.",
+   "Violencia instrumental.",
+   "Violencia sobre la mujer."
+  ],
+  "correcta": 3,
+  "lila": "SEXTO. Definiciones · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "a) Violencia sobre la mujer: las conductas que constituyan violencia de género y aquellas otras que quebranten la libertad e indemnidad sexual de la mujer, que se asocien con manifestaciones de discriminación, desigualdad y dominio de hombres sobre mujeres por el hecho de serlo.",
+  "exp": "Violencia sobre la mujer.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "362-1",
+  "pz": "g-6",
+  "id": "26-709"
+ },
+ {
+  "lote": "e13",
+  "i": 52,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer",
+    "k": 364
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Señale la opción INCORRECTA. A los efectos del presente protocolo, las guardias civiles podrán acreditar ser víctimas de situaciones de violencia de género:",
+  "opciones": [
+   "Mediante la interposición de una denuncia por violencia de género.",
+   "Mediante el informe de los servicios sociales, de los especializados o de acogida de la Administración Pública competente destinados a atender a las víctimas de violencia de género.",
+   "A través de una orden de protección.",
+   "A través de cualquier resolución judicial que acuerde una medida cautelar a favor de la víctima."
+  ],
+  "correcta": 0,
+  "lila": "OCTAVO. Acreditación de las situaciones de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "1. A los efectos del presente protocolo, las guardias civiles podrán acreditar ser víctimas de situaciones de violencia de género mediante sentencia condenatoria por delitos de esta naturaleza, a través de una orden de protección, de cualquier otra resolución judicial que acuerde una medida cautelar a su favor o, excepcionalmente, hasta tanto se dicte la misma, con un informe del Ministerio Fiscal que indique la existencia de indicios de que es víctima de violencia de género. De igual manera, será válido el informe de los servicios sociales, de los especializados o de acogida de la Administración Pública competente destinados a atender a estas víctimas, así como cualquier otra fórmula que prevea de forma expresa la Ley Orgánica 1/2004, de 28 de diciembre.",
+  "exp": "La mera denuncia no acredita.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "364-0",
+  "pz": "g-6",
+  "id": "26-710"
+ },
+ {
+  "lote": "e13",
+  "i": 53,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "NOVENO. Información, asesoramiento y orientación especializada a las víctimas de violencia sobre la mujer",
+    "k": 365
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Respecto al personal experto para el asesoramiento e información en los casos de violencia sobre la mujer, señale la opción CORRECTA:",
+  "opciones": [
+   "El desempeño de estas funciones justificará las indemnizaciones por razón de servicio que resulten necesarias para su cumplimiento.",
+   "Deberá contar con la formación específica indispensable para su cumplimiento.",
+   "El desempeño de estas funciones de asesoramiento será considerado como tiempo de servicio.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "NOVENO. Información, asesoramiento y orientación especializada a las víctimas de violencia sobre la mujer · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "El personal experto para el asesoramiento e información en los casos de violencia sobre la mujer deberá contar con la formación específica indispensable para su cumplimiento, sin que quien las realice pierda expectativas respecto a otros cursos a los que desee acudir. El desempeño de estas funciones de asesoramiento será considerado como tiempo de servicio y justificará las indemnizaciones por razón de servicio que resulten necesarias para su cumplimiento.",
+  "exp": "Las tres son correctas.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "365-3",
+  "pz": "g-6",
+  "id": "26-711"
+ },
+ {
+  "lote": "e13",
+  "i": 54,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOCUARTO. Información, registro, seguimiento y control",
+    "k": 380
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. En el marco de las medidas de coordinación y seguimiento del Plan de Acción de la Guardia Civil contra la violencia sobre la mujer, ¿por parte de quién se realizará un seguimiento estadístico, penal y disciplinario?:",
+  "opciones": [
+   "Por el Consejo General de Poder Judicial.",
+   "Por el Área de Igualdad y Diversidad.",
+   "Por la Unidad Técnica de Policía Judicial.",
+   "Por los Equipos Mujer-Menor."
+  ],
+  "correcta": 2,
+  "lila": "VIGESIMOCUARTO. Información, registro, seguimiento y control · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "2. Por parte de la Unidad Técnica de Policía Judicial, en el marco de las medidas de coordinación y seguimiento del Plan de Acción de la Guardia Civil contra la violencia sobre la mujer, se realizará un seguimiento estadístico, penal y disciplinario de los casos en los que concurran circunstancias susceptibles de incardinarse en el presente protocolo.",
+  "exp": "La Unidad Técnica de Policía Judicial.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "380-1",
+  "pz": "g-23",
+  "id": "26-712"
+ },
+ {
+  "lote": "e13",
+  "i": 55,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "VIGESIMOQUINTO. Difusión",
+    "k": 381
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. Con el objetivo de la difusión del alcance del protocolo, su conocimiento y compromiso con él, se seguirán diferentes vías. Señale la vía CORRECTA:",
+  "opciones": [
+   "Prevención.",
+   "Denuncia.",
+   "Concienciación.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 2,
+  "lila": "VIGESIMOQUINTO. Difusión · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "3. Con el objetivo de la difusión del alcance del protocolo, su conocimiento y compromiso con él, se seguirán diferentes vías: a) Información: una vez publicado y en vigor se distribuirá a través de los canales habituales de transmisión de la información corporativa y se entregará dentro de los planes de acogida al personal de nuevo ingreso. b) Formación y concienciación: por personal experto en materia de género del Área de Igualdad y Diversidad de la Guardia Civil se promoverá lo necesario para que puedan llevarse a cabo actividades formativas y de concienciación acerca del contenido del protocolo y de la prevención y lucha contra la violencia sobre la mujer, dirigidas tanto al personal que desempeña funciones de mando como al conjunto de los integrantes del Cuerpo.",
+  "exp": "La concienciación.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "381-2",
+  "pz": "g-25",
+  "id": "26-713"
+ },
+ {
+  "lote": "e13",
+  "i": 56,
+  "v": "v13",
+  "t": 26,
+  "refs": [
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas",
+    "k": 369
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas",
+    "k": 369
+   },
+   {
+    "n": "violencia sobre la mujer",
+    "art": "DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas",
+    "k": 369
+   }
+  ],
+  "pregunta": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten a personal de la Guardia Civil. La mujer guardia civil víctima de violencia sobre la mujer tendrá derecho a solicitar la situación de excedencia. En relación a la excedencia, señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Los seis primeros meses les serán computables a efectos de tiempo de servicios, trienios, de determinación de los derechos de Seguridad Social que correspondan, sin reserva del puesto de trabajo.",
+   "La guardia civil en esta situación podrá ascender, durante los cuatro primeros años, siempre que tenga cumplidas las condiciones de ascenso establecidas.",
+   "No se exige haber prestado un tiempo mínimo de servicios previos ni será exigible plazo de permanencia en la misma."
+  ],
+  "correcta": 3,
+  "lila": "DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas · Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "rojo": "DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas. 1. En virtud de lo establecido en el artículo 90 de la Ley 29/2014, de 28 de noviembre, la mujer guardia civil víctima de violencia sobre la mujer tendrá derecho a solicitar la situación de excedencia sin tener que haber prestado un tiempo mínimo de servicios previos y sin que sea exigible plazo de permanencia en la misma.<br>DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas. Los seis primeros meses les serán computables a efectos de tiempo de servicios, trienios, de determinación de los derechos de Seguridad Social que correspondan, y reserva del puesto de trabajo.<br>DECIMOTERCERO. Derechos en el ámbito de las situaciones administrativas. La guardia civil en esta situación podrá ascender, durante los tres primeros años, siempre que tenga cumplidas las condiciones de ascenso establecidas.",
+  "exp": "Se reserva el puesto y se puede ascender durante tres años.",
+  "apartado": "Protocolo de actuación ante situaciones de violencia sobre la mujer que afecten al personal de la Guardia Civil",
+  "par": "369-0",
+  "pz": "g-11",
+  "id": "26-714"
+ }
+]

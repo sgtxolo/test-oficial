@@ -1,0 +1,1907 @@
+[
+ {
+  "lote": "e12",
+  "i": 0,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. A efectos de este Protocolo se entiende por periodo prolongado en el tiempo aquel hostigamiento intenso o extremo, que tenga una duración de:",
+  "opciones": [
+   "Al menos tres meses.",
+   "Al menos nueve meses.",
+   "Al menos un mes.",
+   "Al menos seis meses."
+  ],
+  "correcta": 3,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "A efectos de este Protocolo se entiende por periodo prolongado en el tiempo aquel hostigamiento intenso o extremo que tenga una duración de al menos seis meses. Este plazo ha de ser interpretado de forma flexible, ya que lo importante es la idea de continuidad en la violencia, ordenada a un fin determinado: la destrucción psicológica o moral del trabajador.",
+  "exp": "Al menos seis meses.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "318-1",
+  "pz": "e-3",
+  "id": "26-593"
+ },
+ {
+  "lote": "e12",
+  "i": 1,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "CUARTO. Principios de actuación de la Dirección General de la Guardia Civil en la prevención y pugna contra el acoso laboral",
+    "k": 319
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. Señale la opción INCORRECTA. A través de la aprobación del presente Protocolo, la Dirección General de la Guardia Civil manifiesta formalmente su compromiso de:",
+  "opciones": [
+   "Incoar el procedimiento y sancionar a quien resulte responsable de una conducta de acoso laboral, en los términos legalmente establecidos en la normativa disciplinaria.",
+   "Garantizar la difusión del presente Protocolo, de manera que llegue a los mandos del Cuerpo y que la enseñanza de especialización del personal de la Guardia Civil incorporará contenidos orientados a prevenir y sancionar las situaciones de acoso.",
+   "Investigar de conformidad con lo previsto en este Protocolo cualquier circunstancia que pueda ser constitutiva de acoso laboral, con garantías de objetividad, celeridad y confidencialidad.",
+   "Proteger, apoyar y asesorar a quien quede probado que ha sufrido alguna de estas conductas con el objetivo de facilitar su plena recuperación personal y profesional."
+  ],
+  "correcta": 1,
+  "lila": "CUARTO. Principios de actuación de la Dirección General de la Guardia Civil en la prevención y pugna contra el acoso laboral · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "g) Garantizar la difusión de este Protocolo, de manera que llegue a todo el personal del Cuerpo y que la enseñanza de formación, capacitación y actualización del personal de la Guardia Civil incorporará contenidos orientados a prevenir y enfrentar las situaciones de acoso.",
+  "exp": "El compromiso es que llegue a todo el personal y que la formación, capacitación y actualización incorporen contenidos para prevenir y enfrentar el acoso.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "319-7",
+  "pz": "e-4",
+  "id": "26-594"
+ },
+ {
+  "lote": "e12",
+  "i": 2,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 317
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. El presente Protocolo será de aplicación cuando concurran acumulativamente una serie de requisitos. Señale el requisito INCORRECTO:",
+  "opciones": [
+   "Que los supuestos de acoso laboral estén definidos en la normativa penal o disciplinaria del ámbito de la Guardia Civil.",
+   "Que el hecho acaecido ocurriera durante el servicio o con ocasión del mismo.",
+   "Que resulte implicado únicamente personal del Cuerpo.",
+   "Que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo."
+  ],
+  "correcta": 1,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "1. El presente Protocolo será de aplicación en los supuestos de acoso laboral definidos en la normativa penal o disciplinaria que se presenten en el ámbito de la Guardia Civil, siempre que resulte implicado únicamente personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+  "exp": "No se exige que el hecho ocurra durante el servicio.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "317-0",
+  "pz": "e-pre",
+  "id": "26-595"
+ },
+ {
+  "lote": "e12",
+  "i": 3,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   },
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. Con carácter general, no constituirán acoso laboral las situaciones que deriven del desacuerdo, insatisfacción o disputa acerca de la interpretación o aplicación de las normas que regulan la organización de trabajo. En concreto, no se consideran acoso laboral... señale la opción INCORRECTA:",
+  "opciones": [
+   "Dictar órdenes de imposible cumplimiento con los medios que al guardia civil se Ie asignan.",
+   "Modificaciones sustanciales de condiciones de trabajo sin causa y sin seguir el procedimiento establecido.",
+   "Presiones o exigencias para aumentar la jornada o realizar determinados servicios o misiones.",
+   "Conductas despóticas dirigidas indiscriminadamente a varios miembros de la Guardia Civil."
+  ],
+  "correcta": 0,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "TERCERO. Ámbito de aplicación objetivo. Definiciones. 2. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos que podrían ser constitutivos de acoso laboral: dejar al miembro de la Guardia Civil de forma continuada sin ocupación efectiva o incomunicado, sin causa alguna que lo justifique; dictar órdenes de imposible cumplimiento con los medios que al guardia civil se le asignan; ocupación en tareas inútiles o que no tienen valor productivo; acciones de represalia contra quienes han planteado quejas, denuncias o demandas frente a la organización o contra quienes han colaborado con los reclamantes; insultar o menospreciar repetidamente a un miembro de la Guardia Civil, reprenderlo reiteradamente delante de otras personas o difundir rumores falsos sobre su trabajo o vida privada.<br>TERCERO. Ámbito de aplicación objetivo. Definiciones. 4. Con carácter general, no constituirán acoso laboral las situaciones que deriven del desacuerdo, insatisfacción o disputa acerca de la interpretación o aplicación de las normas que regulan la organización de trabajo. En concreto, no se consideran acoso laboral las conductas siguientes, sin perjuicio de que pudieran llegar a ser constitutivas de otros incumplimientos o infracciones: modificaciones sustanciales de condiciones de trabajo sin causa y sin seguir el procedimiento establecido; presiones o exigencias para aumentar la jornada o realizar determinados servicios o misiones; conductas despóticas dirigidas indiscriminadamente a varios miembros de la Guardia Civil; ofensas puntuales y sucesivas dirigidas por varios sujetos sin coordinación entre ellos; amonestaciones sin descalificar por no realizar bien el trabajo; llamadas de atención o premura exigida en el cumplimiento de la labor encomendada; tensiones derivadas de las relaciones de trabajo; conflictos personales y por funciones representativas.",
+  "exp": "Las órdenes de imposible cumplimiento son un ejemplo de acoso; las otras se excluyen.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "318-3",
+  "pz": "e-3",
+  "id": "26-596"
+ },
+ {
+  "lote": "e12",
+  "i": 4,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO",
+    "k": 326
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. Cuando el Jefe de Comandancia reciba las comunicaciones sobre una presunta situación de acoso laboral, ¿con qué plazo contará para complementar la comunicación con un primer análisis de los datos objetivos previamente conocidos sobre el caso y que podrá incluir además una estimación previa acerca de si acontecen o no las condiciones exigidas para la tramitación de lo previsto en el Protocolo?:",
+  "opciones": [
+   "Con un plazo máximo de diez días.",
+   "Con un plazo máximo de sesenta días.",
+   "Con un plazo máximo de quince días.",
+   "Con un plazo máximo de treinta días."
+  ],
+  "correcta": 0,
+  "lila": "SEXTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "No obstante, sin perjuicio de la comunicación inmediata a la Jefatura de la Zona, el Jefe de Comandancia contará con un plazo máximo de diez días para complementar la comunicación con un primer análisis de los datos objetivos previamente conocidos sobre el caso y que podrá incluir además una estimación previa acerca de si acontecen o no las condiciones exigidas para la tramitación de lo previsto en el Protocolo.",
+  "exp": "Plazo máximo de diez días.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "326-1",
+  "pz": "e-5c",
+  "id": "26-597"
+ },
+ {
+  "lote": "e12",
+  "i": 5,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 317
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. El presente Protocolo será de aplicación en los supuestos de acoso laboral definidos en la normativa penal o disciplinaria que se presenten en el ámbito de la Guardia Civil, siempre que resulte implicado:",
+  "opciones": [
+   "Únicamente personal del Cuerpo y que la víctima y persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+   "Únicamente personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+   "Todas las opciones son incorrectas.",
+   "Únicamente personal del Cuerpo y que la víctima esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo."
+  ],
+  "correcta": 1,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "1. El presente Protocolo será de aplicación en los supuestos de acoso laboral definidos en la normativa penal o disciplinaria que se presenten en el ámbito de la Guardia Civil, siempre que resulte implicado únicamente personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+  "exp": "La sujeción al régimen se exige a la persona agresora, no a la víctima.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "317-0",
+  "pz": "e-pre",
+  "id": "26-598"
+ },
+ {
+  "lote": "e12",
+  "i": 6,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "QUINTO. Medidas preventivas",
+    "k": 320
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. Respecto a las medidas preventivas, en la medida de lo posible, ¿qué se considerará esencial promover en la Guardia Civil?:",
+  "opciones": [
+   "Prácticas saludables frente a los riesgos psicosociales en el lugar de trabajo, siendo parte de dicha prevención el abordaje de lo relacionado con el acoso laboral.",
+   "Acciones formativas a nivel compañía frente a los riesgos psicosociales, siendo parte de dicha prevención el abordaje de lo relacionado con el acoso laboral.",
+   "Acciones formativas a nivel puesto frente a los riesgos psicosociales, siendo parte de dicha prevención el abordaje de lo relacionado con el acoso laboral.",
+   "Acciones formativas a nivel comandancia frente a los riesgos psicosociales, siendo parte de dicha prevención el abordaje de lo relacionado con el acoso laboral."
+  ],
+  "correcta": 0,
+  "lila": "QUINTO. Medidas preventivas · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "En la Guardia Civil se considera esencial promover, en la medida de lo posible, prácticas saludables frente a los riesgos psicosociales en el lugar de trabajo, siendo parte de dicha prevención el abordaje de lo relacionado con el acoso laboral.",
+  "exp": "Prácticas saludables frente a los riesgos psicosociales en el lugar de trabajo.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "320-0",
+  "pz": "e-5",
+  "id": "26-599"
+ },
+ {
+  "lote": "e12",
+  "i": 7,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   },
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia Civil. A modo de ejemplo y de manera no exhaustiva, ¿cuál de las siguientes NO se considerará comportamiento que podrían ser constitutivos de acoso sexual?:",
+  "opciones": [
+   "Invitaciones impúdicas o comprometedoras.",
+   "Desprecio o aislamiento de quien no se comporte conforme a los roles socialmente asignados a su sexo.",
+   "Demandas de favores sexuales o agresiones físicas.",
+   "Observación clandestina de personas en lugares reservados, como sería el caso de los servicios."
+  ],
+  "correcta": 1,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos constitutivos de acoso por razón de sexo: comentarios despectivos acerca de las mujeres o de los valores considerados femeninos, y, en general, comentarios sexistas sobre mujeres u hombres basados en prejuicios de género; demérito de la valía profesional por el hecho del embarazo, la maternidad o la paternidad; conductas hostiles hacia quienes ejerciten derechos de conciliación de la vida personal, familiar y profesional; o minusvaloración, desprecio o aislamiento de quien no se comporte conforme a los roles socialmente asignados a su sexo.<br>TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos que podrían ser constitutivos de acoso sexual: un contacto físico innecesario o indeseado, incluidos los rozamientos o palmaditas, observaciones sugerentes y desagradables, chistes o comentarios sobre la apariencia o aspecto, y abusos verbales deliberados; invitaciones impúdicas o comprometedoras; uso de imágenes o pósteres pornográficos en los lugares de trabajo; gestos obscenos; observación clandestina de personas en lugares reservados, como sería el caso de los servicios; demandas de favores sexuales o agresiones físicas.",
+  "exp": "El desprecio por no seguir los roles es acoso por razón de sexo, no acoso sexual.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "337-3",
+  "pz": "f-2",
+  "id": "26-600"
+ },
+ {
+  "lote": "e12",
+  "i": 8,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   },
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. ¿Cuál de los siguientes comportamientos NO se considera constitutivo de acoso sexual?:",
+  "opciones": [
+   "Invitaciones impúdicas o comprometedoras.",
+   "Comentarios sexistas sobre mujeres u hombres basados en prejuicios de género.",
+   "Uso de imágenes o pósteres pornográficos en los lugares de trabajo.",
+   "Demandas de favores sexuales o agresiones físicas."
+  ],
+  "correcta": 1,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos constitutivos de acoso por razón de sexo: comentarios despectivos acerca de las mujeres o de los valores considerados femeninos, y, en general, comentarios sexistas sobre mujeres u hombres basados en prejuicios de género; demérito de la valía profesional por el hecho del embarazo, la maternidad o la paternidad; conductas hostiles hacia quienes ejerciten derechos de conciliación de la vida personal, familiar y profesional; o minusvaloración, desprecio o aislamiento de quien no se comporte conforme a los roles socialmente asignados a su sexo.<br>TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos que podrían ser constitutivos de acoso sexual: un contacto físico innecesario o indeseado, incluidos los rozamientos o palmaditas, observaciones sugerentes y desagradables, chistes o comentarios sobre la apariencia o aspecto, y abusos verbales deliberados; invitaciones impúdicas o comprometedoras; uso de imágenes o pósteres pornográficos en los lugares de trabajo; gestos obscenos; observación clandestina de personas en lugares reservados, como sería el caso de los servicios; demandas de favores sexuales o agresiones físicas.",
+  "exp": "Los comentarios sexistas son acoso por razón de sexo.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "337-3",
+  "pz": "f-2",
+  "id": "26-601"
+ },
+ {
+  "lote": "e12",
+  "i": 9,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. De conformidad con el artículo 7.2 de la Ley Orgánica 3/2007, de 22 de marzo, es acoso por razón de sexo (o acoso sexista):",
+  "opciones": [
+   "Cualquier comportamiento, verbal o físico, que tenga el propósito o produzca el efecto de atentar contra la dignidad de una persona, en particular cuando se crea un entorno intimidatorio, degradante u ofensivo.",
+   "Cualquier comportamiento, verbal o físico, de naturaleza sexual que tenga el propósito o produzca el efecto de atentar contra la dignidad de una persona, en particular cuando se crea un entorno intimidatorio, degradante u ofensivo.",
+   "Cualquier comportamiento realizado en función del sexo de una persona, con el propósito o el efecto de atentar contra su dignidad y de crear un entorno intimidatorio, degradante u ofensivo.",
+   "Cualquier comportamiento realizado en función del sexo de una persona, con el propósito o el efecto de atentar contra su dignidad salvo que se cree un entorno intimidatorio, degradante u ofensivo."
+  ],
+  "correcta": 2,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "2. De conformidad con el artículo 7.2 de la Ley Orgánica 3/2007, de 22 de marzo, es acoso por razón de sexo (o acoso sexista) cualquier comportamiento realizado en función del sexo de una persona, con el propósito o el efecto de atentar contra su dignidad y de crear un entorno intimidatorio, degradante u ofensivo.",
+  "exp": "Es la definición de acoso por razón de sexo.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "337-2",
+  "pz": "f-2",
+  "id": "26-602"
+ },
+ {
+  "lote": "e12",
+  "i": 10,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   },
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. A modo de ejemplo y de manera no exhaustiva, NO se consideran comportamientos que podrían ser constitutivos de acoso laboral:",
+  "opciones": [
+   "Reprenderlo reiteradamente delante de otras personas.",
+   "Difundir rumores falsos sobre su trabajo o vida privada.",
+   "Ocupación en tareas inútiles o que no tienen valor productivo.",
+   "Conductas despóticas dirigidas indiscriminadamente a varios miembros de la Guardia Civil."
+  ],
+  "correcta": 3,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "TERCERO. Ámbito de aplicación objetivo. Definiciones. En concreto, no se consideran acoso laboral las conductas siguientes, sin perjuicio de que pudieran llegar a ser constitutivas de otros incumplimientos o infracciones: modificaciones sustanciales de condiciones de trabajo sin causa y sin seguir el procedimiento establecido; presiones o exigencias para aumentar la jornada o realizar determinados servicios o misiones; conductas despóticas dirigidas indiscriminadamente a varios miembros de la Guardia Civil; ofensas puntuales y sucesivas dirigidas por varios sujetos sin coordinación entre ellos; amonestaciones sin descalificar por no realizar bien el trabajo; llamadas de atención o premura exigida en el cumplimiento de la labor encomendada; tensiones derivadas de las relaciones de trabajo; conflictos personales y por funciones representativas.<br>TERCERO. Ámbito de aplicación objetivo. Definiciones. 2. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos que podrían ser constitutivos de acoso laboral: dejar al miembro de la Guardia Civil de forma continuada sin ocupación efectiva o incomunicado, sin causa alguna que lo justifique; dictar órdenes de imposible cumplimiento con los medios que al guardia civil se le asignan; ocupación en tareas inútiles o que no tienen valor productivo; acciones de represalia contra quienes han planteado quejas, denuncias o demandas frente a la organización o contra quienes han colaborado con los reclamantes; insultar o menospreciar repetidamente a un miembro de la Guardia Civil, reprenderlo reiteradamente delante de otras personas o difundir rumores falsos sobre su trabajo o vida privada.",
+  "exp": "Las conductas despóticas indiscriminadas no se consideran acoso laboral.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "318-6",
+  "pz": "e-3",
+  "id": "26-603"
+ },
+ {
+  "lote": "e12",
+  "i": 11,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO",
+    "k": 327
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. Propuesta. A tenor de la valoración efectuada, ¿en qué plazo el responsable de la Zona o unidad similar podrá proponer al Director General la incoación de expediente disciplinario por falta muy grave cuando resulten indicios claros o presunción de comportamientos de acoso laboral?:",
+  "opciones": [
+   "En el plazo máximo de quince días desde la recepción de la comunicación del presunto acoso laboral.",
+   "En el plazo máximo de sesenta días desde la recepción de la comunicación del presunto acoso laboral.",
+   "En el plazo máximo de treinta días desde la recepción de la comunicación del presunto acoso laboral.",
+   "En el plazo máximo de diez días desde la recepción de la comunicación del presunto acoso laboral."
+  ],
+  "correcta": 2,
+  "lila": "SEXTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "1. A tenor de la valoración efectuada, el responsable de la Zona o unidad similar, en el plazo máximo de treinta días desde la recepción de la comunicación del presunto acoso laboral, podrá optar por alguna de las siguientes opciones: a) Proponer al Director General la incoación de expediente disciplinario por falta muy grave cuando resulten indicios claros o presunción de comportamientos de acoso laboral.",
+  "exp": "En treinta días desde la recepción de la comunicación.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "327-0",
+  "pz": "e-6c",
+  "id": "26-604"
+ },
+ {
+  "lote": "e12",
+  "i": 12,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "QUINTO",
+    "k": 340
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. Medidas preventivas. Por parte de la Jefatura de Asistencia al Personal y especialmente por sus Servicios de Psicología, Prevención y Asistencia Sanitaria se realizará, la investigación sobre el alcance y naturaleza del problema, identificación de factores de riesgo y estudios sobre clima laboral y necesidades personales, cuyos resultados permitan retroalimentar y realizar los ajustes necesarios en las acciones iniciadas. ¿En qué escalón de prevención estará encuadrada la citada acción?:",
+  "opciones": [
+   "En la prevención cuaternaria.",
+   "En la prevención primaria.",
+   "En la prevención terciaria.",
+   "En la prevención secundaria."
+  ],
+  "correcta": 1,
+  "lila": "QUINTO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "Por parte de la Jefatura de Asistencia al Personal y especialmente por sus Servicios de Psicología, Prevención y Asistencia Sanitaria se realizarán las siguientes acciones: a) Investigación sobre el alcance y naturaleza del problema, identificación de factores de riesgo y estudios sobre clima laboral y necesidades personales, cuyos resultados permitan retroalimentar y realizar los ajustes necesarios en las acciones iniciadas.",
+  "exp": "La investigación es una acción de prevención primaria.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "340-0",
+  "pz": "f-5a",
+  "id": "26-605"
+ },
+ {
+  "lote": "e12",
+  "i": 13,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "SEXTO. Asesoramiento confidencial",
+    "k": 343
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. Cualquier integrante de la Guardia Civil que entienda que está siendo víctima de acoso sexual o acoso por razón de sexo, o que es objeto de comportamientos que pudieran llegar a constituirlo, podrá comunicar su situación, a través de cualquier vía y sin que sea preciso dejar constancia escrita, al personal experto en materia de género integrado en:",
+  "opciones": [
+   "Los Equipos Mujer-Mejor de las Secciones de Personas de las Unidades Orgánicas de Policía Judicial.",
+   "El Área de Derechos Humanos, Igualdad y Diversidad de la Guardia Civil.",
+   "Los Equipos Centrales de Protección a la Mujer, de la Jefatura de Policía Judicial.",
+   "El Área de Mujeres, Igualdad y Diversidad de la Guardia Civil."
+  ],
+  "correcta": 1,
+  "lila": "SEXTO. Asesoramiento confidencial · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "1. Al estar las conductas objeto del Protocolo vinculadas al ámbito de la condición o naturaleza sexual, y sin que suponga merma en las actuaciones formales que puedan seguirse, cualquier integrante de la Guardia Civil que entienda que está siendo víctima de acoso sexual o acoso por razón de sexo, o que es objeto de comportamientos que pudieran llegar a constituirlo, podrá comunicar su situación, a través de cualquier vía y sin que sea preciso dejar constancia escrita, al personal experto en materia de género integrado en el Área de Derechos Humanos, Igualdad y Diversidad de la Guardia Civil o en los órganos territoriales que, en su caso, pudieran constituirse para realizar funciones con los mismos fines que esta Área, que proporcionará el asesoramiento y apoyo confidencial que resulte necesario.",
+  "exp": "Al Área de Derechos Humanos, Igualdad y Diversidad.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "343-0",
+  "pz": "f-6",
+  "id": "26-606"
+ },
+ {
+  "lote": "e12",
+  "i": 14,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   },
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. A modo de ejemplo y de manera no exhaustiva, ¿cuál de las siguientes NO se considerarán comportamientos que podrían ser constitutivos de acoso por razón de sexo?:",
+  "opciones": [
+   "Invitaciones impúdicas o comprometedoras.",
+   "Comentarios sexistas sobre mujeres u hombres basados en prejuicios de género.",
+   "Demérito de la valía profesional por el hecho del embarazo, la maternidad o la paternidad.",
+   "Comentarios despectivos acerca de las mujeres o de los valores considerados femeninos."
+  ],
+  "correcta": 0,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos constitutivos de acoso por razón de sexo: comentarios despectivos acerca de las mujeres o de los valores considerados femeninos, y, en general, comentarios sexistas sobre mujeres u hombres basados en prejuicios de género; demérito de la valía profesional por el hecho del embarazo, la maternidad o la paternidad; conductas hostiles hacia quienes ejerciten derechos de conciliación de la vida personal, familiar y profesional; o minusvaloración, desprecio o aislamiento de quien no se comporte conforme a los roles socialmente asignados a su sexo.<br>TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos que podrían ser constitutivos de acoso sexual: un contacto físico innecesario o indeseado, incluidos los rozamientos o palmaditas, observaciones sugerentes y desagradables, chistes o comentarios sobre la apariencia o aspecto, y abusos verbales deliberados; invitaciones impúdicas o comprometedoras; uso de imágenes o pósteres pornográficos en los lugares de trabajo; gestos obscenos; observación clandestina de personas en lugares reservados, como sería el caso de los servicios; demandas de favores sexuales o agresiones físicas.",
+  "exp": "Las invitaciones impúdicas son acoso sexual.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "337-3",
+  "pz": "f-2",
+  "id": "26-607"
+ },
+ {
+  "lote": "e12",
+  "i": 15,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "SEXTO. Asesoramiento confidencial",
+    "k": 343
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. Respecto al asesoramiento confidencial, señale la opción INCORRECTA:",
+  "opciones": [
+   "La presunta víctima podrá alegar causas justificadas de recusación de quien le asesore.",
+   "El desempeño de funciones de asesoramiento por el personal integrante del Área de Mujeres e Igualdad y de los órganos que, en su caso, pudieran constituirse con los mismos fines, no será considerado como tiempo de servicio.",
+   "Quien asuma las funciones de asesoramiento deberá recibir la formación específica indispensable para su cumplimiento, sin que quien las realice pierda expectativas respecto a otros cursos a los que desee acudir.",
+   "Se facilitarán y darán a conocer los canales que aseguren la efectividad de las comunicaciones entre el personal del Cuerpo y de quienes tengan atribuidas las responsabilidades de asesoramiento."
+  ],
+  "correcta": 1,
+  "lila": "SEXTO. Asesoramiento confidencial · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "El desempeño de estas funciones de asesoramiento por el personal integrante del Área de Mujeres e Igualdad (17) y de los órganos que, en su caso, pudieran constituirse con los mismos fines, será considerado como tiempo de servicio y justificará las indemnizaciones por razón de servicio que resulten necesarias para su cumplimiento.",
+  "exp": "Ese desempeño sí se considera tiempo de servicio.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "343-7",
+  "pz": "f-6",
+  "id": "26-608"
+ },
+ {
+  "lote": "e12",
+  "i": 16,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "OCTAVO. Información, registro, seguimiento y control",
+    "k": 350
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. En el caso en los que se produzca un elevado número de casos coincidentes en el tiempo en una misma unidad, el Director General encomendará la realización de un estudio a los titulares de la Dirección Adjunta Operativa, del Mando de Personal, del Mando de Apoyo o del Gabinete Técnico en razón de la unidad objeto de análisis, quienes designarán a su responsable, que ostentará mayor empleo que el titular de la unidad analizada. ¿Cuál de los siguientes NO participará en su confección?:",
+  "opciones": [
+   "Personal especializado del Servicio de Asistencia Sanitaria.",
+   "Personal especializado del Servicio de Personal.",
+   "Personal especializado del Servicio de Prevención.",
+   "Personal especializado del Servicio de Psicología."
+  ],
+  "correcta": 1,
+  "lila": "OCTAVO. Información, registro, seguimiento y control · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "El Director General encomendará la realización del estudio a los titulares de la Dirección Adjunta Operativa, del Mando de Personal, del Mando de Apoyo o del Gabinete Técnico en razón de la unidad objeto de análisis, quienes designarán a su responsable, que ostentará mayor empleo que el titular de la unidad analizada, debiendo participar en su confección personal especializado del Servicio de Prevención, del Servicio de Asistencia Sanitaria y del Servicio de Psicología.",
+  "exp": "Participan los servicios de Prevención, Asistencia Sanitaria y Psicología.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "350-5",
+  "pz": "f-8",
+  "id": "26-609"
+ },
+ {
+  "lote": "e12",
+  "i": 17,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "QUINTO. Medidas preventivas",
+    "k": 320
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Medidas preventivas. Señale la opción CORRECTA:",
+  "opciones": [
+   "En la Guardia Civil se considera esencial promover, en la medida de lo posible, prácticas saludables frente a los riesgos psicosociales en el lugar de trabajo, siendo parte de dicha prevención el abordaje de lo relacionado Con el acoso laboral.",
+   "Ninguna de las opciones es correcta.",
+   "La prevención de unas conductas inadecuadas e inaceptables como son las conductas de acoso debe plantearse en el contexto de acciones singularizadas y proactivas de prevención, con objeto de identificar los factores que puedan contribuir a crear un entorno de trabajo exento de acoso. Las distintas formas de organizar el trabajo y las relaciones entre las personas pueden favorecer o, por el contrario, evitar, situaciones o conductas e inadecuadas.",
+   "Es prioritario el desarrollo de una cultura constructiva en el lugar de trabajo basada en valores éticos de seguridad, respeto mutuo, tolerancia, igualdad de oportunidades, cooperación y calidad del servicio, partiendo de la premisa de que desde la mejora de la calidad del servicio que la Institución presta a la ciudadanía se contribuye al cuidado de la salud del personal del Cuerpo."
+  ],
+  "correcta": 0,
+  "lila": "QUINTO. Medidas preventivas · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "En la Guardia Civil se considera esencial promover, en la medida de lo posible, prácticas saludables frente a los riesgos psicosociales en el lugar de trabajo, siendo parte de dicha prevención el abordaje de lo relacionado con el acoso laboral. La prevención de unas conductas inadecuadas e inaceptables como son las conductas de acoso debe plantearse en el contexto de una acción general y proactiva de prevención, con objeto de identificar los factores que puedan contribuir a crear un entorno de trabajo exento de acoso. Las distintas formas de organizar el trabajo y las relaciones entre las personas pueden favorecer o, por el contrario, evitar, situaciones o conductas inadecuadas como la que nos ocupa. Para ello, es prioritario el desarrollo de una cultura constructiva en el lugar de trabajo basada en valores éticos de seguridad, respeto mutuo, tolerancia, igualdad de oportunidades, cooperación y calidad del servicio, partiendo de la premisa de que desde el cuidado de la salud del personal del Cuerpo se contribuye a la mejora de la calidad del servicio que la Institución presta a la ciudadanía.",
+  "exp": "Es literal. La prevención es una acción general y proactiva y la mejora de la calidad parte del cuidado de la salud.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "320-0",
+  "pz": "e-5",
+  "id": "26-610"
+ },
+ {
+  "lote": "e12",
+  "i": 18,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "QUINTO",
+    "k": 321
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Por parte de la Jefatura de Asistencia al Personal y especialmente por sus Servicios de Psicología, Prevención y Asistencia Sanitaria, se realizarán acciones de formación continua para mandos intermedios y superiores, consistente en la realización de seminarios, cursos o talleres sobre habilidades directivas con el objetivo de dotarles de estrategias que permitan, señale la opción INCORRECTA:",
+  "opciones": [
+   "Identificar factores que puedan generar reclamaciones por acoso y canalizar adecuadamente las posibles quejas en esa materia.",
+   "Mejorar la calidad del clima organizacional.",
+   "Promover la sensibilización, información y prevención en materia de actos explícitamente hostiles y ofensivos dirigidos contra cualquier componente del Cuerpo en su lugar de trabajo, aunque lo fuera de forma ocasional.",
+   "Fomentar la responsabilidad y la competencia de los mandos a la hora de abordar los conflictos."
+  ],
+  "correcta": 2,
+  "lila": "QUINTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "b) Acciones de formación continua para mandos intermedios y superiores, consistente en la realización de seminarios, cursos o talleres sobre habilidades directivas con el objetivo de dotarles de estrategias que permitan: - Mejorar la calidad del clima organizacional. - Identificar factores que puedan generar reclamaciones por acoso y canalizar adecuadamente las posibles quejas en esa materia. - Fomentar la responsabilidad y la competencia de los mandos a la hora de abordar los conflictos. - Promover la sensibilización, información y prevención en materia de actos explícitamente hostiles y ofensivos dirigidos de manera repetida contra cualquier componente del Cuerpo en su lugar de trabajo.",
+  "exp": "Se refiere a actos dirigidos de manera repetida, no ocasional.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "321-2",
+  "pz": "e-5",
+  "id": "26-611"
+ },
+ {
+  "lote": "e12",
+  "i": 19,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO",
+    "k": 329
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. ¿En cuál de los siguientes casos podrá el Jefe de la Zona o unidad similar, proponer expediente disciplinario al responsable del inicio de las actuaciones?:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Cuando la comunicación se efectuó de forma maliciosa.",
+   "Cuando existía ánimo de perjudicar a la otra parte.",
+   "Cuando se aportaron datos alejados radicalmente de la verdad."
+  ],
+  "correcta": 0,
+  "lila": "SEXTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "En el caso de que tras la valoración de los hechos resulte que la comunicación emitida que supuso el inicio de las actuaciones se efectuó de forma maliciosa, que se aportaron datos alejados radicalmente de la verdad o que existía ánimo de perjudicar a la otra parte, el Jefe de la Zona o unidad similar podrá incoar o, en su caso, proponer expediente disciplinario a quien resulte responsable.",
+  "exp": "Los tres casos permiten proponer expediente.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "329-0",
+  "pz": "e-6d",
+  "id": "26-612"
+ },
+ {
+  "lote": "e12",
+  "i": 20,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "CUARTO. Principios de actuación de la Dirección General de la Guardia Civil en la prevención y pugna contra el acoso laboral",
+    "k": 319
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Entre los compromisos manifestados formalmente en este Protocolo por la Dirección General de la Guardia Civil, se encuentra... Señale la opción INCORRECTA:",
+  "opciones": [
+   "Rechazar y atajar cualquier comportamiento de acoso laboral, Sin atender a quién sea la víctima o la persona acosadora, Con el objetivo de que todos los miembros de la Guardia Civil disfruten de un entorno profesional en el que se respete la dignidad de cada persona.",
+   "Incoar el procedimiento y sancionar a quien resulte responsable de una conducta de acoso laboral, en los términos legalmente establecidos en la legislación penal.",
+   "Promover que todos los miembros del Cuerpo y especialmente quienes ejerzan funciones de mando con personal a su cargo lo hagan mediante relaciones basadas en el respeto mutuo, en la participación, equidad y colaboración recíproca.",
+   "Proteger, apoyar y asesorar a quien quede probado que ha sufrido una conducta de acoso laboral con el objetivo de facilitar su plena recuperación personal y profesional."
+  ],
+  "correcta": 1,
+  "lila": "CUARTO. Principios de actuación de la Dirección General de la Guardia Civil en la prevención y pugna contra el acoso laboral · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "e) Incoar el procedimiento y sancionar a quien resulte responsable de una conducta de acoso laboral, en los términos legalmente establecidos en la normativa disciplinaria.",
+  "exp": "Los términos son los de la normativa disciplinaria, no la legislación penal.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "319-5",
+  "pz": "e-4",
+  "id": "26-613"
+ },
+ {
+  "lote": "e12",
+  "i": 21,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Las situaciones que deriven del desacuerdo, insatisfacción o disputa acerca de la interpretación o aplicación de las normas que regulan la organización de trabajo, ¿constituyen acoso laboral?:",
+  "opciones": [
+   "Con carácter general, sí.",
+   "Si constituyen presiones o exigencias para aumentar la jornada o realizar determinados servicios o misiones, sí.",
+   "Con carácter general, no.",
+   "Si redundan en modificaciones sustanciales de condiciones de trabajo sin causa y sin seguir el procedimiento establecido, sí."
+  ],
+  "correcta": 2,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "4. Con carácter general, no constituirán acoso laboral las situaciones que deriven del desacuerdo, insatisfacción o disputa acerca de la interpretación o aplicación de las normas que regulan la organización de trabajo. En concreto, no se consideran acoso laboral las conductas siguientes, sin perjuicio de que pudieran llegar a ser constitutivas de otros incumplimientos o infracciones: modificaciones sustanciales de condiciones de trabajo sin causa y sin seguir el procedimiento establecido; presiones o exigencias para aumentar la jornada o realizar determinados servicios o misiones; conductas despóticas dirigidas indiscriminadamente a varios miembros de la Guardia Civil; ofensas puntuales y sucesivas dirigidas por varios sujetos sin coordinación entre ellos; amonestaciones sin descalificar por no realizar bien el trabajo; llamadas de atención o premura exigida en el cumplimiento de la labor encomendada; tensiones derivadas de las relaciones de trabajo; conflictos personales y por funciones representativas.",
+  "exp": "Con carácter general no constituyen acoso.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "318-5",
+  "pz": "e-3",
+  "id": "26-614"
+ },
+ {
+  "lote": "e12",
+  "i": 22,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "QUINTO",
+    "k": 321
+   },
+   {
+    "n": "acoso laboral",
+    "art": "QUINTO",
+    "k": 321
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Señale la opción INCORRECTA. Dentro de las medidas de prevención primaria se encuentran las acciones de formación continua para mandos intermedios y superiores, consistente en la realización de seminarios, cursos o talleres sobre habilidades directivas con el objetivo de dotarles de estrategias que permitan:",
+  "opciones": [
+   "Identificar factores que puedan generar reclamaciones por acoso y canalizar adecuadamente las posibles quejas en esa materia.",
+   "Promover la prevención, investigación y sanción en materia de actos explícitamente hostiles y ofensivos dirigidos de manera repetida contra cualquier componente del Cuerpo en su lugar de trabajo.",
+   "Mejorar la calidad del clima organizacional.",
+   "Fomentar la responsabilidad y la competencia de los mandos a la hora de abordar los conflictos."
+  ],
+  "correcta": 1,
+  "lila": "QUINTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "QUINTO. - Promover la sensibilización, información y prevención en materia de actos explícitamente hostiles y ofensivos dirigidos de manera repetida contra cualquier componente del Cuerpo en su lugar de trabajo.<br>QUINTO. b) Acciones de formación continua para mandos intermedios y superiores, consistente en la realización de seminarios, cursos o talleres sobre habilidades directivas con el objetivo de dotarles de estrategias que permitan: - Mejorar la calidad del clima organizacional. - Identificar factores que puedan generar reclamaciones por acoso y canalizar adecuadamente las posibles quejas en esa materia. - Fomentar la responsabilidad y la competencia de los mandos a la hora de abordar los conflictos.",
+  "exp": "El texto habla de sensibilización, información y prevención; no de investigación y sanción.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "321-6",
+  "pz": "e-5",
+  "id": "26-615"
+ },
+ {
+  "lote": "e12",
+  "i": 23,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "OCTAVO. Información, registro, seguimiento y control",
+    "k": 350
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. En relación con la información, registro, seguimiento y control, este Protocolo establece que:",
+  "opciones": [
+   "Por parte del Servicio de Régimen Disciplinario de la Guardia Civil se realizará un seguimiento estadístico, penal y disciplinario de los casos en los que concurran circunstancias susceptibles de incardinarse en el presente Protocolo.",
+   "Trimestralmente, las Jefaturas de Comandancia, Sector, Servicio o unidad similar y superior enviarán un estadillo dirigido al Servicio de Régimen Disciplinario.",
+   "El Servicio de Régimen Disciplinario de la Guardia Civil estandarizará la recogida de la información que, tras su tratamiento, se verá reflejada en un informe estadístico trimestral con destino a la Jefatura de Asistencia al Personal.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 0,
+  "lila": "OCTAVO. Información, registro, seguimiento y control · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "Por parte del Servicio de Régimen Disciplinario de la Guardia Civil se realizará un seguimiento estadístico, penal y disciplinario de los casos en los que concurran circunstancias susceptibles de incardinarse en el presente Protocolo. Semestralmente, las Jefaturas de Comandancia, Sector, Servicio o unidad similar y superior enviarán un estadillo dirigido al Servicio de Régimen Disciplinario, con el mismo formato del establecido en el Anexo IV de la Instrucción 1/2015, de 1 del julio, del Subdirector General de Personal, sobre todas aquellas actuaciones objeto del presente Protocolo, así como todas aquellas actuaciones y comunicaciones que a nivel judicial, tanto de la jurisdicción ordinaria como de la militar, se emprendan en relación con casos de presunto acoso sexual o que se lleven a cabo por conductas y comportamientos que, sin reunir, en principio, todos los requisitos necesarios para ser considerados como tal, sí pudieran tener alguna presunta relación con dichas conductas. Además de la falta disciplinaria muy grave sobre toda actuación que suponga discriminación o acoso por razón de sexo, orientación sexual o cualquier otra condición o circunstancia personal o social, incluirán aquellas otras actuaciones disciplinarias tipificadas como faltas muy graves relacionadas con el trato inhumano, degradante o vejatorio a personal del Cuerpo vinculado con su sexo u orientación sexual. El Servicio de Régimen Disciplinario de la Guardia Civil estandarizará la recogida de la información mencionada anteriormente, que tras su tratamiento, se verá reflejada en un informe estadístico semestral con destino a la Jefatura de Asistencia al Personal.",
+  "exp": "Es literal. El estadillo es semestral y el informe estadístico también.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "350-0",
+  "pz": "f-8",
+  "id": "26-616"
+ },
+ {
+  "lote": "e12",
+  "i": 24,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 336
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. En los casos en los que se halle implicado algún miembro de la Guardia Civil y personal funcionario o laboral incluido en el ámbito de aplicación del Estatuto Básico del Empleado Público o de las Fuerzas Armadas que presten servicio en la Guardia Civil, ¿a quién se remitirá comunicación?:",
+  "opciones": [
+   "Al Jefe de la Comandancia o unidad similar.",
+   "A la Jefatura de Asistencia al Personal.",
+   "Al Director General de la Guardia Civil.",
+   "Al Jefe de la Zona o unidad similar."
+  ],
+  "correcta": 2,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "2. En los casos en los que se halle implicado algún miembro de la Guardia Civil y personal funcionario o laboral incluido en el ámbito de aplicación del Estatuto Básico del Empleado Público o de Fuerzas Armadas que presten servicio en la Guardia Civil, se remitirá comunicación dirigida al Director General de la Guardia Civil, que adoptará, en el ámbito de sus competencias contempladas en la normativa vigente de aplicación, las medidas correspondientes a los hechos puestos de manifiesto.",
+  "exp": "Al Director General de la Guardia Civil.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "336-1",
+  "pz": "f-2",
+  "id": "26-617"
+ },
+ {
+  "lote": "e12",
+  "i": 25,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   },
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Respecto del acoso por razón de sexo y el acoso sexual definidos en el presente Protocolo, señale la opción CORRECTA:",
+  "opciones": [
+   "Un contacto físico indeseado podría considerarse acoso por razón de sexo.",
+   "Un chiste o comentario sobre la apariencia o aspecto podría considerarse acoso sexual.",
+   "El uso de imágenes o pósteres pornográficos en los lugares de trabajo podría considerarse acoso por razón de sexo.",
+   "El demérito de la valía profesional por el hecho de la paternidad podría considerarse acoso sexual."
+  ],
+  "correcta": 1,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos que podrían ser constitutivos de acoso sexual: un contacto físico innecesario o indeseado, incluidos los rozamientos o palmaditas, observaciones sugerentes y desagradables, chistes o comentarios sobre la apariencia o aspecto, y abusos verbales deliberados; invitaciones impúdicas o comprometedoras; uso de imágenes o pósteres pornográficos en los lugares de trabajo; gestos obscenos; observación clandestina de personas en lugares reservados, como sería el caso de los servicios; demandas de favores sexuales o agresiones físicas.<br>TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos constitutivos de acoso por razón de sexo: comentarios despectivos acerca de las mujeres o de los valores considerados femeninos, y, en general, comentarios sexistas sobre mujeres u hombres basados en prejuicios de género; demérito de la valía profesional por el hecho del embarazo, la maternidad o la paternidad; conductas hostiles hacia quienes ejerciten derechos de conciliación de la vida personal, familiar y profesional; o minusvaloración, desprecio o aislamiento de quien no se comporte conforme a los roles socialmente asignados a su sexo.",
+  "exp": "Los chistes sobre la apariencia son acoso sexual.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "337-1",
+  "pz": "f-2",
+  "id": "26-618"
+ },
+ {
+  "lote": "e12",
+  "i": 26,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "SÉPTIMO",
+    "k": 349
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Comunicaciones infundadas o falsas. En el caso de que tras la valoración de los hechos resulte que la comunicación emitida que supuso el inicio de las actuaciones se efectuó de forma maliciosa, que se aportaron datos alejados radicalmente de la verdad o que existía ánimo de perjudicar a la otra parte, ¿quién podrá incoar o, en su caso, proponer expediente disciplinario a quien resulte responsable?:",
+  "opciones": [
+   "El Jefe de la Zona o unidad similar.",
+   "El Jefe de la Comandancia o unidad similar.",
+   "El Mando de Personal y Formación.",
+   "El Jefe de la Jefatura de Personal."
+  ],
+  "correcta": 0,
+  "lila": "SÉPTIMO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "En el caso de que tras la valoración de los hechos resulte que la comunicación emitida que supuso el inicio de las actuaciones se efectuó de forma maliciosa, que se aportaron datos alejados radicalmente de la verdad o que existía ánimo de perjudicar a la otra parte, el Jefe de la Zona o unidad similar podrá incoar o, en su caso, proponer expediente disciplinario a quien resulte responsable.",
+  "exp": "El Jefe de la Zona o unidad similar.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "349-0",
+  "pz": "f-7e",
+  "id": "26-619"
+ },
+ {
+  "lote": "e12",
+  "i": 27,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "PRIMERO. Objetivos",
+    "k": 316
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. Señale cuál de los siguientes corresponde con un objetivo general del presente Protocolo:",
+  "opciones": [
+   "Establecer las medidas adecuadas dirigidas a evitar las posibles situaciones de acoso laboral en la Guardia Civil.",
+   "Disponer de la organización específica y de las medidas necesarias para atender y resolver los casos que se produzcan.",
+   "Fijar las reglas para actuar de forma efectiva ante el conocimiento de que se ha producido una conducta de acoso laboral en el entorno personal de los guardias civiles, garantizando su seguridad jurídica.",
+   "Informar y potenciar a través del Protocolo la difusión del rechazo institucional a todo comportamiento que pueda constituir acoso laboral en el entorno profesional."
+  ],
+  "correcta": 0,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "1. El Protocolo constituye un instrumento para expresar la voluntad de actuar con el propósito de hacer frente al acoso laboral en la Guardia Civil, a través de los siguientes objetivos generales: a) Establecer las medidas adecuadas dirigidas a evitar las posibles situaciones de estos tipos de acoso en la Guardia Civil. b) Fijar las reglas para actuar de forma efectiva ante el conocimiento de que se ha producido una conducta de este tipo en el entorno profesional de los guardias civiles, garantizando su seguridad jurídica. c) Facilitar la protección, asistencia y recuperación de la persona sometida a acoso una vez acreditados los hechos.",
+  "exp": "Evitar las situaciones es objetivo general; atender casos y difundir el rechazo son específicos.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "316-0",
+  "pz": "e-pre",
+  "id": "26-620"
+ },
+ {
+  "lote": "e12",
+  "i": 28,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. ¿Qué pueden conformar los comportamientos constitutivos de acoso laboral, en función de las circunstancias y de su intensidad?:",
+  "opciones": [
+   "Una infracción disciplinaria de abuso de autoridad contemplado en el Código Penal Militar.",
+   "Un delito contra la integridad moral previsto en el Código Penal.",
+   "Todas las opciones son correctas.",
+   "Una infracción disciplinaria grave o muy grave al amparo del Régimen Disciplinario de la Guardia Civil."
+  ],
+  "correcta": 1,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "3. Los comportamientos señalados en el punto anterior, en función de las circunstancias y de su intensidad, pueden conformar una infracción disciplinaria muy grave al amparo del Régimen Disciplinario de la Guardia Civil, y llegar a integrar el delito contra la integridad moral previsto en el artículo 173.1 del Código Penal o el de abuso de autoridad contemplado en el artículo 48 del Código Penal Militar.",
+  "exp": "Pueden llegar a integrar el delito contra la integridad moral; la infracción disciplinaria es muy grave.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "318-4",
+  "pz": "e-3",
+  "id": "26-621"
+ },
+ {
+  "lote": "e12",
+  "i": 29,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   },
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. Señale cuál de las siguientes conductas NO se considera acoso laboral:",
+  "opciones": [
+   "Reprender reiteradamente a un miembro de la Guardia Civil delante de otras personas.",
+   "Ocupar a un Guardia Civil en tareas que no tienen valor productivo.",
+   "Dictar órdenes de imposible cumplimiento con los medios que al guardia civil se le asignan.",
+   "Modificar sustancialmente las condiciones de trabajo de un Guardia Civil sin causa y sin seguir el procedimiento establecido."
+  ],
+  "correcta": 3,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "TERCERO. Ámbito de aplicación objetivo. Definiciones. En concreto, no se consideran acoso laboral las conductas siguientes, sin perjuicio de que pudieran llegar a ser constitutivas de otros incumplimientos o infracciones: modificaciones sustanciales de condiciones de trabajo sin causa y sin seguir el procedimiento establecido; presiones o exigencias para aumentar la jornada o realizar determinados servicios o misiones; conductas despóticas dirigidas indiscriminadamente a varios miembros de la Guardia Civil; ofensas puntuales y sucesivas dirigidas por varios sujetos sin coordinación entre ellos; amonestaciones sin descalificar por no realizar bien el trabajo; llamadas de atención o premura exigida en el cumplimiento de la labor encomendada; tensiones derivadas de las relaciones de trabajo; conflictos personales y por funciones representativas.<br>TERCERO. Ámbito de aplicación objetivo. Definiciones. 2. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos que podrían ser constitutivos de acoso laboral: dejar al miembro de la Guardia Civil de forma continuada sin ocupación efectiva o incomunicado, sin causa alguna que lo justifique; dictar órdenes de imposible cumplimiento con los medios que al guardia civil se le asignan; ocupación en tareas inútiles o que no tienen valor productivo; acciones de represalia contra quienes han planteado quejas, denuncias o demandas frente a la organización o contra quienes han colaborado con los reclamantes; insultar o menospreciar repetidamente a un miembro de la Guardia Civil, reprenderlo reiteradamente delante de otras personas o difundir rumores falsos sobre su trabajo o vida privada.",
+  "exp": "Modificar condiciones sin causa ni procedimiento se excluye del acoso.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "318-6",
+  "pz": "e-3",
+  "id": "26-622"
+ },
+ {
+  "lote": "e12",
+  "i": 30,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "QUINTO. Medidas preventivas",
+    "k": 320
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. Con el fin de llevar a cabo las medidas preventivas, se desarrollarán acciones, ¿en cuántos órdenes de actuación estarán agrupadas estas acciones?:",
+  "opciones": [
+   "Cuatro.",
+   "Cinco.",
+   "Tres.",
+   "Dos."
+  ],
+  "correcta": 2,
+  "lila": "QUINTO. Medidas preventivas · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "Con este fin, se desarrollarán las siguientes acciones, agrupadas en los siguientes tres órdenes de actuación:",
+  "exp": "Tres órdenes de actuación.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "320-3",
+  "pz": "e-5",
+  "id": "26-623"
+ },
+ {
+  "lote": "e12",
+  "i": 31,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO",
+    "k": 325
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. Respecto al inicio de las actuaciones, señale la opción INCORRECTA:",
+  "opciones": [
+   "Quienes intervengan en cualquiera de las actuaciones o tengan conocimiento de ellas se abstendrán de utilizar otros medios o cauces que pudieran poner en peligro la salvaguarda de la integridad e intimidad de la presunta víctima, así como una interferencia injustificada en la activación y adopción de las medidas que correspondan.",
+   "Quienes intervengan en cualquiera de las actuaciones o tengan conocimiento de ellas deberán proceder con la discreción necesaria para proteger la intimidad y dignidad del personal afectado, guardarán estricta reserva y no deberán transmitir ni divulgar información sobre su contenido, para garantizar que se desarrollan con la máxima sensibilidad y respeto a los derechos de todas las partes.",
+   "Las comunicaciones podrán efectuarse sin perjuicio de que se interponga denuncia penal o de las que deban seguirse en caso de que se aprecien indicios claros de delito.",
+   "A efectos del presente Protocolo, podrán ser tenidas en cuenta las comunicaciones de carácter anónimo."
+  ],
+  "correcta": 3,
+  "lila": "SEXTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "A efectos del presente Protocolo, no serán tenidas en cuenta las comunicaciones de carácter anónimo. 2. Las comunicaciones señaladas podrán efectuarse sin perjuicio de que se interponga denuncia penal o de las que deban seguirse en caso de que se aprecien indicios claros de delito. 3. Quienes intervengan en cualquiera de las actuaciones o tengan conocimiento de ellas deberán proceder con la discreción necesaria para proteger la intimidad y dignidad del personal afectado, guardarán estricta reserva y no deberán transmitir ni divulgar información sobre su contenido, para garantizar que se desarrollan con la máxima sensibilidad y respeto a los derechos de todas las partes. Así mismo, se abstendrán de utilizar otros medios o cauces que pudieran poner en peligro la salvaguarda de la integridad e intimidad de la presunta víctima, así como una interferencia injustificada en la activación y adopción de las medidas que correspondan.",
+  "exp": "Las comunicaciones anónimas no se tienen en cuenta.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "325-5",
+  "pz": "e-5c",
+  "id": "26-624"
+ },
+ {
+  "lote": "e12",
+  "i": 32,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "QUINTO",
+    "k": 342
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. Medidas preventivas. ¿En qué tipo de prevención estará encuadrada la atención temprana a las víctimas de acoso y propuesta de medidas en su caso, con el fin de minimizar los efectos perniciosos en su salud física y psíquica susceptibles de requerir tratamiento especializado para su recuperación y el mejor pronóstico sobre el curso de la sintomatología o trastorno?:",
+  "opciones": [
+   "En la prevención elemental.",
+   "En la prevención terciaria.",
+   "En la prevención secundaria.",
+   "En la prevención primaria."
+  ],
+  "correcta": 1,
+  "lila": "QUINTO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "Atención temprana a las víctimas de acoso y propuesta de medidas en su caso, con el fin de minimizar los efectos perniciosos en su salud física y psíquica susceptibles de requerir tratamiento especializado para su recuperación y el mejor pronóstico sobre el curso de la sintomatología o trastorno.",
+  "exp": "La atención temprana es prevención terciaria.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "342-0",
+  "pz": "f-5c",
+  "id": "26-625"
+ },
+ {
+  "lote": "e12",
+  "i": 33,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "OCTAVO. Información, registro, seguimiento y control",
+    "k": 350
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. ¿Con qué periodicidad las Jefaturas de Comandancia, Sector, Servicio o unidad similar y superior enviarán un estadillo dirigido al Servicio de Régimen Disciplinario sobre todas aquellas actuaciones objeto del presente Protocolo?:",
+  "opciones": [
+   "Trimestralmente.",
+   "Semestralmente.",
+   "Mensualmente.",
+   "Anualmente."
+  ],
+  "correcta": 1,
+  "lila": "OCTAVO. Información, registro, seguimiento y control · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "Semestralmente, las Jefaturas de Comandancia, Sector, Servicio o unidad similar y superior enviarán un estadillo dirigido al Servicio de Régimen Disciplinario, con el mismo formato del establecido en el Anexo IV de la Instrucción 1/2015, de 1 del julio, del Subdirector General de Personal, sobre todas aquellas actuaciones objeto del presente Protocolo, así como todas aquellas actuaciones y comunicaciones que a nivel judicial, tanto de la jurisdicción ordinaria como de la militar, se emprendan en relación con casos de presunto acoso sexual o que se lleven a cabo por conductas y comportamientos que, sin reunir, en principio, todos los requisitos necesarios para ser considerados como tal, sí pudieran tener alguna presunta relación con dichas conductas.",
+  "exp": "Semestralmente.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "350-1",
+  "pz": "f-8",
+  "id": "26-626"
+ },
+ {
+  "lote": "e12",
+  "i": 34,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "NOVENO. Difusión",
+    "k": 351
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la guardia civil. Difusión. Señale la opción INCORRECTA. Con el objetivo de la difusión del alcance de este Protocolo, su conocimiento y compromiso con el mismo, se seguirán diferentes vías:",
+  "opciones": [
+   "Concienciación.",
+   "Responsabilidad.",
+   "Formación.",
+   "Información."
+  ],
+  "correcta": 1,
+  "lila": "NOVENO. Difusión · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "Con el objetivo de la difusión del alcance de este Protocolo, su conocimiento y compromiso con el mismo, se seguirán diferentes vías: a) Información: una vez publicado y en vigor se distribuirá a través de los canales habituales de transmisión de la información corporativa y se entregará dentro de los planes de acogida al personal de nuevo ingreso. b) Formación y concienciación: por personal experto en materia de género del Área de Mujeres e Igualdad de la Guardia Civil se promoverá lo necesario para que puedan llevarse a cabo actividades formativas y de concienciación acerca de la prevención y lucha contra el acoso sexual y por razón de sexo, dirigidas tanto al personal que desempeña funciones de mando como al conjunto de los integrantes del Cuerpo.",
+  "exp": "Las vías son información, formación y concienciación.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "351-2",
+  "pz": "f-8",
+  "id": "26-627"
+ },
+ {
+  "lote": "e12",
+  "i": 35,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "CUARTO. Principios de actuación de la Dirección General de la Guardia Civil en la prevención y pugna contra el acoso laboral",
+    "k": 319
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Señale la opción INCORRECTA. A través de la aprobación de este Protocolo, la Dirección General de la Guardia Civil manifiesta formalmente su compromiso de:",
+  "opciones": [
+   "Promover que todos los miembros del Cuerpo y especialmente quienes ejerzan funciones de mando con personal a su cargo lo hagan mediante relaciones basadas en el respeto mutuo, en la participación, equidad y colaboración recíproca, pues la creación de un clima de trabajo positivo, con plena igualdad de oportunidades y ausencia de discriminación, es una responsabilidad compartida y transversal a toda la organización.",
+   "Impulsar una cultura de prevención y erradicación del acoso laboral, a través de acciones formativas e informativas de sensibilización dirigidas a todos los miembros de la Guardia Civil.",
+   "Rechazar y atajar cualquier comportamiento de acoso laboral, teniendo en cuenta principalmente quién sea la víctima o la persona acosadora, con el objetivo de que todos los miembros de la Guardia Civil disfruten de un entorno profesional en el que se respete la dignidad de cada persona.",
+   "Investigar de conformidad con lo previsto en este Protocolo cualquier circunstancia que pueda ser constitutiva de acoso laboral, con garantías de objetividad, celeridad y confidencialidad."
+  ],
+  "correcta": 2,
+  "lila": "CUARTO. Principios de actuación de la Dirección General de la Guardia Civil en la prevención y pugna contra el acoso laboral · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "a) Rechazar y atajar cualquier comportamiento de acoso laboral, sin atender a quién sea la víctima o la persona acosadora, con el objetivo de que todos los miembros de la Guardia Civil disfruten de un entorno profesional en el que se respete la dignidad de cada persona.",
+  "exp": "Se actúa sin atender a quién sea la víctima o la persona acosadora.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "319-1",
+  "pz": "e-4",
+  "id": "26-628"
+ },
+ {
+  "lote": "e12",
+  "i": 36,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO",
+    "k": 328
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Señale la opción INCORRECTA. ¿Cuándo podrá adoptar el Jefe de la Zona o unidad similar, decisiones de naturaleza provisional?:",
+  "opciones": [
+   "Cuando de la valoración efectuada pueda estimarse un posible perjuicio grave para el personal afectado.",
+   "Cuando de la valoración efectuada pueda estimarse un posible perjuicio grave para el desarrollo del procedimiento iniciado.",
+   "Cuando de la valoración efectuada pueda estimarse un posible perjuicio grave para el servicio.",
+   "Cuando de la valoración efectuada pueda estimarse un posible perjuicio grave para la buena imagen de la Institución."
+  ],
+  "correcta": 1,
+  "lila": "SEXTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "1. Sin perjuicio de la medidas cautelares previstas en la regulación disciplinaria, cuando de la valoración efectuada pueda estimarse un posible perjuicio grave para el personal afectado, para el servicio o para la buena imagen de la Institución, el responsable de la Zona o unidad similar podrá adoptar, previa audiencia con los miembros afectados, decisiones de naturaleza provisional, en el ámbito de las de gestión de personal que tenga atribuidas, para procurar algún cambio en la relación profesional que mantengan que impida en lo posible la ocurrencia de hechos que puedan constituir acoso laboral.",
+  "exp": "Los perjuicios previstos son para el personal afectado, el servicio o la imagen.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "328-0",
+  "pz": "e-6d",
+  "id": "26-629"
+ },
+ {
+  "lote": "e12",
+  "i": 37,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. A efectos del Protocolo objeto de la pregunta, constituye acoso laboral la exposición a conductas de violencia psicológica intensa, dirigidas de forma reiterada y prolongada en el tiempo hacia una o más personas, por parte de otra u otras que actúan frente a aquéllas desde una posición de poder no necesariamente jerárquica sino en términos psicológicos, con el propósito o el efecto de crear un entorno hostil o humillante que perturbe la vida profesional de la víctima. A efectos del Protocolo objeto de la pregunta. ¿qué se entiende por periodo prolongado de tiempo?:",
+  "opciones": [
+   "Aquel hostigamiento extremo que tenga una duración de al menos tres meses.",
+   "Aquel hostigamiento intenso que tenga una duración de al menos dos meses.",
+   "Aquel hostigamiento intenso que tenga una duración de al menos seis meses.",
+   "Aquel hostigamiento extremo que tenga una duración de al menos ocho meses."
+  ],
+  "correcta": 2,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "A efectos de este Protocolo se entiende por periodo prolongado en el tiempo aquel hostigamiento intenso o extremo que tenga una duración de al menos seis meses. Este plazo ha de ser interpretado de forma flexible, ya que lo importante es la idea de continuidad en la violencia, ordenada a un fin determinado: la destrucción psicológica o moral del trabajador.",
+  "exp": "Hostigamiento intenso o extremo de al menos seis meses.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "318-1",
+  "pz": "e-3",
+  "id": "26-630"
+ },
+ {
+  "lote": "e12",
+  "i": 38,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO. Reglas de actuación en caso de que las medidas de prevención no hayan sido suficientes",
+    "k": 324
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Eminentemente, ¿qué enfoque tiene el presente Protocolo?:",
+  "opciones": [
+   "Coactivo.",
+   "Preventivo.",
+   "Informativo.",
+   "Sancionador."
+  ],
+  "correcta": 1,
+  "lila": "SEXTO. Reglas de actuación en caso de que las medidas de prevención no hayan sido suficientes · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "El presente Protocolo tiene un enfoque eminentemente preventivo orientado a evitar que se produzcan en el seno de la Guardia Civil este tipo de comportamientos rechazables e intolerables.",
+  "exp": "Eminentemente preventivo.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "324-0",
+  "pz": "e-5c",
+  "id": "26-631"
+ },
+ {
+  "lote": "e12",
+  "i": 39,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 318
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. A efectos del presente Protocolo, constituye acoso laboral la exposición a conductas de violencia psicológica intensa, dirigidas de forma reiterada y prolongada en el tiempo hacia una o más personas, por parte de otra u otras que actúan frente a aquéllas desde una posición de poder no necesariamente jerárquica sino en términos psicológicos, con el propósito o el efecto de crear un entorno hostil o humillante que perturbe la vida profesional de la víctima. A efectos de este Protocolo se entiende por periodo prolongado en el tiempo aquel hostigamiento intenso o extremo que tenga una duración de:",
+  "opciones": [
+   "Al menos seis meses.",
+   "Al menos un año.",
+   "Al menos tres meses.",
+   "Al menos un mes."
+  ],
+  "correcta": 0,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "A efectos de este Protocolo se entiende por periodo prolongado en el tiempo aquel hostigamiento intenso o extremo que tenga una duración de al menos seis meses. Este plazo ha de ser interpretado de forma flexible, ya que lo importante es la idea de continuidad en la violencia, ordenada a un fin determinado: la destrucción psicológica o moral del trabajador.",
+  "exp": "Al menos seis meses.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "318-1",
+  "pz": "e-3",
+  "id": "26-632"
+ },
+ {
+  "lote": "e12",
+  "i": 40,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "SEXTO. Asesoramiento confidencial",
+    "k": 343
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. El desempeño de funciones de asesoramiento por el personal integrante del Área de Mujeres e Igualdad y de los órganos que, en su caso, pudieran constituirse con los mismos fines, será considerado como:",
+  "opciones": [
+   "Tiempo de servicio, pero no dará lugar a indemnizaciones por razón de servicio.",
+   "No será considerado como tiempo de servicio.",
+   "Tiempo de servicio y justificará las indemnizaciones por razón de servicio que resulten necesarias para su cumplimiento.",
+   "No será considerado como tiempo de servicio, salvo que la asistencia sea obligatoria."
+  ],
+  "correcta": 2,
+  "lila": "SEXTO. Asesoramiento confidencial · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "El desempeño de estas funciones de asesoramiento por el personal integrante del Área de Mujeres e Igualdad (17) y de los órganos que, en su caso, pudieran constituirse con los mismos fines, será considerado como tiempo de servicio y justificará las indemnizaciones por razón de servicio que resulten necesarias para su cumplimiento.",
+  "exp": "Tiempo de servicio con las indemnizaciones necesarias.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "343-7",
+  "pz": "f-6",
+  "id": "26-633"
+ },
+ {
+  "lote": "e12",
+  "i": 41,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "QUINTO",
+    "k": 340
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Medidas preventivas. Investigación sobre el alcance y naturaleza del problema, identificación de factores de riesgo y estudios sobre clima laboral y necesidades personales, cuyos resultados permitan retroalimentar y realizar los ajustes necesarios en las acciones iniciadas. Esta acción:",
+  "opciones": [
+   "La realiza la Jefatura de Asistencia al Personal y especialmente por sus Servicios de Psicología, Prevención y Asistencia Sanitaria.",
+   "La realiza la Jefatura de Asistencia al Personal y especialmente por sus Servicios de Psicología, Prevención, Asistencia Sanitaria y Régimen Disciplinario.",
+   "La realiza todo el personal que ejerza Mando como Jefe de Unidad como parte de las medidas organizativas previstas en la normativa del Cuerpo que resulten procedentes en función de las circunstancias concurrentes.",
+   "Forma parte de la prevención secundaria."
+  ],
+  "correcta": 0,
+  "lila": "QUINTO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "Por parte de la Jefatura de Asistencia al Personal y especialmente por sus Servicios de Psicología, Prevención y Asistencia Sanitaria se realizarán las siguientes acciones: a) Investigación sobre el alcance y naturaleza del problema, identificación de factores de riesgo y estudios sobre clima laboral y necesidades personales, cuyos resultados permitan retroalimentar y realizar los ajustes necesarios en las acciones iniciadas.",
+  "exp": "La realiza la Jefatura de Asistencia al Personal con esos tres servicios.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "340-0",
+  "pz": "f-5a",
+  "id": "26-634"
+ },
+ {
+  "lote": "e12",
+  "i": 42,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   },
+   {
+    "n": "acoso sexual",
+    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
+    "k": 337
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, ¿a qué se le puede considerar un comportamiento constitutivo de acoso por razón de sexo?:",
+  "opciones": [
+   "Los chistes o comentarios sobre la apariencia o aspecto.",
+   "El uso de imágenes o pósteres pornográficos en los lugares de trabajo.",
+   "Los comentarios despectivos acerca de las mujeres o de los valores considerados femeninos.",
+   "Los gestos obscenos."
+  ],
+  "correcta": 2,
+  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos constitutivos de acoso por razón de sexo: comentarios despectivos acerca de las mujeres o de los valores considerados femeninos, y, en general, comentarios sexistas sobre mujeres u hombres basados en prejuicios de género; demérito de la valía profesional por el hecho del embarazo, la maternidad o la paternidad; conductas hostiles hacia quienes ejerciten derechos de conciliación de la vida personal, familiar y profesional; o minusvaloración, desprecio o aislamiento de quien no se comporte conforme a los roles socialmente asignados a su sexo.<br>TERCERO. Ámbito de aplicación objetivo. Definiciones. A modo de ejemplo y de manera no exhaustiva, se consideran comportamientos que podrían ser constitutivos de acoso sexual: un contacto físico innecesario o indeseado, incluidos los rozamientos o palmaditas, observaciones sugerentes y desagradables, chistes o comentarios sobre la apariencia o aspecto, y abusos verbales deliberados; invitaciones impúdicas o comprometedoras; uso de imágenes o pósteres pornográficos en los lugares de trabajo; gestos obscenos; observación clandestina de personas en lugares reservados, como sería el caso de los servicios; demandas de favores sexuales o agresiones físicas.",
+  "exp": "Los comentarios despectivos son acoso por razón de sexo.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "337-3",
+  "pz": "f-2",
+  "id": "26-635"
+ },
+ {
+  "lote": "e12",
+  "i": 43,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 336
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. El Protocolo objeto de la pregunta será de aplicación en los supuestos de acoso sexual y por razón de sexo definidos en la normativa penal o disciplinaria que se presenten en el ámbito de la Guardia Civil:",
+  "opciones": [
+   "Siempre que resulte implicado, entre otros, personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+   "Siempre que resulte implicado, entre otros, personal del Cuerpo aunque la persona agresora no esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+   "Siempre que resulte implicado únicamente personal del Cuerpo aunque la persona agresora no esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+   "Siempre que resulte implicado únicamente personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo."
+  ],
+  "correcta": 3,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "1. El presente Protocolo será de aplicación en los supuestos de acoso sexual y por razón de sexo definidos en la normativa penal o disciplinaria que se presenten en el ámbito de la Guardia Civil, siempre que resulte implicado únicamente personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+  "exp": "Únicamente personal del Cuerpo y persona agresora sujeta al régimen.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "336-0",
+  "pz": "f-2",
+  "id": "26-636"
+ },
+ {
+  "lote": "e12",
+  "i": 44,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "QUINTO",
+    "k": 342
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. La atención temprana a las víctimas de acoso y la propuesta de medidas en su caso, con el fin de minimizar los efectos perniciosos en su salud física y psíquica susceptibles de requerir tratamiento especializado para su recuperación y el mejor pronóstico sobre el curso de la sintomatología o trastorno, constituye prevención:",
+  "opciones": [
+   "Primaria.",
+   "Primaria o secundaria.",
+   "Secundaria.",
+   "Terciaria."
+  ],
+  "correcta": 3,
+  "lila": "QUINTO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "Atención temprana a las víctimas de acoso y propuesta de medidas en su caso, con el fin de minimizar los efectos perniciosos en su salud física y psíquica susceptibles de requerir tratamiento especializado para su recuperación y el mejor pronóstico sobre el curso de la sintomatología o trastorno.",
+  "exp": "Prevención terciaria.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "342-0",
+  "pz": "f-5c",
+  "id": "26-637"
+ },
+ {
+  "lote": "e12",
+  "i": 45,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "PRIMERO. Objetivos",
+    "k": 316
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. ¿Cuál de los siguientes NO es uno de los objetivos generales de este Protocolo?:",
+  "opciones": [
+   "Establecer las medidas adecuadas dirigidas a evitar las posibles situaciones de estos tipos de acoso en la Guardia Civil.",
+   "Fijar las reglas para actuar de forma efectiva ante el conocimiento de que se ha producido una conducta de este tipo en el entorno profesional de los guardias civiles, garantizando su seguridad jurídica.",
+   "Informar y potenciar a través del Protocolo la difusión del rechazo institucional a todo comportamiento que pueda constituir acoso laboral en el entorno profesional.",
+   "Facilitar la protección, asistencia y recuperación de la persona sometida a acoso una vez acreditados los hechos."
+  ],
+  "correcta": 2,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "1. El Protocolo constituye un instrumento para expresar la voluntad de actuar con el propósito de hacer frente al acoso laboral en la Guardia Civil, a través de los siguientes objetivos generales: a) Establecer las medidas adecuadas dirigidas a evitar las posibles situaciones de estos tipos de acoso en la Guardia Civil. b) Fijar las reglas para actuar de forma efectiva ante el conocimiento de que se ha producido una conducta de este tipo en el entorno profesional de los guardias civiles, garantizando su seguridad jurídica. c) Facilitar la protección, asistencia y recuperación de la persona sometida a acoso una vez acreditados los hechos. 2. En el marco del cumplimiento de los objetivos generales, se enuncian como objetivos específicos del Protocolo los siguientes: a) Informar y potenciar a través del Protocolo la difusión del rechazo institucional a todo comportamiento que pueda constituir acoso laboral en el entorno profesional.",
+  "exp": "Difundir el rechazo institucional es un objetivo específico.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "316-0",
+  "pz": "e-pre",
+  "id": "26-638"
+ },
+ {
+  "lote": "e12",
+  "i": 46,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO. Reglas de actuación en caso de que las medidas de prevención no hayan sido suficientes",
+    "k": 324
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. ¿Qué enfoque tiene el Protocolo objeto de la pregunta?:",
+  "opciones": [
+   "Disuasivo.",
+   "Preventivo.",
+   "Sancionador.",
+   "Informativo."
+  ],
+  "correcta": 1,
+  "lila": "SEXTO. Reglas de actuación en caso de que las medidas de prevención no hayan sido suficientes · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "El presente Protocolo tiene un enfoque eminentemente preventivo orientado a evitar que se produzcan en el seno de la Guardia Civil este tipo de comportamientos rechazables e intolerables.",
+  "exp": "Preventivo.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "324-0",
+  "pz": "e-5c",
+  "id": "26-639"
+ },
+ {
+  "lote": "e12",
+  "i": 47,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "QUINTO. Medidas preventivas",
+    "k": 320
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Medidas preventivas. Es prioritario el desarrollo de una cultura constructiva en el lugar de trabajo basada, ¿en qué valores? Señale la opción INCORRECTA:",
+  "opciones": [
+   "Tolerancia.",
+   "Cooperación y calidad del servicio.",
+   "Respeto mutuo.",
+   "Igualdad."
+  ],
+  "correcta": 3,
+  "lila": "QUINTO. Medidas preventivas · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "Para ello, es prioritario el desarrollo de una cultura constructiva en el lugar de trabajo basada en valores éticos de seguridad, respeto mutuo, tolerancia, igualdad de oportunidades, cooperación y calidad del servicio, partiendo de la premisa de que desde el cuidado de la salud del personal del Cuerpo se contribuye a la mejora de la calidad del servicio que la Institución presta a la ciudadanía.",
+  "exp": "El valor citado es la igualdad de oportunidades.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "320-2",
+  "pz": "e-5",
+  "id": "26-640"
+ },
+ {
+  "lote": "e12",
+  "i": 48,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO",
+    "k": 325
+   },
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO",
+    "k": 325
+   },
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO",
+    "k": 325
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. En relación con el inicio de las actuaciones, el presente Protocolo establece que:",
+  "opciones": [
+   "Quienes intervengan en cualquiera de las actuaciones o tengan conocimiento de ellas deberán proceder con la discreción necesaria para proteger la intimidad y dignidad del personal afectado.",
+   "Este Protocolo no será de aplicación en el caso de que se interponga denuncia penal.",
+   "En el caso de que se aprecien hechos o circunstancias que puedan suponer grave riesgo para el afectado o para terceros, el oficial psicólogo actuante participará los mismos a la autoridad correspondiente contando con la autorización expresa de la víctima.",
+   "Podrán ser tenidas en cuenta comunicaciones de carácter anónimo."
+  ],
+  "correcta": 0,
+  "lila": "SEXTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "SEXTO. 3. Quienes intervengan en cualquiera de las actuaciones o tengan conocimiento de ellas deberán proceder con la discreción necesaria para proteger la intimidad y dignidad del personal afectado, guardarán estricta reserva y no deberán transmitir ni divulgar información sobre su contenido, para garantizar que se desarrollan con la máxima sensibilidad y respeto a los derechos de todas las partes.<br>SEXTO. No obstante lo dispuesto en el punto primero de este apartado, en el caso de que se aprecien hechos o circunstancias que puedan suponer grave riesgo para el afectado o para terceros, el oficial psicólogo actuante participará los mismos a la autoridad correspondiente sin contar con la autorización expresa de la víctima, por estar el riesgo observado por encima del deber de confidencialidad, informando a aquella de tal situación.<br>SEXTO. A efectos del presente Protocolo, no serán tenidas en cuenta las comunicaciones de carácter anónimo.",
+  "exp": "Es literal. Las anónimas no se tienen en cuenta y ante grave riesgo no se requiere autorización.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "325-7",
+  "pz": "e-5c",
+  "id": "26-641"
+ },
+ {
+  "lote": "e12",
+  "i": 49,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "SÉPTIMO",
+    "k": 347
+   },
+   {
+    "n": "acoso sexual",
+    "art": "SÉPTIMO",
+    "k": 347
+   },
+   {
+    "n": "acoso sexual",
+    "art": "SÉPTIMO",
+    "k": 347
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. A tenor de la valoración efectuada, el responsable de la Zona o unidad similar, en el plazo máximo de treinta días desde la recepción de la comunicación del presunto acoso sexual o por razón de sexo, podrá optar por una serie de opciones. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Archivo del asunto, por ausencia de objeto o insuficiencia de indicios de una conducta del acoso.",
+   "Proponer al Director General la incoación de expediente disciplinario por falta muy grave si los hechos pudieran así merecerlo para las situaciones distintas de las previstas para el acoso sexual o por razón de sexo, incoar el expediente por falta grave u ordenar la apertura del expediente por falta leve, todo ello si de los hechos se desprendiese la posible comisión de una falta prevista en la Ley del régimen disciplinario.",
+   "Proponer al Ministro del Interior la incoación de expediente disciplinario por falta muy grave cuando resulten indicios claros o presunción de comportamientos de acoso sexual o por razón de sexo.",
+   "Adoptar las medidas previstas en el ámbito procesal si estima que los hechos pudieran constituir algún tipo de delito penado por las leyes."
+  ],
+  "correcta": 2,
+  "lila": "SÉPTIMO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "SÉPTIMO. a) Proponer al Director General la incoación de expediente disciplinario por falta muy grave cuando resulten indicios claros o presunción de comportamientos de acoso sexual o por razón de sexo.<br>SÉPTIMO. 1. A tenor de la valoración efectuada, el responsable de la Zona o unidad similar, en el plazo máximo de treinta días desde la recepción de la comunicación del presunto acoso sexual o por razón de sexo, podrá optar por alguna de las siguientes opciones:<br>SÉPTIMO. b) Proponer al Director General la incoación de expediente disciplinario por falta muy grave si los hechos pudieran así merecerlo para las situaciones distintas de las previstas para el acoso sexual o por razón de sexo, incoar el expediente por falta grave u ordenar la apertura del expediente por falta leve, todo ello si de los hechos se desprendiese la posible comisión de una falta prevista en la Ley del régimen disciplinario. c) Adoptar las medidas previstas en el ámbito procesal si estima que los hechos pudieran constituir algún tipo de delito penado por las leyes. d) Archivo del asunto, por ausencia de objeto o insuficiencia de indicios de una conducta del acoso.",
+  "exp": "La propuesta es al Director General.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "347-1",
+  "pz": "f-7c",
+  "id": "26-642"
+ },
+ {
+  "lote": "e12",
+  "i": 50,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "QUINTO. Medidas preventivas",
+    "k": 339
+   }
+  ],
+  "pregunta": "protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Medidas preventivas. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Las distintas formas de organizar el trabajo y las relaciones entre las personas pueden favorecer o, por el contrario, evitar, Situaciones o conductas inadecuadas como la que nos ocupa.",
+   "Es prioritario el desarrollo de una cultura constructiva en el lugar de trabajo basada en valores éticos de seguridad, respeto mutuo, tolerancia, igualdad de oportunidades, cooperación y calidad del servicio, partiendo de la premisa de que desde la mejora de la calidad del servicio que la Institución presta a la ciudadanía se contribuye al cuidado de la salud del personal del Cuerpo.",
+   "La prevención de unas conductas inadecuadas e inaceptables como son las conductas de acoso debe plantearse en el contexto de una acción general y proactiva de prevención.",
+   "En la Guardia Civil se considera esencial promover, en la medida de lo posible, prácticas saludables en el lugar de trabajo, Siendo parte de dicha prevención el abordaje de lo relacionado con el acoso sexual y con el acoso por razón de sexo."
+  ],
+  "correcta": 1,
+  "lila": "QUINTO. Medidas preventivas · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "Para ello, es prioritario el desarrollo de una cultura constructiva en el lugar de trabajo basada en valores éticos de seguridad, respeto mutuo, tolerancia, igualdad de oportunidades, cooperación y calidad del servicio, partiendo de la premisa de que desde el cuidado de la salud del personal del Cuerpo se contribuye a la mejora de la calidad del servicio que la Institución presta a la ciudadanía.",
+  "exp": "El texto parte del cuidado de la salud para contribuir a la mejora de la calidad, no al revés.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "339-2",
+  "pz": "f-5",
+  "id": "26-643"
+ },
+ {
+  "lote": "e12",
+  "i": 51,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "SÉPTIMO",
+    "k": 345
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Si un miembro de la Guardia Civil, tiene conocimiento de una situación concreta que pudiera ser constitutiva de acoso sexual o por razón de sexo sobre otro miembro del Cuerpo:",
+  "opciones": [
+   "LO pondrá en conocimiento del superior jerárquico de la persona presuntamente acosadora.",
+   "Elaborará un parte con relato claro de los hechos presenciados y de la identidad de quienes sean afectados.",
+   "Todas las opciones son correctas.",
+   "Lo pondrá en conocimiento de quien corresponda, en estos casos, las actuaciones que puedan iniciarse exigirán corroboración o comprobación previa."
+  ],
+  "correcta": 2,
+  "lila": "SÉPTIMO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "De igual manera, si un miembro de la Guardia Civil tiene conocimiento de una situación concreta que pudiera ser constitutiva de acoso sexual o por razón de sexo sobre otro miembro del Cuerpo, lo pondrá en conocimiento del superior jerárquico de la persona presuntamente acosadora, en un parte con relato claro de los hechos presenciados y de la identidad de quienes sean afectados. En estos casos, las actuaciones que puedan iniciarse exigirán corroboración o comprobación previa.",
+  "exp": "Las tres forman parte de la regla: ponerlo en conocimiento, en un parte, con corroboración previa.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "345-1",
+  "pz": "f-6",
+  "id": "26-644"
+ },
+ {
+  "lote": "e12",
+  "i": 52,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "QUINTO",
+    "k": 340
+   },
+   {
+    "n": "acoso sexual",
+    "art": "QUINTO",
+    "k": 340
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. En virtud de la prevención primaria, por parte de la Jefatura de Asistencia al Personal y especialmente por sus Servicios de Psicología, Prevención y Asistencia Sanitaria, se realizarán las siguientes acciones:",
+  "opciones": [
+   "Elaboración publicación y distribución de un Manual de Prevención del Acoso, que será publicado en el Boletín Oficial del Cuerpo.",
+   "Elaboración y difusión de guías divulgativas sobre situaciones de riesgo, conductas sexualmente discriminatorias y hostiles, contextos favorecedores, consecuencias, conductas preventivas y orientación.",
+   "Atención temprana a las víctimas de acoso y propuesta de medidas en su caso, con el fin de minimizar los efectos perniciosos en su salud física y psíquica susceptibles de requerir tratamiento especializado para su recuperación.",
+   "Acciones de formación continua para los miembros del Cuerpo, consistente en la realización de seminarios, cursos o talleres en materia de igualdad así como en habilidades comunicativas."
+  ],
+  "correcta": 1,
+  "lila": "QUINTO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "QUINTO. Por parte de la Jefatura de Asistencia al Personal y especialmente por sus Servicios de Psicología, Prevención y Asistencia Sanitaria se realizarán las siguientes acciones:<br>QUINTO. c) Elaboración y difusión de guías divulgativas sobre situaciones de riesgo, conductas sexualmente discriminatorias y hostiles, contextos favorecedores, consecuencias, conductas preventivas y orientación, con el objetivo de evitar el deterioro progresivo que se pueda producir en el personal afectado, facilitar la puesta en marcha, por parte de éste, o de personas próximas, de las estrategias necesarias encaminadas a la mejora de sus condiciones psicofísicas orientadas hacia su rehabilitación, en su caso.",
+  "exp": "La difusión de guías es prevención primaria; la atención temprana es terciaria.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "340-0",
+  "pz": "f-5a",
+  "id": "26-645"
+ },
+ {
+  "lote": "e12",
+  "i": 53,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "QUINTO",
+    "k": 340
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Señale la opción INCORRECTA. Este Protocolo regula la elaboración, publicación y distribución de un Manual de Buenas Prácticas que:",
+  "opciones": [
+   "Formule directrices claras para favorecer la interacción social positiva que incluya, entre otros, el compromiso ético, tanto por parte de quienes ejercen mando como de quienes no lo hacen, para impulsar un entorno libre de acoso sexual y por razón de sexo.",
+   "Será publicado en Internet.",
+   "Recogerá el conjunto de habilidades que, promuevan un clima organizacional que facilite el establecimiento de cauces adecuados de comunicación con la finalidad de prevenir y atajar los comportamientos constitutivos de acoso sexual o por razón de sexo.",
+   "Incluirá recomendaciones para crear una cultura organizativa con normas y valores contra el acoso sexual y por razón de sexo."
+  ],
+  "correcta": 1,
+  "lila": "QUINTO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "d) Elaboración, publicación y distribución de un Manual de Buenas Prácticas, que será publicado en la Intranet de la Guardia Civil, respetuoso con la legislación y normas internas que rigen en el Cuerpo, y derivado por tanto de ellas, que recoja el conjunto de habilidades que, una vez puestas en marcha por los componentes de la Institución, promuevan un clima organizacional que facilite el establecimiento de cauces adecuados de comunicación con la finalidad de prevenir y atajar los comportamientos constitutivos de acoso sexual o por razón de sexo. Este Manual incluirá recomendaciones para crear una cultura organizativa con normas y valores contra el acoso sexual y por razón de sexo, favoreciendo la difusión de su significado, investigando el alcance y naturaleza del problema, y formulando directrices claras para favorecer la interacción social positiva que incluya: - El compromiso ético, tanto por parte de quienes ejercen mando como de quienes no lo hacen, para impulsar un entorno libre de acoso sexual y por razón de sexo.",
+  "exp": "El Manual se publica en la Intranet de la Guardia Civil.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "340-8",
+  "pz": "f-5a",
+  "id": "26-646"
+ },
+ {
+  "lote": "e12",
+  "i": 54,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "QUINTO. Medidas preventivas",
+    "k": 339
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Medidas Preventivas. Señale la opción INCORRECTA. Es prioritario el desarrollo de una cultura constructiva en el lugar de trabajo basada, ¿en qué valores éticos?:",
+  "opciones": [
+   "Igualdad de oportunidades.",
+   "Racionalidad.",
+   "Calidad del servicio.",
+   "Seguridad."
+  ],
+  "correcta": 1,
+  "lila": "QUINTO. Medidas preventivas · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "Para ello, es prioritario el desarrollo de una cultura constructiva en el lugar de trabajo basada en valores éticos de seguridad, respeto mutuo, tolerancia, igualdad de oportunidades, cooperación y calidad del servicio, partiendo de la premisa de que desde el cuidado de la salud del personal del Cuerpo se contribuye a la mejora de la calidad del servicio que la Institución presta a la ciudadanía.",
+  "exp": "La racionalidad no figura.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "339-2",
+  "pz": "f-5",
+  "id": "26-647"
+ },
+ {
+  "lote": "e12",
+  "i": 55,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "QUINTO",
+    "k": 321
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Forma parte de la prevención primaria las acciones de formación continua para mandos intermedios y superiores, consistente en la realización de seminarios, cursos o talleres sobre habilidades directivas con el objetivo de dotarles de estrategias que permitan, señale la opción INCORRECTA:",
+  "opciones": [
+   "Fomentar la responsabilidad y la competencia de los mandos a la hora de abordar los conflictos.",
+   "Identificar factores que puedan generar reclamaciones por acoso y canalizar adecuadamente las posibles quejas en esa materia.",
+   "Mejorar la calidad del clima organizacional.",
+   "Promover la sensibilización, información y prevención en materia de actos explícitamente hostiles y ofensivos dirigidos aunque solo sea de forma ocasional contra cualquier componente del Cuerpo en su lugar de trabajo."
+  ],
+  "correcta": 3,
+  "lila": "QUINTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "b) Acciones de formación continua para mandos intermedios y superiores, consistente en la realización de seminarios, cursos o talleres sobre habilidades directivas con el objetivo de dotarles de estrategias que permitan: - Mejorar la calidad del clima organizacional. - Identificar factores que puedan generar reclamaciones por acoso y canalizar adecuadamente las posibles quejas en esa materia. - Fomentar la responsabilidad y la competencia de los mandos a la hora de abordar los conflictos. - Promover la sensibilización, información y prevención en materia de actos explícitamente hostiles y ofensivos dirigidos de manera repetida contra cualquier componente del Cuerpo en su lugar de trabajo.",
+  "exp": "Se trata de actos dirigidos de manera repetida.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "321-2",
+  "pz": "e-5",
+  "id": "26-648"
+ },
+ {
+  "lote": "e12",
+  "i": 56,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "PRIMERO. Objetivos",
+    "k": 316
+   },
+   {
+    "n": "acoso laboral",
+    "art": "PRIMERO. Objetivos",
+    "k": 316
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Facilitar la protección, asistencia y recuperación de la persona sometida a acoso una vez acreditados los hechos. ¿De qué forma parte conforme a este Protocolo?:",
+  "opciones": [
+   "De los principios de actuación.",
+   "De los objetivos generales.",
+   "De las medidas preventivas.",
+   "De los objetivos específicos."
+  ],
+  "correcta": 1,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "PRIMERO. Objetivos. 1. El Protocolo constituye un instrumento para expresar la voluntad de actuar con el propósito de hacer frente al acoso laboral en la Guardia Civil, a través de los siguientes objetivos generales:<br>PRIMERO. Objetivos. c) Facilitar la protección, asistencia y recuperación de la persona sometida a acoso una vez acreditados los hechos.",
+  "exp": "Es un objetivo general.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "316-0",
+  "pz": "e-pre",
+  "id": "26-649"
+ },
+ {
+  "lote": "e12",
+  "i": 57,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "PRIMERO. Objetivos",
+    "k": 316
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. ¿Podrán llevarse a cabo las acciones previstas en este Protocolo si se han iniciado acciones en el ámbito penal o disciplinario?:",
+  "opciones": [
+   "Sí, en todo caso.",
+   "En ningún caso.",
+   "Sí, pero solo en el ámbito disciplinario.",
+   "Solo son compatibles con las acciones iniciados en el ámbito penal."
+  ],
+  "correcta": 0,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "3. Las acciones previstas en el Protocolo se podrán llevar a cabo con independencia de si se hubieran o no iniciado acciones en el ámbito penal o disciplinario.",
+  "exp": "Con independencia de que haya acciones penales o disciplinarias.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "316-10",
+  "pz": "e-pre",
+  "id": "26-650"
+ },
+ {
+  "lote": "e12",
+  "i": 58,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
+    "k": 317
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. El presente Protocolo será de aplicación en los supuestos de acoso laboral definidos en la normativa penal o disciplinaria que se presenten en el ámbito de la Guardia Civil, siempre que:",
+  "opciones": [
+   "Alguno de sus implicados sea personal del Cuerpo aunque la persona agresora no esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+   "Resulte implicado únicamente personal del Cuerpo aunque la persona agresora no esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+   "Resulte implicado únicamente personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+   "Alguno de sus implicados sea personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo."
+  ],
+  "correcta": 2,
+  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "1. El presente Protocolo será de aplicación en los supuestos de acoso laboral definidos en la normativa penal o disciplinaria que se presenten en el ámbito de la Guardia Civil, siempre que resulte implicado únicamente personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
+  "exp": "Únicamente personal del Cuerpo y agresor sujeto al régimen.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "317-0",
+  "pz": "e-pre",
+  "id": "26-651"
+ },
+ {
+  "lote": "e12",
+  "i": 59,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "PRIMERO. Objetivos",
+    "k": 316
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Las acciones previstas en el Protocolo, ¿se podrán llevar a cabo si ya han iniciado acciones en el ámbito penal o disciplinario?:",
+  "opciones": [
+   "Sí.",
+   "No, porque las acciones previstas en este Protocolo son alternativas a otros procedimientos.",
+   "Solo si las acciones iniciadas son de ámbito disciplinario.",
+   "No, habría que esperar la resolución judicial en el ámbito penal."
+  ],
+  "correcta": 0,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "3. Las acciones previstas en el Protocolo se podrán llevar a cabo con independencia de si se hubieran o no iniciado acciones en el ámbito penal o disciplinario.",
+  "exp": "Sí.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "316-10",
+  "pz": "e-pre",
+  "id": "26-652"
+ },
+ {
+  "lote": "e12",
+  "i": 60,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "SEXTO",
+    "k": 325
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. ¿En qué caso/s podrá el oficial psicólogo participar a la autoridad correspondiente, una situación de acoso laboral sin el consentimiento expreso de la posible víctima?:",
+  "opciones": [
+   "En el caso de que se aprecien hechos o circunstancias que puedan suponer grave riesgo para el afectado o para terceros.",
+   "En ningún caso.",
+   "Solo por un riesgo inminente y grave para la víctima.",
+   "En cualquier caso."
+  ],
+  "correcta": 0,
+  "lila": "SEXTO · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "No obstante lo dispuesto en el punto primero de este apartado, en el caso de que se aprecien hechos o circunstancias que puedan suponer grave riesgo para el afectado o para terceros, el oficial psicólogo actuante participará los mismos a la autoridad correspondiente sin contar con la autorización expresa de la víctima, por estar el riesgo observado por encima del deber de confidencialidad, informando a aquella de tal situación.",
+  "exp": "Ante grave riesgo para el afectado o terceros.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "325-3",
+  "pz": "e-5c",
+  "id": "26-653"
+ },
+ {
+  "lote": "e12",
+  "i": 61,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "SEXTO. Asesoramiento confidencial",
+    "k": 343
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Cualquier integrante de la Guardia Civil que entienda que está siendo víctima de acoso sexual o acoso por razón de sexo, o que es objeto de comportamientos que pudieran llegar a constituirlo, podrá:",
+  "opciones": [
+   "Comunicar su situación, a través de cualquier vía, siempre que quede constancia por escrito, en los órganos territoriales que, en su caso, pudieran constituirse para realizar funciones con los mismos fines que el Área de Mujeres e Igualdad de la Guardia Civil.",
+   "Comunicar su situación, a través de cualquier vía, siempre que quede constancia por escrito, al personal experto en materia de género integrado en el Área de Mujeres e Igualdad de la Guardia Civil.",
+   "Ninguna de las opciones es correcta.",
+   "Comunicar su situación, a través de cualquier vía y sin que sea preciso dejar constancia escrita, al personal experto en materia de género integrado en el Área de Derechos Humanos. Igualdad y Diversidad de la Guardia Civil."
+  ],
+  "correcta": 3,
+  "lila": "SEXTO. Asesoramiento confidencial · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "1. Al estar las conductas objeto del Protocolo vinculadas al ámbito de la condición o naturaleza sexual, y sin que suponga merma en las actuaciones formales que puedan seguirse, cualquier integrante de la Guardia Civil que entienda que está siendo víctima de acoso sexual o acoso por razón de sexo, o que es objeto de comportamientos que pudieran llegar a constituirlo, podrá comunicar su situación, a través de cualquier vía y sin que sea preciso dejar constancia escrita, al personal experto en materia de género integrado en el Área de Derechos Humanos, Igualdad y Diversidad de la Guardia Civil o en los órganos territoriales que, en su caso, pudieran constituirse para realizar funciones con los mismos fines que esta Área, que proporcionará el asesoramiento y apoyo confidencial que resulte necesario.",
+  "exp": "Sin dejar constancia escrita, al Área de Derechos Humanos, Igualdad y Diversidad.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "343-0",
+  "pz": "f-6",
+  "id": "26-654"
+ },
+ {
+  "lote": "e12",
+  "i": 62,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso sexual",
+    "art": "PRIMERO. Objetivos",
+    "k": 335
+   },
+   {
+    "n": "acoso sexual",
+    "art": "PRIMERO. Objetivos",
+    "k": 335
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. ¿Cuál de los siguientes constituye un objetivo general del presente Protocolo?:",
+  "opciones": [
+   "Disponer de la organización específica y de las medidas necesarias para atender y resolver los casos que se produzcan.",
+   "Fijar reglas para actuar de forma efectiva ante el conocimiento de que se ha producido una conducta de acoso sexual o por razón de sexo en el entorno profesional de los guardias civiles, garantizando su seguridad jurídica.",
+   "Facilitar la protección, asistencia y recuperación de la persona sometida a acoso antes de la acreditación de los hechos.",
+   "Establecer las medidas adecuadas dirigidas a sancionar las posibles situaciones de acoso sexual y por razón de sexo en la Guardia Civil."
+  ],
+  "correcta": 0,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "rojo": "PRIMERO. Objetivos. c) Disponer de la organización específica y de las medidas necesarias para atender y resolver los casos que se produzcan.<br>PRIMERO. Objetivos. 1. El Protocolo constituye un instrumento para expresar la voluntad de actuar con el propósito de hacer frente al acoso sexual y al acoso por razón de sexo (16) en la Guardia Civil, a través de los siguientes objetivos generales: a) Establecer las medidas adecuadas dirigidas a evitar las posibles situaciones de estos tipos de acoso en la Guardia Civil. b) Fijar reglas para actuar de forma efectiva ante el conocimiento de que se ha producido una conducta de este tipo en el entorno profesional de los guardias civiles, garantizando su seguridad jurídica. c) Facilitar la protección, asistencia y recuperación de la persona sometida a acoso una vez acreditados los hechos.",
+  "exp": "Disponer de la organización y medidas es objetivo del Protocolo; las otras alteran el texto.",
+  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
+  "par": "335-7",
+  "pz": "f-1",
+  "id": "26-655"
+ },
+ {
+  "lote": "e12",
+  "i": 63,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "QUINTO. Medidas preventivas",
+    "k": 320
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. La prevención de unas conductas inadecuadas e inaceptables como son las conductas de acoso debe plantearse en el contexto de una acción _______ de prevención, con objeto de identificar los factores que puedan contribuir a crear un entorno de trabajo exento de acoso:",
+  "opciones": [
+   "Universal y activa.",
+   "Especial y proactiva.",
+   "General y proactiva.",
+   "Particular y activa."
+  ],
+  "correcta": 2,
+  "lila": "QUINTO. Medidas preventivas · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "La prevención de unas conductas inadecuadas e inaceptables como son las conductas de acoso debe plantearse en el contexto de una acción general y proactiva de prevención, con objeto de identificar los factores que puedan contribuir a crear un entorno de trabajo exento de acoso. Las distintas formas de organizar el trabajo y las relaciones entre las personas pueden favorecer o, por el contrario, evitar, situaciones o conductas inadecuadas como la que nos ocupa.",
+  "exp": "Una acción general y proactiva.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "320-1",
+  "pz": "e-5",
+  "id": "26-656"
+ },
+ {
+  "lote": "e12",
+  "i": 64,
+  "v": "v12",
+  "t": 26,
+  "refs": [
+   {
+    "n": "acoso laboral",
+    "art": "PRIMERO. Objetivos",
+    "k": 316
+   },
+   {
+    "n": "acoso laboral",
+    "art": "PRIMERO. Objetivos",
+    "k": 316
+   }
+  ],
+  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. Señale la opción INCORRECTA. En el marco del cumplimiento de los objetivos generales, se enuncian como objetivos específicos del Protocolo los siguientes:",
+  "opciones": [
+   "Disponer de la organización específica y de las medidas necesarias para atender y resolver los casos que se produzcan.",
+   "Configurar medidas de registro, así como realizar un seguimiento de las actuaciones llevadas a cabo al amparo del Protocolo a fin de albergar el conocimiento necesario que permita su adecuada evaluación y mejora.",
+   "Formar y sensibilizar al conjunto del personal de la Guardia Civil en materia de acoso laboral, dando pautas para identificar estos comportamientos y evitar que se originen en el ámbito personal.",
+   "Actuar para mantener la seguridad, tanto física como jurídica, integridad, dignidad de las personas afectadas, así como la aplicación de las medidas que en cada caso procedan para la protección y asistencia a las presuntas víctimas y testigos, incluidas las cautelares que resulten oportunas."
+  ],
+  "correcta": 2,
+  "lila": "PRIMERO. Objetivos · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "rojo": "PRIMERO. Objetivos. b) Formar y sensibilizar al conjunto del personal de la Guardia Civil en materia de acoso laboral, dando pautas para identificar estos comportamientos y evitar que se originen en el ámbito profesional.<br>PRIMERO. Objetivos. 2. En el marco del cumplimiento de los objetivos generales, se enuncian como objetivos específicos del Protocolo los siguientes: a) Informar y potenciar a través del Protocolo la difusión del rechazo institucional a todo comportamiento que pueda constituir acoso laboral en el entorno profesional. b) Formar y sensibilizar al conjunto del personal de la Guardia Civil en materia de acoso laboral, dando pautas para identificar estos comportamientos y evitar que se originen en el ámbito profesional. c) Disponer de la organización específica y de las medidas necesarias para atender y resolver los casos que se produzcan. d) Actuar para mantener la seguridad, tanto física como jurídica, integridad, dignidad de las personas afectadas, así como la aplicación de las medidas que en cada caso procedan para la protección y asistencia a las presuntas víctimas y testigos, incluidas las cautelares que resulten oportunas. e) Configurar medidas de registro, así como realizar un seguimiento de las actuaciones llevadas a cabo al amparo del Protocolo a fin de albergar el conocimiento necesario que permita su adecuada evaluación y mejora.",
+  "exp": "El ámbito es el profesional, no el personal.",
+  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
+  "par": "316-6",
+  "pz": "e-pre",
+  "id": "26-657"
+ }
+]
