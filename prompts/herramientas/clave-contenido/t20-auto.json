@@ -1,0 +1,43 @@
+{
+ "maxFalsas": 16,
+ "maxFilas": 30,
+ "cuadros": true,
+ "porMarca": 0.75,
+ "porTexto": true,
+ "rojoOficial": true,
+ "artPunto": true,
+ "v": "907",
+ "titulo": "Esquema clave T20 · Ley de Enjuiciamiento Criminal",
+ "h1": "Tema 20 · ESQUEMA CLAVE — Ley de Enjuiciamiento Criminal: competencia, denuncia y querella, Policía Judicial, detención, diligencias de investigación y procedimientos",
+ "sinPenas": false,
+ "h2": [
+  {
+   "t": "20.1 · Competencia de los Jueces y Tribunales y cuestiones de competencia",
+   "desde": null
+  },
+  {
+   "t": "20.2 · Recusación y acciones, derecho de defensa, traducción e interpretación",
+   "desde": "^TÍTULO IV ·"
+  },
+  {
+   "t": "20.3 · De la denuncia y de la querella",
+   "desde": "^TÍTULO I · De la denuncia"
+  },
+  {
+   "t": "20.4 · Policía Judicial y comprobación del delito y del delincuente",
+   "desde": "^TÍTULO III · De la Policía judicial"
+  },
+  {
+   "t": "20.5 · Citación, detención y tratamiento de los detenidos",
+   "desde": "^TÍTULO VI ·"
+  },
+  {
+   "t": "20.6 · Entrada y registro, correspondencia y medidas de investigación tecnológica",
+   "desde": "^TÍTULO VIII ·"
+  },
+  {
+   "t": "20.7 · Procedimiento abreviado, enjuiciamiento rápido, delitos leves y fichas Recuerda",
+   "desde": "^TÍTULO II · Del procedimiento abreviado"
+  }
+ ]
+}

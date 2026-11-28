@@ -42,9 +42,25 @@ function bloqueDiv(h, i) { const re = /<(\/?)div\b[^>]*>/g; re.lastIndex = i; le
 function hijos(h, cls) { const o = []; const re = new RegExp('<div class="' + cls + '(?:\\s[^"]*)?"', "g"); let m; while ((m = re.exec(h))) { o.push(bloqueDiv(h, m.index)); } return o; }
 const celda = h => colorea(h).join("<br>");
 function cuadro(v) {
+  const orig = v;
+  // cuadros del Exprés que arrastran texto de otros artículos (cfg.cortarCuadros = [[regex del título, nº de ramas o columnas propias]])
+  const corte = (cfg.cortarCuadros || []).find(x => new RegExp(x[0], "i").test(plano((v.match(/<div class="vis-t">([\s\S]*?)<\/div>/) || ["", ""])[1])));
+  if (corte) { const todos = hijos(v, "vis-rama").concat(hijos(v, "vis-col")); todos.slice(corte[1]).forEach(p => { v = v.replace(p, ""); });
+    v = v.replace(/<h5>([\s\S]*?)<\/h5>((?:\s|<ul>)*<li>)/g, "$2$1");   /* cabeceras partidas a media palabra: se vuelven a unir con su texto */
+    const t = v.slice(v.indexOf('<div class="vis-t">'));
+    const cab = cuadroBase(v.slice(0, v.indexOf("</div>", v.indexOf('class="vis-t"')) + 6) + "</div>"); const l = colorea(t.replace(/<div class="vis-t">[\s\S]*?<\/div>/, ""));
+    return cab.slice(0, cab.indexOf("</h3>") + 5) + "\n<ul>\n" + l.map(x => "<li>" + x + "</li>").join("\n") + "\n</ul>"; }
+  const lits = hijos(v, "vis-lit"); lits.forEach(p => { v = v.replace(p, ""); });
   const pies = hijos(v, "vis-pie"); pies.forEach(p => { v = v.replace(p, ""); });
-  return cuadroBase(v) + (pies.length ? "\n<ul>\n" + pies.map(p => "<li>" + celda(p) + "</li>").join("\n") + "\n</ul>" : "");
+  const lista = a => a.length ? "\n<ul>\n" + a.map(p => "<li>" + celda(p) + "</li>").join("\n") + "\n</ul>" : "";
+  let out = cuadroBase(v); const i = out.indexOf("</h3>") + 5; out = out.slice(0, i) + lista(lits) + out.slice(i) + lista(pies);
+  const ws = h => plano(h.replace(/<br>/g, " ")).toLowerCase().match(/[a-záéíóúñ0-9]{4,}/g) || [];
+  const tiene = new Set(ws(out)); const pide = ws((corte ? v : orig).replace(/<div class="vis-t">[\s\S]*?<\/div>/, "").replace(/<\/(div|span|li|h5|td|th)>/g, " </$1>"));
+  const falta = pide.filter(w => !tiene.has(w)).length / Math.max(1, pide.length);
+  if (falta > 0.04) { const cab = out.slice(0, out.indexOf("</h3>") + 5); const todo = colorea(orig.replace(/<div class="vis-t">[\s\S]*?<\/div>/, "").replace(/<span class="(?:et|vt-p|n)(?: [^"]*)?">([\s\S]*?)<\/span>/g, "<b>$1:</b> ").replace(/<\/span>/g, "</span><br>")).filter(x => !/^[↓→⇩▼\s]*$/.test(plano(x))); nPlanos++; return cab + "\n<ul>\n" + todo.map(x => "<li>" + x + "</li>").join("\n") + "\n</ul>"; }
+  return out;
 }
+var nPlanos = 0;
 function cuadroBase(v) {
   const t = plano((v.match(/<div class="vis-t">([\s\S]*?)<\/div>/) || ["", ""])[1]).replace(/^[^A-Za-zÁÉÍÓÚÑ¿(]+/, "");
   const mt = t.match(/^(.*?)\s*\(cuadros? del temario\s*·?\s*([^)]*)\)\s*$/i);
@@ -222,8 +238,9 @@ const trampas = "<ul>\n" + tr.concat(trF).join("\n") + "\n</ul>";
 for (const [re, av] of cfg.avisos || []) { let n = 0; cuerpo = cuerpo.replace(/<li>(?:(?!<\/li>)[\s\S])*<\/li>/g, li => new RegExp(re, "i").test(plano(li)) ? (n++, li.replace(/<\/li>$/, " <strong>⚠ " + av + "</strong></li>")) : li); console.log("aviso «" + re + "»: " + n + " líneas"); }
 // líneas de relleno (cfg.quitar): se borran y, si el artículo se queda sin ninguna, también su título
 if (cfg.quitar) cuerpo = cuerpo.replace(/<li>(?:(?!<\/li>)[\s\S])*<\/li>\n?/g, li => new RegExp(cfg.quitar, "i").test(plano(li)) ? "" : li).replace(/<h3>(?:(?!<\/h3>)[\s\S])*<\/h3>\n<ul>\n?<\/ul>\n?/g, "");
+for (const [de, a] of cfg.sustituir || []) cuerpo = cuerpo.replace(new RegExp(de, "g"), a);
 fs.writeFileSync(dir + "t" + N + "-cuerpo.html", cuerpo);
 fs.writeFileSync(dir + "t" + N + "-trampas.html", trampas);
 fs.writeFileSync(dir + "t" + N + ".json", JSON.stringify({ titulo: cfg.titulo, h1: cfg.h1, v: cfg.v || "844" }));
-console.log("cuadros " + nCuadros + " · líneas ya en cuadro " + nDup);
+console.log("cuadros en lista por seguridad " + nPlanos); console.log("cuadros " + nCuadros + " · líneas ya en cuadro " + nDup);
 console.log("T" + N + " fichas " + nFichas + " · h2 " + cfg.h2.length + " · oficiales " + oficiales.length + " · no cubiertas " + falta + " " + JSON.stringify(Object.fromEntries(Object.entries(por).map(([k, v]) => [k, v.length]))) + " · cuerpo " + cuerpo.length + " bytes · filas cifras " + filas.length + " · falsas " + falsas.length + " · trampas " + tr.length);

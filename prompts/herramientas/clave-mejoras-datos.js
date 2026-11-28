@@ -15,6 +15,9 @@ const words = t => [...new Set(norm(t).split(' ').filter(w => w.length >= 4 && !
 /* grupos de normas en el Exprés: regex del título de bloque donde EMPIEZA cada norma (la primera empieza en el primer bloque) */
 const STARTS = {
   22: [null, /^CAPÍTULO I · Disposiciones generales/, /^Sección 2\.ª Tratamiento de datos/, /^PREÁMBULO/, /^CAPÍTULO III · Actuaciones/, /^CAPÍTULO V · Régimen sancionador/, /^Sección 3\.ª Procedimiento sancionador/],   // Reunión | LO 7/2021 (2) | LO 4/2015 (4)
+  20: [null, /^TÍTULO IV ·/, /^TÍTULO I · De la denuncia/, /^TÍTULO III · De la Policía judicial/, /^TÍTULO VI ·/, /^TÍTULO VIII ·/, /^TÍTULO II · Del procedimiento abreviado/],
+  23: [null, /^TÍTULO I · Coordinación/, /^TÍTULO III ·/, /^TÍTULO IV ·/, /^CAPÍTULO III · Servicios de los despachos/, /^TÍTULO VI ·/, /^CAPÍTULO II · Sanciones/],
+  25: [null, /^TÍTULO II · De las Fuerzas/, /^TÍTULO III · De las Policías/, /^CAPÍTULO I · Disposiciones generales$/, /^REGLAMENTO \(UE\) 2016\/794/, /^CAPÍTULO V\s*·\s*RELACIONES/, /^DISPOSICIONES GENERALES$/],
   26: [null, /^TÍTULO I · Disposiciones generales$/, /^TÍTULO PRELIMINAR/, /^ORDEN PRE\/1983/, /^RESOLUCIÓN DE 22 DE JULIO DE 2019.*ACOSO LABORAL/, /^RESOLUCIÓN DE 22 DE JULIO DE 2019.*ACOSO SEXUAL/, /^RESOLUCIÓN DE 6 DE JULIO/],   // LO 11/2007 | LO 12/2007 | Ley 29/2014 | Orden PRE | tres protocolos
   1: [null, /LEY ORG/, /^1\.2 /, /FINALIDAD DEL CONSEJO/, /TÍTULO I\. DERECHOS Y LIBERTADES/, /^1\.6 /, /^ANEXO/],
   2: [null, /^2\.2 /, /^2\.3 /, /^2\.4 /, /^2\.5 /, /^2\.6 /, /^2\.7 /],
@@ -39,7 +42,7 @@ const STARTS = {
   27: [null, /RESOLUCIÓN 690/, /RECOMENDACIÓN REC/, /REAL DECRETO 176/, /ORDEN GENERAL NÚMERO 10/],   // ONU | Res. 690/1979 | Código Europeo de Ética | RD 176/2022 + Código de Conducta | OG 10/2024
 };
 /* grupo de cada <h2> numerado "N.M" (por defecto M-1); excepciones por tema */
-const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1], 10: [0, 0, 0, 0, 0, 0, 0], 12: [0, 0, 0, 0, 0, 0, 0], 13: [0, 0, 0, 0, 0, 0, 0], 14: [0, 0, 0, 0, 1, 1, 1], 15: [0, 1, 2, 3, 4, 5, 6, 6], 16: [0, 1, 2, 2], 17: [0, 1, 2, 2], 18: [0, 0, 0, 0, 0, 0, 0, 0], 19: [0, 0, 0, 0, 0, 0, 0], 21: [0, 1, 2, 3, 4, 5, -1], 22: [0, 1, 2, 3, 4, 5, 6], 27: [0, 1, 2, 3, 4] };
+const H2G = { 3: [0, 0, 0, 1, 1, 1, 1], 5: [0, 1, 2, 3], 6: [0, 1], 7: [0, 1], 8: [0, 0, 0, 0, 0, 0, 0], 9: [0, 1], 10: [0, 0, 0, 0, 0, 0, 0], 12: [0, 0, 0, 0, 0, 0, 0], 13: [0, 0, 0, 0, 0, 0, 0], 14: [0, 0, 0, 0, 1, 1, 1], 15: [0, 1, 2, 3, 4, 5, 6, 6], 16: [0, 1, 2, 2], 17: [0, 1, 2, 2], 18: [0, 0, 0, 0, 0, 0, 0, 0], 19: [0, 0, 0, 0, 0, 0, 0], 21: [0, 1, 2, 3, 4, 5, -1], 22: [0, 1, 2, 3, 4, 5, 6], 25: [0, 1, 2, 3, 4, 5, 6], 23: [0, 1, 2, 3, 4, 5, 6], 20: [0, 1, 2, 3, 4, 5, 6], 27: [0, 1, 2, 3, 4] };
 
 /* sufijos de artículo; la clave se guarda sin acento y en minúsculas: «35 quáter» -> «35quater».
    T1-T5 siguen con la lista corta (así sus datos ya generados salen idénticos); desde el T6 se reconocen también quáter, quinquies, sexies, octies… */
@@ -87,7 +90,7 @@ for (const N of process.argv.slice(2).map(Number).filter(Boolean)) {
     if (N >= 6) txt = txt.replace(/\s+/g, ' ').trim();   // desde el T6: una cabecera con marcas dejaba un espacio inicial y la ficha se quedaba sin clave (T1-T5 no se tocan para que salgan idénticos)
     let keys = [];
     const pr = txt.match(/^Protocolo[^—]*?art\.\s*(\d+)/i);
-    if (pr) keys = [pr[1]]; else { const a = txt.match(/^Art[íi]culos?\s+([^—]*?)\s+—/); if (a) keys = expand(a[1]); else if (N === 8 || N === 18 || N === 10 || N === 12 || N === 15 || N === 19 || N === 21 || N === 22 || N === 26) { const b = txt.match(/^Art[íi]culos?\s+(\d+(?:\s*(?:bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies))?)(?![\wáéíóú])/i); if (b) keys = expand(b[1]); } }   // T8: las cabeceras del Exprés son «Artículo 22 bis EXOF ✱ R6» (sin raya)
+    if (pr) keys = [pr[1]]; else { const a = txt.match(/^Art[íi]culos?\s+([^—]*?)\s+—/); if (a) keys = expand(a[1]); else if (N === 8 || N === 18 || N === 10 || N === 12 || N === 15 || N === 19 || N === 21 || N === 22 || N === 20 || N === 23 || N === 25 || N === 26) { const b = txt.match(/^Art[íi]culos?\s+(\d+(?:\s*(?:bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies))?)(?![\wáéíóú])/i); if (b) keys = expand(b[1]); } }   // T8: las cabeceras del Exprés son «Artículo 22 bis EXOF ✱ R6» (sin raya)
     if (N === 27) { keys = []; const b27 = txt.match(/^Art[íi]culo\s+(\d+)\s*·/); if (b27 && !/Real Decreto 176\/2022/.test(txt)) keys = [b27[1]]; }   // T27: «Artículo N · Código de Conducta / OG 10/2024»; las fichas del RD 176/2022 no se despliegan (sus números chocan con los del Código)
     const fi = FICHAS.push([head, fb]) - 1; keys.forEach(k => { (grupos[g].a[k] = grupos[g].a[k] || []).push(fi); });
   });
