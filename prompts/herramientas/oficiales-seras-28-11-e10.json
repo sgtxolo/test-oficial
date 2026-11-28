@@ -1,0 +1,1083 @@
+[
+ {
+  "lote": "e10",
+  "i": 0,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 6",
+    "k": 176
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. ¿De qué manera deberán actuar los guardias civiles?:",
+  "opciones": [
+   "Con arreglo a las reglas de comportamiento que se establecen en esta ley, y que conforman las normas básicas de su código de conducta.",
+   "Todas las opciones son correctas.",
+   "Con arreglo a los principios básicos de actuación establecidos en el artículo 5 de la Ley Orgánica 2/1986.",
+   "Con arreglo a lo establecido en la Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia Civil."
+  ],
+  "correcta": 1,
+  "lila": "Art. 6 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "Los guardias civiles desarrollarán sus funciones con absoluto respeto a la Constitución y al resto del ordenamiento jurídico. Deberán actuar con arreglo a los principios establecidos en el artículo 5 de la Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad, y en el Título III de la Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia Civil, así como a las reglas de comportamiento que se establecen en el artículo siguiente, y que conforman las normas básicas de su código de conducta.",
+  "exp": "Las tres remisiones figuran en el artículo.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "176-1",
+  "pz": "c-6",
+  "id": "26-539"
+ },
+ {
+  "lote": "e10",
+  "i": 1,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 19",
+    "k": 189
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. Cuando por necesidades del servicio se designe a un guardia civil para ocupar un puesto en organizaciones internacionales que corresponda al empleo superior al suyo, se le podrá conceder con carácter eventual dicho empleo, ¿en qué condiciones?:",
+  "opciones": [
+   "Su concesión se mantendrá hasta que le corresponda ascender a dicho empleo superior, aunque cese en el mencionado puesto.",
+   "Dicha concesión Ie generará un derecho preferente en la evaluación para el ascenso al citado empleo.",
+   "Todas las opciones son incorrectas.",
+   "Tendrá las competencias sancionadoras y las retribuciones del empleo superior que le ha sido concedido."
+  ],
+  "correcta": 2,
+  "lila": "Art. 19 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Cuando por necesidades del servicio se designe a un guardia civil para ocupar un puesto en organizaciones internacionales u otros organismos en el extranjero, que corresponda al empleo superior al suyo, el Ministro de Defensa, a propuesta del Director General de la Guardia Civil, le podrá conceder, con carácter eventual, dicho empleo con sus atribuciones y divisas, excepción hecha de las retribuciones que serán las correspondientes a su empleo efectivo. Lo conservará hasta ascender al citado empleo superior o hasta el momento de su cese en el mencionado puesto. La atribución del empleo superior no generará derecho al ascenso ni predeterminará, en su caso, el resultado de la correspondiente evaluación.",
+  "exp": "Lo conserva hasta ascender o cesar en el puesto, sin retribuciones superiores ni derecho preferente.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "189-1",
+  "pz": "c-19",
+  "id": "26-540"
+ },
+ {
+  "lote": "e10",
+  "i": 2,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 82",
+    "k": 252
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. Violencia de género y condición de víctima de terrorismo. La guardia civil víctima de violencia de género:",
+  "opciones": [
+   "Ninguna de las opciones es correcta.",
+   "Tendrá derecho a ocupar otro destino siempre que sea vacante de necesaria cobertura.",
+   "Tendrá derecho a ocupar otro destino.",
+   "Tendrá derecho a ocupar otro destino a su elección, siempre que se vea obligada a cesar en el que ocupaba."
+  ],
+  "correcta": 2,
+  "lila": "Art. 82 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "La guardia civil víctima de violencia de género que se vea obligada a cesar en su destino para hacer efectiva su protección o su derecho a la asistencia social integral, tendrá derecho, en las condiciones que reglamentariamente se determinen, a ocupar otro destino de análogas características, sin necesidad de que sea vacante de necesaria cobertura.",
+  "exp": "Tiene derecho a ocupar otro destino de análogas características.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "252-1",
+  "pz": "c-82",
+  "id": "26-541"
+ },
+ {
+  "lote": "e10",
+  "i": 3,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 89.1",
+    "k": 259
+   },
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 89",
+    "k": 259
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. Un guardia civil que sea autorizado por el Ministro del Interior a participar en el desarrollo de programas específicos de interés para la seguridad ciudadana en organismos, entidades o empresas ajenos al Ministerio del Interior:",
+  "opciones": [
+   "Pasará a la situación de excedencia por prestación de servicios en el sector público.",
+   "Continuará en situación de servicio activo.",
+   "Pasará a la situación de servicios especiales.",
+   "Ninguna de las opciones es correcta."
+  ],
+  "correcta": 2,
+  "lila": "Art. 89.1 y Art. 89 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "Art. 89.1. 1. Los guardias civiles pasarán a la situación de servicios especiales cuando:<br>Art. 89. f) Sean autorizados por el Ministro del Interior a participar en el desarrollo de programas específicos de interés para la seguridad ciudadana en organismos, entidades o empresas ajenos al Ministerio del Interior.",
+  "exp": "Situación de servicios especiales.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "259-1",
+  "pz": "c-89",
+  "id": "26-542"
+ },
+ {
+  "lote": "e10",
+  "i": 4,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 73.2",
+    "k": 243
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. ¿Quién es competente para conceder el ascenso a Cabo Mayor?:",
+  "opciones": [
+   "Ministro del Interior.",
+   "Director General de la Guardia Civil.",
+   "Ministro de Defensa.",
+   "Consejo de Ministros."
+  ],
+  "correcta": 2,
+  "lila": "Art. 73.2 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "2. La concesión del ascenso al empleo de Coronel, a Suboficial mayor y a Cabo mayor es competencia del Ministro de Defensa, a propuesta del Director General de la Guardia Civil, de acuerdo con lo previsto en el artículo 67.",
+  "exp": "Ministro de Defensa, a propuesta del Director General.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "243-2",
+  "pz": "c-73",
+  "id": "26-543"
+ },
+ {
+  "lote": "e10",
+  "i": 5,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 60",
+    "k": 230
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. Los Guardias Civiles serán evaluados para determinar su aptitud para el ascenso al empleo superior, ¿Qué tendrá en consideración a la hora de efectuar la citada evaluación?:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Cualquier otro informe complementario que estime oportuno el órgano de evaluación.",
+   "El historial profesional.",
+   "La información complementaria aportada por el interesado a iniciativa propia sobre su actuación profesional, que fuera de interés y pudiera no estar reflejada en su historial profesional."
+  ],
+  "correcta": 0,
+  "lila": "Art. 60 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "En cada evaluación se analizarán las circunstancias de los interesados en los aspectos de su personalidad, aptitudes, condiciones psicofísicas, competencia y actuación en el ejercicio de su profesión, relacionados con el objeto de la misma, considerando la siguiente documentación: a) El historial profesional. b) La información complementaria aportada por el interesado a iniciativa propia sobre su actuación profesional, que fuera de interés y pudiera no estar reflejada en su historial profesional. c) Las certificaciones a que se refiere la Ley Orgánica 12/2007, de 22 de octubre. d) Cualquier otro informe complementario que estime oportuno el órgano de evaluación.",
+  "exp": "Se consideran las tres documentaciones.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "230-1",
+  "pz": "c-60",
+  "id": "26-544"
+ },
+ {
+  "lote": "e10",
+  "i": 6,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 63",
+    "k": 233
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. En el cuerpo de la Guardia Civil existen los siguientes sistemas de ascenso:",
+  "opciones": [
+   "Antigüedad.",
+   "Oposición.",
+   "Todas las opciones son correctas.",
+   "Selección."
+  ],
+  "correcta": 0,
+  "lila": "Art. 63 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Los sistemas de ascenso son los siguientes: a) Antigüedad. b) Concurso-oposición. c) Clasificación. d) Elección.",
+  "exp": "La antigüedad; la oposición y la selección no son sistemas de ascenso.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "233-1",
+  "pz": "c-63",
+  "id": "26-545"
+ },
+ {
+  "lote": "e10",
+  "i": 7,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 63.3",
+    "k": 233
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. ¿Cómo se efectuará el ascenso por sistema de concurso-oposición?:",
+  "opciones": [
+   "Según el orden derivado de un proceso de evaluación.",
+   "Todas las opciones son incorrectas.",
+   "Según el orden resultante en el proceso selectivo y en el correspondiente curso de capacitación.",
+   "Según el orden de escalafón."
+  ],
+  "correcta": 2,
+  "lila": "Art. 63.3 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "3. Los ascensos por el sistema de concurso-oposición se efectuarán según el orden resultante en el proceso selectivo y en el correspondiente curso de capacitación, según el procedimiento que se determine reglamentariamente.",
+  "exp": "Orden del proceso selectivo y del curso de capacitación.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "233-7",
+  "pz": "c-63",
+  "id": "26-546"
+ },
+ {
+  "lote": "e10",
+  "i": 8,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 66.1",
+    "k": 236
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. Las evaluaciones para el ascenso tienen por objeto:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Determinar la no aptitud del Guardia Civil evaluado para ascender.",
+   "Determinar la aptitud del Guardia Civil evaluado para ascender.",
+   "Determinar, en su caso, las condiciones de idoneidad y prelación, basadas en el mérito y la capacidad, que darán origen a las correspondientes clasificaciones de los evaluados."
+  ],
+  "correcta": 0,
+  "lila": "Art. 66.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Las evaluaciones para el ascenso tienen por objeto determinar la aptitud o la no aptitud para el mismo, y, en su caso, las condiciones de idoneidad y prelación, basadas en el mérito y la capacidad, que darán origen a las correspondientes clasificaciones de los evaluados. Se realizarán periódicamente y afectarán a los guardias civiles que se encuentren en las zonas de escalafón que se determinen de conformidad con los artículos siguientes.",
+  "exp": "Las tres finalidades figuran.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "236-1",
+  "pz": "c-66",
+  "id": "26-547"
+ },
+ {
+  "lote": "e10",
+  "i": 9,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 83.4",
+    "k": 253
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. A un guardia civil se le impone por sentencia firme una condena que le imposibilita para el ejercicio de las funciones propias del destino que ocupa. ¿Qué autoridad acordará el cese en dicho destino?:",
+  "opciones": [
+   "El Ministro de Defensa.",
+   "El Director General de la Guardia Civil.",
+   "El Secretario de Estado de Seguridad.",
+   "El Ministro del Interior."
+  ],
+  "correcta": 1,
+  "lila": "Art. 83.4 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "4. La imposición de condena por sentencia firme, que imposibilite para el ejercicio de las funciones propias del destino que se ocupe, llevará aparejada el cese en éste, desde el momento en que la Dirección General de la Guardia Civil tuviere testimonio de la resolución judicial. Dicho cese será acordado por el Director General de la Guardia Civil.",
+  "exp": "El Director General de la Guardia Civil.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "253-4",
+  "pz": "c-83",
+  "id": "26-548"
+ },
+ {
+  "lote": "e10",
+  "i": 10,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 15.3",
+    "k": 185
+   }
+  ],
+  "pregunta": "Ley de Régimen del personal de la Guardia Civil. ¿Para qué se podrá contar con la colaboración de los subordinados en tareas de información, planeamiento, asesoramiento, coordinación y control, que constituyen el apoyo al mando?:",
+  "opciones": [
+   "Para el ejercicio de las acciones directivas, de gestión y ejecutivas.",
+   "Para el ejercicio de la acción directiva.",
+   "Para el ejercicio de la acción de mando.",
+   "Para la realización de las funciones operativas, técnicas, logísticas, administrativas y docentes, en el marco de la seguridad pública o de las misiones de carácter militar que se le puedan encomendar."
+  ],
+  "correcta": 2,
+  "lila": "Art. 15.3 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "3. La acción de mando es una acción directiva que se refiere al ejercicio de la autoridad y a la asunción de la consiguiente responsabilidad, y corresponde al guardia civil en razón de su cargo, destino o servicio. Para el ejercicio de la acción de mando se podrá contar con la colaboración de los subordinados en tareas de información, planeamiento, asesoramiento, coordinación y control, que constituyen el apoyo al mando.",
+  "exp": "Para el ejercicio de la acción de mando.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "185-3",
+  "pz": "c-15",
+  "id": "26-549"
+ },
+ {
+  "lote": "e10",
+  "i": 11,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 17.1",
+    "k": 187
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. ¿En qué categoría/s se agrupan los miembros de la escala de oficiales?:",
+  "opciones": [
+   "En las categorías de oficiales generales y de oficiales.",
+   "En la categoría de oficiales.",
+   "En las categorías superior de oficiales y técnica de oficiales.",
+   "En las categorías superior de oficiales y de oficiales."
+  ],
+  "correcta": 0,
+  "lila": "Art. 17.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Los miembros de la escala de oficiales se agrupan en las categorías de oficiales generales y de oficiales.",
+  "exp": "Categorías de oficiales generales y de oficiales.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "187-1",
+  "pz": "c-17",
+  "id": "26-550"
+ },
+ {
+  "lote": "e10",
+  "i": 12,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 74",
+    "k": 244
+   }
+  ],
+  "pregunta": "Ley de Régimen del personal de la Guardia Civil. Basadas en las evaluaciones para el ascenso, los guardias civiles pueden ser declarados no aptos para el mismo. A este respecto, señale la opción INCORRECTA:",
+  "opciones": [
+   "El Director General ordenará la iniciación de un expediente para determinar si existe insuficiencia de facultades profesionales a efectos de determinar la limitación para ocupar determinados destinos o el pase a retiro, como consecuencia de la declaración definitiva de no aptitud para el ascenso.",
+   "Quienes Sean declarados con carácter definitivo no aptos para el ascenso permanecerán en su empleo hasta su pase a la Situación de reserva y no podrán ser designados para realizar cursos que no Sean de aplicación específica en su empleo, salvo que de la resolución de la evaluación para determinar si existe insuficiencia de facultades profesionales se derive el pase a retiro.",
+   "La declaración de no aptitud para el ascenso es competencia del Director General de la Guardia Civil; sin embargo, la declaración de no aptitud para el ascenso con carácter definitivo es competencia del Ministro de Defensa.",
+   "Si un guardia civil es declarado no apto dos veces en la evaluación para el ascenso al mismo empleo, el Director General elevará propuesta al Ministro de Defensa para declarar al afectado no apto para el ascenso con carácter definitivo."
+  ],
+  "correcta": 3,
+  "lila": "Art. 74 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. La declaración de no aptitud para el ascenso del guardia civil, basada en las evaluaciones reguladas en los artículos anteriores, es competencia del Director General de la Guardia Civil. Quienes sean declarados no aptos para el ascenso no podrán ascender hasta que sean nuevamente evaluados y declarados aptos. 2. Si un guardia civil es declarado no apto más de dos veces en la evaluación para el ascenso al mismo empleo, el Director General elevará propuesta al Ministro de Defensa quien, si procede, declarará al afectado no apto para el ascenso con carácter definitivo. 3. Quienes sean declarados con carácter definitivo no aptos para el ascenso permanecerán en su empleo hasta su pase a la situación de reserva y no podrán ser designados para realizar cursos que no sean de aplicación específica en su empleo salvo que de la resolución que se adopte en el expediente regulado en el artículo 99 se derive el pase a retiro.",
+  "exp": "Se exige haber sido declarado no apto más de dos veces, y decide el Ministro de Defensa si procede.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "244-1",
+  "pz": "c-74",
+  "id": "26-551"
+ },
+ {
+  "lote": "e10",
+  "i": 13,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 87",
+    "k": 257
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. ¿Cuál de las siguientes NO es una situación administrativa en la que puede hallarse un Guardia Civil?:",
+  "opciones": [
+   "Servicios especiales.",
+   "Suspenso de funciones.",
+   "Excedencia voluntaria.",
+   "Suspenso de empleo."
+  ],
+  "correcta": 2,
+  "lila": "Art. 87 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Los guardias civiles se hallarán en alguna de las siguientes situaciones administrativas: a) Servicio activo. b) Servicios especiales. c) Excedencia. d) Suspensión de empleo. e) Suspensión de funciones. f) Reserva.",
+  "exp": "La situación es la excedencia; la voluntaria es una modalidad.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "257-1",
+  "pz": "c-87",
+  "id": "26-552"
+ },
+ {
+  "lote": "e10",
+  "i": 14,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 54.1",
+    "k": 224
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. ¿Cuál es el documento objetivo, que forma parte del historial profesional de un Guardia Civil, donde figuran los diferentes ascensos y destinos?:",
+  "opciones": [
+   "Expediente académico.",
+   "Expediente de aptitud psicoffsica.",
+   "Colección de informes personales.",
+   "Hoja de servicios."
+  ],
+  "correcta": 3,
+  "lila": "Art. 54.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. La hoja de servicios es el documento objetivo, en soporte informático, en el que se exponen los hechos y circunstancias de cada guardia civil desde su incorporación al Cuerpo. Incluye los ascensos, destinos, la descripción de los hechos notables y actos meritorios, las recompensas y felicitaciones personales o colectivas, las situaciones administrativas, así como los delitos o faltas y las penas o sanciones correspondientes que no hayan sido canceladas.",
+  "exp": "La hoja de servicios.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "224-1",
+  "pz": "c-54",
+  "id": "26-553"
+ },
+ {
+  "lote": "e10",
+  "i": 17,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 90.7",
+    "k": 260
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. ¿Cuál de los siguientes Guardias Civiles NO se encuentra en servicio activo?:",
+  "opciones": [
+   "Un Cabo destinado en el Puesto Principal de Valdemoro.",
+   "Un Guardia Civil que ingrese por promoción interna como alumno en la Academia de Suboficiales.",
+   "Un Guardia Civil pendiente de asignación de destino por haber cesado en el que tuviera.",
+   "Un Cabo que ingrese por acceso directo como alumno en la Academia de Zaragoza."
+  ],
+  "correcta": 3,
+  "lila": "Art. 90.7 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "7. Los guardias civiles pasarán a la situación de excedencia por acceso directo como alumnos de los centros docentes de formación de la Guardia Civil o de las Fuerzas Armadas.",
+  "exp": "El ingreso por acceso directo como alumno pasa a excedencia.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "260-35",
+  "pz": "c-90",
+  "id": "26-554"
+ },
+ {
+  "lote": "e10",
+  "i": 18,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 95",
+    "k": 265
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. Respecto a la pérdida de la condición de Guardia Civil, señale la opción CORRECTA:",
+  "opciones": [
+   "En ciertos casos la pérdida de la condición de Guardia Civil puede suponer el pase del afectado a retiro.",
+   "La sanción disciplinaria de suspensión de empleo superior a un año llevará consigo la pérdida de la condición de Guardia Civil.",
+   "En todo caso, la pérdida de la condición de Guardia Civil supondrá el pase del afectado a retiro.",
+   "Una de las causas de pérdida de la condición de Guardia Civil es la pérdida de la nacionalidad española."
+  ],
+  "correcta": 3,
+  "lila": "Art. 95 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. La condición de guardia civil se perderá por alguna de las causas siguientes: a) En virtud de renuncia, con los requisitos que se establecen en el artículo siguiente. b) Pérdida de la nacionalidad española. c) Pena principal o accesoria de pérdida de empleo, de inhabilitación absoluta o de inhabilitación especial para empleo o cargo público cuando hubiere adquirido firmeza. d) Sanción disciplinaria de separación del servicio. 2. Con la pérdida de la condición de guardia civil se dejará de estar sujeto al régimen general de los derechos y deberes y a las normas disciplinarias de los miembros de la Guardia Civil. Llevará consigo, además, la pérdida de la condición de militar de carrera. 3. La pérdida de la condición de guardia civil no supondrá, en ningún caso, el pase del afectado a retiro.",
+  "exp": "La pérdida de la nacionalidad española es causa; nunca supone el pase a retiro.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "265-1",
+  "pz": "c-95",
+  "id": "26-555"
+ },
+ {
+  "lote": "e10",
+  "i": 19,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 67.1",
+    "k": 237
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. El ascenso al empleo de Coronel se efectuará por el sistema de:",
+  "opciones": [
+   "Concurso-oposición.",
+   "Antigüedad.",
+   "Clasificación.",
+   "Elección."
+  ],
+  "correcta": 3,
+  "lila": "Art. 67.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Serán evaluados para el ascenso por elección a los empleos de General de Brigada, de Coronel de la escala de oficiales, de Suboficial mayor y de Cabo mayor todos los del empleo inmediato inferior que reúnan o puedan reunir, durante el ciclo de ascensos, las condiciones establecidas en el artículo 65 y que se encuentren en las zonas del escalafón que para cada empleo determine el Director General de la Guardia Civil.",
+  "exp": "Por elección.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "237-1",
+  "pz": "c-67",
+  "id": "26-556"
+ },
+ {
+  "lote": "e10",
+  "i": 20,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 25.4",
+    "k": 195
+   }
+  ],
+  "pregunta": "Ley de Régimen de Personal de la Guardia Civil. Cuando se nombre a un Oficial General para ocupar un puesto de plantilla adicional, ¿qué consecuencias tendrá?:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Si reúne las condiciones para ello, podrá ascender al empleo inmediato superior de su Escala.",
+   "Cuando cese en el cargo que originó su nombramiento en plantilla adicional, su vacante será amortizada con la primera que se produzca en su empleo.",
+   "Si ocupaba un destino de los expresamente asignados al Cuerpo, producirá vacante en el mismo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 25.4 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "4. El nombramiento de un oficial general para ocupar un puesto de plantilla adicional producirá vacante en la reglamentaria del Cuerpo si previamente ocupara un destino de los expresamente asignados a éste, que será amortizada una vez haya cesado en el cargo con la primera vacante que se produzca en su empleo. Podrá ascender al empleo inmediato superior de su escala si reúne las condiciones para ello y de acuerdo con lo previsto en el artículo 73.1.",
+  "exp": "Las tres consecuencias figuran.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "195-5",
+  "pz": "c-25",
+  "id": "26-557"
+ },
+ {
+  "lote": "e10",
+  "i": 21,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 15.2",
+    "k": 185
+   },
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 15.1",
+    "k": 185
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. En relación con lo que esta norma regula respecto a las funciones profesionales de los guardias civiles, señale la opción INCORRECTA:",
+  "opciones": [
+   "Los guardias civiles realizarán funciones operativas, técnicas, logísticas, administrativas y docentes en el marco de la seguridad pública.",
+   "Las funciones operativas y técnicas, entre otras, se desarrollarán por medio de acciones directivas, que incluyen las de mando y de acciones de gestión y ejecutivas.",
+   "La acción directiva se ejerce mediante la definición de objetivos y la determinación de los medios para conseguirlos, estableciendo los planes correspondientes y controlando su ejecución.",
+   "Mediante acciones de gestión se ponen en práctica los planes establecidos actuando en cumplimiento de órdenes concretas o siguiendo procedimientos establecidos."
+  ],
+  "correcta": 3,
+  "lila": "Art. 15.2 y Art. 15.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "Art. 15.2. 2. La acción directiva se ejerce mediante la definición de objetivos y la determinación de los medios para conseguirlos, estableciendo los planes correspondientes y controlando su ejecución. Mediante acciones de gestión se aplican los medios puestos a disposición para alcanzar los objetivos de la forma más eficiente. Por medio de acciones ejecutivas se ponen en práctica los planes establecidos actuando en cumplimiento de órdenes concretas o siguiendo procedimientos preestablecidos.<br>Art. 15.1. 1. Los guardias civiles realizarán funciones operativas, técnicas, logísticas, administrativas y docentes en el marco de la seguridad pública o de las misiones de carácter militar que se le puedan encomendar. Estas funciones se desarrollarán por medio de acciones directivas, que incluyen las de mando y de acciones de gestión y ejecutivas.",
+  "exp": "Poner en práctica los planes es propio de las acciones ejecutivas.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "185-2",
+  "pz": "c-15",
+  "id": "26-558"
+ },
+ {
+  "lote": "e10",
+  "i": 22,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 54.3",
+    "k": 224
+   }
+  ],
+  "pregunta": "Ley de Régimen de Personal de la Guardia Civil. Cuando los alumnos de la enseñanza de formación por acceso directo se incorporen a la Escala correspondiente, se cancelarán y no figurarán en su hoja de servicios, ¿qué tipo de faltas disciplinarias?:",
+  "opciones": [
+   "Todas las faltas disciplinarias.",
+   "Únicamente las faltas de carácter académico.",
+   "Las faltas graves, las leves y las de carácter académico.",
+   "Las faltas leves y las de carácter académico."
+  ],
+  "correcta": 3,
+  "lila": "Art. 54.3 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "3. Las faltas disciplinarias leves y las de carácter académico de los alumnos de la enseñanza de formación por acceso directo quedarán canceladas al incorporarse a la escala correspondiente y no figurarán en la hoja de servicios del interesado, sin que pueda certificarse sobre ellas.",
+  "exp": "Las leves y las de carácter académico.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "224-3",
+  "pz": "c-54",
+  "id": "26-559"
+ },
+ {
+  "lote": "e10",
+  "i": 23,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 15.2",
+    "k": 185
+   },
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 15.1",
+    "k": 185
+   },
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 15.3",
+    "k": 185
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. Funciones de los guardias civiles. Señale la opción CORRECTA:",
+  "opciones": [
+   "La acción directiva se ejerce mediante la definición de objetivos y la determinación de los medios para conseguirlos, estableciendo los planes correspondientes y controlando su ejecución.",
+   "Por medio de acciones de gestión se ponen en práctica los planes establecidos actuando en cumplimiento de órdenes concretas o siguiendo procedimientos preestablecidos.",
+   "La acción de mando es una acción ejecutiva que se refiere al ejercicio de la autoridad y a la asunción de la consiguiente responsabilidad, y corresponde al guardia civil en razón de su cargo, destino o servicio.",
+   "Los guardias civiles realizarán funciones operativas, técnicas, logísticas, administrativas y docentes en el marco de la seguridad pública o de las misiones de carácter militar que se le puedan encomendar. Estas funciones se desarrollarán por medio de la acción de mando, que incluyen las acciones directivas, ejecutivas y de gestión."
+  ],
+  "correcta": 0,
+  "lila": "Art. 15.2 y Art. 15.1 y Art. 15.3 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "Art. 15.2. 2. La acción directiva se ejerce mediante la definición de objetivos y la determinación de los medios para conseguirlos, estableciendo los planes correspondientes y controlando su ejecución. Mediante acciones de gestión se aplican los medios puestos a disposición para alcanzar los objetivos de la forma más eficiente. Por medio de acciones ejecutivas se ponen en práctica los planes establecidos actuando en cumplimiento de órdenes concretas o siguiendo procedimientos preestablecidos.<br>Art. 15.1. 1. Los guardias civiles realizarán funciones operativas, técnicas, logísticas, administrativas y docentes en el marco de la seguridad pública o de las misiones de carácter militar que se le puedan encomendar. Estas funciones se desarrollarán por medio de acciones directivas, que incluyen las de mando y de acciones de gestión y ejecutivas.<br>Art. 15.3. 3. La acción de mando es una acción directiva que se refiere al ejercicio de la autoridad y a la asunción de la consiguiente responsabilidad, y corresponde al guardia civil en razón de su cargo, destino o servicio. Para el ejercicio de la acción de mando se podrá contar con la colaboración de los subordinados en tareas de información, planeamiento, asesoramiento, coordinación y control, que constituyen el apoyo al mando.",
+  "exp": "Es la definición de la acción directiva. La acción de mando es directiva.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "185-2",
+  "pz": "c-15",
+  "id": "26-560"
+ },
+ {
+  "lote": "e10",
+  "i": 24,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 73.2",
+    "k": 243
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. El ascenso a empleo de Cabo Mayor de la Guardia Civil será competencia del:",
+  "opciones": [
+   "Director General de la Guardia Civil.",
+   "Ministro del Interior, a propuesta del Ministerio de Defensa.",
+   "Ministro de Defensa, a propuesta del Director General de la Guardia Civil.",
+   "Consejo de Ministros, a propuesta del Ministro de Defensa, quien para efectuarla oirá al Ministro del Interior."
+  ],
+  "correcta": 2,
+  "lila": "Art. 73.2 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "2. La concesión del ascenso al empleo de Coronel, a Suboficial mayor y a Cabo mayor es competencia del Ministro de Defensa, a propuesta del Director General de la Guardia Civil, de acuerdo con lo previsto en el artículo 67.",
+  "exp": "Ministro de Defensa, a propuesta del Director General.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "243-2",
+  "pz": "c-73",
+  "id": "26-561"
+ },
+ {
+  "lote": "e10",
+  "i": 25,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 36.2",
+    "k": 206
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. ¿Cuánto tiempo cumplido en la escala de suboficiales ha de tener un Sargento para poder acceder a la escala de oficiales?:",
+  "opciones": [
+   "Ningún tiempo, si cuenta con una antigüedad en el cuerpo de al menos siete años.",
+   "Todas las opciones son correctas.",
+   "Un año si se presenta por cambio de escala, y reúne el requisito de titulación reglamentario.",
+   "Dos años si se presenta por promoción interna."
+  ],
+  "correcta": 3,
+  "lila": "Art. 36.2 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "2. Para poder acceder, en la modalidad de promoción interna, a la enseñanza de formación para la incorporación a la escala de oficiales será necesario pertenecer a la escala de suboficiales, tener cumplidos, al menos, dos años de tiempo de servicios en la misma y cumplir, además, los requisitos establecidos en los artículos 33 y 34.",
+  "exp": "Dos años en la escala por promoción interna.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "206-2",
+  "pz": "c-36",
+  "id": "26-562"
+ },
+ {
+  "lote": "e10",
+  "i": 26,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 18.1",
+    "k": 188
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. ¿Cuál es el criterio esencial en la organización jerarquizada de la Guardia Civil?:",
+  "opciones": [
+   "Antigüedad.",
+   "Honor.",
+   "Empleo.",
+   "Puntualidad."
+  ],
+  "correcta": 2,
+  "lila": "Art. 18.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Dentro de cada categoría, los guardias civiles están ordenados por empleos, criterio esencial en la organización jerarquizada de la Guardia Civil, y dentro de éstos por antigüedad.",
+  "exp": "El empleo.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "188-1",
+  "pz": "c-18",
+  "id": "26-563"
+ },
+ {
+  "lote": "e10",
+  "i": 27,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 8",
+    "k": 178
+   },
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 8",
+    "k": 178
+   },
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 9",
+    "k": 179
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. ¿Cuál de las siguientes es una función que corresponda ejercer al Consejo de Ministros, como órgano colegiado del Gobierno, en materia de personal?:",
+  "opciones": [
+   "Desarrollar las directrices generales de promoción y ascenso de los guardias civiles.",
+   "Ejercer la dirección de la política de personal relativa a los destinos y las retribuciones.",
+   "El ejercicio de la función directiva en lo concerniente al régimen de ascensos y situaciones administrativas del personal.",
+   "Ninguna de las opciones es correcta."
+  ],
+  "correcta": 0,
+  "lila": "Art. 8 y Art. 9 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "Art. 8. Al Consejo de Ministros, como órgano colegiado del Gobierno, le corresponde:<br>Art. 8. c) Desarrollar las directrices generales de promoción y ascenso de los guardias civiles.<br>Art. 9. a) Corresponde al Ministro de Defensa el ejercicio de la función directiva en lo concerniente al régimen de ascensos y situaciones administrativas del personal.",
+  "exp": "Es función del Consejo de Ministros; la función directiva en ascensos es del Ministro de Defensa.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "178-1",
+  "pz": "c-8",
+  "id": "26-564"
+ },
+ {
+  "lote": "e10",
+  "i": 28,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 58.2",
+    "k": 228
+   }
+  ],
+  "pregunta": "Ley de Régimen del personal de la Guardia Civil. ¿Quién establecerá las normas generales reguladoras y de funcionamiento del Registro de Personal que existirá en la Dirección General de la Guardia Civil?:",
+  "opciones": [
+   "El Ministro de Defensa.",
+   "El Ministro del Interior.",
+   "Conjuntamente los Ministros de Defensa y del Interior.",
+   "El Director General de la Guardia Civil."
+  ],
+  "correcta": 1,
+  "lila": "Art. 58.2 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "2. El Ministro del Interior establecerá las normas generales reguladoras del Registro de Personal y de su funcionamiento.",
+  "exp": "El Ministro del Interior.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "228-2",
+  "pz": "c-58",
+  "id": "26-565"
+ },
+ {
+  "lote": "e10",
+  "i": 29,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 7.1",
+    "k": 177
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. Los guardias civiles mantendrán una disposición permanente para defender a España y proteger el ejercicio de los derechos y libertades de los ciudadanos, este hecho ha de tener su diaria expresión:",
+  "opciones": [
+   "En el exacto cumplimiento de la Constitución y las leyes.",
+   "En preservar la seguridad y el bienestar de los ciudadanos.",
+   "En cumplir con exactitud sus deberes y obligaciones.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Mantendrá una disposición permanente para defender a España y proteger el ejercicio de los derechos y libertades de los ciudadanos, que ha de tener su diaria expresión en el exacto cumplimiento de la Constitución y las leyes.",
+  "exp": "En el exacto cumplimiento de la Constitución y las leyes.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "177-2",
+  "pz": "c-7",
+  "id": "26-566"
+ },
+ {
+  "lote": "e10",
+  "i": 30,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 7.4",
+    "k": 177
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. Señale la opción INCORRECTA. Las reglas esenciales que definen el comportamiento del guardia civil son:",
+  "opciones": [
+   "Hará un empleo acorde de la fuerza, con un uso gradual y proporcionado de la misma, siendo la diligencia y la fuerza moral sus primeras armas.",
+   "Cumplirá con exactitud sus deberes y obligaciones impulsado por el sentimiento del honor, verdadera seña de identidad del guardia civil.",
+   "Estará preparado para afrontar con valor, abnegación y espíritu de servicio las situaciones que se derivan de sus misiones.",
+   "Actuará como instrumento de la Nación española cuando participe en misiones para contribuir al mantenimiento de la paz y la seguridad internacional, en estrecha colaboración con Instituciones de países aliados."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7.4 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "4. Hará un empleo legítimo de la fuerza, con un uso gradual y proporcionado de la misma, siendo la persuasión y la fuerza moral sus primeras armas. Se regirá, en todo caso, por los principios de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance.",
+  "exp": "El empleo es legítimo y la primera arma es la persuasión.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "177-5",
+  "pz": "c-7",
+  "id": "26-567"
+ },
+ {
+  "lote": "e10",
+  "i": 31,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 13.1",
+    "k": 183
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. Del Consejo Superior de la Guardia Civil. ¿De cuál de las siguientes autoridades NO es órgano colegiado asesor y consultivo el Consejo Superior de la Guardia Civil?:",
+  "opciones": [
+   "Del Secretario de Estado de Seguridad.",
+   "Del Subsecretario de Defensa.",
+   "Del Director General de la Guardia Civil.",
+   "Del Ministro de Defensa."
+  ],
+  "correcta": 1,
+  "lila": "Art. 13.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Al Consejo Superior de la Guardia Civil, como órgano colegiado asesor y consultivo de los Ministros de Defensa y del Interior, del Secretario de Estado de Seguridad y del Director General de la Guardia Civil, le corresponde:",
+  "exp": "No se cita al Subsecretario de Defensa.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "183-1",
+  "pz": "c-13",
+  "repetidaDe": "26-504"
+ },
+ {
+  "lote": "e10",
+  "i": 32,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 4",
+    "k": 174
+   },
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 4",
+    "k": 174
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. Los españoles, para adquirir la condición de guardia Civil previamente deberán:",
+  "opciones": [
+   "Prestar juramento o promesa de cumplir fielmente sus obligaciones profesionales, con lealtad al Rey.",
+   "Prestar juramento o promesa de guardar y hacer guardar la Constitución como norma fundamental del Estado.",
+   "Todas las opciones son correctas.",
+   "Besar uno a uno la Bandera y, posteriormente, como señal de que España acepta su juramento o promesa, desfilarán bajo ella."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "Art. 4. Para adquirir la condición de guardia civil previamente deberá prestarse juramento o promesa de cumplir fielmente sus obligaciones profesionales, con lealtad al Rey y de guardar y hacer guardar la Constitución como norma fundamental del Estado.<br>Art. 4. A continuación, los guardias civiles besarán uno a uno la Bandera y, posteriormente, como señal de que España acepta su juramento o promesa, desfilarán bajo ella.",
+  "exp": "El juramento o promesa y la ceremonia ante la Bandera figuran en el artículo.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "174-1",
+  "pz": "c-4",
+  "id": "26-568"
+ },
+ {
+  "lote": "e10",
+  "i": 33,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 33",
+    "k": 203
+   }
+  ],
+  "pregunta": "Ley de Régimen de Personal de la Guardia Civil. ¿Qué requisitos será necesario reunir, con carácter general, para poder participar en los procesos selectivos e ingresar en los centros docentes de formación?:",
+  "opciones": [
+   "No estar procesado por delito.",
+   "Ser español de origen.",
+   "Tener menos de 40 años para el acceso directo a la escala de cabos y guardias.",
+   "Ninguna de las opciones es correcta."
+  ],
+  "correcta": 3,
+  "lila": "Art. 33 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Con carácter general, para poder participar en los procesos selectivos e ingresar en los centros docentes de formación será necesario reunir los siguientes requisitos: a) Poseer la nacionalidad española. b) No estar privado de los derechos civiles. c) Carecer de antecedentes penales. d) No hallarse procesado o tener abierto juicio oral en algún procedimiento judicial por delito doloso. e) No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones públicas ni hallarse inhabilitado con carácter firme para el ejercicio de funciones públicas. f) Tener cumplidos dieciocho años en el año de la convocatoria. g) No superar la edad de 40 años para el acceso directo a la escala de cabos y guardias y de 50 años para la promoción profesional.",
+  "exp": "Basta no estar procesado por delito doloso, tener nacionalidad española y no superar los 40 años.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "203-1",
+  "pz": "c-33",
+  "id": "26-569"
+ },
+ {
+  "lote": "e10",
+  "i": 34,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 39.2",
+    "k": 209
+   }
+  ],
+  "pregunta": "Ley de Régimen de Personal de la Guardia Civil. La competencia para crear centros docentes de formación de la Guardia Civil corresponde:",
+  "opciones": [
+   "Al Ministro de Defensa.",
+   "Al Gobierno.",
+   "Al Ministro de Defensa, teniendo en cuenta el informe del Ministro del Interior.",
+   "Al Ministro del Interior, teniendo en cuenta el informe del Ministro de Defensa."
+  ],
+  "correcta": 1,
+  "lila": "Art. 39.2 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "2. La competencia para crear centros docentes de formación de la Guardia Civil corresponde al Gobierno. Cuando se trate de centros de perfeccionamiento y de altos estudios profesionales la competencia corresponderá al Ministro de Defensa o al Ministro del Interior, según la naturaleza de la materia, teniendo en cuenta el informe del otro ministerio.",
+  "exp": "Corresponde al Gobierno.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "209-2",
+  "pz": "c-39",
+  "id": "26-570"
+ },
+ {
+  "lote": "e10",
+  "i": 35,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 7.3",
+    "k": 177
+   }
+  ],
+  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. ¿Cuál es la verdadera seña de identidad del Guardia Civil?:",
+  "opciones": [
+   "Cumplir con exactitud sus deberes y obligaciones impulsado por el sentimiento del honor.",
+   "La jerarquía, la disciplina y la subordinación.",
+   "El saludo militar, como muestra de respeto mutuo.",
+   "La disciplina, factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7.3 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "3. Cumplirá con exactitud sus deberes y obligaciones impulsado por el sentimiento del honor, verdadera seña de identidad del guardia civil.",
+  "exp": "El sentimiento del honor.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "177-4",
+  "pz": "c-7",
+  "id": "26-571"
+ },
+ {
+  "lote": "e10",
+  "i": 36,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 24",
+    "k": 194
+   },
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 24",
+    "k": 194
+   },
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 27.1",
+    "k": 197
+   }
+  ],
+  "pregunta": "Ley de Régimen del personal de la Guardia Civil. Respecto a la planificación de los recursos humanos en la Guardia Civil, señale la opción CORRECTA:",
+  "opciones": [
+   "Tendrá su expresión fundamental en las plantillas reglamentarias, en la programación de provisión de plazas y en las provisiones anuales aprobadas mediante las correspondientes ofertas de empleo.",
+   "Tiene como objetivo contribuir a la consecución del máximo potencial de servicio para la prestación de los servicios mediante la dimensión adecuada de las plantillas de efectivos de acuerdo con los presupuestos asignados.",
+   "Se lleva a cabo a través de un catálogo de puestos de trabajo que comprende la denominación de cada uno de ellos, su asignación a determinadas escalas y empleos, los requisitos de especialidad, aptitud o titulación, la forma de asignación y sus retribuciones fijas, dejando a salvo las complementarias.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 24 y Art. 27.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "Art. 24. Tendrá su expresión fundamental en las plantillas reglamentarias, en la programación de provisión de plazas y en las provisiones anuales aprobadas mediante las correspondientes ofertas de empleo, de acuerdo con lo previsto en el capítulo siguiente.<br>Art. 24. La planificación de los recursos humanos en la Guardia Civil tiene como objetivo contribuir a la consecución de la máxima efectividad en la prestación de los servicios mediante la dimensión adecuada de las plantillas de efectivos en sus diferentes escalas y empleos.<br>Art. 27.1. 1. La Guardia Civil desarrolla su organización de personal a través de un catálogo de puestos de trabajo que comprende la denominación de cada uno de ellos, su asignación a determinadas escalas, empleos y/o requisitos de especialidad, aptitud o titulación, la forma de asignación, y sus retribuciones complementarias. También figurarán aquellos puestos de trabajo que puedan ser cubiertos por personal en reserva y, en su caso, las limitaciones que para su ocupación pudieran establecerse.",
+  "exp": "Es literal. El objetivo es la máxima efectividad.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "194-2",
+  "pz": "c-24",
+  "id": "26-572"
+ },
+ {
+  "lote": "e10",
+  "i": 37,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 106.1",
+    "k": 276
+   }
+  ],
+  "pregunta": "Ley de Personal de la Guardia Civil. Recursos. ¿Qué recurso podrán interponer los guardias civiles contra los actos y resoluciones que se adopten en ejercicio de las competencias atribuidas en la presente Ley cuando se trate de actos y resoluciones adoptados por el Consejo de Ministros y por los Ministros de Defensa y del Interior, previo a la vía contencioso-administrativa?:",
+  "opciones": [
+   "Recurso extraordinario de revisión.",
+   "Recurso de alzada.",
+   "Recurso de queja.",
+   "Recurso potestativo de reposición."
+  ],
+  "correcta": 1,
+  "lila": "Art. 106.1 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "1. Contra los actos y resoluciones que se adopten en ejercicio de las competencias atribuidas en esta Ley, los guardias civiles podrán interponer recurso de alzada, en los términos establecidos en los artículos 114 y 115 de la Ley 30/1992, de 26 de noviembre, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común, excepto cuando se trate de actos y resoluciones adoptados por el Consejo de Ministros y por los Ministros de Defensa y del Interior, contra los que cabrá interponer recurso potestativo de reposición, previo a la vía contencioso-administrativa, en los términos establecidos en los artículos 116 y 117 de la Ley 30/1992, de 26 de noviembre.",
+  "exp": "Recurso de alzada.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "276-1",
+  "pz": "c-106",
+  "repetidaDe": "26-501"
+ },
+ {
+  "lote": "e10",
+  "i": 38,
+  "v": "v10",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Ley 29/2014",
+    "art": "Art. 103",
+    "k": 273
+   }
+  ],
+  "pregunta": "Ley de Régimen del personal de la Guardia Civil. ¿Cómo desarrollará la Sanidad de la Guardia Civil las competencias que le encomienda esta Ley?:",
+  "opciones": [
+   "Podrán establecer contratos o convenios de colaboración con determinados profesionales médicos o entidades públicas o privadas.",
+   "Podrán establecer contratos con determinados profesionales médicos o entidades públicas, pero nunca privadas.",
+   "Exclusivamente a través de los servicios médicos y de inspección sanitaria que los integran y, con el apoyo de los servicios de atención psicológica.",
+   "Podrán establecer convenios de colaboración con determinados profesionales médicos, pero nunca con entidades, ni públicas ni privadas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 103 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "rojo": "Para el desarrollo de sus competencias, la Sanidad de la Guardia Civil podrá establecer contratos o convenios de colaboración con determinados profesionales médicos o entidades públicas o privadas.",
+  "exp": "Contratos o convenios con profesionales o entidades públicas o privadas.",
+  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
+  "par": "273-10",
+  "pz": "c-103",
+  "id": "26-573"
+ }
+]

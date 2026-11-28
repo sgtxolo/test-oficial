@@ -1,0 +1,544 @@
+[
+ {
+  "lote": "e11",
+  "i": 0,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 1",
+    "k": 307
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando disciplina y régimen interior. La acción del mando. Se considerará como más caracterizado el guardia civil en la unidad, en el que concurran los criterios establecidos en el Reglamento de provisión de destinos del personal del Cuerpo de la Guardia Civil:",
+  "opciones": [
+   "Destinado.",
+   "Destinado o comisionado.",
+   "Comisionado o adscrito.",
+   "Comisionado."
+  ],
+  "correcta": 1,
+  "lila": "Art. 1 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "Por su parte, a los efectos de la continuidad en el ejercicio del mando a la que se refiere el artículo 14.1 antes citado, se considerará como más caracterizado el guardia civil destinado o comisionado en la unidad, en el que concurran los criterios establecidos en el artículo 38.1 del citado Reglamento de provisión de destinos del personal del Cuerpo de la Guardia Civil.",
+  "exp": "El guardia civil destinado o comisionado en la unidad.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "307-4",
+  "pz": "d-pre",
+  "id": "26-574"
+ },
+ {
+  "lote": "e11",
+  "i": 1,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 2",
+    "k": 308
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando disciplina y régimen interior. De las siguientes, ¿cuál NO es una disposición sobre disciplina aplicable a la guardia civil, entre las establecidas por las Reales Ordenanzas del Ejército de Tierra?:",
+  "opciones": [
+   "La uniformidad y policía.",
+   "La continuidad del mando.",
+   "Las presentaciones y visitas.",
+   "El saludo."
+  ],
+  "correcta": 1,
+  "lila": "Art. 2 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "Serán de aplicación a la Guardia Civil, excepto en aquello que contradiga o se oponga a su normativa específica, las disposiciones que sobre las manifestaciones externas de la disciplina, el saludo, la uniformidad y policía, los tratamientos y las presentaciones y visitas, establecen los artículos 279 a 319 de las Reales Ordenanzas del Ejército de Tierra, aprobadas por el Real Decreto 2945/1983, de 9 de noviembre.",
+  "exp": "La continuidad del mando pertenece a la acción de mando, no a la disciplina.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "308-2",
+  "pz": "d-2",
+  "id": "26-575"
+ },
+ {
+  "lote": "e11",
+  "i": 2,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 2.1",
+    "k": 308
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación en la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. La disciplina se manifiesta externamente a través de... Señale la opción INCORRECTA:",
+  "opciones": [
+   "El tratamiento debido a superiores y subordinados.",
+   "Las muestras de respeto y subordinación entre militares.",
+   "La corrección en el saludo y en la uniformidad.",
+   "La cortesía en sus relaciones personales."
+  ],
+  "correcta": 3,
+  "lila": "Art. 2.1 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "1. La disciplina se manifiesta externamente a través de las muestras de respeto y subordinación entre militares, de la corrección en el saludo y en la uniformidad, de la cortesía en sus relaciones profesionales y del tratamiento debido a superiores y subordinados.",
+  "exp": "La cortesía es en las relaciones profesionales, no personales.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "308-1",
+  "pz": "d-2",
+  "id": "26-576"
+ },
+ {
+  "lote": "e11",
+  "i": 3,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 3.1",
+    "k": 309
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. ¿Cómo se denominan las normas que regulan la vida de las unidades y del personal en el interior de las instalaciones en las que se alojan?:",
+  "opciones": [
+   "Libro de organización.",
+   "Libro de unidad.",
+   "Normas de unidad.",
+   "Normas de régimen interior."
+  ],
+  "correcta": 3,
+  "lila": "Art. 3.1 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "1. Son normas de régimen interior las que regulan la vida de las unidades y del personal en el interior de las instalaciones en las que se alojan.",
+  "exp": "Normas de régimen interior.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "309-1",
+  "pz": "d-3",
+  "id": "26-577"
+ },
+ {
+  "lote": "e11",
+  "i": 4,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 5.2",
+    "k": 311
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. Respecto a la celebración en las Unidades del Cuerpo de la festividad de la Patrona de la Guardia Civil, día de Nuestra señora del Pilar, señale la opción INCORRECTA:",
+  "opciones": [
+   "Los actos oficiales y de carácter institucional que se organicen con motivo de la festividad de la Patrona por la Dirección General de la Guardia Civil se celebrarán el domingo más próximo al 12 de octubre.",
+   "Se celebrará mediante los actos conmemorativos y la utilización de la uniformidad y los engalanados que se encuentren establecidos.",
+   "Los actos oficiales y de carácter institucional que se organicen con motivo de la festividad de la Patrona por la Dirección General de la Guardia Civil se celebrarán el domingo anterior al 12 de octubre en el lugar que cada año se determine.",
+   "En unidades de entidad Zona y Comandancia, la celebración de actos conmemorativos de la Patrona en fecha distinta al 12 de octubre requerirá la autorización de la Dirección General."
+  ],
+  "correcta": 0,
+  "lila": "Art. 5.2 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "2. Además, el 12 de octubre, día de Nuestra Señora del Pilar, se celebrará en las unidades del Cuerpo la festividad de la Patrona de la Guardia Civil mediante los actos conmemorativos y la utilización de la uniformidad y los engalanados que se encuentren establecidos. Los actos oficiales y de carácter institucional que se organicen con motivo de la festividad de la Patrona por la Dirección General de la Guardia Civil se celebrarán el domingo anterior a dicha fecha en el lugar que cada año se determine. En unidades de entidad Zona y Comandancia, la celebración de actos conmemorativos de la Patrona en fecha distinta a la señalada requerirá la autorización de la Dirección General.",
+  "exp": "Los actos de la Dirección General se celebran el domingo anterior al 12 de octubre, no el más próximo.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "311-8",
+  "pz": "d-5",
+  "id": "26-578"
+ },
+ {
+  "lote": "e11",
+  "i": 5,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 3.2",
+    "k": 309
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando disciplina y régimen interior. En cada instalación de la Guardia Civil se mantendrá un Libro de Normas de Régimen Interior cuyo contenido y regulación se adaptarán a su normativa específica y en el que, en todo caso, se recogerán las normas de de la misma:",
+  "opciones": [
+   "Vida, seguridad, gobierno y mando.",
+   "Vida, seguridad, administración y gobierno.",
+   "Mando, seguridad, administración y control.",
+   "Mando, seguridad, control y gestión."
+  ],
+  "correcta": 1,
+  "lila": "Art. 3.2 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "2. En cada instalación de la Guardia Civil se mantendrá un Libro de Normas de Régimen Interior cuyo contenido y regulación se adaptarán a su normativa específica y en el que, en todo caso, se recogerán las normas de vida, seguridad, administración y gobierno de la misma.",
+  "exp": "Vida, seguridad, administración y gobierno.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "309-3",
+  "pz": "d-3",
+  "id": "26-579"
+ },
+ {
+  "lote": "e11",
+  "i": 6,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 1.1",
+    "k": 307
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. La acción del mando. ¿Cuáles son las características en las que basa su eficacia la Guardia Civil?:",
+  "opciones": [
+   "Ser una organización disciplinada, cohesionada y multidisciplinar.",
+   "Ser una organización jerarquizada, disciplinada y multidisciplinar.",
+   "Ser una organización jerarquizada, disciplinada y cohesionada.",
+   "Ser una organización jerarquizada, cohesionada y multidisciplinar."
+  ],
+  "correcta": 2,
+  "lila": "Art. 1.1 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "1. Como organización jerarquizada, disciplinada y cohesionada, características en las que basa su eficacia, la acción de mando en la Guardia Civil se refiere al ejercicio de la autoridad, con la consiguiente responsabilidad, que corresponde a todo guardia civil en razón de su cargo, destino o servicio.",
+  "exp": "Jerarquizada, disciplinada y cohesionada.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "307-1",
+  "pz": "d-pre",
+  "id": "26-580"
+ },
+ {
+  "lote": "e11",
+  "i": 7,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 4.2",
+    "k": 310
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando disciplina y régimen interior. La organización y desarrollo de otros actos oficiales en el ámbito de la Guardia Civil se regirá teniendo carácter supletorio aquella que sobre esta materia se dicte",
+  "opciones": [
+   "Por la normativa del Ministerio de Defensa / por la Guardia Civil.",
+   "Por su normativa específica / en el ámbito del Ministerio de Interior.",
+   "Por su normativa específica / en el ámbito del Ministerio de Defensa.",
+   "Por la normativa del Ministerio de Defensa / en el ámbito del Ministerio del Interior."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4.2 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "2. La organización y desarrollo de otros actos oficiales en el ámbito de la Guardia Civil se regirá por su normativa específica, teniendo carácter supletorio aquella que sobre esta materia se dicte en el ámbito del Ministerio de Defensa.",
+  "exp": "Normativa específica y supletoriamente la del ámbito del Ministerio de Defensa.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "310-2",
+  "pz": "d-4",
+  "id": "26-581"
+ },
+ {
+  "lote": "e11",
+  "i": 8,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 2.2",
+    "k": 308
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. Respecto a los miembros de la Guardia Civil, señale la opción CORRECTA:",
+  "opciones": [
+   "Tendrán la obligación de saludar a la bandera de los patrulleros no oceánicos de la Guardia Civil al desembarcar.",
+   "Todas las opciones son correctas.",
+   "No tendrán obligación de saludar a la bandera de los buques de la Armada al desembarcar.",
+   "Tendrán la obligación de saludar a la bandera de los patrulleros oceánicos de la Guardia Civil al embarcar."
+  ],
+  "correcta": 3,
+  "lila": "Art. 2.2 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "2. Para los miembros de la Guardia Civil, la obligación de saludar a la bandera de los buques de la Armada al embarcar o desembarcar, establecida en el artículo 9.1 de la Orden Ministerial 31/1987, de 12 de junio, por la que se regula la ejecución del saludo militar, se hará extensiva a los patrulleros oceánicos de la Guardia Civil.",
+  "exp": "La obligación se extiende a la bandera de los patrulleros oceánicos al embarcar o desembarcar.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "308-3",
+  "pz": "d-2",
+  "id": "26-582"
+ },
+ {
+  "lote": "e11",
+  "i": 9,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 3",
+    "k": 309
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando disciplina y régimen interior. En la entrada principal de las instalaciones de la Guardia Civil, en lugar bien visible y junto a su emblema, ¿Qué lema figurará?:",
+  "opciones": [
+   "Amor, lealtad y sacrificio.",
+   "El honor es la mayor divisa.",
+   "Benemérito siempre.",
+   "Todo por la patria."
+  ],
+  "correcta": 3,
+  "lila": "Art. 3 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "Además de lo que sobre señalización exterior de dependencias administrativas dispone el artículo 11 del Real Decreto 1465/1999, de 17 de septiembre, por el que se establecen criterios de imagen institucional y se regula la producción documental y el material impreso de la Administración General del Estado, en la entrada principal de las instalaciones de la Guardia Civil, en lugar bien visible y junto a su emblema, figurará el lema «Todo por la Patria». Del mismo modo, también en lugar destacado, figurará el texto de la Cartilla Fundacional que hace referencia al honor como principal divisa de los Guardias Civiles.",
+  "exp": "Todo por la Patria.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "309-2",
+  "pz": "d-3",
+  "id": "26-583"
+ },
+ {
+  "lote": "e11",
+  "i": 10,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 3.2",
+    "k": 309
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando disciplina y régimen interior. En cada instalación de la Guardia Civil se mantendrá un Libro de Normas de Régimen Interior cuyo contenido y regulación se adaptarán a su normativa específica y en el que, en todo caso, se recogerán, respecto de las instalaciones, las normas de... Señale la opción INCORRECTA:",
+  "opciones": [
+   "Mando.",
+   "Gobierno.",
+   "Administración.",
+   "Vida."
+  ],
+  "correcta": 0,
+  "lila": "Art. 3.2 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "2. En cada instalación de la Guardia Civil se mantendrá un Libro de Normas de Régimen Interior cuyo contenido y regulación se adaptarán a su normativa específica y en el que, en todo caso, se recogerán las normas de vida, seguridad, administración y gobierno de la misma.",
+  "exp": "El mando no figura entre las normas del Libro.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "309-3",
+  "pz": "d-3",
+  "id": "26-584"
+ },
+ {
+  "lote": "e11",
+  "i": 11,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 1.1",
+    "k": 307
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. Como organización jerarquizada, disciplinada y cohesionada, características en las que basa su eficacia, la acción de mando en la Guardia Civil se refiere al ejercicio de la autoridad, con la consiguiente responsabilidad, que corresponde a todo guardia civil en razón de su...:",
+  "opciones": [
+   "Cargo o destino.",
+   "Empleo, cargo o destino.",
+   "Cargo, destino o servicio.",
+   "Escala, empleo o cargo."
+  ],
+  "correcta": 2,
+  "lila": "Art. 1.1 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "1. Como organización jerarquizada, disciplinada y cohesionada, características en las que basa su eficacia, la acción de mando en la Guardia Civil se refiere al ejercicio de la autoridad, con la consiguiente responsabilidad, que corresponde a todo guardia civil en razón de su cargo, destino o servicio.",
+  "exp": "Cargo, destino o servicio.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "307-1",
+  "pz": "d-pre",
+  "id": "26-585"
+ },
+ {
+  "lote": "e11",
+  "i": 12,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 1.1",
+    "k": 307
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando disciplina y régimen interior. Respecto a las características en las que basa su eficacia la organización de la Guardia Civil, ¿a qué refiere la acción de mando en la Guardia Civil?:",
+  "opciones": [
+   "Se refiere al ejercicio de la autoridad.",
+   "Se refiere a la jerarquía de la institución.",
+   "Se refiere a la disciplina de sus miembros.",
+   "Se refiere a la cohesión de sus miembros."
+  ],
+  "correcta": 0,
+  "lila": "Art. 1.1 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "1. Como organización jerarquizada, disciplinada y cohesionada, características en las que basa su eficacia, la acción de mando en la Guardia Civil se refiere al ejercicio de la autoridad, con la consiguiente responsabilidad, que corresponde a todo guardia civil en razón de su cargo, destino o servicio.",
+  "exp": "Al ejercicio de la autoridad.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "307-1",
+  "pz": "d-pre",
+  "id": "26-586"
+ },
+ {
+  "lote": "e11",
+  "i": 13,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 2.2",
+    "k": 308
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. Para los miembros de la Guardia Civil, la obligación de saludar a la bandera de los buques de la Armada al embarcar o desembarcar, se hará extensiva a:",
+  "opciones": [
+   "Los patrulleros oceánicos de la Guardia Civil.",
+   "Los patrulleros de la Guardia Civil.",
+   "No es de obligado cumplimiento el saludo a la bandera de las patrulleras de la Guardia Civil.",
+   "Todas las embarcaciones de dotación de la Guardia Civil."
+  ],
+  "correcta": 0,
+  "lila": "Art. 2.2 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "2. Para los miembros de la Guardia Civil, la obligación de saludar a la bandera de los buques de la Armada al embarcar o desembarcar, establecida en el artículo 9.1 de la Orden Ministerial 31/1987, de 12 de junio, por la que se regula la ejecución del saludo militar, se hará extensiva a los patrulleros oceánicos de la Guardia Civil.",
+  "exp": "A los patrulleros oceánicos.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "308-3",
+  "pz": "d-2",
+  "id": "26-587"
+ },
+ {
+  "lote": "e11",
+  "i": 14,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Preámbulo",
+    "k": 306
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. ¿Cuál es la razón, sobre todo, por la que se determina que el régimen estatutario de la Guardia Civil será el establecido en la Ley Orgánica de Fuerzas y Cuerpos de Seguridad, en las normas que la desarrollan y en el ordenamiento militar?:",
+  "opciones": [
+   "La condición militar de los miembros de la Guardia Civil.",
+   "La naturaleza militar de la Guardia Civil.",
+   "La sujeción, compartida con las Fuerzas Armadas, al mismo principio de disciplina militar.",
+   "Todas las opciones son incorrectas."
+  ],
+  "correcta": 2,
+  "lila": "Preámbulo · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "La naturaleza militar de la Guardia Civil, la condición militar de sus miembros y, sobre todo, la sujeción, compartida con las Fuerzas Armadas, al mismo principio de disciplina militar, son razones que justifican que en el artículo 13.2 de la Ley Orgánica 2/1986, de 13 de marzo, de Fuerzas y Cuerpos de Seguridad, se determine que el régimen estatutario de la Guardia Civil será el establecido en dicha Ley, en las normas que la desarrollan y en el ordenamiento militar.",
+  "exp": "El texto destaca, sobre todo, la sujeción al mismo principio de disciplina militar.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "306-0",
+  "pz": "d-pre",
+  "id": "26-588"
+ },
+ {
+  "lote": "e11",
+  "i": 15,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 4.2",
+    "k": 310
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. La organización y desarrollo de otros actos oficiales en el ámbito de la Guardia Civil se regirá por su normativa específica, ¿teniendo qué carácter aquella otra que sobre esta materia se dicte en el ámbito del Ministerio de Defensa?:",
+  "opciones": [
+   "Complementario.",
+   "Subsidiario.",
+   "Supletoria.",
+   "Todas las opciones son incorrectas."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4.2 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "2. La organización y desarrollo de otros actos oficiales en el ámbito de la Guardia Civil se regirá por su normativa específica, teniendo carácter supletorio aquella que sobre esta materia se dicte en el ámbito del Ministerio de Defensa.",
+  "exp": "Supletorio.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "310-2",
+  "pz": "d-4",
+  "id": "26-589"
+ },
+ {
+  "lote": "e11",
+  "i": 16,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 5",
+    "k": 311
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando disciplina y régimen interior. ¿En qué fecha se celebrará el Día de los Caídos por la Patria?:",
+  "opciones": [
+   "El 2 de noviembre.",
+   "El 19 de junio.",
+   "El sábado más próximo al 30 de mayo.",
+   "El 2 de mayo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 5 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "f) El dos de noviembre, con el carácter de conmemoración militar, hábil a todos los efectos, se celebrará el Día de los Caídos por la Patria, que se realizarán en el marco propio de las distintas Unidades, Centros y Organismos de la Guardia Civil.",
+  "exp": "El dos de noviembre.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "311-7",
+  "pz": "d-5",
+  "id": "26-590"
+ },
+ {
+  "lote": "e11",
+  "i": 17,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 5.3",
+    "k": 311
+   },
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 5",
+    "k": 311
+   },
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 5",
+    "k": 311
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. Respecto a las festividades militares en la Guardia Civil, señale la opción INCORRECTA:",
+  "opciones": [
+   "En la Guardia Civil se celebrará la festividad del dos de mayo, fiesta de la Independencia, que tendrá el carácter de conmemoración oficial.",
+   "Los actos oficiales y de carácter institucional que se organicen con motivo de la festividad de la Patrona por la Dirección General de la Guardia Civil se celebrarán el domingo anterior al día doce de octubre.",
+   "Aunque la Guardia Civil no pertenezca a las Fuerzas Armadas, celebrará como festividad militar el Día de las Fuerzas Armadas, en el sábado más próximo al treinta de mayo.",
+   "En el ámbito de la Guardia Civil, la celebración de las festividades militares implicará que tales días tengan la naturaleza de días festivos e inhábiles."
+  ],
+  "correcta": 3,
+  "lila": "Art. 5.3 y Art. 5 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "Art. 5.3. 3. En relación con las fechas señaladas en los apartados anteriores, tales días tendrán la naturaleza de días festivos e inhábiles sólo cuando reciban dicha consideración en el calendario que anualmente se establezca para el ámbito de las respectivas Administraciones Públicas de ámbito nacional, autonómico o local.<br>Art. 5. b) El dos de mayo, fiesta de la Independencia, tendrá el carácter de conmemoración oficial, hábil a todos los efectos.<br>Art. 5. c) El sábado más próximo al treinta de mayo se celebrará el Día de las Fuerzas Armadas.",
+  "exp": "Solo son festivos e inhábiles cuando así los considere el calendario correspondiente.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "311-9",
+  "pz": "d-5",
+  "id": "26-591"
+ },
+ {
+  "lote": "e11",
+  "i": 18,
+  "v": "v11",
+  "t": 26,
+  "refs": [
+   {
+    "n": "Orden PRE/1983/2012",
+    "art": "Art. 3.2",
+    "k": 309
+   }
+  ],
+  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando disciplina y régimen interior. Se mantendrá un Libro de Normas de Régimen Interior:",
+  "opciones": [
+   "En las instalaciones de la Guardia Civil que determine el Director General del Cuerpo.",
+   "En las unidades obligadas a la confección de un Libro de Organización.",
+   "En las Zonas y Comandancias de la Guardia Civil.",
+   "En cada instalación de la Guardia Civil."
+  ],
+  "correcta": 3,
+  "lila": "Art. 3.2 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "rojo": "2. En cada instalación de la Guardia Civil se mantendrá un Libro de Normas de Régimen Interior cuyo contenido y regulación se adaptarán a su normativa específica y en el que, en todo caso, se recogerán las normas de vida, seguridad, administración y gobierno de la misma.",
+  "exp": "En cada instalación de la Guardia Civil.",
+  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
+  "par": "309-3",
+  "pz": "d-3",
+  "id": "26-592"
+ }
+]
