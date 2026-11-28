@@ -7916,20 +7916,6 @@
   "fuente": "SERAS2611_19"
  },
  {
-  "qid": "FM530",
-  "t": 6,
-  "stem": "Check out your schedule. Who ___ tomorrow at 8:00? I need to know as soon as possible.",
-  "opts": [
-   "is she meeting",
-   "is she going to meet",
-   "will she meet",
-   "is she going to"
-  ],
-  "a": 0,
-  "fb": "Respuesta correcta: <b>A</b>. «Mira tu agenda: ¿con quién se reúne mañana a las 8:00?». Citas ya agendadas: <b>Present Continuous</b> con valor de futuro. «is she going to» queda sin verbo; las otras expresan intención o predicción, no una cita fijada en la agenda.",
-  "fuente": "SERAS2611_20"
- },
- {
   "qid": "FM531",
   "t": 25,
   "stem": "She ___ a day off on Tuesday. She needs a break before the new song is released.",
@@ -7942,20 +7928,6 @@
   "a": 0,
   "fb": "Respuesta correcta: <b>A</b>. «Va a tomarse el martes libre». Plan o intención ya decidida: <b>be going to</b>. «going to take» no tiene el verbo be y «takeing» está mal escrito.",
   "fuente": "SERAS2611_21"
- },
- {
-  "qid": "FM532",
-  "t": 28,
-  "stem": "___ to France for our holiday if it isn't too expensive?",
-  "opts": [
-   "Will we goes",
-   "Can we go",
-   "Could we go",
-   "Can we going"
-  ],
-  "a": 1,
-  "fb": "Respuesta correcta: <b>B</b>. «¿Podemos ir a Francia de vacaciones si no es muy caro?». Con condición real en presente («isn't») se usa <b>Can we go</b>. «Could» iría con condición en pasado; las demás tienen mal el verbo.",
-  "fuente": "SERAS2611_22"
  },
  {
   "qid": "FM533",
@@ -8420,20 +8392,6 @@
   "fuente": "SERAS2611_56"
  },
  {
-  "qid": "FM566",
-  "t": 34,
-  "stem": "Change this active sentence into passive: \"People are using phones for everything nowadays: work, socializing, buying, etc.\"",
-  "opts": [
-   "Phones by people are being used for everything nowadays: work, socializing, buying, etc.",
-   "Phones are been used by people for everything nowadays: work, socializing, buying, etc.",
-   "Phones are being used by people for everything nowadays: work, socializing, buying, etc.",
-   "Phones are being used for everything nowadays: work, socializing, buying, etc."
-  ],
-  "a": 3,
-  "fb": "Respuesta correcta: <b>D</b>. Pasiva del Present Continuous: <b>are being used</b>. El agente genérico «people» <b>se omite</b>. La opción con «by people» es gramatical pero no es la forma natural; las otras dos tienen mal el orden o el verbo.",
-  "fuente": "SERAS2611_57"
- },
- {
   "qid": "FM567",
   "t": 34,
   "stem": "My room should be ___ in blue to improve concentration",
@@ -8616,20 +8574,6 @@
   "fuente": "SERAS2611_70"
  },
  {
-  "qid": "FM580",
-  "t": 1,
-  "stem": "The novel ___ with a long internal monologue from the protagonist about friendship.",
-  "opts": [
-   "started",
-   "was starting",
-   "starts",
-   "is starting"
-  ],
-  "a": 2,
-  "fb": "Respuesta correcta: <b>C</b>. Para hablar del contenido de una obra se usa el <b>Present Simple</b>: The novel starts with…",
-  "fuente": "SERAS2611_71"
- },
- {
   "qid": "FM581",
   "t": 19,
   "stem": "He ___ the information incorrectly the other day",
@@ -8656,20 +8600,6 @@
   "a": 2,
   "fb": "Respuesta correcta: <b>C</b>. «Está acostumbrado a hablar chino». <b>be used to + -ing</b> = estar acostumbrado a.",
   "fuente": "SERAS2611_73"
- },
- {
-  "qid": "FM583",
-  "t": 15,
-  "stem": "We ___ bought a house on the outskirts of the city. It has a huge garden for kids.",
-  "opts": [
-   "just bought",
-   "were just buying",
-   "have just been buying",
-   "have just bought"
-  ],
-  "a": 3,
-  "fb": "Respuesta correcta: <b>D</b>. «Acabamos de comprar una casa». <b>have just</b> + participio. Ojo: el enunciado del vídeo está mal redactado (repite «bought» después del hueco); la opción prevista es «have just bought».",
-  "fuente": "SERAS2611_74"
  },
  {
   "qid": "FM584",
