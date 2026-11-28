@@ -27,7 +27,7 @@ function colorea(h) {
     if (tag === "mark") {
       if (!cierre) {
         let t = "";
-        if (/m-resp/.test(at)) t = "mark"; else if (/m-autoridad/.test(at)) t = 'b class="v"'; else if (/m-plazo/.test(at)) t = 'b class="n"';
+        if (/m-resp/.test(at)) t = cfg.rojoOficial && !((at.match(/data-q="([^"]*)"/) || ["", ""])[1].split(",").some(i => i && !/-ia-/.test(i))) ? 'b class="y"' : "mark"; else if (/m-autoridad/.test(at)) t = 'b class="v"'; else if (/m-plazo/.test(at)) t = 'b class="n"';
         else if (/m-accion/.test(at)) t = 'b class="p"'; else if (/m-destacable/.test(at)) t = 'b class="o"'; else if (/m-personalizado/.test(at)) t = 'b class="y"';
         pila.push(t); if (t) out.push("<" + t + ">");
       } else { const t = pila.pop(); if (t) out.push("</" + t.split(" ")[0] + ">"); }
@@ -37,12 +37,39 @@ function colorea(h) {
   return out.join("").replace(/<(b|mark)( class="[a-z]")?>\s*<\/\1>/g, "").replace(/\s+/g, " ").split("\u0001").map(s => s.trim()).filter(s => plano(s).length > 2);
 }
 
+/* ---- cuadros del temario (<div class="vis">) → tabla del esquema (cfg.cuadros) ---- */
+function bloqueDiv(h, i) { const re = /<(\/?)div\b[^>]*>/g; re.lastIndex = i; let d = 0, m; while ((m = re.exec(h))) { d += m[1] ? -1 : 1; if (!d) return h.slice(i, re.lastIndex); } return h.slice(i); }
+function hijos(h, cls) { const o = []; const re = new RegExp('<div class="' + cls + '(?:\\s[^"]*)?"', "g"); let m; while ((m = re.exec(h))) { o.push(bloqueDiv(h, m.index)); } return o; }
+const celda = h => colorea(h).join("<br>");
+function cuadro(v) {
+  const t = plano((v.match(/<div class="vis-t">([\s\S]*?)<\/div>/) || ["", ""])[1]).replace(/^[^A-Za-zÁÉÍÓÚÑ¿(]+/, "");
+  const mt = t.match(/^(.*?)\s*\(cuadro del temario\s*·?\s*([^)]*)\)\s*$/i);
+  const cab = "<h3>Cuadro: " + esc(mt ? mt[1] : t) + (mt && mt[2] ? ' <span class="art">' + esc(mt[2]) + "</span>" : "") + "</h3>\n";
+  const cuerpo = v.slice(v.indexOf("</div>", v.indexOf('class="vis-t"')) + 6, v.lastIndexOf("</div>"));
+  const etq = h => h.replace(/<span class="(?:et|vt-p)[^"]*">([\s\S]*?)<\/span>/g, "<b>$1:</b> ");
+  const nodos = hijos(cuerpo, "vt-nodo");
+  if (nodos.length) {   // árbol: una fila por rama
+    return cab + "<table>\n" + nodos.map(n => { const et = (hijos(n, "vt-et")[0] || ""); const resto = n.replace(et, ""); return "<tr><td><strong>" + esc(plano(et)) + "</strong></td><td>" + celda(etq(resto)) + "</td></tr>"; }).join("\n") + "\n</table>";
+  }
+  const cols = hijos(cuerpo, "vis-col");
+  if (cols.length) {
+    const partes = cols.map(c => ({ h: plano((c.match(/<h5>([\s\S]*?)<\/h5>/) || ["", ""])[1]), l: celda(c.replace(/<h5>[\s\S]*?<\/h5>/, "")) }));
+    return cab + "<table>\n" + partes.map(p => "<tr><td><strong>" + esc(p.h) + "</strong></td><td>" + p.l + "</td></tr>").join("\n") + "\n</table>";
+  }
+  const filas = [...cuerpo.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)].map(r => "<tr>" + [...r[1].matchAll(/<(t[hd])([^>]*)>([\s\S]*?)<\/t[hd]>/g)].map(c => "<" + c[1] + (c[2].match(/\s(?:col|row)span="\d+"/g) || []).join("") + ">" + celda(c[3]) + "</" + c[1] + ">").join("") + "</tr>");
+  if (filas.length) return cab + "<table>\n" + filas.join("\n") + "\n</table>";
+  const l = colorea(etq(cuerpo)).filter(x => !/^[↓→⇩▼\s]*$/.test(plano(x)));
+  return cab + "<ul>\n" + l.map(x => "<li>" + x + "</li>").join("\n") + "\n</ul>";
+}
+
 /* ---- trocea el Exprés en piezas (bloque-titulo / ex-ficha) ---- */
-const piezas = ex.split(/(?=<div class="bloque-titulo")|(?=<div class="ex-ficha")|(?=<div class="ex-linea")/);
+let nCuadros = 0;
+const piezas = ex.split(cfg.cuadros ? /(?=<div class="bloque-titulo")|(?=<div class="ex-ficha")|(?=<div class="ex-linea")|(?=<div class="vis">)/ : /(?=<div class="bloque-titulo")|(?=<div class="ex-ficha")|(?=<div class="ex-linea")/);
 const normas = cfg.h2.map(() => []); let cur = 0, bloque = "";
 const hdrNorma = {};   // cabecera de ficha (texto plano) → índice de norma
 const pend = cfg.h2.map(h => h.desde ? new RegExp(h.desde, "i") : null);
 for (const p of piezas) {
+  if (cfg.cuadros && /^<div class="vis">/.test(p)) { normas[cur].push({ cab: "", vis: cuadro(bloqueDiv(p, 0)) }); nCuadros++; continue; }
   const esBloque = /^<div class="bloque-titulo"/.test(p);
   const esFicha = /^<div class="ex-ficha"/.test(p), esLinea = /^<div class="ex-linea"/.test(p);
   const cab = esBloque ? plano(p.split("</div>")[0]) : (esFicha ? plano((p.match(/<div class="ex-fh">([\s\S]*?)<\/div>/) || ["", ""])[1]) : plano(p));
@@ -63,12 +90,17 @@ function h3(f) {
   let titulo = mA ? (mA[2] || 'Artículo ' + mA[1]) : t, art = mA ? '<span class="art">art. ' + mA[1] + "</span>" : "";
   return "<h3>" + esc(titulo) + (f.selloEXOF ? ' <span class="ex">EXOF</span>' : f.selloEX ? ' <span class="ex">EX</span>' : "") + (f.ast ? ' <span class="as">✱</span>' : "") + (mP.length ? " <em>(" + [...new Set(mP)].join(", ") + ")</em>" : "") + (art ? " " + art : "") + "</h3>";
 }
-let nFichas = 0;
+let nFichas = 0, nDup = 0;
+/* líneas de artículo que ya están enteras dentro de un cuadro (cfg.cuadros): no se repiten */
+const enCuadro = cfg.cuadros ? Object.values(normas).flat().filter(f => f.vis).map(f => new Set(plano(f.vis).toLowerCase().match(/[a-záéíóúñ]{4,}/g) || [])) : [];
+const repetida = x => { const w = plano(x).toLowerCase().match(/[a-záéíóúñ]{4,}/g) || []; const si = w.length >= 4 && enCuadro.some(c => w.filter(y => c.has(y)).length / w.length >= 0.85); if (si) nDup++; return si; };
 const h2html = cfg.h2.map((c, k) => {
   const lis = normas[k].map(f => {
+    if (f.vis) return f.vis;
     nFichas++;
     const ratio = x => { const tot = plano(x).length; let col = 0; (x.match(/<(?:b class="[a-z]"|mark)>[\s\S]*?<\/(?:b|mark)>/g) || []).forEach(y => { col += plano(y).length; }); return col / Math.max(1, tot); };
-    const l = colorea(f.cuerpo).filter(x => f.recuerda || !cfg.min || ratio(x) >= cfg.min);
+    const l = colorea(f.cuerpo).filter(x => f.recuerda || (cfg.porMarca ? (f.selloEXOF || /<mark>/.test(x) || ((f.selloEX || f.ast || /R\d+/.test(f.hdr)) && ratio(x) >= cfg.porMarca)) : (!cfg.min || ratio(x) >= cfg.min)));
+    for (let i = l.length - 1; i >= 0; i--) if (!f.recuerda && repetida(l[i])) l.splice(i, 1);
     if (!l.length) return "";
     const titulo = f.recuerda ? "<h3>" + esc(f.cab.replace(/^RECUERDA del temario · /, "Recuerda del temario · ")) + "</h3>" : h3(f);
     return titulo + "\n<ul>\n" + l.map(s => "<li>" + s + "</li>").join("\n") + "\n</ul>";
@@ -93,7 +125,7 @@ function respuesta(q) {
   const a = q.o[q.c].replace(/\s+/g, " ").trim();
   const k = a.match(/^(?:las respuestas |las opciones )?([ABCD])\s*(?:y|,)\s*([ABCD])\b/i);
   if (k) return [k[1], k[2]].map(x => q.o[L.indexOf(x.toUpperCase())].replace(/\s+/g, " ").trim()).join(" · ");
-  if (/^(todas|todos|ambas|ambos)\b/i.test(a)) return q.o.filter((o, i) => i !== q.c).map(o => o.replace(/\s+/g, " ").trim()).join(" · ");
+  if (/^(todas|todos|ambas|ambos)\b/i.test(a)) return q.o.filter((o, i) => i !== q.c && !/^\s*ningun/i.test(o)).map(o => o.replace(/\s+/g, " ").trim()).join(" · ");
   return a;
 }
 const esInc = q => /incorrect|falsa|no es cierta|no es correcta|excepto|\bNO corresponde|\bNO corresponder/i.test(q.p.slice(-190));
@@ -105,21 +137,29 @@ function linea(q) {
   if (segs.length > 1 && segs[0].length < 90 && !/\?$/.test(segs[0])) titulo = segs.shift().replace(/[.:]$/, "");
   let resto = segs.join(" ").replace(/\s*\(?señal[ae]\s+la\s+\w+\)?[.:]?\s*$/i, "").replace(/\s*Se[ñn]ale la \w+\.?$/i, "").replace(/_{3,}/g, "…");
   if (resto.length > 230) resto = resto.slice(0, 227).replace(/\s+\S*$/, "") + "…";
-  return "<li>" + (titulo ? "<strong>" + esc(titulo) + "</strong>: " : "") + esc(resto) + " → " + (esInc(q) ? '<b class="p">FALSO</b>: ' : "") + "<mark>" + esc(respuesta(q)) + "</mark></li>";
+  return "<li>" + (titulo ? "<strong>" + esc(titulo) + "</strong>: " : "") + esc(resto) + " → " + (/^\s*ningun/i.test(q.o[q.c]) ? '<b class="p">ninguna opción del test era correcta</b> (descartadas: ' + esc(q.o.filter((o, i) => i !== q.c).join(" · ").replace(/\s+/g, " ")) + ")</li>" : (esInc(q) ? '<b class="p">FALSO</b>: ' : "") + "<mark>" + esc(respuesta(q)) + "</mark></li>");
 }
 const claveArt = s => (s || "").replace(/\s+/g, " ").replace(/\s*:?\s*🎯.*$/, "").trim();
 function normaDe(q) {
+  for (const [re, k] of cfg.fuerza || []) if (new RegExp(re, "i").test(q.p + " " + q.o[q.c])) return k;
   const g = claveArt(ggrp[q.i]);
   if (g in hdrNorma) return hdrNorma[g];
   const k = Object.keys(hdrNorma).find(h => h && g && (h.startsWith(g.slice(0, 40)) || g.startsWith(h.slice(0, 40))));
   if (k) return hdrNorma[k];
+  if (cfg.porTexto) {   // la norma de la ficha que más palabras comparte con la respuesta y el enunciado
+    const w = words(q.o[q.c] + " " + q.p); let mejor = 0, nm = -1;
+    if (!normaDe.f) normaDe.f = normas.flatMap((l, k) => l.filter(f => !f.vis && !f.recuerda).map(f => ({ k, w: new Set(words(f.cuerpo)) })));
+    for (const f of normaDe.f) { const v = w.filter(x => f.w.has(x)).length / Math.max(1, w.length); if (v > mejor) { mejor = v; nm = f.k; } }
+    if (mejor >= 0.55) return nm;
+  }
   const t = q.p + " " + q.o[q.c];
   for (let i = cfg.h2.length - 1; i >= 1; i--) if (cfg.h2[i].texto && new RegExp(cfg.h2[i].texto, "i").test(t)) return i;
   return 0;
 }
 const oficiales = [...uniq.values()].filter(q => !/-ia-/.test(q.i));
 const por = {}; let falta = 0;
-oficiales.forEach(q => { if (cobertura(q)) return; falta++; const n = normaDe(q); (por[n] = por[n] || []).push(q); });
+const yaQ = new Set();
+oficiales.forEach(q => { if (cobertura(q)) return; const kq = norm(q.p + "|" + respuesta(q)); if (cfg.porTexto && yaQ.has(kq)) return; yaQ.add(kq); falta++; const n = normaDe(q); (por[n] = por[n] || []).push(q); });
 let cuerpo = h2html;
 cfg.h2.forEach((c, k) => {
   const qs = (por[k] || []).sort((a, b) => a.i.localeCompare(b.i, "es", { numeric: true }));
@@ -131,9 +171,10 @@ cfg.h2.forEach((c, k) => {
 const frases = [];
 const reCif = /(\b\d+\s*(?:%|por ciento|días?|horas?|meses|años?|metros)\b|\b(?:un|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|doce|quince|veinte|treinta)\s+(?:días?|horas?|meses|años?|semanas?)\b|\bal menos un \d+%|\bplazo\b)/i;
 for (const f of Object.values(normas).flat()) {
-  if (f.recuerda) continue;
+  if (f.recuerda || f.vis) continue;
   for (const s of colorea(f.cuerpo)) {
     const txt = plano(s);
+    if (cfg.sinPenas && /prisi[oó]n|multa|inhabilitaci|localizaci[oó]n permanente|trabajos en beneficio|pena de/i.test(txt)) continue;   // T19: la tabla de plazos no lleva penas
     if (reCif.test(txt) && txt.length < 420) frases.push({ h: plano(f.hdr).replace(/\s*(EXOF|EX\b|✱)/g, "").replace(/\s*R\d+\b/g, "").trim(), s });
   }
 }
@@ -159,7 +200,9 @@ const tr = oficiales.filter(q => reCif.test(q.o[q.c] || "") && q.o[q.c].length <
 const trF = oficiales.filter(esInc).slice(0, 25).map(q => "<li><strong>Señale la incorrecta</strong> · …" + esc(q.p.replace(/\s+/g, " ").replace(/_{3,}/g, "…").slice(-150)) + " → FALSA: <mark>" + esc(q.o[q.c].replace(/\s+/g, " ")) + "</mark></li>");
 const trampas = "<ul>\n" + tr.concat(trF).join("\n") + "\n</ul>";
 
+for (const [re, av] of cfg.avisos || []) { let n = 0; cuerpo = cuerpo.replace(/<li>(?:(?!<\/li>)[\s\S])*<\/li>/g, li => new RegExp(re, "i").test(plano(li)) ? (n++, li.replace(/<\/li>$/, " <strong>⚠ " + av + "</strong></li>")) : li); console.log("aviso «" + re + "»: " + n + " líneas"); }
 fs.writeFileSync(dir + "t" + N + "-cuerpo.html", cuerpo);
 fs.writeFileSync(dir + "t" + N + "-trampas.html", trampas);
 fs.writeFileSync(dir + "t" + N + ".json", JSON.stringify({ titulo: cfg.titulo, h1: cfg.h1, v: cfg.v || "844" }));
+console.log("cuadros " + nCuadros + " · líneas ya en cuadro " + nDup);
 console.log("T" + N + " fichas " + nFichas + " · h2 " + cfg.h2.length + " · oficiales " + oficiales.length + " · no cubiertas " + falta + " " + JSON.stringify(Object.fromEntries(Object.entries(por).map(([k, v]) => [k, v.length]))) + " · cuerpo " + cuerpo.length + " bytes · filas cifras " + filas.length + " · falsas " + falsas.length + " · trampas " + tr.length);

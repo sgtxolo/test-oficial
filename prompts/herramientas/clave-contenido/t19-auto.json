@@ -1,0 +1,68 @@
+{
+ "titulo": "Esquema clave T19 · Código Penal, Parte Especial",
+ "h1": "Tema 19 · ESQUEMA CLAVE — Código Penal (LO 10/1995), Parte Especial: delitos del Libro II",
+ "v": "904",
+ "h2": [
+  {
+   "t": "19.1 · TÍTULOS I a VII BIS · Vida, aborto, lesiones, libertad, torturas y trata de seres humanos",
+   "desde": null
+  },
+  {
+   "t": "19.2 · TÍTULOS VIII a XII · Libertad sexual, omisión del socorro, intimidad, honor y relaciones familiares",
+   "desde": "^TÍTULO VIII ·",
+   "texto": "libertad sexual|agresi[oó]n sexual|prostituci|socorro|secreto|allanamiento|calumnia|injuria|menores|familia"
+  },
+  {
+   "t": "19.3 · TÍTULO XIII · Patrimonio y orden socioeconómico, receptación y blanqueo",
+   "desde": "^TÍTULO XIII ·",
+   "texto": "hurto|robo|estafa|apropiaci|da[ñn]os|propiedad intelectual|industrial|mercado|consumidores|societari|receptaci|blanqueo|corrupci[oó]n en los negocios|insolvencia"
+  },
+  {
+   "t": "19.4 · TÍTULOS XIII BIS a XVII · Hacienda, trabajadores, extranjeros, medio ambiente, animales y seguridad colectiva",
+   "desde": "^TÍTULO XIII BIS",
+   "texto": "Hacienda|Seguridad Social|trabajadores|extranjeros|ordenaci[oó]n del territorio|patrimonio hist|recursos naturales|medio ambiente|flora|fauna|animal|explosivos|estragos|incendio|salud p[uú]blica|drogas|seguridad vial|conducir|financiaci[oó]n ilegal"
+  },
+  {
+   "t": "19.5 · TÍTULOS XVIII y XIX · Falsedades y Administración pública",
+   "desde": "^TÍTULO XVIII",
+   "texto": "falsific|falsedad|estado civil|intrusismo|prevaricaci|desobediencia|cohecho|tr[aá]fico de influencias|malversaci|exacciones|funcionario"
+  },
+  {
+   "t": "19.6 · TÍTULOS XX y XXI · Administración de Justicia y delitos contra la Constitución",
+   "desde": "^TÍTULO XX ·",
+   "texto": "Juez|Magistrado|testimonio|denuncia falsa|encubrimiento|quebrantamiento|rebeli[oó]n|Corona|Cortes|derechos fundamentales|ultraje"
+  },
+  {
+   "t": "19.7 · TÍTULOS XXII a XXIV · Orden público, armas, organizaciones, terrorismo, Defensa y Comunidad Internacional",
+   "desde": "^TÍTULO XXII ·",
+   "texto": "atentado|resistencia|des[oó]rdenes|armas|organizaci[oó]n criminal|grupo criminal|terroris|traici[oó]n|Defensa Nacional|genocidio|lesa humanidad|conflicto armado|pirater"
+  }
+ ],
+ "maxFilas": 22,
+ "maxFalsas": 16,
+ "sinPenas": true,
+ "cuadros": true,
+ "porMarca": 0.75,
+ "porTexto": true,
+ "rojoOficial": true,
+ "fuerza": [
+  [
+   "conflicto armado|traici[oó]n|al enemigo|provocaci[oó]n, conspiraci",
+   6
+  ],
+  [
+   "independencia judicial|entregue? una causa criminal|usurpaci[oó]n de atribuciones",
+   5
+  ]
+ ],
+ "avisos": [
+  [
+   "abuso sexual\\.?\\s*$",
+   "Ficha del temario no vigente: el texto oficial del temario ya no recoge el «abuso sexual»."
+  ],
+  [
+   "reos de sedici[oó]n",
+   "No vigente: la sedición está suprimida en el texto oficial del temario."
+  ]
+ ]
+}

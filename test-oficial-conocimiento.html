@@ -1774,7 +1774,7 @@ document.addEventListener("keydown",function(e){e.key==="Escape"&&guiaCerrar()})
         const t = (e && e.temaId) || parseInt(id, 10);
         if (id && Array.isArray(window.ESQ_TEMAS) && window.ESQ_TEMAS.includes(+t))
           h += '<button type="button" class="btn-ver-esquema" onclick="verEnEsquema(\'' + id.replace(/'/g, '') + '\')">📘 Ver en el esquema</button>';
-        if (id && [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27].includes(+t)){   // Esquema clave nuevo (T1-T6): se abre en el apartado donde está la pregunta
+        if (id && [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 26, 27].includes(+t)){   // Esquema clave nuevo (T1-T6): se abre en el apartado donde está la pregunta
           const E = (window.CLAVE_LINK || {})[+t] || (window.CLAVE_ESQ || {})[+t];   // CLAVE_LINK (T26): todas las preguntas con sitio
           window.cqVis = window.cqVis || (b => { const p = (b.dataset.cq || '').split('|'), L = ((window.CLAVE_LINK || {})[+p[0]] || (window.CLAVE_ESQ || {})[+p[0]]); b.style.display = L && L.includes(p[1]) ? '' : 'none'; });
           if (!E && !window['_cq' + t]){ window['_cq' + t] = 1; const sc = document.createElement('script'); sc.src = 'clave-tests/t' + (+t) + '-esq.js'; sc.onload = () => document.querySelectorAll('[data-cq]').forEach(window.cqVis); document.head.appendChild(sc); }

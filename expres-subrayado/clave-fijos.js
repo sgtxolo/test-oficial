@@ -12,6 +12,7 @@ window.EXSUBCLAVE_REPASO = {
   7: "repaso-t7-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T7 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   // 8: "repaso-t8-borrador.html",   // (antigua, 12/11/2026) la de abajo pisa a esta
   8: "repaso-t8-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T8 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
+  19: "repaso-t19-esquema-clave-nuevo.html",   // 28/11/2026: Esquema clave T19 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   26: "repaso-t26-esquema-clave-nuevo.html",   // 28/11/2026: Esquema clave T26 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   18: "repaso-t18-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T18 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   17: "repaso-t17-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T17 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
@@ -22,7 +23,7 @@ window.EXSUBCLAVE_REPASO = {
   11: "repaso-t11-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T11 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   10: "repaso-t10-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T10 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   9: "repaso-t9-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T9 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
-  19: "repaso-t19-borrador.html",   // 14/11/2026: Esquema clave T19 Derecho Penal PE (14 de 29 cuadros redibujados + 14 fichas + R1-R29 + rápidas)
+  // (antigua) 19: "repaso-t19-borrador.html",   // 14/11/2026: Esquema clave T19 Derecho Penal PE (14 de 29 cuadros redibujados + 14 fichas + R1-R29 + rápidas)
   // (antigua) 18: "repaso-t18-borrador.html",   // 14/11/2026: Esquema clave T18 Derecho Penal PG (13 cuadros redibujados + 25 fichas + R1-R29 + rápidas)
   // (antigua) 17: "repaso-t17-borrador.html",   // 14/11/2026: Esquema clave T17 Menores (15 cuadros redibujados + 3 fichas + R1-R25 + rápidas)
   // (antigua) 16: "repaso-t16-borrador.html",   // 14/11/2026: Esquema clave T16 Igualdad y acoso (15 cuadros del temario redibujados + 8 fichas + R1-R14 + rápidas)
