@@ -1,0 +1,1174 @@
+[
+ {
+  "lote": "d8",
+  "i": 336,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "3",
+    "ap": "c"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Disposiciones generales. Para los fines del Protocolo objeto de la pregunta, ¿qué se entenderá por \"municiones\"?:",
+  "opciones": [
+   "El cartucho completo o sus componentes, entre ellos las vainas, los cebos, la carga propulsora, las balas o proyectiles utilizados en las armas de fuego, siempre que las armas que los utilicen estén de por sí sujetas a autorización en el respectivo Estado Parte.",
+   "El cartucho completo o sus componentes, entre ellos las vainas, los cebos, la carga propulsora, los tacos, las balas o proyectiles utilizados en las armas de fuego, siempre que esos componentes estén de por Sí sujetos a autorización en el respectivo Estado Parte.",
+   "El cartucho completo o sus componentes, entre ellos las vainas, los cebos, la carga propulsora, las balas o proyectiles utilizados en las armas de fuego, siempre que esos componentes estén de por sí sujetos a autorización en el respectivo Estado Parte.",
+   "El cartucho completo o sus componentes, entre ellos las vainas, los cebos, la carga propulsora, las balas o proyectiles utilizados en las armas de fuego, siempre que esos componentes estén de por sí sujetos a autorización en cualquier Estado Parte."
+  ],
+  "correcta": 2,
+  "lila": "Art. 3.c · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Para los fines del presente Protocolo: c) Por “municiones” se entenderá el cartucho completo o sus componentes, entre ellos las vainas, los cebos, la carga propulsora, las balas o proyectiles utilizados en las armas de fuego, siempre que esos componentes estén de por sí sujetos a autorización en el respectivo Estado Parte;",
+  "exp": "Los componentes deben estar de por sí sujetos a autorización en el respectivo Estado Parte y no se citan los tacos.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-2",
+  "parT": "art 3 a por arma de fuego se entendera toda arma portatil que tenga canon y que lance este",
+  "fR": 0.85,
+  "pz": "g-3",
+  "secClave": 40,
+  "id": "2-680"
+ },
+ {
+  "lote": "d8",
+  "i": 339,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "10",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Respecto a los requisitos generales para sistemas de licencias o autorizaciones de exportación, importación y tránsito, señale la opción INCORRECTA:",
+  "opciones": [
+   "El Estado Parte importador no tendrá que notificar al Estado Parte exportador, la recepción de las remesas de armas de fuego, sus piezas y componentes y municiones de pequeña cantidad.",
+   "Cada Estado Parte adoptará, dentro de sus posibilidades, las medidas necesarias para garantizar que los procedimientos de licencia o autorización Sean seguros y que la autenticidad de los documentos de licencia o autorización pueda ser verificada o validada.",
+   "La licencia o autorización de exportación e importación y la documentación que la acompañe contendrán conjuntamente información que, como mínimo, comprenda el lugar y la fecha de emisión, la fecha de expiración, el país de exportación, el país de importación, el destinatario final, una descripción y la cantidad de las armas de fuego, sus piezas y componentes y municiones y, cuando haya tránsito, los países de tránsito.",
+   "Cada Estado Parte establecerá o mantendrá un sistema eficaz de licencias o autorizaciones de exportación e importación, así como de medidas aplicables al tránsito internacional, para la transferencia de armas de fuego, sus piezas y componentes y municiones."
+  ],
+  "correcta": 0,
+  "lila": "Art. 10.4 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "4. El Estado Parte importador notificará al Estado Parte exportador, previa solicitud, la recepción de las remesas de armas de fuego, sus piezas y componentes y municiones que le hayan sido enviadas.",
+  "exp": "El importador notifica la recepción previa solicitud, sin excepción por cantidad.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "119-0",
+  "parT": "1 cada estado parte establecera o mantendra un sistema eficaz de licencias o autorizacione",
+  "fR": 0.29,
+  "pz": "g-10",
+  "secClave": 42,
+  "id": "2-681"
+ },
+ {
+  "lote": "d8",
+  "i": 340,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "1",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Disposiciones generales. Respecto a la relación con la Convención de las Naciones Unidas contra la delincuencia organizada transnacional, señale la opción CORRECTA:",
+  "opciones": [
+   "Las disposiciones de la Convención de las Naciones Unidas contra la delincuencia organizada transnacional se aplicarán mutatis mutandis al Protocolo objeto de la pregunta, a menos que en él se disponga otra cosa.",
+   "Las disposiciones de la Convención de las Naciones Unidas contra la delincuencia organizada transnacional se aplicarán mutatis mutandis al Protocolo Objeto de la pregunta, cuando en él se disponga expresamente.",
+   "Las disposiciones del Protocolo objeto de la pregunta se aplicarán mutatis mutandis a la Convención de las Naciones Unidas contra la delincuencia organizada transnacional, a menos que en ella se disponga otra cosa.",
+   "Las disposiciones del Protocolo objeto de la pregunta se aplicarán mutatis mutandis a la Convención de las Naciones Unidas contra la delincuencia organizada transnacional, cuando en ella se disponga expresamente."
+  ],
+  "correcta": 0,
+  "lila": "Art. 1.2 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "2. Las disposiciones de la Convención se aplicarán mutatis mutandis al presente Protocolo, a menos que en él se disponga otra cosa.",
+  "exp": "La Convención se aplica mutatis mutandis salvo que el Protocolo disponga otra cosa.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-0",
+  "parT": "art 1 3 los delitos tipificados con arreglo al articulo 5 del presente protocolo se consid",
+  "fR": 0.12,
+  "pz": "g-1",
+  "secClave": 40,
+  "id": "2-682"
+ },
+ {
+  "lote": "d8",
+  "i": 341,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "8",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Prevención. A los efectos de identificar y localizar cada arma de fuego, los Estados Parte, exigirán que se aplique a toda arma de fuego importada una marca sencilla y apropiada que permita identificar...:",
+  "opciones": [
+   "La categoría del arma.",
+   "El país de importación.",
+   "El año de la importación, en todo caso.",
+   "El país de exportador."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. A los efectos de identificar y localizar cada arma de fuego, los Estados Parte: a) E n el momento de la fabricación de cada arma de fuego exigirán que ésta sea marcada con una marca distintiva que indique el nombre del fabricante, el país o lugar de fabricación y el número de serie, o mantendrán cualquier otra marca distintiva y fácil de emplear que ostente símbolos geométricos sencillos, junto con un código numérico y/o alfanumérico, y que permita a todos los Estados Parte identificar sin dificultad el país de fabricación; b) Exigirán que se aplique a toda arma de fuego importada una marca sencilla y apropiada que permita identificar el país de importación y, de ser posible, el año de ésta, y permita asimismo a las autoridades competentes de ese país localizar el arma de fuego, así como una marca distintiva, si el arma de fuego no la lleva. Los requisitos del presente apartado no tendrán que aplicarse a la importación temporal de armas de fuego con fines lícitos verificables; c) Velarán por que, en el momento en que se transfiera un arma de fuego de las existencias estatales a la utilización civil con carácter permanente, se aplique a dicha arma la marca distintiva apropiada que permita a todos los Estados Parte identificar el país que realiza la transferencia.",
+  "exp": "La marca de las armas importadas identifica el país de importación y, de ser posible, el año.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "118-1",
+  "parT": "art 8 1 a los efectos de identificar y localizar cada arma de fuego los estados parte a en",
+  "fR": 1,
+  "pz": "g-8",
+  "secClave": 41,
+  "id": "2-683"
+ },
+ {
+  "lote": "d8",
+  "i": 342,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "7",
+    "ap": null
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. ¿Por qué periodo garantizará cada Estado Parte el mantenimiento de la información relativa a las armas de fuego?:",
+  "opciones": [
+   "Por un período no inferior a cinco años.",
+   "Por un período superior a cinco años.",
+   "Por un período superior a diez años.",
+   "Por un período no inferior a diez años."
+  ],
+  "correcta": 3,
+  "lila": "Art. 7 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Cada Estado Parte garantizará el mantenimiento, por un período no inferior a diez años, de la información relativa a las armas de fuego y, cuando sea apropiado y factible, de la información relativa a sus piezas y componentes y municiones que sea necesaria para localizar e identificar las armas de fuego y, cuando sea apropiado y factible, sus piezas y componentes y municiones que hayan sido objeto de fabricación o tráfico ilícitos, así como para evitar y detectar esas actividades. Esa información incluirá: a) Las marcas pertinentes requeridas de conformidad con el artículo 8 del presente Protocolo; b) En los casos que entrañen transacciones internacionales con armas de fuego, sus piezas y componentes y municiones, las fechas de emisión y expiración de las licencias o autorizaciones correspondientes, el país de exportación, el país de importación, los países de tránsito, cuando proceda, y el receptor final, así como la descripción y la cantidad de los artículos.",
+  "exp": "La información se conserva por un período no inferior a diez años.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "118-0",
+  "parT": "art 7 cada estado parte garantizara el mantenimiento por un periodo no inferior a diez ano",
+  "fR": 1,
+  "pz": "g-7",
+  "secClave": 41,
+  "id": "2-684"
+ },
+ {
+  "lote": "d8",
+  "i": 343,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "3",
+    "ap": "d"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Para los fines del presente Protocolo, por «fabricación ilícita» se entenderá la fabricación o el montaje de armas de fuego, sus piezas y componentes o municiones:",
+  "opciones": [
+   "Sin marcar las armas en el momento de su fabricación, de conformidad el presente Protocolo.",
+   "Todas las opciones son correctas.",
+   "Sin licencia o autorización de una autoridad competente del Estado Parte al que se vayan a enviar dichas armas.",
+   "A partir de piezas y componentes que hayan sido objeto de tráfico lícito."
+  ],
+  "correcta": 0,
+  "lila": "Art. 3.d · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Para los fines del presente Protocolo: d) Por “fabricación ilícita” se entenderá la fabricación o el montaje de armas de fuego, sus piezas y componentes o municiones: i) A partir de piezas y componentes que hayan sido objeto de tráfico ilícito; ii) Sin licencia o autorización de una autoridad competente del Estado Parte en que se realice la fabricación o el montaje; o iii) Sin marcar las armas de fuego en el momento de su fabricación, de conformidad con el artículo 8 del presente Protocolo; La concesión de licencia o autorización respecto de la fabricación de piezas y componentes se hará de conformidad con el derecho interno;",
+  "exp": "Es fabricación ilícita la hecha sin marcar las armas; las otras dos alteran el texto.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-2",
+  "parT": "art 3 a por arma de fuego se entendera toda arma portatil que tenga canon y que lance este",
+  "fR": 0.5,
+  "pz": "g-3",
+  "secClave": 40,
+  "id": "2-685"
+ },
+ {
+  "lote": "d8",
+  "i": 344,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "13",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Cooperación. Señale la opción INCORRECTA. Los Estados Parte cooperarán a fin de prevenir, combatir y erradicar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, ¿en qué planos?:",
+  "opciones": [
+   "En el plano nacional.",
+   "En el plano regional.",
+   "En el plano internacional.",
+   "En el plano bilateral."
+  ],
+  "correcta": 0,
+  "lila": "Art. 13.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. Los Estados Parte cooperarán en los planos bilateral, regional e internacional a fin de prevenir, combatir y erradicar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones.",
+  "exp": "El artículo cita los planos bilateral, regional e internacional.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "121-1",
+  "parT": "art 13 2 cada estado parte designara un organo nacional o un punto de contacto central enc",
+  "fR": 0,
+  "pz": "g-13",
+  "secClave": 42,
+  "id": "2-686"
+ },
+ {
+  "lote": "d8",
+  "i": 345,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "20",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Denuncia. ¿Cuándo dejarán de ser Partes en el presente Protocolo las organizaciones regionales de integración económica?:",
+  "opciones": [
+   "Cuando lo hayan denunciado todos sus Estados miembros.",
+   "Cuando lo hayan denunciado la mayoría absoluta de todos sus Estados miembros.",
+   "Cuando lo hayan denunciado una mayoría de dos tercios de sus Estados miembros.",
+   "Cuando lo hayan denunciado la mayoría de sus Estados miembros."
+  ],
+  "correcta": 0,
+  "lila": "Art. 20.2 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "2. Las organizaciones regionales de integración económica dejarán de ser Partes en el presente Protocolo cuando lo hayan denunciado todos sus Estados miembros.",
+  "exp": "Dejan de ser Partes cuando denuncian todos sus Estados miembros.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "pz": null,
+  "secClave": 42,
+  "id": "2-687"
+ },
+ {
+  "lote": "d8",
+  "i": 346,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "15",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Corredores y corretaje. Con miras a prevenir y combatir la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, los Estados Parte que aún no lo hayan hecho considerarán la posibilidad de establecer un sistema de reglamentación de las actividades de las personas dedicadas al corretaje. ¿Qué medidas podría incluir?:",
+  "opciones": [
+   "Exigir que en las licencias o autorizaciones de importación y de exportación, o en la documentación adjunta a la mercancía, se consigne el nombre y la nacionalidad de los corredores que intervengan en la transacción.",
+   "Exigir la inscripción en un registro de los corredores que actúen en su territorio.",
+   "Exigir un seguro obligatorio para el ejercicio del corretaje.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 15.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. Con miras a prevenir y combatir la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, los Estados Parte que aún no lo hayan hecho considerarán la posibilidad de establecer un sistema de reglamentación de las actividades de las personas dedicadas al corretaje. Ese sistema podría incluir una o varias de las siguientes medidas: a) Exigir la inscripción en un registro de los corredores que actúen en su territorio; b) Exigir una licencia o autorización para el ejercicio del corretaje; o c) Exigir que en las licencias o autorizaciones de importación y de exportación, o en la documentación adjunta a la mercancía, se consigne el nombre y la ubicación de los corredores que intervengan en la transacción.",
+  "exp": "El registro de corredores es una de las medidas; se consigna la ubicación, no la nacionalidad, y no hay seguro.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "121-3",
+  "parT": "art 15 1 con miras a prevenir y combatir la fabricacion y el trafico ilicitos de armas de ",
+  "fR": 1,
+  "pz": "g-15",
+  "secClave": 42,
+  "id": "2-688"
+ },
+ {
+  "lote": "d8",
+  "i": 347,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "15",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Con miras a prevenir y combatir la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, los Estados Parte que aún no lo hayan hecho considerarán la posibilidad de establecer un sistema de reglamentación de las actividades de las personas dedicadas al corretaje. Ese sistema podría incluir una o varias de las siguientes medidas:",
+  "opciones": [
+   "Exigir una licencia o autorización para el ejercicio del corretaje.",
+   "Todas las opciones son correctas.",
+   "Exigir que en las licencias o autorizaciones de importación y de exportación, o en la documentación adjunta a la mercancía, se consigne el nombre y la ubicación de los corredores que no intervengan en la transacción.",
+   "Exigir la inscripción en un registro de los corredores que actúen fuera de su territorio."
+  ],
+  "correcta": 0,
+  "lila": "Art. 15.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. Con miras a prevenir y combatir la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, los Estados Parte que aún no lo hayan hecho considerarán la posibilidad de establecer un sistema de reglamentación de las actividades de las personas dedicadas al corretaje. Ese sistema podría incluir una o varias de las siguientes medidas: a) Exigir la inscripción en un registro de los corredores que actúen en su territorio; b) Exigir una licencia o autorización para el ejercicio del corretaje; o c) Exigir que en las licencias o autorizaciones de importación y de exportación, o en la documentación adjunta a la mercancía, se consigne el nombre y la ubicación de los corredores que intervengan en la transacción.",
+  "exp": "La licencia o autorización es una medida literal; las otras alteran el texto.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "121-3",
+  "parT": "art 15 1 con miras a prevenir y combatir la fabricacion y el trafico ilicitos de armas de ",
+  "fR": 1,
+  "pz": "g-15",
+  "secClave": 42,
+  "id": "2-689"
+ },
+ {
+  "lote": "d8",
+  "i": 348,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "17",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Respecto a la firma, ratificación, aceptación, aprobación y adhesión, Señale la opción INCORRECTA:",
+  "opciones": [
+   "Las organizaciones regionales de integración económica comunicarán también al depositario cualquier modificación pertinente del alcance de su competencia.",
+   "En el momento de su adhesión, las organizaciones regionales de integración económica declararán el alcance de su competencia con respecto a las cuestiones regidas por el presente Protocolo.",
+   "El presente Protocolo estará abierto a la adhesión de todos los Estados u organizaciones regionales de integración económica que cuenten por lo menos con dos Estados miembros que sean Parte en el presente Protocolo.",
+   "Los instrumentos de adhesión se depositarán en poder del Secretario General de las Naciones Unidas."
+  ],
+  "correcta": 2,
+  "lila": "Art. 17.4 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "4. El presente Protocolo estará abierto a la adhesión de todos los Estados u organizaciones regionales de integración económica que cuenten por lo menos con un Estado miembro que sea Parte en el presente Protocolo. Los instrumentos de adhesión se depositarán en poder del Secretario General de las Naciones Unidas. En el momento de su adhesión, las organizaciones regionales de integración económica declararán el alcance de su competencia con respecto a las cuestiones regidas por el presente Protocolo. Dichas organizaciones comunicarán también al depositario cualquier modificación pertinente del alcance de su competencia.",
+  "exp": "Basta con un Estado miembro que sea Parte.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "123-2",
+  "parT": "art 17 3 el presente protocolo estara sujeto a ratificacion aceptacion o aprobacion los in",
+  "fR": 0.54,
+  "pz": "g-17",
+  "secClave": 42,
+  "id": "2-690"
+ },
+ {
+  "lote": "d8",
+  "i": 349,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "15",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Corredores y corretaje. Con miras a prevenir y combatir la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, los Estados Parte que aún no lo hayan hecho considerarán la posibilidad de establecer un sistema de reglamentación de las actividades de las personas dedicadas al corretaje. Ese sistema podría incluir una o varias de las siguientes medidas:",
+  "opciones": [
+   "Exigir que en las licencias o autorizaciones de importación y de exportación, o en la documentación adjunta a la mercancía, se consigne el nombre y la ubicación de los corredores que intervengan en la transacción.",
+   "Exigir una licencia o autorización para el ejercicio del corretaje.",
+   "Exigir la inscripción en un registro de los corredores que actúen en su territorio.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 15.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. Con miras a prevenir y combatir la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, los Estados Parte que aún no lo hayan hecho considerarán la posibilidad de establecer un sistema de reglamentación de las actividades de las personas dedicadas al corretaje. Ese sistema podría incluir una o varias de las siguientes medidas: a) Exigir la inscripción en un registro de los corredores que actúen en su territorio; b) Exigir una licencia o autorización para el ejercicio del corretaje; o c) Exigir que en las licencias o autorizaciones de importación y de exportación, o en la documentación adjunta a la mercancía, se consigne el nombre y la ubicación de los corredores que intervengan en la transacción.",
+  "exp": "Las tres figuran en el artículo 15.1.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "121-3",
+  "parT": "art 15 1 con miras a prevenir y combatir la fabricacion y el trafico ilicitos de armas de ",
+  "fR": 1,
+  "pz": "g-15",
+  "secClave": 42,
+  "id": "2-691"
+ },
+ {
+  "lote": "d8",
+  "i": 350,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "2",
+    "ap": null
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. ¿Cuál es la finalidad del presente Protocolo?:",
+  "opciones": [
+   "Promover, facilitar y reforzar la cooperación entre los Estados Parte con el propósito de prevenir, combatir y erradicar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones.",
+   "Promover la firma de acuerdos entre los Estados Parte con el propósito de prevenir, combatir y sancionar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones.",
+   "Promover la firma de acuerdos entre los Estados Parte con el propósito de prevenir, combatir y erradicar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones.",
+   "Promover, facilitar y reforzar la cooperación entre los Estados Parte con el propósito de prevenir, combatir y sancionar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones."
+  ],
+  "correcta": 0,
+  "lila": "Art. 2 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "La FINALIDAD del presente Protocolo es promover, facilitar y reforzar la cooperación entre los Estados Parte con el propósito de prevenir, combatir y erradicar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones.",
+  "exp": "La finalidad es promover, facilitar y reforzar la cooperación para prevenir, combatir y erradicar.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-1",
+  "parT": "art 2 la finalidad del presente protocolo es promover facilitar y reforzar la cooperacion ",
+  "fR": 1,
+  "pz": "g-2",
+  "secClave": 40,
+  "id": "2-692"
+ },
+ {
+  "lote": "d8",
+  "i": 352,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "5",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Penalización. Cada Estado Parte adoptará las medidas legislativas o de otra índole que sean necesarias para tipificar como delito las siguientes conductas, cuando se cometan intencionalmente:",
+  "opciones": [
+   "El tráfico ilícito de armas de fuego, sus piezas y componentes y municiones.",
+   "La falsificación o la obliteración, supresión o alteración ilícitas de la(s) marca(s) de un arma de fuego requerida(s) de conformidad con el presente Protocolo.",
+   "La fabricación ilícita de armas de fuego, sus piezas y componentes y municiones.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 5.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. Cada Estado Parte adoptará las medidas legislativas o de otra índole que sean necesarias para tipificar como delito las siguientes conductas, cuando se cometan intencionalmente: a) La fabricación ilícita de armas de fuego, sus piezas y componentes y municiones; b) El tráfico ilícito de armas de fuego, sus piezas y componentes y municiones; c) La falsificación o la obliteración, supresión o alteración ilícitas de la(s) marca(s) de un arma de fuego requerida(s) de conformidad con el artículo 8 del presente Protocolo.",
+  "exp": "Las tres conductas figuran en el artículo 5.1.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "117-0",
+  "parT": "art 5 1 cada estado parte adoptara las medidas para tipificar como delito las siguientes c",
+  "fR": 0.55,
+  "pz": "g-5",
+  "secClave": 41,
+  "id": "2-693"
+ },
+ {
+  "lote": "d8",
+  "i": 353,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "4",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Disposiciones generales. ¿A qué NO se aplicará el Protocolo objeto de la pregunta?:",
+  "opciones": [
+   "A los tránsitos entre Estados.",
+   "A las transferencias estatales cuando la aplicación del presente Protocolo pudiera perjudicar el derecho de un Estado Parte a adoptar medidas en aras de la seguridad nacional en consonancia con el citado Protocolo.",
+   "A las transacciones entre Estados cuando la aplicación del presente Protocolo pudiera perjudicar el derecho de un Estado Parte a adoptar medidas en aras de la seguridad nacional en consonancia con la Carta de las Naciones Unidas.",
+   "A los tránsitos estatales cuando la aplicación del presente Protocolo pudiera perjudicar el derecho de un Estado Parte a adoptar medidas en aras de la seguridad nacional en consonancia con el citado Protocolo."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4.2 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "2. El presente Protocolo no se aplicará a las transacciones entre Estados ni a las transferencias estatales cuando la aplicación del Protocolo pudiera perjudicar el derecho de un Estado Parte a adoptar medidas en aras de la seguridad nacional en consonancia con la Carta de las Naciones Unidas.",
+  "exp": "No se aplica a las transacciones y transferencias estatales cuando perjudique la seguridad nacional conforme a la Carta de las Naciones Unidas.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-3",
+  "parT": "art 4 1 cuando esos delitos sean de caracter transnacional y entranen la participacion de ",
+  "fR": 0.8,
+  "pz": "g-4",
+  "secClave": 40,
+  "id": "2-694"
+ },
+ {
+  "lote": "d8",
+  "i": 354,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "12",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Los Estados Parte intercambiarán, de conformidad con sus respectivos ordenamientos jurídicos y administrativos internos, información pertinente sobre cuestiones como:",
+  "opciones": [
+   "Los grupos delictivos organizados efectiva o presuntamente involucrados en la fabricación o el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones.",
+   "Los métodos y medios, los lugares de expedición y de destino y las rutas que habitualmente utilizan los grupos delictivos organizados que participan en el tráfico ilícito de armas de sus piezas y componentes y municiones.",
+   "Los medios de ocultación utilizados en la fabricación o el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, así como las formas de detectarlos.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 12.2 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "2. Sin perjuicio de lo dispuesto en los artículos 27 y 28 de la Convención, los Estados Parte intercambiarán, de conformidad con sus respectivos ordenamientos jurídicos y administrativos internos, información pertinente sobre cuestiones como: a) Los grupos delictivos organizados efectiva o presuntamente involucrados en la fabricación o el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones; b) Los medios de ocultación utilizados en la fabricación o el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, así como las formas de detectarlos; c) Los métodos y medios, los lugares de expedición y de destino y las rutas que habitualmente utilizan los grupos delictivos organizados que participan en el tráfico ilícito de armas de fuego, sus piezas y componentes y municiones; y d) Experiencias de carácter legislativo, así como prácticas y medidas conexas, para prevenir, combatir y erradicar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones.",
+  "exp": "Las tres figuran en el artículo 12.2.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "121-0",
+  "parT": "art 12 5 cada estado parte garantizara la confidencialidad y acatara las restricciones imp",
+  "fR": 0,
+  "pz": "g-12",
+  "secClave": 42,
+  "id": "2-695"
+ },
+ {
+  "lote": "d8",
+  "i": 355,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "10",
+    "ap": "6"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Requisitos generales para sistemas de licencias o autorizaciones de exportación, importación y tránsito. Señale la opción INCORRECTA. Los Estados Parte podrán adoptar procedimientos simplificados para la importación y exportación temporales y para el tránsito de armas de fuego, sus piezas y componentes y municiones para fines lícitos verificables, tales como:",
+  "opciones": [
+   "Pruebas, exposiciones o reparaciones.",
+   "Prácticas de tiro deportivo.",
+   "Cacerías.",
+   "Competiciones de cazadores no federados."
+  ],
+  "correcta": 3,
+  "lila": "Art. 10.6 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "6. Los Estados Parte podrán adoptar procedimientos simplificados para la importación y exportación temporales y para el tránsito de armas de fuego, sus piezas y componentes y municiones para fines lícitos verificables, tales como cacerías, prácticas de tiro deportivo, pruebas, exposiciones o reparaciones.",
+  "exp": "Los ejemplos son cacerías, tiro deportivo, pruebas, exposiciones y reparaciones.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "119-1",
+  "parT": "art 10 6 los estados parte podran adoptar procedimientos simplificados para la importacion",
+  "fR": 1,
+  "pz": "g-10",
+  "secClave": 42,
+  "id": "2-696"
+ },
+ {
+  "lote": "d8",
+  "i": 356,
+  "v": "v10",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "3",
+    "ap": "b"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Por «piezas y componentes» se entenderá todo elemento o elemento de repuesto específicamente concebido para un arma de fuego e indispensable para su funcionamiento, incluidos... Señale la opción INCORRECTA:",
+  "opciones": [
+   "El cañón y todo dispositivo concebido o adaptado para disminuir el sonido causado por el disparo de un arma de fuego.",
+   "El cerrojo o el tambor.",
+   "La caja o el cajón.",
+   "El cierre o el bloqueo del inercia."
+  ],
+  "correcta": 3,
+  "lila": "Art. 3.b · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Para los fines del presente Protocolo: b) Por “piezas y componentes” se entenderá todo elemento o elemento de repuesto específicamente concebido para un arma de fuego e indispensable para su funcionamiento, incluidos el cañón, la caja o el cajón, el cerrojo o el tambor, el cierre o el bloqueo del cierre y todo dispositivo concebido o adaptado para disminuir el sonido causado por el disparo de un arma de fuego;",
+  "exp": "El texto habla del bloqueo del cierre, no de la inercia.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-2",
+  "parT": "art 3 a por arma de fuego se entendera toda arma portatil que tenga canon y que lance este",
+  "fR": 0.87,
+  "pz": "g-3",
+  "secClave": 40,
+  "id": "2-697"
+ },
+ {
+  "lote": "d8",
+  "i": 357,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Disposiciones generales. Respecto al decomiso, incautación y disposición, señale la opción CORRECTA:",
+  "opciones": [
+   "Los Estados Parte adoptarán, de conformidad con su ordenamiento jurídico interno, las medidas necesarias para impedir que las armas de fuego, sus piezas y componentes y municiones que hayan sido objeto de fabricación o tráfico ilícitos caigan en manos de personas no autorizadas.",
+   "A reserva de lo dispuesto en la Convención de Naciones Unidas contra la delincuencia organizada transnacional, los Estados Parte adoptarán, en la mayor medida posible de conformidad con su ordenamiento jurídico interno, las medidas que sean necesarias para permitir el decomiso de las armas de fuego, sus piezas y componentes y municiones que hayan sido objeto de fabricación ilícita.",
+   "Todas las opciones son correctas.",
+   "A reserva de lo dispuesto en la Convención de Naciones Unidas contra la delincuencia organizada transnacional, los Estados Parte adoptarán, en la mayor medida posible de conformidad con su ordenamiento jurídico interno, las medidas que sean necesarias para permitir el decomiso de las armas de fuego, sus piezas y componentes y municiones que hayan sido objeto de tráfico ilícito."
+  ],
+  "correcta": 2,
+  "lila": "Art. 6 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. A reserva de lo dispuesto en el artículo 12 de la Convención, los Estados Parte adoptarán, en la mayor medida posible de conformidad con su ordenamiento jurídico interno, las medidas que sean necesarias para permitir el decomiso de las armas de fuego, sus piezas y componentes y municiones que hayan sido objeto de fabricación o tráfico ilícitos. 2. Los Estados Parte adoptarán, de conformidad con su ordenamiento jurídico interno, las medidas necesarias para impedir que las armas de fuego, sus piezas y componentes y municiones que hayan sido objeto de fabricación o tráfico ilícitos caigan en manos de personas no autorizadas, en particular mediante la incautación y destrucción de esas armas de fuego, sus piezas y componentes y municiones, a menos que se haya autorizado oficialmente otra forma de disposición, siempre y cuando se hayan marcado las armas de fuego y se hayan registrado los métodos para la disposición de esas armas de fuego y municiones.",
+  "exp": "Las afirmaciones recogen los apartados del artículo 6.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "117-1",
+  "parT": "art 6 2 los estados parte adoptaran las medidas necesarias para impedir que las armas de f",
+  "fR": 0.4,
+  "pz": "g-6",
+  "secClave": 41,
+  "id": "2-698"
+ },
+ {
+  "lote": "d8",
+  "i": 358,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "19",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Enmienda. Los Estados Parte en el presente Protocolo reunidos en la Conferencia de las Partes harán todo lo posible por lograr un consenso sobre cada enmienda. Si se han agotado todas las posibilidades de lograr un consenso y no se ha llegado a un acuerdo, ¿qué mayoría exigirá la aprobación de la enmienda en última instancia?:",
+  "opciones": [
+   "Mayoría absoluta de los Estados Parte en el presente Protocolo presentes y votantes en la sesión de la Conferencia de las Partes.",
+   "Mayoría de dos tercios de los Estados Parte en el presente Protocolo presentes y votantes en la sesión de la Conferencia de las Partes.",
+   "Mayoría de dos tercios de los Estados Parte en el presente Protocolo.",
+   "Mayoría absoluta de los Estados Parte en el presente Protocolo."
+  ],
+  "correcta": 1,
+  "lila": "Art. 19.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. Cuando hayan transcurrido cinco años desde la entrada en vigor del presente Protocolo, los Estados Parte podrán proponer enmiendas por escrito al Secretario General de las Naciones Unidas, quien a continuación comunicará toda enmienda propuesta a los Estados Parte y a la Conferencia de las Partes en la Convención para que la examinen y decidan al respecto. Los Estados Parte en el presente Protocolo reunidos en la Conferencia de las Partes harán todo lo posible por lograr un consenso sobre cada enmienda. Si se han agotado todas las posibilidades de lograr un consenso y no se ha llegado a un acuerdo, la aprobación de la enmienda exigirá, en última instancia, una mayoría de dos tercios de los Estados Parte en el presente Protocolo presentes y votantes en la sesión de la Conferencia de las Partes.",
+  "exp": "Mayoría de dos tercios de los Estados Parte presentes y votantes.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "pz": "g-19",
+  "secClave": 42,
+  "id": "2-699"
+ },
+ {
+  "lote": "d8",
+  "i": 359,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "21",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Depositario e idiomas. ¿En cuál de los siguientes idiomas NO está redactado los textos del presente Protocolo?:",
+  "opciones": [
+   "Chino.",
+   "Inglés.",
+   "Alemán.",
+   "Ruso."
+  ],
+  "correcta": 2,
+  "lila": "Art. 21.2 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "2. El original del presente Protocolo, cuyos textos en árabe, chino, español, francés, inglés y ruso son igualmente auténticos, se depositará en poder del Secretario General de las Naciones Unidas.",
+  "exp": "El alemán no es lengua auténtica.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "pz": null,
+  "secClave": 42,
+  "id": "2-700"
+ },
+ {
+  "lote": "d8",
+  "i": 360,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "9",
+    "ap": null
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Desactivación de las armas de fuego. Todo Estado Parte que, de conformidad con su derecho interno, no reconozca como arma de fuego un arma desactivada adoptará las medidas que sean necesarias, incluida la tipificación de delitos específicos, si procede, a fin de prevenir la reactivación ilícita de las armas de fuego desactivadas, en consonancia con los siguientes principios generales de desactivación:",
+  "opciones": [
+   "Se adoptarán disposiciones para que una autoridad competente verifique, cuando proceda, las medidas de desactivación a fin de garantizar que las modificaciones aportadas al arma de fuego la inutilizan permanentemente.",
+   "La verificación por una autoridad competente comprenderá la expedición de un certificado o la anotación en un registro en que se haga constar la desactivación del arma de fuego o la inclusión de una marca a esos efectos claramente visible en el arma de fuego.",
+   "Todas las opciones son correctas.",
+   "Todas las piezas esenciales de un arma de fuego desactivada se tornarán permanentemente inservibles y no susceptibles de ser retiradas, sustituidas o modificadas de cualquier forma que pueda permitir su reactivación."
+  ],
+  "correcta": 2,
+  "lila": "Art. 9 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Todo Estado Parte que, de conformidad con su derecho interno, no reconozca como arma de fuego un arma desactivada adoptará las medidas que sean necesarias, incluida la tipificación de delitos específicos, si procede, a fin de prevenir la reactivación ilícita de las armas de fuego desactivadas, en consonancia con los siguientes principios generales de desactivación: a) Todas las piezas esenciales de un arma de fuego desactivada se tornarán permanentemente inservibles y no susceptibles de ser retiradas, sustituidas o modificadas de cualquier forma que pueda permitir su reactivación; b) Se adoptarán disposiciones para que una autoridad competente verifique, cuando proceda, las medidas de desactivación a fin de garantizar que las modificaciones aportadas al arma de fuego la inutilizan permanentemente; c) La verificación por una autoridad competente comprenderá la expedición de un certificado o la anotación en un registro en que se haga constar la desactivación del arma de fuego o la inclusión de una marca a esos efectos claramente visible en el arma de fuego.",
+  "exp": "Las tres son principios del artículo 9.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "118-2",
+  "parT": "art 9 a todas las piezas esenciales de un arma de fuego desactivada se tornaran permanente",
+  "fR": 0.21,
+  "pz": "g-9",
+  "secClave": 41,
+  "id": "2-701"
+ },
+ {
+  "lote": "d8",
+  "i": 361,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "8",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Marcación de las armas de fuego. ¿Qué exigirán los Estados Parte que se aplique a toda arma de fuego importada a los efectos de identificar y localizar cada arma de fuego?:",
+  "opciones": [
+   "Una marca sencilla y apropiada que permita identificar el país de exportación.",
+   "Una marca distintiva, si el arma de fuego no la lleva.",
+   "Nombre del fabricante.",
+   "El año de fabricación del arma."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. A los efectos de identificar y localizar cada arma de fuego, los Estados Parte: a) E n el momento de la fabricación de cada arma de fuego exigirán que ésta sea marcada con una marca distintiva que indique el nombre del fabricante, el país o lugar de fabricación y el número de serie, o mantendrán cualquier otra marca distintiva y fácil de emplear que ostente símbolos geométricos sencillos, junto con un código numérico y/o alfanumérico, y que permita a todos los Estados Parte identificar sin dificultad el país de fabricación; b) Exigirán que se aplique a toda arma de fuego importada una marca sencilla y apropiada que permita identificar el país de importación y, de ser posible, el año de ésta, y permita asimismo a las autoridades competentes de ese país localizar el arma de fuego, así como una marca distintiva, si el arma de fuego no la lleva. Los requisitos del presente apartado no tendrán que aplicarse a la importación temporal de armas de fuego con fines lícitos verificables; c) Velarán por que, en el momento en que se transfiera un arma de fuego de las existencias estatales a la utilización civil con carácter permanente, se aplique a dicha arma la marca distintiva apropiada que permita a todos los Estados Parte identificar el país que realiza la transferencia.",
+  "exp": "Se exige además una marca distintiva si el arma no la lleva.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "118-1",
+  "parT": "art 8 1 a los efectos de identificar y localizar cada arma de fuego los estados parte a en",
+  "fR": 0.77,
+  "pz": "g-8",
+  "secClave": 41,
+  "id": "2-702"
+ },
+ {
+  "lote": "d8",
+  "i": 362,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "19",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Enmienda. Respecto a las enmiendas del presente protocolo, señale la opción INCORRECTA:",
+  "opciones": [
+   "Cuando una enmienda entre en vigor, seré vinculante para los Estados Parte que hayan expresado su consentimiento al respecto. Los demás Estados Parte quedarán sujetos a las disposiciones del presente Protocolo, así como a cualquier otra enmienda anterior que hubiesen ratificado, aceptado o aprobado.",
+   "Toda enmienda refrendada de conformidad con la presente convención entrará en vigor respecto de un Estado Parte noventa días después de la fecha en que éste deposite en poder del Secretario General de las Naciones Unidas un instrumento de ratificación, aceptación o aprobación de esa enmienda.",
+   "Toda enmienda aprobada de conformidad con la presente convención estará sujeta a ratificación, aceptación o aprobación por los Estados Parte.",
+   "Toda enmienda refrendada de conformidad con la presente convención entrará en vigor respecto de un Estado Parte treinta días después de la fecha en que éste deposite en poder del Secretario General de las Naciones Unidas un instrumento de ratificación, aceptación o aprobación de esa enmienda."
+  ],
+  "correcta": 3,
+  "lila": "Art. 19.4 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "4. Toda enmienda refrendada de conformidad con el párrafo 1 del presente artículo entrará en vigor respecto de un Estado Parte noventa días después de la fecha en que éste deposite en poder del Secretario General de las Naciones Unidas un instrumento de ratificación, aceptación o aprobación de esa enmienda.",
+  "exp": "La enmienda entra en vigor noventa días después, no treinta.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "pz": "g-19",
+  "secClave": 42,
+  "id": "2-703"
+ },
+ {
+  "lote": "d8",
+  "i": 363,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "10",
+    "ap": null
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Prevención. Respecto a los requisitos generales para sistemas de licencias o autorizaciones de exportación, importación y tránsito, señale la opción CORRECTA:",
+  "opciones": [
+   "Antes de emitir licencias o autorizaciones de exportación para la expedición de armas de fuego, sus piezas y componentes y municiones, cada Estado Parte se asegurará de que los Estados de tránsito hayan, al menos, comunicado por escrito, con anterioridad a la expedición, que no se oponen al tránsito.",
+   "Antes de emitir licencias o autorizaciones de exportación para la expedición de armas de fuego, sus piezas y componentes y municiones, cada Estado Parte se asegurará de que los Estados importadores hayan emitido las correspondientes licencias o autorizaciones.",
+   "Todas las opciones son correctas.",
+   "Cada Estado Parte establecerá o mantendrá un sistema eficaz de licencias o autorizaciones de exportación e importación, así como de medidas aplicables al tránsito internacional, para la transferencia de armas de fuego, sus piezas y componentes y municiones."
+  ],
+  "correcta": 2,
+  "lila": "Art. 10 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. Cada Estado Parte establecerá o mantendrá un sistema eficaz de licencias o autorizaciones de exportación e importación, así como de medidas aplicables al tránsito internacional, para la transferencia de armas de fuego, sus piezas y componentes y municiones. 2. Antes de emitir licencias o autorizaciones de exportación para la expedición de armas de fuego, sus piezas y componentes y municiones, cada Estado Parte se asegurará de que: a) Los Estados importadores hayan emitido las correspondientes licencias o autorizaciones; y b) Los Estados de tránsito hayan al menos comunicado por escrito, con anterioridad a la expedición, que no se oponen al tránsito, sin perjuicio de los acuerdos o arreglos bilaterales o multilaterales destinados a favorecer a los Estados sin litoral. 3. La licencia o autorización de exportación e importación y la documentación que la acompañe contendrán conjuntamente información que, como mínimo, comprenda el lugar y la fecha de emisión, la fecha de expiración, el país de exportación, el país de importación, el destinatario final, una descripción y la cantidad de las armas de fuego, sus piezas y componentes y municiones y, cuando haya tránsito, los países de tránsito. La información contenida en la licencia de importación deberá facilitarse a los Estados de tránsito con antelación. 4. El Estado Parte importador notificará al Estado Parte exportador, previa solicitud, la recepción de las remesas de armas de fuego, sus piezas y componentes y municiones que le hayan sido enviadas. 5. Cada Estado Parte adoptará, dentro de sus posibilidades, las medidas necesarias para garantizar que los procedimientos de licencia o autorización sean seguros y que la autenticidad de los documentos de licencia o autorización pueda ser verificada o validada. 6. Los Estados Parte podrán adoptar procedimientos simplificados para la importación y exportación temporales y para el tránsito de armas de fuego, sus piezas y componentes y municiones para fines lícitos verificables, tales como cacerías, prácticas de tiro deportivo, pruebas, exposiciones o reparaciones.",
+  "exp": "Las tres reproducen el artículo 10.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "120-0",
+  "parT": "art 10 2 antes de emitir licencias o autorizaciones de exportacion cada estado parte se as",
+  "fR": 0.36,
+  "pz": "g-10",
+  "secClave": 42,
+  "id": "2-704"
+ },
+ {
+  "lote": "d8",
+  "i": 364,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "8",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Marcación de las armas de fuego. Señale la opción INCORRECTA. A los efectos de identificar y localizar cada arma de fuego, ¿qué exigirán los Estados Parte en el momento de la fabricación?:",
+  "opciones": [
+   "Que cada arma de fuego sea marcado con una marca distintiva que indique el año de fabricación.",
+   "Que cada arma de fuego sea marcado con una marca distintiva que indique el nombre del fabricante.",
+   "Que cada arma de fuego sea marcado con una marca distintiva que indique el país o lugar de fabricación.",
+   "Que cada arma de fuego sea marcado con una marca distintiva que indique el número de serie."
+  ],
+  "correcta": 0,
+  "lila": "Art. 8.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. A los efectos de identificar y localizar cada arma de fuego, los Estados Parte: a) E n el momento de la fabricación de cada arma de fuego exigirán que ésta sea marcada con una marca distintiva que indique el nombre del fabricante, el país o lugar de fabricación y el número de serie, o mantendrán cualquier otra marca distintiva y fácil de emplear que ostente símbolos geométricos sencillos, junto con un código numérico y/o alfanumérico, y que permita a todos los Estados Parte identificar sin dificultad el país de fabricación; b) Exigirán que se aplique a toda arma de fuego importada una marca sencilla y apropiada que permita identificar el país de importación y, de ser posible, el año de ésta, y permita asimismo a las autoridades competentes de ese país localizar el arma de fuego, así como una marca distintiva, si el arma de fuego no la lleva. Los requisitos del presente apartado no tendrán que aplicarse a la importación temporal de armas de fuego con fines lícitos verificables; c) Velarán por que, en el momento en que se transfiera un arma de fuego de las existencias estatales a la utilización civil con carácter permanente, se aplique a dicha arma la marca distintiva apropiada que permita a todos los Estados Parte identificar el país que realiza la transferencia.",
+  "exp": "La marca de fabricación indica fabricante, país o lugar y número de serie, no el año.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "118-1",
+  "parT": "art 8 1 a los efectos de identificar y localizar cada arma de fuego los estados parte a en",
+  "fR": 0.77,
+  "pz": "g-8",
+  "secClave": 41,
+  "id": "2-705"
+ },
+ {
+  "lote": "d8",
+  "i": 365,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "3",
+    "ap": "f"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Disposiciones generales. Para los fines del presente Protocolo, ¿qué se entenderá por el rastreo sistemático de las armas de fuego y, de ser posible, de sus piezas y componentes y municiones, desde el fabricante al comprador, con el fin de ayudar a las autoridades competentes de los Estados Parte a detectar, investigar y analizar la fabricación y el tráfico ilícitos?:",
+  "opciones": [
+   "Rastreo.",
+   "Tráfico ilícito.",
+   "Fabricación ilícita.",
+   "Localización."
+  ],
+  "correcta": 3,
+  "lila": "Art. 3.f · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Para los fines del presente Protocolo: f) Por “localización” se entenderá el rastreo sistemático de las armas de fuego y, de ser posible, de sus piezas y componentes y municiones, desde el fabricante al comprador, con el fin de ayudar a las autoridades competentes de los Estados Parte a detectar, investigar y analizar la fabricación y el tráfico ilícitos.",
+  "exp": "Es la definición de localización.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-2",
+  "parT": "art 3 a por arma de fuego se entendera toda arma portatil que tenga canon y que lance este",
+  "fR": 0.81,
+  "pz": "g-3",
+  "secClave": 40,
+  "id": "2-706"
+ },
+ {
+  "lote": "d8",
+  "i": 366,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "3",
+    "ap": "a"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Por «arma de fuego» se entenderá toda arma portátil que tenga cañón y que lance, esté concebida para lanzar o pueda transformarse fácilmente para lanzar un balín, una bala o un proyectil por la acción de un explosivo, las armas de fuego antiguas o sus réplicas. Las armas de fuego antiguas y sus réplicas se definirán de conformidad con el",
+  "opciones": [
+   "Incluidas / derecho interno.",
+   "Excluidas / derecho interno.",
+   "Excluidas / presente Protocolo.",
+   "Incluidas / presente Protocolo."
+  ],
+  "correcta": 1,
+  "lila": "Art. 3.a · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Para los fines del presente Protocolo: a) Por “arma de fuego” se entenderá toda arma portátil que tenga cañón y que lance, esté concebida para lanzar o pueda transformarse fácilmente para lanzar un balín, una bala o un proyectil por la acción de un explosivo, excluidas las armas de fuego antiguas o sus réplicas. Las armas de fuego antiguas y sus réplicas se definirán de conformidad con el derecho interno. En ningún caso, sin embargo, podrán incluir armas de fuego fabricadas después de 1899;",
+  "exp": "Quedan excluidas las armas antiguas, que se definen conforme al derecho interno.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-2",
+  "parT": "art 3 a por arma de fuego se entendera toda arma portatil que tenga canon y que lance este",
+  "fR": 0.74,
+  "pz": "g-3",
+  "secClave": 40,
+  "id": "2-707"
+ },
+ {
+  "lote": "d8",
+  "i": 367,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "12",
+    "ap": null
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Respecto a la información, señale la opción INCORRECTA:",
+  "opciones": [
+   "Los Estados Parte cooperarán en la localización de las armas de fuego, sus piezas y componentes y municiones que puedan haber sido objeto de fabricación o tráfico ilícitos.",
+   "La cooperación entre Estados Parte incluirá la respuesta rápida de los Estados Parte a toda solicitud de asistencia para localizar esas armas de fuego, sus piezas y componentes y municiones, dentro de los medios disponibles.",
+   "Los Estados Parte se facilitarán o intercambiarán, según proceda, toda información científica y tecnológica pertinente que sea de utilidad para las autoridades encargadas de hacer cumplir la ley a fin de reforzar mutuamente su capacidad de prevenir, detectar e investigar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones y de enjuiciar a las personas involucradas en esas actividades ilícitas.",
+   "Con sujeción a los conceptos básicos de su ordenamiento jurídico o a cualesquiera acuerdos internacionales, cada Estado Parte garantizará la confidencialidad y podrá o no acatar las restricciones impuestas a la utilización de toda información que reciba de otro Estado Parte."
+  ],
+  "correcta": 3,
+  "lila": "Art. 12 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. Sin perjuicio de lo dispuesto en los artículos 27 y 28 de la Convención, los Estados Parte intercambiarán, de conformidad con sus respectivos ordenamientos jurídicos y administrativos internos, información pertinente para cada caso específico sobre cuestiones como los fabricantes, agentes comerciales, importadores y exportadores y, de ser posible, transportistas autorizados de armas de fuego, sus piezas y componentes y municiones. 2. Sin perjuicio de lo dispuesto en los artículos 27 y 28 de la Convención, los Estados Parte intercambiarán, de conformidad con sus respectivos ordenamientos jurídicos y administrativos internos, información pertinente sobre cuestiones como: a) Los grupos delictivos organizados efectiva o presuntamente involucrados en la fabricación o el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones; b) Los medios de ocultación utilizados en la fabricación o el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, así como las formas de detectarlos; c) Los métodos y medios, los lugares de expedición y de destino y las rutas que habitualmente utilizan los grupos delictivos organizados que participan en el tráfico ilícito de armas de fuego, sus piezas y componentes y municiones; y d) Experiencias de carácter legislativo, así como prácticas y medidas conexas, para prevenir, combatir y erradicar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones. 3. Los Estados Parte se facilitarán o intercambiarán, según proceda, toda información científica y tecnológica pertinente que sea de utilidad para las autoridades encargadas de hacer cumplir la ley a fin de reforzar mutuamente su capacidad de prevenir, detectar e investigar la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones y de enjuiciar a las personas involucradas en esas actividades ilícitas. 4. Los Estados Parte cooperarán en la localización de las armas de fuego, sus piezas y componentes y municiones que puedan haber sido objeto de fabricación o tráfico ilícitos. Esa cooperación incluirá la respuesta rápida de los Estados Parte a toda solicitud de asistencia para localizar esas armas de fuego, sus piezas y componentes y municiones, dentro de los medios disponibles. 5. Con sujeción a los conceptos básicos de su ordenamiento jurídico o a cualesquiera acuerdos internacionales, cada Estado Parte garantizará la confidencialidad y acatará las restricciones impuestas a la utilización de toda información que reciba de otro Estado Parte de conformidad con el presente artículo, incluida información de dominio privado sobre transacciones comerciales, cuando así lo solicite el Estado Parte que facilita la información. Si no es posible mantener la confidencialidad, antes de revelar la información se dará cuenta de ello al Estado Parte que la facilitó.",
+  "exp": "Las restricciones deben acatarse, no es potestativo.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "121-0",
+  "parT": "art 12 5 cada estado parte garantizara la confidencialidad y acatara las restricciones imp",
+  "fR": 0.46,
+  "pz": "g-12",
+  "secClave": 42,
+  "id": "2-708"
+ },
+ {
+  "lote": "d8",
+  "i": 368,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "3",
+    "ap": "a"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Disposiciones generales. Señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "En ningún caso podrá incluirse en la definición de «arma de fuego» las armas de fuego fabricadas después de 1889.",
+   "Por «arma de fuego» se entenderá toda arma portátil que tenga cañón y que lance, esté concebida para lanzar o pueda transformarse fácilmente para lanzar un balín, una bala o un proyectil por la acción de un explosivo, incluidas las armas de fuego antiguas o sus réplicas.",
+   "Las armas de fuego antiguas y sus réplicas se definirán de conformidad con el derecho interno."
+  ],
+  "correcta": 3,
+  "lila": "Art. 3.a · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Para los fines del presente Protocolo: a) Por “arma de fuego” se entenderá toda arma portátil que tenga cañón y que lance, esté concebida para lanzar o pueda transformarse fácilmente para lanzar un balín, una bala o un proyectil por la acción de un explosivo, excluidas las armas de fuego antiguas o sus réplicas. Las armas de fuego antiguas y sus réplicas se definirán de conformidad con el derecho interno. En ningún caso, sin embargo, podrán incluir armas de fuego fabricadas después de 1899;",
+  "exp": "Las armas antiguas se definen según el derecho interno, están excluidas y el límite es 1899.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-2",
+  "parT": "art 3 a por arma de fuego se entendera toda arma portatil que tenga canon y que lance este",
+  "fR": 0.74,
+  "pz": "g-3",
+  "secClave": 40,
+  "id": "2-709"
+ },
+ {
+  "lote": "d8",
+  "i": 370,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "8",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Prevención. A los efectos de identificar y localizar cada arma de fuego, los Estados Parte:",
+  "opciones": [
+   "En el momento de la fabricación de cada arma de fuego exigirán que ésta sea marcado con una marca distintiva que indique el nombre del fabricante, el país o lugar de fabricación y el número correspondiente al año de fabricación.",
+   "En el momento de la fabricación de cada arma de fuego exigirán que ésta sea marcado con una marca distintiva que indique el nombre del fabricante, el país o lugar de fabricación y el número de serie.",
+   "En el momento de la comercialización de cada arma de fuego exigirán que ésta sea marcado con una marca distintiva que indique el nombre del fabricante, el país o lugar de fabricación y el número de serie.",
+   "En el momento de la comercialización de cada arma de fuego exigirán que ésta sea marcado con una marca distintiva que indique el nombre del fabricante, el país o lugar de fabricación y el número correspondiente al año de fabricación."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. A los efectos de identificar y localizar cada arma de fuego, los Estados Parte: a) E n el momento de la fabricación de cada arma de fuego exigirán que ésta sea marcada con una marca distintiva que indique el nombre del fabricante, el país o lugar de fabricación y el número de serie, o mantendrán cualquier otra marca distintiva y fácil de emplear que ostente símbolos geométricos sencillos, junto con un código numérico y/o alfanumérico, y que permita a todos los Estados Parte identificar sin dificultad el país de fabricación; b) Exigirán que se aplique a toda arma de fuego importada una marca sencilla y apropiada que permita identificar el país de importación y, de ser posible, el año de ésta, y permita asimismo a las autoridades competentes de ese país localizar el arma de fuego, así como una marca distintiva, si el arma de fuego no la lleva. Los requisitos del presente apartado no tendrán que aplicarse a la importación temporal de armas de fuego con fines lícitos verificables; c) Velarán por que, en el momento en que se transfiera un arma de fuego de las existencias estatales a la utilización civil con carácter permanente, se aplique a dicha arma la marca distintiva apropiada que permita a todos los Estados Parte identificar el país que realiza la transferencia.",
+  "exp": "La marca se pone al fabricar e incluye el número de serie.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "118-1",
+  "parT": "art 8 1 a los efectos de identificar y localizar cada arma de fuego los estados parte a en",
+  "fR": 0.91,
+  "pz": "g-8",
+  "secClave": 41,
+  "id": "2-710"
+ },
+ {
+  "lote": "d8",
+  "i": 372,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "15",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Prevención. Con miras a prevenir y combatir la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, los Estados Parte que aún no lo hayan hecho considerarán la posibilidad de establecer un sistema de reglamentación de las actividades de las personas dedicadas al corretaje. Ese sistema podría incluir la medida de:",
+  "opciones": [
+   "Exigir que en las licencias o autorizaciones de importación y de exportación, o en la documentación adjunta a la mercancía, se consigne la marca y el número de armas que compongan el bulto objeto de la transacción.",
+   "Exigir una licencia y una autorización para el ejercicio del corretaje, así como un seguro obligatorio.",
+   "Todas las opciones son correctas.",
+   "Exigir la inscripción en un registro de los corredores que actúen en su territorio."
+  ],
+  "correcta": 3,
+  "lila": "Art. 15.1 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "1. Con miras a prevenir y combatir la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, los Estados Parte que aún no lo hayan hecho considerarán la posibilidad de establecer un sistema de reglamentación de las actividades de las personas dedicadas al corretaje. Ese sistema podría incluir una o varias de las siguientes medidas: a) Exigir la inscripción en un registro de los corredores que actúen en su territorio; b) Exigir una licencia o autorización para el ejercicio del corretaje; o c) Exigir que en las licencias o autorizaciones de importación y de exportación, o en la documentación adjunta a la mercancía, se consigne el nombre y la ubicación de los corredores que intervengan en la transacción.",
+  "exp": "El registro de corredores es una de las medidas.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "121-3",
+  "parT": "art 15 1 con miras a prevenir y combatir la fabricacion y el trafico ilicitos de armas de ",
+  "fR": 1,
+  "pz": "g-15",
+  "secClave": 42,
+  "id": "2-711"
+ },
+ {
+  "lote": "d8",
+  "i": 373,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "7",
+    "ap": null
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Prevención. Cada Estado Parte garantizará el mantenimiento, por un período __________, de la información relativa a las armas de fuego y, cuando sea apropiado y factible, de la información relativa a sus piezas y componentes y municiones que sea necesaria para localizar e identificar las armas de fuego y, cuando sea apropiado y factible, sus piezas y componentes y municiones que hayan sido objeto de fabricación o tráfico ilícitos, así como para evitar y detectar esas actividades:",
+  "opciones": [
+   "No inferior a cinco años.",
+   "No inferior a diez años.",
+   "Superior a cinco años.",
+   "Superior a diez años."
+  ],
+  "correcta": 1,
+  "lila": "Art. 7 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Cada Estado Parte garantizará el mantenimiento, por un período no inferior a diez años, de la información relativa a las armas de fuego y, cuando sea apropiado y factible, de la información relativa a sus piezas y componentes y municiones que sea necesaria para localizar e identificar las armas de fuego y, cuando sea apropiado y factible, sus piezas y componentes y municiones que hayan sido objeto de fabricación o tráfico ilícitos, así como para evitar y detectar esas actividades. Esa información incluirá: a) Las marcas pertinentes requeridas de conformidad con el artículo 8 del presente Protocolo; b) En los casos que entrañen transacciones internacionales con armas de fuego, sus piezas y componentes y municiones, las fechas de emisión y expiración de las licencias o autorizaciones correspondientes, el país de exportación, el país de importación, los países de tránsito, cuando proceda, y el receptor final, así como la descripción y la cantidad de los artículos.",
+  "exp": "El período no puede ser inferior a diez años.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "118-0",
+  "parT": "art 7 cada estado parte garantizara el mantenimiento por un periodo no inferior a diez ano",
+  "fR": 1,
+  "pz": "g-7",
+  "secClave": 41,
+  "id": "2-712"
+ },
+ {
+  "lote": "d8",
+  "i": 374,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "9",
+    "ap": null
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Todo Estado Parte que, de conformidad con su derecho interno, no reconozca como arma de fuego un arma desactivada adoptará las medidas que sean necesarias a fin de prevenir la reactivación ilícita de las armas de fuego desactivadas, ¿en consonancia con que principios generales de desactivación?:",
+  "opciones": [
+   "La verificación por una autoridad competente comprenderá la expedición de un certificado o la anotación en un registro en que se haga constar la desactivación del arma de fuego o la inclusión de una marca a esos efectos claramente visible en el arma de fuego.",
+   "Todas las opciones son correctas.",
+   "Se adoptarán disposiciones para que una autoridad competente verifique que el arma de fuego ha quedado inutilizada temporalmente.",
+   "Todas las piezas esenciales de un arma de fuego desactivada se tornarán temporalmente y no susceptibles de ser retiradas, sustituidas o modificadas de cualquier forma que pueda permitir su reactivación."
+  ],
+  "correcta": 0,
+  "lila": "Art. 9 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Todo Estado Parte que, de conformidad con su derecho interno, no reconozca como arma de fuego un arma desactivada adoptará las medidas que sean necesarias, incluida la tipificación de delitos específicos, si procede, a fin de prevenir la reactivación ilícita de las armas de fuego desactivadas, en consonancia con los siguientes principios generales de desactivación: a) Todas las piezas esenciales de un arma de fuego desactivada se tornarán permanentemente inservibles y no susceptibles de ser retiradas, sustituidas o modificadas de cualquier forma que pueda permitir su reactivación; b) Se adoptarán disposiciones para que una autoridad competente verifique, cuando proceda, las medidas de desactivación a fin de garantizar que las modificaciones aportadas al arma de fuego la inutilizan permanentemente; c) La verificación por una autoridad competente comprenderá la expedición de un certificado o la anotación en un registro en que se haga constar la desactivación del arma de fuego o la inclusión de una marca a esos efectos claramente visible en el arma de fuego.",
+  "exp": "La desactivación es permanente; la verificación con certificado, anotación o marca es literal.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "118-2",
+  "parT": "art 9 a todas las piezas esenciales de un arma de fuego desactivada se tornaran permanente",
+  "fR": 0.21,
+  "pz": "g-9",
+  "secClave": 41,
+  "id": "2-713"
+ },
+ {
+  "lote": "d8",
+  "i": 375,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "10",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Prevención. Respecto a los requisitos generales para sistemas de licencias o autorizaciones de exportación, importación y tránsito, señale la opción INCORRECTA:",
+  "opciones": [
+   "La licencia o autorización de exportación e importación y la documentación que la acompañe contendrán conjuntamente información que, como mínimo, comprenda el lugar y la fecha de emisión, la fecha de expiración, el país de exportación, el país de importación, el destinatario final, una descripción y la cantidad de las armas de fuego, sus piezas y componentes y municiones y, cuando haya tránsito, los países de tránsito.",
+   "Cada Estado Parte adoptará, dentro de sus posibilidades, las medidas necesarias para garantizar que los procedimientos de licencia o autorización sean seguros y que la autenticidad de los documentos de licencia o autorización pueda ser verificada o validada.",
+   "El Estado Parte importador notificará al Estado Parte exportador, en todo caso, la recepción de las remesas de armas de fuego, sus piezas y componentes y municiones que le hayan sido enviados.",
+   "La información contenida en la licencia de importación deberá facilitarse a los Estados de tránsito con antelación."
+  ],
+  "correcta": 2,
+  "lila": "Art. 10.4 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "4. El Estado Parte importador notificará al Estado Parte exportador, previa solicitud, la recepción de las remesas de armas de fuego, sus piezas y componentes y municiones que le hayan sido enviadas.",
+  "exp": "La notificación se hace previa solicitud, no en todo caso.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "119-0",
+  "parT": "1 cada estado parte establecera o mantendra un sistema eficaz de licencias o autorizacione",
+  "fR": 0.27,
+  "pz": "g-10",
+  "secClave": 42,
+  "id": "2-714"
+ },
+ {
+  "lote": "d8",
+  "i": 376,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "16",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Solución de controversias. Si, seis meses después de la fecha de la solicitud de arbitraje, esos Estados Parte no han podido ponerse de acuerdo sobre la organización del arbitraje, ¿a qué institución podrá remitir la controversia cualquiera de esas Partes?:",
+  "opciones": [
+   "A la Corte Internacional de Justicia.",
+   "Al Tribunal de Derechos Humanos.",
+   "A la Corte Penal Internacional.",
+   "A Tribunal de La Haya."
+  ],
+  "correcta": 0,
+  "lila": "Art. 16.2 · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "2. Toda controversia entre dos o más Estados Parte acerca de la interpretación o la aplicación del presente Protocolo que no pueda resolverse mediante la negociación dentro de un plazo razonable deberá, a solicitud de uno de esos Estados Parte, someterse a arbitraje. Si, seis meses después de la fecha de la solicitud de arbitraje, esos Estados Parte no han podido ponerse de acuerdo sobre la organización del arbitraje, cualquiera de esas Partes podrá remitir la controversia a la Corte Internacional de Justicia mediante solicitud conforme al Estatuto de la Corte.",
+  "exp": "Se remite a la Corte Internacional de Justicia.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "123-0",
+  "parT": "art 16 1 los estados parte procuraran solucionar toda controversia relacionada con la inte",
+  "fR": 1,
+  "pz": "g-16",
+  "secClave": 42,
+  "id": "2-715"
+ },
+ {
+  "lote": "d8",
+  "i": 378,
+  "v": "v11",
+  "t": 2,
+  "refs": [
+   {
+    "n": "ARM",
+    "art": "3",
+    "ap": "e"
+   }
+  ],
+  "pregunta": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego, sus piezas y componentes y municiones, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Disposiciones generales. ¿Qué se entenderá por la importación o exportación de armas de fuego desde o a través del territorio de un Estado Parte al de otro Estado Parte si cualquiera de los Estados Partes interesados no lo autoriza conforme a lo dispuesto en el presente Protocolo?:",
+  "opciones": [
+   "Fabricación ilícita.",
+   "Tráfico de armas.",
+   "Actividades prohibidas.",
+   "Tráfico ilícito."
+  ],
+  "correcta": 3,
+  "lila": "Art. 3.e · Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "rojo": "Para los fines del presente Protocolo: e) Por “tráfico ilícito” se entenderá la importación, exportación, adquisición, venta, entrega, traslado o transferencia de armas de fuego, sus piezas y componentes y municiones desde o a través del territorio de un Estado Parte al de otro Estado Parte si cualquiera de los Estados Partes interesados no lo autoriza conforme a lo dispuesto en el presente Protocolo o si las armas de fuego no han sido marcadas conforme a lo dispuesto en el artículo 8 del presente Protocolo;",
+  "exp": "Es la definición de tráfico ilícito.",
+  "apartado": "Protocolo contra la fabricación y el tráfico ilícitos de armas de fuego (complementario a la Convención de Palermo)",
+  "letra": "g",
+  "par": "116-2",
+  "parT": "art 3 a por arma de fuego se entendera toda arma portatil que tenga canon y que lance este",
+  "fR": 0.5,
+  "pz": "g-3",
+  "secClave": 40,
+  "id": "2-716"
+ }
+]

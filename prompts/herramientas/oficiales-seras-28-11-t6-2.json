@@ -1,0 +1,963 @@
+[
+ {
+  "lote": "d10",
+  "i": 97,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "2",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. El __________ es la protección dispensada a los nacionales no comunitarios o a los apátridas a quienes se reconozca la condición de refugiado en los términos definidos en el artículo 3 de esta Ley y en la Convención sobre el Estatuto de los Refugiados, hecha en Ginebra el 28 de julio de 1951, y su Protocolo, suscrito en Nueva York el 31 de enero de 1967:",
+  "opciones": [
+   "Derecho de asilo.",
+   "Derecho a protección.",
+   "Principio non refoulement.",
+   "Derecho a no devolución."
+  ],
+  "correcta": 0,
+  "lila": "Art. 2 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "El derecho de asilo es la protección dispensada a los nacionales no comunitarios o a los apátridas a quienes se reconozca la condición de refugiado en los términos definidos en el artículo 3 de esta Ley y en la Convención sobre el Estatuto de los Refugiados, hecha en Ginebra el 28 de julio de 1951, y su Protocolo, suscrito en Nueva York el 31 de enero de 1967.",
+  "exp": "La protección descrita es el derecho de asilo.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "99-0",
+  "parT": "el derecho de asilo es la proteccion dispensada a los nacionales no comunitarios o a los a",
+  "fR": 1,
+  "pz": "b-2",
+  "id": "6-563"
+ },
+ {
+  "lote": "d10",
+  "i": 98,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "7",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. ¿Qué elementos NO se tendrán en cuenta al valorar los motivos de persecución?:",
+  "opciones": [
+   "El concepto de nacionalidad se limitará a poseer la ciudadanía, en particular, la pertenencia a un grupo determinado por su identidad cultural, étnica o lingüística, sus orígenes geográficos o políticos comunes o su relación con la población de otro Estado.",
+   "El concepto de raza comprenderá, en particular, el color, el origen o la pertenencia a un determinado grupo étnico.",
+   "El concepto de religión comprenderá, en particular, la profesión de creencias teístas, no teístas y ateas, la participación o la abstención de hacerlo, en cultos formales en privado o en público, ya sea individualmente o en comunidad, así como otros actos o expresiones que comporten una opinión de carácter religioso, o formas de conducta personal o comunitaria basadas en cualquier creencia religiosa u ordenadas por ésta.",
+   "El concepto de opiniones políticas comprenderá, en particular, la profesión de opiniones, ideas o creencias sobre un asunto relacionado con los agentes potenciales de persecución y con sus políticas o métodos, independientemente de que el solicitante haya o no obrado de acuerdo con tales opiniones, ideas o creencias."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. Al valorar los motivos de persecución se tendrán en cuenta los siguientes elementos: a) el concepto de raza comprenderá, en particular, el color, el origen o la pertenencia a un determinado grupo étnico; b) el concepto de religión comprenderá, en particular, la profesión de creencias teístas, no teístas y ateas, la participación o la abstención de hacerlo, en cultos formales en privado o en público, ya sea individualmente o en comunidad, así como otros actos o expresiones que comporten una opinión de carácter religioso, o formas de conducta personal o comunitaria basadas en cualquier creencia religiosa u ordenadas por ésta; c) el concepto de nacionalidad no se limitará a poseer o no la ciudadanía, sino que comprenderá, en particular, la pertenencia a un grupo determinado por su identidad cultural, étnica o lingüística, sus orígenes geográficos o políticos comunes o su relación con la población de otro Estado; d) el concepto de opiniones políticas comprenderá, en particular, la profesión de opiniones, ideas o creencias sobre un asunto relacionado con los agentes potenciales de persecución y con sus políticas o métodos, independientemente de que el solicitante haya o no obrado de acuerdo con tales opiniones, ideas o creencias; e) se considerará que un grupo constituye un grupo social determinado, si, en particular: - las personas integrantes de dicho grupo comparten una característica innata o unos antecedentes comunes que no pueden cambiarse, o bien comparten una característica o creencia que resulta tan fundamental para su identidad o conciencia que no se les puede exigir que renuncien a ella, y - dicho grupo posee una identidad diferenciada en el país de que se trate por ser percibido como diferente por la sociedad que lo rodea o por el agente o agentes perseguidores. En función de las circunstancias imperantes en el país de origen, se incluye en el concepto de grupo social determinado un grupo basado en una característica común de orientación sexual o identidad sexual, y, o, edad, sin que estos aspectos por sí solos puedan dar lugar a la aplicación del presente artículo. En ningún caso podrá entenderse como orientación sexual, la realización de conductas tipificadas como delito en el ordenamiento jurídico español. Asimismo, en función de las circunstancias imperantes en el país de origen, se incluye a las personas que huyen de sus países de origen debido a fundados temores de sufrir persecución por motivos de género y, o, edad, sin que estos aspectos por sí solos puedan dar lugar a la aplicación del presente artículo.",
+  "exp": "El concepto de nacionalidad no se limita a poseer la ciudadanía.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "104-3",
+  "parT": "c el concepto de nacionalidad no se limitara a poseer o no la ciudadania sino que comprend",
+  "fR": 0.84,
+  "pz": "b-7",
+  "id": "6-564"
+ },
+ {
+  "lote": "d10",
+  "i": 99,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "8",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. De las condiciones para el reconocimiento del derecho de asilo. Quedarán excluidas de la condición de refugiados las personas extranjeras sobre las que existan motivos fundados para considerar que han cometido un delito:",
+  "opciones": [
+   "Contra los menores de edad de los definidos en los instrumentos internacionales que establecen disposiciones relativas a tal delito.",
+   "Contra las mujeres, de los definidos en los instrumentos internacionales que establecen disposiciones relativas a tal delito.",
+   "Todas las opciones son correctas.",
+   "De guerra de los definidos en los instrumentos internacionales que establecen disposiciones relativas a tal delito."
+  ],
+  "correcta": 3,
+  "lila": "Art. 8.2 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "2. También quedarán excluidas las personas extranjeras sobre las que existan motivos fundados para considerar que: a) han cometido un delito contra la paz, un delito de guerra o un delito contra la humanidad, de los definidos en los instrumentos internacionales que establecen disposiciones relativas a tales delitos; b) han cometido fuera del país de refugio antes de ser admitidas como refugiadas, es decir, antes de la expedición de una autorización de residencia basada en el reconocimiento de la condición de refugiado, un delito grave, entendiéndose por tal los que lo sean conforme al Código Penal español y que afecten a la vida, la libertad, la indemnidad o la libertad sexual, la integridad de las personas o el patrimonio, siempre que fuesen realizados con fuerza en las cosas, o violencia o intimidación en las personas, así como en los casos de la delincuencia organizada, debiendo entenderse incluida, en todo caso, en el término delincuencia organizada la recogida en el apartado cuarto del artículo 282 bis de la Ley de Enjuiciamiento Criminal, en relación con los delitos enumerados; c) son culpables de actos contrarios a las finalidades y a los principios de las Naciones Unidas establecidos en el Preámbulo y en los artículos 1 y 2 de la Carta de las Naciones Unidas.",
+  "exp": "El artículo cita los delitos contra la paz, de guerra y contra la humanidad.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "105-4",
+  "parT": "a han cometido un delito contra la paz un delito de guerra o un delito contra la humanidad",
+  "fR": 0.79,
+  "pz": "b-8",
+  "id": "6-565"
+ },
+ {
+  "lote": "d10",
+  "i": 100,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "10",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Constituyen los daños graves que dan lugar a la protección subsidiaria prevista en la presente Ley:",
+  "opciones": [
+   "La condena a pena de muerte o el riesgo de su ejecución material.",
+   "Las amenazas graves contra la vida o la integridad de los civiles motivadas por una violencia indiscriminada en situaciones de conflicto internacional o interno.",
+   "La tortura y los tratos inhumanos o degradantes en el país de origen del solicitante.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 10 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "Constituyen los daños graves que dan lugar a la protección subsidiaria prevista en el artículo 4 de esta Ley: a) la condena a pena de muerte o el riesgo de su ejecución material; b) la tortura y los tratos inhumanos o degradantes en el país de origen del solicitante; c) las amenazas graves contra la vida o la integridad de los civiles motivadas por una violencia indiscriminada en situaciones de conflicto internacional o interno.",
+  "exp": "Las tres son daños graves.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "107-0",
+  "parT": "constituyen los danos graves que dan lugar a la proteccion subsidiaria prevista en el arti",
+  "fR": 0.48,
+  "pz": "b-10",
+  "id": "6-566"
+ },
+ {
+  "lote": "d10",
+  "i": 101,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "16",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Respecto al derecho de solicitar protección Internacional, señale la opción INCORRECTA:",
+  "opciones": [
+   "Toda información relativa al procedimiento, incluido el hecho de la presentación de la solicitud, tendrá carácter reservado.",
+   "Para su ejercicio, los solicitantes de protección internacional tendrán derecho a asistencia sanitaria y a asistencia jurídica gratuita, que se extenderá a la formalización de la solicitud y a toda la tramitación del procedimiento, y que se prestará en los términos previstos en la legislación española en esta materia, así como derecho a intérprete en los términos del artículo 22 de la Ley Orgánica 4/2000.",
+   "Las personas nacionales no comunitarias y las apátridas presentes en territorio español tienen derecho a solicitar protección internacional en España.",
+   "La presentación de la solicitud conllevará la valoración de las circunstancias determinantes del reconocimiento de la condición de refugiado, así como de la concesión de la protección subsidiaria. De este extremo se informará en debida forma al solicitante."
+  ],
+  "correcta": 0,
+  "lila": "Art. 16 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. Las personas nacionales no comunitarias y las apátridas presentes en territorio español tienen derecho a solicitar protección internacional en España. 2. Para su ejercicio, los solicitantes de protección internacional tendrán derecho a asistencia sanitaria y a asistencia jurídica gratuita, que se extenderá a la formalización de la solicitud y a toda la tramitación del procedimiento, y que se prestará en los términos previstos en la legislación española en esta materia, así como derecho a intérprete en los términos del artículo 22 de la Ley Orgánica 4/2000. La asistencia jurídica referida en el párrafo anterior será preceptiva cuando las solicitudes se formalicen de acuerdo al procedimiento señalado en el artículo 21 de la presente Ley. 3. La presentación de la solicitud conllevará la valoración de las circunstancias determinantes del reconocimiento de la condición de refugiado, así como de la concesión de la protección subsidiaria. De este extremo se informará en debida forma al solicitante. 4. Toda información relativa al procedimiento, incluido el hecho de la presentación de la solicitud, tendrá carácter confidencial.",
+  "exp": "La información tiene carácter confidencial.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "112-3",
+  "parT": "4 toda informacion relativa al procedimiento incluido el hecho de la presentacion de la so",
+  "fR": 0.93,
+  "pz": "b-16",
+  "id": "6-567"
+ },
+ {
+  "lote": "d10",
+  "i": 102,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "20",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. ¿Quién podrá NO admitir a trámite las solicitudes por falta de competencia para el examen de las solicitudes o por falta de requisitos?:",
+  "opciones": [
+   "El Ministro del Interior, a propuesta de la Oficina de Asilo y Refugio.",
+   "El Alto Comisionado de las Naciones Unidas (ACNUR), a propuesta Ministro del Interior.",
+   "El Ministro del Interior, a propuesta de la Comisión Interministerial de Asilo y Refugio.",
+   "El Alto Comisionado de las Naciones Unidas (ACNUR), a propuesta de la Comisión Interministerial de Asilo y Refugio."
+  ],
+  "correcta": 0,
+  "lila": "Art. 20.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. El Ministro del Interior, a propuesta de la Oficina de Asilo y Refugio, podrá, mediante resolución motivada, no admitir a trámite las solicitudes cuando concurra alguna de las circunstancias siguientes: – Por falta de competencia para el examen de las solicitudes: a) cuando no corresponda a España su examen con arreglo al Reglamento (CE) 343/2003, del Consejo, de 18 de febrero, por el que se establecen los criterios y mecanismos de determinación del Estado miembro responsable del examen de una solicitud de asilo presentada en uno de los Estados miembros por un nacional de un tercer país; b) cuando no corresponda a España su examen de conformidad con los Convenios Internacionales en que sea Parte. En la resolución por la que se acuerde la no admisión a trámite se indicará a la persona solicitante el Estado responsable de examinarla. En este caso, dicho Estado habrá aceptado explícitamente su responsabilidad y se obtendrán garantías suficientes de protección para la vida, libertad e integridad física de los interesados, así como del respeto a los demás principios indicados en la Convención de Ginebra, en el territorio de dicho Estado. – Por falta de requisitos: c) cuando, de conformidad con lo establecido en el artículo 25.2.b) yen el artículo 26 de la Directiva 2005/85/CE del Consejo, la persona solicitante se halle reconocida como refugiada y tenga derecho a residir o a obtener protección internacional efectiva en un tercer Estado, siempre que sea readmitida en ese país, no exista peligro para su vida o su libertad, ni esté expuesta a tortura o a trato inhumano o degradante y tenga protección efectiva contra la devolución al país perseguidor, con arreglo a la Convención de Ginebra; d) cuando la persona solicitante proceda de un tercer país seguro, de conformidad con lo establecido en el artículo 27 de la Directiva 2005/85/CE del Consejo y, en su caso con la lista que sea elaborada por la Unión Europea, donde, atendiendo a sus circunstancias particulares, reciba un trato en el que su vida, su integridad y su libertad no estén amenazadas por razón de raza, religión, nacionalidad, pertenencia a grupo social u opinión política, se respete el principio de no devolución, así como la prohibición de expulsión en caso de violación del derecho a no ser sometido a torturas ni a tratos crueles, inhumanos o degradantes, exista la posibilidad de solicitar el estatuto de refugiado y, en caso de ser refugiado, a recibir protección con arreglo a la Convención de Ginebra; siempre que el solicitante sea readmitido en ese país y existan vínculos por los cuales sería razonable que el solicitante fuera a ese país. Para la aplicación del concepto de tercer país seguro, también podrá requerirse la existencia de una relación entre el solicitante de asilo y el tercer país de que se trate por la que sería razonable que el solicitante fuera a ese país; e) cuando la persona solicitante hubiese reiterado una solicitud ya denegada en España o presentado una nueva solicitud con otros datos personales, siempre que no se planteen nuevas circunstancias relevantes en cuanto a las condiciones particulares o a la situación del país de origen o de residencia habitual de la persona interesada; f) cuando la persona solicitante sea nacional de un Estado miembro de la Unión Europea, de conformidad con lo dispuesto en el Protocolo al Tratado Constitutivo de la Comunidad Europea sobre el derecho de asilo a nacionales de Estados miembros de la Unión Europea.",
+  "exp": "Resuelve el Ministro del Interior a propuesta de la Oficina de Asilo y Refugio.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "116-0",
+  "parT": "1 el ministro del interior a propuesta de la oficina de asilo y refugio podra mediante res",
+  "fR": 1,
+  "pz": "b-20",
+  "id": "6-568"
+ },
+ {
+  "lote": "d10",
+  "i": 103,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "21",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Solicitudes presentadas en puestos fronterizos. Contra la resolución de inadmisión a trámite o de denegación de la solicitud se podrá presentar una petición de reexamen que suspenderá los efectos de aquélla, ¿en qué plazo desde su notificación?:",
+  "opciones": [
+   "En el plazo de cuatro días.",
+   "En el plazo de diez días.",
+   "En el plazo de dos días.",
+   "En el plazo de ocho días."
+  ],
+  "correcta": 2,
+  "lila": "Art. 21.4 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "4. Contra la resolución de inadmisión a trámite o de denegación de la solicitud se podrá, en el plazo de dos días contados desde su notificación, presentar una petición de reexamen que suspenderá los efectos de aquélla. La resolución de dicha petición, que corresponderá al Ministro del Interior, deberá notificarse a la persona interesada en el plazo de dos días desde el momento en que aquélla hubiese sido presentada.",
+  "exp": "La petición de reexamen se presenta en dos días.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "117-3",
+  "parT": "4 contra la resolucion de inadmision a tramite o de denegacion de la solicitud se podra en",
+  "fR": 1,
+  "pz": "b-21",
+  "id": "6-569"
+ },
+ {
+  "lote": "d10",
+  "i": 104,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "35",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Respecto a la intervención en la tramitación de protección internacional, señale la opción INCORRECTA:",
+  "opciones": [
+   "En los casos que se tramiten las solicitudes mediante el procedimiento de urgencia, si la propuesta de resolución de la Oficina de Asilo y Refugio fuese desfavorable se dará un plazo de treinta días al ACNUR para que, en su caso, informe.",
+   "El representante en España del ACNUR será convocado a las sesiones de la Comisión Interministerial de Asilo y Refugio.",
+   "El representante en España del ACNUR será informado inmediatamente de la presentación de las solicitudes en frontera y podrá entrevistarse, si lo desea, con los solicitantes.",
+   "Con carácter previo a dictarse las resoluciones de las solicitudes presentadas en los puestos fronterizos, se dará audiencia al ACNUR."
+  ],
+  "correcta": 0,
+  "lila": "Art. 35 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. El representante en España del ACNUR será convocado a las sesiones de la Comisión Interministerial de Asilo y Refugio. 2. Asimismo será informado inmediatamente de la presentación de las solicitudes en frontera y podrá entrevistarse, si lo desea, con los solicitantes. Con carácter previo a dictarse las resoluciones que sobre estas solicitudes prevén los apartados primero, segundo y tercero del artículo 21 de la presente Ley, se dará audiencia al ACNUR. 3. En los casos que se tramiten las solicitudes mediante el procedimiento de urgencia, y en los casos de admisión a trámite del artículo 20, si la propuesta de resolución de la Oficina de Asilo y Refugio fuese desfavorable se dará un plazo de diez días al ACNUR para que, en su caso, informe.",
+  "exp": "El plazo del ACNUR para informar es de diez días.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "130-1",
+  "parT": "3 en los casos que se tramiten las solicitudes mediante el procedimiento de urgencia y en ",
+  "fR": 0.88,
+  "pz": "b-35",
+  "id": "6-570"
+ },
+ {
+  "lote": "d10",
+  "i": 105,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "42",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. ¿Quién cesará en la condición de refugiado?:",
+  "opciones": [
+   "Quién expresamente así lo soliciten.",
+   "Quién se hayan establecido, de nuevo, obligatoriamente, en el país que habían abandonado, o fuera del cual habían permanecido, por temor a ser perseguidos.",
+   "Quién habiendo perdido su nacionalidad, la hayan recobrado obligatoriamente.",
+   "Quién se hayan acogido de nuevo, obligatoriamente, a la protección del país de su nacionalidad."
+  ],
+  "correcta": 0,
+  "lila": "Art. 42.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. Cesarán en la condición de refugiados quienes: a) expresamente así lo soliciten; b) se hayan acogido de nuevo, voluntariamente, a la protección del país de su nacionalidad; c) habiendo perdido su nacionalidad, la hayan recobrado voluntariamente; d) hayan adquirido una nueva nacionalidad y disfruten de la protección del país de su nueva nacionalidad; e) se hayan establecido, de nuevo, voluntariamente, en el país que habían abandonado, o fuera del cual habían permanecido, por temor a ser perseguidos; f) hayan abandonado el territorio español y fijado su residencia en otro país; g) no puedan continuar negándose a la protección del país de su nacionalidad por haber desaparecido las circunstancias en virtud de las cuales fueron reconocidos como refugiados; el Estado español tendrá en cuenta si el cambio de circunstancias es lo suficientemente significativo, sin ser de carácter temporal, como para dejar de considerar fundados los temores del refugiado a ser perseguido; h) no teniendo nacionalidad, puedan regresar al país de su anterior residencia habitual por haber desaparecido las circunstancias en virtud de las cuales fueron reconocidos como refugiados.",
+  "exp": "Cesa quien expresamente lo solicite; las demás causas exigen voluntariedad.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "137-1",
+  "parT": "a expresamente asi lo soliciten",
+  "fR": 0.67,
+  "pz": "b-42",
+  "id": "6-571"
+ },
+ {
+  "lote": "d10",
+  "i": 106,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "45",
+    "ap": "8"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Las resoluciones de cese y la revocación de la protección Internacional pondrán fin a la vía administrativa, y, ¿de qué recurso serán susceptibles?:",
+  "opciones": [
+   "Recurso de alzada con carácter potestativo ante la Comisión Interministerial de asilo y refugio y de recurso contencioso-administrativo.",
+   "Recurso de reposición con carácter potestativo ante la Comisión Interministerial de asilo y refugio y de recurso contencioso-administrativo.",
+   "Recurso de alzada con carácter potestativo ante el Ministro del Interior y de recurso contencioso-administrativo.",
+   "Recurso de reposición con carácter potestativo ante el Ministro del Interior y de recurso contencioso-administrativo."
+  ],
+  "correcta": 3,
+  "lila": "Art. 45.8 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "8. Las resoluciones previstas en este Título pondrán fin a la vía administrativa y serán susceptibles de recurso de reposición con carácter potestativo ante el Ministro del Interior y de recurso contencioso-administrativo.",
+  "exp": "Caben reposición potestativa ante el Ministro del Interior y recurso contencioso-administrativo.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "140-6",
+  "parT": "8 las resoluciones previstas en este titulo pondran fin a la via administrativa y seran su",
+  "fR": 1,
+  "pz": "b-45",
+  "id": "6-572"
+ },
+ {
+  "lote": "d10",
+  "i": 107,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "6",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "¿Cuál de las siguientes formas NO podrán revestir los actos de persecución definidos en la presente Ley?:",
+  "opciones": [
+   "Actos de violencia física o psíquica, incluidos los actos de violencia sexual.",
+   "Actos de abusos que afecten a niños menores de edad.",
+   "Actos de naturaleza sexual que afecten a adultos o a niños.",
+   "Denegación de tutela judicial de la que se deriven penas desproporcionadas o discriminatorias."
+  ],
+  "correcta": 1,
+  "lila": "Art. 6.2 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "2. Los actos de persecución definidos en el apartado primero podrán revestir, entre otras, las siguientes formas: a) actos de violencia física o psíquica, incluidos los actos de violencia sexual; b) medidas legislativas, administrativas, policiales o judiciales que sean discriminatorias en sí mismas o que se apliquen de manera discriminatoria; c) procesamientos o penas que sean desproporcionados o discriminatorios; d) denegación de tutela judicial de la que se deriven penas desproporcionadas o discriminatorias; e) procesamientos o penas por la negativa a prestar servicio militar en un conflicto en el que el cumplimiento de dicho servicio conllevaría delitos o actos comprendidos en las cláusulas de exclusión establecidas en el apartado segundo del artículo 8 de esta Ley; f) actos de naturaleza sexual que afecten a adultos o a niños.",
+  "exp": "Los actos de abusos a menores no figuran con esa fórmula en la lista.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "103-3",
+  "parT": "2 los actos de persecucion definidos en el apartado primero podran revestir entre otras la",
+  "fR": 0.33,
+  "pz": "b-6",
+  "id": "6-573"
+ },
+ {
+  "lote": "d10",
+  "i": 108,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "7",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. De las condiciones para el reconocimiento del derecho de asilo. ¿Cómo se denomina a las personas integrantes de un grupo que comparten una característica innata o unos antecedentes comunes que no pueden cambiarse, o bien comparten una característica o creencia que resulta tan fundamental para su identidad o conciencia que no se les puede exigir que renuncien a ella?:",
+  "opciones": [
+   "Grupo social determinado.",
+   "Grupo social indeterminado.",
+   "Grupo antisocial indeterminado.",
+   "Grupo antisocial determinado."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. Al valorar los motivos de persecución se tendrán en cuenta los siguientes elementos: a) el concepto de raza comprenderá, en particular, el color, el origen o la pertenencia a un determinado grupo étnico; b) el concepto de religión comprenderá, en particular, la profesión de creencias teístas, no teístas y ateas, la participación o la abstención de hacerlo, en cultos formales en privado o en público, ya sea individualmente o en comunidad, así como otros actos o expresiones que comporten una opinión de carácter religioso, o formas de conducta personal o comunitaria basadas en cualquier creencia religiosa u ordenadas por ésta; c) el concepto de nacionalidad no se limitará a poseer o no la ciudadanía, sino que comprenderá, en particular, la pertenencia a un grupo determinado por su identidad cultural, étnica o lingüística, sus orígenes geográficos o políticos comunes o su relación con la población de otro Estado; d) el concepto de opiniones políticas comprenderá, en particular, la profesión de opiniones, ideas o creencias sobre un asunto relacionado con los agentes potenciales de persecución y con sus políticas o métodos, independientemente de que el solicitante haya o no obrado de acuerdo con tales opiniones, ideas o creencias; e) se considerará que un grupo constituye un grupo social determinado, si, en particular: - las personas integrantes de dicho grupo comparten una característica innata o unos antecedentes comunes que no pueden cambiarse, o bien comparten una característica o creencia que resulta tan fundamental para su identidad o conciencia que no se les puede exigir que renuncien a ella, y - dicho grupo posee una identidad diferenciada en el país de que se trate por ser percibido como diferente por la sociedad que lo rodea o por el agente o agentes perseguidores. En función de las circunstancias imperantes en el país de origen, se incluye en el concepto de grupo social determinado un grupo basado en una característica común de orientación sexual o identidad sexual, y, o, edad, sin que estos aspectos por sí solos puedan dar lugar a la aplicación del presente artículo. En ningún caso podrá entenderse como orientación sexual, la realización de conductas tipificadas como delito en el ordenamiento jurídico español. Asimismo, en función de las circunstancias imperantes en el país de origen, se incluye a las personas que huyen de sus países de origen debido a fundados temores de sufrir persecución por motivos de género y, o, edad, sin que estos aspectos por sí solos puedan dar lugar a la aplicación del presente artículo.",
+  "exp": "Es la definición de grupo social determinado.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "104-2",
+  "parT": "b el concepto de religion comprendera en particular la profesion de creencias teistas no t",
+  "fR": 0.18,
+  "pz": "b-7",
+  "id": "6-574"
+ },
+ {
+  "lote": "d10",
+  "i": 111,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "17",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Presentación de la solicitud. La comparecencia deberá realizarse sin demora desde la entrada en el territorio español o, en todo caso, desde que se produzcan los acontecimientos que justifiquen el temor fundado de persecución o daños graves, y en todo caso, ¿en qué plazo?:",
+  "opciones": [
+   "En el plazo máximo de quince días.",
+   "En el plazo máximo de dos meses.",
+   "En el plazo máximo de un mes.",
+   "En el plazo máximo de tres meses."
+  ],
+  "correcta": 2,
+  "lila": "Art. 17.2 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "2. La comparecencia deberá realizarse sin demora y en todo caso en el plazo máximo de un mes desde la entrada en el territorio español o, en todo caso, desde que se produzcan los acontecimientos que justifiquen el temor fundado de persecución o daños graves. A estos efectos, la entrada ilegal en territorio español no podrá ser sancionada cuando haya sido realizada por persona que reúna los requisitos para ser beneficiaria de la protección internacional prevista en esta Ley.",
+  "exp": "La comparecencia se realiza en el plazo máximo de un mes.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "113-1",
+  "parT": "2 la comparecencia debera realizarse sin demora y en todo caso en el plazo maximo de un me",
+  "fR": 1,
+  "pz": "b-17",
+  "id": "6-575"
+ },
+ {
+  "lote": "d10",
+  "i": 112,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "21",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Cuando una persona extranjera que no reúna los requisitos necesarios para entrar en territorio español presente una solicitud de protección internacional en un puesto fronterizo, el Ministro del Interior podrá no admitir a trámite la solicitud, ¿en qué plazo deberá ser notificada dicha resolución a la persona interesada?:",
+  "opciones": [
+   "En el plazo máximo de ocho días desde su presentación.",
+   "En el plazo máximo de diez días desde su presentación.",
+   "En el plazo máximo de dos días desde su presentación.",
+   "En el plazo máximo de cuatro días desde su presentación."
+  ],
+  "correcta": 3,
+  "lila": "Art. 21.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. Cuando una persona extranjera que no reúna los requisitos necesarios para entrar en territorio español presente una solicitud de protección internacional en un puesto fronterizo, el Ministro del Interior podrá no admitir a trámite la solicitud mediante resolución motivada cuando en dicha solicitud concurra alguno de los supuestos previstos en el apartado primero del artículo 20. En todo caso, la resolución deberá ser notificada a la persona interesada en el plazo máximo de cuatro días desde su presentación.",
+  "exp": "La resolución se notifica en cuatro días.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "117-1",
+  "parT": "1 cuando una persona extranjera que no reuna los requisitos necesarios para entrar en terr",
+  "fR": 1,
+  "pz": "b-21",
+  "id": "6-576"
+ },
+ {
+  "lote": "d10",
+  "i": 113,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "45",
+    "ap": "7"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. ¿Cuál será el plazo para la notificación de las resoluciones recaídas en los procedimientos de cese y la revocación de la protección Internacional a partir de la presentación de la solicitud por la persona interesada o de la notificación del acuerdo de incoación del procedimiento?:",
+  "opciones": [
+   "Será de seis meses.",
+   "Será de un mes.",
+   "Será de doce meses.",
+   "Será de tres meses."
+  ],
+  "correcta": 0,
+  "lila": "Art. 45.7 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "7. El plazo para la notificación de las resoluciones recaídas en estos procedimientos será de seis meses a partir de la presentación de la solicitud por la persona interesada o de la notificación del acuerdo de incoación del procedimiento de cese o revocación. Concluido dicho plazo, y habida cuenta de las suspensiones o ampliaciones que fuesen aplicables, se tendrá por caducado el expediente, procediéndose de oficio a su archivo.",
+  "exp": "El plazo es de seis meses.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "140-5",
+  "parT": "7 el plazo para la notificacion de las resoluciones recaidas en estos procedimientos sera ",
+  "fR": 1,
+  "pz": "b-45",
+  "id": "6-577"
+ },
+ {
+  "lote": "d10",
+  "i": 114,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "26",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Evaluación de las solicitudes. ¿Qué bastará para que se resuelva favorablemente la solicitud?:",
+  "opciones": [
+   "Que aparezcan sospechas suficientes de persecución o de daños graves.",
+   "Que aparezcan indicios suficientes de persecución o de daños graves.",
+   "Que aparezcan sospechas razonables de persecución o de daños graves.",
+   "Que aparezcan vestigios certeros de persecución o de daños graves."
+  ],
+  "correcta": 1,
+  "lila": "Art. 26.2 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "2. Para que se resuelva favorablemente la solicitud bastará que aparezcan indicios suficientes de persecución o de daños graves.",
+  "exp": "Bastan indicios suficientes.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "121-0",
+  "parT": "1 la administracion general del estado velara por que la informacion necesaria para la eva",
+  "fR": 0.14,
+  "pz": "b-26",
+  "id": "6-578"
+ },
+ {
+  "lote": "d10",
+  "i": 115,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "20",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. De las reglas procedimentales para el reconocimiento de la protección internacional. De la presentación de la solicitud. No admisión de solicitudes presentadas dentro del territorio español. Respecto a la no admisión a trámite de las solicitudes de protección internacional, señale la opción INCORRECTA:",
+  "opciones": [
+   "La no admisión a trámite deberá notificarse en el plazo máximo de un mes contado a partir de la presentación de la solicitud.",
+   "La no admisión a trámite conllevará los mismos efectos que la denegación de la solicitud.",
+   "La constatación, con posterioridad a la admisión a trámite de la solicitud de protección internacional, de alguna de las circunstancias que hubiesen justificado su no admisión será causa de denegación de aquélla.",
+   "La Oficina de Asilo y Refugio, a propuesta del Ministro del Interior, podrá mediante resolución motivada, no admitir a trámite las solicitudes."
+  ],
+  "correcta": 3,
+  "lila": "Art. 20 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. El Ministro del Interior, a propuesta de la Oficina de Asilo y Refugio, podrá, mediante resolución motivada, no admitir a trámite las solicitudes cuando concurra alguna de las circunstancias siguientes: – Por falta de competencia para el examen de las solicitudes: a) cuando no corresponda a España su examen con arreglo al Reglamento (CE) 343/2003, del Consejo, de 18 de febrero, por el que se establecen los criterios y mecanismos de determinación del Estado miembro responsable del examen de una solicitud de asilo presentada en uno de los Estados miembros por un nacional de un tercer país; b) cuando no corresponda a España su examen de conformidad con los Convenios Internacionales en que sea Parte. En la resolución por la que se acuerde la no admisión a trámite se indicará a la persona solicitante el Estado responsable de examinarla. En este caso, dicho Estado habrá aceptado explícitamente su responsabilidad y se obtendrán garantías suficientes de protección para la vida, libertad e integridad física de los interesados, así como del respeto a los demás principios indicados en la Convención de Ginebra, en el territorio de dicho Estado. – Por falta de requisitos: c) cuando, de conformidad con lo establecido en el artículo 25.2.b) yen el artículo 26 de la Directiva 2005/85/CE del Consejo, la persona solicitante se halle reconocida como refugiada y tenga derecho a residir o a obtener protección internacional efectiva en un tercer Estado, siempre que sea readmitida en ese país, no exista peligro para su vida o su libertad, ni esté expuesta a tortura o a trato inhumano o degradante y tenga protección efectiva contra la devolución al país perseguidor, con arreglo a la Convención de Ginebra; d) cuando la persona solicitante proceda de un tercer país seguro, de conformidad con lo establecido en el artículo 27 de la Directiva 2005/85/CE del Consejo y, en su caso con la lista que sea elaborada por la Unión Europea, donde, atendiendo a sus circunstancias particulares, reciba un trato en el que su vida, su integridad y su libertad no estén amenazadas por razón de raza, religión, nacionalidad, pertenencia a grupo social u opinión política, se respete el principio de no devolución, así como la prohibición de expulsión en caso de violación del derecho a no ser sometido a torturas ni a tratos crueles, inhumanos o degradantes, exista la posibilidad de solicitar el estatuto de refugiado y, en caso de ser refugiado, a recibir protección con arreglo a la Convención de Ginebra; siempre que el solicitante sea readmitido en ese país y existan vínculos por los cuales sería razonable que el solicitante fuera a ese país. Para la aplicación del concepto de tercer país seguro, también podrá requerirse la existencia de una relación entre el solicitante de asilo y el tercer país de que se trate por la que sería razonable que el solicitante fuera a ese país; e) cuando la persona solicitante hubiese reiterado una solicitud ya denegada en España o presentado una nueva solicitud con otros datos personales, siempre que no se planteen nuevas circunstancias relevantes en cuanto a las condiciones particulares o a la situación del país de origen o de residencia habitual de la persona interesada; f) cuando la persona solicitante sea nacional de un Estado miembro de la Unión Europea, de conformidad con lo dispuesto en el Protocolo al Tratado Constitutivo de la Comunidad Europea sobre el derecho de asilo a nacionales de Estados miembros de la Unión Europea. 2. La no admisión a trámite prevista en este artículo deberá notificarse en el plazo máximo de un mes contado a partir de la presentación de la solicitud. El transcurso de dicho plazo sin que se haya notificado la resolución a la persona interesada determinará la admisión a trámite de la solicitud y su permanencia provisional en territorio español, sin perjuicio de lo que pueda acordarse en la resolución definitiva del procedimiento. La no admisión a trámite conllevará los mismos efectos que la denegación de la solicitud. 3. La constatación, con posterioridad a la admisión a trámite de la solicitud de protección internacional, de alguna de las circunstancias que hubiesen justificado su no admisión será causa de denegación de aquélla.",
+  "exp": "La inadmisión la acuerda el Ministro del Interior a propuesta de la Oficina de Asilo y Refugio.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "116-0",
+  "parT": "1 el ministro del interior a propuesta de la oficina de asilo y refugio podra mediante res",
+  "fR": 0.65,
+  "pz": "b-20",
+  "id": "6-579"
+ },
+ {
+  "lote": "d10",
+  "i": 116,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "43",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Del cese y la revocación de la protección internacional. ¿Cuándo NO cesará la protección subsidiaria?:",
+  "opciones": [
+   "Cuando la persona beneficiaria haya abandonado el territorio español y fijado su residencia en otro país.",
+   "Cuando se hayan acogido de nuevo, voluntariamente, a la protección del país de su nacionalidad.",
+   "Cuando las circunstancias que condujeron a la concesión de la protección subsidiaria dejen de existir o cambien de tal forma que dicha protección ya no sea necesaria.",
+   "Cuando se solicite expresamente por la persona beneficiaria."
+  ],
+  "correcta": 1,
+  "lila": "Art. 43.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. La protección subsidiaria cesará cuando: a) se solicite expresamente por la persona beneficiaria; b) la persona beneficiaria haya abandonado el territorio español y fijado su residencia en otro país; c) las circunstancias que condujeron a su concesión dejen de existir o cambien de tal forma que dicha protección ya no sea necesaria. El Estado español tendrá en cuenta si el cambio de circunstancias es lo suficientemente significativo, sin ser de carácter temporal, como para que la persona con derecho a protección subsidiaria ya no corra un riesgo real de sufrir daños graves.",
+  "exp": "Acogerse a la protección del país de nacionalidad es causa de cese del estatuto de refugiado, no de la protección subsidiaria.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "138-3",
+  "parT": "c las circunstancias que condujeron a su concesion dejen de existir o cambien de tal forma",
+  "fR": 0.23,
+  "pz": "b-43",
+  "id": "6-580"
+ },
+ {
+  "lote": "d10",
+  "i": 119,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "6",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. De las condiciones para el reconocimiento del derecho de asilo. ¿Qué formas podrán revestir los actos de persecución definidos en la presente Ley?:",
+  "opciones": [
+   "Medidas legislativas, administrativas, policiales o judiciales que puedan producir discriminación.",
+   "Procesamientos o penas por la negativa a prestar servicio militar en un conflicto en el que el cumplimiento de dicho servicio conllevaría delitos o infracciones graves.",
+   "Actos de acoso por razón de sexo que afecten a adultos o a niños.",
+   "Denegación de tutela judicial de la que se deriven penas desproporcionadas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 6.2 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "2. Los actos de persecución definidos en el apartado primero podrán revestir, entre otras, las siguientes formas: a) actos de violencia física o psíquica, incluidos los actos de violencia sexual; b) medidas legislativas, administrativas, policiales o judiciales que sean discriminatorias en sí mismas o que se apliquen de manera discriminatoria; c) procesamientos o penas que sean desproporcionados o discriminatorios; d) denegación de tutela judicial de la que se deriven penas desproporcionadas o discriminatorias; e) procesamientos o penas por la negativa a prestar servicio militar en un conflicto en el que el cumplimiento de dicho servicio conllevaría delitos o actos comprendidos en las cláusulas de exclusión establecidas en el apartado segundo del artículo 8 de esta Ley; f) actos de naturaleza sexual que afecten a adultos o a niños.",
+  "exp": "La denegación de tutela judicial con penas desproporcionadas figura en la letra d).",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "103-6",
+  "parT": "d denegacion de tutela judicial de la que se deriven penas desproporcionadas o discriminat",
+  "fR": 1,
+  "pz": "b-6",
+  "id": "6-581"
+ },
+ {
+  "lote": "d10",
+  "i": 120,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "21",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Solicitudes presentadas en puestos fronterizos. Cuando una persona extranjera que no reúna los requisitos necesarios para entrar en territorio español presente una solicitud de protección internacional en un puesto fronterizo, el Ministro del Interior podrá no admitir a trámite la solicitud mediante resolución motivada cuando en dicha solicitud concurran una serie de requisitos. En todo caso, la resolución deberá ser notificada a la persona interesada, ¿en qué plazo máximo?:",
+  "opciones": [
+   "En el plazo máximo de cuatro días desde su presentación.",
+   "En el plazo máximo de setenta y dos horas desde su presentación.",
+   "En el plazo máximo de dos días desde su presentación.",
+   "En el plazo máximo de ocho días desde su presentación."
+  ],
+  "correcta": 0,
+  "lila": "Art. 21.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. Cuando una persona extranjera que no reúna los requisitos necesarios para entrar en territorio español presente una solicitud de protección internacional en un puesto fronterizo, el Ministro del Interior podrá no admitir a trámite la solicitud mediante resolución motivada cuando en dicha solicitud concurra alguno de los supuestos previstos en el apartado primero del artículo 20. En todo caso, la resolución deberá ser notificada a la persona interesada en el plazo máximo de cuatro días desde su presentación.",
+  "exp": "La resolución se notifica en el plazo máximo de cuatro días.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "117-1",
+  "parT": "1 cuando una persona extranjera que no reuna los requisitos necesarios para entrar en terr",
+  "fR": 1,
+  "pz": "b-21",
+  "id": "6-582"
+ },
+ {
+  "lote": "d10",
+  "i": 121,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "8",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. De la protección internacional. De las condiciones para el reconocimiento del derecho de asilo. ¿Qué personas extranjeras quedarán excluidas de la condición de refugiados?:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Sobre las que existan motivos fundados para considerar que han cometido un delito contra la paz, un delito de guerra o un delito contra las personas, de los definidos en los instrumentos internacionales que establecen disposiciones relativas a tales delitos.",
+   "Sobre las que existan motivos fundados para considerar que han cometido fuera del país de refugio antes de ser admitidas como refugiadas, es decir, antes de la expedición de una autorización de residencia basada en el reconocimiento de la condición de refugiado, un delito grave, entendiéndose por tal los que lo sean conforme al Código Penal español y que afecten, entre otros, a la vida, la libertad, la indemnidad o la libertad sexual, la integridad de las personas o el patrimonio.",
+   "Sobre las que existan motivos fundados para considerar que son culpables de actos contrarios a las finalidades y a los principios de las Naciones Unidas establecidos en el Preámbulo y en los artículos 1 y 2 de la Carta de las Naciones Unidas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 8.2 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "2. También quedarán excluidas las personas extranjeras sobre las que existan motivos fundados para considerar que: a) han cometido un delito contra la paz, un delito de guerra o un delito contra la humanidad, de los definidos en los instrumentos internacionales que establecen disposiciones relativas a tales delitos; b) han cometido fuera del país de refugio antes de ser admitidas como refugiadas, es decir, antes de la expedición de una autorización de residencia basada en el reconocimiento de la condición de refugiado, un delito grave, entendiéndose por tal los que lo sean conforme al Código Penal español y que afecten a la vida, la libertad, la indemnidad o la libertad sexual, la integridad de las personas o el patrimonio, siempre que fuesen realizados con fuerza en las cosas, o violencia o intimidación en las personas, así como en los casos de la delincuencia organizada, debiendo entenderse incluida, en todo caso, en el término delincuencia organizada la recogida en el apartado cuarto del artículo 282 bis de la Ley de Enjuiciamiento Criminal, en relación con los delitos enumerados; c) son culpables de actos contrarios a las finalidades y a los principios de las Naciones Unidas establecidos en el Preámbulo y en los artículos 1 y 2 de la Carta de las Naciones Unidas.",
+  "exp": "Los actos contrarios a los principios de Naciones Unidas son causa literal de exclusión.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "105-5",
+  "parT": "b han cometido fuera del pais de refugio antes de ser admitidas como refugiadas es decir a",
+  "fR": 0.61,
+  "pz": "b-8",
+  "id": "6-583"
+ },
+ {
+  "lote": "d10",
+  "i": 122,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "40",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Extensión familiar del derecho de asilo o de la protección subsidiaria. ¿Quién resolverá las solicitudes de extensión familiar presentadas?:",
+  "opciones": [
+   "La Oficina de Asilo y Refugio.",
+   "El Ministro del Interior.",
+   "La Comisión interministerial de Asilo y Refugio.",
+   "ACNUR."
+  ],
+  "correcta": 1,
+  "lila": "Art. 40.2 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "2. La Oficina de Asilo y Refugio tramitará las solicitudes de extensión familiar presentadas. Una vez instruidas se procederá, previo estudio en la Comisión interministerial de Asilo y Refugio, a elevar la propuesta de resolución al Ministro del Interior, quien resolverá.",
+  "exp": "Resuelve el Ministro del Interior.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "135-4",
+  "parT": "2 una vez instruidas se procedera previo estudio en la comision interministerial de asilo ",
+  "fR": 0.69,
+  "pz": "b-40",
+  "id": "6-584"
+ },
+ {
+  "lote": "d10",
+  "i": 125,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "36",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. La concesión del derecho de asilo o de la protección subsidiaria, ¿de qué derechos implicará el reconocimiento?:",
+  "opciones": [
+   "De los derechos establecidos en la normativa de la Unión Europea.",
+   "Todas las opciones son correctas.",
+   "De los derechos establecidos en la normativa vigente en materia de extranjería e inmigración.",
+   "De los derechos establecidos en la Convención de Ginebra sobre el Estatuto de los Refugiados."
+  ],
+  "correcta": 1,
+  "lila": "Art. 36.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. La concesión del derecho de asilo o de la protección subsidiaria implicará el reconocimiento de los derechos establecidos en la Convención de Ginebra sobre el Estatuto de los Refugiados, en la normativa vigente en materia de extranjería e inmigración, así como en la normativa de la Unión Europea, y, en todo caso: a) la protección contra la devolución en los términos establecidos en los tratados internacionales firmados por España; b) el acceso a la información sobre los derechos y obligaciones relacionados con el contenido de la protección internacional concedida, en una lengua que le sea comprensible a la persona beneficiaria de dicha protección; c) la autorización de residencia y trabajo permanente, en los términos que establece la Ley Orgánica 4/2000, de 11 de enero, sobre derechos y libertades de los extranjeros en España y su integración social; d) la expedición de documentos de identidad y viaje a quienes les sea reconocida la condición de refugiado, y, cuando sea necesario, para quienes se beneficien de la protección subsidiaria; e) el acceso a los servicios públicos de empleo; f) el acceso a la educación, a la asistencia sanitaria, a la vivienda, a la asistencia social y servicios sociales, a los derechos reconocidos por la legislación aplicable a las personas víctimas de violencia de género, en su caso, a la seguridad social y a los programas de integración, en las mismas condiciones que los españoles; g) el acceso, en las mismas condiciones que los españoles, a la formación continua u ocupacional y al trabajo en prácticas, así como a los procedimientos de reconocimiento de diplomas y certificados académicos y profesionales y otras pruebas de calificaciones oficiales expedidas en el extranjero; h) la libertad de circulación; i) el acceso a los programas de integración con carácter general o específico que se establezcan; j) el acceso a los programas de ayuda al retorno voluntario que puedan establecerse; k) el mantenimiento de la unidad familiar en los términos previstos en la presente Ley y acceso a los programas de apoyo que a tal efecto puedan establecerse.",
+  "exp": "El artículo cita las tres fuentes de derechos.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "131-0",
+  "parT": "1 la concesion del derecho de asilo o de la proteccion subsidiaria implicara el reconocimi",
+  "fR": 0.54,
+  "pz": "b-36",
+  "id": "6-585"
+ },
+ {
+  "lote": "d10",
+  "i": 126,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "14",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. De la protección internacional. Disposiciones comunes. Agentes de protección. ¿Quiénes NO podrán proporcionar protección?:",
+  "opciones": [
+   "El Estado.",
+   "Los agentes no estatales.",
+   "Los partidos u organizaciones que controlen el Estado o una parte considerable de su territorio.",
+   "Las organizaciones internacionales que controlen el Estado o una parte considerable de su territorio."
+  ],
+  "correcta": 1,
+  "lila": "Art. 14 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. Podrán proporcionar protección: a) el Estado, o b) los partidos u organizaciones, incluidas las organizaciones internacionales, que controlen el Estado o una parte considerable de su territorio. 2. En general, se entenderá que existe protección cuando los agentes mencionados en el apartado primero adopten medidas razonables y efectivas para impedir la persecución o el padecimiento de daños graves, tales como el establecimiento de un sistema jurídico eficaz para la investigación, el procesamiento y la sanción de acciones constitutivas de persecución o de daños graves, y siempre que el solicitante tenga acceso efectivo a dicha protección. 3. Se tendrá en cuenta la orientación que pueda desprenderse de los actos pertinentes de las instituciones de la Unión Europea o de organizaciones internacionales relevantes, al efecto de valorar si una organización internacional controla un Estado o una parte considerable de su territorio y proporciona la protección descrita en el apartado anterior.",
+  "exp": "Pueden proporcionar protección el Estado y los partidos u organizaciones que lo controlen, no los agentes no estatales.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "110-3",
+  "parT": "2 en general se entendera que existe proteccion cuando los agentes mencionados en el apart",
+  "fR": 0.46,
+  "pz": "b-14",
+  "id": "6-586"
+ },
+ {
+  "lote": "d10",
+  "i": 127,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "25",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Tramitación de urgencia. Señale la opción CORRECTA:",
+  "opciones": [
+   "Será de aplicación al procedimiento de urgencia lo dispuesto para la tramitación por el procedimiento ordinario, salvo en materia de plazos que se verán aumentados en la mitad.",
+   "La Oficina de Asilo y Refugio, de oficio o a petición del interesado, acordará la aplicación de la tramitación de urgencia, previa notificación al interesado, en las solicitudes en las que concurra una serie de circunstancias.",
+   "ACNUR será informada de los expedientes que vayan a ser tramitados con carácter de urgencia.",
+   "Cuando la solicitud de protección internacional se hubiera presentado en un Centro de Internamiento para Extranjeros, su tramitación deberá adecuarse a lo dispuesto en la presente Ley para las solicitudes en frontera."
+  ],
+  "correcta": 3,
+  "lila": "Art. 25 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. El Ministerio del Interior, de oficio o a petición del interesado, acordará la aplicación de la tramitación de urgencia, previa notificación al interesado, en las solicitudes en las que concurra alguna de las siguientes circunstancias: a) que parezcan manifiestamente fundadas; b) que hayan sido formuladas por solicitantes que presenten necesidades específicas, especialmente, por menores no acompañados; c) que planteen exclusivamente cuestiones que no guarden relación con el examen de los requisitos para el reconocimiento de la condición de refugiado o la concesión de la protección subsidiaria; d) que la persona solicitante proceda de un país de origen considerado seguro, en los términos de lo dispuesto en el artículo 20.1.d), y del que posea la nacionalidad, o si fuere apátrida, en el que tuviera su residencia habitual; e) que la persona solicitante, sin motivo justificado, presente su solicitud transcurrido el plazo de un mes previsto en el apartado segundo del artículo 17; f) que la persona solicitante incurra en alguno de los supuestos de exclusión o de denegación previstos en los artículos 8, 9, 11 y 12 de la presente Ley. 2. Cuando la solicitud de protección internacional se hubiera presentado en un Centro de Internamiento para Extranjeros, su tramitación deberá adecuarse a lo dispuesto en el artículo 21 de esta Ley para las solicitudes en frontera. En todo caso, presentadas las solicitudes en estos términos, aquéllas que fuesen admitidas a trámite se ajustarán a la tramitación de urgencia prevista en el presente artículo. 3. La Comisión Interministerial de Asilo y Refugio será informada de los expedientes que vayan a ser tramitados con carácter de urgencia. 4. Será de aplicación al presente procedimiento lo dispuesto en el artículo 24 de la Ley, salvo en materia de plazos que se verán reducidos a la mitad.",
+  "exp": "En los centros de internamiento se sigue lo previsto para las solicitudes en frontera.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "120-6",
+  "parT": "2 cuando la solicitud de proteccion internacional se hubiera presentado en un centro de in",
+  "fR": 0.87,
+  "pz": "b-25",
+  "id": "6-587"
+ },
+ {
+  "lote": "d10",
+  "i": 130,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "10",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Señale cuál de los siguientes NO constituye un daño grave que dé lugar a la protección subsidiaria:",
+  "opciones": [
+   "Las amenazas graves contra la vida de los civiles motivadas por una violencia indiscriminada en situaciones de conflicto internacional o interno.",
+   "Las amenazas graves contra la integridad de los civiles motivadas por una violencia indiscriminada en situaciones de conflicto internacional o interno.",
+   "La tortura y los tratos inhumanos o degradantes en el país de residencia del solicitante.",
+   "La condena a pena de muerte o el riesgo de su ejecución material."
+  ],
+  "correcta": 2,
+  "lila": "Art. 10 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "Constituyen los daños graves que dan lugar a la protección subsidiaria prevista en el artículo 4 de esta Ley: a) la condena a pena de muerte o el riesgo de su ejecución material; b) la tortura y los tratos inhumanos o degradantes en el país de origen del solicitante; c) las amenazas graves contra la vida o la integridad de los civiles motivadas por una violencia indiscriminada en situaciones de conflicto internacional o interno.",
+  "exp": "La tortura cuenta cuando es en el país de origen del solicitante.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "107-2",
+  "parT": "b la tortura y los tratos inhumanos o degradantes en el pais de origen del solicitante",
+  "fR": 0.77,
+  "pz": "b-10",
+  "id": "6-588"
+ },
+ {
+  "lote": "d10",
+  "i": 131,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "18",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Derechos y obligaciones de los solicitantes. El solicitante de asilo, presentada la solicitud, tiene en los términos recogidos en la presente Ley, una serie de derechos. Señale el derecho CORRECTO:",
+  "opciones": [
+   "A la denegación de cualquier proceso de devolución, expulsión o extradición que pudiera afectar al solicitante.",
+   "A que se comunique su solicitud al ACNUR.",
+   "A recibir prestaciones económicas específicas en los términos que se recogen en esta Ley.",
+   "A ser documentado como beneficiario de protección internacional."
+  ],
+  "correcta": 1,
+  "lila": "Art. 18.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. El solicitante de asilo, presentada la solicitud, tiene en los términos recogidos en la presente Ley, en los artículos 16, 17, 19, 33 y 34, los siguientes derechos: a) a ser documentado como solicitante de protección internacional; b) a asistencia jurídica gratuita e intérprete; c) a que se comunique su solicitud al ACNUR; d) a la suspensión de cualquier proceso de devolución, expulsión o extradición que pudiera afectar al solicitante; e) a conocer el contenido del expediente en cualquier momento; f) a la atención sanitaria en las condiciones expuestas; g) a recibir prestaciones sociales específicas en los términos que se recogen en esta Ley.",
+  "exp": "La comunicación de la solicitud al ACNUR es un derecho literal.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "114-1",
+  "parT": "c a que se comunique su solicitud al acnur",
+  "fR": 1,
+  "pz": "b-18",
+  "id": "6-589"
+ },
+ {
+  "lote": "d10",
+  "i": 132,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "25",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. De las reglas procedimentales para el reconocimiento de la protección internacional. De la tramitación de las solicitudes. Tramitación de urgencia. El Ministerio del Interior, de oficio o a petición del interesado, acordará la aplicación de la tramitación de urgencia, previa notificación al interesado, en las solicitudes en las que concurra una serie de circunstancias. ¿En qué casos se podrá acordar la aplicación de la tramitación de urgencia?:",
+  "opciones": [
+   "Cuando hayan sido formuladas por solicitantes que presenten necesidades específicas, especialmente, por menores no acompañados y mujeres.",
+   "Cuando planteen exclusivamente cuestiones que no guarden relación con el examen de los requisitos para el reconocimiento de la condición de refugiado o la concesión de la protección subsidiaria.",
+   "Todas las opciones son correctas.",
+   "Cuando parezcan manifiestamente infundadas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 25.1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "1. El Ministerio del Interior, de oficio o a petición del interesado, acordará la aplicación de la tramitación de urgencia, previa notificación al interesado, en las solicitudes en las que concurra alguna de las siguientes circunstancias: a) que parezcan manifiestamente fundadas; b) que hayan sido formuladas por solicitantes que presenten necesidades específicas, especialmente, por menores no acompañados; c) que planteen exclusivamente cuestiones que no guarden relación con el examen de los requisitos para el reconocimiento de la condición de refugiado o la concesión de la protección subsidiaria; d) que la persona solicitante proceda de un país de origen considerado seguro, en los términos de lo dispuesto en el artículo 20.1.d), y del que posea la nacionalidad, o si fuere apátrida, en el que tuviera su residencia habitual; e) que la persona solicitante, sin motivo justificado, presente su solicitud transcurrido el plazo de un mes previsto en el apartado segundo del artículo 17; f) que la persona solicitante incurra en alguno de los supuestos de exclusión o de denegación previstos en los artículos 8, 9, 11 y 12 de la presente Ley.",
+  "exp": "Es la letra c); las manifiestamente fundadas, no las infundadas, van por urgencia y no se menciona a las mujeres.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "120-3",
+  "parT": "c que planteen exclusivamente cuestiones que no guarden relacion con el examen de los requ",
+  "fR": 0.96,
+  "pz": "b-25",
+  "id": "6-590"
+ },
+ {
+  "lote": "d10",
+  "i": 911,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "1",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. ¿Qué tiene por objeto la presente Ley?:",
+  "opciones": [
+   "Establecer los términos en que las personas nacionales de países comunitarios y las apátridas podrán gozar en España de la protección subsidiaria constituida por el derecho de asilo y la protección internacional, así como el contenido de dicha protección internacional.",
+   "Establecer los términos en que las personas nacionales de países no comunitarios y las apátridas podrán gozar en España de la protección subsidiaria constituida por el derecho de asilo y la protección internacional, así como el contenido de dicha protección internacional.",
+   "Establecer los términos en que las personas nacionales de países comunitarios y las apátridas podrán gozar en España de la protección internacional constituida por el derecho de asilo y la protección subsidiaria, así como el contenido de dicha protección internacional.",
+   "Establecer los términos en que las personas nacionales de países no comunitarios y las apátridas podrán gozar en España de la protección internacional constituida por el derecho de asilo y la protección subsidiaria, así como el contenido de dicha protección internacional."
+  ],
+  "correcta": 3,
+  "lila": "Art. 1 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "La presente Ley, de acuerdo con lo previsto en el apartado cuatro del artículo 13 de la Constitución, tiene por objeto establecer los términos en que las personas nacionales de países no comunitarios y las apátridas podrán gozar en España de la protección internacional constituida por el derecho de asilo y la protección subsidiaria, así como el contenido de dicha protección internacional.",
+  "exp": "Son nacionales no comunitarios y apátridas y la protección internacional comprende asilo y protección subsidiaria.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "98-0",
+  "parT": "la presente ley de acuerdo con lo previsto en el apartado cuatro del articulo 13 de la con",
+  "fR": 1,
+  "pz": "b-1",
+  "id": "6-591"
+ },
+ {
+  "lote": "d10",
+  "i": 912,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "17",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. El procedimiento se inicia con la presentación de la solicitud, que deberá efectuarse mediante comparecencia personal de los interesados que soliciten protección en los lugares que reglamentariamente se establezcan, o en caso de imposibilidad física o legal, mediante persona que lo represente. ¿Cuándo deberá realizarse la comparecencia?:",
+  "opciones": [
+   "Sin demora y en todo caso en el plazo máximo de dos meses desde la entrada en el territorio español o, en todo caso, desde que se produzcan los acontecimientos que justifiquen el temor fundado de persecución o daños graves.",
+   "Sin demora y en todo caso en el plazo máximo de un mes desde la entrada en el territorio español o, en todo caso, desde que se produzcan los acontecimientos que justifiquen el temor fundado de persecución o daños graves.",
+   "Sin demora y en todo caso en el plazo máximo de seis meses desde la entrada en el territorio español o, en todo caso, desde que se produzcan los acontecimientos que justifiquen el temor fundado de persecución o daños graves.",
+   "Sin demora y en todo caso en el plazo máximo de tres meses desde la entrada en el territorio español o, en todo caso, desde que se produzcan los acontecimientos que justifiquen el temor fundado de persecución o daños graves."
+  ],
+  "correcta": 1,
+  "lila": "Art. 17.2 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "2. La comparecencia deberá realizarse sin demora y en todo caso en el plazo máximo de un mes desde la entrada en el territorio español o, en todo caso, desde que se produzcan los acontecimientos que justifiquen el temor fundado de persecución o daños graves. A estos efectos, la entrada ilegal en territorio español no podrá ser sancionada cuando haya sido realizada por persona que reúna los requisitos para ser beneficiaria de la protección internacional prevista en esta Ley.",
+  "exp": "El plazo máximo es de un mes.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "113-1",
+  "parT": "2 la comparecencia debera realizarse sin demora y en todo caso en el plazo maximo de un me",
+  "fR": 1,
+  "pz": "b-17",
+  "id": "6-592"
+ },
+ {
+  "lote": "d10",
+  "i": 913,
+  "v": "v15",
+  "t": 6,
+  "refs": [
+   {
+    "n": "L12",
+    "art": "38",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley reguladora del derecho de asilo y de la protección subsidiaria. Los Embajadores de España podrán promover el traslado del solicitante de asilo a España para hacer posible la presentación de la solicitud conforme al procedimiento previsto en la presente Ley, cuando concurran acumulativamente una serie de condiciones. Señale la condición INCORRECTA:",
+  "opciones": [
+   "Que al solicitante no se le haya denegado anteriormente la solicitud en otro país de la Unión Europea.",
+   "Que los casos se presenten fuera del territorio nacional.",
+   "Que corra peligro la integridad física del solicitante.",
+   "Que el solicitante no sea nacional del país en que se encuentre la Representación diplomática."
+  ],
+  "correcta": 0,
+  "lila": "Art. 38 · Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "rojo": "Con el fin de atender casos que se presenten fuera del territorio nacional, siempre y cuando el solicitante no sea nacional del país en que se encuentre la Representación diplomática y corra peligro su integridad física, los Embajadores de España podrán promover el traslado del o de los solicitantes de asilo a España para hacer posible la presentación de la solicitud conforme al procedimiento previsto en esta Ley. El Reglamento de desarrollo de esta Ley determinará expresamente las condiciones de acceso a las Embajadas y Consulados de los solicitantes, así como el procedimiento para evaluar las necesidades de traslado a España de los mismos.",
+  "exp": "El artículo no exige que no haya habido una denegación anterior en otro país.",
+  "apartado": "Ley 12/2009, de 30 de octubre, reguladora del derecho de asilo y de la protección subsidiaria",
+  "letra": "b",
+  "par": "133-0",
+  "parT": "con el fin de atender casos que se presenten fuera del territorio nacional siempre y cuand",
+  "fR": 0.66,
+  "pz": "b-38",
+  "id": "6-593"
+ }
+]

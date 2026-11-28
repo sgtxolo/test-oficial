@@ -1,0 +1,1405 @@
+[
+ {
+  "lote": "d1",
+  "i": 0,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "1",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Cuál es el objeto de la presente Ley?:",
+  "opciones": [
+   "Establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas en la Unión Europea, así como establecer determinadas medidas de sanción del blanqueo de capitales.",
+   "Establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior, así como establecer determinadas medidas de prevención del blanqueo de capitales.",
+   "Establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior, así como establecer determinadas medidas de prevención del movimiento de capitales.",
+   "Establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas en la Unión Europea, así como establecer determinadas medidas de prevención del blanqueo de capitales."
+  ],
+  "correcta": 1,
+  "lila": "Art. 1.1 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. Esta ley tiene por OBJETO establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior, así como establecer determinadas medidas de prevención del blanqueo de capitales.",
+  "exp": "El objeto incluye las medidas de prevención del blanqueo de capitales y se refiere a las transacciones con el exterior, no a las de la Unión Europea ni a medidas de sanción.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "0-0",
+  "parT": "1 esta ley tiene por objeto establecer el regimen juridico de los movimientos de capitales",
+  "fR": 1,
+  "pz": "a-1",
+  "secClave": 1,
+  "id": "2-366"
+ },
+ {
+  "lote": "d1",
+  "i": 1,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "2",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Cuál de los siguientes se considera no residente?:",
+  "opciones": [
+   "Los diplomáticos españoles acreditados en el extranjero y el personal español que preste servicios en embajadas y consulados españoles o en organizaciones internacionales en el extranjero.",
+   "Las sucursales y los establecimientos permanentes en el extranjero de personas físicas o jurídicas residentes en España.",
+   "Las personas jurídicas con domicilio social en España.",
+   "Ninguna de las opciones es correcta."
+  ],
+  "correcta": 1,
+  "lila": "Art. 2.1 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. A los efectos de lo dispuesto en el artículo anterior, se consideran: A) «Residentes»: a. Las personas físicas que residan habitualmente en España, salvo lo dispuesto en el párrafo b) correspondiente al epígrafe de «No residentes». b. Los diplomáticos españoles acreditados en el extranjero y el personal español que preste servicios en embajadas y consulados españoles o en organizaciones internacionales en el extranjero. c. Las personas jurídicas con domicilio social en España. d. Las sucursales y los establecimientos permanentes en territorio español de personas físicas o jurídicas residentes en el extranjero. e. Otros que se determinen reglamentariamente en casos análogos. B) «No residentes»: a. Las personas físicas que tengan su residencia habitual en territorio extranjero, salvo lo dispuesto en el párrafo b) correspondiente al epígrafe de «Residentes». b. Los diplomáticos extranjeros acreditados ante el Gobierno español y el personal extranjero que preste servicios en embajadas y consulados extranjeros o en organizaciones internacionales en España. c. Las personas jurídicas con domicilio social en el extranjero. d. Las sucursales y los establecimientos permanentes en el extranjero de personas físicas o jurídicas residentes en España. e. Otros que se determinen reglamentariamente en casos análogos.",
+  "exp": "Los establecimientos en el extranjero de residentes en España son no residentes; los diplomáticos españoles acreditados fuera y las sociedades con domicilio social en España son residentes.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "1-1",
+  "parT": "a residentes a las personas fisicas que residan habitualmente en espana salvo lo dispuesto",
+  "fR": 0.68,
+  "pz": "a-2",
+  "secClave": 1,
+  "id": "2-367"
+ },
+ {
+  "lote": "d1",
+  "i": 2,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "3",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Las personas físicas o jurídicas residentes o no residentes en España que realicen las operaciones señaladas en el apartado 2 del artículo I de la presente ley quedarán obligadas a facilitar los datos que se les requieran a los efectos de información administrativa y estadística de las operaciones. ¿A qué instituciones u organismos habrá de facilitarse estos datos?:",
+  "opciones": [
+   "Al Ministerio de Trabajo y al Ministerio de Hacienda.",
+   "Al Banco de España y al Ministerio de Hacienda.",
+   "Al Banco de España y al Ministerio de Economía.",
+   "Al Ministerio de Trabajo y al Banco de España."
+  ],
+  "correcta": 2,
+  "lila": "Art. 3.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. Las personas físicas o jurídicas residentes o no residentes en España que realicen las operaciones señaladas en el apartado 2 del artículo 1 quedan obligadas a facilitar al Ministerio de Economía y al Banco de España, en la forma y plazos que se establezcan, los datos que se les requieran, a los efectos de lo dispuesto en el apartado anterior. Además, las entidades de crédito, las empresas de servicios de inversión y otros intermediarios financieros, que intervengan en la realización de las operaciones mencionadas por cuenta de sus clientes, vendrán obligados a remitir al Ministerio de Economía y al Banco de España la información correspondiente a las transacciones de sus clientes, en la forma y plazos que se establezcan.",
+  "exp": "Los datos se facilitan al Ministerio de Economía y al Banco de España.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "2-1",
+  "parT": "2 las personas fisicas o juridicas residentes o no residentes en espana que realicen las o",
+  "fR": 0.44,
+  "pz": "a-3",
+  "secClave": 2,
+  "id": "2-368"
+ },
+ {
+  "lote": "d1",
+  "i": 3,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "4",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Cuando las medidas de salvaguarda establecidas por el Derecho comunitario reconozcan poderes a los Estados miembros o les impongan la adopción de medidas indispensables, necesarias para la correcta aplicación de dichas normas, ¿qué organismo será el encargado de establecer las especificaciones ulteriores que resulten precisas, incluido el procedimiento de autorización aplicable, si procediera?:",
+  "opciones": [
+   "Todas las opciones son incorrectas.",
+   "El Ministerio de Economía, mediante Orden Ministerial de su titular.",
+   "El Banco de España, a través del Servicio Ejecutivo de la Comisión de Prevención del Blanqueo de Capitales e Infracciones Monetarias.",
+   "El Gobierno, mediante acuerdo del Consejo de Ministros."
+  ],
+  "correcta": 3,
+  "lila": "Art. 4.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. Cuando las normas comunitarias citadas en el apartado anterior reconozcan poderes a los Estados miembros o les impongan la adopción de medidas indispensables, necesarias para la correcta aplicación de dichas normas, el Gobierno, mediante acuerdo del Consejo de Ministros, establecerá las especificaciones ulteriores que resulten precisas, incluido el procedimiento de autorización aplicable, si procediera.",
+  "exp": "Las especificaciones ulteriores las establece el Gobierno mediante acuerdo del Consejo de Ministros.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "3-1",
+  "parT": "2 el gobierno mediante acuerdo del consejo de ministros establecera las especificaciones u",
+  "fR": 0.4,
+  "pz": "a-4",
+  "secClave": 3,
+  "id": "2-369"
+ },
+ {
+  "lote": "d1",
+  "i": 4,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "5",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Cuál será el organismo comunitario competente para adoptar medidas urgentes que sean necesarias por las que se entenderán prohibidos o limitados los movimientos de capitales y pagos respecto a terceros países?:",
+  "opciones": [
+   "La Oficina Europea de Lucha contra el Fraude (OLAF).",
+   "El Consejo de la Unión Europea.",
+   "La Comisión Europea.",
+   "El Consejo Europeo."
+  ],
+  "correcta": 1,
+  "lila": "Art. 5.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. Se entenderán prohibidos o limitados, en los términos que señalen las normas comunitarias, los movimientos de capitales y pagos respecto a terceros países en relación con los cuales el Consejo de la Unión Europea haya adoptado las medidas urgentes que sean necesarias, de conformidad con lo establecido en el artículo 60.1 del Tratado Constitutivo de la Comunidad Europea.",
+  "exp": "Las medidas urgentes del apartado 2 son las que adopta el Consejo de la Unión Europea.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "3-3",
+  "parT": "art 5 1 se entendera prohibida o limitada respecto a terceros paises en relacion con los c",
+  "fR": 0.53,
+  "pz": "a-5",
+  "secClave": 3,
+  "id": "2-370"
+ },
+ {
+  "lote": "d1",
+  "i": 5,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "5",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. El Gobierno podrá, en tanto no se hayan adoptado las medidas excepcionales establecidas en el Derecho Comunitario, tomar medidas unilaterales contra un tercer país en lo relativo a los movimientos de capitales y a los pagos por una serie de razones y motivos. ¿Cuáles son estas razones y motivos?:",
+  "opciones": [
+   "Razones de política fiscal graves y motivos de interés nacional.",
+   "Razones de orden público y motivos de soberanía fiscal.",
+   "Razones políticas y motivos imperiosos de orden público.",
+   "Razones políticas graves y por motivos de urgencia."
+  ],
+  "correcta": 3,
+  "lila": "Art. 5.4 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "4. De conformidad con lo establecido en el artículo 60.2 del Tratado Constitutivo de la Comunidad Europea, el Gobierno, mediante acuerdo del Consejo de Ministros, a propuesta del Ministro de Economía, podrá en tanto no se hayan adoptado las medidas a que se refiere el artículo 60.1 del citado Tratado, por razones políticas graves y por motivos de urgencia, tomar medidas unilaterales contra un tercer país en lo relativo a los movimientos de capitales y a los pagos.",
+  "exp": "La ley exige razones políticas graves y motivos de urgencia.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "3-4",
+  "parT": "4 de conformidad con lo establecido en el articulo 60 2 del tratado el gobierno mediante a",
+  "fR": 0.91,
+  "pz": "a-5",
+  "secClave": 3,
+  "id": "2-371"
+ },
+ {
+  "lote": "d1",
+  "i": 6,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "7",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. El Gobierno podrá acordar la suspensión del régimen de liberalización establecido en esta ley cuando se trate de actos, negocios, transacciones u operaciones que afecten o puedan afectar a... Señale la opción INCORRECTA:",
+  "opciones": [
+   "Actividades directamente relacionadas con la política económica.",
+   "Actividades que afecten o puedan afectar a la salud pública.",
+   "Actividades relacionadas con el ejercicio de poder público.",
+   "Actividades que afecten o puedan afectar a la seguridad pública."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "El Gobierno podrá acordar la suspensión del régimen de liberalización establecido en esta ley cuando se trate de actos, negocios, transacciones u operaciones que, por su naturaleza, forma o condiciones de realización, afecten o puedan afectar a actividades relacionadas, aunque sólo sea de modo ocasional, con el ejercicio de poder público, o actividades directamente relacionadas con la defensa nacional, o a actividades que afecten o puedan afectar al orden público, seguridad pública y salud pública. Tal suspensión determinará el sometimiento de ulteriores operaciones a la obtención de autorización administrativa, de acuerdo con lo señalado en el artículo 6.",
+  "exp": "La política económica no figura entre las actividades que permiten suspender la liberalización; las otras tres sí.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "5-0",
+  "parT": "el gobierno podra acordar la suspension del regimen de liberalizacion cuando se trate de a",
+  "fR": 0.54,
+  "pz": "a-7",
+  "secClave": 3,
+  "id": "2-372"
+ },
+ {
+  "lote": "d1",
+  "i": 7,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "2"
+   },
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Cuál de las siguientes infracciones NO constituye infracción muy grave?:",
+  "opciones": [
+   "La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.",
+   "La realización de actos, negocios, transacciones u operaciones prohibidas en virtud de la adopción de las medidas afectadas por cláusulas de salvaguarda, medidas excepcionales o suspensión del régimen de liberalización.",
+   "La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros.",
+   "La realización de actos, negocios, transacciones u operaciones sin solicitar autorización cuando sea preceptiva."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8.2 y Art. 8.3 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "Art. 8. 2. Constituirán INFRACCIONES MUY GRAVES: a) La realización de actos, negocios, transacciones u operaciones prohibidas en virtud de la adopción de las medidas a que se refieren los artículos 4 y 5. b) La realización de actos, negocios, transacciones u operaciones sin solicitar autorización cuando sea preceptiva conforme a los artículos 6, 7 y 7 bis, o con carácter previo a su concesión o con incumplimiento de las condiciones establecidas en la autorización. c) La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.<br>Art. 8. 3. Constituirán INFRACCIONES GRAVES: a) La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros. b) La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones respecto de operaciones cuya cuantía supere los 6.000.000 de euros. c) Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones.",
+  "exp": "La falta de declaración de operaciones de más de 6.000.000 de euros es infracción grave; las otras tres son muy graves.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-2",
+  "parT": "3 constituiran infracciones graves a la falta de declaracion de operaciones cuya cuantia s",
+  "fR": 0.4,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-373"
+ },
+ {
+  "lote": "d1",
+  "i": 8,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "3"
+   },
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Cuál de las siguientes acciones NO constituye infracción leve?:",
+  "opciones": [
+   "La falta de declaración de operaciones cuya cuantía no supere 6.000.000 de euros.",
+   "Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos.",
+   "Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones.",
+   "La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones que no superen 6.000.000 de euros."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8.3 y Art. 8.4 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "Art. 8. 3. Constituirán INFRACCIONES GRAVES: a) La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros. b) La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones respecto de operaciones cuya cuantía supere los 6.000.000 de euros. c) Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones.<br>Art. 8. 4. Constituirán INFRACCIONES LEVES: a) Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos. b) La falta de declaración de operaciones cuya cuantía no supere 6.000.000 de euros, así como la falta de veracidad, la omisión o inexactitud en los datos de las declaraciones que no superen dicha cuantía.",
+  "exp": "El incumplimiento de requerimientos expresos y por escrito es infracción grave; las otras tres son leves.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-2",
+  "parT": "3 constituiran infracciones graves a la falta de declaracion de operaciones cuya cuantia s",
+  "fR": 0.66,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-374"
+ },
+ {
+  "lote": "d1",
+  "i": 9,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "12",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿A quién corresponderá la imposición de sanciones por infracciones leves?:",
+  "opciones": [
+   "Al titular del Ministro de Economía.",
+   "Al Consejo de Ministros.",
+   "Al titular de la Dirección General de Comercio Internacional e Inversiones.",
+   "Al titular de la Dirección General del Tesoro y Política Financiera."
+  ],
+  "correcta": 3,
+  "lila": "Art. 12.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. La competencia para la incoación e instrucción de los procedimientos sancionadores resultantes de la aplicación del régimen previsto en la Ley y para la imposición de las sanciones correspondientes se regirá por las reglas siguientes: a) La competencia para la incoación e instrucción de los procedimientos sancionadores corresponderá a la Secretaría de la Comisión de Prevención del Blanqueo de Capitales e Infracciones Monetarias, salvo en materia de inversiones extranjeras directas en España que corresponderá al órgano que designe el titular de la Dirección General de Comercio Internacional e Inversiones. b) La imposición de sanciones por infracciones muy graves corresponderá al Consejo de Ministros, a propuesta del titular del Ministerio de Asuntos Económicos y Transformación Digital. No obstante, cuando se trate de infracciones muy graves en materia de inversiones extranjeras directas en España, la imposición de sanciones corresponderá al Consejo de Ministros, a propuesta del titular del Ministerio de Industria, Comercio y Turismo. c) La imposición de sanciones por infracciones graves corresponderá al titular del Ministerio de Asuntos Económicos y Transformación Digital, a propuesta del titular de la Secretaría de Estado de Economía. En el supuesto de infracciones graves en materia de inversiones extranjeras directas en España, la imposición de sanciones corresponderá al titular del Ministerio de Industria, Comercio y Turismo, a propuesta del titular de la Secretaría de Estado de Comercio. d) La imposición de sanciones por infracciones leves corresponderá al titular de la Dirección General del Tesoro y Política Financiera, a propuesta del órgano instructor. En el caso de infracciones leves en materia de inversiones extranjeras directas en España, la imposición de sanciones corresponderá al titular de la Dirección General de Comercio Internacional e Inversiones, a propuesta del órgano instructor.",
+  "exp": "Las sanciones por infracciones leves corresponden, como regla general, al titular de la Dirección General del Tesoro y Política Financiera.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "9-4",
+  "parT": "d la imposicion de sanciones por infracciones leves correspondera al titular de la direcci",
+  "fR": 0.33,
+  "pz": "a-12",
+  "secClave": 4,
+  "id": "2-375"
+ },
+ {
+  "lote": "d1",
+  "i": 10,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "pre",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Cuál es, desde la óptica subjetiva, el criterio fundamental en materia de movimientos de capitales?:",
+  "opciones": [
+   "Todas las opciones son incorrectas.",
+   "El de la nacionalidad.",
+   "El de la vecindad civil.",
+   "El de la residencia."
+  ],
+  "correcta": 3,
+  "lila": "Exposición de motivos III · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "Esta ley se estructura en dos capítulos perfectamente diferenciados. El capítulo I contiene, a lo largo de siete artículos, el régimen general de los movimientos de capitales y de las transacciones económicas con el exterior. El artículo 1 declara, en línea con el Tratado Constitutivo de la Comunidad Europea, el principio de libertad de los movimientos de capitales, recogiendo desde un punto de vista objetivo lo que ha de entenderse por transacciones económicas con el exterior. Desde una óptica subjetiva, el criterio fundamental en materia de movimientos de capitales es el de la residencia. De ahí que en el artículo 2 se definan los conceptos de residente y no residente en España. Se ha producido un acercamiento al concepto de residencia contenido en la normativa fiscal, buscando con ello una mejor identificabilidad y prueba de la condición de residente en España. En el artículo 3 se posibilita el conocimiento de los movimientos de capitales y transacciones económicas con el exterior a través de un mecanismo de declaración y, a efectos de información administrativa y estadística de las operaciones, se identifican los sujetos obligados a declarar y los destinatarios de tal información. Con ello se hace uso de la facultad reconocida a los Estados miembros por el artículo 58.1.b) del Tratado Constitutivo de la Comunidad Europea en cuanto a la posibilidad de establecer procedimientos de declaración.",
+  "exp": "La exposición de motivos fija como criterio subjetivo fundamental el de la residencia.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "pz": null,
+  "secClave": 1,
+  "id": "2-376"
+ },
+ {
+  "lote": "d1",
+  "i": 11,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "1",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Son libres, sin más limitaciones que las dispuestas en la presente ley y en la legislación sectorial específica...:",
+  "opciones": [
+   "Cualesquiera actos, negocios, transacciones y operaciones entre residentes y no residentes que supongan o de cuyo cumplimiento puedan derivarse cobros y pagos exteriores.",
+   "Las transferencias de o al exterior.",
+   "Todas las opciones son correctas.",
+   "Las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior."
+  ],
+  "correcta": 2,
+  "lila": "Art. 1.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. Son libres cualesquiera actos, negocios, transacciones y operaciones entre residentes y no residentes que supongan o de cuyo cumplimiento puedan derivarse cobros y pagos exteriores, así como las transferencias de o al exterior y las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, sin más limitaciones que las dispuestas en esta ley y en la legislación sectorial específica.",
+  "exp": "El artículo 1.2 declara libres los actos y operaciones, las transferencias y las variaciones en cuentas o posiciones financieras.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "0-1",
+  "parT": "2 son libres cualesquiera actos negocios transacciones y operaciones entre residentes y no",
+  "fR": 1,
+  "pz": "a-1",
+  "secClave": 1,
+  "id": "2-377"
+ },
+ {
+  "lote": "d1",
+  "i": 12,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "2",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Cuál de los siguientes se considera residente?:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Las personas jurídicas con domicilio social en el extranjero.",
+   "Las sucursales y los establecimientos permanentes en el extranjero de personas físicas o jurídicas residentes en España.",
+   "Los diplomáticos españoles acreditados en el extranjero y el personal español que preste servicios en embajadas y consulados españoles o en organizaciones internacionales en el extranjero."
+  ],
+  "correcta": 3,
+  "lila": "Art. 2.1 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. A los efectos de lo dispuesto en el artículo anterior, se consideran: A) «Residentes»: a. Las personas físicas que residan habitualmente en España, salvo lo dispuesto en el párrafo b) correspondiente al epígrafe de «No residentes». b. Los diplomáticos españoles acreditados en el extranjero y el personal español que preste servicios en embajadas y consulados españoles o en organizaciones internacionales en el extranjero. c. Las personas jurídicas con domicilio social en España. d. Las sucursales y los establecimientos permanentes en territorio español de personas físicas o jurídicas residentes en el extranjero. e. Otros que se determinen reglamentariamente en casos análogos. B) «No residentes»: a. Las personas físicas que tengan su residencia habitual en territorio extranjero, salvo lo dispuesto en el párrafo b) correspondiente al epígrafe de «Residentes». b. Los diplomáticos extranjeros acreditados ante el Gobierno español y el personal extranjero que preste servicios en embajadas y consulados extranjeros o en organizaciones internacionales en España. c. Las personas jurídicas con domicilio social en el extranjero. d. Las sucursales y los establecimientos permanentes en el extranjero de personas físicas o jurídicas residentes en España. e. Otros que se determinen reglamentariamente en casos análogos.",
+  "exp": "El personal diplomático español acreditado en el extranjero es residente; las otras dos opciones concretas describen no residentes.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "1-1",
+  "parT": "a residentes a las personas fisicas que residan habitualmente en espana salvo lo dispuesto",
+  "fR": 0.68,
+  "pz": "a-2",
+  "secClave": 1,
+  "id": "2-378"
+ },
+ {
+  "lote": "d1",
+  "i": 13,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "4",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Cuál será el organismo comunitario competente para adoptar medidas de salvaguardia por la que se prohibirá o limitará la realización de determinados movimientos de capitales y sus correspondientes operaciones de cobro o pago, así como las transferencias de o al exterior o las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, respecto de terceros países?:",
+  "opciones": [
+   "La Oficina Europea de Lucha contra el Fraude (OLAF).",
+   "El Consejo Europeo.",
+   "La Comisión Europea.",
+   "El Consejo de la Unión Europea."
+  ],
+  "correcta": 3,
+  "lila": "Art. 4.1 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. Se entenderá prohibida o limitada, en los términos que señalen las normas comunitarias, la realización de determinados movimientos de capitales y sus correspondientes operaciones de cobro o pago, así como las transferencias de o al exterior o las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, respecto de terceros países en relación con los cuales el Consejo de la Unión Europea, de conformidad con lo establecido en el artículo 59 del Tratado Constitutivo de la Comunidad Europea, haya adoptado medidas de salvaguardia.",
+  "exp": "Las medidas de salvaguardia las adopta el Consejo de la Unión Europea.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "3-0",
+  "parT": "art 4 1 se entendera prohibida o limitada en los terminos que senalen las normas comunitar",
+  "fR": 0.62,
+  "pz": "a-4",
+  "secClave": 3,
+  "id": "2-379"
+ },
+ {
+  "lote": "d1",
+  "i": 14,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "4",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. En aplicación de medidas adoptadas por organismos internacionales, distintos de la Comunidad Europea, de los que España sea miembro, el Gobierno podrá prohibir o limitar la realización de determinados movimientos de capitales y sus correspondientes operaciones de cobro o pago, así como transferencias de o al exterior o variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, respecto de... Señale la opción INCORRECTA:",
+  "opciones": [
+   "Un sector de actividad.",
+   "Un Estado.",
+   "Un territorio.",
+   "Un grupo de Estados."
+  ],
+  "correcta": 0,
+  "lila": "Art. 4.3 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "3. El Gobierno, mediante acuerdo del Consejo de Ministros, a propuesta del Ministro de Economía, podrá prohibir o limitar la realización de determinados movimientos de capitales y sus correspondientes operaciones de cobro o pago, así como transferencias de o al exterior o variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, respecto de un Estado, un territorio o centro extraterritorial, o grupo de Estados en aplicación de medidas adoptadas por organismos internacionales, distintos de la Comunidad Europea, de los que España sea miembro.",
+  "exp": "El artículo 4.3 cita un Estado, un territorio o centro extraterritorial y un grupo de Estados, no un sector de actividad.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "3-2",
+  "parT": "3 el gobierno mediante acuerdo del consejo de ministros a propuesta del ministro de econom",
+  "fR": 0.64,
+  "pz": "a-4",
+  "secClave": 3,
+  "id": "2-380"
+ },
+ {
+  "lote": "d1",
+  "i": 15,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. En relación a las autorizaciones sobre actos, negocios, transacciones u operaciones afectados por cláusulas de salvaguardia o medidas excepcionales, señale la opción INCORRECTA:",
+  "opciones": [
+   "La autorización administrativa que autorice la realización de actos, negocios, transacciones y operaciones afectados por cláusulas de salvaguardia o medidas excepcionales se otorgará por los órganos y a través del procedimiento que se disponga reglamentariamente.",
+   "Si, transcurrido el plazo máximo en el que debe dictarse y notificarse la autorización, no se produjera resolución expresa, la solicitud se entenderá desestimada a los efectos previstos en la ley de procedimiento administrativo común.",
+   "Los actos, negocios, transacciones y operaciones afectados por cláusulas de salvaguardia o medidas excepcionales podrán realizarse, salvo que se disponga expresamente lo contrario, mediante la previa obtención de la correspondiente autorización administrativa y en las condiciones que ésta establezca.",
+   "Si, transcurrido el plazo máximo en el que debe dictarse y notificarse la autorización, no se produjera resolución expresa, se entenderá que la operación no es autorizada."
+  ],
+  "correcta": 2,
+  "lila": "Art. 6 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. Los actos, negocios, transacciones y operaciones afectados por las medidas previstas en los artículos 4 y 5 podrán realizarse, si así se dispone expresamente, mediante la previa obtención de la correspondiente autorización administrativa y en las condiciones que ésta establezca. Dicha autorización se otorgará por los órganos y a través del procedimiento que se disponga reglamentariamente. 2. Si, transcurrido el plazo máximo en el que debe dictarse y notificarse la autorización, no se produjera resolución expresa, se entenderá que la operación no es autorizada. Consecuentemente, la solicitud se entenderá desestimada a los efectos previstos en la Ley 30/1992, de 26 de noviembre, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común.",
+  "exp": "Las operaciones afectadas podrán realizarse «si así se dispone expresamente», no «salvo que se disponga lo contrario».",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "4-0",
+  "parT": "1 los actos negocios transacciones y operaciones afectados por las medidas previstas en lo",
+  "fR": 0.28,
+  "pz": "a-6",
+  "secClave": 3,
+  "id": "2-381"
+ },
+ {
+  "lote": "d1",
+  "i": 16,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "10",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Señale cuál de los siguientes criterios para la graduación de las sanciones NO se encuentra recogido en la presente Ley:",
+  "opciones": [
+   "El tiempo que haya mediado entre la comisión de la infracción y el intento de subsanación de ésta por iniciativa propia del interesado.",
+   "La conducta anterior del interesado, en relación con las normas en materia de movimientos de capitales y pagos exteriores, tomando en consideración al efecto las sanciones firmes que le hubieran sido impuestas durante los últimos cinco años.",
+   "El grado de responsabilidad e intencionalidad en los hechos que concurran en el interesado.",
+   "La naturaleza o entidad del interesado, en especial si ejerce actividades de dominio público."
+  ],
+  "correcta": 3,
+  "lila": "Art. 10 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "Las sanciones aplicables en cada caso por la comisión de infracciones muy graves, graves o leves se determinarán considerándose, además de los criterios establecidos en el artículo 131.3 de la Ley 30/1992, de 26 de noviembre, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común, las siguientes circunstancias: a) La naturaleza y entidad de la infracción. b) El grado de responsabilidad e intencionalidad en los hechos que concurran en el interesado. c) El tiempo que haya mediado entre la comisión de la infracción y el intento de subsanación de ésta por iniciativa propia del interesado. d) La capacidad económica del interesado. e) La conducta anterior del interesado, en relación con las normas en materia de movimientos de capitales y pagos exteriores, tomando en consideración al efecto las sanciones firmes que le hubieran sido impuestas durante los últimos cinco años.",
+  "exp": "La ley valora la naturaleza y entidad de la infracción, no la del interesado ni su actividad de dominio público.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "8-2",
+  "parT": "art 10 las sanciones se determinaran considerandose las siguientes circunstancias a la nat",
+  "fR": 0.52,
+  "pz": "a-10",
+  "secClave": 4,
+  "id": "2-382"
+ },
+ {
+  "lote": "d1",
+  "i": 17,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "7",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Quién podrá acordar la suspensión del régimen de liberalización establecido en la presente ley cuando se trate de actos, negocios, transacciones u operaciones que afecten o puedan afectar a actividades directamente relacionadas con la defensa nacional?:",
+  "opciones": [
+   "El Ministerio de la Presidencia, a instancia del Ministerio de Defensa.",
+   "El Gobierno.",
+   "El Consejo de Ministros, oído el Ministerio de Defensa.",
+   "El Ministerio de Defensa."
+  ],
+  "correcta": 1,
+  "lila": "Art. 7 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "El Gobierno podrá acordar la suspensión del régimen de liberalización establecido en esta ley cuando se trate de actos, negocios, transacciones u operaciones que, por su naturaleza, forma o condiciones de realización, afecten o puedan afectar a actividades relacionadas, aunque sólo sea de modo ocasional, con el ejercicio de poder público, o actividades directamente relacionadas con la defensa nacional, o a actividades que afecten o puedan afectar al orden público, seguridad pública y salud pública. Tal suspensión determinará el sometimiento de ulteriores operaciones a la obtención de autorización administrativa, de acuerdo con lo señalado en el artículo 6.",
+  "exp": "La suspensión la puede acordar el Gobierno.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "5-0",
+  "parT": "el gobierno podra acordar la suspension del regimen de liberalizacion cuando se trate de a",
+  "fR": 0.54,
+  "pz": "a-7",
+  "secClave": 3,
+  "id": "2-383"
+ },
+ {
+  "lote": "d1",
+  "i": 18,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "2"
+   },
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Cuál de las siguientes infracciones NO constituye infracción grave?:",
+  "opciones": [
+   "La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros.",
+   "La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones respecto de operaciones cuya cuantía supere los 6.000.000 de euros.",
+   "La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.",
+   "Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8.2 y Art. 8.3 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "Art. 8. 2. Constituirán INFRACCIONES MUY GRAVES: a) La realización de actos, negocios, transacciones u operaciones prohibidas en virtud de la adopción de las medidas a que se refieren los artículos 4 y 5. b) La realización de actos, negocios, transacciones u operaciones sin solicitar autorización cuando sea preceptiva conforme a los artículos 6, 7 y 7 bis, o con carácter previo a su concesión o con incumplimiento de las condiciones establecidas en la autorización. c) La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.<br>Art. 8. 3. Constituirán INFRACCIONES GRAVES: a) La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros. b) La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones respecto de operaciones cuya cuantía supere los 6.000.000 de euros. c) Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones.",
+  "exp": "La falta de veracidad en las solicitudes de autorización especialmente relevante es infracción muy grave, no grave.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-1",
+  "parT": "2 constituiran infracciones muy graves a la realizacion de actos prohibidas en virtud de l",
+  "fR": 0.47,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-384"
+ },
+ {
+  "lote": "d1",
+  "i": 19,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "11",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. ¿Cuándo prescribirán las infracciones graves?:",
+  "opciones": [
+   "Al año.",
+   "A los 6 meses.",
+   "A los 3 años.",
+   "A los 2 años."
+  ],
+  "correcta": 2,
+  "lila": "Art. 11.1 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. Las infracciones muy graves prescribirán a los cinco años; las graves, a los tres años, y las leves, al año.",
+  "exp": "Las infracciones graves prescriben a los tres años.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "9-0",
+  "parT": "art 11 1 las infracciones muy graves prescribiran a los cinco anos las graves a los tres a",
+  "fR": 1,
+  "pz": "a-11",
+  "secClave": 4,
+  "id": "2-385"
+ },
+ {
+  "lote": "d1",
+  "i": 20,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "5",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Por qué motivo podrá el Gobierno tomar medidas unilaterales contra un tercer país en lo relativo a los movimientos de capitales y a los pagos?:",
+  "opciones": [
+   "Por razones económicas graves y por motivos de emergencia.",
+   "Por cualquier razón grave y por motivos de emergencia.",
+   "Por razones sociales graves y por motivos de urgencia.",
+   "Por razones políticos graves y por motivos de urgencia."
+  ],
+  "correcta": 3,
+  "lila": "Art. 5.4 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "4. De conformidad con lo establecido en el artículo 60.2 del Tratado Constitutivo de la Comunidad Europea, el Gobierno, mediante acuerdo del Consejo de Ministros, a propuesta del Ministro de Economía, podrá en tanto no se hayan adoptado las medidas a que se refiere el artículo 60.1 del citado Tratado, por razones políticas graves y por motivos de urgencia, tomar medidas unilaterales contra un tercer país en lo relativo a los movimientos de capitales y a los pagos.",
+  "exp": "Las medidas unilaterales exigen razones políticas graves y motivos de urgencia.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "3-4",
+  "parT": "4 de conformidad con lo establecido en el articulo 60 2 del tratado el gobierno mediante a",
+  "fR": 0.91,
+  "pz": "a-5",
+  "secClave": 3,
+  "id": "2-386"
+ },
+ {
+  "lote": "d1",
+  "i": 21,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "4",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Señale la opción CORRECTA:",
+  "opciones": [
+   "Se entenderá prohibida o limitada la realización de determinados movimientos de capitales y sus correspondientes operaciones de cobro o pago, así como las transferencias de o al exterior o las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, respecto de terceros países en relación con los cuales el Consejo de la Unión Europea haya adoptado medidas de salvaguardia.",
+   "En aplicación de medidas adoptadas por organismos internacionales distintos de la Comunidad Europea y de los que España sea miembro, el Ministro de Economía podrá prohibir o limitar, respecto a un Estado, la realización de determinados movimientos de capitales y sus correspondientes operaciones de cobro o pago, así como transferencias de o al exterior o variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior.",
+   "Todas las opciones son correctas.",
+   "Cuando las normas comunitarias reconozcan poderes a los Estados miembros o les impongan la adopción de medidas indispensables, necesarias para la correcta aplicación de dichas normas, el Gobierno, mediante acuerdo del Consejo de Ministros, establecerá las especificaciones ulteriores que resulten precisas, salvo el procedimiento de autorización aplicable."
+  ],
+  "correcta": 0,
+  "lila": "Art. 4 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. Se entenderá prohibida o limitada, en los términos que señalen las normas comunitarias, la realización de determinados movimientos de capitales y sus correspondientes operaciones de cobro o pago, así como las transferencias de o al exterior o las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, respecto de terceros países en relación con los cuales el Consejo de la Unión Europea, de conformidad con lo establecido en el artículo 59 del Tratado Constitutivo de la Comunidad Europea, haya adoptado medidas de salvaguardia. 2. Cuando las normas comunitarias citadas en el apartado anterior reconozcan poderes a los Estados miembros o les impongan la adopción de medidas indispensables, necesarias para la correcta aplicación de dichas normas, el Gobierno, mediante acuerdo del Consejo de Ministros, establecerá las especificaciones ulteriores que resulten precisas, incluido el procedimiento de autorización aplicable, si procediera. 3. El Gobierno, mediante acuerdo del Consejo de Ministros, a propuesta del Ministro de Economía, podrá prohibir o limitar la realización de determinados movimientos de capitales y sus correspondientes operaciones de cobro o pago, así como transferencias de o al exterior o variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, respecto de un Estado, un territorio o centro extraterritorial, o grupo de Estados en aplicación de medidas adoptadas por organismos internacionales, distintos de la Comunidad Europea, de los que España sea miembro.",
+  "exp": "La salvaguardia es la adoptada por el Consejo de la Unión Europea; las medidas de organismos distintos las acuerda el Gobierno, y las especificaciones incluyen el procedimiento de autorización.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "3-0",
+  "parT": "art 4 1 se entendera prohibida o limitada en los terminos que senalen las normas comunitar",
+  "fR": 0.27,
+  "pz": "a-4",
+  "secClave": 3,
+  "id": "2-387"
+ },
+ {
+  "lote": "d1",
+  "i": 22,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "4",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Quién podrá adoptar medidas de salvaguardia respecto a la prohibición o limitación de la realización de determinados movimientos de capitales respecto de terceros países?:",
+  "opciones": [
+   "El Consejo de la Unión Europea.",
+   "El Parlamento Europeo.",
+   "El Tribunal de Justicia de la Unión Europea.",
+   "La Comisión."
+  ],
+  "correcta": 0,
+  "lila": "Art. 4.1 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. Se entenderá prohibida o limitada, en los términos que señalen las normas comunitarias, la realización de determinados movimientos de capitales y sus correspondientes operaciones de cobro o pago, así como las transferencias de o al exterior o las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, respecto de terceros países en relación con los cuales el Consejo de la Unión Europea, de conformidad con lo establecido en el artículo 59 del Tratado Constitutivo de la Comunidad Europea, haya adoptado medidas de salvaguardia.",
+  "exp": "Las medidas de salvaguardia frente a terceros países las adopta el Consejo de la Unión Europea.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "3-0",
+  "parT": "art 4 1 se entendera prohibida o limitada en los terminos que senalen las normas comunitar",
+  "fR": 0.62,
+  "pz": "a-4",
+  "secClave": 3,
+  "id": "2-388"
+ },
+ {
+  "lote": "d1",
+  "i": 23,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "1",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Son libres cualesquiera actos, negocios, transacciones y operaciones entre residentes y no residentes que supongan o de cuyo cumplimiento puedan derivarse cobros y pagos exteriores, así como las transferencias de o al exterior y las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, sin más limitaciones que:",
+  "opciones": [
+   "Las dispuestas en la ley objeto de la pregunta y en la legislación sectorial específica.",
+   "Las dispuestas en la ley objeto de la pregunta.",
+   "Las dispuestas en la ley objeto de la pregunta y en los reglamentos que la desarrollen.",
+   "Las dispuestas en el Reglamento (UE) relativo al régimen jurídico de los movimientos de capitales."
+  ],
+  "correcta": 0,
+  "lila": "Art. 1.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. Son libres cualesquiera actos, negocios, transacciones y operaciones entre residentes y no residentes que supongan o de cuyo cumplimiento puedan derivarse cobros y pagos exteriores, así como las transferencias de o al exterior y las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, sin más limitaciones que las dispuestas en esta ley y en la legislación sectorial específica.",
+  "exp": "Las únicas limitaciones son las de esta ley y las de la legislación sectorial específica.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "0-1",
+  "parT": "2 son libres cualesquiera actos negocios transacciones y operaciones entre residentes y no",
+  "fR": 1,
+  "pz": "a-1",
+  "secClave": 1,
+  "id": "2-389"
+ },
+ {
+  "lote": "d1",
+  "i": 24,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. Las infracciones previstas en la ley objeto de la pregunta se clasifican en:",
+  "opciones": [
+   "Menos graves.",
+   "Todas las opciones son correctas.",
+   "Graves.",
+   "Muy leves."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8.1 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. Las infracciones de las disposiciones previstas en esta ley se clasifican en muy graves, graves y leves.",
+  "exp": "La ley clasifica las infracciones en muy graves, graves y leves.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-0",
+  "parT": "1 las infracciones se clasifican en muy graves graves y leves",
+  "fR": 0.5,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-390"
+ },
+ {
+  "lote": "d1",
+  "i": 25,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "2"
+   },
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Cuál de las siguientes NO constituirá infracción grave:",
+  "opciones": [
+   "La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones respecto de operaciones cuya cuantía supere los 6.000.000 de euros.",
+   "La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros.",
+   "La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.",
+   "Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8.2 y Art. 8.3 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "Art. 8. 2. Constituirán INFRACCIONES MUY GRAVES: a) La realización de actos, negocios, transacciones u operaciones prohibidas en virtud de la adopción de las medidas a que se refieren los artículos 4 y 5. b) La realización de actos, negocios, transacciones u operaciones sin solicitar autorización cuando sea preceptiva conforme a los artículos 6, 7 y 7 bis, o con carácter previo a su concesión o con incumplimiento de las condiciones establecidas en la autorización. c) La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.<br>Art. 8. 3. Constituirán INFRACCIONES GRAVES: a) La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros. b) La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones respecto de operaciones cuya cuantía supere los 6.000.000 de euros. c) Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones.",
+  "exp": "La falta de veracidad en las solicitudes de autorización especialmente relevante es muy grave.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-1",
+  "parT": "2 constituiran infracciones muy graves a la realizacion de actos prohibidas en virtud de l",
+  "fR": 0.47,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-391"
+ },
+ {
+  "lote": "d1",
+  "i": 26,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "12",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. ¿A quién corresponderá la imposición de sanciones por infracciones muy graves?:",
+  "opciones": [
+   "Al Consejo de Ministros, a propuesta del titular del Ministerio de Asuntos Económicos y Transformación Digital.",
+   "Al titular de la Dirección General del Tesoro y Política Financiera, a propuesta del órgano instructor.",
+   "Al titular del Ministerio de Asuntos Económicos y Transformación Digital, a propuesta del titular de la Secretaría de Estado de Economía.",
+   "Al propio instructor."
+  ],
+  "correcta": 0,
+  "lila": "Art. 12.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. La competencia para la incoación e instrucción de los procedimientos sancionadores resultantes de la aplicación del régimen previsto en la Ley y para la imposición de las sanciones correspondientes se regirá por las reglas siguientes: a) La competencia para la incoación e instrucción de los procedimientos sancionadores corresponderá a la Secretaría de la Comisión de Prevención del Blanqueo de Capitales e Infracciones Monetarias, salvo en materia de inversiones extranjeras directas en España que corresponderá al órgano que designe el titular de la Dirección General de Comercio Internacional e Inversiones. b) La imposición de sanciones por infracciones muy graves corresponderá al Consejo de Ministros, a propuesta del titular del Ministerio de Asuntos Económicos y Transformación Digital. No obstante, cuando se trate de infracciones muy graves en materia de inversiones extranjeras directas en España, la imposición de sanciones corresponderá al Consejo de Ministros, a propuesta del titular del Ministerio de Industria, Comercio y Turismo. c) La imposición de sanciones por infracciones graves corresponderá al titular del Ministerio de Asuntos Económicos y Transformación Digital, a propuesta del titular de la Secretaría de Estado de Economía. En el supuesto de infracciones graves en materia de inversiones extranjeras directas en España, la imposición de sanciones corresponderá al titular del Ministerio de Industria, Comercio y Turismo, a propuesta del titular de la Secretaría de Estado de Comercio. d) La imposición de sanciones por infracciones leves corresponderá al titular de la Dirección General del Tesoro y Política Financiera, a propuesta del órgano instructor. En el caso de infracciones leves en materia de inversiones extranjeras directas en España, la imposición de sanciones corresponderá al titular de la Dirección General de Comercio Internacional e Inversiones, a propuesta del órgano instructor.",
+  "exp": "Las infracciones muy graves las sanciona el Consejo de Ministros a propuesta del titular de Asuntos Económicos y Transformación Digital.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "9-3",
+  "parT": "c la imposicion de sanciones por infracciones graves correspondera al titular del minister",
+  "fR": 0.41,
+  "pz": "a-12",
+  "secClave": 4,
+  "id": "2-392"
+ },
+ {
+  "lote": "d1",
+  "i": 27,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros, constituye infracción:",
+  "opciones": [
+   "Leve.",
+   "Muy grave.",
+   "Grave.",
+   "Penal con arreglo al código penal español."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8.3 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "3. Constituirán INFRACCIONES GRAVES: a) La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros. b) La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones respecto de operaciones cuya cuantía supere los 6.000.000 de euros. c) Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones.",
+  "exp": "La falta de declaración de operaciones de más de 6.000.000 de euros es infracción grave.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-2",
+  "parT": "3 constituiran infracciones graves a la falta de declaracion de operaciones cuya cuantia s",
+  "fR": 0.91,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-393"
+ },
+ {
+  "lote": "d1",
+  "i": 29,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante, constituye infracción:",
+  "opciones": [
+   "Grave.",
+   "Muy grave.",
+   "Leve.",
+   "Muy grave o grave, depende de la cuantía de las operaciones."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. Constituirán INFRACCIONES MUY GRAVES: a) La realización de actos, negocios, transacciones u operaciones prohibidas en virtud de la adopción de las medidas a que se refieren los artículos 4 y 5. b) La realización de actos, negocios, transacciones u operaciones sin solicitar autorización cuando sea preceptiva conforme a los artículos 6, 7 y 7 bis, o con carácter previo a su concesión o con incumplimiento de las condiciones establecidas en la autorización. c) La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.",
+  "exp": "La falta de veracidad especialmente relevante en las solicitudes de autorización es muy grave, sin depender de la cuantía.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-1",
+  "parT": "2 constituiran infracciones muy graves a la realizacion de actos prohibidas en virtud de l",
+  "fR": 0.8,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-394"
+ },
+ {
+  "lote": "d1",
+  "i": 30,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos, constituye infracción:",
+  "opciones": [
+   "Penal con arreglo al código penal español.",
+   "Leve.",
+   "Muy grave.",
+   "Grave."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.4 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "4. Constituirán INFRACCIONES LEVES: a) Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos. b) La falta de declaración de operaciones cuya cuantía no supere 6.000.000 de euros, así como la falta de veracidad, la omisión o inexactitud en los datos de las declaraciones que no superen dicha cuantía.",
+  "exp": "Declarar fuera de plazo es infracción leve.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-3",
+  "parT": "4 constituiran infracciones leves a las declaraciones realizadas por los sujetos obligados",
+  "fR": 0.62,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-395"
+ },
+ {
+  "lote": "d1",
+  "i": 31,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Señale la opción CORRECTA:",
+  "opciones": [
+   "La autorización para realizar los actos, negocios, transacciones y operaciones afectados por las cláusulas de salvaguardia y por las medidas excepcionales se otorgará por los órganos y a través del procedimiento que de disponga reglamentariamente.",
+   "Si, transcurrido el plazo máximo en el que debe dictarse y notificarse la autorización para realizar los actos, negocios, transacciones y operaciones afectados por las cláusulas de salvaguardia y por las medidas excepcionales, no se produjera resolución expresa, se entenderá que la operación es autorizada.",
+   "Todas las opciones son correctas.",
+   "Los actos, negocios, transacciones y operaciones afectados por las cláusulas de salvaguardia y por las medidas excepcionales podrán realizarse, si así se dispone expresamente, mediante la previa comunicación administrativa."
+  ],
+  "correcta": 0,
+  "lila": "Art. 6 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. Los actos, negocios, transacciones y operaciones afectados por las medidas previstas en los artículos 4 y 5 podrán realizarse, si así se dispone expresamente, mediante la previa obtención de la correspondiente autorización administrativa y en las condiciones que ésta establezca. Dicha autorización se otorgará por los órganos y a través del procedimiento que se disponga reglamentariamente. 2. Si, transcurrido el plazo máximo en el que debe dictarse y notificarse la autorización, no se produjera resolución expresa, se entenderá que la operación no es autorizada. Consecuentemente, la solicitud se entenderá desestimada a los efectos previstos en la Ley 30/1992, de 26 de noviembre, de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común.",
+  "exp": "La autorización se otorga por los órganos y el procedimiento reglamentarios; sin resolución expresa la operación no queda autorizada y no basta una comunicación.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "4-0",
+  "parT": "1 los actos negocios transacciones y operaciones afectados por las medidas previstas en lo",
+  "fR": 0.28,
+  "pz": "a-6",
+  "secClave": 3,
+  "repetidaDe": "2-387"
+ },
+ {
+  "lote": "d1",
+  "i": 32,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "11",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. Prescripción de las sanciones. Señale la opción CORRECTA:",
+  "opciones": [
+   "Las sanciones que se impongan, en virtud de resolución firme, conforme a esta ley prescribirán a los cuatro años, las muy graves; a los tres años, las graves, y a los dos años, las leves.",
+   "Las sanciones que se impongan, en virtud de resolución firme, conforme a esta ley prescribirán a los cinco años, las muy graves; a los cuatro años, las graves, y a los tres años, las leves.",
+   "Las sanciones que se impongan, en virtud de resolución firme, conforme a esta ley prescribirán a los tres años, las muy graves; a los dos años, las graves, y al año, las leves.",
+   "Las sanciones que se impongan, en virtud de resolución firme, conforme a esta ley prescribirán a los cuatro años, las muy graves; a los tres años, las graves, y al año, las leves."
+  ],
+  "correcta": 1,
+  "lila": "Art. 11.3 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "3. Las sanciones que se impongan, en virtud de resolución firme, conforme a esta ley prescribirán a los cinco años, las muy graves; a los cuatro años, las graves, y a los tres años, las leves.",
+  "exp": "Las sanciones prescriben a los cinco años las muy graves, a los cuatro las graves y a los tres las leves.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "9-0",
+  "parT": "art 11 1 las infracciones muy graves prescribiran a los cinco anos las graves a los tres a",
+  "fR": 0.82,
+  "pz": "a-11",
+  "secClave": 4,
+  "id": "2-396"
+ },
+ {
+  "lote": "d1",
+  "i": 33,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "9",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. Por la comisión de infracciones graves se impondrán simultáneamente una serie de sanciones. Señale las sanciones CORRECTAS:",
+  "opciones": [
+   "Multa, que podrá ascender hasta la mitad del contenido económico de la operación sin que pueda ser inferior a 3.000 euros y amonestación pública.",
+   "Multa, que podrá ascender hasta la mitad del contenido económico de la operación sin que pueda ser inferior a 6.000 euros y amonestación pública o privada.",
+   "Multa, que podrá ascender hasta la mitad del contenido económico de la operación sin que pueda ser inferior a 6.000 euros y amonestación privada.",
+   "Multa, que podrá ascender hasta la mitad del contenido económico de la operación sin que pueda ser inferior a 3.000 euros y amonestación pública o privada."
+  ],
+  "correcta": 1,
+  "lila": "Art. 9.3 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "3. Por la comisión de infracciones graves se impondrán simultáneamente las siguientes sanciones: a) Multa, que podrá ascender hasta la mitad del contenido económico de la operación sin que pueda ser inferior a 6.000 euros, y b) Amonestación pública o privada.",
+  "exp": "Las infracciones graves llevan multa de hasta la mitad del contenido económico, mínimo 6.000 euros, y amonestación pública o privada.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "8-0",
+  "parT": "art 9 2 por la comision de infracciones muy graves se impondran simultaneamente a multa qu",
+  "fR": 0.85,
+  "pz": "a-9",
+  "secClave": 4,
+  "id": "2-397"
+ },
+ {
+  "lote": "d1",
+  "i": 34,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "2",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. A los efectos de lo dispuesto en la ley objeto de la pregunta, la condición de residente o no residente, se acreditará:",
+  "opciones": [
+   "Mediante Orden Ministerial.",
+   "Mediante Real Decreto.",
+   "En la forma que reglamentariamente se establezca.",
+   "Mediante acuerdo del Consejo de Ministros."
+  ],
+  "correcta": 2,
+  "lila": "Art. 2.3 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "3. La condición de residente o no residente, a los efectos de esta ley, se acreditará en la forma que reglamentariamente se establezca.",
+  "exp": "La condición de residente o no residente se acredita en la forma que reglamentariamente se establezca.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "1-4",
+  "parT": "3 la condicion de residente o no residente se acreditara en la forma que reglamentariament",
+  "fR": 0.62,
+  "pz": "a-2",
+  "secClave": 1,
+  "id": "2-398"
+ },
+ {
+  "lote": "d1",
+  "i": 35,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "2"
+   },
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "3"
+   },
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Constituirá infracción grave:",
+  "opciones": [
+   "La falta de declaración de operaciones cuya cuantía no supere los 6.000.000 de euros.",
+   "La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.",
+   "Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos.",
+   "La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros."
+  ],
+  "correcta": 3,
+  "lila": "Art. 8.2 y Art. 8.3 y Art. 8.4 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "Art. 8. 2. Constituirán INFRACCIONES MUY GRAVES: a) La realización de actos, negocios, transacciones u operaciones prohibidas en virtud de la adopción de las medidas a que se refieren los artículos 4 y 5. b) La realización de actos, negocios, transacciones u operaciones sin solicitar autorización cuando sea preceptiva conforme a los artículos 6, 7 y 7 bis, o con carácter previo a su concesión o con incumplimiento de las condiciones establecidas en la autorización. c) La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.<br>Art. 8. 3. Constituirán INFRACCIONES GRAVES: a) La falta de declaración de operaciones cuya cuantía supere los 6.000.000 de euros. b) La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones respecto de operaciones cuya cuantía supere los 6.000.000 de euros. c) Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones.<br>Art. 8. 4. Constituirán INFRACCIONES LEVES: a) Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos. b) La falta de declaración de operaciones cuya cuantía no supere 6.000.000 de euros, así como la falta de veracidad, la omisión o inexactitud en los datos de las declaraciones que no superen dicha cuantía.",
+  "exp": "Solo la falta de declaración de más de 6.000.000 de euros es grave; las solicitudes inveraces son muy graves y las otras dos conductas, leves.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-2",
+  "parT": "3 constituiran infracciones graves a la falta de declaracion de operaciones cuya cuantia s",
+  "fR": 0.39,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-399"
+ },
+ {
+  "lote": "d1",
+  "i": 36,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "2",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. A los efectos de lo dispuesto en la ley objeto de la pregunta, se considerarán \"no residentes\":",
+  "opciones": [
+   "Los diplomáticos extranjeros acreditados ante el Gobierno español y el personal extranjero que preste servicios en embajadas y consulados extranjeros o en organizaciones internacionales en España.",
+   "Otros que se determinen reglamentariamente en casos análogos.",
+   "Todas las opciones son correctas.",
+   "Las personas jurídicas con domicilio social en el extranjero."
+  ],
+  "correcta": 2,
+  "lila": "Art. 2.1 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. A los efectos de lo dispuesto en el artículo anterior, se consideran: A) «Residentes»: a. Las personas físicas que residan habitualmente en España, salvo lo dispuesto en el párrafo b) correspondiente al epígrafe de «No residentes». b. Los diplomáticos españoles acreditados en el extranjero y el personal español que preste servicios en embajadas y consulados españoles o en organizaciones internacionales en el extranjero. c. Las personas jurídicas con domicilio social en España. d. Las sucursales y los establecimientos permanentes en territorio español de personas físicas o jurídicas residentes en el extranjero. e. Otros que se determinen reglamentariamente en casos análogos. B) «No residentes»: a. Las personas físicas que tengan su residencia habitual en territorio extranjero, salvo lo dispuesto en el párrafo b) correspondiente al epígrafe de «Residentes». b. Los diplomáticos extranjeros acreditados ante el Gobierno español y el personal extranjero que preste servicios en embajadas y consulados extranjeros o en organizaciones internacionales en España. c. Las personas jurídicas con domicilio social en el extranjero. d. Las sucursales y los establecimientos permanentes en el extranjero de personas físicas o jurídicas residentes en España. e. Otros que se determinen reglamentariamente en casos análogos.",
+  "exp": "Las tres figuran entre los no residentes del artículo 2.1.B.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "1-1",
+  "parT": "a residentes a las personas fisicas que residan habitualmente en espana salvo lo dispuesto",
+  "fR": 0.68,
+  "pz": "a-2",
+  "secClave": 1,
+  "id": "2-400"
+ },
+ {
+  "lote": "d1",
+  "i": 37,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "12",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. Señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "La imposición de sanciones por infracciones leves corresponderá al propio instructor.",
+   "La imposición de sanciones por infracciones muy graves corresponderá al Gobierno.",
+   "La imposición de sanciones por infracciones graves corresponderá al titular del Ministerio de Asuntos Económicos y Transformación Digital."
+  ],
+  "correcta": 3,
+  "lila": "Art. 12.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. La competencia para la incoación e instrucción de los procedimientos sancionadores resultantes de la aplicación del régimen previsto en la Ley y para la imposición de las sanciones correspondientes se regirá por las reglas siguientes: a) La competencia para la incoación e instrucción de los procedimientos sancionadores corresponderá a la Secretaría de la Comisión de Prevención del Blanqueo de Capitales e Infracciones Monetarias, salvo en materia de inversiones extranjeras directas en España que corresponderá al órgano que designe el titular de la Dirección General de Comercio Internacional e Inversiones. b) La imposición de sanciones por infracciones muy graves corresponderá al Consejo de Ministros, a propuesta del titular del Ministerio de Asuntos Económicos y Transformación Digital. No obstante, cuando se trate de infracciones muy graves en materia de inversiones extranjeras directas en España, la imposición de sanciones corresponderá al Consejo de Ministros, a propuesta del titular del Ministerio de Industria, Comercio y Turismo. c) La imposición de sanciones por infracciones graves corresponderá al titular del Ministerio de Asuntos Económicos y Transformación Digital, a propuesta del titular de la Secretaría de Estado de Economía. En el supuesto de infracciones graves en materia de inversiones extranjeras directas en España, la imposición de sanciones corresponderá al titular del Ministerio de Industria, Comercio y Turismo, a propuesta del titular de la Secretaría de Estado de Comercio. d) La imposición de sanciones por infracciones leves corresponderá al titular de la Dirección General del Tesoro y Política Financiera, a propuesta del órgano instructor. En el caso de infracciones leves en materia de inversiones extranjeras directas en España, la imposición de sanciones corresponderá al titular de la Dirección General de Comercio Internacional e Inversiones, a propuesta del órgano instructor.",
+  "exp": "Las graves las sanciona el titular de Asuntos Económicos; las leves, el titular de la Dirección General del Tesoro, y las muy graves, el Consejo de Ministros.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "9-3",
+  "parT": "c la imposicion de sanciones por infracciones graves correspondera al titular del minister",
+  "fR": 0.41,
+  "pz": "a-12",
+  "secClave": 4,
+  "id": "2-401"
+ },
+ {
+  "lote": "d1",
+  "i": 38,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Régimen sancionador. La falta de veracidad, la omisión o inexactitud en los datos de las declaraciones que no supere 6.000.000 de euros, constituye infracción:",
+  "opciones": [
+   "Leve.",
+   "No cometería ninguna infracción.",
+   "Grave.",
+   "Muy grave."
+  ],
+  "correcta": 0,
+  "lila": "Art. 8.4 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "4. Constituirán INFRACCIONES LEVES: a) Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos. b) La falta de declaración de operaciones cuya cuantía no supere 6.000.000 de euros, así como la falta de veracidad, la omisión o inexactitud en los datos de las declaraciones que no superen dicha cuantía.",
+  "exp": "La omisión o inexactitud en declaraciones que no superen 6.000.000 de euros es leve.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-3",
+  "parT": "4 constituiran infracciones leves a las declaraciones realizadas por los sujetos obligados",
+  "fR": 0.62,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-402"
+ },
+ {
+  "lote": "d1",
+  "i": 39,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "1",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Qué objeto tiene la ley objeto de la pregunta?:",
+  "opciones": [
+   "Establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior, así como establecer determinadas medidas de prevención y sanción del blanqueo de capitales.",
+   "Establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior, así como establecer determinadas medidas de prevención del blanqueo de capitales.",
+   "Establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior, así como establecer determinadas medidas de erradicación del blanqueo de capitales.",
+   "Establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior, así como establecer determinadas medidas de sanción del blanqueo de capitales."
+  ],
+  "correcta": 1,
+  "lila": "Art. 1.1 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "1. Esta ley tiene por OBJETO establecer el régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior, así como establecer determinadas medidas de prevención del blanqueo de capitales.",
+  "exp": "La ley habla de medidas de prevención del blanqueo, no de sanción ni de erradicación.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "0-0",
+  "parT": "1 esta ley tiene por objeto establecer el regimen juridico de los movimientos de capitales",
+  "fR": 1,
+  "pz": "a-1",
+  "secClave": 1,
+  "id": "2-403"
+ },
+ {
+  "lote": "d1",
+  "i": 40,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "3",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Las personas físicas o jurídicas residentes o no residentes en España que realicen actos, negocios, transacciones y operaciones entre residentes y no residentes que supongan o de cuyo cumplimiento puedan derivarse cobros y pagos exteriores, así como las transferencias de o al exterior y las variaciones en cuentas o posiciones financieras deudoras o acreedoras frente al exterior, quedan obligadas a facilitar al __________, en la forma y plazos que se establezcan, los datos que se les requieran:",
+  "opciones": [
+   "Ministerio de Economía y al Banco de España.",
+   "Ministerio de Economía.",
+   "Ministerio de Asuntos Exteriores.",
+   "Banco de España."
+  ],
+  "correcta": 0,
+  "lila": "Art. 3.2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "2. Las personas físicas o jurídicas residentes o no residentes en España que realicen las operaciones señaladas en el apartado 2 del artículo 1 quedan obligadas a facilitar al Ministerio de Economía y al Banco de España, en la forma y plazos que se establezcan, los datos que se les requieran, a los efectos de lo dispuesto en el apartado anterior. Además, las entidades de crédito, las empresas de servicios de inversión y otros intermediarios financieros, que intervengan en la realización de las operaciones mencionadas por cuenta de sus clientes, vendrán obligados a remitir al Ministerio de Economía y al Banco de España la información correspondiente a las transacciones de sus clientes, en la forma y plazos que se establezcan.",
+  "exp": "La obligación es ante el Ministerio de Economía y el Banco de España.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "2-1",
+  "parT": "2 las personas fisicas o juridicas residentes o no residentes en espana que realicen las o",
+  "fR": 0.44,
+  "pz": "a-3",
+  "secClave": 2,
+  "id": "2-404"
+ },
+ {
+  "lote": "d1",
+  "i": 41,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. La falta de declaración de operaciones cuya cuantía no supere 6.000.000 de euros, así como la falta de veracidad, la omisión o inexactitud en los datos de las declaraciones que no superen dicha cuantía, constituye:",
+  "opciones": [
+   "Infracción muy grave.",
+   "Infracción leve.",
+   "Delito.",
+   "Infracción grave."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.4 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "4. Constituirán INFRACCIONES LEVES: a) Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos. b) La falta de declaración de operaciones cuya cuantía no supere 6.000.000 de euros, así como la falta de veracidad, la omisión o inexactitud en los datos de las declaraciones que no superen dicha cuantía.",
+  "exp": "Es infracción leve conforme al artículo 8.4.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-3",
+  "parT": "4 constituiran infracciones leves a las declaraciones realizadas por los sujetos obligados",
+  "fR": 0.62,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-405"
+ },
+ {
+  "lote": "d1",
+  "i": 42,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "8",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. Constituirá infracción leve:",
+  "opciones": [
+   "Los incumplimientos de los requerimientos efectuados, de modo expreso y por escrito, por los organismos competentes en el cumplimiento de sus funciones.",
+   "La falta de veracidad en las solicitudes de autorización presentadas ante los organismos competentes, siempre que pueda estimarse como especialmente relevante.",
+   "Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos.",
+   "Ninguna de las opciones es correcta."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8.4 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "4. Constituirán INFRACCIONES LEVES: a) Las declaraciones realizadas por los sujetos obligados fuera de los plazos reglamentariamente establecidos. b) La falta de declaración de operaciones cuya cuantía no supere 6.000.000 de euros, así como la falta de veracidad, la omisión o inexactitud en los datos de las declaraciones que no superen dicha cuantía.",
+  "exp": "Las declaraciones fuera de plazo son leves; las otras dos conductas son graves y muy grave.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "7-3",
+  "parT": "4 constituiran infracciones leves a las declaraciones realizadas por los sujetos obligados",
+  "fR": 0.62,
+  "pz": "a-8",
+  "secClave": 4,
+  "id": "2-406"
+ },
+ {
+  "lote": "d1",
+  "i": 43,
+  "v": "v01",
+  "t": 2,
+  "refs": [
+   {
+    "n": "L19",
+    "art": "7",
+    "ap": null
+   }
+  ],
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. ¿Quién podrá acordar la suspensión del régimen de liberalización establecido en la presente ley?:",
+  "opciones": [
+   "El Gobierno.",
+   "El Consejo de Ministros.",
+   "El Ministro de Economía.",
+   "El Consejo de Europa."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior",
+  "rojo": "El Gobierno podrá acordar la suspensión del régimen de liberalización establecido en esta ley cuando se trate de actos, negocios, transacciones u operaciones que, por su naturaleza, forma o condiciones de realización, afecten o puedan afectar a actividades relacionadas, aunque sólo sea de modo ocasional, con el ejercicio de poder público, o actividades directamente relacionadas con la defensa nacional, o a actividades que afecten o puedan afectar al orden público, seguridad pública y salud pública. Tal suspensión determinará el sometimiento de ulteriores operaciones a la obtención de autorización administrativa, de acuerdo con lo señalado en el artículo 6.",
+  "exp": "El artículo 7 atribuye la suspensión al Gobierno.",
+  "apartado": "Ley 19/2003",
+  "letra": "a",
+  "par": "5-0",
+  "parT": "el gobierno podra acordar la suspension del regimen de liberalizacion cuando se trate de a",
+  "fR": 0.54,
+  "pz": "a-7",
+  "secClave": 3,
+  "id": "2-407"
+ }
+]

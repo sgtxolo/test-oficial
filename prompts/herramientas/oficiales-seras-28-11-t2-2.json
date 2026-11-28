@@ -1,0 +1,1474 @@
+[
+ {
+  "lote": "d2",
+  "i": 46,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "3",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Cada Parte tomará las medidas apropiadas, con vistas a prevenir los delitos terroristas y sus efectos negativos en el ámbito de la educación, la cultura, la información, los medios de comunicación y la sensibilización del público, y en particular, ¿en qué ámbito?:",
+  "opciones": [
+   "En el ámbito de la formación de las autoridades encargadas del cumplimiento de la ley y otros órganos.",
+   "En el ámbito de la enseñanza a la prevención de delitos terroristas, en especial a las autoridades policiales.",
+   "En el ámbito del intercambio de información respecto a la prevención de delitos graves.",
+   "En el ámbito del refuerzo de las medidas de protección contra los efectos de la comisión de delitos terroristas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 3.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Cada Parte tomará las medidas apropiadas, en particular en el ámbito de la formación de las autoridades encargadas del cumplimiento de la ley y otros órganos, así como en el ámbito de la educación, la cultura, la información, los medios de comunicación y la sensibilización del público, con vistas a prevenir los delitos terroristas y sus efectos negativos, respetando al propio tiempo las obligaciones relativas a los derechos humanos que le incumban, tal como se establecen en el Convenio para la protección de los derechos humanos y de las libertades fundamentales, en el Pacto Internacional de derechos civiles y políticos, y otras obligaciones relativas al derecho internacional, cuando le sean aplicables.",
+  "exp": "El artículo 3.1 cita en particular la formación de las autoridades encargadas del cumplimiento de la ley y otros órganos.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "14-0",
+  "parT": "1 cada parte tomara las medidas apropiadas en particular en el ambito de la formacion de l",
+  "fR": 0.58,
+  "pz": "b-3",
+  "secClave": 7,
+  "id": "2-408"
+ },
+ {
+  "lote": "d2",
+  "i": 47,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "5",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. A los efectos del presente Convenio, ¿qué se entenderá por la difusión o cualquier otra forma de puesta a disposición del público de mensajes con la intención de incitar a cometer delitos terroristas, cuando ese comportamiento, ya preconice directamente o no la comisión de delitos terroristas, cree peligro de que se puedan cometer uno o varios delitos?:",
+  "opciones": [
+   "Instrucciones con fines terroristas.",
+   "Reclutamiento con fines terroristas.",
+   "Provocación pública para cometer delitos terroristas.",
+   "Adiestramiento con fines terroristas."
+  ],
+  "correcta": 2,
+  "lila": "Art. 5.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. A los efectos del presente Convenio, se entenderá por «provocación pública para cometer delitos terroristas»: • la DIFUSIÓN o cualquier otra forma de puesta a disposición del público de mensajes con la intención de incitar a cometer delitos terroristas, cuando ese comportamiento, ya preconice directamente o no la comisión de delitos terroristas, cree peligro de que se puedan cometer uno o varios delitos.",
+  "exp": "Esa es la definición de provocación pública para cometer delitos terroristas.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "15-0",
+  "parT": "art 5 1 se entendera por provocacion publica para cometer delitos terroristas la difusion ",
+  "fR": 0.89,
+  "pz": "b-5",
+  "secClave": 8,
+  "id": "2-409"
+ },
+ {
+  "lote": "d2",
+  "i": 48,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "10",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Respecto a la responsabilidad de las personas jurídicas, señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "La responsabilidad de la persona jurídica se entenderá conjuntamente con la responsabilidad penal de las personas físicas que hayan participado en los delitos.",
+   "Sin perjuicio de los principios jurídicos de la Parte, la responsabilidad de las personas jurídicas solo podrá ser administrativa.",
+   "Cada Parte adoptará las medidas necesarias, de conformidad con sus principios jurídicos, para establecer la responsabilidad de las personas jurídicas que participen en los delitos de provocación publica para cometer delitos, reclutamiento y adiestramiento con fines terroristas, y los delitos accesorios."
+  ],
+  "correcta": 3,
+  "lila": "Art. 10 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Cada Parte adoptará las medidas necesarias, de conformidad con sus principios jurídicos, para establecer la responsabilidad de las personas jurídicas que participen en los delitos a que se refieren los artículos 5 a 7 y 9 del presente Convenio. 2. Sin perjuicio de los principios jurídicos de la Parte, la responsabilidad de las personas jurídicas podrá ser: • penal, • civil o • administrativa. 3. Esta responsabilidad se entenderá sin perjuicio de la responsabilidad penal de las personas físicas que hayan cometido los delitos.",
+  "exp": "La responsabilidad de la persona jurídica puede ser penal, civil o administrativa y se entiende sin perjuicio de la de las personas físicas.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "17-0",
+  "parT": "art 10 1 cada parte adoptara las medidas necesarias para establecer la responsabilidad de ",
+  "fR": 0.84,
+  "pz": "b-10",
+  "secClave": 8,
+  "id": "2-410"
+ },
+ {
+  "lote": "d2",
+  "i": 49,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "14",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Respecto a la competencia, señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Cada Parte adoptará las medidas necesarias para establecer su competencia con respecto a todo delito tipificado de conformidad con el presente Convenio en los casos en que el presunto autor del delito se encuentre en su territorio y no lo extradite a una Parte cuya jurisdicción se base en una regla de competencia que exista también en la legislación de la Parte requerida.",
+   "Cuando varias Partes reivindiquen una competencia con respecto a un presunto delito previsto en el presente Convenio, las Partes implicadas se pondrán de acuerdo, cuando sea oportuno, para determinar cuál de ellas está en mejores condiciones para ejercer las actuaciones correspondientes.",
+   "El presente Convenio no excluye competencia penal alguna ejercida de conformidad con las leyes nacionales."
+  ],
+  "correcta": 0,
+  "lila": "Art. 14 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Cada Parte adoptará las medidas necesarias para establecer su competencia con respecto a todo delito tipificado de conformidad con el presente Convenio: a) Cuando se haya cometido el delito en su territorio; b) cuando se haya cometido el delito a bordo de un buque con pabellón de esa Parte o a bordo de una aeronave matriculada en esa Parte; c) cuando haya cometido el delito uno de sus nacionales. 2. Cada Parte podrá asimismo establecer su competencia con respecto a todo delito tipificado de conformidad con el presente Convenio: a) Cuando el delito tuviera como finalidad o resultado la comisión de un delito previsto en el artículo 1 del presente Convenio, en su territorio o contra uno de sus nacionales; b) cuando el delito tuviera como finalidad o resultado la comisión de un delito previsto en el artículo 1 del presente Convenio, contra una instalación pública de esa Parte situada fuera de su territorio, incluidos los locales diplomáticos y consulares; c) cuando el delito tuviera como finalidad o resultado la comisión de un delito previsto en el artículo 1 del presente Convenio, con el fin de obligar a esa Parte a realizar o abstenerse de realizar un acto cualquiera; d) cuando haya cometido el delito un apátrida con residencia habitual en su territorio; e) cuando se haya cometido el delito a bordo de una aeronave al servicio del Gobierno de esa Parte. 3. Cada Parte adoptará las medidas necesarias para establecer su competencia con respecto a todo delito tipificado de conformidad con el presente Convenio en los casos en que el presunto autor del delito se encuentre en su territorio y no lo extradite a una Parte cuya jurisdicción se base en una regla de competencia que exista también en la legislación de la Parte requerida. 4. El presente Convenio no excluye competencia penal alguna ejercida de conformidad con las leyes nacionales. 5. Cuando varias Partes reivindiquen una competencia con respecto a un presunto delito previsto en el presente Convenio, las Partes implicadas se pondrán de acuerdo, cuando sea oportuno, para determinar cuál de ellas está en mejores condiciones para ejercer las actuaciones correspondientes.",
+  "exp": "Las tres afirmaciones reproducen los apartados 3, 4 y 5 del artículo 14.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "19-0",
+  "parT": "art 14 1 cada parte adoptara las medidas necesarias para establecer su competencia a cuand",
+  "fR": 0.23,
+  "pz": "b-14",
+  "secClave": 9,
+  "id": "2-411"
+ },
+ {
+  "lote": "d2",
+  "i": 50,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "19",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Respecto a la extradición, señale la opción INCORRECTA:",
+  "opciones": [
+   "En el caso de que a una de las Partes que supedite la extradición a la existencia de un tratado se le someta una solicitud de extradición por otra Parte con la que no esté vinculada por un tratado de extradición, la Parte requerida tendrá la facultad de considerar el presente Convenio como base jurídica constitutiva de la extradición en lo referente a los delitos previstos en el presente Convenio.",
+   "Las Partes no se comprometen a considerar los delitos tipificados en la presente Ley como casos de extradición en cualquier tratado de extradición que se concluya posteriormente entre ellas.",
+   "Los delitos previstos en el presente Convenio se considerarán de pleno derecho como casos de extradición en cualquier tratado de extradición concertada entre las Partes antes de la entrada en vigor del presente Convenio.",
+   "La extradición queda supeditada a la observancia de las demás condiciones previstas por la legislación de la Parte requerida."
+  ],
+  "correcta": 1,
+  "lila": "Art. 19 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Los delitos previstos en los artículos 5 a 7 y 9 del presente Convenio se considerarán de pleno derecho como casos de extradición en cualquier tratado de extradición concertado entre las Partes antes de la entrada en vigor del presente Convenio. Las Partes se comprometen a considerar dichos delitos como casos de extradición en cualquier tratado de extradición que se concluya posteriormente entre ellas. 2. En el caso de que a una de las Partes que supedite la extradición a la existencia de un tratado se le someta una solicitud de extradición por otra Parte con la que no esté vinculada por un tratado de extradición, la Parte requerida tendrá la facultad de considerar el presente Convenio como base jurídica constitutiva de la extradición en lo referente a los delitos previstos en los artículos 5 a 7 y 9 del presente Convenio. La extradición queda supeditada a la observancia de las demás condiciones previstas por la legislación de la Parte requerida. 3. Las Partes que no supediten la extradición a la existencia de un tratado reconocerán los delitos previstos en los artículos 5 a 7 y 9 del presente Convenio como casos de extradición entre ellas, en las condiciones previstas por la legislación de la Parte requerida. 4. Se considerará, en su caso, a efectos de extradición entre las Partes, que los delitos previstos en los artículos 5 a 7 y 9 del presente Convenio han sido cometidos no solamente en el lugar de su perpetración, sino también en el territorio de las Partes que hayan establecido su competencia conforme al artículo 14. 5. Las disposiciones de todos los tratados y acuerdos de extradición concertados entre las Partes en relación con los delitos contemplados en los artículos 5 a 7 y 9 del presente Convenio se considerarán modificadas entre las Partes en la medida en que sean incompatibles con el presente Convenio.",
+  "exp": "Las Partes sí se comprometen a considerar esos delitos como casos de extradición en los tratados posteriores.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "21-1",
+  "parT": "art 19 1 los delitos previstos en los articulos 5 a 7 y 9 se consideraran de pleno derecho",
+  "fR": 0.27,
+  "pz": "b-19",
+  "secClave": 9,
+  "id": "2-412"
+ },
+ {
+  "lote": "d2",
+  "i": 51,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "20",
+    "ap": "5"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Artículo 20. Exclusión de la cláusula de excepción política. ¿Por qué periodo serán válidas las reservas formuladas en virtud del citado artículo",
+  "opciones": [
+   "Por un período de tres años a partir del primer día de la entrada en vigor del presente Convenio para la Parte de que se trate. No obstante, dichas reservas no podrán ser renovadas.",
+   "Por un período de tres años a partir del primer día de la entrada en vigor del presente Convenio para la Parte de que se trate. No obstante, dichas reservas podrán ser renovadas por períodos de igual duración.",
+   "Por un período de un año a partir del primer día de la entrada en vigor del presente Convenio para la Parte de que se trate. No obstante, dichas reservas podrán ser renovadas por períodos de igual duración.",
+   "Por un período de un año a partir del primer día de la entrada en vigor del presente Convenio para la Parte de que se trate. No obstante, dichas reservas no podrán ser renovadas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 20.5 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "5. Las reservas formuladas serán válidas por un período de tres años a partir del primer día de la entrada en vigor del presente Convenio para la Parte de que se trate. No obstante, dichas reservas podrán ser renovadas por períodos de igual duración.",
+  "exp": "Las reservas valen tres años y pueden renovarse por períodos de igual duración.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "22-3",
+  "parT": "5 las reservas formuladas seran validas por un periodo de tres anos a partir del primer di",
+  "fR": 1,
+  "pz": "b-20",
+  "secClave": 9,
+  "id": "2-413"
+ },
+ {
+  "lote": "d2",
+  "i": 52,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "21",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Ninguna disposición del presente Convenio se interpretará en el sentido de que implique una obligación de extraditar si la persona objeto de la demanda de extradición:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Corre el riesgo de que se le imponga la pena de muerte.",
+   "Corre el riesgo de quedar expuesta a la tortura o a penas o tratos inhumanos o degradantes.",
+   "Cuando la ley de la Parte requerida no permita la pena privativa de libertad a perpetuidad, de que se le imponga la pena privativa de libertad a perpetuidad sin posibilidad de remisión de la pena, a menos que la Parte requerida tenga la obligación de extraditar conforme a los tratados de extradición aplicables, si la Parte requirente proporciona garantías consideradas suficientes por la Parte requerida de que no se impondrá la pena capital o, en el caso de que se imponga, la misma no será ejecutada, o de que la persona afectada no será sometida a una pena privativa de libertad a perpetuidad sin posibilidad de remisión de la pena."
+  ],
+  "correcta": 0,
+  "lila": "Art. 21 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Ninguna disposición del presente Convenio se interpretará en el sentido de que implique una obligación de extraditar o de conceder la asistencia judicial, si la Parte requerida tiene serias razones para considerar que la demanda de extradición motivada por un delito de los previstos en los artículos 5 a 7 y 9, o de asistencia judicial con respecto a tales delitos, ha sido presentada para perseguir o castigar a una persona por consideraciones de raza, religión, nacionalidad, origen étnico o de opiniones políticas, o que la situación de dicha persona corra el riesgo de agravarse por una u otra de dichas razones. 2. Ninguna disposición del presente Convenio se interpretará en el sentido de que implique una obligación de extraditar si la persona objeto de la demanda de extradición corre el riesgo de quedar expuesta a la tortura o a penas o tratos inhumanos o degradantes. 3. Ninguna disposición del presente Convenio se interpretará en el sentido de que implique una obligación de extraditar si la persona objeto de la demanda de extradición corre el riesgo de que se le imponga la pena de muerte o, cuando la ley de la Parte requerida no permita la pena privativa de libertad a perpetuidad, de que se le imponga la pena privativa de libertad a perpetuidad sin posibilidad de remisión de la pena, a menos que la Parte requerida tenga la obligación de extraditar conforme a los tratados de extradición aplicables, si la Parte requirente proporciona garantías consideradas suficientes por la Parte requerida de que no se impondrá la pena capital o, en el caso de que se imponga, la misma no será ejecutada, o de que la persona afectada no será sometida a una pena privativa de libertad a perpetuidad sin posibilidad de remisión de la pena.",
+  "exp": "El artículo 21 recoge el riesgo de tortura, de pena de muerte y de privación de libertad a perpetuidad sin remisión.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "23-0",
+  "parT": "art 21 1 ninguna disposicion implique una obligacion de extraditar o de conceder la asiste",
+  "fR": 0.5,
+  "pz": "b-21",
+  "secClave": 9,
+  "id": "2-414"
+ },
+ {
+  "lote": "d2",
+  "i": 53,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "27",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. ¿Quién NO podrá proponer enmiendas al presente Convenio?:",
+  "opciones": [
+   "Cualquiera de las Partes.",
+   "El Secretario General del Consejo de Europa.",
+   "El Comité de Ministros del Consejo de Europa.",
+   "Por la Consulta entre las Partes."
+  ],
+  "correcta": 1,
+  "lila": "Art. 27.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Podrán proponerse enmiendas al presente Convenio por cualquiera de las Partes, por el Comité de Ministros del Consejo de Europa o por la Consulta entre las Partes.",
+  "exp": "Pueden proponer enmiendas las Partes, el Comité de Ministros y la Consulta entre las Partes.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "26-0",
+  "parT": "art 27 1 podran proponerse enmiendas al presente convenio por cualquiera de las partes por",
+  "fR": 1,
+  "pz": "b-27",
+  "secClave": 10,
+  "id": "2-415"
+ },
+ {
+  "lote": "d2",
+  "i": 54,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "31",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Toda Parte podrá denunciar en cualquier momento el presente Convenio mediante notificación enviada al Secretario General del Consejo de Europa. ¿Cuándo entrará en vigor la denuncia?:",
+  "opciones": [
+   "El tercer día del mes siguiente a la expiración de un período de tres meses después de la fecha de recepción de la notificación por el Secretario General.",
+   "El primer día del mes siguiente a la expiración de un período de tres meses después de la fecha de recepción de la notificación por el Secretario General.",
+   "El tercer día del mes siguiente a la expiración de un período de seis meses después de la fecha de recepción de la notificación por el Secretario General.",
+   "El primer día del mes siguiente a la expiración de un período de seis meses después de la fecha de recepción de la notificación por el Secretario General."
+  ],
+  "correcta": 1,
+  "lila": "Art. 31 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Toda Parte podrá denunciar en cualquier momento el presente Convenio mediante notificación enviada al Secretario General del Consejo de Europa. 2. La denuncia entrará en vigor el primer día del mes siguiente a la expiración de un período de tres meses después de la fecha de recepción de la notificación por el Secretario General.",
+  "exp": "La denuncia entra en vigor el primer día del mes siguiente a un período de tres meses desde la recepción.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "27-2",
+  "parT": "art 31 1 toda parte podra denunciar en cualquier momento el presente convenio mediante not",
+  "fR": 1,
+  "pz": "b-31",
+  "secClave": 10,
+  "id": "2-416"
+ },
+ {
+  "lote": "d2",
+  "i": 55,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "2",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. ¿Cuál es el objetivo del presente Convenio?:",
+  "opciones": [
+   "Mejorar los esfuerzos de las Partes para la prevención del terrorismo y de sus efectos positivas sobre el pleno disfrute sobre el derecho a la vida y en particular sobre los derechos humanos.",
+   "Mejorar los esfuerzos de las Partes para la prevención del terrorismo y de sus efectos positivas sobre el pleno disfrute de los derechos humanos y en particular sobre el derecho a la vida.",
+   "Mejorar los esfuerzos de las Partes para la prevención del terrorismo y de sus efectos negativos sobre el pleno disfrute sobre el derecho a la vida y en particular sobre los derechos humanos.",
+   "Mejorar los esfuerzos de las Partes para la prevención del terrorismo y de sus efectos negativos sobre el pleno disfrute de los derechos humanos y en particular sobre el derecho a la vida."
+  ],
+  "correcta": 3,
+  "lila": "Art. 2 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "El OBJETIVO del presente Convenio es mejorar los esfuerzos de las Partes para la prevención del terrorismo y de sus efectos negativos sobre el pleno disfrute de los derechos humanos y en particular sobre el derecho a la vida, por medio de la adopción de medidas, tanto a nivel nacional como en el marco de la cooperación internacional, teniendo en cuenta los tratados y acuerdos bilaterales y multilaterales existentes aplicables entre las Partes.",
+  "exp": "El objetivo habla de efectos negativos sobre los derechos humanos y en particular sobre el derecho a la vida.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "13-1",
+  "parT": "art 2 el objetivo del presente convenio es mejorar los esfuerzos de las partes para la pre",
+  "fR": 0.79,
+  "pz": "b-2",
+  "secClave": 7,
+  "id": "2-417"
+ },
+ {
+  "lote": "d2",
+  "i": 56,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "3",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Cada Parte tomará las medidas necesarias para mejorar y desarrollar la cooperación entre las autoridades nacionales con vistas a prevenir los delitos terroristas y sus efectos negativos, en particular mediante:",
+  "opciones": [
+   "El refuerzo de la protección física de las personas y de los bienes.",
+   "La implantación de los planes de formación y coordinación para situaciones de crisis.",
+   "Todas las opciones son correctas.",
+   "El intercambio de formación."
+  ],
+  "correcta": 0,
+  "lila": "Art. 3.2 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "2. Cada Parte tomará las medidas necesarias para mejorar y desarrollar la cooperación entre las autoridades nacionales con vistas a prevenir los delitos terroristas y sus efectos negativos, en particular mediante: a) El INTERCAMBIO de información; b) El REFUERZO de la protección física de las personas y de los bienes; c) La MEJORA de los planes de formación y coordinación para situaciones de crisis.",
+  "exp": "El texto cita el refuerzo de la protección física; las otras cambian «mejora» por «implantación» o «información» por «formación».",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "14-1",
+  "parT": "2 mejorar y desarrollar la cooperacion entre las autoridades nacionales en particular medi",
+  "fR": 0.66,
+  "pz": "b-3",
+  "secClave": 7,
+  "id": "2-418"
+ },
+ {
+  "lote": "d2",
+  "i": 58,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "11",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Respecto a las sanciones y medidas, señale la opción INCORRECTA:",
+  "opciones": [
+   "Cada Parte velará por que las personas jurídicas consideradas responsables, sean objeto de sanciones efectivas, proporcionadas y disuasorias.",
+   "Todo condena firme anterior dictada en un Estado extranjero por los delitos a que se refiere el presente Convenio podrá tenerse en cuenta en la determinación de la pena, en la medida en que lo permita el derecho interno y de conformidad con el mismo.",
+   "Las sanciones serán de naturaleza penal o no penal, excluidas las sanciones pecuniarias.",
+   "Cada Parte adoptará las medidas necesarias, para que a los delitos de provocación pública para cometer delitos, reclutamiento y adiestramiento con fines terroristas, y los delitos accesorios del presente Convenio sean aplicables penas efectivas, proporcionadas y disuasorias."
+  ],
+  "correcta": 2,
+  "lila": "Art. 11 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Cada Parte adoptará las medidas necesarias para que a los delitos a que se refieren los artículos 5 a 7 y 9 del presente Convenio sean aplicables penas: • EFECTIVAS, • PROPORCIONADAS y • DISUASORIAS. 2. Toda condena firme anterior dictada en un Estado extranjero por los delitos a que se refiere el presente Convenio podrá tenerse en cuenta en la determinación de la pena, en la medida en que lo permita el derecho interno y de conformidad con el mismo. 3. Cada Parte velará por que las personas jurídicas consideradas responsables, de conformidad con el artículo 10, sean objeto de sanciones EFECTIVAS, PROPORCIONADAS y DISUASORIAS de naturaleza penal o no penal, incluidas las sanciones pecuniarias.",
+  "exp": "Las sanciones a las personas jurídicas incluyen las pecuniarias.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "17-1",
+  "parT": "art 11 1 cada parte adoptara las medidas necesarias para que a los delitos a que se refier",
+  "fR": 0.74,
+  "pz": "b-11",
+  "secClave": 8,
+  "id": "2-419"
+ },
+ {
+  "lote": "d2",
+  "i": 59,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "16",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. ¿Cuándo NO se aplicará el presente Convenio a los delitos de provocación pública para cometer delitos, reclutamiento y adiestramiento con fines terroristas, y los delitos accesorios?:",
+  "opciones": [
+   "Cuando el presunto autor sea nacional de ese Estado y se encuentre en el territorio de ese Estado.",
+   "Cuando ningún otro Estado tenga razones para ejercer su competencia.",
+   "Cuando se cometan dentro de un único Estado.",
+   "Cuando se cumplan todas las opciones de respuesta."
+  ],
+  "correcta": 3,
+  "lila": "Art. 16 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "El presente Convenio no se aplicará cuando los delitos previstos en los artículos 5 a 7 y 9 se cometan dentro de un único Estado, cuando el presunto autor sea nacional de ese Estado y se encuentre en el territorio de ese Estado, y ningún otro Estado tenga razones, en virtud de los apartados 1 ó 2 del artículo 14 del presente Convenio, para ejercer su competencia, entendiéndose que las disposiciones de los artículos 17 y 20 a 22 del presente Convenio, según convenga, se aplicarán en esos casos.",
+  "exp": "Las tres condiciones deben darse a la vez.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "20-0",
+  "parT": "art 16 el presente convenio no se aplicara cuando los delitos previstos en los articulos 5",
+  "fR": 0.74,
+  "pz": null,
+  "secClave": 9,
+  "id": "2-420"
+ },
+ {
+  "lote": "d2",
+  "i": 60,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "20",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Ninguno de los delitos de provocación pública para cometer delitos, reclutamiento y adiestramiento con fines terroristas, y los delitos accesorios del presente Convenio se considerará, a efectos de los requisitos necesarios para la extradición o la asistencia judicial, como... señale la opción INCORRECTA:",
+  "opciones": [
+   "Un delito cometido por un político.",
+   "Un delito inspirado por móviles políticos.",
+   "Delito conexo a un delito político.",
+   "Delito político."
+  ],
+  "correcta": 0,
+  "lila": "Art. 20.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Ninguno de los delitos mencionados en los artículos 5 a 7 y 9 del presente Convenio se considerará, a efectos de los requisitos necesarios para la extradición o la asistencia judicial, como delito político o como delito conexo a un delito político, o como un delito inspirado por móviles políticos. Por consiguiente, una solicitud de extradición o de asistencia judicial basada en uno de esos delitos no podrá ser denegada por el solo hecho de que se refiera a un delito político, o a un delito conexo a un delito político o a un delito inspirado por móviles políticos.",
+  "exp": "El artículo no habla de delito cometido por un político.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "22-0",
+  "parT": "1 ninguno de los delitos mencionados en los articulos 5 a 7 y 9 se considerara a efectos d",
+  "fR": 0.61,
+  "pz": "b-20",
+  "secClave": 9,
+  "id": "2-421"
+ },
+ {
+  "lote": "d2",
+  "i": 61,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "21",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Señale la opción INCORRECTA. Ninguna disposición del presente Convenio se interpretará en el sentido de que implique una obligación de extraditar o de conceder la asistencia judicial, si la Parte requerida tiene serias razones para considerar que la demanda de extradición motivada por un delito de los previstos en el citado Convenio, ha sido presentada para perseguir o castigar a una persona por consideraciones de:",
+  "opciones": [
+   "Religión.",
+   "sexo.",
+   "Raza.",
+   "Nacionalidad."
+  ],
+  "correcta": 1,
+  "lila": "Art. 21.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Ninguna disposición del presente Convenio se interpretará en el sentido de que implique una obligación de extraditar o de conceder la asistencia judicial, si la Parte requerida tiene serias razones para considerar que la demanda de extradición motivada por un delito de los previstos en los artículos 5 a 7 y 9, o de asistencia judicial con respecto a tales delitos, ha sido presentada para perseguir o castigar a una persona por consideraciones de raza, religión, nacionalidad, origen étnico o de opiniones políticas, o que la situación de dicha persona corra el riesgo de agravarse por una u otra de dichas razones.",
+  "exp": "El sexo no figura entre las consideraciones del artículo 21.1.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "23-0",
+  "parT": "art 21 1 ninguna disposicion implique una obligacion de extraditar o de conceder la asiste",
+  "fR": 0.43,
+  "pz": "b-21",
+  "secClave": 9,
+  "id": "2-422"
+ },
+ {
+  "lote": "d2",
+  "i": 62,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "22",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Respecto a la información espontánea, señale la opción CORRECTA:",
+  "opciones": [
+   "Sin perjuicio de sus propias investigaciones o procedimientos, las autoridades competentes de una Parte podrán transmitir, sin necesidad de previa solicitud, a las autoridades competentes de otra Parte, informaciones obtenidas en el marco de su propia investigación, cuando aquellas autoridades consideren que la comunicación de dichas informaciones podría ayudar a la Parte que recibe las informaciones a entablar o llevar a cabo investigaciones o procedimientos, o cuando dichas informaciones puedan dar lugar a una solicitud formulada por esa Parte en virtud del presente Convenio.",
+   "Todas las opciones son correctas.",
+   "La Parte que proporcione las informaciones no podrá supeditar su utilización por la Parte que las reciba a determinadas condiciones, conforme a su derecho nacional.",
+   "La Parte que reciba las informaciones no vendrá obligada a respetar dichas condiciones."
+  ],
+  "correcta": 0,
+  "lila": "Art. 22 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Sin perjuicio de sus propias investigaciones o procedimientos, las autoridades competentes de una Parte podrán transmitir, sin necesidad de previa solicitud, a las autoridades competentes de otra Parte, informaciones obtenidas en el marco de su propia investigación, cuando aquellas autoridades consideren que la comunicación de dichas informaciones podría ayudar a la Parte que recibe las informaciones a entablar o llevar a cabo investigaciones o procedimientos, o cuando dichas informaciones puedan dar lugar a una solicitud formulada por esa Parte en virtud del presente Convenio. 2. La Parte que proporcione las informaciones podrá supeditar su utilización por la Parte que las reciba a determinadas condiciones, conforme a su derecho nacional. 3. La Parte que reciba las informaciones vendrá obligada a respetar dichas condiciones. 4. No obstante, cualquiera de las Partes podrá declarar, en cualquier momento y mediante declaración enviada al Secretario General del Consejo de Europa, que se reserva el derecho de no someterse a las condiciones impuestas en virtud de lo dispuesto en el apartado 2 del presente artículo por la Parte que proporcione la información, a menos que se le notifique previamente la naturaleza de la información que se vaya a facilitar y que acepte que se le transmita esta última.",
+  "exp": "La Parte que informa puede poner condiciones y la receptora está obligada a respetarlas.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "23-1",
+  "parT": "art 22 1 las autoridades competentes de una parte podran transmitir sin necesidad de previ",
+  "fR": 0.47,
+  "pz": "b-22",
+  "secClave": 9,
+  "id": "2-423"
+ },
+ {
+  "lote": "d2",
+  "i": 63,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "24",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Después de la entrada en vigor del presente Convenio, ¿quién podrá invitar a adherirse al mismo a todo Estado que no sea miembro del Consejo de Europa y que no haya participado en la elaboración del Convenio?:",
+  "opciones": [
+   "El Secretario General del Consejo de Europa.",
+   "El Presidente del Parlamento Europeo.",
+   "El Comité de Ministros del Consejo de Europa.",
+   "La Asamblea Consultiva del Consejo de Europa."
+  ],
+  "correcta": 2,
+  "lila": "Art. 24 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Después de la entrada en vigor del presente Convenio, el Comité de Ministros del Consejo de Europa podrá invitar a todo Estado que no sea miembro del Consejo de Europa y que no haya participado en la elaboración del Convenio, previa consulta a las Partes en el presente Convenio y después de haber obtenido su consentimiento unánime, a adherirse al presente Convenio. La decisión se adoptará por la mayoría prevista en el artículo 20.d) del Estatuto del Consejo de Europa y por unanimidad de los representantes de las Partes que tengan derecho a estar representadas en el Comité de Ministros. 2. Para cualquier Estado que se adhiera al Convenio en virtud del apartado 1 anterior, el Convenio entrará en vigor el primer día del mes siguiente a la expiración de un período de tres meses después de la fecha de depósito del instrumento de adhesión en poder del Secretario General del Consejo de Europa.",
+  "exp": "Invita el Comité de Ministros del Consejo de Europa.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "24-1",
+  "parT": "art 24 1 despues de la entrada en vigor del presente convenio el comite de ministros del c",
+  "fR": 0.72,
+  "pz": "b-24",
+  "secClave": 10,
+  "id": "2-424"
+ },
+ {
+  "lote": "d2",
+  "i": 64,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "27",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Respecto a las enmiendas al presente Convenio, señale la opción INCORRECTA:",
+  "opciones": [
+   "El texto de toda enmienda aprobada por la Asamblea Consultiva no será transmitido a las Partes para obtener su aceptación.",
+   "Toda enmienda propuesta por una Parte o por el Comité de Ministros será trasladada a la Consulta entre las Partes, que someterá al Comité de Ministros su dictamen acerca de la enmienda propuesta.",
+   "Toda propuesta de enmienda será comunicada a las Partes por el Secretario General del Consejo de Europa.",
+   "El Comité de Ministros examinará la enmienda propuesta y cualquier dictamen sometido por la Consulta entre las Partes, pudiendo aprobar la enmienda."
+  ],
+  "correcta": 0,
+  "lila": "Art. 27 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Podrán proponerse enmiendas al presente Convenio por cualquiera de las Partes, por el Comité de Ministros del Consejo de Europa o por la Consulta entre las Partes. 2. Toda propuesta de enmienda será comunicada a las Partes por el Secretario General del Consejo de Europa. 3. Además, toda enmienda propuesta por una Parte o por el Comité de Ministros será trasladada a la Consulta entre las Partes, que someterá al Comité de Ministros su dictamen acerca de la enmienda propuesta. 4. El Comité de Ministros examinará la enmienda propuesta y cualquier dictamen sometido por la Consulta entre las Partes, pudiendo aprobar la enmienda. 5. El texto de toda enmienda aprobada por el Comité de Ministros conforme al apartado 4 será transmitido a las Partes para obtener su aceptación. 6. Toda enmienda aprobada en virtud del apartado 4 entrará en vigor el trigésimo día siguiente a la fecha en que todas las Partes hayan comunicado su aceptación al Secretario General.",
+  "exp": "El texto aprobado lo aprueba el Comité de Ministros y sí se transmite a las Partes.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "26-0",
+  "parT": "art 27 1 podran proponerse enmiendas al presente convenio por cualquiera de las partes por",
+  "fR": 0.72,
+  "pz": "b-27",
+  "secClave": 10,
+  "id": "2-425"
+ },
+ {
+  "lote": "d2",
+  "i": 65,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "26",
+    "ap": "5"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. ¿Qué actividades NO se rigen por el Convenio objeto de la pregunta?:",
+  "opciones": [
+   "Las actividades de las fuerzas armadas en período de conflicto armado, en el sentido dado a estas expresiones por el derecho internacional humanitario, que se rijan por dicho derecho.",
+   "Ninguna de las opciones es correcta.",
+   "Las actividades de las fuerzas armadas en período de conflicto armado, en el sentido dado a estas expresiones por el Convenio de Ginebra, que no se rijan por el derecho internacional.",
+   "Las actividades de las fuerzas armadas en período de conflicto armado, en el sentido dado a estas expresiones por el derecho nacional de esa Parte."
+  ],
+  "correcta": 0,
+  "lila": "Art. 26.5 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "5. Las actividades de las fuerzas armadas en período de conflicto armado, en el sentido dado a estas expresiones por el derecho internacional humanitario, que se rijan por dicho derecho, no se regirán por el presente Convenio, y las actividades llevadas a cabo por las fuerzas armadas de una de las Partes en el ejercicio de sus funciones oficiales, cuando las mismas estén regidas por otras normas del derecho internacional, tampoco se regirán por el presente Convenio.",
+  "exp": "No se rigen por el Convenio las actividades de las fuerzas armadas en conflicto armado regidas por el derecho internacional humanitario.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "25-2",
+  "parT": "5 las actividades de las fuerzas armadas en periodo de conflicto armado en el sentido dado",
+  "fR": 0.47,
+  "pz": "b-26",
+  "secClave": 10,
+  "id": "2-426"
+ },
+ {
+  "lote": "d2",
+  "i": 66,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "20",
+    "ap": "6"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Exclusión de la cláusula de excepción política. Doce meses antes de la expiración de la reserva, el Secretario General del Consejo de Europa informará a la Parte de que se trate de dicha expiración. ¿Qué plazo antes de la fecha de expiración, la Parte deberá notificar al Secretario General su intención de mantener, modificar o retirar la reserva?:",
+  "opciones": [
+   "Con tiempo suficiente.",
+   "Seis meses.",
+   "Doce meses.",
+   "Tres meses."
+  ],
+  "correcta": 3,
+  "lila": "Art. 20.6 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "6. Doce meses antes de la expiración de la reserva, el Secretario General del Consejo de Europa informará a la Parte de que se trate de dicha expiración. Tres meses antes de la fecha de expiración, la Parte deberá notificar al Secretario General su intención de mantener, modificar o retirar la reserva. Cuando una Parte notifique al Secretario General que mantendrá su reserva, proporcionará explicaciones sobre los motivos que justifican su mantenimiento. A falta de notificación por la Parte de que se trate, el Secretario General informará a dicha Parte de que su reserva queda automáticamente prorrogada por un período de seis meses. Si la Parte afectada no notifica su decisión de mantener o modificar sus reservas antes de la expiración de ese período, la reserva quedará sin efecto.",
+  "exp": "La notificación debe hacerse tres meses antes de la expiración.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "22-4",
+  "parT": "6 doce meses antes de la expiracion de la reserva el secretario general del consejo de eur",
+  "fR": 0.76,
+  "pz": "b-20",
+  "secClave": 9,
+  "id": "2-427"
+ },
+ {
+  "lote": "d2",
+  "i": 67,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "17",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Cooperación internacional en materia penal. Cada Parte podrá considerar la posibilidad de establecer mecanismos adicionales para compartir con otras Partes la información o los elementos probatorios necesarios para determinar las responsabilidades:",
+  "opciones": [
+   "Administrativas.",
+   "Todas las opciones son correctas.",
+   "Civiles.",
+   "Penales."
+  ],
+  "correcta": 1,
+  "lila": "Art. 17.4 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "4. Cada Parte podrá considerar la posibilidad de establecer mecanismos adicionales para compartir con otras Partes la información o los elementos probatorios necesarios para determinar las responsabilidades penales, civiles o administrativas, como se prevé en el artículo 10.",
+  "exp": "El artículo menciona las responsabilidades penales, civiles y administrativas.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "20-1",
+  "parT": "art 17 1 las partes se prestaran la asistencia mas amplia posible para cualquier investiga",
+  "fR": 0.03,
+  "pz": null,
+  "secClave": 9,
+  "id": "2-428"
+ },
+ {
+  "lote": "d2",
+  "i": 68,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "9",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Delitos accesorios. Cada Parte adoptará las medidas necesarias para que se califique en su derecho interno como delito la tentativa de cometer ciertos delitos previstos en el Convenio objeto de la pregunta. ¿A qué delitos se refiere el presente enunciado?:",
+  "opciones": [
+   "Al delito de provocación pública para cometer delitos terroristas, al delito de reclutamiento con fines terroristas y al delito de adiestramiento con fines terroristas.",
+   "Al delito de provocación pública para cometer delitos terroristas y al delito de adiestramiento con fines terroristas.",
+   "Al delito de reclutamiento con fines terroristas y al delito de adiestramiento con fines terroristas.",
+   "Al delito de provocación pública para cometer delitos terroristas y al delito de reclutamiento con fines terroristas."
+  ],
+  "correcta": 2,
+  "lila": "Art. 9.2 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "2. Cada Parte adoptará asimismo las medidas necesarias para que se califique como delito, en su derecho interno y de conformidad con el mismo, la tentativa de cometer un delito de los previstos en los artículos 6 y 7 del presente Convenio.",
+  "exp": "La tentativa se tipifica respecto de los delitos de reclutamiento y de adiestramiento (artículos 6 y 7).",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "16-2",
+  "parT": "2 cada parte adoptara asimismo las medidas necesarias para que se califique como delito la",
+  "fR": 0.7,
+  "pz": "b-9",
+  "secClave": 8,
+  "id": "2-429"
+ },
+ {
+  "lote": "d2",
+  "i": 69,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "23",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Firma y entrada en vigor. ¿Cuándo entrará en vigor el presente Convenio?:",
+  "opciones": [
+   "El primer día del mes siguiente a la expiración de un período de tres meses después de la fecha en que Siete Signatarios, de los que al menos cuatro deberán ser miembros del Consejo de Europa, hayan expresado su consentimiento en quedar vinculados por el presente Convenio.",
+   "El primer día del mes siguiente a la expiración de un período de tres meses después de la fecha en que seis Signatarios, de los que al menos cuatro deberán ser miembros del Consejo de Europa, hayan expresado su consentimiento en quedar vinculados por el presente Convenio.",
+   "El primer día del mes siguiente a la expiración de un período de tres meses después de la fecha en que seis Signatarios, de los que al menos tres deberán ser miembros del Consejo de Europa, hayan expresado su consentimiento en quedar vinculados por el presente Convenio.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 23 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. El presente Convenio quedará abierto a la firma de los Estados miembros del Consejo de Europa, de la Comunidad Europea y de los Estados no miembros que hayan participado en su elaboración. 2. El presente Convenio estará sujeto a ratificación, aceptación o aprobación. Los instrumentos de ratificación, aceptación o aprobación serán depositados en poder del Secretario General del Consejo de Europa. 3. El presente Convenio entrará en vigor: • el primer día del mes siguiente a la expiración de un período de tres meses después de la fecha en que seis Signatarios, de los que al menos cuatro deberán ser miembros del Consejo de Europa, hayan expresado su consentimiento en quedar vinculados por el presente Convenio, conforme a lo dispuesto en el apartado 2. 4. Para todo Signatario que exprese con posterioridad su consentimiento en quedar vinculado por el presente Convenio, éste entrará en vigor el primer día del mes siguiente a la expiración de un período de tres meses después de la fecha en que haya expresado su consentimiento en quedar vinculado por el presente Convenio, conforme a lo dispuesto en el apartado 2.",
+  "exp": "Se exigen seis Signatarios, de los que al menos cuatro sean miembros del Consejo de Europa.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "24-0",
+  "parT": "art 23 1 el presente convenio quedara abierto a la firma de los estados miembros del conse",
+  "fR": 0.68,
+  "pz": "b-23",
+  "secClave": 10,
+  "id": "2-430"
+ },
+ {
+  "lote": "d2",
+  "i": 70,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Reclutamiento con fines terroristas. Cada Parte adoptará las medidas necesarias para tipificar como delito, de conformidad con su derecho interno, el reclutamiento con fines terroristas:",
+  "opciones": [
+   "Cuando se cometa utilizando a menores de edad.",
+   "Cuando se cometa ilegal e intencionadamente.",
+   "Cuando se cometa por una organización criminal.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 6 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. A los efectos del presente Convenio, se entenderá por «reclutamiento con fines terroristas»: • el hecho de incitar a otra persona a cometer o participar en la comisión de delitos terroristas, o a unirse a una asociación o a un grupo para contribuir a que éstos cometan uno o varios delitos terroristas. 2. Cada Parte adoptará las medidas necesarias para tipificar como delito, de conformidad con su derecho interno, el reclutamiento con fines terroristas, tal como se define en el apartado 1 del presente artículo, cuando se cometa ilegal e intencionadamente.",
+  "exp": "El reclutamiento se tipifica cuando se cometa ilegal e intencionadamente.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "15-1",
+  "parT": "art 6 1 se entendera por reclutamiento con fines terroristas el hecho de incitar a otra pe",
+  "fR": 0.55,
+  "pz": "b-6",
+  "secClave": 8,
+  "id": "2-431"
+ },
+ {
+  "lote": "d2",
+  "i": 71,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "27",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Enmiendas al Convenio. ¿Quién podrá proponer enmiendas al presente Convenio?:",
+  "opciones": [
+   "Cualquiera de las Partes.",
+   "Todas las opciones son correctas.",
+   "Mediante la Consulta entre las Partes.",
+   "El Comité de Ministros del Consejo de Europa."
+  ],
+  "correcta": 1,
+  "lila": "Art. 27.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Podrán proponerse enmiendas al presente Convenio por cualquiera de las Partes, por el Comité de Ministros del Consejo de Europa o por la Consulta entre las Partes.",
+  "exp": "Pueden proponer enmiendas las tres.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "26-0",
+  "parT": "art 27 1 podran proponerse enmiendas al presente convenio por cualquiera de las partes por",
+  "fR": 1,
+  "pz": "b-27",
+  "secClave": 10,
+  "id": "2-432"
+ },
+ {
+  "lote": "d2",
+  "i": 72,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "15",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Deber de investigación. Si considera que las circunstancias lo justifican, la Parte en cuyo territorio se encuentre el autor o el presunto autor del delito tomará las medidas oportunas en virtud de su legislación interna para garantizar la presencia de esa persona a efectos de emprender actuaciones penales contra ella o para su extradición. ¿A qué tendrá derecho cualquier persona a cuyo respecto se adopten las medidas referidas anteriormente?:",
+  "opciones": [
+   "Todas las opciones son incorrectas.",
+   "Comunicarse sin demora con el representante competente más próximo del Estado en que sea detenido o que esté facultado de otro modo para proteger sus derechos.",
+   "Comunicarse sin demora con el representante competente más próximo del Estado en cuyo territorio tenga su residencia habitual, en el caso de una persona extranjera.",
+   "Recibir la visita de un representante del Estado en el que sea detenido o que esté facultado de otro modo para proteger sus derechos."
+  ],
+  "correcta": 0,
+  "lila": "Art. 15.3 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "3. Cualquier persona a cuyo respecto se adopten las medidas a que se refiere el apartado 2 tendrá derecho a: a) Comunicarse sin demora con el representante competente más próximo del Estado del que sea nacional o que esté facultado de otro modo para proteger sus derechos o, si se trata de una persona apátrida, del Estado en cuyo territorio tenga su residencia habitual; b) Recibir la visita de un representante de ese Estado; c) Ser informada de los derechos que le confieren los puntos a) y b).",
+  "exp": "El derecho es ante el Estado de nacionalidad (o de residencia habitual si es apátrida); ninguna opción lo reproduce.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "19-4",
+  "parT": "art 15 3 cualquier persona a cuyo respecto se adopten las medidas tendra derecho a a comun",
+  "fR": 0.55,
+  "pz": "b-15",
+  "secClave": 9,
+  "id": "2-433"
+ },
+ {
+  "lote": "d2",
+  "i": 73,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "2",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Objetivo. ¿Cuál es el objetivo del Convenio objeto de la pregunta?:",
+  "opciones": [
+   "Mejorar los esfuerzos de las Partes para la prevención del terrorismo por medio de la adopción de medidas en el marco de la cooperación policial europea.",
+   "Mejorar los esfuerzos de las Partes para la prevención del terrorismo por medio de la adopción de medidas, tanto a nivel nacional como en el marco de la cooperación internacional.",
+   "Mejorar los esfuerzos de las Partes para la prevención del terrorismo por medio de la unificación de medidas a nivel europeo.",
+   "Mejorar los esfuerzos de las Partes para la prevención del terrorismo por medio de la regulación de técnicas y medidas de índole preventivo."
+  ],
+  "correcta": 1,
+  "lila": "Art. 2 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "El OBJETIVO del presente Convenio es mejorar los esfuerzos de las Partes para la prevención del terrorismo y de sus efectos negativos sobre el pleno disfrute de los derechos humanos y en particular sobre el derecho a la vida, por medio de la adopción de medidas, tanto a nivel nacional como en el marco de la cooperación internacional, teniendo en cuenta los tratados y acuerdos bilaterales y multilaterales existentes aplicables entre las Partes.",
+  "exp": "El Convenio actúa tanto en el nivel nacional como en el de la cooperación internacional.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "13-1",
+  "parT": "art 2 el objetivo del presente convenio es mejorar los esfuerzos de las partes para la pre",
+  "fR": 0.79,
+  "pz": "b-2",
+  "secClave": 7,
+  "id": "2-434"
+ },
+ {
+  "lote": "d2",
+  "i": 74,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "22",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Información espontánea. En ciertos casos, las autoridades competentes de una Parte podrán transmitir, sin necesidad de previa solicitud, a las autoridades competentes de otra Parte, informaciones obtenidas en el marco de su propia investigación. La Parte que proporcione las informaciones podrá supeditar su utilización por la Parte que las reciba a determinadas condiciones, conforme a:",
+  "opciones": [
+   "Su derecho nacional.",
+   "El Convenio del Consejo de Europa para la prevención del terrorismo.",
+   "El derecho internacional.",
+   "El derecho de la Unión Europea."
+  ],
+  "correcta": 0,
+  "lila": "Art. 22 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Sin perjuicio de sus propias investigaciones o procedimientos, las autoridades competentes de una Parte podrán transmitir, sin necesidad de previa solicitud, a las autoridades competentes de otra Parte, informaciones obtenidas en el marco de su propia investigación, cuando aquellas autoridades consideren que la comunicación de dichas informaciones podría ayudar a la Parte que recibe las informaciones a entablar o llevar a cabo investigaciones o procedimientos, o cuando dichas informaciones puedan dar lugar a una solicitud formulada por esa Parte en virtud del presente Convenio. 2. La Parte que proporcione las informaciones podrá supeditar su utilización por la Parte que las reciba a determinadas condiciones, conforme a su derecho nacional. 3. La Parte que reciba las informaciones vendrá obligada a respetar dichas condiciones. 4. No obstante, cualquiera de las Partes podrá declarar, en cualquier momento y mediante declaración enviada al Secretario General del Consejo de Europa, que se reserva el derecho de no someterse a las condiciones impuestas en virtud de lo dispuesto en el apartado 2 del presente artículo por la Parte que proporcione la información, a menos que se le notifique previamente la naturaleza de la información que se vaya a facilitar y que acepte que se le transmita esta última.",
+  "exp": "Las condiciones se fijan conforme a su derecho nacional.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "23-1",
+  "parT": "art 22 1 las autoridades competentes de una parte podran transmitir sin necesidad de previ",
+  "fR": 0.47,
+  "pz": "b-22",
+  "secClave": 9,
+  "id": "2-435"
+ },
+ {
+  "lote": "d2",
+  "i": 75,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "3",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Políticas nacionales de prevención. Cada Parte promoverá la tolerancia:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Fomentando el diálogo interreligioso y transcultural.",
+   "Fomentando, en su caso, la participación de organizaciones no gubernamentales y otros actores de la sociedad civil.",
+   "Con Objeto de prevenir tensiones que podrían contribuir a la comisión de delitos terroristas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 3.3 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "3. Cada Parte promoverá la tolerancia fomentando el diálogo interreligioso y transcultural, fomentando, en su caso, la participación de organizaciones no gubernamentales y otros actores de la sociedad civil, con objeto de prevenir tensiones que podrían contribuir a la comisión de delitos terroristas.",
+  "exp": "Las tres figuran en el artículo 3.3.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "14-2",
+  "parT": "3 cada parte promovera la tolerancia fomentando el dialogo interreligioso y transcultural ",
+  "fR": 0.66,
+  "pz": "b-3",
+  "secClave": 7,
+  "id": "2-436"
+ },
+ {
+  "lote": "d2",
+  "i": 76,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "10",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Responsabilidad de las personas jurídicas. Sin perjuicio de los principios jurídicos de la Parte, ¿cómo podrá ser la responsabilidad de las personas jurídicas?:",
+  "opciones": [
+   "Administrativa.",
+   "Todas las opciones son correctas.",
+   "Civil.",
+   "Penal."
+  ],
+  "correcta": 1,
+  "lila": "Art. 10 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Cada Parte adoptará las medidas necesarias, de conformidad con sus principios jurídicos, para establecer la responsabilidad de las personas jurídicas que participen en los delitos a que se refieren los artículos 5 a 7 y 9 del presente Convenio. 2. Sin perjuicio de los principios jurídicos de la Parte, la responsabilidad de las personas jurídicas podrá ser: • penal, • civil o • administrativa. 3. Esta responsabilidad se entenderá sin perjuicio de la responsabilidad penal de las personas físicas que hayan cometido los delitos.",
+  "exp": "Puede ser penal, civil o administrativa.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "17-0",
+  "parT": "art 10 1 cada parte adoptara las medidas necesarias para establecer la responsabilidad de ",
+  "fR": 0.84,
+  "pz": "b-10",
+  "secClave": 8,
+  "id": "2-437"
+ },
+ {
+  "lote": "d2",
+  "i": 77,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "13",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Cada Parte adoptará las medidas necesarias para proteger y apoyar a las víctimas de acciones terroristas cometidas en su propio territorio. ¿Qué incluirán estas medidas?:",
+  "opciones": [
+   "En particular la ayuda económica y la indemnización a las víctimas del terrorismo y a sus familiares próximos.",
+   "En particular la ayuda económica y social, así como la indemnización a las víctimas directas o indirectas del terrorismo y a sus familiares íntimos.",
+   "En particular la ayuda social y la indemnización a las víctimas del terrorismo y a sus familiares.",
+   "En particular la ayuda social y la posibilidad de obtener documentos, a las víctimas del terrorismo y a sus familiares íntimos."
+  ],
+  "correcta": 0,
+  "lila": "Art. 13 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "Cada Parte adoptará las medidas necesarias para proteger y apoyar a las víctimas de acciones terroristas cometidas en su propio territorio. Esas medidas incluirán, según los sistemas nacionales adecuados y de conformidad con su legislación interna, en particular la ayuda económica y la indemnización a las víctimas del terrorismo y a sus familiares próximos.",
+  "exp": "Las medidas incluyen la ayuda económica y la indemnización a las víctimas y a sus familiares próximos.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "18-1",
+  "parT": "art 13 cada parte adoptara las medidas necesarias para proteger y apoyar a las victimas de",
+  "fR": 0.73,
+  "pz": "b-13",
+  "secClave": 8,
+  "id": "2-438"
+ },
+ {
+  "lote": "d2",
+  "i": 78,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "5",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. A los efectos del presente Convenio, ¿qué se entenderá por \"provocación pública para cometer delitos terroristas\"?:",
+  "opciones": [
+   "El hecho de cometer o participar en la comisión de delitos terroristas, o a unirse a una asociación o a un grupo para contribuir a que éstos cometan uno o varios delitos terroristas.",
+   "La difusión o cualquier otra forma de puesta a disposición del público de mensajes con la intención de incitar a cometer delitos terroristas, cuando ese comportamiento, ya preconice directamente o no la comisión de delitos terroristas, cree peligro de que se puedan cometer uno o varios delitos.",
+   "La difusión o cualquier otra forma de puesta a disposición del público de mensajes con la intención de cometer delitos terroristas, cuando ese comportamiento, ya preconice directamente o no la comisión de delitos terroristas, cree peligro de que se puedan cometer uno o varios delitos.",
+   "El hecho de incitar a otra persona a cometer o participar en la comisión de delitos terroristas, o a unirse a una asociación o a un grupo para contribuir a que éstos cometan uno o varios delitos terroristas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 5.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. A los efectos del presente Convenio, se entenderá por «provocación pública para cometer delitos terroristas»: • la DIFUSIÓN o cualquier otra forma de puesta a disposición del público de mensajes con la intención de incitar a cometer delitos terroristas, cuando ese comportamiento, ya preconice directamente o no la comisión de delitos terroristas, cree peligro de que se puedan cometer uno o varios delitos.",
+  "exp": "La provocación es difundir mensajes con la intención de incitar a cometer delitos terroristas.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "15-0",
+  "parT": "art 5 1 se entendera por provocacion publica para cometer delitos terroristas la difusion ",
+  "fR": 0.89,
+  "pz": "b-5",
+  "secClave": 8,
+  "id": "2-439"
+ },
+ {
+  "lote": "d2",
+  "i": 79,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "4",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Cooperación internacional en materia de prevención. Las Partes se prestarán asistencia y apoyo mutuos, cuando proceda y teniendo en cuenta sus posibilidades, con objeto de mejorar su capacidad para prevenir la comisión de delitos terroristas:",
+  "opciones": [
+   "Incluido el intercambio de información y de buenas prácticas, así como mediante la formación y otros esfuerzos conjuntos de carácter preventivo.",
+   "Incluida la elaboración de información y el intercambio de buenas prácticas, así como mediante la formación y otros esfuerzos específicos de carácter conjunto.",
+   "Incluido el intercambio de información y de buenas prácticas, así como mediante la formación y otros esfuerzos conjuntos de carácter sancionador.",
+   "Incluida la obtención de información y el intercambio de buenas prácticas, así como mediante la formación y otros esfuerzos conjuntos de carácter preventivo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 4 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "Las Partes se prestarán asistencia y apoyo mutuos, cuando proceda y teniendo en cuenta sus posibilidades, con objeto de mejorar su capacidad para prevenir la comisión de delitos terroristas, incluido el intercambio de información y de buenas prácticas, así como mediante la formación y otros esfuerzos conjuntos de carácter preventivo.",
+  "exp": "Se incluye el intercambio de información y de buenas prácticas y los esfuerzos conjuntos de carácter preventivo.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "14-4",
+  "parT": "art 4 las partes se prestaran asistencia y apoyo mutuos incluido el intercambio de informa",
+  "fR": 0.52,
+  "pz": "b-4",
+  "secClave": 7,
+  "id": "2-440"
+ },
+ {
+  "lote": "d2",
+  "i": 81,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "3",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Políticas nacionales de prevención. Cada Parte tomará las medidas necesarias para mejorar y desarrollar la cooperación entre las autoridades nacionales con vistas a prevenir los delitos terroristas y sus efectos negativos, en particular mediante:",
+  "opciones": [
+   "El respeto a la protección física de las personas y de los bienes.",
+   "Todas las opciones son correctas.",
+   "El intercambio de información.",
+   "La mejora de los planes de formación y coordinación para situaciones graves y urgentes."
+  ],
+  "correcta": 2,
+  "lila": "Art. 3.2 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "2. Cada Parte tomará las medidas necesarias para mejorar y desarrollar la cooperación entre las autoridades nacionales con vistas a prevenir los delitos terroristas y sus efectos negativos, en particular mediante: a) El INTERCAMBIO de información; b) El REFUERZO de la protección física de las personas y de los bienes; c) La MEJORA de los planes de formación y coordinación para situaciones de crisis.",
+  "exp": "El intercambio de información está en la letra a); las otras alteran el texto.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "14-1",
+  "parT": "2 mejorar y desarrollar la cooperacion entre las autoridades nacionales en particular medi",
+  "fR": 0.66,
+  "pz": "b-3",
+  "secClave": 7,
+  "id": "2-441"
+ },
+ {
+  "lote": "d2",
+  "i": 82,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "1",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Terminología. A los efectos del Convenio objeto de la pregunta, ¿qué se entenderá por \"delito terrorista\"?:",
+  "opciones": [
+   "Cualquiera de los delitos incluidos en el ámbito de aplicación del Convenio de Europa para la prevención del terrorismo y definidos en uno de los tratados enumerados en el anexo a la citada Convención.",
+   "Cualquiera de los delitos tipificados en la legislación nacional como delitos de terrorismo.",
+   "Cualquiera de los delitos que la Comisión Europea haya determinado como delito terrorista.",
+   "Cualquiera de los delitos incluidos en el ámbito de aplicación del Convenio de Europa para la prevención del terrorismo y definidos en uno de los tratados análogos a la citada Convención."
+  ],
+  "correcta": 0,
+  "lila": "Art. 1.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. A los efectos del presente Convenio, se entenderá por «delito terrorista» cualquiera de los delitos incluidos en el ámbito de aplicación y definidos en uno de los tratados enumerados en el anexo.",
+  "exp": "Los delitos son los definidos en uno de los tratados enumerados en el anexo.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "13-0",
+  "parT": "art 1 1 a los efectos del presente convenio se entendera por delito terrorista cualquiera ",
+  "fR": 1,
+  "pz": "b-1",
+  "secClave": 7,
+  "id": "2-442"
+ },
+ {
+  "lote": "d2",
+  "i": 83,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "16",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. No aplicabilidad del Convenio. El Convenio objeto de la pregunta NO se aplicará cuando los delitos previstos en él:",
+  "opciones": [
+   "Se cometan dentro de un único Estado, cuando el presunto autor sea nacional de ese Estado y se encuentre en el territorio de ese Estado, y algún otro Estado tenga razones, en virtud del Convenio objeto de la pregunta, para ejercer su competencia.",
+   "Se cometan dentro de un único Estado, cuando el presunto autor sea nacional de ese Estado y se encuentre en el territorio de otro Estado, y ningún otro Estado tenga razones, en virtud del Convenio objeto de la pregunta, para ejercer su competencia.",
+   "Se cometan dentro de un único Estado, cuando el presunto autor sea nacional de ese Estado y se encuentre en el territorio de ese Estado, y ningún otro Estado tenga razones, en virtud del Convenio objeto de la pregunta, para ejercer su competencia.",
+   "Se cometan dentro de un único Estado, cuando el presunto autor no sea nacional de ese Estado y se encuentre en el territorio de ese Estado, y ningún otro Estado tenga razones, en virtud del Convenio objeto de la pregunta, para ejercer su competencia."
+  ],
+  "correcta": 2,
+  "lila": "Art. 16 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "El presente Convenio no se aplicará cuando los delitos previstos en los artículos 5 a 7 y 9 se cometan dentro de un único Estado, cuando el presunto autor sea nacional de ese Estado y se encuentre en el territorio de ese Estado, y ningún otro Estado tenga razones, en virtud de los apartados 1 ó 2 del artículo 14 del presente Convenio, para ejercer su competencia, entendiéndose que las disposiciones de los artículos 17 y 20 a 22 del presente Convenio, según convenga, se aplicarán en esos casos.",
+  "exp": "Exige un único Estado, autor nacional que esté en ese territorio y ningún otro Estado con razones para ejercer su competencia.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "20-0",
+  "parT": "art 16 el presente convenio no se aplicara cuando los delitos previstos en los articulos 5",
+  "fR": 0.74,
+  "pz": null,
+  "secClave": 9,
+  "id": "2-443"
+ },
+ {
+  "lote": "d2",
+  "i": 84,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "14",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Señala la opción CORRECTA. ¿Cuándo cada Parte adoptará las medidas necesarias para establecer su competencia con respecto a todo delito tipificado de conformidad con el presente Convenio?:",
+  "opciones": [
+   "Cuando se haya cometido el delito en su territorio.",
+   "Todas las opciones son correctas.",
+   "Cuando se haya cometido el delito mediante un buque con pabellón de esa Parte.",
+   "Cuando haya cometido el delito uno de sus ciudadanos residentes."
+  ],
+  "correcta": 0,
+  "lila": "Art. 14.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Cada Parte adoptará las medidas necesarias para establecer su competencia con respecto a todo delito tipificado de conformidad con el presente Convenio: a) Cuando se haya cometido el delito en su territorio; b) cuando se haya cometido el delito a bordo de un buque con pabellón de esa Parte o a bordo de una aeronave matriculada en esa Parte; c) cuando haya cometido el delito uno de sus nacionales.",
+  "exp": "Es competencia obligatoria cuando el delito se comete en su territorio; la del buque es a bordo y con su pabellón, y la personal es por nacionalidad.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "19-0",
+  "parT": "art 14 1 cada parte adoptara las medidas necesarias para establecer su competencia a cuand",
+  "fR": 0.77,
+  "pz": "b-14",
+  "secClave": 9,
+  "id": "2-444"
+ },
+ {
+  "lote": "d2",
+  "i": 85,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "22",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Información espontánea. Señale la opción CORRECTA:",
+  "opciones": [
+   "La Parte que proporcione las informaciones obtenidas en el marco de su propia investigación podrá supeditar su utilización por la Parte que las reciba a determinadas condiciones, conforme a su derecho nacional.",
+   "Sin perjuicio de sus propias investigaciones o procedimientos, las autoridades competentes de una Parte podrán transmitir, sin necesidad de previa solicitud, a las autoridades competentes de otra Parte, informaciones obtenidas en el marco de su propia investigación.",
+   "La Parte que reciba las informaciones, que otra Parte le haya transmitido, vendrá obligada a respetar las condiciones a las que le supedite la Parte transmisora.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 22 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Sin perjuicio de sus propias investigaciones o procedimientos, las autoridades competentes de una Parte podrán transmitir, sin necesidad de previa solicitud, a las autoridades competentes de otra Parte, informaciones obtenidas en el marco de su propia investigación, cuando aquellas autoridades consideren que la comunicación de dichas informaciones podría ayudar a la Parte que recibe las informaciones a entablar o llevar a cabo investigaciones o procedimientos, o cuando dichas informaciones puedan dar lugar a una solicitud formulada por esa Parte en virtud del presente Convenio. 2. La Parte que proporcione las informaciones podrá supeditar su utilización por la Parte que las reciba a determinadas condiciones, conforme a su derecho nacional. 3. La Parte que reciba las informaciones vendrá obligada a respetar dichas condiciones. 4. No obstante, cualquiera de las Partes podrá declarar, en cualquier momento y mediante declaración enviada al Secretario General del Consejo de Europa, que se reserva el derecho de no someterse a las condiciones impuestas en virtud de lo dispuesto en el apartado 2 del presente artículo por la Parte que proporcione la información, a menos que se le notifique previamente la naturaleza de la información que se vaya a facilitar y que acepte que se le transmita esta última.",
+  "exp": "Las tres reproducen el artículo 22.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "23-1",
+  "parT": "art 22 1 las autoridades competentes de una parte podran transmitir sin necesidad de previ",
+  "fR": 0.47,
+  "pz": "b-22",
+  "secClave": 9,
+  "id": "2-445"
+ },
+ {
+  "lote": "d2",
+  "i": 86,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "3",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Políticas nacionales de prevención. Cada Parte tomará las medidas apropiadas, en particular en el ámbito de la formación de las autoridades encargadas del cumplimiento de la ley y otros órganos, así como en el ámbito de la educación, la cultura, la información, los medios de comunicación y la sensibilización del público, con vistas a prevenir los delitos terroristas y sus efectos negativos, respetando al propio tiempo las obligaciones relativas a los derechos humanos que le incumban, tal como se establece en:",
+  "opciones": [
+   "El Convenio para la protección de los derechos humanos y de las libertades fundamentales.",
+   "En otras obligaciones relativas al derecho internacional, cuando le sean aplicables.",
+   "Todas las opciones son correctas.",
+   "El Pacto Internacional de derechos civiles y políticos."
+  ],
+  "correcta": 2,
+  "lila": "Art. 3.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Cada Parte tomará las medidas apropiadas, en particular en el ámbito de la formación de las autoridades encargadas del cumplimiento de la ley y otros órganos, así como en el ámbito de la educación, la cultura, la información, los medios de comunicación y la sensibilización del público, con vistas a prevenir los delitos terroristas y sus efectos negativos, respetando al propio tiempo las obligaciones relativas a los derechos humanos que le incumban, tal como se establecen en el Convenio para la protección de los derechos humanos y de las libertades fundamentales, en el Pacto Internacional de derechos civiles y políticos, y otras obligaciones relativas al derecho internacional, cuando le sean aplicables.",
+  "exp": "El artículo 3.1 cita el Convenio Europeo, el Pacto Internacional y otras obligaciones de derecho internacional.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "14-0",
+  "parT": "1 cada parte tomara las medidas apropiadas en particular en el ambito de la formacion de l",
+  "fR": 0.58,
+  "pz": "b-3",
+  "secClave": 7,
+  "id": "2-446"
+ },
+ {
+  "lote": "d2",
+  "i": 87,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "7",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. A los efectos del Convenio objeto de la pregunta, ¿qué se entenderá por el hecho de dar instrucciones para la fabricación o el uso de explosivos, armas de fuego u otras armas o sustancias nocivas o peligrosas, o para otros métodos y técnicas específicos con vistas a cometer delitos terroristas o a contribuir a su comisión, sabiendo que la formación facilitada tiene por Objeto servir para la realización de tales objetivos?:",
+  "opciones": [
+   "Adiestramiento con fines terroristas.",
+   "Reclutamiento con fines terroristas.",
+   "Provocación pública para cometer delitos terroristas.",
+   "Tentativa de provocación público para cometer delitos terroristas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. A los efectos del presente Convenio, se entenderá por «adiestramiento con fines terroristas»: • el hecho de dar instrucciones para la fabricación o el uso de explosivos, armas de fuego u otras armas o sustancias nocivas o peligrosas, o para otros métodos y técnicas específicos con vistas a cometer delitos terroristas o a contribuir a su comisión, sabiendo que la formación facilitada tiene por objeto servir para la realización de tales objetivos. 2. Cada Parte adoptará las medidas necesarias para tipificar como delito, de conformidad con su derecho interno, el adiestramiento con fines terroristas, tal como se define en el apartado 1 del presente artículo, cuando se cometa ilegal e intencionadamente.",
+  "exp": "Es la definición de adiestramiento con fines terroristas.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "15-2",
+  "parT": "art 7 1 se entendera por adiestramiento con fines terroristas el hecho de dar instruccione",
+  "fR": 0.64,
+  "pz": "b-7",
+  "secClave": 8,
+  "id": "2-447"
+ },
+ {
+  "lote": "d2",
+  "i": 88,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "31",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Denuncia. Toda Parte podrá denunciar en cualquier momento el presente Convenio mediante:",
+  "opciones": [
+   "Declaración remitida a la consulta entre las Partes.",
+   "Notificación remitida al Secretario General de Naciones Unidas.",
+   "Declaración enviada al Secretario General de Naciones Unidas.",
+   "Notificación enviada al Secretario General del Consejo de Europa."
+  ],
+  "correcta": 3,
+  "lila": "Art. 31 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Toda Parte podrá denunciar en cualquier momento el presente Convenio mediante notificación enviada al Secretario General del Consejo de Europa. 2. La denuncia entrará en vigor el primer día del mes siguiente a la expiración de un período de tres meses después de la fecha de recepción de la notificación por el Secretario General.",
+  "exp": "La denuncia se hace por notificación al Secretario General del Consejo de Europa.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "27-2",
+  "parT": "art 31 1 toda parte podra denunciar en cualquier momento el presente convenio mediante not",
+  "fR": 1,
+  "pz": "b-31",
+  "secClave": 10,
+  "id": "2-448"
+ },
+ {
+  "lote": "d2",
+  "i": 89,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "18",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Extradición o iniciación de actuaciones penales. ¿En qué casos las Partes vendrán obligadas a someter el asunto sin dilación excesiva y sin aplicar excepción alguna, haya sido o no cometido el delito dentro de su territorio, a sus autoridades competentes para el ejercicio de la acción penal, en virtud de un procedimiento conforme a la legislación de esa Parte?:",
+  "opciones": [
+   "En los casos en que la Parte sea competente en virtud del Convenio objeto de la pregunta, en cuyo territorio se encuentre el presunto autor del delito y en el caso de que proceda su extradición.",
+   "En los casos en que la Parte sea competente en virtud del Convenio objeto de la pregunta, en cuyo territorio no se encuentre el presunto autor del delito y en el caso de que no proceda su extradición.",
+   "En los casos en que la Parte sea competente en virtud del Convenio objeto de la pregunta, en cuyo territorio se encuentre el presunto autor del delito y en el caso de que no proceda su extradición.",
+   "En los casos en que la Parte no sea competente en virtud del Convenio objeto de la pregunta, en cuyo territorio se encuentre el presunto autor del delito y en el caso de que no proceda su extradición."
+  ],
+  "correcta": 2,
+  "lila": "Art. 18.1 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. En los casos en que sea competente en virtud del artículo 14, aquella Parte en cuyo territorio se encuentre el presunto autor del delito vendrá obligada, en el caso de que no proceda a su extradición, a someter el asunto sin dilación excesiva y sin aplicar excepción alguna, haya sido o no cometido el delito dentro de su territorio, a sus autoridades competentes para el ejercicio de la acción penal, en virtud de un procedimiento conforme a la legislación de esa Parte. Dichas autoridades adoptarán su decisión en las mismas condiciones que para cualquier otro delito de carácter grave en virtud de las leyes de esa Parte.",
+  "exp": "Se obliga a la Parte competente en cuyo territorio esté el presunto autor y no lo extradite.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "21-0",
+  "parT": "art 18 1 aquella parte en cuyo territorio se encuentre el presunto autor del delito vendra",
+  "fR": 0.41,
+  "pz": "b-18",
+  "secClave": 9,
+  "id": "2-449"
+ },
+ {
+  "lote": "d2",
+  "i": 90,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "20",
+    "ap": "5"
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Exclusión de la cláusula de excepción política. Las reservas formuladas serán válidas por un período de tres años a partir del primer día de la entrada en vigor del presente Convenio para la Parte de que se trate. No obstante, dichas reservas podrán ser renovadas:",
+  "opciones": [
+   "Por períodos semestrales.",
+   "Por períodos de igual duración.",
+   "Por periodos bienales.",
+   "Por periodos anuales."
+  ],
+  "correcta": 1,
+  "lila": "Art. 20.5 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "5. Las reservas formuladas serán válidas por un período de tres años a partir del primer día de la entrada en vigor del presente Convenio para la Parte de que se trate. No obstante, dichas reservas podrán ser renovadas por períodos de igual duración.",
+  "exp": "Las reservas se renuevan por períodos de igual duración.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "22-3",
+  "parT": "5 las reservas formuladas seran validas por un periodo de tres anos a partir del primer di",
+  "fR": 1,
+  "pz": "b-20",
+  "secClave": 9,
+  "id": "2-450"
+ },
+ {
+  "lote": "d2",
+  "i": 92,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "11",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Sanciones y medidas. Cada Parte adoptará las medidas necesarias para que a los delitos a que se refieren los artículos 5 a 7 y 9 del presente Convenio sean aplicables penas...:",
+  "opciones": [
+   "Discrecionales.",
+   "Todas las opciones son correctas.",
+   "Necesarias.",
+   "Efectivas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 11 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Cada Parte adoptará las medidas necesarias para que a los delitos a que se refieren los artículos 5 a 7 y 9 del presente Convenio sean aplicables penas: • EFECTIVAS, • PROPORCIONADAS y • DISUASORIAS. 2. Toda condena firme anterior dictada en un Estado extranjero por los delitos a que se refiere el presente Convenio podrá tenerse en cuenta en la determinación de la pena, en la medida en que lo permita el derecho interno y de conformidad con el mismo. 3. Cada Parte velará por que las personas jurídicas consideradas responsables, de conformidad con el artículo 10, sean objeto de sanciones EFECTIVAS, PROPORCIONADAS y DISUASORIAS de naturaleza penal o no penal, incluidas las sanciones pecuniarias.",
+  "exp": "Las penas deben ser efectivas, proporcionadas y disuasorias.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "17-1",
+  "parT": "art 11 1 cada parte adoptara las medidas necesarias para que a los delitos a que se refier",
+  "fR": 0.74,
+  "pz": "b-11",
+  "secClave": 8,
+  "id": "2-451"
+ },
+ {
+  "lote": "d2",
+  "i": 93,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "17",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Cooperación internacional en materia penal. Señale la opción CORRECTA:",
+  "opciones": [
+   "Cada Parte podrá considerar la posibilidad de establecer mecanismos adicionales para compartir con otras Partes la información o los elementos probatorios necesarios para determinar las responsabilidades penales, civiles o administrativas.",
+   "Las Partes se prestarán la asistencia más amplia posible para cualquier investigación, procedimiento penal o procedimiento de extradición relativo a los delitos a que se refiere el Convenio objeto de la pregunta, salvo la obtención de los elementos probatorios de que dispongan y que sean necesarios a los fines del procedimiento.",
+   "Todas las opciones son correctas.",
+   "Las Partes cumplirán las obligaciones que les correspondan, de conformidad con todo tratado o acuerdo de asistencia judicial que pueda existir entre las Partes. A falta de tales tratados o acuerdos, las Partes se prestarán mutuamente dicha asistencia de conformidad con el Convenio objeto de la pregunta."
+  ],
+  "correcta": 0,
+  "lila": "Art. 17 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "1. Las Partes se prestarán la asistencia más amplia posible para cualquier investigación, procedimiento penal o procedimiento de extradición relativos a los delitos a que se refieren los artículos 5 a 7 y 9 del presente Convenio, incluida la obtención de los elementos probatorios de que dispongan y que sean necesarios a los fines del procedimiento. 2. Las Partes cumplirán las obligaciones que les correspondan en virtud del apartado 1, de conformidad con todo tratado o acuerdo de asistencia judicial que pueda existir entre ellas. A falta de tales tratados o acuerdos, las Partes se prestarán mutuamente dicha asistencia de conformidad con su legislación interna. 3. Las Partes cooperarán entre sí de la manera más amplia posible, siempre que lo permitan las leyes, tratados, acuerdos y arreglos pertinentes de la Parte requerida, durante las investigaciones y procedimientos penales relativos a delitos de los que se pueda considerar responsables a una persona jurídica en la Parte requirente, de conformidad con el artículo 10 del presente Convenio. 4. Cada Parte podrá considerar la posibilidad de establecer mecanismos adicionales para compartir con otras Partes la información o los elementos probatorios necesarios para determinar las responsabilidades penales, civiles o administrativas, como se prevé en el artículo 10.",
+  "exp": "Los mecanismos adicionales para compartir información son una posibilidad; las otras alteran la asistencia que se presta.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "20-1",
+  "parT": "art 17 1 las partes se prestaran la asistencia mas amplia posible para cualquier investiga",
+  "fR": 0.44,
+  "pz": null,
+  "secClave": 9,
+  "id": "2-452"
+ },
+ {
+  "lote": "d2",
+  "i": 95,
+  "v": "v02",
+  "t": 2,
+  "refs": [
+   {
+    "n": "CPT",
+    "art": "29",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio del Consejo de Europa para la prevención del terrorismo. Solución de controversias. En caso de que exista controversia entre las Partes acerca de la interpretación o la aplicación del presente Convenio, las mismas se esforzarán por conseguir una solución de sus divergencias por medio de la negociación o por cualquier otro medio pacífico que prefieran incluida la sumisión de la controversia a un tribunal de arbitraje cuyas decisiones...:",
+  "opciones": [
+   "Serán tomadas en cuenta para las Partes, o al Tribunal Internacional de Justicia, en virtud del Convenio del Tribunal Internacional de Justicia.",
+   "Adoptarán la forma de recomendaciones para las Partes, o al Tribunal Internacional de Justicia, en virtud del Convenio del Tribunal Internacional de Justicia.",
+   "Serán vinculantes para las Partes, o al Tribunal Internacional de Justicia, en virtud de un acuerdo común entre las Partes afectadas.",
+   "Serán facultativas para las Partes, o al Tribunal Internacional de Justicia, en virtud de un acuerdo común entre las Partes denunciantes."
+  ],
+  "correcta": 2,
+  "lila": "Art. 29 · Convenio del Consejo de Europa para la prevención del terrorismo",
+  "rojo": "En caso de que exista controversia entre las Partes acerca de la interpretación o la aplicación del presente Convenio, las mismas se esforzarán por conseguir una solución de sus divergencias por medio de la negociación o por cualquier otro medio pacífico que prefieran, incluida la sumisión de la controversia a un tribunal de arbitraje cuyas decisiones serán vinculantes para las Partes, o al Tribunal Internacional de Justicia, en virtud de un acuerdo común entre las Partes afectadas.",
+  "exp": "Las decisiones del tribunal de arbitraje son vinculantes para las Partes.",
+  "apartado": "Convenio del Consejo de Europa para la prevención del terrorismo",
+  "letra": "b",
+  "par": "27-0",
+  "parT": "art 29 en caso de que exista controversia las mismas se esforzaran por conseguir una soluc",
+  "fR": 0.81,
+  "pz": "b-29",
+  "secClave": 10,
+  "id": "2-453"
+ }
+]
