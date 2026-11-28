@@ -1,34 +1,6 @@
 [
  {
   "lote": "e12",
-  "i": 0,
-  "v": "v12",
-  "t": 26,
-  "refs": [
-   {
-    "n": "acoso laboral",
-    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
-    "k": 318
-   }
-  ],
-  "pregunta": "Protocolo de actuación frente al acoso laboral en la guardia civil. A efectos de este Protocolo se entiende por periodo prolongado en el tiempo aquel hostigamiento intenso o extremo, que tenga una duración de:",
-  "opciones": [
-   "Al menos tres meses.",
-   "Al menos nueve meses.",
-   "Al menos un mes.",
-   "Al menos seis meses."
-  ],
-  "correcta": 3,
-  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
-  "rojo": "A efectos de este Protocolo se entiende por periodo prolongado en el tiempo aquel hostigamiento intenso o extremo que tenga una duración de al menos seis meses. Este plazo ha de ser interpretado de forma flexible, ya que lo importante es la idea de continuidad en la violencia, ordenada a un fin determinado: la destrucción psicológica o moral del trabajador.",
-  "exp": "Al menos seis meses.",
-  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
-  "par": "318-1",
-  "pz": "e-3",
-  "id": "26-593"
- },
- {
-  "lote": "e12",
   "i": 1,
   "v": "v12",
   "t": 26,
@@ -1133,34 +1105,6 @@
  },
  {
   "lote": "e12",
-  "i": 39,
-  "v": "v12",
-  "t": 26,
-  "refs": [
-   {
-    "n": "acoso laboral",
-    "art": "TERCERO. Ámbito de aplicación objetivo. Definiciones",
-    "k": 318
-   }
-  ],
-  "pregunta": "Protocolo de actuación frente al acoso laboral en la Guardia Civil. A efectos del presente Protocolo, constituye acoso laboral la exposición a conductas de violencia psicológica intensa, dirigidas de forma reiterada y prolongada en el tiempo hacia una o más personas, por parte de otra u otras que actúan frente a aquéllas desde una posición de poder no necesariamente jerárquica sino en términos psicológicos, con el propósito o el efecto de crear un entorno hostil o humillante que perturbe la vida profesional de la víctima. A efectos de este Protocolo se entiende por periodo prolongado en el tiempo aquel hostigamiento intenso o extremo que tenga una duración de:",
-  "opciones": [
-   "Al menos seis meses.",
-   "Al menos un año.",
-   "Al menos tres meses.",
-   "Al menos un mes."
-  ],
-  "correcta": 0,
-  "lila": "TERCERO. Ámbito de aplicación objetivo. Definiciones · Protocolo de actuación frente al acoso laboral en la Guardia Civil",
-  "rojo": "A efectos de este Protocolo se entiende por periodo prolongado en el tiempo aquel hostigamiento intenso o extremo que tenga una duración de al menos seis meses. Este plazo ha de ser interpretado de forma flexible, ya que lo importante es la idea de continuidad en la violencia, ordenada a un fin determinado: la destrucción psicológica o moral del trabajador.",
-  "exp": "Al menos seis meses.",
-  "apartado": "Protocolo de actuación frente al acoso laboral en la Guardia Civil",
-  "par": "318-1",
-  "pz": "e-3",
-  "id": "26-632"
- },
- {
-  "lote": "e12",
   "i": 40,
   "v": "v12",
   "t": 26,
@@ -1247,34 +1191,6 @@
   "par": "337-3",
   "pz": "f-2",
   "id": "26-635"
- },
- {
-  "lote": "e12",
-  "i": 43,
-  "v": "v12",
-  "t": 26,
-  "refs": [
-   {
-    "n": "acoso sexual",
-    "art": "SEGUNDO. Ámbito de aplicación subjetivo",
-    "k": 336
-   }
-  ],
-  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. El Protocolo objeto de la pregunta será de aplicación en los supuestos de acoso sexual y por razón de sexo definidos en la normativa penal o disciplinaria que se presenten en el ámbito de la Guardia Civil:",
-  "opciones": [
-   "Siempre que resulte implicado, entre otros, personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
-   "Siempre que resulte implicado, entre otros, personal del Cuerpo aunque la persona agresora no esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
-   "Siempre que resulte implicado únicamente personal del Cuerpo aunque la persona agresora no esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
-   "Siempre que resulte implicado únicamente personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo."
-  ],
-  "correcta": 3,
-  "lila": "SEGUNDO. Ámbito de aplicación subjetivo · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
-  "rojo": "1. El presente Protocolo será de aplicación en los supuestos de acoso sexual y por razón de sexo definidos en la normativa penal o disciplinaria que se presenten en el ámbito de la Guardia Civil, siempre que resulte implicado únicamente personal del Cuerpo y que la persona agresora esté sujeta al régimen general de derechos y deberes de los miembros de la Guardia Civil y a las leyes penales militares y disciplinarias del Cuerpo.",
-  "exp": "Únicamente personal del Cuerpo y persona agresora sujeta al régimen.",
-  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
-  "par": "336-0",
-  "pz": "f-2",
-  "id": "26-636"
  },
  {
   "lote": "e12",

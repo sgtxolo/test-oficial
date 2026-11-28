@@ -24,7 +24,7 @@
   "exp": "El guardia civil destinado o comisionado en la unidad.",
   "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
   "par": "307-4",
-  "pz": "d-pre",
+  "pz": "d-1",
   "id": "26-574"
  },
  {
@@ -192,7 +192,7 @@
   "exp": "Jerarquizada, disciplinada y cohesionada.",
   "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
   "par": "307-1",
-  "pz": "d-pre",
+  "pz": "d-1",
   "id": "26-580"
  },
  {
@@ -309,34 +309,6 @@
  },
  {
   "lote": "e11",
-  "i": 11,
-  "v": "v11",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Orden PRE/1983/2012",
-    "art": "Art. 1.1",
-    "k": 307
-   }
-  ],
-  "pregunta": "Orden por la que se declaran de aplicación a la Guardia Civil diversas normas del ordenamiento militar sobre mando, disciplina y régimen interior. Como organización jerarquizada, disciplinada y cohesionada, características en las que basa su eficacia, la acción de mando en la Guardia Civil se refiere al ejercicio de la autoridad, con la consiguiente responsabilidad, que corresponde a todo guardia civil en razón de su...:",
-  "opciones": [
-   "Cargo o destino.",
-   "Empleo, cargo o destino.",
-   "Cargo, destino o servicio.",
-   "Escala, empleo o cargo."
-  ],
-  "correcta": 2,
-  "lila": "Art. 1.1 · Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
-  "rojo": "1. Como organización jerarquizada, disciplinada y cohesionada, características en las que basa su eficacia, la acción de mando en la Guardia Civil se refiere al ejercicio de la autoridad, con la consiguiente responsabilidad, que corresponde a todo guardia civil en razón de su cargo, destino o servicio.",
-  "exp": "Cargo, destino o servicio.",
-  "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
-  "par": "307-1",
-  "pz": "d-pre",
-  "id": "26-585"
- },
- {
-  "lote": "e11",
   "i": 12,
   "v": "v11",
   "t": 26,
@@ -360,7 +332,7 @@
   "exp": "Al ejercicio de la autoridad.",
   "apartado": "Orden PRE/1983/2012, de 14 de septiembre, por la que se declaran de aplicación a la Guardia Civil diversas",
   "par": "307-1",
-  "pz": "d-pre",
+  "pz": "d-1",
   "id": "26-586"
  },
  {

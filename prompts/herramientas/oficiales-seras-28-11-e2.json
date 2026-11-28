@@ -68,67 +68,9 @@
   "exp": "El aviso a los superiores es para cuando NO es de temer un perjuicio grave; si lo es, se actúa sin dilación.",
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "33-0",
-  "pz": "b-4",
+  "pz": "b-6",
   "sec": 9,
   "id": "27-272"
- },
- {
-  "lote": "e2",
-  "i": 3,
-  "v": "v02",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Resolución 690",
-    "art": "Punto B.3",
-    "k": 46
-   }
-  ],
-  "pregunta": "Declaración sobre la Policía. El funcionario de Policía, debe recibir una formación general y profesional profunda antes y durante su servicio, así como una enseñanza apropiada en materia de los problemas sociales, de las libertades públicas, de los derechos del hombre y, particularmente, en aquello que concierne a:",
-  "opciones": [
-   "El Pacto Internacional de Derechos Civiles y Políticos.",
-   "Todas las opciones son correctas.",
-   "La Convención Europea de los derechos del hombre.",
-   "La Declaración de Derechos Humanos."
-  ],
-  "correcta": 2,
-  "lila": "Punto B.3 · Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "rojo": "El funcionario de Policía, debe recibir una formación general y profesional profunda antes y durante su servicio, así como una enseñanza apropiada en materia de los problemas sociales, de las libertades públicas, de los derechos del hombre y, particularmente, en aquello que concierne a la convención europea de los derechos del hombre;",
-  "exp": "Particularmente en lo que concierne a la Convención europea de derechos del hombre.",
-  "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "par": "46-0",
-  "pz": "b-103",
-  "sec": 9,
-  "id": "27-273"
- },
- {
-  "lote": "e2",
-  "i": 4,
-  "v": "v02",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Resolución 690",
-    "art": "Punto B.7",
-    "k": 50
-   }
-  ],
-  "pregunta": "Declaración sobre la Policía. Una organización profesional policial, supuesto que sea representativa, debe poder:",
-  "opciones": [
-   "Todas las opciones son correctas.",
-   "Participar en las negociaciones relativas al status profesional de las funciones de Policía.",
-   "Entablar cualquier acción judicial en beneficio de un funcionario de Policía o de un grupo de funcionarios de Policía.",
-   "Ser consultada sobre la gestión de los Cuerpos de Policía."
-  ],
-  "correcta": 0,
-  "lila": "Punto B.7 · Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "rojo": "Una organización profesional policial, supuesto que sea representativa, debe poder: – Participar en las negociaciones relativas al status profesional de las funciones de Policía. – Ser consultada sobre la gestión de los Cuerpos de Policía. – Entablar cualquier acción judicial en beneficio de un funcionario de Policía o de un grupo de funcionarios de Policía;",
-  "exp": "Las tres son facultades de la organización profesional representativa.",
-  "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "par": "50-0",
-  "pz": "b-104",
-  "sec": 9,
-  "id": "27-274"
  },
  {
   "lote": "e2",
@@ -158,35 +100,6 @@
   "pz": "b-109",
   "sec": 9,
   "id": "27-275"
- },
- {
-  "lote": "e2",
-  "i": 6,
-  "v": "v02",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Resolución 690",
-    "art": "Punto C.4",
-    "k": 57
-   }
-  ],
-  "pregunta": "Declaración sobre la Policía. En caso de ocupación, un funcionario de Policía no debe:",
-  "opciones": [
-   "Tomar parte en acciones contra los miembros de movimientos de resistencia.",
-   "Todas las opciones son correctas.",
-   "Prestar su colaboración a la aplicación de medidas que tengan por finalidad emplear la población civil a la vigilancia de instalaciones militares.",
-   "Prestar su colaboración a la aplicación de medidas que tengan por finalidad emplear la población civil a fines militares."
-  ],
-  "correcta": 1,
-  "lila": "Punto C.4 · Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "rojo": "En caso de ocupación, un funcionario de Policía no debe: – Tomar parte en acciones contra los miembros de movimientos de resistencia. – Prestar su colaboración a la aplicación de medidas que tengan por finalidad emplear la población civil a fines militares y a la vigilancia de instalaciones militares:",
-  "exp": "Las tres conductas están prohibidas en caso de ocupación.",
-  "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "par": "57-0",
-  "pz": "b-202",
-  "sec": 9,
-  "id": "27-276"
  },
  {
   "lote": "e2",
@@ -340,7 +253,8 @@
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "30-0",
   "sec": 9,
-  "id": "27-281"
+  "id": "27-281",
+  "pz": "b-3"
  },
  {
   "lote": "e2",
@@ -411,7 +325,7 @@
   "exp": "Es literal. Las demás cambian «apoyo activo, moral y material», «carácter confidencial» y la salud «de esta persona».",
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "40-0",
-  "pz": "b-7",
+  "pz": "b-13",
   "sec": 9,
   "id": "27-283"
  },
@@ -455,7 +369,7 @@
   "exp": "La policía es un servicio público encargado del orden y la aplicación de la ley.",
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "44-0",
-  "pz": "b-15",
+  "pz": "b-101",
   "sec": 9,
   "id": "27-284"
  },
@@ -494,7 +408,7 @@
   "exp": "Ante los tribunales tiene los mismos derechos que los demás ciudadanos, no más.",
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "53-0",
-  "pz": "b-109",
+  "pz": "b-110",
   "sec": 9,
   "id": "27-285"
  },
@@ -616,7 +530,8 @@
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "49-0",
   "sec": 9,
-  "id": "27-288"
+  "id": "27-288",
+  "pz": "b-106"
  },
  {
   "lote": "e2",
@@ -656,35 +571,6 @@
   "pz": "b-207",
   "sec": 15,
   "id": "27-289"
- },
- {
-  "lote": "e2",
-  "i": 21,
-  "v": "v02",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Resolución 690",
-    "art": "Punto C.5",
-    "k": 58
-   }
-  ],
-  "pregunta": "Declaración sobre la Policía. Guerra y otras situaciones de excepción-ocupación por una potencia extranjera. ¿Qué debe ocurrir si un funcionario de Policía presenta su dimisión a lo largo de la ocupación enemiga, porque es obligado a ejecutar órdenes ilegítimas de la potencia ocupante, que sean contrarias a los intereses de la población civil, porque no tiene otra salida?:",
-  "opciones": [
-   "Debe ser sancionado cuando la ocupación termine, Sin perder ninguno de los derechos o ventajas que hubiera disfrutado si hubiera permanecido en la Policía.",
-   "Debe ser reintegrado en las fuerzas de Policía desde que la ocupación termina, pudiendo perder alguno de los derechos o ventajas que hubiera disfrutado si hubiera permanecido en la Policía.",
-   "Debe ser sancionado cuando la ocupación termine, pudiendo perder alguno de los derechos o ventajas que hubiera disfrutado si hubiera permanecido en la Policía.",
-   "Debe ser reintegrado en las fuerzas de Policía desde que la ocupación termina, sin perder ninguno de los derechos o ventajas que hubiera disfrutado si hubiera permanecido en la Policía."
-  ],
-  "correcta": 3,
-  "lila": "Punto C.5 · Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "rojo": "Si un funcionario de Policía presenta su dimisión a lo largo de la ocupación enemiga, porque es obligado a ejecutar órdenes ilegítimas de la potencia ocupante, tal como han sido enumeradas aquí anteriormente, que sean contrarias a los intereses de la población civil, porque no tiene otra salida, debe ser reintegrado en las fuerzas de Policía desde que la ocupación termina, sin perder ninguno de los derechos o ventajas que hubiera disfrutado si hubiera permanecido en la Policía:",
-  "exp": "Reintegro al terminar la ocupación, sin pérdida de derechos.",
-  "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "par": "58-0",
-  "pz": "b-205",
-  "sec": 9,
-  "id": "27-290"
  },
  {
   "lote": "e2",
@@ -755,7 +641,7 @@
   "exp": "El deber es rehusar participar en esas actuaciones.",
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "35-0",
-  "pz": "b-7",
+  "pz": "b-8",
   "sec": 9,
   "id": "27-292"
  },
@@ -787,35 +673,6 @@
   "pz": "b-pre",
   "sec": 9,
   "id": "27-293"
- },
- {
-  "lote": "e2",
-  "i": 25,
-  "v": "v02",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Resolución 690",
-    "art": "Punto B.7",
-    "k": 50
-   }
-  ],
-  "pregunta": "Declaración sobre la Policía. Status. Una organización profesional policial, supuesto que sea representativa, debe poder:",
-  "opciones": [
-   "Participar en las negociaciones relativas al status profesional de las funciones de Policía.",
-   "Ser consultada sobre la gestión de los Cuerpos de Policía.",
-   "Entablar cualquier acción judicial en beneficio de un funcionario de Policía o de un grupo de funcionarios de Policía.",
-   "Todas las opciones son correctas."
-  ],
-  "correcta": 3,
-  "lila": "Punto B.7 · Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "rojo": "Una organización profesional policial, supuesto que sea representativa, debe poder: – Participar en las negociaciones relativas al status profesional de las funciones de Policía. – Ser consultada sobre la gestión de los Cuerpos de Policía. – Entablar cualquier acción judicial en beneficio de un funcionario de Policía o de un grupo de funcionarios de Policía;",
-  "exp": "Las tres facultades figuran en el punto.",
-  "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "par": "50-0",
-  "pz": "b-104",
-  "sec": 9,
-  "id": "27-294"
  },
  {
   "lote": "e2",
@@ -871,7 +728,7 @@
   "exp": "Los mismos derechos que el resto de ciudadanos.",
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "53-1",
-  "pz": "b-109",
+  "pz": "b-110",
   "sec": 9,
   "id": "27-296"
  },
@@ -901,7 +758,8 @@
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "38-0",
   "sec": 9,
-  "id": "27-297"
+  "id": "27-297",
+  "pz": "b-11"
  },
  {
   "lote": "e2",
@@ -944,7 +802,8 @@
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "49-0",
   "sec": 9,
-  "id": "27-298"
+  "id": "27-298",
+  "pz": "b-106"
  },
  {
   "lote": "e2",
@@ -981,38 +840,9 @@
   "exp": "La igualdad de derechos se refiere a los tribunales, no a los regímenes disciplinarios.",
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "53-0",
-  "pz": "b-109",
+  "pz": "b-110",
   "sec": 9,
   "id": "27-299"
- },
- {
-  "lote": "e2",
-  "i": 31,
-  "v": "v02",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Resolución 690",
-    "art": "Punto A.7",
-    "k": 34
-   }
-  ],
-  "pregunta": "Declaración sobre la Policía. Ética. ¿Qué medida se aplicará al funcionario de Policía que haya rehusado ejecutar una orden ilegal?:",
-  "opciones": [
-   "Se aplicarán las medidas disciplinarias y penales correspondientes al funcionario de Policía.",
-   "No será aplicada medida alguna penal o disciplinaria al funcionario de Policía.",
-   "Se aplicará la medida disciplinaria correspondiente al funcionario de Policía.",
-   "Se aplicará la medida penal correspondiente al funcionario de Policía."
-  ],
-  "correcta": 1,
-  "lila": "Punto A.7 · Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "rojo": "No será aplicada medida alguna penal o disciplinaria al funcionario de Policía que haya rehusado ejecutar una orden ilegal;",
-  "exp": "No se aplica medida alguna.",
-  "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "par": "34-0",
-  "pz": "b-7",
-  "sec": 9,
-  "id": "27-300"
  },
  {
   "lote": "e2",
@@ -1098,7 +928,8 @@
   "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
   "par": "45-0",
   "sec": 9,
-  "id": "27-303"
+  "id": "27-303",
+  "pz": "b-102"
  },
  {
   "lote": "e2",

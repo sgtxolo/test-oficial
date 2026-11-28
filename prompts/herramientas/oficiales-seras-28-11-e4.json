@@ -203,7 +203,7 @@
   "exp": "Cada Ministro puede dictarlas en sus competencias y ambos proponerlas conjuntamente.",
   "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
   "par": "138-1",
-  "pz": "d-6",
+  "pz": "d-fin",
   "sec": 24,
   "id": "27-377"
  },
@@ -614,7 +614,7 @@
   "exp": "El código se entiende en términos de voluntariedad.",
   "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
   "par": "128-1",
-  "pz": "c-66",
+  "pz": "d-pre",
   "sec": 24,
   "id": "27-391"
  },
@@ -948,7 +948,7 @@
   "exp": "Dictar las instrucciones para promover la difusión y aplicación del Código y su Decálogo.",
   "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
   "par": "138-2",
-  "pz": "d-6",
+  "pz": "d-fin",
   "sec": 24,
   "id": "27-402"
  },
@@ -980,40 +980,6 @@
   "pz": "e-2",
   "sec": 24,
   "id": "27-403"
- },
- {
-  "lote": "e4",
-  "i": 35,
-  "v": "v04",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Real Decreto 176/2022",
-    "art": "Art. 33.1 del Código de Conducta",
-    "k": 172
-   },
-   {
-    "n": "Real Decreto 176/2022",
-    "art": "Art. 34 del Código de Conducta",
-    "k": 173
-   }
-  ],
-  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cuál de las siguientes afirmaciones NO está contenida en la regulación que hace el Código sobre las normas de conducta en las relaciones de la Guardia Civil con las autoridades civiles?:",
-  "opciones": [
-   "Deberán cumplir con las instrucciones y órdenes de aquellas autoridades de las que dependan jerárquicamente en organizaciones nacionales o internacionales en las que estén prestando servicio.",
-   "Mostrarán respeto y cortesía, además de colaboración, en sus relaciones con las autoridades civiles de las distintas administraciones y poderes del Estado como legítimos representantes de la ciudadanía.",
-   "Actuarán sin menoscabo de la mejor disposición para auxiliar a toda autoridad, dependa o no de ella.",
-   "Se esmerarán en sus relaciones con las autoridades civiles, mostrando la mayor cortesía y educación, observando en todo momento un trato respetuoso y atento con estas e informándoles de aquellas materias que les afecten directamente o tengan derecho a conocer."
-  ],
-  "correcta": 3,
-  "lila": "Art. 33.1 del Código de Conducta y Art. 34 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
-  "rojo": "Art. 33.1 del Código de Conducta. 1. Se esmerarán en sus relaciones con la ciudadanía, mostrando la mayor cortesía y educación, observando en todo momento un trato respetuoso y atento con esta y procurando auxilio y protección cuando la situación lo demande o sea requerido para ello.<br>Art. 34 del Código de Conducta. 1. Mostrarán respeto y cortesía, además de colaboración, en sus relaciones con las autoridades civiles de las distintas administraciones y poderes del Estado como legítimos representantes de la ciudadanía. 2. Asimismo, deberán cumplir con las instrucciones y órdenes de aquellas autoridades de las que dependan jerárquicamente en organizaciones nacionales o internacionales en las que estén prestando servicio. Todo ello sin menoscabo de la mejor disposición para auxiliar a toda autoridad, dependa o no de ella.",
-  "exp": "La cortesía e información de la opción corresponde a las relaciones con la ciudadanía.",
-  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
-  "par": "172-1",
-  "pz": "e-33",
-  "sec": 24,
-  "id": "27-404"
  },
  {
   "lote": "e4",
@@ -1301,7 +1267,7 @@
   "exp": "Competencia exclusiva del Estado en defensa y seguridad pública.",
   "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
   "par": "137-1",
-  "pz": "d-6",
+  "pz": "d-fin",
   "sec": 24,
   "id": "27-414"
  },

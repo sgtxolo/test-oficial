@@ -1,3 +1,4 @@
+// (Vale para los lotes d* y e*; los temas sin clave-tests/tN-sec.js se saltan.)
 // Retira preguntas de los lotes del 28/11 (repetidas detectadas en la segunda pasada) sin renumerar las demás.
 // Uso: node prompts/herramientas/oficiales-seras-28-11-quitar.js 3-510 1-694 ...
 const fs = require('fs');
@@ -13,15 +14,15 @@ fs.writeFileSync(F, h);
 const lee = f => { const w = {}; new Function('window', fs.readFileSync(f, 'utf8'))(w); return w; };
 for (const t of [...new Set(ids.map(i => +i.split('-')[0]))]) {
   const re = new RegExp('"(' + ids.join('|') + ')":"[^"]*",?', 'g');
-  for (const f of ['esquemas-datos/mapa-preguntas.js', `expres-subrayado/datos-t${t}.js`]) fs.writeFileSync(f, fs.readFileSync(f, 'utf8').replace(re, ''));
-  for (const f of [`prompts/herramientas/tema${t}/mapa-fijo-t${t}.json`, `expres-subrayado/t${t}-preg-extra.json`]) { const o = JSON.parse(fs.readFileSync(f, 'utf8')); ids.forEach(i => delete o[i]); fs.writeFileSync(f, JSON.stringify(o, null, 1)); }
-  for (const [f, k] of [[`clave-tests/t${t}-esq.js`, 'CLAVE_ESQ'], [`clave-tests/t${t}-sec.js`, 'CLAVE_SEC']]) {
+  for (const f of ['esquemas-datos/mapa-preguntas.js', `expres-subrayado/datos-t${t}.js`].filter(f => fs.existsSync(f))) fs.writeFileSync(f, fs.readFileSync(f, 'utf8').replace(re, ''));
+  for (const f of [`prompts/herramientas/tema${t}/mapa-fijo-t${t}.json`, `expres-subrayado/t${t}-preg-extra.json`].filter(f => fs.existsSync(f))) { const o = JSON.parse(fs.readFileSync(f, 'utf8')); ids.forEach(i => delete o[i]); fs.writeFileSync(f, JSON.stringify(o, null, 1)); }
+  for (const [f, k] of [[`clave-tests/t${t}-esq.js`, 'CLAVE_ESQ'], [`clave-tests/t${t}-sec.js`, 'CLAVE_SEC']].filter(x => fs.existsSync(x[0]))) {
     const v = lee(f)[k][t].filter(x => !ids.includes(x)).map(x => Array.isArray(x) ? x.filter(y => !ids.includes(y)) : x);
     const x = fs.readFileSync(f, 'utf8'), p = x.indexOf(`[${t}]=`) + `[${t}]=`.length; fs.writeFileSync(f, x.slice(0, p) + JSON.stringify(v) + ';' + String.fromCharCode(10));
   }
 }
 const fuera = [];
-for (const f of fs.readdirSync('prompts/herramientas').filter(f => /^oficiales-seras-28-11-d\d\.json$/.test(f))) {
+for (const f of fs.readdirSync('prompts/herramientas').filter(f => /^oficiales-seras-28-11-(d\d|e\d+)\.json$/.test(f))) {
   const p = 'prompts/herramientas/' + f; const L = JSON.parse(fs.readFileSync(p, 'utf8'));
   fuera.push(...L.filter(q => ids.includes(q.id))); fs.writeFileSync(p, JSON.stringify(L.filter(q => !ids.includes(q.id)), null, 1));
 }

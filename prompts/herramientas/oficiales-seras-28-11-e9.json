@@ -1046,34 +1046,6 @@
  },
  {
   "lote": "e9",
-  "i": 36,
-  "v": "v09",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley 29/2014",
-    "art": "Art. 75.2",
-    "k": 245
-   }
-  ],
-  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. Los destinos del personal del Cuerpo de la Guardia Civil se proveerán conforme a los principios de:",
-  "opciones": [
-   "Igualdad, mérito y proporcionalidad.",
-   "Igualdad, mérito y capacidad.",
-   "Congruencia, oportunidad y proporcionalidad.",
-   "Mérito, capacidad y antigüedad."
-  ],
-  "correcta": 3,
-  "lila": "Art. 75.2 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
-  "rojo": "2. Los destinos del personal del Cuerpo de la Guardia Civil se proveerán conforme a los principios de mérito, capacidad y antigüedad.",
-  "exp": "Mérito, capacidad y antigüedad.",
-  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
-  "par": "245-2",
-  "pz": "c-75",
-  "id": "26-528"
- },
- {
-  "lote": "e9",
   "i": 37,
   "v": "v09",
   "t": 26,
@@ -1188,34 +1160,6 @@
   "par": "207-1",
   "pz": "c-37",
   "id": "26-532"
- },
- {
-  "lote": "e9",
-  "i": 41,
-  "v": "v09",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley 29/2014",
-    "art": "Art. 28",
-    "k": 198
-   }
-  ],
-  "pregunta": "Ley de Personal de la Guardia Civil. La enseñanza en la Guardia Civil se estructura en:",
-  "opciones": [
-   "Todas las opciones son correctas.",
-   "Enseñanza de formación.",
-   "Altos estudios profesionales.",
-   "Enseñanza de Perfeccionamiento."
-  ],
-  "correcta": 0,
-  "lila": "Art. 28 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
-  "rojo": "3. La enseñanza en la Guardia Civil se estructura en: a) Enseñanza de formación. b) Enseñanza de perfeccionamiento. c) Altos estudios profesionales.",
-  "exp": "Las tres enseñanzas forman la estructura.",
-  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
-  "par": "198-8",
-  "pz": "c-28",
-  "id": "26-533"
  },
  {
   "lote": "e9",

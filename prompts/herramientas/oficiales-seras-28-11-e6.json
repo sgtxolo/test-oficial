@@ -1576,34 +1576,6 @@
  },
  {
   "lote": "e6",
-  "i": 57,
-  "v": "v06",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley Orgánica 11/2007",
-    "art": "Art. 5.2",
-    "k": 7
-   }
-  ],
-  "pregunta": "Ley Orgánica Reguladora de los Derechos y Deberes de los miembros de la Guardia Civil. ¿En qué casos podrá el jefe de la unidad, centro u órgano donde el Guardia Civil preste sus servicios autorizar, de forma expresamente motivada, el registro personal o de los efectos y pertenencias que estuvieren en los mismos?:",
-  "opciones": [
-   "Cuando lo exija la investigación de un hecho constitutivo de infracción disciplinaria muy grave.",
-   "Cuando lo exija la investigación de un hecho delictivo.",
-   "Cuando lo exija la investigación de un hecho que constituya infracción administrativa.",
-   "Todas las opciones son correctas."
-  ],
-  "correcta": 1,
-  "lila": "Art. 5.2 · Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia Civil",
-  "rojo": "2. El jefe de la unidad, centro u órgano donde el Guardia Civil preste sus servicios podrá autorizar, de forma expresamente motivada, el registro personal o de los efectos y pertenencias que estuvieren en los mismos, cuando lo exija la investigación de un hecho delictivo. El registro se realizará con la asistencia del interesado y en presencia de, al menos, un testigo.",
-  "exp": "Hecho delictivo.",
-  "apartado": "Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia",
-  "par": "7-3",
-  "pz": "a-5",
-  "id": "26-360"
- },
- {
-  "lote": "e6",
   "i": 58,
   "v": "v06",
   "t": 26,
@@ -2390,34 +2362,6 @@
   "par": "41-3",
   "pz": "a-39",
   "id": "26-388"
- },
- {
-  "lote": "e6",
-  "i": 86,
-  "v": "v06",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley Orgánica 11/2007",
-    "art": "Art. 57",
-    "k": 59
-   }
-  ],
-  "pregunta": "Ley Orgánica Reguladora de los Derechos y Deberes de los miembros de la Guardia Civil. Derechos de los miembros del Consejo de la Guardia Civil. Los vocales del Consejo de la Guardia Civil, en representación de los miembros de la Institución, tendrán los siguientes derechos:",
-  "opciones": [
-   "Todas las opciones son correctas.",
-   "Libre distribución de publicaciones referidas a cuestiones profesionales o asociativas.",
-   "Libre circulación por las dependencias de su unidad electoral, sin que entorpezca el normal funcionamiento de las correspondientes unidades.",
-   "No discriminación en su promoción profesional en razón del desempeño de su representación."
-  ],
-  "correcta": 0,
-  "lila": "Art. 57 · Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia Civil",
-  "rojo": "1. Libre circulación por las dependencias de su unidad electoral, sin que entorpezca el normal funcionamiento de las correspondientes unidades. 2. Libre distribución de publicaciones referidas a cuestiones profesionales o asociativas. 3. Acumulación en uno de los miembros de la candidatura de los créditos de tiempo, horas mensuales y permisos, previa comunicación a la Dirección General de la Policía y de la Guardia Civil. 4. No discriminación en su promoción profesional en razón del desempeño de su representación.",
-  "exp": "Las tres son derechos de los vocales.",
-  "apartado": "Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia",
-  "par": "59-2",
-  "pz": "a-57",
-  "id": "26-389"
  },
  {
   "lote": "e6",

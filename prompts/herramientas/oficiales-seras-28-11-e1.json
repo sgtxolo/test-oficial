@@ -121,7 +121,7 @@
   "exp": "Solo cuando no se puedan utilizar medios menos peligrosos y en la mínima medida necesaria.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "14-0",
-  "pz": "a-13",
+  "pz": "a-14",
   "sec": 0,
   "id": "27-230"
  },
@@ -150,7 +150,7 @@
   "exp": "Es literal: defensa propia o de terceros con peligro inminente de muerte o lesiones graves. La fuga exige el peligro del principio 9, no una amenaza genérica o un delito grave.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "16-0",
-  "pz": "a-15",
+  "pz": "a-16",
   "sec": 0,
   "id": "27-231"
  },
@@ -213,7 +213,7 @@
   "exp": "Las tres son las excepciones a la advertencia.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "10-0",
-  "pz": "a-8",
+  "pz": "a-10",
   "sec": 0,
   "id": "27-233"
  },
@@ -358,7 +358,7 @@
   "exp": "Las armas letales solo se usan intencionalmente cuando sea estrictamente inevitable para proteger una vida; las otras son supuestos generales de empleo de armas.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "9-0",
-  "pz": "a-8",
+  "pz": "a-9",
   "sec": 0,
   "id": "27-238"
  },
@@ -426,7 +426,7 @@
   "exp": "Es la regla para las reuniones violentas.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "14-0",
-  "pz": "a-13",
+  "pz": "a-14",
   "sec": 0,
   "id": "27-240"
  },
@@ -465,7 +465,7 @@
   "exp": "Exige capacitación especializada, no genérica.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "19-0",
-  "pz": "a-15",
+  "pz": "a-19",
   "sec": 0,
   "id": "27-241"
  },
@@ -698,7 +698,7 @@
   "exp": "Aptitudes éticas, psicológicas y físicas.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "18-0",
-  "pz": "a-15",
+  "pz": "a-18",
   "sec": 0,
   "id": "27-247"
  },
@@ -872,38 +872,9 @@
   "exp": "Las tres son supuestos del principio 9.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "9-0",
-  "pz": "a-8",
+  "pz": "a-9",
   "sec": 0,
   "id": "27-253"
- },
- {
-  "lote": "e1",
-  "i": 29,
-  "v": "v01",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Principios básicos",
-    "art": "Principio 5",
-    "k": 5
-   }
-  ],
-  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Cuando el empleo de las armas de fuego sea inevitable, los funcionarios encargados de hacer cumplir la ley:",
-  "opciones": [
-   "Ejercerán moderación y actuarán en proporción a la naturaleza del delito y al objetivo de la policía.",
-   "Procederán de modo que se preste inmediatamente asistencia y servicios médicos a las personas heridas o afectadas.",
-   "Reducirán al mínimo los daños y lesiones y respetarán y protegerán la libertad de las personas.",
-   "Procurarán notificar lo sucedido, a la menor brevedad posible, a los parientes o amigos íntimos de las personas heridas o afectadas."
-  ],
-  "correcta": 3,
-  "lila": "Principio 5 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
-  "rojo": "Cuando el empleo de las armas de fuego sea inevitable, los funcionarios encargados de hacer cumplir la ley: a) Ejercerán moderación y actuarán en proporción a la gravedad del delito y al objetivo legítimo que se persiga; b) Reducirán al mínimo los daños y lesiones y respetarán y protegerán la vida humana; c) Procederán de modo que se presten lo antes posible asistencia y servicios médicos a las personas heridas o afectadas; d) Procurarán notificar lo sucedido, a la menor brevedad posible, a los parientes o amigos íntimos de las personas heridas o afectadas.",
-  "exp": "Es literal la letra d). Las otras cambian la proporción, el momento de la asistencia o lo que se protege.",
-  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
-  "par": "5-0",
-  "pz": "a-5",
-  "sec": 0,
-  "id": "27-254"
  },
  {
   "lote": "e1",
@@ -1003,7 +974,7 @@
   "exp": "Cabe en defensa propia ante peligro inminente de lesiones graves; la fuga exige el peligro del principio 9 y las lesiones deben ser graves.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "16-0",
-  "pz": "a-15",
+  "pz": "a-16",
   "sec": 0,
   "id": "27-256"
  },
@@ -1095,7 +1066,7 @@
   "exp": "Solo si no caben medios menos peligrosos y en la mínima medida.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "14-0",
-  "pz": "a-13",
+  "pz": "a-14",
   "sec": 0,
   "id": "27-258"
  },
@@ -1274,7 +1245,7 @@
   "exp": "El peligro para la persona contra la que se usan las armas no es excepción.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "10-0",
-  "pz": "a-8",
+  "pz": "a-10",
   "sec": 0,
   "id": "27-263"
  },
@@ -1337,38 +1308,9 @@
   "exp": "Orientación.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "21-0",
-  "pz": "a-20",
+  "pz": "a-21",
   "sec": 0,
   "id": "27-265"
- },
- {
-  "lote": "e1",
-  "i": 44,
-  "v": "v01",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Principios básicos",
-    "art": "Principio 1",
-    "k": 1
-   }
-  ],
-  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Al establecer las normas y reglamentaciones sobre el empleo de la fuerza y armas de fuego contra personas, ¿qué examinarán continuamente los gobiernos y los organismos encargados de hacer cumplir la ley?:",
-  "opciones": [
-   "Todas las opciones son correctas.",
-   "Las cuestiones morales relacionadas con el empleo de la fuerza y de armas de fuego.",
-   "Las cuestiones operativas relacionadas con el empleo de la fuerza y de armas de fuego.",
-   "Las cuestiones éticas relacionadas con el empleo de la fuerza y de armas de fuego."
-  ],
-  "correcta": 3,
-  "lila": "Principio 1 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
-  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán y aplicarán normas y reglamentaciones sobre el empleo de la fuerza y armas de fuego contra personas por parte de funcionarios encargados de hacer cumplir la ley. Al establecer esas normas y disposiciones, los gobiernos y los organismos encargados de hacer cumplir la ley examinarán continuamente las cuestiones éticas relacionadas con el empleo de la fuerza y de armas de fuego.",
-  "exp": "Las cuestiones éticas.",
-  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
-  "par": "1-0",
-  "pz": "a-1",
-  "sec": 0,
-  "id": "27-266"
  },
  {
   "lote": "e1",
@@ -1395,7 +1337,7 @@
   "exp": "Es literal la capacitación profesional continua y completa; la selección es por procedimientos adecuados y las aptitudes son éticas, psicológicas y físicas.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "18-0",
-  "pz": "a-15",
+  "pz": "a-18",
   "sec": 0,
   "id": "27-267"
  },
@@ -1453,7 +1395,7 @@
   "exp": "Ninguna reproduce bien el principio 9: faltan «vida», la resistencia a la autoridad o que el peligro sea inminente y las lesiones graves.",
   "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
   "par": "9-0",
-  "pz": "a-8",
+  "pz": "a-9",
   "sec": 0,
   "id": "27-269"
  },

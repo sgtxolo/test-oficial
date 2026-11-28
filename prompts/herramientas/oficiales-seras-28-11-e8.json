@@ -174,34 +174,6 @@
  },
  {
   "lote": "e8",
-  "i": 6,
-  "v": "v08",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley Orgánica 12/2007",
-    "art": "Art. 31.1",
-    "k": 102
-   }
-  ],
-  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Autoridades y mandos con competencias disciplinarias sobre alumnos que no tengan la condición de Guardia Civil. La competencia para imponer la sanción de baja en Centro Docente de Formación corresponderá:",
-  "opciones": [
-   "Al General Jefe de la Jefatura de Enseñanza.",
-   "Ninguna de las opciones es correcta.",
-   "Al Director del Centro.",
-   "Al Subsecretario de Defensa, previo informe del Director General de la Guardia Civil."
-  ],
-  "correcta": 1,
-  "lila": "Art. 31.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
-  "rojo": "1. La competencia para imponer la sanción de baja en Centro Docente de Formación corresponderá al Subsecretario de Defensa, previo informe del Director del Centro.",
-  "exp": "Corresponde al Subsecretario de Defensa previo informe del Director del Centro; ninguna lo dice así.",
-  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
-  "par": "102-1",
-  "pz": "b-31",
-  "id": "26-450"
- },
- {
-  "lote": "e8",
   "i": 7,
   "v": "v08",
   "t": 26,

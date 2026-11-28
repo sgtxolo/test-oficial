@@ -599,44 +599,6 @@
  },
  {
   "lote": "e10",
-  "i": 23,
-  "v": "v10",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley 29/2014",
-    "art": "Art. 15.2",
-    "k": 185
-   },
-   {
-    "n": "Ley 29/2014",
-    "art": "Art. 15.1",
-    "k": 185
-   },
-   {
-    "n": "Ley 29/2014",
-    "art": "Art. 15.3",
-    "k": 185
-   }
-  ],
-  "pregunta": "Ley de Personal de la Guardia Civil. Funciones de los guardias civiles. Señale la opción CORRECTA:",
-  "opciones": [
-   "La acción directiva se ejerce mediante la definición de objetivos y la determinación de los medios para conseguirlos, estableciendo los planes correspondientes y controlando su ejecución.",
-   "Por medio de acciones de gestión se ponen en práctica los planes establecidos actuando en cumplimiento de órdenes concretas o siguiendo procedimientos preestablecidos.",
-   "La acción de mando es una acción ejecutiva que se refiere al ejercicio de la autoridad y a la asunción de la consiguiente responsabilidad, y corresponde al guardia civil en razón de su cargo, destino o servicio.",
-   "Los guardias civiles realizarán funciones operativas, técnicas, logísticas, administrativas y docentes en el marco de la seguridad pública o de las misiones de carácter militar que se le puedan encomendar. Estas funciones se desarrollarán por medio de la acción de mando, que incluyen las acciones directivas, ejecutivas y de gestión."
-  ],
-  "correcta": 0,
-  "lila": "Art. 15.2 y Art. 15.1 y Art. 15.3 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
-  "rojo": "Art. 15.2. 2. La acción directiva se ejerce mediante la definición de objetivos y la determinación de los medios para conseguirlos, estableciendo los planes correspondientes y controlando su ejecución. Mediante acciones de gestión se aplican los medios puestos a disposición para alcanzar los objetivos de la forma más eficiente. Por medio de acciones ejecutivas se ponen en práctica los planes establecidos actuando en cumplimiento de órdenes concretas o siguiendo procedimientos preestablecidos.<br>Art. 15.1. 1. Los guardias civiles realizarán funciones operativas, técnicas, logísticas, administrativas y docentes en el marco de la seguridad pública o de las misiones de carácter militar que se le puedan encomendar. Estas funciones se desarrollarán por medio de acciones directivas, que incluyen las de mando y de acciones de gestión y ejecutivas.<br>Art. 15.3. 3. La acción de mando es una acción directiva que se refiere al ejercicio de la autoridad y a la asunción de la consiguiente responsabilidad, y corresponde al guardia civil en razón de su cargo, destino o servicio. Para el ejercicio de la acción de mando se podrá contar con la colaboración de los subordinados en tareas de información, planeamiento, asesoramiento, coordinación y control, que constituyen el apoyo al mando.",
-  "exp": "Es la definición de la acción directiva. La acción de mando es directiva.",
-  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
-  "par": "185-2",
-  "pz": "c-15",
-  "id": "26-560"
- },
- {
-  "lote": "e10",
   "i": 24,
   "v": "v10",
   "t": 26,
