@@ -463,7 +463,7 @@
   "par": "107-2-0",
   "parT": "c las resoluciones del comite adoptadas en cumplimiento de los articulos 4 y 5 invitacion ",
   "fR": 0.6,
-  "pz": null,
+  "pz": "n-20",
   "sec": 22,
   "id": "1-659"
  },
@@ -985,7 +985,7 @@
   "par": "125-0",
   "parT": "1 toda persona tiene derecho al respeto de su vida privada y familiar de su domicilio y de",
   "fR": 1,
-  "pz": null,
+  "pz": "h-8",
   "sec": 27,
   "id": "1-675"
  },
@@ -1315,7 +1315,7 @@
   "par": "176-0",
   "parT": "art 1 1 el extranjero que resida legalmente en el territorio de un estado solamente podra ",
   "fR": 0.25,
-  "pz": null,
+  "pz": "q-ad",
   "sec": 30,
   "id": "1-685"
  },
@@ -1347,7 +1347,7 @@
   "par": "147-0",
   "parT": "art 40 1 la vista es publica a menos que el tribunal decida otra cosa por circunstancias e",
   "fR": 1,
-  "pz": null,
+  "pz": "h-40",
   "sec": 29,
   "id": "1-686"
  },
@@ -1448,7 +1448,7 @@
   "par": "134-1",
   "parT": "2 cuando este constituido en formacion de juez unico el tribunal estara asistido de ponent",
   "fR": 0.75,
-  "pz": null,
+  "pz": "h-24",
   "sec": 28,
   "id": "1-689"
  },
@@ -1582,38 +1582,6 @@
  },
  {
   "lote": "d2",
-  "i": 57,
-  "v": "v06",
-  "t": 1,
-  "refs": [
-   {
-    "n": "CEDH",
-    "art": "40",
-    "ap": null
-   }
-  ],
-  "pregunta": "Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales y sus protocolos. Tribunal Europeo de Derechos Humanos. ¿Cómo serán los documentos depositados en la Secretaría?:",
-  "opciones": [
-   "Accesibles al público, a menos que el Presidente del Tribunal decida de otro modo.",
-   "Reservados al público cuando el Presidente del Tribunal lo decida.",
-   "Accesibles al público cuando el Presidente del Tribunal lo decida.",
-   "Reservados al público, a menos que el Presidente del Tribunal decida de otro modo."
-  ],
-  "correcta": 0,
-  "lila": "Art. 40 · Convenio Europeo de Derechos Humanos",
-  "rojo": "1. La vista es pública, a menos que el Tribunal decida otra cosa por circunstancias excepcionales. 2. Los documentos depositados en la Secretaría serán accesibles al público, a menos que el Presidente del Tribunal decida de otro modo.",
-  "exp": "Accesibles al público salvo decisión en contrario del Presidente del Tribunal.",
-  "apartado": "Convenio Europeo de Derechos Humanos",
-  "letra": "h",
-  "par": "147-0",
-  "parT": "art 40 1 la vista es publica a menos que el tribunal decida otra cosa por circunstancias e",
-  "fR": 1,
-  "pz": null,
-  "sec": 29,
-  "id": "1-694"
- },
- {
-  "lote": "d2",
   "i": 58,
   "v": "v06",
   "t": 1,
@@ -1704,7 +1672,7 @@
   "par": "144-0",
   "parT": "art 37 1 en cualquier momento del procedimiento el tribunal podra decidir cancelar una dem",
   "fR": 0.23,
-  "pz": null,
+  "pz": "h-37",
   "sec": 29,
   "id": "1-697"
  },
@@ -1768,7 +1736,7 @@
   "par": "185-1",
   "parT": "art 7 1 el presente protocolo entrara en vigor el primer dia del mes siguiente a la expira",
   "fR": 0.33,
-  "pz": null,
+  "pz": "q-13",
   "sec": 30,
   "id": "1-699"
  },
@@ -2030,38 +1998,6 @@
  },
  {
   "lote": "d2",
-  "i": 72,
-  "v": "v06",
-  "t": 1,
-  "refs": [
-   {
-    "n": "CEDH",
-    "art": "43",
-    "ap": "2"
-   }
-  ],
-  "pregunta": "Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales y sus protocolos. Tribunal Europeo de Derechos Humanos. Remisión ante la Gran Sala. En el plazo de tres meses a partir de la fecha de la sentencia de una Sala, cualquier parte en el asunto podrá solicitar, en casos excepcionales, la remisión del asunto ante la Gran Sala. ¿Quién aceptará la demanda si el asunto plantea una cuestión grave relativa a la interpretación o aplicación del Convenio o de sus Protocolos o una cuestión grave de carácter general?:",
-  "opciones": [
-   "Un colegio de cinco jueces de la Gran Sala.",
-   "Un colegio de cinco jueces de la Sala.",
-   "Un colegio de tres jueces de la Sala.",
-   "Un colegio de tres jueces de la Gran Sala."
-  ],
-  "correcta": 0,
-  "lila": "Art. 43.2 · Convenio Europeo de Derechos Humanos",
-  "rojo": "2. Un colegio de cinco Jueces de la Gran Sala aceptará la demanda si el asunto plantea una cuestión grave relativa a la interpretación o a la aplicación del Convenio o de sus Protocolos o una cuestión grave de carácter general.",
-  "exp": "Un colegio de cinco jueces de la Gran Sala acepta la demanda; no es de tres ni de la Sala.",
-  "apartado": "Convenio Europeo de Derechos Humanos",
-  "letra": "h",
-  "par": "150-0-1",
-  "parT": "art 43 1 en el plazo de tres meses a partir de la fecha de la sentencia de una sala cualqu",
-  "fR": 1,
-  "pz": "h-43",
-  "sec": 29,
-  "id": "1-708"
- },
- {
-  "lote": "d2",
   "i": 73,
   "v": "v06",
   "t": 1,
@@ -2310,7 +2246,7 @@
   "par": "176-2",
   "parT": "art 3 cuando una sentencia penal condenatoria firme resulte posteriormente anulada o se co",
   "fR": 1,
-  "pz": null,
+  "pz": "q-7",
   "sec": 30,
   "id": "1-715"
  }

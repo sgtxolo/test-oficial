@@ -1,0 +1,354 @@
+[
+ {
+  "lote": "d2",
+  "i": 57,
+  "v": "v06",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CEDH",
+    "art": "40",
+    "ap": null
+   }
+  ],
+  "pregunta": "Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales y sus protocolos. Tribunal Europeo de Derechos Humanos. ¿Cómo serán los documentos depositados en la Secretaría?:",
+  "opciones": [
+   "Accesibles al público, a menos que el Presidente del Tribunal decida de otro modo.",
+   "Reservados al público cuando el Presidente del Tribunal lo decida.",
+   "Accesibles al público cuando el Presidente del Tribunal lo decida.",
+   "Reservados al público, a menos que el Presidente del Tribunal decida de otro modo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 40 · Convenio Europeo de Derechos Humanos",
+  "rojo": "1. La vista es pública, a menos que el Tribunal decida otra cosa por circunstancias excepcionales. 2. Los documentos depositados en la Secretaría serán accesibles al público, a menos que el Presidente del Tribunal decida de otro modo.",
+  "exp": "Accesibles al público salvo decisión en contrario del Presidente del Tribunal.",
+  "apartado": "Convenio Europeo de Derechos Humanos",
+  "letra": "h",
+  "par": "147-0",
+  "parT": "art 40 1 la vista es publica a menos que el tribunal decida otra cosa por circunstancias e",
+  "fR": 1,
+  "pz": null,
+  "sec": 29,
+  "id": "1-694"
+ },
+ {
+  "lote": "d2",
+  "i": 72,
+  "v": "v06",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CEDH",
+    "art": "43",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Convenio para la Protección de los Derechos Humanos y de las Libertades Fundamentales y sus protocolos. Tribunal Europeo de Derechos Humanos. Remisión ante la Gran Sala. En el plazo de tres meses a partir de la fecha de la sentencia de una Sala, cualquier parte en el asunto podrá solicitar, en casos excepcionales, la remisión del asunto ante la Gran Sala. ¿Quién aceptará la demanda si el asunto plantea una cuestión grave relativa a la interpretación o aplicación del Convenio o de sus Protocolos o una cuestión grave de carácter general?:",
+  "opciones": [
+   "Un colegio de cinco jueces de la Gran Sala.",
+   "Un colegio de cinco jueces de la Sala.",
+   "Un colegio de tres jueces de la Sala.",
+   "Un colegio de tres jueces de la Gran Sala."
+  ],
+  "correcta": 0,
+  "lila": "Art. 43.2 · Convenio Europeo de Derechos Humanos",
+  "rojo": "2. Un colegio de cinco Jueces de la Gran Sala aceptará la demanda si el asunto plantea una cuestión grave relativa a la interpretación o a la aplicación del Convenio o de sus Protocolos o una cuestión grave de carácter general.",
+  "exp": "Un colegio de cinco jueces de la Gran Sala acepta la demanda; no es de tres ni de la Sala.",
+  "apartado": "Convenio Europeo de Derechos Humanos",
+  "letra": "h",
+  "par": "150-0-1",
+  "parT": "art 43 1 en el plazo de tres meses a partir de la fecha de la sentencia de una sala cualqu",
+  "fR": 1,
+  "pz": "h-43",
+  "sec": 29,
+  "id": "1-708"
+ },
+ {
+  "lote": "d3",
+  "i": 43,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "102",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la cooperación internacional y la asistencia judicial. A los efectos del presente Estatuto, ¿qué se entenderá por «entrega»?:",
+  "opciones": [
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+   "La entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+   "La entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en el Estatuto objeto de la pregunta.",
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el Estatuto objeto de la pregunta."
+  ],
+  "correcta": 3,
+  "lila": "Art. 102 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "A los efectos del presente Estatuto: a) Por «entrega» se entenderá la entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el presente Estatuto. b) Por «extradición» se entenderá la entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+  "exp": "Entrega: de un Estado a la Corte conforme al Estatuto.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "34-2-0",
+  "parT": "art 102 a los efectos del presente estatuto a por entrega se entendera la entrega de una p",
+  "fR": 0.78,
+  "pz": "e-102",
+  "sec": 6,
+  "id": "1-755"
+ },
+ {
+  "lote": "d5",
+  "i": 0,
+  "v": "v11",
+  "t": 3,
+  "refs": [
+   {
+    "n": "TUE",
+    "art": "5",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Tratado de la Unión Europea. Disposiciones comunes. ¿Por qué principio se rige la delimitación de las competencias de la Unión?:",
+  "opciones": [
+   "Por el principio de cooperación leal.",
+   "Por el principio de atribución.",
+   "Por el principio de subsidiariedad.",
+   "Por el principio de proporcionalidad."
+  ],
+  "correcta": 1,
+  "lila": "Art. 5.1 · Tratado de la Unión Europea",
+  "rojo": "1. La delimitación de las competencias de la Unión se rige por el principio de atribución. El ejercicio de las competencias de la Unión se rige por los principios de subsidiariedad y proporcionalidad.",
+  "exp": "La delimitación de competencias se rige por el principio de atribución; subsidiariedad y proporcionalidad rigen su ejercicio.",
+  "apartado": "Tratado de la Unión Europea",
+  "letra": "a",
+  "par": "4-0-0",
+  "parT": "1 la delimitacion de las competencias de la union se rige por el principio de atribucion e",
+  "fR": 1,
+  "pz": "a-5",
+  "sec": 2,
+  "id": "3-510"
+ },
+ {
+  "lote": "d5",
+  "i": 3,
+  "v": "v11",
+  "t": 3,
+  "refs": [
+   {
+    "n": "TUE",
+    "art": "5",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Tratado de la Unión Europea. Disposiciones comunes. ¿Por qué principio/s se rige el ejercicio de las competencias de la Unión?:",
+  "opciones": [
+   "Por los principios de subsidiariedad y proporcionalidad.",
+   "Por el principio de atribución.",
+   "Por los principios de subsidiariedad y atribución.",
+   "Por el principio de proporcionalidad."
+  ],
+  "correcta": 0,
+  "lila": "Art. 5.1 · Tratado de la Unión Europea",
+  "rojo": "1. La delimitación de las competencias de la Unión se rige por el principio de atribución. El ejercicio de las competencias de la Unión se rige por los principios de subsidiariedad y proporcionalidad.",
+  "exp": "El ejercicio se rige por subsidiariedad y proporcionalidad.",
+  "apartado": "Tratado de la Unión Europea",
+  "letra": "a",
+  "par": "4-0-1",
+  "parT": "1 la delimitacion de las competencias de la union se rige por el principio de atribucion e",
+  "fR": 1,
+  "pz": "a-5",
+  "sec": 2,
+  "id": "3-513"
+ },
+ {
+  "lote": "d5",
+  "i": 6,
+  "v": "v11",
+  "t": 3,
+  "refs": [
+   {
+    "n": "TUE",
+    "art": "41",
+    "ap": null
+   }
+  ],
+  "pregunta": "Tratado de la Unión Europea. Disposiciones generales relativas a la acción exterior de la unión y disposiciones específicas relativas a la política exterior y de seguridad común. El Consejo adoptará por mayoría cualificada, a propuesta del Alto Representante de la Unión para Asuntos Exteriores y Política de Seguridad, las decisiones que establezcan:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Las modalidades de control financiero.",
+   "Las modalidades de constitución y de financiación del fondo inicial, en particular los importes financieros asignados al mismo.",
+   "Las modalidades de gestión del fondo inicial."
+  ],
+  "correcta": 0,
+  "lila": "Art. 41 · Tratado de la Unión Europea",
+  "rojo": "3. El Consejo adoptará una decisión por la que se establezcan los procedimientos específicos para garantizar el acceso rápido a los créditos del presupuesto de la Unión destinados a la financiación urgente de iniciativas en el marco de la política exterior y de seguridad común, en particular los preparativos de una de las misiones contempladas en el apartado 1 del artículo 42 y en el artículo 43. El Consejo se pronunciará previa consulta al Parlamento Europeo. Los preparativos de las misiones contempladas en el apartado 1 del artículo 42 y en el artículo 43 que no se imputen al presupuesto de la Unión se financiarán mediante un fondo inicial constituido por contribuciones de los Estados miembros. El Consejo adoptará por mayoría cualificada, a propuesta del Alto Representante de la Unión para Asuntos Exteriores y Política de Seguridad, las decisiones que establezcan: a) las modalidades de constitución y de financiación del fondo inicial, en particular los importes financieros asignados al mismo; b) las modalidades de gestión del fondo inicial; c) las modalidades de control financiero. Cuando la misión prevista de conformidad con el apartado 1 del artículo 42 y el artículo 43 no pueda imputarse al presupuesto de la Unión, el Consejo autorizará al Alto Representante a utilizar dicho fondo. El Alto Representante informará al Consejo acerca de la ejecución de este mandato.",
+  "exp": "Las tres modalidades figuran en el apartado 3.",
+  "apartado": "Tratado de la Unión Europea",
+  "letra": "a",
+  "par": "39-3-0",
+  "parT": "a las modalidades de constitucion y de financiacion del fondo inicial en particular los im",
+  "fR": 0.85,
+  "pz": "a-41",
+  "sec": 15,
+  "id": "3-516"
+ },
+ {
+  "lote": "d5",
+  "i": 63,
+  "v": "v13",
+  "t": 3,
+  "refs": [
+   {
+    "n": "TUE",
+    "art": "26",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Tratado de la Unión Europea. Disposiciones generales relativas a la acción exterior de la unión y disposiciones específicas relativas a la política exterior y de seguridad común. ¿Quién determinará los intereses estratégicos de la Unión, fijará los objetivos y definirá las orientaciones generales de la política exterior y de seguridad común, incluidos los asuntos que tengan repercusiones en el ámbito de la defensa?:",
+  "opciones": [
+   "El Consejo.",
+   "El Parlamento Europeo.",
+   "El Consejo Europeo.",
+   "La Comisión."
+  ],
+  "correcta": 2,
+  "lila": "Art. 26.1 · Tratado de la Unión Europea",
+  "rojo": "1. El Consejo Europeo determinará los intereses estratégicos de la Unión, fijará los objetivos y definirá las orientaciones generales de la política exterior y de seguridad común, incluidos los asuntos que tengan repercusiones en el ámbito de la defensa. Adoptará las decisiones que resulten necesarias. Si un acontecimiento internacional así lo exige, el Presidente del Consejo Europeo convocará una reunión extraordinaria del Consejo Europeo para definir las líneas estratégicas de la política de la Unión ante dicho acontecimiento.",
+  "exp": "El Consejo Europeo.",
+  "apartado": "Tratado de la Unión Europea",
+  "letra": "a",
+  "par": "24-0-0",
+  "parT": "1 el consejo europeo determinara los intereses estrategicos de la union fijara los objetiv",
+  "fR": 1,
+  "pz": "a-26",
+  "sec": 15,
+  "id": "3-571"
+ },
+ {
+  "lote": "d5",
+  "i": 68,
+  "v": "v13",
+  "t": 3,
+  "refs": [
+   {
+    "n": "TUE",
+    "art": "4",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Tratado de la Unión Europea. Disposiciones comunes. ¿Conforme a qué principio la Unión y los Estados miembros se respetarán y asistirán mutuamente en el cumplimiento de las misiones derivadas de los Tratados?:",
+  "opciones": [
+   "Al de proporcionalidad.",
+   "Al de subsidiariedad.",
+   "Al de cooperación leal.",
+   "Al de información recíproca."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4.3 · Tratado de la Unión Europea",
+  "rojo": "3. Conforme al principio de cooperación leal, la Unión y los Estados miembros se respetarán y asistirán mutuamente en el cumplimiento de las misiones derivadas de los Tratados. Los Estados miembros adoptarán todas las medidas generales o particulares apropiadas para asegurar el cumplimiento de las obligaciones derivadas de los Tratados o resultantes de los actos de las instituciones de la Unión. Los Estados miembros ayudarán a la Unión en el cumplimiento de su misión y se abstendrán de toda medida que pueda poner en peligro la consecución de los objetivos de la Unión.",
+  "exp": "Cooperación leal.",
+  "apartado": "Tratado de la Unión Europea",
+  "letra": "a",
+  "par": "3-2-0",
+  "parT": "3 conforme al principio de cooperacion leal la union y los estados miembros se respetaran ",
+  "fR": 1,
+  "pz": "a-4",
+  "sec": 2,
+  "id": "3-576"
+ },
+ {
+  "lote": "d5",
+  "i": 86,
+  "v": "v14",
+  "t": 3,
+  "refs": [
+   {
+    "n": "TFUE",
+    "art": "77",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Tratado de Funcionamiento de la Unión Europea. Libre circulación de personas, servicios y capitales. La Unión desarrollará una política que tendrá por objetivo:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Instaurar progresivamente un sistema integrado de gestión de las fronteras interiores.",
+   "Garantizar la ausencia total de controles de las personas, sea cual sea su nacionalidad, cuando crucen las fronteras interiores.",
+   "Garantizar los controles de las personas y la vigilancia eficaz en el cruce de las fronteras interiores."
+  ],
+  "correcta": 2,
+  "lila": "Art. 77.1 · Tratado de Funcionamiento de la Unión Europea",
+  "rojo": "1. La Unión desarrollará una política que tendrá por objetivo: a) garantizar la ausencia total de controles de las personas, sea cual sea su nacionalidad, cuando crucen las fronteras interiores; b) garantizar los controles de las personas y la vigilancia eficaz en el cruce de las fronteras exteriores; c) instaurar progresivamente un sistema integrado de gestión de las fronteras exteriores.",
+  "exp": "La ausencia de controles se refiere a las fronteras interiores y la vigilancia y la gestión integrada a las exteriores.",
+  "apartado": "Tratado de Funcionamiento de la Unión Europea",
+  "letra": "b",
+  "par": "56-1-0",
+  "parT": "a garantizar la ausencia total de controles de las personas sea cual sea su nacionalidad c",
+  "fR": 1,
+  "pz": "b-77",
+  "sec": 24,
+  "id": "3-596"
+ },
+ {
+  "lote": "d5",
+  "i": 98,
+  "v": "v14",
+  "t": 3,
+  "refs": [
+   {
+    "n": "TFUE",
+    "art": "234",
+    "ap": null
+   }
+  ],
+  "pregunta": "Tratado de Funcionamiento de la Unión Europea. Disposiciones instituciones y financieras. El Parlamento Europeo, en caso de que se le someta una moción de censura sobre la gestión de la Comisión, sólo podrá pronunciarse sobre dicha moción transcurridos:",
+  "opciones": [
+   "Tres días como mínimo desde la fecha de su presentación y en votación pública.",
+   "Tres días como mínimo desde la fecha de su presentación y en votación secreta.",
+   "Tres días como máximo desde la fecha de su presentación y en votación pública.",
+   "Tres días como máximo desde la fecha de su presentación y en votación secreta."
+  ],
+  "correcta": 0,
+  "lila": "Art. 234 · Tratado de Funcionamiento de la Unión Europea",
+  "rojo": "El Parlamento Europeo, en caso de que se le someta una moción de censura sobre la gestión de la Comisión, sólo podrá pronunciarse sobre dicha moción transcurridos tres días como mínimo desde la fecha de su presentación y en votación pública. Si la moción de censura es aprobada por mayoría de dos tercios de los votos emitidos que representen, a su vez, la mayoría de los diputados que componen el Parlamento Europeo, los miembros de la Comisión deberán dimitir colectivamente de sus cargos y el Alto Representante de la Unión para Asuntos Exteriores y Política de Seguridad deberá dimitir del cargo que ejerce en la Comisión. Permanecerán en sus cargos y continuarán despachando los asuntos de administración ordinaria hasta que sean sustituidos de conformidad con el artículo 17 del Tratado de la Unión Europea. En tal caso, el mandato de los miembros de la Comisión designados para sustituirlos expirará en la fecha en que habría expirado el mandato de los miembros de la Comisión obligados a dimitir colectivamente de sus cargos.",
+  "exp": "Tres días como mínimo y en votación pública.",
+  "apartado": "Tratado de Funcionamiento de la Unión Europea",
+  "letra": "b",
+  "par": "65-5-0",
+  "parT": "234 el parlamento europeo en caso de que se le someta una mocion de censura sobre la gesti",
+  "fR": 1,
+  "pz": "b-234",
+  "sec": 30,
+  "id": "3-607"
+ },
+ {
+  "lote": "d5",
+  "i": 111,
+  "v": "v14",
+  "t": 3,
+  "refs": [
+   {
+    "n": "TFUE",
+    "art": "77",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Tratado de Funcionamiento de la Unión Europea. Espacio de libertad, seguridad y justicia. La Unión desarrollará una política que tendrá por objetivo:",
+  "opciones": [
+   "Instaurar progresivamente un sistema integrado de gestión de las fronteras exteriores.",
+   "Todas las opciones son correctas.",
+   "Garantizar los controles de las personas y la vigilancia eficaz en el cruce de las fronteras interiores.",
+   "Garantizar la ausencia total de controles de las personas, sea cual sea su nacionalidad, cuando crucen las fronteras."
+  ],
+  "correcta": 0,
+  "lila": "Art. 77.1 · Tratado de Funcionamiento de la Unión Europea",
+  "rojo": "1. La Unión desarrollará una política que tendrá por objetivo: a) garantizar la ausencia total de controles de las personas, sea cual sea su nacionalidad, cuando crucen las fronteras interiores; b) garantizar los controles de las personas y la vigilancia eficaz en el cruce de las fronteras exteriores; c) instaurar progresivamente un sistema integrado de gestión de las fronteras exteriores.",
+  "exp": "El sistema integrado es de las fronteras exteriores; la ausencia de controles, de las interiores, y la vigilancia, de las exteriores.",
+  "apartado": "Tratado de Funcionamiento de la Unión Europea",
+  "letra": "b",
+  "par": "56-3-0",
+  "parT": "c instaurar progresivamente un sistema integrado de gestion de las fronteras exteriores",
+  "fR": 1,
+  "pz": "b-77",
+  "sec": 24,
+  "id": "3-620"
+ }
+]
