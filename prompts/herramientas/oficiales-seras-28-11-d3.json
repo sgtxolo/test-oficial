@@ -1,0 +1,1762 @@
+[
+ {
+  "lote": "d3",
+  "i": 0,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Señale la opción INCORRECTA. A los efectos del presente Estatuto, se entenderá por «genocidio» cualquiera de los actos, perpetrados con la intención de destruir total o parcialmente, ¿a qué grupo?:",
+  "opciones": [
+   "Racial.",
+   "Religioso.",
+   "Militar.",
+   "Nacional."
+  ],
+  "correcta": 2,
+  "lila": "Art. 6 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "A los efectos del presente Estatuto, se entenderá por «genocidio» cualquiera de los actos mencionados a continuación, perpetrados con la intención de destruir total o parcialmente a un grupo nacional, étnico, racial o religioso como tal: a) Matanza de miembros del grupo; b) Lesión grave a la integridad física o mental de los miembros del grupo; c) Sometimiento intencional del grupo a condiciones de existencia que hayan de acarrear su destrucción física, total o parcial; d) Medidas destinadas a impedir nacimientos en el seno del grupo; e) Traslado por la fuerza de niños del grupo a otro grupo.",
+  "exp": "El genocidio se refiere a un grupo nacional, étnico, racial o religioso; no «militar».",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "0-1-0",
+  "parT": "art 6 se entendera por genocidio cualquiera de los actos mencionados a continuacion perpet",
+  "fR": 1,
+  "pz": "e-6",
+  "sec": 1,
+  "id": "1-716"
+ },
+ {
+  "lote": "d3",
+  "i": 1,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "7",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. ¿Cuál de los siguientes actos NO se considerará como crimen de lesa humanidad cuando se cometa como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque?:",
+  "opciones": [
+   "Esclavitud.",
+   "Exterminio.",
+   "Deportación o traslado de población.",
+   "Asesinato."
+  ],
+  "correcta": 2,
+  "lila": "Art. 7.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. A los efectos del presente Estatuto, se entenderá por «crimen de lesa humanidad» cualquiera de los actos siguientes cuando se cometa como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque: a) Asesinato; b) Exterminio; c) Esclavitud; d) Deportación o traslado forzoso de población; e) Encarcelación u otra privación grave de la libertad física en violación de normas fundamentales de derecho internacional; f) Tortura; g) Violación, esclavitud sexual, prostitución forzada, embarazo forzado, esterilización forzada o cualquier otra forma de violencia sexual de gravedad comparable; h) Persecución de un grupo o colectividad con identidad propia fundada en motivos políticos, raciales, nacionales, étnicos, culturales, religiosos, de género definido en el párrafo 3, u otros motivos universalmente reconocidos como inaceptables con arreglo al derecho internacional, en conexión con cualquier acto mencionado en el presente párrafo o con cualquier crimen de la competencia de la Corte; i) Desaparición forzada de personas; j) El crimen de «apartheid». k) Otros actos inhumanos de carácter similar que causen intencionalmente grandes sufrimientos o atenten gravemente contra la integridad física o la salud mental o física.",
+  "exp": "El Estatuto habla de deportación o traslado forzoso de población; sin «forzoso» no es el acto descrito.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "1-0-0",
+  "parT": "art 7 1 a los efectos del presente estatuto se entendera por crimen de lesa humanidad cual",
+  "fR": 0.33,
+  "pz": "e-7",
+  "sec": 1,
+  "id": "1-717"
+ },
+ {
+  "lote": "d3",
+  "i": 2,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "8",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, ¿cuál de las siguientes infracciones graves se encuadrarán dentro de los crímenes de guerra?:",
+  "opciones": [
+   "La tortura o los tratos inhumanos, incluidos los experimentos biológicos.",
+   "La destrucción y la apropiación de bienes, justificadas por necesidades militares, y efectuadas a gran escala, ilícita y arbitrariamente.",
+   "El hecho de causar sufrimientos o de atentar gravemente contra la integridad física o la salud.",
+   "El hecho de privar a un prisionero de su derecho a ser juzgado legítima e imparcialmente."
+  ],
+  "correcta": 0,
+  "lila": "Art. 8 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. A los efectos del presente Estatuto, se entiende por «crímenes de guerra»: a) Infracciones graves de los Convenios de Ginebra de 12 de agosto de 1949, a saber, cualquiera de los siguientes actos contra personas o bienes protegidos por las disposiciones del Convenio de Ginebra pertinente: i) El homicidio intencional; ii) La tortura o los tratos inhumanos, incluidos los experimentos biológicos; iii) El hecho de causar deliberadamente grandes sufrimientos o de atentar gravemente contra la integridad física o la salud; iv) La destrucción y la apropiación de bienes, no justificadas por necesidades militares, y efectuadas a gran escala, ilícita y arbitrariamente; v) El hecho de forzar a un prisionero de guerra o a otras personas protegidas a servir en las fuerzas de una Potencia enemiga; vi) El hecho de privar deliberadamente a un prisionero de guerra o a otra persona protegida de su derecho a ser juzgado legítima e imparcialmente; vii) La deportación o el traslado ilegal, o el confinamiento ilegal; viii) La toma de rehenes;",
+  "exp": "Es literal el inciso ii). Las otras omiten «deliberadamente» o convierten en infracción la destrucción justificada por necesidades militares.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "1-27",
+  "parT": "ii la tortura o los tratos inhumanos incluidos los experimentos biologicos",
+  "fR": 1,
+  "pz": "e-8",
+  "sec": 1,
+  "id": "1-718"
+ },
+ {
+  "lote": "d3",
+  "i": 3,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "9",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. ¿Quién podrá proponer enmiendas a los Elementos de los crímenes?:",
+  "opciones": [
+   "El fiscal.",
+   "Todas las opciones son correctas.",
+   "Los magistrados, por mayoría absoluta.",
+   "Cualquier Estado Parte."
+  ],
+  "correcta": 1,
+  "lila": "Art. 9 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Los Elementos de los Crímenes ayudarán a la Corte a interpretar y aplicar los artículos 6, 7, 8 y 8 bis del presente Estatuto, serán aprobados por una mayoría de dos tercios de los miembros de la Asamblea de los Estados Partes. 2. Podrán proponer enmiendas a los Elementos de los crímenes: a) Cualquier Estado Parte; b) Los magistrados, por mayoría absoluta; c) El fiscal. Las enmiendas serán aprobadas por una mayoría de dos tercios de los miembros de la Asamblea de los Estados Partes. 3. Los Elementos de los crímenes y sus enmiendas serán compatibles con lo dispuesto en el presente Estatuto.",
+  "exp": "Pueden proponerlas los Estados Partes, los magistrados por mayoría absoluta y el fiscal.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "2-1-0",
+  "parT": "art 9 1 los elementos de los crimenes ayudaran a la corte a interpretar y aplicar los arti",
+  "fR": 1,
+  "pz": "e-9",
+  "sec": 1,
+  "id": "1-719"
+ },
+ {
+  "lote": "d3",
+  "i": 4,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "19",
+    "ap": "6"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Impugnación de la competencia de la Corte o de la admisibilidad de la causa. Antes de la confirmación de los cargos, la impugnación de la admisibilidad de una causa o de la competencia de la Corte, ¿a qué Sala será asignada?:",
+  "opciones": [
+   "A la Sala en Pleno.",
+   "A la Sala de Apelaciones.",
+   "A la Sala de Cuestiones Preliminares.",
+   "A la Sala de Primera Instancia."
+  ],
+  "correcta": 2,
+  "lila": "Art. 19.6 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "6. ANTES DE LA CONFIRMACIÓN DE LOS CARGOS: La impugnación de la admisibilidad de una causa o de la competencia de la Corte será asignada a la Sala de Cuestiones Preliminares. DESPUÉS DE CONFIRMADOS LOS CARGOS: Será asignada a la Sala de Primera Instancia. Las decisiones relativas a la competencia o la admisibilidad podrán ser recurridas ante la Sala de Apelaciones de conformidad con el artículo 82.",
+  "exp": "Antes de confirmarse los cargos conoce la Sala de Cuestiones Preliminares.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "13-10",
+  "parT": "ola impugnacion de la admisibilidad de una causa o de la competencia de la corte sera asig",
+  "fR": 1,
+  "pz": "e-19",
+  "sec": 3,
+  "id": "1-720"
+ },
+ {
+  "lote": "d3",
+  "i": 5,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "54",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Funciones y atribuciones del fiscal con respecto a las investigaciones. El fiscal NO podrá:",
+  "opciones": [
+   "Reunir y examinar pruebas.",
+   "Hacer comparecer e interrogar a las personas objeto de investigación, las víctimas y los testigos.",
+   "Solicitar la cooperación de un Estado u organización o acuerdo intergubernamental de conformidad con su respectiva competencia o mandato.",
+   "Convenir en divulgar en cualquier etapa del procedimiento los documentos o la información que obtenga a condición de no preservar su carácter confidencial."
+  ],
+  "correcta": 3,
+  "lila": "Art. 54.3 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "3. El fiscal podrá: a) Reunir y examinar pruebas; b) Hacer comparecer e interrogar a las personas objeto de investigación, las víctimas y los testigos; c) Solicitar la cooperación de un Estado u organización o acuerdo intergubernamental de conformidad con su respectiva competencia o mandato; d) Concertar las disposiciones o los acuerdos compatibles con el presente Estatuto que sean necesarios para facilitar la cooperación de un Estado, una organización intergubernamental o una persona; e) Convenir en que no divulgará en ninguna etapa del procedimiento los documentos o la información que obtenga a condición de preservar su carácter confidencial y, únicamente, a los efectos de obtener nuevas pruebas, salvo con el acuerdo de quien haya facilitado la información, y f) Adoptar o pedir que se adopten las medidas necesarias para asegurar el carácter confidencial de la información, la protección de una persona o la preservación de las pruebas.",
+  "exp": "El fiscal puede convenir en no divulgar a condición de preservar la confidencialidad; la opción dice lo contrario.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "16-15",
+  "parT": "e convenir en que no divulgara en ninguna etapa del procedimiento los documentos o la info",
+  "fR": 0.92,
+  "pz": "e-54",
+  "sec": 4,
+  "id": "1-721"
+ },
+ {
+  "lote": "d3",
+  "i": 6,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "93",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. otras formas de cooperación. Los Estados Partes, de conformidad con lo dispuesto en la presente Parte y con los procedimientos de su derecho interno, deberán cumplir las solicitudes de asistencia formuladas por la Corte en relación con investigaciones o enjuiciamientos penales a fin de:",
+  "opciones": [
+   "Interrogar a una persona objeto de investigación o enjuiciamiento.",
+   "Todas las opciones son correctas.",
+   "Identificar y buscar personas u objetos.",
+   "Practicar pruebas, incluidos los testimonios bajo juramento, y producir pruebas, incluidos los dictámenes e informes periciales que requiera la Corte."
+  ],
+  "correcta": 1,
+  "lila": "Art. 93.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Los Estados Partes, de conformidad con lo dispuesto en la presente Parte y con los procedimientos de su derecho interno, deberán cumplir las solicitudes de asistencia formuladas por la Corte en relación con investigaciones o enjuiciamientos penales a fin de: a) Identificar y buscar personas u objetos; b) Practicar pruebas, incluidos los testimonios bajo juramento, y producir pruebas, incluidos los dictámenes e informes periciales que requiera la Corte; c) Interrogar a una persona objeto de investigación o enjuiciamiento; d) Notificar documentos, inclusive los documentos judiciales; e) Facilitar la comparecencia voluntaria ante la Corte de testigos o expertos; f) Proceder al traslado provisional de personas, de conformidad con lo dispuesto en el párrafo; g) Realizar inspecciones oculares, inclusive la exhumación y el examen de cadáveres y fosas comunes; h) Practicar allanamientos y decomisos; i) Transmitir registros y documentos, inclusive registros y documentos oficiales; j) Proteger a víctimas y testigos y preservar pruebas; k) Identificar, determinar el paradero o inmovilizar el producto y los bienes y haberes obtenidos del crimen y de los instrumentos del crimen, o incautarse de ellos, con miras a su decomiso ulterior y sin perjuicio de los derechos de terceros de buena fe, y l) Cualquier otro tipo de asistencia no prohibida por la legislación del Estado requerido y destinada a facilitar la investigación y el enjuiciamiento de crímenes de la competencia de la Corte.",
+  "exp": "Las tres figuran entre las solicitudes de asistencia del apartado 1.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "28-0",
+  "parT": "art 93 1 los estados partes de conformidad con lo dispuesto en la presente parte y con los",
+  "fR": 0.14,
+  "pz": "e-93",
+  "sec": 6,
+  "id": "1-722"
+ },
+ {
+  "lote": "d3",
+  "i": 7,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "102",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, ¿qué se entenderá por «extradición»?:",
+  "opciones": [
+   "La entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+   "La entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en el presente Estatuto.",
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el presente Estatuto."
+  ],
+  "correcta": 0,
+  "lila": "Art. 102 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "A los efectos del presente Estatuto: a) Por «entrega» se entenderá la entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el presente Estatuto. b) Por «extradición» se entenderá la entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+  "exp": "La extradición es la entrega de un Estado a otro conforme a un tratado, convención o derecho interno; la entrega a la Corte se llama «entrega».",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "34-2-0",
+  "parT": "art 102 a los efectos del presente estatuto a por entrega se entendera la entrega de una p",
+  "fR": 1,
+  "pz": "e-102",
+  "sec": 6,
+  "id": "1-723"
+ },
+ {
+  "lote": "d3",
+  "i": 8,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "5",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De conformidad con el presente Estatuto, ¿en qué crímenes NO tendrá competencia la Corte?:",
+  "opciones": [
+   "Los crímenes de guerra.",
+   "El crimen de genocidio.",
+   "Los crímenes de agresión.",
+   "Los crímenes de homicidio."
+  ],
+  "correcta": 3,
+  "lila": "Art. 5 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. La competencia de la Corte se limitará a los crímenes más graves de trascendencia para la comunidad internacional en su conjunto. La Corte tendrá competencia, de conformidad con el presente Estatuto, respecto de los siguientes crímenes: a) El crimen de genocidio; b) Los crímenes de lesa humanidad; c) Los crímenes de guerra; d) El crimen de agresión. 2. SUPRIMIDO.",
+  "exp": "La Corte conoce de genocidio, lesa humanidad, guerra y agresión; no del homicidio como crimen propio.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "0-0-0",
+  "parT": "art 5 1 la competencia de la corte se limitara a los crimenes mas graves de trascendencia ",
+  "fR": 0.5,
+  "pz": "e-5",
+  "sec": 1,
+  "id": "1-724"
+ },
+ {
+  "lote": "d3",
+  "i": 10,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "7",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, ¿qué se entenderá por «esclavitud»?:",
+  "opciones": [
+   "La imposición intencional de condiciones de vida, entre otras, la privación del acceso a alimentos o medicinas encaminadas a causar la destrucción de parte de una población.",
+   "El desplazamiento forzoso de las personas afectadas, por expulsión u otros actos coactivos, de la zona en que estén legítimamente presentes, sin motivos autorizados por el derecho internacional.",
+   "Una línea de conducta que implique la comisión múltiple de actos contra una población civil, de conformidad con la política de un Estado o de una organización de cometer ese ataque o para promover esa política.",
+   "El ejercicio de los atributos del derecho de propiedad sobre una persona, o de algunos de ellos, incluido el ejercicio de esos atributos en el tráfico de personas, en particular mujeres y niños."
+  ],
+  "correcta": 3,
+  "lila": "Art. 7.2 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. A los efectos del párrafo 1: a) Por «ataque contra una población civil» se entenderá una línea de conducta que implique la comisión múltiple de actos mencionados en el párrafo 1 contra una población civil, de conformidad con la política de un Estado o de una organización de cometer ese ataque o para promover esa política; b) El «exterminio» comprenderá la imposición intencional de condiciones de vida, entre otras, la privación del acceso a alimentos o medicinas encaminadas a causar la destrucción de parte de una población; c) Por «esclavitud» se entenderá el ejercicio de los atributos del derecho de propiedad sobre una persona, o de algunos de ellos, incluido el ejercicio de esos atributos en el tráfico de personas, en particular mujeres y niños; d) Por «deportación o traslado forzoso de población» se entenderá el desplazamiento forzoso de las personas afectadas, por expulsión u otros actos coactivos, de la zona en que estén legítimamente presentes, sin motivos autorizados por el derecho internacional; e) Por «tortura» se entenderá causar intencionalmente dolor o sufrimientos graves, ya sean físicos o mentales, a una persona que el acusado tenga bajo su custodia o control; sin embargo, no se entenderá por tortura el dolor o los sufrimientos que se deriven únicamente de sanciones lícitas o que sean consecuencia normal o fortuita de ellas; f) Por «embarazo forzado» se entenderá el confinamiento ilícito de una mujer a la que se ha dejado embarazada por la fuerza, con la intención de modificar la composición étnica de una población o de cometer otras violaciones graves del derecho internacional. En modo alguno se entenderá que esta definición afecta a las normas de derecho interno relativas al embarazo; g) Por «persecución» se entenderá la privación intencional y grave de derechos fundamentales en contravención del derecho internacional en razón de la identidad del grupo o de la colectividad. h) Por el crimen de «apartheid» se entenderán los actos inhumanos de carácter similar a los mencionados en el párrafo 1 cometidos en el contexto de un régimen institucionalizado de opresión y dominación sistemáticas de un grupo racial sobre uno o más grupos raciales y con la intención de mantener ese régimen; i) Por «desaparición forzada de personas» se entenderá la aprehensión, la detención o el secuestro de personas por un Estado o una organización política o con su autorización, apoyo o aquiescencia, seguido de la negativa a admitir tal privación de libertad o dar información sobre la suerte o el paradero de esas personas, con la intención de dejarlas fuera del amparo de la ley por un período prolongado.",
+  "exp": "Es la definición de esclavitud; las otras definen exterminio, deportación y ataque contra la población civil.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "1-15-0",
+  "parT": "c por esclavitud se entendera el ejercicio de los atributos del derecho de propiedad sobre",
+  "fR": 1,
+  "pz": "e-7",
+  "sec": 1,
+  "id": "1-725"
+ },
+ {
+  "lote": "d3",
+  "i": 11,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "8 bis",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, se entenderá por \"acto de agresión\" el uso de la fuerza armada por un Estado contra:",
+  "opciones": [
+   "La integridad política de otro Estado.",
+   "Todas las opciones son correctas.",
+   "La independencia territorial de otro Estado.",
+   "La soberanía de otro Estado."
+  ],
+  "correcta": 3,
+  "lila": "Art. 8 bis.2 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. A los efectos del párrafo 1, por ‘’acto de agresión’’ se entenderá el uso de la fuerza armada por un Estado contra la soberanía, la integridad territorial o la independencia política de otro Estado, o en cualquier otra forma incompatible con la Carta de las Naciones Unidas. De conformidad con la resolución 3314 (XXIX) de la Asamblea General de las Naciones Unidas, de 14 de diciembre de 1974, cualquiera de los actos siguientes, independientemente de que haya o no declaración de guerra, se caracterizará como acto de agresión: a) La invasión o el ataque por las fuerzas armadas de un Estado del territorio de otro Estado, o toda ocupación militar, aún temporal, que resulte de dicha invasión o ataque, o toda anexión, mediante el uso de la fuerza, del territorio de otro Estado o de parte de él; b) El bombardeo, por las fuerzas armadas de un Estado, del territorio de otro Estado, o el empleo de cualesquiera armas por un Estado contra el territorio de otro Estado; c) El bloqueo de los puertos o de las costas de un Estado por las fuerzas armadas de otro Estado; d) El ataque por las fuerzas armadas de un Estado contra las fuerzas armadas terrestres, navales o aéreas de otro Estado, o contra su flota mercante o aérea; e) La utilización de fuerzas armadas de un Estado, que se encuentran en el territorio de otro Estado con el acuerdo del Estado receptor, en violación de las condiciones establecidas en el acuerdo o toda prolongación de su presencia en dicho territorio después de terminado el acuerdo; f) La acción de un Estado que permite que su territorio, que ha puesto a disposición de otro Estado, sea utilizado por ese otro Estado para perpetrar un acto de agresión contra un tercer Estado; g) El envío por un Estado, o en su nombre, de bandas armadas, grupos irregulares o mercenarios que lleven a cabo actos de fuerza armada contra otro Estado de tal gravedad que sean equiparables a los actos antes enumerados, o su sustancial participación en dichos actos.",
+  "exp": "El acto de agresión se dirige contra la soberanía, la integridad territorial o la independencia política de otro Estado; las otras cruzan los adjetivos.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "3-1",
+  "parT": "2 alos efectos del parrafo 1 por acto de agresion se entendera el uso de la fuerza armada ",
+  "fR": 1,
+  "pz": null,
+  "sec": 1,
+  "id": "1-726"
+ },
+ {
+  "lote": "d3",
+  "i": 13,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "15",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Respecto del Fiscal, señale la opción INCORRECTA:",
+  "opciones": [
+   "El fiscal podrá iniciar de oficio una investigación sobre la base de información acerca de un crimen de la competencia de la Corte.",
+   "El fiscal, si llegare a la conclusión de que existe fundamento suficiente para abrir una investigación, presentará a la Fiscalía General del Estado una petición de autorización para ello, junto con la documentación justificativa que haya reunido.",
+   "El fiscal analizará la veracidad de la información recibida.",
+   "Con tal fin, podrá recabar más información de los Estados, los órganos de la Naciones Unidas, las organizaciones intergubernamentales o no gubernamentales u otras fuentes fidedignas que considere apropiadas y podrá recibir testimonios escritos y orales en la sede de la Corte."
+  ],
+  "correcta": 1,
+  "lila": "Art. 15 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. El fiscal podrá iniciar de oficio una investigación sobre la base de información acerca de un crimen de la competencia de la Corte. 2. El fiscal analizará la veracidad de la información recibida. Con tal fin, podrá recabar más información de los Estados, los órganos de la Naciones Unidas, las organizaciones intergubernamentales o no gubernamentales u otras fuentes fidedignas que considere apropiadas y podrá recibir testimonios escritos y orales en la sede de la Corte. 3. El fiscal, si llegare a la conclusión de que existe fundamento suficiente para abrir una investigación, presentará a la Sala de Cuestiones Preliminares una petición de autorización para ello, junto con la documentación justificativa que haya reunido. Las víctimas podrán presentar observaciones a la Sala de Cuestiones Preliminares, de conformidad con las Reglas de Procedimiento y Prueba. 4. Si, tras haber examinado la petición y la documentación que la justifique, la Sala de Cuestiones Preliminares considerare que hay fundamento suficiente para abrir una investigación y que el asunto parece corresponder a la competencia de la Corte, autorizará el inicio de la investigación, sin perjuicio de las resoluciones que pueda adoptar posteriormente la Corte con respecto a su competencia y la admisibilidad de la causa. 5. La negativa de la Sala de Cuestiones Preliminares a autorizar la investigación no impedirá que el fiscal presente ulteriormente otra petición basada en nuevos hechos o pruebas relacionadas con la misma situación. 6. Si, después del examen preliminar a que se refieren los párrafos 1 y 2, el fiscal llega a la conclusión de que la información presentada no constituye fundamento suficiente para una investigación, informará de ello a quienes la hubieren presentado. Ello no impedirá que el fiscal examine, a la luz de hechos o pruebas nuevos, otra información que reciba en relación con la misma situación.",
+  "exp": "La petición de autorización se presenta a la Sala de Cuestiones Preliminares.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "7-0-0",
+  "parT": "art 15 1 el fiscal podra iniciar de oficio una investigacion sobre la base de informacion ",
+  "fR": 0.68,
+  "pz": "e-15",
+  "sec": 2,
+  "id": "1-727"
+ },
+ {
+  "lote": "d3",
+  "i": 14,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "15 bis",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Ejercicio de la competencia respecto del crimen de agresión. La Corte únicamente podrá ejercer su competencia respecto de crímenes de agresión cometidos un año después de la ratificación o aceptación de las enmiendas, ¿por cuántos Estados Partes?:",
+  "opciones": [
+   "Por veinte Estados Partes.",
+   "Por diez Estados Partes.",
+   "Por treinta Estados Partes.",
+   "Por cuarenta Estados Partes."
+  ],
+  "correcta": 2,
+  "lila": "Art. 15 bis.2 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. La Corte únicamente podrá ejercer su competencia respecto de crímenes de agresión cometidos un año después de la ratificación o aceptación de las enmiendas por treinta Estados Partes.",
+  "exp": "Por treinta Estados Partes.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "7-1-0",
+  "parT": "art 15 bis 2 la corte unicamente podra ejercer su competencia respecto de crimenes de agre",
+  "fR": 1,
+  "pz": null,
+  "sec": 2,
+  "id": "1-728"
+ },
+ {
+  "lote": "d3",
+  "i": 15,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "56",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. El fiscal, cuando considere que se presenta una oportunidad única de proceder a una investigación, que tal vez no se repita a los fines de un juicio, de recibir el testimonio o la declaración de un testigo o de examinar, reunir o verificar pruebas, ¿a qué Sala se lo comunicará?:",
+  "opciones": [
+   "A la Sala de Cuestiones Preliminares.",
+   "A la Sala en Pleno.",
+   "A la Sala de Apelaciones.",
+   "A la Sala de Primera Instancia."
+  ],
+  "correcta": 0,
+  "lila": "Art. 56.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. a) El fiscal, cuando considere que se presenta una oportunidad única de proceder a una investigación, que tal vez no se repita a los fines de un juicio, de recibir el testimonio o la declaración de un testigo o de examinar, reunir o verificar pruebas, lo comunicará a la Sala de Cuestiones Preliminares. b) La Sala, a petición del fiscal, podrá adoptar las medidas que sean necesarias para velar por la eficiencia e integridad de las actuaciones y, en particular, para proteger los derechos de la defensa. c) A menos que la Sala de Cuestiones Preliminares ordene otra cosa, el fiscal proporcionará la información correspondiente a la persona que ha sido detenida o que ha comparecido en virtud de una citación en relación con la investigación a que se refiere el apartado a), a fin de que pueda ser oída.",
+  "exp": "Lo comunica a la Sala de Cuestiones Preliminares.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "19-1",
+  "parT": "a el fiscal cuando considere que se presenta una oportunidad unica de proceder a una inves",
+  "fR": 1,
+  "pz": "e-56",
+  "sec": 4,
+  "id": "1-729"
+ },
+ {
+  "lote": "d3",
+  "i": 16,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "91",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. ¿Qué elementos NO deberá contener o de qué documentos no irá acompañada la solicitud de detención y entrega del condenado?:",
+  "opciones": [
+   "Si la persona que se busca ha sido condenada a una pena, original de la sentencia y, en el caso de una pena de reclusión, una indicación de la parte de la pena que se ha cumplido y de la que queda por cumplir emitida por el Juzgado de Vigilancia Penitenciaria.",
+   "Datos que demuestren que la persona buscada es aquella a la que se refiere la sentencia condenatoria.",
+   "Copia de la sentencia condenatoria.",
+   "Copia de la orden de detención dictada en su contra."
+  ],
+  "correcta": 0,
+  "lila": "Art. 91.3 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "3. La solicitud de detención y entrega del condenado deberá contener los siguientes elementos o ir acompañada de: a) Copia de la orden de detención dictada en su contra; b) Copia de la sentencia condenatoria; c) Datos que demuestren que la persona buscada es aquella a la que se refiere la sentencia condenatoria, y d) Si la persona que se busca ha sido condenada a una pena, copia de la sentencia y, en el caso de una pena de reclusión, una indicación de la parte de la pena que se ha cumplido y de la que queda por cumplir.",
+  "exp": "Basta una copia de la sentencia y la indicación de la pena cumplida y pendiente; no se pide el original ni que la emita un juzgado de vigilancia.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "27-9",
+  "parT": "d si la persona que se busca ha sido condenada a una pena copia de la sentencia y en el ca",
+  "fR": 0.69,
+  "pz": "e-91",
+  "sec": 6,
+  "id": "1-730"
+ },
+ {
+  "lote": "d3",
+  "i": 17,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "101",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. ¿A qué principio nos referimos cuando, \"quien haya sido entregado a la Corte en virtud del presente Estatuto no será procesado, castigado o detenido por una conducta anterior a su entrega, a menos que ésta constituya la base del delito por el cual haya sido entregado\"?:",
+  "opciones": [
+   "Al principio de legalidad.",
+   "Al principio de proporcionalidad.",
+   "Al principio de necesidad.",
+   "Al principio de la especialidad."
+  ],
+  "correcta": 3,
+  "lila": "Art. 101 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Quien haya sido entregado a la Corte en virtud del presente Estatuto no será procesado, castigado o detenido por una conducta anterior a su entrega, a menos que ésta constituya la base del delito por el cual haya sido entregado. 2. La Corte podrá pedir al Estado que hizo la entrega que la dispense del cumplimiento de los requisitos establecidos en el párrafo 1 y, si fuere necesario, proporcionará información adicional de conformidad con el artículo 91. Los Estados Partes estarán facultados para dar esa dispensa a la Corte y procurarán hacerlo.",
+  "exp": "Es el principio de la especialidad.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "34-1",
+  "parT": "art 101 1 quien haya sido entregado a la corte no sera procesado castigado o detenido por ",
+  "fR": 0,
+  "pz": "e-101",
+  "sec": 6,
+  "id": "1-731"
+ },
+ {
+  "lote": "d3",
+  "i": 18,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "7",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, se entenderá por «crimen de lesa humanidad» una serie de actos cuando se cometan como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque. Señale cuál se trata de uno de los actos citados anteriormente:",
+  "opciones": [
+   "El crimen de «apartheid».",
+   "Homicidio voluntario.",
+   "Todas las opciones son correctas.",
+   "Bombardeo de posiciones civiles."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. A los efectos del presente Estatuto, se entenderá por «crimen de lesa humanidad» cualquiera de los actos siguientes cuando se cometa como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque: a) Asesinato; b) Exterminio; c) Esclavitud; d) Deportación o traslado forzoso de población; e) Encarcelación u otra privación grave de la libertad física en violación de normas fundamentales de derecho internacional; f) Tortura; g) Violación, esclavitud sexual, prostitución forzada, embarazo forzado, esterilización forzada o cualquier otra forma de violencia sexual de gravedad comparable; h) Persecución de un grupo o colectividad con identidad propia fundada en motivos políticos, raciales, nacionales, étnicos, culturales, religiosos, de género definido en el párrafo 3, u otros motivos universalmente reconocidos como inaceptables con arreglo al derecho internacional, en conexión con cualquier acto mencionado en el presente párrafo o con cualquier crimen de la competencia de la Corte; i) Desaparición forzada de personas; j) El crimen de «apartheid». k) Otros actos inhumanos de carácter similar que causen intencionalmente grandes sufrimientos o atenten gravemente contra la integridad física o la salud mental o física.",
+  "exp": "El «apartheid» es la letra j); el homicidio voluntario y el bombardeo no figuran como actos de lesa humanidad.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "1-20",
+  "parT": "h por el crimen de apartheid se entenderan los actos inhumanos de caracter similar a los m",
+  "fR": 1,
+  "pz": "e-7",
+  "sec": 1,
+  "id": "1-732"
+ },
+ {
+  "lote": "d3",
+  "i": 19,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "8 bis",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De conformidad con la resolución 3314 (XXIX) de la Asamblea General de las Naciones Unidas, de 14 de diciembre de 1974, una serie de actos, independientemente de que haya o no declaración de guerra, se caracterizarán como acto de agresión. Señale cuál de los siguientes NO se caracterizará como acto de agresión según establece la citada resolución de Naciones Unidas:",
+  "opciones": [
+   "El bombardeo, por las fuerzas armadas de un Estado, del territorio de otro Estado, o el empleo de cualesquiera armas por un Estado contra el territorio de otro Estado.",
+   "La acción de un Estado que permite que su territorio, que ha puesto a disposición de otro Estado, sea utilizado por ese otro Estado para perpetrar un acto de agresión contra un tercer Estado.",
+   "El bloqueo de los puertos o de las costas de un Estado por las fuerzas armadas de otro Estado.",
+   "El ataque por las fuerzas armadas de un Estado contra las fuerzas armadas terrestres, navales o aéreas de otro Estado, exceptuando la flota mercante."
+  ],
+  "correcta": 3,
+  "lila": "Art. 8 bis.2 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. A los efectos del párrafo 1, por ‘’acto de agresión’’ se entenderá el uso de la fuerza armada por un Estado contra la soberanía, la integridad territorial o la independencia política de otro Estado, o en cualquier otra forma incompatible con la Carta de las Naciones Unidas. De conformidad con la resolución 3314 (XXIX) de la Asamblea General de las Naciones Unidas, de 14 de diciembre de 1974, cualquiera de los actos siguientes, independientemente de que haya o no declaración de guerra, se caracterizará como acto de agresión: a) La invasión o el ataque por las fuerzas armadas de un Estado del territorio de otro Estado, o toda ocupación militar, aún temporal, que resulte de dicha invasión o ataque, o toda anexión, mediante el uso de la fuerza, del territorio de otro Estado o de parte de él; b) El bombardeo, por las fuerzas armadas de un Estado, del territorio de otro Estado, o el empleo de cualesquiera armas por un Estado contra el territorio de otro Estado; c) El bloqueo de los puertos o de las costas de un Estado por las fuerzas armadas de otro Estado; d) El ataque por las fuerzas armadas de un Estado contra las fuerzas armadas terrestres, navales o aéreas de otro Estado, o contra su flota mercante o aérea; e) La utilización de fuerzas armadas de un Estado, que se encuentran en el territorio de otro Estado con el acuerdo del Estado receptor, en violación de las condiciones establecidas en el acuerdo o toda prolongación de su presencia en dicho territorio después de terminado el acuerdo; f) La acción de un Estado que permite que su territorio, que ha puesto a disposición de otro Estado, sea utilizado por ese otro Estado para perpetrar un acto de agresión contra un tercer Estado; g) El envío por un Estado, o en su nombre, de bandas armadas, grupos irregulares o mercenarios que lleven a cabo actos de fuerza armada contra otro Estado de tal gravedad que sean equiparables a los actos antes enumerados, o su sustancial participación en dichos actos.",
+  "exp": "El ataque contra las fuerzas armadas incluye también la flota mercante o aérea; no la exceptúa.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "3-1",
+  "parT": "2 alos efectos del parrafo 1 por acto de agresion se entendera el uso de la fuerza armada ",
+  "fR": 0.42,
+  "pz": null,
+  "sec": 1,
+  "id": "1-733"
+ },
+ {
+  "lote": "d3",
+  "i": 20,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "9",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. Elementos de los crímenes. ¿Quién NO podrá proponer enmiendas a los Elementos de los crímenes?:",
+  "opciones": [
+   "Cualquier Estado Parte.",
+   "Los magistrados, por mayoría absoluta.",
+   "El fiscal.",
+   "La Asamblea de los Estados Partes."
+  ],
+  "correcta": 3,
+  "lila": "Art. 9 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Los Elementos de los Crímenes ayudarán a la Corte a interpretar y aplicar los artículos 6, 7, 8 y 8 bis del presente Estatuto, serán aprobados por una mayoría de dos tercios de los miembros de la Asamblea de los Estados Partes. 2. Podrán proponer enmiendas a los Elementos de los crímenes: a) Cualquier Estado Parte; b) Los magistrados, por mayoría absoluta; c) El fiscal. Las enmiendas serán aprobadas por una mayoría de dos tercios de los miembros de la Asamblea de los Estados Partes. 3. Los Elementos de los crímenes y sus enmiendas serán compatibles con lo dispuesto en el presente Estatuto.",
+  "exp": "La Asamblea aprueba las enmiendas; proponerlas corresponde a los Estados Partes, los magistrados y el fiscal.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "2-1",
+  "parT": "art 9 1 los elementos de los crimenes ayudaran a la corte a interpretar y aplicar los arti",
+  "fR": 1,
+  "pz": "e-9",
+  "sec": 1,
+  "id": "1-734"
+ },
+ {
+  "lote": "d3",
+  "i": 21,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "15",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. ¿Quién podrá iniciar de oficio una investigación sobre la base de información acerca de un crimen de la competencia de la Corte?:",
+  "opciones": [
+   "La Sala de Primera Instancia.",
+   "La misma Corte.",
+   "El fiscal.",
+   "La Sala de Cuestiones Preliminares."
+  ],
+  "correcta": 2,
+  "lila": "Art. 15 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. El fiscal podrá iniciar de oficio una investigación sobre la base de información acerca de un crimen de la competencia de la Corte. 2. El fiscal analizará la veracidad de la información recibida. Con tal fin, podrá recabar más información de los Estados, los órganos de la Naciones Unidas, las organizaciones intergubernamentales o no gubernamentales u otras fuentes fidedignas que considere apropiadas y podrá recibir testimonios escritos y orales en la sede de la Corte. 3. El fiscal, si llegare a la conclusión de que existe fundamento suficiente para abrir una investigación, presentará a la Sala de Cuestiones Preliminares una petición de autorización para ello, junto con la documentación justificativa que haya reunido. Las víctimas podrán presentar observaciones a la Sala de Cuestiones Preliminares, de conformidad con las Reglas de Procedimiento y Prueba. 4. Si, tras haber examinado la petición y la documentación que la justifique, la Sala de Cuestiones Preliminares considerare que hay fundamento suficiente para abrir una investigación y que el asunto parece corresponder a la competencia de la Corte, autorizará el inicio de la investigación, sin perjuicio de las resoluciones que pueda adoptar posteriormente la Corte con respecto a su competencia y la admisibilidad de la causa. 5. La negativa de la Sala de Cuestiones Preliminares a autorizar la investigación no impedirá que el fiscal presente ulteriormente otra petición basada en nuevos hechos o pruebas relacionadas con la misma situación. 6. Si, después del examen preliminar a que se refieren los párrafos 1 y 2, el fiscal llega a la conclusión de que la información presentada no constituye fundamento suficiente para una investigación, informará de ello a quienes la hubieren presentado. Ello no impedirá que el fiscal examine, a la luz de hechos o pruebas nuevos, otra información que reciba en relación con la misma situación.",
+  "exp": "El fiscal puede iniciar de oficio la investigación.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "7-0",
+  "parT": "art 15 1 el fiscal podra iniciar de oficio una investigacion sobre la base de informacion ",
+  "fR": 1,
+  "pz": "e-15",
+  "sec": 2,
+  "id": "1-735"
+ },
+ {
+  "lote": "d3",
+  "i": 22,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "17",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. Cuestiones de admisibilidad. ¿Cuándo la Corte resolverá la inadmisibilidad de un asunto?:",
+  "opciones": [
+   "Cuando el asunto no sea de gravedad suficiente para justificar la adopción de otras medidas por la Corte.",
+   "Cuando la persona de que se trate haya sido ya enjuiciada por la conducta a que se refiere la denuncia, y la Corte adelante el juicio.",
+   "Cuando el asunto sea objeto de una investigación o enjuiciamiento por un Estado que tenga jurisdicción sobre él, aunque éste no esté dispuesto a llevar a cabo la investigación o el enjuiciamiento o no pueda realmente hacerlo.",
+   "Cuando el asunto haya sido objeto de investigación por un Estado que tenga jurisdicción sobre él y éste haya decidido no incoar acción penal contra la persona de que se trate, aunque la decisión haya obedecido a que no esté dispuesto a llevar a cabo el enjuiciamiento o no pueda realmente hacerlo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 17 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. La Corte, teniendo en cuenta el décimo párrafo del preámbulo y el artículo 1, resolverá la inadmisibilidad de un asunto cuando: a) El asunto sea objeto de una investigación o enjuiciamiento por un Estado que tenga jurisdicción sobre él, salvo que éste no esté dispuesto a llevar a cabo la investigación o el enjuiciamiento o no pueda realmente hacerlo; b) El asunto haya sido objeto de investigación por un Estado que tenga jurisdicción sobre él y éste haya decidido no incoar acción penal contra la persona de que se trate, salvo que la decisión haya obedecido a que no esté dispuesto a llevar a cabo el enjuiciamiento o no pueda realmente hacerlo; c) La persona de que se trate haya sido ya enjuiciada por la conducta a que se refiere la denuncia, y la Corte no pueda adelantar el juicio con arreglo a lo dispuesto en el párrafo 3 del artículo 20; d) El asunto no sea de gravedad suficiente para justificar la adopción de otras medidas por la Corte. 2. A fin de determinar si hay o no disposición a actuar en un asunto determinado, la Corte examinará, teniendo en cuenta los principios de un proceso con las debidas garantías reconocidos por el derecho internacional, si se da una o varias de las siguientes circunstancias, según el caso: a) Que el juicio ya haya estado o esté en marcha o que la decisión nacional haya sido adoptada con el propósito de sustraer a la persona de que se trate de su responsabilidad penal por crímenes de la competencia de la Corte, según lo dispuesto en el artículo 5; b) Que haya habido una demora injustificada en el juicio que, dadas las circunstancias, sea incompatible con la intención de hacer comparecer a la persona de que se trate ante la justicia; c) Que el proceso no haya sido o no esté siendo sustanciado de manera independiente o imparcial y haya sido o esté siendo sustanciado de forma en que, dadas las circunstancias, sea incompatible con la intención de hacer comparecer a la persona de que se trate ante la justicia. 3. A fin de determinar la incapacidad para investigar o enjuiciar en un asunto determinado, la Corte examinará si el Estado, debido al colapso total o sustancial de su administración nacional de justicia o al hecho de que carece de ella, no puede hacer comparecer al acusado, no dispone de las pruebas y los testimonios necesarios o no está por otras razones en condiciones de llevar a cabo el juicio.",
+  "exp": "Es la falta de gravedad suficiente. Las demás invierten las condiciones de las otras letras.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "10-1",
+  "parT": "art 17 1 la corte resolvera la inadmisibilidad de un asunto cuando a el asunto sea objeto ",
+  "fR": 0.63,
+  "pz": "e-17",
+  "sec": 3,
+  "id": "1-736"
+ },
+ {
+  "lote": "d3",
+  "i": 23,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "19",
+    "ap": "6"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. Impugnación de la competencia de la Corte o de la admisibilidad de la causa. ¿A quién será asignada la impugnación de la admisibilidad de una causa o de la competencia de la Corte antes de la confirmación de los cargos?:",
+  "opciones": [
+   "A la Sala de Primera Instancia.",
+   "A la Sala de Apelación.",
+   "Al Fiscal.",
+   "A la Sala de Cuestiones Preliminares."
+  ],
+  "correcta": 3,
+  "lila": "Art. 19.6 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "6. ANTES DE LA CONFIRMACIÓN DE LOS CARGOS: La impugnación de la admisibilidad de una causa o de la competencia de la Corte será asignada a la Sala de Cuestiones Preliminares. DESPUÉS DE CONFIRMADOS LOS CARGOS: Será asignada a la Sala de Primera Instancia. Las decisiones relativas a la competencia o la admisibilidad podrán ser recurridas ante la Sala de Apelaciones de conformidad con el artículo 82.",
+  "exp": "Antes de la confirmación de los cargos, la Sala de Cuestiones Preliminares.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "13-10",
+  "parT": "ola impugnacion de la admisibilidad de una causa o de la competencia de la corte sera asig",
+  "fR": 1,
+  "pz": "e-19",
+  "sec": 3,
+  "id": "1-737"
+ },
+ {
+  "lote": "d3",
+  "i": 24,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "89",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la cooperación internacional y la asistencia judicial. Entrega de personas a la Corte. Respecto al tránsito de personas, señale la opción INCORRECTA:",
+  "opciones": [
+   "El Estado Parte autorizará de conformidad con su derecho procesal el tránsito por su territorio de una persona que otro Estado entregue a la Corte, salvo cuando el tránsito por ese Estado obstaculice o demore la entrega.",
+   "La solicitud de la Corte de que se autorice el tránsito por el territorio de un Estado Parte de una persona que otro Estado entregue a la Corte contendrá: una descripción de la persona que será transportada, una breve exposición de los hechos de la causa y su tipificación, y la orden de detención y entrega.",
+   "No se requerirá autorización alguna cuando la persona sea transportada por vía aérea.",
+   "La persona transportada permanecerá detenida durante el tránsito."
+  ],
+  "correcta": 2,
+  "lila": "Art. 89.3 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "3. a) El Estado Parte autorizará de conformidad con su derecho procesal el tránsito por su territorio de una persona que otro Estado entregue a la Corte, salvo cuando el tránsito por ese Estado obstaculice o demore la entrega; b) La solicitud de la Corte de que se autorice ese tránsito será transmitida de conformidad con el artículo 87 y contendrá: i) Una descripción de la persona que será transportada; ii) Una breve exposición de los hechos de la causa y su tipificación, y iii) La orden de detención y entrega; c) La persona transportada permanecerá detenida durante el tránsito; d) No se requerirá autorización alguna cuando la persona sea transportada por vía aérea y no se prevea aterrizar en el territorio del Estado de tránsito; e) En caso de aterrizaje imprevisto en el territorio del Estado de tránsito, éste podrá pedir a la Corte que presente una solicitud de tránsito con arreglo a lo dispuesto en el apartado b). El Estado de tránsito detendrá a la persona transportada mientras se recibe la solicitud de la Corte y se efectúa el tránsito; sin embargo, la detención no podrá prolongarse más de 96 horas contadas desde el aterrizaje imprevisto si la solicitud no es recibida dentro de ese plazo.",
+  "exp": "La autorización no se requiere en el transporte aéreo solo si además no se prevé aterrizar en el Estado de tránsito.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "24-1-0",
+  "parT": "3 a el estado parte autorizara el transito por su territorio de una persona que otro estad",
+  "fR": 1,
+  "pz": "e-89",
+  "sec": 6,
+  "id": "1-738"
+ },
+ {
+  "lote": "d3",
+  "i": 25,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "102",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la cooperación internacional y la asistencia judicial. ¿Qué se entenderá por «extradición» a los efectos del presente Estatuto?:",
+  "opciones": [
+   "La entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en el Estatuto objeto de la pregunta.",
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el Estatuto objeto de la pregunta.",
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+   "La entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en un tratado o convención o en el derecho interno."
+  ],
+  "correcta": 3,
+  "lila": "Art. 102 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "A los efectos del presente Estatuto: a) Por «entrega» se entenderá la entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el presente Estatuto. b) Por «extradición» se entenderá la entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+  "exp": "Extradición: de un Estado a otro conforme a tratado, convención o derecho interno.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "34-2-0",
+  "parT": "art 102 a los efectos del presente estatuto a por entrega se entendera la entrega de una p",
+  "fR": 1,
+  "pz": "e-102",
+  "sec": 6,
+  "id": "1-739"
+ },
+ {
+  "lote": "d3",
+  "i": 26,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "101",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Principio de la especialidad. Quien haya sido entregado a la Corte en virtud del presente Estatuto no será procesado, castigado o detenido por una conducta anterior a su entrega, ¿salvo qué?:",
+  "opciones": [
+   "Salvo que el interesado consienta expresamente.",
+   "Salvo que el interesado hubiera hecho en el periodo de audiencia una declaración al respecto.",
+   "Salvo que la conducta constituya un delito de los de la competencia de la Corte.",
+   "Salvo que la conducta constituya la base del delito por el cual haya sido entregado. (8) B c."
+  ],
+  "correcta": 3,
+  "lila": "Art. 101 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Quien haya sido entregado a la Corte en virtud del presente Estatuto no será procesado, castigado o detenido por una conducta anterior a su entrega, a menos que ésta constituya la base del delito por el cual haya sido entregado. 2. La Corte podrá pedir al Estado que hizo la entrega que la dispense del cumplimiento de los requisitos establecidos en el párrafo 1 y, si fuere necesario, proporcionará información adicional de conformidad con el artículo 91. Los Estados Partes estarán facultados para dar esa dispensa a la Corte y procurarán hacerlo.",
+  "exp": "La excepción es que la conducta sea la base del delito por el que se hizo la entrega.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "34-1-0",
+  "parT": "art 101 1 quien haya sido entregado a la corte no sera procesado castigado o detenido por ",
+  "fR": 0.71,
+  "pz": "e-101",
+  "sec": 6,
+  "id": "1-740"
+ },
+ {
+  "lote": "d3",
+  "i": 27,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "93",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Los Estados Partes, de conformidad con lo dispuesto en la presente Parte y con los procedimientos de su derecho interno, deberán cumplir las solicitudes de asistencia formuladas por la Corte en relación con investigaciones o enjuiciamientos penales, ¿a qué fin?:",
+  "opciones": [
+   "Transmitir registros y documentos, salvo los registros y documentos oficiales o secretos.",
+   "Facilitar la comparecencia coactiva ante la Corte de testigos o expertos.",
+   "Realizar inspecciones oculares, inclusive la exhumación y el examen de cadáveres y fosas comunes.",
+   "Notificar documentos, salvo documentos judiciales civiles."
+  ],
+  "correcta": 2,
+  "lila": "Art. 93.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Los Estados Partes, de conformidad con lo dispuesto en la presente Parte y con los procedimientos de su derecho interno, deberán cumplir las solicitudes de asistencia formuladas por la Corte en relación con investigaciones o enjuiciamientos penales a fin de: a) Identificar y buscar personas u objetos; b) Practicar pruebas, incluidos los testimonios bajo juramento, y producir pruebas, incluidos los dictámenes e informes periciales que requiera la Corte; c) Interrogar a una persona objeto de investigación o enjuiciamiento; d) Notificar documentos, inclusive los documentos judiciales; e) Facilitar la comparecencia voluntaria ante la Corte de testigos o expertos; f) Proceder al traslado provisional de personas, de conformidad con lo dispuesto en el párrafo; g) Realizar inspecciones oculares, inclusive la exhumación y el examen de cadáveres y fosas comunes; h) Practicar allanamientos y decomisos; i) Transmitir registros y documentos, inclusive registros y documentos oficiales; j) Proteger a víctimas y testigos y preservar pruebas; k) Identificar, determinar el paradero o inmovilizar el producto y los bienes y haberes obtenidos del crimen y de los instrumentos del crimen, o incautarse de ellos, con miras a su decomiso ulterior y sin perjuicio de los derechos de terceros de buena fe, y l) Cualquier otro tipo de asistencia no prohibida por la legislación del Estado requerido y destinada a facilitar la investigación y el enjuiciamiento de crímenes de la competencia de la Corte.",
+  "exp": "Es literal la letra g). Los registros y documentos incluyen los oficiales, la comparecencia es voluntaria y la notificación incluye los documentos judiciales.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "28-7",
+  "parT": "g realizar inspecciones oculares inclusive la exhumacion y el examen de cadaveres y fosas ",
+  "fR": 1,
+  "pz": "e-93",
+  "sec": 6,
+  "id": "1-741"
+ },
+ {
+  "lote": "d3",
+  "i": 28,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "7",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, ¿qué se entenderá por el traslado forzoso de población cuando se cometa como parte de un ataque generalizado o sistemático contra una población civil?:",
+  "opciones": [
+   "Crimen de guerra.",
+   "Crimen de genocidio.",
+   "Crimen de lesa humanidad.",
+   "Ninguna de las opciones es correcta."
+  ],
+  "correcta": 2,
+  "lila": "Art. 7.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. A los efectos del presente Estatuto, se entenderá por «crimen de lesa humanidad» cualquiera de los actos siguientes cuando se cometa como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque: a) Asesinato; b) Exterminio; c) Esclavitud; d) Deportación o traslado forzoso de población; e) Encarcelación u otra privación grave de la libertad física en violación de normas fundamentales de derecho internacional; f) Tortura; g) Violación, esclavitud sexual, prostitución forzada, embarazo forzado, esterilización forzada o cualquier otra forma de violencia sexual de gravedad comparable; h) Persecución de un grupo o colectividad con identidad propia fundada en motivos políticos, raciales, nacionales, étnicos, culturales, religiosos, de género definido en el párrafo 3, u otros motivos universalmente reconocidos como inaceptables con arreglo al derecho internacional, en conexión con cualquier acto mencionado en el presente párrafo o con cualquier crimen de la competencia de la Corte; i) Desaparición forzada de personas; j) El crimen de «apartheid». k) Otros actos inhumanos de carácter similar que causen intencionalmente grandes sufrimientos o atenten gravemente contra la integridad física o la salud mental o física.",
+  "exp": "La deportación o traslado forzoso de población es un crimen de lesa humanidad.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "1-0",
+  "parT": "art 7 1 a los efectos del presente estatuto se entendera por crimen de lesa humanidad cual",
+  "fR": 1,
+  "pz": "e-7",
+  "sec": 1,
+  "id": "1-742"
+ },
+ {
+  "lote": "d3",
+  "i": 29,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "5",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De conformidad con el Estatuto objeto de la pregunta, ¿respecto de qué crímenes la Corte NO tendrá competencia?:",
+  "opciones": [
+   "Respecto de los crímenes de genocidio.",
+   "Respecto de los crímenes contra las gentes.",
+   "Respecto de los crímenes de guerra.",
+   "Respecto de los crímenes de lesa humanidad."
+  ],
+  "correcta": 1,
+  "lila": "Art. 5 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. La competencia de la Corte se limitará a los crímenes más graves de trascendencia para la comunidad internacional en su conjunto. La Corte tendrá competencia, de conformidad con el presente Estatuto, respecto de los siguientes crímenes: a) El crimen de genocidio; b) Los crímenes de lesa humanidad; c) Los crímenes de guerra; d) El crimen de agresión. 2. SUPRIMIDO.",
+  "exp": "Los «crímenes contra las gentes» no figuran entre los de su competencia.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "0-0-0",
+  "parT": "art 5 1 la competencia de la corte se limitara a los crimenes mas graves de trascendencia ",
+  "fR": 0.33,
+  "pz": "e-5",
+  "sec": 1,
+  "id": "1-743"
+ },
+ {
+  "lote": "d3",
+  "i": 31,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "9",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. ¿Quién aprobará las enmiendas a los Elementos de los crímenes?:",
+  "opciones": [
+   "Los magistrados, por mayoría absoluta.",
+   "El Presidente del Tribunal.",
+   "La Asamblea de los Estados Partes.",
+   "El Comité de Ministros."
+  ],
+  "correcta": 2,
+  "lila": "Art. 9 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Los Elementos de los Crímenes ayudarán a la Corte a interpretar y aplicar los artículos 6, 7, 8 y 8 bis del presente Estatuto, serán aprobados por una mayoría de dos tercios de los miembros de la Asamblea de los Estados Partes. 2. Podrán proponer enmiendas a los Elementos de los crímenes: a) Cualquier Estado Parte; b) Los magistrados, por mayoría absoluta; c) El fiscal. Las enmiendas serán aprobadas por una mayoría de dos tercios de los miembros de la Asamblea de los Estados Partes. 3. Los Elementos de los crímenes y sus enmiendas serán compatibles con lo dispuesto en el presente Estatuto.",
+  "exp": "Las aprueba la Asamblea de los Estados Partes por mayoría de dos tercios.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "2-1",
+  "parT": "art 9 1 los elementos de los crimenes ayudaran a la corte a interpretar y aplicar los arti",
+  "fR": 1,
+  "pz": "e-9",
+  "sec": 1,
+  "id": "1-744"
+ },
+ {
+  "lote": "d3",
+  "i": 32,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "19",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. ¿Quién NO podrá impugnar la admisibilidad de la causa o impugnar la competencia de la Corte?:",
+  "opciones": [
+   "El acusado.",
+   "Un Estado que tenga jurisdicción en la causa porque está investigándola o enjuiciándola o tiene intención de hacerlo.",
+   "Un Estado cuya aceptación se requiera.",
+   "La persona contra la cual se haya dictado una orden de detención o una orden de comparecencia."
+  ],
+  "correcta": 1,
+  "lila": "Art. 19.2 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. Podrán impugnar la admisibilidad de la causa, por uno de los motivos mencionados en el artículo 17, o impugnar la competencia de la Corte: a) El acusado o la persona contra la cual se haya dictado una orden de detención o una orden de comparecencia con arreglo al artículo 58; b) Un Estado que tenga jurisdicción en la causa porque está investigándola o enjuiciándola o lo ha hecho antes; o c) U n Estado cuya aceptación se requiera de conformidad con el artículo 12.",
+  "exp": "Puede impugnar el Estado que investiga, enjuicia o lo ha hecho antes; no el que solo «tiene intención» de hacerlo.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "13-3",
+  "parT": "b un estado que tenga jurisdiccion en la causa porque esta investigandola o enjuiciandola ",
+  "fR": 0.78,
+  "pz": "e-19",
+  "sec": 3,
+  "id": "1-745"
+ },
+ {
+  "lote": "d3",
+  "i": 33,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "58",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. En cualquier momento después de iniciada la investigación, la Sala de Cuestiones Preliminares dictará, a solicitud del fiscal, una orden de detención contra una persona si, tras examinar la solicitud y las pruebas y otra información presentada por el fiscal, estuviere convencida de que hay motivo razonable para creer que ha cometido un crimen de la competencia de la Corte, y la detención parece necesaria para una serie de motivos. Indique cuál de los siguientes corresponde con uno de los motivos citados anteriormente:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Para asegurar que la persona comparezca en juicio.",
+   "Para, en su caso, impedir que la persona siga cometiendo ese crimen o un crimen conexo que sea de la competencia de la Corte y tenga su origen en las mismas circunstancias.",
+   "Para asegurar que la persona no obstruya ni ponga en peligro la investigación ni las actuaciones de la Corte."
+  ],
+  "correcta": 0,
+  "lila": "Art. 58.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. En cualquier momento después de iniciada la investigación, la Sala de Cuestiones Preliminares dictará, a solicitud del fiscal, una orden de detención contra una persona si, tras examinar la solicitud y las pruebas y otra información presentadas por el fiscal, estuviere convencida de que: a) Hay motivo razonable para creer que ha cometido un crimen de la competencia de la Corte, y b) La detención parece necesaria para: i) Asegurar que la persona comparezca en juicio; ii) Asegurar que la persona no obstruya ni ponga en peligro la investigación ni las actuaciones de la Corte, o iii) En su caso, impedir que la persona siga cometiendo ese crimen o un crimen conexo que sea de la competencia de la Corte y tenga su origen en las mismas circunstancias.",
+  "exp": "Los tres son motivos que justifican la detención.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "20-5",
+  "parT": "iii en su caso impedir que la persona siga cometiendo ese crimen o un crimen conexo que se",
+  "fR": 0.64,
+  "pz": "e-58",
+  "sec": 5,
+  "id": "1-746"
+ },
+ {
+  "lote": "d3",
+  "i": 34,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "21",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Derecho aplicable. ¿Qué aplicará la Corte en primer lugar?:",
+  "opciones": [
+   "El presente Estatuto, los tratados aplicables y sus Reglas de Procedimiento y Prueba.",
+   "El presente Estatuto, sus Reglas de Procedimiento y Prueba y los principios y normas del derecho internacional.",
+   "El presente Estatuto, los Elementos de los crímenes y sus Reglas de Procedimiento y Prueba.",
+   "El presente Estatuto, los Elementos de los crímenes y los tratados aplicables."
+  ],
+  "correcta": 2,
+  "lila": "Art. 21 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. La Corte aplicará: a) EN PRIMER LUGAR, el presente Estatuto, los Elementos de los crímenes y sus Reglas de Procedimiento y Prueba; b) EN SEGUNDO LUGAR, cuando proceda, los tratados aplicables, los principios y normas del derecho internacional, incluidos los principios establecidos del derecho internacional de los conflictos armados; c) EN SU DEFECTO, los principios generales del derecho que derive la Corte del derecho interno de los sistemas jurídicos del mundo, incluido, cuando proceda, el derecho interno de los Estados que normalmente ejercerían jurisdicción sobre el crimen, siempre que esos principios no sean incompatibles con el presente Estatuto ni con el derecho internacional ni las normas y estándares internacionales reconocidas. 2. La Corte podrá aplicar principios y normas de derecho respecto de los cuales hubiere hecho una interpretación en decisiones anteriores. 3. La aplicación e interpelación del derecho de conformidad con el presente artículo deberá ser compatible con los derechos humanos internacionalmente reconocidos, sin distinción alguna basada en motivos como el género, definido en el párrafo 3 del artículo 7, la edad, la raza, el color, el idioma, religión o el credo, la opinión política o de otra índole, el origen nacional, étnico o social, la posición económica, el nacimiento u otra condición.",
+  "exp": "En primer lugar, el Estatuto, los Elementos de los crímenes y las Reglas de Procedimiento y Prueba.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "14-1-0",
+  "parT": "art 21 1 la corte aplicara a en primer lugar el presente estatuto los elementos de los cri",
+  "fR": 1,
+  "pz": "e-21",
+  "sec": 3,
+  "id": "1-747"
+ },
+ {
+  "lote": "d3",
+  "i": 36,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "9",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. Elementos de los crímenes. Respecto a los elementos de los crímenes, ¿qué competencia ostentará una mayoría de dos tercios de los miembros de la Asamblea de los Estados Parte?:",
+  "opciones": [
+   "Aprobar los elementos de los crímenes y proponer enmiendas a los elementos de los crímenes.",
+   "Exclusivamente aprobar los elementos de los crímenes.",
+   "Aprobar los elementos de los crímenes y aprobar las enmiendas a los elementos de los crímenes.",
+   "Exclusivamente proponer enmiendas a los elementos de los crímenes."
+  ],
+  "correcta": 2,
+  "lila": "Art. 9 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Los Elementos de los Crímenes ayudarán a la Corte a interpretar y aplicar los artículos 6, 7, 8 y 8 bis del presente Estatuto, serán aprobados por una mayoría de dos tercios de los miembros de la Asamblea de los Estados Partes. 2. Podrán proponer enmiendas a los Elementos de los crímenes: a) Cualquier Estado Parte; b) Los magistrados, por mayoría absoluta; c) El fiscal. Las enmiendas serán aprobadas por una mayoría de dos tercios de los miembros de la Asamblea de los Estados Partes. 3. Los Elementos de los crímenes y sus enmiendas serán compatibles con lo dispuesto en el presente Estatuto.",
+  "exp": "La mayoría de dos tercios aprueba los Elementos y sus enmiendas; proponerlas no exige esa mayoría.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "2-1",
+  "parT": "art 9 1 los elementos de los crimenes ayudaran a la corte a interpretar y aplicar los arti",
+  "fR": 1,
+  "pz": "e-9",
+  "sec": 1,
+  "id": "1-748"
+ },
+ {
+  "lote": "d3",
+  "i": 37,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "13",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. Ejercicio de la competencia. La Corte podrá ejercer su competencia respecto de cualquiera de los crímenes a que se refiere el Estatuto objeto de la pregunta, de conformidad con las disposiciones del mismo si:",
+  "opciones": [
+   "El fiscal ha iniciado una investigación respecto de un crimen de la competencia de la Corte.",
+   "El Consejo de Seguridad, actuando con arreglo a lo dispuesto en el Capítulo VII de la Carta de las Naciones Unidas, remite al fiscal una situación en que parezca haberse cometido uno o varios de los crímenes de la competencia de la Corte.",
+   "Todas las opciones son correctas.",
+   "Un Estado Parte remite al fiscal una situación en que parezca haberse cometido uno o varios de los crímenes de la competencia de la Corte."
+  ],
+  "correcta": 2,
+  "lila": "Art. 13 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "La Corte podrá ejercer su competencia respecto de cualquiera de los crímenes a que se refiere el artículo 5 de conformidad con las disposiciones del presente Estatuto si: a) Un Estado Parte remite al fiscal, de conformidad con el artículo 14, una situación en que parezca haberse cometido uno o varios de esos crímenes; b) El Consejo de Seguridad, actuando con arreglo a lo dispuesto en el Capítulo VII de la Carta de las Naciones Unidas, remite al fiscal una situación en que parezca haberse cometido uno o varios de esos crímenes; o c) El fiscal ha iniciado una investigación respecto de un crimen de ese tipo de conformidad con lo dispuesto en el artículo 15.",
+  "exp": "Las tres son vías de activación de la competencia.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "5-6-0",
+  "parT": "art 13 la corte podra ejercer su competencia si a un estado parte remite al fiscal una sit",
+  "fR": 0.76,
+  "pz": "e-13",
+  "sec": 2,
+  "id": "1-749"
+ },
+ {
+  "lote": "d3",
+  "i": 38,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "16",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. Suspensión de la investigación o el enjuiciamiento. ¿Por qué plazo podrá pedir el Consejo de Seguridad que suspenda la Corte la investigación o enjuiciamiento que haya iniciado?:",
+  "opciones": [
+   "Por un plazo de seis meses.",
+   "Por un plazo máximo de seis meses, prorrogables por otros seis meses.",
+   "Por un plazo de doce meses.",
+   "Por un plazo máximo de seis meses."
+  ],
+  "correcta": 2,
+  "lila": "Art. 16 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "En caso de que el Consejo de Seguridad, de conformidad con una resolución aprobada con arreglo a lo dispuesto en el Capítulo VII de la Carta de las Naciones Unidas, pida a la Corte que no inicie o que suspenda por un plazo de doce meses la investigación o el enjuiciamiento que haya iniciado, la Corte procederá a esa suspensión; la petición podrá ser renovada por el Consejo de Seguridad en las mismas condiciones.",
+  "exp": "Por doce meses, petición renovable.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "10-0-0",
+  "parT": "art 16 en caso de que el consejo de seguridad de conformidad con una resolucion aprobada c",
+  "fR": 1,
+  "pz": "e-16",
+  "sec": 2,
+  "id": "1-750"
+ },
+ {
+  "lote": "d3",
+  "i": 39,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "19",
+    "ap": "6"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. Impugnación de la competencia de la Corte o de la admisibilidad de la causa. ¿A quién será asignada la impugnación de la admisibilidad de una causa o de la competencia de la Corte después de confirmados los cargos?:",
+  "opciones": [
+   "A la Sala de Primera Instancia.",
+   "A la Sala de Cuestiones Preliminares.",
+   "A la Sala de Cuestiones Penales.",
+   "A la Sala de Instrucción."
+  ],
+  "correcta": 0,
+  "lila": "Art. 19.6 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "6. ANTES DE LA CONFIRMACIÓN DE LOS CARGOS: La impugnación de la admisibilidad de una causa o de la competencia de la Corte será asignada a la Sala de Cuestiones Preliminares. DESPUÉS DE CONFIRMADOS LOS CARGOS: Será asignada a la Sala de Primera Instancia. Las decisiones relativas a la competencia o la admisibilidad podrán ser recurridas ante la Sala de Apelaciones de conformidad con el artículo 82.",
+  "exp": "Confirmados los cargos, conoce la Sala de Primera Instancia.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "13-12",
+  "parT": "osera asignada a la sala de primera instancia",
+  "fR": 1,
+  "pz": "e-19",
+  "sec": 3,
+  "id": "1-751"
+ },
+ {
+  "lote": "d3",
+  "i": 40,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "55",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Cuando haya motivos para creer que una persona ha cometido un crimen de la competencia de la Corte y esa persona haya de ser interrogada por el fiscal o por las autoridades nacionales, en cumplimiento de una solicitud hecha de conformidad con lo dispuesto en el presente Estatuto, tendrá una serie de derechos, de los que será informada antes del interrogatorio. Señale cuál de los siguientes NO corresponde con uno de los derechos citados anteriormente:",
+  "opciones": [
+   "A guardar silencio, sin que ello pueda tenerse en cuenta a los efectos de determinar su culpabilidad o inocencia.",
+   "A ser asistida por un abogado defensor de su elección o, si no lo tuviere, a que se le asigne un defensor de oficio, siempre que fuere necesario en interés de la justicia, y, en cualquier caso, sin cargo.",
+   "A ser informada de que existen motivos para creer que ha cometido un crimen de la competencia de la Corte.",
+   "A ser interrogada en presencia de su abogado, a menos que haya renunciado voluntariamente a su derecho a asistencia letrada."
+  ],
+  "correcta": 1,
+  "lila": "Art. 55.2 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. Cuando haya motivos para creer que una persona ha cometido un crimen de la competencia de la Corte y esa persona haya de ser interrogada por el fiscal o por las autoridades nacionales, en cumplimiento de una solicitud hecha de conformidad con lo dispuesto en la Parte IX, tendrá además los derechos siguientes, de los que será informada antes del interrogatorio: a) Aser informada de que existen motivos para creer que ha cometido un crimen de la competencia de la Corte; b) Aguardar silencio, sin que ello pueda tenerse en cuenta a los efectos de determinar su culpabilidad o inocencia; c) Aser asistida por un abogado defensor de su elección o, si no lo tuviere, a que se le asigne un defensor de oficio, siempre que fuere necesario en interés de la justicia, y, en cualquier caso, sin cargo si careciere de medios suficientes, y d) Aser interrogada en presencia de su abogado, a menos que haya renunciado voluntariamente a su derecho a asistencia letrada.",
+  "exp": "La asignación de defensor de oficio es sin cargo cuando la persona carece de medios suficientes, no en cualquier caso.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "17-8",
+  "parT": "c a ser asistida por un abogado defensor de su eleccion o si no lo tuviere a que se le asi",
+  "fR": 1,
+  "pz": "e-55",
+  "sec": 4,
+  "id": "1-752"
+ },
+ {
+  "lote": "d3",
+  "i": 41,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "93",
+    "ap": "7"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la cooperación internacional y la asistencia judicial. otras formas de cooperación. Respecto al traslado provisional de un detenido, señale la opción INCORRECTA:",
+  "opciones": [
+   "El traslado podrá realizarse siempre que el detenido dé, libremente y con conocimiento de causa, su consentimiento, o que el Estado requerido demande el traslado.",
+   "La persona trasladada permanecerá detenida.",
+   "Una vez cumplidos los fines del traslado, la Corte devolverá a la persona trasladada sin dilación al Estado requerido.",
+   "La Corte podrá solicitar el traslado provisional de un detenido a los fines de su identificación o de que preste testimonio o asistencia de otra índole."
+  ],
+  "correcta": 0,
+  "lila": "Art. 93.7 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "7. a) La Corte podrá solicitar el traslado provisional de un detenido a los fines de su identificación o de que preste testimonio o asistencia de otra índole. El traslado podrá realizarse siempre que: i) El detenido dé, libremente y con conocimiento de causa, su consentimiento, y ii) El Estado requerido lo acepte, con sujeción a las condiciones que hubiere acordado con la Corte. b) La persona trasladada permanecerá detenida. Una vez cumplidos los fines del traslado, la Corte la devolverá sin dilación al Estado requerido.",
+  "exp": "Hace falta el consentimiento del detenido y que el Estado requerido esté de acuerdo; no que este lo «demande» como alternativa.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "28-18",
+  "parT": "a la corte podra solicitar el traslado provisional de un detenido a los fines de su identi",
+  "fR": 0.59,
+  "pz": "e-93",
+  "sec": 6,
+  "id": "1-753"
+ },
+ {
+  "lote": "d3",
+  "i": 42,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "102",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, ¿qué se entenderá por \"entrega\"?:",
+  "opciones": [
+   "La entrega de una persona por la Corte a un Estado de conformidad con lo dispuesto en un tratado o convención.",
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en un tratado o convención.",
+   "La entrega de una persona por la Corte a un Estado de conformidad con lo dispuesto en el presente Estatuto.",
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el presente Estatuto."
+  ],
+  "correcta": 3,
+  "lila": "Art. 102 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "A los efectos del presente Estatuto: a) Por «entrega» se entenderá la entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el presente Estatuto. b) Por «extradición» se entenderá la entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+  "exp": "Entrega: de un Estado a la Corte conforme al Estatuto.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "34-2-0",
+  "parT": "art 102 a los efectos del presente estatuto a por entrega se entendera la entrega de una p",
+  "fR": 1,
+  "pz": "e-102",
+  "sec": 6,
+  "id": "1-754"
+ },
+ {
+  "lote": "d3",
+  "i": 43,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "102",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la cooperación internacional y la asistencia judicial. A los efectos del presente Estatuto, ¿qué se entenderá por «entrega»?:",
+  "opciones": [
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+   "La entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+   "La entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en el Estatuto objeto de la pregunta.",
+   "La entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el Estatuto objeto de la pregunta."
+  ],
+  "correcta": 3,
+  "lila": "Art. 102 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "A los efectos del presente Estatuto: a) Por «entrega» se entenderá la entrega de una persona por un Estado a la Corte de conformidad con lo dispuesto en el presente Estatuto. b) Por «extradición» se entenderá la entrega de una persona por un Estado a otro Estado de conformidad con lo dispuesto en un tratado o convención o en el derecho interno.",
+  "exp": "Entrega: de un Estado a la Corte conforme al Estatuto.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "34-2-0",
+  "parT": "art 102 a los efectos del presente estatuto a por entrega se entendera la entrega de una p",
+  "fR": 0.78,
+  "pz": "e-102",
+  "sec": 6,
+  "id": "1-755"
+ },
+ {
+  "lote": "d3",
+  "i": 44,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "16",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. ¿Quién podrá pedir a la Corte que no inicie o que suspenda por un plazo de doce meses la investigación o el enjuiciamiento que haya iniciado?:",
+  "opciones": [
+   "La Asamblea de los Estados Parte.",
+   "El Consejo de Seguridad.",
+   "El fiscal.",
+   "El Comité de Ministros."
+  ],
+  "correcta": 1,
+  "lila": "Art. 16 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "En caso de que el Consejo de Seguridad, de conformidad con una resolución aprobada con arreglo a lo dispuesto en el Capítulo VII de la Carta de las Naciones Unidas, pida a la Corte que no inicie o que suspenda por un plazo de doce meses la investigación o el enjuiciamiento que haya iniciado, la Corte procederá a esa suspensión; la petición podrá ser renovada por el Consejo de Seguridad en las mismas condiciones.",
+  "exp": "El Consejo de Seguridad.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "10-0-1",
+  "parT": "art 16 en caso de que el consejo de seguridad de conformidad con una resolucion aprobada c",
+  "fR": 1,
+  "pz": "e-16",
+  "sec": 2,
+  "id": "1-756"
+ },
+ {
+  "lote": "d3",
+  "i": 45,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "15 bis",
+    "ap": "5"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. Ejercicio de la competencia respecto del crimen de agresión. ¿Cuándo la Corte NO ejercerá su competencia respecto del crimen de agresión respecto de un Estado no Parte en el Estatuto objeto de la pregunta?:",
+  "opciones": [
+   "Cuando el crimen de agresión sea cometido contra los nacionales del Estado no Parte o en el territorio del mismo.",
+   "Cuando el crimen de agresión sea cometido por los nacionales del Estado no Parte o en el territorio del mismo.",
+   "Cuando el crimen de agresión sea cometido por los nacionales del Estado no Parte, pero sí será competente si se ha producido en el territorio del mismo.",
+   "Cuando el crimen de agresión sea cometido contra los nacionales del Estado no Parte, pero sí será competente si se ha producido en el territorio del mismo."
+  ],
+  "correcta": 1,
+  "lila": "Art. 15 bis.5 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "5. Respecto de un Estado no Parte en el presente Estatuto, la Corte no ejercerá su competencia respecto del crimen de agresión cuando éste sea cometido por los nacionales de ese Estado o en el territorio del mismo.",
+  "exp": "No la ejerce cuando el crimen lo cometen nacionales de ese Estado o se comete en su territorio.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "7-2-0",
+  "parT": "5 respecto de un estado no parte en el presente estatuto la corte no ejercera su competenc",
+  "fR": 1,
+  "pz": null,
+  "sec": 2,
+  "id": "1-757"
+ },
+ {
+  "lote": "d3",
+  "i": 46,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "20",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la competencia, la admisibilidad y el derecho aplicable. Cosa juzgada. ¿Quién será procesado por la Corte en razón de conductas constitutivas de crímenes por los cuales ya hubiere sido condenado o absuelto por la Corte?:",
+  "opciones": [
+   "Nadie, cuando el Estatuto objeto de la pregunta lo disponga.",
+   "Todos, cuando el Estatuto objeto de la pregunta lo disponga.",
+   "Nadie, salvo que el Estatuto objeto de la pregunta disponga otra cosa.",
+   "Todos, salvo que el Estatuto objeto de la pregunta disponga otra cosa."
+  ],
+  "correcta": 2,
+  "lila": "Art. 20.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Salvo que el presente Estatuto se disponga otra cosa, nadie será procesado por la Corte en razón de conductas constitutivas de crímenes por los cuales ya hubiere sido condenado o absuelto por la Corte.",
+  "exp": "Nadie, salvo que el propio Estatuto disponga otra cosa.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "14-0",
+  "parT": "art 20 1 nadie sera procesado por la corte en razon de conductas constitutivas de crimenes",
+  "fR": 0.13,
+  "pz": "e-20",
+  "sec": 3,
+  "id": "1-758"
+ },
+ {
+  "lote": "d3",
+  "i": 47,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "89",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Entrega de personas a la Corte. En caso de aterrizaje imprevisto en el territorio del Estado de tránsito, éste podrá pedir a la Corte que presente una solicitud de tránsito. El Estado de tránsito detendrá a la persona transportada mientras se recibe la solicitud de la Corte y se efectúa el tránsito; sin embargo, la detención no podrá prolongarse más de __________ contadas desde el aterrizaje imprevisto si la solicitud no es recibida dentro de ese plazo:",
+  "opciones": [
+   "Noventa y seis horas.",
+   "Cuarenta y ocho horas.",
+   "Setenta y dos horas.",
+   "Veinticuatro horas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 89.3 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "3. a) El Estado Parte autorizará de conformidad con su derecho procesal el tránsito por su territorio de una persona que otro Estado entregue a la Corte, salvo cuando el tránsito por ese Estado obstaculice o demore la entrega; b) La solicitud de la Corte de que se autorice ese tránsito será transmitida de conformidad con el artículo 87 y contendrá: i) Una descripción de la persona que será transportada; ii) Una breve exposición de los hechos de la causa y su tipificación, y iii) La orden de detención y entrega; c) La persona transportada permanecerá detenida durante el tránsito; d) No se requerirá autorización alguna cuando la persona sea transportada por vía aérea y no se prevea aterrizar en el territorio del Estado de tránsito; e) En caso de aterrizaje imprevisto en el territorio del Estado de tránsito, éste podrá pedir a la Corte que presente una solicitud de tránsito con arreglo a lo dispuesto en el apartado b). El Estado de tránsito detendrá a la persona transportada mientras se recibe la solicitud de la Corte y se efectúa el tránsito; sin embargo, la detención no podrá prolongarse más de 96 horas contadas desde el aterrizaje imprevisto si la solicitud no es recibida dentro de ese plazo.",
+  "exp": "El límite es de noventa y seis horas.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "24-1-1",
+  "parT": "3 a el estado parte autorizara el transito por su territorio de una persona que otro estad",
+  "fR": 0.33,
+  "pz": "e-89",
+  "sec": 6,
+  "id": "1-759"
+ },
+ {
+  "lote": "d3",
+  "i": 48,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "58",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. En cualquier momento después de iniciada la investigación, ¿quién podrá dictar una orden de detención contra una persona?:",
+  "opciones": [
+   "La Sala de Cuestiones Preliminares.",
+   "La mayoría absoluta de los magistrados.",
+   "La Sala de Primera Instancia.",
+   "El fiscal de la Corte."
+  ],
+  "correcta": 0,
+  "lila": "Art. 58.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. En cualquier momento después de iniciada la investigación, la Sala de Cuestiones Preliminares dictará, a solicitud del fiscal, una orden de detención contra una persona si, tras examinar la solicitud y las pruebas y otra información presentadas por el fiscal, estuviere convencida de que: a) Hay motivo razonable para creer que ha cometido un crimen de la competencia de la Corte, y b) La detención parece necesaria para: i) Asegurar que la persona comparezca en juicio; ii) Asegurar que la persona no obstruya ni ponga en peligro la investigación ni las actuaciones de la Corte, o iii) En su caso, impedir que la persona siga cometiendo ese crimen o un crimen conexo que sea de la competencia de la Corte y tenga su origen en las mismas circunstancias.",
+  "exp": "La dicta la Sala de Cuestiones Preliminares a solicitud del fiscal.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "20-0",
+  "parT": "art 58 1 en cualquier momento despues de iniciada la investigacion la sala de cuestiones p",
+  "fR": 1,
+  "pz": "e-58",
+  "sec": 5,
+  "id": "1-760"
+ },
+ {
+  "lote": "d3",
+  "i": 200,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "15 bis",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Ejercicio de la competencia respecto del crimen de agresión, señale la opción CORRECTA:",
+  "opciones": [
+   "Respecto de un Estado no Parte en el presente Estatuto, la Corte no ejercerá su competencia respecto del crimen de agresión cuando éste sea cometido por los nacionales de ese Estado o en el territorio del mismo.",
+   "La Corte únicamente podrá ejercer su competencia respecto de crímenes de agresión cometidos seis meses después de la ratificación o aceptación de las enmiendas por treinta Estados Partes.",
+   "El Fiscal, si llegare a la conclusión de que existe fundamento razonable para iniciar una investigación sobre un crimen de agresión, verificará en primer lugar si la Corte ha determinado la existencia de un acto de agresión cometido por el Estado de que se trate. El Fiscal notificará al Secretario General de las Naciones Unidas la situación ante la Corte, adjuntando la documentación y otros antecedentes que sean pertinentes.",
+   "La Corte podrá ejercer su competencia sobre un crimen de agresión, resultante de un acto de agresión cometido por un Estado Parte, salvo que ese Estado Parte haya declarado previamente que no acepta esa competencia mediante el depósito de una declaración en poder del Secretario. La retirada de esa declaración podrá efectuarse en cualquier momento y será considerada por el Estado Parte en un plazo de un año."
+  ],
+  "correcta": 0,
+  "lila": "Art. 15 bis · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. La Corte podrá ejercer su competencia respecto del crimen de agresión de conformidad con los apartados a) yc) del artículo 13 (denuncia de un Estado o iniciativa del Fiscal), con sujeción a las disposiciones de este artículo. 2. La Corte únicamente podrá ejercer su competencia respecto de crímenes de agresión cometidos un año después de la ratificación o aceptación de las enmiendas por treinta Estados Partes. 3. La Corte ejercerá su competencia respecto del crimen de agresión de conformidad con el presente artículo, a condición de que se adopte una decisión después del 1° de enero de 2017 por la misma mayoría de Estados Partes que se requiere para la aprobación de una enmienda al Estatuto (mayoría de 2/3). 4. La Corte podrá, de conformidad con el artículo 12, ejercer su competencia sobre un crimen de agresión, resultante de un acto de agresión cometido por un Estado Parte, salvo que ese Estado Parte haya declarado previamente que no acepta esa competencia mediante el depósito de una declaración en poder del Secretario. La retirada de esa declaración podrá efectuarse en cualquier momento y será considerada por el Estado Parte en un plazo de tres años. 5. Respecto de un Estado no Parte en el presente Estatuto, la Corte no ejercerá su competencia respecto del crimen de agresión cuando éste sea cometido por los nacionales de ese Estado o en el territorio del mismo. 6. El Fiscal, si llegare a la conclusión de que existe fundamento razonable para iniciar una investigación sobre un crimen de agresión, verificará en primer lugar si el Consejo de Seguridad ha determinado la existencia de un acto de agresión cometido por el Estado de que se trate. El Fiscal notificará al Secretario General de las Naciones Unidas la situación ante la Corte, adjuntando la documentación y otros antecedentes que sean pertinentes. 7. Cuando el Consejo de Seguridad haya realizado dicha determinación, el Fiscal podrá iniciar la investigación acerca de un crimen de agresión. 8. Cuando no se realice dicha determinación en el plazo de seis meses desde la fecha de notificación, el Fiscal podrá iniciar los procedimientos de investigación respecto de un crimen de agresión, siempre y cuando la Sección de Cuestiones Preliminares, de conformidad con el procedimiento contenido en el artículo 15, haya autorizado el inicio de la investigación sobre un crimen de agresión, y el Consejo de Seguridad no haya decidido lo contrario de conformidad con el artículo 16. 9. La determinación de que hubo acto de agresión realizada por un órgano ajeno a la Corte no irá en perjuicio de las propias conclusiones de la Corte en virtud del presente Estatuto. 10. El presente artículo se entenderá sin perjuicio de las disposiciones correspondientes al ejercicio de la competencia respecto de otros crímenes a los que se hace referencia en el artículo 5.",
+  "exp": "Es literal el apartado 5. Son un año (no seis meses), lo verifica el Consejo de Seguridad y el plazo de retirada es de tres años.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "7-1",
+  "parT": "art 15 bis 2 la corte unicamente podra ejercer su competencia respecto de crimenes de agre",
+  "fR": 0.64,
+  "pz": null,
+  "sec": 2,
+  "id": "1-761"
+ },
+ {
+  "lote": "d3",
+  "i": 201,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "21",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Derecho aplicable. La Corte aplicará:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "En segundo lugar, cuando proceda, los tratados aplicables, los principios y normas del derecho internacional, incluidos los principios establecidos del derecho internacional de los conflictos armados.",
+   "En su defecto, los principios generales del derecho que derive la Corte del derecho interno de los sistemas jurídicos del mundo, incluido, cuando proceda, el derecho interno de los Estados que normalmente ejercerían jurisdicción sobre el crimen, siempre que esos principios no sean incompatibles con el presente Estatuto ni con el derecho internacional ni las normas y estándares internacionales reconocidas.",
+   "En primer lugar, el presente Estatuto, los Elementos de los crímenes y sus Reglas de Procedimiento y Prueba."
+  ],
+  "correcta": 0,
+  "lila": "Art. 21 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. La Corte aplicará: a) EN PRIMER LUGAR, el presente Estatuto, los Elementos de los crímenes y sus Reglas de Procedimiento y Prueba; b) EN SEGUNDO LUGAR, cuando proceda, los tratados aplicables, los principios y normas del derecho internacional, incluidos los principios establecidos del derecho internacional de los conflictos armados; c) EN SU DEFECTO, los principios generales del derecho que derive la Corte del derecho interno de los sistemas jurídicos del mundo, incluido, cuando proceda, el derecho interno de los Estados que normalmente ejercerían jurisdicción sobre el crimen, siempre que esos principios no sean incompatibles con el presente Estatuto ni con el derecho internacional ni las normas y estándares internacionales reconocidas. 2. La Corte podrá aplicar principios y normas de derecho respecto de los cuales hubiere hecho una interpretación en decisiones anteriores. 3. La aplicación e interpelación del derecho de conformidad con el presente artículo deberá ser compatible con los derechos humanos internacionalmente reconocidos, sin distinción alguna basada en motivos como el género, definido en el párrafo 3 del artículo 7, la edad, la raza, el color, el idioma, religión o el credo, la opinión política o de otra índole, el origen nacional, étnico o social, la posición económica, el nacimiento u otra condición.",
+  "exp": "Las tres reproducen el orden de fuentes del artículo 21.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "14-1-0",
+  "parT": "art 21 1 la corte aplicara a en primer lugar el presente estatuto los elementos de los cri",
+  "fR": 0.63,
+  "pz": "e-21",
+  "sec": 3,
+  "id": "1-762"
+ },
+ {
+  "lote": "d3",
+  "i": 202,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "89",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Respecto a la entrega de personas a la Corte, señale la opción INCORRECTA:",
+  "opciones": [
+   "No se requerirá autorización alguna cuando la persona sea transportada por vía aérea y no se prevea aterrizar en el territorio del Estado de tránsito.",
+   "El Estado Parte autorizará de conformidad con su derecho procesal el tránsito por su territorio de una persona que otro Estado entregue a la Corte, salvo cuando el tránsito por ese Estado obstaculice o demore la entrega.",
+   "En caso de aterrizaje imprevisto en el territorio del Estado de tránsito, éste podrá pedir a la Corte que presente una solicitud de tránsito con arreglo a lo dispuesto en el presente Estatuto. El Estado de tránsito detendrá a la persona transportada mientras se recibe la solicitud de la Corte y se efectúa el tránsito; sin embargo, la detención no podrá prolongarse más de 72 horas contadas desde el aterrizaje imprevisto si la solicitud no es recibida dentro de ese plazo.",
+   "La persona transportada permanecerá detenida durante el tránsito."
+  ],
+  "correcta": 2,
+  "lila": "Art. 89.3 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "3. a) El Estado Parte autorizará de conformidad con su derecho procesal el tránsito por su territorio de una persona que otro Estado entregue a la Corte, salvo cuando el tránsito por ese Estado obstaculice o demore la entrega; b) La solicitud de la Corte de que se autorice ese tránsito será transmitida de conformidad con el artículo 87 y contendrá: i) Una descripción de la persona que será transportada; ii) Una breve exposición de los hechos de la causa y su tipificación, y iii) La orden de detención y entrega; c) La persona transportada permanecerá detenida durante el tránsito; d) No se requerirá autorización alguna cuando la persona sea transportada por vía aérea y no se prevea aterrizar en el territorio del Estado de tránsito; e) En caso de aterrizaje imprevisto en el territorio del Estado de tránsito, éste podrá pedir a la Corte que presente una solicitud de tránsito con arreglo a lo dispuesto en el apartado b). El Estado de tránsito detendrá a la persona transportada mientras se recibe la solicitud de la Corte y se efectúa el tránsito; sin embargo, la detención no podrá prolongarse más de 96 horas contadas desde el aterrizaje imprevisto si la solicitud no es recibida dentro de ese plazo.",
+  "exp": "El plazo máximo es de 96 horas, no de 72.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "24-1-0",
+  "parT": "3 a el estado parte autorizara el transito por su territorio de una persona que otro estad",
+  "fR": 0.9,
+  "pz": "e-89",
+  "sec": 6,
+  "id": "1-763"
+ },
+ {
+  "lote": "d3",
+  "i": 204,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "55",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. Derechos de las personas durante la investigación. En las investigaciones realizadas de conformidad con el presente Estatuto, señale la opción INCORRECTA:",
+  "opciones": [
+   "Nadie será sometido a forma alguna de coacción, intimidación o amenaza, a torturas ni a otros tratos o castigos crueles, inhumanos o degradantes.",
+   "Nadie será sometido a arresto o detención arbitrarios ni será privado de su libertad salvo por los motivos previstos en el presente Estatuto y de conformidad con los procedimientos establecidos en el derecho interno del Estado Parte de detención.",
+   "Quien haya de ser interrogado en un idioma que no sea el que comprende y habla perfectamente contará, sin cargo alguno, con los servicios de un intérprete competente y las traducciones que sean necesarias a los efectos de cumplir el requisito de equidad.",
+   "Nadie será obligado a declarar contra sí mismo ni a declararse culpable."
+  ],
+  "correcta": 1,
+  "lila": "Art. 55.1 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. En las investigaciones realizadas de conformidad con el presente Estatuto: a) Nadie será obligado a declarar contra sí mismo ni a declararse culpable; b) Nadie será sometido a forma alguna de coacción, intimidación o amenaza, a torturas ni a otros tratos o castigos crueles, inhumanos o degradantes; c) Quien haya de ser interrogado en un idioma que no sea el que comprende y habla perfectamente contará, sin cargo alguno, con los servicios de un intérprete competente y las traducciones que sean necesarias a los efectos de cumplir el requisito de equidad, y d) Nadie será sometido a arresto o detención arbitrarios ni será privado de su libertad salvo por los motivos previstos en el presente Estatuto y de conformidad con los procedimientos establecidos en él.",
+  "exp": "Los procedimientos son los establecidos en el propio Estatuto, no en el derecho interno del Estado de detención.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "17-4",
+  "parT": "d nadie sera sometido a arresto o detencion arbitrarios ni sera privado de su libertad sal",
+  "fR": 0.83,
+  "pz": "e-55",
+  "sec": 4,
+  "id": "1-764"
+ },
+ {
+  "lote": "d3",
+  "i": 205,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "7",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, se entenderá por «crimen de lesa humanidad» una serie de actos cuando se cometan como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque. Uno de los actos citados anteriormente será el \"embarazo forzoso\". A los efectos citados, ¿qué se entenderá por \"embarazo forzoso\"?:",
+  "opciones": [
+   "El confinamiento de una mujer a la que se ha dejado embarazada por la fuerza o no, con la intención de modificar la composición étnica de una población.",
+   "El confinamiento ilícito de una mujer a la que se ha dejado embarazada por la fuerza, con la intención de modificar la composición étnica de una población o de cometer otras violaciones graves del derecho internacional.",
+   "El confinamiento ilícito de una mujer a la que se ha dejado embarazada por la fuerza o no, con la intención de modificar la composición étnica de una población o de cometer otras violaciones graves del derecho internacional.",
+   "El confinamiento de una mujer a la que se ha dejado embarazada por la fuerza, con la intención de cometer violaciones graves del derecho internacional."
+  ],
+  "correcta": 1,
+  "lila": "Art. 7.2 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. A los efectos del párrafo 1: a) Por «ataque contra una población civil» se entenderá una línea de conducta que implique la comisión múltiple de actos mencionados en el párrafo 1 contra una población civil, de conformidad con la política de un Estado o de una organización de cometer ese ataque o para promover esa política; b) El «exterminio» comprenderá la imposición intencional de condiciones de vida, entre otras, la privación del acceso a alimentos o medicinas encaminadas a causar la destrucción de parte de una población; c) Por «esclavitud» se entenderá el ejercicio de los atributos del derecho de propiedad sobre una persona, o de algunos de ellos, incluido el ejercicio de esos atributos en el tráfico de personas, en particular mujeres y niños; d) Por «deportación o traslado forzoso de población» se entenderá el desplazamiento forzoso de las personas afectadas, por expulsión u otros actos coactivos, de la zona en que estén legítimamente presentes, sin motivos autorizados por el derecho internacional; e) Por «tortura» se entenderá causar intencionalmente dolor o sufrimientos graves, ya sean físicos o mentales, a una persona que el acusado tenga bajo su custodia o control; sin embargo, no se entenderá por tortura el dolor o los sufrimientos que se deriven únicamente de sanciones lícitas o que sean consecuencia normal o fortuita de ellas; f) Por «embarazo forzado» se entenderá el confinamiento ilícito de una mujer a la que se ha dejado embarazada por la fuerza, con la intención de modificar la composición étnica de una población o de cometer otras violaciones graves del derecho internacional. En modo alguno se entenderá que esta definición afecta a las normas de derecho interno relativas al embarazo; g) Por «persecución» se entenderá la privación intencional y grave de derechos fundamentales en contravención del derecho internacional en razón de la identidad del grupo o de la colectividad. h) Por el crimen de «apartheid» se entenderán los actos inhumanos de carácter similar a los mencionados en el párrafo 1 cometidos en el contexto de un régimen institucionalizado de opresión y dominación sistemáticas de un grupo racial sobre uno o más grupos raciales y con la intención de mantener ese régimen; i) Por «desaparición forzada de personas» se entenderá la aprehensión, la detención o el secuestro de personas por un Estado o una organización política o con su autorización, apoyo o aquiescencia, seguido de la negativa a admitir tal privación de libertad o dar información sobre la suerte o el paradero de esas personas, con la intención de dejarlas fuera del amparo de la ley por un período prolongado.",
+  "exp": "Es la definición: confinamiento ilícito, embarazo por la fuerza e intención de modificar la composición étnica o cometer otras violaciones graves.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "1-18",
+  "parT": "f por embarazo forzado se entendera el confinamiento ilicito de una mujer a la que se ha d",
+  "fR": 1,
+  "pz": "e-7",
+  "sec": 1,
+  "id": "1-765"
+ },
+ {
+  "lote": "d3",
+  "i": 206,
+  "v": "v07",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "7",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, se entenderá por «crimen de lesa humanidad» una serie de actos cuando se cometan como parte de un ataque generalizado o sistemático contra una población civil y con conocimiento de dicho ataque. Uno de los actos citados anteriormente será la \"desaparición forzada de personas\". A los efectos citados, ¿qué se entenderá por \"desaparición forzada de personas\"?:",
+  "opciones": [
+   "La detención de personas por un Estado o una organización política o con su autorización, apoyo o aquiescencia, seguido de la negativa a admitir tal privación de libertad o dar información sobre la suerte o el paradero de esas personas.",
+   "Ninguna de las opciones es correcta.",
+   "El secuestro de personas por un Estado o una organización política o con su autorización, apoyo o aquiescencia, seguido de la negativa a admitir tal privación de libertad o dar información sobre la suerte o el paradero de esas personas, con la intención de dejarlas fuera del amparo de la ley.",
+   "La aprehensión de personas por un Estado o una organización criminal o con su autorización, apoyo o aquiescencia, seguido de la negativa a admitir tal privación de libertad o dar información sobre la suerte o el paradero de esas personas, con la intención de dejarlas fuera del amparo de la ley por un período prolongado."
+  ],
+  "correcta": 1,
+  "lila": "Art. 7.2 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. A los efectos del párrafo 1: a) Por «ataque contra una población civil» se entenderá una línea de conducta que implique la comisión múltiple de actos mencionados en el párrafo 1 contra una población civil, de conformidad con la política de un Estado o de una organización de cometer ese ataque o para promover esa política; b) El «exterminio» comprenderá la imposición intencional de condiciones de vida, entre otras, la privación del acceso a alimentos o medicinas encaminadas a causar la destrucción de parte de una población; c) Por «esclavitud» se entenderá el ejercicio de los atributos del derecho de propiedad sobre una persona, o de algunos de ellos, incluido el ejercicio de esos atributos en el tráfico de personas, en particular mujeres y niños; d) Por «deportación o traslado forzoso de población» se entenderá el desplazamiento forzoso de las personas afectadas, por expulsión u otros actos coactivos, de la zona en que estén legítimamente presentes, sin motivos autorizados por el derecho internacional; e) Por «tortura» se entenderá causar intencionalmente dolor o sufrimientos graves, ya sean físicos o mentales, a una persona que el acusado tenga bajo su custodia o control; sin embargo, no se entenderá por tortura el dolor o los sufrimientos que se deriven únicamente de sanciones lícitas o que sean consecuencia normal o fortuita de ellas; f) Por «embarazo forzado» se entenderá el confinamiento ilícito de una mujer a la que se ha dejado embarazada por la fuerza, con la intención de modificar la composición étnica de una población o de cometer otras violaciones graves del derecho internacional. En modo alguno se entenderá que esta definición afecta a las normas de derecho interno relativas al embarazo; g) Por «persecución» se entenderá la privación intencional y grave de derechos fundamentales en contravención del derecho internacional en razón de la identidad del grupo o de la colectividad. h) Por el crimen de «apartheid» se entenderán los actos inhumanos de carácter similar a los mencionados en el párrafo 1 cometidos en el contexto de un régimen institucionalizado de opresión y dominación sistemáticas de un grupo racial sobre uno o más grupos raciales y con la intención de mantener ese régimen; i) Por «desaparición forzada de personas» se entenderá la aprehensión, la detención o el secuestro de personas por un Estado o una organización política o con su autorización, apoyo o aquiescencia, seguido de la negativa a admitir tal privación de libertad o dar información sobre la suerte o el paradero de esas personas, con la intención de dejarlas fuera del amparo de la ley por un período prolongado.",
+  "exp": "La definición habla de aprehensión, detención o secuestro por un Estado u organización política, con intención de dejar fuera del amparo de la ley por un período prolongado; cada opción pierde o cambia algún elemento.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "1-21",
+  "parT": "i por desaparicion forzada de personas se entendera la aprehension la detencion o el secue",
+  "fR": 0.96,
+  "pz": "e-7",
+  "sec": 1,
+  "id": "1-766"
+ },
+ {
+  "lote": "d3",
+  "i": 207,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "8",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. La Corte tendrá competencia respecto de los crímenes de guerra, en particular, cuando se cometan como parte de un plan o política o como parte de la comisión en gran escala de tales crímenes. A los efectos del presente Estatuto, se entiende por «crímenes de guerra» las infracciones graves de los Convenios de Ginebra, a saber, una serie de actos contra personas o bienes protegidos por las disposiciones del Convenio de Ginebra pertinente. Señale cuál se trata de uno de los actos citados anteriormente:",
+  "opciones": [
+   "El homicidio.",
+   "La destrucción y la apropiación de bienes efectuadas a gran escala, ilícita y arbitrariamente.",
+   "La toma de rehenes.",
+   "La deportación, el traslado o el confinamiento."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. A los efectos del presente Estatuto, se entiende por «crímenes de guerra»: a) Infracciones graves de los Convenios de Ginebra de 12 de agosto de 1949, a saber, cualquiera de los siguientes actos contra personas o bienes protegidos por las disposiciones del Convenio de Ginebra pertinente: i) El homicidio intencional; ii) La tortura o los tratos inhumanos, incluidos los experimentos biológicos; iii) El hecho de causar deliberadamente grandes sufrimientos o de atentar gravemente contra la integridad física o la salud; iv) La destrucción y la apropiación de bienes, no justificadas por necesidades militares, y efectuadas a gran escala, ilícita y arbitrariamente; v) El hecho de forzar a un prisionero de guerra o a otras personas protegidas a servir en las fuerzas de una Potencia enemiga; vi) El hecho de privar deliberadamente a un prisionero de guerra o a otra persona protegida de su derecho a ser juzgado legítima e imparcialmente; vii) La deportación o el traslado ilegal, o el confinamiento ilegal; viii) La toma de rehenes;",
+  "exp": "La toma de rehenes es literal; las otras omiten «intencional», «no justificadas por necesidades militares» o «ilegal».",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "1-33",
+  "parT": "viii la toma de rehenes",
+  "fR": 1,
+  "pz": "e-8",
+  "sec": 1,
+  "id": "1-767"
+ },
+ {
+  "lote": "d3",
+  "i": 208,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "8",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. La Corte tendrá competencia respecto de los crímenes de guerra, en particular, cuando se cometan como parte de un plan o política o como parte de la comisión en gran escala de tales crímenes. A los efectos del presente Estatuto, se entiende por «crímenes de guerra» las infracciones graves de los Convenios de Ginebra, a saber, una serie de actos contra personas o bienes protegidos por las disposiciones del Convenio de Ginebra pertinente. Señale cuál NO se trata de uno de los actos citados anteriormente:",
+  "opciones": [
+   "El hecho de causar deliberadamente grandes sufrimientos o de atentar gravemente contra la integridad física o la salud.",
+   "La tortura o los tratos inhumanos, incluidos los experimentos biológicos.",
+   "El hecho de solicitar a un prisionero de guerra o a otras personas protegidas a servir en las fuerzas de una Potencia enemiga.",
+   "El hecho de privar deliberadamente a un prisionero de guerra o a otra persona protegida de su derecho a ser juzgado legítima e imparcialmente."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "2. A los efectos del presente Estatuto, se entiende por «crímenes de guerra»: a) Infracciones graves de los Convenios de Ginebra de 12 de agosto de 1949, a saber, cualquiera de los siguientes actos contra personas o bienes protegidos por las disposiciones del Convenio de Ginebra pertinente: i) El homicidio intencional; ii) La tortura o los tratos inhumanos, incluidos los experimentos biológicos; iii) El hecho de causar deliberadamente grandes sufrimientos o de atentar gravemente contra la integridad física o la salud; iv) La destrucción y la apropiación de bienes, no justificadas por necesidades militares, y efectuadas a gran escala, ilícita y arbitrariamente; v) El hecho de forzar a un prisionero de guerra o a otras personas protegidas a servir en las fuerzas de una Potencia enemiga; vi) El hecho de privar deliberadamente a un prisionero de guerra o a otra persona protegida de su derecho a ser juzgado legítima e imparcialmente; vii) La deportación o el traslado ilegal, o el confinamiento ilegal; viii) La toma de rehenes;",
+  "exp": "El crimen es forzar al prisionero a servir en las fuerzas enemigas, no «solicitárselo».",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "1-30",
+  "parT": "v el hecho de forzar a un prisionero de guerra o a otras personas protegidas a servir en l",
+  "fR": 0.9,
+  "pz": "e-8",
+  "sec": 1,
+  "id": "1-768"
+ },
+ {
+  "lote": "d3",
+  "i": 209,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. A los efectos del presente Estatuto, se entenderá por «genocidio» una serie de actos, perpetrados con la intención de destruir total o parcialmente a un grupo nacional, étnico, racial o religioso como tal. Señale cuál se trata de uno de los actos citados anteriormente:",
+  "opciones": [
+   "Medidas destinadas a impedir nacimientos en el seno del grupo.",
+   "Sometimiento del grupo a condiciones de existencia que hayan de acarrear su destrucción física, total o parcial.",
+   "Traslado de niños del grupo a otro grupo.",
+   "Lesión a la integridad física o mental de los miembros del grupo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 6 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "A los efectos del presente Estatuto, se entenderá por «genocidio» cualquiera de los actos mencionados a continuación, perpetrados con la intención de destruir total o parcialmente a un grupo nacional, étnico, racial o religioso como tal: a) Matanza de miembros del grupo; b) Lesión grave a la integridad física o mental de los miembros del grupo; c) Sometimiento intencional del grupo a condiciones de existencia que hayan de acarrear su destrucción física, total o parcial; d) Medidas destinadas a impedir nacimientos en el seno del grupo; e) Traslado por la fuerza de niños del grupo a otro grupo.",
+  "exp": "Es literal. Las otras omiten «intencional», «por la fuerza» o «grave».",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "0-1",
+  "parT": "art 6 se entendera por genocidio cualquiera de los actos mencionados a continuacion perpet",
+  "fR": 0.83,
+  "pz": "e-6",
+  "sec": 1,
+  "id": "1-769"
+ },
+ {
+  "lote": "d3",
+  "i": 210,
+  "v": "v08",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ER",
+    "art": "101",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto de Roma de la Corte Penal Internacional. De la cooperación internacional y la asistencia judicial. Principio de especialidad. Señale la opción CORRECTA:",
+  "opciones": [
+   "Quien haya sido entregado a la Corte en virtud del Estatuto objeto de la pregunta podrá ser procesado, castigado o detenido por una conducta anterior a su entrega, salvo que ésta constituya la base del delito por el cual haya sido entregado.",
+   "Quien haya sido entregado a la Corte en virtud del Estatuto objeto de la pregunta no será procesado, castigado o detenido por una conducta anterior a su entrega, cuando ésta constituya la base del delito por el cual haya sido entregado.",
+   "Quien haya sido entregado a la Corte en virtud del Estatuto objeto de la pregunta no será procesado, castigado o detenido por una conducta anterior a su entrega, salvo que ésta constituya la base del delito por el cual haya sido entregado.",
+   "Quien haya sido entregado a la Corte en virtud del Estatuto objeto de la pregunta podrá ser procesado, castigado o detenido por una conducta anterior a su entrega, cuando ésta constituya la base del delito por el cual haya sido entregado."
+  ],
+  "correcta": 2,
+  "lila": "Art. 101 · Estatuto de Roma de la Corte Penal Internacional",
+  "rojo": "1. Quien haya sido entregado a la Corte en virtud del presente Estatuto no será procesado, castigado o detenido por una conducta anterior a su entrega, a menos que ésta constituya la base del delito por el cual haya sido entregado. 2. La Corte podrá pedir al Estado que hizo la entrega que la dispense del cumplimiento de los requisitos establecidos en el párrafo 1 y, si fuere necesario, proporcionará información adicional de conformidad con el artículo 91. Los Estados Partes estarán facultados para dar esa dispensa a la Corte y procurarán hacerlo.",
+  "exp": "No será procesado por conductas anteriores salvo que constituyan la base del delito por el que fue entregado.",
+  "apartado": "Estatuto de Roma de la Corte Penal Internacional",
+  "letra": "e",
+  "par": "34-1-0",
+  "parT": "art 101 1 quien haya sido entregado a la corte no sera procesado castigado o detenido por ",
+  "fR": 0.69,
+  "pz": "e-101",
+  "sec": 6,
+  "id": "1-770"
+ }
+]
