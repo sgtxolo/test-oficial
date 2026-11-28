@@ -417,34 +417,6 @@
   ]
  },
  {
-  "n": "q:18",
-  "en": "Ley Orgánica del Código Penal. Los jueces podrán acordar el decomiso de bienes, efectos y ganancias provenientes de la actividad delictiva previa del condenado, cuando se cumplan, cumulativamente, una serie de requisitos, siendo uno de ellos la existencia de indicios fundados de que una parte relevante del patrimonio del penado procede de una actividad delictiva previa. ¿Cuál de los siguientes puede ser un indicio relevante?:",
-  "op": [
-   "La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de paraísos fiscales o territorios de nula tributación.",
-   "La desproporción entre el valor de los bienes y efectos de que se trate y los ingresos de origen ilícito de la persona condenada.",
-   "La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de personas físicas o jurídicas que oculten o dificulten la determinación de la verdadera titularidad de los bienes.",
-   "La transferencia de los bienes o efectos mediante operaciones que dificulten o impidan su localización o destino."
-  ],
-  "c": 2,
-  "art": "a-127",
-  "loc": "Art. 127 quinquies.1",
-  "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
-  "apartado": "De las Consecuencias Accesorias",
-  "lit": "La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de personas físicas o jurídicas o entes sin personalidad jurídica interpuestos, o paraísos fiscales o territorios de nula tributación que oculten o dificulten la determinación de la verdadera titularidad de los bienes.",
-  "exp": "El indicio es la ocultación mediante personas interpuestas o paraísos fiscales <b>que dificulten determinar la titularidad</b>; los ingresos de referencia son los de origen <b>lícito</b>.",
-  "cita": [
-   "1. Los jueces y tribunales podrán acordar también el decomiso de bienes, efectos y ganancias provenientes de la actividad delictiva previa del condenado, cuando se cumplan, cumulativamente, los siguientes requisitos:",
-   "a) Que el sujeto sea o haya sido condenado por alguno de los delitos a que se refiere el artículo 127 bis.1 del Código Penal.",
-   "b) Que el delito se haya cometido en el contexto de una actividad delictiva previa continuada.",
-   "c) Que existan indicios fundados de que una parte relevante del patrimonio del penado procede de una actividad delictiva previa.",
-   "Son indicios relevantes:",
-   "1.º La desproporción entre el valor de los bienes y efectos de que se trate y los ingresos de origen lícito de la persona condenada.",
-   "2.º La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de personas físicas o jurídicas o entes sin personalidad jurídica interpuestos, o paraísos fiscales o territorios de nula tributación que oculten o dificulten la determinación de la verdadera titularidad de los bienes.",
-   "3.º La transferencia de los bienes o efectos mediante operaciones que dificulten o impidan su localización o destino y que carezcan de una justificación legal o económica válida.",
-   "Lo dispuesto en el párrafo anterior solamente será de aplicación cuando consten indicios fundados de que el sujeto ha obtenido, a partir de su actividad delictiva, un beneficio superior a 6.000 euros."
-  ]
- },
- {
   "n": "q:19",
   "en": "Ley Orgánica del Código penal. ¿Cuál de las siguientes opciones respecto de la prescripción de los delitos es CORRECTA?:",
   "op": [
@@ -1201,33 +1173,6 @@
   ]
  },
  {
-  "n": "q:51",
-  "en": "Ley Orgánica del Código Penal. Es una circunstancia atenuante:",
-  "op": [
-   "La de haber procedido el culpable a reparar el daño ocasionado a la víctima, o disminuir sus efectos, en cualquier momento del procedimiento y con anterioridad a la celebración del acto del juicio oral.",
-   "La de haber procedido el culpable, antes de conocer que el procedimiento judicial se dirige contra él, a confesar la infracción.",
-   "La dilación extraordinaria e indebida en la tramitación del procedimiento, siempre que no sea atribuible al propio inculpado y que guarde proporción con la complejidad de la causa.",
-   "El que obre en cumplimiento de un deber o en el ejercicio legítimo de un derecho, oficio o cargo."
-  ],
-  "c": 0,
-  "art": "a-21",
-  "loc": "Art. 21.5",
-  "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
-  "apartado": "De las Circunstancias que Modifican la Responsabilidad Criminal",
-  "lit": "La de haber procedido el culpable a reparar el daño ocasionado a la víctima, o disminuir sus efectos, en cualquier momento del procedimiento y con anterioridad a la celebración del acto del juicio oral.",
-  "exp": "La reparación antes del juicio oral es atenuante. La opción de la confesión omite «a las autoridades» y la de dilaciones exige que <b>no</b> guarden proporción.",
-  "cita": [
-   "Son circunstancias atenuantes:",
-   "1.ª Las causas expresadas en el capítulo anterior, cuando no concurrieren todos los requisitos necesarios para eximir de responsabilidad en sus respectivos casos.",
-   "2.ª La de actuar el culpable a causa de su grave adicción a las sustancias mencionadas en el número 2.º del artículo anterior.",
-   "3.ª La de obrar por causas o estímulos tan poderosos que hayan producido arrebato, obcecación u otro estado pasional de entidad semejante.",
-   "4.ª La de haber procedido el culpable, antes de conocer que el procedimiento judicial se dirige contra él, a confesar la infracción a las autoridades.",
-   "5.ª La de haber procedido el culpable a reparar el daño ocasionado a la víctima, o disminuir sus efectos, en cualquier momento del procedimiento y con anterioridad a la celebración del acto del juicio oral.",
-   "6.ª La dilación extraordinaria e indebida en la tramitación del procedimiento, siempre que no sea atribuible al propio inculpado y que no guarde proporción con la complejidad de la causa.",
-   "7.ª Cualquier otra circunstancia de análoga significación que las anteriores."
-  ]
- },
- {
   "n": "q:52",
   "en": "Ley Orgánica del Código Penal. ¿Cuál de las siguientes NO se encuentra entre las medidas de seguridad no privativas de libertad que se pueden imponer?:",
   "op": [
@@ -1715,27 +1660,6 @@
   "exp": "Prohibición de regreso durante <b>10 años</b>.",
   "cita": [
    "2. El extranjero no podrá regresar a España en un plazo de 10 años, contados desde la fecha de su expulsión."
-  ]
- },
- {
-  "n": "q:73",
-  "en": "Ley Orgánica del Código Penal. De las causas que extinguen la responsabilidad criminal. ¿Cuál de los siguientes delitos NO prescriben en ningún caso?:",
-  "op": [
-   "Los delitos contra las personas y bienes protegidos en caso de conflicto armado.",
-   "Los delitos de terrorismo.",
-   "Los delitos de lesa humanidad.",
-   "Todas las opciones son correctas."
-  ],
-  "c": 2,
-  "art": "a-131",
-  "loc": "Art. 131.3",
-  "norma": "Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal",
-  "apartado": "De la Extinción de la Responsabilidad Criminal y sus Efectos",
-  "lit": "Los delitos de lesa humanidad y de genocidio y los delitos contra las personas y bienes protegidos en caso de conflicto armado, salvo los castigados en el artículo 614, no prescribirán en ningún caso.",
-  "exp": "Los de <b>lesa humanidad</b> no prescriben nunca; el terrorismo solo si causó la muerte y en los de conflicto armado hay una excepción.",
-  "cita": [
-   "3. Los delitos de lesa humanidad y de genocidio y los delitos contra las personas y bienes protegidos en caso de conflicto armado, salvo los castigados en el artículo 614, no prescribirán en ningún caso.",
-   "Tampoco prescribirán los delitos de terrorismo, si hubieren causado la muerte de una persona."
   ]
  },
  {

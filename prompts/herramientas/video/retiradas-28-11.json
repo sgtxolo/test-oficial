@@ -1,0 +1,132 @@
+[
+ {
+  "id": "5-389",
+  "pregunta": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Las autoridades nacionales competentes responsables de la identificación de los nacionales de terceros países tendrán acceso a los datos introducidos en el SIS y tendrán derecho a consultarlos directamente o en una copia de la base de datos del SIS, con una serie de fines. A este respecto, señale el fin CORRECTO:",
+  "opciones": [
+   "La prevención, la detección, la investigación o el enjuiciamiento de delitos de terrorismo u otros delitos cometidos por bandas organizadas.",
+   "El examen de las solicitudes de visado y la toma de decisiones relativas a dichas solicitudes, excluidas las decisiones de anulación, retirada o prórroga de visados.",
+   "La realización de inspecciones de seguridad a nacionales de terceros países que soliciten protección internacional, cuando las autoridades que las realicen sean «autoridades decisorias».",
+   "La tramitación manual de las solicitudes del SEIAV por la unidad nacional del SEIAV."
+  ],
+  "correcta": 3,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>D</b> · <mark class=\"ex-key\">La tramitación manual de las solicitudes del SEIAV por la unidad nacional del SEIAV</mark></span><span class=\"ref-norma\">Art. 34.1 · Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)</span><span class=\"ref-concepto\">\"1. Las autoridades nacionales competentes responsables de la identificación de los nacionales de terceros países tendrán acceso a los datos introducidos en el SIS y tendrán derecho a consultarlos directamente o en una copia de la base de datos del SIS, con los siguientes fines: a) los controles fronterizos, de conformidad con el Reglamento (UE) 2016/399; b) los controles policiales y aduaneros realizados en el Estado miembro de que se trate y la coordinación de dichos controles por las autoridades designadas; c) la prevención, la detección, la investigación o el enjuiciamiento de delitos de terrorismo u otros delitos graves o la ejecución de sanciones penales, dentro del Estado miembro de que se trate, siempre que se aplique la Directiva (UE) 2016/680; d) el examen de las condiciones de entrada y estancia de nacionales de terceros países en el territorio de los Estados miembros, y la toma de decisiones sobre dicha entrada y estancia, en particular en lo que respecta a los permisos de residencia y los visados para estancia de larga duración, y de decisiones sobre el retorno de nacionales de terceros países, así como efectuar inspecciones de nacionales de terceros países que estén entrando o residiendo irregularmente en el territorio de los Estados miembros; e) la realización de inspecciones de seguridad a nacionales de terceros países que soliciten protección internacional, en la medida en que las autoridades que las realicen no sean «autoridades decisorias» tal como se definen en el artículo 2, letra f), de la Directiva 2013/32/UE del Parlamento Europeo y del Consejo (1), y, en su caso, la prestación de asesoramiento de conformidad con el Reglamento (CE) n.o 377/2004 del Consejo (2); f) el examen de las solicitudes de visado y la toma de decisiones relativas a dichas solicitudes, incluidas las decisiones de anulación, retirada o prórroga de visados, de conformidad con el Reglamento (CE) n.o 810/2009 del Parlamento Europeo y del Consejo (3).\"</span>La tramitación manual de solicitudes del <b>SEIAV</b> es un fin añadido por la normativa del SEIAV (no figura en el texto original de tu temario). Las otras fallan: delitos «graves», visados «<b>incluidas</b>» las anulaciones y autoridades que «<b>no</b> sean» decisorias.",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)"
+ },
+ {
+  "id": "5-416",
+  "pregunta": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). El SIS se compondrá, entre otros, de una infraestructura de comunicación segura entre la CS-SIS y... Señale la opción INCORRECTA:",
+  "opciones": [
+   "El DIM.",
+   "El SCB compartido.",
+   "El NI-SIS.",
+   "Las infraestructuras centrales del PEB."
+  ],
+  "correcta": 2,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>C</b> · <mark class=\"ex-key\">El NI-SIS</mark></span><span class=\"ref-norma\">Art. 4.1.c · Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)</span><span class=\"ref-concepto\">\"1. El SIS se compondrá de: a) un sistema central (SIS Central) compuesto por: i) una unidad de apoyo técnico («CS-SIS») que contendrá una base de datos (en lo sucesivo, «base de datos del SIS») y que incluirá una copia de seguridad de la CS-SIS; ii) una interfaz nacional uniforme («NI-SIS»); b) un sistema nacional (N.SIS) en cada Estado miembro, compuesto por los sistemas de datos nacionales que se comunican con el SIS Central, y que incluirá al menos un N.SIS de respaldo nacional o compartido; y c) una infraestructura de comunicación entre la CS-SIS, la copia de seguridad de la CS-SIS y la NI-SIS (en lo sucesivo, «infraestructura de comunicación») que proporcione una red virtual codificada dedicada a los datos del SIS y al intercambio de datos entre las oficinas Sirene como dispone el artículo 7, apartado 2. El N.SIS a que se refiere la letra b) podrá contener un fichero de datos (la denominada «copia nacional») con una copia total o parcial de la base de datos del SIS. Dos o más Estados miembros podrán establecer en uno de sus N.SIS una copia compartida que podrá ser usada conjuntamente por esos Estados miembros. La copia compartida se considerará la copia nacional de cada uno de esos Estados miembros. Dos o más Estados miembros podrán usar conjuntamente el N.SIS de respaldo compartido a que se refiere la letra b). En tales casos, el N.SIS de respaldo compartido se considerará el N.SIS de respaldo de cada uno de esos Estados miembros. El N.SIS y su copia de respaldo podrán utilizarse simultáneamente para garantizar una disponibilidad ininterrumpida a los usuarios finales. Los Estados miembros que tengan previsto crear una copia compartida o un N.SIS de respaldo compartido para usarlos conjuntamente acordarán sus respectivas responsabilidades por escrito. Notificarán dicho acuerdo a la Comisión. La infraestructura de comunicación contribuirá a garantizar la disponibilidad ininterrumpida del SIS y prestará apoyo para ello. Incluirá rutas redundantes y separadas para las conexiones entre la CS-SIS y la copia de seguridad de la CS-SIS y también incluirá rutas redundantes y separadas para las conexiones entre cada punto acceso nacional a la red del SIS y la CS-SIS y la copia de seguridad de la CS-SIS.\"</span>La infraestructura «<b>segura</b>» añadida por la normativa de interoperabilidad une la CS-SIS con el PEB, el SCB compartido y el DIM; la NI-SIS pertenece a la infraestructura general.",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)"
+ },
+ {
+  "id": "5-393",
+  "pregunta": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Señale cuál de los siguientes NO corresponde con un dato mínimo necesario para introducir una descripción en el SIS:",
+  "opciones": [
+   "Clasificación de los documentos de reseña de la persona.",
+   "Medidas que deben tomarse en caso de respuesta positiva.",
+   "Motivo de la descripción.",
+   "Referencia a la decisión que da lugar a la introducción de la descripción."
+  ],
+  "correcta": 0,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>A</b> · <mark class=\"ex-key\">Clasificación de los documentos de reseña de la persona</mark></span><span class=\"ref-norma\">Art. 22.1 · Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)</span><span class=\"ref-concepto\">\"1. Los datos mínimos necesarios para introducir una descripción en el SIS serán los previstos en el artículo 20, apartado 2, letras a), g), k), m), n) y q). Los demás datos enumerados en dicho apartado se introducirán en el SIS si se dispone de ellos.\"</span>Los mínimos son las letras a), g), k), m), n) y q) del art. 20.2: apellidos, fecha de nacimiento, motivo, referencia a la decisión, medidas y base de la decisión.",
+  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)"
+ },
+ {
+  "id": "5-438",
+  "pregunta": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Respecto a la cooperación con proveedores de servicios externos, señale la opción INCORRECTA:",
+  "opciones": [
+   "Los Estados miembros intentarán cooperar con un proveedor de servicios externo junto con uno o varios Estados miembros sin perjuicio de las normas sobre contratación pública y competencia.",
+   "Los proveedores de servicios externos podrá tener acceso al VIS en casos concretos.",
+   "El examen de las solicitudes, las entrevistas que procedan, la decisión sobre las solicitudes y la impresión y fijación de las etiquetas de visado serán competencia exclusiva del consulado.",
+   "El acceso al VIS estará reservado exclusivamente al personal debidamente autorizado de los consulados o de las autoridades centrales."
+  ],
+  "correcta": 1,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>B</b> · <mark class=\"ex-key\">Los proveedores de servicios externos podrá tener acceso al VIS en casos concretos</mark></span><span class=\"ref-norma\">Art. 43.5 · Reglamento (CE) n.º 810/2009 (Código de visados)</span><span class=\"ref-concepto\">\"1. Los Estados miembros intentarán cooperar con un proveedor de servicios externo junto con uno o varios Estados miembros sin perjuicio de las normas sobre contratación pública y competencia. 4. Únicamente los consulados o las autoridades centrales examinarán las solicitudes, realizarán las entrevistas que procedan y adoptarán la decisión sobre las solicitudes. 5. Los proveedores de servicios externos no tendrán acceso al VIS en ningún caso. El acceso al VIS estará reservado exclusivamente al personal debidamente autorizado de los consulados o de las autoridades centrales. Como excepción a lo establecido en el párrafo primero, únicamente los miembros debidamente autorizados del personal de los proveedores de servicios externos podrán tener acceso a la PSV de la UE a través del portal para los proveedores de servicios externos a que se refiere el artículo 7 septies del Reglamento VIS y únicamente para; a) comprobar los datos cargados por el solicitante; b) cargar los identificadores biométricos; c) cargar copias de los documentos justificativos; d) utilizar la herramienta de citas para indicar cuáles son las citas disponibles.\"</span>Los proveedores externos <b>nunca</b> acceden al VIS.",
+  "apartado": "Del Código de visados"
+ },
+ {
+  "id": "5-489",
+  "pregunta": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Disposiciones específicas aplicables a los menores. Señale la opción INCORRECTA:",
+  "opciones": [
+   "NO se utilizará ninguna forma de fuerza ni coerción contra los menores para garantizar cumplimiento de la obligación de proporcionar datos biométricos.",
+   "El menor no acompañado irá acompañado de un representante o, cuando no se haya designado un representante, de una persona formada para salvaguardar el interés superior del niño y bienestar general, durante el proceso de toma de sus datos biométricos.",
+   "En caso de que no exista certeza sobre si el niño es menor de seis años ni existan pruebas que acrediten su edad, las autoridades competentes de los Estados miembros considerarán que el niño es menor de 6 años a los efectos del presente Reglamento.",
+   "De la toma de datos biométricos de los menores a partir de los 6 años de edad se encargarán funcionarios formados específicamente para tomar los datos biométricos de menores, de manera adaptada a sus necesidades y con sensibilidad, respetando plenamente el interés superior del niño."
+  ],
+  "correcta": 0,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>A</b> · <mark class=\"ex-key\">NO se utilizará ninguna forma de fuerza ni coerción contra los menores para garantizar cumplimiento de la obligación de proporcionar datos biométricos</mark></span><span class=\"ref-norma\">Art. 14.1 · Reglamento (UE) 2024/1358 (Sistema EURODAC)</span><span class=\"ref-concepto\">\"1. De la toma de datos biométricos de los menores de seis años se encargarán funcionarios formados específicamente para tomar los datos biométricos de menores, de manera adaptada a sus necesidades y con sensibilidad, respetando plenamente el interés superior del niño y las salvaguardias establecidas en la Convención de las Naciones Unidas sobre los Derechos del Niño. Al aplicar el presente Reglamento, se tendrá en cuenta de manera primordial el interés superior del niño. En caso de que no exista certeza sobre si el niño es menor de seis años ni existan pruebas que acrediten su edad, las autoridades competentes de los Estados miembros considerarán que el niño es menor de seis años a los efectos del presente Reglamento. El menor irá acompañado, cuando sea posible, de un adulto miembro de su familia durante todo el proceso de toma de datos biométricos. El menor no acompañado irá acompañado de un representante o, cuando no se haya designado un representante, de una persona formada para salvaguardar el interés superior del niño y su bienestar general, durante el proceso de toma de sus datos biométricos. Dicha persona con formación no será el funcionario responsable de tomar los datos biométricos, actuará con independencia y no recibirá órdenes del funcionario o del servicio encargado de los datos biométricos. Dicha persona con formación será la persona designada para actuar provisionalmente como representante con arreglo a la Directiva (UE) 2024/1346 cuando dicha persona haya sido designada. No se utilizará ninguna forma de fuerza contra los menores para garantizar su cumplimiento de la obligación de proporcionar datos biométricos. No obstante, cuando lo permita el Derecho nacional o de la Unión pertinente, y como último recurso, se podrá recurrir a un nivel proporcionado de coerción sobre los menores para asegurar su cumplimiento de dicha obligación. Los Estados miembros respetarán la dignidad y la integridad física del menor al aplicar dicho nivel proporcionado de coerción. Cuando un menor, en particular un menor no acompañado o separado de su familia, se niegue a facilitar sus datos biométricos y haya motivos razonables para considerar que existen riesgos para la salvaguardia o protección del menor, de acuerdo con la evaluación de un funcionario formado específicamente para tomar los datos biométricos del menor, se remitirá al menor a las autoridades nacionales de protección de la infancia, a los mecanismos nacionales de derivación o a ambos.\"</span>Como <b>último recurso</b> sí cabe un nivel proporcionado de coerción si lo permite el Derecho.",
+  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)"
+ },
+ {
+  "id": "2-286",
+  "pregunta": "Ley sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior y sobre determinadas medidas de prevención del blanqueo de capitales. A los efectos de lo dispuesto en la ley objeto de la pregunta, se considerarán \"residentes\":",
+  "opciones": [
+   "El personal español que preste servicios en embajadas y consulados en el extranjero.",
+   "Las personas físicas que tengan su domicilio en España, salvo los diplomáticos extranjeros acreditados ante el Gobierno español.",
+   "Los diplomáticos españoles acreditados en el extranjero.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>D</b> · <mark class=\"ex-key\">Todas las opciones son correctas</mark></span><span class=\"ref-norma\">Art. 2 · Ley 19/2003, de 4 de julio, sobre régimen jurídico de los movimientos de capitales y de las transacciones económicas con el exterior</span><span class=\"ref-concepto\">\"1. A los efectos de lo dispuesto en el artículo anterior, se consideran: A) «Residentes»: a. Las personas físicas que residan habitualmente en España, salvo lo dispuesto en el párrafo b) correspondiente al epígrafe de «No residentes». b. Los diplomáticos españoles acreditados en el extranjero y el personal español que preste servicios en embajadas y consulados españoles o en organizaciones internacionales en el extranjero. c. Las personas jurídicas con domicilio social en España. d. Las sucursales y los establecimientos permanentes en territorio español de personas físicas o jurídicas residentes en el extranjero. e. Otros que se determinen reglamentariamente en casos análogos. B) «No residentes»: a. Las personas físicas que tengan su residencia habitual en territorio extranjero, salvo lo dispuesto en el párrafo b) correspondiente al epígrafe de «Residentes». b. Los diplomáticos extranjeros acreditados ante el Gobierno español y el personal extranjero que preste servicios en embajadas y consulados extranjeros o en organizaciones internacionales en España. c. Las personas jurídicas con domicilio social en el extranjero. d. Las sucursales y los establecimientos permanentes en el extranjero de personas físicas o jurídicas residentes en España. e. Otros que se determinen reglamentariamente en casos análogos.\"</span>Residen en el extranjero pero son <b>residentes</b> los diplomáticos españoles y el personal español de embajadas y consulados; la academia da por buenas las tres afirmaciones (el texto legal dice «residan habitualmente», no «domicilio»).",
+  "apartado": "Ley 19/2003"
+ },
+ {
+  "id": "2-358",
+  "pregunta": "Protocolo para prevenir, reprimir y sancionar la trata de personas, especialmente mujeres y niños, que complementa la Convención de las Naciones Unidas contra la delincuencia organizada transnacional. Finalidad. ¿Cuáles son los fines del presente Protocolo?:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Prevenir y combatir la trata de personas, prestando especial atención a las mujeres y los niños;",
+   "Proteger y ayudar a las víctimas de la trata personas, respetando sus derechos humanos.",
+   "Promover la cooperación entre los Estados Parte para no lograr esos fines."
+  ],
+  "correcta": 0,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>A</b> · <mark class=\"ex-key\">Todas las opciones son correctas</mark></span><span class=\"ref-norma\">Art. 2 · Protocolo para prevenir, reprimir y sancionar la trata de personas (complementario a la Convención de Palermo)</span><span class=\"ref-concepto\">\"Los FINES del presente Protocolo son: a) Prevenir y combatir la trata de personas, prestando especial atención a las mujeres y los niños; b) Proteger y ayudar a las víctimas de dicha trata, respetando plenamente sus derechos humanos; y c) Promover la cooperación entre los Estados Parte para lograr esos fines.\"</span>Los tres son fines del Protocolo. Ojo: el vídeo de la academia escribe «para <b>no</b> lograr esos fines» en la opción de cooperación; la ley dice «para lograr esos fines».",
+  "apartado": "Protocolo para prevenir, reprimir y sancionar la trata de personas (complementario a la Convención de Palermo)"
+ },
+ {
+  "id": "18-312",
+  "pregunta": "Ley Orgánica del Código Penal. Los jueces podrán acordar el decomiso de bienes, efectos y ganancias provenientes de la actividad delictiva previa del condenado, cuando se cumplan, cumulativamente, una serie de requisitos, siendo uno de ellos la existencia de indicios fundados de que una parte relevante del patrimonio del penado procede de una actividad delictiva previa. ¿Cuál de los siguientes puede ser un indicio relevante?:",
+  "opciones": [
+   "La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de paraísos fiscales o territorios de nula tributación.",
+   "La desproporción entre el valor de los bienes y efectos de que se trate y los ingresos de origen ilícito de la persona condenada.",
+   "La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de personas físicas o jurídicas que oculten o dificulten la determinación de la verdadera titularidad de los bienes.",
+   "La transferencia de los bienes o efectos mediante operaciones que dificulten o impidan su localización o destino."
+  ],
+  "correcta": 2,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>C</b> · <mark class=\"ex-key\">La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de personas físicas o jurídicas que oculten o dificulten la determinación de la verdadera titularidad de los bienes</mark></span><span class=\"ref-norma\">Art. 127 quinquies.1 · Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal</span><span class=\"ref-concepto\">\"1. Los jueces y tribunales podrán acordar también el decomiso de bienes, efectos y ganancias provenientes de la actividad delictiva previa del condenado, cuando se cumplan, cumulativamente, los siguientes requisitos: a) Que el sujeto sea o haya sido condenado por alguno de los delitos a que se refiere el artículo 127 bis.1 del Código Penal. b) Que el delito se haya cometido en el contexto de una actividad delictiva previa continuada. c) Que existan indicios fundados de que una parte relevante del patrimonio del penado procede de una actividad delictiva previa. Son indicios relevantes: 1.º La desproporción entre el valor de los bienes y efectos de que se trate y los ingresos de origen lícito de la persona condenada. 2.º La ocultación de la titularidad o de cualquier poder de disposición sobre los bienes o efectos mediante la utilización de personas físicas o jurídicas o entes sin personalidad jurídica interpuestos, o paraísos fiscales o territorios de nula tributación que oculten o dificulten la determinación de la verdadera titularidad de los bienes. 3.º La transferencia de los bienes o efectos mediante operaciones que dificulten o impidan su localización o destino y que carezcan de una justificación legal o económica válida. Lo dispuesto en el párrafo anterior solamente será de aplicación cuando consten indicios fundados de que el sujeto ha obtenido, a partir de su actividad delictiva, un beneficio superior a 6.000 euros.\"</span>El indicio es la ocultación mediante personas interpuestas o paraísos fiscales <b>que dificulten determinar la titularidad</b>; los ingresos de referencia son los de origen <b>lícito</b>.",
+  "apartado": "De las Consecuencias Accesorias"
+ },
+ {
+  "id": "18-345",
+  "pregunta": "Ley Orgánica del Código Penal. Es una circunstancia atenuante:",
+  "opciones": [
+   "La de haber procedido el culpable a reparar el daño ocasionado a la víctima, o disminuir sus efectos, en cualquier momento del procedimiento y con anterioridad a la celebración del acto del juicio oral.",
+   "La de haber procedido el culpable, antes de conocer que el procedimiento judicial se dirige contra él, a confesar la infracción.",
+   "La dilación extraordinaria e indebida en la tramitación del procedimiento, siempre que no sea atribuible al propio inculpado y que guarde proporción con la complejidad de la causa.",
+   "El que obre en cumplimiento de un deber o en el ejercicio legítimo de un derecho, oficio o cargo."
+  ],
+  "correcta": 0,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>A</b> · <mark class=\"ex-key\">La de haber procedido el culpable a reparar el daño ocasionado a la víctima, o disminuir sus efectos, en cualquier momento del procedimiento y con anterioridad a la celebración del acto del juicio oral</mark></span><span class=\"ref-norma\">Art. 21.5 · Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal</span><span class=\"ref-concepto\">\"Son circunstancias atenuantes: 1.ª Las causas expresadas en el capítulo anterior, cuando no concurrieren todos los requisitos necesarios para eximir de responsabilidad en sus respectivos casos. 2.ª La de actuar el culpable a causa de su grave adicción a las sustancias mencionadas en el número 2.º del artículo anterior. 3.ª La de obrar por causas o estímulos tan poderosos que hayan producido arrebato, obcecación u otro estado pasional de entidad semejante. 4.ª La de haber procedido el culpable, antes de conocer que el procedimiento judicial se dirige contra él, a confesar la infracción a las autoridades. 5.ª La de haber procedido el culpable a reparar el daño ocasionado a la víctima, o disminuir sus efectos, en cualquier momento del procedimiento y con anterioridad a la celebración del acto del juicio oral. 6.ª La dilación extraordinaria e indebida en la tramitación del procedimiento, siempre que no sea atribuible al propio inculpado y que no guarde proporción con la complejidad de la causa. 7.ª Cualquier otra circunstancia de análoga significación que las anteriores.\"</span>La reparación antes del juicio oral es atenuante. La opción de la confesión omite «a las autoridades» y la de dilaciones exige que <b>no</b> guarden proporción.",
+  "apartado": "De las Circunstancias que Modifican la Responsabilidad Criminal"
+ },
+ {
+  "id": "18-365",
+  "pregunta": "Ley Orgánica del Código Penal. De las causas que extinguen la responsabilidad criminal. ¿Cuál de los siguientes delitos NO prescriben en ningún caso?:",
+  "opciones": [
+   "Los delitos contra las personas y bienes protegidos en caso de conflicto armado.",
+   "Los delitos de terrorismo.",
+   "Los delitos de lesa humanidad.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 2,
+  "explicacion": "<span class=\"ex-resp\">Respuesta correcta: <b>C</b> · <mark class=\"ex-key\">Los delitos de lesa humanidad</mark></span><span class=\"ref-norma\">Art. 131.3 · Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal</span><span class=\"ref-concepto\">\"3. Los delitos de lesa humanidad y de genocidio y los delitos contra las personas y bienes protegidos en caso de conflicto armado, salvo los castigados en el artículo 614, no prescribirán en ningún caso. Tampoco prescribirán los delitos de terrorismo, si hubieren causado la muerte de una persona.\"</span>Los de <b>lesa humanidad</b> no prescriben nunca; el terrorismo solo si causó la muerte y en los de conflicto armado hay una excepción.",
+  "apartado": "De la Extinción de la Responsabilidad Criminal y sus Efectos"
+ }
+]

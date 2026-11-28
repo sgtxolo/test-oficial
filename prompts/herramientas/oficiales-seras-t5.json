@@ -529,32 +529,6 @@
   ]
  },
  {
-  "n": "3:9",
-  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Las autoridades nacionales competentes responsables de la identificación de los nacionales de terceros países tendrán acceso a los datos introducidos en el SIS y tendrán derecho a consultarlos directamente o en una copia de la base de datos del SIS, con una serie de fines. A este respecto, señale el fin CORRECTO:",
-  "op": [
-   "La prevención, la detección, la investigación o el enjuiciamiento de delitos de terrorismo u otros delitos cometidos por bandas organizadas.",
-   "El examen de las solicitudes de visado y la toma de decisiones relativas a dichas solicitudes, excluidas las decisiones de anulación, retirada o prórroga de visados.",
-   "La realización de inspecciones de seguridad a nacionales de terceros países que soliciten protección internacional, cuando las autoridades que las realicen sean «autoridades decisorias».",
-   "La tramitación manual de las solicitudes del SEIAV por la unidad nacional del SEIAV."
-  ],
-  "c": 3,
-  "art": "s-10",
-  "loc": "Art. 34.1",
-  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
-  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
-  "lit": "Las autoridades nacionales competentes responsables de la identificación de los nacionales de terceros países tendrán acceso a los datos introducidos en el SIS y tendrán derecho a consultarlos directamente o en una copia de la base de datos del SIS, con los siguientes fines",
-  "exp": "La tramitación manual de solicitudes del <b>SEIAV</b> es un fin añadido por la normativa del SEIAV (no figura en el texto original de tu temario). Las otras fallan: delitos «graves», visados «<b>incluidas</b>» las anulaciones y autoridades que «<b>no</b> sean» decisorias.",
-  "cita": [
-   "1. Las autoridades nacionales competentes responsables de la identificación de los nacionales de terceros países tendrán acceso a los datos introducidos en el SIS y tendrán derecho a consultarlos directamente o en una copia de la base de datos del SIS, con los siguientes fines:",
-   "a) los controles fronterizos, de conformidad con el Reglamento (UE) 2016/399;",
-   "b) los controles policiales y aduaneros realizados en el Estado miembro de que se trate y la coordinación de dichos controles por las autoridades designadas;",
-   "c) la prevención, la detección, la investigación o el enjuiciamiento de delitos de terrorismo u otros delitos graves o la ejecución de sanciones penales, dentro del Estado miembro de que se trate, siempre que se aplique la Directiva (UE) 2016/680;",
-   "d) el examen de las condiciones de entrada y estancia de nacionales de terceros países en el territorio de los Estados miembros, y la toma de decisiones sobre dicha entrada y estancia, en particular en lo que respecta a los permisos de residencia y los visados para estancia de larga duración, y de decisiones sobre el retorno de nacionales de terceros países, así como efectuar inspecciones de nacionales de terceros países que estén entrando o residiendo irregularmente en el territorio de los Estados miembros;",
-   "e) la realización de inspecciones de seguridad a nacionales de terceros países que soliciten protección internacional, en la medida en que las autoridades que las realicen no sean «autoridades decisorias» tal como se definen en el artículo 2, letra f), de la Directiva 2013/32/UE del Parlamento Europeo y del Consejo (1), y, en su caso, la prestación de asesoramiento de conformidad con el Reglamento (CE) n.o 377/2004 del Consejo (2);",
-   "f) el examen de las solicitudes de visado y la toma de decisiones relativas a dichas solicitudes, incluidas las decisiones de anulación, retirada o prórroga de visados, de conformidad con el Reglamento (CE) n.o 810/2009 del Parlamento Europeo y del Consejo (3)."
-  ]
- },
- {
   "n": "3:10",
   "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Datos adicionales en caso de usurpación de identidad. Señale la opción INCORRECTA:",
   "op": [
@@ -631,26 +605,6 @@
    "d) al tratar de la calidad de los datos del SIS;",
    "e) al tratar de la compatibilidad y prioridad de las descripciones;",
    "f) al tratar del ejercicio del derecho de acceso;"
-  ]
- },
- {
-  "n": "4:4",
-  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). Señale cuál de los siguientes NO corresponde con un dato mínimo necesario para introducir una descripción en el SIS:",
-  "op": [
-   "Clasificación de los documentos de reseña de la persona.",
-   "Medidas que deben tomarse en caso de respuesta positiva.",
-   "Motivo de la descripción.",
-   "Referencia a la decisión que da lugar a la introducción de la descripción."
-  ],
-  "c": 0,
-  "art": "s-9",
-  "loc": "Art. 22.1",
-  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
-  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
-  "lit": "Los datos mínimos necesarios para introducir una descripción en el SIS serán los previstos en el artículo 20, apartado 2, letras a), g), k), m), n) y q).",
-  "exp": "Los mínimos son las letras a), g), k), m), n) y q) del art. 20.2: apellidos, fecha de nacimiento, motivo, referencia a la decisión, medidas y base de la decisión.",
-  "cita": [
-   "1. Los datos mínimos necesarios para introducir una descripción en el SIS serán los previstos en el artículo 20, apartado 2, letras a), g), k), m), n) y q). Los demás datos enumerados en dicho apartado se introducirán en el SIS si se dispone de ellos."
   ]
  },
  {
@@ -1141,35 +1095,6 @@
   ]
  },
  {
-  "n": "7:3",
-  "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). El SIS se compondrá, entre otros, de una infraestructura de comunicación segura entre la CS-SIS y... Señale la opción INCORRECTA:",
-  "op": [
-   "El DIM.",
-   "El SCB compartido.",
-   "El NI-SIS.",
-   "Las infraestructuras centrales del PEB."
-  ],
-  "c": 2,
-  "art": "s-7",
-  "loc": "Art. 4.1.c",
-  "norma": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
-  "apartado": "Reglamento (UE) 2018/1861 (Sistema de Información de Schengen - SIS)",
-  "lit": "Una infraestructura de comunicación entre la CS-SIS, la copia de seguridad de la CS-SIS y la NI-SIS",
-  "exp": "La infraestructura «<b>segura</b>» añadida por la normativa de interoperabilidad une la CS-SIS con el PEB, el SCB compartido y el DIM; la NI-SIS pertenece a la infraestructura general.",
-  "cita": [
-   "1. El SIS se compondrá de:",
-   "a) un sistema central (SIS Central) compuesto por:",
-   "i) una unidad de apoyo técnico («CS-SIS») que contendrá una base de datos (en lo sucesivo, «base de datos del SIS») y que incluirá una copia de seguridad de la CS-SIS;",
-   "ii) una interfaz nacional uniforme («NI-SIS»);",
-   "b) un sistema nacional (N.SIS) en cada Estado miembro, compuesto por los sistemas de datos nacionales que se comunican con el SIS Central, y que incluirá al menos un N.SIS de respaldo nacional o compartido; y",
-   "c) una infraestructura de comunicación entre la CS-SIS, la copia de seguridad de la CS-SIS y la NI-SIS (en lo sucesivo, «infraestructura de comunicación») que proporcione una red virtual codificada dedicada a los datos del SIS y al intercambio de datos entre las oficinas Sirene como dispone el artículo 7, apartado 2.",
-   "El N.SIS a que se refiere la letra b) podrá contener un fichero de datos (la denominada «copia nacional») con una copia total o parcial de la base de datos del SIS. Dos o más Estados miembros podrán establecer en uno de sus N.SIS una copia compartida que podrá ser usada conjuntamente por esos Estados miembros. La copia compartida se considerará la copia nacional de cada uno de esos Estados miembros.",
-   "Dos o más Estados miembros podrán usar conjuntamente el N.SIS de respaldo compartido a que se refiere la letra b). En tales casos, el N.SIS de respaldo compartido se considerará el N.SIS de respaldo de cada uno de esos Estados miembros. El N.SIS y su copia de respaldo podrán utilizarse simultáneamente para garantizar una disponibilidad ininterrumpida a los usuarios finales.",
-   "Los Estados miembros que tengan previsto crear una copia compartida o un N.SIS de respaldo compartido para usarlos conjuntamente acordarán sus respectivas responsabilidades por escrito. Notificarán dicho acuerdo a la Comisión.",
-   "La infraestructura de comunicación contribuirá a garantizar la disponibilidad ininterrumpida del SIS y prestará apoyo para ello. Incluirá rutas redundantes y separadas para las conexiones entre la CS-SIS y la copia de seguridad de la CS-SIS y también incluirá rutas redundantes y separadas para las conexiones entre cada punto acceso nacional a la red del SIS y la CS-SIS y la copia de seguridad de la CS-SIS."
-  ]
- },
- {
   "n": "7:4",
   "en": "Reglamento relativo al establecimiento, funcionamiento y utilización del Sistema de Información Schengen (SIS). A los efectos del presente Reglamento se entiende por \"respuesta positiva\" toda coincidencia que cumpla una serie de criterios. Señale el criterio CORRECTO:",
   "op": [
@@ -1615,32 +1540,6 @@
   "exp": "Documento no reconocido: <b>impreso separado</b>.",
   "cita": [
    "2. En los casos en que el Estado miembro de expedición del visado no reconozca el documento de viaje del solicitante, se utilizará el impreso separado para la colocación del visado."
-  ]
- },
- {
-  "n": "q:16",
-  "en": "Reglamento por el que se establece un código comunitario sobre visados (Código de visados). Respecto a la cooperación con proveedores de servicios externos, señale la opción INCORRECTA:",
-  "op": [
-   "Los Estados miembros intentarán cooperar con un proveedor de servicios externo junto con uno o varios Estados miembros sin perjuicio de las normas sobre contratación pública y competencia.",
-   "Los proveedores de servicios externos podrá tener acceso al VIS en casos concretos.",
-   "El examen de las solicitudes, las entrevistas que procedan, la decisión sobre las solicitudes y la impresión y fijación de las etiquetas de visado serán competencia exclusiva del consulado.",
-   "El acceso al VIS estará reservado exclusivamente al personal debidamente autorizado de los consulados o de las autoridades centrales."
-  ],
-  "c": 1,
-  "art": "c-36",
-  "loc": "Art. 43.5",
-  "norma": "Reglamento (CE) n.º 810/2009 (Código de visados)",
-  "apartado": "Del Código de visados",
-  "lit": "Los proveedores de servicios externos no tendrán acceso al VIS en ningún caso.",
-  "exp": "Los proveedores externos <b>nunca</b> acceden al VIS.",
-  "cita": [
-   "1. Los Estados miembros intentarán cooperar con un proveedor de servicios externo junto con uno o varios Estados miembros sin perjuicio de las normas sobre contratación pública y competencia.",
-   "4. Únicamente los consulados o las autoridades centrales examinarán las solicitudes, realizarán las entrevistas que procedan y adoptarán la decisión sobre las solicitudes.",
-   "5. Los proveedores de servicios externos no tendrán acceso al VIS en ningún caso. El acceso al VIS estará reservado exclusivamente al personal debidamente autorizado de los consulados o de las autoridades centrales. Como excepción a lo establecido en el párrafo primero, únicamente los miembros debidamente autorizados del personal de los proveedores de servicios externos podrán tener acceso a la PSV de la UE a través del portal para los proveedores de servicios externos a que se refiere el artículo 7 septies del Reglamento VIS y únicamente para;",
-   "a) comprobar los datos cargados por el solicitante;",
-   "b) cargar los identificadores biométricos;",
-   "c) cargar copias de los documentos justificativos;",
-   "d) utilizar la herramienta de citas para indicar cuáles son las citas disponibles."
   ]
  },
  {
@@ -2782,30 +2681,6 @@
    "u) el número de solicitudes y de respuestas positivas a que se refiere el artículo 34, apartado 1;",
    "v) el número de solicitudes presentadas de conformidad con el artículo 43;",
    "w) el número de respuestas positivas recibidas de Eurodac a que se refiere el artículo 38, apartado 6."
-  ]
- },
- {
-  "n": "q:8",
-  "en": "Reglamento Europeo relativo a la creación del sistema \"Eurodac\". Disposiciones específicas aplicables a los menores. Señale la opción INCORRECTA:",
-  "op": [
-   "NO se utilizará ninguna forma de fuerza ni coerción contra los menores para garantizar cumplimiento de la obligación de proporcionar datos biométricos.",
-   "El menor no acompañado irá acompañado de un representante o, cuando no se haya designado un representante, de una persona formada para salvaguardar el interés superior del niño y bienestar general, durante el proceso de toma de sus datos biométricos.",
-   "En caso de que no exista certeza sobre si el niño es menor de seis años ni existan pruebas que acrediten su edad, las autoridades competentes de los Estados miembros considerarán que el niño es menor de 6 años a los efectos del presente Reglamento.",
-   "De la toma de datos biométricos de los menores a partir de los 6 años de edad se encargarán funcionarios formados específicamente para tomar los datos biométricos de menores, de manera adaptada a sus necesidades y con sensibilidad, respetando plenamente el interés superior del niño."
-  ],
-  "c": 0,
-  "art": "e-110",
-  "loc": "Art. 14.1",
-  "norma": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
-  "apartado": "Reglamento (UE) 2024/1358 (Sistema EURODAC)",
-  "lit": "No se utilizará ninguna forma de fuerza contra los menores para garantizar su cumplimiento de la obligación de proporcionar datos biométricos. No obstante, cuando lo permita el Derecho nacional o de la Unión pertinente, y como último recurso, se podrá recurrir a un nivel proporcionado de coerción sobre los menores para asegurar su cumplimiento de dicha obligación.",
-  "exp": "Como <b>último recurso</b> sí cabe un nivel proporcionado de coerción si lo permite el Derecho.",
-  "cita": [
-   "1. De la toma de datos biométricos de los menores de seis años se encargarán funcionarios formados específicamente para tomar los datos biométricos de menores, de manera adaptada a sus necesidades y con sensibilidad, respetando plenamente el interés superior del niño y las salvaguardias establecidas en la Convención de las Naciones Unidas sobre los Derechos del Niño.",
-   "Al aplicar el presente Reglamento, se tendrá en cuenta de manera primordial el interés superior del niño. En caso de que no exista certeza sobre si el niño es menor de seis años ni existan pruebas que acrediten su edad, las autoridades competentes de los Estados miembros considerarán que el niño es menor de seis años a los efectos del presente Reglamento.",
-   "El menor irá acompañado, cuando sea posible, de un adulto miembro de su familia durante todo el proceso de toma de datos biométricos. El menor no acompañado irá acompañado de un representante o, cuando no se haya designado un representante, de una persona formada para salvaguardar el interés superior del niño y su bienestar general, durante el proceso de toma de sus datos biométricos. Dicha persona con formación no será el funcionario responsable de tomar los datos biométricos, actuará con independencia y no recibirá órdenes del funcionario o del servicio encargado de los datos biométricos. Dicha persona con formación será la persona designada para actuar provisionalmente como representante con arreglo a la Directiva (UE) 2024/1346 cuando dicha persona haya sido designada.",
-   "No se utilizará ninguna forma de fuerza contra los menores para garantizar su cumplimiento de la obligación de proporcionar datos biométricos. No obstante, cuando lo permita el Derecho nacional o de la Unión pertinente, y como último recurso, se podrá recurrir a un nivel proporcionado de coerción sobre los menores para asegurar su cumplimiento de dicha obligación. Los Estados miembros respetarán la dignidad y la integridad física del menor al aplicar dicho nivel proporcionado de coerción.",
-   "Cuando un menor, en particular un menor no acompañado o separado de su familia, se niegue a facilitar sus datos biométricos y haya motivos razonables para considerar que existen riesgos para la salvaguardia o protección del menor, de acuerdo con la evaluación de un funcionario formado específicamente para tomar los datos biométricos del menor, se remitirá al menor a las autoridades nacionales de protección de la infancia, a los mecanismos nacionales de derivación o a ambos."
   ]
  },
  {
