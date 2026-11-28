@@ -1,0 +1,140 @@
+{
+ "titulo": "Esquema clave T21 · Derecho Procesal Penal: normas complementarias",
+ "h1": "Tema 21 · ESQUEMA CLAVE — Derecho Procesal Penal: Habeas Corpus, detención, testigos, ADN, extradición, datos, reconocimiento mutuo en la UE, víctima y procedimiento de detención",
+ "v": "905",
+ "h2": [
+  {
+   "t": "21.1 · LO 6/1984 «Habeas Corpus» y detención de militares (Ley Procesal Militar)",
+   "desde": null
+  },
+  {
+   "t": "21.2 · LO 19/1994 Testigos y peritos · LO 3/2003 · LO 10/2007 Base de datos de ADN",
+   "desde": "^LEY ORGÁNICA 19/1994"
+  },
+  {
+   "t": "21.3 · LEY 4/1985 de Extradición pasiva · LEY 11/2003 Equipos conjuntos · LEY 25/2007 Conservación de datos",
+   "desde": "^LEY 4/1985"
+  },
+  {
+   "t": "21.4 · LEY 23/2014 de reconocimiento mutuo en la UE: parte general y orden europea de detención y entrega",
+   "desde": "^TÍTULO PRELIMINAR · Unión Europea"
+  },
+  {
+   "t": "21.5 · LEY 23/2014: penas privativas de libertad, libertad vigilada, protección, embargo, decomiso, sanciones y orden europea de investigación",
+   "desde": "^TÍTULO III ·"
+  },
+  {
+   "t": "21.6 · LEY 4/2015 Estatuto de la víctima · INSTRUCCIÓN 1/2024 Procedimiento integral de la detención policial",
+   "desde": "^TÍTULO PRELIMINAR · Disposiciones generales"
+  },
+  {
+   "t": "21.7 · CONVENIOS DE VIENA sobre relaciones diplomáticas (1961) y consulares (1963): lo preguntado en examen",
+   "desde": null
+  }
+ ],
+ "maxFilas": 30,
+ "maxFalsas": 16,
+ "cuadros": true,
+ "porMarca": 0.75,
+ "porTexto": true,
+ "rojoOficial": true,
+ "moverCuadro": [
+  [
+   "TRADUCCI|V[IÍ]CTIMA|MEDIDAS DE PROTECCI|COMPETENCIA PARA VALORAR",
+   5
+  ]
+ ],
+ "leyes": [
+  [
+   "^LEY ORGÁNICA 6/1984",
+   "LO 6/1984"
+  ],
+  [
+   "^CAPÍTULO VIII ·",
+   "Ley Procesal Militar"
+  ],
+  [
+   "^LEY ORGÁNICA 19/1994",
+   "LO 19/1994"
+  ],
+  [
+   "^LEY ORGÁNICA 3/2003",
+   "LO 3/2003"
+  ],
+  [
+   "^LEY ORGÁNICA 10/2007",
+   "LO 10/2007"
+  ],
+  [
+   "^LEY 4/1985",
+   "Ley 4/1985"
+  ],
+  [
+   "^CAPÍTULO I · Disposiciones generales$",
+   "Ley 11/2003"
+  ],
+  [
+   "^CAPÍTULO I · Disposiciones generales$",
+   "Ley 25/2007"
+  ],
+  [
+   "^TÍTULO PRELIMINAR · Unión Europea",
+   "Ley 23/2014"
+  ],
+  [
+   "^TÍTULO PRELIMINAR · Disposiciones generales",
+   "Ley 4/2015"
+  ],
+  [
+   "^INSTRUCCIÓN 1/2024",
+   "Instr. 1/2024"
+  ]
+ ],
+ "fuerza": [
+  [
+   "Conveni?[oó]n? de Viena|Convenci[oó]n de Viena",
+   6
+  ],
+  [
+   "4/1985",
+   2
+  ],
+  [
+   "11/2003|25/2007",
+   2
+  ],
+  [
+   "19/1994|10/2007|3/2003|\\bADN\\b",
+   1
+  ],
+  [
+   "4/2015",
+   5
+  ],
+  [
+   "23/2014[\\s\\S]*(orden europea de detenci|r[eé]gimen general|respeto a los derechos|SIRENE|Sistema de Informaci|persona reclamada)",
+   3
+  ],
+  [
+   "23/2014",
+   4
+  ],
+  [
+   "habeas corpus|ilegalmente detenidas|militar|procedimiento se iniciar[aá], salvo",
+   0
+  ],
+  [
+   "equipos conjuntos|conservaci[oó]n de datos",
+   2
+  ],
+  [
+   "testigos|peritos",
+   1
+  ],
+  [
+   "detenci|detenid|ACUDE|celdas|armas de fuego|registro|agentes|Instalaciones",
+   5
+  ]
+ ],
+ "quitar": "Mando a todos los españoles"
+}

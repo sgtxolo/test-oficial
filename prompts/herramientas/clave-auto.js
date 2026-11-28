@@ -51,6 +51,11 @@ function cuadro(v) {
   if (nodos.length) {   // árbol: una fila por rama
     return cab + "<table>\n" + nodos.map(n => { const et = (hijos(n, "vt-et")[0] || ""); const resto = n.replace(et, ""); return "<tr><td><strong>" + esc(plano(et)) + "</strong></td><td>" + celda(etq(resto)) + "</td></tr>"; }).join("\n") + "\n</table>";
   }
+  const ramas = hijos(cuerpo, "vis-rama");
+  if (ramas.length) {
+    const raiz = hijos(cuerpo, "vis-raiz")[0] || "";
+    return cab + "<table>\n" + (raiz ? '<tr><th colspan="2">' + celda(raiz) + "</th></tr>\n" : "") + ramas.map(r => { const sub = hijos(r, "vis-sub")[0] || ""; const hojas = [...sub.matchAll(/<span[^>]*>([\s\S]*?)<\/span>/g)].map(x => celda(x[1])).join("<br>"); return "<tr><td><strong>" + esc(plano(r.replace(sub, ""))) + "</strong></td><td>" + (hojas || celda(sub)) + "</td></tr>"; }).join("\n") + "\n</table>";
+  }
   const cols = hijos(cuerpo, "vis-col");
   if (cols.length) {
     const partes = cols.map(c => ({ h: plano((c.match(/<h5>([\s\S]*?)<\/h5>/) || ["", ""])[1]), l: celda(c.replace(/<h5>[\s\S]*?<\/h5>/, "")) }));
@@ -63,17 +68,19 @@ function cuadro(v) {
 }
 
 /* ---- trocea el Exprés en piezas (bloque-titulo / ex-ficha) ---- */
-let nCuadros = 0;
+let nCuadros = 0; const diferidos = {};
 const piezas = ex.split(cfg.cuadros ? /(?=<div class="bloque-titulo")|(?=<div class="ex-ficha")|(?=<div class="ex-linea")|(?=<div class="vis">)/ : /(?=<div class="bloque-titulo")|(?=<div class="ex-ficha")|(?=<div class="ex-linea")/);
 const normas = cfg.h2.map(() => []); let cur = 0, bloque = "";
 const hdrNorma = {};   // cabecera de ficha (texto plano) → índice de norma
 const pend = cfg.h2.map(h => h.desde ? new RegExp(h.desde, "i") : null);
+let iLey = -1;
 for (const p of piezas) {
-  if (cfg.cuadros && /^<div class="vis">/.test(p)) { normas[cur].push({ cab: "", vis: cuadro(bloqueDiv(p, 0)) }); nCuadros++; continue; }
+  if (cfg.cuadros && /^<div class="vis">/.test(p)) { const v = cuadro(bloqueDiv(p, 0)); const mv = (cfg.moverCuadro || []).find(x => new RegExp(x[0], "i").test(plano(v.split("</h3>")[0]))); (mv ? (diferidos[mv[1]] = diferidos[mv[1]] || []) : normas[cur]).push({ cab: "", vis: v }); nCuadros++; continue; }
   const esBloque = /^<div class="bloque-titulo"/.test(p);
   const esFicha = /^<div class="ex-ficha"/.test(p), esLinea = /^<div class="ex-linea"/.test(p);
   const cab = esBloque ? plano(p.split("</div>")[0]) : (esFicha ? plano((p.match(/<div class="ex-fh">([\s\S]*?)<\/div>/) || ["", ""])[1]) : plano(p));
   for (let k = cur + 1; k < pend.length; k++) if (pend[k] && pend[k].test(cab)) { cur = k; break; }
+  if (esBloque && cfg.leyes && cfg.leyes[iLey + 1] && new RegExp(cfg.leyes[iLey + 1][0], "i").test(cab)) iLey++;
   if (esBloque) { bloque = cab; if (/Preguntas que no se pueden/i.test(cab)) cur = Math.min(cur, pend.length - 1); continue; }
   if (esLinea) { hdrNorma[cab.replace(/\s*:?\s*🎯.*$/, "").replace(/\s+/g, " ").trim()] = cur; continue; }
   if (!esFicha) continue;
@@ -81,14 +88,15 @@ for (const p of piezas) {
   if (!mh) continue;
   if (/RECUERDA del temario/i.test(cab)) { normas[cur].push({ cab, recuerda: true, cuerpo: mh[2] }); continue; }
   hdrNorma[cab] = cur;
-  normas[cur].push({ cab, selloEXOF: /EXOF/.test(mh[1]), selloEX: /(^|[^O])EX\b/.test(plano(mh[1]).replace(/EXOF/g, "")), ast: /✱/.test(mh[1]), cuerpo: mh[2], hdr: mh[1], bloque });
+  normas[cur].push({ cab, selloEXOF: /EXOF/.test(mh[1]), selloEX: /(^|[^O])EX\b/.test(plano(mh[1]).replace(/EXOF/g, "")), ast: /✱/.test(mh[1]), cuerpo: mh[2], hdr: mh[1], bloque, ley: iLey >= 0 ? cfg.leyes[iLey][1] : "" });
 }
+for (const k in diferidos) normas[k].unshift(...diferidos[k]);
 function h3(f) {
   let t = plano(f.hdr).replace(/\s*(EXOF|EX\b|✱)/g, "").replace(/\s*R\d+\b/g, "").replace(/\s+/g, " ").trim();
   const mA = t.match(/^Art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quáter|quater|quinquies|sexies))?)\s*(?:[—–-]\s*(.*))?$/i);
   const mP = (f.hdr.match(/R\d+/g) || []);
   let titulo = mA ? (mA[2] || 'Artículo ' + mA[1]) : t, art = mA ? '<span class="art">art. ' + mA[1] + "</span>" : "";
-  return "<h3>" + esc(titulo) + (f.selloEXOF ? ' <span class="ex">EXOF</span>' : f.selloEX ? ' <span class="ex">EX</span>' : "") + (f.ast ? ' <span class="as">✱</span>' : "") + (mP.length ? " <em>(" + [...new Set(mP)].join(", ") + ")</em>" : "") + (art ? " " + art : "") + "</h3>";
+  return "<h3>" + esc(titulo) + (f.ley ? " · " + esc(f.ley) : "") + (f.selloEXOF ? ' <span class="ex">EXOF</span>' : f.selloEX ? ' <span class="ex">EX</span>' : "") + (f.ast ? ' <span class="as">✱</span>' : "") + (mP.length ? " <em>(" + [...new Set(mP)].join(", ") + ")</em>" : "") + (art ? " " + art : "") + "</h3>";
 }
 let nFichas = 0, nDup = 0;
 /* líneas de artículo que ya están enteras dentro de un cuadro (cfg.cuadros): no se repiten */
@@ -136,6 +144,7 @@ function linea(q) {
   while (segs.length > 1 && /^(\(.*?\)\s*)?(Ley Org|Instrucci|Protocolo|Norma T|Resoluci|Acuerdo|Real Decreto|Seg[uú]n el Protocolo)/i.test(segs[0]) && segs[0].length < 300) segs.shift();
   if (segs.length > 1 && segs[0].length < 90 && !/\?$/.test(segs[0])) titulo = segs.shift().replace(/[.:]$/, "");
   let resto = segs.join(" ").replace(/\s*\(?señal[ae]\s+la\s+\w+\)?[.:]?\s*$/i, "").replace(/\s*Se[ñn]ale la \w+\.?$/i, "").replace(/_{3,}/g, "…");
+  if (!resto && !titulo) resto = p.slice(-230);
   if (resto.length > 230) resto = resto.slice(0, 227).replace(/\s+\S*$/, "") + "…";
   return "<li>" + (titulo ? "<strong>" + esc(titulo) + "</strong>: " : "") + esc(resto) + " → " + (/^\s*ningun/i.test(q.o[q.c]) ? '<b class="p">ninguna opción del test era correcta</b> (descartadas: ' + esc(q.o.filter((o, i) => i !== q.c).join(" · ").replace(/\s+/g, " ")) + ")</li>" : (esInc(q) ? '<b class="p">FALSO</b>: ' : "") + "<mark>" + esc(respuesta(q)) + "</mark></li>");
 }
@@ -201,6 +210,8 @@ const trF = oficiales.filter(esInc).slice(0, 25).map(q => "<li><strong>Señale l
 const trampas = "<ul>\n" + tr.concat(trF).join("\n") + "\n</ul>";
 
 for (const [re, av] of cfg.avisos || []) { let n = 0; cuerpo = cuerpo.replace(/<li>(?:(?!<\/li>)[\s\S])*<\/li>/g, li => new RegExp(re, "i").test(plano(li)) ? (n++, li.replace(/<\/li>$/, " <strong>⚠ " + av + "</strong></li>")) : li); console.log("aviso «" + re + "»: " + n + " líneas"); }
+// líneas de relleno (cfg.quitar): se borran y, si el artículo se queda sin ninguna, también su título
+if (cfg.quitar) cuerpo = cuerpo.replace(/<li>(?:(?!<\/li>)[\s\S])*<\/li>\n?/g, li => new RegExp(cfg.quitar, "i").test(plano(li)) ? "" : li).replace(/<h3>(?:(?!<\/h3>)[\s\S])*<\/h3>\n<ul>\n?<\/ul>\n?/g, "");
 fs.writeFileSync(dir + "t" + N + "-cuerpo.html", cuerpo);
 fs.writeFileSync(dir + "t" + N + "-trampas.html", trampas);
 fs.writeFileSync(dir + "t" + N + ".json", JSON.stringify({ titulo: cfg.titulo, h1: cfg.h1, v: cfg.v || "844" }));
