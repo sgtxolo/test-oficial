@@ -1,0 +1,2968 @@
+[
+ {
+  "lote": "d1",
+  "i": 3,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "1",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. La dignidad humana es:",
+  "opciones": [
+   "Inmutable, respetada y protegida.",
+   "Inalienable, respetada e inmutable.",
+   "Ninguna de las opciones es correcta.",
+   "Inviolable y será respetada y protegida."
+  ],
+  "correcta": 3,
+  "lila": "Art. 1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "La dignidad humana es inviolable. Será respetada y protegida.",
+  "exp": "La Carta usa los términos «inviolable» y «será respetada y protegida»; las demás cambian el adjetivo por «inmutable» o «inalienable».",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "64-0-0",
+  "parT": "art 1 la dignidad humana es inviolable sera respetada y protegida",
+  "fR": 1,
+  "pz": "k-1",
+  "sec": 16,
+  "id": "1-558"
+ },
+ {
+  "lote": "d1",
+  "i": 4,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "31",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "30",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. ¿Cuál de los siguientes derechos de los trabajadores NO se encuentra recogido en la presente Carta?:",
+  "opciones": [
+   "Todo trabajador tiene derecho a trabajar en condiciones que respeten su salud, seguridad y dignidad.",
+   "Todo trabajador tiene derecho a la limitación de la duración máxima del trabajo y a períodos de descanso diarios y semanales, así como a un período de vacaciones anuales retribuidas.",
+   "Todo trabajador tiene derecho a una remuneración acorde con el puesto de trabajo desempeñado y en ningún caso inferior al Salario Mínimo Interprofesional.",
+   "Todo trabajador tiene derecho a protección en caso de despido injustificado, de conformidad con el Derecho de la Unión y con las legislaciones y prácticas nacionales."
+  ],
+  "correcta": 2,
+  "lila": "Art. 31 y Art. 30 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 31. 1. Todo trabajador tiene derecho a trabajar en condiciones que respeten su salud, seguridad y dignidad. 2. Todo trabajador tiene derecho a la limitación de la duración máxima del trabajo y a períodos de descanso diarios y semanales, así como a un período de vacaciones anuales retribuidas.<br>Art. 30. Todo trabajador tiene derecho a protección en caso de despido injustificado, de conformidad con el Derecho de la Unión y con las legislaciones y prácticas nacionales.",
+  "exp": "La Carta no recoge una remuneración mínima ligada al Salario Mínimo; las otras tres reproducen los artículos 31 y 30.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "79-1",
+  "parT": "art 31 1 todo trabajador tiene derecho a trabajar en condiciones que respeten su salud seg",
+  "fR": 0.73,
+  "pz": null,
+  "sec": 17,
+  "id": "1-559"
+ },
+ {
+  "lote": "d1",
+  "i": 5,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "pre"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo. La Unión contribuye a defender y fomentar los valores comunes dentro del respeto de la diversidad de culturas y tradiciones de los pueblos de Europa, así como de la identidad nacional de los Estados miembros y de la organización de sus poderes públicos, a escala... Señale la opción INCORRECTA:",
+  "opciones": [
+   "Regional.",
+   "Nacional.",
+   "Local.",
+   "Internacional."
+  ],
+  "correcta": 3,
+  "lila": "Preámbulo · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "La Unión contribuye a defender y fomentar estos valores comunes dentro del respeto de la diversidad de culturas y tradiciones de los pueblos de Europa, así como de la identidad nacional de los Estados miembros y de la organización de sus poderes públicos a escala nacional, regional y local; trata de fomentar un desarrollo equilibrado y sostenible y garantiza la libre circulación de personas, servicios, mercancías y capitales, así como la libertad de establecimiento.",
+  "exp": "El preámbulo habla de la organización de los poderes públicos a escala nacional, regional y local; no menciona la internacional.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "63-2",
+  "parT": "la union contribuye a defender y fomentar estos valores comunes dentro del respeto de la d",
+  "fR": 1,
+  "pz": "k-pre",
+  "sec": 15,
+  "id": "1-560"
+ },
+ {
+  "lote": "d1",
+  "i": 6,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "37",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. ¿Conforme a qué principio se integrarán y garantizarán en las políticas de la Unión un nivel elevado de protección del medio ambiente y la mejora de su calidad?:",
+  "opciones": [
+   "De desarrollo sostenible.",
+   "De respeto mutuo.",
+   "De solidaridad.",
+   "De universalidad de las medidas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 37 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "En las políticas de la Unión se integrarán y garantizarán, conforme al principio de desarrollo sostenible, un nivel elevado de protección del medio ambiente y la mejora de su calidad.",
+  "exp": "El artículo 37 fija el principio de desarrollo sostenible; no cita el respeto mutuo, la solidaridad ni la universalidad.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "79-4",
+  "parT": "art 37 en las politicas de la union se integraran y garantizaran conforme al principio de ",
+  "fR": 1,
+  "pz": "k-37",
+  "sec": 17,
+  "id": "1-561"
+ },
+ {
+  "lote": "d1",
+  "i": 7,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "52",
+    "ap": "1"
+   },
+   {
+    "n": "CDF",
+    "art": "52",
+    "ap": "2"
+   },
+   {
+    "n": "CDF",
+    "art": "52",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Respecto al alcance e interpretación de los derechos y principios, señale la opción INCORRECTA:",
+  "opciones": [
+   "Dentro del respeto del principio de subsidiariedad, sólo podrán introducirse limitaciones cuando sean necesarias y respondan efectivamente a objetivos de interés general reconocidos por la Unión o a la necesidad de protección de los derechos y libertades de los demás.",
+   "En la medida en que la presente Carta contenga derechos que correspondan a derechos garantizados por el Convenio Europeo para la Protección de los Derechos Humanos y de las Libertades Fundamentales, su sentido y alcance serán iguales a los que les confiere dicho Convenio.",
+   "Cualquier limitación del ejercicio de los derechos y libertades reconocidos por la presente Carta deberá ser establecida por la ley y respetar el contenido esencial de dichos derechos y libertades.",
+   "Los derechos reconocidos por la presente Carta que constituyen disposiciones de los Tratados se ejercerán en las condiciones y dentro de los límites determinados por éstos."
+  ],
+  "correcta": 0,
+  "lila": "Art. 52.1 y Art. 52.2 y Art. 52.3 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 52. 1. Cualquier limitación del ejercicio de los derechos y libertades reconocidos por la presente Carta deberá ser establecida por la ley y respetar el contenido esencial de dichos derechos y libertades. Dentro del respeto del principio de proporcionalidad, sólo podrán introducirse limitaciones cuando sean necesarias y respondan efectivamente a objetivos de interés general reconocidos por la Unión o a la necesidad de protección de los derechos y libertades de los demás.<br>Art. 52. 2. Los derechos reconocidos por la presente Carta que constituyen disposiciones de los Tratados se ejercerán en las condiciones y dentro de los límites determinados por éstos.<br>Art. 52. 3. En la medida en que la presente Carta contenga derechos que correspondan a derechos garantizados por el Convenio Europeo para la Protección de los Derechos Humanos y de las Libertades Fundamentales, su sentido y alcance serán iguales a los que les confiere dicho Convenio. Esta disposición no obstará a que el Derecho de la Unión conceda una protección más extensa.",
+  "exp": "Las limitaciones se someten al principio de proporcionalidad, no al de subsidiariedad. Las otras tres son literales del artículo 52.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "92-3-0",
+  "parT": "3 en la medida en que la presente carta contenga derechos que correspondan a derechos gara",
+  "fR": 0.53,
+  "pz": "k-52",
+  "sec": 18,
+  "id": "1-562"
+ },
+ {
+  "lote": "d1",
+  "i": 8,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "14",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derecho a la educación. Se respetan, de acuerdo con las leyes nacionales que regulen su ejercicio, la libertad de creación de centros docentes dentro del respeto de los principios democráticos, así como el derecho de los padres a garantizar la educación y la enseñanza de sus hijos conforme, a sus convicciones... Señale la opción INCORRECTA:",
+  "opciones": [
+   "Pedagógicas.",
+   "Filosóficas.",
+   "Sociales.",
+   "Religiosas."
+  ],
+  "correcta": 2,
+  "lila": "Art. 14.3 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "3. Se respetan, de acuerdo con las leyes nacionales que regulen su ejercicio, la libertad de creación de centros docentes dentro del respeto de los principios democráticos, así como el derecho de los padres a garantizar la educación y la enseñanza de sus hijos conforme a sus convicciones religiosas, filosóficas y pedagógicas.",
+  "exp": "Son las convicciones religiosas, filosóficas y pedagógicas; las «sociales» no aparecen.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "69-3",
+  "parT": "art 14 1 toda persona tiene derecho a la educacion y al acceso a la formacion profesional ",
+  "fR": 0,
+  "pz": "k-14",
+  "sec": 16,
+  "id": "1-563"
+ },
+ {
+  "lote": "d1",
+  "i": 9,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "49",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Principios de legalidad y de proporcionalidad de los delitos y las penas. Señale la opción INCORRECTA:",
+  "opciones": [
+   "La intensidad de las penas no deberá ser desproporcionada en relación con la infracción.",
+   "Nadie podrá ser condenado por una acción o una omisión que, en el momento en que haya Sido cometida, no constituya una infracción según el Derecho interno o el Derecho internacional.",
+   "No podrá imponerse una pena más grave que la aplicable en el momento en que la infracción haya sido cometida. Si con posterioridad a esta infracción la ley dispone una pena más leve, deberá aplicarse ésta.",
+   "No será posible el juicio y el castigo de una persona por una acción u omisión no penada por la ley, aun cuando fuera constitutiva de delito según los principios generales reconocidos por el conjunto de las naciones."
+  ],
+  "correcta": 3,
+  "lila": "Art. 49 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Nadie podrá ser condenado por una acción o una omisión que, en el momento en que haya sido cometida, no constituya una infracción según el Derecho interno o el Derecho internacional. Del mismo modo, no podrá imponerse una pena más grave que la aplicable en el momento en que la infracción haya sido cometida. Si con posterioridad a esta infracción la ley dispone una pena más leve, deberá aplicarse ésta. 2. El presente artículo no impedirá el juicio y el castigo de una persona culpable de una acción o una omisión que, en el momento en que haya sido cometida, fuera constitutiva de delito según los principios generales reconocidos por el conjunto de las naciones. 3. La intensidad de las penas no deberá ser desproporcionada en relación con la infracción.",
+  "exp": "El artículo 49.2 dice lo contrario: sí cabe juzgar y castigar lo que fuera delito según los principios generales reconocidos por el conjunto de las naciones. Las otras tres son correctas.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "91-0",
+  "parT": "art 49 1 nadie podra ser condenado por una accion o una omision que en el momento en que h",
+  "fR": 0.83,
+  "pz": "k-49",
+  "sec": 18,
+  "id": "1-564"
+ },
+ {
+  "lote": "d1",
+  "i": 10,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "5",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. En relación con el trabajo, señale la opción INCORRECTA:",
+  "opciones": [
+   "Nadie podrá ser sometido a esclavitud.",
+   "Se prohíbe la trata de seres humanos.",
+   "Nadie podrá ser constreñido a realizar un trabajo.",
+   "Nadie podrá ser sometido a servidumbre."
+  ],
+  "correcta": 2,
+  "lila": "Art. 5 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Nadie podrá ser sometido a esclavitud o servidumbre. 2. Nadie podrá ser constreñido a realizar un trabajo forzado u obligatorio. 3. Se prohíbe la trata de seres humanos.",
+  "exp": "Lo prohibido es constreñir a un trabajo forzado u obligatorio, no a «un trabajo» sin más. Las demás reproducen el artículo 5.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "64-4-0",
+  "parT": "art 5 1 nadie podra ser sometido a esclavitud o servidumbre 2 nadie podra ser constrenido ",
+  "fR": 1,
+  "pz": "k-5",
+  "sec": 16,
+  "id": "1-565"
+ },
+ {
+  "lote": "d1",
+  "i": 11,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "1",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Según el artículo 1 de la Carta de los Derechos Fundamentales de la Unión Europea la dignidad humana es:",
+  "opciones": [
+   "Inquebrantable.",
+   "Inalienable.",
+   "Insustituible.",
+   "Inviolable."
+  ],
+  "correcta": 3,
+  "lila": "Art. 1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "La dignidad humana es inviolable. Será respetada y protegida.",
+  "exp": "El artículo 1 la declara inviolable; no usa «inquebrantable», «inalienable» ni «insustituible».",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "64-0",
+  "parT": "art 1 la dignidad humana es inviolable sera respetada y protegida",
+  "fR": 1,
+  "pz": "k-1",
+  "sec": 16,
+  "id": "1-566"
+ },
+ {
+  "lote": "d1",
+  "i": 12,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "41",
+    "ap": "2"
+   },
+   {
+    "n": "CDF",
+    "art": "41",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Toda persona tiene derecho a que las instituciones y órganos de la Unión traten sus asuntos imparcial y equitativamente y dentro de un plazo razonable. En particular, ¿qué incluye este derecho?:",
+  "opciones": [
+   "El derecho de toda persona a ser oída antes de que se tome en contra suya una medida.",
+   "El derecho de toda persona a acceder a los expedientes de la Unión, dentro del respeto de los intereses legítimos de la confidencialidad y del Secreto profesional y comercial.",
+   "El derecho a la reparación de los daños causados por las instituciones de la Unión o sus agentes, de conformidad con las leyes nacionales que rijan este derecho.",
+   "La obligación que incumbe a la administración de motivar sus decisiones."
+  ],
+  "correcta": 3,
+  "lila": "Art. 41.2 y Art. 41.3 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 41. 2. Este derecho incluye en particular: a) el derecho de toda persona a ser oída antes de que se tome en contra suya una medida individual que la afecte desfavorablemente; b) el derecho de toda persona a acceder al expediente que le concierna, dentro del respeto de los intereses legítimos de la confidencialidad y del secreto profesional y comercial; c) la obligación que incumbe a la administración de motivar sus decisiones.<br>Art. 41. 3. Toda persona tiene derecho a la reparación por la Unión de los daños causados por sus instituciones o sus agentes en el ejercicio de sus funciones, de conformidad con los principios generales comunes a los Derechos de los Estados miembros.",
+  "exp": "Es literal la obligación de motivar las decisiones. La audiencia es previa a una medida individual desfavorable, el acceso es al expediente que concierna a la persona y la reparación se rige por los principios generales comunes, no por leyes nacionales.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "87-1",
+  "parT": "art 41 1 toda persona tiene derecho a que las instituciones organos y organismos de la uni",
+  "fR": 1,
+  "pz": "k-41",
+  "sec": 18,
+  "id": "1-567"
+ },
+ {
+  "lote": "d1",
+  "i": 13,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "52",
+    "ap": "1"
+   },
+   {
+    "n": "CDF",
+    "art": "52",
+    "ap": "3"
+   },
+   {
+    "n": "CDF",
+    "art": "52",
+    "ap": "4"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Alcance e interpretación de los derechos y principios. Señale la opción INCORRECTA:",
+  "opciones": [
+   "En la medida en que la presente Carta contenga derechos que correspondan a derechos garantizados por el Convenio Europeo para la Protección de los Derechos Humanos y de las Libertades Fundamentales, su sentido y alcance serán iguales a los que les confiere dicho Convenio.",
+   "Cualquier limitación del ejercicio de los derechos y libertades reconocidos por la presente Carta deberá ser establecida por la ley y respetar el contenido esencial de dichos derechos y libertades.",
+   "En la medida en que la presente Carta reconozca derechos fundamentales resultantes de las tradiciones constitucionales comunes a los Estados miembros, dichas tradiciones se interpretarán con carácter subsidiario a los derechos fundamentales reconocidos en la Carta y siempre en ausencia de éstos.",
+   "Dentro del respeto del principio de proporcionalidad, sólo podrán introducirse limitaciones cuando sean necesarias y respondan efectivamente a objetivos de interés general reconocidos por la Unión o a la necesidad de protección de los derechos y libertades de los demás."
+  ],
+  "correcta": 2,
+  "lila": "Art. 52.1 y Art. 52.3 y Art. 52.4 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 52. 1. Cualquier limitación del ejercicio de los derechos y libertades reconocidos por la presente Carta deberá ser establecida por la ley y respetar el contenido esencial de dichos derechos y libertades. Dentro del respeto del principio de proporcionalidad, sólo podrán introducirse limitaciones cuando sean necesarias y respondan efectivamente a objetivos de interés general reconocidos por la Unión o a la necesidad de protección de los derechos y libertades de los demás.<br>Art. 52. 3. En la medida en que la presente Carta contenga derechos que correspondan a derechos garantizados por el Convenio Europeo para la Protección de los Derechos Humanos y de las Libertades Fundamentales, su sentido y alcance serán iguales a los que les confiere dicho Convenio. Esta disposición no obstará a que el Derecho de la Unión conceda una protección más extensa.<br>Art. 52. 4. En la medida en que la presente Carta reconozca derechos fundamentales resultantes de las tradiciones constitucionales comunes a los Estados miembros, dichos derechos se interpretarán en armonía con las citadas tradiciones.",
+  "exp": "Esos derechos se interpretan en armonía con las tradiciones constitucionales comunes, no con carácter subsidiario. Las otras tres son literales.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "92-3-0",
+  "parT": "3 en la medida en que la presente carta contenga derechos que correspondan a derechos gara",
+  "fR": 0.72,
+  "pz": "k-52",
+  "sec": 18,
+  "id": "1-568"
+ },
+ {
+  "lote": "d1",
+  "i": 14,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "8",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Protección de datos de carácter personal. Señale la opción CORRECTA:",
+  "opciones": [
+   "El respeto a las normas de protección de datos de carácter personal estará sujeto al control judicial.",
+   "Los datos de carácter personal se tratarán de modo leal, para fines concretos y sobre la base del consentimiento de la persona afectada o en virtud de otro fundamento legítimo previsto por la ley.",
+   "Toda persona tiene derecho a la protección de todos los datos de carácter personal.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Toda persona tiene derecho a la protección de los datos de carácter personal que le conciernan. 2. Estos datos se tratarán de modo leal, para fines concretos y sobre la base del consentimiento de la persona afectada o en virtud de otro fundamento legítimo previsto por la ley. Toda persona tiene derecho a acceder a los datos recogidos que le conciernan y a obtener su rectificación. 3. El respeto de estas normas estará sujeto al control de una autoridad independiente.",
+  "exp": "Es literal el apartado 2. El control corresponde a una autoridad independiente (no judicial) y la protección se refiere a los datos que conciernan a la persona, no a todos los datos.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "67-0",
+  "parT": "art 8 1 toda persona tiene derecho a la proteccion de los datos de caracter personal que l",
+  "fR": 1,
+  "pz": "k-8",
+  "sec": 16,
+  "id": "1-569"
+ },
+ {
+  "lote": "d1",
+  "i": 15,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "23",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Igualdad entre mujeres y hombres. Señale la opción INCORRECTA. La igualdad entre mujeres y hombres deberá garantizarse en todos los ámbitos, inclusive, ¿en qué materias?:",
+  "opciones": [
+   "Materia de formación.",
+   "Materia de trabajo.",
+   "Materia de empleo.",
+   "Materia de retribución."
+  ],
+  "correcta": 0,
+  "lila": "Art. 23 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "La igualdad entre mujeres y hombres deberá garantizarse en todos los ámbitos, inclusive en materia de empleo, trabajo y retribución. El principio de igualdad no impide el mantenimiento o la adopción de medidas que supongan ventajas concretas en favor del sexo menos representado.",
+  "exp": "El artículo 23 cita empleo, trabajo y retribución; la formación no se menciona.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "pz": "k-23",
+  "par": "73-2",
+  "parT": "art 23 la igualdad entre mujeres y hombres debera garantizarse en todos los ambitos inclus",
+  "fR": 1,
+  "sec": 17,
+  "id": "1-570"
+ },
+ {
+  "lote": "d1",
+  "i": 16,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "43",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "46",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "42",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "44",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Toda persona física que resida en un Estado miembro de la Unión tiene derecho a someter al Defensor del Pueblo de la Unión los casos de mala administración del Tribunal de Justicia en el ejercicio de sus funciones jurisdiccionales.",
+   "Todo ciudadano de la Unión podrá acogerse en el territorio de un tercer país en el que no esté representado el Estado miembro del que sea nacional a la protección de las autoridades consulares de cualquier Estado miembro en las mismas condiciones que los nacionales de este Estado.",
+   "Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a acceder a los documentos de las instituciones, órganos y organismos de la Unión, cualquiera que sea su soporte.",
+   "Toda persona jurídica que tenga su domicilio social en un Estado miembro tiene el derecho de petición ante el Parlamento Europeo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 43 y Art. 46 y Art. 42 y Art. 44 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 43. Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a someter al Defensor del Pueblo Europeo los casos de mala administración en la actuación de las instituciones, órganos u organismos de la Unión, con exclusión del Tribunal de Justicia de la Unión Europea en el ejercicio de sus funciones jurisdiccionales.<br>Art. 46. Todo ciudadano de la Unión podrá acogerse, en el territorio de un tercer país en el que no esté representado el Estado miembro del que sea nacional, a la protección de las autoridades diplomáticas y consulares de cualquier Estado miembro, en las mismas condiciones que los nacionales de este Estado.<br>Art. 42. Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a acceder a los documentos de las instituciones, órganos y organismos de la Unión, cualquiera que sea su soporte.<br>Art. 44. Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene el derecho de petición ante el Parlamento Europeo.",
+  "exp": "El Defensor del Pueblo no conoce de la actuación del Tribunal de Justicia en el ejercicio de sus funciones jurisdiccionales. Las demás recogen los artículos 46, 42 y 44.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "88-0-1",
+  "parT": "art 43 todo ciudadano de la union y toda persona fisica o juridica que resida o tenga su d",
+  "fR": 1,
+  "pz": "k-43",
+  "sec": 18,
+  "id": "1-571"
+ },
+ {
+  "lote": "d1",
+  "i": 17,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "43",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a someter al Defensor del Pueblo Europeo los casos de __________ en la actuación de las instituciones, órganos u organismos de la Unión, con exclusión del Tribunal de Justicia de la Unión Europea en el ejercicio de sus funciones jurisdiccionales:",
+  "opciones": [
+   "Lesión de intereses legítimos.",
+   "Vulneración de los derechos fundamentales de la presente Carta.",
+   "Todas las opciones son correctas.",
+   "Mala administración."
+  ],
+  "correcta": 3,
+  "lila": "Art. 43 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a someter al Defensor del Pueblo Europeo los casos de mala administración en la actuación de las instituciones, órganos u organismos de la Unión, con exclusión del Tribunal de Justicia de la Unión Europea en el ejercicio de sus funciones jurisdiccionales.",
+  "exp": "El artículo 43 habla de «casos de mala administración»; no de lesión de intereses ni de vulneración de derechos.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "88-0-0",
+  "parT": "art 43 todo ciudadano de la union y toda persona fisica o juridica que resida o tenga su d",
+  "fR": 1,
+  "pz": "k-43",
+  "sec": 18,
+  "id": "1-572"
+ },
+ {
+  "lote": "d1",
+  "i": 18,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "41",
+    "ap": "2"
+   },
+   {
+    "n": "CDF",
+    "art": "41",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derecho a una buena administración. ¿Qué incluye en particular este derecho?:",
+  "opciones": [
+   "El derecho a la reparación por la Unión de los daños causados por sus instituciones o sus agentes.",
+   "El derecho de toda persona a ser oída antes de que se tome en contra suya una medida individual que afecte a sus intereses.",
+   "La obligación que incumbe a la administración de motivar sus decisiones.",
+   "El derecho de toda persona a acceder a los expedientes de la Unión, dentro del respeto de los intereses legítimos de la confidencialidad y del secreto profesional y comercial."
+  ],
+  "correcta": 2,
+  "lila": "Art. 41.2 y Art. 41.3 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 41. 2. Este derecho incluye en particular: a) el derecho de toda persona a ser oída antes de que se tome en contra suya una medida individual que la afecte desfavorablemente; b) el derecho de toda persona a acceder al expediente que le concierna, dentro del respeto de los intereses legítimos de la confidencialidad y del secreto profesional y comercial; c) la obligación que incumbe a la administración de motivar sus decisiones.<br>Art. 41. 3. Toda persona tiene derecho a la reparación por la Unión de los daños causados por sus instituciones o sus agentes en el ejercicio de sus funciones, de conformidad con los principios generales comunes a los Derechos de los Estados miembros.",
+  "exp": "La motivación es una de las tres letras del apartado 2. La reparación está en el apartado 3 y las otras dos alteran el texto («afecte a sus intereses», «acceder a los expedientes de la Unión»).",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "87-1",
+  "parT": "art 41 1 toda persona tiene derecho a que las instituciones organos y organismos de la uni",
+  "fR": 1,
+  "pz": "k-41",
+  "sec": 18,
+  "id": "1-573"
+ },
+ {
+  "lote": "d1",
+  "i": 19,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "32",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Respecto a la protección de los jóvenes y el acceso al trabajo infantil, señale la opción INCORRECTA:",
+  "opciones": [
+   "El trabajo infantil está permitido con determinadas limitaciones dimanantes de disposiciones favorables a los mismos.",
+   "Los jóvenes admitidos a trabajar deben disponer de condiciones de trabajo adaptadas a su edad.",
+   "Los jóvenes admitidos a trabajar estarán protegidos contra la explotación económica.",
+   "Salvo excepciones limitadas, la edad mínima de admisión al trabajo no podrá ser inferior a la edad en que concluye el período de escolaridad obligatoria."
+  ],
+  "correcta": 0,
+  "lila": "Art. 32 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Se prohíbe el trabajo infantil. La edad mínima de admisión al trabajo no podrá ser inferior a la edad en que concluye el período de escolaridad obligatoria, sin perjuicio de disposiciones más favorables para los jóvenes y salvo excepciones limitadas. Los jóvenes admitidos a trabajar deberán disponer de condiciones de trabajo adaptadas a su edad y estar protegidos contra la explotación económica o contra cualquier trabajo que pueda ser perjudicial para su seguridad, su salud, su desarrollo físico, psíquico, moral o social, o que pueda poner en peligro su educación.",
+  "exp": "El artículo 32 prohíbe el trabajo infantil. Las otras tres recogen lo que el propio artículo dispone.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "79-2-0",
+  "parT": "art 32 se prohibe el trabajo infantil la edad minima de admision al trabajo no podra ser i",
+  "fR": 0.58,
+  "pz": "k-32",
+  "sec": 17,
+  "id": "1-574"
+ },
+ {
+  "lote": "d1",
+  "i": 20,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "51",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Las disposiciones de la Carta de los derechos fundamentales de la Unión Europea están dirigidas a las instituciones, órganos y organismos de la Unión, dentro del respeto del principio de __________ así como a los Estados miembros únicamente cuando apliquen el Derecho de la Unión:",
+  "opciones": [
+   "Subsidiariedad.",
+   "Necesidad.",
+   "Proporcionalidad.",
+   "Legalidad."
+  ],
+  "correcta": 0,
+  "lila": "Art. 51.1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Las disposiciones de la presente Carta están dirigidas a las instituciones, órganos y organismos de la Unión, dentro del respeto del principio de subsidiariedad, así como a los Estados miembros únicamente cuando apliquen el Derecho de la Unión. Por consiguiente, éstos respetarán los derechos, observarán los principios y promoverán su aplicación, con arreglo a sus respectivas competencias y dentro de los límites de las competencias que los Tratados atribuyen a la Unión.",
+  "exp": "La Carta se dirige a las instituciones dentro del respeto del principio de subsidiariedad; no del de necesidad, proporcionalidad o legalidad.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "92-0",
+  "parT": "art 51 1 las disposiciones de la presente carta estan dirigidas a las instituciones organo",
+  "fR": 1,
+  "pz": "k-51",
+  "sec": 18,
+  "id": "1-575"
+ },
+ {
+  "lote": "d1",
+  "i": 21,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "32",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "39",
+    "ap": "1"
+   },
+   {
+    "n": "CDF",
+    "art": "37",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "43",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Se prohíbe el trabajo infantil. La edad mínima de admisión al trabajo no podrá ser inferior a la edad en que concluye el período de escolaridad obligatoria, sin perjuicio de disposiciones más favorables para los jóvenes y salvo excepciones limitadas.",
+   "Todo ciudadano de la Unión tiene derecho de sufragio activo y pasivo en las elecciones al Parlamento Europeo en el Estado miembro en que resida, en las mismas condiciones que los nacionales de dicho Estado.",
+   "En las políticas de la Unión se integrarán y garantizarán, conforme al principio de desarrollo sostenible, un nivel elevado de protección del medio ambiente y la mejora de su calidad.",
+   "Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a someter al Defensor del Pueblo Europeo los casos de mala administración en la actuación de las instituciones, órganos u organismos de la Unión."
+  ],
+  "correcta": 3,
+  "lila": "Art. 32 y Art. 39.1 y Art. 37 y Art. 43 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 32. Se prohíbe el trabajo infantil. La edad mínima de admisión al trabajo no podrá ser inferior a la edad en que concluye el período de escolaridad obligatoria, sin perjuicio de disposiciones más favorables para los jóvenes y salvo excepciones limitadas. Los jóvenes admitidos a trabajar deberán disponer de condiciones de trabajo adaptadas a su edad y estar protegidos contra la explotación económica o contra cualquier trabajo que pueda ser perjudicial para su seguridad, su salud, su desarrollo físico, psíquico, moral o social, o que pueda poner en peligro su educación.<br>Art. 39. 1. Todo ciudadano de la Unión tiene derecho de sufragio activo y pasivo en las elecciones al Parlamento Europeo en el Estado miembro en que resida, en las mismas condiciones que los nacionales de dicho Estado.<br>Art. 37. En las políticas de la Unión se integrarán y garantizarán, conforme al principio de desarrollo sostenible, un nivel elevado de protección del medio ambiente y la mejora de su calidad.<br>Art. 43. Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a someter al Defensor del Pueblo Europeo los casos de mala administración en la actuación de las instituciones, órganos u organismos de la Unión, con exclusión del Tribunal de Justicia de la Unión Europea en el ejercicio de sus funciones jurisdiccionales.",
+  "exp": "La opción señalada omite la exclusión del Tribunal de Justicia de la Unión Europea en el ejercicio de sus funciones jurisdiccionales. Las otras tres son literales.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "79-2-0",
+  "parT": "art 32 se prohibe el trabajo infantil la edad minima de admision al trabajo no podra ser i",
+  "fR": 0.38,
+  "pz": "k-32",
+  "sec": 17,
+  "id": "1-576"
+ },
+ {
+  "lote": "d1",
+  "i": 22,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "49",
+    "ap": "3"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. En lo relativo a los principios de legalidad y proporcionalidad de los delitos y penas, ¿cómo NO debe ser la intensidad de estas últimas en relación con la infracción cometida?:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Indiscriminada.",
+   "Retroactiva.",
+   "Desproporcionada."
+  ],
+  "correcta": 3,
+  "lila": "Art. 49.3 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "3. La intensidad de las penas no deberá ser desproporcionada en relación con la infracción.",
+  "exp": "El texto dice que la intensidad de las penas no deberá ser desproporcionada; no usa «indiscriminada» ni «retroactiva».",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "91-2",
+  "parT": "3 la intensidad de las penas no debera ser desproporcionada en relacion con la infraccion",
+  "fR": 1,
+  "pz": "k-49",
+  "sec": 18,
+  "id": "1-577"
+ },
+ {
+  "lote": "d1",
+  "i": 23,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "23",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "20",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "21",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Carta de los derechos fundamentales de la Unión Europea. Respecto a la igualdad, señale la opción INCORRECTA:",
+  "opciones": [
+   "El principio de igualdad impide el mantenimiento de medidas que supongan ventajas concretas en favor del sexo menos representado.",
+   "La igualdad entre mujeres y hombres deberá garantizarse en todos los ámbitos.",
+   "Todas las personas son iguales ante la ley.",
+   "Queda prohibida toda discriminación por razón de nacionalidad, en el ámbito de aplicación de los Tratados y sin perjuicio de sus disposiciones particulares."
+  ],
+  "correcta": 0,
+  "lila": "Art. 23 y Art. 20 y Art. 21.2 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 23. La igualdad entre mujeres y hombres deberá garantizarse en todos los ámbitos, inclusive en materia de empleo, trabajo y retribución. El principio de igualdad no impide el mantenimiento o la adopción de medidas que supongan ventajas concretas en favor del sexo menos representado.<br>Art. 20. Todas las personas son iguales ante la ley.<br>Art. 21. 2. Se prohíbe toda discriminación por razón de nacionalidad en el ámbito de aplicación de los Tratados y sin perjuicio de sus disposiciones particulares.",
+  "exp": "El principio de igualdad NO impide esas medidas en favor del sexo menos representado. Las otras tres son correctas.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "pz": "k-23",
+  "par": "73-2-0",
+  "parT": "art 23 la igualdad entre mujeres y hombres debera garantizarse en todos los ambitos inclus",
+  "fR": 1,
+  "sec": 17,
+  "id": "1-578"
+ },
+ {
+  "lote": "d1",
+  "i": 24,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "pre"
+   }
+  ],
+  "pregunta": "Carta de los derechos fundamentales de la Unión Europea. De los siguientes, ¿en qué principio se basa la Unión?:",
+  "opciones": [
+   "En el principio de solidaridad.",
+   "En el principio de igualdad.",
+   "En el principio de democracia.",
+   "En el principio de libertad."
+  ],
+  "correcta": 2,
+  "lila": "Preámbulo · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Consciente de su patrimonio espiritual y moral, la Unión está fundada sobre los valores indivisibles y universales de la dignidad humana, la libertad, la igualdad y la solidaridad, y se basa en los principios de la democracia y el Estado de Derecho. Al instituir la ciudadanía de la Unión y crear un espacio de libertad, seguridad y justicia, sitúa a la persona en el centro de su actuación.",
+  "exp": "Según el preámbulo la Unión «se basa en los principios de la democracia y el Estado de Derecho»; dignidad, libertad, igualdad y solidaridad son valores, no esos principios.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "63-1",
+  "parT": "consciente de su patrimonio espiritual y moral la union esta fundada sobre los valores ind",
+  "fR": 1,
+  "pz": "k-pre",
+  "sec": 15,
+  "id": "1-579"
+ },
+ {
+  "lote": "d1",
+  "i": 25,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "32",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Respecto a la prohibición del trabajo infantil y protección de los jóvenes en el trabajo, señale la opción CORRECTA:",
+  "opciones": [
+   "Los jóvenes admitidos a trabajar deberán disponer de condiciones de trabajo adaptadas a su edad y estar protegidos contra la explotación económica o contra cualquier trabajo que pueda ser perjudicial para su seguridad, su salud, su desarrollo físico, psíquico, moral o social, o que pueda poner en peligro su educación.",
+   "La edad mínima de admisión al trabajo no podrá ser inferior a la edad en que concluye el período de escolaridad obligatoria, sin perjuicio de disposiciones más favorables para los jóvenes y salvo excepciones limitadas.",
+   "Se prohíbe el trabajo infantil.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 32 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Se prohíbe el trabajo infantil. La edad mínima de admisión al trabajo no podrá ser inferior a la edad en que concluye el período de escolaridad obligatoria, sin perjuicio de disposiciones más favorables para los jóvenes y salvo excepciones limitadas. Los jóvenes admitidos a trabajar deberán disponer de condiciones de trabajo adaptadas a su edad y estar protegidos contra la explotación económica o contra cualquier trabajo que pueda ser perjudicial para su seguridad, su salud, su desarrollo físico, psíquico, moral o social, o que pueda poner en peligro su educación.",
+  "exp": "Las tres afirmaciones están en el artículo 32, por lo que todas son correctas.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "79-2-0",
+  "parT": "art 32 se prohibe el trabajo infantil la edad minima de admision al trabajo no podra ser i",
+  "fR": 0.45,
+  "pz": "k-32",
+  "sec": 17,
+  "id": "1-580"
+ },
+ {
+  "lote": "d1",
+  "i": 26,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "45",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. De conformidad con lo dispuesto en el Tratado constitutivo de la Comunidad Europea, se podrá conceder libertad de circulación y de residencia a:",
+  "opciones": [
+   "Los nacionales de terceros países que residan ilegalmente en el territorio de un Estado miembro.",
+   "Los nacionales de terceros países aunque no residan en el territorio de un Estado miembro.",
+   "Los nacionales de terceros países que transiten ilegalmente en el territorio de un Estado miembro.",
+   "Los nacionales de terceros países que residan legalmente en el territorio de un Estado miembro."
+  ],
+  "correcta": 3,
+  "lila": "Art. 45.2 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "2. Podrá concederse libertad de circulación y de residencia, de conformidad con lo dispuesto en los Tratados, a los nacionales de terceros países que residan legalmente en el territorio de un Estado miembro.",
+  "exp": "Solo puede concederse a nacionales de terceros países que residan legalmente en un Estado miembro.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "89-1",
+  "parT": "2 podra concederse libertad de circulacion y de residencia de conformidad con lo dispuesto",
+  "fR": 1,
+  "pz": null,
+  "sec": 18,
+  "id": "1-581"
+ },
+ {
+  "lote": "d1",
+  "i": 27,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "51",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Las disposiciones de la presente Carta están dirigidas a...:",
+  "opciones": [
+   "Los ciudadanos de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro.",
+   "Las instituciones de la Unión, dentro del respeto del principio de subsidiariedad.",
+   "Los órganos de la Unión, del respeto del principio de atribución.",
+   "Los Estados miembros cuando apliquen el Derecho de la Unión así como también cuando apliquen sus respectivas leyes nacionales."
+  ],
+  "correcta": 1,
+  "lila": "Art. 51.1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Las disposiciones de la presente Carta están dirigidas a las instituciones, órganos y organismos de la Unión, dentro del respeto del principio de subsidiariedad, así como a los Estados miembros únicamente cuando apliquen el Derecho de la Unión. Por consiguiente, éstos respetarán los derechos, observarán los principios y promoverán su aplicación, con arreglo a sus respectivas competencias y dentro de los límites de las competencias que los Tratados atribuyen a la Unión.",
+  "exp": "Se dirigen a las instituciones dentro del respeto del principio de subsidiariedad; no a particulares, ni por el principio de atribución, ni a los Estados cuando aplican su propio Derecho.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "92-0",
+  "parT": "art 51 1 las disposiciones de la presente carta estan dirigidas a las instituciones organo",
+  "fR": 1,
+  "pz": "k-51",
+  "sec": 18,
+  "id": "1-582"
+ },
+ {
+  "lote": "d1",
+  "i": 28,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "51",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Ámbito de aplicación. Las disposiciones de la presente Carta están dirigidas a las instituciones, órganos y organismos de la Unión, así como a los Estados miembros únicamente cuando apliquen el Derecho de la Unión, dentro del respeto, ¿a qué principio?:",
+  "opciones": [
+   "Principio de proporcionalidad.",
+   "Principio de subsidiariedad.",
+   "Principio de legalidad.",
+   "Principio de atribución."
+  ],
+  "correcta": 1,
+  "lila": "Art. 51.1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Las disposiciones de la presente Carta están dirigidas a las instituciones, órganos y organismos de la Unión, dentro del respeto del principio de subsidiariedad, así como a los Estados miembros únicamente cuando apliquen el Derecho de la Unión. Por consiguiente, éstos respetarán los derechos, observarán los principios y promoverán su aplicación, con arreglo a sus respectivas competencias y dentro de los límites de las competencias que los Tratados atribuyen a la Unión.",
+  "exp": "El artículo 51.1 cita el principio de subsidiariedad.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "92-0",
+  "parT": "art 51 1 las disposiciones de la presente carta estan dirigidas a las instituciones organo",
+  "fR": 1,
+  "pz": "k-51",
+  "sec": 18,
+  "id": "1-583"
+ },
+ {
+  "lote": "d1",
+  "i": 29,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "37",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Protección del medio ambiente. En las políticas de la Unión se integrarán y garantizarán, conforme al principio de __________ un nivel elevado de protección del medio ambiente y la mejora de su calidad:",
+  "opciones": [
+   "Restauración del medio natural.",
+   "Protección de la salud de las personas.",
+   "Desarrollo sostenible.",
+   "Solidaridad colectiva."
+  ],
+  "correcta": 2,
+  "lila": "Art. 37 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "En las políticas de la Unión se integrarán y garantizarán, conforme al principio de desarrollo sostenible, un nivel elevado de protección del medio ambiente y la mejora de su calidad.",
+  "exp": "Es el principio de desarrollo sostenible.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "79-4",
+  "parT": "art 37 en las politicas de la union se integraran y garantizaran conforme al principio de ",
+  "fR": 1,
+  "pz": "k-37",
+  "sec": 17,
+  "id": "1-584"
+ },
+ {
+  "lote": "d1",
+  "i": 30,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "pre"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo. La presente Carta reafirma, dentro del respeto de las competencias y misiones de la Unión, así como del principio de subsidiariedad, los derechos que emanan, en particular de... Señale la opción INCORRECTA:",
+  "opciones": [
+   "Las Cartas Sociales adoptadas por la Unión y por el Consejo de Europa.",
+   "Las tradiciones constitucionales y las obligaciones internacionales comunes a los Estados miembros.",
+   "El Convenio Europeo para la Protección de los Derechos Humanos y de las Libertades Fundamentales.",
+   "El Convenio Europeo sobre el Ejercicio de los Derechos de los Niños."
+  ],
+  "correcta": 3,
+  "lila": "Preámbulo · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "La presente Carta reafirma, dentro del respeto de las competencias y misiones de la Unión, así como del principio de subsidiariedad, los derechos que emanan, en particular, de las tradiciones constitucionales y las obligaciones internacionales comunes a los Estados miembros, del Convenio Europeo para la Protección de los Derechos Humanos y de las Libertades Fundamentales, las Cartas Sociales adoptadas por la Unión y por el Consejo de Europa, así como de la jurisprudencia del Tribunal de Justicia de la Unión Europea y del Tribunal Europeo de Derechos Humanos. En este contexto, los órganos jurisdiccionales de la Unión y de los Estados miembros interpretarán la Carta atendiendo debidamente a las explicaciones elaboradas bajo la autoridad del Praesidium de la Convención que redactó la Carta y actualizadas bajo la responsabilidad del Praesidium de la Convención Europea.",
+  "exp": "El preámbulo no cita ningún convenio sobre los derechos de los niños; sí las Cartas Sociales, las tradiciones constitucionales y el Convenio Europeo de Derechos Humanos.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "63-4",
+  "parT": "la presente carta reafirma dentro del respeto de las competencias y misiones de la union a",
+  "fR": 1,
+  "pz": "k-pre",
+  "sec": 15,
+  "id": "1-585"
+ },
+ {
+  "lote": "d1",
+  "i": 31,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "28",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "30",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "29",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "27",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Solidaridad. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Los trabajadores y los empresarios, o sus organizaciones respectivas, de conformidad con el Derecho de la Unión y con las legislaciones y prácticas nacionales, tienen derecho a negociar y celebrar convenios colectivos, en los niveles adecuados, y a emprender, en caso de conflicto de intereses, acciones colectivas para la defensa de sus intereses, excluido el derecho a la huelga.",
+   "Todo trabajador tiene derecho a protección en caso de despido injustificado, de conformidad con el Derecho de la Unión y con las legislaciones y prácticas nacionales.",
+   "Toda persona tiene derecho a acceder a un servicio gratuito de colocación.",
+   "Deberá garantizarse a los trabajadores o a Sus representantes, en los niveles adecuados, la información y consulta con suficiente antelación, en los casos y condiciones previstos en el Derecho de la Unión y en las legislaciones y prácticas nacionales."
+  ],
+  "correcta": 0,
+  "lila": "Art. 28 y Art. 30 y Art. 29 y Art. 27 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 28. Los trabajadores y los empresarios, o sus organizaciones respectivas, de conformidad con el Derecho de la Unión y con las legislaciones y prácticas nacionales, tienen derecho a negociar y celebrar convenios colectivos, en los niveles adecuados, y a emprender, en caso de conflicto de intereses, acciones colectivas para la defensa de sus intereses, incluida la huelga.<br>Art. 30. Todo trabajador tiene derecho a protección en caso de despido injustificado, de conformidad con el Derecho de la Unión y con las legislaciones y prácticas nacionales.<br>Art. 29. Toda persona tiene derecho a acceder a un servicio gratuito de colocación.<br>Art. 27. Deberá garantizarse a los trabajadores o a sus representantes, en los niveles adecuados, la información y consulta con suficiente antelación, en los casos y condiciones previstos en el Derecho de la Unión y en las legislaciones y prácticas nacionales.",
+  "exp": "El artículo 28 INCLUYE el derecho de huelga. Las otras tres son literales.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "78-0",
+  "parT": "art 28 los trabajadores y los empresarios o sus organizaciones respectivas de conformidad ",
+  "fR": 0.96,
+  "pz": "k-28",
+  "sec": 17,
+  "id": "1-586"
+ },
+ {
+  "lote": "d1",
+  "i": 32,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "52",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Carta de los derechos fundamentales de la Unión Europea. Solo se podrán introducir limitaciones al ejercicio de los derechos y libertades reconocidos en la Carta de Derechos Fundamentales, respetando, ¿qué principio?:",
+  "opciones": [
+   "El principio de proporcionalidad.",
+   "El principio de equidad.",
+   "El principio de subsidiariedad.",
+   "El principio de solidaridad."
+  ],
+  "correcta": 0,
+  "lila": "Art. 52.1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Cualquier limitación del ejercicio de los derechos y libertades reconocidos por la presente Carta deberá ser establecida por la ley y respetar el contenido esencial de dichos derechos y libertades. Dentro del respeto del principio de proporcionalidad, sólo podrán introducirse limitaciones cuando sean necesarias y respondan efectivamente a objetivos de interés general reconocidos por la Unión o a la necesidad de protección de los derechos y libertades de los demás.",
+  "exp": "Las limitaciones se sujetan al principio de proporcionalidad.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "92-4",
+  "parT": "5 las disposiciones de la presente carta que contengan principios podran aplicarse mediant",
+  "fR": 0.5,
+  "pz": "k-52",
+  "sec": 18,
+  "id": "1-587"
+ },
+ {
+  "lote": "d1",
+  "i": 33,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "24",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derechos del niño. Señale la opción CORRECTA:",
+  "opciones": [
+   "La opinión de los niños será tenido en cuenta para todos los asuntos en función de su edad y madurez.",
+   "Todo niño tiene derecho a mantener de forma periódica relaciones personales y contactos directos con sus abuelos y otros parientes y allegados, salvo si ello es contrario a sus intereses.",
+   "En todos los actos relativos a los niños llevados a cabo por autoridades públicas o instituciones privadas, el interés superior del niño constituirá una consideración primordial.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 2,
+  "lila": "Art. 24 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Los niños tienen derecho a la protección y a los cuidados necesarios para su bienestar. Podrán expresar su opinión libremente. Ésta será tenida en cuenta para los asuntos que les afecten, en función de su edad y madurez. 2. En todos los actos relativos a los niños llevados a cabo por autoridades públicas o instituciones privadas, el interés superior del niño constituirá una consideración primordial. 3. Todo niño tiene derecho a mantener de forma periódica relaciones personales y contactos directos con su padre y con su madre, salvo si ello es contrario a sus intereses.",
+  "exp": "Es literal el apartado 2. La opinión del niño se tiene en cuenta en los asuntos que le afecten (no en todos) y el apartado 3 solo cita al padre y a la madre.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "73-3-0",
+  "parT": "art 24 1 los ninos tienen derecho a la proteccion y a los cuidados necesarios para su bien",
+  "fR": 1,
+  "pz": "k-24",
+  "sec": 17,
+  "id": "1-588"
+ },
+ {
+  "lote": "d1",
+  "i": 35,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "pre"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Según la Carta de los Derechos Fundamentales de la Unión Europea, los pueblos de Europa, al crear entre sí una unión cada vez más estrecha, han decidido:",
+  "opciones": [
+   "Fundamentar los valores universales con la intención de compartir un porvenir pacífico.",
+   "Instaurar la ciudadanía europea basada en la libertad y la universalidad.",
+   "Compartir un porvenir pacífico basado en valores comunes.",
+   "Situar a las personas en un ámbito de solidaridad fundamentado en valores universales."
+  ],
+  "correcta": 2,
+  "lila": "Preámbulo · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Los pueblos de Europa, al crear entre sí una unión cada vez más estrecha, han decidido compartir un porvenir pacífico basado en valores comunes.",
+  "exp": "El preámbulo dice que han decidido compartir un porvenir pacífico basado en valores comunes.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "63-0",
+  "parT": "los pueblos de europa al crear entre si una union cada vez mas estrecha han decidido compa",
+  "fR": 1,
+  "pz": "k-pre",
+  "sec": 15,
+  "id": "1-589"
+ },
+ {
+  "lote": "d1",
+  "i": 36,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "17",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Respecto al derecho a la propiedad, señale la opción CORRECTA:",
+  "opciones": [
+   "Nadie puede ser privado de su propiedad más que por causa de utilidad privada, en los casos y condiciones previstos en la ley y a cambio, de una indemnización por su pérdida.",
+   "Toda persona tiene derecho a disfrutar de la propiedad de los bienes que haya adquirido legal o ilegalmente, a usarlos, a disponer de ellos y a legarlos.",
+   "Se protege la propiedad privada.",
+   "El uso de los bienes podrá regularse por ley en la medida en que resulte necesario para el interés general."
+  ],
+  "correcta": 3,
+  "lila": "Art. 17 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Toda persona tiene derecho a disfrutar de la propiedad de los bienes que haya adquirido legalmente, a usarlos, a disponer de ellos y a legarlos. Nadie puede ser privado de su propiedad más que por causa de utilidad pública, en los casos y condiciones previstos en la ley y a cambio, en un tiempo razonable, de una justa indemnización por su pérdida. El uso de los bienes podrá regularse por ley en la medida en que resulte necesario para el interés general. 2. Se protege la propiedad intelectual.",
+  "exp": "Es literal. La privación es por utilidad pública, la propiedad protegida es la adquirida legalmente y la protegida expresamente en el apartado 2 es la propiedad intelectual.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "72-0",
+  "parT": "art 17 1 toda persona tiene derecho a disfrutar de la propiedad de los bienes que haya adq",
+  "fR": 0.13,
+  "pz": "k-17",
+  "sec": 16,
+  "id": "1-590"
+ },
+ {
+  "lote": "d1",
+  "i": 37,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "34",
+    "ap": "1"
+   },
+   {
+    "n": "CDF",
+    "art": "34",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. En relación con la seguridad y ayuda social, señale la opción CORRECTA:",
+  "opciones": [
+   "La Unión reconoce y respeta el derecho de acceso a las prestaciones de seguridad social, salvo en casos de dependencia, según las modalidades establecidas en las legislaciones y prácticas nacionales.",
+   "Toda persona que resida y se desplace dentro de la Unión tiene derecho a las prestaciones de seguridad social de conformidad con el Derecho de la Unión y con las legislaciones y prácticas nacionales.",
+   "Ninguna de las opciones es correcta.",
+   "La Unión reconoce y respeta el derecho de acceso a las prestaciones de seguridad social y a los servicios sociales que garanticen la protección en casos como la maternidad y dependencia, salvo en aquellas modalidades establecidas por el Derecho de la Unión."
+  ],
+  "correcta": 2,
+  "lila": "Art. 34.1 y Art. 34.2 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 34. 1. La Unión reconoce y respeta el derecho de acceso a las prestaciones de seguridad social y a los servicios sociales que garantizan una protección en casos como la maternidad, la enfermedad, los accidentes laborales, la dependencia o la vejez, así como en caso de pérdida de empleo, según las modalidades establecidas por el Derecho de la Unión y las legislaciones y prácticas nacionales.<br>Art. 34. 2. Toda persona que resida y se desplace legalmente dentro de la Unión tiene derecho a las prestaciones de seguridad social y a las ventajas sociales de conformidad con el Derecho de la Unión y con las legislaciones y prácticas nacionales.",
+  "exp": "Ninguna reproduce bien el artículo 34: no hay salvedad para la dependencia, falta que el desplazamiento sea legal y los derechos se reconocen según las modalidades del Derecho de la Unión, no «salvo» ellas.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "82-0",
+  "parT": "1 la union reconoce y respeta el derecho de acceso a las prestaciones de seguridad social ",
+  "fR": 0.67,
+  "pz": "k-34",
+  "sec": 17,
+  "id": "1-591"
+ },
+ {
+  "lote": "d1",
+  "i": 38,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "36",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Acceso a los servicios de interés económico general. La Unión reconoce y respeta el acceso a los servicios de interés económico general, tal como disponen las legislaciones y prácticas nacionales, de conformidad con los Tratados, ¿con que fin?:",
+  "opciones": [
+   "Con el fin de promover la igualdad entre mujeres y hombres.",
+   "Con el fin de promover la cohesión social y territorial de la Unión.",
+   "Todas las opciones son correctas.",
+   "Con el fin de promover la cohesión económica."
+  ],
+  "correcta": 1,
+  "lila": "Art. 36 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "La Unión reconoce y respeta el acceso a los servicios de interés económico general, tal como disponen las legislaciones y prácticas nacionales, de conformidad con los Tratados, con el fin de promover la cohesión social y territorial de la Unión.",
+  "exp": "El acceso se reconoce con el fin de promover la cohesión social y territorial de la Unión.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "83-0",
+  "parT": "la union reconoce y respeta el acceso a los servicios de interes economico general tal com",
+  "fR": 1,
+  "pz": "k-36",
+  "sec": 17,
+  "id": "1-592"
+ },
+ {
+  "lote": "d1",
+  "i": 39,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "44",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derecho de petición. Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro, ¿ante qué organismo tiene el derecho de petición?:",
+  "opciones": [
+   "Ante el Tribunal de Justicia de la Unión Europea.",
+   "Ante la Comisión Europea.",
+   "Ante el Consejo Europeo.",
+   "Ante el Parlamento Europeo."
+  ],
+  "correcta": 3,
+  "lila": "Art. 44 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene el derecho de petición ante el Parlamento Europeo.",
+  "exp": "El derecho de petición se ejerce ante el Parlamento Europeo.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "88-1-0",
+  "parT": "art 44 tiene el derecho de peticion ante el parlamento europeo",
+  "fR": 1,
+  "pz": "k-44",
+  "sec": 18,
+  "id": "1-593"
+ },
+ {
+  "lote": "d1",
+  "i": 40,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "pre"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Preámbulo. Consciente de su patrimonio espiritual y moral, la Unión está fundada sobre una serie de valores indivisibles y universales. De las siguientes opciones, ¿cuál NO será uno de esos valores indivisibles y universales?:",
+  "opciones": [
+   "La solidaridad.",
+   "La libertad.",
+   "La justicia.",
+   "La dignidad humana."
+  ],
+  "correcta": 2,
+  "lila": "Preámbulo · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Consciente de su patrimonio espiritual y moral, la Unión está fundada sobre los valores indivisibles y universales de la dignidad humana, la libertad, la igualdad y la solidaridad, y se basa en los principios de la democracia y el Estado de Derecho. Al instituir la ciudadanía de la Unión y crear un espacio de libertad, seguridad y justicia, sitúa a la persona en el centro de su actuación.",
+  "exp": "Los valores son dignidad humana, libertad, igualdad y solidaridad; la justicia no figura entre ellos.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "63-1",
+  "parT": "consciente de su patrimonio espiritual y moral la union esta fundada sobre los valores ind",
+  "fR": 1,
+  "pz": "k-pre",
+  "sec": 15,
+  "id": "1-594"
+ },
+ {
+  "lote": "d1",
+  "i": 41,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "24",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derechos del menor. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Todo menor tiene derecho a mantener de forma periódica relaciones personales y contactos directos con su padre y madre.",
+   "La opinión de los menores será tenido en cuenta en relación con los asuntos que les afecten, en función de su edad y de su madurez.",
+   "En todos los actos relativos a los menores llevados a cabo por autoridades públicas o instituciones privadas, el interés superior del menor constituirá: una consideración primordial.",
+   "Los menores podrán expresar su opinión libremente."
+  ],
+  "correcta": 0,
+  "lila": "Art. 24 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Los niños tienen derecho a la protección y a los cuidados necesarios para su bienestar. Podrán expresar su opinión libremente. Ésta será tenida en cuenta para los asuntos que les afecten, en función de su edad y madurez. 2. En todos los actos relativos a los niños llevados a cabo por autoridades públicas o instituciones privadas, el interés superior del niño constituirá una consideración primordial. 3. Todo niño tiene derecho a mantener de forma periódica relaciones personales y contactos directos con su padre y con su madre, salvo si ello es contrario a sus intereses.",
+  "exp": "El derecho a las relaciones con el padre y la madre tiene la excepción de que sea contrario a sus intereses, que la opción omite. Las demás recogen los apartados 1 y 2.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "73-3",
+  "parT": "art 24 1 los ninos tienen derecho a la proteccion y a los cuidados necesarios para su bien",
+  "fR": 0.93,
+  "pz": "k-24",
+  "sec": 17,
+  "id": "1-595"
+ },
+ {
+  "lote": "d1",
+  "i": 42,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "42",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Todo ciudadano de la Unión o toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a acceder a los documentos:",
+  "opciones": [
+   "De cualquier institución u órgano de la Unión Europea.",
+   "De la Comisión y únicamente en formato papel.",
+   "Del Parlamento, exclusivamente.",
+   "Del Consejo y exclusivamente en formato digital."
+  ],
+  "correcta": 0,
+  "lila": "Art. 42 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a acceder a los documentos de las instituciones, órganos y organismos de la Unión, cualquiera que sea su soporte.",
+  "exp": "El acceso alcanza a los documentos de las instituciones, órganos y organismos de la Unión, cualquiera que sea su soporte.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "87-2-0",
+  "parT": "art 42 todo ciudadano de la union y toda persona fisica o juridica que resida o tenga su d",
+  "fR": 0.8,
+  "pz": "k-42",
+  "sec": 18,
+  "id": "1-596"
+ },
+ {
+  "lote": "d1",
+  "i": 43,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "pre"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Los pueblos de Europa han decidido compartir un porvenir pacífico basado en valores:",
+  "opciones": [
+   "Comunes.",
+   "Sociales.",
+   "Ninguna de las opciones es correcta.",
+   "Universales."
+  ],
+  "correcta": 0,
+  "lila": "Preámbulo · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Los pueblos de Europa, al crear entre sí una unión cada vez más estrecha, han decidido compartir un porvenir pacífico basado en valores comunes.",
+  "exp": "El preámbulo habla de valores comunes.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "63-0",
+  "parT": "los pueblos de europa al crear entre si una union cada vez mas estrecha han decidido compa",
+  "fR": 1,
+  "pz": "k-pre",
+  "sec": 15,
+  "id": "1-597"
+ },
+ {
+  "lote": "d1",
+  "i": 44,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "24",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. En relación con los derechos del niño, señale la opción INCORRECTA:",
+  "opciones": [
+   "En todos los actos relativos a los niños llevados a cabo por instituciones privadas, el interés superior del niño constituirá una consideración primordial.",
+   "Los niños tienen derecho a la protección y a los cuidados necesarios para su bienestar.",
+   "Los niños pueden expresar su opinión libremente, a partir de la edad núbil.",
+   "Todo niño tiene derecho a mantener de forma periódica relaciones personales y contactos directos con su padre y con su madre, salvo si ello es contrario a sus intereses."
+  ],
+  "correcta": 2,
+  "lila": "Art. 24 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Los niños tienen derecho a la protección y a los cuidados necesarios para su bienestar. Podrán expresar su opinión libremente. Ésta será tenida en cuenta para los asuntos que les afecten, en función de su edad y madurez. 2. En todos los actos relativos a los niños llevados a cabo por autoridades públicas o instituciones privadas, el interés superior del niño constituirá una consideración primordial. 3. Todo niño tiene derecho a mantener de forma periódica relaciones personales y contactos directos con su padre y con su madre, salvo si ello es contrario a sus intereses.",
+  "exp": "El artículo 24 no condiciona la libre expresión a la edad núbil. Las demás son correctas.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "73-3",
+  "parT": "art 24 1 los ninos tienen derecho a la proteccion y a los cuidados necesarios para su bien",
+  "fR": 1,
+  "pz": "k-24",
+  "sec": 17,
+  "id": "1-598"
+ },
+ {
+  "lote": "d1",
+  "i": 45,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "47",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Respecto a la tutela judicial efectiva, señale la opción INCORRECTA:",
+  "opciones": [
+   "Se prestará asistencia jurídica gratuita a quienes no dispongan de recursos suficientes siempre y cuando dicha asistencia sea necesaria para garantizar la efectividad del acceso a la justicia.",
+   "Toda persona cuyos derechos y libertades garantizados por el Derecho de la Unión hayan sido violados tiene derecho a la tutela judicial efectiva.",
+   "Toda persona podrá hacerse aconsejar, defender y representar.",
+   "Toda persona tiene derecho a que su causa sea oída de forma equitativa y privada y dentro de un plazo razonable por un juez independiente e imparcial, establecido previamente por la ley."
+  ],
+  "correcta": 3,
+  "lila": "Art. 47 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Toda persona cuyos derechos y libertades garantizados por el Derecho de la Unión hayan sido violados tiene derecho a la tutela judicial efectiva respetando las condiciones establecidas en el presente artículo. Toda persona tiene derecho a que su causa sea oída equitativa y públicamente y dentro de un plazo razonable por un juez independiente e imparcial, establecido previamente por la ley. Toda persona podrá hacerse aconsejar, defender y representar. Se prestará asistencia jurídica gratuita a quienes no dispongan de recursos suficientes siempre y cuando dicha asistencia sea necesaria para garantizar la efectividad del acceso a la justicia.",
+  "exp": "La causa se oye equitativa y públicamente, no «en privado». Las otras tres están en el artículo 47.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "90-0-0",
+  "parT": "art 47 toda persona tiene derecho a la tutela judicial efectiva toda persona tiene derecho",
+  "fR": 0.68,
+  "pz": "k-47",
+  "sec": 18,
+  "id": "1-599"
+ },
+ {
+  "lote": "d1",
+  "i": 46,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "15",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Libertad profesional y derecho a trabajar. Señale la opción CORRECTA:",
+  "opciones": [
+   "Toda persona tiene derecho a trabajar y a ejercer una profesión libremente elegido o aceptada.",
+   "Toda persona tiene libertad para buscar un empleo, trabajar en cualquier Estado miembro.",
+   "Toda persona tiene libertad para establecerse o prestar servicios en cualquier Estado miembro.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 15 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Toda persona tiene derecho a trabajar y a ejercer una profesión libremente elegida o aceptada. 2. Todo ciudadano de la Unión tiene libertad para buscar un empleo, trabajar, establecerse o prestar servicios en cualquier Estado miembro. 3. Los nacionales de terceros países que estén autorizados a trabajar en el territorio de los Estados miembros tienen derecho a unas condiciones laborales equivalentes a aquellas de que disfrutan los ciudadanos de la Unión.",
+  "exp": "Es literal el apartado 1. La libertad de buscar empleo, establecerse o prestar servicios se reconoce a todo ciudadano de la Unión, no a toda persona.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "69-4",
+  "parT": "art 15 3 los nacionales de terceros paises que esten autorizados a trabajar en el territor",
+  "fR": 0.22,
+  "pz": "k-15",
+  "sec": 16,
+  "id": "1-600"
+ },
+ {
+  "lote": "d1",
+  "i": 47,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "14",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derecho a la educación. Señale la opción INCORRECTA:",
+  "opciones": [
+   "El derecho a la educación incluye la facultad de recibir gratuitamente la enseñanza universitaria.",
+   "Se respetan, de acuerdo con las leyes nacionales que regulen su ejercicio el derecho de los padres a garantizar la educación y la enseñanza de sus hijos conforme a sus convicciones religiosas, filosóficas y pedagógicas.",
+   "Toda persona tiene derecho a la educación y al acceso a la formación profesional y permanente.",
+   "Se respetan, de acuerdo con las leyes nacionales que regulen su ejercicio, la libertad de creación de centros docentes dentro del respeto de los principios democráticos."
+  ],
+  "correcta": 0,
+  "lila": "Art. 14 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Toda persona tiene derecho a la educación y al acceso a la formación profesional y permanente. 2. Este derecho incluye la facultad de recibir gratuitamente la enseñanza obligatoria. 3. Se respetan, de acuerdo con las leyes nacionales que regulen su ejercicio, la libertad de creación de centros docentes dentro del respeto de los principios democráticos, así como el derecho de los padres a garantizar la educación y la enseñanza de sus hijos conforme a sus convicciones religiosas, filosóficas y pedagógicas.",
+  "exp": "La gratuidad alcanza a la enseñanza obligatoria, no a la universitaria.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "69-3-0",
+  "parT": "art 14 1 toda persona tiene derecho a la educacion y al acceso a la formacion profesional ",
+  "fR": 0.88,
+  "pz": "k-14",
+  "sec": 16,
+  "id": "1-601"
+ },
+ {
+  "lote": "d1",
+  "i": 48,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "52",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Carta de los derechos fundamentales de la Unión Europea. Respecto a la limitación del ejercicio de los derechos y libertades reconocidos por la presente Carta, señale la opción CORRECTA:",
+  "opciones": [
+   "Cualquier limitación debe de respetar el principio de subsidiariedad de las medidas, de forma que no puedan exceder las competencias otorgadas por los Tratados.",
+   "Cualquier limitación deberá ser establecida por la ley y respetar el contenido esencial de dichos derechos y libertades.",
+   "No podrán introducirse directa ni indirectamente limitaciones al ejercicio de los derechos y libertades reconocidos por la presente Carta.",
+   "Las limitaciones deben responder efectivamente al interés general de la Unión o a la necesidad de protección de los derechos económicos y sociales de sus ciudadanos."
+  ],
+  "correcta": 1,
+  "lila": "Art. 52.1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Cualquier limitación del ejercicio de los derechos y libertades reconocidos por la presente Carta deberá ser establecida por la ley y respetar el contenido esencial de dichos derechos y libertades. Dentro del respeto del principio de proporcionalidad, sólo podrán introducirse limitaciones cuando sean necesarias y respondan efectivamente a objetivos de interés general reconocidos por la Unión o a la necesidad de protección de los derechos y libertades de los demás.",
+  "exp": "Es literal. El principio aplicable es el de proporcionalidad, sí caben limitaciones y deben responder a objetivos de interés general o a la protección de derechos de los demás.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "92-2",
+  "parT": "art 52 1 cualquier limitacion del ejercicio de los derechos y libertades debera ser establ",
+  "fR": 0.89,
+  "pz": "k-52",
+  "sec": 18,
+  "id": "1-602"
+ },
+ {
+  "lote": "d1",
+  "i": 49,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "18",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Respecto del derecho de asilo, señale la opción CORRECTA:",
+  "opciones": [
+   "Se garantiza el derecho de asilo dentro del respeto de las normas de la Convención de Ginebra de 31 de enero de 1967.",
+   "Se garantiza el derecho de asilo de conformidad con el Tratado de la Unión Europea y con el Tratado de Funcionamiento de la Unión Europea.",
+   "Se garantiza el derecho de asilo dentro del respeto de las normas del Protocolo de 28 de julio de 1951 sobre el Estatuto de los Refugiados.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 18 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Se garantiza el derecho de asilo dentro del respeto de las normas de la Convención de Ginebra de 28 de julio de 1951 y del Protocolo de 31 de enero de 1967 sobre el Estatuto de los Refugiados y de conformidad con el Tratado de la Unión Europea y con el Tratado de Funcionamiento de la Unión Europea (en lo sucesivo denominados «los Tratados»).",
+  "exp": "La Convención de Ginebra es de 28 de julio de 1951 y el Protocolo de 31 de enero de 1967; las opciones que cruzan las fechas son falsas, y por tanto no son todas correctas.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "72-1",
+  "parT": "art 18 se garantiza el derecho de asilo dentro del respeto de las normas de la convencion ",
+  "fR": 0.38,
+  "pz": "k-18",
+  "sec": 16,
+  "id": "1-603"
+ },
+ {
+  "lote": "d1",
+  "i": 50,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "31",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Condiciones de trabajo justas y equitativas. Todo trabajador tiene derecho a __________. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Un período de vacaciones anuales retribuidas.",
+   "Períodos de descansos diarios y semanales.",
+   "La limitación de la duración máxima del trabajo.",
+   "Igual oportunidad para todos de ser promovidos, dentro de su trabajo, a la categoría superior que les corresponda, sin más consideraciones que los factores de tiempo de servicio y antigüedad."
+  ],
+  "correcta": 3,
+  "lila": "Art. 31 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Todo trabajador tiene derecho a trabajar en condiciones que respeten su salud, seguridad y dignidad. 2. Todo trabajador tiene derecho a la limitación de la duración máxima del trabajo y a períodos de descanso diarios y semanales, así como a un período de vacaciones anuales retribuidas.",
+  "exp": "El artículo 31 no reconoce un derecho a promoción por antigüedad. Las otras tres figuran en el apartado 2.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "79-1",
+  "parT": "art 31 1 todo trabajador tiene derecho a trabajar en condiciones que respeten su salud seg",
+  "fR": 1,
+  "pz": null,
+  "sec": 17,
+  "id": "1-604"
+ },
+ {
+  "lote": "d1",
+  "i": 52,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "19",
+    "ap": "1"
+   },
+   {
+    "n": "CDF",
+    "art": "5",
+    "ap": "3"
+   },
+   {
+    "n": "CDF",
+    "art": "3",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Carta de los derechos fundamentales de la Unión Europea. ¿Cuál de las siguientes prohibiciones NO viene reflejada en la citada Carta?:",
+  "opciones": [
+   "Se prohíben las expulsiones colectivas.",
+   "Toda propaganda en favor de la guerra estará prohibida por la ley.",
+   "Se prohíbe la trata de seres humanos.",
+   "Se prohíbe la clonación reproductora de seres humanos."
+  ],
+  "correcta": 1,
+  "lila": "Art. 19.1 y Art. 5.3 y Art. 3.2 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 19. 1. Se prohíben las expulsiones colectivas.<br>Art. 5. 3. Se prohíbe la trata de seres humanos.<br>Art. 3. 2. En el marco de la medicina y la biología se respetarán en particular: a) el consentimiento libre e informado de la persona de que se trate, de acuerdo con las modalidades establecidas por la ley; b) la prohibición de las prácticas eugenésicas, en particular las que tienen como finalidad la selección de las personas; c) la prohibición de que el cuerpo humano o partes del mismo en cuanto tales se conviertan en objeto de lucro; d) la prohibición de la clonación reproductora de seres humanos.",
+  "exp": "La prohibición de la propaganda en favor de la guerra no está en la Carta; las otras prohibiciones sí.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "72-2",
+  "parT": "art 19 1 se prohiben las expulsiones colectivas 2 nadie podra ser devuelto expulsado o ext",
+  "fR": 0.17,
+  "pz": "k-19",
+  "sec": 16,
+  "id": "1-605"
+ },
+ {
+  "lote": "d1",
+  "i": 53,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "14",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los derechos fundamentales de la Unión Europea. De los que se citan a continuación, respecto al derecho a la educación, señale la opción que NO viene recogida en la Carta de los derechos fundamentales de la Unión Europea:",
+  "opciones": [
+   "Este derecho incluye la facultad de recibir gratuitamente la enseñanza obligatoria.",
+   "La educación tendrá por objeto el pleno desarrollo de la personalidad humana en el respeto a los principios democráticos de convivencia y a los derechos y libertades fundamentales.",
+   "Toda persona tiene derecho a la educación y al acceso a la formación profesional y permanente.",
+   "Se respetan, de acuerdo con las leyes nacionales que regulen su ejercicio, la libertad de creación de centros docentes dentro del respeto de los principios democráticos. 1."
+  ],
+  "correcta": 1,
+  "lila": "Art. 14 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Toda persona tiene derecho a la educación y al acceso a la formación profesional y permanente. 2. Este derecho incluye la facultad de recibir gratuitamente la enseñanza obligatoria. 3. Se respetan, de acuerdo con las leyes nacionales que regulen su ejercicio, la libertad de creación de centros docentes dentro del respeto de los principios democráticos, así como el derecho de los padres a garantizar la educación y la enseñanza de sus hijos conforme a sus convicciones religiosas, filosóficas y pedagógicas.",
+  "exp": "Ese texto sobre el objeto de la educación no figura en la Carta. Las demás son del artículo 14.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "69-3",
+  "parT": "art 14 1 toda persona tiene derecho a la educacion y al acceso a la formacion profesional ",
+  "fR": 0.14,
+  "pz": "k-14",
+  "sec": 16,
+  "id": "1-606"
+ },
+ {
+  "lote": "d1",
+  "i": 54,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "10",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. En relación con los derechos relacionados con la libertad de pensamiento, de conciencia y de religión, ¿la Carta de Derechos Fundamentales de la Unión Europea recoge la enseñanza de la religión como un derecho?:",
+  "opciones": [
+   "No, es un deber que Obliga a los padres únicamente.",
+   "Sí, exclusivamente en centros públicos.",
+   "No, en ningún caso.",
+   "Sí, en cualquier caso."
+  ],
+  "correcta": 3,
+  "lila": "Art. 10.1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Toda persona tiene derecho a la libertad de pensamiento, de conciencia y de religión. Este derecho implica la libertad de cambiar de religión o de convicciones, así como la libertad de manifestar su religión o sus convicciones individual o colectivamente, en público o en privado, a través del culto, la enseñanza, las prácticas y la observancia de los ritos.",
+  "exp": "La libertad religiosa comprende manifestar la religión a través de la enseñanza, sin limitarla a centros públicos.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "67-2",
+  "parT": "art 10 1 toda persona tiene derecho a la libertad de pensamiento de conciencia y de religi",
+  "fR": 0,
+  "pz": "k-10",
+  "sec": 16,
+  "id": "1-607"
+ },
+ {
+  "lote": "d1",
+  "i": 55,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "35",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Protección de la salud, señale la opción CORRECTA:",
+  "opciones": [
+   "Toda persona tiene derecho a la atención sanitaria.",
+   "Toda persona tiene derecho a beneficiarse de la prevención sanitaria.",
+   "Todas las opciones son correctas.",
+   "Al definirse y ejecutarse todas las políticas y acciones de la Unión se garantizará un nivel elevado de protección de la salud humana."
+  ],
+  "correcta": 3,
+  "lila": "Art. 35 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Toda persona tiene derecho a acceder a la prevención sanitaria y a beneficiarse de la atención sanitaria en las condiciones establecidas por las legislaciones y prácticas nacionales. Al definirse y ejecutarse todas las políticas y acciones de la Unión se garantizará un nivel elevado de protección de la salud humana.",
+  "exp": "Es literal. El artículo reconoce acceder a la prevención sanitaria y beneficiarse de la atención sanitaria en las condiciones legales; las otras opciones alteran ese texto.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "85-0",
+  "parT": "art 35 toda persona tiene derecho a acceder a la prevencion sanitaria y a beneficiarse de ",
+  "fR": 1,
+  "pz": "k-35",
+  "sec": 17,
+  "id": "1-608"
+ },
+ {
+  "lote": "d1",
+  "i": 56,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "41",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derecho a una buena administración. Toda persona tiene derecho a que las instituciones, órganos y organismos de la Unión traten sus asuntos imparcial y equitativamente y dentro de un plazo razonable. Este derecho incluye en particular... Señale la opción INCORRECTA:",
+  "opciones": [
+   "El derecho de toda persona a acceder al expediente que le concierna, dentro del respeto de los intereses legítimos de la confidencialidad y del Secreto profesional y comercial.",
+   "El derecho de toda persona a ser oída antes de que se tome en contra suya una medida individual que la afecte desfavorablemente.",
+   "La obligación que incumbe a la Administración de motivar sus decisiones.",
+   "El derecho de dirigirse a las instituciones de la Unión en su lengua y recibir una contestación en esa misma lengua."
+  ],
+  "correcta": 3,
+  "lila": "Art. 41 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Toda persona tiene derecho a que las instituciones, órganos y organismos de la Unión traten sus asuntos imparcial y equitativamente y dentro de un plazo razonable. 2. Este derecho incluye en particular: a) el derecho de toda persona a ser oída antes de que se tome en contra suya una medida individual que la afecte desfavorablemente; b) el derecho de toda persona a acceder al expediente que le concierna, dentro del respeto de los intereses legítimos de la confidencialidad y del secreto profesional y comercial; c) la obligación que incumbe a la administración de motivar sus decisiones. 3. Toda persona tiene derecho a la reparación por la Unión de los daños causados por sus instituciones o sus agentes en el ejercicio de sus funciones, de conformidad con los principios generales comunes a los Derechos de los Estados miembros. 4. Toda persona podrá dirigirse a las instituciones de la Unión en una de las lenguas de los Tratados y deberá recibir una contestación en esa misma lengua.",
+  "exp": "Dirigirse a las instituciones en una lengua de los Tratados está en el apartado 4, no en la lista del apartado 2, que comprende audiencia, acceso al expediente y motivación.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "87-1-0",
+  "parT": "art 41 1 toda persona tiene derecho a que las instituciones organos y organismos de la uni",
+  "fR": 1,
+  "pz": "k-41",
+  "sec": 18,
+  "id": "1-609"
+ },
+ {
+  "lote": "d1",
+  "i": 57,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "47",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derecho a la tutela judicial efectiva y a un juez imparcial. Señale la opción CORRECTA:",
+  "opciones": [
+   "Toda persona tiene derecho a que su causa sea oída equitativa y públicamente y dentro de un plazo razonable por un juez independiente e imparcial, establecido previamente por la ley.",
+   "Toda persona, cuando sus derechos hayan sido presuntamente vulnerados, podrá hacerse aconsejar, defender y representar.",
+   "Todo ciudadano de la Unión y toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro tiene derecho a que su causa sea oída equitativa y públicamente y dentro de un plazo razonable por un juez u otro funcionario, que será en todo caso independiente e imparcial, establecido previamente por la ley.",
+   "Toda persona tiene derecho a que su causa sea oída equitativa y públicamente y dentro de un plazo razonable por un juez u otro funcionario, que será en todo caso independiente e imparcial, establecido previamente por la ley."
+  ],
+  "correcta": 0,
+  "lila": "Art. 47 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Toda persona cuyos derechos y libertades garantizados por el Derecho de la Unión hayan sido violados tiene derecho a la tutela judicial efectiva respetando las condiciones establecidas en el presente artículo. Toda persona tiene derecho a que su causa sea oída equitativa y públicamente y dentro de un plazo razonable por un juez independiente e imparcial, establecido previamente por la ley. Toda persona podrá hacerse aconsejar, defender y representar. Se prestará asistencia jurídica gratuita a quienes no dispongan de recursos suficientes siempre y cuando dicha asistencia sea necesaria para garantizar la efectividad del acceso a la justicia.",
+  "exp": "Es literal. Las demás alteran quién puede hacerse defender o añaden «u otro funcionario».",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "90-0",
+  "parT": "art 47 toda persona tiene derecho a la tutela judicial efectiva toda persona tiene derecho",
+  "fR": 1,
+  "pz": "k-47",
+  "sec": 18,
+  "id": "1-610"
+ },
+ {
+  "lote": "d1",
+  "i": 58,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "12",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Libertad de reunión y de asociación. ¿Quién o quiénes contribuyen a expresar la voluntad política de los ciudadanos de la Unión?:",
+  "opciones": [
+   "Todos los partidos políticos y el Parlamento Europeo.",
+   "Todos los partidos políticos.",
+   "El Parlamento Europeo.",
+   "Los partidos políticos a escala de la Unión."
+  ],
+  "correcta": 3,
+  "lila": "Art. 12.2 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "2. Los partidos políticos a escala de la Unión contribuyen a expresar la voluntad política de los ciudadanos de la Unión.",
+  "exp": "Son los partidos políticos a escala de la Unión.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "69-1-0",
+  "parT": "2 los partidos politicos a escala de la union contribuyen a expresar la voluntad politica ",
+  "fR": 1,
+  "pz": "k-12",
+  "sec": 16,
+  "id": "1-611"
+ },
+ {
+  "lote": "d1",
+  "i": 59,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "40",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "41",
+    "ap": "2"
+   },
+   {
+    "n": "CDF",
+    "art": "41",
+    "ap": "3"
+   },
+   {
+    "n": "CDF",
+    "art": "39",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Carta de los derechos fundamentales de la Unión Europea. ¿Cuál de los siguientes derechos, libertades o principios NO está recogido en la Carta de Derechos Fundamentales de la UE?:",
+  "opciones": [
+   "Todo ciudadano de la Unión tiene derecho a ser elector y elegible en las elecciones municipales del Estado miembro en que resida.",
+   "Toda persona tiene derecho a la reparación por la Unión de los daños causados por sus instituciones o sus agentes en el ejercicio de sus funciones.",
+   "Todo ciudadano de la Unión tiene derecho a ser elector y elegible en las elecciones al Parlamento Europeo en el Estado miembro en que resida.",
+   "Toda persona tiene derecho a acceder al expediente que le afecta y aquellos otros que pudiesen estar relacionados con sus intereses."
+  ],
+  "correcta": 3,
+  "lila": "Art. 40 y Art. 41.2 y Art. 41.3 y Art. 39.1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 40. Todo ciudadano de la Unión tiene derecho de sufragio activo y pasivo en las elecciones municipales del Estado miembro en que resida, en las mismas condiciones que los nacionales de dicho Estado.<br>Art. 41. 2. Este derecho incluye en particular: a) el derecho de toda persona a ser oída antes de que se tome en contra suya una medida individual que la afecte desfavorablemente; b) el derecho de toda persona a acceder al expediente que le concierna, dentro del respeto de los intereses legítimos de la confidencialidad y del secreto profesional y comercial; c) la obligación que incumbe a la administración de motivar sus decisiones.<br>Art. 41. 3. Toda persona tiene derecho a la reparación por la Unión de los daños causados por sus instituciones o sus agentes en el ejercicio de sus funciones, de conformidad con los principios generales comunes a los Derechos de los Estados miembros.<br>Art. 39. 1. Todo ciudadano de la Unión tiene derecho de sufragio activo y pasivo en las elecciones al Parlamento Europeo en el Estado miembro en que resida, en las mismas condiciones que los nacionales de dicho Estado.",
+  "exp": "El acceso se limita al expediente que concierne a la persona, no a otros relacionados con sus intereses.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "86-0",
+  "parT": "art 40 todo ciudadano de la union tiene derecho de sufragio activo y pasivo en las eleccio",
+  "fR": 0.09,
+  "pz": "k-40",
+  "sec": 18,
+  "id": "1-612"
+ },
+ {
+  "lote": "d1",
+  "i": 60,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "13",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "9",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "7",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "6",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Respecto a las siguientes Libertades, señale la opción INCORRECTA:",
+  "opciones": [
+   "Las artes y la investigación científica requieren autorización previa. Se respeta la libertad de cátedra.",
+   "Se garantizan el derecho a contraer matrimonio y el derecho a fundar una familia según las leyes nacionales que regulen su ejercicio.",
+   "Toda persona tiene derecho al respeto de su vida privada y familiar, de su domicilio y de sus comunicaciones.",
+   "Toda persona tiene derecho a la libertad y a la seguridad."
+  ],
+  "correcta": 0,
+  "lila": "Art. 13 y Art. 9 y Art. 7 y Art. 6 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 13. Las artes y la investigación científica son libres. Se respeta la libertad de cátedra.<br>Art. 9. Se garantizan el derecho a contraer matrimonio y el derecho a fundar una familia según las leyes nacionales que regulen su ejercicio.<br>Art. 7. Toda persona tiene derecho al respeto de su vida privada y familiar, de su domicilio y de sus comunicaciones.<br>Art. 6. Toda persona tiene derecho a la libertad y a la seguridad.",
+  "exp": "Las artes y la investigación científica son libres, sin autorización previa.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "69-2-0",
+  "parT": "art 13 las artes y la investigacion cientifica son libres se respeta la libertad de catedr",
+  "fR": 0.67,
+  "pz": "k-13",
+  "sec": 16,
+  "id": "1-613"
+ },
+ {
+  "lote": "d1",
+  "i": 61,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "21",
+    "ap": null
+   },
+   {
+    "n": "CDF",
+    "art": "23",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los derechos fundamentales de la Unión Europea. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Se prohíbe toda discriminación por razón de nacionalidad en el ámbito de aplicación de los Tratados y sin perjuicio de sus disposiciones particulares.",
+   "El principio de igualdad no impide el mantenimiento o la adopción de medidas que supongan ventajas concretas en favor del sexo femenino.",
+   "La igualdad entre mujeres y hombres deberá garantizarse en todos los ámbitos, inclusive en materia de empleo, trabajo y retribución.",
+   "Se prohíbe toda discriminación, y en particular la ejercida por razón de sexo, raza, color, orígenes étnicos o sociales, características genéticas, lengua, religión o convicciones, opiniones políticas o de cualquier otro tipo, pertenencia a una minoría nacional, patrimonio, nacimiento, discapacidad, edad u orientación sexual."
+  ],
+  "correcta": 1,
+  "lila": "Art. 21 y Art. 23 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Art. 21. 1. Se prohíbe toda discriminación, y en particular la ejercida por razón de sexo, raza, color, orígenes étnicos o sociales, características genéticas, lengua, religión o convicciones, opiniones políticas o de cualquier otro tipo, pertenencia a una minoría nacional, patrimonio, nacimiento, discapacidad, edad u orientación sexual. 2. Se prohíbe toda discriminación por razón de nacionalidad en el ámbito de aplicación de los Tratados y sin perjuicio de sus disposiciones particulares.<br>Art. 23. La igualdad entre mujeres y hombres deberá garantizarse en todos los ámbitos, inclusive en materia de empleo, trabajo y retribución. El principio de igualdad no impide el mantenimiento o la adopción de medidas que supongan ventajas concretas en favor del sexo menos representado.",
+  "exp": "Las medidas de ventaja se admiten en favor del sexo menos representado, no del femenino en concreto.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "74-0",
+  "parT": "art 21 1 se prohibe toda discriminacion y en particular la ejercida por razon de sexo raza",
+  "fR": 0.67,
+  "pz": null,
+  "sec": 17,
+  "id": "1-614"
+ },
+ {
+  "lote": "d1",
+  "i": 62,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "8",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los derechos fundamentales de la Unión Europea. Respecto a la protección de datos de carácter personal, señale la opciones que NO es CORRECTA:",
+  "opciones": [
+   "El respeto de estas normas estará sujeto al control de una autoridad dependiente del Estado parte.",
+   "Toda persona tiene derecho a acceder a los datos recogidos que le conciernan y a obtener su rectificación.",
+   "Estos datos se tratarán de modo leal, para fines concretos y sobre la base del consentimiento de la persona afectada o en virtud de otro fundamento legítimo previsto por la ley.",
+   "Toda persona tiene derecho a la protección de los datos de carácter personal que le conciernan."
+  ],
+  "correcta": 0,
+  "lila": "Art. 8 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Toda persona tiene derecho a la protección de los datos de carácter personal que le conciernan. 2. Estos datos se tratarán de modo leal, para fines concretos y sobre la base del consentimiento de la persona afectada o en virtud de otro fundamento legítimo previsto por la ley. Toda persona tiene derecho a acceder a los datos recogidos que le conciernan y a obtener su rectificación. 3. El respeto de estas normas estará sujeto al control de una autoridad independiente.",
+  "exp": "El control corresponde a una autoridad independiente, no dependiente del Estado.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "67-0",
+  "parT": "art 8 1 toda persona tiene derecho a la proteccion de los datos de caracter personal que l",
+  "fR": 1,
+  "pz": "k-8",
+  "sec": 16,
+  "id": "1-615"
+ },
+ {
+  "lote": "d1",
+  "i": 63,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "47",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derecho a la tutela judicial efectiva y a un juez imparcial. Se prestará asistencia jurídica gratuita a quienes no dispongan de recursos suficientes...:",
+  "opciones": [
+   "Siempre y cuando dicha asistencia sea necesaria para garantizar la efectividad del acceso a la justicia.",
+   "Todas las opciones son incorrectas.",
+   "Cuando el proceso judicial requiera asistencia letrada para cualquiera de los litigantes.",
+   "Cuando se acredite insuficiencia de recursos para litigar."
+  ],
+  "correcta": 0,
+  "lila": "Art. 47 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "Toda persona cuyos derechos y libertades garantizados por el Derecho de la Unión hayan sido violados tiene derecho a la tutela judicial efectiva respetando las condiciones establecidas en el presente artículo. Toda persona tiene derecho a que su causa sea oída equitativa y públicamente y dentro de un plazo razonable por un juez independiente e imparcial, establecido previamente por la ley. Toda persona podrá hacerse aconsejar, defender y representar. Se prestará asistencia jurídica gratuita a quienes no dispongan de recursos suficientes siempre y cuando dicha asistencia sea necesaria para garantizar la efectividad del acceso a la justicia.",
+  "exp": "La asistencia gratuita exige que sea necesaria para garantizar la efectividad del acceso a la justicia.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "90-0-0",
+  "parT": "art 47 toda persona tiene derecho a la tutela judicial efectiva toda persona tiene derecho",
+  "fR": 1,
+  "pz": "k-47",
+  "sec": 18,
+  "id": "1-616"
+ },
+ {
+  "lote": "d1",
+  "i": 64,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "51",
+    "ap": null
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. En relación con el ámbito de aplicación de esta Carta, señale la opción INCORRECTA:",
+  "opciones": [
+   "Sus disposiciones están dirigidas a las instituciones de la Unión, dentro del respeto del principio de subsidiariedad.",
+   "La Carta no crea ninguna competencia o misión nuevas para la Unión.",
+   "La Carta puede ampliar el ámbito de aplicación del Derecho de la Unión más allá de las competencias de la Unión.",
+   "La Carta no modifica las competencias y misiones definidas en los Tratados."
+  ],
+  "correcta": 2,
+  "lila": "Art. 51 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Las disposiciones de la presente Carta están dirigidas a las instituciones, órganos y organismos de la Unión, dentro del respeto del principio de subsidiariedad, así como a los Estados miembros únicamente cuando apliquen el Derecho de la Unión. Por consiguiente, éstos respetarán los derechos, observarán los principios y promoverán su aplicación, con arreglo a sus respectivas competencias y dentro de los límites de las competencias que los Tratados atribuyen a la Unión. 2. La presente Carta no amplía el ámbito de aplicación del Derecho de la Unión más allá de las competencias de la Unión, ni crea ninguna competencia o misión nuevas para la Unión, ni modifica las competencias y misiones definidas en los Tratados.",
+  "exp": "La Carta no amplía el ámbito de aplicación del Derecho de la Unión. Las demás son correctas.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "92-0",
+  "parT": "art 51 1 las disposiciones de la presente carta estan dirigidas a las instituciones organo",
+  "fR": 0.53,
+  "pz": "k-51",
+  "sec": 18,
+  "id": "1-617"
+ },
+ {
+  "lote": "d1",
+  "i": 65,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "12",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Los partidos políticos a escala de la Unión Europea contribuyen a expresar:",
+  "opciones": [
+   "La voluntad democrática de los ciudadanos de la Unión.",
+   "La voluntad política de los ciudadanos de la Unión.",
+   "La diversidad democrática de los ciudadanos de la Unión.",
+   "La diversidad ideológica de los ciudadanos de la Unión."
+  ],
+  "correcta": 1,
+  "lila": "Art. 12.2 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "2. Los partidos políticos a escala de la Unión contribuyen a expresar la voluntad política de los ciudadanos de la Unión.",
+  "exp": "Expresan la voluntad política de los ciudadanos de la Unión.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "69-1-0",
+  "parT": "2 los partidos politicos a escala de la union contribuyen a expresar la voluntad politica ",
+  "fR": 1,
+  "pz": "k-12",
+  "sec": 16,
+  "id": "1-618"
+ },
+ {
+  "lote": "d1",
+  "i": 66,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "pre"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea, preámbulo. La Unión contribuye a defender y fomentar los valores comunes indivisibles y universales de la dignidad humana, la libertad, la igualdad y la solidaridad dentro del respeto de la diversidad de culturas y tradiciones de los pueblos de Europa, así como de la identidad nacional de los Estados miembros y de la organización de sus poderes públicos a escala nacional, regional y local; trata de... Señale la opción INCORRECTA:",
+  "opciones": [
+   "Garantizar la libre circulación de personas, servicios, mercancías y capitales.",
+   "Fomentar un desarrollo equilibrado y sostenible.",
+   "Fomentar la estabilidad de los precios, en una economía social de mercado altamente competitiva, tendente al pleno empleo y al progreso social.",
+   "Garantizar la libertad de establecimiento."
+  ],
+  "correcta": 2,
+  "lila": "Preámbulo · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "La Unión contribuye a defender y fomentar estos valores comunes dentro del respeto de la diversidad de culturas y tradiciones de los pueblos de Europa, así como de la identidad nacional de los Estados miembros y de la organización de sus poderes públicos a escala nacional, regional y local; trata de fomentar un desarrollo equilibrado y sostenible y garantiza la libre circulación de personas, servicios, mercancías y capitales, así como la libertad de establecimiento.",
+  "exp": "La estabilidad de precios y la economía social de mercado no están en el preámbulo de la Carta (es lenguaje del Tratado de la Unión Europea).",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "63-2",
+  "parT": "la union contribuye a defender y fomentar estos valores comunes dentro del respeto de la d",
+  "fR": 1,
+  "pz": "k-pre",
+  "sec": 15,
+  "id": "1-619"
+ },
+ {
+  "lote": "d1",
+  "i": 67,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "41",
+    "ap": "2"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. Derecho a una buena administración. Toda persona tiene derecho a que las instituciones, órganos y organismos de la Unión traten sus asuntos imparcial y equitativamente y dentro de un plazo razonable. ¿Qué incluye este derecho en particular?:",
+  "opciones": [
+   "El derecho de toda persona a acceder al expediente que le concierna, dentro del respeto a la constitución.",
+   "La obligación que incumbe a la administración de motivar sus decisiones.",
+   "El derecho de toda persona a ser oída cuando se tome en contra suya una medida individual que la afecte desfavorablemente.",
+   "Todas las opciones Son Correctas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 41.2 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "2. Este derecho incluye en particular: a) el derecho de toda persona a ser oída antes de que se tome en contra suya una medida individual que la afecte desfavorablemente; b) el derecho de toda persona a acceder al expediente que le concierna, dentro del respeto de los intereses legítimos de la confidencialidad y del secreto profesional y comercial; c) la obligación que incumbe a la administración de motivar sus decisiones.",
+  "exp": "La motivación es literal. El acceso respeta la confidencialidad y el secreto (no «la constitución») y la audiencia es previa a la medida, no cuando se toma.",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "87-1",
+  "parT": "art 41 1 toda persona tiene derecho a que las instituciones organos y organismos de la uni",
+  "fR": 1,
+  "pz": "k-41",
+  "sec": 18,
+  "id": "1-620"
+ },
+ {
+  "lote": "d1",
+  "i": 68,
+  "v": "v02",
+  "t": 1,
+  "refs": [
+   {
+    "n": "CDF",
+    "art": "51",
+    "ap": "1"
+   }
+  ],
+  "pregunta": "Carta de los Derechos Fundamentales de la Unión Europea. ¿A quiénes están dirigidas las disposiciones de la Carta de Derechos Fundamentales?:",
+  "opciones": [
+   "A los Estados miembros, en todo caso.",
+   "A las instituciones, y organismos de la Unión, dentro del respeto del principio de proporcionalidad.",
+   "A las Instituciones y Órganos de la Unión.",
+   "A los Estados miembros salvo cuando apliquen el Derecho de la Unión."
+  ],
+  "correcta": 2,
+  "lila": "Art. 51.1 · Carta de los Derechos Fundamentales de la Unión Europea",
+  "rojo": "1. Las disposiciones de la presente Carta están dirigidas a las instituciones, órganos y organismos de la Unión, dentro del respeto del principio de subsidiariedad, así como a los Estados miembros únicamente cuando apliquen el Derecho de la Unión. Por consiguiente, éstos respetarán los derechos, observarán los principios y promoverán su aplicación, con arreglo a sus respectivas competencias y dentro de los límites de las competencias que los Tratados atribuyen a la Unión.",
+  "exp": "Se dirigen a las instituciones, órganos y organismos de la Unión y a los Estados cuando aplican el Derecho de la Unión, bajo el principio de subsidiariedad; las otras opciones añaden «en todo caso», «proporcionalidad» o «salvo».",
+  "apartado": "Carta de los Derechos Fundamentales de la Unión Europea",
+  "letra": "k",
+  "par": "92-0",
+  "parT": "art 51 1 las disposiciones de la presente carta estan dirigidas a las instituciones organo",
+  "fR": 1,
+  "pz": "k-51",
+  "sec": 18,
+  "id": "1-621"
+ },
+ {
+  "lote": "d1",
+  "i": 69,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "10",
+    "ap": null
+   },
+   {
+    "n": "ECE",
+    "art": "11",
+    "ap": null
+   },
+   {
+    "n": "ECE",
+    "art": "12",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Disposiciones generales. Señale la opción CORRECTA:",
+  "opciones": [
+   "Los órganos del Consejo de Europa son: el Comité de Ministros y la Asamblea Consultiva.",
+   "Los órganos del Consejo de Europa son asistidos por la Secretaría de Naciones Unidas.",
+   "Los idiomas oficiales del Consejo de Europa son el español, el francés y el inglés.",
+   "La sede del Consejo de Europa es Bruselas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 10 y Art. 11 y Art. 12 · Estatuto del Consejo de Europa",
+  "rojo": "Art. 10. Los órganos del Consejo de Europa son: i) El Comité de Ministros. ii) La Asamblea Consultiva. Estos dos órganos serán asistidos por la Secretaría del Consejo de Europa.<br>Art. 11. La sede del Consejo de Europa es Estrasburgo.<br>Art. 12. Los idiomas oficiales del Consejo de Europa son el francés y el inglés. Los Reglamentos internos del Comité de Ministros y de la Asamblea Consultiva determinarán las circunstancias y las condiciones en las cuales pueden ser empleados otros idiomas.",
+  "exp": "Los órganos son el Comité de Ministros y la Asamblea Consultiva, asistidos por la Secretaría del Consejo; la sede es Estrasburgo y los idiomas oficiales francés e inglés.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "102-0-0",
+  "parT": "art 10 los organos del consejo de europa son i el comite de ministros ii la asamblea consu",
+  "fR": 1,
+  "pz": "n-10",
+  "sec": 21,
+  "id": "1-622"
+ },
+ {
+  "lote": "d1",
+  "i": 70,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "33",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. La Asamblea Consultiva. Respecto a las sesiones ordinarias de la Asamblea Consultiva, señale la opción CORRECTA:",
+  "opciones": [
+   "Se celebrarán en la sede del Consejo, salvo decisión en contrario adoptada de común acuerdo por la Asamblea Consultiva y el Comité de Ministros.",
+   "Se celebrarán en la sede del Consejo, cuando así lo acuerden expresamente de común acuerdo por la Asamblea Consultiva y el Comité de Ministros.",
+   "Se celebrarán en la sede del Consejo, salvo decisión en contrario de la Asamblea Consultiva.",
+   "Se celebrarán en la sede del Consejo, cuando así lo acuerde expresamente la Asamblea Consultiva."
+  ],
+  "correcta": 0,
+  "lila": "Art. 33 · Estatuto del Consejo de Europa",
+  "rojo": "Las sesiones ordinarias de la Asamblea Consultiva se celebrarán en la sede del Consejo, salvo decisión en contrario adoptada de común acuerdo por la Asamblea y el Comité de Ministros.",
+  "exp": "La excepción exige decisión de común acuerdo de la Asamblea y el Comité de Ministros.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "114-3",
+  "parT": "art 33 las sesiones ordinarias de la asamblea consultiva se celebraran en la sede del cons",
+  "fR": 1,
+  "pz": "n-33",
+  "sec": 23,
+  "id": "1-623"
+ },
+ {
+  "lote": "d1",
+  "i": 71,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "24",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Asamblea Consultiva. Habida cuenta de las disposiciones del Estatuto del Consejo de Europa, ¿qué podrá constituir la Asamblea Consultiva?:",
+  "opciones": [
+   "Comités o Comisiones.",
+   "Comités o Salas.",
+   "Salas o Comisiones.",
+   "Secciones o Salas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 24 · Estatuto del Consejo de Europa",
+  "rojo": "La Asamblea Consultiva podrá, habida cuenta de las disposiciones del artículo 38 d) constituir Comités o Comisiones encargados de examinar todos los asuntos de su competencia, tal como ésta se define en el artículo 23, presentarle informes, estudiar los asuntos inscritos en su programa y formular opiniones sobre cualquier cuestión de procedimiento.",
+  "exp": "El artículo 24 habla de Comités o Comisiones.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "111-1",
+  "parT": "d constituir comites o comisiones encargados de examinar todos los asuntos de su competenc",
+  "fR": 1,
+  "pz": null,
+  "sec": 23,
+  "id": "1-624"
+ },
+ {
+  "lote": "d1",
+  "i": 72,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "17",
+    "ap": null
+   },
+   {
+    "n": "ECE",
+    "art": "24",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Señale la opción CORRECTA:",
+  "opciones": [
+   "El Comité de Ministros podrá constituir Comités o Comisiones de carácter operativo para todas las finalidades específicas que juzgue convenientes.",
+   "La Asamblea Consultiva podrá constituir Comités o Comisiones de carácter operativo para todas las finalidades específicas que juzgue convenientes.",
+   "La Asamblea Consultiva podrá constituir Comités o Comisiones de carácter consultivo o técnico para todas las finalidades específicas que juzgue convenientes.",
+   "El Comité de Ministros podrá constituir Comités o Comisiones de carácter consultivo o técnico para todas las finalidades específicas que juzgue convenientes."
+  ],
+  "correcta": 3,
+  "lila": "Art. 17 y Art. 24 · Estatuto del Consejo de Europa",
+  "rojo": "Art. 17. El Comité de Ministros podrá constituir Comités o Comisiones de carácter consultivo o técnico para todas las finalidades específicas que juzgue convenientes.<br>Art. 24. La Asamblea Consultiva podrá, habida cuenta de las disposiciones del artículo 38 d) constituir Comités o Comisiones encargados de examinar todos los asuntos de su competencia, tal como ésta se define en el artículo 23, presentarle informes, estudiar los asuntos inscritos en su programa y formular opiniones sobre cualquier cuestión de procedimiento.",
+  "exp": "Los de carácter consultivo o técnico para finalidades específicas los constituye el Comité de Ministros; ninguno es «operativo».",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "104-1",
+  "parT": "art 17 el comite de ministros podra constituir comites o comisiones de caracter consultivo",
+  "fR": 1,
+  "pz": "n-17",
+  "sec": 22,
+  "id": "1-625"
+ },
+ {
+  "lote": "d1",
+  "i": 73,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "36",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Respecto a la Secretaria, señale la opción INCORRECTA:",
+  "opciones": [
+   "El Secretario general y el Secretario general adjunto prestarán dicha declaración solemne ante la Asamblea consultiva; los restantes miembros del personal lo harán ante el Comité.",
+   "Ningún miembro de la Secretaría podrá desempeñar un cargo remunerado por un Gobierno, ser miembro de la Asamblea Consultiva o de un Parlamento nacional o desempeñar ocupaciones incompatibles con sus deberes.",
+   "Todos los Miembros respetarán el carácter exclusivamente internacional de las funciones del Secretario general y del personal de la Secretaría y se abstendrán de intentar ejercer influencia sobre ellos en el ejercicio de sus funciones.",
+   "Todos los miembros del personal de la Secretaría afirmarán, mediante una declaración solemne, su adhesión al Consejo de Europa y su resolución de desempeñar concienzudamente los deberes de su cargo, sin dejarse influir por ninguna consideración de orden nacional, así como su voluntad de no solicitar ni aceptar de ningún Gobierno ni de ninguna autoridad ajena al Consejo, instrucciones en relación con el ejercicio de sus funciones y de abstenerse de cualquier acto incompatible con su estatuto de funcionario internacional exclusivamente responsable ante el Consejo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 36 · Estatuto del Consejo de Europa",
+  "rojo": "a) La Secretaría estará compuesta por: • un Secretario General, • un Secretario General Adjunto y • el personal necesario. b) El Secretario General y el Secretario General Adjunto: • serán nombrados por la Asamblea Consultiva por recomendación del Comité de Ministros. c) Los restantes miembros de la Secretaría: • serán nombrados por el Secretario General con arreglo al Reglamento administrativo. d) Ningún miembro de la Secretaría podrá desempeñar un cargo remunerado por un Gobierno, ser miembro de la Asamblea Consultiva o de un Parlamento nacional o desempeñar ocupaciones incompatibles con sus deberes. e) Todos los miembros del personal de la Secretaría afirmarán, mediante una declaración solemne, su adhesión al Consejo de Europa y su resolución de desempeñar concienzudamente los deberes de su cargo, sin dejarse influir por ninguna consideración de orden nacional, así como su voluntad de no solicitar ni aceptar de ningún Gobierno ni de ninguna autoridad ajena al Consejo, instrucciones en relación con el ejercicio de sus funciones y de abstenerse de cualquier acto incompatible con su estatuto de funcionario internacional exclusivamente responsable ante el Consejo. El Secretario General y el Secretario General Adjunto prestarán dicha declaración ante el Comité; los restantes miembros del personal lo harán ante el Secretario General. f) Todos los Miembros respetarán el carácter exclusivamente internacional de las funciones del Secretario General y del personal de la Secretaría y se abstendrán de intentar ejercer influencia sobre ellos en el ejercicio de sus funciones.",
+  "exp": "El Secretario General y el Adjunto declaran ante el Comité y los demás ante el Secretario General. Las otras tres son correctas.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "116-0-0",
+  "parT": "art 36 a la secretaria estara compuesta por un secretario general un secretario general ad",
+  "fR": 1,
+  "pz": "n-36",
+  "sec": 24,
+  "id": "1-626"
+ },
+ {
+  "lote": "d1",
+  "i": 74,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "3",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Composición. El Estatuto objeto de la pregunta nombra unos principios que cada uno de los Miembros del Consejo de Europa reconoce. ¿Cuáles son esos principios?:",
+  "opciones": [
+   "Principio del imperio nacional y el principio en virtud del cual cualquier persona que se halle bajo su jurisdicción ha de gozar de los derechos humanos y de las libertades fundamentales.",
+   "Principio del imperio del derecho y el principio en virtud del cual cualquier persona que se halle bajo su jurisdicción ha de gozar de los derechos humanos y de las libertades fundamentales.",
+   "Principio del imperio nacional y el principio en virtud del cual cualquier persona que se halle bajo la jurisdicción de la Unión ha de gozar de los derechos humanos y de las libertades fundamentales.",
+   "Principio del imperio del derecho y el principio en virtud del cual cualquier persona que se halle bajo la jurisdicción de la Unión ha de gozar de los derechos fundamentales y de las libertades humanas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 3 · Estatuto del Consejo de Europa",
+  "rojo": "Cada uno de los Miembros del Consejo de Europa reconoce el principio del imperio del Derecho y el principio en virtud del cual cualquier persona que se halle bajo su jurisdicción ha de gozar de los derechos humanos y de las libertades fundamentales, y se compromete a colaborar sincera y activamente en la consecución de la finalidad definida en el capítulo primero.",
+  "exp": "Se reconocen el imperio del Derecho y el goce de los derechos y libertades por toda persona bajo la jurisdicción del Miembro.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "99-0-0",
+  "parT": "art 3 cada uno de los miembros del consejo de europa reconoce el principio del imperio del",
+  "fR": 1,
+  "pz": "n-3",
+  "sec": 21,
+  "id": "1-627"
+ },
+ {
+  "lote": "d1",
+  "i": 75,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "25",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Asamblea Consultiva. Señale la opción INCORRECTA:",
+  "opciones": [
+   "El mandato de los representantes de la Asamblea Consultiva empieza con la apertura de la reunión ordinaria que sigue a su designación.",
+   "Cada uno de los representantes de la Asamblea Consultiva tendrá la nacionalidad del Miembro que representen y no podrán ser a la vez miembros del Comité de Ministros.",
+   "Ningún representante de la Asamblea Consultiva podrá ser privado de su puesto en el curso de una reunión de la Asamblea sin el consentimiento del Estado que lo autorizó.",
+   "La Asamblea Consultiva estará constituida por representantes de cada Miembro, elegidos por su Parlamento."
+  ],
+  "correcta": 2,
+  "lila": "Art. 25 · Estatuto del Consejo de Europa",
+  "rojo": "a) La Asamblea Consultiva estará constituida por representantes de cada Miembro, elegidos por su Parlamento de entre los miembros de éste o designados, por nombramiento de entre los mismos con arreglo a un procedimiento fijado por dicho Parlamento, sin perjuicio, no obstante, del derecho del Gobierno de cualquier Miembro a efectuar aquellos nombramientos complementarios que fueren necesarios cuando el Parlamento no estuviere reunido ni hubiere establecido procedimiento alguno a qué atenerse en dicho caso. Cada uno de los representantes tendrá la nacionalidad del Miembro que represente y no podrá ser a la vez miembro del Comité de Ministros. El mandato de los representantes así designados empieza con la apertura de la reunión ordinaria que sigue a su designación y expira con la apertura de la reunión ordinaria siguiente o de una reunión ordinaria ulterior, quedando a salvo el derecho de los Miembros de proceder a nuevas designaciones después de celebrar elecciones para su Parlamento. Si un Miembro provee los puestos vacantes por muerte o dimisión o efectúa designaciones después de la celebración de elecciones parlamentarias, el mandato de los nuevos representantes surtirá efecto a partir de la primera reunión de la Asamblea que siga a su designación. b) Ningún representante podrá ser privado de su puesto en el curso de una reunión de la Asamblea sin el consentimiento de ésta. c) Cada representante podrá tener un suplente, que en su ausencia podrá ocupar su puesto, tomar la palabra y votar en su lugar. Lo dispuesto en el anterior apartado a) se aplicará asimismo a la designación de suplentes.",
+  "exp": "Para privar del puesto a un representante hace falta el consentimiento de la propia Asamblea, no del Estado.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "109-1",
+  "parT": "art 25 a la asamblea consultiva estara constituida por representantes de cada miembro eleg",
+  "fR": 0.52,
+  "pz": "n-25",
+  "sec": 23,
+  "id": "1-628"
+ },
+ {
+  "lote": "d1",
+  "i": 76,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "41",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Enmiendas. Respecto a las enmiendas, señale la opción CORRECTA:",
+  "opciones": [
+   "Cada uno de los Protocolos de enmienda entrará en vigor una vez firmado y ratificado por las dos terceras partes de los Miembros.",
+   "Todas las opciones son correctas.",
+   "La Asamblea Consultiva recomendará, y dispondrá que se incorporen a un Protocolo, las enmiendas al Estatuto del Consejo de Europa que estime conveniente.",
+   "Podrán hacerse proposiciones de enmienda del Estatuto del Consejo de Europa exclusivamente a la Asamblea Consultiva."
+  ],
+  "correcta": 0,
+  "lila": "Art. 41 · Estatuto del Consejo de Europa",
+  "rojo": "a) Podrán hacerse proposiciones de enmienda del presente Estatuto al Comité de Ministros o, en las condiciones previstas en el artículo 23, a la Asamblea Consultiva. b) El Comité recomendará, y dispondrá que se incorporen a un Protocolo, las enmiendas al Estatuto que estime conveniente. c) Cada uno de los Protocolos de enmienda entrará en vigor una vez firmado y ratificado por las dos terceras partes de los Miembros. d) No obstante lo dispuesto en los apartados precedentes de este artículo, las enmiendas a los artículos 23 a 35, 38 y 39, que hayan sido aprobadas por el Comité y la Asamblea, entrarán en vigor en la fecha del acta «ad hoc» del Secretario General comunicada a los Gobiernos de los Miembros en que se certifique la aprobación otorgada a dichas enmiendas. Las disposiciones del presente apartado únicamente podrán aplicarse a partir del final de la segunda sesión ordinaria de la Asamblea.",
+  "exp": "Es literal. Quien recomienda y dispone el Protocolo es el Comité, y las propuestas van al Comité de Ministros o a la Asamblea.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "121-0-0",
+  "parT": "art 41 a podran hacerse proposiciones de enmienda del presente estatuto al comite de minis",
+  "fR": 1,
+  "pz": "n-41",
+  "sec": 24,
+  "id": "1-629"
+ },
+ {
+  "lote": "d1",
+  "i": 78,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "8",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Composición. ¿Quién podrá dejar en suspenso el derecho de representación del Miembro del Consejo de Europa que infrinja gravemente lo dispuesto en el artículo 3 del presente Estatuto?:",
+  "opciones": [
+   "El Comité de Ministros.",
+   "La Asamblea Consultiva.",
+   "La Secretaría General.",
+   "El Presidente del Comité."
+  ],
+  "correcta": 0,
+  "lila": "Art. 8 · Estatuto del Consejo de Europa",
+  "rojo": "El COMITÉ DE MINISTROS del Consejo de Europa podrá dejar en suspenso el derecho de representación del Miembro del Consejo de Europa que infrinja gravemente lo dispuesto en el artículo 3, e invitarle a retirarse en las condiciones previstas en el artículo 7. Si no atiende a dicha invitación, el Comité puede decidir que el Miembro de que se trata ha cesado de pertenecer al Consejo a partir de una fecha que determinará el propio Comité.",
+  "exp": "Es el Comité de Ministros.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "101-1",
+  "parT": "art 8 el comite de ministros del consejo de europa podra dejar en suspenso el derecho de r",
+  "fR": 1,
+  "pz": "n-8",
+  "sec": 21,
+  "id": "1-630"
+ },
+ {
+  "lote": "d1",
+  "i": 79,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "15",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Respecto al Comité de Ministros, señale la opción INCORRECTA:",
+  "opciones": [
+   "Las conclusiones del Comité de Ministros podrán, si hubiere lugar a ello, revestir la forma de recomendaciones a los Gobiernos.",
+   "El Comité podrá invitar a los Gobiernos a poner en su conocimiento las medidas que han tomado respecto a dichas recomendaciones.",
+   "Sus conclusiones serán comunicadas a los Miembros por el Comité de Ministros.",
+   "El Comité de Ministros examinará, por recomendación de la Asamblea Consultiva o por iniciativa propia, las medidas adecuadas para realizar la finalidad del Consejo de Europa, incluida la conclusión de convenios y de acuerdos y la adopción por los Gobiernos de una política común respecto a determinados asuntos."
+  ],
+  "correcta": 2,
+  "lila": "Art. 15 · Estatuto del Consejo de Europa",
+  "rojo": "a) El Comité de Ministros examinará, por recomendación de la Asamblea Consultiva o por iniciativa propia, las medidas adecuadas para realizar la finalidad del Consejo de Europa, incluida la conclusión de convenios y de acuerdos y la adopción por los Gobiernos de una política común respecto a determinados asuntos. Sus conclusiones serán comunicadas a los Miembros por el Secretario General. b) Las conclusiones del Comité de Ministros podrán, si hubiere lugar a ello, revestir la forma de recomendaciones a los Gobiernos. El Comité podrá invitar a éstos a poner en su conocimiento las medidas que han tomado respecto a dichas recomendaciones.",
+  "exp": "Las conclusiones las comunica el Secretario General. Las demás son del artículo 15.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "103-2",
+  "parT": "art 15 a el comite de ministros examinara por recomendacion de la asamblea consultiva o po",
+  "fR": 1,
+  "pz": "n-15",
+  "sec": 22,
+  "id": "1-631"
+ },
+ {
+  "lote": "d1",
+  "i": 80,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "38",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Respecto a la financiación, señale la opción CORRECTA:",
+  "opciones": [
+   "El Secretario general someterá al Comité las solicitudes de la Asamblea que puedan ocasionar gastos superiores al importe de los créditos, ya inscritos en el presupuesto, para la Asamblea y sus actividades.",
+   "El Secretario general someterá todos los años el presupuesto del Consejo a la aprobación del Comité, en las condiciones fijadas por el Reglamento financiero.",
+   "El Secretario general someterá igualmente al Comité de Ministros una evaluación de los gastos que implique la ejecución de cada una de las recomendaciones presentadas al Comité.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 38 · Estatuto del Consejo de Europa",
+  "rojo": "a) Cada miembro sufragará los gastos de su propia representación en el Comité de Ministros y en la Asamblea Consultiva. b) Los gastos de la Secretaría y cualesquiera otros gastos comunes se repartirán entre los miembros en las proporciones que fijará el Comité según el censo de la población de cada uno de los miembros. El Comité fijará las contribuciones de los miembros asociados. c) El Secretario General someterá todos los años el presupuesto del Consejo a la aprobación del Comité, en las condiciones fijadas por el Reglamento financiero. d) El Secretario General someterá al Comité las solicitudes de la Asamblea que puedan ocasionar gastos superiores al importe de los créditos, ya inscritos en el presupuesto, para la Asamblea y sus actividades. e) El Secretario General someterá igualmente al Comité de Ministros una evaluación de los gastos que implique la ejecución de cada una de las recomendaciones presentadas al Comité. Una resolución cuya ejecución implique gastos suplementarios, únicamente se considerará adoptada por el Comité de Ministros cuando éste haya aprobado las correspondientes previsiones de gastos suplementarios.",
+  "exp": "Las tres reproducen las letras c, d y e del artículo 38.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "119-0",
+  "parT": "art 38 a cada miembro sufragara los gastos de su propia representacion en el comite de min",
+  "fR": 0.41,
+  "pz": "n-38",
+  "sec": 24,
+  "id": "1-632"
+ },
+ {
+  "lote": "d1",
+  "i": 81,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "11",
+    "ap": null
+   },
+   {
+    "n": "ECE",
+    "art": "12",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Disposiciones generales. Según establece el artículo 11 y 12 del presente Estatuto:",
+  "opciones": [
+   "Todas las opciones son incorrectas.",
+   "La sede del Consejo de Europa es Varsovia y sus idiomas oficiales son el inglés, el español y el francés.",
+   "La sede del Consejo de Europa es Estrasburgo y sus idiomas oficiales son el inglés, el español y el francés.",
+   "La sede del Consejo de Europa es Varsovia y sus idiomas oficiales son el inglés y el español."
+  ],
+  "correcta": 0,
+  "lila": "Art. 11 y Art. 12 · Estatuto del Consejo de Europa",
+  "rojo": "Art. 11. La sede del Consejo de Europa es Estrasburgo.<br>Art. 12. Los idiomas oficiales del Consejo de Europa son el francés y el inglés. Los Reglamentos internos del Comité de Ministros y de la Asamblea Consultiva determinarán las circunstancias y las condiciones en las cuales pueden ser empleados otros idiomas.",
+  "exp": "La sede es Estrasburgo y los idiomas oficiales solo francés e inglés, así que ninguna de las otras tres es correcta.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "102-1-0",
+  "parT": "art 11 la sede del consejo de europa es estrasburgo",
+  "fR": 0.4,
+  "pz": "n-11",
+  "sec": 21,
+  "id": "1-633"
+ },
+ {
+  "lote": "d1",
+  "i": 82,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "40",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Privilegios e inmunidades. ¿Quiénes gozarán, en los territorios de los Miembros, de las inmunidades y privilegios necesarios para el ejercicio de sus funciones?:",
+  "opciones": [
+   "La Secretaría.",
+   "Los representantes de los Miembros.",
+   "El Consejo de Europa.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 40 · Estatuto del Consejo de Europa",
+  "rojo": "a) El Consejo de Europa, los representantes de los Miembros y la Secretaría gozarán, en los territorios de los Miembros, de las inmunidades y privilegios necesarios para el ejercicio de sus funciones. En virtud de estas inmunidades los representantes en la Asamblea Consultiva no podrán ser detenidos ni perseguidos, en los territorios de ningún Miembro, por opiniones o votos emitidos en el curso de los debates de la Asamblea, de sus comités o de sus comisiones. b) Los Miembros se comprometen a concluir, lo antes posible, un acuerdo para que surtan plenos efectos las disposiciones del precedente apartado a) Con este fin, el Comité de Ministros recomendará a los Gobiernos de los Miembros la conclusión de un Acuerdo que defina los privilegios e inmunidades reconocidos en sus territorios. Se concluirá, además, un Acuerdo particular con el Gobierno de la República Francesa, que definirá los privilegios e inmunidades de que gozará el Consejo en su sede.",
+  "exp": "Gozan de ellas el Consejo de Europa, los representantes de los Miembros y la Secretaría.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "120-0",
+  "parT": "a el consejo de europa los representantes de los miembros y la secretaria gozaran en los t",
+  "fR": 1,
+  "pz": "n-40",
+  "sec": 24,
+  "id": "1-634"
+ },
+ {
+  "lote": "d1",
+  "i": 83,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "7",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Cualquier Miembro del Consejo de Europa podrá retirarse del mismo notificando su decisión al Secretario general. ¿Cuándo surtirá efecto la notificación si se realizó en los tres últimos meses del año?:",
+  "opciones": [
+   "Al finalizar el año financiero siguiente.",
+   "A los 9 meses de realizar la notificación.",
+   "A los 3 meses de realizar la notificación.",
+   "Al concluir el año financiero en curso."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7 · Estatuto del Consejo de Europa",
+  "rojo": "Cualquier Miembro del Consejo de Europa podrá retirarse del mismo notificando su decisión al Secretario General. La notificación surtirá efecto al concluir el año financiero en curso, si tuvo lugar en los primeros nueve meses de este año, y al finalizar el año financiero siguiente, si se realizó en los tres últimos meses.",
+  "exp": "En los tres últimos meses surte efecto al finalizar el año financiero siguiente.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "101-0-0",
+  "parT": "art 7 cualquier miembro del consejo de europa podra retirarse del mismo notificando su dec",
+  "fR": 1,
+  "pz": "n-7",
+  "sec": 21,
+  "id": "1-635"
+ },
+ {
+  "lote": "d1",
+  "i": 84,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "16",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Sin perjuicio de los poderes de la Asamblea Consultiva, ¿quién resolverá, con carácter obligatorio, cualquier cuestión relativa a la organización y el régimen interior del Consejo de Europa?:",
+  "opciones": [
+   "La Secretaría.",
+   "El Comité de Ministros.",
+   "La Asamblea Consultiva.",
+   "El Presidente del Consejo de Europa."
+  ],
+  "correcta": 1,
+  "lila": "Art. 16 · Estatuto del Consejo de Europa",
+  "rojo": "Sin perjuicio de los poderes de la Asamblea Consultiva, tal como se definen en los artículos 24, 28, 30, 32, 33 y 35, el Comité de Ministros resolverá, con carácter obligatorio, cualquier cuestión relativa a la organización y el régimen interior del Consejo de Europa. Con este fin adoptará los reglamentos financieros y administrativos necesarios.",
+  "exp": "Resuelve el Comité de Ministros.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "104-0",
+  "parT": "art 16 sin perjuicio de los poderes de la asamblea consultiva el comite de ministros resol",
+  "fR": 1,
+  "pz": "n-16",
+  "sec": 22,
+  "id": "1-636"
+ },
+ {
+  "lote": "d1",
+  "i": 85,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "21",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Respecto al Comité de Ministros, señale la opción CORRECTA:",
+  "opciones": [
+   "El Comité se reunirá obligatoriamente antes de la apertura de las reuniones de la Asamblea Consultiva y al comienzo de estas reuniones: se reunirá, además, cuantas veces lo estime conveniente.",
+   "Salvo acuerdo en contrario del Comité de Ministros, sus reuniones se celebrarán: (i) a puerta cerrada, (ii) en la sede del Consejo.",
+   "El Comité resolverá en cuanto a la información que haya de publicarse acerca de las deliberaciones a puerta cerrada y sus conclusiones.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 21 · Estatuto del Consejo de Europa",
+  "rojo": "a) Salvo acuerdo en contrario del Comité de Ministros, sus reuniones se celebrarán: i) A puerta cerrada; ii) En la sede del Consejo. b) El Comité resolverá en cuanto a la información que haya de publicarse acerca de las deliberaciones a puerta cerrada y sus conclusiones. c) El Comité se reunirá obligatoriamente antes de la apertura de las reuniones de la Asamblea Consultiva y al comienzo de estas reuniones; se reunirá, además, cuantas veces lo estime conveniente.",
+  "exp": "Las tres reproducen las letras a, b y c del artículo 21.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "108-0",
+  "parT": "a salvo acuerdo en contrario del comite de ministros sus reuniones se celebraran i a puert",
+  "fR": 0.4,
+  "pz": null,
+  "sec": 22,
+  "id": "1-637"
+ },
+ {
+  "lote": "d1",
+  "i": 86,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "11",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. ¿Cuál es la sede del Consejo de Europa?:",
+  "opciones": [
+   "La Haya.",
+   "Estrasburgo.",
+   "Varsovia.",
+   "Bruselas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 11 · Estatuto del Consejo de Europa",
+  "rojo": "La sede del Consejo de Europa es Estrasburgo.",
+  "exp": "La sede es Estrasburgo.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "102-1-0",
+  "parT": "art 11 la sede del consejo de europa es estrasburgo",
+  "fR": 1,
+  "pz": "n-11",
+  "sec": 21,
+  "id": "1-638"
+ },
+ {
+  "lote": "d1",
+  "i": 87,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "15",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Respecto al Comité de Ministros, señale la opción INCORRECTA:",
+  "opciones": [
+   "Las conclusiones del Comité de Ministros serán comunicadas a los Miembros por su Presidente.",
+   "El Comité de Ministros examinará, por recomendación de la Asamblea Consultiva o por iniciativa propia, las medidas adecuadas para realizar la finalidad del Consejo de Europa, incluida la conclusión de convenios y de acuerdos y la adopción por los Gobiernos de una política común respecto a determinados asuntos.",
+   "Las conclusiones del Comité de Ministros podrán, si hubiere lugar a ello, revestir la forma de recomendaciones a los Gobiernos.",
+   "El Comité de Ministros podrá invitar a los Gobiernos a poner en conocimiento las medidas que han tomado respecto a las recomendaciones realizadas por el Comité."
+  ],
+  "correcta": 0,
+  "lila": "Art. 15 · Estatuto del Consejo de Europa",
+  "rojo": "a) El Comité de Ministros examinará, por recomendación de la Asamblea Consultiva o por iniciativa propia, las medidas adecuadas para realizar la finalidad del Consejo de Europa, incluida la conclusión de convenios y de acuerdos y la adopción por los Gobiernos de una política común respecto a determinados asuntos. Sus conclusiones serán comunicadas a los Miembros por el Secretario General. b) Las conclusiones del Comité de Ministros podrán, si hubiere lugar a ello, revestir la forma de recomendaciones a los Gobiernos. El Comité podrá invitar a éstos a poner en su conocimiento las medidas que han tomado respecto a dichas recomendaciones.",
+  "exp": "Las comunica el Secretario General, no el Presidente.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "103-2",
+  "parT": "art 15 a el comite de ministros examinara por recomendacion de la asamblea consultiva o po",
+  "fR": 0.97,
+  "pz": "n-15",
+  "sec": 22,
+  "id": "1-639"
+ },
+ {
+  "lote": "d1",
+  "i": 88,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "10",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Los órganos del Consejo de Europa son:",
+  "opciones": [
+   "El Comité de Ministros, la Asamblea Consultiva y la Secretaria General.",
+   "El Comité de Ministros, la Asamblea Consultiva, la Secretaria General y Personal necesario.",
+   "El Comité de Ministros y la Asamblea Consultiva.",
+   "El Comité de Ministros, la Asamblea Consultiva y la Secretaria."
+  ],
+  "correcta": 2,
+  "lila": "Art. 10 · Estatuto del Consejo de Europa",
+  "rojo": "Los órganos del Consejo de Europa son: i) El Comité de Ministros. ii) La Asamblea Consultiva. Estos dos órganos serán asistidos por la Secretaría del Consejo de Europa.",
+  "exp": "Los órganos son dos; la Secretaría solo los asiste.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "102-0-0",
+  "parT": "art 10 los organos del consejo de europa son i el comite de ministros ii la asamblea consu",
+  "fR": 1,
+  "pz": "n-10",
+  "sec": 21,
+  "id": "1-640"
+ },
+ {
+  "lote": "d1",
+  "i": 89,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "9",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Composición. Cuando un Miembro no cumpla sus obligaciones financieras, ¿qué ocurrirá?:",
+  "opciones": [
+   "El Comité de Ministros podrá suspender su derecho de representación en el Comité y en la Asamblea Consultiva durante el tiempo en que deje de satisfacer dichas obligaciones.",
+   "El Comité de Ministros en todo caso suspenderá su derecho de representación en el Comité y en la Asamblea Consultiva durante el tiempo en que deje de satisfacer dichas obligaciones.",
+   "El Comité de Ministros en todo caso suspenderá su derecho de representación en el Comité de Ministros durante el tiempo en que deje de satisfacer dichas obligaciones.",
+   "El Comité de Ministros podrá suspender definitivamente su derecho de representación en el Comité y en la Asamblea Consultiva."
+  ],
+  "correcta": 0,
+  "lila": "Art. 9 · Estatuto del Consejo de Europa",
+  "rojo": "Cuando un Miembro no cumpla sus obligaciones financieras, el COMITÉ DE MINISTROS podrá suspender su derecho de representación en el Comité y en la Asamblea Consultiva durante el tiempo en que deje de satisfacer dichas obligaciones.",
+  "exp": "La suspensión es potestativa, alcanza al Comité y a la Asamblea y dura mientras no se cumpla; no es obligatoria ni definitiva.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "101-2-0",
+  "parT": "art 9 cuando un miembro no cumpla sus obligaciones financieras el comite de ministros podr",
+  "fR": 1,
+  "pz": "n-9",
+  "sec": 21,
+  "id": "1-641"
+ },
+ {
+  "lote": "d1",
+  "i": 90,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "35",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Respecto a las deliberaciones de la Asamblea Consultiva, señale la opción CORRECTA:",
+  "opciones": [
+   "Serán privadas, a menos que la Asamblea Consultiva acuerde lo contrario.",
+   "Serán públicas, a menos que la Asamblea Consultiva acuerde lo contrario.",
+   "Serán privadas, a menos que el Presidente de la Asamblea Consultiva acuerde lo contrario.",
+   "Serán públicas, a menos que el Presidente de la Asamblea Consultiva acuerde lo contrario."
+  ],
+  "correcta": 1,
+  "lila": "Art. 35 · Estatuto del Consejo de Europa",
+  "rojo": "Las deliberaciones de la Asamblea Consultiva serán públicas, a menos que ella misma acuerde lo contrario.",
+  "exp": "Son públicas salvo que la propia Asamblea acuerde lo contrario.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "114-5-0",
+  "parT": "art 35 las deliberaciones de la asamblea consultiva seran publicas a menos que ella misma ",
+  "fR": 1,
+  "pz": "n-35",
+  "sec": 23,
+  "id": "1-642"
+ },
+ {
+  "lote": "d1",
+  "i": 91,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "31",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. La Asamblea Consultiva. Las deliberaciones sobre las proposiciones que han de ser dirigidas al Comité de Ministros para la inscripción de una cuestión en el programa de la Asamblea Consultiva, una vez definido el objeto, ¿a qué deberán referirse?:",
+  "opciones": [
+   "Únicamente a las razones en pro o en contra de la inscripción reseñada en el enunciado de la pregunta.",
+   "Únicamente a las razones en contra de la inscripción reseñada en el enunciado de la pregunta.",
+   "Únicamente a las razones en pro de la inscripción reseñada en el enunciado de la pregunta.",
+   "Entre otros a las razones en pro o en Contra de la inscripción reseñada en el enunciado de la pregunta."
+  ],
+  "correcta": 0,
+  "lila": "Art. 31 · Estatuto del Consejo de Europa",
+  "rojo": "Las deliberaciones sobre las proposiciones que han de ser dirigidas al Comité de Ministros para la inscripción de una cuestión en el programa de la Asamblea Consultiva, una vez definido objeto, deberán referirse únicamente a las razones en pro o en contra de esa inscripción.",
+  "exp": "Deben referirse únicamente a las razones en pro o en contra de la inscripción.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "pz": "n-31",
+  "sec": 23,
+  "id": "1-643"
+ },
+ {
+  "lote": "d1",
+  "i": 92,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "14",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. Comité de Ministros. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Cada Miembro tendrá un representante en el Comité de Ministros.",
+   "Los representantes en el Comité son los Ministros del Interior.",
+   "Cuando un Ministro de Asuntos Exteriores no pueda asistir a las sesiones, o cuando otras circunstancias lo aconsejen, podrá designarse un suplente que actúe en su lugar.",
+   "Cada representante de cada Miembro tiene un voto en el Comité de Ministros."
+  ],
+  "correcta": 1,
+  "lila": "Art. 14 · Estatuto del Consejo de Europa",
+  "rojo": "Cada Miembro tendrá un representante en el Comité de Ministros y cada representante tiene un voto. Los representantes en el Comité son los Ministros de Asuntos Exteriores. Cuando un Ministro de Asuntos Exteriores no pueda asistir a las sesiones, o cuando otras circunstancias lo aconsejen, podrá designarse un suplente que actúe en su lugar; éste será, en la medida de lo posible, un miembro del Gobierno de su país.",
+  "exp": "Los representantes son los Ministros de Asuntos Exteriores.",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "103-1-0",
+  "parT": "art 14 cada miembro tendra un representante en el comite de ministros y cada representante",
+  "fR": 1,
+  "pz": "n-14",
+  "sec": 22,
+  "id": "1-644"
+ },
+ {
+  "lote": "d1",
+  "i": 93,
+  "v": "v03",
+  "t": 1,
+  "refs": [
+   {
+    "n": "ECE",
+    "art": "28",
+    "ap": null
+   }
+  ],
+  "pregunta": "Estatuto del Consejo de Europa. La Asamblea Consultiva. La Asamblea Consultiva establecerá su reglamento interno, el cual establecerá \"inter alia\":",
+  "opciones": [
+   "La fecha y la forma en que se efectuará la notificación de los nombres del Presidente y del Vicepresidente.",
+   "El procedimiento para confeccionar el programa y comunicárselo a la Unión.",
+   "El quórum.",
+   "El procedimiento para elegir exclusivamente a los miembros de la Mesa."
+  ],
+  "correcta": 2,
+  "lila": "Art. 28 · Estatuto del Consejo de Europa",
+  "rojo": "a) La Asamblea Consultiva adoptará su Reglamento interno, y elegirá entre sus miembros a su Presidente, el cual permanecerá en el ejercicio de sus funciones hasta la siguiente reunión ordinaria. b) El Presidente dirigirá las deliberaciones, pero no participará en los debates ni en la votación. El suplente del Presidente podrá asistir a las sesiones, hacer uso de la palabra y votar en su lugar. c) El Reglamento interno establecerá «inter alia»: i) El quórum; ii) El procedimiento para elegir al Presidente y la duración de sus funciones y de las de los demás miembros de la Mesa; iii) El procedimiento para confeccionar el programa y comunicárselo a los representantes; iv) La fecha y la forma en que se efectuará la notificación de los nombres de los representantes y de sus suplentes.",
+  "exp": "El reglamento establece el quórum; las demás alteran la lista (los nombres son de los representantes y suplentes, el programa se comunica a los representantes).",
+  "apartado": "Estatuto del Consejo de Europa",
+  "letra": "n",
+  "par": "112-1",
+  "parT": "art 28 a la asamblea consultiva adoptara su reglamento interno y elegira entre sus miembro",
+  "fR": 1,
+  "pz": "n-28",
+  "sec": 23,
+  "id": "1-645"
+ }
+]
