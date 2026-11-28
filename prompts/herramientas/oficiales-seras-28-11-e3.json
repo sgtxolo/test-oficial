@@ -1,0 +1,1770 @@
+[
+ {
+  "lote": "e3",
+  "i": 0,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 3",
+    "k": 64
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Respecto a las bases jurídicas de la policía, señale la opción INCORRECTA:",
+  "opciones": [
+   "El personal de policía está sometido a la misma legislación que los ciudadanos ordinarios; las únicas excepciones a este principio sólo pueden justificarse para asegurar el buen desarrollo del trabajo de la policía en una sociedad democrática.",
+   "La legislación que rige la policía debe ser accesible a los ciudadanos y suficientemente clara y precisa; llegado el caso, debe completarse con reglamentos claros igualmente accesibles a los Ciudadanos.",
+   "La policía es un órgano público que debe ser establecido por la ley.",
+   "Las operaciones de policía deben llevarse siempre a cabo de conformidad con el derecho interno y las normas internacionales relacionadas con las citadas operaciones."
+  ],
+  "correcta": 3,
+  "lila": "Punto 3 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Las operaciones de policía deben llevarse siempre a cabo de conformidad con el derecho interno y las normas internacionales aceptadas por el país.",
+  "exp": "Las normas internacionales son las «aceptadas por el país», no las «relacionadas con las citadas operaciones».",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "64-0",
+  "pz": "c-3",
+  "sec": 15,
+  "id": "27-313"
+ },
+ {
+  "lote": "e3",
+  "i": 1,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 36",
+    "k": 97
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a los principios directivos relativos a la acción/intervención de la policía, señale la opción INCORRECTA:",
+  "opciones": [
+   "La recogida, el almacenamiento y la utilización de datos personales por la policía deben ser conformes a los principios internacionales que rigen la protección de datos y, en particular, limitarse a lo que es necesario para la realización de objetivos lícitos, legítimos y específicos.",
+   "En el cumplimiento de su misión, la policía debe tener siempre presente los derechos fundamentales de cada uno, tales como la libertad de pensamiento, conciencia, religión, expresión, reunión pacífica, circulación y el derecho al respeto de sus bienes.",
+   "La policía no debe infligir, fomentar o tolerar ningún acto de tortura, ningún trato o pena inhumana o degradante, ni ninguna privación de libertad, cualquiera que sea la circunstancia.",
+   "La policía sólo debe atentar contra el derecho de cada uno al respeto de su vida privada en caso de absoluta necesidad y únicamente para cumplir un objetivo legítimo."
+  ],
+  "correcta": 2,
+  "lila": "Punto 36 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía no debe infligir, fomentar o tolerar ningún acto de tortura, ningún trato o pena inhumana o degradante, cualquiera que sea la circunstancia.",
+  "exp": "El punto de la tortura no incluye «ninguna privación de libertad».",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "97-0",
+  "sec": 15,
+  "id": "27-314"
+ },
+ {
+  "lote": "e3",
+  "i": 2,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Preámbulo",
+    "k": 61
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Definición del campo de aplicación. ¿A quién se aplica este Código?:",
+  "opciones": [
+   "A órganos controlados por los poderes públicos cuyo objetivo consiste en garantizar el mantenimiento del orden en la sociedad civil.",
+   "A órganos autorizados por los poderes públicos cuyo objetivo consiste en garantizar el mantenimiento del orden en la sociedad civil.",
+   "A las fuerzas o servicios de policía públicos tradicionales.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Preámbulo · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Definición del campo de aplicación Este Código se aplica a las fuerzas o servicios de policía públicos tradicionales, o a otros órganos autorizados y/o controlados por los poderes públicos cuyo primer objetivo consiste en garantizar el mantenimiento del orden en la sociedad civil, y que están autorizados por el Estado a utilizar la fuerza y/o poderes especiales para alcanzar este objetivo.",
+  "exp": "Las tres describen órganos y fuerzas incluidos en el campo de aplicación.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "61-2",
+  "pz": "c-pre",
+  "sec": 15,
+  "id": "27-315"
+ },
+ {
+  "lote": "e3",
+  "i": 3,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 8",
+    "k": 69
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a la policía y el sistema de justicia penal, señale la opción CORRECTA:",
+  "opciones": [
+   "La policía debe respetar estrictamente la independencia y la parcialidad de los jueces.",
+   "En particular, la policía puede poner objeciones a sentencias o decisiones judiciales legítimas.",
+   "La policía no puede ejercer funciones judiciales.",
+   "Cualquier delegación de poderes judiciales a la policía debe estar limitada y prevista por la ley."
+  ],
+  "correcta": 3,
+  "lila": "Punto 8 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía no debe, en principio, ejercer funciones judiciales. Cualquier delegación de poderes judiciales a la policía debe estar limitada y prevista por la ley. Debe ser siempre posible impugnar ante un órgano judicial cualquier acto, decisión u omisión de la policía relativa a los derechos individuales.",
+  "exp": "La policía no debe, en principio, ejercer funciones judiciales; la delegación debe ser limitada y prevista por la ley. La independencia es de «imparcialidad», no de «parcialidad».",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "69-0",
+  "pz": "c-7",
+  "sec": 15,
+  "id": "27-316"
+ },
+ {
+  "lote": "e3",
+  "i": 4,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Preámbulo",
+    "k": 61
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Definición del campo de aplicación. ¿A quién se aplica el presente Código?:",
+  "opciones": [
+   "A los órganos controlados por los poderes públicos cuyo primer objetivo consiste en garantizar el mantenimiento del orden en la sociedad civil, y que están autorizados por el Estado a utilizar la fuerza.",
+   "A las fuerzas o servicios de policía públicos tradicionales.",
+   "Todas las opciones son correctas.",
+   "A los órganos autorizados por los poderes públicos cuyo primer objetivo consiste en garantizar el mantenimiento del orden en la sociedad civil, y que están autorizados por el Estado a utilizar la fuerza."
+  ],
+  "correcta": 2,
+  "lila": "Preámbulo · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Definición del campo de aplicación Este Código se aplica a las fuerzas o servicios de policía públicos tradicionales, o a otros órganos autorizados y/o controlados por los poderes públicos cuyo primer objetivo consiste en garantizar el mantenimiento del orden en la sociedad civil, y que están autorizados por el Estado a utilizar la fuerza y/o poderes especiales para alcanzar este objetivo.",
+  "exp": "Las tres recogen la definición del campo de aplicación.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "61-2",
+  "pz": "c-pre",
+  "sec": 15,
+  "id": "27-317"
+ },
+ {
+  "lote": "e3",
+  "i": 5,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 54",
+    "k": 115
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Respecto de cada persona detenida, la privación de libertad debe limitarse tanto como sea posible y aplicarse teniendo en cuenta:",
+  "opciones": [
+   "Las necesidades personales.",
+   "La dignidad de la persona.",
+   "Todas las opciones son correctas.",
+   "La vulnerabilidad de la persona."
+  ],
+  "correcta": 2,
+  "lila": "Punto 54 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La privación de libertad debe limitarse tanto como sea posible y aplicarse teniendo en cuenta la dignidad, la vulnerabilidad y las necesidades personales de cada persona detenida. Las puestas en situación de detención preventiva deben consignarse sistemáticamente en un registro.",
+  "exp": "El texto cita dignidad, vulnerabilidad y necesidades personales.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "115-0",
+  "pz": "c-54",
+  "sec": 15,
+  "id": "27-318"
+ },
+ {
+  "lote": "e3",
+  "i": 6,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 35",
+    "k": 96
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Principios directivos relativos a la acciónfintervención de la policía. ¿Qué derecho de cualquier persona deben de respetar la policía y todas las intervenciones de la policía?:",
+  "opciones": [
+   "El derecho a la integridad de la persona.",
+   "El derecho a la libertad.",
+   "El derecho a la justicia.",
+   "El derecho a la vida."
+  ],
+  "correcta": 3,
+  "lila": "Punto 35 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía y todas las intervenciones de la policía deben respetar el derecho de cualquier persona a la vida.",
+  "exp": "El punto habla del derecho de cualquier persona a la vida.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "96-0",
+  "sec": 15,
+  "id": "27-319"
+ },
+ {
+  "lote": "e3",
+  "i": 7,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 65",
+    "k": 126
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Con respecto a la investigación y cooperación internacional, señale la proposición CORRECTA:",
+  "opciones": [
+   "Los Estados miembros deben promover los trabajos de investigación sobre la policía y que sean efectuados éstos por la misma policía.",
+   "Todas las opciones son correctas.",
+   "Convendría promover la cooperación internacional sobre las cuestiones de ética de la policía y los aspectos de su acción relativos a los derechos humanos.",
+   "Los medios de promover los principios enunciados en la presente recomendación y su puesta en práctica deben ser Objeto de un detenido estudio por parte de la Comisión Europea."
+  ],
+  "correcta": 2,
+  "lila": "Punto 65 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Convendría promover la cooperación internacional sobre las cuestiones de ética de la policía y los aspectos de su acción relativos a los derechos humanos.",
+  "exp": "Es literal. La investigación puede hacerla la policía o instituciones externas y el estudio corresponde al Consejo de Europa.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "126-0",
+  "pz": "c-65",
+  "sec": 15,
+  "id": "27-320"
+ },
+ {
+  "lote": "e3",
+  "i": 8,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 50",
+    "k": 111
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Investigaciones de policía. Convendría establecer líneas directrices relativas a la dirección de los interrogatorios de policía. En particular, sería conveniente asegurarse de que estos interrogatorios se desarrollen de forma equitativa, es decir, que los interesados sean informados de las razones del interrogatorio y de otros hechos pertinentes. ¿Cómo deberán consignarse el contenido de los interrogatorios de policía?:",
+  "opciones": [
+   "Todas las opciones son incorrectas.",
+   "Por fecha de detención.",
+   "Aleatoriamente.",
+   "Sistemáticamente."
+  ],
+  "correcta": 3,
+  "lila": "Punto 50 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Convendría establecer, teniendo en cuenta los principios enunciados en el artículo 48 anterior, líneas directrices relativas a la dirección de los interrogatorios de policía. En particular, sería conveniente asegurarse de que estos interrogatorios se desarrollan de forma equitativa, es decir, que los interesados son informados de las rezones del interrogatorio y de otros hechos pertinentes. El contenido de los interrogatorios de policía debe consignarse sistemáticamente.",
+  "exp": "El contenido de los interrogatorios debe consignarse sistemáticamente.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "111-0",
+  "pz": "c-49",
+  "sec": 41,
+  "id": "27-321"
+ },
+ {
+  "lote": "e3",
+  "i": 9,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 7",
+    "k": 68
+   },
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 10",
+    "k": 71
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. La policía y el sistema judicial penal. ¿Qué debe respetar la policía?:",
+  "opciones": [
+   "Estrictamente la independencia de los jueces.",
+   "El papel de los abogados de la defensa en el proceso de justicia penal.",
+   "Todas las opciones son correctas.",
+   "En particular, no debe poner objeciones a sentencias o decisiones judiciales legítimas ni obstaculizar su ejecución."
+  ],
+  "correcta": 2,
+  "lila": "Punto 7 y Punto 10 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Punto 7. La policía debe respetar estrictamente la independencia y la imparcialidad de los jueces; en particular, la policía no debe poner objeciones a sentencias o decisiones judiciales legítimas ni obstaculizar su ejecución.<br>Punto 10. La policía debe respetar el papel de los abogados de la defensa en el proceso de justicia penal y, llegado el caso, contribuir a garantizar un derecho efectivo al acceso a la asistencia jurídica, en particular en el caso de las personas privadas de libertad.",
+  "exp": "Las tres afirmaciones son deberes de respeto de la policía.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "68-0",
+  "pz": "c-7",
+  "sec": 15,
+  "id": "27-322"
+ },
+ {
+  "lote": "e3",
+  "i": 10,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 43",
+    "k": 104
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Principios directivos relativos a la acción/intervención de la policía. Señale la opción INCORRECTA. En el cumplimiento de su misión, la policía debe tener siempre presente los derechos fundamentales de cada uno, tales como:",
+  "opciones": [
+   "La libertad de información.",
+   "La libertad de pensamiento.",
+   "La libertad de expresión.",
+   "La libertad de religión."
+  ],
+  "correcta": 0,
+  "lila": "Punto 43 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "En el cumplimiento de su misión, la policía debe tener siempre presente los derechos fundamentales de cada uno, tales como la libertad de pensamiento, conciencia, religión, expresión, reunión pacífica, circulación y el derecho al respeto de sus bienes.",
+  "exp": "La libertad de información no está en la enumeración.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "104-0",
+  "pz": "c-43",
+  "sec": 15,
+  "id": "27-323"
+ },
+ {
+  "lote": "e3",
+  "i": 11,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 1",
+    "k": 62
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Señale la opción INCORRECTA. Los principales objetivos de la policía, en una sociedad democrática regida por el principio de la preeminencia del derecho, consisten en:",
+  "opciones": [
+   "Prevenir y combatir la delincuencia.",
+   "Seguir el rastro de la delincuencia.",
+   "Proteger y respetar las libertades y derechos fundamentales del individuo tal como son consagrados, principalmente, en la Declaración sobre la Policía del Consejo de Europa.",
+   "Garantizar el mantenimiento de la tranquilidad pública, el respeto de la ley y del orden en la sociedad."
+  ],
+  "correcta": 2,
+  "lila": "Punto 1 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Los principales objetivos de la policía, en una sociedad democrática regida por el principio de la preeminencia del derecho, consisten en: – Garantizar el mantenimiento de la tranquilidad pública, el respeto de la ley y del orden en la sociedad. – Proteger y respetar las libertades y derechos fundamentales del individuo tal como son consagrados, principalmente, en el Convenio Europeo de Derechos Humanos. – Prevenir y combatir la delincuencia. – Seguir el rastro de la delincuencia. – Facilitar asistencia y servicios a la población.",
+  "exp": "El texto cita el Convenio Europeo de Derechos Humanos, no la Declaración sobre la Policía.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "62-0",
+  "sec": 15,
+  "id": "27-324"
+ },
+ {
+  "lote": "e3",
+  "i": 12,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 31",
+    "k": 92
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Derechos del personal de policía. El personal de policía debe beneficiarse, por regla general:",
+  "opciones": [
+   "De los mismos derechos civiles, sociales y políticos que los demás ciudadanos.",
+   "De derechos civiles, sociales y políticos más amplios que los demás ciudadanos.",
+   "De derechos civiles, y políticos más amplios que los demás ciudadanos.",
+   "De los mismos derechos civiles y políticos que los demás ciudadanos."
+  ],
+  "correcta": 3,
+  "lila": "Punto 31 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "El personal de policía debe beneficiarse, por regla general, de los mismos derechos civiles y políticos que los demás ciudadanos. Solo son posibles restricciones a estos derechos si son necesarias para el ejercicio de las funciones de la policía en una sociedad democrática, de conformidad con la ley y con el Convenio Europeo de Derechos Humanos.",
+  "exp": "Los mismos derechos civiles y políticos que los demás ciudadanos; no menciona los sociales.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "92-0",
+  "pz": "c-31",
+  "sec": 15,
+  "id": "27-325"
+ },
+ {
+  "lote": "e3",
+  "i": 13,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 37",
+    "k": 98
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Principios directivos relativos a la acciónfintervención de la policía. ¿Cuándo puede la policía recurrir a la fuerza?:",
+  "opciones": [
+   "Sólo en caso de absoluta necesidad y únicamente para conseguir un objetivo legítimo.",
+   "Cuando se utilicen armas de fuego y únicamente para conseguir un objetivo legítimo.",
+   "Sólo en caso de estricta necesidad y únicamente para conseguir un objetivo legítimo.",
+   "Por orden de sus superiores y únicamente para conseguir un objetivo legítimo."
+  ],
+  "correcta": 0,
+  "lila": "Punto 37 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía sólo puede recurrir a la fuerza en caso de absoluta necesidad y únicamente para conseguir un objetivo legítimo.",
+  "exp": "Sólo en caso de absoluta necesidad y para un objetivo legítimo.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "98-0",
+  "pz": "c-37",
+  "sec": 15,
+  "id": "27-326"
+ },
+ {
+  "lote": "e3",
+  "i": 14,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 28",
+    "k": 89
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a la formación del personal de policía, señale la opción INCORRECTA:",
+  "opciones": [
+   "La formación del personal de policía debe integrar plenamente la necesidad de combatir el racismo y la xenofobia.",
+   "La formación general del personal de policía debe abrirse a la sociedad tanto como sea posible.",
+   "Una formación práctica relativa al empleo de la fuerza y sus límites con respecto a los principios establecidos en materia de derechos humanos, principalmente del Convenio Europeo de Derechos Humanos y de la jurisprudencia correspondiente, debe integrarse en la formación de los policías a todos los niveles.",
+   "La formación general inicial debería ir seguida, preferentemente, de formación para las tareas de mando y de gestión, y llegado el caso, de periodos regulares de formación continua y de formación especializada."
+  ],
+  "correcta": 3,
+  "lila": "Punto 28 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La formación general inicial debería ir seguida, preferentemente, de periodos regulares de formación continua y de formación especializada, y llegado el caso, de formación para las tareas de mando y de gestión.",
+  "exp": "El orden está invertido: primero formación continua y especializada y, llegado el caso, de mando y gestión.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "89-0",
+  "pz": "c-28",
+  "sec": 15,
+  "id": "27-327"
+ },
+ {
+  "lote": "e3",
+  "i": 15,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 59",
+    "k": 120
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a la responsabilidad y control de la policía, señale la opción INCORRECTA:",
+  "opciones": [
+   "En los Estados Miembros deben elaborarse códigos de deontología de la policía que se basen en los principios enunciados en la presente recomendación y ser supervisados por órganos apropiados.",
+   "La policía debe ser responsable ante el Estado, los ciudadanos y sus representantes. Debe ser objeto de un eficaz control interno.",
+   "El control de la policía por el Estado debe repartirse entre los poderes legislativo, ejecutivo y judicial.",
+   "Convendría fomentar la implantación de mecanismos que favorezcan la responsabilidad y que se basen en la comunicación y la comprensión entre la población y la policía."
+  ],
+  "correcta": 1,
+  "lila": "Punto 59 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe ser responsable ante el Estado, los ciudadanos y sus representantes. Debe ser objeto de un eficaz control externo.",
+  "exp": "El control eficaz es externo, no interno.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "120-0",
+  "pz": "c-59",
+  "sec": 15,
+  "id": "27-328"
+ },
+ {
+  "lote": "e3",
+  "i": 16,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 58",
+    "k": 119
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a la detención / privación de libertad por la policía, señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son incorrectas.",
+   "Debe, en todo caso, separarse a los hombres de las mujeres.",
+   "Debe, en todo caso, separarse a las personas mayores de edad de los menores.",
+   "La policía debe separar a las personas privadas de su libertad presuntamente culpables de una infracción penal de las privadas de su libertad por una infracción penal más grave."
+  ],
+  "correcta": 0,
+  "lila": "Punto 58 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe separar, tanto como sea posible, a las personas privadas de su libertad y las presuntas culpables de una infracción penal de las privadas de su libertad por otras razones. Debe normalmente separarse a los hombres de las mujeres así como a las personas mayores de los menores privados de libertad.",
+  "exp": "Se separa «tanto como sea posible» y «normalmente», y a los detenidos por infracción penal de los privados de libertad por otras razones; las tres son incorrectas.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "119-0",
+  "pz": "c-54",
+  "sec": 15,
+  "id": "27-329"
+ },
+ {
+  "lote": "e3",
+  "i": 17,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 9",
+    "k": 70
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Con respecto a la policía y el sistema judicial penal, señale la opción CORRECTA:",
+  "opciones": [
+   "La policía no podrá sustituir al personal penitenciario.",
+   "Debe establecerse una clara distinción entre el papel de la policía y del Sistema penitenciario, de la fiscalía y del Sistema judicial; la policía no debe tener ningún poder de control sobre estos órganos, salvo que por ley se determine lo contrario.",
+   "La policía no debe, en ningún caso, ejercer funciones judiciales.",
+   "Conviene garantizar una cooperación funcional y apropiada entre la policía y el Ministerio Fiscal."
+  ],
+  "correcta": 3,
+  "lila": "Punto 9 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Conviene garantizar una cooperación funcional y apropiada entre la policía y el Ministerio Fiscal. En los países en que la policía se sitúa bajo la autoridad del Ministerio Fiscal o de los magistrados instructores, debe recibir instrucciones claras en cuanto a las prioridades que determinan la política en materia de investigaciones criminales y al desarrollo de estas últimas. La policía debe tener informados a los magistrados instructores o al Ministerio Fiscal de la forma en la que se ejecutan sus instrucciones y, en particular, debe informar regularmente de la evolución de los asuntos penales.",
+  "exp": "Es literal. La sustitución del personal penitenciario cabe en urgencia y las funciones judiciales «en principio» no se ejercen.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "70-0",
+  "pz": "c-9",
+  "sec": 15,
+  "id": "27-330"
+ },
+ {
+  "lote": "e3",
+  "i": 18,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 24",
+    "k": 85
+   },
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 25",
+    "k": 86
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a las cualificaciones, reclutamiento y fidelización del personal de policía, señale la opción CORRECTA:",
+  "opciones": [
+   "Las personas que han sido reconocidas culpables de infracciones graves no deben desempeñar funciones en la policía.",
+   "Los procedimientos de reclutamiento deben basarse en criterios objetivos y no discriminatorios y tener lugar tras el indispensable examen de las candidaturas.",
+   "Todas las opciones son correctas.",
+   "Además, es conveniente aplicar una política que tenga como objetivo reclutar hombres y mujeres que representen a los diferentes componentes de la sociedad, incluidos grupos minoritarios étnicos, siendo el objetivo último que el personal de policía refleje la sociedad al servicio de la que se encuentran."
+  ],
+  "correcta": 2,
+  "lila": "Punto 24 y Punto 25 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Punto 24. Las personas que han sido reconocidas culpables de infracciones graves no deben desempeñar funciones en la policía.<br>Punto 25. Los procedimientos de reclutamiento deben basarse en criterios objetivos y no discriminatorios y tener lugar tras el indispensable examen de las candidaturas. Además, es conveniente aplicar una política que tenga como objetivo reclutar hombres y mujeres que representen a los diferentes componentes a los diferentes componentes de la sociedad, incluidos grupos minoritarios étnicos, siendo el objetivo último que el personal de policía refleje la sociedad al servicio de la que se encuentran.",
+  "exp": "Las tres afirmaciones son literales.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "85-0",
+  "pz": "c-24",
+  "sec": 15,
+  "id": "27-331"
+ },
+ {
+  "lote": "e3",
+  "i": 19,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 35",
+    "k": 96
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Con respecto a los principios directivos relativos a la acción/intervención de la policía, señale la opción INCORRECTA:",
+  "opciones": [
+   "El personal de policía debe actuar con integridad y respeto hacia la población, teniendo especialmente en cuenta la situación de los individuos que formen parte de grupos particularmente vulnerables.",
+   "La policía y todas las intervenciones de la policía deben respetar el derecho de cualquier persona a la vida y a la integridad de la persona.",
+   "La policía debe llevar a cabo sus misiones de manera equitativa, inspirándose, en particular, en los principios de imparcialidad y no discriminación.",
+   "La policía sólo debe atentar contra el derecho de cada uno al respeto de su vida privada en caso de absoluta necesidad y únicamente para cumplir un objetivo legítimo."
+  ],
+  "correcta": 1,
+  "lila": "Punto 35 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía y todas las intervenciones de la policía deben respetar el derecho de cualquier persona a la vida.",
+  "exp": "El punto habla solo del derecho a la vida, no «a la integridad».",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "96-0",
+  "sec": 15,
+  "id": "27-332"
+ },
+ {
+  "lote": "e3",
+  "i": 20,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 31",
+    "k": 92
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. El personal de policía debe beneficiarse, por regla general, de los mismos derechos civiles y políticos que los demás ciudadanos. ¿En qué casos son posibles restricciones a esos derechos?:",
+  "opciones": [
+   "En ningún caso, los citados derechos son inalienables.",
+   "Si son necesarias para el ejercicio de las funciones de policía, en una sociedad democrática, de conformidad con la Ley y el Convenio Europeo de Derechos Humanos.",
+   "Si son necesarias para el ejercicio de las funciones de policía, en una sociedad democrática, de conformidad con la Ley y el presente Código.",
+   "Si son necesarias para mantener el orden en la sociedad, de conformidad con las legislaciones nacionales y con el presente Código."
+  ],
+  "correcta": 1,
+  "lila": "Punto 31 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "El personal de policía debe beneficiarse, por regla general, de los mismos derechos civiles y políticos que los demás ciudadanos. Solo son posibles restricciones a estos derechos si son necesarias para el ejercicio de las funciones de la policía en una sociedad democrática, de conformidad con la ley y con el Convenio Europeo de Derechos Humanos.",
+  "exp": "Las restricciones deben ajustarse a la ley y al Convenio Europeo de Derechos Humanos.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "92-0",
+  "pz": "c-31",
+  "sec": 15,
+  "id": "27-333"
+ },
+ {
+  "lote": "e3",
+  "i": 21,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 46",
+    "k": 107
+   },
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 44",
+    "k": 105
+   },
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 45",
+    "k": 106
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a los principios directivos relativos a la acción/ intervención de la policía, señale la opción INCORRECTA:",
+  "opciones": [
+   "El personal de policía debe normalmente poder atestiguar, en intervenciones, su cualidad de miembro de la policía y su identidad profesional.",
+   "Debe informar a sus superiores y a otros órganos competentes de cualquier caso de corrupción en la policía.",
+   "El personal de policía debe combatir cualquier forma de corrupción en la policía.",
+   "El personal de policía debe actuar con integridad y respeto hacia la población, teniendo especialmente en cuenta la Situación de los individuos que formen parte de grupos particularmente vulnerables."
+  ],
+  "correcta": 2,
+  "lila": "Punto 46 y Punto 44 y Punto 45 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Punto 46. El personal de policía debe oponerse a cualquier forma de corrupción en la policía. Debe informar a sus superiores y a otros órganos competentes de cualquier caso de corrupción en la policía. 1. Investigaciones de policía<br>Punto 44. El personal de policía debe actuar con integridad y respeto hacia la población, teniendo especialmente en cuenta la situación de los individuos que formen parte de grupos particularmente vulnerables.<br>Punto 45. El personal de policía debe normalmente poder atestiguar, en intervenciones, su cualidad de miembro de la policía y su identidad profesional.",
+  "exp": "El personal debe «oponerse» a la corrupción, no «combatirla».",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "107-0",
+  "pz": "c-46",
+  "sec": 15,
+  "repetidaDe": "27-314"
+ },
+ {
+  "lote": "e3",
+  "i": 22,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 13",
+    "k": 74
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a la organización de las estructuras de la policía, señale la opción INCORRECTA:",
+  "opciones": [
+   "Normalmente, la policía y su personal uniformado deben ser fácilmente reconocibles.",
+   "El servicio de policía debe beneficiarse de una independencia operativa suficiente frente a otros órganos del Estado en el cumplimiento de las tareas que le incumben y de las cuales debe ser plenamente responsable.",
+   "La policía debe organizarse de tal forma que sus miembros disfruten del respeto de la población como profesionales encargados de hacer aplicar la ley como prestatarios de servicios.",
+   "Los servicios de policía deben ejercer sus misiones de policía en la sociedad civil bajo la responsabilidad de autoridades civiles o militares en el caso de ser éstas aceptadas por la legislación intema."
+  ],
+  "correcta": 3,
+  "lila": "Punto 13 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Los servicios de policía deben ejercer sus misiones de policía en la sociedad civil bajo la responsabilidad de las autoridades civiles.",
+  "exp": "Las misiones se ejercen bajo la responsabilidad de autoridades civiles, no militares.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "74-0",
+  "pz": "c-13",
+  "sec": 15,
+  "id": "27-334"
+ },
+ {
+  "lote": "e3",
+  "i": 23,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 30",
+    "k": 91
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Según establece el presente Código, la formación del personal de policía debe integrar plenamente la necesidad de combatir:",
+  "opciones": [
+   "El racismo y el odio nacional.",
+   "El racismo y la xenofobia.",
+   "La discriminación y la desigualdad.",
+   "La xenofobia y la discriminación por cualquier causa."
+  ],
+  "correcta": 1,
+  "lila": "Punto 30 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La formación del personal de policía debe integrar plenamente la necesidad de combatir el racismo y la xenofobia.",
+  "exp": "El racismo y la xenofobia.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "91-0",
+  "sec": 15,
+  "id": "27-335"
+ },
+ {
+  "lote": "e3",
+  "i": 24,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 22",
+    "k": 83
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a las cualificaciones, reclutamiento y fidelización del personal de policía, señale la opción CORRECTA:",
+  "opciones": [
+   "El personal de policía debe ser capaz de demostrar discernimiento, apertura de mente, madurez, un sentido de la justicia, capacidad para comunicar y, llegado el caso, aptitudes para dirigir y organizar. Debe además tener una buena comprensión de todos los ámbitos de la sociedad.",
+   "Las personas que han sido reconocidas culpables de delitos no deben desempeñar funciones en la policía.",
+   "Todas las opciones son correctas.",
+   "El personal de policía, cualquiera que sea su nivel de ingreso en la profesión, debe ser reclutado sobre la base de sus competencias y experiencias personales, que deben adaptarse a los objetivos de la policía."
+  ],
+  "correcta": 3,
+  "lila": "Punto 22 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "El personal de policía, cualquiera que sea su nivel de ingreso en la profesión, debe ser reclutado sobre la base de sus competencias y experiencias personales, que deben adaptarse a los objetivos de la policía.",
+  "exp": "Es literal. La comprensión exigida es de los problemas sociales, culturales y comunitarios, y la exclusión es por infracciones graves.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "83-0",
+  "pz": "c-22",
+  "sec": 15,
+  "repetidaDe": "27-331"
+ },
+ {
+  "lote": "e3",
+  "i": 25,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 6",
+    "k": 67
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. La policía y el sistema de justicia penal. Señale la opción INCORRECTA. ¿Con quién se debe establecerse una clara distinción entre el papel de la policía?:",
+  "opciones": [
+   "Con el Sistema Penitenciario.",
+   "Con Organismos Públicos.",
+   "con la Fiscalía.",
+   "Con el Sistema Judicial."
+  ],
+  "correcta": 1,
+  "lila": "Punto 6 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Debe establecerse una clara distinción entre el papel de la policía y del sistema judicial, de la fiscalía y del sistema penitenciario; la policía no debe tener ningún poder de control sobre estos órganos.",
+  "exp": "La distinción es con el sistema judicial, la fiscalía y el sistema penitenciario.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "67-0",
+  "pz": "c-6",
+  "sec": 15,
+  "id": "27-336"
+ },
+ {
+  "lote": "e3",
+  "i": 26,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 28",
+    "k": 89
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Formación del personal de policía. La formación general inicial debería ir seguida, preferentemente, de:",
+  "opciones": [
+   "Formación especializada.",
+   "Todas las opciones son correctas.",
+   "Llegado el caso, formación para las tareas de mando y de gestión.",
+   "Periodos regulares de formación continua."
+  ],
+  "correcta": 1,
+  "lila": "Punto 28 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La formación general inicial debería ir seguida, preferentemente, de periodos regulares de formación continua y de formación especializada, y llegado el caso, de formación para las tareas de mando y de gestión.",
+  "exp": "Las tres formaciones siguen a la formación general inicial.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "89-0",
+  "pz": "c-28",
+  "sec": 15,
+  "id": "27-337"
+ },
+ {
+  "lote": "e3",
+  "i": 27,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 49",
+    "k": 110
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Las investigaciones deben tener en cuenta necesidades específicas de personas tales como:",
+  "opciones": [
+   "Los niños.",
+   "Todas las opciones son correctas.",
+   "Los adolescentes.",
+   "Las mujeres."
+  ],
+  "correcta": 1,
+  "lila": "Punto 49 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Las investigaciones policiales deben ser objetivas y equitativas. Deben tener en cuenta necesidades específicas de personas tales como los niños, los adolescentes, las mujeres, los miembros de las minorías, incluidas las minorías étnicas, o las personas vulnerables, y adaptarse en consecuencia.",
+  "exp": "El punto cita niños, adolescentes y mujeres, entre otros.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "110-0",
+  "pz": "c-49",
+  "sec": 15,
+  "id": "27-338"
+ },
+ {
+  "lote": "e3",
+  "i": 28,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 48",
+    "k": 109
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Investigaciones de policía. La policía debe respetar los principios según los cuales cualquiera que es acusado de un delito penal debe presumirse inocente hasta que un tribunal le juzgue culpable y beneficiarse de ciertos derechos, en particular, ¿en qué plazo debe ser informado de la acusación formulada en su contra y de preparar su defensa, bien personalmente o bien por medio de un abogado de su elección?:",
+  "opciones": [
+   "En el plazo máximo de 48 horas.",
+   "En el plazo más breve.",
+   "En el plazo máximo de 24 horas.",
+   "En el plazo máximo de 72 horas."
+  ],
+  "correcta": 1,
+  "lila": "Punto 48 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe respetar los principios según los cuales cualquiera que es acusado de un delito penal debe presumirse inocente hasta que un tribunal le juzgue culpable y beneficiarse de ciertos derechos, en particular del de ser informado en el plazo más breve de la acusación formulada en su contra y de preparar su defensa, bien personalmente bien por medio de un abogado de su elección.",
+  "exp": "En el plazo más breve.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "109-0",
+  "pz": "c-47",
+  "sec": 15,
+  "id": "27-339"
+ },
+ {
+  "lote": "e3",
+  "i": 29,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 40",
+    "k": 101
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Principios directivos relativos a la acción/intervención de la policía. La policía debe llevar a cabo sus misiones de manera equitativa, inspirándose, en particular. ¿en qué principios?:",
+  "opciones": [
+   "En los principios de legalidad y necesidad.",
+   "En los principios de imparcialidad y no-discriminación.",
+   "En los principios de eficiencia y eficacia.",
+   "En los principios de proporcionalidad y legalidad."
+  ],
+  "correcta": 1,
+  "lila": "Punto 40 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe llevar a cabo sus misiones de manera equitativa, inspirándose, en particular, en los principios de imparcialidad y no-discriminación.",
+  "exp": "Imparcialidad y no discriminación.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "101-0",
+  "pz": "c-40",
+  "sec": 15,
+  "id": "27-340"
+ },
+ {
+  "lote": "e3",
+  "i": 30,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 9",
+    "k": 70
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a la policía y el sistema de justicia penal, señale la opción CORRECTA:",
+  "opciones": [
+   "La policía no debe sustituir al personal penitenciario, salvo en los casos de emergencia.",
+   "La policía debe respetar el papel de los abogados de la defensa en el proceso de justicia penal y, llegado el caso, contribuir a garantizar un derecho efectivo al acceso a la asistencia jurídica, en particular a las víctimas.",
+   "Conviene garantizar una cooperación funcional y apropiada entre la policía y los magistrados instructores.",
+   "La policía debe tener informados a los magistrados instructores o al Ministerio Fiscal de la forma en la que se ejecutan sus instrucciones y, en particular, debe informar regularmente de la evolución de los asuntos penales."
+  ],
+  "correcta": 3,
+  "lila": "Punto 9 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Conviene garantizar una cooperación funcional y apropiada entre la policía y el Ministerio Fiscal. En los países en que la policía se sitúa bajo la autoridad del Ministerio Fiscal o de los magistrados instructores, debe recibir instrucciones claras en cuanto a las prioridades que determinan la política en materia de investigaciones criminales y al desarrollo de estas últimas. La policía debe tener informados a los magistrados instructores o al Ministerio Fiscal de la forma en la que se ejecutan sus instrucciones y, en particular, debe informar regularmente de la evolución de los asuntos penales.",
+  "exp": "Es literal. La sustitución es en urgencia, el acceso a abogado se refiere a las personas privadas de libertad y la cooperación es con el Ministerio Fiscal.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "70-0",
+  "pz": "c-9",
+  "sec": 15,
+  "id": "27-341"
+ },
+ {
+  "lote": "e3",
+  "i": 31,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 1",
+    "k": 62
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Señale la opción INCORRECTA. Los principales objetivos de la policía en una sociedad democrática regida por el principio de preeminencia del derecho son:",
+  "opciones": [
+   "Seguir el rastro de la delincuencia.",
+   "Prevenir y combatir la delincuencia.",
+   "Proteger y respetar las libertades y derechos fundamentales del individuo tal como son consagrados, principalmente, en la Declaración Universal de los Derechos Humanos.",
+   "Facilitar asistencia y servicios a la población."
+  ],
+  "correcta": 2,
+  "lila": "Punto 1 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Los principales objetivos de la policía, en una sociedad democrática regida por el principio de la preeminencia del derecho, consisten en: – Garantizar el mantenimiento de la tranquilidad pública, el respeto de la ley y del orden en la sociedad. – Proteger y respetar las libertades y derechos fundamentales del individuo tal como son consagrados, principalmente, en el Convenio Europeo de Derechos Humanos. – Prevenir y combatir la delincuencia. – Seguir el rastro de la delincuencia. – Facilitar asistencia y servicios a la población.",
+  "exp": "El objetivo remite al Convenio Europeo de Derechos Humanos, no a la Declaración Universal.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "62-0",
+  "sec": 15,
+  "id": "27-342"
+ },
+ {
+  "lote": "e3",
+  "i": 32,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 25",
+    "k": 86
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Cualificaciones, reclutamiento y fidelización del personal de policía. Señale la opción CORRECTA:",
+  "opciones": [
+   "El personal de policía, cualquiera que sea su nivel de ingreso en la profesión, debe ser reclutado sobre la base de sus conocimientos y experiencias profesionales, que deben adaptarse a los objetivos de la policía.",
+   "Los procedimientos de reclutamiento deben basarse en criterios objetivos y no discriminatorios y tener lugar tras el indispensable examen de las candidaturas.",
+   "El personal de policía debe ser capaz de demostrar discernimiento, apertura de mente, madurez, un sentido de la paz, capacidad para comunicar y, llegado el caso, aptitudes para dirigir y organizar.",
+   "Las personas que han sido reconocidas culpables de infracciones no deben desempeñar funciones en la policía."
+  ],
+  "correcta": 1,
+  "lila": "Punto 25 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Los procedimientos de reclutamiento deben basarse en criterios objetivos y no discriminatorios y tener lugar tras el indispensable examen de las candidaturas. Además, es conveniente aplicar una política que tenga como objetivo reclutar hombres y mujeres que representen a los diferentes componentes a los diferentes componentes de la sociedad, incluidos grupos minoritarios étnicos, siendo el objetivo último que el personal de policía refleje la sociedad al servicio de la que se encuentran.",
+  "exp": "Es literal. Las demás cambian «competencias y experiencias personales», «sentido de la justicia» y «infracciones graves».",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "86-0",
+  "pz": "c-25",
+  "sec": 15,
+  "id": "27-343"
+ },
+ {
+  "lote": "e3",
+  "i": 33,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Preámbulo",
+    "k": 61
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Definición del campo de aplicación. Este Código se aplica a las fuerzas o servicios de policía públicos tradicionales, o a otros órganos autorizados y/o controlados por los poderes públicos cuyo primer objetivo consiste:",
+  "opciones": [
+   "Garantizar el mantenimiento del orden en la sociedad civil.",
+   "Todas las opciones son correctas.",
+   "Garantizar la tranquilidad pública.",
+   "Garantizar el restablecimiento de la Seguridad Ciudadana."
+  ],
+  "correcta": 0,
+  "lila": "Preámbulo · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Definición del campo de aplicación Este Código se aplica a las fuerzas o servicios de policía públicos tradicionales, o a otros órganos autorizados y/o controlados por los poderes públicos cuyo primer objetivo consiste en garantizar el mantenimiento del orden en la sociedad civil, y que están autorizados por el Estado a utilizar la fuerza y/o poderes especiales para alcanzar este objetivo.",
+  "exp": "El primer objetivo de esos órganos es garantizar el mantenimiento del orden en la sociedad civil.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "61-2",
+  "pz": "c-pre",
+  "sec": 15,
+  "id": "27-344"
+ },
+ {
+  "lote": "e3",
+  "i": 34,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 19",
+    "k": 80
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a la organización de las estructuras de la policía, señale la opción INCORRECTA:",
+  "opciones": [
+   "La policía debe estar organizada de manera que promueva buenas relaciones con la población y, llegado el caso, una efectiva cooperación Con otros organismos, las comunidades locales, organizaciones no gubernamentales y otros representantes de la población, incluidos grupos minoritarios étnicos.",
+   "Deben elaborarse líneas directrices profesionales que rijan las relaciones con los medios de comunicación.",
+   "La organización de la policía debe contar con una cadena de mando claramente definida. Debe ser posible en todos los casos determinar el responsable superior en última instancia de los actos u omisiones de un miembro del personal de la policía. 1.",
+   "Los servicios de policía deben estar dispuestos a proporcionar a los ciudadanos informaciones subjetivas sobre sus actividades, pudiendo desvelar ciertas informaciones confidenciales."
+  ],
+  "correcta": 3,
+  "lila": "Punto 19 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Los servicios de policía deben estar dispuestos a proporcionar a los ciudadanos informaciones objetivas sobre sus actividades, sin desvelar por ello informaciones confidenciales. Deben elaborarse líneas directrices profesionales que rijan las relaciones con los medios de comunicación.",
+  "exp": "Las informaciones deben ser objetivas y sin desvelar las confidenciales.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "80-0",
+  "pz": "c-17",
+  "sec": 41,
+  "id": "27-345"
+ },
+ {
+  "lote": "e3",
+  "i": 35,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 57",
+    "k": 118
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Detención / privación de libertad por la policía. ¿A qué deben tener derecho las personas privadas de libertad por la policía?:",
+  "opciones": [
+   "Derecho a que su detención sea notificada a una tercera persona de su elección.",
+   "Derecho a acceder a un abogado de oficio, salvo en los casos expresamente previstos en los que no sea necesaria la asistencia letrada.",
+   "Derecho a ser examinadas por un forense de elección.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 0,
+  "lila": "Punto 57 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Las personas privadas de libertad por la policía deben tener el derecho a que su detención sea notificada a una tercera persona de su elección, a acceder a un abogado y a ser examinadas por un médico, en la medida de lo posible conforme a su elección.",
+  "exp": "Es literal el derecho a notificar a un tercero; el abogado y el médico no se limitan a «oficio» ni «forense».",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "118-0",
+  "pz": "c-54",
+  "sec": 15,
+  "id": "27-346"
+ },
+ {
+  "lote": "e3",
+  "i": 36,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 53",
+    "k": 114
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Investigaciones de policía. ¿Durante que fase la policía debe facilitar los servicios de interpretación / traducción necesarios?:",
+  "opciones": [
+   "Durante la fase de tramitación del caso.",
+   "Durante la fase de instrucción del caso.",
+   "Durante la fase de investigación policial.",
+   "Durante toda la investigación policial."
+  ],
+  "correcta": 3,
+  "lila": "Punto 53 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe facilitar los servicios de interpretación / traducción necesarios durante toda la investigación policial. 2. Detención / Privación de libertad por la policía",
+  "exp": "Durante toda la investigación policial.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "114-0",
+  "pz": "c-53",
+  "sec": 15,
+  "id": "27-347"
+ },
+ {
+  "lote": "e3",
+  "i": 37,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 36",
+    "k": 97
+   },
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 39",
+    "k": 100
+   },
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 38",
+    "k": 99
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a los principios directivos relativos a la acción/intervención de la policía, señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "La policía no debe infligir, fomentar o tolerar ningún acto de tortura, ningún trato o pena inhumana o degradante, cualquiera que sea la circunstancia.",
+   "El personal de policía debe ejecutar las órdenes regularmente dadas por sus superiores, pero tienen el deber de abstenerse de ejecutar las que son manifiestamente ilegales y de informar de este tema. Sin temor a cualquier sanción en semejante caso.",
+   "La policía debe verificar sistemáticamente la legalidad de las operaciones que se propone llevar a cabo."
+  ],
+  "correcta": 0,
+  "lila": "Punto 36 y Punto 39 y Punto 38 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Punto 36. La policía no debe infligir, fomentar o tolerar ningún acto de tortura, ningún trato o pena inhumana o degradante, cualquiera que sea la circunstancia.<br>Punto 39. El personal de policía debe ejecutar las órdenes regularmente dadas por sus superiores, pero tienen el deber de abstenerse de ejecutar las que son manifiestamente ilegales y de informar de este tema, sin temor a cualquier sanción en semejante caso.<br>Punto 38. La policía debe verificar sistemáticamente la legalidad de las operaciones que se propone llevar a cabo.",
+  "exp": "Las tres recogen deberes de los principios de intervención.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "97-0",
+  "sec": 15,
+  "id": "27-348"
+ },
+ {
+  "lote": "e3",
+  "i": 38,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 1",
+    "k": 62
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Los principales objetivos de la policía, en una sociedad democrática regida por el principio de la preeminencia del derecho, consisten en:",
+  "opciones": [
+   "Prevenir y combatir la delincuencia.",
+   "Facilitar asistencia y servicios a la población.",
+   "Todas las proposiciones son correctas.",
+   "Seguir el rastro de la delincuencia."
+  ],
+  "correcta": 2,
+  "lila": "Punto 1 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Los principales objetivos de la policía, en una sociedad democrática regida por el principio de la preeminencia del derecho, consisten en: – Garantizar el mantenimiento de la tranquilidad pública, el respeto de la ley y del orden en la sociedad. – Proteger y respetar las libertades y derechos fundamentales del individuo tal como son consagrados, principalmente, en el Convenio Europeo de Derechos Humanos. – Prevenir y combatir la delincuencia. – Seguir el rastro de la delincuencia. – Facilitar asistencia y servicios a la población.",
+  "exp": "Las tres son objetivos de la policía.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "62-0",
+  "sec": 15,
+  "id": "27-349"
+ },
+ {
+  "lote": "e3",
+  "i": 39,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 47",
+    "k": 108
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Investigaciones de policía. ¿En que deben fundarse al menos las investigaciones de que una infracción ha sido cometida o va a cometerse?:",
+  "opciones": [
+   "En sospechas.",
+   "En sospechas razonables.",
+   "En motivos razonables.",
+   "En motivos aparentes."
+  ],
+  "correcta": 1,
+  "lila": "Punto 47 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Las investigaciones de policía deben fundarse al menos en sospechas razonables de que una infracción ha sido cometida o va a cometerse.",
+  "exp": "En sospechas razonables.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "108-0",
+  "pz": "c-47",
+  "sec": 15,
+  "id": "27-350"
+ },
+ {
+  "lote": "e3",
+  "i": 40,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 54",
+    "k": 115
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a la detención / privación de libertad por la policía, señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "La privación de libertad debe aplicarse teniendo en cuenta la dignidad, la vulnerabilidad y las necesidades personales de cada persona detenida.",
+   "Las puestas en situación de detención preventiva deben consignarse sistemáticamente en un registro.",
+   "La privación de libertad debe limitarse tanto como sea posible."
+  ],
+  "correcta": 0,
+  "lila": "Punto 54 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La privación de libertad debe limitarse tanto como sea posible y aplicarse teniendo en cuenta la dignidad, la vulnerabilidad y las necesidades personales de cada persona detenida. Las puestas en situación de detención preventiva deben consignarse sistemáticamente en un registro.",
+  "exp": "Las tres frases pertenecen al mismo punto.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "115-0",
+  "pz": "c-54",
+  "sec": 15,
+  "id": "27-351"
+ },
+ {
+  "lote": "e3",
+  "i": 41,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 43",
+    "k": 104
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. En el cumplimiento de su misión, la policía debe tener siempre presente los derechos fundamentales de cada uno, tales como... Señale la opción INCORRECTA:",
+  "opciones": [
+   "El derecho al respeto de sus bienes.",
+   "La libertad de reunirse.",
+   "La libertad de pensamiento.",
+   "La libertad de conciencia."
+  ],
+  "correcta": 1,
+  "lila": "Punto 43 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "En el cumplimiento de su misión, la policía debe tener siempre presente los derechos fundamentales de cada uno, tales como la libertad de pensamiento, conciencia, religión, expresión, reunión pacífica, circulación y el derecho al respeto de sus bienes.",
+  "exp": "La libertad citada es la de reunión «pacífica»; la opción omite esa condición.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "104-0",
+  "pz": "c-43",
+  "sec": 15,
+  "id": "27-352"
+ },
+ {
+  "lote": "e3",
+  "i": 42,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 59",
+    "k": 120
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Señale la opción INCORRECTA. ¿Ante quien debe ser responsable la policía?:",
+  "opciones": [
+   "Ante los representantes de los ciudadanos.",
+   "Ante los ciudadanos.",
+   "Ante el Estado.",
+   "Ante sus superiores jerárquicos."
+  ],
+  "correcta": 3,
+  "lila": "Punto 59 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe ser responsable ante el Estado, los ciudadanos y sus representantes. Debe ser objeto de un eficaz control externo.",
+  "exp": "Es responsable ante el Estado, los ciudadanos y sus representantes.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "120-0",
+  "pz": "c-59",
+  "sec": 15,
+  "id": "27-353"
+ },
+ {
+  "lote": "e3",
+  "i": 43,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 5",
+    "k": 66
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a las bases jurídicas de la Policía, señale la opción INCORRECTA:",
+  "opciones": [
+   "Las operaciones de policía deben llevarse siempre a cabo de conformidad con el derecho interno y las normas internacionales aceptadas por el pars.",
+   "La policía es un órgano público que debe ser establecido por la ley.",
+   "La legislación que rige la policía debe ser accesible a los ciudadanos y suficientemente clara y precisa; llegado el caso, debe completarse con reglamentos claros igualmente accesibles a los ciudadanos.",
+   "El personal de policía está sometido, sin excepciones, a la misma legislación que los ciudadanos ordinarios."
+  ],
+  "correcta": 3,
+  "lila": "Punto 5 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "El personal de policía está sometido a la misma legislación que los ciudadanos ordinarios; las únicas excepciones a este principio sólo pueden justificarse para asegurar el buen desarrollo del trabajo de la policía en una sociedad democrática.",
+  "exp": "Hay excepciones justificadas para el buen desarrollo del trabajo policial.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "66-0",
+  "pz": "c-5",
+  "sec": 15,
+  "id": "27-354"
+ },
+ {
+  "lote": "e3",
+  "i": 44,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 32",
+    "k": 93
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Derechos del personal de policía. El personal de policía debe beneficiarse, como funcionarios:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "En particular, del derecho sindical o de participar en instancias representativas, del derecho a percibir una remuneración apropiada.",
+   "De una serie de derechos sociales y económicos tan amplia como sea posible.",
+   "Del derecho a una cobertura social y de medidas específicas de protección de la salud y de la seguridad teniendo en cuenta el carácter especial del trabajo de la policía."
+  ],
+  "correcta": 0,
+  "lila": "Punto 32 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "El personal de policía debe beneficiarse, como funcionarios, de una serie de derechos sociales y económicos tan amplia como sea posible. Deben beneficiarse, en particular, del derecho sindical o de participar en instancias representativas, del derecho a percibir una remuneración apropiada, del derecho a una cobertura social y de medidas específicas de protección de la salud y de la seguridad teniendo en cuenta el carácter especial del trabajo de la policía.",
+  "exp": "Las tres recogen derechos sociales y económicos.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "93-0",
+  "pz": "c-32",
+  "sec": 15,
+  "id": "27-355"
+ },
+ {
+  "lote": "e3",
+  "i": 45,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 49",
+    "k": 110
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Investigaciones de policía. ¿Cómo deben ser las investigaciones policiales?:",
+  "opciones": [
+   "Subjetivas y proporcionadas.",
+   "Objetivas y equitativas.",
+   "Subjetivas y equitativas.",
+   "Objetivas y proporcionadas."
+  ],
+  "correcta": 1,
+  "lila": "Punto 49 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Las investigaciones policiales deben ser objetivas y equitativas. Deben tener en cuenta necesidades específicas de personas tales como los niños, los adolescentes, las mujeres, los miembros de las minorías, incluidas las minorías étnicas, o las personas vulnerables, y adaptarse en consecuencia.",
+  "exp": "Objetivas y equitativas.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "110-0",
+  "pz": "c-49",
+  "sec": 15,
+  "id": "27-356"
+ },
+ {
+  "lote": "e3",
+  "i": 46,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 64",
+    "k": 125
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Investigación y cooperación internacional. ¿Quién debe favorecer y fomentar que los trabajos de investigación sobre la policía sean efectuados por la misma policía o por instituciones externas?:",
+  "opciones": [
+   "Los Estados miembros.",
+   "Todas las opciones son correctas.",
+   "Los poderes públicos.",
+   "Los Gobiernos nacionales."
+  ],
+  "correcta": 0,
+  "lila": "Punto 64 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Los Estados miembros deben favorecer y fomentar los trabajos de investigación sobre la policía, sean efectuados éstos por la misma policía o por instituciones externas.",
+  "exp": "Los Estados miembros.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "125-0",
+  "sec": 15,
+  "id": "27-357"
+ },
+ {
+  "lote": "e3",
+  "i": 47,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 26",
+    "k": 87
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Formación del personal de policía. Señale la opción INCORRECTA. ¿En qué principios fundamentales debe basarse la formación del personal de policía?:",
+  "opciones": [
+   "En el Convenio Europeo de los derechos humanos.",
+   "En la democracia.",
+   "En el Estado de Derecho.",
+   "En la protección de los derechos humanos."
+  ],
+  "correcta": 0,
+  "lila": "Punto 26 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La formación del personal de policía, que debe basarse en los principios fundamentales como son la democracia, el Estado de Derecho y la protección de los derechos humanos, debe concebirse en función de los objetivos de la policía.",
+  "exp": "Los principios son democracia, Estado de Derecho y protección de los derechos humanos.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "87-0",
+  "pz": "c-26",
+  "sec": 41,
+  "id": "27-358"
+ },
+ {
+  "lote": "e3",
+  "i": 48,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 33",
+    "k": 94
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Derechos del personal de policía. ¿Cómo debe ser cualquier medida disciplinaria tomada contra un miembro de la policía?:",
+  "opciones": [
+   "Debe ser sometida al control de un órgano independiente o de un tribunal.",
+   "Debe ser sometida a sus superiores jerárquicos.",
+   "Todas las opciones son incorrectas.",
+   "Debe ser sometida a la autoridad judicial del lugar donde se haya cometido la infracción."
+  ],
+  "correcta": 0,
+  "lila": "Punto 33 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Cualquier medida disciplinaria tomada contra un miembro de la policía debe ser sometida al control de un órgano independiente o de un tribunal.",
+  "exp": "Control de un órgano independiente o de un tribunal.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "94-0",
+  "pz": "c-33",
+  "sec": 15,
+  "id": "27-359"
+ },
+ {
+  "lote": "e3",
+  "i": 49,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 56",
+    "k": 117
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Respecto a la detención / privación de libertad por la policía, señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "La policía hará lo posible para garantizar la seguridad de las personas en prisión, velar por su estado de salud y garantizarles condiciones de higiene satisfactorias y una alimentación adecuada.",
+   "La policía debe, aunque sea contradictorio a la ley nacional, informar rápidamente a toda persona privada de libertad de las razones de esta privación de libertad y de cualquier acusación manifestada en su contra y debe también informar, sin dilación, a cualquier persona privada de libertad del procedimiento que es aplicable en su caso.",
+   "Las celdas de policía previstas a este efecto deben ser de un tamaño razonable, disponer de iluminación y de ventilación apropiadas y estar equipadas de forma que permita el descanso."
+  ],
+  "correcta": 3,
+  "lila": "Punto 56 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe garantizar la seguridad de las personas en detención preventiva, velar por su estado de salud y garantizarles condiciones de higiene satisfactorias y una alimentación adecuada. Las celdas de policía previstas a este efecto deben ser de un tamaño razonable, disponer de iluminación y de ventilación apropiadas y estar equipadas de forma que permita el descanso.",
+  "exp": "Es literal. La seguridad se garantiza a las personas en detención preventiva y la información se da según la ley nacional.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "117-0",
+  "pz": "c-54",
+  "sec": 15,
+  "id": "27-360"
+ },
+ {
+  "lote": "e3",
+  "i": 50,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 2",
+    "k": 63
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Bases jurídicas de la policía. La policía es un órgano público que debe ser establecido por:",
+  "opciones": [
+   "Real Decreto.",
+   "El Gobierno.",
+   "El pueblo.",
+   "Ley."
+  ],
+  "correcta": 3,
+  "lila": "Punto 2 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía es un órgano público que debe ser establecido por la ley.",
+  "exp": "Por ley.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "63-0",
+  "pz": "c-2",
+  "sec": 9,
+  "id": "27-361"
+ },
+ {
+  "lote": "e3",
+  "i": 51,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 16",
+    "k": 77
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Organización de las estructuras de la policía. ¿A qué niveles de jerarquía el personal de policía debe ser personalmente responsable de sus actos, de sus omisiones o de las órdenes dadas a sus subordinados?:",
+  "opciones": [
+   "A un nivel superior jerárquico.",
+   "A todos los niveles de jerarquía.",
+   "A nivel de jefes policiales.",
+   "Al nivel adecuado de jerarquía."
+  ],
+  "correcta": 1,
+  "lila": "Punto 16 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "El personal de policía, a todos los niveles de la jerarquía, debe ser personalmente Responsable de sus actos, de sus omisiones o de las órdenes dadas a sus subordinados.",
+  "exp": "A todos los niveles de la jerarquía.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "77-0",
+  "sec": 15,
+  "id": "27-362"
+ },
+ {
+  "lote": "e3",
+  "i": 52,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 52",
+    "k": 113
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Investigaciones de policía. Señale la opción INCORRECTA. ¿Que debe garantizar la policía sin discriminación a las víctimas de la delincuencia?:",
+  "opciones": [
+   "Información.",
+   "Formación.",
+   "Apoyo.",
+   "Asistencia."
+  ],
+  "correcta": 1,
+  "lila": "Punto 52 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe garantizar a las víctimas de la delincuencia el apoyo, la asistencia y la información que necesitan, sin discriminación.",
+  "exp": "Las víctimas reciben apoyo, asistencia e información; no formación.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "113-0",
+  "sec": 15,
+  "id": "27-363"
+ },
+ {
+  "lote": "e3",
+  "i": 53,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 61",
+    "k": 122
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la Policía. Responsabilidad y control de la policía. ¿Quién debe establecer procedimientos efectivos e imparciales de recurso contra la policía?:",
+  "opciones": [
+   "Los poderes públicos.",
+   "Los Estados miembros.",
+   "La propia policía.",
+   "Los Gobiernos nacionales."
+  ],
+  "correcta": 0,
+  "lila": "Punto 61 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Los poderes públicos deben establecer procedimientos efectivos e imparciales de recurso contra la policía.",
+  "exp": "Los poderes públicos.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "122-0",
+  "pz": "c-60",
+  "sec": 15,
+  "id": "27-364"
+ },
+ {
+  "lote": "e3",
+  "i": 54,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 66",
+    "k": 127
+   }
+  ],
+  "pregunta": "Código Europeo de Ética de la policía. Investigación y cooperación internacional. ¿Por parte de quién debe ser objeto de un detenido estudio los medios de promover los principios enunciados en la presente recomendación?:",
+  "opciones": [
+   "De los Estados miembros.",
+   "Del Consejo de Europa.",
+   "De la Comisión.",
+   "Del Parlamento Europeo."
+  ],
+  "correcta": 1,
+  "lila": "Punto 66 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Los medios de promover los principios enunciados en la presente recomendación y su puesta en práctica deben ser objeto de un detenido estudio por parte del Consejo de Europa.",
+  "exp": "El Consejo de Europa.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "127-0",
+  "pz": "c-66",
+  "sec": 15,
+  "id": "27-365"
+ },
+ {
+  "lote": "e3",
+  "i": 55,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 49",
+    "k": 110
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Con respecto a las investigaciones de policía, señale la opción CORRECTA:",
+  "opciones": [
+   "La policía debe tener conciencia de las necesidades específicas de los testigos y peritos y observar ciertas reglas en cuanto a la protección y la asistencia que pueden serles garantizadas durante la investigación, en particular cuando existe un riesgo de intimidación de las víctimas.",
+   "Todas las opciones son correctas.",
+   "Las investigaciones policiales deben ser objetivas y equitativas.",
+   "La policía debe garantizar a los testigos el apoyo, la asistencia y la información que necesitan, sin discriminación."
+  ],
+  "correcta": 2,
+  "lila": "Punto 49 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "Las investigaciones policiales deben ser objetivas y equitativas. Deben tener en cuenta necesidades específicas de personas tales como los niños, los adolescentes, las mujeres, los miembros de las minorías, incluidas las minorías étnicas, o las personas vulnerables, y adaptarse en consecuencia.",
+  "exp": "Es literal. Las otras mezclan testigos, peritos y víctimas.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "110-0",
+  "pz": "c-49",
+  "sec": 15,
+  "id": "27-366"
+ },
+ {
+  "lote": "e3",
+  "i": 56,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 59",
+    "k": 120
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Con respecto a la responsabilidad y control de la policía, señale la opción CORRECTA:",
+  "opciones": [
+   "Los poderes públicos deben establecer procedimientos reservados de recurso contra la policía.",
+   "En los Estados Miembros deben elaborarse códigos disciplinarios en la policía que se basen en los principios enunciados en la presente recomendación y ser supervisados por órganos apropiados.",
+   "Todas las opciones son correctas.",
+   "La policía debe ser objeto de un eficaz control externo."
+  ],
+  "correcta": 3,
+  "lila": "Punto 59 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe ser responsable ante el Estado, los ciudadanos y sus representantes. Debe ser objeto de un eficaz control externo.",
+  "exp": "Es literal el control externo; el recurso es «efectivo e imparcial» y los códigos son de deontología.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "120-0",
+  "pz": "c-59",
+  "sec": 15,
+  "id": "27-367"
+ },
+ {
+  "lote": "e3b",
+  "i": 2,
+  "v": "v02",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Resolución 690",
+    "art": "Punto A.12",
+    "k": 39
+   },
+   {
+    "n": "Resolución 690",
+    "art": "Punto A.11",
+    "k": 38
+   },
+   {
+    "n": "Resolución 690",
+    "art": "Punto A.13",
+    "k": 40
+   }
+  ],
+  "pregunta": "Declaración sobre la Policía. Respecto a los principios de la ética, señale la opción INCORRECTA:",
+  "opciones": [
+   "La vía jerárquica debe ser claramente establecida. Debe ser siempre posible acudir al superior responsable de los actos u omisiones de un funcionario de Policía.",
+   "El funcionario de Policía debe actuar con toda la determinación necesaria, sin recurrir a la fuerza más que lo razonable para cumplir la misión exigida o autorizada por la ley.",
+   "La legislación debe proveer un sistema de garantías y de recursos legales contra los perjuicios que puedan resultar de las actividades de la Policía.",
+   "Todo funcionario de Policía es personalmente responsable de los actos u omisiones que haya ordenado y que sean ilegales."
+  ],
+  "correcta": 1,
+  "lila": "Punto A.12 y Punto A.11 y Punto A.13 · Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
+  "rojo": "Punto A.12. En el ejercicio de sus funciones, el funcionario de Policía debe actuar con toda la determinación necesaria, sin jamás recurrir a la fuerza más que lo razonable para cumplir la misión exigida o autorizada por la ley;<br>Punto A.11. La legislación debe proveer un sistema de garantías y de recursos legales contra los perjuicios que puedan resultar de las actividades de la Policía,<br>Punto A.13. Es necesario dar a los funcionarios de Policía instrucciones claras y precisas sobre la manera y las circunstancias en las cuales deben hacer uso de sus armas;",
+  "exp": "La opción falsa omite «jamás»: el texto dice «sin jamás recurrir a la fuerza más que lo razonable». Las otras tres son literales.",
+  "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
+  "par": "39-0",
+  "pz": "b-7",
+  "sec": 9,
+  "id": "27-368"
+ },
+ {
+  "lote": "e3c",
+  "i": 57,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 18",
+    "k": 79
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. Señale la opción INCORRECTA. La policía debe estar organizada de manera que promueva buenas relaciones con la población y, llegado el caso, una efectiva cooperación con:",
+  "opciones": [
+   "Comunidades locales, regionales e incluido el caso internacionales.",
+   "Otros representantes de la población, incluidos grupos minoritarios étnicos.",
+   "Otros organismos.",
+   "Organizaciones no gubernamentales."
+  ],
+  "correcta": 0,
+  "lila": "Punto 18 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "La policía debe estar organizada de manera que promueva buenas relaciones con la población y, llegado el caso, una efectiva cooperación con otros organismos, las comunidades locales, organizaciones no gubernamentales y otros representantes de la población, incluidos grupos minoritarios étnicos.",
+  "exp": "La cooperación es con otros organismos, comunidades locales, organizaciones no gubernamentales y otros representantes de la población; no se citan las regionales ni internacionales.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "79-0",
+  "sec": 15,
+  "id": "27-369"
+ },
+ {
+  "lote": "e3c",
+  "i": 58,
+  "v": "v03",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Rec. (2001) 10",
+    "art": "Punto 32",
+    "k": 93
+   }
+  ],
+  "pregunta": "Código Europeo de ética de la Policía. El personal de policía debe beneficiarse, como funcionarios, de una serie de derechos sociales y económicos tan amplia como sea posible. ¿En particular, de cuál de los siguientes derechos NO deben beneficiarse?:",
+  "opciones": [
+   "Del derecho a percibir una remuneración apropiada.",
+   "Derecho a una cobertura social.",
+   "Derecho de huelga.",
+   "Del derecho sindical."
+  ],
+  "correcta": 2,
+  "lila": "Punto 32 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "rojo": "El personal de policía debe beneficiarse, como funcionarios, de una serie de derechos sociales y económicos tan amplia como sea posible. Deben beneficiarse, en particular, del derecho sindical o de participar en instancias representativas, del derecho a percibir una remuneración apropiada, del derecho a una cobertura social y de medidas específicas de protección de la salud y de la seguridad teniendo en cuenta el carácter especial del trabajo de la policía.",
+  "exp": "El punto cita el derecho sindical, la remuneración y la cobertura social; no la huelga.",
+  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
+  "par": "93-0",
+  "pz": "c-32",
+  "sec": 15,
+  "id": "27-370"
+ }
+]

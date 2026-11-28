@@ -1,0 +1,2420 @@
+[
+ {
+  "lote": "e4",
+  "i": 0,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 2 del Código de Conducta",
+    "k": 141
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En virtud de la integridad, ¿qué tipo de ofrecimientos, favores o regalos no pueden aceptar en ningún caso?:",
+  "opciones": [
+   "Los que directamente puedan comprometer su honestidad y su actuación profesional.",
+   "Los que, directa o indirectamente, puedan comprometer su honestidad y su actuación profesional.",
+   "No podrán aceptar ningún tipo de ofrecimiento, favor o regalo.",
+   "Los que puedan comprometer su honestidad o imparcialidad."
+  ],
+  "correcta": 1,
+  "lila": "Art. 2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Actuarán siempre con rectitud y honradez. Por ello, se opondrán resueltamente a cualquier forma de corrupción y en ningún caso aceptarán ofrecimientos, favores o regalos que, directa o indirectamente, puedan comprometer su honestidad y su actuación profesional.",
+  "exp": "Los que directa o indirectamente puedan comprometer su honestidad y su actuación profesional.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "141-1",
+  "pz": "e-2",
+  "sec": 24,
+  "id": "27-371"
+ },
+ {
+  "lote": "e4",
+  "i": 1,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 26.2 del Código de Conducta",
+    "k": 165
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según la eficacia y eficiencia que debe regir su actuación, ¿por qué deberán velar los guardias civiles?:",
+  "opciones": [
+   "Que los medios puestos a su disposición sirvan para la consecución del interés general y de los objetivos del Cuerpo.",
+   "Por el cuidado y la conservación de las instalaciones, por el equipamiento que tengan asignado y por el cumplimiento de las medidas de seguridad asociadas.",
+   "Que los recursos humanos, materiales y financieros empleados sean los adecuados.",
+   "Por la optimización en la utilización de los medios e instalaciones puestos a disposición para la consecución de los fines encomendados."
+  ],
+  "correcta": 1,
+  "lila": "Art. 26.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Velarán por el cuidado y la conservación de las instalaciones, por el equipamiento que tengan asignado y por el cumplimiento de las medidas de seguridad asociadas, procurando aprovechar de manera óptima los recursos humanos, materiales y financieros asignados.",
+  "exp": "Es el apartado 2: instalaciones, equipamiento y medidas de seguridad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "165-2",
+  "pz": "e-26",
+  "sec": 41,
+  "id": "27-372"
+ },
+ {
+  "lote": "e4",
+  "i": 2,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 50.1 del Código de Conducta",
+    "k": 189
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Señala la opción INCORRECTA. Quienes desempeñen funciones técnicas, administrativas, logísticas y financieras deberán ser conscientes de la trascendencia de su trabajo para:",
+  "opciones": [
+   "La seguridad de los ciudadanos.",
+   "El funcionamiento de las unidades.",
+   "El cumplimiento de las misiones encomendadas.",
+   "La operatividad de las unidades."
+  ],
+  "correcta": 0,
+  "lila": "Art. 50.1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Quienes desempeñen funciones técnicas, administrativas, logísticas y financieras deberán ser conscientes de la trascendencia de su trabajo para el funcionamiento y operatividad de las unidades, el cumplimiento de las misiones encomendadas y la seguridad de sus componentes, algo que evidencia la importancia de una adecuada gestión.",
+  "exp": "El texto habla de la seguridad de sus componentes, no de la de los ciudadanos.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "189-1",
+  "pz": "e-50",
+  "sec": 24,
+  "id": "27-373"
+ },
+ {
+  "lote": "e4",
+  "i": 3,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 41.2 del Código de Conducta",
+    "k": 180
+   },
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 42.1 del Código de Conducta",
+    "k": 181
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En relación con el liderazgo, como norma de comportamiento del personal al servicio de la Guardia Civil, señale la opción INCORRECTA:",
+  "opciones": [
+   "Como líderes, deben influir de forma positiva, crear un entorno favorable y de cohesión y motivar a su equipo, así como tratar de obtener su reconocimiento y aprecio, contribuyendo a la buena imagen del Cuerpo.",
+   "El prestigio personal, la dedicación profesional, la preparación, la iniciativa, la capacidad de decisión y la preocupación permanente por el personal a sus órdenes permitirán un liderazgo ejemplar a quienes tienen la responsabilidad de mandar en la Guardia Civil.",
+   "Quienes ejerzan el mando en la Guardia Civil deben adquirir y mejorar las cualidades que les permitan llevar a cabo un liderazgo eficaz.",
+   "El liderazgo, desde los primeros niveles de la estructura jerárquica, se ejercerá con respeto a la dignidad personal, con firmeza y determinación, sin atribuirse ni invadir las competencias ajenas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 41.2 del Código de Conducta y Art. 42.1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Art. 41.2 del Código de Conducta. 2. El mando, desde los primeros niveles de la estructura jerárquica, se ejercerá con respeto a la dignidad personal, con firmeza y determinación, sin atribuirse ni invadir las competencias ajenas.<br>Art. 42.1 del Código de Conducta. 1. Quienes ejerzan el mando en la Guardia Civil deben adquirir y mejorar las cualidades que les permitan llevar a cabo un liderazgo eficaz. Como líderes, deben influir de forma positiva, crear un entorno favorable y de cohesión y motivar a su equipo, así como tratar de obtener su reconocimiento y aprecio, contribuyendo a la buena imagen del Cuerpo.",
+  "exp": "La regla del respeto, firmeza y no invasión de competencias se refiere al mando, no al liderazgo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "180-2",
+  "pz": "e-41",
+  "sec": 24,
+  "id": "27-374"
+ },
+ {
+  "lote": "e4",
+  "i": 4,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 46.2 del Código de Conducta",
+    "k": 185
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cómo serán las investigaciones llevadas a cabo por los miembros de la Guardia Civil?:",
+  "opciones": [
+   "Rigurosas, exhaustivas e imparciales y estarán sujetas al principio de legalidad y al control judicial.",
+   "Respetuosa con su reputación, imagen y dignidad y estarán sujetas al principio de legalidad y al control judicial.",
+   "Rigurosas, exhaustivas e imparciales y respetuosa con su reputación, imagen y dignidad.",
+   "Respetuosas con el libre ejercicio de los derechos y libertades y con sujeción a las leyes."
+  ],
+  "correcta": 0,
+  "lila": "Art. 46.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Las investigaciones serán rigurosas, exhaustivas e imparciales y estarán sujetas al principio de legalidad y al control judicial. Al llevar a cabo actuaciones en el seno de una investigación, deberán evitar la injerencia arbitraria en la vida privada de las personas, velando por la reputación de las mismas.",
+  "exp": "Rigurosas, exhaustivas e imparciales, con legalidad y control judicial.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "185-2",
+  "pz": "e-46",
+  "sec": 24,
+  "id": "27-375"
+ },
+ {
+  "lote": "e4",
+  "i": 5,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 5 del Código de Conducta",
+    "k": 144
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Valores fundamentales. En el cumplimiento de sus funciones, procederán siempre con el mayor sentido de la justicia...:",
+  "opciones": [
+   "Exhaustividad, equidad y decisión.",
+   "Objetividad, ecuanimidad y comprensión.",
+   "Imparcialidad, igualdad y comprensión.",
+   "Discrecionalidad, honestidad y reflexión."
+  ],
+  "correcta": 1,
+  "lila": "Art. 5 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "En cumplimiento de sus funciones, procederán siempre con el mayor sentido de la justicia, objetividad, ecuanimidad y comprensión, evitando cualquier tipo de arbitrariedad, discriminación o trato de favor en el ejercicio de sus funciones.",
+  "exp": "Objetividad, ecuanimidad y comprensión.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "144-1",
+  "pz": "e-5",
+  "sec": 24,
+  "id": "27-376"
+ },
+ {
+  "lote": "e4",
+  "i": 6,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Disposición final segunda",
+    "k": 138
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Quiénes podrán dictar o proponer las disposiciones necesarias para el desarrollo de este real decreto?:",
+  "opciones": [
+   "Podrá dictarlas la persona titular del Ministerio de Defensa, en el ámbito de sus respectivas competencias.",
+   "Podrá dictarlas la persona titular del Ministerio de Interior, en el ámbito de sus respectivas competencias.",
+   "Podrán proponerlas conjuntamente, las personas titulares de los Ministerios de Defensa y del Interior.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Disposición final segunda · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Se faculta a las personas titulares de los Ministerios de Defensa y del Interior para dictar, en el ámbito de sus respectivas competencias, o proponer conjuntamente, las disposiciones necesarias para el desarrollo de este real decreto.",
+  "exp": "Cada Ministro puede dictarlas en sus competencias y ambos proponerlas conjuntamente.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "138-1",
+  "pz": "d-6",
+  "sec": 24,
+  "id": "27-377"
+ },
+ {
+  "lote": "e4",
+  "i": 7,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 50.2 del Código de Conducta",
+    "k": 189
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿En qué deberán estar basadas las funciones técnicas, administrativas, logísticas y financieras de los guardias civiles?:",
+  "opciones": [
+   "En los principios de objetividad, imparcialidad, eficacia y eficiencia respecto a los procedimientos y defensa de los derechos de las personas.",
+   "En los principios de igualdad, objetividad, eficacia y eficiencia respecto a los procedimientos y defensa de los derechos de las personas.",
+   "En los principios de objetividad, imparcialidad, eficacia y eficiencia respecto al ejercicio y defensa de los derechos de las personas.",
+   "En los principios de igualdad, objetividad, eficacia y eficiencia respecto al ejercicio y defensa de los derechos de las personas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 50.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Para lograr este objetivo es fundamental que estas funciones estén basadas en los principios de objetividad, imparcialidad, eficacia y eficiencia respecto a los procedimientos y defensa de los derechos de las personas, y orientadas a garantizar el normal y continuo funcionamiento de las unidades del Cuerpo.",
+  "exp": "Objetividad, imparcialidad, eficacia y eficiencia respecto a los procedimientos y defensa de los derechos.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "189-2",
+  "pz": "e-50",
+  "sec": 24,
+  "id": "27-378"
+ },
+ {
+  "lote": "e4",
+  "i": 8,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 25 del Código de Conducta",
+    "k": 164
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En sus intervenciones, actuarán de manera racional y con el temple necesario, con serenidad y prudencia, siguiendo los principios de oportunidad, congruencia y proporcionalidad, con la confianza:",
+  "opciones": [
+   "En que los medios puestos a su disposición son los adecuados.",
+   "En que las órdenes recibidas de sus mandos superiores son las más adecuadas para la consecución de los fines perseguidos.",
+   "En la correcta labor de los demás compañeros.",
+   "En que sus propias aptitudes, juicios y criterios técnicos le permitirán tomar las decisiones más acertadas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 25 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "En sus intervenciones, actuarán de manera racional y con el temple necesario, con serenidad y prudencia, siguiendo los principios de oportunidad, congruencia y proporcionalidad, con la confianza en que sus propias aptitudes, juicios y criterios técnicos le permitirán tomar las decisiones más acertadas.",
+  "exp": "Confianza en sus propias aptitudes, juicios y criterios técnicos.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "164-1",
+  "pz": "e-25",
+  "sec": 24,
+  "id": "27-379"
+ },
+ {
+  "lote": "e4",
+  "i": 9,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 22.3 del Código de Conducta",
+    "k": 161
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el espíritu de Cuerpo y compañerismo, ¿cómo deberán tratar los guardias civiles al personal retirado?:",
+  "opciones": [
+   "Con el respeto, reconocimiento y consideración que merecen su dedicación y los servicios prestados, guardando, en todo momento, las debidas muestras de cortesía y compañerismo propias de la Institución.",
+   "Con el respeto, reconocimiento y consideración que merecen su dedicación y los servicios prestados, y con sentimiento de honor y orgullo compartido, guardando, en todo momento, las debidas muestras de cortesía y compañerismo propias de la Institución.",
+   "Con la cortesía, reconocimiento y consideración que merecen por su dedicación y servicios prestados, inspirados en un profundo sentido de pertenencia a la Guardia Civil y guardando, en todo momento, las debidas muestras de respeto y compañerismo propias de la Institución.",
+   "Con la cortesía, reconocimiento y consideración que merecen por dedicación y servicios prestados, guardando, en todo momento, las debidas muestras de respeto y compañerismo propias de la Institución y prestándoles especial atención por tratarse de personas y colectivos más vulnerables."
+  ],
+  "correcta": 0,
+  "lila": "Art. 22.3 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "3. Tratarán al personal retirado con el respeto, reconocimiento y consideración que merecen su dedicación y los servicios prestados, guardando, en todo momento, las debidas muestras de cortesía y compañerismo propias de la Institución.",
+  "exp": "Respeto, reconocimiento y consideración, con muestras de cortesía y compañerismo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "161-3",
+  "pz": "e-22",
+  "sec": 24,
+  "id": "27-380"
+ },
+ {
+  "lote": "e4",
+  "i": 10,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 10.2 del Código de Conducta",
+    "k": 149
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Además de mostrar una disposición permanente para la defensa de la Constitución Española y de cumplir y hacer cumplir la ley, ¿qué otras normas respetarán y harán cumplir los guardias civiles de acuerdo al contenido de este Código?:",
+  "opciones": [
+   "Todos los tratados, acuerdos y convenios de la Unión Europea.",
+   "Todos los tratados, acuerdos y convenios internacionales que hayan Sido publicados en España.",
+   "Todos los tratados, acuerdos y convenios internacionales que hayan sido integrados en nuestro ordenamiento jurídico.",
+   "Todos los tratados, acuerdos y convenios internacionales de los que España sea parte, así como los demás preceptos que resulten de aplicación."
+  ],
+  "correcta": 3,
+  "lila": "Art. 10.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Asimismo, respetarán y harán cumplir los tratados, acuerdos y convenios internacionales de los que España sea parte, así como los demás preceptos que resulten de aplicación.",
+  "exp": "Los tratados de los que España sea parte y los demás preceptos aplicables.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "149-2",
+  "pz": "e-10",
+  "sec": 24,
+  "id": "27-381"
+ },
+ {
+  "lote": "e4",
+  "i": 11,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Decálogo",
+    "k": 199
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cómo dice el decálogo de este código que actuarán en referencia a la serenidad y empleo de la fuerza?:",
+  "opciones": [
+   "Fiel a mi deber, con actitud serena en el peligro, seré prudente sin debilidad y firme sin violencia.",
+   "Fiel a mi deber, con actitud prudente ante el peligro, estará sereno sin debilidad y firme sin violencia.",
+   "Sereno en el cumplimiento de mi deber, con actitud firme ante el peligro, seré fiel sin debilidad y prudente sin violencia.",
+   "Sereno en el cumplimiento de mi deber, con actitud prudente ante el peligro, seré fiel sin debilidad y firme sin violencia."
+  ],
+  "correcta": 0,
+  "lila": "Decálogo · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Fiel a mi deber, con actitud serena en el peligro, seré prudente sin debilidad y firme sin violencia.",
+  "exp": "Es el décimo punto del decálogo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "199-1",
+  "pz": "e-fin",
+  "sec": 24,
+  "id": "27-382"
+ },
+ {
+  "lote": "e4",
+  "i": 12,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 9 del Código de Conducta",
+    "k": 148
+   },
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 9 del Código de Conducta",
+    "k": 148
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Valores fundamentales. Mantener una disposición permanente para anteponer el bien común al suyo propio está vinculado a:",
+  "opciones": [
+   "Espíritu de sacrificio.",
+   "Espíritu benemérito.",
+   "Espíritu de Cuerpo y compañerismo.",
+   "Abnegación."
+  ],
+  "correcta": 0,
+  "lila": "Art. 9 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Art. 9 del Código de Conducta. Mantendrán una disposición permanente para anteponer el bien común al suyo propio, aceptando con abnegación las exigencias que conlleva el cumplimiento del deber.<br>Art. 9 del Código de Conducta. Espíritu de sacrificio.",
+  "exp": "Anteponer el bien común corresponde al espíritu de sacrificio, aunque se acepte con abnegación.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "148-1",
+  "pz": "e-9",
+  "sec": 24,
+  "id": "27-383"
+ },
+ {
+  "lote": "e4",
+  "i": 13,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 27.2 del Código de Conducta",
+    "k": 166
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Reserva respecto del servicio. ¿En qué deberán prestar un especial celo los guardias civiles, en relación con esta norma?:",
+  "opciones": [
+   "En el uso privado de las tecnologías de la información y las comunicaciones, debiendo Ser prudentes en la difusión de cualquier contenido que pueda inducir a error sobre su oficialidad.",
+   "En guardar el secreto sobre todos los asuntos, actos, documentos, informaciones, datos, objetos y materias cuyo conocimiento por personas no autorizadas pueda dañar o poner en riesgo el desarrollo de la labor policial, a cualquier ciudadano o, en última instancia, a la seguridad y defensa del Estado.",
+   "En guardar secreto con el debido sigilo o discreción sobre todo lo que el personal pueda conocer con ocasión, o por razón, del desempeño de sus funciones.",
+   "En la protección de la imagen de la ciudadanía, así como de otros datos que conozcan y puedan servir para individualizar e identificar a aquéllos frente a terceros ajenos a la función policial."
+  ],
+  "correcta": 3,
+  "lila": "Art. 27.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Prestarán un especial celo en la protección de la imagen de la ciudadanía, así como de otros datos que conozcan y puedan servir para individualizar e identificar a aquéllos frente a terceros ajenos a la función policial.",
+  "exp": "El especial celo es en la protección de la imagen de la ciudadanía y sus datos.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "166-2",
+  "pz": "e-27",
+  "sec": 24,
+  "id": "27-384"
+ },
+ {
+  "lote": "e4",
+  "i": 14,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 13 del Código de Conducta",
+    "k": 152
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Principios institucionales. En relación con la neutralidad ideológica y política:",
+  "opciones": [
+   "Serán plenamente respetuosos con todas las opciones políticas y sociales, manteniendo imparcialidad en esta materia, alejados del discurso ideológica y del debate político.",
+   "Serán plenamente respetuosos con todas las opciones políticas y plurales, manteniendo neutralidad en esta materia, alejados del discurso ideológica y del debate partidista.",
+   "Serán plenamente respetuosos con todas las opciones ideológicas y políticas, manteniendo neutralidad en esta materia, alejados del discurso político y del debate partidista.",
+   "Serán plenamente respetuosos con todas las opciones de pluralidad política, manteniendo imparcialidad en esta materia, alejados del discurso político y del debate partidista."
+  ],
+  "correcta": 2,
+  "lila": "Art. 13 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Serán plenamente respetuosos con todas las opciones ideológicas y políticas, manteniendo neutralidad en esta materia, alejados del discurso político y del debate partidista.",
+  "exp": "Opciones ideológicas y políticas, neutralidad, sin discurso político ni debate partidista.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "152-1",
+  "pz": "e-13",
+  "sec": 24,
+  "id": "27-385"
+ },
+ {
+  "lote": "e4",
+  "i": 15,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 8.2 del Código de Conducta",
+    "k": 147
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el valor fundamental de la dignidad, ¿cómo se desarrollará el comportamiento de los guardias civiles?:",
+  "opciones": [
+   "Con responsabilidad, seriedad y respeto hacia sus superiores y hacia los demás.",
+   "Con responsabilidad, seriedad y respeto hacia sí mismos y hacia los demás.",
+   "Con responsabilidad, serenidad y respeto hacia sus superiores y hacia los demás.",
+   "Con responsabilidad, serenidad y respeto hacia Sí mismos y hacia los demás."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Su comportamiento se desarrollará con responsabilidad, seriedad y respeto hacia sí mismos y hacia los demás.",
+  "exp": "Responsabilidad, seriedad y respeto hacia sí mismos y hacia los demás.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "147-2",
+  "pz": "e-8",
+  "sec": 24,
+  "id": "27-386"
+ },
+ {
+  "lote": "e4",
+  "i": 16,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Decálogo",
+    "k": 194
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué dice este Código respecto a la integridad en su decálogo?:",
+  "opciones": [
+   "Actuaré siempre con integridad y honradez. La satisfacción del deber cumplido será mi mayor recompensa.",
+   "Actuaré siempre con integridad y rectitud. La satisfacción del deber cumplido será mi mayor recompensa.",
+   "Actuaré siempre con integridad y honradez. La satisfacción del deber cumplido será mi principal objetivo.",
+   "Actuaré siempre con integridad y rectitud. La satisfacción del deber cumplido será mi principal objetivo."
+  ],
+  "correcta": 1,
+  "lila": "Decálogo · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Actuaré siempre con integridad y rectitud. La satisfacción del deber cumplido será mi mayor recompensa.",
+  "exp": "Integridad y rectitud; el deber cumplido es la mayor recompensa.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "194-1",
+  "pz": "e-fin",
+  "sec": 24,
+  "id": "27-387"
+ },
+ {
+  "lote": "e4",
+  "i": 18,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 2 del Código de Conducta",
+    "k": 141
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. No aceptar ofrecimientos, favores o regalos es una actuación relativa a:",
+  "opciones": [
+   "El sentido de la justicia.",
+   "La dignidad.",
+   "La responsabilidad.",
+   "La integridad."
+  ],
+  "correcta": 3,
+  "lila": "Art. 2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Actuarán siempre con rectitud y honradez. Por ello, se opondrán resueltamente a cualquier forma de corrupción y en ningún caso aceptarán ofrecimientos, favores o regalos que, directa o indirectamente, puedan comprometer su honestidad y su actuación profesional.",
+  "exp": "Es una exigencia de la integridad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "141-1",
+  "pz": "e-2",
+  "sec": 24,
+  "id": "27-388"
+ },
+ {
+  "lote": "e4",
+  "i": 19,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 5 del Código de Conducta",
+    "k": 144
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué es lo que deben evitar los guardias civiles en el ejercicio de sus funciones, según el sentido de la justicia?:",
+  "opciones": [
+   "Cualquier tipo de arbitrariedad, discriminación o trato de favor en el ejercicio de sus funciones.",
+   "Establecer trato discriminatorio hacia ninguna persona o colectivo.",
+   "Transgredir el buen nombre de la Institución y vulnerar la dignidad de las personas.",
+   "Realizar cualquier tipo de actividad que sea contraria a la Constitución o las Leyes."
+  ],
+  "correcta": 0,
+  "lila": "Art. 5 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "En cumplimiento de sus funciones, procederán siempre con el mayor sentido de la justicia, objetividad, ecuanimidad y comprensión, evitando cualquier tipo de arbitrariedad, discriminación o trato de favor en el ejercicio de sus funciones.",
+  "exp": "Arbitrariedad, discriminación o trato de favor.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "144-1",
+  "pz": "e-5",
+  "sec": 24,
+  "id": "27-389"
+ },
+ {
+  "lote": "e4",
+  "i": 20,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 24.2 del Código de Conducta",
+    "k": 163
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cómo deberán actuar los guardias civiles, en virtud de la norma general de comportamiento relativa a la dedicación profesional?:",
+  "opciones": [
+   "Desempeñando su profesión con total dedicación, espíritu de servicio y afán de superación.",
+   "De manera racional y con el temple necesario, con serenidad y prudencia.",
+   "En cualquier momento y lugar con iniciativa y decisión, conforme a las instrucciones recibidas y los procedimientos establecidos.",
+   "Proyectando hacia la ciudadanía una imagen de respeto, dignidad, confianza y seguridad."
+  ],
+  "correcta": 0,
+  "lila": "Art. 24.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Desempeñarán su profesión con total dedicación, espíritu de servicio y afán de superación.",
+  "exp": "La dedicación profesional se concreta en total dedicación, espíritu de servicio y afán de superación.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "163-2",
+  "pz": "e-24",
+  "sec": 24,
+  "id": "27-390"
+ },
+ {
+  "lote": "e4",
+  "i": 21,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Preámbulo",
+    "k": 128
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Este código ético ha de entenderse en términos de que emana de la vocación profesional de ser guardia civil:",
+  "opciones": [
+   "La abnegación.",
+   "La perseverancia.",
+   "La voluntariedad.",
+   "La seriedad."
+  ],
+  "correcta": 2,
+  "lila": "Preámbulo · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Este código ético ha de entenderse en términos de la voluntariedad que emana de la vocación profesional de ser guardia civil, de forma que su finalidad ha de ser la de estimular conductas que, además, sean una referencia y ejemplo a seguir por el resto de miembros del Cuerpo. En consecuencia, la utilización del término «Código» no ha de entenderse en su acepción de reglamento u ordenación, sino en la que, en consonancia con otros códigos éticos dirigidos a funcionarios, supone la compilación y definición del conjunto de valores, principios y normas de comportamiento inspiradores de la conducta de determinados grupos profesionales. Su efectividad, por tanto, será proporcional al grado en que cada guardia civil lo asuma como propio y lo implemente como modelo de conducta. Sólo desde el desempeño escrupuloso de la función profesional, pero también desde un comportamiento personal individual ejemplar, se puede entender la mejor versión del hombre y mujer guardia civil de nuestros días.",
+  "exp": "El código se entiende en términos de voluntariedad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "128-1",
+  "pz": "c-66",
+  "sec": 24,
+  "id": "27-391"
+ },
+ {
+  "lote": "e4",
+  "i": 23,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 34 del Código de Conducta",
+    "k": 173
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cuál de las siguientes opciones NO está contenida en la regulación que hace el Código sobre las normas de conducta en las relaciones de la Guardia Civil con las autoridades civiles?:",
+  "opciones": [
+   "Se esmerarán en sus relaciones con las autoridades civiles, mostrando la mayor cortesía y educación, observando en todo momento un trato respetuoso y atento con estas e informándoles de aquellas materias que les afecten directamente o tengan derecho a conocer.",
+   "Mostrarán respeto y cortesía, además de colaboración, en sus relaciones con las autoridades civiles de las distintas administraciones y poderes del Estado como legítimos representantes de la ciudadanía.",
+   "Deberán cumplir con las instrucciones y órdenes de aquellas autortslades de las que dependan jerárquicamente en organizaciones nacionales o internacionales en las que estén prestando servicio.",
+   "Actuarán sin menoscabo de la mejor disposición para auxiliar a toda autoridad, dependa o no de ella."
+  ],
+  "correcta": 0,
+  "lila": "Art. 34 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Mostrarán respeto y cortesía, además de colaboración, en sus relaciones con las autoridades civiles de las distintas administraciones y poderes del Estado como legítimos representantes de la ciudadanía. 2. Asimismo, deberán cumplir con las instrucciones y órdenes de aquellas autoridades de las que dependan jerárquicamente en organizaciones nacionales o internacionales en las que estén prestando servicio. Todo ello sin menoscabo de la mejor disposición para auxiliar a toda autoridad, dependa o no de ella.",
+  "exp": "La cortesía e información sobre lo que les afecte pertenece a las relaciones con la ciudadanía.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "173-1",
+  "pz": "e-34",
+  "sec": 24,
+  "id": "27-392"
+ },
+ {
+  "lote": "e4",
+  "i": 24,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 39 del Código de Conducta",
+    "k": 178
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Están siempre obligados los guardias civiles a identificarse como tales?:",
+  "opciones": [
+   "Estarán obligados a identificarse siempre y cuando se encuentren desempeñando sus funciones.",
+   "Estarán obligados a identificarse cuando se encuentren desempeñando sus funciones y así lo requieran las autoridades y la ciudadanía, pudiendo obviarse esta identificación en determinados supuestos.",
+   "No estarán obligados a identificarse salvo que así les sea requerido por las autoridades o la ciudadanía.",
+   "Estarán obligados a identificarse salvo que esté en peligro la misión o la seguridad propia del personal."
+  ],
+  "correcta": 1,
+  "lila": "Art. 39 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Tendrán la obligación de identificarse cuando se encuentren desempeñando sus funciones y así lo requieran las autoridades y la ciudadanía. 2. La obligación de identificarse únicamente podrá obviarse cuando la propia naturaleza de las misiones encomendadas, o la concurrencia de determinados factores, pongan en peligro la misión o la seguridad propia del personal de la Guardia Civil o de terceras personas.",
+  "exp": "Es obligatorio en funciones y a requerimiento, con las excepciones de riesgo para la misión o la seguridad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "178-1",
+  "pz": "e-39",
+  "sec": 24,
+  "id": "27-393"
+ },
+ {
+  "lote": "e4",
+  "i": 25,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 33.2 del Código de Conducta",
+    "k": 172
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Relaciones con la ciudadanía. ¿A qué personas informarán de forma comprensible en sus intervenciones?:",
+  "opciones": [
+   "Informarán a las personas con las que trate de aquellas materias que les afecten directamente o tengan derecho a conocer, siempre que las circunstancias lo permitan.",
+   "Informarán, en todo caso, a aquellas personas que tengan un derecho o interés legítimo que resulte afectado por su intervención.",
+   "Informarán siempre a todas aquellas personas que hayan resultado perjudicadas por su intervención, salvo que deban guardar secreto.",
+   "Informarán solamente a aquellos personas que sean titulares de un derecho o un interés legítimo, según la normativa que resulte de aplicación."
+  ],
+  "correcta": 0,
+  "lila": "Art. 33.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. En todas sus intervenciones, y cuando las circunstancias lo permitan, informarán de forma comprensible a las personas con las que trate de aquellas materias que les afecten directamente o tengan derecho a conocer.",
+  "exp": "A las personas con las que traten, sobre lo que les afecte o tengan derecho a conocer.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "172-2",
+  "pz": "e-33",
+  "sec": 24,
+  "id": "27-394"
+ },
+ {
+  "lote": "e4",
+  "i": 26,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 38 del Código de Conducta",
+    "k": 177
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Transparencia, comunicación e información pública. Como parte de su servicio a la ciudadanía, colaborarán para que desde la Institución se pueda ofrecer una información coherente, veraz y completa:",
+  "opciones": [
+   "De la actividad profesional desempeñada, observando, en su caso, el correspondiente deber de reserva.",
+   "De la actividad profesional desempeñada, observando siempre el deber de reserva.",
+   "Sobre la actividad profesional desempeñada y los fines u objetivos perseguidos con la misma, observando, en caso, el correspondiente deber de reserva.",
+   "Sobre la actividad profesional desempeñada y los fines u objetivos perseguidos con la misma, observando siempre el deber de reserva."
+  ],
+  "correcta": 1,
+  "lila": "Art. 38 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Como parte de su servicio a la ciudadanía, colaborarán para que desde la Institución se pueda ofrecer una información coherente, veraz y completa de la actividad profesional desempeñada, observando siempre el deber de reserva.",
+  "exp": "De la actividad profesional desempeñada, observando siempre el deber de reserva.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "177-1",
+  "pz": "e-38",
+  "sec": 24,
+  "id": "27-395"
+ },
+ {
+  "lote": "e4",
+  "i": 27,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 34.2 del Código de Conducta",
+    "k": 173
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Respecto a lo establecido sobre las relaciones con las autoridades civiles, señale la opción INCORRECTA:",
+  "opciones": [
+   "Mostrarán respeto y cortesía, además de colaboración, en sus relaciones con las autoridades civiles de las distintas administraciones y poderes del Estado como legítimos representantes de la ciudadanía.",
+   "Deberán cumplir con las instrucciones y órdenes de aquellas autoridades de las que dependan jerárquicamente en organizaciones nacionales.",
+   "Deberán tener la mejor disposición para auxiliar a toda autoridad, siempre que dependan de ella.",
+   "Deberán cumplir con las instrucciones y órdenes de aquellas autoridades de las que dependan jerárquicamente en organizaciones internacionales en las que estén prestando servicio."
+  ],
+  "correcta": 2,
+  "lila": "Art. 34.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Asimismo, deberán cumplir con las instrucciones y órdenes de aquellas autoridades de las que dependan jerárquicamente en organizaciones nacionales o internacionales en las que estén prestando servicio. Todo ello sin menoscabo de la mejor disposición para auxiliar a toda autoridad, dependa o no de ella.",
+  "exp": "La disposición para auxiliar es a toda autoridad, dependa o no de ella.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "173-2",
+  "pz": "e-34",
+  "sec": 24,
+  "id": "27-396"
+ },
+ {
+  "lote": "e4",
+  "i": 28,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 19 del Código de Conducta",
+    "k": 158
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el principio institucional de la cooperación:",
+  "opciones": [
+   "Los miembros de la Guardia Civil buscarán el bien común y la satisfacción de los intereses generales, por lo que deberán cooperar con otras personas, organismos, instituciones y entidades sociales sobre la base del principio de lealtad institucional.",
+   "Los miembros de la Guardia Civil buscarán el bien general y la satisfacción de los intereses comunes, por lo que deberán cooperar con otras personas, organismos, instituciones y entidades sociales sobre la base del principio de lealtad institucional.",
+   "Los miembros de la Guardia Civil buscarán el bien general y la satisfacción de los intereses comunes, por lo que deberán cooperar con otras personas, organismos, instituciones y entidades públicas sobre la base del principio de lealtad institucional.",
+   "Los miembros de la Guardia Civil buscarán el bien común y la satisfacción de los intereses generales, por lo que deberán cooperar con otras personas, organismos, instituciones y entidades públicas sobre la base del principio de lealtad institucional."
+  ],
+  "correcta": 0,
+  "lila": "Art. 19 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Los miembros de la Guardia Civil buscarán el bien común y la satisfacción de los intereses generales, por lo que deberán cooperar con otras personas, organismos, instituciones y entidades sociales sobre la base del principio de lealtad institucional.",
+  "exp": "Es literal el artículo. Las demás cambian «bien común», «intereses generales» o «entidades sociales».",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "158-1",
+  "pz": "e-19",
+  "sec": 24,
+  "id": "27-397"
+ },
+ {
+  "lote": "e4",
+  "i": 29,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 17 del Código de Conducta",
+    "k": 156
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Respeto y consideración a la pluralidad cultural de España. ¿A qué deberán mostrar el mayor respeto y consideración según este principio?:",
+  "opciones": [
+   "Hacia todas las opciones ideológicas y políticas, manteniendo neutralidad en esta materia, alejados del discurso político y del debate partidista.",
+   "Hacia la historia, los símbolos e instituciones del Estado, de las comunidades autónomas y de las entidades locales.",
+   "Hacia la sociedad, los nuevos medios y los procedimientos propios de su actividad profesional.",
+   "Hacia los derechos fundamentales y libertades públicas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 17 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Respetarán la pluralidad cultural de la sociedad y las singularidades de cada uno de los territorios que conforman España, mostrando el mayor respeto y consideración hacia la historia, los símbolos e instituciones del Estado, de las comunidades autónomas y de las entidades locales.",
+  "exp": "Historia, símbolos e instituciones del Estado, comunidades autónomas y entidades locales.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "156-1",
+  "pz": "e-17",
+  "sec": 24,
+  "id": "27-398"
+ },
+ {
+  "lote": "e4",
+  "i": 30,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 6",
+    "k": 134
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué establece la Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia Civil, en relación con el contenido del presente Código de Conducta?:",
+  "opciones": [
+   "Que servirá de referencia a las asociaciones profesionales de guardias civiles en todas las actividades que desarrollen para el fomento y promoción de la deontología profesional de sus asociados.",
+   "Que servirá de referencia a las asociaciones profesionales de guardias civiles en las actividades sociales que desarrollen para el fomento y promoción de la carrera profesional de sus asociados.",
+   "Que servirá de referencia a las asociaciones profesionales de guardias civiles en las actividades sociales que desarrollen para el fomento y promoción de la deontología profesional de sus asociados.",
+   "Que servirá de referencia a las asociaciones profesionales de guardias civiles en todas las actividades que desarrollen para el fomento y promoción de la carrera profesional de sus asociados."
+  ],
+  "correcta": 2,
+  "lila": "Art. 6 · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "De conformidad con el artículo 36 de la Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia Civil, el contenido de este Código de Conducta servirá de referencia a las asociaciones profesionales de guardias civiles en las actividades sociales que desarrollen para el fomento y promoción de la deontología profesional de sus asociados.",
+  "exp": "Referencia para las actividades sociales de fomento de la deontología.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "134-1",
+  "pz": "d-6",
+  "sec": 24,
+  "id": "27-399"
+ },
+ {
+  "lote": "e4",
+  "i": 31,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 4.4",
+    "k": 132
+   },
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 4.1",
+    "k": 132
+   },
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 4.3",
+    "k": 132
+   },
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 4.5",
+    "k": 132
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Respecto a la inclusión del Código de Conducta en el sistema de enseñanza de la Guardia Civil y en las actividades que se desarrollan en sus unidades, señale la opción INCORRECTA:",
+  "opciones": [
+   "Los planes de estudios de la enseñanza de formación de la Guardia Civil incorporarán el Código de Conducta como instrumento para la formación en valores, principios y normas de comportamiento.",
+   "El Código de Conducta deberá incorporarse a la enseñanza de perfeccionamiento y de altos estudios profesionales a través de sus planes de estudios o programas, cuando así proceda, de acuerdo con los perfiles de egreso o las competencias específicas.",
+   "El Director General de la Guardia Civil velará para que todo el personal bajo su mando conozca e interiorice todos los aspectos contenidos en el Código de Conducta.",
+   "Se organizarán e impulsarán actividades dirigidas a promover y consolidar los valores de la institución y asentar el Código de Conducta."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4.4 y Art. 4.1 y Art. 4.3 y Art. 4.5 · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Art. 4.4. 4. Los mandos de las unidades, centros y órganos de la Guardia Civil, de acuerdo con sus diferentes niveles de responsabilidad, velarán para que todo el personal bajo su mando conozca e interiorice todos los aspectos contenidos en el Código de Conducta.<br>Art. 4.1. 1. Los planes de estudios de la enseñanza de formación de la Guardia Civil incorporarán el Código de Conducta como instrumento para la formación en valores, principios y normas de comportamiento.<br>Art. 4.3. 3. El Código de Conducta deberá incorporarse, igualmente, a la enseñanza de perfeccionamiento y de altos estudios profesionales a través de sus planes de estudios o programas, cuando así proceda, de acuerdo con los perfiles de egreso o las competencias específicas.<br>Art. 4.5. 5. Se organizarán e impulsarán actividades dirigidas a promover y consolidar los valores de la institución y asentar el Código de Conducta.",
+  "exp": "Quienes velan son los mandos de las unidades, centros y órganos.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "132-4",
+  "pz": "d-4",
+  "sec": 24,
+  "id": "27-400"
+ },
+ {
+  "lote": "e4",
+  "i": 32,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 42 del Código de Conducta",
+    "k": 181
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Señala la opción INCORRECTA. El código, en relación con el liderazgo, establece que:",
+  "opciones": [
+   "Entre otras cualidades, la capacidad de decisión y preocupación permanente por el personal a sus órdenes permitirán un liderazgo ejemplar a quienes tienen la responsabilidad de mandar en la Guardia Civil.",
+   "El prestigio personal, la dedicación profesional, la preparación y la iniciativa, entre otras cualidades, permitirán un liderazgo ejemplar a quienes tienen la responsabilidad de mandar en la Guardia Civil.",
+   "Como líderes, deben influir de forma positiva, crear un entorno favorable y de cohesión y motivar a su equipo, así como tratar de obtener su reconocimiento y aprecio.",
+   "Todos los miembros de la Guardia Civil deben adquirir y mejorar las cualidades que les permitan llevar a cabo un liderazgo eficaz."
+  ],
+  "correcta": 3,
+  "lila": "Art. 42 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Quienes ejerzan el mando en la Guardia Civil deben adquirir y mejorar las cualidades que les permitan llevar a cabo un liderazgo eficaz. Como líderes, deben influir de forma positiva, crear un entorno favorable y de cohesión y motivar a su equipo, así como tratar de obtener su reconocimiento y aprecio, contribuyendo a la buena imagen del Cuerpo. 2. El prestigio personal, la dedicación profesional, la preparación, la iniciativa, la capacidad de decisión y la preocupación permanente por el personal a sus órdenes permitirán un liderazgo ejemplar a quienes tienen la responsabilidad de mandar en la Guardia Civil.",
+  "exp": "Las cualidades de liderazgo se exigen a quienes ejercen el mando.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "181-1",
+  "pz": "e-42",
+  "sec": 24,
+  "id": "27-401"
+ },
+ {
+  "lote": "e4",
+  "i": 33,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Disposición final segunda",
+    "k": 138
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué facultad de desarrollo normativo se atribuye a la persona titular de la Dirección General de la Guardia Civil?:",
+  "opciones": [
+   "Dictar las instrucciones necesarias para promover la difusión y aplicación del Código de Conducta y su Decálogo.",
+   "Dictar, en el ámbito de sus respectivas competencias, o proponer las disposiciones necesarias para el desarrollo del real decreto por el que se aprueba este Código.",
+   "Proponer las disposiciones necesarias para el desarrollo del Real Decreto por el que se aprueba este Código.",
+   "El titular de la Dirección General de la Guardia Civil no tiene ninguna facultad normativa. Esta facultad corresponde exclusivamente a los titulares de los Ministerios de Defensa y del Interior."
+  ],
+  "correcta": 0,
+  "lila": "Disposición final segunda · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Igualmente, se faculta a la persona titular de la Dirección General de la Guardia Civil para dictar las instrucciones necesarias para promover la difusión y aplicación del Código de Conducta y su Decálogo, que se aprueban con este real decreto.",
+  "exp": "Dictar las instrucciones para promover la difusión y aplicación del Código y su Decálogo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "138-2",
+  "pz": "d-6",
+  "sec": 24,
+  "id": "27-402"
+ },
+ {
+  "lote": "e4",
+  "i": 34,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 2 del Código de Conducta",
+    "k": 141
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el valor de la integridad recogido en este Código, los guardias civiles actuarán siempre con rectitud y honradez y, además, ¿cómo deberán comportarse?:",
+  "opciones": [
+   "Se opondrán resueltamente a cualquier forma de corrupción y en ningún caso aceptarán ofrecimientos, favores o regalos que, directa o indirectamente, puedan comprometer su honestidad y su actuación profesional.",
+   "Se opondrán directamente a cualquier forma de corrupción y en ningún caso aceptarán ofrecimientos, favores o regalos que, puedan comprometer su honestidad y su actuación profesional.",
+   "Se opondrán resueltamente a cualquier forma de corrupción y en ningún caso aceptarán ofrecimientos, favores o regalos que, directa o indirectamente comprometan su honestidad y su actuación profesional.",
+   "Se opondrán directamente a cualquier forma de corrupción y en ningún caso aceptarán ofrecimientos, favores o regalos que comprometan su honestidad y su actuación profesional."
+  ],
+  "correcta": 0,
+  "lila": "Art. 2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Actuarán siempre con rectitud y honradez. Por ello, se opondrán resueltamente a cualquier forma de corrupción y en ningún caso aceptarán ofrecimientos, favores o regalos que, directa o indirectamente, puedan comprometer su honestidad y su actuación profesional.",
+  "exp": "Es literal. Las demás cambian «resueltamente» o suprimen «directa o indirectamente».",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "141-1",
+  "pz": "e-2",
+  "sec": 24,
+  "id": "27-403"
+ },
+ {
+  "lote": "e4",
+  "i": 35,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 33.1 del Código de Conducta",
+    "k": 172
+   },
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 34 del Código de Conducta",
+    "k": 173
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cuál de las siguientes afirmaciones NO está contenida en la regulación que hace el Código sobre las normas de conducta en las relaciones de la Guardia Civil con las autoridades civiles?:",
+  "opciones": [
+   "Deberán cumplir con las instrucciones y órdenes de aquellas autoridades de las que dependan jerárquicamente en organizaciones nacionales o internacionales en las que estén prestando servicio.",
+   "Mostrarán respeto y cortesía, además de colaboración, en sus relaciones con las autoridades civiles de las distintas administraciones y poderes del Estado como legítimos representantes de la ciudadanía.",
+   "Actuarán sin menoscabo de la mejor disposición para auxiliar a toda autoridad, dependa o no de ella.",
+   "Se esmerarán en sus relaciones con las autoridades civiles, mostrando la mayor cortesía y educación, observando en todo momento un trato respetuoso y atento con estas e informándoles de aquellas materias que les afecten directamente o tengan derecho a conocer."
+  ],
+  "correcta": 3,
+  "lila": "Art. 33.1 del Código de Conducta y Art. 34 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Art. 33.1 del Código de Conducta. 1. Se esmerarán en sus relaciones con la ciudadanía, mostrando la mayor cortesía y educación, observando en todo momento un trato respetuoso y atento con esta y procurando auxilio y protección cuando la situación lo demande o sea requerido para ello.<br>Art. 34 del Código de Conducta. 1. Mostrarán respeto y cortesía, además de colaboración, en sus relaciones con las autoridades civiles de las distintas administraciones y poderes del Estado como legítimos representantes de la ciudadanía. 2. Asimismo, deberán cumplir con las instrucciones y órdenes de aquellas autoridades de las que dependan jerárquicamente en organizaciones nacionales o internacionales en las que estén prestando servicio. Todo ello sin menoscabo de la mejor disposición para auxiliar a toda autoridad, dependa o no de ella.",
+  "exp": "La cortesía e información de la opción corresponde a las relaciones con la ciudadanía.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "172-1",
+  "pz": "e-33",
+  "sec": 24,
+  "id": "27-404"
+ },
+ {
+  "lote": "e4",
+  "i": 36,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 3 del Código de Conducta",
+    "k": 142
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué dice el Código en relación con la lealtad?:",
+  "opciones": [
+   "Mostrarán el máximo compromiso personal de fidelidad, respeto y cordialidad hacia los demás componentes del Cuerpo, independientemente de su empleo, Situación o destino.",
+   "Mostrarán el máximo compromiso personal de sinceridad, respeto y cordialidad hacia los demás componentes del Cuerpo, independientemente de su cargo, situación o destino.",
+   "Mostrarán el máximo compromiso personal de fidelidad, respeto y sinceridad hacia los demás componentes del Cuerpo, independientemente de su empleo, situación o destino.",
+   "Mostrarán el máximo compromiso personal de cordialidad, respeto y sinceridad hacia los demás componentes del Cuerpo, independientemente de su cargo, situación o destino."
+  ],
+  "correcta": 2,
+  "lila": "Art. 3 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Mostrarán el máximo compromiso personal de fidelidad, respeto y sinceridad hacia los demás componentes del Cuerpo, independientemente de su empleo, situación o destino. La lealtad será recíproca entre los superiores jerárquicos y sus subordinados.",
+  "exp": "Fidelidad, respeto y sinceridad, con independencia de empleo, situación o destino.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "142-1",
+  "pz": "e-3",
+  "sec": 24,
+  "id": "27-405"
+ },
+ {
+  "lote": "e4",
+  "i": 37,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Decálogo",
+    "k": 196
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cuál de las siguientes conductas contenidas en el decálogo hacen referencia al espíritu benemérito?:",
+  "opciones": [
+   "Ayudaré siempre a quienes lo necesiten, y en especial a las personas más vulnerables o desprotegidas.",
+   "Con orgullo de ser guardia civil, actuaré con lealtad y compañerismo y seré fiel a los valores, principios y tradiciones del Cuerpo.",
+   "Me comportaré siempre con la mayor dignidad, como exigen el Cuerpo al que pertenezco y el uniforme que visto.",
+   "Serviré con total dedicación y actuaré con valor, decisión, iniciativa y espíritu de sacrificio."
+  ],
+  "correcta": 0,
+  "lila": "Decálogo · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Ayudaré siempre a quienes lo necesiten, y en especial a las personas más vulnerables o desprotegidas.",
+  "exp": "Es el séptimo punto del decálogo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "196-1",
+  "pz": "e-fin",
+  "sec": 24,
+  "id": "27-406"
+ },
+ {
+  "lote": "e4",
+  "i": 38,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 5.2",
+    "k": 133
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En los procesos selectivos para el acceso a las escalas por promoción profesional, la inclusión del Código de Conducta se adecuará a:",
+  "opciones": [
+   "Las características específicas de cada una de ellas.",
+   "Los perfiles de egreso o las competencias específicas.",
+   "Los perfiles profesionales a alcanzar en el primer empleo correspondiente.",
+   "Lo establecido en la convocatoria correspondiente."
+  ],
+  "correcta": 2,
+  "lila": "Art. 5.2 · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. En los procesos selectivos para el acceso a las escalas por promoción profesional, la inclusión del Código de Conducta se adecuará a los perfiles profesionales a alcanzar en el primer empleo correspondiente.",
+  "exp": "A los perfiles del primer empleo correspondiente.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "133-2",
+  "pz": "d-5",
+  "sec": 24,
+  "id": "27-407"
+ },
+ {
+  "lote": "e4",
+  "i": 39,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 49.2 del Código de Conducta",
+    "k": 188
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué deberán potenciar en sus alumnos quienes ejerzan funciones docentes?:",
+  "opciones": [
+   "Los principios éticos y las normas de comportamiento, así como la iniciativa y la capacidad de decisión en la prestación del servicio.",
+   "La profunda responsabilidad de sus intervenciones, como máximos defensores y garantes de la Constitución, las leyes y el resto del ordenamiento jurídico.",
+   "El prestigio y la ejemplaridad en la prestación del servicio, así como la alta exigencia profesional y ética que deben tener en cuenta en todas sus intervenciones.",
+   "Los principios de objetividad, imparcialidad, eficacia y eficiencia respecto a los procedimientos y defensa de los derechos de las personas, y orientadas a garantizar el normal y continuo funcionamiento de las unidades del Cuerpo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 49.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Basarán su trabajo docente en el prestigio y la ejemplaridad, y además de las necesarias aptitudes pedagógicas, será imprescindible una sólida formación moral y una alta competencia profesional. Potenciarán en sus alumnos los principios éticos y las normas de comportamiento, así como la iniciativa y la capacidad de decisión en la prestación del servicio.",
+  "exp": "Principios éticos, normas de comportamiento, iniciativa y capacidad de decisión.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "188-2",
+  "pz": "e-49",
+  "sec": 24,
+  "id": "27-408"
+ },
+ {
+  "lote": "e4",
+  "i": 40,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 24.1 del Código de Conducta",
+    "k": 163
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cuándo deberán actuar los guardias civiles y en virtud de que norma general de comportamiento?:",
+  "opciones": [
+   "Deberán actuar en cualquier momento y lugar con iniciativa y decisión, conforme a las instrucciones y órdenes recibidas, los procedimientos establecidos y los principios de este Código de Conducta, todo ello conforme a la dedicación profesional.",
+   "Deberán actuar en cualquier momento y lugar con iniciativa y decisión, conforme a las instrucciones recibidas, los procedimientos establecidos y los principios de este Código de Conducta, todo ello conforme a la disponibilidad permanente.",
+   "Deberán actuar en todo momento y lugar con prudencia y decisión, conforme a las órdenes recibidas, los procedimientos establecidos y los principios de este Código de Conducta, todo ello conforme a la disponibilidad permanente.",
+   "Deberán actuar en todo momento y lugar con prudencia y decisión, conforme a las instrucciones y órdenes recibidas, los procedimientos establecidos y los principios de este Código de Conducta, todo ello conforme a la dedicación profesional."
+  ],
+  "correcta": 1,
+  "lila": "Art. 24.1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Tendrán un compromiso de disponibilidad permanente para el servicio, actuando en cualquier momento y lugar con iniciativa y decisión, conforme a las instrucciones recibidas, los procedimientos establecidos y los principios de este Código de Conducta.",
+  "exp": "Disponibilidad permanente, conforme a las instrucciones y los procedimientos.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "163-1",
+  "pz": "e-24",
+  "sec": 24,
+  "id": "27-409"
+ },
+ {
+  "lote": "e4",
+  "i": 41,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 35 del Código de Conducta",
+    "k": 174
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Desde su condición de policía judicial, auxiliarán a jueces y fiscales en:",
+  "opciones": [
+   "Las investigaciones que les sean encomendadas y en todo cuanto sea necesario, respetando su autonomía e imparcialidad.",
+   "Las investigaciones que les sean encomendadas y en todo cuanto sea necesario, respetando su independencia e imparcialidad.",
+   "Las intervenciones que les sean encomendadas y en todas las investigaciones que sean necesarias, respetando su independencia e imparcialidad.",
+   "Las intervenciones que les sean encomendadas y en todas las investigaciones que sean necesarias, respetando su autonomía e imparcialidad."
+  ],
+  "correcta": 1,
+  "lila": "Art. 35 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Desde su condición de policía judicial, auxiliarán a jueces y fiscales en las investigaciones que les sean encomendadas y en todo cuanto sea necesario, respetando su independencia e imparcialidad.",
+  "exp": "En las investigaciones encomendadas, respetando independencia e imparcialidad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "174-1",
+  "pz": "e-35",
+  "sec": 24,
+  "id": "27-410"
+ },
+ {
+  "lote": "e4",
+  "i": 42,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 2 del Código de Conducta",
+    "k": 141
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Valor. Según la integridad con la que deben actuar los guardias civiles, ¿a qué tipo de ofrecimientos, favores o regalos deberán oponerse?:",
+  "opciones": [
+   "A todos los que reciban como consecuencia o con motivo del ejercicio de sus funciones.",
+   "Aquellos que puedan ser considerados como una forma de corrupción.",
+   "A los que, directa o indirectamente, puedan comprometer su honestidad y su actuación profesional.",
+   "Sólo a aquellos que directamente puedan comprometer su imparcialidad."
+  ],
+  "correcta": 2,
+  "lila": "Art. 2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Actuarán siempre con rectitud y honradez. Por ello, se opondrán resueltamente a cualquier forma de corrupción y en ningún caso aceptarán ofrecimientos, favores o regalos que, directa o indirectamente, puedan comprometer su honestidad y su actuación profesional.",
+  "exp": "Directa o indirectamente.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "141-1",
+  "pz": "e-2",
+  "sec": 24,
+  "id": "27-411"
+ },
+ {
+  "lote": "e4",
+  "i": 43,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 26.2 del Código de Conducta",
+    "k": 165
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el principio de eficacia y eficiencia, velarán por el cuidado y la conservación de:",
+  "opciones": [
+   "Los medios puestos a su disposición para la consecución del interés general y los objetivos del Cuerpo y por la conservación de las instalaciones, por el equipamiento que tengan asignado.",
+   "Las instalaciones, por el equipamiento que tengan asignado y por el cumplimiento de las medidas de seguridad asociadas, procurando aprovechar de manera óptima los recursos humanos, materiales y financieros asignados.",
+   "Los medios puestos a su disposición para la consecución del interés general y los objetivos del Cuerpo y por el cumplimiento de las medidas de seguridad asociadas, procurando aprovechar de manera óptima los recursos humanos, materiales y financieros asignados.",
+   "Las instalaciones, el equipamiento que tengan asignado y los medios puestos a su disposición para la consecución del interés general y de los objetivos del Cuerpo."
+  ],
+  "correcta": 1,
+  "lila": "Art. 26.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Velarán por el cuidado y la conservación de las instalaciones, por el equipamiento que tengan asignado y por el cumplimiento de las medidas de seguridad asociadas, procurando aprovechar de manera óptima los recursos humanos, materiales y financieros asignados.",
+  "exp": "Instalaciones, equipamiento y medidas de seguridad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "165-2",
+  "pz": "e-26",
+  "sec": 41,
+  "id": "27-412"
+ },
+ {
+  "lote": "e4",
+  "i": 44,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 4 del Código de Conducta",
+    "k": 143
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Valor. Los guardias civiles actuarán con voluntad de acometer resuelta y racionalmente:",
+  "opciones": [
+   "Las contingencias y peligros inherentes al cumplimiento del deber, y en defensa de los demás, incluso a riesgo de sufrir cualquier tipo de daño.",
+   "Cualquier situación que se les presente, y en defensa tanto de los demás compañeros como de cualquier ciudadano, incluso a riesgo de poner en peligro su vida.",
+   "Las funciones que se le encomienden en ejercicio de su cargo, debiendo salvaguardar la vida de los demás antes que la suya propia.",
+   "Las contingencias y peligros que se le presente, debiendo salvaguardar la vida de los demás antes que la Suya propia."
+  ],
+  "correcta": 0,
+  "lila": "Art. 4 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Actuarán con voluntad de acometer resuelta y racionalmente las contingencias y peligros inherentes al cumplimiento del deber, y en defensa de los demás, incluso a riesgo de sufrir cualquier tipo de daño.",
+  "exp": "Contingencias y peligros inherentes al deber, incluso a riesgo de daño.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "143-1",
+  "pz": "e-4",
+  "sec": 24,
+  "id": "27-413"
+ },
+ {
+  "lote": "e4",
+  "i": 45,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Disposición final primera",
+    "k": 137
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cuál es el título competencial por el que se dicta este real decreto?:",
+  "opciones": [
+   "El artículo 149 y 29 de la Constitución, que atribuyen al Estado la legislación básica en materia de defensa y Fuerzas Armadas y de seguridad pública, respectivamente.",
+   "El artículo 149 y 29 de la Constitución, que atribuyen al Estado la competencia exclusiva en materia de defensa y Fuerzas Armadas y de seguridad pública, respectivamente.",
+   "El artículo 150 y 29 de la Constitución, que atribuyen al Estado la legislación básica en materia de defensa y Fuerzas Armadas y de seguridad pública, respectivamente.",
+   "El artículo 150 y 29 de la Constitución, que atribuyen al Estado la competencia exclusiva en materia de defensa y Fuerzas Armadas y de seguridad pública, respectivamente."
+  ],
+  "correcta": 1,
+  "lila": "Disposición final primera · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Este real decreto se dicta al amparo de lo dispuesto en el artículo 149.1.4.ª y 29.ª de la Constitución, que atribuyen al Estado la competencia exclusiva en materia de defensa y Fuerzas Armadas y de seguridad pública, respectivamente.",
+  "exp": "Competencia exclusiva del Estado en defensa y seguridad pública.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "137-1",
+  "pz": "d-6",
+  "sec": 24,
+  "id": "27-414"
+ },
+ {
+  "lote": "e4",
+  "i": 46,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 26.1 del Código de Conducta",
+    "k": 165
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Normas generales de comportamiento. En la gestión y empleo de los medios puestos a su disposición, para la consecución del interés general y de los objetivos del Cuerpo, actuarán siempre de acuerdo con una serie de principios. Señale el principio CORRECTO:",
+  "opciones": [
+   "Transparencia.",
+   "Discrecionalidad.",
+   "Prudencia.",
+   "Publicidad."
+  ],
+  "correcta": 2,
+  "lila": "Art. 26.1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Actuarán siempre de acuerdo con los principios de efectividad, eficacia, eficiencia, racionalidad y prudencia en la gestión y empleo de los medios puestos a su disposición para la consecución del interés general y de los objetivos del Cuerpo.",
+  "exp": "Los principios son efectividad, eficacia, eficiencia, racionalidad y prudencia.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "165-1",
+  "pz": "e-26",
+  "sec": 41,
+  "id": "27-415"
+ },
+ {
+  "lote": "e4",
+  "i": 47,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 14 del Código de Conducta",
+    "k": 153
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el principio de jerarquía, ¿qué es lo que define el orden jerárquico establecido en la Guardia Civil?:",
+  "opciones": [
+   "El acatamiento de la Constitución y manifestación individual en el cumplimiento de las órdenes recibidas.",
+   "Una disposición permanente para la defensa de la Constitución Española como norma fundamental del Estado y una actuación con lealtad al Rey y con absoluto respeto al resto del ordenamiento jurídico.",
+   "La situación relativa entre sus componentes en todo lo concerniente a mando, subordinación y responsabilidad.",
+   "Que una norma de rango inferior no puede contradecir ni vulnerar lo que establezca una de rango superior."
+  ],
+  "correcta": 2,
+  "lila": "Art. 14 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Desempeñarán sus cometidos con estricto respeto al orden jerárquico establecido en la Guardia Civil, que define la situación relativa entre sus componentes en todo lo concerniente a mando, subordinación y responsabilidad.",
+  "exp": "La situación relativa en mando, subordinación y responsabilidad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "153-1",
+  "pz": "e-14",
+  "sec": 24,
+  "id": "27-416"
+ },
+ {
+  "lote": "e4",
+  "i": 48,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 43.1 del Código de Conducta",
+    "k": 182
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cómo deberá ser el empleo de la fuerza, en caso de que se emplee?:",
+  "opciones": [
+   "Se hará de forma gradual, de acuerdo con la prudencia y la firmeza necesarias para alcanzar el fin legítimo perseguido.",
+   "Todas las opciones son correctas.",
+   "Deberá ser conforme a los principios de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance.",
+   "Restringido a aquellos Supuestos en los que no exista un modo menos lesivo de proteger el libre ejercicio de los derechos y libertades o de garantizar la seguridad ciudadana."
+  ],
+  "correcta": 1,
+  "lila": "Art. 43.1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. La persuasión y la fuerza moral serán sus primeras armas, restringiendo el recurso a la fuerza a aquellos supuestos en los que no exista un modo menos lesivo de proteger el libre ejercicio de los derechos y libertades o de garantizar la seguridad ciudadana. En esos casos, su empleo se hará de forma gradual, de acuerdo con la prudencia y la firmeza necesarias para alcanzar el fin legítimo perseguido y conforme a los principios de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance.",
+  "exp": "Las tres condiciones figuran en el artículo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "182-1",
+  "pz": "e-43",
+  "sec": 24,
+  "id": "27-417"
+ },
+ {
+  "lote": "e4",
+  "i": 49,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 1 del Código de Conducta",
+    "k": 140
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el Código, ¿qué ha de ser el honor para los guardias civiles?:",
+  "opciones": [
+   "Una guía para cumplir con exactitud sus deberes y obligaciones.",
+   "Todas las opciones son correctas.",
+   "Una verdadera seña de identidad.",
+   "La principal divisa de los hombres y mujeres de la Guardia Civil."
+  ],
+  "correcta": 1,
+  "lila": "Art. 1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "El honor ha de ser la principal divisa de los hombres y mujeres de la Guardia Civil, verdadera seña de identidad y guía para cumplir con exactitud sus deberes y obligaciones.",
+  "exp": "Las tres son literales.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "140-2",
+  "pz": "e-1",
+  "sec": 24,
+  "id": "27-418"
+ },
+ {
+  "lote": "e4",
+  "i": 50,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 19 del Código de Conducta",
+    "k": 158
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el principio de cooperación recogido en esta norma, ¿con quién deberán cooperar los miembros de la Guardia Civil?:",
+  "opciones": [
+   "Con otras personas, organismos e instituciones públicas y entidades sociales sobre la base del principio de lealtad institucional.",
+   "Con otras personas, organismos e instituciones públicas y entidades sociales sobre la base del principio de eficacia y eficiencia.",
+   "Con otras personas, organismos, instituciones y entidades públicas o sociales sobre la base del principio de eficacia y eficiencia.",
+   "Con otras personas, organismos, instituciones y entidades sociales sobre la base del principio de lealtad institucional."
+  ],
+  "correcta": 3,
+  "lila": "Art. 19 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Los miembros de la Guardia Civil buscarán el bien común y la satisfacción de los intereses generales, por lo que deberán cooperar con otras personas, organismos, instituciones y entidades sociales sobre la base del principio de lealtad institucional.",
+  "exp": "Personas, organismos, instituciones y entidades sociales, con lealtad institucional.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "158-1",
+  "pz": "e-19",
+  "sec": 24,
+  "id": "27-419"
+ },
+ {
+  "lote": "e4",
+  "i": 51,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 15 del Código de Conducta",
+    "k": 154
+   },
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Decálogo",
+    "k": 198
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En referencia a la regulación que hace el código en relación con la disciplina, señale la opción INCORRECTA:",
+  "opciones": [
+   "Tiene su manifestación individual en el cumplimiento de las órdenes recibidas.",
+   "La disciplina no aparece como un valor o principio específico dentro del Decálogo que figura como anexo a este código.",
+   "Es un factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado.",
+   "Tiene su expresión colectiva en el acatamiento de la Constitución."
+  ],
+  "correcta": 1,
+  "lila": "Art. 15 del Código de Conducta y Decálogo · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Art. 15 del Código de Conducta. La disciplina, factor de cohesión que obliga a mandar con responsabilidad y a obedecer lo mandado, será practicada y exigida como norma de actuación. Tiene su expresión colectiva en el acatamiento de la Constitución y su manifestación individual en el cumplimiento de las órdenes recibidas.<br>Decálogo. Disciplina. Cumpliré mis obligaciones y obedeceré las órdenes con disciplina, lealtad y responsabilidad.",
+  "exp": "La disciplina es el noveno punto del decálogo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "154-1",
+  "pz": "e-15",
+  "sec": 24,
+  "id": "27-420"
+ },
+ {
+  "lote": "e4",
+  "i": 52,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 1 del Código de Conducta",
+    "k": 140
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué dice esta norma sobre el valor fundamental del honor?:",
+  "opciones": [
+   "El honor ha de ser el principal lema de los hombres y mujeres de la Guardia Civil, verdadera seña de identidad y guía para cumplir con exactitud y fidelidad sus deberes y obligaciones.",
+   "El honor ha de ser la principal divisa de los hombres y mujeres de la Guardia Civil, verdadera seña de identidad y guía para cumplir con exactitud y fidelidad sus deberes y obligaciones.",
+   "El honor ha de ser el principal lema de los hombres y mujeres de la Guardia Civil, verdadera seña de identidad y guía para cumplir con exactitud sus deberes y obligaciones.",
+   "El honor ha de ser la principal divisa de los hombres y mujeres de la Guardia Civil, verdadera seña de identidad y guía para cumplir con exactitud sus deberes y obligaciones."
+  ],
+  "correcta": 3,
+  "lila": "Art. 1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "El honor ha de ser la principal divisa de los hombres y mujeres de la Guardia Civil, verdadera seña de identidad y guía para cumplir con exactitud sus deberes y obligaciones.",
+  "exp": "Principal divisa, seña de identidad y guía para cumplir con exactitud.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "140-2",
+  "pz": "e-1",
+  "sec": 24,
+  "id": "27-421"
+ },
+ {
+  "lote": "e4",
+  "i": 53,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 14 del Código de Conducta",
+    "k": 153
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cómo actuarán los miembros de la Guardia Civil, en virtud del principio institucional de la jerarquía?:",
+  "opciones": [
+   "Desempeñarán sus cometidos con estricto respeto a la Constitución, las Leyes y al orden jerárquico establecido en la Guardia Civil, que define la situación relativa dentro de la organización en todo lo concerniente a mando, subordinación y responsabilidad.",
+   "Desempeñarán sus cometidos con estricto respeto al orden jerárquico establecido en la Guardia Civil, que define la situación relativa entre sus componentes en todo lo concerniente a mando, subordinación y responsabilidad.",
+   "Desempeñarán sus cometidos con estricto respeto a la Constitución, las Leyes y al orden jerárquico establecido en la Guardia Civil, que define la situación relativa entre sus componentes en todo lo concerniente a mando, subordinación y responsabilidad.",
+   "Desempeñarán sus cometidos con estricto respeto al orden jerárquico establecido en la Guardia Civil, que define la situación relativa dentro de la organización en todo lo concerniente a mando, subordinación y responsabilidad."
+  ],
+  "correcta": 1,
+  "lila": "Art. 14 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Desempeñarán sus cometidos con estricto respeto al orden jerárquico establecido en la Guardia Civil, que define la situación relativa entre sus componentes en todo lo concerniente a mando, subordinación y responsabilidad.",
+  "exp": "Estricto respeto al orden jerárquico entre sus componentes.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "153-1",
+  "pz": "e-14",
+  "sec": 24,
+  "id": "27-422"
+ },
+ {
+  "lote": "e4",
+  "i": 54,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 31 del Código de Conducta",
+    "k": 170
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el código, ¿deben utilizar el saludo militar en sus relaciones con la ciudadanía?:",
+  "opciones": [
+   "Sí.",
+   "No. Sólo deben emplearlo con otros miembros del Cuerpo o con autoridades civiles, miembros de otras fuerzas y cuerpos de seguridad.",
+   "Sólo cuando se encuentren en un acto oficial.",
+   "No. Sólo deben emplearlo con otros miembros del Cuerpo, con autoridades civiles, miembros de otras fuerzas y cuerpos de seguridad e instituciones militares nacionales y extranjeras."
+  ],
+  "correcta": 0,
+  "lila": "Art. 31 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Utilizarán el saludo militar como expresión de cortesía mutua, disciplina y unión entre los miembros del Cuerpo y como muestra de respeto con autoridades civiles, miembros de otras fuerzas y cuerpos de seguridad e instituciones militares nacionales y extranjeras, así como en las relaciones con la ciudadanía.",
+  "exp": "El saludo se usa también en las relaciones con la ciudadanía.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "170-1",
+  "pz": "e-31",
+  "sec": 24,
+  "id": "27-423"
+ },
+ {
+  "lote": "e4",
+  "i": 55,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 20 del Código de Conducta",
+    "k": 159
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Prestigio. Velarán por mantener y acrecentar el prestigio del Cuerpo, actuando de forma ejemplar y modélica con el fin de:",
+  "opciones": [
+   "Ganarse la confianza de las instituciones y de las personas y colectivos más vulnerables.",
+   "Satisfacer los intereses generales y mantener la buena imagen de la institución.",
+   "Satisfacer los intereses generales y prestar su servicio con la mayor eficacia y eficiencia.",
+   "Ganarse la confianza de la ciudadanía y de las instituciones."
+  ],
+  "correcta": 3,
+  "lila": "Art. 20 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Velarán por mantener y acrecentar el prestigio del Cuerpo, actuando de forma ejemplar y modélica con el fin de ganarse la confianza de la ciudadanía y de las instituciones.",
+  "exp": "Para ganarse la confianza de la ciudadanía y de las instituciones.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "159-1",
+  "pz": "e-20",
+  "sec": 24,
+  "id": "27-424"
+ },
+ {
+  "lote": "e4",
+  "i": 56,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 27.3 del Código de Conducta",
+    "k": 166
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En el uso privado de las tecnologías de la información y las comunicaciones:",
+  "opciones": [
+   "Deberán evitar poner en riesgo el desarrollo de la labor policial, a cualquier ciudadano o, en última instancia, a la seguridad y defensa del Estado.",
+   "Todas las opciones son correctas.",
+   "Deberán guardar el debido sigilo o discreción.",
+   "Serán prudentes en la difusión de cualquier contenido que pueda inducir a error sobre su oficialidad."
+  ],
+  "correcta": 3,
+  "lila": "Art. 27.3 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "3. En el uso privado de las tecnologías de la información y las comunicaciones, serán prudentes en la difusión de cualquier contenido que pueda inducir a error sobre su oficialidad.",
+  "exp": "Prudencia en lo que pueda inducir a error sobre su oficialidad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "166-3",
+  "pz": "e-27",
+  "sec": 24,
+  "id": "27-425"
+ },
+ {
+  "lote": "e4",
+  "i": 57,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 7 del Código de Conducta",
+    "k": 146
+   },
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 8 del Código de Conducta",
+    "k": 147
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Señala la opción INCORRECTA. Según el valor de la dignidad recogido en el código:",
+  "opciones": [
+   "Asumirán en todo momento las consecuencias de sus acciones u omisiones.",
+   "Prestarán su servicio con el mayor sentido de la trascendencia de su función.",
+   "Su comportamiento se desarrollará con responsabilidad, seriedad y respeto hacia sí mismos y hacia los demás.",
+   "Velarán por el buen nombre de la Institución y por el impacto de su profesión en la dignidad de las personas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 7 del Código de Conducta y Art. 8 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Art. 7 del Código de Conducta. Serán responsables, personal y directamente, de las actuaciones que lleven a cabo en el ejercicio de sus funciones, que ejecutarán teniendo en cuenta los preceptos de este Código de Conducta y asumiendo en todo momento las consecuencias de sus acciones u omisiones.<br>Art. 8 del Código de Conducta. 1. Prestarán su servicio con el mayor sentido de la trascendencia de su función y velarán por el buen nombre de la Institución y por el impacto de su profesión en la dignidad de las personas. 2. Su comportamiento se desarrollará con responsabilidad, seriedad y respeto hacia sí mismos y hacia los demás.",
+  "exp": "Asumir las consecuencias pertenece a la responsabilidad, no a la dignidad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "146-1",
+  "pz": "e-7",
+  "sec": 24,
+  "id": "27-426"
+ },
+ {
+  "lote": "e4",
+  "i": 58,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 3",
+    "k": 131
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿A qué alumnado será de aplicación el Código de Conducta?:",
+  "opciones": [
+   "A todo el alumnado que esté preparando el acceso a la Guardia Civil, en cualquiera de sus escalas.",
+   "Al de los centros docentes de formación para la incorporación por acceso directo a la Escala de Oficiales y a la Escala de Cabos y Guardias de la Guardia Civil.",
+   "Al de los centros docentes de formación para la incorporación por acceso directo a la Escala de Oficiales, suboficiales, Cabos y Guardias de la Guardia Civil.",
+   "A todo el alumnado que esté preparando el acceso a la Guardia Civil, en las escalas de Oficiales, Cabos o Guardias."
+  ],
+  "correcta": 1,
+  "lila": "Art. 3 · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "b) El alumnado de los centros docentes de formación para la incorporación por acceso directo a la Escala de Oficiales y a la Escala de Cabos y Guardias de la Guardia Civil.",
+  "exp": "Alumnado de acceso directo a la Escala de Oficiales y a la de Cabos y Guardias.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "131-3",
+  "pz": "d-3",
+  "sec": 24,
+  "id": "27-427"
+ },
+ {
+  "lote": "e4",
+  "i": 59,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 39 del Código de Conducta",
+    "k": 178
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cuándo se identificarán los guardias civiles?:",
+  "opciones": [
+   "Deberán identificarse cuando se encuentren desempeñando sus funciones y así lo requieran las autoridades y la ciudadanía, pudiendo obviarse cuando la propia naturaleza de las misiones encomendadas, o la concurrencia de determinados factores, pongan en peligro la misión.",
+   "Cuando se encuentren desempeñando sus funciones o así lo requieran las autoridades y/o la ciudadanía, salvo que la propia naturaleza de las misiones encomendadas, o la concurrencia de determinados factores, pongan en peligro la misión.",
+   "En ningún caso se identificarán cuando la propia naturaleza de las misiones encomendadas, o la concurrencia de determinados factores, pongan en peligro la misión o la seguridad propia del personal de la Guardia Civil o de terceras personas.",
+   "En todo caso, salvo que la propia naturaleza de las misiones encomendadas, o la concurrencia de determinados factores, pongan en peligro la misión o la seguridad propia del personal de la Guardia Civil o de terceras personas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 39 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Tendrán la obligación de identificarse cuando se encuentren desempeñando sus funciones y así lo requieran las autoridades y la ciudadanía. 2. La obligación de identificarse únicamente podrá obviarse cuando la propia naturaleza de las misiones encomendadas, o la concurrencia de determinados factores, pongan en peligro la misión o la seguridad propia del personal de la Guardia Civil o de terceras personas.",
+  "exp": "Se identifican en funciones y a requerimiento; la excepción es el peligro. Las demás cambian «y» por «o» o la formulan como prohibición o regla absoluta.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "178-1",
+  "pz": "e-39",
+  "sec": 24,
+  "id": "27-428"
+ },
+ {
+  "lote": "e4",
+  "i": 60,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 38 del Código de Conducta",
+    "k": 177
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cómo colaborarán los miembros de la Guardia Civil, según la norma relativa a la transparencia, comunicación e información pública?:",
+  "opciones": [
+   "Colaborarán para que desde la Institución se pueda ofrecer una información coherente, veraz y completa de la actividad profesional desempeñada, observando siempre el deber de transparencia, como parte del servicio a la ciudadanía.",
+   "Colaborarán para que desde la Institución se pueda ofrecer una información coherente, veraz y completa de la actividad profesional desempeñada, así como de los logros obtenidos, observando siempre el deber de transparencia, como parte del servicio a los intereses generales.",
+   "Colaborarán para que desde la Institución se pueda ofrecer una información coherente, veraz y completa de la actividad profesional desempeñada, así como de los logros obtenidos, observando siempre el deber de reserva, Como parte del servicio a los intereses generales.",
+   "Colaborarán para que desde la Institución se pueda ofrecer una información coherente, veraz y completa de la actividad profesional desempeñada, observando Siempre el deber de reserva, como parte del servicio a la ciudadanía."
+  ],
+  "correcta": 3,
+  "lila": "Art. 38 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Como parte de su servicio a la ciudadanía, colaborarán para que desde la Institución se pueda ofrecer una información coherente, veraz y completa de la actividad profesional desempeñada, observando siempre el deber de reserva.",
+  "exp": "Actividad profesional desempeñada, con deber de reserva.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "177-1",
+  "pz": "e-38",
+  "sec": 24,
+  "id": "27-429"
+ },
+ {
+  "lote": "e4",
+  "i": 61,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 35 del Código de Conducta",
+    "k": 174
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Auxilio y colaboración con la Administración de Justicia. ¿A quién establece el Código que deberán auxiliar, desde su condición de policía judicial?:",
+  "opciones": [
+   "A jueces, fiscales e investigadores, en todas aquellas tareas que les sean encomendadas y en todo cuanto sea necesario, respetando su independencia e imparcialidad.",
+   "A jueces y fiscales en las investigaciones que les sean encomendadas y en todo cuanto sea necesario, respetando su independencia e imparcialidad.",
+   "A jueces, fiscales e investigadores, en todas aquellas tareas que les sean encomendadas y en todo cuanto sea necesario, siempre y cuando tengan autorización de sus mandos superiores y se respete su independencia e imparcialidad.",
+   "A jueces y fiscales en las investigaciones que les sean encomendadas y en todo cuanto sea necesario, siempre y cuando tengan autorización de sus mandos superiores y se respete su independencia e imparcialidad."
+  ],
+  "correcta": 1,
+  "lila": "Art. 35 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Desde su condición de policía judicial, auxiliarán a jueces y fiscales en las investigaciones que les sean encomendadas y en todo cuanto sea necesario, respetando su independencia e imparcialidad.",
+  "exp": "A jueces y fiscales en las investigaciones encomendadas.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "174-1",
+  "pz": "e-35",
+  "sec": 24,
+  "id": "27-430"
+ },
+ {
+  "lote": "e4",
+  "i": 62,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 10.1 del Código de Conducta",
+    "k": 149
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué dice exactamente el principio institucional en relación a la defensa de la Constitución?:",
+  "opciones": [
+   "Mostrarán una disposición permanente para la defensa de la Constitución Española como norma fundamental del Estado y llevarán a cabo su actividad profesional con lealtad al Rey y con absoluto respeto al resto del ordenamiento jurídico, cumpliendo y haciendo cumplir la ley.",
+   "Mostrarán una disposición permanente para llevar a cabo su actividad profesional con lealtad al Rey y haciendo cumplir la ley, con absoluto respeto a la Constitución Española como norma fundamental del Estado y al resto del ordenamiento jurídico.",
+   "Mostrarán una disposición permanente para la defensa del Rey y llevarán a cabo su actividad profesional con lealtad hacia la Constitución Española como norma fundamental del Estado y con absoluto respeto al resto del ordenamiento jurídico, cumpliendo y haciendo cumplir la ley.",
+   "Mostrarán una disposición permanente para la defensa de la Constitución Española como norma fundamental del Estado y del resto del ordenamiento jurídico, haciendo cumplir la ley y actuando con lealtad al Rey."
+  ],
+  "correcta": 0,
+  "lila": "Art. 10.1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Mostrarán una disposición permanente para la defensa de la Constitución Española como norma fundamental del Estado y llevarán a cabo su actividad profesional con lealtad al Rey y con absoluto respeto al resto del ordenamiento jurídico, cumpliendo y haciendo cumplir la ley.",
+  "exp": "Es literal.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "149-1",
+  "pz": "e-10",
+  "sec": 24,
+  "id": "27-431"
+ },
+ {
+  "lote": "e4",
+  "i": 63,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 21 del Código de Conducta",
+    "k": 160
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según el espíritu benemérito, ¿a quién prestarán auxilio con los medios a su alcance?:",
+  "opciones": [
+   "A todo aquel que lo solicite, cuando se encuentren de servicio, con especial atención a las personas y colectivos más vulnerables.",
+   "A todo aquel que lo solicite, se encuentren o no de servicio, con especial atención a los discapacitados y colectivos más vulnerables.",
+   "A todo aquel que lo necesite, cuando se encuentren de servicio, con especial atención a los discapacitados y colectivos más vulnerables.",
+   "A todo aquel que lo necesite, se encuentren o no de servicio, con especial atención a las personas y colectivos más vulnerables."
+  ],
+  "correcta": 3,
+  "lila": "Art. 21 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Prestarán auxilio con los medios a su alcance a todo aquel que lo necesite, se encuentren o no de servicio, con especial atención a las personas y colectivos más vulnerables.",
+  "exp": "A todo el que lo necesite, de servicio o no.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "160-1",
+  "pz": "e-21",
+  "sec": 24,
+  "id": "27-432"
+ },
+ {
+  "lote": "e4",
+  "i": 64,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 38 del Código de Conducta",
+    "k": 177
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Cómo rubrica la norma de conducta según la cual los guardias civiles colaborarán para que desde la Institución se pueda ofrecer una información coherente, veraz y completa de la actividad profesional desempeñada?:",
+  "opciones": [
+   "Comunicación, transparencia y conocimiento.",
+   "Transparencia, comunicación e información pública.",
+   "Conocimiento, información pública y transparencia.",
+   "Comunicación, información pública y conocimiento."
+  ],
+  "correcta": 1,
+  "lila": "Art. 38 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Transparencia, comunicación e información pública. Como parte de su servicio a la ciudadanía, colaborarán para que desde la Institución se pueda ofrecer una información coherente, veraz y completa de la actividad profesional desempeñada, observando siempre el deber de reserva.",
+  "exp": "Transparencia, comunicación e información pública.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "177-0",
+  "pz": "e-38",
+  "sec": 24,
+  "id": "27-433"
+ },
+ {
+  "lote": "e4",
+  "i": 65,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 11.2 del Código de Conducta",
+    "k": 150
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Los guardias civiles deberán tener siempre presente en sus actuaciones el máximo respeto a:",
+  "opciones": [
+   "La vida, a la dignidad y a la integridad física y moral de las personas.",
+   "La igualdad y la no discriminación por ninguna causa.",
+   "La vida, a la dignidad y a la igualdad y la no discriminación por ninguna causa.",
+   "Los derechos fundamentales y las libertades públicas de la ciudadanía."
+  ],
+  "correcta": 0,
+  "lila": "Art. 11.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Deberán tener siempre presente en sus actuaciones el máximo respeto a la vida, a la dignidad y a la integridad física y moral de las personas.",
+  "exp": "Vida, dignidad e integridad física y moral.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "150-2",
+  "pz": "e-11",
+  "sec": 24,
+  "id": "27-434"
+ },
+ {
+  "lote": "e4",
+  "i": 66,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 8.1 del Código de Conducta",
+    "k": 147
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según la dignidad con la que deben actuar, los guardias civiles prestarán su servicio con el mayor sentido de la trascendencia de su función y velarán por:",
+  "opciones": [
+   "El respeto hacia sí mismos y hacia los demás y por el impacto de su profesión en la dignidad de las personas.",
+   "El respeto hacia sí mismos y hacia los demás, anteponiendo el bien común al suyo propio.",
+   "El buen nombre de la Institución y por el impacto de su profesión en la dignidad de las personas.",
+   "El buen nombre de la Institución, anteponiendo el bien común al Suyo propio."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8.1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Prestarán su servicio con el mayor sentido de la trascendencia de su función y velarán por el buen nombre de la Institución y por el impacto de su profesión en la dignidad de las personas.",
+  "exp": "Buen nombre de la Institución e impacto en la dignidad.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "147-1",
+  "pz": "e-8",
+  "sec": 24,
+  "id": "27-435"
+ },
+ {
+  "lote": "e4",
+  "i": 67,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 11.1 del Código de Conducta",
+    "k": 150
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En virtud del principio de respeto de los derechos fundamentales y libertades públicas, garantizarán:",
+  "opciones": [
+   "Los derechos fundamentales y las libertades públicas, protegiendo su libre ejercicio, y harán respetar en todo momento la seguridad ciudadana.",
+   "Los derechos fundamentales y las libertades públicas y harán respetar en todo momento la seguridad ciudadana, protegiendo la libre circulación.",
+   "La seguridad ciudadana, respetando y haciendo respetar la libre circulación y protegiendo los derechos fundamentales y libertades públicas.",
+   "La seguridad ciudadana, respetarán y harán respetar en todo momento los derechos fundamentales y las libertades públicas y protegerán su libre ejercicio."
+  ],
+  "correcta": 3,
+  "lila": "Art. 11.1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Garantizarán la seguridad ciudadana, respetarán y harán respetar en todo momento los derechos fundamentales y las libertades públicas y protegerán su libre ejercicio.",
+  "exp": "Garantizan la seguridad ciudadana y respetan los derechos y libertades.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "150-1",
+  "pz": "e-11",
+  "sec": 24,
+  "id": "27-436"
+ },
+ {
+  "lote": "e4",
+  "i": 68,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 47 del Código de Conducta",
+    "k": 186
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Comportamiento en misiones de carácter militar. Cuando dependan de la persona titular del ministerio de Defensa o estén integrados en unidades militares, conscientes de la repercusión y trascendencia que tiene su labor:",
+  "opciones": [
+   "Actuarán conforme a las reglas de comportamiento establecidas en la Ley Orgánica de derechos y deberes de los miembros de las Fuerzas Armadas y demás ordenanzas para dichos miembros, siendo de aplicación supletoria lo contenido en el Código de Conducta.",
+   "Actuarán conforme a los preceptos contenidos en el Código de Conducta y, supletoriamente, conforme a las reglas de comportamiento establecidas en la Ley Orgánica de derechos y deberes de los miembros de las Fuerzas Armadas y demás ordenanzas.",
+   "Además de las ordenanzas para las Fuerzas Armadas, actuará conforme a las reglas de comportamiento establecidas en la Ley Orgánica de derechos y deberes de los miembros de la Fuerzas Armadas, todo ello sin perjuicio de continuar observando ejemplarmente los preceptos contenidos en el Código de Conducta.",
+   "Además de las ordenanzas para las Fuerzas Armadas, actuarán conforme a los preceptos establecidos en la Ley Orgánica de derechos y deberes de los miembros de las Fuerzas Armadas, siendo de aplicación subsidiaria los preceptos contenidos en el Código de Conducta."
+  ],
+  "correcta": 2,
+  "lila": "Art. 47 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Cuando dependan de la persona titular del ministerio de Defensa o estén integrados en unidades militares, conscientes de la repercusión y trascendencia que tiene su labor, además de las ordenanzas para las Fuerzas Armadas, actuará conforme a las reglas de comportamiento establecidas en el artículo 6 de la Ley Orgánica 9/2011, de 27 de julio, de derechos y deberes de los miembros de la Fuerzas Armadas, todo ello sin perjuicio de continuar observando ejemplarmente los preceptos contenidos en el Código de Conducta.",
+  "exp": "Ordenanzas y reglas de la Ley Orgánica 9/2011, sin perjuicio del Código.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "186-1",
+  "pz": "e-47",
+  "sec": 24,
+  "id": "27-437"
+ },
+ {
+  "lote": "e4",
+  "i": 69,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 43 del Código de Conducta",
+    "k": 182
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué establece el Código en relación con el empleo de la fuerza?:",
+  "opciones": [
+   "Solamente podrán utilizar las armas de fuego en las situaciones en que exista un riesgo racionalmente grave para su vida, su integridad física o la de terceras personas, o en aquellas circunstancias que puedan suponer un grave riesgo para la seguridad ciudadana o el interés público.",
+   "Todas las opciones son correctas.",
+   "La persuasión y la fuerza moral serán sus primeras armas, restringiendo el recurso a la fuerza a aquellos supuestos en los que no exista otro modo de proteger el libre ejercicio de los derechos y libertades o de garantizar la seguridad ciudadana.",
+   "En caso de que se deba utilizar, su empleo se hará de forma gradual, de acuerdo con la prudencia y la firmeza necesarias para alcanzar el fin legítimo perseguido y conforme a los principios de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance."
+  ],
+  "correcta": 3,
+  "lila": "Art. 43 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. La persuasión y la fuerza moral serán sus primeras armas, restringiendo el recurso a la fuerza a aquellos supuestos en los que no exista un modo menos lesivo de proteger el libre ejercicio de los derechos y libertades o de garantizar la seguridad ciudadana. En esos casos, su empleo se hará de forma gradual, de acuerdo con la prudencia y la firmeza necesarias para alcanzar el fin legítimo perseguido y conforme a los principios de congruencia, oportunidad y proporcionalidad en la utilización de los medios a su alcance. 2. Solamente podrán utilizar las armas de fuego en las situaciones en que exista un riesgo racionalmente grave para su vida, su integridad física o la de terceras personas, o en aquellas circunstancias que puedan suponer un grave riesgo para la seguridad ciudadana y de conformidad con los principios a que se refiere el apartado anterior.",
+  "exp": "El uso es gradual. Las demás añaden «el interés público» o exigen que no exista otro modo, en lugar de uno menos lesivo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "182-1",
+  "pz": "e-43",
+  "sec": 24,
+  "id": "27-438"
+ },
+ {
+  "lote": "e4",
+  "i": 70,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 31 del Código de Conducta",
+    "k": 170
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Señala la opción INCORRECTA. El saludo militar se utilizará como muestra de respeto:",
+  "opciones": [
+   "En las relaciones con la Policía Nacional y Policías Internacionales.",
+   "Con autoridades civiles y miembros de otras fuerzas y cuerpos de seguridad.",
+   "En las relaciones con la ciudadanía.",
+   "Con instituciones militares nacionales y extranjeras."
+  ],
+  "correcta": 0,
+  "lila": "Art. 31 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Utilizarán el saludo militar como expresión de cortesía mutua, disciplina y unión entre los miembros del Cuerpo y como muestra de respeto con autoridades civiles, miembros de otras fuerzas y cuerpos de seguridad e instituciones militares nacionales y extranjeras, así como en las relaciones con la ciudadanía.",
+  "exp": "No se citan la Policía Nacional ni las policías internacionales.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "170-1",
+  "pz": "e-31",
+  "sec": 24,
+  "id": "27-439"
+ },
+ {
+  "lote": "e4",
+  "i": 71,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 46 del Código de Conducta",
+    "k": 185
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En relación a la conciencia informativa y las investigaciones, señale la opción INCORRECTA:",
+  "opciones": [
+   "Las investigaciones serán rigurosas, exhaustivas e imparciales y estarán sujetas al principio de igualdad e interdicción de la arbitrariedad.",
+   "Transmitirán a sus mandos o a la autoridad que corresponda las noticias e informaciones que puedan ser útiles para el mantenimiento de la seguridad ciudadana y la protección del libre el ejercicio de los derechos y libertades.",
+   "Transmitirán a sus mandos o a la autoridad que corresponda, las noticias e informaciones que puedan Ser útiles para el esclarecimiento de infracciones penales.",
+   "Al llevar a cabo actuaciones en el seno de una investigación, deberán evitar la injerencia arbitraria en la vida privada de las personas, velando por la reputación de las mismas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 46 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. Transmitirán a sus mandos o a la autoridad que corresponda, las noticias e informaciones que puedan ser útiles para el esclarecimiento de infracciones penales, el mantenimiento de la seguridad ciudadana y la protección del libre el ejercicio de los derechos y libertades. 2. Las investigaciones serán rigurosas, exhaustivas e imparciales y estarán sujetas al principio de legalidad y al control judicial. Al llevar a cabo actuaciones en el seno de una investigación, deberán evitar la injerencia arbitraria en la vida privada de las personas, velando por la reputación de las mismas.",
+  "exp": "Las investigaciones están sujetas a legalidad y control judicial.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "185-1",
+  "pz": "e-46",
+  "sec": 24,
+  "id": "27-440"
+ },
+ {
+  "lote": "e4",
+  "i": 72,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 27.1 del Código de Conducta",
+    "k": 166
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿A qué tipo de asuntos, actos, documentos, etc., hace referencia el deber de secreto al que está sujeta la actuación de los hombres y mujeres de la Guardia Civil?:",
+  "opciones": [
+   "Aquellos Cuyo conocimiento por personas no autorizadas pueda dañar o poner en riesgo el desarrollo de la labor policial.",
+   "Aquellos cuyo conocimiento por personas no autorizadas pueda dañar o poner en riesgo a la seguridad y defensa del Estado.",
+   "Todas las opciones son correctas.",
+   "Aquellos cuyo conocimiento por personas no autorizadas pueda dañar o poner en riesgo a cualquier ciudadano."
+  ],
+  "correcta": 2,
+  "lila": "Art. 27.1 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "1. La actuación de los hombres y mujeres de la Guardia Civil estará sujeta al cumplimiento de los deberes de reserva y secreto. Al deber de reserva, entendido como el sigilo o discreción sobre todo lo que el personal pueda conocer con ocasión, o por razón, del desempeño de sus funciones, deberá sumar el deber de secreto sobre todos los asuntos, actos, documentos, informaciones, datos, objetos y materias cuyo conocimiento por personas no autorizadas pueda dañar o poner en riesgo el desarrollo de la labor policial, a cualquier ciudadano o, en última instancia, a la seguridad y defensa del Estado.",
+  "exp": "Las tres consecuencias figuran en el deber de secreto.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "166-1",
+  "pz": "e-27",
+  "sec": 24,
+  "id": "27-441"
+ },
+ {
+  "lote": "e4",
+  "i": 73,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 30 del Código de Conducta",
+    "k": 169
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Igualdad, diversidad y conciliación. Impedirán cualquier situación de discriminación respetando la igualdad efectiva entre hombres y mujeres, incluida:",
+  "opciones": [
+   "La prevención de la violencia de género, la diversidad y orientación sexual de las personas.",
+   "En el ámbito laboral y doméstico.",
+   "Todas las opciones son correctas.",
+   "Por razón de nacimiento, raza, sexo, religión o creencia, lengua o cualquier otra condición o circunstancia personal o social."
+  ],
+  "correcta": 0,
+  "lila": "Art. 30 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Impedirán cualquier situación de discriminación respetando la igualdad efectiva entre hombres y mujeres, incluida la prevención de la violencia de género, la diversidad y orientación sexual de las personas.",
+  "exp": "Violencia de género, diversidad y orientación sexual.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "169-1",
+  "pz": "e-30",
+  "sec": 24,
+  "id": "27-442"
+ },
+ {
+  "lote": "e4",
+  "i": 74,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 7 del Código de Conducta",
+    "k": 146
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Según la regulación que hace el Código del valor fundamental de la responsabilidad, ¿de qué serán responsables los guardias civiles?:",
+  "opciones": [
+   "Personal y directamente, de las actuaciones que lleven a cabo en el ejercicio tanto de sus funciones como de aquellas otras que le sean encomendadas, que ejecutarán teniendo en cuenta los preceptos de este Código de Conducta y asumiendo en todo momento las consecuencias de sus acciones u omisiones.",
+   "Personal y directamente, de las actuaciones que lleven a cabo en el ejercicio de sus funciones, que ejecutarán teniendo en cuenta los preceptos de este Código de Conducta y asumiendo en todo momento las consecuencias de sus acciones u omisiones.",
+   "Personalmente, de las actuaciones que lleven a cabo en el ejercicio de sus funciones, que ejecutarán teniendo en cuenta los preceptos de este Código de Conducta y asumiendo en todo momento las consecuencias de sus acciones u omisiones.",
+   "Personalmente, de las actuaciones que lleven a cabo en el ejercicio tanto de sus funciones como de aquellas otras que le sean encomendadas, que ejecutarán teniendo en cuenta los preceptos de este Código de Conducta y asumiendo en todo momento las consecuencias de sus acciones u omisiones."
+  ],
+  "correcta": 1,
+  "lila": "Art. 7 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Serán responsables, personal y directamente, de las actuaciones que lleven a cabo en el ejercicio de sus funciones, que ejecutarán teniendo en cuenta los preceptos de este Código de Conducta y asumiendo en todo momento las consecuencias de sus acciones u omisiones.",
+  "exp": "Personal y directamente, en el ejercicio de sus funciones.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "146-1",
+  "pz": "e-7",
+  "sec": 24,
+  "id": "27-443"
+ },
+ {
+  "lote": "e4",
+  "i": 75,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 31 del Código de Conducta",
+    "k": 170
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Con quién deberán utilizar el saludo militar los guardias civiles?:",
+  "opciones": [
+   "Como expresión de cortesía mutua, disciplina y unión entre los miembros del Cuerpo y como muestra de respeto con autoridades civiles, miembros de otras fuerzas y cuerpos de seguridad e instituciones militares nacionales y extranjeras, así como en las relaciones con la ciudadanía.",
+   "Como muestra de respeto, expresión de cortesía mutua, disciplina y unión entre los miembros del Cuerpo, con autoridades civiles, miembros de otras fuerzas y cuerpos de seguridad e instituciones militares nacionales y extranjeras, así como en las relaciones con la ciudadanía.",
+   "Como expresión de cortesía mutua, disciplina y unión entre los miembros del Cuerpo, con autoridades civiles, miembros de otras fuerzas y cuerpos de seguridad e instituciones militares nacionales y extranjeras, así como en las relaciones con la ciudadanía.",
+   "Como expresión de cortesía mutua, disciplina y unión entre los miembros del Cuerpo y miembros de otras fuerzas y cuerpos de seguridad e instituciones militares nacionales y extranjeras y como muestra de respeto con autoridades civiles, así como en las relaciones con la ciudadanía."
+  ],
+  "correcta": 0,
+  "lila": "Art. 31 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Utilizarán el saludo militar como expresión de cortesía mutua, disciplina y unión entre los miembros del Cuerpo y como muestra de respeto con autoridades civiles, miembros de otras fuerzas y cuerpos de seguridad e instituciones militares nacionales y extranjeras, así como en las relaciones con la ciudadanía.",
+  "exp": "Es literal.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "170-1",
+  "pz": "e-31",
+  "sec": 24,
+  "id": "27-444"
+ },
+ {
+  "lote": "e4",
+  "i": 76,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 26.2 del Código de Conducta",
+    "k": 165
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. Los guardias civiles velarán por el cuidado y la conservación de las instalaciones, por el equipamiento que tengan asignado y por el cumplimiento de las medidas de seguridad asociadas:",
+  "opciones": [
+   "Procurando utilizar la menor cantidad de recursos humanos, materiales y financieros posibles.",
+   "Utilizando todos los recursos humanos, materiales y financieros disponibles.",
+   "Procurando aprovechar de manera óptima los recursos humanos, materiales y financieros asignados.",
+   "Utilizando todos los recursos humanos, materiales y financieros que sean necesarios."
+  ],
+  "correcta": 2,
+  "lila": "Art. 26.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Velarán por el cuidado y la conservación de las instalaciones, por el equipamiento que tengan asignado y por el cumplimiento de las medidas de seguridad asociadas, procurando aprovechar de manera óptima los recursos humanos, materiales y financieros asignados.",
+  "exp": "Aprovechando de manera óptima los recursos asignados.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "165-2",
+  "pz": "e-26",
+  "sec": 41,
+  "id": "27-445"
+ },
+ {
+  "lote": "e4",
+  "i": 77,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Decálogo",
+    "k": 194
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué dice el decálogo de los miembros de la Guardia Civil sobre la integridad?:",
+  "opciones": [
+   "Serviré con integridad y actuaré con valor, decisión, iniciativa y espíritu de sacrificio.",
+   "Actuaré siempre con integridad y rectitud. La satisfacción del deber cumplido será mi mayor recompensa.",
+   "Me comportaré siempre con la mayor integridad posible, como exigen el Cuerpo al que pertenezco y el uniforme que visto.",
+   "Con orgullo de ser guardia civil, actuaré con integridad y compañerismo y seré fiel a los valores, principios y tradiciones del Cuerpo."
+  ],
+  "correcta": 1,
+  "lila": "Decálogo · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Actuaré siempre con integridad y rectitud. La satisfacción del deber cumplido será mi mayor recompensa.",
+  "exp": "Quinto punto del decálogo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "194-1",
+  "pz": "e-fin",
+  "sec": 24,
+  "id": "27-446"
+ },
+ {
+  "lote": "e4",
+  "i": 78,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 37 del Código de Conducta",
+    "k": 176
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué capacidades aportarán los guardias civiles para cumplir con su deber de cooperar y colaborar con el personal de las Fuerzas Armadas y sus unidades?:",
+  "opciones": [
+   "La Guardia Civil sólo tiene obligación de cooperar y colaborar con el personal de las Fuerzas Armadas en situaciones de conflicto armado o terrorismo.",
+   "Aquellas capacidades que por su naturaleza militar y preparación policial puedan complementar o ser de especial interés para las misiones que tengan encomendadas.",
+   "Todas aquellas que sean propias de su cargo y les sean encomendadas por sus superiores jerárquicos.",
+   "Todas aquellas que sean propias de cargo y les sean encomendadas por el personal al mando de las Fuerzas Armadas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 37 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Mantendrán la máxima disposición a cooperar y colaborar con el personal de las Fuerzas Armadas y sus unidades aportando aquellas capacidades que por su naturaleza militar y preparación policial puedan complementar o ser de especial interés para las misiones que tengan encomendadas.",
+  "exp": "Las que complementen o interesen por su naturaleza militar y preparación policial.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "176-1",
+  "pz": "e-37",
+  "sec": 24,
+  "id": "27-447"
+ },
+ {
+  "lote": "e4",
+  "i": 79,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 32 del Código de Conducta",
+    "k": 171
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En virtud del cuidado de la salud, el personal de la Guardia Civil debe concienciarse de la necesidad de mantenerse siembre en un buen estado físico y mental, para:",
+  "opciones": [
+   "Encontrarse en condiciones óptimas para el desarrollo de sus funciones.",
+   "Cumplir eficientemente sus funciones y dando una imagen institucional adecuada.",
+   "Desarrollar sus funciones de manera óptima y dando una buena imagen institucional.",
+   "Poder atender correctamente a las necesidades requeridas en el ejercicio de sus funciones."
+  ],
+  "correcta": 0,
+  "lila": "Art. 32 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "La exigencia propia del servicio al que se enfrenta el personal de la Guardia Civil debe concienciarle de la necesidad de mantenerse siempre en un buen estado físico y mental, para encontrarse en condiciones óptimas para el desarrollo de sus funciones.",
+  "exp": "Condiciones óptimas para el desarrollo de sus funciones.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "171-1",
+  "pz": "e-32",
+  "sec": 24,
+  "id": "27-448"
+ },
+ {
+  "lote": "e4",
+  "i": 80,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 4 del Código de Conducta",
+    "k": 143
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. En virtud del valor, tal y como aparece recogido en este Código, ¿cómo deberán actuar los miembros de la Guardia Civil?:",
+  "opciones": [
+   "Acometiendo resuelta y eficazmente las contingencias y peligros inherentes al cumplimiento del deber, y en defensa de los demás, incluso a riesgo de sufrir cualquier tipo de daño.",
+   "Acometiendo resuelta y racionalmente las contingencias y peligros inherentes al ejercicio de sus competencias, y en defensa de los demás, incluso a riesgo de sufrir cualquier tipo de daño.",
+   "Con voluntad de acometer resuelta y eficazmente las contingencias y peligros inherentes al cumplimiento del deber, y en defensa de los demás, salvo que suponga un grave peligro para su vida.",
+   "Con voluntad de acometer resuelta y racionalmente las contingencias y peligros inherentes al cumplimiento del deber, y en defensa de los demás, incluso a riesgo de sufrir cualquier tipo de daño."
+  ],
+  "correcta": 3,
+  "lila": "Art. 4 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Actuarán con voluntad de acometer resuelta y racionalmente las contingencias y peligros inherentes al cumplimiento del deber, y en defensa de los demás, incluso a riesgo de sufrir cualquier tipo de daño.",
+  "exp": "Voluntad de acometer resuelta y racionalmente.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "143-1",
+  "pz": "e-4",
+  "sec": 24,
+  "id": "27-449"
+ },
+ {
+  "lote": "e4",
+  "i": 81,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 16.2 del Código de Conducta",
+    "k": 155
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué deberán hacer los miembros de la Guardia Civil en caso de recibir órdenes que entrañen la ejecución de actos que manifiestamente constituyan delito o resulten contrarios a la Constitución o a las leyes?:",
+  "opciones": [
+   "Las obedecerán, pero comunicarán inmediatamente el contenido concreto de las instrucciones recibidas y el mando u órgano emisor de las mismas a la autoridad superior o al órgano que corresponda.",
+   "Se abstendrán de obedecerlas y además comunicarán por el medio más rápido y eficaz el contenido concreto de las instrucciones recibidas y el mando u órgano emisor de las mismas a la autoridad superior o al órgano que correspondan.",
+   "Se limitarán a no obedecerlas.",
+   "Las obedecerán, pero deberán comunicar tan pronto como sea posible el contenido concreto de las instrucciones recibidas y el mando u órgano emisor de las mismas a la autoridad superior o al órgano que corresponda."
+  ],
+  "correcta": 1,
+  "lila": "Art. 16.2 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "2. Si las órdenes recibidas entrañaran la ejecución de actos que manifiestamente constituyan delito o resulten contrarios a la Constitución o a las leyes, los miembros de la Guardia Civil se abstendrán de obedecerlas, debiendo comunicar por el medio más rápido y eficaz el contenido concreto de las instrucciones recibidas y el mando u órgano emisor de las mismas a la autoridad superior o al órgano que corresponda.",
+  "exp": "Se abstienen y lo comunican por el medio más rápido y eficaz.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "155-2",
+  "pz": "e-16",
+  "sec": 24,
+  "id": "27-450"
+ },
+ {
+  "lote": "e4",
+  "i": 82,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Decálogo",
+    "k": 197
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. ¿Qué dice el decálogo sobre la lealtad y espíritu de cuerpo?:",
+  "opciones": [
+   "Con orgullo de ser guardia civil, actuaré con lealtad y compañerismo y seré fiel a los valores, principios y tradiciones del Cuerpo.",
+   "Con orgullo de ser guardia civil, actuaré con lealtad y fidelidad y respetando los valores, principios y tradiciones del Cuerpo.",
+   "Con lealtad a la Guardia Civil, actuaré con honradez y fidelidad y respetando los valores, principios y tradiciones del Cuerpo.",
+   "Con lealtad a la Guardia Civil, actuaré con honradez y compañerismo y seré fiel a los valores, principios y tradiciones del Cuerpo."
+  ],
+  "correcta": 0,
+  "lila": "Decálogo · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "Con orgullo de ser guardia civil, actuaré con lealtad y compañerismo y seré fiel a los valores, principios y tradiciones del Cuerpo.",
+  "exp": "Octavo punto del decálogo.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "197-1",
+  "pz": "e-fin",
+  "sec": 24,
+  "id": "27-451"
+ },
+ {
+  "lote": "e4",
+  "i": 83,
+  "v": "v04",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Real Decreto 176/2022",
+    "art": "Art. 40 del Código de Conducta",
+    "k": 179
+   }
+  ],
+  "pregunta": "Código de Conducta del personal de la Guardia Civil. La prevención de los accidentes e incidentes durante la prestación del servicio será objeto de permanente preocupación para todos los miembros de la institución, y muy especialmente, para los mandos de cada unidad, quienes deberán:",
+  "opciones": [
+   "Cumplir rigurosamente las normas de prevención aplicables a cada tipo de servicio y velar por los principios relativos a los riesgos laborales correspondientes.",
+   "Hacer cumplir rigurosamente las normas de prevención aplicables a cada tipo de servicio y los principios relativos a los riesgos laborales correspondientes.",
+   "Hacer cumplir rigurosamente los principios aplicables a cada tipo de servicio y las normas de prevención de los riesgos laborales correspondientes.",
+   "Cumplir y hacer cumplir rigurosamente los principios aplicables a cada tipo de servicio y las normas de prevención de los riesgos laborales correspondientes."
+  ],
+  "correcta": 3,
+  "lila": "Art. 40 del Código de Conducta · Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia Civil",
+  "rojo": "La prevención de los accidentes e incidentes durante la prestación del servicio será objeto de permanente preocupación para todos los miembros de la institución, y muy especialmente, para los mandos de cada unidad, quienes deberán cumplir y hacer cumplir rigurosamente los principios aplicables a cada tipo de servicio y las normas de prevención de los riesgos laborales correspondientes.",
+  "exp": "Cumplir y hacer cumplir.",
+  "apartado": "Real Decreto 176/2022, de 4 de marzo, por el que se aprueba el Código de Conducta del Personal de la Guardia",
+  "par": "179-1",
+  "pz": "e-40",
+  "sec": 24,
+  "id": "27-452"
+ }
+]

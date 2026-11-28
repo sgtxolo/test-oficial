@@ -1,0 +1,1489 @@
+[
+ {
+  "lote": "e1",
+  "i": 0,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 13",
+    "k": 13
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Al dispersar reuniones ilícitas pero no violentas. ¿cómo actuarán los funcionarios encargados de hacer cumplir la ley?:",
+  "opciones": [
+   "Evitarán el empleo de las armas o, si no es posible, lo limitarán al mínimo necesario.",
+   "Evitarán el empleo de la fuerza o, si no es posible, lo limitarán al mínimo necesario.",
+   "Evitarán el empleo de la fuerza o, si no es posible, usarán el empleo mínimo de las armas.",
+   "Evitarán el empleo de las armas o, si no es posible, usarán la fuerza."
+  ],
+  "correcta": 1,
+  "lila": "Principio 13 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Al dispersar reuniones ilícitas pero no violentas, los funcionarios encargados de hacer cumplir la ley evitarán el empleo de la fuerza o, si no es posible, lo limitarán al mínimo necesario.",
+  "exp": "Ante reuniones ilícitas no violentas se evita la fuerza o se limita al mínimo; las otras hablan de armas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "13-0",
+  "pz": "a-13",
+  "sec": 0,
+  "id": "27-227"
+ },
+ {
+  "lote": "e1",
+  "i": 1,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 23",
+    "k": 23
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 25",
+    "k": 25
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 26",
+    "k": 26
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Procedimientos de presentación de informes y recursos. Señale la opción CORRECTA:",
+  "opciones": [
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que se imponga sanción penal o disciplinaria contra los funcionarios encargados de hacer cumplir la ley que, en cumplimiento del Código de conducta pertinente y de estos Principios Básicos, se nieguen a ejecutar una orden de emplear la fuerza o armas de fuego o denuncien ese empleo por otros funcionarios.",
+   "Los funcionarios encargados de hacer cumplir la ley no podrán alegar obediencia de órdenes superiores si tenían conocimiento de que la orden de emplear la fuerza o armas de fuego, a raíz de la cual se ha ocasionado la muerte o heridas graves a una persona, era manifiestamente ilícita aunque no tuvieran una oportunidad razonable de negarse a cumplirla.",
+   "Las personas afectadas por el empleo de la fuerza y de armas de fuego o sus representantes legales tendrán acceso a un proceso independiente, incluido un proceso judicial. En caso de muerte de esas personas, esta disposición se aplicará a sus herederos.",
+   "Todas las opciones son incorrectas."
+  ],
+  "correcta": 2,
+  "lila": "Principio 23 y Principio 25 y Principio 26 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 23. Las personas afectadas por el empleo de la fuerza y de armas de fuego o sus representantes legales tendrán acceso a un proceso independiente, incluido un proceso judicial. En caso de muerte de esas personas, esta disposición se aplicará a sus herederos.<br>Principio 25. Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que no se imponga ninguna sanción penal o disciplinaria contra los funcionarios encargados de hacer cumplir la ley que, en cumplimiento del Código de conducta pertinente y de estos Principios básicos, se nieguen a ejecutar una orden de emplear la fuerza o armas de fuego o denuncien ese empleo por otros funcionarios.<br>Principio 26. Los funcionarios encargados de hacer cumplir la ley no podrán alegar obediencia de órdenes superiores si tenían conocimiento de que la orden de emplear la fuerza o armas de fuego, a raíz de la cual se ha ocasionado la muerte o heridas graves a una persona, era manifiestamente ilícita y tuvieron una oportunidad razonable de negarse a cumplirla. De cualquier modo, también serán responsables los superiores que dieron las órdenes ilícitas.",
+  "exp": "Es literal el principio 23. La primera impone sanción cuando el principio dice que no se impondrá y la segunda niega la oportunidad de negarse, que es condición del principio 26.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "23-0",
+  "pz": "a-23",
+  "sec": 0,
+  "id": "27-228"
+ },
+ {
+  "lote": "e1",
+  "i": 2,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 24",
+    "k": 24
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿Cuándo los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que los funcionarios superiores asuman la debida responsabilidad?:",
+  "opciones": [
+   "Cuando tengan conocimiento de que los funcionarios a sus órdenes recurren al uso ilícito de la fuerza y de armas de fuego, aunque adopten todas las medidas a su disposición para impedir, eliminar o denunciar ese uso.",
+   "Cuando debieran haber tenido conocimiento de que los funcionarios a sus órdenes recurren al uso lícito de la fuerza y de armas de fuego, y no adopten todas las medidas a su disposición para impedir, eliminar o denunciar ese uso.",
+   "Cuando debieran haber tenido conocimiento de que los funcionarios a sus órdenes han recurrido al uso ilícito de la fuerza, y no adopten todas las medidas a su disposición para impedir, eliminar o denunciar ese uso.",
+   "Cuando tengan conocimiento de que los funcionarios a sus órdenes recurren al uso de la fuerza y de armas de fuego, y no adopten todas las medidas a su disposición para impedir ese uso."
+  ],
+  "correcta": 2,
+  "lila": "Principio 24 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que los funcionarios superiores asuman la debida responsabilidad cuando tengan conocimiento, o debieron haberlo tenido, de que los funcionarios a sus órdenes recurren, o han recurrido, al uso ilícito de la fuerza y de armas de fuego, y no adopten todas las medidas a su disposición para impedir, eliminar o denunciar ese uso.",
+  "exp": "La responsabilidad exige uso ilícito (conocido o que debieron conocer) y no adoptar las medidas; las otras cambian «ilícito», añaden «aunque adopten» o quitan la ilicitud.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "24-0",
+  "pz": "a-24",
+  "sec": 0,
+  "id": "27-229"
+ },
+ {
+  "lote": "e1",
+  "i": 3,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 14",
+    "k": 14
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Al dispersar reuniones violentas. ¿cuándo podrán los funcionarios encargados de hacer cumplir la ley utilizar armas de fuego?:",
+  "opciones": [
+   "En todo caso.",
+   "Cuando no se puedan utilizar medios menos peligrosos.",
+   "En ningún caso.",
+   "En ningún caso, salvo que a las reuniones asistan miembros con armas, artefactos explosivos u objetos de análoga peligrosidad."
+  ],
+  "correcta": 1,
+  "lila": "Principio 14 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Al dispersar reuniones violentas, los funcionarios encargados de hacer cumplir la ley sólo podrán utilizar armas de fuego cuando no se puedan utilizar medios menos peligrosos y únicamente en la mínima medida necesaria. Los funcionarios encargados de hacer cumplir la ley se abstendrán de emplear las armas de fuego en esos casos, salvo en las circunstancias previstas en el principio 9.",
+  "exp": "Solo cuando no se puedan utilizar medios menos peligrosos y en la mínima medida necesaria.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "14-0",
+  "pz": "a-13",
+  "sec": 0,
+  "id": "27-230"
+ },
+ {
+  "lote": "e1",
+  "i": 4,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 16",
+    "k": 16
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿En cuál de los siguientes casos los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas, podrán emplear armas de fuego?:",
+  "opciones": [
+   "En defensa propia o en defensa de terceros cuando haya peligro inminente de muerte o lesiones graves.",
+   "Cuando sea estrictamente necesario para impedir la fuga de una persona sometida a custodia o detención que represente una amenaza para la comunidad.",
+   "En ningún caso.",
+   "Cuando sea estrictamente necesario para impedir la fuga de una persona sometida a custodia o detención que haya cometido un delito particularmente grave."
+  ],
+  "correcta": 0,
+  "lila": "Principio 16 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas, no emplearán armas de fuego, salvo en defensa propia o en defensa de terceros cuando haya peligro inminente de muerte o lesiones graves, o cuando sea estrictamente necesario para impedir la fuga de una persona sometida a custodia o detención que presente el peligro a que se refiere el principio 9.",
+  "exp": "Es literal: defensa propia o de terceros con peligro inminente de muerte o lesiones graves. La fuga exige el peligro del principio 9, no una amenaza genérica o un delito grave.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "16-0",
+  "pz": "a-15",
+  "sec": 0,
+  "id": "27-231"
+ },
+ {
+  "lote": "e1",
+  "i": 5,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 23",
+    "k": 23
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 24",
+    "k": 24
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Respecto a los procedimientos de presentación de informes y recursos, señale la opción CORRECTA:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que los funcionarios superiores asuman la debida responsabilidad cuando tengan conocimiento, o debieran haberlo tenido, de que los funcionarios a sus órdenes recurren, o han recurrido, al uso ilícito de la fuerza y de armas de fuego, y no adopten todas las medidas a su disposición para impedir, eliminar o denunciar ese uso.",
+   "Las personas afectadas por el empleo de la fuerza y de armas de fuego o sus representantes legales tendrán acceso a un proceso independiente, incluido un proceso judicial.",
+   "En caso de muerte, los herederos de las personas afectadas por el empleo de la fuerza y de armas de fuego o sus representantes legales tendrán acceso a un proceso independiente, incluido un proceso judicial."
+  ],
+  "correcta": 0,
+  "lila": "Principio 23 y Principio 24 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 23. Las personas afectadas por el empleo de la fuerza y de armas de fuego o sus representantes legales tendrán acceso a un proceso independiente, incluido un proceso judicial. En caso de muerte de esas personas, esta disposición se aplicará a sus herederos.<br>Principio 24. Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que los funcionarios superiores asuman la debida responsabilidad cuando tengan conocimiento, o debieron haberlo tenido, de que los funcionarios a sus órdenes recurren, o han recurrido, al uso ilícito de la fuerza y de armas de fuego, y no adopten todas las medidas a su disposición para impedir, eliminar o denunciar ese uso.",
+  "exp": "Las tres afirmaciones recogen los principios 23 y 24.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "23-0",
+  "pz": "a-23",
+  "sec": 0,
+  "id": "27-232"
+ },
+ {
+  "lote": "e1",
+  "i": 6,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 10",
+    "k": 10
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. En las circunstancias previstas en el principio 9 (salvedades al no empleo de armas de fuego contra las personas), los funcionarios encargados de hacer cumplir la ley se identificarán como tales y darán una clara advertencia de su intención de emplear armas de fuego, con tiempo suficiente para que se tome en cuenta, salvo que al dar esa advertencia:",
+  "opciones": [
+   "Resultara evidentemente inadecuada o inútil dadas las circunstancias del caso.",
+   "Se pusiera indebidamente en peligro a los funcionarios encargados de hacer cumplir la ley.",
+   "Se creara un riesgo de muerte o daños graves a otras personas.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Principio 10 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "En las circunstancias previstas en el principio 9, los funcionarios encargados de hacer cumplir la ley se identificarán como tales y darán una clara advertencia de su intención de emplear armas de fuego, con tiempo suficiente para que se tome en cuenta, salvo que al dar esa advertencia se pusiera indebidamente en peligro a los funcionarios encargados de hacer cumplir la ley, se creara un riesgo de muerte o daños graves a otras personas, o resultara evidentemente inadecuada o inútil dadas las circunstancias del caso.",
+  "exp": "Las tres son las excepciones a la advertencia.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "10-0",
+  "pz": "a-8",
+  "sec": 0,
+  "id": "27-233"
+ },
+ {
+  "lote": "e1",
+  "i": 7,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 5",
+    "k": 5
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Cuando el empleo de las armas de fuego sea inevitable, los funcionarios encargados de hacer cumplir la ley, ¿a quién procurarán notificar lo sucedido, a la menor brevedad posible, de las personas heridas o afectadas?:",
+  "opciones": [
+   "A los ascendientes o descendientes.",
+   "A los parientes o amigos íntimos.",
+   "A los cónyuges.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 1,
+  "lila": "Principio 5 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Cuando el empleo de las armas de fuego sea inevitable, los funcionarios encargados de hacer cumplir la ley: a) Ejercerán moderación y actuarán en proporción a la gravedad del delito y al objetivo legítimo que se persiga; b) Reducirán al mínimo los daños y lesiones y respetarán y protegerán la vida humana; c) Procederán de modo que se presten lo antes posible asistencia y servicios médicos a las personas heridas o afectadas; d) Procurarán notificar lo sucedido, a la menor brevedad posible, a los parientes o amigos íntimos de las personas heridas o afectadas.",
+  "exp": "A los parientes o amigos íntimos.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "5-0",
+  "pz": "a-5",
+  "sec": 0,
+  "id": "27-234"
+ },
+ {
+  "lote": "e1",
+  "i": 8,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 15",
+    "k": 15
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas, ¿cuándo podrán emplear la fuerza?:",
+  "opciones": [
+   "Cuando sea estrictamente necesario para mantener la seguridad en los establecimientos.",
+   "Cuando corra peligro la integridad física de las personas.",
+   "Todas las opciones son correctas.",
+   "Cuando sea estrictamente necesario para mantener el orden en los establecimientos."
+  ],
+  "correcta": 2,
+  "lila": "Principio 15 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas, no emplearán la fuerza, salvo cuando sea estrictamente necesario para mantener la seguridad y el orden en los establecimientos o cuando corra peligro la integridad física de las personas.",
+  "exp": "El principio cita la seguridad, el orden y la integridad física.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "15-0",
+  "pz": "a-15",
+  "sec": 0,
+  "id": "27-235"
+ },
+ {
+  "lote": "e1",
+  "i": 9,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 6",
+    "k": 6
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Disposiciones generales. Cuando al emplear __________ los funcionarios encargados de hacer cumplir la ley ocasionen __________ comunicarán el hecho inmediatamente a sus superiores:",
+  "opciones": [
+   "La fuerza o armas de fuego / la muerte.",
+   "Armas de fuego / la muerte.",
+   "La fuerza o armas de fuego / lesiones o muerte.",
+   "Armas de fuego / lesiones o muerte."
+  ],
+  "correcta": 2,
+  "lila": "Principio 6 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Cuando al emplear la fuerza o armas de fuego los funcionarios encargados de hacer cumplir la ley ocasionen lesiones o muerte, comunicarán el hecho inmediatamente a sus superiores de conformidad con el principio 22.",
+  "exp": "Al emplear la fuerza o armas de fuego, si ocasionan lesiones o muerte.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "6-0",
+  "pz": "a-6",
+  "sec": 0,
+  "id": "27-236"
+ },
+ {
+  "lote": "e1",
+  "i": 10,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Preámbulo",
+    "k": 0
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿En qué Congreso fueron adoptados los Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley?:",
+  "opciones": [
+   "En el Tercer Congreso de las Naciones Unidas sobre Prevención del Delito y Tratamiento del Delincuente.",
+   "En el Sexto Congreso de las Naciones Unidas sobre Prevención del Delito y Tratamiento del Delincuente.",
+   "En el Noveno Congreso de las Naciones Unidas sobre Prevención del Delito y Tratamiento del Delincuente.",
+   "En el Octavo Congreso de las Naciones Unidas sobre Prevención del Delito y Tratamiento del Delincuente."
+  ],
+  "correcta": 3,
+  "lila": "Preámbulo · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la ley, adoptados por el Octavo Congreso de las N.U. sobre Prevención del Delito y Tratamiento del Delincuente (La Habana, del 27 agosto al 7 septiembre de 1990).",
+  "exp": "Fueron adoptados por el Octavo Congreso.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "0-10-0",
+  "pz": "a-pre",
+  "sec": 0,
+  "id": "27-237"
+ },
+ {
+  "lote": "e1",
+  "i": 11,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 9",
+    "k": 9
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿Cuándo se podrá hacer uso intencional de armas letales?:",
+  "opciones": [
+   "En defensa propia o de otras personas, en caso de peligro inminente de muerte o lesiones graves.",
+   "Cuando sea estrictamente inevitable para proteger una vida.",
+   "Con el propósito de evitar la comisión de un delito particularmente grave que entrañe una seria amenaza para la vida.",
+   "Con el objeto de detener a una persona que represente un peligro y oponga resistencia a su autoridad, o para impedir su fuga."
+  ],
+  "correcta": 1,
+  "lila": "Principio 9 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los funcionarios encargados de hacer cumplir la ley no emplearán armas de fuego contra las personas salvo en defensa propia o de otras personas, en caso de peligro inminente de muerte o lesiones graves, o con el propósito de evitar la comisión de un delito particularmente grave que entrañe una seria amenaza para la vida, o con el objeto de detener a una persona que represente ese peligro y oponga resistencia a su autoridad, o para impedir su fuga, y sólo en caso de que resulten insuficientes medidas menos extremas para lograr dichos objetivos. En cualquier caso, sólo se podrá hacer uso intencional de armas letales cuando sea estrictamente inevitable para proteger una vida.",
+  "exp": "Las armas letales solo se usan intencionalmente cuando sea estrictamente inevitable para proteger una vida; las otras son supuestos generales de empleo de armas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "9-0",
+  "pz": "a-8",
+  "sec": 0,
+  "id": "27-238"
+ },
+ {
+  "lote": "e1",
+  "i": 12,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 4",
+    "k": 4
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 3",
+    "k": 3
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 8",
+    "k": 8
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Disposiciones generales. Señale la opción INCORRECTA:",
+  "opciones": [
+   "No se podrán invocar circunstancias excepcionales tales como la inestabilidad política interna o cualquier otra situación pública de emergencia para justificar el quebrantamiento de estos Principios Básicos.",
+   "Se hará una cuidadosa evaluación de la fabricación y distribución de armas no letales incapacitantes a fin de reducir al mínimo el riesgo de causar lesiones a personas ajenas a los hechos y se controlará con todo cuidado el uso de tales armas.",
+   "Los funcionarios encargados de hacer cumplir la ley, podrán utilizar la fuerza y armas de fuego solamente cuando otros medios resulten ineficaces o no garanticen de ninguna manera el logro del resultado previsto.",
+   "Los funcionarios encargados de hacer cumplir la ley, en el desempeño de sus funciones, utilizarán en la medida de lo posible la fuerza antes de recurrir al empleo de armas de fuego."
+  ],
+  "correcta": 3,
+  "lila": "Principio 4 y Principio 3 y Principio 8 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 4. Los funcionarios encargados de hacer cumplir la ley, en el desempeño de sus funciones, utilizarán en la medida de lo posible medios no violentos antes de recurrir al empleo de la fuerza y de armas de fuego. Podrán utilizar la fuerza y armas de fuego solamente cuando otros medios resulten ineficaces o no garanticen de ninguna manera el logro del resultado previsto.<br>Principio 3. Se hará una cuidadosa evaluación de la fabricación y distribución de armas no letales incapacitantes a fin de reducir al mínimo el riesgo de causar lesiones a personas ajenas a los hechos y se controlará con todo cuidado el uso de tales armas.<br>Principio 8. No se podrán invocar circunstancias excepcionales tales como la inestabilidad política interna o cualquier otra situación pública de emergencia para justificar el quebrantamiento de estos Principios básicos.",
+  "exp": "Primero se usan medios no violentos antes de recurrir a la fuerza y a las armas; no se usa la fuerza como paso previo.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "4-0",
+  "pz": "a-4",
+  "sec": 0,
+  "id": "27-239"
+ },
+ {
+  "lote": "e1",
+  "i": 13,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 14",
+    "k": 14
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los funcionarios encargados de hacer cumplir la ley podrán utilizar armas de fuego cuando no se puedan utilizar medios menos peligrosos y únicamente en la mínima medida necesaria, al dispersar, ¿qué reuniones?:",
+  "opciones": [
+   "Reuniones lícitas.",
+   "Reuniones violentas.",
+   "Reuniones no violentas.",
+   "Reuniones ilícitas."
+  ],
+  "correcta": 1,
+  "lila": "Principio 14 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Al dispersar reuniones violentas, los funcionarios encargados de hacer cumplir la ley sólo podrán utilizar armas de fuego cuando no se puedan utilizar medios menos peligrosos y únicamente en la mínima medida necesaria. Los funcionarios encargados de hacer cumplir la ley se abstendrán de emplear las armas de fuego en esos casos, salvo en las circunstancias previstas en el principio 9.",
+  "exp": "Es la regla para las reuniones violentas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "14-0",
+  "pz": "a-13",
+  "sec": 0,
+  "id": "27-240"
+ },
+ {
+  "lote": "e1",
+  "i": 14,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 19",
+    "k": 19
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 18",
+    "k": 18
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 20",
+    "k": 20
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Calificaciones, capacitación y asesoramiento. Señale la opción INCORRECTA:",
+  "opciones": [
+   "En la capacitación de los funcionarios encargados de hacer cumplir la ley, los gobiernos y los organismos correspondientes prestarán especial atención a las cuestiones de ética policial y derechos humanos.",
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley reciban capacitación en el empleo de la fuerza y sean examinados de conformidad con normas de evaluación adecuadas.",
+   "Los funcionarios que deban portar armas de fuego deben estar autorizados para hacerlo sólo tras haber finalizado la capacitación genérica en su empleo.",
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley sean seleccionados mediante procedimientos adecuados, posean aptitudes éticas, psicológicas y físicas apropiadas para el ejercicio eficaz de sus funciones y reciban capacitación profesional continua y completa."
+  ],
+  "correcta": 2,
+  "lila": "Principio 19 y Principio 18 y Principio 20 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 19. Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley reciban capacitación en el empleo de la fuerza y sean examinados de conformidad con normas de evaluación adecuadas. Los funcionarios que deban portar armas de fuego deben estar autorizados para hacerlo sólo tras haber finalizado la capacitación especializada en su empleo.<br>Principio 18. Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley sean seleccionados mediante procedimientos adecuados, posean aptitudes éticas, sicológicas y físicas apropiadas para el ejercicio eficaz de sus funciones y reciban capacitación profesional continua y completa. Tales aptitudes para el ejercicio de esas funciones serán objeto de examen periódico.<br>Principio 20. En la capacitación de los funcionarios encargados de hacer cumplir la ley, los gobiernos y los organismos correspondientes prestarán especial atención a las cuestiones de ética policial y Derechos Humanos, especialmente en el proceso de indagación, a los medios que puedan sustituir el empleo de la fuerza y de armas de fuego, por ejemplo, la solución pacífica de los conflictos, el estudio del comportamiento de las multitudes y las técnicas de persuasión, negociación y mediación, así como a los medios técnicos, con miras a limitar el empleo de la fuerza y armas de fuego. Los organismos encargados de hacer cumplir la ley deben examinar sus programas de capacitación y procedimientos operativos a la luz de casos concretos.",
+  "exp": "Exige capacitación especializada, no genérica.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "19-0",
+  "pz": "a-15",
+  "sec": 0,
+  "id": "27-241"
+ },
+ {
+  "lote": "e1",
+  "i": 15,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 7",
+    "k": 7
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 4",
+    "k": 4
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 3",
+    "k": 3
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 8",
+    "k": 8
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Disposiciones generales. Señale la disposición INCORRECTA:",
+  "opciones": [
+   "No se podrán invocar circunstancias excepcionales tales como la inestabilidad política interna o cualquier otra situación pública de emergencia para justificar el quebrantamiento de estos Principios Básicos.",
+   "Se hará una cuidadosa evaluación de la fabricación y distribución de armas no letales incapacitantes a fin de reducir al mínimo el riesgo de causar lesiones a personas ajenas a los hechos y se controlará con todo cuidado el uso de tales armas.",
+   "Los funcionarios encargados de hacer cumplir la ley, en el desempeño de sus funciones, utilizarán en la medida de lo posible medios no violentos antes de recurrir al empleo de la fuerza y de armas de fuego. Podrán utilizar la fuerza y armas de fuego solamente cuando otros medios resulten ineficaces o no garanticen de ninguna manera el logro del resultado previsto.",
+   "Los gobiernos adoptarán las medidas necesarias para que en la legislación se castigue como infracción grave el empleo arbitrario o abusivo de la fuerza o de armas de fuego por parte de los funcionarios encargados de hacer cumplir la ley."
+  ],
+  "correcta": 3,
+  "lila": "Principio 7 y Principio 4 y Principio 3 y Principio 8 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 7. Los gobiernos adoptarán las medidas necesarias para que en la legislación se castigue como delito el empleo arbitrario o abusivo de la fuerza o de armas de fuego por parte de los funcionarios encargados de hacer cumplir la ley.<br>Principio 4. Los funcionarios encargados de hacer cumplir la ley, en el desempeño de sus funciones, utilizarán en la medida de lo posible medios no violentos antes de recurrir al empleo de la fuerza y de armas de fuego. Podrán utilizar la fuerza y armas de fuego solamente cuando otros medios resulten ineficaces o no garanticen de ninguna manera el logro del resultado previsto.<br>Principio 3. Se hará una cuidadosa evaluación de la fabricación y distribución de armas no letales incapacitantes a fin de reducir al mínimo el riesgo de causar lesiones a personas ajenas a los hechos y se controlará con todo cuidado el uso de tales armas.<br>Principio 8. No se podrán invocar circunstancias excepcionales tales como la inestabilidad política interna o cualquier otra situación pública de emergencia para justificar el quebrantamiento de estos Principios básicos.",
+  "exp": "El empleo arbitrario o abusivo se castiga como delito, no como infracción grave.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "7-0",
+  "pz": "a-7",
+  "sec": 0,
+  "id": "27-242"
+ },
+ {
+  "lote": "e1",
+  "i": 16,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Preámbulo",
+    "k": 0
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿En qué año se celebró el Congreso de las Naciones Unidas en el cuál se adoptaron los principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley?:",
+  "opciones": [
+   "En el año 1986.",
+   "En el año 1980.",
+   "En el año 1990.",
+   "En el año 1993."
+  ],
+  "correcta": 2,
+  "lila": "Preámbulo · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la ley, adoptados por el Octavo Congreso de las N.U. sobre Prevención del Delito y Tratamiento del Delincuente (La Habana, del 27 agosto al 7 septiembre de 1990).",
+  "exp": "El Congreso se celebró en 1990.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "0-10-0",
+  "pz": "a-pre",
+  "sec": 0,
+  "id": "27-243"
+ },
+ {
+  "lote": "e1",
+  "i": 17,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 5",
+    "k": 5
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la ley. Señale la opción INCORRECTA. Cuando el empleo de las armas de fuego sea inevitable, los funcionarios encargados de hacer cumplir la ley:",
+  "opciones": [
+   "Ejercerán moderación y actuarán en proporción a la gravedad del delito y al objetivo legítimo que se persiga.",
+   "Reducirán al mínimo los daños y lesiones y respetarán y protegerán la vida humana.",
+   "Procederán de modo que se presten lo antes posible asistencia y servicios médicos a las personas heridas o afectadas.",
+   "Procurarán notificar lo sucedido inmediatamente a los parientes o amigos íntimos de las personas heridas o afectadas."
+  ],
+  "correcta": 3,
+  "lila": "Principio 5 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Cuando el empleo de las armas de fuego sea inevitable, los funcionarios encargados de hacer cumplir la ley: a) Ejercerán moderación y actuarán en proporción a la gravedad del delito y al objetivo legítimo que se persiga; b) Reducirán al mínimo los daños y lesiones y respetarán y protegerán la vida humana; c) Procederán de modo que se presten lo antes posible asistencia y servicios médicos a las personas heridas o afectadas; d) Procurarán notificar lo sucedido, a la menor brevedad posible, a los parientes o amigos íntimos de las personas heridas o afectadas.",
+  "exp": "La notificación es «a la menor brevedad posible», no «inmediatamente».",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "5-0",
+  "pz": "a-5",
+  "sec": 0,
+  "id": "27-244"
+ },
+ {
+  "lote": "e1",
+  "i": 18,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 22",
+    "k": 22
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. En caso de muerte y lesiones graves u otras consecuencias de importancia, ¿con qué fin se enviará rápidamente un informe detallado a las autoridades competentes?:",
+  "opciones": [
+   "Para la revisión administrativa y la supervisión judicial.",
+   "Para la supervisión administrativa y judicial.",
+   "Para la revisión administrativa y judicial.",
+   "Para la supervisión administrativa y revisión judicial."
+  ],
+  "correcta": 0,
+  "lila": "Principio 22 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley establecerán procedimientos eficaces para la presentación de informes y recursos en relación con todos los casos mencionados en los principios 6 y 11 f). Para los casos con respecto a los cuales se informe de conformidad con esos principios, los gobiernos y los organismos encargados de hacer cumplir la ley asegurarán que se establezca un procedimiento de revisión eficaz y que autoridades administrativas o judiciales independientes estén dotadas de competencia en circunstancias apropiadas. En caso de muerte y lesiones graves u otras consecuencias de importancia, se enviará rápidamente un informe detallado a las autoridades competentes para la revisión administrativa y la supervisión judicial.",
+  "exp": "Revisión administrativa y supervisión judicial.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "22-0",
+  "pz": "a-22",
+  "sec": 0,
+  "id": "27-245"
+ },
+ {
+  "lote": "e1",
+  "i": 19,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 25",
+    "k": 25
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 23",
+    "k": 23
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 24",
+    "k": 24
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 26",
+    "k": 26
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Procedimientos de presentación de informes y recursos. Señale la opción CORRECTA:",
+  "opciones": [
+   "Las personas afectadas por el empleo de la fuerza y de armas de fuego o sus representantes legales tendrán acceso a un proceso independiente, incluido un proceso judicial. En caso de muerte de esas personas, esta disposición no se aplicará a sus herederos.",
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que los funcionarios superiores asuman la debida responsabilidad cuando tengan conocimiento, o debieran haberlo tenido, de que los funcionarios a sus órdenes recurren, o han recurrido, al uso ilícito de la fuerza y de armas de fuego.",
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que no se imponga ninguna sanción penal o disciplinaria contra los funcionarios encargados de hacer cumplir la ley que, en cumplimiento del Código de conducta pertinente y de estos Principios Básicos, se nieguen a ejecutar una orden de emplear la fuerza o armas de fuego o denuncien ese empleo por otros funcionarios.",
+   "Los funcionarios encargados de hacer cumplir la ley no podrán alegar obediencia de órdenes superiores si tenían conocimiento de que la orden de emplear la fuerza o armas de fuego, a raíz de la cual se ha ocasionado la muerte o heridas graves a una persona, era manifiestamente ilícita."
+  ],
+  "correcta": 2,
+  "lila": "Principio 25 y Principio 23 y Principio 24 y Principio 26 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 25. Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que no se imponga ninguna sanción penal o disciplinaria contra los funcionarios encargados de hacer cumplir la ley que, en cumplimiento del Código de conducta pertinente y de estos Principios básicos, se nieguen a ejecutar una orden de emplear la fuerza o armas de fuego o denuncien ese empleo por otros funcionarios.<br>Principio 23. Las personas afectadas por el empleo de la fuerza y de armas de fuego o sus representantes legales tendrán acceso a un proceso independiente, incluido un proceso judicial. En caso de muerte de esas personas, esta disposición se aplicará a sus herederos.<br>Principio 24. Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que los funcionarios superiores asuman la debida responsabilidad cuando tengan conocimiento, o debieron haberlo tenido, de que los funcionarios a sus órdenes recurren, o han recurrido, al uso ilícito de la fuerza y de armas de fuego, y no adopten todas las medidas a su disposición para impedir, eliminar o denunciar ese uso.<br>Principio 26. Los funcionarios encargados de hacer cumplir la ley no podrán alegar obediencia de órdenes superiores si tenían conocimiento de que la orden de emplear la fuerza o armas de fuego, a raíz de la cual se ha ocasionado la muerte o heridas graves a una persona, era manifiestamente ilícita y tuvieron una oportunidad razonable de negarse a cumplirla. De cualquier modo, también serán responsables los superiores que dieron las órdenes ilícitas.",
+  "exp": "Es literal el principio 25. Las demás niegan la aplicación a los herederos o suprimen condiciones de los principios 24 y 26.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "25-0",
+  "pz": "a-24",
+  "sec": 0,
+  "repetidaDe": "27-228"
+ },
+ {
+  "lote": "e1",
+  "i": 20,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 15",
+    "k": 15
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿Cuándo emplearán la fuerza los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas?:",
+  "opciones": [
+   "Cuando sea estrictamente necesario para mantener la seguridad y el orden en los establecimientos o cuando corra peligro la integridad física y psíquica de las personas.",
+   "Cuando sea necesario para mantener la seguridad y el orden en los establecimientos o cuando corra peligro la seguridad de las personas.",
+   "En ningún caso.",
+   "Cuando sea estrictamente necesario para mantener la seguridad y el orden en los establecimientos o cuando corra peligro la integridad física de las personas."
+  ],
+  "correcta": 3,
+  "lila": "Principio 15 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas, no emplearán la fuerza, salvo cuando sea estrictamente necesario para mantener la seguridad y el orden en los establecimientos o cuando corra peligro la integridad física de las personas.",
+  "exp": "Seguridad, orden e integridad física; sin «psíquica» ni «en ningún caso».",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "15-0",
+  "pz": "a-15",
+  "sec": 0,
+  "id": "27-246"
+ },
+ {
+  "lote": "e1",
+  "i": 21,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 18",
+    "k": 18
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley sean seleccionados mediante procedimientos adecuados, ¿qué aptitudes apropiadas deberán poseer para el ejercicio eficaz de sus funciones?:",
+  "opciones": [
+   "Éticas, psicológicas y físicas.",
+   "Éticas, morales y físicas.",
+   "Psicológicas, morales y físicas.",
+   "Éticas, psicológicas y morales."
+  ],
+  "correcta": 0,
+  "lila": "Principio 18 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley sean seleccionados mediante procedimientos adecuados, posean aptitudes éticas, sicológicas y físicas apropiadas para el ejercicio eficaz de sus funciones y reciban capacitación profesional continua y completa. Tales aptitudes para el ejercicio de esas funciones serán objeto de examen periódico.",
+  "exp": "Aptitudes éticas, psicológicas y físicas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "18-0",
+  "pz": "a-15",
+  "sec": 0,
+  "id": "27-247"
+ },
+ {
+  "lote": "e1",
+  "i": 22,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 2",
+    "k": 2
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los gobiernos y los organismos encargados de hacer cumplir la ley establecerán una serie de métodos lo más amplia posible y dotarán a los funcionarios correspondientes de distintos tipos de armas y municiones de modo que puedan hacer un uso diferenciado de la fuerza y de las armas de fuego. ¿Qué armas deberían figurar, con miras a restringir cada vez más el empleo de medios que puedan ocasionar lesiones o muertes?:",
+  "opciones": [
+   "Armas no incapacitantes letales.",
+   "Armas no incapacitantes no letales.",
+   "Armas incapacitantes letales.",
+   "Armas incapacitantes no letales."
+  ],
+  "correcta": 3,
+  "lila": "Principio 2 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley establecerán una serie de métodos lo más amplia posible y dotarán a los funcionarios correspondientes de distintos tipos de armas y municiones de modo que puedan hacer un uso diferenciado de la fuerza y de las armas de fuego. Entre estas armas deberían figurar armas incapacitantes no letales para emplearlas cuando fuera apropiado, con miras a restringir cada vez más el empleo de medios que puedan ocasionar lesiones o muertes. Con el mismo objetivo, también debería permitirse que los funcionarios encargados de hacer cumplir la ley cuenten con equipo autoprotector, por ejemplo, escudos, cascos, chalecos a prueba de balas y medios de transporte a prueba de balas a fin de disminuir la necesidad de armas de cualquier tipo.",
+  "exp": "Armas incapacitantes no letales.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "2-0",
+  "pz": "a-2",
+  "sec": 0,
+  "id": "27-248"
+ },
+ {
+  "lote": "e1",
+  "i": 23,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Preámbulo",
+    "k": 0
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Preámbulo. Considerando que los funcionarios encargados de hacer cumplir la ley desempeñan un papel fundamental en la protección del derecho a __________ tal como se garantiza en la Declaración Universal de Derechos Humanos y se reafirma en el Pacto Internacional de Derechos Civiles y Políticos, señale la opción INCORRECTA:",
+  "opciones": [
+   "La libertad de las personas.",
+   "La intimidad de las personas.",
+   "La vida de las personas.",
+   "La seguridad de las personas."
+  ],
+  "correcta": 1,
+  "lila": "Preámbulo · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Considerando que los funcionarios encargados de hacer cumplir la ley desempeñan un papel fundamental en la protección del derecho a la vida, la libertad y la seguridad de las personas, tal como se garantiza en la Declaración Universal de Derechos Humanos y se reafirma en el Pacto Internacional de Derechos Civiles y Políticos.",
+  "exp": "El preámbulo cita vida, libertad y seguridad; no la intimidad.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "0-2",
+  "pz": "a-pre",
+  "sec": 0,
+  "id": "27-249"
+ },
+ {
+  "lote": "e1",
+  "i": 25,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 1",
+    "k": 1
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán y aplicarán normas y reglamentaciones sobre el empleo de la fuerza y armas de fuego contra personas por parte de funcionarios encargados de hacer cumplir la ley. Al establecer esas normas y disposiciones, los gobiernos y los organismos encargados de hacer cumplir la ley. ¿qué cuestiones examinarán continuamente relacionadas con el empleo de la fuerza y de armas de fuego?:",
+  "opciones": [
+   "Las cuestiones personales.",
+   "Las cuestiones profesionales.",
+   "Las cuestiones morales.",
+   "Las cuestiones éticas."
+  ],
+  "correcta": 3,
+  "lila": "Principio 1 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán y aplicarán normas y reglamentaciones sobre el empleo de la fuerza y armas de fuego contra personas por parte de funcionarios encargados de hacer cumplir la ley. Al establecer esas normas y disposiciones, los gobiernos y los organismos encargados de hacer cumplir la ley examinarán continuamente las cuestiones éticas relacionadas con el empleo de la fuerza y de armas de fuego.",
+  "exp": "Las cuestiones éticas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "1-0",
+  "pz": "a-1",
+  "sec": 0,
+  "id": "27-250"
+ },
+ {
+  "lote": "e1",
+  "i": 26,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 22",
+    "k": 22
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿En qué casos se enviará rápidamente un informe detallado a las autoridades competentes para la revisión administrativa y la supervisión judicial? Señale la opción INCORRECTA:",
+  "opciones": [
+   "En casos de lesiones graves.",
+   "En casos de muerte.",
+   "En casos de uso de armas.",
+   "En casos con consecuencias de importancia."
+  ],
+  "correcta": 2,
+  "lila": "Principio 22 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley establecerán procedimientos eficaces para la presentación de informes y recursos en relación con todos los casos mencionados en los principios 6 y 11 f). Para los casos con respecto a los cuales se informe de conformidad con esos principios, los gobiernos y los organismos encargados de hacer cumplir la ley asegurarán que se establezca un procedimiento de revisión eficaz y que autoridades administrativas o judiciales independientes estén dotadas de competencia en circunstancias apropiadas. En caso de muerte y lesiones graves u otras consecuencias de importancia, se enviará rápidamente un informe detallado a las autoridades competentes para la revisión administrativa y la supervisión judicial.",
+  "exp": "El informe rápido se prevé para muerte, lesiones graves u otras consecuencias de importancia, no por el mero uso de armas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "22-0",
+  "pz": "a-22",
+  "sec": 0,
+  "id": "27-251"
+ },
+ {
+  "lote": "e1",
+  "i": 27,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 6",
+    "k": 6
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿Cuándo los funcionarios encargados de hacer cumplir la ley comunicarán el hecho inmediatamente a sus superiores?:",
+  "opciones": [
+   "Cuando al emplear la fuerza ocasionen la muerte.",
+   "Cuando al emplear armas de fuego ocasionen lesiones.",
+   "Cuando al emplear la fuerza ocasionen lesiones.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Principio 6 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Cuando al emplear la fuerza o armas de fuego los funcionarios encargados de hacer cumplir la ley ocasionen lesiones o muerte, comunicarán el hecho inmediatamente a sus superiores de conformidad con el principio 22.",
+  "exp": "Lesiones o muerte por la fuerza o las armas se comunican siempre.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "6-0",
+  "pz": "a-6",
+  "sec": 0,
+  "id": "27-252"
+ },
+ {
+  "lote": "e1",
+  "i": 28,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 9",
+    "k": 9
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. En caso de que resulten insuficientes medidas menos extremas para lograr los objetivos, los funcionarios encargados de hacer cumplir la ley no emplearán armas de fuego contra las personas salvo:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Con el propósito de evitar la comisión de un delito particularmente grave que entrañe una seria amenaza para la vida.",
+   "Con el objeto de detener a una persona que represente una seria amenaza para la vida y oponga resistencia a su autoridad, o para impedir su fuga.",
+   "En defensa propia o de otras personas, en caso de peligro inminente de muerte o lesiones graves."
+  ],
+  "correcta": 0,
+  "lila": "Principio 9 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los funcionarios encargados de hacer cumplir la ley no emplearán armas de fuego contra las personas salvo en defensa propia o de otras personas, en caso de peligro inminente de muerte o lesiones graves, o con el propósito de evitar la comisión de un delito particularmente grave que entrañe una seria amenaza para la vida, o con el objeto de detener a una persona que represente ese peligro y oponga resistencia a su autoridad, o para impedir su fuga, y sólo en caso de que resulten insuficientes medidas menos extremas para lograr dichos objetivos. En cualquier caso, sólo se podrá hacer uso intencional de armas letales cuando sea estrictamente inevitable para proteger una vida.",
+  "exp": "Las tres son supuestos del principio 9.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "9-0",
+  "pz": "a-8",
+  "sec": 0,
+  "id": "27-253"
+ },
+ {
+  "lote": "e1",
+  "i": 29,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 5",
+    "k": 5
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Cuando el empleo de las armas de fuego sea inevitable, los funcionarios encargados de hacer cumplir la ley:",
+  "opciones": [
+   "Ejercerán moderación y actuarán en proporción a la naturaleza del delito y al objetivo de la policía.",
+   "Procederán de modo que se preste inmediatamente asistencia y servicios médicos a las personas heridas o afectadas.",
+   "Reducirán al mínimo los daños y lesiones y respetarán y protegerán la libertad de las personas.",
+   "Procurarán notificar lo sucedido, a la menor brevedad posible, a los parientes o amigos íntimos de las personas heridas o afectadas."
+  ],
+  "correcta": 3,
+  "lila": "Principio 5 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Cuando el empleo de las armas de fuego sea inevitable, los funcionarios encargados de hacer cumplir la ley: a) Ejercerán moderación y actuarán en proporción a la gravedad del delito y al objetivo legítimo que se persiga; b) Reducirán al mínimo los daños y lesiones y respetarán y protegerán la vida humana; c) Procederán de modo que se presten lo antes posible asistencia y servicios médicos a las personas heridas o afectadas; d) Procurarán notificar lo sucedido, a la menor brevedad posible, a los parientes o amigos íntimos de las personas heridas o afectadas.",
+  "exp": "Es literal la letra d). Las otras cambian la proporción, el momento de la asistencia o lo que se protege.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "5-0",
+  "pz": "a-5",
+  "sec": 0,
+  "id": "27-254"
+ },
+ {
+  "lote": "e1",
+  "i": 30,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 3",
+    "k": 3
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 4",
+    "k": 4
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 2",
+    "k": 2
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 1",
+    "k": 1
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Disposiciones generales. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Los funcionarios encargados de hacer cumplir la ley, en el desempeño de sus funciones, utilizarán en la medida de lo posible medios no violentos antes de recurrir al empleo de la fuerza y de armas de fuego.",
+   "Se hará una cuidadosa evaluación de la fabricación y distribución de armas letales incapacitantes a fin de reducir al mínimo el riesgo de causar lesiones a personas ajenas a los hechos y se controlará con todo cuidado el uso de tales armas.",
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley establecerán una serie de métodos lo más amplia posible y dotarán a los funcionarios correspondientes de distintos tipos de armas y municiones de modo que puedan hacer un uso diferenciado de la fuerza y de las armas de fuego.",
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán y aplicarán normas y reglamentaciones sobre el empleo de la fuerza y armas de fuego contra personas por parte de funcionarios encargados de hacer cumplir la ley."
+  ],
+  "correcta": 1,
+  "lila": "Principio 3 y Principio 4 y Principio 2 y Principio 1 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 3. Se hará una cuidadosa evaluación de la fabricación y distribución de armas no letales incapacitantes a fin de reducir al mínimo el riesgo de causar lesiones a personas ajenas a los hechos y se controlará con todo cuidado el uso de tales armas.<br>Principio 4. Los funcionarios encargados de hacer cumplir la ley, en el desempeño de sus funciones, utilizarán en la medida de lo posible medios no violentos antes de recurrir al empleo de la fuerza y de armas de fuego. Podrán utilizar la fuerza y armas de fuego solamente cuando otros medios resulten ineficaces o no garanticen de ninguna manera el logro del resultado previsto.<br>Principio 2. Los gobiernos y los organismos encargados de hacer cumplir la ley establecerán una serie de métodos lo más amplia posible y dotarán a los funcionarios correspondientes de distintos tipos de armas y municiones de modo que puedan hacer un uso diferenciado de la fuerza y de las armas de fuego.<br>Principio 1. Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán y aplicarán normas y reglamentaciones sobre el empleo de la fuerza y armas de fuego contra personas por parte de funcionarios encargados de hacer cumplir la ley. Al establecer esas normas y disposiciones, los gobiernos y los organismos encargados de hacer cumplir la ley examinarán continuamente las cuestiones éticas relacionadas con el empleo de la fuerza y de armas de fuego.",
+  "exp": "Se evalúan las armas no letales incapacitantes, no las letales.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "3-0",
+  "pz": "a-3",
+  "sec": 0,
+  "repetidaDe": "27-239"
+ },
+ {
+  "lote": "e1",
+  "i": 31,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 2",
+    "k": 2
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los gobiernos y los organismos encargados de hacer cumplir la ley establecerán una serie de métodos lo más amplia posible y dotarán a los funcionarios correspondientes de distintos tipos de armas y municiones de modo que puedan hacer un uso diferenciado de la fuerza y de las armas de fuego. Entre estas armas, ¿qué armas deberían figurar para emplearlas cuando fuera apropiado, con miras a restringir cada vez más el empleo de medios que puedan ocasionar lesiones o muertes?:",
+  "opciones": [
+   "Armas incapacitantes no letales.",
+   "Armas incapacitantes letales.",
+   "Armas no letales.",
+   "Armas letales."
+  ],
+  "correcta": 0,
+  "lila": "Principio 2 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley establecerán una serie de métodos lo más amplia posible y dotarán a los funcionarios correspondientes de distintos tipos de armas y municiones de modo que puedan hacer un uso diferenciado de la fuerza y de las armas de fuego. Entre estas armas deberían figurar armas incapacitantes no letales para emplearlas cuando fuera apropiado, con miras a restringir cada vez más el empleo de medios que puedan ocasionar lesiones o muertes. Con el mismo objetivo, también debería permitirse que los funcionarios encargados de hacer cumplir la ley cuenten con equipo autoprotector, por ejemplo, escudos, cascos, chalecos a prueba de balas y medios de transporte a prueba de balas a fin de disminuir la necesidad de armas de cualquier tipo.",
+  "exp": "Armas incapacitantes no letales.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "2-0",
+  "pz": "a-2",
+  "sec": 0,
+  "id": "27-255"
+ },
+ {
+  "lote": "e1",
+  "i": 32,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 16",
+    "k": 16
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿Cuándo emplearán las armas de fuego los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas?:",
+  "opciones": [
+   "Cuando sea estrictamente necesario para impedir la fuga de una persona.",
+   "En ningún caso.",
+   "En defensa de terceros cuando haya peligro inminente de lesiones.",
+   "En defensa propia, cuando haya peligro inminente de lesiones graves."
+  ],
+  "correcta": 3,
+  "lila": "Principio 16 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas, no emplearán armas de fuego, salvo en defensa propia o en defensa de terceros cuando haya peligro inminente de muerte o lesiones graves, o cuando sea estrictamente necesario para impedir la fuga de una persona sometida a custodia o detención que presente el peligro a que se refiere el principio 9.",
+  "exp": "Cabe en defensa propia ante peligro inminente de lesiones graves; la fuga exige el peligro del principio 9 y las lesiones deben ser graves.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "16-0",
+  "pz": "a-15",
+  "sec": 0,
+  "id": "27-256"
+ },
+ {
+  "lote": "e1",
+  "i": 33,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 13",
+    "k": 13
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿Al dispersar qué tipo de reuniones, los funcionarios encargados de hacer cumplir la ley evitarán el empleo de la fuerza o, si no es posible, lo limitarán al mínimo necesario?:",
+  "opciones": [
+   "Reuniones lícitas pero no violentas.",
+   "Reuniones ilícitas y violentas.",
+   "Reuniones ilícitas pero no violentas.",
+   "Reuniones lícitas y violentas."
+  ],
+  "correcta": 2,
+  "lila": "Principio 13 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Al dispersar reuniones ilícitas pero no violentas, los funcionarios encargados de hacer cumplir la ley evitarán el empleo de la fuerza o, si no es posible, lo limitarán al mínimo necesario.",
+  "exp": "Reuniones ilícitas pero no violentas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "13-0",
+  "pz": "a-13",
+  "sec": 0,
+  "id": "27-257"
+ },
+ {
+  "lote": "e1",
+  "i": 34,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 25",
+    "k": 25
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 26",
+    "k": 26
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Respecto a los procedimientos de presentación de informes y recursos, señale la opción CORRECTA:",
+  "opciones": [
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para se impongan sanción penal o disciplinaria contra los funcionarios encargados de hacer cumplir la ley que, en cumplimiento del código de conducta pertinente y de estos principios básicos, se nieguen a ejecutar una orden de emplear la fuerza o armas de fuego o denuncien ese empleo por otros funcionarios.",
+   "Todas las opciones son incorrectas.",
+   "Los funcionarios encargados de hacer cumplir la ley podrán alegar obediencia de órdenes superiores si tenían conocimiento de que la orden de emplear la fuerza o armas de fuego, a raíz de la cual se ha ocasionado la muerte o heridas graves a una persona, era manifiestamente ilícita y tuvieron una oportunidad razonable de negarse a cumplirla.",
+   "De cualquier modo, no serán responsables los superiores que dieron las órdenes ilícitas."
+  ],
+  "correcta": 1,
+  "lila": "Principio 25 y Principio 26 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 25. Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán las medidas necesarias para que no se imponga ninguna sanción penal o disciplinaria contra los funcionarios encargados de hacer cumplir la ley que, en cumplimiento del Código de conducta pertinente y de estos Principios básicos, se nieguen a ejecutar una orden de emplear la fuerza o armas de fuego o denuncien ese empleo por otros funcionarios.<br>Principio 26. Los funcionarios encargados de hacer cumplir la ley no podrán alegar obediencia de órdenes superiores si tenían conocimiento de que la orden de emplear la fuerza o armas de fuego, a raíz de la cual se ha ocasionado la muerte o heridas graves a una persona, era manifiestamente ilícita y tuvieron una oportunidad razonable de negarse a cumplirla. De cualquier modo, también serán responsables los superiores que dieron las órdenes ilícitas.",
+  "exp": "Las otras invierten el texto: no se sanciona al que se niega, no cabe alegar obediencia y los superiores sí responden.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "25-0",
+  "pz": "a-24",
+  "sec": 0,
+  "repetidaDe": "27-232"
+ },
+ {
+  "lote": "e1",
+  "i": 35,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 14",
+    "k": 14
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿Cuándo podrán utilizar armas de fuego los funcionarios encargados de hacer cumplir la ley al dispersar reuniones violentas?:",
+  "opciones": [
+   "En todo caso y únicamente en la mínima medida necesaria.",
+   "En ningún caso, salvo que en la reunión se utilicen armas o artefactos de análoga peligrosidad.",
+   "En ningún caso.",
+   "Cuando no se puedan utilizar medios menos peligrosos y únicamente en la mínima medida necesaria."
+  ],
+  "correcta": 3,
+  "lila": "Principio 14 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Al dispersar reuniones violentas, los funcionarios encargados de hacer cumplir la ley sólo podrán utilizar armas de fuego cuando no se puedan utilizar medios menos peligrosos y únicamente en la mínima medida necesaria. Los funcionarios encargados de hacer cumplir la ley se abstendrán de emplear las armas de fuego en esos casos, salvo en las circunstancias previstas en el principio 9.",
+  "exp": "Solo si no caben medios menos peligrosos y en la mínima medida.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "14-0",
+  "pz": "a-13",
+  "sec": 0,
+  "id": "27-258"
+ },
+ {
+  "lote": "e1",
+  "i": 36,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 3",
+    "k": 3
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿De qué armas se hará una cuidadosa evaluación de la fabricación y distribución a fin de reducir al mínimo el riesgo de causar lesiones a personas ajenas a los hechos y se controlará con todo cuidado el uso de tales armas?:",
+  "opciones": [
+   "De armas cortas.",
+   "De todo tipo de armas.",
+   "De armas letales.",
+   "De armas no letales incapacitantes."
+  ],
+  "correcta": 3,
+  "lila": "Principio 3 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Se hará una cuidadosa evaluación de la fabricación y distribución de armas no letales incapacitantes a fin de reducir al mínimo el riesgo de causar lesiones a personas ajenas a los hechos y se controlará con todo cuidado el uso de tales armas.",
+  "exp": "Las armas no letales incapacitantes.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "3-0",
+  "pz": "a-3",
+  "sec": 0,
+  "id": "27-259"
+ },
+ {
+  "lote": "e1",
+  "i": 37,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 20",
+    "k": 20
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 19",
+    "k": 19
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Calificaciones, capacitación y asesoramiento. Señale la opción INCORRECTA:",
+  "opciones": [
+   "Los funcionarios que deban portar armas de fuego deben estar autorizados para hacerlo sólo tras haber finalizado la capacitación especializada en su empleo.",
+   "Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley reciban capacitación en el empleo de la fuerza y sean examinados de conformidad con normas de evaluación adecuadas.",
+   "En la capacitación de los funcionarios encargados de hacer cumplir la ley, los gobiernos y los organismos correspondientes prestarán especial atención a las cuestiones de técnica policial y uso de las armas, especialmente en el proceso de indagación.",
+   "Los organismos encargados de hacer cumplir la ley deben examinar sus programas de capacitación y procedimientos operativos a la luz de casos concretos."
+  ],
+  "correcta": 2,
+  "lila": "Principio 20 y Principio 19 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 20. En la capacitación de los funcionarios encargados de hacer cumplir la ley, los gobiernos y los organismos correspondientes prestarán especial atención a las cuestiones de ética policial y Derechos Humanos, especialmente en el proceso de indagación, a los medios que puedan sustituir el empleo de la fuerza y de armas de fuego, por ejemplo, la solución pacífica de los conflictos, el estudio del comportamiento de las multitudes y las técnicas de persuasión, negociación y mediación, así como a los medios técnicos, con miras a limitar el empleo de la fuerza y armas de fuego. Los organismos encargados de hacer cumplir la ley deben examinar sus programas de capacitación y procedimientos operativos a la luz de casos concretos.<br>Principio 19. Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley reciban capacitación en el empleo de la fuerza y sean examinados de conformidad con normas de evaluación adecuadas. Los funcionarios que deban portar armas de fuego deben estar autorizados para hacerlo sólo tras haber finalizado la capacitación especializada en su empleo.",
+  "exp": "La atención especial es a la ética policial y los derechos humanos, no a la técnica y el uso de armas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "20-0",
+  "pz": "a-20",
+  "sec": 0,
+  "repetidaDe": "27-241"
+ },
+ {
+  "lote": "e1",
+  "i": 38,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 20",
+    "k": 20
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. En la capacitación de los funcionarios encargados de hacer cumplir la ley, los gobiernos y los organismos correspondientes prestarán especial atención a los medios que puedan sustituir el empleo de la fuerza y de armas de fuego, por ejemplo:",
+  "opciones": [
+   "La solución pacífica de los conflictos.",
+   "El estudio del comportamiento de los individuos.",
+   "Todas las opciones son correctas.",
+   "Las técnicas de persuasión, negociación y reducción de las personas."
+  ],
+  "correcta": 0,
+  "lila": "Principio 20 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "En la capacitación de los funcionarios encargados de hacer cumplir la ley, los gobiernos y los organismos correspondientes prestarán especial atención a las cuestiones de ética policial y Derechos Humanos, especialmente en el proceso de indagación, a los medios que puedan sustituir el empleo de la fuerza y de armas de fuego, por ejemplo, la solución pacífica de los conflictos, el estudio del comportamiento de las multitudes y las técnicas de persuasión, negociación y mediación, así como a los medios técnicos, con miras a limitar el empleo de la fuerza y armas de fuego. Los organismos encargados de hacer cumplir la ley deben examinar sus programas de capacitación y procedimientos operativos a la luz de casos concretos.",
+  "exp": "La solución pacífica de los conflictos. El estudio es del comportamiento de las multitudes y las técnicas incluyen mediación, por lo que no son todas correctas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "20-0",
+  "pz": "a-20",
+  "sec": 0,
+  "id": "27-260"
+ },
+ {
+  "lote": "e1",
+  "i": 39,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 20",
+    "k": 20
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. En la capacitación de los funcionarios encargados de hacer cumplir la ley, los gobiernos y los organismos correspondientes prestarán especial atención a las cuestiones de ética policial y derechos humanos, especialmente en:",
+  "opciones": [
+   "Las técnicas de conflicto, así como a los medios técnicos, con miras a restringir el empleo de la fuerza y armas de fuego.",
+   "La solución de los conflictos.",
+   "El proceso de indagación, a los medios que puedan sustituir el empleo de la fuerza y de armas de fuego.",
+   "El estudio del comportamiento de las personas."
+  ],
+  "correcta": 2,
+  "lila": "Principio 20 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "En la capacitación de los funcionarios encargados de hacer cumplir la ley, los gobiernos y los organismos correspondientes prestarán especial atención a las cuestiones de ética policial y Derechos Humanos, especialmente en el proceso de indagación, a los medios que puedan sustituir el empleo de la fuerza y de armas de fuego, por ejemplo, la solución pacífica de los conflictos, el estudio del comportamiento de las multitudes y las técnicas de persuasión, negociación y mediación, así como a los medios técnicos, con miras a limitar el empleo de la fuerza y armas de fuego. Los organismos encargados de hacer cumplir la ley deben examinar sus programas de capacitación y procedimientos operativos a la luz de casos concretos.",
+  "exp": "Especialmente en el proceso de indagación y en los medios que sustituyan la fuerza.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "20-0",
+  "pz": "a-20",
+  "sec": 0,
+  "id": "27-261"
+ },
+ {
+  "lote": "e1",
+  "i": 40,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 4",
+    "k": 4
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los funcionarios encargados de hacer cumplir la ley, en el desempeño de sus funciones, utilizarán en la medida de lo posible medios no violentos antes de recurrir al empleo de la fuerza y de armas de fuego. ¿Cuándo podrán utilizar la fuerza y las armas de fuego?:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Cuando sea para evitar la comisión de un delito.",
+   "Solamente cuando otros medios resulten ineficaces o no garanticen de ninguna manera el logro del resultado previsto.",
+   "Para detener a una persona que presente un peligro para la sociedad."
+  ],
+  "correcta": 2,
+  "lila": "Principio 4 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los funcionarios encargados de hacer cumplir la ley, en el desempeño de sus funciones, utilizarán en la medida de lo posible medios no violentos antes de recurrir al empleo de la fuerza y de armas de fuego. Podrán utilizar la fuerza y armas de fuego solamente cuando otros medios resulten ineficaces o no garanticen de ninguna manera el logro del resultado previsto.",
+  "exp": "Solo cuando otros medios resulten ineficaces.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "4-0",
+  "pz": "a-4",
+  "sec": 0,
+  "id": "27-262"
+ },
+ {
+  "lote": "e1",
+  "i": 41,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 10",
+    "k": 10
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Señale la opción INCORRECTA. Los funcionarios encargados de hacer cumplir la ley se identificarán como tales y darán una clara advertencia de su intención de emplear armas de fuego, con tiempo suficiente para que se tome en cuenta, salvo que al dar esa advertencia:",
+  "opciones": [
+   "Se pusiera indebidamente en peligro a los funcionarios encargados de hacer cumplir la ley.",
+   "Se creara un riesgo de muerte o daños graves a otras personas.",
+   "Se pusiera en peligro a las personas contra las que se quieren utilizar las armas.",
+   "Resultara evidentemente inadecuada o inútil dadas las circunstancias del caso."
+  ],
+  "correcta": 2,
+  "lila": "Principio 10 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "En las circunstancias previstas en el principio 9, los funcionarios encargados de hacer cumplir la ley se identificarán como tales y darán una clara advertencia de su intención de emplear armas de fuego, con tiempo suficiente para que se tome en cuenta, salvo que al dar esa advertencia se pusiera indebidamente en peligro a los funcionarios encargados de hacer cumplir la ley, se creara un riesgo de muerte o daños graves a otras personas, o resultara evidentemente inadecuada o inútil dadas las circunstancias del caso.",
+  "exp": "El peligro para la persona contra la que se usan las armas no es excepción.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "10-0",
+  "pz": "a-8",
+  "sec": 0,
+  "id": "27-263"
+ },
+ {
+  "lote": "e1",
+  "i": 42,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 15",
+    "k": 15
+   },
+   {
+    "n": "Principios básicos",
+    "art": "Principio 16",
+    "k": 16
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "No emplearán la fuerza, salvo cuando sea estrictamente necesario para mantener la seguridad y el orden en los establecimientos o cuando corra peligro la integridad física de las personas.",
+   "No emplearán armas de fuego, salvo en defensa propia o en defensa de terceros cuando haya peligro de muerte o lesiones.",
+   "No emplearán armas de fuego, salvo cuando sea estrictamente necesario para impedir la fuga de una persona sometida a custodia o detención que presente una seria amenaza para la integridad física de las personas."
+  ],
+  "correcta": 1,
+  "lila": "Principio 15 y Principio 16 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principio 15. Los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas, no emplearán la fuerza, salvo cuando sea estrictamente necesario para mantener la seguridad y el orden en los establecimientos o cuando corra peligro la integridad física de las personas.<br>Principio 16. Los funcionarios encargados de hacer cumplir la ley, en sus relaciones con las personas bajo custodia o detenidas, no emplearán armas de fuego, salvo en defensa propia o en defensa de terceros cuando haya peligro inminente de muerte o lesiones graves, o cuando sea estrictamente necesario para impedir la fuga de una persona sometida a custodia o detención que presente el peligro a que se refiere el principio 9.",
+  "exp": "Es literal el principio 15; las otras recortan o cambian el principio 16.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "15-0",
+  "pz": "a-15",
+  "sec": 0,
+  "id": "27-264"
+ },
+ {
+  "lote": "e1",
+  "i": 43,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 21",
+    "k": 21
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿Qué proporcionarán los gobiernos y los organismos encargados de hacer cumplir la ley a los funcionarios que intervengan en situaciones en las que se empleen la fuerza o armas de fuego para sobrellevar las tensiones propias de esas situaciones?:",
+  "opciones": [
+   "Ayuda económica.",
+   "Intervención psicológica.",
+   "Orientación.",
+   "Permisos extraordinarios."
+  ],
+  "correcta": 2,
+  "lila": "Principio 21 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley proporcionarán orientación a los funcionarios que intervengan en situaciones en las que se empleen la fuerza o armas de fuego para sobrellevar las tensiones propias de esas situaciones.",
+  "exp": "Orientación.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "21-0",
+  "pz": "a-20",
+  "sec": 0,
+  "id": "27-265"
+ },
+ {
+  "lote": "e1",
+  "i": 44,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 1",
+    "k": 1
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Al establecer las normas y reglamentaciones sobre el empleo de la fuerza y armas de fuego contra personas, ¿qué examinarán continuamente los gobiernos y los organismos encargados de hacer cumplir la ley?:",
+  "opciones": [
+   "Todas las opciones son correctas.",
+   "Las cuestiones morales relacionadas con el empleo de la fuerza y de armas de fuego.",
+   "Las cuestiones operativas relacionadas con el empleo de la fuerza y de armas de fuego.",
+   "Las cuestiones éticas relacionadas con el empleo de la fuerza y de armas de fuego."
+  ],
+  "correcta": 3,
+  "lila": "Principio 1 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley adoptarán y aplicarán normas y reglamentaciones sobre el empleo de la fuerza y armas de fuego contra personas por parte de funcionarios encargados de hacer cumplir la ley. Al establecer esas normas y disposiciones, los gobiernos y los organismos encargados de hacer cumplir la ley examinarán continuamente las cuestiones éticas relacionadas con el empleo de la fuerza y de armas de fuego.",
+  "exp": "Las cuestiones éticas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "1-0",
+  "pz": "a-1",
+  "sec": 0,
+  "id": "27-266"
+ },
+ {
+  "lote": "e1",
+  "i": 45,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 18",
+    "k": 18
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley:",
+  "opciones": [
+   "Sean seleccionados mediante procedimientos periódicos.",
+   "Reciban capacitación profesional continua y completa.",
+   "Todas las opciones son correctas.",
+   "Posean aptitudes éticas, psicológicas y personales apropiadas para el ejercicio eficaz de sus funciones."
+  ],
+  "correcta": 1,
+  "lila": "Principio 18 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los gobiernos y los organismos encargados de hacer cumplir la ley procurarán que todos los funcionarios encargados de hacer cumplir la ley sean seleccionados mediante procedimientos adecuados, posean aptitudes éticas, sicológicas y físicas apropiadas para el ejercicio eficaz de sus funciones y reciban capacitación profesional continua y completa. Tales aptitudes para el ejercicio de esas funciones serán objeto de examen periódico.",
+  "exp": "Es literal la capacitación profesional continua y completa; la selección es por procedimientos adecuados y las aptitudes son éticas, psicológicas y físicas.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "18-0",
+  "pz": "a-15",
+  "sec": 0,
+  "id": "27-267"
+ },
+ {
+  "lote": "e1",
+  "i": 46,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Preámbulo",
+    "k": 0
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley fueron adoptados por el __________ Congreso de las Naciones Unidas sobre Prevención del Delito y Tratamiento del Delincuente, celebrado en La Habana (Cuba) del 27 de agosto al 7 de septiembre de __________:",
+  "opciones": [
+   "Octavo / 1990.",
+   "Sexto / 1986.",
+   "Octavo / 1986.",
+   "Sexto / 1990."
+  ],
+  "correcta": 0,
+  "lila": "Preámbulo · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la ley, adoptados por el Octavo Congreso de las N.U. sobre Prevención del Delito y Tratamiento del Delincuente (La Habana, del 27 agosto al 7 septiembre de 1990).",
+  "exp": "Octavo Congreso, 1990.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "0-10-0",
+  "pz": "a-pre",
+  "sec": 0,
+  "id": "27-268"
+ },
+ {
+  "lote": "e1",
+  "i": 47,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Principio 9",
+    "k": 9
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. Los funcionarios encargados de hacer cumplir la ley, en caso de que resulten insuficientes medidas menos extremas para lograr dichos objetivos, no emplearán armas de fuego contra las personas salvo:",
+  "opciones": [
+   "Con el propósito de evitar la comisión de un delito particularmente grave que entrañe una seria amenaza para la integridad de las personas.",
+   "Ninguna de las opciones es correcta.",
+   "Con el objeto de detener a una persona que represente una seria amenaza para la vida.",
+   "En defensa propia o de otras personas, en caso de peligro de muerte o lesiones."
+  ],
+  "correcta": 1,
+  "lila": "Principio 9 · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Los funcionarios encargados de hacer cumplir la ley no emplearán armas de fuego contra las personas salvo en defensa propia o de otras personas, en caso de peligro inminente de muerte o lesiones graves, o con el propósito de evitar la comisión de un delito particularmente grave que entrañe una seria amenaza para la vida, o con el objeto de detener a una persona que represente ese peligro y oponga resistencia a su autoridad, o para impedir su fuga, y sólo en caso de que resulten insuficientes medidas menos extremas para lograr dichos objetivos. En cualquier caso, sólo se podrá hacer uso intencional de armas letales cuando sea estrictamente inevitable para proteger una vida.",
+  "exp": "Ninguna reproduce bien el principio 9: faltan «vida», la resistencia a la autoridad o que el peligro sea inminente y las lesiones graves.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "9-0",
+  "pz": "a-8",
+  "sec": 0,
+  "id": "27-269"
+ },
+ {
+  "lote": "e1",
+  "i": 48,
+  "v": "v01",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Principios básicos",
+    "art": "Preámbulo",
+    "k": 0
+   }
+  ],
+  "pregunta": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley. ¿Qué constituye la labor de los funcionarios encargados de hacer cumplir la ley?:",
+  "opciones": [
+   "Un servicio esencial.",
+   "Un servicio social de gran importancia.",
+   "Todas las opciones son correctas.",
+   "Una labor necesaria para mejorar los puestos de trabajo."
+  ],
+  "correcta": 1,
+  "lila": "Preámbulo · Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer cumplir la Ley",
+  "rojo": "Considerando que la labor de los funcionarios encargados de hacer cumplir la ley* constituye un servicio social de gran importancia y, en consecuencia, es preciso mantener y, siempre que sea necesario, mejorar las condiciones de trabajo y la situación de estos funcionarios,",
+  "exp": "Un servicio social de gran importancia.",
+  "apartado": "Principios básicos sobre el empleo de la fuerza y de armas de fuego por los funcionarios encargados de hacer",
+  "par": "0-0",
+  "pz": "a-pre",
+  "sec": 0,
+  "id": "27-270"
+ }
+]

@@ -1,0 +1,1632 @@
+[
+ {
+  "lote": "e5",
+  "i": 0,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 2",
+    "k": 202
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿A cuál de los siguientes es de aplicación la presente Orden?:",
+  "opciones": [
+   "Al personal de la Guardia Civil en cualquiera de las situaciones administrativas reguladas por la Ley de Personal del Cuerpo.",
+   "Al profesorado de los centros docentes de formación para ingreso en las diferentes escalas.",
+   "Al personal de las Fuerzas Armadas que desempeñe su actividad en puestos de trabajo de las unidades, centros y órganos de la Guardia Civil, en la medida en que sus actuaciones afecten a la gestión de los recursos de la Institución o pueda comprometer su imagen.",
+   "Al personal civil funcionario, laboral y eventual que preste sus servicios en la Guardia Civil, salvo que sus actuaciones afecten a la gestión de los recursos de la Institución o pueda comprometer su imagen."
+  ],
+  "correcta": 2,
+  "lila": "Art. 2 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "c) El personal de las Fuerzas Armadas que desempeñe su actividad en puestos de trabajo de las unidades, centros y órganos de la Guardia Civil y el personal civil funcionario, laboral y eventual que preste sus servicios en la Guardia Civil, en la medida en que sus actuaciones afecten a la gestión de los recursos de la Institución o pueda comprometer su imagen.",
+  "exp": "Se aplica en la medida en que sus actuaciones afecten a la gestión de recursos o puedan comprometer la imagen. Las demás cambian la ley de referencia, hablan del profesorado o invierten la condición.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "202-4",
+  "pz": "f-2",
+  "sec": 33,
+  "id": "27-453"
+ },
+ {
+  "lote": "e5",
+  "i": 1,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 3",
+    "k": 203
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Habrán de tenerse en cuenta los principios del Sistema de Integridad de la Administración General del Estado. Señale el principio INCORRECTO:",
+  "opciones": [
+   "Transparente y basado en indicadores que permitan rendir cuentas en materia de ética e integridad.",
+   "Ciclo de vida completo, que comprende el diagnóstico, implicación de todo el personal, planificación, implantación, seguimiento, inspección y sanción.",
+   "Carácter holístico y coherente en sus ámbitos objetivo y subjetivo de aplicación, abarcando todas aquellas funciones en Cuya ejecución puedan presentarse riesgos para la integridad, implicando al conjunto del Cuerpo.",
+   "Orientado a la mejora continua, eficiente y sostenible, con medios proporcionales a los resultados que se quieran alcanzar y acordes con los recursos disponibles, de forma que se asegure la estabilidad y validez para el medio plazo."
+  ],
+  "correcta": 1,
+  "lila": "Art. 3 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. Asimismo, habrán de tenerse en cuenta los principios del Sistema de Integridad de la Administración General del Estado: a) Carácter holístico y coherente en sus ámbitos objetivo y subjetivo de aplicación, abarcando todas aquellas funciones en cuya ejecución puedan presentarse riesgos para la integridad, implicando al conjunto del Cuerpo. b) Ciclo de vida completo, que comprende el diagnóstico, implicación de todo el personal, planificación, implantación, seguimiento y evaluación. c) Orientado a la mejora continua, eficiente y sostenible, con medios proporcionales a los resultados que se quieran alcanzar y acordes con los recursos disponibles, de forma que se asegure la estabilidad y validez para el medio plazo.",
+  "exp": "El ciclo de vida termina en seguimiento y evaluación, no en inspección y sanción.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "203-7",
+  "pz": "f-3",
+  "sec": 33,
+  "id": "27-454"
+ },
+ {
+  "lote": "e5",
+  "i": 2,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 4",
+    "k": 204
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Señale cuál de los siguientes NO corresponde con un elemento que compone el SINTEGC:",
+  "opciones": [
+   "Modelo de análisis, evaluación y seguimiento.",
+   "Grupo de trabajo permanente de seguimiento.",
+   "Elementos normativos y sus desarrollos, destacando el Código de Conducta del personal de la Guardia Civil.",
+   "Elementos organizativos de gestión y control."
+  ],
+  "correcta": 1,
+  "lila": "Art. 4 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. Los elementos que componen el SINTEGC son los siguientes: a) Elementos normativos y sus desarrollos, destacando el Código de Conducta del personal de la Guardia Civil, aprobado por Real Decreto 176/2022, de 4 de marzo. b) Plan de Acción de Ética Profesional y las normas de siguiente nivel que del mismo se deriven. c) Modelo de análisis, evaluación y seguimiento. d) Sistema interno de información. e) Buzón de ética institucional. f) Elementos organizativos de gestión y control. 3. Para llevar a cabo una adecuada gestión y control del SINTEGC, así como para sistematizar su evaluación y seguimiento, contribuyen a su finalidad los siguientes órganos y unidades:",
+  "exp": "El grupo de trabajo permanente es un órgano que contribuye, no un elemento del sistema.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "204-2",
+  "pz": "f-4",
+  "sec": 33,
+  "id": "27-455"
+ },
+ {
+  "lote": "e5",
+  "i": 3,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 5.2",
+    "k": 205
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Según establece la presente norma, ¿cuál es la base sobre la que se asienta el SINTEGC?:",
+  "opciones": [
+   "La Constitución Española.",
+   "El Código de Conducta.",
+   "Los Derechos Humanos.",
+   "La igualdad y no discriminación."
+  ],
+  "correcta": 1,
+  "lila": "Art. 5.2 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. El Código de Conducta es un pilar fundamental sobre el que erigir una institución solvente dedicada, por mandato constitucional, a garantizar la seguridad ciudadana y proteger el ejercicio de los derechos y libertades y, por lo tanto, la base sobre la que se asienta el SINTEGC.",
+  "exp": "El Código de Conducta es la base sobre la que se asienta el sistema.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "205-2",
+  "pz": "f-5",
+  "sec": 33,
+  "id": "27-456"
+ },
+ {
+  "lote": "e5",
+  "i": 4,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 7",
+    "k": 207
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Modelo de análisis, evaluación y seguimiento. Señale la opción CORRECTA:",
+  "opciones": [
+   "Mediante el análisis, evaluación y seguimiento se pretende identificar aquellas áreas de comportamiento o eventos inadecuados, susceptibles de ocurrencia en un margen temporal previsible, que podrían comprometer la consecución de los objetivos estratégicos.",
+   "En base al modelo de análisis y gestión de riesgos que se determine en el PLAEP, se identificarán los ámbitos competenciales susceptibles de mayor riesgo de integridad.",
+   "En el diseño de los protocolos de evaluación y seguimiento permanentes del SINTEGC, se incluirá una valoración, tanto interna como externa, respecto al clima ético de la Institución, y se englobarán medidas que se adopten en tal sentido para valorar la implementación, seguimiento y evaluación del Código de Conducta.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 7 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. Mediante el análisis, evaluación y seguimiento se pretende identificar aquellas áreas de comportamiento o eventos inadecuados, susceptibles de ocurrencia en un margen temporal previsible, que podrían comprometer la consecución de los objetivos estratégicos debido a faltas de respeto de los valores y principios inspiradores, sirviendo de apoyo asimismo para evaluar la efectividad y debilidades de los controles internos de gestión establecidos. 2. En base al modelo de análisis y gestión de riesgos que se determine en el PLAEP, se identificarán los ámbitos competenciales susceptibles de mayor riesgo de integridad, tras lo que se adoptarán protocolos específicos de evaluación y seguimiento de tales riesgos para analizar su evolución y proponer la adopción de posibles medidas correctoras, que habrán de ser actualizadas en función de la evolución. 3. En el diseño de los protocolos de evaluación y seguimiento permanentes del SINTEGC, se incluirá una valoración, tanto interna como externa, respecto al clima ético de la Institución, y se englobarán medidas que se adopten en tal sentido para valorar la implementación, seguimiento y evaluación del Código de Conducta, en la que se tendrán en cuenta los resultados de evolución de los ejes e indicadores correspondientes de la estrategia institucional y del Plan de Sostenibilidad de la Guardia Civil que guarden relación con el SINTEGC.",
+  "exp": "Las tres afirmaciones son del artículo.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "207-1",
+  "pz": "f-7",
+  "sec": 33,
+  "id": "27-457"
+ },
+ {
+  "lote": "e5",
+  "i": 5,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 8",
+    "k": 208
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. El sistema de información interno constituye un cauce para que los guardias civiles y las personas que trabajen en el sector privado o público, habiendo obtenido la información en un contexto laboral o profesional con la Guardia Civil, informen sobre presuntas acciones u omisiones que puedan constituir:",
+  "opciones": [
+   "Infracciones al derecho de la UE, salvo que las mismas sean castigadas por el ordenamiento jurídico interno.",
+   "Infracciones administrativas relativas al honor o la intimidad de las personas.",
+   "Infracciones penales.",
+   "Faltas disciplinarias."
+  ],
+  "correcta": 2,
+  "lila": "Art. 8 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. Este Sistema constituye un cauce para que los guardias civiles y las personas que trabajen en el sector privado o público, habiendo obtenido la información en un contexto laboral o profesional con la Guardia Civil, informen sobre presuntas acciones u omisiones que: a) Puedan constituir infracciones de Derecho de la UE siempre que entren dentro del ámbito de aplicación de los actos de la UE enumerados en el anexo de la Directiva (UE) 2019/1937 del Parlamento Europeo y del Consejo de 23 de octubre de 2019 relativa a la protección de las personas que informen sobre infracciones del Derecho de la Unión, con independencia de la calificación que de las mismas realice el ordenamiento jurídico interno; que afecten a los intereses financieros de la UE (art. 325 del Tratado de Funcionamiento de la Unión Europea (TFUE)) o incidan en el mercado interior (art. 26.2 TFUE). b) Acciones u omisiones que puedan ser constitutivas de infracción penal o administrativa grave o muy grave (en todo caso las que impliquen quebranto económico para la Hacienda Pública y para la Seguridad Social). Asimismo, se entenderán incluidas las referidas a infracciones penales o administrativas graves o muy graves del derecho laboral en materia de seguridad y salud en el trabajo, sin perjuicio de lo dispuesto en el Real Decreto 696/2022, de 23 de agosto, por el que se regula el procedimiento para la tramitación de propuestas, sugerencias, quejas y solicitudes de información del personal de la Guardia Civil.",
+  "exp": "Cubre infracciones penales o administrativas graves o muy graves.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "208-2",
+  "pz": "f-8",
+  "sec": 33,
+  "id": "27-458"
+ },
+ {
+  "lote": "e5",
+  "i": 6,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 8.4",
+    "k": 208
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Sistema interno de información. ¿A cuál de los siguientes podrá ser comunicada la identidad del informante?:",
+  "opciones": [
+   "A la persona designada como Delegado de Protección de Datos de la Guardia Civil.",
+   "A la autoridad administrativa competente en el marco de una investigación disciplinaria o sancionadora.",
+   "A la persona titular de la Asesoría Jurídica de la Dirección General de la Guardia Civil.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.4 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "4. El Sistema interno de información está diseñado, establecido y gestionado de forma segura garantizando la confidencialidad de la identidad del informante y de cualquier tercero mencionado en la comunicación y, de las actuaciones que se desarrollen en la gestión de la tramitación de la misma, así como la protección de datos, impidiendo el acceso de personal no autorizado. La identidad del informante solo podrá ser comunicada a la Autoridad judicial, al Ministerio Fiscal o a la autoridad administrativa competente en el marco de una investigación penal, disciplinaria o sancionadora.",
+  "exp": "La identidad solo se comunica a la autoridad judicial, al Ministerio Fiscal o a la autoridad administrativa competente en una investigación.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "208-6",
+  "pz": "f-8",
+  "sec": 33,
+  "id": "27-459"
+ },
+ {
+  "lote": "e5",
+  "i": 7,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 9.5",
+    "k": 209
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Buzón de Ética Institucional, señale la opción CORRECTA:",
+  "opciones": [
+   "En ningún caso, las respuestas efectuadas sobre consultas, dilemas o dudas éticas constituyen asesoramiento sobre la actuación individual del personal que consulta, salvo que las mismas sean consideradas iniciadoras de un procedimiento administrativo.",
+   "Serán tramitadas por la vía de urgencia las consultas o dudas éticas que puedan plantearse en relación con las denuncias internas o externas.",
+   "Las consultas habrán de realizarse obligatoriamente por escrito a través de los medios electrónicos habilitados al efecto que serán oportunamente publicitados, no admitiéndose las solicitudes anónimas.",
+   "Se acusará recibo de la solicitud efectuada en un plazo máximo de 10 días hábiles desde su recepción, emitiendo la contestación con la respectiva información."
+  ],
+  "correcta": 2,
+  "lila": "Art. 9.5 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "5. Las consultas habrán de realizarse obligatoriamente por escrito a través de los medios electrónicos habilitados al efecto que serán oportunamente publicitados, no admitiéndose las solicitudes anónimas, y garantizándose la confidencialidad de la identidad de la persona solicitante con el pleno respeto de la normativa de protección de datos de carácter personal.",
+  "exp": "Es literal. Las respuestas no inician procedimiento, no hay vía de urgencia para denuncias y el acuse es en 7 días hábiles.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "209-10",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-460"
+ },
+ {
+  "lote": "e5",
+  "i": 8,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10",
+    "k": 210
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Cuál de los siguientes órganos elabora un informe anual del estado de la integridad en la Guardia Civil?:",
+  "opciones": [
+   "El Consejo de Integridad y Conducta Ética.",
+   "El Comité de Gestión de Conducta Ética.",
+   "El Observatorio de Conducta Ética.",
+   "El Comité de Conducta Ética e Integridad."
+  ],
+  "correcta": 1,
+  "lila": "Art. 10 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "h) Elaborar un informe anual del estado de la integridad en la Guardia Civil.",
+  "exp": "Es un cometido del Comité de Gestión de Conducta Ética.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "210-10",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-461"
+ },
+ {
+  "lote": "e5",
+  "i": 9,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 13",
+    "k": 213
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Qué órgano contribuirá al objeto del SINTEGC mediante la detección y persecución de las conductas contrarias a la ética profesional del personal destinado en la Dirección General de la Guardia Civil?:",
+  "opciones": [
+   "El Comité de Gestión de Conducta Ética.",
+   "El Servicio de Asuntos Internos.",
+   "El Comité interno de gestión de medidas antifraude de la Guardia Civil.",
+   "El grupo de trabajo permanente de seguimiento del Plan de Acción de ética profesional."
+  ],
+  "correcta": 1,
+  "lila": "Art. 13 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "SERVICIO DE ASUNTOS INTERNOS. El Servicio de Asuntos Internos contribuirá al objeto del SINTEGC mediante la detección y persecución de las conductas contrarias a la ética profesional del personal destinado en la Dirección General de la Guardia Civil, a cuyo fin realizará cuantas actividades sean necesarias para su esclarecimiento.",
+  "exp": "El Servicio de Asuntos Internos.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "213-0",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-462"
+ },
+ {
+  "lote": "e5",
+  "i": 10,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 8",
+    "k": 208
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Cuál de los siguientes elementos que componen el SINTEGC es el cauce principal para que los guardias civiles y las personas que trabajen en el sector privado o público, habiendo obtenido la información en un contexto laboral o profesional con la Guardia Civil, informen sobre presuntas acciones u omisiones incluidas en el ámbito de aplicación de la Ley reguladora de la protección de las personas que informen sobre infracciones normativas y de lucha contra la corrupción:",
+  "opciones": [
+   "El modelo de análisis, evaluación y seguimiento.",
+   "El Sistema interno de información.",
+   "El Buzón de ética institucional.",
+   "El Consejo de la Guardia Civil."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. En virtud de lo dispuesto en la Ley 2/2023, de 20 de febrero, reguladora de la protección de las personas que informen sobre infracciones normativas y de lucha contra la corrupción, la Guardia Civil cuenta con un Sistema interno de información con la finalidad principal de proporcionar una protección adecuada frente a las represalias que puedan sufrir las personas informantes sobre alguna de las acciones u omisiones incluidas en el apartado siguiente. Dicha protección también se aplicará a las personas de las asociaciones profesionales cuando asesoren, apoyen y asistan a su personal asociado en este ámbito. 2. Este Sistema constituye un cauce para que los guardias civiles y las personas que trabajen en el sector privado o público, habiendo obtenido la información en un contexto laboral o profesional con la Guardia Civil, informen sobre presuntas acciones u omisiones que:",
+  "exp": "El Sistema interno de información.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "208-1",
+  "pz": "f-8",
+  "sec": 33,
+  "id": "27-463"
+ },
+ {
+  "lote": "e5",
+  "i": 11,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 4",
+    "k": 204
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Señale cuál de los siguientes NO corresponde con uno de los elementos que componen el Sistema de Integridad (SINTEGC):",
+  "opciones": [
+   "El Código de Conducta del personal de la Guardia Civil.",
+   "El Plan de Acción de Ética Profesional.",
+   "El Observatorio de Conducta Ética.",
+   "El Buzón de ética institucional."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. Los elementos que componen el SINTEGC son los siguientes: a) Elementos normativos y sus desarrollos, destacando el Código de Conducta del personal de la Guardia Civil, aprobado por Real Decreto 176/2022, de 4 de marzo. b) Plan de Acción de Ética Profesional y las normas de siguiente nivel que del mismo se deriven. c) Modelo de análisis, evaluación y seguimiento. d) Sistema interno de información. e) Buzón de ética institucional. f) Elementos organizativos de gestión y control. 3. Para llevar a cabo una adecuada gestión y control del SINTEGC, así como para sistematizar su evaluación y seguimiento, contribuyen a su finalidad los siguientes órganos y unidades: a) Comité de Gestión de Conducta Ética de la Guardia Civil (COMGECET). b) Observatorio de Conducta Ética de la Guardia Civil.",
+  "exp": "El Observatorio es un órgano que contribuye a la gestión, no un elemento.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "204-2",
+  "pz": "f-4",
+  "sec": 33,
+  "id": "27-464"
+ },
+ {
+  "lote": "e5",
+  "i": 12,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 6.2",
+    "k": 206
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Plan de Acción de Ética Profesional, señale la opción INCORRECTA:",
+  "opciones": [
+   "Se elaborará como elemento definitorio del proceso de implementación y promoción de las conductas éticas en la Guardia Civil de acuerdo con sus valores y principios.",
+   "Incluirá los planes parciales de actuación que se determinen, entre los que se encontrarán los dedicados a evaluación, formación, comunicación e incentivos.",
+   "Entre sus contenidos, se elaborarán protocolos de buenas prácticas, en los que se podrán incluir consideraciones sobre los conflictos de intereses y el procedimiento administrativo de gestión de regalos u obsequios.",
+   "En él se identificará el modelo de análisis y gestión de riesgos a implementar para la evaluación y seguimiento del funcionamiento del SINTEGC."
+  ],
+  "correcta": 2,
+  "lila": "Art. 6.2 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. El PLAEP incluirá los planes parciales de actuación que se determinen, entre los que se encontrarán los dedicados a evaluación, formación, comunicación e incentivos. Entre sus contenidos, se elaborarán protocolos de buenas prácticas, de acuerdo con cada ámbito de actuación profesional en que se identifique esta necesidad, y en los que se incluirán con carácter preceptivo consideraciones sobre los conflictos de intereses y el procedimiento administrativo de gestión de regalos u obsequios.",
+  "exp": "Las consideraciones sobre conflictos de intereses y regalos se incluyen con carácter preceptivo.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "206-2",
+  "pz": "f-6",
+  "sec": 33,
+  "id": "27-465"
+ },
+ {
+  "lote": "e5",
+  "i": 13,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 7.1",
+    "k": 207
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿A través de cuál de los siguientes elementos del SINTEGC se pretende identificar aquellas áreas de comportamiento o eventos inadecuados, susceptibles de ocurrencia en un margen temporal previsible, que podrían comprometer la consecución de los objetivos estratégicos?:",
+  "opciones": [
+   "Del Sistema interno de información.",
+   "De los elementos organizativos de gestión y control.",
+   "Del modelo de análisis, evaluación y seguimiento.",
+   "Del Buzón de ética institucional."
+  ],
+  "correcta": 2,
+  "lila": "Art. 7.1 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. Mediante el análisis, evaluación y seguimiento se pretende identificar aquellas áreas de comportamiento o eventos inadecuados, susceptibles de ocurrencia en un margen temporal previsible, que podrían comprometer la consecución de los objetivos estratégicos debido a faltas de respeto de los valores y principios inspiradores, sirviendo de apoyo asimismo para evaluar la efectividad y debilidades de los controles internos de gestión establecidos.",
+  "exp": "Es la finalidad del modelo de análisis, evaluación y seguimiento.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "207-1",
+  "pz": "f-7",
+  "sec": 33,
+  "id": "27-466"
+ },
+ {
+  "lote": "e5",
+  "i": 14,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 8.5",
+    "k": 208
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Sistema interno de comunicación, señale la opción INCORRECTA:",
+  "opciones": [
+   "Estarán exceptuados de la protección establecida en el Sistema interno de información las personas de las asociaciones profesionales cuando asesoren, apoyen y asistan a su personal asociado en este ámbito.",
+   "El Sistema interno de información está diseñado, establecido y gestionado de forma segura garantizando la confidencialidad de la identidad del informante y de cualquier tercero mencionado en la comunicación.",
+   "La identidad del informante solo podrá ser comunicada a la Autoridad judicial, al Ministerio Fiscal o a la autoridad administrativa competente en el marco de una investigación penal, disciplinaria o sancionadora.",
+   "El Sistema interno de información está diseñado, establecido y gestionado de forma segura garantizando la confidencialidad de las actuaciones que se desarrollen en la gestión de la tramitación de la misma, así como la protección de datos, impidiendo el acceso de personal no autorizado."
+  ],
+  "correcta": 0,
+  "lila": "Art. 8.5 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "5. Mediante Instrucción de mi Autoridad se regulará su funcionamiento. Proporcionar protección adecuada frente a represalias que puedan sufrir las personas informantes sobre alguna de las acciones u omisiones. Esta protección se extiende a las personas de las asociaciones profesionales cuando asesoren, apoyen y asistan a su personal asociado en este ámbito. Canal interno de información Instrucción de mi Autoridad Diseñado, establecido y gestionado de forma segura Cauce para informar sobre presuntas acciones u omisiones obtenidas en contexto dentro del ámbito de aplicación de los actos de la UE enumerados en el anexo de la Directiva (UE) 2019/1937, independientemente de cómo se califiquen en el ordenamiento jurídico interno; que afecten a los intereses financieros de la UE o incidan en el mercado interior. • Puedan ser constitutivas de infracción penal o administrativa grave o muy grave (en todo caso las que impliquen quebranto económico para la Hacienda Pública y para la Seguridad Social). * Se entenderán incluidas las referidas a infracciones penales o administrativas graves o muy graves del derecho laboral en materia de seguridad y salud en el trabajo, sin perjuicio de lo dispuesto en el Real Decreto 696/2022, de 23 de agosto. y únicamente en el marco de una investigación penal, disciplinaria o sancionadora.",
+  "exp": "La protección se extiende a esas personas; no están exceptuadas.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "208-7",
+  "pz": "f-8",
+  "sec": 33,
+  "id": "27-467"
+ },
+ {
+  "lote": "e5",
+  "i": 15,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 9.3",
+    "k": 209
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿En cuál de los siguientes casos las respuestas efectuadas sobre consultas, dilemas o dudas éticas se consideran iniciadoras de procedimiento administrativo?:",
+  "opciones": [
+   "Cuando como resultado de la misma se incoe un procedimiento administrativo sancionador.",
+   "En ningún caso.",
+   "Cuando las citadas respuestas no puedan ser objeto de recurso administrativo.",
+   "Cuando las citadas respuestas sean consideradas finalizadoras del procedimiento."
+  ],
+  "correcta": 1,
+  "lila": "Art. 9.3 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "3. En ningún caso, las respuestas efectuadas sobre consultas, dilemas o dudas éticas constituyen asesoramiento sobre la actuación individual del personal que consulta, ni se consideran iniciadoras de procedimiento administrativo. De igual forma, las respuestas efectuadas no serán susceptibles de recurso administrativo alguno, tendrán únicamente carácter orientativo, no constituyendo resolución sobre los asuntos planteados, ni condicionando en modo alguno la actuación de los órganos de gestión competentes en cada caso.",
+  "exp": "En ningún caso se consideran iniciadoras de procedimiento.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "209-5",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-468"
+ },
+ {
+  "lote": "e5",
+  "i": 16,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 9.6",
+    "k": 209
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Buzón de Ética Institucional. En el caso de que el Observatorio eleve al COMGECET propuesta de respuesta sobre aquellas consultas que considere de complejidad añadida, ¿podrá ser ampliado el plazo para la contestación?:",
+  "opciones": [
+   "Se ampliará en 10 días hábiles.",
+   "Se ampliará en 7 días hábiles.",
+   "Se ampliará en 15 días naturales.",
+   "No podrá ser ampliado."
+  ],
+  "correcta": 0,
+  "lila": "Art. 9.6 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "6. Se acusará recibo de la solicitud efectuada en un plazo máximo de 7 días hábiles desde su recepción, emitiendo la contestación con la información y, en su caso, con el criterio sobre la consulta planteada en un plazo máximo de 1 mes desde la entrada de la solicitud en el registro del órgano competente. En el caso de que el Observatorio eleve al COMGECET propuesta de respuesta sobre aquellas consultas que considere de complejidad añadida, el plazo para la contestación se ampliará en 10 días hábiles.",
+  "exp": "El plazo se amplía en 10 días hábiles.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "209-11",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-469"
+ },
+ {
+  "lote": "e5",
+  "i": 17,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 11",
+    "k": 211
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Señale cuál de los siguientes es una función del Observatorio de Conducta Ética:",
+  "opciones": [
+   "Constituir grupos de trabajo para el desarrollo de aspectos concretos del PLAEP, así como participar y, en su caso, coordinar otros grupos de trabajo, comisiones de estudio y similares que afecten al objeto de esta norma.",
+   "Desarrollar y mantener políticas y procedimientos para garantizar el cumplimiento normativo en el ámbito del SINTEGC.",
+   "Identificar y evaluar los riesgos asociados con el incumplimiento normativo y desarrollar planes para mitigar esos riesgos.",
+   "Proporcionar capacitación y orientación al personal del Cuerpo sobre el cumplimiento normativo y la ética institucional."
+  ],
+  "correcta": 0,
+  "lila": "Art. 11 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "d) Constituir grupos de trabajo para el desarrollo de aspectos concretos del PLAEP, así como participar y, en su caso, coordinar otros grupos de trabajo, comisiones de estudio y similares que afecten al objeto de esta norma.",
+  "exp": "Las otras tres son cometidos del Comité de Gestión de Conducta Ética.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "211-12",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-470"
+ },
+ {
+  "lote": "e5",
+  "i": 18,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10.1",
+    "k": 210
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Comité de Gestión de Conducta Ética, señale la opción CORRECTA:",
+  "opciones": [
+   "Es el principal órgano de asesoramiento técnico, asistencia y apoyo del Observatorio de Conducta Ética, del que tendrá dependencia funcional y estará encargado, en su ámbito de actuación, de desempeñar todas aquellas funciones que el mismo le asigne.",
+   "Su estructura se basa en una persona que ejerza la Dirección, una Unidad de Análisis y una Oficina de Apoyo.",
+   "Como responsable de supervisar la aplicación del Código de Conducta, tratará los asuntos que se Ie encomienden, emitirá informes y propuestas, y asesorará en lo referente a la promoción de conductas éticas en la Institución y para el mejor funcionamiento del Sistema de Integridad.",
+   "Constituye la principal herramienta para centralizar las labores de seguimiento, impulso y evaluación de la aplicación del Código de Conducta en la Guardia Civil."
+  ],
+  "correcta": 2,
+  "lila": "Art. 10.1 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. El Comité de Gestión de Conducta Ética de la Dirección General de la Guardia Civil (en adelante, COMGECET) se constituye como un órgano colegiado especializado, permanente y funcional para la gestión, control y seguimiento de las acciones de implementación del Código de Conducta del personal de la Guardia Civil y demás actuaciones derivadas del Sistema de Integridad. Como responsable de supervisar la aplicación del Código de Conducta, tratará los asuntos que se le encomienden, emitirá informes y propuestas, y asesorará en lo referente a la promoción de conductas éticas en la Institución y para el mejor funcionamiento del Sistema de Integridad.",
+  "exp": "Es literal. Las demás describen al Observatorio.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "210-1",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-471"
+ },
+ {
+  "lote": "e5",
+  "i": 19,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 14.4",
+    "k": 214
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Señale la opción INCORRECTA:",
+  "opciones": [
+   "El objetivo del Comité interno de gestión de medidas antifraude es la promoción institucional de una cultura que ejerza un efecto disuasorio para cualquier tipo de actividad fraudulenta y que haga posible su prevención y detección, así como la adopción de procedimientos que permitan garantizar que tales casos se abordan de forma adecuada y en el momento preciso.",
+   "El Servicio de Asuntos Internos contribuirá al objeto del SINTEGC mediante la detección y persecución de las conductas contrarias a la ética profesional del personal destinado en la Dirección General de la Guardia Civil, a cuyo fin realizará cuantas actividades sean necesarias para su esclarecimiento.",
+   "El grupo de trabajo permanente de seguimiento del Plan de Acción de Ética Profesional se reunirá con carácter anual al objeto de ser informado del desarrollo de las actuaciones del SINTEGC.",
+   "El acceso a los datos personales contenidos en el Buzón de Ética Institucional quedará limitado, dentro del ámbito de sus competencias y funciones, exclusivamente a el personal del Observatorio de Conducta Ética y a los usuarios autorizados de acuerdo con el perfil que se les atribuya."
+  ],
+  "correcta": 2,
+  "lila": "Art. 14.4 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "4. El grupo de trabajo se reunirá con carácter semestral al objeto de ser informado del desarrollo de las actuaciones del SINTEGC. La organización y funcionamiento del grupo de trabajo permanente se realizará conforme a lo recogido en la Orden INT/656/2023, de 19 de junio, por la que se desarrolla el Real Decreto 175/2022, de 4 de marzo, por el que se desarrollan los derechos de las asociaciones profesionales de guardias civiles, de sus representantes y de los miembros del Consejo de la Guardia Civil elegidos en representación de los miembros del Cuerpo. del Plan de Acción de Ética Profesional (PLAEP). Integrado por: • Representantes de la DGGC. • Representantes de asociaciones profesionales con representación en el Consejo de la Guardia Civil. Reuniones con carácter semestral al objeto de ser informado del desarrollo de las actuaciones del SINTEGC. - El Gabinete Técnico. - La Dirección Adjunta Operativa. - El Mando de Personal. - El Mando de Apoyo. - La Asesoría Jurídica. - Cada una de las asociaciones profesionales con representación en el Consejo de la Guardia Civil. Se informarán en el grupo: • Propuestas de revisión y actualización de la normativa del SINTEGC. • Desarrollo de aspectos concretos del PLAEP. • Consultas planteadas a través del Buzón de Ética Institucional. - Informar sobre si debe elevarse al COMGECET. - Proponer una respuesta. - Cualquier circunstancia de interés.",
+  "exp": "El grupo se reúne con carácter semestral.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "214-10",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-472"
+ },
+ {
+  "lote": "e5",
+  "i": 20,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 3",
+    "k": 203
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Como fundamentos que deben regir toda acción de la Guardia Civil orientada al aseguramiento de la gestión responsable de la conducta ética en el Cuerpo, se aplicarán los principios de, señale la opción INCORRECTA:",
+  "opciones": [
+   "Imparcialidad y objetividad en la actuación, independientemente de la condición de las personas implicadas.",
+   "Proactividad en las labores de análisis del riesgo de integridad y propuesta de actuaciones.",
+   "Ciclo de vida completo, que comprende el diagnóstico, implicación de todo el personal, planificación, implantación, seguimiento y evaluación.",
+   "Confianza a inspirar en el personal de la Guardia Civil."
+  ],
+  "correcta": 2,
+  "lila": "Art. 3 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. Como fundamentos que deben regir toda acción de la Guardia Civil orientada al aseguramiento de la gestión responsable de la conducta ética en el Cuerpo, se aplicarán los siguientes principios: a) Confianza a inspirar en el personal de la Guardia Civil. b) Imparcialidad y objetividad en la actuación, independientemente de la condición de las personas implicadas. c) Protección de las personas implicadas en las actuaciones, de su imagen y reputación, así como la de la Institución. d) Unicidad de criterio y coherencia institucional en las actuaciones de los elementos del Sistema. e) Proactividad en las labores de análisis del riesgo de integridad y propuesta de actuaciones. 2. Asimismo, habrán de tenerse en cuenta los principios del Sistema de Integridad de la Administración General del Estado: a) Carácter holístico y coherente en sus ámbitos objetivo y subjetivo de aplicación, abarcando todas aquellas funciones en cuya ejecución puedan presentarse riesgos para la integridad, implicando al conjunto del Cuerpo. b) Ciclo de vida completo, que comprende el diagnóstico, implicación de todo el personal, planificación, implantación, seguimiento y evaluación. c) Orientado a la mejora continua, eficiente y sostenible, con medios proporcionales a los resultados que se quieran alcanzar y acordes con los recursos disponibles, de forma que se asegure la estabilidad y validez para el medio plazo.",
+  "exp": "El ciclo de vida completo es un principio del sistema de la Administración General del Estado, no de este apartado.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "203-1",
+  "pz": "f-3",
+  "sec": 33,
+  "id": "27-473"
+ },
+ {
+  "lote": "e5",
+  "i": 21,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 4",
+    "k": 204
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Para llevar a cabo una adecuada gestión y control del SINTEGC, así como para sistematizar su evaluación y seguimiento. ¿cuál de los siguientes órganos contribuye a su finalidad?:",
+  "opciones": [
+   "El Buzón de ética institucional.",
+   "El Sistema interno de información.",
+   "El Comité de Gestión de Conducta Ética de la Guardia Civil.",
+   "El Observatorio de Medidas antifraude."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "3. Para llevar a cabo una adecuada gestión y control del SINTEGC, así como para sistematizar su evaluación y seguimiento, contribuyen a su finalidad los siguientes órganos y unidades: a) Comité de Gestión de Conducta Ética de la Guardia Civil (COMGECET).",
+  "exp": "El Comité de Gestión de Conducta Ética es uno de los órganos que contribuyen.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "204-9",
+  "pz": "f-4",
+  "sec": 33,
+  "id": "27-474"
+ },
+ {
+  "lote": "e5",
+  "i": 22,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 6.2",
+    "k": 206
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Entre los contenidos del Plan de Acción de Ética Profesional se elaborarán protocolos de buenas prácticas, de acuerdo con cada ámbito de actuación profesional en que se identifique esta necesidad, y en los que se incluirán con carácter preceptivo:",
+  "opciones": [
+   "Consideraciones sobre los conflictos de intereses.",
+   "El procedimiento administrativo de rechazo de regalos u obsequios.",
+   "El procedimiento de recusación y abstención en actos administrativos.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 0,
+  "lila": "Art. 6.2 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. El PLAEP incluirá los planes parciales de actuación que se determinen, entre los que se encontrarán los dedicados a evaluación, formación, comunicación e incentivos. Entre sus contenidos, se elaborarán protocolos de buenas prácticas, de acuerdo con cada ámbito de actuación profesional en que se identifique esta necesidad, y en los que se incluirán con carácter preceptivo consideraciones sobre los conflictos de intereses y el procedimiento administrativo de gestión de regalos u obsequios.",
+  "exp": "Conflictos de intereses y gestión de regalos u obsequios; no su rechazo.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "206-2",
+  "pz": "f-6",
+  "sec": 33,
+  "id": "27-475"
+ },
+ {
+  "lote": "e5",
+  "i": 23,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 8.4",
+    "k": 208
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Sistema interno de información. ¿Podrá ser comunicada la identidad del informante?:",
+  "opciones": [
+   "En ningún caso podrá ser comunicada la identidad del informante.",
+   "Sí, a los usuarios autorizados de acuerdo con el perfil que se les atribuya.",
+   "A la autoridad sancionadora competente, exclusivamente para la sanción de infracciones muy graves o graves.",
+   "Ninguna de las opciones es correcta."
+  ],
+  "correcta": 3,
+  "lila": "Art. 8.4 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "4. El Sistema interno de información está diseñado, establecido y gestionado de forma segura garantizando la confidencialidad de la identidad del informante y de cualquier tercero mencionado en la comunicación y, de las actuaciones que se desarrollen en la gestión de la tramitación de la misma, así como la protección de datos, impidiendo el acceso de personal no autorizado. La identidad del informante solo podrá ser comunicada a la Autoridad judicial, al Ministerio Fiscal o a la autoridad administrativa competente en el marco de una investigación penal, disciplinaria o sancionadora.",
+  "exp": "La identidad solo puede comunicarse a la autoridad judicial, Ministerio Fiscal o autoridad administrativa competente.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "208-6",
+  "pz": "f-8",
+  "sec": 33,
+  "id": "27-476"
+ },
+ {
+  "lote": "e5",
+  "i": 24,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 9",
+    "k": 209
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Queda fuera del ámbito del Buzón las consultas o dudas éticas que puedan plantearse en relación con:",
+  "opciones": [
+   "Cuestiones o asuntos sometidos a investigación, enjuiciamiento o expediente administrativo.",
+   "El régimen disciplinario del personal de la Guardia Civil.",
+   "Denuncias internas o externas, quejas o sugerencias.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 2,
+  "lila": "Art. 9 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "4. Quedan fuera del ámbito del Buzón las consultas o dudas éticas que puedan plantearse en relación con: a) Cuestiones o asuntos sometidos a investigación, enjuiciamiento o expediente disciplinario. b) El régimen de incompatibilidades del personal de la Guardia Civil. c) Denuncias internas o externas, quejas o sugerencias.",
+  "exp": "La exclusión alcanza a expedientes disciplinarios y al régimen de incompatibilidades; las denuncias, quejas o sugerencias son literales.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "209-6",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-477"
+ },
+ {
+  "lote": "e5",
+  "i": 25,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 9",
+    "k": 209
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto a las consultas realizadas al Buzón de ética institucional, señale la opción CORRECTA:",
+  "opciones": [
+   "Podrán realizarse verbalmente o por escrito a través de los medios electrónicos habilitados al efecto que serán oportunamente publicitados.",
+   "No serán admitidas las solicitudes anónimas.",
+   "Se garantizará la confidencialidad de la identidad de la persona solicitante, salvo que la autoridad de gestión autorice su difusión en interés de la buena imagen de la Institución.",
+   "Se acusará recibo de la solicitud efectuada en un plazo máximo de 10 días desde recepción."
+  ],
+  "correcta": 1,
+  "lila": "Art. 9 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "5. Las consultas habrán de realizarse obligatoriamente por escrito a través de los medios electrónicos habilitados al efecto que serán oportunamente publicitados, no admitiéndose las solicitudes anónimas, y garantizándose la confidencialidad de la identidad de la persona solicitante con el pleno respeto de la normativa de protección de datos de carácter personal. 6. Se acusará recibo de la solicitud efectuada en un plazo máximo de 7 días hábiles desde su recepción, emitiendo la contestación con la información y, en su caso, con el criterio sobre la consulta planteada en un plazo máximo de 1 mes desde la entrada de la solicitud en el registro del órgano competente. En el caso de que el Observatorio eleve al COMGECET propuesta de respuesta sobre aquellas consultas que considere de complejidad añadida, el plazo para la contestación se ampliará en 10 días hábiles.",
+  "exp": "Es obligatorio el escrito, no hay anónimas y el acuse es en 7 días hábiles.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "209-10",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-478"
+ },
+ {
+  "lote": "e5",
+  "i": 26,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 11.4",
+    "k": 211
+   },
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10.1",
+    "k": 210
+   },
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10",
+    "k": 210
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Comité de Gestión de Conducta Ética, señale la opción INCORRECTA:",
+  "opciones": [
+   "Es el responsable de supervisar la aplicación del Código de Conducta, tratará los asuntos que se Ie encomienden, emitirá informes y propuestas, y asesorará en lo referente a la promoción de conductas éticas en la Institución y para el mejor funcionamiento del Sistema de Integridad.",
+   "Tiene como cometido proporcionar capacitación y orientación al personal del Cuerpo sobre el cumplimiento normativo y la ética institucional.",
+   "Contará con el órgano de Gestión, como elemento permanente del Comité que estará conformado por las personas que ejerzan la Presidencia, la Secretaría, y las que representen al Servicio de Asuntos Internos y a la Asesoría Jurídica.",
+   "Contará con la información y el apoyo que precise para el desempeño de sus funciones, del resto de Jefaturas, Servicios y demás Unidades de la Dirección General de la Guardia Civil, así como de las asociaciones profesionales de guardias civiles."
+  ],
+  "correcta": 3,
+  "lila": "Art. 11.4 y Art. 10.1 y Art. 10 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "Art. 11.4. 4. El Observatorio contará con la información y el apoyo que precise para el desempeño de sus funciones, del resto de Jefaturas, Servicios y demás Unidades de la Dirección General de la Guardia Civil, así como de las asociaciones profesionales de guardias civiles. la Guardia Civil. Principal órgano de asesoramiento técnico, asistencia y apoyo del COMGECET. Compuesto por:<br>Art. 10.1. 1. El Comité de Gestión de Conducta Ética de la Dirección General de la Guardia Civil (en adelante, COMGECET) se constituye como un órgano colegiado especializado, permanente y funcional para la gestión, control y seguimiento de las acciones de implementación del Código de Conducta del personal de la Guardia Civil y demás actuaciones derivadas del Sistema de Integridad. Como responsable de supervisar la aplicación del Código de Conducta, tratará los asuntos que se le encomienden, emitirá informes y propuestas, y asesorará en lo referente a la promoción de conductas éticas en la Institución y para el mejor funcionamiento del Sistema de Integridad.<br>Art. 10. l) Proporcionar capacitación y orientación al personal del Cuerpo sobre el cumplimiento normativo y la ética institucional, mediante el establecimiento de directrices ante aquellas consultas planteadas a través del Buzón de Ética sobre situaciones que no estén previamente identificadas o ante planteamientos sobre hechos hipotéticos o que no han ocurrido todavía, resolviendo las consultas que, debido a su complejidad, le sean presentadas por el Observatorio de Conducta Ética.",
+  "exp": "La información y el apoyo del resto de unidades se predican del Observatorio.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "211-4",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-479"
+ },
+ {
+  "lote": "e5",
+  "i": 27,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 12",
+    "k": 212
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Comité interno de gestión de medidas antifraude. El citado Comité estará compuesto por una serie de Vocales. Señale el Vocal incorrecto:",
+  "opciones": [
+   "Un representante de la Jefatura de Información.",
+   "Un representante del Servicio de Contratación.",
+   "Un representante del Gabinete Técnico.",
+   "Un representante del Mando de Personal."
+  ],
+  "correcta": 3,
+  "lila": "Art. 12 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "5. La persona que ejerza la Presidencia del Comité interno será la que represente a la Dirección General de la Guardia Civil en el Comité de Gestión del Plan de Medidas Antifraude del Ministerio del Interior. Además, estará compuesto por los siguientes Vocales: a) Representante del Gabinete Técnico. b) Representante de la Sección de Logística del Estado Mayor. c) Representante de la Secretaría Técnica del Mando de Personal. d) Representante de la Secretaría Técnica del Mando de Apoyo. e) Representante de la Jefatura de Asuntos Económicos. f) Representante del Servicio de Contratación. g) Representante del Servicio de Asuntos Internos. h) Representante de la Asesoría Jurídica. i) Representante de la Jefatura de Policía Judicial. j) Representante de la Jefatura de Información.",
+  "exp": "El vocal representa a la Secretaría Técnica del Mando de Personal.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "212-5",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-480"
+ },
+ {
+  "lote": "e5",
+  "i": 28,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 14.2",
+    "k": 214
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Quién será la persona que ejerza la Dirección del Observatorio de Conducta Ética?:",
+  "opciones": [
+   "La persona que ejerza la presidencia del grupo de trabajo permanente de seguimiento del Plan de Acción de Ética Profesional.",
+   "La persona titular del Mando de Personal.",
+   "La persona que ejerza la presidencia del Comité de Gestión de Conducta Ética de la Guardia Civil.",
+   "La persona que ejerza la presidencia del Comité interno de gestión de medidas antifraude de la Guardia Civil."
+  ],
+  "correcta": 0,
+  "lila": "Art. 14.2 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. La persona que ejerza la Presidencia del grupo de trabajo permanente será la que ejerza la Dirección del Observatorio de Conducta Ética, concebido con la finalidad de implementar eficazmente el PLAEP. La persona que ejerza la Secretaría del grupo de trabajo será un oficial designado por la persona que ejerza la Presidencia. Además de las personas que ejerzan la Presidencia y la Secretaría, son miembros del grupo de trabajo permanente personas representantes de:",
+  "exp": "La Presidencia del grupo de trabajo ejerce la Dirección del Observatorio.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "214-2",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-481"
+ },
+ {
+  "lote": "e5",
+  "i": 29,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 15.1",
+    "k": 215
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Quiénes contribuirán al fortalecimiento de la confianza de la ciudadanía en la Guardia Civil?:",
+  "opciones": [
+   "Todos los componentes de la Guardia Civil y sus Unidades.",
+   "Los miembros del Comité de Gestión de Conducta Ética de la Guardia Civil.",
+   "Todos los componentes de la Guardia Civil, exclusivamente.",
+   "Los poderes públicos."
+  ],
+  "correcta": 0,
+  "lila": "Art. 15.1 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. Todos los componentes de la Guardia Civil y sus Unidades contribuirán, mediante el ejercicio de sus competencias y el desempeño de sus cometidos en todos aquellos destinos o puestos que puedan ocupar, al fortalecimiento de la confianza de la ciudadanía en la Guardia Civil, donde el nivel ético y moral de sus profesionales es un pilar fundamental sobre el que erigir una institución solvente dedicada, por mandato constitucional, a garantizar la seguridad ciudadana y proteger el libre ejercicio de los derechos y libertades.",
+  "exp": "Todos los componentes y sus unidades.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "215-1",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-482"
+ },
+ {
+  "lote": "e5",
+  "i": 31,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 6.3",
+    "k": 206
+   },
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 6.1",
+    "k": 206
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Plan de Acción de Ética Profesional, señale la opción INCORRECTA:",
+  "opciones": [
+   "Se elaborará como elemento definitorio del proceso de implementación y promoción de las conductas éticas en la Guardia Civil de acuerdo con sus valores y principios.",
+   "Incluirá los planes parciales de actuación que se determinen, entre los que se encontrarán los dedicados a evaluación, formación, comunicación e incentivos.",
+   "Entre sus contenidos, se elaborarán protocolos de buenas prácticas, de acuerdo con cada ámbito de actuación profesional en que se identifique esta necesidad, y en los que se incluirán con carácter preceptivo consideraciones sobre los conflictos de intereses y el procedimiento administrativo de gestión de regalos u obsequios.",
+   "En él, se identificará el modelo de análisis y gestión de riesgos a implementar para la evaluación y seguimiento del funcionamiento del COMGECET, que permita las propuestas de medidas a establecer."
+  ],
+  "correcta": 3,
+  "lila": "Art. 6.3 y Art. 6.1 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "Art. 6.3. 3. Igualmente, se identificará en el PLAEP el modelo de análisis y gestión de riesgos a implementar para la evaluación y seguimiento del funcionamiento del SINTEGC, que permita la propuesta de medidas a establecer que, conforme a los valores y principios incluidos en el Código de Conducta y su normativa de implementación, imposibiliten o, al menos, dificulten la ocurrencia de comportamientos indeseados o que minimicen sus consecuencias.<br>Art. 6.1. 1. Como elemento definitorio del proceso de implementación y promoción de las conductas éticas en la Guardia Civil de acuerdo con sus valores y principios, se elaborará un Plan de Acción de Ética Profesional (en adelante PLAEP).",
+  "exp": "El modelo de riesgos es para el funcionamiento del SINTEGC, no del Comité.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "206-3",
+  "pz": "f-6",
+  "sec": 33,
+  "repetidaDe": "27-465"
+ },
+ {
+  "lote": "e5",
+  "i": 32,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 8",
+    "k": 208
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. El sistema interno de información constituye un cauce para que los guardias civiles y las personas que trabajen en el sector privado o público, habiendo obtenido la información en un contexto laboral o profesional con la Guardia Civil, informen sobre presuntas acciones u omisiones que puedan ser constitutivas de:",
+  "opciones": [
+   "Infracción penal o administrativa grave o muy grave (en todo caso las que impliquen quebranto económico para la Hacienda Pública y para la Seguridad Social).",
+   "Infracción penal o administrativa grave o muy grave, salvo las que impliquen delito contra la Hacienda Pública o la Seguridad Social.",
+   "Infracción penal o administrativa muy grave (en todo caso las que impliquen quebranto económico para la Administración PúblicA..",
+   "Infracción penal o administrativa, en especial las que impliquen delito contra la Hacienda Pública o la Seguridad Social."
+  ],
+  "correcta": 0,
+  "lila": "Art. 8 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. Este Sistema constituye un cauce para que los guardias civiles y las personas que trabajen en el sector privado o público, habiendo obtenido la información en un contexto laboral o profesional con la Guardia Civil, informen sobre presuntas acciones u omisiones que: a) Puedan constituir infracciones de Derecho de la UE siempre que entren dentro del ámbito de aplicación de los actos de la UE enumerados en el anexo de la Directiva (UE) 2019/1937 del Parlamento Europeo y del Consejo de 23 de octubre de 2019 relativa a la protección de las personas que informen sobre infracciones del Derecho de la Unión, con independencia de la calificación que de las mismas realice el ordenamiento jurídico interno; que afecten a los intereses financieros de la UE (art. 325 del Tratado de Funcionamiento de la Unión Europea (TFUE)) o incidan en el mercado interior (art. 26.2 TFUE). b) Acciones u omisiones que puedan ser constitutivas de infracción penal o administrativa grave o muy grave (en todo caso las que impliquen quebranto económico para la Hacienda Pública y para la Seguridad Social). Asimismo, se entenderán incluidas las referidas a infracciones penales o administrativas graves o muy graves del derecho laboral en materia de seguridad y salud en el trabajo, sin perjuicio de lo dispuesto en el Real Decreto 696/2022, de 23 de agosto, por el que se regula el procedimiento para la tramitación de propuestas, sugerencias, quejas y solicitudes de información del personal de la Guardia Civil.",
+  "exp": "Es literal.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "208-2",
+  "pz": "f-8",
+  "sec": 33,
+  "id": "27-483"
+ },
+ {
+  "lote": "e5",
+  "i": 33,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 9.5",
+    "k": 209
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Buzón de Ética Institucional, señale la opción CORRECTA:",
+  "opciones": [
+   "Salvo que expresamente se determine lo contrario, las respuestas efectuadas sobre consultas, dilemas o dudas éticas se consideran iniciadoras de procedimiento administrativo.",
+   "Las consultas habrán de realizarse obligatoriamente por escrito a través de los medios electrónicos habilitados al efecto que serán oportunamente publicitados, no admitiéndose las solicitudes anónimas.",
+   "Quedan fuera del ámbito del Buzón las consultas o dudas éticas que puedan plantearse en relación con el régimen sancionador interno.",
+   "No serán admitidas consultas sobre planteamientos o presentaciones que recaigan sobre hechos hipotéticos o que no han ocurrido todavía."
+  ],
+  "correcta": 1,
+  "lila": "Art. 9.5 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "5. Las consultas habrán de realizarse obligatoriamente por escrito a través de los medios electrónicos habilitados al efecto que serán oportunamente publicitados, no admitiéndose las solicitudes anónimas, y garantizándose la confidencialidad de la identidad de la persona solicitante con el pleno respeto de la normativa de protección de datos de carácter personal.",
+  "exp": "Es literal. Las respuestas no inician procedimiento y sí cabe plantear hechos hipotéticos.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "209-10",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-484"
+ },
+ {
+  "lote": "e5",
+  "i": 34,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10.1",
+    "k": 210
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Cuál de los siguientes se constituye como un órgano colegiado especializado, permanente y funcional para la gestión, control y seguimiento de las acciones de implementación del Código de Conducta del personal de la Guardia Civil y demás actuaciones derivadas del Sistema de Integridad?:",
+  "opciones": [
+   "El Comité de Gestión de Conducta Ética de la Dirección General de la Guardia Civil.",
+   "El Observatorio de Conducta Ética de la Guardia Civil.",
+   "El Comité interno de gestión de medidas antifraude de la Guardia Civil.",
+   "El Consejo de Gestión del Código de Conducta de la Dirección General de la Guardia Civil."
+  ],
+  "correcta": 0,
+  "lila": "Art. 10.1 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. El Comité de Gestión de Conducta Ética de la Dirección General de la Guardia Civil (en adelante, COMGECET) se constituye como un órgano colegiado especializado, permanente y funcional para la gestión, control y seguimiento de las acciones de implementación del Código de Conducta del personal de la Guardia Civil y demás actuaciones derivadas del Sistema de Integridad. Como responsable de supervisar la aplicación del Código de Conducta, tratará los asuntos que se le encomienden, emitirá informes y propuestas, y asesorará en lo referente a la promoción de conductas éticas en la Institución y para el mejor funcionamiento del Sistema de Integridad.",
+  "exp": "El Comité de Gestión de Conducta Ética.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "210-1",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-485"
+ },
+ {
+  "lote": "e5",
+  "i": 35,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10",
+    "k": 210
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Señale cuál de los siguientes NO corresponde con una de las funciones del Observatorio de Conducta Ética:",
+  "opciones": [
+   "Tratamiento y centralización de toda la información relativa a la evaluación y seguimiento del PLAEP y las medidas en él contenidas.",
+   "Responder, en el ámbito de su responsabilidad, a las consultas planteadas a través del Buzón de Ética, elevando al COMCECET propuesta de respuesta sobre aquéllas que considere de complejidad añadida.",
+   "Resolver/proponer la resolución a los conflictos de responsabilidad que puedan aparecer entre los diferentes elementos que componen la estructura organizativa del SINTEGC.",
+   "Constituirse en interlocutor con las agencias o centros de similar naturaleza implicados en materia de integridad, conducta ética, compliance corporativo, así como otros interlocutores legítimos en la materia."
+  ],
+  "correcta": 2,
+  "lila": "Art. 10 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "g) Resolver/proponer la resolución a los conflictos de responsabilidad que puedan aparecer entre los diferentes elementos que componen la estructura organizativa del SINTEGC.",
+  "exp": "Resolver los conflictos de responsabilidad corresponde al Comité de Gestión.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "210-9",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-486"
+ },
+ {
+  "lote": "e5",
+  "i": 37,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 16",
+    "k": 216
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Con qué periodicidad se presentará un informe en la sesión correspondiente del Consejo de la Guardia Civil, que incluirá resumen de actividad, análisis de situación y propuesta de actuaciones a desarrollar?:",
+  "opciones": [
+   "Anualmente.",
+   "Cada semestre.",
+   "Trimestralmente, coincidiendo con las reuniones ordinarias del Consejo.",
+   "Cada cinco años."
+  ],
+  "correcta": 0,
+  "lila": "Art. 16 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "INFORMES. Con carácter anual, se presentará un informe en la sesión correspondiente del Consejo de la Guardia Civil, que incluirá resumen de actividad, análisis de situación y propuesta de actuaciones a desarrollar.",
+  "exp": "Con carácter anual.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "216-0",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-487"
+ },
+ {
+  "lote": "e5",
+  "i": 38,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 17",
+    "k": 217
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. El acceso a los datos personales contenidos en el Sistema Interno de información quedará limitado, dentro del ámbito de sus competencias y funciones, exclusivamente a una serie de personas. En relación a lo anteriormente citado, señale la persona INCORRECTA:",
+  "opciones": [
+   "La persona titular de la Asesoría Jurídica de la Administración General del Estado.",
+   "Los usuarios autorizados de acuerdo con el perfil que se les atribuya.",
+   "La persona designada como Delegado de Protección de Datos de la Guardia Civil.",
+   "La autoridad con potestad disciplinaria solo cuando pudiera proceder la adopción de medidas disciplinarias."
+  ],
+  "correcta": 0,
+  "lila": "Art. 17 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "3. El acceso a los datos personales contenidos en el Sistema Interno de información quedará limitado, dentro del ámbito de sus competencias y funciones, exclusivamente a: a) El COMGECET como responsable del Sistema y a quien lo gestione directamente. b) La autoridad con potestad disciplinaria solo cuando pudiera proceder la adopción de medidas disciplinarias. c) La persona titular de la Asesoría Jurídica de la Dirección General de la Guardia Civil, si procediera la adopción de medidas legales en relación con los hechos relatados en la comunicación. d) Los usuarios autorizados de acuerdo con el perfil que se les atribuya. e) La persona designada como Delegado de Protección de Datos de la Guardia Civil. El tratamiento de los datos personales incluidos en Sistema Interno de Información se ajustará a lo determinado en el artículo 32 de la Ley 2/2023, de 20 de febrero.",
+  "exp": "La Asesoría Jurídica es la de la Dirección General de la Guardia Civil.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "217-5",
+  "pz": "f-12",
+  "sec": 24,
+  "id": "27-488"
+ },
+ {
+  "lote": "e5",
+  "i": 39,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 3",
+    "k": 203
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Como fundamentos que deben regir toda acción de la Guardia Civil orientada al aseguramiento de la gestión responsable de la conducta ética en el Cuerpo, se aplicarán una serie de principios. Señale el principio INCORRECTO:",
+  "opciones": [
+   "Celeridad en las labores de análisis del riesgo de integridad y propuesta de actuaciones.",
+   "Imparcialidad y objetividad en la actuación, independientemente de la condición de las personas implicadas.",
+   "Unicidad de criterio y coherencia institucional en las actuaciones de los elementos del Sistema.",
+   "Protección de las personas implicadas en las actuaciones, de su imagen y reputación, así como la de la Institución."
+  ],
+  "correcta": 0,
+  "lila": "Art. 3 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. Como fundamentos que deben regir toda acción de la Guardia Civil orientada al aseguramiento de la gestión responsable de la conducta ética en el Cuerpo, se aplicarán los siguientes principios: a) Confianza a inspirar en el personal de la Guardia Civil. b) Imparcialidad y objetividad en la actuación, independientemente de la condición de las personas implicadas. c) Protección de las personas implicadas en las actuaciones, de su imagen y reputación, así como la de la Institución. d) Unicidad de criterio y coherencia institucional en las actuaciones de los elementos del Sistema. e) Proactividad en las labores de análisis del riesgo de integridad y propuesta de actuaciones.",
+  "exp": "El principio es la proactividad, no la celeridad.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "203-1",
+  "pz": "f-3",
+  "sec": 33,
+  "id": "27-489"
+ },
+ {
+  "lote": "e5",
+  "i": 40,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 4.1",
+    "k": 204
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Cómo se denomina al conjunto interrelacionado de elementos organizativos, políticas, normas, procesos y procedimientos que se relacionan entre sí de forma ordenada y tienen por finalidad perseguir las conductas contrarias a la legalidad?:",
+  "opciones": [
+   "Servicio de Asuntos Internos.",
+   "COMGECET.",
+   "SINTEGC.",
+   "Observatorio."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4.1 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. El SINTEGC es el conjunto interrelacionado de elementos organizativos, políticas, normas, procesos y procedimientos que se relacionan entre sí de forma ordenada y tienen por finalidad fomentar comportamientos éticos basados en valores y principios orientados al interés general y el bien común, así como para prevenir, detectar y, en su caso, perseguir las conductas contrarias a la legalidad.",
+  "exp": "Es la definición del SINTEGC.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "204-1",
+  "pz": "f-4",
+  "sec": 33,
+  "id": "27-490"
+ },
+ {
+  "lote": "e5",
+  "i": 41,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 4",
+    "k": 204
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Para llevar a cabo una adecuada gestión y control del Sistema de Integridad, así como para sistematizar su evaluación y seguimiento, contribuyen a su finalidad una serie de órganos y unidades. Señale el órgano o unidad INCORRECTO:",
+  "opciones": [
+   "El Servicio de Asuntos Internos.",
+   "El Observatorio de Conducta Ética de la Guardia Civil.",
+   "El Consejo de Gestión del Código de Conducta de la Guardia Civil.",
+   "El Grupo de trabajo permanente de seguimiento del Plan de Acción de ética profesional."
+  ],
+  "correcta": 2,
+  "lila": "Art. 4 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "3. Para llevar a cabo una adecuada gestión y control del SINTEGC, así como para sistematizar su evaluación y seguimiento, contribuyen a su finalidad los siguientes órganos y unidades: a) Comité de Gestión de Conducta Ética de la Guardia Civil (COMGECET). b) Observatorio de Conducta Ética de la Guardia Civil. c) Comité interno de gestión de medidas antifraude de la Guardia Civil. d) El Servicio de Asuntos Internos.",
+  "exp": "No existe un Consejo de Gestión del Código de Conducta.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "204-9",
+  "pz": "f-4",
+  "sec": 33,
+  "id": "27-491"
+ },
+ {
+  "lote": "e5",
+  "i": 42,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 6.2",
+    "k": 206
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Cuál de los siguientes elementos del Sistema de Integridad elaborará, entre sus contenidos, protocolos de buenas prácticas, de acuerdo con cada ámbito de actuación profesional en que se identifique esta necesidad, y en los que se incluirán con carácter preceptivo consideraciones sobre los conflictos de intereses y el procedimiento administrativo de gestión de regalos u obsequios?:",
+  "opciones": [
+   "Los elementos organizativos de gestión y control.",
+   "El Plan de Acción de Ética Profesional.",
+   "El grupo de trabajo permanente del seguimiento del Sistema de Integridad.",
+   "El modelo de análisis, evaluación y seguimiento."
+  ],
+  "correcta": 1,
+  "lila": "Art. 6.2 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. El PLAEP incluirá los planes parciales de actuación que se determinen, entre los que se encontrarán los dedicados a evaluación, formación, comunicación e incentivos. Entre sus contenidos, se elaborarán protocolos de buenas prácticas, de acuerdo con cada ámbito de actuación profesional en que se identifique esta necesidad, y en los que se incluirán con carácter preceptivo consideraciones sobre los conflictos de intereses y el procedimiento administrativo de gestión de regalos u obsequios.",
+  "exp": "El Plan de Acción de Ética Profesional.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "206-2",
+  "pz": "f-6",
+  "sec": 33,
+  "id": "27-492"
+ },
+ {
+  "lote": "e5",
+  "i": 43,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 8.4",
+    "k": 208
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Sistema interno de información. Respecto a la comunicación de la identidad del informante, señale la opción CORRECTA:",
+  "opciones": [
+   "No podrá ser comunicada en ningún caso.",
+   "Podrá ser comunicada a la autoridad administrativa competente en el marco de una investigación disciplinaria.",
+   "Exclusivamente podrá ser comunicada a la Autoridad judicial y al Ministerio Fiscal.",
+   "Podrá Ser comunicada por infracciones disciplinarias graves o muy graves a las personas interesadas."
+  ],
+  "correcta": 1,
+  "lila": "Art. 8.4 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "4. El Sistema interno de información está diseñado, establecido y gestionado de forma segura garantizando la confidencialidad de la identidad del informante y de cualquier tercero mencionado en la comunicación y, de las actuaciones que se desarrollen en la gestión de la tramitación de la misma, así como la protección de datos, impidiendo el acceso de personal no autorizado. La identidad del informante solo podrá ser comunicada a la Autoridad judicial, al Ministerio Fiscal o a la autoridad administrativa competente en el marco de una investigación penal, disciplinaria o sancionadora.",
+  "exp": "Cabe comunicarla a la autoridad administrativa competente en una investigación disciplinaria.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "208-6",
+  "pz": "f-8",
+  "sec": 33,
+  "id": "27-493"
+ },
+ {
+  "lote": "e5",
+  "i": 44,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 11",
+    "k": 211
+   },
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10",
+    "k": 210
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Señale cuál de los siguientes NO corresponde con una de las funciones del Comité de Conducta Ética:",
+  "opciones": [
+   "Informar anualmente del estado de situación a la persona titular de la Dirección General, aprobando el análisis de situación correspondiente a propuesta del Observatorio.",
+   "Tratamiento y centralización de toda la información relativa a la evaluación y seguimiento del PLAEP y las medidas en él contenidas.",
+   "Coordinar las actuaciones de los diferentes elementos de la estructura organizativa del SINTEGC, de modo que estén alineadas con la estrategia institucional y sus principios de actuación.",
+   "Promover el acometimiento de evaluaciones que permitan verificar el cumplimiento de las previsiones normativas del SINTECC."
+  ],
+  "correcta": 1,
+  "lila": "Art. 11 y Art. 10 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "Art. 11. f) Tratamiento y centralización de toda la información relativa a la evaluación y seguimiento del PLAEP y las medidas en él contenidas.<br>Art. 10. b) Informar anualmente del estado de situación a la personal titular de la Dirección General, aprobando el análisis de situación correspondiente a propuesta del Observatorio. c) Coordinar las actuaciones de los diferentes elementos de la estructura organizativa del SINTEGC, de modo que estén alineadas con la estrategia institucional y sus principios de actuación. d) Promover el acometimiento de evaluaciones que permitan verificar el cumplimiento de las previsiones normativas del SINTEGC.",
+  "exp": "El tratamiento y centralización de la información es función del Observatorio.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "211-14",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-494"
+ },
+ {
+  "lote": "e5",
+  "i": 45,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10.1",
+    "k": 210
+   },
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 11.1",
+    "k": 211
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Observatorio de Conducta Ética de la Dirección General de la Guardia Civil, señale la opción INCORRECTA:",
+  "opciones": [
+   "Se constituye como el colegiado especializado, permanente y funcional para la gestión, control y seguimiento de las acciones de implementación del Código de Conducta del personal de la Guardia Civil.",
+   "Es el principal órgano de asesoramiento técnico, asistencia y apoyo del COMGECET, del que tendrá dependencia funcional y estará encargado, en su ámbito de actuación, de desempeñar todas aquellas funciones que el COMGECET Ie asigne.",
+   "Su estructura se basa en una persona que ejerza la Dirección, una IJnidad de Análisis y una Oficina de Apoyo.",
+   "Contará con la información y el apoyo que precise para el desempeño de sus funciones, del resto de Jefaturas, Servicios y demás Unidades de la Dirección General de la Guardia Civil, así como de las asociaciones profesionales de guardias civiles."
+  ],
+  "correcta": 0,
+  "lila": "Art. 10.1 y Art. 11.1 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "Art. 10.1. 1. El Comité de Gestión de Conducta Ética de la Dirección General de la Guardia Civil (en adelante, COMGECET) se constituye como un órgano colegiado especializado, permanente y funcional para la gestión, control y seguimiento de las acciones de implementación del Código de Conducta del personal de la Guardia Civil y demás actuaciones derivadas del Sistema de Integridad. Como responsable de supervisar la aplicación del Código de Conducta, tratará los asuntos que se le encomienden, emitirá informes y propuestas, y asesorará en lo referente a la promoción de conductas éticas en la Institución y para el mejor funcionamiento del Sistema de Integridad.<br>Art. 11.1. 1. El Observatorio de Conducta Ética de la Dirección General de la Guardia Civil (en adelante, el Observatorio), constituye la principal herramienta para centralizar las labores de seguimiento, impulso y evaluación de la aplicación del Código de Conducta en la Guardia Civil.",
+  "exp": "Esa definición es la del Comité de Gestión de Conducta Ética.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "210-1",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-495"
+ },
+ {
+  "lote": "e5",
+  "i": 46,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 12.3",
+    "k": 212
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Cuál de los siguientes órganos tiene como objetivo la promoción institucional de una cultura que ejerza un efecto disuasorio para cualquier tipo de actividad fraudulenta y que haga posible su prevención y detección, así como la adopción de procedimientos que permitan garantizar que tales casos se abordan de forma adecuada y en el momento preciso?:",
+  "opciones": [
+   "El Comité interno de gestión de medidas antifraude.",
+   "El Observatorio de Conducta Ética de la Guardia Civil.",
+   "El Comité de Gestión de Conducta Ética de la Guardia Civil.",
+   "El Servicio de Asuntos Internos."
+  ],
+  "correcta": 0,
+  "lila": "Art. 12.3 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "3. El objetivo del Comité interno de gestión de medidas antifraude es la promoción institucional de una cultura que ejerza un efecto disuasorio para cualquier tipo de actividad fraudulenta y que haga posible su prevención y detección, así como la adopción de procedimientos que permitan garantizar que tales casos se abordan de forma adecuada y en el momento preciso.",
+  "exp": "Es el objetivo del Comité interno de medidas antifraude.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "212-3",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-496"
+ },
+ {
+  "lote": "e5",
+  "i": 47,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 6.1",
+    "k": 206
+   },
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 4.1",
+    "k": 204
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Sistema de Integridad de la Guardia Civil (SINTEGC), señale la opción INCORRECTA:",
+  "opciones": [
+   "Se define como el elemento definitorio del proceso de implementación y promoción de las conductas éticas en la Guardia Civil de acuerdo con sus valores y principios.",
+   "Para llevar a cabo una adecuada gestión y control del mismo, contribuye a su finalidad, entre otros, el Servicio de Asuntos Intemos.",
+   "Es un elemento que lo compone, entre otros, el buzón de ética institucional.",
+   "Tiene por finalidad fomentar comportamientos éticos basados en valores y principios orientados al interés general y el bien común, así como para prevenir, detectar y, en su caso, perseguir las conductas contrarias a la legalidad."
+  ],
+  "correcta": 0,
+  "lila": "Art. 6.1 y Art. 4.1 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "Art. 6.1. 1. Como elemento definitorio del proceso de implementación y promoción de las conductas éticas en la Guardia Civil de acuerdo con sus valores y principios, se elaborará un Plan de Acción de Ética Profesional (en adelante PLAEP).<br>Art. 4.1. 1. El SINTEGC es el conjunto interrelacionado de elementos organizativos, políticas, normas, procesos y procedimientos que se relacionan entre sí de forma ordenada y tienen por finalidad fomentar comportamientos éticos basados en valores y principios orientados al interés general y el bien común, así como para prevenir, detectar y, en su caso, perseguir las conductas contrarias a la legalidad.",
+  "exp": "El elemento definitorio del proceso es el Plan de Acción de Ética Profesional.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "206-1",
+  "pz": "f-6",
+  "sec": 33,
+  "id": "27-497"
+ },
+ {
+  "lote": "e5",
+  "i": 48,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 6.2",
+    "k": 206
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Señale la opción CORRECTA:",
+  "opciones": [
+   "La presente Orden es de aplicación al personal de la Guardia Civil en cualquiera de las situaciones administrativas en que se encuentre.",
+   "Como fundamentos que deben regir toda acción de la Guardia Civil orientada al aseguramiento de la gestión responsable de la conducta ética en el Cuerpo, se aplicará el principio de heterogeneidad de criterio.",
+   "Para llevar a cabo una adecuado gestión y control del SINTEGC, así como para sistematizar su evaluación y seguimiento, contribuye a su finalidad el Consejo de la Guardia Civil.",
+   "El PLAEP incluirá los planes parciales de actuación que se determinen, entre los que se encontrarán los dedicados a evaluación, formación, comunicación e incentivos."
+  ],
+  "correcta": 3,
+  "lila": "Art. 6.2 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. El PLAEP incluirá los planes parciales de actuación que se determinen, entre los que se encontrarán los dedicados a evaluación, formación, comunicación e incentivos. Entre sus contenidos, se elaborarán protocolos de buenas prácticas, de acuerdo con cada ámbito de actuación profesional en que se identifique esta necesidad, y en los que se incluirán con carácter preceptivo consideraciones sobre los conflictos de intereses y el procedimiento administrativo de gestión de regalos u obsequios.",
+  "exp": "Es literal. El principio es la unicidad de criterio y el Consejo de la Guardia Civil no figura entre los órganos.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "206-2",
+  "pz": "f-6",
+  "sec": 33,
+  "id": "27-498"
+ },
+ {
+  "lote": "e5",
+  "i": 49,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 9",
+    "k": 209
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Cómo se denomina al elemento de consulta del SINTEGC que permite intercambiar información sobre el conjunto de comportamientos que, no siendo en un principio constitutivos de ilícito penal o administrativo o contrarios a los principios y valores institucionales, tampoco están permitidos o no son deseables por perjudicar la imagen reputacional del Cuerpo?:",
+  "opciones": [
+   "Consejo de la Guardia Civil.",
+   "Comité de Gestión de Ética Profesional.",
+   "Buzón de Ética Institucional.",
+   "Consejo de Ética Institucional."
+  ],
+  "correcta": 2,
+  "lila": "Art. 9 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "1. El buzón de ética institucional es el elemento de consulta del SINTEGC que permite: a) Intercambiar información sobre el conjunto de comportamientos que, no siendo en un principio constitutivos de ilícito penal o administrativo o contrarios a los principios y valores institucionales, tampoco están permitidos o no son deseables por perjudicar la imagen reputacional del Cuerpo, con el propósito de clarificar determinados aspectos susceptibles de interpretación.",
+  "exp": "El Buzón de Ética Institucional.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "209-1",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-499"
+ },
+ {
+  "lote": "e5",
+  "i": 50,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10",
+    "k": 210
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Quién es el Responsable del Sistema Interno de Información de la Guardia Civil?:",
+  "opciones": [
+   "El Delegado de Protección de Datos de la Guardia Civil.",
+   "El Comité de Gestión de Conducta Ética.",
+   "La persona titular de la Dirección General de la Guardia Civil.",
+   "El Director del Plan de Acción de Ética Profesional."
+  ],
+  "correcta": 1,
+  "lila": "Art. 10 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "i) Ser el Responsable del Sistema Interno de Información de la Guardia Civil, y como tal encargado de:",
+  "exp": "El Comité de Gestión de Conducta Ética.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "210-11",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-500"
+ },
+ {
+  "lote": "e5",
+  "i": 51,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 11.3",
+    "k": 211
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Observatorio de Conducta Ética. Señale cuál de los siguientes NO corresponde con un elemento en la que se basa la estructura del Observatorio:",
+  "opciones": [
+   "Una Secretaría.",
+   "Una persona que ejerza la Dirección.",
+   "Una Unidad de Análisis.",
+   "Una Oficina de Apoyo."
+  ],
+  "correcta": 0,
+  "lila": "Art. 11.3 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "3. La estructura de este Observatorio se basa en una persona que ejerza la Dirección, una Unidad de Análisis y una Oficina de Apoyo.",
+  "exp": "La estructura es Dirección, Unidad de Análisis y Oficina de Apoyo.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "211-3",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-501"
+ },
+ {
+  "lote": "e5",
+  "i": 52,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 10",
+    "k": 210
+   },
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 11",
+    "k": 211
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. ¿Cuál de los siguientes NO corresponde con una función del Observatorio de Conducta Ética de la Guardia Civil?:",
+  "opciones": [
+   "Asesorar técnica y jurídicamente sobre Políticas de Integridad.",
+   "Tratamiento y centralización de toda la información relativa a la evaluación y seguimiento del PLAEP y las medidas en él contenidas.",
+   "Responder, en el ámbito de su responsabilidad, a las consultas planteadas a través del Buzón de Ética.",
+   "Promover el acometimiento de evaluaciones que permitan verificar el cumplimiento de las previsiones normativas del SINTEGC."
+  ],
+  "correcta": 3,
+  "lila": "Art. 10 y Art. 11 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "Art. 10. d) Promover el acometimiento de evaluaciones que permitan verificar el cumplimiento de las previsiones normativas del SINTEGC.<br>Art. 11. b) Asesorar técnica y jurídicamente sobre Políticas de Integridad.",
+  "exp": "Promover evaluaciones es cometido del Comité de Gestión.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "210-6",
+  "pz": "f-9",
+  "sec": 33,
+  "id": "27-502"
+ },
+ {
+  "lote": "e5",
+  "i": 53,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 12",
+    "k": 212
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al Comité interno de gestión de medidas antifraude de la Dirección General de la Guardia, señale la opción CORRECTA:",
+  "opciones": [
+   "Será el grupo de trabajo interno de seguimiento que reportará al Comité de Gestión del Plan de Medidas Antifraude del Ministerio del Interior.",
+   "Su objetivo es la promoción institucional de una cultura que ejerza un efecto sancionador ante cualquier tipo de actividad fraudulenta y que haga posible su prevención y detección.",
+   "Su organización y funcionamiento se realizará conforme a lo recogido en el Plan de Medidas Antifraude de la Dirección General de la Guardia Civil.",
+   "Estará compuesto por una serie de Vocales, entre los que se encuentra un representante de las asociaciones profesionales con representación en el Consejo de la Guardia Civil."
+  ],
+  "correcta": 0,
+  "lila": "Art. 12 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "2. El Comité interno de gestión de medidas antifraude de la Dirección General de la Guardia Civil será el grupo de trabajo interno de seguimiento que reportará al Comité de Gestión del Plan de Medidas Antifraude del Ministerio del Interior. 3. El objetivo del Comité interno de gestión de medidas antifraude es la promoción institucional de una cultura que ejerza un efecto disuasorio para cualquier tipo de actividad fraudulenta y que haga posible su prevención y detección, así como la adopción de procedimientos que permitan garantizar que tales casos se abordan de forma adecuada y en el momento preciso. 4. La organización y funcionamiento del Comité interno de gestión de medidas antifraude se realizará conforme a lo recogido en el Plan de Medidas Antifraude del Ministerio del Interior.",
+  "exp": "Es literal. El efecto es disuasorio y la organización sigue el plan del Ministerio del Interior.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "212-2",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-503"
+ },
+ {
+  "lote": "e5",
+  "i": 54,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 14.4",
+    "k": 214
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Grupo de trabajo permanente de seguimiento del Plan de Acción de Ética Profesional. ¿Con qué periodicidad se reunirá el grupo de trabajo al objeto de ser informado del desarrollo de las actuaciones del SINTEGC?:",
+  "opciones": [
+   "Cada año.",
+   "Semestralmente.",
+   "Cada trimestre.",
+   "Una vez al mes."
+  ],
+  "correcta": 1,
+  "lila": "Art. 14.4 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "4. El grupo de trabajo se reunirá con carácter semestral al objeto de ser informado del desarrollo de las actuaciones del SINTEGC. La organización y funcionamiento del grupo de trabajo permanente se realizará conforme a lo recogido en la Orden INT/656/2023, de 19 de junio, por la que se desarrolla el Real Decreto 175/2022, de 4 de marzo, por el que se desarrollan los derechos de las asociaciones profesionales de guardias civiles, de sus representantes y de los miembros del Consejo de la Guardia Civil elegidos en representación de los miembros del Cuerpo. del Plan de Acción de Ética Profesional (PLAEP). Integrado por: • Representantes de la DGGC. • Representantes de asociaciones profesionales con representación en el Consejo de la Guardia Civil. Reuniones con carácter semestral al objeto de ser informado del desarrollo de las actuaciones del SINTEGC. - El Gabinete Técnico. - La Dirección Adjunta Operativa. - El Mando de Personal. - El Mando de Apoyo. - La Asesoría Jurídica. - Cada una de las asociaciones profesionales con representación en el Consejo de la Guardia Civil. Se informarán en el grupo: • Propuestas de revisión y actualización de la normativa del SINTEGC. • Desarrollo de aspectos concretos del PLAEP. • Consultas planteadas a través del Buzón de Ética Institucional. - Informar sobre si debe elevarse al COMGECET. - Proponer una respuesta. - Cualquier circunstancia de interés.",
+  "exp": "Con carácter semestral.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "214-10",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-504"
+ },
+ {
+  "lote": "e5",
+  "i": 55,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 16",
+    "k": 216
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. Respecto al informe que se presente en la sesión correspondiente del Consejo de la Guardia Civil, ¿qué incluirá?:",
+  "opciones": [
+   "El resumen de actividad.",
+   "El análisis de situación.",
+   "La propuesta de actuaciones a desarrollar.",
+   "Todas las opciones son correctas."
+  ],
+  "correcta": 3,
+  "lila": "Art. 16 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "INFORMES. Con carácter anual, se presentará un informe en la sesión correspondiente del Consejo de la Guardia Civil, que incluirá resumen de actividad, análisis de situación y propuesta de actuaciones a desarrollar.",
+  "exp": "Las tres cosas.",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "216-0",
+  "pz": "f-12",
+  "sec": 33,
+  "id": "27-505"
+ },
+ {
+  "lote": "e5",
+  "i": 56,
+  "v": "v05",
+  "t": 27,
+  "refs": [
+   {
+    "n": "Orden General 10/2024",
+    "art": "Art. 17",
+    "k": 217
+   }
+  ],
+  "pregunta": "Orden General por la que se regula el Sistema de Integridad de la Guardia Civil. El acceso a los datos personales contenidos en el Sistema Interno de información quedará limitado, dentro del ámbito de sus competencias y funciones, exclusivamente a una serie de personas. En relación a lo anteriormente citado, señale la persona CORRECTA:",
+  "opciones": [
+   "La persona designada como Delegado de Protección de Datos de la Agencia Española de Protección de Datos.",
+   "Los representantes de las asociaciones profesionales con representación en el Consejo de la Guardia Civil.",
+   "A quien gestione directamente el Sistema interno de información.",
+   "A la persona titular de la Asesoría Jurídica de la Administración General del Estado."
+  ],
+  "correcta": 2,
+  "lila": "Art. 17 · Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "rojo": "3. El acceso a los datos personales contenidos en el Sistema Interno de información quedará limitado, dentro del ámbito de sus competencias y funciones, exclusivamente a: a) El COMGECET como responsable del Sistema y a quien lo gestione directamente.",
+  "exp": "Quien gestione directamente el sistema figura en la letra a).",
+  "apartado": "Orden General número 10/2024, por la que se regula el Sistema de Integridad de la Guardia Civil",
+  "par": "217-5",
+  "pz": "f-12",
+  "sec": 24,
+  "id": "27-506"
+ }
+]
