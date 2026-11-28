@@ -1220,35 +1220,6 @@
  },
  {
   "lote": "e3",
-  "i": 41,
-  "v": "v03",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Rec. (2001) 10",
-    "art": "Punto 43",
-    "k": 104
-   }
-  ],
-  "pregunta": "Código Europeo de ética de la Policía. En el cumplimiento de su misión, la policía debe tener siempre presente los derechos fundamentales de cada uno, tales como... Señale la opción INCORRECTA:",
-  "opciones": [
-   "El derecho al respeto de sus bienes.",
-   "La libertad de reunirse.",
-   "La libertad de pensamiento.",
-   "La libertad de conciencia."
-  ],
-  "correcta": 1,
-  "lila": "Punto 43 · Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
-  "rojo": "En el cumplimiento de su misión, la policía debe tener siempre presente los derechos fundamentales de cada uno, tales como la libertad de pensamiento, conciencia, religión, expresión, reunión pacífica, circulación y el derecho al respeto de sus bienes.",
-  "exp": "La libertad citada es la de reunión «pacífica»; la opción omite esa condición.",
-  "apartado": "Recomendación Rec. (2001) 10 del Comité de Ministros a los Estados miembros sobre el Código Europeo de Ética de la Policía",
-  "par": "104-0",
-  "pz": "c-43",
-  "sec": 15,
-  "id": "27-352"
- },
- {
-  "lote": "e3",
   "i": 42,
   "v": "v03",
   "t": 27,
@@ -1652,45 +1623,6 @@
   "pz": "c-59",
   "sec": 15,
   "id": "27-367"
- },
- {
-  "lote": "e3b",
-  "i": 2,
-  "v": "v02",
-  "t": 27,
-  "refs": [
-   {
-    "n": "Resolución 690",
-    "art": "Punto A.12",
-    "k": 39
-   },
-   {
-    "n": "Resolución 690",
-    "art": "Punto A.11",
-    "k": 38
-   },
-   {
-    "n": "Resolución 690",
-    "art": "Punto A.13",
-    "k": 40
-   }
-  ],
-  "pregunta": "Declaración sobre la Policía. Respecto a los principios de la ética, señale la opción INCORRECTA:",
-  "opciones": [
-   "La vía jerárquica debe ser claramente establecida. Debe ser siempre posible acudir al superior responsable de los actos u omisiones de un funcionario de Policía.",
-   "El funcionario de Policía debe actuar con toda la determinación necesaria, sin recurrir a la fuerza más que lo razonable para cumplir la misión exigida o autorizada por la ley.",
-   "La legislación debe proveer un sistema de garantías y de recursos legales contra los perjuicios que puedan resultar de las actividades de la Policía.",
-   "Todo funcionario de Policía es personalmente responsable de los actos u omisiones que haya ordenado y que sean ilegales."
-  ],
-  "correcta": 1,
-  "lila": "Punto A.12 y Punto A.11 y Punto A.13 · Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "rojo": "Punto A.12. En el ejercicio de sus funciones, el funcionario de Policía debe actuar con toda la determinación necesaria, sin jamás recurrir a la fuerza más que lo razonable para cumplir la misión exigida o autorizada por la ley;<br>Punto A.11. La legislación debe proveer un sistema de garantías y de recursos legales contra los perjuicios que puedan resultar de las actividades de la Policía,<br>Punto A.13. Es necesario dar a los funcionarios de Policía instrucciones claras y precisas sobre la manera y las circunstancias en las cuales deben hacer uso de sus armas;",
-  "exp": "La opción falsa omite «jamás»: el texto dice «sin jamás recurrir a la fuerza más que lo razonable». Las otras tres son literales.",
-  "apartado": "Resolución 690 de 1979, de la Asamblea Parlamentaria del Consejo de Europa, Declaración sobre la Policía",
-  "par": "39-0",
-  "pz": "b-12",
-  "sec": 9,
-  "id": "27-368"
  },
  {
   "lote": "e3c",

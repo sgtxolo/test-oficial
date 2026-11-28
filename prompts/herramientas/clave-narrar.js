@@ -3,7 +3,7 @@
 const fs = require("fs"), path = require("path");
 const RAIZ = path.resolve(__dirname, "..", "..");
 const N = +process.argv[2];
-const html = fs.readFileSync(path.join(RAIZ, "repaso-t" + N + "-esquema-clave-nuevo.html"), "utf8");
+const html = fs.readFileSync(path.join(RAIZ, "repaso-t" + N + "-esquema-clave-nuevo.html"), "utf8").replace(/<!--PANT-->[\s\S]*?<!--\/PANT-->/g, "");   // lo que solo se ve en pantalla (T26) no se narra
 
 /* ---------- números en letra ---------- */
 const U = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce", "trece", "catorce", "quince", "dieciséis", "diecisiete", "dieciocho", "diecinueve", "veinte", "veintiuno", "veintidós", "veintitrés", "veinticuatro", "veinticinco", "veintiséis", "veintisiete", "veintiocho", "veintinueve"];

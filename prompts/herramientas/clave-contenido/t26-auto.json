@@ -1,0 +1,17 @@
+{
+ "titulo": "Esquema clave T26 · Estatuto del personal de la Guardia Civil (versión nueva)",
+ "h1": "Tema 26 · ESQUEMA CLAVE — Derechos y deberes, Régimen disciplinario, Régimen del personal, normas militares y protocolos de acoso y violencia sobre la mujer",
+ "v": "902",
+ "h2": [
+  { "t": "26.1 · LEY ORGÁNICA 11/2007, de derechos y deberes de los miembros de la Guardia Civil", "desde": null },
+  { "t": "26.2 · LEY ORGÁNICA 12/2007, del régimen disciplinario de la Guardia Civil", "desde": "· Régimen disciplinario", "texto": "12/2007|disciplinari|falta (leve|grave|muy grave)|sanci" },
+  { "t": "26.3 · LEY 29/2014, de Régimen del Personal de la Guardia Civil", "desde": "· Régimen del personal", "texto": "29/2014|ascens|escala|destino|enseñanza|situaci" },
+  { "t": "26.4 · ORDEN PRE/1983/2012, normas militares de aplicación a la Guardia Civil", "desde": "^ORDEN PRE/1983", "texto": "PRE/1983|ordenamiento militar" },
+  { "t": "26.5 · PROTOCOLO de actuación frente al acoso laboral (Resolución de 22 de julio de 2019)", "desde": "^RESOLUCIÓN DE 22 DE JULIO DE 2019.*ACOSO LABORAL", "texto": "acoso laboral" },
+  { "t": "26.6 · PROTOCOLO frente al acoso sexual y por razón de sexo (Resolución de 22 de julio de 2019)", "desde": "^RESOLUCIÓN DE 22 DE JULIO DE 2019.*ACOSO SEXUAL", "texto": "acoso sexual|razón de sexo" },
+  { "t": "26.7 · PROTOCOLO ante violencia sobre la mujer (Resolución de 6 de julio de 2021)", "desde": "^RESOLUCIÓN DE 6 DE JULIO", "texto": "violencia (sobre|contra) la mujer|violencia de género" }
+ ],
+ "min": 0.65,
+ "maxFilas": 22,
+ "maxFalsas": 14
+}

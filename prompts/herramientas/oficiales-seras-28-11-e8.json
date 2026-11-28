@@ -1133,34 +1133,6 @@
  },
  {
   "lote": "e8",
-  "i": 41,
-  "v": "v08",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley Orgánica 12/2007",
-    "art": "Art. 40",
-    "k": 111
-   }
-  ],
-  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Procedimiento sancionador. El parte disciplinario. Señale la opción CORRECTA:",
-  "opciones": [
-   "Ninguna de las opciones es correcta.",
-   "Formular parte a la Autoridad o mando que tenga competencia para conocer de una presunta falta disciplinaria observada por cualquier componente de la Guardia Civil e imputable a otros miembros del Cuerpo de inferior o superior empleo, constituye un derecho.",
-   "Es obligación de la Autoridad o mando con competencia para conocer de la presunta falta observada y que reciba un parte, acusar recibo de su recepción al promotor del mismo y de forma inmediata y, además, debe informarle tanto si incoa o no procedimiento disciplinario, siendo necesario, en este último caso que razone los motivos que le han llevado a tomar tal decisión.",
-   "Al emitir el parte disciplinario no es exigible la calificación jurídica pues lo relevante son los hechos."
-  ],
-  "correcta": 3,
-  "lila": "Art. 40 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
-  "rojo": "2. El parte contendrá un relato claro de los hechos, sus circunstancias, la identidad del presunto infractor, así como de los testigos, y deberá expresar claramente la identidad de quien da el parte y los datos necesarios para ser localizado. 3. La Autoridad o mando competente que reciba un parte acusará recibo de inmediato, informando a su promotor de la incoación o no de procedimiento disciplinario.",
-  "exp": "El parte exige relatar los hechos e identidades, no calificarlos; formularlo es un deber.",
-  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
-  "par": "111-2",
-  "pz": "b-40",
-  "id": "26-483"
- },
- {
-  "lote": "e8",
   "i": 42,
   "v": "v08",
   "t": 26,
@@ -1341,34 +1313,6 @@
   "par": "78-17",
   "pz": "b-7",
   "id": "26-489"
- },
- {
-  "lote": "e8",
-  "i": 48,
-  "v": "v08",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley Orgánica 12/2007",
-    "art": "Art. 54.1",
-    "k": 125
-   }
-  ],
-  "pregunta": "Ley Orgánica del régimen disciplinario de la Guardia Civil. Procedimiento por faltas graves y muy graves. Señale la opción INCORRECTA:",
-  "opciones": [
-   "La abstención y la recusación se plantearán ante la Autoridad que acordó el nombramiento, contra cuya resolución no cabrá recurso alguno, sin perjuicio de que se pueda hacer valer la causa de recusación en los recursos que se interpongan.",
-   "El nombramiento de instructor recaerá en un Oficial General u Oficial destinado en la Guardia Civil de empleo superior o más antiguo que cualquiera de los infractores. Podrá ser nombrado secretario cualquier miembro de la Guardia Civil con la formación adecuada.",
-   "La autoridad que ordene la incoación del procedimiento designará un instructor, a cuyo cargo correrá su tramitación, y un secretario que Ie asista.",
-   "Cuando el procedimiento se tramite por la comisión de falta muy grave, y si la naturaleza y circunstancias de ésta exigiesen una acción inmediata para mantener la disciplina o evitar perjuicio al servicio, la autoridad que hubiera acordado la incoación del expediente podrá disponer el cese del expedientado en todas o en algunas de sus funciones habituales por un período máximo de tres meses."
-  ],
-  "correcta": 3,
-  "lila": "Art. 54.1 · Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
-  "rojo": "1. Cuando el procedimiento se tramite por la comisión de falta grave, y si la naturaleza y circunstancias de ésta exigiesen una acción inmediata para mantener la disciplina o evitar perjuicio al servicio, la autoridad que hubiera acordado la incoación del expediente podrá disponer el cese del expedientado en todas o en algunas de sus funciones habituales por un período máximo de tres meses, computando, en su caso, el tiempo de cese que hubiera cumplido por determinación de sus Jefes directos de acuerdo con lo dispuesto en el artículo 24.",
-  "exp": "Esa medida se prevé en el procedimiento por falta grave.",
-  "apartado": "Ley Orgánica 12/2007, de 22 de octubre, del régimen disciplinario de la Guardia Civil",
-  "par": "125-1",
-  "pz": "b-54",
-  "id": "26-490"
  },
  {
   "lote": "e8",

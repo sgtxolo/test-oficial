@@ -1632,34 +1632,6 @@
  },
  {
   "lote": "e6",
-  "i": 60,
-  "v": "v06",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley Orgánica 11/2007",
-    "art": "Art. 39.1",
-    "k": 41
-   }
-  ],
-  "pregunta": "Ley Orgánica reguladora de los derechos y deberes de los miembros de la Guardia Civil. Puede afiliarse a una asociación un guardia civil que esté en situación de:",
-  "opciones": [
-   "Todas las opciones son correctas.",
-   "Suspenso de empleo.",
-   "Excedencia por razón de violencia de género.",
-   "Servicio activo."
-  ],
-  "correcta": 0,
-  "lila": "Art. 39.1 · Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia Civil",
-  "rojo": "1. Para poder afiliarse a las asociaciones profesionales, los miembros del Cuerpo de la Guardia Civil deberán encontrarse en cualquier situación administrativa en que, de acuerdo con la normativa reguladora del régimen de dicho personal, conserven derechos y obligaciones inherentes a su condición de Guardia Civil.",
-  "exp": "Basta estar en una situación en la que conserven derechos y obligaciones.",
-  "apartado": "Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia",
-  "par": "41-1",
-  "pz": "a-39",
-  "id": "26-363"
- },
- {
-  "lote": "e6",
   "i": 61,
   "v": "v06",
   "t": 26,
@@ -2250,34 +2222,6 @@
   "par": "50-4",
   "pz": "a-48",
   "id": "26-384"
- },
- {
-  "lote": "e6",
-  "i": 82,
-  "v": "v06",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley Orgánica 11/2007",
-    "art": "Art. 5",
-    "k": 7
-   }
-  ],
-  "pregunta": "Ley Orgánica Reguladora de los Derechos y Deberes de los miembros de la Guardia Civil. El jefe de la unidad, centro u órgano donde el Guardia Civil preste sus servicios, ¿podrá autorizar de forma expresamente motivada el registro personal o de los efectos de su pabellón?:",
-  "opciones": [
-   "Sí, cuando lo exija la investigación de un hecho delictivo.",
-   "No, en ningún caso.",
-   "Sí, cuando lo exija la investigación de un delito doloso.",
-   "Sí, cuando lo exija la investigación de una infracción grave."
-  ],
-  "correcta": 1,
-  "lila": "Art. 5 · Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia Civil",
-  "rojo": "A estos efectos el pabellón que tuviera asignado el Guardia Civil en su unidad se considerará domicilio habitual. 2. El jefe de la unidad, centro u órgano donde el Guardia Civil preste sus servicios podrá autorizar, de forma expresamente motivada, el registro personal o de los efectos y pertenencias que estuvieren en los mismos, cuando lo exija la investigación de un hecho delictivo. El registro se realizará con la asistencia del interesado y en presencia de, al menos, un testigo.",
-  "exp": "El pabellón es domicilio habitual y goza de inviolabilidad; la autorización del jefe solo alcanza a los efectos de la unidad.",
-  "apartado": "Ley Orgánica 11/2007, de 22 de octubre, reguladora de los derechos y deberes de los miembros de la Guardia",
-  "par": "7-2",
-  "pz": "a-5",
-  "id": "26-385"
  },
  {
   "lote": "e6",

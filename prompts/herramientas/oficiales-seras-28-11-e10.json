@@ -833,39 +833,6 @@
  },
  {
   "lote": "e10",
-  "i": 32,
-  "v": "v10",
-  "t": 26,
-  "refs": [
-   {
-    "n": "Ley 29/2014",
-    "art": "Art. 4",
-    "k": 174
-   },
-   {
-    "n": "Ley 29/2014",
-    "art": "Art. 4",
-    "k": 174
-   }
-  ],
-  "pregunta": "Ley de Régimen del Personal de la Guardia Civil. Los españoles, para adquirir la condición de guardia Civil previamente deberán:",
-  "opciones": [
-   "Prestar juramento o promesa de cumplir fielmente sus obligaciones profesionales, con lealtad al Rey.",
-   "Prestar juramento o promesa de guardar y hacer guardar la Constitución como norma fundamental del Estado.",
-   "Todas las opciones son correctas.",
-   "Besar uno a uno la Bandera y, posteriormente, como señal de que España acepta su juramento o promesa, desfilarán bajo ella."
-  ],
-  "correcta": 2,
-  "lila": "Art. 4 · Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
-  "rojo": "Art. 4. Para adquirir la condición de guardia civil previamente deberá prestarse juramento o promesa de cumplir fielmente sus obligaciones profesionales, con lealtad al Rey y de guardar y hacer guardar la Constitución como norma fundamental del Estado.<br>Art. 4. A continuación, los guardias civiles besarán uno a uno la Bandera y, posteriormente, como señal de que España acepta su juramento o promesa, desfilarán bajo ella.",
-  "exp": "El juramento o promesa y la ceremonia ante la Bandera figuran en el artículo.",
-  "apartado": "Ley 29/2014, de 28 de noviembre, de Régimen del Personal de la Guardia Civil",
-  "par": "174-1",
-  "pz": "c-4",
-  "id": "26-568"
- },
- {
-  "lote": "e10",
   "i": 33,
   "v": "v10",
   "t": 26,

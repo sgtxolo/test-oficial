@@ -115,7 +115,7 @@
   aplicaCss(); window.addEventListener('resize', aplicaCss); try { if (window.parent !== window) window.parent.addEventListener('resize', aplicaCss); } catch (e) {}
 
   /* ---------- 1) barra con imprimir y narrado ---------- */
-  var PARTES = ({ 1: 3, 2: 2, 3: 3, 4: 2, 5: 3, 6: 2, 7: 1, 8: 2, 9: 1, 10: 2, 11: 2, 12: 1, 13: 2, 14: 2, 15: 2, 16: 2, 17: 3, 18: 2, 27: 1 })[NT] || 1, KEY = NT, tools = document.createElement('div'); tools.className = 'cl-tools cl-noprint';
+  var PARTES = ({ 1: 3, 2: 2, 3: 3, 4: 2, 5: 3, 6: 2, 7: 1, 8: 2, 9: 1, 10: 2, 11: 2, 12: 1, 13: 2, 14: 2, 15: 2, 16: 2, 17: 3, 18: 2, 26: 2, 27: 1 })[NT] || 1, KEY = NT, tools = document.createElement('div'); tools.className = 'cl-tools cl-noprint';
   tools.innerHTML = '<button id="cl-print" title="Imprime solo el esquema: sin trampas, preguntas rápidas, test ni audio">🖨 Imprimir solo el esquema</button>'
     + (PARTES > 1 ? [1, 2, 3].slice(0, PARTES).map(function (p) { return '<button class="nar cl-nbtn" data-p="' + p + '" title="Esquema explicado en forma de narración, para escuchar en el coche">🎧 Narrado parte ' + p + ' de ' + PARTES + ' (≈30 min)</button>'; }).join('') : '<button class="nar cl-nbtn" data-p="1" title="Todo el esquema explicado en forma de narración, para escuchar en el coche">🎧 Modo coche narrado (≈30 min)</button>');
   var ley = $('.leyenda'), h1 = $('h1');
@@ -650,7 +650,14 @@
       var hs = $$('h2,h3').filter(enMain), hit = -1;
       for (var i = 0; i < hs.length; i++) if (hs[i].tagName === 'H3' && S[i] && S[i].indexOf(q) >= 0) { hit = i; break; }
       if (hit < 0) for (var j = 0; j < hs.length; j++) if (S[j] && S[j].indexOf(q) >= 0) { hit = j; break; }
-      if (hit >= 0) setTimeout(function () { hs[hit].scrollIntoView({ block: 'start' }); hs[hit].classList.add('cl-flash'); setTimeout(function () { hs[hit].classList.remove('cl-flash'); }, 3000); }, 300);
+      if (hit >= 0) setTimeout(function () {
+        /* si la pregunta tiene su línea propia (data-q) va a ella; si está en un desplegable (T26), se abre */
+        var h = hs[hit], li = $$('li[data-q~="' + q.replace(/["\\]/g, '') + '"]').filter(enMain)[0];
+        var abre = function (el) { for (var d = el; d; d = d.parentElement) if (d.tagName === 'DETAILS') d.open = true; };
+        abre(h); if (li) abre(li);
+        (li || h).scrollIntoView({ block: li ? 'center' : 'start' });
+        [h, li].forEach(function (x) { if (x) { x.classList.add('cl-flash'); setTimeout(function () { x.classList.remove('cl-flash'); }, li ? 6000 : 3000); } });
+      }, 300);
     }
   });
 })();

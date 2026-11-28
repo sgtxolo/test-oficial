@@ -1410,34 +1410,6 @@
  },
  {
   "lote": "e12",
-  "i": 51,
-  "v": "v12",
-  "t": 26,
-  "refs": [
-   {
-    "n": "acoso sexual",
-    "art": "SÉPTIMO",
-    "k": 345
-   }
-  ],
-  "pregunta": "Protocolo de actuación frente al acoso sexual y al acoso por razón de sexo en la Guardia Civil. Si un miembro de la Guardia Civil, tiene conocimiento de una situación concreta que pudiera ser constitutiva de acoso sexual o por razón de sexo sobre otro miembro del Cuerpo:",
-  "opciones": [
-   "LO pondrá en conocimiento del superior jerárquico de la persona presuntamente acosadora.",
-   "Elaborará un parte con relato claro de los hechos presenciados y de la identidad de quienes sean afectados.",
-   "Todas las opciones son correctas.",
-   "Lo pondrá en conocimiento de quien corresponda, en estos casos, las actuaciones que puedan iniciarse exigirán corroboración o comprobación previa."
-  ],
-  "correcta": 2,
-  "lila": "SÉPTIMO · Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
-  "rojo": "De igual manera, si un miembro de la Guardia Civil tiene conocimiento de una situación concreta que pudiera ser constitutiva de acoso sexual o por razón de sexo sobre otro miembro del Cuerpo, lo pondrá en conocimiento del superior jerárquico de la persona presuntamente acosadora, en un parte con relato claro de los hechos presenciados y de la identidad de quienes sean afectados. En estos casos, las actuaciones que puedan iniciarse exigirán corroboración o comprobación previa.",
-  "exp": "Las tres forman parte de la regla: ponerlo en conocimiento, en un parte, con corroboración previa.",
-  "apartado": "Protocolo de actuación frente al acoso sexual y por razón de sexo en la Guardia Civil",
-  "par": "345-1",
-  "pz": "f-7a",
-  "id": "26-644"
- },
- {
-  "lote": "e12",
   "i": 52,
   "v": "v12",
   "t": 26,

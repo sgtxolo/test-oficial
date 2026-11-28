@@ -14,6 +14,7 @@ const words = t => [...new Set(norm(t).split(' ').filter(w => w.length >= 4 && !
 
 /* grupos de normas en el Exprés: regex del título de bloque donde EMPIEZA cada norma (la primera empieza en el primer bloque) */
 const STARTS = {
+  26: [null, /^TÍTULO I · Disposiciones generales$/, /^TÍTULO PRELIMINAR/, /^ORDEN PRE\/1983/, /^RESOLUCIÓN DE 22 DE JULIO DE 2019.*ACOSO LABORAL/, /^RESOLUCIÓN DE 22 DE JULIO DE 2019.*ACOSO SEXUAL/, /^RESOLUCIÓN DE 6 DE JULIO/],   // LO 11/2007 | LO 12/2007 | Ley 29/2014 | Orden PRE | tres protocolos
   1: [null, /LEY ORG/, /^1\.2 /, /FINALIDAD DEL CONSEJO/, /TÍTULO I\. DERECHOS Y LIBERTADES/, /^1\.6 /, /^ANEXO/],
   2: [null, /^2\.2 /, /^2\.3 /, /^2\.4 /, /^2\.5 /, /^2\.6 /, /^2\.7 /],
   3: [null, /^3\.2 /],
@@ -83,7 +84,7 @@ for (const N of process.argv.slice(2).map(Number).filter(Boolean)) {
     if (N >= 6) txt = txt.replace(/\s+/g, ' ').trim();   // desde el T6: una cabecera con marcas dejaba un espacio inicial y la ficha se quedaba sin clave (T1-T5 no se tocan para que salgan idénticos)
     let keys = [];
     const pr = txt.match(/^Protocolo[^—]*?art\.\s*(\d+)/i);
-    if (pr) keys = [pr[1]]; else { const a = txt.match(/^Art[íi]culos?\s+([^—]*?)\s+—/); if (a) keys = expand(a[1]); else if (N === 8 || N === 18 || N === 10 || N === 12 || N === 15) { const b = txt.match(/^Art[íi]culos?\s+(\d+(?:\s*(?:bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies))?)(?![\wáéíóú])/i); if (b) keys = expand(b[1]); } }   // T8: las cabeceras del Exprés son «Artículo 22 bis EXOF ✱ R6» (sin raya)
+    if (pr) keys = [pr[1]]; else { const a = txt.match(/^Art[íi]culos?\s+([^—]*?)\s+—/); if (a) keys = expand(a[1]); else if (N === 8 || N === 18 || N === 10 || N === 12 || N === 15 || N === 26) { const b = txt.match(/^Art[íi]culos?\s+(\d+(?:\s*(?:bis|ter|qu[aá]ter|quinquies|sexies|septies|octies|nonies|decies))?)(?![\wáéíóú])/i); if (b) keys = expand(b[1]); } }   // T8: las cabeceras del Exprés son «Artículo 22 bis EXOF ✱ R6» (sin raya)
     if (N === 27) { keys = []; const b27 = txt.match(/^Art[íi]culo\s+(\d+)\s*·/); if (b27 && !/Real Decreto 176\/2022/.test(txt)) keys = [b27[1]]; }   // T27: «Artículo N · Código de Conducta / OG 10/2024»; las fichas del RD 176/2022 no se despliegan (sus números chocan con los del Código)
     const fi = FICHAS.push([head, fb]) - 1; keys.forEach(k => { (grupos[g].a[k] = grupos[g].a[k] || []).push(fi); });
   });
