@@ -22,6 +22,8 @@ La respuesta de **cada** pregunta se obtiene comprobando las cuatro opciones con
 
 Antes de subir, hacer una **segunda pasada** independiente sobre todas: enunciado (¿pide la correcta o la incorrecta?), respuesta guardada y justificación deben cuadrar. **Las dudosas no se suben** (usuario, 28/11/2026): si la respuesta no se puede demostrar, si otra opción también podría valer, si las opciones están mal redactadas o si la cita en rojo no la prueba, la pregunta se deja fuera (los tres tipos) y se lista al final con el motivo.
 
+**Nada por interpretación (usuario, 28/11/2026: «elimínalas, ya que hay dudas»)**: si para decidir la respuesta hay que **interpretar, deducir o elegir la «más razonable»**, es dudosa y **no se sube**, aunque se tenga una opinión clara. No vale subirla y avisar después. Ejemplos reales eliminados: deducir que un caso es domicilio y por eso no cabe el registro; dar por buena «todas» porque ninguna parece excluida; encajar «el parte no exige calificación jurídica»; una opción que dice «muy grave» cuando el temario dice «grave»; una «incorrecta» que solo se distingue porque **omite una palabra o condición** («jamás», «pacífica»). Antes de cerrar, repasar la lista de respuestas que habría que advertir en el resumen: **si hay que advertirla, sacarla** (`oficiales-seras-28-11-quitar.js`, sin renumerar).
+
 Única excepción: si el usuario dice expresamente que ese vídeo muestra la corrección oficial. Aun así, contrastarla con el temario.
 
 ## 0. Qué tipo de pregunta es (se decide pregunta a pregunta)
@@ -44,7 +46,7 @@ El tipo lo deduce Claude. Si un vídeo mezcla tipos, o se adjuntan varios de tip
 - **Contar**: preguntas leídas = preguntas de cada test (número de la plantilla). Si falta alguna, volver a esos fotogramas. Ninguna opción cortada ni línea de hueco (`__________`) perdida; el OCR se come esas líneas y confunde «lo»/«10», «El»/«EI».
 - Transcripción **literal**: enunciado y 4 opciones en el orden del vídeo. No corregir ni mejorar el texto de la academia; si está mal redactado, decirlo en la explicación.
 - La respuesta la resuelve siempre Claude (ver la regla principal); las marcas del vídeo no se transcriben ni se miran. Si hay duda real, no subirla y decirlo al final con el número de pregunta.
-- **Casos que han salido dudosos** (no subir): dos opciones correctas; «todas son correctas» con una falsa; «señale la incorrecta» o «cuál NO» donde las cuatro son válidas; enunciado sin «señale» donde valen varias; opción cortada en origen. Si la única diferencia es que una opción **omite una condición** y las otras tres son literales, esa es la incorrecta: se puede subir tras comprobar que las otras tres son literales, y avisarlo en el resumen.
+- **Casos que han salido dudosos** (no subir): dos opciones correctas; «todas son correctas» con una falsa; «señale la incorrecta» o «cuál NO» donde las cuatro son válidas; enunciado sin «señale» donde valen varias; opción cortada en origen; la única diferencia es que una opción **omite una palabra o condición** (desde el 28/11/2026 ya no se sube); ninguna opción reproduce bien el artículo.
 - **Repetidas (regla del usuario, 26/11/2026)**: si el **enunciado es el mismo** que el de una pregunta que ya está en la app (o que otra del mismo vídeo), **no se pone**, aunque cambien las opciones o la respuesta. Las que solo **se parecen** (otra redacción) **sí entran**. «Mismo enunciado» = mismo texto ignorando tildes, mayúsculas, signos, espacios y el prefijo con el nombre de la ley. Única excepción: enunciados genéricos («De los recursos. Señale la opción CORRECTA/INCORRECTA», o en inglés y psicotécnicos «Choose the correct option», «Pregunta psicotécnica»), donde la pregunta está en las opciones o en la imagen: ahí es repetida si además las opciones (o la imagen) son las mismas. El **título de sección** que antepone la academia («Disposiciones comunes.», «Tribunal Europeo de Derechos Humanos.», «De la cooperación internacional…») tampoco cuenta: si la pregunta de detrás es la misma, es repetida (también «principio» / «principio/s», «solo» / «sólo»). Comparar con **todo** el banco, no solo con el tema detectado, **antes de insertar y otra vez al final** (`video/ocr-temario/dup.js`, `dup2.js`, `dup3.js`); las propias que resulten repetidas se retiran con `oficiales-seras-28-11-quitar.js`, sin renumerar. Al copiar el script modelo, cambiar su criterio (compara enunciado + respuesta). Las preguntas que ya estaban no se borran.
 - **Botón «Oficial»**: lo añadido tiene que salir al elegir origen **Oficial** al montar el test. Conocimientos: dentro de `QUESTIONS[tema]` (id `T-N`; nunca en el banco IA ni Forma, sin `-ia-`/`-forma-` en el id). Inglés y psicotécnicos: **sin** `ia:true` ni `sim`. Comprobarlo en el navegador (`preguntasOficialesDe(t)` / `preguntasOficialesDeEN(t)` y el contador del botón).
 - Informar al final: preguntas vistas, añadidas por tema y **por vídeo**, repetidas, dudosas, sin tema y no legibles.
@@ -83,11 +85,25 @@ Modelo vigente: `prompts/herramientas/oficiales-seras-28-11.js` + un lote `ofici
   - Si el artículo es muy largo, citar el apartado o la letra completa que prueba la respuesta (con su frase introductoria), no el artículo de varias páginas.
   - Revisar de cada cita el principio, el final y la longitud (una de 5 caracteres o de miles es un corte mal hecho).
   - Antes de subir: `node prompts/herramientas/comprobar-citas.js N` en «OK» y revisar que cada cita en rojo empieza y acaba donde empieza y acaba el párrafo en el temario.
-- Los tres enlaces deben funcionar:
+- **Los tres enlaces son obligatorios en el 100 % de las preguntas del tema** (usuario, 28/11/2026: «vincula todas las preguntas con el esquema clave, con el subrayado y con el esquema»), no solo en las nuevas. Comprobar con `node prompts/herramientas/comprobar-enlaces.js N`: debe dar 0 en «sin esquema», «sin subrayado» y «sin esquema clave». Lo que falte se completa en la misma tarea.
   - **Esquema**: párrafo exacto en `prompts/herramientas/temaN/mapa-fijo-tN.json` y `esquemas-datos/mapa-preguntas.js` (sin regenerar entero). **Ninguna pregunta se queda sin enlace**: si el párrafo no está en el esquema, se añade literal desde el temario (modelo `prompts/herramientas/oficiales-seras-parrafos.js`) sin descolocar los enlaces existentes. Antes de decir que un texto no está, buscarlo también repartido en varios párrafos.
   - **Subrayado**: `expres-subrayado/tN-preg-extra.json` y `datos-tN.js`. Si falta el artículo, recortarlo del PDF con `expres-subrayado-anadir-piezas.py` (usar `/c/Users/ruben/bin/py`), revisar la imagen y añadir la pieza a `datos-tN.js`. Páginas tachadas o MOD no se usan. Los protocolos usan su propia pieza (en T1: `q-ad`, `q-7`, `q-13`), no el número de artículo. Si no está en el PDF subrayado, decirlo.
-  - **Esquema clave** (si el tema lo tiene): `clave-tests.js N`, `clave-mejoras-datos.js N`, `clave-esquema-nuevo.js N`, `clave-of-datos.js N` y después volver a pasar los scripts de inserción del tema (también los anteriores).
-- Si un tema no tiene alguno de los tres, decirlo.
+    La pieza se asigna **por la ficha o artículo de cada pregunta**, nunca «por mayoría» ni por número de artículo a secas (en protocolos y preámbulos manda a la norma equivocada). Las preguntas de preámbulos y disposiciones suelen quedarse sin pieza: revisarlas.
+  - **Esquema clave**: ver el apartado siguiente.
+- **Si el tema no tiene esquema clave nuevo (`repaso-tN-esquema-clave-nuevo.html`), o solo un borrador, se hace** (con `prompts/PROMPT_ESQUEMA_CLAVE.md`) **y se enlazan todas sus preguntas.** No basta con decir que no existe.
+- Si falta el esquema o el subrayado de una norma y no se puede crear desde su temario, decirlo.
+
+### Esquema clave con TODAS las preguntas enlazadas (método del T26, 28/11/2026)
+
+Los generadores genéricos solo enlazan las preguntas cuyas palabras salen en el esquema; para enlazar todas:
+
+- Modelo: `prompts/herramientas/tema26/clave-t26.js`. Un `<h3 data-k>` por ficha del esquema (la ficha de cada pregunta sale de `mapa-preguntas.js`). Se imprime el texto del Exprés subrayado y las oficiales que ese texto no recoge; el dato del resto va en desplegables solo de pantalla (`details`, entre `<!--PANT-->` y `<!--/PANT-->`, que no se imprimen ni se narran). `clave-mejoras.js` abre el desplegable y marca la línea al llegar con `#q=ID`.
+- Orden de la cadena: `clave-tests.js N` → `temaN/clave-tN.js` → `clave-armar.js N` → `clave-mejoras-datos.js N` → `temaN/clave-tN.js enlaces` → `clave-of-datos.js N` → `clave-narrar.js N`; la primera vez además `clave-conectar.js N P` y subir el `?v=` de `clave-mejoras.js` en esa página.
+- **Al añadir o quitar preguntas de un tema hecho así (hoy el T26), usar esa cadena.** No pasar `clave-esquema-nuevo.js` después: borra `CLAVE_LINK` (la lista de todas las enlazadas). Al insertar vídeos después, comprobar que el insertador no haya reescrito `tN-sec.js` o `tN-esq.js`.
+- Antes de generar, unir `clave-tests/tN.js` y `tN-todo.js` (lo hace `clave-t26.js`): `-todo` solo trae «el resto» y se quedaban preguntas sin enlace (106 en el T26).
+- Para otro tema, copiar el script cambiando las normas (`clave-contenido/tN-auto.json`), la ficha donde empieza cada una y `STARTS[N]` en `clave-mejoras-datos.js`. Máximo 8 `<h2>` contando comparativas.
+- `clave-conectar.js` añade el tema a la lista del botón ⭐ del test; comprobar que está.
+- Decir en el resumen las páginas reales y que el esquema generado automáticamente no se ha revisado línea a línea.
 - `mapa-preguntas.js` tiene cambios antiguos sin commitear: commitear solo las entradas nuevas (`video/ocr-temario/commit.sh`: parte de `git show HEAD:...`, añade las nuevas, quita las retiradas y usa `git hash-object` + `git update-index`). No subir esos cambios ajenos ni los archivos sin seguimiento que ya hubiera.
 - Con muchos vídeos, ir **por lotes** (una norma cada vez), insertando y commiteando cada lote para no perder trabajo.
 
@@ -112,8 +128,8 @@ Modelo vigente: `prompts/herramientas/oficiales-seras-28-11.js` + un lote `ofici
 2. **Cobertura**: comparar cada test con su numeración para confirmar que no falta ninguna. Si no se ha hecho, decirlo claramente en el resumen.
 3. Repetidas otra vez (`dup.js`, `dup2.js`, `dup3.js`).
 4. Sintaxis de los `<script>` del HTML y de los `.js` tocados.
-5. Enlaces: ninguno roto (`mapok.js`).
-6. Navegador (`preview_start` «estudio-node»): borrar service worker y cachés antes de probar; comprobar todas las nuevas por script (origen Oficial, explicación, imagen, enlaces) y abrir a ojo un ejemplo de cada enlace.
+5. Enlaces: ninguno roto (`mapok.js`) y ninguno ausente en todo el tema (`comprobar-enlaces.js N`).
+6. Navegador (`preview_start` «estudio-node»): borrar service worker y cachés antes de probar (si no, carga datos antiguos y parece que el enlace falla); comprobar todas las nuevas por script (origen Oficial, explicación, imagen, enlaces) y abrir a ojo un ejemplo de cada enlace. En el esquema clave, abrir con `#q=ID` y ver que llega a su línea.
 7. `node prompts/herramientas/bump-cache.js`, commit solo de lo propio y push a `origin main`.
 8. **Renombrar cada vídeo terminado añadiendo « OK»** (regla del principio).
 9. Resumen final corto: tabla por vídeo (tipo y cuántas añadidas), ids, repetidas, tabla de **no subidas** con norma, pregunta y motivo, qué segunda pasada se ha hecho y qué no se ha probado.
