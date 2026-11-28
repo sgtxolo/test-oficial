@@ -42,11 +42,15 @@ function bloqueDiv(h, i) { const re = /<(\/?)div\b[^>]*>/g; re.lastIndex = i; le
 function hijos(h, cls) { const o = []; const re = new RegExp('<div class="' + cls + '(?:\\s[^"]*)?"', "g"); let m; while ((m = re.exec(h))) { o.push(bloqueDiv(h, m.index)); } return o; }
 const celda = h => colorea(h).join("<br>");
 function cuadro(v) {
+  const pies = hijos(v, "vis-pie"); pies.forEach(p => { v = v.replace(p, ""); });
+  return cuadroBase(v) + (pies.length ? "\n<ul>\n" + pies.map(p => "<li>" + celda(p) + "</li>").join("\n") + "\n</ul>" : "");
+}
+function cuadroBase(v) {
   const t = plano((v.match(/<div class="vis-t">([\s\S]*?)<\/div>/) || ["", ""])[1]).replace(/^[^A-Za-zÁÉÍÓÚÑ¿(]+/, "");
-  const mt = t.match(/^(.*?)\s*\(cuadro del temario\s*·?\s*([^)]*)\)\s*$/i);
+  const mt = t.match(/^(.*?)\s*\(cuadros? del temario\s*·?\s*([^)]*)\)\s*$/i);
   const cab = "<h3>Cuadro: " + esc(mt ? mt[1] : t) + (mt && mt[2] ? ' <span class="art">' + esc(mt[2]) + "</span>" : "") + "</h3>\n";
   const cuerpo = v.slice(v.indexOf("</div>", v.indexOf('class="vis-t"')) + 6, v.lastIndexOf("</div>"));
-  const etq = h => h.replace(/<span class="(?:et|vt-p)[^"]*">([\s\S]*?)<\/span>/g, "<b>$1:</b> ");
+  const etq = h => h.replace(/<span class="(?:et|vt-p|n)(?: [^"]*)?">([\s\S]*?)<\/span>/g, "<b>$1:</b> ");
   const nodos = hijos(cuerpo, "vt-nodo");
   if (nodos.length) {   // árbol: una fila por rama
     return cab + "<table>\n" + nodos.map(n => { const et = (hijos(n, "vt-et")[0] || ""); const resto = n.replace(et, ""); return "<tr><td><strong>" + esc(plano(et)) + "</strong></td><td>" + celda(etq(resto)) + "</td></tr>"; }).join("\n") + "\n</table>";
@@ -95,7 +99,9 @@ function h3(f) {
   let t = plano(f.hdr).replace(/\s*(EXOF|EX\b|✱)/g, "").replace(/\s*R\d+\b/g, "").replace(/\s+/g, " ").trim();
   const mA = t.match(/^Art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quáter|quater|quinquies|sexies))?)\s*(?:[—–-]\s*(.*))?$/i);
   const mP = (f.hdr.match(/R\d+/g) || []);
+  const mB = !mA && cfg.artPunto && t.match(/^Art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quáter|quater|quinquies|sexies))?)\s*·\s*(.*)$/i);
   let titulo = mA ? (mA[2] || 'Artículo ' + mA[1]) : t, art = mA ? '<span class="art">art. ' + mA[1] + "</span>" : "";
+  if (mB) art = '<span class="art">art. ' + mB[1] + "</span>";
   return "<h3>" + esc(titulo) + (f.ley ? " · " + esc(f.ley) : "") + (f.selloEXOF ? ' <span class="ex">EXOF</span>' : f.selloEX ? ' <span class="ex">EX</span>' : "") + (f.ast ? ' <span class="as">✱</span>' : "") + (mP.length ? " <em>(" + [...new Set(mP)].join(", ") + ")</em>" : "") + (art ? " " + art : "") + "</h3>";
 }
 let nFichas = 0, nDup = 0;
@@ -129,7 +135,9 @@ const cobertura = q => {
   return sa >= 0.7 && sq >= 0.4;
 };
 const L = "ABCD";
+const esNada = q => /^\s*(ningun|(todas|todos|ambas|ambos)\b[^.]*(incorrect|fals|err[oó]ne|no son))/i.test(q.o[q.c] || "");
 function respuesta(q) {
+  if (esNada(q)) return "ninguna de las otras opciones era correcta (" + q.o.filter((o, i) => i !== q.c).map(o => o.replace(/\s+/g, " ").trim()).join(" · ") + ")";
   const a = q.o[q.c].replace(/\s+/g, " ").trim();
   const k = a.match(/^(?:las respuestas |las opciones )?([ABCD])\s*(?:y|,)\s*([ABCD])\b/i);
   if (k) return [k[1], k[2]].map(x => q.o[L.indexOf(x.toUpperCase())].replace(/\s+/g, " ").trim()).join(" · ");
@@ -146,11 +154,12 @@ function linea(q) {
   let resto = segs.join(" ").replace(/\s*\(?señal[ae]\s+la\s+\w+\)?[.:]?\s*$/i, "").replace(/\s*Se[ñn]ale la \w+\.?$/i, "").replace(/_{3,}/g, "…");
   if (!resto && !titulo) resto = p.slice(-230);
   if (resto.length > 230) resto = resto.slice(0, 227).replace(/\s+\S*$/, "") + "…";
-  return "<li>" + (titulo ? "<strong>" + esc(titulo) + "</strong>: " : "") + esc(resto) + " → " + (/^\s*ningun/i.test(q.o[q.c]) ? '<b class="p">ninguna opción del test era correcta</b> (descartadas: ' + esc(q.o.filter((o, i) => i !== q.c).join(" · ").replace(/\s+/g, " ")) + ")</li>" : (esInc(q) ? '<b class="p">FALSO</b>: ' : "") + "<mark>" + esc(respuesta(q)) + "</mark></li>");
+  return "<li>" + (titulo ? "<strong>" + esc(titulo) + "</strong>: " : "") + esc(resto) + " → " + (esNada(q) ? '<b class="p">ninguna opción del test era correcta</b> (descartadas: ' + esc(q.o.filter((o, i) => i !== q.c).join(" · ").replace(/\s+/g, " ")) + ")</li>" : (esInc(q) ? '<b class="p">FALSO</b>: ' : "") + "<mark>" + esc(respuesta(q)) + "</mark></li>");
 }
 const claveArt = s => (s || "").replace(/\s+/g, " ").replace(/\s*:?\s*🎯.*$/, "").trim();
 function normaDe(q) {
-  for (const [re, k] of cfg.fuerza || []) if (new RegExp(re, "i").test(q.p + " " + q.o[q.c])) return k;
+  let permit = null;
+  for (const [re, k] of cfg.fuerza || []) if (new RegExp(re, "i").test(q.p + " " + q.o[q.c])) { if (Array.isArray(k)) { permit = k; break; } return k; }
   const g = claveArt(ggrp[q.i]);
   if (g in hdrNorma) return hdrNorma[g];
   const k = Object.keys(hdrNorma).find(h => h && g && (h.startsWith(g.slice(0, 40)) || g.startsWith(h.slice(0, 40))));
@@ -158,9 +167,10 @@ function normaDe(q) {
   if (cfg.porTexto) {   // la norma de la ficha que más palabras comparte con la respuesta y el enunciado
     const w = words(q.o[q.c] + " " + q.p); let mejor = 0, nm = -1;
     if (!normaDe.f) normaDe.f = normas.flatMap((l, k) => l.filter(f => !f.vis && !f.recuerda).map(f => ({ k, w: new Set(words(f.cuerpo)) })));
-    for (const f of normaDe.f) { const v = w.filter(x => f.w.has(x)).length / Math.max(1, w.length); if (v > mejor) { mejor = v; nm = f.k; } }
-    if (mejor >= 0.55) return nm;
+    for (const f of normaDe.f) { const v = w.filter(x => f.w.has(x)).length / Math.max(1, w.length); if ((!permit || permit.includes(f.k)) && v > mejor) { mejor = v; nm = f.k; } }
+    if (mejor >= 0.55 || (permit && nm >= 0)) return nm;
   }
+  if (permit) return permit[0];
   const t = q.p + " " + q.o[q.c];
   for (let i = cfg.h2.length - 1; i >= 1; i--) if (cfg.h2[i].texto && new RegExp(cfg.h2[i].texto, "i").test(t)) return i;
   return 0;

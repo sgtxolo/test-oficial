@@ -1,0 +1,72 @@
+{
+ "titulo": "Esquema clave T22 · Seguridad ciudadana: reunión, protección de datos penal y LO 4/2015",
+ "h1": "Tema 22 · ESQUEMA CLAVE — LO 9/1983 del Derecho de Reunión · LO 7/2021 de protección de datos penal · LO 4/2015 de Protección de la Seguridad Ciudadana",
+ "v": "906",
+ "h2": [
+  {
+   "t": "22.1 · LO 9/1983 reguladora del Derecho de Reunión",
+   "desde": null
+  },
+  {
+   "t": "22.2 · LO 7/2021 Protección de datos penal: disposiciones generales, principios y licitud del tratamiento",
+   "desde": "^CAPÍTULO I · Disposiciones generales"
+  },
+  {
+   "t": "22.3 · LO 7/2021: videovigilancia por las Fuerzas y Cuerpos de Seguridad",
+   "desde": "^Sección 2.ª Tratamiento de datos"
+  },
+  {
+   "t": "22.4 · LO 4/2015 Seguridad Ciudadana: preámbulo, disposiciones generales, documentación e identificación",
+   "desde": "^PREÁMBULO"
+  },
+  {
+   "t": "22.5 · LO 4/2015: actuaciones para la seguridad ciudadana y potestades especiales de policía",
+   "desde": "^CAPÍTULO III · Actuaciones"
+  },
+  {
+   "t": "22.6 · LO 4/2015 Régimen sancionador: responsables, órganos competentes, infracciones y sanciones",
+   "desde": "^CAPÍTULO V · Régimen sancionador"
+  },
+  {
+   "t": "22.7 · LO 4/2015: procedimiento sancionador",
+   "desde": "^Sección 3.ª Procedimiento sancionador"
+  }
+ ],
+ "maxFilas": 30,
+ "maxFalsas": 16,
+ "cuadros": true,
+ "porMarca": 0.6,
+ "porTexto": true,
+ "rojoOficial": true,
+ "artPunto": true,
+ "fuerza": [
+  [
+   "9/1983",
+   0
+  ],
+  [
+   "Actuaciones para el mantenimiento|Potestades generales de polic",
+   4
+  ],
+  [
+   "7/2021[\\s\\S]*(videovigil|videoc[aá]mara|grabaci|im[aá]genes|m[oó]viles)",
+   2
+  ],
+  [
+   "7/2021",
+   [
+    1,
+    2
+   ]
+  ],
+  [
+   "4/2015|L\\.O\\. 4",
+   [
+    3,
+    4,
+    5,
+    6
+   ]
+  ]
+ ]
+}

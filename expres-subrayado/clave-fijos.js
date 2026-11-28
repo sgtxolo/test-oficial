@@ -12,6 +12,7 @@ window.EXSUBCLAVE_REPASO = {
   7: "repaso-t7-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T7 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   // 8: "repaso-t8-borrador.html",   // (antigua, 12/11/2026) la de abajo pisa a esta
   8: "repaso-t8-esquema-clave-nuevo.html",   // 22/11/2026: Esquema clave T8 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
+  22: "repaso-t22-esquema-clave-nuevo.html",   // 28/11/2026: Esquema clave T22 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   21: "repaso-t21-esquema-clave-nuevo.html",   // 28/11/2026: Esquema clave T21 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   19: "repaso-t19-esquema-clave-nuevo.html",   // 28/11/2026: Esquema clave T19 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
   26: "repaso-t26-esquema-clave-nuevo.html",   // 28/11/2026: Esquema clave T26 nuevo (listas y cuadros, audio, trampas, rápidas y mejoras comunes)
@@ -41,7 +42,7 @@ window.EXSUBCLAVE_REPASO = {
   // 3: "repaso-t3-borrador.html",  // sustituido por repaso-t3-esquema-clave-nuevo.html (arriba);   // 11/11/2026: repaso del Tema 3 (TUE/TFUE; 11 págs)
   20: "repaso-t20-borrador.html",   // 11/11/2026: Esquema clave T20 con cuadros del temario rehechos (11 cuadros + 5 fichas; 12 págs)
   // (antigua) 21: "repaso-t21-borrador.html",   // 11/11/2026: repaso del Tema 21 (EXOF, R, oficiales y subrayado del Exprés; 10 págs reales)
-  22: "repaso-t22-borrador.html",   // 15/11/2026: Esquema clave T22 (14 cuadros redibujados con la forma del temario + 9 fichas; 12 págs; R1-R21 y 185 rápidas aparte)
+  // (antigua) 22: "repaso-t22-borrador.html",   // 15/11/2026: Esquema clave T22 (14 cuadros redibujados con la forma del temario + 9 fichas; 12 págs; R1-R21 y 185 rápidas aparte)
   23: "repaso-t23-borrador.html",   // 16/11/2026: Esquema clave T23 (8 fichas, cuadros con forma, R1-R14 y rápidas)
   25: "repaso-t25-borrador.html",   // 17/11/2026: Esquema clave T25 (21 cuadros con la forma del temario + 8 fichas; 12 págs; R1-R30 y rápidas aparte)
   27: "repaso-t27-esquema-clave-nuevo.html",   // 23/11/2026: Esquema clave T27 nuevo (listas y cuadros, 5 normas, audio, trampas en botón, rápidas y mejoras comunes)
