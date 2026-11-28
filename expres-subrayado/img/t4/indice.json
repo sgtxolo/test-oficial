@@ -8847,5 +8847,95 @@
     176
    ]
   ]
+ },
+ {
+  "id": "a-anexo4",
+  "nombre": "Código de Fronteras Schengen · Anexo IV (estampado de sellos)",
+  "img": "a-anexo4.jpg",
+  "wh": [
+   1075,
+   1265
+  ]
+ },
+ {
+  "id": "a-anexo6",
+  "nombre": "Código de Fronteras Schengen · Anexo VI (tipos de fronteras y medios de transporte)",
+  "img": "a-anexo6.jpg",
+  "wh": [
+   1075,
+   11499
+  ]
+ },
+ {
+  "id": "a-anexo7",
+  "nombre": "Código de Fronteras Schengen · Anexo VII (categorías de personas)",
+  "img": "a-anexo7.jpg",
+  "wh": [
+   1075,
+   3835
+  ]
+ },
+ {
+  "id": "b-pre",
+  "nombre": "Guardia Europea de Fronteras y Costas · Considerando 16",
+  "img": "b-pre.jpg",
+  "wh": [
+   1075,
+   480
+  ]
+ },
+ {
+  "id": "b-80",
+  "nombre": "Guardia Europea de Fronteras y Costas · Artículo 80",
+  "img": "b-80.jpg",
+  "wh": [
+   1075,
+   911
+  ]
+ },
+ {
+  "id": "c-pre",
+  "nombre": "Convenio de Prüm · Preámbulo",
+  "img": "c-pre.jpg",
+  "wh": [
+   1075,
+   1030
+  ]
+ },
+ {
+  "id": "f-10",
+  "nombre": "Rgto. de ejecución 2021/581 · Artículos 10 a 12",
+  "img": "f-10.jpg",
+  "wh": [
+   1075,
+   2575
+  ]
+ },
+ {
+  "id": "f-22",
+  "nombre": "Rgto. de ejecución 2021/581 · Artículos 22 y 23",
+  "img": "f-22.jpg",
+  "wh": [
+   1075,
+   774
+  ]
+ },
+ {
+  "id": "f-anexo2",
+  "nombre": "Rgto. de ejecución 2021/581 · Anexo 2, apartado 2",
+  "img": "f-anexo2.jpg",
+  "wh": [
+   1075,
+   1499
+  ]
+ },
+ {
+  "id": "f-anexo3",
+  "nombre": "Rgto. de ejecución 2021/581 · Anexo 3 (umbrales)",
+  "img": "f-anexo3.jpg",
+  "wh": [
+   1075,
+   768
+  ]
  }
 ]

@@ -1,0 +1,96 @@
+[
+ {
+  "i": 401,
+  "v": "v01",
+  "t": 4,
+  "pregunta": "Código de fronteras Schengen. Definiciones. A los efectos del presente Código, ¿qué se entenderá por \"puerta automática\"?:",
+  "opciones": [
+   "Sistema automatizado que realiza la totalidad o parte de las inspecciones fronterizas aplicables a una persona y que puede utilizarse para el prerregistro de datos en el SES.",
+   "Todas las opciones son correctas.",
+   "Infraestructura operada por medios electrónicos en el cruce efectivo de una frontera exterior o de una frontera interior en la que no se hayan suprimido aún los controles.",
+   "Sistema que permite un cruce automatizado de las fronteras y que se compone de un sistema de autoservicio y una puerta automática."
+  ],
+  "correcta": 2,
+  "lila": "Art. 2.24 · Reglamento (UE) 2016/399, Código de fronteras Schengen",
+  "rojo": "24) «puerta automática»: infraestructura operada por medios electrónicos en el cruce efectivo de una frontera exterior o de una frontera interior en la que no se hayan suprimido aún los controles;",
+  "exp": "Es la definición de puerta automática; las otras describen el sistema de autoservicio y el control automatizado.",
+  "apartado": "Código de fronteras Schengen",
+  "letra": "a",
+  "refs": [
+   {
+    "n": "C",
+    "art": "2",
+    "ap": "24"
+   }
+  ],
+  "par": "1-46",
+  "pz": "a-2",
+  "id": "4-1080"
+ },
+ {
+  "i": 402,
+  "v": "v07",
+  "t": 4,
+  "pregunta": "Convenio relativo a la profundización de la cooperación transfronteriza, en particular en materia de lucha contra el terrorismo, la delincuencia transfronteriza y la migración ilegal. Disposiciones generales sobre protección de datos. A los efectos del Tratado objeto de la pregunta, ¿qué se entenderá por \"marcado\"?:",
+  "opciones": [
+   "El marcado de los datos almacenados de carácter personal con el fin de limitar su tratamiento en el futuro.",
+   "La inserción de una marca en los datos almacenados de carácter con el fin de limitar su tratamiento en el futuro.",
+   "El marcado de los datos almacenados de carácter personal sin que con ello se pretenda limitar su tratamiento en el futuro.",
+   "La inserción de una marca en los datos almacenados de carácter personal sin que con ello se pretenda limitar su tratamiento en el futuro."
+  ],
+  "correcta": 3,
+  "lila": "Art. 33.1 · Tratado de Prüm, de 27 de mayo de 2005",
+  "rojo": "(1) A los efectos del presente Tratado:<br>3. por «marcado» se entenderá la inserción de una marca en los datos almacenados de carácter personal sin que con ello se pretenda limitar su tratamiento en el futuro;",
+  "exp": "El marcado es la inserción de una marca sin que se pretenda limitar el tratamiento futuro.",
+  "apartado": "Tratado de Prüm",
+  "letra": "c",
+  "refs": [
+   {
+    "n": "P",
+    "art": "33",
+    "ap": "1"
+   },
+   {
+    "n": "P",
+    "art": "33",
+    "ap": "1"
+   }
+  ],
+  "par": "97-0-0",
+  "pz": "c-33",
+  "id": "4-1081"
+ },
+ {
+  "i": 403,
+  "v": "v08",
+  "t": 4,
+  "pregunta": "Decisión sobre la profundización de la cooperación transfronteriza, en particular en materia de lucha contra el terrorismo y la delincuencia transfronteriza. Definiciones y ámbito de aplicación. A los efectos de la presente Decisión, ¿qué se entenderá por \"marcado\"?:",
+  "opciones": [
+   "La inserción de una marca en los datos almacenados de carácter personal sin que con ello se pretenda limitar su tratamiento en el futuro.",
+   "El marcado de los datos almacenados de carácter personal con el fin de limitar su tratamiento en el futuro.",
+   "La inserción de una marca en los datos almacenados de carácter no personal sin que con ello se pretenda limitar su tratamiento en el futuro.",
+   "El marcado de los datos almacenados de carácter no personal con el fin de limitar su tratamiento en el futuro."
+  ],
+  "correcta": 0,
+  "lila": "Art. 24 · Decisión 2008/615/JAI del Consejo (Decisión Prüm)",
+  "rojo": "1. A los efectos de la presente Decisión, se entenderá por:<br>c) «marcado»: la inserción de una marca en los datos almacenados de carácter personal sin que con ello se pretenda limitar su tratamiento en el futuro;",
+  "exp": "Es la definición de marcado: sin que con ello se pretenda limitar el tratamiento futuro.",
+  "apartado": "Decisión Prüm",
+  "letra": "d",
+  "refs": [
+   {
+    "n": "D",
+    "art": "24",
+    "ap": null
+   },
+   {
+    "n": "D",
+    "art": "24",
+    "ap": null
+   }
+  ],
+  "par": "108-0-0",
+  "pz": "d-24",
+  "id": "4-1082"
+ }
+]
